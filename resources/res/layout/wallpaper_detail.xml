@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tsf.extend.wallpaper.WallpaperDetail xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wallpaper_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tsf.extend.wallpaper.TabViewPager android:id="@+id/view_pager" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/bg_top" android:background="@drawable/wallpaper_gradient_bg_top" android:layout_width="match_parent" android:layout_height="135dp"/>
+    <ImageView android:id="@+id/launcher_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/go_to_list" android:padding="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+    <ImageView android:layout_gravity="top|right" android:id="@+id/switch_scale" android:padding="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:src="@drawable/wallpaper_detail_scale_btn_selector"/>
+    <com.tsf.extend.wallpaper.HorzontalSliderView android:layout_gravity="bottom|center_horizontal" android:id="@+id/slider" android:background="@drawable/wallpaper_slider_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="104dp" android:src="@drawable/wallpaper_slider_fg"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/setting_wallpaper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/setting_wallpaper_progress" android:layout_width="70dp" android:layout_height="70dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/setting_wallpaper"/>
+    </LinearLayout>
+    <include android:layout_gravity="center" android:visibility="gone" layout="@layout/wallpaper_favorite_anim_layout"/>
+</com.tsf.extend.wallpaper.WallpaperDetail>

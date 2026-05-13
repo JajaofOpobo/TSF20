@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#22000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:id="@+id/gridView" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:stretchMode="columnWidth" android:columnWidth="150dp" android:numColumns="auto_fit" style="@style/PhotoGridLayout"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/linearLayout1" android:background="@drawable/theme_preview_icon_package_title_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/imageView1" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:src="@drawable/ic_launcher" android:layout_weight="0"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="TextView" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

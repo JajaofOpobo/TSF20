@@ -9,7 +9,7 @@
 
 ### Phase: Analysis Complete ✓
 
-- APK decompiled and extracted to `decompiled/`
+- APK decompiled and extracted to `source/` and `sources/`
 - Source code analyzed (Java ~1000+ classes)
 - Architecture understood
 - Feature set documented
@@ -21,13 +21,20 @@
 
 ```
 TSF20/
-├── decompiled/                    # Decompiled APK source
-│   ├── source/sources/           # Java source (com.tsf.shell.*)
-│   ├── res/                      # Compiled resources
+├── source/                       # Raw APK contents (extracted)
+│   ├── AndroidManifest.xml
+│   ├── classes.dex
+│   ├── resources.arsc
 │   ├── assets/                   # Images, HTML, data files
-│   └── lib/armeabi/              # Native libs (libkcmutil.so, libandenginephysicsbox2dextension.so)
-├── jadx/                         # JADX decompiler output
-├── decompile_apk.py             # Decompile script
+│   └── lib/armeabi/              # Native libs (.so files)
+├── sources/                     # Decompiled Java source (jadx output)
+│   ├── com/tsf/shell/           # Main launcher code
+│   ├── com/censivn/              # C3DEngine (3D engine)
+│   └── org/acra/                 # ACRA crash reporting
+├── resources/                   # Extracted resources (jadx output)
+│   └── res/                      # Android resources
+├── gradle/                      # Gradle wrapper
+├── app/                         # (Reserved for new project)
 └── TSF_SHELL_PLAN.md            # This file
 ```
 
@@ -162,3 +169,4 @@ TSF20/
 | Date | Entry |
 |------|-------|
 | 2026-05-13 | Initial plan created - Analysis complete |
+| 2026-05-13 | Cleaned up workspace - removed decompile stubs, moved decompiled sources to root |
