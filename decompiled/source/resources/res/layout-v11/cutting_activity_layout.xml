@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/RelativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tsf.shell.plugin.crop.CropImageView android:id="@+id/cropimageview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/titlebar" android:background="#55000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/list_divider_holo_dark" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:showDividers="middle" android:dividerPadding="16dp">
+        <RelativeLayout android:background="@drawable/item_background_holo_dark" android:layout_width="48dp" android:layout_height="48dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/done" android:background="@drawable/item_background_holo_dark" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/crop_tsf_ico" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16dp" android:textColor="#ffffff" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="Crop Image"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottombar" android:background="#55000000" android:layout_width="match_parent" android:layout_height="48dp" android:divider="@drawable/list_divider_holo_dark" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:showDividers="middle" android:dividerPadding="16dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0">
+            <RelativeLayout android:id="@+id/ic_menu_crop" android:background="@drawable/item_background_holo_dark" android:layout_width="48dp" android:layout_height="48dp">
+                <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_crop" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/crop_image_cancel" android:background="@drawable/item_background_holo_dark" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/plugin_crop_cancel" android:layout_weight="1"/>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/crop_image_done" android:background="@drawable/item_background_holo_dark" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/plugin_crop_ok" android:layout_weight="1"/>
+        <RelativeLayout android:id="@+id/ic_menu_metrics" android:background="@drawable/item_background_holo_dark" android:layout_width="48dp" android:layout_height="48dp">
+            <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_holo" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

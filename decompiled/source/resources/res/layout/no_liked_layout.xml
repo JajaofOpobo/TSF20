@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/theme_liked_empty_data" android:background="#ffeeeeee" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/like_theme_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/like_theme_text"/>
+    <TextView android:textColor="#b5b5b5" android:layout_gravity="center_horizontal" android:id="@+id/like_theme_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/theme_like_no_data_tip" android:layout_centerInParent="true"/>
+    <Button android:textSize="14sp" android:textColor="#06c08e" android:id="@+id/like_theme_button_now" android:background="@drawable/theme_like_button_shape" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_like_no_data_button_text" android:layout_below="@+id/like_theme_text" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

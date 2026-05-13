@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/retry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/refresh_icon" android:duplicateParentState="true" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/icon_btn_refresh"/>
+        <TextView android:textColor="@drawable/white_black_textcolor" android:gravity="center" android:layout_gravity="center" android:id="@+id/retry_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82dp" android:layout_marginRight="82dp" android:text="@string/load_fail_retry"/>
+    </LinearLayout>
+</FrameLayout>

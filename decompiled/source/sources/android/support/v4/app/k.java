@@ -1,0 +1,215 @@
+package android.support.v4.app;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+/* loaded from: classes.dex */
+public class k extends Fragment implements DialogInterface.OnCancelListener, DialogInterface.OnDismissListener {
+    int a = 0;
+    int b = 0;
+    boolean c = true;
+    boolean d = true;
+    int e = -1;
+    Dialog f;
+    boolean g;
+    boolean h;
+    boolean i;
+
+    public void a(int i, int i2) {
+        this.a = i;
+        if (this.a == 2 || this.a == 3) {
+            this.b = 16973913;
+        }
+        if (i2 != 0) {
+            this.b = i2;
+        }
+    }
+
+    public int a(s sVar, String str) {
+        this.h = false;
+        this.i = true;
+        sVar.a(this, str);
+        this.g = false;
+        this.e = sVar.a();
+        return this.e;
+    }
+
+    public void a() {
+        a(false);
+    }
+
+    void a(boolean z) {
+        if (!this.h) {
+            this.h = true;
+            this.i = false;
+            if (this.f != null) {
+                this.f.dismiss();
+                this.f = null;
+            }
+            this.g = true;
+            if (this.e >= 0) {
+                k().a(this.e, 1);
+                this.e = -1;
+                return;
+            }
+            s a = k().a();
+            a.a(this);
+            if (z) {
+                a.b();
+            } else {
+                a.a();
+            }
+        }
+    }
+
+    public int b() {
+        return this.b;
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void a(Activity activity) {
+        super.a(activity);
+        if (!this.i) {
+            this.h = false;
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void c() {
+        super.c();
+        if (!this.i && !this.h) {
+            this.h = true;
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void a(Bundle bundle) {
+        super.a(bundle);
+        this.d = this.G == 0;
+        if (bundle != null) {
+            this.a = bundle.getInt("android:style", 0);
+            this.b = bundle.getInt("android:theme", 0);
+            this.c = bundle.getBoolean("android:cancelable", true);
+            this.d = bundle.getBoolean("android:showsDialog", this.d);
+            this.e = bundle.getInt("android:backStackId", -1);
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public LayoutInflater b(Bundle bundle) {
+        if (!this.d) {
+            return super.b(bundle);
+        }
+        this.f = c(bundle);
+        if (this.f != null) {
+            a(this.f, this.a);
+            return (LayoutInflater) this.f.getContext().getSystemService("layout_inflater");
+        }
+        return (LayoutInflater) this.C.g().getSystemService("layout_inflater");
+    }
+
+    public void a(Dialog dialog, int i) {
+        switch (i) {
+            case 1:
+            case 2:
+                break;
+            default:
+                return;
+            case 3:
+                dialog.getWindow().addFlags(24);
+                break;
+        }
+        dialog.requestWindowFeature(1);
+    }
+
+    public Dialog c(Bundle bundle) {
+        return new Dialog(i(), b());
+    }
+
+    @Override // android.content.DialogInterface.OnCancelListener
+    public void onCancel(DialogInterface dialogInterface) {
+    }
+
+    @Override // android.content.DialogInterface.OnDismissListener
+    public void onDismiss(DialogInterface dialogInterface) {
+        if (!this.g) {
+            a(true);
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void d(Bundle bundle) {
+        Bundle bundle2;
+        super.d(bundle);
+        if (this.d) {
+            View p = p();
+            if (p != null) {
+                if (p.getParent() != null) {
+                    throw new IllegalStateException("DialogFragment can not be attached to a container view");
+                }
+                this.f.setContentView(p);
+            }
+            this.f.setOwnerActivity(i());
+            this.f.setCancelable(this.c);
+            this.f.setOnCancelListener(this);
+            this.f.setOnDismissListener(this);
+            if (bundle != null && (bundle2 = bundle.getBundle("android:savedDialogState")) != null) {
+                this.f.onRestoreInstanceState(bundle2);
+            }
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void d() {
+        super.d();
+        if (this.f != null) {
+            this.g = false;
+            this.f.show();
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void e(Bundle bundle) {
+        Bundle onSaveInstanceState;
+        super.e(bundle);
+        if (this.f != null && (onSaveInstanceState = this.f.onSaveInstanceState()) != null) {
+            bundle.putBundle("android:savedDialogState", onSaveInstanceState);
+        }
+        if (this.a != 0) {
+            bundle.putInt("android:style", this.a);
+        }
+        if (this.b != 0) {
+            bundle.putInt("android:theme", this.b);
+        }
+        if (!this.c) {
+            bundle.putBoolean("android:cancelable", this.c);
+        }
+        if (!this.d) {
+            bundle.putBoolean("android:showsDialog", this.d);
+        }
+        if (this.e != -1) {
+            bundle.putInt("android:backStackId", this.e);
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void e() {
+        super.e();
+        if (this.f != null) {
+            this.f.hide();
+        }
+    }
+
+    @Override // android.support.v4.app.Fragment
+    public void f() {
+        super.f();
+        if (this.f != null) {
+            this.g = true;
+            this.f.dismiss();
+            this.f = null;
+        }
+    }
+}

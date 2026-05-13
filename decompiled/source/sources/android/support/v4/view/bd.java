@@ -1,0 +1,30 @@
+package android.support.v4.view;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.view.View;
+/* loaded from: classes.dex */
+class bd {
+    public static void a(final View view, final bf bfVar) {
+        if (bfVar != null) {
+            view.animate().setListener(new AnimatorListenerAdapter() { // from class: android.support.v4.view.bd.1
+                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+                public void onAnimationCancel(Animator animator) {
+                    bf.this.c(view);
+                }
+
+                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+                public void onAnimationEnd(Animator animator) {
+                    bf.this.b(view);
+                }
+
+                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+                public void onAnimationStart(Animator animator) {
+                    bf.this.a(view);
+                }
+            });
+        } else {
+            view.animate().setListener(null);
+        }
+    }
+}

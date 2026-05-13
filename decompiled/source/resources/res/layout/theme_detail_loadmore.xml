@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="56dp" android:layout_width="match_parent" android:layout_height="116dp">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loadmore_progress" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+    <TextView android:textSize="12.5sp" android:textColor="#ffaeaeae" android:gravity="center" android:layout_gravity="center" android:id="@+id/loadmore_tips" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/nomore_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+        <TextView android:textSize="12.5sp" android:textColor="#ffaeaeae" android:gravity="center" android:id="@+id/diy_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/theme_detail_padding_left" android:layout_marginRight="@dimen/theme_detail_padding_left" android:text="@string/theme_detial_no_more"/>
+        <TextView android:textSize="12sp" android:textColor="#ff29bbed" android:gravity="center" android:id="@+id/diy_btn" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/theme_detail_padding_left" android:layout_marginTop="-6dp" android:layout_marginRight="@dimen/theme_detail_padding_left" android:text="@string/theme_diy_start"/>
+    </LinearLayout>
+</FrameLayout>
