@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">TSF2.0</string>
+    <string name="app_name">TSF Shell Revival</string>
+    <string name="launcher_status_title">TSF Shell Revival</string>
+    <string name="launcher_status_body">Modern launcher shell initialized. Legacy TSF features will be restored behind this entry point.</string>
+    <string name="launcher_status_phase">Phase 1: launcher skeleton</string>
 </resources>

@@ -3,6 +3,7 @@
 > Created: 2026-05-13
 > Agent: Codex
 > Purpose: coordination file for code review findings, modernization plan, and future implementation notes.
+> Harmonized: Best points from this review and opencode's review were merged into `TSF_SHELL_PLAN.md` on 2026-05-13. Treat `TSF_SHELL_PLAN.md` as the master coordination plan.
 
 ## Working Rules for Parallel Agents
 
@@ -15,7 +16,8 @@
 
 - Local repo: `C:\Users\Jaja\AndroidStudioProjects\TSF20`
 - Remote repo: `https://github.com/JajaofOpobo/TSF20`
-- Decompiled APK source: `decompiled/source/sources`
+- Decompiled APK source: `sources`
+- Raw APK/resource extraction: `source`, `resources`
 - Current Android stub project: `app`
 
 ## Findings Log
@@ -23,17 +25,19 @@
 | Date | Area | Finding | Evidence |
 |------|------|---------|----------|
 | 2026-05-13 | Coordination | Review started; existing `TSF_SHELL_PLAN.md` found and preserved. | `TSF_SHELL_PLAN.md` |
+| 2026-05-13 | Coordination | Harmonized this review with opencode's review. The merged master plan now lives in `TSF_SHELL_PLAN.md`. | `TSF_SHELL_PLAN.md`, `MODERNIZATION_REVIEW.md` |
+| 2026-05-13 | Phase 1 | Replaced placeholder `com.example.tsf20` app with minimal `com.tsf.shell` HOME launcher shell and added legacy launcher schema constants/tests. | `app/src/main/AndroidManifest.xml`, `app/src/main/java/com/tsf/shell/HomeActivity.java`, `app/src/main/java/com/tsf/shell/data/LegacyLauncherContract.java` |
 | 2026-05-13 | Current app | The checked-in `app` module is an Android Studio stub, not the revived launcher. It uses `com.example.tsf20`, a sample `MainActivity`, and a sample JNI library. | `app/src/main/AndroidManifest.xml`, `app/src/main/java/com/example/tsf20/MainActivity.kt`, `app/src/main/cpp/CMakeLists.txt` |
-| 2026-05-13 | Recovered source | Decompiled launcher source is substantial: 842 files under `com.tsf.shell` and 175 files under `com.censivn.C3DEngine`. | `decompiled/source/sources/com/tsf/shell`, `decompiled/source/sources/com/censivn/C3DEngine` |
-| 2026-05-13 | Entry point | Original launcher entry is `Home`, which extends deprecated/removed `ActivityGroup` and initializes a custom C3DEngine view plus 2D workspace. | `decompiled/source/sources/com/tsf/shell/Home.java` |
-| 2026-05-13 | Startup gate | `ShellActivity` routes either to a GDPR/summary screen or back to the HOME activity. This behavior should be preserved but rewritten with modern navigation. | `decompiled/source/sources/com/tsf/shell/ShellActivity.java` |
-| 2026-05-13 | Persistence | `ShellProvider` stores launcher layout in SQLite tables: `favorites`, `application`, `dock`, `slidingdock`, `menu`, and `quicklaunch`. Database version is 34. | `decompiled/source/sources/com/tsf/shell/ShellProvider.java` |
-| 2026-05-13 | Customization | Gesture settings include home/back actions, double tap, one-finger swipes, pinch in/out, and two-finger swipes in four directions. | `decompiled/source/resources/res/xml/preferences_gesture.xml` |
-| 2026-05-13 | Customization | Advanced settings include memory permanence, home key patch, and restart shell. | `decompiled/source/resources/res/xml/preferences_advanced.xml` |
-| 2026-05-13 | Themes/plugins | Theme discovery depends on package queries for `com.tsf.shell.themes`, GO Launcher themes, ADW themes, font packs, widgets, and icon designer providers. Modern Android requires explicit package visibility declarations or replacement APIs. | `decompiled/source/sources/com/tsf/shell/plugin`, `decompiled/source/sources/com/tsf/shell/theme/inside` |
-| 2026-05-13 | Services | Original code has foreground/persistence services and accessibility service hooks. Modern Android requires foreground service types, notification channels, user-visible purpose, and tighter lifecycle control. | `decompiled/source/sources/com/tsf/shell/services` |
-| 2026-05-13 | Dependencies | Original source embeds old Flurry analytics and ACRA crash reporting. These should be removed or replaced behind opt-in telemetry abstractions. | `decompiled/source/sources/com/flurry`, `decompiled/source/sources/org/acra`, `Home.java` |
-| 2026-05-13 | Native/graphics | APK contains only armeabi native libraries and raw 3D assets, including `widget_airship.3DS`. Modern Android requires ABI strategy and likely a renderer rewrite or compatibility layer. | `decompiled/lib/armeabi`, `decompiled/source/resources/res/raw` |
+| 2026-05-13 | Recovered source | Decompiled launcher source is substantial: 842 files under `com.tsf.shell` and 175 files under `com.censivn.C3DEngine`. | `sources/com/tsf/shell`, `sources/com/censivn/C3DEngine` |
+| 2026-05-13 | Entry point | Original launcher entry is `Home`, which extends deprecated/removed `ActivityGroup` and initializes a custom C3DEngine view plus 2D workspace. | `sources/com/tsf/shell/Home.java` |
+| 2026-05-13 | Startup gate | `ShellActivity` routes either to a GDPR/summary screen or back to the HOME activity. This behavior should be preserved but rewritten with modern navigation. | `sources/com/tsf/shell/ShellActivity.java` |
+| 2026-05-13 | Persistence | `ShellProvider` stores launcher layout in SQLite tables: `favorites`, `application`, `dock`, `slidingdock`, `menu`, and `quicklaunch`. Database version is 34. | `sources/com/tsf/shell/ShellProvider.java` |
+| 2026-05-13 | Customization | Gesture settings include home/back actions, double tap, one-finger swipes, pinch in/out, and two-finger swipes in four directions. | `resources/res/xml/preferences_gesture.xml` |
+| 2026-05-13 | Customization | Advanced settings include memory permanence, home key patch, and restart shell. | `resources/res/xml/preferences_advanced.xml` |
+| 2026-05-13 | Themes/plugins | Theme discovery depends on package queries for `com.tsf.shell.themes`, GO Launcher themes, ADW themes, font packs, widgets, and icon designer providers. Modern Android requires explicit package visibility declarations or replacement APIs. | `sources/com/tsf/shell/plugin`, `sources/com/tsf/shell/theme/inside` |
+| 2026-05-13 | Services | Original code has foreground/persistence services and accessibility service hooks. Modern Android requires foreground service types, notification channels, user-visible purpose, and tighter lifecycle control. | `sources/com/tsf/shell/services` |
+| 2026-05-13 | Dependencies | Original source embeds old Flurry analytics and ACRA crash reporting. These should be removed or replaced behind opt-in telemetry abstractions. | `sources/com/flurry`, `sources/org/acra`, `Home.java` |
+| 2026-05-13 | Native/graphics | APK contains only armeabi native libraries and raw 3D assets, including `widget_airship.3DS`. Modern Android requires ABI strategy and likely a renderer rewrite or compatibility layer. | `source/lib/armeabi`, `resources/res/raw` |
 
 ## Proposed Work Log
 

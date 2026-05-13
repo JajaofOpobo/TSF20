@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tsf20"
+    namespace = "com.tsf.shell"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,11 +11,11 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.tsf20"
+        applicationId = "com.tsf.shell"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,14 +33,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    externalNativeBuild {
-        cmake {
-            path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
-        }
-    }
     buildFeatures {
-        viewBinding = true
+        viewBinding = false
     }
 }
 
