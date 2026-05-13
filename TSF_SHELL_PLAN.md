@@ -1,7 +1,17 @@
 # TSF Shell Revival Project - Tracking Document
 
-> Last Updated: 2026-05-13
 > Project: Revive TSF Shell 3D Launcher for Modern Android
+> Last Updated: 2026-05-13
+> AI Agent: opencode (minimax-m2.5-free)
+
+---
+
+## AI Agent Log
+
+| Date | Agent | Action |
+|------|-------|--------|
+| 2026-05-13 | opencode | Initial analysis, APK decompilation, workspace cleanup |
+| 2026-05-13 | opencode | Added agent identification to log |
 
 ---
 
@@ -163,10 +173,3 @@ TSF20/
 - The original was API 8+ but we should target modern Android
 
 ---
-
-## Changelog
-
-| Date | Entry |
-|------|-------|
-| 2026-05-13 | Initial plan created - Analysis complete |
-| 2026-05-13 | Cleaned up workspace - removed decompile stubs, moved decompiled sources to root |
