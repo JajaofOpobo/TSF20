@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@drawable/material_list_view_bg_with_divide" android:paddingTop="10dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
-        <TextView android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:maxWidth="200dp" android:text="Title" style="@style/TSFText.Material.ItemTitle"/>
-        <TextView android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:maxWidth="200dp" android:text="Summary" style="@style/TSFText.Material.ItemSummary"/>
-    </LinearLayout>
-    <ImageView android:id="@+id/imageView2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/activity_widget_toggle_off"/>
-    <android.support.v7.widget.SwitchCompat android:id="@+id/switch1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-</LinearLayout>
