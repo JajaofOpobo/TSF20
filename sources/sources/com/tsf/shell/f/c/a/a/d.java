@@ -1,0 +1,76 @@
+package com.tsf.shell.f.c.a.a;
+
+import com.censivn.C3DEngine.api.element.Number3d;
+import com.censivn.C3DEngine.b.f.j;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class d extends a {
+    public d() {
+        this.c = 3;
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public float a(int i, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, float f) {
+        float fMaxX = 0.0f;
+        for (int i2 = 0; i2 < i; i2++) {
+            com.censivn.C3DEngine.b.f.i iVar = arrayList.get(i2);
+            fMaxX += (iVar.maxX() - iVar.minX()) + f;
+        }
+        return fMaxX - f;
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public void a(j jVar, j jVar2) {
+        jVar.position().x += (jVar2.position().x - jVar.position().x) * 0.15f;
+        jVar.position().y = 138.0f * com.censivn.C3DEngine.b.b.a.b;
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public float a(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, int i, float f, float f2, float f3, float f4) {
+        if (i == 0) {
+            return 1.0f;
+        }
+        float fMaxX = 0.0f;
+        for (int i2 = 0; i2 < i; i2++) {
+            com.censivn.C3DEngine.b.f.i iVar = arrayList.get(i2);
+            fMaxX += (iVar.maxX() - iVar.minX()) + f4;
+        }
+        float f5 = ((f - f2) - f3) / (fMaxX - f4);
+        if (f5 > 1.0f) {
+            f5 = 1.0f;
+        }
+        return f5;
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public void a(com.tsf.shell.f.c.a.d dVar, com.censivn.C3DEngine.b.f.i iVar, float f, boolean z) {
+        if (iVar instanceof com.tsf.shell.f.i.b.d.b) {
+        }
+        if (!this.d) {
+            dVar.b = (((-iVar.minY()) * f) - com.tsf.shell.f.c.a.f.o) - 0.0f;
+        } else if (z) {
+            dVar.b = dVar.g - (iVar.minY() * f);
+        } else {
+            dVar.b = ((-(iVar.maxY() + iVar.minY())) / 2.0f) * f;
+        }
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public Number3d a(com.censivn.C3DEngine.b.f.i iVar) {
+        Number3d.TEMPNUMBER3D.x = iVar.position().x;
+        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.a.C - com.tsf.shell.f.c.a.f.b) - com.censivn.C3DEngine.b.b.a.K;
+        return Number3d.TEMPNUMBER3D;
+    }
+
+    @Override // com.tsf.shell.f.c.a.a.a
+    public Number3d b(com.censivn.C3DEngine.b.f.i iVar) {
+        Number3d.TEMPNUMBER3D.x = iVar.position().x;
+        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.a.C + com.tsf.shell.f.c.a.f.a;
+        return Number3d.TEMPNUMBER3D;
+    }
+
+    public float a(com.tsf.shell.f.c.a.d dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+        return dVar.b + (iVar.minY() * f);
+    }
+}
