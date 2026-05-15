@@ -41,7 +41,7 @@ public final class HomeActivity extends AppCompatActivity {
             PermissionHelper.requestNotificationPermission(this);
         }
         configureSystemBars();
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         initializeLauncher();
     }
 
