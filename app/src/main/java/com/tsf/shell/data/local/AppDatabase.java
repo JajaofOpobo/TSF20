@@ -1,0 +1,43 @@
+package com.tsf.shell.data.local;
+
+import android.content.Context;
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+import com.tsf.shell.data.LegacyLauncherContract;
+import com.tsf.shell.data.local.dao.ApplicationDao;
+import com.tsf.shell.data.local.dao.DockDao;
+import com.tsf.shell.data.local.dao.FavoriteDao;
+import com.tsf.shell.data.local.entity.ApplicationItem;
+import com.tsf.shell.data.local.entity.DockItem;
+import com.tsf.shell.data.local.entity.FavoriteItem;
+import com.tsf.shell.data.local.entity.MenuItem;
+
+@Database(
+        entities = {FavoriteItem.class, ApplicationItem.class, DockItem.class, MenuItem.class},
+        version = LegacyLauncherContract.DATABASE_VERSION,
+        exportSchema = true)
+public abstract class AppDatabase extends RoomDatabase {
+
+    private static volatile AppDatabase INSTANCE;
+
+    public abstract FavoriteDao favoriteDao();
+    public abstract ApplicationDao applicationDao();
+    public abstract DockDao dockDao();
+
+    public static AppDatabase getInstance(Context context) {
+        if (INSTANCE == null) {
+            synchronized (AppDatabase.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = Room.databaseBuilder(
+                            context.getApplicationContext(),
+                            AppDatabase.class,
+                            LegacyLauncherContract.DATABASE_NAME)
+                            .fallbackToDestructiveOnDowngrade()
+                            .build();
+                }
+            }
+        }
+        return INSTANCE;
+    }
+}

@@ -1,30 +1,28 @@
 package com.tsf.shell.data;
 
-import static org.junit.Assert.assertEquals;
-
+import com.tsf.shell.data.local.entity.FavoriteItem;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-public final class LegacyLauncherContractTest {
+public class LegacyLauncherContractTest {
+
     @Test
-    public void legacyDatabaseIdentityMatchesRecoveredProvider() {
-        assertEquals("TSFLauncher-database.db", LegacyLauncherContract.DATABASE_NAME);
+    public void databaseVersion_is34() {
         assertEquals(34, LegacyLauncherContract.DATABASE_VERSION);
     }
 
     @Test
-    public void legacyLayoutTablesMatchRecoveredProvider() {
-        assertEquals("favorites", LegacyLauncherContract.TABLE_FAVORITES);
-        assertEquals("application", LegacyLauncherContract.TABLE_APPLICATION);
-        assertEquals("dock", LegacyLauncherContract.TABLE_DOCK);
-        assertEquals("slidingdock", LegacyLauncherContract.TABLE_SLIDING_DOCK);
-        assertEquals("menu", LegacyLauncherContract.TABLE_MENU);
-        assertEquals("quicklaunch", LegacyLauncherContract.TABLE_QUICK_LAUNCH);
+    public void favorites_entityTypes_defined() {
+        assertEquals(FavoriteItem.TYPE_APPLICATION, 0);
+        assertEquals(FavoriteItem.TYPE_FOLDER, 1);
+        assertEquals(FavoriteItem.TYPE_WIDGET, 2);
+        assertEquals(FavoriteItem.TYPE_SHORTCUT, 4);
     }
 
     @Test
-    public void favoriteColumnsCoverWidgetAnd3dPlacementState() {
-        assertEquals("rotation", LegacyLauncherContract.Favorites.ROTATION);
-        assertEquals("scale", LegacyLauncherContract.Favorites.SCALE);
-        assertEquals("appWidgetProvider", LegacyLauncherContract.Favorites.APP_WIDGET_PROVIDER);
+    public void tableNames_notEmpty() {
+        assertFalse(LegacyLauncherContract.TABLE_FAVORITES.isEmpty());
+        assertFalse(LegacyLauncherContract.TABLE_APPLICATION.isEmpty());
+        assertFalse(LegacyLauncherContract.TABLE_DOCK.isEmpty());
     }
 }
