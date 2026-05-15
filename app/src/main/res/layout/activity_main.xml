@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/launcher_background"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    tools:context=".HomeActivity">
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/desktop_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="TSF Shell"
-            android:textColor="@color/launcher_text_primary"
-            android:textSize="48sp"
-            android:textStyle="bold" />
-    </FrameLayout>
+        android:layout_weight="1" />
 
     <LinearLayout
         android:id="@+id/dock_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/launcher_background"
-        android:orientation="vertical"
-        android:paddingBottom="16dp" />
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/app_drawer_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <FrameLayout
+            android:id="@+id/dock_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
 </LinearLayout>

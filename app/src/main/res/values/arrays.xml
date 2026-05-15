@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="column_options">
+        <item>3 columns</item>
+        <item>4 columns</item>
+        <item>5 columns</item>
+    </string-array>
+    <string-array name="column_values">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="row_options">
+        <item>3 rows</item>
+        <item>4 rows</item>
+    </string-array>
+    <string-array name="row_values">
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="gesture_actions">
+        <item>None</item>
+        <item>Home</item>
+        <item>App Drawer</item>
+    </string-array>
+    <string-array name="gesture_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+    </string-array>
+</resources>

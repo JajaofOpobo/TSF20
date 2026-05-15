@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Desktop">
+        <ListPreference
+            android:key="tsf_desktop_columns"
+            android:title="Desktop Columns"
+            android:entries="@array/column_options"
+            android:entryValues="@array/column_values"
+            android:defaultValue="4" />
+        <ListPreference
+            android:key="tsf_desktop_rows"
+            android:title="Desktop Rows"
+            android:entries="@array/row_options"
+            android:entryValues="@array/row_values"
+            android:defaultValue="4" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Dock">
+        <SwitchPreferenceCompat
+            android:key="tsf_dock_enabled"
+            android:title="Show Dock"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Gestures">
+        <ListPreference
+            android:key="tsf_gesture_double_tap"
+            android:title="Double Tap"
+            android:entries="@array/gesture_actions"
+            android:entryValues="@array/gesture_values"
+            android:defaultValue="0" />
+        <ListPreference
+            android:key="tsf_gesture_swipe_up"
+            android:title="Swipe Up"
+            android:entries="@array/gesture_actions"
+            android:entryValues="@array/gesture_values"
+            android:defaultValue="0" />
+        <ListPreference
+            android:key="tsf_gesture_swipe_down"
+            android:title="Swipe Down"
+            android:entries="@array/gesture_actions"
+            android:entryValues="@array/gesture_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="tsf_version"
+            android:title="Version"
+            android:summary="0.1.0" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

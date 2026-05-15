@@ -8,6 +8,7 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
 import com.tsf.shell.data.repository.LauncherRepository;
 import com.tsf.shell.render.SimpleRenderer;
+import com.tsf.shell.ui.AppDrawerActivity;
 import com.tsf.shell.ui.view.DesktopGridView;
 import com.tsf.shell.ui.view.DockView;
 import com.tsf.shell.util.NotificationHelper;
@@ -50,6 +52,10 @@ public final class HomeActivity extends AppCompatActivity {
 
         FrameLayout desktopContainer = findViewById(R.id.desktop_container);
         LinearLayout dockContainer = findViewById(R.id.dock_container);
+        FrameLayout dockContent = findViewById(R.id.dock_content);
+        
+        ImageButton appDrawerButton = findViewById(R.id.app_drawer_button);
+        ImageButton settingsButton = findViewById(R.id.settings_button);
 
         desktopGrid = new DesktopGridView(this);
         desktopGrid.setLayoutParams(new FrameLayout.LayoutParams(
@@ -58,15 +64,17 @@ public final class HomeActivity extends AppCompatActivity {
         desktopContainer.addView(desktopGrid);
 
         dockView = new DockView(this);
-        dockView.setLayoutParams(new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
+        dockView.setLayoutParams(new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
-        dockContainer.addView(dockView);
+        dockContent.addView(dockView);
 
         desktopGrid.setOnItemClickListener(this::onDesktopItemClick);
         desktopGrid.setOnItemLongClickListener(this::onDesktopItemLongClick);
-
         dockView.setOnDockItemClickListener(this::onDockItemClick);
+
+        appDrawerButton.setOnClickListener(v -> openAppDrawer());
+        settingsButton.setOnClickListener(v -> openSettings());
 
         repository.getDesktopItems().observe(this, items -> {
             if (items != null) {
@@ -135,6 +143,16 @@ public final class HomeActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Cannot launch: " + packageName, Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void openAppDrawer() {
+        Intent intent = new Intent(this, AppDrawerActivity.class);
+        startActivity(intent);
+    }
+
+    private void openSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     @Override

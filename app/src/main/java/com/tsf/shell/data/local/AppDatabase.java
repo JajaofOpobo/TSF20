@@ -33,7 +33,7 @@ public abstract class AppDatabase extends RoomDatabase {
                             context.getApplicationContext(),
                             AppDatabase.class,
                             LegacyLauncherContract.DATABASE_NAME)
-                            .fallbackToDestructiveOnDowngrade()
+                            .fallbackToDestructiveMigration()
                             .build();
                 }
             }

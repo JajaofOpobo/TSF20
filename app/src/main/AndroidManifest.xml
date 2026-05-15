@@ -69,6 +69,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
+        <activity
+            android:name=".ui.AppDrawerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
+        <activity
+            android:name=".widget.WidgetPickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
         <service
             android:name=".service.LauncherService"
             android:exported="false"

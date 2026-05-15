@@ -5,16 +5,12 @@ plugins {
 
 android {
     namespace = "com.tsf.shell"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.tsf.shell"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "0.1.0"
 
@@ -36,6 +32,12 @@ android {
     }
     buildFeatures {
         viewBinding = false
+    }
+
+    sourceSets {
+        getByName("main") {
+            java.srcDirs("src/main/java")
+        }
     }
 
     room {
