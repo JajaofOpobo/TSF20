@@ -25,6 +25,9 @@
 ✅ **Sources integrated** - C3DEngine and all launcher classes available
 ✅ **Modern shell works** - App drawer, settings, widget picker functional
 ✅ **Resources available** - Full set of original resources from prime APK
+✅ **Home.java wired** - Original launcher integrated via manifest
+✅ **ShellApplication added** - Application class configured
+✅ **Manifest updated** - Receivers and intents declared
 
 ---
 
@@ -44,7 +47,7 @@
 
 **Goal**: Get original TSF functionality running in modern context
 
-- [ ] Wire original Home.java as main launcher (replace HomeActivity)
+- [x] Wire original Home.java as main launcher (replace HomeActivity)
 - [ ] Integrate ShellActivity for startup flow
 - [ ] Test C3DEngine rendering
 - [ ] Fix deprecated ActivityGroup usage
