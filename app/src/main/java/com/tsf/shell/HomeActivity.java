@@ -16,7 +16,7 @@ import androidx.lifecycle.LifecycleOwner;
 import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
 import com.tsf.shell.data.repository.LauncherRepository;
-import com.tsf.shell.render.SimpleRenderer;
+import com.tsf.shell.render.LibGDXRenderer;
 import com.tsf.shell.ui.AppDrawerActivity;
 import com.tsf.shell.ui.view.DesktopGridView;
 import com.tsf.shell.ui.view.DockView;
@@ -28,7 +28,7 @@ import java.util.concurrent.Executors;
 public final class HomeActivity extends AppCompatActivity {
 
     private LauncherRepository repository;
-    private SimpleRenderer renderer;
+    private LibGDXRenderer renderer;
     private DockView dockView;
     private DesktopGridView desktopGrid;
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -46,7 +46,7 @@ public final class HomeActivity extends AppCompatActivity {
     }
 
     private void initializeLauncher() {
-        renderer = new SimpleRenderer();
+        renderer = new LibGDXRenderer(this);
         renderer.initialize();
         repository = new LauncherRepository(this);
 
