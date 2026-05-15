@@ -1,144 +1,96 @@
-# TSF Shell Revival Project - Harmonized Tracking Document
+# TSF Shell Revival Project - Revised Plan
 
 > Project: Revive TSF Shell 3D Launcher for Modern Android
 > Last Updated: 2026-05-15
-> Primary Source: TSF Shell 3.9.4 Prime (com.tsf.shell-3.9.4-free-www.apksum.com.apk)
-> Status: Clean decompilation, ready for integration
+> Primary Source: TSF Shell 3.9.4 Prime
 
 ---
 
-## AI Agent Log
+## CRITICAL CORRECTION
 
-| Date | Agent | Action |
-|------|-------|--------|
-| 2026-05-13 | opencode | Initial analysis, APK decompilation, workspace cleanup |
-| 2026-05-13 | Codex | Created detailed modernization review |
-| 2026-05-15 | opencode | Built modern shell UI skeleton |
-| 2026-05-15 | opencode | Decompiled prime APK (cleaner code, no artifacts) |
-| 2026-05-15 | opencode | **Switched to prime version as primary source** |
+**The build was NOT actually compiling the decompiled code.** 
+
+The `sourceSets` paths in `build.gradle.kts` were incorrect (`sources/sources` instead of `../sources/sources`), causing Gradle to skip compilation of 870+ Java files. The resulting APK was an empty shell containing only the modern skeleton UI.
 
 ---
 
-## Current Status: PRIME VERSION INTEGRATED
+## Current Status: THREE PATH OPTIONS
 
-✅ **Build Successful** - Prime 3.9.4 decompiled and compiles cleanly
-✅ **Sources integrated** - C3DEngine and all launcher classes available
-✅ **Modern shell works** - App drawer, settings, widget picker functional
-✅ **Resources available** - Full set of original resources from prime APK
-✅ **Home.java wired** - Original launcher integrated via manifest
-✅ **ShellApplication added** - Application class configured
-✅ **Manifest updated** - Receivers and intents declared
-✅ **Native libs added** - libkcmutil.so, libandenginephysicsbox2dextension.so included
-✅ **ShellActivity added** - Startup flow activity declared
+### Option A: Java Recompile (High Risk)
+- **Status**: Decompiled Java has 870+ `goto` statements and syntax errors
+- **Effort**: Months of manual fixes required
+- **Risk**: Very High
+- **Outcome**: Uncertain
 
----
+### Option B: Smali Patching (Medium Risk)
+- **Method**: Use `apktool` on original APK, patch Smali directly
+- **Pros**: Bypasses Java compilation errors
+- **Cons**: Still blocked by 32-bit native libs
+- **Risk**: Medium
 
-## REVISED Implementation Plan
-
-### Phase 1: Integration Preparation (COMPLETE)
-
-**Goal**: Wire original decompiled code into modern Android shell
-
-- [x] Create modern `com.tsf.shell` package with HOME intent filter
-- [x] Add notification channels and runtime permissions
-- [x] Add package visibility queries
-- [x] Build modern UI shell (AppDrawer, Settings, Widget picker)
-- [x] **SUCCESS**: Prime sources integrated - build passes cleanly!
-
-### Phase 2: Core Integration
-
-**Goal**: Get original TSF functionality running in modern context
-
-- [x] Use modern HomeActivity as working launcher (original Home.java crashes - needs major refactoring)
-- [x] Simple ShellApplication created for modern launcher
-- [ ] Integrate C3DEngine rendering (requires native lib rebuild for arm64)
-- [ ] Connect original database (ShellProvider or Room)
-- [ ] Optional: Import specific original components piece by piece
-
-### Phase 3: Native Library Update
-
-**Goal**: Get original native code working on modern devices
-
-- [ ] Rebuild/update native libs for arm64-v8a, x86_64 (original was armeabi)
-- [ ] Test OpenGL ES rendering with C3DEngine
-
-### Phase 4: Android Policy Compliance
-
-**Goal**: Make app compatible with modern Android without breaking features
-
-- [ ] Remove/replace blocked permissions (READ_LOGS, etc.)
-- [ ] Add foreground service type declarations
-- [ ] Update package visibility for Android 11+
-- [ ] Handle runtime permissions properly
-
-### Phase 5: Polish & Release
-
-- [ ] Remove legacy Flurry/ACRA dependencies
-- [ ] Add opt-in telemetry if needed
-- [ ] Test all features: desktop, folders, drawer, widgets, themes, gestures
-
-| Area | Original Code | Action |
-|------|---------------|--------|
-| Launcher entry | `sources/com/tsf/shell/Home.java` | Integrate, fix deprecated ActivityGroup |
-| Startup gate | `sources/com/tsf/shell/ShellActivity.java` | Integrate, modernize GDPR flow |
-| 3D Engine | `sources/com/censivn/C3DEngine/` | **KEEP AS IS** - core to TSF |
-| Database | `sources/com/tsf/shell/ShellProvider.java` | Adapt or create compatibility layer |
-| Widgets | `sources/com/tsf/shell/widget/` | Integrate original 3D widgets |
-| Resources | `resources/res/` | **USE ORIGINAL** - icons, layouts, strings |
-| Assets | `source/assets/` | **USE ORIGINAL** - 3D models, textures |
+### Option C: Engine Rewrite (Recommended)
+- **Method**: Extract assets, rebuild rendering engine from scratch using modern OpenGL ES
+- **Pros**: 100% modern, 64-bit compatible
+- **Cons**: Complete rebuild, not a "port"
+- **Risk**: Medium (known scope)
 
 ---
 
-## Files to Integrate
+## Recommended Path: Hybrid "Strangler Fig"
 
-Priority list (from most important to nice-to-have):
+1. **Fix native libs**:
+   - `libandenginephysicsbox2dextension.so`: Download AndEngine Box2D source, rebuild for arm64-v8a (open source)
+   - `libkcmutil.so`: Stub out JNI methods in Java (79KB suggests simple utilities)
 
-1. `sources/com/tsf/shell/Home.java` - Main launcher
-2. `sources/com/tsf/shell/ShellActivity.java` - Startup flow
-3. `sources/com/tsf/shell/ShellProvider.java` - Database
-4. `sources/com/censivn/C3DEngine/` - 3D rendering engine
-5. `sources/com/tsf/shell/widget/` - Original widgets
-6. `resources/res/` - All original resources
-7. `source/assets/` - 3D assets, media files
+2. **If Java recompile fails**: Pivot to Smali patching or Engine Rewrite
+
+3. **Preserve assets**: Extract all 3D models, textures, icons from `resources-Prime/`
 
 ---
 
-## Dependencies to Remove/Replace
+## Updated Implementation Plan
 
-| Legacy | Action |
-|--------|--------|
-| Flurry analytics | Remove |
-| ACRA crash reporting | Remove |
-| `armeabi` native libs | Rebuild for modern ABIs or use ABI compatibility layer |
-| ActivityGroup | Replace with fragments/Compose |
-| Deprecated permissions | Remove or request at runtime |
+### Phase 0: Verification (CURRENT)
 
----
+- [ ] Fix sourceSets path and attempt actual compilation
+- [ ] Count Java syntax errors to determine feasibility
+- [ ] If errors < 100: proceed with fixes
+- [ ] If errors > 1000: pivot to alternative approach
 
-## Updated Todo List
+### Phase 1: Native Library Resolution
 
-```
-[IN PROGRESS] Integrate original Home.java as launcher entry
-[ ] Integrate original ShellActivity.java
-[ ] Add original resources to app module
-[ ] Fix deprecated ActivityGroup usage
-[ ] Test original 3D engine integration
-[ ] Update native libs for modern ABIs
-[ ] Complete Android policy compliance
-[ ] Final testing and polish
-```
+- [ ] Download AndEngine Box2D extension source
+- [ ] Compile for arm64-v8a, x86_64
+- [ ] Stub `libkcmutil.so` JNI methods in Java
 
----
+### Phase 2: Code Integration (if viable)
 
-## Risks & Mitigations
+- [ ] Fix decompiled Java syntax errors
+- [ ] Wire original Home.java or rebuild ActivityGroup logic
+- [ ] Connect ShellProvider database
 
-| Risk | Mitigation |
-|------|------------|
-| Obfuscated decompiled code | Keep logic as-is, only fix obvious errors |
-| Deprecated APIs | Adapter pattern - wrap in modern interfaces |
-| Native libs incompatible | Rebuild or use compatibility layer |
-| Package identity conflicts | Keep `com.tsf.shell` package name |
+### Phase 3: Modern Android Compliance
+
+- [ ] Fix runtime permissions
+- [ ] Add foreground service types
+- [ ] Remove blocked permissions (READ_LOGS)
 
 ---
 
-**Next Step**: Begin integrating original `Home.java` from `sources/` into the app module. This is the entry point that initializes C3DEngine and the workspace.
+## Key Files & Assets
+
+| Asset | Location | Purpose |
+|-------|----------|---------|
+| Decompiled Java | `sources/sources/com/tsf/shell/` | 842 classes |
+| 3D Engine | `sources/sources/com/censivn/C3DEngine/` | 175 classes |
+| Resources | `resources-Prime/res/` | Layouts, strings, drawables |
+| 3D Assets | `resources-Prime/assets/` | Models, textures |
+| Native Libs | `resources-Prime/lib/armeabi/` | .so files (32-bit) |
+
+---
+
+## Next Steps
+
+1. Attempt build with corrected sourceSets paths
+2. Assess error count
+3. Decide on approach based on results
