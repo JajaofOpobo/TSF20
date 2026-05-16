@@ -18,10 +18,16 @@ import com.tsf.shell.data.local.entity.FavoriteItem;
 import com.tsf.shell.data.repository.LauncherRepository;
 import com.tsf.shell.render.LibGDXRenderer;
 import com.tsf.shell.ui.AppDrawerActivity;
-import com.tsf.shell.ui.view.DesktopGridView;
+import com.tsf.shell.ui.view.DesktopPage;
+import com.tsf.shell.ui.view.DesktopPagerView;
 import com.tsf.shell.ui.view.DockView;
+import com.tsf.shell.ui.view.PageIndicator;
 import com.tsf.shell.util.NotificationHelper;
 import com.tsf.shell.util.PermissionHelper;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -30,7 +36,8 @@ public final class HomeActivity extends AppCompatActivity {
     private LauncherRepository repository;
     private LibGDXRenderer renderer;
     private DockView dockView;
-    private DesktopGridView desktopGrid;
+    private DesktopPagerView pagerView;
+    private PageIndicator pageIndicator;
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
 
     @Override
@@ -57,11 +64,17 @@ public final class HomeActivity extends AppCompatActivity {
         ImageButton appDrawerButton = findViewById(R.id.app_drawer_button);
         ImageButton settingsButton = findViewById(R.id.settings_button);
 
-        desktopGrid = new DesktopGridView(this);
-        desktopGrid.setLayoutParams(new FrameLayout.LayoutParams(
+        pagerView = new DesktopPagerView(this);
+        pagerView.setLayoutParams(new FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT,
                 FrameLayout.LayoutParams.MATCH_PARENT));
-        desktopContainer.addView(desktopGrid);
+        desktopContainer.addView(pagerView);
+
+        pageIndicator = findViewById(R.id.page_indicator);
+        pagerView.setOnPageChangeListener(page -> {
+            pageIndicator.setCurrentPage(page);
+            renderer.setPage(page);
+        });
 
         dockView = new DockView(this);
         dockView.setLayoutParams(new FrameLayout.LayoutParams(
@@ -69,17 +82,37 @@ public final class HomeActivity extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT));
         dockContent.addView(dockView);
 
-        desktopGrid.setOnItemClickListener(this::onDesktopItemClick);
-        desktopGrid.setOnItemLongClickListener(this::onDesktopItemLongClick);
         dockView.setOnDockItemClickListener(this::onDockItemClick);
+        dockView.setOnDockItemLongClickListener(this::onDockItemLongClick);
 
         appDrawerButton.setOnClickListener(v -> openAppDrawer());
         settingsButton.setOnClickListener(v -> openSettings());
 
         repository.getDesktopItems().observe(this, items -> {
-            if (items != null) {
-                desktopGrid.setItems(items);
+            if (items == null) return;
+            Map<Integer, List<FavoriteItem>> grouped = new HashMap<>();
+            int maxScreen = 0;
+            for (FavoriteItem item : items) {
+                int screen = item.screen;
+                if (!grouped.containsKey(screen)) {
+                    grouped.put(screen, new ArrayList<>());
+                }
+                grouped.get(screen).add(item);
+                if (screen > maxScreen) maxScreen = screen;
             }
+            pagerView.removeAllPages();
+            int pageCount = Math.max(maxScreen + 1, 1);
+            for (int i = 0; i < pageCount; i++) {
+                DesktopPage page = new DesktopPage(this);
+                List<FavoriteItem> pageItems = grouped.get(i);
+                if (pageItems != null) {
+                    page.setItems(pageItems);
+                }
+                page.setOnItemClickListener(this::onDesktopItemClick);
+                pagerView.addPage(page);
+            }
+            pageIndicator.setPageCount(pageCount);
+            pageIndicator.setCurrentPage(0);
         });
 
         repository.getDockItems().observe(this, items -> {
@@ -94,7 +127,7 @@ public final class HomeActivity extends AppCompatActivity {
             }
         });
 
-        renderer.setDesktopView(desktopGrid);
+        renderer.setDesktopView(pagerView);
     }
 
     private void onDesktopItemClick(FavoriteItem item) {

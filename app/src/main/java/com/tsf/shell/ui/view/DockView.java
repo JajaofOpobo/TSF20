@@ -3,6 +3,8 @@ package com.tsf.shell.ui.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.MotionEvent;
 import android.view.View;
 import com.tsf.shell.R;
@@ -18,8 +20,20 @@ public class DockView extends View {
     private final Paint textPaint;
     private final Paint dividerPaint;
     private OnDockItemClickListener clickListener;
+    private OnDockItemLongClickListener longClickListener;
     private DockItem selectedItem;
     private int slotWidth;
+    private final Handler longPressHandler = new Handler(Looper.getMainLooper());
+    private final Runnable longPressRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (longClickListener != null && selectedItem != null) {
+                longClickListener.onDockItemLongClick(selectedItem);
+            }
+            selectedItem = null;
+        }
+    };
+    private float pressX, pressY;
 
     public DockView(Context context) {
         super(context);
@@ -79,17 +93,57 @@ public class DockView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_UP && clickListener != null) {
-            int slot = (int) (event.getX() / slotWidth);
-            if (slot >= 0 && slot < items.size()) {
-                selectedItem = items.get(slot);
-                clickListener.onDockItemClick(selectedItem);
+        int slot = (int) (event.getX() / slotWidth);
+
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN: {
+                if (slot >= 0 && slot < (items != null ? items.size() : 0)) {
+                    selectedItem = items.get(slot);
+                    pressX = event.getX();
+                    pressY = event.getY();
+                    longPressHandler.postDelayed(longPressRunnable, ViewConfiguration.getLongPressTimeout());
+                    return true;
+                }
+                return false;
+            }
+            case MotionEvent.ACTION_MOVE: {
+                float dx = event.getX() - pressX;
+                float dy = event.getY() - pressY;
+                float slop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+                if (Math.abs(dx) > slop || Math.abs(dy) > slop) {
+                    longPressHandler.removeCallbacks(longPressRunnable);
+                    selectedItem = null;
+                }
+                return true;
+            }
+            case MotionEvent.ACTION_UP: {
+                longPressHandler.removeCallbacks(longPressRunnable);
+                if (clickListener != null && selectedItem != null) {
+                    if (slot >= 0 && slot < (items != null ? items.size() : 0)) {
+                        clickListener.onDockItemClick(selectedItem);
+                    }
+                }
+                selectedItem = null;
+                return true;
+            }
+            case MotionEvent.ACTION_CANCEL: {
+                longPressHandler.removeCallbacks(longPressRunnable);
+                selectedItem = null;
+                return true;
             }
         }
         return super.onTouchEvent(event);
     }
 
+    public void setOnDockItemLongClickListener(OnDockItemLongClickListener l) {
+        this.longClickListener = l;
+    }
+
     public interface OnDockItemClickListener {
         void onDockItemClick(DockItem item);
+    }
+
+    public interface OnDockItemLongClickListener {
+        void onDockItemLongClick(DockItem item);
     }
 }
