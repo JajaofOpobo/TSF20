@@ -63,7 +63,9 @@ public class UploadWallpaperService extends Service {
         uploading
     }
 
-    public native String requestKey();
+    public String requestKey() {
+        return null;
+    }
 
     public enum a {
         APPLY(1, "apply"),
@@ -760,7 +762,11 @@ public class UploadWallpaperService extends Service {
     }
 
     static {
-        System.loadLibrary("uwpp");
+        try {
+            System.loadLibrary("uwpp");
+        } catch (UnsatisfiedLinkError e) {
+            // libuwpp.so not available - wallpaper upload disabled
+        }
     }
 
     public static InputStream a(Context context, Uri uri) {

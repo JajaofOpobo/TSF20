@@ -91,24 +91,26 @@ gate is passed.
 ---
 
 ### TRACK 1 — Native Library Resolution (COMPLETE)
-**Status**: Using libGDX 1.13.1 which provides pre-built arm64-v8a natives
+**Status**: Built AndEnginePhysicsBox2DExtension from source for arm64-v8a + armeabi-v7a
 
-- libGDX Box2D replaces AndEngine Box2D (same functionality)
-- libkcmutil stub not needed for basic launcher
-- APK builds and installs successfully
+- **Task 1.1**: Identified commit `e74dabe` (AndEnginePhysicsBox2DExtension default branch, wraps Box2D 2.3.x)
+- **Task 1.2**: Built `libandenginephysicsbox2dextension.so` for both ABIs using NDK 30.0 with `APP_STL := c++_static`
+- **Task 1.3**: Safe-load stubs applied:
+  - `com/cm/a/i.java`: `System.loadLibrary("kcmutil")` wrapped in try-catch
+  - `com/tsf/extend/wallpaper/upload/UploadWallpaperService.java`: Both `loadLibrary("uwpp")` and native `requestKey()` stubbed
+- Output: `app/src/main/jniLibs/{arm64-v8a,armeabi-v7a}/libandenginephysicsbox2dextension.so`
 
-### TRACK 2 — Renderer Interface Layer (IN PROGRESS)
+### TRACK 2 — Renderer Interface Layer (COMPLETE)
 **Gate**: Track 1 complete.
 
 #### Task 2.1 — Document C3DEngine public API
-- **Status**: IN PROGRESS - reviewing C3DEngine classes
+- **Status**: COMPLETE — `docs/C3DEngine_API_Reference.md` created with all public classes, key methods, and 15-method API surface called by launcher
 
 #### Task 2.2 — Write ILauncherRenderer interface
-- Create `app/src/main/java/com/tsf/shell/render/ILauncherRenderer.java`
-- Define core methods for launcher
+- **Status**: COMPLETE — `app/src/main/java/com/tsf/shell/render/ILauncherRenderer.java` with 10 methods (init, page mgmt, drag, transition, release)
 
 #### Task 2.3 — Write NoOpRenderer implementation
-- Implement GLSurfaceView baseline
+- **Status**: COMPLETE — `LibGDXRenderer.java` implements `ILauncherRenderer` with GLSurfaceView rendering a flat surface
 
 ---
 

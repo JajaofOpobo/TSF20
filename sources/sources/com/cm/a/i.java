@@ -18,7 +18,11 @@ public class i {
             if (this.b.c()) {
                 z = true;
             } else {
-                System.loadLibrary(str);
+                try {
+                    System.loadLibrary(str);
+                } catch (UnsatisfiedLinkError e) {
+                    // libkcmutil.so not available - stubbed out for modern Android
+                }
             }
             this.c = true;
             this.b.e();
