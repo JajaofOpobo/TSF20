@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewConfiguration;
 import com.tsf.shell.R;
 import com.tsf.shell.data.local.entity.DockItem;
 import java.util.List;
@@ -62,6 +63,7 @@ public class DockView extends View {
     protected void onMeasure(int widthSpec, int heightSpec) {
         int w = MeasureSpec.getSize(widthSpec);
         int h = (int) (w * 0.15f);
+        slotWidth = w / MAX_SLOTS;
         setMeasuredDimension(w, h);
     }
 
@@ -93,7 +95,8 @@ public class DockView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        int slot = (int) (event.getX() / slotWidth);
+        if (slotWidth <= 0) slotWidth = getWidth() / MAX_SLOTS;
+        int slot = slotWidth > 0 ? (int) (event.getX() / slotWidth) : -1;
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN: {

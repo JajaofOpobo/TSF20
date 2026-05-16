@@ -75,6 +75,11 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".widget.WidgetPickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
+
         <receiver
             android:name="com.tsf.shell.InstallShortcutReceiver"
             android:exported="false">

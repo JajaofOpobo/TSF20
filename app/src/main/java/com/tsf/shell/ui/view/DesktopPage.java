@@ -156,9 +156,10 @@ public class DesktopPage extends View {
     }
 
     private void drawItemContent(Canvas canvas, FavoriteItem item) {
+        boolean isWidget = item.itemType == FavoriteItem.TYPE_WIDGET;
         String label = item.title;
         if (label == null || label.isEmpty()) label = "?";
-        String initial = label.substring(0, 1).toUpperCase();
+        String initial = isWidget ? "W" : label.substring(0, 1).toUpperCase();
 
         Paint initialPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         initialPaint.setColor(0xFFFFFFFF);
@@ -167,11 +168,19 @@ public class DesktopPage extends View {
 
         float cx = iconSize / 2;
         float cy = iconSize / 2 + initialPaint.getTextSize() / 3;
+
+        if (isWidget) {
+            iconBgPaint.setColor(0x664CAF50);
+        }
         canvas.drawText(initial, cx, cy, initialPaint);
 
         textPaint.setTextSize(iconSize * 0.16f);
         String display = label.length() > 8 ? label.substring(0, 7) + "..." : label;
         canvas.drawText(display, cx, iconSize + textPaint.getTextSize() + 4, textPaint);
+
+        if (isWidget) {
+            iconBgPaint.setColor(0x33FFFFFF);
+        }
     }
 
     @Override

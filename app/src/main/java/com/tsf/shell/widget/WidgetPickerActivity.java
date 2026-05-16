@@ -1,10 +1,8 @@
 package com.tsf.shell.widget;
 
-import android.appwidget.AppWidgetHost;
-import android.appwidget.AppWidgetHostView;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProviderInfo;
-import android.content.Context;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
@@ -35,7 +33,7 @@ public class WidgetPickerActivity extends AppCompatActivity {
         
         recyclerView = findViewById(R.id.widget_list);
         
-        adapter = new WidgetAdapter();
+        adapter = new WidgetAdapter(this);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerView.setAdapter(adapter);
         
@@ -52,7 +50,8 @@ public class WidgetPickerActivity extends AppCompatActivity {
         PackageManager pm = getPackageManager();
         for (AppWidgetProviderInfo info : widgets) {
             WidgetItem item = new WidgetItem();
-            item.label = info.label;
+            String label = info.label != null ? info.label.toString() : "Widget";
+            item.label = label;
             try {
                 item.icon = pm.getApplicationIcon(info.provider.getPackageName());
             } catch (Exception e) {
@@ -61,7 +60,7 @@ public class WidgetPickerActivity extends AppCompatActivity {
             items.add(item);
         }
         
-        adapter.setWidgets(items);
+        adapter.setWidgets(items, widgets);
     }
 
     private void configureSystemBars() {
@@ -78,10 +77,21 @@ public class WidgetPickerActivity extends AppCompatActivity {
     }
 
     static class WidgetAdapter extends RecyclerView.Adapter<WidgetAdapter.WidgetViewHolder> {
-        private List<WidgetItem> widgets = new ArrayList<>();
+        private final List<AppWidgetProviderInfo> providers = new ArrayList<>();
+        private final List<WidgetItem> widgets = new ArrayList<>();
+        private final WidgetPickerActivity activity;
 
-        void setWidgets(List<WidgetItem> widgets) {
-            this.widgets = widgets;
+        WidgetAdapter(WidgetPickerActivity activity) {
+            this.activity = activity;
+        }
+
+        void setWidgets(List<WidgetItem> widgetItems, List<AppWidgetProviderInfo> providerInfos) {
+            this.widgets.clear();
+            this.widgets.addAll(widgetItems);
+            this.providers.clear();
+            if (providerInfos != null) {
+                this.providers.addAll(providerInfos);
+            }
             notifyDataSetChanged();
         }
 
@@ -89,7 +99,20 @@ public class WidgetPickerActivity extends AppCompatActivity {
         public WidgetViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = android.view.LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.item_widget, parent, false);
-            return new WidgetViewHolder(view);
+            WidgetViewHolder holder = new WidgetViewHolder(view);
+            holder.itemView.setOnClickListener(v -> {
+                int pos = holder.getAdapterPosition();
+                if (pos < 0 || pos >= providers.size()) return;
+                AppWidgetProviderInfo info = providers.get(pos);
+                Intent result = new Intent();
+                result.putExtra("provider", info.provider.flattenToString());
+                result.putExtra("label", info.label != null ? info.label.toString() : "Widget");
+                result.putExtra("minWidth", info.minWidth);
+                result.putExtra("minHeight", info.minHeight);
+                activity.setResult(RESULT_OK, result);
+                activity.finish();
+            });
+            return holder;
         }
 
         @Override

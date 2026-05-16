@@ -1,15 +1,16 @@
 package com.tsf.shell.render;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.opengl.GLSurfaceView;
 import android.view.View;
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
 
 public class LibGDXRenderer implements ILauncherRenderer {
 
     private Context context;
     private GLSurfaceView glSurfaceView;
+    private PageTransitionRenderer transitionRenderer;
     private View desktopView;
     private int currentPage = 0;
     private int pageCount = 5;
@@ -21,33 +22,35 @@ public class LibGDXRenderer implements ILauncherRenderer {
 
     public GLSurfaceView getSurfaceView() {
         if (glSurfaceView == null) {
+            transitionRenderer = new PageTransitionRenderer();
             glSurfaceView = new GLSurfaceView(context);
-            glSurfaceView.setRenderer(new GLRenderer());
+            glSurfaceView.setEGLContextClientVersion(2);
+            glSurfaceView.setRenderer(transitionRenderer);
             glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
         }
         return glSurfaceView;
     }
 
-    private static class GLRenderer implements GLSurfaceView.Renderer {
-        @Override
-        public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-            gl.glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
-        }
+    public void updatePageTexture(int pageIndex, View pageView) {
+        if (pageView == null || pageView.getWidth() <= 0 || pageView.getHeight() <= 0) return;
+        Bitmap bitmap = Bitmap.createBitmap(pageView.getWidth(), pageView.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        pageView.draw(canvas);
+        transitionRenderer.setPageTexture(pageIndex, bitmap);
+    }
 
-        @Override
-        public void onSurfaceChanged(GL10 gl, int width, int height) {
-            gl.glViewport(0, 0, width, height);
-        }
-
-        @Override
-        public void onDrawFrame(GL10 gl) {
-            gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
+    public void updateAllPageTextures(View[] pageViews) {
+        if (pageViews == null) return;
+        for (int i = 0; i < pageViews.length && i < pageCount; i++) {
+            updatePageTexture(i, pageViews[i]);
         }
     }
 
     @Override
     public void initialize() {
         getSurfaceView();
+        transitionRenderer.setPageCount(pageCount);
+        transitionRenderer.snapToPage(0);
         ready = true;
     }
 
@@ -55,12 +58,22 @@ public class LibGDXRenderer implements ILauncherRenderer {
     public void setPage(int pageIndex) {
         if (pageIndex >= 0 && pageIndex < pageCount) {
             currentPage = pageIndex;
+            if (transitionRenderer != null) {
+                transitionRenderer.animateToPage(pageIndex);
+            }
         }
     }
 
     @Override
     public int getPageCount() {
         return pageCount;
+    }
+
+    public void setPageCount(int count) {
+        this.pageCount = count;
+        if (transitionRenderer != null) {
+            transitionRenderer.setPageCount(count);
+        }
     }
 
     @Override
@@ -78,11 +91,20 @@ public class LibGDXRenderer implements ILauncherRenderer {
     public void endDrag() {}
 
     @Override
-    public void playTransition(int fromPage, int toPage) {}
+    public void playTransition(int fromPage, int toPage) {
+        if (transitionRenderer != null) {
+            transitionRenderer.animateToPage(toPage);
+        }
+        currentPage = toPage;
+    }
 
     @Override
     public void setDesktopView(View desktopView) {
         this.desktopView = desktopView;
+    }
+
+    public View getDesktopView() {
+        return desktopView;
     }
 
     @Override
@@ -91,6 +113,7 @@ public class LibGDXRenderer implements ILauncherRenderer {
             glSurfaceView.onPause();
             glSurfaceView = null;
         }
+        transitionRenderer = null;
         ready = false;
     }
 

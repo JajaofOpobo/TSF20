@@ -1,8 +1,9 @@
 package com.tsf.shell.ui.view;
 
 import android.content.Context;
-import android.graphics.Rect;
+import android.util.SparseArray;
 import android.view.MotionEvent;
+import com.tsf.shell.settings.GestureEngine;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -26,6 +27,8 @@ public class DesktopPagerView extends ViewGroup {
     private boolean isDraggingChild;
 
     private OnPageChangeListener pageChangeListener;
+    private final SparseArray<View> overlayViews = new SparseArray<>();
+    private int nextOverlayId = 1000;
 
     public DesktopPagerView(Context context) {
         super(context);
@@ -66,12 +69,39 @@ public class DesktopPagerView extends ViewGroup {
     }
 
     public void removeAllPages() {
+        for (int i = 0; i < overlayViews.size(); i++) {
+            int key = overlayViews.keyAt(i);
+            removeView(overlayViews.get(key));
+        }
+        overlayViews.clear();
         removeAllViews();
         currentPage = 0;
         if (pageChangeListener != null) {
             pageChangeListener.onPageSelected(0);
         }
         requestLayout();
+    }
+
+    public void addOverlayView(int id, View view, float x, float y) {
+        LayoutParams lp = new LayoutParams(
+                LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        view.setLayoutParams(lp);
+        view.setX(x - view.getMeasuredWidth() / 2f);
+        view.setY(y - view.getMeasuredHeight() / 2f);
+        addView(view);
+        overlayViews.put(id, view);
+    }
+
+    public void removeOverlayView(int id) {
+        View v = overlayViews.get(id);
+        if (v != null) {
+            removeView(v);
+            overlayViews.remove(id);
+        }
+    }
+
+    public View getOverlayView(int id) {
+        return overlayViews.get(id);
     }
 
     public void addItemToCurrentPage(FavoriteItem item) {
@@ -85,6 +115,10 @@ public class DesktopPagerView extends ViewGroup {
         item.cellX = (int) cx;
         item.cellY = (int) cy;
         item.screen = currentPage;
+    }
+
+    public void setGestureEngine(GestureEngine engine) {
+        setOnTouchListener(engine);
     }
 
     public void setOnPageChangeListener(OnPageChangeListener listener) {
