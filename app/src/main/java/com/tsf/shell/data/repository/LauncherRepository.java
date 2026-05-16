@@ -14,9 +14,11 @@ import com.tsf.shell.data.local.AppDatabase;
 import com.tsf.shell.data.local.dao.ApplicationDao;
 import com.tsf.shell.data.local.dao.DockDao;
 import com.tsf.shell.data.local.dao.FavoriteDao;
+import com.tsf.shell.data.local.dao.FolderDao;
 import com.tsf.shell.data.local.entity.ApplicationItem;
 import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
+import com.tsf.shell.data.local.entity.FolderItem;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -32,6 +34,7 @@ public class LauncherRepository {
     private final FavoriteDao favoriteDao;
     private final DockDao dockDao;
     private final ApplicationDao applicationDao;
+    private final FolderDao folderDao;
     private final ExecutorService executor;
 
     private final MutableLiveData<List<LaunchableApp>> allApps = new MutableLiveData<>();
@@ -42,6 +45,7 @@ public class LauncherRepository {
         this.favoriteDao = db.favoriteDao();
         this.dockDao = db.dockDao();
         this.applicationDao = db.applicationDao();
+        this.folderDao = db.folderDao();
         this.executor = Executors.newSingleThreadExecutor();
     }
 
@@ -131,6 +135,40 @@ public class LauncherRepository {
         executor.execute(() -> {
             int max = favoriteDao.getMaxScreen(CONTAINER_DESKTOP);
             if (listener != null) listener.onResult(max);
+        });
+    }
+
+    public void updateItemPosition(FavoriteItem item, OnCompleteListener listener) {
+        executor.execute(() -> {
+            favoriteDao.update(item);
+            if (listener != null) listener.onComplete();
+        });
+    }
+
+    public void deleteItems(List<FavoriteItem> items, OnCompleteListener listener) {
+        executor.execute(() -> {
+            for (FavoriteItem item : items) {
+                favoriteDao.delete(item);
+            }
+            if (listener != null) listener.onComplete();
+        });
+    }
+
+    public LiveData<List<FolderItem>> getFolders() {
+        return folderDao.getByContainer(CONTAINER_DESKTOP);
+    }
+
+    public void insertFolder(FolderItem item, OnResultListener<Long> listener) {
+        executor.execute(() -> {
+            long id = folderDao.insert(item);
+            if (listener != null) listener.onResult(id);
+        });
+    }
+
+    public void deleteFolder(FolderItem item, OnCompleteListener listener) {
+        executor.execute(() -> {
+            folderDao.delete(item);
+            if (listener != null) listener.onComplete();
         });
     }
 

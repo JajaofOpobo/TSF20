@@ -6,6 +6,8 @@ import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
@@ -19,18 +21,26 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LifecycleOwner;
 import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
+import com.tsf.shell.data.local.entity.FolderItem;
 import com.tsf.shell.data.repository.LauncherRepository;
 import com.tsf.shell.render.LibGDXRenderer;
 import com.tsf.shell.ui.AppDrawerActivity;
+import com.tsf.shell.ui.dialog.IconEditDialog;
+import com.tsf.shell.ui.dialog.PowerMenuDialog;
+import com.tsf.shell.ui.effect.WallpaperBlurEffect;
+import com.tsf.shell.ui.view.ArchShortcutMenu;
 import com.tsf.shell.ui.view.DesktopPage;
 import com.tsf.shell.ui.view.DesktopPagerView;
 import com.tsf.shell.ui.view.DockView;
+import com.tsf.shell.ui.view.FolderView;
+import com.tsf.shell.ui.view.LassoSelectionView;
 import com.tsf.shell.ui.view.PageIndicator;
+import com.tsf.shell.ui.view.SideMenuBar;
 import com.tsf.shell.settings.GestureEngine;
 import com.tsf.shell.settings.LauncherPreferences;
+import com.tsf.shell.theme.ThemeManager;
 import com.tsf.shell.widget.LauncherWidgetHost;
 import com.tsf.shell.widget.WidgetPickerActivity;
 import com.tsf.shell.util.NotificationHelper;
@@ -55,6 +65,12 @@ public final class HomeActivity extends AppCompatActivity {
     private final Map<Integer, AppWidgetHostView> widgetViews = new HashMap<>();
     private LauncherPreferences prefs;
     private GestureEngine gestureEngine;
+    private LassoSelectionView lassoView;
+    private boolean lassoMode;
+    private WallpaperBlurEffect wallpaperBlur;
+    private ThemeManager themeManager;
+    private SideMenuBar sideMenuBar;
+    private FolderView folderView;
     private static final int REQUEST_PICK_WIDGET = 100;
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
 
@@ -74,11 +90,12 @@ public final class HomeActivity extends AppCompatActivity {
         renderer = new LibGDXRenderer(this);
         renderer.initialize();
         repository = new LauncherRepository(this);
+        themeManager = ThemeManager.getInstance(this);
+        wallpaperBlur = new WallpaperBlurEffect();
 
         FrameLayout desktopContainer = findViewById(R.id.desktop_container);
-        LinearLayout dockContainer = findViewById(R.id.dock_container);
         FrameLayout dockContent = findViewById(R.id.dock_content);
-        
+
         ImageButton appDrawerButton = findViewById(R.id.app_drawer_button);
         ImageButton settingsButton = findViewById(R.id.settings_button);
 
@@ -117,6 +134,10 @@ public final class HomeActivity extends AppCompatActivity {
         widgetHost.startListening();
 
         appDrawerButton.setOnClickListener(v -> openAppDrawer());
+        appDrawerButton.setOnLongClickListener(v -> {
+            toggleLassoMode();
+            return true;
+        });
         settingsButton.setOnClickListener(v -> openSettings());
         settingsButton.setOnLongClickListener(v -> {
             Intent intent = new Intent(this, WidgetPickerActivity.class);
@@ -124,11 +145,149 @@ public final class HomeActivity extends AppCompatActivity {
             return true;
         });
 
+        setupLassoView();
+        setupSideMenu();
+        setupFolderView();
+        applyWallpaperBlur();
+        observeData();
+    }
+
+    private void setupLassoView() {
+        lassoView = new LassoSelectionView(this);
+        addContentView(lassoView, new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        lassoView.setOnSelectionListener(selected -> {
+            if (selected.isEmpty()) return;
+            showLassoActions(selected);
+        });
+    }
+
+    private void showLassoActions(List<FavoriteItem> selected) {
+        String[] options = {"Delete", "Add to Folder", "Cancel"};
+        new android.app.AlertDialog.Builder(this)
+                .setTitle(selected.size() + " items selected")
+                .setItems(options, (dialog, which) -> {
+                    if (which == 0) {
+                        repository.deleteItems(selected, () -> runOnUiThread(() -> {
+                            lassoView.clearSelection();
+                            Toast.makeText(this, selected.size() + " items deleted", Toast.LENGTH_SHORT).show();
+                        }));
+                    } else if (which == 1) {
+                        createFolderWithItems(selected);
+                    }
+                    lassoMode = false;
+                    lassoView.setLassoMode(false);
+                })
+                .setOnCancelListener(d -> {
+                    lassoMode = false;
+                    lassoView.setLassoMode(false);
+                })
+                .show();
+    }
+
+    private void toggleLassoMode() {
+        lassoMode = !lassoMode;
+        lassoView.setLassoMode(lassoMode);
+        if (lassoMode) {
+            List<FavoriteItem> all = new ArrayList<>();
+            for (int i = 0; i < pagerView.getChildCount(); i++) {
+                View v = pagerView.getChildAt(i);
+                if (v instanceof DesktopPage) {
+                    all.addAll(((DesktopPage) v).getItems());
+                }
+            }
+            lassoView.setItems(all);
+            Toast.makeText(this, "Drag to select items", Toast.LENGTH_SHORT).show();
+        } else {
+            lassoView.clearSelection();
+        }
+    }
+
+    private void setupSideMenu() {
+        sideMenuBar = findViewById(R.id.side_menu_bar);
+        List<SideMenuBar.MenuItem> menuItems = new ArrayList<>();
+
+        SideMenuBar.MenuItem themes = new SideMenuBar.MenuItem();
+        themes.label = "Themes";
+        themes.iconText = "Th";
+        themes.action = () -> applyNextTheme();
+        menuItems.add(themes);
+
+        SideMenuBar.MenuItem lasso = new SideMenuBar.MenuItem();
+        lasso.label = "Select";
+        lasso.iconText = "S";
+        lasso.action = () -> toggleLassoMode();
+        menuItems.add(lasso);
+
+        SideMenuBar.MenuItem folders = new SideMenuBar.MenuItem();
+        folders.label = "Folder";
+        folders.iconText = "F";
+        folders.action = () -> createFolderWithItems(null);
+        menuItems.add(folders);
+
+        SideMenuBar.MenuItem settings = new SideMenuBar.MenuItem();
+        settings.label = "Settings";
+        settings.iconText = "Sg";
+        settings.action = () -> openSettings();
+        menuItems.add(settings);
+
+        sideMenuBar.setItems(menuItems);
+    }
+
+    private void setupFolderView() {
+        folderView = new FolderView(this);
+        folderView.setVisibility(View.GONE);
+        addContentView(folderView, new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        folderView.setOnItemClickListener(item -> {
+            folderView.close();
+            onDesktopItemClick(item);
+        });
+        folderView.setOnFolderCloseListener(() -> {
+            pagerView.setVisibility(View.VISIBLE);
+        });
+    }
+
+    private void createFolderWithItems(List<FavoriteItem> itemsToAdd) {
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+        builder.setTitle("Folder name");
+        final android.widget.EditText input = new android.widget.EditText(this);
+        input.setHint("My Folder");
+        builder.setView(input);
+        builder.setPositiveButton("Create", (dialog, which) -> {
+            String name = input.getText().toString().trim();
+            if (name.isEmpty()) name = "Folder";
+            FolderItem folder = new FolderItem();
+            folder.title = name;
+            folder.container = LauncherRepository.CONTAINER_DESKTOP;
+            folder.screen = pagerView.getCurrentPage();
+            folder.cellX = pagerView.getWidth() / 2;
+            folder.cellY = pagerView.getHeight() / 2;
+            repository.insertFolder(folder, id -> {
+                runOnUiThread(() -> {
+                    Toast.makeText(this, "Folder created", Toast.LENGTH_SHORT).show();
+                });
+            });
+        });
+        builder.setNegativeButton("Cancel", null);
+        builder.show();
+    }
+
+    private void applyWallpaperBlur() {
+        Bitmap blur = wallpaperBlur.getBlurredWallpaper(this, 25f);
+        if (blur != null) {
+            pagerView.setBackground(new BitmapDrawable(getResources(), blur));
+        }
+    }
+
+    private void observeData() {
         repository.getDesktopItems().observe(this, items -> {
             if (items == null) return;
             Map<Integer, List<FavoriteItem>> grouped = new HashMap<>();
             int maxScreen = 0;
-            Set<Integer> activeWidgetIds = new HashSet<>();
+            Map<Integer, FavoriteItem> widgetItems = new HashMap<>();
             for (FavoriteItem item : items) {
                 int screen = item.screen;
                 if (!grouped.containsKey(screen)) {
@@ -137,7 +296,7 @@ public final class HomeActivity extends AppCompatActivity {
                 grouped.get(screen).add(item);
                 if (screen > maxScreen) maxScreen = screen;
                 if (item.itemType == FavoriteItem.TYPE_WIDGET) {
-                    activeWidgetIds.add(item.appWidgetId);
+                    widgetItems.put(item.appWidgetId, item);
                 }
             }
             pagerView.removeAllPages();
@@ -149,12 +308,16 @@ public final class HomeActivity extends AppCompatActivity {
                     page.setItems(pageItems);
                 }
                 page.setOnItemClickListener(this::onDesktopItemClick);
+                page.setOnItemLongClickListener(this::onDesktopItemLongClick);
+                page.setOnDragEndListener(item -> {
+                    repository.updateItemPosition(item, null);
+                });
                 pagerView.addPage(page);
             }
             pageIndicator.setPageCount(pageCount);
             pageIndicator.setCurrentPage(0);
             renderer.setPageCount(pageCount);
-            rebuildWidgetOverlays(activeWidgetIds);
+            rebuildWidgetOverlays(widgetItems);
             pagerView.post(() -> {
                 int n = pagerView.getChildCount();
                 View[] views = new View[n];
@@ -237,7 +400,7 @@ public final class HomeActivity extends AppCompatActivity {
                 onSearchRequested();
                 break;
             case LauncherPreferences.ACTION_MENU:
-                openContextMenu(pagerView);
+                if (sideMenuBar != null) sideMenuBar.toggle();
                 break;
             case LauncherPreferences.ACTION_LOCK:
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
@@ -272,12 +435,35 @@ public final class HomeActivity extends AppCompatActivity {
     }
 
     private void showPowerMenu() {
-        Intent intent = new Intent(Intent.ACTION_POWER_USAGE_SUMMARY);
-        try {
-            startActivity(intent);
-        } catch (Exception e) {
-            Toast.makeText(this, "Power menu not available", Toast.LENGTH_SHORT).show();
+        PowerMenuDialog.show(this);
+    }
+
+    private void applyNextTheme() {
+        List<ThemeManager.ThemeInfo> themes = themeManager.getInstalledThemes();
+        if (themes.isEmpty()) {
+            Toast.makeText(this, "No themes found", Toast.LENGTH_SHORT).show();
+            return;
         }
+        String current = themeManager.getCurrentThemePackage();
+        int nextIdx = 0;
+        if (current != null) {
+            for (int i = 0; i < themes.size(); i++) {
+                if (themes.get(i).packageName.equals(current)) {
+                    nextIdx = (i + 1) % themes.size();
+                    break;
+                }
+            }
+        }
+        String nextPkg = themes.get(nextIdx).packageName;
+        themeManager.applyTheme(nextPkg);
+        pagerView.invalidate();
+        Toast.makeText(this, "Theme: " + themes.get(nextIdx).label, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onTouchEvent(android.view.MotionEvent event) {
+        if (lassoMode) return lassoView.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     @Override
@@ -346,16 +532,21 @@ public final class HomeActivity extends AppCompatActivity {
         }
     }
 
-    private void rebuildWidgetOverlays(Set<Integer> activeWidgetIds) {
-        for (int id : activeWidgetIds) {
+    private void rebuildWidgetOverlays(Map<Integer, FavoriteItem> widgetItems) {
+        Set<Integer> activeIds = new HashSet<>(widgetItems.keySet());
+        for (Map.Entry<Integer, FavoriteItem> entry : widgetItems.entrySet()) {
+            int id = entry.getKey();
+            FavoriteItem item = entry.getValue();
+            if (item == null) continue;
             AppWidgetHostView hostView = widgetViews.get(id);
             if (hostView == null) {
                 AppWidgetManager mgr = AppWidgetManager.getInstance(this);
                 AppWidgetProviderInfo info = mgr.getAppWidgetInfo(id);
                 if (info != null) {
                     hostView = widgetHost.createView(this, id, info);
-                    int w = (int) (info.minWidth * getResources().getDisplayMetrics().density);
-                    int h = (int) (info.minHeight * getResources().getDisplayMetrics().density);
+                    float density = getResources().getDisplayMetrics().density;
+                    int w = (int) (info.minWidth * density);
+                    int h = (int) (info.minHeight * density);
                     ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(w, h);
                     hostView.setLayoutParams(lp);
                     hostView.measure(
@@ -366,18 +557,23 @@ public final class HomeActivity extends AppCompatActivity {
                 }
             }
             if (hostView != null) {
-                pagerView.addOverlayView(id, hostView, pagerView.getWidth() / 2f, pagerView.getHeight() / 2f);
+                pagerView.addOverlayView(id, hostView, item.cellX, item.cellY);
             }
         }
         Set<Integer> removedIds = new HashSet<>(widgetViews.keySet());
-        removedIds.removeAll(activeWidgetIds);
+        removedIds.removeAll(activeIds);
         for (int id : removedIds) {
             widgetViews.remove(id);
         }
     }
 
     private void onDesktopItemClick(FavoriteItem item) {
-        if (item != null && item.intent != null) {
+        if (item == null) return;
+        if (item.itemType == FavoriteItem.TYPE_FOLDER) {
+            openFolder(item);
+            return;
+        }
+        if (item.intent != null) {
             try {
                 Intent intent = Intent.parseUri(item.intent, 0);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -385,15 +581,58 @@ public final class HomeActivity extends AppCompatActivity {
             } catch (Exception e) {
                 Toast.makeText(this, "Cannot launch: " + item.title, Toast.LENGTH_SHORT).show();
             }
-        } else if (item != null && item.packageName != null) {
+        } else if (item.packageName != null) {
             launchApp(item.packageName);
         }
     }
 
     private void onDesktopItemLongClick(FavoriteItem item) {
-        if (item != null) {
-            Toast.makeText(this, "Long press: " + item.title, Toast.LENGTH_SHORT).show();
-        }
+        if (item == null) return;
+        ArchShortcutMenu.show(this, item, new ArchShortcutMenu.ActionCallback() {
+            @Override
+            public void onEdit(FavoriteItem it) {
+                IconEditDialog.show(HomeActivity.this, it, (editedItem, newName) -> {
+                    editedItem.title = newName;
+                    repository.updateItemPosition(editedItem, null);
+                });
+            }
+
+            @Override
+            public void onRemove(FavoriteItem it) {
+                repository.deleteFavorite(it, () -> runOnUiThread(() ->
+                        Toast.makeText(HomeActivity.this, "Removed: " + it.title, Toast.LENGTH_SHORT).show()));
+            }
+
+            @Override
+            public void onAppInfo(FavoriteItem it) {
+                if (it.packageName != null) {
+                    Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                    intent.setData(Uri.parse("package:" + it.packageName));
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onCreateShortcut(FavoriteItem it) {
+                Intent intent = new Intent(Intent.ACTION_CREATE_SHORTCUT);
+                intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, it.title);
+                if (it.intent != null) {
+                    try {
+                        intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, Intent.parseUri(it.intent, 0));
+                    } catch (Exception ignored) {}
+                }
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void openFolder(FavoriteItem folderItem) {
+        folderView.setTitle(folderItem.title);
+        List<FavoriteItem> folderContents = new ArrayList<>();
+        folderContents.add(folderItem);
+        folderView.setItems(folderContents);
+        folderView.open();
+        pagerView.setVisibility(View.INVISIBLE);
     }
 
     private void onDockItemLongClick(DockItem item) {
@@ -478,6 +717,9 @@ public final class HomeActivity extends AppCompatActivity {
         }
         if (renderer != null) {
             renderer.release();
+        }
+        if (wallpaperBlur != null) {
+            wallpaperBlur.release();
         }
         if (repository != null) {
             repository.shutdown();
