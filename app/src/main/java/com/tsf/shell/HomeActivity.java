@@ -40,8 +40,8 @@ public final class HomeActivity extends AppCompatActivity {
         if (!PermissionHelper.hasNotificationPermission(this)) {
             PermissionHelper.requestNotificationPermission(this);
         }
-        configureSystemBars();
         setContentView(R.layout.activity_home);
+        configureSystemBars();
         initializeLauncher();
     }
 
