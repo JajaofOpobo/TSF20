@@ -36,7 +36,7 @@ android {
 
 sourceSets {
         getByName("main") {
-            java.srcDirs("src/main/java")
+            java.srcDirs("src/main/java", "../sources/sources")
             res.srcDirs("src/main/res")
             assets.srcDirs("src/main/assets")
         }
