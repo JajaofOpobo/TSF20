@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data-extraction-rules>
     <cloud-backup>
-        <include domain="database" path="TSFLauncher-database.db" />
+        <include domain="database" path="tsf20.db" />
         <include domain="sharedpref" path="." />
         <exclude domain="sharedpref" path="analytics_prefs.xml" />
     </cloud-backup>
     <device-transfer>
-        <include domain="database" path="TSFLauncher-database.db" />
+        <include domain="database" path="tsf20.db" />
         <include domain="sharedpref" path="." />
     </device-transfer>
 </data-extraction-rules>

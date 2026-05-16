@@ -7,6 +7,7 @@ package com.tsf.shell.data;
 public final class LegacyLauncherContract {
     public static final int DATABASE_VERSION = 34;
     public static final String DATABASE_NAME = "TSFLauncher-database.db";
+    public static final String ROOM_DATABASE_NAME = "tsf20.db";
 
     public static final String TABLE_FAVORITES = "favorites";
     public static final String TABLE_APPLICATION = "application";

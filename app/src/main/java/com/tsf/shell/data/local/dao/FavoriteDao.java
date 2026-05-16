@@ -35,7 +35,7 @@ public interface FavoriteDao {
     long insert(FavoriteItem item);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(List<FavoriteItem> items);
+    List<Long> insertAll(List<FavoriteItem> items);
 
     @Update
     void update(FavoriteItem item);

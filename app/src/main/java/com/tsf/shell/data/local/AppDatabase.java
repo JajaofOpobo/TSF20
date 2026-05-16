@@ -8,13 +8,18 @@ import com.tsf.shell.data.LegacyLauncherContract;
 import com.tsf.shell.data.local.dao.ApplicationDao;
 import com.tsf.shell.data.local.dao.DockDao;
 import com.tsf.shell.data.local.dao.FavoriteDao;
+import com.tsf.shell.data.local.dao.MenuDao;
+import com.tsf.shell.data.local.dao.QuickLaunchDao;
+import com.tsf.shell.data.local.dao.SlidingDockDao;
 import com.tsf.shell.data.local.entity.ApplicationItem;
 import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
 import com.tsf.shell.data.local.entity.MenuItem;
+import com.tsf.shell.data.local.entity.QuickLaunchItem;
+import com.tsf.shell.data.local.entity.SlidingDockItem;
 
 @Database(
-        entities = {FavoriteItem.class, ApplicationItem.class, DockItem.class, MenuItem.class},
+        entities = {FavoriteItem.class, ApplicationItem.class, DockItem.class, MenuItem.class, SlidingDockItem.class, QuickLaunchItem.class},
         version = LegacyLauncherContract.DATABASE_VERSION,
         exportSchema = true)
 public abstract class AppDatabase extends RoomDatabase {
@@ -24,6 +29,9 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract FavoriteDao favoriteDao();
     public abstract ApplicationDao applicationDao();
     public abstract DockDao dockDao();
+    public abstract MenuDao menuDao();
+    public abstract SlidingDockDao slidingDockDao();
+    public abstract QuickLaunchDao quickLaunchDao();
 
     public static AppDatabase getInstance(Context context) {
         if (INSTANCE == null) {
@@ -32,7 +40,7 @@ public abstract class AppDatabase extends RoomDatabase {
                     INSTANCE = Room.databaseBuilder(
                             context.getApplicationContext(),
                             AppDatabase.class,
-                            LegacyLauncherContract.DATABASE_NAME)
+                            LegacyLauncherContract.ROOM_DATABASE_NAME)
                             .fallbackToDestructiveMigration()
                             .build();
                 }

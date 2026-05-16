@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <full-backup-content>
-    <include domain="database" path="TSFLauncher-database.db" />
+    <include domain="database" path="tsf20.db" />
     <include domain="sharedpref" path="." />
     <exclude domain="sharedpref" path="analytics_prefs.xml" />
 </full-backup-content>
