@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.Looper;
@@ -45,21 +46,36 @@ public class Tsf3DWidget {
         return bmp;
     }
 
-    public static Bitmap renderWeather(int width, int height, String temp, String condition) {
+    public static Bitmap renderWeather(Context context, int width, int height, String temp, String condition, String iconCode) {
         Bitmap bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bmp);
+
+        Bitmap icon = null;
+        if (context != null && iconCode != null && !iconCode.isEmpty()) {
+            icon = WeatherIconMapper.getIconForCode(context, iconCode);
+        }
+
+        if (icon != null) {
+            float iconSize = height * 0.5f;
+            float left = (width - iconSize) / 2f;
+            float top = height * 0.05f;
+            canvas.drawBitmap(icon, null, new Rect((int) left, (int) top, (int) (left + iconSize), (int) (top + iconSize)), null);
+            icon.recycle();
+        }
+
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(0xFFFFFFFF);
-        paint.setTextSize(height * 0.35f);
+        paint.setTextSize(height * 0.3f);
         paint.setTextAlign(Paint.Align.CENTER);
         paint.setTypeface(Typeface.DEFAULT_BOLD);
 
-        canvas.drawText(temp, width / 2f, height * 0.45f, paint);
+        float tempY = icon != null ? height * 0.62f : height * 0.45f;
+        canvas.drawText(temp, width / 2f, tempY, paint);
 
         paint.setTextSize(height * 0.12f);
         paint.setTypeface(Typeface.DEFAULT);
-        if (condition != null) {
-            canvas.drawText(condition, width / 2f, height * 0.65f, paint);
+        if (condition != null && !condition.isEmpty()) {
+            canvas.drawText(condition, width / 2f, tempY + height * 0.18f, paint);
         }
         return bmp;
     }
@@ -87,14 +103,14 @@ public class Tsf3DWidget {
         if (listener != null) listener.onUpdated(bmp);
     }
 
-    public static void startWeatherUpdates(int width, int height, String location, UpdateListener listener) {
+    public static void startWeatherUpdates(Context context, int width, int height, String location, UpdateListener listener) {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
         Runnable fetchTask = () -> {
             WeatherClient.fetchWeather(location, new WeatherClient.WeatherCallback() {
                 @Override
                 public void onResult(WeatherClient.WeatherResult result) {
                     if (listener != null) {
-                        Bitmap bmp = renderWeather(width, height, result.temperature, result.condition);
+                        Bitmap bmp = renderWeather(context, width, height, result.temperature, result.condition, result.iconCode);
                         listener.onUpdated(bmp);
                     }
                 }
@@ -102,7 +118,7 @@ public class Tsf3DWidget {
                 @Override
                 public void onError(String error) {
                     if (listener != null) {
-                        Bitmap bmp = renderWeather(width, height, "--°C", "error");
+                        Bitmap bmp = renderWeather(context, width, height, "--°C", "error", null);
                         listener.onUpdated(bmp);
                     }
                 }
