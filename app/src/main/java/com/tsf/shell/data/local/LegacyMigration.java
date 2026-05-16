@@ -45,12 +45,16 @@ public class LegacyMigration {
 
         HashMap<Integer, ContentValues> favData = new HashMap<>();
         HashMap<Integer, Long> idMap = new HashMap<>();
-        migrateFavorites(legacy, roomDb.favoriteDao(), favData, idMap);
-        migrateApplications(legacy, roomDb.applicationDao());
-        migrateChildTable(legacy, roomDb.dockDao(), favData, idMap, "dock", DockItem.class);
-        migrateChildTable(legacy, roomDb.slidingDockDao(), favData, idMap, "slidingdock", SlidingDockItem.class);
-        migrateChildTable(legacy, roomDb.menuDao(), favData, idMap, "menu", MenuItem.class);
-        migrateChildTable(legacy, roomDb.quickLaunchDao(), favData, idMap, "quicklaunch", QuickLaunchItem.class);
+        try {
+            migrateFavorites(legacy, roomDb.favoriteDao(), favData, idMap);
+            migrateApplications(legacy, roomDb.applicationDao());
+            migrateChildTable(legacy, roomDb.dockDao(), favData, idMap, "dock", DockItem.class);
+            migrateChildTable(legacy, roomDb.slidingDockDao(), favData, idMap, "slidingdock", SlidingDockItem.class);
+            migrateChildTable(legacy, roomDb.menuDao(), favData, idMap, "menu", MenuItem.class);
+            migrateChildTable(legacy, roomDb.quickLaunchDao(), favData, idMap, "quicklaunch", QuickLaunchItem.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         legacy.close();
         legacyDb.close();
@@ -69,6 +73,7 @@ public class LegacyMigration {
     private static void migrateFavorites(SQLiteDatabase legacy, FavoriteDao dao,
                                           HashMap<Integer, ContentValues> favData,
                                           HashMap<Integer, Long> idMap) {
+        if (!tableExists(legacy, "favorites")) return;
         Cursor c = legacy.rawQuery("SELECT * FROM favorites", null);
         List<FavoriteItem> items = new ArrayList<>();
         List<Integer> oldIds = new ArrayList<>();
@@ -126,6 +131,7 @@ public class LegacyMigration {
     }
 
     private static void migrateApplications(SQLiteDatabase legacy, ApplicationDao dao) {
+        if (!tableExists(legacy, "application")) return;
         Cursor c = legacy.rawQuery("SELECT * FROM application", null);
         List<ApplicationItem> items = new ArrayList<>();
         while (c.moveToNext()) {
@@ -159,6 +165,7 @@ public class LegacyMigration {
                                                HashMap<Integer, ContentValues> favData,
                                                HashMap<Integer, Long> idMap,
                                                String tableName, Class<T> entityClass) {
+        if (!tableExists(legacy, tableName)) return;
         Cursor c = legacy.rawQuery("SELECT child FROM " + tableName + " WHERE _id=1", null);
         if (!c.moveToFirst()) {
             c.close();
@@ -325,6 +332,13 @@ public class LegacyMigration {
         } catch (NumberFormatException e) {
             return 0f;
         }
+    }
+
+    private static boolean tableExists(SQLiteDatabase db, String tableName) {
+        Cursor c = db.rawQuery("SELECT name FROM sqlite_master WHERE type='table' AND name=?", new String[]{tableName});
+        boolean exists = c.moveToFirst();
+        c.close();
+        return exists;
     }
 
     private static class LegacyDb extends SQLiteOpenHelper {
