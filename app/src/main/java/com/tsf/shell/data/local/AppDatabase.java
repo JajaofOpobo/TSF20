@@ -23,7 +23,7 @@ import com.tsf.shell.data.local.entity.SlidingDockItem;
 @Database(
         entities = {FavoriteItem.class, ApplicationItem.class, DockItem.class, MenuItem.class, SlidingDockItem.class, QuickLaunchItem.class, FolderItem.class},
         version = LegacyLauncherContract.DATABASE_VERSION,
-        exportSchema = false)
+        exportSchema = true)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static volatile AppDatabase INSTANCE;

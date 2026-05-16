@@ -3,7 +3,6 @@ package com.tsf.shell.badge;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.util.SparseIntArray;
@@ -46,7 +45,6 @@ public class BadgeNotificationService extends NotificationListenerService {
     }
 
     public static boolean isEnabled(Context context) {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR2) return false;
         String enabledListeners = android.provider.Settings.Secure.getString(
                 context.getContentResolver(),
                 "enabled_notification_listeners");

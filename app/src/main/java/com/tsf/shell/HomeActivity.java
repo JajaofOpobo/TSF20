@@ -309,6 +309,9 @@ public final class HomeActivity extends AppCompatActivity {
                 }
                 page.setOnItemClickListener(this::onDesktopItemClick);
                 page.setOnItemLongClickListener(this::onDesktopItemLongClick);
+                page.setOnEmptySpaceLongClickListener((x, y) -> {
+                    if (!lassoMode) toggleLassoMode();
+                });
                 page.setOnDragEndListener(item -> {
                     repository.updateItemPosition(item, null);
                 });
@@ -586,9 +589,9 @@ public final class HomeActivity extends AppCompatActivity {
         }
     }
 
-    private void onDesktopItemLongClick(FavoriteItem item) {
+    private void onDesktopItemLongClick(FavoriteItem item, float x, float y) {
         if (item == null) return;
-        ArchShortcutMenu.show(this, item, new ArchShortcutMenu.ActionCallback() {
+        ArchShortcutMenu.show(this, item, x, y, new ArchShortcutMenu.ActionCallback() {
             @Override
             public void onEdit(FavoriteItem it) {
                 IconEditDialog.show(HomeActivity.this, it, (editedItem, newName) -> {

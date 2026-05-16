@@ -25,6 +25,7 @@ public class DesktopPage extends View {
     private final Paint iconBgPaint;
     private OnItemClickListener itemClickListener;
     private OnItemLongClickListener itemLongClickListener;
+    private OnEmptySpaceLongClickListener emptySpaceLongClickListener;
     private OnDragEndListener dragEndListener;
     private FavoriteItem dragItem;
     private float dragX, dragY;
@@ -59,8 +60,12 @@ public class DesktopPage extends View {
             @Override
             public void onLongPress(MotionEvent e) {
                 FavoriteItem hit = findItemAt(e.getX(), e.getY());
-                if (hit != null && itemLongClickListener != null) {
-                    itemLongClickListener.onItemLongClick(hit);
+                if (hit != null) {
+                    if (itemLongClickListener != null) {
+                        itemLongClickListener.onItemLongClick(hit, e.getX(), e.getY());
+                    }
+                } else if (emptySpaceLongClickListener != null) {
+                    emptySpaceLongClickListener.onEmptySpaceLongClick(e.getX(), e.getY());
                 }
             }
         });
@@ -127,13 +132,28 @@ public class DesktopPage extends View {
     public FavoriteItem endDrag() {
         FavoriteItem dragged = dragItem;
         if (dragged != null) {
-            dragged.cellX = (int) dragX;
-            dragged.cellY = (int) dragY;
-            if (dragEndListener != null) dragEndListener.onDragEnd(dragged);
+            if (!isOverlapping(dragged, (int) dragX, (int) dragY)) {
+                dragged.cellX = (int) dragX;
+                dragged.cellY = (int) dragY;
+                if (dragEndListener != null) dragEndListener.onDragEnd(dragged);
+            }
         }
         dragItem = null;
         invalidate();
         return dragged;
+    }
+
+    private boolean isOverlapping(FavoriteItem item, float x, float y) {
+        RectF newBounds = new RectF(x - iconSize / 2, y - iconSize / 2,
+                x + iconSize / 2, y + iconSize / 2);
+        for (FavoriteItem other : items) {
+            if (other == item) continue;
+            RectF otherBounds = getItemBounds(other);
+            if (RectF.intersects(newBounds, otherBounds)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean isDragging() {
@@ -159,6 +179,7 @@ public class DesktopPage extends View {
 
         if (dragItem != null) {
             canvas.save();
+            canvas.translate(dragX - iconSize / 2, dragY - iconSize / 2);
             drawItemContent(canvas, dragItem, iconSize / 2, iconSize / 2, 180);
             canvas.restore();
         }
@@ -198,7 +219,7 @@ public class DesktopPage extends View {
         textPaint.setTextSize(iconSize * 0.16f);
         String label = item.title;
         if (label != null) {
-            String display = label.length() > 8 ? label.substring(0, 7) + "..." : label;
+            String display = label.length() > 12 ? label.substring(0, 11) + "..." : label;
             canvas.drawText(display, cx, cy + iconSize / 2 + textPaint.getTextSize() + 4, textPaint);
         }
 
@@ -257,7 +278,7 @@ public class DesktopPage extends View {
                         if (itemClickListener != null) {
                             itemClickListener.onItemClick(dragItem);
                         }
-                    } else {
+                    } else if (!isOverlapping(dragItem, x, y)) {
                         dragItem.cellX = (int) x;
                         dragItem.cellY = (int) y;
                         if (dragEndListener != null) dragEndListener.onDragEnd(dragItem);
@@ -280,12 +301,20 @@ public class DesktopPage extends View {
         this.itemLongClickListener = l;
     }
 
+    public void setOnEmptySpaceLongClickListener(OnEmptySpaceLongClickListener l) {
+        this.emptySpaceLongClickListener = l;
+    }
+
     public interface OnItemClickListener {
         void onItemClick(FavoriteItem item);
     }
 
     public interface OnItemLongClickListener {
-        void onItemLongClick(FavoriteItem item);
+        void onItemLongClick(FavoriteItem item, float x, float y);
+    }
+
+    public interface OnEmptySpaceLongClickListener {
+        void onEmptySpaceLongClick(float x, float y);
     }
 
     public interface OnDragEndListener {

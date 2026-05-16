@@ -60,9 +60,10 @@ public class ThemeManager {
         if (pkg == null) return null;
         try {
             PackageManager pm = context.getPackageManager();
-            int resId = context.getResources().getIdentifier(drawableName, "drawable", pkg);
+            android.content.res.Resources themeRes = pm.getResourcesForApplication(pkg);
+            int resId = themeRes.getIdentifier(drawableName, "drawable", pkg);
             if (resId != 0) {
-                return pm.getDrawable(pkg, resId, null);
+                return themeRes.getDrawable(resId);
             }
         } catch (Exception ignored) {}
         return null;
@@ -73,10 +74,11 @@ public class ThemeManager {
         if (pkg == null) return null;
         try {
             PackageManager pm = context.getPackageManager();
-            int resId = context.getResources().getIdentifier(
+            android.content.res.Resources themeRes = pm.getResourcesForApplication(pkg);
+            int resId = themeRes.getIdentifier(
                     packageName.replace('.', '_'), "drawable", pkg);
             if (resId != 0) {
-                return pm.getDrawable(pkg, resId, null);
+                return themeRes.getDrawable(resId);
             }
         } catch (Exception ignored) {}
         return null;
