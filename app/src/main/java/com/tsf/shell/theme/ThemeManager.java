@@ -7,9 +7,17 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ThemeManager {
+
+    private static final String[] THEME_ACTIONS = {
+        "com.tsf.shell.themes",
+        "org.adw.launcher.THEMES",
+        "com.gau.go.launcherex.theme"
+    };
 
     private static ThemeManager instance;
     private final Context context;
@@ -27,21 +35,31 @@ public class ThemeManager {
     }
 
     public List<ThemeInfo> getInstalledThemes() {
+        Set<String> seen = new HashSet<>();
         List<ThemeInfo> themes = new ArrayList<>();
-        Intent intent = new Intent("com.tsf.shell.themes");
         PackageManager pm = context.getPackageManager();
-        List<ResolveInfo> infos = pm.queryIntentActivities(intent, 0);
-        for (ResolveInfo info : infos) {
-            ThemeInfo theme = new ThemeInfo();
-            theme.packageName = info.activityInfo.packageName;
-            theme.label = info.activityInfo.loadLabel(pm).toString();
-            theme.icon = info.activityInfo.loadIcon(pm);
-            themes.add(theme);
+        for (String action : THEME_ACTIONS) {
+            Intent intent = new Intent(action);
+            for (ResolveInfo info : pm.queryIntentActivities(intent, 0)) {
+                String pkg = info.activityInfo.packageName;
+                if (seen.add(pkg)) {
+                    ThemeInfo theme = new ThemeInfo();
+                    theme.packageName = pkg;
+                    theme.label = info.activityInfo.loadLabel(pm).toString();
+                    theme.icon = info.activityInfo.loadIcon(pm);
+                    themes.add(theme);
+                }
+            }
         }
         return themes;
     }
 
     public void applyTheme(String packageName) {
+        Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+        if (intent != null) {
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+        }
         currentThemePackage = packageName;
         context.getSharedPreferences("theme", Context.MODE_PRIVATE)
                 .edit().putString("current_theme", packageName).apply();

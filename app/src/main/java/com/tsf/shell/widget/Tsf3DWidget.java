@@ -60,7 +60,6 @@ public class Tsf3DWidget {
             float left = (width - iconSize) / 2f;
             float top = height * 0.05f;
             canvas.drawBitmap(icon, null, new Rect((int) left, (int) top, (int) (left + iconSize), (int) (top + iconSize)), null);
-            icon.recycle();
         }
 
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);

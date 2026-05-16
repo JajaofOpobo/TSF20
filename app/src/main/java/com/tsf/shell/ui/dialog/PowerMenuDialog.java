@@ -4,8 +4,19 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.view.View;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 public class PowerMenuDialog {
 
@@ -67,7 +78,40 @@ public class PowerMenuDialog {
     }
 
     private static void takeScreenshot(Activity activity) {
-        android.widget.Toast.makeText(activity,
-                "Screenshot requires screen capture permission", android.widget.Toast.LENGTH_LONG).show();
+        try {
+            View root = activity.getWindow().getDecorView().getRootView();
+            Bitmap bitmap = Bitmap.createBitmap(root.getWidth(), root.getHeight(), Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap);
+            root.draw(canvas);
+
+            String fileName = "Screenshot_" + System.currentTimeMillis() + ".png";
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                ContentValues values = new ContentValues();
+                values.put(MediaStore.Images.Media.DISPLAY_NAME, fileName);
+                values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+                values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES);
+                Uri uri = activity.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                if (uri != null) {
+                    OutputStream out = activity.getContentResolver().openOutputStream(uri);
+                    if (out != null) {
+                        bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+                        out.close();
+                    }
+                }
+            } else {
+                File dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+                dir.mkdirs();
+                File file = new File(dir, fileName);
+                FileOutputStream out = new FileOutputStream(file);
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+                out.close();
+            }
+            bitmap.recycle();
+            android.widget.Toast.makeText(activity,
+                    "Screenshot saved to Pictures", android.widget.Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            android.widget.Toast.makeText(activity,
+                    "Screenshot failed: " + e.getMessage(), android.widget.Toast.LENGTH_LONG).show();
+        }
     }
 }
