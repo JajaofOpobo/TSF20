@@ -6,19 +6,22 @@ import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ProcFile extends File implements Parcelable {
-    public static final Parcelable.Creator<ProcFile> CREATOR = new Parcelable.Creator<ProcFile>() { // from class: com.tsf.extend.theme.pull.tools.ProcFile.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<ProcFile> {
+
+        @Override
+
         public ProcFile createFromParcel(Parcel parcel) {
             return new ProcFile(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public ProcFile[] newArray(int i) {
             return new ProcFile[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<ProcFile> CREATOR = new Creator();
     public final String b;
 
     protected ProcFile(Parcel parcel) {

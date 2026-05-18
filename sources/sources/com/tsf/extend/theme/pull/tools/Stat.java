@@ -5,19 +5,22 @@ import android.os.Parcelable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public final class Stat extends ProcFile {
-    public static final Parcelable.Creator<Stat> CREATOR = new Parcelable.Creator<Stat>() { // from class: com.tsf.extend.theme.pull.tools.Stat.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<Stat> {
+
+        @Override
+
         public Stat createFromParcel(Parcel parcel) {
             return new Stat(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public Stat[] newArray(int i) {
             return new Stat[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<Stat> CREATOR = new Creator();
     private final String[] a;
 
     private Stat(Parcel parcel) {

@@ -5,19 +5,22 @@ import android.os.Parcelable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TSFsequence implements Parcelable {
-    public static final Parcelable.Creator<TSFsequence> CREATOR = new Parcelable.Creator<TSFsequence>() { // from class: com.tsf.shell.plugin.widget.TSFsequence.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<TSFsequence> {
+
+        @Override
+
         public TSFsequence createFromParcel(Parcel parcel) {
             return new TSFsequence(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public TSFsequence[] newArray(int i) {
             return new TSFsequence[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<TSFsequence> CREATOR = new Creator();
     public String a;
     public int b;
     public int c;

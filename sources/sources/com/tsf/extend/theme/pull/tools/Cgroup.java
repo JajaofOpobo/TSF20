@@ -6,19 +6,22 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public final class Cgroup extends ProcFile {
-    public static final Parcelable.Creator<Cgroup> CREATOR = new Parcelable.Creator<Cgroup>() { // from class: com.tsf.extend.theme.pull.tools.Cgroup.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<Cgroup> {
+
+        @Override
+
         public Cgroup createFromParcel(Parcel parcel) {
             return new Cgroup(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public Cgroup[] newArray(int i) {
             return new Cgroup[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<Cgroup> CREATOR = new Creator();
     public final ArrayList<ControlGroup> a;
 
     private Cgroup(Parcel parcel) {

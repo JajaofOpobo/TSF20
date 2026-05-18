@@ -5,19 +5,22 @@ import android.os.Parcelable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class Animation implements Parcelable {
-    public static final Parcelable.Creator<Animation> CREATOR = new Parcelable.Creator<Animation>() { // from class: com.tsf.shell.plugin.widget.Animation.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<Animation> {
+
+        @Override
+
         public Animation createFromParcel(Parcel parcel) {
             return new Animation(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public Animation[] newArray(int i) {
             return new Animation[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<Animation> CREATOR = new Creator();
     public String a;
     public float b;
     public float c;

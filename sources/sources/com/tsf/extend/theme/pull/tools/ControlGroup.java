@@ -5,19 +5,22 @@ import android.os.Parcelable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ControlGroup implements Parcelable {
-    public static final Parcelable.Creator<ControlGroup> CREATOR = new Parcelable.Creator<ControlGroup>() { // from class: com.tsf.extend.theme.pull.tools.ControlGroup.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<ControlGroup> {
+
+        @Override
+
         public ControlGroup createFromParcel(Parcel parcel) {
             return new ControlGroup(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public ControlGroup[] newArray(int i) {
             return new ControlGroup[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<ControlGroup> CREATOR = new Creator();
     public final int a;
     public final String b;
     public final String c;

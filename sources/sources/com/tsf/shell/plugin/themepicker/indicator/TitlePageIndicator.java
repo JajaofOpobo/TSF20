@@ -660,19 +660,22 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
     }
 
     static class SavedState extends View.BaseSavedState {
-        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<SavedState>() { // from class: com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator.SavedState.1
-            @Override // android.os.Parcelable.Creator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        private static final class Creator implements Parcelable.Creator<SavedState> {
+
+            @Override
+
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            @Override // android.os.Parcelable.Creator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+            @Override
+
             public SavedState[] newArray(int i) {
                 return new SavedState[i];
             }
-        };
+    }
+    
+    public static final Parcelable.Creator<SavedState> CREATOR = new Creator();
         int a;
 
         public SavedState(Parcelable parcelable) {

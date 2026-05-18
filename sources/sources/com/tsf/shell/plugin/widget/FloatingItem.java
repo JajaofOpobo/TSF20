@@ -6,19 +6,22 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FloatingItem implements Parcelable {
-    public static final Parcelable.Creator<FloatingItem> CREATOR = new Parcelable.Creator<FloatingItem>() { // from class: com.tsf.shell.plugin.widget.FloatingItem.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<FloatingItem> {
+
+        @Override
+
         public FloatingItem createFromParcel(Parcel parcel) {
             return new FloatingItem(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public FloatingItem[] newArray(int i) {
             return new FloatingItem[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<FloatingItem> CREATOR = new Creator();
     public String a;
     public String b;
     public float c;

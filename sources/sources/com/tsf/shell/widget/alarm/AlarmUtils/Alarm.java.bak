@@ -12,22 +12,19 @@ import java.util.Calendar;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public final class Alarm implements Parcelable {
-    private static final class Creator implements Parcelable.Creator<Alarm> {
-
-        @Override
-
+    public static final Parcelable.Creator<Alarm> CREATOR = new Parcelable.Creator<Alarm>() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.Alarm.1
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public Alarm createFromParcel(Parcel parcel) {
             return new Alarm(parcel);
         }
 
-        @Override
-
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public Alarm[] newArray(int i) {
             return new Alarm[i];
         }
-    }
-    
-    public static final Parcelable.Creator<Alarm> CREATOR = new Creator();
+    };
     public int a;
     public boolean b;
     public int c;

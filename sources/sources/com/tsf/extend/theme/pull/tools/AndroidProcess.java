@@ -5,19 +5,22 @@ import android.os.Parcelable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AndroidProcess implements Parcelable {
-    public static final Parcelable.Creator<AndroidProcess> CREATOR = new Parcelable.Creator<AndroidProcess>() { // from class: com.tsf.extend.theme.pull.tools.AndroidProcess.1
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    private static final class Creator implements Parcelable.Creator<AndroidProcess> {
+
+        @Override
+
         public AndroidProcess createFromParcel(Parcel parcel) {
             return new AndroidProcess(parcel);
         }
 
-        @Override // android.os.Parcelable.Creator
-        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        @Override
+
         public AndroidProcess[] newArray(int i) {
             return new AndroidProcess[i];
         }
-    };
+    }
+    
+    public static final Parcelable.Creator<AndroidProcess> CREATOR = new Creator();
     public final String b;
     public final int c;
 

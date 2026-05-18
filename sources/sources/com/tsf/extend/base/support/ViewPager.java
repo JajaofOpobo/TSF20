@@ -843,19 +843,22 @@ public class ViewPager extends ViewGroup {
     }
 
     public static class SavedState extends View.BaseSavedState {
-        public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.Creator<SavedState>() { // from class: com.tsf.extend.base.support.ViewPager.SavedState.1
-            @Override // android.os.Parcelable.Creator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        private static final class Creator implements Parcelable.Creator<SavedState> {
+
+            @Override
+
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            @Override // android.os.Parcelable.Creator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+            @Override
+
             public SavedState[] newArray(int i) {
                 return new SavedState[i];
             }
-        };
+    }
+    
+    public static final Parcelable.Creator<SavedState> CREATOR = new Creator();
         int a;
         Parcelable b;
         ClassLoader c;
