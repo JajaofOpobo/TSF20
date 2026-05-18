@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.common.shader;
 
 import android.opengl.GLES20;
-import com.censivn.C3DEngine.a.c;
+import com.censivn.C3DEngine.a.C;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import java.nio.Buffer;
 

@@ -6,7 +6,7 @@ import android.support.v4.app.k;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tsf.shell.plugin.crop.e;
+import com.tsf.shell.plugin.crop.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SizeFragmentDialogActicity extends FragmentActivity {

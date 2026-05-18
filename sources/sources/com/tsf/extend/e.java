@@ -22,7 +22,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.extend.base.j.ab;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.s;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 import java.lang.ref.WeakReference;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

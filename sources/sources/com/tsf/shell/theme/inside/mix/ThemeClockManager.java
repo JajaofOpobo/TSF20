@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeClockDescription;

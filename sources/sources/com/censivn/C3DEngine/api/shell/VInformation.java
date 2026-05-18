@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.shell;
 
-import com.censivn.C3DEngine.b.b.a;
+import com.censivn.C3DEngine.b.b.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VInformation {

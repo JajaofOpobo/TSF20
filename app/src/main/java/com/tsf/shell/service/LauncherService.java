@@ -29,7 +29,7 @@ public class LauncherService extends Service {
         Notification notification = new NotificationCompat.Builder(this, NotificationHelper.CHANNEL_LAUNCHER)
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText("TSF Shell is running")
-                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setContentIntent(pi)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .setOngoing(true)

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.i.c.a.b;
 
 import android.graphics.Bitmap;
-import com.tsf.b;
+import com.tsf.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class o extends e {

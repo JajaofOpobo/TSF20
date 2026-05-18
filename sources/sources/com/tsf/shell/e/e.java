@@ -5,9 +5,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.b;
-import com.tsf.shell.e.d;
-import com.tsf.shell.utils.g;
+import com.tsf.B;
+import com.tsf.shell.e.D;
+import com.tsf.shell.utils.G;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends FrameLayout {

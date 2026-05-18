@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.core;
 
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VRenderer {

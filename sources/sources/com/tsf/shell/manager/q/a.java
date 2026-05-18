@@ -4,11 +4,11 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
-import com.tsf.shell.e;
-import com.tsf.shell.manager.a.f;
-import com.tsf.shell.services.a;
+import com.tsf.shell.E;
+import com.tsf.shell.manager.a.F;
+import com.tsf.shell.services.A;
 import com.tsf.shell.utils.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.p;
 
 import android.content.Intent;
-import com.censivn.C3DEngine.b.c.a;
-import com.tsf.b;
+import com.censivn.C3DEngine.b.c.A;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.activity.tips.TipsDialogActivity;
 import java.util.ArrayList;

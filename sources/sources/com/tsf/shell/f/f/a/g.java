@@ -13,8 +13,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.m;
-import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.B;
+import com.tsf.shell.manager.p.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends j {

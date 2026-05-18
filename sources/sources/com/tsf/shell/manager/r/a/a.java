@@ -11,14 +11,14 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.A;
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellProvider;
-import com.tsf.shell.e.c;
-import com.tsf.shell.e.d;
+import com.tsf.shell.e.C;
+import com.tsf.shell.e.D;
 import com.tsf.shell.f.e.t;
-import com.tsf.shell.f.f.g;
-import com.tsf.shell.f.i.c.f;
+import com.tsf.shell.f.f.G;
+import com.tsf.shell.f.i.c.F;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

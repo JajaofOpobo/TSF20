@@ -1,6 +1,6 @@
 package com.tsf.shell.f.c.b;
 
-import com.tsf.shell.manager.r.c.g;
+import com.tsf.shell.manager.r.c.G;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -1,7 +1,7 @@
 package com.tsf.shell.preference.a.a.a;
 
 import com.censivn.C3DEngine.b.f.m;
-import com.tsf.b;
+import com.tsf.B;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

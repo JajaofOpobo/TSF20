@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VInformation;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.f.i.c.a.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

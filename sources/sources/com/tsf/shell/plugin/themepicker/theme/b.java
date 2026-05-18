@@ -19,10 +19,10 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 import com.tsf.shell.plugin.themepicker.IconPickerActivity;
-import com.tsf.shell.plugin.themepicker.e;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.E;
+import com.tsf.shell.plugin.themepicker.F;
 import com.tsf.shell.plugin.themepicker.utils.RecyclingImageView;
-import com.tsf.shell.plugin.themepicker.utils.h;
+import com.tsf.shell.plugin.themepicker.utils.H;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MinePersonalizationPager extends LinearLayout implements ViewPager.e, PagerIndicator.a {

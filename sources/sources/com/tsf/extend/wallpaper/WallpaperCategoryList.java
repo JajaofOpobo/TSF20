@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperCategoryList extends LinearLayout implements PageActivity.a {

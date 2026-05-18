@@ -4,7 +4,7 @@ import android.content.Context;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends aq {
+public class B extends aq {
     private String a;
     private boolean b;
 

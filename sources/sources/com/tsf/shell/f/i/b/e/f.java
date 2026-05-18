@@ -3,7 +3,7 @@ package com.tsf.shell.f.i.b.e;
 import android.graphics.Rect;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;

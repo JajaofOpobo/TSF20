@@ -18,8 +18,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
-import com.tsf.extend.wallpaper.a.a;
+import com.tsf.extend.F;
+import com.tsf.extend.wallpaper.a.A;
 import java.io.File;
 import java.io.FileOutputStream;
 

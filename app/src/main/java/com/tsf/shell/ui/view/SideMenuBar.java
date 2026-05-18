@@ -19,9 +19,9 @@ public class SideMenuBar extends View {
     private float touchStartX;
     private boolean tracking;
     private VelocityTracker velocityTracker;
-    private final Paint bgPaint;
-    private final Paint itemPaint;
-    private final Paint textPaint;
+    private Paint bgPaint;
+    private Paint itemPaint;
+    private Paint textPaint;
     private final List<MenuItem> items = new ArrayList<>();
 
     public static class MenuItem {
@@ -32,6 +32,15 @@ public class SideMenuBar extends View {
 
     public SideMenuBar(Context context) {
         super(context);
+        init();
+    }
+
+    public SideMenuBar(Context context, android.util.AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    private void init() {
         float density = getResources().getDisplayMetrics().density;
         menuWidth = (int) (240 * density);
 

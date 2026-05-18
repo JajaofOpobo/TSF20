@@ -1,15 +1,15 @@
 package com.censivn.C3DEngine.c;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.c.a.c;
+import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.c.a.C;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     c a = new c();
     ArrayList<b> b;
 
-    public a(i iVar) {
+    public A(i iVar) {
         this.a.a(iVar);
         this.a.c();
         this.b = new ArrayList<>();

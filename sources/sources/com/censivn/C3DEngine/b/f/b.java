@@ -5,14 +5,14 @@ import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends j {
+public class B extends j {
     private static com.tsf.shell.f.e.d<Number3d> a;
     private ArrayList<Number3d> b = new ArrayList<>();
     private Number3d c = new Number3d();
     private Number3d d = new Number3d();
     private Number3d e = new Number3d();
 
-    public b() {
+    public B() {
         if (a == null) {
             a = new com.tsf.shell.f.e.d<Number3d>() { // from class: com.censivn.C3DEngine.b.f.b.1
                 @Override // com.tsf.shell.f.e.d

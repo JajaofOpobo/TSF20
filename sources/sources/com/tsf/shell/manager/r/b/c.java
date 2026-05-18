@@ -3,16 +3,16 @@ package com.tsf.shell.manager.r.b;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
-import com.tsf.shell.f.e.g.a.a;
+import com.censivn.C3DEngine.b.h.b.F;
+import com.censivn.C3DEngine.b.h.b.H;
+import com.tsf.shell.f.e.g.a.A;
 import com.tsf.shell.utils.w;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c<E> extends com.tsf.shell.f.e.g.a.b {
+public class C<E> extends com.tsf.shell.f.e.g.a.b {
     public com.tsf.shell.manager.r.b.a a;
     private h b;
     private j c;
@@ -26,7 +26,7 @@ public class c<E> extends com.tsf.shell.f.e.g.a.b {
         this.b.d();
     }
 
-    public c(String str) {
+    public C(String str) {
         super(str);
     }
 

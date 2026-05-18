@@ -14,7 +14,7 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.widget.RemoteViews;
 import com.android.volley.n;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemePushService extends IntentService {

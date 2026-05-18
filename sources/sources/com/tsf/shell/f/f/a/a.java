@@ -2,14 +2,14 @@ package com.tsf.shell.f.f.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.f.f.a.b.k;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends c {
+public class A extends c {
     private InterfaceC0101a b;
     private a c;
     private a d;
@@ -56,7 +56,7 @@ public class a extends c {
         }
     }
 
-    public a(k kVar, InterfaceC0101a interfaceC0101a) {
+    public A(k kVar, InterfaceC0101a interfaceC0101a) {
         this.b = interfaceC0101a;
         a(kVar);
     }

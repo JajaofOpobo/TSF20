@@ -2,13 +2,13 @@ package com.tsf.shell.f.d.e;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.b;
-import com.tsf.shell.f.g.a.h;
+import com.tsf.B;
+import com.tsf.shell.f.g.a.H;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends h {
+public class A extends h {
     public static ArrayList<Number3d> a;
     public static float b;
     public static float c;
@@ -27,7 +27,7 @@ public class a extends h {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(InterfaceC0090a interfaceC0090a) {
+    public A(InterfaceC0090a interfaceC0090a) {
         super(new com.censivn.C3DEngine.b.f.a.a(16, 30, 30));
         int i = 0;
         this.d = false;

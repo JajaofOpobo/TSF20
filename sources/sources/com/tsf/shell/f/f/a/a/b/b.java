@@ -3,10 +3,10 @@ package com.tsf.shell.f.f.a.a.b;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.D;
 import com.tsf.shell.utils.p;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

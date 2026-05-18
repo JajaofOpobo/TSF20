@@ -2,8 +2,8 @@ package com.tsf.shell.theme.inside.mix;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.a;
-import com.tsf.shell.f.i.b.d.b;
+import com.censivn.C3DEngine.A;
+import com.tsf.shell.f.i.b.d.B;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;

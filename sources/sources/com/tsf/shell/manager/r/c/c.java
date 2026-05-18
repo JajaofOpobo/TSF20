@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.k;
 import com.tsf.shell.utils.x;

@@ -18,8 +18,8 @@ import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.base.view.c;
-import com.tsf.extend.f;
+import com.tsf.extend.base.view.C;
+import com.tsf.extend.F;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public static final com.censivn.C3DEngine.b.g.b a = new b.c();
     public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
     public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();

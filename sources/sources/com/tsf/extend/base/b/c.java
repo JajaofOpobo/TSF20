@@ -1,7 +1,7 @@
 package com.tsf.extend.base.b;
 
 import android.util.Pair;
-import com.android.volley.b;
+import com.android.volley.B;
 import com.android.volley.t;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

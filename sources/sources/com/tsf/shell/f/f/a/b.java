@@ -1,17 +1,17 @@
 package com.tsf.shell.f.f.a;
 
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.b;
+import com.tsf.B;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class B {
     private com.tsf.shell.manager.a.e a;
     private boolean c = false;
     private boolean d = false;
     private ArrayList<com.tsf.shell.f.i.b> b = new ArrayList<>();
 
-    public b(com.tsf.shell.manager.a.e eVar) {
+    public B(com.tsf.shell.manager.a.e eVar) {
         this.a = eVar;
     }
 

@@ -2,7 +2,7 @@ package com.tsf.shell.f.d.d;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.World;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.G;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {

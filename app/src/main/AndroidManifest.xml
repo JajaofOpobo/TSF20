@@ -81,6 +81,16 @@
             android:exported="false"
             android:theme="@style/Theme.TSF20" />
 
+        <activity
+            android:name=".ui.AppDrawerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TSF20" />
+
         <receiver
             android:name="com.tsf.shell.InstallShortcutReceiver"
             android:exported="false">

@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.api.shell;
 import android.view.View;
 import android.view.ViewGroup;
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.tsf.shell.manager.a;
+import com.tsf.shell.manager.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VTempleteLayerManager {

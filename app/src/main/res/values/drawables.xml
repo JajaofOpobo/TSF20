@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="bottom_dialog_btn_color">#33888888</item>
+    <item type="drawable" name="deepgrey">#ff666666</item>
+    <item type="drawable" name="grey">#ff999999</item>
+    <item type="drawable" name="k_actionbar_press_bg">#22000000</item>
+    <item type="drawable" name="lightgray">#88cccccc</item>
+    <item type="drawable" name="list_press">#ff4b4b4b</item>
+    <item type="drawable" name="list_release">#ffd9dfdf</item>
+    <item type="drawable" name="list_view_bg_pressed">#47ffffff</item>
+    <item type="drawable" name="list_view_bg_release">#00ffffff</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="theme_content_dark_holo_title">#99000000</item>
+    <item type="drawable" name="theme_content_dark_holo_title_press">#33ffffff</item>
+    <item type="drawable" name="tips_button_normal">#cc666666</item>
+    <item type="drawable" name="tips_button_press">#ff37c5f8</item>
+    <item type="drawable" name="translucent_background">#00000000</item>
+    <item type="drawable" name="transparent_drawable">#00000000</item>
+    <item type="drawable" name="white">#ffffffff</item>
+</resources>

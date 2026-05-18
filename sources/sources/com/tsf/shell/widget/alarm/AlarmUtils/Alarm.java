@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.BaseColumns;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import java.util.Calendar;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -3,8 +3,8 @@ package com.tsf.shell.f.f;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.censivn.C3DEngine.b.f.h {
-    public b() {
+public class B extends com.censivn.C3DEngine.b.f.h {
+    public B() {
         super(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 1, 1, false);
     }
 

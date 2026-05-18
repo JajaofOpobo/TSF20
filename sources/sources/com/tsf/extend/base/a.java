@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public final class a {
+public final class A {
 
     /* JADX INFO: renamed from: com.tsf.extend.base.a$a, reason: collision with other inner class name */
     public static final class C0047a {

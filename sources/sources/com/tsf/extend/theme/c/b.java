@@ -3,7 +3,7 @@ package com.tsf.extend.theme.c;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 import com.tsf.extend.theme.t;
 import java.util.List;
 

@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e {
+public class E {
     public static void a(final String str) {
         com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.e.1
             @Override // java.lang.Runnable

@@ -5,7 +5,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class B {
     public static int a;
     public static int b;
     public static int c;

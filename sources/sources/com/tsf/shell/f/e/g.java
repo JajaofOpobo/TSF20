@@ -1,11 +1,11 @@
 package com.tsf.shell.f.e;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class g implements b.a {
-    g() {
+class G implements b.a {
+    G() {
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a

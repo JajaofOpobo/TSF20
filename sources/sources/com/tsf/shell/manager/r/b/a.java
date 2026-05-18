@@ -1,12 +1,12 @@
 package com.tsf.shell.manager.r.b;
 
-import com.tsf.b;
-import com.tsf.shell.manager.r.b.c.g;
+import com.tsf.B;
+import com.tsf.shell.manager.r.b.c.G;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.e.g.d {
+public class A extends com.tsf.shell.f.e.g.d {
     public com.tsf.shell.manager.r.b.a.a a;
     public g b;
     public b c;
@@ -28,7 +28,7 @@ public class a extends com.tsf.shell.f.e.g.d {
         }
     }
 
-    public a() {
+    public A() {
         super(800.0f * com.censivn.C3DEngine.b.b.a.c);
         this.f = false;
         ArrayList<com.tsf.shell.f.e.g.a.b> arrayList = new ArrayList<>();

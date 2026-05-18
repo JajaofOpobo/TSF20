@@ -5,10 +5,10 @@ import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import com.censivn.C3DEngine.a;
-import com.tsf.b;
+import com.censivn.C3DEngine.A;
+import com.tsf.B;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.E;
 import com.tsf.shell.utils.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

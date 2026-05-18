@@ -1,6 +1,6 @@
 package com.tsf.shell.widget.alarm.d;
 
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import java.lang.reflect.Field;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

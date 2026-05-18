@@ -1,7 +1,7 @@
 package com.tsf.shell.f.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class C {
     public static final float a = com.censivn.C3DEngine.b.b.a.a(300.0f);
 
     public static float a(float f, float f2, float f3) {

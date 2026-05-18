@@ -9,7 +9,7 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

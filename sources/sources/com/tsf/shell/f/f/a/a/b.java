@@ -19,7 +19,7 @@ import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @TargetApi(9)
-public class b {
+public class B {
     public static char[] a = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'w', 'x', 'y', 'z'};
     private static final char[] b = {12353, 12363, 12373, 12383, 12394, 12399, 12414, 12419, 12425, 12430, 12436, 12437, 12449, 12459, 12469, 12479, 12490, 12495, 12510, 12515, 12521, 12526, 12532, 12533};
     private static final char[] c = {12362, 12372, 12382, 12393, 12398, 12413, 12418, 12424, 12429, 12435, 12436, 12438, 12458, 12468, 12478, 12489, 12494, 12509, 12514, 12520, 12525, 12531, 12532, 12534};

@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.manager.o.a.c;
+import com.tsf.shell.manager.o.a.C;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

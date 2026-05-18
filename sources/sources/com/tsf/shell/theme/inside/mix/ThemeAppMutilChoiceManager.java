@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;

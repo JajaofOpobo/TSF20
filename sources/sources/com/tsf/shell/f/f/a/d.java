@@ -3,14 +3,14 @@ package com.tsf.shell.f.f.a;
 import android.content.ComponentName;
 import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.tsf.b;
-import com.tsf.shell.plugin.classification.d;
+import com.tsf.B;
+import com.tsf.shell.plugin.classification.D;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class D {
     private ArrayList<b> a = new ArrayList<>();
 
     class b {

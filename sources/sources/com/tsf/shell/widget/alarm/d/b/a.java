@@ -8,7 +8,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import java.io.IOException;
 import java.util.List;
 

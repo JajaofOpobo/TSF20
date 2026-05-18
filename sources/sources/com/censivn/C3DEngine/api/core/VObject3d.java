@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.core;
 
-import com.censivn.C3DEngine.a.c;
+import com.censivn.C3DEngine.a.C;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PointBufferManager;
@@ -8,8 +8,8 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.UvBufferManager;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget;
-import com.censivn.C3DEngine.b.b.a;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.b.A;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.common.shader.Shader;
 

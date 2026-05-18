@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.description;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
 import com.tsf.shell.theme.inside.element.ThemeElementCacher;

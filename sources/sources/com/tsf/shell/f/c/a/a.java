@@ -2,13 +2,13 @@ package com.tsf.shell.f.c.a;
 
 import android.util.Log;
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.d.a {
+public class A extends com.censivn.C3DEngine.b.d.a {
     private boolean a;
     private n b;
     private final int d;
@@ -20,7 +20,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     private f j;
     private b k;
 
-    public a(i iVar, f fVar) {
+    public A(i iVar, f fVar) {
         super(iVar);
         this.a = false;
         this.d = (int) (30.0f * com.censivn.C3DEngine.b.b.a.a);

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import com.tsf.shell.widget.alarm.m;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

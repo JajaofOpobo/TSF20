@@ -4,7 +4,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.theme.c;
+import com.tsf.extend.theme.C;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;

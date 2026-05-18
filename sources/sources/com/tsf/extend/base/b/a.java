@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a<T extends Serializable> implements Serializable {
+public class A<T extends Serializable> implements Serializable {
     private b a;
     private long c;
     private String e;

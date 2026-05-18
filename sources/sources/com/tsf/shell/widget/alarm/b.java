@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.shell.VInformation;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends VRectangle {
+public class B extends VRectangle {
     float[] a;
     float[] b;
     float c;
@@ -16,7 +16,7 @@ public class b extends VRectangle {
     private static float g = 1.2f;
     public static boolean f = false;
 
-    public b() {
+    public B() {
         super(512.0f / g, 512.0f / g);
         this.h = VInformation.Scale();
         this.a = new float[]{(-208.0f) * this.h, 0.0f, 0.0f, 1.0f};

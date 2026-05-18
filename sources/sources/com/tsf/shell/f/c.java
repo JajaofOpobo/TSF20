@@ -1,11 +1,11 @@
 package com.tsf.shell.f;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.i.b.e.h;
+import com.censivn.C3DEngine.b.f.I;
+import com.tsf.shell.f.i.b.e.H;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class C {
     private static ArrayList<com.tsf.shell.f.i.b.e.b> a = new ArrayList<>();
 
     public static com.tsf.shell.f.i.b.e.b a(i iVar) {

@@ -3,7 +3,7 @@ package com.tsf.shell.f.e;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d<E> {
+public class D<E> {
     private ArrayList<E> a = new ArrayList<>();
 
     public E c() {

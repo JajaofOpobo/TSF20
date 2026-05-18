@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c<E> {
+public abstract class C<E> {
     private ArrayList<f> b;
     private ArrayList<f> c;
     private ArrayList<f> d;
@@ -20,11 +20,11 @@ public abstract class c<E> {
 
     public abstract String c();
 
-    public c(ArrayList<f> arrayList) {
+    public C(ArrayList<f> arrayList) {
         a(arrayList);
     }
 
-    public c() {
+    public C() {
     }
 
     public void a(ArrayList<f> arrayList) {
@@ -89,7 +89,7 @@ public abstract class c<E> {
     private E c(int i) {
         Iterator<f> it = this.b.iterator();
         while (it.hasNext()) {
-            ?? r0 = (E) ((f) it.next());
+            E r0 = (E) ((f) it.next());
             if (r0.k() == i) {
                 return r0;
             }

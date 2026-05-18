@@ -2,7 +2,7 @@ package com.tsf.extend;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MainActivity extends Activity {

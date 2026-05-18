@@ -1,12 +1,12 @@
 package com.censivn.C3DEngine.b.g;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Vector;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class C {
     private static Object a = new Object();
     private static Vector<com.censivn.C3DEngine.b.g.a.c> b = new Vector<>();
     private static boolean c = false;

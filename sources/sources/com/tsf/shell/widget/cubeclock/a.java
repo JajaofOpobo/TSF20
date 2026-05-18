@@ -3,8 +3,8 @@ package com.tsf.shell.widget.cubeclock;
 import com.censivn.C3DEngine.api.message.VMessageQueueManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends e {
-    public a(c cVar) {
+public class A extends e {
+    public A(c cVar) {
         super(cVar);
     }
 

@@ -7,12 +7,12 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.UvBufferManager;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.B;
+import com.tsf.shell.manager.p.E;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.f.l {
+public class A extends com.tsf.shell.f.f.l {
     private com.censivn.C3DEngine.b.f.j a;
     private C0108a b;
     private com.tsf.shell.f.f.g c;
@@ -22,7 +22,7 @@ public class a extends com.tsf.shell.f.f.l {
     private com.censivn.C3DEngine.b.g.b.b g;
     private boolean h;
 
-    public a(int i, boolean z) {
+    public A(int i, boolean z) {
         int i2;
         int i3;
         super(i, b.d.desktop_transition_cloth, z);

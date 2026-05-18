@@ -3,7 +3,7 @@ package com.tsf.shell.f;
 import android.app.ProgressDialog;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private static ProgressDialog a;
 
     public static void a(String str) {

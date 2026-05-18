@@ -21,6 +21,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import com.tsf.shell.data.DatabaseSeeder;
 import com.tsf.shell.data.local.entity.DockItem;
 import com.tsf.shell.data.local.entity.FavoriteItem;
 import com.tsf.shell.data.local.entity.FolderItem;
@@ -87,6 +88,7 @@ public final class HomeActivity extends AppCompatActivity {
     }
 
     private void initializeLauncher() {
+        DatabaseSeeder.seedIfEmpty(this);
         renderer = new LibGDXRenderer(this);
         renderer.initialize();
         repository = new LauncherRepository(this);

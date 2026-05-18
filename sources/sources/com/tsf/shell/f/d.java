@@ -1,14 +1,14 @@
 package com.tsf.shell.f;
 
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class D {
     private static d b;
     private static com.tsf.shell.manager.f.c c;
     private com.censivn.C3DEngine.a.a a;
 
-    public d(com.censivn.C3DEngine.a.a aVar) {
+    public D(com.censivn.C3DEngine.a.a aVar) {
         b = this;
         this.a = aVar;
         h();

@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends com.censivn.C3DEngine.b.f.j {
+public class E extends com.censivn.C3DEngine.b.f.j {
     private static e a = new e();
     private static Number3d b = new Number3d();
     private static com.tsf.shell.f.i.c c;
 
-    public e() {
+    public E() {
         renderChildren(false);
     }
 

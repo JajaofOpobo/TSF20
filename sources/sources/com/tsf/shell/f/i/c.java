@@ -6,15 +6,15 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.e.e;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.e.E;
+import com.tsf.shell.f.f.G;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends b {
+public class C extends b {
     private static k b;
     public static TextureElement f;
     public static TextureElement g;
@@ -27,7 +27,7 @@ public class c extends b {
     private float m;
     private float n;
 
-    public c(ItemInfo itemInfo) {
+    public C(ItemInfo itemInfo) {
         super(itemInfo);
         this.a = false;
         this.k = false;

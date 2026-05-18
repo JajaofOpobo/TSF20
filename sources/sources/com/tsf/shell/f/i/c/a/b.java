@@ -10,11 +10,11 @@ import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
-import com.tsf.b;
+import com.tsf.B;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends j {
+public class B extends j {
     public TextureElement a;
     public TextureElement b;
     public TextureElement c;
@@ -33,7 +33,7 @@ public class b extends j {
     private VRectangle t;
     private float u;
 
-    public b(VTextureManager vTextureManager, Context context) {
+    public B(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.g = 1000;
         this.u = 0.5f;

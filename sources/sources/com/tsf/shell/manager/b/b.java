@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.o;
 import com.tsf.shell.utils.z;

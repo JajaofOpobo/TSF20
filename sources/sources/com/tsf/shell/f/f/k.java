@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.h.b.c;
+import com.censivn.C3DEngine.b.h.b.C;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

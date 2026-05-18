@@ -1,7 +1,7 @@
 package com.tsf.shell.activity.a;
 
 import android.content.Intent;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.A;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

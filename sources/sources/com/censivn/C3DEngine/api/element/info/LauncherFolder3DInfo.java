@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.api.element.info;
 
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.b;
+import com.tsf.B;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

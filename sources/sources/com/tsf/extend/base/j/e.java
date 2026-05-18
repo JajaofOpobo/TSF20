@@ -15,7 +15,7 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.text.TextUtils;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileOutputStream;

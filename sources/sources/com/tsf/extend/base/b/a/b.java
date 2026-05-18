@@ -1,7 +1,7 @@
 package com.tsf.extend.base.b.a;
 
 import android.graphics.Bitmap;
-import android.support.v4.d.f;
+import android.support.v4.d.F;
 import java.io.Serializable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -1,12 +1,12 @@
 package com.tsf.shell.f;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class B {
     private static int a = 0;
     private static TextureElement b;
 

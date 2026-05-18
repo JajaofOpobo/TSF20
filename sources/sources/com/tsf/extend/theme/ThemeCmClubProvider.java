@@ -9,7 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.SparseArray;
-import com.tsf.extend.f;
+import com.tsf.extend.F;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Map;

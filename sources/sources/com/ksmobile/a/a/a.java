@@ -1,7 +1,7 @@
 package com.ksmobile.a.a;
 
-import com.ksmobile.launcher.a.a.b;
-import com.tsf.extend.base.d;
+import com.ksmobile.launcher.a.a.B;
+import com.tsf.extend.base.D;
 import com.tsf.extend.base.j.q;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

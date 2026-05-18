@@ -1,8 +1,8 @@
 package com.tsf.shell.theme.inside.mix.menu.item;
 
-import com.censivn.C3DEngine.b.f.a.a;
+import com.censivn.C3DEngine.b.f.a.A;
 import com.tsf.shell.f.e.k;
-import com.tsf.shell.manager.o.b;
+import com.tsf.shell.manager.o.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMenuOnlineElementPlane extends ThemeIconPlane {

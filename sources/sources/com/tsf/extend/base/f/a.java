@@ -1,11 +1,11 @@
 package com.tsf.extend.base.f;
 
 import android.graphics.Bitmap;
-import com.android.volley.d;
+import com.android.volley.D;
 import com.android.volley.l;
 import com.android.volley.n;
 import com.android.volley.p;
-import com.android.volley.toolbox.i;
+import com.android.volley.toolbox.I;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends i {

@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.os.RemoteException;
-import com.tsf.shell.widget.alarm.service.a;
-import com.tsf.shell.widget.alarm.service.b;
+import com.tsf.shell.widget.alarm.service.A;
+import com.tsf.shell.widget.alarm.service.B;
 import java.util.ArrayList;
 import java.util.List;
 

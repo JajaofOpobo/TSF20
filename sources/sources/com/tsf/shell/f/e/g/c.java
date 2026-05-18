@@ -2,7 +2,7 @@ package com.tsf.shell.f.e.g;
 
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -3,7 +3,7 @@ package com.tsf.shell.f.e.h;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.A;
 import com.tsf.shell.Home;
 import com.tsf.shell.activity.PhotoSelectorActivity;
 import com.tsf.shell.utils.q;

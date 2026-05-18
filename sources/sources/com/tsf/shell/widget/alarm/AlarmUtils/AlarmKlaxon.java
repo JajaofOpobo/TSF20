@@ -14,7 +14,7 @@ import android.os.Message;
 import android.os.Vibrator;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import com.tsf.shell.widget.alarm.m;
 import java.io.IOException;
 

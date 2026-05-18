@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="column_options">
-        <item>3 columns</item>
-        <item>4 columns</item>
-        <item>5 columns</item>
+    <string-array name="grid_size_entries">
+        <item>3 x 3</item>
+        <item>4 x 4</item>
+        <item>5 x 4</item>
+        <item>5 x 5</item>
     </string-array>
-    <string-array name="column_values">
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+    <string-array name="grid_size_values">
+        <item>3x3</item>
+        <item>4x4</item>
+        <item>5x4</item>
+        <item>5x5</item>
     </string-array>
-    <string-array name="row_options">
-        <item>3 rows</item>
-        <item>4 rows</item>
+    <string-array name="alarm_set">
+        <item>This alarm is set for less than 1 minute from now.</item>
+        <item>This alarm is set for %1$s from now.</item>
+        <item>This alarm is set for %2$s from now.</item>
+        <item>This alarm is set for %1$s and %2$s from now.</item>
+        <item>This alarm is set for %3$s from now.</item>
+        <item>This alarm is set for %1$s and %3$s from now.</item>
+        <item>This alarm is set for %2$s and %3$s from now.</item>
+        <item>This alarm is set for %1$s, %2$s, and %3$s from now.</item>
     </string-array>
-    <string-array name="row_values">
-        <item>3</item>
-        <item>4</item>
+    <array name="extra_wallpapers" />
+    <string-array name="folder_classify_name">
+        <item>Beautifier</item>
+        <item>Learning</item>
+        <item>Games</item>
+        <item>Media</item>
+        <item>Network</item>
+        <item>Tools</item>
+        <item>Lifestyle</item>
+        <item>Social</item>
+        <item>Travel</item>
+        <item>Business</item>
+        <item>Reading</item>
+        <item>System</item>
     </string-array>
-    <string-array name="gesture_actions">
-        <item>None</item>
-        <item>Home</item>
-        <item>App Drawer</item>
+    <string-array name="icon_pick_select_dialog_items">
+        <item>Default</item>
+        <item>Gallery</item>
+        <item>Files</item>
+        <item>Icon Pack</item>
     </string-array>
-    <string-array name="gesture_values">
-        <item>0</item>
-        <item>1</item>
-        <item>4</item>
+    <string-array name="wallpaperlist">
+        <item>default_wallpaper</item>
     </string-array>
 </resources>

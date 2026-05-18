@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.g;
+import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.G;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

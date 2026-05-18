@@ -8,7 +8,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
-import com.tsf.shell.plugin.themepicker.e;
+import com.tsf.shell.plugin.themepicker.E;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

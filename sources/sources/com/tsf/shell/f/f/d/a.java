@@ -1,18 +1,18 @@
 package com.tsf.shell.f.f.d;
 
 import android.annotation.SuppressLint;
-import com.censivn.C3DEngine.b.g.d;
-import com.tsf.shell.f.f.d.a.b;
-import com.tsf.shell.f.f.g;
+import com.censivn.C3DEngine.b.g.D;
+import com.tsf.shell.f.f.d.a.B;
+import com.tsf.shell.f.f.G;
 import com.tsf.shell.f.f.n;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private n a;
     private b b;
 
-    public a(n nVar) {
+    public A(n nVar) {
         this.a = nVar;
         a(new com.tsf.shell.f.f.d.a.a());
     }

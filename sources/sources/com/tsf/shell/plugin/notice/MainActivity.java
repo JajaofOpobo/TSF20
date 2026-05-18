@@ -3,7 +3,7 @@ package com.tsf.shell.plugin.notice;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
-import com.tsf.shell.plugin.notice.g;
+import com.tsf.shell.plugin.notice.G;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MainActivity extends Activity implements g.a {

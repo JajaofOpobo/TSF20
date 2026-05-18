@@ -3,7 +3,7 @@ package com.tsf.shell.f.c.a.a;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.c.a.a.a;
+import com.tsf.shell.f.c.a.a.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends e {

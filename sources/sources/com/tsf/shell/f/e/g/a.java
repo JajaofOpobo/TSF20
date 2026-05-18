@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends j {
+public class A extends j {
     private d a;
     private com.censivn.C3DEngine.b.b.a.b b;
     private float c;
@@ -14,7 +14,7 @@ public class a extends j {
     private float d = com.censivn.C3DEngine.b.b.a.a(20.0f);
     private boolean g = false;
 
-    public a(d dVar, float f) {
+    public A(d dVar, float f) {
         this.a = dVar;
         this.c = f;
     }

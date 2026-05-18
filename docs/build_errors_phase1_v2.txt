@@ -1,0 +1,952 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon JVM discovery is an incubating feature.
+Daemon will be stopped at the end of the build 
+WARNING: The following problems were found when resolving the SDK location:
+Where: sdk.dir property in local.properties file. Problem: Directory does not exist
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/a.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/b.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/c.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:8: error: cannot find symbol
+import com.censivn.C3DEngine.a.e;
+                              ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:9: error: cannot find symbol
+import com.tsf.shell.f.e.i;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:10: error: cannot find symbol
+import com.tsf.shell.f.f.n;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:11: error: cannot find symbol
+import com.tsf.shell.f.i.b.e.h;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:11: error: cannot find symbol
+import com.tsf.shell.preference.a.a.b;
+                                   ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:6: error: cannot find symbol
+import com.censivn.C3DEngine.a.b;
+                              ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:31: error: cannot find symbol
+public class i implements com.censivn.C3DEngine.b.g.b.a {
+                                                     ^
+  symbol:   class a
+  location: interface b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:14: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:16: error: class a clashes with package of same name
+public class a extends com.censivn.C3DEngine.b.e.f {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b.java:4: error: interface b clashes with package of same name
+public interface b {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/f.java:6: error: class f clashes with package of same name
+public class f implements Runnable {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:19: error: cannot find symbol
+    private com.tsf.shell.f.i.a.a e;
+                           ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:110: error: cannot find symbol
+    public com.tsf.shell.f.i.a.a c() {
+                          ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:114: error: cannot find symbol
+    public void a(com.tsf.shell.f.i.a.a aVar) {
+                                 ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:16: error: cannot find symbol
+    private static e b;
+                   ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:81: error: cannot find symbol
+    public static e e() {
+                  ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:85: error: cannot find symbol
+    public static void a(e eVar) {
+                         ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:17: error: cannot find symbol
+    private i a;
+            ^
+  symbol:   class i
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/b.java:8: error: class b clashes with package of same name
+public class b extends j {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:22: error: cannot find symbol
+    private ArrayList<com.tsf.shell.f.i.b.e.b> l;
+                                     ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/o/a.java:10: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/o/a.java:39: error: cannot find symbol
+    public com.tsf.shell.manager.o.a.b ab;
+                                    ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/a.java:7: error: class a clashes with package of same name
+public class a extends j {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/b.java:9: error: cannot find symbol
+    private static com.tsf.shell.f.e.d<Number3d> a;
+                                  ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/common/shader/Shader.java:4: error: cannot find symbol
+import com.censivn.C3DEngine.a.c;
+                              ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a.java:4: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObject3d.java:3: error: cannot find symbol
+import com.censivn.C3DEngine.a.c;
+                              ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/e.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/g.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/f.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+package com.censivn.C3DEngine.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObjectManager.java:3: error: cannot find symbol
+import com.tsf.shell.b.a;
+                      ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/b.java:4: error: class b clashes with package of same name
+public class b {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VWidgetContainer.java:6: error: cannot find symbol
+import com.tsf.shell.f.i.b;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/shell/VPage.java:5: error: cannot find symbol
+import com.tsf.shell.f.f.g;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:7: error: cannot find symbol
+import com.tsf.shell.f.i.b;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:8: error: cannot find symbol
+import com.tsf.shell.f.i.b.b.a;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
+    private b widget;
+            ^
+  symbol:   class b
+  location: class ItemInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
+    public void setWidget(b bVar) {
+                          ^
+  symbol:   class b
+  location: class ItemInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
+    public b getWidget() {
+           ^
+  symbol:   class b
+  location: class ItemInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
+    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                       ^
+  symbol:   class b
+  location: class ItemInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/shell/VPage.java:9: error: cannot find symbol
+    public g vTarget;
+           ^
+  symbol:   class g
+  location: class VPage
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:4: error: cannot find symbol
+import com.censivn.C3DEngine.c.a.c;
+                                ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:3: error: cannot find symbol
+import com.censivn.C3DEngine.c.a.c;
+                                ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:5: error: cannot find symbol
+import com.censivn.C3DEngine.c.b.c;
+                                ^
+  symbol:   class c
+  location: interface b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:6: error: interface b clashes with package of same name
+public interface b {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:8: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:9: error: cannot find symbol
+    private c vTarget;
+            ^
+  symbol:   class c
+  location: class VTwist
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:9: error: cannot find symbol
+    void a(c cVar);
+           ^
+  symbol:   class c
+  location: interface b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:9: error: cannot find symbol
+    c a = new c();
+    ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:5: error: cannot find symbol
+import com.tsf.shell.f.i.b;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:5: error: cannot find symbol
+import com.tsf.shell.manager.r.a.b;
+                                ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:8: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:10: error: cannot find symbol
+    public b mAndroidWidgetManager;
+           ^
+  symbol:   class b
+  location: class LauncherAppWidgetInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:195: error: cannot find symbol
+    public static float[] a(b bVar, float f, float f2) {
+                            ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:5: error: cannot find symbol
+import com.tsf.shell.f.i.b.e.g;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:3: error: cannot find symbol
+import com.tsf.shell.f.e.p;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:4: error: cannot find symbol
+import com.tsf.shell.f.f.n;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:7: error: cannot find symbol
+import com.tsf.shell.manager.a.f;
+                              ^
+  symbol:   class f
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:12: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:35: error: cannot find symbol
+    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.a aVar, f fVar) {
+                                                                                                                             ^
+  symbol:   class f
+  location: class LauncherShortcutAppInfo
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:3: error: cannot find symbol
+import com.tsf.shell.preference.a.a.a.l;
+                                     ^
+  symbol:   class l
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:4: error: cannot find symbol
+import com.tsf.shell.preference.a.a.g;
+                                   ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:5: error: cannot find symbol
+import com.tsf.shell.preference.a.a.h;
+                                   ^
+  symbol:   class h
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/c/e.java:15: error: cannot find symbol
+import com.tsf.shell.f.f.j;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:4: error: cannot find symbol
+import com.censivn.C3DEngine.a.f;
+                              ^
+  symbol:   class f
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:8: error: cannot find symbol
+import com.tsf.shell.f.e.p;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:9: error: cannot find symbol
+import com.tsf.shell.f.e.s;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:10: error: cannot find symbol
+import com.tsf.shell.f.f.g;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:11: error: cannot find symbol
+import com.tsf.shell.f.f.n;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:19: error: cannot find symbol
+public class c extends f {
+                       ^
+  symbol: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:12: error: cannot find symbol
+import com.tsf.shell.f.f.j;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/ShellWallpaperManager.java:20: error: cannot find symbol
+import com.tsf.shell.f.f.g;
+                      ^
+  symbol:   class f
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:23: error: cannot find symbol
+    public static com.tsf.shell.f.c.a g;
+                                 ^
+  symbol:   class c
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:24: error: cannot find symbol
+    public static n h;
+                  ^
+  symbol:   class n
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/c/e.java:15: error: cannot find symbol
+import com.tsf.shell.manager.r.c.a.a;
+                                  ^
+  symbol:   class a
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/c/a.java:24: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/d.java:7: error: cannot find symbol
+import com.censivn.C3DEngine.a.g;
+                              ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:4: error: cannot find symbol
+import com.tsf.shell.f.e.f;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:28: error: cannot find symbol
+    public static com.tsf.shell.manager.r.a.b l;
+                                           ^
+  symbol:   class b
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:29: error: cannot find symbol
+    public static p m;
+                  ^
+  symbol:   class p
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:11: error: cannot find symbol
+import com.tsf.shell.f.e.f;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:12: error: cannot find symbol
+import com.tsf.shell.f.i.a;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:13: error: cannot find symbol
+import com.tsf.shell.f.i.b.e.h;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/b/a.java:8: error: cannot find symbol
+import com.censivn.C3DEngine.a.e;
+                              ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:5: error: cannot find symbol
+import com.censivn.C3DEngine.b.b.a.e;
+                                  ^
+  symbol:   class e
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:7: error: cannot find symbol
+import com.tsf.shell.f.e.f;
+                      ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:8: error: cannot find symbol
+import com.tsf.shell.f.i.b.e.h;
+                      ^
+  symbol:   class i
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:17: error: cannot find symbol
+public class a extends com.censivn.C3DEngine.b.b.a.c {
+                                                  ^
+  symbol:   class c
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:20: error: cannot find symbol
+public class b implements e.a, a.InterfaceC0113a {
+                                ^
+  symbol:   class InterfaceC0113a
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/b/a.java:15: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:31: error: cannot find symbol
+    public static com.tsf.shell.f.h.b o;
+                                 ^
+  symbol:   class h
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:32: error: cannot find symbol
+    public static com.tsf.shell.f.e.e.c p;
+                                 ^
+  symbol:   class e
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/q/a.java:10: error: cannot find symbol
+import com.tsf.shell.manager.a.f;
+                              ^
+  symbol:   class f
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/services/a.java:10: error: cannot find symbol
+import com.tsf.shell.services.a.a;
+                               ^
+  symbol:   class a
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/services/a.java:15: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:36: error: cannot find symbol
+    public static com.tsf.shell.f.a.a.b t;
+                                 ^
+  symbol:   class a
+  location: class f
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+> Task :app:copyRoomSchemas NO-SOURCE
+
+[Incubating] Problems report is available at: file:///mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/a.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/b.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/c.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/e.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/g.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/f.java:1: error: package com.censivn.C3DEngine.a clashes with class of same name
+  package com.censivn.C3DEngine.a;
+  ^
+  Note: Recompile with -Xlint:deprecation for details.
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:14: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:16: error: class a clashes with package of same name
+  public class a extends com.censivn.C3DEngine.b.e.f {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b.java:4: error: interface b clashes with package of same name
+  public interface b {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/f.java:6: error: class f clashes with package of same name
+  public class f implements Runnable {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/b.java:8: error: class b clashes with package of same name
+  public class b extends j {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/o/a.java:10: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/a.java:7: error: class a clashes with package of same name
+  public class a extends j {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a.java:4: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/b.java:4: error: class b clashes with package of same name
+  public class b {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:6: error: interface b clashes with package of same name
+  public interface b {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:8: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:8: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:12: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/c/a.java:24: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/b/a.java:15: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/services/a.java:15: error: class a clashes with package of same name
+  public class a {
+         ^
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:8: error: cannot find symbol
+  import com.censivn.C3DEngine.a.e;
+                                ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:9: error: cannot find symbol
+  import com.tsf.shell.f.e.i;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:10: error: cannot find symbol
+  import com.tsf.shell.f.f.n;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:11: error: cannot find symbol
+  import com.tsf.shell.f.i.b.e.h;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:11: error: cannot find symbol
+  import com.tsf.shell.preference.a.a.b;
+                                     ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:6: error: cannot find symbol
+  import com.censivn.C3DEngine.a.b;
+                                ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:31: error: cannot find symbol
+  public class i implements com.censivn.C3DEngine.b.g.b.a {
+                                                       ^
+    symbol:   class a
+    location: interface b
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:19: error: cannot find symbol
+      private com.tsf.shell.f.i.a.a e;
+                             ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:110: error: cannot find symbol
+      public com.tsf.shell.f.i.a.a c() {
+                            ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:114: error: cannot find symbol
+      public void a(com.tsf.shell.f.i.a.a aVar) {
+                                   ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:16: error: cannot find symbol
+      private static e b;
+                     ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:81: error: cannot find symbol
+      public static e e() {
+                    ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/a.java:85: error: cannot find symbol
+      public static void a(e eVar) {
+                           ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:17: error: cannot find symbol
+      private i a;
+              ^
+    symbol:   class i
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:22: error: cannot find symbol
+      private ArrayList<com.tsf.shell.f.i.b.e.b> l;
+                                       ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/o/a.java:39: error: cannot find symbol
+      public com.tsf.shell.manager.o.a.b ab;
+                                      ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/f/b.java:9: error: cannot find symbol
+      private static com.tsf.shell.f.e.d<Number3d> a;
+                                    ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/common/shader/Shader.java:4: error: cannot find symbol
+  import com.censivn.C3DEngine.a.c;
+                                ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObject3d.java:3: error: cannot find symbol
+  import com.censivn.C3DEngine.a.c;
+                                ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObjectManager.java:3: error: cannot find symbol
+  import com.tsf.shell.b.a;
+                        ^
+    symbol:   class a
+    location: class b
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VWidgetContainer.java:6: error: cannot find symbol
+  import com.tsf.shell.f.i.b;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/shell/VPage.java:5: error: cannot find symbol
+  import com.tsf.shell.f.f.g;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:7: error: cannot find symbol
+  import com.tsf.shell.f.i.b;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:8: error: cannot find symbol
+  import com.tsf.shell.f.i.b.b.a;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
+      private b widget;
+              ^
+    symbol:   class b
+    location: class ItemInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
+      public void setWidget(b bVar) {
+                            ^
+    symbol:   class b
+    location: class ItemInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
+      public b getWidget() {
+             ^
+    symbol:   class b
+    location: class ItemInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
+      public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                         ^
+    symbol:   class b
+    location: class ItemInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/shell/VPage.java:9: error: cannot find symbol
+      public g vTarget;
+             ^
+    symbol:   class g
+    location: class VPage
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:4: error: cannot find symbol
+  import com.censivn.C3DEngine.c.a.c;
+                                  ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:3: error: cannot find symbol
+  import com.censivn.C3DEngine.c.a.c;
+                                  ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:5: error: cannot find symbol
+  import com.censivn.C3DEngine.c.b.c;
+                                  ^
+    symbol:   class c
+    location: interface b
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:9: error: cannot find symbol
+      private c vTarget;
+              ^
+    symbol:   class c
+    location: class VTwist
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:9: error: cannot find symbol
+      void a(c cVar);
+             ^
+    symbol:   class c
+    location: interface b
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:9: error: cannot find symbol
+      c a = new c();
+      ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:5: error: cannot find symbol
+  import com.tsf.shell.f.i.b;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:5: error: cannot find symbol
+  import com.tsf.shell.manager.r.a.b;
+                                  ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:10: error: cannot find symbol
+      public b mAndroidWidgetManager;
+             ^
+    symbol:   class b
+    location: class LauncherAppWidgetInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:195: error: cannot find symbol
+      public static float[] a(b bVar, float f, float f2) {
+                              ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:5: error: cannot find symbol
+  import com.tsf.shell.f.i.b.e.g;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:3: error: cannot find symbol
+  import com.tsf.shell.f.e.p;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:4: error: cannot find symbol
+  import com.tsf.shell.f.f.n;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:7: error: cannot find symbol
+  import com.tsf.shell.manager.a.f;
+                                ^
+    symbol:   class f
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:35: error: cannot find symbol
+      public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.a aVar, f fVar) {
+                                                                                                                               ^
+    symbol:   class f
+    location: class LauncherShortcutAppInfo
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:3: error: cannot find symbol
+  import com.tsf.shell.preference.a.a.a.l;
+                                       ^
+    symbol:   class l
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:4: error: cannot find symbol
+  import com.tsf.shell.preference.a.a.g;
+                                     ^
+    symbol:   class g
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/preference/a/d.java:5: error: cannot find symbol
+  import com.tsf.shell.preference.a.a.h;
+                                     ^
+    symbol:   class h
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/c/e.java:15: error: cannot find symbol
+  import com.tsf.shell.f.f.j;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:4: error: cannot find symbol
+  import com.censivn.C3DEngine.a.f;
+                                ^
+    symbol:   class f
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:8: error: cannot find symbol
+  import com.tsf.shell.f.e.p;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:9: error: cannot find symbol
+  import com.tsf.shell.f.e.s;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:10: error: cannot find symbol
+  import com.tsf.shell.f.f.g;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:11: error: cannot find symbol
+  import com.tsf.shell.f.f.n;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:12: error: cannot find symbol
+  import com.tsf.shell.f.f.j;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/ShellWallpaperManager.java:20: error: cannot find symbol
+  import com.tsf.shell.f.f.g;
+                        ^
+    symbol:   class f
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:23: error: cannot find symbol
+      public static com.tsf.shell.f.c.a g;
+                                   ^
+    symbol:   class c
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:24: error: cannot find symbol
+      public static n h;
+                    ^
+    symbol:   class n
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/r/c/e.java:15: error: cannot find symbol
+  import com.tsf.shell.manager.r.c.a.a;
+                                    ^
+    symbol:   class a
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/d.java:7: error: cannot find symbol
+  import com.censivn.C3DEngine.a.g;
+                                ^
+    symbol:   class g
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:4: error: cannot find symbol
+  import com.tsf.shell.f.e.f;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:28: error: cannot find symbol
+      public static com.tsf.shell.manager.r.a.b l;
+                                             ^
+    symbol:   class b
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:29: error: cannot find symbol
+      public static p m;
+                    ^
+    symbol:   class p
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:11: error: cannot find symbol
+  import com.tsf.shell.f.e.f;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:12: error: cannot find symbol
+  import com.tsf.shell.f.i.a;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:13: error: cannot find symbol
+  import com.tsf.shell.f.i.b.e.h;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/censivn/C3DEngine/b/b/a.java:8: error: cannot find symbol
+  import com.censivn.C3DEngine.a.e;
+                                ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:5: error: cannot find symbol
+  import com.censivn.C3DEngine.b.b.a.e;
+                                    ^
+    symbol:   class e
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:7: error: cannot find symbol
+  import com.tsf.shell.f.e.f;
+                        ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:8: error: cannot find symbol
+  import com.tsf.shell.f.i.b.e.h;
+                        ^
+    symbol:   class i
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:17: error: cannot find symbol
+  public class a extends com.censivn.C3DEngine.b.b.a.c {
+                                                    ^
+    symbol:   class c
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:20: error: cannot find symbol
+  public class b implements e.a, a.InterfaceC0113a {
+                                  ^
+    symbol:   class InterfaceC0113a
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:31: error: cannot find symbol
+      public static com.tsf.shell.f.h.b o;
+                                   ^
+    symbol:   class h
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:32: error: cannot find symbol
+      public static com.tsf.shell.f.e.e.c p;
+                                   ^
+    symbol:   class e
+    location: class f
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/q/a.java:10: error: cannot find symbol
+  import com.tsf.shell.manager.a.f;
+                                ^
+    symbol:   class f
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/services/a.java:10: error: cannot find symbol
+  import com.tsf.shell.services.a.a;
+                                 ^
+    symbol:   class a
+    location: class a
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/a.java:36: error: cannot find symbol
+      public static com.tsf.shell.f.a.a.b t;
+                                   ^
+    symbol:   class a
+    location: class f
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  /mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/manager/f/c.java:19: error: cannot find symbol
+  public class c extends f {
+                         ^
+    symbol: class f
+  Note: Some input files use unchecked or unsafe operations.
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+
+BUILD FAILED in 1m 23s
+7 actionable tasks: 1 executed, 6 up-to-date

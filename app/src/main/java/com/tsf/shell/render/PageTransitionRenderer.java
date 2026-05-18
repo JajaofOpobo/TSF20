@@ -143,7 +143,7 @@ public class PageTransitionRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-        GLES20.glClearColor(0.05f, 0.05f, 0.08f, 1f);
+        GLES20.glClearColor(0f, 0f, 0f, 0f);
         GLES20.glEnable(GLES20.GL_DEPTH_TEST);
         GLES20.glEnable(GLES20.GL_BLEND);
         GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA);
@@ -241,7 +241,7 @@ public class PageTransitionRenderer implements GLSurfaceView.Renderer {
                 float b = (color & 0xFF) / 255f;
                 float fade = 1f - Math.abs(pageAngle) / (TOTAL_ARC * 0.7f);
                 fade = Math.max(0.4f, fade);
-                GLES20.glUniform4f(muColorHandle, r * fade, g * fade, b * fade, fade);
+                GLES20.glUniform4f(muColorHandle, r * fade, g * fade, b * fade, 0f);
             }
 
             GLES20.glVertexAttribPointer(maPositionHandle, 3, GLES20.GL_FLOAT, false, 0, vertexBuffer);

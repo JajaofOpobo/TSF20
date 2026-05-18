@@ -1,7 +1,7 @@
 package com.tsf.extend.wallpaper;
 
 import android.os.SystemClock;
-import com.android.volley.b;
+import com.android.volley.B;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;

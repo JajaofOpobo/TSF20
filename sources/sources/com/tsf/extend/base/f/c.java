@@ -5,9 +5,9 @@ import android.content.pm.PackageManager;
 import android.net.http.AndroidHttpClient;
 import android.os.Build;
 import com.android.volley.m;
-import com.android.volley.toolbox.d;
-import com.android.volley.toolbox.f;
-import com.android.volley.toolbox.g;
+import com.android.volley.toolbox.D;
+import com.android.volley.toolbox.F;
+import com.android.volley.toolbox.G;
 import com.android.volley.toolbox.n;
 import java.io.File;
 

@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.tween.TweenTarget;
 
-import com.censivn.C3DEngine.b.g.b.b;
+import com.censivn.C3DEngine.b.g.b.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VValueTweenTarget implements VTweenTarget {

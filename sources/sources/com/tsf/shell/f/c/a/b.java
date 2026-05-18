@@ -5,16 +5,16 @@ import android.content.ContentUris;
 import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.i.a;
-import com.tsf.shell.g;
+import com.tsf.shell.f.i.A;
+import com.tsf.shell.G;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends c implements a.InterfaceC0113a {
+public class B extends c implements a.InterfaceC0113a {
     private float A;
     private Runnable B;
     private com.tsf.shell.f.i.b.d.b H;
@@ -57,7 +57,7 @@ public class b extends c implements a.InterfaceC0113a {
     private float q = 12.0f * com.censivn.C3DEngine.b.b.a.b;
     private i o = new k(128.0f, 128.0f);
 
-    public b(f fVar) {
+    public B(f fVar) {
         this.r = fVar;
         this.o.visible(false);
         this.l = new ArrayList<>();

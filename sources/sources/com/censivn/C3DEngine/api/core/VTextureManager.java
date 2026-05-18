@@ -1,10 +1,10 @@
 package com.censivn.C3DEngine.api.core;
 
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.a;
+import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.g.c;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.C;
+import com.censivn.C3DEngine.b.g.D;
 import java.util.ArrayList;
 import java.util.Iterator;
 

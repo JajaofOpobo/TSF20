@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.element.info;
 
 import android.content.ComponentName;
 import android.content.ContentValues;
-import com.tsf.shell.manager.r.a.b;
+import com.tsf.shell.manager.r.a.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherAppWidgetInfo extends ItemInfo {

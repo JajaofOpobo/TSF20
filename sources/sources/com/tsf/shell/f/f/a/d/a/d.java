@@ -1,6 +1,6 @@
 package com.tsf.shell.f.f.a.d.a;
 
-import com.tsf.b;
+import com.tsf.B;
 import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

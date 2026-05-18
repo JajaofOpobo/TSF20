@@ -3,12 +3,12 @@ package com.tsf.shell.f.e;
 import com.censivn.C3DEngine.api.element.Color4;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class i extends com.censivn.C3DEngine.b.f.j {
+public class I extends com.censivn.C3DEngine.b.f.j {
     private int b = 0;
     private int c = 0;
     private com.tsf.shell.f.a.b.b a = new com.tsf.shell.f.a.b.b(0.0f, 0.0f, this);
 
-    public i() {
+    public I() {
         this.a.setDefaultColor(new Color4(255, 0, 0, 100));
     }
 

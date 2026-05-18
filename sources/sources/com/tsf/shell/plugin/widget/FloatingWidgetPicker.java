@@ -20,7 +20,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.utils.k;
 import java.util.ArrayList;
 import java.util.Collections;

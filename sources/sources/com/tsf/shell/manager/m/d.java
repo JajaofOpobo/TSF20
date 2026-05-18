@@ -5,8 +5,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.b;
-import com.tsf.shell.f.e.f;
+import com.tsf.B;
+import com.tsf.shell.f.e.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.f.e.e.d {

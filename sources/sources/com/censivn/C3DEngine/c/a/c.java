@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.c.a;
 
 import com.censivn.C3DEngine.api.element.FacesBufferedList;
 import com.censivn.C3DEngine.api.element.PointBufferManager;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

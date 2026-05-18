@@ -18,11 +18,11 @@ import com.censivn.C3DEngine.api.message.VMessageQueueManager;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.shell.VInformation;
 import com.tsf.shell.widget.alarm.AlarmUtils.Alarm;
-import com.tsf.shell.widget.alarm.c.c;
-import com.tsf.shell.widget.alarm.service.c;
+import com.tsf.shell.widget.alarm.c.C;
+import com.tsf.shell.widget.alarm.service.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends VObject3dContainer implements c.b {
+public class A extends VObject3dContainer implements c.b {
     public static boolean a;
     private j A;
     private j B;
@@ -59,7 +59,7 @@ public class a extends VObject3dContainer implements c.b {
         void a(boolean z);
     }
 
-    public a() {
+    public A() {
         h();
         i();
         a();

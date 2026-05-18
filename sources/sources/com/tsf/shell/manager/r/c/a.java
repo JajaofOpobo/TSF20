@@ -11,7 +11,7 @@ import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private static PackageManager a;
     private static float[] b = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
 

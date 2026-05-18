@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.o;
 
-import com.tsf.shell.manager.b.e;
-import com.tsf.shell.manager.o.a.c;
+import com.tsf.shell.manager.b.E;
+import com.tsf.shell.manager.o.a.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {

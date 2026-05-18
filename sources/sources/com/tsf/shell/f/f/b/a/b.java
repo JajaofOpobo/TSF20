@@ -1,8 +1,8 @@
 package com.tsf.shell.f.f.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.f.a.h;
+import com.censivn.C3DEngine.b.f.I;
+import com.tsf.shell.f.f.a.H;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

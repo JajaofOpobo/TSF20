@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import com.tsf.shell.plugin.crop.e;
+import com.tsf.shell.plugin.crop.E;
 import java.io.File;
 import java.io.InputStream;
 

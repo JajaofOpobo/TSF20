@@ -1,14 +1,14 @@
 package com.tsf.shell.f.i.c;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends g {
+public class A extends g {
     private j k;
     private com.tsf.shell.f.i.b.a.a l;
 
-    public a() {
+    public A() {
         b(true);
     }
 

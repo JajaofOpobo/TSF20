@@ -4,11 +4,11 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends j {
+public class A extends j {
     private static C0029a a;
     private boolean b = false;
 
-    public a() {
+    public A() {
         if (a == null) {
             a = new C0029a();
         }

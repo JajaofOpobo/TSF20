@@ -1,6 +1,6 @@
 package com.tsf.shell.widget.alarm.d.a;
 
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.I;
 import java.util.ArrayList;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

@@ -3,11 +3,11 @@ package com.tsf.shell.manager.o;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.tsf.shell.utils.l;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public float A;
     public float B;
     public float C;
@@ -73,7 +73,7 @@ public class a {
         return this.ab.a(str, this);
     }
 
-    public a() {
+    public A() {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;
@@ -101,7 +101,7 @@ public class a {
         a(144, 144, 192, 42, 12, true);
     }
 
-    public a(float f, float f2) {
+    public A(float f, float f2) {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;
@@ -135,7 +135,7 @@ public class a {
         a(144, 144, 192, 42, 12, true);
     }
 
-    public a(float f, float f2, int i, int i2, int i3, int i4, int i5) {
+    public A(float f, float f2, int i, int i2, int i3, int i4, int i5) {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;

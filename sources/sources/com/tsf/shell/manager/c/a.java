@@ -5,11 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import com.tsf.shell.manager.c.a.a.a;
+import com.tsf.shell.manager.c.a.a.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends SQLiteOpenHelper {
-    public a(Context context) {
+public class A extends SQLiteOpenHelper {
+    public A(Context context) {
         super(context, "contact.db", (SQLiteDatabase.CursorFactory) null, 1);
     }
 

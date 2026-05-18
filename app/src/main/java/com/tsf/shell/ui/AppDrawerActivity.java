@@ -31,8 +31,8 @@ public class AppDrawerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        configureSystemBars();
         setContentView(R.layout.activity_app_drawer);
+        configureSystemBars();
         
         initViews();
         loadApps();

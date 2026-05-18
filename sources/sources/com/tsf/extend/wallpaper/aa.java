@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import com.android.volley.n;
 import com.google.android.collect.Lists;
-import com.tsf.extend.wallpaper.i;
+import com.tsf.extend.wallpaper.I;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;

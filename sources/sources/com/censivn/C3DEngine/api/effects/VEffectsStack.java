@@ -1,9 +1,9 @@
 package com.censivn.C3DEngine.api.effects;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.c.a;
-import com.censivn.C3DEngine.c.b;
+import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.c.A;
+import com.censivn.C3DEngine.c.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VEffectsStack {

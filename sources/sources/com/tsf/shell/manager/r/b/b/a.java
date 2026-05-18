@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.r.b.b;
 
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.g.c;
-import com.tsf.shell.f.e.g.d;
+import com.censivn.C3DEngine.b.g.C;
+import com.tsf.shell.f.e.g.D;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {

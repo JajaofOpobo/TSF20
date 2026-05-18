@@ -11,7 +11,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabWidget;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 

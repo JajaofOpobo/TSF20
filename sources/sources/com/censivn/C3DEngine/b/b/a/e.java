@@ -2,10 +2,10 @@ package com.censivn.C3DEngine.b.b.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.manager.action.F;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

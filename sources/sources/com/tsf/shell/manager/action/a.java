@@ -3,8 +3,8 @@ package com.tsf.shell.manager.action;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
-import com.tsf.b;
-import com.tsf.shell.g;
+import com.tsf.B;
+import com.tsf.shell.G;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

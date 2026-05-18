@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.widget.Toast;
-import com.censivn.C3DEngine.b.c.a;
-import com.tsf.b;
+import com.censivn.C3DEngine.b.c.A;
+import com.tsf.B;
 import com.tsf.shell.Home;
-import com.tsf.shell.a;
-import com.tsf.shell.manager.action.c;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.A;
+import com.tsf.shell.manager.action.C;
+import com.tsf.shell.manager.action.F;
 import java.util.HashMap;
 import org.acra.ACRAConstants;
 

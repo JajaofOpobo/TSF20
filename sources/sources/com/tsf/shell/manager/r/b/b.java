@@ -2,22 +2,22 @@ package com.tsf.shell.manager.r.b;
 
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.b;
-import com.tsf.shell.f.e.g.a.a;
-import com.tsf.shell.f.i.c.g;
-import com.tsf.shell.manager.r.c.a.a;
+import com.tsf.B;
+import com.tsf.shell.f.e.g.a.A;
+import com.tsf.shell.f.i.c.G;
+import com.tsf.shell.manager.r.c.a.A;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e.g.a.b {
+public class B extends com.tsf.shell.f.e.g.a.b {
     private a.C0095a a;
     private a.C0095a b;
     private Runnable c;
     private com.tsf.shell.manager.r.b.c.e d;
     private j e;
 
-    public b(final a aVar, String str) {
+    public B(final a aVar, String str) {
         super(str);
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         this.c = new Runnable() { // from class: com.tsf.shell.manager.r.b.b.1

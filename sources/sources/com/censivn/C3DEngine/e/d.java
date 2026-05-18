@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.util.Log;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
-import com.censivn.C3DEngine.e.a;
+import com.censivn.C3DEngine.e.A;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

@@ -3,8 +3,8 @@ package com.censivn.C3DEngine.api.core;
 import com.censivn.C3DEngine.api.element.info.LauncherWidget3DInfo;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.shell.VPage;
-import com.tsf.shell.f.i.b;
-import com.tsf.shell.manager.a;
+import com.tsf.shell.f.i.B;
+import com.tsf.shell.manager.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VWidgetContainer extends VObject3dContainer {

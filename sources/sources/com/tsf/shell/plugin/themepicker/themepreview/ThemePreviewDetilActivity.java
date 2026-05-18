@@ -18,10 +18,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.F;
 import com.tsf.shell.plugin.themepicker.indicator.LinePageIndicator;
 import com.tsf.shell.plugin.themepicker.k;
-import com.tsf.shell.plugin.themepicker.themepreview.b;
+import com.tsf.shell.plugin.themepicker.themepreview.B;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -4,59 +4,47 @@
     android:layout_height="match_parent"
     android:background="@color/launcher_background">
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/desktop_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <FrameLayout
-            android:id="@+id/desktop_container"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+    <FrameLayout
+        android:id="@+id/dock_content"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dockHeight"
+        android:layout_gravity="bottom" />
 
-        <com.tsf.shell.ui.view.PageIndicator
-            android:id="@+id/page_indicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="8dp" />
-
-        <LinearLayout
-            android:id="@+id/dock_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
-
-            <ImageButton
-                android:id="@+id/app_drawer_button"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@android:drawable/ic_menu_sort_by_size"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/app_name" />
-
-            <FrameLayout
-                android:id="@+id/dock_content"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@+id/settings_button"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@android:drawable/ic_menu_preferences"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/app_name" />
-        </LinearLayout>
-    </LinearLayout>
+    <com.tsf.shell.ui.view.PageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal" />
 
     <com.tsf.shell.ui.view.SideMenuBar
         android:id="@+id/side_menu_bar"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start" />
+
+    <ImageButton
+        android:id="@+id/app_drawer_button"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/action_app_drawer_icon"
+        android:background="@null"
+        android:contentDescription="@string/app_drawer" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_launcher_tsf"
+        android:background="@null"
+        android:contentDescription="@string/settings" />
+
 </FrameLayout>

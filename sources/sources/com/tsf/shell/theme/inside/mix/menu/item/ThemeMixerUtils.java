@@ -7,8 +7,8 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.manager.o.a;
-import com.tsf.shell.manager.o.b;
+import com.tsf.shell.manager.o.A;
+import com.tsf.shell.manager.o.B;
 import com.tsf.shell.utils.q;
 import com.tsf.shell.utils.x;
 

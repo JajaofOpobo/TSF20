@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.c.a.a;
 
-import com.censivn.C3DEngine.c.a.e;
+import com.censivn.C3DEngine.c.a.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {

@@ -3,18 +3,18 @@ package com.tsf.shell.manager.action.toggle;
 import android.graphics.Bitmap;
 import android.os.Build;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.b;
-import com.tsf.shell.f.i.b.e.i;
-import com.tsf.shell.manager.action.b;
-import com.tsf.shell.manager.action.toggle.a.c;
-import com.tsf.shell.manager.action.toggle.a.d;
-import com.tsf.shell.manager.action.toggle.a.e;
-import com.tsf.shell.manager.action.toggle.a.f;
+import com.tsf.B;
+import com.tsf.shell.f.i.b.e.I;
+import com.tsf.shell.manager.action.B;
+import com.tsf.shell.manager.action.toggle.a.C;
+import com.tsf.shell.manager.action.toggle.a.D;
+import com.tsf.shell.manager.action.toggle.a.E;
+import com.tsf.shell.manager.action.toggle.a.F;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public ToggleStateManager a;
     public com.tsf.shell.manager.action.toggle.a.a c;
     public com.tsf.shell.manager.action.toggle.a.b d;
@@ -36,7 +36,7 @@ public class a {
     private ArrayList<b> r = new ArrayList<>();
     public f b = new f(11000);
 
-    public a() {
+    public A() {
         this.r.add(this.b);
         if (Build.VERSION.SDK_INT < 21) {
             this.f = new d(12000);

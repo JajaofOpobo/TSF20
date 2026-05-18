@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c<Params, Result> {
+public abstract class C<Params, Result> {
     public static final Executor b;
     private static volatile Executor j;
     private volatile b e = b.PENDING;

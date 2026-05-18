@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.shell.VInformation;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.shell.widget.cubeclock.c;
+import com.tsf.shell.widget.cubeclock.C;
 import com.tsf.shell.widget.cubeclock.j;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

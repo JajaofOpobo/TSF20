@@ -3,7 +3,7 @@ package com.tsf.shell.widget.alarm.d;
 import java.io.Serializable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class b implements Serializable {
+public abstract class B implements Serializable {
     /* JADX WARN: Removed duplicated region for block: B:34:0x0029 A[EXC_TOP_SPLITTER, SYNTHETIC] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

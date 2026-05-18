@@ -1,0 +1,424 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon JVM discovery is an incubating feature.
+Daemon will be stopped at the end of the build 
+WARNING: The following problems were found when resolving the SDK location:
+Where: sdk.dir property in local.properties file. Problem: Directory does not exist
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:compileDebugJavaWithJavac
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/com/tsf/shell/ShellApplication.java:14: error: duplicate class: com.tsf.shell.ShellApplication
+public class ShellApplication extends Application {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/org/acra/ACRAConstants.java:4: error: duplicate class: org.acra.ACRAConstants
+public final class ACRAConstants {
+             ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/a/a/e.java:11: error: cannot find symbol
+import android.support.v4.a.a.o;
+                             ^
+  symbol:   class o
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/a/a/e.java:16: error: cannot find symbol
+abstract class e extends Drawable implements o {
+                                             ^
+  symbol: class o
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a.java:6: error: class a clashes with package of same name
+public final class a {
+             ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/a/a/f.java:1031: error: cannot find symbol
+        protected c.b[] m;
+                   ^
+  symbol:   class b
+  location: class c
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/a.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/b.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/c.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/d.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/e.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/f.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/g.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/h.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/i.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/j.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/o.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/k.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/k.java:5: error: cannot find symbol
+import android.support.v4.a.a.j;
+                             ^
+  symbol:   class j
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/l.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/l.java:5: error: cannot find symbol
+import android.support.v4.a.a.j;
+                             ^
+  symbol:   class j
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/m.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/m.java:5: error: cannot find symbol
+import android.support.v4.a.a.j;
+                             ^
+  symbol:   class j
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/n.java:1: error: package android.support.v4.a.a clashes with class of same name
+package android.support.v4.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/a/a/n.java:13: error: cannot find symbol
+import android.support.v4.a.a.j;
+                             ^
+  symbol:   class j
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/content/a.java:10: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/content/a/a.java:1: error: package android.support.v4.content.a clashes with class of same name
+package android.support.v4.content.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/content/a/b.java:1: error: package android.support.v4.content.a clashes with class of same name
+package android.support.v4.content.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/a.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/j.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/b.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/c.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/d.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/e.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/f.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:5: error: cannot find symbol
+import android.support.v4.view.a.h;
+                                ^
+  symbol:   class h
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:6: error: cannot find symbol
+import android.support.v4.view.a.i;
+                                ^
+  symbol:   class i
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a.java:12: error: class a clashes with package of same name
+public class a {
+       ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:130: error: b is not public in a; cannot be accessed from outside package
+    public android.support.v4.view.a.b a(int i) {
+                                    ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:138: error: b is not public in a; cannot be accessed from outside package
+    public List<android.support.v4.view.a.b> a(String str, int i) {
+                                         ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/g.java:142: error: b is not public in a; cannot be accessed from outside package
+    public android.support.v4.view.a.b b(int i) {
+                                    ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a.java:18: error: cannot find symbol
+        android.support.v4.view.a.g a(Object obj, View view);
+                                 ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a.java:298: error: cannot find symbol
+    public android.support.v4.view.a.g a(View view) {
+                                    ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a.java:241: error: cannot find symbol
+        public android.support.v4.view.a.g a(Object obj, View view) {
+                                        ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a.java:86: error: cannot find symbol
+        public android.support.v4.view.a.g a(Object obj, View view) {
+                                        ^
+  symbol:   class g
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/h.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/i.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/k.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/a/l.java:1: error: package android.support.v4.view.a clashes with class of same name
+package android.support.v4.view.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/b/a.java:1: error: package android.support.v4.view.b clashes with class of same name
+package android.support.v4.view.b;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/b/b.java:1: error: package android.support.v4.view.b clashes with class of same name
+package android.support.v4.view.b;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/view/b.java:9: error: class b clashes with package of same name
+class b {
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:15: error: b is not public in a; cannot be accessed from outside package
+import android.support.v4.view.a.b;
+                                ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:1469: error: b is not public in a; cannot be accessed from outside package
+        public void a(View view, android.support.v4.view.a.b bVar) {
+                                                          ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:1381: error: b is not public in a; cannot be accessed from outside package
+        public void a(View view, android.support.v4.view.a.b bVar) {
+                                                          ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:1433: error: b is not public in a; cannot be accessed from outside package
+        private void a(android.support.v4.view.a.b bVar, ViewGroup viewGroup) {
+                                                ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:1443: error: b is not public in a; cannot be accessed from outside package
+        private void a(android.support.v4.view.a.b bVar, android.support.v4.view.a.b bVar2) {
+                                                ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/DrawerLayout.java:1443: error: b is not public in a; cannot be accessed from outside package
+        private void a(android.support.v4.view.a.b bVar, android.support.v4.view.a.b bVar2) {
+                                                                                  ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/NestedScrollView.java:1311: error: b is not public in a; cannot be accessed from outside package
+        public void a(View view, android.support.v4.view.a.b bVar) {
+                                                          ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/SlidingPaneLayout.java:952: error: b is not public in a; cannot be accessed from outside package
+        public void a(View view, android.support.v4.view.a.b bVar) {
+                                                          ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/SlidingPaneLayout.java:991: error: b is not public in a; cannot be accessed from outside package
+        private void a(android.support.v4.view.a.b bVar, android.support.v4.view.a.b bVar2) {
+                                                ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v4/widget/SlidingPaneLayout.java:991: error: b is not public in a; cannot be accessed from outside package
+        private void a(android.support.v4.view.a.b bVar, android.support.v4.view.a.b bVar2) {
+                                                                                  ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/ActionBar.java:72: error: cannot find symbol
+    public android.support.v7.view.b a(b.a aVar) {
+                                        ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/a.java:14: error: a is already defined in this compilation unit
+import android.support.v7.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/ActionBarContextView.java:18: error: cannot inherit from final a
+public class ActionBarContextView extends a {
+                                          ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/AppCompatDelegateImplV7.java:1313: error: cannot find symbol
+    class b implements b.a {
+                        ^
+  symbol:   class a
+  location: class AppCompatDelegateImplV7.b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/AppCompatDelegateImplV7.java:1313: error: cyclic inheritance involving b
+    class b implements b.a {
+    ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/AppCompatDelegateImplV7.java:1314: error: modifier private not allowed here
+        private b.a b;
+                    ^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/j.java:38: error: cannot find symbol
+    private final Object[] e = new Object[2];
+                  ^
+  symbol:   class Object
+  location: class j
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/b.java:62: error: cannot find symbol
+        private final a.C0013a a;
+                       ^
+  symbol:   class C0013a
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/b.java:8: error: a type with the same simple name is already defined by the single-type-import of a
+import android.support.v7.app.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/f.java:26: error: cannot find symbol
+    public Object getTag() {
+           ^
+  symbol:   class Object
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/f.java:31: error: cannot find symbol
+    public void setTag(Object obj) {
+                       ^
+  symbol:   class Object
+  location: class f
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/t.java:366: error: cannot find symbol
+        public Object getItem(int i) {
+               ^
+  symbol:   class Object
+  location: class t.a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/n.java:51: error: cannot find symbol
+    b.a c;
+     ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/n.java:65: error: cannot find symbol
+    private ArrayList<Object> v = new ArrayList<>();
+                      ^
+  symbol:   class Object
+  location: class n
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/n.java:271: error: cannot find symbol
+    public android.support.v7.view.b a(b.a aVar) {
+                                        ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/n.java:504: error: cannot find symbol
+        private b.a d;
+                 ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/app/n.java:507: error: cannot find symbol
+        public a(Context context, b.a aVar) {
+                                   ^
+  symbol:   class a
+  location: class b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/a.java:8: error: a is already defined in this compilation unit
+import android.support.v7.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/d.java:50: error: cannot find symbol
+    public Object getSystemService(String str) {
+           ^
+  symbol:   class Object
+  location: class d
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:28: error: cannot find symbol
+    private final Object[] c;
+                  ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:29: error: cannot find symbol
+    private final Object[] d;
+                  ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:31: error: cannot find symbol
+    private Object f;
+            ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:227: error: cannot find symbol
+    public Object c() {
+           ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:234: error: cannot find symbol
+    private Object a(Object obj) {
+                     ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:234: error: cannot find symbol
+    private Object a(Object obj) {
+            ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:420: error: cannot find symbol
+        private <T> T a(String str, Class<?>[] clsArr, Object[] objArr) {
+                                                       ^
+  symbol:   class Object
+  location: class g.b
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:243: error: cannot find symbol
+        private Object b;
+                ^
+  symbol:   class Object
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/view/g.java:246: error: cannot find symbol
+        public a(Object obj, String str) {
+                 ^
+  symbol:   class Object
+  location: class a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/g.java:30: error: cannot find symbol
+    private final Object m = new Object();
+                  ^
+  symbol:   class Object
+  location: class g
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/a.java:10: error: a is already defined in this compilation unit
+import android.support.v7.a.a;
+^
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:29: error: cannot find symbol
+    private static final Object b = new Object();
+                         ^
+  symbol:   class Object
+  location: class d
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:31: error: cannot find symbol
+    private final Object d;
+                  ^
+  symbol:   class Object
+  location: class d
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:365: error: cannot find symbol
+    private final class e extends AsyncTask<Object, Void, Void> {
+                                            ^
+  symbol:   class Object
+  location: class d
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:371: error: cannot find symbol
+        public Void doInBackground(Object... objArr) {
+                                   ^
+  symbol:   class Object
+  location: class d.e
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:234: error: cannot find symbol
+        public boolean equals(Object obj) {
+                              ^
+  symbol:   class Object
+  location: class c
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/d.java:275: error: cannot find symbol
+        public boolean equals(Object obj) {
+                              ^
+  symbol:   class Object
+  location: class d.a
+/mnt/c/Users/Jaja/AndroidStudioProjects/TSF20/sources/sources/android/support/v7/widget/ActivityChooserView.java:436: error: cannot find symbol
+        public Object getItem(int i) {
+               ^
+  symbol:   class Object
+  location: class ActivityChooserView.a
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+
+> Task :app:compileDebugJavaWithJavac FAILED
+> Task :app:copyRoomSchemas NO-SOURCE
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> java.lang.NullPointerException: Cannot invoke "javax.lang.model.element.TypeElement.getNestingKind()" because "typeElement" is null
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 23s
+7 actionable tasks: 7 executed

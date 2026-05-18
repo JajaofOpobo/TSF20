@@ -4,16 +4,16 @@ import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.c.b.a.a;
-import com.tsf.shell.f.i.a;
-import com.tsf.shell.g;
+import com.tsf.shell.f.c.b.a.A;
+import com.tsf.shell.f.i.A;
+import com.tsf.shell.G;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends d implements a.InterfaceC0113a {
+public class A extends d implements a.InterfaceC0113a {
     private e a;
     private i d;
     private ArrayList<b> e;
@@ -34,7 +34,7 @@ public class a extends d implements a.InterfaceC0113a {
         }
     };
 
-    public a(e eVar, float f, float f2, int i) {
+    public A(e eVar, float f, float f2, int i) {
         float f3 = 128.0f;
         this.n = 0;
         this.a = eVar;

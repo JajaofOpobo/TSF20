@@ -25,6 +25,8 @@ public class LibGDXRenderer implements ILauncherRenderer {
             transitionRenderer = new PageTransitionRenderer();
             glSurfaceView = new GLSurfaceView(context);
             glSurfaceView.setEGLContextClientVersion(2);
+            glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
+            glSurfaceView.getHolder().setFormat(android.graphics.PixelFormat.TRANSLUCENT);
             glSurfaceView.setRenderer(transitionRenderer);
             glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
         }

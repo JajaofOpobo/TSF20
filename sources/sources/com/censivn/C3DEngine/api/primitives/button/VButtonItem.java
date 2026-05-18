@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget;
-import com.censivn.C3DEngine.b.f.a.b;
+import com.censivn.C3DEngine.b.f.a.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VButtonItem implements VTweenTarget {

@@ -2,14 +2,14 @@ package com.tsf.shell.manager;
 
 import com.tsf.shell.f.e.p;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.manager.action.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.action.B;
+import com.tsf.shell.manager.p.E;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
-import com.tsf.shell.preference.a.d;
-import com.tsf.shell.services.c;
+import com.tsf.shell.preference.a.D;
+import com.tsf.shell.services.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public static com.tsf.shell.manager.h.a A;
     public static d B;
     public static c C;

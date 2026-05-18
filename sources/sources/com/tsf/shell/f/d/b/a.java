@@ -1,19 +1,19 @@
 package com.tsf.shell.f.d.b;
 
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.f.d.b.a.d;
-import com.tsf.shell.f.d.b.a.e;
-import com.tsf.shell.f.f.c;
-import com.tsf.shell.f.f.f;
-import com.tsf.shell.f.i.b.e.b;
+import com.tsf.shell.f.d.b.a.D;
+import com.tsf.shell.f.d.b.a.E;
+import com.tsf.shell.f.f.C;
+import com.tsf.shell.f.f.F;
+import com.tsf.shell.f.i.b.e.B;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends c<d> {
+public class A extends c<d> {
     private ArrayList<b> a = new ArrayList<>();
 
-    public a() {
+    public A() {
         ArrayList<f> arrayList = new ArrayList<>();
         arrayList.add(new com.tsf.shell.f.d.b.a.c(0, false));
         arrayList.add(new com.tsf.shell.f.d.b.a.f(50, -13421773, false));

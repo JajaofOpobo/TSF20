@@ -14,7 +14,7 @@ import java.util.Calendar;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.f.j {
+public class A extends com.censivn.C3DEngine.b.f.j {
     private TextureElement A;
     private TextureElement B;
     private int D;
@@ -52,7 +52,7 @@ public class a extends com.censivn.C3DEngine.b.f.j {
     private int w = this.v;
     private Object C = new Object();
 
-    public a(VTextureManager vTextureManager, c cVar) {
+    public A(VTextureManager vTextureManager, c cVar) {
         this.d = vTextureManager;
         this.c = cVar;
         a();

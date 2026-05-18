@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
-import com.tsf.shell.utils.g;
+import com.tsf.shell.utils.G;
 import com.tsf.shell.utils.x;
 import com.tsf.shell.utils.y;
 

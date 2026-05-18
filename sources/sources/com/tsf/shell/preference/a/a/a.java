@@ -1,12 +1,12 @@
 package com.tsf.shell.preference.a.a;
 
-import com.censivn.C3DEngine.b.e.i;
+import com.censivn.C3DEngine.b.e.I;
 import com.censivn.C3DEngine.b.e.j;
-import com.tsf.b;
+import com.tsf.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends i {
-    public a() {
+public class A extends i {
+    public A() {
         a(b.i.text_preferences);
         j jVar = new j();
         jVar.h(b.i.mn_title_db_export);

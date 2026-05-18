@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a;
 import com.censivn.C3DEngine.b.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends j {
+public class C extends j {
     private int a = 0;
     private int b = 0;
     private boolean c = false;

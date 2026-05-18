@@ -4,10 +4,10 @@ import android.content.Context;
 import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
-import com.tsf.b;
+import com.tsf.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends j {
+public class A extends j {
     public TextureElement a;
     public TextureElement b;
     private C0116a c;
@@ -55,7 +55,7 @@ public class a extends j {
         }
     }
 
-    public a(VTextureManager vTextureManager, Context context) {
+    public A(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         s_();
     }

@@ -1,17 +1,17 @@
 package com.tsf.shell.f.f.a.d;
 
 import com.tsf.shell.Home;
-import com.tsf.shell.f.f.a.d.a.b;
-import com.tsf.shell.f.f.a.d.a.c;
-import com.tsf.shell.f.f.a.d.a.d;
-import com.tsf.shell.f.f.a.d.a.f;
-import com.tsf.shell.manager.a.e;
+import com.tsf.shell.f.f.a.d.a.B;
+import com.tsf.shell.f.f.a.d.a.C;
+import com.tsf.shell.f.f.a.d.a.D;
+import com.tsf.shell.f.f.a.d.a.F;
+import com.tsf.shell.manager.a.E;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private e b;
     private c d;
     private d e;
@@ -19,7 +19,7 @@ public class a {
     private int f = -1;
     private ArrayList<c> c = new ArrayList<>();
 
-    public a(e eVar) {
+    public A(e eVar) {
         this.b = eVar;
         this.c.add(new b(0));
         this.c.add(new com.tsf.shell.f.f.a.d.a.e(2));

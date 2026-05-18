@@ -5,15 +5,15 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.b;
-import com.tsf.shell.f.e.i;
+import com.tsf.B;
+import com.tsf.shell.f.e.I;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.H;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.e.f {
+public class A extends com.censivn.C3DEngine.b.e.f {
     private i a;
     private com.censivn.C3DEngine.b.f.b.a b;
     private k f;
@@ -26,7 +26,7 @@ public class a extends com.censivn.C3DEngine.b.e.f {
     private float i = 0.4f;
     private com.tsf.shell.manager.o.a k = new com.tsf.shell.manager.o.a(1.15f, 1.15f);
 
-    public a() {
+    public A() {
         a(1);
         a(true);
         com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();

@@ -2,10 +2,10 @@ package com.ksmobile.launcher.a.a;
 
 import android.content.SharedPreferences;
 import android.text.TextUtils;
-import com.cm.a.c;
-import com.cm.kinfoc.a.d;
+import com.cm.a.C;
+import com.cm.kinfoc.a.D;
 import com.cm.kinfoc.n;
-import com.ksmobile.launcher.cmbase.utils.e;
+import com.ksmobile.launcher.cmbase.utils.E;
 import com.tsf.shell.ShellApplication;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

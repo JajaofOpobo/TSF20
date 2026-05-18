@@ -1,16 +1,16 @@
 package com.tsf.shell.f.c;
 
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.c.a.f;
-import com.tsf.shell.f.c.b.e;
+import com.tsf.shell.f.c.a.F;
+import com.tsf.shell.f.c.b.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public e a;
     public f b;
     public int c;
 
-    public a() {
+    public A() {
         com.tsf.shell.manager.a.g = this;
         this.c = a(com.tsf.shell.manager.b.e.v());
         this.a = new e(false);

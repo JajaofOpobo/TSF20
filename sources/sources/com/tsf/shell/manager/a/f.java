@@ -11,7 +11,7 @@ import android.os.Build;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.utils.m;

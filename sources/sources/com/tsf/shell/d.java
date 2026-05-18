@@ -7,7 +7,7 @@ import android.os.MessageQueue;
 import java.util.LinkedList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class D {
     private static d a;
     private LinkedList<Runnable> b = new LinkedList<>();
     private MessageQueue c = Looper.myQueue();

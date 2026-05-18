@@ -3,12 +3,12 @@ package com.tsf.shell.f.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends c<l> {
+public class D extends c<l> {
     public Object a;
     private boolean b;
     private boolean c;
 
-    public d(ArrayList<f> arrayList) {
+    public D(ArrayList<f> arrayList) {
         super(arrayList);
         this.a = new Object();
         this.b = false;

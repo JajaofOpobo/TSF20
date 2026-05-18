@@ -1,55 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <PreferenceCategory android:title="Desktop">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <SwitchPreference
+            android:key="pref_dark_theme"
+            android:title="Dark Theme"
+            android:summary="Use dark theme"
+            android:defaultValue="true" />
         <ListPreference
-            android:key="tsf_desktop_columns"
-            android:title="Desktop Columns"
-            android:entries="@array/column_options"
-            android:entryValues="@array/column_values"
-            android:defaultValue="4" />
-        <ListPreference
-            android:key="tsf_desktop_rows"
-            android:title="Desktop Rows"
-            android:entries="@array/row_options"
-            android:entryValues="@array/row_values"
-            android:defaultValue="4" />
+            android:key="pref_grid_size"
+            android:title="Desktop Grid"
+            android:summary="Number of rows and columns"
+            android:entries="@array/grid_size_entries"
+            android:entryValues="@array/grid_size_values"
+            android:defaultValue="5x4" />
     </PreferenceCategory>
-
     <PreferenceCategory android:title="Dock">
-        <SwitchPreferenceCompat
-            android:key="tsf_dock_enabled"
+        <SwitchPreference
+            android:key="pref_show_dock"
             android:title="Show Dock"
+            android:summary="Display the dock bar"
             android:defaultValue="true" />
     </PreferenceCategory>
-
     <PreferenceCategory android:title="Gestures">
-        <ListPreference
-            android:key="tsf_gesture_double_tap"
-            android:title="Double Tap"
-            android:entries="@array/gesture_actions"
-            android:entryValues="@array/gesture_values"
-            android:defaultValue="0" />
-        <ListPreference
-            android:key="tsf_gesture_swipe_up"
+        <SwitchPreference
+            android:key="pref_gesture_up"
             android:title="Swipe Up"
-            android:entries="@array/gesture_actions"
-            android:entryValues="@array/gesture_values"
-            android:defaultValue="0" />
-        <ListPreference
-            android:key="tsf_gesture_swipe_down"
+            android:summary="Action on swipe up" />
+        <SwitchPreference
+            android:key="pref_gesture_down"
             android:title="Swipe Down"
-            android:entries="@array/gesture_actions"
-            android:entryValues="@array/gesture_values"
-            android:defaultValue="0" />
+            android:summary="Action on swipe down" />
     </PreferenceCategory>
-
     <PreferenceCategory android:title="About">
-        <Preference
-            android:key="tsf_version"
-            android:title="Version"
-            android:summary="0.1.0" />
+        <PreferenceScreen
+            android:key="pref_about"
+            android:title="About TSF Shell"
+            android:summary="Version 3.9.4" />
     </PreferenceCategory>
-
 </PreferenceScreen>

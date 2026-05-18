@@ -1,15 +1,15 @@
 package com.tsf.shell.f.i;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.f.i;
-import com.tsf.b;
-import com.tsf.shell.manager.n.a;
+import com.censivn.C3DEngine.b.c.B;
+import com.censivn.C3DEngine.b.f.I;
+import com.tsf.B;
+import com.tsf.shell.manager.n.A;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements b.a {
+public class A implements b.a {
     private a.C0133a a;
     protected InterfaceC0113a d;
     public Object e;
@@ -21,7 +21,7 @@ public class a implements b.a {
         ArrayList<i> b();
     }
 
-    public a(Object obj, InterfaceC0113a interfaceC0113a) {
+    public A(Object obj, InterfaceC0113a interfaceC0113a) {
         this.e = obj;
         this.d = interfaceC0113a;
     }

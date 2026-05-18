@@ -2,13 +2,13 @@ package com.tsf.shell.f.e;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.b;
-import com.tsf.shell.f.i.b;
+import com.tsf.B;
+import com.tsf.shell.f.i.B;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private static com.censivn.C3DEngine.b.f.j a;
     private static com.censivn.C3DEngine.b.f.k b;
     private static com.censivn.C3DEngine.b.f.k c;

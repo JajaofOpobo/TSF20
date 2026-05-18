@@ -3,19 +3,19 @@ package com.tsf.shell.f.i;
 import android.content.ContentValues;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.D;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.shell.f.e.f;
+import com.tsf.shell.f.e.F;
 import com.tsf.shell.f.e.s;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.G;
 import com.tsf.shell.manager.bind.ShellModel;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends j implements f {
+public class B extends j implements f {
     private ItemInfo a;
     protected com.censivn.C3DEngine.b.f.b.a e;
     private f j;
@@ -45,7 +45,7 @@ public class b extends j implements f {
     public interface a {
     }
 
-    public b(ItemInfo itemInfo) {
+    public B(ItemInfo itemInfo) {
         this.a = itemInfo;
         if (itemInfo != null) {
             itemInfo.setWidget(this);

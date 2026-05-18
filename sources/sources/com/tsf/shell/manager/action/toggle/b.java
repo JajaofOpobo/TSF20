@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.action.toggle;
 
 import android.content.Intent;
-import com.tsf.shell.f.i.b.e.i;
+import com.tsf.shell.f.i.b.e.I;
 import com.tsf.shell.f.i.b.e.j;
 import java.util.ArrayList;
 

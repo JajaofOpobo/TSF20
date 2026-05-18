@@ -2,10 +2,10 @@ package com.tsf.shell.manager.r;
 
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.f.i.b;
+import com.tsf.shell.f.i.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     public static int[] a = new int[2];
     public static float[] b = new float[2];
 

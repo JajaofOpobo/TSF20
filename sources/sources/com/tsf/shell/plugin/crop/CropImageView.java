@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.plugin.crop.d;
+import com.tsf.shell.plugin.crop.D;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CropImageView extends View {

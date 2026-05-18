@@ -14,7 +14,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        configureSystemBars();
+        setContentView(new android.widget.FrameLayout(this));
         
         if (savedInstanceState == null) {
             getSupportFragmentManager()
@@ -22,6 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
                     .replace(android.R.id.content, new SettingsFragment())
                     .commit();
         }
+        configureSystemBars();
     }
 
     private void configureSystemBars() {

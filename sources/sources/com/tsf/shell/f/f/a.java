@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.f.j {
+public class A extends com.censivn.C3DEngine.b.f.j {
     public void a(g gVar, Number3d number3d) {
         if (visible()) {
             onDrawStart();

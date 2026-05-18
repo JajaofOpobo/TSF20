@@ -3,9 +3,9 @@ package com.tsf.shell.manager.bind;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.shell.f.i.c.g;
-import com.tsf.shell.manager.a.f;
-import com.tsf.shell.manager.r.c.a.a;
+import com.tsf.shell.f.i.c.G;
+import com.tsf.shell.manager.a.F;
+import com.tsf.shell.manager.r.c.a.A;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -9,8 +9,8 @@ public class PageIndicator extends View {
 
     private int pageCount;
     private int currentPage;
-    private final Paint activePaint;
-    private final Paint inactivePaint;
+    private Paint activePaint;
+    private Paint inactivePaint;
     private static final int DOT_SIZE_DP = 8;
     private static final int DOT_SPACING_DP = 16;
     private float dotSize;
@@ -18,6 +18,15 @@ public class PageIndicator extends View {
 
     public PageIndicator(Context context) {
         super(context);
+        init();
+    }
+
+    public PageIndicator(Context context, android.util.AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    private void init() {
         float density = getResources().getDisplayMetrics().density;
         dotSize = DOT_SIZE_DP * density;
         dotSpacing = DOT_SPACING_DP * density;

@@ -7,8 +7,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.view.KeyEvent;
-import com.b.a.a;
-import com.tsf.shell.a.a.c;
+import com.b.a.A;
+import com.tsf.shell.a.a.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e {

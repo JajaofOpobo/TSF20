@@ -13,7 +13,7 @@ import android.support.v4.app.o;
 import android.util.Log;
 import android.widget.ImageView;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.plugin.themepicker.utils.c;
+import com.tsf.shell.plugin.themepicker.utils.C;
 import java.lang.ref.WeakReference;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

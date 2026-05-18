@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h {
+public class H {
     private static com.tsf.shell.i d;
     private static com.censivn.C3DEngine.b.f.j e;
     private static com.censivn.C3DEngine.b.f.i f;

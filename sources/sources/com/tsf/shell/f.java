@@ -3,12 +3,12 @@ package com.tsf.shell;
 import android.os.Process;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f implements Runnable {
+public class F implements Runnable {
     int a;
     RestartActivity b;
     boolean c;
 
-    public f(int i, RestartActivity restartActivity, boolean z) {
+    public F(int i, RestartActivity restartActivity, boolean z) {
         this.a = i;
         this.b = restartActivity;
         this.c = z;

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public interface f {
+public interface F {
     f a(int i, int i2);
 
     void a(f fVar);

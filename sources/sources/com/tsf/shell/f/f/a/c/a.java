@@ -1,10 +1,10 @@
 package com.tsf.shell.f.f.a.c;
 
 import android.view.MotionEvent;
-import com.tsf.shell.f.f.a.c.c;
+import com.tsf.shell.f.f.a.c.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends c.a {
+public class A extends c.a {
     private com.tsf.shell.f.f.a.h a;
     private com.tsf.shell.f.f.a.f b;
     private c c;
@@ -13,7 +13,7 @@ public class a extends c.a {
     private com.tsf.shell.f.i.a.c f;
     private com.censivn.C3DEngine.b.d.a g;
 
-    public a(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.h hVar) {
+    public A(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.h hVar) {
         this.c = cVar;
         this.a = hVar;
         this.b = fVar;

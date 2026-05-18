@@ -1,7 +1,7 @@
 package com.tsf.shell.theme.inside.mix.menu.item.detail;
 
 import android.content.Context;
-import com.tsf.b;
+import com.tsf.B;
 import com.tsf.shell.plugin.themepicker.k;
 import java.util.ArrayList;
 

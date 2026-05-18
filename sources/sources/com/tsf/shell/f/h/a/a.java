@@ -3,15 +3,15 @@ package com.tsf.shell.f.h.a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.b.a.d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.b.a.D;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.b;
-import com.tsf.shell.manager.b.e;
+import com.tsf.B;
+import com.tsf.shell.manager.b.E;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class A {
     private j a;
     private com.censivn.C3DEngine.b.h.d.c b;
     private d c;
@@ -22,7 +22,7 @@ public class a {
     private boolean h;
     private boolean i;
 
-    public a() {
+    public A() {
         this.h = true;
         this.h = e.aB() == 0;
         this.d = new TextureElement(0, false);

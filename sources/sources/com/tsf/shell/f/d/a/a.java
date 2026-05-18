@@ -1,12 +1,12 @@
 package com.tsf.shell.f.d.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.I;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class a {
+public abstract class A {
     private int a;
     private boolean b = false;
     private boolean c = false;
@@ -18,7 +18,7 @@ public abstract class a {
 
     public abstract i e();
 
-    public a(int i, boolean z) {
+    public A(int i, boolean z) {
         boolean z2 = false;
         this.d = false;
         this.a = i;

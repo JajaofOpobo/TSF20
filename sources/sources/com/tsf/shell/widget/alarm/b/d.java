@@ -5,8 +5,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.core.VTextureManager;
-import com.tsf.shell.widget.alarm.b.e;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.b.E;
+import com.tsf.shell.widget.alarm.I;
 import java.text.DateFormatSymbols;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
