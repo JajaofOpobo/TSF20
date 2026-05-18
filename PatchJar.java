@@ -54,56 +54,9 @@ public class PatchJar {
                                     "(Ljavax/lang/model/element/TypeElement;)Ljava/lang/String;",
                                     null, null);
                                 mv.visitCode();
-                                
-                                Label notNull = new Label();
-                                mv.visitVarInsn(Opcodes.ALOAD, 1);
-                                mv.visitJumpInsn(Opcodes.IFNONNULL, notNull);
                                 mv.visitLdcInsn("");
                                 mv.visitInsn(Opcodes.ARETURN);
-                                
-                                mv.visitLabel(notNull);
-                                mv.visitVarInsn(Opcodes.ALOAD, 1);
-                                mv.visitMethodInsn(Opcodes.INVOKEINTERFACE,
-                                    "javax/lang/model/element/TypeElement",
-                                    "getNestingKind",
-                                    "()Ljavax/lang/model/element/NestingKind;", true);
-                                mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
-                                    "javax/lang/model/element/NestingKind",
-                                    "isNested",
-                                    "()Z", false);
-                                
-                                Label notNested = new Label();
-                                mv.visitJumpInsn(Opcodes.IFEQ, notNested);
-                                
-                                mv.visitVarInsn(Opcodes.ALOAD, 0);
-                                mv.visitFieldInsn(Opcodes.GETFIELD,
-                                    "org/gradle/internal/compiler/java/listeners/constants/ConstantsTreeVisitor",
-                                    "elements",
-                                    "Ljavax/lang/model/util/Elements;");
-                                mv.visitVarInsn(Opcodes.ALOAD, 1);
-                                mv.visitMethodInsn(Opcodes.INVOKEINTERFACE,
-                                    "javax/lang/model/util/Elements",
-                                    "getBinaryName",
-                                    "(Ljavax/lang/model/element/TypeElement;)Ljavax/lang/model/element/Name;", true);
-                                mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
-                                    "java/lang/Object",
-                                    "toString",
-                                    "()Ljava/lang/String;", false);
-                                mv.visitInsn(Opcodes.ARETURN);
-                                
-                                mv.visitLabel(notNested);
-                                mv.visitVarInsn(Opcodes.ALOAD, 1);
-                                mv.visitMethodInsn(Opcodes.INVOKEINTERFACE,
-                                    "javax/lang/model/element/TypeElement",
-                                    "getQualifiedName",
-                                    "()Ljavax/lang/model/element/Name;", true);
-                                mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
-                                    "java/lang/Object",
-                                    "toString",
-                                    "()Ljava/lang/String;", false);
-                                mv.visitInsn(Opcodes.ARETURN);
-                                
-                                mv.visitMaxs(2, 2);
+                                mv.visitMaxs(1, 2);
                                 mv.visitEnd();
                                 
                                 super.visitEnd();
