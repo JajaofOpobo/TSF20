@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
 import com.tsf.shell.widget.alarm.AlarmWidget;
-import com.tsf.shell.widget.alarm.b.E;
+import com.tsf.shell.widget.alarm.b.e;
 import java.util.Calendar;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

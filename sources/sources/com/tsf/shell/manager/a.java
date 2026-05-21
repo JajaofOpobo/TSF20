@@ -2,11 +2,11 @@ package com.tsf.shell.manager;
 
 import com.tsf.shell.f.e.p;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.manager.action.B;
-import com.tsf.shell.manager.p.E;
+import com.tsf.shell.manager.action.b;
+import com.tsf.shell.manager.p.e;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
-import com.tsf.shell.preference.a.D;
-import com.tsf.shell.services.C;
+import com.tsf.shell.preference.a.d;
+import com.tsf.shell.services.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {

@@ -2,8 +2,8 @@ package com.tsf.shell.f.i.b.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.f.e.h.A;
-import com.tsf.shell.f.i.c.G;
+import com.tsf.shell.f.e.h.a;
+import com.tsf.shell.f.i.c.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends com.tsf.shell.f.i.b implements a.InterfaceC0098a {

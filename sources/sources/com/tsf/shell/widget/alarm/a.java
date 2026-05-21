@@ -18,8 +18,8 @@ import com.censivn.C3DEngine.api.message.VMessageQueueManager;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.shell.VInformation;
 import com.tsf.shell.widget.alarm.AlarmUtils.Alarm;
-import com.tsf.shell.widget.alarm.c.C;
-import com.tsf.shell.widget.alarm.service.C;
+import com.tsf.shell.widget.alarm.c.c;
+import com.tsf.shell.widget.alarm.service.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends VObject3dContainer implements c.b {

@@ -5,10 +5,10 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.opengl.GLSurfaceView;
 import android.util.DisplayMetrics;
-import com.censivn.C3DEngine.a.E;
-import com.censivn.C3DEngine.b.c.C;
-import com.censivn.C3DEngine.b.c.F;
-import com.tsf.shell.preference.a.a.B;
+import com.censivn.C3DEngine.a.e;
+import com.censivn.C3DEngine.b.c.c;
+import com.censivn.C3DEngine.b.c.f;
+import com.tsf.shell.preference.a.a.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {

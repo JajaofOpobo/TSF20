@@ -4,10 +4,10 @@ import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.C;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.f.a.c.k;
 import com.tsf.shell.f.f.a.D;
-import com.tsf.shell.plugin.classification.D;
+import com.tsf.shell.plugin.classification.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends b {

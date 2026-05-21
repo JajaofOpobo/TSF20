@@ -3,7 +3,7 @@ package com.tsf.shell.manager.o;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.utils.l;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

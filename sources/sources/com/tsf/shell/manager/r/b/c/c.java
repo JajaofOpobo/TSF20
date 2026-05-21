@@ -5,8 +5,8 @@ import android.appwidget.AppWidgetProviderInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.I;
-import com.tsf.shell.manager.r.b.c.B;
+import com.censivn.C3DEngine.b.f.i;
+import com.tsf.shell.manager.r.b.c.b;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 

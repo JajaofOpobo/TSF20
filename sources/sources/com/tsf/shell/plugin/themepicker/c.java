@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.o;
 import android.support.v4.app.r;
-import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.f;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

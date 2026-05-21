@@ -1,6 +1,6 @@
 package com.tsf.shell.f.f.b;
 
-import com.tsf.B;
+import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class t extends com.tsf.shell.f.f.l {

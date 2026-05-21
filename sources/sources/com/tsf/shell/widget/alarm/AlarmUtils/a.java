@@ -2,7 +2,7 @@ package com.tsf.shell.widget.alarm.AlarmUtils;
 
 import android.content.Context;
 import android.os.PowerManager;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class a {

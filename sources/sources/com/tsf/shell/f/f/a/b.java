@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a;
 
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.B;
+import com.tsf.b;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

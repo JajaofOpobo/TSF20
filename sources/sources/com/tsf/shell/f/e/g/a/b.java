@@ -1,7 +1,7 @@
 package com.tsf.shell.f.e.g.a;
 
 import android.view.MotionEvent;
-import com.tsf.shell.f.e.g.E;
+import com.tsf.shell.f.e.g.e;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;

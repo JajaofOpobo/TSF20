@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;

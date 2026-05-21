@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.core.VWidgetContainer;
-import com.tsf.shell.widget.a.a.B;
+import com.tsf.shell.widget.a.a.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends VWidgetContainer implements b.a {

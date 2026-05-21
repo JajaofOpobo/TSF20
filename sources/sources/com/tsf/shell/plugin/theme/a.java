@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
 import com.tsf.shell.theme.inside.mix.ThemeActionManager;
 import com.tsf.shell.theme.inside.mix.ThemeAppMutilChoiceManager;

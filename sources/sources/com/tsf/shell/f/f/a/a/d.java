@@ -3,8 +3,8 @@ package com.tsf.shell.f.f.a.a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.B;
-import com.tsf.shell.manager.a.G;
+import com.tsf.b;
+import com.tsf.shell.manager.a.g;
 import java.util.ArrayList;
 import java.util.Iterator;
 

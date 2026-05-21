@@ -10,8 +10,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.primitives.button.VButton;
 import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
-import com.censivn.C3DEngine.b.c.F;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.c.f;
+import com.tsf.b;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

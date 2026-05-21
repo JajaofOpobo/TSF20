@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import com.tsf.extend.base.j.n;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import java.net.URLEncoder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -3,7 +3,7 @@ package com.tsf.shell.widget.alarm.b;
 import android.content.Context;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.core.VTextureManager;
-import com.tsf.shell.widget.alarm.b.E;
+import com.tsf.shell.widget.alarm.b.e;
 import com.tsf.shell.widget.alarm.p;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

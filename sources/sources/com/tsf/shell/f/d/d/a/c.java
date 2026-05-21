@@ -3,7 +3,7 @@ package com.tsf.shell.f.d.d.a;
 import com.badlogic.gdx.physics.box2d.Joint;
 import com.badlogic.gdx.physics.box2d.joints.RevoluteJointDef;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.f.G;
+import com.tsf.shell.f.f.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c implements a {

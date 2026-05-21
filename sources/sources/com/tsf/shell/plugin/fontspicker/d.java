@@ -3,8 +3,8 @@ package com.tsf.shell.plugin.fontspicker;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.widget.TextView;
-import com.tsf.shell.plugin.fontspicker.A;
-import com.tsf.shell.plugin.themepicker.E;
+import com.tsf.shell.plugin.fontspicker.a;
+import com.tsf.shell.plugin.themepicker.e;
 import java.lang.ref.WeakReference;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

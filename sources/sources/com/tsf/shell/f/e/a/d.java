@@ -1,6 +1,6 @@
 package com.tsf.shell.f.e.a;
 
-import com.censivn.C3DEngine.b.c.E;
+import com.censivn.C3DEngine.b.c.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class d implements e.a {

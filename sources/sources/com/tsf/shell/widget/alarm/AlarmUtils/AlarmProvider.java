@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 import com.tsf.shell.widget.alarm.AlarmUtils.Alarm;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmProvider extends ContentProvider {

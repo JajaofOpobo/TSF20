@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.effects.modifiers;
 
 import com.censivn.C3DEngine.api.effects.VIEffects;
 import com.censivn.C3DEngine.api.effects.core.Vector3;
-import com.censivn.C3DEngine.c.b.C;
+import com.censivn.C3DEngine.c.b.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VTwist implements VIEffects {

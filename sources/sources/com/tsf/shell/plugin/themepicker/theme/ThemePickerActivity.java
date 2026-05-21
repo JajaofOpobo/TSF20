@@ -11,7 +11,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.shell.plugin.themepicker.IconPickerActivity;
 import com.tsf.shell.plugin.themepicker.SildingMenuLayout;
-import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.f;
 import com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator;
 import com.tsf.shell.plugin.themepicker.k;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.tsf.shell.f.h.a.a;
 
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class c extends com.censivn.C3DEngine.b.b.a.a {

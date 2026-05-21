@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.description;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.manager.o.A;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;

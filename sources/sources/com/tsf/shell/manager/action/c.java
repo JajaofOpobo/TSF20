@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.os.Parcelable;
-import com.censivn.C3DEngine.b.c.A;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.c.a;
+import com.tsf.b;
 import com.tsf.shell.activity.actionselector.ActionSelector;
 import com.tsf.shell.utils.x;
 

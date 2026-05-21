@@ -1,11 +1,11 @@
 package com.tsf.shell.f.g.a;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
-import com.tsf.B;
-import com.tsf.shell.manager.p.E;
+import com.tsf.b;
+import com.tsf.shell.manager.p.e;
 import com.tsf.shell.utils.w;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

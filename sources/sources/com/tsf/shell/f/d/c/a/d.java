@@ -1,7 +1,7 @@
 package com.tsf.shell.f.d.c.a;
 
-import com.tsf.shell.f.e.f.A;
-import com.tsf.shell.f.f.F;
+import com.tsf.shell.f.e.f.a;
+import com.tsf.shell.f.f.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

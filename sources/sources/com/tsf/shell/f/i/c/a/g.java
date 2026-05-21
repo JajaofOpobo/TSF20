@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
-import com.tsf.B;
+import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends j {

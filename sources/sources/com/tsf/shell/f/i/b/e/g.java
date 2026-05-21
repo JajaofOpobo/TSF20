@@ -9,13 +9,13 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.f.a.a.B;
 import java.util.ArrayList;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends a implements b.a {
+public class g extends a {
     private com.tsf.shell.manager.a.f a;
     private boolean b;
     private boolean p;

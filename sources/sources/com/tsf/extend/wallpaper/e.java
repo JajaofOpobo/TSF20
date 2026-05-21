@@ -16,9 +16,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import com.tsf.extend.wallpaper.ad;
-import com.tsf.extend.wallpaper.I;
+import com.tsf.extend.wallpaper.i;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.text.TextUtils;
 import android.util.Log;
-import com.tsf.extend.H;
+import com.tsf.extend.h;
 import com.tsf.extend.theme.ah;
 import com.tsf.extend.theme.v;
 import java.util.UUID;

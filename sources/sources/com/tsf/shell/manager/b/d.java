@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellApplication;
 import com.tsf.shell.theme.inside.ThemeConfigManager;

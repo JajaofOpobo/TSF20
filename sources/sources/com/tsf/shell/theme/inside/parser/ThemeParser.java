@@ -5,7 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import com.censivn.C3DEngine.A;
-import com.tsf.shell.f.h.B;
+import com.tsf.shell.f.h.b;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;

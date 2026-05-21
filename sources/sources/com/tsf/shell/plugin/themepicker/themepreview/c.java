@@ -20,10 +20,10 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.f;
 import com.tsf.shell.plugin.themepicker.k;
 import com.tsf.shell.plugin.themepicker.utils.RecyclingImageView;
-import com.tsf.shell.plugin.themepicker.utils.H;
+import com.tsf.shell.plugin.themepicker.utils.h;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

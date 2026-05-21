@@ -1,9 +1,9 @@
 package com.tsf.shell.d;
 
 import android.content.Context;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.b.E;
+import com.tsf.shell.manager.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {

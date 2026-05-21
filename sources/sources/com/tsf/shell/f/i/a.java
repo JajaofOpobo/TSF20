@@ -1,16 +1,16 @@
 package com.tsf.shell.f.i;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.c.B;
-import com.censivn.C3DEngine.b.f.I;
-import com.tsf.B;
-import com.tsf.shell.manager.n.A;
+import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.c.b.a;
+import com.tsf.shell.manager.n.a;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A implements b.a {
-    private a.C0133a a;
+public class A implements com.censivn.C3DEngine.b.c.b.a {
+    private com.tsf.shell.f.i.a.C0133a a;
     protected InterfaceC0113a d;
     public Object e;
     protected boolean c = false;

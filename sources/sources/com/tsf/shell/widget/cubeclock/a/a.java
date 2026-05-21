@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
-import com.tsf.shell.widget.cubeclock.C;
+import com.tsf.shell.widget.cubeclock.c;
 import com.tsf.shell.widget.cubeclock.j;
 import com.tsf.shell.widget.cubeclock.o;
 import com.tsf.shell.widget.cubeclock.r;

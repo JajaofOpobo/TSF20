@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a.c;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

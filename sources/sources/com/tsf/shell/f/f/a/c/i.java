@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a.c;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.manager.n.A;
+import com.tsf.shell.manager.n.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class i extends com.censivn.C3DEngine.b.f.j {

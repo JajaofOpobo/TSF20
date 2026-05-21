@@ -3,7 +3,7 @@ package com.tsf.shell;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import com.tsf.shell.manager.l.A;
+import com.tsf.shell.manager.l.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class InstallShortcutReceiver extends BroadcastReceiver {

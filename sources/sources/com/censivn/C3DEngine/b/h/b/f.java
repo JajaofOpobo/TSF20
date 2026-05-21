@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.h.b;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class f {

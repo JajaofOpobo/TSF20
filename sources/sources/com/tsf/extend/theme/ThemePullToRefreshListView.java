@@ -9,7 +9,7 @@ import android.widget.ListView;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshListView;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemePullToRefreshListView extends PullToRefreshAndLoadMoreListView {

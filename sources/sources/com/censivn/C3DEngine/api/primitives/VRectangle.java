@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.primitives;
 
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

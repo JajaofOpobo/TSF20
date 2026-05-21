@@ -7,7 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
-import com.tsf.shell.plugin.themepicker.E;
+import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.k;
 import java.util.ArrayList;
 

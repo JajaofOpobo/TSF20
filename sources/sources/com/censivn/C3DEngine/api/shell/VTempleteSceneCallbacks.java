@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.shell;
 
 import android.view.KeyEvent;
-import com.tsf.shell.f.b.A;
+import com.tsf.shell.f.b.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VTempleteSceneCallbacks {

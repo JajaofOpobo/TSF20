@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.mix;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.b.c.A;
+import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.themepicker.theme.ThemePickerActivity;
 import com.tsf.shell.theme.inside.ThemeManager;

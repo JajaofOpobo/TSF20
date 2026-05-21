@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 import com.censivn.C3DEngine.A;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.theme.inside.element.ThemeElementCacher;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
 import com.tsf.shell.utils.o;

@@ -3,10 +3,10 @@ package com.tsf.shell.manager.r.b.c;
 import android.appwidget.AppWidgetManager;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.B;
-import com.tsf.shell.f.e.g.a.A;
-import com.tsf.shell.manager.p.E;
-import com.tsf.shell.manager.r.c.a.A;
+import com.tsf.b;
+import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.r.c.a.a;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 

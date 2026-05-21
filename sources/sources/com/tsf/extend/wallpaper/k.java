@@ -1,6 +1,6 @@
 package com.tsf.extend.wallpaper;
 
-import com.tsf.extend.theme.diy.E;
+import com.tsf.extend.theme.diy.e;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

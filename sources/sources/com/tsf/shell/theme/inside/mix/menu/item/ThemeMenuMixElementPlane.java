@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.b.A;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.shell.f.e.k;
-import com.tsf.shell.manager.o.C;
+import com.tsf.shell.manager.o.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMenuMixElementPlane extends j {

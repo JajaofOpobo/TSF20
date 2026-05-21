@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import com.tsf.shell.services.a.A;
-import com.tsf.shell.utils.I;
+import com.tsf.shell.services.a.a;
+import com.tsf.shell.utils.i;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

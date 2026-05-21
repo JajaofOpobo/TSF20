@@ -1,8 +1,8 @@
 package com.tsf.shell.preference.a.a;
 
-import com.censivn.C3DEngine.b.e.I;
+import com.censivn.C3DEngine.b.e.i;
 import com.censivn.C3DEngine.b.e.j;
-import com.tsf.B;
+import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends i {

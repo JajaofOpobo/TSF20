@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.primitives.button;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.censivn.C3DEngine.b.f.a.A;
+import com.censivn.C3DEngine.b.f.a.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VButton extends VObject3dContainer {

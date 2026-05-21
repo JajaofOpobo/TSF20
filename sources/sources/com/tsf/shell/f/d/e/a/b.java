@@ -2,16 +2,16 @@ package com.tsf.shell.f.d.e.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.D;
+import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.d.e.A;
-import com.tsf.shell.f.f.a.H;
-import com.tsf.shell.f.f.G;
+import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.a.h;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class b implements a.InterfaceC0090a {
+public abstract class b implements A.InterfaceC0090a {
     private int a;
     private boolean b = false;
     private boolean c = false;

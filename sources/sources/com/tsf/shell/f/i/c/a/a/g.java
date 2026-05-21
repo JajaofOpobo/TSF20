@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.i.c.a.l;
 import java.text.DateFormatSymbols;
 import java.util.Date;

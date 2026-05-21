@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
-import com.tsf.B;
+import com.tsf.b;
 import java.util.ArrayList;
 import org.acra.ACRAConstants;
 

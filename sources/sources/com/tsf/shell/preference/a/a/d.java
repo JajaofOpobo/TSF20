@@ -1,9 +1,9 @@
 package com.tsf.shell.preference.a.a;
 
-import com.censivn.C3DEngine.b.e.A;
-import com.censivn.C3DEngine.b.e.B;
-import com.censivn.C3DEngine.b.e.H;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.e.a;
+import com.censivn.C3DEngine.b.e.b;
+import com.censivn.C3DEngine.b.e.h;
+import com.tsf.b;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

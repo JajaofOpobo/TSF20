@@ -2,7 +2,7 @@ package com.tsf.shell.f.e;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.element;
 
-import com.censivn.C3DEngine.f.D;
+import com.censivn.C3DEngine.f.d;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;

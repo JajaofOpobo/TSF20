@@ -5,10 +5,10 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.censivn.C3DEngine.b.c.A;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.c.a;
+import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.i.b.e.G;
+import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.plugin.themepicker.AppIconEditorActivity;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

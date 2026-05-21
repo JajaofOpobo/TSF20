@@ -13,7 +13,7 @@ import android.util.SparseArray;
 import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import com.tsf.extend.theme.core.ThemeManagerService;
 import com.tsf.extend.wallpaper.ab;
 import java.io.File;

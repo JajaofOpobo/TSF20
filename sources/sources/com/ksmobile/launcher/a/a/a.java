@@ -3,7 +3,7 @@ package com.ksmobile.launcher.a.a;
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Build;
-import com.ksmobile.launcher.cmbase.utils.E;
+import com.ksmobile.launcher.cmbase.utils.e;
 import com.tsf.shell.ShellApplication;
 import java.util.Date;
 

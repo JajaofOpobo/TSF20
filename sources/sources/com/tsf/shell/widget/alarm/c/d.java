@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
 import com.tsf.shell.widget.alarm.AlarmWidget;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import com.tsf.shell.widget.alarm.p;
 import org.acra.ACRAConstants;
 

@@ -1,6 +1,6 @@
 package com.tsf.extend.theme.a;
 
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c implements e {

@@ -6,7 +6,7 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.manager.o.A;
 import com.tsf.shell.theme.inside.ThemeManager;

@@ -4,10 +4,10 @@ import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherWidget3DInfo;
-import com.tsf.shell.f.i.c.G;
+import com.tsf.shell.f.i.c.g;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.manager.r.c.a.A;
-import com.tsf.shell.manager.r.c.C;
+import com.tsf.shell.manager.r.c.a.a;
+import com.tsf.shell.manager.r.c.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {

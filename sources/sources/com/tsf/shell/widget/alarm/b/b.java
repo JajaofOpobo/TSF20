@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.text.format.DateFormat;
 import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.widget.alarm.b.E;
+import com.tsf.shell.widget.alarm.b.e;
 import com.tsf.shell.widget.alarm.m;
 import com.tsf.shell.widget.alarm.p;
 import java.util.Calendar;

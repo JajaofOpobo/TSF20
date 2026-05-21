@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.primitives;
 
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.censivn.C3DEngine.b.f.C;
+import com.censivn.C3DEngine.b.f.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VBox extends VObject3dContainer {

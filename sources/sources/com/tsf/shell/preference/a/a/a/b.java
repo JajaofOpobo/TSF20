@@ -2,7 +2,7 @@ package com.tsf.shell.preference.a.a.a;
 
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.f.b.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

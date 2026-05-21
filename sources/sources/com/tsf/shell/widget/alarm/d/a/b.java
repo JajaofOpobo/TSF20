@@ -1,6 +1,6 @@
 package com.tsf.shell.widget.alarm.d.a;
 
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;

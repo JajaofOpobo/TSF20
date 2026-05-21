@@ -3,8 +3,8 @@ package com.censivn.C3DEngine.a;
 import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
 import android.view.View;
-import com.censivn.C3DEngine.a.B;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.a.b;
+import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.x;
 

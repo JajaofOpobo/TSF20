@@ -1,11 +1,11 @@
 package com.tsf.shell.preference.a.a;
 
 import android.app.Activity;
-import com.censivn.C3DEngine.b.e.A;
-import com.censivn.C3DEngine.b.e.I;
+import com.censivn.C3DEngine.b.e.a;
+import com.censivn.C3DEngine.b.e.i;
 import com.censivn.C3DEngine.b.e.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -1,6 +1,6 @@
 package com.tsf.shell.f;
 
-import com.tsf.shell.manager.b.E;
+import com.tsf.shell.manager.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class D {

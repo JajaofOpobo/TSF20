@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.tsf.shell.widget.alarm.AlarmWidget;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import com.tsf.shell.widget.alarm.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

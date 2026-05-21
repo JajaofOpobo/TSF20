@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.manager.action.F;
+import com.tsf.shell.manager.action.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.censivn.C3DEngine.b.d.a {

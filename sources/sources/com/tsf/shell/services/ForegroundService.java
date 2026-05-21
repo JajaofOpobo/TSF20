@@ -8,7 +8,7 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.preference.SettingAdvancedPerferenceActivity;
 import com.tsf.shell.utils.x;

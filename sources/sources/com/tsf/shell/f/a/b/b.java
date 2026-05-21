@@ -2,7 +2,7 @@ package com.tsf.shell.f.a.b;
 
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.a.b.A;
+import com.tsf.shell.f.a.b.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends k {

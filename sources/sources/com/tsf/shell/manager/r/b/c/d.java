@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.r.b.c;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.c.B;
-import com.tsf.shell.manager.r.b.c.B;
+import com.censivn.C3DEngine.b.c.b;
+import com.tsf.shell.manager.r.b.c.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.manager.r.b.b.a implements b.a {

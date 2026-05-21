@@ -7,8 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.tsf.B;
-import com.tsf.shell.utils.G;
+import com.tsf.b;
+import com.tsf.shell.utils.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends AppWidgetHostView {

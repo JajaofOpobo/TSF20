@@ -11,7 +11,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Parcel;
 import android.util.Log;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import com.tsf.shell.widget.alarm.m;
 import java.text.SimpleDateFormat;
 import java.util.Date;

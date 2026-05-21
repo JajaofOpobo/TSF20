@@ -1,6 +1,6 @@
 package com.tsf.shell.f.d.d.a;
 
-import com.tsf.shell.f.f.G;
+import com.tsf.shell.f.f.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b implements a {

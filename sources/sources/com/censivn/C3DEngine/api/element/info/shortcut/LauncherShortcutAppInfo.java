@@ -2,9 +2,9 @@ package com.censivn.C3DEngine.api.element.info.shortcut;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.f.i.b.e.G;
+import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.manager.A;
-import com.tsf.shell.manager.a.F;
+import com.tsf.shell.manager.a.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {

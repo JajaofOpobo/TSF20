@@ -1,8 +1,8 @@
 package com.tsf.shell.preference.a;
 
-import com.tsf.shell.f.c.a.F;
+import com.tsf.shell.f.c.a.f;
 import com.tsf.shell.f.e.j;
-import com.tsf.shell.f.i.b.e.H;
+import com.tsf.shell.f.i.b.e.h;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

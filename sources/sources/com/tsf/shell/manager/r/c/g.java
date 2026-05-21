@@ -3,8 +3,8 @@ package com.tsf.shell.manager.r.c;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.B;
-import com.tsf.shell.f.i.b.e.I;
+import com.tsf.b;
+import com.tsf.shell.f.i.b.e.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g {

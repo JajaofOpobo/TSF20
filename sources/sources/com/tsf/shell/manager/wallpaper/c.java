@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.wallpaper;
 
-import com.censivn.C3DEngine.b.e.H;
+import com.censivn.C3DEngine.b.e.h;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.e.l;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

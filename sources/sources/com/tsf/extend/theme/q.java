@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import com.tsf.extend.theme.t;
 import java.util.List;
 

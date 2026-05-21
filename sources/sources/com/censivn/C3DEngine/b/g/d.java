@@ -5,7 +5,7 @@ public class d {
     public int A;
     public int B;
     private Object a;
-    private b b;
+    private B b;
     private Runnable c;
     private Runnable d;
     public boolean g = false;
@@ -40,11 +40,11 @@ public class d {
     public void a() {
     }
 
-    public void a(b bVar) {
+    public void a(B bVar) {
         this.b = bVar;
     }
 
-    public b e() {
+    public B e() {
         return this.b;
     }
 

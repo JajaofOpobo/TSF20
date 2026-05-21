@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.base.e.A;
+import com.tsf.extend.base.e.a;
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PagerIndicator extends LinearLayout implements View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, a.InterfaceC0049a {

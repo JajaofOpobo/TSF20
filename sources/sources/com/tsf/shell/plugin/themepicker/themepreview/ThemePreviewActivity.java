@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.f;
 import com.tsf.shell.plugin.themepicker.indicator.TabPageIndicator;
 import java.util.Iterator;
 

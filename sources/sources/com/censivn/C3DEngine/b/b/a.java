@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.Display;
-import com.censivn.C3DEngine.a.E;
+import com.censivn.C3DEngine.a.e;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.utils.r;

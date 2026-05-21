@@ -6,8 +6,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
-import com.tsf.extend.base.c.B;
-import com.tsf.extend.base.j.G;
+import com.tsf.extend.base.c.b;
+import com.tsf.extend.base.j.g;
 import com.tsf.extend.wallpaper.WallpaperOnLineActivity;
 import java.util.Stack;
 

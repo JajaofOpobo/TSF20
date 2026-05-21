@@ -18,8 +18,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.A;
-import com.tsf.extend.F;
+import com.tsf.extend.base.d.a;
+import com.tsf.extend.f;
 import com.tsf.extend.theme.ThemeDetail;
 import org.json.JSONObject;
 

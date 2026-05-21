@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.F;
-import com.tsf.extend.G;
+import com.tsf.extend.f;
+import com.tsf.extend.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends g implements DialogInterface.OnCancelListener, View.OnClickListener {

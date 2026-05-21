@@ -18,11 +18,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.extend.base.j.H;
-import com.tsf.extend.base.j.I;
+import com.tsf.extend.base.j.h;
+import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.o;
-import com.tsf.extend.E;
-import com.tsf.extend.F;
+import com.tsf.extend.e;
+import com.tsf.extend.f;
 import com.tsf.extend.wallpaper.ag;
 import java.text.DecimalFormat;
 

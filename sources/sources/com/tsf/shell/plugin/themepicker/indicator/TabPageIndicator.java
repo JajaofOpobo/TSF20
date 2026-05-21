@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.F;
+import com.tsf.shell.plugin.themepicker.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TabPageIndicator extends HorizontalScrollView implements c {

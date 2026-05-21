@@ -3,8 +3,8 @@ package com.tsf.shell.manager.i;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.B;
-import com.tsf.shell.f.f.F;
+import com.tsf.b;
+import com.tsf.shell.f.f.f;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

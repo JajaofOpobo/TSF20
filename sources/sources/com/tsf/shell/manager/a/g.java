@@ -4,8 +4,8 @@ import android.content.ComponentName;
 import android.content.SharedPreferences;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.shell.ShellActivity;
-import com.tsf.shell.manager.a.C;
-import com.tsf.shell.utils.H;
+import com.tsf.shell.manager.a.c;
+import com.tsf.shell.utils.h;
 import java.util.ArrayList;
 import java.util.Iterator;
 

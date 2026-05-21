@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
-import com.censivn.C3DEngine.b.g.a.C;
+import com.censivn.C3DEngine.b.g.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b implements com.censivn.C3DEngine.b.g.b.a {

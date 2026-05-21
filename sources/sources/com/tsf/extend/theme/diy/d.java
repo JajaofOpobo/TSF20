@@ -3,7 +3,7 @@ package com.tsf.extend.theme.diy;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.util.Pair;
-import com.tsf.extend.base.d.A;
+import com.tsf.extend.base.d.a;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

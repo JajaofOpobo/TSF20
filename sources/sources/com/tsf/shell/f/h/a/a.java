@@ -3,12 +3,12 @@ package com.tsf.shell.f.h.a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.b.a.D;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.b.a.d;
+import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.B;
-import com.tsf.shell.manager.b.E;
+import com.tsf.b;
+import com.tsf.shell.manager.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {

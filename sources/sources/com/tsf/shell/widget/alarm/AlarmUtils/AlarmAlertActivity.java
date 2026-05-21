@@ -16,9 +16,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import com.tsf.shell.widget.alarm.m;
-import com.tsf.shell.widget.alarm.setting.E;
+import com.tsf.shell.widget.alarm.setting.e;
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 

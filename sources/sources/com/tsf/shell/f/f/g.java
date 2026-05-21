@@ -5,7 +5,7 @@ import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VPage;
-import com.censivn.C3DEngine.b.c.E;
+import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.f.f.j;
 import com.tsf.shell.f.i.A;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends com.censivn.C3DEngine.b.f.j implements e.a, a.InterfaceC0113a {
+public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0113a {
     public static com.tsf.shell.f.a.a.a f;
     public static com.censivn.C3DEngine.b.f.i i;
     private static com.censivn.C3DEngine.b.f.k r;
@@ -299,7 +299,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, a.InterfaceC0
         addChild(this.c);
     }
 
-    @Override // com.tsf.shell.f.i.a.InterfaceC0113a
+    @Override // com.tsf.shell.f.i.A.InterfaceC0113a
     public ArrayList<com.censivn.C3DEngine.b.f.i> b() {
         return this.c.children();
     }

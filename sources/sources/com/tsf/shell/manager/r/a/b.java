@@ -1,8 +1,9 @@
 package com.tsf.shell.manager.r.a;
 
 import android.view.View;
-import com.tsf.shell.manager.a.F;
-import com.tsf.shell.manager.r.c.G;
+import com.tsf.shell.manager.a.f;
+import com.tsf.shell.manager.r.a.a;
+import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;
 import java.util.Iterator;
 

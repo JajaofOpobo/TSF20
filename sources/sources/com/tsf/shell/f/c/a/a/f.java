@@ -2,7 +2,7 @@ package com.tsf.shell.f.c.a.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.tsf.shell.f.c.a.a.A;
+import com.tsf.shell.f.c.a.a.a;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

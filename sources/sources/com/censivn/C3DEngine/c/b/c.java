@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.c.b;
 
 import com.censivn.C3DEngine.api.effects.core.Vector3;
-import com.censivn.C3DEngine.c.a.D;
-import com.censivn.C3DEngine.c.a.E;
+import com.censivn.C3DEngine.c.a.d;
+import com.censivn.C3DEngine.c.a.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends d implements com.censivn.C3DEngine.c.b {

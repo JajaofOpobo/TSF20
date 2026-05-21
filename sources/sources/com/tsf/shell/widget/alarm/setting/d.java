@@ -1,6 +1,6 @@
 package com.tsf.shell.widget.alarm.setting;
 
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import java.io.IOException;
 import java.util.ArrayList;
 

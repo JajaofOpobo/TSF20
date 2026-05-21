@@ -13,7 +13,7 @@ import android.os.Parcel;
 import android.provider.Settings;
 import android.text.format.DateFormat;
 import com.tsf.shell.widget.alarm.AlarmUtils.Alarm;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import java.util.Calendar;
 import java.util.Date;
 

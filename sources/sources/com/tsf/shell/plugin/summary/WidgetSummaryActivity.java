@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.plugin.summary.C;
+import com.tsf.shell.plugin.summary.c;
 import java.util.Locale;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.Uv;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
-import com.tsf.shell.widget.alarm.I;
+import com.tsf.shell.widget.alarm.i;
 import java.util.ArrayList;
 import java.util.List;
 

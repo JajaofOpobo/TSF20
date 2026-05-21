@@ -1,10 +1,10 @@
 package com.censivn.C3DEngine.api.tween;
 
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.I;
+import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.g.A;
-import com.censivn.C3DEngine.b.g.b.B;
-import com.censivn.C3DEngine.b.g.D;
+import com.censivn.C3DEngine.b.g.b.b;
+import com.censivn.C3DEngine.b.g.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VTweenParam {

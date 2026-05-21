@@ -7,8 +7,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.UvBufferManager;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.B;
-import com.tsf.shell.manager.p.E;
+import com.tsf.b;
+import com.tsf.shell.manager.p.e;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

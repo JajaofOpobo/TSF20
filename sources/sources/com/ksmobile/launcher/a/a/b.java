@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import com.cm.a.C;
 import com.cm.kinfoc.a.D;
 import com.cm.kinfoc.n;
-import com.ksmobile.launcher.cmbase.utils.E;
+import com.ksmobile.launcher.cmbase.utils.e;
 import com.tsf.shell.ShellApplication;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

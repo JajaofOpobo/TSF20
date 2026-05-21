@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.api.shell;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
-import com.censivn.C3DEngine.b.f.I;
-import com.tsf.shell.f.f.G;
+import com.censivn.C3DEngine.b.f.i;
+import com.tsf.shell.f.f.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VPage {

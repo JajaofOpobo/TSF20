@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
-import com.tsf.B;
+import com.tsf.b;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

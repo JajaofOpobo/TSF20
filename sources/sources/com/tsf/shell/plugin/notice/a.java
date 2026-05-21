@@ -11,7 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-import com.tsf.shell.plugin.notice.F;
+import com.tsf.shell.plugin.notice.f;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 

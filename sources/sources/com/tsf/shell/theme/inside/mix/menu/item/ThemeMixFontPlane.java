@@ -2,8 +2,8 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.b.c.A;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.c.a;
+import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.fontspicker.FontsPickerActivity;
 import com.tsf.shell.utils.x;

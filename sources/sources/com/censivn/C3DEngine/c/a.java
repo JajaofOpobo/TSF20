@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.c;
 
-import com.censivn.C3DEngine.b.f.I;
-import com.censivn.C3DEngine.c.a.C;
+import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.c.a.c;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

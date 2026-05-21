@@ -5,10 +5,10 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.e.D;
+import com.tsf.shell.e.d;
 import com.tsf.shell.f.e.t;
-import com.tsf.shell.f.f.G;
-import com.tsf.shell.f.i.a.C;
+import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.i.a.c;
 import com.tsf.shell.f.i.B;
 import com.tsf.shell.manager.bind.ShellModel;
 

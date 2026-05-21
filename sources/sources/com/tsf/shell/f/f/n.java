@@ -5,9 +5,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.B;
-import com.censivn.C3DEngine.b.c.E;
-import com.tsf.B;
+import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.e;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.o;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -21,7 +20,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class n implements b.a, e.a {
+public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public static int a;
     public static int b;
     public static float c;
@@ -1058,7 +1057,7 @@ public class n implements b.a, e.a {
         });
     }
 
-    public class c implements b.a {
+    public class c implements com.censivn.C3DEngine.b.c.b.a {
         private com.censivn.C3DEngine.b.f.j A;
         private com.censivn.C3DEngine.b.f.j B;
         private double C;

@@ -15,8 +15,8 @@ import com.censivn.C3DEngine.api.tween.VTween;
 import com.censivn.C3DEngine.api.tween.VTweenParam;
 import com.tsf.shell.widget.alarm.AlarmWidget;
 import com.tsf.shell.widget.alarm.A;
-import com.tsf.shell.widget.alarm.b.E;
-import com.tsf.shell.widget.alarm.service.C;
+import com.tsf.shell.widget.alarm.b.e;
+import com.tsf.shell.widget.alarm.service.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.InterfaceC0180c {

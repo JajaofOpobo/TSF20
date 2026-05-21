@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.tsf.shell.f.f.a.H;
+import com.tsf.shell.f.f.a.h;
 import java.util.ArrayList;
 import java.util.Iterator;
 

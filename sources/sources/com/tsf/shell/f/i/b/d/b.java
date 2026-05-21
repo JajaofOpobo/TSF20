@@ -15,11 +15,10 @@ import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.g.A;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.H;
 import com.tsf.shell.f.e.m;
 import com.tsf.shell.f.e.n;
 import com.tsf.shell.f.i.A;
-import com.tsf.shell.f.i.b.d.G;
+import com.tsf.shell.f.i.b.d.g;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
 import com.tsf.shell.utils.w;
@@ -29,7 +28,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, h.a, m, a.InterfaceC0113a {
+public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
     private static ArrayList<Integer> C;
     private static ArrayList<Integer> D;
     private static ArrayList<Integer> E;

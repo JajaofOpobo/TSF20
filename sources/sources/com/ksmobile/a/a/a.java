@@ -1,6 +1,6 @@
 package com.ksmobile.a.a;
 
-import com.ksmobile.launcher.a.a.B;
+import com.ksmobile.launcher.a.a.b;
 import com.tsf.extend.base.D;
 import com.tsf.extend.base.j.q;
 

@@ -1,8 +1,8 @@
 package com.tsf.shell.preference.a;
 
 import com.tsf.shell.preference.a.a.a.l;
-import com.tsf.shell.preference.a.a.G;
-import com.tsf.shell.preference.a.a.H;
+import com.tsf.shell.preference.a.a.g;
+import com.tsf.shell.preference.a.a.h;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d {

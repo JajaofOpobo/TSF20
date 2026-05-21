@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a.c;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;

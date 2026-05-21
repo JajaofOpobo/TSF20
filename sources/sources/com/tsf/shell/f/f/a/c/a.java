@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a.c;
 
 import android.view.MotionEvent;
-import com.tsf.shell.f.f.a.c.C;
+import com.tsf.shell.f.f.a.c.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends c.a {

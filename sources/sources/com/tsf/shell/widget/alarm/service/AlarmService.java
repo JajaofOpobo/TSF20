@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
-import com.tsf.shell.widget.alarm.I;
-import com.tsf.shell.widget.alarm.service.B;
-import com.tsf.shell.widget.alarm.setting.E;
+import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.service.b;
+import com.tsf.shell.widget.alarm.setting.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmService extends Service {

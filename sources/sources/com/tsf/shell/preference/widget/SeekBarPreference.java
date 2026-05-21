@@ -11,7 +11,7 @@ import android.view.ViewParent;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import com.tsf.B;
+import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {

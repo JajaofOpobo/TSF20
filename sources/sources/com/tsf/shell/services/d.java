@@ -9,7 +9,7 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.os.RemoteException;
 import com.c.a.a.a.A;
-import com.tsf.shell.utils.I;
+import com.tsf.shell.utils.i;
 import java.util.ArrayList;
 import java.util.List;
 

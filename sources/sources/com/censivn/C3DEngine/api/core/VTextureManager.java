@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.D;
+import com.censivn.C3DEngine.b.g.d;
 import java.util.ArrayList;
 import java.util.Iterator;
 

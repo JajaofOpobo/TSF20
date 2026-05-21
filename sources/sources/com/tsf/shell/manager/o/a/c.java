@@ -9,9 +9,9 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.b.E;
+import com.tsf.shell.manager.b.e;
 import java.util.ArrayList;
 import java.util.Iterator;
 

@@ -5,7 +5,7 @@ import android.graphics.Typeface;
 import android.text.TextUtils;
 import android.widget.TextView;
 import com.tsf.extend.base.j.ab;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends TextView {

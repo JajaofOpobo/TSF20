@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.b;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColorTexture;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.f.f.j;
 import java.nio.Buffer;
 

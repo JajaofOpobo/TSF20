@@ -10,7 +10,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.widget.RemoteViews;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.F;
+import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {

@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.B;
+import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.parser.IconPreviewLoader;
 import java.lang.ref.SoftReference;
