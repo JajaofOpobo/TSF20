@@ -4,7 +4,7 @@ import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.f {
+public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     public d() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);

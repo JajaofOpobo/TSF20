@@ -21,14 +21,14 @@ public class A {
     public static class b {
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$b$a, reason: collision with other inner class name */
-        public static class C0032a implements com.censivn.C3DEngine.b.g.b {
+        public static class C0032a implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return -((float) (Math.sqrt(1.0f - (f * f)) - 1.0d));
             }
         }
 
-        public static class c implements com.censivn.C3DEngine.b.g.b {
+        public static class c implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 float f2 = f - 1.0f;
@@ -37,7 +37,7 @@ public class A {
         }
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$b$b, reason: collision with other inner class name */
-        public static class C0033b implements com.censivn.C3DEngine.b.g.b {
+        public static class C0033b implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 double dSqrt;
@@ -55,7 +55,7 @@ public class A {
 
     public static class d {
 
-        public static class c implements com.censivn.C3DEngine.b.g.b {
+        public static class c implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return (float) (1.0d - Math.pow(2.0d, (-10.0f) * f));
@@ -63,14 +63,14 @@ public class A {
         }
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$d$a, reason: collision with other inner class name */
-        public static class C0035a implements com.censivn.C3DEngine.b.g.b {
+        public static class C0035a implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return (float) (Math.pow(2.0d, 10.0f * (f - 1.0f)) - 0.001d);
             }
         }
 
-        public static class b implements com.censivn.C3DEngine.b.g.b {
+        public static class b implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return (float) (2.0f * f < 1.0f ? Math.pow(2.0d, (r0 - 1.0f) * 10.0f) * 0.5d : (2.0d - Math.pow(2.0d, (r0 - 1.0f) * (-10.0f))) * 0.5d);
@@ -83,7 +83,7 @@ public class A {
         private static float a = 1.70158f;
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$a$a, reason: collision with other inner class name */
-        public static class C0031a implements com.censivn.C3DEngine.b.g.b {
+        public static class C0031a implements com.censivn.C3DEngine.b.g.B {
             private float a = C0030a.a;
 
             @Override // com.censivn.C3DEngine.b.g.b
@@ -93,7 +93,7 @@ public class A {
         }
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$a$c */
-        public static class c implements com.censivn.C3DEngine.b.g.b {
+        public static class c implements com.censivn.C3DEngine.b.g.B {
             private float a = C0030a.a;
 
             @Override // com.censivn.C3DEngine.b.g.b
@@ -104,7 +104,7 @@ public class A {
         }
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$a$b */
-        public static class b implements com.censivn.C3DEngine.b.g.b {
+        public static class b implements com.censivn.C3DEngine.b.g.B {
             private float a = C0030a.a;
             private float b = C0030a.a * 1.525f;
 
@@ -126,7 +126,7 @@ public class A {
     public static class c {
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$c$a, reason: collision with other inner class name */
-        public static class C0034a implements com.censivn.C3DEngine.b.g.b {
+        public static class C0034a implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 float fAsin;
@@ -152,7 +152,7 @@ public class A {
 
     public static class e {
 
-        public static class c implements com.censivn.C3DEngine.b.g.b {
+        public static class c implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return f;
@@ -160,21 +160,21 @@ public class A {
         }
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.a$e$a, reason: collision with other inner class name */
-        public static class C0036a implements com.censivn.C3DEngine.b.g.b {
+        public static class C0036a implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return f;
             }
         }
 
-        public static class d implements com.censivn.C3DEngine.b.g.b {
+        public static class d implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return f;
             }
         }
 
-        public static class b implements com.censivn.C3DEngine.b.g.b {
+        public static class b implements com.censivn.C3DEngine.b.g.B {
             @Override // com.censivn.C3DEngine.b.g.b
             public float a(float f) {
                 return f;
@@ -182,7 +182,7 @@ public class A {
         }
     }
 
-    public static class f implements com.censivn.C3DEngine.b.g.b {
+    public static class f implements com.censivn.C3DEngine.b.g.B {
         @Override // com.censivn.C3DEngine.b.g.b
         public float a(float f) {
             float f2 = 1.0f - f;

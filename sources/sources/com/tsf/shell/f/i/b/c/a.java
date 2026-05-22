@@ -16,7 +16,7 @@ import com.tsf.shell.plugin.widget.FloatingWidgetPicker;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
+public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
     private static com.tsf.shell.f.i.b.c.b f;
     private static double p = 0.017453292519943295d;
     public int a;

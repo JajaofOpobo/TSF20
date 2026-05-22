@@ -24,7 +24,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.manager.r.b.c<a> {
+public class d extends com.tsf.shell.manager.r.b.C<a> {
     public com.tsf.shell.manager.r.b.a b;
     private PackageManager c;
     private a.C0095a d;

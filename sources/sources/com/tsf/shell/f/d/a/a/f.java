@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f extends com.tsf.shell.f.d.a.a {
+public class f extends com.tsf.shell.f.d.a.A {
     private com.tsf.shell.f.d.a.b a;
 
     public f(int i, boolean z) {

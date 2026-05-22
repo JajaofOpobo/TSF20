@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.d.a.a {
+public class d extends com.tsf.shell.f.d.a.A {
     private static com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.b.a.b();
     private com.tsf.shell.f.d.a.b b;
 

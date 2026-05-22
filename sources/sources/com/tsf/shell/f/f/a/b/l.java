@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class l extends com.tsf.shell.f.f.c<k> {
+public class l extends com.tsf.shell.f.f.C<k> {
     public l() {
         ArrayList<com.tsf.shell.f.f.f> arrayList = new ArrayList<>();
         arrayList.add(new c(10, false));

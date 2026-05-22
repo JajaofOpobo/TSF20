@@ -9,7 +9,7 @@ import com.tsf.shell.utils.w;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class b extends com.tsf.shell.f.i.c implements m {
+public abstract class b extends com.tsf.shell.f.i.C implements m {
     private static int[] a = {0, 0};
     private static ArrayList<a> v = new ArrayList<>();
     private static int w = 0;

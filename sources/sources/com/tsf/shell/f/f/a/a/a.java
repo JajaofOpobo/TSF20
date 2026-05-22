@@ -7,7 +7,7 @@ import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A extends com.censivn.C3DEngine.b.f.b {
+public class A extends com.censivn.C3DEngine.b.f.B {
     private float a;
     private float b;
     private float c;

@@ -3,7 +3,7 @@ package com.tsf.shell.f.e.e;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends k implements com.tsf.shell.f.e.f {
+public class e extends k implements com.tsf.shell.f.e.F {
     private boolean a;
 
     public e(float f, float f2, boolean z) {

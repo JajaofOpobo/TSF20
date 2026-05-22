@@ -6,7 +6,7 @@ import com.tsf.shell.f.e.h.a;
 import com.tsf.shell.f.i.c.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.b implements a.InterfaceC0098a {
+public class b extends com.tsf.shell.f.i.B implements a.InterfaceC0098a {
     private boolean a;
     private boolean b;
     private boolean f;

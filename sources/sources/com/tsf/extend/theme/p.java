@@ -1,7 +1,7 @@
 package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class p extends com.tsf.extend.base.b.a<k> {
+public class p extends com.tsf.extend.base.b.A<k> {
     private boolean a;
     private int b = 2;
 
