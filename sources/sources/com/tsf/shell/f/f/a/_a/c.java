@@ -19,7 +19,7 @@ public class c {
     public static int c = 1;
     private com.censivn.C3DEngine.b.b.d d;
     private j e;
-    private com.censivn.C3DEngine.b.com.tsf.shell.f.f.a._a.B.c f;
+    private com.censivn.C3DEngine.b.c f;
     private com.tsf.shell.f.b.a g;
     private com.tsf.shell.f.e.D<com.tsf.shell.f.f.a._a.a.b> h;
     private ArrayList<com.tsf.shell.f.f.a._a.a.c> i;
@@ -125,8 +125,8 @@ public class c {
                 return hittingTarget;
             }
         };
-        this.f = new com.censivn.C3DEngine.b.com.tsf.shell.f.f.a._a.B.c() { // from class: com.tsf.shell.f.f.a._a.c.4
-            @Override // com.censivn.C3DEngine.b.com.tsf.shell.f.f.a._a.B.c
+        this.f = new com.censivn.C3DEngine.b.c() { // from class: com.tsf.shell.f.f.a._a.c.4
+            @Override // com.censivn.C3DEngine.b.c
             public void d() {
                 super.d();
                 if (c.this.d != null) {
@@ -140,14 +140,14 @@ public class c {
         this.d = new com.censivn.C3DEngine.b.b.d(this.f);
         this.d.a(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.E - (com.censivn.C3DEngine.b.b.a.B - this.d.position().y));
         this.g = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.f.a._a.c.5
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.com.tsf.shell.f.f.a._a.B.c.b.a
+            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
             public void a(int i2, KeyEvent keyEvent) {
                 if (i2 == 4 && !c.this.o) {
                     c.this.g();
                 }
             }
 
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.com.tsf.shell.f.f.a._a.B.c.b.a
+            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
             public void b(int i2, KeyEvent keyEvent) {
             }
 
@@ -179,7 +179,7 @@ public class c {
                 }
                 int x = (int) (motionEvent.getX() - motionEvent2.getX());
                 int y = (int) (motionEvent.getY() - motionEvent2.getY());
-                if ((x * x) + (y * y) > com.censivn.C3DEngine.a.com.tsf.shell.f.f.a._a.B.c) {
+                if ((x * x) + (y * y) > com.censivn.C3DEngine.a.b.c) {
                     this.b = true;
                 }
             }
