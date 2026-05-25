@@ -25,7 +25,7 @@ public class A {
     private static PackageManager a;
     private static float[] b = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
 
-    public static Bitmap a(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.a aVar, com.tsf.shell.manager.a.f fVar) {
+    public static Bitmap a(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.a.f fVar) {
         boolean z;
         Bitmap iconFilterBitmap;
         boolean z2;
@@ -121,7 +121,7 @@ public class A {
             aVar.b(canvas, bitmapA2, true);
         }
         if (fVar.h() != 0) {
-            com.tsf.shell.manager.o.a.a aVar2 = new com.tsf.shell.manager.o.a.a();
+            com.tsf.shell.manager.o._a.a aVar2 = new com.tsf.shell.manager.o._a.a();
             aVar2.h(36);
             aVar2.i(-1);
             aVar2.d(true);
@@ -136,11 +136,11 @@ public class A {
             canvas.drawBitmap(bitmap2, (aVar.V - bitmap2.getWidth()) - 1, 1.0f, (Paint) null);
             bitmap2.recycle();
         }
-        com.tsf.shell.f.i.b.e.b.a(bitmapA);
+        com.tsf.shell.f.i._b.e.b.a(bitmapA);
         return bitmapA;
     }
 
-    public static Bitmap a(ResolveInfo resolveInfo, com.tsf.shell.manager.o.a aVar) {
+    public static Bitmap a(ResolveInfo resolveInfo, com.tsf.shell.manager.o.A aVar) {
         Bitmap bitmapA;
         if (resolveInfo == null) {
             bitmapA = a();

@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.g.a.b;
+import com.tsf.shell.f.e._g.a.b;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
 import com.tsf.shell.utils.k;
@@ -74,18 +74,18 @@ public class ThemeFeaturedMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public j getContentContainer() {
         return this.mGridView;
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         super.onShow();
         this.mGridView.d();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onHide() {
         super.onHide();
         this.mNotifItem.b();
@@ -95,12 +95,12 @@ public class ThemeFeaturedMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.mGridView.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         super.onHide();
         Iterator<ThemeOnlineItems> it = this.mThemes.iterator();

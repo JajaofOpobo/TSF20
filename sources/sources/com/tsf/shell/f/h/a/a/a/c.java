@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.h.a;
+import com.tsf.shell.f.e._h.a;
 import com.tsf.shell.manager.c.a.a.a;
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class c extends j implements a.InterfaceC0098a {
     private float d;
     private com.tsf.shell.f.h.a.a.b f;
     private m g;
-    private com.tsf.shell.f.e.d<d> h;
+    private com.tsf.shell.f.e.D<d> h;
     private a j;
     private e l;
     private TextureElement k = new TextureElement(0, false);
@@ -47,15 +47,15 @@ public class c extends j implements a.InterfaceC0098a {
         addChild(this.g);
         this.j = new a(this);
         addChild(this.j);
-        this.h = new com.tsf.shell.f.e.d<d>() { // from class: com.tsf.shell.f.h.a.a.a.c.2
-            @Override // com.tsf.shell.f.e.d
+        this.h = new com.tsf.shell.f.e.D<d>() { // from class: com.tsf.shell.f.h.a.a.a.c.2
+            @Override // com.tsf.shell.f.e.D
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public d b() {
                 return new d();
             }
         };
         this.l = new e(this) { // from class: com.tsf.shell.f.h.a.a.a.c.3
-            @Override // com.tsf.shell.f.e.d.a.d
+            @Override // com.tsf.shell.f.e._d.a.d
             public void i() {
                 if (c.this.f.a().c()) {
                     c.this.f.g();
@@ -87,7 +87,7 @@ public class c extends j implements a.InterfaceC0098a {
         }
     }
 
-    @Override // com.tsf.shell.f.e.h.a.InterfaceC0098a
+    @Override // com.tsf.shell.f.e._h.a.InterfaceC0098a
     public void a(Bitmap bitmap) {
         if (this.f != null) {
             com.censivn.C3DEngine.a.g().a(this.k, bitmap);

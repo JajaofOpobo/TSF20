@@ -8,23 +8,23 @@ import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.f.e.I;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i._b.e.h;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends com.censivn.C3DEngine.b.e.f {
     private i a;
-    private com.censivn.C3DEngine.b.f.b.a b;
+    private com.censivn.C3DEngine.b.f._b.a b;
     private k f;
     private k h;
     private float j;
-    private ArrayList<com.tsf.shell.f.i.b.e.b> l;
+    private ArrayList<com.tsf.shell.f.i._b.e.b> l;
     private TextureElement d = new TextureElement(0, false);
     private TextureElement e = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);
     private float i = 0.4f;
-    private com.tsf.shell.manager.o.a k = new com.tsf.shell.manager.o.a(1.15f, 1.15f);
+    private com.tsf.shell.manager.o.A k = new com.tsf.shell.manager.o.A(1.15f, 1.15f);
 
     public A() {
         a(1);
@@ -32,7 +32,7 @@ public class A extends com.censivn.C3DEngine.b.e.f {
         com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
         layoutParams.a = com.censivn.C3DEngine.b.b.a.a(30.0f);
         layoutParams.b = com.censivn.C3DEngine.b.b.a.a(30.0f);
-        this.b = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, com.censivn.C3DEngine.b.b.a.c, new com.censivn.C3DEngine.b.f.b.b(68, 68, 68, 68, 136, 136));
+        this.b = new com.censivn.C3DEngine.b.f._b.a(n.a, n.b, com.censivn.C3DEngine.b.b.a.c, new com.censivn.C3DEngine.b.f._b.b(68, 68, 68, 68, 136, 136));
         this.b.textures().addElement(this.d);
         this.b.alpha(80.0f);
         addChild(this.b);

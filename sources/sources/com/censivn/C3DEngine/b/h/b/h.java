@@ -301,7 +301,7 @@ public class h extends j {
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
                 h.a = 0.3f;
                 h.this.x = this.a + (motionEvent2.getX() - motionEvent.getX());
-                h.this.x = com.tsf.shell.f.e.c.a(h.this.x, h.this.w, h.this.v);
+                h.this.x = com.tsf.shell.f.e._c.a(h.this.x, h.this.w, h.this.v);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a

@@ -34,7 +34,7 @@ public class b {
         return com.tsf.shell.manager.a.v.c.e().a();
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         com.tsf.shell.manager.a.v.c.e().a(bVar);
     }
 }

@@ -26,7 +26,7 @@ public class A extends j {
         Collections.sort(children(), a);
     }
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.f.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.f.A$a, reason: collision with other inner class name */
     public class C0029a implements Comparator<i> {
         public C0029a() {
         }

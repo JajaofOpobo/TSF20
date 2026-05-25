@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.b.g.a;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends c {
     private com.censivn.C3DEngine.b.g.d c;
-    private com.censivn.C3DEngine.b.f.a.b d;
+    private com.censivn.C3DEngine.b.f._a.b d;
     private int e;
     private long f;
     private long g;
@@ -19,7 +19,7 @@ public class a extends c {
     private float q;
     private float r;
 
-    public a(com.censivn.C3DEngine.b.f.a.b bVar, int i, com.censivn.C3DEngine.b.g.d dVar) {
+    public a(com.censivn.C3DEngine.b.f._a.b bVar, int i, com.censivn.C3DEngine.b.g.d dVar) {
         dVar.a(bVar);
         bVar.setTweenChild(this);
         this.d = bVar;

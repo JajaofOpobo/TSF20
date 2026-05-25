@@ -17,7 +17,7 @@ import java.util.Iterator;
 public class B extends c implements a.InterfaceC0113a {
     private float A;
     private Runnable B;
-    private com.tsf.shell.f.i.b.d.b H;
+    private com.tsf.shell.f.i._b.d.b H;
     private Runnable J;
     float c;
     float d;
@@ -26,8 +26,8 @@ public class B extends c implements a.InterfaceC0113a {
     private ArrayList<d> m;
     private f r;
     private k s;
-    private com.tsf.shell.f.i.b u;
-    private com.tsf.shell.f.i.b v;
+    private com.tsf.shell.f.i.B u;
+    private com.tsf.shell.f.i.B v;
     private TextureElement w;
     private float z;
     public float a = 0.15f;
@@ -48,9 +48,9 @@ public class B extends c implements a.InterfaceC0113a {
     private boolean I = false;
     private TextureElement t = new TextureElement(0, false);
     private b h = this;
-    private com.tsf.shell.f.i.a p = new com.tsf.shell.f.i.a(this, this) { // from class: com.tsf.shell.f.c.a.b.1
-        @Override // com.tsf.shell.f.i.a
-        public void a(com.tsf.shell.f.i.b bVar) {
+    private com.tsf.shell.f.i.A p = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.c.a.b.1
+        @Override // com.tsf.shell.f.i.A
+        public void a(com.tsf.shell.f.i.B bVar) {
             bVar.f(b.this.h);
         }
     };
@@ -68,12 +68,12 @@ public class B extends c implements a.InterfaceC0113a {
         A();
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
     public boolean a() {
         return this.r.e() && this.r.r();
     }
 
-    @Override // com.tsf.shell.f.i.a.InterfaceC0113a
+    @Override // com.tsf.shell.f.i._a.InterfaceC0113a
     public ArrayList<i> b() {
         return children();
     }
@@ -132,17 +132,17 @@ public class B extends c implements a.InterfaceC0113a {
                     public void run() {
                         int iA = b.this.r.n.a(b.this.l, b.this.children(), b.this.children().size(), b.this.c, b.this.e, b.this.d, b.this.q, b.this.D.x, b.this.D.y);
                         if (iA == -3 || iA == -4) {
-                            b.this.a((com.tsf.shell.f.i.b) null);
+                            b.this.a((com.tsf.shell.f.i.B) null);
                             b.this.c();
                             b.this.x = true;
                         } else if (iA == -1 || iA == -2) {
                             b.this.r.n();
-                            b.this.a((com.tsf.shell.f.i.b) null);
+                            b.this.a((com.tsf.shell.f.i.B) null);
                         } else {
                             if (!b.this.r.r()) {
                                 b.this.r.m();
                             }
-                            b.this.a((com.tsf.shell.f.i.b) b.this.children().get(iA));
+                            b.this.a((com.tsf.shell.f.i.B) b.this.children().get(iA));
                         }
                         b.this.n = false;
                         b.this.setAnimationObjectState(true);
@@ -155,10 +155,10 @@ public class B extends c implements a.InterfaceC0113a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         if (bVar != null) {
             this.u = bVar;
-            if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+            if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
             }
         } else {
             this.u = null;
@@ -167,20 +167,20 @@ public class B extends c implements a.InterfaceC0113a {
         this.w = null;
     }
 
-    private void b(final com.tsf.shell.f.i.b bVar) {
+    private void b(final com.tsf.shell.f.i.B bVar) {
         if (bVar != null) {
-            if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+            if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
                 com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        ((com.tsf.shell.f.i.b.e.b) bVar).l();
+                        ((com.tsf.shell.f.i._b.e.b) bVar).l();
                     }
                 }, 200L);
-            } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+            } else if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
                 com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.b.4
                     @Override // java.lang.Runnable
                     public void run() {
-                        ((com.tsf.shell.f.i.b.d.b) bVar).aR();
+                        ((com.tsf.shell.f.i._b.d.b) bVar).aR();
                     }
                 });
             }
@@ -197,14 +197,14 @@ public class B extends c implements a.InterfaceC0113a {
         if (!this.x && this.b) {
             this.b = false;
             if (this.p.e()) {
-                if (this.u instanceof com.tsf.shell.f.i.c) {
-                    ((com.tsf.shell.f.i.c) this.u).ap();
+                if (this.u instanceof com.tsf.shell.f.i.C) {
+                    ((com.tsf.shell.f.i.C) this.u).ap();
                 }
             } else {
                 b(this.u);
             }
             this.u = null;
-            a((com.tsf.shell.f.i.b) null);
+            a((com.tsf.shell.f.i.B) null);
             if (this.r.r()) {
                 g();
             } else {
@@ -219,15 +219,15 @@ public class B extends c implements a.InterfaceC0113a {
         h();
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f.b
-    public void a(final com.tsf.shell.f.i.c cVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e._f.b
+    public void a(final com.tsf.shell.f.i.C cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.a.b.5
             @Override // java.lang.Runnable
             public void run() {
                 b.this.removeChild(cVar);
             }
         };
-        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
+        if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
             com.tsf.shell.manager.r.c.g.a(cVar, null, runnable);
         } else {
             com.tsf.shell.manager.r.c.g.a(cVar, runnable);
@@ -506,15 +506,15 @@ public class B extends c implements a.InterfaceC0113a {
             a(this.l.remove(0));
             g();
             l();
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                ((com.tsf.shell.f.i.b) iVar).c = false;
-                ((com.tsf.shell.f.i.b) iVar).B();
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                ((com.tsf.shell.f.i.B) iVar).c = false;
+                ((com.tsf.shell.f.i.B) iVar).B();
             }
-            if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
-                ((com.tsf.shell.f.i.b.e.b) iVar).aM();
-            } else if (iVar instanceof com.tsf.shell.f.i.b.d.b) {
-                ((com.tsf.shell.f.i.b.d.b) iVar).aM();
-                com.tsf.shell.manager.a.k.c((com.tsf.shell.f.i.b.d.b) iVar);
+            if (iVar instanceof com.tsf.shell.f.i._b.e.b) {
+                ((com.tsf.shell.f.i._b.e.b) iVar).aM();
+            } else if (iVar instanceof com.tsf.shell.f.i._b.d.b) {
+                ((com.tsf.shell.f.i._b.d.b) iVar).aM();
+                com.tsf.shell.manager.a.k.c((com.tsf.shell.f.i._b.d.b) iVar);
             }
         }
         return zRemoveChild;
@@ -545,27 +545,27 @@ public class B extends c implements a.InterfaceC0113a {
         return iA;
     }
 
-    private void c(com.tsf.shell.f.i.b bVar) {
+    private void c(com.tsf.shell.f.i.B bVar) {
     }
 
-    private void d(com.tsf.shell.f.i.b bVar) {
+    private void d(com.tsf.shell.f.i.B bVar) {
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public boolean a(com.tsf.shell.f.e.f fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
         int iA;
-        if ((fVar instanceof com.tsf.shell.f.i.b.e.b) || (fVar instanceof com.tsf.shell.f.i.b.d.b)) {
-            if (!this.G && children().size() != 0 && (iA = a(f, f2, this.C)) != -1 && iA != -2 && (getChildAt(iA) instanceof com.tsf.shell.f.i.b.d.b)) {
+        if ((fVar instanceof com.tsf.shell.f.i._b.e.b) || (fVar instanceof com.tsf.shell.f.i._b.d.b)) {
+            if (!this.G && children().size() != 0 && (iA = a(f, f2, this.C)) != -1 && iA != -2 && (getChildAt(iA) instanceof com.tsf.shell.f.i._b.d.b)) {
             }
             return false;
         }
         return true;
     }
 
-    private void i(com.tsf.shell.f.e.f fVar) {
+    private void i(com.tsf.shell.f.e.F fVar) {
         this.H.d(fVar);
         this.H = null;
-        c((com.tsf.shell.f.i.b) fVar);
+        c((com.tsf.shell.f.i.B) fVar);
     }
 
     private boolean a(int i, Number3d number3d) {
@@ -573,17 +573,17 @@ public class B extends c implements a.InterfaceC0113a {
             return false;
         }
         i childAt = getChildAt(i);
-        if (childAt instanceof com.tsf.shell.f.i.b.d.b) {
+        if (childAt instanceof com.tsf.shell.f.i._b.d.b) {
             return this.r.n.a(number3d, childAt, this.F < i);
         }
         return false;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public void a(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public void a(com.tsf.shell.f.e.F fVar) {
         this.G = true;
-        com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) fVar;
+        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
         c(bVar);
         this.o.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
         this.F = a((i) fVar, this.C);
@@ -596,8 +596,8 @@ public class B extends c implements a.InterfaceC0113a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public void c(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public void c(com.tsf.shell.f.e.F fVar) {
         int size;
         int iA = a((i) fVar, this.C);
         if (iA == -1) {
@@ -606,10 +606,10 @@ public class B extends c implements a.InterfaceC0113a {
             size = iA == -2 ? children().size() - 1 : iA;
         }
         if (a(iA, this.C)) {
-            com.tsf.shell.f.i.b.d.b bVar = (com.tsf.shell.f.i.b.d.b) getChildAt(size);
+            com.tsf.shell.f.i._b.d.b bVar = (com.tsf.shell.f.i._b.d.b) getChildAt(size);
             if (this.H == null) {
                 this.H = bVar;
-                d((com.tsf.shell.f.i.b) fVar);
+                d((com.tsf.shell.f.i.B) fVar);
                 this.H.a(fVar);
             }
             this.H.f(fVar);
@@ -626,26 +626,26 @@ public class B extends c implements a.InterfaceC0113a {
         }
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public void d(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public void d(com.tsf.shell.f.e.F fVar) {
         this.G = false;
         if (this.H != null) {
             i(fVar);
         }
-        d((com.tsf.shell.f.i.b) fVar);
+        d((com.tsf.shell.f.i.B) fVar);
         removeChild(this.o);
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public boolean b(com.tsf.shell.f.e.f fVar) {
-        return fVar instanceof com.tsf.shell.f.i.c;
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public boolean b(com.tsf.shell.f.e.F fVar) {
+        return fVar instanceof com.tsf.shell.f.i.C;
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f
-    public void e(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    public void e(com.tsf.shell.f.e.F fVar) {
         boolean zB;
         this.G = false;
-        com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) fVar;
+        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
         if (this.H != null) {
             zB = this.H.b(fVar);
             if (zB) {
@@ -674,10 +674,10 @@ public class B extends c implements a.InterfaceC0113a {
             }
             super.addChildAt(bVar, this.F);
             a(bVar, true);
-            if (bVar instanceof com.tsf.shell.f.i.c) {
-                com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) bVar;
+            if (bVar instanceof com.tsf.shell.f.i.C) {
+                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
                 if (cVar.as()) {
-                    Iterator<com.tsf.shell.f.i.c> it = cVar.av().iterator();
+                    Iterator<com.tsf.shell.f.i.C> it = cVar.av().iterator();
                     while (it.hasNext()) {
                         a(it.next(), true);
                     }
@@ -689,14 +689,14 @@ public class B extends c implements a.InterfaceC0113a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, boolean z) {
+    public void a(com.tsf.shell.f.i.B bVar, boolean z) {
         bVar.a(this.p);
         bVar.c = true;
-        if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-            com.censivn.C3DEngine.b.g.c.a(((com.tsf.shell.f.i.b.e.b) bVar).k);
-            ((com.tsf.shell.f.i.b.e.b) bVar).aL();
-        } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-            ((com.tsf.shell.f.i.b.d.b) bVar).aL();
+        if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
+            com.censivn.C3DEngine.b.g.c.a(((com.tsf.shell.f.i._b.e.b) bVar).k);
+            ((com.tsf.shell.f.i._b.e.b) bVar).aL();
+        } else if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
+            ((com.tsf.shell.f.i._b.d.b) bVar).aL();
         }
         if (z) {
             bVar.K().onUpdateContainer(-4);
@@ -710,7 +710,7 @@ public class B extends c implements a.InterfaceC0113a {
                 b.this.I = false;
                 final String str = "";
                 for (i iVar : b.this.children()) {
-                    str = iVar instanceof com.tsf.shell.f.i.b ? str + ((com.tsf.shell.f.i.b) iVar).K().id + "," : str;
+                    str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
                     @Override // java.lang.Runnable

@@ -89,16 +89,16 @@ public class b extends g {
 
     /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.b$b, reason: collision with other inner class name */
     class C0028b extends com.censivn.C3DEngine.b.f.j {
-        private com.censivn.C3DEngine.b.f.a.a b;
+        private com.censivn.C3DEngine.b.f._a.a b;
         private m c = new m();
-        private com.censivn.C3DEngine.b.f.a.b d;
-        private com.censivn.C3DEngine.b.f.a.b e;
+        private com.censivn.C3DEngine.b.f._a.b d;
+        private com.censivn.C3DEngine.b.f._a.b e;
 
         public C0028b() {
             this.c.d(50);
             this.c.position().x = b.a + com.censivn.C3DEngine.b.b.a.a(20.0f);
             this.c.b(1);
-            this.b = new com.censivn.C3DEngine.b.f.a.a(2, b.a, b.a * 2, b.a);
+            this.b = new com.censivn.C3DEngine.b.f._a.a(2, b.a, b.a * 2, b.a);
             this.b.position().x = b.a / 2.0f;
             this.d = this.b.a(0);
             this.d.b(0, 0, 1, 1);

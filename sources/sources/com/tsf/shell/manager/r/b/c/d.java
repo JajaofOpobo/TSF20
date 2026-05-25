@@ -10,7 +10,7 @@ public class d extends com.tsf.shell.manager.r.b.b.a implements b.a {
     private c b;
     private com.tsf.shell.manager.r.b.b.a e;
 
-    public d(com.tsf.shell.f.e.g.d dVar) {
+    public d(com.tsf.shell.f.e._g.d dVar) {
         super(dVar);
         g();
     }

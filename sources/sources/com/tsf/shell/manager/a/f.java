@@ -41,7 +41,7 @@ public class f {
 
     public void a() {
         try {
-            com.tsf.shell.f.i.b.e.g gVarA = com.tsf.shell.manager.a.w.a().a(this.a.getComponent());
+            com.tsf.shell.f.i._b.e.g gVarA = com.tsf.shell.manager.a.w.a().a(this.a.getComponent());
             if (gVarA.K() != null) {
                 ((LauncherShortcutAppInfo) gVarA.K()).applicationOnClick();
             }
@@ -123,7 +123,7 @@ public class f {
             ItemInfo itemInfo = (ItemInfo) map.get((Integer) it.next());
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this) {
+                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i._b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this) {
                     com.tsf.shell.manager.a.i.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
                 }
             }
@@ -143,7 +143,7 @@ public class f {
             ItemInfo itemInfo = (ItemInfo) map.get((Integer) it.next());
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this && !((LauncherShortcutAppInfo) itemInfo).isFullCustomTexture()) {
+                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i._b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this && !((LauncherShortcutAppInfo) itemInfo).isFullCustomTexture()) {
                     ((LauncherShortcutAppInfo) itemInfo).reloadTexture();
                 }
             }

@@ -3,11 +3,11 @@ package com.tsf.shell.preference.a.a.a;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class k extends h {
     private com.censivn.C3DEngine.b.f.j a;
-    private com.tsf.shell.f.i.c.a.c.a b;
+    private com.tsf.shell.f.i._c.a.c.a b;
 
     public k(String str) {
         super(str, com.censivn.C3DEngine.b.b.a.a(300.0f));
-        this.b = com.tsf.shell.f.i.c.a.c.a.e();
+        this.b = com.tsf.shell.f.i._c.a.c.a.e();
         this.a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.preference.a.a.a.k.1
             @Override // com.censivn.C3DEngine.b.f.j
             public void onDrawChildStart() {

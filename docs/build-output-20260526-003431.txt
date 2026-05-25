@@ -1,0 +1,955 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_f\b.java:50: error: cannot find symbol
+    public void a(c cVar) {
+                  ^
+  symbol:   class c
+  location: class b
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\b\a.java:16: error: cannot find symbol
+public class a extends b {
+                       ^
+  symbol: class b
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:31: error: cannot find symbol
+    private b widget;
+            ^
+  symbol:   class b
+  location: class ItemInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:88: error: cannot find symbol
+    public void setWidget(b bVar) {
+                          ^
+  symbol:   class b
+  location: class ItemInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:92: error: cannot find symbol
+    public b getWidget() {
+           ^
+  symbol:   class b
+  location: class ItemInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:107: error: cannot find symbol
+    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                       ^
+  symbol:   class b
+  location: class ItemInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:42: error: cannot find symbol
+public final class Home extends ActivityGroup implements View.OnLongClickListener, com.tsf.shell.a, com.tsf.shell.manager.bind.c {
+                                                                                                ^
+  symbol:   class a
+  location: package com.tsf.shell
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:50: error: cannot find symbol
+    private com.tsf.shell.f.d n;
+                           ^
+  symbol:   class d
+  location: package com.tsf.shell.f
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:60: error: cannot find symbol
+    private HashMap<Integer, a.InterfaceC0025a> q = new HashMap<>();
+                              ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:451: error: cannot find symbol
+    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:460: error: cannot find symbol
+    public int b(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:469: error: cannot find symbol
+    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a, int i, int i2) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:31: error: interface expected here
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                  ^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:31: error: cannot find symbol
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                                             ^
+  symbol:   class InterfaceC0113a
+  location: package com.tsf.shell.f.i._a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\n.java:34: error: cannot find symbol
+    private h r;
+            ^
+  symbol:   class h
+  location: class n
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\n.java:471: error: cannot find symbol
+    public void a(h hVar) {
+                  ^
+  symbol:   class h
+  location: class n
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\a\b\b.java:9: error: cannot find symbol
+    public a.C0079a a;
+            ^
+  symbol:   class C0079a
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcut3DInfo.java:48: error: cannot find symbol
+    public Bitmap getIcon(boolean z, a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcut3DInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:215: error: cannot find symbol
+    public void a(c cVar) {
+                  ^
+  symbol:   class c
+  location: class C
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:220: error: cannot find symbol
+    public void b(ArrayList<c> arrayList) {
+                            ^
+  symbol:   class c
+  location: class C
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:242: error: cannot find symbol
+    public ArrayList<c> av() {
+                     ^
+  symbol:   class c
+  location: class C
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:246: error: cannot find symbol
+    public ArrayList<c> aw() {
+                     ^
+  symbol:   class c
+  location: class C
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\mix\menu\item\detail\ThemeDataInfoLayout.java:23: error: cannot find symbol
+    private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+            ^
+  symbol:   class d
+  location: class ThemeDataInfoLayout
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_g\d.java:447: error: cannot find symbol
+    class a implements b.a {
+                        ^
+  symbol:   class a
+  location: class d.b
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:76: error: cannot find symbol
+    public Bitmap getBackBitmap(a aVar) {
+                                ^
+  symbol:   class a
+  location: class ThemeIconDescription
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:90: error: cannot find symbol
+    public Bitmap getUponBitmap(a aVar) {
+                                ^
+  symbol:   class a
+  location: class ThemeIconDescription
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:102: error: cannot find symbol
+    public Bitmap getMaskBitmap(a aVar) {
+                                ^
+  symbol:   class a
+  location: class ThemeIconDescription
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:145: error: cannot find symbol
+    public Bitmap getIconFilterBitmap(String str, a aVar) {
+                                                  ^
+  symbol:   class a
+  location: class ThemeIconDescription
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:161: error: cannot find symbol
+    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
+                                                                ^
+  symbol:   class a
+  location: class ThemeIconDescription
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\DefaultIconItem.java:13: error: cannot find symbol
+    private a style;
+            ^
+  symbol:   class a
+  location: class DefaultIconItem
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\DefaultIconItem.java:20: error: cannot find symbol
+    public Bitmap getBitmap(a aVar) {
+                            ^
+  symbol:   class a
+  location: class DefaultIconItem
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:55: error: cannot find symbol
+        public void a(final f fVar, MotionEvent motionEvent) {
+                            ^
+  symbol:   class f
+  location: class C0127a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:76: error: cannot find symbol
+        public boolean a(f fVar) {
+                         ^
+  symbol:   class f
+  location: class C0127a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:10: error: cannot find symbol
+    private ArrayList<f> a = new ArrayList<>();
+                      ^
+  symbol:   class f
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:12: error: cannot find symbol
+    public void a(f fVar) {
+                  ^
+  symbol:   class f
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:25: error: cannot find symbol
+    public void b(f fVar) {
+                  ^
+  symbol:   class f
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:38: error: cannot find symbol
+    public void c(f fVar) {
+                  ^
+  symbol:   class f
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:46: error: cannot find symbol
+    public ArrayList<f> a() {
+                     ^
+  symbol:   class f
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\A.java:13: error: cannot find symbol
+    private com.tsf.shell.f.i._a.InterfaceC0113a a;
+                                ^
+  symbol:   class InterfaceC0113a
+  location: package com.tsf.shell.f.i._a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:36: error: cannot find symbol
+public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.a, d.a {
+                                                            ^
+  symbol:   class InterfaceC0101a
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:57: error: cannot find symbol
+    protected a.C0133a I;
+               ^
+  symbol:   class C0133a
+  location: interface a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:65: error: cannot find symbol
+    private com.tsf.shell.f.f.a._d.a U;
+                                  ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:81: error: cannot find symbol
+    private a.C0133a ao;
+             ^
+  symbol:   class C0133a
+  location: interface a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:247: error: cannot find symbol
+    public com.tsf.shell.f.f.a._d.a an() {
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:13: error: cannot inherit from final b
+public class a extends b {
+                       ^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:20: error: cannot find symbol
+    private d.a h;
+             ^
+  symbol:   class a
+  location: class d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:33: error: cannot find symbol
+    public a(k.a aVar) {
+              ^
+  symbol:   class a
+  location: class k
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:142: error: cannot find symbol
+    public void a(final d.a aVar) {
+                         ^
+  symbol:   class a
+  location: class d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:20: error: reference to k is ambiguous
+    private static k k;
+                   ^
+  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c match
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:26: error: reference to k is ambiguous
+    private k.a j;
+            ^
+  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c match
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:32: error: reference to k is ambiguous
+    public b(k.a aVar) {
+             ^
+  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c match
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\i.java:15: error: cannot find symbol
+    protected a.C0133a f;
+               ^
+  symbol:   class C0133a
+  location: class a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:12: error: cannot find symbol
+    public abstract void a(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:14: error: cannot find symbol
+    public abstract void a(com.tsf.shell.f.f.a.a aVar, float f);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:16: error: cannot find symbol
+    public abstract void b(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:18: error: cannot find symbol
+    public abstract void c(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:20: error: cannot find symbol
+    public abstract void d(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:22: error: cannot find symbol
+    public abstract void e(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:24: error: cannot find symbol
+    public abstract void f(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:26: error: cannot find symbol
+    public abstract void g(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:28: error: cannot find symbol
+    public abstract void h(com.tsf.shell.f.f.a.a aVar);
+                                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:24: error: cannot find symbol
+    private com.tsf.shell.f.e.d<com.tsf.shell.f.f.a._a.a.b> h;
+                             ^
+  symbol:   class d
+  location: package com.tsf.shell.f.e
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:399: error: package b does not exist
+    public com.tsf.shell.f.f.a._a.a.c a(b.c cVar) {
+                                         ^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:408: error: package b does not exist
+    public com.tsf.shell.f.f.a._a.a.c b(b.c cVar) {
+                                         ^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\d.java:14: error: cannot find symbol
+    private com.tsf.shell.f.e.d<com.tsf.shell.f.i._b.e.e> b;
+                             ^
+  symbol:   class d
+  location: package com.tsf.shell.f.e
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\f.java:16: error: cannot find symbol
+    private com.tsf.shell.f.e.d<a> f;
+                             ^
+  symbol:   class d
+  location: package com.tsf.shell.f.e
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\a\b.java:17: error: cannot find symbol
+    public void a(b.c cVar) {
+                   ^
+  symbol:   class c
+  location: class b
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\a\c.java:27: error: cannot find symbol
+    private com.tsf.shell.f.f.a._a.a d = new com.tsf.shell.f.f.a._a.a();
+                                  ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:16: error: cannot find symbol
+    private com.tsf.shell.f.f.a._d.a f = new com.tsf.shell.f.f.a._d.a(this);
+                                  ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:18: error: cannot find symbol
+    private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
+                               ^
+  symbol:   class b
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:24: error: cannot find symbol
+    public com.tsf.shell.f.f.a._d.a b() {
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:32: error: cannot find symbol
+    public com.tsf.shell.f.f.a.b d() {
+                              ^
+  symbol:   class b
+  location: package com.tsf.shell.f.f.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\r\c\d.java:29: error: cannot find symbol
+    private a.C0133a g;
+             ^
+  symbol:   class C0133a
+  location: class d.a
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\r\a\a.java:14: error: a is already defined in this compilation unit
+import com.censivn.C3DEngine.b.c.a;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:20: error: a type with the same simple name is already defined by the single-type-import of A
+import com.tsf.shell.f.i.A;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_h\a.java:6: error: a is already defined in this compilation unit
+import com.censivn.C3DEngine.b.c.a;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\mix\menu\item\ThemeInstalledDetailMenu.java:5: error: a type with the same simple name is already defined by the single-type-import of b
+import com.censivn.C3DEngine.b.c.b;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\A.java:7: error: a type with the same simple name is already defined by the single-type-import of a
+import com.tsf.shell.manager.n.a;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:23: error: a type with the same simple name is already defined by the single-type-import of A
+import com.tsf.shell.f.f.a.A;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\e.java:8: error: e is already defined in this compilation unit
+import com.tsf.shell.manager.p.e;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:10: error: a type with the same simple name is already defined by the single-type-import of k
+import com.tsf.shell.f.f.a._c.k;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\h\e\b.java:10: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:11: error: c is already defined in this compilation unit
+import com.tsf.shell.manager.a.c;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\p\b.java:6: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\c\a.java:12: error: a is already defined in this compilation unit
+import com.tsf.shell.manager.n.a;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\c\a\c.java:11: error: cannot find symbol
+    protected ArrayList<a> b = new ArrayList<>();
+                        ^
+  symbol:   class a
+  location: class c
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\c\a\c.java:59: error: cannot find symbol
+    public ArrayList<a> b() {
+                     ^
+  symbol:   class a
+  location: class c
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\effects\VEffectsStack.java:10: error: cannot find symbol
+    private a vTarget;
+            ^
+  symbol:   class a
+  location: class VEffectsStack
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:59: error: cannot find symbol
+    public TextureElement getTexture(a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:63: error: cannot find symbol
+    public TextureElement getTexture(ResourceControler resourceControler, a aVar) {
+                                                                          ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:68: error: cannot find symbol
+    private Bitmap createTextureBitmap(ResourceControler resourceControler, a aVar) {
+                                                                            ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:72: error: cannot find symbol
+    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, a aVar, boolean z) {
+                                                                        ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:76: error: cannot find symbol
+    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, a aVar, int i, int i2, boolean z) {
+                                                                                                             ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:20: error: cannot find symbol
+        public Bitmap getThemeBitmap(a aVar) {
+                                     ^
+  symbol:   class a
+  location: class ResourceControler
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:8: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.shell.f.i._b.e.b;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\e\b.java:7: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\f\B.java:9: error: cannot find symbol
+    private static com.tsf.shell.f.e.d<Number3d> a;
+                                    ^
+  symbol:   class d
+  location: package com.tsf.shell.f.e
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\a.java:11: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\b.java:13: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\d.java:11: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Jaja/AndroidStudioProjects/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\b\a.java:16: error: cannot find symbol
+  public class a extends b {
+                         ^
+    symbol: class bC:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:31: error: interface expected here
+  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                    ^Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details.C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:399: error: package b does not exist
+      public com.tsf.shell.f.f.a._a.a.c a(b.c cVar) {
+                                           ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:408: error: package b does not exist
+      public com.tsf.shell.f.f.a._a.a.c b(b.c cVar) {
+                                           ^Note: Recompile with -Xlint:unchecked for details.C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_f\b.java:50: error: cannot find symbol
+      public void a(c cVar) {
+                    ^
+    symbol:   class c
+    location: class b
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:31: error: cannot find symbol
+      private b widget;
+              ^
+    symbol:   class b
+    location: class ItemInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:88: error: cannot find symbol
+      public void setWidget(b bVar) {
+                            ^
+    symbol:   class b
+    location: class ItemInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:92: error: cannot find symbol
+      public b getWidget() {
+             ^
+    symbol:   class b
+    location: class ItemInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\ItemInfo.java:107: error: cannot find symbol
+      public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                         ^
+    symbol:   class b
+    location: class ItemInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:42: error: cannot find symbol
+  public final class Home extends ActivityGroup implements View.OnLongClickListener, com.tsf.shell.a, com.tsf.shell.manager.bind.c {
+                                                                                                  ^
+    symbol:   class a
+    location: package com.tsf.shell
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:50: error: cannot find symbol
+      private com.tsf.shell.f.d n;
+                             ^
+    symbol:   class d
+    location: package com.tsf.shell.f
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:60: error: cannot find symbol
+      private HashMap<Integer, a.InterfaceC0025a> q = new HashMap<>();
+                                ^
+    symbol:   class InterfaceC0025a
+    location: class Home.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:451: error: cannot find symbol
+      public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                   ^
+    symbol:   class InterfaceC0025a
+    location: class Home.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:460: error: cannot find symbol
+      public int b(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                   ^
+    symbol:   class InterfaceC0025a
+    location: class Home.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\Home.java:469: error: cannot find symbol
+      public int a(Intent intent, a.InterfaceC0025a interfaceC0025a, int i, int i2) {
+                                   ^
+    symbol:   class InterfaceC0025a
+    location: class Home.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:31: error: cannot find symbol
+  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                                               ^
+    symbol:   class InterfaceC0113a
+    location: package com.tsf.shell.f.i._a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\n.java:34: error: cannot find symbol
+      private h r;
+              ^
+    symbol:   class h
+    location: class n
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\n.java:471: error: cannot find symbol
+      public void a(h hVar) {
+                    ^
+    symbol:   class h
+    location: class n
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\a\b\b.java:9: error: cannot find symbol
+      public a.C0079a a;
+              ^
+    symbol:   class C0079a
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcut3DInfo.java:48: error: cannot find symbol
+      public Bitmap getIcon(boolean z, a aVar) {
+                                       ^
+    symbol:   class a
+    location: class LauncherShortcut3DInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:215: error: cannot find symbol
+      public void a(c cVar) {
+                    ^
+    symbol:   class c
+    location: class C
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:220: error: cannot find symbol
+      public void b(ArrayList<c> arrayList) {
+                              ^
+    symbol:   class c
+    location: class C
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:242: error: cannot find symbol
+      public ArrayList<c> av() {
+                       ^
+    symbol:   class c
+    location: class C
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\C.java:246: error: cannot find symbol
+      public ArrayList<c> aw() {
+                       ^
+    symbol:   class c
+    location: class C
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\mix\menu\item\detail\ThemeDataInfoLayout.java:23: error: cannot find symbol
+      private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+              ^
+    symbol:   class d
+    location: class ThemeDataInfoLayout
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_g\d.java:447: error: cannot find symbol
+      class a implements b.a {
+                          ^
+    symbol:   class a
+    location: class d.b
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:76: error: cannot find symbol
+      public Bitmap getBackBitmap(a aVar) {
+                                  ^
+    symbol:   class a
+    location: class ThemeIconDescription
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:90: error: cannot find symbol
+      public Bitmap getUponBitmap(a aVar) {
+                                  ^
+    symbol:   class a
+    location: class ThemeIconDescription
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:102: error: cannot find symbol
+      public Bitmap getMaskBitmap(a aVar) {
+                                  ^
+    symbol:   class a
+    location: class ThemeIconDescription
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:145: error: cannot find symbol
+      public Bitmap getIconFilterBitmap(String str, a aVar) {
+                                                    ^
+    symbol:   class a
+    location: class ThemeIconDescription
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\ThemeIconDescription.java:161: error: cannot find symbol
+      protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
+                                                                  ^
+    symbol:   class a
+    location: class ThemeIconDescription
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\DefaultIconItem.java:13: error: cannot find symbol
+      private a style;
+              ^
+    symbol:   class a
+    location: class DefaultIconItem
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\description\DefaultIconItem.java:20: error: cannot find symbol
+      public Bitmap getBitmap(a aVar) {
+                              ^
+    symbol:   class a
+    location: class DefaultIconItem
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:55: error: cannot find symbol
+          public void a(final f fVar, MotionEvent motionEvent) {
+                              ^
+    symbol:   class f
+    location: class C0127a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:76: error: cannot find symbol
+          public boolean a(f fVar) {
+                           ^
+    symbol:   class f
+    location: class C0127a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:10: error: cannot find symbol
+      private ArrayList<f> a = new ArrayList<>();
+                        ^
+    symbol:   class f
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:12: error: cannot find symbol
+      public void a(f fVar) {
+                    ^
+    symbol:   class f
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:25: error: cannot find symbol
+      public void b(f fVar) {
+                    ^
+    symbol:   class f
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:38: error: cannot find symbol
+      public void c(f fVar) {
+                    ^
+    symbol:   class f
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\d\a.java:46: error: cannot find symbol
+      public ArrayList<f> a() {
+                       ^
+    symbol:   class f
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\A.java:13: error: cannot find symbol
+      private com.tsf.shell.f.i._a.InterfaceC0113a a;
+                                  ^
+    symbol:   class InterfaceC0113a
+    location: package com.tsf.shell.f.i._a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:36: error: cannot find symbol
+  public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.a, d.a {
+                                                              ^
+    symbol:   class InterfaceC0101a
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:57: error: cannot find symbol
+      protected a.C0133a I;
+                 ^
+    symbol:   class C0133a
+    location: interface a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:65: error: cannot find symbol
+      private com.tsf.shell.f.f.a._d.a U;
+                                    ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:81: error: cannot find symbol
+      private a.C0133a ao;
+               ^
+    symbol:   class C0133a
+    location: interface a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:247: error: cannot find symbol
+      public com.tsf.shell.f.f.a._d.a an() {
+                                   ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:20: error: cannot find symbol
+      private d.a h;
+               ^
+    symbol:   class a
+    location: class d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:33: error: cannot find symbol
+      public a(k.a aVar) {
+                ^
+    symbol:   class a
+    location: class k
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:142: error: cannot find symbol
+      public void a(final d.a aVar) {
+                           ^
+    symbol:   class a
+    location: class d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\i.java:15: error: cannot find symbol
+      protected a.C0133a f;
+                 ^
+    symbol:   class C0133a
+    location: class a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:12: error: cannot find symbol
+      public abstract void a(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:14: error: cannot find symbol
+      public abstract void a(com.tsf.shell.f.f.a.a aVar, float f);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:16: error: cannot find symbol
+      public abstract void b(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:18: error: cannot find symbol
+      public abstract void c(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:20: error: cannot find symbol
+      public abstract void d(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:22: error: cannot find symbol
+      public abstract void e(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:24: error: cannot find symbol
+      public abstract void f(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:26: error: cannot find symbol
+      public abstract void g(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_b\k.java:28: error: cannot find symbol
+      public abstract void h(com.tsf.shell.f.f.a.a aVar);
+                                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:24: error: cannot find symbol
+      private com.tsf.shell.f.e.d<com.tsf.shell.f.f.a._a.a.b> h;
+                               ^
+    symbol:   class d
+    location: package com.tsf.shell.f.e
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\d.java:14: error: cannot find symbol
+      private com.tsf.shell.f.e.d<com.tsf.shell.f.i._b.e.e> b;
+                               ^
+    symbol:   class d
+    location: package com.tsf.shell.f.e
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\f.java:16: error: cannot find symbol
+      private com.tsf.shell.f.e.d<a> f;
+                               ^
+    symbol:   class d
+    location: package com.tsf.shell.f.e
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\a\b.java:17: error: cannot find symbol
+      public void a(b.c cVar) {
+                     ^
+    symbol:   class c
+    location: class b
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\a\c.java:27: error: cannot find symbol
+      private com.tsf.shell.f.f.a._a.a d = new com.tsf.shell.f.f.a._a.a();
+                                    ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:16: error: cannot find symbol
+      private com.tsf.shell.f.f.a._d.a f = new com.tsf.shell.f.f.a._d.a(this);
+                                    ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:18: error: cannot find symbol
+      private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
+                                 ^
+    symbol:   class b
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:24: error: cannot find symbol
+      public com.tsf.shell.f.f.a._d.a b() {
+                                   ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\a\e.java:32: error: cannot find symbol
+      public com.tsf.shell.f.f.a.b d() {
+                                ^
+    symbol:   class b
+    location: package com.tsf.shell.f.f.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\r\c\d.java:29: error: cannot find symbol
+      private a.C0133a g;
+               ^
+    symbol:   class C0133a
+    location: class d.a
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\c\a\c.java:11: error: cannot find symbol
+      protected ArrayList<a> b = new ArrayList<>();
+                          ^
+    symbol:   class a
+    location: class c
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\c\a\c.java:59: error: cannot find symbol
+      public ArrayList<a> b() {
+                       ^
+    symbol:   class a
+    location: class c
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\effects\VEffectsStack.java:10: error: cannot find symbol
+      private a vTarget;
+              ^
+    symbol:   class a
+    location: class VEffectsStack
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:59: error: cannot find symbol
+      public TextureElement getTexture(a aVar) {
+                                       ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:63: error: cannot find symbol
+      public TextureElement getTexture(ResourceControler resourceControler, a aVar) {
+                                                                            ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:68: error: cannot find symbol
+      private Bitmap createTextureBitmap(ResourceControler resourceControler, a aVar) {
+                                                                              ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:72: error: cannot find symbol
+      public static Bitmap createTextureBitmap(String str, Bitmap bitmap, a aVar, boolean z) {
+                                                                          ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:76: error: cannot find symbol
+      public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, a aVar, int i, int i2, boolean z) {
+                                                                                                               ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:20: error: cannot find symbol
+          public Bitmap getThemeBitmap(a aVar) {
+                                       ^
+    symbol:   class a
+    location: class ResourceControler
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\f\B.java:9: error: cannot find symbol
+      private static com.tsf.shell.f.e.d<Number3d> a;
+                                      ^
+    symbol:   class d
+    location: package com.tsf.shell.f.e
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\a.java:11: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\b.java:13: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\g\a\d.java:11: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.gC:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\_b\d\b.java:20: error: a type with the same simple name is already defined by the single-type-import of A
+  import com.tsf.shell.f.i.A;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\theme\inside\mix\menu\item\ThemeInstalledDetailMenu.java:5: error: a type with the same simple name is already defined by the single-type-import of b
+  import com.censivn.C3DEngine.b.c.b;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\i\A.java:7: error: a type with the same simple name is already defined by the single-type-import of a
+  import com.tsf.shell.manager.n.a;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\h.java:23: error: a type with the same simple name is already defined by the single-type-import of A
+  import com.tsf.shell.f.f.a.A;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:10: error: a type with the same simple name is already defined by the single-type-import of k
+  import com.tsf.shell.f.f.a._c.k;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\api\element\info\shortcut\LauncherShortcutStandardInfo.java:8: error: a type with the same simple name is already defined by the single-type-import of b
+  import com.tsf.shell.f.i._b.e.b;
+  ^Note: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API.C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\a.java:13: error: cannot inherit from final b
+  public class a extends b {
+                         ^C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:20: error: reference to k is ambiguous
+      private static k k;
+                     ^
+    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c match
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:26: error: reference to k is ambiguous
+      private k.a j;
+              ^
+    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c match
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_c\a\b.java:32: error: reference to k is ambiguous
+      public b(k.a aVar) {
+               ^
+    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a._c.k in com.tsf.shell.f.f.a._c matchC:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\r\a\a.java:14: error: a is already defined in this compilation unit
+  import com.censivn.C3DEngine.b.c.a;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\e\_h\a.java:6: error: a is already defined in this compilation unit
+  import com.censivn.C3DEngine.b.c.a;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\e.java:8: error: e is already defined in this compilation unit
+  import com.tsf.shell.manager.p.e;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\h\e\b.java:10: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\a\_a\c.java:11: error: c is already defined in this compilation unit
+  import com.tsf.shell.manager.a.c;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\manager\p\b.java:6: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\tsf\shell\f\f\c\a.java:12: error: a is already defined in this compilation unit
+  import com.tsf.shell.manager.n.a;
+  ^
+  C:\Users\Jaja\AndroidStudioProjects\TSF20\sources\sources\com\censivn\C3DEngine\b\e\b.java:7: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 7s
+15 actionable tasks: 1 executed, 14 up-to-date

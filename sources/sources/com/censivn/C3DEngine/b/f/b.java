@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class B extends j {
-    private static com.tsf.shell.f.e.d<Number3d> a;
+    private static com.tsf.shell.f.e.D<Number3d> a;
     private ArrayList<Number3d> b = new ArrayList<>();
     private Number3d c = new Number3d();
     private Number3d d = new Number3d();
@@ -14,8 +14,8 @@ public class B extends j {
 
     public B() {
         if (a == null) {
-            a = new com.tsf.shell.f.e.d<Number3d>() { // from class: com.censivn.C3DEngine.b.f.b.1
-                @Override // com.tsf.shell.f.e.d
+            a = new com.tsf.shell.f.e.D<Number3d>() { // from class: com.censivn.C3DEngine.b.f._b.1
+                @Override // com.tsf.shell.f.e.D
                 /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                 public Number3d b() {
                     return new Number3d();

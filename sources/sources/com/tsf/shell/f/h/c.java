@@ -14,12 +14,12 @@ public class c extends j {
     private com.censivn.C3DEngine.b.h.e.a f;
     private com.censivn.C3DEngine.b.h.e.a g;
     private f h;
-    private com.tsf.shell.f.i.b.e.b j;
+    private com.tsf.shell.f.i._b.e.b j;
     private float d = com.censivn.C3DEngine.b.b.a.c * 0.0f;
     private float e = 5.0f * com.censivn.C3DEngine.b.b.a.c;
     private float b = ((this.d * 3.0f) + (com.tsf.shell.manager.o.b.b.T * 4)) + (90.0f * com.censivn.C3DEngine.b.b.a.c);
     private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.b.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.a.c);
-    private com.tsf.shell.f.i.b.e.b i = a(12, com.tsf.shell.manager.p.e.l);
+    private com.tsf.shell.f.i._b.e.b i = a(12, com.tsf.shell.manager.p.e.l);
 
     public c(b bVar) {
         this.a = bVar;
@@ -55,14 +55,14 @@ public class c extends j {
         addChild(this.h);
     }
 
-    public com.tsf.shell.f.i.b.e.b a(int i) {
-        com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(i, com.tsf.shell.manager.o.b.b);
+    public com.tsf.shell.f.i._b.e.b a(int i) {
+        com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(i, com.tsf.shell.manager.o.b.b);
         a(bVarA);
         return bVarA;
     }
 
-    private com.tsf.shell.f.i.b.e.b a(int i, int i2) {
-        final com.tsf.shell.f.i.b.e.b bVarA = a(i);
+    private com.tsf.shell.f.i._b.e.b a(int i, int i2) {
+        final com.tsf.shell.f.i._b.e.b bVarA = a(i);
         final LauncherShortcutStandardInfo launcherShortcutStandardInfo = (LauncherShortcutStandardInfo) bVarA.K();
         e.a aVarA = com.tsf.shell.manager.a.a.a(i2);
         if (aVarA.a()) {
@@ -122,7 +122,7 @@ public class c extends j {
         this.g.a(0, true);
     }
 
-    public static void a(final com.tsf.shell.f.i.b.e.b bVar) {
+    public static void a(final com.tsf.shell.f.i._b.e.b bVar) {
         bVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(bVar) { // from class: com.tsf.shell.f.h.c.2
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
@@ -148,11 +148,11 @@ public class c extends j {
     public void e() {
         int iNumChildren = this.f.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            ((com.tsf.shell.f.i.b.e.b) this.f.getChildAt(i)).aB();
+            ((com.tsf.shell.f.i._b.e.b) this.f.getChildAt(i)).aB();
         }
         int iNumChildren2 = this.g.numChildren();
         for (int i2 = 0; i2 < iNumChildren2; i2++) {
-            ((com.tsf.shell.f.i.b.e.b) this.g.getChildAt(i2)).aB();
+            ((com.tsf.shell.f.i._b.e.b) this.g.getChildAt(i2)).aB();
         }
     }
 }

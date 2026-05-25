@@ -51,7 +51,7 @@ public class c extends f {
         com.tsf.shell.manager.a.f = new ShellWallpaperManager(com.censivn.C3DEngine.a.d());
         com.tsf.shell.manager.a.j = new d(eVar);
         com.tsf.shell.manager.a.h = new n();
-        com.tsf.shell.manager.a.p = new com.tsf.shell.f.e.e.c();
+        com.tsf.shell.manager.a.p = new com.tsf.shell.f.e._e.c();
         com.tsf.shell.manager.a.q = new com.tsf.shell.manager.n.a();
         com.tsf.shell.manager.a.g = new com.tsf.shell.f.c.a();
         com.tsf.shell.manager.a.x = new com.tsf.shell.manager.l.b();
@@ -66,22 +66,22 @@ public class c extends f {
     }
 
     private void h() {
-        com.tsf.shell.f.e.b.a();
+        com.tsf.shell.f.e._b.a();
         com.tsf.shell.f.e.t.b();
         s.c();
-        com.tsf.shell.f.e.a.a();
+        com.tsf.shell.f.e._a.a();
     }
 
     @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
     public void b() {
         Home.c.a("initScene start");
         Home.q();
-        com.tsf.shell.f.e.b.e.a();
+        com.tsf.shell.f.e._b.e.a();
         com.tsf.shell.manager.a.B = new com.tsf.shell.preference.a.d();
         com.tsf.shell.manager.a.v = new com.tsf.shell.f.d.a();
-        com.tsf.shell.f.i.b.d.b.k();
+        com.tsf.shell.f.i._b.d.b.k();
         new com.tsf.shell.manager.o.d();
-        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.a(new j()));
+        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i._a.a(new j()));
         com.tsf.shell.manager.a.e = new b();
         this.d = new j();
         this.e = new j();
@@ -112,7 +112,7 @@ public class c extends f {
     }
 
     public void d() {
-        com.tsf.shell.f.e.g.d.hideAll();
+        com.tsf.shell.f.e._g.d.hideAll();
         a((Object) this);
         c(this);
         this.c.mouseEnabled(false);
@@ -160,7 +160,7 @@ public class c extends f {
 
     public void a(b.a aVar, Runnable runnable, int i) {
         this.g = false;
-        com.tsf.shell.f.e.g.d.hideAll();
+        com.tsf.shell.f.e._g.d.hideAll();
         com.tsf.shell.manager.a.o.k();
         com.tsf.shell.manager.a.n.i();
         com.tsf.shell.manager.action.f.a();

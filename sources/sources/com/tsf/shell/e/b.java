@@ -20,14 +20,14 @@ import java.util.HashMap;
 public class b extends FrameLayout {
     private static Bitmap g = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
     public c a;
-    public com.tsf.shell.f.i.b.b.a b;
+    public com.tsf.shell.f.i._b.b.a b;
     public Canvas c;
     private boolean d;
     private Object e;
     private SoftReference<Bitmap> f;
     private Runnable h;
 
-    public b(Context context, c cVar, com.tsf.shell.f.i.b.b.a aVar) {
+    public b(Context context, c cVar, com.tsf.shell.f.i._b.b.a aVar) {
         super(context);
         this.d = false;
         this.e = new Object();

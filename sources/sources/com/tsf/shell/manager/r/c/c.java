@@ -53,7 +53,7 @@ public class c {
         a(com.censivn.C3DEngine.a.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_widget), k.c(Home.c, str), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), runnable, null);
     }
 
-    public static boolean a(com.tsf.shell.f.i.c.g gVar, boolean z) {
+    public static boolean a(com.tsf.shell.f.i._c.g gVar, boolean z) {
         boolean zN = gVar.n();
         if (gVar.e) {
             if (!zN) {
@@ -127,11 +127,11 @@ public class c {
         });
     }
 
-    private static boolean a(a aVar, com.tsf.shell.f.i.c.g gVar) {
+    private static boolean a(a aVar, com.tsf.shell.f.i._c.g gVar) {
         return aVar == null || gVar.h >= aVar.a;
     }
 
-    private static boolean b(a aVar, com.tsf.shell.f.i.c.g gVar) {
+    private static boolean b(a aVar, com.tsf.shell.f.i._c.g gVar) {
         return aVar == null || gVar.i >= aVar.b;
     }
 }

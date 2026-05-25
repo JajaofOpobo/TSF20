@@ -18,9 +18,9 @@ public class b implements a {
     private float h;
     private int i;
     private e j;
-    private com.tsf.shell.manager.o.a k;
+    private com.tsf.shell.manager.o.A k;
 
-    public b(e eVar, com.tsf.shell.manager.o.a aVar) {
+    public b(e eVar, com.tsf.shell.manager.o.A aVar) {
         this.j = eVar;
         this.k = aVar;
         this.b = aVar.H;
@@ -62,7 +62,7 @@ public class b implements a {
             f2 = 0.93f;
         }
         float f3 = f2 < this.h ? this.h : f2;
-        float f4 = com.tsf.shell.f.i.b.d.b.l.c().folder.nameTextFormat.auto ? -this.k.Y : (-(com.tsf.shell.f.i.b.d.b.m.f + com.tsf.shell.f.i.b.d.b.m.h)) / 2.0f;
+        float f4 = com.tsf.shell.f.i._b.d.b.l.c().folder.nameTextFormat.auto ? -this.k.Y : (-(com.tsf.shell.f.i._b.d.b.m.f + com.tsf.shell.f.i._b.d.b.m.h)) / 2.0f;
         float f5 = -this.k.Y;
         if (f3 == 0.93f) {
             float f6 = f / i;

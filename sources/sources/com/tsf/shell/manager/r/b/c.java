@@ -7,12 +7,12 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
-import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.utils.w;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class C<E> extends com.tsf.shell.f.e.g.a.b {
+public class C<E> extends com.tsf.shell.f.e._g.a.b {
     public com.tsf.shell.manager.r.b.a a;
     private h b;
     private j c;
@@ -177,12 +177,12 @@ public class C<E> extends com.tsf.shell.f.e.g.a.b {
         });
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public j getContentContainer() {
         return this.c;
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }

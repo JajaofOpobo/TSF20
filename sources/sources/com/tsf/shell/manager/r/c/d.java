@@ -27,7 +27,7 @@ public class d implements b.a, e.a, h.a, n.a {
     private String d;
     private boolean f;
     private a.C0133a g;
-    private ArrayList<com.tsf.shell.f.i.b> h;
+    private ArrayList<com.tsf.shell.f.i.B> h;
     private boolean i = false;
     private boolean j = false;
 
@@ -161,40 +161,40 @@ public class d implements b.a, e.a, h.a, n.a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e._h.a
     public void a(m mVar) {
         if (this.h == null) {
             this.h = new ArrayList<>();
         }
-        if (mVar instanceof com.tsf.shell.f.i.b.e.b) {
-            com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) mVar;
+        if (mVar instanceof com.tsf.shell.f.i._b.e.b) {
+            com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) mVar;
             if (bVar.ao()) {
                 bVar.ar();
             }
-            com.tsf.shell.f.i.b bVar2 = (com.tsf.shell.f.i.b) mVar;
+            com.tsf.shell.f.i.B bVar2 = (com.tsf.shell.f.i.B) mVar;
             this.i = true;
             bVar2.setDefaultColor(h.a);
             this.h.add(bVar2);
             return;
         }
-        if (mVar instanceof com.tsf.shell.f.i.b.d.b) {
-            com.tsf.shell.f.i.b bVar3 = (com.tsf.shell.f.i.b) mVar;
+        if (mVar instanceof com.tsf.shell.f.i._b.d.b) {
+            com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) mVar;
             this.i = true;
             bVar3.setDefaultColor(h.a);
             this.h.add(bVar3);
         }
     }
 
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e._h.a
     public void f() {
-        Iterator<com.tsf.shell.f.i.b> it = this.h.iterator();
+        Iterator<com.tsf.shell.f.i.B> it = this.h.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
         this.h.clear();
     }
 
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e._h.a
     public n l_() {
         return new n(this.a, this);
     }
@@ -202,14 +202,14 @@ public class d implements b.a, e.a, h.a, n.a {
     @Override // com.tsf.shell.f.e.n.a
     public void a(int i) {
         int i2 = 1;
-        ArrayList<com.tsf.shell.f.i.b> arrayList = new ArrayList<>();
-        for (com.tsf.shell.f.i.b bVar : this.h) {
+        ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList<>();
+        for (com.tsf.shell.f.i.B bVar : this.h) {
             if (!bVar.hasDestroyed()) {
                 arrayList.add(bVar);
             }
         }
         this.h.clear();
-        Iterator<com.tsf.shell.f.i.b> it = arrayList.iterator();
+        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
@@ -237,7 +237,7 @@ public class d implements b.a, e.a, h.a, n.a {
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
                                 while (it2.hasNext()) {
-                                    g.a((com.tsf.shell.f.i.b) it2.next(), (Runnable) null);
+                                    g.a((com.tsf.shell.f.i.B) it2.next(), (Runnable) null);
                                 }
                             }
                         });
@@ -246,24 +246,24 @@ public class d implements b.a, e.a, h.a, n.a {
                 break;
             case 3:
                 final ArrayList arrayList3 = new ArrayList();
-                for (com.tsf.shell.f.i.b bVar2 : arrayList) {
-                    if (bVar2 instanceof com.tsf.shell.f.i.b.e.b) {
-                        arrayList3.add((com.tsf.shell.f.i.b.e.b) bVar2);
+                for (com.tsf.shell.f.i.B bVar2 : arrayList) {
+                    if (bVar2 instanceof com.tsf.shell.f.i._b.e.b) {
+                        arrayList3.add((com.tsf.shell.f.i._b.e.b) bVar2);
                     }
                 }
                 if (arrayList3.size() > 0) {
-                    float f = ((com.tsf.shell.f.i.b.e.b) arrayList3.get(0)).position().x;
-                    float f2 = ((com.tsf.shell.f.i.b.e.b) arrayList3.get(0)).position().y;
+                    float f = ((com.tsf.shell.f.i._b.e.b) arrayList3.get(0)).position().x;
+                    float f2 = ((com.tsf.shell.f.i._b.e.b) arrayList3.get(0)).position().y;
                     Iterator it2 = arrayList3.iterator();
                     float f3 = f;
                     while (true) {
                         float f4 = f2;
                         if (it2.hasNext()) {
-                            com.tsf.shell.f.i.b.e.b bVar3 = (com.tsf.shell.f.i.b.e.b) it2.next();
+                            com.tsf.shell.f.i._b.e.b bVar3 = (com.tsf.shell.f.i._b.e.b) it2.next();
                             f3 = (f3 + bVar3.position().x) / 2.0f;
                             f2 = (bVar3.position().y + f4) / 2.0f;
                         } else {
-                            final com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.a.h.F(), (int) f3, (int) f4);
+                            final com.tsf.shell.f.i._b.d.b bVarA = com.tsf.shell.f.i._b.d.b.a(com.tsf.shell.manager.a.h.F(), (int) f3, (int) f4);
                             RenderRunnable renderRunnable = new RenderRunnable(2, i2) { // from class: com.tsf.shell.manager.r.c.d.4
                                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                                 public void run() {
@@ -277,9 +277,9 @@ public class d implements b.a, e.a, h.a, n.a {
                 }
                 break;
             case 4:
-                for (com.tsf.shell.f.i.b bVar4 : arrayList) {
-                    if (bVar4 instanceof com.tsf.shell.f.i.c) {
-                        ((com.tsf.shell.f.i.c) bVar4).ap();
+                for (com.tsf.shell.f.i.B bVar4 : arrayList) {
+                    if (bVar4 instanceof com.tsf.shell.f.i.C) {
+                        ((com.tsf.shell.f.i.C) bVar4).ap();
                     }
                 }
                 break;

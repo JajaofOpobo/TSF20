@@ -11,8 +11,8 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends com.censivn.C3DEngine.b.f.j {
-    private com.censivn.C3DEngine.b.f.a.a d;
-    private com.censivn.C3DEngine.b.f.a.b e;
+    private com.censivn.C3DEngine.b.f._a.a d;
+    private com.censivn.C3DEngine.b.f._a.b e;
     private TextureElement k;
     private a l;
     private a m;
@@ -202,11 +202,11 @@ public class j extends com.censivn.C3DEngine.b.f.j {
         this.b = i;
         this.e = null;
         float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.a.c) * (i - 1)) / 2.0f);
-        this.d = new com.censivn.C3DEngine.b.f.a.a(i, 32, 32, 32);
+        this.d = new com.censivn.C3DEngine.b.f._a.a(i, 32, 32, 32);
         this.d.useVBO(false);
         float f2 = f;
         for (int i2 = 0; i2 < i; i2++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.d.a(i2);
+            com.censivn.C3DEngine.b.f._a.b bVarA = this.d.a(i2);
             bVarA.m.pxX(f2);
             bVarA.b(com.tsf.shell.manager.g.a.l);
             bVarA.d(com.tsf.shell.manager.g.a.l);

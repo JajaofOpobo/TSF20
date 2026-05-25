@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.primitives.ninepath;
 
-import com.censivn.C3DEngine.b.f.b.b;
+import com.censivn.C3DEngine.b.f._b.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VNinePathParam {

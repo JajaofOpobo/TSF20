@@ -36,7 +36,7 @@ public class g extends e {
 
     @Override // com.tsf.shell.f.c.a.a.i, com.tsf.shell.f.c.a.a.a
     public void a(com.tsf.shell.f.c.a.d dVar, com.censivn.C3DEngine.b.f.i iVar, float f, boolean z) {
-        if (iVar instanceof com.tsf.shell.f.i.b.d.b) {
+        if (iVar instanceof com.tsf.shell.f.i._b.d.b) {
         }
         if (!this.d) {
             dVar.a = 0.0f + ((-iVar.maxX()) * f) + com.tsf.shell.f.c.a.f.q;

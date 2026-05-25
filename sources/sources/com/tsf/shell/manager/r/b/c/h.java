@@ -18,7 +18,7 @@ public class h extends j {
     private i d;
     private j e;
     private i f;
-    private com.tsf.shell.f.i.c.e g;
+    private com.tsf.shell.f.i._c.e g;
     private float h;
     private float i;
     private float j;
@@ -51,7 +51,7 @@ public class h extends j {
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
-        if ((this.g instanceof com.tsf.shell.f.i.c.g) && !((com.tsf.shell.f.i.c.g) this.g).j()) {
+        if ((this.g instanceof com.tsf.shell.f.i._c.g) && !((com.tsf.shell.f.i._c.g) this.g).j()) {
             if (b.id == 0) {
                 Bitmap bitmapA = x.a(b.d.widget_item_download);
                 com.censivn.C3DEngine.a.g().a(b, bitmapA);
@@ -80,7 +80,7 @@ public class h extends j {
         return this.f;
     }
 
-    public void a(com.tsf.shell.f.i.c.e eVar, boolean z) {
+    public void a(com.tsf.shell.f.i._c.e eVar, boolean z) {
         i iVarA = eVar.a((int) this.i, (int) this.j, z);
         if (this.c.b() != this.j) {
             this.c.b(this.j - this.h);

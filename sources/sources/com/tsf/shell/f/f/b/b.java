@@ -28,7 +28,7 @@ public class b extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public boolean a(com.tsf.shell.f.f.g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+    public boolean a(com.tsf.shell.f.f.g gVar, com.censivn.C3DEngine.b.f._b.a aVar) {
         aVar.alpha((1.0f - Math.abs((Math.abs(gVar.g) - 0.5f) * 2.0f)) * 255.0f);
         return true;
     }

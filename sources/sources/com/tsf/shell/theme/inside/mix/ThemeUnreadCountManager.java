@@ -46,7 +46,7 @@ public class ThemeUnreadCountManager extends ThemeMixElementManager {
                 bitmap.recycle();
             }
             int iRandom = (int) (10.0d + (Math.random() * 200.0d));
-            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
+            com.tsf.shell.manager.o._a.a aVar = new com.tsf.shell.manager.o._a.a();
             aVar.h(36);
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(Integer.toString(iRandom));

@@ -15,12 +15,12 @@ import com.tsf.shell.manager.bind.ShellModel;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class B extends j implements f {
+public class B extends j implements F {
     private ItemInfo a;
-    protected com.censivn.C3DEngine.b.f.b.a e;
-    private f j;
+    protected com.censivn.C3DEngine.b.f._b.a e;
+    private F j;
     private int m;
-    private com.tsf.shell.f.i.a q;
+    private com.tsf.shell.f.i.A q;
     private boolean r;
     private boolean b = true;
     private boolean f = false;
@@ -137,7 +137,7 @@ public class B extends j implements f {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public boolean calTouchCollision(float f, float f2) {
-        if (!(this instanceof com.tsf.shell.f.i.b.e.b) && com.tsf.shell.manager.a.h.s().a()) {
+        if (!(this instanceof com.tsf.shell.f.i._b.e.b) && com.tsf.shell.manager.a.h.s().a()) {
             return false;
         }
         if (z() != null) {
@@ -152,11 +152,11 @@ public class B extends j implements f {
     public void a(float f, float f2) {
     }
 
-    public com.tsf.shell.f.i.a A() {
+    public com.tsf.shell.f.i.A A() {
         return this.q;
     }
 
-    public void a(com.tsf.shell.f.i.a aVar) {
+    public void a(com.tsf.shell.f.i.A aVar) {
         this.q = aVar;
     }
 
@@ -168,7 +168,7 @@ public class B extends j implements f {
     public void onKillFocus() {
         super.onKillFocus();
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e._a.b();
         }
     }
 
@@ -191,13 +191,13 @@ public class B extends j implements f {
     }
 
     public void E() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
+        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.1
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.e == null) {
-                    b.this.e = com.tsf.shell.f.e.b.a((int) ((-this.minX()) + this.maxX() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)), (int) ((-this.minY()) + this.maxY() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)));
+                    b.this.e = com.tsf.shell.f.e._b.a((int) ((-this.minX()) + this.maxX() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)), (int) ((-this.minY()) + this.maxY() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)));
                     b.this.e.useVBO(false);
-                    b.this.e.textures().addElement(com.tsf.shell.f.e.b.h);
+                    b.this.e.textures().addElement(com.tsf.shell.f.e._b.h);
                     b.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;
                     this.addChild(b.this.e);
                 }
@@ -206,7 +206,7 @@ public class B extends j implements f {
     }
 
     public void F() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
+        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.2
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.e != null) {
@@ -240,7 +240,7 @@ public class B extends j implements f {
                     i = i3;
                 }
             }
-            d dVar = new d() { // from class: com.tsf.shell.f.i.b.3
+            d dVar = new d() { // from class: com.tsf.shell.f.i._b.3
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     this.rotation().z = 0.0f;
@@ -255,12 +255,12 @@ public class B extends j implements f {
     }
 
     public void H() {
-        com.tsf.shell.f.e.a.a(this);
+        com.tsf.shell.f.e._a.a(this);
     }
 
     public void I() {
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e._a.b();
         }
     }
 
@@ -376,7 +376,7 @@ public class B extends j implements f {
             s.a();
         }
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e._a.b();
         }
     }
 
@@ -485,7 +485,7 @@ public class B extends j implements f {
         this.h = z;
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public boolean a() {
         return this.h;
     }
@@ -494,49 +494,49 @@ public class B extends j implements f {
         this.i = z;
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public boolean o() {
         return this.i;
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public int m() {
         return 0;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public f n() {
+    @Override // com.tsf.shell.f.e.F
+    public F n() {
         return this.j;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public boolean a(f fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.e.F
+    public boolean a(F fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void c(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void c(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void e(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void e(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public boolean b(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public boolean b(F fVar) {
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void d(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void d(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void a(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void a(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void f(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void f(F fVar) {
         if (this.j != fVar) {
             p();
             fVar.a(this);
@@ -545,16 +545,16 @@ public class B extends j implements f {
         this.j.c(this);
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public boolean h(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public boolean h(F fVar) {
         if (fVar == null) {
             return false;
         }
         return fVar.b(this);
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void g(f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void g(F fVar) {
         f(fVar);
         fVar.e(this);
         this.j = null;
@@ -563,7 +563,7 @@ public class B extends j implements f {
     public void af() {
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public void p() {
         if (this.j != null) {
             this.j.d(this);
@@ -572,23 +572,23 @@ public class B extends j implements f {
         }
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public f a(int i, int i2) {
+    @Override // com.tsf.shell.f.e.F
+    public F a(int i, int i2) {
         return a(i, i2, true);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public f a(int i, int i2, boolean z) {
+    public F a(int i, int i2, boolean z) {
         float f;
         float f2;
         float f3;
         float f4;
-        ArrayList<f> arrayListA = com.tsf.shell.manager.a.k.a();
+        ArrayList<F> arrayListA = com.tsf.shell.manager.a.k.a();
         int size = arrayListA.size() - 1;
         while (true) {
             int i3 = size;
             if (i3 > -1) {
-                f fVar = arrayListA.get(i3);
+                F fVar = arrayListA.get(i3);
                 if (fVar.a()) {
                     if (fVar.m() == 0) {
                         f3 = i;
@@ -605,8 +605,8 @@ public class B extends j implements f {
             } else {
                 if (z && com.tsf.shell.manager.a.h.m() == 2 && !com.tsf.shell.manager.a.h.n().ad()) {
                     for (i iVar : com.tsf.shell.manager.a.h.G()) {
-                        if ((iVar instanceof b) && iVar != this) {
-                            b bVar = (b) iVar;
+                        if ((iVar instanceof B) && iVar != this) {
+                            B bVar = (B) iVar;
                             if (bVar.a()) {
                                 if (bVar.m() == 0) {
                                     f = i;

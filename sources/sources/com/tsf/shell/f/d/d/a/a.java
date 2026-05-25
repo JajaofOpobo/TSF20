@@ -6,7 +6,7 @@ import com.tsf.shell.f.f.g;
 public interface a {
     void a(g gVar);
 
-    void a(com.tsf.shell.f.i.b bVar);
+    void a(com.tsf.shell.f.i.B bVar);
 
     void a(boolean z);
 

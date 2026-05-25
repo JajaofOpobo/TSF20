@@ -100,9 +100,9 @@ public class r extends com.censivn.C3DEngine.b.f.j {
         this.c.add(aVar);
     }
 
-    private class a extends com.censivn.C3DEngine.b.f.a.a {
-        private com.censivn.C3DEngine.b.f.a.b c;
-        private com.censivn.C3DEngine.b.f.a.b d;
+    private class a extends com.censivn.C3DEngine.b.f._a.a {
+        private com.censivn.C3DEngine.b.f._a.b c;
+        private com.censivn.C3DEngine.b.f._a.b d;
         private float e;
         private float f;
         private int g;

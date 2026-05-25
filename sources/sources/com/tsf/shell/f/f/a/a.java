@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
-import com.tsf.shell.f.f.a.b.k;
+import com.tsf.shell.f.f.a._b.k;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -37,7 +37,7 @@ public class A extends c {
             int i2 = i;
             if (it.hasNext()) {
                 i next = it.next();
-                if (next instanceof com.tsf.shell.f.i.b) {
+                if (next instanceof com.tsf.shell.f.i.B) {
                     Number3d number3d = h.E.get(i2);
                     next.position().x = number3d.x;
                     next.position().y = number3d.y;
@@ -112,12 +112,12 @@ public class A extends c {
         this.b.j_();
         int iNumChildren = numChildren();
         if (iNumChildren == h.m) {
-            com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) children().get(iNumChildren - 1);
+            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) children().get(iNumChildren - 1);
             if (this.g && com.tsf.shell.manager.a.h.n().t() == -1 && !com.tsf.shell.manager.a.h.t().aq()) {
                 final i iVarA = com.tsf.shell.manager.a.h.t().a(bVar);
                 iVarA.removeFromParent();
                 com.tsf.shell.manager.a.h.t().addChild(iVarA);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.a.1
+                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         com.tsf.shell.manager.a.h.t().e(iVarA);
@@ -153,7 +153,7 @@ public class A extends c {
             this.b.a(this, this.c, this.d);
         } else {
             if (this.d != null && this.d.e() != 0) {
-                com.tsf.shell.f.i.b bVarC = this.d.c();
+                com.tsf.shell.f.i.B bVarC = this.d.c();
                 this.d.removeChild(bVarC);
                 super.addChild(bVarC);
                 bVarC.position().y = h.E.get(numChildren() - 1).y;
@@ -164,8 +164,8 @@ public class A extends c {
         return zRemoveChild;
     }
 
-    public com.tsf.shell.f.i.b c() {
-        return (com.tsf.shell.f.i.b) getChildAt(0);
+    public com.tsf.shell.f.i.B c() {
+        return (com.tsf.shell.f.i.B) getChildAt(0);
     }
 
     public void a(a aVar) {
@@ -203,14 +203,14 @@ public class A extends c {
         return -1;
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.b> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
         children().clear();
         int iE = h.m * e();
         int size = arrayList.size();
         int i = 0;
         for (int i2 = iE; i2 < h.m + iE; i2++) {
             if (i2 < size) {
-                com.tsf.shell.f.i.b bVar = arrayList.get(i2);
+                com.tsf.shell.f.i.B bVar = arrayList.get(i2);
                 bVar.parent(this);
                 children().add(bVar);
                 b(bVar, i, false);
@@ -219,11 +219,11 @@ public class A extends c {
         }
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.b> arrayList, Runnable runnable) {
+    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
         for (final i iVar : children()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.a.2
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.2
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         a.this.children().remove(iVar);
@@ -238,7 +238,7 @@ public class A extends c {
         int iNumChildren = numChildren();
         int i = 0;
         while (i < iNumChildren) {
-            com.tsf.shell.f.i.b bVar = arrayList.get((h.m * e()) + i);
+            com.tsf.shell.f.i.B bVar = arrayList.get((h.m * e()) + i);
             Number3d number3d = h.E.get(i);
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
             dVar2.f(number3d.x);

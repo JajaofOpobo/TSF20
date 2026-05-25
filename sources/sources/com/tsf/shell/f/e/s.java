@@ -15,7 +15,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
     private static s a;
     private static a b;
     private static boolean c = false;
-    private static com.tsf.shell.f.i.b d;
+    private static com.tsf.shell.f.i.B d;
     private static Runnable e;
 
     public static void a() {
@@ -44,11 +44,11 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
                 s.b();
             }
         };
-        b = new a(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+        b = new a(500.0f, 500.0f, new com.censivn.C3DEngine.b.f._b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
         a.addChild(b);
     }
 
-    public static void a(com.tsf.shell.f.i.b bVar) {
+    public static void a(com.tsf.shell.f.i.B bVar) {
         c = true;
         d = bVar;
         d.W();
@@ -107,7 +107,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         return b;
     }
 
-    static class a extends com.censivn.C3DEngine.b.f.b.a {
+    static class a extends com.censivn.C3DEngine.b.f._b.a {
         private int a;
         private DynamicTextureElement d;
         private a e;
@@ -121,7 +121,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         private float m;
         private boolean n;
 
-        public a(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar) {
+        public a(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar) {
             super(f, f2, bVar);
             this.k = 3;
             this.l = 1.0f;
@@ -298,25 +298,25 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             positionNumber3dPosition.y = fA;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f._b.a
         public void i(float f) {
             super.j(f);
             this.h.position().x = (-f) + this.k;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f._b.a
         public void g(float f) {
             super.h(f);
             this.i.position().x = (f - this.k) - 3.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f._b.a
         public void c(float f) {
             super.d(f);
             this.f.position().y = (f - this.k) - 1.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f._b.a
         public void e(float f) {
             super.f(f);
             this.g.position().y = (-f) + this.k + 1.0f;

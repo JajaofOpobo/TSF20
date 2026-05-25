@@ -201,12 +201,12 @@ public class b {
         return a(componentName, p);
     }
 
-    public static ArrayList<com.tsf.shell.f.i.b.e.g> a(int i2) {
-        com.tsf.shell.f.i.b.e.g gVarBa;
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayList = new ArrayList<>();
+    public static ArrayList<com.tsf.shell.f.i._b.e.g> a(int i2) {
+        com.tsf.shell.f.i._b.e.g gVarBa;
+        ArrayList<com.tsf.shell.f.i._b.e.g> arrayList = new ArrayList<>();
         Iterator<ComponentName> it = b(i2).iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i.b.e.g gVarA = com.tsf.shell.manager.a.w.a().a(it.next());
+            com.tsf.shell.f.i._b.e.g gVarA = com.tsf.shell.manager.a.w.a().a(it.next());
             if (gVarA != null && (gVarBa = gVarA.ba()) != null) {
                 arrayList.add(gVarBa);
             }

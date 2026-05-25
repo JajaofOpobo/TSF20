@@ -15,7 +15,7 @@ public class m extends j {
     private float j = 0.0f;
     private float k = 0.0f;
     private k a = new k(0.0f, 0.0f);
-    private com.tsf.shell.manager.o.a.a b = new com.tsf.shell.manager.o.a.a();
+    private com.tsf.shell.manager.o._a.a b = new com.tsf.shell.manager.o._a.a();
     private TextureElement c = new TextureElement(0, false);
 
     public m() {

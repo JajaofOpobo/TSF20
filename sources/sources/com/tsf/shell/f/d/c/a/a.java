@@ -1,7 +1,7 @@
 package com.tsf.shell.f.d.c.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.tsf.shell.f.e.f.a;
+import com.tsf.shell.f.e._f.a;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -16,11 +16,11 @@ public class a extends d {
     }
 
     @Override // com.tsf.shell.f.d.c.a.d
-    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
         float f = 120.0f / 3.0f;
         float f2 = 90.0f - (120.0f / 2.0f);
         for (int i = 0; i < 4; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a(i);
             double d = ((double) f2) * 0.017453292519943295d;
             float fSin = (float) (Math.sin(d) * ((double) b));
             float fCos = (float) (Math.cos(d) * ((double) b));
@@ -42,9 +42,9 @@ public class a extends d {
     }
 
     @Override // com.tsf.shell.f.d.c.a.d
-    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
         for (int i = 0; i < 4; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a(i);
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.f(0.0f);
             dVar.h(0.0f);

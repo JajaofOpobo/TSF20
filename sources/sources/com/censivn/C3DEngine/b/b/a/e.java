@@ -151,7 +151,7 @@ public class e extends j {
                     }
                     e.this.h = this.a - (motionEvent2.getY() - motionEvent.getY());
                     if (!e.this.l) {
-                        e.this.h = com.tsf.shell.f.e.c.a(e.this.h, e.this.g, e.this.f, e.a);
+                        e.this.h = com.tsf.shell.f.e._c.a(e.this.h, e.this.g, e.this.f, e.a);
                     }
                 }
             }
@@ -162,7 +162,7 @@ public class e extends j {
                     if (f2 < 0.0f && e.this.l) {
                         e.this.d();
                     }
-                    e.this.h = com.tsf.shell.f.e.c.b(e.this.h, f2);
+                    e.this.h = com.tsf.shell.f.e._c.b(e.this.h, f2);
                 }
             }
 
@@ -442,7 +442,7 @@ public class e extends j {
                     this.j = 1;
                     f5 = f6;
                 }
-                this.p = (f5 / com.tsf.shell.f.e.c.a) * 1.5f;
+                this.p = (f5 / com.tsf.shell.f.e._c.a) * 1.5f;
                 if (this.p > 0.0f) {
                     if (this.s != this.j && this.q) {
                         p();

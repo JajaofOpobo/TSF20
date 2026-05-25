@@ -43,11 +43,11 @@ public class c extends d {
     }
 
     @Override // com.tsf.shell.f.d.b.a.d
-    public void a(com.tsf.shell.f.i.b.e.b bVar) {
+    public void a(com.tsf.shell.f.i._b.e.b bVar) {
     }
 
     @Override // com.tsf.shell.f.d.b.a.d
-    public void b(com.tsf.shell.f.i.b.e.b bVar) {
+    public void b(com.tsf.shell.f.i._b.e.b bVar) {
         if (this.d.id == 0) {
             com.censivn.C3DEngine.a.g().a(this.d, b.d.widget_app_new_fire);
         }

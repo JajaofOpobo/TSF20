@@ -31,7 +31,7 @@ public class b extends com.tsf.shell.manager.r.b.b.a {
     private ArrayList<a> h;
     private com.censivn.C3DEngine.b.h.c.a i;
 
-    public b(com.tsf.shell.f.e.g.d dVar, d dVar2) {
+    public b(com.tsf.shell.f.e._g.d dVar, d dVar2) {
         super(dVar);
         this.g = false;
         this.h = new ArrayList<>();

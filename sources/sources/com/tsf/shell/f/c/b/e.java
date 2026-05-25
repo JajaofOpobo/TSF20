@@ -284,11 +284,11 @@ public class e implements e.a {
     }
 
     private void a(ArrayList<ItemInfo> arrayList) {
-        com.tsf.shell.f.i.b bVarA;
+        com.tsf.shell.f.i.B bVarA;
         a aVar = (a) this.i.getChildAt(this.i.numChildren() - 1);
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo.itemType == 1) {
-                bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
+                bVarA = com.tsf.shell.f.i._b.d.b.a((LauncherFolder3DInfo) itemInfo);
             } else {
                 bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
             }
@@ -298,16 +298,16 @@ public class e implements e.a {
         }
     }
 
-    public void a(int i, com.tsf.shell.f.i.b bVar) {
+    public void a(int i, com.tsf.shell.f.i.B bVar) {
         a aVarC = c(i);
         aVarC.a(bVar, false);
         aVarC.addChild(bVar);
     }
 
     private void a(a aVar, ItemInfo itemInfo) {
-        com.tsf.shell.f.i.b bVarA;
+        com.tsf.shell.f.i.B bVarA;
         if (itemInfo.itemType == 1) {
-            bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
+            bVarA = com.tsf.shell.f.i._b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
             bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
         }

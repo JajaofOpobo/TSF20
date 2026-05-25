@@ -5,7 +5,7 @@ import android.content.Context;
 import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i._c.g;
 import com.tsf.shell.manager.p.c;
 import com.tsf.shell.manager.r.c.e;
 import dalvik.system.PathClassLoader;
@@ -30,9 +30,9 @@ public class a {
 
         public abstract void a(ItemInfo itemInfo);
 
-        public abstract void a(com.tsf.shell.f.i.b bVar, g gVar);
+        public abstract void a(com.tsf.shell.f.i.B bVar, g gVar);
 
-        public void b(com.tsf.shell.f.i.b bVar, g gVar) {
+        public void b(com.tsf.shell.f.i.B bVar, g gVar) {
             this.a++;
             a(bVar, gVar);
         }
@@ -43,11 +43,11 @@ public class a {
         }
     }
 
-    public static void a(com.tsf.shell.f.i.b bVar, g gVar) {
+    public static void a(com.tsf.shell.f.i.B bVar, g gVar) {
         if (gVar != null && gVar.a.equals("com.tsf.shell.widget.music")) {
             c.a(12, 1000);
         }
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i._a.c(bVar));
         if (gVar.e) {
             if (com.tsf.shell.manager.r.c.c.a(gVar, false)) {
                 gVar.a(bVar);
@@ -95,7 +95,7 @@ public class a {
                 @Override // java.lang.Runnable
                 public void run() {
                     try {
-                        com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) ((VObject3d) method.invoke(objNewInstance, contextCreatePackageContext, Integer.valueOf(itemInfo.id))).getVirtualTarget();
+                        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) ((VObject3d) method.invoke(objNewInstance, contextCreatePackageContext, Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         if (str.equals("com.tsf.shell.widget.weather")) {
                             bVar.f(true);
                         }
@@ -139,18 +139,18 @@ public class a {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.r.c.a.a.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i.b aVar;
+                com.tsf.shell.f.i.B aVar;
                 try {
-                    if (gVar.b.equals(com.tsf.shell.f.i.b.d.b.class.getName())) {
-                        aVar = new com.tsf.shell.f.i.b.d.b(itemInfo);
-                    } else if (gVar.b.equals(com.tsf.shell.f.i.b.a.b.class.getName())) {
-                        aVar = new com.tsf.shell.f.i.b.a.b(itemInfo);
-                    } else if (!gVar.b.equals(com.tsf.shell.f.i.b.c.a.class.getName())) {
+                    if (gVar.b.equals(com.tsf.shell.f.i._b.d.b.class.getName())) {
+                        aVar = new com.tsf.shell.f.i._b.d.b(itemInfo);
+                    } else if (gVar.b.equals(com.tsf.shell.f.i._b.a.b.class.getName())) {
+                        aVar = new com.tsf.shell.f.i._b.a.b(itemInfo);
+                    } else if (!gVar.b.equals(com.tsf.shell.f.i._b.c.a.class.getName())) {
                         Class<?> clsLoadClass = a.a.loadClass(gVar.b);
-                        aVar = (com.tsf.shell.f.i.b) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.a.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
+                        aVar = (com.tsf.shell.f.i.B) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.a.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         aVar.a(itemInfo);
                     } else {
-                        aVar = new com.tsf.shell.f.i.b.c.a(itemInfo);
+                        aVar = new com.tsf.shell.f.i._b.c.a(itemInfo);
                     }
                     if (aVar != null) {
                         aVar.position().x = itemInfo.cellX;

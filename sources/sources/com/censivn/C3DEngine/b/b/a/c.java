@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.f.e.f.b {
+public class c extends com.tsf.shell.f.e._f.b {
     private boolean a = false;
     private float b = 0.0f;
     private float c = 0.0f;
@@ -146,7 +146,7 @@ public class c extends com.tsf.shell.f.e.f.b {
         notifLayoutRefresh();
     }
 
-    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.e._f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void dispatchDraw() {
         if (visible() && this.a) {
             if (a(true)) {

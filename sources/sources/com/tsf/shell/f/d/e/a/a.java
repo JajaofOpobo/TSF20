@@ -26,7 +26,7 @@ public class a extends b {
     }
 
     @Override // com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void a(final com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(final com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f.d.e.a.a.1
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {
@@ -43,7 +43,7 @@ public class a extends b {
     }
 
     @Override // com.tsf.shell.f.d.e.a.b, com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void b(final com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void b(final com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f.d.e.a.a.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {

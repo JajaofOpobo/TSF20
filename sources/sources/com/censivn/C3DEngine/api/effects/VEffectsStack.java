@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.c.B;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VEffectsStack {
-    private a vTarget;
+    private A vTarget;
 
     public VEffectsStack(VObject3d vObject3d) {
         this.vTarget = new a((i) vObject3d.getVirtualTarget());

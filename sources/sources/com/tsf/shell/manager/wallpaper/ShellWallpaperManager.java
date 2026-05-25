@@ -343,7 +343,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         private Bitmap e;
         private float f;
         private Color4 g;
-        private com.tsf.shell.f.e.b.b h;
+        private com.tsf.shell.f.e._b.b h;
         private int i;
         private int j;
 
@@ -369,7 +369,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             this.i = 100;
             this.j = 100;
             setDefaultColor(this.g);
-            this.h = new com.tsf.shell.f.e.b.b();
+            this.h = new com.tsf.shell.f.e._b.b();
             d();
         }
 

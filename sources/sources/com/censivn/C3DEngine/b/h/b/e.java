@@ -76,9 +76,9 @@ public class e extends j {
         super.destroy();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.b> arrayList, int i) {
+    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList, int i) {
         int i2 = i;
-        for (com.tsf.shell.f.i.b bVar : arrayList) {
+        for (com.tsf.shell.f.i.B bVar : arrayList) {
             bVar.mouseEnabled(false);
             bVar.removeFromParent();
             this.a.addChildAt(bVar, i2);
@@ -89,14 +89,14 @@ public class e extends j {
         b(i);
     }
 
-    public void b(ArrayList<com.tsf.shell.f.i.b> arrayList) {
-        Iterator<com.tsf.shell.f.i.b> it = arrayList.iterator();
+    public void b(ArrayList<com.tsf.shell.f.i.B> arrayList) {
+        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
         while (it.hasNext()) {
             a(it.next());
         }
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         bVar.mouseEnabled(false);
         if (bVar.parent() != null) {
             this.a.globalToLocal(bVar.position());
@@ -106,7 +106,7 @@ public class e extends j {
         bVar.a(this.a.numChildren() - 1);
     }
 
-    public int b(com.tsf.shell.f.i.b bVar) {
+    public int b(com.tsf.shell.f.i.B bVar) {
         int iJ = bVar.J();
         this.a.removeChild(bVar);
         b(iJ);
@@ -117,11 +117,11 @@ public class e extends j {
         return this.b.get(i);
     }
 
-    public boolean a(com.tsf.shell.f.i.b bVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.B bVar, float f, float f2) {
         return a(bVar, f, f2, false, false);
     }
 
-    public boolean a(com.tsf.shell.f.i.b bVar, float f, float f2, boolean z, boolean z2) {
+    public boolean a(com.tsf.shell.f.i.B bVar, float f, float f2, boolean z, boolean z2) {
         int i = com.tsf.shell.manager.o.b.a.L;
         int i2 = com.tsf.shell.manager.o.b.a.N;
         int i3 = com.tsf.shell.manager.o.b.a.M;
@@ -164,14 +164,14 @@ public class e extends j {
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, int i) {
+    public void a(com.tsf.shell.f.i.B bVar, int i) {
         int iJ = bVar.J();
         int iMin = Math.min(iJ, i);
         int iAbs = Math.abs(iJ - i);
         bVar.a(i);
         int i2 = iJ > i ? 1 : 0;
         for (int i3 = iMin; i3 < iMin + iAbs; i3++) {
-            com.tsf.shell.f.i.b bVar2 = (com.tsf.shell.f.i.b) this.a.children().get(i3);
+            com.tsf.shell.f.i.B bVar2 = (com.tsf.shell.f.i.B) this.a.children().get(i3);
             bVar2.a(i3 + i2);
             f(bVar2);
         }
@@ -183,7 +183,7 @@ public class e extends j {
     void a(int i, i iVar) {
         int size = this.a.children().size();
         while (i < size) {
-            com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) this.a.children().get(i);
+            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.a.children().get(i);
             bVar.a(i);
             if (iVar != bVar) {
                 f(bVar);
@@ -195,14 +195,14 @@ public class e extends j {
     void b(int i) {
         int size = this.a.children().size();
         while (i < size) {
-            com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) this.a.children().get(i);
+            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.a.children().get(i);
             bVar.a(i);
             f(bVar);
             i++;
         }
     }
 
-    private void f(com.tsf.shell.f.i.b bVar) {
+    private void f(com.tsf.shell.f.i.B bVar) {
         Number3d number3dA = a(bVar.J());
         this.d.a(bVar, number3dA);
         if (bVar.visible()) {
@@ -217,7 +217,7 @@ public class e extends j {
         bVar.position().y = number3dA.y;
     }
 
-    public void c(com.tsf.shell.f.i.b bVar) {
+    public void c(com.tsf.shell.f.i.B bVar) {
         e();
         this.d.b(bVar);
     }
@@ -241,23 +241,23 @@ public class e extends j {
     public void a(MotionEvent motionEvent) {
     }
 
-    public void d(com.tsf.shell.f.i.b bVar) {
+    public void d(com.tsf.shell.f.i.B bVar) {
         this.d.c(bVar);
     }
 
-    public boolean e(com.tsf.shell.f.i.b bVar) {
+    public boolean e(com.tsf.shell.f.i.B bVar) {
         b(bVar);
         this.d.d(bVar);
         return true;
     }
 
-    public com.tsf.shell.f.i.b e(MotionEvent motionEvent) {
+    public com.tsf.shell.f.i.B e(MotionEvent motionEvent) {
         float[] fArrA = x.a(motionEvent);
         float f = fArrA[0];
         float f2 = fArrA[1];
         for (i iVar : this.a.children()) {
             if (iVar.calTouchCollision(f, f2)) {
-                return (com.tsf.shell.f.i.b) iVar;
+                return (com.tsf.shell.f.i.B) iVar;
             }
         }
         return null;

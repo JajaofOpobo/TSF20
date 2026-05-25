@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.f.a.a {
+public class a extends com.censivn.C3DEngine.b.f._a.a {
     private static com.tsf.shell.f.a.a.a i;
     private static TextureElement j;
     private static TextureElement k;
@@ -94,7 +94,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.a.a, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         boolean z;
         super.onDrawStart();

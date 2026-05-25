@@ -21,14 +21,14 @@ public class A extends h {
 
     /* JADX INFO: renamed from: com.tsf.shell.f.d.e.a$a, reason: collision with other inner class name */
     public interface InterfaceC0090a {
-        void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable);
+        void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable);
 
-        void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable);
+        void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public A(InterfaceC0090a interfaceC0090a) {
-        super(new com.censivn.C3DEngine.b.f.a.a(16, 30, 30));
+        super(new com.censivn.C3DEngine.b.f._a.a(16, 30, 30));
         int i = 0;
         this.d = false;
         this.f = interfaceC0090a;
@@ -50,11 +50,11 @@ public class A extends h {
                 }
             }
         }
-        com.censivn.C3DEngine.b.f.a.a aVar = (com.censivn.C3DEngine.b.f.a.a) this.e;
+        com.censivn.C3DEngine.b.f._a.a aVar = (com.censivn.C3DEngine.b.f._a.a) this.e;
         while (true) {
             int i4 = i;
             if (i4 < a.size()) {
-                com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i4);
+                com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a(i4);
                 bVarA.e(1, 1);
                 Number3d number3d2 = a.get(i4);
                 bVarA.m.x = number3d2.x;
@@ -77,7 +77,7 @@ public class A extends h {
                 this.i = new Runnable() { // from class: com.tsf.shell.f.d.e.a.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.f.b((com.censivn.C3DEngine.b.f.a.a) a.this.e, a.this.g);
+                        a.this.f.b((com.censivn.C3DEngine.b.f._a.a) a.this.e, a.this.g);
                     }
                 };
                 calAABB();
@@ -90,7 +90,7 @@ public class A extends h {
     public void onDrawStart() {
         if (!this.d) {
             this.d = true;
-            this.f.a((com.censivn.C3DEngine.b.f.a.a) this.e, this.i);
+            this.f.a((com.censivn.C3DEngine.b.f._a.a) this.e, this.i);
         }
     }
 

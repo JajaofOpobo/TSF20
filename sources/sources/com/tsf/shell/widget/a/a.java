@@ -23,7 +23,7 @@ public class A extends com.censivn.C3DEngine.b.f.j {
     private int G;
     private int H;
     private int I;
-    private com.censivn.C3DEngine.b.f.a.a J;
+    private com.censivn.C3DEngine.b.f._a.a J;
     int a;
     public c c;
     private VTextureManager d;
@@ -31,7 +31,7 @@ public class A extends com.censivn.C3DEngine.b.f.j {
     private int g;
     private int h;
     private C0169a i;
-    private com.censivn.C3DEngine.b.f.a.a j;
+    private com.censivn.C3DEngine.b.f._a.a j;
     private d k;
     private d l;
     private i m;
@@ -63,16 +63,16 @@ public class A extends com.censivn.C3DEngine.b.f.j {
         Bitmap bitmapA = a(this.v, (int) (30.0f * fXHDScale));
         this.B = this.d.createTexture(bitmapA, true);
         bitmapA.recycle();
-        this.j = new com.censivn.C3DEngine.b.f.a.a(60, 20, 20, 20, null, true);
+        this.j = new com.censivn.C3DEngine.b.f._a.a(60, 20, 20, 20, null, true);
         this.j.textures().addElement(this.B);
         for (int i = 0; i < 60; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.j.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA = this.j.a(i);
             this.u[i] = new b(bVarA, 250.0f, ((-6.0f) * i) + 90.0f);
             bVarA.b(0, 0, 1, 1);
             bVarA.h();
         }
         for (int i2 = 0; i2 < 60; i2 += 2) {
-            com.censivn.C3DEngine.b.f.a.b bVarA2 = this.j.a(i2);
+            com.censivn.C3DEngine.b.f._a.b bVarA2 = this.j.a(i2);
             int i3 = i2 + 3;
             if (i3 >= 60) {
                 i3 %= 60;
@@ -86,11 +86,11 @@ public class A extends com.censivn.C3DEngine.b.f.j {
         this.y = this.d.createTexture(bitmapA2, true);
         bitmapA2.recycle();
         int size = this.t.size();
-        this.J = new com.censivn.C3DEngine.b.f.a.a(size, 1, this.x, 4, null, true);
+        this.J = new com.censivn.C3DEngine.b.f._a.a(size, 1, this.x, 4, null, true);
         this.J.textures().addElement(this.y);
         for (int i4 = 0; i4 < size; i4++) {
             j jVar = this.t.get(i4);
-            com.censivn.C3DEngine.b.f.a.b bVarA3 = this.J.a(i4);
+            com.censivn.C3DEngine.b.f._a.b bVarA3 = this.J.a(i4);
             bVarA3.a(0.0f);
             bVarA3.b(0, 0, this.x, 4);
             jVar.a(bVarA3);
@@ -223,7 +223,7 @@ public class A extends com.censivn.C3DEngine.b.f.j {
         return bitmapCreateBitmap;
     }
 
-    private float a(com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2) {
+    private float a(com.censivn.C3DEngine.b.f._a.b bVar, com.censivn.C3DEngine.b.f._a.b bVar2) {
         float f = bVar2.i().x - bVar.i().x;
         float f2 = bVar2.i().y - bVar.i().y;
         return (float) Math.sqrt((f * f) + (f2 * f2));
@@ -289,13 +289,13 @@ public class A extends com.censivn.C3DEngine.b.f.j {
     private void c(int i) {
         this.v = i;
         for (int i2 = 0; i2 < 60; i2++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.j.a(i2);
+            com.censivn.C3DEngine.b.f._a.b bVarA = this.j.a(i2);
             bVarA.H.set(this.v);
             bVarA.h();
         }
         int iB = this.J.b();
         for (int i3 = 0; i3 < iB; i3++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA2 = this.J.a(i3);
+            com.censivn.C3DEngine.b.f._a.b bVarA2 = this.J.a(i3);
             bVarA2.H.set(this.v);
             bVarA2.h();
         }

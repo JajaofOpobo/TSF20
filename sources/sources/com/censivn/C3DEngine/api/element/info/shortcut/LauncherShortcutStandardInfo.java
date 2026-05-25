@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.b;
-import com.tsf.shell.f.i.b.e.b;
 import com.tsf.shell.manager.o.A;
 import com.tsf.shell.utils.q;
 import com.tsf.shell.utils.x;
@@ -99,7 +98,7 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
         if (z) {
             q.a(canvas, 10.0f, 175.0f, 5.0f, -49152);
         }
-        com.tsf.shell.f.i.b.e.b.a(bitmapA);
+        com.tsf.shell.f.i._b.e.b.a(bitmapA);
         return bitmapA;
     }
 }

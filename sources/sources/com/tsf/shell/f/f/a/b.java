@@ -9,32 +9,32 @@ public class B {
     private com.tsf.shell.manager.a.e a;
     private boolean c = false;
     private boolean d = false;
-    private ArrayList<com.tsf.shell.f.i.b> b = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.B> b = new ArrayList<>();
 
     public B(com.tsf.shell.manager.a.e eVar) {
         this.a = eVar;
     }
 
-    public ArrayList<com.tsf.shell.f.i.b> a() {
+    public ArrayList<com.tsf.shell.f.i.B> a() {
         return this.b;
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         this.b.add(bVar);
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, int i) {
+    public void a(com.tsf.shell.f.i.B bVar, int i) {
         this.b.add(i, bVar);
     }
 
-    public boolean b(com.tsf.shell.f.i.b bVar) {
+    public boolean b(com.tsf.shell.f.i.B bVar) {
         return this.b.remove(bVar);
     }
 
     public void b() {
-        for (com.tsf.shell.f.i.b bVar : this.b) {
-            if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-                com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
+        for (com.tsf.shell.f.i.B bVar : this.b) {
+            if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
+                com.tsf.shell.f.i._b.d.b bVar2 = (com.tsf.shell.f.i._b.d.b) bVar;
                 com.tsf.shell.manager.a.w.c().a(bVar2.K());
                 bVar2.g();
                 bVar2.destroy();
@@ -43,7 +43,7 @@ public class B {
         this.b.clear();
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, com.tsf.shell.f.i.b bVar2) {
+    public void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
         this.b.set(this.b.indexOf(bVar), bVar2);
     }
 
@@ -67,7 +67,7 @@ public class B {
     public boolean g() {
         if (this.c) {
             this.c = false;
-            Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a.b.1
+            Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a._b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.a.h.t().ak();
@@ -86,10 +86,10 @@ public class B {
     }
 
     public void a(final Runnable runnable) {
-        com.tsf.shell.e.a(b.i.notic_save_settings, b.i.public_action_ok, b.i.public_action_restore, new Runnable() { // from class: com.tsf.shell.f.f.a.b.2
+        com.tsf.shell.e.a(b.i.notic_save_settings, b.i.public_action_ok, b.i.public_action_restore, new Runnable() { // from class: com.tsf.shell.f.f.a._b.2
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.2.1
+                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._b.2.1
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.h();
@@ -99,10 +99,10 @@ public class B {
                     }
                 });
             }
-        }, new Runnable() { // from class: com.tsf.shell.f.f.a.b.3
+        }, new Runnable() { // from class: com.tsf.shell.f.f.a._b.3
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.3.1
+                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._b.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.manager.a.h.t().am().e();

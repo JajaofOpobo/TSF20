@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
-    private ArrayList<f> a = new ArrayList<>();
+    private ArrayList<F> a = new ArrayList<>();
 
-    public void a(f fVar) {
+    public void a(F fVar) {
         if (fVar != null) {
             if (this.a.contains(fVar)) {
                 com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is exist");
@@ -22,7 +22,7 @@ public class a {
         com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is null");
     }
 
-    public void b(f fVar) {
+    public void b(F fVar) {
         if (fVar != null) {
             if (this.a.contains(fVar)) {
                 com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is exist");
@@ -35,7 +35,7 @@ public class a {
         com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is null");
     }
 
-    public void c(f fVar) {
+    public void c(F fVar) {
         if (this.a.contains(fVar)) {
             this.a.remove(fVar);
         } else {
@@ -43,7 +43,7 @@ public class a {
         }
     }
 
-    public ArrayList<f> a() {
+    public ArrayList<F> a() {
         return this.a;
     }
 
@@ -52,14 +52,14 @@ public class a {
         private float[] a = {0.0f, 0.0f};
         private boolean b = false;
 
-        public void a(final f fVar, MotionEvent motionEvent) {
+        public void a(final F fVar, MotionEvent motionEvent) {
             if (fVar.o()) {
                 x.a(motionEvent, this.a);
                 if (!this.b) {
                     com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.a.a.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            f fVarA = fVar.a((int) C0127a.this.a[0], (int) C0127a.this.a[1]);
+                            F fVarA = fVar.a((int) C0127a.this.a[0], (int) C0127a.this.a[1]);
                             C0127a.this.b = false;
                             if (fVarA != null && C0127a.this.a(fVarA)) {
                                 fVar.f(fVarA);
@@ -73,7 +73,7 @@ public class a {
             }
         }
 
-        public boolean a(f fVar) {
+        public boolean a(F fVar) {
             return true;
         }
     }

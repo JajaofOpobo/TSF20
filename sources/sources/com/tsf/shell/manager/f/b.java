@@ -16,14 +16,14 @@ import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 public class b extends j implements e.a, ShellWallpaperManager.a {
     public static int b = 0;
     private j.a f;
-    private com.tsf.shell.f.e.b.a g;
+    private com.tsf.shell.f.e._b.a g;
     private d.b h;
     private a i;
     private j.a j;
     public Object a = new Object();
     private boolean d = false;
     private boolean e = false;
-    private com.tsf.shell.f.e.b.b k = new com.tsf.shell.f.e.b.b();
+    private com.tsf.shell.f.e._b.b k = new com.tsf.shell.f.e._b.b();
     private boolean l = false;
     private k c = new k(0.0f, 0.0f);
 
@@ -32,7 +32,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
         this.c.uvs().set(1, 0.0f, 0.0f);
         this.c.uvs().set(2, 1.0f, 1.0f);
         this.c.uvs().set(3, 0.0f, 1.0f);
-        this.g = new com.tsf.shell.f.e.b.a();
+        this.g = new com.tsf.shell.f.e._b.a();
         this.h = new d.b() { // from class: com.tsf.shell.manager.f.b.1
             @Override // com.censivn.C3DEngine.b.c.d.b
             public void a() {
@@ -65,7 +65,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
         return this.g.getHittingTarget(f, f2, false);
     }
 
-    public com.tsf.shell.f.e.b.a a() {
+    public com.tsf.shell.f.e._b.a a() {
         return this.g;
     }
 
@@ -215,7 +215,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
         }
     }
 
-    public TextureElement a(com.tsf.shell.f.e.g.d dVar) {
+    public TextureElement a(com.tsf.shell.f.e._g.d dVar) {
         b = 3;
         com.tsf.shell.manager.a.f.a(this);
         if (this.g.a()) {
@@ -225,7 +225,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
         return this.k.a;
     }
 
-    public void b(com.tsf.shell.f.e.g.d dVar) {
+    public void b(com.tsf.shell.f.e._g.d dVar) {
         this.l = false;
         b = 0;
         com.tsf.shell.manager.a.f.b(this);

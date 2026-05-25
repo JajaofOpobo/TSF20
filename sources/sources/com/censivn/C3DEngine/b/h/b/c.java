@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.f.e.d.a.c;
+import com.tsf.shell.f.e._d.a.c;
 import com.tsf.shell.f.i.A;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -47,7 +47,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
     private TextureElement f;
     private com.censivn.C3DEngine.b.d.a g;
     private e h;
-    private com.tsf.shell.f.i.a i;
+    private com.tsf.shell.f.i.A i;
     private ArrayList<Number3d> j;
     private float k;
     private float l;
@@ -209,14 +209,14 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
 
             @Override // com.censivn.C3DEngine.b.h.b.e
             public void b(MotionEvent motionEvent) {
-                com.tsf.shell.f.i.b bVarE = e(motionEvent);
+                com.tsf.shell.f.i.B bVarE = e(motionEvent);
                 if (bVarE != null && c.this.i.e()) {
-                    ((com.tsf.shell.f.i.c) bVarE).ap();
+                    ((com.tsf.shell.f.i.C) bVarE).ap();
                 }
             }
         };
-        this.i = new com.tsf.shell.f.i.a(this, this) { // from class: com.censivn.C3DEngine.b.h.b.c.4
-            @Override // com.tsf.shell.f.i.a
+        this.i = new com.tsf.shell.f.i.A(this, this) { // from class: com.censivn.C3DEngine.b.h.b.c.4
+            @Override // com.tsf.shell.f.i.A
             public void a() {
                 c.this.f();
             }
@@ -313,7 +313,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.a.InterfaceC0113a
+    @Override // com.tsf.shell.f.i._a.InterfaceC0113a
     public ArrayList<i> b() {
         return this.h.b().children();
     }
@@ -352,7 +352,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
         h();
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         this.j.add(bVar.position().m4clone());
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.e(0.0f);
@@ -362,8 +362,8 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
         h();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.b> arrayList) {
-        for (com.tsf.shell.f.i.b bVar : arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
+        for (com.tsf.shell.f.i.B bVar : arrayList) {
             this.j.add(bVar.position().m4clone());
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.e(0.0f);
@@ -582,7 +582,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
                 iVar.mouseEnabled(true);
                 iVar.removeFromParent();
                 this.O.a(iVar);
-                ((com.tsf.shell.f.i.b) iVar).ad();
+                ((com.tsf.shell.f.i.B) iVar).ad();
             }
             this.j.clear();
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.h.b.c.7
@@ -605,7 +605,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
             dVar.a(0);
             com.censivn.C3DEngine.b.g.c.a(this.b);
             com.censivn.C3DEngine.b.g.c.a(this.b, 300, dVar);
-            com.tsf.shell.f.e.g.d.onTempleteShow();
+            com.tsf.shell.f.e._g.d.onTempleteShow();
             if (this.P != null) {
                 this.P.a();
                 this.P = null;
@@ -647,12 +647,12 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
-    public void b(com.tsf.shell.f.i.b bVar) {
+    public void b(com.tsf.shell.f.i.B bVar) {
         this.m = true;
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
-    public void c(com.tsf.shell.f.i.b bVar) {
+    public void c(com.tsf.shell.f.i.B bVar) {
         this.m = false;
     }
 
@@ -666,7 +666,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
-    public void d(com.tsf.shell.f.i.b bVar) {
+    public void d(com.tsf.shell.f.i.B bVar) {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
@@ -682,11 +682,11 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
-    public void e(com.tsf.shell.f.i.b bVar) {
+    public void e(com.tsf.shell.f.i.B bVar) {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.d
-    public void a(com.tsf.shell.f.i.b bVar, Number3d number3d) {
+    public void a(com.tsf.shell.f.i.B bVar, Number3d number3d) {
     }
 
     @Override // com.censivn.C3DEngine.b.c.e.a

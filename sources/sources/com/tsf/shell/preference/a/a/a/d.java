@@ -16,7 +16,7 @@ public class d extends h {
     private Runnable g;
     private boolean h;
     private int i;
-    private ArrayList<com.tsf.shell.manager.o.a.b> j;
+    private ArrayList<com.tsf.shell.manager.o._a.b> j;
 
     public d(String str) {
         super(str, com.censivn.C3DEngine.b.b.a.a(238.0f));
@@ -30,10 +30,10 @@ public class d extends h {
             }
         };
         this.j = new ArrayList<>();
-        this.j.add(com.tsf.shell.manager.o.a.c.c(0));
-        this.j.add(com.tsf.shell.manager.o.a.c.c(1));
-        this.j.add(com.tsf.shell.manager.o.a.c.c(3));
-        this.j.add(com.tsf.shell.manager.o.a.c.c(8));
+        this.j.add(com.tsf.shell.manager.o._a.c.c(0));
+        this.j.add(com.tsf.shell.manager.o._a.c.c(1));
+        this.j.add(com.tsf.shell.manager.o._a.c.c(3));
+        this.j.add(com.tsf.shell.manager.o._a.c.c(8));
         this.a = new com.censivn.C3DEngine.b.b.a.d() { // from class: com.tsf.shell.preference.a.a.a.d.2
             @Override // com.censivn.C3DEngine.b.b.a.d
             public float b(float f) {
@@ -46,8 +46,8 @@ public class d extends h {
         this.b = new com.censivn.C3DEngine.b.b.a.b();
         this.a.c(this.b);
         for (int i = 0; i < this.j.size(); i++) {
-            com.tsf.shell.manager.o.a.b bVar = this.j.get(i);
-            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.b.c.J, com.tsf.shell.manager.o.b.c.K + com.tsf.shell.manager.o.a.b.d, false);
+            com.tsf.shell.manager.o._a.b bVar = this.j.get(i);
+            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.b.c.J, com.tsf.shell.manager.o.b.c.K + com.tsf.shell.manager.o._a.b.d, false);
             kVar.textures().addElement(bVar.b());
             kVar.calAABB(1.2f, 1.0f, 1.0f);
             this.b.addChild(kVar);

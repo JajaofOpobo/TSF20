@@ -17,7 +17,7 @@ public class B {
 
     public static void a() {
         e = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_ANDROID_RESIZE_MATCH_BOX, 64, 64);
-        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.b.1
+        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e._b.1
             @Override // java.lang.Runnable
             public void run() {
                 b.a = b.e.id;
@@ -26,7 +26,7 @@ public class B {
         e.setReloadThemeRunnable(runnable);
         runnable.run();
         f = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_ANDROID_RESIZE_UNMATCH_BOX, 64, 64);
-        Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e.b.2
+        Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e._b.2
             @Override // java.lang.Runnable
             public void run() {
                 b.b = b.f.id;
@@ -35,7 +35,7 @@ public class B {
         f.setReloadThemeRunnable(runnable2);
         runnable2.run();
         g = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_TSF_RESIZE_BOX, 64, 64);
-        Runnable runnable3 = new Runnable() { // from class: com.tsf.shell.f.e.b.3
+        Runnable runnable3 = new Runnable() { // from class: com.tsf.shell.f.e._b.3
             @Override // java.lang.Runnable
             public void run() {
                 b.c = b.g.id;
@@ -44,7 +44,7 @@ public class B {
         g.setReloadThemeRunnable(runnable3);
         runnable3.run();
         h = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_BORDER_BOX, 64, 64);
-        Runnable runnable4 = new Runnable() { // from class: com.tsf.shell.f.e.b.4
+        Runnable runnable4 = new Runnable() { // from class: com.tsf.shell.f.e._b.4
             @Override // java.lang.Runnable
             public void run() {
                 b.d = b.h.id;
@@ -54,7 +54,7 @@ public class B {
         runnable4.run();
     }
 
-    public static com.censivn.C3DEngine.b.f.b.a a(int i, int i2) {
-        return new com.censivn.C3DEngine.b.f.b.a(i, i2, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+    public static com.censivn.C3DEngine.b.f._b.a a(int i, int i2) {
+        return new com.censivn.C3DEngine.b.f._b.a(i, i2, new com.censivn.C3DEngine.b.f._b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
     }
 }
