@@ -9,7 +9,7 @@ import com.tsf.shell.utils.w;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends com.tsf.shell.f.e._g.a.b {
+public class e extends com.tsf.shell.f.e.g.a.b {
     public com.tsf.shell.manager.r.b.a a;
     private h b;
     private com.tsf.shell.manager.action.toggle.a c;
@@ -45,7 +45,7 @@ public class e extends com.tsf.shell.f.e._g.a.b {
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
-                com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(e.this.c.a().get(i).a, com.tsf.shell.manager.o.b.b);
+                com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(e.this.c.a().get(i).a, com.tsf.shell.manager.o.b.b);
                 bVarA.K().onUpdatePhoto(null, null);
                 aVar.b().a(bVarA);
             }
@@ -64,27 +64,27 @@ public class e extends com.tsf.shell.f.e._g.a.b {
         });
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onShow() {
         this.b.d();
         super.onShow();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onHide() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onRecycle() {
         Iterator<com.tsf.shell.manager.action.toggle.b> it = this.c.a().iterator();
         while (it.hasNext()) {
@@ -93,12 +93,12 @@ public class e extends com.tsf.shell.f.e._g.a.b {
     }
 
     class a extends j {
-        private com.tsf.shell.f.i._b.e.j b;
+        private com.tsf.shell.f.i.b.e.j b;
 
         public a() {
         }
 
-        public void a(com.tsf.shell.f.i._b.e.j jVar) {
+        public void a(com.tsf.shell.f.i.b.e.j jVar) {
             this.b = jVar;
         }
 

@@ -17,7 +17,7 @@ public class d extends j {
     private a.b f;
     private TextureElement a = new TextureElement(0, false);
     private boolean c = false;
-    private com.censivn.C3DEngine.b.f._a.a d = new com.censivn.C3DEngine.b.f._a.a(2, 1, 1, true);
+    private com.censivn.C3DEngine.b.f.a.a d = new com.censivn.C3DEngine.b.f.a.a(2, 1, 1, true);
     private m e = new m();
 
     public d() {
@@ -88,7 +88,7 @@ public class d extends j {
     private void i() {
         int iA = (int) com.censivn.C3DEngine.b.b.a.a(50.0f);
         if (this.a.id == 0) {
-            com.tsf.shell.manager.o._a.a aVar = new com.tsf.shell.manager.o._a.a();
+            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
             aVar.h(36);
             aVar.i(-1);
             aVar.f(VEasing.Linear.easeNone);
@@ -105,8 +105,8 @@ public class d extends j {
             bitmapB.recycle();
         }
         this.d.a(1, this.a.width, this.a.height);
-        com.censivn.C3DEngine.b.f._a.b bVarA = this.d.a(0);
-        com.censivn.C3DEngine.b.f._a.b bVarA2 = this.d.a(1);
+        com.censivn.C3DEngine.b.f.a.b bVarA = this.d.a(0);
+        com.censivn.C3DEngine.b.f.a.b bVarA2 = this.d.a(1);
         bVarA.i().x = ((-this.a.width) / 2.0f) + (iA / 2.0f);
         bVarA.b(0, 0, iA, this.a.height);
         bVarA.h();

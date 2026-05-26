@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.c.a.d;
 import com.censivn.C3DEngine.c.a.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends d implements com.censivn.C3DEngine.c.B {
+public class c extends d implements com.censivn.C3DEngine.c.b {
     public float c;
     public Vector3 b = new Vector3(0.0f, 1.0f, 0.0f);
     public Vector3 d = new Vector3(0.0f, 0.0f, 0.0f);

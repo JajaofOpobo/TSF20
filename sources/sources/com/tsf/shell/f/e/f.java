@@ -2,31 +2,31 @@ package com.tsf.shell.f.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public interface F {
-    F a(int i, int i2);
+    f a(int i, int i2);
 
-    void a(F fVar);
+    void a(f fVar);
 
     boolean a();
 
-    boolean a(F fVar, float f, float f2);
+    boolean a(f fVar, float f, float f2);
 
-    boolean b(F fVar);
+    boolean b(f fVar);
 
-    void c(F fVar);
+    void c(f fVar);
 
-    void d(F fVar);
+    void d(f fVar);
 
-    void e(F fVar);
+    void e(f fVar);
 
-    void f(F fVar);
+    void f(f fVar);
 
-    void g(F fVar);
+    void g(f fVar);
 
-    boolean h(F fVar);
+    boolean h(f fVar);
 
     int m();
 
-    F n();
+    f n();
 
     boolean o();
 

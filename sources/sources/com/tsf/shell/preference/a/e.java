@@ -2,7 +2,7 @@ package com.tsf.shell.preference.a;
 
 import com.tsf.shell.f.c.a.f;
 import com.tsf.shell.f.e.j;
-import com.tsf.shell.f.i._b.e.h;
+import com.tsf.shell.f.i.b.e.h;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -10,7 +10,7 @@ public class e extends b {
     private com.tsf.shell.f.c.a.f a;
     private float b;
     private j d;
-    private ArrayList<com.tsf.shell.f.i._b.e.b> e;
+    private ArrayList<com.tsf.shell.f.i.b.e.b> e;
 
     public e(float f) {
         super(f);
@@ -35,7 +35,7 @@ public class e extends b {
         while (true) {
             int i2 = i;
             if (i2 < 8) {
-                com.tsf.shell.f.i._b.e.b bVar = this.e.get(i2);
+                com.tsf.shell.f.i.b.e.b bVar = this.e.get(i2);
                 bVar.k.textures().clear();
                 bVar.k.textures().addElement(com.tsf.shell.manager.a.B.a.a(i2));
                 i = i2 + 1;
@@ -82,7 +82,7 @@ public class e extends b {
         this.d = new j(false);
         this.d.a(5);
         this.d.b(2);
-        for (com.tsf.shell.f.i._b.e.b bVar : this.e) {
+        for (com.tsf.shell.f.i.b.e.b bVar : this.e) {
             this.a.g().addChild(bVar);
             this.b = (bVar.maxX() - bVar.minX()) + this.b;
         }

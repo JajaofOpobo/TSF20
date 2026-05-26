@@ -195,7 +195,7 @@ public class A {
     public static float[] a(b bVar, float f, float f2) {
         float[] fArr = {f, f2};
         float fU = bVar.u();
-        if (bVar instanceof com.tsf.shell.f.i._b.c.a) {
+        if (bVar instanceof com.tsf.shell.f.i.b.c.a) {
             if (f > com.censivn.C3DEngine.b.b.a.A) {
                 fArr[0] = com.censivn.C3DEngine.b.b.a.A;
             } else if (f < com.censivn.C3DEngine.b.b.a.z) {

@@ -8,7 +8,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
     private c c;
-    private ArrayList<com.tsf.shell.f.i._b.e.g> a = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.e.g> a = new ArrayList<>();
     private ArrayList<a> b = new ArrayList<>();
     private c.a d = new c.a() { // from class: com.tsf.shell.manager.a.b.1
         @Override // com.tsf.shell.manager.a.c.a
@@ -17,15 +17,15 @@ public class b {
         }
 
         @Override // com.tsf.shell.manager.a.c.a
-        public void a(com.tsf.shell.f.i._b.e.g gVar, boolean z) {
+        public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         }
 
         @Override // com.tsf.shell.manager.a.c.a
-        public void a(com.tsf.shell.f.i._b.e.g gVar) {
+        public void a(com.tsf.shell.f.i.b.e.g gVar) {
         }
 
         @Override // com.tsf.shell.manager.a.c.a
-        public void b(com.tsf.shell.f.i._b.e.g gVar, boolean z) {
+        public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         }
 
         @Override // com.tsf.shell.manager.a.c.a
@@ -63,9 +63,9 @@ public class b {
     public void b() {
         if (this.b.size() > 0) {
             this.a.clear();
-            ArrayList<com.tsf.shell.f.i._b.e.g> arrayListD = this.c.d();
+            ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = this.c.d();
             if (arrayListD != null) {
-                for (com.tsf.shell.f.i._b.e.g gVar : arrayListD) {
+                for (com.tsf.shell.f.i.b.e.g gVar : arrayListD) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) gVar.K();
                     if (launcherShortcutAppInfo == null || !launcherShortcutAppInfo.isHide) {
                         this.a.add(gVar);
@@ -83,11 +83,11 @@ public class b {
         return this.a.size();
     }
 
-    public com.tsf.shell.f.i._b.e.g a(int i) {
+    public com.tsf.shell.f.i.b.e.g a(int i) {
         return this.a.get(i);
     }
 
-    public ArrayList<com.tsf.shell.f.i._b.e.g> d() {
+    public ArrayList<com.tsf.shell.f.i.b.e.g> d() {
         return this.a;
     }
 }

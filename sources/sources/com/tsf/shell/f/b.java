@@ -53,13 +53,13 @@ public class B {
             arrayList.add(aVar);
         }
         final int size = arrayList.size();
-        com.censivn.C3DEngine.b.f._a.a aVar2 = new com.censivn.C3DEngine.b.f._a.a(size, 100, 300, 100) { // from class: com.tsf.shell.f.b.2
-            @Override // com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
+        com.censivn.C3DEngine.b.f.a.a aVar2 = new com.censivn.C3DEngine.b.f.a.a(size, 100, 300, 100) { // from class: com.tsf.shell.f.b.2
+            @Override // com.censivn.C3DEngine.b.f.a.a, com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 boolean z2 = true;
                 for (int i2 = 0; i2 < size; i2++) {
                     a aVar3 = (a) arrayList.get(i2);
-                    com.censivn.C3DEngine.b.f._a.b bVarA = a(i2);
+                    com.censivn.C3DEngine.b.f.a.b bVarA = a(i2);
                     if (bVarA.i().y >= aVar3.f) {
                         bVarA.i().y -= aVar3.c;
                         bVarA.i().x = aVar3.e + ((float) (Math.sin(aVar3.h) * ((double) aVar3.d)));
@@ -89,7 +89,7 @@ public class B {
         aVar2.textures().addElement(b);
         for (int i2 = 0; i2 < size; i2++) {
             a aVar3 = (a) arrayList.get(i2);
-            com.censivn.C3DEngine.b.f._a.b bVarA = aVar2.a(i2);
+            com.censivn.C3DEngine.b.f.a.b bVarA = aVar2.a(i2);
             bVarA.i().x = aVar3.e;
             bVarA.m.y = aVar3.g;
             bVarA.a(0, 0, 1, 1, f, f);

@@ -2,7 +2,7 @@ package com.tsf.shell.manager.r.b.b;
 
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.C;
-import com.tsf.shell.f.e._g.d;
+import com.tsf.shell.f.e.g.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
@@ -26,7 +26,7 @@ public class a {
             dVar.h(-this.d.getHeight());
             dVar.a(0);
             c.a(this.c);
-            c.a(this.c, com.tsf.shell.f.e._g.a.c.ANIMATION_TIME, dVar);
+            c.a(this.c, com.tsf.shell.f.e.g.a.c.ANIMATION_TIME, dVar);
         } else {
             this.c.position().y = -this.d.getHeight();
             this.c.visible(false);
@@ -52,7 +52,7 @@ public class a {
             dVar.a(255);
             c.a(this.c);
             dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            c.a(this.c, com.tsf.shell.f.e._g.a.c.ANIMATION_TIME, dVar);
+            c.a(this.c, com.tsf.shell.f.e.g.a.c.ANIMATION_TIME, dVar);
         } else {
             this.c.alpha(255.0f);
             this.c.position().y = 0.0f;

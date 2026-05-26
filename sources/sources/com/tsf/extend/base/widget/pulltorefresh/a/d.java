@@ -22,7 +22,7 @@ import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
-public abstract class d extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.A {
+public abstract class d extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.a {
     static final Interpolator a = new LinearInterpolator();
     protected final ImageView b;
     protected final ProgressBar c;

@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.d;
 
 import android.annotation.SuppressLint;
 import com.censivn.C3DEngine.b.g.d;
-import com.tsf.shell.f.f.d._a.b;
+import com.tsf.shell.f.f.d.a.b;
 import com.tsf.shell.f.f.g;
 import com.tsf.shell.f.f.n;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class A {
 
     public A(n nVar) {
         this.a = nVar;
-        a(new com.tsf.shell.f.f.d._a.a());
+        a(new com.tsf.shell.f.f.d.a.a());
     }
 
     public void a(b bVar) {

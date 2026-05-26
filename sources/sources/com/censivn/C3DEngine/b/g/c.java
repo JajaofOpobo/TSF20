@@ -82,8 +82,8 @@ public class C {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.b((i) aVar, i, dVar);
             } else if (aVar instanceof com.censivn.C3DEngine.b.g.b.b) {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.d((com.censivn.C3DEngine.b.g.b.b) aVar, i, dVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.b.f._a.b) {
-                aVar2 = new com.censivn.C3DEngine.b.g.a.a((com.censivn.C3DEngine.b.f._a.b) aVar, i, dVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.b.f.a.b) {
+                aVar2 = new com.censivn.C3DEngine.b.g.a.a((com.censivn.C3DEngine.b.f.a.b) aVar, i, dVar);
             } else {
                 aVar2 = null;
             }

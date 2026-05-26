@@ -213,7 +213,7 @@ public class a extends com.tsf.extend.base.d.a {
     }
 
     /* JADX INFO: renamed from: com.tsf.extend.keyboard.a$a, reason: collision with other inner class name */
-    public static class C0054a extends com.tsf.extend.base.b.A<b> {
+    public static class C0054a extends com.tsf.extend.base.b.a<b> {
         @Override // com.tsf.extend.base.b.a
         public boolean h() {
             return b();

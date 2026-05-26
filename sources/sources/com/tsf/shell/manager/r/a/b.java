@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class b {
     private Object c = new Object();
     public a a = new a();
-    private ArrayList<com.tsf.shell.f.i._b.b.a> b = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.b.a> b = new ArrayList<>();
 
     public void a() {
     }
@@ -19,10 +19,10 @@ public class b {
     public void b() {
     }
 
-    public com.tsf.shell.f.i._b.b.a a(View view) {
+    public com.tsf.shell.f.i.b.b.a a(View view) {
         int size = this.b.size();
         for (int i = 0; i < size; i++) {
-            com.tsf.shell.f.i._b.b.a aVar = this.b.get(i);
+            com.tsf.shell.f.i.b.b.a aVar = this.b.get(i);
             if (aVar.g == view) {
                 if (aVar.a) {
                     return null;
@@ -33,7 +33,7 @@ public class b {
         return null;
     }
 
-    public void a(com.tsf.shell.f.i._b.b.a aVar) {
+    public void a(com.tsf.shell.f.i.b.b.a aVar) {
         if (!this.b.contains(aVar)) {
             synchronized (this.c) {
                 this.b.add(aVar);
@@ -45,7 +45,7 @@ public class b {
         Iterator<f> it = arrayList.iterator();
         while (it.hasNext()) {
             String packageName = it.next().b.getPackageName();
-            for (com.tsf.shell.f.i._b.b.a aVar : this.b) {
+            for (com.tsf.shell.f.i.b.b.a aVar : this.b) {
                 if (packageName.equals(aVar.f)) {
                     c(aVar);
                 }
@@ -53,12 +53,12 @@ public class b {
         }
     }
 
-    private void c(com.tsf.shell.f.i._b.b.a aVar) {
+    private void c(com.tsf.shell.f.i.b.b.a aVar) {
         aVar.p_();
         g.a(aVar, (Runnable) null);
     }
 
-    public void b(com.tsf.shell.f.i._b.b.a aVar) {
+    public void b(com.tsf.shell.f.i.b.b.a aVar) {
         synchronized (this.c) {
             this.b.remove(aVar);
         }

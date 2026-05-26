@@ -30,10 +30,10 @@ public class d implements c.a {
     private HashMap<Integer, LauncherDrawerFolder3DInfo> b = new HashMap<>();
     private boolean c = false;
     private boolean d = false;
-    private ArrayList<com.tsf.shell.f.i._b.e.g> g = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.e.g> g = new ArrayList<>();
 
     public interface a {
-        void a(ArrayList<com.tsf.shell.f.i.B> arrayList);
+        void a(ArrayList<com.tsf.shell.f.i.b> arrayList);
     }
 
     public d(e eVar) {
@@ -66,18 +66,18 @@ public class d implements c.a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public ArrayList<com.tsf.shell.f.i.B> a(ArrayList<ItemInfo> arrayList) {
+    public ArrayList<com.tsf.shell.f.i.b> a(ArrayList<ItemInfo> arrayList) {
         System.currentTimeMillis();
-        ArrayList<com.tsf.shell.f.i._b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.a.w.a().d().clone();
-        ArrayList<com.tsf.shell.f.i.B> arrayList3 = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.a.w.a().d().clone();
+        ArrayList<com.tsf.shell.f.i.b> arrayList3 = new ArrayList<>();
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo instanceof LauncherShortcutAppInfo) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                com.tsf.shell.f.i._b.e.g gVarA = a(launcherShortcutAppInfo, arrayList2);
+                com.tsf.shell.f.i.b.e.g gVarA = a(launcherShortcutAppInfo, arrayList2);
                 if (gVarA != null) {
                     gVarA.b(itemInfo);
                 } else {
-                    gVarA = new com.tsf.shell.f.i._b.e.g(launcherShortcutAppInfo, com.tsf.shell.f.i._b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo), true);
+                    gVarA = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo), true);
                     com.tsf.shell.manager.a.w.a().a(gVarA, false, false);
                     gVarA.b(itemInfo);
                     gVarA.setMouseEventListener(com.tsf.shell.manager.a.h.t().f(gVarA));
@@ -87,35 +87,35 @@ public class d implements c.a {
                 LauncherFolder3DInfo launcherFolder3DInfo = (LauncherFolder3DInfo) itemInfo;
                 for (ItemInfo itemInfo2 : launcherFolder3DInfo.getItemInfo()) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo2 = (LauncherShortcutAppInfo) itemInfo2;
-                    com.tsf.shell.f.i._b.e.g gVarA2 = a(launcherShortcutAppInfo2, arrayList2);
+                    com.tsf.shell.f.i.b.e.g gVarA2 = a(launcherShortcutAppInfo2, arrayList2);
                     if (gVarA2 != null) {
                         gVarA2.b(itemInfo2);
                     } else {
-                        com.tsf.shell.f.i._b.e.g gVar = new com.tsf.shell.f.i._b.e.g(launcherShortcutAppInfo2, com.tsf.shell.f.i._b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo2), true);
+                        com.tsf.shell.f.i.b.e.g gVar = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo2, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo2), true);
                         gVar.b(itemInfo2);
                         com.tsf.shell.manager.a.w.a().a(gVar, false, false);
                     }
                 }
-                com.tsf.shell.f.i._b.d.b bVarA = com.tsf.shell.f.i._b.d.b.a(launcherFolder3DInfo);
+                com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(launcherFolder3DInfo);
                 bVarA.setMouseEventListener(com.tsf.shell.manager.a.h.t().f(bVarA));
                 arrayList3.add(bVarA);
             }
         }
         com.tsf.shell.manager.a.w.b().a(arrayList3);
-        for (com.tsf.shell.f.i._b.e.g gVar2 : arrayList2) {
+        for (com.tsf.shell.f.i.b.e.g gVar2 : arrayList2) {
             gVar2.b(new LauncherShortcutAppInfo());
             arrayList3.add(com.tsf.shell.manager.a.w.b().a(arrayList3, gVar2), gVar2);
         }
         return arrayList3;
     }
 
-    private com.tsf.shell.f.i._b.e.g a(LauncherShortcutAppInfo launcherShortcutAppInfo, ArrayList<com.tsf.shell.f.i._b.e.g> arrayList) {
+    private com.tsf.shell.f.i.b.e.g a(LauncherShortcutAppInfo launcherShortcutAppInfo, ArrayList<com.tsf.shell.f.i.b.e.g> arrayList) {
         if (launcherShortcutAppInfo.intent == null) {
             return null;
         }
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            com.tsf.shell.f.i._b.e.g gVar = arrayList.get(i);
+            com.tsf.shell.f.i.b.e.g gVar = arrayList.get(i);
             if (gVar.bd().b.equals(launcherShortcutAppInfo.intent.getComponent())) {
                 arrayList.remove(i);
                 return gVar;
@@ -346,15 +346,15 @@ public class d implements c.a {
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void a(com.tsf.shell.f.i._b.e.g gVar, boolean z) {
+    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void a(com.tsf.shell.f.i._b.e.g gVar) {
+    public void a(com.tsf.shell.f.i.b.e.g gVar) {
     }
 
     public void d() {
-        Iterator<com.tsf.shell.f.i._b.e.g> it = this.g.iterator();
+        Iterator<com.tsf.shell.f.i.b.e.g> it = this.g.iterator();
         while (it.hasNext()) {
             b(it.next(), false);
         }
@@ -363,7 +363,7 @@ public class d implements c.a {
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void b(com.tsf.shell.f.i._b.e.g gVar, boolean z) {
+    public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         if (this.d) {
             a(gVar.K());
         } else {

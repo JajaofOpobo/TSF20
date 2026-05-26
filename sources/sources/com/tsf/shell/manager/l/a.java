@@ -11,10 +11,10 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardI
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
 import com.tsf.shell.D;
-import com.tsf.shell.f.i._b.e.c;
-import com.tsf.shell.f.i._b.e.f;
-import com.tsf.shell.f.i._b.e.g;
-import com.tsf.shell.f.i._b.e.i;
+import com.tsf.shell.f.i.b.e.c;
+import com.tsf.shell.f.i.b.e.f;
+import com.tsf.shell.f.i.b.e.g;
+import com.tsf.shell.f.i.b.e.i;
 import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.bind.ShellModel;
 import java.util.ArrayList;
@@ -38,10 +38,10 @@ public class a implements a.InterfaceC0025a {
             }
         }
 
-        public void a(com.tsf.shell.f.i._b.e.b bVar) {
+        public void a(com.tsf.shell.f.i.b.e.b bVar) {
         }
 
-        public com.tsf.shell.manager.o.A a() {
+        public com.tsf.shell.manager.o.a a() {
             return com.tsf.shell.manager.o.b.a;
         }
     }
@@ -96,11 +96,11 @@ public class a implements a.InterfaceC0025a {
         }
     }
 
-    public static com.tsf.shell.f.i._b.e.b a(ItemInfo itemInfo, boolean z) {
+    public static com.tsf.shell.f.i.b.e.b a(ItemInfo itemInfo, boolean z) {
         return a(itemInfo, com.tsf.shell.manager.o.b.a, z);
     }
 
-    public static com.tsf.shell.f.i._b.e.b a(ItemInfo itemInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
+    public static com.tsf.shell.f.i.b.e.b a(ItemInfo itemInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
         switch (itemInfo.itemType) {
             case 2:
                 return new g((LauncherShortcutAppInfo) itemInfo, aVar, g.a((LauncherShortcut3DInfo) itemInfo), z);
@@ -111,7 +111,7 @@ public class a implements a.InterfaceC0025a {
         }
     }
 
-    private static com.tsf.shell.f.i._b.e.b b(ItemInfo itemInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
+    private static com.tsf.shell.f.i.b.e.b b(ItemInfo itemInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
         b.a aVarB;
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) itemInfo;
         int intExtra = launcherShortcut3DInfo.intent != null ? launcherShortcut3DInfo.intent.getIntExtra("action", 0) : 0;
@@ -130,7 +130,7 @@ public class a implements a.InterfaceC0025a {
         }
     }
 
-    public static void a(com.tsf.shell.f.i._b.e.b bVar) {
+    public static void a(com.tsf.shell.f.i.b.e.b bVar) {
         com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.a.h.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
@@ -147,7 +147,7 @@ public class a implements a.InterfaceC0025a {
         }
     }
 
-    public static com.tsf.shell.f.i._b.e.b a(String str, Bitmap bitmap, Intent.ShortcutIconResource shortcutIconResource, Intent intent, int i, int i2, float f, float f2, C0130a c0130a) {
+    public static com.tsf.shell.f.i.b.e.b a(String str, Bitmap bitmap, Intent.ShortcutIconResource shortcutIconResource, Intent intent, int i, int i2, float f, float f2, C0130a c0130a) {
         LauncherShortcutStandardInfo launcherShortcutStandardInfo = new LauncherShortcutStandardInfo();
         launcherShortcutStandardInfo.title = str;
         launcherShortcutStandardInfo.intent = intent;
@@ -160,16 +160,16 @@ public class a implements a.InterfaceC0025a {
         launcherShortcutStandardInfo.updateContainer(contentValues, i);
         launcherShortcutStandardInfo.updateDatabase(contentValues);
         if (c0130a != null) {
-            com.tsf.shell.f.i._b.e.b bVarA = a((ItemInfo) launcherShortcutStandardInfo, c0130a.a(), true);
+            com.tsf.shell.f.i.b.e.b bVarA = a((ItemInfo) launcherShortcutStandardInfo, c0130a.a(), true);
             c0130a.a(bVarA);
             return bVarA;
         }
-        com.tsf.shell.f.i._b.e.b bVarA2 = a((ItemInfo) launcherShortcutStandardInfo, true);
+        com.tsf.shell.f.i.b.e.b bVarA2 = a((ItemInfo) launcherShortcutStandardInfo, true);
         a(bVarA2);
         return bVarA2;
     }
 
-    public static com.tsf.shell.f.i._b.e.b a(int i, com.tsf.shell.manager.o.A aVar) {
+    public static com.tsf.shell.f.i.b.e.b a(int i, com.tsf.shell.manager.o.a aVar) {
         return a((ItemInfo) a(i, -1, 0, 0.0f, 0.0f, false), aVar, true);
     }
 
@@ -240,9 +240,9 @@ public class a implements a.InterfaceC0025a {
             }
         }
         map.clear();
-        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.a.w.d().a()) {
-            if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
-                ((com.tsf.shell.f.i._b.d.b) bVar).aQ();
+        for (com.tsf.shell.f.i.b bVar : com.tsf.shell.manager.a.w.d().a()) {
+            if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+                ((com.tsf.shell.f.i.b.d.b) bVar).aQ();
             }
         }
     }

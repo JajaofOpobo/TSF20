@@ -16,12 +16,12 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
     private com.censivn.C3DEngine.b.h.b.h b;
     private PackageManager e;
     private AppWidgetManager f;
-    private ArrayList<com.tsf.shell.f.i._c.e> g;
+    private ArrayList<com.tsf.shell.f.i.c.e> g;
     private a h;
     private float i;
-    private ArrayList<com.tsf.shell.f.i._c.f> j;
+    private ArrayList<com.tsf.shell.f.i.c.f> j;
 
-    public c(com.tsf.shell.f.e._g.d dVar, d dVar2) {
+    public c(com.tsf.shell.f.e.g.d dVar, d dVar2) {
         super(dVar);
         this.j = new ArrayList<>();
         this.a = dVar2;
@@ -50,7 +50,7 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
                 i hVar = iVar == null ? new h(c.this.i, c.this.d.getHeight() - com.censivn.C3DEngine.b.b.a.a(100.0f), com.censivn.C3DEngine.b.b.a.a(30.0f), false) : iVar;
-                ((h) hVar).a((com.tsf.shell.f.i._c.e) c.this.j.get(i), false);
+                ((h) hVar).a((com.tsf.shell.f.i.c.e) c.this.j.get(i), false);
                 return hVar;
             }
 
@@ -62,26 +62,26 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
         this.b.a(new f(this.d) { // from class: com.tsf.shell.manager.r.b.c.c.3
             @Override // com.tsf.shell.manager.r.b.c.f, com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                c.this.a((com.tsf.shell.f.i._c.e) c.this.j.get(i), 0.0f, c.this.d.getScreenFreeSpaceCenter());
+                c.this.a((com.tsf.shell.f.i.c.e) c.this.j.get(i), 0.0f, c.this.d.getScreenFreeSpaceCenter());
                 c.this.d.templeteHide();
             }
 
             @Override // com.tsf.shell.manager.r.b.c.f
-            public com.tsf.shell.f.i._c.e a(int i) {
-                return (com.tsf.shell.f.i._c.e) c.this.j.get(i);
+            public com.tsf.shell.f.i.c.e a(int i) {
+                return (com.tsf.shell.f.i.c.e) c.this.j.get(i);
             }
 
             @Override // com.tsf.shell.manager.r.b.c.f
-            public boolean a(com.tsf.shell.f.i._c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
                 return c.this.a(eVar, f, f2);
             }
         });
         this.b.b(0.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f);
     }
 
-    protected boolean a(com.tsf.shell.f.i._c.e eVar, float f, float f2) {
+    protected boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
         float[] fArrA = x.a(f, f2);
-        com.tsf.shell.manager.a.l.a.a(this.f, (com.tsf.shell.f.i._c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        com.tsf.shell.manager.a.l.a.a(this.f, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
         return false;
     }
 
@@ -107,7 +107,7 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
     }
 
     private void h() {
-        for (com.tsf.shell.f.i._c.f fVar : this.j) {
+        for (com.tsf.shell.f.i.c.f fVar : this.j) {
             fVar.a();
             this.g.add(fVar);
         }
@@ -125,7 +125,7 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
         this.b.e();
         h();
         for (b.C0145b c0145b : aVar.c) {
-            com.tsf.shell.f.i._c.f fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
+            com.tsf.shell.f.i.c.f fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
             fVarA.a(c0145b.a.provider);
             fVarA.d(c0145b.a.minHeight);
             fVarA.e(c0145b.a.minWidth);
@@ -135,12 +135,12 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
         this.b.d();
     }
 
-    private com.tsf.shell.f.i._c.f a(String str, ApplicationInfo applicationInfo, AppWidgetProviderInfo appWidgetProviderInfo) {
-        com.tsf.shell.f.i._c.f fVar;
+    private com.tsf.shell.f.i.c.f a(String str, ApplicationInfo applicationInfo, AppWidgetProviderInfo appWidgetProviderInfo) {
+        com.tsf.shell.f.i.c.f fVar;
         if (this.g.isEmpty()) {
-            fVar = new com.tsf.shell.f.i._c.f();
+            fVar = new com.tsf.shell.f.i.c.f();
         } else {
-            fVar = (com.tsf.shell.f.i._c.f) this.g.remove(0);
+            fVar = (com.tsf.shell.f.i.c.f) this.g.remove(0);
         }
         fVar.a(str, applicationInfo, appWidgetProviderInfo);
         return fVar;

@@ -141,7 +141,7 @@ public class a {
             height = width;
             width = height;
         }
-        com.tsf.shell.manager.o.A aVar2 = com.tsf.shell.manager.o.b.a;
+        com.tsf.shell.manager.o.a aVar2 = com.tsf.shell.manager.o.b.a;
         float f5 = 8.0f * com.censivn.C3DEngine.b.b.a.c;
         float f6 = 25.0f * com.censivn.C3DEngine.b.b.a.c;
         float f7 = size / 4.0f;

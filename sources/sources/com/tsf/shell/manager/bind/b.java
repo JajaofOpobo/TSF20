@@ -3,7 +3,7 @@ package com.tsf.shell.manager.bind;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.shell.f.i._c.g;
+import com.tsf.shell.f.i.c.g;
 import com.tsf.shell.manager.a.f;
 import com.tsf.shell.manager.r.c.a.a;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class b {
         com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.1
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(itemInfo, z);
+                com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(itemInfo, z);
                 if (bVarA != null) {
                     com.tsf.shell.manager.l.a.a(bVarA);
                 }
@@ -68,7 +68,7 @@ public class b {
         if (arrayList.size() > 0) {
             final a.AbstractC0146a abstractC0146a = new a.AbstractC0146a() { // from class: com.tsf.shell.manager.bind.b.3
                 @Override // com.tsf.shell.manager.r.c.a.a.AbstractC0146a
-                public void a(com.tsf.shell.f.i.B bVar, g gVar) {
+                public void a(com.tsf.shell.f.i.b bVar, g gVar) {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
                 }
 

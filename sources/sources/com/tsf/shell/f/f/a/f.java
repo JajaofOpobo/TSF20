@@ -8,9 +8,9 @@ import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColor;
-import com.tsf.shell.f.f.a._c.i;
-import com.tsf.shell.f.f.a._c.k;
-import com.tsf.shell.f.f.a._c.m;
+import com.tsf.shell.f.f.a.c.i;
+import com.tsf.shell.f.f.a.c.k;
+import com.tsf.shell.f.f.a.c.m;
 import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,7 +26,7 @@ public class f extends j implements b.a {
     private i h;
     private i i;
     private i j;
-    private com.tsf.shell.f.f.a._c.f k;
+    private com.tsf.shell.f.f.a.c.f k;
     private k l;
     private boolean q = false;
     private com.censivn.C3DEngine.b.g.b.b r = new com.censivn.C3DEngine.b.g.b.b();
@@ -110,7 +110,7 @@ public class f extends j implements b.a {
         g();
     }
 
-    public com.tsf.shell.f.f.a._c.f d() {
+    public com.tsf.shell.f.f.a.c.f d() {
         return this.k;
     }
 
@@ -161,10 +161,10 @@ public class f extends j implements b.a {
 
     public void i() {
         this.n.position().y = (-h.F) / 2.0f;
-        this.h = new com.tsf.shell.f.f.a._c.c(this.e, this);
-        this.i = new com.tsf.shell.f.f.a._c.d(this.e, this);
+        this.h = new com.tsf.shell.f.f.a.c.c(this.e, this);
+        this.i = new com.tsf.shell.f.f.a.c.d(this.e, this);
         this.j = new m(this.e, this);
-        this.k = new com.tsf.shell.f.f.a._c.f(this.e, this);
+        this.k = new com.tsf.shell.f.f.a.c.f(this.e, this);
         this.l = new k(this.e, this);
         this.g.add(this.i);
         this.g.add(this.j);
@@ -214,7 +214,7 @@ public class f extends j implements b.a {
                 if (!it.hasNext()) {
                     break;
                 }
-                com.censivn.C3DEngine.b.f._a.a aVarE = it.next().e();
+                com.censivn.C3DEngine.b.f.a.a aVarE = it.next().e();
                 aVarE.position().x = f3;
                 aVarE.removeFromParent();
                 this.n.addChild(aVarE);
@@ -344,26 +344,26 @@ public class f extends j implements b.a {
     public void b(int i, KeyEvent keyEvent) {
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent);
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
         if (this.f != null) {
             this.f.b(cVar, motionEvent);
         }
     }
 
-    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
         this.h.c(cVar, motionEvent);
         if (this.f != this.h && this.f != this.k) {
             b(this.h);
         }
     }
 
-    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
         if (this.f == null) {
             b(this.h);
         }
@@ -372,27 +372,27 @@ public class f extends j implements b.a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent, motionEvent2);
         }
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent, motionEvent2, f, f2);
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void b(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
             this.f.b(cVar, motionEvent, motionEvent2, f, f2);
         }
     }
 
-    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
-        if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
-            ((com.tsf.shell.f.i._b.d.b) cVar).aR();
+    public void e(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
+            ((com.tsf.shell.f.i.b.d.b) cVar).aR();
             return;
         }
         if (this.f != this.k && this.f != this.h) {

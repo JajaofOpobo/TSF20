@@ -29,7 +29,7 @@ public class A {
     public static p m;
     public static com.tsf.shell.manager.m.b n;
     public static com.tsf.shell.f.h.b o;
-    public static com.tsf.shell.f.e._e.c p;
+    public static com.tsf.shell.f.e.e.c p;
     public static com.tsf.shell.manager.n.a q;
     public static com.tsf.shell.manager.q.a r;
     public static com.censivn.C3DEngine.b.c.d s;

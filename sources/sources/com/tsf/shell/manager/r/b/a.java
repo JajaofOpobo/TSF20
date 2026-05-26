@@ -6,7 +6,7 @@ import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A extends com.tsf.shell.f.e._g.d {
+public class A extends com.tsf.shell.f.e.g.d {
     public com.tsf.shell.manager.r.b.a.a a;
     public g b;
     public b c;
@@ -20,10 +20,10 @@ public class A extends com.tsf.shell.f.e._g.d {
         public void a() {
         }
 
-        public void a(com.tsf.shell.f.i._b.e.b bVar) {
+        public void a(com.tsf.shell.f.i.b.e.b bVar) {
         }
 
-        public com.tsf.shell.manager.o.A b() {
+        public com.tsf.shell.manager.o.a b() {
             return null;
         }
     }
@@ -31,7 +31,7 @@ public class A extends com.tsf.shell.f.e._g.d {
     public A() {
         super(800.0f * com.censivn.C3DEngine.b.b.a.c);
         this.f = false;
-        ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.e.g.a.b> arrayList = new ArrayList<>();
         this.e = new e(this, x.c(b.i.group_toggle));
         this.a = new com.tsf.shell.manager.r.b.a.a(this, x.c(b.i.group_applications));
         this.b = new g(this, x.c(b.i.group_widgets));
@@ -45,7 +45,7 @@ public class A extends com.tsf.shell.f.e._g.d {
         setMenuItems(arrayList);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void show(int i) {
         this.f = false;
         this.e.disable();
@@ -54,7 +54,7 @@ public class A extends com.tsf.shell.f.e._g.d {
         super.show(i);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void show() {
         this.f = false;
         this.e.disable();
@@ -76,7 +76,7 @@ public class A extends com.tsf.shell.f.e._g.d {
         return this.f;
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void onHide() {
         if (this.g != null) {
             this.g.a();

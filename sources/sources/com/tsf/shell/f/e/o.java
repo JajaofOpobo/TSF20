@@ -17,7 +17,7 @@ class o {
         for (int i = 0; i < size; i++) {
             Bitmap bitmapCreateBitmap2 = Bitmap.createBitmap(160, 32, Bitmap.Config.ARGB_8888);
             Canvas canvas2 = new Canvas(bitmapCreateBitmap2);
-            com.tsf.shell.manager.o._a.a aVar = new com.tsf.shell.manager.o._a.a();
+            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
             aVar.a(160);
             aVar.b(32);
             aVar.a(true);

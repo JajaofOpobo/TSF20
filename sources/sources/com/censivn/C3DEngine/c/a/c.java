@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {
     protected ArrayList<e> a = new ArrayList<>();
-    protected ArrayList<com.censivn.C3DEngine.c.a.A> b = new ArrayList<>();
+    protected ArrayList<a> b = new ArrayList<>();
     protected float c;
     protected float d;
     protected float e;
@@ -56,7 +56,7 @@ public class c {
         return this.a;
     }
 
-    public ArrayList<com.censivn.C3DEngine.c.a.A> b() {
+    public ArrayList<a> b() {
         return this.b;
     }
 

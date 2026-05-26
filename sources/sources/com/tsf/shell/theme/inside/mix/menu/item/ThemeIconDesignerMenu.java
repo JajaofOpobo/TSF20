@@ -11,10 +11,10 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e._g.a.d;
+import com.tsf.shell.f.e.g.a.d;
 import com.tsf.shell.f.e.l;
 import com.tsf.shell.manager.o.A;
-import com.tsf.shell.manager.o._a.c;
+import com.tsf.shell.manager.o.a.c;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -106,7 +106,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.c(this.mLableContentLayout);
         int iB = c.b();
         for (int i = 0; i < iB; i++) {
-            final com.tsf.shell.manager.o._a.b bVarC = c.c(i);
+            final com.tsf.shell.manager.o.a.b bVarC = c.c(i);
             k kVarA = bVarC.a();
             kVarA.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(kVarA) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.4
                 @Override // com.censivn.C3DEngine.b.d.a
@@ -150,7 +150,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mCalStyle.a(f, this.mCalStyle.B);
         this.mDemoShortcutIcon.a(this.mCalStyle.H, this.mCalStyle.I);
         this.mDemoShortcutIcon.position().y = this.mCalStyle.Y;
-        this.mLableContentLayout.position().y = this.mCalStyle.aa - (com.tsf.shell.manager.o._a.b.d / 2);
+        this.mLableContentLayout.position().y = this.mCalStyle.aa - (com.tsf.shell.manager.o.a.b.d / 2);
     }
 
     private void refreshDemoShortcutTexture() {
@@ -173,12 +173,12 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public j getContentContainer() {
         return this.mContainer;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.d, com.tsf.shell.f.e.g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         super.onLayout(f, f2, f3, f4);
         resetLayout();
@@ -201,7 +201,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.a((com.tsf.shell.manager.o.b.a.J * 1.2f * (-i)) + (this.mLableScrollView.i() / 2.0f) + this.mLableScrollView.b(), z);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.d, com.tsf.shell.f.e.g.a.c
     public void onShow() {
         this.mShortcut.textures().clear();
         this.mShortcut.textures().addElement(this.mElementPlane.getTexture());
@@ -266,7 +266,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mResetButton.removeFromParent();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onHideComplete() {
         recycle();
     }
@@ -275,12 +275,12 @@ public class ThemeIconDesignerMenu extends d {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d
+    @Override // com.tsf.shell.f.e.g.a.d
     public void onRequestExit() {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.d, com.tsf.shell.f.e.g.a.c
     public void recycle() {
         super.recycle();
         removeIcon();

@@ -33,7 +33,7 @@ public class a implements e.a {
     private float n;
     private float o;
     private C0133a q;
-    private com.tsf.shell.manager.o._a.a s;
+    private com.tsf.shell.manager.o.a.a s;
     private boolean r = false;
     private boolean t = false;
     private ArrayList<C0133a> p = new ArrayList<>();
@@ -128,7 +128,7 @@ public class a implements e.a {
             }
         };
         this.c.moveAllPointsPX(0.0f, (-this.c.b()) / 2.0f, 0.0f);
-        this.s = new com.tsf.shell.manager.o._a.a();
+        this.s = new com.tsf.shell.manager.o.a.a();
         this.s.i(-1);
         this.s.h(44);
         this.b.addChild(this.c);

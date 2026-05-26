@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class C extends B {
+public class C extends b {
     private static k b;
     public static TextureElement f;
     public static TextureElement g;
@@ -37,20 +37,20 @@ public class C extends B {
         this.n = 0.75f;
     }
 
-    public com.tsf.shell.f.e._f.b ag() {
+    public com.tsf.shell.f.e.f.b ag() {
         if (parent() == null) {
             return null;
         }
-        if (parent() instanceof com.tsf.shell.f.e._f.b) {
-            return (com.tsf.shell.f.e._f.b) parent();
+        if (parent() instanceof com.tsf.shell.f.e.f.b) {
+            return (com.tsf.shell.f.e.f.b) parent();
         }
         if (z() != null) {
-            return (com.tsf.shell.f.e._f.b) z().S();
+            return (com.tsf.shell.f.e.f.b) z().S();
         }
         return null;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void m_() {
         if (!this.a) {
             ai();
@@ -59,7 +59,7 @@ public class C extends B {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void c() {
         super.c();
         if (as() && !L()) {
@@ -67,12 +67,12 @@ public class C extends B {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void n_() {
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void aa() {
         super.aa();
         k();
@@ -88,21 +88,21 @@ public class C extends B {
         this.a = true;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void ab() {
         super.ab();
         this.a = true;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void o_() {
-        if (as() && (getMouseEventListener() instanceof com.tsf.shell.f.i._a.C) && !((com.tsf.shell.f.i._a.C) getMouseEventListener()).a()) {
+        if (as() && (getMouseEventListener() instanceof com.tsf.shell.f.i.a.c) && !((com.tsf.shell.f.i.a.c) getMouseEventListener()).a()) {
             ax();
         }
         super.o_();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void p_() {
         super.p_();
         this.a = true;
@@ -115,7 +115,7 @@ public class C extends B {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b
     public void g() {
         if (ao()) {
             ar();
@@ -150,8 +150,8 @@ public class C extends B {
                 b = new k(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, 1, 1, false);
                 h = new TextureElement(f.id, false);
                 b.textures().addElementWithoutVerify(h);
-                b.position().x = (com.tsf.shell.manager.o.b.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.a.C);
-                b.position().y = (com.tsf.shell.manager.o.b.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.a.C);
+                b.position().x = (com.tsf.shell.manager.o.b.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.a.c);
+                b.position().y = (com.tsf.shell.manager.o.b.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.a.c);
             }
             this.m = 0.75f;
             if (ao()) {
@@ -212,12 +212,12 @@ public class C extends B {
         }
     }
 
-    public void a(C cVar) {
+    public void a(c cVar) {
         e.c(this);
         e.d(cVar);
     }
 
-    public void b(ArrayList<C> arrayList) {
+    public void b(ArrayList<c> arrayList) {
         if (arrayList.size() > 0) {
             e.c(this);
             e.a(arrayList);
@@ -239,11 +239,11 @@ public class C extends B {
         return e.b(this);
     }
 
-    public ArrayList<C> av() {
+    public ArrayList<c> av() {
         return e.b();
     }
 
-    public ArrayList<C> aw() {
+    public ArrayList<c> aw() {
         return e.c();
     }
 
@@ -252,8 +252,8 @@ public class C extends B {
         if (as() && z() != null) {
             g gVarZ = z();
             if (gVarZ.c(this)) {
-                ArrayList<C> arrayListAw = aw();
-                com.censivn.C3DEngine.b.h.b.C cVar = new com.censivn.C3DEngine.b.h.b.c(gVarZ, true);
+                ArrayList<c> arrayListAw = aw();
+                com.censivn.C3DEngine.b.h.b.c cVar = new com.censivn.C3DEngine.b.h.b.c(gVarZ, true);
                 if (400 > com.censivn.C3DEngine.b.b.a.D) {
                     i = (com.censivn.C3DEngine.b.b.a.D / 2) - 20;
                 } else {
@@ -275,10 +275,10 @@ public class C extends B {
         if (as()) {
             j jVar = (j) parent();
             int childIndexOf = jVar.getChildIndexOf(this);
-            ArrayList<C> arrayListAw = aw();
+            ArrayList<c> arrayListAw = aw();
             int size = arrayListAw.size();
             for (int i = 0; i < size; i++) {
-                C cVar = arrayListAw.get(i);
+                c cVar = arrayListAw.get(i);
                 com.censivn.C3DEngine.b.g.c.a(cVar);
                 Number3d.TEMPNUMBER3D.reset();
                 cVar.localToGlobal(Number3d.TEMPNUMBER3D);

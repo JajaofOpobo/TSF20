@@ -21,7 +21,7 @@ public class b extends j {
     public static float k;
     public static float l;
     public static float m;
-    public com.tsf.shell.f.e._i.b a;
+    public com.tsf.shell.f.e.i.b a;
     private a n;
     private d o;
     private k p;
@@ -48,7 +48,7 @@ public class b extends j {
         this.u.b();
         d = (int) this.u.minY();
         c = ((g + f) - d) + f + h + i + h;
-        this.o = new d(b, c, com.censivn.C3DEngine.b.b.a.c, new com.censivn.C3DEngine.b.f._b.b(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
+        this.o = new d(b, c, com.censivn.C3DEngine.b.b.a.c, new com.censivn.C3DEngine.b.f.b.b(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
         this.o.c(b, c);
         this.p = new k(b, c, false);
         this.p.setDefaultColor(new Color4(-2236963));
@@ -117,7 +117,7 @@ public class b extends j {
         addChild(this.t);
         k = ((-c) / 2.0f) + (h / 2.0f);
         j = k + h + i;
-        this.a = new com.tsf.shell.f.e._i.b();
+        this.a = new com.tsf.shell.f.e.i.b();
         this.a.position().y = com.censivn.C3DEngine.b.b.a.a(50.0f);
         this.q.addChild(this.a);
         this.r = new g();

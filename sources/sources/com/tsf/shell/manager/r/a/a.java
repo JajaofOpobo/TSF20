@@ -18,7 +18,7 @@ import com.tsf.shell.e.c;
 import com.tsf.shell.e.d;
 import com.tsf.shell.f.e.t;
 import com.tsf.shell.f.f.g;
-import com.tsf.shell.f.i._c.f;
+import com.tsf.shell.f.i.c.f;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -193,7 +193,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
             launcherAppWidgetInfo.heightH = i7;
             launcherAppWidgetInfo.height = i7;
             launcherAppWidgetInfo.container = -1;
-            final com.tsf.shell.f.i._b.b.a aVar = new com.tsf.shell.f.i._b.b.a(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
+            final com.tsf.shell.f.i.b.b.a aVar = new com.tsf.shell.f.i.b.b.a(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
             aVar.g = new com.tsf.shell.e.b(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
             aVar.g.a.setAppWidget(i, appWidgetInfo);
             if (Build.VERSION.SDK_INT >= 16) {
@@ -230,7 +230,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
             packageName = launcherAppWidgetInfo.providerName.getPackageName();
             launcherAppWidgetInfo.packagename = packageName;
         }
-        final com.tsf.shell.f.i._b.b.a aVar = new com.tsf.shell.f.i._b.b.a(launcherAppWidgetInfo, packageName);
+        final com.tsf.shell.f.i.b.b.a aVar = new com.tsf.shell.f.i.b.b.a(launcherAppWidgetInfo, packageName);
         aVar.g = new com.tsf.shell.e.b(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
         aVar.g.a.setAppWidget(i, appWidgetInfo);
         com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.a.4

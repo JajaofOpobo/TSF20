@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.o;
 
 import com.tsf.shell.manager.b.e;
-import com.tsf.shell.manager.o._a.c;
+import com.tsf.shell.manager.o.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
@@ -15,8 +15,8 @@ public class b {
         b = new a(1.0f, 1.0f, 144, 144, 215, 42, 0);
         c.a aVar = new c.a();
         aVar.g = 30;
-        b.ab = new com.tsf.shell.manager.o._a.b(0, aVar);
-        com.tsf.shell.manager.o._a.c.a();
+        b.ab = new com.tsf.shell.manager.o.a.b(0, aVar);
+        com.tsf.shell.manager.o.a.c.a();
     }
 
     public static float b() {

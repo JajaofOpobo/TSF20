@@ -36,7 +36,7 @@ public class A {
     public int Z;
     public int a;
     public int aa;
-    public com.tsf.shell.manager.o._a.b ab;
+    public com.tsf.shell.manager.o.a.b ab;
     private int ac;
     private com.tsf.shell.utils.d ad;
     public int b;
@@ -206,23 +206,23 @@ public class A {
         return (int) (i * this.z);
     }
 
-    private com.censivn.C3DEngine.b.f._a.a c() {
-        return new com.censivn.C3DEngine.b.f._a.a(2, 0, this.V, this.W);
+    private com.censivn.C3DEngine.b.f.a.a c() {
+        return new com.censivn.C3DEngine.b.f.a.a(2, 0, this.V, this.W);
     }
 
-    public com.censivn.C3DEngine.b.f._a.a b() {
+    public com.censivn.C3DEngine.b.f.a.a b() {
         return a(c());
     }
 
-    public com.censivn.C3DEngine.b.f._a.a a(com.censivn.C3DEngine.b.f._a.a aVar) {
-        com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a(0);
+    public com.censivn.C3DEngine.b.f.a.a a(com.censivn.C3DEngine.b.f.a.a aVar) {
+        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(0);
         bVarA.a(0, this.E - 1, 0, 0, this.V, this.I + 2);
         bVarA.i().x = this.X;
         bVarA.i().y = this.Y;
         bVarA.a(true);
         bVarA.a(0.0f, this.E - 1, this.V, this.I + 2);
         bVarA.h();
-        com.censivn.C3DEngine.b.f._a.b bVarA2 = aVar.a(1);
+        com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(1);
         bVarA2.a(this.F - 1, this.G - 1, 0, 0, this.J + 2, this.K + 2);
         bVarA2.i().x = this.Z;
         bVarA2.i().y = this.aa;

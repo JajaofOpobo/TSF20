@@ -214,9 +214,9 @@ public class f implements e.a {
     }
 
     private void a(ItemInfo itemInfo) {
-        com.tsf.shell.f.i.B bVarA;
+        com.tsf.shell.f.i.b bVarA;
         if (itemInfo.itemType == 1) {
-            bVarA = com.tsf.shell.f.i._b.d.b.a((LauncherFolder3DInfo) itemInfo);
+            bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
             bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
         }

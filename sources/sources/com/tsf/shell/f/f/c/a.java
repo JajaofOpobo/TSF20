@@ -17,7 +17,7 @@ import com.tsf.shell.utils.x;
 public class a implements b.a, e.a {
     private TextureElement b;
     private j c;
-    private com.tsf.shell.f.i.B d;
+    private com.tsf.shell.f.i.b d;
     private float g;
     private float h;
     private int i;
@@ -37,7 +37,7 @@ public class a implements b.a, e.a {
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.c.a$a, reason: collision with other inner class name */
     public class C0109a {
-        public com.censivn.C3DEngine.b.f._a.a a;
+        public com.censivn.C3DEngine.b.f.a.a a;
         public float b;
         public float c;
         public float d;
@@ -62,7 +62,7 @@ public class a implements b.a, e.a {
             this.f = f / this.h;
             this.g = f2 / this.i;
             int i = (this.h + 1) * (this.i + 1);
-            this.a = new com.censivn.C3DEngine.b.f._a.a(i, 26, 26, true);
+            this.a = new com.censivn.C3DEngine.b.f.a.a(i, 26, 26, true);
             for (int i2 = 0; i2 < i; i2++) {
                 this.a.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.a.c, 26.0f * com.censivn.C3DEngine.b.b.a.c);
             }
@@ -72,7 +72,7 @@ public class a implements b.a, e.a {
                 for (int i4 = 0; i4 < this.h + 1; i4++) {
                     float f7 = com.censivn.C3DEngine.b.b.a.r + (this.f * i4);
                     float f8 = com.censivn.C3DEngine.b.b.a.s - (this.g * i3);
-                    com.censivn.C3DEngine.b.f._a.b bVarA = this.a.a(((this.h + 1) * i3) + i4);
+                    com.censivn.C3DEngine.b.f.a.b bVarA = this.a.a(((this.h + 1) * i3) + i4);
                     b bVar = new b();
                     bVar.a = i4;
                     bVar.b = i3;
@@ -134,7 +134,7 @@ public class a implements b.a, e.a {
                         }
                     }
                     for (int i13 = 0; i13 < iB; i13++) {
-                        com.censivn.C3DEngine.b.f._a.b bVarA = a.this.a.a.a(i13);
+                        com.censivn.C3DEngine.b.f.a.b bVarA = a.this.a.a.a(i13);
                         b bVar = (b) bVarA.a();
                         float fC = bVarA.c();
                         bVarA.a(((bVar.c - fC) * 0.2f) + fC);
@@ -175,7 +175,7 @@ public class a implements b.a, e.a {
         return true;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.b bVar) {
         this.d = bVar;
         float fU = this.d.u();
         this.g = (this.d.maxX() - this.d.minX()) * fU;
@@ -188,7 +188,7 @@ public class a implements b.a, e.a {
         this.j = this.j >= 1 ? this.j : 1;
     }
 
-    public void b(com.tsf.shell.f.i.B bVar) {
+    public void b(com.tsf.shell.f.i.b bVar) {
         this.d = null;
     }
 
@@ -217,7 +217,7 @@ public class a implements b.a, e.a {
             this.l = null;
             final int iB = this.a.a.b();
             for (int i = 0; i < iB; i++) {
-                com.censivn.C3DEngine.b.f._a.b bVarA = this.a.a.a(i);
+                com.censivn.C3DEngine.b.f.a.b bVarA = this.a.a.a(i);
                 ((b) bVarA.a()).c = bVarA.c();
             }
             final C0109a c0109a = this.a;
@@ -228,7 +228,7 @@ public class a implements b.a, e.a {
                     while (true) {
                         int i3 = i2;
                         if (i3 < iB) {
-                            com.censivn.C3DEngine.b.f._a.b bVarA2 = c0109a.a.a(i3);
+                            com.censivn.C3DEngine.b.f.a.b bVarA2 = c0109a.a.a(i3);
                             bVarA2.a(((b) bVarA2.a()).c * (1.0f - f));
                             i2 = i3 + 1;
                         } else {
@@ -240,7 +240,7 @@ public class a implements b.a, e.a {
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     for (int i2 = 0; i2 < iB; i2++) {
-                        com.censivn.C3DEngine.b.f._a.b bVarA2 = c0109a.a.a(i2);
+                        com.censivn.C3DEngine.b.f.a.b bVarA2 = c0109a.a.a(i2);
                         ((b) bVarA2.a()).c = 0.0f;
                         bVarA2.a(0.0f);
                     }

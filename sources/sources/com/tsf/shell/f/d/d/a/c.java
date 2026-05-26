@@ -91,7 +91,7 @@ public class c implements a {
     }
 
     @Override // com.tsf.shell.f.d.d.a.a
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.b bVar) {
         bVar.b(this.i);
     }
 

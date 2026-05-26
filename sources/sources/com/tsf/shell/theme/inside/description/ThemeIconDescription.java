@@ -73,7 +73,7 @@ public class ThemeIconDescription {
         this.mContext = null;
     }
 
-    public Bitmap getBackBitmap(A aVar) {
+    public Bitmap getBackBitmap(a aVar) {
         if (this.iconBackItems.size() <= 0) {
             return null;
         }
@@ -87,7 +87,7 @@ public class ThemeIconDescription {
         return bitmap;
     }
 
-    public Bitmap getUponBitmap(A aVar) {
+    public Bitmap getUponBitmap(a aVar) {
         if (this.iconUponItems.size() <= 0) {
             return null;
         }
@@ -99,7 +99,7 @@ public class ThemeIconDescription {
         return bitmap;
     }
 
-    public Bitmap getMaskBitmap(A aVar) {
+    public Bitmap getMaskBitmap(a aVar) {
         if (this.iconMaskItems.size() <= 0) {
             return null;
         }
@@ -142,7 +142,7 @@ public class ThemeIconDescription {
         this.iconFilter.put(str, str2);
     }
 
-    public Bitmap getIconFilterBitmap(String str, A aVar) {
+    public Bitmap getIconFilterBitmap(String str, a aVar) {
         String str2 = this.iconFilter.get(str);
         if (str2 == null) {
             return null;
@@ -158,7 +158,7 @@ public class ThemeIconDescription {
         return this.mContext.getResources().getIdentifier(str, "drawable", this.mContext.getPackageName()) != 0;
     }
 
-    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, A aVar) {
+    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
         return getBitmap(aVar, this.mContext, defaultIconItem.drawable);
     }
 
@@ -172,7 +172,7 @@ public class ThemeIconDescription {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private static android.graphics.Bitmap getBitmap(com.tsf.shell.manager.o.A r6, android.content.Context r7, java.lang.String r8) throws java.lang.Throwable {
+    private static android.graphics.Bitmap getBitmap(com.tsf.shell.manager.o.a r6, android.content.Context r7, java.lang.String r8) throws java.lang.Throwable {
         /*
             r0 = 0
             r1 = 0
@@ -248,6 +248,6 @@ public class ThemeIconDescription {
             r2 = move-exception
             goto L4a
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.theme.inside.description.ThemeIconDescription.getBitmap(com.tsf.shell.manager.o.A, android.content.Context, java.lang.String):android.graphics.Bitmap");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.theme.inside.description.ThemeIconDescription.getBitmap(com.tsf.shell.manager.o.a, android.content.Context, java.lang.String):android.graphics.Bitmap");
     }
 }

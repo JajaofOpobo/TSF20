@@ -47,7 +47,7 @@ public class l extends f {
         return false;
     }
 
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f._b.a aVar) {
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         float fAbs = Math.abs(gVar.g * 700.0f);
         aVar.alpha(fAbs <= 255.0f ? fAbs : 255.0f);
         return true;

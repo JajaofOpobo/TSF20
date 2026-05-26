@@ -4,19 +4,19 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.b;
-import com.tsf.shell.f.i._b.e.i;
+import com.tsf.shell.f.i.b.e.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g {
-    private static void b(final com.tsf.shell.f.i.B bVar, final Runnable runnable) {
+    private static void b(final com.tsf.shell.f.i.b bVar, final Runnable runnable) {
         if (bVar instanceof i) {
             a(((i) bVar).q().q(), bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
-            a(((com.tsf.shell.f.i._b.e.b) bVar).k.textures().get(0).textureElement, bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
-            a(((com.tsf.shell.f.i._b.d.b) bVar).aD(), bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i._b.b.a) {
-            a(((com.tsf.shell.f.i._b.b.a) bVar).h, bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+            a(((com.tsf.shell.f.i.b.e.b) bVar).k.textures().get(0).textureElement, bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+            a(((com.tsf.shell.f.i.b.d.b) bVar).aD(), bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
+            a(((com.tsf.shell.f.i.b.b.a) bVar).h, bVar);
         }
         bVar.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.c.g.1
@@ -46,13 +46,13 @@ public class g {
         }
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar, Runnable runnable) {
+    public static void a(com.tsf.shell.f.i.b bVar, Runnable runnable) {
         b(bVar, runnable);
     }
 
-    public static void a(final com.tsf.shell.f.i.B bVar, final Runnable runnable, final Runnable runnable2) {
-        if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
-            if (((com.tsf.shell.f.i._b.d.b) bVar).aT()) {
+    public static void a(final com.tsf.shell.f.i.b bVar, final Runnable runnable, final Runnable runnable2) {
+        if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+            if (((com.tsf.shell.f.i.b.d.b) bVar).aT()) {
                 a(bVar, runnable2);
                 return;
             }

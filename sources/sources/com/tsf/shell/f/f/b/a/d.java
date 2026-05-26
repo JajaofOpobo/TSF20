@@ -25,7 +25,7 @@ public class d extends i implements a.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f._b.a aVar) {
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         return false;
     }
 
@@ -77,7 +77,7 @@ public class d extends i implements a.InterfaceC0090a {
         for (int i = 0; i < arrayList.size(); i++) {
             com.censivn.C3DEngine.b.f.i iVar2 = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar2);
-            if (iVar2 instanceof com.tsf.shell.f.i.B) {
+            if (iVar2 instanceof com.tsf.shell.f.i.b) {
                 Number3d number3d = h.E.get(i);
                 if (z) {
                     com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
@@ -146,11 +146,11 @@ public class d extends i implements a.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar;
         com.censivn.C3DEngine.b.g.d dVar2;
         com.censivn.C3DEngine.b.g.d dVar3 = null;
-        com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
+        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
         int i = 0;
         while (true) {
             int i2 = i;
@@ -158,7 +158,7 @@ public class d extends i implements a.InterfaceC0090a {
             if (i2 >= aVar.a()) {
                 break;
             }
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = aVar.a(i2);
+            com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i2);
             dVar3 = new com.censivn.C3DEngine.b.g.d();
             if (!p()) {
                 dVar2 = dVar;
@@ -193,6 +193,6 @@ public class d extends i implements a.InterfaceC0090a {
         }
     }
 
-    public void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
     }
 }

@@ -7,7 +7,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h {
-    public static com.censivn.C3DEngine.b.f._b.a a;
+    public static com.censivn.C3DEngine.b.f.b.a a;
     private static e.a g;
     private static TextureElement d = null;
     private static boolean e = true;
@@ -18,7 +18,7 @@ public class h {
     public static void a() {
         e = com.tsf.shell.manager.b.e.y();
         TextureElement textureElementB = b();
-        a = new com.censivn.C3DEngine.b.f._b.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 1.0f, new com.censivn.C3DEngine.b.f._b.b(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
+        a = new com.censivn.C3DEngine.b.f.b.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 1.0f, new com.censivn.C3DEngine.b.f.b.b(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
         a.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
         a.c(com.censivn.C3DEngine.b.b.a.B);
         a.textures().addElement(textureElementB);

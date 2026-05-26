@@ -196,7 +196,7 @@ public class ThemeCacheFileManager {
         return bitmapDecodeStream;
     }
 
-    public static Bitmap getIconBitmap(String str, com.tsf.shell.manager.o.A aVar) {
+    public static Bitmap getIconBitmap(String str, com.tsf.shell.manager.o.a aVar) {
         Bitmap bitmapCreateScaledBitmap;
         Bitmap imageBitmap = getImageBitmap(str);
         if (imageBitmap == null) {

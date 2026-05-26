@@ -3,7 +3,7 @@ package com.tsf.extend.wallpaper;
 import java.util.concurrent.TimeUnit;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class u extends com.tsf.extend.base.b.A<m> {
+public class u extends com.tsf.extend.base.b.a<m> {
     private static final long a = TimeUnit.HOURS.toMillis(4);
     private transient int d;
     private long b = -1;

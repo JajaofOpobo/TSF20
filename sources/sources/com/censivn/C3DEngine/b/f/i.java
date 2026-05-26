@@ -1372,7 +1372,7 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
         if (!mouseEnabled() || !visible() || !getRendererVisibility()) {
             return null;
         }
-        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f._a.a)) && !mouseSkip() && !z) {
+        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.a.a)) && !mouseSkip() && !z) {
             if (calTouchCollision(f, f2)) {
                 return this;
             }

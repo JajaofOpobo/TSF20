@@ -63,18 +63,18 @@ public class f extends a {
         this.c = com.tsf.shell.manager.a.a.a(this, com.tsf.shell.manager.p.e.h);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
         this.d.f((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(150.0f)));
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onShow() {
         this.b.d();
         this.a.a();
@@ -89,7 +89,7 @@ public class f extends a {
     public void c() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onHide() {
         super.onHide();
         this.c.b();
@@ -99,7 +99,7 @@ public class f extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onRecycle() {
         super.onRecycle();
         this.d.a();

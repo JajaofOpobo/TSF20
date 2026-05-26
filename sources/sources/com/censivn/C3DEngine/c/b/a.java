@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.c.a.e;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends d implements com.censivn.C3DEngine.c.B {
+public class a extends d implements com.censivn.C3DEngine.c.b {
     private float b;
     private float c;
     private int d = 0;

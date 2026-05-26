@@ -15,7 +15,7 @@ import com.tsf.shell.utils.x;
 public class b implements b.a, e.a {
     public static int b = -1725816286;
     private j d;
-    private com.tsf.shell.f.e._c.a e;
+    private com.tsf.shell.f.e.c.a e;
     private c f;
     private j g;
     private e k;
@@ -50,7 +50,7 @@ public class b implements b.a, e.a {
         return this.s;
     }
 
-    public com.tsf.shell.f.e._c.a b() {
+    public com.tsf.shell.f.e.c.a b() {
         return this.e;
     }
 
@@ -102,12 +102,12 @@ public class b implements b.a, e.a {
                 }
             }
         };
-        this.e = new com.tsf.shell.f.e._c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.f.h.b.2
-            @Override // com.tsf.shell.f.e._c.a
+        this.e = new com.tsf.shell.f.e.c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.f.h.b.2
+            @Override // com.tsf.shell.f.e.c.a
             public void d() {
             }
 
-            @Override // com.tsf.shell.f.e._c.a, com.censivn.C3DEngine.b.f.i
+            @Override // com.tsf.shell.f.e.c.a, com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
                 if (!b.this.q) {
                 }
@@ -267,7 +267,7 @@ public class b implements b.a, e.a {
             });
             return;
         }
-        if (com.tsf.shell.f.e._g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.a.h.B() && !com.tsf.shell.manager.a.h.s().a() && !com.tsf.shell.manager.a.v.e.e()) {
+        if (com.tsf.shell.f.e.g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.a.h.B() && !com.tsf.shell.manager.a.h.s().a() && !com.tsf.shell.manager.a.v.e.e()) {
             com.tsf.shell.f.b.a();
             this.e.a(0.0f, 0.0f, this.f.c(), this.f.d(), 204, !this.t);
             com.censivn.C3DEngine.b.c.b.a(this);

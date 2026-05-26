@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends c<d> {
-    private com.tsf.shell.f.e._f.a a;
+    private com.tsf.shell.f.e.f.a a;
 
     public A() {
         ArrayList<f> arrayList = new ArrayList<>();
-        this.a = new com.tsf.shell.f.e._f.a();
+        this.a = new com.tsf.shell.f.e.f.a();
         arrayList.add(new e(0, true, false));
         arrayList.add(new e(1, false, false));
         arrayList.add(new com.tsf.shell.f.d.c.a.a(10, true, true));
@@ -26,7 +26,7 @@ public class A extends c<d> {
     public void a() {
     }
 
-    public com.tsf.shell.f.e._f.a d() {
+    public com.tsf.shell.f.e.f.a d() {
         return this.a;
     }
 

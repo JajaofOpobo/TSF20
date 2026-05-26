@@ -13,7 +13,7 @@ public class e {
     public static String d = "3";
     private h g;
     private c e = new c(this);
-    private com.tsf.shell.f.f.a._d.A f = new com.tsf.shell.f.f.a._d.A(this);
+    private com.tsf.shell.f.f.a.d.a f = new com.tsf.shell.f.f.a.d.a(this);
     private d h = new d(this);
     private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
 
@@ -21,7 +21,7 @@ public class e {
         return this.e;
     }
 
-    public com.tsf.shell.f.f.a._d.A b() {
+    public com.tsf.shell.f.f.a.d.a b() {
         return this.f;
     }
 
@@ -38,10 +38,10 @@ public class e {
         com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.1
             @Override // java.lang.Runnable
             public void run() {
-                ArrayList<com.tsf.shell.f.i._b.e.g> arrayList2 = new ArrayList<>();
+                ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = new ArrayList<>();
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
-                    com.tsf.shell.f.i._b.e.g gVar = new com.tsf.shell.f.i._b.e.g(null, (f) it.next(), true);
+                    com.tsf.shell.f.i.b.e.g gVar = new com.tsf.shell.f.i.b.e.g(null, (f) it.next(), true);
                     gVar.setMouseEventListener(e.this.g.f(gVar));
                     arrayList2.add(gVar);
                 }
@@ -57,7 +57,7 @@ public class e {
                 for (f fVar : arrayList) {
                     fVar.e();
                     if (e.this.e.a(fVar) == null) {
-                        com.tsf.shell.f.i._b.e.g gVar = new com.tsf.shell.f.i._b.e.g(new LauncherShortcutAppInfo(), fVar, true);
+                        com.tsf.shell.f.i.b.e.g gVar = new com.tsf.shell.f.i.b.e.g(new LauncherShortcutAppInfo(), fVar, true);
                         gVar.setMouseEventListener(e.this.g.f(gVar));
                         e.this.e.a(gVar, z);
                     }
@@ -75,7 +75,7 @@ public class e {
                 }
                 for (f fVar : arrayList) {
                     fVar.d();
-                    com.tsf.shell.f.i._b.e.g gVarA = e.this.e.a(fVar);
+                    com.tsf.shell.f.i.b.e.g gVarA = e.this.e.a(fVar);
                     if (gVarA != null) {
                         gVarA.g();
                         gVarA.destroy();

@@ -8,11 +8,11 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends com.tsf.shell.manager.r.b.b.a {
     private com.censivn.C3DEngine.b.h.b.h a;
-    private ArrayList<com.tsf.shell.f.i._c.e> b;
+    private ArrayList<com.tsf.shell.f.i.c.e> b;
     private float e;
     private float f;
 
-    public e(com.tsf.shell.f.e._g.d dVar, final com.tsf.shell.f.e._g.a.c cVar) {
+    public e(com.tsf.shell.f.e.g.d dVar, final com.tsf.shell.f.e.g.a.c cVar) {
         super(dVar);
         this.b = new ArrayList<>();
         this.e = 0.0f;
@@ -32,7 +32,7 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
                 if (hVar2.b() != e.this.e || hVar2.c() != e.this.f) {
                     hVar2.a(e.this.e, e.this.f);
                 }
-                hVar2.a((com.tsf.shell.f.i._c.e) e.this.b.get(i), cVar.isAnimation());
+                hVar2.a((com.tsf.shell.f.i.c.e) e.this.b.get(i), cVar.isAnimation());
                 return hVar;
             }
 
@@ -45,9 +45,9 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
         this.a.a(new f(dVar) { // from class: com.tsf.shell.manager.r.b.c.e.2
             @Override // com.tsf.shell.manager.r.b.c.f, com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f.i._c.e eVar = (com.tsf.shell.f.i._c.e) e.this.b.get(i);
-                if (eVar instanceof com.tsf.shell.f.i._c.g) {
-                    com.tsf.shell.f.i._c.g gVar = (com.tsf.shell.f.i._c.g) eVar;
+                com.tsf.shell.f.i.c.e eVar = (com.tsf.shell.f.i.c.e) e.this.b.get(i);
+                if (eVar instanceof com.tsf.shell.f.i.c.g) {
+                    com.tsf.shell.f.i.c.g gVar = (com.tsf.shell.f.i.c.g) eVar;
                     if (!gVar.j()) {
                         gVar.k();
                         return;
@@ -60,12 +60,12 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
             }
 
             @Override // com.tsf.shell.manager.r.b.c.f
-            public com.tsf.shell.f.i._c.e a(int i) {
-                return (com.tsf.shell.f.i._c.e) e.this.b.get(i);
+            public com.tsf.shell.f.i.c.e a(int i) {
+                return (com.tsf.shell.f.i.c.e) e.this.b.get(i);
             }
 
             @Override // com.tsf.shell.manager.r.b.c.f
-            public boolean a(com.tsf.shell.f.i._c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
                 return e.this.a(eVar, f, f2);
             }
         });
@@ -82,9 +82,9 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
 
     @Override // com.tsf.shell.manager.r.b.b.a
     public void e() {
-        Iterator<com.tsf.shell.f.i._c.e> it = this.b.iterator();
+        Iterator<com.tsf.shell.f.i.c.e> it = this.b.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i._c.g gVar = (com.tsf.shell.f.i._c.g) it.next();
+            com.tsf.shell.f.i.c.g gVar = (com.tsf.shell.f.i.c.g) it.next();
             gVar.i();
             gVar.g();
         }
@@ -98,10 +98,10 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
         this.a.a(f, f2, f3, f4);
     }
 
-    public void a(com.tsf.shell.f.i._c.e eVar) {
+    public void a(com.tsf.shell.f.i.c.e eVar) {
     }
 
-    public boolean a(com.tsf.shell.f.i._c.e eVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
         return true;
     }
 
@@ -109,17 +109,17 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
         this.a.d();
     }
 
-    public void b(com.tsf.shell.f.i._c.e eVar) {
+    public void b(com.tsf.shell.f.i.c.e eVar) {
         this.b.add(eVar);
         this.a.d();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i._c.e> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.c.e> arrayList) {
         this.b.addAll(arrayList);
         this.a.d();
     }
 
-    public void c(com.tsf.shell.f.i._c.e eVar) {
+    public void c(com.tsf.shell.f.i.c.e eVar) {
         this.b.remove(eVar);
         this.a.d();
     }

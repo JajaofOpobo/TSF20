@@ -18,12 +18,12 @@ public class A {
     private static TextureElement g;
     private static int h;
     private static int i;
-    private static com.tsf.shell.f.i.B j;
+    private static com.tsf.shell.f.i.b j;
     private static b.a k;
     private static q l;
     private static g m;
-    private static com.tsf.shell.f.i.B n;
-    private static com.tsf.shell.f.i.B o;
+    private static com.tsf.shell.f.i.b n;
+    private static com.tsf.shell.f.i.b o;
     private static ArrayList<com.censivn.C3DEngine.b.f.i> p;
     private static boolean q = false;
 
@@ -43,7 +43,7 @@ public class A {
         g = com.censivn.C3DEngine.a.g().a(bitmapA3, true);
         h = g.id;
         bitmapA3.recycle();
-        a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.e._a.1
+        a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.e.a.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (a.j != null) {
@@ -70,7 +70,7 @@ public class A {
         kVar3.useVBO(false);
         kVar3.textures().addElement(e);
         if (z) {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.F, f2, z2) { // from class: com.tsf.shell.f.e._a.2
+            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
                     float f3 = com.censivn.C3DEngine.b.b.a.F / 2;
@@ -86,7 +86,7 @@ public class A {
                 }
             };
         } else {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.G, f2, z2) { // from class: com.tsf.shell.f.e._a.3
+            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
                     float f3 = com.censivn.C3DEngine.b.b.a.G / 2;
@@ -115,7 +115,7 @@ public class A {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:47:0x00e6 A[PHI: r2 r5
-  0x00e6: PHI (r2v6 com.tsf.shell.f.i.B) = (r2v1 com.tsf.shell.f.i.B), (r2v1 com.tsf.shell.f.i.B), (r2v10 com.tsf.shell.f.i.B), (r2v10 com.tsf.shell.f.i.B) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]
+  0x00e6: PHI (r2v6 com.tsf.shell.f.i.b) = (r2v1 com.tsf.shell.f.i.b), (r2v1 com.tsf.shell.f.i.b), (r2v10 com.tsf.shell.f.i.b), (r2v10 com.tsf.shell.f.i.b) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]
   0x00e6: PHI (r5v2 float) = (r5v1 float), (r5v1 float), (r5v4 float), (r5v4 float) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -126,10 +126,10 @@ public class A {
             Method dump skipped, instruction units count: 236
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e._a.a(float, float):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e.a.a(float, float):void");
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar) {
+    public static void a(com.tsf.shell.f.i.b bVar) {
         com.tsf.shell.f.f.g gVarZ = bVar.z();
         if (!q && gVarZ != null) {
             p = gVarZ.R();

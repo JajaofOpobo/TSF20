@@ -60,14 +60,14 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             }
 
             @Override // com.tsf.shell.manager.r.b.a.C0144a
-            public void a(com.tsf.shell.f.i._b.e.b bVar) {
+            public void a(com.tsf.shell.f.i.b.e.b bVar) {
                 bVar.K().onUpdateContainer(-2);
                 f.this.a(bVar);
                 f.this.e(bVar);
             }
 
             @Override // com.tsf.shell.manager.r.b.a.C0144a
-            public com.tsf.shell.manager.o.A b() {
+            public com.tsf.shell.manager.o.a b() {
                 return com.tsf.shell.manager.o.b.b;
             }
         };
@@ -89,8 +89,8 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 this.b = f.this.a(motionEvent);
-                if (this.b != f.this.b && this.b != null && (this.b instanceof com.tsf.shell.f.i._b.e.b)) {
-                    ((com.tsf.shell.f.i._b.e.b) this.b).aQ();
+                if (this.b != f.this.b && this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.b)) {
+                    ((com.tsf.shell.f.i.b.e.b) this.b).aQ();
                 }
             }
 
@@ -100,8 +100,8 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
                     f.this.r();
                     return;
                 }
-                if (this.b != null && (this.b instanceof com.tsf.shell.f.i._b.e.b)) {
-                    com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) this.b;
+                if (this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.b)) {
+                    com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) this.b;
                     if (f.this.g) {
                         g.a(bVar, (Runnable) null);
                     } else {
@@ -114,7 +114,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
 
     @Override // com.censivn.C3DEngine.b.h.e.b
     public void c(i iVar) {
-        if (this.g && (iVar instanceof com.tsf.shell.f.i._b.e.b) && iVar.visible()) {
+        if (this.g && (iVar instanceof com.tsf.shell.f.i.b.e.b) && iVar.visible()) {
             this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.a.a(50.0f);
             this.e.position().y = iVar.position().y + com.censivn.C3DEngine.b.b.a.a(60.0f);
             this.e.dispatchDraw();
@@ -164,13 +164,13 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.i._b.e.b bVar) {
+    public void a(com.tsf.shell.f.i.b.e.b bVar) {
     }
 
     public void a(ArrayList<ItemInfo> arrayList, String str) {
         Iterator<ItemInfo> it = h.a(arrayList, str, ",", true).iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(it.next(), com.tsf.shell.manager.o.b.b, true);
+            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(it.next(), com.tsf.shell.manager.o.b.b, true);
             a(bVarA);
             f(bVarA);
         }
@@ -180,7 +180,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     private void s() {
         final String str = "";
         for (i iVar : c().children()) {
-            str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
+            str = iVar instanceof com.tsf.shell.f.i.b ? str + ((com.tsf.shell.f.i.b) iVar).K().id + "," : str;
         }
         com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.f.h.f.4
             @Override // java.lang.Runnable

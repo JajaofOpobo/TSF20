@@ -6,7 +6,7 @@ import com.tsf.shell.f.h.a.a.d;
 import com.tsf.shell.manager.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.f.h.a.A {
+public class c extends com.tsf.shell.f.h.a.a {
     public static final float a = com.censivn.C3DEngine.b.b.a.a(200.0f);
     private a b;
     private d c;

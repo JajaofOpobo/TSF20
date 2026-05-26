@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.a;
+import com.tsf.shell.f.e.g.a.a;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
@@ -21,18 +21,18 @@ public class g extends a {
         this.a = bVar;
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_random, x.c(b.i.text_random), new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.g.1
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.a.v.e.g();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.a.v.e.a(true);
                 g.this.b.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.a.v.e.a(false);
                 g.this.b.d();
@@ -87,17 +87,17 @@ public class g extends a {
         return com.censivn.C3DEngine.b.b.a.a(120.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onShow() {
         this.b.d();
     }
@@ -107,10 +107,10 @@ public class g extends a {
         com.tsf.shell.manager.a.v.e.d().b(this.a.a());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onHide() {
         super.onHide();
-        com.tsf.shell.manager.a.v.e.d().a((com.tsf.shell.f.i.C) null);
+        com.tsf.shell.manager.a.v.e.d().a((com.tsf.shell.f.i.c) null);
         this.c.b();
         int i = com.tsf.shell.manager.a.v.e.i();
         for (int i2 = 0; i2 < i; i2++) {
@@ -118,7 +118,7 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onRecycle() {
         super.onRecycle();
         int i = com.tsf.shell.manager.a.v.e.i();

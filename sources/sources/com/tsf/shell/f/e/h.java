@@ -30,7 +30,7 @@ public class H {
     private n p;
     private float s;
     private float t;
-    private com.censivn.C3DEngine.b.f._a.a u;
+    private com.censivn.C3DEngine.b.f.a.a u;
     private static TextureElement b = null;
     private static TextureElement c = null;
     public static Color4 a = new Color4();
@@ -67,7 +67,7 @@ public class H {
 
     public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2) {
         if (!this.k) {
-            com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.e._h.1
+            com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.e.h.1
                 /* JADX WARN: Multi-variable type inference failed */
                 /* JADX WARN: Type inference fix 'apply assigned field type' failed
                 java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
@@ -88,7 +88,7 @@ public class H {
                             h.this.l = com.tsf.shell.manager.a.h.G();
                             h.this.j = false;
                             h.this.c(motionEvent);
-                            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.1.1
+                            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.1
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     h.d.a(motionEvent.getX(), motionEvent.getY() + 38.0f);
@@ -108,7 +108,7 @@ public class H {
                             h.this.t = y2;
                             h.this.a((float) Math.sqrt(Math.pow(motionEvent.getX() - motionEvent2.getX(), 2.0d) + Math.pow(motionEvent.getY() - motionEvent2.getY(), 2.0d)));
                             h.this.b(motionEvent, motionEvent2);
-                            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.1.2
+                            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.2
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     h.d.b(motionEvent2.getX(), motionEvent2.getY());
@@ -238,7 +238,7 @@ public class H {
 
     private void h() {
         if (e.parent() != null) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.2
+            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.2
                 @Override // java.lang.Runnable
                 public void run() {
                     h.d.a();
@@ -274,7 +274,7 @@ public class H {
             if (this.v) {
                 this.v = false;
                 if (this.u != null) {
-                    com.censivn.C3DEngine.b.f._a.b bVarA = this.u.a(0);
+                    com.censivn.C3DEngine.b.f.a.b bVarA = this.u.a(0);
                     bVarA.b(true);
                     bVarA.c(true);
                     bVarA.g();
@@ -287,7 +287,7 @@ public class H {
         if (!this.v) {
             this.v = true;
             if (this.u != null) {
-                com.censivn.C3DEngine.b.f._a.b bVarA2 = this.u.a(0);
+                com.censivn.C3DEngine.b.f.a.b bVarA2 = this.u.a(0);
                 bVarA2.b(false);
                 bVarA2.c(false);
                 bVarA2.g();
@@ -299,7 +299,7 @@ public class H {
         w = new ViewGroup.LayoutParams(-1, -1);
         i = com.censivn.C3DEngine.a.d().getString(b.i.notic_line_picker_overflow);
         d = new com.tsf.shell.i(com.censivn.C3DEngine.a.d(), ThemeManager.mix.lasso.getTheme().shell.lassoLineColor);
-        DynamicThemeRunnable dynamicThemeRunnable = new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e._h.3
+        DynamicThemeRunnable dynamicThemeRunnable = new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e.h.3
             @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
             public void onReloadTheme(ThemeDescription themeDescription) {
                 h.d.a(themeDescription.shell.lassoLineColor);
@@ -322,7 +322,7 @@ public class H {
     }
 
     private static void j() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.4
+        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.4
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.a.j.a(h.d, h.w);

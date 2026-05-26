@@ -15,12 +15,12 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
     private m b;
     private k c;
     private f d;
-    private com.tsf.shell.f.e.I e;
+    private com.tsf.shell.f.e.i e;
     private d f;
     private boolean h;
     private boolean g = false;
     private ArrayList<d> i = new ArrayList<>();
-    private com.tsf.shell.f.e.I a = new com.tsf.shell.f.e.I();
+    private com.tsf.shell.f.e.i a = new com.tsf.shell.f.e.i();
 
     public c() {
         this.a.b(1);
@@ -37,7 +37,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         this.c.position().y = (this.b.position().y + this.b.minY()) - com.censivn.C3DEngine.b.b.a.a(20.0f);
         this.a.addChild(this.c);
         addChild(this.a);
-        this.e = new com.tsf.shell.f.e.I();
+        this.e = new com.tsf.shell.f.e.i();
         this.e.b(1);
         addChild(this.e);
     }

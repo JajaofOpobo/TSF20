@@ -31,7 +31,7 @@ public class a extends d {
             i iVar = arrayList.get(i);
             Number3d number3d = h.E.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar);
-            if (iVar instanceof com.tsf.shell.f.i.B) {
+            if (iVar instanceof com.tsf.shell.f.i.b) {
                 com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
                 if (z) {
                     dVar3.f(0.0f);
@@ -69,12 +69,12 @@ public class a extends d {
     }
 
     @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         float fA = com.censivn.C3DEngine.b.b.a.a(0.0f);
         com.censivn.C3DEngine.b.g.d dVar = null;
         int i = 0;
         while (i < aVar.a()) {
-            com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
             dVar2.h(com.tsf.shell.f.d.e.a.a.get(i).y + fA);
             dVar2.f(0.0f);
