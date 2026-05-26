@@ -26,17 +26,17 @@ public class d {
         return a;
     }
 
-    private static class a extends SQLiteOpenHelper {
-        private static a a = null;
+    private static class A extends SQLiteOpenHelper {
+        private static A a = null;
 
         public static synchronized a a(Context context) {
             if (a == null) {
-                a = new a(context);
+                a = new A(context);
             }
             return a;
         }
 
-        public a(Context context) {
+        public A(Context context) {
             super(context, "c.db", (SQLiteDatabase.CursorFactory) null, 22);
         }
 
@@ -52,13 +52,13 @@ public class d {
         }
     }
 
-    public int a(Map<String, com.tsf.extend.a> map) {
+    public int a(Map<String, com.tsf.extend.A> map) {
         SQLiteDatabase sQLiteDatabaseD;
         int i = 0;
         System.out.println("----------------------- SAVE LOCAL : " + map);
         if (map != null && (sQLiteDatabaseD = d()) != null) {
             try {
-                for (com.tsf.extend.a aVar : map.values()) {
+                for (com.tsf.extend.A aVar : map.values()) {
                     ContentValues contentValuesB = aVar.b();
                     if (sQLiteDatabaseD.update("app_category", contentValuesB, "pkg_name=?", new String[]{aVar.c()}) > 0) {
                         i++;
@@ -81,7 +81,7 @@ public class d {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public java.util.Map<java.lang.String, com.tsf.extend.a> b() throws java.lang.Throwable {
+    public java.util.Map<java.lang.String, com.tsf.extend.A> b() throws java.lang.Throwable {
         /*
             r10 = this;
             r9 = 0
@@ -113,9 +113,9 @@ public class d {
             boolean r0 = r1.moveToFirst()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             if (r0 == 0) goto L44
         L2e:
-            com.tsf.extend.a r0 = new com.tsf.extend.a     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
+            com.tsf.extend.A r0 = new com.tsf.extend.A     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             r0.<init>()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
-            com.tsf.extend.a r0 = r0.a(r1)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
+            com.tsf.extend.A r0 = r0.a(r1)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             java.lang.String r2 = r0.c()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             r8.put(r2, r0)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             boolean r0 = r1.moveToNext()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60

@@ -31,11 +31,11 @@ public abstract class b implements A.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         d dVar;
         d dVar2;
         d dVar3 = null;
-        com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
+        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
         int i = 0;
         while (true) {
             int i2 = i;
@@ -43,7 +43,7 @@ public abstract class b implements A.InterfaceC0090a {
             if (i2 >= aVar.a()) {
                 break;
             }
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = aVar.a(i2);
+            com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i2);
             dVar3 = new d();
             if (!b()) {
                 dVar2 = dVar;
@@ -103,8 +103,8 @@ public abstract class b implements A.InterfaceC0090a {
                         dVar2.b((int) (Math.random() * 300.0d));
                     }
                 }
-                if (bVar instanceof com.tsf.shell.f.i._b.b.a) {
-                    com.tsf.shell.f.i._b.b.a aVar = (com.tsf.shell.f.i._b.b.a) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
+                    com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
                     if (com.censivn.C3DEngine.b.b.a.O) {
                         dVar2.f(aVar.b(bVar.K().cellX));
                         dVar2.h(aVar.c(bVar.K().cellY));
@@ -158,8 +158,8 @@ public abstract class b implements A.InterfaceC0090a {
             i iVar = arrayList.get(i2);
             if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
-                if (bVar instanceof com.tsf.shell.f.i._b.b.a) {
-                    com.tsf.shell.f.i._b.b.a aVar = (com.tsf.shell.f.i._b.b.a) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
+                    com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
                     if (com.censivn.C3DEngine.b.b.a.O) {
                         bVar.position().x = aVar.b(bVar.K().cellX);
                         bVar.position().y = aVar.c(bVar.K().cellY);

@@ -211,7 +211,7 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
         if (Build.VERSION.SDK_INT >= 9) {
             return new b(context, attributeSet);
         }
-        return new a(context, attributeSet);
+        return new A(context, attributeSet);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -258,7 +258,7 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 
     /* JADX INFO: Access modifiers changed from: protected */
     @TargetApi(9)
-    public class b extends a {
+    public class b extends A {
         public b(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
@@ -272,10 +272,10 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public class a extends ListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
+    public class A extends ListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
         private boolean b;
 
-        public a(Context context, AttributeSet attributeSet) {
+        public A(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.b = false;
         }

@@ -38,7 +38,7 @@ public class d implements ServiceConnection {
         this.k = context;
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         if (a(this.k, 2)) {
             synchronized (this) {
                 if (this.m != null) {

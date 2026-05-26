@@ -247,7 +247,7 @@ public class b extends c.a {
                     this.a.l().removeChild(bVar);
                     int iB = this.c.b((com.tsf.shell.f.i.B) bVar);
                     int i = iB % com.tsf.shell.f.f.a.h.m;
-                    com.tsf.shell.f.f.a.a aVarE = this.c.e(iB);
+                    com.tsf.shell.f.f.a.A aVarE = this.c.e(iB);
                     bVar.position().setAllFrom(aVarE.globalToLocal(number3dLocalToGlobal));
                     aVarE.addChildAt(bVar, i);
                     this.c.a(bVar, aVarE, i);
@@ -304,7 +304,7 @@ public class b extends c.a {
     }
 
     public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
             cVar.rotation().setAll(0.0f, 0.0f, 0.0f);
             cVar.ak();
             cVar.am();
@@ -329,7 +329,7 @@ public class b extends c.a {
             j();
             return;
         }
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i._b.d.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.d.b)) {
             ((com.tsf.shell.f.i._b.d.b) cVar).aR();
         }
     }

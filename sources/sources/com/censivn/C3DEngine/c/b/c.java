@@ -14,7 +14,7 @@ public class c extends d implements com.censivn.C3DEngine.c.B {
         this.c = f;
     }
 
-    @Override // com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.B
     public void a() {
         this.b.normalize();
         Vector3 vector3 = new Vector3(this.a.f() / 2.0f, this.a.g() / 2.0f, this.a.h() / 2.0f);

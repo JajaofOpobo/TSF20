@@ -62,7 +62,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     @SuppressLint({"HandlerLeak"})
     private Handler F;
     private c G;
-    private com.tsf.extend.theme.b H;
+    private com.tsf.extend.theme.B H;
     protected float a;
     public List<ImageView> b;
     private TextView c;
@@ -106,7 +106,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             public void handleMessage(Message message) {
                 switch (message.what) {
                     case 0:
-                        if ((DIYThemeDetail.this.k instanceof com.tsf.extend.theme.b) && ((com.tsf.extend.theme.b) DIYThemeDetail.this.k).e()) {
+                        if ((DIYThemeDetail.this.k instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) DIYThemeDetail.this.k).e()) {
                             ao.b().i();
                         }
                         DIYThemeDetail.this.g.setResult(-1);
@@ -573,11 +573,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     }
 
     class d extends com.tsf.extend.base.support.a {
-        private a b;
+        private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
         public d() {
-            this.b = DIYThemeDetail.this.new a();
+            this.b = DIYThemeDetail.this.new A();
         }
 
         @Override // com.tsf.extend.base.support.a
@@ -649,8 +649,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
     }
 
-    class a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
-        a() {
+    class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
@@ -702,10 +702,10 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         this.q = str;
     }
 
-    class b implements e.a {
+    class B implements e.a {
         public boolean a = false;
 
-        b() {
+        B() {
         }
 
         @Override // com.tsf.extend.theme.diy.e.a
@@ -724,7 +724,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
 
         @Override // com.tsf.extend.theme.diy.e.a
-        public void a(com.tsf.extend.theme.b bVar) {
+        public void a(com.tsf.extend.theme.B bVar) {
             DIYThemeDetail.this.q();
             DIYThemeDetail.this.H = bVar;
             if (DIYThemeDetail.this.y) {
@@ -774,15 +774,15 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         });
     }
 
-    private class c implements Runnable {
+    private class C implements Runnable {
         private boolean b = false;
-        private b c;
+        private B c;
         private String d;
         private String e;
         private List<String> f;
 
-        c(String str, String str2, List<String> list) {
-            this.c = DIYThemeDetail.this.new b();
+        C(String str, String str2, List<String> list) {
+            this.c = DIYThemeDetail.this.new B();
             this.d = str;
             this.e = str2;
             this.f = list;
@@ -804,7 +804,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         if (this.G != null) {
             this.G.a();
         }
-        this.G = new c(str, str2, list);
+        this.G = new C(str, str2, list);
         new Thread(this.G).start();
     }
 

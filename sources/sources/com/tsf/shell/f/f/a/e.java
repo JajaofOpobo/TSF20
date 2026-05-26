@@ -12,29 +12,29 @@ public class e extends j {
     private static final float c = com.censivn.C3DEngine.b.b.a.a(200.0f);
     private static final int d = com.censivn.C3DEngine.b.b.a.b(100.0f);
     private h b;
-    private a e;
+    private A e;
     private j a = new j();
-    private a f = new a(b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.e.1
+    private A f = new A(b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.e.1
         @Override // com.tsf.shell.f.f.a.e.a
         public void a() {
             e.this.b.aj();
         }
     };
-    private a g = new a(b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.e.2
+    private A g = new A(b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.e.2
         @Override // com.tsf.shell.f.f.a.e.a
         public void a() {
             com.tsf.shell.manager.a.d.a(500);
         }
     };
 
-    static class a extends k {
+    static class A extends k {
         private static com.tsf.shell.f.e.k e;
         private TextureElement a;
         private int d;
         private boolean f;
         private e.a g;
 
-        public a(int i) {
+        public A(int i) {
             super(e.d, e.d, false);
             this.a = new TextureElement(0, false);
             this.d = 0;
@@ -100,7 +100,7 @@ public class e extends j {
     public e(h hVar) {
         this.b = hVar;
         this.g.a(com.tsf.shell.manager.p.e.n);
-        this.e = new a(b.d.drawer_home);
+        this.e = new A(b.d.drawer_home);
         this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.f.a.e.3
             private float b;
             private float d;

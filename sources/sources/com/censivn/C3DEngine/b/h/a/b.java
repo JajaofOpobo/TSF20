@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.b.h.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
-    private com.censivn.C3DEngine.b.f._a.b a;
+    private com.censivn.C3DEngine.b.f.a.b a;
     private float b = 0.0f;
     private float c = 0.0f;
     private float d = 0.0f;
@@ -10,7 +10,7 @@ public class b {
     private float f = 0.0f;
     private float g = 0.0f;
 
-    public b(com.censivn.C3DEngine.b.f._a.b bVar) {
+    public b(com.censivn.C3DEngine.b.f.a.b bVar) {
         this.a = bVar;
         float fRandom = (float) Math.random();
         this.a.k().setAll(fRandom, fRandom, fRandom);

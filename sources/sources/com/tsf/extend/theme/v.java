@@ -43,7 +43,7 @@ public class v extends com.tsf.extend.base.d.a {
     private List<k> f = Lists.newArrayList();
     private boolean g = false;
 
-    public static class a implements Serializable {
+    public static class A implements Serializable {
         public String a;
         public String b;
     }
@@ -87,7 +87,7 @@ public class v extends com.tsf.extend.base.d.a {
         e = str;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, String str) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("keyword", URLEncoder.encode(str));
@@ -97,15 +97,15 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_SEARCH", interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
         a("DATA_SEARCH_TAG", interfaceC0048a, bVar, (JSONObject) null, false);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, long j) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j) {
         a("DATA_RELATIVE_" + j, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, long j, long j2) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j, long j2) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("categoryId", j + "");
@@ -116,7 +116,7 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_WALLPAPE_RELATIVE_" + j, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void b(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, String str) {
+    public void b(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("packname", str);
@@ -126,11 +126,11 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_RECOM_BY_NAME" + str, interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public com.tsf.extend.base.b.a a(long j) {
+    public com.tsf.extend.base.b.A a(long j) {
         return d().get("DATA_RELATIVE_" + j);
     }
 
-    public void c(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, String str) {
+    public void c(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("album_id", str);
@@ -240,7 +240,7 @@ public class v extends com.tsf.extend.base.d.a {
         if (bVar == a.b.Refresh) {
             return 0;
         }
-        com.tsf.extend.base.b.a aVar = this.a.get(str);
+        com.tsf.extend.base.b.A aVar = this.a.get(str);
         if (aVar == null) {
             return -1;
         }
@@ -253,7 +253,7 @@ public class v extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    protected com.tsf.extend.base.b.a a(String str, String str2, JSONObject jSONObject) {
+    protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         if ("DATA_PLAY".equals(str)) {
             return j(jSONObject);
         }
@@ -283,7 +283,7 @@ public class v extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    public com.tsf.extend.base.b.a b() {
+    public com.tsf.extend.base.b.A b() {
         return null;
     }
 
@@ -312,14 +312,14 @@ public class v extends com.tsf.extend.base.d.a {
 
     public void a(final a.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
         k kVarA;
-        Iterator<Map.Entry<String, com.tsf.extend.base.b.a>> it = d().entrySet().iterator();
+        Iterator<Map.Entry<String, com.tsf.extend.base.b.A>> it = d().entrySet().iterator();
         k kVar = null;
         while (true) {
             if (!it.hasNext()) {
                 kVarA = kVar;
                 break;
             }
-            Map.Entry<String, com.tsf.extend.base.b.a> next = it.next();
+            Map.Entry<String, com.tsf.extend.base.b.A> next = it.next();
             if (next.getValue() instanceof p) {
                 kVarA = a((p) next.getValue(), j);
                 if (kVarA != null) {
@@ -369,8 +369,8 @@ public class v extends com.tsf.extend.base.d.a {
         return null;
     }
 
-    private com.tsf.extend.base.b.a a(JSONObject jSONObject) {
-        com.tsf.extend.base.b.a aVar = new com.tsf.extend.base.b.a();
+    private com.tsf.extend.base.b.A a(JSONObject jSONObject) {
+        com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -392,8 +392,8 @@ public class v extends com.tsf.extend.base.d.a {
         return eVar;
     }
 
-    private com.tsf.extend.theme.a c(JSONObject jSONObject) {
-        com.tsf.extend.theme.a aVar = new com.tsf.extend.theme.a();
+    private com.tsf.extend.theme.A c(JSONObject jSONObject) {
+        com.tsf.extend.theme.A aVar = new com.tsf.extend.theme.A();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -526,7 +526,7 @@ public class v extends com.tsf.extend.base.d.a {
         if (pVarG != null) {
             pVarG.a(new com.tsf.extend.base.b.b() { // from class: com.tsf.extend.theme.v.8
                 @Override // com.tsf.extend.base.b.b
-                public boolean a(com.tsf.extend.base.b.a aVar) {
+                public boolean a(com.tsf.extend.base.b.A aVar) {
                     return System.currentTimeMillis() - aVar.c() > TimeUnit.MINUTES.toMillis((long) iOptInt);
                 }
             });
@@ -746,7 +746,7 @@ public class v extends com.tsf.extend.base.d.a {
                         options = null;
                     }
                     Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(contextCreatePackageContext.getResources(), i, options);
-                    final b bVar = new b();
+                    final B bVar = new B();
                     bVar.a = str;
                     bVar.b = bitmapDecodeResource;
                     com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.v.11.2
@@ -775,7 +775,7 @@ public class v extends com.tsf.extend.base.d.a {
         final String str2 = list.get(i2) + "_" + i;
         Bitmap bitmapA = a(str2);
         if (bitmapA != null) {
-            b bVar = new b();
+            B bVar = new B();
             bVar.a = str;
             bVar.b = bitmapA;
             interfaceC0048a.a(null, bVar);
@@ -795,7 +795,7 @@ public class v extends com.tsf.extend.base.d.a {
                         options = options2;
                     }
                     Bitmap bitmapDecodeFile = BitmapFactory.decodeFile(Uri.parse((String) list.get(i2)).getPath(), options);
-                    final b bVar2 = new b();
+                    final B bVar2 = new B();
                     bVar2.a = str;
                     bVar2.b = bitmapDecodeFile;
                     v.this.a(str2, bVar2.b);
@@ -847,7 +847,7 @@ public class v extends com.tsf.extend.base.d.a {
     }
 
     private c j(JSONObject jSONObject) throws JSONException {
-        c cVar = new c();
+        C cVar = new C();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -893,7 +893,7 @@ public class v extends com.tsf.extend.base.d.a {
             if (!"4".equals(aVar.b)) {
                 return null;
             }
-            a aVar2 = new a();
+            A aVar2 = new A();
             aVar2.a = jSONObject.optString("album_id");
             aVar2.b = jSONObject.optString("album_name");
             aVar.d = aVar2;
@@ -960,12 +960,12 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    public static void c(final a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a) {
+    public static void c(final a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.4
             @Override // java.lang.Runnable
             public void run() {
                 Object objA = com.tsf.extend.base.b.a.a.a().a("DATA_RECOMMEND_CACHE");
-                final com.tsf.extend.base.b.a aVar = objA instanceof com.tsf.extend.base.b.a ? (com.tsf.extend.base.b.a) objA : null;
+                final com.tsf.extend.base.b.A aVar = objA instanceof com.tsf.extend.base.b.A ? (com.tsf.extend.base.b.A) objA : null;
                 if (aVar != null && aVar.d()) {
                     com.tsf.extend.base.b.a.a.a().b("DATA_RECOMMEND_CACHE");
                     aVar = null;
@@ -980,7 +980,7 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(final com.tsf.extend.base.b.a aVar) {
+    public void a(final com.tsf.extend.base.b.A aVar) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.5
             @Override // java.lang.Runnable
             public void run() {

@@ -11,13 +11,13 @@ import android.view.SurfaceHolder;
 public class LiveWallPaperService extends WallpaperService {
     @Override // android.service.wallpaper.WallpaperService
     public WallpaperService.Engine onCreateEngine() {
-        return new a();
+        return new A();
     }
 
-    private class a extends WallpaperService.Engine {
+    private class A extends WallpaperService.Engine {
         private Bitmap b;
 
-        private a() {
+        private A() {
             super(LiveWallPaperService.this);
         }
 

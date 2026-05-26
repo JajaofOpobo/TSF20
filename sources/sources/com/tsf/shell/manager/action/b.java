@@ -20,7 +20,7 @@ import org.acra.ACRAConstants;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
     public int b = 0;
-    public com.tsf.shell.manager.action.toggle.a c = new com.tsf.shell.manager.action.toggle.a();
+    public com.tsf.shell.manager.action.toggle.A c = new com.tsf.shell.manager.action.toggle.A();
     public ArrayList<a> a = a(false);
 
     public static class a {

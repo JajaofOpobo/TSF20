@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d {
-    public static ArrayList<com.tsf.shell.widget.alarm.d.a> a() {
-        ArrayList<com.tsf.shell.widget.alarm.d.a> arrayList = new ArrayList<>();
+    public static ArrayList<com.tsf.shell.widget.alarm.d.A> a() {
+        ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList = new ArrayList<>();
         try {
             return (ArrayList) com.a.a.a.a(SettingActivity.a, "CityHistory");
         } catch (Exception e) {
@@ -16,9 +16,9 @@ public class d {
         }
     }
 
-    public static boolean a(com.tsf.shell.widget.alarm.d.a aVar) {
+    public static boolean a(com.tsf.shell.widget.alarm.d.A aVar) {
         ArrayList arrayList = new ArrayList();
-        for (com.tsf.shell.widget.alarm.d.a aVar2 : a()) {
+        for (com.tsf.shell.widget.alarm.d.A aVar2 : a()) {
             if (!aVar.c.equals(aVar2.c)) {
                 arrayList.add(aVar2);
             }

@@ -94,21 +94,21 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
         }
     }
 
-    private class b extends AsyncTask<String, Void, ArrayList<com.tsf.shell.widget.alarm.d.a>> {
+    private class b extends AsyncTask<String, Void, ArrayList<com.tsf.shell.widget.alarm.d.A>> {
         private b() {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public ArrayList<com.tsf.shell.widget.alarm.d.a> doInBackground(String... strArr) {
+        public ArrayList<com.tsf.shell.widget.alarm.d.A> doInBackground(String... strArr) {
             return com.tsf.shell.widget.alarm.d.a.a.a(strArr[0]);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public void onPostExecute(ArrayList<com.tsf.shell.widget.alarm.d.a> arrayList) {
+        public void onPostExecute(ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList) {
             PlaceSearchActivity.this.b.a(arrayList);
             synchronized (PlaceSearchActivity.this) {
                 PlaceSearchActivity.a.remove(this);
@@ -119,13 +119,13 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     @Override // android.widget.AdapterView.OnItemClickListener
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
         if (i == 0) {
-            a((com.tsf.shell.widget.alarm.d.a) null);
+            a((com.tsf.shell.widget.alarm.d.A) null);
         } else {
-            a((com.tsf.shell.widget.alarm.d.a) view.getTag());
+            a((com.tsf.shell.widget.alarm.d.A) view.getTag());
         }
     }
 
-    private void a(com.tsf.shell.widget.alarm.d.a aVar) {
+    private void a(com.tsf.shell.widget.alarm.d.A aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
             e.a = true;
@@ -141,12 +141,12 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     }
 
     class a extends BaseAdapter {
-        ArrayList<com.tsf.shell.widget.alarm.d.a> a = new ArrayList<>();
+        ArrayList<com.tsf.shell.widget.alarm.d.A> a = new ArrayList<>();
 
         public a() {
         }
 
-        public void a(ArrayList<com.tsf.shell.widget.alarm.d.a> arrayList) {
+        public void a(ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList) {
             if (arrayList == null) {
                 this.a.clear();
             } else {
@@ -178,7 +178,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
                 view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
             }
             ImageView imageView = (ImageView) view.findViewById(m.c.imageView1);
-            com.tsf.shell.widget.alarm.d.a aVar = this.a.get(i);
+            com.tsf.shell.widget.alarm.d.A aVar = this.a.get(i);
             a(aVar.a + "," + aVar.b, view);
             view.setTag(this.a.get(i));
             imageView.setImageResource(m.b.activity_list_city_ico);

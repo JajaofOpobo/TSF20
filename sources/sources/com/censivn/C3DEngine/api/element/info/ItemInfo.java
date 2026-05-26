@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import com.tsf.shell.f.i.B;
-import com.tsf.shell.f.i._b.b.a;
+import com.tsf.shell.f.i.b.b.a;
 import com.tsf.shell.manager.bind.ShellModel;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

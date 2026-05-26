@@ -142,7 +142,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
             }
         });
         this.a.setOnScrollListener(this);
-        com.tsf.extend.base.b.a aVarA = z.h().a(this.g.a(), z.h);
+        com.tsf.extend.base.b.A aVarA = z.h().a(this.g.a(), z.h);
         if (aVarA != null && aVarA.a() != null) {
             this.l = false;
             this.t = !aVarA.b();
@@ -212,7 +212,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+                com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }
@@ -358,7 +358,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
     }
 
-    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
         public b(a.b bVar) {
@@ -366,9 +366,9 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.a) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
                 return;
             }
             af.this.t = !aVar.b();
@@ -399,7 +399,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             if (this.b == a.b.LoadMore) {
                 af.this.c();
                 return;

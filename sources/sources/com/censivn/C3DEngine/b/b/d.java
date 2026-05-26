@@ -80,7 +80,7 @@ public class d extends j {
                 }
                 if (this.f) {
                     d.this.f = this.a + (motionEvent.getY() - motionEvent2.getY());
-                    d.this.f = com.tsf.shell.f.e._c.a(d.this.f, d.this.e, d.this.d);
+                    d.this.f = com.tsf.shell.f.e.c.a(d.this.f, d.this.e, d.this.d);
                     return;
                 }
                 if (this.d != null) {
@@ -97,7 +97,7 @@ public class d extends j {
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 d.this.a = 0.1f;
                 if (this.f) {
-                    d.this.f = com.tsf.shell.f.e._c.b(d.this.f, f2);
+                    d.this.f = com.tsf.shell.f.e.c.b(d.this.f, f2);
                 } else {
                     d.this.a = 0.1f;
                 }

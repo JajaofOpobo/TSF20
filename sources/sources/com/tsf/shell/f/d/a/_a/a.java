@@ -147,7 +147,7 @@ public class a extends com.tsf.shell.f.d.a.A {
                 aVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new a.e.C0036a());
+        dVar.a((com.censivn.C3DEngine.b.g.B) new a.e.C0036a());
         com.censivn.C3DEngine.b.g.c.a(aVar);
         com.censivn.C3DEngine.b.g.c.a(aVar, 250, dVar);
     }
@@ -202,7 +202,7 @@ public class a extends com.tsf.shell.f.d.a.A {
                 aVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new a.c.C0034a());
+        dVar.a((com.censivn.C3DEngine.b.g.B) new a.c.C0034a());
         com.censivn.C3DEngine.b.g.c.a(aVar);
         com.censivn.C3DEngine.b.g.c.a(aVar, 1000, dVar);
     }
@@ -265,7 +265,7 @@ public class a extends com.tsf.shell.f.d.a.A {
                 kVar.points().setPX(3, fPxX4 + ((f4 - fPxX4) * f7), fPxY4 + ((f6 - fPxY4) * f7), 0.0f);
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new a.e.C0036a());
+        dVar.a((com.censivn.C3DEngine.b.g.B) new a.e.C0036a());
         com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
     }
 
@@ -297,7 +297,7 @@ public class a extends com.tsf.shell.f.d.a.A {
                 kVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new a.c.C0034a());
+        dVar.a((com.censivn.C3DEngine.b.g.B) new a.c.C0034a());
         com.censivn.C3DEngine.b.g.c.a(kVar, 1000, dVar);
     }
 }

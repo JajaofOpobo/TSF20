@@ -39,8 +39,8 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     protected int k;
     private ProgressBar l;
     private TextView m;
-    private a o;
-    private a p;
+    private A o;
+    private A p;
     private ad.a q;
     private long r;
     private boolean s;
@@ -102,7 +102,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         } else {
             bVar = a.b.LoadCache;
         }
-        this.o = new a(bVar);
+        this.o = new A(bVar);
         this.b.setOnLoadListener(new PullToRefreshAndLoadMoreListView.a() { // from class: com.tsf.extend.theme.m.1
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
             public void a() {
@@ -111,7 +111,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                     m.this.b();
                     return;
                 }
-                m.this.o = m.this.new a(a.b.LoadCache);
+                m.this.o = m.this.new A(a.b.LoadCache);
                 v.h().a(m.this.getCurrentDataType(), m.this.o, a.b.LoadCache, (JSONObject) null);
             }
 
@@ -130,7 +130,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             this.q.setColor(ThemeElementType.PARSER_CONFIG_ALL);
         }
         this.b.setDivider(null);
-        com.tsf.extend.base.b.a aVar = v.h().d().get(getCurrentDataType());
+        com.tsf.extend.base.b.A aVar = v.h().d().get(getCurrentDataType());
         if (aVar != null && aVar.a() != null) {
             this.z = false;
             this.e = aVar.b();
@@ -147,7 +147,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
         this.w = System.currentTimeMillis();
-        this.o = new a(a.b.Refresh);
+        this.o = new A(a.b.Refresh);
         v.h().a(getCurrentDataType(), this.o, a.b.Refresh, (JSONObject) null);
     }
 
@@ -167,7 +167,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
         if (this.g != null && this.g.size() > 0) {
-            this.p = new a(a.b.LoadMore);
+            this.p = new A(a.b.LoadMore);
             this.w = System.currentTimeMillis();
             v.h().a(getCurrentDataType(), this.p, a.b.LoadMore, (JSONObject) null);
         }
@@ -207,7 +207,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         int id = view.getId();
         if (id == f.e.retry) {
             this.c.setVisibility(8);
-            this.o = new a(a.b.Refresh);
+            this.o = new A(a.b.Refresh);
             this.w = System.currentTimeMillis();
             v.h().a(getCurrentDataType(), this.o, a.b.Refresh, (JSONObject) null);
         } else if (id == f.e.theme_item_download_layout_left) {
@@ -266,7 +266,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                                         if (!(kVar4 instanceof b)) {
                                             strF = null;
                                         } else {
-                                            strF = ((b) kVar4).f();
+                                            strF = ((B) kVar4).f();
                                         }
                                     } else {
                                         strF = kVar4.g();
@@ -356,7 +356,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             }
             if (kVar.x() != 1 && kVar.g().contains("DIY_")) {
             }
-            com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
             if (dVarA != null) {
                 dVarA.b(kVar.h() + "");
             }
@@ -370,17 +370,17 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    class a implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    class A implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
-        public a(a.b bVar) {
+        public A(a.b bVar) {
             this.b = bVar;
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.a) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
             } else {
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.m.a.1
                     @Override // java.lang.Runnable
@@ -419,7 +419,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final int i, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final int i, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.m.a.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -579,7 +579,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                     boolean r0 = r1.hasNext()
                     if (r0 == 0) goto L45
                     java.lang.Object r0 = r1.next()
-                    com.tsf.extend.theme.t$b r0 = (com.tsf.extend.theme.t.b) r0
+                    com.tsf.extend.theme.t$B r0 = (com.tsf.extend.theme.t.b) r0
                     com.tsf.extend.theme.k r2 = r0.a
                     if (r2 == 0) goto L58
                     java.lang.String r2 = r2
@@ -763,7 +763,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(k kVar, b bVar) {
+    public void a(k kVar, B bVar) {
         kVar.d(true);
         if (this.h != null && this.h.a(kVar)) {
             this.h.notifyDataSetChanged();

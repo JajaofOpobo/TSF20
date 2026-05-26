@@ -20,7 +20,7 @@ public class a extends com.tsf.extend.base.d.a {
     private String c;
     private String d;
     private String e;
-    private com.tsf.extend.base.b.a f = null;
+    private com.tsf.extend.base.b.A f = null;
 
     private a() {
         this.c = "";
@@ -43,7 +43,7 @@ public class a extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    protected com.tsf.extend.base.b.a a(String str, String str2, JSONObject jSONObject) {
+    protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         return (TextUtils.isEmpty(str) || !str.equals("DATA_RECOMMEND_KEYBOARD_THEME")) ? a(jSONObject) : b(jSONObject);
     }
 
@@ -52,12 +52,12 @@ public class a extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    public com.tsf.extend.base.b.a b() {
+    public com.tsf.extend.base.b.A b() {
         return null;
     }
 
     @Override // com.tsf.extend.base.d.a
-    public void a(String str, a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
+    public void a(String str, a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
         super.a(str, interfaceC0048a, bVar, jSONObject);
     }
 
@@ -73,7 +73,7 @@ public class a extends com.tsf.extend.base.d.a {
         if (bVar == a.b.Refresh) {
             return 0;
         }
-        com.tsf.extend.base.b.a aVar = this.a.get(str);
+        com.tsf.extend.base.b.A aVar = this.a.get(str);
         if (aVar == null) {
             return -1;
         }
@@ -181,7 +181,7 @@ public class a extends com.tsf.extend.base.d.a {
         return bVar;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
         a("Keyboard", interfaceC0048a, bVar, jSONObject);
     }
 
@@ -214,24 +214,24 @@ public class a extends com.tsf.extend.base.d.a {
 
     /* JADX INFO: renamed from: com.tsf.extend.keyboard.a$a, reason: collision with other inner class name */
     public static class C0054a extends com.tsf.extend.base.b.A<b> {
-        @Override // com.tsf.extend.base.b.a
+        @Override // com.tsf.extend.base.b.A
         public boolean h() {
             return b();
         }
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
         a("DATA_RECOMMEND_KEYBOARD_THEME", interfaceC0048a, bVar, new JSONObject(), false);
     }
 
-    public void a(final a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a) {
+    public void a(final a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.keyboard.a.1
             @Override // java.lang.Runnable
             public void run() {
-                final com.tsf.extend.base.b.a aVar;
+                final com.tsf.extend.base.b.A aVar;
                 Object objA = com.tsf.extend.base.b.a.a.a().a("DATA_KEYBOARD_RECOMMEND_CACHE");
-                if (objA instanceof com.tsf.extend.base.b.a) {
-                    aVar = (com.tsf.extend.base.b.a) objA;
+                if (objA instanceof com.tsf.extend.base.b.A) {
+                    aVar = (com.tsf.extend.base.b.A) objA;
                 } else {
                     aVar = objA instanceof C0054a ? (C0054a) objA : null;
                 }
@@ -252,7 +252,7 @@ public class a extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(final com.tsf.extend.base.b.a aVar) {
+    public void a(final com.tsf.extend.base.b.A aVar) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.keyboard.a.2
             @Override // java.lang.Runnable
             public void run() {
@@ -264,7 +264,7 @@ public class a extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void b(com.tsf.extend.base.b.a aVar) {
+    public void b(com.tsf.extend.base.b.A aVar) {
         this.f = aVar;
     }
 }

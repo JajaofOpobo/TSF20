@@ -87,7 +87,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     private ImageView g;
     private ImageView h;
     private f i;
-    private a j;
+    private A j;
     private Bundle k;
     private View l;
     private ProgressBar m;
@@ -140,7 +140,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
         this.q = WallpaperManager.getInstance(getContext());
         this.x = aa.a();
-        this.j = new a();
+        this.j = new A();
         this.e = Lists.newArrayList();
         this.d = LayoutInflater.from(getContext());
         this.g = (ImageView) findViewById(f.e.go_to_list);
@@ -1040,7 +1040,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class b implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+        class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
             private final a.b b;
 
             public b(a.b bVar) {
@@ -1048,7 +1048,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
 
             @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-            public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+            public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -1058,7 +1058,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
 
             @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-            public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+            public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
                 Log.d("WallpaperDetail", "onFail=" + this.b.name());
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.2
                     @Override // java.lang.Runnable
@@ -1073,8 +1073,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class a implements a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
-            a() {
+        class A implements a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+            A() {
             }
 
             @Override // com.tsf.extend.base.d.a.InterfaceC0048a
@@ -1097,7 +1097,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void a(com.tsf.extend.base.b.a aVar, boolean z) {
+        public void a(com.tsf.extend.base.b.A aVar, boolean z) {
             com.tsf.extend.theme.p pVar = null;
             if (aVar instanceof com.tsf.extend.theme.p) {
                 pVar = (com.tsf.extend.theme.p) aVar;
@@ -1116,7 +1116,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 i();
                 this.c.b(false);
             }
-            com.tsf.extend.theme.v.h().a(new a());
+            com.tsf.extend.theme.v.h().a(new A());
         }
 
         public void a(List<com.tsf.extend.theme.k> list, boolean z) {
@@ -1592,8 +1592,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         return this.o;
     }
 
-    private class a implements a.InterfaceC0048a<Pair<m.a, Bitmap>> {
-        private a() {
+    private class A implements a.InterfaceC0048a<Pair<m.a, Bitmap>> {
+        private A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a

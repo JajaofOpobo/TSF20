@@ -20,7 +20,7 @@ public class a implements a.InterfaceC0165a {
     private int e = 0;
     private int f = 0;
     private boolean g = false;
-    private com.tsf.shell.services.a h;
+    private com.tsf.shell.services.A h;
     private f i;
     private f j;
     private f k;
@@ -32,7 +32,7 @@ public class a implements a.InterfaceC0165a {
     }
 
     private void b() {
-        this.h = new com.tsf.shell.services.a();
+        this.h = new com.tsf.shell.services.A();
         this.h.a(com.censivn.C3DEngine.a.d(), new Runnable() { // from class: com.tsf.shell.manager.q.a.1
             @Override // java.lang.Runnable
             public void run() {

@@ -11,12 +11,12 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class f {
     private static f a = new f();
     private BlockingQueue<d> b = new LinkedBlockingQueue();
-    private a c = new a(this.b);
+    private A c = new A(this.b);
     private ConcurrentHashMap<String, h> d = new ConcurrentHashMap<>();
 
-    protected class a extends c<d> {
+    protected class A extends c<d> {
         /* JADX WARN: Multi-variable type inference failed */
-        public a(BlockingQueue<d> blockingQueue) {
+        public A(BlockingQueue<d> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.b);
             setName("EventDispather");

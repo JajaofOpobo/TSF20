@@ -20,7 +20,7 @@ import org.apache.http.impl.cookie.DateUtils;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class o extends com.android.volley.toolbox.a {
     private static int d = ACRAConstants.DEFAULT_CONNECTION_TIMEOUT;
-    private a e;
+    private A e;
 
     public interface a {
         void a(ac acVar, long j);
@@ -30,7 +30,7 @@ public class o extends com.android.volley.toolbox.a {
         super(fVar);
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.e = aVar;
     }
 

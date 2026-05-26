@@ -14,8 +14,8 @@ public class e extends FrameLayout {
     private f a;
     private boolean b;
     private MotionEvent c;
-    private com.tsf.shell.f.i._b.b.a d;
-    private com.tsf.shell.f.i._a.c e;
+    private com.tsf.shell.f.i.b.b.a d;
+    private com.tsf.shell.f.i.a.c e;
 
     public e(Context context) {
         super(context);
@@ -88,7 +88,7 @@ public class e extends FrameLayout {
     }
 
     public void a(d.a aVar) {
-        com.tsf.shell.f.i._b.b.a aVarA;
+        com.tsf.shell.f.i.b.b.a aVarA;
         if (!this.b && aVar.a != null && aVar.a.isInTouchMode() && this.a.getCurrentScreenLayout() != null && (aVarA = com.tsf.shell.manager.a.l.a(aVar.a)) != null) {
             com.censivn.C3DEngine.a.d.b(true);
             com.tsf.shell.manager.a.h.b(aVarA.z() != null ? aVarA.z() : com.tsf.shell.manager.a.h.o());
@@ -143,7 +143,7 @@ public class e extends FrameLayout {
                 itemInfoK.cellYH = i4;
             }
             final com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.a.h.n();
-            final com.tsf.shell.f.i._b.b.a aVar = this.d;
+            final com.tsf.shell.f.i.b.b.a aVar = this.d;
             com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.e.e.3
                 @Override // java.lang.Runnable
                 public void run() {

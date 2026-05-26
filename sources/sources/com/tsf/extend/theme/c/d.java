@@ -364,7 +364,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         this.c.notifyDataSetChanged();
     }
 
-    public void a(com.tsf.extend.base.b.a aVar, boolean z) {
+    public void a(com.tsf.extend.base.b.A aVar, boolean z) {
         if (aVar instanceof p) {
             this.e = ((p) aVar).b();
             if (!this.e) {
@@ -378,7 +378,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    class a implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private final a.b b;
 
         public a(a.b bVar) {
@@ -386,9 +386,9 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.a) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
             } else {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.a.1
                     @Override // java.lang.Runnable
@@ -400,7 +400,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.a.2
                 @Override // java.lang.Runnable
                 public void run() {

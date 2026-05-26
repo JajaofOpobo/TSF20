@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.element.info.shortcut;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.f.i._b.e.g;
+import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.manager.A;
 import com.tsf.shell.manager.a.f;
 

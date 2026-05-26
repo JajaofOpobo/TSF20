@@ -10,7 +10,7 @@ import com.tsf.shell.widget.a.h;
 public class b extends i {
     private a a;
     private com.censivn.C3DEngine.b.e.a b;
-    private com.tsf.shell.widget.a.a c;
+    private com.tsf.shell.widget.a.A c;
 
     public interface a {
         void a();
@@ -22,7 +22,7 @@ public class b extends i {
         this.a = aVar;
     }
 
-    public b(Context context, com.tsf.shell.widget.a.a aVar) {
+    public b(Context context, com.tsf.shell.widget.a.A aVar) {
         this.c = aVar;
         a(context.getString(h.a.widget_dots_clock_setting));
         b(new com.tsf.shell.widget.a.a.a(context, aVar));

@@ -13,10 +13,10 @@ import java.io.IOException;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellApplication extends Application {
     private static Context a;
-    private a b;
+    private A b;
 
-    class a extends BroadcastReceiver {
-        a() {
+    class A extends BroadcastReceiver {
+        A() {
         }
 
         @Override // android.content.BroadcastReceiver
@@ -46,7 +46,7 @@ public class ShellApplication extends Application {
             }
             return;
         }
-        this.b = new a();
+        this.b = new A();
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.tsf.shell.StartHome");
         registerReceiver(this.b, intentFilter);

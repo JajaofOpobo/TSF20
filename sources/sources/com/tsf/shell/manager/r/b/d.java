@@ -12,8 +12,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.a;
-import com.tsf.shell.f.i._b.e.h;
+import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.l.a;
 import com.tsf.shell.manager.r.b.C;
@@ -25,7 +25,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.manager.r.b.C<a> {
-    public com.tsf.shell.manager.r.b.a b;
+    public com.tsf.shell.manager.r.b.A b;
     private PackageManager c;
     private a.C0095a d;
     private a.C0095a e;
@@ -38,7 +38,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
     private c.a<a> l;
     private h m;
 
-    public d(com.tsf.shell.manager.r.b.a aVar, String str) {
+    public d(com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.b = aVar;
         this.m = new h();
@@ -62,12 +62,12 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         };
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         a.C0095a c0095a = new a.C0095a(b.d.widget_menu_shortcut_tsf, x.c(b.i.group_tsf_shortcut), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.d.3
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public boolean a() {
                 return d.this.a(d.this.k);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public void b() {
                 d.this.b(d.this.k);
                 d.this.e.a();
@@ -77,12 +77,12 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         com.tsf.shell.manager.r.c.b.e = c0095a;
         this.d = c0095a;
         a.C0095a c0095a2 = new a.C0095a(b.d.widget_menu_shortcut_system, x.c(b.i.group_system_shortcuts), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.d.4
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public boolean a() {
                 return d.this.a(d.this.l);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
             public void b() {
                 d.this.c();
                 d.this.b(d.this.l);
@@ -103,7 +103,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         if (!this.h) {
             this.h = true;
             for (b.a aVar : com.tsf.shell.manager.a.d.a()) {
-                c cVar = new c();
+                C cVar = new C();
                 cVar.c = aVar.a;
                 this.f.add(cVar);
             }
@@ -123,7 +123,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
             while (true) {
                 int i2 = i;
                 if (i2 < listQueryIntentActivities.size()) {
-                    b bVar = (b) d();
+                    B bVar = (B) d();
                     ActivityInfo activityInfo = listQueryIntentActivities.get(i2).activityInfo;
                     bVar.e = activityInfo;
                     bVar.c = activityInfo.loadLabel(this.c).toString();
@@ -148,54 +148,54 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
 
     private a d() {
         if (this.j.isEmpty()) {
-            return new b();
+            return new B();
         }
         return this.j.remove(0);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public i a(a aVar, int i, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public i a(A aVar, int i, i iVar) {
         return aVar.a(iVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public i a(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public i a(A aVar) {
         return aVar.a();
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void b(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void b(A aVar) {
         aVar.b();
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void c(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void c(A aVar) {
         aVar.a(aVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void a(MotionEvent motionEvent, a aVar, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void a(MotionEvent motionEvent, A aVar, i iVar) {
         aVar.a(motionEvent, aVar, iVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
         aVar.b(motionEvent, aVar, iVar);
         return true;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onShow() {
         a();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onRecycle() {
         Iterator<a> it = this.f.iterator();
         while (it.hasNext()) {
             it.next().c();
         }
-        for (a aVar : this.g) {
+        for (A aVar : this.g) {
             aVar.c();
             this.j.add(aVar);
         }
@@ -203,20 +203,20 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         this.i = false;
     }
 
-    class b extends a {
-        protected com.tsf.shell.f.i._b.e.b b;
+    class B extends A {
+        protected com.tsf.shell.f.i.b.e.b b;
         public String c;
         public Intent d;
         public ActivityInfo e;
         public TextureElement f;
 
-        b() {
+        B() {
             super();
             this.f = new TextureElement(0, false);
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public com.tsf.shell.f.i._b.e.b a(i iVar) {
+        public com.tsf.shell.f.i.b.e.b a(i iVar) {
             if (this.b == null) {
                 this.b = new h();
                 this.b.k.textures().addElement(this.f);
@@ -243,7 +243,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         public void b() {
             com.tsf.shell.manager.a.x.a.a(this.d, 0.0f, 0.0f, new a.C0130a() { // from class: com.tsf.shell.manager.r.b.d.b.1
                 @Override // com.tsf.shell.manager.l.a.C0130a
-                public void a(com.tsf.shell.f.i._b.e.b bVar) {
+                public void a(com.tsf.shell.f.i.b.e.b bVar) {
                     d.this.b.b().a(bVar);
                 }
 
@@ -262,7 +262,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public boolean b(MotionEvent motionEvent, a aVar, final i iVar) {
+        public boolean b(MotionEvent motionEvent, A aVar, final i iVar) {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.d.b.2
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
@@ -278,7 +278,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(a aVar) {
+        public void a(A aVar) {
             com.tsf.shell.manager.a.x.a.a(this.d, 0.0f, d.this.b.getScreenFreeSpaceCenter());
         }
 
@@ -288,17 +288,17 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         }
     }
 
-    class c extends a {
-        protected com.tsf.shell.f.i._b.e.b b;
+    class C extends A {
+        protected com.tsf.shell.f.i.b.e.b b;
         public int c;
 
-        c() {
+        C() {
             super();
             this.c = -1;
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public com.tsf.shell.f.i._b.e.b a(i iVar) {
+        public com.tsf.shell.f.i.b.e.b a(i iVar) {
             if (this.b == null) {
                 this.b = com.tsf.shell.manager.l.a.a(this.c, com.tsf.shell.manager.o.b.c);
             }
@@ -309,13 +309,13 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(MotionEvent motionEvent, a aVar, i iVar) {
+        public void a(MotionEvent motionEvent, A aVar, i iVar) {
             iVar.getMouseEventListener().c(motionEvent);
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(a aVar) {
-            com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, com.tsf.shell.manager.o.b.a);
+        public void a(A aVar) {
+            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, com.tsf.shell.manager.o.b.a);
             bVarA.position().y = d.this.b.getScreenFreeSpaceCenter();
             com.tsf.shell.manager.a.h.n().a(bVarA);
             bVarA.ah();
@@ -324,10 +324,10 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
-            ((com.tsf.shell.f.i._b.e.b) iVar).ah();
-            ((com.tsf.shell.f.i._b.e.b) iVar).K().onUpdatePhoto(null, null);
-            ((com.tsf.shell.f.i._b.e.b) iVar).getMouseEventListener().d(motionEvent);
+        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
+            ((com.tsf.shell.f.i.b.e.b) iVar).ah();
+            ((com.tsf.shell.f.i.b.e.b) iVar).K().onUpdatePhoto(null, null);
+            ((com.tsf.shell.f.i.b.e.b) iVar).getMouseEventListener().d(motionEvent);
             return true;
         }
 
@@ -338,7 +338,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
 
         @Override // com.tsf.shell.manager.r.b.d.a
         public void b() {
-            com.tsf.shell.f.i._b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, d.this.b.b().b());
+            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, d.this.b.b().b());
             bVarA.K().onUpdatePhoto(null, null);
             d.this.b.b().a(bVarA);
         }
@@ -356,7 +356,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         a() {
         }
 
-        public com.tsf.shell.f.i._b.e.b a(i iVar) {
+        public com.tsf.shell.f.i.b.e.b a(i iVar) {
             return null;
         }
 
@@ -364,13 +364,13 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
             return null;
         }
 
-        public void a(a aVar) {
+        public void a(A aVar) {
         }
 
-        public void a(MotionEvent motionEvent, a aVar, i iVar) {
+        public void a(MotionEvent motionEvent, A aVar, i iVar) {
         }
 
-        public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
+        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
             return true;
         }
 

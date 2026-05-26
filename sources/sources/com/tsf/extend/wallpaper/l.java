@@ -22,7 +22,7 @@ public class l {
 
         void a(com.tsf.extend.theme.k kVar, float f);
 
-        void a(com.tsf.extend.theme.k kVar, com.tsf.extend.theme.b bVar);
+        void a(com.tsf.extend.theme.k kVar, com.tsf.extend.theme.B bVar);
 
         void b(com.tsf.extend.theme.k kVar);
 
@@ -73,14 +73,14 @@ public class l {
         return zOffer;
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         SoftReference<a> softReference = new SoftReference<>(aVar);
         if (this.c != null) {
             this.c.add(softReference);
         }
     }
 
-    public void b(a aVar) {
+    public void b(A aVar) {
         if (this.c != null) {
             for (SoftReference<a> softReference : this.c) {
                 if (aVar == softReference.get()) {
@@ -98,7 +98,7 @@ public class l {
                 l.this.d.add(kVar);
                 Iterator it = l.this.c.iterator();
                 while (it.hasNext()) {
-                    a aVar = (a) ((SoftReference) it.next()).get();
+                    A aVar = (A) ((SoftReference) it.next()).get();
                     if (aVar != null) {
                         aVar.a(kVar);
                     }
@@ -113,7 +113,7 @@ public class l {
             public void run() {
                 Iterator it = l.this.c.iterator();
                 while (it.hasNext()) {
-                    a aVar = (a) ((SoftReference) it.next()).get();
+                    A aVar = (A) ((SoftReference) it.next()).get();
                     if (aVar != null) {
                         aVar.a(kVar, f);
                     }
@@ -122,14 +122,14 @@ public class l {
         });
     }
 
-    public void a(final com.tsf.extend.theme.k kVar, final com.tsf.extend.theme.b bVar) {
+    public void a(final com.tsf.extend.theme.k kVar, final com.tsf.extend.theme.B bVar) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.3
             @Override // java.lang.Runnable
             public void run() {
                 ao.b().h();
                 Iterator it = l.this.c.iterator();
                 while (it.hasNext()) {
-                    a aVar = (a) ((SoftReference) it.next()).get();
+                    A aVar = (A) ((SoftReference) it.next()).get();
                     if (aVar != null) {
                         aVar.a(kVar, bVar);
                     }
@@ -146,7 +146,7 @@ public class l {
             public void run() {
                 Iterator it = l.this.c.iterator();
                 while (it.hasNext()) {
-                    a aVar = (a) ((SoftReference) it.next()).get();
+                    A aVar = (A) ((SoftReference) it.next()).get();
                     if (aVar != null) {
                         aVar.b(kVar);
                     }
@@ -163,7 +163,7 @@ public class l {
             public void run() {
                 Iterator it = l.this.c.iterator();
                 while (it.hasNext()) {
-                    a aVar = (a) ((SoftReference) it.next()).get();
+                    A aVar = (A) ((SoftReference) it.next()).get();
                     if (aVar != null) {
                         aVar.c(kVar);
                     }

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.censivn.C3DEngine.b.f._a.a {
+public class b extends com.censivn.C3DEngine.b.f.a.a {
     private a a;
     private a c;
     private a d;
@@ -146,7 +146,7 @@ public class b extends com.censivn.C3DEngine.b.f._a.a {
         this.e.rotateDegressZ(f);
     }
 
-    private void a(com.censivn.C3DEngine.b.f._a.b bVar, boolean z) {
+    private void a(com.censivn.C3DEngine.b.f.a.b bVar, boolean z) {
         if (!z) {
             i();
             j();
@@ -157,14 +157,14 @@ public class b extends com.censivn.C3DEngine.b.f._a.a {
         points().setPX(bVar.d, this.e);
     }
 
-    private void c(com.censivn.C3DEngine.b.f._a.b bVar) {
+    private void c(com.censivn.C3DEngine.b.f.a.b bVar) {
         uvs().set(bVar.a, 0.0f, 1.0f);
         uvs().set(bVar.b, 0.0f, 0.0f);
         uvs().set(bVar.d, 1.0f, 0.0f);
         uvs().set(bVar.c, 1.0f, 1.0f);
     }
 
-    private void a(float f, com.censivn.C3DEngine.b.f._a.b bVar, com.censivn.C3DEngine.b.f._a.b bVar2, boolean z) {
+    private void a(float f, com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2, boolean z) {
         float f2 = f / 2.0f;
         if (f > 90.0f) {
             if (f <= 180.0f) {
@@ -230,7 +230,7 @@ public class b extends com.censivn.C3DEngine.b.f._a.a {
         a(bVar2, z);
     }
 
-    @Override // com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.a.a, com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         f();
         if (this.n != this.m) {
@@ -251,27 +251,27 @@ public class b extends com.censivn.C3DEngine.b.f._a.a {
         this.m = f;
         if (f <= 90.0f) {
             a(f, a(0), a(1), true);
-            com.censivn.C3DEngine.b.f._a.b bVarA = a(2);
+            com.censivn.C3DEngine.b.f.a.b bVarA = a(2);
             bVarA.a((Boolean) false);
             bVarA.h();
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = a(3);
+            com.censivn.C3DEngine.b.f.a.b bVarA2 = a(3);
             bVarA2.a((Boolean) false);
             bVarA2.h();
         } else if (f <= 180.0f) {
             a(f, a(0), a(1), true);
-            com.censivn.C3DEngine.b.f._a.b bVarA3 = a(2);
+            com.censivn.C3DEngine.b.f.a.b bVarA3 = a(2);
             bVarA3.a((Boolean) false);
             bVarA3.h();
-            com.censivn.C3DEngine.b.f._a.b bVarA4 = a(3);
+            com.censivn.C3DEngine.b.f.a.b bVarA4 = a(3);
             bVarA4.a((Boolean) false);
             bVarA4.h();
         } else if (f <= 360.0f) {
-            com.censivn.C3DEngine.b.f._a.b bVarA5 = a(0);
+            com.censivn.C3DEngine.b.f.a.b bVarA5 = a(0);
             g();
             c(bVarA5);
             h();
             a(bVarA5, true);
-            com.censivn.C3DEngine.b.f._a.b bVarA6 = a(1);
+            com.censivn.C3DEngine.b.f.a.b bVarA6 = a(1);
             g();
             c(bVarA6);
             h();

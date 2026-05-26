@@ -21,8 +21,8 @@ public class g extends j {
     private h b;
     private j d;
     private m e;
-    private a f;
-    private a g;
+    private A f;
+    private A g;
     private j a = new j();
     private k c = new k(com.censivn.C3DEngine.b.b.a.D, 120.0f * com.censivn.C3DEngine.b.b.a.c, false);
 
@@ -33,7 +33,7 @@ public class g extends j {
         this.a.addChild(this.c);
         this.d = new j();
         this.a.addChild(this.d);
-        this.f = new a(com.tsf.shell.manager.g.a.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.g.1
+        this.f = new A(com.tsf.shell.manager.g.a.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.g.1
             @Override // com.tsf.shell.f.f.a.g.a
             public void a() {
                 com.tsf.shell.manager.a.d.a(500);
@@ -41,7 +41,7 @@ public class g extends j {
         };
         this.f.a(com.tsf.shell.manager.p.e.n);
         this.d.addChild(this.f);
-        this.g = new a(com.tsf.shell.manager.g.a.j, b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.g.2
+        this.g = new A(com.tsf.shell.manager.g.a.j, b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.g.2
             @Override // com.tsf.shell.f.f.a.g.a
             public void a() {
                 g.this.b.aj();
@@ -195,7 +195,7 @@ public class g extends j {
         });
     }
 
-    static class a extends k {
+    static class A extends k {
         private TextureElement a;
         private int d;
         private com.tsf.shell.f.e.k e;
@@ -203,7 +203,7 @@ public class g extends j {
         private e.a g;
         private int h;
 
-        public a(int i, int i2) {
+        public A(int i, int i2) {
             super(i, i, false);
             this.a = new TextureElement(0, false);
             this.d = 0;

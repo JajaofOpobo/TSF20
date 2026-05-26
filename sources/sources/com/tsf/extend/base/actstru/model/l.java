@@ -11,7 +11,7 @@ public final class l {
 
     public static Typeface a(AssetManager assetManager, String str) {
         Typeface typefaceCreateFromAsset;
-        synchronized (a) {
+        synchronized (A) {
             try {
                 if (!a.containsKey(str)) {
                     typefaceCreateFromAsset = Typeface.createFromAsset(assetManager, str);

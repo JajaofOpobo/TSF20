@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.f.e._d.a.c;
+import com.tsf.shell.f.e.d.a.c;
 import com.tsf.shell.f.i.A;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -313,7 +313,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
         }
     }
 
-    @Override // com.tsf.shell.f.i._a.InterfaceC0113a
+    @Override // com.tsf.shell.f.i.a.InterfaceC0113a
     public ArrayList<i> b() {
         return this.h.b().children();
     }
@@ -605,7 +605,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
             dVar.a(0);
             com.censivn.C3DEngine.b.g.c.a(this.b);
             com.censivn.C3DEngine.b.g.c.a(this.b, 300, dVar);
-            com.tsf.shell.f.e._g.d.onTempleteShow();
+            com.tsf.shell.f.e.g.d.onTempleteShow();
             if (this.P != null) {
                 this.P.a();
                 this.P = null;

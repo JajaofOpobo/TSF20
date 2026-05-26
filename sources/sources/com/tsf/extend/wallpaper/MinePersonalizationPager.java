@@ -25,7 +25,7 @@ public class MinePersonalizationPager extends LinearLayout implements ViewPager.
     protected void onFinishInflate() {
         super.onFinishInflate();
         this.b = (ViewPager) findViewById(f.e.viewpager);
-        this.b.setAdapter(new a());
+        this.b.setAdapter(new A());
         this.b.setOnPageChangeListener(this);
         this.c = (PagerIndicator) findViewById(f.e.wallpaper_indicator);
         this.c.setTextData(new String[]{getResources().getString(f.g.theme_mine_tab), getResources().getString(f.g.wallpaper_mine_tab)});
@@ -33,11 +33,11 @@ public class MinePersonalizationPager extends LinearLayout implements ViewPager.
         setOnClickListener(null);
     }
 
-    private class a extends com.tsf.extend.base.support.a {
+    private class A extends com.tsf.extend.base.support.a {
         private LinearLayout.LayoutParams b;
         private SparseArray<View> c;
 
-        private a() {
+        private A() {
             this.b = new LinearLayout.LayoutParams(-1, -1);
             this.c = new SparseArray<>();
         }

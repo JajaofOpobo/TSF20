@@ -9,7 +9,7 @@ import com.tsf.b;
 import com.tsf.shell.f.e.F;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.e._e.d {
+public class d extends com.tsf.shell.f.e.e.d {
     private TextureElement b;
     private k d;
     private k e;
@@ -19,7 +19,7 @@ public class d extends com.tsf.shell.f.e._e.d {
     private boolean j = false;
     private com.censivn.C3DEngine.b.g.b.b i = new com.censivn.C3DEngine.b.g.b.b();
     private TextureElement a = new TextureElement(0, false);
-    private j c = new com.tsf.shell.f.e._e.d();
+    private j c = new com.tsf.shell.f.e.e.d();
 
     public d(b bVar) {
         boolean z = false;
@@ -64,17 +64,17 @@ public class d extends com.tsf.shell.f.e._e.d {
         calAABB();
     }
 
-    @Override // com.tsf.shell.f.e._e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
     public boolean b(f fVar) {
         return b(fVar);
     }
 
-    @Override // com.tsf.shell.f.e._e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
     public boolean a(f fVar, float f, float f2) {
         return a(fVar, f, f2);
     }
 
-    @Override // com.tsf.shell.f.e._e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
     public void a(f fVar) {
         a(fVar);
     }

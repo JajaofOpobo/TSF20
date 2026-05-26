@@ -135,19 +135,19 @@ public class f implements AlarmWidget.b {
         }
         int i = Integer.parseInt(DateFormat.format(this.k, calendar).toString());
         int i2 = Integer.parseInt(DateFormat.format("mm", calendar).toString());
-        new b(this, this.c, a.a[i / 10], 0);
-        new b(this, this.d, a.a[i % 10], VEasing.Back.easeIn);
-        new b(this, this.f, a.a[i2 / 10], VEasing.Linear.easeNone);
-        new b(this, this.g, a.a[i2 % 10], 600);
+        new B(this, this.c, a.a[i / 10], 0);
+        new B(this, this.d, a.a[i % 10], VEasing.Back.easeIn);
+        new B(this, this.f, a.a[i2 / 10], VEasing.Linear.easeNone);
+        new B(this, this.g, a.a[i2 % 10], 600);
     }
 
     private void g() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         if (calendar.get(9) == 0) {
-            new b(this, this.l, AlarmWidget.a.b[0], 0);
+            new B(this, this.l, AlarmWidget.a.b[0], 0);
         } else {
-            new b(this, this.l, AlarmWidget.a.b[1], 0);
+            new B(this, this.l, AlarmWidget.a.b[1], 0);
         }
         this.l.updateUvsVBO();
     }
@@ -165,8 +165,8 @@ public class f implements AlarmWidget.b {
 
     private void h() {
         this.n.f();
-        new b(this.i, this.n, this.n.a, 0, false);
-        new b(this.j, this.n, this.n.b, 100, true);
+        new B(this.i, this.n, this.n.a, 0, false);
+        new B(this.j, this.n, this.n.b, 100, true);
     }
 
     public void b(boolean z) {
@@ -185,11 +185,11 @@ public class f implements AlarmWidget.b {
         o.a(new VObject3d[]{this.i, this.j}, this.n.g().id, this.n.b(), 300, 150, 500);
     }
 
-    class a extends VTweenParam {
+    class A extends VTweenParam {
         private com.tsf.shell.widget.alarm.b.e b;
         private boolean c;
 
-        public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+        public A(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
             this.b = eVar;
             this.c = z;
             setEase(101);
@@ -209,17 +209,17 @@ public class f implements AlarmWidget.b {
         }
     }
 
-    class b extends VTweenParam {
+    class B extends VTweenParam {
         private VRectangle b;
         private com.tsf.shell.widget.alarm.b.e c;
         private e.a d;
         private boolean e;
 
-        public b(f fVar, VRectangle vRectangle, e.a aVar, int i) {
+        public B(f fVar, VRectangle vRectangle, e.a aVar, int i) {
             this(vRectangle, null, aVar, i, false);
         }
 
-        public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+        public B(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
             setTimeout(i);
             setScaleX(0.0f);
             setScaleY(0.0f);
@@ -240,7 +240,7 @@ public class f implements AlarmWidget.b {
             }
             this.d.a(this.b);
             this.b.updateUvsVBO();
-            f.this.new a(this.b, this.c, this.e);
+            f.this.new A(this.b, this.c, this.e);
         }
     }
 }

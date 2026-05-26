@@ -3,7 +3,7 @@ package com.tsf.shell.f.c.a;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.f.e._f.b implements com.tsf.shell.f.e.F {
+public class c extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     public c() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -27,7 +27,7 @@ public class c extends com.tsf.shell.f.e._f.b implements com.tsf.shell.f.e.F {
         return null;
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e.f.b
     public void a(com.tsf.shell.f.i.C cVar) {
     }
 

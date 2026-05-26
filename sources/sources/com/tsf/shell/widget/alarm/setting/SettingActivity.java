@@ -113,7 +113,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
             new Thread() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.4
                 @Override // java.lang.Thread, java.lang.Runnable
                 public void run() {
-                    final ArrayList<com.tsf.shell.widget.alarm.d.a> arrayListA = com.tsf.shell.widget.alarm.d.a.a.a(str);
+                    final ArrayList<com.tsf.shell.widget.alarm.d.A> arrayListA = com.tsf.shell.widget.alarm.d.a.a.a(str);
                     SettingActivity.this.l.post(new Runnable() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.4.1
                         @Override // java.lang.Runnable
                         public void run() {
@@ -155,7 +155,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.widget.alarm.d.a aVar) {
+    public void a(com.tsf.shell.widget.alarm.d.A aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
             e.a = true;
@@ -263,13 +263,13 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
                     public void a(int i2, boolean z, d.a aVar) {
                     }
                 }, true, 2, com.tsf.shell.a.a.d.e)) {
-                    SettingActivity.this.a((com.tsf.shell.widget.alarm.d.a) null);
+                    SettingActivity.this.a((com.tsf.shell.widget.alarm.d.A) null);
                     SettingActivity.this.a(false);
                     return;
                 }
                 return;
             }
-            SettingActivity.this.a((com.tsf.shell.widget.alarm.d.a) view.getTag());
+            SettingActivity.this.a((com.tsf.shell.widget.alarm.d.A) view.getTag());
             SettingActivity.this.a(false);
         }
     }

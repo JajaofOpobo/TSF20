@@ -1,0 +1,904 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:16: error: reference to j is ambiguous
+public class b extends j implements e.a, ShellWallpaperManager.a {
+                       ^
+  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:18: error: reference to j is ambiguous
+    private j.a f;
+            ^
+  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:22: error: reference to j is ambiguous
+    private j.a j;
+            ^
+  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:236: error: reference to j is ambiguous
+    private j.a g() {
+            ^
+  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/d/b.java:31: error: interface expected here
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
+    public Bitmap getIcon(boolean z, a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcut3DInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
+    private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+            ^
+  symbol:   class d
+  location: class ThemeDataInfoLayout
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:66: error: cannot find symbol
+    private com.tsf.shell.f.f.a._d.a U;
+                                  ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:248: error: cannot find symbol
+    public com.tsf.shell.f.f.a._d.a an() {
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a._d
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:12: error: cannot find symbol
+public class A extends c {
+                       ^
+  symbol: class c
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:14: error: cannot find symbol
+    private a c;
+            ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:15: error: cannot find symbol
+    private a d;
+            ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:171: error: cannot find symbol
+    public void a(a aVar) {
+                  ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:175: error: cannot find symbol
+    public void b(a aVar) {
+                  ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:179: error: cannot find symbol
+    public a d() {
+           ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:24: error: cannot find symbol
+        void a(a aVar);
+               ^
+  symbol:   class a
+  location: interface InterfaceC0101a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+        void a(a aVar, a aVar2, a aVar3);
+               ^
+  symbol:   class a
+  location: interface InterfaceC0101a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+        void a(a aVar, a aVar2, a aVar3);
+                       ^
+  symbol:   class a
+  location: interface InterfaceC0101a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+        void a(a aVar, a aVar2, a aVar3);
+                                ^
+  symbol:   class a
+  location: interface InterfaceC0101a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:28: error: cannot find symbol
+        a i_();
+        ^
+  symbol:   class a
+  location: interface InterfaceC0101a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/a/b.java:8: error: cannot find symbol
+public class b extends c {
+                       ^
+  symbol: class c
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:25: error: cannot find symbol
+    private ArrayList<com.tsf.shell.f.f.a._a.a.c> i;
+                                              ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/a/a.java:4: error: cannot find symbol
+public class a extends c {
+                       ^
+  symbol: class c
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:201: error: cannot find symbol
+    public void a(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                          ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:213: error: cannot find symbol
+    public void b(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                          ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:389: error: cannot find symbol
+    private void c(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                           ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:399: error: cannot find symbol
+    public com.tsf.shell.f.f.a._a.a.c a(com.tsf.shell.f.f.a._a.B.c cVar) {
+                                   ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:408: error: cannot find symbol
+    public com.tsf.shell.f.f.a._a.a.c b(com.tsf.shell.f.f.a._a.B.c cVar) {
+                                   ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:458: error: cannot find symbol
+    public ArrayList<com.tsf.shell.f.f.a._a.a.c> h() {
+                                             ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/a.java:13: error: cannot find symbol
+    public a(com.tsf.shell.f.f.a._a.a.c cVar, int i) {
+                                     ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/b.java:17: error: cannot find symbol
+    private com.tsf.shell.f.f.a._a.a.c g;
+                                    ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/b.java:23: error: cannot find symbol
+    public b(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                     ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/f.java:25: error: cannot find symbol
+    private ArrayList<com.tsf.shell.f.f.a._a.a.c> i = new ArrayList<>();
+                                              ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/B.java:189: error: cannot find symbol
+    public static int a(ArrayList<com.tsf.shell.f.f.a._a.a.c> arrayList, com.tsf.shell.f.f.a._a.a.b bVar) {
+                                                          ^
+  symbol:   class c
+  location: package com.tsf.shell.f.f.a._a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:18: error: cannot find symbol
+    private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
+                               ^
+  symbol:   class b
+  location: package com.tsf.shell.f.f.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:32: error: cannot find symbol
+    public com.tsf.shell.f.f.a.b d() {
+                              ^
+  symbol:   class b
+  location: package com.tsf.shell.f.f.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:29: error: cannot find symbol
+    private a.C0133a g;
+             ^
+  symbol:   class C0133a
+  location: class d.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/a.java:14: error: a is already defined in this compilation unit
+import com.censivn.C3DEngine.b.c.a;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:12: error: a type with the same simple name is already defined by the single-type-import of j
+import com.tsf.shell.f.f.j;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/b.java:12: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeInstalledDetailMenu.java:5: error: a type with the same simple name is already defined by the single-type-import of b
+import com.censivn.C3DEngine.b.c.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:23: error: a type with the same simple name is already defined by the single-type-import of A
+import com.tsf.shell.f.f.a.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/e.java:8: error: e is already defined in this compilation unit
+import com.tsf.shell.manager.p.e;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/e/b.java:10: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:11: error: c is already defined in this compilation unit
+import com.tsf.shell.manager.a.c;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/b.java:6: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/c/a.java:12: error: a is already defined in this compilation unit
+import com.tsf.shell.manager.n.a;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:10: error: cannot find symbol
+    ArrayList<b> b;
+              ^
+  symbol:   class b
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:23: error: cannot find symbol
+    public void a(b bVar) {
+                  ^
+  symbol:   class b
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:58: error: cannot find symbol
+    public TextureElement getTexture(a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:62: error: cannot find symbol
+    public TextureElement getTexture(ResourceControler resourceControler, a aVar) {
+                                                                          ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:67: error: cannot find symbol
+    private Bitmap createTextureBitmap(ResourceControler resourceControler, a aVar) {
+                                                                            ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:71: error: cannot find symbol
+    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, a aVar, boolean z) {
+                                                                        ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:75: error: cannot find symbol
+    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, a aVar, int i, int i2, boolean z) {
+                                                                                                             ^
+  symbol:   class a
+  location: class LauncherShortcutStandardInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:19: error: cannot find symbol
+        public Bitmap getThemeBitmap(a aVar) {
+                                     ^
+  symbol:   class a
+  location: class ResourceControler
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/e/b.java:7: error: b is already defined in this compilation unit
+import com.tsf.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/a.java:11: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/b.java:13: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/d.java:11: error: cannot find symbol
+    private com.censivn.C3DEngine.b.g.b i;
+                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b a = new b.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b i = new e.d();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b j = new e.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b k = new e.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b l = new d.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b n = new d.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b o = new f();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:23: error: reference to b is ambiguous
+public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
+                                    ^
+  both class com.censivn.C3DEngine.b.c.b in com.censivn.C3DEngine.b.c and class com.tsf.b in com.tsf match
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:23: error: cannot find symbol
+public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
+                                                  ^
+  symbol:   class InterfaceC0113a
+  location: class a
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:14: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.b;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:15: error: c is already defined in this compilation unit
+import com.tsf.shell.f.e._d.a.c;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/a/a/a.java:8: error: cannot find symbol
+public class a implements d {
+                          ^
+  symbol: class d
+/home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:5: error: package com.cm.a does not exist
+import com.cm.a.C;
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:6: error: package com.cm.kinfoc.a does not exist
+import com.cm.kinfoc.a.D;
+                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:7: error: package com.cm.kinfoc does not exist
+import com.cm.kinfoc.n;
+                    ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/A.java:12: error: cannot find symbol
+    private static a g = new a();
+                   ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/A.java:21: error: cannot find symbol
+    public static a a() {
+                  ^
+  symbol:   class a
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/a/b.java:4: error: package android.support.v4.d does not exist
+import android.support.v4.d.F;
+                           ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/a/b.java:10: error: cannot find symbol
+    private f<String, Object> b;
+            ^
+  symbol:   class f
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/b.java:7: error: cannot find symbol
+    boolean a(a aVar);
+              ^
+  symbol:   class a
+  location: interface b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:4: error: package com.android.volley does not exist
+import com.android.volley.B;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:5: error: package com.android.volley does not exist
+import com.android.volley.t;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:24: error: package com.android.volley does not exist
+public class c implements com.android.volley.b {
+                                            ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:53: error: package com.android.volley.b does not exist
+    public synchronized com.android.volley.b.a a(java.lang.String r9) {
+                                            ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:224: error: cannot find symbol
+    public synchronized void a(String str, b.a aVar) {
+                                            ^
+  symbol:   class a
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:335: error: cannot find symbol
+        public a(String str, b.a aVar) {
+                              ^
+  symbol:   class a
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:362: error: cannot find symbol
+        public b.a a(byte[] bArr) {
+                ^
+  symbol:   class a
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:5: error: package android.support.v4.d does not exist
+import android.support.v4.d.F;
+                           ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:7: error: package com.android.volley does not exist
+import com.android.volley.D;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:8: error: package com.android.volley does not exist
+import com.android.volley.l;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:9: error: package com.android.volley does not exist
+import com.android.volley.m;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:10: error: package com.android.volley does not exist
+import com.android.volley.n;
+                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:11: error: package com.android.volley does not exist
+import com.android.volley.p;
+                         ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+[Incubating] Problems report is available at: file:///home/ubuntu/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:12: error: cannot find symbol
+  public class A extends c {
+                         ^
+    symbol: class c
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/a/b.java:8: error: cannot find symbol
+  public class b extends c {
+                         ^
+    symbol: class c
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/a/a.java:4: error: cannot find symbol
+  public class a extends c {
+                         ^
+    symbol: class c
+  /home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/a/a/a.java:8: error: cannot find symbol
+  public class a implements d {
+                            ^
+    symbol: class d/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/d/b.java:31: error: interface expected here
+  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                    ^Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:5: error: package com.cm.a does not exist
+  import com.cm.a.C;
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:6: error: package com.cm.kinfoc.a does not exist
+  import com.cm.kinfoc.a.D;
+                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/ksmobile/launcher/a/a/b.java:7: error: package com.cm.kinfoc does not exist
+  import com.cm.kinfoc.n;
+                      ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/a/b.java:4: error: package android.support.v4.d does not exist
+  import android.support.v4.d.F;
+                             ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:4: error: package com.android.volley does not exist
+  import com.android.volley.B;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:5: error: package com.android.volley does not exist
+  import com.android.volley.t;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:24: error: package com.android.volley does not exist
+  public class c implements com.android.volley.b {
+                                              ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:53: error: package com.android.volley.b does not exist
+      public synchronized com.android.volley.b.a a(java.lang.String r9) {
+                                              ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:5: error: package android.support.v4.d does not exist
+  import android.support.v4.d.F;
+                             ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:7: error: package com.android.volley does not exist
+  import com.android.volley.D;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:8: error: package com.android.volley does not exist
+  import com.android.volley.l;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:9: error: package com.android.volley does not exist
+  import com.android.volley.m;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:10: error: package com.android.volley does not exist
+  import com.android.volley.n;
+                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d/a.java:11: error: package com.android.volley does not exist
+  import com.android.volley.p;
+                           ^Note: Recompile with -Xlint:unchecked for details./home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
+      public Bitmap getIcon(boolean z, a aVar) {
+                                       ^
+    symbol:   class a
+    location: class LauncherShortcut3DInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
+      private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+              ^
+    symbol:   class d
+    location: class ThemeDataInfoLayout
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:66: error: cannot find symbol
+      private com.tsf.shell.f.f.a._d.a U;
+                                    ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:248: error: cannot find symbol
+      public com.tsf.shell.f.f.a._d.a an() {
+                                   ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a._d
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:14: error: cannot find symbol
+      private a c;
+              ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:15: error: cannot find symbol
+      private a d;
+              ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:171: error: cannot find symbol
+      public void a(a aVar) {
+                    ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:175: error: cannot find symbol
+      public void b(a aVar) {
+                    ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:179: error: cannot find symbol
+      public a d() {
+             ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:24: error: cannot find symbol
+          void a(a aVar);
+                 ^
+    symbol:   class a
+    location: interface InterfaceC0101a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+          void a(a aVar, a aVar2, a aVar3);
+                 ^
+    symbol:   class a
+    location: interface InterfaceC0101a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+          void a(a aVar, a aVar2, a aVar3);
+                         ^
+    symbol:   class a
+    location: interface InterfaceC0101a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:26: error: cannot find symbol
+          void a(a aVar, a aVar2, a aVar3);
+                                  ^
+    symbol:   class a
+    location: interface InterfaceC0101a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/A.java:28: error: cannot find symbol
+          a i_();
+          ^
+    symbol:   class a
+    location: interface InterfaceC0101a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:25: error: cannot find symbol
+      private ArrayList<com.tsf.shell.f.f.a._a.a.c> i;
+                                                ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:201: error: cannot find symbol
+      public void a(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                            ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:213: error: cannot find symbol
+      public void b(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                            ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:389: error: cannot find symbol
+      private void c(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                             ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:399: error: cannot find symbol
+      public com.tsf.shell.f.f.a._a.a.c a(com.tsf.shell.f.f.a._a.B.c cVar) {
+                                     ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:408: error: cannot find symbol
+      public com.tsf.shell.f.f.a._a.a.c b(com.tsf.shell.f.f.a._a.B.c cVar) {
+                                     ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:458: error: cannot find symbol
+      public ArrayList<com.tsf.shell.f.f.a._a.a.c> h() {
+                                               ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/a.java:13: error: cannot find symbol
+      public a(com.tsf.shell.f.f.a._a.a.c cVar, int i) {
+                                       ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/b.java:17: error: cannot find symbol
+      private com.tsf.shell.f.f.a._a.a.c g;
+                                      ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/b/b.java:23: error: cannot find symbol
+      public b(com.tsf.shell.f.f.a._a.a.c cVar) {
+                                       ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/f.java:25: error: cannot find symbol
+      private ArrayList<com.tsf.shell.f.f.a._a.a.c> i = new ArrayList<>();
+                                                ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/B.java:189: error: cannot find symbol
+      public static int a(ArrayList<com.tsf.shell.f.f.a._a.a.c> arrayList, com.tsf.shell.f.f.a._a.a.b bVar) {
+                                                            ^
+    symbol:   class c
+    location: package com.tsf.shell.f.f.a._a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:18: error: cannot find symbol
+      private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
+                                 ^
+    symbol:   class b
+    location: package com.tsf.shell.f.f.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:32: error: cannot find symbol
+      public com.tsf.shell.f.f.a.b d() {
+                                ^
+    symbol:   class b
+    location: package com.tsf.shell.f.f.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:29: error: cannot find symbol
+      private a.C0133a g;
+               ^
+    symbol:   class C0133a
+    location: class d.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:10: error: cannot find symbol
+      ArrayList<b> b;
+                ^
+    symbol:   class b
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:23: error: cannot find symbol
+      public void a(b bVar) {
+                    ^
+    symbol:   class b
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:58: error: cannot find symbol
+      public TextureElement getTexture(a aVar) {
+                                       ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:62: error: cannot find symbol
+      public TextureElement getTexture(ResourceControler resourceControler, a aVar) {
+                                                                            ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:67: error: cannot find symbol
+      private Bitmap createTextureBitmap(ResourceControler resourceControler, a aVar) {
+                                                                              ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:71: error: cannot find symbol
+      public static Bitmap createTextureBitmap(String str, Bitmap bitmap, a aVar, boolean z) {
+                                                                          ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:75: error: cannot find symbol
+      public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, a aVar, int i, int i2, boolean z) {
+                                                                                                               ^
+    symbol:   class a
+    location: class LauncherShortcutStandardInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:19: error: cannot find symbol
+          public Bitmap getThemeBitmap(a aVar) {
+                                       ^
+    symbol:   class a
+    location: class ResourceControler
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/a.java:11: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/b.java:13: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a/d.java:11: error: cannot find symbol
+      private com.censivn.C3DEngine.b.g.b i;
+                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b a = new b.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b i = new e.d();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b j = new e.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b k = new e.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b l = new d.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b n = new d.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b o = new f();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:23: error: cannot find symbol
+  public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
+                                                    ^
+    symbol:   class InterfaceC0113a
+    location: class a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/A.java:12: error: cannot find symbol
+      private static a g = new a();
+                     ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/A.java:21: error: cannot find symbol
+      public static a a() {
+                    ^
+    symbol:   class a
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/a/b.java:10: error: cannot find symbol
+      private f<String, Object> b;
+              ^
+    symbol:   class f
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/b.java:7: error: cannot find symbol
+      boolean a(a aVar);
+                ^
+    symbol:   class a
+    location: interface b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:224: error: cannot find symbol
+      public synchronized void a(String str, b.a aVar) {
+                                              ^
+    symbol:   class a
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:335: error: cannot find symbol
+          public a(String str, b.a aVar) {
+                                ^
+    symbol:   class a
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:362: error: cannot find symbol
+          public b.a a(byte[] bArr) {
+                  ^
+    symbol:   class a
+    location: class b/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:12: error: a type with the same simple name is already defined by the single-type-import of j
+  import com.tsf.shell.f.f.j;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeInstalledDetailMenu.java:5: error: a type with the same simple name is already defined by the single-type-import of b
+  import com.censivn.C3DEngine.b.c.b;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:23: error: a type with the same simple name is already defined by the single-type-import of A
+  import com.tsf.shell.f.f.a.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:14: error: a type with the same simple name is already defined by the single-type-import of b
+  import com.tsf.b;
+  ^Note: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API./home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:16: error: reference to j is ambiguous
+  public class b extends j implements e.a, ShellWallpaperManager.a {
+                         ^
+    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:18: error: reference to j is ambiguous
+      private j.a f;
+              ^
+    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:22: error: reference to j is ambiguous
+      private j.a j;
+              ^
+    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:236: error: reference to j is ambiguous
+      private j.a g() {
+              ^
+    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:23: error: reference to b is ambiguous
+  public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
+                                      ^
+    both class com.censivn.C3DEngine.b.c.b in com.censivn.C3DEngine.b.c and class com.tsf.b in com.tsf match/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/a.java:14: error: a is already defined in this compilation unit
+  import com.censivn.C3DEngine.b.c.a;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/b.java:12: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/e.java:8: error: e is already defined in this compilation unit
+  import com.tsf.shell.manager.p.e;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/e/b.java:10: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_a/c.java:11: error: c is already defined in this compilation unit
+  import com.tsf.shell.manager.a.c;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/b.java:6: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/c/a.java:12: error: a is already defined in this compilation unit
+  import com.tsf.shell.manager.n.a;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/e/b.java:7: error: b is already defined in this compilation unit
+  import com.tsf.b;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/b/c.java:15: error: c is already defined in this compilation unit
+  import com.tsf.shell.f.e._d.a.c;
+  ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 2s
+15 actionable tasks: 1 executed, 14 up-to-date

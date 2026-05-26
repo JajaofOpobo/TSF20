@@ -4,7 +4,7 @@ import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.e._f.b implements com.tsf.shell.f.e.F {
+public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     public d() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -28,7 +28,7 @@ public class d extends com.tsf.shell.f.e._f.b implements com.tsf.shell.f.e.F {
         return null;
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e.f.b
     public void a(final com.tsf.shell.f.i.C cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.b.d.1
             @Override // java.lang.Runnable
@@ -36,7 +36,7 @@ public class d extends com.tsf.shell.f.e._f.b implements com.tsf.shell.f.e.F {
                 d.this.removeChild(cVar);
             }
         };
-        if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
+        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
             g.a(cVar, null, runnable);
         } else {
             g.a(cVar, runnable);

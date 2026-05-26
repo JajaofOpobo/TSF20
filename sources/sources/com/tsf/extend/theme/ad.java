@@ -27,7 +27,7 @@ import org.json.JSONObject;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ad extends BaseAdapter {
     private List<c> a = Lists.newArrayList();
-    private a b = new a();
+    private A b = new A();
     private View.OnClickListener c;
     private ad.a d;
     private int e;
@@ -43,9 +43,9 @@ public class ad extends BaseAdapter {
     }
 
     public static class c {
-        public b a = new b();
-        public b b = new b();
-        public b c = new b();
+        public B a = new B();
+        public B b = new B();
+        public B c = new B();
     }
 
     public ad(Context context) {
@@ -77,7 +77,7 @@ public class ad extends BaseAdapter {
     }
 
     public c a(View view) {
-        c cVar = new c();
+        C cVar = new C();
         cVar.a.a = view.findViewById(f.e.left_layout);
         cVar.a.c = (ImageView) view.findViewById(f.e.theme_img_left);
         cVar.a.d = (TextView) view.findViewById(f.e.theme_name_left);
@@ -114,7 +114,7 @@ public class ad extends BaseAdapter {
         return cVar;
     }
 
-    public void a(int i, View view, c cVar) {
+    public void a(int i, View view, C cVar) {
         if (i == getCount() - 1) {
             view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), view.getPaddingTop());
         } else {
@@ -160,14 +160,14 @@ public class ad extends BaseAdapter {
         return listA.get((i * 3) + i2);
     }
 
-    private class a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
-        private a() {
+    private class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        private A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null && pair.first != null && pair.second != null) {
-                for (c cVar : ad.this.a) {
+                for (C cVar : ad.this.a) {
                     a(pair, cVar.a);
                     a(pair, cVar.b);
                     a(pair, cVar.c);
@@ -175,7 +175,7 @@ public class ad extends BaseAdapter {
             }
         }
 
-        private void a(Pair<String, Bitmap> pair, b bVar) {
+        private void a(Pair<String, Bitmap> pair, B bVar) {
             if (pair != null && bVar != null && bVar.c != null && bVar.c.getTag() != null && ((String) pair.first).equals(bVar.c.getTag())) {
                 bVar.c.setImageBitmap((Bitmap) pair.second);
             }
@@ -300,13 +300,13 @@ public class ad extends BaseAdapter {
 
     @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
-        c cVarA;
+        C cVarA;
         if (view == null) {
             view = a(i, getItem(i), viewGroup);
             cVarA = a(view);
             view.setTag(cVarA);
         } else {
-            cVarA = (c) view.getTag();
+            cVarA = (C) view.getTag();
         }
         a(i, view, cVarA);
         return view;

@@ -8,7 +8,7 @@ import com.tsf.shell.manager.b.e;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends com.tsf.shell.f.h.a.A {
     public static final float a = com.censivn.C3DEngine.b.b.a.a(200.0f);
-    private a b;
+    private A b;
     private d c;
     private com.tsf.shell.f.h.a.b.a d;
 
@@ -47,9 +47,9 @@ public class c extends com.tsf.shell.f.h.a.A {
         this.d.a(1);
         this.d.a(false);
         if (iAu == 0) {
-            a((a) this.c, false, false);
+            a((A) this.c, false, false);
         } else {
-            a((a) this.d, false, false);
+            a((A) this.d, false, false);
         }
         if (!e.av()) {
             a(false, false, false);
@@ -58,13 +58,13 @@ public class c extends com.tsf.shell.f.h.a.A {
 
     private void x() {
         if (this.b == this.c) {
-            a((a) this.d, true, true);
+            a((A) this.d, true, true);
         } else {
-            a((a) this.c, true, true);
+            a((A) this.c, true, true);
         }
     }
 
-    private void a(a aVar, boolean z, boolean z2) {
+    private void a(A aVar, boolean z, boolean z2) {
         if (this.b != null) {
             this.b.d();
             this.b.a(z);
@@ -78,7 +78,7 @@ public class c extends com.tsf.shell.f.h.a.A {
         }
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void b(int i) {
         if (i == 0) {
             if (this.b == this.c) {
@@ -95,7 +95,7 @@ public class c extends com.tsf.shell.f.h.a.A {
         a("");
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public boolean c(int i) {
         if (i != 0) {
             return true;
@@ -108,52 +108,52 @@ public class c extends com.tsf.shell.f.h.a.A {
         return this.c;
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void d() {
         this.b.b();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void u() {
         super.u();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void a(boolean z) {
         e.w(z);
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void t() {
         this.b.i();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void m() {
         this.b.c();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void n() {
         this.b.d();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void o() {
         this.b.e();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void p() {
         this.b.f();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void r() {
         this.b.g();
     }
 
-    @Override // com.tsf.shell.f.h.a.a
+    @Override // com.tsf.shell.f.h.a.A
     public void s() {
         this.b.h();
     }

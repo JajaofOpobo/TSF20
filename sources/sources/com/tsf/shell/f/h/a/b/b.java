@@ -8,7 +8,7 @@ import com.tsf.b;
 public class b extends i {
     private a a;
     private e b;
-    private com.tsf.shell.f.h.a.b c;
+    private com.tsf.shell.f.h.a.B c;
 
     public b(a aVar) {
         this.a = aVar;
@@ -21,7 +21,7 @@ public class b extends i {
         eVar.i(3);
         eVar.j(15);
         b(eVar);
-        this.c = new com.tsf.shell.f.h.a.b();
+        this.c = new com.tsf.shell.f.h.a.B();
         b(this.c);
     }
 

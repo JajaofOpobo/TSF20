@@ -79,11 +79,11 @@ public class c extends e {
     }
 
     public void i() {
-        ArrayList<com.tsf.shell.f.i._b.e.g> arrayListA;
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListA;
         int size;
         if (com.tsf.shell.manager.a.w.a().b() && (size = (arrayListA = com.tsf.shell.utils.b.a(6)).size()) > 0) {
             for (int i = 0; i < size; i++) {
-                com.tsf.shell.f.i._b.e.g gVar = arrayListA.get(i);
+                com.tsf.shell.f.i.b.e.g gVar = arrayListA.get(i);
                 gVar.scale().setAll(0.0f, 0.0f, 1.0f);
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.0f);

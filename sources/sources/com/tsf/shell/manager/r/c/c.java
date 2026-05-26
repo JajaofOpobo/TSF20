@@ -22,15 +22,15 @@ public class c {
 
     public static void a() {
         a = new HashMap<>();
-        a.put("com.tsf.shell.widget.message", new a(5, 17, ""));
-        a.put("com.tsf.shell.widget.alarm", new a(4, -1, ""));
-        a.put("com.tsf.shell.widget.memo", new a(6, 8, ""));
-        a.put("com.tsf.shell.widget.music", new a(4, 17, ""));
-        a.put("com.tsf.shell.widget.gallery", new a(5, 14, ""));
-        a.put("com.tsf.shell.widget.adornment", new a(4, 6, ""));
-        a.put("com.tsf.shell.widget.calendar", new a(5, 11, ""));
-        a.put("com.tsf.shell.widget.cubeclock", new a(5, 3, ""));
-        a.put("com.tsf.shell.widget.weather", new a(4, 16, ""));
+        a.put("com.tsf.shell.widget.message", new A(5, 17, ""));
+        a.put("com.tsf.shell.widget.alarm", new A(4, -1, ""));
+        a.put("com.tsf.shell.widget.memo", new A(6, 8, ""));
+        a.put("com.tsf.shell.widget.music", new A(4, 17, ""));
+        a.put("com.tsf.shell.widget.gallery", new A(5, 14, ""));
+        a.put("com.tsf.shell.widget.adornment", new A(4, 6, ""));
+        a.put("com.tsf.shell.widget.calendar", new A(5, 11, ""));
+        a.put("com.tsf.shell.widget.cubeclock", new A(5, 3, ""));
+        a.put("com.tsf.shell.widget.weather", new A(4, 16, ""));
     }
 
     static class a {
@@ -53,7 +53,7 @@ public class c {
         a(com.censivn.C3DEngine.a.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_widget), k.c(Home.c, str), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), runnable, null);
     }
 
-    public static boolean a(com.tsf.shell.f.i._c.g gVar, boolean z) {
+    public static boolean a(com.tsf.shell.f.i.c.g gVar, boolean z) {
         boolean zN = gVar.n();
         if (gVar.e) {
             if (!zN) {
@@ -62,7 +62,7 @@ public class c {
             return zN;
         }
         boolean z2 = gVar.h <= 6;
-        a aVar = a.get(gVar.a);
+        A aVar = a.get(gVar.a);
         boolean zA = a(aVar, gVar);
         boolean zB = b(aVar, gVar);
         if (zN && z2 && zA && zB) {
@@ -127,11 +127,11 @@ public class c {
         });
     }
 
-    private static boolean a(a aVar, com.tsf.shell.f.i._c.g gVar) {
+    private static boolean a(A aVar, com.tsf.shell.f.i.c.g gVar) {
         return aVar == null || gVar.h >= aVar.a;
     }
 
-    private static boolean b(a aVar, com.tsf.shell.f.i._c.g gVar) {
+    private static boolean b(A aVar, com.tsf.shell.f.i.c.g gVar) {
         return aVar == null || gVar.i >= aVar.b;
     }
 }

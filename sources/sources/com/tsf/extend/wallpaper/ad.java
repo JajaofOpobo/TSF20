@@ -45,7 +45,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     private int n;
     private int o;
     private int p;
-    private a q;
+    private A q;
     private View r;
     private TextView s;
     private ProgressBar t;
@@ -137,7 +137,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             }
         });
         this.a.setOnScrollListener(this);
-        com.tsf.extend.base.b.a aVarA = z.h().a(this.h ? this.i : this.g.a(), this.h ? z.c : z.b);
+        com.tsf.extend.base.b.A aVarA = z.h().a(this.h ? this.i : this.g.a(), this.h ? z.c : z.b);
         if (aVarA != null && aVarA.a() != null) {
             this.m = false;
             this.u = !aVarA.b();
@@ -230,7 +230,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             if (this.g != ai.HotType) {
                 aj.a(arrayListNewArrayList);
             }
-            com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
             if (dVarA != null) {
                 dVarA.a(mVar.h() + "");
             }
@@ -244,7 +244,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+                com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }
@@ -393,11 +393,11 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
     }
 
-    public static class a extends ColorDrawable {
+    public static class A extends ColorDrawable {
         int a;
         int b;
 
-        public a(int i, int i2) {
+        public A(int i, int i2) {
             this.b = i;
             this.a = i;
         }
@@ -413,7 +413,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
     }
 
-    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
         public b(a.b bVar) {
@@ -421,9 +421,9 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.a) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
                 return;
             }
             ad.this.u = !aVar.b();
@@ -454,7 +454,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             if (this.b == a.b.LoadMore) {
                 ad.this.d();
                 return;

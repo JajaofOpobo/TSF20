@@ -45,11 +45,11 @@ public class al extends BaseAdapter {
 
     @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
-        a aVar;
+        A aVar;
         LayoutInflater layoutInflater = (LayoutInflater) this.b.getSystemService("layout_inflater");
         if (view == null) {
             view = layoutInflater.inflate(f.C0052f.theme_diy_share_item, (ViewGroup) null);
-            aVar = new a();
+            aVar = new A();
             aVar.a = (ImageView) view.findViewById(f.e.icon);
             aVar.b = (TextView) view.findViewById(f.e.app_name);
             if (d == null) {
@@ -58,7 +58,7 @@ public class al extends BaseAdapter {
             aVar.b.setTypeface(d);
             view.setTag(aVar);
         } else {
-            aVar = (a) view.getTag();
+            aVar = (A) view.getTag();
         }
         an anVar = (an) getItem(i);
         aVar.a.setImageDrawable(anVar.b());

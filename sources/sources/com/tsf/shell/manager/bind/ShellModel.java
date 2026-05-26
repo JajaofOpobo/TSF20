@@ -155,7 +155,7 @@ public class ShellModel extends BroadcastReceiver {
             return blob;
         }
 
-        public static void a(ItemInfo itemInfo, ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+        public static void a(ItemInfo itemInfo, ShellProvider.A aVar, SQLiteDatabase sQLiteDatabase) {
             if (itemInfo.id == -1) {
                 ContentValues contentValues = new ContentValues();
                 itemInfo.id = aVar.a();

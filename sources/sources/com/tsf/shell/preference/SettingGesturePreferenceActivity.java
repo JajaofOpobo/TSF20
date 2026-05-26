@@ -226,7 +226,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         sendBroadcast(intent);
     }
 
-    @Override // com.tsf.shell.a
+    @Override // com.tsf.shell.A
     public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
         int i = this.c;
         this.a.put(Integer.valueOf(this.c), interfaceC0025a);

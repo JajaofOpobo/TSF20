@@ -264,7 +264,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+        com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
         int i = this.k;
         int id = view.getId();
         if (id == f.e.tab_wallpaper) {

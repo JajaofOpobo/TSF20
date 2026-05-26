@@ -38,7 +38,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
     private static List<g> d = new ArrayList();
     private g e;
     private ListView f;
-    private a g;
+    private A g;
     private List<g> h;
     private float i;
     private int j;
@@ -65,7 +65,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
         this.h = Lists.newArrayList();
         this.f = new ListView(context);
         addView(this.f, new FrameLayout.LayoutParams(-1, -1));
-        this.g = new a();
+        this.g = new A();
         this.f.setAdapter((ListAdapter) this.g);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         this.i = getResources().getDimensionPixelSize(f.c.local_wallpaper_category_list_item_padding);
@@ -87,7 +87,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
         });
         i.a().a(this);
         this.u.add(c);
-        this.u.add(a);
+        this.u.add(A);
         File filesDir = getContext().getFilesDir();
         List<Integer> listC = ab.c();
         d.clear();
@@ -117,12 +117,12 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
         if (this.o != null) {
             this.o.clear();
         }
-        this.g = new a();
+        this.g = new A();
         this.f.setAdapter((ListAdapter) this.g);
     }
 
-    private class a extends BaseAdapter {
-        private a() {
+    private class A extends BaseAdapter {
+        private A() {
         }
 
         @Override // android.widget.Adapter

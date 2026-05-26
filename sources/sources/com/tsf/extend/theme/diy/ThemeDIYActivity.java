@@ -878,7 +878,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.j.post(new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.11
                 @Override // java.lang.Runnable
                 public void run() throws Throwable {
-                    com.tsf.extend.theme.b bVar = new com.tsf.extend.theme.b();
+                    com.tsf.extend.theme.B bVar = new com.tsf.extend.theme.B();
                     bVar.f(true);
                     File fileG = bVar.g(ThemeDIYActivity.this);
                     if (fileG == null) {
@@ -1406,12 +1406,12 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    class h implements b.a<com.tsf.extend.base.b.a> {
+    class h implements b.a<com.tsf.extend.base.b.A> {
         public h() {
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(final com.tsf.extend.base.b.a aVar) {
+        public void a(final com.tsf.extend.base.b.A aVar) {
             if (aVar != null) {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.h.1
                     @Override // java.lang.Runnable
@@ -1443,7 +1443,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(int i, com.tsf.extend.base.b.a aVar) {
+        public void a(int i, com.tsf.extend.base.b.A aVar) {
             if (aVar != null) {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.h.2
                     @Override // java.lang.Runnable

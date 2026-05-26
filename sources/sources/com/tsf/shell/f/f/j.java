@@ -12,8 +12,8 @@ public class j {
     public static ArrayList<b> b = new ArrayList<>();
 
     public static void a() {
-        d.add(new a());
-        d.add(new a());
+        d.add(new A());
+        d.add(new A());
     }
 
     public static void a(int i, int i2, int i3, int i4) {
@@ -26,7 +26,7 @@ public class j {
 
     public static void a(Object obj, int i) {
         if (b(obj) == null) {
-            b.add(new b(obj, i));
+            b.add(new B(obj, i));
             b();
         }
     }
@@ -37,7 +37,7 @@ public class j {
         while (true) {
             int i2 = i;
             if (it.hasNext()) {
-                b next = it.next();
+                B next = it.next();
                 i = next.b > i2 ? next.b : i2;
             } else {
                 a = i2;
@@ -47,7 +47,7 @@ public class j {
     }
 
     public static void a(Object obj) {
-        b bVarB = b(obj);
+        B bVarB = b(obj);
         if (bVarB != null) {
             b.remove(bVarB);
             b();
@@ -59,7 +59,7 @@ public class j {
     }
 
     public static b b(Object obj) {
-        for (b bVar : b) {
+        for (B bVar : b) {
             if (bVar.a == obj) {
                 return bVar;
             }
@@ -99,7 +99,7 @@ public class j {
                 if (!it.hasNext()) {
                     z = true;
                     break;
-                } else if (((a) it.next()).b != null) {
+                } else if (((A) it.next()).b != null) {
                     z = false;
                     break;
                 }
@@ -120,7 +120,7 @@ public class j {
     /* JADX INFO: Access modifiers changed from: private */
     public static void g() {
         if (c != null) {
-            com.tsf.shell.manager.a.t.a(c);
+            com.tsf.shell.manager.a.t.a(C);
             c = null;
         }
     }
@@ -143,7 +143,7 @@ public class j {
             boolean r0 = r2.hasNext()
             if (r0 == 0) goto L18
             java.lang.Object r0 = r2.next()
-            com.tsf.shell.f.f.j$a r0 = (com.tsf.shell.f.f.j.a) r0
+            com.tsf.shell.f.f.j$A r0 = (com.tsf.shell.f.f.j.a) r0
             java.lang.Object r3 = r0.a
             if (r3 != r4) goto L7
             r1 = r0
@@ -154,7 +154,7 @@ public class j {
             boolean r0 = r2.hasNext()
             if (r0 == 0) goto L47
             java.lang.Object r0 = r2.next()
-            com.tsf.shell.f.f.j$a r0 = (com.tsf.shell.f.f.j.a) r0
+            com.tsf.shell.f.f.j$A r0 = (com.tsf.shell.f.f.j.a) r0
             java.lang.Object r3 = r0.a
             if (r3 == 0) goto L36
             java.lang.Object r3 = r0.a
@@ -167,7 +167,7 @@ public class j {
             java.util.ArrayList<com.tsf.shell.f.f.j$a> r0 = com.tsf.shell.f.f.j.d
             r1 = 1
             java.lang.Object r0 = r0.get(r1)
-            com.tsf.shell.f.f.j$a r0 = (com.tsf.shell.f.f.j.a) r0
+            com.tsf.shell.f.f.j$A r0 = (com.tsf.shell.f.f.j.a) r0
         L43:
             r0.a()
             return r0

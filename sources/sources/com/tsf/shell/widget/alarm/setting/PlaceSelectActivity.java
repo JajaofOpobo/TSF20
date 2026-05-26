@@ -33,7 +33,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
     }
 
     class a extends BaseAdapter {
-        ArrayList<com.tsf.shell.widget.alarm.d.a> a = new ArrayList<>();
+        ArrayList<com.tsf.shell.widget.alarm.d.A> a = new ArrayList<>();
 
         public a() {
             a();
@@ -70,7 +70,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
                 a(SettingActivity.a.getString(m.f.autosetmylocation), view);
                 imageView.setImageResource(m.b.activity_list_location_ico);
             } else {
-                com.tsf.shell.widget.alarm.d.a aVar = this.a.get(i - 1);
+                com.tsf.shell.widget.alarm.d.A aVar = this.a.get(i - 1);
                 a(aVar.a + "," + aVar.b, view);
                 view.setTag(this.a.get(i - 1));
                 imageView.setImageResource(m.b.activity_list_city_ico);
@@ -97,11 +97,11 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         if (i == 0) {
             a(null);
         } else {
-            a((com.tsf.shell.widget.alarm.d.a) view.getTag());
+            a((com.tsf.shell.widget.alarm.d.A) view.getTag());
         }
     }
 
-    private void a(com.tsf.shell.widget.alarm.d.a aVar) {
+    private void a(com.tsf.shell.widget.alarm.d.A aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
             e.a = true;

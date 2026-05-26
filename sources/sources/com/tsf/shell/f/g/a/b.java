@@ -9,7 +9,7 @@ import com.tsf.shell.ShellActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e._g.d {
+public class b extends com.tsf.shell.f.e.g.d {
     public c a;
     public e b;
     public d c;
@@ -18,7 +18,7 @@ public class b extends com.tsf.shell.f.e._g.d {
     private n f;
     private boolean g;
     private j h;
-    private com.tsf.shell.f.i._b.e.b i;
+    private com.tsf.shell.f.i.b.e.b i;
     private Runnable j;
     private boolean k;
 
@@ -26,7 +26,7 @@ public class b extends com.tsf.shell.f.e._g.d {
         super(210.0f * com.censivn.C3DEngine.b.b.a.c);
         this.g = true;
         this.k = false;
-        ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.e.g.a.b> arrayList = new ArrayList<>();
         this.a = new c(this);
         arrayList.add(this.a);
         this.c = new d(this);
@@ -76,8 +76,8 @@ public class b extends com.tsf.shell.f.e._g.d {
         this.g = z;
     }
 
-    @Override // com.tsf.shell.f.e._g.d
-    public void onMenuChanged(com.tsf.shell.f.e._g.a.c cVar) {
+    @Override // com.tsf.shell.f.e.g.d
+    public void onMenuChanged(com.tsf.shell.f.e.g.a.c cVar) {
         a(cVar instanceof c);
         if (cVar instanceof a) {
             b();
@@ -86,7 +86,7 @@ public class b extends com.tsf.shell.f.e._g.d {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void onShow() {
         com.tsf.shell.manager.a.c.d();
         com.tsf.shell.manager.action.f.b();
@@ -95,25 +95,25 @@ public class b extends com.tsf.shell.f.e._g.d {
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void onHide() {
         com.tsf.shell.manager.a.c.e();
         com.tsf.shell.manager.action.f.c();
         c();
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void onHideComplete() {
         com.tsf.shell.manager.a.j.b(this.f);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e.g.d
     public void onLayout(float f, float f2, float f3, float f4) {
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
         d();
     }
 
-    public com.tsf.shell.f.i._b.e.b a() {
+    public com.tsf.shell.f.i.b.e.b a() {
         e();
         return this.i;
     }
@@ -131,12 +131,12 @@ public class b extends com.tsf.shell.f.e._g.d {
             d();
             com.tsf.shell.manager.a.c.a(this.j);
         } else {
-            com.tsf.shell.f.e._g.a.c currentMenuItem = getCurrentMenuItem();
+            com.tsf.shell.f.e.g.a.c currentMenuItem = getCurrentMenuItem();
             if (currentMenuItem != null && (currentMenuItem instanceof a)) {
                 ((a) currentMenuItem).c();
             }
         }
-        com.tsf.shell.f.e._g.a.c currentMenuItem2 = getCurrentMenuItem();
+        com.tsf.shell.f.e.g.a.c currentMenuItem2 = getCurrentMenuItem();
         if (currentMenuItem2 != null && (currentMenuItem2 instanceof a)) {
             a aVar = (a) currentMenuItem2;
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -154,7 +154,7 @@ public class b extends com.tsf.shell.f.e._g.d {
             if (textureElement.id == 0) {
                 fVarB.f();
             }
-            this.i = new com.tsf.shell.f.i._b.e.h() { // from class: com.tsf.shell.f.g.a.b.2
+            this.i = new com.tsf.shell.f.i.b.e.h() { // from class: com.tsf.shell.f.g.a.b.2
                 com.tsf.shell.f.d.b.a.d a;
 
                 @Override // com.censivn.C3DEngine.b.f.j
@@ -167,7 +167,7 @@ public class b extends com.tsf.shell.f.e._g.d {
                     }
                 }
 
-                @Override // com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
+                @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
                     if (this.a != null) {
@@ -193,7 +193,7 @@ public class b extends com.tsf.shell.f.e._g.d {
                     com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.g.a.b.4.1
                         @Override // com.censivn.C3DEngine.b.g.d
                         public void a() {
-                            com.tsf.shell.f.e._g.a.c currentMenuItem = b.this.getCurrentMenuItem();
+                            com.tsf.shell.f.e.g.a.c currentMenuItem = b.this.getCurrentMenuItem();
                             if (currentMenuItem != null && (currentMenuItem instanceof a)) {
                                 ((a) currentMenuItem).c();
                             }

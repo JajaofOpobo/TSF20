@@ -14,12 +14,12 @@ public class ThemeDetailViewPager extends ViewPager {
 
     public ThemeDetailViewPager(Context context) {
         super(context);
-        this.b = new GestureDetector(context, new a());
+        this.b = new GestureDetector(context, new A());
     }
 
     public ThemeDetailViewPager(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.b = new GestureDetector(context, new a());
+        this.b = new GestureDetector(context, new A());
     }
 
     public void setNestedParent(ViewGroup viewGroup) {
@@ -44,8 +44,8 @@ public class ThemeDetailViewPager extends ViewPager {
         return super.onTouchEvent(motionEvent);
     }
 
-    class a extends GestureDetector.SimpleOnGestureListener {
-        a() {
+    class A extends GestureDetector.SimpleOnGestureListener {
+        A() {
         }
 
         @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener

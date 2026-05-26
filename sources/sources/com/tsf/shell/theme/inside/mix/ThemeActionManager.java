@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.A;
-import com.tsf.shell.f.i._b.e.c;
+import com.tsf.shell.f.i.b.e.c;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;

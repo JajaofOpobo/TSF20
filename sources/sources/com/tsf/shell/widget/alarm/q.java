@@ -58,15 +58,15 @@ public class q extends VRectangle {
             Bitmap bitmapCopy = bitmap.copy(Bitmap.Config.ARGB_8888, true);
             bitmap.recycle();
             this.b = bitmapCopy;
-            new b(this);
+            new B(this);
         }
     }
 
-    class b extends VTweenParam {
+    class B extends VTweenParam {
         boolean a = false;
         private VObject3d c;
 
-        public b(VObject3d vObject3d) {
+        public B(VObject3d vObject3d) {
             this.c = vObject3d;
             VTween.killTween(q.this);
             VTween.to(q.this, 1000, this);
@@ -85,7 +85,7 @@ public class q extends VRectangle {
                 } else {
                     i.c("=========ERROR BITMAP IS RECYCLE=====");
                 }
-                q.this.new a(this.c);
+                q.this.new A(this.c);
             }
         }
 
@@ -118,11 +118,11 @@ public class q extends VRectangle {
         updatePointsVBO();
     }
 
-    class a extends VTweenParam {
+    class A extends VTweenParam {
         boolean a = false;
         private VObject3d c;
 
-        public a(VObject3d vObject3d) {
+        public A(VObject3d vObject3d) {
             this.c = vObject3d;
             setEase(300);
             VTween.killTween(q.this);

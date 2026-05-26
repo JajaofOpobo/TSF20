@@ -24,7 +24,7 @@ public class am extends Dialog {
     private Context a;
     private int b;
     private GridView c;
-    private a d;
+    private A d;
 
     public interface a {
         void a();
@@ -105,7 +105,7 @@ public class am extends Dialog {
         this.c.setAdapter((ListAdapter) c(z));
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.d = aVar;
         if (this.c != null) {
             this.c.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: com.tsf.extend.theme.am.2
@@ -121,13 +121,13 @@ public class am extends Dialog {
     private al c(boolean z) throws Throwable {
         ArrayList arrayList = new ArrayList();
         List<ResolveInfo> listA = a(this.a, "text/plain");
-        Map<String, com.tsf.extend.a> mapA = com.tsf.extend.c.a(this.a);
+        Map<String, com.tsf.extend.A> mapA = com.tsf.extend.c.a(this.a);
         int i = 0;
         for (int i2 = 0; i2 < listA.size(); i2++) {
             ResolveInfo resolveInfo = listA.get(i2);
             an anVar = new an(this.a, resolveInfo);
             String str = resolveInfo.activityInfo.packageName;
-            com.tsf.extend.a aVar = mapA.get(str);
+            com.tsf.extend.A aVar = mapA.get(str);
             if (!z || (!str.contains("com.google.android.apps.plus") && !str.contains("com.facebook.katana"))) {
                 if (aVar != null && com.tsf.extend.a.e(aVar.a())) {
                     arrayList.add(i, anVar);

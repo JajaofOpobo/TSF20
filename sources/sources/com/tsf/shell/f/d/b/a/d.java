@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.b;
-import com.tsf.shell.f.i._b.e.h;
+import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -21,10 +21,10 @@ public class d extends com.tsf.shell.f.f.f {
     public void a() {
     }
 
-    public void a(com.tsf.shell.f.i._b.e.b bVar) {
+    public void a(com.tsf.shell.f.i.b.e.b bVar) {
     }
 
-    public void b(com.tsf.shell.f.i._b.e.b bVar) {
+    public void b(com.tsf.shell.f.i.b.e.b bVar) {
     }
 
     public void b() {
@@ -48,7 +48,7 @@ public class d extends com.tsf.shell.f.f.f {
                 d.this.a(this);
             }
 
-            @Override // com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
+            @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);

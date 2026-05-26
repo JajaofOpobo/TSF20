@@ -137,19 +137,19 @@ public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.Inter
                 } else {
                     g.this.i.a(cVar.g, cVar.h, cVar.i, cVar.b);
                 }
-                g.this.new b(g.this.k, g.this.i, g.this.i.b, 100, false);
-                g.this.new b(g.this.l, g.this.i, g.this.i.c, VEasing.Back.easeIn, false);
-                g.this.new b(g.this.j, g.this.i, g.this.i.a, 300, false);
-                g.this.new b(g.this.m, g.this.i, g.this.i.d, VEasing.Linear.easeNone, true);
+                g.this.new B(g.this.k, g.this.i, g.this.i.b, 100, false);
+                g.this.new B(g.this.l, g.this.i, g.this.i.c, VEasing.Back.easeIn, false);
+                g.this.new B(g.this.j, g.this.i, g.this.i.a, 300, false);
+                g.this.new B(g.this.m, g.this.i, g.this.i.d, VEasing.Linear.easeNone, true);
             }
         }, VMessageQueueManager.TYPE_GL_THREAD);
     }
 
-    class a extends VTweenParam {
+    class A extends VTweenParam {
         private com.tsf.shell.widget.alarm.b.e b;
         private boolean c;
 
-        public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+        public A(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
             this.b = eVar;
             this.c = z;
             setEase(101);
@@ -169,13 +169,13 @@ public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.Inter
         }
     }
 
-    class b extends VTweenParam {
+    class B extends VTweenParam {
         private VRectangle b;
         private com.tsf.shell.widget.alarm.b.e c;
         private e.a d;
         private boolean e;
 
-        public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+        public B(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
             setTimeout(i);
             setScaleX(0.0f);
             setScaleY(0.0f);
@@ -194,7 +194,7 @@ public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.Inter
             this.b.textures().addElement(this.c.g());
             this.d.a(this.b);
             this.b.updateUvsVBO();
-            g.this.new a(this.b, this.c, this.e);
+            g.this.new A(this.b, this.c, this.e);
         }
     }
 

@@ -34,7 +34,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
     private PagerIndicator j;
     private LinearLayout k;
     private PersonalizationActivity.f l;
-    private a m;
+    private A m;
     private View n;
     private boolean o;
     private int p;
@@ -95,7 +95,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
     private void c() {
         String[] strArr;
         this.i = (ViewPager) findViewById(f.e.viewpager);
-        this.m = new a();
+        this.m = new A();
         this.m.a((PersonalizationActivity.i) this);
         this.i.setAdapter(this.m);
         this.i.setOnPageChangeListener(this);
@@ -167,7 +167,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         }
     }
 
-    private class a extends com.tsf.extend.base.support.a {
+    private class A extends com.tsf.extend.base.support.a {
         private int c;
         private int d;
         private int e;
@@ -175,7 +175,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         private int b = 0;
         private FrameLayout.LayoutParams f = new FrameLayout.LayoutParams(-1, -1);
 
-        public a() {
+        public A() {
             this.c = 1;
             this.d = 2;
             this.e = 3;
@@ -267,7 +267,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
     public void c(int i) {
         if (this.i != null) {
             this.s = i;
-            com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
             if (dVarA != null) {
                 dVarA.a(i + 1);
             }

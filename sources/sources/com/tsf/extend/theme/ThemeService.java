@@ -7,7 +7,7 @@ import android.os.IBinder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeService extends Service {
-    private a a;
+    private A a;
     private SharedPreferences b;
 
     @Override // android.app.Service
@@ -18,14 +18,14 @@ public class ThemeService extends Service {
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         if (this.a == null) {
-            this.a = new a();
+            this.a = new A();
             this.b = getSharedPreferences("theme", 0);
         }
         return this.a;
     }
 
-    private class a extends com.tsf.extend.base.c.c {
-        private a() {
+    private class A extends com.tsf.extend.base.c.c {
+        private A() {
         }
 
         @Override // com.tsf.extend.base.c.c

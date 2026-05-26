@@ -87,7 +87,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     private boolean r;
     private String s;
     private int v;
-    private com.tsf.extend.theme.b y;
+    private com.tsf.extend.theme.B y;
     private b z;
     private final String i = "ThemeCmClubActivity";
     private boolean j = false;
@@ -609,7 +609,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         }
 
         @Override // com.tsf.extend.theme.diy.e.a
-        public void a(com.tsf.extend.theme.b bVar) {
+        public void a(com.tsf.extend.theme.B bVar) {
             ThemeCmClubActivity.this.x = 100;
             ThemeCmClubActivity.this.y = bVar;
             ThemeCmClubActivity.this.i();
@@ -617,7 +617,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     }
 
     public void b(String str) {
-        new j().a(this.f, 2, "https://cml.ksmobile.com/diy/detail?d=" + str, new com.tsf.extend.theme.b(), new j.a() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.12
+        new j().a(this.f, 2, "https://cml.ksmobile.com/diy/detail?d=" + str, new com.tsf.extend.theme.B(), new j.a() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.12
             @Override // com.tsf.extend.theme.j.a
             public void a(String str2) {
                 if (str2 != null) {

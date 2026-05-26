@@ -7,11 +7,11 @@ import com.tsf.shell.f.g.a.h;
 public class b extends h {
     public static k b;
     public boolean a;
-    private a c;
+    private A c;
     private Runnable d;
     private Runnable f;
 
-    public b(a aVar, boolean z) {
+    public b(A aVar, boolean z) {
         super(0.85f);
         this.a = false;
         this.c = aVar;

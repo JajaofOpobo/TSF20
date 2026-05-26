@@ -9,7 +9,7 @@ public class e extends i {
     private d a;
     private com.censivn.C3DEngine.b.e.a b;
     private com.censivn.C3DEngine.b.e.e c;
-    private com.tsf.shell.f.h.a.b d;
+    private com.tsf.shell.f.h.a.B d;
 
     public e(d dVar) {
         this.a = dVar;
@@ -31,7 +31,7 @@ public class e extends i {
         eVar.a("");
         eVar.i(3);
         eVar.j(10);
-        this.d = new com.tsf.shell.f.h.a.b();
+        this.d = new com.tsf.shell.f.h.a.B();
         b(this.d);
     }
 

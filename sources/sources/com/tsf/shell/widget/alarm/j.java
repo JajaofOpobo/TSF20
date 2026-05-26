@@ -12,7 +12,7 @@ public class j extends VRectangle {
     public static TextureElement b;
     public Uv[] c;
     private int d;
-    private a e;
+    private A e;
     private final float f;
     private final float g;
     private final float h;
@@ -22,7 +22,7 @@ public class j extends VRectangle {
         void a();
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.e = aVar;
     }
 

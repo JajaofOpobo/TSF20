@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+"""
+Update all references to renamed packages across the codebase.
+"""
+import os
+import re
+
+SOURCES = "/home/ubuntu/Documents/TSF20/sources/sources"
+
+# Package renames: old -> new
+RENAMES = {
+    'com.tsf.shell.a': 'com.tsf.shell._a',
+    'com.tsf.shell.f.d': 'com.tsf.shell.f._d',
+    'com.tsf.shell.f.f.a._d.a': 'com.tsf.shell.f.f.a._d._a',
+}
+
+updated = 0
+for root, dirs, files in os.walk(SOURCES):
+    for f in files:
+        if not f.endswith('.java'):
+            continue
+        fpath = os.path.join(root, f)
+        try:
+            with open(fpath, 'r', encoding='utf-8', errors='replace') as fh:
+                content = fh.read()
+        except:
+            continue
+        
+        new_content = content
+        for old_pkg, new_pkg in RENAMES.items():
+            # Replace import statements
+            new_content = re.sub(
+                rf'\bimport\s+{re.escape(old_pkg)}\.',
+                f'import {new_pkg}.',
+                new_content
+            )
+            # Replace fully qualified references in code
+            new_content = re.sub(
+                rf'\b{re.escape(old_pkg)}\.',
+                f'{new_pkg}.',
+                new_content
+            )
+        
+        if new_content != content:
+            with open(fpath, 'w') as fh:
+                fh.write(new_content)
+            updated += 1
+
+print(f"Updated {updated} files with package reference fixes")

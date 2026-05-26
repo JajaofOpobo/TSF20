@@ -19,20 +19,20 @@ public class c {
     Context a;
     Map<String, String> b = new ArrayMap();
     Map<String, a> c = new ArrayMap();
-    List<com.tsf.extend.wallpaper.a> d = new ArrayList();
+    List<com.tsf.extend.wallpaper.A> d = new ArrayList();
     private boolean e = true;
     private boolean f = true;
     private boolean g = true;
     private boolean h = true;
 
-    private Map<String, a> a(List<com.tsf.extend.wallpaper.a> list) {
+    private Map<String, a> a(List<com.tsf.extend.wallpaper.A> list) {
         d.a aVarA;
         ArrayMap arrayMap = new ArrayMap();
-        Iterator<com.tsf.extend.wallpaper.a> it = list.iterator();
+        Iterator<com.tsf.extend.wallpaper.A> it = list.iterator();
         while (it.hasNext()) {
             String strA = it.next().a();
             if (!TextUtils.isEmpty(strA) && (aVarA = d.a().a(strA)) != null && !TextUtils.isEmpty(aVarA.b)) {
-                a aVarC = a.a(strA).c(aVarA.b);
+                A aVarC = a.a(strA).c(aVarA.b);
                 aVarC.a(1);
                 aVarC.b(aVarA.a);
                 arrayMap.put(strA, aVarC);
@@ -48,10 +48,10 @@ public class c {
         com.tsf.extend.wallpaper.c.a().a(context);
     }
 
-    private List<com.tsf.extend.wallpaper.a> a(Map<String, a> map, List<com.tsf.extend.wallpaper.a> list) {
+    private List<com.tsf.extend.wallpaper.A> a(Map<String, a> map, List<com.tsf.extend.wallpaper.A> list) {
         if (map != null && !map.isEmpty()) {
             ArrayList arrayList = new ArrayList();
-            for (com.tsf.extend.wallpaper.a aVar : list) {
+            for (com.tsf.extend.wallpaper.A aVar : list) {
                 String strA = aVar.a();
                 if (!TextUtils.isEmpty(strA) && !map.containsKey(strA)) {
                     arrayList.add(aVar);
@@ -110,13 +110,13 @@ public class c {
         });
     }
 
-    private Map<String, a> b(List<com.tsf.extend.wallpaper.a> list) {
+    private Map<String, a> b(List<com.tsf.extend.wallpaper.A> list) {
         HashMap map = new HashMap();
-        Iterator<com.tsf.extend.wallpaper.a> it = list.iterator();
+        Iterator<com.tsf.extend.wallpaper.A> it = list.iterator();
         while (it.hasNext()) {
             String strA = it.next().a();
             if (!TextUtils.isEmpty(strA) && v.e(strA)) {
-                a aVarC = a.a(strA).c(a.q);
+                A aVarC = a.a(strA).c(a.q);
                 aVarC.a(2);
                 map.put(strA, aVarC);
             }

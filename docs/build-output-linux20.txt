@@ -1,0 +1,485 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/f.java:19: error: invalid method declaration; return type required
+        public a(BlockingQueue<d> blockingQueue) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:38: error: invalid method declaration; return type required
+        public a(BlockingQueue<FutureTask<d>> blockingQueue) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:38: error: invalid method declaration; return type required
+        public a(Context context, AttributeSet attributeSet) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshListView.java:278: error: invalid method declaration; return type required
+        public a(Context context, AttributeSet attributeSet) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/A.java:63: error: invalid method declaration; return type required
+        private b() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/A.java:92: error: invalid method declaration; return type required
+        public c(IBinder iBinder) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:653: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:708: error: invalid method declaration; return type required
+        b() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:784: error: invalid method declaration; return type required
+        c(String str, String str2, List<String> list) {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeAlbumsPager.java:399: error: invalid method declaration; return type required
+        public a(a.b bVar) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:901: error: invalid method declaration; return type required
+        public c() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:976: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetailViewPager.java:48: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemePager.java:195: error: invalid method declaration; return type required
+        private b() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemePager.java:421: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeService.java:28: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:54: error: invalid method declaration; return type required
+        public b() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:121: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ad.java:164: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/m.java:376: error: invalid method declaration; return type required
+        public a(a.b bVar) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/o.java:79: error: invalid method declaration; return type required
+        public a(Context context) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/q.java:115: error: invalid method declaration; return type required
+        protected a() {
+                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/t.java:436: error: invalid method declaration; return type required
+        protected c() {
+                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:194: error: invalid method declaration; return type required
+        public a(n nVar, int i) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:296: error: invalid method declaration; return type required
+        public b(int i, int i2, List<c.a> list) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/LiveWallPaperService.java:20: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/MinePersonalizationPager.java:40: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:306: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1077: error: invalid method declaration; return type required
+            a() {
+            ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1596: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperPager.java:178: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/ad.java:400: error: invalid method declaration; return type required
+        public a(int i, int i2) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/d.java:39: error: invalid method declaration; return type required
+        public a(Context context) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/h.java:125: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/r.java:124: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:217: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/z.java:442: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/j.java:342: error: invalid method declaration; return type required
+        public a(float f, float f2, boolean z, TextureElement textureElement, float f3) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/r.java:111: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/s.java:124: error: invalid method declaration; return type required
+        public a(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:127: error: invalid method declaration; return type required
+        public c(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar, t tVar) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:580: error: invalid method declaration; return type required
+        public a(com.censivn.C3DEngine.b.f.i iVar, C cVar, int i) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/e.java:37: error: invalid method declaration; return type required
+        public a(int i) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/g.java:206: error: invalid method declaration; return type required
+        public a(int i, int i2) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/h.java:58: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:1145: error: invalid method declaration; return type required
+        public c() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:1312: error: invalid method declaration; return type required
+            a() {
+            ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:2684: error: invalid method declaration; return type required
+        public a(com.censivn.C3DEngine.b.f.i iVar) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/e.java:210: error: invalid method declaration; return type required
+        public a(float f, float f2, float f3) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:61: error: invalid method declaration; return type required
+        public a(Handler handler) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/d.java:213: error: invalid method declaration; return type required
+        b() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/d.java:295: error: invalid method declaration; return type required
+        c() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/e.java:98: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:35: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/c.java:186: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/h.java:153: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundService.java:22: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:129: error: invalid method declaration; return type required
+        d() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:319: error: invalid method declaration; return type required
+        c() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:378: error: invalid method declaration; return type required
+        public a(VObject3d vObject3d) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:192: error: invalid method declaration; return type required
+        public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:218: error: invalid method declaration; return type required
+        public b(f fVar, VRectangle vRectangle, e.a aVar, int i) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:222: error: invalid method declaration; return type required
+        public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:152: error: invalid method declaration; return type required
+        public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:178: error: invalid method declaration; return type required
+        public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/o.java:32: error: invalid method declaration; return type required
+        public a(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/q.java:69: error: invalid method declaration; return type required
+        public b(VObject3d vObject3d) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/q.java:125: error: invalid method declaration; return type required
+        public a(VObject3d vObject3d) {
+               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/A.java:196: error: invalid method declaration; return type required
+        b() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/cubeclock/q.java:60: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:628: error: invalid method declaration; return type required
+        private a() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/ShellApplication.java:19: error: invalid method declaration; return type required
+        a() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:194: error: invalid method declaration; return type required
+        a(Context context) {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:19: error: invalid method declaration; return type required
+        private b() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:22: error: invalid method declaration; return type required
+        /* synthetic */ b(D dVar, AnonymousClass1 anonymousClass1) {
+                        ^
+75 errors
+
+[Incubating] Problems report is available at: file:///home/ubuntu/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/f.java:19: error: invalid method declaration; return type required
+          public a(BlockingQueue<d> blockingQueue) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:38: error: invalid method declaration; return type required
+          public a(BlockingQueue<FutureTask<d>> blockingQueue) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:38: error: invalid method declaration; return type required
+          public a(Context context, AttributeSet attributeSet) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshListView.java:278: error: invalid method declaration; return type required
+          public a(Context context, AttributeSet attributeSet) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/A.java:63: error: invalid method declaration; return type required
+          private b() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/A.java:92: error: invalid method declaration; return type required
+          public c(IBinder iBinder) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:653: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:708: error: invalid method declaration; return type required
+          b() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:784: error: invalid method declaration; return type required
+          c(String str, String str2, List<String> list) {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeAlbumsPager.java:399: error: invalid method declaration; return type required
+          public a(a.b bVar) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:901: error: invalid method declaration; return type required
+          public c() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:976: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetailViewPager.java:48: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemePager.java:195: error: invalid method declaration; return type required
+          private b() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemePager.java:421: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeService.java:28: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:54: error: invalid method declaration; return type required
+          public b() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:121: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/ad.java:164: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/m.java:376: error: invalid method declaration; return type required
+          public a(a.b bVar) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/o.java:79: error: invalid method declaration; return type required
+          public a(Context context) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/q.java:115: error: invalid method declaration; return type required
+          protected a() {
+                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/t.java:436: error: invalid method declaration; return type required
+          protected c() {
+                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:194: error: invalid method declaration; return type required
+          public a(n nVar, int i) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:296: error: invalid method declaration; return type required
+          public b(int i, int i2, List<c.a> list) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/LiveWallPaperService.java:20: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/MinePersonalizationPager.java:40: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:306: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1077: error: invalid method declaration; return type required
+              a() {
+              ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1596: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperPager.java:178: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/ad.java:400: error: invalid method declaration; return type required
+          public a(int i, int i2) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/d.java:39: error: invalid method declaration; return type required
+          public a(Context context) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/h.java:125: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/r.java:124: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:217: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/z.java:442: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/j.java:342: error: invalid method declaration; return type required
+          public a(float f, float f2, boolean z, TextureElement textureElement, float f3) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/r.java:111: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/s.java:124: error: invalid method declaration; return type required
+          public a(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:127: error: invalid method declaration; return type required
+          public c(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar, t tVar) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:580: error: invalid method declaration; return type required
+          public a(com.censivn.C3DEngine.b.f.i iVar, C cVar, int i) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/e.java:37: error: invalid method declaration; return type required
+          public a(int i) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/g.java:206: error: invalid method declaration; return type required
+          public a(int i, int i2) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/h.java:58: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:1145: error: invalid method declaration; return type required
+          public c() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:1312: error: invalid method declaration; return type required
+              a() {
+              ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:2684: error: invalid method declaration; return type required
+          public a(com.censivn.C3DEngine.b.f.i iVar) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/e.java:210: error: invalid method declaration; return type required
+          public a(float f, float f2, float f3) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:61: error: invalid method declaration; return type required
+          public a(Handler handler) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/d.java:213: error: invalid method declaration; return type required
+          b() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/d.java:295: error: invalid method declaration; return type required
+          c() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/e.java:98: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:35: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/c.java:186: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/h.java:153: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundService.java:22: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:129: error: invalid method declaration; return type required
+          d() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:319: error: invalid method declaration; return type required
+          c() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/AlarmWidget.java:378: error: invalid method declaration; return type required
+          public a(VObject3d vObject3d) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:192: error: invalid method declaration; return type required
+          public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:218: error: invalid method declaration; return type required
+          public b(f fVar, VRectangle vRectangle, e.a aVar, int i) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/f.java:222: error: invalid method declaration; return type required
+          public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:152: error: invalid method declaration; return type required
+          public a(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, boolean z) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:178: error: invalid method declaration; return type required
+          public b(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.e eVar, e.a aVar, int i, boolean z) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/o.java:32: error: invalid method declaration; return type required
+          public a(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/q.java:69: error: invalid method declaration; return type required
+          public b(VObject3d vObject3d) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/q.java:125: error: invalid method declaration; return type required
+          public a(VObject3d vObject3d) {
+                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/A.java:196: error: invalid method declaration; return type required
+          b() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/cubeclock/q.java:60: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:628: error: invalid method declaration; return type required
+          private a() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/ShellApplication.java:19: error: invalid method declaration; return type required
+          a() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:194: error: invalid method declaration; return type required
+          a(Context context) {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:19: error: invalid method declaration; return type required
+          private b() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:22: error: invalid method declaration; return type required
+          /* synthetic */ b(D dVar, AnonymousClass1 anonymousClass1) {
+                          ^
+  75 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
+15 actionable tasks: 1 executed, 14 up-to-date

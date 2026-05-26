@@ -148,7 +148,7 @@ public class d extends j {
                     }
                     d.this.h = this.a + (motionEvent2.getX() - motionEvent.getX());
                     if (!d.this.o) {
-                        d.this.h = com.tsf.shell.f.e._c.a(d.this.h, d.this.g, d.this.f, d.a);
+                        d.this.h = com.tsf.shell.f.e.c.a(d.this.h, d.this.g, d.this.f, d.a);
                     }
                 }
             }
@@ -159,7 +159,7 @@ public class d extends j {
                     if (f < 0.0f && d.this.o) {
                         d.this.g();
                     }
-                    d.this.h = com.tsf.shell.f.e._c.a(d.this.h, f);
+                    d.this.h = com.tsf.shell.f.e.c.a(d.this.h, f);
                 }
             }
         });
@@ -508,7 +508,7 @@ public class d extends j {
                     this.j = 1;
                     f5 = f6;
                 }
-                this.s = (f5 / com.tsf.shell.f.e._c.a) * 1.5f;
+                this.s = (f5 / com.tsf.shell.f.e.c.a) * 1.5f;
                 if (this.s > 0.0f) {
                     if (this.v != this.j && this.t) {
                         t();

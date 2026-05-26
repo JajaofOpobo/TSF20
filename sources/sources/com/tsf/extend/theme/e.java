@@ -56,7 +56,7 @@ public class e {
         if (kVar == null || kVar.g() == null) {
             return false;
         }
-        String strF = ((kVar instanceof b) && ((b) kVar).e()) ? ((b) kVar).f() : kVar.g();
+        String strF = ((kVar instanceof b) && ((B) kVar).e()) ? ((B) kVar).f() : kVar.g();
         b();
         boolean z = b(context).getWritableDatabase().delete("favorite_theme", "package_name=?", new String[]{strF}) > 0;
         if (z) {
@@ -114,7 +114,7 @@ public class e {
         return null;
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         synchronized (this.b) {
             if (!this.b.contains(aVar)) {
                 this.b.add(aVar);
@@ -122,7 +122,7 @@ public class e {
         }
     }
 
-    public void b(a aVar) {
+    public void b(A aVar) {
         synchronized (this.b) {
             this.b.remove(aVar);
         }
@@ -144,13 +144,13 @@ public class e {
             return r9
         L6:
             java.lang.String r1 = r13.g()
-            boolean r0 = r13 instanceof com.tsf.extend.theme.b
+            boolean r0 = r13 instanceof com.tsf.extend.theme.B
             if (r0 == 0) goto L69
             r0 = r13
-            com.tsf.extend.theme.b r0 = (com.tsf.extend.theme.b) r0
+            com.tsf.extend.theme.B r0 = (com.tsf.extend.theme.B) r0
             boolean r0 = r0.e()
             if (r0 == 0) goto L69
-            com.tsf.extend.theme.b r13 = (com.tsf.extend.theme.b) r13
+            com.tsf.extend.theme.B r13 = (com.tsf.extend.theme.B) r13
             java.lang.String r0 = r13.f()
             r5 = r0
         L1e:

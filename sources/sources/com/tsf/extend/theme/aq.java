@@ -49,7 +49,7 @@ public abstract class aq extends k {
             return null;
         }
         if (new File(strOptString).getName().startsWith("CMT_")) {
-            aVar = new b();
+            aVar = new B();
         } else {
             aVar = new com.tsf.extend.theme.diy.a();
         }

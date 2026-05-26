@@ -40,7 +40,7 @@ public class t extends BaseAdapter {
     private Drawable r;
     private List<d> n = Lists.newArrayList();
     private boolean q = false;
-    protected c d = b();
+    protected C d = b();
 
     public enum a {
         Left,
@@ -155,7 +155,7 @@ public class t extends BaseAdapter {
         } else {
             dVar = (d) view.getTag();
         }
-        b item = getItem(i);
+        B item = getItem(i);
         a(dVar, item);
         dVar.a = item.a;
         dVar.b.setImageBitmap(null);
@@ -240,7 +240,7 @@ public class t extends BaseAdapter {
     protected void a(d dVar, View view) {
     }
 
-    protected void a(d dVar, b bVar) {
+    protected void a(d dVar, B bVar) {
     }
 
     private void g() {
@@ -261,7 +261,7 @@ public class t extends BaseAdapter {
         return this.b.getResources().getDimensionPixelSize(f.c.theme_download_layout_height);
     }
 
-    private void a(View view, a aVar, int i) {
+    private void a(View view, A aVar, int i) {
         View view2;
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(this.e, this.f);
         int i2 = this.i;
@@ -310,8 +310,8 @@ public class t extends BaseAdapter {
     }
 
     public void a(List<b> list, List<k> list2) {
-        b bVar;
-        b bVar2 = list.size() > 0 ? list.get(list.size() - 1) : null;
+        B bVar;
+        B bVar2 = list.size() > 0 ? list.get(list.size() - 1) : null;
         if (bVar2 != null && bVar2.b() == null && 1 < list2.size()) {
             k kVarRemove = list2.remove(0);
             kVarRemove.f(bVar2.a().z() + 1);
@@ -330,21 +330,21 @@ public class t extends BaseAdapter {
             kVar2.f(size + 2);
             k kVar3 = list2.get((i * 3) + 2);
             kVar3.f(size + 3);
-            list.add(new b(kVar, kVar2, kVar3));
+            list.add(new B(kVar, kVar2, kVar3));
         }
         int size2 = list2.size() % 3;
         if (size2 != 0) {
             if (size2 == 1) {
                 k kVar4 = list2.get(list2.size() - 1);
                 kVar4.f(((list.size() + 1) * 10) + 1);
-                bVar = new b(kVar4, null, null);
+                bVar = new B(kVar4, null, null);
             } else if (size2 == 2) {
                 int size3 = (list.size() + 1) * 10;
                 k kVar5 = list2.get(list2.size() - 2);
                 kVar5.f(size3 + 1);
                 k kVar6 = list2.get(list2.size() - 1);
                 kVar6.f(size3 + 2);
-                bVar = new b(kVar5, kVar6, null);
+                bVar = new B(kVar5, kVar6, null);
             } else {
                 bVar = null;
             }
@@ -432,8 +432,8 @@ public class t extends BaseAdapter {
         }
     }
 
-    protected class c implements a.InterfaceC0048a<Pair<String, Bitmap>> {
-        protected c() {
+    protected class C implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        protected C() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
@@ -480,7 +480,7 @@ public class t extends BaseAdapter {
     }
 
     protected c b() {
-        return new c();
+        return new C();
     }
 
     public boolean a(k kVar) {

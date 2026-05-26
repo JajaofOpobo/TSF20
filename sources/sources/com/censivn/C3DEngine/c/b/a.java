@@ -43,7 +43,7 @@ public class a extends d implements com.censivn.C3DEngine.c.B {
         this.e = i;
     }
 
-    @Override // com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.B
     public void a() {
         if (b() != 0.0f) {
             if (this.e == 0) {

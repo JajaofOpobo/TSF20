@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.b.a.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.f.e.F;
-import com.tsf.shell.f.i._b.e.h;
+import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.manager.r.c.g;
 import com.tsf.shell.utils.m;
 import com.tsf.shell.utils.w;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.censivn.C3DEngine.b.b.a.c {
-    private com.tsf.shell.f.i._b.e.b a;
+    private com.tsf.shell.f.i.b.e.b a;
     private e b;
     private float d;
     private b e;
@@ -28,12 +28,12 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
         e();
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e.f.b
     public i d() {
         return this.e.k();
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e.f.b
     public void a(final com.tsf.shell.f.i.C cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.m.a.1
             @Override // java.lang.Runnable
@@ -42,7 +42,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                 a.this.e.o();
             }
         };
-        if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
+        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
             g.a(cVar, null, runnable);
         } else {
             g.a(cVar, runnable);
@@ -189,7 +189,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                     cVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     for (int i = 0; i < size; i++) {
-                        com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) arrayListI.get(i);
+                        com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) arrayListI.get(i);
                         if (bVar != cVar) {
                             cVar.a((com.tsf.shell.f.i.C) bVar);
                         }
@@ -219,9 +219,9 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                         if (size > 0) {
                             if (childIndexOf != -1) {
                                 for (int i = 0; i < size; i++) {
-                                    com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) arrayListAw.get(i);
-                                    bVar.position().x = cVar.position().x + (com.tsf.shell.f.i._b.e.b.j * (i + 1));
-                                    bVar.position().y = cVar.position().y + (com.tsf.shell.f.i._b.e.b.j * (i + 1));
+                                    com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) arrayListAw.get(i);
+                                    bVar.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
+                                    bVar.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
                                     bVar.removeFromParent();
                                     a.this.addChildAt(bVar, childIndexOf);
                                     a.this.e.a((com.tsf.shell.f.i.B) bVar, true);
@@ -277,8 +277,8 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                                     a.this.e.a(new Runnable() { // from class: com.tsf.shell.manager.m.a.a.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {
-                                            ((com.tsf.shell.f.i._b.e.b) C0131a.this.g).ah();
-                                            ((com.tsf.shell.f.i._b.e.b) C0131a.this.g).aO();
+                                            ((com.tsf.shell.f.i.b.e.b) C0131a.this.g).ah();
+                                            ((com.tsf.shell.f.i.b.e.b) C0131a.this.g).aO();
                                             if (C0131a.this.d) {
                                                 C0131a.this.f.c(null);
                                                 com.censivn.C3DEngine.a.d.d().e();

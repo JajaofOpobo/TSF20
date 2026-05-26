@@ -87,7 +87,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     @SuppressLint({"HandlerLeak"})
     private Handler ai;
-    private com.tsf.extend.theme.b aj;
+    private com.tsf.extend.theme.B aj;
     private ImageView c;
     private TextView d;
     private View e;
@@ -110,7 +110,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private View v;
     private View w;
     private TextView x;
-    private c y;
+    private C y;
     private k z;
 
     public enum f {
@@ -144,7 +144,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                             ThemeDetail.this.m.setResult(-1);
                             ThemeDetail.this.m.finish();
                         }
-                        if ((ThemeDetail.this.z instanceof com.tsf.extend.theme.b) && ((com.tsf.extend.theme.b) ThemeDetail.this.z).e()) {
+                        if ((ThemeDetail.this.z instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) ThemeDetail.this.z).e()) {
                             ao.b().i();
                         }
                         if (ThemeDetail.this.aj != null) {
@@ -486,8 +486,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     this.B = ((com.tsf.extend.theme.f) this.z).b();
                 } else if (this.z instanceof aq) {
                     this.A = this.z.t();
-                    if ((this.z instanceof com.tsf.extend.theme.b) && ((com.tsf.extend.theme.b) this.z).e()) {
-                        com.tsf.extend.base.b.a aVarA = v.h().a(this.z.h());
+                    if ((this.z instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) this.z).e()) {
+                        com.tsf.extend.base.b.A aVarA = v.h().a(this.z.h());
                         if (aVarA != null && aVarA.a() != null) {
                             a(aVarA, false);
                         } else {
@@ -497,7 +497,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 }
             } else {
                 this.A = this.z.t();
-                com.tsf.extend.base.b.a aVarA2 = v.h().a(this.z.h());
+                com.tsf.extend.base.b.A aVarA2 = v.h().a(this.z.h());
                 if (aVarA2 != null && aVarA2.a() != null) {
                     a(aVarA2, false);
                 } else {
@@ -894,12 +894,12 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    class c extends com.tsf.extend.base.support.a {
-        private a b;
+    class C extends com.tsf.extend.base.support.a {
+        private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
-        public c() {
-            this.b = ThemeDetail.this.new a();
+        public C() {
+            this.b = ThemeDetail.this.new A();
         }
 
         @Override // com.tsf.extend.base.support.a
@@ -921,7 +921,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             if (ThemeDetail.this.D != f.LOCAL_THEME) {
                 if (ThemeDetail.this.A != null) {
                     String str = (String) ThemeDetail.this.A.get(i);
-                    b bVar = new b();
+                    B bVar = new B();
                     bVar.a = str;
                     bVar.b = i;
                     imageView.setTag(bVar);
@@ -969,11 +969,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    class a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
         int a = 0;
         int b = 0;
 
-        a() {
+        A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
@@ -985,7 +985,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 Bitmap bitmap = (Bitmap) pair.second;
                 if (!TextUtils.isEmpty(str) && bitmap != null) {
                     for (ImageView imageView : ThemeDetail.this.a) {
-                        b bVar = (b) imageView.getTag();
+                        B bVar = (B) imageView.getTag();
                         if (bVar.a.equals(str)) {
                             imageView.setImageBitmap(bitmap);
                             if (bVar.b == 1) {
@@ -1037,7 +1037,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     public void h() {
-        this.y = new c();
+        this.y = new C();
         this.h.setAdapter(this.y);
     }
 
@@ -1111,7 +1111,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.O.notifyDataSetChanged();
     }
 
-    class d implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    class d implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private final a.b b;
 
         public d(a.b bVar) {
@@ -1119,7 +1119,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -1129,7 +1129,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -1144,7 +1144,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.extend.base.b.a aVar, boolean z) {
+    public void a(com.tsf.extend.base.b.A aVar, boolean z) {
         p pVar = null;
         if (aVar instanceof p) {
             pVar = (p) aVar;
@@ -1232,7 +1232,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 String str2 = this.I;
             }
             Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.a) {
+            if (objA instanceof com.tsf.extend.base.b.A) {
             }
         }
     }
@@ -1242,7 +1242,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             if (!m.j[0].equals(this.I) && !m.j[1].equals(this.I) && m.j[3].equals(this.I)) {
             }
             Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.a) {
+            if (objA instanceof com.tsf.extend.base.b.A) {
             }
         }
     }
@@ -1250,7 +1250,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private void F() {
         if (this.z != null) {
             Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.a) {
+            if (objA instanceof com.tsf.extend.base.b.A) {
             }
         }
     }
@@ -1258,7 +1258,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private void G() {
         if (this.z != null) {
             Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.a) {
+            if (objA instanceof com.tsf.extend.base.b.A) {
             }
         }
     }
@@ -1266,7 +1266,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private void H() {
         if (this.z != null) {
             Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.a) {
+            if (objA instanceof com.tsf.extend.base.b.A) {
             }
         }
     }
@@ -1305,7 +1305,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(k kVar, com.tsf.extend.theme.b bVar) {
+    public void a(k kVar, com.tsf.extend.theme.B bVar) {
         if (kVar.h() == this.z.h()) {
             this.j.setText(f.g.theme_detail_btn_apply);
             this.f.setVisibility(8);

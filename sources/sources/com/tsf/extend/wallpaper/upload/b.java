@@ -98,12 +98,12 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
         return this.b == null || this.b.size() <= 0;
     }
 
-    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -116,13 +116,13 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
                         b.this.invalidate();
                         return;
                     }
-                    a.this.a((JSONObject) null, 0, (com.tsf.extend.base.b.a) null);
+                    a.this.a((JSONObject) null, 0, (com.tsf.extend.base.b.A) null);
                 }
             });
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -299,7 +299,7 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
 
     /* JADX INFO: Access modifiers changed from: private */
     public List<w> getCategoryData() {
-        com.tsf.extend.base.b.a aVarJ = z.h().j();
+        com.tsf.extend.base.b.A aVarJ = z.h().j();
         if (aVarJ != null) {
             return aVarJ.a();
         }

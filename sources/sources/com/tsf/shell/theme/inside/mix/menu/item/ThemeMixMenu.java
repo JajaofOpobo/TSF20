@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.b.a.a;
 import com.censivn.C3DEngine.b.b.a.d;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.b;
+import com.tsf.shell.f.e.g.a.b;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
@@ -100,12 +100,12 @@ public class ThemeMixMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public j getContentContainer() {
         return this.mScrollContainer;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         resetLayout();
         if (this.mIconDesignerMenu != null) {
@@ -113,7 +113,7 @@ public class ThemeMixMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onShow() {
         this.mScrollContainer.j();
         resetLayout();
@@ -126,7 +126,7 @@ public class ThemeMixMenu extends b {
         this.mScrollContainer.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e.g.a.c
     public void onRecycle() {
         super.onHide();
         Iterator<ThemeMixElementManager> it = ThemeManager.mix.getThemeMixElementManagerLists().iterator();

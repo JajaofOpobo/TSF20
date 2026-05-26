@@ -16,11 +16,11 @@ import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEngine.b.c.b.a {
     private static t a;
-    private static c b;
-    private static com.tsf.shell.f.i._b.b.a c;
+    private static C b;
+    private static com.tsf.shell.f.i.b.b.a c;
     private static com.tsf.shell.e.d.b d;
     private static boolean e = false;
-    private static b f;
+    private static B f;
 
     public static class b {
         public void a() {
@@ -33,15 +33,15 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
 
     public static void b() {
         a = new t();
-        b = new c(500.0f, 500.0f, new com.censivn.C3DEngine.b.f._b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
-        a.addChild(b);
+        b = new C(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
+        a.addChild(B);
     }
 
-    public static void a(com.tsf.shell.f.i._b.b.a aVar) {
-        a(aVar, (b) null);
+    public static void a(com.tsf.shell.f.i.b.b.a aVar) {
+        a(aVar, (B) null);
     }
 
-    public static void a(com.tsf.shell.f.i._b.b.a aVar, b bVar) {
+    public static void a(com.tsf.shell.f.i.b.b.a aVar, B bVar) {
         e = true;
         f = bVar;
         c = aVar;
@@ -52,17 +52,17 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.a.F / 2)) + (i / 2);
         int i4 = ((com.censivn.C3DEngine.b.b.a.G / 2) - bVar2.b) - (i2 / 2);
         a.removeFromParent();
-        com.tsf.shell.manager.a.j.a(a);
+        com.tsf.shell.manager.a.j.a(A);
         a.position().x = i3;
         a.position().y = i4;
         a.c().a(i, i2);
         a.c().setFocus();
         a.c().h();
         a.c().a((-i) / 2, (-i2) / 2, i / 2, i2 / 2);
-        com.censivn.C3DEngine.b.c.b.a(a);
+        com.censivn.C3DEngine.b.c.b.a(A);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(a);
+        com.censivn.C3DEngine.b.g.c.a(A);
         com.censivn.C3DEngine.b.g.c.a(a, 250, dVar);
     }
 
@@ -79,7 +79,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        if (e) {
+        if (E) {
             b.i();
             c = null;
             com.censivn.C3DEngine.b.c.b.b(this);
@@ -104,12 +104,12 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         return b;
     }
 
-    static class c extends com.censivn.C3DEngine.b.f._b.a {
+    static class C extends com.censivn.C3DEngine.b.f.b.a {
         public static int a = 120;
         private int d;
         private int e;
         private DynamicTextureElement f;
-        private c g;
+        private C g;
         private t h;
         private com.censivn.C3DEngine.b.f.k i;
         private com.censivn.C3DEngine.b.f.k j;
@@ -124,7 +124,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         private float s;
         private int[] t;
 
-        public c(float f, float f2, com.censivn.C3DEngine.b.f._b.b bVar, t tVar) {
+        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar, t tVar) {
             super(f, f2, bVar);
             this.o = 3;
             this.t = new int[4];
@@ -149,7 +149,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             };
             textureElement.setReloadThemeRunnable(runnable2);
             runnable2.run();
-            textures().addElement(com.tsf.shell.f.e._b.e);
+            textures().addElement(com.tsf.shell.f.e.b.e);
             this.m = new com.censivn.C3DEngine.b.f.n();
             this.m.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.t.c.3
                 private float b;
@@ -213,7 +213,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                             bVar2.b = i4;
                             itemInfoK.cellYH = i4;
                         }
-                        final com.tsf.shell.f.i._b.b.a aVar = t.c;
+                        final com.tsf.shell.f.i.b.b.a aVar = t.c;
                         com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.t.c.3.1
                             @Override // java.lang.Runnable
                             public void run() {
@@ -244,15 +244,15 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         }
 
         private void b(int i) {
-            switch (i) {
+            switch (I) {
                 case 0:
                     textures().removeAll();
-                    textures().addElement(com.tsf.shell.f.e._b.e);
+                    textures().addElement(com.tsf.shell.f.e.b.e);
                     this.f.id = this.d;
                     break;
                 case 1:
                     textures().removeAll();
-                    textures().addElement(com.tsf.shell.f.e._b.f);
+                    textures().addElement(com.tsf.shell.f.e.b.f);
                     this.f.id = this.e;
                     break;
             }
@@ -265,7 +265,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
 
         private com.censivn.C3DEngine.b.f.k c(int i) {
             com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(64.0f, 64.0f);
-            switch (i) {
+            switch (I) {
                 case 0:
                     kVar.moveAllPointsSP(0.0f, -32.0f, 0.0f);
                     break;
@@ -288,7 +288,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.a.b * 38.0f));
             kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.a.b * 38.0f));
             kVar.textures().addElement(this.f);
-            kVar.setMouseEventListener(new a(this.g, this, i));
+            kVar.setMouseEventListener(new A(this.g, this, i));
             addChild(kVar);
             return kVar;
         }
@@ -338,9 +338,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             this.l.position().y = 0.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f._b.a
+        @Override // com.censivn.C3DEngine.b.f.b.a
         public void i(float f) {
-            super.i(f);
+            super.i(F);
             this.k.position().x = (-f) + this.o;
             float f2 = (-f()) + ((f() + e()) / 2.0f);
             this.i.position().x = f2;
@@ -348,9 +348,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             g();
         }
 
-        @Override // com.censivn.C3DEngine.b.f._b.a
+        @Override // com.censivn.C3DEngine.b.f.b.a
         public void g(float f) {
-            super.g(f);
+            super.g(F);
             this.l.position().x = (f - this.o) - 3.0f;
             float f2 = (-f()) + ((f() + e()) / 2.0f);
             this.i.position().x = f2;
@@ -358,9 +358,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             g();
         }
 
-        @Override // com.censivn.C3DEngine.b.f._b.a
+        @Override // com.censivn.C3DEngine.b.f.b.a
         public void c(float f) {
-            super.c(f);
+            super.c(F);
             this.i.position().y = (f - this.o) - 1.0f;
             float fA = a() - ((d() + a()) / 2.0f);
             this.k.position().y = fA;
@@ -368,9 +368,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             g();
         }
 
-        @Override // com.censivn.C3DEngine.b.f._b.a
+        @Override // com.censivn.C3DEngine.b.f.b.a
         public void e(float f) {
-            super.e(f);
+            super.e(F);
             this.j.position().y = (-f) + this.o + 1.0f;
             float fA = a() - ((d() + a()) / 2.0f);
             this.k.position().y = fA;
@@ -442,7 +442,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         public void a(int i) {
             boolean z = true;
             a(i, true);
-            switch (i) {
+            switch (I) {
                 case 0:
                     this.r = t.d.e - this.s;
                     break;
@@ -490,7 +490,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         }
 
         private void a(int i, boolean z) {
-            switch (i) {
+            switch (I) {
                 case 0:
                     int iA = (int) ((com.censivn.C3DEngine.b.b.a.I - t.a.position().y) - a());
                     int iD = ((int) ((com.censivn.C3DEngine.b.b.a.I - t.a.position().y) + d())) - iA;
@@ -537,7 +537,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         }
 
         public void a(int i, float f) {
-            switch (i) {
+            switch (I) {
                 case 0:
                     if ((this.r - f) + d() < a) {
                         f = (this.r + d()) - a;
@@ -570,14 +570,14 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         }
     }
 
-    static class a extends com.censivn.C3DEngine.b.d.a {
+    static class A extends com.censivn.C3DEngine.b.d.a {
         private float a;
         private float b;
         private int d;
-        private c e;
+        private C e;
         private boolean f;
 
-        public a(com.censivn.C3DEngine.b.f.i iVar, c cVar, int i) {
+        public A(com.censivn.C3DEngine.b.f.i iVar, C cVar, int i) {
             super(iVar);
             this.f = false;
             this.e = cVar;

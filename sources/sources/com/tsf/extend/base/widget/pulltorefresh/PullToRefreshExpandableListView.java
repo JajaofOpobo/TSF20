@@ -28,14 +28,14 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
         if (Build.VERSION.SDK_INT >= 9) {
             aVar = new b(context, attributeSet);
         } else {
-            aVar = new a(context, attributeSet);
+            aVar = new A(context, attributeSet);
         }
         aVar.setId(R.id.list);
         return aVar;
     }
 
-    class a extends ExpandableListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
-        public a(Context context, AttributeSet attributeSet) {
+    class A extends ExpandableListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
+        public A(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
 
@@ -51,7 +51,7 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
     }
 
     @TargetApi(9)
-    final class b extends a {
+    final class b extends A {
         public b(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }

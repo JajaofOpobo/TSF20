@@ -43,7 +43,7 @@ public class k extends Thread {
                     }
 
                     @Override // com.tsf.extend.theme.diy.e.c
-                    public void a(com.tsf.extend.theme.b bVar) {
+                    public void a(com.tsf.extend.theme.B bVar) {
                         l.a().a(kVarTake, bVar);
                     }
 

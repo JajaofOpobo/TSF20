@@ -121,10 +121,10 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new a();
-        this.AABB_P2 = new a();
-        this.AABB_P3 = new a();
-        this.AABB_P4 = new a();
+        this.AABB_P1 = new A();
+        this.AABB_P2 = new A();
+        this.AABB_P3 = new A();
+        this.AABB_P4 = new A();
         this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -177,10 +177,10 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new a();
-        this.AABB_P2 = new a();
-        this.AABB_P3 = new a();
-        this.AABB_P4 = new a();
+        this.AABB_P1 = new A();
+        this.AABB_P2 = new A();
+        this.AABB_P3 = new A();
+        this.AABB_P4 = new A();
         this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -1372,7 +1372,7 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
         if (!mouseEnabled() || !visible() || !getRendererVisibility()) {
             return null;
         }
-        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f._a.a)) && !mouseSkip() && !z) {
+        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.a.a)) && !mouseSkip() && !z) {
             if (calTouchCollision(f, f2)) {
                 return this;
             }
@@ -1467,7 +1467,7 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
             this.b = f2;
         }
 
-        public static float a(a aVar, a aVar2) {
+        public static float a(A aVar, A aVar2) {
             return (aVar.a * aVar2.b) - (aVar.b * aVar2.a);
         }
     }

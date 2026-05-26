@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends i implements a.InterfaceC0090a {
-    private com.tsf.shell.f.d.e.a b;
+    private com.tsf.shell.f.d.e.A b;
 
     public d(int i, boolean z) {
         super(i, 0, z);
@@ -25,7 +25,7 @@ public class d extends i implements a.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f._b.a aVar) {
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         return false;
     }
 
@@ -130,7 +130,7 @@ public class d extends i implements a.InterfaceC0090a {
 
     public com.censivn.C3DEngine.b.f.i o() {
         if (this.b == null) {
-            this.b = new com.tsf.shell.f.d.e.a(this) { // from class: com.tsf.shell.f.f.b.a.d.2
+            this.b = new com.tsf.shell.f.d.e.A(this) { // from class: com.tsf.shell.f.f.b.a.d.2
                 @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
@@ -146,11 +146,11 @@ public class d extends i implements a.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f.d.e.a.InterfaceC0090a
-    public void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar;
         com.censivn.C3DEngine.b.g.d dVar2;
         com.censivn.C3DEngine.b.g.d dVar3 = null;
-        com.censivn.C3DEngine.b.f._a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
+        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
         int i = 0;
         while (true) {
             int i2 = i;
@@ -158,7 +158,7 @@ public class d extends i implements a.InterfaceC0090a {
             if (i2 >= aVar.a()) {
                 break;
             }
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = aVar.a(i2);
+            com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i2);
             dVar3 = new com.censivn.C3DEngine.b.g.d();
             if (!p()) {
                 dVar2 = dVar;
@@ -193,6 +193,6 @@ public class d extends i implements a.InterfaceC0090a {
         }
     }
 
-    public void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
     }
 }

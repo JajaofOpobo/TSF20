@@ -34,16 +34,16 @@ public class AlarmWidget extends VWidgetContainer {
     public static com.tsf.shell.widget.alarm.service.c k;
     public static AlarmWidget l;
     public static com.tsf.shell.widget.alarm.setting.e n;
-    public com.tsf.shell.widget.alarm.a i;
+    public com.tsf.shell.widget.alarm.A i;
     public g j;
     public k m;
     private long p;
     private int q;
     private int r;
-    private c t;
+    private C t;
     private Object v;
     private int w;
-    private d x;
+    private D x;
     private static List<b> s = new ArrayList();
     private static ArrayList<VTweenTarget> u = new ArrayList<>();
     public static boolean o = false;
@@ -123,10 +123,10 @@ public class AlarmWidget extends VWidgetContainer {
         }
     }
 
-    class d extends Thread {
+    class D extends Thread {
         private boolean b = false;
 
-        d() {
+        D() {
         }
 
         public void a() {
@@ -176,7 +176,7 @@ public class AlarmWidget extends VWidgetContainer {
         }
     }
 
-    public static void a(b bVar) {
+    public static void a(B bVar) {
         s.add(bVar);
     }
 
@@ -192,23 +192,23 @@ public class AlarmWidget extends VWidgetContainer {
 
     private void g() {
         n = new com.tsf.shell.widget.alarm.setting.e(h);
-        com.tsf.shell.widget.alarm.d.a(h);
+        com.tsf.shell.widget.alarm.d.A(h);
         com.tsf.shell.widget.alarm.setting.e eVar = n;
         this.w = com.tsf.shell.widget.alarm.setting.e.k;
-        this.t = new c();
+        this.t = new C();
         a = new com.tsf.shell.widget.alarm.b.d(h, c);
         k = new com.tsf.shell.widget.alarm.service.c(h);
         this.m = new k();
         this.m.scale().setAll(0.9f, 0.9f, 0.9f);
         this.m.position().spY(-20.0f);
         a(this.m);
-        this.i = new com.tsf.shell.widget.alarm.a();
+        this.i = new com.tsf.shell.widget.alarm.A();
         this.i.mouseEnabled(false);
         this.i.position().spZ(-10.0f);
         this.i.rotation().y = 180.0f;
         this.m.addChild(this.i);
         this.j = new g();
-        this.j.a.setMouseEventListener(new a(this.j.a));
+        this.j.a.setMouseEventListener(new A(this.j.a));
         this.j.a.calAABB();
         this.j.position().spZ(10.0f);
         this.m.addChild(this.j);
@@ -223,7 +223,7 @@ public class AlarmWidget extends VWidgetContainer {
         i.c("===============WidgetFreshDuration:" + this.w);
         if (this.w != 0) {
             if (this.x == null) {
-                this.x = new d();
+                this.x = new D();
                 this.x.start();
             }
             i.c("===============Widget Set Animation false");
@@ -315,8 +315,8 @@ public class AlarmWidget extends VWidgetContainer {
         l.j();
     }
 
-    class c extends BroadcastReceiver {
-        c() {
+    class C extends BroadcastReceiver {
+        C() {
         }
 
         @Override // android.content.BroadcastReceiver
@@ -348,7 +348,7 @@ public class AlarmWidget extends VWidgetContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void k() {
-        com.tsf.shell.widget.alarm.d.a(h);
+        com.tsf.shell.widget.alarm.d.A(h);
         com.tsf.shell.widget.alarm.c.b.a();
         this.j.g();
         this.i.f();
@@ -371,11 +371,11 @@ public class AlarmWidget extends VWidgetContainer {
         h.unregisterReceiver(this.t);
     }
 
-    public class a extends VMouseEventListener {
+    public class A extends VMouseEventListener {
         Number3d a;
         float b;
 
-        public a(VObject3d vObject3d) {
+        public A(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
             this.b = 0.1f;

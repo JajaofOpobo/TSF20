@@ -1,6 +1,6 @@
 package com.tsf.shell.f.d.c.a;
 
-import com.tsf.shell.f.e._f.a;
+import com.tsf.shell.f.e.f.a;
 import com.tsf.shell.f.f.f;
 import java.util.ArrayList;
 
@@ -40,9 +40,9 @@ public class d extends f {
         return 380;
     }
 
-    public void a(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
     }
 
-    public void b(com.censivn.C3DEngine.b.f._a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
     }
 }

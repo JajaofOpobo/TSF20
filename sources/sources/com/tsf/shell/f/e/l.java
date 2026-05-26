@@ -11,7 +11,7 @@ public class l extends com.censivn.C3DEngine.b.f.j {
 
     public l(int i, int i2) {
         this.b.a(com.censivn.C3DEngine.b.b.a.c * 70.0f, com.censivn.C3DEngine.b.b.a.c * 70.0f);
-        this.b.a(i);
+        this.b.a(I);
         this.b.calAABB();
         this.c = new com.censivn.C3DEngine.b.f.m();
         this.c.d(50);

@@ -11,7 +11,7 @@ public class e extends VWidgetContainer implements b.a {
     private Context a;
     private VTextureManager b;
     private com.tsf.shell.widget.a.a.b c;
-    private a d;
+    private A d;
     private c e;
 
     public e(Context context, int i) {
@@ -32,7 +32,7 @@ public class e extends VWidgetContainer implements b.a {
 
     public void a(c cVar) {
         com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) getVirtualTarget();
-        this.d = new a(this.b, cVar);
+        this.d = new A(this.b, cVar);
         this.c = new com.tsf.shell.widget.a.a.b(this.a, this.d);
         this.c.a(this);
         this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.widget.a.e.1

@@ -145,8 +145,8 @@ class a extends com.censivn.C3DEngine.b.d.a {
                         for (int i = 0; i < size; i++) {
                             com.tsf.shell.f.i.C cVar2 = arrayListAw.get(i);
                             arrayList.add(cVar2);
-                            cVar2.position().x = cVar.position().x + (com.tsf.shell.f.i._b.e.b.j * (i + 1));
-                            cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i._b.e.b.j * (i + 1));
+                            cVar2.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
+                            cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
                             cVar2.removeFromParent();
                         }
                         this.b.a(arrayList, iJ);
@@ -163,7 +163,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
             dVar2.a(com.censivn.C3DEngine.b.g.a.a);
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar2);
-            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e._f.b) && (this.e instanceof com.tsf.shell.f.i.C)) {
+            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.b) && (this.e instanceof com.tsf.shell.f.i.C)) {
                 ((com.tsf.shell.f.i.C) this.e).ai();
             }
         }

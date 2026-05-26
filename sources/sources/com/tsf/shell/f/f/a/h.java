@@ -20,11 +20,12 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.A;
-import com.tsf.shell.f.f.a.A;
-import com.tsf.shell.f.f.a._b.l;
+// import com.tsf.shell.f.f.a.A;
+import com.tsf.shell.f.f.a.b.l;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.a.c;
 import com.tsf.shell.manager.a.d;
+import com.tsf.shell.manager.n.a;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.x;
@@ -32,7 +33,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.a, d.a {
+public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.a, d.a {
     public static int A;
     public static int B;
     public static int C;
@@ -51,17 +52,17 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     public static int x;
     public static int y;
     public static int z;
-    public com.tsf.shell.f.i._b.e.h G;
+    public com.tsf.shell.f.i.b.e.h G;
     public k H;
     protected a.C0133a I;
     private j K;
     private j L;
     private a M;
     private a N;
-    private com.tsf.shell.f.f.a._a.c O;
+    private com.tsf.shell.f.f.a.a.c O;
     private int P;
     private com.tsf.shell.f.e.j T;
-    private com.tsf.shell.f.f.a._d.a U;
+    private com.tsf.shell.f.f.a.d.a U;
     private d V;
     private ArrayList<a> W;
     private l X;
@@ -76,7 +77,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     private f ai;
     private g aj;
     private e ak;
-    private b al;
+    private B al;
     private a.C0133a ao;
     private k aq;
     private TextureElement ar;
@@ -99,10 +100,10 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
 
     public i a(com.tsf.shell.f.i.B bVar) {
         i iVar;
-        if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
-            com.tsf.shell.f.i._b.e.b bVar2 = (com.tsf.shell.f.i._b.e.b) bVar;
+        if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+            com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) bVar;
             if (this.G == null) {
-                this.G = new com.tsf.shell.f.i._b.e.h();
+                this.G = new com.tsf.shell.f.i.b.e.h();
             }
             this.G.k.textures().clear();
             if (bVar2.aC() && !bVar2.t()) {
@@ -110,9 +111,9 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
             }
             iVar = this.G;
         } else {
-            TextureElement textureElementAD = ((com.tsf.shell.f.i._b.d.b) bVar).aD();
+            TextureElement textureElementAD = ((com.tsf.shell.f.i.b.d.b) bVar).aD();
             if (this.H == null) {
-                this.H = com.tsf.shell.f.i._b.d.b.l();
+                this.H = com.tsf.shell.f.i.b.d.b.l();
             }
             this.H.a(textureElementAD.width);
             this.H.b(textureElementAD.height);
@@ -131,8 +132,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     }
 
     public void e(i iVar) {
-        if (iVar instanceof com.tsf.shell.f.i._b.e.b) {
-            ((com.tsf.shell.f.i._b.e.b) iVar).k.textures().clear();
+        if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
+            ((com.tsf.shell.f.i.b.e.b) iVar).k.textures().clear();
         } else {
             ((k) iVar).textures().clear();
         }
@@ -177,7 +178,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     }
 
     public void a(com.tsf.shell.f.i.B bVar, boolean z2, float f, float f2) {
-        if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
+        if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
             com.tsf.shell.manager.a.p.a(bVar, f, f2, z2, 3);
         } else {
             com.tsf.shell.manager.a.p.a(bVar, f, f2, z2, 3, 5);
@@ -230,9 +231,9 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         com.tsf.shell.manager.a.w.c().a(this);
         this.al = com.tsf.shell.manager.a.w.d();
         this.U = com.tsf.shell.manager.a.w.b();
-        this.V = new d();
+        this.V = new D();
         com.tsf.shell.manager.a.w.a().a(this);
-        this.O = new com.tsf.shell.f.f.a._a.c();
+        this.O = new com.tsf.shell.f.f.a.a.c();
     }
 
     public void al() {
@@ -243,7 +244,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         return this.V;
     }
 
-    public com.tsf.shell.f.f.a._d.a an() {
+    public com.tsf.shell.f.f.a.d.a an() {
         return this.U;
     }
 
@@ -660,8 +661,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
 
     /* JADX INFO: Access modifiers changed from: private */
     public void bd() {
-        com.tsf.shell.f.f.a._b.k kVarH = this.X.h();
-        for (a aVar : this.W) {
+        com.tsf.shell.f.f.a.b.k kVarH = this.X.h();
+        for (A aVar : this.W) {
             aVar.a(0.0f);
             aVar.a(kVarH);
         }
@@ -695,25 +696,25 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         }
     }
 
-    @Override // com.tsf.shell.f.f.a._a.InterfaceC0101a
-    public void a(a aVar) {
+    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    public void a(A aVar) {
         this.N = aVar;
     }
 
-    @Override // com.tsf.shell.f.f.a._a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
     public a i_() {
         return bg();
     }
 
-    @Override // com.tsf.shell.f.f.a._a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
     public void j_() {
         if (!aL()) {
             aV();
         }
     }
 
-    @Override // com.tsf.shell.f.f.a._a.InterfaceC0101a
-    public void a(a aVar, a aVar2, a aVar3) {
+    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    public void a(A aVar, A aVar2, A aVar3) {
         if (this.W.size() != 1) {
             this.W.remove(aVar);
             if (this.M == aVar) {
@@ -731,9 +732,9 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                 aVar2.b(aVar3);
             } else {
                 if (aVar3 != null) {
-                    aVar3.a((a) null);
+                    aVar3.a((A) null);
                 }
-                aVar2.b((a) null);
+                aVar2.b((A) null);
             }
             aVar.destroy();
             int size = this.W.size();
@@ -752,14 +753,14 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         return this.X;
     }
 
-    public com.tsf.shell.f.i._b.d.b b(ArrayList<com.tsf.shell.f.i._b.e.b> arrayList) {
+    public com.tsf.shell.f.i.b.d.b b(ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
         return a(x.c(b.i.widget_folder), ap(), arrayList);
     }
 
-    private com.tsf.shell.f.i._b.d.b a(String str, a aVar, ArrayList<com.tsf.shell.f.i._b.e.b> arrayList) {
+    private com.tsf.shell.f.i.b.d.b a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i._b.d.b bVar = new com.tsf.shell.f.i._b.d.b(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.b bVar = new com.tsf.shell.f.i.b.d.b(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         aVar.addChildAt(bVar, 0);
         a(bVar, aVar, 0);
@@ -769,10 +770,10 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         return bVar;
     }
 
-    public com.tsf.shell.f.i._b.d.b a(String str, ArrayList<com.tsf.shell.f.i._b.e.b> arrayList, boolean z2) {
+    public com.tsf.shell.f.i.b.d.b a(String str, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList, boolean z2) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i._b.d.b bVar = new com.tsf.shell.f.i._b.d.b(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.b bVar = new com.tsf.shell.f.i.b.d.b(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         if (z2) {
             this.al.a(bVar, 0);
@@ -788,7 +789,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     public void aD() {
         if (this.W != null) {
             int iE = this.M.e();
-            a aVarRemove = this.W.remove(0);
+            A aVarRemove = this.W.remove(0);
             float fAlpha = this.M.alpha();
             Iterator<a> it = this.W.iterator();
             while (it.hasNext()) {
@@ -798,8 +799,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
             aVarRemove.children().clear();
             aVarRemove.a(0.0f);
             aVarRemove.a(0);
-            aVarRemove.b((a) null);
-            aVarRemove.a((a) null);
+            aVarRemove.b((A) null);
+            aVarRemove.a((A) null);
             aVarRemove.a(false);
             this.W.add(aVarRemove);
             int size = this.al.a().size() - 1;
@@ -809,8 +810,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                     break;
                 }
                 com.tsf.shell.f.i.B bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
-                    com.tsf.shell.f.i._b.d.b bVar2 = (com.tsf.shell.f.i._b.d.b) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+                    com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
                     if (bVar2.aS()) {
                         aVarRemove.addChildAt(bVar2.aA(), 0);
                     } else {
@@ -888,18 +889,18 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
 
     private a bg() {
         int size = this.W.size();
-        a aVar = new a(this.X.h(), this);
+        A aVar = new A(this.X.h(), this);
         aVar.a(size);
         this.W.add(aVar);
         this.L.addChild(aVar);
         aVar.a(1.0f);
         aVar.a(false);
         if (this.W.size() >= 3) {
-            a aVar2 = this.W.get(0);
+            A aVar2 = this.W.get(0);
             aVar2.a(aVar);
             aVar.b(aVar2);
         }
-        a aVar3 = this.W.get(size - 1);
+        A aVar3 = this.W.get(size - 1);
         aVar3.b(aVar);
         aVar.a(aVar3);
         aY();
@@ -993,7 +994,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
 
     @Override // com.tsf.shell.manager.a.d.a
     public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
-        a aVar;
+        A aVar;
         if (!this.am) {
             this.am = true;
             ArrayList arrayList2 = new ArrayList();
@@ -1011,7 +1012,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
             int i = size / m;
             int i2 = (size % m != 0 || size == 0) ? i + 1 : i;
             for (int i3 = 0; i3 < i2; i3++) {
-                a aVar2 = new a(this.X.h(), this);
+                A aVar2 = new A(this.X.h(), this);
                 aVar2.a(i3);
                 this.W.add(aVar2);
                 this.L.addChild(aVar2);
@@ -1020,9 +1021,9 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                 }
             }
             int i4 = 0;
-            a aVar3 = i2 >= 3 ? this.W.get(i2 - 1) : null;
+            A aVar3 = i2 >= 3 ? this.W.get(i2 - 1) : null;
             while (i4 < i2) {
-                a aVar4 = this.W.get(i4);
+                A aVar4 = this.W.get(i4);
                 aVar4.a(aVar3);
                 if (i4 == i2 - 1) {
                     aVar = i2 >= 3 ? this.W.get(0) : null;
@@ -1067,7 +1068,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void a(com.tsf.shell.f.i._b.e.g gVar, boolean z2) {
+    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z2) {
         if (this.am) {
             a((com.tsf.shell.f.i.B) gVar, z2);
         }
@@ -1087,8 +1088,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
 
     private void b(com.tsf.shell.f.i.B bVar, boolean z2, int i) {
         this.al.a(bVar, i);
-        if (z2 && (bVar instanceof com.tsf.shell.f.i._b.e.g)) {
-            ((com.tsf.shell.f.i._b.e.g) bVar).aX();
+        if (z2 && (bVar instanceof com.tsf.shell.f.i.b.e.g)) {
+            ((com.tsf.shell.f.i.b.e.g) bVar).aX();
         }
         e(i).a(bVar, i % m, false);
         bVar.K().index = i;
@@ -1100,7 +1101,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         this.al.a(bVar2, bVar);
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, a aVar, int i) {
+    public void a(com.tsf.shell.f.i.B bVar, A aVar, int i) {
         int iE = (aVar.e() * m) + i;
         this.al.b(bVar);
         this.al.a(bVar, iE);
@@ -1111,13 +1112,13 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void a(com.tsf.shell.f.i._b.e.g gVar) {
+    public void a(com.tsf.shell.f.i.b.e.g gVar) {
     }
 
     @Override // com.tsf.shell.manager.a.c.a
-    public void b(com.tsf.shell.f.i._b.e.g gVar, boolean z2) {
+    public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z2) {
         if (this.am) {
-            a aVar = (a) gVar.parent();
+            A aVar = (A) gVar.parent();
             if (aVar != null) {
                 aVar.removeChild(gVar);
             }
@@ -1130,8 +1131,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     }
 
     public boolean d(com.tsf.shell.f.i.B bVar) {
-        if (bVar instanceof com.tsf.shell.f.i._b.e.g) {
-            com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) bVar;
+        if (bVar instanceof com.tsf.shell.f.i.b.e.g) {
+            com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) bVar;
             if (gVar.bf()) {
                 com.tsf.shell.manager.a.f fVarBd = gVar.bd();
                 com.tsf.shell.manager.bind.a.c().b(fVarBd);
@@ -1148,7 +1149,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
             gVar.bg();
             return false;
         }
-        if (!(bVar instanceof com.tsf.shell.f.i._b.d.b)) {
+        if (!(bVar instanceof com.tsf.shell.f.i.b.d.b)) {
             return false;
         }
         e(bVar);
@@ -1177,7 +1178,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
         return new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.tsf.shell.f.f.a.h.4
             private float b;
             private com.tsf.shell.f.i.B d;
-            private com.tsf.shell.f.i._a.d g;
+            private com.tsf.shell.f.i.a.d g;
             private boolean e = false;
             private boolean f = false;
             private boolean h = false;
@@ -1191,8 +1192,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                         h.this.ai.e((com.tsf.shell.f.i.C) this.c, motionEvent);
                     }
                 } else if (this.h) {
-                    if (this.c instanceof com.tsf.shell.f.i._b.e.g) {
-                        com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) this.c;
+                    if (this.c instanceof com.tsf.shell.f.i.b.e.g) {
+                        com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) this.c;
                         if (gVar.aC()) {
                             if (h.this.h.e()) {
                                 gVar.ap();
@@ -1204,8 +1205,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                         }
                         return;
                     }
-                    if (this.c instanceof com.tsf.shell.f.i._b.d.b) {
-                        ((com.tsf.shell.f.i._b.d.b) this.c).aR();
+                    if (this.c instanceof com.tsf.shell.f.i.b.d.b) {
+                        ((com.tsf.shell.f.i.b.d.b) this.c).aR();
                     }
                 }
             }
@@ -1272,8 +1273,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                 this.h = h.this.R;
                 h.this.Q = false;
                 this.f = false;
-                if (this.c instanceof com.tsf.shell.f.i._b.e.g) {
-                    com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) this.c;
+                if (this.c instanceof com.tsf.shell.f.i.b.e.g) {
+                    com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) this.c;
                     if (gVar.aC()) {
                         gVar.aQ();
                         gVar.aY();
@@ -1281,7 +1282,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
                     }
                     return;
                 }
-                if (this.c instanceof com.tsf.shell.f.i._b.d.b) {
+                if (this.c instanceof com.tsf.shell.f.i.b.d.b) {
                 }
             }
 
@@ -1436,8 +1437,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
             int size = this.al.a().size();
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.B bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
-                    ((com.tsf.shell.f.i._b.e.b) bVar).aA();
+                if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+                    ((com.tsf.shell.f.i.b.e.b) bVar).aA();
                 }
             }
             bj();
@@ -1448,12 +1449,12 @@ public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.
     private void bk() {
         if (!aM()) {
             bi();
-            a aVarAp = ap();
+            A aVarAp = ap();
             int size = this.al.a().size();
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.B bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
-                    ((com.tsf.shell.f.i._b.e.b) bVar).aA();
+                if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
+                    ((com.tsf.shell.f.i.b.e.b) bVar).aA();
                 }
             }
             if (!aVarAp.visible()) {

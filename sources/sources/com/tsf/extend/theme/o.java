@@ -19,7 +19,7 @@ import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class o extends Dialog {
-    private a a;
+    private A a;
     private LinearLayout b;
     private TextView c;
 
@@ -39,7 +39,7 @@ public class o extends Dialog {
     }
 
     private void a() {
-        this.a = new a(getContext());
+        this.a = new A(getContext());
         Drawable drawable = getContext().getResources().getDrawable(f.d.search_loading_circle_big);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
         layoutParams.gravity = 17;
@@ -62,7 +62,7 @@ public class o extends Dialog {
         this.c.setText(str);
     }
 
-    public class a extends SurfaceView implements SurfaceHolder.Callback {
+    public class A extends SurfaceView implements SurfaceHolder.Callback {
         private Bitmap b;
         private Paint c;
         private boolean d;
@@ -70,13 +70,13 @@ public class o extends Dialog {
         private SurfaceHolder f;
         private int g;
 
-        static /* synthetic */ int c(a aVar) {
+        static /* synthetic */ int c(A aVar) {
             int i = aVar.g;
             aVar.g = i + 1;
             return i;
         }
 
-        public a(Context context) {
+        public A(Context context) {
             super(context);
             this.c = null;
             this.d = false;

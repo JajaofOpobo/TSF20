@@ -66,7 +66,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         this.f = f;
     }
 
-    @Override // com.censivn.C3DEngine.c.a.d, com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.a.d, com.censivn.C3DEngine.c.B
     public void a(com.censivn.C3DEngine.c.a.c cVar) {
         super.a(cVar);
         c();
@@ -74,7 +74,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         b(this.g);
     }
 
-    @Override // com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.B
     public void a() {
         int size = this.c.size();
         for (int i = 0; i < size; i++) {
@@ -129,7 +129,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
     }
 
     private void d() {
-        ArrayList<com.censivn.C3DEngine.c.a.a> arrayListB = this.a.b();
+        ArrayList<com.censivn.C3DEngine.c.a.A> arrayListB = this.a.b();
         int size = arrayListB.size();
         this.c = new ArrayList<>();
         for (int i = 0; i < size; i++) {

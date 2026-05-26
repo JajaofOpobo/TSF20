@@ -813,7 +813,7 @@ public class e {
     }
 
     public static int aq() {
-        return aD().getInt("all_apps_direction", com.tsf.shell.f.f.a._a.c.b);
+        return aD().getInt("all_apps_direction", com.tsf.shell.f.f.a.a.c.b);
     }
 
     public static void q(int i2) {

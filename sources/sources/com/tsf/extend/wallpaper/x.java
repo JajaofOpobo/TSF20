@@ -54,7 +54,7 @@ public class x {
         this.m = (this.l * iB) / (iA * 2);
         this.o = ((int) (fA * 53.0f)) + ((this.h - this.m) / 2);
         this.k = new Rect(this.n, this.o, this.l + this.n, this.m + this.o);
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "screenWidth:" + iA + " screenHeight:" + iB);
             Log.d("ClipWallpaper", "single leftMargin:" + this.i + " topMargin:" + this.j + "single Rect:" + this.f);
             Log.d("ClipWallpaper", "double leftMargin:" + this.n + " topMargin:" + this.o + "double Rect:" + this.k);
@@ -83,7 +83,7 @@ public class x {
         int i2;
         int iA = com.tsf.extend.base.j.e.a(this.b, uri);
         boolean z = (iA == 0 || (iA / 90) % 2 == 0) ? false : true;
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "choosed wallpaper：rotateDegree:" + iA + " changeWH:" + z);
         }
         BitmapFactory.Options options = new BitmapFactory.Options();
@@ -103,7 +103,7 @@ public class x {
         }
         int i3 = z ? options.outHeight : options.outWidth;
         int i4 = z ? options.outWidth : options.outHeight;
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "choosed wallpaper,after rotate：W:" + i3 + " H:" + i4);
         }
         if (i3 / i4 > com.tsf.extend.base.j.j.a(this.b) / com.tsf.extend.base.j.j.b(this.b)) {
@@ -127,7 +127,7 @@ public class x {
             return null;
         }
         Bitmap bitmapA = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i, i2, iA);
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "after rotate for display：W:" + i + " H:" + i2);
         }
         if (bitmapA != null) {
@@ -143,7 +143,7 @@ public class x {
         InputStream inputStream;
         InputStream inputStreamOpenInputStream;
         Bitmap bitmapDecodeStream;
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "start create wallpaper, singleWallpaper:" + this.t + " original in display Rect:" + rectF + " preview:" + z);
         }
         int i = this.q;
@@ -161,7 +161,7 @@ public class x {
         if (z2) {
             rectF2.set(rectF2.top, this.r - rectF2.right, rectF2.bottom, this.r - rectF2.left);
         }
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "before rotate,in display srcRect:" + rectF2 + " sampleSize:" + i2);
         }
         BitmapFactory.Options options = new BitmapFactory.Options();
@@ -221,7 +221,7 @@ public class x {
             rectF2.right /= i2;
             rectF2.bottom /= i2;
         }
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "before rotate,in display,after scaled from file: tmpSrcRect:" + rectF2 + " real sampleSize:" + i2);
             Log.d("ClipWallpaper", "no rotate,scaled bitmap from file, W:" + bitmapDecodeStream.getWidth() + " H:" + bitmapDecodeStream.getHeight());
         }
@@ -249,7 +249,7 @@ public class x {
             iA = iB;
         }
         Rect rect = new Rect(0, 0, i4, iA);
-        if (a) {
+        if (A) {
             Log.d("ClipWallpaper", "output rect:" + rect);
         }
         Rect rect2 = new Rect((int) rectF2.left, (int) rectF2.top, (int) rectF2.right, (int) rectF2.bottom);

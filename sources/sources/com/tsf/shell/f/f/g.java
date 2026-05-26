@@ -26,12 +26,12 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     private com.censivn.C3DEngine.b.g.b.a L;
     protected g a;
     protected com.tsf.shell.e.d b;
-    protected com.tsf.shell.f.e._f.b c;
+    protected com.tsf.shell.f.e.f.b c;
     protected com.tsf.shell.f.i.A h;
     protected l k;
     private com.censivn.C3DEngine.b.f.k q;
-    private com.censivn.C3DEngine.b.f._b.a s;
-    private com.censivn.C3DEngine.b.f._b.a t;
+    private com.censivn.C3DEngine.b.f.b.a s;
+    private com.censivn.C3DEngine.b.f.b.a t;
     private com.censivn.C3DEngine.b.d.a v;
     private com.censivn.C3DEngine.b.d.a w;
     private g x;
@@ -267,7 +267,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     private void aj() {
-        this.c = new com.tsf.shell.f.e._f.b() { // from class: com.tsf.shell.f.f.g.1
+        this.c = new com.tsf.shell.f.e.f.b() { // from class: com.tsf.shell.f.f.g.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (g.this.g != 0.0f && g.this.k != null) {
@@ -275,9 +275,9 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
                 }
             }
 
-            @Override // com.tsf.shell.f.e._f.b
+            @Override // com.tsf.shell.f.e.f.b
             public void a(com.tsf.shell.f.i.C cVar) {
-                if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
+                if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
                     com.tsf.shell.manager.r.c.g.a(cVar, null, null);
                 } else {
                     com.tsf.shell.manager.r.c.g.a(cVar, (Runnable) null);
@@ -299,7 +299,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         addChild(this.c);
     }
 
-    @Override // com.tsf.shell.f.i._a.InterfaceC0113a
+    @Override // com.tsf.shell.f.i.A.InterfaceC0113a
     public ArrayList<com.censivn.C3DEngine.b.f.i> b() {
         return this.c.children();
     }
@@ -366,8 +366,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         if (!this.F) {
             this.F = true;
             aj();
-            this.s = new com.censivn.C3DEngine.b.f._b.a(n.a, n.b, new com.censivn.C3DEngine.b.f._b.b(50, 78, 50, 78, 128.0f, 128.0f));
-            this.t = new com.censivn.C3DEngine.b.f._b.a(n.a, n.b, new com.censivn.C3DEngine.b.f._b.b(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
+            this.s = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(50, 78, 50, 78, 128.0f, 128.0f));
+            this.t = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
             this.t.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
             this.t.doubleSidedEnabled(true);
             this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.a.b;

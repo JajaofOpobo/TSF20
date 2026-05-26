@@ -18,7 +18,7 @@ public class c extends i {
     private com.censivn.C3DEngine.b.e.a f;
     private com.censivn.C3DEngine.b.e.a g;
     private com.censivn.C3DEngine.b.e.a h;
-    private a i;
+    private A i;
     private boolean j;
     private boolean k;
     private boolean l;
@@ -96,7 +96,7 @@ public class c extends i {
             }
         });
         b(this.g);
-        this.i = new a();
+        this.i = new A();
         b(this.i);
         this.f = new com.censivn.C3DEngine.b.e.a();
         this.f.h(b.i.text_lock_desktop);
@@ -180,10 +180,10 @@ public class c extends i {
         com.tsf.shell.manager.a.o.a(zE, iE);
     }
 
-    public static class a extends com.censivn.C3DEngine.b.e.e {
+    public static class A extends com.censivn.C3DEngine.b.e.e {
         final com.censivn.C3DEngine.b.f.j b = new com.censivn.C3DEngine.b.f.j();
 
-        public a() {
+        public A() {
             a(com.censivn.C3DEngine.b.b.a.a(200.0f));
             g(b.i.text_transparency);
             h(b.i.text_floating_button_transparency_summary);

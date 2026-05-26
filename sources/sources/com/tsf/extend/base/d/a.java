@@ -27,7 +27,7 @@ import org.json.JSONObject;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class a {
     private static f<String, SoftReference<Bitmap>> b = null;
-    protected HashMap<String, com.tsf.extend.base.b.a> a = new HashMap<>();
+    protected HashMap<String, com.tsf.extend.base.b.A> a = new HashMap<>();
     private m c;
 
     /* JADX INFO: renamed from: com.tsf.extend.base.d.a$a, reason: collision with other inner class name */
@@ -43,7 +43,7 @@ public abstract class a {
         LoadMore
     }
 
-    protected abstract com.tsf.extend.base.b.a a(String str, String str2, JSONObject jSONObject);
+    protected abstract com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject);
 
     protected abstract String a();
 
@@ -51,7 +51,7 @@ public abstract class a {
 
     public abstract void a(s sVar);
 
-    public abstract com.tsf.extend.base.b.a b();
+    public abstract com.tsf.extend.base.b.A b();
 
     public a() {
         if (b == null) {
@@ -83,11 +83,11 @@ public abstract class a {
         this.c = c.a(context, null, aVar, new com.tsf.extend.base.b.c(new File(context.getCacheDir(), "volley_wpp")));
     }
 
-    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, b bVar, JSONObject jSONObject) {
+    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject) {
         a(str, interfaceC0048a, bVar, jSONObject, true);
     }
 
-    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
+    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
         switch (bVar) {
             case LoadCache:
                 c(str, interfaceC0048a, bVar, jSONObject, z);
@@ -103,12 +103,12 @@ public abstract class a {
         }
     }
 
-    protected void b(String str, InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
+    protected void b(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
         a(str, a(str, bVar, 1, jSONObject), interfaceC0048a, bVar, jSONObject, z);
     }
 
-    private void a(String str, InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, JSONObject jSONObject, boolean z) {
-        com.tsf.extend.base.b.a aVar = this.a.get(str);
+    private void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, JSONObject jSONObject, boolean z) {
+        com.tsf.extend.base.b.A aVar = this.a.get(str);
         if (aVar == null) {
             if (interfaceC0048a != null) {
                 interfaceC0048a.a(jSONObject, 2, null);
@@ -119,8 +119,8 @@ public abstract class a {
         a(str, a(str, b.LoadMore, aVar.f() + 1, jSONObject), interfaceC0048a, b.LoadMore, jSONObject, z);
     }
 
-    protected void c(final String str, final InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
-        com.tsf.extend.base.b.a aVar = this.a.get(str);
+    protected void c(final String str, final InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
+        com.tsf.extend.base.b.A aVar = this.a.get(str);
         if (aVar != null) {
             if (interfaceC0048a != null) {
                 interfaceC0048a.a(jSONObject, aVar);
@@ -134,12 +134,12 @@ public abstract class a {
         z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.a.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.base.b.a aVar2;
+                com.tsf.extend.base.b.A aVar2;
                 Object objA = com.tsf.extend.base.b.a.a.a().a(str);
-                if (!(objA instanceof com.tsf.extend.base.b.a)) {
+                if (!(objA instanceof com.tsf.extend.base.b.A)) {
                     aVar2 = null;
                 } else {
-                    aVar2 = (com.tsf.extend.base.b.a) objA;
+                    aVar2 = (com.tsf.extend.base.b.A) objA;
                 }
                 if (aVar2 != null) {
                     if (interfaceC0048a != null) {
@@ -154,7 +154,7 @@ public abstract class a {
         });
     }
 
-    protected void a(final String str, final String str2, InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
+    protected void a(final String str, final String str2, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
         if (str2 == null && interfaceC0048a != null) {
             interfaceC0048a.a(jSONObject, 2, null);
         }
@@ -163,7 +163,7 @@ public abstract class a {
             @Override // com.android.volley.n.b
             public void a(JSONObject jSONObject2) {
                 try {
-                    com.tsf.extend.base.b.a aVarA = a.this.a(str, str2, jSONObject2);
+                    com.tsf.extend.base.b.A aVarA = a.this.a(str, str2, jSONObject2);
                     if (aVarA == null) {
                         InterfaceC0048a interfaceC0048a2 = (InterfaceC0048a) weakReference.get();
                         if (interfaceC0048a2 != null) {
@@ -182,7 +182,7 @@ public abstract class a {
                             a.this.a(str, aVarA);
                         }
                     } else {
-                        com.tsf.extend.base.b.a aVar = a.this.a.get(str);
+                        com.tsf.extend.base.b.A aVar = a.this.a.get(str);
                         if (aVar != null && aVar.a() != null) {
                             aVar.a().addAll(aVarA.a());
                             if (aVar.g() != 0) {
@@ -212,7 +212,7 @@ public abstract class a {
         }, new n.a() { // from class: com.tsf.extend.base.d.a.4
             @Override // com.android.volley.n.a
             public void a(s sVar) {
-                com.tsf.extend.base.b.a aVar = a.this.a.get(str);
+                com.tsf.extend.base.b.A aVar = a.this.a.get(str);
                 InterfaceC0048a interfaceC0048a2 = (InterfaceC0048a) weakReference.get();
                 if (interfaceC0048a2 != null) {
                     interfaceC0048a2.a(jSONObject, 0, aVar);
@@ -229,7 +229,7 @@ public abstract class a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final String str, final com.tsf.extend.base.b.a aVar) {
+    public void a(final String str, final com.tsf.extend.base.b.A aVar) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.a.5
             @Override // java.lang.Runnable
             public void run() {
@@ -349,7 +349,7 @@ public abstract class a {
         return null;
     }
 
-    public HashMap<String, com.tsf.extend.base.b.a> d() {
+    public HashMap<String, com.tsf.extend.base.b.A> d() {
         return this.a;
     }
 

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e._c.a.d {
+public class b extends com.tsf.shell.f.e.c.a.d {
     private float a;
     private float b;
     private Number3d c;
@@ -38,7 +38,7 @@ public class b extends com.tsf.shell.f.e._c.a.d {
         this.d.setAllFrom(number3d);
     }
 
-    @Override // com.tsf.shell.f.e._c.a.d, com.censivn.C3DEngine.api.core.VObject3d
+    @Override // com.tsf.shell.f.e.c.a.d, com.censivn.C3DEngine.api.core.VObject3d
     public void onDrawStart() {
         super.onDrawStart();
         if (getAnimationObjectState()) {

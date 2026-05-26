@@ -13,7 +13,7 @@ public class p extends com.tsf.extend.base.b.A<k> {
         this.a = z;
     }
 
-    @Override // com.tsf.extend.base.b.a
+    @Override // com.tsf.extend.base.b.A
     public boolean h() {
         return b();
     }

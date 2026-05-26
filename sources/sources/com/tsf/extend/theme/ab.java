@@ -23,7 +23,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
     public List<ThemeImageView> b;
     private PageActivity c;
     private ViewPager d;
-    private b e;
+    private B e;
     private List<Integer> f;
     private List<String> g;
     private List<String> h;
@@ -40,19 +40,19 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
         this.b = Lists.newArrayList();
         this.d = new ViewPager(getContext());
         this.d.setOffscreenPageLimit(2);
-        this.e = new b();
+        this.e = new B();
         this.d.setBackgroundColor(-1);
         this.d.setAdapter(this.e);
         addView(this.d, new FrameLayout.LayoutParams(-1, -1));
         setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
     }
 
-    private class b extends com.tsf.extend.base.support.a {
-        private a b;
+    private class B extends com.tsf.extend.base.support.a {
+        private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
-        public b() {
-            this.b = ab.this.new a();
+        public B() {
+            this.b = ab.this.new A();
         }
 
         @Override // com.tsf.extend.base.support.a
@@ -117,8 +117,8 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
         }
     }
 
-    class a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
-        a() {
+    class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
