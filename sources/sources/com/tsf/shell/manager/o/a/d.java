@@ -10,7 +10,7 @@ public class d extends b {
     }
 
     @Override // com.tsf.shell.manager.o.a.b
-    public Bitmap a(String str, com.tsf.shell.manager.o.a aVar) {
+    public Bitmap a(String str, com.tsf.shell.manager.o.A aVar) {
         return null;
     }
 }

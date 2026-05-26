@@ -15,7 +15,7 @@ public class TabViewPager extends ViewPager {
     private PointF c;
     private boolean d;
     private ViewConfiguration e;
-    private a f;
+    private A f;
     private boolean g;
 
     public interface a {
@@ -79,7 +79,7 @@ public class TabViewPager extends ViewPager {
         return (float) Math.sqrt((f * f) + (f2 * f2));
     }
 
-    public void setOnTabListener(a aVar) {
+    public void setOnTabListener(A aVar) {
         this.f = aVar;
     }
 

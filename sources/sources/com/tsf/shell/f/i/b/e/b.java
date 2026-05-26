@@ -9,7 +9,7 @@ import com.tsf.shell.utils.w;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class b extends com.tsf.shell.f.i.c implements m {
+public abstract class b extends com.tsf.shell.f.i.C implements m {
     private static int[] a = {0, 0};
     private static ArrayList<a> v = new ArrayList<>();
     private static int w = 0;
@@ -18,18 +18,18 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
     public com.censivn.C3DEngine.b.f.a.a k;
     public com.censivn.C3DEngine.b.f.a.b l;
     public com.censivn.C3DEngine.b.f.a.b m;
-    public com.tsf.shell.manager.o.a n;
+    public com.tsf.shell.manager.o.A n;
     public boolean o;
     private boolean p;
     private float q;
     private boolean r;
-    private com.tsf.shell.f.d.a.a s;
+    private com.tsf.shell.f.d.a.A s;
     private boolean t;
     private a u;
 
     protected abstract void k();
 
-    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.a aVar) {
+    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar) {
         super(launcherShortcut3DInfo);
         this.b = true;
         this.p = true;
@@ -63,22 +63,22 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         aA();
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void a(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void a(com.tsf.shell.f.e.F fVar) {
         if (fVar instanceof b) {
             a((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void d(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void d(com.tsf.shell.f.e.F fVar) {
         if (fVar instanceof b) {
             b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void e(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void e(com.tsf.shell.f.e.F fVar) {
         if ((fVar instanceof b) && this.u != null) {
             com.tsf.shell.f.i.b.d.b bVarA = a((b) fVar, false);
             bVarA.K().screen = K().screen;
@@ -87,13 +87,13 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public boolean a(com.tsf.shell.f.e.f fVar, float f, float f2) {
-        return (fVar instanceof com.tsf.shell.f.i.c) && ((com.tsf.shell.f.i.c) fVar).au();
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+        return (fVar instanceof com.tsf.shell.f.i.C) && ((com.tsf.shell.f.i.C) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public boolean b(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public boolean b(com.tsf.shell.f.e.F fVar) {
         return fVar instanceof b;
     }
 
@@ -126,7 +126,7 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         }
     }
 
-    public com.tsf.shell.manager.o.a aE() {
+    public com.tsf.shell.manager.o.A aE() {
         return this.n;
     }
 
@@ -172,13 +172,13 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.c, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void g(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void g(com.tsf.shell.f.e.F fVar) {
         I();
         super.g(fVar);
     }
@@ -238,7 +238,7 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         b(number3d, number3d2);
     }
 
-    public void a(com.tsf.shell.f.d.a.a aVar) {
+    public void a(com.tsf.shell.f.d.a.A aVar) {
         b(aVar);
     }
 
@@ -254,7 +254,7 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         }
     }
 
-    public void b(com.tsf.shell.f.d.a.a aVar) {
+    public void b(com.tsf.shell.f.d.a.A aVar) {
         if (this.b) {
             com.tsf.shell.manager.a.v.b.a(this, aVar);
         }
@@ -270,7 +270,7 @@ public abstract class b extends com.tsf.shell.f.i.c implements m {
         w.b();
     }
 
-    @Override // com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         this.n = null;
         this.s = null;

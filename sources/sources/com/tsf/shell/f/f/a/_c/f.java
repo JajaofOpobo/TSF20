@@ -96,7 +96,7 @@ public class f extends i {
 
     @Override // com.tsf.shell.f.f.a._c.i
     public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
             this.a.c((com.tsf.shell.f.i.B) cVar);
             this.g.d(cVar);
             if (cVar.K() != null) {
@@ -113,7 +113,7 @@ public class f extends i {
             Number3d.TEMPNUMBER3D.reset();
             Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3d.TEMPNUMBER3D);
             this.g.removeChild(cVar);
-            com.tsf.shell.f.f.a.a aVarAp = this.a.ap();
+            com.tsf.shell.f.f.a.A aVarAp = this.a.ap();
             cVar.position().setAllFrom(aVarAp.globalToLocal(number3dLocalToGlobal));
             aVarAp.addChildAt(cVar, 0);
             this.a.a(cVar, aVarAp, 0);

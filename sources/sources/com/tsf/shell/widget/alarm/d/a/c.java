@@ -9,9 +9,9 @@ import org.xml.sax.helpers.DefaultHandler;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends DefaultHandler {
     private StringBuilder a = new StringBuilder();
-    private ArrayList<com.tsf.shell.widget.alarm.d.a> b = new ArrayList<>();
+    private ArrayList<com.tsf.shell.widget.alarm.d.A> b = new ArrayList<>();
 
-    public ArrayList<com.tsf.shell.widget.alarm.d.a> a() {
+    public ArrayList<com.tsf.shell.widget.alarm.d.A> a() {
         return this.b;
     }
 
@@ -19,7 +19,7 @@ public class c extends DefaultHandler {
     public void startElement(String str, String str2, String str3, Attributes attributes) {
         this.a.setLength(0);
         if (str2.equalsIgnoreCase("location")) {
-            com.tsf.shell.widget.alarm.d.a aVar = new com.tsf.shell.widget.alarm.d.a();
+            com.tsf.shell.widget.alarm.d.A aVar = new com.tsf.shell.widget.alarm.d.A();
             aVar.a = attributes.getValue("city");
             aVar.c = attributes.getValue("location");
             aVar.b = attributes.getValue("country");

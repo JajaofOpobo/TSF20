@@ -22,7 +22,7 @@ public class h {
         a.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
         a.c(com.censivn.C3DEngine.b.b.a.B);
         a.textures().addElement(textureElementB);
-        g = new a();
+        g = new A();
         com.tsf.shell.manager.a.b.a(g);
     }
 
@@ -54,8 +54,8 @@ public class h {
         com.tsf.shell.manager.b.e.f(e);
     }
 
-    static class a implements e.a {
-        a() {
+    static class A implements e.a {
+        A() {
         }
 
         @Override // com.censivn.C3DEngine.b.c.e.a

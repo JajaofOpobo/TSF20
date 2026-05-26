@@ -29,15 +29,15 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private Runnable C;
     private com.tsf.shell.f.g.a.b D;
     private com.tsf.shell.manager.r.c.d E;
-    private com.tsf.shell.f.f.d.a F;
-    private com.tsf.shell.f.i.b J;
+    private com.tsf.shell.f.f.d.A F;
+    private com.tsf.shell.f.i.B J;
     private ArrayList<Integer> L;
     private Runnable M;
     public com.tsf.shell.f.f.c.a d;
     private n f;
     private com.tsf.shell.f.e.j g;
     private com.censivn.C3DEngine.b.f.j h;
-    private com.censivn.C3DEngine.b.f.a i;
+    private com.censivn.C3DEngine.b.f.A i;
     private com.tsf.shell.f.f.a.h j;
     private ArrayList<g> k;
     private ArrayList<Integer> l;
@@ -49,8 +49,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private int s;
     private Runnable u;
     private com.tsf.shell.manager.f.a v;
-    private b w;
-    private c x;
+    private B w;
+    private C x;
     private com.censivn.C3DEngine.b.d.a y;
     private com.censivn.C3DEngine.b.d.a z;
     private boolean o = false;
@@ -64,7 +64,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         @Override // com.tsf.shell.f.e.e.a
         public void a(int i, Object obj) {
             c();
-            com.tsf.shell.manager.a.h.b((com.tsf.shell.f.i.b) obj);
+            com.tsf.shell.manager.a.h.b((com.tsf.shell.f.i.B) obj);
         }
 
         @Override // com.tsf.shell.f.e.e.a
@@ -101,7 +101,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.G;
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         this.J = bVar;
     }
 
@@ -158,7 +158,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 com.tsf.shell.manager.a.g.a.k();
             }
         };
-        this.i = new com.censivn.C3DEngine.b.f.a() { // from class: com.tsf.shell.f.f.n.11
+        this.i = new com.censivn.C3DEngine.b.f.A() { // from class: com.tsf.shell.f.f.n.11
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 n.this.x.c();
@@ -171,14 +171,14 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         };
         this.D = new com.tsf.shell.f.g.a.b();
-        this.F = new com.tsf.shell.f.f.d.a(this) { // from class: com.tsf.shell.f.f.n.12
-            @Override // com.tsf.shell.f.f.d.a
+        this.F = new com.tsf.shell.f.f.d.A(this) { // from class: com.tsf.shell.f.f.n.12
+            @Override // com.tsf.shell.f.f.d.A
             public void a() {
                 com.tsf.shell.manager.a.p.c();
                 com.censivn.C3DEngine.b.c.b.a(n.this.f);
             }
 
-            @Override // com.tsf.shell.f.f.d.a
+            @Override // com.tsf.shell.f.f.d.A
             public void b() {
                 n.this.t = 1;
                 n.this.i.setAnimationObjectState(false);
@@ -188,13 +188,13 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 }
             }
 
-            @Override // com.tsf.shell.f.f.d.a
+            @Override // com.tsf.shell.f.f.d.A
             public void c() {
                 n.this.ao();
             }
         };
         S();
-        this.w = new b();
+        this.w = new B();
         this.h = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.f.n.13
             @Override // com.censivn.C3DEngine.b.f.i
             @SuppressLint({"WrongCall"})
@@ -210,7 +210,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             public void d() {
             }
         };
-        this.x = new c();
+        this.x = new C();
         this.i.setAnimationObjectState(true);
         this.p = Home.b().l();
         this.B = new com.censivn.C3DEngine.b.f.j();
@@ -248,7 +248,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
         this.h.addChild(this.B);
         this.h.addChild(this.i);
-        this.x = new c();
+        this.x = new C();
         ac();
         this.v.a(this.m);
         if (this.r == null) {
@@ -459,7 +459,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         com.censivn.C3DEngine.b.f.i iVarN = gVar.n();
         if (iVarN != null) {
             iVarN.calAABB(1.0f, 1.5f, 1.0f);
-            a aVar = new a(iVarN);
+            A aVar = new A(iVarN);
             aVar.a(gVar);
             gVar.b(aVar);
             gVar.a(new com.tsf.shell.f.i.a.b(iVarN) { // from class: com.tsf.shell.f.f.n.2
@@ -529,7 +529,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.q;
     }
 
-    public void b(com.tsf.shell.f.i.b bVar) {
+    public void b(com.tsf.shell.f.i.B bVar) {
         ((com.tsf.shell.f.i.a.c) bVar.getMouseEventListener()).a(true);
         bVar.f_();
         w();
@@ -559,7 +559,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.k.get(1).t();
     }
 
-    public com.tsf.shell.f.f.d.a r() {
+    public com.tsf.shell.f.f.d.A r() {
         return this.F;
     }
 
@@ -1057,7 +1057,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         });
     }
 
-    public class c implements com.censivn.C3DEngine.b.c.b.a {
+    public class C implements com.censivn.C3DEngine.b.c.b.a {
         private com.censivn.C3DEngine.b.f.j A;
         private com.censivn.C3DEngine.b.f.j B;
         private double C;
@@ -1142,10 +1142,10 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        public c() {
+        public C() {
             com.censivn.C3DEngine.a.d.d().c().a(this);
             this.G = new com.censivn.C3DEngine.b.g.b.b();
-            this.E = new a();
+            this.E = new A();
             i();
         }
 
@@ -1306,10 +1306,10 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        class a implements Comparator<com.censivn.C3DEngine.b.f.i> {
+        class A implements Comparator<com.censivn.C3DEngine.b.f.i> {
             private double b = 0.017453292519943295d;
 
-            a() {
+            A() {
             }
 
             @Override // java.util.Comparator
@@ -2211,7 +2211,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 }
             };
             com.censivn.C3DEngine.b.g.c.a(gVar);
-            a aVarC = c(gVar);
+            A aVarC = c(gVar);
             dVar.f(aVarC.a);
             dVar.j(aVarC.b);
             dVar.h(0.0f);
@@ -2224,14 +2224,14 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         private void b(g gVar) {
             com.censivn.C3DEngine.b.g.c.a(gVar);
-            a aVarC = c(gVar);
+            A aVarC = c(gVar);
             gVar.position().setAll(aVarC.a, 0.0f, aVarC.b);
             gVar.rotation().setAll(0.0f, aVarC.c, 0.0f);
             gVar.scale().setAll(1.0f, 1.0f, 1.0f);
         }
 
         private a c(g gVar) {
-            a aVar = new a();
+            A aVar = new A();
             int iR = gVar.r();
             aVar.a = (float) (Math.cos(((double) (iR * (-this.j))) - 3.141592653589793d) * ((double) this.h));
             aVar.b = (float) (Math.sin(((double) (iR * (-this.j))) - 3.141592653589793d) * ((double) this.h));
@@ -2674,14 +2674,14 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    class a extends com.censivn.C3DEngine.b.d.a {
+    class A extends com.censivn.C3DEngine.b.d.a {
         boolean a;
         boolean b;
         private g e;
         private boolean f;
         private boolean g;
 
-        public a(com.censivn.C3DEngine.b.f.i iVar) {
+        public A(com.censivn.C3DEngine.b.f.i iVar) {
             super(iVar);
             this.a = false;
             this.b = false;

@@ -17,7 +17,7 @@ public class HorzontalSliderView extends LinearLayout {
     private int d;
     private int e;
     private int f;
-    private a g;
+    private A g;
 
     public interface a {
         void a(float f, boolean z);
@@ -98,7 +98,7 @@ public class HorzontalSliderView extends LinearLayout {
         }
     }
 
-    public void setSliderChangeListener(a aVar) {
+    public void setSliderChangeListener(A aVar) {
         this.g = aVar;
     }
 

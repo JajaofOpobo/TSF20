@@ -176,27 +176,27 @@ public class i extends com.censivn.C3DEngine.b.f.j {
     public void p() {
     }
 
-    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
     }
 
-    public void b(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
     }
 
-    public void c(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
     }
 
-    public void d(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
     }
 
-    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
     }
 
-    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
-    public void b(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
-    public void e(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
     }
 }

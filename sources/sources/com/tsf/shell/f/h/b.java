@@ -23,7 +23,7 @@ public class b implements b.a, e.a {
     private float m;
     private float o;
     private float p;
-    private a r;
+    private A r;
     private com.tsf.shell.f.h.a.c s;
     public int a = 47;
     private float c = 0.0f;
@@ -162,7 +162,7 @@ public class b implements b.a, e.a {
         });
         this.d.addChild(this.e);
         jVar.addChild(this.d);
-        this.r = new a();
+        this.r = new A();
         this.d.addChild(this.r);
     }
 

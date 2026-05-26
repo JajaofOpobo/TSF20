@@ -68,7 +68,7 @@ public class ah {
     private boolean d = false;
     private Map<String, SparseArray<Object>> j = Collections.synchronizedMap(new LinkedHashMap());
     private boolean n = false;
-    private b p = b.Normal;
+    private B p = b.Normal;
     private boolean q = false;
     private boolean r = false;
     private boolean s = false;
@@ -680,7 +680,7 @@ public class ah {
         return Integer.valueOf(Integer.parseInt(strArrSplit[0])).intValue() <= 1;
     }
 
-    public static boolean a(a aVar, String str) {
+    public static boolean a(A aVar, String str) {
         return a(str, aVar.a());
     }
 

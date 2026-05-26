@@ -161,7 +161,7 @@ public class c extends i {
     }
 
     private void a(com.censivn.C3DEngine.b.f.j jVar, int i) {
-        com.tsf.shell.f.f.a.a aVar = (com.tsf.shell.f.f.a.a) jVar;
+        com.tsf.shell.f.f.a.A aVar = (com.tsf.shell.f.f.a.A) jVar;
         int iNumChildren = aVar.numChildren();
         if (iNumChildren == 1) {
             aVar.addChild(this.n);
@@ -317,7 +317,7 @@ public class c extends i {
         this.o = true;
         com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) cVar.parent();
         cVar.position().setAllFrom(this.s);
-        if (cVar.parent() instanceof com.tsf.shell.f.f.a.a) {
+        if (cVar.parent() instanceof com.tsf.shell.f.f.a.A) {
             this.x = jVar;
             this.v = jVar.getChildIndexOf(cVar);
             jVar.replaceChild(cVar, this.m);
@@ -374,7 +374,7 @@ public class c extends i {
         if (z) {
             b(cVar);
         } else {
-            if (jVar instanceof com.tsf.shell.f.f.a.a) {
+            if (jVar instanceof com.tsf.shell.f.f.a.A) {
                 Number3d.TEMPNUMBER3D.reset();
                 Number3d.TEMPNUMBER3D.setAllFrom(cVar.scale());
                 jVar.globalScaleToLocal(Number3d.TEMPNUMBER3D);
@@ -394,7 +394,7 @@ public class c extends i {
                 }
                 this.j = null;
             } else {
-                com.tsf.shell.f.f.a.a aVar = (com.tsf.shell.f.f.a.a) jVar;
+                com.tsf.shell.f.f.a.A aVar = (com.tsf.shell.f.f.a.A) jVar;
                 if (cVar.as()) {
                     arrayList = cVar.aw();
                 } else {
@@ -485,8 +485,8 @@ public class c extends i {
             if ((cVar instanceof com.tsf.shell.f.i._b.e.g) && cVar.L()) {
                 com.tsf.shell.manager.a.j.b(cVar);
                 com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
-                if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.a)) {
-                    ((com.tsf.shell.f.f.a.a) jVar).removeChild(this.m);
+                if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.A)) {
+                    ((com.tsf.shell.f.f.a.A) jVar).removeChild(this.m);
                     return;
                 }
                 return;
@@ -503,8 +503,8 @@ public class c extends i {
             bVar2.position().setAllFrom(this.s);
         }
         com.censivn.C3DEngine.b.f.j jVar2 = (com.censivn.C3DEngine.b.f.j) this.m.parent();
-        if (jVar2 != null && (jVar2 instanceof com.tsf.shell.f.f.a.a)) {
-            iE = (((com.tsf.shell.f.f.a.a) jVar2).e() * com.tsf.shell.f.f.a.h.m) + this.v;
+        if (jVar2 != null && (jVar2 instanceof com.tsf.shell.f.f.a.A)) {
+            iE = (((com.tsf.shell.f.f.a.A) jVar2).e() * com.tsf.shell.f.f.a.h.m) + this.v;
         } else {
             iE = this.a.ap().e() * com.tsf.shell.f.f.a.h.m;
         }
@@ -517,7 +517,7 @@ public class c extends i {
             }
             com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) it2.next();
             int i3 = i2 % com.tsf.shell.f.f.a.h.m;
-            com.tsf.shell.f.f.a.a aVarE = this.a.e(i2);
+            com.tsf.shell.f.f.a.A aVarE = this.a.e(i2);
             aVarE.addChildAt(bVar3, i3);
             this.a.a(bVar3, aVarE, i3);
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();

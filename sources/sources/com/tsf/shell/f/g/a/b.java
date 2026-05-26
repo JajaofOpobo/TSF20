@@ -167,7 +167,7 @@ public class b extends com.tsf.shell.f.e.g.d {
                     }
                 }
 
-                @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.censivn.C3DEngine.b.f.j
+                @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
                     if (this.a != null) {

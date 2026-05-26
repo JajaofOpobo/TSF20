@@ -21,7 +21,7 @@ public class c {
     private j e;
     private com.censivn.C3DEngine.b.b.c f;
     private com.tsf.shell.f.b.a g;
-    private com.tsf.shell.f.e.d<com.tsf.shell.f.f.a.a.a.b> h;
+    private com.tsf.shell.f.e.D<com.tsf.shell.f.f.a.a.a.b> h;
     private ArrayList<com.tsf.shell.f.f.a.a.a.c> i;
     private n j;
     private f k;
@@ -189,8 +189,8 @@ public class c {
         this.j.setMouseEventListener(aVar);
         this.e.addChild(this.d);
         this.e.addChild(this.j);
-        this.h = new com.tsf.shell.f.e.d<com.tsf.shell.f.f.a.a.a.b>() { // from class: com.tsf.shell.f.f.a.a.c.7
-            @Override // com.tsf.shell.f.e.d
+        this.h = new com.tsf.shell.f.e.D<com.tsf.shell.f.f.a.a.a.b>() { // from class: com.tsf.shell.f.f.a.a.c.7
+            @Override // com.tsf.shell.f.e.D
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public com.tsf.shell.f.f.a.a.a.b b() {
                 return new com.tsf.shell.f.f.a.a.a.b(c.this);

@@ -13,11 +13,11 @@ public class o {
     public static void a(VObject3d[] vObject3dArr, int i, Bitmap bitmap, int i2, int i3, int i4) {
         int length = vObject3dArr.length;
         for (int i5 = 0; i5 < length; i5++) {
-            new a(vObject3dArr[i5], i5, length, bitmap, i, i2, i3, i4);
+            new A(vObject3dArr[i5], i5, length, bitmap, i, i2, i3, i4);
         }
     }
 
-    static class a extends VTweenParam {
+    static class A extends VTweenParam {
         float a;
         float b;
         float c;
@@ -29,7 +29,7 @@ public class o {
         VObject3d i;
         int j;
 
-        public a(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
+        public A(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
             this.i = vObject3d;
             this.j = i3;
             this.d = i;

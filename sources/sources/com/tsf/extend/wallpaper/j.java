@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class j extends u {
     private static final long a = TimeUnit.HOURS.toMillis(3);
 
-    @Override // com.tsf.extend.wallpaper.u, com.tsf.extend.base.b.a
+    @Override // com.tsf.extend.wallpaper.u, com.tsf.extend.base.b.A
     public boolean d() {
         return System.currentTimeMillis() - c() > a;
     }

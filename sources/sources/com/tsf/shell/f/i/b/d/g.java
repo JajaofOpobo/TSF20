@@ -41,7 +41,7 @@ public class g extends com.tsf.shell.f.e.f.b {
     }
 
     @Override // com.tsf.shell.f.e.f.b
-    public void a(com.tsf.shell.f.i.c cVar) {
+    public void a(com.tsf.shell.f.i.C cVar) {
         if (cVar instanceof com.tsf.shell.f.i.b.e.b) {
             cVar.mouseEnabled(false);
             Number3d.TEMPNUMBER3D2.reset();

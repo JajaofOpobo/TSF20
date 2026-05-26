@@ -14,7 +14,7 @@ import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 public class PullToRefreshAndLoadMoreListView extends PullToRefreshListView {
     private FrameLayout d;
     private View e;
-    private a f;
+    private A f;
     private boolean g;
     private PullToRefreshBase.f<ListView> h;
     private PullToRefreshBase.c i;
@@ -110,7 +110,7 @@ public class PullToRefreshAndLoadMoreListView extends PullToRefreshListView {
         this.e.setVisibility(8);
     }
 
-    public void setOnLoadListener(a aVar) {
+    public void setOnLoadListener(A aVar) {
         this.f = aVar;
     }
 

@@ -51,7 +51,7 @@ public class f implements e.a {
     private float O;
     private k P;
     private k Q;
-    private com.tsf.shell.f.c.a.a R;
+    private com.tsf.shell.f.c.a.A R;
     private b S;
     private float T;
     private float U;
@@ -214,7 +214,7 @@ public class f implements e.a {
     }
 
     private void a(ItemInfo itemInfo) {
-        com.tsf.shell.f.i.b bVarA;
+        com.tsf.shell.f.i.B bVarA;
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
@@ -240,7 +240,7 @@ public class f implements e.a {
         return this.aa;
     }
 
-    public void a(j jVar, a aVar) {
+    public void a(j jVar, A aVar) {
         float f2;
         float f3;
         float f4;
@@ -262,7 +262,7 @@ public class f implements e.a {
         this.s = jVar;
         a = (int) (50.0f * com.censivn.C3DEngine.b.b.a.b);
         b = (int) (100.0f * com.censivn.C3DEngine.b.b.a.b);
-        this.S = new b(this);
+        this.S = new B(this);
         if (this.Y) {
             this.S.a = 0.1f;
         }
@@ -326,7 +326,7 @@ public class f implements e.a {
         this.G = new com.tsf.shell.f.h.e();
         this.G.b(0.0f);
         this.E.addChild(this.G);
-        this.R = new com.tsf.shell.f.c.a.a(this.C, this);
+        this.R = new com.tsf.shell.f.c.a.A(this.C, this);
         this.C.setMouseEventListener(this.R);
         this.P = new k(this.I.width, this.I.height, false);
         this.P.rotation().z = 90.0f;

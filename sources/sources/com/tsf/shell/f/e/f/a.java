@@ -41,7 +41,7 @@ public class a implements b.a, e.a, b.a, b.a {
     private static HashMap<Integer, C0094a> a;
     private static ArrayList<Integer> p = new ArrayList<>();
     private ArrayList<c> b;
-    private com.tsf.shell.f.i.c f;
+    private com.tsf.shell.f.i.C f;
     private com.tsf.shell.f.e.f.b g;
     private com.tsf.shell.f.i.b.e.a j;
     private c m;
@@ -277,7 +277,7 @@ public class a implements b.a, e.a, b.a, b.a {
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.c cVar, i iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
+    public void a(com.tsf.shell.f.i.C cVar, i iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
         if (!this.h) {
             this.e.position().reset();
             p.clear();
@@ -330,7 +330,7 @@ public class a implements b.a, e.a, b.a, b.a {
         com.tsf.shell.manager.a.e.a(this.k);
     }
 
-    public void a(final com.tsf.shell.f.i.c cVar) {
+    public void a(final com.tsf.shell.f.i.C cVar) {
         if (!this.r && this.q != null) {
             this.r = true;
             this.q.a();
@@ -352,7 +352,7 @@ public class a implements b.a, e.a, b.a, b.a {
         }
     }
 
-    public void b(com.tsf.shell.f.i.c cVar) {
+    public void b(com.tsf.shell.f.i.C cVar) {
         if (this.q != null) {
             a(cVar);
             return;
@@ -509,7 +509,7 @@ public class a implements b.a, e.a, b.a, b.a {
     }
 
     static class b {
-        public static void a(final com.tsf.shell.f.i.b bVar) {
+        public static void a(final com.tsf.shell.f.i.B bVar) {
             com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.f.a.b.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -519,7 +519,7 @@ public class a implements b.a, e.a, b.a, b.a {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public static void c(final com.tsf.shell.f.i.b bVar) {
+        public static void c(final com.tsf.shell.f.i.B bVar) {
             ItemInfo itemInfoK = bVar.K();
             Context contextD = com.censivn.C3DEngine.a.d();
             View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_rename, (ViewGroup) null);

@@ -10,7 +10,7 @@ public class d {
     private com.tsf.shell.preference.a.a.d b;
     private com.tsf.shell.preference.a.a.e c;
     private com.tsf.shell.preference.a.a.b d;
-    private com.tsf.shell.preference.a.a.a e;
+    private com.tsf.shell.preference.a.a.A e;
     private com.tsf.shell.preference.a.a.c f;
     private h g;
     private l h;
@@ -58,9 +58,9 @@ public class d {
         return this.g;
     }
 
-    public com.tsf.shell.preference.a.a.a g() {
+    public com.tsf.shell.preference.a.a.A g() {
         if (this.e == null) {
-            this.e = new com.tsf.shell.preference.a.a.a();
+            this.e = new com.tsf.shell.preference.a.a.A();
         }
         return this.e;
     }

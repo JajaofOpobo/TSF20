@@ -67,7 +67,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             }
 
             @Override // com.tsf.shell.manager.r.b.a.C0144a
-            public com.tsf.shell.manager.o.a b() {
+            public com.tsf.shell.manager.o.A b() {
                 return com.tsf.shell.manager.o.b.b;
             }
         };
@@ -180,7 +180,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     private void s() {
         final String str = "";
         for (i iVar : c().children()) {
-            str = iVar instanceof com.tsf.shell.f.i.b ? str + ((com.tsf.shell.f.i.b) iVar).K().id + "," : str;
+            str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
         }
         com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.f.h.f.4
             @Override // java.lang.Runnable

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends a {
-    public d(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
+    public d(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         if (z) {
             com.tsf.shell.manager.bind.b.b.a(this);
@@ -29,7 +29,7 @@ public class d extends a {
         this.k.visible(true);
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         super.g();
     }
@@ -38,7 +38,7 @@ public class d extends a {
         return null;
     }
 
-    @Override // com.tsf.shell.f.i.c
+    @Override // com.tsf.shell.f.i.C
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(1);
         if (rotation().z != 0.0f) {

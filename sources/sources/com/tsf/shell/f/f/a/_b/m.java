@@ -45,27 +45,27 @@ public abstract class m extends k {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.f.a.a aVar, int i) {
+    public void a(com.tsf.shell.f.f.a.A aVar, int i) {
         aVar.b(i);
     }
 
-    private void b(com.tsf.shell.f.f.a.a aVar, int i) {
+    private void b(com.tsf.shell.f.f.a.A aVar, int i) {
         aVar.c(i);
     }
 
-    private void a(com.tsf.shell.f.f.a.a aVar, boolean z) {
+    private void a(com.tsf.shell.f.f.a.A aVar, boolean z) {
         aVar.b(z);
     }
 
-    private int i(com.tsf.shell.f.f.a.a aVar) {
+    private int i(com.tsf.shell.f.f.a.A aVar) {
         return aVar.r();
     }
 
-    private int j(com.tsf.shell.f.f.a.a aVar) {
+    private int j(com.tsf.shell.f.f.a.A aVar) {
         return aVar.s();
     }
 
-    private boolean k(com.tsf.shell.f.f.a.a aVar) {
+    private boolean k(com.tsf.shell.f.f.a.A aVar) {
         return aVar.t();
     }
 
@@ -82,7 +82,7 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void a(com.tsf.shell.f.f.a.a aVar) {
+    public void a(com.tsf.shell.f.f.a.A aVar) {
         int iNumChildren = aVar.numChildren();
         aVar.renderChildren(true);
         for (int i = 0; i < iNumChildren; i++) {
@@ -101,7 +101,7 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void a(com.tsf.shell.f.f.a.a aVar, float f) {
+    public void a(com.tsf.shell.f.f.a.A aVar, float f) {
         float f2;
         float f3;
         float fAbs = Math.abs(f);
@@ -168,7 +168,7 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void b(com.tsf.shell.f.f.a.a aVar) {
+    public void b(com.tsf.shell.f.f.a.A aVar) {
         aVar.renderChildren(false);
         a(aVar, c);
         b(aVar, b);
@@ -176,22 +176,22 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void c(com.tsf.shell.f.f.a.a aVar) {
+    public void c(com.tsf.shell.f.f.a.A aVar) {
         b(aVar, true);
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void d(com.tsf.shell.f.f.a.a aVar) {
+    public void d(com.tsf.shell.f.f.a.A aVar) {
         a(aVar, true);
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void e(com.tsf.shell.f.f.a.a aVar) {
+    public void e(com.tsf.shell.f.f.a.A aVar) {
         m(aVar);
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void f(com.tsf.shell.f.f.a.a aVar) {
+    public void f(com.tsf.shell.f.f.a.A aVar) {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
@@ -257,7 +257,7 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void g(com.tsf.shell.f.f.a.a aVar) {
+    public void g(com.tsf.shell.f.f.a.A aVar) {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
@@ -268,7 +268,7 @@ public abstract class m extends k {
     }
 
     @Override // com.tsf.shell.f.f.a._b.k
-    public void h(com.tsf.shell.f.f.a.a aVar) {
+    public void h(com.tsf.shell.f.f.a.A aVar) {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
@@ -278,7 +278,7 @@ public abstract class m extends k {
         }
     }
 
-    private void b(final com.tsf.shell.f.f.a.a aVar, boolean z) {
+    private void b(final com.tsf.shell.f.f.a.A aVar, boolean z) {
         b bVar;
         b bVar2;
         this.l = false;
@@ -348,7 +348,7 @@ public abstract class m extends k {
         }
     }
 
-    private void l(com.tsf.shell.f.f.a.a aVar) {
+    private void l(com.tsf.shell.f.f.a.A aVar) {
         b bVar;
         this.l = false;
         a(aVar, c);
@@ -372,7 +372,7 @@ public abstract class m extends k {
         aVar.position().z = -this.f;
     }
 
-    private void m(com.tsf.shell.f.f.a.a aVar) {
+    private void m(com.tsf.shell.f.f.a.A aVar) {
         Number3d number3d;
         this.l = true;
         a(aVar, c);
@@ -404,7 +404,7 @@ public abstract class m extends k {
         }
     }
 
-    private void n(final com.tsf.shell.f.f.a.a aVar) {
+    private void n(final com.tsf.shell.f.f.a.A aVar) {
         Number3d number3d;
         a(aVar, false);
         int iNumChildren = aVar.numChildren();

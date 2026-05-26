@@ -22,7 +22,7 @@ import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
-public abstract class d extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.a {
+public abstract class d extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.A {
     static final Interpolator a = new LinearInterpolator();
     protected final ImageView b;
     protected final ProgressBar c;
@@ -215,29 +215,29 @@ public abstract class d extends FrameLayout implements com.tsf.extend.base.widge
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a
+    @Override // com.tsf.extend.base.widget.pulltorefresh.A
     public void setLastUpdatedLabel(CharSequence charSequence) {
         setSubHeaderText(charSequence);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a
+    @Override // com.tsf.extend.base.widget.pulltorefresh.A
     public final void setLoadingDrawable(Drawable drawable) {
         this.b.setImageDrawable(drawable);
         this.g = drawable instanceof AnimationDrawable;
         a(drawable);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a
+    @Override // com.tsf.extend.base.widget.pulltorefresh.A
     public void setPullLabel(CharSequence charSequence) {
         this.j = charSequence;
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a
+    @Override // com.tsf.extend.base.widget.pulltorefresh.A
     public void setRefreshingLabel(CharSequence charSequence) {
         this.k = charSequence;
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a
+    @Override // com.tsf.extend.base.widget.pulltorefresh.A
     public void setReleaseLabel(CharSequence charSequence) {
         this.l = charSequence;
     }

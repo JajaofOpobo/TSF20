@@ -17,7 +17,7 @@ import com.tsf.shell.utils.x;
 public class a implements b.a, e.a {
     private TextureElement b;
     private j c;
-    private com.tsf.shell.f.i.b d;
+    private com.tsf.shell.f.i.B d;
     private float g;
     private float h;
     private int i;
@@ -175,7 +175,7 @@ public class a implements b.a, e.a {
         return true;
     }
 
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
         this.d = bVar;
         float fU = this.d.u();
         this.g = (this.d.maxX() - this.d.minX()) * fU;
@@ -188,7 +188,7 @@ public class a implements b.a, e.a {
         this.j = this.j >= 1 ? this.j : 1;
     }
 
-    public void b(com.tsf.shell.f.i.b bVar) {
+    public void b(com.tsf.shell.f.i.B bVar) {
         this.d = null;
     }
 

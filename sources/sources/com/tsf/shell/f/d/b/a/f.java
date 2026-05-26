@@ -27,7 +27,7 @@ public class f extends d {
     @Override // com.tsf.shell.f.d.b.a.d
     public void a(com.tsf.shell.f.i.b.e.b bVar) {
         if (this.c.visible()) {
-            if (bVar.parent() instanceof com.tsf.shell.f.f.a.a) {
+            if (bVar.parent() instanceof com.tsf.shell.f.f.a.A) {
                 com.censivn.C3DEngine.a.e().b(bVar.position().x, bVar.position().y);
             } else {
                 this.d.reset();
@@ -44,7 +44,7 @@ public class f extends d {
     public void b(com.tsf.shell.f.i.b.e.b bVar) {
         if (this.c.visible()) {
             GLES20.glFrontFace(2304);
-            if (bVar.parent() instanceof com.tsf.shell.f.f.a.a) {
+            if (bVar.parent() instanceof com.tsf.shell.f.f.a.A) {
                 com.censivn.C3DEngine.a.e().b(bVar.position().x, bVar.position().y);
             } else {
                 this.d.reset();

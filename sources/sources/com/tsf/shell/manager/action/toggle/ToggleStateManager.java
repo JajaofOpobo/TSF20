@@ -12,19 +12,19 @@ import android.provider.Settings;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleStateManager extends BroadcastReceiver {
     public static String a = "android.media.RINGER_MODE_CHANGED";
-    private com.tsf.shell.manager.action.toggle.a b;
-    private a c;
+    private com.tsf.shell.manager.action.toggle.A b;
+    private A c;
     private b d;
 
-    public ToggleStateManager(com.tsf.shell.manager.action.toggle.a aVar) {
+    public ToggleStateManager(com.tsf.shell.manager.action.toggle.A aVar) {
         this.b = aVar;
         IntentFilter intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
         intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");
         intentFilter.addAction("android.bluetooth.adapter.action.STATE_CHANGED");
-        intentFilter.addAction(a);
+        intentFilter.addAction(A);
         com.censivn.C3DEngine.a.d().registerReceiver(this, intentFilter);
         Handler handler = new Handler();
-        this.c = new a(handler);
+        this.c = new A(handler);
         this.d = new b(handler);
         com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness"), false, this.c);
         com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness_mode"), false, this.c);
@@ -41,7 +41,7 @@ public class ToggleStateManager extends BroadcastReceiver {
         }
         if (action.equals("android.bluetooth.adapter.action.STATE_CHANGED")) {
             this.b.c.a(intent);
-        } else if (!action.equals("android.intent.action.AIRPLANE_MODE") && action.equals(a)) {
+        } else if (!action.equals("android.intent.action.AIRPLANE_MODE") && action.equals(A)) {
             this.b.e.a(intent);
         }
     }
@@ -57,8 +57,8 @@ public class ToggleStateManager extends BroadcastReceiver {
         }
     }
 
-    public class a extends ContentObserver {
-        public a(Handler handler) {
+    public class A extends ContentObserver {
+        public A(Handler handler) {
             super(handler);
         }
 

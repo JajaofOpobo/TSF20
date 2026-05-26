@@ -32,11 +32,11 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
     protected boolean a;
     protected b b;
     protected long c;
-    public com.tsf.extend.base.b.a d;
+    public com.tsf.extend.base.b.A d;
     private PageActivity e;
     private PullToRefreshAndLoadMoreListView f;
     private View g;
-    private a h;
+    private A h;
     private List<w> i;
     private List<a.b> j;
     private String k;
@@ -67,7 +67,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         this.f.setDivider(aVar);
         addView(this.f, new FrameLayout.LayoutParams(-1, -1));
         this.f.setCanLoadMore(false);
-        this.h = new a();
+        this.h = new A();
         this.f.setAdapter(this.h);
         this.f.setOnLoadListener(new PullToRefreshAndLoadMoreListView.a() { // from class: com.tsf.extend.wallpaper.v.1
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
@@ -82,7 +82,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             public void b() {
             }
         });
-        com.tsf.extend.base.b.a aVarJ = z.h().j();
+        com.tsf.extend.base.b.A aVarJ = z.h().j();
         if (aVarJ != null && aVarJ.a() != null) {
             this.a = false;
             b(aVarJ.a(), false);
@@ -187,7 +187,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
         public b(a.b bVar) {
@@ -195,7 +195,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
             v.this.d = aVar;
@@ -203,7 +203,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
             v.this.d = aVar;
@@ -211,10 +211,10 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    class a extends BaseAdapter {
+    class A extends BaseAdapter {
         private C0072a b = new C0072a();
 
-        public a() {
+        public A() {
         }
 
         @Override // android.widget.Adapter

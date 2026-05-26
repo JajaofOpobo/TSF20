@@ -133,7 +133,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    protected com.tsf.extend.base.b.a a(String str, String str2, JSONObject jSONObject) {
+    protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         if (str == null) {
             return null;
         }
@@ -194,7 +194,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    public com.tsf.extend.base.b.a b() {
+    public com.tsf.extend.base.b.A b() {
         return null;
     }
 
@@ -210,15 +210,15 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         return context.getResources().getString(num.intValue());
     }
 
-    public com.tsf.extend.base.b.a a(long j2, String str) {
-        com.tsf.extend.base.b.a aVar = d().get(a(str, j2, 0L));
+    public com.tsf.extend.base.b.A a(long j2, String str) {
+        com.tsf.extend.base.b.A aVar = d().get(a(str, j2, 0L));
         if (aVar == null || aVar.d()) {
             return null;
         }
         return aVar;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, long j2, long j3, long j4, String str) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j2, long j3, long j4, String str) {
         String strA = a(str, j3, j4);
         JSONObject jSONObject = new JSONObject();
         try {
@@ -232,7 +232,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         a(strA, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar, long j2, long j3, int i2, long j4, String str, int i3) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j2, long j3, int i2, long j4, String str, int i3) {
         String strA = a(str, j3, j4);
         JSONObject jSONObject = new JSONObject();
         try {
@@ -268,7 +268,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }, z));
     }
 
-    private static com.tsf.extend.base.b.a b(JSONObject jSONObject) throws JSONException {
+    private static com.tsf.extend.base.b.A b(JSONObject jSONObject) throws JSONException {
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         if (jSONArrayOptJSONArray == null) {
             return null;
@@ -281,7 +281,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         return uVar;
     }
 
-    private static com.tsf.extend.base.b.a c(JSONObject jSONObject) throws JSONException {
+    private static com.tsf.extend.base.b.A c(JSONObject jSONObject) throws JSONException {
         ai aiVar;
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         if (jSONArrayOptJSONArray == null) {
@@ -364,19 +364,19 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.a> interfaceC0048a, a.b bVar) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
         a(d, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    private com.tsf.extend.base.b.a d(JSONObject jSONObject) throws JSONException {
+    private com.tsf.extend.base.b.A d(JSONObject jSONObject) throws JSONException {
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         int iOptInt = jSONObject.optInt("resCode");
         if (jSONArrayOptJSONArray == null || iOptInt != 0) {
             return null;
         }
         com.tsf.extend.h.b();
-        com.tsf.extend.base.b.a aVar = new com.tsf.extend.base.b.a();
-        aVar.a(new a());
+        com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
+        aVar.a(new A());
         aVar.a(System.currentTimeMillis());
         aVar.a(jSONObject.optString("version"));
         int i2 = 0;
@@ -400,7 +400,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }
     }
 
-    public com.tsf.extend.base.b.a j() {
+    public com.tsf.extend.base.b.A j() {
         return d().get(d);
     }
 
@@ -438,12 +438,12 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         a(mVar);
     }
 
-    private static class a implements com.tsf.extend.base.b.b {
-        private a() {
+    private static class A implements com.tsf.extend.base.b.b {
+        private A() {
         }
 
         @Override // com.tsf.extend.base.b.b
-        public boolean a(com.tsf.extend.base.b.a aVar) {
+        public boolean a(com.tsf.extend.base.b.A aVar) {
             return System.currentTimeMillis() - aVar.c() > TimeUnit.HOURS.toMillis(10L);
         }
     }

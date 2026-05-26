@@ -68,7 +68,7 @@ public class b {
         if (arrayList.size() > 0) {
             final a.AbstractC0146a abstractC0146a = new a.AbstractC0146a() { // from class: com.tsf.shell.manager.bind.b.3
                 @Override // com.tsf.shell.manager.r.c.a.a.AbstractC0146a
-                public void a(com.tsf.shell.f.i.b bVar, g gVar) {
+                public void a(com.tsf.shell.f.i.B bVar, g gVar) {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
                 }
 

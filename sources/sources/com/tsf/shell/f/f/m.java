@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class m {
-    public d a;
+    public D a;
     public e b;
     private e.b c;
     private ArrayList<f> d = new ArrayList<>();
@@ -25,7 +25,7 @@ public class m {
 
     public m() {
         this.d.add(new r(0, false));
-        this.d.add(new com.tsf.shell.f.f.b.a(190, false));
+        this.d.add(new com.tsf.shell.f.f.b.A(190, false));
         this.d.add(new com.tsf.shell.f.f.b.f(10, true));
         this.d.add(new com.tsf.shell.f.f.b.i(180, true));
         this.d.add(new com.tsf.shell.f.f.b.e(170, true));
@@ -57,7 +57,7 @@ public class m {
         this.e.add(new com.tsf.shell.f.f.b.a.e(70, true, true, true));
         this.e.add(new com.tsf.shell.f.f.b.a.c(80, true, false, true));
         this.e.add(new com.tsf.shell.f.f.b.a.c(90, true, true, true));
-        this.a = new d(this.d);
+        this.a = new D(this.d);
         this.b = new e(this.e);
     }
 

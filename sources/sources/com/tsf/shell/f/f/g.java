@@ -27,7 +27,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     protected g a;
     protected com.tsf.shell.e.d b;
     protected com.tsf.shell.f.e.f.b c;
-    protected com.tsf.shell.f.i.a h;
+    protected com.tsf.shell.f.i.A h;
     protected l k;
     private com.censivn.C3DEngine.b.f.k q;
     private com.censivn.C3DEngine.b.f.b.a s;
@@ -201,7 +201,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.w = aVar;
     }
 
-    public com.tsf.shell.f.i.a m() {
+    public com.tsf.shell.f.i.A m() {
         return this.h;
     }
 
@@ -276,7 +276,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             }
 
             @Override // com.tsf.shell.f.e.f.b
-            public void a(com.tsf.shell.f.i.c cVar) {
+            public void a(com.tsf.shell.f.i.C cVar) {
                 if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
                     com.tsf.shell.manager.r.c.g.a(cVar, null, null);
                 } else {
@@ -290,9 +290,9 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
                 g.this.h.a(iVar);
             }
         };
-        this.h = new com.tsf.shell.f.i.a(this, this) { // from class: com.tsf.shell.f.f.g.2
-            @Override // com.tsf.shell.f.i.a
-            public void b(com.tsf.shell.f.i.b bVar) {
+        this.h = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.f.g.2
+            @Override // com.tsf.shell.f.i.A
+            public void b(com.tsf.shell.f.i.B bVar) {
                 g.this.N();
             }
         };
@@ -322,8 +322,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void v() {
         for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList) this.c.children().clone()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                com.tsf.shell.manager.a.i.a((com.tsf.shell.f.i.b) iVar);
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                com.tsf.shell.manager.a.i.a((com.tsf.shell.f.i.B) iVar);
             }
         }
     }
@@ -335,8 +335,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.q.b(com.censivn.C3DEngine.b.b.a.G);
         this.t.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
         for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) iVar;
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
                 bVar.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
                 bVar.ac();
             }
@@ -623,8 +623,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void a(com.censivn.C3DEngine.b.f.i iVar) {
-        if (iVar instanceof com.tsf.shell.f.i.b) {
-            com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) iVar;
+        if (iVar instanceof com.tsf.shell.f.i.B) {
+            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
             bVar.a(m());
             if (bVar.K() != null) {
                 bVar.K().screen = this.z;
@@ -636,8 +636,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void a(com.censivn.C3DEngine.b.f.i iVar, int i2) {
-        if (iVar instanceof com.tsf.shell.f.i.b) {
-            com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) iVar;
+        if (iVar instanceof com.tsf.shell.f.i.B) {
+            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
             bVar.a(m());
             if (bVar.K() != null) {
                 bVar.K().screen = this.z;
@@ -650,8 +650,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void b(com.censivn.C3DEngine.b.f.i iVar) {
         if (this.c.children().contains(iVar)) {
             this.c.removeChild(iVar);
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                ((com.tsf.shell.f.i.b) iVar).B();
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                ((com.tsf.shell.f.i.B) iVar).B();
             }
             N();
         }
@@ -667,7 +667,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         while (true) {
             int i3 = i2;
             if (it.hasNext()) {
-                i2 = it.next() instanceof com.tsf.shell.f.i.b ? i3 + 1 : i3;
+                i2 = it.next() instanceof com.tsf.shell.f.i.B ? i3 + 1 : i3;
             } else {
                 return i3;
             }
@@ -794,8 +794,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void onDrawStart() {
         if (com.tsf.shell.manager.a.v.c.b.a()) {
             for (com.censivn.C3DEngine.b.f.i iVar : R()) {
-                if (iVar instanceof com.tsf.shell.f.i.b) {
-                    com.tsf.shell.manager.a.v.c.b.a((com.tsf.shell.f.i.b) iVar);
+                if (iVar instanceof com.tsf.shell.f.i.B) {
+                    com.tsf.shell.manager.a.v.c.b.a((com.tsf.shell.f.i.B) iVar);
                 }
             }
         }
@@ -803,8 +803,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void ae() {
         for (com.censivn.C3DEngine.b.f.i iVar : R()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                ((com.tsf.shell.f.i.b) iVar).y();
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                ((com.tsf.shell.f.i.B) iVar).y();
             }
         }
     }

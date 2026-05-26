@@ -28,7 +28,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     private PersonalizationActivity d;
     private ViewPager e;
     private PagerIndicator f;
-    private b g;
+    private B g;
     private View h;
     private int i;
     private long j;
@@ -41,7 +41,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     private boolean q;
     private TextView r;
     private List<com.tsf.extend.theme.c.e> s;
-    private a t;
+    private A t;
     private int u;
     private boolean v;
     private int w;
@@ -72,7 +72,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         super.onFinishInflate();
         v.h();
         this.e = (ViewPager) findViewById(f.e.viewpager);
-        this.g = new b();
+        this.g = new B();
         this.e.setOffscreenPageLimit(2);
         this.e.setAdapter(this.g);
         this.e.setOnPageChangeListener(this);
@@ -140,7 +140,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     }
 
     private View getCurrentView() {
-        return ((b) this.e.getAdapter()).b(this.e.getCurrentItem());
+        return ((B) this.e.getAdapter()).b(this.e.getCurrentItem());
     }
 
     @Override // android.view.View.OnClickListener
@@ -189,10 +189,10 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
     }
 
-    private class b extends com.tsf.extend.base.support.a {
+    private class B extends com.tsf.extend.base.support.a {
         private FrameLayout.LayoutParams b;
 
-        private b() {
+        private B() {
             this.b = new FrameLayout.LayoutParams(-1, -1);
         }
 
@@ -304,7 +304,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
     @Override // com.tsf.extend.base.view.PagerIndicator.a
     public void c(int i) {
-        com.tsf.extend.base.d dVarA = com.tsf.extend.h.a();
+        com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
         if (dVarA != null) {
             dVarA.b(i + 1);
         }
@@ -412,17 +412,17 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
     private void l() {
         if (this.s == null) {
-            this.t = new a();
+            this.t = new A();
             v.h().a(this.t, a.b.Refresh);
         }
     }
 
-    class a implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
-        a() {
+    class A implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -435,7 +435,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.2
                 @Override // java.lang.Runnable
                 public void run() {

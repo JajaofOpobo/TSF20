@@ -24,7 +24,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.tsf.shell.f.e.g.a.b implements b.a {
-    public com.tsf.shell.manager.r.b.a a;
+    public com.tsf.shell.manager.r.b.A a;
     private com.tsf.shell.manager.a.c b;
     private h c;
     private float d;
@@ -35,7 +35,7 @@ public class a extends com.tsf.shell.f.e.g.a.b implements b.a {
     private boolean i;
     private k j;
 
-    public a(final com.tsf.shell.manager.r.b.a aVar, String str) {
+    public a(final com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.i = false;
         this.h = new b() { // from class: com.tsf.shell.manager.r.b.a.a.1
@@ -165,7 +165,7 @@ public class a extends com.tsf.shell.f.e.g.a.b implements b.a {
                                 Number3d.TEMPNUMBER3D.reset();
                                 gVarBa.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D));
                                 gVarBa.rotation().setAll(0.0f, 0.0f, 0.0f);
-                                this.c.a((com.tsf.shell.f.i.c) gVarBa);
+                                this.c.a((com.tsf.shell.f.i.C) gVarBa);
                             }
                             i2 = i3 + 1;
                         }

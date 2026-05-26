@@ -25,7 +25,7 @@ public class k extends VObject3dContainer {
     private u j;
     private m k;
     private boolean l;
-    private a m;
+    private A m;
     private c n;
     private int o;
     private int p;
@@ -71,7 +71,7 @@ public class k extends VObject3dContainer {
         this.i = new h(this.n);
         this.j = new u(this.n);
         this.k = new m(this.n);
-        this.m = new a(this.n);
+        this.m = new A(this.n);
         this.e.a(this.m, this.n.f);
         a(a());
     }

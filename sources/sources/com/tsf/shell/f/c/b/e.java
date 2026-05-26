@@ -22,8 +22,8 @@ public class e implements e.a {
     private com.tsf.shell.f.e.j e;
     private com.tsf.shell.f.c.b.a.a f;
     private com.censivn.C3DEngine.b.h.e.a i;
-    private a j;
-    private a k;
+    private A j;
+    private A k;
     private Runnable l;
     private boolean m;
     private float b = 25.0f;
@@ -78,8 +78,8 @@ public class e implements e.a {
             if (i3 == 0) {
                 a = i2;
             }
-            a aVar = new a(this, this.b, this.c, i3) { // from class: com.tsf.shell.f.c.b.e.2
-                @Override // com.tsf.shell.f.c.b.a
+            A aVar = new A(this, this.b, this.c, i3) { // from class: com.tsf.shell.f.c.b.e.2
+                @Override // com.tsf.shell.f.c.b.A
                 public void e() {
                 }
             };
@@ -100,8 +100,8 @@ public class e implements e.a {
         }
         this.i.e();
         this.i.a(a, false);
-        this.k = (a) this.i.getChildAt(a);
-        d(a);
+        this.k = (A) this.i.getChildAt(A);
+        d(A);
         this.d.addChild(this.i);
         if (!this.m) {
             this.e = com.tsf.shell.manager.a.h.h();
@@ -143,7 +143,7 @@ public class e implements e.a {
         while (true) {
             int i3 = i2;
             if (i3 < 3) {
-                a aVar = (a) this.i.getChildAt(i3);
+                A aVar = (A) this.i.getChildAt(i3);
                 if (aVar.c() != i) {
                     i2 = i3 + 1;
                 } else {
@@ -158,7 +158,7 @@ public class e implements e.a {
     /* JADX INFO: Access modifiers changed from: private */
     public a c(int i) {
         if (i < 3) {
-            return (a) this.i.getChildAt(i);
+            return (A) this.i.getChildAt(i);
         }
         return null;
     }
@@ -168,7 +168,7 @@ public class e implements e.a {
         if (this.j != null && !this.m) {
             com.tsf.shell.manager.a.k.c(this.j);
         }
-        this.j = (a) this.i.getChildAt(i);
+        this.j = (A) this.i.getChildAt(i);
         if (this.g && !this.m) {
             com.tsf.shell.manager.a.k.b(this.j);
         }
@@ -217,7 +217,7 @@ public class e implements e.a {
         }
         Iterator<i> it = this.i.b().children().iterator();
         while (it.hasNext()) {
-            a aVar = (a) it.next();
+            A aVar = (A) it.next();
             h().a(aVar);
             aVar.g();
         }
@@ -260,7 +260,7 @@ public class e implements e.a {
         ArrayList<ItemInfo> arrayList3 = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             ArrayList<ItemInfo> arrayListA = h.a(arrayList, arrayList2.get(i), ",", false);
-            a aVarB = b(i);
+            A aVarB = b(i);
             boolean z2 = false;
             for (ItemInfo itemInfo : arrayListA) {
                 if (aVarB.a(1)) {
@@ -279,13 +279,13 @@ public class e implements e.a {
         arrayList3.addAll(arrayList);
         a(arrayList3);
         for (int i2 = 0; i2 < 3; i2++) {
-            ((a) this.i.getChildAt(i2)).f();
+            ((A) this.i.getChildAt(i2)).f();
         }
     }
 
     private void a(ArrayList<ItemInfo> arrayList) {
-        com.tsf.shell.f.i.b bVarA;
-        a aVar = (a) this.i.getChildAt(this.i.numChildren() - 1);
+        com.tsf.shell.f.i.B bVarA;
+        A aVar = (A) this.i.getChildAt(this.i.numChildren() - 1);
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo.itemType == 1) {
                 bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
@@ -298,14 +298,14 @@ public class e implements e.a {
         }
     }
 
-    public void a(int i, com.tsf.shell.f.i.b bVar) {
-        a aVarC = c(i);
+    public void a(int i, com.tsf.shell.f.i.B bVar) {
+        A aVarC = c(i);
         aVarC.a(bVar, false);
         aVarC.addChild(bVar);
     }
 
-    private void a(a aVar, ItemInfo itemInfo) {
-        com.tsf.shell.f.i.b bVarA;
+    private void a(A aVar, ItemInfo itemInfo) {
+        com.tsf.shell.f.i.B bVarA;
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
@@ -464,7 +464,7 @@ public class e implements e.a {
 
     public b a(i iVar) {
         b bVarA = null;
-        for (int i = 0; i < 3 && (bVarA = ((a) this.i.getChildAt(i)).a(iVar)) == null; i++) {
+        for (int i = 0; i < 3 && (bVarA = ((A) this.i.getChildAt(i)).a(iVar)) == null; i++) {
         }
         a.C0084a c0084aB = this.f.b();
         float f = bVarA.a + c0084aB.a + c0084aB.e;

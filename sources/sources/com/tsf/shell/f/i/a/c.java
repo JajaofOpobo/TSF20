@@ -20,7 +20,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     public float d;
     boolean e;
     boolean f;
-    private com.tsf.shell.f.i.b g;
+    private com.tsf.shell.f.i.B g;
     private float h;
     private float i;
     private float j;
@@ -33,7 +33,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     private a.C0127a q;
     private float[] r;
 
-    public c(com.tsf.shell.f.i.b bVar) {
+    public c(com.tsf.shell.f.i.B bVar) {
         super(bVar);
         this.l = false;
         this.m = false;
@@ -70,7 +70,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         float f2;
         LauncherShortcutStandardInfo launcherShortcutStandardInfo;
         super.c(motionEvent);
-        com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) this.c;
+        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.c;
         if (com.tsf.shell.manager.a.A.a()) {
             if (bVar == null || !bVar.O()) {
                 com.tsf.shell.manager.a.h.d.a(bVar);
@@ -79,10 +79,10 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 if (com.tsf.shell.manager.a.h.F() != -1) {
                     com.tsf.shell.manager.a.h.a().b();
                 }
-                if (bVar.A() != null && (bVar instanceof com.tsf.shell.f.i.c)) {
-                    com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) bVar;
+                if (bVar.A() != null && (bVar instanceof com.tsf.shell.f.i.C)) {
+                    com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
                     if (cVar.A().e()) {
-                        ArrayList<com.tsf.shell.f.i.c> arrayListI = cVar.A().i();
+                        ArrayList<com.tsf.shell.f.i.C> arrayListI = cVar.A().i();
                         arrayListI.remove(bVar);
                         cVar.rotation().z = 0.0f;
                         if (arrayListI.size() > 0) {
@@ -102,7 +102,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 com.censivn.C3DEngine.b.g.c.a(this.c);
                 com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
                 bVar.n_();
-                com.tsf.shell.f.i.a aVarA = bVar.A();
+                com.tsf.shell.f.i.A aVarA = bVar.A();
                 if (aVarA != null) {
                     aVarA.a(bVar);
                 }
@@ -121,10 +121,10 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                     f = bVar.position().x;
                     f2 = bVar.position().y;
                 }
-                if (motionEvent != null && (this.c instanceof com.tsf.shell.f.e.f) && !this.g.D()) {
-                    com.tsf.shell.f.e.f fVar = (com.tsf.shell.f.e.f) this.c;
+                if (motionEvent != null && (this.c instanceof com.tsf.shell.f.e.F) && !this.g.D()) {
+                    com.tsf.shell.f.e.F fVar = (com.tsf.shell.f.e.F) this.c;
                     if (fVar.o()) {
-                        com.tsf.shell.f.e.f fVarA = fVar.a((int) f, (int) f2);
+                        com.tsf.shell.f.e.F fVarA = fVar.a((int) f, (int) f2);
                         if (fVarA != null) {
                             fVar.f(fVarA);
                         } else {
@@ -177,7 +177,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r3 = 0
             super.d(r7)
             com.censivn.C3DEngine.b.f.i r0 = r6.c
-            com.tsf.shell.f.i.b r0 = (com.tsf.shell.f.i.b) r0
+            com.tsf.shell.f.i.B r0 = (com.tsf.shell.f.i.B) r0
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.a.h
             com.tsf.shell.manager.f.a r1 = r1.a()
             r1.d()
@@ -216,16 +216,16 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.a.h
             r1.d()
             com.censivn.C3DEngine.b.f.i r1 = r6.c
-            boolean r1 = r1 instanceof com.tsf.shell.f.e.f
+            boolean r1 = r1 instanceof com.tsf.shell.f.e.F
             if (r1 == 0) goto Lc6
-            com.tsf.shell.f.i.b r1 = r6.g
+            com.tsf.shell.f.i.B r1 = r6.g
             boolean r1 = r1.D()
             if (r1 != 0) goto Lc6
             com.censivn.C3DEngine.b.f.i r1 = r6.c
-            com.tsf.shell.f.e.f r1 = (com.tsf.shell.f.e.f) r1
+            com.tsf.shell.f.e.F r1 = (com.tsf.shell.f.e.F) r1
             boolean r4 = r6.n
             if (r4 != 0) goto L76
-            com.tsf.shell.f.e.f r4 = r1.n()
+            com.tsf.shell.f.e.F r4 = r1.n()
             if (r4 == 0) goto Lc6
         L76:
             boolean r4 = r1.o()
@@ -235,15 +235,15 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             int r5 = (int) r5
             r4 = r4[r2]
             int r4 = (int) r4
-            com.tsf.shell.f.e.f r4 = r1.a(r5, r4)
+            com.tsf.shell.f.e.F r4 = r1.a(r5, r4)
             boolean r5 = r1.h(r4)
             if (r5 == 0) goto Lbc
             com.tsf.shell.manager.f.d r2 = com.tsf.shell.manager.a.j
             r2.b(r0)
             r1.g(r4)
-            com.tsf.shell.f.i.b r1 = r6.g
+            com.tsf.shell.f.i.B r1 = r6.g
             r1.m_()
-            com.tsf.shell.f.i.b r1 = r6.g
+            com.tsf.shell.f.i.B r1 = r6.g
             r1.c()
             r1 = r3
         La3:
@@ -342,8 +342,8 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 a.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
                 return;
             } else {
-                if (this.n && (this.c instanceof com.tsf.shell.f.e.f)) {
-                    this.q.a((com.tsf.shell.f.e.f) this.c, motionEvent2);
+                if (this.n && (this.c instanceof com.tsf.shell.f.e.F)) {
+                    this.q.a((com.tsf.shell.f.e.F) this.c, motionEvent2);
                     return;
                 }
                 return;
@@ -372,14 +372,14 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r5.h = r0
             float r0 = r6.getY()
             r5.i = r0
-            com.tsf.shell.f.i.b r0 = r5.g
-            boolean r0 = r0 instanceof com.tsf.shell.f.i.c
+            com.tsf.shell.f.i.B r0 = r5.g
+            boolean r0 = r0 instanceof com.tsf.shell.f.i.C
             if (r0 == 0) goto L5a
-            com.tsf.shell.f.i.b r0 = r5.g
-            com.tsf.shell.f.i.c r0 = (com.tsf.shell.f.i.c) r0
-            com.tsf.shell.f.i.a r3 = r0.A()
+            com.tsf.shell.f.i.B r0 = r5.g
+            com.tsf.shell.f.i.C r0 = (com.tsf.shell.f.i.C) r0
+            com.tsf.shell.f.i.A r3 = r0.A()
             if (r3 == 0) goto L5a
-            com.tsf.shell.f.i.a r0 = r0.A()
+            com.tsf.shell.f.i.A r0 = r0.A()
             boolean r0 = r0.e()
         L2c:
             if (r0 != 0) goto L58
@@ -395,7 +395,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.censivn.C3DEngine.b.d.a r0 = r5.p
             r0.e(r6)
         L49:
-            com.tsf.shell.f.i.b r0 = r5.g
+            com.tsf.shell.f.i.B r0 = r5.g
             boolean r0 = r0.R()
             if (r0 != 0) goto L54
             com.tsf.shell.manager.action.f.a(r6)
@@ -438,8 +438,8 @@ public class c extends com.censivn.C3DEngine.b.d.a {
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void a(MotionEvent motionEvent) {
-        if (this.g instanceof com.tsf.shell.f.i.c) {
-            com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) this.g;
+        if (this.g instanceof com.tsf.shell.f.i.C) {
+            com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.g;
             if (cVar.A() != null && cVar.A().e()) {
                 cVar.ap();
                 return;

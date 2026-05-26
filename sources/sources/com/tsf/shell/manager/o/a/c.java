@@ -122,7 +122,7 @@ public class c {
         return c.get(i);
     }
 
-    public static Bitmap a(String str, int i, com.tsf.shell.manager.o.a aVar, a aVar2) {
+    public static Bitmap a(String str, int i, com.tsf.shell.manager.o.A aVar, a aVar2) {
         if (d == null) {
             d = new TextPaint();
             d.setColor(-1118482);

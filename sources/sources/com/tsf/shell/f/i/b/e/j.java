@@ -61,11 +61,11 @@ public class j extends b {
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void j() {
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void q_() {
     }
 
@@ -162,7 +162,7 @@ public class j extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         this.b.textures().clear();
         super.g();

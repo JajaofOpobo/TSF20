@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.c.a.d;
 import com.censivn.C3DEngine.c.a.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends d implements com.censivn.C3DEngine.c.b {
+public class c extends d implements com.censivn.C3DEngine.c.B {
     public float c;
     public Vector3 b = new Vector3(0.0f, 1.0f, 0.0f);
     public Vector3 d = new Vector3(0.0f, 0.0f, 0.0f);
@@ -14,7 +14,7 @@ public class c extends d implements com.censivn.C3DEngine.c.b {
         this.c = f;
     }
 
-    @Override // com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.B
     public void a() {
         this.b.normalize();
         Vector3 vector3 = new Vector3(this.a.f() / 2.0f, this.a.g() / 2.0f, this.a.h() / 2.0f);

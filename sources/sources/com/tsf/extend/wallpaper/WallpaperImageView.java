@@ -27,7 +27,7 @@ public class WallpaperImageView extends View {
     private long i;
     private float j;
     private GestureDetector k;
-    private a l;
+    private A l;
     private float m;
     private boolean n;
     private float o;
@@ -214,7 +214,7 @@ public class WallpaperImageView extends View {
         return this.a;
     }
 
-    public void setOnTapListener(a aVar) {
+    public void setOnTapListener(A aVar) {
         this.l = aVar;
     }
 

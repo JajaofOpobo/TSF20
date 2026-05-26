@@ -2,7 +2,7 @@ package com.tsf.shell.f.e.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class f implements Runnable {
-    com.tsf.shell.f.e.f b;
+    com.tsf.shell.f.e.F b;
 
     @Override // java.lang.Runnable
     public void run() {
@@ -12,6 +12,6 @@ public class f implements Runnable {
         }
     }
 
-    public void a(com.tsf.shell.f.e.f fVar) {
+    public void a(com.tsf.shell.f.e.F fVar) {
     }
 }

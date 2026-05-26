@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.c.a.e;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends d implements com.censivn.C3DEngine.c.b {
+public class a extends d implements com.censivn.C3DEngine.c.B {
     private float b;
     private float c;
     private int d = 0;
@@ -43,7 +43,7 @@ public class a extends d implements com.censivn.C3DEngine.c.b {
         this.e = i;
     }
 
-    @Override // com.censivn.C3DEngine.c.b
+    @Override // com.censivn.C3DEngine.c.B
     public void a() {
         if (b() != 0.0f) {
             if (this.e == 0) {

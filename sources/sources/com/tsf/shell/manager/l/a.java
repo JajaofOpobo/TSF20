@@ -41,7 +41,7 @@ public class a implements a.InterfaceC0025a {
         public void a(com.tsf.shell.f.i.b.e.b bVar) {
         }
 
-        public com.tsf.shell.manager.o.a a() {
+        public com.tsf.shell.manager.o.A a() {
             return com.tsf.shell.manager.o.b.a;
         }
     }
@@ -100,7 +100,7 @@ public class a implements a.InterfaceC0025a {
         return a(itemInfo, com.tsf.shell.manager.o.b.a, z);
     }
 
-    public static com.tsf.shell.f.i.b.e.b a(ItemInfo itemInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
+    public static com.tsf.shell.f.i.b.e.b a(ItemInfo itemInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
         switch (itemInfo.itemType) {
             case 2:
                 return new g((LauncherShortcutAppInfo) itemInfo, aVar, g.a((LauncherShortcut3DInfo) itemInfo), z);
@@ -111,7 +111,7 @@ public class a implements a.InterfaceC0025a {
         }
     }
 
-    private static com.tsf.shell.f.i.b.e.b b(ItemInfo itemInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
+    private static com.tsf.shell.f.i.b.e.b b(ItemInfo itemInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
         b.a aVarB;
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) itemInfo;
         int intExtra = launcherShortcut3DInfo.intent != null ? launcherShortcut3DInfo.intent.getIntExtra("action", 0) : 0;
@@ -169,7 +169,7 @@ public class a implements a.InterfaceC0025a {
         return bVarA2;
     }
 
-    public static com.tsf.shell.f.i.b.e.b a(int i, com.tsf.shell.manager.o.a aVar) {
+    public static com.tsf.shell.f.i.b.e.b a(int i, com.tsf.shell.manager.o.A aVar) {
         return a((ItemInfo) a(i, -1, 0, 0.0f, 0.0f, false), aVar, true);
     }
 
@@ -240,7 +240,7 @@ public class a implements a.InterfaceC0025a {
             }
         }
         map.clear();
-        for (com.tsf.shell.f.i.b bVar : com.tsf.shell.manager.a.w.d().a()) {
+        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.a.w.d().a()) {
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 ((com.tsf.shell.f.i.b.d.b) bVar).aQ();
             }

@@ -20,15 +20,15 @@ public class j {
         void a(String str);
     }
 
-    public void a(Context context, int i, String str, aq aqVar, a aVar) {
+    public void a(Context context, int i, String str, aq aqVar, A aVar) {
         a(context, com.tsf.extend.base.g.d.a(this.b, (String) null, context.getResources().getString(f.g.share_title), context.getResources().getString(aqVar != null ? f.g.theme_share_content : f.g.share_gp_theme_link), str, 2), i, aVar);
     }
 
-    public static void a(Context context, String str, String str2, a aVar) {
+    public static void a(Context context, String str, String str2, A aVar) {
         new com.tsf.extend.base.g.c(context, com.tsf.extend.base.g.d.a((String) null, (String) null, TextUtils.isEmpty(str) ? context.getResources().getString(f.g.share_on) : str, str2, (String) null, 0), aVar).a(context, false);
     }
 
-    private void a(Context context, Intent intent, int i, a aVar) {
+    private void a(Context context, Intent intent, int i, A aVar) {
         com.tsf.extend.base.g.d cVar;
         switch (i) {
             case 0:

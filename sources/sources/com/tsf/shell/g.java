@@ -6,7 +6,7 @@ import android.provider.BaseColumns;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g {
 
-    public interface c extends BaseColumns {
+    public interface C extends BaseColumns {
     }
 
     public static final class d {
@@ -34,7 +34,7 @@ public class g {
         }
     }
 
-    public static final class b implements c {
+    public static final class B implements C {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/application?notify=false");
 
         public static Uri a(long j, boolean z) {
@@ -42,7 +42,7 @@ public class g {
         }
     }
 
-    public static final class e implements c {
+    public static final class E implements C {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/favorites?notify=false");
 
         public static Uri a(long j, boolean z) {

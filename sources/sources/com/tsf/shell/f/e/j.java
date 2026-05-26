@@ -14,9 +14,9 @@ public class j extends com.censivn.C3DEngine.b.f.j {
     private com.censivn.C3DEngine.b.f.a.a d;
     private com.censivn.C3DEngine.b.f.a.b e;
     private TextureElement k;
-    private a l;
-    private a m;
-    private a n;
+    private A l;
+    private A m;
+    private A n;
     private int a = 50;
     private int b = 0;
     private int f = -1;
@@ -100,10 +100,10 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             }
         });
         this.k = x.b(b.d.dock_operation_border_point, com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n);
-        this.n = new a(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.i);
-        this.l = new a(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
+        this.n = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.i);
+        this.l = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
         this.l.rotation().z = 90.0f;
-        this.m = new a(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
+        this.m = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
         this.m.rotation().z = -90.0f;
     }
 
@@ -241,7 +241,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                     com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
                 }
                 this.f = i;
-                this.e = this.d.a(i);
+                this.e = this.d.a(I);
                 com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
@@ -333,13 +333,13 @@ public class j extends com.censivn.C3DEngine.b.f.j {
         this.d.alpha(255.0f);
     }
 
-    private class a extends com.censivn.C3DEngine.b.f.j {
+    private class A extends com.censivn.C3DEngine.b.f.j {
         private float b;
         private com.censivn.C3DEngine.b.f.k c;
         private float d;
         private boolean e = false;
 
-        public a(float f, float f2, boolean z, TextureElement textureElement, float f3) {
+        public A(float f, float f2, boolean z, TextureElement textureElement, float f3) {
             this.d = f3;
             this.c = new com.censivn.C3DEngine.b.f.k(f, f2, z);
             this.c.alpha(0.0f);

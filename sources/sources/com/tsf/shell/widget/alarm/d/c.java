@@ -4,7 +4,7 @@ import com.tsf.shell.widget.alarm.i;
 import java.lang.reflect.Field;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends b {
+public class c extends B {
     public byte[] j;
     public int a = -1;
     public String b = "-- --";

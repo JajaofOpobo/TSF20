@@ -20,7 +20,7 @@ public class a extends j {
     private j f;
     private boolean h;
     private k i;
-    private com.censivn.C3DEngine.c.a j;
+    private com.censivn.C3DEngine.c.A j;
     private com.censivn.C3DEngine.c.b.b k;
     private TextureElement l;
     private int m;
@@ -139,7 +139,7 @@ public class a extends j {
         this.i.rotation().y = -90.0f;
         this.i.rotation().z = -2.5f;
         this.i.useVBO(false);
-        this.j = new com.censivn.C3DEngine.c.a(this.i);
+        this.j = new com.censivn.C3DEngine.c.A(this.i);
         this.k = new com.censivn.C3DEngine.c.b.b(0.7f, 2.0f);
         this.j.a(this.k);
         this.k.c(-0.3f);

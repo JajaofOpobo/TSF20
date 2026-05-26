@@ -1,0 +1,59 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/a.java:63: error: invalid method declaration; return type required
+        private b() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/a.java:196: error: invalid method declaration; return type required
+        b() {
+        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/d.java:19: error: invalid method declaration; return type required
+        private b() {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/d.java:22: error: invalid method declaration; return type required
+        /* synthetic */ b(d dVar, AnonymousClass1 anonymousClass1) {
+                        ^
+4 errors
+
+[Incubating] Problems report is available at: file:///home/ubuntu/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/a.java:63: error: invalid method declaration; return type required
+          private b() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/a.java:196: error: invalid method declaration; return type required
+          b() {
+          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/d.java:19: error: invalid method declaration; return type required
+          private b() {
+                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/d.java:22: error: invalid method declaration; return type required
+          /* synthetic */ b(d dVar, AnonymousClass1 anonymousClass1) {
+                          ^
+  4 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
+15 actionable tasks: 1 executed, 14 up-to-date

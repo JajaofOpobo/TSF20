@@ -44,7 +44,7 @@ public class d {
     }
 
     public a a(String str) throws Throwable {
-        a aVar;
+        A aVar;
         long jB = b(str);
         if (jB == 0) {
             return null;
@@ -88,7 +88,7 @@ public class d {
                 int i2 = size;
                 if (it.hasNext()) {
                     Map.Entry<Long, String> next = it.next();
-                    this.m.put(next.getKey(), new a(i2, next.getValue()));
+                    this.m.put(next.getKey(), new A(i2, next.getValue()));
                     size = i2 - 1;
                 } else {
                     linkedHashMapD.clear();

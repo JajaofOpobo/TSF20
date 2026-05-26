@@ -33,7 +33,7 @@ public class c {
             this.a.add(eVar);
         }
         for (int i2 = 0; i2 < size2; i2++) {
-            a aVar = new a();
+            A aVar = new A();
             short propertyA = facesBufferedListFaces.getPropertyA(i2);
             short propertyB = facesBufferedListFaces.getPropertyB(i2);
             int propertyC = (int) facesBufferedListFaces.getPropertyC(i2);

@@ -19,7 +19,7 @@ public class o {
         }
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         if (!this.a.contains(aVar)) {
             this.a.add(aVar);
         }

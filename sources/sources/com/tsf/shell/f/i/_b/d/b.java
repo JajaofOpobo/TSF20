@@ -943,7 +943,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, co
             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
             localToGlobal(Number3d.TEMPNUMBER3D);
             localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-            this.aa = com.tsf.shell.f.c.a(this);
+            this.aa = com.tsf.shell.f.c.A(this);
             ((com.censivn.C3DEngine.b.f.j) parent()).replaceChild(this, this.aa);
             position().setAllFrom(Number3d.TEMPNUMBER3D);
             scale().setAllFrom(Number3d.TEMPNUMBER3D2);
@@ -957,7 +957,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, co
             case 0:
                 dVar = new com.censivn.C3DEngine.b.g.d();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.B) new a.b.c());
                 break;
             case 1:
                 dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.b.3
@@ -966,12 +966,12 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, co
                         b.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.B) new a.b.c());
                 break;
             default:
                 dVar = new com.censivn.C3DEngine.b.g.d();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.B) new a.b.c());
                 break;
         }
         dVar.l(1.0f);
@@ -1013,7 +1013,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, co
                     j jVar2 = b.l;
                     j.O.alpha(0.0f);
                     if (b.this.aa != null) {
-                        if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.a) {
+                        if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.A) {
                             com.tsf.shell.f.c.b.b bVarA = com.tsf.shell.manager.a.g.a.a(b.this.aa);
                             b.this.L.x = bVarA.a;
                             b.this.L.y = bVarA.b;
@@ -1077,7 +1077,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, co
                             b.l.F.removeFromParent();
                             if (b.this.aa != null) {
                                 ((com.censivn.C3DEngine.b.f.j) b.this.aa.parent()).replaceChild(b.this.aa, b.this);
-                                com.tsf.shell.f.c.a(b.this.aa);
+                                com.tsf.shell.f.c.A(b.this.aa);
                                 b.this.aa = null;
                             } else {
                                 com.tsf.shell.manager.a.h.n().a(b.this);

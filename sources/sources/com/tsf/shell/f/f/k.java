@@ -15,8 +15,8 @@ public class k extends g {
     @Override // com.tsf.shell.f.f.g
     public void O() {
         for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                ((com.tsf.shell.f.i.b) iVar).ae();
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                ((com.tsf.shell.f.i.B) iVar).ae();
             }
         }
         super.O();
@@ -46,8 +46,8 @@ public class k extends g {
             super.ab();
             m().g();
             for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-                if (iVar instanceof com.tsf.shell.f.i.b) {
-                    ((com.tsf.shell.f.i.b) iVar).q_();
+                if (iVar instanceof com.tsf.shell.f.i.B) {
+                    ((com.tsf.shell.f.i.B) iVar).q_();
                 }
             }
         }
@@ -58,8 +58,8 @@ public class k extends g {
         if (ad() && Y()) {
             super.ac();
             for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-                if (iVar instanceof com.tsf.shell.f.i.b) {
-                    ((com.tsf.shell.f.i.b) iVar).j();
+                if (iVar instanceof com.tsf.shell.f.i.B) {
+                    ((com.tsf.shell.f.i.B) iVar).j();
                 }
             }
         }

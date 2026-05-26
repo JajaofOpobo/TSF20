@@ -26,7 +26,7 @@ public class b implements e.a, a.InterfaceC0113a {
     private d f;
     private com.tsf.shell.f.i.b.e.b h;
     private b.a i;
-    private com.tsf.shell.f.i.a j;
+    private com.tsf.shell.f.i.A j;
     private float m;
     private Runnable r;
     private boolean g = false;
@@ -130,9 +130,9 @@ public class b implements e.a, a.InterfaceC0113a {
         this.o = this.o >= 0.0f ? this.o : 0.4f;
         this.k = com.tsf.shell.manager.b.e.i() == 0 ? 0 : 1;
         com.tsf.shell.manager.a.b.a(this);
-        this.j = new com.tsf.shell.f.i.a(this, this) { // from class: com.tsf.shell.manager.m.b.3
-            @Override // com.tsf.shell.f.i.a
-            public void a(com.tsf.shell.f.i.b bVar) {
+        this.j = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.manager.m.b.3
+            @Override // com.tsf.shell.f.i.A
+            public void a(com.tsf.shell.f.i.B bVar) {
             }
         };
         this.h = new h();
@@ -152,12 +152,12 @@ public class b implements e.a, a.InterfaceC0113a {
         jVar.addChild(this.c);
         this.f = new d(this) { // from class: com.tsf.shell.manager.m.b.5
             /* JADX WARN: Multi-variable type inference failed */
-            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.f
+            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
             public boolean a(f fVar, float f, float f2) {
                 return b.this.b((i) fVar);
             }
 
-            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.f
+            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
             public void a(f fVar) {
                 if (!b.this.g) {
                     com.tsf.shell.manager.a.h.b().c();
@@ -168,7 +168,7 @@ public class b implements e.a, a.InterfaceC0113a {
                 }
             }
 
-            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.f
+            @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
             public boolean b(f fVar) {
                 return fVar instanceof com.tsf.shell.f.i.b.e.b;
             }
@@ -199,7 +199,7 @@ public class b implements e.a, a.InterfaceC0113a {
         if (!this.l) {
             z = false;
         } else if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
-            Iterator<com.tsf.shell.f.i.c> it = ((com.tsf.shell.f.i.b.e.b) iVar).av().iterator();
+            Iterator<com.tsf.shell.f.i.C> it = ((com.tsf.shell.f.i.b.e.b) iVar).av().iterator();
             while (it.hasNext()) {
                 if (!(it.next() instanceof com.tsf.shell.f.i.b.e.b)) {
                     z = true;
@@ -258,7 +258,7 @@ public class b implements e.a, a.InterfaceC0113a {
         return this.e.children();
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, boolean z) {
+    public void a(com.tsf.shell.f.i.B bVar, boolean z) {
         bVar.a(this.j);
         if (z) {
             bVar.K().onUpdateContainer(-5);
@@ -391,7 +391,7 @@ public class b implements e.a, a.InterfaceC0113a {
         Iterator<ItemInfo> it = com.tsf.shell.utils.h.a(arrayList, str, ",", true).iterator();
         while (it.hasNext()) {
             com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(it.next(), true);
-            a((com.tsf.shell.f.i.b) bVarA, false);
+            a((com.tsf.shell.f.i.B) bVarA, false);
             this.e.addChild(bVarA);
         }
         this.e.a();
@@ -427,7 +427,7 @@ public class b implements e.a, a.InterfaceC0113a {
                 b.this.s = false;
                 final String str = "";
                 for (i iVar : b.this.e.children()) {
-                    str = iVar instanceof com.tsf.shell.f.i.b ? str + ((com.tsf.shell.f.i.b) iVar).K().id + "," : str;
+                    str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.b.2.1
                     @Override // java.lang.Runnable

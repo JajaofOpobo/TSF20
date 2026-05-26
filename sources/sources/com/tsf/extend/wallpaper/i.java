@@ -48,7 +48,7 @@ public class i {
         return a;
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         aa.a().b(aVar);
     }
 
@@ -92,7 +92,7 @@ public class i {
         return (int) f;
     }
 
-    public void a(final a aVar, final g gVar, final int i, final boolean z) {
+    public void a(final A aVar, final g gVar, final int i, final boolean z) {
         if (aVar != null) {
             a(new Runnable() { // from class: com.tsf.extend.wallpaper.i.1
                 @Override // java.lang.Runnable
@@ -107,13 +107,13 @@ public class i {
         }
     }
 
-    public void a(a aVar, final g gVar) {
+    public void a(A aVar, final g gVar) {
         final WeakReference weakReference = new WeakReference(aVar);
         if (gVar != null) {
             a(new Runnable() { // from class: com.tsf.extend.wallpaper.i.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    aa.a().a(gVar, new a() { // from class: com.tsf.extend.wallpaper.i.2.1
+                    aa.a().a(gVar, new A() { // from class: com.tsf.extend.wallpaper.i.2.1
                         @Override // com.tsf.extend.wallpaper.i.a
                         public void a(a.EnumC0069a enumC0069a, Object obj, a.b bVar) {
                             boolean z = bVar == a.b.suc;
@@ -124,7 +124,7 @@ public class i {
                                     file.delete();
                                 }
                             }
-                            a aVar2 = (a) weakReference.get();
+                            A aVar2 = (A) weakReference.get();
                             if (aVar2 != null) {
                                 aVar2.a(a.EnumC0069a.delete, strB, z ? a.b.suc : a.b.fail);
                             }

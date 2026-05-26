@@ -7,7 +7,7 @@ public class h extends b {
         this.k.visible(true);
     }
 
-    public h(com.tsf.shell.manager.o.a aVar) {
+    public h(com.tsf.shell.manager.o.A aVar) {
         super(null, aVar);
         this.k.visible(true);
     }

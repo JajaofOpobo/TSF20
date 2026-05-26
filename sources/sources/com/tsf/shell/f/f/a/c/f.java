@@ -45,7 +45,7 @@ public class f extends i {
 
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void b(com.censivn.C3DEngine.b.f.i iVar) {
-                com.tsf.shell.f.i.c cVar = iVar instanceof com.tsf.shell.f.i.c ? (com.tsf.shell.f.i.c) iVar : null;
+                com.tsf.shell.f.i.C cVar = iVar instanceof com.tsf.shell.f.i.C ? (com.tsf.shell.f.i.C) iVar : null;
                 if (cVar != null && cVar.K() != null) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
                     launcherShortcutAppInfo.isHide = false;
@@ -72,32 +72,32 @@ public class f extends i {
         this.h.a();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.b> arrayList) {
-        Iterator<com.tsf.shell.f.i.b> it = arrayList.iterator();
+    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
+        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
         while (it.hasNext()) {
             this.g.d(it.next());
         }
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void c(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
         this.b.b().c(cVar, motionEvent);
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void d(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
         this.b.b().d(cVar, motionEvent);
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
         this.b.b().a(cVar, motionEvent, motionEvent2);
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void e(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i.b.e.b)) {
-            this.a.c((com.tsf.shell.f.i.b) cVar);
+    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i.b.e.b)) {
+            this.a.c((com.tsf.shell.f.i.B) cVar);
             this.g.d(cVar);
             if (cVar.K() != null) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
@@ -113,7 +113,7 @@ public class f extends i {
             Number3d.TEMPNUMBER3D.reset();
             Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3d.TEMPNUMBER3D);
             this.g.removeChild(cVar);
-            com.tsf.shell.f.f.a.a aVarAp = this.a.ap();
+            com.tsf.shell.f.f.a.A aVarAp = this.a.ap();
             cVar.position().setAllFrom(aVarAp.globalToLocal(number3dLocalToGlobal));
             aVarAp.addChildAt(cVar, 0);
             this.a.a(cVar, aVarAp, 0);

@@ -28,12 +28,12 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
     private static ArrayList<Integer> C;
     private static ArrayList<Integer> D;
     private static ArrayList<Integer> E;
     private static ArrayList<Integer> F;
-    private static com.tsf.shell.f.e.h G;
+    private static com.tsf.shell.f.e.H G;
     public static b k;
     public static j l;
     public static d m;
@@ -54,7 +54,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
     private com.censivn.C3DEngine.b.f.j T;
     private int U;
     private com.censivn.C3DEngine.b.g.d V;
-    private com.tsf.shell.f.i.a W;
+    private com.tsf.shell.f.i.A W;
     private boolean X;
     private boolean Y;
     private boolean Z;
@@ -326,7 +326,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         be();
         bd();
         if (G == null) {
-            G = new com.tsf.shell.f.e.h();
+            G = new com.tsf.shell.f.e.H();
         }
         this.R = new k(this);
         this.o = new g(this);
@@ -418,17 +418,17 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
                 }
             }
         };
-        this.W = new com.tsf.shell.f.i.a(this, this) { // from class: com.tsf.shell.f.i.b.d.b.18
-            @Override // com.tsf.shell.f.i.a
+        this.W = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.i.b.d.b.18
+            @Override // com.tsf.shell.f.i.A
             public void h() {
             }
 
-            @Override // com.tsf.shell.f.i.a
+            @Override // com.tsf.shell.f.i.A
             public void a() {
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0030  */
-            @Override // com.tsf.shell.f.i.a
+            @Override // com.tsf.shell.f.i.A
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
                 To view partially-correct add '--show-bad-code' argument
@@ -466,15 +466,15 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
                 throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.i.b.d.b.AnonymousClass18.a(com.tsf.shell.f.i.b.e.b):boolean");
             }
 
-            @Override // com.tsf.shell.f.i.a
-            public void b(com.tsf.shell.f.i.b bVar) {
+            @Override // com.tsf.shell.f.i.A
+            public void b(com.tsf.shell.f.i.B bVar) {
                 if (bVar.visible() && bVar.alpha() != 0.0f) {
                     b.this.aQ();
                 }
             }
 
-            @Override // com.tsf.shell.f.i.a
-            public void c(com.tsf.shell.f.i.b bVar) {
+            @Override // com.tsf.shell.f.i.A
+            public void c(com.tsf.shell.f.i.B bVar) {
                 super.c(bVar);
                 if (b.this.K == b.a) {
                     b.this.b((com.tsf.shell.f.i.b.e.b) bVar);
@@ -565,7 +565,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         bVarA.a(this.W);
     }
 
-    public com.tsf.shell.f.i.a aE() {
+    public com.tsf.shell.f.i.A aE() {
         return this.W;
     }
 
@@ -769,9 +769,9 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(com.tsf.shell.f.i.b.e.b bVar, boolean z) {
-        ArrayList<com.tsf.shell.f.i.c> arrayListAv = bVar.av();
+        ArrayList<com.tsf.shell.f.i.C> arrayListAv = bVar.av();
         if (arrayListAv != null && arrayListAv.size() > 0) {
-            for (com.tsf.shell.f.i.c cVar : arrayListAv) {
+            for (com.tsf.shell.f.i.C cVar : arrayListAv) {
                 LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) cVar.K();
                 if (z && launcherShortcut3DInfo != null) {
                     launcherShortcut3DInfo.updateContainer(null, -1);
@@ -902,7 +902,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         return aH().alpha();
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
     public int m() {
         return 1;
     }
@@ -944,7 +944,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
             localToGlobal(Number3d.TEMPNUMBER3D);
             localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-            this.aa = com.tsf.shell.f.c.a(this);
+            this.aa = com.tsf.shell.f.c.A(this);
             ((com.censivn.C3DEngine.b.f.j) parent()).replaceChild(this, this.aa);
             position().setAllFrom(Number3d.TEMPNUMBER3D);
             scale().setAllFrom(Number3d.TEMPNUMBER3D2);
@@ -1014,7 +1014,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
                     j jVar2 = b.l;
                     j.O.alpha(0.0f);
                     if (b.this.aa != null) {
-                        if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.a) {
+                        if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.A) {
                             com.tsf.shell.f.c.b.b bVarA = com.tsf.shell.manager.a.g.a.a(b.this.aa);
                             b.this.L.x = bVarA.a;
                             b.this.L.y = bVarA.b;
@@ -1078,15 +1078,15 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
                             b.l.F.removeFromParent();
                             if (b.this.aa != null) {
                                 ((com.censivn.C3DEngine.b.f.j) b.this.aa.parent()).replaceChild(b.this.aa, b.this);
-                                com.tsf.shell.f.c.a(b.this.aa);
+                                com.tsf.shell.f.c.A(b.this.aa);
                                 b.this.aa = null;
                             } else {
                                 com.tsf.shell.manager.a.h.n().a(b.this);
                             }
                             if (b.this.N != null) {
-                                ArrayList<com.tsf.shell.f.i.c> arrayListAv = b.this.N.av();
+                                ArrayList<com.tsf.shell.f.i.C> arrayListAv = b.this.N.av();
                                 if (arrayListAv != null && arrayListAv.size() > 0) {
-                                    Iterator<com.tsf.shell.f.i.c> it = arrayListAv.iterator();
+                                    Iterator<com.tsf.shell.f.i.C> it = arrayListAv.iterator();
                                     while (it.hasNext()) {
                                         ((a) it.next().getMouseEventListener()).a();
                                     }
@@ -1580,7 +1580,7 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         this.o.a(i, i2, i3, i4);
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void ae() {
         if (this.Z) {
             bc();
@@ -1755,12 +1755,12 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         aJ();
     }
 
-    @Override // com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void c() {
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.c
+    @Override // com.tsf.shell.f.i.C
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(3);
         arrayList.add(2);
@@ -1773,8 +1773,8 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void a(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void a(com.tsf.shell.f.e.F fVar) {
         super.a(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.b) {
             this.J.a((com.censivn.C3DEngine.b.f.i) fVar);
@@ -1794,38 +1794,38 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void d(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void d(com.tsf.shell.f.e.F fVar) {
         super.d(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.b) {
             this.J.b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void c(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void c(com.tsf.shell.f.e.F fVar) {
         super.c(fVar);
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public boolean a(com.tsf.shell.f.e.f fVar, float f, float f2) {
-        return (fVar instanceof com.tsf.shell.f.i.c) && ((com.tsf.shell.f.i.c) fVar).au();
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+        return (fVar instanceof com.tsf.shell.f.i.C) && ((com.tsf.shell.f.i.C) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public boolean b(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public boolean b(com.tsf.shell.f.e.F fVar) {
         return fVar instanceof com.tsf.shell.f.i.b.e.b;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.b, com.tsf.shell.f.e.f
-    public void e(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    public void e(com.tsf.shell.f.e.F fVar) {
         super.c(fVar);
         this.J.b((com.censivn.C3DEngine.b.f.i) fVar);
         com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) fVar;
         ArrayList<com.tsf.shell.f.i.b.e.b> arrayList = new ArrayList<>();
         if (bVar.as()) {
-            ArrayList<com.tsf.shell.f.i.c> arrayListAw = bVar.aw();
+            ArrayList<com.tsf.shell.f.i.C> arrayListAw = bVar.aw();
             int size = arrayListAw.size();
             for (int i = 0; i < size; i++) {
                 arrayList.add((com.tsf.shell.f.i.b.e.b) arrayListAw.get((size - i) - 1));
@@ -1836,10 +1836,10 @@ public class b extends com.tsf.shell.f.i.c implements com.tsf.shell.f.e.a.a, com
         c(arrayList);
     }
 
-    @Override // com.tsf.shell.f.i.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList) this.o.children().clone()) {
-            if (iVar instanceof com.tsf.shell.f.i.b) {
+            if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) iVar;
                 bVar.B();
                 if (!this.ae) {

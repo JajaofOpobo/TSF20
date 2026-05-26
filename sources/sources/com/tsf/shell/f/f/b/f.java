@@ -9,7 +9,7 @@ import com.tsf.shell.f.f.j;
 public class f extends com.tsf.shell.f.f.l {
     private com.censivn.C3DEngine.b.f.j a;
     private com.censivn.C3DEngine.b.f.h b;
-    private com.censivn.C3DEngine.c.a c;
+    private com.censivn.C3DEngine.c.A c;
     private com.censivn.C3DEngine.c.b.a d;
     private int e;
     private com.censivn.C3DEngine.b.g.b.b f;
@@ -29,7 +29,7 @@ public class f extends com.tsf.shell.f.f.l {
             this.b.useVBO(false);
             this.b.doubleSidedEnabled(true);
             this.a.addChild(this.b);
-            this.c = new com.censivn.C3DEngine.c.a(this.b);
+            this.c = new com.censivn.C3DEngine.c.A(this.b);
             this.d = new com.censivn.C3DEngine.c.b.a(0.0f, 0.0f);
             this.d.a(1);
             this.d.b(0.5f);

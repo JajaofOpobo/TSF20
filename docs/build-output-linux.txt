@@ -1,0 +1,364 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a.java:14: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/a.java:15: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/a.java:7: error: class A is public, should be declared in a file named A.java
+public class A extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/b.java:8: error: class B is public, should be declared in a file named B.java
+public class B extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/a.java:4: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b.java:4: error: interface B is public, should be declared in a file named B.java
+public interface B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/c.java:9: error: class C is public, should be declared in a file named C.java
+public class C {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/b.java:6: error: interface B is public, should be declared in a file named B.java
+public interface B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/a.java:15: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/a.java:15: error: class A is public, should be declared in a file named A.java
+public final class A {
+             ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b.java:9: error: class B is public, should be declared in a file named B.java
+public class B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/b/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A<T extends Serializable> implements Serializable {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/c.java:12: error: class C is public, should be declared in a file named C.java
+public class C {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/d.java:4: error: interface D is public, should be declared in a file named D.java
+public interface D {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/a.java:6: error: interface A is public, should be declared in a file named A.java
+public interface A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/a.java:4: error: class A is public, should be declared in a file named A.java
+public class A extends com.tsf.extend.base.b.A<k> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/b.java:7: error: class B is public, should be declared in a file named B.java
+public class B extends aq {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/theme/c.java:6: error: class C is public, should be declared in a file named C.java
+public class C extends com.tsf.extend.base.b.A<a> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A extends f {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/a.java:7: error: interface A is public, should be declared in a file named A.java
+public interface A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/b.java:4: error: class B is public, should be declared in a file named B.java
+public class B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/c.java:13: error: class C is public, should be declared in a file named C.java
+public class C {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/d.java:10: error: class D is public, should be declared in a file named D.java
+public class D {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/e.java:15: error: class E is public, should be declared in a file named E.java
+public class E {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f.java:6: error: class F is public, should be declared in a file named F.java
+public class F implements Runnable {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/b.java:9: error: class B is public, should be declared in a file named B.java
+public class B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/c.java:8: error: class C is public, should be declared in a file named C.java
+public class C {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A extends com.censivn.C3DEngine.b.d.a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/b.java:17: error: class B is public, should be declared in a file named B.java
+public class B extends c implements a.InterfaceC0113a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/a.java:16: error: class A is public, should be declared in a file named A.java
+public class A extends d implements a.InterfaceC0113a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d.java:6: error: class D is public, should be declared in a file named D.java
+public class D {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/a/a.java:9: error: class A is public, should be declared in a file named A.java
+public abstract class A {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/b/a.java:13: error: class A is public, should be declared in a file named A.java
+public class A extends c<d> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/c/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A extends c<d> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/d/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/d/e/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A extends h {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/b.java:8: error: class B is public, should be declared in a file named B.java
+public class B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c.java:4: error: class C is public, should be declared in a file named C.java
+public class C {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/d.java:6: error: class D is public, should be declared in a file named D.java
+public class D<E> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/e.java:9: error: class E is public, should be declared in a file named E.java
+public class E extends com.censivn.C3DEngine.b.f.j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/f.java:4: error: interface F is public, should be declared in a file named F.java
+public interface F {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/h.java:19: error: class H is public, should be declared in a file named H.java
+public class H {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/i.java:6: error: class I is public, should be declared in a file named I.java
+public class I extends com.censivn.C3DEngine.b.f.j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a.java:7: error: class A is public, should be declared in a file named A.java
+public class A extends com.censivn.C3DEngine.b.f.j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a.java:12: error: class A is public, should be declared in a file named A.java
+public class A extends c {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/b.java:8: error: class B is public, should be declared in a file named B.java
+public class B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c.java:6: error: class C is public, should be declared in a file named C.java
+public class C extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d.java:13: error: class D is public, should be declared in a file named D.java
+public class D {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/b.java:6: error: class B is public, should be declared in a file named B.java
+public class B extends com.censivn.C3DEngine.b.f.h {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/b/a.java:15: error: class A is public, should be declared in a file named A.java
+public class A extends com.tsf.shell.f.f.l {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/c.java:7: error: class C is public, should be declared in a file named C.java
+public abstract class C<E> {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/d.java:6: error: class D is public, should be declared in a file named D.java
+public class D extends c<l> {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/d/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a.java:7: error: class A is public, should be declared in a file named A.java
+public class A extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a.java:14: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A extends c {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/b.java:11: error: class B is public, should be declared in a file named B.java
+public class B extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A implements com.censivn.C3DEngine.b.c.b.a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b.java:18: error: class B is public, should be declared in a file named B.java
+public class B extends j implements F {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c.java:17: error: class C is public, should be declared in a file named C.java
+public class C extends B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a.java:12: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a.java:17: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/a.java:11: error: class A is public, should be declared in a file named A.java
+public class A extends SQLiteOpenHelper {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a.java:10: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a.java:9: error: class A is public, should be declared in a file named A.java
+public class A extends com.tsf.shell.f.e._g.d {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/b.java:13: error: class B is public, should be declared in a file named B.java
+public class B extends com.tsf.shell.f.e._g.a.b {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c.java:15: error: class C is public, should be declared in a file named C.java
+public class C<E> extends com.tsf.shell.f.e._g.a.b {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/a.java:24: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a.java:16: error: class A is public, should be declared in a file named A.java
+public class A extends com.censivn.C3DEngine.b.e.f {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/a.java:8: error: class A is public, should be declared in a file named A.java
+public class A extends i {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/services/a.java:15: error: class A is public, should be declared in a file named A.java
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/a/a.java:17: error: class A is public, should be declared in a file named A.java
+public class A extends com.censivn.C3DEngine.b.f.j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/a.java:25: error: class A is public, should be declared in a file named A.java
+public class A extends VObject3dContainer implements c.b {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/b.java:9: error: class B is public, should be declared in a file named B.java
+public class B extends VRectangle {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/c.java:4: error: class C is public, should be declared in a file named C.java
+public final class C {
+             ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/d.java:16: error: class D is public, should be declared in a file named D.java
+public class D {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/d/a.java:4: error: class A is public, should be declared in a file named A.java
+public class A extends b {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/d/b.java:6: error: class B is public, should be declared in a file named B.java
+public abstract class B implements Serializable {
+                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/widget/cubeclock/a.java:6: error: class A is public, should be declared in a file named A.java
+public class A extends e {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
+    private b widget;
+            ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
+    public void setWidget(b bVar) {
+                          ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
+    public b getWidget() {
+           ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
+    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                       ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:42: error: cannot find symbol
+public final class Home extends ActivityGroup implements View.OnLongClickListener, com.tsf.shell.a, com.tsf.shell.manager.bind.c {
+                                                                                                ^
+  symbol:   class a
+  location: package com.tsf.shell
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:50: error: cannot find symbol
+    private com.tsf.shell.f.d n;
+                           ^
+  symbol:   class d
+  location: package com.tsf.shell.f
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:60: error: cannot find symbol
+    private HashMap<Integer, a.InterfaceC0025a> q = new HashMap<>();
+                              ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:451: error: cannot find symbol
+    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:460: error: cannot find symbol
+    public int b(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/Home.java:469: error: cannot find symbol
+    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a, int i, int i2) {
+                                 ^
+  symbol:   class InterfaceC0025a
+  location: class Home.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_h/a.java:11: error: cannot find symbol
+public class a implements a.InterfaceC0025a {
+                           ^
+  symbol:   class InterfaceC0025a
+  location: class a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_h/a.java:11: error: cyclic inheritance involving a
+public class a implements a.InterfaceC0025a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/d/b.java:30: error: cannot find symbol
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, com.tsf.shell.f.e._h.a, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+                                                                                                                             ^
+  symbol:   class InterfaceC0113a
+  location: package com.tsf.shell.f.i._a
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> java.lang.NullPointerException: Cannot invoke "javax.lang.model.element.TypeElement.getNestingKind()" because "typeElement" is null
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 34s
+15 actionable tasks: 15 executed

@@ -16,7 +16,7 @@ import com.tsf.shell.plugin.widget.FloatingWidgetPicker;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
+public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
     private static com.tsf.shell.f.i.b.c.b f;
     private static double p = 0.017453292519943295d;
     public int a;
@@ -55,13 +55,13 @@ public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void X() {
         super.X();
         l();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void a(float f2, float f3) {
         super.a(f2, f3);
         l();
@@ -131,13 +131,13 @@ public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void n_() {
         this.l = true;
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void m_() {
         super.m_();
         this.o = position().y;
@@ -145,24 +145,24 @@ public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
         this.l = false;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void c() {
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void q_() {
         super.q_();
         this.m = true;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void j() {
         super.j();
         this.m = false;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void g() {
         super.g();
         f.b(this);
@@ -272,7 +272,7 @@ public class a extends com.tsf.shell.f.i.b implements a.InterfaceC0025a {
         return true;
     }
 
-    @Override // com.tsf.shell.f.i.b, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.i
     public boolean calTouchCollision(float f2, float f3) {
         if (this.k.calTouchCollision(f2, f3)) {
             return true;

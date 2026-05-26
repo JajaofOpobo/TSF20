@@ -46,7 +46,7 @@ public class y extends t {
                     }, 1000L);
                     if (view.getTag() != null && (view.getTag() instanceof c)) {
                         PageActivity pageActivity = (PageActivity) y.this.b;
-                        c cVar = (c) view.getTag();
+                        C cVar = (C) view.getTag();
                         if ((pageActivity instanceof PersonalizationActivity) && ((PersonalizationActivity) pageActivity).e() != null) {
                             ((PersonalizationActivity) pageActivity).e().getCurrentPageCode();
                         }
@@ -160,7 +160,7 @@ public class y extends t {
         } else {
             decoratorViewPager = (DecoratorViewPager) view.findViewById(f.e.viewpager);
         }
-        a aVar = new a(nVar, i);
+        A aVar = new A(nVar, i);
         try {
             Field declaredField = ViewPager.class.getDeclaredField("U");
             declaredField.setAccessible(true);
@@ -171,7 +171,7 @@ public class y extends t {
         decoratorViewPager.setNestedpParent((ViewGroup) decoratorViewPager.getParent());
         decoratorViewPager.setAdapter(aVar);
         decoratorViewPager.setCurrentItem(b(nVar.b().size()));
-        decoratorViewPager.setOnPageChangeListener(new b(i, decoratorViewPager.getCurrentItem(), nVar.b()));
+        decoratorViewPager.setOnPageChangeListener(new B(i, decoratorViewPager.getCurrentItem(), nVar.b()));
         return view;
     }
 
@@ -184,14 +184,14 @@ public class y extends t {
         return i % i2;
     }
 
-    class a extends android.support.v4.view.ac {
+    class A extends android.support.v4.view.ac {
         private ArrayList<c> b = new ArrayList<>();
         private C0064a c = new C0064a();
         private n d;
         private List<c.a> e;
         private int f;
 
-        public a(n nVar, int i) {
+        public A(n nVar, int i) {
             this.d = nVar;
             this.e = this.d.b();
             this.f = i;
@@ -219,7 +219,7 @@ public class y extends t {
             ImageView imageView = (ImageView) LayoutInflater.from(y.this.b).inflate(f.C0052f.theme_list_item_album_entry_image, viewGroup, false);
             a(imageView, aVar.c);
             imageView.setOnClickListener(y.this.o);
-            c cVar = y.this.new c();
+            C cVar = y.this.new C();
             cVar.b = imageView;
             cVar.a = aVar;
             cVar.d = size;
@@ -237,7 +237,7 @@ public class y extends t {
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((ImageView) obj);
             if (((View) obj).getTag() != null) {
-                ((c) ((View) obj).getTag()).c = null;
+                ((C) ((View) obj).getTag()).c = null;
             }
             this.b.remove(((View) obj).getTag());
         }
@@ -249,7 +249,7 @@ public class y extends t {
 
             @Override // com.tsf.extend.base.d.a.InterfaceC0048a
             public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
-                for (c cVar : a.this.b) {
+                for (C cVar : a.this.b) {
                     if (((String) pair.first).equals(cVar.a.c)) {
                         cVar.b.setScaleType(ImageView.ScaleType.FIT_XY);
                         cVar.b.setImageBitmap((Bitmap) pair.second);
@@ -264,7 +264,7 @@ public class y extends t {
         }
 
         private void a(ImageView imageView, String str) {
-            c cVar = (c) imageView.getTag();
+            C cVar = (C) imageView.getTag();
             if (cVar != null && !str.equals(cVar.a.c)) {
                 imageView.setImageBitmap(null);
             }
@@ -288,12 +288,12 @@ public class y extends t {
         }
     }
 
-    class b implements ViewPager.e {
+    class B implements ViewPager.e {
         private int b;
         private int c;
         private List<c.a> d;
 
-        public b(int i, int i2, List<c.a> list) {
+        public B(int i, int i2, List<c.a> list) {
             this.b = i;
             this.c = i2;
             this.d = list;

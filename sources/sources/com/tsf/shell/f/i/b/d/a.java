@@ -38,7 +38,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
         this.b = iVar.getMouseEventListener();
         this.e = new a.C0127a() { // from class: com.tsf.shell.f.i.b.d.a.1
             @Override // com.tsf.shell.manager.d.a.C0127a
-            public boolean a(com.tsf.shell.f.e.f fVar) {
+            public boolean a(com.tsf.shell.f.e.F fVar) {
                 return fVar instanceof c.b;
             }
         };
@@ -71,14 +71,14 @@ public class a extends com.censivn.C3DEngine.b.d.a {
                 this.a.aO();
                 this.a.aF().c(true);
                 if (bVar.A().e()) {
-                    ArrayList<com.tsf.shell.f.i.c> arrayListI = bVar.A().i();
+                    ArrayList<com.tsf.shell.f.i.C> arrayListI = bVar.A().i();
                     bVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     for (int i = 0; i < size; i++) {
                         com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) arrayListI.get(i);
                         if (bVar2 != bVar) {
                             bVar2.g(1.0f);
-                            bVar.a((com.tsf.shell.f.i.c) bVar2);
+                            bVar.a((com.tsf.shell.f.i.C) bVar2);
                             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                             com.censivn.C3DEngine.b.g.c.a(bVar2);
                             dVar.l(1.0f);
@@ -107,7 +107,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
                 this.c.setAnimationObjectState(true);
                 if (this.a.aC()) {
                     if (!bVar.as()) {
-                        com.tsf.shell.manager.a.h.t().a((com.tsf.shell.f.i.b) bVar, false, l[0], l[1]);
+                        com.tsf.shell.manager.a.h.t().a((com.tsf.shell.f.i.B) bVar, false, l[0], l[1]);
                         return;
                     }
                     return;
@@ -154,8 +154,8 @@ public class a extends com.censivn.C3DEngine.b.d.a {
             if (!this.k) {
                 if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
                     this.k = true;
-                    if (this.c instanceof com.tsf.shell.f.i.b) {
-                        ((com.tsf.shell.f.i.b) this.c).ab();
+                    if (this.c instanceof com.tsf.shell.f.i.B) {
+                        ((com.tsf.shell.f.i.B) this.c).ab();
                         return;
                     }
                     return;
@@ -164,7 +164,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
             }
             final float[] fArrA = x.a(motionEvent2, l);
             if (!this.d) {
-                this.e.a((com.tsf.shell.f.e.f) this.c, motionEvent2);
+                this.e.a((com.tsf.shell.f.e.F) this.c, motionEvent2);
             }
             this.n = motionEvent2.getX();
             this.o = motionEvent2.getY();
@@ -247,8 +247,8 @@ public class a extends com.censivn.C3DEngine.b.d.a {
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void a(MotionEvent motionEvent) {
-        if (this.c instanceof com.tsf.shell.f.i.c) {
-            com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) this.c;
+        if (this.c instanceof com.tsf.shell.f.i.C) {
+            com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.c;
             if (cVar.A().e()) {
                 cVar.ap();
                 return;

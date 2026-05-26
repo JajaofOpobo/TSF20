@@ -53,7 +53,7 @@ public class c extends f {
         com.tsf.shell.manager.a.h = new n();
         com.tsf.shell.manager.a.p = new com.tsf.shell.f.e.e.c();
         com.tsf.shell.manager.a.q = new com.tsf.shell.manager.n.a();
-        com.tsf.shell.manager.a.g = new com.tsf.shell.f.c.a();
+        com.tsf.shell.manager.a.g = new com.tsf.shell.f.c.A();
         com.tsf.shell.manager.a.x = new com.tsf.shell.manager.l.b();
         com.tsf.shell.manager.a.i = new com.tsf.shell.manager.r.c.e();
         com.tsf.shell.manager.a.k = new com.tsf.shell.manager.d.a();
@@ -78,7 +78,7 @@ public class c extends f {
         Home.q();
         com.tsf.shell.f.e.b.e.a();
         com.tsf.shell.manager.a.B = new com.tsf.shell.preference.a.d();
-        com.tsf.shell.manager.a.v = new com.tsf.shell.f.d.a();
+        com.tsf.shell.manager.a.v = new com.tsf.shell.f.d.A();
         com.tsf.shell.f.i.b.d.b.k();
         new com.tsf.shell.manager.o.d();
         com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.a(new j()));

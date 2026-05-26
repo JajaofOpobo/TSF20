@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends i implements a.InterfaceC0090a {
-    private com.tsf.shell.f.d.e.a b;
+    private com.tsf.shell.f.d.e.A b;
 
     public d(int i, boolean z) {
         super(i, 0, z);
@@ -77,7 +77,7 @@ public class d extends i implements a.InterfaceC0090a {
         for (int i = 0; i < arrayList.size(); i++) {
             com.censivn.C3DEngine.b.f.i iVar2 = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar2);
-            if (iVar2 instanceof com.tsf.shell.f.i.b) {
+            if (iVar2 instanceof com.tsf.shell.f.i.B) {
                 Number3d number3d = h.E.get(i);
                 if (z) {
                     com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
@@ -130,7 +130,7 @@ public class d extends i implements a.InterfaceC0090a {
 
     public com.censivn.C3DEngine.b.f.i o() {
         if (this.b == null) {
-            this.b = new com.tsf.shell.f.d.e.a(this) { // from class: com.tsf.shell.f.f.b.a.d.2
+            this.b = new com.tsf.shell.f.d.e.A(this) { // from class: com.tsf.shell.f.f.b.a.d.2
                 @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();

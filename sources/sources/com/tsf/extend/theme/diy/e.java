@@ -56,7 +56,7 @@ public class e {
     public interface a {
         void a(float f);
 
-        void a(com.tsf.extend.theme.b bVar);
+        void a(com.tsf.extend.theme.B bVar);
 
         boolean a();
 
@@ -66,7 +66,7 @@ public class e {
     public interface c {
         void a(float f);
 
-        void a(com.tsf.extend.theme.b bVar);
+        void a(com.tsf.extend.theme.B bVar);
 
         void a(boolean z);
 
@@ -614,7 +614,7 @@ public class e {
             return null;
         }
         if (new File(str).getName().startsWith("CMT_")) {
-            aVar = new com.tsf.extend.theme.b();
+            aVar = new com.tsf.extend.theme.B();
         } else {
             aVar = new com.tsf.extend.theme.diy.a();
         }
@@ -626,9 +626,9 @@ public class e {
             aVar.i(kVar.F());
             aVar.h(kVar.p());
             aVar.a(kVar.h());
-            if (aVar instanceof com.tsf.extend.theme.b) {
-                ((com.tsf.extend.theme.b) aVar).a(true);
-                ((com.tsf.extend.theme.b) aVar).b(kVar.g());
+            if (aVar instanceof com.tsf.extend.theme.B) {
+                ((com.tsf.extend.theme.B) aVar).a(true);
+                ((com.tsf.extend.theme.B) aVar).b(kVar.g());
             }
         } else {
             aVar.i("YOU");

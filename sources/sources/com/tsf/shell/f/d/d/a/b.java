@@ -28,7 +28,7 @@ public class b implements a {
     }
 
     @Override // com.tsf.shell.f.d.d.a.a
-    public void a(com.tsf.shell.f.i.b bVar) {
+    public void a(com.tsf.shell.f.i.B bVar) {
     }
 
     @Override // com.tsf.shell.f.d.d.a.a

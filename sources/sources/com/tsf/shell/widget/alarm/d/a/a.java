@@ -51,7 +51,7 @@ public class a {
         return cVar;
     }
 
-    public static ArrayList<com.tsf.shell.widget.alarm.d.a> a(String str) {
+    public static ArrayList<com.tsf.shell.widget.alarm.d.A> a(String str) {
         try {
             str = URLEncoder.encode(str, "utf-8");
         } catch (UnsupportedEncodingException e) {

@@ -15,7 +15,7 @@ public class e {
     private c e = new c(this);
     private com.tsf.shell.f.f.a.d.a f = new com.tsf.shell.f.f.a.d.a(this);
     private d h = new d(this);
-    private com.tsf.shell.f.f.a.b i = new com.tsf.shell.f.f.a.b(this);
+    private com.tsf.shell.f.f.a.B i = new com.tsf.shell.f.f.a.B(this);
 
     public c a() {
         return this.e;
@@ -29,7 +29,7 @@ public class e {
         return this.h;
     }
 
-    public com.tsf.shell.f.f.a.b d() {
+    public com.tsf.shell.f.f.a.B d() {
         return this.i;
     }
 

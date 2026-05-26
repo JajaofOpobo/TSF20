@@ -4,7 +4,7 @@ import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.f {
+public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     public d() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -14,22 +14,22 @@ public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.f {
         a(arrayList, arrayList2);
     }
 
-    public boolean a(com.tsf.shell.f.e.f fVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public int m() {
         return 1;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public com.tsf.shell.f.e.f n() {
+    @Override // com.tsf.shell.f.e.F
+    public com.tsf.shell.f.e.F n() {
         return null;
     }
 
     @Override // com.tsf.shell.f.e.f.b
-    public void a(final com.tsf.shell.f.i.c cVar) {
+    public void a(final com.tsf.shell.f.i.C cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.b.d.1
             @Override // java.lang.Runnable
             public void run() {
@@ -47,46 +47,46 @@ public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.f {
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public boolean o() {
         return false;
     }
 
-    public void a(com.tsf.shell.f.e.f fVar) {
+    public void a(com.tsf.shell.f.e.F fVar) {
     }
 
-    public void d(com.tsf.shell.f.e.f fVar) {
+    public void d(com.tsf.shell.f.e.F fVar) {
     }
 
-    public void c(com.tsf.shell.f.e.f fVar) {
+    public void c(com.tsf.shell.f.e.F fVar) {
     }
 
-    public boolean b(com.tsf.shell.f.e.f fVar) {
+    public boolean b(com.tsf.shell.f.e.F fVar) {
         return true;
     }
 
-    public void e(com.tsf.shell.f.e.f fVar) {
+    public void e(com.tsf.shell.f.e.F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void f(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void f(com.tsf.shell.f.e.F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public boolean h(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public boolean h(com.tsf.shell.f.e.F fVar) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public void g(com.tsf.shell.f.e.f fVar) {
+    @Override // com.tsf.shell.f.e.F
+    public void g(com.tsf.shell.f.e.F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.f
+    @Override // com.tsf.shell.f.e.F
     public void p() {
     }
 
-    @Override // com.tsf.shell.f.e.f
-    public com.tsf.shell.f.e.f a(int i, int i2) {
+    @Override // com.tsf.shell.f.e.F
+    public com.tsf.shell.f.e.F a(int i, int i2) {
         return null;
     }
 }

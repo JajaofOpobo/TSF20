@@ -79,7 +79,7 @@ public class d {
                     int size = bVar.children().size();
                     for (int i2 = 0; i2 < size; i2++) {
                         com.censivn.C3DEngine.b.f.i iVar = bVar.children().get(i2);
-                        if (!(iVar instanceof com.tsf.shell.f.i.b)) {
+                        if (!(iVar instanceof com.tsf.shell.f.i.B)) {
                             iVar.dispatchDraw();
                         }
                     }

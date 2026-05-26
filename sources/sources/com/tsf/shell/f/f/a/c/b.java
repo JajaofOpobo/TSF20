@@ -71,7 +71,7 @@ public class b extends c.a {
 
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(com.censivn.C3DEngine.b.f.i iVar) {
-                b.this.c.c((com.tsf.shell.f.i.b) iVar);
+                b.this.c.c((com.tsf.shell.f.i.B) iVar);
                 b.this.b.a(iVar);
             }
 
@@ -245,9 +245,9 @@ public class b extends c.a {
                     bVar.an();
                     Number3d number3dLocalToGlobal = bVar.localToGlobal(new Number3d());
                     this.a.l().removeChild(bVar);
-                    int iB = this.c.b((com.tsf.shell.f.i.b) bVar);
+                    int iB = this.c.b((com.tsf.shell.f.i.B) bVar);
                     int i = iB % com.tsf.shell.f.f.a.h.m;
-                    com.tsf.shell.f.f.a.a aVarE = this.c.e(iB);
+                    com.tsf.shell.f.f.a.A aVarE = this.c.e(iB);
                     bVar.position().setAllFrom(aVarE.globalToLocal(number3dLocalToGlobal));
                     aVarE.addChildAt(bVar, i);
                     this.c.a(bVar, aVarE, i);
@@ -303,8 +303,8 @@ public class b extends c.a {
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i.b.e.b)) {
+    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i.b.e.b)) {
             cVar.rotation().setAll(0.0f, 0.0f, 0.0f);
             cVar.ak();
             cVar.am();
@@ -329,14 +329,14 @@ public class b extends c.a {
             j();
             return;
         }
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.a) && (cVar instanceof com.tsf.shell.f.i.b.d.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i.b.d.b)) {
             ((com.tsf.shell.f.i.b.d.b) cVar).aR();
         }
     }
 
-    public void b(com.tsf.shell.f.i.c cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
         com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) cVar.parent();
-        ArrayList<com.tsf.shell.f.i.c> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.i.C> arrayList = new ArrayList<>();
         if (jVar == this.a.l()) {
             if (this.e == 0) {
                 Iterator<com.censivn.C3DEngine.b.f.i> it = jVar.children().iterator();
@@ -352,7 +352,7 @@ public class b extends c.a {
                     arrayList.add((com.tsf.shell.f.i.b.e.b) it2.next());
                 }
             }
-            for (com.tsf.shell.f.i.c cVar2 : arrayList) {
+            for (com.tsf.shell.f.i.C cVar2 : arrayList) {
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.0f);
                 dVar.m(1.0f);

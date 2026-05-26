@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class r extends com.censivn.C3DEngine.b.f.j {
-    private a d;
+    private A d;
     private com.censivn.C3DEngine.b.f.k e;
     private TextureElement a = new TextureElement(0, false);
     private TextureElement b = new TextureElement(0, false);
@@ -38,7 +38,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
             if (parent() == null) {
                 com.tsf.shell.manager.a.j.a(this);
             }
-            b(i);
+            b(I);
         }
     }
 
@@ -82,9 +82,9 @@ public class r extends com.censivn.C3DEngine.b.f.j {
     }
 
     private a b() {
-        a aVarRemove;
+        A aVarRemove;
         if (this.c.isEmpty()) {
-            aVarRemove = new a();
+            aVarRemove = new A();
         } else {
             aVarRemove = this.c.remove(0);
         }
@@ -94,13 +94,13 @@ public class r extends com.censivn.C3DEngine.b.f.j {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(a aVar) {
+    public void a(A aVar) {
         aVar.removeFromParent();
         aVar.textures().clear();
         this.c.add(aVar);
     }
 
-    private class a extends com.censivn.C3DEngine.b.f.a.a {
+    private class A extends com.censivn.C3DEngine.b.f.a.a {
         private com.censivn.C3DEngine.b.f.a.b c;
         private com.censivn.C3DEngine.b.f.a.b d;
         private float e;
@@ -108,7 +108,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
         private int g;
         private int h;
 
-        public a() {
+        public A() {
             super(2, 80, VEasing.Linear.easeNone, 160);
             this.g = 0;
             this.c = a(0);
@@ -145,7 +145,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
             alpha(0.0f);
             c(i2);
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-            switch (i) {
+            switch (I) {
                 case 0:
                     position().x = 0.0f;
                     break;
@@ -174,7 +174,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
                     r.this.a(a.this);
                 }
             };
-            switch (i) {
+            switch (I) {
                 case 0:
                     dVar.f(0.0f);
                     break;

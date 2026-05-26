@@ -92,8 +92,8 @@ public abstract class b implements A.InterfaceC0090a {
                 break;
             }
             i iVar2 = arrayList.get(i2);
-            if (iVar2 instanceof com.tsf.shell.f.i.b) {
-                com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) iVar2;
+            if (iVar2 instanceof com.tsf.shell.f.i.B) {
+                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar2;
                 d dVar2 = new d();
                 if (b()) {
                     if (iVar2 == iVar) {
@@ -156,8 +156,8 @@ public abstract class b implements A.InterfaceC0090a {
                 break;
             }
             i iVar = arrayList.get(i2);
-            if (iVar instanceof com.tsf.shell.f.i.b) {
-                com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) iVar;
+            if (iVar instanceof com.tsf.shell.f.i.B) {
+                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
                 if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
                     com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
                     if (com.censivn.C3DEngine.b.b.a.O) {

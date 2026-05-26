@@ -9,14 +9,14 @@ import com.tsf.shell.manager.action.f;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.censivn.C3DEngine.b.d.a {
     private boolean a;
-    private n.c b;
+    private n.C b;
 
     public a(j jVar) {
         super(jVar);
         this.a = true;
     }
 
-    public void a(n.c cVar) {
+    public void a(n.C cVar) {
         this.b = cVar;
     }
 

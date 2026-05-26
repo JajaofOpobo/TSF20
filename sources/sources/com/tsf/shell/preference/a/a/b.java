@@ -12,12 +12,12 @@ public class b extends i {
     private boolean c = false;
     private com.censivn.C3DEngine.b.e.e d;
     private com.censivn.C3DEngine.b.e.a e;
-    private com.tsf.shell.preference.a.a f;
+    private com.tsf.shell.preference.a.A f;
     private float g;
 
     public b() {
         a(b.i.text_screen_scale);
-        this.f = new com.tsf.shell.preference.a.a();
+        this.f = new com.tsf.shell.preference.a.A();
         b(this.f);
         this.e = new com.censivn.C3DEngine.b.e.a();
         this.e.h(b.i.text_default_scale);

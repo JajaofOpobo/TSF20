@@ -14,11 +14,11 @@ public class c {
     private ArrayList<a> a;
     private ArrayList<a> b;
     private ArrayList<a> c;
-    private a d;
+    private A d;
     private Number3d e;
     private Number3d f;
     private boolean g = false;
-    private a h;
+    private A h;
 
     public void a() {
         this.g = e.m();
@@ -40,14 +40,14 @@ public class c {
         }
         Iterator<Integer> it = com.tsf.shell.utils.h.a(e.n(), ",", false).iterator();
         while (it.hasNext()) {
-            a aVarB = b(it.next().intValue());
+            A aVarB = b(it.next().intValue());
             if (aVarB != null) {
                 aVarB.a(true);
                 this.b.add(aVarB);
             }
         }
         if (this.b.size() == 0) {
-            a aVar = this.a.get(0);
+            A aVar = this.a.get(0);
             aVar.a(true);
             this.b.add(aVar);
         }
@@ -71,7 +71,7 @@ public class c {
             f();
             this.a.remove(this.h);
             this.b.clear();
-            for (a aVar : this.a) {
+            for (A aVar : this.a) {
                 aVar.a(true);
                 this.b.add(aVar);
             }
@@ -98,7 +98,7 @@ public class c {
         return this.g;
     }
 
-    private void b(a aVar) {
+    private void b(A aVar) {
         if (!this.b.contains(aVar)) {
             aVar.a(true);
             this.b.add(aVar);
@@ -116,7 +116,7 @@ public class c {
     }
 
     private a b(int i) {
-        for (a aVar : this.a) {
+        for (A aVar : this.a) {
             if (aVar.c() == i) {
                 return aVar;
             }
@@ -124,7 +124,7 @@ public class c {
         return null;
     }
 
-    public boolean a(a aVar) {
+    public boolean a(A aVar) {
         if (!this.g) {
             if (aVar == this.d) {
                 return false;
@@ -141,7 +141,7 @@ public class c {
     }
 
     public a c() {
-        a aVar = this.d;
+        A aVar = this.d;
         if (this.g) {
             aVar.b(true);
             i();
@@ -151,13 +151,13 @@ public class c {
 
     private void i() {
         this.c.clear();
-        for (a aVar : this.b) {
+        for (A aVar : this.b) {
             if (!aVar.d()) {
                 this.c.add(aVar);
             }
         }
         if (this.c.size() == 0) {
-            for (a aVar2 : this.b) {
+            for (A aVar2 : this.b) {
                 aVar2.b(false);
                 this.c.add(aVar2);
             }
@@ -166,12 +166,12 @@ public class c {
     }
 
     public a a(com.tsf.shell.f.i.b.e.b bVar, Number3d number3d, Number3d number3d2) {
-        a aVarC = c();
+        A aVarC = c();
         aVarC.a(bVar.k, number3d, number3d2, null);
         return aVarC;
     }
 
-    public a a(com.tsf.shell.f.i.b.e.b bVar, a aVar) {
+    public a a(com.tsf.shell.f.i.b.e.b bVar, A aVar) {
         this.e.reset();
         this.f.reset();
         aVar.a(bVar.k, bVar.localToGlobal(this.e), bVar.localRotationToGlobal(this.f), null);
@@ -183,7 +183,7 @@ public class c {
         this.f.reset();
         Number3d number3dLocalToGlobal = bVar.localToGlobal(this.e);
         Number3d number3dLocalRotationToGlobal = bVar.localRotationToGlobal(this.f);
-        a aVarC = c();
+        A aVarC = c();
         aVarC.a(bVar.k, number3dLocalToGlobal, number3dLocalRotationToGlobal, null);
         return aVarC;
     }
@@ -206,7 +206,7 @@ public class c {
             int size = this.b.size();
             int i = 0;
             while (i < size) {
-                a aVar = this.b.get(i);
+                A aVar = this.b.get(i);
                 if (i == size - 1) {
                     str2 = str3 + aVar.c();
                 } else {

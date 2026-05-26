@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.d.a.a {
+public class a extends com.tsf.shell.f.d.a.A {
     private static com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.b.a.b();
     private com.tsf.shell.f.d.a.b b;
 
@@ -15,7 +15,7 @@ public class a extends com.tsf.shell.f.d.a.a {
         a = com.tsf.shell.manager.o.b.a.b();
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable) {
         a((com.censivn.C3DEngine.b.f.a.a) iVar, runnable);
     }
@@ -222,7 +222,7 @@ public class a extends com.tsf.shell.f.d.a.a {
         aVar.updatePointsVBO();
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public i e() {
         if (this.b == null) {
             this.b = new com.tsf.shell.f.d.a.b(this, true);
@@ -230,7 +230,7 @@ public class a extends com.tsf.shell.f.d.a.a {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(k kVar, Runnable runnable) {
         b(kVar, runnable);
     }

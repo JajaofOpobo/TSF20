@@ -14,7 +14,7 @@ public class a implements b {
     public int a;
     public int b;
     private n c;
-    private com.tsf.shell.f.f.d.a d;
+    private com.tsf.shell.f.f.d.A d;
     private j e;
     private int f;
     private int g;
@@ -252,7 +252,7 @@ public class a implements b {
     }
 
     @Override // com.tsf.shell.f.f.d.a.b
-    public void a(com.tsf.shell.f.f.d.a aVar) {
+    public void a(com.tsf.shell.f.f.d.A aVar) {
         this.d = aVar;
     }
 

@@ -14,11 +14,11 @@ import com.tsf.shell.utils.x;
 public class c implements a.InterfaceC0025a {
     private int a;
     private int b;
-    private com.tsf.shell.a c;
+    private com.tsf.shell.A c;
     private boolean d;
     private Context e;
 
-    public c(Context context, com.tsf.shell.a aVar, boolean z) {
+    public c(Context context, com.tsf.shell.A aVar, boolean z) {
         this.c = aVar;
         this.d = z;
         this.e = context;

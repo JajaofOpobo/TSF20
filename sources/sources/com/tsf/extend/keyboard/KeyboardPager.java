@@ -129,7 +129,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
         if (view.getTag() instanceof com.tsf.extend.keyboard.b) {
             com.tsf.extend.keyboard.b bVar = (com.tsf.extend.keyboard.b) view.getTag();
-            com.tsf.extend.base.d dVarA = h.a();
+            com.tsf.extend.base.D dVarA = h.a();
             if (dVarA != null) {
                 dVarA.c(bVar.a() + "");
             }
@@ -416,7 +416,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    private class d implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class d implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
         public d(a.b bVar) {
@@ -428,7 +428,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.keyboard.KeyboardPager.d.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -450,7 +450,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, int i, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.keyboard.KeyboardPager.d.2
                 @Override // java.lang.Runnable
                 public void run() {

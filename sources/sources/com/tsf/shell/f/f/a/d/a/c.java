@@ -7,7 +7,7 @@ import java.util.Comparator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends com.tsf.shell.f.f.f {
     protected int a;
-    protected Comparator<com.tsf.shell.f.i.b> b;
+    protected Comparator<com.tsf.shell.f.i.B> b;
     protected Comparator<i> c;
     protected String d;
 
@@ -16,7 +16,7 @@ public class c extends com.tsf.shell.f.f.f {
         this.d = x.c(i2);
     }
 
-    public Comparator<? super com.tsf.shell.f.i.b> a() {
+    public Comparator<? super com.tsf.shell.f.i.B> a() {
         return this.b;
     }
 

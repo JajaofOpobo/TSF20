@@ -13,7 +13,7 @@ public class f {
     private c b;
     private j d;
     private ArrayList<a> e;
-    private com.tsf.shell.f.e.d<a> f;
+    private com.tsf.shell.f.e.D<a> f;
     private boolean g = false;
     private int j = -1;
     private int k = -1;
@@ -89,8 +89,8 @@ public class f {
         this.c.addChild(this.h);
         this.c.addChild(this.d);
         this.e = new ArrayList<>();
-        this.f = new com.tsf.shell.f.e.d<a>() { // from class: com.tsf.shell.f.f.a.a.f.3
-            @Override // com.tsf.shell.f.e.d
+        this.f = new com.tsf.shell.f.e.D<a>() { // from class: com.tsf.shell.f.f.a.a.f.3
+            @Override // com.tsf.shell.f.e.D
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public a b() {
                 return f.this.new a();

@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class l extends com.tsf.shell.f.f.c<k> {
+public class l extends com.tsf.shell.f.f.C<k> {
     public l() {
         ArrayList<com.tsf.shell.f.f.f> arrayList = new ArrayList<>();
         arrayList.add(new c(10, false));
@@ -27,27 +27,27 @@ public class l extends com.tsf.shell.f.f.c<k> {
         }
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void f() {
         super.f();
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void a(k kVar) {
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
         com.tsf.shell.manager.b.e.j(z);
         com.tsf.shell.manager.b.e.h(str);
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public boolean b() {
         return com.tsf.shell.manager.b.e.G();
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public String c() {
         return com.tsf.shell.manager.b.e.H();
     }

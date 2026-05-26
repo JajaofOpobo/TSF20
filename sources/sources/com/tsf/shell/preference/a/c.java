@@ -12,7 +12,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {
     private ArrayList<b> a = new ArrayList<>();
-    private a b;
+    private A b;
 
     public c() {
         this.a.add(new b(b.d.demo_icon_1));
@@ -28,7 +28,7 @@ public class c {
 
     public a a() {
         if (this.b == null) {
-            this.b = new a();
+            this.b = new A();
         }
         return this.b;
     }

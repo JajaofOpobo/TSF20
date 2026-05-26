@@ -91,7 +91,7 @@ public class c extends e {
                 dVar.b(i * 100);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
                 com.censivn.C3DEngine.b.g.c.a(gVar, 500, dVar);
-                this.e.a((com.tsf.shell.f.i.b) gVar, true);
+                this.e.a((com.tsf.shell.f.i.B) gVar, true);
                 this.d.addChild(gVar);
             }
             this.e.o();

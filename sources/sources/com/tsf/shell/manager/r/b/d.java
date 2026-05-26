@@ -24,8 +24,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.manager.r.b.c<a> {
-    public com.tsf.shell.manager.r.b.a b;
+public class d extends com.tsf.shell.manager.r.b.C<a> {
+    public com.tsf.shell.manager.r.b.A b;
     private PackageManager c;
     private a.C0095a d;
     private a.C0095a e;
@@ -38,7 +38,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
     private c.a<a> l;
     private h m;
 
-    public d(com.tsf.shell.manager.r.b.a aVar, String str) {
+    public d(com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.b = aVar;
         this.m = new h();
@@ -103,7 +103,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         if (!this.h) {
             this.h = true;
             for (b.a aVar : com.tsf.shell.manager.a.d.a()) {
-                c cVar = new c();
+                C cVar = new C();
                 cVar.c = aVar.a;
                 this.f.add(cVar);
             }
@@ -123,7 +123,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
             while (true) {
                 int i2 = i;
                 if (i2 < listQueryIntentActivities.size()) {
-                    b bVar = (b) d();
+                    B bVar = (B) d();
                     ActivityInfo activityInfo = listQueryIntentActivities.get(i2).activityInfo;
                     bVar.e = activityInfo;
                     bVar.c = activityInfo.loadLabel(this.c).toString();
@@ -148,38 +148,38 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
 
     private a d() {
         if (this.j.isEmpty()) {
-            return new b();
+            return new B();
         }
         return this.j.remove(0);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public i a(a aVar, int i, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public i a(A aVar, int i, i iVar) {
         return aVar.a(iVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public i a(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public i a(A aVar) {
         return aVar.a();
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void b(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void b(A aVar) {
         aVar.b();
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void c(a aVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void c(A aVar) {
         aVar.a(aVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public void a(MotionEvent motionEvent, a aVar, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public void a(MotionEvent motionEvent, A aVar, i iVar) {
         aVar.a(motionEvent, aVar, iVar);
     }
 
-    @Override // com.tsf.shell.manager.r.b.c
-    public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
+    @Override // com.tsf.shell.manager.r.b.C
+    public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
         aVar.b(motionEvent, aVar, iVar);
         return true;
     }
@@ -195,7 +195,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         while (it.hasNext()) {
             it.next().c();
         }
-        for (a aVar : this.g) {
+        for (A aVar : this.g) {
             aVar.c();
             this.j.add(aVar);
         }
@@ -203,14 +203,14 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         this.i = false;
     }
 
-    class b extends a {
+    class B extends A {
         protected com.tsf.shell.f.i.b.e.b b;
         public String c;
         public Intent d;
         public ActivityInfo e;
         public TextureElement f;
 
-        b() {
+        B() {
             super();
             this.f = new TextureElement(0, false);
         }
@@ -248,7 +248,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
                 }
 
                 @Override // com.tsf.shell.manager.l.a.C0130a
-                public com.tsf.shell.manager.o.a a() {
+                public com.tsf.shell.manager.o.A a() {
                     return com.tsf.shell.manager.o.b.b;
                 }
             });
@@ -262,7 +262,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public boolean b(MotionEvent motionEvent, a aVar, final i iVar) {
+        public boolean b(MotionEvent motionEvent, A aVar, final i iVar) {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.d.b.2
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
@@ -278,7 +278,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(a aVar) {
+        public void a(A aVar) {
             com.tsf.shell.manager.a.x.a.a(this.d, 0.0f, d.this.b.getScreenFreeSpaceCenter());
         }
 
@@ -288,11 +288,11 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         }
     }
 
-    class c extends a {
+    class C extends A {
         protected com.tsf.shell.f.i.b.e.b b;
         public int c;
 
-        c() {
+        C() {
             super();
             this.c = -1;
         }
@@ -309,12 +309,12 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(MotionEvent motionEvent, a aVar, i iVar) {
+        public void a(MotionEvent motionEvent, A aVar, i iVar) {
             iVar.getMouseEventListener().c(motionEvent);
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public void a(a aVar) {
+        public void a(A aVar) {
             com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, com.tsf.shell.manager.o.b.a);
             bVarA.position().y = d.this.b.getScreenFreeSpaceCenter();
             com.tsf.shell.manager.a.h.n().a(bVarA);
@@ -324,7 +324,7 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
-        public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
+        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
             ((com.tsf.shell.f.i.b.e.b) iVar).ah();
             ((com.tsf.shell.f.i.b.e.b) iVar).K().onUpdatePhoto(null, null);
             ((com.tsf.shell.f.i.b.e.b) iVar).getMouseEventListener().d(motionEvent);
@@ -364,13 +364,13 @@ public class d extends com.tsf.shell.manager.r.b.c<a> {
             return null;
         }
 
-        public void a(a aVar) {
+        public void a(A aVar) {
         }
 
-        public void a(MotionEvent motionEvent, a aVar, i iVar) {
+        public void a(MotionEvent motionEvent, A aVar, i iVar) {
         }
 
-        public boolean b(MotionEvent motionEvent, a aVar, i iVar) {
+        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
             return true;
         }
 

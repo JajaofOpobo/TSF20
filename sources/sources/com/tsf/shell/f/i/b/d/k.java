@@ -15,7 +15,7 @@ public class k {
     private static int b = 800;
     private b c;
     private com.censivn.C3DEngine.b.f.j d;
-    private com.tsf.shell.f.i.b e;
+    private com.tsf.shell.f.i.B e;
     private int h;
     private int i;
     private int j;
@@ -78,7 +78,7 @@ public class k {
         if (this.e.K().container != -1 || (this.e.K() instanceof LauncherDrawerFolder3DInfo)) {
             Number3d.TEMPNUMBER3D.reset();
             this.e.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.u = com.tsf.shell.f.c.a(this.e);
+            this.u = com.tsf.shell.f.c.A(this.e);
             ((com.censivn.C3DEngine.b.f.j) this.e.parent()).replaceChild(this.e, this.u);
             this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
         }
@@ -156,7 +156,7 @@ public class k {
                         k.this.e.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
-                            com.tsf.shell.f.c.a(k.this.u);
+                            com.tsf.shell.f.c.A(k.this.u);
                             k.this.u = null;
                         } else {
                             gVarN.a(k.this.e);

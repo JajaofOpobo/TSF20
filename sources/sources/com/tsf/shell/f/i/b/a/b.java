@@ -6,7 +6,7 @@ import com.tsf.shell.f.e.h.a;
 import com.tsf.shell.f.i.c.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.b implements a.InterfaceC0098a {
+public class b extends com.tsf.shell.f.i.B implements a.InterfaceC0098a {
     private boolean a;
     private boolean b;
     private boolean f;
@@ -37,46 +37,46 @@ public class b extends com.tsf.shell.f.i.b implements a.InterfaceC0098a {
         addChild(this.g);
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void W() {
         this.b = true;
         l();
         this.g.c();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void X() {
         this.b = false;
         l();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void n_() {
         this.a = true;
         l();
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void c() {
         this.a = false;
         l();
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void m_() {
         super.m_();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void q_() {
         this.f = true;
         l();
         super.q_();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void j() {
         this.f = false;
         l();
@@ -91,7 +91,7 @@ public class b extends com.tsf.shell.f.i.b implements a.InterfaceC0098a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void g() {
         this.g.destroy();
         super.g();

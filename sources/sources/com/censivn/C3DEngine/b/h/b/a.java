@@ -12,7 +12,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
     public boolean a;
     private e b;
     private d d;
-    private com.tsf.shell.f.i.b e;
+    private com.tsf.shell.f.i.B e;
     private float f;
     private float g;
     private boolean h;
@@ -63,20 +63,20 @@ class a extends com.censivn.C3DEngine.b.d.a {
         super.c(motionEvent);
         if (this.b.a(true)) {
             this.h = false;
-            com.tsf.shell.f.i.b bVarE = this.b.e(motionEvent);
-            if (bVarE != null && (bVarE instanceof com.tsf.shell.f.i.c)) {
-                com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) bVarE;
+            com.tsf.shell.f.i.B bVarE = this.b.e(motionEvent);
+            if (bVarE != null && (bVarE instanceof com.tsf.shell.f.i.C)) {
+                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVarE;
                 w.a();
                 this.e = cVar;
                 this.a = true;
                 if (cVar.A().e()) {
                     int i = Integer.MAX_VALUE;
-                    ArrayList<com.tsf.shell.f.i.c> arrayListI = cVar.A().i();
+                    ArrayList<com.tsf.shell.f.i.C> arrayListI = cVar.A().i();
                     cVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     int i2 = 0;
                     while (i2 < size) {
-                        com.tsf.shell.f.i.c cVar2 = arrayListI.get(i2);
+                        com.tsf.shell.f.i.C cVar2 = arrayListI.get(i2);
                         if (cVar2 != cVar) {
                             iJ = cVar2.J();
                             if (iJ >= i) {
@@ -134,16 +134,16 @@ class a extends com.censivn.C3DEngine.b.d.a {
             this.b.b().globalToLocal(this.e.position());
             this.b.b().addChildAt(this.e, this.e.J());
             Number3d number3dA = this.b.a(this.e.J());
-            if (this.e instanceof com.tsf.shell.f.i.c) {
-                com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) this.e;
+            if (this.e instanceof com.tsf.shell.f.i.C) {
+                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.e;
                 if (cVar.as()) {
-                    ArrayList<com.tsf.shell.f.i.c> arrayListAw = cVar.aw();
-                    ArrayList<com.tsf.shell.f.i.b> arrayList = new ArrayList<>();
+                    ArrayList<com.tsf.shell.f.i.C> arrayListAw = cVar.aw();
+                    ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList<>();
                     int size = arrayListAw == null ? 0 : arrayListAw.size();
                     if (size > 0) {
                         int iJ = cVar.J() + 1;
                         for (int i = 0; i < size; i++) {
-                            com.tsf.shell.f.i.c cVar2 = arrayListAw.get(i);
+                            com.tsf.shell.f.i.C cVar2 = arrayListAw.get(i);
                             arrayList.add(cVar2);
                             cVar2.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
                             cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
@@ -163,8 +163,8 @@ class a extends com.censivn.C3DEngine.b.d.a {
             dVar2.a(com.censivn.C3DEngine.b.g.a.a);
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar2);
-            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.b) && (this.e instanceof com.tsf.shell.f.i.c)) {
-                ((com.tsf.shell.f.i.c) this.e).ai();
+            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.b) && (this.e instanceof com.tsf.shell.f.i.C)) {
+                ((com.tsf.shell.f.i.C) this.e).ai();
             }
         }
     }
@@ -181,7 +181,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
             }
             if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 60.0f) {
                 this.h = true;
-                if (this.e instanceof com.tsf.shell.f.i.b) {
+                if (this.e instanceof com.tsf.shell.f.i.B) {
                     this.e.ab();
                     return;
                 }

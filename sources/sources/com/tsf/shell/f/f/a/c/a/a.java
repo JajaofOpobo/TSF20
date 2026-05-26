@@ -17,7 +17,7 @@ public class a extends b {
     private float e;
     private float f;
     private boolean g;
-    private d.a h;
+    private d.A h;
     private AsyncTask i;
 
     public void a() {
@@ -30,7 +30,7 @@ public class a extends b {
         }
     }
 
-    public a(k.a aVar) {
+    public a(k.A aVar) {
         super(aVar);
         this.d = false;
         this.e = 360.0f;
@@ -139,7 +139,7 @@ public class a extends b {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final d.a aVar) {
+    public void a(final d.A aVar) {
         this.b.a(0.0f, 250, new Runnable() { // from class: com.tsf.shell.f.f.a.c.a.a.4
             @Override // java.lang.Runnable
             public void run() {

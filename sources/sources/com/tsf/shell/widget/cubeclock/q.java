@@ -9,7 +9,7 @@ public class q {
     private Object b = new Object();
     private boolean c = false;
     private int d = 1000;
-    private a e = new a();
+    private A e = new A();
     private c f;
 
     public q(c cVar) {
@@ -54,10 +54,10 @@ public class q {
         }
     }
 
-    class a extends Thread {
+    class A extends Thread {
         private boolean b = false;
 
-        a() {
+        A() {
         }
 
         public void a() {

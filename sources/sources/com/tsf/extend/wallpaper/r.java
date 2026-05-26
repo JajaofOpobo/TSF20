@@ -31,7 +31,7 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
     private ImageView f;
     private ProgressBar g;
     private com.tsf.extend.theme.k h;
-    private a i;
+    private A i;
     private Context j;
 
     public r(Context context, com.tsf.extend.theme.k kVar) {
@@ -46,7 +46,7 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
         this.j = context;
         d = 0.8f;
         b();
-        this.i = new a();
+        this.i = new A();
         this.h = kVar;
         com.tsf.extend.theme.v.h().c(kVar.m(), this.i);
     }
@@ -120,8 +120,8 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
         }
     }
 
-    private class a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
-        private a() {
+    private class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        private A() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a

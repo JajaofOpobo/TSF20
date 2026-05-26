@@ -8,7 +8,7 @@ import com.tsf.shell.f.i.b.e.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g {
-    private static void b(final com.tsf.shell.f.i.b bVar, final Runnable runnable) {
+    private static void b(final com.tsf.shell.f.i.B bVar, final Runnable runnable) {
         if (bVar instanceof i) {
             a(((i) bVar).q().q(), bVar);
         } else if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
@@ -46,11 +46,11 @@ public class g {
         }
     }
 
-    public static void a(com.tsf.shell.f.i.b bVar, Runnable runnable) {
+    public static void a(com.tsf.shell.f.i.B bVar, Runnable runnable) {
         b(bVar, runnable);
     }
 
-    public static void a(final com.tsf.shell.f.i.b bVar, final Runnable runnable, final Runnable runnable2) {
+    public static void a(final com.tsf.shell.f.i.B bVar, final Runnable runnable, final Runnable runnable2) {
         if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
             if (((com.tsf.shell.f.i.b.d.b) bVar).aT()) {
                 a(bVar, runnable2);

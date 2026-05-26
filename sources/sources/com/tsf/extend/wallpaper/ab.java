@@ -38,7 +38,7 @@ public class ab {
         }
     }
 
-    public static Runnable a(final a aVar, final boolean z, final int i) {
+    public static Runnable a(final A aVar, final boolean z, final int i) {
         return new Runnable() { // from class: com.tsf.extend.wallpaper.ab.1
             @Override // java.lang.Runnable
             public void run() throws Throwable {

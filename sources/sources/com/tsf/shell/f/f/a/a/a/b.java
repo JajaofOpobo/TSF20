@@ -14,7 +14,7 @@ public class b extends c {
         a((com.tsf.shell.f.f.a.a.b.b) this.a);
     }
 
-    public void a(b.c cVar) {
+    public void a(b.C cVar) {
         this.a.a(cVar.a());
         ArrayList<b.a> arrayListB = cVar.b();
         ArrayList<g> arrayList = new ArrayList<>();

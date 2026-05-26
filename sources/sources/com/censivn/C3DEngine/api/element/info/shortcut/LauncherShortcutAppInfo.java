@@ -32,7 +32,7 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
         }
     }
 
-    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.a aVar, f fVar) {
+    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, f fVar) {
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.isCustomTexture()) {
             com.censivn.C3DEngine.a.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.a.a(launcherShortcutAppInfo, aVar, fVar));
             return launcherShortcutAppInfo.texture;

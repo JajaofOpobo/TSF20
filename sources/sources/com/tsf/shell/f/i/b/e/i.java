@@ -7,7 +7,7 @@ public class i extends b {
     private int a;
     private j b;
 
-    public i(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.a aVar, boolean z) {
+    public i(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         this.k.visible(false);
         this.a = i;
@@ -59,7 +59,7 @@ public class i extends b {
         this.b = null;
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         com.tsf.shell.manager.a.d.c.b(this);
         super.g();

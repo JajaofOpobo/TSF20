@@ -439,7 +439,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.extend.base.b.a aVar) {
+    public void a(com.tsf.extend.base.b.A aVar) {
         if (aVar != null && aVar.a().size() > 0) {
             b(aVar);
             a(aVar.g());
@@ -458,7 +458,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         this.k = true;
     }
 
-    private void b(com.tsf.extend.base.b.a aVar) {
+    private void b(com.tsf.extend.base.b.A aVar) {
         d dVar = new d(getContext(), this.b, this.j);
         dVar.a(aVar, false);
         a(dVar);
@@ -497,12 +497,12 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         com.tsf.extend.theme.c.a.a(b2, b3, this.j, i);
     }
 
-    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.a> {
+    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.c.a.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -513,7 +513,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
-        public void a(JSONObject jSONObject, final int i, com.tsf.extend.base.b.a aVar) {
+        public void a(JSONObject jSONObject, final int i, com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.c.a.2
                 @Override // java.lang.Runnable
                 public void run() {

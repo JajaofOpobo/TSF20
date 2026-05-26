@@ -26,7 +26,7 @@ public class a implements c.a {
         }
     };
     private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.a.2
-        @Override // com.tsf.shell.f.e.d
+        @Override // com.tsf.shell.f.e.D
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public C0112a b() {
             C0112a c0112a = a.this.new C0112a();

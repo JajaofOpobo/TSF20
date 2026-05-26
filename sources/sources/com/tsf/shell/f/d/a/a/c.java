@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.f.d.a.a {
+public class c extends com.tsf.shell.f.d.a.A {
     private com.censivn.C3DEngine.b.f.a.a a;
     private com.tsf.shell.f.d.a.b b;
     private k c;
@@ -15,7 +15,7 @@ public class c extends com.tsf.shell.f.d.a.a {
         this.a = new com.tsf.shell.f.i.b.e.h().k;
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable) {
         if (iVar.textures().size() != 0 && iVar.textures().get(0).textureElement != null) {
             this.a.removeFromParent();
@@ -42,7 +42,7 @@ public class c extends com.tsf.shell.f.d.a.a {
         }
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public i e() {
         if (this.b == null) {
             this.b = new com.tsf.shell.f.d.a.b(this, true);
@@ -51,7 +51,7 @@ public class c extends com.tsf.shell.f.d.a.a {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(k kVar, final Runnable runnable) {
         this.c.textures().clear();
         this.c.textures().addElement(kVar.textures().get(0).textureElement);

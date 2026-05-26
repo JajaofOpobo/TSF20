@@ -57,7 +57,7 @@ public class c implements com.android.volley.b {
             monitor-enter(r8)
             java.util.Map<java.lang.String, com.tsf.extend.base.b.c$a> r0 = r8.a     // Catch: java.lang.Throwable -> L76
             java.lang.Object r0 = r0.get(r9)     // Catch: java.lang.Throwable -> L76
-            com.tsf.extend.base.b.c$a r0 = (com.tsf.extend.base.b.c.a) r0     // Catch: java.lang.Throwable -> L76
+            com.tsf.extend.base.b.c$A r0 = (com.tsf.extend.base.b.c.a) r0     // Catch: java.lang.Throwable -> L76
             java.io.File r3 = r8.c(r9)     // Catch: java.lang.Throwable -> L76
             if (r0 != 0) goto L19
             boolean r2 = r3.exists()     // Catch: java.lang.Throwable -> L76
@@ -73,7 +73,7 @@ public class c implements com.android.volley.b {
             r5 = 0
             r2.<init>(r4)     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
             if (r0 != 0) goto L46
-            com.tsf.extend.base.b.c$a r0 = com.tsf.extend.base.b.c.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            com.tsf.extend.base.b.c$A r0 = com.tsf.extend.base.b.c.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
         L2a:
             long r4 = r3.length()     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             int r6 = com.tsf.extend.base.b.c.b.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
@@ -81,7 +81,7 @@ public class c implements com.android.volley.b {
             long r4 = r4 - r6
             int r4 = (int) r4     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             byte[] r4 = a(r2, r4)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
-            com.android.volley.b$a r0 = r0.a(r4)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            com.android.volley.b$A r0 = r0.a(r4)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             if (r2 == 0) goto L17
             r2.close()     // Catch: java.io.IOException -> L43 java.lang.Throwable -> L76
             goto L17
@@ -178,7 +178,7 @@ public class c implements com.android.volley.b {
                             bufferedInputStream = new BufferedInputStream(new FileInputStream(file2));
                             try {
                                 try {
-                                    a aVarA = a.a(bufferedInputStream);
+                                    A aVarA = a.a(bufferedInputStream);
                                     aVarA.a = file2.length();
                                     j += aVarA.a;
                                     a(aVarA.b, aVarA);
@@ -223,13 +223,13 @@ public class c implements com.android.volley.b {
     @Override // com.android.volley.b
     public synchronized void a(String str, b.a aVar) {
         BufferedOutputStream bufferedOutputStream;
-        a aVar2;
+        A aVar2;
         File fileC = c(str);
         BufferedOutputStream bufferedOutputStream2 = null;
         try {
             bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(fileC));
             try {
-                aVar2 = new a(str, aVar);
+                aVar2 = new A(str, aVar);
             } catch (IOException e) {
                 if (bufferedOutputStream != null) {
                     try {
@@ -287,7 +287,7 @@ public class c implements com.android.volley.b {
         return new File(this.c, d(str));
     }
 
-    private void a(String str, a aVar) {
+    private void a(String str, A aVar) {
         if (!this.a.containsKey(str)) {
             this.b += aVar.a;
         } else {
@@ -297,7 +297,7 @@ public class c implements com.android.volley.b {
     }
 
     private void e(String str) {
-        a aVar = this.a.get(str);
+        A aVar = this.a.get(str);
         if (aVar != null) {
             this.b -= aVar.a;
             this.a.remove(str);
@@ -343,7 +343,7 @@ public class c implements com.android.volley.b {
         }
 
         public static a a(InputStream inputStream) throws IOException {
-            a aVar = new a();
+            A aVar = new A();
             if (c.a(inputStream) != 538183203) {
                 throw new IOException();
             }

@@ -21,7 +21,7 @@ public class g extends com.tsf.shell.f.e.g.a.b {
     private AppWidgetManager g;
     private e.a h;
 
-    public g(final com.tsf.shell.manager.r.b.a aVar, String str) {
+    public g(final com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.a.d());
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
@@ -130,7 +130,7 @@ public class g extends com.tsf.shell.f.e.g.a.b {
                 }
 
                 @Override // com.tsf.shell.manager.r.c.a.a.AbstractC0146a
-                public void a(com.tsf.shell.f.i.b bVar, com.tsf.shell.f.i.c.g gVar) {
+                public void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.c.g gVar) {
                     bVar.scale().setAll(0.0f, 0.0f, 1.0f);
                     com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                     dVar.l(1.0f);

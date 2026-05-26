@@ -48,7 +48,7 @@ public class d extends com.tsf.shell.f.e.g.a.b {
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
                 com.tsf.shell.f.f.b.a.d dVar = (com.tsf.shell.f.f.b.a.d) com.tsf.shell.manager.a.v.a.b.a(i);
-                com.tsf.shell.f.d.e.a aVar = (com.tsf.shell.f.d.e.a) dVar.o();
+                com.tsf.shell.f.d.e.A aVar = (com.tsf.shell.f.d.e.A) dVar.o();
                 aVar.e.textures().clear();
                 aVar.e.textures().addElement(com.tsf.shell.f.d.e.a.a());
                 if (dVar.i()) {

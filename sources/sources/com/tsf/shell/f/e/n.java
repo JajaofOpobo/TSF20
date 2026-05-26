@@ -30,8 +30,8 @@ public class n implements b.a {
     private static int n;
     private static int o;
     private com.censivn.C3DEngine.b.f.j p;
-    private a q;
-    private h r;
+    private A q;
+    private H r;
     private boolean s = false;
     private static int g = 5;
     private static int h = 360 / g;
@@ -46,7 +46,7 @@ public class n implements b.a {
         p();
     }
 
-    public n(com.censivn.C3DEngine.b.f.j jVar, a aVar) {
+    public n(com.censivn.C3DEngine.b.f.j jVar, A aVar) {
         this.p = jVar;
         this.q = aVar;
     }
@@ -100,7 +100,7 @@ public class n implements b.a {
                 m = true;
             }
             c.position().setAll(i2, i3, 0.0f);
-            com.tsf.shell.manager.a.j.a(c);
+            com.tsf.shell.manager.a.j.a(C);
             com.censivn.C3DEngine.b.c.b.a(this);
         }
     }
@@ -111,13 +111,13 @@ public class n implements b.a {
             if (!z) {
                 com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) null, true);
             }
-            com.censivn.C3DEngine.b.g.c.a(c);
+            com.censivn.C3DEngine.b.g.c.a(C);
             f();
             this.q.a(i2);
             this.r.b();
             this.p = null;
             this.q = null;
-            com.tsf.shell.manager.a.j.b(c);
+            com.tsf.shell.manager.a.j.b(C);
             k = null;
             com.censivn.C3DEngine.b.c.b.b(this);
         }
@@ -140,7 +140,7 @@ public class n implements b.a {
             b = com.censivn.C3DEngine.a.g().a(bitmapA, true);
             bitmapA.recycle();
             f.textures().clear();
-            f.textures().addElement(b);
+            f.textures().addElement(B);
         }
     }
 
@@ -182,7 +182,7 @@ public class n implements b.a {
         dVar.a(255);
         dVar.a((com.censivn.C3DEngine.b.g.b) new a.C0030a.c());
         com.censivn.C3DEngine.b.g.c.a(l, 700, dVar);
-        c.addChild(f);
+        c.addChild(F);
     }
 
     public void f() {
@@ -221,7 +221,7 @@ public class n implements b.a {
                 }
             }
         };
-        d.textures().addElement(a);
+        d.textures().addElement(A);
         com.censivn.C3DEngine.b.f.a.b bVarA = d.a(0);
         bVarA.d(64);
         bVarA.n.z = 0.0f;
@@ -256,8 +256,8 @@ public class n implements b.a {
         bVarA6.d(0, 0, 2, 2);
         bVarA6.h();
         e = new com.censivn.C3DEngine.b.f.a.a(6, 40, 240, 320);
-        e.textures().addElement(a);
-        j = new com.censivn.C3DEngine.b.d.a(d) { // from class: com.tsf.shell.f.e.n.5
+        e.textures().addElement(A);
+        j = new com.censivn.C3DEngine.b.d.a(D) { // from class: com.tsf.shell.f.e.n.5
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 n.c(n.b(motionEvent));
@@ -288,12 +288,12 @@ public class n implements b.a {
             }
         };
         r();
-        c.addChild(d);
-        c.addChild(e);
+        c.addChild(D);
+        c.addChild(E);
     }
 
     private static void a(final com.censivn.C3DEngine.b.f.a.b bVar) {
-        com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(d) { // from class: com.tsf.shell.f.e.n.6
+        com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(D) { // from class: com.tsf.shell.f.e.n.6
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 n.c(bVar.J);
@@ -468,7 +468,7 @@ public class n implements b.a {
         }
     }
 
-    public void a(h hVar) {
+    public void a(H hVar) {
         this.r = hVar;
     }
 

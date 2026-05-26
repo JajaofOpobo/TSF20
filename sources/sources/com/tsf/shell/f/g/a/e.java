@@ -47,7 +47,7 @@ public class e extends a {
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                com.tsf.shell.f.d.a.a aVarA = com.tsf.shell.manager.a.v.b.a(i);
+                com.tsf.shell.f.d.a.A aVarA = com.tsf.shell.manager.a.v.b.a(i);
                 h hVar = (h) aVarA.e();
                 hVar.e.textures().clear();
                 hVar.e.textures().addElement(h.i());
@@ -62,7 +62,7 @@ public class e extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.e.3
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f.d.a.a aVarA = com.tsf.shell.manager.a.v.b.a(i);
+                com.tsf.shell.f.d.a.A aVarA = com.tsf.shell.manager.a.v.b.a(i);
                 w.b();
                 com.tsf.shell.manager.a.v.b.a(aVarA);
                 if (aVarA.b()) {

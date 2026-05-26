@@ -39,10 +39,10 @@ public class q extends t {
 
     @Override // com.tsf.extend.theme.t, android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
-        b bVar;
+        B bVar;
         if (view == null) {
             view = LayoutInflater.from(this.b).inflate(f.C0052f.theme_category_item, (ViewGroup) null);
-            b bVar2 = new b();
+            B bVar2 = new B();
             bVar2.e = (ImageView) view.findViewById(f.e.theme_category_img_left);
             bVar2.h = (ImageView) view.findViewById(f.e.theme_category_img_right);
             bVar2.f = (TextView) view.findViewById(f.e.theme_category_name_left);
@@ -58,7 +58,7 @@ public class q extends t {
             this.s.add(bVar2);
             bVar = bVar2;
         } else {
-            bVar = (b) view.getTag();
+            bVar = (B) view.getTag();
         }
         t.b bVarA = getItem(i);
         int size = bVarA.d().size();
@@ -108,11 +108,11 @@ public class q extends t {
 
     @Override // com.tsf.extend.theme.t
     protected t.c b() {
-        return new a();
+        return new A();
     }
 
-    protected class a extends t.c {
-        protected a() {
+    protected class A extends t.c {
+        protected A() {
             super();
         }
 
@@ -121,7 +121,7 @@ public class q extends t {
             String str = (String) pair.first;
             Bitmap bitmap = (Bitmap) pair.second;
             if (!TextUtils.isEmpty(str) && bitmap != null) {
-                for (b bVar : q.this.s) {
+                for (B bVar : q.this.s) {
                     if (bVar.d != null && bVar.d.getTag() != null && bVar.e != null) {
                         Object tag = bVar.d.getTag();
                         if ((tag instanceof k) && str.equals(((k) tag).u())) {

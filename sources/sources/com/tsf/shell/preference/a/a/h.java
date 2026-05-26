@@ -12,7 +12,7 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h extends i {
-    private a a;
+    private A a;
     private com.censivn.C3DEngine.b.e.e b;
     private com.censivn.C3DEngine.b.e.a c;
     private boolean d;
@@ -45,7 +45,7 @@ public class h extends i {
             }
         });
         b(this.c);
-        this.a = new a();
+        this.a = new A();
         this.a.h(b.i.text_direction);
         b(this.a);
         com.censivn.C3DEngine.b.e.e eVar = new com.censivn.C3DEngine.b.e.e();
@@ -145,12 +145,12 @@ public class h extends i {
         com.tsf.shell.manager.a.n.h();
     }
 
-    class a extends com.censivn.C3DEngine.b.e.g {
+    class A extends com.censivn.C3DEngine.b.e.g {
         private k b;
         private TextureElement d;
         private int e = 0;
 
-        public a() {
+        public A() {
             h();
         }
 

@@ -29,7 +29,7 @@ public class c extends d {
         }
     }
 
-    public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.a aVar, boolean z, int i) {
+    public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z, int i) {
         super(launcherShortcut3DInfo, aVar, z);
         this.t = i;
         int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.a.c * aE().A);
@@ -57,7 +57,7 @@ public class c extends d {
         if (this.s == null) {
             this.s = new LauncherShortcutStandardInfo.ResourceControler() { // from class: com.tsf.shell.f.i.b.e.c.2
                 @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo.ResourceControler
-                public Bitmap getThemeBitmap(com.tsf.shell.manager.o.a aVar) {
+                public Bitmap getThemeBitmap(com.tsf.shell.manager.o.A aVar) {
                     return ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_ICON, aVar.H, aVar.I);
                 }
             };
@@ -110,7 +110,7 @@ public class c extends d {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.d, com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.b.e.d, com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         if (q.contains(this)) {
             q.remove(this);

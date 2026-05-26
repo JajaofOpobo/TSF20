@@ -5,14 +5,14 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends com.tsf.shell.f.d.a.a {
+public class e extends com.tsf.shell.f.d.a.A {
     private com.tsf.shell.f.d.a.b a;
 
     public e(int i, boolean z) {
         super(i, z);
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public i e() {
         if (this.a == null) {
             this.a = new com.tsf.shell.f.d.a.b(this, false);
@@ -20,11 +20,11 @@ public class e extends com.tsf.shell.f.d.a.a {
         return this.a;
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(k kVar, Runnable runnable) {
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable) {
     }
 }

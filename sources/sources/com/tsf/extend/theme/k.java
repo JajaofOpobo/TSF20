@@ -189,7 +189,7 @@ public class k implements Serializable {
 
     public ContentValues y() {
         ContentValues contentValues = new ContentValues();
-        contentValues.put("package_name", ((this instanceof b) && ((b) this).e()) ? ((b) this).f() : g());
+        contentValues.put("package_name", ((this instanceof b) && ((B) this).e()) ? ((B) this).f() : g());
         contentValues.put("theme_id", Long.valueOf(h()));
         contentValues.put("name", i());
         contentValues.put("download", Integer.valueOf(j()));
@@ -235,7 +235,7 @@ public class k implements Serializable {
         if (i4 == 2) {
             kVar = new com.tsf.extend.theme.diy.a();
         } else if (i4 == 3) {
-            kVar = new b();
+            kVar = new B();
         } else if (i4 == 1) {
             kVar = new f();
         } else {

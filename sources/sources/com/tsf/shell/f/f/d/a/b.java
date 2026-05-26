@@ -24,7 +24,7 @@ public interface b {
 
     void a(d dVar, g gVar);
 
-    void a(com.tsf.shell.f.f.d.a aVar);
+    void a(com.tsf.shell.f.f.d.A aVar);
 
     void a(g gVar);
 

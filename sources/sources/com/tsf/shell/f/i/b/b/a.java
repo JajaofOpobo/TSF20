@@ -82,7 +82,7 @@ public class a extends b {
         return this.b.c() / 2.0f;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public boolean ac() {
         boolean z;
         t.a();
@@ -180,7 +180,7 @@ public class a extends b {
         return this.k;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void ab() {
         com.censivn.C3DEngine.a.a().c(this.m);
     }
@@ -205,7 +205,7 @@ public class a extends b {
         });
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void n_() {
         this.n = false;
         com.censivn.C3DEngine.b.g.c.a(this);
@@ -217,7 +217,7 @@ public class a extends b {
         t.a(this);
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void m_() {
         super.m_();
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -243,8 +243,8 @@ public class a extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
-    public void a(com.tsf.shell.f.i.a aVar) {
+    @Override // com.tsf.shell.f.i.B
+    public void a(com.tsf.shell.f.i.A aVar) {
         super.a(aVar);
         final g gVarZ = z();
         if (gVarZ != null && K().screen != gVarZ.t()) {
@@ -259,14 +259,14 @@ public class a extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void p_() {
         super.p_();
         this.a = true;
         this.b.mouseEnabled(false);
     }
 
-    @Override // com.tsf.shell.f.i.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         this.l.b(this);
         com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.5
@@ -292,7 +292,7 @@ public class a extends b {
         removeFromParent();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void q_() {
         com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.7
             @Override // java.lang.Runnable
@@ -302,7 +302,7 @@ public class a extends b {
         });
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void j() {
     }
 
@@ -319,7 +319,7 @@ public class a extends b {
         return com.censivn.C3DEngine.b.b.a.I - (i + (this.b.c() / 2.0f));
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void E() {
         com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.8
             @Override // java.lang.Runnable
@@ -335,7 +335,7 @@ public class a extends b {
         });
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void F() {
         com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.9
             @Override // java.lang.Runnable

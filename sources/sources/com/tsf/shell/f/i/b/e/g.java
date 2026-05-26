@@ -29,7 +29,7 @@ public class g extends a {
         this.b = false;
     }
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.a aVar, com.tsf.shell.manager.a.f fVar, boolean z) {
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.a.f fVar, boolean z) {
         super(launcherShortcutAppInfo, aVar);
         this.b = false;
         this.a = fVar;
@@ -59,7 +59,7 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.b) {
@@ -81,7 +81,7 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void a(ItemInfo itemInfo) {
         super.a(itemInfo);
         LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
@@ -106,7 +106,7 @@ public class g extends a {
         return this.a.b();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public String r() {
         return this.a != null ? this.a.e : "";
     }
@@ -116,7 +116,7 @@ public class g extends a {
         return r();
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public long s() {
         if (this.a != null) {
             return this.a.c;
@@ -214,7 +214,7 @@ public class g extends a {
         return this.a.g;
     }
 
-    @Override // com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.B
     public void C() {
         super.C();
     }
@@ -245,25 +245,25 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
         super.g();
         aY();
     }
 
-    @Override // com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void n_() {
         com.tsf.shell.d.a().a("WidgetShortcutApp");
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.c, com.tsf.shell.f.i.b
+    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void c() {
         com.tsf.shell.d.a().b("WidgetShortcutApp");
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.c
+    @Override // com.tsf.shell.f.i.C
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(0);
         arrayList.add(1);

@@ -39,7 +39,7 @@ import java.util.Locale;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public final class Home extends ActivityGroup implements View.OnLongClickListener, com.tsf.shell.a, com.tsf.shell.manager.bind.c {
+public final class Home extends ActivityGroup implements View.OnLongClickListener, com.tsf.shell.A, com.tsf.shell.manager.bind.c {
     public static int a = (int) (((Math.random() * 1000.0d) * 2.0d) + 1000.0d);
     public static String b = "";
     public static Home c;
@@ -47,11 +47,11 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     private com.censivn.C3DEngine.a.a f;
     private com.tsf.shell.e.f g;
     private boolean k;
-    private com.tsf.shell.f.d n;
-    private d o;
+    private com.tsf.shell.f.D n;
+    private D o;
     private Locale p;
     private com.tsf.shell.a.a.a r;
-    private final BroadcastReceiver d = new a();
+    private final BroadcastReceiver d = new A();
     private final int[] h = new int[2];
     private SpannableStringBuilder i = null;
     private boolean j = true;
@@ -314,13 +314,13 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     }
 
     public void f() {
-        this.n = new com.tsf.shell.f.d(this.f) { // from class: com.tsf.shell.Home.14
-            @Override // com.tsf.shell.f.d
+        this.n = new com.tsf.shell.f.D(this.f) { // from class: com.tsf.shell.Home.14
+            @Override // com.tsf.shell.f.D
             public void a() {
                 Home.this.h();
             }
 
-            @Override // com.tsf.shell.f.d
+            @Override // com.tsf.shell.f.D
             public void b() {
                 Home.this.j();
             }
@@ -447,7 +447,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         overridePendingTransition(b.a.app_none, b.a.app_none);
     }
 
-    @Override // com.tsf.shell.a
+    @Override // com.tsf.shell.A
     public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
         int i = this.u;
         this.k = true;
@@ -624,8 +624,8 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void o() {
     }
 
-    private class a extends BroadcastReceiver {
-        private a() {
+    private class A extends BroadcastReceiver {
+        private A() {
         }
 
         @Override // android.content.BroadcastReceiver

@@ -38,7 +38,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
     private boolean p;
     private boolean q;
     private Interpolator r;
-    private a s;
+    private A s;
     private com.tsf.extend.base.widget.pulltorefresh.a.d t;
     private com.tsf.extend.base.widget.pulltorefresh.a.d u;
     private e<T> v;
@@ -127,7 +127,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         b(context, (AttributeSet) null);
     }
 
-    public PullToRefreshBase(Context context, b bVar, a aVar) {
+    public PullToRefreshBase(Context context, b bVar, A aVar) {
         super(context);
         this.h = false;
         this.i = j.RESET;
@@ -162,11 +162,11 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         return this.o;
     }
 
-    public final com.tsf.extend.base.widget.pulltorefresh.a getLoadingLayoutProxy() {
+    public final com.tsf.extend.base.widget.pulltorefresh.A getLoadingLayoutProxy() {
         return a(true, true);
     }
 
-    public final com.tsf.extend.base.widget.pulltorefresh.a a(boolean z, boolean z2) {
+    public final com.tsf.extend.base.widget.pulltorefresh.A a(boolean z, boolean z2) {
         return b(z, z2);
     }
 

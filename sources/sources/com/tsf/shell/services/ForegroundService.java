@@ -16,10 +16,10 @@ import com.tsf.shell.utils.x;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ForegroundService extends Service {
     public String a = ForegroundService.class.getSimpleName();
-    private final IBinder b = new a();
+    private final IBinder b = new A();
 
-    public class a extends Binder {
-        public a() {
+    public class A extends Binder {
+        public A() {
         }
     }
 

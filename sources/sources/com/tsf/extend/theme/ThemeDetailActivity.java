@@ -40,7 +40,7 @@ public class ThemeDetailActivity extends PageActivity {
                 ThemeDetailActivity.this.f = ThemeDetailActivity.this.g.a();
                 Iterator it = ThemeDetailActivity.this.h.iterator();
                 while (it.hasNext()) {
-                    ((a) it.next()).a(ThemeDetailActivity.this.f);
+                    ((A) it.next()).a(ThemeDetailActivity.this.f);
                 }
                 ThemeDetailActivity.this.h.clear();
             } catch (Exception e) {

@@ -13,7 +13,7 @@ public class k {
     private BlockingQueue<j> b = new LinkedBlockingQueue(com.tsf.extend.base.actstru.model.a.e);
     private BlockingQueue<FutureTask<d>> c = new LinkedBlockingQueue();
     private b d = new b(this.b);
-    private a e = new a(this.c);
+    private A e = new A(this.c);
     private ExecutorService f = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.d);
 
     class b extends c<j> {
@@ -33,9 +33,9 @@ public class k {
         }
     }
 
-    class a extends c<FutureTask<d>> {
+    class A extends c<FutureTask<d>> {
         /* JADX WARN: Multi-variable type inference failed */
-        public a(BlockingQueue<FutureTask<d>> blockingQueue) {
+        public A(BlockingQueue<FutureTask<d>> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(1);
             setName("PendingEventDispatcher");

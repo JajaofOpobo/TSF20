@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class ShellProvider extends ContentProvider {
     public static String a;
     private static ShellProvider c;
-    private a b;
+    private A b;
 
     @Override // android.content.ContentProvider
     public boolean onCreate() {
@@ -26,7 +26,7 @@ public class ShellProvider extends ContentProvider {
         if (c == null) {
             c = this;
         }
-        this.b = new a(getContext());
+        this.b = new A(getContext());
         return true;
     }
 
@@ -44,7 +44,7 @@ public class ShellProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public String getType(Uri uri) {
-        b bVar = new b(uri, null, null);
+        B bVar = new B(uri, null, null);
         return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
     }
 
@@ -56,7 +56,7 @@ public class ShellProvider extends ContentProvider {
     public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         Cursor cursorQuery;
         synchronized (this) {
-            b bVar = new b(uri, str, strArr2);
+            B bVar = new B(uri, str, strArr2);
             SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
             sQLiteQueryBuilder.setTables(bVar.a);
             cursorQuery = sQLiteQueryBuilder.query(this.b.getWritableDatabase(), strArr, bVar.b, bVar.c, null, null, str2);
@@ -69,7 +69,7 @@ public class ShellProvider extends ContentProvider {
     public Uri insert(Uri uri, ContentValues contentValues) {
         Uri uriWithAppendedId = null;
         synchronized (this) {
-            long jInsert = this.b.getWritableDatabase().insert(new b(uri).a, null, contentValues);
+            long jInsert = this.b.getWritableDatabase().insert(new B(uri).a, null, contentValues);
             if (jInsert > 0) {
                 uriWithAppendedId = ContentUris.withAppendedId(uri, jInsert);
                 a(uriWithAppendedId);
@@ -82,7 +82,7 @@ public class ShellProvider extends ContentProvider {
     public int delete(Uri uri, String str, String[] strArr) {
         int iDelete;
         synchronized (this) {
-            b bVar = new b(uri, str, strArr);
+            B bVar = new B(uri, str, strArr);
             iDelete = this.b.getWritableDatabase().delete(bVar.a, bVar.b, bVar.c);
             if (iDelete > 0) {
                 a(uri);
@@ -96,7 +96,7 @@ public class ShellProvider extends ContentProvider {
         int iUpdate;
         synchronized (this) {
             try {
-                b bVar = new b(uri, str, strArr);
+                B bVar = new B(uri, str, strArr);
                 iUpdate = this.b.getWritableDatabase().update(bVar.a, contentValues, bVar.b, bVar.c);
                 if (iUpdate > 0) {
                     a(uri);
@@ -136,9 +136,9 @@ public class ShellProvider extends ContentProvider {
             r10 = this;
             r0 = 0
             monitor-enter(r10)
-            com.tsf.shell.ShellProvider$b r2 = new com.tsf.shell.ShellProvider$b     // Catch: java.lang.Throwable -> L37
+            com.tsf.shell.ShellProvider$B r2 = new com.tsf.shell.ShellProvider$b     // Catch: java.lang.Throwable -> L37
             r2.<init>(r11)     // Catch: java.lang.Throwable -> L37
-            com.tsf.shell.ShellProvider$a r1 = r10.b     // Catch: java.lang.Throwable -> L37
+            com.tsf.shell.ShellProvider$A r1 = r10.b     // Catch: java.lang.Throwable -> L37
             android.database.sqlite.SQLiteDatabase r3 = r1.getWritableDatabase()     // Catch: java.lang.Throwable -> L37
             r3.beginTransaction()     // Catch: java.lang.Throwable -> L37
             int r4 = r12.length     // Catch: java.lang.Throwable -> L3a
@@ -185,13 +185,13 @@ public class ShellProvider extends ContentProvider {
         }
     }
 
-    public static class a extends SQLiteOpenHelper {
+    public static class A extends SQLiteOpenHelper {
         private int a;
         private int b;
         private Context c;
         private boolean d;
 
-        a(Context context) {
+        A(Context context) {
             super(context, "TSFLauncher-database.db", (SQLiteDatabase.CursorFactory) null, 34);
             this.a = -1;
             this.b = -1;

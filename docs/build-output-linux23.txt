@@ -1,0 +1,774 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/a.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/b.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/c.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:6: error: package com.censivn.C3DEngine.a does not exist
+import com.censivn.C3DEngine.a.b;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:19: error: package com.tsf.shell.f.i.a does not exist
+    private com.tsf.shell.f.i.a.a e;
+                               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:110: error: package com.tsf.shell.f.i.a does not exist
+    public com.tsf.shell.f.i.a.a c() {
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:114: error: package com.tsf.shell.f.i.a does not exist
+    public void a(com.tsf.shell.f.i.a.a aVar) {
+                                     ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:3: error: package com.censivn.C3DEngine.b.g.a does not exist
+import com.censivn.C3DEngine.b.g.a.c;
+                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/common/shader/Shader.java:4: error: package com.censivn.C3DEngine.a does not exist
+import com.censivn.C3DEngine.a.c;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:104: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public com.censivn.C3DEngine.b.g.a.c mTweenChild;
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObject3d.java:3: error: package com.censivn.C3DEngine.a does not exist
+import com.censivn.C3DEngine.a.c;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:1423: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public com.censivn.C3DEngine.b.g.a.c getTweenChild() {
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:1428: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public void setTweenChild(com.censivn.C3DEngine.b.g.a.c cVar) {
+                                                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/A.java:7: error: class A clashes with package of same name
+public class A extends j {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:7: error: cannot find symbol
+    c getTweenChild();
+    ^
+  symbol:   class c
+  location: interface a
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:9: error: cannot find symbol
+    void setTweenChild(c cVar);
+                       ^
+  symbol:   class c
+  location: interface a
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/e.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/g.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/f.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+package com.censivn.C3DEngine.A;
+^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObjectManager.java:3: error: package com.tsf.shell.b does not exist
+import com.tsf.shell.b.a;
+                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
+    private b widget;
+            ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
+    public void setWidget(b bVar) {
+                          ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
+    public b getWidget() {
+           ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
+    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                       ^
+  symbol:   class b
+  location: class ItemInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:12: error: class A clashes with package of same name
+public class A implements com.censivn.C3DEngine.b.c.b.a {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:25: error: package com.tsf.shell.f.d.e.a does not exist
+    private com.tsf.shell.f.d.e.a.b J;
+                                 ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:28: error: package com.tsf.shell.e does not exist
+    protected com.tsf.shell.e.d b;
+                             ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:29: error: package com.tsf.shell.f.e.f does not exist
+    protected com.tsf.shell.f.e.f.b c;
+                                 ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:33: error: package com.censivn.C3DEngine.b.f.b does not exist
+    private com.censivn.C3DEngine.b.f.b.a s;
+                                       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:34: error: package com.censivn.C3DEngine.b.f.b does not exist
+    private com.censivn.C3DEngine.b.f.b.a t;
+                                       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:96: error: package com.tsf.shell.f.d.e.a does not exist
+    public j.a a(com.tsf.shell.f.d.e.a.b bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:243: error: package com.tsf.shell.e does not exist
+    public com.tsf.shell.e.d s() {
+                          ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:906: error: package com.tsf.shell.f.d.e.a does not exist
+    public void a(com.tsf.shell.f.d.e.a.b bVar, Runnable runnable, float f2) {
+                                       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:923: error: package com.tsf.shell.f.d.e.a does not exist
+    public void a(com.tsf.shell.f.d.e.a.b bVar, final Runnable runnable, boolean z) {
+                                       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/l.java:50: error: package com.censivn.C3DEngine.b.f.b does not exist
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+                                                        ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:13: error: package com.tsf.shell.f.i.a does not exist
+    private com.tsf.shell.f.i.a.C0133a a;
+                               ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:17: error: cannot find symbol
+    protected ArrayList<c> b = new ArrayList<>();
+                        ^
+  symbol:   class c
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:18: error: cannot find symbol
+public class B extends j implements f {
+                                    ^
+  symbol: class f
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:17: error: class C clashes with package of same name
+public class C extends B {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:123: error: cannot find symbol
+    public ArrayList<c> i() {
+                     ^
+  symbol:   class c
+  location: class A
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:18: error: package com.censivn.C3DEngine.b.f.a does not exist
+    public com.censivn.C3DEngine.b.f.a.a k;
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:19: error: package com.censivn.C3DEngine.b.f.a does not exist
+    public com.censivn.C3DEngine.b.f.a.b l;
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:20: error: package com.censivn.C3DEngine.b.f.a does not exist
+    public com.censivn.C3DEngine.b.f.a.b m;
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/A.java:10: error: class A clashes with package of same name
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:26: error: cannot find symbol
+    private com.tsf.shell.f.d.a.A s;
+                               ^
+  symbol:   class A
+  location: package com.tsf.shell.f.d.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:4: error: interface F clashes with package of same name
+public interface F {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:153: error: package com.censivn.C3DEngine.b.f.a does not exist
+    public com.censivn.C3DEngine.b.f.a.a aF() {
+                                      ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:163: error: package com.tsf.shell.f.i.a does not exist
+    public com.tsf.shell.f.i.a.c aH() {
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:241: error: cannot find symbol
+    public void a(com.tsf.shell.f.d.a.A aVar) {
+                                     ^
+  symbol:   class A
+  location: package com.tsf.shell.f.d.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:257: error: cannot find symbol
+    public void b(com.tsf.shell.f.d.a.A aVar) {
+                                     ^
+  symbol:   class A
+  location: package com.tsf.shell.f.d.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: package com.tsf.shell.f.e.a does not exist
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+                                                                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: package com.tsf.shell.f.e.h does not exist
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+                                                                                                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/H.java:19: error: class H clashes with package of same name
+public class H {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:53: error: package com.tsf.shell.f.b does not exist
+    private com.tsf.shell.f.b.a S;
+                             ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/g.java:12: error: package com.tsf.shell.f.e.f does not exist
+public class g extends com.tsf.shell.f.e.f.b {
+                                          ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:13: error: cannot find symbol
+import com.tsf.shell.f.f.a.a.B;
+                            ^
+  symbol:   class B
+  location: package com.tsf.shell.f.f.a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:19: error: package com.tsf.shell.manager.a does not exist
+    private com.tsf.shell.manager.a.f a;
+                                   ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:7: error: package com.tsf.shell.manager.a does not exist
+import com.tsf.shell.manager.a.f;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:23: error: package com.tsf.shell.manager.a does not exist
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.a.f fVar, boolean z) {
+                                                                                     ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:32: error: package com.tsf.shell.manager.a does not exist
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.a.f fVar, boolean z) {
+                                                                                                                     ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:127: error: package com.tsf.shell.manager.a does not exist
+    public static com.tsf.shell.manager.a.f a(LauncherShortcut3DInfo launcherShortcut3DInfo) {
+                                         ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:192: error: package com.tsf.shell.manager.a does not exist
+    public com.tsf.shell.manager.a.f bd() {
+                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:35: error: cannot find symbol
+    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, f fVar) {
+                                                                                                                             ^
+  symbol:   class f
+  location: class LauncherShortcutAppInfo
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:24: error: package com.censivn.C3DEngine.b.f.a does not exist
+    private static com.censivn.C3DEngine.b.f.a.a d;
+                                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:25: error: package com.censivn.C3DEngine.b.f.a does not exist
+    private static com.censivn.C3DEngine.b.f.a.a e;
+                                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:26: error: package com.censivn.C3DEngine.b.f.a does not exist
+    private static com.censivn.C3DEngine.b.f.a.a f;
+                                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:4: error: package com.censivn.C3DEngine.b.g.a does not exist
+import com.censivn.C3DEngine.b.g.a.c;
+                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:4: error: class A clashes with package of same name
+public class A {
+       ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:295: error: package com.censivn.C3DEngine.b.f.a does not exist
+    private static void a(final com.censivn.C3DEngine.b.f.a.b bVar) {
+                                                           ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b a = new b.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b i = new e.d();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b j = new e.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b k = new e.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b l = new d.b();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b n = new d.c();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
+    public static final com.censivn.C3DEngine.b.g.b o = new f();
+                                                 ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:8: error: cannot find symbol
+    private c a;
+            ^
+  symbol:   class c
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:20: error: cannot find symbol
+    public c getTweenChild() {
+           ^
+  symbol:   class c
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:25: error: cannot find symbol
+    public void setTweenChild(c cVar) {
+                              ^
+  symbol:   class c
+  location: class b
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/k.java:40: error: package com.tsf.shell.f.b does not exist
+    private com.tsf.shell.f.b.a q = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.i.b.d.k.2
+                             ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/j.java:36: error: package com.censivn.C3DEngine.b.f.a does not exist
+    private static com.censivn.C3DEngine.b.f.a.a Z;
+                                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/j.java:49: error: cannot find symbol
+    private com.tsf.shell.preference.a.a.f X;
+                                        ^
+  symbol:   class f
+  location: package com.tsf.shell.preference.a.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/ThemeManager.java:8: error: package com.censivn.C3DEngine.a does not exist
+import com.censivn.C3DEngine.a.e;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:35: error: cannot find symbol
+import com.tsf.shell.f.c.a.f;
+                          ^
+  symbol:   class f
+  location: package com.tsf.shell.f.c.a
+/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:5: error: package com.tsf.shell.manager.r.a does not exist
+import com.tsf.shell.manager.r.a.b;
+                                ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:58: error: package com.tsf.shell.manager.a does not exist
+    public com.tsf.shell.manager.a.a a;
+                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:6: error: cannot find symbol
+import com.tsf.shell.f.i.c.g;
+                          ^
+  symbol:   class g
+  location: package com.tsf.shell.f.i.c
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:7: error: package com.tsf.shell.manager.a does not exist
+import com.tsf.shell.manager.a.f;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:8: error: package com.tsf.shell.manager.r.c.a does not exist
+import com.tsf.shell.manager.r.c.a.a;
+                                  ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/c.java:5: error: package com.tsf.shell.manager.a does not exist
+import com.tsf.shell.manager.a.f;
+                              ^
+/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:125: error: package com.tsf.shell.manager.a does not exist
+    public com.tsf.shell.manager.a.a b() {
+                                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+[Incubating] Problems report is available at: file:///home/ubuntu/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:18: error: cannot find symbol
+  public class B extends j implements f {
+                                      ^
+    symbol: class fNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:6: error: package com.censivn.C3DEngine.a does not exist
+  import com.censivn.C3DEngine.a.b;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:19: error: package com.tsf.shell.f.i.a does not exist
+      private com.tsf.shell.f.i.a.a e;
+                                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:110: error: package com.tsf.shell.f.i.a does not exist
+      public com.tsf.shell.f.i.a.a c() {
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:114: error: package com.tsf.shell.f.i.a does not exist
+      public void a(com.tsf.shell.f.i.a.a aVar) {
+                                       ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:3: error: package com.censivn.C3DEngine.b.g.a does not exist
+  import com.censivn.C3DEngine.b.g.a.c;
+                                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/common/shader/Shader.java:4: error: package com.censivn.C3DEngine.a does not exist
+  import com.censivn.C3DEngine.a.c;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:104: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public com.censivn.C3DEngine.b.g.a.c mTweenChild;
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObject3d.java:3: error: package com.censivn.C3DEngine.a does not exist
+  import com.censivn.C3DEngine.a.c;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:1423: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public com.censivn.C3DEngine.b.g.a.c getTweenChild() {
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/i.java:1428: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public void setTweenChild(com.censivn.C3DEngine.b.g.a.c cVar) {
+                                                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/core/VObjectManager.java:3: error: package com.tsf.shell.b does not exist
+  import com.tsf.shell.b.a;
+                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:25: error: package com.tsf.shell.f.d.e.a does not exist
+      private com.tsf.shell.f.d.e.a.b J;
+                                   ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:28: error: package com.tsf.shell.e does not exist
+      protected com.tsf.shell.e.d b;
+                               ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:29: error: package com.tsf.shell.f.e.f does not exist
+      protected com.tsf.shell.f.e.f.b c;
+                                   ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:33: error: package com.censivn.C3DEngine.b.f.b does not exist
+      private com.censivn.C3DEngine.b.f.b.a s;
+                                         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:34: error: package com.censivn.C3DEngine.b.f.b does not exist
+      private com.censivn.C3DEngine.b.f.b.a t;
+                                         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:96: error: package com.tsf.shell.f.d.e.a does not exist
+      public j.a a(com.tsf.shell.f.d.e.a.b bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:243: error: package com.tsf.shell.e does not exist
+      public com.tsf.shell.e.d s() {
+                            ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:906: error: package com.tsf.shell.f.d.e.a does not exist
+      public void a(com.tsf.shell.f.d.e.a.b bVar, Runnable runnable, float f2) {
+                                         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/g.java:923: error: package com.tsf.shell.f.d.e.a does not exist
+      public void a(com.tsf.shell.f.d.e.a.b bVar, final Runnable runnable, boolean z) {
+                                         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/l.java:50: error: package com.censivn.C3DEngine.b.f.b does not exist
+      public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+                                                          ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:13: error: package com.tsf.shell.f.i.a does not exist
+      private com.tsf.shell.f.i.a.C0133a a;
+                                 ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:18: error: package com.censivn.C3DEngine.b.f.a does not exist
+      public com.censivn.C3DEngine.b.f.a.a k;
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:19: error: package com.censivn.C3DEngine.b.f.a does not exist
+      public com.censivn.C3DEngine.b.f.a.b l;
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:20: error: package com.censivn.C3DEngine.b.f.a does not exist
+      public com.censivn.C3DEngine.b.f.a.b m;
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:153: error: package com.censivn.C3DEngine.b.f.a does not exist
+      public com.censivn.C3DEngine.b.f.a.a aF() {
+                                        ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:163: error: package com.tsf.shell.f.i.a does not exist
+      public com.tsf.shell.f.i.a.c aH() {
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: package com.tsf.shell.f.e.a does not exist
+  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+                                                                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: package com.tsf.shell.f.e.h does not exist
+  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+                                                                                                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:53: error: package com.tsf.shell.f.b does not exist
+      private com.tsf.shell.f.b.a S;
+                               ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/g.java:12: error: package com.tsf.shell.f.e.f does not exist
+  public class g extends com.tsf.shell.f.e.f.b {
+                                            ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:19: error: package com.tsf.shell.manager.a does not exist
+      private com.tsf.shell.manager.a.f a;
+                                     ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:7: error: package com.tsf.shell.manager.a does not exist
+  import com.tsf.shell.manager.a.f;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:23: error: package com.tsf.shell.manager.a does not exist
+      public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.a.f fVar, boolean z) {
+                                                                                       ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:32: error: package com.tsf.shell.manager.a does not exist
+      public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.a.f fVar, boolean z) {
+                                                                                                                       ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:127: error: package com.tsf.shell.manager.a does not exist
+      public static com.tsf.shell.manager.a.f a(LauncherShortcut3DInfo launcherShortcut3DInfo) {
+                                           ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:192: error: package com.tsf.shell.manager.a does not exist
+      public com.tsf.shell.manager.a.f bd() {
+                                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:24: error: package com.censivn.C3DEngine.b.f.a does not exist
+      private static com.censivn.C3DEngine.b.f.a.a d;
+                                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:25: error: package com.censivn.C3DEngine.b.f.a does not exist
+      private static com.censivn.C3DEngine.b.f.a.a e;
+                                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:26: error: package com.censivn.C3DEngine.b.f.a does not exist
+      private static com.censivn.C3DEngine.b.f.a.a f;
+                                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:4: error: package com.censivn.C3DEngine.b.g.a does not exist
+  import com.censivn.C3DEngine.b.g.a.c;
+                                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/n.java:295: error: package com.censivn.C3DEngine.b.f.a does not exist
+      private static void a(final com.censivn.C3DEngine.b.f.a.b bVar) {
+                                                             ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/k.java:40: error: package com.tsf.shell.f.b does not exist
+      private com.tsf.shell.f.b.a q = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.i.b.d.k.2
+                               ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/j.java:36: error: package com.censivn.C3DEngine.b.f.a does not exist
+      private static com.censivn.C3DEngine.b.f.a.a Z;
+                                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/ThemeManager.java:8: error: package com.censivn.C3DEngine.a does not exist
+  import com.censivn.C3DEngine.a.e;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherAppWidgetInfo.java:5: error: package com.tsf.shell.manager.r.a does not exist
+  import com.tsf.shell.manager.r.a.b;
+                                  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:58: error: package com.tsf.shell.manager.a does not exist
+      public com.tsf.shell.manager.a.a a;
+                                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:7: error: package com.tsf.shell.manager.a does not exist
+  import com.tsf.shell.manager.a.f;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:8: error: package com.tsf.shell.manager.r.c.a does not exist
+  import com.tsf.shell.manager.r.c.a.a;
+                                    ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/c.java:5: error: package com.tsf.shell.manager.a does not exist
+  import com.tsf.shell.manager.a.f;
+                                ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:125: error: package com.tsf.shell.manager.a does not exist
+      public com.tsf.shell.manager.a.a b() {
+                                    ^Note: Recompile with -Xlint:unchecked for details./home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:7: error: cannot find symbol
+      c getTweenChild();
+      ^
+    symbol:   class c
+    location: interface a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/a.java:9: error: cannot find symbol
+      void setTweenChild(c cVar);
+                         ^
+    symbol:   class c
+    location: interface a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
+      private b widget;
+              ^
+    symbol:   class b
+    location: class ItemInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
+      public void setWidget(b bVar) {
+                            ^
+    symbol:   class b
+    location: class ItemInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
+      public b getWidget() {
+             ^
+    symbol:   class b
+    location: class ItemInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
+      public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+                                                                         ^
+    symbol:   class b
+    location: class ItemInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:17: error: cannot find symbol
+      protected ArrayList<c> b = new ArrayList<>();
+                          ^
+    symbol:   class c
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:123: error: cannot find symbol
+      public ArrayList<c> i() {
+                       ^
+    symbol:   class c
+    location: class A
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:26: error: cannot find symbol
+      private com.tsf.shell.f.d.a.A s;
+                                 ^
+    symbol:   class A
+    location: package com.tsf.shell.f.d.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:241: error: cannot find symbol
+      public void a(com.tsf.shell.f.d.a.A aVar) {
+                                       ^
+    symbol:   class A
+    location: package com.tsf.shell.f.d.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/b.java:257: error: cannot find symbol
+      public void b(com.tsf.shell.f.d.a.A aVar) {
+                                       ^
+    symbol:   class A
+    location: package com.tsf.shell.f.d.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/g.java:13: error: cannot find symbol
+  import com.tsf.shell.f.f.a.a.B;
+                              ^
+    symbol:   class B
+    location: package com.tsf.shell.f.f.a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutAppInfo.java:35: error: cannot find symbol
+      public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, f fVar) {
+                                                                                                                               ^
+    symbol:   class f
+    location: class LauncherShortcutAppInfo
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b a = new b.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b i = new e.d();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b j = new e.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b k = new e.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b l = new d.b();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b n = new d.c();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
+      public static final com.censivn.C3DEngine.b.g.b o = new f();
+                                                   ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:8: error: cannot find symbol
+      private c a;
+              ^
+    symbol:   class c
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:20: error: cannot find symbol
+      public c getTweenChild() {
+             ^
+    symbol:   class c
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/b/b.java:25: error: cannot find symbol
+      public void setTweenChild(c cVar) {
+                                ^
+    symbol:   class c
+    location: class b
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/j.java:49: error: cannot find symbol
+      private com.tsf.shell.preference.a.a.f X;
+                                          ^
+    symbol:   class f
+    location: package com.tsf.shell.preference.a.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:35: error: cannot find symbol
+  import com.tsf.shell.f.c.a.f;
+                            ^
+    symbol:   class f
+    location: package com.tsf.shell.f.c.a
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/b.java:6: error: cannot find symbol
+  import com.tsf.shell.f.i.c.g;
+                            ^
+    symbol:   class g
+    location: package com.tsf.shell.f.i.c/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/A.java:7: error: class A clashes with package of same name
+  public class A extends j {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:12: error: class A clashes with package of same name
+  public class A implements com.censivn.C3DEngine.b.c.b.a {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:17: error: class C clashes with package of same name
+  public class C extends B {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/A.java:10: error: class A clashes with package of same name
+  public class A {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:4: error: interface F clashes with package of same name
+  public interface F {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/H.java:19: error: class H clashes with package of same name
+  public class H {
+         ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:4: error: class A clashes with package of same name
+  public class A {
+         ^Note: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API./home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/a.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/b.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/c.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/d.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/e.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/g.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/a/f.java:1: error: package com.censivn.C3DEngine.A clashes with class of same name
+  package com.censivn.C3DEngine.A;
+  ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 2s
+15 actionable tasks: 1 executed, 14 up-to-date

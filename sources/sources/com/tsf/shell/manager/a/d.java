@@ -33,7 +33,7 @@ public class d implements c.a {
     private ArrayList<com.tsf.shell.f.i.b.e.g> g = new ArrayList<>();
 
     public interface a {
-        void a(ArrayList<com.tsf.shell.f.i.b> arrayList);
+        void a(ArrayList<com.tsf.shell.f.i.B> arrayList);
     }
 
     public d(e eVar) {
@@ -66,10 +66,10 @@ public class d implements c.a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public ArrayList<com.tsf.shell.f.i.b> a(ArrayList<ItemInfo> arrayList) {
+    public ArrayList<com.tsf.shell.f.i.B> a(ArrayList<ItemInfo> arrayList) {
         System.currentTimeMillis();
         ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.a.w.a().d().clone();
-        ArrayList<com.tsf.shell.f.i.b> arrayList3 = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.i.B> arrayList3 = new ArrayList<>();
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo instanceof LauncherShortcutAppInfo) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;

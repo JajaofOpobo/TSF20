@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.d.a.a {
+public class b extends com.tsf.shell.f.d.a.A {
     Color4 a;
     private com.tsf.shell.f.d.a.b b;
 
@@ -15,7 +15,7 @@ public class b extends com.tsf.shell.f.d.a.a {
         this.a = new Color4();
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(final i iVar, Number3d number3d, Number3d number3d2, final Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.d.a.a.b.1
             @Override // com.censivn.C3DEngine.b.g.d
@@ -68,7 +68,7 @@ public class b extends com.tsf.shell.f.d.a.a {
         iVar.clearDefaultColor();
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public i e() {
         if (this.b == null) {
             this.b = new com.tsf.shell.f.d.a.b(this, true);
@@ -76,7 +76,7 @@ public class b extends com.tsf.shell.f.d.a.a {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.d.a.a
+    @Override // com.tsf.shell.f.d.a.A
     public void a(k kVar, Runnable runnable) {
         a(kVar, null, null, runnable);
     }

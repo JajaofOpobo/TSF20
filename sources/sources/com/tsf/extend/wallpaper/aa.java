@@ -23,7 +23,7 @@ public class aa {
     private Context b;
     private List<m> c;
     private boolean e;
-    private a h;
+    private A h;
     private com.android.volley.m i;
     private Handler j;
     private List<WeakReference<i.a>> d = new ArrayList();
@@ -257,7 +257,7 @@ public class aa {
         }
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.h = aVar;
     }
 

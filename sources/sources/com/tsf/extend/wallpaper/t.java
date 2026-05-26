@@ -27,7 +27,7 @@ public class t extends BaseAdapter implements View.OnClickListener {
     private static int[] l = {f.g.time_january, f.g.time_february, f.g.time_march, f.g.time_april, f.g.time_may, f.g.time_june, f.g.time_july, f.g.time_august, f.g.time_september, f.g.time_october, f.g.time_november, f.g.time_december};
     private ai b;
     private Context c;
-    private a f;
+    private A f;
     private ad.a g;
     private int h;
     private int i;
@@ -276,7 +276,7 @@ public class t extends BaseAdapter implements View.OnClickListener {
         }
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.f = aVar;
     }
 

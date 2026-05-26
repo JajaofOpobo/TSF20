@@ -26,7 +26,7 @@ class o {
             aVar.a(22.0f);
             aVar.b(12.0f);
             aVar.g(themeShellDescription.lassoLabelBgColor);
-            Bitmap bitmapB = aVar.b(arrayList.get(i));
+            Bitmap bitmapB = aVar.b(arrayList.get(I));
             canvas2.drawBitmap(bitmapB, 0.0f, 0.0f, (Paint) null);
             canvas.drawBitmap(bitmapCreateBitmap2, 0.0f, i * 32, (Paint) null);
             bitmapB.recycle();

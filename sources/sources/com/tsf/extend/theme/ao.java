@@ -9,7 +9,7 @@ import android.os.IBinder;
 public class ao {
     private static ao a;
     private com.tsf.extend.base.c.c b;
-    private a c;
+    private A c;
     private boolean d;
     private ServiceConnection e = new ServiceConnection() { // from class: com.tsf.extend.theme.ao.1
         @Override // android.content.ServiceConnection
@@ -68,7 +68,7 @@ public class ao {
         return null;
     }
 
-    public void a(a aVar) {
+    public void a(A aVar) {
         this.c = aVar;
     }
 

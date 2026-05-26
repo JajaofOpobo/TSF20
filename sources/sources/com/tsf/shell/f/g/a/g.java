@@ -110,7 +110,7 @@ public class g extends a {
     @Override // com.tsf.shell.f.e.g.a.c
     public void onHide() {
         super.onHide();
-        com.tsf.shell.manager.a.v.e.d().a((com.tsf.shell.f.i.c) null);
+        com.tsf.shell.manager.a.v.e.d().a((com.tsf.shell.f.i.C) null);
         this.c.b();
         int i = com.tsf.shell.manager.a.v.e.i();
         for (int i2 = 0; i2 < i; i2++) {

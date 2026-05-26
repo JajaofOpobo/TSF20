@@ -48,7 +48,7 @@ public class d extends com.tsf.shell.f.f.f {
                 d.this.a(this);
             }
 
-            @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.c, com.censivn.C3DEngine.b.f.j
+            @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);

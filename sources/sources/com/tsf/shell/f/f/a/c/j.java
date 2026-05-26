@@ -9,11 +9,11 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j {
-    private static com.tsf.shell.manager.o.a a;
+    private static com.tsf.shell.manager.o.A a;
 
     public static com.censivn.C3DEngine.b.f.a.a a() {
         if (a == null) {
-            a = new com.tsf.shell.manager.o.a(1.0f, 1.0f, 120, 120, 250, 42, 20);
+            a = new com.tsf.shell.manager.o.A(1.0f, 1.0f, 120, 120, 250, 42, 20);
             c.a aVar = new c.a();
             aVar.g = 32;
             a.ab = new com.tsf.shell.manager.o.a.b(0, aVar);

@@ -23,7 +23,7 @@ public class b extends d {
         for (int i = 0; i < arrayList.size(); i++) {
             i iVar2 = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar2);
-            if (iVar2 instanceof com.tsf.shell.f.i.b) {
+            if (iVar2 instanceof com.tsf.shell.f.i.B) {
                 Number3d number3d = h.E.get(i);
                 if (z) {
                     com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();

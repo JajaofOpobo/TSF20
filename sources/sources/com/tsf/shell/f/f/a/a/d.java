@@ -11,7 +11,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.f.f.a.a.a.a {
     private g.b a;
-    private com.tsf.shell.f.e.d<com.tsf.shell.f.i.b.e.e> b;
+    private com.tsf.shell.f.e.D<com.tsf.shell.f.i.b.e.e> b;
     private ArrayList<com.tsf.shell.f.i.b.e.g> c;
     private TextureElement d;
     private k e;
@@ -22,8 +22,8 @@ public class d extends com.tsf.shell.f.f.a.a.a.a {
         this.d = new TextureElement(0, false);
         this.f = -com.censivn.C3DEngine.b.b.a.a(50.0f);
         this.c = new ArrayList<>();
-        this.b = new com.tsf.shell.f.e.d<com.tsf.shell.f.i.b.e.e>() { // from class: com.tsf.shell.f.f.a.a.d.1
-            @Override // com.tsf.shell.f.e.d
+        this.b = new com.tsf.shell.f.e.D<com.tsf.shell.f.i.b.e.e>() { // from class: com.tsf.shell.f.f.a.a.d.1
+            @Override // com.tsf.shell.f.e.D
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public com.tsf.shell.f.i.b.e.e b() {
                 return new com.tsf.shell.f.i.b.e.e();

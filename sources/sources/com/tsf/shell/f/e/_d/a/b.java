@@ -45,7 +45,7 @@ public class b extends j {
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.b bVar = com.censivn.C3DEngine.b.g.a.c;
+        com.censivn.C3DEngine.b.g.B bVar = com.censivn.C3DEngine.b.g.a.c;
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.b.1
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
@@ -96,7 +96,7 @@ public class b extends j {
     }
 
     public void b() {
-        com.censivn.C3DEngine.b.g.b bVar = com.censivn.C3DEngine.b.g.a.c;
+        com.censivn.C3DEngine.b.g.B bVar = com.censivn.C3DEngine.b.g.a.c;
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.b.5
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {

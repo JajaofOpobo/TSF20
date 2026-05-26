@@ -31,7 +31,7 @@ public class a extends d {
             i iVar = arrayList.get(i);
             Number3d number3d = h.E.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar);
-            if (iVar instanceof com.tsf.shell.f.i.b) {
+            if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
                 if (z) {
                     dVar3.f(0.0f);

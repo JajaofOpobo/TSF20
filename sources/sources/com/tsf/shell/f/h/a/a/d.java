@@ -16,7 +16,7 @@ public class d implements b.a, c.a {
     private com.tsf.shell.f.h.a.c d;
     private com.censivn.C3DEngine.b.b.a.b e;
     private e f;
-    private a g;
+    private A g;
     private f h;
     private com.tsf.shell.f.h.a.a.a.c i;
     private int k;
@@ -39,7 +39,7 @@ public class d implements b.a, c.a {
         };
         this.e = new com.censivn.C3DEngine.b.b.a.b();
         this.i = new com.tsf.shell.f.h.a.a.a.c(this, cVar.c());
-        this.g = new a();
+        this.g = new A();
         this.h = new f();
         this.e.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.a.a(180.0f));
     }

@@ -11,14 +11,14 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends BaseAdapter {
-    ArrayList<com.tsf.shell.widget.alarm.d.a> a = new ArrayList<>();
+    ArrayList<com.tsf.shell.widget.alarm.d.A> a = new ArrayList<>();
     private boolean b = false;
 
     public a() {
         a();
     }
 
-    public void a(ArrayList<com.tsf.shell.widget.alarm.d.a> arrayList) {
+    public void a(ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList) {
         this.a.clear();
         this.a = null;
         this.a = arrayList;
@@ -60,7 +60,7 @@ public class a extends BaseAdapter {
             a(SettingActivity.a.getString(m.f.autosetmylocation), view);
             imageView.setImageResource(m.b.activity_list_location_ico);
         } else {
-            com.tsf.shell.widget.alarm.d.a aVar = this.a.get(i - 1);
+            com.tsf.shell.widget.alarm.d.A aVar = this.a.get(i - 1);
             a(aVar.a + "," + aVar.b, view);
             view.setTag(this.a.get(i - 1));
             imageView.setImageResource(m.b.activity_list_city_ico);

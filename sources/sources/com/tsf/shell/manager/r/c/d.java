@@ -20,19 +20,19 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d implements b.a, e.a, h.a, n.a {
-    private static a e;
+    private static A e;
     private j a;
     private h b;
     private String c;
     private String d;
     private boolean f;
     private a.C0133a g;
-    private ArrayList<com.tsf.shell.f.i.b> h;
+    private ArrayList<com.tsf.shell.f.i.B> h;
     private boolean i = false;
     private boolean j = false;
 
-    public class a implements Comparator<i> {
-        public a() {
+    public class A implements Comparator<i> {
+        public A() {
         }
 
         @Override // java.util.Comparator
@@ -52,7 +52,7 @@ public class d implements b.a, e.a, h.a, n.a {
 
     public d() {
         if (e == null) {
-            e = new a();
+            e = new A();
         }
         this.d = com.censivn.C3DEngine.a.d().getString(b.i.line_picker_back_to_select);
         this.c = com.censivn.C3DEngine.a.d().getString(b.i.notic_function_unavailable);
@@ -171,14 +171,14 @@ public class d implements b.a, e.a, h.a, n.a {
             if (bVar.ao()) {
                 bVar.ar();
             }
-            com.tsf.shell.f.i.b bVar2 = (com.tsf.shell.f.i.b) mVar;
+            com.tsf.shell.f.i.B bVar2 = (com.tsf.shell.f.i.B) mVar;
             this.i = true;
             bVar2.setDefaultColor(h.a);
             this.h.add(bVar2);
             return;
         }
         if (mVar instanceof com.tsf.shell.f.i.b.d.b) {
-            com.tsf.shell.f.i.b bVar3 = (com.tsf.shell.f.i.b) mVar;
+            com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) mVar;
             this.i = true;
             bVar3.setDefaultColor(h.a);
             this.h.add(bVar3);
@@ -187,7 +187,7 @@ public class d implements b.a, e.a, h.a, n.a {
 
     @Override // com.tsf.shell.f.e.h.a
     public void f() {
-        Iterator<com.tsf.shell.f.i.b> it = this.h.iterator();
+        Iterator<com.tsf.shell.f.i.B> it = this.h.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
@@ -202,14 +202,14 @@ public class d implements b.a, e.a, h.a, n.a {
     @Override // com.tsf.shell.f.e.n.a
     public void a(int i) {
         int i2 = 1;
-        ArrayList<com.tsf.shell.f.i.b> arrayList = new ArrayList<>();
-        for (com.tsf.shell.f.i.b bVar : this.h) {
+        ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList<>();
+        for (com.tsf.shell.f.i.B bVar : this.h) {
             if (!bVar.hasDestroyed()) {
                 arrayList.add(bVar);
             }
         }
         this.h.clear();
-        Iterator<com.tsf.shell.f.i.b> it = arrayList.iterator();
+        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
@@ -237,7 +237,7 @@ public class d implements b.a, e.a, h.a, n.a {
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
                                 while (it2.hasNext()) {
-                                    g.a((com.tsf.shell.f.i.b) it2.next(), (Runnable) null);
+                                    g.a((com.tsf.shell.f.i.B) it2.next(), (Runnable) null);
                                 }
                             }
                         });
@@ -246,7 +246,7 @@ public class d implements b.a, e.a, h.a, n.a {
                 break;
             case 3:
                 final ArrayList arrayList3 = new ArrayList();
-                for (com.tsf.shell.f.i.b bVar2 : arrayList) {
+                for (com.tsf.shell.f.i.B bVar2 : arrayList) {
                     if (bVar2 instanceof com.tsf.shell.f.i.b.e.b) {
                         arrayList3.add((com.tsf.shell.f.i.b.e.b) bVar2);
                     }
@@ -277,9 +277,9 @@ public class d implements b.a, e.a, h.a, n.a {
                 }
                 break;
             case 4:
-                for (com.tsf.shell.f.i.b bVar4 : arrayList) {
-                    if (bVar4 instanceof com.tsf.shell.f.i.c) {
-                        ((com.tsf.shell.f.i.c) bVar4).ap();
+                for (com.tsf.shell.f.i.B bVar4 : arrayList) {
+                    if (bVar4 instanceof com.tsf.shell.f.i.C) {
+                        ((com.tsf.shell.f.i.C) bVar4).ap();
                     }
                 }
                 break;

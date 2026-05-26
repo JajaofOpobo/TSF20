@@ -34,7 +34,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
     }
 
     @Override // com.tsf.shell.f.e.f.b
-    public void a(final com.tsf.shell.f.i.c cVar) {
+    public void a(final com.tsf.shell.f.i.C cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.m.a.1
             @Override // java.lang.Runnable
             public void run() {
@@ -183,15 +183,15 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                 this.g.setAnimationObjectState(true);
                 com.tsf.shell.manager.a.j.a(this.g);
                 this.d = true;
-                com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) this.g;
+                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.g;
                 if (cVar.A().e()) {
-                    ArrayList<com.tsf.shell.f.i.c> arrayListI = cVar.A().i();
+                    ArrayList<com.tsf.shell.f.i.C> arrayListI = cVar.A().i();
                     cVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     for (int i = 0; i < size; i++) {
                         com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) arrayListI.get(i);
                         if (bVar != cVar) {
-                            cVar.a((com.tsf.shell.f.i.c) bVar);
+                            cVar.a((com.tsf.shell.f.i.C) bVar);
                         }
                     }
                     cVar.A().g();
@@ -211,10 +211,10 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                     int childIndexOf = a.this.getChildIndexOf(this.g);
                     this.g.position().setAllFrom(this.b);
                     a.this.b(this.g);
-                    com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) this.g;
-                    a.this.e.a((com.tsf.shell.f.i.b) cVar, true);
+                    com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.g;
+                    a.this.e.a((com.tsf.shell.f.i.B) cVar, true);
                     if (cVar.as()) {
-                        ArrayList<com.tsf.shell.f.i.c> arrayListAw = cVar.aw();
+                        ArrayList<com.tsf.shell.f.i.C> arrayListAw = cVar.aw();
                         int size = arrayListAw == null ? 0 : arrayListAw.size();
                         if (size > 0) {
                             if (childIndexOf != -1) {
@@ -224,7 +224,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                                     bVar.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
                                     bVar.removeFromParent();
                                     a.this.addChildAt(bVar, childIndexOf);
-                                    a.this.e.a((com.tsf.shell.f.i.b) bVar, true);
+                                    a.this.e.a((com.tsf.shell.f.i.B) bVar, true);
                                 }
                             } else {
                                 HashMap map = new HashMap();

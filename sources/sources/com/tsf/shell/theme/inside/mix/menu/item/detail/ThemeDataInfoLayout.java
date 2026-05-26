@@ -21,7 +21,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
     private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.a.a(280.0f);
     private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.a.a(500.0f);
     private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
-        @Override // com.tsf.shell.f.e.d
+        @Override // com.tsf.shell.f.e.D
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public a b() {
             return ThemeDataInfoLayout.this.new a();

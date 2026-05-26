@@ -20,7 +20,7 @@ public class ah extends com.tsf.extend.g implements View.OnClickListener {
             dismiss();
         } else if (id == f.e.cover || id == f.e.content_layout || id == f.e.wallpaper_store_root) {
             dismiss();
-            com.tsf.extend.base.b.a(this.c, b);
+            com.tsf.extend.base.b.A(this.c, b);
         }
     }
 

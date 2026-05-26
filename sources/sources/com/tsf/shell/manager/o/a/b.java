@@ -14,7 +14,7 @@ public class b {
     public static final int d = (int) com.censivn.C3DEngine.b.b.a.a(50.0f);
     public int b;
     public int c;
-    private com.tsf.shell.manager.o.a e;
+    private com.tsf.shell.manager.o.A e;
     private k f = new k(0.0f, 0.0f, false);
     private TextureElement g = new TextureElement(0, false);
     private c.a h;
@@ -33,7 +33,7 @@ public class b {
         return this.g;
     }
 
-    public void a(com.tsf.shell.manager.o.a aVar) {
+    public void a(com.tsf.shell.manager.o.A aVar) {
         if (this.e != aVar) {
             this.e = aVar;
             this.f.a(aVar.J, aVar.K + d);
@@ -63,7 +63,7 @@ public class b {
         }
     }
 
-    public Bitmap a(String str, com.tsf.shell.manager.o.a aVar) {
+    public Bitmap a(String str, com.tsf.shell.manager.o.A aVar) {
         return c.a(str, this.h.g, aVar, this.h);
     }
 }

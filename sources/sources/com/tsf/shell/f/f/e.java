@@ -3,7 +3,7 @@ package com.tsf.shell.f.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends c<l> {
+public class e extends C<l> {
     private boolean a;
     private boolean b;
     private boolean c;
@@ -15,24 +15,24 @@ public class e extends c<l> {
         this.c = false;
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public boolean b() {
         return com.tsf.shell.manager.b.e.E();
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
         h.d();
         com.tsf.shell.manager.b.e.i(z);
         com.tsf.shell.manager.b.e.g(str);
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public String c() {
         return com.tsf.shell.manager.b.e.F();
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void a(l lVar) {
     }
 
@@ -52,7 +52,7 @@ public class e extends c<l> {
         com.tsf.shell.manager.a.h.s().d(600);
     }
 
-    @Override // com.tsf.shell.f.f.c
+    @Override // com.tsf.shell.f.f.C
     public void f() {
         super.f();
         if (this.a) {

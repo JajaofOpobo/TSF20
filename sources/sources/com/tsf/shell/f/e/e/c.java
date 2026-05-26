@@ -71,41 +71,41 @@ public class c {
             }
         };
         a aVar = new a(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.2
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
                 super.a(fVar);
                 w.a(3);
                 com.tsf.shell.manager.a.q.a(-52736);
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(com.tsf.shell.f.e.F fVar) {
                 return true;
             }
 
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
                 super.e(fVar);
-                final com.tsf.shell.f.i.b bVar = (com.tsf.shell.f.i.b) fVar;
-                ArrayList<com.tsf.shell.f.i.b> arrayList = new ArrayList();
-                if (bVar instanceof com.tsf.shell.f.i.c) {
-                    com.tsf.shell.f.i.c cVar = (com.tsf.shell.f.i.c) bVar;
+                final com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
+                ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList();
+                if (bVar instanceof com.tsf.shell.f.i.C) {
+                    com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
                     if (cVar.as()) {
-                        Iterator<com.tsf.shell.f.i.c> it = cVar.aw().iterator();
+                        Iterator<com.tsf.shell.f.i.C> it = cVar.aw().iterator();
                         while (it.hasNext()) {
                             arrayList.add(it.next());
                         }
                     }
                 }
                 arrayList.add(bVar);
-                for (com.tsf.shell.f.i.b bVar2 : arrayList) {
+                for (com.tsf.shell.f.i.B bVar2 : arrayList) {
                     bVar2.removeFromParent();
                     com.tsf.shell.manager.a.j.a(bVar2);
                 }
                 if (arrayList.size() > 1) {
                     Iterator it2 = arrayList.iterator();
                     while (it2.hasNext()) {
-                        g.a((com.tsf.shell.f.i.b) it2.next(), (Runnable) null);
+                        g.a((com.tsf.shell.f.i.B) it2.next(), (Runnable) null);
                     }
                 } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                     g.a(bVar, new Runnable() { // from class: com.tsf.shell.f.e.e.c.2.1
@@ -121,10 +121,10 @@ public class c {
                 }
             }
 
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
-                ((com.tsf.shell.f.i.b) fVar).clearDefaultColor();
+                ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
                 com.tsf.shell.manager.a.q.a();
             }
         };
@@ -136,27 +136,27 @@ public class c {
         this.g.addChild(aVar);
         this.g.setAABBPX(aVar.minX(), aVar.minY(), aVar.minZ(), aVar.maxX(), aVar.maxY(), aVar.maxZ());
         b bVar = new b(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.3
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
                 w.a(3);
                 c.this.m.b = fVar;
                 com.censivn.C3DEngine.a.a().b(c.this.m, 400L);
                 com.tsf.shell.manager.a.q.a(-16728065);
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(com.tsf.shell.f.e.F fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
                 com.censivn.C3DEngine.a.a().g(c.this.m);
                 c.this.m.b = null;
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
                 com.censivn.C3DEngine.a.a().g(c.this.m);
                 c.this.m.b = null;
                 com.tsf.shell.manager.a.q.a();
@@ -170,27 +170,27 @@ public class c {
         this.h.addChild(bVar);
         this.h.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
         b bVar2 = new b(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.4
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
                 if (!com.tsf.shell.manager.a.h.n().c()) {
                     com.tsf.shell.manager.a.h.n().d();
                     c.this.c();
-                    com.tsf.shell.manager.a.h.d.a((com.tsf.shell.f.i.b) fVar);
+                    com.tsf.shell.manager.a.h.d.a((com.tsf.shell.f.i.B) fVar);
                     w.a(3);
                 }
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(com.tsf.shell.f.e.F fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
                 com.tsf.shell.manager.a.q.a();
             }
         };
@@ -202,37 +202,37 @@ public class c {
         this.i.addChild(bVar2);
         this.i.setAABBPX(bVar2.minX(), bVar2.minY(), bVar2.minZ(), bVar2.maxX(), bVar2.maxY(), bVar2.maxZ());
         a aVar2 = new a(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.5
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public boolean a() {
                 return super.a();
             }
 
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
                 super.a(fVar);
                 w.a(3);
-                ((com.tsf.shell.f.i.b) fVar).setDefaultColor(com.tsf.shell.manager.o.c.c);
+                ((com.tsf.shell.f.i.B) fVar).setDefaultColor(com.tsf.shell.manager.o.c.c);
                 com.tsf.shell.manager.a.q.a(-52736);
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(com.tsf.shell.f.e.F fVar) {
                 super.b(fVar);
-                com.tsf.shell.f.i.b bVar3 = (com.tsf.shell.f.i.b) fVar;
+                com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) fVar;
                 bVar3.clearDefaultColor();
                 com.tsf.shell.manager.a.q.a();
                 return com.tsf.shell.manager.a.h.t().d(bVar3);
             }
 
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
                 super.e(fVar);
             }
 
-            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
-                ((com.tsf.shell.f.i.b) fVar).clearDefaultColor();
+                ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
                 com.tsf.shell.manager.a.q.a();
             }
         };
@@ -244,19 +244,19 @@ public class c {
         this.j.addChild(aVar2);
         this.j.setAABBPX(aVar2.minX(), aVar2.minY(), aVar2.minZ(), aVar2.maxX(), aVar2.maxY(), aVar2.maxZ());
         b bVar3 = new b(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.6
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public boolean a() {
                 return super.a();
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
                 w.a(3);
                 com.tsf.shell.manager.a.q.a(-16728065);
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(final com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(final com.tsf.shell.f.e.F fVar) {
                 com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.e.c.6.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -268,12 +268,12 @@ public class c {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
                 com.tsf.shell.manager.a.q.a();
             }
         };
@@ -285,21 +285,21 @@ public class c {
         this.k.addChild(bVar3);
         this.k.setAABBPX(bVar3.minX(), bVar3.minY(), bVar3.minZ(), bVar3.maxX(), bVar3.maxY(), bVar3.maxZ());
         b bVar4 = new b(com.censivn.C3DEngine.b.b.a.c * 120.0f, com.censivn.C3DEngine.b.b.a.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.7
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void a(com.tsf.shell.f.e.F fVar) {
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public boolean b(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public boolean b(com.tsf.shell.f.e.F fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void e(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void e(com.tsf.shell.f.e.F fVar) {
             }
 
-            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-            public void d(com.tsf.shell.f.e.f fVar) {
+            @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+            public void d(com.tsf.shell.f.e.F fVar) {
             }
         };
         bVar4.alpha(0.0f);
@@ -311,8 +311,8 @@ public class c {
         this.l.setAABBPX(bVar4.minX(), bVar4.minY(), bVar4.minZ(), bVar4.maxX(), bVar4.maxY(), bVar4.maxZ());
         this.m = new f() { // from class: com.tsf.shell.f.e.e.c.8
             @Override // com.tsf.shell.f.e.e.f
-            public void a(com.tsf.shell.f.e.f fVar) {
-                com.tsf.shell.manager.a.h.b((com.tsf.shell.f.i.b) fVar);
+            public void a(com.tsf.shell.f.e.F fVar) {
+                com.tsf.shell.manager.a.h.b((com.tsf.shell.f.i.B) fVar);
             }
         };
     }
@@ -321,7 +321,7 @@ public class c {
         return this.f;
     }
 
-    public void a(com.tsf.shell.f.i.b bVar, float f, float f2, boolean z, int... iArr) {
+    public void a(com.tsf.shell.f.i.B bVar, float f, float f2, boolean z, int... iArr) {
         float f3;
         float f4;
         if (bVar.S()) {
@@ -449,18 +449,18 @@ public class c {
             addChild(this.a);
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-        public void a(com.tsf.shell.f.e.f fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+        public void a(com.tsf.shell.f.e.F fVar) {
             e();
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-        public void e(com.tsf.shell.f.e.f fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+        public void e(com.tsf.shell.f.e.F fVar) {
             f();
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.f
-        public void d(com.tsf.shell.f.e.f fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
+        public void d(com.tsf.shell.f.e.F fVar) {
             f();
         }
 

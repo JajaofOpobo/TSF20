@@ -27,7 +27,7 @@ public class c extends d {
         while (i < arrayList.size()) {
             i iVar = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar);
-            if (iVar instanceof com.tsf.shell.f.i.b) {
+            if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
                 if (z) {
                     dVar3.l(0.0f);
