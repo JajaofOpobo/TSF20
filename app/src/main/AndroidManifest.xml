@@ -115,22 +115,10 @@
             </intent-filter>
         </receiver>
 
-        <receiver
-            android:name="com.tsf.shell.manager.wallpaper.ShellWallpaperManager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
-            </intent-filter>
-        </receiver>
-
         <service
             android:name="com.tsf.shell.service.LauncherService"
             android:exported="false"
             android:foregroundServiceType="specialUse" />
-
-        <receiver
-            android:name="com.tsf.extend.theme.core.ThemeManagerService"
-            android:exported="false" />
 
         <service
             android:name=".badge.BadgeNotificationService"

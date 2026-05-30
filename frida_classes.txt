@@ -1,0 +1,50 @@
+     ____
+    / _  |   Frida 17.9.11 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Attaching...
+=== TSF SHELL ENUMERATED CLASSES ===
+com.tsf.shell.ShellProvider
+com.tsf.shell.plugin.themepicker.icondesigner.f
+com.tsf.shell.a
+com.tsf.shell.plugin.themepicker.icondesigner.g
+com.tsf.shell.ShellActivity
+com.tsf.shell.ShellApplication
+com.censivn.C3DEngine.b.c.c
+com.tsf.extend.h
+com.tsf.shell.manager.bind.a
+com.tsf.shell.manager.bind.b
+com.tsf.shell.manager.bind.c
+com.tsf.shell.manager.bind.d
+com.tsf.shell.plugin.themepicker.icondesigner.ThemeIconDesignerProvider$a
+com.tsf.extend.theme.ThemeCmClubProvider$a
+com.tsf.shell.ShellApplication$a
+com.tsf.shell.manager.b.e
+com.tsf.shell.Home$a
+com.tsf.shell.manager.a.a
+com.tsf.shell.widget.alarm.AlarmUtils.AlarmProvider
+com.tsf.shell.ShellBroadcastReceiver
+com.tsf.extend.theme.ThemeCmClubProvider
+com.tsf.shell.plugin.themepicker.e
+com.tsf.extend.base.actstru.model.a.a
+com.tsf.shell.widget.alarm.i
+com.tsf.extend.f$d
+com.tsf.shell.ShellProvider$a
+com.tsf.a
+com.tsf.extend.base.j.z
+com.tsf.shell.widget.alarm.AlarmUtils.AlarmProvider$a
+com.censivn.C3DEngine.a
+com.tsf.shell.manager.bind.ShellModel
+com.tsf.shell.Home
+com.tsf.shell.plugin.summary.ShellSummaryActivity
+com.tsf.shell.InstallShortcutReceiver
+com.tsf.shell.plugin.themepicker.icondesigner.ThemeIconDesignerProvider
+com.tsf.b$f
+=== TOTAL TSF CLASSES: 36 ===
