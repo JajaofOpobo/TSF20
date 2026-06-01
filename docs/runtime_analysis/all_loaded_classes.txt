@@ -1,0 +1,9 @@
+=== RUNTIME CLASS ENUMERATION (TSF Shell 3.9.4) ===
+Total loaded: 0 (filtered to TSF/C3D/KSM only)
+
+--- TSF Shell (0) ---
+
+--- C3DEngine (0) ---
+
+--- KSM (0) ---
+

@@ -1,0 +1,802 @@
+
+=== com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget ===
+  Super: Ljava.lang.Object;
+  public abstract getVirtualTarget()Ljava/lang/Object;
+
+=== com.censivn.C3DEngine.api.core.VObject3d ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public alpha()I
+  public alpha(I)V
+  public calAABB()V
+  public calTouchCollision(F F)Z
+  public colorFillEnable()Z
+  public defaultColor()Lcom/censivn/C3DEngine/api/element/Color4;
+  public defaultColor(Lcom/censivn/C3DEngine/api/element/Color4;)V
+  public defaultColor(S S S S)V
+  public destroy()V
+  public destroy(Z)V
+  public dispatchDraw()V
+  public doubleSidedEnabled(Z)V
+  public doubleSidedEnabled()Z
+  public draw()V
+  public drawElement()V
+  public drawMVPMatrix()V
+  public freeVBO()V
+  public getAABBMatrix()[F
+  public getAnimationObjectState()Z
+  public getHittingTarget(F F Z)Lcom/censivn/C3DEngine/api/core/VObject3d;
+  public getTag()Ljava/lang/Object;
+  public getTag(Ljava/lang/Object;)Ljava/lang/Object;
+  public getVirtualTarget()Ljava/lang/Object;
+  public globalToLocal(Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public hasDestroyed()Z
+  public ignoreFaces(Z)V
+  public ignoreFaces()Z
+  public invalidate()V
+  public killFocus()V
+  public localRotationToGlobal(Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public localToGlobal(Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public mouseEnabled(Z)V
+  public mouseEnabled()Z
+  public mouseSkip(Z)V
+  public mouseSkip()Z
+  public moveAllPointsPX(F F F)V
+  public moveAllPointsSP(F F F)V
+  public name()Ljava/lang/String;
+  public name(Ljava/lang/String;)V
+  public onDrawEnd()V
+  public onDrawStart()V
+  public onFocus()V
+  public onKillFocus()V
+  public onUpdateAnimation()V
+  public parent()Lcom/censivn/C3DEngine/api/core/VObject3dContainer;
+  public point()Lcom/censivn/C3DEngine/api/element/PointBufferManager;
+  public position()Lcom/censivn/C3DEngine/api/element/PositionNumber3d;
+  public resetColor()V
+  public resetDefaultShader()V
+  public rotation()Lcom/censivn/C3DEngine/api/element/Number3d;
+  public scale()Lcom/censivn/C3DEngine/api/element/Number3d;
+  public setAABBPX(F F F F F F)V
+  public setAABBSP(F F F F F F)V
+  public setAnimationObjectState(Z)V
+  public setCustomShader(Lcom/censivn/C3DEngine/common/shader/Shader;)V
+  public setFocus()V
+  public setMouseEventListener(Lcom/censivn/C3DEngine/api/event/VMouseEventListener;)V
+  public setTag(Ljava/lang/Object;)V
+  public setTag(Ljava/lang/Object; Ljava/lang/Object;)V
+  public setZOrderOnTop()V
+  public syncUpdateFacesVBO()V
+  public syncUpdatePointVBO()V
+  public syncUpdateUvsVBO()V
+  public textures()Lcom/censivn/C3DEngine/api/core/VTextureList;
+  public texturesEnabled(Ljava/lang/Boolean;)V
+  public texturesEnabled()Z
+  public updateAABBMatrix([F)V
+  public updateFacesVBO()V
+  public updatePointsVBO()V
+  public updateUvsVBO()V
+  public useVBO(Ljava/lang/Boolean;)V
+  public useVBO()Z
+  public uv()Lcom/censivn/C3DEngine/api/element/UvBufferManager;
+  public visible(Ljava/lang/Boolean;)V
+  public visible()Z
+
+=== com.censivn.C3DEngine.api.core.VObject3dContainer ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3d;
+  public constructor <init>()V
+  public addChild(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public addChildAt(Lcom/censivn/C3DEngine/api/core/VObject3d; I)V
+  public children()Ljava/util/ArrayList;
+  public destroy()V
+  public getChildAt(I)Lcom/censivn/C3DEngine/api/core/VObject3d;
+  public getChildByName(Ljava/lang/String;)Lcom/censivn/C3DEngine/api/core/VObject3d;
+  public getChildIndexOf(Lcom/censivn/C3DEngine/api/core/VObject3d;)I
+  public numChildren()I
+  public onDrawChildEnd(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public onDrawChildStart(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public removeChild(Lcom/censivn/C3DEngine/api/core/VObject3d;)Z
+  public removeChildAt(I)Lcom/censivn/C3DEngine/api/core/VObject3d;
+  public renderChildren(Z)V
+  public renderChildren()Z
+
+=== com.censivn.C3DEngine.api.core.VObjectManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(I)V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/core/VObjectManager;)I
+  static synthetic access$1(Lcom/censivn/C3DEngine/api/core/VObjectManager;)I
+  static synthetic access$2(Lcom/censivn/C3DEngine/api/core/VObjectManager;)Ljava/util/ArrayList;
+  public addObject(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public destroy()V
+  public removeObject(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+
+=== com.censivn.C3DEngine.api.core.VRenderManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.core.VRenderer ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static lockView(F F)V
+  public static pause()V
+  public static resume()V
+  public static unlockView()V
+
+=== com.censivn.C3DEngine.api.core.VTextureist ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(Lcom/censivn/C3DEngine/b/ac;)V
+  public add(I Lcom/censivn/C3DEngine/api/element/TextureDescription;)V
+  public addElement(Lcom/censivn/C3DEngine/api/element/TextureElement;)Lcom/censivn/C3DEngine/api/element/TextureDescription;
+  public clear()V
+  public get(I)Lcom/censivn/C3DEngine/api/element/TextureDescription;
+  public getByElement(Lcom/censivn/C3DEngine/api/element/TextureElement;)Lcom/censivn/C3DEngine/api/element/TextureDescription;
+  public remove(Lcom/censivn/C3DEngine/api/element/TextureDescription;)Z
+  public removeAll()V
+  public removeElement(Lcom/censivn/C3DEngine/api/element/TextureElement;)Z
+  public size()I
+
+=== com.censivn.C3DEngine.api.core.VTextureManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(I)V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/core/VTextureManager;)Ljava/util/ArrayList;
+  public contains(Lcom/censivn/C3DEngine/api/element/TextureElement;)Z
+  public createTexture(Landroid/graphics/Bitmap; Z)Lcom/censivn/C3DEngine/api/element/TextureElement;
+  public deleteTexture(Lcom/censivn/C3DEngine/api/element/TextureElement;)V
+  public destroy()V
+  public replaceTexture(Lcom/censivn/C3DEngine/api/core/VObject3d; Lcom/censivn/C3DEngine/api/element/TextureElement; Lcom/censivn/C3DEngine/api/element/TextureElement; Z)V
+  public replaceTexture(Lcom/censivn/C3DEngine/api/element/TextureElement; Landroid/graphics/Bitmap;)V
+  public replaceTexture(Lcom/censivn/C3DEngine/api/element/TextureElement; Landroid/graphics/Bitmap; Z)V
+  public replaceTextureByTween(Lcom/censivn/C3DEngine/api/core/VObject3d; Lcom/censivn/C3DEngine/api/element/TextureElement; Lcom/censivn/C3DEngine/api/element/TextureElement; I Z)V
+
+=== com.censivn.C3DEngine.api.core.VWidgetContainer ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3dContainer;
+  public constructor <init>(I)V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)Lcom/censivn/C3DEngine/api/core/VWidgetContainer;
+  static synthetic access$1(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)Lcom/censivn/C3DEngine/api/core/VTextureManager;
+  static synthetic access$2(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)Lcom/censivn/C3DEngine/api/core/VObjectManager;
+  static synthetic access$3(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)Z
+  static synthetic access$4(Lcom/censivn/C3DEngine/api/core/VWidgetContainer; Z)V
+  static synthetic access$5(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)F
+  static synthetic access$6(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)F
+  static synthetic access$7(Lcom/censivn/C3DEngine/api/core/VWidgetContainer;)Z
+  private init(I)V
+  public allowResize(Z)V
+  public allowResize()Z
+  public getHeight()F
+  public getLauncherInfo()Lcom/censivn/C3DEngine/api/element/info/LauncherItem3DInfo;
+  public getLockViewOffsetX()F
+  public getLockViewOffsetY()F
+  public getObjectManager()Lcom/censivn/C3DEngine/api/core/VObjectManager;
+  public getPage()Lcom/censivn/C3DEngine/api/shell/VPage;
+  public getResizeMaxScale()F
+  public getResizeMinScale()F
+  public getShakeEffectState()Z
+  public getTextureManager()Lcom/censivn/C3DEngine/api/core/VTextureManager;
+  public getUserRotation()Z
+  public getWidgetScale()F
+  public getWidth()F
+  public interceptMouseEventScroll(Z)V
+  public interceptMouseEventScroll()Z
+  public interceptMouseEventVerticalScroll(Z)V
+  public interceptMouseEventVerticalScroll()Z
+  public lockView(Z)V
+  public lockView()Z
+  public onChangeSceneSize(F F)V
+  public onChoicePageEnd()V
+  public onChoicePageStart()V
+  public onDestroy()V
+  public onDragEnd()V
+  public onDragRelease()V
+  public onDragStart()V
+  public onPause()V
+  public onRemoveStart()V
+  public onResume()V
+  public setLockViewOffsetX(F)V
+  public setLockViewOffsetY(F)V
+  public setMouseEventListener(Lcom/censivn/C3DEngine/api/event/VMouseEventListener;)V
+  public setResizeMaxScale(F)V
+  public setResizeMinScale(F)V
+  public setShakeEffectState(Z)V
+  public setUserRotation(Z)V
+  public setWidgetScale(F)V
+
+=== com.censivn.C3DEngine.api.effects.VEffectsStack ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public addModifier(Lcom/censivn/C3DEngine/api/effects/VIEffects;)V
+  public apply()V
+  public clear()V
+  public collapse()V
+
+=== com.censivn.C3DEngine.api.effects.VIEffects ===
+  Super: Ljava.lang.Object;
+  public abstract getVirtualTarget()Ljava/lang/Object;
+
+=== com.censivn.C3DEngine.api.effects.core.Vector3 ===
+  Super: Ljava.lang.Object;
+  static constructor <clinit>()V
+  public constructor <init>(F F F)V
+  public static cross(Lcom/censivn/C3DEngine/api/effects/core/Vector3; Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public static distance(Lcom/censivn/C3DEngine/api/effects/core/Vector3; Lcom/censivn/C3DEngine/api/effects/core/Vector3;)F
+  public static dot(Lcom/censivn/C3DEngine/api/effects/core/Vector3; Lcom/censivn/C3DEngine/api/effects/core/Vector3;)F
+  public static sum(Lcom/censivn/C3DEngine/api/effects/core/Vector3; Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final add(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final clone()Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final bridge synthetic clone()Ljava/lang/Object;
+  public final divide(F)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final equals(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Ljava/lang/Boolean;
+  public final getMagnitude()F
+  public final multiply(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final multiplyScalar(F)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final negate()Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final normalize()V
+  public final setMagnitude(F)V
+  public final subtract(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public final toString()Ljava/lang/String;
+  public final zero()V
+
+=== com.censivn.C3DEngine.api.effects.modifiers.VTwist ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(F)V
+  public apply()V
+  public getAngle()F
+  public getCenter()Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public getVector()Lcom/censivn/C3DEngine/api/effects/core/Vector3;
+  public getVirtualTarget()Ljava/lang/Object;
+  public setAngle(F)V
+  public setCenter(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)V
+  public setVector(Lcom/censivn/C3DEngine/api/effects/core/Vector3;)V
+
+=== com.censivn.C3DEngine.api.element.Color4 ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(F F F F)V
+  public constructor <init>(I I I I)V
+  public constructor <init>(S S S S)V
+  public clone()Lcom/censivn/C3DEngine/api/element/Color4;
+  public bridge synthetic clone()Ljava/lang/Object;
+  public setAll(J)V
+  public setAll(S S S S)V
+  public toFloatBuffer()Ljava/nio/FloatBuffer;
+  public toFloatBuffer(Ljava/nio/FloatBuffer;)V
+  public toString()Ljava/lang/String;
+
+=== com.censivn.C3DEngine.api.element.Number3d ===
+  Super: Ljava.lang.Object;
+  static constructor <clinit>()V
+  public constructor <init>()V
+  public constructor <init>(F F F)V
+  public static add(Lcom/censivn/C3DEngine/api/element/Number3d; Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public static cross(Lcom/censivn/C3DEngine/api/element/Number3d; Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public static dot(Lcom/censivn/C3DEngine/api/element/Number3d; Lcom/censivn/C3DEngine/api/element/Number3d;)F
+  public static multiply(Lcom/censivn/C3DEngine/api/element/Number3d; Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public static subtract(Lcom/censivn/C3DEngine/api/element/Number3d; Lcom/censivn/C3DEngine/api/element/Number3d;)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public add(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public clone()Lcom/censivn/C3DEngine/api/element/Number3d;
+  public bridge synthetic clone()Ljava/lang/Object;
+  public length()F
+  public multiply(Ljava/lang/Float;)V
+  public normalize()V
+  public reset()V
+  public rotateAll(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public rotateDegressX(F)V
+  public rotateDegressY(F)V
+  public rotateDegressZ(F)V
+  public rotateReverseAll(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public rotateX(F)V
+  public rotateY(F)V
+  public rotateZ(F)V
+  public setAll(F F F)V
+  public setAllFrom(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public subtract(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public toString()Ljava/lang/String;
+
+=== com.censivn.C3DEngine.api.element.PointBufferManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(I)V
+  public constructor <init>(Ljava/nio/FloatBuffer; I)V
+  public addPX(F F F)V
+  public addPX(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public addSP(F F F)V
+  public addSP(Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public buffer()Ljava/nio/FloatBuffer;
+  public capacity()I
+  public clear()V
+  public clone()Lcom/censivn/C3DEngine/api/element/PointBufferManager;
+  public bridge synthetic clone()Ljava/lang/Object;
+  public getAsNumber3dPX(I)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public getAsNumber3dSP(I)Lcom/censivn/C3DEngine/api/element/Number3d;
+  public overwrite([F)V
+  public putInNumber3d(I Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public pxX(I)F
+  public pxX(I F)V
+  public pxY(I)F
+  public pxY(I F)V
+  public pxZ(I)F
+  public pxZ(I F)V
+  public setPX(I F F F)V
+  public setPX(I Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public setSP(I F F F)V
+  public setSP(I Lcom/censivn/C3DEngine/api/element/Number3d;)V
+  public setYPX(I F)V
+  public size()I
+  public spX(I)F
+  public spX(I F)V
+  public spY(I)F
+  public spY(I F)V
+  public spZ(I)F
+  public spZ(I F)V
+
+=== com.censivn.C3DEngine.api.element.PositionNumber3d ===
+  Super: Lcom.censivn.C3DEngine.api.element.Number3d;
+  public constructor <init>()V
+  public constructor <init>(F F F)V
+  public pxX()F
+  public pxX(F)V
+  public pxY()F
+  public pxY(F)V
+  public pxZ()F
+  public pxZ(F)V
+  public spAll(F F F)V
+  public spX()F
+  public spX(F)V
+  public spY()F
+  public spY(F)V
+  public spZ()F
+  public spZ(F)V
+
+=== com.censivn.C3DEngine.api.element.TextureDescription ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(Lcom/censivn/C3DEngine/api/element/TextureElement;)V
+  public constructor <init>(Lcom/censivn/C3DEngine/api/element/TextureElement; Ljava/util/ArrayList;)V
+
+=== com.censivn.C3DEngine.api.element.TextureElement ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(I Z)V
+
+=== com.censivn.C3DEngine.api.element.TextureEnvDescription ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(I I)V
+  public setAll(I I)V
+
+=== com.censivn.C3DEngine.api.element.UvBufferManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(I)V
+  public constructor <init>(Ljava/nio/FloatBuffer; I)V
+  public add(F F)V
+  public add(Lcom/censivn/C3DEngine/api/element/Uv;)V
+  public buffer()Ljava/nio/FloatBuffer;
+  public capacity()I
+  public clear()V
+  public clone()Lcom/censivn/C3DEngine/api/element/UvBufferManager;
+  public bridge synthetic clone()Ljava/lang/Object;
+  public getU(I)F
+  public getV(I)F
+  public set(I F F)V
+  public set(I Lcom/censivn/C3DEngine/api/element/Uv;)V
+  public setU(I F)V
+  public setV(I F)V
+  public size()I
+
+=== com.censivn.C3DEngine.api.element.WidgetInformation ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.element.info.ItemInfo ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(Lcom/censivn/C3DEngine/api/element/info/ItemInfo;)V
+  public onDelFromDatabase()V
+  public onInsertToDatabase(Landroid/content/ContentValues;)V
+  public onUpdateData(Landroid/content/ContentValues;)V
+  public toString()Ljava/lang/String;
+  public unbind()V
+
+=== com.censivn.C3DEngine.api.element.info.auncherItem3DInfo ===
+  Super: Lcom.censivn.C3DEngine.api.element.info.ItemInfo;
+  public constructor <init>(I)V
+  public getTarget()Lcom/tsf/shell/workspace3D/k/j;
+  public onUpdateData(Landroid/content/ContentValues;)V
+  public setTarget(Lcom/tsf/shell/workspace3D/k/j;)V
+  public toString()Ljava/lang/String;
+  public unbind()V
+
+=== com.censivn.C3DEngine.api.element.info.auncherAppWidgetInfo ===
+  Super: Lcom.censivn.C3DEngine.api.element.info.LauncherItem3DInfo;
+  public constructor <init>(I)V
+  public onUpdateData(Landroid/content/ContentValues;)V
+  public unbind()V
+
+=== com.censivn.C3DEngine.api.element.info.auncherFolder3DInfo ===
+  Super: Lcom.censivn.C3DEngine.api.element.info.LauncherItem3DInfo;
+  public constructor <init>(I)V
+  public addItemInfo(Lcom/censivn/C3DEngine/api/element/info/LauncherShortcut3DInfo;)Z
+  public getItemInfo()Ljava/util/ArrayList;
+  public onDelFromDatabase()V
+  public onInsertToDatabase(Landroid/content/ContentValues;)V
+  public onUpdateData(Landroid/content/ContentValues;)V
+  public onUpdateFolderData(Landroid/content/ContentValues;)V
+  public unbind()V
+
+=== com.censivn.C3DEngine.api.element.info.auncherShortcut3DInfo ===
+  Super: Lcom.censivn.C3DEngine.api.element.info.LauncherItem3DInfo;
+  public constructor <init>(I)V
+  public getDefaultIcon()Landroid/graphics/Bitmap;
+  public getIcon(Z)Landroid/graphics/Bitmap;
+  public getIcon(Z I I)Landroid/graphics/Bitmap;
+  public onUpdateData(Landroid/content/ContentValues;)V
+  public onUpdateName(Ljava/lang/String;)V
+  public onUpdatePhoto(Landroid/graphics/Bitmap;)V
+  public parse(Ljava/lang/String;)V
+  public unbind()V
+
+=== com.censivn.C3DEngine.api.element.info.auncherWidget3DInfo ===
+  Super: Lcom.censivn.C3DEngine.api.element.info.LauncherItem3DInfo;
+  public constructor <init>(I)V
+
+=== com.censivn.C3DEngine.api.event.VMouseEventistener ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public constructor <init>(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public getTarget()Lcom/censivn/C3DEngine/api/core/VObject3d;
+  public getVirtualTarget()Ljava/lang/Object;
+  public onDoubleTap(Landroid/view/MotionEvent;)V
+  public onDown(Landroid/view/MotionEvent;)V
+  public onFling(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+  public onLongPress(Landroid/view/MotionEvent;)V
+  public onLongRelease(Landroid/view/MotionEvent;)V
+  public onMove(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+  public onPointer2Down(Landroid/view/MotionEvent;)V
+  public onPointer2Up(Landroid/view/MotionEvent;)V
+  public onScroll(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+  public onShowPress(Landroid/view/MotionEvent;)V
+  public onSingleTapConfirmed(Landroid/view/MotionEvent;)V
+  public onSingleTapUp(Landroid/view/MotionEvent;)V
+  public onSingleUp(Landroid/view/MotionEvent;)V
+  public onUp(Landroid/view/MotionEvent;)V
+
+=== com.censivn.C3DEngine.api.message.RenderRunnable ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(I I)V
+  public run()V
+
+=== com.censivn.C3DEngine.api.message.VMessageManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static cancelGLRunnable(Ljava/lang/Runnable;)V
+  public static cancelRenderRunnable(Lcom/censivn/C3DEngine/api/message/RenderRunnable;)V
+  public static cancelUIRunnable(Ljava/lang/Runnable;)V
+  public static postGLThreadRunnable(Ljava/lang/Runnable;)V
+  public static postGLThreadRunnable(Ljava/lang/Runnable; J)V
+  public static postRenderRunnable(Lcom/censivn/C3DEngine/api/message/RenderRunnable;)V
+  public static postUIThreadRunnable(Ljava/lang/Runnable;)V
+  public static postUIThreadRunnable(Ljava/lang/Runnable; J)V
+  public cancelExternalThreadRunnable(Ljava/lang/Runnable;)V
+  public postExternalThreadRunnable(Ljava/lang/Runnable;)V
+  public postExternalThreadRunnable(Ljava/lang/Runnable; J)V
+
+=== com.censivn.C3DEngine.api.message.VMessageQueueManager ===
+  Super: Ljava.lang.Object;
+  static constructor <clinit>()V
+  public constructor <init>()V
+  public constructor <init>(I)V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/message/VMessageQueueManager;)Ljava/util/LinkedList;
+  static synthetic access$1(Lcom/censivn/C3DEngine/api/message/VMessageQueueManager;)Z
+  static synthetic access$2(Lcom/censivn/C3DEngine/api/message/VMessageQueueManager;)V
+  private init()V
+  private scheduleNextLocked()V
+  public cancel()V
+  public cancelRunnable(Ljava/lang/Runnable;)V
+  public destroy()V
+  public getLooper()Landroid/os/Looper;
+  public getStatus()Z
+  public pause()V
+  public post(Ljava/lang/Runnable; I)V
+  public resume()V
+
+=== com.censivn.C3DEngine.api.primitives.VBox ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3dContainer;
+  public constructor <init>(F F F)V
+
+=== com.censivn.C3DEngine.api.primitives.VRectangle$VRectangleParams ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(Lcom/censivn/C3DEngine/api/primitives/VRectangle; Z Z)V
+
+=== com.censivn.C3DEngine.api.primitives.VRectangle ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3dContainer;
+  public constructor <init>(F F)V
+  public constructor <init>(F F I I)V
+  public constructor <init>(F F I I Lcom/censivn/C3DEngine/api/primitives/VRectangle$VRectangleParams;)V
+  public constructor <init>(F F I I Z)V
+  private constructor <init>(F F I I Z Z)V
+  public constructor <init>(F F Lcom/censivn/C3DEngine/api/primitives/VRectangle$VRectangleParams;)V
+  public setTexturePosition(I I I I I I)V
+
+=== com.censivn.C3DEngine.api.primitives.VVirtualObject ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3d;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.primitives.button.VButton ===
+  Super: Lcom.censivn.C3DEngine.api.core.VObject3dContainer;
+  public constructor <init>(I I I)V
+  public constructor <init>(I I I I)V
+  public constructor <init>(I I I I Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public getItem(I)Lcom/censivn/C3DEngine/api/primitives/button/VButtonItem;
+  public updateMatrix(Lcom/censivn/C3DEngine/api/primitives/button/VButtonItem;)V
+  public updateTexturePosition(Lcom/censivn/C3DEngine/api/primitives/button/VButtonItem;)V
+
+=== com.censivn.C3DEngine.api.primitives.button.VButtonItem ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(Lcom/censivn/C3DEngine/e/a/c;)V
+  public flipHorizontal(Z)V
+  public flipHorizontal()Z
+  public flipVertical(Z)V
+  public flipVertical()Z
+  public getVirtualTarget()Ljava/lang/Object;
+  public heightPX()F
+  public heightPX(I)V
+  public heightSP()F
+  public heightSP(I)V
+  public position()Lcom/censivn/C3DEngine/api/element/PositionNumber3d;
+  public rotation()Lcom/censivn/C3DEngine/api/element/Number3d;
+  public scale()Lcom/censivn/C3DEngine/api/element/Number3d;
+  public setMouseEventListener(Lcom/censivn/C3DEngine/api/event/VMouseEventListener;)V
+  public setSpan(I I)V
+  public setSpanAndMathSizePX(I I)V
+  public setSpanAndMathSizeSP(I I)V
+  public setTextureAll(I I I I)V
+  public setTextureAllAndMathSizePX(I I I I)V
+  public setTextureAllAndMathSizeSP(I I I I)V
+  public setTextureAllAndSetSizePX(I I I I I I)V
+  public setTextureAllAndSetSizeSP(I I I I I I)V
+  public setTexturePosition(I I)V
+  public updateAll()V
+  public updatePointMatrix()V
+  public updateTextureMatrix()V
+  public visible(Ljava/lang/Boolean;)V
+  public visible()Z
+  public widthPX()F
+  public widthPX(I)V
+  public widthSP()F
+  public widthSP(I)V
+  public xOffsetPX()F
+  public xOffsetPX(I)V
+  public xOffsetSP()F
+  public xOffsetSP(I)V
+  public yOffsetPX()F
+  public yOffsetPX(I)V
+  public yOffsetSP()F
+  public yOffsetSP(I)V
+
+=== com.censivn.C3DEngine.api.primitives.ninepath.VNinePatchRectangle ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(F F Lcom/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam;)V
+  public height()F
+  public height(F)V
+  public setNinePatch(Lcom/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam;)V
+  public setSize(F F)V
+  public width()F
+  public width(F)V
+
+=== com.censivn.C3DEngine.api.primitives.ninepath.VNinePathParam ===
+  Super: Ljava.lang.Object;
+  public constructor <init>(F F F F F F)V
+  public getVirtualTarget()Ljava/lang/Object;
+
+=== com.censivn.C3DEngine.api.resources.Resource ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public getSystemTypeface()Landroid/graphics/Typeface;
+
+=== com.censivn.C3DEngine.api.shell.VConsole ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static pauseScreenOrientation()V
+  public static resumeScreenOrientation()V
+
+=== com.censivn.C3DEngine.api.shell.VInformation ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static Scale()F
+  public static engineDensity()F
+  public static getScreenHeight()I
+  public static getScreenWidth()I
+  public static getStatusBarHeight()I
+  public static isVerticalMode()Z
+  public static systemDensity()F
+
+=== com.censivn.C3DEngine.api.shell.VPage ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public addWidget(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public addWidget(Lcom/censivn/C3DEngine/api/core/VObject3d; I)V
+  public containsWidget(Lcom/censivn/C3DEngine/api/core/VObject3d;)Z
+  public getIndex()I
+  public getWidgetIndex(Lcom/censivn/C3DEngine/api/core/VObject3d;)I
+  public removeWidget(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+
+=== com.censivn.C3DEngine.api.shell.VTempleteayerManager ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V
+  public static hideScreen()V
+  public static hideScreen(Ljava/lang/Runnable;)V
+  public static remove()V
+  public static removeView(Landroid/view/View;)V
+  public static show(Lcom/censivn/C3DEngine/api/shell/VTempleteSceneCallbacks;)Lcom/censivn/C3DEngine/api/core/VObject3dContainer;
+  public static showScreen()V
+  public static showScreen(Ljava/lang/Runnable;)V
+
+=== com.censivn.C3DEngine.api.shell.VTempleteSceneCallbacks ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/shell/VTempleteSceneCallbacks;)Lcom/censivn/C3DEngine/api/shell/VTempleteSceneCallbacks;
+  public onKeyDown(I Landroid/view/KeyEvent;)V
+  public onKeyUp(I Landroid/view/KeyEvent;)V
+
+=== com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public getVirtualTarget()Ljava/lang/Object;
+
+=== com.censivn.C3DEngine.api.tween.VEasing$Back ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.tween.VEasing$Circ ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.tween.VEasing$Elastic ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.tween.VEasing$inear ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.tween.VEasing ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+
+=== com.censivn.C3DEngine.api.tween.VTween ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public static killTween(Lcom/censivn/C3DEngine/api/tween/TweenTarget/VTweenTarget;)V
+  public static pauseTween(Lcom/censivn/C3DEngine/api/tween/TweenTarget/VTweenTarget;)V
+  public static resumeTween(Lcom/censivn/C3DEngine/api/tween/TweenTarget/VTweenTarget;)V
+  public static to(Lcom/censivn/C3DEngine/api/tween/TweenTarget/VTweenTarget; I Lcom/censivn/C3DEngine/api/tween/VTweenParam;)V
+
+=== com.censivn.C3DEngine.api.tween.VTweenParam ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  static synthetic access$0(Lcom/censivn/C3DEngine/api/tween/VTweenParam;)Lcom/censivn/C3DEngine/api/tween/VTweenParam;
+  public getCompleteRunnable()Ljava/lang/Runnable;
+  public getTarget()Ljava/lang/Object;
+  public getVirtualTarget()Ljava/lang/Object;
+  public onComplete()V
+  public onProgress(F)V
+  public onUpdate(F)V
+  public setAlpha(I)V
+  public setCompleteRunnable(Ljava/lang/Runnable;)V
+  public setEase(I)V
+  public setRotationX(F)V
+  public setRotationY(F)V
+  public setRotationZ(F)V
+  public setSPX(F)V
+  public setSPY(F)V
+  public setSPZ(F)V
+  public setScaleX(F)V
+  public setScaleY(F)V
+  public setScaleZ(F)V
+  public setTarget(Ljava/lang/Object;)V
+  public setTimeout(I)V
+  public setX(F)V
+  public setY(F)V
+  public setZ(F)V
+
+=== com.censivn.C3DEngine.common.renderer.MatrixStack ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  private static adjust(I)V
+  private static commonInit(I)V
+  private static fixedToFloat(I)F
+  public static getMatrix([F I)V
+  public static glFrustumf(F F F F F F)V
+  public static glFrustumx(I I I I I I)V
+  public static glLoadIdentity()V
+  public static glLoadMatrixf(Ljava/nio/FloatBuffer;)V
+  public static glLoadMatrixf([F I)V
+  public static glLoadMatrixx(Ljava/nio/IntBuffer;)V
+  public static glLoadMatrixx([I I)V
+  public static glMultMatrixf(Ljava/nio/FloatBuffer;)V
+  public static glMultMatrixf([F I)V
+  public static glMultMatrixx(Ljava/nio/IntBuffer;)V
+  public static glMultMatrixx([I I)V
+  public static glOrthof(F F F F F F)V
+  public static glOrthox(I I I I I I)V
+  public static glPopMatrix()V
+  public static glPushMatrix()V
+  public static glRotatef(F F F F)V
+  public static glRotatex(I I I I)V
+  public static glScalef(F F F)V
+  public static glScalex(I I I)V
+  public static glTranslatef(F F F)V
+  public static glTranslatex(I I I)V
+  public static init()V
+  private static preflight_adjust(I)V
+
+=== com.censivn.C3DEngine.common.renderer.ShaderManager ===
+  Super: Ljava.lang.Object;
+  static constructor <clinit>()V
+  public constructor <init>()V
+  public static enableShader(Lcom/censivn/C3DEngine/common/shader/Shader;)V
+  public static init()V
+  public static lockShader()V
+  public static unlockShader()V
+
+=== com.censivn.C3DEngine.common.shader.Shader ===
+  Super: Ljava.lang.Object;
+  public constructor <init>()V
+  public glMVPMatrix()V
+  public glMVPMatrix([F I)V
+  public glTexCoordPointer(I I Z I Ljava/nio/Buffer;)V
+  public glVertexPointer(I I Z I Ljava/nio/Buffer;)V
+
+=== com.censivn.C3DEngine.common.shader.ShaderAlpha ===
+  Super: Lcom.censivn.C3DEngine.common.shader.Shader;
+  public constructor <init>()V
+  private createProgram()V
+  public glAlpha(F)V
+
+=== com.censivn.C3DEngine.common.shader.ShaderColor ===
+  Super: Lcom.censivn.C3DEngine.common.shader.Shader;
+  public constructor <init>()V
+  public createProgram(Ljava/lang/String; Ljava/lang/String;)V
+  public glColor4f(I I I I)V
+  public glColor4f(Lcom/censivn/C3DEngine/api/core/VObject3d;)V
+  public glColorPointer(I I Z I Ljava/nio/Buffer;)V
+
+=== com.censivn.C3DEngine.common.shader.ShaderColorMatrixTexture ===
+  Super: Lcom.censivn.C3DEngine.common.shader.ShaderColor;
+  public constructor <init>()V
+  public createProgram()V
+  public glSTMatrix([F I)V
+
+=== com.censivn.C3DEngine.common.shader.ShaderColorTexture ===
+  Super: Lcom.censivn.C3DEngine.common.shader.ShaderColor;
+  public constructor <init>()V
+  public createProgram()V
+
+=== com.censivn.C3DEngine.common.shader.ShaderFillColorTexture ===
+  Super: Lcom.censivn.C3DEngine.common.shader.ShaderColor;
+  public constructor <init>()V
+  public createProgram()V
+
+=== com.censivn.C3DEngine.common.shader.ShaderStandard ===
+  Super: Lcom.censivn.C3DEngine.common.shader.Shader;
+  public constructor <init>()V
+  private createProgram()V
+
+=== com.censivn.C3DEngine.common.shader.ShaderTextureMatrix ===
+  Super: Lcom.censivn.C3DEngine.common.shader.Shader;
+  static constructor <clinit>()V
+  public constructor <init>()V
+  private createProgram()V
+  public glSTMatrix([F I)V
+
+=== com.censivn.C3DEngine.n.Utils ===
+  Super: Ljava.lang.Object;
+  static constructor <clinit>()V
+  public constructor <init>()V
+  public static native CutAndUploadTexture(Landroid/graphics/Bitmap; I I I I I I)V
+  public static native FilmImage(Landroid/graphics/Bitmap;)V
+  public static native GrayImage(Landroid/graphics/Bitmap;)V
+  public static native UploadTexture(Landroid/graphics/Bitmap; I I)V
+  public static native cal([B)I

@@ -1,0 +1,136 @@
+=== C3DEngine Deobfuscation Map: v1.9.9.7.6 → v3.9.4 ===
+Generated: 2026-06-01
+v1 readable API classes: 65 (55 unchanged, 10 obfuscated in v3)
+
+--- Classes with SAME NAME (public API, not obfuscated) ---
+  com.censivn.C3DEngine.a
+  com.censivn.C3DEngine.a.a
+  com.censivn.C3DEngine.api.core.VObject3d
+  com.censivn.C3DEngine.api.core.VObject3dContainer
+  com.censivn.C3DEngine.api.core.VObjectManager
+  com.censivn.C3DEngine.api.core.VRenderManager
+  com.censivn.C3DEngine.api.core.VRenderer
+  com.censivn.C3DEngine.api.core.VTextureManager
+  com.censivn.C3DEngine.api.core.VTextureist
+  com.censivn.C3DEngine.api.core.VWidgetContainer
+  com.censivn.C3DEngine.api.effects.VEffectsStack
+  com.censivn.C3DEngine.api.effects.VIEffects
+  com.censivn.C3DEngine.api.effects.core.Vector3
+  com.censivn.C3DEngine.api.effects.modifiers.VTwist
+  com.censivn.C3DEngine.api.element.Color4
+  com.censivn.C3DEngine.api.element.Number3d
+  com.censivn.C3DEngine.api.element.PointBufferManager
+  com.censivn.C3DEngine.api.element.PositionNumber3d
+  com.censivn.C3DEngine.api.element.TextureDescription
+  com.censivn.C3DEngine.api.element.TextureElement
+  com.censivn.C3DEngine.api.element.TextureEnvDescription
+  com.censivn.C3DEngine.api.element.Uv
+  com.censivn.C3DEngine.api.element.UvBufferManager
+  com.censivn.C3DEngine.api.element.info.ItemInfo
+  com.censivn.C3DEngine.api.element.info.auncherAppWidgetInfo
+  com.censivn.C3DEngine.api.element.info.auncherFolder3DInfo
+  com.censivn.C3DEngine.api.element.info.auncherWidget3DInfo
+  com.censivn.C3DEngine.api.event.VMouseEventistener
+  com.censivn.C3DEngine.api.message.RenderRunnable
+  com.censivn.C3DEngine.api.message.VMessageManager
+  com.censivn.C3DEngine.api.message.VMessageQueueManager
+  com.censivn.C3DEngine.api.primitives.VBox
+  com.censivn.C3DEngine.api.primitives.VRectangle
+  com.censivn.C3DEngine.api.primitives.VRectangle$VRectangleParams
+  com.censivn.C3DEngine.api.primitives.VVirtualObject
+  com.censivn.C3DEngine.api.primitives.button.VButton
+  com.censivn.C3DEngine.api.primitives.button.VButtonItem
+  com.censivn.C3DEngine.api.primitives.ninepath.VNinePatchRectangle
+  com.censivn.C3DEngine.api.primitives.ninepath.VNinePathParam
+  com.censivn.C3DEngine.api.resources.Resource
+  com.censivn.C3DEngine.api.shell.VConsole
+  com.censivn.C3DEngine.api.shell.VInformation
+  com.censivn.C3DEngine.api.shell.VPage
+  com.censivn.C3DEngine.api.shell.VTempleteSceneCallbacks
+  com.censivn.C3DEngine.api.shell.VTempleteayerManager
+  com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget
+  com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget
+  com.censivn.C3DEngine.api.tween.VEasing
+  com.censivn.C3DEngine.api.tween.VEasing$Back
+  com.censivn.C3DEngine.api.tween.VEasing$Circ
+  com.censivn.C3DEngine.api.tween.VEasing$Elastic
+  com.censivn.C3DEngine.api.tween.VEasing$inear
+  com.censivn.C3DEngine.api.tween.VTween
+  com.censivn.C3DEngine.api.tween.VTweenParam
+  com.censivn.C3DEngine.b.a.a
+  com.censivn.C3DEngine.b.b.a
+  com.censivn.C3DEngine.c.a
+  com.censivn.C3DEngine.c.a.a
+  com.censivn.C3DEngine.c.a.a.a
+  com.censivn.C3DEngine.c.a.a.b
+  com.censivn.C3DEngine.c.a.b
+  com.censivn.C3DEngine.c.a.c
+  com.censivn.C3DEngine.c.a.d
+  com.censivn.C3DEngine.c.a.e
+  com.censivn.C3DEngine.c.b
+  com.censivn.C3DEngine.c.b.a
+  com.censivn.C3DEngine.c.b.b
+  com.censivn.C3DEngine.common.renderer.MatrixStack
+  com.censivn.C3DEngine.common.renderer.ShaderManager
+  com.censivn.C3DEngine.common.shader.Shader
+  com.censivn.C3DEngine.common.shader.ShaderAlpha
+  com.censivn.C3DEngine.common.shader.ShaderColor
+  com.censivn.C3DEngine.common.shader.ShaderColorMatrixTexture
+  com.censivn.C3DEngine.common.shader.ShaderColorTexture
+  com.censivn.C3DEngine.common.shader.ShaderFillColorTexture
+  com.censivn.C3DEngine.common.shader.ShaderStandard
+  com.censivn.C3DEngine.common.shader.ShaderTextureMatrix
+  com.censivn.C3DEngine.d.a
+  com.censivn.C3DEngine.d.b
+  com.censivn.C3DEngine.e.a
+  com.censivn.C3DEngine.e.b
+  com.censivn.C3DEngine.e.c
+  com.censivn.C3DEngine.f.a
+  com.censivn.C3DEngine.f.b
+  com.censivn.C3DEngine.f.c
+  com.censivn.C3DEngine.f.d
+  com.censivn.C3DEngine.f.e
+  com.censivn.C3DEngine.f.f
+  com.censivn.C3DEngine.n.Utils
+
+--- Classes OBFUSCATED in v3.9.4 ---
+  com.censivn.C3DEngine.api.element.WidgetInformation → com.censivn.C3DEngine.e.h
+  com.censivn.C3DEngine.api.element.info.ItemInfo → com.censivn.C3DEngine.b.g.a.c
+  com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo → com.censivn.C3DEngine.b.d.e
+  com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo → com.censivn.C3DEngine.b.h.a.b
+  com.censivn.C3DEngine.api.element.info.LauncherShortcut3DInfo → com.censivn.C3DEngine.b.f.b
+  com.censivn.C3DEngine.api.shell.VInformation → com.censivn.C3DEngine.b.c.d
+  com.censivn.C3DEngine.n.Utils → NEEDS_MANUAL_CHECK (check for native methods in v3)
+
+--- v3.9.4 Classes NOT in v1.9.9.7.6 (new engine additions) ---
+  Total: 239 classes
+  NEW: com.censivn.C3DEngine.a.b
+  NEW: com.censivn.C3DEngine.a.b$1
+  NEW: com.censivn.C3DEngine.a.b$2
+  NEW: com.censivn.C3DEngine.a.b$3
+  NEW: com.censivn.C3DEngine.a.b$a
+  NEW: com.censivn.C3DEngine.a.b$b
+  NEW: com.censivn.C3DEngine.a.b$c
+  NEW: com.censivn.C3DEngine.a.b$d
+  NEW: com.censivn.C3DEngine.a.c
+  NEW: com.censivn.C3DEngine.a.d
+  NEW: com.censivn.C3DEngine.a.d$1
+  NEW: com.censivn.C3DEngine.a.d$1$1
+  NEW: com.censivn.C3DEngine.a.d$2
+  NEW: com.censivn.C3DEngine.a.d$3
+  NEW: com.censivn.C3DEngine.a.e
+  NEW: com.censivn.C3DEngine.a.f
+  NEW: com.censivn.C3DEngine.a.f$1
+  NEW: com.censivn.C3DEngine.a.g
+  NEW: com.censivn.C3DEngine.api.core.VObject3dContainer$1
+  NEW: com.censivn.C3DEngine.api.core.VObjectManager$1
+  NEW: com.censivn.C3DEngine.api.core.VTextureManager$1
+  NEW: com.censivn.C3DEngine.api.core.VTextureManager$2
+  NEW: com.censivn.C3DEngine.api.core.VWidgetContainer$1
+  NEW: com.censivn.C3DEngine.api.core.VWidgetContainer$2
+  NEW: com.censivn.C3DEngine.api.element.Color4Bufferist
+  NEW: com.censivn.C3DEngine.api.element.FacesBufferedist
+  NEW: com.censivn.C3DEngine.api.element.Textureist
+  NEW: com.censivn.C3DEngine.api.element.Vertices
+  NEW: com.censivn.C3DEngine.api.element.info.auncherDrawerFolder3DInfo
+  NEW: com.censivn.C3DEngine.api.element.info.shortcut.auncherShortcut3DInfo
