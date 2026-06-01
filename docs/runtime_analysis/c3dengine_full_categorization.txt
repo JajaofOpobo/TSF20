@@ -1,0 +1,2385 @@
+================================================================================
+C3DEngine v3.9.4 - Full Class Categorization
+Total: 328 classes
+================================================================================
+
+============================================================
+Package: com.censivn.C3DEngine.Utils (1 classes)
+============================================================
+
+  Utils
+
+============================================================
+Package: com.censivn.C3DEngine.a (13 classes)
+============================================================
+
+  a
+    extends: GSurfaceView
+    roles: GL
+    onPause()V
+    onResume()V
+    setEGLContextClientVersion(I)V
+    setEGLConfigChooser(I I I I I I)V
+    getHolder()Landroid/view/SurfaceHolder;
+
+  a
+    fields: a, b, c, d, y, z, x
+    a(C3D:api/element/Number3d; C3D:api/element/Number3d; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+    a()C3D:b/a/a;
+    a([I)V
+    clone()Ljava/lang/Object;
+
+  a
+    fields: a, b
+    a()V
+    a(C3D:b/f/i;)V
+    a(C3D:c/b;)V
+    b()V
+    c()V
+
+  a
+    fields: a
+    a()Ljava/util/ArrayList;
+    a(C3D:c/a/e;)V
+
+  a
+    fields: a, b, c, d, d, e, f
+    a()V
+    a(F)V
+
+  b
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:c/a/a/b;)F
+    a()V
+    a(F)V
+    a(F F F)V
+    b()F
+
+  b
+    fields: a, b, c, d, e, f, g, h
+    a(F F F)C3D:c/a/b;
+    a(F F F F)C3D:c/a/b;
+    a(F F F F C3D:c/a/b;)C3D:c/a/b;
+    b(C3D:c/a/b; C3D:c/a/b;)C3D:c/a/b;
+    a(C3D:c/a/b; C3D:c/a/b;)V
+
+  c
+    fields: a, b, c, d, e, f, g, h
+    a(I)F
+    a()Ljava/util/ArrayList;
+    a(C3D:b/f/i;)V
+    b(I)F
+    b()Ljava/util/ArrayList;
+
+  d
+    fields: a
+    a(C3D:c/a/c;)V
+
+  e
+    fields: a, b, c, d, e, f, g, h
+    a()F
+    a(I)F
+    a(F)V
+    a(F F F)V
+    a(I F)V
+
+  a
+    e()V
+
+  a
+    implements: b
+    fields: a, b, c, d, e, f, g, h
+    a(Ljava/io/InputStream;)Ljava/lang/String;
+    a()V
+    b(Ljava/io/InputStream;)I
+    b()C3D:b/f/j;
+    c(Ljava/io/InputStream;)I
+
+  a
+    fields: a, b
+    a()V
+
+============================================================
+Package: com.censivn.C3DEngine.a$1 (1 classes)
+============================================================
+
+  a$1
+
+============================================================
+Package: com.censivn.C3DEngine.a$a (1 classes)
+============================================================
+
+  a$a
+    fields: a, b, c, d, e, f, g, h
+
+============================================================
+Package: com.censivn.C3DEngine.a$b (1 classes)
+============================================================
+
+  a$b
+    fields: a, b, c, d
+
+============================================================
+Package: com.censivn.C3DEngine.a$c (1 classes)
+============================================================
+
+  a$c
+    fields: a, b, c, d, c, h, a, d
+    a(Ljava/lang/String;)C3D:e/a$a;
+    a()V
+    a(C3D:api/element/TextureElement;)V
+    a(C3D:e/a$a;)V
+    b()Landroid/graphics/Bitmap;
+
+============================================================
+Package: com.censivn.C3DEngine.a$c$a (1 classes)
+============================================================
+
+  a$c$a
+    implements: Comparator
+    fields: a, a
+    a(C3D:e/a$a; C3D:e/a$a;)I
+    compare(Ljava/lang/Object; Ljava/lang/Object;)I
+
+============================================================
+Package: com.censivn.C3DEngine.b (29 classes)
+============================================================
+
+  b
+    fields: a, b, c, d, i, e, f, g
+    a(Landroid/content/Context;)V
+    a(C3D:a/b;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; Landroid/view/MotionEvent;)Z
+    b()V
+    b(C3D:a/b;)V
+
+  a
+    fields: A, B, C, D, E, F, G, H
+    a(F)F
+    a(F F)C3D:b/f/k;
+    a()V
+    a(I)V
+    a(I I)V
+
+  a$1
+    implements: Runnable
+    run()V
+
+  a
+    extends: b
+    roles: SceneContainer, TransformAccessor
+    fields: mLabel
+    onDrawChildEnd()V
+    recycle()V
+    setTitle(I)V
+    setTitle(Ljava/lang/String;)V
+    setTitlePosition(F)V
+
+  b
+    extends: j
+    roles: SceneArray, DrawCallback, SceneContainer, TransformAccessor
+    fields: isAnimationRunning, mMarginDistance
+    updateBorder()V
+    updateChildPosition(I Z)Z
+    updateChildPosition(Z)Z
+    addChild(C3D:b/f/i;)V
+    addChildAt(C3D:b/f/i; I)V
+
+  c
+    extends: b
+    roles: SceneArray, DrawCallback, SceneContainer
+    fields: a, b, c
+    a(I Z)Z
+    a(Z)Z
+    e()V
+    a()V
+    a(F)V
+
+  d
+    extends: j
+    roles: DrawCallback, SceneContainer, TransformAccessor
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/b/a/d; F)F
+    a(C3D:b/b/a/d;)Z
+    a(C3D:b/b/a/d; Z)Z
+    b(C3D:b/b/a/d; F)F
+    b(C3D:b/b/a/d;)C3D:b/f/i;
+
+  d$1
+    extends: j
+    roles: SceneContainer
+    fields: a
+    a()V
+    onChildMeasure(C3D:b/f/i;)V
+    maxX()F
+    minX()F
+    numChildren()I
+
+  d$2
+    extends: a
+    fields: a, b, d, e, f, g, h, a
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    e(Landroid/view/MotionEvent;)V
+
+  d$3
+    extends: d
+    fields: a
+    a()V
+
+  d$4
+    extends: d
+    fields: a
+    a()V
+
+  e
+    extends: j
+    roles: DrawCallback, SceneContainer, GL, TouchHandler
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/b/a/e; F)F
+    a(C3D:b/b/a/e;)Z
+    a(C3D:b/b/a/e; Z)Z
+    b(C3D:b/b/a/e; F)F
+    b(C3D:b/b/a/e;)C3D:b/f/j;
+
+  e$1
+    extends: j
+    roles: SceneContainer
+    fields: a
+    a()V
+    onChildMeasure(C3D:b/f/i;)V
+    maxY()F
+    minY()F
+    numChildren()I
+
+  e$2
+    extends: a
+    fields: a, b, d, e, f, g, h, a
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    c(Landroid/view/MotionEvent;)V
+
+  e$3
+    extends: d
+    fields: a
+    a()V
+
+  e$4
+    extends: d
+    fields: a
+    a()V
+
+  b
+    fields: a, b, c, d, e, f, g, h
+
+  c
+    extends: j
+    roles: DrawCallback, SceneContainer, SceneArray, GL, TouchHandler
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/b/c; C3D:b/f/i;)C3D:b/e/f;
+    a(C3D:b/f/i;)C3D:b/e/f;
+    a(C3D:b/b/c;)V
+    a(C3D:api/element/Number3d; C3D:b/f/i;)Z
+    b(C3D:b/b/c; C3D:b/f/i;)V
+
+  c$1
+    extends: a
+    fields: a, b, d
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    e(Landroid/view/MotionEvent;)V
+    f(Landroid/view/MotionEvent;)V
+
+  c$2
+    extends: d
+    fields: a
+    a()V
+
+  d
+    extends: j
+    roles: DrawCallback, SceneContainer, TransformAccessor
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/b/d; F)F
+    a(C3D:b/b/d;)C3D:b/f/i;
+    a(C3D:b/f/i;)V
+    a(C3D:b/b/d; Z)Z
+    b(C3D:b/b/d;)F
+
+  d$1
+    extends: a
+    fields: a, b, d, e, f, a
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    e(Landroid/view/MotionEvent;)V
+
+  b
+    a()V
+    a(C3D:c/a/c;)V
+
+  a
+    extends: d
+    implements: b
+    fields: b, c, d, e, f
+    a()V
+    a(F)V
+    a(I)V
+    b()F
+    b(F)V
+
+  b
+    extends: d
+    implements: b
+    fields: b, c, d, e, f, g, h, i
+    a(C3D:c/a/a/b; C3D:c/a/a/b;)V
+    c()V
+    d()V
+    a()V
+    a(F)V
+
+  c
+    extends: d
+    implements: b
+    fields: b, c, d, x, y, z, d, h
+    a(C3D:c/a/e; F)V
+    a()V
+
+  b
+    b()V
+
+  b
+    b()C3D:b/f/j;
+    c()V
+
+  b
+    fields: a, b, c, d, e, f
+
+============================================================
+Package: com.censivn.C3DEngine.b$1 (1 classes)
+============================================================
+
+  b$1
+    implements: Runnable
+    fields: a
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.b$2 (1 classes)
+============================================================
+
+  b$2
+    implements: Runnable
+    fields: a
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.b$3 (1 classes)
+============================================================
+
+  b$3
+    implements: Runnable
+    fields: a
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.b$a (1 classes)
+============================================================
+
+  b$a
+    extends: Handler
+    fields: a
+    handleMessage(Landroid/os/Message;)V
+
+============================================================
+Package: com.censivn.C3DEngine.b$b (1 classes)
+============================================================
+
+  b$b
+    a(Landroid/view/MotionEvent;)Z
+    b(Landroid/view/MotionEvent;)Z
+    c(Landroid/view/MotionEvent;)Z
+
+============================================================
+Package: com.censivn.C3DEngine.b$c (1 classes)
+============================================================
+
+  b$c
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)Z
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)Z
+    d(Landroid/view/MotionEvent;)Z
+    e(Landroid/view/MotionEvent;)V
+    f(Landroid/view/MotionEvent;)Z
+
+============================================================
+Package: com.censivn.C3DEngine.b$d (1 classes)
+============================================================
+
+  b$d
+    implements: b$b, b$c
+    a(Landroid/view/MotionEvent;)Z
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)Z
+    b(Landroid/view/MotionEvent;)Z
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)Z
+    c(Landroid/view/MotionEvent;)Z
+
+============================================================
+Package: com.censivn.C3DEngine.c (27 classes)
+============================================================
+
+  c
+    fields: a
+    a(F F F)F
+    a([F I F F F)V
+    a([F I F F F F F F)V
+    a([F I F F F F F F F F F)V
+    a([F I [F I [F I)V
+
+  a
+
+  a$a
+    onActivityResult(I I Landroid/content/Intent;)V
+
+  b
+    fields: a, b, c
+    a(I Landroid/view/KeyEvent;)V
+    a(C3D:b/c/b$a;)V
+    a()Z
+    b()V
+    b(I Landroid/view/KeyEvent;)V
+
+  b$1
+    implements: Runnable
+    fields: a
+    run()V
+
+  b$2
+    implements: Runnable
+    fields: a, b
+    run()V
+
+  b$a
+    a(I Landroid/view/KeyEvent;)V
+    b(I Landroid/view/KeyEvent;)V
+
+  c
+    fields: f, a, b, c, d, e, g, h
+    a(C3D:b/c/c;)Ljava/util/HashMap;
+    a()V
+    a(C3D:api/message/RenderRunnable;)V
+    a(Ljava/lang/Runnable;)V
+    a(Ljava/lang/Runnable; J)V
+
+  c$1
+    implements: Runnable
+    fields: a, b
+    run()V
+
+  c$a
+    fields: a, b, c
+
+  d
+    fields: a, b
+    a()V
+    a(C3D:b/c/d$a;)V
+    a(C3D:b/c/d$b;)V
+    b(C3D:b/c/d$b;)V
+    b()Z
+
+  d$a
+    a()V
+
+  d$b
+    a()V
+
+  e
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/c/e;)Ljava/util/ArrayList;
+    a(C3D:b/c/e; Z)Z
+    b(Landroid/app/Activity; Z Z)V
+    b(C3D:b/c/e;)Z
+    b(C3D:b/c/e; Z)Z
+
+  e$1
+    implements: Runnable
+    fields: a, b, c, d, e
+    run()V
+
+  e$2
+    implements: Runnable
+    fields: a
+    run()V
+
+  e$3
+    implements: Runnable
+    fields: a, B, C, z, A
+    run()V
+
+  e$4
+    implements: Runnable
+    fields: a
+    run()V
+
+  e$5
+    implements: Runnable
+    fields: a
+    run()V
+
+  e$5$1
+    implements: Runnable
+    fields: a, accessibility_service_enable, accessibility_service_enable_long, public_action_ok, public_action_cancel
+    run()V
+
+  e$5$1$1
+    implements: DialogInterface$OnClickistener
+    roles: TouchHandler
+    fields: a
+    onClick(Landroid/content/DialogInterface; I)V
+
+  e$5$1$2
+    implements: DialogInterface$OnClickistener
+    roles: TouchHandler
+    fields: a
+    onClick(Landroid/content/DialogInterface; I)V
+
+  e$a
+    a(I I I I)V
+
+  e$b
+    implements: e$a
+    a(I I I I)V
+
+  f
+    fields: a, b, width, height, f, id, mipMap
+    a(I I Z)C3D:api/element/TextureElement;
+    a(Landroid/graphics/Bitmap; Z)C3D:api/element/TextureElement;
+    a(C3D:api/element/TextureElement; Landroid/graphics/Bitmap; Z)C3D:api/element/TextureElement;
+    a(C3D:api/element/TextureElement;)V
+    a(C3D:api/element/TextureElement; I)V
+
+  c
+    extends: InputStream
+    implements: DataInput
+    fields: a, b, c
+    a(I)Ljava/lang/String;
+    available()I
+    close()V
+    read()I
+    read([B I I)I
+
+  c
+    extends: a
+    fields: c, d, e, f, g
+    b()S
+    c()S
+    d()S
+    e()S
+    f()Ljava/nio/FloatBuffer;
+
+============================================================
+Package: com.censivn.C3DEngine.core (14 classes)
+============================================================
+
+  VObject3d
+    implements: VTweenTarget
+    roles: DrawCallback, Renderer, FocusHandler, TransformAccessor, GL, TouchHandler
+    fields: mThis, vTarget, TEMP_AABB_TL, AABB_MATRIX, AABB_TL, TEMP_AABB_TR, AABB_TR, TEMP_AABB_BL
+    alpha()I
+    alpha(I)V
+    calAABB()V
+    calTouchCollision(F F)Z
+    colorFillEnable()Z
+
+  VObject3dContainer
+    extends: VObject3d
+    roles: SceneArray, SceneContainer, TransformAccessor, SceneGraphNode
+    fields: vTarget
+    addChild(C3D:api/core/VObject3d;)V
+    addChildAt(C3D:api/core/VObject3d; I)V
+    children()Ljava/util/ArrayList;
+    destroy()V
+    getChildAt(I)C3D:api/core/VObject3d;
+
+  VObject3dContainer$1
+    extends: j
+    roles: DrawCallback, Renderer, FocusHandler
+    fields: a
+    dispatchDraw()V
+    draw()V
+    drawElement()V
+    drawMVPMatrix()V
+    onDrawChildEnd(C3D:b/f/i;)V
+
+  VObjectManager
+    fields: appWidgetId, count, mObjectList
+    access$000(C3D:api/core/VObjectManager;)I
+    access$100(C3D:api/core/VObjectManager;)I
+    access$200(C3D:api/core/VObjectManager;)Ljava/util/ArrayList;
+    addObject(C3D:api/core/VObject3d;)V
+    destroy()V
+
+  VObjectManager$1
+    implements: Runnable
+    fields: a
+    run()V
+
+  VRenderManager
+
+  VRenderer
+    lockView(F F)V
+    pause()V
+    resume()V
+    unlockView()V
+
+  VTextureManager
+    roles: Animation
+    fields: appWidgetId, mTextureList, vTarget
+    access$000(C3D:api/core/VTextureManager;)Ljava/util/ArrayList;
+    contains(C3D:api/element/TextureElement;)Z
+    createTexture(Landroid/graphics/Bitmap; Z)C3D:api/element/TextureElement;
+    deleteTexture(C3D:api/element/TextureElement;)V
+    destroy()V
+
+  VTextureManager$1
+    extends: d
+    fields: a, b, c, d, e, f, vTarget
+    a()V
+
+  VTextureManager$2
+    implements: Runnable
+    fields: a
+    run()V
+
+  VTextureist
+    fields: vTarget
+    add(I C3D:api/element/TextureDescription;)V
+    addElement(C3D:api/element/TextureElement;)C3D:api/element/TextureDescription;
+    clear()V
+    get(I)C3D:api/element/TextureDescription;
+    getByElement(C3D:api/element/TextureElement;)C3D:api/element/TextureDescription;
+
+  VWidgetContainer
+    extends: VObject3dContainer
+    roles: DrawCallback, Renderer, FocusHandler, Singleton, SceneGraphNode
+    fields: isLockdView, mLockViewOffsetX, mLockViewOffsetY, mThis, mVObjectManager, mVTextureManager, needLockView, h
+    access$000(C3D:api/core/VWidgetContainer;)C3D:api/core/VWidgetContainer;
+    access$100(C3D:api/core/VWidgetContainer;)C3D:api/core/VTextureManager;
+    access$200(C3D:api/core/VWidgetContainer;)C3D:api/core/VObjectManager;
+    access$300(C3D:api/core/VWidgetContainer;)Z
+    access$400(C3D:api/core/VWidgetContainer;)Z
+
+  VWidgetContainer$1
+    extends: VTextureManager
+    fields: a
+    onTextureChanged()V
+
+  VWidgetContainer$2
+    extends: b
+    roles: DrawCallback, Renderer, FocusHandler, TransformAccessor
+    fields: a
+    a(F F)V
+    b_()V
+    c()V
+    dispatchDraw()V
+    draw()V
+
+============================================================
+Package: com.censivn.C3DEngine.d (4 classes)
+============================================================
+
+  d
+    extends: b$d
+    fields: h, p, a, b, c, d, e, f
+    a(C3D:a/d; Landroid/view/MotionEvent;)V
+    a(C3D:a/d;)Z
+    a(C3D:a/d; Z)Z
+    b(C3D:a/d; Landroid/view/MotionEvent;)V
+    b(Z)V
+
+  a
+    fields: c
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent;)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+
+  d
+    extends: a
+    implements: b
+    fields: n, o, p, l, f, m, h, d
+    a(Ljava/io/BufferedInputStream; [B)V
+    b(Ljava/io/BufferedInputStream; [B)V
+    c(Ljava/io/BufferedInputStream; [B)V
+    d(Ljava/io/BufferedInputStream; [B)V
+    c()V
+
+  d
+    fields: a, b, c
+
+============================================================
+Package: com.censivn.C3DEngine.d$1 (2 classes)
+============================================================
+
+  d$1
+    implements: View$OnTouchistener
+    roles: TouchHandler
+    fields: a, h
+    onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z
+
+  d$1
+
+============================================================
+Package: com.censivn.C3DEngine.d$1$1 (1 classes)
+============================================================
+
+  d$1$1
+    implements: Runnable
+    fields: a, b, a
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.d$2 (1 classes)
+============================================================
+
+  d$2
+    implements: Runnable
+    fields: a, b
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.d$3 (1 classes)
+============================================================
+
+  d$3
+    implements: Runnable
+    fields: a, b, c, d, e
+    run()V
+
+============================================================
+Package: com.censivn.C3DEngine.d$a (1 classes)
+============================================================
+
+  d$a
+    fields: a, b, c, d, e, f, g, h
+    a(Ljava/io/InputStream;)V
+
+============================================================
+Package: com.censivn.C3DEngine.e (25 classes)
+============================================================
+
+  e
+    implements: GSurfaceView$Renderer
+    roles: Renderer
+    fields: a, c, f, g, b, d, e, h
+    b(I I)V
+    l()Z
+    m()Z
+    a(I I Z)I
+    a(Landroid/graphics/Bitmap; Z)I
+
+  a
+    extends: g
+    roles: DrawCallback, SceneContainer
+    fields: a, b, d, e, f, id, preference_check_on, preference_check_off
+    a(C3D:b/e/a;)Z
+    b(C3D:b/e/a;)V
+    m()V
+    n()V
+    a(C3D:b/e/a$a;)V
+
+  a$1
+    extends: a
+    fields: a
+    a(Landroid/view/MotionEvent;)V
+
+  a$a
+    a(Z)Z
+
+  b
+    extends: g
+    roles: SceneContainer
+    fields: a, b, d, e, f
+    a(C3D:b/e/b$b;)I
+    h()V
+    a(C3D:b/e/b$a;)V
+    a(C3D:b/e/b$b; Z)V
+    c(I)V
+
+  b$a
+    a(I)V
+
+  b$b
+    extends: j
+    roles: DrawCallback, SceneContainer
+    fields: a, b, c, d, e, a, b, a
+    a()V
+    a(I)V
+    a(Ljava/lang/String;)V
+    a(Z)V
+    b()V
+
+  b$b$1
+    extends: a
+    fields: a, b, a
+    a(Landroid/view/MotionEvent;)V
+
+  c
+    extends: j
+    implements: b$a, e$a
+    roles: SceneContainer
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/e/c;)C3D:b/f/k;
+    b(C3D:b/e/c;)V
+    b(C3D:b/e/d;)V
+    c(C3D:b/e/c;)C3D:b/f/m;
+    i()F
+
+  c$1
+    extends: d
+    fields: a, b
+    a()V
+
+  c$2
+    extends: d
+    fields: a, b
+    a(F)V
+
+  c$3
+    extends: d
+    fields: a, b, j
+    a()V
+
+  d
+    extends: j
+    roles: SceneContainer, TransformAccessor
+    fields: a, b, c, D, E, B, c, d
+    a()V
+    a(F)V
+    a(I)V
+    a(C3D:b/e/f;)V
+    a(C3D:b/e/f; F)V
+
+  e
+    extends: h
+    fields: b
+    a(Ljava/lang/String;)V
+    f(I)V
+    d(Ljava/lang/String;)V
+    g(I)V
+    h(I)V
+
+  f
+    extends: c
+    roles: TransformAccessor
+    fields: a, c
+    a(C3D:b/e/d;)V
+    f()V
+    g()V
+    i()V
+    j()V
+
+  g
+    extends: f
+    roles: DrawCallback, SceneContainer
+    fields: a, b, a, h, j, i, k, b
+    e()V
+    a(Ljava/lang/String;)V
+    b(Ljava/lang/String;)V
+    c(I)V
+    f()V
+
+  h
+    extends: f
+    roles: SceneArray, DrawCallback, SceneContainer, TransformAccessor
+    fields: a, b, d, e, f, g, h, i
+    a(C3D:b/e/h;)F
+    a(C3D:b/e/h; F)F
+    a(C3D:b/e/h; Z)Z
+    b(C3D:b/e/h;)C3D:b/f/k;
+    c(C3D:b/e/h;)F
+
+  h$1
+    extends: a
+    fields: a, b, a
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    e(Landroid/view/MotionEvent;)V
+    f(Landroid/view/MotionEvent;)V
+
+  h$a
+    a()V
+    a(I)Z
+
+  i
+    extends: c
+    fields: a
+    a(C3D:b/e/f; F)V
+    b(C3D:b/e/f;)V
+    c(C3D:b/e/f;)V
+    a(C3D:b/e/d;)V
+    h()V
+
+  j
+    extends: g
+    fields: a
+    a(C3D:b/e/j;)C3D:b/e/j$a;
+    a(C3D:b/e/j$a;)V
+    setMouseEventListener(C3D:b/d/a;)V
+    b(Ljava/lang/String;)V
+    h(I)V
+
+  j$1
+    extends: a
+    fields: a
+    a(Landroid/view/MotionEvent;)V
+
+  j$a
+    a()V
+
+  e
+    extends: a
+    implements: b
+    fields: A, B, C, n, o, p, q, r
+    e(Ljava/io/InputStream;)V
+    f(Ljava/io/InputStream;)V
+    g(Ljava/io/InputStream;)V
+    h(Ljava/io/InputStream;)V
+    i(Ljava/io/InputStream;)V
+
+  e
+    extends: Enum
+    roles: Enum
+    fields: a, b, c, d, e, f, g, i
+    valueOf(Ljava/lang/String;)C3D:f/e;
+    values()[C3D:f/e;
+    a()I
+    clone()Ljava/lang/Object;
+
+============================================================
+Package: com.censivn.C3DEngine.effects (4 classes)
+============================================================
+
+  VEffectsStack
+    fields: vTarget
+    addModifier(C3D:api/effects/VIEffects;)V
+    apply()V
+    clear()V
+    collapse()V
+
+  VIEffects
+    getVirtualTarget()Ljava/lang/Object;
+
+  Vector3
+    fields: ZERO, x, y, z
+    cross(C3D:api/effects/core/Vector3; C3D:api/effects/core/Vector3;)C3D:api/effects/core/Vector3;
+    distance(C3D:api/effects/core/Vector3; C3D:api/effects/core/Vector3;)F
+    dot(C3D:api/effects/core/Vector3; C3D:api/effects/core/Vector3;)F
+    sum(C3D:api/effects/core/Vector3; C3D:api/effects/core/Vector3;)C3D:api/effects/core/Vector3;
+    add(C3D:api/effects/core/Vector3;)C3D:api/effects/core/Vector3;
+
+  VTwist
+    implements: VIEffects
+    roles: GL
+    fields: vTarget, c, d, b
+    apply()V
+    getAngle()F
+    getCenter()C3D:api/effects/core/Vector3;
+    getVector()C3D:api/effects/core/Vector3;
+    getVirtualTarget()Ljava/lang/Object;
+
+============================================================
+Package: com.censivn.C3DEngine.element (22 classes)
+============================================================
+
+  Color4
+    fields: a, b, color, g, glA, glB, glG, glR
+    clone()C3D:api/element/Color4;
+    clone()Ljava/lang/Object;
+    reset()V
+    set(I)V
+    set(I I I I)V
+
+  Color4Bufferist
+    fields: BYTES_PER_PROPERTY, PROPERTIES_PER_ELEMENT, mBuffer, mNumElements, r, g, b, a
+    add(F F F F)V
+    add(C3D:api/element/Color4;)V
+    buffer()Ljava/nio/FloatBuffer;
+    capacity()I
+    clear()V
+
+  FacesBufferedist
+    fields: BYTES_PER_PROPERTY, PROPERTIES_PER_ELEMENT, mBuffer, mNumElements, mRenderSubsetLength, mRenderSubsetStartIndex, a, b
+    add(I I I)V
+    add(C3D:f/d;)V
+    add(S S S)V
+    buffer()Ljava/nio/ShortBuffer;
+    capacity()I
+
+  Number3d
+    fields: TEMPNUMBER3D, TEMPNUMBER3D2, TEMPNUMBER3D3, TEMPNUMBER3D4, _temp, cardinal, x, y
+    add(C3D:api/element/Number3d; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+    cross(C3D:api/element/Number3d; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+    dot(C3D:api/element/Number3d; C3D:api/element/Number3d;)F
+    multiply(C3D:api/element/Number3d; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+    subtract(C3D:api/element/Number3d; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+
+  PointBufferManager
+    fields: BYTES_PER_PROPERTY, PROPERTIES_PER_ELEMENT, mBuffer, mNumElements, a, x, y, z
+    addPX(F F F)V
+    addPX(C3D:api/element/Number3d;)V
+    addSP(F F F)V
+    addSP(C3D:api/element/Number3d;)V
+    buffer()Ljava/nio/FloatBuffer;
+
+  PositionNumber3d
+    extends: Number3d
+    roles: MathType
+    fields: a
+    pxX()F
+    pxX(F)V
+    pxY()F
+    pxY(F)V
+    pxZ()F
+
+  TextureDescription
+    fields: offsetU, offsetV, repeatU, repeatV, textureElement, textureEnvs
+
+  TextureElement
+    fields: height, id, mipMap, width
+    onDrawTexture()V
+
+  TextureEnvDescription
+    fields: param, pname
+    setAll(I I)V
+
+  Textureist
+    fields: mTextureDescriptionList, virtualProxy, textureElement, id
+    add(I C3D:api/element/TextureDescription;)V
+    addElement(C3D:api/element/TextureElement;)C3D:api/element/TextureDescription;
+    addElementWithoutCheck(C3D:api/element/TextureElement;)C3D:api/element/TextureDescription;
+    addElementWithoutVerify(C3D:api/element/TextureElement;)C3D:api/element/TextureDescription;
+    addReplace(C3D:api/element/TextureDescription;)Z
+
+  Uv
+    fields: u, v
+    clone()C3D:api/element/Uv;
+    clone()Ljava/lang/Object;
+
+  UvBufferManager
+    fields: BYTES_PER_PROPERTY, PROPERTIES_PER_ELEMENT, mBuffer, mNumElements, u, v
+    add(F F)V
+    add(C3D:api/element/Uv;)V
+    buffer()Ljava/nio/FloatBuffer;
+    capacity()I
+    clear()V
+
+  Vertices
+    fields: hasColors, hasNormals, hasUvs, mColors, mNormals, mPpoints, mUvs
+    addVertex(F F F F F F F F S S S S)S
+    addVertex(C3D:api/element/Number3d; C3D:api/element/Uv; C3D:api/element/Number3d; C3D:api/element/Color4;)S
+    capacity()I
+    clone()C3D:api/element/Vertices;
+    clone()Ljava/lang/Object;
+
+  ItemInfo
+    roles: GL
+    fields: APP_CLICKCNT, APP_CONFIG, APP_CONTAINER, APP_INDEX, APP_INTENT, APP_ISHIDE, APP_ITEM_TYPE, APP_TITLE
+    copyInfo(C3D:api/element/info/ItemInfo; C3D:api/element/info/ItemInfo;)V
+    flattenBitmap(Landroid/graphics/Bitmap;)[B
+    writeBitmap(Landroid/content/ContentValues; Landroid/graphics/Bitmap;)V
+    copy()C3D:api/element/info/ItemInfo;
+    getPhoto()Landroid/graphics/Bitmap;
+
+  auncherAppWidgetInfo
+    extends: ItemInfo
+    roles: ItemInfo
+    fields: appWidgetId, mAndroidWidgetManager, providerName
+    copy()C3D:api/element/info/ItemInfo;
+    copy()C3D:api/element/info/LauncherAppWidgetInfo;
+    onAddToDatabase(Landroid/content/ContentValues;)V
+
+  auncherDrawerFolder3DInfo
+    extends: auncherFolder3DInfo
+    fields: isPreviewFolder
+    add(C3D:api/element/info/shortcut/LauncherShortcut3DInfo;)V
+
+  auncherFolder3DInfo
+    extends: ItemInfo
+    roles: ItemInfo
+    fields: itemsInfos, widget_folder
+    add(C3D:api/element/info/shortcut/LauncherShortcut3DInfo;)V
+    copy()C3D:api/element/info/ItemInfo;
+    copy()C3D:api/element/info/LauncherFolder3DInfo;
+    getItemInfo()Ljava/util/ArrayList;
+    unbind()V
+
+  auncherWidget3DInfo
+    extends: ItemInfo
+    roles: ItemInfo
+    copy()C3D:api/element/info/ItemInfo;
+    copy()C3D:api/element/info/LauncherWidget3DInfo;
+    onAddToDatabase(Landroid/content/ContentValues;)V
+    updateDatabase(Landroid/content/ContentValues;)V
+    onUpdateConfig(Ljava/lang/String;)V
+
+  auncherShortcut3DInfo
+    extends: ItemInfo
+    roles: ItemInfo, GL
+    fields: intent, texture, sym_def_app_icon, H, I, id
+    copy()C3D:api/element/info/ItemInfo;
+    copy()C3D:api/element/info/shortcut/LauncherShortcut3DInfo;
+    getIcon(Z I I)Landroid/graphics/Bitmap;
+    getIcon(Z Lcom/tsf/shell/manager/o/a;)Landroid/graphics/Bitmap;
+    getIconBitmap()Landroid/graphics/Bitmap;
+
+  auncherShortcutAppInfo
+    extends: auncherShortcut3DInfo
+    roles: TextureLoader
+    fields: clickCount, isHide, versionCode, versionName, id, d, w
+    getTexture(C3D:api/element/info/shortcut/LauncherShortcutAppInfo; Lcom/tsf/shell/manager/o/a; Lcom/tsf/shell/manager/a/f;)C3D:api/element/TextureElement;
+    applicationOnClick()V
+    getIconBitmap()Landroid/graphics/Bitmap;
+    reloadTexture()V
+    isCustomTexture()Z
+
+  auncherShortcutStandardInfo
+    extends: auncherShortcut3DInfo
+    roles: TextureLoader
+    fields: notifPointState, H, I, sym_def_app_icon
+    createTextureBitmap(C3D:api/element/info/shortcut/LauncherShortcutStandardInfo$ResourceControler; Lcom/tsf/shell/manager/o/a;)Landroid/graphics/Bitmap;
+    createTextureBitmap(C3D:api/element/info/shortcut/LauncherShortcutStandardInfo$ResourceControler; Ljava/lang/String; Landroid/graphics/Bitmap; Lcom/tsf/shell/manager/o/a; I I Z)Landroid/graphics/Bitmap;
+    createTextureBitmap(Ljava/lang/String; Landroid/graphics/Bitmap; Lcom/tsf/shell/manager/o/a; Z)Landroid/graphics/Bitmap;
+    disableNotifPoint()V
+    enableNotifPoint()V
+
+  auncherShortcutStandardInfo$ResourceControler
+    fields: isCustomResource
+    getThemeBitmap(Lcom/tsf/shell/manager/o/a;)Landroid/graphics/Bitmap;
+    isCustomResource()Z
+    onLoadCustomResource()V
+    onLoadThemeResource()V
+
+============================================================
+Package: com.censivn.C3DEngine.event (2 classes)
+============================================================
+
+  VMouseEventistener
+    roles: GL
+    fields: mThis, target, vTarget, vTarget
+    getTarget()C3D:api/core/VObject3d;
+    getVirtualTarget()Ljava/lang/Object;
+    onDoubleTap(Landroid/view/MotionEvent;)V
+    onDown(Landroid/view/MotionEvent;)V
+    onFling(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+
+  VMouseEventistener$1
+    extends: a
+    fields: a, mThis
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent;)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+
+============================================================
+Package: com.censivn.C3DEngine.f (29 classes)
+============================================================
+
+  f
+    implements: b
+    fields: a, b
+    a()Z
+    b()V
+
+  a
+    extends: j
+    roles: SceneContainer, TransformAccessor, GL
+    fields: a, b
+    a()V
+    dispatchDraw()V
+    children()Ljava/util/ArrayList;
+    setAnimationObjectState(Z)V
+    globalToLocal(C3D:api/element/Number3d;)C3D:api/element/Number3d;
+
+  a$a
+    implements: Comparator
+    fields: a
+    a(C3D:b/f/i; C3D:b/f/i;)I
+    compare(Ljava/lang/Object; Ljava/lang/Object;)I
+
+  a
+    extends: j
+    roles: DrawCallback, Renderer, FocusHandler, SceneContainer, TransformAccessor, GL, TouchHandler
+    fields: a, b, c, d, e, f, g, h
+    a(F F)C3D:b/f/a/b;
+    a(C3D:b/f/a/a;)C3D:b/f/a/b;
+    a(C3D:b/f/a/a; F F)C3D:b/f/a/b;
+    a(C3D:b/f/a/a; C3D:b/f/a/b;)C3D:b/f/a/b;
+    a(F F I I C3D:api/element/Color4;)V
+
+  a$1
+    extends: a
+    fields: a, l
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent;)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+
+  b
+    implements: a
+    roles: Animation
+    fields: A, B, C, D, E, F, G, H
+    a()Ljava/lang/Object;
+    a(F)V
+    a(F F F F)V
+    a(I)V
+    a(I I)V
+
+  b
+    extends: j
+    roles: SceneArray, DrawCallback, SceneContainer
+    fields: a, b, c, d, e
+    a(I)V
+    a(C3D:api/element/Number3d; I)V
+    addChild(C3D:b/f/i;)V
+    addChildAt(C3D:b/f/i; I)V
+    b(I)C3D:api/element/Number3d;
+
+  b$1
+    extends: d
+    fields: a
+    a()C3D:api/element/Number3d;
+    b()Ljava/lang/Object;
+
+  a
+    extends: k
+    roles: TransformAccessor
+    fields: a, d, e, f, g, h, i, j
+    a(C3D:b/f/b/b; Z)V
+    g()V
+    a()F
+    a(F)V
+    a(C3D:b/f/b/b;)V
+
+  b
+    fields: a, b, c, d, e, f
+
+  c
+    extends: j
+    fields: a, b, c, d, r, g, b, a
+    a()V
+    vertices()C3D:api/element/Vertices;
+
+  d
+    extends: h
+    roles: Renderer, TransformAccessor
+    fields: d, e, f, g, h, i, j, k
+    a(I I)V
+    draw()V
+    updatePointsVBO()V
+    updateTextureState()V
+    alpha()F
+
+  e
+    extends: h
+    roles: Renderer
+    fields: d, e, f, g, h, i, j, k
+    a(I I)V
+    draw()V
+    updatePointsVBO()V
+    updateTextureState()V
+    alpha()F
+
+  f
+    roles: SceneContainer
+    addChild(C3D:b/f/i;)V
+    getChildAt(I)C3D:b/f/i;
+    numChildren()I
+    removeChild(C3D:b/f/i;)Z
+
+  g
+    extends: k
+    roles: DrawCallback, SceneContainer, TransformAccessor
+    fields: a, d, id
+    a()V
+    a(I)V
+    a(C3D:api/element/TextureElement;)V
+    onDrawStart()V
+    textures()C3D:api/element/TextureList;
+
+  h
+    extends: j
+    roles: TransformAccessor
+    fields: a, b, c, d, e, a, r, g
+    a()V
+    a(F)V
+    b()F
+    b(F)V
+    draw()V
+
+  i
+    implements: a
+    roles: Animation, TouchHandler, DrawCallback, Renderer, FocusHandler, Layout, TransformAccessor, Singleton, GL, TextureCacher
+    fields: GONE, INVISIBLE, VISIBLE, mVBOCount, tempPosition, AABB_BL, AABB_BR, AABB_MATRIX
+    disableLauncher()V
+    getCacheHeight()I
+    getCacheWidth()I
+    init()V
+    recycleCacheTexture()V
+
+  i$1
+    implements: Runnable
+    fields: a
+    run()V
+
+  i$2
+    implements: Runnable
+    fields: a
+    run()V
+
+  i$3
+    implements: Runnable
+    fields: a
+    run()V
+
+  i$a
+    fields: a, b
+    a(C3D:b/f/i$a; C3D:b/f/i$a;)F
+    a(F F)V
+
+  j
+    extends: i
+    implements: f
+    roles: DrawCallback, Renderer, SceneContainer, FocusHandler, TransformAccessor, SceneArray, GL, TouchHandler
+    fields: mTempdisplaceNumber3d, isRenderChildren, mChildren, x, y, z
+    addChild(C3D:b/f/i;)V
+    addChildAt(C3D:b/f/i; I)V
+    children()Ljava/util/ArrayList;
+    clone()C3D:b/f/j;
+    clone()Ljava/lang/Object;
+
+  k
+    extends: j
+    roles: SceneContainer, TransformAccessor, GL, TouchHandler
+    fields: a, b, c, d, e, a, r, g
+    a(F)V
+    a(F F)V
+    a(I I I I I I)V
+    b()F
+    b(F)V
+
+  l
+    extends: j
+    roles: SceneContainer, TransformAccessor
+    fields: a, b, c, d, e
+    a(C3D:b/f/l;)I
+    b(C3D:b/f/l;)C3D:api/element/Color4;
+    c(C3D:b/f/l;)I
+    a()V
+    a(I)V
+
+  l$1
+    extends: a
+    fields: a
+    a(Landroid/view/MotionEvent;)V
+    e(Landroid/view/MotionEvent;)V
+    f(Landroid/view/MotionEvent;)V
+
+  m
+    extends: j
+    roles: DrawCallback, SceneContainer, TransformAccessor
+    fields: a, b, c, d, e, f, g, h
+    d()V
+    e()V
+    a()V
+    a(F F F F)V
+    a(I)V
+
+  n
+    extends: j
+    roles: TransformAccessor
+    draw()V
+    drawMVPMatrix()V
+    setMouseEventListener(C3D:b/d/a;)V
+    setAABBPX(F F F F F F)V
+    mouseEnabled(Z)V
+
+  f
+    extends: a
+    implements: b
+    fields: n, o, p, q, r, s, t, u
+    a(Ljava/lang/String;)V
+    a()V
+    b()C3D:b/f/j;
+    c()V
+
+  f
+    extends: Enum
+    roles: Enum
+    fields: a, b, d, c
+    valueOf(Ljava/lang/String;)C3D:f/f;
+    values()[C3D:f/f;
+    clone()Ljava/lang/Object;
+
+============================================================
+Package: com.censivn.C3DEngine.f$1 (1 classes)
+============================================================
+
+  f$1
+    extends: e
+    fields: j
+    a()Z
+
+============================================================
+Package: com.censivn.C3DEngine.f$a (1 classes)
+============================================================
+
+  f$a
+    extends: h
+    fields: a
+
+============================================================
+Package: com.censivn.C3DEngine.g (34 classes)
+============================================================
+
+  g
+    implements: f, a
+    roles: SceneContainer
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/f/f;)V
+    a()V
+    a(Z)V
+    addChild(C3D:b/f/i;)V
+    b()C3D:f/b;
+
+  a
+    fields: a, b, c, d, e, f, g, h
+
+  a$a
+    fields: a
+    a()F
+
+  a$a$a
+    implements: b
+    fields: a
+    a(F)F
+
+  a$a$b
+    implements: b
+    fields: a, b
+    a(F)F
+
+  a$a$c
+    implements: b
+    fields: a
+    a(F)F
+
+  a$b
+
+  a$b$a
+    implements: b
+    a(F)F
+
+  a$b$b
+    implements: b
+    a(F)F
+
+  a$b$c
+    implements: b
+    a(F)F
+
+  a$c
+
+  a$c$a
+    implements: b
+    a(F)F
+
+  a$d
+
+  a$d$a
+    implements: b
+    a(F)F
+
+  a$d$b
+    implements: b
+    a(F)F
+
+  a$d$c
+    implements: b
+    a(F)F
+
+  a$e
+
+  a$e$a
+    implements: b
+    a(F)F
+
+  a$e$b
+    implements: b
+    a(F)F
+
+  a$e$c
+    implements: b
+    a(F)F
+
+  a$e$d
+    implements: b
+    a(F)F
+
+  a$f
+    implements: b
+    a(F)F
+
+  a
+    extends: c
+    fields: c, d, e, f, g, h, i, j
+    a(F)V
+    a()C3D:b/g/d;
+    a(Ljava/lang/Runnable;)V
+    b()V
+    c()V
+
+  b
+    extends: c
+    fields: c, d, e, f, g, h, i, j
+    a(F)V
+    a()C3D:b/g/d;
+    a(Ljava/lang/Runnable;)V
+    b()V
+    c()V
+
+  c
+    fields: a, b
+    a()C3D:b/g/d;
+    a(Ljava/lang/Runnable;)V
+    c()V
+    d()Ljava/lang/Runnable;
+    e()V
+
+  d
+    extends: c
+    fields: c, d, e, f, g, h, i
+    a()C3D:b/g/d;
+    a(Ljava/lang/Runnable;)V
+    c()V
+    d()Ljava/lang/Runnable;
+    e()V
+
+  b
+    a(F)F
+
+  a
+    roles: Animation
+    getTweenChild()C3D:b/g/a/c;
+    setTweenChild(C3D:b/g/a/c;)V
+
+  b
+    implements: a
+    roles: Animation
+    fields: a, b
+    a()C3D:api/tween/TweenTarget/VValueTweenTarget;
+    a(C3D:api/tween/TweenTarget/VValueTweenTarget;)V
+    getTweenChild()C3D:b/g/a/c;
+    setTweenChild(C3D:b/g/a/c;)V
+
+  c
+    fields: a, b, c, d, e, b, o, q
+    a()V
+    a(C3D:b/g/a/c;)V
+    a(C3D:b/g/b/a;)V
+    a(C3D:b/g/b/a; I C3D:b/g/d;)V
+    b()V
+
+  c$1
+    implements: Runnable
+    fields: a
+    run()V
+
+  a
+    extends: d
+    fields: C, D, E, F, a, b, c, d
+    h()V
+    a(F)V
+    a(Z)V
+    b(Z)V
+    f(F)V
+
+  d
+    fields: A, B, a, b, c, d, g, h
+    a()V
+    a(F)V
+    a(I)V
+    a(C3D:b/g/b;)V
+    a(Ljava/lang/Object;)V
+
+  g
+    fields: a, b, c, d, e, f, h, e
+    a(C3D:b/f/i; Ljava/util/HashMap; C3D:e/a$c;)V
+    a(Ljava/util/HashMap; C3D:e/a$c;)C3D:b/f/i;
+    a()V
+    a(C3D:e/h;)V
+
+============================================================
+Package: com.censivn.C3DEngine.h (53 classes)
+============================================================
+
+  a
+    extends: a
+    roles: DrawCallback, TransformAccessor
+    fields: a, c, d, e, f, i, j, k
+    a(I I)C3D:api/element/TextureElement;
+    a(C3D:api/element/TextureElement;)C3D:b/h/a/a;
+    a(I I C3D:common/shader/Shader; I I)V
+    a(C3D:b/h/a/a;)V
+    a(Lcom/tsf/shell/f/a/a/a;)[I
+
+  a$1
+    implements: Runnable
+    fields: a
+    run()V
+
+  a$a
+    a()V
+
+  a$b
+    fields: a, b, c, d, e, f, e, d
+    b()V
+    a()V
+    a(F F)V
+    a(I)V
+    a(C3D:common/shader/Shader;)V
+
+  b
+    fields: a, b, c, d, e, f, g, H
+    c()V
+    a(F F)F
+    a()V
+    a(I)V
+    b()Z
+
+  a
+    extends: a
+    fields: a, b, d, e, f, g, h, z
+    a()V
+    a(F F)V
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(C3D:b/h/b/e;)V
+
+  b
+    a()I
+    a(I C3D:b/f/i;)C3D:b/f/i;
+    a(C3D:b/f/i;)V
+
+  c
+    extends: j
+    implements: b$a, e$a, d, a$a
+    roles: DrawCallback, SceneContainer, TransformAccessor, GL
+    fields: Q, R, A, B, C, D, E, F
+    a(C3D:b/h/b/c; F)F
+    a(C3D:b/h/b/c; I)I
+    a(C3D:b/h/b/c; Lcom/tsf/shell/f/f/g;)Lcom/tsf/shell/f/f/g;
+    a(C3D:b/h/b/c;)Lcom/tsf/shell/f/i/a;
+    a(Z)V
+
+  c$1
+    extends: k
+    roles: FocusHandler
+    fields: a
+    calAABB()V
+    onKillFocus()V
+
+  c$2
+    extends: a
+    fields: a, b, d, e, f, g, x, A
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    e(Landroid/view/MotionEvent;)V
+
+  c$3
+    extends: e
+    fields: a
+    a(Landroid/view/MotionEvent;)V
+    b(Landroid/view/MotionEvent;)V
+    e(Landroid/view/MotionEvent;)Lcom/tsf/shell/f/i/b;
+
+  c$4
+    extends: a
+    fields: a
+    a()V
+
+  c$5
+    extends: a
+    fields: a, b
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    e(Landroid/view/MotionEvent;)V
+    f(Landroid/view/MotionEvent;)V
+
+  c$6
+    extends: a
+    fields: a
+    a(Landroid/view/MotionEvent;)V
+
+  c$7
+    extends: d
+    fields: a
+    a()V
+    a(F)V
+
+  c$a
+    a()V
+
+  d
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    a(Lcom/tsf/shell/f/i/b; C3D:api/element/Number3d;)V
+    a(I)Z
+
+  e
+    extends: j
+    roles: DrawCallback, SceneContainer
+    fields: a, b, c, d, e, f, g, h
+    f(Lcom/tsf/shell/f/i/b;)V
+    a(I)C3D:api/element/Number3d;
+    a()C3D:b/h/b/d;
+    a(I I I I)V
+    a(I C3D:b/f/i;)V
+
+  f
+    a(C3D:b/f/i; I Landroid/view/MotionEvent;)V
+    a(C3D:b/f/i; I Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    b(C3D:b/f/i; I Landroid/view/MotionEvent;)V
+    c(C3D:b/f/i; I Landroid/view/MotionEvent;)V
+
+  g
+    extends: j
+    roles: DrawCallback, SceneContainer
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/h/b/g; F)F
+    a(C3D:b/h/b/g;)C3D:b/f/j;
+    a(C3D:b/f/i; I Ljava/lang/Runnable;)V
+    a(C3D:b/h/b/g; Z)Z
+    b(C3D:b/h/b/g;)F
+
+  g$1
+    extends: a
+    fields: a, b, d, e, f
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    c(Landroid/view/MotionEvent;)V
+
+  g$2
+    implements: Runnable
+    fields: a
+    run()V
+
+  h
+    extends: j
+    fields: a, A, B, C, D, E, F, G
+    a(C3D:b/h/b/h; F)F
+    a(C3D:b/h/b/h; C3D:api/element/Number3d;)C3D:api/element/Number3d;
+    a(C3D:b/h/b/h; C3D:api/element/TextureElement;)C3D:api/element/TextureElement;
+    a(C3D:b/h/b/h;)C3D:b/f/j;
+    a(I)V
+
+  h$1
+    implements: Runnable
+    fields: a, b, c, d, e
+    run()V
+
+  h$2
+    extends: j
+    roles: DrawStartCallback, DrawCallback
+    fields: a
+    onDrawStart()V
+
+  h$3
+    extends: a
+    fields: a, b, d, a, x, y
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    c(Landroid/view/MotionEvent;)V
+
+  h$4
+    implements: Runnable
+    fields: a, scrollcontainer_arrow, c
+    run()V
+
+  h$5
+    extends: a
+    fields: a, a
+    a(Landroid/view/MotionEvent;)V
+
+  h$6
+    extends: a
+    fields: a, a
+    a(Landroid/view/MotionEvent;)V
+
+  h$7
+    extends: d
+    fields: a, b
+    a()V
+
+  h$a
+    fields: a, b, c, d, e
+    a(F F)V
+
+  a
+    extends: k
+    roles: DrawCallback, TransformAccessor
+    fields: a, k, id, res_loading, z
+    a()V
+    a(Z)V
+    b(Z)V
+    onDrawStart()V
+    removeFromParent()V
+
+  a$1
+    extends: d
+    fields: a
+    a()V
+
+  a
+    extends: j
+    roles: DrawCallback, SceneContainer
+    fields: a, b, c, d, h, z, id
+    a()F
+    a(F)V
+    a(I)V
+    b()V
+    onDrawStart()V
+
+  b
+    extends: a
+    roles: DrawCallback, TransformAccessor
+    fields: a, c, d, e, f, g, h, i
+    a(F C3D:b/f/a/b; C3D:b/f/a/b; Z)V
+    a(F C3D:b/h/d/b$b;)V
+    a(C3D:b/f/a/b; Z)V
+    c(F)V
+    c(C3D:b/f/a/b;)V
+
+  b$1
+    extends: b$b
+    fields: a, b
+    a()Landroid/graphics/Bitmap;
+
+  b$2
+    extends: d
+    fields: a, b, c, d
+    a()V
+    a(F)V
+
+  b$a
+    extends: Number3d
+    roles: MathType
+    fields: a, b, c, d
+    a()V
+    rotateDegressZ(F)V
+
+  b$b
+    fields: c
+    a()Landroid/graphics/Bitmap;
+
+  c
+    extends: a
+    roles: SceneContainer
+    fields: a, b, c
+    c()V
+    a(Ljava/lang/String;)V
+    b(I)V
+    c(I)V
+    addChild(C3D:b/f/i;)V
+
+  a
+    extends: j
+    roles: SceneArray, SceneContainer, TransformAccessor
+    fields: a, b, c, d, e, f, g, h
+    a(C3D:b/h/e/a; F)F
+    a(C3D:b/f/i;)V
+    a(C3D:b/f/k;)V
+    a(C3D:b/h/e/a; C3D:b/f/i;)V
+    a(C3D:b/h/e/a;)Z
+
+  a$1
+    extends: j
+    roles: DrawCallback, TransformAccessor
+    fields: a, b, u, a
+    onDrawEnd()V
+    onDrawStart()V
+    getAnimationObjectState()Z
+    position()C3D:api/element/PositionNumber3d;
+    setAnimationObjectState(Z)V
+
+  a$2
+    extends: a
+    fields: a, b, d, e, f, a
+    a(Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)V
+    a(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    b(Landroid/view/MotionEvent; Landroid/view/MotionEvent; F F)V
+    c(Landroid/view/MotionEvent;)V
+
+  a$3
+    extends: a
+    fields: a, a
+    a(Landroid/view/MotionEvent;)V
+
+  a$4
+    extends: a
+    fields: a, a
+    a(Landroid/view/MotionEvent;)V
+
+  a$5
+    extends: d
+    fields: a, b
+    a()V
+
+  b
+    extends: j
+    roles: SceneContainer
+    fields: a, A, B, b, c, d, e, f
+    a(C3D:b/h/e/b; F)F
+    a(C3D:b/f/k;)V
+    a(C3D:b/h/e/b; I)V
+    a(C3D:b/h/e/b; C3D:b/f/i;)V
+    a(F)Z
+
+  b$1
+    extends: j
+    roles: SceneArray, DrawCallback, SceneContainer
+    fields: a, b, u
+    addChild(C3D:b/f/i;)V
+    addChildAt(C3D:b/f/i; I)V
+    onDrawChildEnd(C3D:b/f/i;)V
+    onDrawChildStart()V
+    onDrawEnd()V
+
+  b$2
+    extends: a
+    fields: a, b, d, e, f, g, h, i
+    a(C3D:b/h/e/b$2; I)I
+    a(C3D:b/h/e/b$2;)Z
+    a(C3D:b/h/e/b$2; Z)Z
+    b(C3D:b/h/e/b$2;)Z
+    b(C3D:b/h/e/b$2; Z)Z
+
+  b$2$1
+    implements: Runnable
+    fields: a, b, c, x, y, a
+    run()V
+
+  b$3
+    extends: d
+    fields: a, b
+    a()V
+
+  b$a
+    fields: a, b, c
+
+  h
+    fields: b, c, d, e, f, g, h
+
+============================================================
+Package: com.censivn.C3DEngine.i (1 classes)
+============================================================
+
+  i
+    fields: a
+    a(C3D:e/i$a; Landroid/content/res/Resources; Ljava/lang/String; Z)C3D:e/b;
+
+============================================================
+Package: com.censivn.C3DEngine.i$1 (1 classes)
+============================================================
+
+  i$1
+    fields: a, a, b, c
+
+============================================================
+Package: com.censivn.C3DEngine.i$a (1 classes)
+============================================================
+
+  i$a
+    extends: Enum
+    roles: Enum
+    fields: a, b, c, d
+    valueOf(Ljava/lang/String;)C3D:e/i$a;
+    values()[C3D:e/i$a;
+    ordinal()I
+    clone()Ljava/lang/Object;
+
+============================================================
+Package: com.censivn.C3DEngine.message (5 classes)
+============================================================
+
+  RenderRunnable
+    implements: Runnable
+    fields: TYPE_EXTERNAL_THREAD, TYPE_GL_THREAD, TYPE_MAINUI_THREAD, autoInvalidate, frame, type
+    run()V
+
+  VMessageManager
+    roles: GL
+    cancelGLRunnable(Ljava/lang/Runnable;)V
+    cancelRenderRunnable(C3D:api/message/RenderRunnable;)V
+    cancelUIRunnable(Ljava/lang/Runnable;)V
+    postGLThreadRunnable(Ljava/lang/Runnable;)V
+    postGLThreadRunnable(Ljava/lang/Runnable; J)V
+
+  VMessageQueueManager
+    roles: Singleton
+    fields: TYPE_GL_THREAD, TYPE_MAINUI_THREAD, mHandlerThread, appWidgetId, isPaused, mHandler, mHashMap, mQueue
+    access$000(C3D:api/message/VMessageQueueManager;)Ljava/util/LinkedList;
+    access$100(C3D:api/message/VMessageQueueManager;)Z
+    access$200(C3D:api/message/VMessageQueueManager;)V
+    init()V
+    scheduleNextLocked()V
+
+  VMessageQueueManager$1
+    implements: Runnable
+    fields: a, b, c, TYPE_GL_THREAD, TYPE_MAINUI_THREAD
+    run()V
+
+  VMessageQueueManager$a
+    extends: Handler
+    implements: MessageQueue$IdleHandler
+    fields: a
+    handleMessage(Landroid/os/Message;)V
+    queueIdle()Z
+    sendEmptyMessage(I)Z
+
+============================================================
+Package: com.censivn.C3DEngine.primitives (14 classes)
+============================================================
+
+  VBox
+    extends: VObject3dContainer
+    roles: SceneGraphNode
+
+  VBox$1
+    extends: c
+    roles: DrawCallback, FocusHandler
+    fields: a
+    onDrawEnd()V
+    onDrawStart()V
+    onFocus()V
+    onKillFocus()V
+    onUpdateAnimation()V
+
+  VRectangle
+    extends: VObject3dContainer
+    roles: SceneGraphNode, TransformAccessor
+    fields: reverse, autoSize
+    height()F
+    height(F)V
+    setTexturePosition(I I I I I I)V
+    width()F
+    width(F)V
+
+  VRectangle$1
+    extends: k
+    roles: DrawCallback, Renderer, FocusHandler
+    fields: a
+    dispatchDraw()V
+    draw()V
+    drawElement()V
+    drawMVPMatrix()V
+    onDrawChildEnd(C3D:b/f/i;)V
+
+  VRectangle$VRectangleParams
+    fields: autoSize, reverse, this$0
+
+  VVirtualObject
+    extends: VObject3d
+    roles: SceneGraphNode
+
+  VButton
+    extends: VObject3dContainer
+    roles: SceneGraphNode, TransformAccessor
+    fields: vTarget, vTarget
+    getItem(I)C3D:api/primitives/button/VButtonItem;
+    updateMatrix(C3D:api/primitives/button/VButtonItem;)V
+    updateTexturePosition(C3D:api/primitives/button/VButtonItem;)V
+    scale()C3D:api/element/Number3d;
+    textures()C3D:api/core/VTextureList;
+
+  VButton$1
+    extends: a
+    roles: DrawCallback, FocusHandler
+    fields: a
+    onDrawEnd()V
+    onDrawStart()V
+    onFocus()V
+    onKillFocus()V
+    onUpdateAnimation()V
+
+  VButton$2
+    extends: a
+    roles: DrawCallback, FocusHandler
+    fields: a
+    onDrawEnd()V
+    onDrawStart()V
+    onFocus()V
+    onKillFocus()V
+    onUpdateAnimation()V
+
+  VButton$3
+    extends: a
+    roles: DrawCallback, FocusHandler
+    fields: a
+    onDrawEnd()V
+    onDrawStart()V
+    onFocus()V
+    onKillFocus()V
+    onUpdateAnimation()V
+
+  VButton$4
+    extends: a
+    roles: DrawCallback, FocusHandler
+    fields: a
+    onDrawEnd()V
+    onDrawStart()V
+    onFocus()V
+    onKillFocus()V
+    onUpdateAnimation()V
+
+  VButtonItem
+    implements: VTweenTarget
+    roles: TransformAccessor
+    fields: vTarget, H, m, n, o, vTarget
+    alpha()F
+    alpha(F)V
+    color()C3D:api/element/Color4;
+    flipHorizontal(Z)V
+    flipHorizontal()Z
+
+  VNinePatchRectangle
+    fields: vTarget
+    height()F
+    height(F)V
+    setNinePatch(C3D:api/primitives/ninepath/VNinePathParam;)V
+    setSize(F F)V
+    width()F
+
+  VNinePathParam
+    fields: vTarget
+    getVirtualTarget()Ljava/lang/Object;
+
+============================================================
+Package: com.censivn.C3DEngine.renderer (3 classes)
+============================================================
+
+  MatrixStack
+    roles: Singleton, GL
+    fields: COLOR_SIZE, DEFAULT_MAX_DEPTH, MATRIX_SIZE, color, mTemp, matrix, rMVPMatrix, rProjMatrix
+    adjust(I)V
+    commonInit(I)V
+    fixedToFloat(I)F
+    getMatrix([F I)V
+    glColor()C3D:common/renderer/MatrixStack$ColorInfo;
+
+  MatrixStack$ColorInfo
+    fields: alpha, colorA, colorB, colorG, colorR
+
+  ShaderManager
+    roles: Singleton, GL
+    fields: CURRENT_SHADER, SHADER_ALPHA, SHADER_COLOR, SHADER_COLOR_MATRIX_TEXTURE, SHADER_COLOR_TEXTURE, SHADER_FILL_COLOR_TEXTURE, SHADER_LOCK, SHADER_STANDARD
+    enableShader(C3D:common/shader/Shader;)V
+    init()V
+    lockShader()V
+    unlockShader()V
+
+============================================================
+Package: com.censivn.C3DEngine.resources (1 classes)
+============================================================
+
+  Resource
+    fields: fontTypeface
+
+============================================================
+Package: com.censivn.C3DEngine.root (1 classes)
+============================================================
+
+  a
+    fields: a, b, c, d, e, f, g, e
+    a()C3D:b/c/c;
+    a(Landroid/app/Activity;)V
+    a(Landroid/content/Context; Ljava/lang/String;)V
+    a(Landroid/opengl/GLSurfaceView;)V
+    a(C3D:a/e;)V
+
+============================================================
+Package: com.censivn.C3DEngine.shader (8 classes)
+============================================================
+
+  Shader
+    roles: GL
+    fields: id, maPositionHandle, maTextureHandle, muMVPMatrixHandle, matrix, topIndex, rMVPMatrix, rSceneMatrix
+    glMVPMatrix()V
+    glMVPMatrix([F I)V
+    glTexCoordPointer(I I Z I Ljava/nio/Buffer;)V
+    glVertexPointer(I I Z I Ljava/nio/Buffer;)V
+
+  ShaderAlpha
+    extends: Shader
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader, maAlphaHandle
+    createProgram()V
+    glAlpha(F)V
+
+  ShaderColor
+    extends: Shader
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader, maColor4Handle, r, g, b
+    createProgram(Ljava/lang/String; Ljava/lang/String;)V
+    glColor4f(I I I I)V
+    glColor4f(C3D:api/core/VObject3d;)V
+    glColorPointer(I I Z I Ljava/nio/Buffer;)V
+    glVertexPointer(I I Z I Ljava/nio/Buffer;)V
+
+  ShaderColorMatrixTexture
+    extends: ShaderColor
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader, muSTMatrixHandle
+    createProgram()V
+    glSTMatrix([F I)V
+
+  ShaderColorTexture
+    extends: ShaderColor
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader
+    createProgram()V
+    glColor4f(I I I I)V
+    glTexCoordPointer(I I Z I Ljava/nio/Buffer;)V
+    glVertexPointer(I I Z I Ljava/nio/Buffer;)V
+    glColorPointer(I I Z I Ljava/nio/Buffer;)V
+
+  ShaderFillColorTexture
+    extends: ShaderColor
+    roles: Shader
+    fields: mFragmentShader, mVertexShader
+    createProgram()V
+
+  ShaderStandard
+    extends: Shader
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader
+    createProgram()V
+    glMVPMatrix()V
+    glTexCoordPointer(I I Z I Ljava/nio/Buffer;)V
+    glVertexPointer(I I Z I Ljava/nio/Buffer;)V
+
+  ShaderTextureMatrix
+    extends: Shader
+    roles: GL, Shader
+    fields: mFragmentShader, mVertexShader, muSTMatrixHandle
+    createProgram()V
+    glSTMatrix([F I)V
+
+============================================================
+Package: com.censivn.C3DEngine.shell (6 classes)
+============================================================
+
+  VConsole
+    fields: b
+    activity()Landroid/app/Activity;
+    context()Landroid/content/Context;
+    isFullScreen()V
+    isTransparentNavigationBar()V
+    pauseScreenOrientation()V
+
+  VInformation
+    fields: b, a, c, t, u, q, r, s
+    HDScale()F
+    Scale()F
+    XHDScale()F
+    desktopEndX()F
+    desktopEndY()F
+
+  VPage
+    fields: vTarget
+    addWidget(C3D:api/core/VObject3d;)V
+    addWidget(C3D:api/core/VObject3d; I)V
+    containsWidget(C3D:api/core/VObject3d;)Z
+    getIndex()I
+    getWidgetIndex(C3D:api/core/VObject3d;)I
+
+  VTempleteSceneCallbacks
+    fields: mThis, vTarget
+    access$000(C3D:api/shell/VTempleteSceneCallbacks;)C3D:api/shell/VTempleteSceneCallbacks;
+    onKeyDown(I Landroid/view/KeyEvent;)V
+    onKeyUp(I Landroid/view/KeyEvent;)V
+
+  VTempleteSceneCallbacks$1
+    extends: a
+    fields: a
+    a(I Landroid/view/KeyEvent;)V
+    b(I Landroid/view/KeyEvent;)V
+
+  VTempleteayerManager
+    fields: j, vTarget
+    addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V
+    hideScreen()V
+    hideScreen(Ljava/lang/Runnable;)V
+    remove()V
+    removeView(Landroid/view/View;)V
+
+============================================================
+Package: com.censivn.C3DEngine.tween (10 classes)
+============================================================
+
+  VTweenTarget
+    getVirtualTarget()Ljava/lang/Object;
+
+  VValueTweenTarget
+    implements: VTweenTarget
+    fields: vTarget
+    getVirtualTarget()Ljava/lang/Object;
+
+  VEasing
+
+  VEasing$Back
+    fields: easeIn, easeInOut, easeOut
+
+  VEasing$Circ
+    fields: easeIn, easeInOut, easeOut
+
+  VEasing$Elastic
+    fields: easeOut
+
+  VEasing$inear
+    fields: easeIn, easeInOut, easeNone, easeOut
+
+  VTween
+    roles: Animation
+    fields: vTarget
+    killTween(C3D:api/tween/TweenTarget/VTweenTarget;)V
+    pauseTween(C3D:api/tween/TweenTarget/VTweenTarget;)V
+    resumeTween(C3D:api/tween/TweenTarget/VTweenTarget;)V
+    to(C3D:api/tween/TweenTarget/VTweenTarget; I C3D:api/tween/VTweenParam;)V
+
+  VTweenParam
+    fields: mThis, vTarget, b, c, a, d, f, e
+    access$000(C3D:api/tween/VTweenParam;)C3D:api/tween/VTweenParam;
+    getCompleteRunnable()Ljava/lang/Runnable;
+    getTarget()Ljava/lang/Object;
+    getVirtualTarget()Ljava/lang/Object;
+    onComplete()V
+
+  VTweenParam$1
+    extends: d
+    fields: a
+    a()V
+    a(F)V
+    b()V
+    b(F)V
+    c()V

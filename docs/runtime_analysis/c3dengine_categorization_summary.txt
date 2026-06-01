@@ -1,0 +1,345 @@
+================================================================================
+C3DEngine v3.9.4 - Categorization Summary
+Total: 328 classes
+================================================================================
+
+============================================================
+com.censivn.C3DEngine.a.*  (18 classes)
+  Engine Core (GL thread, context, main loop, initialization)
+  Main engine controller. SurfaceView/GLThread bridge. Handles init(), render loop, input dispatch, engine lifecycle. Contains inner classes for async operations.
+============================================================
+    a: 10 classes
+      a, a, a, a, a$1, a$a, a$b, a$c, a$c$a, a
+    a.a: 4 classes
+      a, a, a, b
+    a.b: 1 classes
+      b
+    a.c: 1 classes
+      c
+    a.d: 1 classes
+      d
+    a.e: 1 classes
+      e
+    Abstract: 1, Implements interfaces: 2
+
+============================================================
+com.censivn.C3DEngine.b.*  (36 classes)
+  Worker Subsystems (Scene/Page/Widget/Mesh management)
+  Complex package with 7+ subsystems: b.b.* (scene containers/layout), b.c.* (widget/data management including WidgetManager HandlerThread), b.d.* (touch/mouse event dispatch), b.e.* (texture loading), b.f.* (scene graph nodes), b.g.* (page/scene orchestration), b.h.* (UI interactions, drawer/folder/widget touch handling). Contains Runnable callbacks, gesture detectors, layout managers.
+============================================================
+    b: 12 classes
+      b, b$1, b$2, b$3, b$a, b$b, b$c, b$d, b, b, b, b
+    b.a: 15 classes
+      a, a, b, c, d, d$1, d$2, d$3, d$4, e, e$1, e$2, e$3, e$4, a
+    b.a$1: 1 classes
+      a$1
+    b.b: 2 classes
+      b, b
+    b.c: 2 classes
+      c, c
+    b.c$1: 1 classes
+      c$1
+    b.c$2: 1 classes
+      c$2
+    b.d: 1 classes
+      d
+    b.d$1: 1 classes
+      d$1
+    Abstract: 5, Implements interfaces: 8
+
+============================================================
+com.censivn.C3DEngine.c.*  (27 classes)
+  Resource/Data Parser Layer (XML, JSON, Bitmap)
+  Resource loading and parsing. c.a.* for asset/resource I/O, c.b.* for XML/JSON/config parsing, c.c.* and c.d.* for data model objects (themed icons, resource references). Includes file downloaders, Bitmap decoders, data caches.
+============================================================
+    c: 3 classes
+      c, c, c
+    c.a: 1 classes
+      a
+    c.a$a: 1 classes
+      a$a
+    c.b: 1 classes
+      b
+    c.b$1: 1 classes
+      b$1
+    c.b$2: 1 classes
+      b$2
+    c.b$a: 1 classes
+      b$a
+    c.c: 1 classes
+      c
+    c.c$1: 1 classes
+      c$1
+    c.c$a: 1 classes
+      c$a
+    c.d: 1 classes
+      d
+    c.d$a: 1 classes
+      d$a
+    c.d$b: 1 classes
+      d$b
+    c.e: 1 classes
+      e
+    c.e$1: 1 classes
+      e$1
+    c.e$2: 1 classes
+      e$2
+    c.e$3: 1 classes
+      e$3
+    c.e$4: 1 classes
+      e$4
+    c.e$5: 1 classes
+      e$5
+    c.e$5$1: 1 classes
+      e$5$1
+    c.e$5$1$1: 1 classes
+      e$5$1$1
+    c.e$5$1$2: 1 classes
+      e$5$1$2
+    c.e$a: 1 classes
+      e$a
+    c.e$b: 1 classes
+      e$b
+    c.f: 1 classes
+      f
+    Abstract: 3, Implements interfaces: 13
+
+============================================================
+com.censivn.C3DEngine.d.*  (10 classes)
+  Notification/State/Event System
+  Notification badge management, app state tracking, unread count handling. Works with Android NotificationManager. Contains state enums (uninstalled, upgraded, normal).
+============================================================
+    d: 9 classes
+      d, d$1, d$1$1, d$2, d$3, d, d$1, d$a, d
+    d.a: 1 classes
+      a
+    Abstract: 0, Implements interfaces: 5
+
+============================================================
+com.censivn.C3DEngine.e.*  (25 classes)
+  Theme/Widget/Drawable System
+  Theme resource management, widget data models, clock/cube widget rendering. e.a.* = theme parsing/application, e.b.* = widget data descriptions, e.c.* = drawable/icon loading.
+============================================================
+    e: 3 classes
+      e, e, e
+    e.a: 1 classes
+      a
+    e.a$1: 1 classes
+      a$1
+    e.a$a: 1 classes
+      a$a
+    e.b: 1 classes
+      b
+    e.b$a: 1 classes
+      b$a
+    e.b$b: 1 classes
+      b$b
+    e.b$b$1: 1 classes
+      b$b$1
+    e.c: 1 classes
+      c
+    e.c$1: 1 classes
+      c$1
+    e.c$2: 1 classes
+      c$2
+    e.c$3: 1 classes
+      c$3
+    e.d: 1 classes
+      d
+    e.e: 1 classes
+      e
+    e.f: 1 classes
+      f
+    e.g: 1 classes
+      g
+    e.h: 1 classes
+      h
+    e.h$1: 1 classes
+      h$1
+    e.h$a: 1 classes
+      h$a
+    e.i: 1 classes
+      i
+    e.j: 1 classes
+      j
+    e.j$1: 1 classes
+      j$1
+    e.j$a: 1 classes
+      j$a
+    Abstract: 1, Implements interfaces: 3
+
+============================================================
+com.censivn.C3DEngine.f.*  (31 classes)
+  Scene Graph Core (b.f.i = VObject3d equivalent)
+  The internal scene graph implementation. f.* contains b.f.i (main scene node, VObject3d substitute with position/scale/rotation/visibility), b.f.j (VObject3dContainer substitute with children management), b.f.k (specialized container), b.f.c (render batches), b.f.a.* (render task/display list).
+============================================================
+    f: 5 classes
+      f, f$1, f, f$a, f
+    f.a: 4 classes
+      a, a, a$1, b
+    f.a$a: 1 classes
+      a$a
+    f.b: 3 classes
+      b, a, b
+    f.b$1: 1 classes
+      b$1
+    f.c: 1 classes
+      c
+    f.d: 1 classes
+      d
+    f.e: 1 classes
+      e
+    f.f: 1 classes
+      f
+    f.g: 1 classes
+      g
+    f.h: 1 classes
+      h
+    f.i: 1 classes
+      i
+    f.i$1: 1 classes
+      i$1
+    f.i$2: 1 classes
+      i$2
+    f.i$3: 1 classes
+      i$3
+    f.i$a: 1 classes
+      i$a
+    f.j: 1 classes
+      j
+    f.k: 1 classes
+      k
+    f.l: 1 classes
+      l
+    f.l$1: 1 classes
+      l$1
+    f.m: 1 classes
+      m
+    f.n: 1 classes
+      n
+    Abstract: 1, Implements interfaces: 9
+
+============================================================
+com.censivn.C3DEngine.g.*  (34 classes)
+  Page/Transition System
+  Page management and transition effects. b.g.* contains page container, page state machine, page change listeners, cube/rotation/scroll transition implementations.
+============================================================
+    g: 2 classes
+      g, g
+    g.a: 5 classes
+      a, a, b, c, d
+    g.a$a: 1 classes
+      a$a
+    g.a$a$a: 1 classes
+      a$a$a
+    g.a$a$b: 1 classes
+      a$a$b
+    g.a$a$c: 1 classes
+      a$a$c
+    g.a$b: 1 classes
+      a$b
+    g.a$b$a: 1 classes
+      a$b$a
+    g.a$b$b: 1 classes
+      a$b$b
+    g.a$b$c: 1 classes
+      a$b$c
+    g.a$c: 1 classes
+      a$c
+    g.a$c$a: 1 classes
+      a$c$a
+    g.a$d: 1 classes
+      a$d
+    g.a$d$a: 1 classes
+      a$d$a
+    g.a$d$b: 1 classes
+      a$d$b
+    g.a$d$c: 1 classes
+      a$d$c
+    g.a$e: 1 classes
+      a$e
+    g.a$e$a: 1 classes
+      a$e$a
+    g.a$e$b: 1 classes
+      a$e$b
+    g.a$e$c: 1 classes
+      a$e$c
+    g.a$e$d: 1 classes
+      a$e$d
+    g.a$f: 1 classes
+      a$f
+    g.b: 3 classes
+      b, a, b
+    g.c: 2 classes
+      c, a
+    g.c$1: 1 classes
+      c$1
+    g.d: 1 classes
+      d
+    Abstract: 3, Implements interfaces: 18
+
+============================================================
+com.censivn.C3DEngine.h.*  (53 classes)
+  Interaction/Widget Display System
+  Touch interaction, folder display, drawer display, widget display. b.h.a.* = screen/folder data, b.h.b.* = drag-and-drop touch handlers (long press, scroll, fling), b.h.c.* = drawer panel display, b.h.d.* = edit mode actions, b.h.e.* = folder preview/animation, b.h.* = transition animations.
+============================================================
+    h: 1 classes
+      h
+    h.a: 5 classes
+      a, a$1, a$a, a$b, b
+    h.b: 26 classes
+      a, b, c, c$1, c$2, c$3, c$4, c$5, c$6, c$7, c$a, d, e, f, g, g$1, g$2, h, h$1, h$2, h$3, h$4, h$5, h$6, h$7, h$a
+    h.c: 2 classes
+      a, a$1
+    h.d: 7 classes
+      a, b, b$1, b$2, b$a, b$b, c
+    h.e: 12 classes
+      a, a$1, a$2, a$3, a$4, a$5, b, b$1, b$2, b$2$1, b$3, b$a
+    Abstract: 2, Implements interfaces: 6
+
+============================================================
+com.censivn.C3DEngine.i.*  (3 classes)
+  Utility/Misc Engine Core
+  Small utility package. Engine-level initialization/utility support.
+============================================================
+    i: 3 classes
+      i, i$1, i$a
+    Abstract: 0, Implements interfaces: 0
+
+  com.censivn.C3DEngine.core.*  (14 classes)
+    Public API - Core Scene Graph
+
+  com.censivn.C3DEngine.element.*  (22 classes)
+    Public API - Element Types
+
+  com.censivn.C3DEngine.effects.*  (4 classes)
+    Public API - Effects Stack
+
+  com.censivn.C3DEngine.event.*  (2 classes)
+    Public API - Mouse Events
+
+  com.censivn.C3DEngine.message.*  (5 classes)
+    Public API - Message Queue
+
+  com.censivn.C3DEngine.primitives.*  (14 classes)
+    Public API - Primitives (Rectangle, Button)
+
+  com.censivn.C3DEngine.renderer.*  (3 classes)
+    Public API - MatrixStack, ShaderManager
+
+  com.censivn.C3DEngine.resources.*  (1 classes)
+    Public API - Resource
+
+  com.censivn.C3DEngine.shader.*  (8 classes)
+    Public API - Shader Programs
+
+  com.censivn.C3DEngine.shell.*  (6 classes)
+    Public API - Shell Utilities
+
+  com.censivn.C3DEngine.tween.*  (10 classes)
+    Public API - Tween/Animation
+
+  Other packages: Utils
+
+  com.censivn.C3DEngine.a (root engine class)  (1 classes)
+    Main engine singleton (a.a = engine instance accessor)

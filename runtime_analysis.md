@@ -284,6 +284,12 @@ com.cm.kinfoc.a.a(String, String, String, int, String) → byte[]
 | `scripts/frida_frame_trace.js` | 1.3KB | Per-frame composition tracer |
 | `scripts/frida_interactive_trace.js` | 2.1KB | Combined draw + container mutation tracer |
 | `scripts/frida_hierarchy2.js` | 2.0KB | Container hierarchy tree builder |
+| `scripts/frida_phase2_comprehensive.js` | 3.3KB | Full activity + transition + touch + wallpaper hooks |
+| `scripts/frida_phase3_transforms.js` | 3.0KB | VObject3d transform + page transition tracer |
+| `scripts/frida_phase5_remaining.js` | 4.4KB | Method enumeration + KSM check + Activity lifecycle |
+| `scripts/frida_final_activity_trace.js` | 2.4KB | Clean Activity lifecycle tracer |
+| `method_enumeration_output.txt` | 4.4KB | Full method sigs for all discovered classes |
+| `activity_lifecycle_trace.txt` | 1.5KB | Activity create/resume/pause/destroy sequence |
 
 ### Scene Graph Constructor Scripts
 All scripts follow the same pattern:
@@ -351,14 +357,53 @@ Root 3: widget.alarm.AlarmWidget
 - Activities (wallpaper picker, personalization, widget picker) open as standard Android overlays — they do NOT add VObjects to the 3D scene graph
 - ADB touches/swipes did not trigger any scene graph mutations — page transitions likely use matrix transforms on the page container rather than add/remove
 
-### Interactive Activity Testing
-| Activity | Result |
-|----------|--------|
-| `WallpaperPickerActivity` | Launched, no scene graph changes |
-| `PersonalizationActivity` | Launched, no scene graph changes |
-| `ThemeDIYActivity` | **CRASH** — `Service Intent must be explicit` |
-| `APPWIDGET_PICK` intent | Launched, no scene graph changes |
-| Long-press / Tap / Swipe | No scene graph mutations detected |
+### Interactive Activity Testing (Phase 2 — with lifecycle hooks)
+| Activity | Process | Lifecycle Observed | 3D Scene Changes |
+|----------|---------|-------------------|------------------|
+| `ShellActivity` (main) | main | ACT_CREATE, ACT_DESTROY | Initial setup only |
+| `Home` (main) | main | ACT_CREATE, ACT_RESUME, ACT_PAUSE | — |
+| `SettingActivity` (alarm) | `:alarm` | Not traceable (sub-process) | Separate C3DEngine instance |
+| `WallpaperPickerActivity` | `:wallpaperSelector` | Not traceable (sub-process) | Separate C3DEngine instance |
+| `PersonalizationActivity` | **main** | ACT_CREATE, ACT_RESUME, ACT_PAUSE, ACT_DESTROY | No scene changes |
+| `ThemeCmClubActivity` | main | **CRASH** — `Service Intent must be explicit` | — |
+| `ThemeDIYActivity` | main | **CRASH** — Same error | — |
+| `APPWIDGET_PICK` intent | main | Started, no 3D changes | — |
+
+**Key discovery:** The wallpaper picker and alarm settings run in DEDICATED PROCESSES (`:wallpaperSelector`, `:alarm`) with their own C3DEngine instances. The Demo/preview mode renders there. Frida's Java bridge cannot initialize in these sub-processes on API 28.
+
+### Page Transition Mapping (Phase 3)
+Page transitions confirmed via `f.e.c.a.c.a(b, b)` — takes two page container references (from, to). Page positions set via `f.e.c.a.b.a(float)` (position) and `b(float)` (scale). Pattern during transition: POS:128 (initial) → SCALE:-127.5 (offscreen) → POS:75.0 (final). Swipes do NOT use addChild/removeChild — purely matrix/position changes on existing containers.
+
+### VObject3d Transform API Change (v1 vs v3)
+**v1.9.9.7.6** had `setPosition()`, `setScale()`, `setRotation()` methods. **v3.9.4** removed these. The new API uses:
+- `position()` → returns mutable `Number3d` 
+- `scale()` → returns mutable `Number3d`
+- Mutate the returned object, then call `updateAABBMatrix(float[])`
+- Also available: `drawMVPMatrix()`, `getAABBMatrix()`
+
+### Complete Method Inventory (Phase 1+5)
+#### Page System (com.tsf.shell.f.e.c.a.*)
+| Class | Methods | Role |
+|-------|---------|------|
+| `a` | `a(float,float)`, `b(float,float)` | Page layout helper |
+| `b` (page) | `a()→float`, `a(float)`, `a(float,float)`, `a(e)`, `b(float)` | Page container (position/scale) |
+| `c` (host) | `a(b,b)` (transition!), `a()` (init), `drawElement()`, `a(float,float,float,int)→e`, `a(float,float,float,float)` (private), `b()` (private) | Page host controller |
+| `d` | `a()`, `a(float)`, `a(float,float,float,int)`, `b()`, `b(float)`, `c()`, `c(float)`, `d()`, `d(float)`, `e()`, `e(float)`, `f()`, `onDrawStart()` | Page state/animator |
+| `e` | `a(e)`, `b(e)` (both take/return `e`) | Page info/data object |
+
+#### Wallpaper Manager
+| Class | Key Methods |
+|-------|-------------|
+| `wallpaper.a$b` | `a()` (init), `a(float,float)` (set offset/parallax), `b()` (toggle show), `a(Bitmap,float,float)→Bitmap` (scale), `onDrawStart()`, `onDrawEnd()` |
+| `wallpaper.a$a` | `a(float,float)` (wallpaper object offset) |
+
+#### Touch Dispatch
+- `AlarmWidget.calTouchCollision(float, float)` — touch entry point (confirmed firing at 360,80)
+- `alarm.b.calTouchCollision(float, float)` — hour hand touch
+- `alarm.h.calTouchCollision(float, float)` — sub-widget touch
+
+#### KSM (com.ksm.*)
+**0 classes loaded** at runtime in current UI state. Not active.
 
 ### Native Library Module Enumeration (still blocked)
 - `libkcmutil.so` (76KB) and `libandenginephysicsbox2dextension.so` (214KB) confirmed loaded via `/proc/pid/maps`

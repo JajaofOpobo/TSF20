@@ -1,0 +1,95 @@
+     ____
+    / _  |   Frida 17.10.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Spawning `com.tsf.shell`...
+Spawned `com.tsf.shell`. Resuming main thread!
+message: {'type': 'send', 'payload': 'egl hooked'} data: None
+[Android Emulator 5554::com.tsf.shell ]-> TypeError: cannot read property 'address' of undefined
+    at <anonymous> (/frida/bridges/java.js:1)
+message: {'type': 'send', 'payload': '=== com.tsf.shell.f.e.c.a.a (2 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.a.a(float,float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.a.b(float,float)'} data: None
+message: {'type': 'send', 'payload': '=== com.tsf.shell.f.e.c.a.d (13 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.a(float,float,float,int)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.d(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.d()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.e(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.e()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.f()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.a()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.a(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.b()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.b(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.c()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.c(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.d.onDrawStart()'} data: None
+message: {'type': 'send', 'payload': '=== com.tsf.shell.f.e.c.a.e (2 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.e.a(com.tsf.shell.f.e.c.a.e)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.f.e.c.a.e.b(com.tsf.shell.f.e.c.a.e)'} data: None
+message: {'type': 'send', 'payload': '=== com.tsf.shell.widget.alarm.e (8 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.a()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.a(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.a(int)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.a(int,float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.b()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.b(float)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.c()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.e.d()'} data: None
+message: {'type': 'send', 'payload': '=== com.tsf.shell.widget.alarm.d.c (1 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.d.c.b()'} data: None
+message: {'type': 'send', 'payload': 'ERR:com.tsf.shell.widget.alarm.AlarmUtils$Alarm$b java.lang.ClassNotFoundException: Didn\'t find class "com.tsf.shell.widget.alarm.AlarmUtils$Alarm$b" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.tsf.shell-9GTBtkKdHj_P97GnMe-2kA==/base.apk"],nativeLibraryDirectories=[/data/app/com.tsf.shell-9GTBtkKdHj_P97GnMe-2kA==/lib/arm, /data/app/com.tsf.shell-9GTBtkKdHj_P97GnMe-2kA==/base.apk!/lib/armeabi, /system/lib]]'} data: None
+message: {'type': 'send', 'payload': '=== com.tsf.shell.widget.alarm.service.c (7 methods) ==='} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.a(com.tsf.shell.widget.alarm.service.c)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.a()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.a(com.tsf.shell.widget.alarm.service.c$a)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.a(com.tsf.shell.widget.alarm.service.c$c)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.b()'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.onServiceConnected(android.content.ComponentName,android.os.IBinder)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.service.c.onServiceDisconnected(android.content.ComponentName)'} data: None
+message: {'type': 'send', 'payload': 'wp hooks ok'} data: None
+message: {'type': 'send', 'payload': 'wpObj hook ok'} data: None
+message: {'type': 'send', 'payload': 'transition hook ok'} data: None
+message: {'type': 'send', 'payload': 'page hooks ok'} data: None
+message: {'type': 'send', 'payload': '=== VObject3d transform methods ==='} data: None
+message: {'type': 'send', 'payload': '  drawMVPMatrix()'} data: None
+message: {'type': 'send', 'payload': '  getAABBMatrix()'} data: None
+message: {'type': 'send', 'payload': '  globalScaleToLocal(class com.censivn.C3DEngine.api.element.Number3d)'} data: None
+message: {'type': 'send', 'payload': '  localScaleToGlobale(class com.censivn.C3DEngine.api.element.Number3d)'} data: None
+message: {'type': 'send', 'payload': '  position()'} data: None
+message: {'type': 'send', 'payload': '  resetColor()'} data: None
+message: {'type': 'send', 'payload': '  resetDefaultShader()'} data: None
+message: {'type': 'send', 'payload': '  scale()'} data: None
+message: {'type': 'send', 'payload': '  setAABBPX(float,float,float,float,float,float)'} data: None
+message: {'type': 'send', 'payload': '  setAABBSP(float,float,float,float,float,float)'} data: None
+message: {'type': 'send', 'payload': '  setAnimationObjectState(boolean)'} data: None
+message: {'type': 'send', 'payload': '  setCustomShader(class com.censivn.C3DEngine.common.shader.Shader)'} data: None
+message: {'type': 'send', 'payload': '  setFocus()'} data: None
+message: {'type': 'send', 'payload': '  setMouseEventListener(class com.censivn.C3DEngine.api.event.VMouseEventListener)'} data: None
+message: {'type': 'send', 'payload': '  setTag(class java.lang.Object)'} data: None
+message: {'type': 'send', 'payload': '  setTag(class java.lang.Object,class java.lang.Object)'} data: None
+message: {'type': 'send', 'payload': '  setZOrderOnTop()'} data: None
+message: {'type': 'send', 'payload': '  updateAABBMatrix(class [F)'} data: None
+message: {'type': 'send', 'payload': '=== KSM classes loaded: 0 ==='} data: None
+message: {'type': 'send', 'payload': 'touch hook ok'} data: None
+message: {'type': 'send', 'payload': "act err: onCreate(): has more than one overload, use .overload(<signature>) to choose from:\n\t.overload('android.os.Bundle')\n\t.overload('android.os.Bundle', 'android.os.PersistableBundle')"} data: None
+message: {'type': 'send', 'payload': 'ready'} data: None
+message: {'type': 'send', 'payload': 'WP_OBJ_MOVE:250,416'} data: None
+message: {'type': 'send', 'payload': 'WP_OFFSET:250,416'} data: None
+message: {'type': 'send', 'payload': 'WP_OBJ_MOVE:250,416'} data: None
+message: {'type': 'send', 'payload': 'POS:128'} data: None
+message: {'type': 'send', 'payload': 'POS:128'} data: None
+message: {'type': 'send', 'payload': 'SCALE:-127.5'} data: None
+message: {'type': 'send', 'payload': 'POS:75.00000762939453'} data: None
+message: {'type': 'send', 'payload': 'SCALE:-127.5'} data: None
+message: {'type': 'send', 'payload': 'POS:75.00000762939453'} data: None
+message: {'type': 'send', 'payload': 'TRANSITION:1780350659230 141078287->243485596'} data: None
+
+Thank you for using Frida!

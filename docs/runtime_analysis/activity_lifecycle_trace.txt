@@ -1,0 +1,43 @@
+     ____
+    / _  |   Frida 17.10.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Spawning `com.tsf.shell`...
+Spawned `com.tsf.shell`. Resuming main thread!
+message: {'type': 'send', 'payload': 'egl hooked'} data: None
+[Android Emulator 5554::com.tsf.shell ]-> message: {'type': 'send', 'payload': 'act hooks ok'} data: None
+message: {'type': 'send', 'payload': 'trans hook ok'} data: None
+message: {'type': 'send', 'payload': 'page hooks ok'} data: None
+message: {'type': 'send', 'payload': 'wp hooks ok'} data: None
+message: {'type': 'send', 'payload': 'ready'} data: None
+message: {'type': 'send', 'payload': 'ACT_CREATE:com.tsf.shell.ShellActivity'} data: None
+message: {'type': 'send', 'payload': 'ACT_CREATE:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_RESUME:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_PAUSE:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'WP_OFFSET:250,416'} data: None
+message: {'type': 'send', 'payload': 'POS:128'} data: None
+message: {'type': 'send', 'payload': 'POS:128'} data: None
+message: {'type': 'send', 'payload': 'SCALE:-127.5'} data: None
+message: {'type': 'send', 'payload': 'POS:75.00000762939453'} data: None
+message: {'type': 'send', 'payload': 'SCALE:-127.5'} data: None
+message: {'type': 'send', 'payload': 'POS:75.00000762939453'} data: None
+message: {'type': 'send', 'payload': 'TRANSITION:1780350761752 141078287->243485596'} data: None
+message: {'type': 'send', 'payload': 'ACT_DESTROY:com.tsf.shell.ShellActivity'} data: None
+message: {'type': 'send', 'payload': 'ACT_RESUME:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_PAUSE:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_RESUME:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_PAUSE:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_CREATE:com.tsf.extend.wallpaper.PersonalizationActivity'} data: None
+message: {'type': 'send', 'payload': 'ACT_RESUME:com.tsf.extend.wallpaper.PersonalizationActivity'} data: None
+message: {'type': 'send', 'payload': 'ACT_PAUSE:com.tsf.extend.wallpaper.PersonalizationActivity'} data: None
+message: {'type': 'send', 'payload': 'ACT_RESUME:com.tsf.shell.Home'} data: None
+message: {'type': 'send', 'payload': 'ACT_DESTROY:com.tsf.extend.wallpaper.PersonalizationActivity'} data: None
+
+Thank you for using Frida!
