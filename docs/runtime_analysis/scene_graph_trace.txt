@@ -1,0 +1,80 @@
+     ____
+    / _  |   Frida 17.10.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Spawning `com.tsf.shell`...
+Spawned `com.tsf.shell`. Resuming main thread!
+[Android Emulator 5554::com.tsf.shell ]-> message: {'type': 'send', 'payload': 'deopt'} data: None
+message: {'type': 'send', 'payload': 'hooks ok'} data: None
+message: {'type': 'send', 'payload': 'ready'} data: None
+message: {'type': 'send', 'payload': '=== TREE (57 mutations, 3 roots) ==='} data: None
+message: {'type': 'send', 'payload': 'com.tsf.shell.f.h.a.a.a.b (1 kids)'} data: None
+message: {'type': 'send', 'payload': '  com.censivn.C3DEngine.api.core.VObject3dContainer (1 kids)'} data: None
+message: {'type': 'send', 'payload': '    com.censivn.C3DEngine.api.core.VObject3dContainer (3 kids)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.f.e.c.a.b (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.f.e.c.a.c (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.f.e.c.a.b (leaf)'} data: None
+message: {'type': 'send', 'payload': 'com.tsf.shell.manager.wallpaper.a$b (3 kids)'} data: None
+message: {'type': 'send', 'payload': '  com.censivn.C3DEngine.api.primitives.button.VButton (leaf)'} data: None
+message: {'type': 'send', 'payload': '  com.censivn.C3DEngine.api.primitives.button.VButton (leaf)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.manager.wallpaper.a$a (leaf)'} data: None
+message: {'type': 'send', 'payload': 'com.tsf.shell.widget.alarm.AlarmWidget (1 kids)'} data: None
+message: {'type': 'send', 'payload': '  com.tsf.shell.widget.alarm.k (2 kids)'} data: None
+message: {'type': 'send', 'payload': '    com.tsf.shell.widget.alarm.a (15 kids)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.a (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.b (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.j (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.b (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.c (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.j (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.d (2 kids)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '        com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '    com.tsf.shell.widget.alarm.g (17 kids)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.q (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.c.b (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.h (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.tsf.shell.widget.alarm.l (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '      com.censivn.C3DEngine.api.primitives.VRectangle (leaf)'} data: None
+message: {'type': 'send', 'payload': '=== END ==='} data: None
+
+Thank you for using Frida!

@@ -219,3 +219,148 @@ ShellApplication.onCreate()
 3. **Theme system** (`com.tsf.shell.theme.inside.*`) - all classes confirmed loading, verify they compile
 4. **C3DEngine API types** - all confirmed matching our decompiled sources
 5. **Native lib loading** needs to be traced - hook `System.loadLibrary` in the :feature process and trigger 3D operations
+
+---
+
+## 6. Session 2 Addendum (2026-06-01) — v1.9.9.7.6 Analysis & JNI Discovery
+
+### Updated Class Counts
+- **1054 TSF Shell classes** + **203 C3DEngine** + **0 KSM** = **1257 total** (at runtime after UI interaction)
+- Difference from session 1 (1308) due to different UI state affecting lazy-loaded classes
+
+### C3DEngine Deobfuscation Reference
+- **55 of 65 readable API classes kept their names** between v1.9.9.7.6 and v3.9.4
+- Full method-level API reference saved at `docs/runtime_analysis/v1.9.9.7.6_C3DEngine_API.txt` (802 lines)
+- Deobfuscation map at `docs/runtime_analysis/c3dengine_deobfuscation_map.txt`
+
+#### Classes that DID get obfuscated in v3.9.4:
+| v1 Readable | v3 Obfuscated |
+|---|---|
+| `WidgetInformation` | `com.censivn.C3DEngine.e.h` |
+| `ItemInfo` | `com.censivn.C3DEngine.b.g.a.c` |
+| `LauncherItem3DInfo` | `com.censivn.C3DEngine.b.h.a.b` |
+| `LauncherShortcut3DInfo` | `com.censivn.C3DEngine.b.f.b` |
+| `VInformation` | `com.censivn.C3DEngine.b.c.d` |
+| `Utils` (native) | Absorbed into engine internals |
+
+### Kinfoc JNI Signature (libkcmutil.so)
+```
+com.cm.kinfoc.a.a(String, String, String, int, String) → byte[]
+```
+- This is a licensing/auth SDK method (returns encrypted byte[] response)
+- 26 `com.cm.kinfoc.*` classes loaded at runtime (packages a-q)
+- Native libs confirmed loaded at `/proc/13579/maps` (both 76KB and 214KB)
+
+### Version History (confirmed via APKMirror + apkbe.com)
+| Version | Date | Notes |
+|---------|------|-------|
+| v1.3.0 | Mar 2012 | Earliest known build (links dead) |
+| v1.4.2 | Apr 2012 | Links dead |
+| v1.9.9.6 | Aug 2013 | Earliest on apkbe.com |
+| v1.9.9.7.6 | Oct 2015 | **Best unobfuscated reference (analyzed)** |
+| v2.0-3.8.x | 2013-2015 | Gradual obfuscation |
+| v3.9.4 | Feb 2019 | Fully obfuscated (current target) |
+
+### Frida 17.10.0 Findings & Fixes
+| Issue | Fix |
+|-------|-----|
+| `Java.use().method.implementation = fn` hooks never fire for GL thread methods | **`Java.deoptimizeEverything()`** — JIT-compiled hot methods bypass normal ART dispatch that Frida hooks |
+| `Module.findExportByName('libEGL.so', 'eglSwapBuffers')` fails inside `Java.perform()` | `Process.findModuleByName()` + `module.findExportByName()` works — `Module` global may be shadowed inside `Java.perform` scope |
+| `Module.findExportByName(null, ...)` fails | Must pass explicit module name string |
+| `Process.getModuleByName()` / `Module.findModuleByName()` fail for native libs despite being in /proc/maps | Apps loaded via linker namespace (`android:isolatedSplits`) hide libs from `dl_iterate_phdr` |
+| Python Frida API transport timeouts | CLI `frida -U -f com.tsf.shell -l script.js` spawn mode is reliable |
+| **Working approaches**: CLI spawn mode + `Java.deoptimizeEverything()` + `Process.findModuleByName()` for native hooks
+
+### Saved Files in docs/runtime_analysis/
+| File | Size | Content |
+|------|------|---------|
+| `all_loaded_classes.txt` | 38KB | 1257 runtime classes |
+| `v1.9.9.7.6_all_classes.txt` | 68KB | 2282 DEX classes from v1 |
+| `v1.9.9.7.6_C3DEngine_API.txt` | 33KB | Full API with method signatures |
+| `c3dengine_deobfuscation_map.txt` | 6KB | Name mapping v1→v3 |
+| `scene_graph_trace.txt` | 7KB | Container hierarchy dump (3 roots, fully mapped) |
+| `frame_composition_trace.txt` | 78KB | 92 frames of per-frame draw composition |
+| `scripts/frida_fixed_trace.js` | 4.7KB | Working rendering pipeline tracer (deoptimize + egl + draw) |
+| `scripts/frida_frame_trace.js` | 1.3KB | Per-frame composition tracer |
+| `scripts/frida_interactive_trace.js` | 2.1KB | Combined draw + container mutation tracer |
+| `scripts/frida_hierarchy2.js` | 2.0KB | Container hierarchy tree builder |
+
+### Scene Graph Constructor Scripts
+All scripts follow the same pattern:
+1. `retryEgl()` outside `Java.perform()` using `Process.findModuleByName('libEGL.so')`
+2. `Java.deoptimizeEverything()` inside `Java.perform()` first
+3. Java method hooks installed after deoptimization
+4. Accumulate data per-frame, dump at `eglSwapBuffers` boundary
+
+---
+## 6. Session 3: Rendering Pipeline & Scene Graph (2026-06-01)
+
+### Breakthrough: `Java.deoptimizeEverything()`
+After 4 failed attempts to hook GL thread Java methods, calling `Java.deoptimizeEverything()` before installing method hooks forced ART into interpreter mode, making all VObject3d.draw() hooks fire on every frame.
+
+### Per-Frame Composition (92 frames captured, invariant)
+**20 draw calls per frame, ~6 FPS on emulator:**
+```
+AlarmWidget          x1  — main clock container
+  k                  x1  — alarm container widget
+  a                  x1  — clock face
+  b                  x1  — hour hand
+  g                  x1  — date/time info container
+  h                  x1  — sub-widget
+  l                  x1  — sub-widget
+  VRectangle         x12 — decorative panels (children of g)
+  q                  x1  — alarm time text
+```
+Scene was **identical across all 92 frames** — no objects added/removed.
+
+### Container Scene Graph (3 roots, 57 mutations)
+```
+Root 1: f.h.a.a.a.b (main app container)
+  └── VObject3dContainer
+      └── VObject3dContainer (page host, 3 kids)
+          ├── f.e.c.a.b (page 0) — EMPTY
+          ├── f.e.c.a.c (other)
+          └── f.e.c.a.b (page 1) — EMPTY
+
+Root 2: manager.wallpaper.a$b (wallpaper dock, 3 kids)
+  ├── VButton x2
+  └── wallpaper.a$a
+
+Root 3: widget.alarm.AlarmWidget
+  └── k (alarm container, 2 kids)
+      ├── a (clock face, 15 kids)
+      │   ├── b (hour hand)
+      │   ├── VRectangle x2 (clock face background)
+      │   ├── j x2 (tick marks)
+      │   ├── c.b (button)
+      │   ├── c.d x7 (digit segments, each with 2 VRectangles)
+      │   ├── c.a (alarm data)
+      │   └── c.c (other)
+      └── g (info container, 17 kids)
+          ├── h (widget)
+          ├── l (widget)
+          ├── VRectangle x13 (decorative panels)
+          ├── q (alarm time text)
+          └── c.b (button)
+```
+
+### Key Architectural Discovery
+- **Widgets are NOT children of pages** — the alarm widget floats as a separate root alongside the page host container
+- Pages (`f.e.c.a.b`) are empty leaf nodes — no widget children added via addChild
+- The wallpaper dock (`wallpaper.a$b`) is a third independent root
+- Activities (wallpaper picker, personalization, widget picker) open as standard Android overlays — they do NOT add VObjects to the 3D scene graph
+- ADB touches/swipes did not trigger any scene graph mutations — page transitions likely use matrix transforms on the page container rather than add/remove
+
+### Interactive Activity Testing
+| Activity | Result |
+|----------|--------|
+| `WallpaperPickerActivity` | Launched, no scene graph changes |
+| `PersonalizationActivity` | Launched, no scene graph changes |
+| `ThemeDIYActivity` | **CRASH** — `Service Intent must be explicit` |
+| `APPWIDGET_PICK` intent | Launched, no scene graph changes |
+| Long-press / Tap / Swipe | No scene graph mutations detected |
+
+### Native Library Module Enumeration (still blocked)
+- `libkcmutil.so` (76KB) and `libandenginephysicsbox2dextension.so` (214KB) confirmed loaded via `/proc/pid/maps`
+- Frida's `Process.enumerateModules()` does NOT include them (linker namespace isolation)
+- Workaround: parse `/proc/pid/maps` from script, pass base to `Memory.scan()` or `Interceptor.attach()` at raw offset
