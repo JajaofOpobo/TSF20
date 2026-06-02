@@ -631,3 +631,89 @@ Previous conclusion of "purely native/JNI" was **incorrect**. The animation goes
 5. Java transition effect controller `f.f.l.b(F F)V`
 
 The `VObject3d.updateAABBMatrix` and older setPosition/setScale APIs are dead code — v3 replaced them with direct field access on mutable Number3d objects.
+
+---
+
+## 18. Complete Transition Effect Catalogue
+
+### All 20 `f.f.l` Subclasses
+
+| Class | Display Name |
+|-------|-------------|
+| `f.f.b.a` | Cloth |
+| `f.f.b.b` | Crossfade |
+| `f.f.b.c` | Cube |
+| `f.f.b.d` | Curtain |
+| `f.f.b.e` | Diary |
+| `f.f.b.f` | Cylinder |
+| `f.f.b.g` | Fan |
+| `f.f.b.h` | Flip |
+| `f.f.b.i` | Fold Page |
+| `f.f.b.j` | Hon |
+| `f.f.b.k` | Horse |
+| `f.f.b.l` | Roll |
+| `f.f.b.m` | Scale In/Out |
+| `f.f.b.n` | Wave Zoom Out |
+| `f.f.b.o` | Slope Inside |
+| `f.f.b.p` | Slope Outside |
+| `f.f.b.q` | Stack |
+| `f.f.b.r` | Smooth |
+| `f.f.b.s` | Wave |
+| `f.f.b.t` | Windmill |
+
+### Hierarchy
+```
+f.f/l (base interface/abstract)
+  └─ f.f/f (abstract with animation logic)
+       └─ f.f/i (intermediate with renderer setup)
+            └─ f.f.b/a through f.f.b/t (20 concrete effects)
+```
+
+### Registry & Selection
+- **`f.f/m`** creates all 20 instances at startup in `<init>()`, plus ~12 app drawer transition instances
+- Desktop transitions stored in `f.f/d` container, drawer in `f.f/e`
+- **`f.f/d.c(I)`** selects transition by integer ID code (matching `R$id` resource)
+- **`f.f/d.h()`** returns the current active `f.f/l` instance
+- Preference persisted by **`manager/b/e`** as comma-separated string of IDs
+- Each concrete subclass constructor: `(I Z)V` — resource ID + boolean flag
+
+---
+
+## 19. Carousel Orbit Parameters (Confirmed at Runtime)
+
+### Runtime Values (Pixel 3a XL, 1080×2160, 4 pages)
+
+| Field | Value | Description |
+|-------|-------|-------------|
+| `n` | **937.3078** | Orbit radius (pixels) |
+| `D` | **90.0** | Angular step per page (degrees) |
+| `a` | **0.125** | Friction constant |
+| `b` | **0.3** | Damping constant |
+
+### Orbit Radius Formula (`n$c.m()`)
+
+```
+radius = (screenWidth * 0.45) / sin((180/pageCount) * π / 180) + (200.0 * density)
+```
+
+Where:
+- `screenWidth` = `C3DEngine.b.b.a.F` (int, pixels)
+- `density` = `C3DEngine.b.b.a.b` (float, typically ~1.25)
+- Constants decoded: `0.9f` = `0x3F666666`, `200.0f` = `0x43480000`
+- Trigonometric constants: `π` = `0x400921FB54442D18`, `180.0` = `0x4066800000000000`
+
+### Angular Step Formula (`n$c.c(F)V`)
+
+```
+D = 360.0 / pageCount
+```
+
+Where `pageCount` = parent `n.n` (int field).
+
+### Derived Fields
+
+| Field | Formula |
+|-------|---------|
+| `o` | `-n` (negated orbit radius) |
+| `p` | `-(int)(n * 3.484375)` (pixel offset) |
+| `C` | (double, unused = 0) |
