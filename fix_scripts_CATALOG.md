@@ -7,6 +7,16 @@ Maintainer: opencode (2026-06-02)
 All scripts created by Jaja (initial bulk import: 2026-05-26). Logical order inferred from
 naming convention (1→2→3→final/precise) and content analysis (each iteration adds features).
 
+## File Locations (post-reorg 2026-06-02)
+
+| Type | Location |
+|------|----------|
+| Python fix/analysis scripts | `scripts/` |
+| Frida JS instrumentation | `scripts/frida/` |
+| PowerShell legacy scripts | `scripts/legacy/` |
+| Java build tools | `tools/` |
+| APK resources, smali, DB dumps | `resources/` |
+
 ---
 
 ## Group 1: Type Reference Case Fixes

@@ -8,3 +8,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated smali (extracted APK)
+resources/apk/smali/
