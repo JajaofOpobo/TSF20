@@ -13,15 +13,10 @@ public class e {
     public static String d = "3";
     private h g;
     private c e = new c(this);
-    private com.tsf.shell.f.f.a.d.a f = new com.tsf.shell.f.f.a.d.a(this);
-    private d h = new d(this);
-    private com.tsf.shell.f.f.a.B i = new com.tsf.shell.f.f.a.B(this);
-
-    public c a() {
-        return this.e;
-    }
-
-    public com.tsf.shell.f.f.a.d.a b() {
+<change>
+    private com.tsf.shell.f.f.a.d.A f = new com.tsf.shell.f.f.a.d.A(this);
+...
+    public com.tsf.shell.f.f.a.d.A b() {
         return this.f;
     }
 

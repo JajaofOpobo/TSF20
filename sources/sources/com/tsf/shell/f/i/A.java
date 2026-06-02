@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A implements com.censivn.C3DEngine.b.c.b.a {
-    private com.tsf.shell.f.i.a.C0133a a;
+    private com.tsf.shell.f.i.a.a a;
     protected InterfaceC0113a d;
     public Object e;
     protected boolean c = false;
-    protected ArrayList<c> b = new ArrayList<>();
+    protected ArrayList<C> b = new ArrayList<>();
 
     /* JADX INFO: renamed from: com.tsf.shell.f.i.A$a, reason: collision with other inner class name */
     public interface InterfaceC0113a {
@@ -118,7 +118,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
         j();
     }
 
-    public ArrayList<c> i() {
+    public ArrayList<C> i() {
         return this.b;
     }
 

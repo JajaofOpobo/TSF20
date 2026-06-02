@@ -217,7 +217,7 @@ public class C extends B {
         e.d(cVar);
     }
 
-    public void b(ArrayList<c> arrayList) {
+    public void b(ArrayList<C> arrayList) {
         if (arrayList.size() > 0) {
             e.c(this);
             e.a(arrayList);
@@ -239,11 +239,11 @@ public class C extends B {
         return e.b(this);
     }
 
-    public ArrayList<c> av() {
+    public ArrayList<C> av() {
         return e.b();
     }
 
-    public ArrayList<c> aw() {
+    public ArrayList<C> aw() {
         return e.c();
     }
 
