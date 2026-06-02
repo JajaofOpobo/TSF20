@@ -11,11 +11,9 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
+import com.tsf.b;
 import com.tsf.shell.f.i.b.e.h;
-import com.tsf.shell.manager.action.b;
-import com.tsf.shell.manager.l.a;
 import com.tsf.shell.manager.r.b.C;
 import com.tsf.shell.utils.q;
 import com.tsf.shell.utils.x;
@@ -24,18 +22,18 @@ import java.util.Iterator;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.manager.r.b.C<a> {
+public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
     public com.tsf.shell.manager.r.b.A b;
     private PackageManager c;
-    private a.C0095a d;
-    private a.C0095a e;
-    private ArrayList<a> f;
-    private ArrayList<a> g;
+    private com.tsf.shell.f.e._g.a.a.C0095a d;
+    private com.tsf.shell.f.e._g.a.a.C0095a e;
+    private ArrayList<com.tsf.shell.f.e._g.a.a> f;
+    private ArrayList<com.tsf.shell.f.e._g.a.a> g;
     private boolean h;
     private boolean i;
-    private ArrayList<a> j;
-    private c.a<a> k;
-    private c.a<a> l;
+    private ArrayList<com.tsf.shell.f.e._g.a.a> j;
+    private com.tsf.shell.manager.r.b.C.a k;
+    private com.tsf.shell.manager.r.b.C.a l;
     private h m;
 
     public d(com.tsf.shell.manager.r.b.A aVar, String str) {
@@ -46,16 +44,16 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         this.f = new ArrayList<>();
         this.g = new ArrayList<>();
         this.j = new ArrayList<>();
-        this.k = new c.a<a>() { // from class: com.tsf.shell.manager.r.b.d.1
-            @Override // com.tsf.shell.manager.r.b.c.a
-            public ArrayList<a> a() {
+        this.k = new C.a() { // from class: com.tsf.shell.manager.r.b.d.1
+            @Override // com.tsf.shell.manager.r.b.C.a
+            public ArrayList<com.tsf.shell.f.e._g.a.a> a() {
                 d.this.b();
                 return d.this.f;
             }
         };
-        this.l = new c.a<a>() { // from class: com.tsf.shell.manager.r.b.d.2
-            @Override // com.tsf.shell.manager.r.b.c.a
-            public ArrayList<a> a() {
+        this.l = new C.a() { // from class: com.tsf.shell.manager.r.b.d.2
+            @Override // com.tsf.shell.manager.r.b.C.a
+            public ArrayList<com.tsf.shell.f.e._g.a.a> a() {
                 d.this.c();
                 return d.this.g;
             }
@@ -95,7 +93,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         arrayList.add(this.d);
         arrayList.add(this.e);
         a(aVar, arrayList, 20.0f * com.censivn.C3DEngine.b.b.a.c, 20.0f * com.censivn.C3DEngine.b.b.a.c, com.tsf.shell.manager.o.b.c.T + (com.censivn.C3DEngine.b.b.a.c * 20.0f), com.tsf.shell.manager.o.b.c.U + (com.censivn.C3DEngine.b.b.a.c * 20.0f));
-        b((c.a) this.k);
+        b((C.a) this.k);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -191,7 +189,7 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
-        Iterator<a> it = this.f.iterator();
+        Iterator<com.tsf.shell.f.e._g.a.a> it = this.f.iterator();
         while (it.hasNext()) {
             it.next().c();
         }

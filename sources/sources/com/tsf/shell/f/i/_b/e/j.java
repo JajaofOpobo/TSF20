@@ -11,7 +11,7 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends b {
-    private com.tsf.shell.manager.action.toggle.b a;
+    private com.tsf.shell.manager.action.toggle.B a;
     private k b;
     private TextureElement p;
     private int q;
@@ -23,7 +23,7 @@ public class j extends b {
     private com.censivn.C3DEngine.b.f._a.b w;
     private String x;
 
-    public j(com.tsf.shell.manager.action.toggle.b bVar) {
+    public j(com.tsf.shell.manager.action.toggle.B bVar) {
         super(null, com.tsf.shell.manager.o.b.b);
         this.q = 0;
         this.r = -1;

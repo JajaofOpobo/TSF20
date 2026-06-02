@@ -8,7 +8,7 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.manager.action.toggle.b {
+public class b extends com.tsf.shell.manager.action.toggle.B {
     private static int c = 10;
 
     public b(int i) {
@@ -17,12 +17,12 @@ public class b extends com.tsf.shell.manager.action.toggle.b {
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         Home.b().runOnUiThread(new Runnable() { // from class: com.tsf.shell.manager.action.toggle.a.b.1
             @Override // java.lang.Runnable
@@ -49,7 +49,7 @@ public class b extends com.tsf.shell.manager.action.toggle.b {
         });
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
         c = k();
         switch (c) {

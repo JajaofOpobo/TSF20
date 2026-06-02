@@ -86,7 +86,7 @@ public class e extends com.tsf.shell.f.e._g.a.b {
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
-        Iterator<com.tsf.shell.manager.action.toggle.b> it = this.c.a().iterator();
+        Iterator<com.tsf.shell.manager.action.toggle.B> it = this.c.a().iterator();
         while (it.hasNext()) {
             it.next().b();
         }

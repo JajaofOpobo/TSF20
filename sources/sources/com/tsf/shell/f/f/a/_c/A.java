@@ -21,7 +21,7 @@ public class A extends c.a {
     }
 
     private void e() {
-        this.g = new com.censivn.C3DEngine.b.d.a(null) { // from class: com.tsf.shell.f.f.a._c.a.1
+        this.g = new com.censivn.C3DEngine.b.d.a(null) { // from class: com.tsf.shell.f.f.a._c._a.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 a.this.f.a(motionEvent, motionEvent2);
@@ -34,7 +34,7 @@ public class A extends c.a {
                 a.this.a.ap().q();
             }
         };
-        this.d = new g() { // from class: com.tsf.shell.f.f.a._c.a.2
+        this.d = new g() { // from class: com.tsf.shell.f.f.a._c._a.2
             @Override // com.tsf.shell.f.f.a._c.g
             public void b() {
                 if (a.this.c.c() != null) {

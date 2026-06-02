@@ -9,7 +9,7 @@ import com.tsf.shell.Home;
 import com.tsf.shell.ShellApplication;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends com.tsf.shell.manager.action.toggle.b {
+public class e extends com.tsf.shell.manager.action.toggle.B {
     private AudioManager c;
     private int d;
 
@@ -20,12 +20,12 @@ public class e extends com.tsf.shell.manager.action.toggle.b {
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         NotificationManager notificationManager = (NotificationManager) ShellApplication.a().getSystemService("notification");
         if (Build.VERSION.SDK_INT >= 24 && !notificationManager.isNotificationPolicyAccessGranted()) {
@@ -50,7 +50,7 @@ public class e extends com.tsf.shell.manager.action.toggle.b {
         }
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
         this.d = this.c.getRingerMode();
         switch (this.d) {

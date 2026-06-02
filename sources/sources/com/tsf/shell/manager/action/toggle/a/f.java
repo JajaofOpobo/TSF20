@@ -4,18 +4,18 @@ import android.content.Intent;
 import android.net.wifi.WifiManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f extends com.tsf.shell.manager.action.toggle.b {
+public class f extends com.tsf.shell.manager.action.toggle.B {
     public f(int i) {
         super(i);
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         WifiManager wifiManager = (WifiManager) com.censivn.C3DEngine.a.d().getSystemService("wifi");
         switch (wifiManager.getWifiState()) {
@@ -28,7 +28,7 @@ public class f extends com.tsf.shell.manager.action.toggle.b {
         }
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
         switch (((WifiManager) com.censivn.C3DEngine.a.d().getSystemService("wifi")).getWifiState()) {
             case 0:

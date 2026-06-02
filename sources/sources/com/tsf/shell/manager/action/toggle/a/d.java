@@ -5,18 +5,18 @@ import android.net.ConnectivityManager;
 import java.lang.reflect.Method;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.manager.action.toggle.b {
+public class d extends com.tsf.shell.manager.action.toggle.B {
     public d(int i) {
         super(i);
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         if (h()) {
             a(false);
@@ -26,7 +26,7 @@ public class d extends com.tsf.shell.manager.action.toggle.b {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
         if (h()) {
             b(2);

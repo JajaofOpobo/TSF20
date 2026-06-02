@@ -5,7 +5,6 @@ import android.os.Build;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.b;
 import com.tsf.shell.f.i.b.e.i;
-import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.action.toggle.a.c;
 import com.tsf.shell.manager.action.toggle.a.d;
 import com.tsf.shell.manager.action.toggle.a.e;
@@ -19,7 +18,7 @@ public class A {
     public com.tsf.shell.manager.action.toggle.a.a c;
     public com.tsf.shell.manager.action.toggle.a.b d;
     public e e;
-    public b f;
+    public com.tsf.shell.manager.action.b f;
     public c g;
     public c h;
     public c i;
@@ -33,7 +32,7 @@ public class A {
     public c q;
     private TextureElement s = new TextureElement(0, false);
     private TextureElement t = new TextureElement(0, false);
-    private ArrayList<b> r = new ArrayList<>();
+    private ArrayList<com.tsf.shell.manager.action.b> r = new ArrayList<>();
     public f b = new f(11000);
 
     public A() {
@@ -103,7 +102,7 @@ public class A {
         }
     }
 
-    public ArrayList<b> a() {
+    public ArrayList<com.tsf.shell.manager.action.b> a() {
         return this.r;
     }
 
@@ -115,8 +114,8 @@ public class A {
         c(iVar.aV()).b(iVar);
     }
 
-    private b c(int i) {
-        for (b bVar : this.r) {
+    private com.tsf.shell.manager.action.b c(int i) {
+        for (com.tsf.shell.manager.action.b bVar : this.r) {
             if (bVar.a == i) {
                 return bVar;
             }
@@ -125,7 +124,7 @@ public class A {
     }
 
     public void a(int i) {
-        for (b bVar : this.r) {
+        for (com.tsf.shell.manager.action.b bVar : this.r) {
             if (bVar.a == i) {
                 bVar.c();
                 return;
@@ -151,8 +150,8 @@ public class A {
         return this.t;
     }
 
-    public static ArrayList<b.a> d() {
-        ArrayList<b.a> arrayList = new ArrayList<>();
+    public static ArrayList<com.tsf.shell.manager.action.b.a> d() {
+        ArrayList<com.tsf.shell.manager.action.b.a> arrayList = new ArrayList<>();
         arrayList.add(b(11000));
         arrayList.add(b(12000));
         arrayList.add(b(13000));
@@ -173,8 +172,8 @@ public class A {
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    public static b.a b(int i) {
-        b.a aVar = new b.a();
+    public static com.tsf.shell.manager.action.b.a b(int i) {
+        com.tsf.shell.manager.action.b.a aVar = new com.tsf.shell.manager.action.b.a();
         aVar.a = i;
         switch (i) {
             case 11000:

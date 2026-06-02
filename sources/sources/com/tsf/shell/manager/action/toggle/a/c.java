@@ -6,13 +6,13 @@ import com.tsf.shell.services.d;
 import com.tsf.shell.utils.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.manager.action.toggle.b {
+public class c extends com.tsf.shell.manager.action.toggle.B {
     public c(int i) {
         super(i);
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         com.tsf.shell.manager.a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.1
             @Override // com.tsf.shell.services.d.a
@@ -43,7 +43,7 @@ public class c extends com.tsf.shell.manager.action.toggle.b {
         });
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         if (com.tsf.shell.manager.a.C.c().a()) {
             com.tsf.shell.manager.a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.2

@@ -7,7 +7,6 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
-import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.utils.w;
 import java.util.ArrayList;
 
@@ -90,7 +89,7 @@ public class C<E> extends com.tsf.shell.f.e._g.a.b {
         return iVar;
     }
 
-    public void a(final com.tsf.shell.manager.r.b.A aVar, ArrayList<a.C0095a> arrayList, float f, float f2, float f3, float f4) {
+    public void a(final com.tsf.shell.manager.r.b.A aVar, ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList, float f, float f2, float f3, float f4) {
         this.a = aVar;
         setFunctions(arrayList);
         this.c = new j();

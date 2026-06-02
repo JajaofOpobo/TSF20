@@ -12,7 +12,7 @@ import com.tsf.shell.services.A;
 import com.tsf.shell.utils.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements a.InterfaceC0165a {
+public class a implements A.InterfaceC0165a {
     private int a = 0;
     private int b = 0;
     private int c = 0;

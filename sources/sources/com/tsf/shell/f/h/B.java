@@ -3,23 +3,20 @@ package com.tsf.shell.f.h;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.b;
-import com.tsf.shell.manager.f.b;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b implements b.a, e.a {
+public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b.c.e.a {
     public static int b = -1725816286;
     private j d;
     private com.tsf.shell.f.e.c.a e;
     private c f;
     private j g;
     private e k;
-    private b.a l;
+    private com.censivn.C3DEngine.b.c.b.a l;
     private float m;
     private float o;
     private float p;
@@ -92,7 +89,7 @@ public class b implements b.a, e.a {
         this.d = new j();
         this.k = new e();
         this.k.b(0.0f);
-        this.l = new b.a() { // from class: com.tsf.shell.f.h.b.1
+        this.l = new com.censivn.C3DEngine.b.c.b.a() { // from class: com.tsf.shell.f.h.b.1
             @Override // com.tsf.shell.manager.f.b.a
             public void a() {
                 if (b.this.s.e()) {
@@ -102,7 +99,7 @@ public class b implements b.a, e.a {
                 }
             }
         };
-        this.e = new com.tsf.shell.f.e.c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.f.h.b.2
+        this.e = new com.tsf.shell.f.e.c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(com.tsf.b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.f.h.b.2
             @Override // com.tsf.shell.f.e.c.a
             public void d() {
             }

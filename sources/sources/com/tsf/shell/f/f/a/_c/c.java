@@ -11,7 +11,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends i {
     private b g;
-    private com.tsf.shell.f.f.a._c.a h;
+    private com.tsf.shell.f.f.a._c._a h;
     private a i;
     private com.tsf.shell.f.i.B j;
     private com.tsf.shell.f.e._e.a k;
@@ -86,7 +86,7 @@ public class c extends i {
         this.y = false;
         this.z = new Number3d();
         this.g = new b(this, fVar, hVar);
-        this.h = new com.tsf.shell.f.f.a._c.a(this, fVar, hVar);
+        this.h = new com.tsf.shell.f.f.a._c._a(this, fVar, hVar);
         this.k = new com.tsf.shell.f.e._e.a() { // from class: com.tsf.shell.f.f.a._c.c.1
             @Override // com.tsf.shell.f.e._e.a
             public void a(int i, Object obj) {

@@ -1,18 +1,17 @@
 package com.tsf.shell.manager.r.b.a;
 
+import com.tsf.shell.f.e._g.a.a;
+
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.h.b.c;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
-import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.f.f.k;
 import com.tsf.shell.f.i.a.d;
 import com.tsf.shell.f.i.b.e.g;
@@ -31,14 +30,14 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
     private ArrayList<g> e;
     private c.a f;
     private b.a g;
-    private b h;
+    private B h;
     private boolean i;
     private k j;
 
     public a(final com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.i = false;
-        this.h = new b() { // from class: com.tsf.shell.manager.r.b.a.a.1
+        this.h = new B() { // from class: com.tsf.shell.manager.r.b.a.a.1
             @Override // com.tsf.shell.manager.r.b.a.b
             public void a() {
                 a.this.b();
@@ -65,7 +64,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
         this.e = new ArrayList<>();
         this.a = aVar;
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new a.C0095a(b.d.widget_menu_setting, x.c(b.i.menu_manage_apps), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.a.3
+        arrayList.add(new a.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.a.3
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return false;

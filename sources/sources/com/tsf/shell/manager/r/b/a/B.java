@@ -12,14 +12,14 @@ import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends j {
+public class B extends j {
     private TextureElement a = new TextureElement(0, false);
     private k b;
     private m c;
     private a.C0095a d;
     private a.C0095a e;
 
-    public b() {
+    public B() {
         d();
     }
 

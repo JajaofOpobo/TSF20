@@ -6,13 +6,13 @@ import com.tsf.shell.f.i.b.e.j;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class B {
     public int a;
     private boolean d = false;
     private j c = new j(this);
     public ArrayList<i> b = new ArrayList<>();
 
-    public b(int i) {
+    public B(int i) {
         this.a = 0;
         this.a = i;
     }

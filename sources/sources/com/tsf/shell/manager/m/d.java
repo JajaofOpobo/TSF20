@@ -65,17 +65,17 @@ public class d extends com.tsf.shell.f.e.e.d {
     }
 
     @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
-    public boolean b(f fVar) {
+    public boolean b(F fVar) {
         return b(fVar);
     }
 
     @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
-    public boolean a(f fVar, float f, float f2) {
+    public boolean a(F fVar, float f, float f2) {
         return a(fVar, f, f2);
     }
 
     @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
-    public void a(f fVar) {
+    public void a(F fVar) {
         a(fVar);
     }
 

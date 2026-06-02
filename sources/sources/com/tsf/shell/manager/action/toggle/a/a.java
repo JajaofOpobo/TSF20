@@ -4,7 +4,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.manager.action.toggle.b {
+public class a extends com.tsf.shell.manager.action.toggle.B {
     private BluetoothAdapter c;
 
     public a(int i) {
@@ -17,12 +17,12 @@ public class a extends com.tsf.shell.manager.action.toggle.b {
         d();
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
         a((Intent) null);
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
         if (this.c != null) {
             switch (this.c.getState()) {
@@ -36,7 +36,7 @@ public class a extends com.tsf.shell.manager.action.toggle.b {
         }
     }
 
-    @Override // com.tsf.shell.manager.action.toggle.b
+    @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
         if (this.c != null) {
             switch (this.c.getState()) {
