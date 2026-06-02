@@ -42,7 +42,7 @@ public class b extends d {
                     dVar2.d(0.0f);
                     dVar2.a(255);
                     dVar2.a(com.censivn.C3DEngine.b.g.a.n);
-                    com.censivn.C3DEngine.b.g.c.a(iVar2, com.tsf.shell.f.e.g.a.c.ANIMATION_TIME, dVar2);
+                    com.censivn.C3DEngine.b.g.c.a(iVar2, com.tsf.shell.f.e._g.a.c.ANIMATION_TIME, dVar2);
                     if (com.tsf.shell.manager.a.v.d.b().b()) {
                         dVar2 = dVar;
                     }
@@ -228,7 +228,7 @@ public class b extends d {
         }
     }
 
-    @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f.d.e.a.InterfaceC0090a
+    @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
         float f = com.censivn.C3DEngine.b.b.a.c * 25.0f;

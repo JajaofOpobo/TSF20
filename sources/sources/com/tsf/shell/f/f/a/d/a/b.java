@@ -49,6 +49,6 @@ public class b extends c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static String b(String str) {
-        return Character.toString(com.tsf.shell.f.f.a.a.b.a(str));
+        return Character.toString(com.tsf.shell.f.f.a._a.b.a(str));
     }
 }

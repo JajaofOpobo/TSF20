@@ -2,7 +2,7 @@
 """Analyze all errors and categorize missing symbols."""
 import re
 
-with open('/home/jaja/Documents/TSF20/docs/build-output-linux3.txt', encoding='utf-8', errors='replace') as f:
+with open('/home/jaja/Documents/TSF20/archive/logs/build-output-linux3.txt', encoding='utf-8', errors='replace') as f:
     content = f.read()
 
 # Remove ANSI codes

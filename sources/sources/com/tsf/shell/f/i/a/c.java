@@ -75,7 +75,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             if (bVar == null || !bVar.O()) {
                 com.tsf.shell.manager.a.h.d.a(bVar);
                 com.tsf.shell.manager.a.h.a(bVar);
-                com.tsf.shell.f.e.g.d.onTempleteHide();
+                com.tsf.shell.f.e._g.d.onTempleteHide();
                 if (com.tsf.shell.manager.a.h.F() != -1) {
                     com.tsf.shell.manager.a.h.a().b();
                 }
@@ -195,7 +195,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.a.h
             com.tsf.shell.f.f.c.a r1 = r1.d
             r1.b(r0)
-            com.tsf.shell.f.e.g.d.onTempleteShow()
+            com.tsf.shell.f.e._g.d.onTempleteShow()
             boolean r1 = r6.m
             if (r1 == 0) goto L55
             r6.m = r3

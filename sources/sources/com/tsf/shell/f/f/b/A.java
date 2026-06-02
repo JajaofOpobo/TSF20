@@ -19,7 +19,7 @@ public class A extends com.tsf.shell.f.f.l {
     private com.tsf.shell.f.f.g d;
     private com.tsf.shell.f.f.g e;
     private int f;
-    private com.censivn.C3DEngine.b.g.b.b g;
+    private com.censivn.C3DEngine.b.g._b.b g;
     private boolean h;
 
     public A(int i, boolean z) {
@@ -27,7 +27,7 @@ public class A extends com.tsf.shell.f.f.l {
         int i3;
         super(i, b.d.desktop_transition_cloth, z);
         this.f = 2;
-        this.g = new com.censivn.C3DEngine.b.g.b.b();
+        this.g = new com.censivn.C3DEngine.b.g._b.b();
         this.h = true;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.j();

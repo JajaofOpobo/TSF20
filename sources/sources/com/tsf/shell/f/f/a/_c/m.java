@@ -30,7 +30,7 @@ public class m extends i {
             int i2 = i;
             if (i2 < this.h.a()) {
                 com.tsf.shell.f.g.a.h hVar = this.i.get(i2);
-                com.tsf.shell.f.f.a._d.a.c cVarA = this.h.a(i2);
+                com.tsf.shell.f.f.a._d._a.c cVarA = this.h.a(i2);
                 hVar.e.textures().addElement(cVarA.a(com.tsf.shell.f.g.a.h.e(), com.tsf.shell.f.g.a.h.f()));
                 if (cVarA == this.h.b()) {
                     this.j = hVar;

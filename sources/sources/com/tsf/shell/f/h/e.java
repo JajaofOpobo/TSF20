@@ -23,7 +23,7 @@ public class e extends com.censivn.C3DEngine.b.f.a.a {
     private float m;
     private float n;
     private float o;
-    private com.censivn.C3DEngine.b.g.b.b p;
+    private com.censivn.C3DEngine.b.g._b.b p;
     private k q;
 
     public e() {
@@ -65,7 +65,7 @@ public class e extends com.censivn.C3DEngine.b.f.a.a {
         uvs().set(bVarA2.a, 0.0f, 1.0f);
         uvs().set(bVarA2.d, 1.0f, 0.0f);
         uvs().set(bVarA2.c, 0.0f, 0.0f);
-        this.p = new com.censivn.C3DEngine.b.g.b.b();
+        this.p = new com.censivn.C3DEngine.b.g._b.b();
         e();
     }
 

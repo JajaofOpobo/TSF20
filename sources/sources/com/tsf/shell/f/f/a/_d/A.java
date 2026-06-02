@@ -1,10 +1,10 @@
 package com.tsf.shell.f.f.a._d;
 
 import com.tsf.shell.Home;
-import com.tsf.shell.f.f.a._d.a.b;
-import com.tsf.shell.f.f.a._d.a.c;
-import com.tsf.shell.f.f.a._d.a.d;
-import com.tsf.shell.f.f.a._d.a.f;
+import com.tsf.shell.f.f.a._d._a.b;
+import com.tsf.shell.f.f.a._d._a.c;
+import com.tsf.shell.f.f.a._d._a.d;
+import com.tsf.shell.f.f.a._d._a.f;
 import com.tsf.shell.manager.a.e;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,9 +22,9 @@ public class A {
     public A(e eVar) {
         this.b = eVar;
         this.c.add(new b(0));
-        this.c.add(new com.tsf.shell.f.f.a._d.a.e(2));
+        this.c.add(new com.tsf.shell.f.f.a._d._a.e(2));
         this.c.add(new f(1));
-        this.c.add(new com.tsf.shell.f.f.a._d.a.a(3));
+        this.c.add(new com.tsf.shell.f.f.a._d._a.a(3));
         this.e = new d(0);
         c(com.tsf.shell.manager.b.e.an());
     }
@@ -87,13 +87,13 @@ public class A {
             this.a = true;
             d();
             com.tsf.shell.manager.a.w.d().c();
-            Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a._d.a.1
+            Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a._d._a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.a.h.t().ay();
                     a.this.a = false;
                     if (a.this.f != -1) {
-                        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._d.a.1.1
+                        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._d._a.1.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 a.this.b(a.this.f);

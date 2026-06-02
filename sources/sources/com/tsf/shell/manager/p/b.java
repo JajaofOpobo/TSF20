@@ -3,7 +3,7 @@ package com.tsf.shell.manager.p;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.b;
+
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends j {
@@ -85,7 +85,7 @@ public class b extends j {
             }
         };
         dVar.a(runnable);
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g.b.b(), 450, dVar);
+        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 450, dVar);
     }
 
     public void b() {

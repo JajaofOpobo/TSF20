@@ -267,7 +267,7 @@ public class b implements b.a, e.a {
             });
             return;
         }
-        if (com.tsf.shell.f.e.g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.a.h.B() && !com.tsf.shell.manager.a.h.s().a() && !com.tsf.shell.manager.a.v.e.e()) {
+        if (com.tsf.shell.f.e._g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.a.h.B() && !com.tsf.shell.manager.a.h.s().a() && !com.tsf.shell.manager.a.v.e.e()) {
             com.tsf.shell.f.b.a();
             this.e.a(0.0f, 0.0f, this.f.c(), this.f.d(), 204, !this.t);
             com.censivn.C3DEngine.b.c.b.a(this);

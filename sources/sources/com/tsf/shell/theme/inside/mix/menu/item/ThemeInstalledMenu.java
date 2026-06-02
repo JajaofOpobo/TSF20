@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 
-import com.tsf.shell.f.e.g.a.b;
+import com.tsf.shell.f.e._g.a.b;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -47,7 +47,7 @@ public class ThemeInstalledMenu extends b {
         bitmapA.recycle();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.a, com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.a, com.tsf.shell.f.e._g.a.c
     public void onThemeChanged() {
         super.onThemeChanged();
         resetTheme();
@@ -145,18 +145,18 @@ public class ThemeInstalledMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public j getContentContainer() {
         return this.mGridView;
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.mGridView.a(f, f2, f3, f4);
         this.mDetailMenu.onLayout(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShowComplete() {
         super.onShowComplete();
         if (this.mNeedRefresh) {
@@ -164,7 +164,7 @@ public class ThemeInstalledMenu extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         super.onShow();
         if (this.mNeedRefresh) {
@@ -209,7 +209,7 @@ public class ThemeInstalledMenu extends b {
         Collections.sort(this.mThemeList, this.mComparator);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         super.onHide();
         Iterator<ThemeListsManager.ThemeInfo> it = this.mThemeList.iterator();

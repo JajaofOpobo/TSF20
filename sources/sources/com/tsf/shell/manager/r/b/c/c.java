@@ -21,7 +21,7 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
     private float i;
     private ArrayList<com.tsf.shell.f.i.c.f> j;
 
-    public c(com.tsf.shell.f.e.g.d dVar, d dVar2) {
+    public c(com.tsf.shell.f.e._g.d dVar, d dVar2) {
         super(dVar);
         this.j = new ArrayList<>();
         this.a = dVar2;

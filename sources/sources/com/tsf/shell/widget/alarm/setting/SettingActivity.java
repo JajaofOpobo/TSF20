@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.tsf.shell.a.a.d;
+import com.tsf.shell._a.a.d;
 import com.tsf.shell.widget.alarm.i;
 import com.tsf.shell.widget.alarm.m;
 import com.tsf.shell.widget.alarm.service.c;
@@ -38,7 +38,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
     private e k;
     private Handler l;
     private final int m = 0;
-    private com.tsf.shell.a.a.a n;
+    private com.tsf.shell._a.a.a n;
 
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
@@ -50,7 +50,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
     private void b() {
         this.l = new Handler();
         a = getApplicationContext();
-        this.n = new com.tsf.shell.a.a.a(this);
+        this.n = new com.tsf.shell._a.a.a(this);
         this.k = new e(this);
         this.j = new com.tsf.shell.widget.alarm.service.c(a);
         this.j.a(this);
@@ -259,10 +259,10 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             if (i == 0) {
                 if (SettingActivity.this.a(new d.b() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.a.1
-                    @Override // com.tsf.shell.a.a.d.b
+                    @Override // com.tsf.shell._a.a.d.b
                     public void a(int i2, boolean z, d.a aVar) {
                     }
-                }, true, 2, com.tsf.shell.a.a.d.e)) {
+                }, true, 2, com.tsf.shell._a.a.d.e)) {
                     SettingActivity.this.a((com.tsf.shell.widget.alarm.d.A) null);
                     SettingActivity.this.a(false);
                     return;

@@ -3,14 +3,14 @@ package com.censivn.C3DEngine.b.g.a;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends c {
     private com.censivn.C3DEngine.b.g.d c;
-    private com.censivn.C3DEngine.b.g.b.a d;
+    private com.censivn.C3DEngine.b.g._b.a d;
     private int e;
     private long f;
     private long g;
     private Runnable h;
     private com.censivn.C3DEngine.b.g.b i;
 
-    public d(com.censivn.C3DEngine.b.g.b.a aVar, int i, com.censivn.C3DEngine.b.g.d dVar) {
+    public d(com.censivn.C3DEngine.b.g._b.a aVar, int i, com.censivn.C3DEngine.b.g.d dVar) {
         this.d = aVar;
         dVar.a(aVar);
         aVar.setTweenChild(this);

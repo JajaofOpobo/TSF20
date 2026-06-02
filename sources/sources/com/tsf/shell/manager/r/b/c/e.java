@@ -12,7 +12,7 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
     private float e;
     private float f;
 
-    public e(com.tsf.shell.f.e.g.d dVar, final com.tsf.shell.f.e.g.a.c cVar) {
+    public e(com.tsf.shell.f.e._g.d dVar, final com.tsf.shell.f.e._g.a.c cVar) {
         super(dVar);
         this.b = new ArrayList<>();
         this.e = 0.0f;

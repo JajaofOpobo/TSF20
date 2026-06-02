@@ -276,7 +276,7 @@ public class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(float f, float f2, float f3) {
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g.b.b(), 1500, new AnonymousClass9(f, f3, f2));
+        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 1500, new AnonymousClass9(f, f3, f2));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.a._a.c$9, reason: invalid class name */
@@ -300,7 +300,7 @@ public class c {
 
         @Override // com.censivn.C3DEngine.b.g.d
         public void a() {
-            com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g.b.b(), 1500, new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.c.9.1
+            com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 1500, new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.c.9.1
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a(float f) {
                     float f2 = AnonymousClass9.this.c - (AnonymousClass9.this.b * f);

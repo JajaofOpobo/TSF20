@@ -12,9 +12,9 @@ public class f extends com.censivn.C3DEngine.b.h.b.f {
     private h c;
     private i d;
     private boolean e;
-    private com.tsf.shell.f.e.g.d f;
+    private com.tsf.shell.f.e._g.d f;
 
-    public f(com.tsf.shell.f.e.g.d dVar) {
+    public f(com.tsf.shell.f.e._g.d dVar) {
         this.f = dVar;
     }
 

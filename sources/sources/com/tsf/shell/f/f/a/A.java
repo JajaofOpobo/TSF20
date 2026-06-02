@@ -117,7 +117,7 @@ public class A extends C {
                 final i iVarA = com.tsf.shell.manager.a.h.t().a(bVar);
                 iVarA.removeFromParent();
                 com.tsf.shell.manager.a.h.t().addChild(iVarA);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.a.1
+                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         com.tsf.shell.manager.a.h.t().e(iVarA);
@@ -223,7 +223,7 @@ public class A extends C {
         com.censivn.C3DEngine.b.g.d dVar = null;
         for (final i iVar : children()) {
             if (iVar instanceof com.tsf.shell.f.i.B) {
-                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.a.2
+                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.2
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         a.this.children().remove(iVar);

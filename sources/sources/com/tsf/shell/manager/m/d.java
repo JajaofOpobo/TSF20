@@ -17,7 +17,7 @@ public class d extends com.tsf.shell.f.e.e.d {
     private double h;
     private double g = 0.10471975511965977d;
     private boolean j = false;
-    private com.censivn.C3DEngine.b.g.b.b i = new com.censivn.C3DEngine.b.g.b.b();
+    private com.censivn.C3DEngine.b.g._b.b i = new com.censivn.C3DEngine.b.g._b.b();
     private TextureElement a = new TextureElement(0, false);
     private j c = new com.tsf.shell.f.e.e.d();
 

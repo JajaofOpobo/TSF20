@@ -26,7 +26,7 @@ public class n implements b.a {
     private static com.censivn.C3DEngine.b.f.a.a f;
     private static com.censivn.C3DEngine.b.d.a j;
     private static n k;
-    private static com.censivn.C3DEngine.b.g.b.b l;
+    private static com.censivn.C3DEngine.b.g._b.b l;
     private static int n;
     private static int o;
     private com.censivn.C3DEngine.b.f.j p;
@@ -156,7 +156,7 @@ public class n implements b.a {
                     n.this.o();
                 }
             });
-            l = new com.censivn.C3DEngine.b.g.b.b();
+            l = new com.censivn.C3DEngine.b.g._b.b();
             f = new com.censivn.C3DEngine.b.f.a.a(5, 32, 160, 160);
             for (int i2 = 0; i2 < 5; i2++) {
                 com.censivn.C3DEngine.b.f.a.b bVarA = f.a(i2);

@@ -44,7 +44,7 @@ public class D {
     }
 
     public void e() {
-        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.d.1
+        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f._d.1
             @Override // java.lang.Runnable
             public void run() {
                 d.this.a.onResume();
@@ -57,7 +57,7 @@ public class D {
     }
 
     public void f() {
-        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.d.2
+        Runnable runnable = new Runnable() { // from class: com.tsf.shell.f._d.2
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.b.g.c.b();

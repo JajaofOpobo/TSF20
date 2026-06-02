@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.tsf.shell.f.d.e.A;
+import com.tsf.shell.f._d.e.A;
 import com.tsf.shell.f.f.a.h;
 import com.tsf.shell.f.f.g;
 import com.tsf.shell.f.f.i;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends i implements a.InterfaceC0090a {
-    private com.tsf.shell.f.d.e.A b;
+    private com.tsf.shell.f._d.e.A b;
 
     public d(int i, boolean z) {
         super(i, 0, z);
@@ -130,7 +130,7 @@ public class d extends i implements a.InterfaceC0090a {
 
     public com.censivn.C3DEngine.b.f.i o() {
         if (this.b == null) {
-            this.b = new com.tsf.shell.f.d.e.A(this) { // from class: com.tsf.shell.f.f.b.a.d.2
+            this.b = new com.tsf.shell.f._d.e.A(this) { // from class: com.tsf.shell.f.f.b.a.d.2
                 @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
@@ -145,7 +145,7 @@ public class d extends i implements a.InterfaceC0090a {
         return true;
     }
 
-    @Override // com.tsf.shell.f.d.e.a.InterfaceC0090a
+    @Override // com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar;
         com.censivn.C3DEngine.b.g.d dVar2;
@@ -169,7 +169,7 @@ public class d extends i implements a.InterfaceC0090a {
                 dVar3.b((int) (Math.random() * 300.0d));
                 dVar2 = dVar;
             }
-            Number3d number3d = com.tsf.shell.f.d.e.a.a.get(i2);
+            Number3d number3d = com.tsf.shell.f._d.e.a.a.get(i2);
             dVar3.f(number3d.x);
             dVar3.h(number3d.y);
             dVar3.l(1.0f);

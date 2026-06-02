@@ -72,7 +72,7 @@ public class C {
         }
     }
 
-    public static void a(com.censivn.C3DEngine.b.g.b.a aVar, int i, d dVar) {
+    public static void a(com.censivn.C3DEngine.b.g._b.a aVar, int i, d dVar) {
         final com.censivn.C3DEngine.b.g.a.c aVar2;
         if (aVar != null) {
             if (dVar.e() == null) {
@@ -80,8 +80,8 @@ public class C {
             }
             if (aVar instanceof i) {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.b((i) aVar, i, dVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.b.g.b.b) {
-                aVar2 = new com.censivn.C3DEngine.b.g.a.d((com.censivn.C3DEngine.b.g.b.b) aVar, i, dVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.b.g._b.b) {
+                aVar2 = new com.censivn.C3DEngine.b.g.a.d((com.censivn.C3DEngine.b.g._b.b) aVar, i, dVar);
             } else if (aVar instanceof com.censivn.C3DEngine.b.f.a.b) {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.a((com.censivn.C3DEngine.b.f.a.b) aVar, i, dVar);
             } else {
@@ -109,7 +109,7 @@ public class C {
         }
     }
 
-    public static void a(com.censivn.C3DEngine.b.g.b.a aVar) {
+    public static void a(com.censivn.C3DEngine.b.g._b.a aVar) {
         com.censivn.C3DEngine.b.g.a.c tweenChild;
         if (aVar != null && (tweenChild = aVar.getTweenChild()) != null) {
             b(tweenChild);
@@ -128,7 +128,7 @@ public class C {
         }
     }
 
-    public static void b(com.censivn.C3DEngine.b.g.b.a aVar) {
+    public static void b(com.censivn.C3DEngine.b.g._b.a aVar) {
         com.censivn.C3DEngine.b.g.a.c tweenChild;
         if (aVar != null && (tweenChild = aVar.getTweenChild()) != null) {
             tweenChild.e();
@@ -142,7 +142,7 @@ public class C {
         }
     }
 
-    public static void c(com.censivn.C3DEngine.b.g.b.a aVar) {
+    public static void c(com.censivn.C3DEngine.b.g._b.a aVar) {
         com.censivn.C3DEngine.b.g.a.c tweenChild;
         if (aVar != null && (tweenChild = aVar.getTweenChild()) != null && tweenChild.a == 1) {
             tweenChild.f();

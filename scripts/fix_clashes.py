@@ -20,6 +20,8 @@ CLASHES = [
     (f"{SOURCES}/com/tsf/shell", "a"),
     (f"{SOURCES}/com/tsf/shell/f", "d"),
     (f"{SOURCES}/com/tsf/shell/f/f/a/_d", "a"),
+    (f"{SOURCES}/com/tsf/shell/f/e", "g"),
+    (f"{SOURCES}/com/tsf/shell/f/e", "G"),
 ]
 
 # Also check if f/f/a has a clash

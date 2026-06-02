@@ -39,7 +39,7 @@ public class a implements b {
     }
 
     @Override // com.tsf.shell.f.f.d.a.b
-    public void a(final g gVar, com.censivn.C3DEngine.b.g.b.a aVar) {
+    public void a(final g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
         c.a(aVar);
         final float f = gVar.rotation().y;
         c.a(aVar, 500, new d() { // from class: com.tsf.shell.f.f.d.a.a.1
@@ -51,7 +51,7 @@ public class a implements b {
     }
 
     @Override // com.tsf.shell.f.f.d.a.b
-    public void b(final g gVar, com.censivn.C3DEngine.b.g.b.a aVar) {
+    public void b(final g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
         final float f = gVar.rotation().y;
         d dVar = new d() { // from class: com.tsf.shell.f.f.d.a.a.2
             @Override // com.censivn.C3DEngine.b.g.d

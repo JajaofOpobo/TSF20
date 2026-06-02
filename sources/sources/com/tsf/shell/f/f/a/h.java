@@ -31,6 +31,8 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;
+import com.tsf.shell.f.f.a.C0133a;
+import com.tsf.shell.f.f.a.InterfaceC0101a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.a, d.a {
@@ -54,12 +56,12 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
     public static int z;
     public com.tsf.shell.f.i.b.e.h G;
     public k H;
-    protected a.C0133a I;
+    protected C0133a I;
     private j K;
     private j L;
     private a M;
     private a N;
-    private com.tsf.shell.f.f.a.a.c O;
+    private com.tsf.shell.f.f.a._a.c O;
     private int P;
     private com.tsf.shell.f.e.j T;
     private com.tsf.shell.f.f.a.d.a U;
@@ -69,7 +71,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
     private j Y;
     private com.censivn.C3DEngine.b.g.d Z;
     private com.censivn.C3DEngine.b.g.d aa;
-    private com.censivn.C3DEngine.b.g.b.b ab;
+    private com.censivn.C3DEngine.b.g._b.b ab;
     private com.censivn.C3DEngine.b.d.a ad;
     private com.censivn.C3DEngine.b.d.a ae;
     private Runnable af;
@@ -78,7 +80,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
     private g aj;
     private e ak;
     private B al;
-    private a.C0133a ao;
+    private C0133a ao;
     private k aq;
     private TextureElement ar;
     private FrameLayout au;
@@ -233,7 +235,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
         this.U = com.tsf.shell.manager.a.w.b();
         this.V = new D();
         com.tsf.shell.manager.a.w.a().a(this);
-        this.O = new com.tsf.shell.f.f.a.a.c();
+        this.O = new com.tsf.shell.f.f.a._a.c();
     }
 
     public void al() {
@@ -623,7 +625,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
     }
 
     private void bc() {
-        this.ab = new com.censivn.C3DEngine.b.g.b.b();
+        this.ab = new com.censivn.C3DEngine.b.g._b.b();
         this.Z = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.h.11
             @Override // com.censivn.C3DEngine.b.g.d
             public void b(float f) {
@@ -696,24 +698,24 @@ public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.
         }
     }
 
-    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.InterfaceC0101a
     public void a(A aVar) {
         this.N = aVar;
     }
 
-    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.InterfaceC0101a
     public a i_() {
         return bg();
     }
 
-    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.InterfaceC0101a
     public void j_() {
         if (!aL()) {
             aV();
         }
     }
 
-    @Override // com.tsf.shell.f.f.a.a.InterfaceC0101a
+    @Override // com.tsf.shell.f.f.a.InterfaceC0101a
     public void a(A aVar, A aVar2, A aVar3) {
         if (this.W.size() != 1) {
             this.W.remove(aVar);

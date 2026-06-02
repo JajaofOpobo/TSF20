@@ -13,7 +13,7 @@ public class a {
     private static i d;
     private int f = 1;
     private boolean g;
-    private static com.censivn.C3DEngine.b.g.b.b e = new com.censivn.C3DEngine.b.g.b.b();
+    private static com.censivn.C3DEngine.b.g._b.b e = new com.censivn.C3DEngine.b.g._b.b();
     public static int a = 50;
     public static int b = 86;
 

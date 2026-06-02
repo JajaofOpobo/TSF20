@@ -9,7 +9,7 @@ import com.tsf.shell.utils.w;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends com.tsf.shell.f.e.g.a.b {
+public class e extends com.tsf.shell.f.e._g.a.b {
     public com.tsf.shell.manager.r.b.A a;
     private h b;
     private com.tsf.shell.manager.action.toggle.A c;
@@ -64,27 +64,27 @@ public class e extends com.tsf.shell.f.e.g.a.b {
         });
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         this.b.d();
         super.onShow();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onHide() {
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         Iterator<com.tsf.shell.manager.action.toggle.b> it = this.c.a().iterator();
         while (it.hasNext()) {

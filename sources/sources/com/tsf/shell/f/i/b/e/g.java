@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
-import com.tsf.shell.f.f.a.a.B;
+import com.tsf.shell.f.f.a._a.B;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,7 +111,7 @@ public class g extends a {
         return this.a != null ? this.a.e : "";
     }
 
-    @Override // com.tsf.shell.f.f.a.a.b.a
+    @Override // com.tsf.shell.f.f.a._a.b.a
     public String r_() {
         return r();
     }

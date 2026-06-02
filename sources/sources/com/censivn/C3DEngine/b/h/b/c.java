@@ -605,7 +605,7 @@ public class c extends j implements b.a, e.a, d, a.InterfaceC0113a {
             dVar.a(0);
             com.censivn.C3DEngine.b.g.c.a(this.b);
             com.censivn.C3DEngine.b.g.c.a(this.b, 300, dVar);
-            com.tsf.shell.f.e.g.d.onTempleteShow();
+            com.tsf.shell.f.e._g.d.onTempleteShow();
             if (this.P != null) {
                 this.P.a();
                 this.P = null;

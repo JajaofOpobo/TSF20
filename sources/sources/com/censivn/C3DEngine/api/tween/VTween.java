@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.tween;
 
 import com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget;
-import com.censivn.C3DEngine.b.g.b.a;
+import com.censivn.C3DEngine.b.g._b.a;
 import com.censivn.C3DEngine.b.g.C;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

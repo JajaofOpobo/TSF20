@@ -33,11 +33,11 @@ android {
         viewBinding = false
     }
 
-// sourceSets {
-//     getByName("main") {
-//         java.srcDir("../sources/sources")
-//     }
-// }
+sourceSets {
+    getByName("main") {
+        java.srcDir("../sources/sources")
+    }
+}
 
 }
 

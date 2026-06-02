@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.plugin.themepicker.wallpaper.WallpaperAppActivity;
 import com.tsf.shell.plugin.themepicker.wallpaper.WallpaperPickerActivity;
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e.g.a.b {
+public class b extends com.tsf.shell.f.e._g.a.b {
     private h a;
     private e b;
     private ArrayList<c> c;
@@ -34,7 +34,7 @@ public class b extends com.tsf.shell.f.e.g.a.b {
         a();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         Iterator<c> it = this.c.iterator();
         while (it.hasNext()) {
@@ -84,30 +84,30 @@ public class b extends com.tsf.shell.f.e.g.a.b {
         });
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         a.C0095a c0095a = new a.C0095a(b.d.wallpaper_setting_scrollable, x.c(b.i.text_scrollable), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.wallpaper.b.5
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.b.e.Y() == ShellWallpaperManager.a;
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.b.e.l(ShellWallpaperManager.a);
                 com.tsf.shell.manager.a.f.d();
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.b.e.l(ShellWallpaperManager.b);
                 com.tsf.shell.manager.a.f.d();
             }
         });
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.wallpaper.b.6
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return true;
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
                 b.this.b.changeMenu(b.this.d);
                 b.this.d.setParentMenu(b.this);
@@ -120,17 +120,17 @@ public class b extends com.tsf.shell.f.e.g.a.b {
         setFunctions(arrayList);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         this.e.b();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.a.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public j getContentContainer() {
         return this.a;
     }

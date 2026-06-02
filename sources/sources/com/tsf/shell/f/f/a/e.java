@@ -5,7 +5,6 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.manager.p.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends j {
@@ -57,8 +56,8 @@ public class e extends j {
             this.g = com.tsf.shell.manager.a.a.a(i);
             if (this.g.a()) {
                 d();
-                this.g.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a.e.a.2
-                    @Override // com.tsf.shell.manager.p.e.a.C0142a
+                    this.g.a(new com.tsf.shell.manager.p.e.a.C0142a() { // from class: com.tsf.shell.f.f.a.e.a.2
+                        @Override // com.tsf.shell.manager.p.e.a.C0142a
                     public void a() {
                         a.this.e();
                     }

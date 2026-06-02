@@ -116,7 +116,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         private com.censivn.C3DEngine.b.f.k k;
         private com.censivn.C3DEngine.b.f.k l;
         private com.censivn.C3DEngine.b.f.n m;
-        private com.censivn.C3DEngine.b.g.b.b n;
+        private com.censivn.C3DEngine.b.g._b.b n;
         private int o;
         private float p;
         private float q;
@@ -130,7 +130,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             this.t = new int[4];
             this.g = this;
             this.h = tVar;
-            this.n = new com.censivn.C3DEngine.b.g.b.b();
+            this.n = new com.censivn.C3DEngine.b.g._b.b();
             this.f = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_RESIZE_MATCH_BUTTON, 64, 64);
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.t.c.1
                 @Override // java.lang.Runnable

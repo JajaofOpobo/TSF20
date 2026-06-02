@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
 import com.censivn.C3DEngine.b.g.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b implements com.censivn.C3DEngine.b.g.b.a {
+public class b implements com.censivn.C3DEngine.b.g._b.a {
     public float A;
     public float B;
     public Number3d D;
@@ -312,12 +312,12 @@ public class b implements com.censivn.C3DEngine.b.g.b.a {
         return this.Q / com.censivn.C3DEngine.b.b.a.a;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.b.a
+    @Override // com.censivn.C3DEngine.b.g._b.a
     public c getTweenChild() {
         return this.M;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.b.a
+    @Override // com.censivn.C3DEngine.b.g._b.a
     public void setTweenChild(c cVar) {
         this.M = cVar;
     }

@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class i implements com.censivn.C3DEngine.b.g.b.a {
+public class i implements com.censivn.C3DEngine.b.g._b.a {
     public static final int GONE = 2;
     public static final int INVISIBLE = 1;
     public static final int VISIBLE = 0;
@@ -1419,12 +1419,12 @@ public class i implements com.censivn.C3DEngine.b.g.b.a {
         invalidate();
     }
 
-    @Override // com.censivn.C3DEngine.b.g.b.a
+    @Override // com.censivn.C3DEngine.b.g._b.a
     public com.censivn.C3DEngine.b.g.a.c getTweenChild() {
         return this.mTweenChild;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.b.a
+    @Override // com.censivn.C3DEngine.b.g._b.a
     public void setTweenChild(com.censivn.C3DEngine.b.g.a.c cVar) {
         this.mTweenChild = cVar;
     }

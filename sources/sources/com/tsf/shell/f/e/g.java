@@ -4,8 +4,8 @@ import android.view.KeyEvent;
 import com.censivn.C3DEngine.b.c.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class G implements b.a {
-    G() {
+class g implements b.a {
+    g () {
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a

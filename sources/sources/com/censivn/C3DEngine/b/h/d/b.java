@@ -17,7 +17,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.a {
     private float h;
     private float i;
     private float j;
-    private com.censivn.C3DEngine.b.g.b.b k;
+    private com.censivn.C3DEngine.b.g._b.b k;
     private C0038b l;
     private float m;
     private float n;
@@ -62,7 +62,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.a {
         this.e = new a(this.i, this.i, 0.0f);
         this.d = new a(this.i, 0.0f, 0.0f);
         doubleSidedEnabled(true);
-        this.k = new com.censivn.C3DEngine.b.g.b.b();
+        this.k = new com.censivn.C3DEngine.b.g._b.b();
     }
 
     public void c() {

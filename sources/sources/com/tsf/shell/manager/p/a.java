@@ -75,7 +75,7 @@ public class a {
         float f2 = fArrA[1];
         float f3 = com.censivn.C3DEngine.b.b.a.F;
         this.a.a(30.0f);
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g.b.b(), 1500, new AnonymousClass3(fD, com.censivn.C3DEngine.b.b.a.A - (200.0f * com.censivn.C3DEngine.b.b.a.c), fE, fE + (com.censivn.C3DEngine.b.b.a.A - fD), f, f3, f2));
+        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 1500, new AnonymousClass3(fD, com.censivn.C3DEngine.b.b.a.A - (200.0f * com.censivn.C3DEngine.b.b.a.c), fE, fE + (com.censivn.C3DEngine.b.b.a.A - fD), f, f3, f2));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.p.a$3, reason: invalid class name */
@@ -107,7 +107,7 @@ public class a {
 
         @Override // com.censivn.C3DEngine.b.g.d
         public void a() {
-            com.censivn.C3DEngine.b.g.b.b bVar = new com.censivn.C3DEngine.b.g.b.b();
+            com.censivn.C3DEngine.b.g._b.b bVar = new com.censivn.C3DEngine.b.g._b.b();
             float f = a.this.a.position().x;
             float f2 = a.this.a.position().y;
             float fB = com.tsf.shell.manager.a.h.r().b(1);

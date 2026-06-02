@@ -12,14 +12,14 @@ public class f extends com.tsf.shell.f.f.l {
     private com.censivn.C3DEngine.c.A c;
     private com.censivn.C3DEngine.c.b.a d;
     private int e;
-    private com.censivn.C3DEngine.b.g.b.b f;
+    private com.censivn.C3DEngine.b.g._b.b f;
     private com.censivn.C3DEngine.b.f.k g;
     private boolean h;
 
     public f(int i, boolean z) {
         super(i, b.d.desktop_transition_effect_cylinder, z);
         this.e = 2;
-        this.f = new com.censivn.C3DEngine.b.g.b.b();
+        this.f = new com.censivn.C3DEngine.b.g._b.b();
         this.h = false;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.j();

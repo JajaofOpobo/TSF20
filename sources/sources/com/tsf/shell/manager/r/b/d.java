@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
-import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.l.a;
@@ -62,12 +62,12 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         };
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         a.C0095a c0095a = new a.C0095a(b.d.widget_menu_shortcut_tsf, x.c(b.i.group_tsf_shortcut), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.d.3
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return d.this.a(d.this.k);
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 d.this.b(d.this.k);
                 d.this.e.a();
@@ -77,12 +77,12 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         com.tsf.shell.manager.r.c.b.e = c0095a;
         this.d = c0095a;
         a.C0095a c0095a2 = new a.C0095a(b.d.widget_menu_shortcut_system, x.c(b.i.group_system_shortcuts), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.d.4
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return d.this.a(d.this.l);
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 d.this.c();
                 d.this.b(d.this.l);
@@ -184,12 +184,12 @@ public class d extends com.tsf.shell.manager.r.b.C<a> {
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         a();
     }
 
-    @Override // com.tsf.shell.f.e.g.a.c
+    @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         Iterator<a> it = this.f.iterator();
         while (it.hasNext()) {

@@ -15,10 +15,15 @@ import re
 SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
 
 # Package renames: old -> new
+# Only include renames where the directory was actually renamed by fix_clashes.py.
+# Skip entries where the original directory still exists (no actual clash).
 RENAMES = {
     'com.tsf.shell.a': 'com.tsf.shell._a',
     'com.tsf.shell.f.d': 'com.tsf.shell.f._d',
     'com.tsf.shell.f.f.a._d.a': 'com.tsf.shell.f.f.a._d._a',
+    'com.tsf.shell.f.e.g': 'com.tsf.shell.f.e._g',
+    'com.tsf.shell.f.f.a.a': 'com.tsf.shell.f.f.a._a',
+    'com.censivn.C3DEngine.b.g.b': 'com.censivn.C3DEngine.b.g._b',
 }
 
 updated = 0

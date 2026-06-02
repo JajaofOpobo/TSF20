@@ -10,7 +10,7 @@ public class g extends h {
     private float b;
     private float d;
     private float e;
-    private ArrayList<com.tsf.shell.f.d.b.a.d> f;
+    private ArrayList<com.tsf.shell.f._d.b.a.d> f;
     private m g;
 
     public g(String str) {
@@ -45,7 +45,7 @@ public class g extends h {
         while (true) {
             int i2 = i;
             if (i2 < this.f.size()) {
-                com.tsf.shell.f.d.b.a.b bVarE = this.f.get(i2).e();
+                com.tsf.shell.f._d.b.a.b bVarE = this.f.get(i2).e();
                 if (i2 == 0) {
                     bVarE.g();
                 } else {
@@ -80,7 +80,7 @@ public class g extends h {
         while (true) {
             int i2 = i;
             if (i2 < this.f.size()) {
-                com.tsf.shell.f.d.b.a.d dVar = this.f.get(i2);
+                com.tsf.shell.f._d.b.a.d dVar = this.f.get(i2);
                 dVar.e().removeFromParent();
                 dVar.h();
                 dVar.d();

@@ -59,7 +59,7 @@ public class f implements e.a {
     private float W;
     private boolean Y;
     private boolean Z;
-    private com.censivn.C3DEngine.b.g.b.b ae;
+    private com.censivn.C3DEngine.b.g._b.b ae;
     private boolean af;
     private com.censivn.C3DEngine.b.g.d ag;
     private com.censivn.C3DEngine.b.g.d ah;
@@ -270,7 +270,7 @@ public class f implements e.a {
         C();
         this.D = new j();
         this.C = new j();
-        this.ae = new com.censivn.C3DEngine.b.g.b.b();
+        this.ae = new com.censivn.C3DEngine.b.g._b.b();
         this.t = new j() { // from class: com.tsf.shell.f.c.a.f.9
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {

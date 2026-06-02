@@ -28,7 +28,7 @@ public interface b {
 
     void a(g gVar);
 
-    void a(g gVar, com.censivn.C3DEngine.b.g.b.a aVar);
+    void a(g gVar, com.censivn.C3DEngine.b.g._b.a aVar);
 
     void a(n nVar);
 
@@ -36,5 +36,5 @@ public interface b {
 
     float b(int i);
 
-    void b(g gVar, com.censivn.C3DEngine.b.g.b.a aVar);
+    void b(g gVar, com.censivn.C3DEngine.b.g._b.a aVar);
 }

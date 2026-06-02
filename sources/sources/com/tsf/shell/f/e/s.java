@@ -115,7 +115,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         private com.censivn.C3DEngine.b.f.k g;
         private com.censivn.C3DEngine.b.f.k h;
         private com.censivn.C3DEngine.b.f.k i;
-        private com.censivn.C3DEngine.b.g.b.b j;
+        private com.censivn.C3DEngine.b.g._b.b j;
         private int k;
         private float l;
         private float m;
@@ -128,7 +128,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             this.m = 1.0f;
             this.n = false;
             this.e = this;
-            this.j = new com.censivn.C3DEngine.b.g.b.b();
+            this.j = new com.censivn.C3DEngine.b.g._b.b();
             this.d = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_RESIZE_MATCH_BUTTON, 64, 64);
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.s.a.1
                 @Override // java.lang.Runnable

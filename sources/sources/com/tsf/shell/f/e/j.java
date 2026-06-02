@@ -23,7 +23,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
     private boolean g = true;
     private boolean h = false;
     private boolean p = false;
-    private com.censivn.C3DEngine.b.g.b.b q = new com.censivn.C3DEngine.b.g.b.b();
+    private com.censivn.C3DEngine.b.g._b.b q = new com.censivn.C3DEngine.b.g._b.b();
     private float i = com.censivn.C3DEngine.b.b.a.c * 100.0f;
     private float j = com.censivn.C3DEngine.b.b.a.c * 100.0f;
     private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.a.l, com.tsf.shell.manager.g.a.l);

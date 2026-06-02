@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a.c;
 
 import android.view.MotionEvent;
 import com.tsf.b;
-import com.tsf.shell.f.e.g.a.a;
+import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.Iterator;
 public class d extends i {
     private com.censivn.C3DEngine.b.h.b.h g;
     private com.tsf.shell.f.f.a.b.l h;
-    private com.tsf.shell.f.e.g.b i;
+    private com.tsf.shell.f.e._g.b i;
     private ArrayList<a.C0095a> j;
 
     public d(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
@@ -107,18 +107,18 @@ public class d extends i {
         addChild(this.g);
         ArrayList<a.C0095a> arrayList = new ArrayList<>();
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_random, x.c(b.i.text_random), new a.C0095a.C0096a() { // from class: com.tsf.shell.f.f.a.c.d.3
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return d.this.h.g();
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 d.this.h.a(true);
                 d.this.g.d();
             }
 
-            @Override // com.tsf.shell.f.e.g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
                 d.this.h.a(false);
                 d.this.g.d();
@@ -130,7 +130,7 @@ public class d extends i {
     public void a(ArrayList<a.C0095a> arrayList) {
         if (arrayList != null) {
             this.j = arrayList;
-            this.i = new com.tsf.shell.f.e.g.b();
+            this.i = new com.tsf.shell.f.e._g.b();
             this.i.position().y = com.censivn.C3DEngine.b.b.a.a(160.0f);
             Iterator<a.C0095a> it = arrayList.iterator();
             while (it.hasNext()) {

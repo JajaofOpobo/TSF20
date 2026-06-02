@@ -22,8 +22,8 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     private static com.censivn.C3DEngine.b.f.k r;
     private int A;
     private j.a I;
-    private com.tsf.shell.f.d.e.a.b J;
-    private com.censivn.C3DEngine.b.g.b.a L;
+    private com.tsf.shell.f._d.e.a.b J;
+    private com.censivn.C3DEngine.b.g._b.a L;
     protected g a;
     protected com.tsf.shell.e.d b;
     protected com.tsf.shell.f.e.f.b c;
@@ -68,7 +68,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public g() {
         this.u.vTarget = this;
-        this.L = new com.censivn.C3DEngine.b.g.b.b();
+        this.L = new com.censivn.C3DEngine.b.g._b.b();
         this.a = this;
         com.tsf.shell.manager.a.b.a(this);
     }
@@ -93,7 +93,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.G = false;
     }
 
-    public j.a a(com.tsf.shell.f.d.e.a.b bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+    public j.a a(com.tsf.shell.f._d.e.a.b bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
         this.H = true;
         mouseEnabled(false);
         i = iVar;
@@ -903,7 +903,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         a(com.tsf.shell.manager.a.v.d.b(), runnable, f2);
     }
 
-    public void a(com.tsf.shell.f.d.e.a.b bVar, Runnable runnable, float f2) {
+    public void a(com.tsf.shell.f._d.e.a.b bVar, Runnable runnable, float f2) {
         if (this instanceof com.tsf.shell.f.f.a.h) {
             if (bVar.a()) {
                 bVar.a(this, f2, ((com.tsf.shell.f.f.a.h) this).ap().children(), runnable);
@@ -920,7 +920,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         a(com.tsf.shell.manager.a.v.d.b(), runnable, z);
     }
 
-    public void a(com.tsf.shell.f.d.e.a.b bVar, final Runnable runnable, boolean z) {
+    public void a(com.tsf.shell.f._d.e.a.b bVar, final Runnable runnable, boolean z) {
         Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.f.g.5
             @Override // java.lang.Runnable
             public void run() {

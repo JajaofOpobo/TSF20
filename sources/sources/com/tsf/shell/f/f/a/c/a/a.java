@@ -10,7 +10,7 @@ import com.tsf.shell.f.f.a.D;
 import com.tsf.shell.plugin.classification.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends b {
+public class a {
     private com.censivn.C3DEngine.b.h.d.b b;
     private com.censivn.C3DEngine.b.f.a.a c;
     private boolean d;

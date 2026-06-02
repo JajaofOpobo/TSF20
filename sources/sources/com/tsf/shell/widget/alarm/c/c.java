@@ -115,7 +115,7 @@ public class c extends VRectangle {
             new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.c.c.a.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (com.tsf.shell.a.a.e.a(AlarmWidget.h)) {
+                    if (com.tsf.shell._a.a.e.a(AlarmWidget.h)) {
                         c.this.d();
                     }
                 }

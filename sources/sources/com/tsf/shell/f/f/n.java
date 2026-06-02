@@ -971,7 +971,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.i.addChild(this.m);
         this.m.M();
         com.tsf.shell.manager.a.f.d();
-        com.tsf.shell.f.d.c().b();
+        com.tsf.shell.f._d.c().b();
         this.i.setAnimationObjectState(false);
         if (this.m.t() == -1) {
             com.censivn.C3DEngine.a.d.d().c().a(false);
@@ -1064,7 +1064,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private float D;
         private a E;
         private com.censivn.C3DEngine.b.d.a F;
-        private com.censivn.C3DEngine.b.g.b.b G;
+        private com.censivn.C3DEngine.b.g._b.b G;
         private com.censivn.C3DEngine.b.g.d H;
         private g I;
         private float J;
@@ -1144,7 +1144,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         public C() {
             com.censivn.C3DEngine.a.d.d().c().a(this);
-            this.G = new com.censivn.C3DEngine.b.g.b.b();
+            this.G = new com.censivn.C3DEngine.b.g._b.b();
             this.E = new A();
             i();
         }
@@ -1641,7 +1641,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             if (this.m && this.l) {
                 if (this.i) {
-                    com.tsf.shell.f.e.g.d.onTempleteHide();
+                    com.tsf.shell.f.e._g.d.onTempleteHide();
                     com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.f.n.c.5
                         @Override // java.lang.Runnable
                         public void run() {
@@ -1670,7 +1670,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             if (this.m && this.l) {
                 if (this.i) {
-                    com.tsf.shell.f.e.g.d.onTempleteHide();
+                    com.tsf.shell.f.e._g.d.onTempleteHide();
                     com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.f.n.c.6
                         @Override // java.lang.Runnable
                         public void run() {
@@ -1691,7 +1691,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         public void d(MotionEvent motionEvent) {
             if (this.m) {
-                com.tsf.shell.f.e.g.d.onTempleteShow();
+                com.tsf.shell.f.e._g.d.onTempleteShow();
                 this.m = false;
                 this.i = true;
                 this.j = false;

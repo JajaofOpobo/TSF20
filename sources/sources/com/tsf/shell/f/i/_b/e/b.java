@@ -23,7 +23,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
     private boolean p;
     private float q;
     private boolean r;
-    private com.tsf.shell.f.d.a.A s;
+    private com.tsf.shell.f._d.a.A s;
     private boolean t;
     private a u;
 
@@ -238,7 +238,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         b(number3d, number3d2);
     }
 
-    public void a(com.tsf.shell.f.d.a.A aVar) {
+    public void a(com.tsf.shell.f._d.a.A aVar) {
         b(aVar);
     }
 
@@ -254,7 +254,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         }
     }
 
-    public void b(com.tsf.shell.f.d.a.A aVar) {
+    public void b(com.tsf.shell.f._d.a.A aVar) {
         if (this.b) {
             com.tsf.shell.manager.a.v.b.a(this, aVar);
         }

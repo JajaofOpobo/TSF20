@@ -46,7 +46,7 @@ public class e extends com.tsf.shell.f.c.b.c {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         float fP = this.a.p();
-        com.censivn.C3DEngine.b.g.b.b bVar = new com.censivn.C3DEngine.b.g.b.b();
+        com.censivn.C3DEngine.b.g._b.b bVar = new com.censivn.C3DEngine.b.g._b.b();
         com.censivn.C3DEngine.b.g.c.a(bVar, 1000, new AnonymousClass2(fP, fP / 2.0f, bVar));
     }
 
@@ -54,9 +54,9 @@ public class e extends com.tsf.shell.f.c.b.c {
     class AnonymousClass2 extends com.censivn.C3DEngine.b.g.d {
         final /* synthetic */ float a;
         final /* synthetic */ float b;
-        final /* synthetic */ com.censivn.C3DEngine.b.g.b.b c;
+        final /* synthetic */ com.censivn.C3DEngine.b.g._b.b c;
 
-        AnonymousClass2(float f, float f2, com.censivn.C3DEngine.b.g.b.b bVar) {
+        AnonymousClass2(float f, float f2, com.censivn.C3DEngine.b.g._b.b bVar) {
             this.a = f;
             this.b = f2;
             this.c = bVar;
@@ -138,7 +138,7 @@ public class e extends com.tsf.shell.f.c.b.c {
         Number3d number3dLocalToGlobal = this.a.h().localToGlobal(Number3d.TEMPNUMBER3D);
         float[] fArrA = x.a(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
         this.a.g().a(fArrA[0], fArrA[1]);
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g.b.b(), 4000, new AnonymousClass6(fArrA, this.a.g().k()));
+        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 4000, new AnonymousClass6(fArrA, this.a.g().k()));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.c.a.e$6, reason: invalid class name */

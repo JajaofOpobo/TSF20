@@ -78,7 +78,7 @@ public class c extends f {
         Home.q();
         com.tsf.shell.f.e.b.e.a();
         com.tsf.shell.manager.a.B = new com.tsf.shell.preference.a.d();
-        com.tsf.shell.manager.a.v = new com.tsf.shell.f.d.A();
+        com.tsf.shell.manager.a.v = new com.tsf.shell.f._d.A();
         com.tsf.shell.f.i.b.d.b.k();
         new com.tsf.shell.manager.o.d();
         com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.a(new j()));
@@ -102,7 +102,7 @@ public class c extends f {
         this.a.addChild(com.tsf.shell.manager.a.e);
         this.a.addChild(this.e);
         h();
-        com.tsf.shell.f.d.c().a();
+        com.tsf.shell.f._d.c().a();
         Home.c.a("initScene end");
         this.f = true;
     }
@@ -112,7 +112,7 @@ public class c extends f {
     }
 
     public void d() {
-        com.tsf.shell.f.e.g.d.hideAll();
+        com.tsf.shell.f.e._g.d.hideAll();
         a((Object) this);
         c(this);
         this.c.mouseEnabled(false);
@@ -160,7 +160,7 @@ public class c extends f {
 
     public void a(b.a aVar, Runnable runnable, int i) {
         this.g = false;
-        com.tsf.shell.f.e.g.d.hideAll();
+        com.tsf.shell.f.e._g.d.hideAll();
         com.tsf.shell.manager.a.o.k();
         com.tsf.shell.manager.a.n.i();
         com.tsf.shell.manager.action.f.a();

@@ -3,13 +3,12 @@ package com.tsf.shell.f.e.h;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
 import com.tsf.shell.activity.PhotoSelectorActivity;
 import com.tsf.shell.utils.q;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements a.InterfaceC0025a {
+public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private static a a;
     private InterfaceC0098a b;
     private int c;
@@ -32,7 +31,7 @@ public class a implements a.InterfaceC0025a {
         intent.setClass(com.censivn.C3DEngine.a.d(), PhotoSelectorActivity.class);
         intent.putExtra("image_width", i);
         intent.putExtra("image_height", i2);
-        this.c = Home.b().a(intent, (a.InterfaceC0025a) this);
+        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
     @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
