@@ -1,3 +1,12 @@
+"""
+###############################################################################
+# CURRENT — Parallel alternative refs-fixer (not in 1→2→3→final lineage)
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Simpler regex approach, no conflict detection. Different trade-offs from
+#   fix_refs_final.py.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+"""
 import os, re, subprocess
 
 SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'

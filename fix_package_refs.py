@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+###############################################################################
+# CURRENT — Standalone tool
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Updates imports and FQ refs after manual package renames
+#   (com.tsf.shell.a→com.tsf.shell._a).
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
 Update all references to renamed packages across the codebase.
 """
 import os

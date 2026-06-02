@@ -1,4 +1,10 @@
-"""Fix type references from lowercase to uppercase for renamed types.
+"""
+###############################################################################
+# OBSOLETE — Superseded by fix_refs_final.py
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Fix type references from lowercase to uppercase for renamed types.
 Only changes UNAMBIGUOUS type references: imports, extends, implements,
 new, annotations, type declarations, and fully-qualified references."""
 import os, re, subprocess

@@ -1,4 +1,13 @@
-"""Round 2: Fix remaining errors after constructor fixer.
+"""
+###############################################################################
+# CURRENT — Final version of the round-2 fixer family
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Replaces: fix_remaining.py
+# Key improvements: discovers inner type renames by scanning all files, better
+#   load/save helpers, reads docs/build-output-r2.txt.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Round 2: Fix remaining errors after constructor fixer.
 Handles:
 1. Inner type references (prefix.lowercase → prefix.UPPERCASE)
 2. Remove redundant same-package imports to resolve ambiguity

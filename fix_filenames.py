@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Fix Java filename/classname mismatches from case-insensitive FS migration."""
+"""
+###############################################################################
+# CURRENT — Standalone tool
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Renames .java files to match declared class name. Uses shutil.move with
+#   duplicate detection.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Fix Java filename/classname mismatches from case-insensitive FS migration."""
 import os
 import re
 import shutil

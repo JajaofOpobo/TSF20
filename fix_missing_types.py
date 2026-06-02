@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+"""
+###############################################################################
+# OBSOLETE — Superseded by fix_all.py
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Partial draft — only creates 4 stubs. Incomplete.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+"""
 """Create missing type files and fix decompilation artifacts."""
 import os
 

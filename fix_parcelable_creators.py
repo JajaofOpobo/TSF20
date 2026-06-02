@@ -1,3 +1,12 @@
+"""
+###############################################################################
+# CURRENT — Standalone CLI tool
+# Created: Jaja 2026-05-18 | Cataloged: opencode 2026-06-02
+# Converts anonymous Parcelable.Creator<> to named private static inner class.
+# Takes file paths as CLI arguments.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+"""
 import re
 import sys
 

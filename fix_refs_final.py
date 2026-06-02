@@ -1,4 +1,13 @@
-"""Fix references for renamed types, safely handling subpackage/type coexistence."""
+"""
+###############################################################################
+# CURRENT — Final version of the refs-fixer family
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Replaces: fix_refs.py, fix_refs2.py, fix_refs3.py
+# Key improvements: subpackage/type conflict detection, line-by-line processing,
+#   context-checking callback.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Fix references for renamed types, safely handling subpackage/type coexistence."""
 import os, re, subprocess
 
 SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'

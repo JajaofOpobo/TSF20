@@ -1,4 +1,10 @@
-"""Fix remaining errors after constructor fixer:
+"""
+###############################################################################
+# OBSOLETE — Superseded by fix_round2.py
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Fix remaining errors after constructor fixer:
 1. Inner-type references (n.c → n.C) — lowercase inner type after dot
 2. Ambiguous imports — remove redundant same-package imports
 3. Package imports — fix corrupted package references

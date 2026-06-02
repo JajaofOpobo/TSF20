@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 """
+###############################################################################
+# CURRENT — Most comprehensive catch-all fixer
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Replaces: fix_iteration1.py, fix_missing_types.py
+# Creates 7+ missing type stubs, fixes mangled paths, shadowed imports, and
+#   inner-type→standalone type migration.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
 Comprehensive fix for all remaining compilation issues.
 Creates missing types, fixes decompilation artifacts.
 """

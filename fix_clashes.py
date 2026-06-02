@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+###############################################################################
+# CURRENT — Standalone tool
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Renames clash dirs (a/→_a/) and updates package declarations/imports.
+# Handles 3 known clashes: com/tsf/shell/a, com/tsf/shell/f/d, f/f/a/_d/a.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
 Fix class/package clashes by renaming directories to underscore prefix
 and updating all package declarations within them.
 """

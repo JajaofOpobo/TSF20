@@ -1,4 +1,14 @@
-"""Fix constructor names precisely by reading build errors line by line."""
+"""
+###############################################################################
+# CURRENT — Final version of the constructor-fixer family
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# Replaces: fix_constructors.py, fix_constructors2.py, fix_constructors3.py,
+#           fix_constructors_final.py
+# Key improvements: return-type detection (skips actual methods), targeted
+#   fix from build error lines.
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+Fix constructor names precisely by reading build errors line by line."""
 import os, re, subprocess
 
 SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'

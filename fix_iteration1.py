@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+###############################################################################
+# OBSOLETE — Superseded by fix_all.py
+# Created: Jaja 2026-05-26 | Cataloged: opencode 2026-06-02
+# See fix_scripts_CATALOG.md for hierarchy
+###############################################################################
+"""
+"""
 Batch fix for remaining compilation errors.
 Fixes specific files based on build output analysis.
 """
