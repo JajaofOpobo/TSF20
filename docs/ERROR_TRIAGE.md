@@ -1,5 +1,11 @@
 # Error Triage: TSF Shell v3.9.4 Recompilation
 
+> **⚠️ OBSOLETE — 2026-06-02**  
+> This triage covered ~100 errors from an early build attempt (linux16.txt).  
+> The fix pipeline (8 scripts) now addresses these systematically.  
+> See [`CODEBASE_AUDIT_2026-06-02.md`](CODEBASE_AUDIT_2026-06-02.md) §3 for current build status across all 3 tracks.  
+> **Cataloged by**: opencode 2026-06-02
+
 ## Summary
 
 **Build target:** `compileDebugJavaWithJavac` (Java source only, no DEX/R8)

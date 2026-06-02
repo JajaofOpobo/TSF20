@@ -1,5 +1,11 @@
 # TSF Shell Revival Project — Forensic Audit
 
+> **⚠️ OBSOLETE — 2026-06-02**  
+> This document audited the **old handwritten app attempt** (now archived to `archive/app-attempt/`).  
+> The handwritten code was a generic 2D launcher, not a true TSF revival. It has been removed from the active build path.  
+> **See instead**: [`CODEBASE_AUDIT_2026-06-02.md`](CODEBASE_AUDIT_2026-06-02.md) for current codebase state.  
+> **Cataloged by**: opencode 2026-06-02
+
 > **Date**: 2026-05-17  
 > **Scope**: Full codebase, plan docs, git history, decompiled sources, new implementations  
 > **Verdict**: 🔴 **Project is OFF TRACK.** The current implementation is a generic Android launcher written from scratch, not a revival of TSF Shell.

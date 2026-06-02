@@ -1,5 +1,10 @@
 # Decompiled Source Package Analysis
 
+> **⚠️ OBSOLETE — 2026-06-02**  
+> File counts are from v1.9.9.7.6 reference APK. The v3.9.4 target has different numbers.  
+> Merged into [`CODEBASE_AUDIT_2026-06-02.md`](CODEBASE_AUDIT_2026-06-02.md) §1 and §2.2.  
+> **Cataloged by**: opencode 2026-06-02
+
 **Total**: 1847 Java files
 
 ## TSF-Proprietary Code (COMPILE THESE)

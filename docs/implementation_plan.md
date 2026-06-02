@@ -1,5 +1,14 @@
 # TSF Shell Revival — Corrective Implementation Plan (v2)
 
+> **⚠️ NEEDS REVISION — 2026-06-02**  
+> This plan was written for the v1.9.9.7.6 reference APK structure.  
+> The actual target (v3.9.4) differs: `com/tsf/shell/` has **1,026 files** (not 842),  
+> there is no `com/tsf/extend/` with 296 files, and the codebase is heavily ProGuard-obfuscated  
+> (79% single-letter class names).  
+> **The plan must insert an 8-step fix pipeline before compilation**, and adjust file counts  
+> throughout. See [`CODEBASE_AUDIT_2026-06-02.md`](CODEBASE_AUDIT_2026-06-02.md) §10 for revised next actions.  
+> **Cataloged by**: opencode 2026-06-02
+
 ## Background
 
 The decompiled APK source tree contains **1847 Java files**, broken down as:

@@ -332,7 +332,27 @@ TSF20/                                   219M total
 | Build system version mismatch | Medium | Medium — Room NPE may be AGP/Gradle version issue | Pin to API 28-compatible versions |
 | Key insights lost on machine teardown | Low | High | Everything is git-tracked; remote backup recommended |
 
-## 9. Recommended Immediate Actions
+## 9. Document Consolidation Log
+
+The following documents were consolidated into this audit on 2026-06-02 and marked OBSOLETE:
+
+| File | Lines | What It Contributed | Merged Into |
+|------|-------|---------------------|-------------|
+| `TSF_REVIVAL_AUDIT.md` | 307 | Forensic audit of old handwritten app attempt; feature comparison table; C3DEngine usage critique | Archived code moved to `archive/`; critique notes in §6 |
+| `package_analysis.md` | 44 | Package/file count breakdown (v1 reference); third-party exclusion list; LibGDX discovery | §1 (composition), §2.2 (heatmap) |
+| `ERROR_TRIAGE.md` | 136 | Build error buckets 1-4; WSL/Linux build strategy; Windows vs Linux error comparison | §3 (build status), §5 (decompilation issues) |
+
+### Retained as Standalone Documents
+
+| File | Reason |
+|------|--------|
+| `implementation_plan.md` | Roadmap — needs updating but defines the overall strategy |
+| `DATABASE_SCHEMA.md` | Standalone reference — 8 tables, constants, not duplicative |
+| `C3DEngine_API_Reference.md` | Standalone reference — v1 API surface, not duplicative |
+| `runtime_analysis.md` (root) | Primary architecture doc (19 sections, 33KB) — too large to merge |
+| `fix_scripts_CATALOG.md` (root) | Script hierarchy reference — standalone utility |
+
+## 10. Recommended Immediate Actions
 
 1. **Run the fix pipeline end-to-end** on a clean checkout:
    ```
