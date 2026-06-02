@@ -22,24 +22,218 @@
 | Frida captures / dumps | 7 files in `resources/` | 🟢 Rich |
 | APK resources (smali, res, lib) | Unpacked in `resources/apk/` | 🟢 Complete |
 
-## 2. Directory Layout
+## 2. Detailed Codebase Map
 
 ```
-TSF20/
-├── scripts/              ← 40 Python fix/analysis scripts
-│   ├── frida/            ← 9 Frida JS instrumentation scripts
-│   └── legacy/           ← 5 PowerShell scripts (obsolete)
-├── tools/                ← 8 Java files (PatchJar, GradleAgent)
-├── resources/            ← APK (smali/res/lib), shell.db, dumps
-├── docs/                 ← Build logs, analysis docs, runtime traces
-├── sources/sources/      ← 1,523 decompiled Java files
-├── app/                  ← Android Studio / Gradle project
-├── build/                ← Build output (problem reports)
-├── runtime_analysis.md   ← Primary architecture doc (19 sections)
-├── fix_scripts_CATALOG.md← Script hierarchy reference
-├── build.gradle.kts, settings.gradle.kts, gradle*, local.properties
-└── .gitignore
+TSF20/                                   219M total
+│
+├── .git/                                 git history (57 commits, 1 author)
+├── .gradle/                              Gradle 8.12 caches + libs.versions.toml
+├── .idea/                                IntelliJ/Android Studio project config
+│
+├── app/                                  Android application module
+│   ├── build.gradle.kts                  module-level build config
+│   ├── proguard-rules.pro                ProGuard rules
+│   ├── schemas/                          Room DB schema exports
+│   └── src/main/                         Android app sources (mostly empty — decompiled sources are in sources/)
+│
+├── build/                                Gradle build output
+│   └── reports/problems/                 problems-report.html (137KB, build validation)
+│
+├── docs/                                 All documentation and build logs
+│   ├── CODEBASE_AUDIT_2026-06-02.md      ← This file
+│   ├── C3DEngine_API_Reference.md        v1 C3DEngine API reference
+│   ├── DATABASE_SCHEMA.md                TSF database schema (8 tables)
+│   ├── ERROR_TRIAGE.md                   Build error triage guide (key blocker document)
+│   ├── TSF_REVIVAL_AUDIT.md              Earlier project audit
+│   ├── implementation_plan.md            Revival implementation plan
+│   ├── package_analysis.md               APK package analysis
+│   ├── build-*.txt                       Build error outputs (30 files, 3 tracks)
+│   │   ├── build-output-current*.txt     Mac/WSL track (current → current5)
+│   │   ├── build-output-linux*.txt       Linux track (linux → linux26)
+│   │   ├── build-output-round*.txt       Post-fix round outputs (round1, round2)
+│   │   ├── build-output-r*.txt           Parallel round outputs (r1, r2)
+│   │   └── build-errors-phase1*.txt      Phase 1 error logs
+│   ├── runtime_analysis/                 Runtime analysis artifacts
+│   │   ├── captures/                     Frida capture output files
+│   │   │   ├── touch_trace.txt           Touch event trace
+│   │   │   └── vpage_transitions_capture.txt  Page transition capture
+│   │   ├── scripts/                      Additional Frida scripts (27 .js files)
+│   │   ├── shaders/                      Extracted GLSL shaders (v1)
+│   │   ├── shaders_v3/                   Extracted GLSL shaders (v3.9.4)
+│   │   ├── page_transition_findings.md   Page transition analysis
+│   │   ├── page_transition_queue_trace.md Queue trace findings
+│   │   └── tween_engine_findings.md      Tween engine mapping (v1→v3)
+│   └── androguard_output.txt             Androguard static analysis dump
+│
+├── fix_scripts_CATALOG.md                Fix script hierarchy reference (opencode 2026-06-02)
+├── runtime_analysis.md                   Primary architecture doc (19 sections, 33KB)
+│
+├── resources/                            APK binaries, dumps, and captures
+│   ├── apk/                              Unpacked APK (apktool output)
+│   │   ├── AndroidManifest.xml           App manifest (27KB)
+│   │   ├── apktool.yml                   Apktool metadata
+│   │   ├── lib/armeabi/                  Native libraries (.so)
+│   │   │   ├── libandenginephysicsbox2dextension.so  Box2D engine wrapper (214KB)
+│   │   │   └── libkcmutil.so             Kinfoc analytics SDK (79KB)
+│   │   ├── res/                          Android resources (151 subdirs)
+│   │   └── smali/                        Full smali bytecode (decompilation source of truth)
+│   ├── shell.db                          TSF Shell SQLite database (schema extracted)
+│   ├── dumpsys_package.txt               dumpsys package output
+│   ├── dumpsys_providers.txt             dumpsys providers output
+│   ├── frida_classes.txt                 Frida class enumeration dump
+│   ├── frida_methods_dump.txt            Frida method signature dump
+│   ├── objection_classes.txt             Objection class enumeration
+│   └── session-ses_1c35.md               Historical session log (731KB)
+│
+├── scripts/                              All Python fix/analysis scripts (40 files)
+│   ├── fix_*.py                          Fix pipeline scripts (24 files)
+│   │   ├── fix_refs_final.py             CURRENT: type reference case fixer
+│   │   ├── fix_constructors_precise.py   CURRENT: constructor name fixer
+│   │   ├── fix_class_decls2.py           CURRENT: class declaration fixer
+│   │   ├── fix_all.py                    CURRENT: comprehensive catch-all fixer
+│   │   ├── fix_round2.py                 CURRENT: post-constructor round-2 fixer
+│   │   ├── fix_filenames.py              CURRENT: file rename tool
+│   │   ├── fix_clashes.py                CURRENT: package/class clash resolver
+│   │   ├── fix_package_refs.py           CURRENT: package ref updater
+│   │   ├── fix_parcelable_creators.py    CURRENT: Parcelable.Creator converter
+│   │   ├── fix_all_refs.py               CURRENT: parallel refs-fixer
+│   │   └── fix_*.py                      OBSOLETE: superseded by the above
+│   ├── analyze_*.py                      Analysis utilities (5 files)
+│   │   ├── analyze_tsf.py                TSF shell bytecode analysis
+│   │   ├── analyze_fields.py             Field type analysis
+│   │   ├── analyze_dex.py                DEX bytecode analysis
+│   │   ├── analyze_errors2.py            Build error analysis
+│   │   ├── analyze2.py → analyze4.py     Progressive analysis scripts
+│   ├── androguard_analysis.py            Androguard static analysis
+│   ├── categorize_c3dengine.py           C3DEngine 328-class categorization
+│   ├── deobfuscate_java_layer.py         v1→v3 deobfuscation mapper
+│   ├── extract_shaders_v3*.py            GLSL shader extractors (3 files)
+│   ├── decompile_*.py                    Bytecode decompilation utilities (2 files)
+│   ├── binary_search.py                  Binary search utility
+│   ├── check_f_types.py                  Type checking utility
+│   ├── find_anon_fields_v2.py            Anonymous field finder
+│   └── find_interface_anon2.py           Interface anonymous class finder
+│   ├── frida/                            Frida JavaScript instrumentation (9 files, 713 lines)
+│   │   ├── runtime_analysis.js           Main runtime behavior analyzer (131 lines)
+│   │   ├── full_init_trace.js            Full init method trace (131 lines)
+│   │   ├── heap_scan.js                  Heap object scanner (110 lines)
+│   │   ├── frida_heap_explore.js         Heap exploration (93 lines)
+│   │   ├── map_app.js                    App memory mapping (119 lines)
+│   │   ├── trace_init.js                 Init method tracer (60 lines)
+│   │   ├── methods_dump.js               Method enumeration (35 lines)
+│   │   ├── enumerate.js                  Class enumeration (17 lines)
+│   │   └── enumerate_feature.js          Feature enumeration (17 lines)
+│   └── legacy/                           PowerShell scripts (5 files, OBSOLETE)
+│       ├── fix_constructors.ps1
+│       ├── fix_declarations.ps1
+│       ├── fix_declarations_and_ctors.ps1
+│       ├── fix_imports.ps1
+│       └── fix_name_clashes.ps1
+│
+├── sources/                               Decompiled Java source tree (primary target for revival)
+│   ├── bundled-libs/                      Bundled library JARs (extracted classes)
+│   ├── resources/                         Resource APK files
+│   └── sources/                           1,523 decompiled .java files
+│       ├── android/support/               Android support library stubs (2 files)
+│       └── com/
+│           ├── censivn/C3DEngine/         Proprietary 3D engine (179 files, 9 subpackages)
+│           │   ├── api/                   Public API — readable names (55 files)
+│           │   │   ├── core/              VObject3d, VObjectManager, VRenderer, VTextureManager
+│           │   │   ├── effects/           VEffectsStack, VTwist, Vector3
+│           │   │   ├── element/           TextureElement, Vertices, Uv, Color4
+│           │   │   ├── primitives/        VRectangle, VBox, VButton, VNinePatchRectangle
+│           │   │   ├── shell/             VPage, VConsole, VInformation, VTempleteLayerManager
+│           │   │   └── tween/             VTween, VEasing, VTweenTarget
+│           │   ├── a/                     Obfuscated (7 files)
+│           │   ├── b/                     Obfuscated — C3DEngine.b.g.* tween engine (76 files)
+│           │   ├── c/                     Obfuscated (12 files)
+│           │   ├── common/                Shared utilities including shaders (10 files)
+│           │   │   └── shader/            7 shader classes
+│           │   ├── d/                     Obfuscated (2 files)
+│           │   ├── e/                     Obfuscated (9 files)
+│           │   ├── f/                     Obfuscated (6 files)
+│           │   └── n/                     Obfuscated (1 file)
+│           ├── ksmobile/                  KSMobile utility library (16 files)
+│           │   └── a/                     Utility classes (blanket/fragment/vpn/traffic/volume)
+│           └── tsf/shell/                 Main TSF Shell application (1,026 files, 15 subpackages)
+│               ├── f/                     Page system — transitions, carousel, container (530 files)
+│               │   ├── a/                 7 files
+│               │   ├── b/                 app drawer handler
+│               │   ├── f/                 transition effect base (f.f.f → f.f.l hierarchy)
+│               │   │   └── b/             20 transition effect subclasses (Cloth, Cube, Flip, etc.)
+│               │   ├── m/                 5 files
+│               │   ├── n/                 Carousel engine (n$c = orbit renderer)
+│               │   ├── o/                 6 files
+│               │   ├── p/                 6 files
+│               │   └── ... (single-letter subdirs)
+│               ├── manager/               Backend managers (114 files)
+│               │   ├── a/ through q/      Obfuscated sub-managers
+│               │   ├── bind/              ShellModel (data binding)
+│               │   ├── action/            Action system with toggle state manager
+│               │   └── wallpaper/         ShellWallpaperManager
+│               ├── plugin/                Plugin system (105 files)
+│               │   ├── theme/             Theme management
+│               │   ├── themepicker/       Theme picker UI (icon designer, indicator, preview)
+│               │   ├── fontspicker/       Font picker
+│               │   ├── crop/              Image crop tool
+│               │   ├── classification/    Catalog activity
+│               │   ├── widget/            Floating widgets
+│               │   └── ... (5 more plugin subdirs)
+│               ├── widget/                Widget implementations (106 files)
+│               │   ├── alarm/             Alarm clock widget (full implementation, touch tracked here)
+│               │   └── cubeclock/         Cube clock widget
+│               ├── theme/                 Theme engine (58 files)
+│               │   └── inside/            Theme parser, element manager, mix/menu system
+│               ├── preference/            Settings and preference screens (37 files)
+│               ├── utils/                 Utility classes (27 files)
+│               ├── services/              Background services (7 files)
+│               ├── activity/              Activity classes (9 files)
+│               ├── component/             UI components (2 files)
+│               └── e/                     Easing/interpolation helpers (6 files)
+│
+├── tools/                                 Java build tooling (8 files)
+│   ├── PatchJar.java                      ASM bytecode patching: removes/stubs getBinaryClassName
+│   ├── PatchJar.class (+ 4 inner classes) Compiled PatchJar
+│   ├── GradleAgent.java                   Custom Gradle agent
+│   └── PatchGradleConstants.java          Gradle constants patcher
+│
+├── build.gradle.kts                       Root Gradle build config
+├── settings.gradle.kts                    Gradle settings (module includes)
+├── gradle.properties                      Gradle JVM properties
+├── local.properties                       SDK/NDK paths (machine-specific)
+├── gradlew                                Gradle wrapper (Unix)
+├── gradlew.bat                            Gradle wrapper (Windows)
+├── gradle/wrapper/                        Gradle wrapper JAR + properties
+├── TSF20.code-workspace                   VS Code workspace config
+├── .gitignore                             Git ignore rules
+└── fix_scripts_CATALOG.md                 Fix script hierarchy reference
 ```
+
+### 2.1 Package Size Breakdown
+
+| Directory | Size | Description |
+|-----------|------|-------------|
+| `sources/` | ~150M | Decompiled Java (bulk of project) |
+| `resources/apk/smali/` | ~40M | Smali bytecode |
+| `resources/apk/res/` | ~10M | Android resources |
+| `docs/` | ~5M | Build logs + analysis docs |
+| `scripts/` | ~400K | Python + JS scripts |
+| `build/` | ~3M | Gradle build outputs |
+
+### 2.2 Subpackage File Heatmap
+
+| Subpackage | Files | % of Shell | Obfuscation Level |
+|-----------|-------|------------|-------------------|
+| `com/tsf/shell/f/` | 530 | 51.7% | 🔴 Extreme (single-letter dirs) |
+| `com/tsf/shell/manager/` | 114 | 11.1% | 🔴 Heavy |
+| `com/tsf/shell/widget/` | 106 | 10.3% | 🟡 Moderate (alarm/cubeclock readable) |
+| `com/tsf/shell/plugin/` | 105 | 10.2% | 🟢 Mixed (some readable names) |
+| `com/tsf/shell/theme/` | 58 | 5.7% | 🟢 Mostly readable names |
+| `com/tsf/shell/preference/` | 37 | 3.6% | 🟡 Moderate |
+| `com/tsf/shell/utils/` | 27 | 2.6% | 🔴 Heavy (single-letter names) |
+| `com/censivn/C3DEngine/api/` | 55 | — | 🟢 Readable |
+| `com/censivn/C3DEngine/b/` | 76 | — | 🔴 Obfuscated (tween engine) |
 
 ## 3. Build Status
 
