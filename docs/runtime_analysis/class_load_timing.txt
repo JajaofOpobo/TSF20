@@ -1,0 +1,33 @@
+Class Load Timing Analysis (Frida Timed Enumeration)
+=====================================================
+Date: 2026-06-01
+Method: frida_timed_class_enum2.js — spawn + 1s delay + Java.deoptimizeEverything() + 
+        Java.enumerateLoadedClassesSync() at frame intervals via eglSwapBuffers hook
+
+Results (consistent across 3 runs):
+  f0  (before first swap, ~1s after spawn):  667-831 classes
+  f1  (frame 1):   1224 classes  (+393-557 from f0)
+  f3  (frame 3):   1315 classes  (+91 from f1) — bulk alarm widget + C3DEngine lazy loads
+  f5  (frame 5):   1319 classes  (+4 from f3)
+  f10 (frame 10):  1320 classes  (+1 from f5)
+  f30+:  No further class loading detected (stable 1320)
+
+Key Findings:
+  1. ~50-63% of classes loaded before first frame (667-831 of 1320)
+  2. ~93% loaded by frame 1 (1224 of 1320)
+  3. The remaining ~7% are alarm widget classes (AlarmWidget, AlarmUtils, providers, 
+     service classes, inner classes) + C3DEngine lazy objects (VTween, VMouseEventListener, 
+     VWidgetContainer, VObjectManager, VTextureManager, VMessageQueueManager)
+  4. No classes loaded after frame 10 — fully stable scene graph
+  5. No KSM classes loaded at any point
+
+Lazy-Loaded Classes (post-frame-1):
+  - Alarm widget system: AlarmWidget, k, a, b, c.*, d.*, e, f, g, h, j, l, p, q
+  - Alarm providers/services: provider.a, provider.b, service.a, service.b, service.c
+  - AlarmUtils: AlarmUtils, AlarmUtils.Alarm, AlarmUtils.b, AlarmUtils.c
+  - C3DEngine lazy: VTween, VTweenParam, VMouseEventListener, VWidgetContainer,
+    VWidgetContainer$1/$2, VObjectManager, VTextureManager, VMessageQueueManager,
+    VMessageQueueManager$a, VButton$3, VInformation
+  - Other: Home$16, Home$16$1, f.i.b$a, f.e.j$1/$3/$4/$5, f.e.s$a, f.e.s$a$a,
+    f.e.a$a, f.e.c.b$a, f.e.f.b, activity.b.a, plugin.widget.FloatingItem
+  - kinfoc: com.cm.kinfoc.e

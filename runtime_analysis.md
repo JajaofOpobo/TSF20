@@ -405,7 +405,94 @@ Page transitions confirmed via `f.e.c.a.c.a(b, b)` — takes two page container 
 #### KSM (com.ksm.*)
 **0 classes loaded** at runtime in current UI state. Not active.
 
-### Native Library Module Enumeration (still blocked)
-- `libkcmutil.so` (76KB) and `libandenginephysicsbox2dextension.so` (214KB) confirmed loaded via `/proc/pid/maps`
-- Frida's `Process.enumerateModules()` does NOT include them (linker namespace isolation)
-- Workaround: parse `/proc/pid/maps` from script, pass base to `Memory.scan()` or `Interceptor.attach()` at raw offset
+### VPage Transition Parameters (Captured)
+Default page transition parameters (from `f.e.c.a.d.a(float,float,float,int)`):
+- `TRANSITION_PARAMS: x=275 y=75 dur=17.5ms easing=-16731076`
+- `x` and `y` are animation start/end positions in 3D workspace units
+- `dur` is duration in milliseconds (17.5ms seems very fast — possibly a framerate-derived value or percentage)
+- `easing` is encoded as a 32-bit int: `-16731076` (0xFF00CCFC unsigned = 4279238908)
+- The easing value is NOT a standard Android resource ID; likely a bitmask encoding (easing curve type + direction + flags)
+
+Page position/scale sequence during default transition:
+1. `PAGE_POS:128` — both pages at position 128 (offscreen right)
+2. `PAGE_SCALE:-127.5` — target page scaled to -127.5 (negative = flipped/mirrored offscreen)
+3. `PAGE_POS:75.0` — target page slides to position 75 (visible)
+4. `TRANSITION` fires after position changes complete (lazy POST animation event)
+5. `ANIM_B:45` — animation counter/step
+
+Page container identity (hashcodes):
+- `141078287` and `243485596` — the two page container objects
+- Pages cycle: FROM→TO identities swap per swipe direction
+
+Script: `scripts/frida_vpage_transitions.js` — hooks `c.a(Page,Page)`, `d.a(x,y,dur,easing)`, page pos/scale, Number3d.setAll, wallpaper.
+
+**To capture different transition types**: Run script, manually open Settings → Effect via emulator GUI, switch transition type, then swipe pages. Compare `easing` parameter value across types.
+
+### Native Library Analysis (Direct ELF parsing)
+
+#### libkcmutil.so (79KB) — Kinfoc Analytics JNI
+- ARM 32-bit, stripped, dynamically linked
+- Built with NDK using gabi++/stlport (C++ exceptions support)
+- No exported `Java_*` symbols — JNI registered **dynamically** via `JNI_OnLoad` + `RegisterNatives`
+- **Java class**: `com.cm.kinfoc.a` (confirmed via string `com/cm/kinfoc/a` in binary)
+- **Key**: `tsflauncher_public` (encryption key for kinfoc data)
+- **Storage path**: `/mnt/sdcard/kinfoc/` (writes encrypted analytics data to SD card)
+
+**Detected methods** (from JNI descriptor strings):
+- `([B)Ljava/lang/String;` — `native String decrypt(byte[])`
+- `(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)[B` — `native byte[] report(String, String, String, int, String)` → matches `com.cm.kinfoc.a.a`
+- `(Ljava/lang/String;ILjava/lang/String;)[B` — `native byte[] encrypt(String, int, String)`
+- `(Ljava/lang/String;)[B` — `native byte[] process(String)`
+
+The `libkcmutil.so` is the JNI backing for the Kinfoc tracking/analytics library. All native methods are registered at `JNI_OnLoad`, which is why Frida's `Module.findExportByName()` doesn't see them — they're not named exports but function pointers passed to `RegisterNatives`.
+
+**Implication for Frida hooking**: To hook these native methods, use `Module.findBaseAddress("libkcmutil.so")` + pattern scan for `JNI_OnLoad`, or hook `Java_com_cm_kinfoc_a_a` by intercepting `RegisterNatives` in `JNI_OnLoad`.
+
+#### libandenginephysicsbox2dextension.so (214KB) — Box2D Physics
+- Standard libgdx Box2D wrapper for AndEngine
+- Full `com.badlogic.gdx.physics.box2d.*` JNI bindings (Body, World, Fixture, Joint, Shape, etc.)
+- ~150 exported `Java_*` functions wrapping native Box2D C++ API
+- Not TSF-specific — standard 3rd-party physics engine binding
+
+### GLSL Shader Extraction (Complete)
+All 7 Shader* classes extracted from both v1.9.9.7.6 and v3.9.4:
+
+| Shader | v1 vs v3 | Notes |
+|--------|----------|-------|
+| ShaderAlpha | **Identical** | Alpha-blended texture |
+| ShaderColor | **DIFFERENT** | v1: `gl_FragColor = vColor;` v3: `gl_FragColor = vColor*texture2D(sTexture, vTextureCoord).rgba;` |
+| ShaderColorMatrixTexture | **Identical** | Color + texture with matrix transform |
+| ShaderColorTexture | **Identical** | Color + texture |
+| ShaderFillColorTexture | **Identical** | Fill color + texture |
+| ShaderStandard | **Identical** | Standard textured |
+| ShaderTextureMatrix | **Identical** | Texture with ST matrix |
+
+**Key difference**: ShaderColor fragment was upgraded in v3 to multiply color by texture (was solid color in v1). All other shaders unchanged.
+
+**Storing pattern**: 6/7 shaders use instance fields in `<init>` (constructor) in v3; ShaderTextureMatrix uses static fields in `<clinit>` (unique).
+
+### TSF Shell Data Model (Database Schema)
+Pulled from emulator: `TSFLauncher-database.db` with 8 tables.
+
+**favorites table** (home screen items):
+- `container`: `-1`=workspace, `-2`=quicklaunch, `-3`=dock, `-4`=sliding dock
+- `itemType`: `2`=app shortcut, `5`=widget, `7`=custom TSF action
+- `scale/rotation`: stored as `"x,y"` strings (e.g. `"1.0,1.0"`, `"0.8,0.8"`)
+- `config`: JSON for widgets (cloud floating params)
+
+**Action IDs** (via intent `i.action=`):
+- `100`=app drawer toggle, `200`=Themes, `300`=Effect, `400`=Gestures, `800`=Dock
+- `6`=All Apps, `8`=Lasso mode, `19`/`20`=Themes/Panda Keyboard
+
+See `docs/runtime_analysis/tsf_database_schema.txt` for full schema.
+
+### Shader Extraction Files
+- v1 shaders (14 files): `docs/runtime_analysis/shaders/`
+- v3 shaders (14 files): `docs/runtime_analysis/shaders_v3/`
+- v3 extraction script: `extract_shaders_v3_final.py` (fixed to handle `<clinit>`+`<init>`, IndexError)
+
+### TSF Shell Java Layer Deobfuscation
+- Map: `docs/runtime_analysis/tsf_shell_deobfuscation_map.txt` (5964 lines)
+- Packages: `com.tsf.shell.*` (main), `com.tsf.a`/`b` (obfuscated top-level), `com.tsf.extend.*` (theme providers)
+- v3 obfuscated sub-packages: `a`, `b`, `d`, `e`, `f` (with `f.a`-`f.e` sub-packages), `activity`, `manager`, `services`, `theme`, `widget`
+- 55 unchanged C3DEngine API classes, 19 unchanged TSF Shell classes

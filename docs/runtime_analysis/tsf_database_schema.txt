@@ -1,0 +1,101 @@
+=== TSF Shell 3.9.4 Database Schema & Constants ===
+Source: TSFLauncher-database.db (pulled from emulator)
+
+Tables: favorites, application, dock, slidingdock, menu, action, quicklaunch, android_metadata
+
+--- favorites ---
+Stores all home screen items (shortcuts, widgets, custom actions).
+
+Schema:
+  _id             INTEGER PRIMARY KEY
+  title           TEXT
+  intent          TEXT            (Android intent URI)
+  container       INTEGER         (see container constants below)
+  screen          INTEGER         (screen/page index)
+  cellX           TEXT            "x,y" position on grid
+  cellY           TEXT            (unused? same as cellX format)
+  rotation        TEXT            "rx,ry" rotation
+  spanX           TEXT            (unused in this DB, NULL)
+  spanY           TEXT            (unused in this DB, NULL)
+  scale           TEXT            "sx,sy" scale (e.g. "1.0,1.0", "0.8,0.8")
+  itemType        INTEGER         (see itemType constants below)
+  appWidgetId     INTEGER         (-1 for non-appwidget)
+  iconType        INTEGER         (0=none, 1=resource)
+  iconPackage     TEXT
+  iconResource    TEXT            (resource ID as string)
+  icon            BLOB
+  titleType       INTEGER
+  config          TEXT            JSON config string (for widgets)
+  packagename     TEXT
+  classname       TEXT
+  internal        INTEGER
+  appWidgetProvider TEXT
+
+--- Container Constants ---
+  -1  = Workspace / Home screen
+  -2  = Quick launch bar
+  -3  = Static dock (bottom dock)
+  -4  = Sliding dock (expandable dock)
+
+--- itemType Constants ---
+  2  = Application shortcut (launchable app)
+  5  = Widget (cloud floating, alarm, etc.)
+  7  = Custom action / TSF internal (opens settings panels)
+
+--- Action IDs (via intent extra i.action=) ---
+    6 = All Apps
+    8 = Lasso mode
+  100 = Switch app drawer/home desktop
+  101 = Home Desktop
+  200 = Themes panel
+  300 = Effect settings
+  400 = Gestures settings
+  800 = Dock settings
+   19 = Themes (alternate icon)
+   20 = Panda Keyboard
+11000 = Quick launch slot (left)
+12000 = Quick launch slot (middle)
+14000 = Quick launch slot (right)
+
+--- Widget Config JSON (config column) ---
+Floating cloud widget example:
+  {
+    "totalFrame": 0,
+    "packageName": "com.tsf.shell",
+    "currentSpeed": 0.9,
+    "unitHeight": 0,
+    "drawable": "cloud2",
+    "overturn": false,
+    "unitCount": 0,
+    "maxSpeed": 3,
+    "horizontal": true,
+    "wave": 0,
+    "unitWidth": 0,
+    "miniSpeed": 0.1,
+    "positionIncrease": true,
+    "isSequence": false
+  }
+
+Note: floating widget drawables include "cloud2", "cloud4" etc.
+
+--- Dock / Sliding Dock (dock IDs mapped to favorites._id) ---
+  dock:          [1,2,3,4,5]  (static dock items)
+  slidingdock:   [6,7,8,9,10,11]  (sliding dock items)
+  quicklaunch:   [12,13,14]  (quick launch bar items)
+
+--- application ---
+App drawer items (only 1 entry in this DB, likely populated on-demand).
+
+--- action ---
+Custom action mappings:
+  101 -> "Home Desktop" -> tsf://2
+  100 -> "Switch app drawer/home desktop" -> tsf://3
+    8 -> "Lasso mode" -> tsf://11
+    6 -> "All Apps" -> tsf://500
+
+=== Notes ===
+- The favorites table does NOT store theme references directly.
+- Theme information may come from the APK's assets or specific theme APK.
+- The workspace3D container and 3D widget configuration is stored per-item
+  (scale, rotation, position in cellX/cellY).
+- Wallpaper.db is a separate database for wallpaper settings.
