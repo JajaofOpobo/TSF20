@@ -3,14 +3,16 @@ from androguard.misc import AnalyzeAPK
 APK_PATH = "/home/jaja/Documents/TSF20/sources/resources/com.tsf.shell-3.9.4-free-www.apksum.com.apk"
 
 a, d, dx = AnalyzeAPK(APK_PATH)
+dex = d[0]
 
 
-def print_method_info(method):
+def print_method_bytecode(method):
     print(f"  Method: {method.get_name()}")
     print(f"  Descriptor: {method.get_descriptor()}")
-    access_flags = method.get_access_flags()
-    is_native = bool(access_flags & 0x0100)
-    print(f"  Access flags: 0x{access_flags:04x} {'(NATIVE)' if is_native else ''}")
+    access = method.get_access_flags()
+    is_native = bool(access & 0x0100)
+    is_abstract = bool(access & 0x0400)
+    print(f"  Access flags: 0x{access:04x} {'(NATIVE)' if is_native else ''}{'(ABSTRACT)' if is_abstract else ''}")
     try:
         code = method.get_code()
         bc = code.get_bc()
@@ -26,33 +28,43 @@ def print_method_info(method):
         print(f"  Instruction count: {len(instrs)}")
         for line in instrs:
             print(line)
-    except AttributeError as e:
-        print(f"  No bytecode (likely native/abstract): {e}")
+    except Exception as e:
+        print(f"  No bytecode: {e}")
     print()
 
 
-def process_class(class_name):
-    print(f"{'='*60}")
-    print(f"CLASS: {class_name}")
-    print(f"{'='*60}")
+def process_class(class_name, label=None):
+    if label is None:
+        label = class_name
     try:
-        clazz = dx.get_class(class_name)
+        clazz = dex.get_class(class_name)
     except Exception as e:
-        print(f"  ERROR: Could not find class - {e}\n")
+        print(f"{'='*60}")
+        print(f"CLASS: {label} -- NOT FOUND: {e}")
+        print(f"{'='*60}\n")
         return
+
     methods = clazz.get_methods()
-    print(f"  Total methods found: {len(methods)}\n")
-    for method in methods:
-        print_method_info(method)
+    print(f"{'='*60}")
+    print(f"CLASS: {label}")
+    print(f"Total methods: {len(methods)}")
+    print(f"{'='*60}\n")
+
+    for m in methods:
+        print_method_bytecode(m)
 
 
-CLASSES = [
-    "Lcom/tsf/shell/f/f/n$c;",
-    "Lcom/tsf/shell/f/f/n$c$7;",
-    "Lcom/tsf/shell/f/f/n$c$6;",
-    "Lcom/tsf/shell/f/f/n$c$3;",
-    "Lcom/tsf/shell/f/f/n$c$2;",
-]
+# 1. n$c -- all methods, but highlight d()V
+process_class("Lcom/tsf/shell/f/f/n$c;", "com.tsf.shell.f.f.n$c")
 
-for cls in CLASSES:
-    process_class(cls)
+# 2. n$c$7
+process_class("Lcom/tsf/shell/f/f/n$c$7;", "com.tsf.shell.f.f.n$c$7")
+
+# 3. n$c$6
+process_class("Lcom/tsf/shell/f/f/n$c$6;", "com.tsf.shell.f.f.n$c$6")
+
+# 4. n$c$3
+process_class("Lcom/tsf/shell/f/f/n$c$3;", "com.tsf.shell.f.f.n$c$3")
+
+# 5. n$c$2
+process_class("Lcom/tsf/shell/f/f/n$c$2;", "com.tsf.shell.f.f.n$c$2")
