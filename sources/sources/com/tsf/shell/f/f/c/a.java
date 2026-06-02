@@ -9,7 +9,8 @@ import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 
 import com.tsf.shell.f.f.g;
-import com.tsf.shell.manager.n.a;
+import com.tsf.shell.f.f.a.C0133a;
+
 import com.tsf.shell.utils.r;
 import com.tsf.shell.utils.x;
 
@@ -23,7 +24,7 @@ public class a implements b.a, e.a {
     private int i;
     private int j;
     private g l;
-    private a.C0133a m;
+    private C0133a m;
     private boolean e = false;
     private boolean f = false;
     private float[] k = {0.0f, 0.0f};

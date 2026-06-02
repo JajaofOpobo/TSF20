@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.n;
 import com.tsf.shell.f.f.a._a.B;
 import com.tsf.shell.f.i._b.e.g;
-import com.tsf.shell.manager.a.c;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -19,7 +19,7 @@ public class c {
     public static int c = 1;
     private com.censivn.C3DEngine.b.b.d d;
     private j e;
-    private com.censivn.C3DEngine.b.c f;
+    private com.censivn.C3DEngine.b.f.l f;
     private com.tsf.shell.f.b.a g;
     private com.tsf.shell.f.e.D<com.tsf.shell.f.f.a._a.a.b> h;
     private ArrayList<com.tsf.shell.f.f.a._a.a.c> i;
@@ -34,7 +34,7 @@ public class c {
     private boolean o = false;
     private boolean s = false;
 
-    class a implements c.a {
+    class a implements com.tsf.shell.manager.a.c.a {
         a() {
         }
 
@@ -125,8 +125,8 @@ public class c {
                 return hittingTarget;
             }
         };
-        this.f = new com.censivn.C3DEngine.b.c() { // from class: com.tsf.shell.f.f.a._a.c.4
-            @Override // com.censivn.C3DEngine.b.c
+        this.f = new com.censivn.C3DEngine.b.f.l() { // from class: com.tsf.shell.f.f.a._a.c.4
+            @Override // com.censivn.C3DEngine.b.f.l
             public void d() {
                 super.d();
                 if (c.this.d != null) {

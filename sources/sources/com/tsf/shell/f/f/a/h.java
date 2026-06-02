@@ -35,7 +35,7 @@ import com.tsf.shell.f.f.a.C0133a;
 import com.tsf.shell.f.f.a.InterfaceC0101a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends com.tsf.shell.f.f.g implements b.a, A.InterfaceC0101a, c.a, d.a {
+public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a, d.a {
     public static int A;
     public static int B;
     public static int C;

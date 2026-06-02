@@ -73,7 +73,7 @@ public class ThemeIconDescription {
         this.mContext = null;
     }
 
-    public Bitmap getBackBitmap(a aVar) {
+    public Bitmap getBackBitmap(A aVar) {
         if (this.iconBackItems.size() <= 0) {
             return null;
         }
@@ -87,7 +87,7 @@ public class ThemeIconDescription {
         return bitmap;
     }
 
-    public Bitmap getUponBitmap(a aVar) {
+    public Bitmap getUponBitmap(A aVar) {
         if (this.iconUponItems.size() <= 0) {
             return null;
         }
@@ -99,7 +99,7 @@ public class ThemeIconDescription {
         return bitmap;
     }
 
-    public Bitmap getMaskBitmap(a aVar) {
+    public Bitmap getMaskBitmap(A aVar) {
         if (this.iconMaskItems.size() <= 0) {
             return null;
         }
@@ -142,7 +142,7 @@ public class ThemeIconDescription {
         this.iconFilter.put(str, str2);
     }
 
-    public Bitmap getIconFilterBitmap(String str, a aVar) {
+    public Bitmap getIconFilterBitmap(String str, A aVar) {
         String str2 = this.iconFilter.get(str);
         if (str2 == null) {
             return null;
@@ -158,7 +158,7 @@ public class ThemeIconDescription {
         return this.mContext.getResources().getIdentifier(str, "drawable", this.mContext.getPackageName()) != 0;
     }
 
-    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
+    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, A aVar) {
         return getBitmap(aVar, this.mContext, defaultIconItem.drawable);
     }
 

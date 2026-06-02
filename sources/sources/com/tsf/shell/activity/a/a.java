@@ -1,11 +1,10 @@
 package com.tsf.shell.activity.a;
 
 import android.content.Intent;
-import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements a.InterfaceC0025a {
+public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private int a;
 
     @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
@@ -21,6 +20,6 @@ public class a implements a.InterfaceC0025a {
     }
 
     public void a(Intent intent) {
-        this.a = Home.b().a(intent, (a.InterfaceC0025a) this);
+        this.a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 }

@@ -7,7 +7,6 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.e.k;
-import com.tsf.shell.f.f.a.c.k;
 import com.tsf.shell.f.f.a.f;
 import com.tsf.shell.manager.o.c;
 import com.tsf.shell.manager.p.e;
@@ -23,13 +22,13 @@ public class b extends j {
     private int g;
     private float h;
     private float i;
-    private k.a j;
+    private com.tsf.shell.f.f.a.c.k.a j;
     private e.a m;
     private TextureElement c = new TextureElement(0, false);
     private boolean l = false;
     private com.censivn.C3DEngine.b.f.k e = new com.censivn.C3DEngine.b.f.k(a, a, false);
 
-    public b(k.a aVar) {
+    public b(com.tsf.shell.f.f.a.c.k.a aVar) {
         this.j = aVar;
         this.e.textures().addElement(b);
         addChild(this.e);

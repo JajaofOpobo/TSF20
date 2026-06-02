@@ -17,7 +17,7 @@ public class a {
     private float e;
     private float f;
     private boolean g;
-    private d.A h;
+    private d.a h;
     private AsyncTask i;
 
     public void a() {
@@ -30,7 +30,7 @@ public class a {
         }
     }
 
-    public a(k.A aVar) {
+    public a(k.a aVar) {
         super(aVar);
         this.d = false;
         this.e = 360.0f;
@@ -139,7 +139,7 @@ public class a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final d.A aVar) {
+    public void a(final d.a aVar) {
         this.b.a(0.0f, 250, new Runnable() { // from class: com.tsf.shell.f.f.a.c.a.a.4
             @Override // java.lang.Runnable
             public void run() {

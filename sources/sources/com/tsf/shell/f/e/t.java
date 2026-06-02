@@ -100,7 +100,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         }
     }
 
-    public c c() {
+    public C c() {
         return b;
     }
 

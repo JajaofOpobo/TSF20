@@ -9,7 +9,7 @@ import com.tsf.shell.f.f.j;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends i implements a.InterfaceC0090a {
+public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
     private com.tsf.shell.f._d.e.A b;
 
     public d(int i, boolean z) {

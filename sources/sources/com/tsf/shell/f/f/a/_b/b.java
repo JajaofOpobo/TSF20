@@ -1,14 +1,13 @@
 package com.tsf.shell.f.f.a._b;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.tsf.b;
 import com.tsf.shell.f.f.a._b.m;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends m {
     public b(int i, boolean z) {
-        super(i, b.d.drawer_transition_effect_cylinder, z);
+        super(i, com.tsf.b.d.drawer_transition_effect_cylinder, z);
     }
 
     @Override // com.tsf.shell.f.f.a._b.m

@@ -1,13 +1,12 @@
 package com.tsf.shell.f.f.b;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.tsf.b;
 import com.tsf.shell.f.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends com.tsf.shell.f.f.i {
     public b(int i, boolean z) {
-        super(i, b.d.desktop_transition_crossfade, z);
+        super(i, com.tsf.b.d.desktop_transition_crossfade, z);
     }
 
     @Override // com.tsf.shell.f.f.l

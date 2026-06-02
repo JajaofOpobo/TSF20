@@ -10,14 +10,14 @@ public class DefaultIconItem {
     public ThemeIconDescription description;
     public String drawable;
     public float scale = 1.0f;
-    private a style;
+    private A style;
 
     public DefaultIconItem(ThemeIconDescription themeIconDescription, String str) {
         this.description = themeIconDescription;
         this.drawable = str;
     }
 
-    public Bitmap getBitmap(a aVar) {
+    public Bitmap getBitmap(A aVar) {
         if (this.description == null) {
             return null;
         }

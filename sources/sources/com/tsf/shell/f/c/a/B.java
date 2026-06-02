@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class B extends c implements a.InterfaceC0113a {
+public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private float A;
     private Runnable B;
     private com.tsf.shell.f.i.b.d.b H;

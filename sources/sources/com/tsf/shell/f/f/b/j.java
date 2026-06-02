@@ -1,7 +1,6 @@
 package com.tsf.shell.f.f.b;
 
 import com.tsf.b;
-import com.tsf.shell.f.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends com.tsf.shell.f.f.i {
@@ -11,7 +10,7 @@ public class j extends com.tsf.shell.f.f.i {
 
     @Override // com.tsf.shell.f.f.l
     public void b(com.tsf.shell.f.f.g gVar, float f) {
-        j.a aVarJ = gVar.j();
+        com.tsf.shell.f.f.j.a aVarJ = gVar.j();
         this.a.rotation().x = 90.0f * f;
         this.a.alpha((1.0f - Math.abs(f)) * 255.0f);
         this.a.textures().clear();

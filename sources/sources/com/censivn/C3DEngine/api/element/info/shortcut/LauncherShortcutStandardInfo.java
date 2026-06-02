@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.b;
 import com.tsf.shell.f.i.b.e.b;
 import com.tsf.shell.manager.o.A;
 import com.tsf.shell.utils.q;
@@ -17,7 +16,7 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
     public static class ResourceControler {
         boolean isCustomResource = false;
 
-        public Bitmap getThemeBitmap(a aVar) {
+        public Bitmap getThemeBitmap(A aVar) {
             return null;
         }
 
@@ -56,24 +55,24 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
         return createTextureBitmap(null, ((b) getWidget()).aE());
     }
 
-    public TextureElement getTexture(a aVar) {
+    public TextureElement getTexture(A aVar) {
         return getTexture(null, aVar);
     }
 
-    public TextureElement getTexture(ResourceControler resourceControler, a aVar) {
+    public TextureElement getTexture(ResourceControler resourceControler, A aVar) {
         com.censivn.C3DEngine.a.g().a(this.texture, createTextureBitmap(resourceControler, aVar));
         return this.texture;
     }
 
-    private Bitmap createTextureBitmap(ResourceControler resourceControler, a aVar) {
+    private Bitmap createTextureBitmap(ResourceControler resourceControler, A aVar) {
         return createTextureBitmap(resourceControler, this.title, getIcon(true, aVar.H, aVar.I), aVar, aVar.H, aVar.I, this.notifPointState);
     }
 
-    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, a aVar, boolean z) {
+    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, A aVar, boolean z) {
         return createTextureBitmap(null, str, bitmap, aVar, aVar.H, aVar.I, z);
     }
 
-    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, a aVar, int i, int i2, boolean z) {
+    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, A aVar, int i, int i2, boolean z) {
         Bitmap bitmapA = aVar.a();
         if (str == null) {
             str = "";
@@ -84,7 +83,7 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
         if (bitmap == null) {
             Bitmap themeBitmap = resourceControler != null ? resourceControler.getThemeBitmap(aVar) : null;
             if (themeBitmap == null) {
-                themeBitmap = x.a(b.d.sym_def_app_icon);
+                themeBitmap = x.a(com.tsf.b.d.sym_def_app_icon);
                 if (resourceControler != null) {
                     resourceControler.onLoadCustomResource();
                 }

@@ -51,7 +51,7 @@ public class D {
         }
     }
 
-    public static d a() {
+    public static D a() {
         if (a == null) {
             a = new D();
         }

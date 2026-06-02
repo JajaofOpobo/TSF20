@@ -2,7 +2,7 @@ package com.tsf.shell.f.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public interface F {
-    f a(int i, int i2);
+    F a(int i, int i2);
 
     void a(F fVar);
 
@@ -26,7 +26,7 @@ public interface F {
 
     int m();
 
-    f n();
+    F n();
 
     boolean o();
 

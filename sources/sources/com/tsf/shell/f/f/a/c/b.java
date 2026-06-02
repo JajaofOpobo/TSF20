@@ -3,7 +3,6 @@ package com.tsf.shell.f.f.a.c;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.b;
 import com.tsf.shell.f.f.a.c.c;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ public class b extends c.a {
         float f = 0.8f * (com.tsf.shell.manager.o.b.c.U / com.tsf.shell.manager.o.b.a.U);
         this.k = com.tsf.shell.manager.o.b.a.U * f;
         this.j = new com.censivn.C3DEngine.b.f.m();
-        this.j.c(b.i.notic_batch_operation);
+        this.j.c(com.tsf.b.i.notic_batch_operation);
         this.j.d(39);
         this.j.e(-1);
         com.tsf.shell.manager.o.c.a(this.j, com.tsf.shell.manager.o.c.h);
@@ -97,7 +96,7 @@ public class b extends c.a {
             }
         };
         this.d = new ArrayList<>();
-        e eVar = new e(b.d.drawer_layout_folder, i, x.c(b.i.pop_menu_create_folder)) { // from class: com.tsf.shell.f.f.a.c.b.3
+        e eVar = new e(com.tsf.b.d.drawer_layout_folder, i, x.c(com.tsf.b.i.pop_menu_create_folder)) { // from class: com.tsf.shell.f.f.a.c.b.3
             @Override // com.tsf.shell.f.f.a.c.e
             public void a() {
                 ArrayList<com.tsf.shell.f.i.b.e.b> arrayList = new ArrayList<>();
@@ -130,7 +129,7 @@ public class b extends c.a {
         };
         this.f = eVar;
         this.d.add(eVar);
-        e eVar2 = new e(b.d.drawer_layout_reset, i, x.c(b.i.text_reset)) { // from class: com.tsf.shell.f.f.a.c.b.4
+        e eVar2 = new e(com.tsf.b.d.drawer_layout_reset, i, x.c(com.tsf.b.i.text_reset)) { // from class: com.tsf.shell.f.f.a.c.b.4
             @Override // com.tsf.shell.f.f.a.c.e
             public void a() {
                 b.this.i();

@@ -19,7 +19,7 @@ public class A {
     private static int h;
     private static int i;
     private static com.tsf.shell.f.i.B j;
-    private static b.a k;
+    private static com.censivn.C3DEngine.b.c.b.a k;
     private static q l;
     private static g m;
     private static com.tsf.shell.f.i.B n;
@@ -165,7 +165,7 @@ public class A {
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.e.A$a, reason: collision with other inner class name */
-    static class C0091a implements b.a {
+    static class C0091a implements com.censivn.C3DEngine.b.c.b.a {
         C0091a() {
         }
     }

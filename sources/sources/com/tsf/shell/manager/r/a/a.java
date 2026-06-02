@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
-import com.censivn.C3DEngine.b.c.a;
+
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellProvider;
 import com.tsf.shell.e.c;
@@ -86,7 +86,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                         Intent intent = new Intent("android.appwidget.action.APPWIDGET_BIND");
                         intent.putExtra("appWidgetId", iAllocateAppWidgetId);
                         intent.putExtra("appWidgetProvider", launcherAppWidgetInfo.providerName);
-                        this.c = Home.b().a(intent, (a.InterfaceC0025a) this);
+                        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
                     } else {
                         a(iAllocateAppWidgetId, 0, 0);
                     }
@@ -115,7 +115,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                         intent.putExtra("appWidgetProvider", fVar.c());
                         a.this.h = i;
                         a.this.i = i2;
-                        a.this.d = Home.b().a(intent, (a.InterfaceC0025a) a.this);
+                        a.this.d = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) a.this);
                         return;
                     }
                 } catch (Exception e) {
@@ -129,7 +129,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         int iAllocateAppWidgetId = this.e.allocateAppWidgetId();
         Intent intent = new Intent("android.appwidget.action.APPWIDGET_PICK");
         intent.putExtra("appWidgetId", iAllocateAppWidgetId);
-        this.c = Home.b().a(intent, (a.InterfaceC0025a) this);
+        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
     private void a(Intent intent) {
@@ -144,7 +144,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
             Intent intent = new Intent("android.appwidget.action.APPWIDGET_CONFIGURE");
             intent.setComponent(appWidgetInfo.configure);
             intent.putExtra("appWidgetId", i);
-            this.b = Home.b().a(intent, (a.InterfaceC0025a) this);
+            this.b = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
             return;
         }
         b(i, i2, i3);

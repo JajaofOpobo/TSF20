@@ -15,7 +15,6 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
@@ -23,12 +22,6 @@ import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
 import com.tsf.shell.f._d.c.a.d;
-import com.tsf.shell.f.e.f.b;
-import com.tsf.shell.f.e.h.b;
-import com.tsf.shell.f.f.j;
-import com.tsf.shell.f.i.b.e.f;
-import com.tsf.shell.f.i.b.e.g;
-import com.tsf.shell.manager.f.b;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.w;
@@ -37,7 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements b.a, e.a, b.a, b.a {
+public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.h.b.a, com.tsf.shell.f.e.f.b.a {
     private static HashMap<Integer, C0094a> a;
     private static ArrayList<Integer> p = new ArrayList<>();
     private ArrayList<c> b;
@@ -52,7 +45,7 @@ public class a implements b.a, e.a, b.a, b.a {
     private boolean i = false;
     private float[] l = new float[2];
     private boolean r = false;
-    private b.a k = new b.a();
+    private com.tsf.shell.manager.f.b.a k = new com.tsf.shell.manager.f.b.a();
     private ArrayList<c> c = new ArrayList<>();
     private j e = new j();
     private j d = new j() { // from class: com.tsf.shell.f.e.f.a.1

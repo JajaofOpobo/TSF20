@@ -6,7 +6,6 @@ import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.f.c.b.a.a;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e implements e.a {
+public class e implements com.censivn.C3DEngine.b.c.e.a {
     public static int a = 1;
     private j d;
     private com.tsf.shell.f.e.j e;

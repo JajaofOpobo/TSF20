@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.c.a;
-import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.plugin.themepicker.AppIconEditorActivity;
@@ -26,7 +25,7 @@ public class b implements a.InterfaceC0025a {
     }
 
     public b() {
-        String[] strArr = {com.censivn.C3DEngine.a.d().getString(b.i.icon_picker_main_item_0), com.censivn.C3DEngine.a.d().getString(b.i.icon_picker_main_item_1), com.censivn.C3DEngine.a.d().getString(b.i.icon_picker_main_item_2), com.censivn.C3DEngine.a.d().getString(b.i.icon_picker_main_item_3)};
+        String[] strArr = {com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_0), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_1), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_2), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_3)};
     }
 
     public static void a(final a aVar, final com.tsf.shell.f.i.b.e.b bVar, final int i, final int i2) {

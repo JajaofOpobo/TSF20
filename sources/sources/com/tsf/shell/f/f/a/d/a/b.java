@@ -2,7 +2,6 @@ package com.tsf.shell.f.f.a.d.a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.b;
 import com.tsf.shell.f.i.b.e.g;
 import java.text.Collator;
 import java.util.Comparator;
@@ -13,7 +12,7 @@ public class b extends c {
     private Collator e;
 
     public b(int i) {
-        super(b.d.drawer_sort_name, b.i.text_sort_alphabetical);
+        super(com.tsf.b.d.drawer_sort_name, com.tsf.b.i.text_sort_alphabetical);
         this.a = i;
         this.e = Collator.getInstance(Locale.getDefault());
         this.b = new Comparator<com.tsf.shell.f.i.B>() { // from class: com.tsf.shell.f.f.a.d.a.b.1

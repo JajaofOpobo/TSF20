@@ -4,8 +4,6 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.b;
-import com.tsf.shell.f.e._e.c;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -77,7 +75,7 @@ public class c extends i {
     }
 
     public c(final com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
-        super(hVar, fVar, b.d.drawer_multiple_choice, x.c(b.i.text_multi_choice));
+        super(hVar, fVar, com.tsf.b.d.drawer_multiple_choice, x.c(com.tsf.b.i.text_multi_choice));
         this.m = new com.tsf.shell.f.i.B(null);
         this.n = new com.tsf.shell.f.i.B(null);
         this.o = false;

@@ -11,7 +11,6 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import com.tsf.b;
 import com.tsf.shell.activity.actionselector.ActionSelector;
-import com.tsf.shell.manager.action.b;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -77,7 +76,7 @@ public class d {
 
     public ArrayList<HashMap<String, Object>> b(Context context) {
         if (this.c.size() == 0) {
-            for (b.a aVar : b.a(true)) {
+            for (com.tsf.shell.manager.action.b.a aVar : com.tsf.shell.manager.action.b.a(true)) {
                 if (aVar.a != 100 && aVar.a != 1400) {
                     HashMap<String, Object> map = new HashMap<>();
                     Drawable drawable = null;
@@ -103,7 +102,7 @@ public class d {
 
     public ArrayList<HashMap<String, Object>> c(Context context) {
         if (this.d.size() == 0) {
-            for (b.a aVar : com.tsf.shell.manager.action.toggle.a.d()) {
+            for (com.tsf.shell.manager.action.b.a aVar : com.tsf.shell.manager.action.toggle.a.d()) {
                 HashMap<String, Object> map = new HashMap<>();
                 Drawable drawable = null;
                 try {
