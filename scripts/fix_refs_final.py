@@ -8,12 +8,13 @@
 # See fix_scripts_CATALOG.md for hierarchy
 ###############################################################################
 Fix references for renamed types, safely handling subpackage/type coexistence."""
-import os, re, subprocess
+import os, re, subprocess, pathlib
 
-SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 result = subprocess.run(['git', 'diff', '--diff-filter=D', '--name-only', 'HEAD'],
-                       capture_output=True, text=True, cwd=SOURCES)
+                       capture_output=True, text=True, cwd=THIS_DIR.parent)
 
 renamed = {}
 for line in result.stdout.strip().split('\n'):

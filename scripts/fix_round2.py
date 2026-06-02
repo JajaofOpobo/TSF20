@@ -13,10 +13,11 @@ Handles:
 2. Remove redundant same-package imports to resolve ambiguity
 3. Fix corrupted package imports
 """
-import os, re, subprocess
+import os, re, pathlib
 
-SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
-BUILD_OUT = 'docs/build-output-r2.txt'
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
+BUILD_OUT = str(THIS_DIR.parent / 'docs' / 'build-output-r2.txt')
 
 # ---------------------------------------------------------------
 # STEP 1: Collect ALL inner type declarations (class/interface/enum)
@@ -64,17 +65,14 @@ print(f"Found {len(inner_renames)} potential inner-type renames")
 # ---------------------------------------------------------------
 # STEP 2: Parse build errors and collect problematic references
 # ---------------------------------------------------------------
-result = subprocess.run(
-    ['grep', 'error:', BUILD_OUT],
-    capture_output=True, text=True
-)
-
 # Collect all error info
 cannot_find_errors = []  # (fpath, lineno, relpath)
 ambiguous_errors = []    # (fpath, lineno, symbol, relpath)
 pkg_errors = []          # (fpath, lineno, pkg_name, relpath)
 
-for line in result.stdout.strip().split('\n'):
+for line in open(BUILD_OUT):
+    if 'error:' not in line:
+        continue
     if '/sources/sources/' not in line:
         continue
     parts = line.split('/sources/sources/')[1].split(':')

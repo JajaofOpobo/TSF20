@@ -7,13 +7,14 @@
 # See fix_scripts_CATALOG.md for hierarchy
 ###############################################################################
 """
-import os, re, subprocess
+import os, re, subprocess, pathlib
 
-SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 # Get renamed files from git diff
 result = subprocess.run(['git', 'diff', '--diff-filter=D', '--name-only', 'HEAD'], 
-                       capture_output=True, text=True, cwd=SOURCES)
+                       capture_output=True, text=True, cwd=THIS_DIR.parent)
 
 # Map of package -> {old_lower -> new_upper}
 renamed = {}

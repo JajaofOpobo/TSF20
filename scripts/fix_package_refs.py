@@ -11,8 +11,10 @@ Update all references to renamed packages across the codebase.
 """
 import os
 import re
+import pathlib
 
-SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 # Package renames: old -> new
 # Only include renames where the directory was actually renamed by fix_clashes.py.

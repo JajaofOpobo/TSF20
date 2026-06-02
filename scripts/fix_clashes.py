@@ -12,21 +12,26 @@ and updating all package declarations within them.
 """
 import os
 import re
+import pathlib
 
-SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
+
+def sp(*parts):
+    return os.path.join(SOURCES, *parts)
 
 # Clashes found: (parent_dir, clashing_name)
 CLASHES = [
-    (f"{SOURCES}/com/tsf/shell", "a"),
-    (f"{SOURCES}/com/tsf/shell/f", "d"),
-    (f"{SOURCES}/com/tsf/shell/f/f/a/_d", "a"),
-    (f"{SOURCES}/com/tsf/shell/f/e", "g"),
-    (f"{SOURCES}/com/tsf/shell/f/e", "G"),
+    (sp("com/tsf/shell"), "a"),
+    (sp("com/tsf/shell/f"), "d"),
+    (sp("com/tsf/shell/f/f/a/_d"), "a"),
+    (sp("com/tsf/shell/f/e"), "g"),
+    (sp("com/tsf/shell/f/e"), "G"),
 ]
 
 # Also check if f/f/a has a clash
-if os.path.isdir(f"{SOURCES}/com/tsf/shell/f/f/a/a") and os.path.isfile(f"{SOURCES}/com/tsf/shell/f/f/a/a.java"):
-    CLASHES.append((f"{SOURCES}/com/tsf/shell/f/f/a", "a"))
+if os.path.isdir(sp("com/tsf/shell/f/f/a/a")) and os.path.isfile(sp("com/tsf/shell/f/f/a/a.java")):
+    CLASHES.append((sp("com/tsf/shell/f/f/a"), "a"))
 
 for parent, name in CLASHES:
     dir_path = os.path.join(parent, name)

@@ -9,18 +9,17 @@
 # See fix_scripts_CATALOG.md for hierarchy
 ###############################################################################
 Fix constructor names precisely by reading build errors line by line."""
-import os, re, subprocess
+import os, re, pathlib
 
-SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
-
-result = subprocess.run(
-    ['grep', 'invalid method declaration', 'docs/build-output-current.txt'],
-    capture_output=True, text=True
-)
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
+BUILD_OUT = str(THIS_DIR.parent / 'docs' / 'build-output-current.txt')
 
 # Parse all errors: file:line -> {line_number -> wrong_name}
 errors = {}  # fpath -> {line_num: wrong_name}
-for line in result.stdout.strip().split('\n'):
+for line in open(BUILD_OUT):
+    if 'invalid method declaration' not in line:
+        continue
     if '/sources/sources/' not in line:
         continue
     # /path/sources/sources/com/foo.java:123: error: ...

@@ -8,9 +8,10 @@
 # See fix_scripts_CATALOG.md for hierarchy
 ###############################################################################
 """
-import os, re
+import os, re, pathlib
 
-SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 fixed = 0
 for dirpath, _, filenames in os.walk(SOURCES):

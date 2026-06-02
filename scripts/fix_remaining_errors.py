@@ -2,8 +2,10 @@
 """Fix remaining compilation errors after Phase 5 pipeline."""
 import os
 import re
+import pathlib
 
-SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 def read_file(path):
     try:

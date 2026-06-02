@@ -11,8 +11,10 @@ Fix Java filename/classname mismatches from case-insensitive FS migration."""
 import os
 import re
 import shutil
+import pathlib
 
-SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
+THIS_DIR = pathlib.Path(__file__).parent.resolve()
+SOURCES = str(THIS_DIR.parent / 'sources' / 'sources')
 
 def find_class_name(content):
     """Find the public class/interface/enum name declared in a Java file."""
