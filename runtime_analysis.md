@@ -496,3 +496,138 @@ See `docs/runtime_analysis/tsf_database_schema.txt` for full schema.
 - Packages: `com.tsf.shell.*` (main), `com.tsf.a`/`b` (obfuscated top-level), `com.tsf.extend.*` (theme providers)
 - v3 obfuscated sub-packages: `a`, `b`, `d`, `e`, `f` (with `f.a`-`f.e` sub-packages), `activity`, `manager`, `services`, `theme`, `widget`
 - 55 unchanged C3DEngine API classes, 19 unchanged TSF Shell classes
+
+---
+
+## 17. Page Transition Architecture (Complete)
+
+### Overview
+Page transitions bypass Java VObject3d transform API entirely. Instead, a **scroll-offset based model** drives transitions: touch events set a float field `g`, and the per-frame render loop `n$c.c()` reads this offset to position all pages via a transition effect controller.
+
+### Key Classes
+
+| Class | Role |
+|-------|------|
+| `f.f.n$c` | Page carousel controller (89 methods) |
+| `f.f.l` | Transition effect base/interface (18 methods) |
+| `f.f.b.a` | "Cloth" transition (3D mesh page curl) |
+| `f.e.j` | Alpha/fade page effect with grid tiles |
+| `C3DEngine.b.g.c` | Tween scheduler (static) |
+| `C3DEngine.b.g.b.b` | Tween target (implements `b.g.b.a`) |
+| `C3DEngine.b.g.d` | Tween callback interface (`a()` complete, `a(F)` progress) |
+
+### Touch → Page Flip Chain
+
+1. **Touch dispatch**: `C3DEngine.a.d$1.onTouch()` → creates gestures → `$3` mouse listener
+2. **$3 handlers**:
+   - `a(ME, ME)` — drag: rotates carousel `rotation.y`, clamped ±400°
+   - `b(ME, ME, F, F)` — fling end: snaps to nearest 360° alignment
+   - `e(ME)` — touch up: registers tween target, finalizes rotation
+3. **$6 runnable**: Created by fling handler, posted to GL thread via `C3DEngine.b.c.c.b(Runnable)`
+4. **`$6.run()`**: Calls `n$c.d()` → `n$c.a(null)` → resets carousel state
+5. **Render loop `n$c.c()`** (222 instr):
+   - Called every frame by C3DEngine GL thread
+   - Reads scroll offset `g` → calls `c.l.b(F, F)` (transition effect positioning)
+   - Applies damping with `n$c.b` friction constant
+   - Eventually calls `a(Z)V` to finalize
+
+### Tween Engine (`C3DEngine.b.g.*`)
+
+Replaced the v1 `VTween`/`VTweenParam`/`VEasing` API with a simpler system:
+
+| v1 (unobfuscated) | v3 (obfuscated) |
+|---|---|
+| `api.tween.VTween` | `b.g.c` (scheduler only) |
+| `api.tween.VTweenParam` | Eliminated (params → callbacks) |
+| `api.tween.VEasing` | Eliminated (easing → callback impl) |
+| `api.tween.TweenTarget.VTweenTarget` | `b.g.b.a` (interface) |
+| `api.tween.TweenTarget.VValueTweenTarget` | `b.g.b.b` (concrete target) |
+| (nonexistent) | `b.g.d` (callback interface) |
+
+`b.g.c` methods:
+- `a(b.g.b.a)` — register tween target
+- `a(b.g.b.a, int, b.g.d)` — schedule tween (target, duration_ms, callback)
+- `a()` — no-op tick
+- `a(b.g.a.c)` — internal (unused at runtime)
+
+### Animation Callback Classes (`n$c` inner classes)
+
+| Class | Complete `a()` | Progress `a(F)` | Duration | Purpose |
+|-------|-----------|-------------|----------|---------|
+| `$2` | `b(int)` page scroll | Quadratic easing interpolation | Varied | Delayed page switch |
+| `$4` | Sets flags, `o()` | Alpha/scale animation | 500ms | Snap-to-page |
+| `$7` | Re-parents pages, runs callback | `s = progress * factor` | Caller-specified | Page change animation |
+| `$8` | Resets state, removes items | Lerps rotation | max(500, abs(delta)*150) | Snap-back |
+| `$9` | Resets flags, runs Runnable | Lerps rotation | Varied | Generic animation |
+
+### Observed Tween Callbacks & Durations
+
+| Callback Class | Duration | Purpose |
+|---|---|---|
+| `b.g.d` (generic/C3D) | 500ms | Snap-to-page |
+| `b.g.d` (generic/C3D) | 250ms | Snap-back |
+| `f.f.b.a$1` | 400ms | Cloth page enter |
+| `f.f.b.a$2` | 400ms | Cloth page exit |
+| `f.e.j$2` | 300ms | Page effect alpha lerp |
+| `f.e.j$4` | 600ms | Page effect hide |
+| `f.e.j$5` | 600ms | Page effect show |
+| `manager.m.b$7` | 350ms | Drawer/app-manager enter |
+| `manager.m.b$8` | 350ms | Drawer/app-manager exit |
+| `widget.a.a.c$a$a` | 90ms | Widget breathing/pulse |
+| `VTweenParam$1` | 100ms | Dock icon breathing |
+| `VTweenParam$1` | 500ms | Dock icon stretch |
+| `widget.a.b$1` | 1000ms | Widget scroll |
+| `widget.a.a$1-4` | 1000-1500ms | Widget animations |
+
+### Transition Effects
+
+The transition type is NOT a numeric parameter. It's **class-based polymorphism**:
+- `n$c.c` field is type `f.f.l` (base effect)
+- Subclasses implement different effects:
+  - `f.f.b.a` — "Cloth" 3D mesh transition (page curl/fold, uses `$1`/`$2` callbacks)
+  - `f.e.j` — Alpha/fade with grid tile management (uses `$2`/`$4`/`$5` callbacks)
+- `f.f.l.a(F F)V` and `f.f.l.b(F F)V` — called per-frame by `n$c.c()` for page positioning
+- `f.f.l.a(g, b/a)F` — alpha fade based on scroll offset
+- Default constructor: `f.f.l(int screenW, int screenH, boolean flag)`
+
+### Key Fields of `n$c`
+
+| Field | Type | Purpose |
+|-------|------|---------|
+| `c` | `f.f.l` | Current transition effect |
+| `g` | float | Current scroll offset (animation driver) |
+| `q` | float | Target rotation for snap |
+| `s` | float | Animation progress (set by `$7.a(F)`) |
+| `A` | `b/f/j` | Carousel scene node |
+| `B` | `b/f/j` | Background/touch region node |
+| `F` | `b/d/a` | Mouse event listener |
+| `G` | `b.g.b.b` | Tween target |
+| `H` | `b.g.d` | Active tween callback |
+| `a`, `b` | float | Friction/damping constants |
+| `n` | float | Carousel orbit radius |
+| `D` | float | Angular step per page |
+| `E` | `n$c$a` | Comparator (cos-based page ordering) |
+| `L`, `I`, `M` | Various | Active page, target page, pending runnable |
+
+### Tween Deobfuscation Map
+
+```
+v1 (unobfuscated)                   v3 (obfuscated)
+---                                 ---
+api.tween.VTween                    b.g.c
+api.tween.VTweenParam               (eliminated)
+api.tween.VEasing                   (eliminated)  
+api.tween.TweenTarget.VTweenTarget  b.g.b.a
+api.tween.TweenTarget.VValueTweenTarget b.g.b.b
+(interface only)                    b.g.d (new)
+```
+
+### Bytecode Confirmed: No Native Bypass
+Previous conclusion of "purely native/JNI" was **incorrect**. The animation goes through:
+1. Java tween scheduler `b.g.c` (C3DEngine)
+2. Java callbacks `n$c$7/$4/$8/$9/$2` implementing `b.g.d`
+3. Java render loop `n$c.c()` (222 instr)
+4. Java field manipulation on `Number3d.y` (rotation) and `PositionNumber3d.z` (position)
+5. Java transition effect controller `f.f.l.b(F F)V`
+
+The `VObject3d.updateAABBMatrix` and older setPosition/setScale APIs are dead code — v3 replaced them with direct field access on mutable Number3d objects.
