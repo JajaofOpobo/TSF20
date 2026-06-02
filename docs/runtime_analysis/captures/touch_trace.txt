@@ -1,0 +1,751 @@
+     ____
+    / _  |   Frida 17.10.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Spawning `com.tsf.shell`...
+Spawned `com.tsf.shell`. Resuming main thread!
+message: {'type': 'send', 'payload': 'egl hooked'} data: None
+[Android Emulator 5554::com.tsf.shell ]-> message: {'type': 'send', 'payload': 'ready'} data: None
+message: {'type': 'send', 'payload': 'hook Nc.d ok'} data: None
+message: {'type': 'send', 'payload': 'hook runnable6 ok'} data: None
+message: {'type': 'send', 'payload': 'hook onIntercept ok'} data: None
+message: {'type': 'send', 'payload': 'hook engTouch ok'} data: None
+message: {'type': 'send', 'payload': '=== ALL HOOKS READY ==='} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=199.962158203125 y=1199.90478515625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=542.96630859375 y=1211.90185546875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=542.96630859375 y=1211.90185546875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=542.96630859375 y=1211.90185546875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1351.91162109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=589.9658203125 y=1369.9072265625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=589.9658203125 y=1369.9072265625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=589.9658203125 y=1369.9072265625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=656.971435546875 y=1680.908203125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=296.96044921875 y=1735.8837890625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=296.96044921875 y=1735.8837890625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=296.96044921875 y=1735.8837890625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=750.970458984375 y=1730.93994140625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=184.9658203125 y=1856.9091796875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=184.9658203125 y=1856.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=184.9658203125 y=1856.9091796875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=689.96337890625 y=1709.912109375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=304.969482421875 y=1721.9091796875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=304.969482421875 y=1721.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=304.969482421875 y=1721.9091796875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=686.964111328125 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=216.968994140625 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=216.968994140625 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=216.968994140625 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=428.961181640625 y=1498.90869140625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=827.962646484375 y=1469.90478515625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=827.962646484375 y=1469.90478515625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=827.962646484375 y=1469.90478515625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=340.960693359375 y=1595.93994140625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=340.960693359375 y=1595.93994140625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=340.960693359375 y=1595.93994140625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=340.960693359375 y=1595.93994140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=340.960693359375 y=1595.93994140625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1627.91015625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=363.966064453125 y=1633.90869140625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=363.966064453125 y=1633.90869140625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=363.966064453125 y=1633.90869140625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=181.966552734375 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=425.9619140625 y=1548.9404296875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=425.9619140625 y=1548.9404296875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=425.9619140625 y=1548.9404296875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=539.967041015625 y=1645.90576171875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=161.993408203125 y=1712.9443359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=345.970458984375 y=1618.9453125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=686.964111328125 y=1624.94384765625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=686.964111328125 y=1624.94384765625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=686.964111328125 y=1624.94384765625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=381.961669921875 y=1609.91455078125'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=838.970947265625 y=1577.9443359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=838.970947265625 y=1577.9443359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=838.970947265625 y=1577.9443359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=266.9677734375 y=1574.912109375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=774.964599609375 y=1601.9384765625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=774.964599609375 y=1601.9384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=774.964599609375 y=1601.9384765625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=249.9609375 y=1510.90576171875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=838.970947265625 y=1615.9130859375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=838.970947265625 y=1615.9130859375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=838.970947265625 y=1615.9130859375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=1014.93896484375 y=1310.91064453125'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=1014.93896484375 y=1310.91064453125'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=1014.93896484375 y=1310.91064453125'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=1014.93896484375 y=1310.91064453125'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=598.963623046875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=1070.936279296875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=1070.936279296875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=1070.936279296875 y=1586.9091796875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=246.961669921875 y=1697.9150390625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=680.965576171875 y=1647.94921875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=680.965576171875 y=1647.94921875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=680.965576171875 y=1647.94921875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=149.96337890625 y=1639.9072265625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=865.96435546875 y=1266.943359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=865.96435546875 y=1266.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=865.96435546875 y=1266.943359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=222.967529296875 y=1489.94384765625'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=1041.96533203125 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=1041.96533203125 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=1041.96533203125 y=1557.9052734375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=231.96533203125 y=1401.943359375'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=698.961181640625 y=1246.904296875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=698.961181640625 y=1246.904296875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=698.961181640625 y=1246.904296875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: created, parent=262173428'} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'RUNNABLE_6: run at frame=?'} data: None
+message: {'type': 'send', 'payload': 'Nc_d() '} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent,android.view.MotionEvent,float,float) ACTION=0 x=639.964599609375 y=1530.94482421875'} data: None
+message: {'type': 'send', 'payload': 'INTERCEPT:1 x=0 y=1369.9072265625'} data: None
+message: {'type': 'send', 'payload': 'ENG_TOUCH:1 x=0 y=1369.9072265625'} data: None
+message: {'type': 'send', 'payload': 'Nc_d(android.view.MotionEvent) ACTION=1 x=0 y=1369.9072265625'} data: None
