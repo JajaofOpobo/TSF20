@@ -563,7 +563,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.F;
     }
 
-    public c s() {
+    public C s() {
         return this.x;
     }
 
@@ -1062,7 +1062,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private com.censivn.C3DEngine.b.f.j B;
         private double C;
         private float D;
-        private a E;
+        private A E;
         private com.censivn.C3DEngine.b.d.a F;
         private com.censivn.C3DEngine.b.g._b.b G;
         private com.censivn.C3DEngine.b.g.d H;

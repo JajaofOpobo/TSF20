@@ -1,4 +1,4 @@
-package com.tsf.shell.f.f.a.c.a;
+package com.tsf.shell.f.f.a._c._a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
@@ -22,13 +22,13 @@ public class b extends j {
     private int g;
     private float h;
     private float i;
-    private com.tsf.shell.f.f.a.c.k.a j;
+    private k.a j;
     private e.a m;
     private TextureElement c = new TextureElement(0, false);
     private boolean l = false;
     private com.censivn.C3DEngine.b.f.k e = new com.censivn.C3DEngine.b.f.k(a, a, false);
 
-    public b(com.tsf.shell.f.f.a.c.k.a aVar) {
+    public b(k.a aVar) {
         this.j = aVar;
         this.e.textures().addElement(b);
         addChild(this.e);
@@ -37,7 +37,7 @@ public class b extends j {
         c.a(this.e, c.a);
         this.e.alpha(200.0f);
         this.d = a(this.c);
-        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.f.f.a.c.a.b.1
+        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.f.f.a._c._a.b.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 if (b.this.b()) {
@@ -109,7 +109,7 @@ public class b extends j {
     }
 
     public j a(TextureElement textureElement) {
-        com.censivn.C3DEngine.b.f.a.a aVarA = com.tsf.shell.f.f.a.c.j.a();
+        com.censivn.C3DEngine.b.f._a.a aVarA = com.tsf.shell.f.f.a._c.j.a();
         aVarA.a(true);
         aVarA.textures().addElement(textureElement);
         return aVarA;
@@ -118,7 +118,7 @@ public class b extends j {
     public void b(int i) {
         e();
         if (this.c.id == 0) {
-            com.tsf.shell.f.f.a.c.j.a(this.c, this.g, this.f);
+            com.tsf.shell.f.f.a._c.j.a(this.c, this.g, this.f);
         }
         this.d.visible(true);
         d dVar = new d();
@@ -129,7 +129,7 @@ public class b extends j {
         dVar.b(i);
         com.censivn.C3DEngine.b.g.c.a(this.d);
         com.censivn.C3DEngine.b.g.c.a(this.d, VEasing.Linear.easeNone, dVar);
-        d dVar2 = new d() { // from class: com.tsf.shell.f.f.a.c.a.b.2
+        d dVar2 = new d() { // from class: com.tsf.shell.f.f.a._c._a.b.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
             }
@@ -141,7 +141,7 @@ public class b extends j {
     }
 
     public void i() {
-        d dVar = new d() { // from class: com.tsf.shell.f.f.a.c.a.b.3
+        d dVar = new d() { // from class: com.tsf.shell.f.f.a._c._a.b.3
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 b.this.d.visible(false);

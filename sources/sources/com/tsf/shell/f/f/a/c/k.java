@@ -10,11 +10,11 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class k extends i {
     private static com.tsf.shell.f.e.k l;
-    private ArrayList<com.tsf.shell.f.f.a.c.a.b> g;
+    private ArrayList<com.tsf.shell.f.f.a.c._a.b> g;
     private com.censivn.C3DEngine.b.f.j h;
     private float i;
     private float j;
-    private com.tsf.shell.f.f.a.c.a.a k;
+    private com.tsf.shell.f.f.a.c._a.a k;
 
     public static class a {
         public String b;
@@ -32,29 +32,29 @@ public class k extends i {
     public k(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, 0, x.c(b.i.text_more));
         this.g = new ArrayList<>();
-        com.tsf.shell.f.f.a.c.a.a aVar = new com.tsf.shell.f.f.a.c.a.a(new a(b.d.drawer_classification, x.c(b.i.text_classify)));
+        com.tsf.shell.f.f.a.c._a.a aVar = new com.tsf.shell.f.f.a.c._a.a(new a(b.d.drawer_classification, x.c(b.i.text_classify)));
         this.k = aVar;
         this.k.a(com.tsf.shell.manager.p.e.j);
         this.g.add(aVar);
-        this.g.add(new com.tsf.shell.f.f.a.c.a.b(new a(b.d.drawer_preferences, x.c(b.i.text_preferences)) { // from class: com.tsf.shell.f.f.a.c.k.1
+        this.g.add(new com.tsf.shell.f.f.a.c._a.b(new a(b.d.drawer_preferences, x.c(b.i.text_preferences)) { // from class: com.tsf.shell.f.f.a.c.k.1
             @Override // com.tsf.shell.f.f.a.c.k.a
             public void a() {
                 com.tsf.shell.manager.a.B.d().d();
             }
         }));
-        this.g.add(new com.tsf.shell.f.f.a.c.a.b(new a(b.d.drawer_clean, x.c(b.i.text_clean)) { // from class: com.tsf.shell.f.f.a.c.k.2
+        this.g.add(new com.tsf.shell.f.f.a.c._a.b(new a(b.d.drawer_clean, x.c(b.i.text_clean)) { // from class: com.tsf.shell.f.f.a.c.k.2
             @Override // com.tsf.shell.f.f.a.c.k.a
             public void a() {
                 com.tsf.shell.e.a(b.i.mn_next_version_release);
             }
         }));
-        this.g.add(new com.tsf.shell.f.f.a.c.a.b(new a(b.d.drawer_more_manager, x.c(b.i.menu_manage_apps)) { // from class: com.tsf.shell.f.f.a.c.k.3
+        this.g.add(new com.tsf.shell.f.f.a.c._a.b(new a(b.d.drawer_more_manager, x.c(b.i.menu_manage_apps)) { // from class: com.tsf.shell.f.f.a.c.k.3
             @Override // com.tsf.shell.f.f.a.c.k.a
             public void a() {
                 Home.b().m();
             }
         }));
-        this.g.add(new com.tsf.shell.f.f.a.c.a.b(new a(b.d.drawer_more_reset, x.c(b.i.text_reset)) { // from class: com.tsf.shell.f.f.a.c.k.4
+        this.g.add(new com.tsf.shell.f.f.a.c._a.b(new a(b.d.drawer_more_reset, x.c(b.i.text_reset)) { // from class: com.tsf.shell.f.f.a.c.k.4
             @Override // com.tsf.shell.f.f.a.c.k.a
             public void a() {
                 com.tsf.shell.manager.a.h.t().am().c();
@@ -62,11 +62,11 @@ public class k extends i {
         }));
         this.h = new com.censivn.C3DEngine.b.f.j();
         this.h.position().y = com.censivn.C3DEngine.b.b.a.a(20.0f);
-        this.i = com.censivn.C3DEngine.b.b.a.b(12.0f) + com.tsf.shell.f.f.a.c.a.b.a;
+        this.i = com.censivn.C3DEngine.b.b.a.b(12.0f) + com.tsf.shell.f.f.a.c._a.b.a;
         this.j = ((-this.i) * 2.0f) / 2.0f;
         float f = this.j;
         for (int i = 0; i < this.g.size(); i++) {
-            com.tsf.shell.f.f.a.c.a.b bVar = this.g.get(i);
+            com.tsf.shell.f.f.a.c._a.b bVar = this.g.get(i);
             bVar.position().x = f;
             if (i > 2) {
                 bVar.visible(false);
@@ -97,12 +97,12 @@ public class k extends i {
     @Override // com.tsf.shell.f.f.a.c.i
     public void n() {
         super.n();
-        com.tsf.shell.f.f.a.c.a.b.j();
+        com.tsf.shell.f.f.a.c._a.b.j();
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
     public void p() {
-        com.tsf.shell.f.f.a.c.a.b.k();
+        com.tsf.shell.f.f.a.c._a.b.k();
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
@@ -119,7 +119,7 @@ public class k extends i {
         int i = 0;
         float f4 = f3;
         while (i < iNumChildren) {
-            com.tsf.shell.f.f.a.c.a.b bVar = this.g.get(i);
+            com.tsf.shell.f.f.a.c._a.b bVar = this.g.get(i);
             bVar.removeFromParent();
             this.b.h().addChild(bVar);
             bVar.position().setAll(bVar.position().x + f, bVar.position().y + f2, 0.0f);
@@ -168,7 +168,7 @@ public class k extends i {
         float f = this.j;
         for (int i = 0; i < this.g.size(); i++) {
             Number3d.TEMPNUMBER3D.reset();
-            final com.tsf.shell.f.f.a.c.a.b bVar = this.g.get(i);
+            final com.tsf.shell.f.f.a.c._a.b bVar = this.g.get(i);
             bVar.i();
             bVar.localToGlobal(Number3d.TEMPNUMBER3D);
             this.h.globalToLocal(Number3d.TEMPNUMBER3D);

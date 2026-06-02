@@ -1,17 +1,18 @@
-package com.tsf.shell.f.f.a._c.a;
+package com.tsf.shell.f.f.a.c._a;
 
 import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.C;
-import com.tsf.shell.f.f.a._c.k;
+import com.tsf.b;
+import com.tsf.shell.f.f.a.c.k;
 import com.tsf.shell.f.f.a.D;
 import com.tsf.shell.plugin.classification.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends b {
+public class a {
     private com.censivn.C3DEngine.b.h.d.b b;
-    private com.censivn.C3DEngine.b.f._a.a c;
+    private com.censivn.C3DEngine.b.f.a.a c;
     private boolean d;
     private float e;
     private float f;
@@ -35,10 +36,10 @@ public class a extends b {
         this.e = 360.0f;
         this.f = 0.0f;
         this.g = false;
-        this.h = new d.a() { // from class: com.tsf.shell.f.f.a._c.a.a.1
-            @Override // com.tsf.shell.f.f.a._d.a, com.tsf.shell.plugin.classification.d.InterfaceC0151d
+        this.h = new d.a() { // from class: com.tsf.shell.f.f.a.c._a.a.1
+            @Override // com.tsf.shell.f.f.a.d.a, com.tsf.shell.plugin.classification.d.InterfaceC0151d
             public void a(final d.a aVar2) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._c.a.a.1.1
+                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.a(aVar2);
@@ -46,7 +47,7 @@ public class a extends b {
                 });
             }
 
-            @Override // com.tsf.shell.f.f.a._d.a, com.tsf.shell.plugin.classification.d.InterfaceC0151d
+            @Override // com.tsf.shell.f.f.a.d.a, com.tsf.shell.plugin.classification.d.InterfaceC0151d
             public void a() {
                 if (a.this.d) {
                     a.this.a((d.a) null);
@@ -55,16 +56,16 @@ public class a extends b {
         };
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public j a(TextureElement textureElement) {
         j jVar = new j();
-        com.censivn.C3DEngine.b.f._a.a aVarA = com.tsf.shell.f.f.a._c.j.a();
+        com.censivn.C3DEngine.b.f.a.a aVarA = com.tsf.shell.f.f.a.c.j.a();
         this.c = aVarA;
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
-        this.b = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.a.a(140.0f), b.d.ring) { // from class: com.tsf.shell.f.f.a._c.a.a.2
-            @Override // com.censivn.C3DEngine.b.h.d.b, com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
+        this.b = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.a.a(140.0f), b.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.a.2
+            @Override // com.censivn.C3DEngine.b.h.d.b, com.censivn.C3DEngine.b.f.a.a, com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 f();
                 if (a.this.d) {
@@ -100,30 +101,30 @@ public class a extends b {
         return jVar;
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public boolean b() {
         return !this.d;
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public void c() {
         l();
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public void d() {
         a();
     }
 
     private void l() {
         this.d = true;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.a.a.3
+        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c._a.a.3
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 a.this.b.visible(true);
                 a.this.e = 360.0f;
                 a.this.f = 0.0f;
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a._c.a.a.3.1
+                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.i = com.tsf.shell.manager.a.h.t().am().a(a.this.h);
@@ -139,11 +140,11 @@ public class a extends b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final d.a aVar) {
-        this.b.a(0.0f, 250, new Runnable() { // from class: com.tsf.shell.f.f.a._c.a.a.4
+        this.b.a(0.0f, 250, new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.4
             @Override // java.lang.Runnable
             public void run() {
                 a.this.b.visible(false);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.a.a.4.1
+                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c._a.a.4.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         if (a.this.i != null && aVar != null) {
@@ -164,12 +165,12 @@ public class a extends b {
         });
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public void e() {
         this.g = false;
     }
 
-    @Override // com.tsf.shell.f.f.a._c.a.b
+    @Override // com.tsf.shell.f.f.a.c._a.b
     public void f() {
         super.f();
         this.b.c();
