@@ -352,17 +352,20 @@ The following documents were consolidated into this audit on 2026-06-02 and mark
 | `runtime_analysis.md` (root) | Primary architecture doc (19 sections, 33KB) — too large to merge |
 | `fix_scripts_CATALOG.md` (root) | Script hierarchy reference — standalone utility |
 
-## 10. Recommended Immediate Actions
+## 10. Execution Plan
 
-1. **Run the fix pipeline end-to-end** on a clean checkout:
-   ```
-   fix_filenames.py → fix_class_decls2.py → fix_refs_final.py →
-   fix_constructors_precise.py → fix_clashes.py → fix_package_refs.py →
-   fix_all.py → fix_round2.py
-   ```
-2. **Fix the 23 RuntimeException stubs** — hardest remaining errors, likely need CFR/Procyon
-3. **Fix Room annotation processor NPE** — add missing Room annotations or adjust Room version
-4. **Handle 5+ InterfaceC0xxx naming issues** — manual remap using v1 reference DEX
-5. **Resolve 2 cyclic inheritance files** — manual restructure
-6. **Write README.md** documenting project state and build process
-7. **Consider archiving** — if revival stalls, document key architectural findings in `runtime_analysis.md` as the primary deliverable
+The authoritative execution plan is now [`docs/implementation_plan.md`](implementation_plan.md). It supersedes this section and contains 10 phases with verification gates:
+
+| Phase | Focus | Key Task |
+|-------|-------|----------|
+| 0 | Environment setup | Install JDK 17, set JAVA_HOME |
+| 1 | Cleanup | Archive obsolete scripts and build logs |
+| 2 | Path migration | Fix hardcoded `/home/ubuntu/` → `/home/jaja/` in all scripts |
+| 3 | Source tree consolidation | Uncomment `sourceSets`, resolve class conflicts |
+| 4 | Fix pipeline execution | 9-step automated fix pipeline (strict order) |
+| 5 | Manual error resolution | 8 categories of remaining errors |
+| 6 | AndroidX migration | Support lib migration, ActivityGroup refactor |
+| 7 | Room annotation processor | Fix NPE, re-enable Room |
+| 8 | Build verification | `assembleDebug`, install, smoke test |
+| 9 | Deobfuscation (experimental) | Apply 5,964-line deobfuscation map |
+| 10 | Documentation | README.md, build log consolidation |

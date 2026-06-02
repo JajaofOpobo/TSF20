@@ -1,234 +1,167 @@
-# TSF Shell Revival — Corrective Implementation Plan (v2)
+# TSF20 Supervisor Audit Report & Execution Plan
 
-> **⚠️ NEEDS REVISION — 2026-06-02**  
-> This plan was written for the v1.9.9.7.6 reference APK structure.  
-> The actual target (v3.9.4) differs: `com/tsf/shell/` has **1,026 files** (not 842),  
-> there is no `com/tsf/extend/` with 296 files, and the codebase is heavily ProGuard-obfuscated  
-> (79% single-letter class names).  
-> **The plan must insert an 8-step fix pipeline before compilation**, and adjust file counts  
-> throughout. See [`CODEBASE_AUDIT_2026-06-02.md`](CODEBASE_AUDIT_2026-06-02.md) §10 for revised next actions.  
+> **Supersedes**: previous `implementation_plan.md` (v2) — counts were from v1.9.9.7.6 reference, not v3.9.4  
+> **Replaces**: CODEBASE_AUDIT §10 recommended actions — this plan is the single source of truth for next steps  
 > **Cataloged by**: opencode 2026-06-02
 
-## Background
+## Executive Summary
 
-The decompiled APK source tree contains **1847 Java files**, broken down as:
+TSF20 is a **reverse-engineering revival** of TSF Shell v3.9.4 — a 3D Android launcher from 2019. The project started off track, prompting a strategic pivot: the codebase was reconstructed by cross-referencing a less-obfuscated older v1.x version and mapping out the runtime behavior using Frida on a rooted emulator. 
 
-| Package | Files | Classification |
-|---------|-------|---------------|
-| `com/tsf/shell/` | 842 | **TSF launcher code** — compile |
-| `com/tsf/extend/` | 296 | **TSF extension modules** — compile |
-| `com/censivn/C3DEngine/` | 175 | **Custom 3D engine** — compile |
-| `com/ksmobile/` | 16 | **KS Mobile utils** — compile |
-| `android/support/` | 338 | Old support library → **exclude**, use AndroidX |
-| `org/acra/` | 57 | ACRA crash reporting → **exclude**, stub constants |
-| `com/badlogic/gdx/` | 44 | LibGDX math/physics → **exclude**, use Gradle dep |
-| `com/android/volley/` | 37 | Volley HTTP → **exclude**, use Gradle dep |
-| `com/cm/` | 35 | CM SDK analytics → **exclude**, delete |
-| misc obfuscated | 5 | → **exclude** |
+**This reconnaissance and mapping phase is now officially complete.** The runtime architecture, page transitions, rendering pipelines, and scene graphs are fully documented in `docs/runtime_analysis.md` and related files. We are now at a critical juncture: taking the 1,500+ decompiled files and running the fix pipeline to produce a compiling build.
 
-Key discovery: **the original TSF Shell already used LibGDX** (`com.badlogic.gdx.math/physics`). C3DEngine wraps LibGDX internally.
-
-## Strategy
-
-**Phase 1** gets the decompiled sources compiling inside the existing Gradle project. This is the most important step because it tells us what's actually broken vs. what works.
-
-**Phase 2** fixes Android API incompatibilities so the decompiled code can run on modern devices.
-
-**Phase 3** is where the real 3D revival happens — wiring the compiled C3DEngine to actually render, loading original assets, and integrating with the existing data layer.
-
-The existing data layer (Room database, entities, DAOs, LegacyMigration, LauncherRepository) is **kept as-is** — it's well built. The existing 2D UI code (DesktopPage, DockView, AppDrawerActivity, etc.) stays temporarily as a fallback while the 3D rendering is brought online.
+> [!CAUTION]
+> **Three concrete issues threaten momentum:**
+> 1. **JDK version mismatch** — system has JDK 11, build requires JDK 17 (AGP 8.8.2 mandates it)
+> 2. **Fix scripts are broken** — all hardcode `/home/ubuntu/` paths, will fail on this machine (`/home/jaja/`)
+> 3. **Dual source trees are confusing** — `sources/sources/` (1,523 decompiled files) and `app/src/main/java/` (62 Room/data files) exist separately, build only sees `sources/sources/` via a commented-out `sourceSets` block
 
 ---
 
-## Phase 1 — Get Decompiled Sources Compiling
+## Course Corrections Required
 
-**Goal**: `./gradlew compileDebugJavaWithJavac` passes with 0 errors including all 1329 TSF-proprietary source files.
+### 1. JDK 17 Must Be Installed
+- System currently has **JDK 11.0.31** — AGP 8.8.2 requires JDK 17+
+- **This blocks everything** — no build can succeed without it
 
-### 1.1 Configure build.gradle.kts source inclusion ✅ DONE
-- Added `../sources/sources` as a `java.srcDir`
-- Added `java.exclude()` patterns for all third-party bundled packages
+### 2. Fix Script Paths Must Be Updated
+- All scripts reference `/home/ubuntu/Documents/TSF20/sources/sources` 
+- Must be updated to `/home/jaja/Documents/TSF20/sources/sources`
+- Without this, the entire fix pipeline silently operates on non-existent paths
 
-### 1.2 Fix the 2 decompiler `??` placeholder errors
-- [x] `com/tsf/shell/plugin/themepicker/utils/c.java:198` — `??` was a `String` variable from `c(str)` MD5 hash. Fixed: renamed to `hashKey`, rewrote the broken catch blocks that reused the same variable as an OutputStream.
-- [ ] `com/tsf/shell/f/f/c.java:92` — `??` is a generic type cast `(E) ((f) it.next())`. Fix: replace `??` with `E`.
-
-### 1.3 Create stubs for excluded third-party APIs ✅ PARTIALLY DONE
-These stubs provide the constants and method signatures that TSF code imports, without pulling in the real libraries:
-
-- [x] `org.acra.ACRAConstants` — stub with `DEFAULT_SOCKET_TIMEOUT`, `UNKNOWN` constants (referenced by 16 TSF files)
-- [x] `com.flurry.android.FlurryAgent` — no-op stub (called by `Home.java` in `onStart`/`onStop`)
-- [x] `com.flurry.android.Constants` — stub with `UNKNOWN = 0xFF` (used in hex formatting)
-- [ ] Check if `com.b` (excluded) defines a resource class `com.tsf.b` or `b.i` — `Home.java` imports `com.tsf.b` which references string resources. This is the TSF resource ID class and lives under `com/tsf/`, so it's included. Verify it compiles.
-- [ ] Check if any TSF code imports from `com.cm.*` — if so, create stubs
-
-### 1.4 Handle `android.support.v4/v7` → AndroidX migration in TSF code
-~37 TSF files import `android.support.*`. These need to be converted:
-
-| Old Import | New Import |
-|-----------|-----------|
-| `android.support.v4.app.Fragment` | `androidx.fragment.app.Fragment` |
-| `android.support.v4.app.FragmentActivity` | `androidx.fragment.app.FragmentActivity` |
-| `android.support.v4.view.ViewPager` | `androidx.viewpager.widget.ViewPager` |
-| `android.support.v4.widget.NestedScrollView` | `androidx.core.widget.NestedScrollView` |
-| `android.support.v7.app.AppCompatActivity` | `androidx.appcompat.app.AppCompatActivity` |
-| `android.support.v4.d.f` (obfuscated LruCache) | `androidx.collection.LruCache` |
-| `android.support.v4.app.o` (obfuscated FragmentManager) | Need to identify and map |
-
-**Strategy**: Run compilation first, then fix import errors one by one. Some obfuscated support lib references (`android.support.v4.d.f`, `android.support.v4.app.o`) are classes that were decompiled with obfuscated names. For these, we need to:
-1. Identify what they are from usage context
-2. Create adapter classes or change TSF code to use AndroidX equivalents
-
-### 1.5 Handle decompiler raw bytecode stubs
-The file `com/tsf/shell/plugin/themepicker/utils/c.java` has 3 methods where JADX failed to decompile and left raw Smali bytecode in comments + `throw new UnsupportedOperationException("Method not decompiled: ...")`:
-- `a():void` — disk cache init (lines 92-156)
-- `b(String):Bitmap` — get bitmap from disk cache (lines 285-372)
-- `d():void` — close disk cache (lines 439-475)
-
-**Strategy**: Rewrite these methods manually by reading the Smali comments. The logic is visible in the comments — it's standard disk cache open/read/close code. Alternatively, if this class is only used by the theme picker UI, it can be temporarily stubbed to return null.
-
-### 1.6 Resolve duplicate class conflicts
-The new code in `app/src/main/java/com/tsf/shell/` and the decompiled code in `sources/sources/com/tsf/shell/` share the same package namespace. Potential conflicts:
-- New `ShellApplication.java` vs decompiled TSF files that may define the same class
-- New `Home.java`-adjacent code
-
-**Strategy**: Run compilation. If duplicates appear, the new skeleton classes yield to the decompiled originals (which contain the real logic). The new classes we keep are:
-- Room entities/DAOs/database (no equivalent in decompiled source)
-- `LauncherRepository.java` (new, no conflict)
-- Stub/bridge classes in `render/`, `service/`, `settings/`
-
-### 1.7 First compilation attempt
-- Run `./gradlew compileDebugJavaWithJavac 2>&1 | tee docs/build_errors_phase1.txt`
-- Count errors, categorize into:
-  - **A**: Import/type errors (fixable by import migration)
-  - **B**: Decompiler artifacts (`goto`, broken control flow, raw bytecode)
-  - **C**: API removals (`ActivityGroup`, removed Android APIs)
-  - **D**: Errors inside `com/censivn/C3DEngine/` (critical — these block the 3D engine)
-- Save categorized results to `docs/ERROR_TRIAGE_v2.md`
-
-### 1.8 Fix all Category A and B errors
-- Batch-fix import errors with find-and-replace
-- Manually fix remaining decompiler artifacts
-- Re-run compilation after each batch
-
-### 1.9 Compilation gate decision
-- **If C3DEngine compiles clean**: Proceed to Phase 2 (API compat) → the engine is usable
-- **If C3DEngine has < 20 errors**: Fix them manually → proceed to Phase 2
-- **If C3DEngine has > 20 errors**: Assess whether Rajawali/LibGDX bridge is needed for the broken classes only
+### 3. Source Tree Strategy Must Be Decided
+- **Option A (recommended):** Keep decompiled sources in `sources/sources/`, point `build.gradle.kts` at them via `sourceSets`, move the 62 Room/data files into `sources/sources/` 
+- **Option B:** Copy all 1,523 decompiled files into `app/src/main/java/` — but this makes the fix scripts' path assumptions wrong
+- The commented-out `sourceSets` block in `build.gradle.kts` (lines 36-40) suggests **Option A** was intended
 
 ---
 
-## Phase 2 — Fix Android API Compatibility
+## Phase 0: Environment Setup (3 tasks)
 
-**Goal**: The app builds, installs, and launches on Android 14 (API 34) without crashing.
-
-### 2.1 Replace `ActivityGroup` in `Home.java`
-`Home extends ActivityGroup` — `ActivityGroup` was removed in API 13.
-- Replace with `Home extends Activity`
-- Remove `getLocalActivityManager()` calls
-- Replace child activity management with Fragment transactions or direct View management
-- This is the single biggest code change needed
-
-### 2.2 Fix deprecated/removed API calls
-Scan decompiled code for:
-- `getRunningTasks()` / `getRecentTasks()` → stub or use `UsageStatsManager`
-- `getRunningServices()` → removed in API 26
-- Implicit broadcast registration → explicit
-- `PackageManager` flag changes for API 33+
-- `startForegroundService()` requirements for API 26+
-
-### 2.3 Fix manifest declarations
-- Ensure all `<activity>`, `<service>`, `<receiver>` have `android:exported`
-- Add `android:foregroundServiceType` where needed
-- Keep existing `<queries>` block
-- Remove non-existent class declarations (InstallShortcutReceiver, ShellBroadcastReceiver, etc.) or create the classes
-
-### 2.4 Test launch
-- Build APK
-- Install on Android 14 emulator
-- Verify it launches without crash
-- Document what renders (even if broken)
+| # | Task | Command / Action | Verify |
+|---|------|-----------------|--------|
+| 0.1 | Install JDK 17 | `sudo apt install -y openjdk-17-jdk` | `java -version` → `openjdk version "17.x.x"` |
+| 0.2 | Set JAVA_HOME | `export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64` and add to `~/.bashrc` | `echo $JAVA_HOME` shows path |
+| 0.3 | Verify Gradle wrapper | `cd /home/jaja/Documents/TSF20 && ./gradlew --version` | Gradle 8.12, JVM 17 |
 
 ---
 
-## Phase 3 — 3D Engine Revival
+## Phase 1: Obsolete File Cleanup & Archival (2 tasks)
 
-**Goal**: C3DEngine renders its 3D desktop with original assets on screen.
-
-### 3.1 Verify C3DEngine initializes
-- Trace the init path: `Home.e()` → `C3DEngine.a.a(Activity)` → creates `GLSurfaceView`
-- Ensure the engine singleton starts and creates its render thread
-- Fix any runtime errors
-
-### 3.2 Load original assets
-- Copy `resources-Prime/res/raw/widget_airship.3DS` to `app/src/main/res/raw/`
-- Copy original drawables needed by the engine from `resources-Prime/res/drawable-*`
-- Verify texture loading works
-
-### 3.3 Wire data layer to 3D scene
-- Connect the existing Room `FavoriteItem` data to C3DEngine's `ItemInfo` classes
-- Map `FavoriteItem.cellX/cellY/rotation/scale` → `ItemInfo` equivalents
-- Icons should appear as textured 3D objects
-
-### 3.4 Bring 3D page transitions online
-- Verify page manager (`com.tsf.shell.manager.a.h`) initializes
-- Test page swipe triggers 3D carousel/cube transition
-- If C3DEngine transitions work, the original effects are restored
-
-### 3.5 If C3DEngine doesn't work: Rajawali fallback
-Only if Phase 3.1-3.4 fail:
-- Add Rajawali as Gradle dependency
-- Map C3DEngine's 15-method API surface to Rajawali equivalents
-- Implement `ILauncherRenderer` backed by Rajawali
-- Load `.3DS` models via Rajawali's `Loader3DS`
+| # | Task | Details |
+|---|------|---------|
+| 1.1 | Archive obsolete fix scripts | Move scripts tagged `OBSOLETE` in `fix_scripts_CATALOG.md` into `archive/scripts/`. Delete `scripts/legacy/`. |
+| 1.2 | Label obsolete build logs | Move old build logs (`build-output-linux*.txt`, etc.) except latest representatives into `archive/logs/`. |
 
 ---
 
-## What We Keep From Current Code
+## Phase 2: Fix Script Path Migration (4 tasks)
 
-| Component | Action |
-|-----------|--------|
-| Room entities (7 files) | ✅ Keep |
-| Room DAOs (7 files) | ✅ Keep |
-| AppDatabase.java | ✅ Keep |
-| LegacyMigration.java | ✅ Keep |
-| LauncherRepository.java | ✅ Keep |
-| DatabaseSeeder.java | ✅ Keep |
-| LauncherPreferences.java | ✅ Keep — wire to decompiled prefs |
-| GestureEngine.java | ✅ Keep — wire to C3DEngine input |
-| ThemeManager.java | ✅ Keep — extend for 3D surface theming |
-| LauncherWidgetHost.java | ✅ Keep |
-| C3DEngine_API_Reference.md | ✅ Keep — Rosetta Stone |
-| DATABASE_SCHEMA.md | ✅ Keep |
-| build.gradle.kts (Room, deps) | ✅ Keep + extend |
-| Manifest queries block | ✅ Keep |
+| # | Task | Command | Verify |
+|---|------|---------|--------|
+| 2.1 | Identify all hardcoded paths | `grep -rn "/home/ubuntu" scripts/` | List all occurrences |
+| 2.2 | Replace paths in scripts | `sed -i 's|/home/ubuntu|/home/jaja|g' scripts/*.py` | `grep -rn "/home/ubuntu"` returns empty |
+| 2.3 | Update build-output file references | Check scripts for docs path references | No `/home/ubuntu` remains |
+| 2.4 | Generate fresh build output | `./gradlew compileDebugJavaWithJavac 2>&1 \| tee docs/build-output-fresh.txt` | Baseline for fix pipeline |
 
-| Component | Action |
-|-----------|--------|
-| HomeActivity.java | 🔄 Demote to fallback, eventually replace with decompiled Home.java |
-| DesktopPage.java | 🔄 Fallback until 3D desktop works |
-| DockView.java | 🔄 Fallback until 3D dock works |
-| AppDrawerActivity.java | 🔄 Fallback until 3D drawer works |
-| FolderView.java | 🔄 Fallback until 3D folders work |
-| PageTransitionRenderer.java | ❌ Replace with C3DEngine or Rajawali |
-| LibGDXRenderer.java | ❌ Replace — misleadingly named, no actual LibGDX |
-| TsfExclusiveWidgets.java | ❌ Replace with actual 3D widget rendering |
+---
+
+## Phase 3: Source Tree Consolidation (3 tasks)
+
+| # | Task | Action | Verify |
+|---|------|--------|--------|
+| 3.1 | Uncomment `sourceSets` in `app/build.gradle.kts` | Remove comment markers from `sourceSets` block so `java.srcDir("../sources/sources")` is active | Lines are uncommented |
+| 3.2 | Check for class conflicts | `comm -12 <(find app/src/main/java -name "*.java" -exec basename {} \; \| sort) <(find sources/sources -name "*.java" -exec basename {} \; \| sort)` | Document duplicates |
+| 3.3 | Move Room/data classes if needed | If conflicts found, move data classes into `sources/sources/` tree | Build sees all sources |
+
+---
+
+## Phase 4: Fix Pipeline Execution (9 tasks — strict order)
+
+| # | Script | Command | Expected Effect |
+|---|--------|---------|----------------|
+| 4.1 | `fix_filenames.py` | `python3 scripts/fix_filenames.py` | Rename `.java` files to match class names |
+| 4.2 | `fix_class_decls2.py` | `python3 scripts/fix_class_decls2.py` | Fix `class A {}` vs `a.java` mismatches |
+| 4.3 | `fix_refs_final.py` | `python3 scripts/fix_refs_final.py` | Update imports/FQ refs for renamed types |
+| 4.4 | **Build checkpoint 1** | `./gradlew compileDebugJavaWithJavac 2>&1 \| tee docs/build-output-post-refs.txt` | Error count should drop dramatically |
+| 4.5 | `fix_constructors_precise.py` | Point at checkpoint output, then run | Fix constructor name mismatches |
+| 4.6 | `fix_clashes.py` | `python3 scripts/fix_clashes.py` | Resolve class/directory name conflicts |
+| 4.7 | `fix_package_refs.py` | `python3 scripts/fix_package_refs.py` | Update refs after clash renames |
+| 4.8 | **Build checkpoint 2** | `./gradlew compileDebugJavaWithJavac 2>&1 \| tee docs/build-output-post-clashes.txt` | Expect <50 errors |
+| 4.9 | Error-driven fixers | Run `fix_all.py` then `fix_round2.py` against new build output | Create stubs, fix imports |
+
+---
+
+## Phase 5: Manual Error Resolution (8 tasks)
+
+| # | Task | Details |
+|---|------|---------|
+| 5.1 | Fix cyclic inheritance (`f/e/_h/a.java`) | Class implements own inner interface — correct the `implements` clause |
+| 5.2 | Create JADX interface stubs | Create `InterfaceC0025a.java`, `InterfaceC0113a.java` as empty interfaces |
+| 5.3 | Fix `import com.censivn.C3DEngine.A` errors | Verify actual class name after renaming |
+| 5.4 | Fix `cannot find symbol: class a` in `manager.o` | Create stub class if missing |
+| 5.5 | Fix `ShellProvider.a` inner class ref | Verify inner class exists in ShellProvider.java |
+| 5.6 | Fix `??` placeholder errors | `c.java:198` (cast), `c.java:92` (generic cast `(E)`) |
+| 5.7 | Create SDK stubs | `ACRAConstants`, `FlurryAgent`, `FlurryConstants` |
+| 5.8 | Rewrite decompilation failures | Raw bytecode stubs in `themepicker/utils/c.java` (disk cache) |
+
+---
+
+## Phase 6: AndroidX & API Compatibility Migration (3 tasks)
+
+| # | Task | Action |
+|---|------|--------|
+| 6.1 | Support Lib Migration | Scan/replace `android.support.v4/v7` → `androidx.*` across ~37 files |
+| 6.2 | Refactor `Home.java` `ActivityGroup` | Replace `extends ActivityGroup` with modern View/Fragment management |
+| 6.3 | Manifest updates | Ensure `android:exported`, fix deprecated intents/flags |
+
+---
+
+## Phase 7: Room Annotation Processor Fix (3 tasks)
+
+| # | Task | Action |
+|---|------|--------|
+| 7.1 | Re-enable Room compiler | Uncomment `room-compiler` annotation processor in `build.gradle.kts` |
+| 7.2 | Fix Room entity annotations | Ensure all `@Entity`/`@Dao`/`@Database` classes compile cleanly |
+| 7.3 | Test Room compilation | `./gradlew compileDebugJavaWithJavac 2>&1 \| tee docs/build-output-room.txt` |
+
+---
+
+## Phase 8: Build Verification (2 tasks)
+
+| # | Task | Command | Goal |
+|---|------|---------|------|
+| 8.1 | Full debug build | `./gradlew assembleDebug 2>&1 \| tee docs/build-output-final.txt` | APK in `app/build/outputs/apk/debug/` |
+| 8.2 | Install and smoke test | `adb install ... && adb shell am start -n com.tsf.shell/.ShellActivity` | App launches without crash |
+
+---
+
+## Phase 9: Deobfuscation Application (Experimental)
+
+| # | Task | Detail |
+|---|------|--------|
+| 9.1 | Develop deobfuscation script | Apply `tsf_shell_deobfuscation_map.txt` (5,964 lines) to Java sources |
+| 9.2 | Apply mapping | Rename classes/fields, update imports |
+| 9.3 | Regression build | Verify project still builds after deobfuscation |
+
+---
+
+## Phase 10: Cleanup and Documentation (2 tasks)
+
+| # | Task | Action |
+|---|------|--------|
+| 10.1 | Write README.md | Document purpose, architecture, status, build instructions |
+| 10.2 | Consolidate build logs | Keep only `build-output-fresh.txt` as post-fix baseline |
 
 ---
 
 ## Verification Plan
 
-### Phase 1 Success Criteria
-- `./gradlew compileDebugJavaWithJavac` passes with 0 errors
-- All 1329 TSF-proprietary files are included in compilation
-- No third-party library source is compiled (excluded by Gradle patterns)
+### Automated Tests
+1. **Build compilation gate:** `./gradlew compileDebugJavaWithJavac` must exit with **0 errors**
+2. **APK assembly gate:** `./gradlew assembleDebug` must produce a valid APK
+3. **Error count regression:** After each phase, verify error count decreases monotonically
 
-### Phase 2 Success Criteria
-- APK installs on Android 14 emulator
-- App launches without `ClassNotFoundException` or `NoSuchMethodError`
-- Home screen appears (even if visually broken)
-
-### Phase 3 Success Criteria
-- C3DEngine's `GLSurfaceView` renders on screen
-- At least one 3D page transition animates
-- `widget_airship.3DS` model loads and renders
-- Icons appear as textured 3D objects at their persisted positions
+### Manual Verification
+1. **After Phase 8.2:** Install APK on emulator, verify launcher loads without crash
+2. **After Phase 10.1:** `README.md` accurately describes how to build from scratch

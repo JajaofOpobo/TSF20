@@ -12,7 +12,7 @@ import os
 import re
 import shutil
 
-SOURCES = "/home/ubuntu/Documents/TSF20/sources/sources"
+SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
 
 def find_class_name(content):
     """Find the public class/interface/enum name declared in a Java file."""

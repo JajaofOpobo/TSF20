@@ -9,7 +9,7 @@
 """
 import os, re, subprocess
 
-SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'
+SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
 
 # Get renamed files from git diff
 result = subprocess.run(['git', 'diff', '--diff-filter=D', '--name-only', 'HEAD'], 

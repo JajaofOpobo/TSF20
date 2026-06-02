@@ -13,7 +13,7 @@ and updating all package declarations within them.
 import os
 import re
 
-SOURCES = "/home/ubuntu/Documents/TSF20/sources/sources"
+SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
 
 # Clashes found: (parent_dir, clashing_name)
 CLASHES = [

@@ -10,7 +10,7 @@
 """
 import os, re
 
-SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'
+SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
 
 fixed = 0
 for dirpath, _, filenames in os.walk(SOURCES):

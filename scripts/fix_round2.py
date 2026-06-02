@@ -15,7 +15,7 @@ Handles:
 """
 import os, re, subprocess
 
-SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'
+SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
 BUILD_OUT = 'docs/build-output-r2.txt'
 
 # ---------------------------------------------------------------

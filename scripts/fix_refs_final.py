@@ -10,7 +10,7 @@
 Fix references for renamed types, safely handling subpackage/type coexistence."""
 import os, re, subprocess
 
-SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'
+SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
 
 result = subprocess.run(['git', 'diff', '--diff-filter=D', '--name-only', 'HEAD'],
                        capture_output=True, text=True, cwd=SOURCES)

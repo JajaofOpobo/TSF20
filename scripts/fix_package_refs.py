@@ -12,7 +12,7 @@ Update all references to renamed packages across the codebase.
 import os
 import re
 
-SOURCES = "/home/ubuntu/Documents/TSF20/sources/sources"
+SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
 
 # Package renames: old -> new
 RENAMES = {

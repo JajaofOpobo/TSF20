@@ -11,7 +11,7 @@
 Fix constructor names precisely by reading build errors line by line."""
 import os, re, subprocess
 
-SOURCES = '/home/ubuntu/Documents/TSF20/sources/sources'
+SOURCES = '/home/jaja/Documents/TSF20/sources/sources'
 
 result = subprocess.run(
     ['grep', 'invalid method declaration', 'docs/build-output-current.txt'],

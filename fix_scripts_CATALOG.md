@@ -11,11 +11,14 @@ naming convention (1→2→3→final/precise) and content analysis (each iterati
 
 | Type | Location |
 |------|----------|
-| Python fix/analysis scripts | `scripts/` |
-| Frida JS instrumentation | `scripts/frida/` |
-| PowerShell legacy scripts | `scripts/legacy/` |
-| Java build tools | `tools/` |
-| APK resources, smali, DB dumps | `resources/` |
+| Python fix/analysis scripts | `scripts/` (29 files) |
+| Frida JS instrumentation | `scripts/frida/` (9 files) |
+| **Obsolete scripts** (archived) | `archive/scripts/` (11 files) |
+| **Obsolete PS1 scripts** (archived) | `archive/scripts/legacy/` (5 files) |
+| Java build tools | `tools/` (8 files) |
+| APK resources, smali, DB dumps | `resources/` (7 items) |
+| **Obsolete build logs** (archived) | `archive/logs/` (32 files) |
+| **Current build logs** (kept in docs/) | 6 files |
 
 ---
 

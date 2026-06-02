@@ -15,7 +15,7 @@ import os
 import re
 import shutil
 
-SOURCES = "/home/ubuntu/Documents/TSF20/sources/sources"
+SOURCES = "/home/jaja/Documents/TSF20/sources/sources"
 
 def read_file(path):
     try:
