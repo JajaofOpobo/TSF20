@@ -78,48 +78,61 @@ Java.perform(function() {
     A('hook page pos/scale ok');
   } catch(e) { A('hook page err: ' + e.message); }
 
-  // === 3. Transition parameter creation: a(float,float,float,int) → e ===
-  // This creates transition state with start, end, duration, easing type
+  // === 3. Transition parameter creation ===
   try {
     var pd = Java.use('com.tsf.shell.f.e.c.a.d');
     pd.a.overload('float', 'float', 'float', 'int').implementation = function(x, y, dur, easing) {
-      A('TRANSITION_PARAMS:' + ' x=' + x + ' y=' + y + ' dur=' + dur + 'ms easing=' + easing);
+      A('TRANS_PARAMS:' + ' x=' + x + ' y=' + y + ' dur=' + dur + 'ms easing=' + easing);
       return this.a(x, y, dur, easing);
     };
-    A('hook d.a(x,y,dur,easing) ok');
-  } catch(e) { A('hook d.a err: ' + e.message); }
+    A('hook d.a(3f,i) ok');
+  } catch(e) { A('hook d.a(3f,i) err: ' + e.message); }
 
-  // === 4. Page state animator methods ===
+  // === 4a. Additional d methods: d.d(float) and d.e(float) ===
   try {
     var pd = Java.use('com.tsf.shell.f.e.c.a.d');
-    pd.a.overload('float').implementation = function(v) {
-      A('ANIM_A:' + v);
-      return this.a(v);
+    pd.d.overload('float').implementation = function(v) {
+      A('D_D:' + v);
+      return this.d(v);
     };
-    pd.b.overload('float').implementation = function(v) {
-      A('ANIM_B:' + v);
-      return this.b(v);
-    };
-    pd.c.overload('float').implementation = function(v) {
-      A('ANIM_C:' + v);
-      return this.c(v);
-    };
-    A('hook d animators ok');
-  } catch(e) { A('hook d anim err: ' + e.message); }
-
-  // === 5. VObject3d Number3d position/scale mutations ===
+    A('hook d.d(flt) ok');
+  } catch(e) { A('hook d.d err: ' + e.message); }
   try {
-    var n3d = Java.use('com.censivn.C3DEngine.api.element.Number3d');
-    n3d.setAll.implementation = function(x, y, z) {
-      if (x !== 0 || y !== 0 || z !== 0) {
-        A('N3D_SET:' + this.$className + ' ' + x + ',' + y + ',' + z);
-      }
-      return this.setAll(x, y, z);
+    var pd = Java.use('com.tsf.shell.f.e.c.a.d');
+    pd.e.overload('float').implementation = function(v) {
+      A('D_E:' + v);
+      return this.e(v);
     };
-    A('hook Number3d.setAll ok');
-  } catch(e) { A('hook N3D err: ' + e.message); }
+    A('hook d.e(flt) ok');
+  } catch(e) { A('hook d.e err: ' + e.message); }
+  try {
+    var pd = Java.use('com.tsf.shell.f.e.c.a.d');
+    pd.onDrawStart.implementation = function() {
+      A('D_DRAW');
+      return this.onDrawStart();
+    };
+    A('hook d.onDrawStart ok');
+  } catch(e) { A('hook d.draw err: ' + e.message); }
 
-  // === 6. Wallpaper parallax ===
+  // === 4b. Class a methods (float,float) ===
+  try {
+    var pa = Java.use('com.tsf.shell.f.e.c.a.a');
+    pa.a.overload('float', 'float').implementation = function(x, y) {
+      A('A_A:' + x + ',' + y);
+      return this.a(x, y);
+    };
+    A('hook a.a(ff) ok');
+  } catch(e) { A('hook a.a err: ' + e.message); }
+  try {
+    var pa = Java.use('com.tsf.shell.f.e.c.a.a');
+    pa.b.overload('float', 'float').implementation = function(x, y) {
+      A('A_B:' + x + ',' + y);
+      return this.b(x, y);
+    };
+    A('hook a.b(ff) ok');
+  } catch(e) { A('hook a.b err: ' + e.message); }
+
+  // === 5. Wallpaper parallax ===
   try {
     var wp = Java.use('com.tsf.shell.manager.wallpaper.a$b');
     wp.a.overload('float', 'float').implementation = function(x, y) {
@@ -134,3 +147,9 @@ Java.perform(function() {
 });
 
 retryEgl();
+
+// Heartbeat — prints every 5s so user knows it's alive
+var beat = 0;
+setInterval(function() {
+  send('ALIVE frame=' + frameNum + ' beat=' + (++beat));
+}, 5000);
