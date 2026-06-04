@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="tool" />
+	<appname>
+		<default name="Gallery" />
+		<af name="Galery" />
+		<am name="የሥነ ጥበብ ማዕከል" />
+		<ar name="المعرض" />
+		<be name="Галерэя" />
+		<bg name="Галерия" />
+		<ca name="Galeria" />
+		<cs name="Galerie" />
+		<da name="Galleri" />
+		<de name="Galerie" />
+		<el name="Συλλογή" />
+		<en name="Gallery" r="GB" />
+		<es name="Galería" />
+		<es name="Galería" r="US" />
+		<et name="Galerii" />
+		<fa name="گالری" />
+		<fi name="Galleria" />
+		<fr name="Galerie" />
+		<hi name="गैलरी" />
+		<hr name="Galerija" />
+		<hu name="Galéria" />
+		<in name="Galeri" />
+		<it name="Galleria" />
+		<iw name="גלריה" />
+		<ja name="ギャラリー" />
+		<ko name="갤러리" />
+		<lt name="Galerija" />
+		<lv name="Galerija" />
+		<ms name="Galeri" />
+		<nb name="Galleri" />
+		<nl name="Galerij" />
+		<pl name="Galeria" />
+		<pt name="Galeria" />
+		<pt name="Galeria" r="PT" />
+		<rm name="Catalog" />
+		<ro name="Galerie" />
+		<ru name="Галерея" />
+		<sk name="Galéria" />
+		<sl name="Galerija" />
+		<sr name="Галерија" />
+		<sv name="Galleri" />
+		<sw name="Matunzio" />
+		<th name="แกลเลอรี" />
+		<tl name="Gallery" />
+		<tr name="Galeri" />
+		<uk name="Галерея" />
+		<vi name="Thư viện" />
+		<zh name="图库" r="CN" />
+		<zh name="圖庫" r="TW" />
+		<zu name="Igalari" />
+	</appname>
+</description>
+

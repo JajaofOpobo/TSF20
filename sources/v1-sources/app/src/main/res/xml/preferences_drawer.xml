@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tsfui="http://tsfui.com">
+    <CheckBoxPreference
+        android:title="@string/mn_grid_size_auto"
+        android:key="auto_size"
+        android:summary="@string/mn_grid_size_auto_summary"/>
+    <com.tsf.shell.preference.widget.SeekBarPreference
+        android:max="100"
+        android:title="@string/mn_grid_columns"
+        android:key="rows"
+        android:summary="@string/mn_grid_columns_summary"
+        android:dependency="auto_size"
+        tsfui:min="0"
+        tsfui:unitsLeft=""
+        tsfui:unitsRight=""
+        tsfui:oppositeDependency="true"/>
+    <com.tsf.shell.preference.widget.SeekBarPreference
+        android:max="100"
+        android:title="@string/mn_grid_rows"
+        android:key="columns"
+        android:summary="@string/mn_grid_rows_summary"
+        android:dependency="auto_size"
+        tsfui:min="0"
+        tsfui:unitsLeft=""
+        tsfui:unitsRight=""
+        tsfui:oppositeDependency="true"/>
+    <com.tsf.shell.preference.widget.SeekBarPreference
+        android:max="100"
+        android:title="@string/mn_background_transparency"
+        android:key="blackground_alpha"
+        tsfui:min="0"
+        tsfui:unitsLeft=""
+        tsfui:unitsRight="0%"
+        tsfui:oppositeDependency="true"/>
+</PreferenceScreen>

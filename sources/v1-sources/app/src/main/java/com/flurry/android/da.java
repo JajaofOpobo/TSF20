@@ -1,0 +1,31 @@
+package com.flurry.android;
+
+import java.security.KeyStore;
+import org.apache.http.client.HttpClient;
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.params.HttpParams;
+
+/* loaded from: classes.dex */
+final class da {
+    static synchronized HttpClient a(HttpParams httpParams) {
+        DefaultHttpClient defaultHttpClient;
+        synchronized (da.class) {
+            try {
+                KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+                keyStore.load(null, null);
+                dh dhVar = new dh(keyStore);
+                SchemeRegistry schemeRegistry = new SchemeRegistry();
+                schemeRegistry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
+                schemeRegistry.register(new Scheme("https", dhVar, 443));
+                defaultHttpClient = new DefaultHttpClient(new ThreadSafeClientConnManager(httpParams, schemeRegistry), httpParams);
+            } catch (Exception e) {
+                defaultHttpClient = new DefaultHttpClient(httpParams);
+            }
+        }
+        return defaultHttpClient;
+    }
+}

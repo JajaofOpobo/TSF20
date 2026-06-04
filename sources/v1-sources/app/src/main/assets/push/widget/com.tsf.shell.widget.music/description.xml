@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="tool" />
+	<appname>
+		<default name="Music" />
+		<zh name="音乐" r="CN" />
+		<zh name="音樂" r="TW" />
+
+		<cs name="hudba" />
+		<da name="Musik" />
+		<el name="μουσική" />
+		<en name="Music" />
+		<es name="música" />
+		<fr name="Musique" />
+		<hu name="zene" />
+		<iw name="מוסיקה" />
+		<ko name="음악" />
+		<nl name="muziek" />
+		<no name="musikk" />
+		<pl name="muzyka" />
+		<tr name="müzik" />
+	</appname>
+</description>
+

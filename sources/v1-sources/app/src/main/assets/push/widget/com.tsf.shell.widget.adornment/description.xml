@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="theme" />
+
+	<appname>
+		<default name="Pendant" />
+		<zh name="相框" r="CN" />
+		<zh name="相框" r="TW" />
+
+		<cs name="rám" />
+		<da name="frame" />
+		<el name="πλαίσιο" />
+		<en name="Photo" />
+		<es name="marco" />
+		<fr name="cadre" />
+		<hu name="keret" />
+		<iw name="מסגרת" />
+		<ko name="구조" />
+		<nl name="raam" />
+		<no name="Pendant" />
+		<pl name="ramka" />
+		<tr name="çerçeve" />
+
+	</appname>
+</description>
+

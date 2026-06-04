@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tsfui="http://tsfui.com">
+    <com.tsf.shell.preference.widget.SeekBarPreference
+        android:max="100"
+        android:title="@string/mn_background_transparency"
+        android:key="blackground_alpha"
+        tsfui:min="0"
+        tsfui:unitsLeft=""
+        tsfui:unitsRight="0%"
+        tsfui:oppositeDependency="true"/>
+</PreferenceScreen>

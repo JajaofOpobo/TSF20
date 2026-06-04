@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Wallpaper.NoTitleBar">
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+    </style>
+    <style name="NoTitleBar" parent="@android:style/Theme.Holo.NoActionBar">
+    </style>
+    <style name="Theme.TranslucentDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+    </style>
+</resources>

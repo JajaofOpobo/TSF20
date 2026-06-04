@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icon_pick_select_dialog_items">
+        <item>Default</item>
+        <item>Gallery</item>
+        <item>Files</item>
+        <item>Icon Pack</item>
+    </array>
+    <array name="extra_wallpapers">
+    </array>
+</resources>

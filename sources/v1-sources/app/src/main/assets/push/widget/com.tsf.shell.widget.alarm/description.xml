@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="tool" />
+	<appname>
+		<default name="Clock" />
+		<af name="Horlosie" />
+		<am name="ሰዓት" />
+		<ar name="الساعة" />
+		<be name="Гадзіннік" />
+		<bg name="Часовник" />
+		<ca name="Rellotge" />
+		<cs name="Hodiny" />
+		<da name="Ur" />
+		<de name="Uhr" />
+		<el name="Ρολόι" />
+		<en name="Clock" r="GB" />
+		<es name="Reloj" />
+		<es name="Reloj" r="US" />
+		<et name="Kell" />
+		<fa name="ساعت" />
+		<fi name="Kello" />
+		<fr name="Horloge" />
+		<hi name="घड़ी" />
+		<hr name="Sat" />
+		<hu name="Óra" />
+		<in name="Jam" />
+		<it name="Orologio" />
+		<iw name="שעון" />
+		<ja name="時計" />
+		<ko name="시계" />
+		<lt name="Laikrodis" />
+		<lv name="Pulkstenis" />
+		<ms name="Jam" />
+		<nb name="Klokke" />
+		<nl name="Klok" />
+		<pl name="Zegar" />
+		<pt name="Relógio" />
+		<pt name="Relógio" r="PT" />
+		<rm name="Ura" />
+		<ro name="Ceas" />
+		<ru name="Часы" />
+		<sk name="Hodiny" />
+		<sl name="Ura" />
+		<sr name="Сат" />
+		<sv name="Klocka" />
+		<th name="นาฬิกา" />
+		<tl name="Orasan" />
+		<tr name="Saat" />
+		<uk name="Годинник" />
+		<vi name="Đồng hồ" />
+		<zh name="时钟" r="CN" />
+		<zh name="時鐘" r="TW" />
+		<zu name="Iwashi" />
+	</appname>
+</description>
+

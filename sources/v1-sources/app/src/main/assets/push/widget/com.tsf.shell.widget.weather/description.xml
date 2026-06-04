@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+
+	<widget category="tool" cover="cover.png" icon="icon.png" versionCode="1" />
+
+	<appname>
+		<default name="Weather" />
+		<zh name="天气" r="CN" />
+		<zh name="天氣" r="TW" />
+
+		<cs name="počasí" />
+		<da name="Vejr" />
+		<el name="καιρός" />
+		<en name="Weather" />
+		<es name="tiempo" />
+		<fr name="Météo" />
+		<hu name="időjárás" />
+		<iw name="מזג אוויר" />
+		<ko name="날씨" />
+		<nl name="weer" />
+		<no name="Været" />
+		<pl name="pogoda" />
+		<tr name="hava" />
+	</appname>
+
+</description>

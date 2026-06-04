@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="tool" />
+	<appname>
+		<default name="Message" />
+		<af name="Boodskappe" />
+		<am name="መልዕክት በመላክ ላይ" />
+		<ar name="المراسلات" />
+		<be name="Паведамленні" />
+		<bg name="Съобщения" />
+		<ca name="Missatgeria" />
+		<cs name="SMS" />
+		<da name="Beskeder" />
+		<de name="SMS" />
+		<el name="Μηνύματα" />
+		<en name="Messaging" r="GB" />
+		<es name="Mensajes" />
+		<es name="Mensajería" r="US" />
+		<et name="Sõnumside" />
+		<fa name="پیام رسانی" />
+		<fi name="Viestit" />
+		<fr name="SMS" />
+		<hi name="संदेश सेवा" />
+		<hr name="Slanje poruka" />
+		<hu name="Üzenetek" />
+		<in name="Perpesanan" />
+		<it name="Messaggi" />
+		<iw name="סמס" />
+		<ja name="メッセージ" />
+		<ko name="메시지" />
+		<lt name="Pranešimai" />
+		<lv name="Ziņapmaiņa" />
+		<ms name="Pemesejan" />
+		<nb name="Meldinger" />
+		<nl name="Berichten" />
+		<pl name="SMS" />
+		<pt name="Mensagens" />
+		<pt name="Mensag." r="PT" />
+		<rm name="SMS" />
+		<ro name="Mesagerie" />
+		<ru name="SMS" />
+		<sk name="SMS" />
+		<sl name="Sporočanje" />
+		<sr name="Размена порука" />
+		<sv name="Medd." />
+		<sw name="SMS" />
+		<th name="ข้อความ" />
+		<tl name="Pagpapadala ng mensahe" />
+		<tr name="Mesajlaş." />
+		<uk name="Повідомлення" />
+		<vi name="Nhắn tin" />
+		<zh name="短信" r="CN" />
+		<zh name="簡訊" r="TW" />
+		<zu name="Umlayezo" />
+	</appname>
+</description>
+

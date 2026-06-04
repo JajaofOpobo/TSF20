@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+	<info supportHD="true"/>
+	<icon-default globalScale="1.0" scale="0.8" default="bg3" leftOffset="0" rightOffset="0" topOffset="0" bottomOffset="0">
+	    <item image="bg0" />
+		<item image="bg1" />
+		<item image="bg2" />
+		<item image="bg3" />
+		<item image="bg4" />
+		<item image="bg5" />
+		<item image="bg6" />
+		<item image="bg7"  scale="0.7"/>
+		<item image="bg8" />
+		<item image="bg9" />
+	</icon-default>
+	<icon-mask default="default">
+		<item image="default" />
+		<item image="default2" />
+		<item image="default3" />
+	</icon-mask>
+	<icon-filter>
+		<!-- Market Demo -->
+		<item component="ComponentInfo{com.intelygenz.agm28.a3interaction/com.intelygenz.activities.MainActivity}"	drawable="a3interaction"/>
+	</icon-filter>
+	<widget>
+		<item type="widget_system_folder" supportHD="true">
+			<icon image="widget_folder_icon" />
+			<nameText auto="true" /><!-- <nameText auto="false" size="16" 
+				color="#FFFFFFFF" x="20" y="1" width="88" height="28" /> -->
+			<frame image="widget_folder_windows_bg"/>
+			<addButton image="widget_folder_add_button" offsetY="9"/>
+			<scrolling point="widget_folder_scrolling_point"/>
+			<border left="-64" right="64" top="92" bottom="-67" />
+			<order>
+				<backPlane x="0" y="32" image="widget_folder_bg" />
+				<!--<textPlane x="0" y="-52" width="128" height="30" /> -->
+				<childContainer x="0" y="25" />
+			</order>
+			<child>
+				<item x="-23" y="23" z="0" rx="0" ry="0" rz="360" sx="0.42" sy="0.42" sz="1" />
+				<item x="23" y="23" z="0" rx="0" ry="0" rz="360" sx="0.42" sy="0.42" sz="1" />
+				<item x="-23" y="-23" z="0" rx="0" ry="0" rz="360" sx="0.42" sy="0.42" sz="1" />
+				<item x="23" y="-23" z="0" rx="0" ry="0" rz="360" sx="0.42" sy="0.42" sz="1" />
+			</child>
+			<dockParam followRotation="false" bottomModeOffset="2" topModeOffset="2" leftModeOffset="3" rightModeOffset="3"/>
+		</item>
+		<item type="widget_system_contact">
+			<icon image="widget_contact_icon" />
+			<backPlane image="widget_contact_default" x="12" y="0"/>
+			<photoPlane width="79" height="79" x="25" y="9"/> 
+			<frontPlane image="widget_contact_logo" x="28" y="2"/>  
+		</item>
+	</widget>
+	
+	<shell>
+	    
+		<menu 
+		    toolButton="menu_tool_button" 
+		    themeButton="menu_theme_button" 
+		    userButton="menu_user_button" 
+		    settingButton="menu_setting_button" 
+		    bg="menu_bg" 
+		    bgOffsetX="8" 
+		    widthOffset="0" 
+		    itemsOffset="-1"/>
+		
+		<pageNavigationBar bgColor="#FF41C6F6" barColor="#FF262829"/>
+		
+		<applicationPage 
+		    effectButton="application_page_effect_button" 
+		    nvPoint="application_page_nv_point" 
+		    editModeOn="shell_app_page_edit_mode_on" 
+		    editModeOff="shell_app_page_edit_mode_off" 
+		    delButton="shell_app_page_del_ico" 
+		    hideLogo="shell_app_page_hide_logo" 
+		    transitionIcon="application_transition_button"
+		    transition3dIcon="application_transition_3d_button"
+		    editIcon="application_edit_button"
+		    sortIcon="application_sort_button"/>
+		
+		<linePicker 
+		    line="shell_picker_connect_line" 
+		    point="shell_picker_connect_point" 
+		    focus="shell_picker_focus" 
+		    notic="shell_picker_notic_bg" />
+		
+		<!--notic size 160*32    image size 240*320 -->
+		<pickerMenu 
+		    image="shell_picker_menu_item" 
+		    notic="shell_picker_menu_item_text_bg" />
+		
+		<pagePreview 
+		    selecting360ModeOffButton = "desktop_selecting_360_mode_off_button"
+		    selecting360ModeOnButton = "desktop_selecting_360_mode_on_button"
+		    background = "shell_page_background"
+		    select="shell_select_page_bg_select" 
+		    unselect="shell_select_page_bg_unselect" 
+		    editButton="shell_page_edit_button" 
+		    editExitButton="shell_page_edit_exit_button" 
+		    homepageMark="shell_page_homepage_mark"  
+		    drawerMark="shell_page_drawer_mark" 
+		    countDown="select_page_countdown"
+		    addButton="shell_page_add_button"/>
+		
+		<interactiveArrange 
+		    bg="shell_interactive_grid_bg" 
+		    scaleButton="shell_interactive_grid_scale_button" />
+		
+		<publicButton 
+		    close="public_button_close" 
+		    return="public_button_return" 
+		    confirm="public_button_confirm" />
+		
+		<app 
+		    multiChoice="shell_multi_choice"
+		    multiNotChoice="shell_multi_not_choice" />
+		
+		<dockMenu 
+		    lassoButtonOn="shell_dock_menu_lasso_button_on" 
+		    lassoButtonOff="shell_dock_menu_lasso_button_off" 
+		    dockLassoMode = "shell_dock_lasso_mode"
+		    addButtonOn="shell_dock_menu_add_button_on" 
+		    addButtonOff="shell_dock_menu_add_button_off" 
+		    alignmentButtonOn="shell_dock_menu_alignment_button_on" 
+		    alignmentButtonOff="shell_dock_menu_alignment_button_off" 
+		    homepageButtonOn="shell_dock_menu_homepage_button_on" 
+		    homepageButtonOff="shell_dock_menu_homepage_button_off" 
+		    resetButtonOn="shell_dock_menu_reset_button_on" 
+		    resetButtonOff="shell_dock_menu_reset_button_off"
+		   	editButtonOn="shell_dock_menu_edit_button_on" 
+		    editButtonOff="shell_dock_menu_edit_button_off"
+		    settingButtonOn="shell_dock_menu_setting_button_on" 
+		    settingButtonOff="shell_dock_menu_setting_button_off"
+		    mulitChoiceButtonOn="shell_dock_menu_mulit_choice_button_on" 
+		    mulitChoiceButtonOff="shell_dock_menu_mulit_choice_button_off" 
+		    />
+		
+		<widgetResize 
+		    androidMatchBox="shell_widget_android_resize_match_box" 
+		    androidUnmatchBox="shell_widget_android_resize_unmatch_box" 
+		    tsfBox="shell_widget_tsf_resize_box" 
+		    borderBox="shell_widget_border_box" 
+		    matchButton="shell_widget_resize_match_button" 
+		    unmatchButton="shell_widget_resize_unmatch_button" 
+		    />
+		
+		
+		<iconMenu 
+		    shadow_bg="icon_menu_bg" 
+		    
+		    alignOn="icon_menu_align_on"
+		    alignOff="icon_menu_align_off"
+		    
+		    deleteOn="icon_menu_delete_on"
+		    deleteOff="icon_menu_delete_off"
+		    
+		    detailOn="icon_menu_detail_on"
+		    detailOff="icon_menu_detail_off"
+		    
+		    iconOn="icon_menu_icon_on"
+		    iconOff="icon_menu_icon_off"
+		    
+		    mutilChoiceOn="icon_menu_mutil_choice_on"
+		    mutilChoiceOff="icon_menu_mutil_choice_off"
+		     
+		    renameOn="icon_menu_rename_on"
+		    renameOff="icon_menu_rename_off"
+		    
+		    resetOn="icon_menu_reset_on"
+		    resetOff="icon_menu_reset_off"
+		    
+		    uninstallOn="icon_menu_uninstall_on"
+		    uninstallOff="icon_menu_uninstall_off"
+		    
+		    moreOn="icon_menu_more_on"
+		    moreOff="icon_menu_more_off"
+		    />
+		
+		<unreadCount 
+		    bg="shell_unread_count_bg"/>
+		
+		<appAdder 
+		    bg="adder_background"/>
+		
+		<dock 
+		    bar="dock_bar" 
+		    scrollingModeBg="dock_scrolling_mode_bg"
+		    desktopSelectorButtonOn="dock_desktop_selector_button_on" 
+		    desktopSelectorButtonOff="dock_desktop_selector_button_off" 
+		    desktopSelectorButtonPoint="desktop_selector_button_point"  
+		    desktopSelectorButtonPointOffsetX="0" 
+		    desktopSelectorButtonPointOffsetY="45" 
+		    menuButtonOn="dock_menu_button_on" 
+		    menuButtonOff="dock_menu_button_off" 
+		    menuPoint ="dock_menu_point" 
+		    trashcanCloseButton="dock_trashcan_close_button" 
+		    trashcanOpenButton="dock_trashcan_open_button" 
+		    trashcanButtonPoint="dock_trashcan_button_point" 
+		    trashcanButtonPointOffsetX="0" 
+		    trashcanButtonPointOffsetY="45"
+		    itemStartMargin ="45" 
+		    itemEndMargin ="45" 
+		    itemOnFocusStartMargin ="65" 
+		    itemOnFocusEndMargin ="65" 
+		    bottomMargin ="24" 
+		    topMargin="24"
+		    leftMargin="24" 
+		    rightMargin="24"/>
+		
+		 <!--  如果你不希望强行填充OptionMenu内按钮颜色,你可以删除itemStandardColor或itemPressedColor节点-->
+		<OptionMenu 
+		    bg="option_menu_bg"
+		    secondBg="option_menu_second_bg"
+		    itemBg="option_menu_item_bg"
+		    secondItemBg="option_menu_second_item_bg"
+		    labelBg="option_menu_label_bg"
+		    addButton="option_menu_add"
+		    addAppButton="option_menu_add_application"
+		    addTSFWidgetButton="option_menu_add_tsf_widget"
+		    addAndroidWidgetButton="option_menu_add_android_widget"
+		    addShortcutButton="option_menu_add_shortcut"
+		    addFolderButton="option_menu_add_folder"
+		    addTSFShortcutButton="option_menu_add_tsf_shortcut"
+		    toolButton="option_menu_tool"
+		    toolLassoButton="option_menu_tool_lasso"
+		    toolMutilChoiceButton="option_menu_tool_mutil_choice"
+		    toolDesktopEditorButton="option_menu_tool_desktop_editor"
+		    tsfButton="option_menu_tsf"
+		    wallpaperButton="option_menu_wallpaper"
+		    favoriteButton="option_menu_favorite"
+		    favoriteAddButton="option_menu_favorite_add"
+		    favoriteDeleteButton="option_menu_favorite_delete"
+		    favoriteReturnButton="option_menu_favorite_return"
+		  
+		    buttonStandardColor="#FF999999"
+		    buttonPressedColor="#FFFFFFFF"
+		    labelTextColor="#FF999999"
+		  />
+		
+	</shell>
+	<wallpaper default="1">
+		<item image="wallpaper1" thumb="wallpaper1_thumb" />
+		<item image="wallpaper2" thumb="wallpaper2_thumb" />
+	</wallpaper>
+</theme>
+

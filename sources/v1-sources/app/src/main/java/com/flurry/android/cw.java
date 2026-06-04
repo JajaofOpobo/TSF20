@@ -1,0 +1,66 @@
+package com.flurry.android;
+
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.Map;
+
+/* loaded from: classes.dex */
+final class cw extends bw {
+    private /* synthetic */ String a;
+    private /* synthetic */ InstallReceiver b;
+
+    cw(InstallReceiver installReceiver, String str) {
+        this.b = installReceiver;
+        this.a = str;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // com.flurry.android.bw
+    public final void a() {
+        File file;
+        File file2;
+        File file3;
+        String b;
+        FileOutputStream fileOutputStream = null;
+        fileOutputStream = null;
+        FileOutputStream fileOutputStream2 = null;
+        fileOutputStream = null;
+        try {
+            try {
+                file = this.b.b;
+                File parentFile = file.getParentFile();
+                String str = "dir is..." + parentFile.toString();
+                if (parentFile.mkdirs() || parentFile.exists()) {
+                    file2 = this.b.b;
+                    FileOutputStream fileOutputStream3 = new FileOutputStream(file2);
+                    try {
+                        fileOutputStream3.write(this.a.getBytes());
+                        file3 = this.b.b;
+                        b = InstallReceiver.b(file3);
+                        for (Map.Entry entry : InstallReceiver.a(b).entrySet()) {
+                            StringBuilder append = new StringBuilder("entry: ").append((String) entry.getKey()).append("=");
+                            Object value = entry.getValue();
+                            append.append(value).toString();
+                            fileOutputStream2 = value;
+                        }
+                        bp.a(fileOutputStream3);
+                        fileOutputStream = fileOutputStream2;
+                    } catch (Throwable th) {
+                        th = th;
+                        fileOutputStream = fileOutputStream3;
+                        Cdo.b("InstallReceiver", "", th);
+                        bp.a(fileOutputStream);
+                    }
+                } else {
+                    Cdo.b("InstallReceiver", "Unable to create persistent dir: " + parentFile);
+                    bp.a((Closeable) null);
+                }
+            } catch (Throwable th2) {
+                th = th2;
+            }
+        } catch (Throwable th3) {
+            th = th3;
+        }
+    }
+}

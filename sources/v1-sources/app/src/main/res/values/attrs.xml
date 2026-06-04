@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="defaultScreen" format="integer">
+    </attr>
+    <attr name="cellWidth" format="dimension">
+    </attr>
+    <attr name="cellHeight" format="dimension">
+    </attr>
+    <attr name="longAxisStartPadding" format="dimension">
+    </attr>
+    <attr name="longAxisEndPadding" format="dimension">
+    </attr>
+    <attr name="shortAxisStartPadding" format="dimension">
+    </attr>
+    <attr name="shortAxisEndPadding" format="dimension">
+    </attr>
+    <attr name="shortAxisCells" format="integer">
+    </attr>
+    <attr name="longAxisCells" format="integer">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="bottomBarColor" format="color">
+    </attr>
+    <attr name="bottomBarHeight" format="dimension">
+    </attr>
+    <attr name="tabIndicatorHeight" format="dimension">
+    </attr>
+</resources>

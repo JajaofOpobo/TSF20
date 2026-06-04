@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<description>
+	<widget versionCode="1" icon="icon.png" cover="cover.png" category="tool" />
+	<appname>
+		<default name="Memo" />
+		<zh name="便笺" r="CN" />
+		<zh name="便箋" r="TW" />
+
+		<cs name="Memo" />
+		<da name="Memo" />
+		<el name="σημείωμα" />
+		<en name="Memo" />
+		<es name="Memo" />
+		<fr name="mémo" />
+		<hu name="Memo" />
+		<iw name="תזכיר" />
+		<ko name="메모" />
+
+		<nl name="Memo" />
+		<no name="Memo" />
+		<pl name="notatka" />
+		<tr name="not" />
+	</appname>
+</description>
+
