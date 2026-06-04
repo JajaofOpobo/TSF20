@@ -8,7 +8,7 @@ import com.tsf.shell.activity.tips.TipsDialogActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c implements a.InterfaceC0025a {
+public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     public static c a;
     public static a b;
     private static ArrayList<f> c;

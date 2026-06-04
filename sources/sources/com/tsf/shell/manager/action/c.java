@@ -11,7 +11,7 @@ import com.tsf.shell.activity.actionselector.ActionSelector;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c implements a.InterfaceC0025a {
+public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private int a;
     private int b;
     private com.tsf.shell.A c;

@@ -34,7 +34,7 @@ public class c {
     private float p;
     private boolean q = false;
     private boolean r = false;
-    private a.C0133a s;
+    private C0133a s;
 
     public void a() {
         boolean z = false;

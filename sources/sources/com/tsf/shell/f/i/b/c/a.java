@@ -5,7 +5,6 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
-import com.censivn.C3DEngine.b.c.a;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.C;
@@ -16,7 +15,7 @@ import com.tsf.shell.plugin.widget.FloatingWidgetPicker;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
+public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private static com.tsf.shell.f.i.b.c.b f;
     private static double p = 0.017453292519943295d;
     public int a;
@@ -172,7 +171,7 @@ public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
     public void k() {
         Intent intent = new Intent();
         intent.setClass(com.censivn.C3DEngine.a.d(), FloatingWidgetPicker.class);
-        this.s = Home.c.a(intent, (a.InterfaceC0025a) this);
+        this.s = Home.c.a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
     @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a

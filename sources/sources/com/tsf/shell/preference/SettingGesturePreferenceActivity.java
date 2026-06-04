@@ -15,7 +15,7 @@ import java.util.HashMap;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SettingGesturePreferenceActivity extends PreferenceActivity implements Preference.OnPreferenceClickListener, a {
+public class SettingGesturePreferenceActivity extends PreferenceActivity implements Preference.OnPreferenceClickListener, A {
     private HashMap<Integer, String> b;
     private HashMap<Integer, a.InterfaceC0025a> a = new HashMap<>();
     private int c = ACRAConstants.DEFAULT_SOCKET_TIMEOUT;

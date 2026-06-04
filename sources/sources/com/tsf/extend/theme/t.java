@@ -432,7 +432,7 @@ public class t extends BaseAdapter {
         }
     }
 
-    protected class C implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    protected class C implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         protected C() {
         }
 

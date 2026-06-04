@@ -19,7 +19,6 @@ import com.tsf.shell.ShellProvider;
 import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
-import com.tsf.shell.utils.b;
 import java.util.ArrayList;
 import java.util.Iterator;
 

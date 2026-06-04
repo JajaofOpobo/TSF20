@@ -378,10 +378,10 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private final a.b b;
+    class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private final com.tsf.extend.base.d.a.b b;
 
-        public a(a.b bVar) {
+        public a(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 

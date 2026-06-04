@@ -1,0 +1,506 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:17: error: cannot find symbol
+    private a.B f;
+             ^
+  symbol:   class B
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:39: error: cannot find symbol
+    public void a(a.B bVar) {
+                   ^
+  symbol:   class B
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/b.java:16: error: cannot find symbol
+    public a b() {
+           ^
+  symbol:   class a
+  location: class b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
+    public Bitmap getIcon(boolean z, a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcut3DInfo
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:35: error: cannot find symbol
+import com.tsf.shell.f.f.InterfaceC0101a;
+                        ^
+  symbol:   class InterfaceC0101a
+  location: package com.tsf.shell.f.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:37: error: cannot find symbol
+import com.tsf.shell.f.f.InterfaceC0101a;
+                        ^
+  symbol:   class InterfaceC0101a
+  location: package com.tsf.shell.f.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:253: error: cannot find symbol
+    public com.tsf.shell.f.f.a.d.a an() {
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a.d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:29: error: cannot find symbol
+    private C0133a g;
+            ^
+  symbol:   class C0133a
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
+    private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+            ^
+  symbol:   class d
+  location: class ThemeDataInfoLayout
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:20: error: cannot find symbol
+public class b implements e.A, a.InterfaceC0113a {
+                           ^
+  symbol:   class A
+  location: class e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:20: error: cannot find symbol
+public class b implements e.A, a.InterfaceC0113a {
+                                ^
+  symbol:   class InterfaceC0113a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/A.java:31: error: cannot find symbol
+    public static com.tsf.shell.f.h.b o;
+                                   ^
+  symbol:   class b
+  location: package com.tsf.shell.f.h
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/A.java:11: error: cannot find symbol
+public class A extends c<d> {
+                       ^
+  symbol: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/A.java:13: error: cannot find symbol
+public class A extends c<d> {
+                       ^
+  symbol: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/e/c.java:37: error: cannot find symbol
+    private C0133a s;
+            ^
+  symbol:   class C0133a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:77: error: cannot find symbol
+    public void a(f fVar) {
+                  ^
+  symbol:   class f
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/d.java:26: error: cannot find symbol
+    private d.b g;
+             ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/e.java:54: error: cannot find symbol
+    public static String a(c.B bVar) {
+                            ^
+  symbol:   class B
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:15: error: reference to a is ambiguous
+    private a.C0095a a;
+            ^
+  both class com.tsf.shell.f.e._g.a.a in com.tsf.shell.f.e._g.a and class com.tsf.shell.manager.r.c.a.a in com.tsf.shell.manager.r.c.a match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:16: error: reference to a is ambiguous
+    private a.C0095a b;
+            ^
+  both class com.tsf.shell.f.e._g.a.a in com.tsf.shell.f.e._g.a and class com.tsf.shell.manager.r.c.a.a in com.tsf.shell.manager.r.c.a match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:19: error: cannot find symbol
+    private a.C0095a d;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:20: error: cannot find symbol
+    private a.C0095a e;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:55: error: cannot find symbol
+    private b S;
+            ^
+  symbol:   class b
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:189: error: cannot find symbol
+    public b g() {
+           ^
+  symbol:   class b
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:426: error: cannot find symbol
+    private a.B b(i iVar) {
+             ^
+  symbol:   class B
+  location: interface a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:432: error: cannot find symbol
+    private a.B a(float f, float f2) {
+             ^
+  symbol:   class B
+  location: interface a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/b.java:160: error: cannot find symbol
+    private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.b bVar, Runnable runnable) {
+                                                                              ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/d.java:11: error: cannot find symbol
+import com.c.a.a.a.A;
+                  ^
+  symbol:   class A
+  location: package com.c.a.a.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/A.java:17: error: cannot find symbol
+    private i a;
+            ^
+  symbol:   class i
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/f.java:12: error: cannot find symbol
+    private i e;
+            ^
+  symbol:   class i
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:15: error: b is already defined in this compilation unit
+import com.tsf.shell.manager.f.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:9: error: a type with the same simple name is already defined by the single-type-import of a
+import com.tsf.shell.manager.r.c.a.a;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/d.java:6: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/A.java:195: error: cannot find symbol
+    public static float[] a(b bVar, float f, float f2) {
+                            ^
+  symbol:   class b
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/a.java:26: error: cannot find symbol
+    private i h = new i();
+            ^
+  symbol:   class i
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:22: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.shell.utils.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeMixerUtils.java:17: error: cannot find symbol
+    public static TextureElement createIconTexture(a aVar, String str, int i) {
+                                                   ^
+  symbol:   class a
+  location: class ThemeMixerUtils
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeMixMenu.java:18: error: reference to b is ambiguous
+public class ThemeMixMenu extends b {
+                                  ^
+  both class com.tsf.b in com.tsf and class com.tsf.shell.f.e._g.a.b in com.tsf.shell.f.e._g.a match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeIconDesignerMenu.java:30: error: reference to b is ambiguous
+    private b mLableContentLayout;
+            ^
+  both class com.censivn.C3DEngine.b.b.a.b in com.censivn.C3DEngine.b.b.a and class com.tsf.b in com.tsf match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeIconDesignerMenu.java:37: error: d.a is not public in d; cannot be accessed from outside package
+    private a mCalStyle = new a();
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeMixMenu.java:8: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.shell.f.e._g.a.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeIconDesignerMenu.java:12: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeFeaturedMenu.java:21: error: reference to b is ambiguous
+public class ThemeFeaturedMenu extends b {
+                                       ^
+  both class com.tsf.b in com.tsf and class com.tsf.shell.f.e._g.a.b in com.tsf.shell.f.e._g.a match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeFeaturedMenu.java:12: error: a type with the same simple name is already defined by the single-type-import of b
+import com.tsf.shell.f.e._g.a.b;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:26: error: cannot find symbol
+    private com.tsf.shell.f.e.c.a x;
+                               ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:92: error: cannot find symbol
+    public b(com.tsf.shell.f.e.c.a aVar) {
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:26: error: cannot find symbol
+    private com.tsf.shell.f.e._c.a x;
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:92: error: cannot find symbol
+    public b(com.tsf.shell.f.e._c.a aVar) {
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_e/c.java:37: error: cannot find symbol
+    private C0133a s;
+            ^
+  symbol:   class C0133a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/e.java:128: error: cannot find symbol
+    private void a(a.C cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                    ^
+  symbol:   class C
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/e.java:128: error: cannot find symbol
+    private void a(a.C cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/b.java:129: error: cannot find symbol
+    private void a(a.C cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                    ^
+  symbol:   class C
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/b.java:129: error: cannot find symbol
+    private void a(a.C cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/a.java:150: error: cannot find symbol
+    private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z, float f, float f2, float f3, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                                                                                       ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:15: error: cannot find symbol
+    private com.tsf.shell.f.e.c.a e;
+                               ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:50: error: cannot find symbol
+    public com.tsf.shell.f.e.c.a b() {
+                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/b/a.java:28: error: cannot find symbol
+    private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.a.2
+            ^
+  symbol:   class d
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/c.java:19: error: reference to a is ambiguous
+public class c extends j implements a.InterfaceC0098a {
+                                    ^
+  both class com.tsf.shell.f.e.h.a in com.tsf.shell.f.e.h and class com.tsf.shell.manager.c.a.a.a in com.tsf.shell.manager.c.a.a match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:13: error: cannot find symbol
+    private b a;
+            ^
+  symbol:   class b
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:24: error: cannot find symbol
+    public c(b bVar) {
+             ^
+  symbol:   class b
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/f.java:28: error: cannot find symbol
+    private a.C0144a d;
+             ^
+  symbol:   class C0144a
+  location: class b.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/c.java:15: error: a type with the same simple name is already defined by the single-type-import of a
+import com.tsf.shell.manager.c.a.a.a;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/f.java:16: error: a type with the same simple name is already defined by the single-type-import of g
+import com.tsf.shell.manager.r.c.g;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:11: error: cannot find symbol
+    private b a;
+            ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:21: error: cannot find symbol
+    public d(b bVar, i iVar) {
+             ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/c.java:14: error: cannot find symbol
+    private com.tsf.shell.f.f.a.c._a h;
+                                 ^
+  symbol:   class _a
+  location: package com.tsf.shell.f.f.a.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/m.java:12: error: cannot find symbol
+    private com.tsf.shell.f.f.a.d.a h;
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a.d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:16: error: cannot find symbol
+    private ArrayList<a.C0095a> j;
+                       ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:130: error: cannot find symbol
+    public void a(ArrayList<a.C0095a> arrayList) {
+                             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/c.java:14: error: cannot find symbol
+    private com.tsf.shell.f.f.a._c._a h;
+                                  ^
+  symbol:   class _a
+  location: package com.tsf.shell.f.f.a._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:16: error: cannot find symbol
+    private ArrayList<a.C0095a> j;
+                       ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:130: error: cannot find symbol
+    public void a(ArrayList<a.C0095a> arrayList) {
+                             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:11: error: cannot find symbol
+    protected ArrayList<a> b = new ArrayList<>();
+                        ^
+  symbol:   class a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:59: error: cannot find symbol
+    public ArrayList<a> b() {
+                     ^
+  symbol:   class a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:10: error: cannot find symbol
+    ArrayList<b> b;
+              ^
+  symbol:   class b
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/a/a.java:18: error: reference to i is ambiguous
+    private i d;
+            ^
+  both class com.censivn.C3DEngine.b.f.i in com.censivn.C3DEngine.b.f and class com.censivn.C3DEngine.e.i in com.censivn.C3DEngine.e match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/a/a.java:11: error: a type with the same simple name is already defined by the single-type-import of i
+import com.censivn.C3DEngine.e.i;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/j.java:72: error: cannot find symbol
+    public class a extends c<Void, Bitmap> {
+                           ^
+  symbol:   class c
+  location: class j
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:10: error: cannot find symbol
+    private a vTarget;
+            ^
+  symbol:   class a
+  location: class VEffectsStack
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:164: error: cannot find symbol
+    public final c<Params, Result> b(Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:168: error: cannot find symbol
+    public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/a/a.java:18: error: reference to i is ambiguous
+    private i d;
+            ^
+  both class com.censivn.C3DEngine.b.f.i in com.censivn.C3DEngine.b.f and class com.censivn.C3DEngine.e.i in com.censivn.C3DEngine.e match
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/a/a.java:11: error: a type with the same simple name is already defined by the single-type-import of i
+import com.censivn.C3DEngine.e.i;
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/j.java:72: error: cannot find symbol
+    public class a extends c<Void, Bitmap> {
+                           ^
+  symbol:   class c
+  location: class j
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:164: error: cannot find symbol
+    public final c<Params, Result> b(Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:168: error: cannot find symbol
+    public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:18: error: cannot find symbol
+public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
+                                                       ^
+  symbol:   class InterfaceC0025a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:18: error: cyclic inheritance involving a
+public class a extends com.tsf.shell.f.i.B implements a.InterfaceC0025a {
+       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:19: error: modifier private,static not allowed here
+    private static com.tsf.shell.f.i._b.c.b f;
+                                            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:20: error: modifier private,static not allowed here
+    private static double p = 0.017453292519943295d;
+                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:21: error: modifier public not allowed here
+    public int a;
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:23: error: modifier private not allowed here
+    private int g;
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:24: error: modifier private not allowed here
+    private int h;
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:25: error: modifier private not allowed here
+    private int i;
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:26: error: modifier private not allowed here
+    private int j;
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:27: error: modifier private not allowed here
+    private k k;
+              ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:28: error: modifier private not allowed here
+    private boolean l;
+                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:29: error: modifier private not allowed here
+    private boolean m;
+                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:30: error: modifier private not allowed here
+    private boolean n;
+                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/c/a.java:31: error: modifier private not allowed here
+    private float o;
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> java.lang.NullPointerException: Cannot invoke "javax.lang.model.element.TypeElement.getNestingKind()" because "typeElement" is null
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2s
+15 actionable tasks: 1 executed, 14 up-to-date

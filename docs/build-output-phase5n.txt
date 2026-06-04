@@ -1,0 +1,1064 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:17: error: cannot find symbol
+    private a.b f;
+             ^
+  symbol:   class b
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:39: error: cannot find symbol
+    public void a(a.b bVar) {
+                   ^
+  symbol:   class b
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/b.java:16: error: cannot find symbol
+    public a b() {
+           ^
+  symbol:   class a
+  location: class b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
+    public Bitmap getIcon(boolean z, a aVar) {
+                                     ^
+  symbol:   class a
+  location: class LauncherShortcut3DInfo
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:249: error: cannot find symbol
+    public com.tsf.shell.f.f.a.d.a an() {
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a.d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:29: error: cannot find symbol
+    private C0133a g;
+            ^
+  symbol:   class C0133a
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
+    private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+            ^
+  symbol:   class d
+  location: class ThemeDataInfoLayout
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:19: error: cannot find symbol
+public class b implements e.a, a.InterfaceC0113a {
+                                ^
+  symbol:   class InterfaceC0113a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/A.java:31: error: cannot find symbol
+    public static com.tsf.shell.f.h.b o;
+                                   ^
+  symbol:   class b
+  location: package com.tsf.shell.f.h
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/A.java:11: error: cannot find symbol
+public class A extends c<d> {
+                       ^
+  symbol: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/A.java:13: error: cannot find symbol
+public class A extends c<d> {
+                       ^
+  symbol: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/e/c.java:37: error: cannot find symbol
+    private C0133a s;
+            ^
+  symbol:   class C0133a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:27: error: cannot find symbol
+    private b.a i;
+             ^
+  symbol:   class a
+  location: class b
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:77: error: cannot find symbol
+    public void a(f fVar) {
+                  ^
+  symbol:   class f
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/d.java:25: error: cannot find symbol
+    private d.b g;
+             ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/e.java:54: error: cannot find symbol
+    public static String a(c.b bVar) {
+                            ^
+  symbol:   class b
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:11: error: cannot find symbol
+    private a.C0095a a;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:12: error: cannot find symbol
+    private a.C0095a b;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:18: error: cannot find symbol
+    private e.a h;
+             ^
+  symbol:   class a
+  location: class e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:19: error: cannot find symbol
+    private a.C0095a d;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:20: error: cannot find symbol
+    private a.C0095a e;
+             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:55: error: cannot find symbol
+    private b S;
+            ^
+  symbol:   class b
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:189: error: cannot find symbol
+    public b g() {
+           ^
+  symbol:   class b
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:426: error: cannot find symbol
+    private a.b b(i iVar) {
+             ^
+  symbol:   class b
+  location: interface a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:432: error: cannot find symbol
+    private a.b a(float f, float f2) {
+             ^
+  symbol:   class b
+  location: interface a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/b.java:160: error: cannot find symbol
+    private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.b bVar, Runnable runnable) {
+                                                                              ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/d.java:11: error: cannot find symbol
+import com.c.a.a.a.A;
+                  ^
+  symbol:   class A
+  location: package com.c.a.a.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/A.java:17: error: cannot find symbol
+    private i a;
+            ^
+  symbol:   class i
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/f.java:12: error: cannot find symbol
+    private i e;
+            ^
+  symbol:   class i
+  location: class f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/A.java:195: error: cannot find symbol
+    public static float[] a(b bVar, float f, float f2) {
+                            ^
+  symbol:   class b
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/a.java:26: error: cannot find symbol
+    private i h = new i();
+            ^
+  symbol:   class i
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:30: error: cannot find symbol
+    public static void a(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                      ^
+  symbol:   class a
+  location: class ShellProvider
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:40: error: cannot find symbol
+    public static void b(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                      ^
+  symbol:   class a
+  location: class ShellProvider
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:63: error: cannot find symbol
+    public static void c(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                      ^
+  symbol:   class a
+  location: class ShellProvider
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:89: error: cannot find symbol
+    public static void d(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                      ^
+  symbol:   class a
+  location: class ShellProvider
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:114: error: cannot find symbol
+    public static void e(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                      ^
+  symbol:   class a
+  location: class ShellProvider
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeMixerUtils.java:17: error: cannot find symbol
+    public static TextureElement createIconTexture(a aVar, String str, int i) {
+                                                   ^
+  symbol:   class a
+  location: class ThemeMixerUtils
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:26: error: cannot find symbol
+    private com.tsf.shell.f.e.c.a x;
+                               ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:92: error: cannot find symbol
+    public b(com.tsf.shell.f.e.c.a aVar) {
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:26: error: cannot find symbol
+    private com.tsf.shell.f.e._c.a x;
+                                ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:92: error: cannot find symbol
+    public b(com.tsf.shell.f.e._c.a aVar) {
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_e/c.java:37: error: cannot find symbol
+    private C0133a s;
+            ^
+  symbol:   class C0133a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/e.java:128: error: cannot find symbol
+    private void a(a.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/b.java:129: error: cannot find symbol
+    private void a(a.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                     ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/a.java:150: error: cannot find symbol
+    private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z, float f, float f2, float f3, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                                                                                       ^
+  symbol:   class b
+  location: package com.censivn.C3DEngine.b.g
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:15: error: cannot find symbol
+    private com.tsf.shell.f.e.c.a e;
+                               ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:50: error: cannot find symbol
+    public com.tsf.shell.f.e.c.a b() {
+                              ^
+  symbol:   class a
+  location: package com.tsf.shell.f.e.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/b/a.java:28: error: cannot find symbol
+    private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.a.2
+            ^
+  symbol:   class d
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/c.java:17: error: cannot find symbol
+public class c extends j implements a.InterfaceC0098a {
+                                     ^
+  symbol:   class InterfaceC0098a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:13: error: cannot find symbol
+    private b a;
+            ^
+  symbol:   class b
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:24: error: cannot find symbol
+    public c(b bVar) {
+             ^
+  symbol:   class b
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/f.java:26: error: cannot find symbol
+    private a.C0144a d;
+             ^
+  symbol:   class C0144a
+  location: class b.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:11: error: cannot find symbol
+    private b a;
+            ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:21: error: cannot find symbol
+    public d(b bVar, i iVar) {
+             ^
+  symbol:   class b
+  location: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/c.java:14: error: cannot find symbol
+    private com.tsf.shell.f.f.a.c._a h;
+                                 ^
+  symbol:   class _a
+  location: package com.tsf.shell.f.f.a.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/m.java:12: error: cannot find symbol
+    private com.tsf.shell.f.f.a.d.a h;
+                                 ^
+  symbol:   class a
+  location: package com.tsf.shell.f.f.a.d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:16: error: cannot find symbol
+    private ArrayList<a.C0095a> j;
+                       ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:130: error: cannot find symbol
+    public void a(ArrayList<a.C0095a> arrayList) {
+                             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/c.java:14: error: cannot find symbol
+    private com.tsf.shell.f.f.a._c._a h;
+                                  ^
+  symbol:   class _a
+  location: package com.tsf.shell.f.f.a._c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:16: error: cannot find symbol
+    private ArrayList<a.C0095a> j;
+                       ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:130: error: cannot find symbol
+    public void a(ArrayList<a.C0095a> arrayList) {
+                             ^
+  symbol:   class C0095a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:11: error: cannot find symbol
+    protected ArrayList<a> b = new ArrayList<>();
+                        ^
+  symbol:   class a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:59: error: cannot find symbol
+    public ArrayList<a> b() {
+                     ^
+  symbol:   class a
+  location: class c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:10: error: cannot find symbol
+    ArrayList<b> b;
+              ^
+  symbol:   class b
+  location: class A
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/j.java:72: error: cannot find symbol
+    public class a extends c<Void, Bitmap> {
+                           ^
+  symbol:   class c
+  location: class j
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:10: error: cannot find symbol
+    private a vTarget;
+            ^
+  symbol:   class a
+  location: class VEffectsStack
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:164: error: cannot find symbol
+    public final c<Params, Result> b(Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:168: error: cannot find symbol
+    public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/j.java:72: error: cannot find symbol
+    public class a extends c<Void, Bitmap> {
+                           ^
+  symbol:   class c
+  location: class j
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:164: error: cannot find symbol
+    public final c<Params, Result> b(Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:168: error: cannot find symbol
+    public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                 ^
+  symbol:   class c
+  location: class C<Params,Result>
+  where Params,Result are type-variables:
+    Params extends Object declared in class C
+    Result extends Object declared in class C
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/d/a.java:16: error: cannot find symbol
+    private a.C0127a e;
+             ^
+  symbol:   class C0127a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/a.java:17: error: cannot find symbol
+    private a.C0127a e;
+             ^
+  symbol:   class C0127a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_a/a.java:12: error: cannot find symbol
+    private n.c b;
+             ^
+  symbol:   class c
+  location: class n
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_a/a.java:19: error: cannot find symbol
+    public void a(n.c cVar) {
+                   ^
+  symbol:   class c
+  location: class n
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/service/c.java:33: error: cannot find symbol
+    class b extends a.AbstractBinderC0177a {
+                     ^
+  symbol:   class AbstractBinderC0177a
+  location: interface a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:22: error: package a does not exist
+public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.InterfaceC0180c {
+                                                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/a/b.java:9: error: cannot find symbol
+    private a.C0108a a;
+             ^
+  symbol:   class C0108a
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/_a/a/e.java:10: error: cannot find symbol
+import com.b.a.A;
+              ^
+  symbol:   class A
+  location: package com.b.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:18: error: cannot find symbol
+    public void a(a.C0152a c0152a, TextView textView) {
+                   ^
+  symbol:   class C0152a
+  location: class d.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:29: error: cannot find symbol
+    public static boolean b(a.C0152a c0152a, TextView textView) {
+                             ^
+  symbol:   class C0152a
+  location: class d.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:51: error: cannot find symbol
+        private a.C0152a e;
+                 ^
+  symbol:   class C0152a
+  location: class d.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:54: error: cannot find symbol
+        public a(a.C0152a c0152a, TextView textView) {
+                  ^
+  symbol:   class C0152a
+  location: class d.a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/SizeFragmentDialogActicity.java:5: error: cannot find symbol
+import android.support.v4.app.k;
+                             ^
+  symbol:   class k
+  location: package android.support.v4.app
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/SizeFragmentDialogActicity.java:19: error: cannot find symbol
+    public static class a extends k {
+                                  ^
+  symbol:   class k
+  location: class SizeFragmentDialogActicity
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/CropImageActivity.java:16: error: cannot find symbol
+import android.support.v4.app.k;
+                             ^
+  symbol:   class k
+  location: package android.support.v4.app
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/CropImageActivity.java:342: error: cannot find symbol
+    public static class a extends k {
+                                  ^
+  symbol:   class k
+  location: class CropImageActivity
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/f.java:22: error: cannot find symbol
+    private c.a b;
+             ^
+  symbol:   class a
+  location: class f.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/f.java:56: error: cannot find symbol
+    public void a(o oVar, c.a aVar) {
+                           ^
+  symbol:   class a
+  location: class f.c
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/c.java:31: error: package android.support.v4.d does not exist
+    private android.support.v4.d.f<String, BitmapDrawable> c;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/e.java:6: error: cannot find symbol
+import android.support.v4.app.r;
+                             ^
+  symbol:   class r
+  location: package android.support.v4.app
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/e.java:10: error: cannot find symbol
+public class e extends r {
+                       ^
+  symbol: class r
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/ThemePreviewDetilActivity.java:11: error: cannot find symbol
+import android.support.v4.app.r;
+                             ^
+  symbol:   class r
+  location: package android.support.v4.app
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/LinePageIndicator.java:12: error: cannot find symbol
+import android.support.v4.view.au;
+                              ^
+  symbol:   class au
+  location: package android.support.v4.view
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/LinePageIndicator.java:13: error: cannot find symbol
+import android.support.v4.view.t;
+                              ^
+  symbol:   class t
+  location: package android.support.v4.view
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/ThemePreviewDetilActivity.java:64: error: cannot find symbol
+    class a extends r {
+                    ^
+  symbol:   class r
+  location: class ThemePreviewDetilActivity
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/a.java:5: error: cannot find symbol
+import android.support.v4.app.k;
+                             ^
+  symbol:   class k
+  location: package android.support.v4.app
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/a.java:13: error: cannot find symbol
+public class a extends k {
+                       ^
+  symbol: class k
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/TitlePageIndicator.java:15: error: cannot find symbol
+import android.support.v4.view.au;
+                              ^
+  symbol:   class au
+  location: package android.support.v4.view
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/TitlePageIndicator.java:16: error: cannot find symbol
+import android.support.v4.view.t;
+                              ^
+  symbol:   class t
+  location: package android.support.v4.view
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/A.java:11: error: cannot find symbol
+  public class A extends c<d> {
+                         ^
+    symbol: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/A.java:13: error: cannot find symbol
+  public class A extends c<d> {
+                         ^
+    symbol: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/e.java:10: error: cannot find symbol
+  public class e extends r {
+                         ^
+    symbol: class r
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/a.java:13: error: cannot find symbol
+  public class a extends k {
+                         ^
+    symbol: class kNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/g.java:22: error: package a does not exist
+  public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.InterfaceC0180c {
+                                                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/c.java:31: error: package android.support.v4.d does not exist
+      private android.support.v4.d.f<String, BitmapDrawable> c;
+                                  ^Note: Recompile with -Xlint:unchecked for details./home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:17: error: cannot find symbol
+      private a.b f;
+               ^
+    symbol:   class b
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/d.java:39: error: cannot find symbol
+      public void a(a.b bVar) {
+                     ^
+    symbol:   class b
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/b.java:16: error: cannot find symbol
+      public a b() {
+             ^
+    symbol:   class a
+    location: class b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
+      public Bitmap getIcon(boolean z, a aVar) {
+                                       ^
+    symbol:   class a
+    location: class LauncherShortcut3DInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:249: error: cannot find symbol
+      public com.tsf.shell.f.f.a.d.a an() {
+                                  ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a.d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/d.java:29: error: cannot find symbol
+      private C0133a g;
+              ^
+    symbol:   class C0133a
+    location: class d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
+      private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
+              ^
+    symbol:   class d
+    location: class ThemeDataInfoLayout
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:19: error: cannot find symbol
+  public class b implements e.a, a.InterfaceC0113a {
+                                  ^
+    symbol:   class InterfaceC0113a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/A.java:31: error: cannot find symbol
+      public static com.tsf.shell.f.h.b o;
+                                     ^
+    symbol:   class b
+    location: package com.tsf.shell.f.h
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/e/c.java:37: error: cannot find symbol
+      private C0133a s;
+              ^
+    symbol:   class C0133a
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/b.java:27: error: cannot find symbol
+      private b.a i;
+               ^
+    symbol:   class a
+    location: class b
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/a.java:77: error: cannot find symbol
+      public void a(f fVar) {
+                    ^
+    symbol:   class f
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/d.java:25: error: cannot find symbol
+      private d.b g;
+               ^
+    symbol:   class b
+    location: class d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/e.java:54: error: cannot find symbol
+      public static String a(c.b bVar) {
+                              ^
+    symbol:   class b
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:11: error: cannot find symbol
+      private a.C0095a a;
+               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:12: error: cannot find symbol
+      private a.C0095a b;
+               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/g.java:18: error: cannot find symbol
+      private e.a h;
+               ^
+    symbol:   class a
+    location: class e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:19: error: cannot find symbol
+      private a.C0095a d;
+               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/B.java:20: error: cannot find symbol
+      private a.C0095a e;
+               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:55: error: cannot find symbol
+      private b S;
+              ^
+    symbol:   class b
+    location: class f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/f.java:189: error: cannot find symbol
+      public b g() {
+             ^
+    symbol:   class b
+    location: class f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:426: error: cannot find symbol
+      private a.b b(i iVar) {
+               ^
+    symbol:   class b
+    location: interface a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/A.java:432: error: cannot find symbol
+      private a.b a(float f, float f2) {
+               ^
+    symbol:   class b
+    location: interface a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/b.java:160: error: cannot find symbol
+      private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.b bVar, Runnable runnable) {
+                                                                                ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/d.java:11: error: cannot find symbol
+  import com.c.a.a.a.A;
+                    ^
+    symbol:   class A
+    location: package com.c.a.a.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/A.java:17: error: cannot find symbol
+      private i a;
+              ^
+    symbol:   class i
+    location: class A
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/f.java:12: error: cannot find symbol
+      private i e;
+              ^
+    symbol:   class i
+    location: class f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/A.java:195: error: cannot find symbol
+      public static float[] a(b bVar, float f, float f2) {
+                              ^
+    symbol:   class b
+    location: class A
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/a.java:26: error: cannot find symbol
+      private i h = new i();
+              ^
+    symbol:   class i
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:30: error: cannot find symbol
+      public static void a(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                        ^
+    symbol:   class a
+    location: class ShellProvider
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:40: error: cannot find symbol
+      public static void b(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                        ^
+    symbol:   class a
+    location: class ShellProvider
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:63: error: cannot find symbol
+      public static void c(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                        ^
+    symbol:   class a
+    location: class ShellProvider
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:89: error: cannot find symbol
+      public static void d(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                        ^
+    symbol:   class a
+    location: class ShellProvider
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/c/a/a.java:114: error: cannot find symbol
+      public static void e(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
+                                        ^
+    symbol:   class a
+    location: class ShellProvider
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeMixerUtils.java:17: error: cannot find symbol
+      public static TextureElement createIconTexture(a aVar, String str, int i) {
+                                                     ^
+    symbol:   class a
+    location: class ThemeMixerUtils
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:26: error: cannot find symbol
+      private com.tsf.shell.f.e.c.a x;
+                                 ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/b.java:92: error: cannot find symbol
+      public b(com.tsf.shell.f.e.c.a aVar) {
+                                  ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:26: error: cannot find symbol
+      private com.tsf.shell.f.e._c.a x;
+                                  ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e._c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_c/b.java:92: error: cannot find symbol
+      public b(com.tsf.shell.f.e._c.a aVar) {
+                                   ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e._c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/_e/c.java:37: error: cannot find symbol
+      private C0133a s;
+              ^
+    symbol:   class C0133a
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/e.java:128: error: cannot find symbol
+      private void a(a.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/b.java:129: error: cannot find symbol
+      private void a(a.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                       ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/a/a.java:150: error: cannot find symbol
+      private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z, float f, float f2, float f3, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+                                                                                                                                         ^
+    symbol:   class b
+    location: package com.censivn.C3DEngine.b.g
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:15: error: cannot find symbol
+      private com.tsf.shell.f.e.c.a e;
+                                 ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/B.java:50: error: cannot find symbol
+      public com.tsf.shell.f.e.c.a b() {
+                                ^
+    symbol:   class a
+    location: package com.tsf.shell.f.e.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/b/a.java:28: error: cannot find symbol
+      private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.a.2
+              ^
+    symbol:   class d
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/a/a/a/c.java:17: error: cannot find symbol
+  public class c extends j implements a.InterfaceC0098a {
+                                       ^
+    symbol:   class InterfaceC0098a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:13: error: cannot find symbol
+      private b a;
+              ^
+    symbol:   class b
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/c.java:24: error: cannot find symbol
+      public c(b bVar) {
+               ^
+    symbol:   class b
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/f.java:26: error: cannot find symbol
+      private a.C0144a d;
+               ^
+    symbol:   class C0144a
+    location: class b.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:11: error: cannot find symbol
+      private b a;
+              ^
+    symbol:   class b
+    location: class d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/h/d.java:21: error: cannot find symbol
+      public d(b bVar, i iVar) {
+               ^
+    symbol:   class b
+    location: class d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/c.java:14: error: cannot find symbol
+      private com.tsf.shell.f.f.a.c._a h;
+                                   ^
+    symbol:   class _a
+    location: package com.tsf.shell.f.f.a.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/m.java:12: error: cannot find symbol
+      private com.tsf.shell.f.f.a.d.a h;
+                                   ^
+    symbol:   class a
+    location: package com.tsf.shell.f.f.a.d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:16: error: cannot find symbol
+      private ArrayList<a.C0095a> j;
+                         ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/d.java:130: error: cannot find symbol
+      public void a(ArrayList<a.C0095a> arrayList) {
+                               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/c.java:14: error: cannot find symbol
+      private com.tsf.shell.f.f.a._c._a h;
+                                    ^
+    symbol:   class _a
+    location: package com.tsf.shell.f.f.a._c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:16: error: cannot find symbol
+      private ArrayList<a.C0095a> j;
+                         ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/_c/d.java:130: error: cannot find symbol
+      public void a(ArrayList<a.C0095a> arrayList) {
+                               ^
+    symbol:   class C0095a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:11: error: cannot find symbol
+      protected ArrayList<a> b = new ArrayList<>();
+                          ^
+    symbol:   class a
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/c.java:59: error: cannot find symbol
+      public ArrayList<a> b() {
+                       ^
+    symbol:   class a
+    location: class c
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/A.java:10: error: cannot find symbol
+      ArrayList<b> b;
+                ^
+    symbol:   class b
+    location: class A
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/j.java:72: error: cannot find symbol
+      public class a extends c<Void, Bitmap> {
+                             ^
+    symbol:   class c
+    location: class j
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:10: error: cannot find symbol
+      private a vTarget;
+              ^
+    symbol:   class a
+    location: class VEffectsStack
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:164: error: cannot find symbol
+      public final c<Params, Result> b(Params... paramsArr) {
+                   ^
+    symbol:   class c
+    location: class C<Params,Result>
+    where Params,Result are type-variables:
+      Params extends Object declared in class C
+      Result extends Object declared in class C
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/c/a/C.java:168: error: cannot find symbol
+      public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                   ^
+    symbol:   class c
+    location: class C<Params,Result>
+    where Params,Result are type-variables:
+      Params extends Object declared in class C
+      Result extends Object declared in class C
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/j.java:72: error: cannot find symbol
+      public class a extends c<Void, Bitmap> {
+                             ^
+    symbol:   class c
+    location: class j
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:164: error: cannot find symbol
+      public final c<Params, Result> b(Params... paramsArr) {
+                   ^
+    symbol:   class c
+    location: class C<Params,Result>
+    where Params,Result are type-variables:
+      Params extends Object declared in class C
+      Result extends Object declared in class C
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_c/a/C.java:168: error: cannot find symbol
+      public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+                   ^
+    symbol:   class c
+    location: class C<Params,Result>
+    where Params,Result are type-variables:
+      Params extends Object declared in class C
+      Result extends Object declared in class C
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_b/d/a.java:16: error: cannot find symbol
+      private a.C0127a e;
+               ^
+    symbol:   class C0127a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/a.java:17: error: cannot find symbol
+      private a.C0127a e;
+               ^
+    symbol:   class C0127a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_a/a.java:12: error: cannot find symbol
+      private n.c b;
+               ^
+    symbol:   class c
+    location: class n
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/_a/a.java:19: error: cannot find symbol
+      public void a(n.c cVar) {
+                     ^
+    symbol:   class c
+    location: class n
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/widget/alarm/service/c.java:33: error: cannot find symbol
+      class b extends a.AbstractBinderC0177a {
+                       ^
+    symbol:   class AbstractBinderC0177a
+    location: interface a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/preference/a/a/a/b.java:9: error: cannot find symbol
+      private a.C0108a a;
+               ^
+    symbol:   class C0108a
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/_a/a/e.java:10: error: cannot find symbol
+  import com.b.a.A;
+                ^
+    symbol:   class A
+    location: package com.b.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:18: error: cannot find symbol
+      public void a(a.C0152a c0152a, TextView textView) {
+                     ^
+    symbol:   class C0152a
+    location: class d.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:29: error: cannot find symbol
+      public static boolean b(a.C0152a c0152a, TextView textView) {
+                               ^
+    symbol:   class C0152a
+    location: class d.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:51: error: cannot find symbol
+          private a.C0152a e;
+                   ^
+    symbol:   class C0152a
+    location: class d.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/fontspicker/d.java:54: error: cannot find symbol
+          public a(a.C0152a c0152a, TextView textView) {
+                    ^
+    symbol:   class C0152a
+    location: class d.a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/SizeFragmentDialogActicity.java:5: error: cannot find symbol
+  import android.support.v4.app.k;
+                               ^
+    symbol:   class k
+    location: package android.support.v4.app
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/SizeFragmentDialogActicity.java:19: error: cannot find symbol
+      public static class a extends k {
+                                    ^
+    symbol:   class k
+    location: class SizeFragmentDialogActicity
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/CropImageActivity.java:16: error: cannot find symbol
+  import android.support.v4.app.k;
+                               ^
+    symbol:   class k
+    location: package android.support.v4.app
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/crop/CropImageActivity.java:342: error: cannot find symbol
+      public static class a extends k {
+                                    ^
+    symbol:   class k
+    location: class CropImageActivity
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/f.java:22: error: cannot find symbol
+      private c.a b;
+               ^
+    symbol:   class a
+    location: class f.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/utils/f.java:56: error: cannot find symbol
+      public void a(o oVar, c.a aVar) {
+                             ^
+    symbol:   class a
+    location: class f.c
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/e.java:6: error: cannot find symbol
+  import android.support.v4.app.r;
+                               ^
+    symbol:   class r
+    location: package android.support.v4.app
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/ThemePreviewDetilActivity.java:11: error: cannot find symbol
+  import android.support.v4.app.r;
+                               ^
+    symbol:   class r
+    location: package android.support.v4.app
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/LinePageIndicator.java:12: error: cannot find symbol
+  import android.support.v4.view.au;
+                                ^
+    symbol:   class au
+    location: package android.support.v4.view
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/LinePageIndicator.java:13: error: cannot find symbol
+  import android.support.v4.view.t;
+                                ^
+    symbol:   class t
+    location: package android.support.v4.view
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/ThemePreviewDetilActivity.java:64: error: cannot find symbol
+      class a extends r {
+                      ^
+    symbol:   class r
+    location: class ThemePreviewDetilActivity
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/themepreview/a.java:5: error: cannot find symbol
+  import android.support.v4.app.k;
+                               ^
+    symbol:   class k
+    location: package android.support.v4.app
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/TitlePageIndicator.java:15: error: cannot find symbol
+  import android.support.v4.view.au;
+                                ^
+    symbol:   class au
+    location: package android.support.v4.view
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/plugin/themepicker/indicator/TitlePageIndicator.java:16: error: cannot find symbol
+  import android.support.v4.view.t;
+                                ^
+    symbol:   class t
+    location: package android.support.v4.viewNote: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API.
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s
+15 actionable tasks: 1 executed, 14 up-to-date

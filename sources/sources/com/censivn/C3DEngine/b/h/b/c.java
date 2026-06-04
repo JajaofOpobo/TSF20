@@ -19,7 +19,7 @@ import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends j implements b.a, e.a, d, A.InterfaceC0113a {
+public class c extends j implements b.a, e.a, A.InterfaceC0113a {
     private static j Q;
     private static c.a R;
     private Number3d A;

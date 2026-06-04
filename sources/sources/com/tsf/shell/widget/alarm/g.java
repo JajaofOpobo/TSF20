@@ -19,7 +19,7 @@ import com.tsf.shell.widget.alarm.b.e;
 import com.tsf.shell.widget.alarm.service.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.InterfaceC0180c {
+public class g extends VObject3dContainer implements AlarmWidget.b, c.InterfaceC0180c {
     public h a;
     private VWidgetContainer b = AlarmWidget.b;
     private VTextureManager c = AlarmWidget.c;
@@ -198,7 +198,6 @@ public class g extends VObject3dContainer implements AlarmWidget.b, a.c, c.Inter
         }
     }
 
-    @Override // com.tsf.shell.widget.alarm.a.c
     public void a(boolean z) {
         this.h.b(z);
     }

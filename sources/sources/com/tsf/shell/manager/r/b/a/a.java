@@ -1,6 +1,5 @@
 package com.tsf.shell.manager.r.b.a;
 
-import com.tsf.shell.f.e._g.a.a;
 
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -8,7 +7,6 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.h.b.c;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.Home;
@@ -28,7 +26,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
     private h c;
     private float d;
     private ArrayList<g> e;
-    private c.a f;
+    private com.censivn.C3DEngine.b.h.b.c.a f;
     private b.a g;
     private B h;
     private boolean i;

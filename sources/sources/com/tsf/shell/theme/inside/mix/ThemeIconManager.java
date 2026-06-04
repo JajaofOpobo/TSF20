@@ -13,7 +13,7 @@ import com.tsf.shell.theme.inside.parser.ThemeParser;
 import com.tsf.shell.utils.q;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeIconManager extends ThemeMixElementManager implements a.InterfaceC0025a {
+public class ThemeIconManager extends ThemeMixElementManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private ThemeIconDescription mIconDescription;
     private int mPickerActivityResultId;
 
@@ -106,7 +106,7 @@ public class ThemeIconManager extends ThemeMixElementManager implements a.Interf
     public void startIconPackagePicker() {
         Intent intent = new Intent();
         intent.setClass(com.censivn.C3DEngine.a.d(), ThemePickerActivity.class);
-        this.mPickerActivityResultId = Home.b().a(intent, (a.InterfaceC0025a) this);
+        this.mPickerActivityResultId = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
     @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a

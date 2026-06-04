@@ -59,7 +59,7 @@ public class d extends c {
         return this.mTitleContainer;
     }
 
-    class a extends j {
+    public class a extends j {
         private TextureElement a = new TextureElement(0, false);
         private k c;
         private i d;

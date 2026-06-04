@@ -9,7 +9,6 @@ import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e._g.a.b;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
 import com.tsf.shell.utils.k;
@@ -18,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeFeaturedMenu extends b {
+public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
     public static final int NOTIF_POINT_VERSION_CODE_130 = 130;
     private h mGridView;
     private e.a mNotifItem;

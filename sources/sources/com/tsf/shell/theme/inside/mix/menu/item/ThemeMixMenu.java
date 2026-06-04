@@ -5,7 +5,6 @@ import com.censivn.C3DEngine.b.b.a.a;
 import com.censivn.C3DEngine.b.b.a.d;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.b;
 import com.tsf.shell.manager.p.e;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeMixMenu extends b {
+public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
     private com.censivn.C3DEngine.b.b.a.b mContentContainer;
     private a mElementContainer;
     private ThemeIconDesignerMenu mIconDesignerMenu;

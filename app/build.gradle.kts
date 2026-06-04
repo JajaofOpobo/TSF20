@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.tsf.shell"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.tsf.shell"
@@ -36,6 +36,11 @@ android {
 sourceSets {
     getByName("main") {
         java.srcDir("../sources/sources")
+        java.srcDir("../sources/bundled-libs/com/c")
+        java.srcDir("../sources/bundled-libs/com/android")
+        java.srcDir("../sources/bundled-libs/com/b")
+        java.srcDir("../sources/bundled-libs/com/a")
+        java.srcDir("../sources/bundled-libs/android/support/v7")
     }
 }
 
@@ -55,6 +60,7 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     // annotationProcessor("androidx.room:room-compiler:2.6.1") // Temporarily disabled due to NPE in decompiled code
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

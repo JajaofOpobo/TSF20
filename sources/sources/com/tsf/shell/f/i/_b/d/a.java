@@ -3,8 +3,6 @@ package com.tsf.shell.f.i._b.d;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.f.e._e.c;
-import com.tsf.shell.manager.d.a;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;

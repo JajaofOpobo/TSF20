@@ -243,7 +243,7 @@ public class y extends t {
         }
 
         /* JADX INFO: renamed from: com.tsf.extend.theme.y$a$a, reason: collision with other inner class name */
-        private class C0064a implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+        private class C0064a implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
             private C0064a() {
             }
 

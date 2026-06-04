@@ -11,7 +11,7 @@ import com.tsf.shell.f.i._b.e.g;
 import com.tsf.shell.plugin.themepicker.AppIconEditorActivity;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b implements a.InterfaceC0025a {
+public class b implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private static b a;
     private a b;
     private int c;

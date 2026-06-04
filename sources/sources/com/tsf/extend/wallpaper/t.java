@@ -241,7 +241,7 @@ public class t extends BaseAdapter implements View.OnClickListener {
         private m k;
     }
 
-    private class b implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class b implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         private b() {
         }
 

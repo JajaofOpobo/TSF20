@@ -50,7 +50,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, PageActivity.a, a.InterfaceC0048a<List<k>>, PersonalizationActivity.n, l.a {
+public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, PageActivity.a, com.tsf.extend.base.d.a.InterfaceC0048a<List<k>>, PersonalizationActivity.n, l.a {
     public static final int[] b = {f.e.title, f.e.favorite_theme, f.e.diy_btn, f.e.loadmore_tips, f.e.theme_controll};
     private List<String> A;
     private List<Integer> B;
@@ -340,15 +340,15 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void u() {
-        this.P = new d(a.b.LoadCache);
-        v.h().a(this.P, a.b.LoadCache, this.z.h());
+        this.P = new d(com.tsf.extend.base.d.a.b.LoadCache);
+        v.h().a(this.P, com.tsf.extend.base.d.a.b.LoadCache, this.z.h());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void v() {
         if (this.R != null && this.R.size() > 0) {
-            this.Q = new d(a.b.LoadMore);
-            v.h().a(this.Q, a.b.LoadMore, this.z.h());
+            this.Q = new d(com.tsf.extend.base.d.a.b.LoadMore);
+            v.h().a(this.Q, com.tsf.extend.base.d.a.b.LoadMore, this.z.h());
         }
     }
 
@@ -394,11 +394,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         v.h().a(new e(), j, str, str2);
     }
 
-    private class e implements a.InterfaceC0048a<k> {
+    private class e implements com.tsf.extend.base.d.a.InterfaceC0048a<k> {
         private e() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, k kVar) {
             a();
             if (kVar != null) {
@@ -409,7 +409,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, k kVar) {
             a();
             ThemeDetail.this.m.onBackPressed();
@@ -928,8 +928,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     v.h().c(str, this.b);
                 }
             } else {
-                a.InterfaceC0048a<v.b> interfaceC0048a = new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ThemeDetail.c.1
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                com.tsf.extend.base.d.a.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ThemeDetail.c.1
+                    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar2) {
                         if (imageView != null && bVar2 != null) {
                             imageView.setImageBitmap(bVar2.b);
@@ -939,7 +939,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                         }
                     }
 
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                     public void a(JSONObject jSONObject, int i2, v.b bVar2) {
                     }
                 };
@@ -969,14 +969,14 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    class A implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         int a = 0;
         int b = 0;
 
         A() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             this.a++;
             a();
@@ -997,7 +997,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             this.b++;
             a();
@@ -1111,24 +1111,24 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.O.notifyDataSetChanged();
     }
 
-    class d implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private final a.b b;
+    class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private final com.tsf.extend.base.d.a.b b;
 
-        public d(a.b bVar) {
+        public d(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    ThemeDetail.this.a(aVar, d.this.b == a.b.LoadMore);
+                    ThemeDetail.this.a(aVar, d.this.b == com.tsf.extend.base.d.a.b.LoadMore);
                 }
             });
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.2
                 @Override // java.lang.Runnable
@@ -1186,7 +1186,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.O.notifyDataSetChanged();
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
     public void a(JSONObject jSONObject, final List<k> list) {
         if (list != null) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.2
@@ -1200,7 +1200,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
     public void a(JSONObject jSONObject, int i, List<k> list) {
     }
 

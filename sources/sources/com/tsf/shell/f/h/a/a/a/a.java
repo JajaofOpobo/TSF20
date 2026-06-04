@@ -28,6 +28,11 @@ public class a extends j {
     private j a = new j();
     private com.censivn.C3DEngine.b.f.d l = new com.censivn.C3DEngine.b.f.d(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.a(200.0f));
 
+    /* JADX INFO: renamed from: com.tsf.shell.f.h.a.a.a.a$a, reason: collision with other inner class name */
+    public interface InterfaceC0098a {
+        void a(Bitmap bitmap);
+    }
+
     public a(c cVar) {
         this.e = cVar;
         this.l.a(855638016, -1442840576);

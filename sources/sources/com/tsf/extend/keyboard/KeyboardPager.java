@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.android.volley.l;
-import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
@@ -31,7 +30,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class KeyboardPager extends FrameLayout implements View.OnClickListener, a.InterfaceC0048a<List<k>> {
+public class KeyboardPager extends FrameLayout implements View.OnClickListener, com.tsf.extend.base.d.a.InterfaceC0048a<List<k>> {
     private int a;
     private int b;
     private PullToRefreshAndLoadMoreListView c;
@@ -94,7 +93,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
             public void a() {
                 KeyboardPager.this.h = System.currentTimeMillis();
-                a.b bVar = a.b.Refresh;
+                com.tsf.extend.base.d.a.b bVar = com.tsf.extend.base.d.a.b.Refresh;
                 KeyboardPager.this.m.a(bVar);
                 com.tsf.extend.keyboard.a.h().a(KeyboardPager.this.m, bVar, (JSONObject) null);
             }
@@ -108,7 +107,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
                 }
             }
         });
-        this.m = new d(a.b.LoadCache);
+        this.m = new d(com.tsf.extend.base.d.a.b.LoadCache);
     }
 
     @Override // android.view.View.OnClickListener
@@ -117,8 +116,8 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         int id = view.getId();
         if (id == f.e.retry) {
             this.d.setVisibility(8);
-            this.m = new d(a.b.Refresh);
-            com.tsf.extend.keyboard.a.h().a(this.m, a.b.Refresh, (JSONObject) null);
+            this.m = new d(com.tsf.extend.base.d.a.b.Refresh);
+            com.tsf.extend.keyboard.a.h().a(this.m, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
             return;
         }
         if (id == f.e.loadmore_tips) {
@@ -175,8 +174,8 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     /* JADX INFO: Access modifiers changed from: private */
     public void a() {
         if (this.l != null && this.l.size() > 0) {
-            this.n = new d(a.b.LoadMore);
-            com.tsf.extend.keyboard.a.h().a(this.n, a.b.LoadMore, (JSONObject) null);
+            this.n = new d(com.tsf.extend.base.d.a.b.LoadMore);
+            com.tsf.extend.keyboard.a.h().a(this.n, com.tsf.extend.base.d.a.b.LoadMore, (JSONObject) null);
         }
     }
 
@@ -259,7 +258,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         return true;
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
     public void a(JSONObject jSONObject, List<k> list) {
         if (list != null) {
             this.p.clear();
@@ -270,7 +269,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
     public void a(JSONObject jSONObject, int i, List<k> list) {
     }
 
@@ -386,7 +385,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    private class c implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class c implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         private String b;
         private ImageView c;
 
@@ -395,7 +394,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
             this.c = imageView;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null && ((com.tsf.extend.keyboard.b) this.c.getTag()).c().equals(this.b)) {
                 this.c.setVisibility(0);
@@ -405,7 +404,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             if (pair != null && ((com.tsf.extend.keyboard.b) this.c.getTag()).c().equals(this.b)) {
                 this.c.setVisibility(0);
@@ -416,24 +415,24 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    private class d implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private a.b b;
+    private class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private com.tsf.extend.base.d.a.b b;
 
-        public d(a.b bVar) {
+        public d(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 
-        public void a(a.b bVar) {
+        public void a(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.keyboard.KeyboardPager.d.1
                 @Override // java.lang.Runnable
                 public void run() {
                     KeyboardPager.this.k = !aVar.b();
-                    if (d.this.b == a.b.LoadMore) {
+                    if (d.this.b == com.tsf.extend.base.d.a.b.LoadMore) {
                         if (KeyboardPager.this.k) {
                             KeyboardPager.this.b();
                         } else {
@@ -449,12 +448,12 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
             });
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.keyboard.KeyboardPager.d.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (d.this.b == a.b.LoadMore) {
+                    if (d.this.b == com.tsf.extend.base.d.a.b.LoadMore) {
                         KeyboardPager.this.c();
                         return;
                     }

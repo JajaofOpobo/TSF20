@@ -695,7 +695,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class l implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class l implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
         private com.tsf.extend.base.b.A b;
 
@@ -721,10 +721,10 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(com.tsf.extend.base.b.A aVar, String str) {
-        com.tsf.extend.theme.v.h().b(new l(this, aVar), a.b.Refresh, str);
+        com.tsf.extend.theme.v.h().b(new l(this, aVar), com.tsf.extend.base.d.a.b.Refresh, str);
     }
 
-    static class j implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class j implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
         private String b;
 
@@ -765,7 +765,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class g implements a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+    static class g implements com.tsf.extend.base.d.a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
         private WeakReference<PersonalizationActivity> a;
         private List<com.tsf.extend.theme.k> b;
         private com.tsf.extend.base.b.A c;
@@ -913,7 +913,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class d implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
         public d(PersonalizationActivity personalizationActivity) {
@@ -941,10 +941,10 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void r() {
-        com.tsf.extend.keyboard.a.h().a(new e(this), a.b.Refresh);
+        com.tsf.extend.keyboard.a.h().a(new e(this), com.tsf.extend.base.d.a.b.Refresh);
     }
 
-    static class e implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class e implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
         public e(PersonalizationActivity personalizationActivity) {

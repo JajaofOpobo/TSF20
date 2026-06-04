@@ -497,7 +497,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         com.tsf.extend.theme.c.a.a(b2, b3, this.j, i);
     }
 
-    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 

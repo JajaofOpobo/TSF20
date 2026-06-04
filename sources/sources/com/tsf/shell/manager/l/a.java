@@ -8,27 +8,25 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
 import com.tsf.shell.D;
 import com.tsf.shell.f.i.b.e.c;
 import com.tsf.shell.f.i.b.e.f;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.f.i.b.e.i;
-import com.tsf.shell.manager.action.b;
 import com.tsf.shell.manager.bind.ShellModel;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements a.InterfaceC0025a {
+public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private static int a = 1;
     private static int b;
     private static int c;
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.l.a$a, reason: collision with other inner class name */
-    public static class C0130a implements a.InterfaceC0025a {
+    public static class C0130a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         public int a;
 
         @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
@@ -49,13 +47,13 @@ public class a implements a.InterfaceC0025a {
     public void a(Intent intent, float f, float f2) {
         b = (int) f;
         c = (int) f2;
-        a = Home.b().a(intent, (a.InterfaceC0025a) this);
+        a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
     public void a(Intent intent, float f, float f2, C0130a c0130a) {
         b = (int) f;
         c = (int) f2;
-        c0130a.a = Home.b().a(intent, (a.InterfaceC0025a) c0130a);
+        c0130a.a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) c0130a);
     }
 
     public static void a(final Intent intent, final C0130a c0130a) {

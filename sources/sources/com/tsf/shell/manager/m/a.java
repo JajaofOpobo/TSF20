@@ -15,6 +15,9 @@ import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.censivn.C3DEngine.b.b.a.c {
+    public interface InterfaceC0113a {
+        java.util.ArrayList<com.censivn.C3DEngine.b.f.i> b();
+    }
     private com.tsf.shell.f.i.b.e.b a;
     private e b;
     private float d;
