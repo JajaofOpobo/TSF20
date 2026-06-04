@@ -61,19 +61,19 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
         };
         this.e = new ArrayList<>();
         this.a = aVar;
-        ArrayList<a.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new a.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.a.3
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList = new ArrayList<>();
+        arrayList.add(new com.tsf.shell.f.e._g.a.a.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.a.3
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 Home.b().m();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
             }
         }));

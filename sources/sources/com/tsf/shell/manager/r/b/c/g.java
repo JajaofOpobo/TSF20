@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends com.tsf.shell.f.e._g.a.b {
-    private a.C0095a a;
-    private a.C0095a b;
+    private com.tsf.shell.f.e._g.a.a.C0095a a;
+    private com.tsf.shell.f.e._g.a.a.C0095a b;
     private e c;
     private com.tsf.shell.manager.r.b.b.a d;
     private com.tsf.shell.manager.r.b.b.a e;
@@ -20,14 +20,14 @@ public class g extends com.tsf.shell.f.e._g.a.b {
     public g(final com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.a.d());
-        ArrayList<a.C0095a> arrayList = new ArrayList<>();
-        a.C0095a c0095a = new a.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.g.1
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList = new ArrayList<>();
+        com.tsf.shell.f.e._g.a.a.C0095a c0095a = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.g.1
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return g.this.e == g.this.c;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 g.this.a(g.this.c, true);
                 g.this.b.a();
@@ -35,13 +35,13 @@ public class g extends com.tsf.shell.f.e._g.a.b {
         });
         com.tsf.shell.manager.r.c.b.e = c0095a;
         this.a = c0095a;
-        a.C0095a c0095a2 = new a.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.g.2
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        com.tsf.shell.f.e._g.a.a.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.g.2
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return g.this.e == g.this.d;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 if (com.tsf.shell.utils.g.b) {
                     g.this.a(g.this.d, true);

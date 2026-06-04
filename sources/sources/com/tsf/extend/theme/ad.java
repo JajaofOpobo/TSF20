@@ -20,7 +20,7 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.f;
 import com.tsf.extend.theme.v;
-import com.tsf.extend.wallpaper.ad;
+
 import java.util.List;
 import org.json.JSONObject;
 
@@ -29,7 +29,7 @@ public class ad extends BaseAdapter {
     private List<c> a = Lists.newArrayList();
     private A b = new A();
     private View.OnClickListener c;
-    private ad.a d;
+    private com.tsf.extend.wallpaper.ad.a d;
     private int e;
     private int f;
     private Context g;
@@ -61,7 +61,7 @@ public class ad extends BaseAdapter {
         this.f = i2;
     }
 
-    public void a(ad.a aVar) {
+    public void a(com.tsf.extend.wallpaper.ad.a aVar) {
         this.d = aVar;
     }
 

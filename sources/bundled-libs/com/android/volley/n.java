@@ -5,7 +5,7 @@ import com.android.volley.b;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class n<T> {
     public T a;
-    public b.a b;
+    public com.android.volley.b.a b;
     public final s c;
     public boolean d;
 
@@ -17,7 +17,7 @@ public class n<T> {
         void a(T t);
     }
 
-    public static <T> n<T> a(T t, b.a aVar) {
+    public static <T> n<T> a(T t, com.android.volley.b.a aVar) {
         return new n<>(t, aVar);
     }
 
@@ -29,7 +29,7 @@ public class n<T> {
         return this.c == null;
     }
 
-    private n(T t, b.a aVar) {
+    private n(T t, com.android.volley.b.a aVar) {
         this.d = false;
         this.a = t;
         this.b = aVar;

@@ -16,8 +16,8 @@ public class B extends j {
     private TextureElement a = new TextureElement(0, false);
     private k b;
     private m c;
-    private a.C0095a d;
-    private a.C0095a e;
+    private com.tsf.shell.f.e._g.a.a.C0095a d;
+    private com.tsf.shell.f.e._g.a.a.C0095a e;
 
     public B() {
         d();
@@ -56,33 +56,33 @@ public class B extends j {
         a(this.c);
         addChild(this.c);
         com.tsf.shell.manager.o.c.a(this.c, com.tsf.shell.manager.o.c.h);
-        this.d = new a.C0095a(b.d.widget_menu_app_folder, x.c(b.i.widget_folder), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.2
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        this.d = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_app_folder, x.c(b.i.widget_folder), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.2
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 b.this.b();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
             }
         });
-        this.e = new a.C0095a(b.d.widget_menu_app_desktop, x.c(b.i.menu_effect_desktop), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.3
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        this.e = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_app_desktop, x.c(b.i.menu_effect_desktop), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.3
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 b.this.c();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
             }
         });

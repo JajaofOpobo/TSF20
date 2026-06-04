@@ -15,7 +15,7 @@ public class d {
         this.a = context;
     }
 
-    public void a(a.C0152a c0152a, TextView textView) {
+    public void a(com.tsf.shell.plugin.fontspicker.a.C0152a c0152a, TextView textView) {
         if (c0152a != null) {
             textView.setTypeface(Typeface.DEFAULT);
             if (b(c0152a, textView)) {
@@ -26,12 +26,12 @@ public class d {
         }
     }
 
-    public static boolean b(a.C0152a c0152a, TextView textView) {
+    public static boolean b(com.tsf.shell.plugin.fontspicker.a.C0152a c0152a, TextView textView) {
         a aVarA = a(textView);
         if (aVarA == null) {
             return true;
         }
-        a.C0152a c0152a2 = aVarA.e;
+        com.tsf.shell.plugin.fontspicker.a.C0152a c0152a2 = aVarA.e;
         if (c0152a2 == null || !c0152a2.equals(c0152a)) {
             aVarA.a(true);
             e.c("", "--------------------cancelPotentialWork - cancelled work for " + c0152a);
@@ -48,10 +48,10 @@ public class d {
     }
 
     private class a extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, Typeface> {
-        private a.C0152a e;
+        private com.tsf.shell.plugin.fontspicker.com.tsf.shell.plugin.fontspicker.a.C0152a e;
         private final WeakReference<TextView> f;
 
-        public a(a.C0152a c0152a, TextView textView) {
+        public a(com.tsf.shell.plugin.fontspicker.com.tsf.shell.plugin.fontspicker.a.C0152a c0152a, TextView textView) {
             this.e = c0152a;
             this.f = new WeakReference<>(textView);
         }
