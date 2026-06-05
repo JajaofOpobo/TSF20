@@ -29,7 +29,7 @@ public class d {
     private static class A extends SQLiteOpenHelper {
         private static A a = null;
 
-        public static synchronized a a(Context context) {
+        public static synchronized A a(Context context) {
             if (a == null) {
                 a = new A(context);
             }

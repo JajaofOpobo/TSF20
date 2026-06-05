@@ -18,14 +18,9 @@ public class c {
     private static int i = 4096;
     Context a;
     Map<String, String> b = new ArrayMap();
-    Map<String, a> c = new ArrayMap();
-    List<com.tsf.extend.wallpaper.A> d = new ArrayList();
-    private boolean e = true;
-    private boolean f = true;
-    private boolean g = true;
-    private boolean h = true;
+    Map<String, A> c = new ArrayMap();
 
-    private Map<String, a> a(List<com.tsf.extend.wallpaper.A> list) {
+    private Map<String, A> a(List<com.tsf.extend.wallpaper.A> list) {
         d.a aVarA;
         ArrayMap arrayMap = new ArrayMap();
         Iterator<com.tsf.extend.wallpaper.A> it = list.iterator();
@@ -48,7 +43,7 @@ public class c {
         com.tsf.extend.wallpaper.c.a().a(context);
     }
 
-    private List<com.tsf.extend.wallpaper.A> a(Map<String, a> map, List<com.tsf.extend.wallpaper.A> list) {
+    private List<com.tsf.extend.wallpaper.A> a(Map<String, A> map, List<com.tsf.extend.wallpaper.A> list) {
         if (map != null && !map.isEmpty()) {
             ArrayList arrayList = new ArrayList();
             for (com.tsf.extend.wallpaper.A aVar : list) {
@@ -62,7 +57,7 @@ public class c {
         return list;
     }
 
-    private Map<String, a> b() {
+    private Map<String, A> b() {
         return this.c;
     }
 
@@ -94,7 +89,7 @@ public class c {
         }
     }
 
-    public static Map<String, a> a(Context context) throws Throwable {
+    public static Map<String, A> a(Context context) throws Throwable {
         c cVar = new c(context);
         cVar.c();
         cVar.a();
@@ -110,7 +105,7 @@ public class c {
         });
     }
 
-    private Map<String, a> b(List<com.tsf.extend.wallpaper.A> list) {
+    private Map<String, A> b(List<com.tsf.extend.wallpaper.A> list) {
         HashMap map = new HashMap();
         Iterator<com.tsf.extend.wallpaper.A> it = list.iterator();
         while (it.hasNext()) {

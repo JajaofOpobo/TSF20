@@ -60,7 +60,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     @SuppressLint({"HandlerLeak"})
     private Handler F;
-    private c G;
+    private C G;
     private com.tsf.extend.theme.B H;
     protected float a;
     public List<ImageView> b;

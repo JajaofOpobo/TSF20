@@ -2,12 +2,11 @@ package com.tsf.extend.base.f;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.net.http.AndroidHttpClient;
 import android.os.Build;
+import com.android.volley.f;
 import com.android.volley.m;
-import com.android.volley.toolbox.D;
-import com.android.volley.toolbox.F;
-import com.android.volley.toolbox.G;
+import com.android.volley.toolbox.d;
+import com.android.volley.toolbox.g;
 import com.android.volley.toolbox.n;
 import java.io.File;
 
@@ -46,7 +45,7 @@ public class c {
             if (Build.VERSION.SDK_INT >= 9) {
                 return new g();
             }
-            return new d(AndroidHttpClient.newInstance(str));
+            return new d();
         }
         return fVar;
     }

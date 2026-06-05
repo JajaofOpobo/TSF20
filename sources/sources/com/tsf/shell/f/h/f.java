@@ -23,7 +23,7 @@ import java.util.Iterator;
 public class f extends com.censivn.C3DEngine.b.h.e.b {
     private k b;
     private c c;
-    private a.C0144a d;
+    private com.tsf.shell.manager.r.b.A.C0144a d;
     private k e;
     private TextureElement f;
     private boolean g;
@@ -51,20 +51,20 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
                 f.this.r();
             }
         });
-        this.d = new a.C0144a() { // from class: com.tsf.shell.f.h.f.2
-            @Override // com.tsf.shell.manager.r.b.a.C0144a
+        this.d = new com.tsf.shell.manager.r.b.A.C0144a() { // from class: com.tsf.shell.f.h.f.2
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
             public void a() {
                 com.tsf.shell.manager.a.o.j();
             }
 
-            @Override // com.tsf.shell.manager.r.b.a.C0144a
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
             public void a(com.tsf.shell.f.i.b.e.b bVar) {
                 bVar.K().onUpdateContainer(-2);
                 f.this.a(bVar);
                 f.this.e(bVar);
             }
 
-            @Override // com.tsf.shell.manager.r.b.a.C0144a
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
             public com.tsf.shell.manager.o.A b() {
                 return com.tsf.shell.manager.o.b.b;
             }

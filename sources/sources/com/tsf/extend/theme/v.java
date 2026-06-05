@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.f.b;
-import com.tsf.extend.base.i.a;
+import com.tsf.extend.base.i;
 import com.tsf.extend.theme.C;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
@@ -87,7 +87,7 @@ public class v extends com.tsf.extend.base.d.a {
         e = str;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
+    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("keyword", URLEncoder.encode(str));
@@ -97,15 +97,15 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_SEARCH", interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
+    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar) {
         a("DATA_SEARCH_TAG", interfaceC0048a, bVar, (JSONObject) null, false);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j) {
+    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, long j) {
         a("DATA_RELATIVE_" + j, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j, long j2) {
+    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, long j, long j2) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("categoryId", j + "");
@@ -116,7 +116,7 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_WALLPAPE_RELATIVE_" + j, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void b(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
+    public void b(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("packname", str);
@@ -130,7 +130,7 @@ public class v extends com.tsf.extend.base.d.a {
         return d().get("DATA_RELATIVE_" + j);
     }
 
-    public void c(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, String str) {
+    public void c(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("album_id", str);
@@ -147,11 +147,11 @@ public class v extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    public String a(String str, a.b bVar, int i, JSONObject jSONObject) {
+    public String a(String str, com.tsf.extend.base.d.a.b bVar, int i, JSONObject jSONObject) {
         return b(str, bVar, i, jSONObject);
     }
 
-    public String b(String str, a.b bVar, int i, JSONObject jSONObject) {
+    public String b(String str, com.tsf.extend.base.d.a.b bVar, int i, JSONObject jSONObject) {
         String strD;
         JSONException e2;
         String string;
@@ -236,8 +236,8 @@ public class v extends com.tsf.extend.base.d.a {
         return strD;
     }
 
-    private int a(String str, a.b bVar) {
-        if (bVar == a.b.Refresh) {
+    private int a(String str, com.tsf.extend.base.d.a.b bVar) {
+        if (bVar == com.tsf.extend.base.d.a.b.Refresh) {
             return 0;
         }
         com.tsf.extend.base.b.A aVar = this.a.get(str);
@@ -293,7 +293,7 @@ public class v extends com.tsf.extend.base.d.a {
         return agVar.d();
     }
 
-    public void a(long j, String str, a.InterfaceC0048a<p> interfaceC0048a, String str2) {
+    public void a(long j, String str, com.tsf.extend.base.d.a.InterfaceC0048a<p> interfaceC0048a, String str2) {
         com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.b.a(a(j, str), null, interfaceC0048a, new b.a<p>() { // from class: com.tsf.extend.theme.v.6
             @Override // com.tsf.extend.base.f.b.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
@@ -310,7 +310,7 @@ public class v extends com.tsf.extend.base.d.a {
         a(jVarA);
     }
 
-    public void a(final a.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
+    public void a(final com.tsf.extend.base.d.a.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
         k kVarA;
         Iterator<Map.Entry<String, com.tsf.extend.base.b.A>> it = d().entrySet().iterator();
         k kVar = null;
@@ -332,8 +332,8 @@ public class v extends com.tsf.extend.base.d.a {
         if (kVarA != null) {
             interfaceC0048a.a(null, kVarA);
         } else {
-            a(j, str, new a.InterfaceC0048a<p>() { // from class: com.tsf.extend.theme.v.7
-                @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            a(j, str, new com.tsf.extend.base.d.a.InterfaceC0048a<p>() { // from class: com.tsf.extend.theme.v.7
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                 public void a(JSONObject jSONObject, p pVar) {
                     if (pVar != null) {
                         k kVarA2 = v.this.a(pVar, j);
@@ -348,7 +348,7 @@ public class v extends com.tsf.extend.base.d.a {
                     interfaceC0048a.a(jSONObject, 0, null);
                 }
 
-                @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                 public void a(JSONObject jSONObject, int i, p pVar) {
                     interfaceC0048a.a(jSONObject, i, null);
                 }
@@ -476,7 +476,7 @@ public class v extends com.tsf.extend.base.d.a {
             nVar.b(arrayList);
             int iMin = Math.min(length, 50);
             for (int i = 0; i < iMin; i++) {
-                c.a aVarK = k(jSONArray.getJSONObject(i));
+                com.tsf.extend.base.c.a aVarK = k(jSONArray.getJSONObject(i));
                 if (aVarK != null) {
                     arrayList.add(aVarK);
                 }
@@ -583,7 +583,7 @@ public class v extends com.tsf.extend.base.d.a {
         return kVar;
     }
 
-    public void a(final a.InterfaceC0048a<List<k>> interfaceC0048a) {
+    public void a(final com.tsf.extend.base.d.a.InterfaceC0048a<List<k>> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.9
             @Override // java.lang.Runnable
             public void run() {
@@ -600,7 +600,7 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void b(final a.InterfaceC0048a<List<k>> interfaceC0048a) {
+    public void b(final com.tsf.extend.base.d.a.InterfaceC0048a<List<k>> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.10
             @Override // java.lang.Runnable
             public void run() {
@@ -716,7 +716,7 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    public void a(final int i, final String str, final a.InterfaceC0048a<b> interfaceC0048a, final int i2) {
+    public void a(final int i, final String str, final com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, final int i2) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.11
             @Override // java.lang.Runnable
             public void run() throws PackageManager.NameNotFoundException {
@@ -767,7 +767,7 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(final String str, final List<String> list, final a.InterfaceC0048a<b> interfaceC0048a, final int i, final int i2) {
+    public void a(final String str, final List<String> list, final com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, final int i, final int i2) {
         if (list == null || list.size() == 0 || list.size() < i2) {
             interfaceC0048a.a(null, -1, null);
             return;
@@ -817,15 +817,15 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(String str, aq aqVar, a.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
+    public void a(String str, aq aqVar, com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
         a(str, aqVar.t(), interfaceC0048a, i, i2);
     }
 
-    public void a(String str, View view, a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a, int i, int i2) {
+    public void a(String str, View view, com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a, int i, int i2) {
         a(str, interfaceC0048a, l.a.LOW, i, i2);
     }
 
-    public void c(String str, a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a) {
+    public void c(String str, com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a) {
         a(str, interfaceC0048a);
     }
 
@@ -861,7 +861,7 @@ public class v extends com.tsf.extend.base.d.a {
             if (jSONObject2 == null) {
                 return null;
             }
-            c.a aVarK = k(jSONObject2);
+            com.tsf.extend.base.c.a aVarK = k(jSONObject2);
             if (aVarK != null) {
                 cVar.a().add(aVarK);
                 if (cVar.a().size() >= jOptLong) {
@@ -875,11 +875,11 @@ public class v extends com.tsf.extend.base.d.a {
         return cVar;
     }
 
-    private c.a k(JSONObject jSONObject) {
+    private com.tsf.extend.base.c.a k(JSONObject jSONObject) {
         if (jSONObject == null) {
             return null;
         }
-        c.a aVar = new c.a();
+        com.tsf.extend.base.c.a aVar = new com.tsf.extend.base.c.a();
         aVar.a = jSONObject.optString("id");
         aVar.b = jSONObject.optString("type");
         aVar.c = jSONObject.optString("banner_img");
@@ -960,7 +960,7 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    public static void c(final a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
+    public static void c(final com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.4
             @Override // java.lang.Runnable
             public void run() {

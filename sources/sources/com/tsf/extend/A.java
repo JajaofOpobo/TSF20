@@ -146,11 +146,11 @@ public class A {
         x.put(q, "127");
     }
 
-    public static a a(String str) {
+    public static A a(String str) {
         return new A().b(str).c("unknown");
     }
 
-    public a b(String str) {
+    public A b(String str) {
         this.z = str;
         return this;
     }
@@ -163,7 +163,7 @@ public class A {
         this.B = i2;
     }
 
-    public a c(String str) {
+    public A c(String str) {
         this.y = str;
         return this;
     }
@@ -227,7 +227,7 @@ public class A {
         }
     }
 
-    public a a(Cursor cursor) {
+    public A a(Cursor cursor) {
         this.z = a(cursor, "pkg_name", "");
         this.y = a(cursor, "category", "unknow");
         this.A = a(cursor, "tc", -1);

@@ -7,7 +7,7 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Environment;
-import android.os.SystemProperties;
+
 import android.os.storage.StorageManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
@@ -167,7 +167,7 @@ public class p {
     }
 
     private static boolean f() {
-        String str = SystemProperties.get("ro.product.model", "unknown");
+        String str = Build.MODEL;
         return str.equals("ZTE U950") || str.equals("ZTE U817") || str.equals("ZTE V955") || str.equals("GT-S5301L") || str.equals("LG-E425f") || str.equals("GT-S5303B") || str.equals("I-STYLE2.1") || str.equals("SCH-S738C") || str.equals("S120 LOIN") || str.equals("START 765") || str.equals("LG-E425j") || str.equals("Archos 50 Titanium") || str.equals("ZTE N880G") || str.equals("O+ 8.91") || str.equals("ZP330") || str.equals("Wise+") || str.equals("HUAWEI Y511-U30") || str.equals("Che1-L04") || str.equals("ASUS_T00I") || str.equals("Lenovo A319") || str.equals("Bird 72_wet_a_jb3") || str.equals("Sendtel Wise") || str.equals("cross92_3923") || str.equals("HTC X920e") || str.equals("ONE TOUCH 4033X") || str.equals("GSmart Roma") || str.equals("A74B") || str.equals("Doogee Y100 Pro") || str.equals("M4 SS1050") || str.equals("Ibiza_F2") || str.equals("Lenovo P70-A") || str.equals("Y635-L21") || str.equals("hi6210sft") || str.equals("TurboX6Z") || str.equals("ONE TOUCH 4015A") || str.equals("LENNY2") || str.equals("A66A*") || str.equals("ONE TOUCH 4033X") || str.equals("LENNY2") || str.equals("PGN606") || str.equals("MEU AN400") || str.equals("ONE TOUCH 4015X") || str.equals("4013M") || str.equals("n625ab") || str.equals("Redmi Note 4") || "OPPO".equals(Build.MANUFACTURER) || "Meizu".equals(Build.MANUFACTURER);
     }
 

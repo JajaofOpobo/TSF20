@@ -18,7 +18,7 @@ public class A {
     private A() {
     }
 
-    public static a a() {
+    public static A a() {
         return g;
     }
 

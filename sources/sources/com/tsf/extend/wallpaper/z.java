@@ -6,7 +6,6 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.util.SparseArray;
-import com.android.volley.m;
 import com.android.volley.n;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.f;
@@ -335,10 +334,20 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
     }
 
     public void b(final List<String> list) {
-        e().a(new m.a() { // from class: com.tsf.extend.wallpaper.z.3
+        e().a(new com.android.volley.m.a() { // from class: com.tsf.extend.wallpaper.z.3
             @Override // com.android.volley.m.a
             public boolean a(com.android.volley.l<?> lVar) {
                 return (lVar instanceof ac) && list.contains(((ac) lVar).d());
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void c() {
+        e().a(new com.android.volley.m.a() { // from class: com.tsf.extend.wallpaper.z.4
+            @Override // com.android.volley.m.a
+            public boolean a(com.android.volley.l<?> lVar) {
+                return lVar instanceof ac;
             }
         });
     }
@@ -405,7 +414,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
     }
 
     private void k() {
-        e().a(new m.a() { // from class: com.tsf.extend.wallpaper.z.4
+        e().a(new com.android.volley.m.a() { // from class: com.tsf.extend.wallpaper.z.4
             @Override // com.android.volley.m.a
             public boolean a(com.android.volley.l<?> lVar) {
                 return true;

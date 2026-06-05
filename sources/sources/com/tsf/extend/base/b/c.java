@@ -1,7 +1,6 @@
 package com.tsf.extend.base.b;
 
 import android.util.Pair;
-import com.android.volley.B;
 import com.android.volley.t;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -76,7 +75,7 @@ public class c implements com.android.volley.b {
             com.tsf.extend.base.b.c$A r0 = com.tsf.extend.base.b.c.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
         L2a:
             long r4 = r3.length()     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
-            int r6 = com.tsf.extend.base.b.c.b.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            int r6 = com.tsf.extend.base.b.c.com.android.volley.b.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             long r6 = (long) r6     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             long r4 = r4 - r6
             int r4 = (int) r4     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
@@ -221,7 +220,7 @@ public class c implements com.android.volley.b {
     }
 
     @Override // com.android.volley.b
-    public synchronized void a(String str, b.a aVar) {
+    public synchronized void a(String str, com.android.volley.b.a aVar) {
         BufferedOutputStream bufferedOutputStream;
         A aVar2;
         File fileC = c(str);
@@ -332,7 +331,7 @@ public class c implements com.android.volley.b {
         private a() {
         }
 
-        public a(String str, b.a aVar) {
+        public a(String str, com.android.volley.b.a aVar) {
             this.b = str;
             this.a = aVar.a.length;
             this.c = aVar.b;
@@ -359,8 +358,8 @@ public class c implements com.android.volley.b {
             return aVar;
         }
 
-        public b.a a(byte[] bArr) {
-            b.a aVar = new b.a();
+        public com.android.volley.b.a a(byte[] bArr) {
+            com.android.volley.b.a aVar = new com.android.volley.b.a();
             aVar.a = bArr;
             aVar.b = this.c;
             aVar.c = this.d;

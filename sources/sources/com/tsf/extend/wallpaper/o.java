@@ -1,7 +1,7 @@
 package com.tsf.extend.wallpaper;
 
 import android.os.SystemClock;
-import com.android.volley.B;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -48,7 +48,7 @@ public class o extends com.android.volley.toolbox.a {
                     }
                     HashMap map = new HashMap();
                     a(map, lVar.f());
-                    HttpResponse httpResponseA = this.b.a(lVar, map);
+                    HttpResponse httpResponseA = this.com.android.volley.b.a(lVar, map);
                     try {
                         long contentLength = httpResponseA.getEntity().getContentLength();
                         if (lVar instanceof ac) {
@@ -59,7 +59,7 @@ public class o extends com.android.volley.toolbox.a {
                         Map<String, String> mapA = a(httpResponseA.getAllHeaders());
                         try {
                             if (statusCode == 304) {
-                                b.a aVarF = lVar.f();
+                                com.android.volley.b.a aVarF = lVar.f();
                                 if (aVarF == null) {
                                     return new com.android.volley.i(304, null, mapA, true);
                                 }
@@ -114,7 +114,7 @@ public class o extends com.android.volley.toolbox.a {
         }
     }
 
-    private void a(Map<String, String> map, b.a aVar) {
+    private void a(Map<String, String> map, com.android.volley.b.a aVar) {
         if (aVar != null) {
             if (aVar.b != null) {
                 map.put("If-None-Match", aVar.b);

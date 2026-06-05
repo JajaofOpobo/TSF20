@@ -17,7 +17,7 @@ public class c {
         return a;
     }
 
-    public static List<a> b() {
+    public static List<A> b() {
         return new ArrayList();
     }
 

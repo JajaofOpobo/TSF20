@@ -98,7 +98,7 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
         return this.b == null || this.b.size() <= 0;
     }
 
-    private class a implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 

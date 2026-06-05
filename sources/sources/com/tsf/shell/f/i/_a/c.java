@@ -30,7 +30,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     private boolean n;
     private boolean o;
     private com.censivn.C3DEngine.b.d.a p;
-    private a.C0127a q;
+    private com.tsf.shell.manager.d.a.C0127a q;
     private float[] r;
 
     public c(com.tsf.shell.f.i.B bVar) {
@@ -43,7 +43,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         this.e = false;
         this.f = true;
         this.g = bVar;
-        this.q = new a.C0127a();
+        this.q = new com.tsf.shell.manager.d.a.C0127a();
     }
 
     private void d() {

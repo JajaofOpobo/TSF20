@@ -13,14 +13,12 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
-import com.android.volley.D;
 import com.android.volley.l;
 import com.android.volley.n;
 import com.android.volley.s;
-import com.android.volley.toolbox.I;
 import com.android.volley.toolbox.j;
 import com.tsf.extend.base.f.c;
-import com.tsf.extend.base.j.f;
+
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.f;
 import com.tsf.extend.theme.g;
@@ -122,7 +120,7 @@ public class ThemePullService extends IntentService {
     }
 
     private boolean e(String str) {
-        return f.a(getApplicationContext(), str);
+        return com.tsf.extend.base.j.f.a(getApplicationContext(), str);
     }
 
     private boolean f(String str) {

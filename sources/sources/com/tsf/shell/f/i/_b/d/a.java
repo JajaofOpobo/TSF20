@@ -13,7 +13,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     private b a;
     private com.censivn.C3DEngine.b.d.a b;
     private boolean d;
-    private a.C0127a e;
+    private com.tsf.shell.manager.d.a.C0127a e;
     private boolean f;
     private float g;
     private float h;
@@ -34,8 +34,8 @@ public class a extends com.censivn.C3DEngine.b.d.a {
         this.p = false;
         this.a = bVar;
         this.b = iVar.getMouseEventListener();
-        this.e = new a.C0127a() { // from class: com.tsf.shell.f.i._b.d.a.1
-            @Override // com.tsf.shell.manager.d.a.C0127a
+        this.e = new com.tsf.shell.manager.d.a.C0127a() { // from class: com.tsf.shell.f.i._b.d.a.1
+            @Override // com.tsf.shell.manager.d.com.tsf.shell.manager.d.a.C0127a
             public boolean a(com.tsf.shell.f.e.F fVar) {
                 return fVar instanceof c.b;
             }

@@ -6,7 +6,7 @@ import com.tsf.shell.f.f.b.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends h {
-    private a.C0108a a;
+    private C0108a a;
     private com.censivn.C3DEngine.b.f.j b;
     private TextureElement d;
     private TextureElement e;
@@ -51,7 +51,7 @@ public class b extends h {
                 GLES20.glFrontFace(2305);
             }
         };
-        this.a = new a.C0108a(com.censivn.C3DEngine.b.b.a.a(189.0f), com.censivn.C3DEngine.b.b.a.a(288.0f), 5, 20);
+        this.a = new C0108a(com.censivn.C3DEngine.b.b.a.a(189.0f), com.censivn.C3DEngine.b.b.a.a(288.0f), 5, 20);
         this.a.position().x = com.censivn.C3DEngine.b.b.a.a(150.0f);
         this.b.setAnimationObjectState(true);
         this.b.addChild(this.g);

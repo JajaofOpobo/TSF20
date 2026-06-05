@@ -13,7 +13,7 @@ public class b {
         K b(JSONObject jSONObject);
     }
 
-    public static <T> j a(String str, JSONObject jSONObject, final a.InterfaceC0048a<T> interfaceC0048a, final a<T> aVar) {
+    public static <T> j a(String str, JSONObject jSONObject, final com.tsf.extend.base.d.a.InterfaceC0048a<T> interfaceC0048a, final a<T> aVar) {
         return new j(str, jSONObject, new n.b<JSONObject>() { // from class: com.tsf.extend.base.f.b.1
             @Override // com.android.volley.n.b
             public void a(JSONObject jSONObject2) {

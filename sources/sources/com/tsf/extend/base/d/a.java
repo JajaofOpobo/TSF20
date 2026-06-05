@@ -2,9 +2,7 @@ package com.tsf.extend.base.d;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.d.F;
 import android.util.Pair;
-import com.android.volley.D;
 import com.android.volley.l;
 import com.android.volley.m;
 import com.android.volley.n;
@@ -26,7 +24,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class a {
-    private static f<String, SoftReference<Bitmap>> b = null;
+    private static HashMap<String, SoftReference<Bitmap>> b = null;
     protected HashMap<String, com.tsf.extend.base.b.A> a = new HashMap<>();
     private m c;
 
