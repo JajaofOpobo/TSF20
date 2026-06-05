@@ -60,7 +60,7 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
     }
 
     public TextureElement getTexture(ResourceControler resourceControler, A aVar) {
-        com.censivn.C3DEngine.a.g().a(this.texture, createTextureBitmap(resourceControler, aVar));
+        com.censivn.C3DEngine.A.g().a(this.texture, createTextureBitmap(resourceControler, aVar));
         return this.texture;
     }
 

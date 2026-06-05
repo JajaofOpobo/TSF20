@@ -79,7 +79,7 @@ public class m extends i {
     private void d() {
         this.k = new com.censivn.C3DEngine.b.f.m();
         this.k.d(38);
-        this.k.position().y = com.censivn.C3DEngine.b.b.a.a(145.0f);
+        this.k.position().y = com.censivn.C3DEngine.b.b.A.a(145.0f);
         this.i = new ArrayList<>();
         float f = 0.0f;
         float fMaxY = 0.0f;
@@ -87,7 +87,7 @@ public class m extends i {
         while (i < this.h.a()) {
             final com.tsf.shell.f.g.a.h hVar = new com.tsf.shell.f.g.a.h(1.0f);
             hVar.e.scale().setAll(0.8f, 0.8f, 1.0f);
-            hVar.e.position().y = com.censivn.C3DEngine.b.b.a.a(20.0f);
+            hVar.e.position().y = com.censivn.C3DEngine.b.b.A.a(20.0f);
             com.tsf.shell.manager.o.c.a(hVar, com.tsf.shell.manager.o.c.h);
             com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(hVar) { // from class: com.tsf.shell.f.f.a._c.m.1
                 @Override // com.censivn.C3DEngine.b.d.a
@@ -113,7 +113,7 @@ public class m extends i {
             f = fMaxX;
         }
         this.l = fMaxY;
-        this.g = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.a.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.a.c, 40.0f * com.censivn.C3DEngine.b.b.a.c);
+        this.g = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.A.c, 40.0f * com.censivn.C3DEngine.b.b.A.c);
         this.g.d();
         this.g.d();
         addChild(this.g);

@@ -2,7 +2,7 @@ package com.tsf.shell.manager.m;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.b.a.e;
+import com.censivn.C3DEngine.b.b.A.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.f.e.F;
 import com.tsf.shell.f.i.b.e.h;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.b.a.c {
+public class a extends com.censivn.C3DEngine.b.b.A.c {
     public interface InterfaceC0113a {
         java.util.ArrayList<com.censivn.C3DEngine.b.f.i> b();
     }
@@ -88,7 +88,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
     }
 
     public void e() {
-        this.d = com.censivn.C3DEngine.b.b.a.a(15.0f);
+        this.d = com.censivn.C3DEngine.b.b.A.a(15.0f);
         this.a = new h();
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -247,7 +247,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
         public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2) {
             if (this.g != null && this.d && !this.i) {
                 this.i = true;
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.m.a.a.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.m.a.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         C0131a.this.i = false;
@@ -271,7 +271,7 @@ public class a extends com.censivn.C3DEngine.b.b.a.c {
                             C0131a.this.k.y = C0131a.this.j[1];
                             float f = C0131a.this.k.x;
                             a.this.b.globalToLocal(C0131a.this.k);
-                            if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.a.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.a.A) - b.a) {
+                            if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.A.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.A.A) - b.a) {
                                 if (com.tsf.shell.manager.a.h.F() != -1) {
                                     C0131a.this.l = true;
                                     a.this.removeChild(a.this.a);

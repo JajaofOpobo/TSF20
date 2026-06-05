@@ -22,18 +22,18 @@ public class c extends h {
         com.censivn.C3DEngine.b.f.a.a aVar = (com.censivn.C3DEngine.b.f.a.a) this.e;
         aVar.textures().addElement(h);
         com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(4);
-        bVarA.a(0, 0, 1, 1, com.censivn.C3DEngine.b.b.a.a(60.0f), com.censivn.C3DEngine.b.b.a.a(60.0f));
+        bVarA.a(0, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
         bVarA.h();
         for (int i = 0; i < 4; i++) {
             com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i);
-            bVarA2.a(1, 0, 1, 1, com.censivn.C3DEngine.b.b.a.a(60.0f), com.censivn.C3DEngine.b.b.a.a(60.0f));
+            bVarA2.a(1, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
             bVarA2.o.setAll(0.0f, 0.0f, 1.0f);
             bVarA2.h();
         }
         this.b = new Runnable() { // from class: com.tsf.shell.f._d.c.a.c.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().b(c.this.c, 300L);
+                com.censivn.C3DEngine.A.a().b(c.this.c, 300L);
             }
         };
         this.c = new Runnable() { // from class: com.tsf.shell.f._d.c.a.c.2
@@ -64,13 +64,13 @@ public class c extends h {
             this.f.run();
         }
         if (h.id == 0) {
-            com.censivn.C3DEngine.a.g().a(h, b.d.menu_effect_element);
+            com.censivn.C3DEngine.A.g().a(h, b.d.menu_effect_element);
         }
     }
 
     public static void a() {
         if (h.id != 0) {
-            com.censivn.C3DEngine.a.g().a(h);
+            com.censivn.C3DEngine.A.g().a(h);
         }
         h.b();
     }

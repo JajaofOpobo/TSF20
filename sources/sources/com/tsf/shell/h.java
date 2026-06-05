@@ -40,7 +40,7 @@ public class h {
             }
         });
         builder.create();
-        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
+        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
         TextView textView = (TextView) linearLayout.findViewById(b.e.content);
         TextView textView2 = (TextView) linearLayout.findViewById(b.e.summary);
         textView.setText(i2);

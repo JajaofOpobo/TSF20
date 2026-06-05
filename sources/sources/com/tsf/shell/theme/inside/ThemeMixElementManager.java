@@ -65,7 +65,7 @@ public abstract class ThemeMixElementManager {
         this.mParserType = i;
         this.mManager = themeManager;
         this.mask = str;
-        this.name = ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.a.d(), i);
+        this.name = ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.A.d(), i);
         ThemeConfigManager.ElementConfig themeMixConfig = ThemeConfigManager.getThemeMixConfig(str);
         setThemeInformation(themeMixConfig.name, themeMixConfig.packagename, themeMixConfig.version, false);
     }
@@ -182,7 +182,7 @@ public abstract class ThemeMixElementManager {
     }
 
     public void openThemeElementSelecter() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeMixElementManager.2
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeMixElementManager.2
             @Override // java.lang.Runnable
             public void run() {
                 Intent intent = new Intent();

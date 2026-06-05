@@ -16,7 +16,7 @@ public abstract class c {
     private boolean f = false;
     private boolean g = false;
     private boolean h = false;
-    private k a = com.censivn.C3DEngine.b.b.a.a(103.0f, 149.0f);
+    private k a = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
 
     public abstract j a();
 
@@ -27,7 +27,7 @@ public abstract class c {
         this.b = new TextureElement(0, false);
         this.a.textures().addElement(this.b);
         this.a.alpha(0.0f);
-        this.c = com.censivn.C3DEngine.b.b.a.a(69.0f, 69.0f);
+        this.c = com.censivn.C3DEngine.b.b.A.a(69.0f, 69.0f);
         this.c.alpha(0.0f);
         this.d = new TextureElement(0, false);
         this.c.textures().addElement(this.d);
@@ -45,10 +45,10 @@ public abstract class c {
             this.h = true;
             a().addChild(this.e);
             Bitmap bitmapA = x.a(b.d.tips_gesture_finger, this.a.b(), this.a.c());
-            com.censivn.C3DEngine.a.g().a(this.b, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
             bitmapA.recycle();
             Bitmap bitmapA2 = x.a(b.d.tips_finger_point, this.a.b(), this.a.c());
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapA2);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapA2);
             bitmapA2.recycle();
         }
     }
@@ -56,7 +56,7 @@ public abstract class c {
     public void e() {
         this.h = false;
         this.e.removeFromParent();
-        com.censivn.C3DEngine.a.g().a(this.b);
+        com.censivn.C3DEngine.A.g().a(this.b);
     }
 
     public void f() {

@@ -19,13 +19,13 @@ public class r extends com.censivn.C3DEngine.b.f.j {
         if (!this.f) {
             this.f = true;
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.a, x.a(b.d.shell_number));
+                com.censivn.C3DEngine.A.g().a(this.a, x.a(b.d.shell_number));
             }
             if (this.b.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.b, x.a(b.d.shell_number_bg));
+                com.censivn.C3DEngine.A.g().a(this.b, x.a(b.d.shell_number_bg));
             }
             if (this.e == null) {
-                this.e = new com.censivn.C3DEngine.b.f.k(252.0f * com.censivn.C3DEngine.b.b.a.c, 162.0f * com.censivn.C3DEngine.b.b.a.c, false);
+                this.e = new com.censivn.C3DEngine.b.f.k(252.0f * com.censivn.C3DEngine.b.b.A.c, 162.0f * com.censivn.C3DEngine.b.b.A.c, false);
                 this.e.alpha(0.0f);
                 addChild(this.e);
             }
@@ -50,10 +50,10 @@ public class r extends com.censivn.C3DEngine.b.f.j {
                 public void a() {
                     com.tsf.shell.manager.a.j.b(r.this);
                     if (r.this.a.id != 0) {
-                        com.censivn.C3DEngine.a.g().a(r.this.a);
+                        com.censivn.C3DEngine.A.g().a(r.this.a);
                     }
                     if (r.this.b.id != 0) {
-                        com.censivn.C3DEngine.a.g().a(r.this.b);
+                        com.censivn.C3DEngine.A.g().a(r.this.b);
                     }
                 }
             };
@@ -112,13 +112,13 @@ public class r extends com.censivn.C3DEngine.b.f.j {
             super(2, 80, VEasing.Linear.easeNone, 160);
             this.g = 0;
             this.c = a(0);
-            this.c.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.a.c, 80.0f * com.censivn.C3DEngine.b.b.a.c);
+            this.c.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.A.c, 80.0f * com.censivn.C3DEngine.b.b.A.c);
             this.c.h();
             this.d = a(1);
-            this.d.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.a.c, 80.0f * com.censivn.C3DEngine.b.b.a.c);
+            this.d.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.A.c, 80.0f * com.censivn.C3DEngine.b.b.A.c);
             this.d.h();
-            this.e = (-200.0f) * com.censivn.C3DEngine.b.b.a.c;
-            this.f = 200.0f * com.censivn.C3DEngine.b.b.a.c;
+            this.e = (-200.0f) * com.censivn.C3DEngine.b.b.A.c;
+            this.f = 200.0f * com.censivn.C3DEngine.b.b.A.c;
         }
 
         private void c(int i) {
@@ -130,9 +130,9 @@ public class r extends com.censivn.C3DEngine.b.f.j {
                 int i2 = i / 10;
                 int i3 = i - (i2 * 10);
                 this.d.a((Boolean) true);
-                this.c.i().x = (-40.0f) * com.censivn.C3DEngine.b.b.a.c;
+                this.c.i().x = (-40.0f) * com.censivn.C3DEngine.b.b.A.c;
                 this.c.a(i2 % 5, i2 / 5);
-                this.d.i().x = 40.0f * com.censivn.C3DEngine.b.b.a.c;
+                this.d.i().x = 40.0f * com.censivn.C3DEngine.b.b.A.c;
                 this.d.a(i3 % 5, i3 / 5);
             }
             this.c.h();

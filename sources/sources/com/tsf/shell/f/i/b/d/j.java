@@ -103,7 +103,7 @@ public class j implements e.a {
         this.X.d();
         this.F.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-        dVar.f(com.censivn.C3DEngine.b.b.a.D);
+        dVar.f(com.censivn.C3DEngine.b.b.A.D);
         dVar.a(com.censivn.C3DEngine.b.g.a.a);
         dVar.a(50);
         com.censivn.C3DEngine.b.g.c.a(this.F);
@@ -190,10 +190,10 @@ public class j implements e.a {
     }
 
     private void n() {
-        N = new i(1.0f, com.censivn.C3DEngine.b.b.a.b * 11.0f, true, c());
+        N = new i(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, true, c());
         N.visible(false);
         N.alpha(0.0f);
-        O = new i(1.0f, com.censivn.C3DEngine.b.b.a.b * 11.0f, false, c());
+        O = new i(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, false, c());
         O.visible(false);
         O.alpha(0.0f);
     }
@@ -212,10 +212,10 @@ public class j implements e.a {
             if (bitmapFromCache == null) {
                 bitmapFromCache = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
             }
-            this.z = com.censivn.C3DEngine.a.g().a(this.z, bitmapFromCache, true);
+            this.z = com.censivn.C3DEngine.A.g().a(this.z, bitmapFromCache, true);
             bitmapFromCache.recycle();
         } else if (this.z != null) {
-            com.censivn.C3DEngine.a.g().a(this.z);
+            com.censivn.C3DEngine.A.g().a(this.z);
             this.z = null;
         }
         if (c().folder.frontPlaneEnable) {
@@ -223,10 +223,10 @@ public class j implements e.a {
             if (bitmapFromCache2 == null) {
                 bitmapFromCache2 = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
             }
-            this.A = com.censivn.C3DEngine.a.g().a(this.A, bitmapFromCache2, true);
+            this.A = com.censivn.C3DEngine.A.g().a(this.A, bitmapFromCache2, true);
             bitmapFromCache2.recycle();
         } else if (this.A != null) {
-            com.censivn.C3DEngine.a.g().a(this.A);
+            com.censivn.C3DEngine.A.g().a(this.A);
             this.A = null;
         }
         if (this.E == null) {
@@ -237,15 +237,15 @@ public class j implements e.a {
             this.E.scale().x = 0.0f;
             this.E.scale().y = 0.0f;
             this.E.alpha(0.0f);
-            this.n = (int) (80.0f * com.censivn.C3DEngine.b.b.a.b);
+            this.n = (int) (80.0f * com.censivn.C3DEngine.b.b.A.b);
             this.o = this.n / 2;
-            this.p = (int) (com.censivn.C3DEngine.b.b.a.b * 12.0f);
-            this.I = new h(com.censivn.C3DEngine.b.b.a.b * 12.0f, this.n);
+            this.p = (int) (com.censivn.C3DEngine.b.b.A.b * 12.0f);
+            this.I = new h(com.censivn.C3DEngine.b.b.A.b * 12.0f, this.n);
             this.I.setDefaultColor(new Color4(255, 255, 255, 100));
             this.I.alpha(0.0f);
             this.I.visible(false);
             this.G = new com.censivn.C3DEngine.b.f.j();
-            this.H = new com.censivn.C3DEngine.b.f.k(500.0f * com.censivn.C3DEngine.b.b.a.c, 64.0f * com.censivn.C3DEngine.b.b.a.c, 1, 1);
+            this.H = new com.censivn.C3DEngine.b.f.k(500.0f * com.censivn.C3DEngine.b.b.A.c, 64.0f * com.censivn.C3DEngine.b.b.A.c, 1, 1);
             this.H.calAABB();
             this.H.textures().addElement(this.y);
             this.G.addChild(this.H);
@@ -358,14 +358,14 @@ public class j implements e.a {
     }
 
     private void o() {
-        int i = (int) (com.tsf.shell.manager.o.b.a.T - (com.censivn.C3DEngine.b.b.a.c * 30.0f));
-        int i2 = (int) (com.tsf.shell.manager.o.b.a.U + (10.0f * com.censivn.C3DEngine.b.b.a.c));
-        int i3 = com.censivn.C3DEngine.b.b.a.D - ((int) ((70.0f * com.censivn.C3DEngine.b.b.a.b) * 2.0f));
+        int i = (int) (com.tsf.shell.manager.o.b.a.T - (com.censivn.C3DEngine.b.b.A.c * 30.0f));
+        int i2 = (int) (com.tsf.shell.manager.o.b.a.U + (10.0f * com.censivn.C3DEngine.b.b.A.c));
+        int i3 = com.censivn.C3DEngine.b.b.A.D - ((int) ((70.0f * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
         int i4 = i3 > i * 10 ? i * 10 : i3;
-        float fA = com.censivn.C3DEngine.b.b.a.O ? 0.0f : com.censivn.C3DEngine.b.b.a.a(80.0f);
-        int i5 = com.censivn.C3DEngine.b.b.a.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.a.b) * 2.0f));
+        float fA = com.censivn.C3DEngine.b.b.A.O ? 0.0f : com.censivn.C3DEngine.b.b.A.a(80.0f);
+        int i5 = com.censivn.C3DEngine.b.b.A.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
         int i6 = i5 > i2 * 7 ? i2 * 7 : i5;
-        int[] iArrA = x.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.a.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.a.b))), i, i2, 0, 0);
+        int[] iArrA = x.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
         this.a = iArrA[0];
         this.b = iArrA[1];
         this.c = this.a * this.b;
@@ -380,35 +380,35 @@ public class j implements e.a {
         this.d = i6;
         this.f = (this.e / 2) + 30;
         this.g = (this.d / 2) + 30;
-        int i7 = com.censivn.C3DEngine.b.b.a.J;
-        this.m = (com.censivn.C3DEngine.b.b.a.I - ((int) (128.0f * com.censivn.C3DEngine.b.b.a.b))) - com.censivn.C3DEngine.b.b.a.K;
-        this.h = ((int) ((57.6f * com.censivn.C3DEngine.b.b.a.b) - (i7 / 2))) + (com.censivn.C3DEngine.b.b.a.K / 2);
-        this.l = ((com.censivn.C3DEngine.b.b.a.D - ((this.a - 1) * this.i)) / 2) - (com.censivn.C3DEngine.b.b.a.D / 2);
-        this.k = (((((this.d / 2) + this.m) - this.h) - c().folder.childContainerY) - i7) + com.censivn.C3DEngine.b.b.a.K;
-        int i8 = (int) (this.e + (140.0f * com.censivn.C3DEngine.b.b.a.b));
-        int i9 = (int) (this.d + (140.0f * com.censivn.C3DEngine.b.b.a.b));
+        int i7 = com.censivn.C3DEngine.b.b.A.J;
+        this.m = (com.censivn.C3DEngine.b.b.A.I - ((int) (128.0f * com.censivn.C3DEngine.b.b.A.b))) - com.censivn.C3DEngine.b.b.A.K;
+        this.h = ((int) ((57.6f * com.censivn.C3DEngine.b.b.A.b) - (i7 / 2))) + (com.censivn.C3DEngine.b.b.A.K / 2);
+        this.l = ((com.censivn.C3DEngine.b.b.A.D - ((this.a - 1) * this.i)) / 2) - (com.censivn.C3DEngine.b.b.A.D / 2);
+        this.k = (((((this.d / 2) + this.m) - this.h) - c().folder.childContainerY) - i7) + com.censivn.C3DEngine.b.b.A.K;
+        int i8 = (int) (this.e + (140.0f * com.censivn.C3DEngine.b.b.A.b));
+        int i9 = (int) (this.d + (140.0f * com.censivn.C3DEngine.b.b.A.b));
         this.E.position().y = this.h;
         this.H.position().x = 0.0f;
-        this.H.position().y = (i9 / 2) - (com.censivn.C3DEngine.b.b.a.b * 30.0f);
+        this.H.position().y = (i9 / 2) - (com.censivn.C3DEngine.b.b.A.b * 30.0f);
         this.G.setAABBPX((-i8) / 2.0f, (-i9) / 2, 0.0f, i8 / 2.0f, i9 / 2, 0.0f);
-        this.J.setAABBPX(((-i8) / 2) + (50.0f * com.censivn.C3DEngine.b.b.a.c), (-i9) / 2, 0.0f, (i8 / 2) - (50.0f * com.censivn.C3DEngine.b.b.a.c), i9 / 2, 0.0f);
+        this.J.setAABBPX(((-i8) / 2) + (50.0f * com.censivn.C3DEngine.b.b.A.c), (-i9) / 2, 0.0f, (i8 / 2) - (50.0f * com.censivn.C3DEngine.b.b.A.c), i9 / 2, 0.0f);
         this.H.maxX(i8 / 2);
         this.w = this.k - (this.j * (this.b - 1));
-        this.u = this.k + com.tsf.shell.manager.o.b.a.O + (23.0f * com.censivn.C3DEngine.b.b.a.c);
+        this.u = this.k + com.tsf.shell.manager.o.b.a.O + (23.0f * com.censivn.C3DEngine.b.b.A.c);
         this.v = this.k - ((this.b - 1) * this.j);
         this.x = c().folder.childContainerY;
-        N.position().y = (this.u - (5.0f * com.censivn.C3DEngine.b.b.a.b)) + c().folder.childContainerY;
+        N.position().y = (this.u - (5.0f * com.censivn.C3DEngine.b.b.A.b)) + c().folder.childContainerY;
         N.a(this.e);
-        N.b(com.censivn.C3DEngine.b.b.a.b * 13.0f);
+        N.b(com.censivn.C3DEngine.b.b.A.b * 13.0f);
         N.a();
-        O.position().y = (this.v - (86.0f * com.censivn.C3DEngine.b.b.a.b)) + c().folder.childContainerY;
+        O.position().y = (this.v - (86.0f * com.censivn.C3DEngine.b.b.A.b)) + c().folder.childContainerY;
         O.a(this.e);
-        O.b(com.censivn.C3DEngine.b.b.a.b * 13.0f);
+        O.b(com.censivn.C3DEngine.b.b.A.b * 13.0f);
         O.a();
-        this.r = (int) ((this.d / 2) - (35.0f * com.censivn.C3DEngine.b.b.a.b));
-        this.s = (int) (((-this.d) / 2) - (com.censivn.C3DEngine.b.b.a.b * 30.0f));
+        this.r = (int) ((this.d / 2) - (35.0f * com.censivn.C3DEngine.b.b.A.b));
+        this.s = (int) (((-this.d) / 2) - (com.censivn.C3DEngine.b.b.A.b * 30.0f));
         this.q = this.r - this.s;
-        this.I.position().x = (this.e / 2) + (68.0f * com.censivn.C3DEngine.b.b.a.b);
+        this.I.position().x = (this.e / 2) + (68.0f * com.censivn.C3DEngine.b.b.A.b);
         this.W.k();
     }
 
@@ -426,14 +426,14 @@ public class j implements e.a {
     }
 
     public void a(final b bVar) {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.d.j.5
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.d.j.5
             @Override // java.lang.Runnable
             public void run() {
-                Context contextD = com.censivn.C3DEngine.a.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
+                Context contextD = com.censivn.C3DEngine.A.d();
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
                 final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
                 editText.setText(bVar.aN());
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
                 builder.setTitle(contextD.getString(b.i.rename_folder_title));
                 builder.setView(viewInflate);
                 builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i.b.d.j.5.1
@@ -494,7 +494,7 @@ public class j implements e.a {
         aVar.h(60);
         aVar.i(-1);
         Bitmap bitmapB = aVar.b((String) charSequence);
-        com.censivn.C3DEngine.a.g().a(this.y, bitmapB);
+        com.censivn.C3DEngine.A.g().a(this.y, bitmapB);
         bitmapB.recycle();
         this.H.a(this.y.width);
         this.H.b(this.y.height);
@@ -504,12 +504,12 @@ public class j implements e.a {
         String string;
         if (bVar.v != null) {
             bVar.r.textures().removeAll();
-            com.censivn.C3DEngine.a.g().a(bVar.v);
+            com.censivn.C3DEngine.A.g().a(bVar.v);
             bVar.v = null;
         }
         if (bVar.w != null) {
             bVar.s.textures().removeAll();
-            com.censivn.C3DEngine.a.g().a(bVar.w);
+            com.censivn.C3DEngine.A.g().a(bVar.w);
             bVar.w = null;
         }
         if (c().folder.sizePlaneEnable) {
@@ -539,7 +539,7 @@ public class j implements e.a {
             Bitmap bitmapB = aVar.b(string);
             canvas.drawBitmap(bitmapB, c().folder.sizeTextFormat.x, c().folder.sizeTextFormat.y - 10, (Paint) null);
             bitmapB.recycle();
-            bVar.w = com.censivn.C3DEngine.a.g().a(bitmapCreateBitmap, true);
+            bVar.w = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap, true);
             bitmapCreateBitmap.recycle();
             bVar.s.textures().addElement(bVar.w);
         }
@@ -563,14 +563,14 @@ public class j implements e.a {
                 bitmapA.recycle();
             }
         }
-        bVar.v = com.censivn.C3DEngine.a.g().a(bitmapCreateBitmap2, true);
+        bVar.v = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap2, true);
         bitmapCreateBitmap2.recycle();
         bVar.r.textures().addElement(bVar.v);
     }
 
     protected void l() {
         if (this.y.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.y);
+            com.censivn.C3DEngine.A.g().a(this.y);
         }
     }
 

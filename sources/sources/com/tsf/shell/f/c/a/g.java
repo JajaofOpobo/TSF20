@@ -16,8 +16,8 @@ public class g extends k {
     }
 
     public void a(int i, int i2, h hVar) {
-        this.d = i * com.censivn.C3DEngine.b.b.a.b;
-        this.e = i2 * com.censivn.C3DEngine.b.b.a.b;
+        this.d = i * com.censivn.C3DEngine.b.b.A.b;
+        this.e = i2 * com.censivn.C3DEngine.b.b.A.b;
         a(hVar, false);
         d();
     }
@@ -31,8 +31,8 @@ public class g extends k {
         float f2 = hVar.b;
         float f3 = hVar.c;
         float f4 = this.d / 2.0f;
-        this.f = com.censivn.C3DEngine.b.b.a.b * f;
-        this.g = (hVar.c - f2) * com.censivn.C3DEngine.b.b.a.b;
+        this.f = com.censivn.C3DEngine.b.b.A.b * f;
+        this.g = (hVar.c - f2) * com.censivn.C3DEngine.b.b.A.b;
         uvs().set(0, 1.0f, 1.0f);
         uvs().set(3, 0.0f, 1.0f);
         uvs().set(4, 1.0f, 0.0f);

@@ -22,7 +22,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
 
     public static void a() {
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.a.d(), SettingGesturePreferenceActivity.class);
+        intent.setClass(com.censivn.C3DEngine.A.d(), SettingGesturePreferenceActivity.class);
         int[] iArr = {8, 7, 6, 0, 1, 2, 3, 4, 5, 100, 101};
         int length = iArr.length;
         String[] strArr = new String[iArr.length];
@@ -240,7 +240,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         try {
             startActivityForResult(intent, i);
         } catch (Exception e) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.4
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.4
                 @Override // java.lang.Runnable
                 public void run() {
                     Toast.makeText(Home.b(), b.i.activity_not_found, 0).show();

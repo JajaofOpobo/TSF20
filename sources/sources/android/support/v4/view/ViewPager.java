@@ -212,7 +212,7 @@ public class ViewPager extends ViewGroup {
         ai.a(this, new ab() { // from class: android.support.v4.view.ViewPager.4
             private final Rect b = new Rect();
 
-            @Override // android.support.v4.view.ab
+            @Override // Ab
             public bi a(View view, bi biVar) {
                 bi biVarA = ai.a(view, biVar);
                 if (!biVarA.e()) {
@@ -1877,15 +1877,15 @@ public class ViewPager extends ViewGroup {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    class c extends android.support.v4.view.a {
+    class c extends A {
         c() {
         }
 
-        @Override // android.support.v4.view.a
+        @Override // A
         public void d(View view, AccessibilityEvent accessibilityEvent) {
             super.d(view, accessibilityEvent);
             accessibilityEvent.setClassName(ViewPager.class.getName());
-            android.support.v4.view.a.j jVarA = android.support.v4.view.a.a.a(accessibilityEvent);
+            android.support.v4.view.accessibility.j jVarA = android.support.v4.view.accessibility.a.a(accessibilityEvent);
             jVarA.a(b());
             if (accessibilityEvent.getEventType() == 4096 && ViewPager.this.h != null) {
                 jVarA.a(ViewPager.this.h.b());
@@ -1894,8 +1894,8 @@ public class ViewPager extends ViewGroup {
             }
         }
 
-        @Override // android.support.v4.view.a
-        public void a(View view, android.support.v4.view.a.b bVar) {
+        @Override // A
+        public void a(View view, android.support.v4.view.accessibility.b bVar) {
             super.a(view, bVar);
             bVar.b(ViewPager.class.getName());
             bVar.i(b());
@@ -1907,7 +1907,7 @@ public class ViewPager extends ViewGroup {
             }
         }
 
-        @Override // android.support.v4.view.a
+        @Override // A
         public boolean a(View view, int i, Bundle bundle) {
             if (super.a(view, i, bundle)) {
                 return true;

@@ -16,7 +16,7 @@ public class d extends b.c {
 
     public d(String str) {
         super(str);
-        this.a = new a(com.censivn.C3DEngine.a.d(), b.c.b, b.c.c);
+        this.a = new a(com.censivn.C3DEngine.A.d(), b.c.b, b.c.c);
         a((i) this.a.getVirtualTarget());
     }
 

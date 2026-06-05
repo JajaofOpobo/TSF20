@@ -3,16 +3,16 @@ package com.tsf.shell.f.h.a.a;
 import com.censivn.C3DEngine.b.f.i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c extends com.censivn.C3DEngine.b.b.a.a {
+public abstract class c extends com.censivn.C3DEngine.b.b.A.a {
     private boolean a = false;
     private boolean b = false;
     private int c = 10;
 
     public c(int i) {
         setTitle(i);
-        setTitlePosition(com.censivn.C3DEngine.b.b.a.a(120.0f));
+        setTitlePosition(com.censivn.C3DEngine.b.b.A.a(120.0f));
         setTitleSize(36);
-        setMarginDistance(com.censivn.C3DEngine.b.b.a.a(10.0f));
+        setMarginDistance(com.censivn.C3DEngine.b.b.A.a(10.0f));
         minY((-com.tsf.shell.f.h.a.c.a) / 2.0f);
         maxY(com.tsf.shell.f.h.a.c.a / 2.0f);
     }

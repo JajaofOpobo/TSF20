@@ -32,10 +32,10 @@ public class c extends i {
         this.a.a(new j.a() { // from class: com.tsf.shell.preference.a.a.c.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.c.1.1
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.c.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.d.b.a(com.censivn.C3DEngine.a.d(), c.this.a);
+                        com.tsf.shell.d.b.a(com.censivn.C3DEngine.A.d(), c.this.a);
                     }
                 });
             }
@@ -154,7 +154,7 @@ public class c extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.c.9
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.c.9
             @Override // java.lang.Runnable
             public void run() {
                 if (com.tsf.shell.manager.b.e.P() != c.this.k) {
@@ -184,19 +184,19 @@ public class c extends i {
         final com.censivn.C3DEngine.b.f.j b = new com.censivn.C3DEngine.b.f.j();
 
         public A() {
-            a(com.censivn.C3DEngine.b.b.a.a(200.0f));
+            a(com.censivn.C3DEngine.b.b.A.a(200.0f));
             g(b.i.text_transparency);
             h(b.i.text_floating_button_transparency_summary);
             i(0);
             j(100);
             a(" %");
-            k kVarA = com.censivn.C3DEngine.b.b.a.a(128.0f, 128.0f);
+            k kVarA = com.censivn.C3DEngine.b.b.A.a(128.0f, 128.0f);
             kVarA.textures().addElement(com.tsf.shell.manager.a.o.b().a());
-            k kVarA2 = com.censivn.C3DEngine.b.b.a.a(46.0f, 46.0f);
+            k kVarA2 = com.censivn.C3DEngine.b.b.A.a(46.0f, 46.0f);
             kVarA2.textures().addElement(com.tsf.shell.manager.a.o.b().b());
             this.b.addChild(kVarA);
             this.b.addChild(kVarA2);
-            this.b.position().y = -com.censivn.C3DEngine.b.b.a.a(120.0f);
+            this.b.position().y = -com.censivn.C3DEngine.b.b.A.a(120.0f);
         }
 
         @Override // com.censivn.C3DEngine.b.e.e, com.censivn.C3DEngine.b.e.h
@@ -214,7 +214,7 @@ public class c extends i {
         @Override // com.censivn.C3DEngine.b.e.h, com.censivn.C3DEngine.b.b.c
         public void c(int i) {
             super.c(i);
-            this.b.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(100.0f);
+            this.b.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(100.0f);
         }
 
         @Override // com.censivn.C3DEngine.b.e.h

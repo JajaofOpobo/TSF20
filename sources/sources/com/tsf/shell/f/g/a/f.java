@@ -23,8 +23,8 @@ public class f extends a {
         this.d.d(34);
         this.d.a(true);
         com.tsf.shell.manager.o.c.a(this.d, com.tsf.shell.manager.o.c.n);
-        setMenuHeight(com.censivn.C3DEngine.b.b.a.a(430.0f));
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.a.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.a.c * 0.9f);
+        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(430.0f));
+        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.f.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -49,7 +49,7 @@ public class f extends a {
                 return bVarE;
             }
         });
-        this.d.position().y = com.censivn.C3DEngine.b.b.a.a(300.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.A.a(300.0f);
         this.b.a().addChild(this.d);
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.f.2
             @Override // com.censivn.C3DEngine.b.h.b.f
@@ -71,7 +71,7 @@ public class f extends a {
     @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
-        this.d.f((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(150.0f)));
+        this.d.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(150.0f)));
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
@@ -82,7 +82,7 @@ public class f extends a {
 
     @Override // com.tsf.shell.f.g.a.a
     public float b() {
-        return com.censivn.C3DEngine.b.b.a.a(120.0f);
+        return com.censivn.C3DEngine.b.b.A.a(120.0f);
     }
 
     @Override // com.tsf.shell.f.g.a.a

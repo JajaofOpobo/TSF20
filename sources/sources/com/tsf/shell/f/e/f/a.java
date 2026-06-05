@@ -138,7 +138,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
             if (!this.a) {
                 final float[] fArrA = x.a(motionEvent2, a.this.l);
                 this.a = true;
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.e.f.a.2.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.f.a.2.1
                     @Override // java.lang.Runnable
                     public void run() {
                         i hittingTarget = a.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -327,7 +327,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         if (!this.r && this.q != null) {
             this.r = true;
             this.q.a();
-            com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.e.f.a.3
+            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.e.f.a.3
                 @Override // java.lang.Runnable
                 public void run() {
                     a.this.r = false;
@@ -361,8 +361,8 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         p.add(7);
         this.d.removeFromParent();
         com.tsf.shell.manager.a.j.a(this.d, 0);
-        float f = com.censivn.C3DEngine.b.b.a.z / 2.0f;
-        float fA = com.censivn.C3DEngine.b.b.a.a(250.0f);
+        float f = com.censivn.C3DEngine.b.b.A.z / 2.0f;
+        float fA = com.censivn.C3DEngine.b.b.A.a(250.0f);
         this.d.position().x = f;
         this.d.position().y = fA;
         int size = p.size();
@@ -477,7 +477,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
             if (g == null) {
                 g = new Paint();
                 g.setColor(-855638017);
-                g.setTextSize(36.0f * com.censivn.C3DEngine.b.b.a.c);
+                g.setTextSize(36.0f * com.censivn.C3DEngine.b.b.A.c);
                 g.setAntiAlias(true);
                 g.setTextAlign(Paint.Align.LEFT);
             }
@@ -503,7 +503,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
 
     static class b {
         public static void a(final com.tsf.shell.f.i.B bVar) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.f.a.b.1
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.f.a.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     b.c(bVar);
@@ -514,11 +514,11 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         /* JADX INFO: Access modifiers changed from: private */
         public static void c(final com.tsf.shell.f.i.B bVar) {
             ItemInfo itemInfoK = bVar.K();
-            Context contextD = com.censivn.C3DEngine.a.d();
-            View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
+            Context contextD = com.censivn.C3DEngine.A.d();
+            View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
             final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
             editText.setText(itemInfoK.title);
-            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
             builder.setTitle(b.i.rename_title);
             builder.setView(viewInflate);
             builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.e.f.a.b.2

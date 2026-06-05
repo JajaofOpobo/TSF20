@@ -14,7 +14,7 @@ public class c extends a {
         this.b = 0;
         this.a = new m();
         this.a.d(32);
-        this.c = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.c = com.censivn.C3DEngine.b.b.A.a(20.0f);
         addChild(this.a);
     }
 

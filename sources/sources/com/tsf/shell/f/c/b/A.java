@@ -381,7 +381,7 @@ public class A extends d implements com.tsf.shell.f.i.A.InterfaceC0113a {
             }
             if (!this.k) {
                 this.k = true;
-                com.censivn.C3DEngine.a.a().c(this.l);
+                com.censivn.C3DEngine.A.a().c(this.l);
             }
         }
     }
@@ -395,10 +395,10 @@ public class A extends d implements com.tsf.shell.f.i.A.InterfaceC0113a {
                 for (i iVar : a.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.f.c.b.a.3.1
+                com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.c.b.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(g.d.a, a.this.n + 1), contentValues, null, null);

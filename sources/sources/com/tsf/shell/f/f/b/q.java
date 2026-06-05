@@ -24,7 +24,7 @@ public class q extends com.tsf.shell.f.f.l {
         Number3d number3dScale3 = gVar.scale();
         gVar.scale().y = 1.0f;
         number3dScale3.x = 1.0f;
-        gVar.position().x = com.censivn.C3DEngine.b.b.a.D * f;
+        gVar.position().x = com.censivn.C3DEngine.b.b.A.D * f;
         gVar.setRendererPriorityLevel(1);
     }
 }

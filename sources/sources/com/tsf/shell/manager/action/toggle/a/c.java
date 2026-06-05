@@ -51,7 +51,7 @@ public class c extends com.tsf.shell.manager.action.toggle.B {
                 public void a(com.c.a.a.a.a aVar) {
                     switch (c.this.a) {
                         case 12000:
-                            if (com.tsf.shell.services.d.a(com.censivn.C3DEngine.a.d(), 3)) {
+                            if (com.tsf.shell.services.d.a(com.censivn.C3DEngine.A.d(), 3)) {
                                 aVar.v();
                             } else {
                                 com.tsf.shell.manager.r.c.c.a(com.tsf.shell.services.d.a);

@@ -48,11 +48,11 @@ public class d implements c.a {
     public void c() {
         if (!this.c) {
             this.c = true;
-            com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.d.1
+            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.d.1
                 @Override // java.lang.Runnable
                 public void run() {
                     final ArrayList arrayListF = d.this.f();
-                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.d.1.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.d.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             d.this.f.a(d.this.a((ArrayList<ItemInfo>) arrayListF));
@@ -126,7 +126,7 @@ public class d implements c.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public ArrayList<ItemInfo> f() {
-        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
         Cursor cursorQuery = contentResolver.query(g.b.a, null, null, null, "itemType ASC");
         ArrayList arrayList = new ArrayList();
         ArrayList<ItemInfo> arrayList2 = new ArrayList<>();
@@ -313,7 +313,7 @@ public class d implements c.a {
             @Override // java.lang.Runnable
             public void run() {
                 synchronized (d.a) {
-                    ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+                    ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                     if (z) {
                         contentResolver.insert(g.b.a, contentValues);
                         switch (itemInfo.itemType) {
@@ -340,7 +340,7 @@ public class d implements c.a {
         ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.a.d.3
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.d().getContentResolver().delete(g.b.a(itemInfo.id, false), null, null);
+                com.censivn.C3DEngine.A.d().getContentResolver().delete(g.b.a(itemInfo.id, false), null, null);
             }
         });
     }

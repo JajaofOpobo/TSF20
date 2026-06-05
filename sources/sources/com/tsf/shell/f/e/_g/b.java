@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends j {
-    private float c = 26.0f * com.censivn.C3DEngine.b.b.a.c;
+    private float c = 26.0f * com.censivn.C3DEngine.b.b.A.c;
     private ArrayList<a> a = new ArrayList<>();
     private ArrayList<a> b = new ArrayList<>();
 

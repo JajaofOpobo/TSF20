@@ -24,7 +24,7 @@ public class AboutActivity extends FragmentActivity {
     public static void a(Context context) {
         try {
             Intent intent = new Intent();
-            intent.setClass(com.censivn.C3DEngine.a.d(), AboutActivity.class);
+            intent.setClass(com.censivn.C3DEngine.A.d(), AboutActivity.class);
             context.startActivity(intent);
         } catch (Exception e) {
         }

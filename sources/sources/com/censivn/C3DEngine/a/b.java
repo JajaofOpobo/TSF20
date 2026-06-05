@@ -178,9 +178,9 @@ public class b {
             throw new NullPointerException("OnGestureListener must not be null");
         }
         this.v = true;
-        ViewConfiguration viewConfiguration = ViewConfiguration.get(com.censivn.C3DEngine.a.d());
+        ViewConfiguration viewConfiguration = ViewConfiguration.get(com.censivn.C3DEngine.A.d());
         int scaledTouchSlop = viewConfiguration.getScaledTouchSlop();
-        int i2 = (int) (50.0f * com.censivn.C3DEngine.b.b.a.b);
+        int i2 = (int) (50.0f * com.censivn.C3DEngine.b.b.A.b);
         this.g = 500;
         int scaledMaximumFlingVelocity = viewConfiguration.getScaledMaximumFlingVelocity();
         a = scaledMaximumFlingVelocity;
@@ -336,7 +336,7 @@ public class b {
         this.j.removeMessages(3);
         this.n = true;
         this.x = false;
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.1
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.1
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c();
@@ -356,7 +356,7 @@ public class b {
     public void d() {
         this.z = true;
         this.y = false;
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.2
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.2
             @Override // java.lang.Runnable
             public void run() {
                 b.this.e();
@@ -374,7 +374,7 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.3
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.l != null && !b.this.m) {

@@ -21,12 +21,12 @@ public abstract class d {
     private float mOffsetMenuHeight;
     public static int COLOR_IMAGE_HUE = 0;
     public static int COLOR_IMAGE_SATURATION = 0;
-    public static final float MENU_HEIGHT = 100.0f * com.censivn.C3DEngine.b.b.a.c;
-    public static final float MENU_EXTRA_HEIGHT = 115.0f * com.censivn.C3DEngine.b.b.a.c;
-    public static final float MENU_ITEM_DISTANCE = 36.0f * com.censivn.C3DEngine.b.b.a.c;
+    public static final float MENU_HEIGHT = 100.0f * com.censivn.C3DEngine.b.b.A.c;
+    public static final float MENU_EXTRA_HEIGHT = 115.0f * com.censivn.C3DEngine.b.b.A.c;
+    public static final float MENU_ITEM_DISTANCE = 36.0f * com.censivn.C3DEngine.b.b.A.c;
     private boolean isShow = false;
     private boolean isBlurModeOn = false;
-    private c mExtraMenuContainer = new c(com.censivn.C3DEngine.b.b.a.D, MENU_EXTRA_HEIGHT);
+    private c mExtraMenuContainer = new c(com.censivn.C3DEngine.b.b.A.D, MENU_EXTRA_HEIGHT);
     private com.tsf.shell.f.e._g.A mClassMenu = new com.tsf.shell.f.e._g.A(this, MENU_ITEM_DISTANCE);
     private a mKeyListener = new a();
     private b mSceneEventListener = new b();
@@ -34,10 +34,10 @@ public abstract class d {
     private j mAnimationContainer = new j();
     private j mMenuContainer = new j();
     private j mContentContainer = new j();
-    private k mBarBackground = new k(com.censivn.C3DEngine.b.b.a.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.d.3
+    private k mBarBackground = new k(com.censivn.C3DEngine.b.b.A.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.d.3
         @Override // com.censivn.C3DEngine.b.f.k
         public void b(float f) {
-            float f2 = d.MENU_HEIGHT + com.censivn.C3DEngine.b.b.a.K + d.this.mOffsetMenuHeight + f;
+            float f2 = d.MENU_HEIGHT + com.censivn.C3DEngine.b.b.A.K + d.this.mOffsetMenuHeight + f;
             float f3 = (-f2) - d.MENU_HEIGHT;
             float f4 = d.MENU_HEIGHT;
             points().pxY(2, d.MENU_HEIGHT);
@@ -45,7 +45,7 @@ public abstract class d {
             points().pxY(0, (-f2) - d.MENU_HEIGHT);
             points().pxY(1, (-f2) - d.MENU_HEIGHT);
             calAABB();
-            setAABBPX(com.censivn.C3DEngine.b.b.a.z, f3, 0.0f, com.censivn.C3DEngine.b.b.a.A, f4, 0.0f);
+            setAABBPX(com.censivn.C3DEngine.b.b.A.z, f3, 0.0f, com.censivn.C3DEngine.b.b.A.A, f4, 0.0f);
         }
     };
 
@@ -81,7 +81,7 @@ public abstract class d {
     public void updateBlurModeUV() {
         if (this.isBlurModeOn) {
             float f = this.mMenuContainer.position().y + this.mContainer.position().y;
-            float f2 = com.censivn.C3DEngine.b.b.a.G;
+            float f2 = com.censivn.C3DEngine.b.b.A.G;
             float fPxY = (f2 / 2.0f) + this.mBarBackground.points().pxY(0) + f + this.mOffsetMenuHeight;
             float fPxY2 = f + this.mBarBackground.points().pxY(2) + (f2 / 2.0f) + this.mOffsetMenuHeight;
             this.mBarBackground.uvs().setV(0, fPxY / f2);
@@ -184,7 +184,7 @@ public abstract class d {
         dVar.a(com.censivn.C3DEngine.b.g.a.a);
         com.censivn.C3DEngine.b.g.c.a(this.mMenuContainer);
         com.censivn.C3DEngine.b.g.c.a(this.mMenuContainer, 500, dVar);
-        this.mContainer.position().y = com.censivn.C3DEngine.b.b.a.C;
+        this.mContainer.position().y = com.censivn.C3DEngine.b.b.A.C;
         this.mContainer.removeFromParent();
         com.tsf.shell.manager.a.j.a(this.mContainer);
     }
@@ -271,7 +271,7 @@ public abstract class d {
         this.mClassMenu.a(arrayList);
         for (com.tsf.shell.f.e._g.a.b bVar : arrayList) {
             bVar.setMenu(this);
-            bVar.onLayout(com.censivn.C3DEngine.b.b.a.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.a.A, this.mHeight / 2.0f);
+            bVar.onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
             if (bVar.getContentContainer() != null) {
                 bVar.reset();
             }
@@ -424,24 +424,24 @@ public abstract class d {
     /* JADX INFO: Access modifiers changed from: private */
     public void resetSize() {
         com.censivn.C3DEngine.b.g.c.a(this.mContainer);
-        this.mContainer.position().y = com.censivn.C3DEngine.b.b.a.C;
-        this.mBarBackground.a(com.censivn.C3DEngine.b.b.a.D);
-        this.mExtraMenuContainer.a(com.censivn.C3DEngine.b.b.a.D);
+        this.mContainer.position().y = com.censivn.C3DEngine.b.b.A.C;
+        this.mBarBackground.a(com.censivn.C3DEngine.b.b.A.D);
+        this.mExtraMenuContainer.a(com.censivn.C3DEngine.b.b.A.D);
         this.mBarBackground.calAABB();
         Iterator<com.tsf.shell.f.e._g.a.b> it = this.mMenuItems.iterator();
         while (it.hasNext()) {
-            it.next().onLayout(com.censivn.C3DEngine.b.b.a.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.a.A, this.mHeight / 2.0f);
+            it.next().onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
         }
         this.mClassMenu.b();
-        onLayout(com.censivn.C3DEngine.b.b.a.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.a.A, this.mHeight / 2.0f);
+        onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
     }
 
     public float getScreenFreeSpaceBottom() {
-        return com.censivn.C3DEngine.b.b.a.B - (com.censivn.C3DEngine.b.b.a.E - getHeight());
+        return com.censivn.C3DEngine.b.b.A.B - (com.censivn.C3DEngine.b.b.A.E - getHeight());
     }
 
     public float getScreenFreeSpaceCenter() {
-        return com.censivn.C3DEngine.b.b.a.B - ((com.censivn.C3DEngine.b.b.a.E - getHeight()) / 2.0f);
+        return com.censivn.C3DEngine.b.b.A.B - ((com.censivn.C3DEngine.b.b.A.E - getHeight()) / 2.0f);
     }
 
     class a implements com.censivn.C3DEngine.b.c.b.a {

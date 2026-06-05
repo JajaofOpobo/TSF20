@@ -9,12 +9,12 @@ public class a extends j {
     private C0093a b;
     private b c;
     private boolean d = false;
-    private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.a.a(20.0f), com.censivn.C3DEngine.b.b.a.E, 0);
+    private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 0);
 
     public a() {
         this.a.setDefaultColor(new Color4(255, 255, 255, 100));
         this.a.alpha(0.0f);
-        this.b = new C0093a(com.censivn.C3DEngine.b.b.a.a(20.0f), com.censivn.C3DEngine.b.b.a.E, 1);
+        this.b = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 1);
         this.b.setDefaultColor(new Color4(255, 255, 255, 100));
         this.b.alpha(0.0f);
         addChild(this.a);
@@ -71,15 +71,15 @@ public class a extends j {
         if (!this.d) {
             this.d = true;
             removeFromParent();
-            float fA = com.censivn.C3DEngine.b.b.a.C + a();
+            float fA = com.censivn.C3DEngine.b.b.A.C + a();
             this.a.points().setYPX(0, fA);
             this.a.points().setYPX(1, fA);
             this.b.points().setYPX(0, fA);
             this.b.points().setYPX(1, fA);
-            this.a.points().setYPX(2, com.censivn.C3DEngine.b.b.a.B);
-            this.a.points().setYPX(3, com.censivn.C3DEngine.b.b.a.B);
-            this.b.points().setYPX(2, com.censivn.C3DEngine.b.b.a.B);
-            this.b.points().setYPX(3, com.censivn.C3DEngine.b.b.a.B);
+            this.a.points().setYPX(2, com.censivn.C3DEngine.b.b.A.B);
+            this.a.points().setYPX(3, com.censivn.C3DEngine.b.b.A.B);
+            this.b.points().setYPX(2, com.censivn.C3DEngine.b.b.A.B);
+            this.b.points().setYPX(3, com.censivn.C3DEngine.b.b.A.B);
             this.a.updatePointsVBO();
             this.b.updatePointsVBO();
             this.a.calAABB(6.0f, 1.0f, 1.0f);
@@ -87,13 +87,13 @@ public class a extends j {
             com.tsf.shell.manager.a.j.a(this);
             com.tsf.shell.manager.a.k.b(this.a);
             com.tsf.shell.manager.a.k.b(this.b);
-            this.a.position().x = com.censivn.C3DEngine.b.b.a.z;
-            this.b.position().x = com.censivn.C3DEngine.b.b.a.A;
+            this.a.position().x = com.censivn.C3DEngine.b.b.A.z;
+            this.b.position().x = com.censivn.C3DEngine.b.b.A.A;
         }
     }
 
     public void a(int i) {
-        com.censivn.C3DEngine.a.a().b(this.c, i);
+        com.censivn.C3DEngine.A.a().b(this.c, i);
     }
 
     public void c() {
@@ -119,7 +119,7 @@ public class a extends j {
             w.a();
             a.this.c.b = fVar;
             a.this.c.c = this.a;
-            com.censivn.C3DEngine.a.a().b(a.this.c, 400L);
+            com.censivn.C3DEngine.A.a().b(a.this.c, 400L);
             a.this.d();
         }
 
@@ -130,14 +130,14 @@ public class a extends j {
 
         @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
         public void e(com.tsf.shell.f.e.F fVar) {
-            com.censivn.C3DEngine.a.a().g(a.this.c);
+            com.censivn.C3DEngine.A.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }
 
         @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
         public void d(com.tsf.shell.f.e.F fVar) {
-            com.censivn.C3DEngine.a.a().g(a.this.c);
+            com.censivn.C3DEngine.A.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }

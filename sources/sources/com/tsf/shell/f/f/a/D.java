@@ -103,7 +103,7 @@ public class D {
                 arrayList.add(gVar.bd().b.getPackageName());
             }
         }
-        return com.tsf.shell.plugin.classification.d.a(com.censivn.C3DEngine.a.d(), arrayList, aVar);
+        return com.tsf.shell.plugin.classification.d.a(com.censivn.C3DEngine.A.d(), arrayList, aVar);
     }
 
     public void c() {

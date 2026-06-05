@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.a.a;
 import android.support.v7.app.a;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
@@ -24,7 +23,7 @@ public class b extends i implements DialogInterface {
     static int a(Context context, int i) {
         if (i < 16777216) {
             TypedValue typedValue = new TypedValue();
-            context.getTheme().resolveAttribute(a.C0012a.alertDialogTheme, typedValue, true);
+            context.getTheme().resolveAttribute(android.support.v7.a.a.C0012a.alertDialogTheme, typedValue, true);
             return typedValue.resourceId;
         }
         return i;
@@ -59,7 +58,7 @@ public class b extends i implements DialogInterface {
     }
 
     public static class a {
-        private final a.C0013a a;
+        private final android.support.v7.app.a.C0013a a;
         private int b;
 
         public a(Context context) {
@@ -67,7 +66,7 @@ public class b extends i implements DialogInterface {
         }
 
         public a(Context context, int i) {
-            this.a = new a.C0013a(new ContextThemeWrapper(context, b.a(context, i)));
+            this.a = new android.support.v7.app.a.C0013a(new ContextThemeWrapper(context, b.a(context, i)));
             this.b = i;
         }
 

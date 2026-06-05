@@ -30,7 +30,7 @@ public class w {
                     }
                 };
             }
-            com.censivn.C3DEngine.a.a().a(a);
+            com.censivn.C3DEngine.A.a().a(a);
         }
     }
 }

@@ -30,7 +30,7 @@ public class b {
         if (bitmapA == null) {
             return null;
         }
-        TextureElement textureElementA = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, false);
         bitmapA.recycle();
         a aVar2 = new a(textureElementA, aVar.b.a + ":" + aVar.b.b);
         aVar2.b(aVar);
@@ -44,9 +44,9 @@ public class b {
         InputStream inputStream;
         Bitmap bitmapCopy = null;
         try {
-            Context contextD = com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
+            Context contextD = com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
             Context contextCreatePackageContext = contextD.createPackageContext(str, 3);
             inputStreamOpenRawResource = contextCreatePackageContext.getResources().openRawResource(contextCreatePackageContext.getResources().getIdentifier(str2, "drawable", contextCreatePackageContext.getPackageName()));
             try {
@@ -112,7 +112,7 @@ public class b {
         }
 
         public void a() {
-            com.censivn.C3DEngine.a.g().a(this.a);
+            com.censivn.C3DEngine.A.g().a(this.a);
             this.a = null;
             this.b = null;
         }

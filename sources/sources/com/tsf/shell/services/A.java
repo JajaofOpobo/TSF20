@@ -34,7 +34,7 @@ public class A {
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
-            a.this.a(com.censivn.C3DEngine.a.d(), new Runnable() { // from class: com.tsf.shell.services.a.2.1
+            a.this.a(com.censivn.C3DEngine.A.d(), new Runnable() { // from class: com.tsf.shell.services.a.2.1
                 @Override // java.lang.Runnable
                 public void run() {
                     if (action.equals("com.tsf.shell.services.notifier.smsOnChange")) {
@@ -99,7 +99,7 @@ public class A {
     }
 
     public void a(Context context) {
-        Intent intentA = i.a(com.censivn.C3DEngine.a.d(), new Intent(d(context)));
+        Intent intentA = i.a(com.censivn.C3DEngine.A.d(), new Intent(d(context)));
         if (intentA != null) {
             com.tsf.shell.component.a.a(context, intentA);
             context.bindService(intentA, this.b, 1);

@@ -20,7 +20,7 @@ public class b extends j {
         this.a.calAABB();
         this.b = new m();
         this.b.d(32);
-        this.b.position().y = com.censivn.C3DEngine.b.b.a.a(-120.0f);
+        this.b.position().y = com.censivn.C3DEngine.b.b.A.a(-120.0f);
         this.b.g(170);
         addChild(this.a);
         addChild(this.b);
@@ -48,7 +48,7 @@ public class b extends j {
     }
 
     public void d() {
-        setAABBPX(com.censivn.C3DEngine.b.b.a.a(200.0f), com.censivn.C3DEngine.b.b.a.a(250.0f));
+        setAABBPX(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(250.0f));
         if (parent() != null) {
             ((j) parent()).onChildMeasure(this);
         }
@@ -59,7 +59,7 @@ public class b extends j {
         if (this.d.id == 0) {
             this.d.id = com.tsf.shell.manager.a.o.a().v().c(false).id;
             if (this.c != null) {
-                com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.b.2
+                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.b.2
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.e();
@@ -84,7 +84,7 @@ public class b extends j {
                     runnable.run();
                     return;
                 } else {
-                    com.censivn.C3DEngine.a.a().c(runnable);
+                    com.censivn.C3DEngine.A.a().c(runnable);
                     return;
                 }
             }
@@ -97,7 +97,7 @@ public class b extends j {
         Bitmap bitmapA = this.e.a();
         h();
         if (bitmapA != null) {
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }
     }
@@ -116,7 +116,7 @@ public class b extends j {
         if (this.d.id == com.tsf.shell.manager.a.o.a().v().c(false).id) {
             this.d.id = 0;
         } else {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
     }
 }

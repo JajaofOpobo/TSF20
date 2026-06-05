@@ -17,14 +17,14 @@ public class d extends com.tsf.shell.f.f.i {
         if (f < 0.0f) {
             float f2 = -f;
             float f3 = 90.0f * f2;
-            float fSin = (float) (Math.sin(Math.toRadians(f3)) * ((double) (com.censivn.C3DEngine.b.b.a.D * 0.5f)));
-            this.a.position().x = (com.censivn.C3DEngine.b.b.a.A - (f2 * com.censivn.C3DEngine.b.b.a.D)) - ((float) (Math.cos(Math.toRadians(f3)) * ((double) (com.censivn.C3DEngine.b.b.a.D * 0.5f))));
+            float fSin = (float) (Math.sin(Math.toRadians(f3)) * ((double) (com.censivn.C3DEngine.b.b.A.D * 0.5f)));
+            this.a.position().x = (com.censivn.C3DEngine.b.b.A.A - (f2 * com.censivn.C3DEngine.b.b.A.D)) - ((float) (Math.cos(Math.toRadians(f3)) * ((double) (com.censivn.C3DEngine.b.b.A.D * 0.5f))));
             this.a.position().z = -fSin;
             this.a.rotation().y = -f3;
         } else {
             float f4 = f * 90.0f;
-            float fSin2 = (float) (Math.sin(Math.toRadians(f4)) * ((double) (com.censivn.C3DEngine.b.b.a.D * 0.5f)));
-            this.a.position().x = com.censivn.C3DEngine.b.b.a.z + (com.censivn.C3DEngine.b.b.a.D * f) + ((float) (Math.cos(Math.toRadians(f4)) * ((double) (com.censivn.C3DEngine.b.b.a.D * 0.5f))));
+            float fSin2 = (float) (Math.sin(Math.toRadians(f4)) * ((double) (com.censivn.C3DEngine.b.b.A.D * 0.5f)));
+            this.a.position().x = com.censivn.C3DEngine.b.b.A.z + (com.censivn.C3DEngine.b.b.A.D * f) + ((float) (Math.cos(Math.toRadians(f4)) * ((double) (com.censivn.C3DEngine.b.b.A.D * 0.5f))));
             this.a.position().z = -fSin2;
             this.a.rotation().y = f4;
         }

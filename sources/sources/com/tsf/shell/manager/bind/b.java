@@ -15,7 +15,7 @@ public class b {
     private c c;
 
     public static void a(final ItemInfo itemInfo, final boolean z) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.1
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.1
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(itemInfo, z);
@@ -77,7 +77,7 @@ public class b {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
                 }
             };
-            com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.bind.b.4
+            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.bind.b.4
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.a.i.a((ItemInfo) arrayList.remove(0), abstractC0146a);
@@ -93,10 +93,10 @@ public class b {
     }
 
     public void a(final LauncherAppWidgetInfo launcherAppWidgetInfo) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.5
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.5
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.bind.b.5.1
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.bind.b.5.1
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.c.a(launcherAppWidgetInfo);
@@ -123,7 +123,7 @@ public class b {
     }
 
     public void a(final ArrayList<ItemInfo> arrayList, final ArrayList<String> arrayList2) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.6
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.6
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.a(arrayList, arrayList2);
@@ -132,7 +132,7 @@ public class b {
     }
 
     public void a(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.7
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.7
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.c(arrayList, str);
@@ -141,7 +141,7 @@ public class b {
     }
 
     public void b(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.8
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.8
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.b(arrayList, str);
@@ -150,7 +150,7 @@ public class b {
     }
 
     public void c(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.9
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.b.9
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.a(arrayList, str);

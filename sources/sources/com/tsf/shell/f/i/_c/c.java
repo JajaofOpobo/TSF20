@@ -75,18 +75,18 @@ public class c extends g {
 
     @Override // com.tsf.shell.f.i._c.g, com.tsf.shell.f.i._c.e
     public void b() {
-        com.censivn.C3DEngine.a.g().a(this.p);
-        com.censivn.C3DEngine.a.g().a(this.q);
-        com.censivn.C3DEngine.a.g().a(this.r);
+        com.censivn.C3DEngine.A.g().a(this.p);
+        com.censivn.C3DEngine.A.g().a(this.q);
+        com.censivn.C3DEngine.A.g().a(this.r);
     }
 
     private void p() {
         if (this.p.id == 0) {
             int i = com.tsf.shell.manager.o.b.a.H;
             int i2 = com.tsf.shell.manager.o.b.a.I;
-            com.censivn.C3DEngine.a.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
-            com.censivn.C3DEngine.a.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
-            com.censivn.C3DEngine.a.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
+            com.censivn.C3DEngine.A.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
+            com.censivn.C3DEngine.A.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
+            com.censivn.C3DEngine.A.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
         }
     }
 
@@ -102,13 +102,13 @@ public class c extends g {
 
     private void q() {
         if (this.v != null) {
-            com.censivn.C3DEngine.a.a().g(this.v);
+            com.censivn.C3DEngine.A.a().g(this.v);
         }
         com.tsf.shell.f.i._b.e.b bVar = this.u.get(0);
         com.censivn.C3DEngine.b.g.c.a(bVar);
         bVar.removeFromParent();
         this.l.aX().addChild(bVar);
-        float f = (com.censivn.C3DEngine.b.b.a.c * 60.0f) / 2.0f;
+        float f = (com.censivn.C3DEngine.b.b.A.c * 60.0f) / 2.0f;
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < 2; i++) {
@@ -118,9 +118,9 @@ public class c extends g {
             this.k.addChild(bVar2);
             bVar2.rotation().z = 0.0f;
             bVar2.scale().setAll(0.4f, 0.4f, 1.0f);
-            bVar2.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.a.c;
+            bVar2.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
             bVar2.position().y = f2;
-            f2 -= com.censivn.C3DEngine.b.b.a.c * 60.0f;
+            f2 -= com.censivn.C3DEngine.b.b.A.c * 60.0f;
         }
         this.l.aY();
         this.v = new Runnable() { // from class: com.tsf.shell.f.i._c.c.3
@@ -142,10 +142,10 @@ public class c extends g {
                         c.this.l.e(bVar4);
                     }
                 };
-                com.censivn.C3DEngine.a.a().b(c.this.v, 1000L);
+                com.censivn.C3DEngine.A.a().b(c.this.v, 1000L);
             }
         };
-        com.censivn.C3DEngine.a.a().b(this.v, 1000L);
+        com.censivn.C3DEngine.A.a().b(this.v, 1000L);
     }
 
     private j r() {
@@ -162,17 +162,17 @@ public class c extends g {
         this.u.add(this.m);
         this.u.add(this.n);
         this.u.add(this.o);
-        float f = com.censivn.C3DEngine.b.b.a.c * (-60.0f);
+        float f = com.censivn.C3DEngine.b.b.A.c * (-60.0f);
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < size; i++) {
             com.tsf.shell.f.i._b.e.b bVar = this.u.get((size - i) - 1);
-            bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.a.c;
+            bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
             bVar.position().y = f2;
             Number3d number3dScale = bVar.scale();
             bVar.scale().y = 0.4f;
             number3dScale.x = 0.4f;
-            f2 += 60.0f * com.censivn.C3DEngine.b.b.a.c;
+            f2 += 60.0f * com.censivn.C3DEngine.b.b.A.c;
             this.k.addChild(bVar);
         }
         return this.k;

@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.m;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.b.a.e;
+import com.censivn.C3DEngine.b.b.A.e;
 import com.censivn.C3DEngine.b.f.g;
 import com.tsf.b;
 import java.util.ArrayList;
@@ -16,9 +16,9 @@ public class c extends e {
     public c(b bVar, a aVar) {
         this.d = aVar;
         this.e = bVar;
-        this.c.a(com.censivn.C3DEngine.b.b.a.a(123.0f), com.censivn.C3DEngine.b.b.a.a(123.0f));
+        this.c.a(com.censivn.C3DEngine.b.b.A.a(123.0f), com.censivn.C3DEngine.b.b.A.a(123.0f));
         this.c.a(b.d.side_menu_add_button);
-        this.c.position().y = -com.censivn.C3DEngine.b.b.a.a(100.0f);
+        this.c.position().y = -com.censivn.C3DEngine.b.b.A.a(100.0f);
         this.c.calAABB(1.2f, 1.2f, 1.0f);
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c) { // from class: com.tsf.shell.manager.m.c.1
             @Override // com.censivn.C3DEngine.b.d.a
@@ -38,7 +38,7 @@ public class c extends e {
         return false;
     }
 
-    @Override // com.censivn.C3DEngine.b.b.a.e, com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.b.A.e, com.censivn.C3DEngine.b.f.j
     public void onDrawChildStart() {
         super.onDrawChildStart();
         if (a() != null && a().numChildren() == 0) {

@@ -17,8 +17,8 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b implements e.a, a.InterfaceC0113a {
-    public static float a = com.censivn.C3DEngine.b.b.a.a(300.0f);
-    public static float b = com.censivn.C3DEngine.b.b.a.a(190.0f);
+    public static float a = com.censivn.C3DEngine.b.b.A.a(300.0f);
+    public static float b = com.censivn.C3DEngine.b.b.A.a(190.0f);
     private j c;
     private c d;
     private a e;
@@ -105,8 +105,8 @@ public class b implements e.a, a.InterfaceC0113a {
     }
 
     public void f() {
-        this.m = com.censivn.C3DEngine.b.b.a.O ? this.n : this.o;
-        this.f.position().y = (com.censivn.C3DEngine.b.b.a.B - b) - (((com.censivn.C3DEngine.b.b.a.B - com.censivn.C3DEngine.b.b.a.C) - (2.0f * b)) * this.m);
+        this.m = com.censivn.C3DEngine.b.b.A.O ? this.n : this.o;
+        this.f.position().y = (com.censivn.C3DEngine.b.b.A.B - b) - (((com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.C) - (2.0f * b)) * this.m);
     }
 
     public void g() {
@@ -137,15 +137,15 @@ public class b implements e.a, a.InterfaceC0113a {
         this.h = new h();
         this.c = new j();
         this.e = new a(this) { // from class: com.tsf.shell.manager.m.b.4
-            @Override // com.censivn.C3DEngine.b.b.a.c, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
             public void addChild(i iVar) {
                 super.a(iVar, true);
             }
         };
-        this.e.a(com.censivn.C3DEngine.b.b.a.a(60.0f));
-        this.e.b(com.censivn.C3DEngine.b.b.a.a(10.0f));
+        this.e.a(com.censivn.C3DEngine.b.b.A.a(60.0f));
+        this.e.b(com.censivn.C3DEngine.b.b.A.a(10.0f));
         this.d = new c(this, this.e);
-        this.e.a((com.censivn.C3DEngine.b.b.a.e) this.d);
+        this.e.a((com.censivn.C3DEngine.b.b.A.e) this.d);
         this.d.visible(false);
         this.d.a(this.e);
         jVar.addChild(this.c);
@@ -223,9 +223,9 @@ public class b implements e.a, a.InterfaceC0113a {
                 }
             };
             if (this.k == 0) {
-                dVar.f(com.censivn.C3DEngine.b.b.a.z - com.censivn.C3DEngine.b.b.a.a(30.0f));
+                dVar.f(com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(30.0f));
             } else {
-                dVar.f(com.censivn.C3DEngine.b.b.a.A + com.censivn.C3DEngine.b.b.a.a(30.0f));
+                dVar.f(com.censivn.C3DEngine.b.b.A.A + com.censivn.C3DEngine.b.b.A.a(30.0f));
             }
             com.censivn.C3DEngine.b.g.c.a(this.f);
             com.censivn.C3DEngine.b.g.c.a(this.f, 350, dVar);
@@ -266,8 +266,8 @@ public class b implements e.a, a.InterfaceC0113a {
 
     private void p() {
         this.f.position().x = r();
-        this.d.setAABBPX((-a) / 2.0f, -com.censivn.C3DEngine.b.b.a.E, 0.0f, a / 2.0f, 0.0f, 0.0f);
-        this.d.position().y = com.censivn.C3DEngine.b.b.a.B;
+        this.d.setAABBPX((-a) / 2.0f, -com.censivn.C3DEngine.b.b.A.E, 0.0f, a / 2.0f, 0.0f, 0.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.A.B;
         this.d.position().x = s();
         this.d.h();
         f();
@@ -280,33 +280,33 @@ public class b implements e.a, a.InterfaceC0113a {
     private float r() {
         if (this.g) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.a.z + a;
+                return com.censivn.C3DEngine.b.b.A.z + a;
             }
-            return com.censivn.C3DEngine.b.b.a.A - a;
+            return com.censivn.C3DEngine.b.b.A.A - a;
         }
         if (this.l) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(30.0f);
+                return com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(30.0f);
             }
-            return com.censivn.C3DEngine.b.b.a.A - com.censivn.C3DEngine.b.b.a.a(30.0f);
+            return com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(30.0f);
         }
         if (this.k == 0) {
-            return com.censivn.C3DEngine.b.b.a.z - com.censivn.C3DEngine.b.b.a.a(60.0f);
+            return com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(60.0f);
         }
-        return com.censivn.C3DEngine.b.b.a.A + com.censivn.C3DEngine.b.b.a.a(60.0f);
+        return com.censivn.C3DEngine.b.b.A.A + com.censivn.C3DEngine.b.b.A.a(60.0f);
     }
 
     private float s() {
         if (this.g) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.a.z + (a / 2.0f);
+                return com.censivn.C3DEngine.b.b.A.z + (a / 2.0f);
             }
-            return com.censivn.C3DEngine.b.b.a.A - (a / 2.0f);
+            return com.censivn.C3DEngine.b.b.A.A - (a / 2.0f);
         }
         if (this.k == 0) {
-            return com.censivn.C3DEngine.b.b.a.z - (a / 2.0f);
+            return com.censivn.C3DEngine.b.b.A.z - (a / 2.0f);
         }
-        return com.censivn.C3DEngine.b.b.a.A + (a / 2.0f);
+        return com.censivn.C3DEngine.b.b.A.A + (a / 2.0f);
     }
 
     public void l() {
@@ -397,7 +397,7 @@ public class b implements e.a, a.InterfaceC0113a {
     }
 
     public static String n() {
-        Cursor cursorQuery = com.censivn.C3DEngine.a.d().getContentResolver().query(g.C0121g.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.C0121g.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -415,7 +415,7 @@ public class b implements e.a, a.InterfaceC0113a {
         }
         if (!this.s) {
             this.s = true;
-            com.censivn.C3DEngine.a.a().c(this.r);
+            com.censivn.C3DEngine.A.a().c(this.r);
         }
     }
 
@@ -428,10 +428,10 @@ public class b implements e.a, a.InterfaceC0113a {
                 for (i iVar : b.this.e.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.b.2.1
+                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.b.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(g.C0121g.a, 1L), contentValues, null, null);

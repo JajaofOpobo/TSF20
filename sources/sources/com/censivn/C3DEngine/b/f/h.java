@@ -29,8 +29,8 @@ public class h extends j {
         this.d = i;
         this.e = i2;
         if (z2) {
-            f = ((int) f) * com.censivn.C3DEngine.b.b.a.a;
-            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.a.a;
+            f = ((int) f) * com.censivn.C3DEngine.b.b.A.a;
+            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.A.a;
         }
         this.a = f;
         this.b = f2;

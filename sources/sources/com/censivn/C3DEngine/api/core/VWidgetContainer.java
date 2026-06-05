@@ -238,7 +238,7 @@ public class VWidgetContainer extends VObject3dContainer {
             public void onDrawStart() {
                 if (VWidgetContainer.this.needLockView) {
                     VWidgetContainer.this.isLockdView = true;
-                    com.censivn.C3DEngine.a.e().b(position().x + VWidgetContainer.this.mLockViewOffsetX, position().y + VWidgetContainer.this.mLockViewOffsetY);
+                    com.censivn.C3DEngine.A.e().b(position().x + VWidgetContainer.this.mLockViewOffsetX, position().y + VWidgetContainer.this.mLockViewOffsetY);
                 }
                 VWidgetContainer.this.mThis.onDrawStart();
             }
@@ -247,7 +247,7 @@ public class VWidgetContainer extends VObject3dContainer {
             public void onDrawEnd() {
                 if (VWidgetContainer.this.isLockdView) {
                     VWidgetContainer.this.isLockdView = false;
-                    com.censivn.C3DEngine.a.e().f();
+                    com.censivn.C3DEngine.A.e().f();
                 }
                 VWidgetContainer.this.mThis.onDrawEnd();
             }

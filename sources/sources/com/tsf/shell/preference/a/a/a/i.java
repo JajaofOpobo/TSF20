@@ -26,8 +26,8 @@ public class i extends h {
         mVar.d(38);
         mVar.a(true);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(0.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.a.a(15.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(0.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.A.a(15.0f);
         mVar.setLayoutParams(bVar);
         mVar.d(38);
         mVar.position().x = (-a()) / 2.0f;

@@ -29,7 +29,7 @@ public class A extends com.tsf.shell.f.e._g.d {
     }
 
     public A() {
-        super(800.0f * com.censivn.C3DEngine.b.b.a.c);
+        super(800.0f * com.censivn.C3DEngine.b.b.A.c);
         this.f = false;
         ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
         this.e = new e(this, x.c(b.i.group_toggle));

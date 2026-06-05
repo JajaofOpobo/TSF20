@@ -33,17 +33,17 @@ public class e extends com.censivn.C3DEngine.b.f.a.a {
         this.o = 0.0f;
         if (k == null) {
             Bitmap bitmapA = x.a(b.d.dock_operation_border);
-            k = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+            k = com.censivn.C3DEngine.A.g().a(bitmapA, false);
             bitmapA.recycle();
             Bitmap bitmapA2 = x.a(b.d.dock_operation_border_point);
-            l = com.censivn.C3DEngine.a.g().a(bitmapA2, false);
+            l = com.censivn.C3DEngine.A.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }
-        this.m = com.censivn.C3DEngine.b.b.a.b * 158.0f;
-        this.n = com.censivn.C3DEngine.b.b.a.b * 158.0f;
+        this.m = com.censivn.C3DEngine.b.b.A.b * 158.0f;
+        this.n = com.censivn.C3DEngine.b.b.A.b * 158.0f;
         this.a = this.m;
         textures().addElement(k);
-        this.q = new k(28.0f * com.censivn.C3DEngine.b.b.a.b, 21.0f * com.censivn.C3DEngine.b.b.a.b, false);
+        this.q = new k(28.0f * com.censivn.C3DEngine.b.b.A.b, 21.0f * com.censivn.C3DEngine.b.b.A.b, false);
         this.q.textures().addElement(l);
         this.q.alpha(0.0f);
         addChild(this.q);
@@ -76,7 +76,7 @@ public class e extends com.censivn.C3DEngine.b.f.a.a {
             public void a() {
             }
         };
-        dVar.h(this.a + (20.0f * com.censivn.C3DEngine.b.b.a.b));
+        dVar.h(this.a + (20.0f * com.censivn.C3DEngine.b.b.A.b));
         dVar.a(255);
         com.censivn.C3DEngine.b.g.c.a(this.q);
         com.censivn.C3DEngine.b.g.c.a(this.q, 300, dVar);

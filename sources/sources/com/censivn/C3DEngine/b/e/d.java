@@ -8,10 +8,10 @@ public class d extends com.censivn.C3DEngine.b.f.j {
 
     public d() {
         this.b.b(true);
-        this.b.a((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f)), 0);
+        this.b.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), 0);
         this.b.a(1);
         this.a = new com.censivn.C3DEngine.b.b.d(this.b);
-        this.a.a(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.E - (com.censivn.C3DEngine.b.b.a.B - this.a.position().y));
+        this.a.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E - (com.censivn.C3DEngine.b.b.A.B - this.a.position().y));
         addChild(this.a);
     }
 
@@ -20,14 +20,14 @@ public class d extends com.censivn.C3DEngine.b.f.j {
     }
 
     public void a(float f) {
-        this.b.a((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f)), 0);
-        this.a.a(com.censivn.C3DEngine.b.b.a.D, f);
+        this.b.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), 0);
+        this.a.a(com.censivn.C3DEngine.b.b.A.D, f);
     }
 
     public void a(f fVar) {
         this.b.addChild(fVar);
-        fVar.getLayoutParams().c = com.censivn.C3DEngine.b.b.a.a(30.0f);
-        fVar.getLayoutParams().d = com.censivn.C3DEngine.b.b.a.a(30.0f);
+        fVar.getLayoutParams().c = com.censivn.C3DEngine.b.b.A.a(30.0f);
+        fVar.getLayoutParams().d = com.censivn.C3DEngine.b.b.A.a(30.0f);
         fVar.a(this);
     }
 

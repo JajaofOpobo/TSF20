@@ -7,8 +7,8 @@ public class l extends f {
 
     public l(int i, int i2, boolean z) {
         super(i, i2, z);
-        this.a = com.censivn.C3DEngine.b.b.a.F;
-        this.b = com.censivn.C3DEngine.b.b.a.G;
+        this.a = com.censivn.C3DEngine.b.b.A.F;
+        this.b = com.censivn.C3DEngine.b.b.A.G;
     }
 
     public void b(float f, float f2) {
@@ -29,9 +29,9 @@ public class l extends f {
     }
 
     public void d() {
-        if (com.censivn.C3DEngine.b.b.a.F != this.a || com.censivn.C3DEngine.b.b.a.G != this.b) {
-            this.a = com.censivn.C3DEngine.b.b.a.F;
-            this.b = com.censivn.C3DEngine.b.b.a.G;
+        if (com.censivn.C3DEngine.b.b.A.F != this.a || com.censivn.C3DEngine.b.b.A.G != this.b) {
+            this.a = com.censivn.C3DEngine.b.b.A.F;
+            this.b = com.censivn.C3DEngine.b.b.A.G;
             a(this.a, this.b);
         }
         e();

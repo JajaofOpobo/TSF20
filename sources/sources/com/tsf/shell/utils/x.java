@@ -28,9 +28,9 @@ public class x {
     public static Bitmap a(String str, int i) {
         Context contextCreatePackageContext;
         try {
-            Context contextD = com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
+            Context contextD = com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
             contextCreatePackageContext = contextD.createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
@@ -43,7 +43,7 @@ public class x {
     }
 
     public static Bitmap a(int i) {
-        return a(com.censivn.C3DEngine.a.d().getResources(), i);
+        return a(com.censivn.C3DEngine.A.d().getResources(), i);
     }
 
     public static Bitmap a(int i, float f, float f2) {
@@ -51,7 +51,7 @@ public class x {
     }
 
     public static Bitmap a(int i, int i2, int i3) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.a.d().getResources(), i);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i);
         if (bitmapA.getWidth() != i2 || bitmapA.getHeight() != i3) {
             Bitmap bitmapCreateScaledBitmap = Bitmap.createScaledBitmap(bitmapA, i2, i3, true);
             if (bitmapCreateScaledBitmap != bitmapA) {
@@ -101,15 +101,15 @@ public class x {
     }
 
     public static TextureElement b(int i, int i2, int i3) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.a.d().getResources(), i, i2, i3);
-        TextureElement textureElementA = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i, i2, i3);
+        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, false);
         bitmapA.recycle();
         return textureElementA;
     }
 
     public static TextureElement b(int i) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.a.d().getResources(), i);
-        TextureElement textureElementA = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i);
+        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, false);
         bitmapA.recycle();
         return textureElementA;
     }
@@ -183,7 +183,7 @@ public class x {
     }
 
     public static float[] a(float f, float f2) {
-        return new float[]{com.censivn.C3DEngine.b.b.a.H + f, com.censivn.C3DEngine.b.b.a.I - f2};
+        return new float[]{com.censivn.C3DEngine.b.b.A.H + f, com.censivn.C3DEngine.b.b.A.I - f2};
     }
 
     public static float[] a(MotionEvent motionEvent) {
@@ -191,7 +191,7 @@ public class x {
     }
 
     public static float[] b(float f, float f2) {
-        return new float[]{f - com.censivn.C3DEngine.b.b.a.H, 0.0f - (f2 - com.censivn.C3DEngine.b.b.a.I)};
+        return new float[]{f - com.censivn.C3DEngine.b.b.A.H, 0.0f - (f2 - com.censivn.C3DEngine.b.b.A.I)};
     }
 
     public static float[] a(MotionEvent motionEvent, float[] fArr) {
@@ -199,8 +199,8 @@ public class x {
     }
 
     public static float[] a(float f, float f2, float[] fArr) {
-        fArr[0] = f - com.censivn.C3DEngine.b.b.a.H;
-        fArr[1] = 0.0f - (f2 - com.censivn.C3DEngine.b.b.a.I);
+        fArr[0] = f - com.censivn.C3DEngine.b.b.A.H;
+        fArr[1] = 0.0f - (f2 - com.censivn.C3DEngine.b.b.A.I);
         return fArr;
     }
 
@@ -230,10 +230,10 @@ public class x {
     }
 
     public static String c(int i) {
-        if (com.censivn.C3DEngine.a.d() == null || i == 0) {
+        if (com.censivn.C3DEngine.A.d() == null || i == 0) {
             return null;
         }
-        return com.censivn.C3DEngine.a.d().getString(i);
+        return com.censivn.C3DEngine.A.d().getString(i);
     }
 
     public static String b(Context context, int i) {

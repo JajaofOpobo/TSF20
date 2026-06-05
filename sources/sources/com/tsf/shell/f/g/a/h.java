@@ -20,18 +20,18 @@ public class h extends j {
     private static void a() {
         if (b == null) {
             Bitmap bitmapA = com.tsf.shell.utils.e.a(true);
-            b = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+            b = com.censivn.C3DEngine.A.g().a(bitmapA, false);
             bitmapA.recycle();
             Bitmap bitmapA2 = com.tsf.shell.utils.e.a(false);
-            c = com.censivn.C3DEngine.a.g().a(bitmapA2, false);
+            c = com.censivn.C3DEngine.A.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }
     }
 
     public static void b() {
         if (b != null) {
-            com.censivn.C3DEngine.a.g().a(b);
-            com.censivn.C3DEngine.a.g().a(c);
+            com.censivn.C3DEngine.A.g().a(b);
+            com.censivn.C3DEngine.A.g().a(c);
             b = null;
             c = null;
         }
@@ -43,8 +43,8 @@ public class h extends j {
     public void c() {
         if (d == null) {
             d = new k();
-            d.position().x = com.censivn.C3DEngine.b.b.a.a(80.0f);
-            d.position().y = com.censivn.C3DEngine.b.b.a.a(80.0f);
+            d.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
+            d.position().y = com.censivn.C3DEngine.b.b.A.a(80.0f);
         }
         this.f = true;
     }
@@ -57,9 +57,9 @@ public class h extends j {
         this.f = false;
         this.e = jVar;
         jVar.calAABB();
-        jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.a.c;
+        jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.A.c;
         this.a = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.c, false);
-        this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.a.c;
+        this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.a.useVBO(false);
         this.a.textures().addElement(c);
         addChild(jVar);
@@ -115,7 +115,7 @@ public class h extends j {
 
     public static void j() {
         if (g != null) {
-            com.censivn.C3DEngine.a.g().a(g);
+            com.censivn.C3DEngine.A.g().a(g);
             g = null;
         }
     }

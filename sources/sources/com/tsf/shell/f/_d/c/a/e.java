@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends d {
-    private static float a = 50.0f * com.censivn.C3DEngine.b.b.a.c;
+    private static float a = 50.0f * com.censivn.C3DEngine.b.b.A.c;
     private boolean c;
     private boolean d;
 
@@ -18,8 +18,8 @@ public class e extends d {
 
     @Override // com.tsf.shell.f._d.c.a.d
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
-        float fA = com.censivn.C3DEngine.b.b.a.a(70.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.a.a(110.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(70.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.A.a(110.0f);
         float f = fA2 / 3.0f;
         float f2 = fA2 / 2.0f;
         for (int i = 0; i < 4; i++) {
@@ -63,19 +63,19 @@ public class e extends d {
         ArrayList<a.c> arrayListC = com.tsf.shell.manager.a.v.e.d().c();
         j jVarD = com.tsf.shell.manager.a.v.e.d().d();
         int size = arrayList.size();
-        float f4 = 120.0f * com.censivn.C3DEngine.b.b.a.c * (size - 1);
-        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.a.h / 2.0f) + a > com.censivn.C3DEngine.b.b.a.B) {
-            f3 = ((com.censivn.C3DEngine.b.b.a.B - a) - (com.tsf.shell.manager.g.a.h / 2.0f)) - f2;
-        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.a.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.a.C) {
-            f3 = f4 + (((com.censivn.C3DEngine.b.b.a.C + a) + (com.tsf.shell.manager.g.a.h / 2.0f)) - f2);
+        float f4 = 120.0f * com.censivn.C3DEngine.b.b.A.c * (size - 1);
+        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.a.h / 2.0f) + a > com.censivn.C3DEngine.b.b.A.B) {
+            f3 = ((com.censivn.C3DEngine.b.b.A.B - a) - (com.tsf.shell.manager.g.a.h / 2.0f)) - f2;
+        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.a.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.A.C) {
+            f3 = f4 + (((com.censivn.C3DEngine.b.b.A.C + a) + (com.tsf.shell.manager.g.a.h / 2.0f)) - f2);
         } else {
             f3 = f4 / 2.0f;
         }
         this.c = f < 0.0f;
         if (this.c) {
-            jVarD.position().x = 190.0f * com.censivn.C3DEngine.b.b.a.c;
+            jVarD.position().x = 190.0f * com.censivn.C3DEngine.b.b.A.c;
         } else {
-            jVarD.position().x = (-190.0f) * com.censivn.C3DEngine.b.b.a.c;
+            jVarD.position().x = (-190.0f) * com.censivn.C3DEngine.b.b.A.c;
         }
         jVarD.position().y = f3;
         for (int i = 0; i < size; i++) {
@@ -102,11 +102,11 @@ public class e extends d {
     }
 
     private float c(a.c cVar) {
-        return this.c ? (80.0f * com.censivn.C3DEngine.b.b.a.c) + (com.censivn.C3DEngine.b.b.a.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.a.c) - (com.censivn.C3DEngine.b.b.a.c * 60.0f);
+        return this.c ? (80.0f * com.censivn.C3DEngine.b.b.A.c) + (com.censivn.C3DEngine.b.b.A.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.A.c) - (com.censivn.C3DEngine.b.b.A.c * 60.0f);
     }
 
     private float d(a.c cVar) {
-        return this.c ? 80.0f * com.censivn.C3DEngine.b.b.a.c : (-80.0f) * com.censivn.C3DEngine.b.b.a.c;
+        return this.c ? 80.0f * com.censivn.C3DEngine.b.b.A.c : (-80.0f) * com.censivn.C3DEngine.b.b.A.c;
     }
 
     @Override // com.tsf.shell.f._d.c.a.d
@@ -128,7 +128,7 @@ public class e extends d {
     private void a(a.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
         cVar.scale().x = 0.0f;
         cVar.scale().y = 0.0f;
-        cVar.position().y = (-120.0f) * com.censivn.C3DEngine.b.b.a.c * i;
+        cVar.position().y = (-120.0f) * com.censivn.C3DEngine.b.b.A.c * i;
         cVar.d.position().x = d(cVar);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.c.a.e.1
             @Override // com.censivn.C3DEngine.b.g.d

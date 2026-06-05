@@ -29,8 +29,8 @@ public class e extends com.censivn.C3DEngine.b.f.k {
     }
 
     private void e() {
-        this.f = (int) (this.f * com.censivn.C3DEngine.b.b.a.c);
-        this.g = (int) (this.g * com.censivn.C3DEngine.b.b.a.c);
+        this.f = (int) (this.f * com.censivn.C3DEngine.b.b.A.c);
+        this.g = (int) (this.g * com.censivn.C3DEngine.b.b.A.c);
         com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.h);
         textures().addElement(this.e);
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a.c.e.1
@@ -46,7 +46,7 @@ public class e extends com.censivn.C3DEngine.b.f.k {
 
     public void d() {
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.e);
+            com.censivn.C3DEngine.A.g().a(this.e);
         }
     }
 
@@ -57,14 +57,14 @@ public class e extends com.censivn.C3DEngine.b.f.k {
             aVar.h(36);
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(this.d);
-            Bitmap bitmapA = this.h == 0 ? x.a(this.a) : x.a(this.a, com.censivn.C3DEngine.b.b.a.a(this.h), com.censivn.C3DEngine.b.b.a.a(this.h));
+            Bitmap bitmapA = this.h == 0 ? x.a(this.a) : x.a(this.a, com.censivn.C3DEngine.b.b.A.a(this.h), com.censivn.C3DEngine.b.b.A.a(this.h));
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + bitmapA.getWidth() + this.g, this.f, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
             canvas.drawBitmap(bitmapA, 0.0f, (this.f - bitmapA.getHeight()) / 2, (Paint) null);
             canvas.drawBitmap(bitmapB, bitmapA.getWidth() + this.g, (this.f - bitmapB.getHeight()) / 2, (Paint) null);
             bitmapA.recycle();
             bitmapB.recycle();
-            com.censivn.C3DEngine.a.g().a(this.e, bitmapCreateBitmap);
+            com.censivn.C3DEngine.A.g().a(this.e, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
             a(this.e.width);
             b(this.e.height);

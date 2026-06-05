@@ -12,23 +12,23 @@ public class h {
     private static TextureElement d = null;
     private static boolean e = true;
     private static boolean f = false;
-    public static int b = (int) com.censivn.C3DEngine.b.b.a.a(182.0f);
-    public static int c = (int) com.censivn.C3DEngine.b.b.a.a(30.0f);
+    public static int b = (int) com.censivn.C3DEngine.b.b.A.a(182.0f);
+    public static int c = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
 
     public static void a() {
         e = com.tsf.shell.manager.b.e.y();
         TextureElement textureElementB = b();
-        a = new com.censivn.C3DEngine.b.f.b.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 1.0f, new com.censivn.C3DEngine.b.f.b.b(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
-        a.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
-        a.c(com.censivn.C3DEngine.b.b.a.B);
+        a = new com.censivn.C3DEngine.b.f.b.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1.0f, new com.censivn.C3DEngine.b.f.b.b(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
+        a.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+        a.c(com.censivn.C3DEngine.b.b.A.B);
         a.textures().addElement(textureElementB);
         g = new A();
         com.tsf.shell.manager.a.b.a(g);
     }
 
     public static void a(int i, int i2, int i3, int i4) {
-        a.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
-        a.c(com.censivn.C3DEngine.b.b.a.B);
+        a.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+        a.c(com.censivn.C3DEngine.b.b.A.B);
     }
 
     public static TextureElement b() {

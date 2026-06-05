@@ -23,8 +23,8 @@ public class f extends com.tsf.shell.f.f.l {
         this.h = false;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.j();
-            this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
-            this.g = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.a(20.0f), 20, 1, false);
+            this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
+            this.g = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.a(20.0f), 20, 1, false);
             this.g.setDefaultColor(new Color4(255, 0, 0, 255));
             this.b.useVBO(false);
             this.b.doubleSidedEnabled(true);
@@ -93,7 +93,7 @@ public class f extends com.tsf.shell.f.f.l {
         gVar.position().x = 0.0f;
         j.a aVarJ = gVar.j();
         this.b.alpha((1.0f - Math.abs(f)) * 255.0f);
-        this.b.position().z = (com.censivn.C3DEngine.b.b.a.D / 5) * 3;
+        this.b.position().z = (com.censivn.C3DEngine.b.b.A.D / 5) * 3;
         this.a.position().z = -this.b.position().z;
         this.a.rotation().y = 180.0f * f;
         this.b.textures().clear();

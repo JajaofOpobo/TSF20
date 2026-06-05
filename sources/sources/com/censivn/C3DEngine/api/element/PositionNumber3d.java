@@ -12,33 +12,33 @@ public class PositionNumber3d extends Number3d {
     }
 
     public void spAll(float f, float f2, float f3) {
-        this.x = a.a * f;
-        this.y = a.a * f2;
-        this.z = a.a * f3;
+        this.x = A.a * f;
+        this.y = A.a * f2;
+        this.z = A.a * f3;
     }
 
     public float spX() {
-        return this.x / a.a;
+        return this.x / A.a;
     }
 
     public void spX(float f) {
-        this.x = a.a * f;
+        this.x = A.a * f;
     }
 
     public float spY() {
-        return this.y / a.a;
+        return this.y / A.a;
     }
 
     public void spY(float f) {
-        this.y = a.a * f;
+        this.y = A.a * f;
     }
 
     public float spZ() {
-        return this.z / a.a;
+        return this.z / A.a;
     }
 
     public void spZ(float f) {
-        this.z = a.a * f;
+        this.z = A.a * f;
     }
 
     public float pxX() {

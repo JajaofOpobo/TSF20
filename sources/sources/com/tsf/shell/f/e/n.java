@@ -85,18 +85,18 @@ public class n implements b.a {
             com.censivn.C3DEngine.b.g.c.a(c, 380, dVar);
             n = i2;
             o = i3;
-            if (i2 + (com.censivn.C3DEngine.b.b.a.a * 230.0f) > com.censivn.C3DEngine.b.b.a.A) {
-                i2 = (int) (com.censivn.C3DEngine.b.b.a.A - (com.censivn.C3DEngine.b.b.a.a * 230.0f));
+            if (i2 + (com.censivn.C3DEngine.b.b.A.a * 230.0f) > com.censivn.C3DEngine.b.b.A.A) {
+                i2 = (int) (com.censivn.C3DEngine.b.b.A.A - (com.censivn.C3DEngine.b.b.A.a * 230.0f));
                 m = true;
-            } else if (i2 - (com.censivn.C3DEngine.b.b.a.a * 230.0f) < com.censivn.C3DEngine.b.b.a.z) {
-                i2 = (int) (com.censivn.C3DEngine.b.b.a.z + (com.censivn.C3DEngine.b.b.a.a * 230.0f));
+            } else if (i2 - (com.censivn.C3DEngine.b.b.A.a * 230.0f) < com.censivn.C3DEngine.b.b.A.z) {
+                i2 = (int) (com.censivn.C3DEngine.b.b.A.z + (com.censivn.C3DEngine.b.b.A.a * 230.0f));
                 m = true;
             }
-            if (i3 + (com.censivn.C3DEngine.b.b.a.a * 150.0f) > com.censivn.C3DEngine.b.b.a.B) {
-                i3 = (int) (com.censivn.C3DEngine.b.b.a.B - (com.censivn.C3DEngine.b.b.a.a * 150.0f));
+            if (i3 + (com.censivn.C3DEngine.b.b.A.a * 150.0f) > com.censivn.C3DEngine.b.b.A.B) {
+                i3 = (int) (com.censivn.C3DEngine.b.b.A.B - (com.censivn.C3DEngine.b.b.A.a * 150.0f));
                 m = true;
-            } else if (i3 - (com.censivn.C3DEngine.b.b.a.a * 150.0f) < com.censivn.C3DEngine.b.b.a.C) {
-                i3 = (int) (com.censivn.C3DEngine.b.b.a.C + (com.censivn.C3DEngine.b.b.a.a * 150.0f));
+            } else if (i3 - (com.censivn.C3DEngine.b.b.A.a * 150.0f) < com.censivn.C3DEngine.b.b.A.C) {
+                i3 = (int) (com.censivn.C3DEngine.b.b.A.C + (com.censivn.C3DEngine.b.b.A.a * 150.0f));
                 m = true;
             }
             c.position().setAll(i2, i3, 0.0f);
@@ -131,13 +131,13 @@ public class n implements b.a {
     public void o() {
         if (b == null) {
             ArrayList arrayList = new ArrayList();
-            arrayList.add(com.censivn.C3DEngine.a.d().getString(b.i.pop_menu_arrangement));
-            arrayList.add(com.censivn.C3DEngine.a.d().getString(b.i.pop_menu_gather));
-            arrayList.add(com.censivn.C3DEngine.a.d().getString(b.i.text_delete));
-            arrayList.add(com.censivn.C3DEngine.a.d().getString(b.i.pop_menu_create_folder));
-            arrayList.add(com.censivn.C3DEngine.a.d().getString(b.i.pop_menu_mulit_choice));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_arrangement));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_gather));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.text_delete));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_create_folder));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_mulit_choice));
             Bitmap bitmapA = o.a(arrayList);
-            b = com.censivn.C3DEngine.a.g().a(bitmapA, true);
+            b = com.censivn.C3DEngine.A.g().a(bitmapA, true);
             bitmapA.recycle();
             f.textures().clear();
             f.textures().addElement(B);
@@ -150,7 +150,7 @@ public class n implements b.a {
                 @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
                 public void onReloadTheme(ThemeDescription themeDescription) {
                     if (n.b != null) {
-                        com.censivn.C3DEngine.a.g().a(n.b);
+                        com.censivn.C3DEngine.A.g().a(n.b);
                         TextureElement unused = n.b = null;
                     }
                     n.this.o();
@@ -165,7 +165,7 @@ public class n implements b.a {
             }
         }
         o();
-        final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.a.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
+        final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.A.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
         f.alpha(0.0f);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.n.3
             @Override // com.censivn.C3DEngine.b.g.d
@@ -210,7 +210,7 @@ public class n implements b.a {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
                 if (n.k != null) {
-                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.e.n.4.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.n.4.1
                         @Override // java.lang.Runnable
                         public void run() {
                             if (n.k != null) {
@@ -370,10 +370,10 @@ public class n implements b.a {
             fAtan += 360.0f;
         }
         float f3 = fAtan + (h / 2);
-        if (fB < 50.0f * com.censivn.C3DEngine.b.b.a.a) {
+        if (fB < 50.0f * com.censivn.C3DEngine.b.b.A.a) {
             return g;
         }
-        if (fB > 200.0f * com.censivn.C3DEngine.b.b.a.a) {
+        if (fB > 200.0f * com.censivn.C3DEngine.b.b.A.a) {
             return g;
         }
         int i6 = (int) (f3 / h);

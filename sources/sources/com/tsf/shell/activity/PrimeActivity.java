@@ -70,8 +70,8 @@ public class PrimeActivity extends Activity {
                 PrimeActivity.this.b.onResume();
             }
         };
-        com.censivn.C3DEngine.a.e().j();
-        com.censivn.C3DEngine.a.a().c(runnable);
+        com.censivn.C3DEngine.A.e().j();
+        com.censivn.C3DEngine.A.a().c(runnable);
     }
 
     @Override // android.app.Activity
@@ -84,7 +84,7 @@ public class PrimeActivity extends Activity {
                 PrimeActivity.this.b.onPause();
             }
         };
-        com.censivn.C3DEngine.a.e().j();
-        com.censivn.C3DEngine.a.a().c(runnable);
+        com.censivn.C3DEngine.A.e().j();
+        com.censivn.C3DEngine.A.a().c(runnable);
     }
 }

@@ -6,7 +6,7 @@ public class b {
 
     public b() {
         System.currentTimeMillis();
-        this.a = new A(com.censivn.C3DEngine.a.d());
+        this.a = new A(com.censivn.C3DEngine.A.d());
     }
 
     public void a() {

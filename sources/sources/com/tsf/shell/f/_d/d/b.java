@@ -25,7 +25,7 @@ public class b {
         if (zB) {
             this.b.setGravity(new Vector2(0.0f, -100.0f));
             this.b.step(0.025f, 3, 3);
-            com.censivn.C3DEngine.a.e().j();
+            com.censivn.C3DEngine.A.e().j();
         }
         com.tsf.shell.manager.a.v.c.e().a(zB);
     }

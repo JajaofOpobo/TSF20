@@ -15,12 +15,12 @@ public class a extends j {
     private c g;
     private c h;
     private int i;
-    private k b = new k(com.censivn.C3DEngine.b.b.a.a(200.0f), com.censivn.C3DEngine.b.b.a.a(200.0f), false);
-    public k a = new k(com.censivn.C3DEngine.b.b.a.a(200.0f), com.censivn.C3DEngine.b.b.a.a(200.0f), false) { // from class: com.tsf.shell.f.e._i.a.1
+    private k b = new k(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false);
+    public k a = new k(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false) { // from class: com.tsf.shell.f.e._i.a.1
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (a.d.id == 0) {
-                com.censivn.C3DEngine.a.g().a(a.d, b.d.mark_star_disable);
+                com.censivn.C3DEngine.A.g().a(a.d, b.d.mark_star_disable);
             }
         }
     };
@@ -51,28 +51,28 @@ public class a extends j {
 
     public static void b() {
         if (c.id != 0) {
-            com.censivn.C3DEngine.a.g().a(c);
+            com.censivn.C3DEngine.A.g().a(c);
         }
         if (d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(d);
+            com.censivn.C3DEngine.A.g().a(d);
         }
         if (e.id != 0) {
-            com.censivn.C3DEngine.a.g().a(e);
+            com.censivn.C3DEngine.A.g().a(e);
         }
         if (f.id != 0) {
-            com.censivn.C3DEngine.a.g().a(f);
+            com.censivn.C3DEngine.A.g().a(f);
         }
     }
 
     private void f() {
         if (c.id == 0) {
-            com.censivn.C3DEngine.a.g().a(c, b.d.mark_star_enable);
+            com.censivn.C3DEngine.A.g().a(c, b.d.mark_star_enable);
         }
         if (e.id == 0) {
-            com.censivn.C3DEngine.a.g().a(e, b.d.mark_little_star_w);
+            com.censivn.C3DEngine.A.g().a(e, b.d.mark_little_star_w);
         }
         if (f.id == 0) {
-            com.censivn.C3DEngine.a.g().a(f, b.d.mark_little_star_y);
+            com.censivn.C3DEngine.A.g().a(f, b.d.mark_little_star_y);
         }
     }
 

@@ -192,11 +192,11 @@ public class B extends j implements f {
     }
 
     public void E() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.e == null) {
-                    b.this.e = com.tsf.shell.f.e.b.a((int) ((-this.minX()) + this.maxX() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)), (int) ((-this.minY()) + this.maxY() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)));
+                    b.this.e = com.tsf.shell.f.e.b.a((int) ((-this.minX()) + this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-this.minY()) + this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
                     b.this.e.useVBO(false);
                     b.this.e.textures().addElement(com.tsf.shell.f.e.b.h);
                     b.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;
@@ -207,7 +207,7 @@ public class B extends j implements f {
     }
 
     public void F() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.e != null) {
@@ -413,7 +413,7 @@ public class B extends j implements f {
 
     public boolean ac() {
         ItemInfo itemInfoK = K();
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             position().x = itemInfoK.cellX;
             position().y = itemInfoK.cellY;
             rotation().z = itemInfoK.rotation;

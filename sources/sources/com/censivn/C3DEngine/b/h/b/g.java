@@ -177,8 +177,8 @@ public class g extends j {
         if (this.l) {
             this.l = false;
             this.a = e() - 1;
-            this.j = (int) (com.censivn.C3DEngine.b.b.a.z + (this.f / 2.0f));
-            this.k = (int) ((((-this.a) * this.f) + com.censivn.C3DEngine.b.b.a.A) - (this.f / 2.0f));
+            this.j = (int) (com.censivn.C3DEngine.b.b.A.z + (this.f / 2.0f));
+            this.k = (int) ((((-this.a) * this.f) + com.censivn.C3DEngine.b.b.A.A) - (this.f / 2.0f));
             this.h = false;
             this.c.setAnimationObjectState(true);
             this.c.invalidate();

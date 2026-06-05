@@ -54,7 +54,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             bVar.f(b.this.h);
         }
     };
-    private float q = 12.0f * com.censivn.C3DEngine.b.b.a.b;
+    private float q = 12.0f * com.censivn.C3DEngine.b.b.A.b;
     private i o = new k(128.0f, 128.0f);
 
     public B(f fVar) {
@@ -150,7 +150,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                     }
                 };
             }
-            com.censivn.C3DEngine.a.a().c(this.B);
+            com.censivn.C3DEngine.A.a().c(this.B);
         }
     }
 
@@ -170,14 +170,14 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private void b(final com.tsf.shell.f.i.B bVar) {
         if (bVar != null) {
             if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
                     @Override // java.lang.Runnable
                     public void run() {
                         ((com.tsf.shell.f.i.b.e.b) bVar).l();
                     }
                 }, 200L);
             } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.b.4
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.b.4
                     @Override // java.lang.Runnable
                     public void run() {
                         ((com.tsf.shell.f.i.b.d.b) bVar).aR();
@@ -712,10 +712,10 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                 for (i iVar : b.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
+                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(g.h.a, 1L), contentValues, null, null);
@@ -729,7 +729,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     public void l() {
         if (!this.I && !this.r.a()) {
             this.I = true;
-            com.censivn.C3DEngine.a.a().c(this.J);
+            com.censivn.C3DEngine.A.a().c(this.J);
         }
     }
 }

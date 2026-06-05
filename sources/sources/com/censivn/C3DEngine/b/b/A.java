@@ -134,7 +134,7 @@ public class A {
             c();
             com.tsf.shell.manager.a.b.a(B, C, z, A);
         } else {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.b.a.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     a.b();

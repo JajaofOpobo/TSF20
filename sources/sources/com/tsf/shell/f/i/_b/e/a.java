@@ -19,7 +19,7 @@ public abstract class a extends b {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.i._b.e.a.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.a.1.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.k();
@@ -98,7 +98,7 @@ public abstract class a extends b {
             r0.onUpdateName(r5, r1)
             com.tsf.shell.f.i._b.e.a$3 r0 = new com.tsf.shell.f.i._b.e.a$3
             r0.<init>()
-            com.censivn.C3DEngine.b.c.c r1 = com.censivn.C3DEngine.a.a()
+            com.censivn.C3DEngine.b.c.c r1 = com.censivn.C3DEngine.A.a()
             r1.c(r0)
             return
         L31:

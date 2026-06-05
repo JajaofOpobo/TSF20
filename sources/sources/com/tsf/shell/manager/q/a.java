@@ -33,7 +33,7 @@ public class a implements A.InterfaceC0165a {
 
     private void b() {
         this.h = new com.tsf.shell.services.A();
-        this.h.a(com.censivn.C3DEngine.a.d(), new Runnable() { // from class: com.tsf.shell.manager.q.a.1
+        this.h.a(com.censivn.C3DEngine.A.d(), new Runnable() { // from class: com.tsf.shell.manager.q.a.1
             @Override // java.lang.Runnable
             public void run() {
                 try {
@@ -53,7 +53,7 @@ public class a implements A.InterfaceC0165a {
                 }
             }
         });
-        this.h.a(com.censivn.C3DEngine.a.d(), this);
+        this.h.a(com.censivn.C3DEngine.A.d(), this);
     }
 
     public void a(Context context) {
@@ -87,7 +87,7 @@ public class a implements A.InterfaceC0165a {
         if (this.i == null && com.tsf.shell.utils.b.a(fVar.b)) {
             this.i = fVar;
             if (this.g) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.6
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.6
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.i.a(a.this.b);
@@ -100,7 +100,7 @@ public class a implements A.InterfaceC0165a {
         if (this.j == null && com.tsf.shell.utils.b.b(fVar.b)) {
             this.j = fVar;
             if (this.g) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.7
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.7
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.j.a(a.this.a);
@@ -113,7 +113,7 @@ public class a implements A.InterfaceC0165a {
         if (this.m == null && com.tsf.shell.utils.b.e(fVar.b)) {
             this.m = fVar;
             if (this.g) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.8
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.8
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.m.a(a.this.f);
@@ -126,7 +126,7 @@ public class a implements A.InterfaceC0165a {
         if (this.l == null && com.tsf.shell.utils.b.c(fVar.b)) {
             this.l = fVar;
             if (this.g) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.9
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.9
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.l.a(a.this.e);
@@ -139,7 +139,7 @@ public class a implements A.InterfaceC0165a {
         if (this.k == null && com.tsf.shell.utils.b.d(fVar.b)) {
             this.k = fVar;
             if (this.g) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.10
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.a.10
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.k.a(a.this.c);
@@ -163,7 +163,7 @@ public class a implements A.InterfaceC0165a {
                 }
             };
             renderRunnable.autoInvalidate = true;
-            com.censivn.C3DEngine.a.a().a(renderRunnable);
+            com.censivn.C3DEngine.A.a().a(renderRunnable);
         }
     }
 
@@ -181,7 +181,7 @@ public class a implements A.InterfaceC0165a {
                 }
             };
             renderRunnable.autoInvalidate = true;
-            com.censivn.C3DEngine.a.a().a(renderRunnable);
+            com.censivn.C3DEngine.A.a().a(renderRunnable);
         }
     }
 
@@ -204,7 +204,7 @@ public class a implements A.InterfaceC0165a {
                 }
             };
             renderRunnable.autoInvalidate = true;
-            com.censivn.C3DEngine.a.a().a(renderRunnable);
+            com.censivn.C3DEngine.A.a().a(renderRunnable);
         }
     }
 
@@ -222,7 +222,7 @@ public class a implements A.InterfaceC0165a {
                 }
             };
             renderRunnable.autoInvalidate = true;
-            com.censivn.C3DEngine.a.a().a(renderRunnable);
+            com.censivn.C3DEngine.A.a().a(renderRunnable);
         }
     }
 
@@ -240,7 +240,7 @@ public class a implements A.InterfaceC0165a {
                 }
             };
             renderRunnable.autoInvalidate = true;
-            com.censivn.C3DEngine.a.a().a(renderRunnable);
+            com.censivn.C3DEngine.A.a().a(renderRunnable);
         }
     }
 }

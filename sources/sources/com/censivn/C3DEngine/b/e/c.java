@@ -29,12 +29,12 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         this.b.a("");
         this.b.b(1);
         this.b.b();
-        this.b.position().x = (int) (((-com.censivn.C3DEngine.b.b.a.D) / 2.0f) + (com.censivn.C3DEngine.b.b.a.a(70.0f) / 2.0f));
-        this.b.position().y = (-com.censivn.C3DEngine.b.b.a.a(30.0f)) - this.b.maxY();
+        this.b.position().x = (int) (((-com.censivn.C3DEngine.b.b.A.D) / 2.0f) + (com.censivn.C3DEngine.b.b.A.a(70.0f) / 2.0f));
+        this.b.position().y = (-com.censivn.C3DEngine.b.b.A.a(30.0f)) - this.b.maxY();
         this.a.addChild(this.b);
-        this.c = new k((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f)), (int) com.censivn.C3DEngine.b.b.a.a(7.0f), false);
+        this.c = new k((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), (int) com.censivn.C3DEngine.b.b.A.a(7.0f), false);
         this.c.setDefaultColor(new Color4(255, 255, 255, 150));
-        this.c.position().y = (this.b.position().y + this.b.minY()) - com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.c.position().y = (this.b.position().y + this.b.minY()) - com.censivn.C3DEngine.b.b.A.a(20.0f);
         this.a.addChild(this.c);
         addChild(this.a);
         this.e = new com.tsf.shell.f.e.I();
@@ -103,16 +103,16 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
                 }
             };
             if (z) {
-                dVar2.f(-com.censivn.C3DEngine.b.b.a.D);
+                dVar2.f(-com.censivn.C3DEngine.b.b.A.D);
             } else {
-                dVar2.f(com.censivn.C3DEngine.b.b.a.D);
+                dVar2.f(com.censivn.C3DEngine.b.b.A.D);
             }
             com.censivn.C3DEngine.b.g.c.a(dVar);
             com.censivn.C3DEngine.b.g.c.a(dVar, 500, dVar2);
             if (z) {
-                this.f.position().x = com.censivn.C3DEngine.b.b.a.D;
+                this.f.position().x = com.censivn.C3DEngine.b.b.A.D;
             } else {
-                this.f.position().x = -com.censivn.C3DEngine.b.b.a.D;
+                this.f.position().x = -com.censivn.C3DEngine.b.b.A.D;
             }
             com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
             dVar3.f(0.0f);
@@ -135,21 +135,21 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
     }
 
     private void b(d dVar) {
-        dVar.a(this.e.position().y - com.censivn.C3DEngine.b.b.a.C);
+        dVar.a(this.e.position().y - com.censivn.C3DEngine.b.b.A.C);
     }
 
     private void k() {
         h();
-        this.b.position().x = (int) (((-com.censivn.C3DEngine.b.b.a.D) / 2.0f) + (com.censivn.C3DEngine.b.b.a.a(70.0f) / 2.0f));
-        this.c.a((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f)));
-        this.a.position().y = com.censivn.C3DEngine.b.b.a.B;
-        this.a.a(com.censivn.C3DEngine.b.b.a.D, -(this.c.position().y - (this.c.c() / 2.0f)));
+        this.b.position().x = (int) (((-com.censivn.C3DEngine.b.b.A.D) / 2.0f) + (com.censivn.C3DEngine.b.b.A.a(70.0f) / 2.0f));
+        this.c.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)));
+        this.a.position().y = com.censivn.C3DEngine.b.b.A.B;
+        this.a.a(com.censivn.C3DEngine.b.b.A.D, -(this.c.position().y - (this.c.c() / 2.0f)));
         if (this.d != null) {
             this.d.position().y = (this.a.position().y + this.c.position().y) - (this.c.c() / 2.0f);
-            this.d.a((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f)), 0);
+            this.d.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), 0);
         }
         this.e.position().y = i();
-        this.e.a(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.E);
+        this.e.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E);
         Iterator<d> it = this.i.iterator();
         while (it.hasNext()) {
             b(it.next());
@@ -170,7 +170,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             com.tsf.shell.manager.a.j.a(this);
             alpha(255.0f);
             this.c.a(0.0f);
-            final int iA = (int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(70.0f));
+            final int iA = (int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f));
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.e.c.2
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a(float f) {
@@ -179,9 +179,9 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             };
             com.censivn.C3DEngine.b.g.c.a(this.c);
             com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
-            this.b.position().y = -com.censivn.C3DEngine.b.b.a.a(150.0f);
+            this.b.position().y = -com.censivn.C3DEngine.b.b.A.a(150.0f);
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
-            dVar2.h((-com.censivn.C3DEngine.b.b.a.a(30.0f)) - this.b.maxY());
+            dVar2.h((-com.censivn.C3DEngine.b.b.A.a(30.0f)) - this.b.maxY());
             dVar2.b(300);
             dVar2.a(com.censivn.C3DEngine.b.g.a.a);
             com.censivn.C3DEngine.b.g.c.a(this.b);

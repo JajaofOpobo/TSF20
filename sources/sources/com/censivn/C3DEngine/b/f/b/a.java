@@ -15,7 +15,7 @@ public class a extends k {
     private float k;
 
     public a(float f, float f2, b bVar) {
-        this(f, f2, com.censivn.C3DEngine.b.b.a.b, bVar);
+        this(f, f2, com.censivn.C3DEngine.b.b.A.b, bVar);
     }
 
     public a(float f, float f2, float f3, b bVar) {

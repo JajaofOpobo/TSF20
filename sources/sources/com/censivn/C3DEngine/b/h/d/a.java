@@ -34,7 +34,7 @@ public class a extends j {
 
     public void a(int i) {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
         this.c = i;
     }
@@ -43,7 +43,7 @@ public class a extends j {
     public void onDrawStart() {
         if (this.d != null && this.d.id == 0) {
             Bitmap bitmapA = x.a(this.c);
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }
     }
@@ -51,7 +51,7 @@ public class a extends j {
     public void b() {
         this.a.c();
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
     }
 

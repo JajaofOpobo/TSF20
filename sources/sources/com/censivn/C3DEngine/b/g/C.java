@@ -18,7 +18,7 @@ public class C {
             d.add(cVar);
         } else {
             b.addElement(cVar);
-            com.censivn.C3DEngine.a.e().k();
+            com.censivn.C3DEngine.A.e().k();
         }
     }
 
@@ -41,7 +41,7 @@ public class C {
                     cVarNextElement.c();
                 }
             }
-            com.censivn.C3DEngine.a.e().j();
+            com.censivn.C3DEngine.A.e().j();
         }
         c = false;
         while (!d.isEmpty()) {
@@ -58,7 +58,7 @@ public class C {
             while (enumerationElements.hasMoreElements()) {
                 d(enumerationElements.nextElement());
             }
-            com.censivn.C3DEngine.a.e().j();
+            com.censivn.C3DEngine.A.e().j();
         }
     }
 
@@ -68,7 +68,7 @@ public class C {
             while (enumerationElements.hasMoreElements()) {
                 c(enumerationElements.nextElement());
             }
-            com.censivn.C3DEngine.a.e().j();
+            com.censivn.C3DEngine.A.e().j();
         }
     }
 
@@ -100,7 +100,7 @@ public class C {
                     }
                 };
                 aVar2.a(runnable);
-                com.censivn.C3DEngine.a.a().b(runnable, dVar.B);
+                com.censivn.C3DEngine.A.a().b(runnable, dVar.B);
             } else if (i == 0) {
                 aVar2.c();
             } else {
@@ -114,7 +114,7 @@ public class C {
         if (aVar != null && (tweenChild = aVar.getTweenChild()) != null) {
             b(tweenChild);
             if (tweenChild.d() != null) {
-                com.censivn.C3DEngine.a.a().g(tweenChild.d());
+                com.censivn.C3DEngine.A.a().g(tweenChild.d());
                 tweenChild.a(null);
             }
             aVar.setTweenChild(null);

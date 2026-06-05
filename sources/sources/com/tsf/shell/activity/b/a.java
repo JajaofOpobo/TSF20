@@ -25,7 +25,7 @@ public class a {
 
     public static boolean b() {
         try {
-            a = com.censivn.C3DEngine.a.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.a.d().getPackageName(), 0).versionCode;
+            a = com.censivn.C3DEngine.A.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.A.d().getPackageName(), 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

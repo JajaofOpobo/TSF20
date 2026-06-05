@@ -45,12 +45,12 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         int i;
         boolean z;
         float f = 0.0f;
-        this.b = com.censivn.C3DEngine.b.b.a.a(this.b);
-        this.c = com.censivn.C3DEngine.b.b.a.a(this.c);
+        this.b = com.censivn.C3DEngine.b.b.A.a(this.b);
+        this.c = com.censivn.C3DEngine.b.b.A.a(this.c);
         com.tsf.shell.manager.a.b.a(this);
         this.f = new com.tsf.shell.f.c.b.a.b(this, this.m ? com.tsf.shell.manager.o.b.c : com.tsf.shell.manager.o.b.a);
         this.d = new j();
-        this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.a.D, f, com.censivn.C3DEngine.b.b.a.D, f, f) { // from class: com.tsf.shell.f.c.b.e.1
+        this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.e.1
             @Override // com.censivn.C3DEngine.b.h.e.a
             public void a(int i2) {
                 if (e.this.c(i2).c() == 0) {
@@ -183,7 +183,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void a(int i) {
-        float f = (i / 100.0f) * (com.censivn.C3DEngine.b.b.a.D / 2.0f);
+        float f = (i / 100.0f) * (com.censivn.C3DEngine.b.b.A.D / 2.0f);
         if (this.n != f) {
             this.n = f;
             a(false);
@@ -196,12 +196,12 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
 
     public void a(boolean z) {
         if (!this.m && z) {
-            a(com.censivn.C3DEngine.b.b.a.O ? com.tsf.shell.manager.b.e.t() : com.tsf.shell.manager.b.e.u());
+            a(com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.t() : com.tsf.shell.manager.b.e.u());
         }
-        float f = com.censivn.C3DEngine.b.b.a.D - this.n;
+        float f = com.censivn.C3DEngine.b.b.A.D - this.n;
         h().a(f, this.c, this.c, this.b);
         this.i.a(f);
-        this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.a.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.a.g);
+        this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.A.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.A.g);
         a.C0084a c0084aB = this.f.b();
         com.censivn.C3DEngine.b.g.c.a(this.d);
         if (this.g) {
@@ -228,7 +228,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     public static ArrayList<String> i() {
-        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
         Cursor cursorQuery = contentResolver.query(g.d.a, null, null, null, null);
         ArrayList<String> arrayList = new ArrayList<>();
         int i = 0;
@@ -336,7 +336,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         if (this.o) {
             this.o = false;
             a.C0084a c0084aL = l();
-            float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.a.K;
+            float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.A.K;
             if (z) {
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.h(c0084aL.l);

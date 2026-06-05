@@ -27,11 +27,11 @@ public class ThemeMixFontPlane extends ThemeMenuMixElementPlane implements com.c
 
     @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
     public void onClick() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMixFontPlane.1
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMixFontPlane.1
             @Override // java.lang.Runnable
             public void run() {
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.a.d(), FontsPickerActivity.class);
+                intent.setClass(com.censivn.C3DEngine.A.d(), FontsPickerActivity.class);
                 Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) ThemeMixFontPlane.this);
             }
         });

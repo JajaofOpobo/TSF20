@@ -17,7 +17,7 @@ public class f extends a {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.f.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.f.1
                 @Override // java.lang.Runnable
                 public void run() {
                     f.this.k();
@@ -36,7 +36,7 @@ public class f extends a {
     public void aV() {
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) K();
         if (launcherShortcut3DInfo.packagename != null) {
-            com.tsf.shell.utils.a.a(com.censivn.C3DEngine.a.d(), launcherShortcut3DInfo.packagename);
+            com.tsf.shell.utils.a.a(com.censivn.C3DEngine.A.d(), launcherShortcut3DInfo.packagename);
         }
     }
 
@@ -44,7 +44,7 @@ public class f extends a {
     public void l() {
         super.l();
         if (A() == null ? true : A().a((b) this)) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.e.f.2
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.e.f.2
                 @Override // java.lang.Runnable
                 public void run() {
                     LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) f.this.K();
@@ -55,7 +55,7 @@ public class f extends a {
                         Home.b().a(launcherShortcut3DInfo.intent, (Object) null);
                     } catch (Exception e) {
                         e.printStackTrace();
-                        com.tsf.shell.e.a(com.censivn.C3DEngine.a.d().getString(b.i.activity_not_found));
+                        com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.activity_not_found));
                     }
                 }
             });

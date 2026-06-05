@@ -17,6 +17,6 @@ public class o extends com.tsf.shell.f.f.l {
         number3dScale2.y = fAbs;
         number3dScale.x = fAbs;
         gVar.rotation().y = (-40.0f) * f;
-        gVar.position().x = com.censivn.C3DEngine.b.b.a.D * f * 0.65f;
+        gVar.position().x = com.censivn.C3DEngine.b.b.A.D * f * 0.65f;
     }
 }

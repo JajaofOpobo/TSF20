@@ -14,7 +14,7 @@ import com.tsf.shell.utils.q;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends j {
-    public static final int a = com.censivn.C3DEngine.b.b.a.b(26.0f);
+    public static final int a = com.censivn.C3DEngine.b.b.A.b(26.0f);
     private static TextureElement b = new TextureElement(0, false);
     private static k k;
     private j d;
@@ -54,9 +54,9 @@ public class b extends j {
             }
         });
         this.d.calAABB();
-        this.h = (f.a / 2.0f) + com.censivn.C3DEngine.b.b.a.a(25.0f);
+        this.h = (f.a / 2.0f) + com.censivn.C3DEngine.b.b.A.a(25.0f);
         PositionNumber3d positionNumber3dPosition = this.d.position();
-        float fA = com.censivn.C3DEngine.b.b.a.a(-30.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(-30.0f);
         this.i = fA;
         positionNumber3dPosition.y = fA;
         this.d.visible(false);
@@ -78,8 +78,8 @@ public class b extends j {
     public void g() {
         if (k == null) {
             k = new com.tsf.shell.f.e.k();
-            k.position().x = com.censivn.C3DEngine.b.b.a.a(80.0f);
-            k.position().y = com.censivn.C3DEngine.b.b.a.a(220.0f);
+            k.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
+            k.position().y = com.censivn.C3DEngine.b.b.A.a(220.0f);
             k.alpha(0.0f);
         }
         this.l = true;
@@ -166,19 +166,19 @@ public class b extends j {
 
     public void f() {
         if (this.c.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.c);
+            com.censivn.C3DEngine.A.g().a(this.c);
         }
     }
 
     public static void j() {
         if (b.id == 0) {
-            com.censivn.C3DEngine.a.g().a(b, q.b(a, -1));
+            com.censivn.C3DEngine.A.g().a(b, q.b(a, -1));
         }
     }
 
     public static void k() {
         if (b.id != 0) {
-            com.censivn.C3DEngine.a.g().a(b);
+            com.censivn.C3DEngine.A.g().a(b);
         }
         if (k != null) {
             k.a();

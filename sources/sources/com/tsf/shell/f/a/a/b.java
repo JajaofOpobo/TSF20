@@ -33,13 +33,13 @@ public class b {
     public void a(com.tsf.shell.f.a.a.a aVar, TextureElement textureElement) {
         b(aVar, textureElement);
         GLES20.glViewport(0, 0, aVar.c, aVar.d);
-        com.censivn.C3DEngine.a.e().a(aVar.c, aVar.d);
+        com.censivn.C3DEngine.A.e().a(aVar.c, aVar.d);
     }
 
     public void a() {
         b();
-        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
-        com.censivn.C3DEngine.a.e().a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+        com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
     }
 
     public void b(com.tsf.shell.f.a.a.a aVar, TextureElement textureElement) {

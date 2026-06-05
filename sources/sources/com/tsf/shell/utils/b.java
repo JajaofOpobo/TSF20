@@ -241,7 +241,7 @@ public class b {
     }
 
     private static boolean f(ComponentName componentName) {
-        PackageManager packageManager = com.censivn.C3DEngine.a.d().getPackageManager();
+        PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
         Intent intent = new Intent();
         intent.addCategory("android.intent.category.LAUNCHER");
         intent.setPackage(componentName.getPackageName());

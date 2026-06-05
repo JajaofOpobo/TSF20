@@ -42,7 +42,7 @@ public class f {
 
     public void h() {
         if (this.e != null) {
-            com.censivn.C3DEngine.a.g().a(this.e);
+            com.censivn.C3DEngine.A.g().a(this.e);
             this.e = null;
         }
     }
@@ -60,7 +60,7 @@ public class f {
             } else if (themeShellDescription.desktopEffectHue != 0 || themeShellDescription.desktopEffectSaturation != 0) {
                 bitmapA = p.a(bitmapA, themeShellDescription.desktopEffectHue, themeShellDescription.desktopEffectSaturation);
             }
-            this.e = com.censivn.C3DEngine.a.g().a(bitmapA, false);
+            this.e = com.censivn.C3DEngine.A.g().a(bitmapA, false);
             bitmapA.recycle();
         }
         return this.e;

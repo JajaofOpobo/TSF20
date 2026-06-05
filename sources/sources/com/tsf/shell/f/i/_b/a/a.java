@@ -60,7 +60,7 @@ public class a extends j {
 
     private void h() {
         System.currentTimeMillis();
-        com.censivn.C3DEngine.e.b bVarA = com.censivn.C3DEngine.e.i.a(i.a.MAX_3DS, com.censivn.C3DEngine.a.d().getResources(), com.censivn.C3DEngine.a.b() + ":raw/widget_airship", true);
+        com.censivn.C3DEngine.e.b bVarA = com.censivn.C3DEngine.e.i.a(i.a.MAX_3DS, com.censivn.C3DEngine.A.d().getResources(), com.censivn.C3DEngine.a.b() + ":raw/widget_airship", true);
         bVarA.c();
         this.d = bVarA.b().getChildAt(0);
         this.d.removeFromParent();
@@ -74,7 +74,7 @@ public class a extends j {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (!a.this.a) {
-                    position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.a.b;
+                    position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.A.b;
                     a.c(a.this);
                 }
             }
@@ -82,7 +82,7 @@ public class a extends j {
         this.e = new j() { // from class: com.tsf.shell.f.i._b.a.a.2
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
-                com.censivn.C3DEngine.a.e().c();
+                com.censivn.C3DEngine.A.e().c();
                 if (!a.this.a && a.this.k != null) {
                     a.this.k.d((float) ((Math.cos(1.0d) * 2.0d) - (Math.random() * 2.0d)));
                     a.this.j.a();
@@ -91,7 +91,7 @@ public class a extends j {
 
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
-                com.censivn.C3DEngine.a.e().d();
+                com.censivn.C3DEngine.A.e().d();
             }
         };
         this.d.textures().addElement(this.b);
@@ -112,7 +112,7 @@ public class a extends j {
         this.f.addChild(kVar);
         this.f.addChild(this.e);
         this.f.rotation().y = 75.0f;
-        this.f.scale().setAll(com.censivn.C3DEngine.b.b.a.b * 1.1f, com.censivn.C3DEngine.b.b.a.b * 1.1f, com.censivn.C3DEngine.b.b.a.b * 1.1f);
+        this.f.scale().setAll(com.censivn.C3DEngine.b.b.A.b * 1.1f, com.censivn.C3DEngine.b.b.A.b * 1.1f, com.censivn.C3DEngine.b.b.A.b * 1.1f);
         addChild(this.f);
         this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.f) { // from class: com.tsf.shell.f.i._b.a.a.4
             @Override // com.censivn.C3DEngine.b.d.a
@@ -120,7 +120,7 @@ public class a extends j {
                 a.this.e();
             }
         });
-        this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.a.b, (-300.0f) * com.censivn.C3DEngine.b.b.a.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.a.b, 100.0f * com.censivn.C3DEngine.b.b.a.b, 0.0f);
+        this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.A.b, (-300.0f) * com.censivn.C3DEngine.b.b.A.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.A.b, 100.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
         if (this.h) {
             j();
         }
@@ -168,10 +168,10 @@ public class a extends j {
             bitmap = x.a(b.d.widget_airship_flag);
         }
         if (this.l == null) {
-            this.l = com.censivn.C3DEngine.a.g().a(bitmap, false);
+            this.l = com.censivn.C3DEngine.A.g().a(bitmap, false);
             this.i.textures().addElement(this.l);
         } else {
-            com.censivn.C3DEngine.a.g().a(this.l, bitmap);
+            com.censivn.C3DEngine.A.g().a(this.l, bitmap);
         }
         bitmap.recycle();
     }
@@ -179,26 +179,26 @@ public class a extends j {
     public void f() {
         if (this.b.id == 0) {
             Bitmap bitmapA = x.a(b.d.widget_airship_body);
-            com.censivn.C3DEngine.a.g().a(this.b, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
             bitmapA.recycle();
         }
         if (this.c.id == 0) {
             Bitmap bitmapA2 = x.a(b.d.widget_airship_propeller);
-            com.censivn.C3DEngine.a.g().a(this.c, bitmapA2);
+            com.censivn.C3DEngine.A.g().a(this.c, bitmapA2);
             bitmapA2.recycle();
         }
     }
 
     public void g() {
-        com.censivn.C3DEngine.a.g().a(this.b);
-        com.censivn.C3DEngine.a.g().a(this.c);
+        com.censivn.C3DEngine.A.g().a(this.b);
+        com.censivn.C3DEngine.A.g().a(this.c);
     }
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         super.destroy();
-        com.censivn.C3DEngine.a.g().a(this.b);
-        com.censivn.C3DEngine.a.g().a(this.c);
-        com.censivn.C3DEngine.a.g().a(this.l);
+        com.censivn.C3DEngine.A.g().a(this.b);
+        com.censivn.C3DEngine.A.g().a(this.c);
+        com.censivn.C3DEngine.A.g().a(this.l);
     }
 }

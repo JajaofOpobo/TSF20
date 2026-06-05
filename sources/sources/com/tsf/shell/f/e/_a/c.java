@@ -45,9 +45,9 @@ public class c {
                 }
             };
             b.alpha(0.0f);
-            c = new k(com.censivn.C3DEngine.b.b.a.D, 308.0f * com.censivn.C3DEngine.b.b.a.b, false);
+            c = new k(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
             b.addChild(c);
-            e = new g(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.b * (-80.0f), com.censivn.C3DEngine.b.b.a.b * 80.0f, com.tsf.shell.manager.o.b.a.T) { // from class: com.tsf.shell.f.e._a.c.3
+            e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.b.a.T) { // from class: com.tsf.shell.f.e._a.c.3
                 @Override // com.censivn.C3DEngine.b.h.b.g
                 public i a(int i2, i iVar) {
                     i iVarB;
@@ -80,7 +80,7 @@ public class c {
                 }
             };
             b.addChild(e);
-            b.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.a.A, 80.0f * com.censivn.C3DEngine.b.b.a.b, 0.0f);
+            b.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, 80.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
             b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(b) { // from class: com.tsf.shell.f.e._a.c.4
                 com.censivn.C3DEngine.b.d.a a;
 
@@ -164,7 +164,7 @@ public class c {
         com.tsf.shell.manager.a.w.a().a.b();
         j();
         if (b.parent() == null) {
-            b.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.a.b);
+            b.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
         } else {
             b.removeFromParent();
         }
@@ -213,16 +213,16 @@ public class c {
             }
         };
         dVar.a(0);
-        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.a.b));
+        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.A.b));
         com.censivn.C3DEngine.b.g.c.a(b);
         com.censivn.C3DEngine.b.g.c.a(b, 500, dVar);
     }
 
     private static void j() {
-        b.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.b * 80.0f, 0.0f);
-        c.a(com.censivn.C3DEngine.b.b.a.D);
-        e.a(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.b * (-80.0f), com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.b * 80.0f);
-        a = com.censivn.C3DEngine.b.b.a.C + (com.tsf.shell.manager.o.b.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.a.c);
+        b.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f, 0.0f);
+        c.a(com.censivn.C3DEngine.b.b.A.D);
+        e.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f);
+        a = com.censivn.C3DEngine.b.b.A.C + (com.tsf.shell.manager.o.b.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.A.c);
         if (h) {
             b.position().y = a;
         }

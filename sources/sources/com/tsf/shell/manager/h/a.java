@@ -57,7 +57,7 @@ public class a {
         if (!this.a) {
             return true;
         }
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.h.a.1
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.h.a.1
             @Override // java.lang.Runnable
             public void run() {
                 a.this.i();
@@ -109,7 +109,7 @@ public class a {
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
         if (this.f == null) {
-            e = com.censivn.C3DEngine.a.d().getResources().getColor(R.color.tertiary_text_light);
+            e = com.censivn.C3DEngine.A.d().getResources().getColor(R.color.tertiary_text_light);
             this.c = new Paint();
             this.c.setColor(e);
             this.c.setAntiAlias(true);
@@ -118,28 +118,28 @@ public class a {
             b = new Paint();
             b.setColor(e);
             b.setAntiAlias(true);
-            Bitmap bitmapA = x.a(com.censivn.C3DEngine.a.d(), b.d.lock_dialog_unlock_icon);
+            Bitmap bitmapA = x.a(com.censivn.C3DEngine.A.d(), b.d.lock_dialog_unlock_icon);
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapA.getWidth(), bitmapA.getHeight(), Bitmap.Config.ARGB_8888);
             Bitmap bitmapExtractAlpha = bitmapA.extractAlpha();
             bitmapA.recycle();
             new Canvas(bitmapCreateBitmap).drawBitmap(bitmapExtractAlpha, 0.0f, 0.0f, b);
             bitmapExtractAlpha.recycle();
             this.d = bitmapCreateBitmap;
-            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
             builder.setTitle(b.i.notic_lock_desktop_notic);
             builder.setNegativeButton(x.c(b.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.manager.h.a.2
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i) {
                 }
             });
-            LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.screen_lock_dialog, (ViewGroup) null);
+            LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.screen_lock_dialog, (ViewGroup) null);
             RelativeLayout relativeLayout = (RelativeLayout) linearLayout.findViewById(b.e.sliding_layout);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams.rightMargin = (int) (40.0f * com.censivn.C3DEngine.b.b.a.e);
-            layoutParams.leftMargin = (int) (com.censivn.C3DEngine.b.b.a.e * 10.0f);
-            relativeLayout.addView(new b(com.censivn.C3DEngine.a.d()), layoutParams);
-            relativeLayout.addView(new C0128a(com.censivn.C3DEngine.a.d()), new RelativeLayout.LayoutParams(-1, -1));
-            relativeLayout.addView(new c(com.censivn.C3DEngine.a.d()), new RelativeLayout.LayoutParams(120, -1));
+            layoutParams.rightMargin = (int) (40.0f * com.censivn.C3DEngine.b.b.A.e);
+            layoutParams.leftMargin = (int) (com.censivn.C3DEngine.b.b.A.e * 10.0f);
+            relativeLayout.addView(new b(com.censivn.C3DEngine.A.d()), layoutParams);
+            relativeLayout.addView(new C0128a(com.censivn.C3DEngine.A.d()), new RelativeLayout.LayoutParams(-1, -1));
+            relativeLayout.addView(new c(com.censivn.C3DEngine.A.d()), new RelativeLayout.LayoutParams(120, -1));
             ((ImageView) linearLayout.findViewById(b.e.unlock_icon)).setImageBitmap(this.d);
             CheckBox checkBox = (CheckBox) linearLayout.findViewById(b.e.checkbox);
             checkBox.setChecked(e.r());
@@ -177,7 +177,7 @@ public class a {
 
         public c(Context context) {
             super(context);
-            this.d = (int) ((com.censivn.C3DEngine.b.b.a.e * 10.0f) + 10.0f);
+            this.d = (int) ((com.censivn.C3DEngine.b.b.A.e * 10.0f) + 10.0f);
             this.g = this;
         }
 
@@ -255,7 +255,7 @@ public class a {
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.a.b, a.this.c);
+            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.A.b, a.this.c);
         }
     }
 
@@ -268,7 +268,7 @@ public class a {
 
         public C0128a(Context context) {
             super(context);
-            this.d = (com.censivn.C3DEngine.b.b.a.e * 10.0f) + 10.0f;
+            this.d = (com.censivn.C3DEngine.b.b.A.e * 10.0f) + 10.0f;
         }
 
         @Override // android.view.View
@@ -276,14 +276,14 @@ public class a {
             super.onMeasure(i, i2);
             this.c = getHeight();
             this.b = getWidth();
-            a = this.b - (40.0f * com.censivn.C3DEngine.b.b.a.e);
+            a = this.b - (40.0f * com.censivn.C3DEngine.b.b.A.e);
             postInvalidate();
         }
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            canvas.drawCircle(this.d, this.c / 2.0f, com.censivn.C3DEngine.b.b.a.b * 10.0f, a.b);
-            canvas.drawCircle(a, this.c / 2.0f, com.censivn.C3DEngine.b.b.a.b * 10.0f, a.b);
+            canvas.drawCircle(this.d, this.c / 2.0f, com.censivn.C3DEngine.b.b.A.b * 10.0f, a.b);
+            canvas.drawCircle(a, this.c / 2.0f, com.censivn.C3DEngine.b.b.A.b * 10.0f, a.b);
         }
     }
 

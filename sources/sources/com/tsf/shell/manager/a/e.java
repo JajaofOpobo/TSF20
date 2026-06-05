@@ -35,7 +35,7 @@ public class e {
 
     public void a(final ArrayList<f> arrayList) {
         this.g = com.tsf.shell.manager.a.h.t();
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.1
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.1
             @Override // java.lang.Runnable
             public void run() {
                 ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = new ArrayList<>();
@@ -51,7 +51,7 @@ public class e {
     }
 
     public void a(final ArrayList<f> arrayList, final boolean z) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.2
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.2
             @Override // java.lang.Runnable
             public void run() {
                 for (f fVar : arrayList) {
@@ -67,7 +67,7 @@ public class e {
     }
 
     public void b(final ArrayList<f> arrayList, final boolean z) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.3
             @Override // java.lang.Runnable
             public void run() {
                 if (z) {
@@ -87,7 +87,7 @@ public class e {
     }
 
     public void b(final ArrayList<f> arrayList) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.4
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.4
             @Override // java.lang.Runnable
             public void run() {
                 for (f fVar : arrayList) {

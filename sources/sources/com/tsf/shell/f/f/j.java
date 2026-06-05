@@ -83,7 +83,7 @@ public class j {
 
         public void a() {
             if (this.b == null) {
-                this.b = com.censivn.C3DEngine.a.g().a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, false);
+                this.b = com.censivn.C3DEngine.A.g().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             }
         }
 
@@ -91,7 +91,7 @@ public class j {
             boolean z;
             this.a = null;
             if (this.b != null) {
-                com.censivn.C3DEngine.a.g().a(this.b);
+                com.censivn.C3DEngine.A.g().a(this.b);
             }
             this.b = null;
             Iterator it = j.d.iterator();
@@ -112,7 +112,7 @@ public class j {
 
     public static com.tsf.shell.f.a.a.a c() {
         if (c == null) {
-            c = com.tsf.shell.manager.a.t.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+            c = com.tsf.shell.manager.a.t.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         }
         return c;
     }

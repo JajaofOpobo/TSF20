@@ -14,7 +14,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {
-    public static final float a = com.censivn.C3DEngine.b.b.a.a(200.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.A.a(200.0f);
     public static int b = 0;
     public static int c = 1;
     private com.censivn.C3DEngine.b.b.d d;
@@ -138,7 +138,7 @@ public class c {
         this.f.a(1);
         this.f.addChild(this.l);
         this.d = new com.censivn.C3DEngine.b.b.d(this.f);
-        this.d.a(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.E - (com.censivn.C3DEngine.b.b.a.B - this.d.position().y));
+        this.d.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E - (com.censivn.C3DEngine.b.b.A.B - this.d.position().y));
         this.g = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.f.a._a.c.5
             @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
             public void a(int i2, KeyEvent keyEvent) {
@@ -184,8 +184,8 @@ public class c {
                 }
             }
         };
-        this.j.maxX(com.censivn.C3DEngine.b.b.a.a(150.0f));
-        this.j.minX(com.censivn.C3DEngine.b.b.a.a(-150.0f));
+        this.j.maxX(com.censivn.C3DEngine.b.b.A.a(150.0f));
+        this.j.minX(com.censivn.C3DEngine.b.b.A.a(-150.0f));
         this.j.setMouseEventListener(aVar);
         this.e.addChild(this.d);
         this.e.addChild(this.j);
@@ -215,30 +215,30 @@ public class c {
     }
 
     public void e() {
-        this.f.a((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(30.0f)), 0);
-        this.d.a(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.E);
-        this.d.position().y = com.censivn.C3DEngine.b.b.a.B;
+        this.f.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(30.0f)), 0);
+        this.d.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E);
+        this.d.position().y = com.censivn.C3DEngine.b.b.A.B;
         i();
         this.k.a();
     }
 
     private void i() {
-        this.j.maxY(com.censivn.C3DEngine.b.b.a.B);
-        this.j.minY(com.censivn.C3DEngine.b.b.a.C);
+        this.j.maxY(com.censivn.C3DEngine.b.b.A.B);
+        this.j.minY(com.censivn.C3DEngine.b.b.A.C);
         if (this.q == b) {
-            this.j.position().x = com.censivn.C3DEngine.b.b.a.z;
+            this.j.position().x = com.censivn.C3DEngine.b.b.A.z;
         } else {
-            this.j.position().x = com.censivn.C3DEngine.b.b.a.A;
+            this.j.position().x = com.censivn.C3DEngine.b.b.A.A;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
         this.p = new com.tsf.shell.manager.p.b();
-        float fA = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(20.0f);
         float fD = this.k.d() + fA;
-        this.p.position().y = fD - com.censivn.C3DEngine.b.b.a.a(400.0f);
-        this.p.position().x = com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(50.0f) + com.censivn.C3DEngine.b.b.a.a(400.0f);
+        this.p.position().y = fD - com.censivn.C3DEngine.b.b.A.a(400.0f);
+        this.p.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f) + com.censivn.C3DEngine.b.b.A.a(400.0f);
         this.p.alpha(0.0f);
         com.tsf.shell.manager.a.j.a(this.p);
         this.p.a(new AnonymousClass8(fA, fD), 0);
@@ -256,7 +256,7 @@ public class c {
 
         @Override // java.lang.Runnable
         public void run() {
-            c.this.p.a(com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(50.0f), this.b, 600, new Runnable() { // from class: com.tsf.shell.f.f.a._a.c.8.1
+            c.this.p.a(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f), this.b, 600, new Runnable() { // from class: com.tsf.shell.f.f.a._a.c.8.1
                 @Override // java.lang.Runnable
                 public void run() {
                     c.this.k();

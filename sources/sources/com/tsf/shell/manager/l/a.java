@@ -60,7 +60,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         d.a().a(new Runnable() { // from class: com.tsf.shell.manager.l.a.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.l.a.1.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.l.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         int iF = com.tsf.shell.manager.a.h.F();

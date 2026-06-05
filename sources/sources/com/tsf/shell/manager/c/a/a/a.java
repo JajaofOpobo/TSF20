@@ -48,8 +48,8 @@ public class a {
     public void d() {
         if (!this.l) {
             this.l = true;
-            com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.a.d(), this);
-            com.tsf.shell.manager.c.c.b(com.censivn.C3DEngine.a.d(), this);
+            com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.A.d(), this);
+            com.tsf.shell.manager.c.c.b(com.censivn.C3DEngine.A.d(), this);
             com.tsf.shell.manager.a.z.b().a(this);
         }
     }
@@ -98,7 +98,7 @@ public class a {
             z = true;
         }
         if (z) {
-            com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.c.a.a.a.1
+            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.c.a.a.a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     if (a.this.l) {
@@ -179,10 +179,10 @@ public class a {
                 bitmapA = null;
             }
             if (bitmapA == null) {
-                bitmapA = q.a(com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.a.d(), this.d));
+                bitmapA = q.a(com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.A.d(), this.d));
             }
         } else {
-            bitmapA = q.a(com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.a.d(), this.d));
+            bitmapA = q.a(com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.A.d(), this.d));
         }
         if (bitmapA == null) {
             return null;
@@ -208,7 +208,7 @@ public class a {
             return null;
         }
         try {
-            return com.censivn.C3DEngine.a.d().getContentResolver().openAssetFileDescriptor(Uri.withAppendedPath(ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, j), "display_photo"), "r").createInputStream();
+            return com.censivn.C3DEngine.A.d().getContentResolver().openAssetFileDescriptor(Uri.withAppendedPath(ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, j), "display_photo"), "r").createInputStream();
         } catch (IOException e) {
             return null;
         }

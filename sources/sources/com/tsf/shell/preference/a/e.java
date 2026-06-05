@@ -89,7 +89,7 @@ public class e extends b {
         this.b *= 0.7f;
         this.a.v();
         this.d.position().x = this.b / 2.0f;
-        this.d.position().y = com.censivn.C3DEngine.b.b.a.a(-100.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.A.a(-100.0f);
         this.a.h().addChild(this.d);
     }
 

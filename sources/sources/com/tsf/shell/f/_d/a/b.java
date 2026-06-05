@@ -26,7 +26,7 @@ public class b extends h {
         this.d = new Runnable() { // from class: com.tsf.shell.f._d.a.b.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().b(b.this.f, 300L);
+                com.censivn.C3DEngine.A.a().b(b.this.f, 300L);
             }
         };
         this.f = new Runnable() { // from class: com.tsf.shell.f._d.a.b.2
@@ -48,6 +48,6 @@ public class b extends h {
     @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
-        com.tsf.shell.manager.i.a.a(this.c.a(), com.censivn.C3DEngine.b.b.a.a(30.0f));
+        com.tsf.shell.manager.i.a.a(this.c.a(), com.censivn.C3DEngine.b.b.A.a(30.0f));
     }
 }

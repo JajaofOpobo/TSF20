@@ -12,7 +12,6 @@ import android.support.v4.view.bb;
 import android.support.v4.view.bf;
 import android.support.v4.view.bg;
 import android.support.v4.view.bh;
-import android.support.v7.a.a;
 import android.support.v7.app.ActionBar;
 import android.support.v7.view.b;
 import android.support.v7.view.menu.f;
@@ -48,7 +47,7 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
     private boolean I;
     a a;
     android.support.v7.view.b b;
-    b.a c;
+    android.support.v7.view.b.a c;
     boolean d;
     private Context l;
     private Context m;
@@ -120,13 +119,13 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
     }
 
     private void a(View view) {
-        this.p = (ActionBarOverlayLayout) view.findViewById(a.f.decor_content_parent);
+        this.p = (ActionBarOverlayLayout) view.findViewById(android.support.v7.a.a.f.decor_content_parent);
         if (this.p != null) {
             this.p.setActionBarVisibilityCallback(this);
         }
-        this.r = b(view.findViewById(a.f.action_bar));
-        this.s = (ActionBarContextView) view.findViewById(a.f.action_context_bar);
-        this.q = (ActionBarContainer) view.findViewById(a.f.action_bar_container);
+        this.r = b(view.findViewById(android.support.v7.a.a.f.action_bar));
+        this.s = (ActionBarContextView) view.findViewById(android.support.v7.a.a.f.action_context_bar);
+        this.q = (ActionBarContainer) view.findViewById(android.support.v7.a.a.f.action_bar_container);
         if (this.r == null || this.s == null || this.q == null) {
             throw new IllegalStateException(getClass().getSimpleName() + " can only be used with a compatible window decor layout");
         }
@@ -138,11 +137,11 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
         android.support.v7.view.a aVarA = android.support.v7.view.a.a(this.l);
         a(aVarA.f() || z);
         k(aVarA.d());
-        TypedArray typedArrayObtainStyledAttributes = this.l.obtainStyledAttributes(null, a.k.ActionBar, a.C0012a.actionBarStyle, 0);
-        if (typedArrayObtainStyledAttributes.getBoolean(a.k.ActionBar_hideOnContentScroll, false)) {
+        TypedArray typedArrayObtainStyledAttributes = this.l.obtainStyledAttributes(null, android.support.v7.a.a.k.ActionBar, android.support.v7.a.a.C0012a.actionBarStyle, 0);
+        if (typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.ActionBar_hideOnContentScroll, false)) {
             b(true);
         }
-        int dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(a.k.ActionBar_elevation, 0);
+        int dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(android.support.v7.a.a.k.ActionBar_elevation, 0);
         if (dimensionPixelSize != 0) {
             a(dimensionPixelSize);
         }
@@ -268,7 +267,7 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
     }
 
     @Override // android.support.v7.app.ActionBar
-    public android.support.v7.view.b a(b.a aVar) {
+    public android.support.v7.view.b a(android.support.v7.view.b.a aVar) {
         if (this.a != null) {
             this.a.c();
         }
@@ -466,7 +465,7 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
     public Context c() {
         if (this.m == null) {
             TypedValue typedValue = new TypedValue();
-            this.l.getTheme().resolveAttribute(a.C0012a.actionBarWidgetTheme, typedValue, true);
+            this.l.getTheme().resolveAttribute(android.support.v7.a.a.C0012a.actionBarWidgetTheme, typedValue, true);
             int i2 = typedValue.resourceId;
             if (i2 != 0) {
                 this.m = new ContextThemeWrapper(this.l, i2);
@@ -501,10 +500,10 @@ public class n extends ActionBar implements ActionBarOverlayLayout.a {
     public class a extends android.support.v7.view.b implements f.a {
         private final Context b;
         private final android.support.v7.view.menu.f c;
-        private b.a d;
+        private android.support.v7.view.b.a d;
         private WeakReference<View> e;
 
-        public a(Context context, b.a aVar) {
+        public a(Context context, android.support.v7.view.b.a aVar) {
             this.b = context;
             this.d = aVar;
             this.c = new android.support.v7.view.menu.f(context).a(1);

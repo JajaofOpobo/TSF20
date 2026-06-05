@@ -9,13 +9,13 @@ import com.censivn.C3DEngine.b.f.k;
 public class b extends j {
     private TextureElement a = new TextureElement(0, false);
     private TextureElement b = new TextureElement(0, false);
-    private k c = com.censivn.C3DEngine.b.b.a.a(103.0f, 149.0f);
+    private k c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
     private k d;
 
     public b() {
         this.c.position().y = (-this.c.c()) / 2.0f;
         this.c.textures().addElement(this.a);
-        this.d = com.censivn.C3DEngine.b.b.a.a(69.0f, 69.0f);
+        this.d = com.censivn.C3DEngine.b.b.A.a(69.0f, 69.0f);
         this.d.textures().addElement(this.b);
         this.d.scale().setAll(0.0f, 0.0f, 1.0f);
         this.d.visible(false);
@@ -23,13 +23,13 @@ public class b extends j {
     }
 
     public void a() {
-        com.censivn.C3DEngine.a.g().a(this.a);
-        com.censivn.C3DEngine.a.g().a(this.b);
+        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.A.g().a(this.b);
     }
 
     public void a(float f, float f2, int i, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-        dVar.f(com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(50.0f));
+        dVar.f(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f));
         dVar.h(f2);
         dVar.a(runnable);
         com.censivn.C3DEngine.b.g.c.a(this);
@@ -41,7 +41,7 @@ public class b extends j {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 if (runnable != null) {
-                    com.censivn.C3DEngine.a.a().b(runnable, i);
+                    com.censivn.C3DEngine.A.a().b(runnable, i);
                 }
             }
         };
@@ -55,7 +55,7 @@ public class b extends j {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 if (runnable != null) {
-                    com.censivn.C3DEngine.a.a().b(runnable, i);
+                    com.censivn.C3DEngine.A.a().b(runnable, i);
                 }
             }
         };
@@ -67,8 +67,8 @@ public class b extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.a.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.a, b.d.tips_gesture_finger);
-            com.censivn.C3DEngine.a.g().a(this.b, b.d.tips_finger_point2);
+            com.censivn.C3DEngine.A.g().a(this.a, b.d.tips_gesture_finger);
+            com.censivn.C3DEngine.A.g().a(this.b, b.d.tips_finger_point2);
         }
     }
 

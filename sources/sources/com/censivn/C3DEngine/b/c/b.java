@@ -48,7 +48,7 @@ public class b {
     public static void a(final int i, KeyEvent keyEvent) {
         if (a && !com.censivn.C3DEngine.a.d.j()) {
             if (b != null) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (b.b != null) {
@@ -70,7 +70,7 @@ public class b {
 
     public static void b(final int i, final KeyEvent keyEvent) {
         if (a && !com.censivn.C3DEngine.a.d.j() && b != null) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (b.b != null) {

@@ -34,10 +34,10 @@ public class f extends j implements b.a {
     private j m = new j();
     private j n = new j();
     private j o = new j();
-    private com.censivn.C3DEngine.b.f.h p = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.a.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.f.1
+    private com.censivn.C3DEngine.b.f.h p = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.f.1
         @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
         public void draw() {
-            com.censivn.C3DEngine.a.e().a(this);
+            com.censivn.C3DEngine.A.e().a(this);
             updateTextureState();
             ShaderColor shaderColor = ShaderManager.SHADER_COLOR;
             ShaderManager.enableShader(shaderColor);
@@ -99,7 +99,7 @@ public class f extends j implements b.a {
         this.e = hVar;
         this.p.moveAllPointsPX(0.0f, (h.F * 2.0f) / 2.0f, 0.0f);
         this.p.alpha(0.0f);
-        this.p.position().y = -com.censivn.C3DEngine.b.b.a.K;
+        this.p.position().y = -com.censivn.C3DEngine.b.b.A.K;
         this.m.addChild(this.p);
         this.m.addChild(this.o);
         this.m.addChild(this.n);
@@ -145,13 +145,13 @@ public class f extends j implements b.a {
     }
 
     public void g() {
-        b = 90.0f * com.censivn.C3DEngine.b.b.a.c;
-        a = h.F - (120.0f * com.censivn.C3DEngine.b.b.a.c);
-        position().y = com.censivn.C3DEngine.b.b.a.C;
-        this.p.a(com.censivn.C3DEngine.b.b.a.D);
+        b = 90.0f * com.censivn.C3DEngine.b.b.A.c;
+        a = h.F - (120.0f * com.censivn.C3DEngine.b.b.A.c);
+        position().y = com.censivn.C3DEngine.b.b.A.C;
+        this.p.a(com.censivn.C3DEngine.b.b.A.D);
         Iterator<i> it = this.g.iterator();
         while (it.hasNext()) {
-            it.next().a(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B);
+            it.next().a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
         }
     }
 
@@ -171,8 +171,8 @@ public class f extends j implements b.a {
         this.g.add(this.k);
         this.g.add(this.h);
         this.g.add(this.l);
-        position().y = com.censivn.C3DEngine.b.b.a.C;
-        d = 200.0f * com.censivn.C3DEngine.b.b.a.c;
+        position().y = com.censivn.C3DEngine.b.b.A.C;
+        d = 200.0f * com.censivn.C3DEngine.b.b.A.c;
         c = ((-d) * (this.g.size() - 1)) / 2.0f;
     }
 

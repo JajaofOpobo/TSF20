@@ -226,10 +226,10 @@ public class a extends j {
             }
         });
         this.v = x.b(b.d.scrollcontainer_arrow);
-        this.t = new k(24.0f * com.censivn.C3DEngine.b.b.a.c, 45.0f * com.censivn.C3DEngine.b.b.a.c, false);
+        this.t = new k(24.0f * com.censivn.C3DEngine.b.b.A.c, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
         this.t.rotation().z = 180.0f;
         com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
-        this.u = new k(24.0f * com.censivn.C3DEngine.b.b.a.c, 45.0f * com.censivn.C3DEngine.b.b.a.c, false);
+        this.u = new k(24.0f * com.censivn.C3DEngine.b.b.A.c, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
         com.tsf.shell.manager.o.c.a(this.u, com.tsf.shell.manager.o.c.h);
         this.t.textures().addElement(this.v);
         this.u.textures().addElement(this.v);

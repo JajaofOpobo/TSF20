@@ -14,11 +14,11 @@ public class b extends h {
     private com.censivn.C3DEngine.b.f.k g;
 
     public b(String str) {
-        super(str, com.censivn.C3DEngine.b.b.a.a(200.0f));
+        super(str, com.censivn.C3DEngine.b.b.A.a(200.0f));
         this.d = new TextureElement(0, false);
         this.e = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
-        this.g = com.censivn.C3DEngine.b.b.a.a(180.0f, 180.0f);
+        this.g = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
         this.g.textures().addElement(this.f);
         this.b = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.preference.a.a.a.b.1
             private float b = 0.0f;
@@ -51,11 +51,11 @@ public class b extends h {
                 GLES20.glFrontFace(2305);
             }
         };
-        this.a = new C0108a(com.censivn.C3DEngine.b.b.a.a(189.0f), com.censivn.C3DEngine.b.b.a.a(288.0f), 5, 20);
-        this.a.position().x = com.censivn.C3DEngine.b.b.a.a(150.0f);
+        this.a = new C0108a(com.censivn.C3DEngine.b.b.A.a(189.0f), com.censivn.C3DEngine.b.b.A.a(288.0f), 5, 20);
+        this.a.position().x = com.censivn.C3DEngine.b.b.A.a(150.0f);
         this.b.setAnimationObjectState(true);
         this.b.addChild(this.g);
-        this.g.position().x = com.censivn.C3DEngine.b.b.a.a(-150.0f);
+        this.g.position().x = com.censivn.C3DEngine.b.b.A.a(-150.0f);
         this.g.useVBO(false);
         e().addChild(this.b);
     }
@@ -64,21 +64,21 @@ public class b extends h {
     public void f() {
         super.f();
         if (this.d.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.d, b.d.feature_desktop_effect_screen1);
+            com.censivn.C3DEngine.A.g().a(this.d, b.d.feature_desktop_effect_screen1);
         }
         if (this.e.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.e, b.d.feature_desktop_effect_screen2);
+            com.censivn.C3DEngine.A.g().a(this.e, b.d.feature_desktop_effect_screen2);
         }
         if (this.f.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.f, b.d.desktop_transition_cloth);
+            com.censivn.C3DEngine.A.g().a(this.f, b.d.desktop_transition_cloth);
         }
     }
 
     @Override // com.tsf.shell.preference.a.a.a.h, com.censivn.C3DEngine.b.e.f
     public void g() {
         super.g();
-        com.censivn.C3DEngine.a.g().a(this.d);
-        com.censivn.C3DEngine.a.g().a(this.e);
-        com.censivn.C3DEngine.a.g().a(this.f);
+        com.censivn.C3DEngine.A.g().a(this.d);
+        com.censivn.C3DEngine.A.g().a(this.e);
+        com.censivn.C3DEngine.A.g().a(this.f);
     }
 }

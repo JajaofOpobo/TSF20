@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {
     c a = new c();
-    ArrayList<b> b;
+    ArrayList<B> b;
 
     public A(i iVar) {
         this.a.a(iVar);

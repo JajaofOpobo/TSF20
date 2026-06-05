@@ -7,11 +7,11 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends j {
     private d a;
-    private com.censivn.C3DEngine.b.b.a.b b;
+    private com.censivn.C3DEngine.b.b.A.b b;
     private float c;
     private float e;
-    private com.censivn.C3DEngine.b.b.a.d f;
-    private float d = com.censivn.C3DEngine.b.b.a.a(20.0f);
+    private com.censivn.C3DEngine.b.b.A.d f;
+    private float d = com.censivn.C3DEngine.b.b.A.a(20.0f);
     private boolean g = false;
 
     public A(d dVar, float f) {
@@ -20,8 +20,8 @@ public class A extends j {
     }
 
     public void a(ArrayList<com.tsf.shell.f.e._g.a.b> arrayList) {
-        this.f = new com.censivn.C3DEngine.b.b.a.d();
-        this.b = new com.censivn.C3DEngine.b.b.a.b();
+        this.f = new com.censivn.C3DEngine.b.b.A.d();
+        this.b = new com.censivn.C3DEngine.b.b.A.b();
         this.f.c(this.b);
         addChild(this.f);
         Iterator<com.tsf.shell.f.e._g.a.b> it = arrayList.iterator();
@@ -34,16 +34,16 @@ public class A extends j {
         this.b.numChildren();
         float fMaxX = this.b.maxX();
         this.e = fMaxX;
-        if (fMaxX < com.censivn.C3DEngine.b.b.a.D) {
+        if (fMaxX < com.censivn.C3DEngine.b.b.A.D) {
         }
     }
 
     public void b() {
-        this.f.setAABBPX(0.0f, (-d.MENU_HEIGHT) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.a.D, d.MENU_HEIGHT / 2.0f, 0.0f);
+        this.f.setAABBPX(0.0f, (-d.MENU_HEIGHT) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, d.MENU_HEIGHT / 2.0f, 0.0f);
         this.f.k();
-        this.f.position().x = com.censivn.C3DEngine.b.b.a.z;
+        this.f.position().x = com.censivn.C3DEngine.b.b.A.z;
         this.f.a(0.0f, 0.0f, 0.0f, 0.0f);
-        if (this.e < com.censivn.C3DEngine.b.b.a.D) {
+        if (this.e < com.censivn.C3DEngine.b.b.A.D) {
             this.g = false;
         } else {
             this.g = true;
@@ -63,9 +63,9 @@ public class A extends j {
 
     private void a(com.tsf.shell.f.e._g.a.b bVar, boolean z) {
         if (this.g) {
-            float f = (-bVar.getTitleIcon().position().x) + (com.censivn.C3DEngine.b.b.a.D / 2.0f);
+            float f = (-bVar.getTitleIcon().position().x) + (com.censivn.C3DEngine.b.b.A.D / 2.0f);
             float f2 = 0.0f;
-            float f3 = -(this.e - com.censivn.C3DEngine.b.b.a.D);
+            float f3 = -(this.e - com.censivn.C3DEngine.b.b.A.D);
             if (f <= 0.0f) {
                 f2 = f < f3 ? f3 : f;
             }

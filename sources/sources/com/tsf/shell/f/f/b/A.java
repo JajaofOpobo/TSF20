@@ -31,14 +31,14 @@ public class A extends com.tsf.shell.f.f.l {
         this.h = true;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.j();
-            if (com.censivn.C3DEngine.b.b.a.F < com.censivn.C3DEngine.b.b.a.G) {
-                i2 = com.censivn.C3DEngine.b.b.a.F;
-                i3 = com.censivn.C3DEngine.b.b.a.G;
+            if (com.censivn.C3DEngine.b.b.A.F < com.censivn.C3DEngine.b.b.A.G) {
+                i2 = com.censivn.C3DEngine.b.b.A.F;
+                i3 = com.censivn.C3DEngine.b.b.A.G;
             } else {
-                i2 = com.censivn.C3DEngine.b.b.a.G;
-                i3 = com.censivn.C3DEngine.b.b.a.F;
+                i2 = com.censivn.C3DEngine.b.b.A.G;
+                i3 = com.censivn.C3DEngine.b.b.A.F;
             }
-            this.b = new C0108a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, (int) (i2 / (com.censivn.C3DEngine.b.b.a.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.a.e * 8.0f)));
+            this.b = new C0108a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, (int) (i2 / (com.censivn.C3DEngine.b.b.A.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.A.e * 8.0f)));
             this.a.addChild(this.b);
         }
         e.a aVarA = com.tsf.shell.manager.a.a.a(com.tsf.shell.manager.p.e.f);

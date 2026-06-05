@@ -74,7 +74,7 @@ public class c extends j implements a.InterfaceC0098a {
 
     public void b() {
         if (this.f != null) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.c.4
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.c.4
                 @Override // java.lang.Runnable
                 public void run() {
                     Intent intent = new Intent("android.intent.action.EDIT");
@@ -88,7 +88,7 @@ public class c extends j implements a.InterfaceC0098a {
     @Override // com.tsf.shell.f.e.h.a.InterfaceC0098a
     public void a(Bitmap bitmap) {
         if (this.f != null) {
-            com.censivn.C3DEngine.a.g().a(this.k, bitmap);
+            com.censivn.C3DEngine.A.g().a(this.k, bitmap);
             a(this.k, true);
         }
         bitmap.recycle();
@@ -100,20 +100,20 @@ public class c extends j implements a.InterfaceC0098a {
     }
 
     private float f() {
-        return (com.censivn.C3DEngine.b.b.a.B - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.a.a(80.0f);
+        return (com.censivn.C3DEngine.b.b.A.B - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(80.0f);
     }
 
     private float g() {
-        return (f() - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.a.a(60.0f);
+        return (f() - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(60.0f);
     }
 
     private float h() {
-        return g() - com.censivn.C3DEngine.b.b.a.a(150.0f);
+        return g() - com.censivn.C3DEngine.b.b.A.a(150.0f);
     }
 
     private void i() {
         if (this.k.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.k);
+            com.censivn.C3DEngine.A.g().a(this.k);
         }
     }
 
@@ -127,7 +127,7 @@ public class c extends j implements a.InterfaceC0098a {
         }
         Bitmap bitmapA = this.f.a().a(com.tsf.shell.f.h.a.a.d.c, com.tsf.shell.f.h.a.a.d.c, true);
         if (bitmapA != null) {
-            com.censivn.C3DEngine.a.g().a(this.k, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.k, bitmapA);
             bitmapA.recycle();
             a(this.k, false);
         }
@@ -167,7 +167,7 @@ public class c extends j implements a.InterfaceC0098a {
             }
         }
         float fH = h();
-        float fA = com.censivn.C3DEngine.b.b.a.a(160.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(160.0f);
         int i = 0;
         float f = fH;
         int i2 = 50;
@@ -184,7 +184,7 @@ public class c extends j implements a.InterfaceC0098a {
                 addChild(dVar);
                 i = i3 + 1;
             } else {
-                a(this.j, com.censivn.C3DEngine.b.b.a.C + com.censivn.C3DEngine.b.b.a.a(180.0f), 150, z);
+                a(this.j, com.censivn.C3DEngine.b.b.A.C + com.censivn.C3DEngine.b.b.A.a(180.0f), 150, z);
                 return;
             }
         }
@@ -254,7 +254,7 @@ public class c extends j implements a.InterfaceC0098a {
         }
         com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
         dVar3.a(0);
-        dVar3.h(com.censivn.C3DEngine.b.b.a.C - com.censivn.C3DEngine.b.b.a.a(180.0f));
+        dVar3.h(com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.a(180.0f));
         com.censivn.C3DEngine.b.g.c.a(this.j);
         com.censivn.C3DEngine.b.g.c.a(this.j, 250, dVar3);
         this.l.c();
@@ -291,7 +291,7 @@ public class c extends j implements a.InterfaceC0098a {
 
     private void a(i iVar, float f, int i, boolean z) {
         if (z) {
-            iVar.position().y = f - com.censivn.C3DEngine.b.b.a.a(350.0f);
+            iVar.position().y = f - com.censivn.C3DEngine.b.b.A.a(350.0f);
             iVar.alpha(0.0f);
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.h(f);
@@ -310,7 +310,7 @@ public class c extends j implements a.InterfaceC0098a {
 
     private void a(i iVar, int i) {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-        dVar.h(iVar.position().y + com.censivn.C3DEngine.b.b.a.a(250.0f));
+        dVar.h(iVar.position().y + com.censivn.C3DEngine.b.b.A.a(250.0f));
         dVar.a(0);
         if (i != 0) {
             dVar.b(i);

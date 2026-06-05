@@ -61,7 +61,7 @@ public class h extends j {
         if (com.censivn.C3DEngine.a.e.l()) {
             c(f3 - f, f4 - f2);
         } else {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.1
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.c(f3 - f, f4 - f2);
@@ -390,7 +390,7 @@ public class h extends j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public int d(float f, float f2) {
-        float f3 = f + com.censivn.C3DEngine.b.b.a.H;
+        float f3 = f + com.censivn.C3DEngine.b.b.A.H;
         float f4 = f2 - (this.g / 2.0f);
         int i = (int) (((f3 % this.f) - this.j) / (this.l + this.n));
         int i2 = -((int) ((f4 - this.k) / (this.m + this.o)));
@@ -416,11 +416,11 @@ public class h extends j {
     private void n() {
         if (com.censivn.C3DEngine.a.e.l()) {
             this.u = x.b(b.d.scrollcontainer_arrow);
-            this.s = new k(com.censivn.C3DEngine.b.b.a.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.a.c, false);
+            this.s = new k(com.censivn.C3DEngine.b.b.A.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
             this.s.rotation().z = 180.0f;
             this.s.textures().addElement(this.u);
             com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
-            this.t = new k(com.censivn.C3DEngine.b.b.a.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.a.c, false);
+            this.t = new k(com.censivn.C3DEngine.b.b.A.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
             this.t.textures().addElement(this.u);
             com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
             this.s.calAABB(3.0f, 3.0f, 1.0f);
@@ -431,14 +431,14 @@ public class h extends j {
             com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
             this.t = new k(0.0f, 0.0f, false);
             com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.4
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.4
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.u = x.b(b.d.scrollcontainer_arrow);
-                    h.this.s.a(com.censivn.C3DEngine.b.b.a.c * 24.0f);
-                    h.this.t.a(com.censivn.C3DEngine.b.b.a.c * 24.0f);
-                    h.this.s.b(com.censivn.C3DEngine.b.b.a.c * 45.0f);
-                    h.this.t.b(com.censivn.C3DEngine.b.b.a.c * 45.0f);
+                    h.this.s.a(com.censivn.C3DEngine.b.b.A.c * 24.0f);
+                    h.this.t.a(com.censivn.C3DEngine.b.b.A.c * 24.0f);
+                    h.this.s.b(com.censivn.C3DEngine.b.b.A.c * 45.0f);
+                    h.this.t.b(com.censivn.C3DEngine.b.b.A.c * 45.0f);
                     h.this.s.textures().addElement(h.this.u);
                     h.this.t.textures().addElement(h.this.u);
                     h.this.s.calAABB(3.0f, 3.0f, 1.0f);

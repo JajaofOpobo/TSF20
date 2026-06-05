@@ -101,7 +101,7 @@ public class f implements e.a {
     }
 
     public static String b() {
-        Cursor cursorQuery = com.censivn.C3DEngine.a.d().getContentResolver().query(g.h.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.h.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -137,10 +137,10 @@ public class f implements e.a {
         k = new com.tsf.shell.f.c.a.a.g();
         l = new com.tsf.shell.f.c.a.a.b();
         m = new com.tsf.shell.f.c.a.a.c();
-        e = 200.0f * com.censivn.C3DEngine.b.b.a.b;
-        f = 360.0f * com.censivn.C3DEngine.b.b.a.b;
-        g = 150.0f * com.censivn.C3DEngine.b.b.a.b;
-        c = 138.0f * com.censivn.C3DEngine.b.b.a.b;
+        e = 200.0f * com.censivn.C3DEngine.b.b.A.b;
+        f = 360.0f * com.censivn.C3DEngine.b.b.A.b;
+        g = 150.0f * com.censivn.C3DEngine.b.b.A.b;
+        c = 138.0f * com.censivn.C3DEngine.b.b.A.b;
         A();
     }
 
@@ -171,18 +171,18 @@ public class f implements e.a {
     }
 
     private void A() {
-        this.T = com.censivn.C3DEngine.b.b.a.a(54.0f);
-        this.U = com.censivn.C3DEngine.b.b.a.a(54.0f);
-        this.V = com.censivn.C3DEngine.b.b.a.a(80.0f);
-        this.W = com.censivn.C3DEngine.b.b.a.a(80.0f);
-        o = com.censivn.C3DEngine.b.b.a.a(60.0f);
-        p = com.censivn.C3DEngine.b.b.a.a(60.0f);
-        q = com.censivn.C3DEngine.b.b.a.a(60.0f);
+        this.T = com.censivn.C3DEngine.b.b.A.a(54.0f);
+        this.U = com.censivn.C3DEngine.b.b.A.a(54.0f);
+        this.V = com.censivn.C3DEngine.b.b.A.a(80.0f);
+        this.W = com.censivn.C3DEngine.b.b.A.a(80.0f);
+        o = com.censivn.C3DEngine.b.b.A.a(60.0f);
+        p = com.censivn.C3DEngine.b.b.A.a(60.0f);
+        q = com.censivn.C3DEngine.b.b.A.a(60.0f);
     }
 
     private void B() {
         Bitmap bitmapB = q.b(18.0f, -1);
-        com.censivn.C3DEngine.a.g().a(this.I, bitmapB);
+        com.censivn.C3DEngine.A.g().a(this.I, bitmapB);
         bitmapB.recycle();
     }
 
@@ -260,8 +260,8 @@ public class f implements e.a {
         this.ah.l(0.0f);
         this.ah.m(0.0f);
         this.s = jVar;
-        a = (int) (50.0f * com.censivn.C3DEngine.b.b.a.b);
-        b = (int) (100.0f * com.censivn.C3DEngine.b.b.a.b);
+        a = (int) (50.0f * com.censivn.C3DEngine.b.b.A.b);
+        b = (int) (100.0f * com.censivn.C3DEngine.b.b.A.b);
         this.S = new B(this);
         if (this.Y) {
             this.S.a = 0.1f;
@@ -299,7 +299,7 @@ public class f implements e.a {
                         f.this.N.setAnimationObjectState(false);
                         f.this.z = true;
                         if (!f.this.Y) {
-                            if (com.censivn.C3DEngine.b.b.a.O) {
+                            if (com.censivn.C3DEngine.b.b.A.O) {
                                 com.tsf.shell.manager.b.e.a(f.this.O);
                             } else {
                                 com.tsf.shell.manager.b.e.b(f.this.O);
@@ -311,11 +311,11 @@ public class f implements e.a {
         };
         this.s.addChild(this.t);
         PositionNumber3d positionNumber3dPosition = this.t.position();
-        float f8 = com.censivn.C3DEngine.b.b.a.z + a;
+        float f8 = com.censivn.C3DEngine.b.b.A.z + a;
         this.u = f8;
         positionNumber3dPosition.x = f8;
         PositionNumber3d positionNumber3dPosition2 = this.t.position();
-        float f9 = com.censivn.C3DEngine.b.b.a.C + a;
+        float f9 = com.censivn.C3DEngine.b.b.A.C + a;
         this.v = f9;
         positionNumber3dPosition2.y = f9;
         B();
@@ -364,8 +364,8 @@ public class f implements e.a {
                         if (fA > this.e) {
                             fA = this.e;
                         }
-                        if (fA < f.c * com.censivn.C3DEngine.b.b.a.b) {
-                            fA = f.c * com.censivn.C3DEngine.b.b.a.b;
+                        if (fA < f.c * com.censivn.C3DEngine.b.b.A.b) {
+                            fA = f.c * com.censivn.C3DEngine.b.b.A.b;
                         }
                         f.this.ac = fA;
                         f.this.z = false;
@@ -383,7 +383,7 @@ public class f implements e.a {
                 }
             }
         });
-        this.M = new k(0.0f, this.J.height * com.censivn.C3DEngine.b.b.a.b);
+        this.M = new k(0.0f, this.J.height * com.censivn.C3DEngine.b.b.A.b);
         this.M.textures().addElement(this.J);
         this.M.alpha(0.0f);
         this.K = new com.censivn.C3DEngine.b.g.d();
@@ -395,7 +395,7 @@ public class f implements e.a {
             }
         };
         this.L.a(0);
-        d = com.censivn.C3DEngine.b.b.a.a(130.0f);
+        d = com.censivn.C3DEngine.b.b.A.a(130.0f);
         this.N = new g(this.H.width, this.H.height, new h(this.H.width / 2, this.H.height / 2, this.H.height)) { // from class: com.tsf.shell.f.c.a.f.12
             @Override // com.censivn.C3DEngine.b.f.i
             public i getHittingTarget(float f10, float f11, boolean z2) {
@@ -479,15 +479,15 @@ public class f implements e.a {
         this.t.addChild(this.N);
         this.t.addChild(this.C);
         a(0.0f, true);
-        float fC = com.censivn.C3DEngine.b.b.a.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
+        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
         if (!this.Y) {
             boolean z2 = com.tsf.shell.manager.b.e.c() == 0.0f && com.tsf.shell.manager.b.e.d() == 0.0f;
             if (fC == 0.0f) {
                 f6 = (int) (com.tsf.shell.manager.o.b.a.H * 6 * 0.95f);
                 f5 = (-f6) / 2.0f;
-                f7 = com.censivn.C3DEngine.b.b.a.C;
+                f7 = com.censivn.C3DEngine.b.b.A.C;
             } else {
-                Number3d number3dF = com.censivn.C3DEngine.b.b.a.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
+                Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
                 float f10 = number3dF.x;
                 float f11 = number3dF.y;
                 f5 = f10;
@@ -517,7 +517,7 @@ public class f implements e.a {
         this.O = f2;
         a(f3, f4, false);
         if (!this.Y && z) {
-            if (com.censivn.C3DEngine.b.b.a.O) {
+            if (com.censivn.C3DEngine.b.b.A.O) {
                 com.tsf.shell.manager.b.e.a(this.O);
                 com.tsf.shell.manager.b.e.a(this.u, this.v);
             } else {
@@ -578,7 +578,7 @@ public class f implements e.a {
     }
 
     public void k() {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.15
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.15
             @Override // java.lang.Runnable
             public void run() {
                 f.this.l();
@@ -604,7 +604,7 @@ public class f implements e.a {
     public void m() {
         if (!this.ab) {
             this.ab = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (f.this.M.parent() == null) {
@@ -612,10 +612,10 @@ public class f implements e.a {
                     }
                     if (!f.this.X) {
                         f.this.M.rotation().z = 90.0f;
-                        f.this.M.a(com.censivn.C3DEngine.b.b.a.G * 2);
+                        f.this.M.a(com.censivn.C3DEngine.b.b.A.G * 2);
                     } else {
                         f.this.M.rotation().z = 0.0f;
-                        f.this.M.a(com.censivn.C3DEngine.b.b.a.F * 2);
+                        f.this.M.a(com.censivn.C3DEngine.b.b.A.F * 2);
                     }
                     com.censivn.C3DEngine.b.g.c.a(f.this.M);
                     com.censivn.C3DEngine.b.g.c.a(f.this.M, VEasing.Linear.easeNone, f.this.K);
@@ -627,7 +627,7 @@ public class f implements e.a {
     public void n() {
         if (this.ab) {
             this.ab = false;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.3
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.f.3
                 @Override // java.lang.Runnable
                 public void run() {
                     com.censivn.C3DEngine.b.g.c.a(f.this.M);
@@ -696,7 +696,7 @@ public class f implements e.a {
         this.A = false;
         c(false);
         if (!this.Y) {
-            if (com.censivn.C3DEngine.b.b.a.O) {
+            if (com.censivn.C3DEngine.b.b.A.O) {
                 com.tsf.shell.manager.b.e.a(this.u, this.v);
             } else {
                 com.tsf.shell.manager.b.e.b(this.u, this.v);
@@ -722,28 +722,28 @@ public class f implements e.a {
     }
 
     private void c(boolean z) {
-        float fAbs = Math.abs(this.u - com.censivn.C3DEngine.b.b.a.z);
-        float fAbs2 = Math.abs(com.censivn.C3DEngine.b.b.a.A - this.u);
-        float fAbs3 = Math.abs(this.v - com.censivn.C3DEngine.b.b.a.C);
+        float fAbs = Math.abs(this.u - com.censivn.C3DEngine.b.b.A.z);
+        float fAbs2 = Math.abs(com.censivn.C3DEngine.b.b.A.A - this.u);
+        float fAbs3 = Math.abs(this.v - com.censivn.C3DEngine.b.b.A.C);
         if (!z || this.n == null) {
             if (fAbs < fAbs2 && fAbs < fAbs3) {
-                this.u = com.censivn.C3DEngine.b.b.a.z + a;
+                this.u = com.censivn.C3DEngine.b.b.A.z + a;
                 E();
             } else if (fAbs2 < fAbs && fAbs2 < fAbs3) {
-                this.u = com.censivn.C3DEngine.b.b.a.A - a;
+                this.u = com.censivn.C3DEngine.b.b.A.A - a;
                 E();
             } else {
-                this.v = com.censivn.C3DEngine.b.b.a.C + a;
+                this.v = com.censivn.C3DEngine.b.b.A.C + a;
                 F();
             }
         } else if (this.n instanceof com.tsf.shell.f.c.a.a.d) {
-            this.v = com.censivn.C3DEngine.b.b.a.C + a;
+            this.v = com.censivn.C3DEngine.b.b.A.C + a;
             F();
         } else {
             if (fAbs > fAbs2) {
-                this.u = com.censivn.C3DEngine.b.b.a.A - a;
+                this.u = com.censivn.C3DEngine.b.b.A.A - a;
             } else {
-                this.u = com.censivn.C3DEngine.b.b.a.z + a;
+                this.u = com.censivn.C3DEngine.b.b.A.z + a;
             }
             E();
         }
@@ -759,21 +759,21 @@ public class f implements e.a {
     private void D() {
         if (!this.Y) {
             if (this.n.c == 3) {
-                this.v = com.censivn.C3DEngine.b.b.a.C + a;
+                this.v = com.censivn.C3DEngine.b.b.A.C + a;
             } else if (this.n.c == 0) {
-                this.u = com.censivn.C3DEngine.b.b.a.z + a;
+                this.u = com.censivn.C3DEngine.b.b.A.z + a;
             } else if (this.n.c == 1) {
-                this.v = com.censivn.C3DEngine.b.b.a.A - a;
+                this.v = com.censivn.C3DEngine.b.b.A.A - a;
             }
         }
     }
 
     private void E() {
         if (!this.Y) {
-            if (this.v > com.censivn.C3DEngine.b.b.a.B - a) {
-                this.v = com.censivn.C3DEngine.b.b.a.B - a;
-            } else if (this.v < com.censivn.C3DEngine.b.b.a.C + a) {
-                this.v = com.censivn.C3DEngine.b.b.a.C + a;
+            if (this.v > com.censivn.C3DEngine.b.b.A.B - a) {
+                this.v = com.censivn.C3DEngine.b.b.A.B - a;
+            } else if (this.v < com.censivn.C3DEngine.b.b.A.C + a) {
+                this.v = com.censivn.C3DEngine.b.b.A.C + a;
             }
             boolean z = this.N.a() != 0.0f;
             if (this.v > 0.0f) {
@@ -819,10 +819,10 @@ public class f implements e.a {
         if (this.Y) {
             return;
         }
-        if (this.u > com.censivn.C3DEngine.b.b.a.A - a) {
-            this.u = com.censivn.C3DEngine.b.b.a.A - a;
-        } else if (this.u < com.censivn.C3DEngine.b.b.a.z + a) {
-            this.u = com.censivn.C3DEngine.b.b.a.z + a;
+        if (this.u > com.censivn.C3DEngine.b.b.A.A - a) {
+            this.u = com.censivn.C3DEngine.b.b.A.A - a;
+        } else if (this.u < com.censivn.C3DEngine.b.b.A.z + a) {
+            this.u = com.censivn.C3DEngine.b.b.A.z + a;
         }
         boolean z = this.N.a() != 0.0f;
         if (this.u > 0.0f) {
@@ -862,7 +862,7 @@ public class f implements e.a {
 
     private void G() {
         if (!this.Y) {
-            com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.f.4
+            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.f.4
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.b.e.a(f.this.af);
@@ -1022,10 +1022,10 @@ public class f implements e.a {
         float f2;
         float f3;
         boolean z = false;
-        if (((this.n instanceof com.tsf.shell.f.c.a.a.d) && com.censivn.C3DEngine.b.b.a.O) || ((this.n instanceof com.tsf.shell.f.c.a.a.i) && !com.censivn.C3DEngine.b.b.a.O)) {
+        if (((this.n instanceof com.tsf.shell.f.c.a.a.d) && com.censivn.C3DEngine.b.b.A.O) || ((this.n instanceof com.tsf.shell.f.c.a.a.i) && !com.censivn.C3DEngine.b.b.A.O)) {
             z = true;
         }
-        Number3d number3dF = com.censivn.C3DEngine.b.b.a.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
+        Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
         if (number3dF.x == 0.0f && number3dF.y == 0.0f) {
             D();
             f2 = this.u;
@@ -1035,13 +1035,13 @@ public class f implements e.a {
             f3 = number3dF.y;
         }
         a(f2, f3, z);
-        float fC = com.censivn.C3DEngine.b.b.a.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
+        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
         if (fC == 0.0f) {
             fC = this.O;
         }
         if (fC != 0.0f) {
-            if (fC < c * com.censivn.C3DEngine.b.b.a.b) {
-                fC = c * com.censivn.C3DEngine.b.b.a.b;
+            if (fC < c * com.censivn.C3DEngine.b.b.A.b) {
+                fC = c * com.censivn.C3DEngine.b.b.A.b;
             }
             float fA = this.n.a(this.u, this.v);
             if (fC > fA) {

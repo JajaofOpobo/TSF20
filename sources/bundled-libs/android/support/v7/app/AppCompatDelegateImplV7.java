@@ -228,42 +228,42 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
         ViewGroup viewGroup;
         ViewGroup viewGroup2;
         Context dVar;
-        TypedArray typedArrayObtainStyledAttributes = this.a.obtainStyledAttributes(a.k.AppCompatTheme);
-        if (!typedArrayObtainStyledAttributes.hasValue(a.k.AppCompatTheme_windowActionBar)) {
+        TypedArray typedArrayObtainStyledAttributes = this.a.obtainStyledAttributes(android.support.v7.a.a.k.AppCompatTheme);
+        if (!typedArrayObtainStyledAttributes.hasValue(android.support.v7.a.a.k.AppCompatTheme_windowActionBar)) {
             typedArrayObtainStyledAttributes.recycle();
             throw new IllegalStateException("You need to use a Theme.AppCompat theme (or descendant) with this activity.");
         }
-        if (typedArrayObtainStyledAttributes.getBoolean(a.k.AppCompatTheme_windowNoTitle, false)) {
+        if (typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.AppCompatTheme_windowNoTitle, false)) {
             c(1);
-        } else if (typedArrayObtainStyledAttributes.getBoolean(a.k.AppCompatTheme_windowActionBar, false)) {
+        } else if (typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.AppCompatTheme_windowActionBar, false)) {
             c(108);
         }
-        if (typedArrayObtainStyledAttributes.getBoolean(a.k.AppCompatTheme_windowActionBarOverlay, false)) {
+        if (typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.AppCompatTheme_windowActionBarOverlay, false)) {
             c(109);
         }
-        if (typedArrayObtainStyledAttributes.getBoolean(a.k.AppCompatTheme_windowActionModeOverlay, false)) {
+        if (typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.AppCompatTheme_windowActionModeOverlay, false)) {
             c(10);
         }
-        this.k = typedArrayObtainStyledAttributes.getBoolean(a.k.AppCompatTheme_android_windowIsFloating, false);
+        this.k = typedArrayObtainStyledAttributes.getBoolean(android.support.v7.a.a.k.AppCompatTheme_android_windowIsFloating, false);
         typedArrayObtainStyledAttributes.recycle();
         this.b.getDecorView();
         LayoutInflater layoutInflaterFrom = LayoutInflater.from(this.a);
         if (!this.l) {
             if (this.k) {
-                ViewGroup viewGroup3 = (ViewGroup) layoutInflaterFrom.inflate(a.h.abc_dialog_title_material, (ViewGroup) null);
+                ViewGroup viewGroup3 = (ViewGroup) layoutInflaterFrom.inflate(android.support.v7.a.a.h.abc_dialog_title_material, (ViewGroup) null);
                 this.i = false;
                 this.h = false;
                 viewGroup2 = viewGroup3;
             } else if (this.h) {
                 TypedValue typedValue = new TypedValue();
-                this.a.getTheme().resolveAttribute(a.C0012a.actionBarTheme, typedValue, true);
+                this.a.getTheme().resolveAttribute(android.support.v7.a.a.C0012a.actionBarTheme, typedValue, true);
                 if (typedValue.resourceId != 0) {
                     dVar = new android.support.v7.view.d(this.a, typedValue.resourceId);
                 } else {
                     dVar = this.a;
                 }
-                ViewGroup viewGroup4 = (ViewGroup) LayoutInflater.from(dVar).inflate(a.h.abc_screen_toolbar, (ViewGroup) null);
-                this.r = (android.support.v7.widget.m) viewGroup4.findViewById(a.f.decor_content_parent);
+                ViewGroup viewGroup4 = (ViewGroup) LayoutInflater.from(dVar).inflate(android.support.v7.a.a.h.abc_screen_toolbar, (ViewGroup) null);
+                this.r = (android.support.v7.widget.m) viewGroup4.findViewById(android.support.v7.a.a.f.decor_content_parent);
                 this.r.setWindowCallback(p());
                 if (this.i) {
                     this.r.a(109);
@@ -280,9 +280,9 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
             }
         } else {
             if (this.j) {
-                viewGroup = (ViewGroup) layoutInflaterFrom.inflate(a.h.abc_screen_simple_overlay_action_mode, (ViewGroup) null);
+                viewGroup = (ViewGroup) layoutInflaterFrom.inflate(android.support.v7.a.a.h.abc_screen_simple_overlay_action_mode, (ViewGroup) null);
             } else {
-                viewGroup = (ViewGroup) layoutInflaterFrom.inflate(a.h.abc_screen_simple, (ViewGroup) null);
+                viewGroup = (ViewGroup) layoutInflaterFrom.inflate(android.support.v7.a.a.h.abc_screen_simple, (ViewGroup) null);
             }
             if (Build.VERSION.SDK_INT >= 21) {
                 ai.a(viewGroup, new ab() { // from class: android.support.v7.app.AppCompatDelegateImplV7.2
@@ -311,10 +311,10 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
             throw new IllegalArgumentException("AppCompat does not support the current theme features: { windowActionBar: " + this.h + ", windowActionBarOverlay: " + this.i + ", android:windowIsFloating: " + this.k + ", windowActionModeOverlay: " + this.j + ", windowNoTitle: " + this.l + " }");
         }
         if (this.r == null) {
-            this.w = (TextView) viewGroup2.findViewById(a.f.title);
+            this.w = (TextView) viewGroup2.findViewById(android.support.v7.a.a.f.title);
         }
         ad.b(viewGroup2);
-        ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup2.findViewById(a.f.action_bar_activity_content);
+        ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup2.findViewById(android.support.v7.a.a.f.action_bar_activity_content);
         ViewGroup viewGroup5 = (ViewGroup) this.b.findViewById(R.id.content);
         if (viewGroup5 != null) {
             while (viewGroup5.getChildCount() > 0) {
@@ -349,20 +349,20 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
         ContentFrameLayout contentFrameLayout = (ContentFrameLayout) this.v.findViewById(R.id.content);
         View decorView = this.b.getDecorView();
         contentFrameLayout.a(decorView.getPaddingLeft(), decorView.getPaddingTop(), decorView.getPaddingRight(), decorView.getPaddingBottom());
-        TypedArray typedArrayObtainStyledAttributes = this.a.obtainStyledAttributes(a.k.AppCompatTheme);
-        typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowMinWidthMajor, contentFrameLayout.getMinWidthMajor());
-        typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowMinWidthMinor, contentFrameLayout.getMinWidthMinor());
-        if (typedArrayObtainStyledAttributes.hasValue(a.k.AppCompatTheme_windowFixedWidthMajor)) {
-            typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowFixedWidthMajor, contentFrameLayout.getFixedWidthMajor());
+        TypedArray typedArrayObtainStyledAttributes = this.a.obtainStyledAttributes(android.support.v7.a.a.k.AppCompatTheme);
+        typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowMinWidthMajor, contentFrameLayout.getMinWidthMajor());
+        typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowMinWidthMinor, contentFrameLayout.getMinWidthMinor());
+        if (typedArrayObtainStyledAttributes.hasValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedWidthMajor)) {
+            typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedWidthMajor, contentFrameLayout.getFixedWidthMajor());
         }
-        if (typedArrayObtainStyledAttributes.hasValue(a.k.AppCompatTheme_windowFixedWidthMinor)) {
-            typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowFixedWidthMinor, contentFrameLayout.getFixedWidthMinor());
+        if (typedArrayObtainStyledAttributes.hasValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedWidthMinor)) {
+            typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedWidthMinor, contentFrameLayout.getFixedWidthMinor());
         }
-        if (typedArrayObtainStyledAttributes.hasValue(a.k.AppCompatTheme_windowFixedHeightMajor)) {
-            typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowFixedHeightMajor, contentFrameLayout.getFixedHeightMajor());
+        if (typedArrayObtainStyledAttributes.hasValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedHeightMajor)) {
+            typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedHeightMajor, contentFrameLayout.getFixedHeightMajor());
         }
-        if (typedArrayObtainStyledAttributes.hasValue(a.k.AppCompatTheme_windowFixedHeightMinor)) {
-            typedArrayObtainStyledAttributes.getValue(a.k.AppCompatTheme_windowFixedHeightMinor, contentFrameLayout.getFixedHeightMinor());
+        if (typedArrayObtainStyledAttributes.hasValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedHeightMinor)) {
+            typedArrayObtainStyledAttributes.getValue(android.support.v7.a.a.k.AppCompatTheme_windowFixedHeightMinor, contentFrameLayout.getFixedHeightMinor());
         }
         typedArrayObtainStyledAttributes.recycle();
         contentFrameLayout.requestLayout();
@@ -464,7 +464,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
         a(fVar, true);
     }
 
-    public android.support.v7.view.b b(b.a aVar) {
+    public android.support.v7.view.b b(android.support.v7.view.b.a aVar) {
         if (aVar == null) {
             throw new IllegalArgumentException("ActionMode callback can not be null.");
         }
@@ -494,7 +494,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
     }
 
     @Override // android.support.v7.app.e
-    android.support.v7.view.b a(b.a aVar) {
+    android.support.v7.view.b a(android.support.v7.view.b.a aVar) {
         android.support.v7.view.b bVarA;
         Context dVar;
         v();
@@ -518,7 +518,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
                 if (this.k) {
                     TypedValue typedValue = new TypedValue();
                     Resources.Theme theme = this.a.getTheme();
-                    theme.resolveAttribute(a.C0012a.actionBarTheme, typedValue, true);
+                    theme.resolveAttribute(android.support.v7.a.a.C0012a.actionBarTheme, typedValue, true);
                     if (typedValue.resourceId != 0) {
                         Resources.Theme themeNewTheme = this.a.getResources().newTheme();
                         themeNewTheme.setTo(theme);
@@ -529,11 +529,11 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
                         dVar = this.a;
                     }
                     this.n = new ActionBarContextView(dVar);
-                    this.o = new PopupWindow(dVar, (AttributeSet) null, a.C0012a.actionModePopupWindowStyle);
+                    this.o = new PopupWindow(dVar, (AttributeSet) null, android.support.v7.a.a.C0012a.actionModePopupWindowStyle);
                     s.a(this.o, 2);
                     this.o.setContentView(this.n);
                     this.o.setWidth(-1);
-                    dVar.getTheme().resolveAttribute(a.C0012a.actionBarSize, typedValue, true);
+                    dVar.getTheme().resolveAttribute(android.support.v7.a.a.C0012a.actionBarSize, typedValue, true);
                     this.n.setContentHeight(TypedValue.complexToDimensionPixelSize(typedValue.data, dVar.getResources().getDisplayMetrics()));
                     this.o.setHeight(-2);
                     this.p = new Runnable() { // from class: android.support.v7.app.AppCompatDelegateImplV7.5
@@ -559,7 +559,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
                         }
                     };
                 } else {
-                    ViewStubCompat viewStubCompat = (ViewStubCompat) this.v.findViewById(a.f.action_mode_bar_stub);
+                    ViewStubCompat viewStubCompat = (ViewStubCompat) this.v.findViewById(android.support.v7.a.a.f.action_mode_bar_stub);
                     if (viewStubCompat != null) {
                         viewStubCompat.setLayoutInflater(LayoutInflater.from(m()));
                         this.n = (ActionBarContextView) viewStubCompat.a();
@@ -1231,7 +1231,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
                     marginLayoutParams.topMargin = i;
                     if (this.x == null) {
                         this.x = new View(this.a);
-                        this.x.setBackgroundColor(this.a.getResources().getColor(a.c.abc_input_method_navigation_guard));
+                        this.x.setBackgroundColor(this.a.getResources().getColor(android.support.v7.a.a.c.abc_input_method_navigation_guard));
                         this.v.addView(this.x, -1, new ViewGroup.LayoutParams(-1, i));
                         z3 = true;
                     } else {
@@ -1310,10 +1310,10 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
         }
     }
 
-    class b implements b.a {
-        private b.a b;
+    class b implements android.support.v7.view.b.a {
+        private android.support.v7.view.b.a b;
 
-        public b(b.a aVar) {
+        public b(android.support.v7.view.b.a aVar) {
             this.b = aVar;
         }
 
@@ -1453,22 +1453,22 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
             TypedValue typedValue = new TypedValue();
             Resources.Theme themeNewTheme = context.getResources().newTheme();
             themeNewTheme.setTo(context.getTheme());
-            themeNewTheme.resolveAttribute(a.C0012a.actionBarPopupTheme, typedValue, true);
+            themeNewTheme.resolveAttribute(android.support.v7.a.a.C0012a.actionBarPopupTheme, typedValue, true);
             if (typedValue.resourceId != 0) {
                 themeNewTheme.applyStyle(typedValue.resourceId, true);
             }
-            themeNewTheme.resolveAttribute(a.C0012a.panelMenuListTheme, typedValue, true);
+            themeNewTheme.resolveAttribute(android.support.v7.a.a.C0012a.panelMenuListTheme, typedValue, true);
             if (typedValue.resourceId != 0) {
                 themeNewTheme.applyStyle(typedValue.resourceId, true);
             } else {
-                themeNewTheme.applyStyle(a.j.Theme_AppCompat_CompactMenu, true);
+                themeNewTheme.applyStyle(android.support.v7.a.a.j.Theme_AppCompat_CompactMenu, true);
             }
             android.support.v7.view.d dVar = new android.support.v7.view.d(context, 0);
             dVar.getTheme().setTo(themeNewTheme);
             this.l = dVar;
-            TypedArray typedArrayObtainStyledAttributes = dVar.obtainStyledAttributes(a.k.AppCompatTheme);
-            this.b = typedArrayObtainStyledAttributes.getResourceId(a.k.AppCompatTheme_panelBackground, 0);
-            this.f = typedArrayObtainStyledAttributes.getResourceId(a.k.AppCompatTheme_android_windowAnimationStyle, 0);
+            TypedArray typedArrayObtainStyledAttributes = dVar.obtainStyledAttributes(android.support.v7.a.a.k.AppCompatTheme);
+            this.b = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AppCompatTheme_panelBackground, 0);
+            this.f = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AppCompatTheme_android_windowAnimationStyle, 0);
             typedArrayObtainStyledAttributes.recycle();
         }
 
@@ -1490,7 +1490,7 @@ class AppCompatDelegateImplV7 extends e implements android.support.v4.view.n, f.
                 return null;
             }
             if (this.k == null) {
-                this.k = new android.support.v7.view.menu.e(this.l, a.h.abc_list_menu_item_layout);
+                this.k = new android.support.v7.view.menu.e(this.l, android.support.v7.a.a.h.abc_list_menu_item_layout);
                 this.k.a(aVar);
                 this.j.a(this.k);
             }

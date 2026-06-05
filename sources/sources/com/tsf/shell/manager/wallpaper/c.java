@@ -14,7 +14,7 @@ public class c extends com.tsf.shell.f.e._g.a.d {
 
     public c() {
         setTitle(b.i.text_wallpaper_blur);
-        setMenuHeight(com.censivn.C3DEngine.b.b.a.a(330.0f));
+        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(330.0f));
         this.a = new j();
         this.b = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.manager.wallpaper.c.1
             @Override // com.tsf.shell.f.e.l
@@ -24,7 +24,7 @@ public class c extends com.tsf.shell.f.e._g.a.d {
         };
         com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.h);
         this.b.a(0);
-        this.b.position().y = com.censivn.C3DEngine.b.b.a.a(-250.0f);
+        this.b.position().y = com.censivn.C3DEngine.b.b.A.a(-250.0f);
         this.c = new com.censivn.C3DEngine.b.e.e() { // from class: com.tsf.shell.manager.wallpaper.c.2
             @Override // com.censivn.C3DEngine.b.e.e, com.censivn.C3DEngine.b.e.h
             public void f(int i) {
@@ -34,8 +34,8 @@ public class c extends com.tsf.shell.f.e._g.a.d {
         this.c.g(b.i.text_level);
         this.c.i(0);
         this.c.j(100);
-        this.c.b((int) com.censivn.C3DEngine.b.b.a.a(850.0f));
-        this.c.position().y = com.censivn.C3DEngine.b.b.a.a(10.0f);
+        this.c.b((int) com.censivn.C3DEngine.b.b.A.a(850.0f));
+        this.c.position().y = com.censivn.C3DEngine.b.b.A.a(10.0f);
         this.c.a(new h.a() { // from class: com.tsf.shell.manager.wallpaper.c.3
             @Override // com.censivn.C3DEngine.b.e.h.a
             public boolean a(int i) {

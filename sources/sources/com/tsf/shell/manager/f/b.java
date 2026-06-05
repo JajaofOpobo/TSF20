@@ -121,7 +121,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
             com.censivn.C3DEngine.a.d.d().c().a(false);
             com.tsf.shell.manager.a.h.n().ab();
             com.tsf.shell.manager.a.b.a(this);
-            this.g.setAABBPX(-com.censivn.C3DEngine.b.b.a.H, -com.censivn.C3DEngine.b.b.a.I, 0.0f, com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.I, 0.0f);
+            this.g.setAABBPX(-com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f, com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
         }
     }
 
@@ -163,7 +163,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.g.setAABBPX(-com.censivn.C3DEngine.b.b.a.H, -com.censivn.C3DEngine.b.b.a.I, 0.0f, com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.I, 0.0f);
+        this.g.setAABBPX(-com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f, com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
         if (this.d) {
             this.f = g();
             this.g.a(this.f.b);

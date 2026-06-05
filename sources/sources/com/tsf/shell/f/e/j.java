@@ -24,8 +24,8 @@ public class j extends com.censivn.C3DEngine.b.f.j {
     private boolean h = false;
     private boolean p = false;
     private com.censivn.C3DEngine.b.g._b.b q = new com.censivn.C3DEngine.b.g._b.b();
-    private float i = com.censivn.C3DEngine.b.b.a.c * 100.0f;
-    private float j = com.censivn.C3DEngine.b.b.a.c * 100.0f;
+    private float i = com.censivn.C3DEngine.b.b.A.c * 100.0f;
+    private float j = com.censivn.C3DEngine.b.b.A.c * 100.0f;
     private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.a.l, com.tsf.shell.manager.g.a.l);
     private r o = new r();
 
@@ -51,7 +51,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                             j.this.h = false;
                         }
                         j.this.p = true;
-                        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.e.j.1.1
+                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.j.1.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 if (j.this.h) {
@@ -201,7 +201,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
         }
         this.b = i;
         this.e = null;
-        float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.a.c) * (i - 1)) / 2.0f);
+        float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.A.c) * (i - 1)) / 2.0f);
         this.d = new com.censivn.C3DEngine.b.f.a.a(i, 32, 32, 32);
         this.d.useVBO(false);
         float f2 = f;
@@ -213,7 +213,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             bVarA.k().setAll(0.4f, 0.4f, 1.0f);
             bVarA.a(0, 0, 1, 1);
             bVarA.h();
-            f2 += this.a * com.censivn.C3DEngine.b.b.a.c;
+            f2 += this.a * com.censivn.C3DEngine.b.b.A.c;
         }
         this.d.textures().addElement(this.c);
         addChild(this.d);
@@ -223,7 +223,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
         if (this.f < this.b && this.f > -1) {
             this.e = this.d.a(this.f);
         }
-        setAABBPX(f - com.censivn.C3DEngine.b.b.a.a(150.0f), com.censivn.C3DEngine.b.b.a.c * (-55.0f), 0.0f, com.censivn.C3DEngine.b.b.a.a(150.0f) + (-f), com.censivn.C3DEngine.b.b.a.c * 55.0f, 0.0f);
+        setAABBPX(f - com.censivn.C3DEngine.b.b.A.a(150.0f), com.censivn.C3DEngine.b.b.A.c * (-55.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(150.0f) + (-f), com.censivn.C3DEngine.b.b.A.c * 55.0f, 0.0f);
         this.l.position().x = f - this.j;
         this.m.position().x = (-f) + this.j;
         this.n.position().y = this.i;
@@ -375,7 +375,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                     }
                 };
                 dVar.a(0);
-                dVar.h(100.0f * com.censivn.C3DEngine.b.b.a.c);
+                dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
                 com.censivn.C3DEngine.b.g.c.a(this.c);
                 com.censivn.C3DEngine.b.g.c.a(this.c, 250, dVar);
             }

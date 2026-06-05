@@ -40,7 +40,7 @@ public class j extends b {
                 }
             }
         };
-        float fA = com.censivn.C3DEngine.b.b.a.a(4.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(4.0f);
         this.b.position().y = this.n.Y - fA;
         addChild(this.b);
         this.b.visible(false);
@@ -81,7 +81,7 @@ public class j extends b {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.e.j.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
-                com.censivn.C3DEngine.a.g().a(j.this.p);
+                com.censivn.C3DEngine.A.g().a(j.this.p);
                 j.this.aW();
                 com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.e.j.2.1
                     @Override // com.censivn.C3DEngine.b.g.d
@@ -141,12 +141,12 @@ public class j extends b {
         if (this.p.id == 0) {
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.n.H, this.n.I, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
-            Bitmap bitmapA = x.a(this.u, com.censivn.C3DEngine.b.b.a.a(96.0f), com.censivn.C3DEngine.b.b.a.a(96.0f));
+            Bitmap bitmapA = x.a(this.u, com.censivn.C3DEngine.b.b.A.a(96.0f), com.censivn.C3DEngine.b.b.A.a(96.0f));
             canvas.drawBitmap(bitmapA, (bitmapCreateBitmap.getWidth() - bitmapA.getWidth()) / 2, (bitmapCreateBitmap.getHeight() - bitmapA.getHeight()) / 2, (Paint) null);
             bitmapA.recycle();
             Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(this.x, bitmapCreateBitmap, this.n, false);
             bitmapCreateBitmap.recycle();
-            com.censivn.C3DEngine.a.g().a(this.p, bitmapCreateTextureBitmap);
+            com.censivn.C3DEngine.A.g().a(this.p, bitmapCreateTextureBitmap);
             bitmapCreateTextureBitmap.recycle();
         }
         if (this.b.textures().size() == 0) {
@@ -158,7 +158,7 @@ public class j extends b {
 
     public void aX() {
         if (this.p.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.p);
+            com.censivn.C3DEngine.A.g().a(this.p);
         }
     }
 

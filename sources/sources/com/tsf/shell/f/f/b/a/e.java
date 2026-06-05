@@ -31,7 +31,7 @@ public class e extends d {
                 com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
                 if (z) {
                     dVar3.f(0.0f);
-                    dVar3.h(com.censivn.C3DEngine.b.b.a.B);
+                    dVar3.h(com.censivn.C3DEngine.b.b.A.B);
                     dVar3.a(0);
                     if (this.c) {
                         dVar3.d(a(50));
@@ -42,7 +42,7 @@ public class e extends d {
                     dVar = dVar3;
                 } else {
                     iVar.position().x = 0.0f;
-                    iVar.position().y = com.censivn.C3DEngine.b.b.a.B;
+                    iVar.position().y = com.censivn.C3DEngine.b.b.A.B;
                     iVar.alpha(0.0f);
                     if (this.c) {
                         iVar.rotation().x = a(50);
@@ -67,7 +67,7 @@ public class e extends d {
     @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
-        float fA = com.censivn.C3DEngine.b.b.a.a(50.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
         for (int i = 0; i < aVar.a(); i++) {
             com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.d();

@@ -37,8 +37,8 @@ public class k extends j {
         this.a = i;
         this.d = i2;
         if (z2) {
-            f = ((int) f) * com.censivn.C3DEngine.b.b.a.a;
-            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.a.a;
+            f = ((int) f) * com.censivn.C3DEngine.b.b.A.a;
+            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.A.a;
         }
         this.b = f;
         this.c = f2;

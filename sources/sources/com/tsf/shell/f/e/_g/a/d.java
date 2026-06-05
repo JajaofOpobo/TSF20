@@ -30,12 +30,12 @@ public class d extends c {
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
-        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.a.z;
+        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onLayout(float f, float f2, float f3, float f4) {
-        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.a.z;
+        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
     }
 
     public void setTitle(int i) {
@@ -85,7 +85,7 @@ public class d extends c {
         public void a(i iVar) {
             b();
             this.d = iVar;
-            this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.a.a(12.0f) + com.censivn.C3DEngine.b.b.a.a(90.0f);
+            this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(90.0f);
             this.d.removeFromParent();
             addChild(this.d);
             e();
@@ -100,28 +100,28 @@ public class d extends c {
 
         private void e() {
             if (this.d != null && this.d.parent() == this) {
-                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.a.a(12.0f) + com.censivn.C3DEngine.b.b.a.a(40.0f) + com.censivn.C3DEngine.b.b.a.a(110.0f);
+                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f) + com.censivn.C3DEngine.b.b.A.a(110.0f);
             } else {
-                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.a.a(12.0f) + com.censivn.C3DEngine.b.b.a.a(40.0f);
+                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f);
             }
-            float fA = com.censivn.C3DEngine.b.b.a.a(160.0f);
+            float fA = com.censivn.C3DEngine.b.b.A.a(160.0f);
             setAABBPX(0.0f, (-fA) / 2.0f, 0.0f, this.e.maxX() + this.e.position().x, fA / 2.0f, 0.0f);
         }
 
         public void c() {
-            this.c = new k(com.censivn.C3DEngine.b.b.a.a(24.0f), com.censivn.C3DEngine.b.b.a.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.d.a.1
+            this.c = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.d.a.1
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
                     if (a.this.a.id == 0) {
                         Bitmap bitmapA = x.a(b.d.scrollcontainer_arrow);
-                        com.censivn.C3DEngine.a.g().a(a.this.a, bitmapA);
+                        com.censivn.C3DEngine.A.g().a(a.this.a, bitmapA);
                         bitmapA.recycle();
                     }
                 }
             };
             this.c.textures().addElement(this.a);
             addChild(this.c);
-            this.c.position().x = com.censivn.C3DEngine.b.b.a.a(20.0f) + com.censivn.C3DEngine.b.b.a.a(12.0f);
+            this.c.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + com.censivn.C3DEngine.b.b.A.a(12.0f);
             this.c.rotation().z = 180.0f;
             this.e = new m();
             this.e.d(42);
@@ -134,7 +134,7 @@ public class d extends c {
 
         public void d() {
             this.e.a();
-            com.censivn.C3DEngine.a.g().a(this.a);
+            com.censivn.C3DEngine.A.g().a(this.a);
         }
 
         public void b(i iVar) {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends f {
-    public static final float b = com.censivn.C3DEngine.b.b.a.a(65.0f);
+    public static final float b = com.censivn.C3DEngine.b.b.A.a(65.0f);
     private c a;
 
     public d(int i, boolean z) {
@@ -15,7 +15,7 @@ public class d extends f {
             @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
-                com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.a.a(-38.0f));
+                com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.A.a(-38.0f));
             }
         };
     }

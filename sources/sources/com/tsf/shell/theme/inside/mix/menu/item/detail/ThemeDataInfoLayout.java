@@ -18,8 +18,8 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
             return ThemeDataInfoLayout.this.getData(context);
         }
     };
-    private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.a.a(280.0f);
-    private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.a.a(500.0f);
+    private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.A.a(280.0f);
+    private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
     private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
         @Override // com.tsf.shell.f.e.D
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
@@ -42,7 +42,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
 
     @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout
     public void setTheme(ThemeListsManager.ThemeInfo themeInfo) {
-        this.mPreviewLoader.parser(com.censivn.C3DEngine.a.d(), themeInfo.packagename);
+        this.mPreviewLoader.parser(com.censivn.C3DEngine.A.d(), themeInfo.packagename);
         recycle();
         int themePreviewCount = this.mPreviewLoader.getThemePreviewCount();
         int maxItemCount = themePreviewCount > getMaxItemCount() ? getMaxItemCount() : themePreviewCount;
@@ -54,7 +54,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
         resetPosition();
     }
 
-    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.a.a
+    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.A.a
     public void recycle() {
         while (!children().isEmpty()) {
             a aVar = (a) removeChildAt(0);
@@ -84,14 +84,14 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
         public void onDrawStart() {
             if (this.e != -1 && this.d.id == 0) {
                 Bitmap themePreviewBitmap = ThemeDataInfoLayout.this.mPreviewLoader.getThemePreviewBitmap(this.e, ThemeDataInfoLayout.this.mPreviewWidth, ThemeDataInfoLayout.this.mPreviewHeight);
-                com.censivn.C3DEngine.a.g().a(this.d, themePreviewBitmap);
+                com.censivn.C3DEngine.A.g().a(this.d, themePreviewBitmap);
                 themePreviewBitmap.recycle();
             }
         }
 
         public void a() {
             if (this.d.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.d);
+                com.censivn.C3DEngine.A.g().a(this.d);
             }
         }
     }

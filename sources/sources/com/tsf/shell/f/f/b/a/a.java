@@ -25,7 +25,7 @@ public class a extends d {
     public void b(ArrayList<i> arrayList, boolean z, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar;
         com.censivn.C3DEngine.b.g.d dVar2 = null;
-        float fA = com.censivn.C3DEngine.b.b.a.a(300.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(300.0f);
         int i = 0;
         while (i < arrayList.size()) {
             i iVar = arrayList.get(i);
@@ -70,7 +70,7 @@ public class a extends d {
 
     @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
-        float fA = com.censivn.C3DEngine.b.b.a.a(0.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(0.0f);
         com.censivn.C3DEngine.b.g.d dVar = null;
         int i = 0;
         while (i < aVar.a()) {

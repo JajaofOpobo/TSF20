@@ -17,7 +17,7 @@ public class B extends j {
         a(new j.a() { // from class: com.tsf.shell.f.h.a.b.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.b.1.1
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.b.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.h();
@@ -58,7 +58,7 @@ public class B extends j {
     }
 
     public void h() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
         builder.setTitle(b.i.text_direction);
         builder.setSingleChoiceItems(new String[]{x.c(b.i.text_top), x.c(b.i.text_bottom)}, this.a, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.h.a.b.2
             @Override // android.content.DialogInterface.OnClickListener
@@ -71,7 +71,7 @@ public class B extends j {
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (b.this.a != b.this.b) {
                     b.this.a = b.this.b;
-                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.b.3.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.b.3.1
                         @Override // java.lang.Runnable
                         public void run() {
                             b.this.m();

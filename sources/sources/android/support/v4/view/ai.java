@@ -35,7 +35,7 @@ public final class ai {
 
         void a(View view, PorterDuff.Mode mode);
 
-        void a(View view, android.support.v4.view.a aVar);
+        void a(View view, A aVar);
 
         void a(View view, ab abVar);
 
@@ -127,42 +127,42 @@ public final class ai {
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean a(View view, int i) {
             return (view instanceof ae) && a((ae) view, i);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean b(View view, int i) {
             return (view instanceof ae) && b((ae) view, i);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int a(View view) {
             return 2;
         }
 
-        @Override // android.support.v4.view.ai.m
-        public void a(View view, android.support.v4.view.a aVar) {
+        @Override // Ai.m
+        public void a(View view, A aVar) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void b(View view) {
             view.invalidate();
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, int i, int i2, int i3, int i4) {
             view.invalidate(i, i2, i3, i4);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, Runnable runnable) {
             view.postDelayed(runnable, a());
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, Runnable runnable, long j) {
             view.postDelayed(runnable, a() + j);
         }
@@ -171,155 +171,155 @@ public final class ai {
             return 10L;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int c(View view) {
             return 0;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void c(View view, int i) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, int i, Paint paint) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int d(View view) {
             return 0;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, Paint paint) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int e(View view) {
             return 0;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public ViewParent f(View view) {
             return view.getParent();
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean g(View view) {
             Drawable background = view.getBackground();
             return background != null && background.getOpacity() == -1;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int a(int i, int i2, int i3) {
             return View.resolveSize(i, i2);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int h(View view) {
             return view.getMeasuredWidth();
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int i(View view) {
             return 0;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean j(View view) {
             return true;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public float k(View view) {
             return 0.0f;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public float l(View view) {
             return 0.0f;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int m(View view) {
             return aj.d(view);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public bb n(View view) {
             return new bb(view);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, float f) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void b(View view, float f) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void c(View view, float f) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void d(View view, float f) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public int o(View view) {
             return 0;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void p(View view) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void e(View view, float f) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public float q(View view) {
             return 0.0f;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(ViewGroup viewGroup, boolean z) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean r(View view) {
             return false;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void s(View view) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, ab abVar) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public bi a(View view, bi biVar) {
             return biVar;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public bi b(View view, bi biVar) {
             return biVar;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, boolean z) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void b(View view, boolean z) {
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean t(View view) {
             if (view instanceof x) {
                 return ((x) view).isNestedScrollingEnabled();
@@ -327,22 +327,22 @@ public final class ai {
             return false;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public ColorStateList u(View view) {
             return aj.a(view);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, ColorStateList colorStateList) {
             aj.a(view, colorStateList);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, PorterDuff.Mode mode) {
             aj.a(view, mode);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public PorterDuff.Mode v(View view) {
             return aj.b(view);
         }
@@ -366,38 +366,38 @@ public final class ai {
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void w(View view) {
             if (view instanceof x) {
                 ((x) view).stopNestedScroll();
             }
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean x(View view) {
             return aj.c(view);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean y(View view) {
             return aj.e(view);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public boolean z(View view) {
             return false;
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void a(View view, int i, int i2) {
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void d(View view, int i) {
             aj.b(view, i);
         }
 
-        @Override // android.support.v4.view.ai.m
+        @Override // Ai.m
         public void e(View view, int i) {
             aj.a(view, i);
         }
@@ -407,12 +407,12 @@ public final class ai {
         b() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean g(View view) {
             return ak.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(ViewGroup viewGroup, boolean z) {
             ak.a(viewGroup, z);
         }
@@ -422,7 +422,7 @@ public final class ai {
         c() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int a(View view) {
             return al.a(view);
         }
@@ -432,93 +432,93 @@ public final class ai {
         d() {
         }
 
-        @Override // android.support.v4.view.ai.a
+        @Override // Ai.a
         long a() {
             return am.a();
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, int i, Paint paint) {
             am.a(view, i, paint);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int d(View view) {
             return am.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, Paint paint) {
             a(view, d(view), paint);
             view.invalidate();
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int a(int i, int i2, int i3) {
             return am.a(i, i2, i3);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int h(View view) {
             return am.b(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int i(View view) {
             return am.c(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public float k(View view) {
             return am.d(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, float f) {
             am.a(view, f);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void b(View view, float f) {
             am.b(view, f);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void c(View view, float f) {
             am.c(view, f);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void d(View view, float f) {
             am.d(view, f);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public float l(View view) {
             return am.e(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void s(View view) {
             am.f(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, boolean z) {
             am.a(view, z);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void b(View view, boolean z) {
             am.b(view, z);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void d(View view, int i) {
             am.b(view, i);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void e(View view, int i) {
             am.a(view, i);
         }
@@ -530,22 +530,22 @@ public final class ai {
         f() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean a(View view, int i) {
             return an.a(view, i);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean b(View view, int i) {
             return an.b(view, i);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
-        public void a(View view, android.support.v4.view.a aVar) {
+        @Override // Ai.a, Ai.m
+        public void a(View view, A aVar) {
             an.a(view, aVar == null ? null : aVar.a());
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public bb n(View view) {
             if (this.a == null) {
                 this.a = new WeakHashMap<>();
@@ -564,7 +564,7 @@ public final class ai {
         e() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean z(View view) {
             return ao.a(view);
         }
@@ -574,32 +574,32 @@ public final class ai {
         g() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void b(View view) {
             ap.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, int i, int i2, int i3, int i4) {
             ap.a(view, i, i2, i3, i4);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, Runnable runnable) {
             ap.a(view, runnable);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, Runnable runnable, long j) {
             ap.a(view, runnable, j);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int c(View view) {
             return ap.b(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void c(View view, int i) {
             if (i == 4) {
                 i = 2;
@@ -607,27 +607,27 @@ public final class ai {
             ap.a(view, i);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public ViewParent f(View view) {
             return ap.c(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int m(View view) {
             return ap.d(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void p(View view) {
             ap.e(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean r(View view) {
             return ap.f(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean j(View view) {
             return ap.g(view);
         }
@@ -637,17 +637,17 @@ public final class ai {
         h() {
         }
 
-        @Override // android.support.v4.view.ai.d, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.d, Ai.a, Ai.m
         public void a(View view, Paint paint) {
             aq.a(view, paint);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int e(View view) {
             return aq.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public int o(View view) {
             return aq.b(view);
         }
@@ -662,17 +662,17 @@ public final class ai {
         j() {
         }
 
-        @Override // android.support.v4.view.ai.g, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.g, Ai.a, Ai.m
         public void c(View view, int i) {
             ap.a(view, i);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean x(View view) {
             return ar.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean y(View view) {
             return ar.b(view);
         }
@@ -682,72 +682,72 @@ public final class ai {
         k() {
         }
 
-        @Override // android.support.v4.view.ai.g, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.g, Ai.a, Ai.m
         public void p(View view) {
             as.a(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void e(View view, float f) {
             as.a(view, f);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public float q(View view) {
             return as.b(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, ab abVar) {
             as.a(view, abVar);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public boolean t(View view) {
             return as.e(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void w(View view) {
             as.f(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public ColorStateList u(View view) {
             return as.c(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, ColorStateList colorStateList) {
             as.a(view, colorStateList);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, PorterDuff.Mode mode) {
             as.a(view, mode);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public PorterDuff.Mode v(View view) {
             return as.d(view);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public bi a(View view, bi biVar) {
             return as.a(view, biVar);
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public bi b(View view, bi biVar) {
             return as.b(view, biVar);
         }
 
-        @Override // android.support.v4.view.ai.d, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.d, Ai.a, Ai.m
         public void d(View view, int i) {
             as.b(view, i);
         }
 
-        @Override // android.support.v4.view.ai.d, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.d, Ai.a, Ai.m
         public void e(View view, int i) {
             as.a(view, i);
         }
@@ -757,17 +757,17 @@ public final class ai {
         l() {
         }
 
-        @Override // android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.a, Ai.m
         public void a(View view, int i, int i2) {
             at.a(view, i, i2);
         }
 
-        @Override // android.support.v4.view.ai.k, android.support.v4.view.ai.d, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.k, Ai.d, Ai.a, Ai.m
         public void d(View view, int i) {
             at.b(view, i);
         }
 
-        @Override // android.support.v4.view.ai.k, android.support.v4.view.ai.d, android.support.v4.view.ai.a, android.support.v4.view.ai.m
+        @Override // Ai.k, Ai.d, Ai.a, Ai.m
         public void e(View view, int i) {
             at.a(view, i);
         }
@@ -828,7 +828,7 @@ public final class ai {
         return a.a(view);
     }
 
-    public static void a(View view, android.support.v4.view.a aVar) {
+    public static void a(View view, A aVar) {
         a.a(view, aVar);
     }
 

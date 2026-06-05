@@ -66,7 +66,7 @@ public class a extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void draw() {
         if (this.k) {
-            com.censivn.C3DEngine.a.e().a(this);
+            com.censivn.C3DEngine.A.e().a(this);
             updateTextureState();
             ShaderColorTexture shaderColorTexture = ShaderManager.SHADER_COLOR_TEXTURE;
             ShaderManager.enableShader(shaderColorTexture);
@@ -154,104 +154,105 @@ public class a extends j {
             bVar.d = bVar.b + i13;
             this.f.add(bVar);
         }
+        final com.censivn.C3DEngine.b.f.a.a self = this;
         this.j = new com.censivn.C3DEngine.b.d.a(this.g == null ? this : this.g) { // from class: com.censivn.C3DEngine.b.f.a.a.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
-                a.this.e = a.this.a(fArrA[0], fArrA[1]);
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.e(motionEvent);
+                self.e = self.a(fArrA[0], fArrA[1]);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.e(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.f(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.f(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void g(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.g(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.g(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.a(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void k(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.k(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.k(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void b(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.b(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.b(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void c(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.c(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.c(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void d(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.d(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.d(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent, motionEvent2, f7, f8);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.a(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent, motionEvent2);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.a(motionEvent, motionEvent2);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.b(motionEvent, motionEvent2, f7, f8);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.b(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void h(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.h(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.h(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void i(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.i(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.i(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void j(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.j(motionEvent);
+                if (self.e != null && self.e.l != null) {
+                    self.e.l.j(motionEvent);
                 }
             }
         };

@@ -90,17 +90,17 @@ public class ThemeMoreInfoLayout extends j {
         float[] fArr;
         if (this.mThemeInfo.packagename.equals(com.censivn.C3DEngine.a.b())) {
             this.mUninstall.visible(false);
-            fArr = new float[]{com.censivn.C3DEngine.b.b.a.a(170.0f), com.censivn.C3DEngine.b.b.a.a(70.0f), com.censivn.C3DEngine.b.b.a.a(-10.0f), com.censivn.C3DEngine.b.b.a.a(-70.0f), com.censivn.C3DEngine.b.b.a.a(-250.0f), com.censivn.C3DEngine.b.b.a.a(-250.0f)};
+            fArr = new float[]{com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(-10.0f), com.censivn.C3DEngine.b.b.A.a(-70.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f)};
         } else {
             this.mUninstall.visible(true);
-            fArr = new float[]{com.censivn.C3DEngine.b.b.a.a(170.0f), com.censivn.C3DEngine.b.b.a.a(70.0f), com.censivn.C3DEngine.b.b.a.a(-10.0f), com.censivn.C3DEngine.b.b.a.a(-70.0f), com.censivn.C3DEngine.b.b.a.a(-200.0f), com.censivn.C3DEngine.b.b.a.a(-300.0f)};
+            fArr = new float[]{com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(-10.0f), com.censivn.C3DEngine.b.b.A.a(-70.0f), com.censivn.C3DEngine.b.b.A.a(-200.0f), com.censivn.C3DEngine.b.b.A.a(-300.0f)};
         }
         i[] iVarArr = {this.mIcon, this.mTitleView, this.mAuthorView, this.mLinkView, this.mCheckUpdate, this.mUninstall};
         for (int i = 0; i < fArr.length; i++) {
             float f = fArr[i];
             i iVar = iVarArr[i];
             iVar.alpha(0.0f);
-            iVar.position().y = f - com.censivn.C3DEngine.b.b.a.a(150.0f);
+            iVar.position().y = f - com.censivn.C3DEngine.b.b.A.a(150.0f);
             d dVar = new d();
             dVar.h(f);
             dVar.a(com.censivn.C3DEngine.b.g.a.e);

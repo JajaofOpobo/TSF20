@@ -8,7 +8,7 @@ public class A {
 
     public static void a(String str) {
         if (a == null) {
-            a = new ProgressDialog(com.censivn.C3DEngine.a.d());
+            a = new ProgressDialog(com.censivn.C3DEngine.A.d());
             a.setIndeterminate(true);
             a.setCancelable(false);
         }

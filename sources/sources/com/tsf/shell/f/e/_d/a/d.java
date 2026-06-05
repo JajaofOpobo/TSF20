@@ -26,12 +26,12 @@ public class d {
 
     public void a(ArrayList<c.C0092c> arrayList) {
         c.b bVar = new c.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(-80.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.a.a(150.0f);
-        bVar.c = com.censivn.C3DEngine.b.b.a.a(65.0f);
-        bVar.d = com.censivn.C3DEngine.b.b.a.a(30.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(-80.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.A.a(150.0f);
+        bVar.c = com.censivn.C3DEngine.b.b.A.a(65.0f);
+        bVar.d = com.censivn.C3DEngine.b.b.A.a(30.0f);
         bVar.e = 45;
-        bVar.f = com.censivn.C3DEngine.b.b.a.a(80.0f);
+        bVar.f = com.censivn.C3DEngine.b.b.A.a(80.0f);
         this.c.a(arrayList, bVar);
     }
 
@@ -101,19 +101,19 @@ public class d {
                     d.this.g();
                 }
             };
-            dVar.f(this.c.c() + com.censivn.C3DEngine.b.b.a.a(100.0f));
+            dVar.f(this.c.c() + com.censivn.C3DEngine.b.b.A.a(100.0f));
             dVar.a(50);
             dVar.a(com.censivn.C3DEngine.b.g.a.a);
             com.censivn.C3DEngine.b.g.c.a(this.d);
             com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
-            this.a.a(this.c.c() + com.censivn.C3DEngine.b.b.a.a(100.0f));
+            this.a.a(this.c.c() + com.censivn.C3DEngine.b.b.A.a(100.0f));
             f();
         }
     }
 
     public void k() {
         this.a.c();
-        this.c.position().x = com.censivn.C3DEngine.b.b.a.z;
-        this.c.position().y = com.censivn.C3DEngine.b.b.a.B;
+        this.c.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.c.position().y = com.censivn.C3DEngine.b.b.A.B;
     }
 }

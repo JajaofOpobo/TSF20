@@ -54,14 +54,14 @@ public class c {
         public void a() {
             if (this.id == 0) {
                 Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(null, "TSF Launcher", x.a(this.a, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I), com.tsf.shell.manager.o.b.c, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I, false);
-                com.censivn.C3DEngine.a.g().a(this, bitmapCreateTextureBitmap);
+                com.censivn.C3DEngine.A.g().a(this, bitmapCreateTextureBitmap);
                 bitmapCreateTextureBitmap.recycle();
             }
         }
 
         public void b() {
             if (this.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this);
+                com.censivn.C3DEngine.A.g().a(this);
             }
         }
     }

@@ -11,15 +11,15 @@ import com.tsf.shell.utils.x;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends j {
     private static com.tsf.shell.manager.o._a.a e;
-    private static final float g = 24.0f * com.censivn.C3DEngine.b.b.a.c;
+    private static final float g = 24.0f * com.censivn.C3DEngine.b.b.A.c;
     private k a;
     private String b;
     private TextureElement d;
     private com.tsf.shell.f.e.k f;
     private int h;
     private boolean c = false;
-    private int i = (int) com.censivn.C3DEngine.b.b.a.a(30.0f);
-    private int j = (int) com.censivn.C3DEngine.b.b.a.a(10.0f);
+    private int i = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
+    private int j = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
 
     public e(int i) {
         this.h = 0;
@@ -80,7 +80,7 @@ public class e extends j {
 
     public void f() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
     }
 
@@ -96,7 +96,7 @@ public class e extends j {
 
     public void i() {
         if (this.d.id == 0) {
-            int i = (int) (80.0f * com.censivn.C3DEngine.b.b.a.c);
+            int i = (int) (80.0f * com.censivn.C3DEngine.b.b.A.c);
             Bitmap bitmapB = e.b(this.b);
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.h == 0 ? (int) ((g * 2.0f) + bitmapB.getWidth()) : (int) ((g * 2.0f) + this.j + bitmapB.getWidth() + this.i), i, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
@@ -109,14 +109,14 @@ public class e extends j {
             }
             canvas.drawBitmap(bitmapB, i2, (i - bitmapB.getHeight()) / 2, (Paint) null);
             bitmapB.recycle();
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapCreateBitmap);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
             this.a.a(this.d.width);
             this.a.b(this.d.height);
             calAABB(1.0f, 2.0f, 1.0f);
             if (this.f != null) {
-                this.f.position().y = com.censivn.C3DEngine.b.b.a.a(17.0f);
-                this.f.position().x = (this.d.width / 2) - com.censivn.C3DEngine.b.b.a.a(10.0f);
+                this.f.position().y = com.censivn.C3DEngine.b.b.A.a(17.0f);
+                this.f.position().x = (this.d.width / 2) - com.censivn.C3DEngine.b.b.A.a(10.0f);
             }
         }
     }

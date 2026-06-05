@@ -66,7 +66,7 @@ public class a extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void draw() {
         if (this.k) {
-            com.censivn.C3DEngine.a.e().a(this);
+            com.censivn.C3DEngine.A.e().a(this);
             updateTextureState();
             ShaderColorTexture shaderColorTexture = ShaderManager.SHADER_COLOR_TEXTURE;
             ShaderManager.enableShader(shaderColorTexture);

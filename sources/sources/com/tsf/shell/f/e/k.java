@@ -12,7 +12,7 @@ public class k extends com.censivn.C3DEngine.b.f.k {
     public k() {
         super(1.0f, 1.0f);
         this.d = new TextureElement(0, false);
-        this.a = (int) com.censivn.C3DEngine.b.b.a.a(22.0f);
+        this.a = (int) com.censivn.C3DEngine.b.b.A.a(22.0f);
         a(this.a);
         b(this.a);
         textures().addElement(this.d);
@@ -28,14 +28,14 @@ public class k extends com.censivn.C3DEngine.b.f.k {
         if (this.d.id == 0) {
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.a, this.a, Bitmap.Config.ARGB_8888);
             com.tsf.shell.utils.q.a(new Canvas(bitmapCreateBitmap), 10.0f, 1.0f, 1.0f, -49152);
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapCreateBitmap);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
         }
     }
 
     public void a() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
     }
 }

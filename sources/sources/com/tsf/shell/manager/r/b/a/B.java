@@ -33,12 +33,12 @@ public class B extends j {
     }
 
     public void d() {
-        this.b = new k(com.censivn.C3DEngine.b.b.a.a(24.0f), com.censivn.C3DEngine.b.b.a.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.a.b.1
+        this.b = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.a.b.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (b.this.a.id == 0) {
                     Bitmap bitmapA = x.a(b.d.scrollcontainer_arrow);
-                    com.censivn.C3DEngine.a.g().a(b.this.a, bitmapA);
+                    com.censivn.C3DEngine.A.g().a(b.this.a, bitmapA);
                     bitmapA.recycle();
                 }
             }
@@ -95,13 +95,13 @@ public class B extends j {
     }
 
     public void a(float f, float f2, float f3, float f4) {
-        this.b.position().x = com.censivn.C3DEngine.b.b.a.a(20.0f) + f + com.censivn.C3DEngine.b.b.a.a(12.0f);
-        this.c.position().x = this.b.position().x + com.censivn.C3DEngine.b.b.a.a(12.0f) + com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.b.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + f + com.censivn.C3DEngine.b.b.A.a(12.0f);
+        this.c.position().x = this.b.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(20.0f);
         h();
     }
 
     public void e() {
-        com.censivn.C3DEngine.a.g().a(this.a);
+        com.censivn.C3DEngine.A.g().a(this.a);
     }
 
     public void a(i iVar) {
@@ -114,7 +114,7 @@ public class B extends j {
     }
 
     private void h() {
-        float fA = com.censivn.C3DEngine.b.b.a.a(30.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(30.0f);
         float f = (-((this.d.b() + this.e.b()) + fA)) / 2.0f;
         this.d.position().x = (this.d.b() / 2.0f) + f;
         float fB = fA + this.d.b() + f;

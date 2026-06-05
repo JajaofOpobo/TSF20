@@ -28,26 +28,26 @@ public class A {
         a = activity;
         DisplayMetrics displayMetrics = new DisplayMetrics();
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        com.censivn.C3DEngine.b.b.a.e = displayMetrics.density;
-        float f2 = com.censivn.C3DEngine.b.b.a.e / 3.0f;
-        b.b = com.censivn.C3DEngine.b.b.a.e - (1.5f * f2);
-        b.a = (f2 * 1.5f) + com.censivn.C3DEngine.b.b.a.e;
+        com.censivn.C3DEngine.b.b.A.e = displayMetrics.density;
+        float f2 = com.censivn.C3DEngine.b.b.A.e / 3.0f;
+        b.b = com.censivn.C3DEngine.b.b.A.e - (1.5f * f2);
+        b.a = (f2 * 1.5f) + com.censivn.C3DEngine.b.b.A.e;
         if (b.b < 0.8f) {
             b.b = 0.8f;
         }
         float fAj = com.tsf.shell.manager.b.e.aj();
         if (fAj == 0.0f) {
-            com.censivn.C3DEngine.b.b.a.d = displayMetrics.density;
+            com.censivn.C3DEngine.b.b.A.d = displayMetrics.density;
         } else {
-            com.censivn.C3DEngine.b.b.a.d = fAj;
+            com.censivn.C3DEngine.b.b.A.d = fAj;
         }
-        if (com.censivn.C3DEngine.b.b.a.d < 0.8f) {
-            com.censivn.C3DEngine.b.b.a.d = 0.8f;
+        if (com.censivn.C3DEngine.b.b.A.d < 0.8f) {
+            com.censivn.C3DEngine.b.b.A.d = 0.8f;
         }
-        com.censivn.C3DEngine.b.b.a.f = com.censivn.C3DEngine.b.b.a.d / com.censivn.C3DEngine.b.b.a.e;
-        com.censivn.C3DEngine.b.b.a.b = com.censivn.C3DEngine.b.b.a.d / 2.0f;
-        com.censivn.C3DEngine.b.b.a.c = com.censivn.C3DEngine.b.b.a.d / 3.0f;
-        com.censivn.C3DEngine.b.b.a.a = com.censivn.C3DEngine.b.b.a.d / 1.5f;
+        com.censivn.C3DEngine.b.b.A.f = com.censivn.C3DEngine.b.b.A.d / com.censivn.C3DEngine.b.b.A.e;
+        com.censivn.C3DEngine.b.b.A.b = com.censivn.C3DEngine.b.b.A.d / 2.0f;
+        com.censivn.C3DEngine.b.b.A.c = com.censivn.C3DEngine.b.b.A.d / 3.0f;
+        com.censivn.C3DEngine.b.b.A.a = com.censivn.C3DEngine.b.b.A.d / 1.5f;
     }
 
     public static void a(c cVar) {

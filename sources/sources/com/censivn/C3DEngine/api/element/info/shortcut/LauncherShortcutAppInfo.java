@@ -25,7 +25,7 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public void reloadTexture() {
         if (this.texture.id != 0 && getWidget() != null) {
-            com.censivn.C3DEngine.a.g().a(this.texture, com.tsf.shell.manager.r.c.a.a(this, ((g) getWidget()).n, ((g) getWidget()).bd()));
+            com.censivn.C3DEngine.A.g().a(this.texture, com.tsf.shell.manager.r.c.a.a(this, ((g) getWidget()).n, ((g) getWidget()).bd()));
         }
         if (getWidget() != null) {
             getWidget().C();
@@ -34,14 +34,14 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, f fVar) {
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.isCustomTexture()) {
-            com.censivn.C3DEngine.a.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.a.a(launcherShortcutAppInfo, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.a.a(launcherShortcutAppInfo, aVar, fVar));
             return launcherShortcutAppInfo.texture;
         }
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.texture.id != 0) {
-            com.censivn.C3DEngine.a.g().a(launcherShortcutAppInfo.texture);
+            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture);
         }
         if (fVar.d.id == 0) {
-            com.censivn.C3DEngine.a.g().a(fVar.d, com.tsf.shell.manager.r.c.a.a(null, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(fVar.d, com.tsf.shell.manager.r.c.a.a(null, aVar, fVar));
         }
         return fVar.d;
     }

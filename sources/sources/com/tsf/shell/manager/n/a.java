@@ -102,14 +102,14 @@ public class a implements e.a {
     public void a(j jVar) {
         this.a = jVar;
         this.b = new j();
-        this.e = 100.0f * com.censivn.C3DEngine.b.b.a.c;
-        this.c = new h(com.censivn.C3DEngine.b.b.a.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.a.1
+        this.e = 100.0f * com.censivn.C3DEngine.b.b.A.c;
+        this.c = new h(com.censivn.C3DEngine.b.b.A.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.a.1
             @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
             public void draw() {
                 if (a.this.c.getAnimationObjectState() || a.this.r) {
                     a.this.c();
                 }
-                com.censivn.C3DEngine.a.e().a(this);
+                com.censivn.C3DEngine.A.e().a(this);
                 updateTextureState();
                 ShaderColor shaderColor = ShaderManager.SHADER_COLOR;
                 ShaderManager.enableShader(shaderColor);
@@ -167,9 +167,9 @@ public class a implements e.a {
                     a.this.b(c0133a);
                 }
             };
-            com.censivn.C3DEngine.a.a().b(runnable, i2);
+            com.censivn.C3DEngine.A.a().b(runnable, i2);
             if (c0133a.a != null) {
-                com.censivn.C3DEngine.a.a().g(c0133a.a);
+                com.censivn.C3DEngine.A.a().g(c0133a.a);
             }
             c0133a.a = runnable;
         }
@@ -185,7 +185,7 @@ public class a implements e.a {
             }
             this.p.remove(c0133a);
             if (this.p.isEmpty()) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.n.a.3
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.n.a.3
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.e();
@@ -208,11 +208,11 @@ public class a implements e.a {
             com.tsf.shell.manager.a.b.a(this);
             this.b.removeFromParent();
             this.a.addChild(this.b);
-            this.c.a(com.censivn.C3DEngine.b.b.a.D);
+            this.c.a(com.censivn.C3DEngine.b.b.A.D);
             this.d = com.tsf.shell.manager.a.b.c();
             if (!this.d) {
-                this.b.position().y = com.censivn.C3DEngine.b.b.a.I;
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.4
+                this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.4
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!com.tsf.shell.manager.a.b.c()) {
@@ -221,7 +221,7 @@ public class a implements e.a {
                     }
                 });
             } else {
-                this.b.position().y = com.censivn.C3DEngine.b.b.a.I;
+                this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
             }
             this.r = true;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.a.5
@@ -241,7 +241,7 @@ public class a implements e.a {
         if (this.t && this.p.isEmpty()) {
             this.t = false;
             if (!this.d) {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.6
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.6
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!com.tsf.shell.manager.a.b.c()) {
@@ -268,8 +268,8 @@ public class a implements e.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.b.position().y = com.tsf.shell.manager.a.b.c() ? com.censivn.C3DEngine.b.b.a.B : com.censivn.C3DEngine.b.b.a.B + com.censivn.C3DEngine.b.b.a.J;
-        this.c.a(com.censivn.C3DEngine.b.b.a.D);
+        this.b.position().y = com.tsf.shell.manager.a.b.c() ? com.censivn.C3DEngine.b.b.A.B : com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.J;
+        this.c.a(com.censivn.C3DEngine.b.b.A.D);
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.n.a$a, reason: collision with other inner class name */
@@ -286,7 +286,7 @@ public class a implements e.a {
                 this.g = false;
                 System.currentTimeMillis();
                 Bitmap bitmapB = a.this.s.b(this.f);
-                com.censivn.C3DEngine.a.g().a(this.e, bitmapB);
+                com.censivn.C3DEngine.A.g().a(this.e, bitmapB);
                 bitmapB.recycle();
                 a(this.e.width);
                 b(this.e.height);
@@ -298,7 +298,7 @@ public class a implements e.a {
             this.e = new TextureElement(0, false);
             this.f = "";
             this.g = false;
-            position().y = 100.0f * com.censivn.C3DEngine.b.b.a.c;
+            position().y = 100.0f * com.censivn.C3DEngine.b.b.A.c;
             alpha(0.0f);
             textures().addElement(this.e);
             a(str);
@@ -342,7 +342,7 @@ public class a implements e.a {
                 }
             };
             dVar.a(0);
-            dVar.h(100.0f * com.censivn.C3DEngine.b.b.a.c);
+            dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
             c.a(this);
             c.a(this, 500, dVar);
             a.this.a();
@@ -351,7 +351,7 @@ public class a implements e.a {
         public void d() {
             removeFromParent();
             if (this.e.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.e);
+                com.censivn.C3DEngine.A.g().a(this.e);
             }
             this.f = "";
         }

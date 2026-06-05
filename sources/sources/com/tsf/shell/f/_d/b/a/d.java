@@ -43,7 +43,7 @@ public class d extends com.tsf.shell.f.f.f {
                     Canvas canvas = new Canvas(bitmapA);
                     canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
                     com.tsf.shell.manager.o.b.a.a(canvas, x.a(b.d.effect_icon_standard, com.tsf.shell.manager.o.b.a.H, com.tsf.shell.manager.o.b.a.I), true);
-                    com.censivn.C3DEngine.a.g().a(d.b, bitmapA);
+                    com.censivn.C3DEngine.A.g().a(d.b, bitmapA);
                 }
                 d.this.a(this);
             }
@@ -52,7 +52,7 @@ public class d extends com.tsf.shell.f.f.f {
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);
-                com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.a.a(30.0f));
+                com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.A.a(30.0f));
             }
         };
         hVar.f((float) (Math.random() * 200.0d));
@@ -62,7 +62,7 @@ public class d extends com.tsf.shell.f.f.f {
 
     public void d() {
         if (b.id != 0) {
-            com.censivn.C3DEngine.a.g().a(b);
+            com.censivn.C3DEngine.A.g().a(b);
         }
     }
 

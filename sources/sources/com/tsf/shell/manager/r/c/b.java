@@ -52,7 +52,7 @@ public class b {
         com.tsf.shell.e.a(b.i.notic_widget_animation_enable, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.b.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.b.1.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.b.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.manager.a.i.b().a(true);

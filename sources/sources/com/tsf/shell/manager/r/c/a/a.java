@@ -67,7 +67,7 @@ public class a {
 
     public static void a(ItemInfo itemInfo) {
         b.a(itemInfo);
-        com.tsf.shell.e.a(com.censivn.C3DEngine.a.d().getString(b.i.notic_load_widget_error_unknow));
+        com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.notic_load_widget_error_unknow));
     }
 
     public static void a(g gVar, ItemInfo itemInfo, boolean z, AbstractC0146a abstractC0146a) {
@@ -84,11 +84,11 @@ public class a {
     private static void b(final g gVar, final ItemInfo itemInfo, final boolean z, final AbstractC0146a abstractC0146a) {
         final String str = gVar.a;
         try {
-            Class clsLoadClass = new PathClassLoader(com.censivn.C3DEngine.a.d().getPackageManager().getApplicationInfo(str, 0).sourceDir, a).loadClass(gVar.b);
+            Class clsLoadClass = new PathClassLoader(com.censivn.C3DEngine.A.d().getPackageManager().getApplicationInfo(str, 0).sourceDir, a).loadClass(gVar.b);
             final Object objNewInstance = clsLoadClass.newInstance();
-            Context contextD = com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
-            com.censivn.C3DEngine.a.d();
+            Context contextD = com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
+            com.censivn.C3DEngine.A.d();
             final Context contextCreatePackageContext = contextD.createPackageContext(str, 3);
             final Method method = clsLoadClass.getMethod("getWidget", Context.class, Integer.class);
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.r.c.a.a.1
@@ -124,7 +124,7 @@ public class a {
             if (com.censivn.C3DEngine.a.e.l()) {
                 runnable.run();
             } else {
-                com.censivn.C3DEngine.a.a().c(runnable);
+                com.censivn.C3DEngine.A.a().c(runnable);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -147,7 +147,7 @@ public class a {
                         aVar = new com.tsf.shell.f.i.b.a.b(itemInfo);
                     } else if (!gVar.b.equals(com.tsf.shell.f.i.b.c.a.class.getName())) {
                         Class<?> clsLoadClass = a.a.loadClass(gVar.b);
-                        aVar = (com.tsf.shell.f.i.B) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.a.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
+                        aVar = (com.tsf.shell.f.i.B) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.A.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         aVar.a(itemInfo);
                     } else {
                         aVar = new com.tsf.shell.f.i.b.c.a(itemInfo);
@@ -178,7 +178,7 @@ public class a {
         if (com.censivn.C3DEngine.a.e.l()) {
             runnable.run();
         } else {
-            com.censivn.C3DEngine.a.a().c(runnable);
+            com.censivn.C3DEngine.A.a().c(runnable);
         }
     }
 }

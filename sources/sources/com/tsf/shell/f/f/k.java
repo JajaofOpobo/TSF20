@@ -9,7 +9,7 @@ public class k extends g {
     private com.censivn.C3DEngine.b.h.b.c l;
 
     public k() {
-        this.b = new com.tsf.shell.e.d(com.censivn.C3DEngine.a.d(), this.a);
+        this.b = new com.tsf.shell.e.d(com.censivn.C3DEngine.A.d(), this.a);
     }
 
     @Override // com.tsf.shell.f.f.g
@@ -23,7 +23,7 @@ public class k extends g {
     }
 
     public void a() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.k.1
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.k.1
             @Override // java.lang.Runnable
             public void run() {
                 Home.b().l().addView(k.this.b);
@@ -32,7 +32,7 @@ public class k extends g {
     }
 
     public void aj() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.k.2
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.k.2
             @Override // java.lang.Runnable
             public void run() {
                 Home.b().l().removeView(k.this.b);
@@ -67,7 +67,7 @@ public class k extends g {
 
     public void a(c.a aVar) {
         this.l = new com.censivn.C3DEngine.b.h.b.c(this, false, aVar);
-        int i = ((int) (((double) (com.censivn.C3DEngine.b.b.a.D > com.censivn.C3DEngine.b.b.a.E ? com.censivn.C3DEngine.b.b.a.E : com.censivn.C3DEngine.b.b.a.D)) * 0.9d)) / 2;
+        int i = ((int) (((double) (com.censivn.C3DEngine.b.b.A.D > com.censivn.C3DEngine.b.b.A.E ? com.censivn.C3DEngine.b.b.A.E : com.censivn.C3DEngine.b.b.A.D)) * 0.9d)) / 2;
         this.l.a(i, i);
         this.l.scale().setAll(0.5f, 0.5f, 1.0f);
         this.l.alpha(0.0f);

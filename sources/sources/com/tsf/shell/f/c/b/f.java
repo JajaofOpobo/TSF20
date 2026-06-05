@@ -28,7 +28,7 @@ public class f extends c {
             a(0.0f, c0084aL.l);
             c().rotation().z = 135.0f;
         }
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.1
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.1
             @Override // java.lang.Runnable
             public void run() {
                 f.this.m();
@@ -39,14 +39,14 @@ public class f extends c {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         a(false);
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.2
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.2
             @Override // java.lang.Runnable
             public void run() {
                 f.this.a.k();
                 f.this.f();
             }
         }, 500L);
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.3
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.f.3
             @Override // java.lang.Runnable
             public void run() {
                 f.this.k();

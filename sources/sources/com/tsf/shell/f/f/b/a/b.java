@@ -132,11 +132,11 @@ public class b extends d {
         float f3;
         int i2 = h.p;
         int i3 = h.q;
-        int i4 = com.censivn.C3DEngine.b.b.a.F;
-        int i5 = com.censivn.C3DEngine.b.b.a.G;
+        int i4 = com.censivn.C3DEngine.b.b.A.F;
+        int i5 = com.censivn.C3DEngine.b.b.A.G;
         float f4 = com.tsf.shell.manager.o.b.a.H;
         float f5 = com.tsf.shell.manager.o.b.a.I;
-        float fA = this.c ? com.censivn.C3DEngine.b.b.a.a(100.0f) : 0.0f;
+        float fA = this.c ? com.censivn.C3DEngine.b.b.A.a(100.0f) : 0.0f;
         int size = arrayList.size();
         float f6 = ((-i4) / 2.0f) + (f4 / 2.0f);
         float f7 = (i4 - f4) / (i2 - 1);
@@ -231,7 +231,7 @@ public class b extends d {
     @Override // com.tsf.shell.f.f.b.a.d, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
-        float f = com.censivn.C3DEngine.b.b.a.c * 25.0f;
+        float f = com.censivn.C3DEngine.b.b.A.c * 25.0f;
         for (int i = 0; i < aVar.a(); i++) {
             com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.d();

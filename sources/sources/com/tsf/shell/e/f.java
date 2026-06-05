@@ -147,7 +147,7 @@ public class f extends ViewGroup {
             case 0:
                 this.o = false;
                 Home.b().a(motionEvent.getX(), motionEvent.getY());
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.e.f.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.f.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.censivn.C3DEngine.a.d.d().i();

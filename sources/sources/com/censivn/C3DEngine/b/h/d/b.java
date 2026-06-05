@@ -67,7 +67,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.a {
 
     public void c() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.f);
+            com.censivn.C3DEngine.A.g().a(this.f);
         }
     }
 
@@ -241,7 +241,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.a {
     public void f() {
         if (this.f.id == 0) {
             Bitmap bitmapA = this.l.a();
-            com.censivn.C3DEngine.a.g().a(this.f, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.f, bitmapA);
             bitmapA.recycle();
         }
     }

@@ -14,7 +14,7 @@ public class d implements b.a, c.a {
     public static int b;
     public static int c;
     private com.tsf.shell.f.h.a.c d;
-    private com.censivn.C3DEngine.b.b.a.b e;
+    private com.censivn.C3DEngine.b.b.A.b e;
     private e f;
     private A g;
     private f h;
@@ -26,8 +26,8 @@ public class d implements b.a, c.a {
 
     public d(com.tsf.shell.f.h.a.c cVar) {
         this.d = cVar;
-        a = (int) com.censivn.C3DEngine.b.b.a.a(170.0f);
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(550.0f);
+        a = (int) com.censivn.C3DEngine.b.b.A.a(170.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(550.0f);
         c = iA;
         b = iA;
         this.f = new e(this) { // from class: com.tsf.shell.f.h.a.a.d.1
@@ -37,11 +37,11 @@ public class d implements b.a, c.a {
                 d.this.d.u();
             }
         };
-        this.e = new com.censivn.C3DEngine.b.b.a.b();
+        this.e = new com.censivn.C3DEngine.b.b.A.b();
         this.i = new com.tsf.shell.f.h.a.a.a.c(this, cVar.c());
         this.g = new A();
         this.h = new f();
-        this.e.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.a.a(180.0f));
+        this.e.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(180.0f));
     }
 
     public void a(int i) {
@@ -78,14 +78,14 @@ public class d implements b.a, c.a {
         if (z) {
             if (this.m.id == 0) {
                 Bitmap defaultBitmap = ThemeManager.mix.contact.getDefaultBitmap(b, b, true);
-                com.censivn.C3DEngine.a.g().a(this.m, defaultBitmap);
+                com.censivn.C3DEngine.A.g().a(this.m, defaultBitmap);
                 defaultBitmap.recycle();
             }
             return this.m;
         }
         if (this.l.id == 0) {
             Bitmap defaultBitmap2 = ThemeManager.mix.contact.getDefaultBitmap(a, a, false);
-            com.censivn.C3DEngine.a.g().a(this.l, defaultBitmap2);
+            com.censivn.C3DEngine.A.g().a(this.l, defaultBitmap2);
             defaultBitmap2.recycle();
         }
         return this.l;
@@ -126,8 +126,8 @@ public class d implements b.a, c.a {
 
     @Override // com.tsf.shell.f.h.a.c.a
     public void g() {
-        com.censivn.C3DEngine.a.g().a(this.l);
-        com.censivn.C3DEngine.a.g().a(this.m);
+        com.censivn.C3DEngine.A.g().a(this.l);
+        com.censivn.C3DEngine.A.g().a(this.m);
     }
 
     @Override // com.tsf.shell.f.h.a.c.a

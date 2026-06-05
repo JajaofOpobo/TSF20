@@ -31,16 +31,16 @@ public class a implements c.a {
         public C0112a b() {
             C0112a c0112a = a.this.new C0112a();
             c0112a.setAABBPX(com.tsf.shell.manager.o.b.a.T, com.tsf.shell.manager.o.b.a.U);
-            c0112a.position().y = -com.censivn.C3DEngine.b.b.a.a(30.0f);
+            c0112a.position().y = -com.censivn.C3DEngine.b.b.A.a(30.0f);
             return c0112a;
         }
     };
-    private com.censivn.C3DEngine.b.b.a.b c = new com.censivn.C3DEngine.b.b.a.b();
+    private com.censivn.C3DEngine.b.b.A.b c = new com.censivn.C3DEngine.b.b.A.b();
 
     public a(c cVar) {
         this.e = 8;
         this.a = cVar;
-        this.c.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.a.a(180.0f));
+        this.c.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(180.0f));
         this.e = b(e.ax());
     }
 
@@ -130,8 +130,8 @@ public class a implements c.a {
             this.f.d(40);
             this.f.c(b.i.notic_no_recent_apps);
             this.f.b();
-            this.f.minX(com.censivn.C3DEngine.b.b.a.z);
-            this.f.maxX(com.censivn.C3DEngine.b.b.a.A);
+            this.f.minX(com.censivn.C3DEngine.b.b.A.z);
+            this.f.maxX(com.censivn.C3DEngine.b.b.A.A);
         }
         return this.f;
     }
@@ -184,8 +184,8 @@ public class a implements c.a {
     @Override // com.tsf.shell.f.h.a.c.a
     public void h() {
         if (this.f != null) {
-            this.f.minX(com.censivn.C3DEngine.b.b.a.z);
-            this.f.maxX(com.censivn.C3DEngine.b.b.a.A);
+            this.f.minX(com.censivn.C3DEngine.b.b.A.z);
+            this.f.maxX(com.censivn.C3DEngine.b.b.A.A);
             this.c.onChildMeasure(this.f);
         }
     }

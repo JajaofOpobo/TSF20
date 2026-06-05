@@ -13,9 +13,9 @@ public class A extends com.censivn.C3DEngine.b.f.B {
     private float c;
     private float d;
     private int e = 1;
-    private float f = com.censivn.C3DEngine.b.b.a.a(50.0f);
-    private float g = com.censivn.C3DEngine.b.b.a.a(30.0f);
-    private float h = com.censivn.C3DEngine.b.b.a.a(30.0f);
+    private float f = com.censivn.C3DEngine.b.b.A.a(50.0f);
+    private float g = com.censivn.C3DEngine.b.b.A.a(30.0f);
+    private float h = com.censivn.C3DEngine.b.b.A.a(30.0f);
     private g i;
 
     public A() {

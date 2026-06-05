@@ -155,7 +155,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                     public void a(int i) {
                         int i2;
                         try {
-                            i2 = com.censivn.C3DEngine.a.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.a.d().getPackageName(), 0).versionCode;
+                            i2 = com.censivn.C3DEngine.A.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.A.d().getPackageName(), 0).versionCode;
                         } catch (Exception e) {
                             e.printStackTrace();
                             i2 = -1;
@@ -282,7 +282,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void a(int i) {
         this.t = true;
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.Home.13
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.Home.13
             @Override // java.lang.Runnable
             public void run() {
                 Home.this.c();
@@ -351,7 +351,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void i() {
         int i = 1;
-        com.censivn.C3DEngine.a.a().a(new RenderRunnable(i, i) { // from class: com.tsf.shell.Home.15
+        com.censivn.C3DEngine.A.a().a(new RenderRunnable(i, i) { // from class: com.tsf.shell.Home.15
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.a.h.J();
@@ -366,11 +366,11 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         com.tsf.shell.f._d.d();
         com.censivn.C3DEngine.a.d.d().a();
         n();
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.16
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.16
             @Override // java.lang.Runnable
             public void run() {
                 Home.this.m = true;
-                com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.Home.16.1
+                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.Home.16.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.activity.b.a.a();
@@ -480,7 +480,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         try {
             startActivity(intent);
         } catch (Exception e) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.Home.17
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.Home.17
                 @Override // java.lang.Runnable
                 public void run() {
                     Toast.makeText(Home.c, b.i.activity_not_found, 0).show();
@@ -494,7 +494,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         try {
             startActivityForResult(intent, i);
         } catch (Exception e) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.Home.2
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.Home.2
                 @Override // java.lang.Runnable
                 public void run() {
                     Toast.makeText(Home.c, b.i.activity_not_found, 0).show();
@@ -530,7 +530,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     @Override // android.app.Activity, android.view.KeyEvent.Callback
     public boolean onKeyUp(final int i, final KeyEvent keyEvent) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.3
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.b.c.b.b(i, keyEvent);
@@ -541,7 +541,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     @Override // android.app.Activity, android.view.KeyEvent.Callback
     public boolean onKeyDown(final int i, final KeyEvent keyEvent) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.4
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.4
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.b.c.b.a(i, keyEvent);
@@ -554,7 +554,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             return true;
         }
         if (i == 24) {
-            com.censivn.C3DEngine.a.e().g();
+            com.censivn.C3DEngine.A.e().g();
         }
         boolean zOnKeyDown = super.onKeyDown(i, keyEvent);
         if (!zOnKeyDown && i != 66) {
@@ -595,7 +595,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 }
                 aVar.a.setPressed(false);
                 w.a();
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.5
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.5
                     @Override // java.lang.Runnable
                     public void run() {
                         Home.this.e.a(aVar);
@@ -691,7 +691,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             this.j = false;
             if (this.l) {
                 this.n.e();
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.8
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.8
                     @Override // java.lang.Runnable
                     public void run() {
                         Home.this.o.b("Home");
@@ -772,7 +772,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void p() {
         if (this.m && com.tsf.shell.manager.a.h != null && !this.v) {
             this.v = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.Home.9
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.Home.9
                 @Override // java.lang.Runnable
                 public void run() {
                     com.censivn.C3DEngine.b.c.b.a(3, null);

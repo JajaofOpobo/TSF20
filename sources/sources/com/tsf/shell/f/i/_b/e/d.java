@@ -13,7 +13,7 @@ public class d extends a {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.d.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.d.1
                 @Override // java.lang.Runnable
                 public void run() {
                     d.this.k();

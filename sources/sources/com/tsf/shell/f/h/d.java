@@ -21,7 +21,7 @@ public class d extends com.censivn.C3DEngine.b.d.a {
     public d(b bVar, i iVar) {
         super(iVar);
         this.b = false;
-        this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.a.a);
+        this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.A.a);
         this.f = 0;
         this.a = bVar;
         this.d = com.tsf.shell.manager.a.h;

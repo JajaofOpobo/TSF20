@@ -8,13 +8,13 @@ public class e extends h {
     private float e;
 
     public e(String str) {
-        super(str, com.censivn.C3DEngine.b.b.a.a(238.0f));
+        super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
         this.a = new com.censivn.C3DEngine.b.f.j();
         e().addChild(this.a);
-        this.b = com.censivn.C3DEngine.b.b.a.a(150.0f);
-        this.e = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.b = com.censivn.C3DEngine.b.b.A.a(150.0f);
+        this.e = com.censivn.C3DEngine.b.b.A.a(20.0f);
         this.d = (this.b * 5.0f) + (this.e * 4.0f);
-        this.a.position().x = ((-this.d) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.a.position().x = ((-this.d) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(20.0f);
     }
 
     @Override // com.tsf.shell.preference.a.a.a.h, com.censivn.C3DEngine.b.e.f

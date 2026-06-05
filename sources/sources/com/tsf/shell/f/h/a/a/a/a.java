@@ -26,7 +26,7 @@ public class a extends j {
     private float[] n = new float[2];
     private boolean o = false;
     private j a = new j();
-    private com.censivn.C3DEngine.b.f.d l = new com.censivn.C3DEngine.b.f.d(com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.a(200.0f));
+    private com.censivn.C3DEngine.b.f.d l = new com.censivn.C3DEngine.b.f.d(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(200.0f));
 
     /* JADX INFO: renamed from: com.tsf.shell.f.h.a.a.a.a$a, reason: collision with other inner class name */
     public interface InterfaceC0098a {
@@ -40,10 +40,10 @@ public class a extends j {
         this.l.visible(false);
         addChild(this.l);
         addChild(this.a);
-        this.f = com.censivn.C3DEngine.b.b.a.a(330.0f);
-        this.k = new b(com.censivn.C3DEngine.a.d(), this.f, com.censivn.C3DEngine.b.b.a.a(90.0f), com.censivn.C3DEngine.b.b.a.a(21.0f), -16731076);
+        this.f = com.censivn.C3DEngine.b.b.A.a(330.0f);
+        this.k = new b(com.censivn.C3DEngine.A.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
         this.k.b(45.0f);
-        this.b = new f(com.censivn.C3DEngine.b.b.a.a(120.0f), com.censivn.C3DEngine.b.b.a.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.1
+        this.b = new f(com.censivn.C3DEngine.b.b.A.a(120.0f), com.censivn.C3DEngine.b.b.A.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.1
             @Override // com.tsf.shell.f.h.a.a.a.f
             public Bitmap a() {
                 return x.a(b.d.contact_menu_call_icon);
@@ -84,7 +84,7 @@ public class a extends j {
                         if (hittingTarget == a.this.d) {
                             w.b();
                             w.a();
-                            com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.3
+                            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.3
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     a.this.e.a().a().h();
@@ -96,7 +96,7 @@ public class a extends j {
                     }
                     w.b();
                     w.a();
-                    com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.2
+                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.2
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.e.a().a().g();
@@ -107,7 +107,7 @@ public class a extends j {
                 if (!this.b) {
                     w.b();
                     w.a();
-                    com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.1
+                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.e.a().a().f();
@@ -122,7 +122,7 @@ public class a extends j {
             }
         });
         this.b.calAABB(1.2f, 1.2f, 1.0f);
-        this.c = new f(com.censivn.C3DEngine.b.b.a.a(100.0f), com.censivn.C3DEngine.b.b.a.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.3
+        this.c = new f(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.3
             @Override // com.tsf.shell.f.h.a.a.a.f
             public Bitmap a() {
                 return x.a(b.d.contact_menu_message_icon);
@@ -131,7 +131,7 @@ public class a extends j {
         this.c.alpha(0.0f);
         this.c.calAABB(4.0f, 4.0f, 1.0f);
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c));
-        this.d = new f(com.censivn.C3DEngine.b.b.a.a(100.0f), com.censivn.C3DEngine.b.b.a.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.4
+        this.d = new f(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.4
             @Override // com.tsf.shell.f.h.a.a.a.f
             public Bitmap a() {
                 return x.a(b.d.contact_menu_mail_icon);
@@ -165,7 +165,7 @@ public class a extends j {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final MotionEvent motionEvent) {
         if (!this.o) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.5
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.a.5
                 @Override // java.lang.Runnable
                 public void run() {
                     if (a.this.m) {
@@ -186,8 +186,8 @@ public class a extends j {
         int i2 = -1;
         x.a(motionEvent, this.n);
         this.n[1] = this.n[1] - position().y;
-        if (Math.abs(this.n[1] - this.j.get(1).y) < com.censivn.C3DEngine.b.b.a.a(150.0f)) {
-            this.n[1] = this.j.get(1).y + com.censivn.C3DEngine.b.b.a.a(150.0f);
+        if (Math.abs(this.n[1] - this.j.get(1).y) < com.censivn.C3DEngine.b.b.A.a(150.0f)) {
+            this.n[1] = this.j.get(1).y + com.censivn.C3DEngine.b.b.A.a(150.0f);
         }
         int i3 = 0;
         float f2 = Float.MAX_VALUE;
@@ -225,9 +225,9 @@ public class a extends j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        this.l.a(com.censivn.C3DEngine.b.b.a.D);
-        this.l.b(com.censivn.C3DEngine.b.b.a.E + com.censivn.C3DEngine.b.b.a.a(500.0f));
-        this.l.position().y = (((this.l.b() / 2.0f) - position().y) + com.censivn.C3DEngine.b.b.a.C) - com.censivn.C3DEngine.b.b.a.K;
+        this.l.a(com.censivn.C3DEngine.b.b.A.D);
+        this.l.b(com.censivn.C3DEngine.b.b.A.E + com.censivn.C3DEngine.b.b.A.a(500.0f));
+        this.l.position().y = (((this.l.b() / 2.0f) - position().y) + com.censivn.C3DEngine.b.b.A.C) - com.censivn.C3DEngine.b.b.A.K;
         this.l.visible(true);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.a(255);

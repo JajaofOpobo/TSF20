@@ -37,9 +37,9 @@ public class c implements com.android.volley.b {
     }
 
     @Override // com.android.volley.b
-    public synchronized b.a a(String str) {
+    public synchronized com.android.volley.b.a a(String str) {
         b bVar;
-        b.a aVarA;
+        com.android.volley.b.a aVarA;
         File fileC;
         a aVar = this.a.get(str);
         if (aVar == null) {
@@ -188,7 +188,7 @@ public class c implements com.android.volley.b {
     }
 
     @Override // com.android.volley.b
-    public synchronized void a(String str, b.a aVar) {
+    public synchronized void a(String str, com.android.volley.b.a aVar) {
         FileOutputStream fileOutputStream;
         a aVar2;
         a(aVar.a.length);
@@ -315,7 +315,7 @@ public class c implements com.android.volley.b {
         private a() {
         }
 
-        public a(String str, b.a aVar) {
+        public a(String str, com.android.volley.b.a aVar) {
             this.b = str;
             this.a = aVar.a.length;
             this.c = aVar.b;
@@ -344,8 +344,8 @@ public class c implements com.android.volley.b {
             return aVar;
         }
 
-        public b.a a(byte[] bArr) {
-            b.a aVar = new b.a();
+        public com.android.volley.b.a a(byte[] bArr) {
+            com.android.volley.b.a aVar = new com.android.volley.b.a();
             aVar.a = bArr;
             aVar.b = this.c;
             aVar.c = this.d;

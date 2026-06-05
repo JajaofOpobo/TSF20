@@ -17,11 +17,11 @@ public class h extends i {
     private boolean e;
     private float h = 0.5f;
     private TextureElement f = new TextureElement(0, false);
-    private k g = new k(com.censivn.C3DEngine.b.b.a.a(24.0f), com.censivn.C3DEngine.b.b.a.a(45.0f), false) { // from class: com.tsf.shell.preference.a.a.h.1
+    private k g = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.preference.a.a.h.1
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (h.this.f.id == 0) {
-                com.censivn.C3DEngine.a.g().a(h.this.f, b.d.scrollcontainer_arrow);
+                com.censivn.C3DEngine.A.g().a(h.this.f, b.d.scrollcontainer_arrow);
             }
         }
     };
@@ -55,7 +55,7 @@ public class h extends i {
             @Override // com.censivn.C3DEngine.b.e.h.a
             public boolean a(int i) {
                 h.this.h = i / 100.0f;
-                if (com.censivn.C3DEngine.b.b.a.O) {
+                if (com.censivn.C3DEngine.b.b.A.O) {
                     com.tsf.shell.manager.a.n.a(h.this.h);
                 } else {
                     com.tsf.shell.manager.a.n.b(h.this.h);
@@ -70,20 +70,20 @@ public class h extends i {
 
     @Override // com.censivn.C3DEngine.b.e.i
     public void b(com.censivn.C3DEngine.b.e.f fVar) {
-        super.a(fVar, com.censivn.C3DEngine.b.b.a.a(50.0f));
+        super.a(fVar, com.censivn.C3DEngine.b.b.A.a(50.0f));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
         this.g.visible(Boolean.valueOf(this.d));
         if (this.a.e() == 0) {
-            this.g.position().x = com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(30.0f);
+            this.g.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(30.0f);
             this.g.rotation().z = 0.0f;
         } else {
-            this.g.position().x = com.censivn.C3DEngine.b.b.a.A - com.censivn.C3DEngine.b.b.a.a(30.0f);
+            this.g.position().x = com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(30.0f);
             this.g.rotation().z = 180.0f;
         }
-        this.g.position().y = (com.censivn.C3DEngine.b.b.a.B - com.tsf.shell.manager.m.b.b) - (((com.censivn.C3DEngine.b.b.a.B - com.censivn.C3DEngine.b.b.a.C) - (2.0f * com.tsf.shell.manager.m.b.b)) * this.h);
+        this.g.position().y = (com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.manager.m.b.b) - (((com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.C) - (2.0f * com.tsf.shell.manager.m.b.b)) * this.h);
     }
 
     @Override // com.censivn.C3DEngine.b.e.c
@@ -106,7 +106,7 @@ public class h extends i {
     }
 
     private void j() {
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             this.b.b(x.c(b.i.text_position) + " (" + x.c(b.i.text_vertical) + ")");
             this.h = com.tsf.shell.manager.a.n.a();
         } else {
@@ -130,7 +130,7 @@ public class h extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void c() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.f);
+            com.censivn.C3DEngine.A.g().a(this.f);
         }
     }
 
@@ -182,7 +182,7 @@ public class h extends i {
         public void g() {
             super.g();
             if (this.d.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.d);
+                com.censivn.C3DEngine.A.g().a(this.d);
             }
         }
 
@@ -190,14 +190,14 @@ public class h extends i {
         public void onDrawStart() {
             super.onDrawStart();
             if (this.d.id == 0) {
-                Bitmap bitmapA = x.a(b.d.preference_side_menu_direction_icon, com.censivn.C3DEngine.b.b.a.a(90.0f), com.censivn.C3DEngine.b.b.a.a(120.0f));
-                com.censivn.C3DEngine.a.g().a(this.d, bitmapA);
+                Bitmap bitmapA = x.a(b.d.preference_side_menu_direction_icon, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(120.0f));
+                com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
                 bitmapA.recycle();
             }
         }
 
         private void h() {
-            this.b = com.censivn.C3DEngine.b.b.a.a(90.0f, 120.0f);
+            this.b = com.censivn.C3DEngine.b.b.A.a(90.0f, 120.0f);
             this.d = new TextureElement(0, false);
             this.b.textures().addElement(this.d);
             this.b.position().y = (-b()) / 2.0f;

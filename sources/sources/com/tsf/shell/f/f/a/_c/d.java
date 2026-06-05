@@ -65,7 +65,7 @@ public class d extends i {
     }
 
     private void c() {
-        this.g = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.a.D, com.tsf.shell.manager.o.b.c.U, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.a.c * 0.9f);
+        this.g = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.b.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.g.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.f.a._c.d.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -131,7 +131,7 @@ public class d extends i {
         if (arrayList != null) {
             this.j = arrayList;
             this.i = new com.tsf.shell.f.e._g.b();
-            this.i.position().y = com.censivn.C3DEngine.b.b.a.a(160.0f);
+            this.i.position().y = com.censivn.C3DEngine.b.b.A.a(160.0f);
             Iterator<com.tsf.shell.f.e._g.a.a.C0095a> it = arrayList.iterator();
             while (it.hasNext()) {
                 this.i.addChild(it.next());

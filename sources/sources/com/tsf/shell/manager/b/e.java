@@ -579,7 +579,7 @@ public class e {
 
     public static void a(int i2, int i3) {
         SharedPreferences.Editor editorAC = aC();
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             x = i2;
             y = i3;
             editorAC.putInt("drawer_rows_v", i2);
@@ -748,7 +748,7 @@ public class e {
     }
 
     public static void n(final int i2) {
-        com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.manager.b.e.1
+        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.manager.b.e.1
             @Override // java.lang.Runnable
             public void run() {
                 SharedPreferences.Editor editorAC = e.aC();
@@ -986,7 +986,7 @@ public class e {
 
     public static SharedPreferences aD() {
         if (F == null) {
-            F = com.censivn.C3DEngine.a.d().getSharedPreferences("config", 0);
+            F = com.censivn.C3DEngine.A.d().getSharedPreferences("config", 0);
         }
         return F;
     }

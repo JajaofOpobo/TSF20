@@ -53,7 +53,7 @@ public class a implements b.a, e.a {
         }
 
         public void a(float f, float f2, float f3, float f4) {
-            this.d = com.censivn.C3DEngine.b.b.a.a(160.0f);
+            this.d = com.censivn.C3DEngine.b.b.A.a(160.0f);
             this.j = (int) (f / f3);
             this.k = (int) (f2 / f4);
             this.h = this.j * 2;
@@ -65,14 +65,14 @@ public class a implements b.a, e.a {
             int i = (this.h + 1) * (this.i + 1);
             this.a = new com.censivn.C3DEngine.b.f.a.a(i, 26, 26, true);
             for (int i2 = 0; i2 < i; i2++) {
-                this.a.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.a.c, 26.0f * com.censivn.C3DEngine.b.b.a.c);
+                this.a.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.A.c, 26.0f * com.censivn.C3DEngine.b.b.A.c);
             }
-            float f5 = ((-f) / 2.0f) + com.censivn.C3DEngine.b.b.a.k;
-            float f6 = (f2 / 2.0f) - com.censivn.C3DEngine.b.b.a.m;
+            float f5 = ((-f) / 2.0f) + com.censivn.C3DEngine.b.b.A.k;
+            float f6 = (f2 / 2.0f) - com.censivn.C3DEngine.b.b.A.m;
             for (int i3 = 0; i3 < this.i + 1; i3++) {
                 for (int i4 = 0; i4 < this.h + 1; i4++) {
-                    float f7 = com.censivn.C3DEngine.b.b.a.r + (this.f * i4);
-                    float f8 = com.censivn.C3DEngine.b.b.a.s - (this.g * i3);
+                    float f7 = com.censivn.C3DEngine.b.b.A.r + (this.f * i4);
+                    float f8 = com.censivn.C3DEngine.b.b.A.s - (this.g * i3);
                     com.censivn.C3DEngine.b.f.a.b bVarA = this.a.a(((this.h + 1) * i3) + i4);
                     b bVar = new b();
                     bVar.a = i4;
@@ -101,14 +101,14 @@ public class a implements b.a, e.a {
                     if (a.this.d != null) {
                         float f = (a.this.d.position().x + (a.this.a.f / 2.0f)) - ((a.this.i * a.this.a.f) / 2.0f);
                         float f2 = a.this.d.position().y + (a.this.a.g / 2.0f) + ((a.this.j * a.this.a.g) / 2.0f);
-                        if (f < com.censivn.C3DEngine.b.b.a.r) {
-                            f = com.censivn.C3DEngine.b.b.a.r;
+                        if (f < com.censivn.C3DEngine.b.b.A.r) {
+                            f = com.censivn.C3DEngine.b.b.A.r;
                         }
-                        if (f2 > com.censivn.C3DEngine.b.b.a.s) {
-                            f2 = com.censivn.C3DEngine.b.b.a.s;
+                        if (f2 > com.censivn.C3DEngine.b.b.A.s) {
+                            f2 = com.censivn.C3DEngine.b.b.A.s;
                         }
-                        int i2 = (int) ((f - com.censivn.C3DEngine.b.b.a.r) / a.this.a.f);
-                        int i3 = a.this.a.i - ((int) ((f2 - com.censivn.C3DEngine.b.b.a.u) / a.this.a.g));
+                        int i2 = (int) ((f - com.censivn.C3DEngine.b.b.A.r) / a.this.a.f);
+                        int i3 = a.this.a.i - ((int) ((f2 - com.censivn.C3DEngine.b.b.A.u) / a.this.a.g));
                         int i4 = i2 + a.this.i;
                         int i5 = i4 > a.this.a.h ? a.this.a.h : i4;
                         int i6 = i5 - a.this.i;
@@ -119,8 +119,8 @@ public class a implements b.a, e.a {
                         if (i10 < 0) {
                             i10 = 0;
                         }
-                        float f3 = (((i5 - i7) * a.this.a.f) / 2.0f) + com.censivn.C3DEngine.b.b.a.r + (i7 * a.this.a.f);
-                        float f4 = (com.censivn.C3DEngine.b.b.a.s - (i10 * a.this.a.g)) - (((i9 - i10) * a.this.a.g) / 2.0f);
+                        float f3 = (((i5 - i7) * a.this.a.f) / 2.0f) + com.censivn.C3DEngine.b.b.A.r + (i7 * a.this.a.f);
+                        float f4 = (com.censivn.C3DEngine.b.b.A.s - (i10 * a.this.a.g)) - (((i9 - i10) * a.this.a.g) / 2.0f);
                         a.this.k[0] = f3;
                         a.this.k[1] = f4;
                         while (true) {
@@ -156,7 +156,7 @@ public class a implements b.a, e.a {
 
     public void c() {
         this.b = x.b(b.d.grid_point);
-        this.a.a(com.censivn.C3DEngine.b.b.a.p, com.censivn.C3DEngine.b.b.a.q, r.a(com.censivn.C3DEngine.a.d(), com.censivn.C3DEngine.b.b.a.i), r.a(com.censivn.C3DEngine.a.d(), com.censivn.C3DEngine.b.b.a.j));
+        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.j));
     }
 
     public boolean a(g gVar) {
@@ -276,6 +276,6 @@ public class a implements b.a, e.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.a(com.censivn.C3DEngine.b.b.a.p, com.censivn.C3DEngine.b.b.a.q, r.a(com.censivn.C3DEngine.a.d(), com.censivn.C3DEngine.b.b.a.i), r.a(com.censivn.C3DEngine.a.d(), com.censivn.C3DEngine.b.b.a.j));
+        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.j));
     }
 }

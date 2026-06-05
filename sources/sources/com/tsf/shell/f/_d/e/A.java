@@ -36,16 +36,16 @@ public class A extends h {
         this.e.useVBO(false);
         if (a == null) {
             a = new ArrayList<>();
-            float f = 5.0f * com.censivn.C3DEngine.b.b.a.c;
-            float f2 = ((-((com.censivn.C3DEngine.b.b.a.c * 120.0f) + (3.0f * f))) / 2.0f) + ((com.censivn.C3DEngine.b.b.a.c * 30.0f) / 2.0f);
-            float f3 = (((com.censivn.C3DEngine.b.b.a.c * 120.0f) + (3.0f * f)) / 2.0f) - ((com.censivn.C3DEngine.b.b.a.c * 30.0f) / 2.0f);
-            b = (com.censivn.C3DEngine.b.b.a.c * 30.0f) + f3;
+            float f = 5.0f * com.censivn.C3DEngine.b.b.A.c;
+            float f2 = ((-((com.censivn.C3DEngine.b.b.A.c * 120.0f) + (3.0f * f))) / 2.0f) + ((com.censivn.C3DEngine.b.b.A.c * 30.0f) / 2.0f);
+            float f3 = (((com.censivn.C3DEngine.b.b.A.c * 120.0f) + (3.0f * f)) / 2.0f) - ((com.censivn.C3DEngine.b.b.A.c * 30.0f) / 2.0f);
+            b = (com.censivn.C3DEngine.b.b.A.c * 30.0f) + f3;
             c = f2;
             for (int i2 = 0; i2 < 4; i2++) {
                 for (int i3 = 0; i3 < 4; i3++) {
                     Number3d number3d = new Number3d();
-                    number3d.x = ((30.0f + f) * com.censivn.C3DEngine.b.b.a.c * i2) + f2;
-                    number3d.y = f3 - (((30.0f + f) * com.censivn.C3DEngine.b.b.a.c) * i3);
+                    number3d.x = ((30.0f + f) * com.censivn.C3DEngine.b.b.A.c * i2) + f2;
+                    number3d.y = f3 - (((30.0f + f) * com.censivn.C3DEngine.b.b.A.c) * i3);
                     a.add(number3d);
                 }
             }
@@ -65,7 +65,7 @@ public class A extends h {
                 this.g = new Runnable() { // from class: com.tsf.shell.f._d.e.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.censivn.C3DEngine.a.a().b(a.this.h, 300L);
+                        com.censivn.C3DEngine.A.a().b(a.this.h, 300L);
                     }
                 };
                 this.h = new Runnable() { // from class: com.tsf.shell.f._d.e.a.2

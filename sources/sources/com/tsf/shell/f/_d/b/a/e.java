@@ -14,12 +14,12 @@ public class e extends d {
 
     public e(int i, int i2, boolean z) {
         super(i, z);
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(30.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
         this.e = new k(iA + 2, iA + 2, false);
         this.e.setDefaultColor(new Color4(i2));
         this.e.textures().addElement(c);
-        this.e.position().x = com.censivn.C3DEngine.b.b.a.a(74.0f);
-        this.e.position().y = com.censivn.C3DEngine.b.b.a.a(103.0f);
+        this.e.position().x = com.censivn.C3DEngine.b.b.A.a(74.0f);
+        this.e.position().y = com.censivn.C3DEngine.b.b.A.a(103.0f);
     }
 
     @Override // com.tsf.shell.f._d.b.a.d
@@ -30,7 +30,7 @@ public class e extends d {
     public void a(com.tsf.shell.f.i.b.e.b bVar) {
         if (c.id == 0) {
             Bitmap bitmapB = q.b(15.0f, -1);
-            com.censivn.C3DEngine.a.g().a(c, bitmapB);
+            com.censivn.C3DEngine.A.g().a(c, bitmapB);
             bitmapB.recycle();
         }
     }

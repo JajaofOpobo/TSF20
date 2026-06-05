@@ -24,7 +24,7 @@ public class g extends j {
     private A f;
     private A g;
     private j a = new j();
-    private k c = new k(com.censivn.C3DEngine.b.b.a.D, 120.0f * com.censivn.C3DEngine.b.b.a.c, false);
+    private k c = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
     public g(h hVar) {
         this.b = hVar;
@@ -119,17 +119,17 @@ public class g extends j {
     }
 
     private void b() {
-        this.f.position().x = ((com.censivn.C3DEngine.b.b.a.A - com.censivn.C3DEngine.b.b.a.a(50.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f)) - com.tsf.shell.manager.g.a.j;
-        this.g.position().x = (com.censivn.C3DEngine.b.b.a.A - com.censivn.C3DEngine.b.b.a.a(25.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f);
-        this.e.position().x = com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(25.0f);
-        this.e.f((int) (com.censivn.C3DEngine.b.b.a.D - com.censivn.C3DEngine.b.b.a.a(400.0f)));
-        this.c.a(com.censivn.C3DEngine.b.b.a.D);
+        this.f.position().x = ((com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(50.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f)) - com.tsf.shell.manager.g.a.j;
+        this.g.position().x = (com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(25.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f);
+        this.e.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(25.0f);
+        this.e.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(400.0f)));
+        this.c.a(com.censivn.C3DEngine.b.b.A.D);
         this.c.calAABB();
     }
 
     public void a(int i, int i2, int i3, int i4) {
         b();
-        position().y = com.censivn.C3DEngine.b.b.a.B - (this.c.c() / 2.0f);
+        position().y = com.censivn.C3DEngine.b.b.A.B - (this.c.c() / 2.0f);
     }
 
     public void b(boolean z) {
@@ -142,11 +142,11 @@ public class g extends j {
                 }
             };
             dVar.a(0);
-            dVar.h(com.censivn.C3DEngine.b.b.a.a(200.0f));
+            dVar.h(com.censivn.C3DEngine.b.b.A.a(200.0f));
             com.censivn.C3DEngine.b.g.c.a(this.a, 350, dVar);
             return;
         }
-        this.a.position().y = com.censivn.C3DEngine.b.b.a.a(200.0f);
+        this.a.position().y = com.censivn.C3DEngine.b.b.A.a(200.0f);
         this.a.alpha(0.0f);
     }
 
@@ -167,14 +167,14 @@ public class g extends j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final String str) {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.g.7
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.g.7
             @Override // java.lang.Runnable
             public void run() {
-                Context contextD = com.censivn.C3DEngine.a.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
+                Context contextD = com.censivn.C3DEngine.A.d();
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
                 final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
                 editText.setText(str);
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
                 builder.setTitle(contextD.getString(b.i.text_rename));
                 builder.setView(viewInflate);
                 builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.f.a.g.7.1
@@ -242,7 +242,7 @@ public class g extends j {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.a, this.d, this.h, this.h);
+                com.censivn.C3DEngine.A.g().a(this.a, this.d, this.h, this.h);
             }
         }
 
@@ -251,15 +251,15 @@ public class g extends j {
                 this.e.a();
             }
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.a);
+                com.censivn.C3DEngine.A.g().a(this.a);
             }
         }
 
         public void e() {
             if (this.e == null) {
                 this.e = new com.tsf.shell.f.e.k();
-                this.e.position().x = com.censivn.C3DEngine.b.b.a.a(36.0f);
-                this.e.position().y = com.censivn.C3DEngine.b.b.a.a(36.0f);
+                this.e.position().x = com.censivn.C3DEngine.b.b.A.a(36.0f);
+                this.e.position().y = com.censivn.C3DEngine.b.b.A.a(36.0f);
             }
             this.f = true;
         }

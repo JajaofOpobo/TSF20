@@ -79,7 +79,7 @@ public class g {
 
     private void e() {
         if (this.a.isEmpty()) {
-            this.a.add(com.tsf.shell.manager.a.w.a().a(new ComponentName(com.censivn.C3DEngine.a.d().getPackageName(), ShellActivity.class.getName())));
+            this.a.add(com.tsf.shell.manager.a.w.a().a(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName())));
         }
     }
 
@@ -157,7 +157,7 @@ public class g {
 
     public static SharedPreferences d() {
         if (e == null) {
-            e = com.censivn.C3DEngine.a.d().getSharedPreferences("recent", 0);
+            e = com.censivn.C3DEngine.A.d().getSharedPreferences("recent", 0);
         }
         return e;
     }

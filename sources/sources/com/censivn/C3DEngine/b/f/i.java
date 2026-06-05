@@ -121,10 +121,10 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new A();
-        this.AABB_P2 = new A();
-        this.AABB_P3 = new A();
-        this.AABB_P4 = new A();
+        this.AABB_P1 = new a();
+        this.AABB_P2 = new a();
+        this.AABB_P3 = new a();
+        this.AABB_P4 = new a();
         this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -177,10 +177,10 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new A();
-        this.AABB_P2 = new A();
-        this.AABB_P3 = new A();
-        this.AABB_P4 = new A();
+        this.AABB_P1 = new a();
+        this.AABB_P2 = new a();
+        this.AABB_P3 = new a();
+        this.AABB_P4 = new a();
         this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -260,7 +260,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         int cacheHeight = getCacheHeight();
         tempPosition.setAllFrom(position());
         com.tsf.shell.f.a.a.a aVarA = com.tsf.shell.manager.a.t.a(cacheWidth, cacheHeight);
-        this.cacheTextureElement = com.censivn.C3DEngine.a.g().a(cacheWidth, cacheHeight, false);
+        this.cacheTextureElement = com.censivn.C3DEngine.A.g().a(cacheWidth, cacheHeight, false);
         com.tsf.shell.manager.a.t.a(aVarA, this.cacheTextureElement);
         position().setAll(0.0f, 0.0f, 0.0f);
         dispatchDraw();
@@ -280,7 +280,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
 
     private void recycleCacheTexture() {
         if (this.cacheTextureElement != null && this.cacheTextureElement.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.cacheTextureElement);
+            com.censivn.C3DEngine.A.g().a(this.cacheTextureElement);
         }
     }
 
@@ -323,11 +323,11 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void invalidate() {
-        com.censivn.C3DEngine.a.e().j();
+        com.censivn.C3DEngine.A.e().j();
     }
 
     public void invalidateHighPriority() {
-        com.censivn.C3DEngine.a.e().k();
+        com.censivn.C3DEngine.A.e().k();
     }
 
     public void setHighPriorityAnimationObjectState(boolean z) {
@@ -657,7 +657,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         float f2;
         float f3;
         float f4;
-        com.censivn.C3DEngine.a.e().a(this);
+        com.censivn.C3DEngine.A.e().a(this);
         updateTextureState();
         MatrixStack.ColorInfo colorInfoGlColor = MatrixStack.glColor();
         float f5 = (this.mAlpha / 255.0f) * colorInfoGlColor.alpha;
@@ -861,7 +861,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdatePointVBO() {
         if (!this.isUpdatePointsVBO) {
             this.isUpdatePointsVBO = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.1
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updatePointsVBO();
@@ -873,7 +873,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateUvsVBO() {
         if (!this.isUpdateUvsVBO) {
             this.isUpdateUvsVBO = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.2
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateUvsVBO();
@@ -885,7 +885,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateFacesVBO() {
         if (!this.isUpdateFacesVBO) {
             this.isUpdateFacesVBO = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.3
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.3
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateFacesVBO();
@@ -945,29 +945,31 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public Number3d localRotationToGlobal(Number3d number3d) {
+        i current = this;
         while (true) {
-            Number3d number3dRotation = this.rotation();
+            Number3d number3dRotation = current.rotation();
             number3d.x += number3dRotation.x;
             number3d.y += number3dRotation.y;
             number3d.z = number3dRotation.z + number3d.z;
-            Object objParent = this.parent();
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            this = (i) objParent;
+            current = (i) objParent;
         }
         return number3d;
     }
 
     public Number3d globalScaleToLocal(Number3d number3d) {
+        i current = this;
         ArrayList arrayList = new ArrayList();
         while (true) {
-            arrayList.add(this);
-            Object objParent = this.parent();
+            arrayList.add(current);
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            this = (i) objParent;
+            current = (i) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
@@ -985,14 +987,15 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public Number3d globalRotationToLocal(Number3d number3d) {
+        i current = this;
         ArrayList arrayList = new ArrayList();
         while (true) {
-            arrayList.add(this);
-            Object objParent = this.parent();
+            arrayList.add(current);
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            this = (i) objParent;
+            current = (i) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
@@ -1010,48 +1013,50 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public Number3d localScaleToGlobale(Number3d number3d) {
+        i current = this;
         while (true) {
-            number3d.x *= this.scale().x;
-            number3d.y *= this.scale().y;
-            number3d.z *= this.scale().z;
-            Object objParent = this.parent();
+            number3d.x *= current.scale().x;
+            number3d.y *= current.scale().y;
+            number3d.z *= current.scale().z;
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            this = (i) objParent;
+            current = (i) objParent;
         }
         return number3d;
     }
 
     public Number3d localToGlobal(Number3d number3d) {
+        i current = this;
         while (true) {
-            PositionNumber3d positionNumber3dPosition = this.position();
-            number3d.rotateAll(this.rotation());
+            PositionNumber3d positionNumber3dPosition = current.position();
+            number3d.rotateAll(current.rotation());
             number3d.x += positionNumber3dPosition.x;
             number3d.y += positionNumber3dPosition.y;
             number3d.z = positionNumber3dPosition.z + number3d.z;
-            Object objParent = this.parent();
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            i iVar = (i) objParent;
-            number3d.x *= iVar.scale().x;
-            number3d.y *= iVar.scale().y;
-            number3d.z *= iVar.scale().z;
-            this = iVar;
+            current = (i) objParent;
+            number3d.x *= current.scale().x;
+            number3d.y *= current.scale().y;
+            number3d.z *= current.scale().z;
         }
         return number3d;
     }
 
     public Number3d globalToLocal(Number3d number3d) {
+        i current = this;
         ArrayList arrayList = new ArrayList();
         while (true) {
-            arrayList.add(this);
-            Object objParent = this.parent();
+            arrayList.add(current);
+            Object objParent = current.parent();
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
                 break;
             }
-            this = (i) objParent;
+            current = (i) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
@@ -1092,14 +1097,14 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_TR, 0, this.AABB_MATRIX, 0, this.AABB_TR, 0);
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BL, 0, this.AABB_MATRIX, 0, this.AABB_BL, 0);
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BR, 0, this.AABB_MATRIX, 0, this.AABB_BR, 0);
-        float f3 = (this.TEMP_AABB_TL[0] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.a.H;
-        float f4 = (this.TEMP_AABB_TL[1] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.a.I;
-        float f5 = (this.TEMP_AABB_TR[0] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.a.H;
-        float f6 = (this.TEMP_AABB_TR[1] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.a.I;
-        float f7 = (this.TEMP_AABB_BL[0] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.a.H;
-        float f8 = (this.TEMP_AABB_BL[1] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.a.I;
-        float f9 = (this.TEMP_AABB_BR[0] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.a.H;
-        float f10 = (this.TEMP_AABB_BR[1] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.a.I;
+        float f3 = (this.TEMP_AABB_TL[0] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.A.H;
+        float f4 = (this.TEMP_AABB_TL[1] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.A.I;
+        float f5 = (this.TEMP_AABB_TR[0] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.A.H;
+        float f6 = (this.TEMP_AABB_TR[1] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.A.I;
+        float f7 = (this.TEMP_AABB_BL[0] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.A.H;
+        float f8 = (this.TEMP_AABB_BL[1] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.A.I;
+        float f9 = (this.TEMP_AABB_BR[0] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.A.H;
+        float f10 = (this.TEMP_AABB_BR[1] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.A.I;
         this.AABB_P1.a(f - f3, f2 - f4);
         this.AABB_P2.a(f - f5, f2 - f6);
         this.AABB_P3.a(f - f7, f2 - f8);
@@ -1123,7 +1128,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void setAABBSP(float f, float f2, float f3, float f4, float f5, float f6) {
-        setAABBPX(f * com.censivn.C3DEngine.b.b.a.a, f2 * com.censivn.C3DEngine.b.b.a.a, f3 * com.censivn.C3DEngine.b.b.a.a, f4 * com.censivn.C3DEngine.b.b.a.a, f5 * com.censivn.C3DEngine.b.b.a.a, f3 * com.censivn.C3DEngine.b.b.a.a);
+        setAABBPX(f * com.censivn.C3DEngine.b.b.A.a, f2 * com.censivn.C3DEngine.b.b.A.a, f3 * com.censivn.C3DEngine.b.b.A.a, f4 * com.censivn.C3DEngine.b.b.A.a, f5 * com.censivn.C3DEngine.b.b.A.a, f3 * com.censivn.C3DEngine.b.b.A.a);
     }
 
     public void setAABBPX(float f, float f2) {
@@ -1405,7 +1410,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void moveAllPointsSP(float f, float f2, float f3) {
-        moveAllPointsPX(com.censivn.C3DEngine.b.b.a.a * f, com.censivn.C3DEngine.b.b.a.a * f2, com.censivn.C3DEngine.b.b.a.a * f3);
+        moveAllPointsPX(com.censivn.C3DEngine.b.b.A.a * f, com.censivn.C3DEngine.b.b.A.a * f2, com.censivn.C3DEngine.b.b.A.a * f3);
     }
 
     public void moveAllPointsPX(float f, float f2, float f3) {
@@ -1455,7 +1460,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public static void disableLauncher() {
-        com.censivn.C3DEngine.a.d().getPackageManager().setComponentEnabledSetting(new ComponentName(Home.b(), Home.class.getName()), 2, 1);
+        com.censivn.C3DEngine.A.d().getPackageManager().setComponentEnabledSetting(new ComponentName(Home.b(), Home.class.getName()), 2, 1);
     }
 
     public static class a {
@@ -1467,7 +1472,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
             this.b = f2;
         }
 
-        public static float a(A aVar, A aVar2) {
+        public static float a(a aVar, a aVar2) {
             return (aVar.a * aVar2.b) - (aVar.b * aVar2.a);
         }
     }

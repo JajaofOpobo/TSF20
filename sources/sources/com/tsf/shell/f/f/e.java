@@ -64,7 +64,7 @@ public class e extends C<l> {
             com.censivn.C3DEngine.a.d.d().c().a(true);
             if (this.b) {
                 this.b = false;
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.e.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.e.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.b(true);

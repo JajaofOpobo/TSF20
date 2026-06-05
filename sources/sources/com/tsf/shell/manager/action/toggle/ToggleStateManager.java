@@ -22,14 +22,14 @@ public class ToggleStateManager extends BroadcastReceiver {
         intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");
         intentFilter.addAction("android.bluetooth.adapter.action.STATE_CHANGED");
         intentFilter.addAction(A);
-        com.censivn.C3DEngine.a.d().registerReceiver(this, intentFilter);
+        com.censivn.C3DEngine.A.d().registerReceiver(this, intentFilter);
         Handler handler = new Handler();
         this.c = new A(handler);
         this.d = new b(handler);
-        com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness"), false, this.c);
-        com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness_mode"), false, this.c);
-        com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Uri.parse("content://settings/global/mobile_data"), false, this.d);
-        com.censivn.C3DEngine.a.d().getContentResolver().registerContentObserver(Settings.Secure.getUriFor("mobile_data"), false, this.d);
+        com.censivn.C3DEngine.A.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness"), false, this.c);
+        com.censivn.C3DEngine.A.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness_mode"), false, this.c);
+        com.censivn.C3DEngine.A.d().getContentResolver().registerContentObserver(Uri.parse("content://settings/global/mobile_data"), false, this.d);
+        com.censivn.C3DEngine.A.d().getContentResolver().registerContentObserver(Settings.Secure.getUriFor("mobile_data"), false, this.d);
     }
 
     @Override // android.content.BroadcastReceiver

@@ -61,8 +61,8 @@ public class k extends i {
             }
         }));
         this.h = new com.censivn.C3DEngine.b.f.j();
-        this.h.position().y = com.censivn.C3DEngine.b.b.a.a(20.0f);
-        this.i = com.censivn.C3DEngine.b.b.a.b(12.0f) + com.tsf.shell.f.f.a.c._a.b.a;
+        this.h.position().y = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        this.i = com.censivn.C3DEngine.b.b.A.b(12.0f) + com.tsf.shell.f.f.a.c._a.b.a;
         this.j = ((-this.i) * 2.0f) / 2.0f;
         float f = this.j;
         for (int i = 0; i < this.g.size(); i++) {
@@ -88,8 +88,8 @@ public class k extends i {
                 }
             });
             l = new com.tsf.shell.f.e.k();
-            l.position().y = com.censivn.C3DEngine.b.b.a.a(54.0f);
-            l.position().x = com.censivn.C3DEngine.b.b.a.a(70.0f);
+            l.position().y = com.censivn.C3DEngine.b.b.A.a(54.0f);
+            l.position().x = com.censivn.C3DEngine.b.b.A.a(70.0f);
             e().addChild(l);
         }
     }
@@ -110,12 +110,12 @@ public class k extends i {
         Number3d.TEMPNUMBER3D.reset();
         this.h.localToGlobal(Number3d.TEMPNUMBER3D);
         this.b.h().globalToLocal(Number3d.TEMPNUMBER3D);
-        float fA = com.censivn.C3DEngine.b.b.a.a(200.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(200.0f);
         float f = Number3d.TEMPNUMBER3D.x;
         float f2 = Number3d.TEMPNUMBER3D.y;
         float f3 = com.tsf.shell.f.f.a.f.c;
         int iNumChildren = this.h.numChildren();
-        float fA2 = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.A.a(20.0f);
         int i = 0;
         float f4 = f3;
         while (i < iNumChildren) {
@@ -173,7 +173,7 @@ public class k extends i {
             bVar.localToGlobal(Number3d.TEMPNUMBER3D);
             this.h.globalToLocal(Number3d.TEMPNUMBER3D);
             bVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
-            float fA = com.censivn.C3DEngine.b.b.a.a(200.0f);
+            float fA = com.censivn.C3DEngine.b.b.A.a(200.0f);
             if (i < 3) {
                 com.censivn.C3DEngine.b.g.c.a.a aVar = new com.censivn.C3DEngine.b.g.c.a.a(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a.c.k.8
                     @Override // com.censivn.C3DEngine.b.g.d

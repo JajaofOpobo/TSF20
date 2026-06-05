@@ -56,7 +56,7 @@ public class a extends VObject3dContainer {
         private TextureElement n;
         private TextureElement o;
         private boolean p = com.tsf.shell.manager.a.f.f();
-        public f a = com.censivn.C3DEngine.a.g();
+        public f a = com.censivn.C3DEngine.A.g();
 
         public b(Context context, float f, float f2) {
             this.c = context;

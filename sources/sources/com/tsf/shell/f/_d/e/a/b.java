@@ -105,7 +105,7 @@ public abstract class b implements A.InterfaceC0090a {
                 }
                 if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
                     com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
-                    if (com.censivn.C3DEngine.b.b.a.O) {
+                    if (com.censivn.C3DEngine.b.b.A.O) {
                         dVar2.f(aVar.b(bVar.K().cellX));
                         dVar2.h(aVar.c(bVar.K().cellY));
                         dVar2.e(0.0f);
@@ -119,7 +119,7 @@ public abstract class b implements A.InterfaceC0090a {
                     dVar2.f(number3d.x);
                     dVar2.h(number3d.y);
                     dVar2.e(0.0f);
-                } else if (com.censivn.C3DEngine.b.b.a.O) {
+                } else if (com.censivn.C3DEngine.b.b.A.O) {
                     dVar2.f(bVar.K().cellX);
                     dVar2.h(bVar.K().cellY);
                     dVar2.e(bVar.K().rotation);
@@ -144,7 +144,7 @@ public abstract class b implements A.InterfaceC0090a {
         if (dVar != null) {
             dVar.a(runnable);
         } else if (runnable != null) {
-            com.censivn.C3DEngine.a.a().b(runnable, d());
+            com.censivn.C3DEngine.A.a().b(runnable, d());
         }
     }
 
@@ -160,7 +160,7 @@ public abstract class b implements A.InterfaceC0090a {
                 com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
                 if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
                     com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
-                    if (com.censivn.C3DEngine.b.b.a.O) {
+                    if (com.censivn.C3DEngine.b.b.A.O) {
                         bVar.position().x = aVar.b(bVar.K().cellX);
                         bVar.position().y = aVar.c(bVar.K().cellY);
                         bVar.rotation().z = 0.0f;
@@ -174,7 +174,7 @@ public abstract class b implements A.InterfaceC0090a {
                     bVar.position().x = number3d.x;
                     bVar.position().y = number3d.y;
                     bVar.position().z = 0.0f;
-                } else if (com.censivn.C3DEngine.b.b.a.O) {
+                } else if (com.censivn.C3DEngine.b.b.A.O) {
                     bVar.position().x = bVar.K().cellX;
                     bVar.position().y = bVar.K().cellY;
                     bVar.rotation().z = bVar.K().rotation;

@@ -87,7 +87,7 @@ public class b {
 
     public void a(final int i, final boolean z) {
         if (!com.censivn.C3DEngine.a.e.l()) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.action.b.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.action.b.2
                 @Override // java.lang.Runnable
                 public void run() {
                     b.this.a(i, z);
@@ -207,7 +207,7 @@ public class b {
                 break;
             case 1600:
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.a.d(), ShellSummaryActivity.class);
+                intent.setClass(com.censivn.C3DEngine.A.d(), ShellSummaryActivity.class);
                 Home.b().a(intent, (Object) null);
                 break;
             case 1700:

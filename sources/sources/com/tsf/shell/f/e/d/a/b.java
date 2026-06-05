@@ -18,7 +18,7 @@ public class b extends j {
     public boolean d = false;
 
     public b() {
-        float f = com.censivn.C3DEngine.b.b.a.b;
+        float f = com.censivn.C3DEngine.b.b.A.b;
         scale().setAll(f, f, 1.0f);
         this.f = new j();
         this.a = new a();
@@ -148,14 +148,14 @@ public class b extends j {
 
     private void a(int i) {
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.e);
+            com.censivn.C3DEngine.A.g().a(this.e);
         }
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(64, 64, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         Paint paint = new Paint();
         paint.setColor(i);
         canvas.drawRect(1.0f, 1.0f, 63.0f, 63.0f, paint);
-        com.censivn.C3DEngine.a.g().a(this.e, bitmapCreateBitmap);
+        com.censivn.C3DEngine.A.g().a(this.e, bitmapCreateBitmap);
         bitmapCreateBitmap.recycle();
     }
 

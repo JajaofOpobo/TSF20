@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ai;
 import android.support.v4.widget.NestedScrollView;
-import android.support.v7.a.a;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.KeyEvent;
@@ -121,13 +120,13 @@ class a {
         this.b = iVar;
         this.c = window;
         this.M = new b(iVar);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(null, a.k.AlertDialog, a.C0012a.alertDialogStyle, 0);
-        this.F = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_android_layout, 0);
-        this.G = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_buttonPanelSideLayout, 0);
-        this.H = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_listLayout, 0);
-        this.I = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_multiChoiceItemLayout, 0);
-        this.J = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_singleChoiceItemLayout, 0);
-        this.K = typedArrayObtainStyledAttributes.getResourceId(a.k.AlertDialog_listItemLayout, 0);
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(null, android.support.v7.a.a.k.AlertDialog, android.support.v7.a.a.C0012a.alertDialogStyle, 0);
+        this.F = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_android_layout, 0);
+        this.G = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_buttonPanelSideLayout, 0);
+        this.H = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_listLayout, 0);
+        this.I = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_multiChoiceItemLayout, 0);
+        this.J = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_singleChoiceItemLayout, 0);
+        this.K = typedArrayObtainStyledAttributes.getResourceId(android.support.v7.a.a.k.AlertDialog_listItemLayout, 0);
         typedArrayObtainStyledAttributes.recycle();
         iVar.a(1);
     }
@@ -282,15 +281,15 @@ class a {
 
     private void c() {
         View viewFindViewById;
-        View viewFindViewById2 = this.c.findViewById(a.f.parentPanel);
-        View viewFindViewById3 = viewFindViewById2.findViewById(a.f.topPanel);
-        View viewFindViewById4 = viewFindViewById2.findViewById(a.f.contentPanel);
-        View viewFindViewById5 = viewFindViewById2.findViewById(a.f.buttonPanel);
-        ViewGroup viewGroup = (ViewGroup) viewFindViewById2.findViewById(a.f.customPanel);
+        View viewFindViewById2 = this.c.findViewById(android.support.v7.a.a.f.parentPanel);
+        View viewFindViewById3 = viewFindViewById2.findViewById(android.support.v7.a.a.f.topPanel);
+        View viewFindViewById4 = viewFindViewById2.findViewById(android.support.v7.a.a.f.contentPanel);
+        View viewFindViewById5 = viewFindViewById2.findViewById(android.support.v7.a.a.f.buttonPanel);
+        ViewGroup viewGroup = (ViewGroup) viewFindViewById2.findViewById(android.support.v7.a.a.f.customPanel);
         a(viewGroup);
-        View viewFindViewById6 = viewGroup.findViewById(a.f.topPanel);
-        View viewFindViewById7 = viewGroup.findViewById(a.f.contentPanel);
-        View viewFindViewById8 = viewGroup.findViewById(a.f.buttonPanel);
+        View viewFindViewById6 = viewGroup.findViewById(android.support.v7.a.a.f.topPanel);
+        View viewFindViewById7 = viewGroup.findViewById(android.support.v7.a.a.f.contentPanel);
+        View viewFindViewById8 = viewGroup.findViewById(android.support.v7.a.a.f.buttonPanel);
         ViewGroup viewGroupA = a(viewFindViewById6, viewFindViewById3);
         ViewGroup viewGroupA2 = a(viewFindViewById7, viewFindViewById4);
         ViewGroup viewGroupA3 = a(viewFindViewById8, viewFindViewById5);
@@ -300,7 +299,7 @@ class a {
         boolean z = (viewGroup == null || viewGroup.getVisibility() == 8) ? false : true;
         boolean z2 = (viewGroupA == null || viewGroupA.getVisibility() == 8) ? false : true;
         boolean z3 = (viewGroupA3 == null || viewGroupA3.getVisibility() == 8) ? false : true;
-        if (!z3 && viewGroupA2 != null && (viewFindViewById = viewGroupA2.findViewById(a.f.textSpacerNoButtons)) != null) {
+        if (!z3 && viewGroupA2 != null && (viewFindViewById = viewGroupA2.findViewById(android.support.v7.a.a.f.textSpacerNoButtons)) != null) {
             viewFindViewById.setVisibility(0);
         }
         if (z2 && this.w != null) {
@@ -325,8 +324,8 @@ class a {
 
     private void a(ViewGroup viewGroup, View view, int i, int i2) {
         final View view2 = null;
-        final View viewFindViewById = this.c.findViewById(a.f.scrollIndicatorUp);
-        View viewFindViewById2 = this.c.findViewById(a.f.scrollIndicatorDown);
+        final View viewFindViewById = this.c.findViewById(android.support.v7.a.a.f.scrollIndicatorUp);
+        View viewFindViewById2 = this.c.findViewById(android.support.v7.a.a.f.scrollIndicatorDown);
         if (Build.VERSION.SDK_INT >= 23) {
             ai.a(view, i, i2);
             if (viewFindViewById != null) {
@@ -405,7 +404,7 @@ class a {
             this.c.setFlags(131072, 131072);
         }
         if (z) {
-            FrameLayout frameLayout = (FrameLayout) this.c.findViewById(a.f.custom);
+            FrameLayout frameLayout = (FrameLayout) this.c.findViewById(android.support.v7.a.a.f.custom);
             frameLayout.addView(viewInflate, new ViewGroup.LayoutParams(-1, -1));
             if (this.m) {
                 frameLayout.setPadding(this.i, this.j, this.k, this.l);
@@ -422,12 +421,12 @@ class a {
     private void b(ViewGroup viewGroup) {
         if (this.C != null) {
             viewGroup.addView(this.C, 0, new ViewGroup.LayoutParams(-1, -2));
-            this.c.findViewById(a.f.title_template).setVisibility(8);
+            this.c.findViewById(android.support.v7.a.a.f.title_template).setVisibility(8);
             return;
         }
         this.z = (ImageView) this.c.findViewById(R.id.icon);
         if (!TextUtils.isEmpty(this.d)) {
-            this.A = (TextView) this.c.findViewById(a.f.alertTitle);
+            this.A = (TextView) this.c.findViewById(android.support.v7.a.a.f.alertTitle);
             this.A.setText(this.d);
             if (this.x != 0) {
                 this.z.setImageResource(this.x);
@@ -441,13 +440,13 @@ class a {
                 return;
             }
         }
-        this.c.findViewById(a.f.title_template).setVisibility(8);
+        this.c.findViewById(android.support.v7.a.a.f.title_template).setVisibility(8);
         this.z.setVisibility(8);
         viewGroup.setVisibility(8);
     }
 
     private void c(ViewGroup viewGroup) {
-        this.w = (NestedScrollView) this.c.findViewById(a.f.scrollView);
+        this.w = (NestedScrollView) this.c.findViewById(android.support.v7.a.a.f.scrollView);
         this.w.setFocusable(false);
         this.w.setNestedScrollingEnabled(false);
         this.B = (TextView) viewGroup.findViewById(R.id.message);

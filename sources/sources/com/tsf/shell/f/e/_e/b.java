@@ -23,9 +23,9 @@ public class b extends j {
 
     public b() {
         com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.b);
-        this.k = com.censivn.C3DEngine.b.b.a.a(170.0f);
-        this.l = com.censivn.C3DEngine.b.b.a.a(280.0f);
-        this.m = com.censivn.C3DEngine.b.b.a.a(100.0f, 100.0f);
+        this.k = com.censivn.C3DEngine.b.b.A.a(170.0f);
+        this.l = com.censivn.C3DEngine.b.b.A.a(280.0f);
+        this.m = com.censivn.C3DEngine.b.b.A.a(100.0f, 100.0f);
         this.m.alpha(0.0f);
         this.m.scale().setAll(0.0f, 0.0f, 1.0f);
     }
@@ -114,7 +114,7 @@ public class b extends j {
     public void b() {
         if (!this.i) {
             this.i = true;
-            this.e = 80.0f * com.censivn.C3DEngine.b.b.a.c;
+            this.e = 80.0f * com.censivn.C3DEngine.b.b.A.c;
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.l(1.0f);
             dVar.m(1.0f);

@@ -42,7 +42,7 @@ public class g extends a {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.g.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.g.1
                 @Override // java.lang.Runnable
                 public void run() {
                     g.this.k();
@@ -133,7 +133,7 @@ public class g extends a {
         if (fVarB == null) {
             com.tsf.shell.manager.a.f fVarA = com.tsf.shell.manager.bind.a.c().a(component);
             if (fVarA == null) {
-                PackageManager packageManager = com.censivn.C3DEngine.a.d().getPackageManager();
+                PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
                 Intent intent2 = new Intent(intent.getAction(), (Uri) null);
                 intent2.addCategory("android.intent.category.LAUNCHER");
                 intent2.setPackage(component.getPackageName());
@@ -228,7 +228,7 @@ public class g extends a {
     }
 
     public void bh() {
-        com.tsf.shell.utils.a.a(com.censivn.C3DEngine.a.d(), bd().b.getPackageName());
+        com.tsf.shell.utils.a.a(com.censivn.C3DEngine.A.d(), bd().b.getPackageName());
     }
 
     public void aV() {

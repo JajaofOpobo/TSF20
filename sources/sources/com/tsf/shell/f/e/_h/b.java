@@ -25,11 +25,11 @@ public class b implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     }
 
     public b() {
-        String[] strArr = {com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_0), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_1), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_2), com.censivn.C3DEngine.a.d().getString(com.tsf.b.i.icon_picker_main_item_3)};
+        String[] strArr = {com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_0), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_1), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_2), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_3)};
     }
 
     public static void a(final a aVar, final com.tsf.shell.f.i._b.e.b bVar, final int i, final int i2) {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.b.1
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.b.1
             @Override // java.lang.Runnable
             public void run() {
                 if (b.a == null) {
@@ -46,7 +46,7 @@ public class b implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         this.e = i2;
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) bVar.K();
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.a.d(), AppIconEditorActivity.class);
+        intent.setClass(com.censivn.C3DEngine.A.d(), AppIconEditorActivity.class);
         Bundle bundle = new Bundle();
         bundle.putParcelable("icon", launcherShortcut3DInfo.getIconBitmap());
         bundle.putString("name", launcherShortcut3DInfo.title);

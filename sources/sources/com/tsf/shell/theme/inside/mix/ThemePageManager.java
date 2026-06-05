@@ -26,7 +26,7 @@ public class ThemePageManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public Bitmap getPreviewBitmap(int i, int i2) {
-        return createPreviewBitmap(com.censivn.C3DEngine.a.d(), getTheme().getContext(), i, i2, true);
+        return createPreviewBitmap(com.censivn.C3DEngine.A.d(), getTheme().getContext(), i, i2, true);
     }
 
     public static Bitmap createPreviewBitmap(Context context, Context context2, int i, int i2, boolean z) {

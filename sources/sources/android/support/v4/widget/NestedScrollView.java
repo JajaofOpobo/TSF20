@@ -1328,7 +1328,7 @@ public class NestedScrollView extends FrameLayout implements ae, android.support
             super.d(view, accessibilityEvent);
             NestedScrollView nestedScrollView = (NestedScrollView) view;
             accessibilityEvent.setClassName(ScrollView.class.getName());
-            android.support.v4.view.a.j jVarA = android.support.v4.view.a.a.a(accessibilityEvent);
+            android.support.v4.view.accessibility.j jVarA = android.support.v4.view.accessibility.a.a(accessibilityEvent);
             jVarA.a(nestedScrollView.getScrollRange() > 0);
             jVarA.d(nestedScrollView.getScrollX());
             jVarA.e(nestedScrollView.getScrollY());

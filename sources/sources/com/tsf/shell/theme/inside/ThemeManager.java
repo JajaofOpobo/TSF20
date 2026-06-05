@@ -83,7 +83,7 @@ public class ThemeManager {
             @Override // android.content.BroadcastReceiver
             public void onReceive(Context context, final Intent intent) {
                 if (ThemeManager.ACTION_APPLY_THEME.equals(intent.getAction())) {
-                    com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.1.1
+                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             ThemeManager.this.setTheme(intent.getStringExtra("applyTheme"));
@@ -131,7 +131,7 @@ public class ThemeManager {
     }
 
     public void addTheme(String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.2
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.2
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = ThemeManager.this.mListeners.iterator();
@@ -143,7 +143,7 @@ public class ThemeManager {
     }
 
     public void removeTheme(final String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.3
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = ThemeManager.this.mListeners.iterator();
@@ -155,7 +155,7 @@ public class ThemeManager {
     }
 
     public void updateTheme(final String str) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.4
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.4
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = ThemeManager.this.mListeners.iterator();
@@ -175,7 +175,7 @@ public class ThemeManager {
 
     public void setTheme(final String str) {
         if (e.l()) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.5
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemeManager.5
                 @Override // java.lang.Runnable
                 public void run() {
                     ThemeManager.this.setTheme(str);
@@ -187,7 +187,7 @@ public class ThemeManager {
             this.mFileManager.reset();
             Context contextCreatePackageContext = null;
             try {
-                contextCreatePackageContext = com.censivn.C3DEngine.a.d().createPackageContext(str, 3);
+                contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(str, 3);
             } catch (PackageManager.NameNotFoundException e) {
             }
             ThemeElementChecker.paintThemeElement(contextCreatePackageContext);

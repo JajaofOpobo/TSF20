@@ -15,7 +15,7 @@ public class b {
     private static int b = 0;
 
     public static void a(j jVar) {
-        switch (e.a(com.censivn.C3DEngine.a.d())) {
+        switch (e.a(com.censivn.C3DEngine.A.d())) {
             case ItemInfo.NO_ID /* -1 */:
                 jVar.b(x.c(b.i.mn_orientation_system));
                 break;

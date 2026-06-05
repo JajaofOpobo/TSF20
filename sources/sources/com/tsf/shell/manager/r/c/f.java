@@ -54,7 +54,7 @@ public class f {
             } else {
                 gVar.g = 1;
             }
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.f.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.f.1
                 @Override // java.lang.Runnable
                 public void run() {
                     gVar.l();
@@ -76,70 +76,70 @@ public class f {
             gVar = new com.tsf.shell.f.i.c.b(0.42f, f3, f3) { // from class: com.tsf.shell.manager.r.c.f.5
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new h(new VTextureManager(), com.censivn.C3DEngine.a.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.a.c);
+                    return new h(new VTextureManager(), com.censivn.C3DEngine.A.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.A.c);
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.message")) {
-            gVar = new com.tsf.shell.f.i.c.b(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.manager.r.c.f.6
+            gVar = new com.tsf.shell.f.i.c.b(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.f.6
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.g(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.g(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.alarm")) {
-            gVar = new com.tsf.shell.f.i.c.b(0.33f, f3, com.censivn.C3DEngine.b.b.a.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.f.7
+            gVar = new com.tsf.shell.f.i.c.b(0.33f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.f.7
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.b(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.b(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.calendar")) {
-            gVar = new com.tsf.shell.f.i.c.b(0.28f, f3, com.censivn.C3DEngine.b.b.a.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.f.8
+            gVar = new com.tsf.shell.f.i.c.b(0.28f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.f.8
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.a.b(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.a.b(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.cubeclock")) {
-            gVar = new com.tsf.shell.f.i.c.b(0.6f * com.censivn.C3DEngine.b.b.a.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.f.9
+            gVar = new com.tsf.shell.f.i.c.b(0.6f * com.censivn.C3DEngine.b.b.A.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.f.9
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.b.c(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.b.c(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.weather")) {
-            gVar = new com.tsf.shell.f.i.c.b(f, f3, (-20.0f) * com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.manager.r.c.f.10
+            gVar = new com.tsf.shell.f.i.c.b(f, f3, (-20.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.f.10
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new m(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new m(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.memo")) {
-            gVar = new com.tsf.shell.f.i.c.b(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.manager.r.c.f.11
+            gVar = new com.tsf.shell.f.i.c.b(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.f.11
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.f(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.f(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.gallery")) {
             gVar = new com.tsf.shell.f.i.c.b(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.f.12
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.d(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.d(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.adornment")) {
-            gVar = new com.tsf.shell.f.i.c.b(0.55f, f3, (-50.0f) * com.censivn.C3DEngine.b.b.a.c) { // from class: com.tsf.shell.manager.r.c.f.2
+            gVar = new com.tsf.shell.f.i.c.b(0.55f, f3, (-50.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.f.2
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.a(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.a(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.dotsclock")) {
             gVar = new com.tsf.shell.f.i.c.b(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.f.3
                 @Override // com.tsf.shell.f.i.c.b
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.c.c(new VTextureManager(), com.censivn.C3DEngine.a.d());
+                    return new com.tsf.shell.f.i.c.a.c.c(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else {
@@ -164,14 +164,14 @@ public class f {
                         this.k.destroy();
                     }
                     if (this.l.id != 0) {
-                        com.censivn.C3DEngine.a.g().a(this.l);
+                        com.censivn.C3DEngine.A.g().a(this.l);
                     }
                 }
 
                 @Override // com.tsf.shell.f.i.c.g, com.tsf.shell.f.i.c.e
                 public void b() {
                     if (this.l.id != 0) {
-                        com.censivn.C3DEngine.a.g().a(this.l);
+                        com.censivn.C3DEngine.A.g().a(this.l);
                     }
                     super.b();
                 }
@@ -180,10 +180,10 @@ public class f {
                     if (this.l.id == 0) {
                         Bitmap bitmapA = null;
                         try {
-                            Context contextD = com.censivn.C3DEngine.a.d();
+                            Context contextD = com.censivn.C3DEngine.A.d();
                             String str2 = this.a;
-                            com.censivn.C3DEngine.a.d();
-                            com.censivn.C3DEngine.a.d();
+                            com.censivn.C3DEngine.A.d();
+                            com.censivn.C3DEngine.A.d();
                             Context contextCreatePackageContext = contextD.createPackageContext(str2, 3);
                             if (contextCreatePackageContext.getApplicationInfo() != null && contextCreatePackageContext.getApplicationInfo().icon != 0) {
                                 bitmapA = x.a(contextCreatePackageContext.getResources(), contextCreatePackageContext.getApplicationInfo().icon, (int) this.k.b(), (int) this.k.c());
@@ -194,7 +194,7 @@ public class f {
                         if (bitmapA == null) {
                             bitmapA = x.a(b.d.sym_def_app_icon, (int) this.k.b(), (int) this.k.c());
                         }
-                        com.censivn.C3DEngine.a.g().a(this.l, bitmapA);
+                        com.censivn.C3DEngine.A.g().a(this.l, bitmapA);
                         bitmapA.recycle();
                     }
                 }

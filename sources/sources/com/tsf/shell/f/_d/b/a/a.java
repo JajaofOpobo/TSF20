@@ -47,12 +47,12 @@ public class a extends j {
     private void b() {
         if (this.b.id == 0) {
             Bitmap bitmapA = this.h.a();
-            com.censivn.C3DEngine.a.g().a(this.b, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
             bitmapA.recycle();
         }
         if (this.c.id == 0) {
             Bitmap bitmapB = this.h.b();
-            com.censivn.C3DEngine.a.g().a(this.c, bitmapB);
+            com.censivn.C3DEngine.A.g().a(this.c, bitmapB);
             bitmapB.recycle();
         }
     }
@@ -70,8 +70,8 @@ public class a extends j {
     }
 
     public void a() {
-        com.censivn.C3DEngine.a.g().a(this.b);
-        com.censivn.C3DEngine.a.g().a(this.c);
+        com.censivn.C3DEngine.A.g().a(this.b);
+        com.censivn.C3DEngine.A.g().a(this.c);
         this.d.id = 0;
     }
 

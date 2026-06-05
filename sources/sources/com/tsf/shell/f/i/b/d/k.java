@@ -228,7 +228,7 @@ public class k {
         if (this.p) {
             this.a = false;
             this.p = false;
-            com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.k.4
+            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.k.4
                 @Override // java.lang.Runnable
                 public void run() {
                     k.this.g();
@@ -243,8 +243,8 @@ public class k {
                     }
                     k.this.i = k.this.h;
                     Number3d number3dLocalToGlobal = k.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
-                    k.this.j = (int) (com.censivn.C3DEngine.b.b.a.H + number3dLocalToGlobal.x);
-                    k.this.k = (int) (com.censivn.C3DEngine.b.b.a.I - number3dLocalToGlobal.y);
+                    k.this.j = (int) (com.censivn.C3DEngine.b.b.A.H + number3dLocalToGlobal.x);
+                    k.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
                     k.this.l = motionEvent2.getX();
                     k.this.m = motionEvent2.getY();
                     Iterator<com.censivn.C3DEngine.b.f.i> it = k.this.d.children().iterator();

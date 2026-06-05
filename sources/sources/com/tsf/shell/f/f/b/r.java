@@ -10,6 +10,6 @@ public class r extends com.tsf.shell.f.f.l {
 
     @Override // com.tsf.shell.f.f.l
     public void a(com.tsf.shell.f.f.g gVar, float f) {
-        gVar.position().x = com.censivn.C3DEngine.b.b.a.D * f;
+        gVar.position().x = com.censivn.C3DEngine.b.b.A.D * f;
     }
 }

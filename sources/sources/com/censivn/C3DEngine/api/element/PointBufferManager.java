@@ -51,7 +51,7 @@ public class PointBufferManager {
 
     public Number3d getAsNumber3dSP(int i) {
         this.mBuffer.position(i * 3);
-        return new Number3d(this.mBuffer.get() / a.a, this.mBuffer.get() / a.a, this.mBuffer.get() / a.a);
+        return new Number3d(this.mBuffer.get() / A.a, this.mBuffer.get() / A.a, this.mBuffer.get() / A.a);
     }
 
     public void putInNumber3d(int i, Number3d number3d) {
@@ -93,29 +93,29 @@ public class PointBufferManager {
 
     public float spX(int i) {
         this.mBuffer.position(i * 3);
-        return this.mBuffer.get() / a.a;
+        return this.mBuffer.get() / A.a;
     }
 
     public float spY(int i) {
         this.mBuffer.position((i * 3) + 1);
-        return this.mBuffer.get() / a.a;
+        return this.mBuffer.get() / A.a;
     }
 
     public float spZ(int i) {
         this.mBuffer.position((i * 3) + 2);
-        return this.mBuffer.get() / a.a;
+        return this.mBuffer.get() / A.a;
     }
 
     public void spX(int i, float f) {
-        pxX(i, a.a * f);
+        pxX(i, A.a * f);
     }
 
     public void spY(int i, float f) {
-        pxY(i, a.a * f);
+        pxY(i, A.a * f);
     }
 
     public void spZ(int i, float f) {
-        pxZ(i, a.a * f);
+        pxZ(i, A.a * f);
     }
 
     public void addPX(Number3d number3d) {
@@ -147,9 +147,9 @@ public class PointBufferManager {
 
     public void setSP(int i, Number3d number3d) {
         this.mBuffer.position(i * 3);
-        this.mBuffer.put(number3d.x * a.a);
-        this.mBuffer.put(number3d.y * a.a);
-        this.mBuffer.put(number3d.z * a.a);
+        this.mBuffer.put(number3d.x * A.a);
+        this.mBuffer.put(number3d.y * A.a);
+        this.mBuffer.put(number3d.z * A.a);
     }
 
     public void setPX(int i, float f, float f2, float f3) {
@@ -171,9 +171,9 @@ public class PointBufferManager {
 
     public void setSP(int i, float f, float f2, float f3) {
         this.mBuffer.position(i * 3);
-        this.mBuffer.put(a.a * f);
-        this.mBuffer.put(a.a * f2);
-        this.mBuffer.put(a.a * f2);
+        this.mBuffer.put(A.a * f);
+        this.mBuffer.put(A.a * f2);
+        this.mBuffer.put(A.a * f2);
     }
 
     public FloatBuffer buffer() {

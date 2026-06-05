@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends b {
-    private static final float d = com.censivn.C3DEngine.b.b.a.a(70.0f);
+    private static final float d = com.censivn.C3DEngine.b.b.A.a(70.0f);
     private k b;
     private TextureElement c;
     private int e;
@@ -18,7 +18,7 @@ public class a extends b {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (a.this.c.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(a.this.c, a.this.e);
+                    com.censivn.C3DEngine.A.g().a(a.this.c, a.this.e);
                 }
             }
         };
@@ -28,7 +28,7 @@ public class a extends b {
 
     public void a() {
         if (this.c.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.c);
+            com.censivn.C3DEngine.A.g().a(this.c);
         }
     }
 }

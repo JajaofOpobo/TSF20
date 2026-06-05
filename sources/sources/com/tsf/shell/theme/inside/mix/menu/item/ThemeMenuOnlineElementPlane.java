@@ -12,7 +12,7 @@ public class ThemeMenuOnlineElementPlane extends ThemeIconPlane {
 
     public ThemeMenuOnlineElementPlane() {
         this.icon.calAABB();
-        this.icon.position().y = (-10.0f) * com.censivn.C3DEngine.b.b.a.c;
+        this.icon.position().y = (-10.0f) * com.censivn.C3DEngine.b.b.A.c;
         addChild(this.icon);
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
         showMask();
@@ -27,8 +27,8 @@ public class ThemeMenuOnlineElementPlane extends ThemeIconPlane {
     public void enableNotifPoint() {
         if (mNotifPoint == null) {
             mNotifPoint = new k();
-            mNotifPoint.position().x = com.censivn.C3DEngine.b.b.a.a(100.0f);
-            mNotifPoint.position().y = com.censivn.C3DEngine.b.b.a.a(90.0f);
+            mNotifPoint.position().x = com.censivn.C3DEngine.b.b.A.a(100.0f);
+            mNotifPoint.position().y = com.censivn.C3DEngine.b.b.A.a(90.0f);
         }
         this.mNotifPointState = true;
     }

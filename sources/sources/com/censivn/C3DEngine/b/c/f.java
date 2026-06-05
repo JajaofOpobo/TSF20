@@ -20,7 +20,7 @@ public class f {
     }
 
     public TextureElement a(int i, int i2, boolean z) {
-        TextureElement textureElement = new TextureElement(com.censivn.C3DEngine.a.e().a(i, i2, z), z);
+        TextureElement textureElement = new TextureElement(com.censivn.C3DEngine.A.e().a(i, i2, z), z);
         textureElement.width = i;
         textureElement.height = i2;
         this.b++;
@@ -28,7 +28,7 @@ public class f {
     }
 
     public TextureElement a(Bitmap bitmap, boolean z) {
-        TextureElement textureElement = new TextureElement(com.censivn.C3DEngine.a.e().a(bitmap, z), z);
+        TextureElement textureElement = new TextureElement(com.censivn.C3DEngine.A.e().a(bitmap, z), z);
         textureElement.width = bitmap.getWidth();
         textureElement.height = bitmap.getHeight();
         this.b++;
@@ -50,21 +50,21 @@ public class f {
     public void a(TextureElement textureElement, Bitmap bitmap) {
         if (textureElement != null) {
             if (textureElement.id == 0) {
-                textureElement.id = com.censivn.C3DEngine.a.e().a(bitmap, textureElement.mipMap);
+                textureElement.id = com.censivn.C3DEngine.A.e().a(bitmap, textureElement.mipMap);
                 textureElement.width = bitmap.getWidth();
                 textureElement.height = bitmap.getHeight();
                 this.b++;
             } else if (textureElement.width != bitmap.getWidth() || textureElement.height != bitmap.getHeight()) {
                 if (textureElement.id != 0) {
                     this.b--;
-                    com.censivn.C3DEngine.a.e().a(textureElement.id);
+                    com.censivn.C3DEngine.A.e().a(textureElement.id);
                 }
-                textureElement.id = com.censivn.C3DEngine.a.e().a(bitmap, textureElement.mipMap);
+                textureElement.id = com.censivn.C3DEngine.A.e().a(bitmap, textureElement.mipMap);
                 textureElement.width = bitmap.getWidth();
                 textureElement.height = bitmap.getHeight();
                 this.b++;
             } else {
-                com.censivn.C3DEngine.a.e().a(textureElement.id, bitmap, 0, 0);
+                com.censivn.C3DEngine.A.e().a(textureElement.id, bitmap, 0, 0);
             }
             textureElement.width = bitmap.getWidth();
             textureElement.height = bitmap.getHeight();
@@ -79,7 +79,7 @@ public class f {
             if (textureElement.id != 0) {
                 if (textureElement.id != 0) {
                     this.b--;
-                    com.censivn.C3DEngine.a.e().a(textureElement.id);
+                    com.censivn.C3DEngine.A.e().a(textureElement.id);
                     textureElement.id = 0;
                 }
                 if (textureElement instanceof DynamicTextureElement) {

@@ -17,7 +17,7 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
         this.b = new ArrayList<>();
         this.e = 0.0f;
         this.f = 0.0f;
-        this.a = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.a.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.a.c, com.censivn.C3DEngine.b.b.a.c * 20.0f, this.e, this.f);
+        this.a = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, this.e, this.f);
         this.c.addChild(this.a);
         this.a.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.e.1
             @Override // com.censivn.C3DEngine.b.h.b.b
@@ -27,7 +27,7 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                i hVar = iVar == null ? new h(e.this.e, e.this.f, com.censivn.C3DEngine.b.b.a.a(30.0f), true) : iVar;
+                i hVar = iVar == null ? new h(e.this.e, e.this.f, com.censivn.C3DEngine.b.b.A.a(30.0f), true) : iVar;
                 h hVar2 = (h) hVar;
                 if (hVar2.b() != e.this.e || hVar2.c() != e.this.f) {
                     hVar2.a(e.this.e, e.this.f);
@@ -41,7 +41,7 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
                 ((h) iVar).d();
             }
         });
-        this.a.b(0.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f);
+        this.a.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
         this.a.a(new f(dVar) { // from class: com.tsf.shell.manager.r.b.c.e.2
             @Override // com.tsf.shell.manager.r.b.c.f, com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
@@ -92,8 +92,8 @@ public class e extends com.tsf.shell.manager.r.b.b.a {
 
     @Override // com.tsf.shell.manager.r.b.b.a
     public void a(float f, float f2, float f3, float f4) {
-        this.e = (com.censivn.C3DEngine.b.b.a.D - (120.0f * com.censivn.C3DEngine.b.b.a.c)) / 2.0f;
-        this.f = 370.0f * com.censivn.C3DEngine.b.b.a.c;
+        this.e = (com.censivn.C3DEngine.b.b.A.D - (120.0f * com.censivn.C3DEngine.b.b.A.c)) / 2.0f;
+        this.f = 370.0f * com.censivn.C3DEngine.b.b.A.c;
         this.a.a(this.e, this.f);
         this.a.a(f, f2, f3, f4);
     }

@@ -34,7 +34,7 @@ public class A {
         String string;
         Bitmap defaultIconUponBitmap;
         if (a == null) {
-            a = com.censivn.C3DEngine.a.d().getPackageManager();
+            a = com.censivn.C3DEngine.A.d().getPackageManager();
         }
         float defaultIconScale = ThemeManager.mix.icon.getDefaultIconScale();
         Bitmap bitmapA = aVar.a();
@@ -128,8 +128,8 @@ public class A {
             Bitmap bitmapB = aVar2.b(Integer.toString(fVar.h()));
             Bitmap bitmap2 = ThemeManager.mix.unreadCount.getTheme().getBitmap(ThemeShellDescription.UNREAD_COUNT_BG, com.tsf.shell.manager.g.a.r, com.tsf.shell.manager.g.a.r);
             int width = bitmapB.getWidth();
-            if (width + (28.0f * com.censivn.C3DEngine.b.b.a.b) > bitmap2.getWidth()) {
-                bitmap2 = q.e(bitmap2, bitmap2.getWidth() / 2, width + ((int) (28.0f * com.censivn.C3DEngine.b.b.a.b)));
+            if (width + (28.0f * com.censivn.C3DEngine.b.b.A.b) > bitmap2.getWidth()) {
+                bitmap2 = q.e(bitmap2, bitmap2.getWidth() / 2, width + ((int) (28.0f * com.censivn.C3DEngine.b.b.A.b)));
             }
             new Canvas(bitmap2).drawBitmap(bitmapB, ((bitmap2.getWidth() - bitmapB.getWidth()) / 2) - 1, ((bitmap2.getHeight() - bitmapB.getHeight()) / 2) - 4, (Paint) null);
             bitmapB.recycle();

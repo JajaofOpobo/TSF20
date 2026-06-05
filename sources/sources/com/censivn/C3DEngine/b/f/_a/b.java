@@ -128,8 +128,8 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.a.a;
-        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.a.a;
+        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.A.a;
+        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void d(int i, int i2, int i3, int i4) {
@@ -137,8 +137,8 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.a.b;
-        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.a.b;
+        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.A.b;
+        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.A.b;
     }
 
     public void a(int i, int i2, int i3, int i4, float f, float f2) {
@@ -164,8 +164,8 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = i5 * com.censivn.C3DEngine.b.b.a.a;
-        this.O = i6 * com.censivn.C3DEngine.b.b.a.a;
+        this.N = i5 * com.censivn.C3DEngine.b.b.A.a;
+        this.O = i6 * com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void a(int i, int i2) {
@@ -184,22 +184,22 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     public void c(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.a.a;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.a.a;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.a;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void d(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.a.b;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.a.b;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.b;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.b;
     }
 
     public void e(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.a.c;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.a.c;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.c;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.c;
     }
 
     public void f(int i, int i2) {
@@ -253,7 +253,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void c(float f) {
-        this.N = com.censivn.C3DEngine.b.b.a.a * f;
+        this.N = com.censivn.C3DEngine.b.b.A.a * f;
     }
 
     public float m() {
@@ -261,7 +261,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public float n() {
-        return this.N / com.censivn.C3DEngine.b.b.a.a;
+        return this.N / com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void d(float f) {
@@ -269,7 +269,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void e(float f) {
-        this.O = com.censivn.C3DEngine.b.b.a.a * f;
+        this.O = com.censivn.C3DEngine.b.b.A.a * f;
     }
 
     public float o() {
@@ -277,7 +277,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public float p() {
-        return this.O / com.censivn.C3DEngine.b.b.a.a;
+        return this.O / com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void a(int i) {
@@ -285,7 +285,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void b(int i) {
-        this.P = i * com.censivn.C3DEngine.b.b.a.a;
+        this.P = i * com.censivn.C3DEngine.b.b.A.a;
     }
 
     public float q() {
@@ -293,7 +293,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public float r() {
-        return this.P / com.censivn.C3DEngine.b.b.a.a;
+        return this.P / com.censivn.C3DEngine.b.b.A.a;
     }
 
     public void c(int i) {
@@ -301,7 +301,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void d(int i) {
-        this.Q = i * com.censivn.C3DEngine.b.b.a.a;
+        this.Q = i * com.censivn.C3DEngine.b.b.A.a;
     }
 
     public float s() {
@@ -309,7 +309,7 @@ public class b implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public float t() {
-        return this.Q / com.censivn.C3DEngine.b.b.a.a;
+        return this.Q / com.censivn.C3DEngine.b.b.A.a;
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.a

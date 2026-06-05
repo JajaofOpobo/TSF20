@@ -43,11 +43,11 @@ public class d extends j {
         this.e.a(bVar.d());
         this.e.b();
         float fMaxX = this.e.maxX() - this.e.minY();
-        float fA = com.censivn.C3DEngine.b.b.a.a(720.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(720.0f);
         if (fMaxX >= fA) {
             fA = fMaxX;
         }
-        setAABBPX(fA, com.censivn.C3DEngine.b.b.a.a(130.0f));
+        setAABBPX(fA, com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.d.alpha(0.0f);
         this.e.alpha(0.0f);
         h();
@@ -60,11 +60,11 @@ public class d extends j {
     }
 
     public float a() {
-        return com.censivn.C3DEngine.b.b.a.a(30.0f);
+        return com.censivn.C3DEngine.b.b.A.a(30.0f);
     }
 
     public float b() {
-        return com.censivn.C3DEngine.b.b.a.a(-30.0f);
+        return com.censivn.C3DEngine.b.b.A.a(-30.0f);
     }
 
     public i c() {
@@ -86,7 +86,7 @@ public class d extends j {
     }
 
     private void i() {
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(50.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(50.0f);
         if (this.a.id == 0) {
             com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
             aVar.h(36);
@@ -96,12 +96,12 @@ public class d extends j {
             aVar.d(iA);
             Bitmap bitmapB = aVar.b(this.b);
             Canvas canvas = new Canvas(bitmapB);
-            float fA = com.censivn.C3DEngine.b.b.a.a(25.0f);
+            float fA = com.censivn.C3DEngine.b.b.A.a(25.0f);
             Paint paint = new Paint();
             paint.setAntiAlias(true);
             paint.setColor(-1);
             canvas.drawCircle(iA / 2.0f, bitmapB.getHeight() / 2.0f, fA / 2.0f, paint);
-            com.censivn.C3DEngine.a.g().a(this.a, bitmapB);
+            com.censivn.C3DEngine.A.g().a(this.a, bitmapB);
             bitmapB.recycle();
         }
         this.d.a(1, this.a.width, this.a.height);
@@ -122,7 +122,7 @@ public class d extends j {
 
     public void g() {
         if (this.a.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.a);
+            com.censivn.C3DEngine.A.g().a(this.a);
         }
         this.e.a();
         this.f.a();

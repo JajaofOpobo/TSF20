@@ -10,7 +10,7 @@ public class l extends com.censivn.C3DEngine.b.f.j {
     private float d;
 
     public l(int i, int i2) {
-        this.b.a(com.censivn.C3DEngine.b.b.a.c * 70.0f, com.censivn.C3DEngine.b.b.a.c * 70.0f);
+        this.b.a(com.censivn.C3DEngine.b.b.A.c * 70.0f, com.censivn.C3DEngine.b.b.A.c * 70.0f);
         this.b.a(I);
         this.b.calAABB();
         this.c = new com.censivn.C3DEngine.b.f.m();
@@ -45,12 +45,12 @@ public class l extends com.censivn.C3DEngine.b.f.j {
 
     private void c() {
         this.b.position().x = this.b.b() / 2.0f;
-        this.c.position().x = this.b.position().x + (this.b.b() / 2.0f) + com.censivn.C3DEngine.b.b.a.a(20.0f);
+        this.c.position().x = this.b.position().x + (this.b.b() / 2.0f) + com.censivn.C3DEngine.b.b.A.a(20.0f);
     }
 
     private void d() {
         c();
-        float fA = com.censivn.C3DEngine.b.b.a.a(100.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(100.0f);
         switch (this.a) {
             case 0:
                 this.b.position().x -= this.d / 2.0f;

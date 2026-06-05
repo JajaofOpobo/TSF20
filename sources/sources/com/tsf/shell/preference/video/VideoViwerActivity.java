@@ -40,7 +40,7 @@ public class VideoViwerActivity extends Activity {
         }
         try {
             Intent intent = new Intent();
-            intent.setClass(com.censivn.C3DEngine.a.d(), VideoViwerActivity.class);
+            intent.setClass(com.censivn.C3DEngine.A.d(), VideoViwerActivity.class);
             context.startActivity(intent);
         } catch (Exception e2) {
         }

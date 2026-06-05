@@ -249,7 +249,7 @@ public class q {
     }
 
     public static Bitmap b(float f, int i) {
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(f * 2.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(f * 2.0f);
         float f2 = iA / 2.0f;
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iA + 2, iA + 2, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
@@ -262,9 +262,9 @@ public class q {
     }
 
     public static void a(Canvas canvas, float f, float f2, float f3, int i) {
-        float fA = com.censivn.C3DEngine.b.b.a.a(f2);
-        float fA2 = com.censivn.C3DEngine.b.b.a.a(f3);
-        float fA3 = ((int) com.censivn.C3DEngine.b.b.a.a(f * 2.0f)) / 2.0f;
+        float fA = com.censivn.C3DEngine.b.b.A.a(f2);
+        float fA2 = com.censivn.C3DEngine.b.b.A.a(f3);
+        float fA3 = ((int) com.censivn.C3DEngine.b.b.A.a(f * 2.0f)) / 2.0f;
         Paint paint = new Paint();
         paint.setAntiAlias(true);
         paint.setColor(i);

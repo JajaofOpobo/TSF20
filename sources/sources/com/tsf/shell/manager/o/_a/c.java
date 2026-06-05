@@ -33,7 +33,7 @@ public class c {
     }
 
     public static void a() {
-        b.a = com.censivn.C3DEngine.a.d().getResources().getDimensionPixelSize(b.c.shortcut_text_size);
+        b.a = com.censivn.C3DEngine.A.d().getResources().getDimensionPixelSize(b.c.shortcut_text_size);
         c = new ArrayList<>();
         c.add(new d(-1, new a()));
         a aVar = new a();
@@ -134,7 +134,7 @@ public class c {
         }
         d.setFakeBoldText(aVar2.d);
         if (aVar2.c) {
-            d.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.a.c, 2.0f * com.censivn.C3DEngine.b.b.a.c, 2.0f * com.censivn.C3DEngine.b.b.a.c, -587202560);
+            d.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.A.c, 2.0f * com.censivn.C3DEngine.b.b.A.c, 2.0f * com.censivn.C3DEngine.b.b.A.c, -587202560);
         } else {
             d.setShadowLayer(0.0f, 0.0f, 0.0f, -16777216);
         }

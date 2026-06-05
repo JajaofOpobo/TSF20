@@ -30,7 +30,7 @@ public class j {
             canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
             a.a(canvas, bitmapA, bitmapA2, true);
             com.tsf.shell.f.i.b.e.b.a(bitmapA3);
-            com.censivn.C3DEngine.a.g().a(textureElement, bitmapA3);
+            com.censivn.C3DEngine.A.g().a(textureElement, bitmapA3);
         }
     }
 }

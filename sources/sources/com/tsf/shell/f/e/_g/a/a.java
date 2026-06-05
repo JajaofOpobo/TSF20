@@ -174,8 +174,8 @@ public class a extends c {
 
         private void k() {
             if (this.a.id == 0) {
-                Bitmap bitmapCreateCustomIco = a.createCustomIco(this.f, x.a(this.e, com.censivn.C3DEngine.b.b.a.c * 60.0f, com.censivn.C3DEngine.b.b.a.c * 60.0f));
-                com.censivn.C3DEngine.a.g().a(this.a, bitmapCreateCustomIco);
+                Bitmap bitmapCreateCustomIco = a.createCustomIco(this.f, x.a(this.e, com.censivn.C3DEngine.b.b.A.c * 60.0f, com.censivn.C3DEngine.b.b.A.c * 60.0f));
+                com.censivn.C3DEngine.A.g().a(this.a, bitmapCreateCustomIco);
                 bitmapCreateCustomIco.recycle();
                 if (b() != this.a.width) {
                     a(this.a.width);
@@ -187,7 +187,7 @@ public class a extends c {
 
         public void j() {
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.a);
+                com.censivn.C3DEngine.A.g().a(this.a);
             }
         }
     }
@@ -201,8 +201,8 @@ public class a extends c {
         textCreater.h(40);
         textCreater.i(-1);
         Bitmap bitmapB = textCreater.b(str);
-        int i = (int) (92.0f * com.censivn.C3DEngine.b.b.a.c);
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + i + ((int) (0.0f * com.censivn.C3DEngine.b.b.a.c)), i, Bitmap.Config.ARGB_8888);
+        int i = (int) (92.0f * com.censivn.C3DEngine.b.b.A.c);
+        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + i + ((int) (0.0f * com.censivn.C3DEngine.b.b.A.c)), i, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
         Paint paint = new Paint();

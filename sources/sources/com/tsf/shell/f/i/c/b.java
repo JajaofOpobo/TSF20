@@ -54,7 +54,7 @@ public class b extends g {
     @Override // com.tsf.shell.f.i.c.g
     public void c() {
         if (this.r != null) {
-            com.censivn.C3DEngine.a.a().g(this.r);
+            com.censivn.C3DEngine.A.a().g(this.r);
             this.r = null;
         }
         if (this.l != null) {
@@ -66,7 +66,7 @@ public class b extends g {
     public void d() {
         if (this.l != null && this.r == null) {
             this.r = this.q;
-            com.censivn.C3DEngine.a.a().b(this.r, 500L);
+            com.censivn.C3DEngine.A.a().b(this.r, 500L);
         }
     }
 

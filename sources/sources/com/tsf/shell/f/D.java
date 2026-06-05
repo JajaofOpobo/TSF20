@@ -52,8 +52,8 @@ public class D {
                 d.c.f();
             }
         };
-        com.censivn.C3DEngine.a.e().j();
-        com.censivn.C3DEngine.a.a().c(runnable);
+        com.censivn.C3DEngine.A.e().j();
+        com.censivn.C3DEngine.A.a().c(runnable);
     }
 
     public void f() {
@@ -65,7 +65,7 @@ public class D {
                 d.this.a.onPause();
             }
         };
-        com.censivn.C3DEngine.a.e().j();
-        com.censivn.C3DEngine.a.a().c(runnable);
+        com.censivn.C3DEngine.A.e().j();
+        com.censivn.C3DEngine.A.a().c(runnable);
     }
 }

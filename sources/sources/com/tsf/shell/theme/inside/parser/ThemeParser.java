@@ -309,7 +309,7 @@ public class ThemeParser extends DefaultHandler {
     }
 
     public static int parseDimension(String str, float f) {
-        return (int) (j.a(str) * f * com.censivn.C3DEngine.b.b.a.f);
+        return (int) (j.a(str) * f * com.censivn.C3DEngine.b.b.A.f);
     }
 
     public static int parseInteger(String str, int i) {

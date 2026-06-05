@@ -14,10 +14,10 @@ public class e extends j {
     private ArrayList<Number3d> b;
     private d d;
     private Number3d c = new Number3d();
-    private int f = com.censivn.C3DEngine.b.b.a.B;
-    private int g = com.censivn.C3DEngine.b.b.a.C;
-    private int h = com.censivn.C3DEngine.b.b.a.z;
-    private int i = com.censivn.C3DEngine.b.b.a.A;
+    private int f = com.censivn.C3DEngine.b.b.A.B;
+    private int g = com.censivn.C3DEngine.b.b.A.C;
+    private int h = com.censivn.C3DEngine.b.b.A.z;
+    private int i = com.censivn.C3DEngine.b.b.A.A;
     private boolean j = false;
     private a e = new a(this);
 

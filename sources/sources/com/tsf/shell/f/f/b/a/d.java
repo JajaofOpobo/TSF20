@@ -65,7 +65,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
         }
         j.a aVarJ = gVar.j();
         this.a.alpha((1.0f - Math.abs(f)) * 255.0f);
-        this.a.position().y = com.censivn.C3DEngine.b.b.a.a(400.0f) * f;
+        this.a.position().y = com.censivn.C3DEngine.b.b.A.a(400.0f) * f;
         this.a.textures().clear();
         this.a.textures().addElement(aVarJ.b);
         this.a.dispatchDraw();
@@ -134,7 +134,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
                 @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
-                    com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.a.a(20.0f));
+                    com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.A.a(20.0f));
                 }
             };
         }

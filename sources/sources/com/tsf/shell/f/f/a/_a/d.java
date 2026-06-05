@@ -20,7 +20,7 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
     public d(c cVar) {
         super(cVar, b.d.allapps_recent_icon);
         this.d = new TextureElement(0, false);
-        this.f = -com.censivn.C3DEngine.b.b.a.a(50.0f);
+        this.f = -com.censivn.C3DEngine.b.b.A.a(50.0f);
         this.c = new ArrayList<>();
         this.b = new com.tsf.shell.f.e.D<com.tsf.shell.f.i._b.e.e>() { // from class: com.tsf.shell.f.f.a._a.d.1
             @Override // com.tsf.shell.f.e.D
@@ -36,11 +36,11 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
             }
         };
         com.tsf.shell.manager.a.w.a().a().a(this.a);
-        this.e = new k(com.censivn.C3DEngine.b.b.a.a(60.0f), com.censivn.C3DEngine.b.b.a.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.d.3
+        this.e = new k(com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.d.3
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.d.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(d.this.d, b.d.allapps_direction_swap);
+                    com.censivn.C3DEngine.A.g().a(d.this.d, b.d.allapps_direction_swap);
                 }
             }
         };
@@ -102,7 +102,7 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
     public void f() {
         super.f();
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
         v();
     }

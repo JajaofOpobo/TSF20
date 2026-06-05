@@ -20,13 +20,13 @@ public class b extends i {
         b(this.f);
         this.e = new com.censivn.C3DEngine.b.e.a();
         this.e.h(b.i.text_default_scale);
-        this.e.b("" + com.censivn.C3DEngine.b.b.a.e);
+        this.e.b("" + com.censivn.C3DEngine.b.b.A.e);
         this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.b.1
             @Override // com.censivn.C3DEngine.b.e.a.C0027a
             public boolean a(boolean z) {
                 b.this.c = z;
                 if (b.this.c) {
-                    b.this.b(com.censivn.C3DEngine.b.b.a.e);
+                    b.this.b(com.censivn.C3DEngine.b.b.A.e);
                 }
                 b.this.i();
                 return true;
@@ -85,7 +85,7 @@ public class b extends i {
         this.g = fAj;
         this.c = fAj == 0.0f;
         this.e.c(this.c);
-        b(com.censivn.C3DEngine.b.b.a.d);
+        b(com.censivn.C3DEngine.b.b.A.d);
         i();
         i();
     }

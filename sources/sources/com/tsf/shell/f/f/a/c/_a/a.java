@@ -39,7 +39,7 @@ public class a {
         this.h = new d.a() { // from class: com.tsf.shell.f.f.a.c._a.a.1
             @Override // com.tsf.shell.f.f.a.d.a, com.tsf.shell.plugin.classification.d.InterfaceC0151d
             public void a(final d.a aVar2) {
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.1.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.a(aVar2);
@@ -64,7 +64,7 @@ public class a {
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
-        this.b = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.a.a(140.0f), b.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.a.2
+        this.b = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.A.a(140.0f), b.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.a.2
             @Override // com.censivn.C3DEngine.b.h.d.b, com.censivn.C3DEngine.b.f.a.a, com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 f();
@@ -124,7 +124,7 @@ public class a {
                 a.this.b.visible(true);
                 a.this.e = 360.0f;
                 a.this.f = 0.0f;
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.3.1
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.c._a.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.i = com.tsf.shell.manager.a.h.t().am().a(a.this.h);

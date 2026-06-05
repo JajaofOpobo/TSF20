@@ -225,7 +225,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
             }
             if (!this.p) {
                 this.p = true;
-                com.censivn.C3DEngine.a.a().b(this.q);
+                com.censivn.C3DEngine.A.a().b(this.q);
             }
         }
     }

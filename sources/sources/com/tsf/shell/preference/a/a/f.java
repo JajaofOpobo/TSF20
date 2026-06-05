@@ -22,7 +22,7 @@ public class f extends i {
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.f.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.f.1.1
+                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.f.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         f.this.j();
@@ -47,7 +47,7 @@ public class f extends i {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
         builder.setTitle(b.i.mn_folder_animation);
         final int iAr = com.tsf.shell.manager.b.e.ar();
         builder.setSingleChoiceItems(new String[]{x.c(b.i.mn_folder_animation_quick), x.c(b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.3

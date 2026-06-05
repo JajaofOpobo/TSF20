@@ -15,12 +15,12 @@ public class i extends com.tsf.shell.f.f.l {
 
     public i(int i, boolean z) {
         super(i, b.d.desktop_transition_fold_page, z);
-        this.a = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.G, false);
-        this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.G, false);
-        this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.G, false, true) { // from class: com.tsf.shell.f.f.b.i.1
+        this.a = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
+        this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
+        this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.i.1
             @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
             public void draw() {
-                com.censivn.C3DEngine.a.e().a(this);
+                com.censivn.C3DEngine.A.e().a(this);
                 updateTextureState();
                 ShaderColorTexture shaderColorTexture = ShaderManager.SHADER_COLOR_TEXTURE;
                 ShaderManager.enableShader(shaderColorTexture);
@@ -50,16 +50,16 @@ public class i extends com.tsf.shell.f.f.l {
 
     private void o() {
         if (this.a != null) {
-            this.a.a(com.censivn.C3DEngine.b.b.a.H);
-            this.a.b(com.censivn.C3DEngine.b.b.a.G);
-            this.b.a(com.censivn.C3DEngine.b.b.a.H);
-            this.b.b(com.censivn.C3DEngine.b.b.a.G);
-            this.c.points().setPX(0, 0.0f, -com.censivn.C3DEngine.b.b.a.I, 0.0f);
-            this.c.points().setPX(1, -com.censivn.C3DEngine.b.b.a.H, -com.censivn.C3DEngine.b.b.a.I, 0.0f);
-            this.c.points().setPX(2, 0.0f, com.censivn.C3DEngine.b.b.a.I, 0.0f);
-            this.c.points().setPX(3, -com.censivn.C3DEngine.b.b.a.H, com.censivn.C3DEngine.b.b.a.I, 0.0f);
-            this.a.position().x = (-com.censivn.C3DEngine.b.b.a.H) / 2.0f;
-            this.b.position().x = com.censivn.C3DEngine.b.b.a.H / 2.0f;
+            this.a.a(com.censivn.C3DEngine.b.b.A.H);
+            this.a.b(com.censivn.C3DEngine.b.b.A.G);
+            this.b.a(com.censivn.C3DEngine.b.b.A.H);
+            this.b.b(com.censivn.C3DEngine.b.b.A.G);
+            this.c.points().setPX(0, 0.0f, -com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.c.points().setPX(1, -com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.c.points().setPX(2, 0.0f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.c.points().setPX(3, -com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.a.position().x = (-com.censivn.C3DEngine.b.b.A.H) / 2.0f;
+            this.b.position().x = com.censivn.C3DEngine.b.b.A.H / 2.0f;
         }
     }
 

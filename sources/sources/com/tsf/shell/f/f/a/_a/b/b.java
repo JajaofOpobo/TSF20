@@ -17,8 +17,8 @@ public class b extends j {
     private com.tsf.shell.f.f.a._a.a.c g;
     private float h;
     private static TextureElement b = new TextureElement(0, false);
-    public static int a = com.censivn.C3DEngine.b.b.a.b(138.0f);
-    private static int c = com.censivn.C3DEngine.b.b.a.b(8.0f);
+    public static int a = com.censivn.C3DEngine.b.b.A.b(138.0f);
+    private static int c = com.censivn.C3DEngine.b.b.A.b(8.0f);
 
     public b(com.tsf.shell.f.f.a._a.a.c cVar) {
         this.g = cVar;
@@ -26,9 +26,9 @@ public class b extends j {
             d = new k(a, a, false);
             d.textures().addElement(b);
         }
-        this.f = new k(com.censivn.C3DEngine.b.b.a.a(6.0f), 0.0f, false);
+        this.f = new k(com.censivn.C3DEngine.b.b.A.a(6.0f), 0.0f, false);
         this.f.useVBO(false);
-        this.f.position().y = -com.censivn.C3DEngine.b.b.a.a(90.0f);
+        this.f.position().y = -com.censivn.C3DEngine.b.b.A.a(90.0f);
         this.f.setDefaultColor(new Color4(255, 255, 255, 50));
         addChild(this.f);
     }
@@ -73,7 +73,7 @@ public class b extends j {
     public void onDrawChildStart() {
         if (b.id == 0) {
             Bitmap bitmapA = p.a(a, c, 1442840575);
-            com.censivn.C3DEngine.a.g().a(b, bitmapA);
+            com.censivn.C3DEngine.A.g().a(b, bitmapA);
             bitmapA.recycle();
         }
     }

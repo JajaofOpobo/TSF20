@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends d {
-    private static final float a = 268.0f * com.censivn.C3DEngine.b.b.a.c;
+    private static final float a = 268.0f * com.censivn.C3DEngine.b.b.A.c;
     private boolean c;
 
     public a(int i, boolean z, boolean z2) {
@@ -70,46 +70,46 @@ public class a extends d {
         boolean z = false;
         if (f >= 0.0f && f2 >= 0.0f) {
             z = true;
-            if (a + f2 < com.censivn.C3DEngine.b.b.a.B) {
+            if (a + f2 < com.censivn.C3DEngine.b.b.A.B) {
                 iAcos = 0;
             } else {
-                iAcos = (int) (Math.acos((com.censivn.C3DEngine.b.b.a.B - f2) / a) / 0.017453292519943295d);
+                iAcos = (int) (Math.acos((com.censivn.C3DEngine.b.b.A.B - f2) / a) / 0.017453292519943295d);
             }
-            if (a + f < com.censivn.C3DEngine.b.b.a.A) {
+            if (a + f < com.censivn.C3DEngine.b.b.A.A) {
                 iAcos2 = 270;
             } else {
-                iAcos2 = ((int) (Math.asin((com.censivn.C3DEngine.b.b.a.A - f) / a) / 0.017453292519943295d)) + 180;
+                iAcos2 = ((int) (Math.asin((com.censivn.C3DEngine.b.b.A.A - f) / a) / 0.017453292519943295d)) + 180;
             }
         } else if (f >= 0.0f && f2 <= 0.0f) {
             z = true;
-            if (f2 - a > com.censivn.C3DEngine.b.b.a.C) {
+            if (f2 - a > com.censivn.C3DEngine.b.b.A.C) {
                 iAcos3 = 180;
             } else {
-                iAcos3 = 180 - ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.a.C) / a) / 0.017453292519943295d));
+                iAcos3 = 180 - ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.A.C) / a) / 0.017453292519943295d));
             }
-            if (a + f < com.censivn.C3DEngine.b.b.a.A) {
+            if (a + f < com.censivn.C3DEngine.b.b.A.A) {
                 iAcos2 = iAcos3;
                 iAcos = -90;
             } else {
                 iAcos2 = iAcos3;
-                iAcos = -((int) (Math.asin((com.censivn.C3DEngine.b.b.a.A - f) / a) / 0.017453292519943295d));
+                iAcos = -((int) (Math.asin((com.censivn.C3DEngine.b.b.A.A - f) / a) / 0.017453292519943295d));
             }
         } else if (f <= 0.0f && f2 <= 0.0f) {
-            int iAcos4 = f2 - a > com.censivn.C3DEngine.b.b.a.C ? -180 : ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.a.C) / a) / 0.017453292519943295d)) - 180;
-            if (f - a > com.censivn.C3DEngine.b.b.a.z) {
+            int iAcos4 = f2 - a > com.censivn.C3DEngine.b.b.A.C ? -180 : ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.A.C) / a) / 0.017453292519943295d)) - 180;
+            if (f - a > com.censivn.C3DEngine.b.b.A.z) {
                 iAcos2 = iAcos4;
                 iAcos = 90;
             } else {
                 iAcos2 = iAcos4;
-                iAcos = 90 - ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.a.z) / a) / 0.017453292519943295d));
+                iAcos = 90 - ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.A.z) / a) / 0.017453292519943295d));
             }
         } else {
-            if (a + f2 < com.censivn.C3DEngine.b.b.a.B) {
+            if (a + f2 < com.censivn.C3DEngine.b.b.A.B) {
                 iAcos = 0;
             } else {
-                iAcos = -((int) (Math.acos((com.censivn.C3DEngine.b.b.a.B - f2) / a) / 0.017453292519943295d));
+                iAcos = -((int) (Math.acos((com.censivn.C3DEngine.b.b.A.B - f2) / a) / 0.017453292519943295d));
             }
-            iAcos2 = f - a > com.censivn.C3DEngine.b.b.a.z ? -270 : ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.a.z) / a) / 0.017453292519943295d)) - 270;
+            iAcos2 = f - a > com.censivn.C3DEngine.b.b.A.z ? -270 : ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.A.z) / a) / 0.017453292519943295d)) - 270;
         }
         float fAbs = Math.abs(iAcos - iAcos2);
         float f3 = (size - 1) * 25.0f;
@@ -159,7 +159,7 @@ public class a extends d {
             cVar.d.b(1);
         }
         final float f4 = cVar.d.position().x;
-        final float fA = a + com.censivn.C3DEngine.b.b.a.a(60.0f);
+        final float fA = a + com.censivn.C3DEngine.b.b.A.a(60.0f);
         cVar.d.position().x = fA;
         cVar.d.scale().x = 1.0f;
         cVar.d.scale().y = 1.0f;
@@ -195,7 +195,7 @@ public class a extends d {
 
     private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z) {
         final float f = cVar.d.position().x;
-        final float fA = com.censivn.C3DEngine.b.b.a.a(60.0f);
+        final float fA = com.censivn.C3DEngine.b.b.A.a(60.0f);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.c.a.a.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f2) {

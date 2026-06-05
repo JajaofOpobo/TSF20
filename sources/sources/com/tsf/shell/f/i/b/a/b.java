@@ -33,7 +33,7 @@ public class b extends com.tsf.shell.f.i.B implements a.InterfaceC0098a {
                 com.tsf.shell.f.e.h.a.a(b.this, 300, 300);
             }
         };
-        setAABBPX(com.censivn.C3DEngine.b.b.a.b * (-180.0f), com.censivn.C3DEngine.b.b.a.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.a.b * 180.0f, com.censivn.C3DEngine.b.b.a.b * 100.0f, 0.0f);
+        setAABBPX(com.censivn.C3DEngine.b.b.A.b * (-180.0f), com.censivn.C3DEngine.b.b.A.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.A.b * 180.0f, com.censivn.C3DEngine.b.b.A.b * 100.0f, 0.0f);
         addChild(this.g);
     }
 

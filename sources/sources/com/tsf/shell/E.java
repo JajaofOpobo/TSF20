@@ -14,16 +14,16 @@ import com.tsf.shell.utils.x;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class E {
     public static void a(final String str) {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.e.1
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.1
             @Override // java.lang.Runnable
             public void run() {
-                Toast.makeText(com.censivn.C3DEngine.a.d(), str, 0).show();
+                Toast.makeText(com.censivn.C3DEngine.A.d(), str, 0).show();
             }
         });
     }
 
     public static void a(int i) {
-        a(com.censivn.C3DEngine.a.d().getString(i));
+        a(com.censivn.C3DEngine.A.d().getString(i));
     }
 
     public static void a(Context context, int i, int i2, int i3, Runnable runnable, Runnable runnable2) {
@@ -31,11 +31,11 @@ public class E {
     }
 
     public static void a(int i, int i2, int i3, Runnable runnable, Runnable runnable2) {
-        a(com.censivn.C3DEngine.a.d().getString(i), com.censivn.C3DEngine.a.d().getString(i2), com.censivn.C3DEngine.a.d().getString(i3), runnable, runnable2);
+        a(com.censivn.C3DEngine.A.d().getString(i), com.censivn.C3DEngine.A.d().getString(i2), com.censivn.C3DEngine.A.d().getString(i3), runnable, runnable2);
     }
 
     public static void a(String str, String str2, String str3, Runnable runnable, Runnable runnable2) {
-        a(com.censivn.C3DEngine.a.d(), str, str2, str3, runnable, runnable2);
+        a(com.censivn.C3DEngine.A.d(), str, str2, str3, runnable, runnable2);
     }
 
     public static void a(final Context context, final String str, final String str2, final String str3, final Runnable runnable, final Runnable runnable2) {
@@ -63,10 +63,10 @@ public class E {
                 builder.create().show();
             }
         };
-        if (com.censivn.C3DEngine.a.a() == null) {
+        if (com.censivn.C3DEngine.A.a() == null) {
             runnable3.run();
         } else {
-            com.censivn.C3DEngine.a.a().a(runnable3);
+            com.censivn.C3DEngine.A.a().a(runnable3);
         }
     }
 
@@ -75,10 +75,10 @@ public class E {
     }
 
     public static void a(Context context, final String str, final String str2, final String str3, final String str4, final String str5, final Runnable runnable, final Runnable runnable2) {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.e.3
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.3
             @Override // java.lang.Runnable
             public void run() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.a.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
                 builder.setTitle(str);
                 builder.setPositiveButton(str4, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.e.3.1
                     @Override // android.content.DialogInterface.OnClickListener
@@ -97,7 +97,7 @@ public class E {
                     }
                 });
                 builder.create();
-                LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.a.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
+                LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
                 TextView textView = (TextView) linearLayout.findViewById(b.e.content);
                 TextView textView2 = (TextView) linearLayout.findViewById(b.e.summary);
                 textView.setText(str2);

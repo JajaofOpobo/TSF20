@@ -122,7 +122,7 @@ public class a extends j {
             this.e = textureElement.width;
             this.f = i;
             this.g = f;
-            float f2 = com.censivn.C3DEngine.b.b.a.c * (f / i);
+            float f2 = com.censivn.C3DEngine.b.b.A.c * (f / i);
             for (int i2 = 0; i2 < i; i2++) {
                 int i3 = (int) ((textureElement.width / f2) / (i2 + 1));
                 int i4 = (int) ((textureElement.height / f2) / (i2 + 1));
@@ -134,9 +134,9 @@ public class a extends j {
         System.currentTimeMillis();
         for (int i5 = 0; i5 < i; i5++) {
             if (i5 == 0) {
-                e.a(com.censivn.C3DEngine.a.d(), this.k, this.h.get(i5), this.i.get(i5), this.j.get(i5));
+                e.a(com.censivn.C3DEngine.A.d(), this.k, this.h.get(i5), this.i.get(i5), this.j.get(i5));
             } else {
-                e.a(com.censivn.C3DEngine.a.d(), this.h.get(i5 - 1), this.h.get(i5), this.i.get(i5), this.j.get(i5));
+                e.a(com.censivn.C3DEngine.A.d(), this.h.get(i5 - 1), this.h.get(i5), this.i.get(i5), this.j.get(i5));
             }
         }
         System.currentTimeMillis();

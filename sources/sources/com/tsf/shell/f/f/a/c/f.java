@@ -18,7 +18,7 @@ public class f extends i {
         super(hVar, fVar, b.d.drawer_hide, x.c(b.i.text_hide));
         float f = 0.8f * (com.tsf.shell.manager.o.b.c.U / com.tsf.shell.manager.o.b.a.U);
         this.i = com.tsf.shell.manager.o.b.a.U * f;
-        this.g = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.a.D, this.i, com.tsf.shell.manager.o.b.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.a.c * f, 10.0f * com.censivn.C3DEngine.b.b.a.c * f, f) { // from class: com.tsf.shell.f.f.a.c.f.1
+        this.g = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.b.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a.c.f.1
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(int i) {
                 if (i > 0) {
@@ -29,7 +29,7 @@ public class f extends i {
                             f.this.h.a();
                         }
                     };
-                    dVar.h(com.censivn.C3DEngine.b.b.a.a(-150.0f));
+                    dVar.h(com.censivn.C3DEngine.b.b.A.a(-150.0f));
                     dVar.a(0);
                     com.censivn.C3DEngine.b.g.c.a(f.this.h);
                     com.censivn.C3DEngine.b.g.c.a(f.this.h, 300, dVar);

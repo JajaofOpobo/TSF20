@@ -311,7 +311,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.h.c();
         this.C.clear();
         if (this.l != null) {
-            com.censivn.C3DEngine.a.g().a(this.l);
+            com.censivn.C3DEngine.A.g().a(this.l);
             this.l = null;
             this.q.textures().removeAll();
         }
@@ -330,14 +330,14 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void a(int i2, int i3, int i4, int i5) {
         this.s.b(n.a, n.b);
-        r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.a.c);
-        this.q.a(com.censivn.C3DEngine.b.b.a.F);
-        this.q.b(com.censivn.C3DEngine.b.b.a.G);
-        this.t.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+        r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.q.a(com.censivn.C3DEngine.b.b.A.F);
+        this.q.b(com.censivn.C3DEngine.b.b.A.G);
+        this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
             if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
-                bVar.a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+                bVar.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
                 bVar.ac();
             }
         }
@@ -349,16 +349,16 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public static void w() {
         ThemeDescription theme = ThemeManager.mix.page.getTheme();
         Bitmap bitmap = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_BACKGROUND);
-        o = com.censivn.C3DEngine.a.g().a(o, bitmap, true);
+        o = com.censivn.C3DEngine.A.g().a(o, bitmap, true);
         bitmap.recycle();
         Bitmap bitmap2 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_UNSELECT);
-        m = com.censivn.C3DEngine.a.g().a(m, bitmap2, true);
+        m = com.censivn.C3DEngine.A.g().a(m, bitmap2, true);
         bitmap2.recycle();
         Bitmap bitmap3 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_SELECT);
-        n = com.censivn.C3DEngine.a.g().a(n, bitmap3, true);
+        n = com.censivn.C3DEngine.A.g().a(n, bitmap3, true);
         bitmap3.recycle();
         Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f);
-        p = com.censivn.C3DEngine.a.g().a(p, bitmap4, true);
+        p = com.censivn.C3DEngine.A.g().a(p, bitmap4, true);
         bitmap4.recycle();
     }
 
@@ -368,38 +368,38 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             aj();
             this.s = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(50, 78, 50, 78, 128.0f, 128.0f));
             this.t = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
-            this.t.b(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+            this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             this.t.doubleSidedEnabled(true);
-            this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.a.b;
+            this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.A.b;
             ThemeDescription theme = ThemeManager.mix.page.getTheme();
             if (o == null) {
                 Bitmap bitmap = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_BACKGROUND);
-                o = com.censivn.C3DEngine.a.g().a(bitmap, true);
+                o = com.censivn.C3DEngine.A.g().a(bitmap, true);
                 bitmap.recycle();
             }
             this.t.textures().addElement(o);
             if (m == null) {
                 Bitmap bitmap2 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_UNSELECT);
-                m = com.censivn.C3DEngine.a.g().a(bitmap2, true);
+                m = com.censivn.C3DEngine.A.g().a(bitmap2, true);
                 bitmap2.recycle();
             }
             if (n == null) {
                 Bitmap bitmap3 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_SELECT);
-                n = com.censivn.C3DEngine.a.g().a(bitmap3, true);
+                n = com.censivn.C3DEngine.A.g().a(bitmap3, true);
                 bitmap3.recycle();
             }
             if (p == null) {
                 Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f);
-                p = com.censivn.C3DEngine.a.g().a(bitmap4, true);
+                p = com.censivn.C3DEngine.A.g().a(bitmap4, true);
                 bitmap4.recycle();
             }
             if (r == null) {
                 r = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f, false);
                 r.textures().addElement(p);
-                r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.a.c);
+                r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
             }
             this.s.textures().addElement(m);
-            this.q = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, 1, 1, false);
+            this.q = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
             this.q.uvs().set(0, 1.0f, 0.0f);
             this.q.uvs().set(1, 0.0f, 0.0f);
             this.q.uvs().set(2, 1.0f, 1.0f);
@@ -416,10 +416,10 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             com.tsf.shell.manager.a.t.a(f);
         }
         if (n.a > n.b) {
-            d = (int) (0.4f * com.censivn.C3DEngine.b.b.a.F);
+            d = (int) (0.4f * com.censivn.C3DEngine.b.b.A.F);
             e = (n.b * d) / n.a;
         } else {
-            e = (int) (0.4f * com.censivn.C3DEngine.b.b.a.G);
+            e = (int) (0.4f * com.censivn.C3DEngine.b.b.A.G);
             d = (n.a * e) / n.b;
         }
         f = com.tsf.shell.manager.a.t.a(d, e);
@@ -592,7 +592,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void P() {
         if (Q() == 0 && t() != -1) {
             if (this.l != null) {
-                com.censivn.C3DEngine.a.g().a(this.l);
+                com.censivn.C3DEngine.A.g().a(this.l);
                 this.l = null;
                 this.q.textures().clear();
             }
@@ -603,11 +603,11 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         position().setAll(0.0f, 0.0f, 0.0f);
         if (this.l == null || this.l.width != d || this.l.height != e) {
             if (this.l != null) {
-                com.censivn.C3DEngine.a.g().a(this.l);
+                com.censivn.C3DEngine.A.g().a(this.l);
                 this.l = null;
                 this.q.textures().clear();
             }
-            this.l = com.censivn.C3DEngine.a.g().a(d, e, false);
+            this.l = com.censivn.C3DEngine.A.g().a(d, e, false);
             this.q.textures().addElement(this.l);
         }
         com.tsf.shell.manager.a.t.b(f, this.l);
@@ -617,7 +617,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.c.drawQuietly();
         this.c.visible(Boolean.valueOf(zVisible));
         com.tsf.shell.manager.a.t.b();
-        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         position().setAllFrom(number3dClone);
         this.D = false;
     }
@@ -731,7 +731,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             e();
         }
         if (this.b != null) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.g.3
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.g.3
                 @Override // java.lang.Runnable
                 public void run() {
                     if (g.this.j) {
@@ -751,7 +751,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         }
         this.g = 0.0f;
         if (this.b != null) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.f.g.4
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.g.4
                 @Override // java.lang.Runnable
                 public void run() {
                     if (g.this.j) {

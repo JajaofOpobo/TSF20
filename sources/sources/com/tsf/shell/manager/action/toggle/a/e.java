@@ -16,7 +16,7 @@ public class e extends com.tsf.shell.manager.action.toggle.B {
     public e(int i) {
         super(i);
         b(2);
-        this.c = (AudioManager) com.censivn.C3DEngine.a.d().getSystemService("audio");
+        this.c = (AudioManager) com.censivn.C3DEngine.A.d().getSystemService("audio");
         d();
     }
 

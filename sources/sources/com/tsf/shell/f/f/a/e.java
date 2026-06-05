@@ -8,8 +8,8 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends j {
-    private static final float c = com.censivn.C3DEngine.b.b.a.a(200.0f);
-    private static final int d = com.censivn.C3DEngine.b.b.a.b(100.0f);
+    private static final float c = com.censivn.C3DEngine.b.b.A.a(200.0f);
+    private static final int d = com.censivn.C3DEngine.b.b.A.b(100.0f);
     private h b;
     private A e;
     private j a = new j();
@@ -71,15 +71,15 @@ public class e extends j {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.a, this.d, e.d, e.d);
+                com.censivn.C3DEngine.A.g().a(this.a, this.d, e.d, e.d);
             }
         }
 
         public void d() {
             if (e == null) {
                 e = new com.tsf.shell.f.e.k();
-                e.position().x = com.censivn.C3DEngine.b.b.a.a(50.0f);
-                e.position().y = com.censivn.C3DEngine.b.b.a.a(50.0f);
+                e.position().x = com.censivn.C3DEngine.b.b.A.a(50.0f);
+                e.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
             }
             this.f = true;
         }
@@ -160,11 +160,11 @@ public class e extends j {
                 }
             };
             dVar.a(0);
-            dVar.h(-com.censivn.C3DEngine.b.b.a.a(200.0f));
+            dVar.h(-com.censivn.C3DEngine.b.b.A.a(200.0f));
             com.censivn.C3DEngine.b.g.c.a(this.a, 350, dVar);
             return;
         }
-        this.a.position().y = -com.censivn.C3DEngine.b.b.a.a(200.0f);
+        this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(200.0f);
         this.a.alpha(0.0f);
         if (runnable != null) {
             runnable.run();
@@ -187,8 +187,8 @@ public class e extends j {
     }
 
     public void a(int i, int i2, int i3, int i4) {
-        position().y = com.censivn.C3DEngine.b.b.a.C + (c / 2.0f);
-        this.f.position().x = com.censivn.C3DEngine.b.b.a.A - com.censivn.C3DEngine.b.b.a.a(125.0f);
-        this.g.position().x = com.censivn.C3DEngine.b.b.a.z + com.censivn.C3DEngine.b.b.a.a(125.0f);
+        position().y = com.censivn.C3DEngine.b.b.A.C + (c / 2.0f);
+        this.f.position().x = com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(125.0f);
+        this.g.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(125.0f);
     }
 }

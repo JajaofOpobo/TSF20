@@ -11,7 +11,7 @@ public class n extends com.tsf.shell.f.f.l {
 
     @Override // com.tsf.shell.f.f.l
     public void a(com.tsf.shell.f.f.g gVar, float f) {
-        gVar.position().x = com.censivn.C3DEngine.b.b.a.D * f * 1.5f;
+        gVar.position().x = com.censivn.C3DEngine.b.b.A.D * f * 1.5f;
         Number3d number3dScale = gVar.scale();
         Number3d number3dScale2 = gVar.scale();
         float fAbs = 1.0f + Math.abs(f);

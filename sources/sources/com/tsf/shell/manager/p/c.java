@@ -71,15 +71,15 @@ public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                 @Override // java.lang.Runnable
                 public void run() {
                     Intent intent = new Intent();
-                    intent.setClass(com.censivn.C3DEngine.a.d(), TipsDialogActivity.class);
+                    intent.setClass(com.censivn.C3DEngine.A.d(), TipsDialogActivity.class);
                     intent.putExtra("type", i);
                     int unused = c.f = Home.b().a(intent, c.a, b.a.app_alpha_enter, b.a.app_alpha_exit);
                 }
             };
             if (i2 == 0) {
-                com.censivn.C3DEngine.a.a().a(runnable);
+                com.censivn.C3DEngine.A.a().a(runnable);
             } else {
-                com.censivn.C3DEngine.a.a().a(runnable, i2);
+                com.censivn.C3DEngine.A.a().a(runnable, i2);
             }
         }
     }

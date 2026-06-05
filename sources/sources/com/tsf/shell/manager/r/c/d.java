@@ -38,8 +38,8 @@ public class d implements b.a, e.a, h.a, n.a {
         @Override // java.util.Comparator
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public int compare(i iVar, i iVar2) {
-            float f = (com.censivn.C3DEngine.b.b.a.I - (iVar.position().y * com.censivn.C3DEngine.b.b.a.F)) + iVar.position().x + com.censivn.C3DEngine.b.b.a.H;
-            float f2 = (com.censivn.C3DEngine.b.b.a.I - (iVar2.position().y * com.censivn.C3DEngine.b.b.a.F)) + iVar2.position().x + com.censivn.C3DEngine.b.b.a.H;
+            float f = (com.censivn.C3DEngine.b.b.A.I - (iVar.position().y * com.censivn.C3DEngine.b.b.A.F)) + iVar.position().x + com.censivn.C3DEngine.b.b.A.H;
+            float f2 = (com.censivn.C3DEngine.b.b.A.I - (iVar2.position().y * com.censivn.C3DEngine.b.b.A.F)) + iVar2.position().x + com.censivn.C3DEngine.b.b.A.H;
             if (f > f2) {
                 return 1;
             }
@@ -54,8 +54,8 @@ public class d implements b.a, e.a, h.a, n.a {
         if (e == null) {
             e = new A();
         }
-        this.d = com.censivn.C3DEngine.a.d().getString(b.i.line_picker_back_to_select);
-        this.c = com.censivn.C3DEngine.a.d().getString(b.i.notic_function_unavailable);
+        this.d = com.censivn.C3DEngine.A.d().getString(b.i.line_picker_back_to_select);
+        this.c = com.censivn.C3DEngine.A.d().getString(b.i.notic_function_unavailable);
         this.a = new j() { // from class: com.tsf.shell.manager.r.c.d.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
@@ -89,7 +89,7 @@ public class d implements b.a, e.a, h.a, n.a {
                     final MotionEvent motionEventObtain2 = MotionEvent.obtain(motionEvent2);
                     final float[] fArrA = x.a(motionEvent);
                     this.a = true;
-                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.d.2.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.d.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.a.h.n();
@@ -126,7 +126,7 @@ public class d implements b.a, e.a, h.a, n.a {
             com.censivn.C3DEngine.b.c.b.a(this);
             com.tsf.shell.manager.a.j.a(this.a);
             this.a.setFocus();
-            this.a.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
+            this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
             com.tsf.shell.manager.a.b.a(this);
             e();
         }
@@ -232,7 +232,7 @@ public class d implements b.a, e.a, h.a, n.a {
                 com.tsf.shell.e.a(b.i.pop_menu_delete_notic, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.d.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.d.3.1
+                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.d.3.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
@@ -271,7 +271,7 @@ public class d implements b.a, e.a, h.a, n.a {
                                 }
                             };
                             renderRunnable.autoInvalidate = true;
-                            com.censivn.C3DEngine.a.a().a(renderRunnable);
+                            com.censivn.C3DEngine.A.a().a(renderRunnable);
                         }
                     }
                 }
@@ -289,6 +289,6 @@ public class d implements b.a, e.a, h.a, n.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
+        this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
     }
 }

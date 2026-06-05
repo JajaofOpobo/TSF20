@@ -36,14 +36,14 @@ public class ThemeInstalledMenu extends b {
     private void initTexture() {
         if (this.mSelectTE.id == 0) {
             Bitmap bitmapA = e.a(true);
-            com.censivn.C3DEngine.a.g().a(this.mSelectTE, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.mSelectTE, bitmapA);
             bitmapA.recycle();
         }
     }
 
     public void resetTheme() {
         Bitmap bitmapA = e.a(true);
-        com.censivn.C3DEngine.a.g().a(this.mSelectTE, bitmapA);
+        com.censivn.C3DEngine.A.g().a(this.mSelectTE, bitmapA);
         bitmapA.recycle();
     }
 
@@ -60,7 +60,7 @@ public class ThemeInstalledMenu extends b {
         this.manager = themeSettingMenu;
         this.mComparator = new ThemePriorityComparator();
         this.mSelectPlane = new k(com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.c, false);
-        this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.a.c;
+        this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.mSelectPlane.useVBO(false);
         this.mSelectPlane.textures().addElement(this.mSelectTE);
         this.mDetailMenu = new ThemeInstalledDetailMenu();
@@ -85,7 +85,7 @@ public class ThemeInstalledMenu extends b {
             }
         };
         ThemeManager.getInstance().addListener(this.mThemeListener);
-        this.mGridView = new h(com.censivn.C3DEngine.b.b.a.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 1.1f, com.tsf.shell.manager.o.b.c.U * 1.2f);
+        this.mGridView = new h(com.censivn.C3DEngine.b.b.A.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 1.1f, com.tsf.shell.manager.o.b.c.U * 1.2f);
         this.mGridView.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -226,7 +226,7 @@ public class ThemeInstalledMenu extends b {
 
         public a() {
             this.a.calAABB();
-            this.a.position().y = 10.0f * com.censivn.C3DEngine.b.b.a.c;
+            this.a.position().y = 10.0f * com.censivn.C3DEngine.b.b.A.c;
             addChild(this.a);
             setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
         }

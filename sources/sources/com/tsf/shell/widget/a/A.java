@@ -152,10 +152,10 @@ public class A extends com.censivn.C3DEngine.b.f.j {
         if (this.i != null) {
             this.i.a();
         }
-        com.censivn.C3DEngine.a.g().a(this.y);
-        com.censivn.C3DEngine.a.g().a(this.z);
-        com.censivn.C3DEngine.a.g().a(this.A);
-        com.censivn.C3DEngine.a.g().a(this.B);
+        com.censivn.C3DEngine.A.g().a(this.y);
+        com.censivn.C3DEngine.A.g().a(this.z);
+        com.censivn.C3DEngine.A.g().a(this.A);
+        com.censivn.C3DEngine.A.g().a(this.B);
         this.o.a();
         this.p.a();
     }

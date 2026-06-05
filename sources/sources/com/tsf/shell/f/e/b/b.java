@@ -18,7 +18,7 @@ public class b {
         if (this.c != i2 || this.d != i3 || i != this.b) {
             b(textureElement, i);
         }
-        e.a(com.censivn.C3DEngine.a.d(), textureElement, this.a, this.f, this.e);
+        e.a(com.censivn.C3DEngine.A.d(), textureElement, this.a, this.f, this.e);
     }
 
     private void b(TextureElement textureElement, int i) {

@@ -19,8 +19,8 @@ public class b extends com.censivn.C3DEngine.b.d.a {
 
     public b(i iVar) {
         super(iVar);
-        this.a = 30.0f * com.censivn.C3DEngine.b.b.a.a;
-        this.b = 15.0f * com.censivn.C3DEngine.b.b.a.a;
+        this.a = 30.0f * com.censivn.C3DEngine.b.b.A.a;
+        this.b = 15.0f * com.censivn.C3DEngine.b.b.A.a;
         this.e = 0;
         this.f = 1;
         this.g = 0;

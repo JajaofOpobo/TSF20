@@ -24,11 +24,11 @@ public class d extends com.tsf.shell.f.e.e.d {
     public d(b bVar) {
         boolean z = false;
         this.f = bVar;
-        this.d = new k(com.censivn.C3DEngine.b.b.a.a(24.0f), com.censivn.C3DEngine.b.b.a.a(45.0f), z) { // from class: com.tsf.shell.manager.m.d.1
+        this.d = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), z) { // from class: com.tsf.shell.manager.m.d.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.a.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(d.this.a, b.d.scrollcontainer_arrow);
+                    com.censivn.C3DEngine.A.g().a(d.this.a, b.d.scrollcontainer_arrow);
                 }
             }
         };
@@ -44,11 +44,11 @@ public class d extends com.tsf.shell.f.e.e.d {
         this.d.setMouseEventListener(aVar);
         com.tsf.shell.manager.a.k.b(this);
         this.b = new TextureElement(0, false);
-        this.e = new k(com.censivn.C3DEngine.b.b.a.a(70.0f), com.censivn.C3DEngine.b.b.a.a(70.0f), z) { // from class: com.tsf.shell.manager.m.d.3
+        this.e = new k(com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), z) { // from class: com.tsf.shell.manager.m.d.3
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.b.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(d.this.b, b.d.side_menu_add_button);
+                    com.censivn.C3DEngine.A.g().a(d.this.b, b.d.side_menu_add_button);
                 }
                 float fSin = 0.8f + ((float) (Math.sin(d.this.h) * 0.20000000298023224d));
                 d.this.h += d.this.g;
@@ -56,7 +56,7 @@ public class d extends com.tsf.shell.f.e.e.d {
             }
         };
         this.e.textures().addElement(this.b);
-        this.c.position().x = com.censivn.C3DEngine.b.b.a.a(28.0f);
+        this.c.position().x = com.censivn.C3DEngine.b.b.A.a(28.0f);
         addChild(this.d);
         addChild(this.c);
         this.c.addChild(this.e);
@@ -111,7 +111,7 @@ public class d extends com.tsf.shell.f.e.e.d {
             com.censivn.C3DEngine.b.g.c.a(this.c);
             com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
-            dVar2.f(com.censivn.C3DEngine.b.b.a.a(100.0f));
+            dVar2.f(com.censivn.C3DEngine.b.b.A.a(100.0f));
             dVar2.a(0);
             com.censivn.C3DEngine.b.g.c.a(this.d);
             com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar2);
@@ -142,10 +142,10 @@ public class d extends com.tsf.shell.f.e.e.d {
 
     public void c() {
         if (this.a.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.a);
+            com.censivn.C3DEngine.A.g().a(this.a);
         }
         if (this.b.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.b);
+            com.censivn.C3DEngine.A.g().a(this.b);
         }
     }
 }

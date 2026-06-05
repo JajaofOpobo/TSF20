@@ -69,7 +69,7 @@ public abstract class ActionBar {
     public void e(boolean z) {
     }
 
-    public android.support.v7.view.b a(b.a aVar) {
+    public android.support.v7.view.b a(android.support.v7.view.b.a aVar) {
         return null;
     }
 

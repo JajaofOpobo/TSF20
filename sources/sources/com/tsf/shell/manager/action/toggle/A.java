@@ -135,7 +135,7 @@ public class A {
     public TextureElement b() {
         if (this.s.id == 0) {
             Bitmap bitmapA = x.a(b.d.toggle_shortcut_circle, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I);
-            com.censivn.C3DEngine.a.g().a(this.s, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.s, bitmapA);
             bitmapA.recycle();
         }
         return this.s;
@@ -144,7 +144,7 @@ public class A {
     public TextureElement c() {
         if (this.t.id == 0) {
             Bitmap bitmapA = x.a(b.d.toggle_shortcut_circle_loading, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I);
-            com.censivn.C3DEngine.a.g().a(this.t, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.t, bitmapA);
             bitmapA.recycle();
         }
         return this.t;

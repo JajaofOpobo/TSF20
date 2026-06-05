@@ -28,7 +28,7 @@ public class B extends com.tsf.shell.f.e._g.a.b {
         final Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.r.b.b.2
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.a.a().c(b.this.c);
+                com.censivn.C3DEngine.A.a().c(b.this.c);
             }
         };
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.b.3

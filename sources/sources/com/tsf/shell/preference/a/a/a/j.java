@@ -7,7 +7,7 @@ public class j extends com.censivn.C3DEngine.b.e.f {
     private m a;
 
     public j() {
-        this(com.censivn.C3DEngine.b.b.a.a(120.0f));
+        this(com.censivn.C3DEngine.b.b.A.a(120.0f));
         b(false);
     }
 
@@ -28,7 +28,7 @@ public class j extends com.censivn.C3DEngine.b.e.f {
         this.a = new m();
         this.a.b(1);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(30.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(30.0f);
         this.a.setLayoutParams(bVar);
         this.a.d(50);
         addChild(this.a);

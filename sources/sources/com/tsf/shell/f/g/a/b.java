@@ -23,7 +23,7 @@ public class b extends com.tsf.shell.f.e._g.d {
     private boolean k;
 
     public b() {
-        super(210.0f * com.censivn.C3DEngine.b.b.a.c);
+        super(210.0f * com.censivn.C3DEngine.b.b.A.c);
         this.g = true;
         this.k = false;
         ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
@@ -69,7 +69,7 @@ public class b extends com.tsf.shell.f.e._g.d {
                 }
             }
         });
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
     }
 
     private void a(boolean z) {
@@ -92,7 +92,7 @@ public class b extends com.tsf.shell.f.e._g.d {
         com.tsf.shell.manager.action.f.b();
         com.tsf.shell.manager.a.j.b(this.f);
         com.tsf.shell.manager.a.j.a(this.f);
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
     }
 
     @Override // com.tsf.shell.f.e._g.d
@@ -109,7 +109,7 @@ public class b extends com.tsf.shell.f.e._g.d {
 
     @Override // com.tsf.shell.f.e._g.d
     public void onLayout(float f, float f2, float f3, float f4) {
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, 0.0f, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
         d();
     }
 
@@ -120,7 +120,7 @@ public class b extends com.tsf.shell.f.e._g.d {
 
     private void d() {
         if (this.h != null) {
-            this.h.position().y = com.censivn.C3DEngine.b.b.a.B - ((com.censivn.C3DEngine.b.b.a.E - getHeight()) / 2.0f);
+            this.h.position().y = com.censivn.C3DEngine.b.b.A.B - ((com.censivn.C3DEngine.b.b.A.E - getHeight()) / 2.0f);
         }
     }
 
@@ -149,7 +149,7 @@ public class b extends com.tsf.shell.f.e._g.d {
 
     private void e() {
         if (this.i == null) {
-            com.tsf.shell.manager.a.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(com.censivn.C3DEngine.a.d().getPackageName(), ShellActivity.class.getName()));
+            com.tsf.shell.manager.a.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName()));
             TextureElement textureElement = fVarB.d;
             if (textureElement.id == 0) {
                 fVarB.f();

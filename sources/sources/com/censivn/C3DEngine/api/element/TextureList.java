@@ -30,14 +30,14 @@ public class TextureList {
     public TextureDescription addElementWithoutVerify(TextureElement textureElement) {
         TextureDescription textureDescription = new TextureDescription(textureElement);
         this.mTextureDescriptionList.add(textureDescription);
-        a.e().j();
+        A.e().j();
         return textureDescription;
     }
 
     public TextureDescription addElement(TextureElement textureElement) {
         TextureDescription textureDescription = new TextureDescription(textureElement);
         this.mTextureDescriptionList.add(textureDescription);
-        a.e().j();
+        A.e().j();
         return textureDescription;
     }
 
@@ -55,13 +55,13 @@ public class TextureList {
         if (byElement == null) {
             throw new Error("No match in TextureList for id \"" + byElement.textureElement.id + "\"");
         }
-        a.e().j();
+        A.e().j();
         return this.mTextureDescriptionList.remove(byElement);
     }
 
     public void removeAll() {
         this.mTextureDescriptionList.clear();
-        a.e().j();
+        A.e().j();
     }
 
     public TextureDescription get(int i) {
@@ -83,15 +83,15 @@ public class TextureList {
 
     public void clear() {
         this.mTextureDescriptionList.clear();
-        a.e().j();
+        A.e().j();
     }
 
     public void destroyAllTexture() {
         Iterator<TextureDescription> it = this.mTextureDescriptionList.iterator();
         while (it.hasNext()) {
-            a.g().a(it.next().textureElement);
+            A.g().a(it.next().textureElement);
         }
         this.mTextureDescriptionList.clear();
-        a.e().j();
+        A.e().j();
     }
 }

@@ -11,8 +11,8 @@ import com.tsf.shell.f.e.I;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends j {
-    private static final int a = com.censivn.C3DEngine.b.b.a.b(72.0f);
-    private static final int l = com.censivn.C3DEngine.b.b.a.b(15.0f);
+    private static final int a = com.censivn.C3DEngine.b.b.A.b(72.0f);
+    private static final int l = com.censivn.C3DEngine.b.b.A.b(15.0f);
     private static final int m = (a / 2) + l;
     private k d;
     private k e;
@@ -71,7 +71,7 @@ public class a extends j {
 
     public void a() {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-        dVar.h(com.censivn.C3DEngine.b.b.a.a(-20.0f));
+        dVar.h(com.censivn.C3DEngine.b.b.A.a(-20.0f));
         com.censivn.C3DEngine.b.g.c.a(this.e);
         com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar);
         com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.j.a.1
@@ -100,7 +100,7 @@ public class a extends j {
                 com.censivn.C3DEngine.b.g.c.a(a.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
-        dVar3.h(com.censivn.C3DEngine.b.b.a.a(25.0f));
+        dVar3.h(com.censivn.C3DEngine.b.b.A.a(25.0f));
         com.censivn.C3DEngine.b.g.c.a(this.f);
         com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar3);
     }
@@ -144,17 +144,17 @@ public class a extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.i.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.i, b.d.rate_face);
-            com.censivn.C3DEngine.a.g().a(this.j, b.d.rate_face_eyes);
-            com.censivn.C3DEngine.a.g().a(this.k, b.d.rate_face_mouth);
+            com.censivn.C3DEngine.A.g().a(this.i, b.d.rate_face);
+            com.censivn.C3DEngine.A.g().a(this.j, b.d.rate_face_eyes);
+            com.censivn.C3DEngine.A.g().a(this.k, b.d.rate_face_mouth);
         }
     }
 
     public void c() {
         if (this.i.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.i);
-            com.censivn.C3DEngine.a.g().a(this.j);
-            com.censivn.C3DEngine.a.g().a(this.k);
+            com.censivn.C3DEngine.A.g().a(this.i);
+            com.censivn.C3DEngine.A.g().a(this.j);
+            com.censivn.C3DEngine.A.g().a(this.k);
         }
     }
 }

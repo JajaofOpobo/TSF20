@@ -39,9 +39,9 @@ public class A extends j {
         this.g = i2;
         this.c.alpha(this.g);
         Bitmap bitmapC = c(i);
-        com.censivn.C3DEngine.a.g().a(this.k, bitmapC);
+        com.censivn.C3DEngine.A.g().a(this.k, bitmapC);
         bitmapC.recycle();
-        com.censivn.C3DEngine.a.g().a(this.j, bitmap);
+        com.censivn.C3DEngine.A.g().a(this.j, bitmap);
         bitmap.recycle();
         this.h = i3;
         i();
@@ -66,7 +66,7 @@ public class A extends j {
 
     public void b(int i) {
         Bitmap bitmapC = c(i);
-        com.censivn.C3DEngine.a.g().a(this.k, bitmapC);
+        com.censivn.C3DEngine.A.g().a(this.k, bitmapC);
         bitmapC.recycle();
     }
 

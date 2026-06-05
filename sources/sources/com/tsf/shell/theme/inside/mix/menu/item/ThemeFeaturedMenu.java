@@ -170,7 +170,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
 
         public void recycleTexture() {
             if (this.iconTexture != null) {
-                com.censivn.C3DEngine.a.g().a(this.iconTexture);
+                com.censivn.C3DEngine.A.g().a(this.iconTexture);
                 this.iconTexture = null;
             }
         }

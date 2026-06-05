@@ -53,7 +53,7 @@ public class d extends b.d {
                 if (motionEvent.getAction() == 0) {
                     try {
                         float[] fArrA = x.a(motionEvent);
-                        i iVarC = com.censivn.C3DEngine.a.e().c(fArrA[0], fArrA[1]);
+                        i iVarC = com.censivn.C3DEngine.A.e().c(fArrA[0], fArrA[1]);
                         if ((iVarC == null || iVarC.getMouseEventListener() == null) && Home.b().l().a(motionEvent)) {
                             if (com.tsf.shell.manager.a.h.v().mouseEnabled()) {
                                 return false;
@@ -69,7 +69,7 @@ public class d extends b.d {
                     return true;
                 }
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.1.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         switch (motionEventObtain.getAction()) {
@@ -193,7 +193,7 @@ public class d extends b.d {
     }
 
     public void k(final MotionEvent motionEvent) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.2
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.2
             @Override // java.lang.Runnable
             public void run() {
                 d.this.e.f(motionEvent);
@@ -202,7 +202,7 @@ public class d extends b.d {
     }
 
     public void d(final MotionEvent motionEvent, final MotionEvent motionEvent2, final float f, final float f2) {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.3
             @Override // java.lang.Runnable
             public void run() {
                 d.this.e.b(motionEvent, motionEvent2, f, f2);
@@ -229,7 +229,7 @@ public class d extends b.d {
         this.i = true;
         l(motionEvent);
         float[] fArrA = x.a(this.f);
-        i iVarC = com.censivn.C3DEngine.a.e().c(fArrA[0], fArrA[1]);
+        i iVarC = com.censivn.C3DEngine.A.e().c(fArrA[0], fArrA[1]);
         if (iVarC != null) {
             this.d = iVarC.getMouseEventListener();
             if (this.c.c != iVarC.getMouseEventListener().c) {

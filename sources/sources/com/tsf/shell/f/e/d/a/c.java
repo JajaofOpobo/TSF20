@@ -67,12 +67,12 @@ public class c extends j {
             if (this.e == null && c()) {
                 this.e = new c(dVar);
                 b bVar = new b();
-                bVar.a = com.censivn.C3DEngine.b.b.a.a(-130.0f);
-                bVar.b = com.censivn.C3DEngine.b.b.a.a(128.0f);
-                bVar.c = com.censivn.C3DEngine.b.b.a.a(65.0f);
-                bVar.d = com.censivn.C3DEngine.b.b.a.a(120.0f);
+                bVar.a = com.censivn.C3DEngine.b.b.A.a(-130.0f);
+                bVar.b = com.censivn.C3DEngine.b.b.A.a(128.0f);
+                bVar.c = com.censivn.C3DEngine.b.b.A.a(65.0f);
+                bVar.d = com.censivn.C3DEngine.b.b.A.a(120.0f);
                 bVar.e = 38;
-                bVar.f = com.censivn.C3DEngine.b.b.a.a(54.0f);
+                bVar.f = com.censivn.C3DEngine.b.b.A.a(54.0f);
                 this.e.a(this.d, bVar);
             }
         }
@@ -103,7 +103,7 @@ public class c extends j {
                             aVar.addChild(next.e);
                             c.this.d = next.e;
                             c.this.a(aVar);
-                            c.this.a(next.h, com.censivn.C3DEngine.b.b.a.a(500.0f));
+                            c.this.a(next.h, com.censivn.C3DEngine.b.b.A.a(500.0f));
                         } else {
                             c.this.f.d();
                         }
@@ -336,14 +336,14 @@ public class c extends j {
         public void onDrawStart() {
             if (this.d.id == 0) {
                 Bitmap bitmapA = x.a(this.a);
-                com.censivn.C3DEngine.a.g().a(this.d, bitmapA);
+                com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
                 bitmapA.recycle();
             }
         }
 
         public void b() {
             if (this.d.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.d);
+                com.censivn.C3DEngine.A.g().a(this.d);
             }
             this.b.a();
         }

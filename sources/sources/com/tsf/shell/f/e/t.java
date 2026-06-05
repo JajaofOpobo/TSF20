@@ -49,8 +49,8 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         d = bVar2;
         int i = bVar2.d;
         int i2 = bVar2.e;
-        int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.a.F / 2)) + (i / 2);
-        int i4 = ((com.censivn.C3DEngine.b.b.a.G / 2) - bVar2.b) - (i2 / 2);
+        int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.A.F / 2)) + (i / 2);
+        int i4 = ((com.censivn.C3DEngine.b.b.A.G / 2) - bVar2.b) - (i2 / 2);
         a.removeFromParent();
         com.tsf.shell.manager.a.j.a(A);
         a.position().x = i3;
@@ -174,15 +174,15 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                     if (t.e) {
                         float x = motionEvent2.getX() - motionEvent.getX();
                         float y = motionEvent2.getY() - motionEvent.getY();
-                        if (this.b + x + (t.c.b.b() / 2.0f) > com.censivn.C3DEngine.b.b.a.t) {
-                            x = (com.censivn.C3DEngine.b.b.a.t - (t.c.b.b() / 2.0f)) - this.b;
-                        } else if ((this.b + x) - (t.c.b.b() / 2.0f) < com.censivn.C3DEngine.b.b.a.r) {
-                            x = (com.censivn.C3DEngine.b.b.a.r + (t.c.b.b() / 2.0f)) - this.b;
+                        if (this.b + x + (t.c.b.b() / 2.0f) > com.censivn.C3DEngine.b.b.A.t) {
+                            x = (com.censivn.C3DEngine.b.b.A.t - (t.c.b.b() / 2.0f)) - this.b;
+                        } else if ((this.b + x) - (t.c.b.b() / 2.0f) < com.censivn.C3DEngine.b.b.A.r) {
+                            x = (com.censivn.C3DEngine.b.b.A.r + (t.c.b.b() / 2.0f)) - this.b;
                         }
-                        if ((this.d - y) + (t.c.b.c() / 2.0f) > com.censivn.C3DEngine.b.b.a.s) {
-                            y = (-com.censivn.C3DEngine.b.b.a.s) + (t.c.b.c() / 2.0f) + this.d;
-                        } else if ((this.d - y) - (t.c.b.c() / 2.0f) < com.censivn.C3DEngine.b.b.a.u) {
-                            y = ((-com.censivn.C3DEngine.b.b.a.u) - (t.c.b.c() / 2.0f)) + this.d;
+                        if ((this.d - y) + (t.c.b.c() / 2.0f) > com.censivn.C3DEngine.b.b.A.s) {
+                            y = (-com.censivn.C3DEngine.b.b.A.s) + (t.c.b.c() / 2.0f) + this.d;
+                        } else if ((this.d - y) - (t.c.b.c() / 2.0f) < com.censivn.C3DEngine.b.b.A.u) {
+                            y = ((-com.censivn.C3DEngine.b.b.A.u) - (t.c.b.c() / 2.0f)) + this.d;
                         }
                         t.c.position().x = this.b + x;
                         c.this.h.position().x = x + this.e;
@@ -196,9 +196,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                     if (t.e) {
                         c.this.h.setAnimationObjectState(false);
                         d.b bVar2 = (d.b) t.c.g.getLayoutParams();
-                        int[] iArr = {(int) ((t.c.position().x - (t.c.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.a.H), (int) (((-t.c.position().y) + com.censivn.C3DEngine.b.b.a.I) - (t.c.b.c() / 2.0f)), bVar2.d, bVar2.e};
+                        int[] iArr = {(int) ((t.c.position().x - (t.c.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H), (int) (((-t.c.position().y) + com.censivn.C3DEngine.b.b.A.I) - (t.c.b.c() / 2.0f)), bVar2.d, bVar2.e};
                         ItemInfo itemInfoK = t.c.K();
-                        if (com.censivn.C3DEngine.b.b.a.O) {
+                        if (com.censivn.C3DEngine.b.b.A.O) {
                             int i = iArr[0];
                             bVar2.a = i;
                             itemInfoK.cellX = i;
@@ -214,7 +214,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                             itemInfoK.cellYH = i4;
                         }
                         final com.tsf.shell.f.i.b.b.a aVar = t.c;
-                        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.e.t.c.3.1
+                        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.t.c.3.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 if (aVar != null && aVar.g != null) {
@@ -283,10 +283,10 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                     break;
             }
             kVar.calAABB();
-            kVar.maxY(kVar.maxY() + (80.0f * com.censivn.C3DEngine.b.b.a.b));
-            kVar.minY(kVar.minY() + (com.censivn.C3DEngine.b.b.a.b * 38.0f));
-            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.a.b * 38.0f));
-            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.a.b * 38.0f));
+            kVar.maxY(kVar.maxY() + (80.0f * com.censivn.C3DEngine.b.b.A.b));
+            kVar.minY(kVar.minY() + (com.censivn.C3DEngine.b.b.A.b * 38.0f));
+            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.A.b * 38.0f));
+            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.A.b * 38.0f));
             kVar.textures().addElement(this.f);
             kVar.setMouseEventListener(new A(this.g, this, i));
             addChild(kVar);
@@ -297,10 +297,10 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             final int i3;
             final int i4;
             if (i > i2) {
-                i4 = com.censivn.C3DEngine.b.b.a.F;
+                i4 = com.censivn.C3DEngine.b.b.A.F;
                 i3 = (i4 * i2) / i;
             } else {
-                i3 = com.censivn.C3DEngine.b.b.a.G;
+                i3 = com.censivn.C3DEngine.b.b.A.G;
                 i4 = (i3 * i) / i2;
             }
             this.g.a(i + i4, i2 + i3);
@@ -383,7 +383,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
 
         public void i() {
             ItemInfo itemInfoK = t.c.K();
-            if (com.censivn.C3DEngine.b.b.a.O) {
+            if (com.censivn.C3DEngine.b.b.A.O) {
                 itemInfoK.cellX = t.d.a;
                 itemInfoK.cellY = t.d.b;
                 itemInfoK.width = t.d.d;
@@ -492,8 +492,8 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         private void a(int i, boolean z) {
             switch (I) {
                 case 0:
-                    int iA = (int) ((com.censivn.C3DEngine.b.b.a.I - t.a.position().y) - a());
-                    int iD = ((int) ((com.censivn.C3DEngine.b.b.a.I - t.a.position().y) + d())) - iA;
+                    int iA = (int) ((com.censivn.C3DEngine.b.b.A.I - t.a.position().y) - a());
+                    int iD = ((int) ((com.censivn.C3DEngine.b.b.A.I - t.a.position().y) + d())) - iA;
                     if (z) {
                         int[] iArrA = a(t.d.a, iA, t.d.d, iD, true);
                         t.d.b = iArrA[1];
@@ -513,8 +513,8 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                     }
                     break;
                 case 2:
-                    int iF = (int) ((t.a.position().x - f()) + com.censivn.C3DEngine.b.b.a.H);
-                    int iE = ((int) ((t.a.position().x + e()) + com.censivn.C3DEngine.b.b.a.H)) - iF;
+                    int iF = (int) ((t.a.position().x - f()) + com.censivn.C3DEngine.b.b.A.H);
+                    int iE = ((int) ((t.a.position().x + e()) + com.censivn.C3DEngine.b.b.A.H)) - iF;
                     if (z) {
                         int[] iArrA2 = a(iF, t.d.b, iE, t.d.e, true);
                         t.d.a = iArrA2[0];
@@ -593,7 +593,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
                 } else {
                     y = motionEvent2.getX() - this.a;
                 }
-                com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.e.t.a.1
+                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.e.t.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.e.a(a.this.d, y);

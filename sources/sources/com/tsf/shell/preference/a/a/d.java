@@ -33,7 +33,7 @@ public class d extends com.censivn.C3DEngine.b.e.c {
         this.j = new com.censivn.C3DEngine.b.e.d();
         a(this.i);
         a(this.j);
-        this.c = new com.tsf.shell.preference.a.f(com.censivn.C3DEngine.b.b.a.a(250.0f));
+        this.c = new com.tsf.shell.preference.a.f(com.censivn.C3DEngine.b.b.A.a(250.0f));
         this.i.a(this.c);
         com.censivn.C3DEngine.b.e.e eVar = new com.censivn.C3DEngine.b.e.e();
         this.d = eVar;
@@ -62,7 +62,7 @@ public class d extends com.censivn.C3DEngine.b.e.c {
             @Override // com.censivn.C3DEngine.b.e.h.a
             public boolean a(int i) {
                 d.this.c.f(i);
-                if (com.censivn.C3DEngine.b.b.a.O) {
+                if (com.censivn.C3DEngine.b.b.A.O) {
                     d.this.g = i;
                     return true;
                 }
@@ -70,7 +70,7 @@ public class d extends com.censivn.C3DEngine.b.e.c {
                 return true;
             }
         });
-        com.tsf.shell.preference.a.e eVar2 = new com.tsf.shell.preference.a.e(com.censivn.C3DEngine.b.b.a.a(300.0f));
+        com.tsf.shell.preference.a.e eVar2 = new com.tsf.shell.preference.a.e(com.censivn.C3DEngine.b.b.A.a(300.0f));
         this.b = eVar2;
         this.j.a(eVar2);
         com.censivn.C3DEngine.b.e.e eVar3 = new com.censivn.C3DEngine.b.e.e();
@@ -114,7 +114,7 @@ public class d extends com.censivn.C3DEngine.b.e.c {
     }
 
     private void i() {
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             this.d.b(x.c(b.i.text_width_margin) + " (" + x.c(b.i.text_vertical) + ")");
             this.d.k(this.g);
             this.c.f(this.g);

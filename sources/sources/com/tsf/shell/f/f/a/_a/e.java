@@ -9,7 +9,7 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends com.censivn.C3DEngine.b.b.c {
-    private static final int h = com.censivn.C3DEngine.b.b.a.b(160.0f);
+    private static final int h = com.censivn.C3DEngine.b.b.A.b(160.0f);
     private j c;
     private k d;
     private k e;
@@ -17,7 +17,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
     private TextureElement f = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);
     private j a = new j();
-    private k b = new k(com.censivn.C3DEngine.b.b.a.D, 120.0f * com.censivn.C3DEngine.b.b.a.c, false);
+    private k b = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
     public e(c cVar) {
         boolean z = false;
@@ -36,7 +36,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (e.this.f.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(e.this.f, b.d.drawer_top_menu_button_voice_search);
+                    com.censivn.C3DEngine.A.g().a(e.this.f, b.d.drawer_top_menu_button_voice_search);
                 }
             }
         };
@@ -48,25 +48,25 @@ public class e extends com.censivn.C3DEngine.b.b.c {
                 com.tsf.shell.manager.a.d.a(8, true);
             }
         });
-        this.e = new k(com.censivn.C3DEngine.b.b.a.a(170.0f), com.censivn.C3DEngine.b.b.a.a(61.0f), z) { // from class: com.tsf.shell.f.f.a._a.e.4
+        this.e = new k(com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(61.0f), z) { // from class: com.tsf.shell.f.f.a._a.e.4
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (e.this.g.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(e.this.g, b.d.allapps_google_icon);
+                    com.censivn.C3DEngine.A.g().a(e.this.g, b.d.allapps_google_icon);
                 }
             }
         };
-        this.e.position().y = com.censivn.C3DEngine.b.b.a.a(-5.0f);
+        this.e.position().y = com.censivn.C3DEngine.b.b.A.a(-5.0f);
         this.e.textures().addElement(this.g);
         this.c.addChild(this.e);
         this.c.addChild(this.d);
         addChild(this.a);
-        this.a.position().y = -com.censivn.C3DEngine.b.b.a.a(100.0f);
+        this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(100.0f);
     }
 
     @Override // com.censivn.C3DEngine.b.b.c
     public void c(int i) {
-        this.e.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(40.0f) + (this.e.b() / 2.0f);
+        this.e.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f) + (this.e.b() / 2.0f);
         this.d.position().x = (i / 2.0f) - com.tsf.shell.manager.g.a.j;
         this.b.a(i);
         d(h);
@@ -74,17 +74,17 @@ public class e extends com.censivn.C3DEngine.b.b.c {
     }
 
     public void e() {
-        com.censivn.C3DEngine.a.g().a(this.f);
-        com.censivn.C3DEngine.a.g().a(this.g);
+        com.censivn.C3DEngine.A.g().a(this.f);
+        com.censivn.C3DEngine.A.g().a(this.g);
     }
 
     public void f() {
-        this.a.position().y = (-com.censivn.C3DEngine.b.b.a.a(100.0f)) + c.a;
+        this.a.position().y = (-com.censivn.C3DEngine.b.b.A.a(100.0f)) + c.a;
         this.a.alpha(0.0f);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.a(255);
         dVar.a(com.censivn.C3DEngine.b.g.a.n);
-        dVar.h(-com.censivn.C3DEngine.b.b.a.a(100.0f));
+        dVar.h(-com.censivn.C3DEngine.b.b.A.a(100.0f));
         com.censivn.C3DEngine.b.g.c.a(this.a);
         com.censivn.C3DEngine.b.g.c.a(this.a, 750, dVar);
     }

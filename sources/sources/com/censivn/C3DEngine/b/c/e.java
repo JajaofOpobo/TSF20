@@ -41,8 +41,8 @@ public class e {
     @SuppressLint({"NewApi"})
     public e(Activity activity) {
         com.tsf.shell.manager.a.b = this;
-        com.censivn.C3DEngine.b.b.a.b(activity);
-        com.censivn.C3DEngine.b.b.a.a(a(activity) ? 0 : r.a(activity));
+        com.censivn.C3DEngine.b.b.A.b(activity);
+        com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : r.a(activity));
         g.c();
         if (!com.tsf.shell.manager.b.e.P()) {
             this.g = true;
@@ -65,7 +65,7 @@ public class e {
             a(activity, true, false);
         }
         if (g.b()) {
-            com.censivn.C3DEngine.b.b.a.a(activity, false);
+            com.censivn.C3DEngine.b.b.A.a(activity, false);
         }
         if (g.b()) {
             this.b = activity.getResources().getConfiguration().screenHeightDp;
@@ -90,8 +90,8 @@ public class e {
                 homeB.setRequestedOrientation(0);
                 int orientation = homeB.getWindowManager().getDefaultDisplay().getOrientation();
                 homeB.setRequestedOrientation(requestedOrientation);
-                com.censivn.C3DEngine.b.b.a.N = (4 - orientation) % 4;
-                com.tsf.shell.manager.b.e.s(com.censivn.C3DEngine.b.b.a.N);
+                com.censivn.C3DEngine.b.b.A.N = (4 - orientation) % 4;
+                com.tsf.shell.manager.b.e.s(com.censivn.C3DEngine.b.b.A.N);
                 return;
             } catch (Exception e) {
                 HashMap map = new HashMap();
@@ -102,11 +102,11 @@ public class e {
                 }
                 map.put("error", str);
                 m.a("EVENT_ISSUSE_SET_REQUESTED_ORIENTATION", map);
-                com.censivn.C3DEngine.b.b.a.N = 3;
+                com.censivn.C3DEngine.b.b.A.N = 3;
                 return;
             }
         }
-        com.censivn.C3DEngine.b.b.a.N = iAt;
+        com.censivn.C3DEngine.b.b.A.N = iAt;
     }
 
     public void a(a aVar) {
@@ -134,7 +134,7 @@ public class e {
         if (!this.e) {
             this.e = true;
             if (com.tsf.shell.manager.b.e.a(activity) == -1) {
-                switch ((activity.getWindowManager().getDefaultDisplay().getRotation() + com.censivn.C3DEngine.b.b.a.N) % 4) {
+                switch ((activity.getWindowManager().getDefaultDisplay().getRotation() + com.censivn.C3DEngine.b.b.A.N) % 4) {
                     case 0:
                         activity.setRequestedOrientation(0);
                         break;
@@ -172,15 +172,15 @@ public class e {
         if (g.b()) {
             if (this.b != configuration.screenHeightDp) {
                 this.b = configuration.screenHeightDp;
-                com.censivn.C3DEngine.b.b.a.a(activity, this.c == configuration.orientation);
+                com.censivn.C3DEngine.b.b.A.a(activity, this.c == configuration.orientation);
             }
             if (this.c != configuration.orientation) {
                 this.c = configuration.orientation;
-                if (b() && com.censivn.C3DEngine.b.b.a.K == 0) {
+                if (b() && com.censivn.C3DEngine.b.b.A.K == 0) {
                     a(activity, false, false);
                 } else if (b() != com.tsf.shell.manager.b.e.N()) {
                     a(activity, com.tsf.shell.manager.b.e.N(), false);
-                    com.censivn.C3DEngine.b.b.a.a(activity);
+                    com.censivn.C3DEngine.b.b.A.a(activity);
                 }
                 d(activity);
             }
@@ -266,7 +266,7 @@ public class e {
             activity.getWindow().setAttributes(attributes2);
         }
         if (z2) {
-            com.censivn.C3DEngine.b.b.a.c();
+            com.censivn.C3DEngine.b.b.A.c();
         }
         this.h = true;
         Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.2
@@ -281,7 +281,7 @@ public class e {
         if (z3) {
             runnable.run();
         } else {
-            com.censivn.C3DEngine.a.a().a(runnable, 500L);
+            com.censivn.C3DEngine.A.a().a(runnable, 500L);
         }
     }
 
@@ -303,18 +303,18 @@ public class e {
                 this.g = false;
             }
             com.tsf.shell.manager.b.e.d(Boolean.valueOf(this.g ? false : true));
-            com.censivn.C3DEngine.b.b.a.c();
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
+            com.censivn.C3DEngine.b.b.A.c();
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    e.this.a(com.censivn.C3DEngine.b.b.a.B, com.censivn.C3DEngine.b.b.a.C, com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.A);
+                    e.this.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
                 }
             });
         }
     }
 
     public void d() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a(!e.this.g);
@@ -323,7 +323,7 @@ public class e {
     }
 
     public void e() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5
             @Override // java.lang.Runnable
             public void run() {
                 if (e.this.c()) {
@@ -351,7 +351,7 @@ public class e {
                                     if (launcherAccessibilityServiceA != null) {
                                         launcherAccessibilityServiceA.performGlobalAction(4);
                                     } else {
-                                        new AlertDialog.Builder(com.censivn.C3DEngine.a.d()).setTitle(b.i.accessibility_service_enable).setMessage(b.i.accessibility_service_enable_long).setPositiveButton(b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
+                                        new AlertDialog.Builder(com.censivn.C3DEngine.A.d()).setTitle(b.i.accessibility_service_enable).setMessage(b.i.accessibility_service_enable_long).setPositiveButton(b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 Home.b().startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
@@ -368,9 +368,9 @@ public class e {
                     }
                 };
                 if (e.this.j) {
-                    com.censivn.C3DEngine.a.a().a(runnable, 300L);
+                    com.censivn.C3DEngine.A.a().a(runnable, 300L);
                 } else {
-                    com.censivn.C3DEngine.a.a().a(runnable);
+                    com.censivn.C3DEngine.A.a().a(runnable);
                 }
             }
         });
@@ -390,9 +390,9 @@ public class e {
             return 0;
         }
         if (activity.getResources().getConfiguration().screenHeightDp < activity.getResources().getConfiguration().screenWidthDp) {
-            iA = (com.censivn.C3DEngine.b.b.a.L - com.censivn.C3DEngine.b.b.a.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.A.L - com.censivn.C3DEngine.b.b.A.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         } else {
-            iA = (com.censivn.C3DEngine.b.b.a.M - com.censivn.C3DEngine.b.b.a.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.A.M - com.censivn.C3DEngine.b.b.A.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         }
         if (iA < 5) {
             return 0;

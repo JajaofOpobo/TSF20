@@ -106,7 +106,7 @@ public abstract class ItemInfo {
 
     public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
         if (!(bVar instanceof a) && bVar != null) {
-            if (com.censivn.C3DEngine.b.b.a.O) {
+            if (com.censivn.C3DEngine.b.b.A.O) {
                 this.scale = bVar.u();
                 this.cellX = (int) bVar.position().x;
                 this.cellY = (int) bVar.position().y;
@@ -188,7 +188,7 @@ public abstract class ItemInfo {
         switch (this.iconType) {
             case 1:
                 try {
-                    Resources resourcesForApplication = com.censivn.C3DEngine.a.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
+                    Resources resourcesForApplication = com.censivn.C3DEngine.A.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
                     if (resourcesForApplication != null) {
                     }
                 } catch (Exception e) {

@@ -23,7 +23,7 @@ public class d extends a {
     @Override // com.tsf.shell.f.c.a.a.a
     public void a(j jVar, j jVar2) {
         jVar.position().x += (jVar2.position().x - jVar.position().x) * 0.15f;
-        jVar.position().y = 138.0f * com.censivn.C3DEngine.b.b.a.b;
+        jVar.position().y = 138.0f * com.censivn.C3DEngine.b.b.A.b;
     }
 
     @Override // com.tsf.shell.f.c.a.a.a
@@ -59,14 +59,14 @@ public class d extends a {
     @Override // com.tsf.shell.f.c.a.a.a
     public Number3d a(com.censivn.C3DEngine.b.f.i iVar) {
         Number3d.TEMPNUMBER3D.x = iVar.position().x;
-        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.a.C - com.tsf.shell.f.c.a.f.b) - com.censivn.C3DEngine.b.b.a.K;
+        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.A.C - com.tsf.shell.f.c.a.f.b) - com.censivn.C3DEngine.b.b.A.K;
         return Number3d.TEMPNUMBER3D;
     }
 
     @Override // com.tsf.shell.f.c.a.a.a
     public Number3d b(com.censivn.C3DEngine.b.f.i iVar) {
         Number3d.TEMPNUMBER3D.x = iVar.position().x;
-        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.a.C + com.tsf.shell.f.c.a.f.a;
+        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.c.a.f.a;
         return Number3d.TEMPNUMBER3D;
     }
 

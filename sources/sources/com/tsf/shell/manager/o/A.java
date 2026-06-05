@@ -167,8 +167,8 @@ public class A {
 
     private void a(int i, int i2, int i3, int i4, int i5, boolean z) {
         if (z) {
-            this.y = com.censivn.C3DEngine.b.b.a.c * this.A;
-            this.z = com.censivn.C3DEngine.b.b.a.c * this.B;
+            this.y = com.censivn.C3DEngine.b.b.A.c * this.A;
+            this.z = com.censivn.C3DEngine.b.b.A.c * this.B;
         } else {
             this.y = this.A;
             this.z = this.B;

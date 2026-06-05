@@ -51,7 +51,7 @@ public class a extends com.tsf.shell.f.i.B {
 
     public void k() {
         LauncherAppWidgetInfo launcherAppWidgetInfo = (LauncherAppWidgetInfo) K();
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             this.b.a(launcherAppWidgetInfo.width);
             this.b.b(launcherAppWidgetInfo.height);
             c(launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY);
@@ -88,7 +88,7 @@ public class a extends com.tsf.shell.f.i.B {
         t.a();
         ItemInfo itemInfoK = K();
         d.b bVar = (d.b) this.g.getLayoutParams();
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             bVar.a = itemInfoK.cellX;
             bVar.b = itemInfoK.cellY;
             bVar.d = itemInfoK.width;
@@ -142,19 +142,19 @@ public class a extends com.tsf.shell.f.i.B {
 
     public void a(Bitmap bitmap) {
         if (this.h == null) {
-            this.h = com.censivn.C3DEngine.a.g().a(bitmap, false);
+            this.h = com.censivn.C3DEngine.A.g().a(bitmap, false);
             this.b.textures().addElement(this.h);
             this.b.visible(true);
             b(this.h.width, this.h.height);
             d.b bVar = (d.b) this.g.getLayoutParams();
             c(bVar.a, bVar.b);
         } else if (bitmap.getWidth() != this.h.width || bitmap.getHeight() != this.h.height) {
-            com.censivn.C3DEngine.a.g().a(this.h, bitmap);
+            com.censivn.C3DEngine.A.g().a(this.h, bitmap);
             b(this.h.width, this.h.height);
             d.b bVar2 = (d.b) this.g.getLayoutParams();
             c(bVar2.a, bVar2.b);
         } else {
-            com.censivn.C3DEngine.a.g().a(this.h, bitmap);
+            com.censivn.C3DEngine.A.g().a(this.h, bitmap);
         }
         invalidate();
     }
@@ -182,7 +182,7 @@ public class a extends com.tsf.shell.f.i.B {
 
     @Override // com.tsf.shell.f.i.B
     public void ab() {
-        com.censivn.C3DEngine.a.a().c(this.m);
+        com.censivn.C3DEngine.A.a().c(this.m);
     }
 
     public void q() {
@@ -194,7 +194,7 @@ public class a extends com.tsf.shell.f.i.B {
     }
 
     public void ag() {
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.2
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.2
             @Override // java.lang.Runnable
             public void run() {
                 d.b bVar = (d.b) a.this.g.getLayoutParams();
@@ -228,8 +228,8 @@ public class a extends com.tsf.shell.f.i.B {
             d.b bVar = (d.b) this.g.getLayoutParams();
             int i = bVar.a;
             int i2 = bVar.b;
-            float fB = (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.a.H;
-            float fC = com.censivn.C3DEngine.b.b.a.I - (i2 + (this.b.c() / 2.0f));
+            float fB = (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.H;
+            float fC = com.censivn.C3DEngine.b.b.A.I - (i2 + (this.b.c() / 2.0f));
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.b.a.3
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
@@ -249,7 +249,7 @@ public class a extends com.tsf.shell.f.i.B {
         final g gVarZ = z();
         if (gVarZ != null && K().screen != gVarZ.t()) {
             K().screen = gVarZ.t();
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.4
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.4
                 @Override // java.lang.Runnable
                 public void run() {
                     ((d) a.this.g.getParent()).b(a.this.g);
@@ -269,13 +269,13 @@ public class a extends com.tsf.shell.f.i.B {
     @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         this.l.b(this);
-        com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.5
+        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.5
             @Override // java.lang.Runnable
             public void run() {
                 ((d) a.this.g.getParent()).b(a.this.g);
             }
         });
-        com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.6
+        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.6
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.a.l.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
@@ -286,7 +286,7 @@ public class a extends com.tsf.shell.f.i.B {
             this.b.destroy();
             this.b = null;
         }
-        com.censivn.C3DEngine.a.g().a(this.h);
+        com.censivn.C3DEngine.A.g().a(this.h);
         this.h = null;
         this.k = null;
         removeFromParent();
@@ -294,7 +294,7 @@ public class a extends com.tsf.shell.f.i.B {
 
     @Override // com.tsf.shell.f.i.B
     public void q_() {
-        com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.7
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.7
             @Override // java.lang.Runnable
             public void run() {
                 t.a();
@@ -312,20 +312,20 @@ public class a extends com.tsf.shell.f.i.B {
     }
 
     public float b(int i) {
-        return (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.a.H;
+        return (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.H;
     }
 
     public float c(int i) {
-        return com.censivn.C3DEngine.b.b.a.I - (i + (this.b.c() / 2.0f));
+        return com.censivn.C3DEngine.b.b.A.I - (i + (this.b.c() / 2.0f));
     }
 
     @Override // com.tsf.shell.f.i.B
     public void E() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.8
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.8
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e == null) {
-                    a.this.e = com.tsf.shell.f.e._b.a((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.a.b * 10.0f)));
+                    a.this.e = com.tsf.shell.f.e._b.a((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
                     a.this.e.useVBO(false);
                     a.this.e.textures().addElement(com.tsf.shell.f.e._b.h);
                     a.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;
@@ -337,7 +337,7 @@ public class a extends com.tsf.shell.f.i.B {
 
     @Override // com.tsf.shell.f.i.B
     public void F() {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.9
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.9
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e != null) {

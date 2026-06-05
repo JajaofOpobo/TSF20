@@ -57,7 +57,7 @@ public class c extends f {
 
     public c(Context context) {
         this.j = context;
-        d((int) com.censivn.C3DEngine.b.b.a.a(300.0f));
+        d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);
         this.a = new m();
         this.a.b(1);
@@ -65,7 +65,7 @@ public class c extends f {
         this.a.a(" ");
         this.a.b();
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
         bVar.i = this.a.minY();
         bVar.k = this.a.maxY();
         this.a.setLayoutParams(bVar);
@@ -78,23 +78,23 @@ public class c extends f {
         this.d.addChild(this.b);
         this.d.setMouseEventListener(new b(this.d));
         this.h = new d(0.0f, 0.0f);
-        this.h.a(com.censivn.C3DEngine.b.b.a.a(30.0f));
-        this.h.b(com.censivn.C3DEngine.b.b.a.a(30.0f));
-        this.h.position().y = com.censivn.C3DEngine.b.b.a.a(95.0f);
+        this.h.a(com.censivn.C3DEngine.b.b.A.a(30.0f));
+        this.h.b(com.censivn.C3DEngine.b.b.A.a(30.0f));
+        this.h.position().y = com.censivn.C3DEngine.b.b.A.a(95.0f);
         this.h.textures().addElement(this.f);
         this.h.calAABB();
         this.d.addChild(this.h);
         this.i = new d(0.0f, 0.0f);
-        this.i.a(com.censivn.C3DEngine.b.b.a.a(30.0f));
-        this.i.b(com.censivn.C3DEngine.b.b.a.a(30.0f));
-        this.i.position().y = com.censivn.C3DEngine.b.b.a.a(-115.0f);
+        this.i.a(com.censivn.C3DEngine.b.b.A.a(30.0f));
+        this.i.b(com.censivn.C3DEngine.b.b.A.a(30.0f));
+        this.i.position().y = com.censivn.C3DEngine.b.b.A.a(-115.0f);
         this.i.textures().addElement(this.f);
         this.i.calAABB();
         this.d.addChild(this.i);
         this.d.calAABB(1.0f, 1.2f, 1.0f);
         com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
-        bVar2.a = com.censivn.C3DEngine.b.b.a.a(20.0f);
-        bVar2.b = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        bVar2.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        bVar2.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
         bVar2.i = this.d.minY();
         bVar2.k = this.d.maxY();
         this.d.setLayoutParams(bVar2);
@@ -103,7 +103,7 @@ public class c extends f {
 
     @Override // com.censivn.C3DEngine.b.b.c
     public void c(int i) {
-        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(0.0f);
+        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(0.0f);
         this.b.b(i);
         this.d.calAABB(1.0f, 1.2f, 1.0f);
     }
@@ -146,7 +146,7 @@ public class c extends f {
 
         @Override // com.censivn.C3DEngine.b.d.a
         public void a(final MotionEvent motionEvent) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.c.b.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.c.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     Number3d number3dL = b.this.l(motionEvent);
@@ -157,7 +157,7 @@ public class c extends f {
 
         @Override // com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.c.b.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.c.b.2
                 @Override // java.lang.Runnable
                 public void run() {
                     Number3d number3dL = b.this.l(motionEvent2);
@@ -188,8 +188,8 @@ public class c extends f {
         public a() {
             super(35, 1, 1, 1, null, true);
             this.d = 0;
-            this.e = (int) com.censivn.C3DEngine.b.b.a.a(150.0f);
-            this.f = (int) com.censivn.C3DEngine.b.b.a.a(60.0f);
+            this.e = (int) com.censivn.C3DEngine.b.b.A.a(150.0f);
+            this.f = (int) com.censivn.C3DEngine.b.b.A.a(60.0f);
             this.g = 0;
             this.h = 0;
             textures().addElement(c.this.e);
@@ -354,10 +354,10 @@ public class c extends f {
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.f);
+            com.censivn.C3DEngine.A.g().a(this.f);
         }
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.e);
+            com.censivn.C3DEngine.A.g().a(this.e);
         }
     }
 
@@ -376,12 +376,12 @@ public class c extends f {
     public void f() {
         if (this.e.id == 0) {
             Bitmap bitmapA = a(-1, 100, 100);
-            com.censivn.C3DEngine.a.g().a(this.e, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.e, bitmapA);
             bitmapA.recycle();
         }
         if (this.f.id == 0) {
-            Bitmap bitmapB = b(-1, (int) com.censivn.C3DEngine.b.b.a.a(30.0f));
-            com.censivn.C3DEngine.a.g().a(this.f, bitmapB);
+            Bitmap bitmapB = b(-1, (int) com.censivn.C3DEngine.b.b.A.a(30.0f));
+            com.censivn.C3DEngine.A.g().a(this.f, bitmapB);
             bitmapB.recycle();
         }
     }

@@ -20,7 +20,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
 
     public static void a() {
         if (C) {
-            com.censivn.C3DEngine.a.a().c(E);
+            com.censivn.C3DEngine.A.a().c(E);
         }
     }
 
@@ -240,10 +240,10 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
                     kVar.calAABB();
                     break;
             }
-            kVar.maxY(kVar.maxY() + (70.0f * com.censivn.C3DEngine.b.b.a.b));
-            kVar.minY(kVar.minY() + (38.0f * com.censivn.C3DEngine.b.b.a.b));
-            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.a.b * 25.0f));
-            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.a.b * 25.0f));
+            kVar.maxY(kVar.maxY() + (70.0f * com.censivn.C3DEngine.b.b.A.b));
+            kVar.minY(kVar.minY() + (38.0f * com.censivn.C3DEngine.b.b.A.b));
+            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.A.b * 25.0f));
+            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.A.b * 25.0f));
             kVar.textures().addElement(this.d);
             kVar.setMouseEventListener(new C0100a(this.e, this, kVar));
             addChild(kVar);

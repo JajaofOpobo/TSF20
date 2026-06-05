@@ -2,8 +2,6 @@ package com.android.volley.toolbox;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.net.http.AndroidHttpClient;
-import android.os.Build;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,11 +15,7 @@ public class n {
         } catch (PackageManager.NameNotFoundException e) {
         }
         if (fVar == null) {
-            if (Build.VERSION.SDK_INT >= 9) {
-                fVar = new g();
-            } else {
-                fVar = new d(AndroidHttpClient.newInstance(str));
-            }
+            fVar = new g();
         }
         com.android.volley.m mVar = new com.android.volley.m(new c(file), new a(fVar));
         mVar.a();

@@ -60,7 +60,7 @@ public class a {
     }
 
     public void f(int i) {
-        this.p = (int) (i * com.censivn.C3DEngine.b.b.a.c);
+        this.p = (int) (i * com.censivn.C3DEngine.b.b.A.c);
     }
 
     public void c(boolean z) {
@@ -73,7 +73,7 @@ public class a {
 
     public void b(float f) {
         this.j = true;
-        this.k = com.censivn.C3DEngine.b.b.a.c * f;
+        this.k = com.censivn.C3DEngine.b.b.A.c * f;
     }
 
     public void g(int i) {
@@ -85,7 +85,7 @@ public class a {
     }
 
     public void h(int i) {
-        this.c = (int) (i * com.censivn.C3DEngine.b.b.a.c);
+        this.c = (int) (i * com.censivn.C3DEngine.b.b.A.c);
     }
 
     public void i(int i) {

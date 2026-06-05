@@ -70,7 +70,7 @@ public class d {
             bVar.visible(true);
             com.tsf.shell.manager.a.t.b(this.b, bVar.u);
             GLES20.glViewport(0, 0, this.c, this.d);
-            com.censivn.C3DEngine.a.e().a(this.c, this.d);
+            com.censivn.C3DEngine.A.e().a(this.c, this.d);
             if (bVar.visible()) {
                 MatrixStack.glPushMatrix();
                 bVar.draw();
@@ -87,8 +87,8 @@ public class d {
                 MatrixStack.glPopMatrix();
             }
             com.tsf.shell.manager.a.t.b();
-            GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
-            com.censivn.C3DEngine.a.e().a(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G);
+            GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             bVar.position().setAllFrom(i);
             bVar.rotation().setAllFrom(j);
             bVar.b(fX);

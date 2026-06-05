@@ -8,7 +8,7 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends j {
-    public static final float a = com.censivn.C3DEngine.b.b.a.b(400.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.A.b(400.0f);
     private i d;
     private float i;
     private i p;
@@ -29,7 +29,7 @@ public class d extends j {
     private float s = 0.0f;
     private boolean t = false;
     private boolean u = true;
-    private j c = new j() { // from class: com.censivn.C3DEngine.b.b.a.d.1
+    private j c = new j() { // from class: com.censivn.C3DEngine.b.b.A.d.1
         @Override // com.censivn.C3DEngine.b.f.i
         public void onChildMeasure(i iVar) {
             a();
@@ -54,8 +54,8 @@ public class d extends j {
 
     public d() {
         addChild(this.c);
-        this.i = com.censivn.C3DEngine.b.b.a.a(100.0f);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.a.d.2
+        this.i = com.censivn.C3DEngine.b.b.A.a(100.0f);
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.A.d.2
             float a;
             private com.censivn.C3DEngine.b.d.a d;
             private boolean e = false;
@@ -243,7 +243,7 @@ public class d extends j {
         this.o = false;
         renderChildren(true);
         if (this.p != null && this.p.alpha() != 0.0f) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.a.d.3
+            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.A.d.3
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     d.this.p.visible(false);
@@ -392,7 +392,7 @@ public class d extends j {
     private void q() {
         if (this.q != null) {
             this.r = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.a.d.4
+            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.A.d.4
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     if (d.this.q != null) {
@@ -421,7 +421,7 @@ public class d extends j {
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildStart() {
-        transferCanvas(com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.C, com.censivn.C3DEngine.b.b.a.A, com.censivn.C3DEngine.b.b.a.B);
+        transferCanvas(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
     }
 
     private void s() {

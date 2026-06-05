@@ -49,7 +49,7 @@ public class f {
 
     public static SharedPreferences f() {
         if (a == null) {
-            a = com.censivn.C3DEngine.a.d().getSharedPreferences("temp", 0);
+            a = com.censivn.C3DEngine.A.d().getSharedPreferences("temp", 0);
         }
         return a;
     }

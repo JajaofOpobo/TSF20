@@ -9,8 +9,8 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
-    public static final int a = com.censivn.C3DEngine.b.b.a.b(122.0f);
-    public static final int b = com.censivn.C3DEngine.b.b.a.b(34.0f);
+    public static final int a = com.censivn.C3DEngine.b.b.A.b(122.0f);
+    public static final int b = com.censivn.C3DEngine.b.b.A.b(34.0f);
     private static TextureElement c = new TextureElement(0, false);
     private static k d = b();
 
@@ -37,7 +37,7 @@ public class a {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (a.c.id == 0) {
-                    com.censivn.C3DEngine.a.g().a(a.c, a.a());
+                    com.censivn.C3DEngine.A.g().a(a.c, a.a());
                 }
             }
         };

@@ -3,7 +3,6 @@ package android.support.v7.widget;
 import android.content.Context;
 import android.os.Build;
 import android.support.v4.view.bb;
-import android.support.v7.a.a;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -63,17 +62,17 @@ public class ActionBarContextView extends a {
     }
 
     public ActionBarContextView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, a.C0012a.actionModeStyle);
+        this(context, attributeSet, android.support.v7.a.a.C0012a.actionModeStyle);
     }
 
     public ActionBarContextView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        aa aaVarA = aa.a(context, attributeSet, a.k.ActionMode, i, 0);
-        setBackgroundDrawable(aaVarA.a(a.k.ActionMode_background));
-        this.n = aaVarA.g(a.k.ActionMode_titleTextStyle, 0);
-        this.o = aaVarA.g(a.k.ActionMode_subtitleTextStyle, 0);
-        this.e = aaVarA.f(a.k.ActionMode_height, 0);
-        this.q = aaVarA.g(a.k.ActionMode_closeItemLayout, a.h.abc_action_mode_close_item_material);
+        aa aaVarA = aa.a(context, attributeSet, android.support.v7.a.a.k.ActionMode, i, 0);
+        setBackgroundDrawable(aaVarA.a(android.support.v7.a.a.k.ActionMode_background));
+        this.n = aaVarA.g(android.support.v7.a.a.k.ActionMode_titleTextStyle, 0);
+        this.o = aaVarA.g(android.support.v7.a.a.k.ActionMode_subtitleTextStyle, 0);
+        this.e = aaVarA.f(android.support.v7.a.a.k.ActionMode_height, 0);
+        this.q = aaVarA.g(android.support.v7.a.a.k.ActionMode_closeItemLayout, android.support.v7.a.a.h.abc_action_mode_close_item_material);
         aaVarA.a();
     }
 
@@ -126,10 +125,10 @@ public class ActionBarContextView extends a {
 
     private void e() {
         if (this.k == null) {
-            LayoutInflater.from(getContext()).inflate(a.h.abc_action_bar_title_item, this);
+            LayoutInflater.from(getContext()).inflate(android.support.v7.a.a.h.abc_action_bar_title_item, this);
             this.k = (LinearLayout) getChildAt(getChildCount() - 1);
-            this.l = (TextView) this.k.findViewById(a.f.action_bar_title);
-            this.m = (TextView) this.k.findViewById(a.f.action_bar_subtitle);
+            this.l = (TextView) this.k.findViewById(android.support.v7.a.a.f.action_bar_title);
+            this.m = (TextView) this.k.findViewById(android.support.v7.a.a.f.action_bar_subtitle);
             if (this.n != 0) {
                 this.l.setTextAppearance(getContext(), this.n);
             }
@@ -155,7 +154,7 @@ public class ActionBarContextView extends a {
         } else if (this.i.getParent() == null) {
             addView(this.i);
         }
-        this.i.findViewById(a.f.action_mode_close_button).setOnClickListener(new View.OnClickListener() { // from class: android.support.v7.widget.ActionBarContextView.1
+        this.i.findViewById(android.support.v7.a.a.f.action_mode_close_button).setOnClickListener(new View.OnClickListener() { // from class: android.support.v7.widget.ActionBarContextView.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 bVar.c();

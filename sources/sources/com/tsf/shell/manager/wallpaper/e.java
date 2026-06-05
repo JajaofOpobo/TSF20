@@ -7,7 +7,7 @@ public class e extends com.tsf.shell.f.e._g.d {
     private b a;
 
     public e() {
-        super(630.0f * com.censivn.C3DEngine.b.b.a.c);
+        super(630.0f * com.censivn.C3DEngine.b.b.A.c);
         ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
         this.a = new b(this);
         arrayList.add(this.a);

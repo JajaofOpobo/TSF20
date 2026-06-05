@@ -80,7 +80,7 @@ public class D {
 
         @Override // java.lang.Runnable
         public void run() {
-            com.censivn.C3DEngine.a.a().c(this.a);
+            com.censivn.C3DEngine.A.a().c(this.a);
         }
     }
 

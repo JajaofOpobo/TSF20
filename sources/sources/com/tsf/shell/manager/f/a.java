@@ -58,7 +58,7 @@ public class a {
         c = jVar;
         this.g = e.ai();
         if (this.g) {
-            d = new k(com.censivn.C3DEngine.b.b.a.F, com.censivn.C3DEngine.b.b.a.G, false);
+            d = new k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             d.setDefaultColor(new Color4(0, 0, 0, 255));
         } else {
             d = com.tsf.shell.manager.a.f.g();
@@ -128,8 +128,8 @@ public class a {
 
     public void a(int i, int i2, int i3, int i4) {
         if (this.g) {
-            ((k) d).a(com.censivn.C3DEngine.b.b.a.F);
-            ((k) d).b(com.censivn.C3DEngine.b.b.a.G);
+            ((k) d).a(com.censivn.C3DEngine.b.b.A.F);
+            ((k) d).b(com.censivn.C3DEngine.b.b.A.G);
         }
     }
 }

@@ -26,8 +26,8 @@ public class a extends h {
         private float e;
 
         public C0162a(String str) {
-            super(com.censivn.C3DEngine.b.b.a.a(167.0f), com.censivn.C3DEngine.b.b.a.a(164.0f), false);
-            this.e = ((-com.censivn.C3DEngine.b.b.a.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.a.a(20.0f);
+            super(com.censivn.C3DEngine.b.b.A.a(167.0f), com.censivn.C3DEngine.b.b.A.a(164.0f), false);
+            this.e = ((-com.censivn.C3DEngine.b.b.A.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(20.0f);
             textures().addElement(a.this.f);
             this.d = new m();
             this.d.d(30);
@@ -71,15 +71,15 @@ public class a extends h {
     }
 
     public a(String str) {
-        super(str, com.censivn.C3DEngine.b.b.a.a(175.0f));
+        super(str, com.censivn.C3DEngine.b.b.A.a(175.0f));
         this.a = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
         this.j = false;
         this.d = new com.censivn.C3DEngine.b.f.j();
         this.e = new com.censivn.C3DEngine.b.f.j();
         this.b = new com.censivn.C3DEngine.b.f.a.a(12, 100, 300, VEasing.Linear.easeNone);
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(100.0f);
-        int iA2 = (int) com.censivn.C3DEngine.b.b.a.a(10.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(100.0f);
+        int iA2 = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
         float f = (-((iA * 6) + (iA2 * 5))) / 2.0f;
         float f2 = ((iA * 2) + iA2) / 2.0f;
         int i = 0;
@@ -106,8 +106,8 @@ public class a extends h {
         e().addChild(this.e);
         e().addChild(this.d);
         this.b.textures().addElement(this.a);
-        this.g = com.censivn.C3DEngine.b.b.a.a(120.0f);
-        this.h = com.censivn.C3DEngine.b.b.a.a(40.0f);
+        this.g = com.censivn.C3DEngine.b.b.A.a(120.0f);
+        this.h = com.censivn.C3DEngine.b.b.A.a(40.0f);
         this.i = ((-((this.g * 4.0f) + (this.h * 3.0f))) / 2.0f) + (this.g / 2.0f);
         String[] strArr = {"Social", "Games", "Lifestyle", "Tools"};
         for (int i4 = 0; i4 < 4; i4++) {
@@ -121,7 +121,7 @@ public class a extends h {
             public void run() {
                 if (a.this.j) {
                     a.this.h();
-                    com.censivn.C3DEngine.a.a().b(a.this.l, 4000L);
+                    com.censivn.C3DEngine.A.a().b(a.this.l, 4000L);
                 }
             }
         };
@@ -129,19 +129,19 @@ public class a extends h {
             @Override // java.lang.Runnable
             public void run() {
                 a.this.m();
-                com.censivn.C3DEngine.a.a().b(a.this.k, 4000L);
+                com.censivn.C3DEngine.A.a().b(a.this.k, 4000L);
             }
         };
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        float fA = com.censivn.C3DEngine.b.b.a.a(-20.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.a.a(-20.0f);
-        float fA3 = com.censivn.C3DEngine.b.b.a.a(0.0f);
-        float fA4 = com.censivn.C3DEngine.b.b.a.a(0.0f);
-        float fA5 = com.censivn.C3DEngine.b.b.a.a(20.0f);
-        float fA6 = com.censivn.C3DEngine.b.b.a.a(20.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(-20.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.A.a(-20.0f);
+        float fA3 = com.censivn.C3DEngine.b.b.A.a(0.0f);
+        float fA4 = com.censivn.C3DEngine.b.b.A.a(0.0f);
+        float fA5 = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        float fA6 = com.censivn.C3DEngine.b.b.A.a(20.0f);
         for (int i = 0; i < 12; i++) {
             com.censivn.C3DEngine.b.f.a.b bVarA = this.b.a(i);
             int i2 = i % 3;
@@ -203,8 +203,8 @@ public class a extends h {
         int i = 0;
         super.g();
         this.j = false;
-        com.censivn.C3DEngine.a.g().a(this.a);
-        com.censivn.C3DEngine.a.g().a(this.f);
+        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.A.g().a(this.f);
         while (true) {
             int i2 = i;
             if (i2 < 4) {
@@ -221,11 +221,11 @@ public class a extends h {
         super.f();
         this.j = true;
         if (this.a.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.a, b.d.feature_auto_classify_icon);
+            com.censivn.C3DEngine.A.g().a(this.a, b.d.feature_auto_classify_icon);
         }
         if (this.f.id == 0) {
-            com.censivn.C3DEngine.a.g().a(this.f, b.d.feature_auto_classify_folder);
+            com.censivn.C3DEngine.A.g().a(this.f, b.d.feature_auto_classify_folder);
         }
-        com.censivn.C3DEngine.a.a().b(this.k, 1000L);
+        com.censivn.C3DEngine.A.a().b(this.k, 1000L);
     }
 }

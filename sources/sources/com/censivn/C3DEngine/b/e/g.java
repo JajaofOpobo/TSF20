@@ -9,7 +9,7 @@ public class g extends f {
     private m b;
 
     public g() {
-        this(com.censivn.C3DEngine.b.b.a.a(180.0f));
+        this(com.censivn.C3DEngine.b.b.A.a(180.0f));
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
@@ -32,7 +32,7 @@ public class g extends f {
         this.a = new m();
         this.a.b(1);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(15.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(15.0f);
         this.a.setLayoutParams(bVar);
         this.a.d(50);
         addChild(this.a);
@@ -82,7 +82,7 @@ public class g extends f {
             this.b.b(1);
             this.b.a(true);
             com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-            bVar.b = com.censivn.C3DEngine.b.b.a.a(15.0f);
+            bVar.b = com.censivn.C3DEngine.b.b.A.a(15.0f);
             this.b.setLayoutParams(bVar);
             this.b.d(38);
             this.b.position().x = (-a()) / 2.0f;

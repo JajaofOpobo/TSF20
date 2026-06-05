@@ -108,13 +108,13 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
     private void a(boolean z) {
         int i = 3;
         float f = 128.0f;
-        this.G = 32.0f * com.censivn.C3DEngine.b.b.a.a;
-        this.H = 32.0f * com.censivn.C3DEngine.b.b.a.a;
+        this.G = 32.0f * com.censivn.C3DEngine.b.b.A.a;
+        this.H = 32.0f * com.censivn.C3DEngine.b.b.A.a;
         this.E = new Number3d();
         this.F = new Number3d();
         this.a = this;
         this.j = new ArrayList<>();
-        int iA = (int) com.censivn.C3DEngine.b.b.a.a(128.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.A.a(128.0f);
         this.e = ThemeManager.mix.interactiveArrange.getTextureElement(ThemeShellDescription.INTERACTIVE_ARRANGE_BG, iA, iA);
         this.b = new k(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.c.1
             @Override // com.censivn.C3DEngine.b.f.i
@@ -162,19 +162,19 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
                     }
                     float x = (int) (this.d + (motionEvent2.getX() - this.f));
                     float y = (int) (this.e - (motionEvent2.getY() - this.g));
-                    if (c.this.F.x + x > com.censivn.C3DEngine.b.b.a.A) {
-                        this.d -= (x + c.this.F.x) - com.censivn.C3DEngine.b.b.a.A;
-                        x = (int) (com.censivn.C3DEngine.b.b.a.A - c.this.F.x);
-                    } else if (c.this.E.x + x < com.censivn.C3DEngine.b.b.a.z) {
-                        this.d = (com.censivn.C3DEngine.b.b.a.z - (x + c.this.E.x)) + this.d;
-                        x = (int) (com.censivn.C3DEngine.b.b.a.z - c.this.E.x);
+                    if (c.this.F.x + x > com.censivn.C3DEngine.b.b.A.A) {
+                        this.d -= (x + c.this.F.x) - com.censivn.C3DEngine.b.b.A.A;
+                        x = (int) (com.censivn.C3DEngine.b.b.A.A - c.this.F.x);
+                    } else if (c.this.E.x + x < com.censivn.C3DEngine.b.b.A.z) {
+                        this.d = (com.censivn.C3DEngine.b.b.A.z - (x + c.this.E.x)) + this.d;
+                        x = (int) (com.censivn.C3DEngine.b.b.A.z - c.this.E.x);
                     }
-                    if (c.this.E.y + y > com.censivn.C3DEngine.b.b.a.B) {
-                        this.e -= (y + c.this.E.y) - com.censivn.C3DEngine.b.b.a.B;
-                        y = (int) (com.censivn.C3DEngine.b.b.a.B - c.this.E.y);
-                    } else if (c.this.F.y + y < com.censivn.C3DEngine.b.b.a.C) {
-                        this.e = (com.censivn.C3DEngine.b.b.a.C - (y + c.this.F.y)) + this.e;
-                        y = (int) (com.censivn.C3DEngine.b.b.a.C - c.this.F.y);
+                    if (c.this.E.y + y > com.censivn.C3DEngine.b.b.A.B) {
+                        this.e -= (y + c.this.E.y) - com.censivn.C3DEngine.b.b.A.B;
+                        y = (int) (com.censivn.C3DEngine.b.b.A.B - c.this.E.y);
+                    } else if (c.this.F.y + y < com.censivn.C3DEngine.b.b.A.C) {
+                        this.e = (com.censivn.C3DEngine.b.b.A.C - (y + c.this.F.y)) + this.e;
+                        y = (int) (com.censivn.C3DEngine.b.b.A.C - c.this.F.y);
                     }
                     c.this.N = false;
                     c.this.k = x;
@@ -265,12 +265,12 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
         if (Q == null) {
             Q = new j();
             c.b bVar = new c.b();
-            bVar.a = com.censivn.C3DEngine.b.b.a.a(-130.0f);
-            bVar.b = com.censivn.C3DEngine.b.b.a.a(128.0f);
-            bVar.c = com.censivn.C3DEngine.b.b.a.a(50.0f);
+            bVar.a = com.censivn.C3DEngine.b.b.A.a(-130.0f);
+            bVar.b = com.censivn.C3DEngine.b.b.A.a(128.0f);
+            bVar.c = com.censivn.C3DEngine.b.b.A.a(50.0f);
             bVar.d = 0.0f;
             bVar.e = 38;
-            bVar.f = com.censivn.C3DEngine.b.b.a.a(54.0f);
+            bVar.f = com.censivn.C3DEngine.b.b.A.a(54.0f);
             bVar.g = 0;
             R = new c.a(b.i.menu_multiple_choice, b.d.widget_folder_multi_choice, bVar);
             Q.addChild(R);
@@ -332,19 +332,19 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
         this.I = (int) (this.I + ((this.K - this.I) * 0.36f));
         this.J = (int) (this.J + ((this.L - this.J) * 0.36f));
         if (this.a.position().x == 0.0f && this.a.position().y == 0.0f) {
-            if (this.J < com.censivn.C3DEngine.b.b.a.C) {
-                this.J = com.censivn.C3DEngine.b.b.a.C;
+            if (this.J < com.censivn.C3DEngine.b.b.A.C) {
+                this.J = com.censivn.C3DEngine.b.b.A.C;
             }
-            if (this.I > com.censivn.C3DEngine.b.b.a.A) {
-                this.I = com.censivn.C3DEngine.b.b.a.A;
+            if (this.I > com.censivn.C3DEngine.b.b.A.A) {
+                this.I = com.censivn.C3DEngine.b.b.A.A;
             }
             a(this.I, -this.J);
         } else {
-            if (this.J + this.a.position().y < com.censivn.C3DEngine.b.b.a.C) {
-                this.J = (int) (com.censivn.C3DEngine.b.b.a.C + this.a.position().y);
+            if (this.J + this.a.position().y < com.censivn.C3DEngine.b.b.A.C) {
+                this.J = (int) (com.censivn.C3DEngine.b.b.A.C + this.a.position().y);
             }
-            if (this.I + this.a.position().x > com.censivn.C3DEngine.b.b.a.A) {
-                this.I = (int) (com.censivn.C3DEngine.b.b.a.A - this.a.position().x);
+            if (this.I + this.a.position().x > com.censivn.C3DEngine.b.b.A.A) {
+                this.I = (int) (com.censivn.C3DEngine.b.b.A.A - this.a.position().x);
             }
             b(this.I, -this.J);
         }
@@ -389,10 +389,10 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
         if (size < 2) {
             i2 = 2;
             i = 2;
-        } else if (i4 / (size - 1) > 130.0f * com.censivn.C3DEngine.b.b.a.a || i5 / (size - 1) > 130.0f * com.censivn.C3DEngine.b.b.a.a) {
+        } else if (i4 / (size - 1) > 130.0f * com.censivn.C3DEngine.b.b.A.a || i5 / (size - 1) > 130.0f * com.censivn.C3DEngine.b.b.A.a) {
             if (i4 > i5 / 2) {
                 int i6 = 2;
-                while (i4 / (i6 - 1) > 130.0f * com.censivn.C3DEngine.b.b.a.a && i6 < size) {
+                while (i4 / (i6 - 1) > 130.0f * com.censivn.C3DEngine.b.b.A.a && i6 < size) {
                     i6++;
                 }
                 if (size % i6 == 0) {
@@ -404,7 +404,7 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
                 }
             } else {
                 i = 2;
-                while (i5 / (i - 1) > 130.0f * com.censivn.C3DEngine.b.b.a.a && i < size) {
+                while (i5 / (i - 1) > 130.0f * com.censivn.C3DEngine.b.b.A.a && i < size) {
                     i++;
                 }
                 if (size % i == 0) {
@@ -453,8 +453,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
                 }
             }
         }
-        int i7 = (int) (60.0f * com.censivn.C3DEngine.b.b.a.a);
-        int i8 = (int) (68.0f * com.censivn.C3DEngine.b.b.a.a);
+        int i7 = (int) (60.0f * com.censivn.C3DEngine.b.b.A.a);
+        int i8 = (int) (68.0f * com.censivn.C3DEngine.b.b.A.a);
         if (i2 == 1) {
             f = 0.0f;
         } else {
@@ -477,8 +477,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
 
     public void c() {
         int i;
-        if (400 > com.censivn.C3DEngine.b.b.a.D) {
-            i = (com.censivn.C3DEngine.b.b.a.D / 2) - 20;
+        if (400 > com.censivn.C3DEngine.b.b.A.D) {
+            i = (com.censivn.C3DEngine.b.b.A.D / 2) - 20;
         } else {
             i = VEasing.Back.easeIn;
         }
@@ -488,18 +488,18 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
     public void a(int i, int i2) {
         this.I = i;
         this.J = -i2;
-        if (i < com.censivn.C3DEngine.b.b.a.a * 64.0f) {
-            i = (int) (com.censivn.C3DEngine.b.b.a.a * 64.0f);
+        if (i < com.censivn.C3DEngine.b.b.A.a * 64.0f) {
+            i = (int) (com.censivn.C3DEngine.b.b.A.a * 64.0f);
         }
-        if (i2 < com.censivn.C3DEngine.b.b.a.a * 64.0f) {
-            i2 = (int) (com.censivn.C3DEngine.b.b.a.a * 64.0f);
+        if (i2 < com.censivn.C3DEngine.b.b.A.a * 64.0f) {
+            i2 = (int) (com.censivn.C3DEngine.b.b.A.a * 64.0f);
         }
-        int i3 = i - (((int) (com.censivn.C3DEngine.b.b.a.a * 128.0f)) / 2);
-        int i4 = i2 - (((int) (com.censivn.C3DEngine.b.b.a.a * 128.0f)) / 2);
+        int i3 = i - (((int) (com.censivn.C3DEngine.b.b.A.a * 128.0f)) / 2);
+        int i4 = i2 - (((int) (com.censivn.C3DEngine.b.b.A.a * 128.0f)) / 2);
         this.c.position().x = i - this.G;
         this.c.position().y = (-i2) + this.H;
         Q.position().x = 0.0f;
-        Q.position().y = this.c.position().y - com.censivn.C3DEngine.b.b.a.a(100.0f);
+        Q.position().y = this.c.position().y - com.censivn.C3DEngine.b.b.A.a(100.0f);
         this.b.points().pxX(13, this.o.x + i3);
         this.b.points().pxX(9, this.p.x + i3);
         this.b.points().pxX(5, this.q.x + i3);
@@ -535,18 +535,18 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
     }
 
     private void b(int i, int i2) {
-        float fPxX = i - ((com.censivn.C3DEngine.b.b.a.a * 128.0f) / 2.0f);
-        float fPxY = i2 - ((com.censivn.C3DEngine.b.b.a.a * 128.0f) / 2.0f);
-        if ((this.v.x + fPxX) - this.b.points().pxX(15) < com.censivn.C3DEngine.b.b.a.a * 128.0f) {
-            fPxX = ((com.censivn.C3DEngine.b.b.a.a * 128.0f) + this.b.points().pxX(15)) - this.v.x;
+        float fPxX = i - ((com.censivn.C3DEngine.b.b.A.a * 128.0f) / 2.0f);
+        float fPxY = i2 - ((com.censivn.C3DEngine.b.b.A.a * 128.0f) / 2.0f);
+        if ((this.v.x + fPxX) - this.b.points().pxX(15) < com.censivn.C3DEngine.b.b.A.a * 128.0f) {
+            fPxX = ((com.censivn.C3DEngine.b.b.A.a * 128.0f) + this.b.points().pxX(15)) - this.v.x;
         }
-        if ((this.b.points().pxY(15) - this.v.y) + fPxY < com.censivn.C3DEngine.b.b.a.a * 128.0f) {
-            fPxY = ((com.censivn.C3DEngine.b.b.a.a * 128.0f) - this.b.points().pxY(15)) + this.v.y;
+        if ((this.b.points().pxY(15) - this.v.y) + fPxY < com.censivn.C3DEngine.b.b.A.a * 128.0f) {
+            fPxY = ((com.censivn.C3DEngine.b.b.A.a * 128.0f) - this.b.points().pxY(15)) + this.v.y;
         }
         this.c.position().x = this.G + fPxX;
         this.c.position().y = (-this.H) - fPxY;
         Q.position().x = (this.b.points().pxX(15) + this.b.points().pxX(0)) / 2.0f;
-        Q.position().y = this.c.position().y - com.censivn.C3DEngine.b.b.a.a(100.0f);
+        Q.position().y = this.c.position().y - com.censivn.C3DEngine.b.b.A.a(100.0f);
         this.b.points().pxX(13, this.o.x + fPxX);
         this.b.points().pxX(9, this.p.x + fPxX);
         this.b.points().pxX(5, this.q.x + fPxX);
@@ -597,8 +597,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
                     c.this.c.destroy();
                     c.this.h.destroy();
                     c.this.O = null;
-                    com.censivn.C3DEngine.a.g().a(c.this.e);
-                    com.censivn.C3DEngine.a.g().a(c.this.f);
+                    com.censivn.C3DEngine.A.g().a(c.this.e);
+                    com.censivn.C3DEngine.A.g().a(c.this.f);
                 }
             };
             dVar.a(0);

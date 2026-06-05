@@ -40,7 +40,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
         super(str);
         this.b = aVar;
         this.m = new h();
-        this.c = com.censivn.C3DEngine.a.d().getPackageManager();
+        this.c = com.censivn.C3DEngine.A.d().getPackageManager();
         this.f = new ArrayList<>();
         this.g = new ArrayList<>();
         this.j = new ArrayList<>();
@@ -92,7 +92,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
         this.e = c0095a2;
         arrayList.add(this.d);
         arrayList.add(this.e);
-        a(aVar, arrayList, 20.0f * com.censivn.C3DEngine.b.b.a.c, 20.0f * com.censivn.C3DEngine.b.b.a.c, com.tsf.shell.manager.o.b.c.T + (com.censivn.C3DEngine.b.b.a.c * 20.0f), com.tsf.shell.manager.o.b.c.U + (com.censivn.C3DEngine.b.b.a.c * 20.0f));
+        a(aVar, arrayList, 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, com.tsf.shell.manager.o.b.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.b.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
         b((C.a) this.k);
     }
 
@@ -232,7 +232,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
                 if (bitmapA3 != null) {
                     com.tsf.shell.manager.o.b.c.b(canvas, bitmapA3, true);
                 }
-                com.censivn.C3DEngine.a.g().a(this.f, bitmapA);
+                com.censivn.C3DEngine.A.g().a(this.f, bitmapA);
             }
             return this.b;
         }
@@ -282,7 +282,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
 
         @Override // com.tsf.shell.manager.r.b.d.a
         public void c() {
-            com.censivn.C3DEngine.a.g().a(this.f);
+            com.censivn.C3DEngine.A.g().a(this.f);
         }
     }
 
@@ -344,7 +344,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
         @Override // com.tsf.shell.manager.r.b.d.a
         public void c() {
             if (this.b != null && this.b.K() != null) {
-                com.censivn.C3DEngine.a.g().a(((LauncherShortcutStandardInfo) this.b.K()).texture);
+                com.censivn.C3DEngine.A.g().a(((LauncherShortcutStandardInfo) this.b.K()).texture);
                 this.b.aD();
             }
         }

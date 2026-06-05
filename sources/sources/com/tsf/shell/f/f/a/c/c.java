@@ -34,7 +34,7 @@ public class c extends i {
     public static class a extends com.censivn.C3DEngine.b.f.j {
         public a() {
             visible(false);
-            position().y = -com.censivn.C3DEngine.b.b.a.a(150.0f);
+            position().y = -com.censivn.C3DEngine.b.b.A.a(150.0f);
             alpha(0.0f);
         }
 
@@ -58,7 +58,7 @@ public class c extends i {
                 }
             };
             dVar.a(0);
-            dVar.h(-com.censivn.C3DEngine.b.b.a.a(150.0f));
+            dVar.h(-com.censivn.C3DEngine.b.b.A.a(150.0f));
             com.censivn.C3DEngine.b.g.c.a(this);
             com.censivn.C3DEngine.b.g.c.a(this, 350, dVar);
             c();
@@ -101,7 +101,7 @@ public class c extends i {
 
             @Override // com.tsf.shell.f.e.e.a
             public float a() {
-                return com.censivn.C3DEngine.b.b.a.a(com.tsf.shell.f.f.a.h.F);
+                return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.h.F);
             }
         };
         addChild(this.g);
@@ -207,7 +207,7 @@ public class c extends i {
             } else {
                 Number3d number3d = com.tsf.shell.f.f.a.h.E.get(childIndexOf);
                 Number3d number3d2 = com.tsf.shell.f.f.a.h.E.get(i);
-                float fB2 = x.b(number3d.x, number3d.y, number3d2.x, number3d2.y) + (20.0f * com.censivn.C3DEngine.b.b.a.c);
+                float fB2 = x.b(number3d.x, number3d.y, number3d2.x, number3d2.y) + (20.0f * com.censivn.C3DEngine.b.b.A.c);
                 fB = x.b(f, f2, number3d.x, number3d.y);
                 f3 = fB2;
             }
@@ -548,7 +548,7 @@ public class c extends i {
             }
             if (!this.y) {
                 this.y = true;
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c.c.2
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c.c.2
                     @Override // java.lang.Runnable
                     public void run() {
                         c.this.y = false;
@@ -573,7 +573,7 @@ public class c extends i {
                             }
                             c.this.z.x = fArrB[0];
                             c.this.z.y = fArrB[1];
-                            if (fArrB[1] >= com.censivn.C3DEngine.b.b.a.C + com.tsf.shell.f.f.a.f.a) {
+                            if (fArrB[1] >= com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.f.a.f.a) {
                                 c.this.a.ap().globalToLocal(c.this.z);
                                 c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.b.a.T / 2.0f) * com.tsf.shell.f.f.a.h.v), c.this.z.y - ((com.tsf.shell.manager.o.b.a.U / 2.0f) * com.tsf.shell.f.f.a.h.v)), c.this.z.x, c.this.z.y);
                             }

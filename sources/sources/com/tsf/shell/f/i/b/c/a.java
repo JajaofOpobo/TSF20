@@ -74,7 +74,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
                 if (!this.l && !this.m && !this.n && !Y()) {
                     if (this.b.f) {
                         if (this.b.n != 0.0f) {
-                            position().y = this.o + (((float) Math.sin(p * ((double) this.r))) * this.b.n * com.censivn.C3DEngine.b.b.a.b);
+                            position().y = this.o + (((float) Math.sin(p * ((double) this.r))) * this.b.n * com.censivn.C3DEngine.b.b.A.b);
                             this.r++;
                         }
                         if (this.q) {
@@ -170,7 +170,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
 
     public void k() {
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.a.d(), FloatingWidgetPicker.class);
+        intent.setClass(com.censivn.C3DEngine.A.d(), FloatingWidgetPicker.class);
         this.s = Home.c.a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
@@ -183,7 +183,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
                 FloatingItem floatingItem = (FloatingItem) intent.getParcelableExtra("result");
                 floatingItem.a();
                 this.b = floatingItem;
-                com.censivn.C3DEngine.a.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.a.1
+                com.censivn.C3DEngine.A.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.a.1
                     @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                     public void run() {
                         if (a.this.b.o || !a.this.q()) {
@@ -200,7 +200,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
             }
             return;
         }
-        com.censivn.C3DEngine.a.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.a.2
+        com.censivn.C3DEngine.A.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.a.2
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.a.i.a(a.this);
@@ -211,16 +211,16 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
     private void l() {
         if (this.b != null) {
             if (this.b.f) {
-                this.g = (int) (com.censivn.C3DEngine.b.b.a.A + ((this.k.b() / 2.0f) * u()));
-                this.h = (int) (com.censivn.C3DEngine.b.b.a.A - ((this.k.b() / 2.0f) * u()));
-                this.i = (int) (com.censivn.C3DEngine.b.b.a.z - ((this.k.b() / 2.0f) * u()));
-                this.j = (int) (com.censivn.C3DEngine.b.b.a.z + ((this.k.b() / 2.0f) * u()));
+                this.g = (int) (com.censivn.C3DEngine.b.b.A.A + ((this.k.b() / 2.0f) * u()));
+                this.h = (int) (com.censivn.C3DEngine.b.b.A.A - ((this.k.b() / 2.0f) * u()));
+                this.i = (int) (com.censivn.C3DEngine.b.b.A.z - ((this.k.b() / 2.0f) * u()));
+                this.j = (int) (com.censivn.C3DEngine.b.b.A.z + ((this.k.b() / 2.0f) * u()));
                 return;
             }
-            this.g = (int) (com.censivn.C3DEngine.b.b.a.I + ((this.k.c() / 2.0f) * u()));
-            this.h = (int) (com.censivn.C3DEngine.b.b.a.I - ((this.k.c() / 2.0f) * u()));
-            this.i = (int) ((-com.censivn.C3DEngine.b.b.a.I) - ((this.k.c() / 2.0f) * u()));
-            this.j = (int) ((-com.censivn.C3DEngine.b.b.a.I) + ((this.k.c() / 2.0f) * u()));
+            this.g = (int) (com.censivn.C3DEngine.b.b.A.I + ((this.k.c() / 2.0f) * u()));
+            this.h = (int) (com.censivn.C3DEngine.b.b.A.I - ((this.k.c() / 2.0f) * u()));
+            this.i = (int) ((-com.censivn.C3DEngine.b.b.A.I) - ((this.k.c() / 2.0f) * u()));
+            this.j = (int) ((-com.censivn.C3DEngine.b.b.A.I) + ((this.k.c() / 2.0f) * u()));
         }
     }
 
@@ -240,7 +240,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         if (this.b.h) {
             this.k = new b(this.b.l, this.b.k, this.b.j, this.b.i, textureElementA.width, textureElementA.height);
         } else {
-            this.k = new C0114a(textureElementA.width * com.censivn.C3DEngine.b.b.a.b, textureElementA.height * com.censivn.C3DEngine.b.b.a.b, false);
+            this.k = new C0114a(textureElementA.width * com.censivn.C3DEngine.b.b.A.b, textureElementA.height * com.censivn.C3DEngine.b.b.A.b, false);
         }
         this.k.setAnimationObjectState(true);
         this.k.setHighPriorityAnimationObjectState(false);
@@ -338,7 +338,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         private float h;
 
         public b(int i, int i2, int i3, int i4, int i5, int i6) {
-            super(i * com.censivn.C3DEngine.b.b.a.b, i2 * com.censivn.C3DEngine.b.b.a.b, false);
+            super(i * com.censivn.C3DEngine.b.b.A.b, i2 * com.censivn.C3DEngine.b.b.A.b, false);
             this.f = 0;
             this.d = i3;
             this.e = i4;

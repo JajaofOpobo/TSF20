@@ -36,19 +36,19 @@ public class c extends f {
         com.tsf.shell.manager.a.A = new com.tsf.shell.manager.h.a();
         com.tsf.shell.manager.a.c = this;
         com.censivn.C3DEngine.a.a(gLSurfaceView);
-        com.censivn.C3DEngine.b.b.a.a();
+        com.censivn.C3DEngine.b.b.A.a();
         com.tsf.shell.manager.a.y = new com.tsf.shell.manager.e.a();
         com.tsf.shell.manager.a.t = new com.tsf.shell.f.a.a.b();
         com.tsf.shell.manager.a.u = new com.tsf.shell.f.a.b.a();
         com.tsf.shell.manager.a.r = new com.tsf.shell.manager.q.a();
         ThemeManager.initThemeManager();
         com.tsf.shell.manager.a.d = new com.tsf.shell.manager.action.b();
-        com.tsf.shell.manager.action.f.a(com.censivn.C3DEngine.a.d());
+        com.tsf.shell.manager.action.f.a(com.censivn.C3DEngine.A.d());
         com.tsf.shell.manager.a.z = new com.tsf.shell.manager.c.b();
         com.tsf.shell.e.e eVar = (com.tsf.shell.e.e) gLSurfaceView.getParent();
         com.tsf.shell.manager.a.o = new com.tsf.shell.f.h.b();
         com.tsf.shell.manager.a.n = new com.tsf.shell.manager.m.b();
-        com.tsf.shell.manager.a.f = new ShellWallpaperManager(com.censivn.C3DEngine.a.d());
+        com.tsf.shell.manager.a.f = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
         com.tsf.shell.manager.a.j = new d(eVar);
         com.tsf.shell.manager.a.h = new n();
         com.tsf.shell.manager.a.p = new com.tsf.shell.f.e.e.c();
@@ -59,7 +59,7 @@ public class c extends f {
         com.tsf.shell.manager.a.k = new com.tsf.shell.manager.d.a();
         com.tsf.shell.manager.a.l = new com.tsf.shell.manager.r.a.b();
         com.tsf.shell.manager.a.m = new p();
-        if (!t.a(com.censivn.C3DEngine.a.d())) {
+        if (!t.a(com.censivn.C3DEngine.A.d())) {
             com.tsf.shell.services.c.a = false;
         }
         this.d = new j();

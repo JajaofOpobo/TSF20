@@ -2,7 +2,7 @@ package com.tsf.shell.f.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class C {
-    public static final float a = com.censivn.C3DEngine.b.b.a.a(300.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.A.a(300.0f);
 
     public static float a(float f, float f2, float f3) {
         return a(f, f2, f3, a);
@@ -13,11 +13,11 @@ public class C {
             return f;
         }
         if (f > f2) {
-            float f5 = (f - f2) / com.censivn.C3DEngine.b.b.a.D;
+            float f5 = (f - f2) / com.censivn.C3DEngine.b.b.A.D;
             return (float) ((Math.sin((((double) (f5 <= 1.0f ? f5 : 1.0f)) * 3.141592653589793d) / 2.0d) * ((double) f4)) + ((double) f2));
         }
         if (f < f3) {
-            float f6 = (f3 - f) / com.censivn.C3DEngine.b.b.a.D;
+            float f6 = (f3 - f) / com.censivn.C3DEngine.b.b.A.D;
             return (float) (((double) f3) - (Math.sin((((double) (f6 <= 1.0f ? f6 : 1.0f)) * 3.141592653589793d) / 2.0d) * ((double) f4)));
         }
         return f;

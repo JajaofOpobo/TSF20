@@ -64,7 +64,7 @@ public class c implements a {
                 this.g += this.f.g - gVar.g;
                 this.f = gVar;
             }
-            this.b.a.setTransform(((gVar.g + this.g) * com.censivn.C3DEngine.b.b.a.D) / com.tsf.shell.f._d.d.b.a, 0.0f, 0.0f);
+            this.b.a.setTransform(((gVar.g + this.g) * com.censivn.C3DEngine.b.b.A.D) / com.tsf.shell.f._d.d.b.a, 0.0f, 0.0f);
         }
     }
 
@@ -79,7 +79,7 @@ public class c implements a {
             if (Math.abs(this.i - this.h) < 0.5f) {
                 c();
             } else {
-                com.censivn.C3DEngine.a.e().j();
+                com.censivn.C3DEngine.A.e().j();
             }
         }
     }

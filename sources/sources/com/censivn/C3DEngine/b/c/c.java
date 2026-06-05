@@ -32,8 +32,8 @@ public class c {
         } else {
             this.e.addElement(renderRunnable);
         }
-        if (renderRunnable.autoInvalidate && com.censivn.C3DEngine.a.e() != null) {
-            com.censivn.C3DEngine.a.e().j();
+        if (renderRunnable.autoInvalidate && com.censivn.C3DEngine.A.e() != null) {
+            com.censivn.C3DEngine.A.e().j();
         }
     }
 
@@ -53,7 +53,7 @@ public class c {
         if (runnable != null) {
             synchronized (this.g) {
                 this.h.add(runnable);
-                com.censivn.C3DEngine.a.e().j();
+                com.censivn.C3DEngine.A.e().j();
             }
         }
     }
@@ -142,7 +142,7 @@ public class c {
                             break;
                     }
                 } else if (renderRunnableNextElement.autoInvalidate) {
-                    com.censivn.C3DEngine.a.e().j();
+                    com.censivn.C3DEngine.A.e().j();
                 }
             }
         }

@@ -22,7 +22,7 @@ public class h extends j {
     private float h;
     private float i;
     private float j;
-    private float k = 0.0f * com.censivn.C3DEngine.b.b.a.c;
+    private float k = 0.0f * com.censivn.C3DEngine.b.b.A.c;
 
     public h(float f, float f2, float f3, boolean z) {
         this.i = f;
@@ -38,12 +38,12 @@ public class h extends j {
             public void onDrawStart() {
                 Number3d.TEMPNUMBER3D.reset();
                 Number3d number3dLocalToGlobal = localToGlobal(Number3d.TEMPNUMBER3D);
-                com.censivn.C3DEngine.a.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
+                com.censivn.C3DEngine.A.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
             }
 
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
-                com.censivn.C3DEngine.a.e().f();
+                com.censivn.C3DEngine.A.e().f();
             }
         };
         addChild(this.e);
@@ -54,14 +54,14 @@ public class h extends j {
         if ((this.g instanceof com.tsf.shell.f.i.c.g) && !((com.tsf.shell.f.i.c.g) this.g).j()) {
             if (b.id == 0) {
                 Bitmap bitmapA = x.a(b.d.widget_item_download);
-                com.censivn.C3DEngine.a.g().a(b, bitmapA);
+                com.censivn.C3DEngine.A.g().a(b, bitmapA);
                 bitmapA.recycle();
             }
             if (a == null) {
-                a = new k(com.censivn.C3DEngine.b.b.a.c * 84.0f, com.censivn.C3DEngine.b.b.a.c * 84.0f, false);
+                a = new k(com.censivn.C3DEngine.b.b.A.c * 84.0f, com.censivn.C3DEngine.b.b.A.c * 84.0f, false);
                 a.textures().addElement(b);
-                a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.a.a(10.0f);
-                a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.a.a(10.0f);
+                a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
+                a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
             }
             a.dispatchDraw();
         }
@@ -98,7 +98,7 @@ public class h extends j {
         } else if (this.g != null) {
             this.g.h();
         }
-        i iVarB = eVar.b((int) (this.i - com.censivn.C3DEngine.b.b.a.a(20.0f)));
+        i iVarB = eVar.b((int) (this.i - com.censivn.C3DEngine.b.b.A.a(20.0f)));
         if (this.d != iVarB) {
             removeChild(this.d);
             this.d = iVarB;

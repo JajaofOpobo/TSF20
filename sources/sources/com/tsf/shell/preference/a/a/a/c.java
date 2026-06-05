@@ -27,24 +27,24 @@ public class c extends h {
 
         public void a() {
             if (this.c.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.c, this.a);
+                com.censivn.C3DEngine.A.g().a(this.c, this.a);
             }
         }
 
         public void b() {
             if (this.c.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.c);
+                com.censivn.C3DEngine.A.g().a(this.c);
             }
         }
     }
 
     public c(String str) {
-        super(str, com.censivn.C3DEngine.b.b.a.a(150.0f), 0.0f, com.censivn.C3DEngine.b.b.a.a(30.0f));
+        super(str, com.censivn.C3DEngine.b.b.A.a(150.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(30.0f));
         this.a = new ArrayList<>();
         this.a.add(new a(b.d.preference_about_facebook, "http://www.facebook.com/tsfapp"));
         this.a.add(new a(b.d.preference_about_google_plus, "http://gplus.to/tsf"));
         this.a.add(new a(b.d.preference_about_tsf, "http://www.tsfui.com/"));
-        float fA = com.censivn.C3DEngine.b.b.a.a(118.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(118.0f);
         for (final a aVar : this.a) {
             com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(fA, fA, false);
             kVar.setDefaultColor(new Color4(-5592406));
@@ -65,9 +65,9 @@ public class c extends h {
     @Override // com.tsf.shell.preference.a.a.a.h, com.censivn.C3DEngine.b.b.c
     public void c(int i) {
         super.c(i);
-        float fA = com.censivn.C3DEngine.b.b.a.a(118.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.a.a(80.0f);
-        float fA3 = ((-com.censivn.C3DEngine.b.b.a.F) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(120.0f) + (fA / 2.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(118.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.A.a(80.0f);
+        float fA3 = ((-com.censivn.C3DEngine.b.b.A.F) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(120.0f) + (fA / 2.0f);
         Iterator<a> it = this.a.iterator();
         while (true) {
             float f = fA3;

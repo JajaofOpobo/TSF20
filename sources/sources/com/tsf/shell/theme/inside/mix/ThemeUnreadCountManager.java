@@ -41,7 +41,7 @@ public class ThemeUnreadCountManager extends ThemeMixElementManager {
             return null;
         }
         try {
-            Bitmap bitmapCreateScaledBitmap = Bitmap.createScaledBitmap(bitmap, (int) (bitmap.getWidth() * com.censivn.C3DEngine.b.b.a.b), (int) (bitmap.getHeight() * com.censivn.C3DEngine.b.b.a.b), true);
+            Bitmap bitmapCreateScaledBitmap = Bitmap.createScaledBitmap(bitmap, (int) (bitmap.getWidth() * com.censivn.C3DEngine.b.b.A.b), (int) (bitmap.getHeight() * com.censivn.C3DEngine.b.b.A.b), true);
             if (bitmap != bitmapCreateScaledBitmap) {
                 bitmap.recycle();
             }
@@ -51,7 +51,7 @@ public class ThemeUnreadCountManager extends ThemeMixElementManager {
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(Integer.toString(iRandom));
             int width = bitmapB.getWidth();
-            Bitmap bitmapE = ((float) width) + (com.censivn.C3DEngine.b.b.a.b * 28.0f) > ((float) bitmapCreateScaledBitmap.getWidth()) ? q.e(bitmapCreateScaledBitmap, bitmapCreateScaledBitmap.getWidth() / 2, width + ((int) (com.censivn.C3DEngine.b.b.a.b * 28.0f))) : bitmapCreateScaledBitmap;
+            Bitmap bitmapE = ((float) width) + (com.censivn.C3DEngine.b.b.A.b * 28.0f) > ((float) bitmapCreateScaledBitmap.getWidth()) ? q.e(bitmapCreateScaledBitmap, bitmapCreateScaledBitmap.getWidth() / 2, width + ((int) (com.censivn.C3DEngine.b.b.A.b * 28.0f))) : bitmapCreateScaledBitmap;
             int width2 = bitmapE.getWidth() > bitmapE.getHeight() ? bitmapE.getWidth() : bitmapE.getHeight();
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(width2, width2, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);

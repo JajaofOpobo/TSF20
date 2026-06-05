@@ -32,8 +32,8 @@ public class d extends ViewGroup {
         Home.b().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int i = displayMetrics.widthPixels;
         int i2 = displayMetrics.heightPixels;
-        a = (int) (com.censivn.C3DEngine.b.b.a.e * 3.0f);
-        d = (int) (com.censivn.C3DEngine.b.b.a.e * 3.0f);
+        a = (int) (com.censivn.C3DEngine.b.b.A.e * 3.0f);
+        d = (int) (com.censivn.C3DEngine.b.b.A.e * 3.0f);
         b = 0;
         e = 0;
         setAlwaysDrawnWithCacheEnabled(false);
@@ -88,7 +88,7 @@ public class d extends ViewGroup {
     public boolean a(int i, View view) {
         int i2;
         int childCount = getChildCount();
-        int i3 = com.censivn.C3DEngine.b.b.a.D * com.censivn.C3DEngine.b.b.a.E;
+        int i3 = com.censivn.C3DEngine.b.b.A.D * com.censivn.C3DEngine.b.b.A.E;
         int i4 = 0;
         int i5 = 0;
         while (i4 < childCount) {

@@ -675,10 +675,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         }
         if (!this.af) {
             if (this.u == null) {
-                this.u = com.censivn.C3DEngine.a.g().a(m.c, m.d, false);
+                this.u = com.censivn.C3DEngine.A.g().a(m.c, m.d, false);
             } else if (this.u.width != m.c || this.u.height != m.d) {
-                com.censivn.C3DEngine.a.g().a(this.u);
-                this.u = com.censivn.C3DEngine.a.g().a(m.c, m.d, false);
+                com.censivn.C3DEngine.A.g().a(this.u);
+                this.u = com.censivn.C3DEngine.A.g().a(m.c, m.d, false);
             }
             this.t.textures().clear();
             this.t.textures().addElement(this.u);
@@ -833,7 +833,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             } else {
                 K().onUpdateName(str, false);
             }
-            com.censivn.C3DEngine.a.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i._b.d.b.20
+            com.censivn.C3DEngine.A.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i._b.d.b.20
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
                     b.l.a(b.this, str);
@@ -859,7 +859,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
     }
 
     public void c(int i) {
-        com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.21
+        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.21
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.d.a().b("WidgetFolderBox");
@@ -870,7 +870,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
     public void aQ() {
         if (!this.Z) {
             this.Z = true;
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.2
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.2
                 @Override // java.lang.Runnable
                 public void run() {
                     b.this.bc();
@@ -1039,7 +1039,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                             dVar.a(255);
                             dVar.e(b.this.M.z);
                         } else {
-                            if (com.censivn.C3DEngine.b.b.a.O) {
+                            if (com.censivn.C3DEngine.b.b.A.O) {
                                 b.this.L.x = b.this.K().cellX;
                                 b.this.L.y = b.this.K().cellY;
                                 b.this.M.z = b.this.K().rotation;
@@ -1056,7 +1056,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                         com.censivn.C3DEngine.b.g.c.a(b.this, 380, dVar);
                     } else {
                         if (b.this.aa == null) {
-                            if (com.censivn.C3DEngine.b.b.a.O) {
+                            if (com.censivn.C3DEngine.b.b.A.O) {
                                 b.this.L.x = b.this.K().cellX;
                                 b.this.L.y = b.this.K().cellY;
                                 b.this.M.z = b.this.K().rotation;
@@ -1385,7 +1385,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                             runnable2 = new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.7
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.7.1
+                                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.7.1
                                         @Override // java.lang.Runnable
                                         public void run() {
                                             b.this.a(runnable);
@@ -1658,14 +1658,14 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                         bVar.visible(false);
                     } else {
                         dVar.f(0.0f);
-                        dVar.h(com.censivn.C3DEngine.b.b.a.c * 100.0f);
+                        dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                         dVar.e(0.0f);
                         dVar.a(255);
                         com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
                     }
                 } else {
                     dVar.f(0.0f);
-                    dVar.h(com.censivn.C3DEngine.b.b.a.c * 100.0f);
+                    dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                     dVar.e(0.0f);
                     dVar.a(255);
                     com.censivn.C3DEngine.b.g.c.a(bVar);
@@ -1854,10 +1854,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         this.P = null;
         this.Q = null;
         this.R.a();
-        com.censivn.C3DEngine.a.g().a(this.v);
-        com.censivn.C3DEngine.a.g().a(this.u);
+        com.censivn.C3DEngine.A.g().a(this.v);
+        com.censivn.C3DEngine.A.g().a(this.u);
         if (this.w != null) {
-            com.censivn.C3DEngine.a.g().a(this.w);
+            com.censivn.C3DEngine.A.g().a(this.w);
         }
         this.u = null;
         B.remove(this);

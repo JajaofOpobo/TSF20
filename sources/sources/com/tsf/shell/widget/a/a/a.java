@@ -12,7 +12,7 @@ public class a extends f {
 
     public a(Context context, j jVar) {
         this.b = jVar;
-        d((int) com.censivn.C3DEngine.b.b.a.a(300.0f));
+        d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);
         this.a = new j() { // from class: com.tsf.shell.widget.a.a.a.1
             @Override // com.censivn.C3DEngine.b.f.j
@@ -20,11 +20,11 @@ public class a extends f {
                 a.this.b.dispatchDraw();
             }
         };
-        float fA = com.censivn.C3DEngine.b.b.a.a(250.0f);
+        float fA = com.censivn.C3DEngine.b.b.A.a(250.0f);
         this.a.setAABBPX(-fA, -fA, 0.0f, fA, fA, 0.0f);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(120.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.a.a(120.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(120.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.A.a(120.0f);
         bVar.i = this.a.minY();
         bVar.k = this.a.maxY();
         this.a.setLayoutParams(bVar);

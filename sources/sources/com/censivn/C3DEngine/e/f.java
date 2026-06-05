@@ -122,7 +122,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
             this.h.a();
             this.h.b();
             Bitmap bitmapB = this.h.b();
-            this.h.a(com.censivn.C3DEngine.a.g().a(bitmapB, this.l));
+            this.h.a(com.censivn.C3DEngine.A.g().a(bitmapB, this.l));
             bitmap = bitmapB;
         }
         for (int i = 0; i < size; i++) {

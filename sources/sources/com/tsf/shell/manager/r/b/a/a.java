@@ -78,7 +78,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
             }
         }));
         setFunctions(arrayList);
-        this.c = new h(com.censivn.C3DEngine.b.b.a.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.a.c, 20.0f * com.censivn.C3DEngine.b.b.a.c, (com.censivn.C3DEngine.b.b.a.c * 20.0f) + com.tsf.shell.manager.o.b.a.T, (com.censivn.C3DEngine.b.b.a.c * 20.0f) + com.tsf.shell.manager.o.b.a.U) { // from class: com.tsf.shell.manager.r.b.a.a.4
+        this.c = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.b.a.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.b.a.U) { // from class: com.tsf.shell.manager.r.b.a.a.4
             @Override // com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
             }

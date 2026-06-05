@@ -30,17 +30,17 @@ public class A {
     public static void a() {
         l = new q();
         m = new g();
-        d = 25.0f * com.censivn.C3DEngine.b.b.a.a;
+        d = 25.0f * com.censivn.C3DEngine.b.b.A.a;
         k = new C0091a();
         Bitmap bitmapA = x.a(b.d.alignment_light);
-        e = com.censivn.C3DEngine.a.g().a(bitmapA, true);
+        e = com.censivn.C3DEngine.A.g().a(bitmapA, true);
         bitmapA.recycle();
         Bitmap bitmapA2 = x.a(b.d.alignment_unmatch_bg);
-        f = com.censivn.C3DEngine.a.g().a(bitmapA2, true);
+        f = com.censivn.C3DEngine.A.g().a(bitmapA2, true);
         i = f.id;
         bitmapA2.recycle();
         Bitmap bitmapA3 = x.a(b.d.alignment_match_bg);
-        g = com.censivn.C3DEngine.a.g().a(bitmapA3, true);
+        g = com.censivn.C3DEngine.A.g().a(bitmapA3, true);
         h = g.id;
         bitmapA3.recycle();
         a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.e.a.1
@@ -70,10 +70,10 @@ public class A {
         kVar3.useVBO(false);
         kVar3.textures().addElement(E);
         if (z) {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
+            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
-                    float f3 = com.censivn.C3DEngine.b.b.a.F / 2;
+                    float f3 = com.censivn.C3DEngine.b.b.A.F / 2;
                     float f4 = a.j.position().x;
                     kVar2.position().x += 5.0f;
                     kVar3.position().x -= 5.0f;
@@ -86,10 +86,10 @@ public class A {
                 }
             };
         } else {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.a.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
+            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
-                    float f3 = com.censivn.C3DEngine.b.b.a.G / 2;
+                    float f3 = com.censivn.C3DEngine.b.b.A.G / 2;
                     float f4 = a.j.position().y;
                     kVar2.position().x += 5.0f;
                     kVar3.position().x -= 5.0f;
@@ -143,8 +143,8 @@ public class A {
             jVar.addChildAt(a, jVar.getChildIndexOf(bVar));
             com.censivn.C3DEngine.b.c.b.a(m);
             com.tsf.shell.manager.a.b.a(l);
-            b.a(com.censivn.C3DEngine.b.b.a.F);
-            c.a(com.censivn.C3DEngine.b.b.a.G);
+            b.a(com.censivn.C3DEngine.b.b.A.F);
+            c.a(com.censivn.C3DEngine.b.b.A.G);
         }
     }
 
@@ -171,7 +171,7 @@ public class A {
     }
 
     public static void a(int i2, int i3) {
-        b.a(com.censivn.C3DEngine.b.b.a.F);
-        c.a(com.censivn.C3DEngine.b.b.a.G);
+        b.a(com.censivn.C3DEngine.b.b.A.F);
+        c.a(com.censivn.C3DEngine.b.b.A.G);
     }
 }

@@ -32,7 +32,7 @@ public class c extends d {
     public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z, int i) {
         super(launcherShortcut3DInfo, aVar, z);
         this.t = i;
-        int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.a.c * aE().A);
+        int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.A.c * aE().A);
         if (a == null) {
             a = new k(i2, i2, false) { // from class: com.tsf.shell.f.i.b.e.c.1
                 @Override // com.censivn.C3DEngine.b.f.i
@@ -40,7 +40,7 @@ public class c extends d {
                     if (c.b.id == 0) {
                         int i3 = com.tsf.shell.manager.o.b.a.H;
                         Bitmap bitmap = ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_POINT, i3, i3);
-                        com.censivn.C3DEngine.a.g().a(c.b, bitmap);
+                        com.censivn.C3DEngine.A.g().a(c.b, bitmap);
                         bitmap.recycle();
                     }
                 }
@@ -116,7 +116,7 @@ public class c extends d {
             q.remove(this);
         }
         if (q.size() == 0) {
-            com.censivn.C3DEngine.a.g().a(b);
+            com.censivn.C3DEngine.A.g().a(b);
             b = null;
         }
         super.g();

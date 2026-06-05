@@ -26,7 +26,7 @@ public class i extends a {
         float fMaxY = jVar2.position().y + ((jVar2.maxY() - jVar2.minY()) * 0.5f) + jVar2.minY();
         PositionNumber3d positionNumber3dPosition = jVar.position();
         positionNumber3dPosition.y = ((fMaxY - jVar.position().y) * 0.15f) + positionNumber3dPosition.y;
-        jVar.position().x = 160.0f * com.censivn.C3DEngine.b.b.a.b;
+        jVar.position().x = 160.0f * com.censivn.C3DEngine.b.b.A.b;
     }
 
     @Override // com.tsf.shell.f.c.a.a.a
@@ -62,14 +62,14 @@ public class i extends a {
     @Override // com.tsf.shell.f.c.a.a.a
     public Number3d a(com.censivn.C3DEngine.b.f.i iVar) {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
-        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.a.z - com.tsf.shell.f.c.a.f.b;
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z - com.tsf.shell.f.c.a.f.b;
         return Number3d.TEMPNUMBER3D;
     }
 
     @Override // com.tsf.shell.f.c.a.a.a
     public Number3d b(com.censivn.C3DEngine.b.f.i iVar) {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
-        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.a.z + com.tsf.shell.f.c.a.f.a;
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z + com.tsf.shell.f.c.a.f.a;
         return Number3d.TEMPNUMBER3D;
     }
 

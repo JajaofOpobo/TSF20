@@ -36,7 +36,7 @@ public class e extends FrameLayout {
             case 1:
             case 3:
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.e.e.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.e.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(motionEventObtain);
@@ -63,7 +63,7 @@ public class e extends FrameLayout {
             case 1:
             case 3:
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.e.e.2
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.e.2
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(motionEventObtain);
@@ -109,25 +109,25 @@ public class e extends FrameLayout {
             d.b bVar = (d.b) this.d.g.getLayoutParams();
             if (com.tsf.shell.manager.a.h.d.b()) {
                 float[] fArrA = com.tsf.shell.manager.a.h.d.a();
-                iB = (int) ((fArrA[0] - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.a.H);
-                iC = (int) (((-fArrA[1]) + com.censivn.C3DEngine.b.b.a.I) - (this.d.b.c() / 2.0f));
+                iB = (int) ((fArrA[0] - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H);
+                iC = (int) (((-fArrA[1]) + com.censivn.C3DEngine.b.b.A.I) - (this.d.b.c() / 2.0f));
             } else {
-                iB = (int) ((this.d.position().x - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.a.H);
-                iC = (int) (((-this.d.position().y) + com.censivn.C3DEngine.b.b.a.I) - (this.d.b.c() / 2.0f));
+                iB = (int) ((this.d.position().x - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H);
+                iC = (int) (((-this.d.position().y) + com.censivn.C3DEngine.b.b.A.I) - (this.d.b.c() / 2.0f));
             }
             int[] iArr = {iB, iC, bVar.d, bVar.e};
-            if (bVar.d + iB > com.censivn.C3DEngine.b.b.a.x) {
-                iArr[0] = com.censivn.C3DEngine.b.b.a.x - bVar.d;
-            } else if (iB < com.censivn.C3DEngine.b.b.a.v) {
-                iArr[0] = com.censivn.C3DEngine.b.b.a.v;
+            if (bVar.d + iB > com.censivn.C3DEngine.b.b.A.x) {
+                iArr[0] = com.censivn.C3DEngine.b.b.A.x - bVar.d;
+            } else if (iB < com.censivn.C3DEngine.b.b.A.v) {
+                iArr[0] = com.censivn.C3DEngine.b.b.A.v;
             }
-            if (bVar.e + iC > com.censivn.C3DEngine.b.b.a.y) {
-                iArr[1] = com.censivn.C3DEngine.b.b.a.y - bVar.e;
-            } else if (iC < com.censivn.C3DEngine.b.b.a.w) {
-                iArr[1] = com.censivn.C3DEngine.b.b.a.w;
+            if (bVar.e + iC > com.censivn.C3DEngine.b.b.A.y) {
+                iArr[1] = com.censivn.C3DEngine.b.b.A.y - bVar.e;
+            } else if (iC < com.censivn.C3DEngine.b.b.A.w) {
+                iArr[1] = com.censivn.C3DEngine.b.b.A.w;
             }
             ItemInfo itemInfoK = this.d.K();
-            if (com.censivn.C3DEngine.b.b.a.O) {
+            if (com.censivn.C3DEngine.b.b.A.O) {
                 int i = iArr[0];
                 bVar.a = i;
                 itemInfoK.cellX = i;
@@ -144,7 +144,7 @@ public class e extends FrameLayout {
             }
             final com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.a.h.n();
             final com.tsf.shell.f.i.b.b.a aVar = this.d;
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.e.e.3
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.e.3
                 @Override // java.lang.Runnable
                 public void run() {
                     if (aVar != null && aVar.g != null) {

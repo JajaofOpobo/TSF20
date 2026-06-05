@@ -20,30 +20,30 @@ public class A {
         int i6 = iArr[3];
         int i7 = (int) com.tsf.shell.manager.a.h.d.a.d;
         int i8 = (int) com.tsf.shell.manager.a.h.d.a.d;
-        if (i3 < com.censivn.C3DEngine.b.b.a.v) {
-            i5 -= com.censivn.C3DEngine.b.b.a.v - i3;
-            i3 = com.censivn.C3DEngine.b.b.a.v;
+        if (i3 < com.censivn.C3DEngine.b.b.A.v) {
+            i5 -= com.censivn.C3DEngine.b.b.A.v - i3;
+            i3 = com.censivn.C3DEngine.b.b.A.v;
             z = true;
-        } else if (i3 > com.censivn.C3DEngine.b.b.a.x - i7) {
-            i3 = com.censivn.C3DEngine.b.b.a.x - i7;
+        } else if (i3 > com.censivn.C3DEngine.b.b.A.x - i7) {
+            i3 = com.censivn.C3DEngine.b.b.A.x - i7;
             z = true;
         } else {
             z = false;
         }
-        if (i3 + i5 > com.censivn.C3DEngine.b.b.a.x) {
-            i5 = com.censivn.C3DEngine.b.b.a.x - i3;
+        if (i3 + i5 > com.censivn.C3DEngine.b.b.A.x) {
+            i5 = com.censivn.C3DEngine.b.b.A.x - i3;
             z = true;
         } else if (i5 < i7) {
             i3 -= i7 - i5;
             i5 = i7;
             z = true;
         }
-        if (i4 < com.censivn.C3DEngine.b.b.a.w) {
-            i2 = i6 - (com.censivn.C3DEngine.b.b.a.w - i4);
-            i = com.censivn.C3DEngine.b.b.a.w;
+        if (i4 < com.censivn.C3DEngine.b.b.A.w) {
+            i2 = i6 - (com.censivn.C3DEngine.b.b.A.w - i4);
+            i = com.censivn.C3DEngine.b.b.A.w;
             z2 = true;
-        } else if (i4 > com.censivn.C3DEngine.b.b.a.y - i8) {
-            i = com.censivn.C3DEngine.b.b.a.y - i8;
+        } else if (i4 > com.censivn.C3DEngine.b.b.A.y - i8) {
+            i = com.censivn.C3DEngine.b.b.A.y - i8;
             i2 = i6;
             z2 = true;
         } else {
@@ -51,8 +51,8 @@ public class A {
             z2 = z;
             i2 = i6;
         }
-        if (i + i2 > com.censivn.C3DEngine.b.b.a.y) {
-            i2 = com.censivn.C3DEngine.b.b.a.y - i;
+        if (i + i2 > com.censivn.C3DEngine.b.b.A.y) {
+            i2 = com.censivn.C3DEngine.b.b.A.y - i;
             z2 = true;
         } else if (i2 < i8) {
             i -= i8 - i2;
@@ -82,17 +82,17 @@ public class A {
         int i7 = iArr[3];
         int i8 = (int) com.tsf.shell.manager.a.h.d.a.d;
         int i9 = (int) com.tsf.shell.manager.a.h.d.a.d;
-        if (i4 < com.censivn.C3DEngine.b.b.a.v) {
-            i4 = com.censivn.C3DEngine.b.b.a.v;
+        if (i4 < com.censivn.C3DEngine.b.b.A.v) {
+            i4 = com.censivn.C3DEngine.b.b.A.v;
             z = true;
-        } else if (i4 > com.censivn.C3DEngine.b.b.a.x - i8) {
-            i4 = com.censivn.C3DEngine.b.b.a.x - i8;
+        } else if (i4 > com.censivn.C3DEngine.b.b.A.x - i8) {
+            i4 = com.censivn.C3DEngine.b.b.A.x - i8;
             z = true;
         } else {
             z = false;
         }
-        if (i4 + i6 > com.censivn.C3DEngine.b.b.a.x) {
-            i = com.censivn.C3DEngine.b.b.a.x - i4;
+        if (i4 + i6 > com.censivn.C3DEngine.b.b.A.x) {
+            i = com.censivn.C3DEngine.b.b.A.x - i4;
             z2 = true;
         } else if (i6 < i8) {
             i = i8;
@@ -101,18 +101,18 @@ public class A {
             z2 = z;
             i = i6;
         }
-        if (i5 < com.censivn.C3DEngine.b.b.a.w) {
-            i2 = com.censivn.C3DEngine.b.b.a.w;
+        if (i5 < com.censivn.C3DEngine.b.b.A.w) {
+            i2 = com.censivn.C3DEngine.b.b.A.w;
             z3 = true;
-        } else if (i5 > com.censivn.C3DEngine.b.b.a.y - i9) {
-            i2 = com.censivn.C3DEngine.b.b.a.y - i9;
+        } else if (i5 > com.censivn.C3DEngine.b.b.A.y - i9) {
+            i2 = com.censivn.C3DEngine.b.b.A.y - i9;
             z3 = true;
         } else {
             z3 = z2;
             i2 = i5;
         }
-        if (i2 + i7 > com.censivn.C3DEngine.b.b.a.y) {
-            i3 = com.censivn.C3DEngine.b.b.a.y - i2;
+        if (i2 + i7 > com.censivn.C3DEngine.b.b.A.y) {
+            i3 = com.censivn.C3DEngine.b.b.A.y - i2;
             z4 = true;
         } else if (i7 < i9) {
             i3 = i9;
@@ -144,8 +144,8 @@ public class A {
         int i7 = iArr[3];
         int i8 = (int) com.tsf.shell.manager.a.h.d.a.d;
         int i9 = (int) com.tsf.shell.manager.a.h.d.a.d;
-        if (i6 > com.censivn.C3DEngine.b.b.a.p) {
-            i8 = com.censivn.C3DEngine.b.b.a.p;
+        if (i6 > com.censivn.C3DEngine.b.b.A.p) {
+            i8 = com.censivn.C3DEngine.b.b.A.p;
             z = true;
         } else if (i6 < i8) {
             z = true;
@@ -153,18 +153,18 @@ public class A {
             i8 = i6;
             z = false;
         }
-        if (i4 < com.censivn.C3DEngine.b.b.a.v) {
-            i = com.censivn.C3DEngine.b.b.a.v;
+        if (i4 < com.censivn.C3DEngine.b.b.A.v) {
+            i = com.censivn.C3DEngine.b.b.A.v;
             z2 = true;
-        } else if (i4 + i8 > com.censivn.C3DEngine.b.b.a.x) {
-            i = com.censivn.C3DEngine.b.b.a.x - i8;
+        } else if (i4 + i8 > com.censivn.C3DEngine.b.b.A.x) {
+            i = com.censivn.C3DEngine.b.b.A.x - i8;
             z2 = true;
         } else {
             z2 = z;
             i = i4;
         }
-        if (i7 > com.censivn.C3DEngine.b.b.a.q) {
-            i2 = com.censivn.C3DEngine.b.b.a.q;
+        if (i7 > com.censivn.C3DEngine.b.b.A.q) {
+            i2 = com.censivn.C3DEngine.b.b.A.q;
             z3 = true;
         } else if (i7 < i9) {
             i2 = i9;
@@ -173,11 +173,11 @@ public class A {
             z3 = z2;
             i2 = i7;
         }
-        if (i5 < com.censivn.C3DEngine.b.b.a.w) {
-            i3 = com.censivn.C3DEngine.b.b.a.w;
+        if (i5 < com.censivn.C3DEngine.b.b.A.w) {
+            i3 = com.censivn.C3DEngine.b.b.A.w;
             z4 = true;
-        } else if (i5 + i2 > com.censivn.C3DEngine.b.b.a.y) {
-            i3 = com.censivn.C3DEngine.b.b.a.y - i2;
+        } else if (i5 + i2 > com.censivn.C3DEngine.b.b.A.y) {
+            i3 = com.censivn.C3DEngine.b.b.A.y - i2;
             z4 = true;
         } else {
             z4 = z3;
@@ -196,26 +196,26 @@ public class A {
         float[] fArr = {f, f2};
         float fU = bVar.u();
         if (bVar instanceof com.tsf.shell.f.i.b.c.a) {
-            if (f > com.censivn.C3DEngine.b.b.a.A) {
-                fArr[0] = com.censivn.C3DEngine.b.b.a.A;
-            } else if (f < com.censivn.C3DEngine.b.b.a.z) {
-                fArr[0] = com.censivn.C3DEngine.b.b.a.z;
+            if (f > com.censivn.C3DEngine.b.b.A.A) {
+                fArr[0] = com.censivn.C3DEngine.b.b.A.A;
+            } else if (f < com.censivn.C3DEngine.b.b.A.z) {
+                fArr[0] = com.censivn.C3DEngine.b.b.A.z;
             }
-            if ((bVar.maxY() * fU) + f2 > com.censivn.C3DEngine.b.b.a.s) {
-                fArr[1] = com.censivn.C3DEngine.b.b.a.s - (fU * bVar.maxY());
-            } else if ((bVar.minY() * fU) + f2 < com.censivn.C3DEngine.b.b.a.u) {
-                fArr[1] = com.censivn.C3DEngine.b.b.a.u - (fU * bVar.minY());
+            if ((bVar.maxY() * fU) + f2 > com.censivn.C3DEngine.b.b.A.s) {
+                fArr[1] = com.censivn.C3DEngine.b.b.A.s - (fU * bVar.maxY());
+            } else if ((bVar.minY() * fU) + f2 < com.censivn.C3DEngine.b.b.A.u) {
+                fArr[1] = com.censivn.C3DEngine.b.b.A.u - (fU * bVar.minY());
             }
         } else {
-            if ((bVar.maxX() * fU) + f > com.censivn.C3DEngine.b.b.a.A) {
-                fArr[0] = com.censivn.C3DEngine.b.b.a.A - (bVar.maxX() * fU);
-            } else if ((bVar.minX() * fU) + f < com.censivn.C3DEngine.b.b.a.z) {
-                fArr[0] = com.censivn.C3DEngine.b.b.a.z - (bVar.minX() * fU);
+            if ((bVar.maxX() * fU) + f > com.censivn.C3DEngine.b.b.A.A) {
+                fArr[0] = com.censivn.C3DEngine.b.b.A.A - (bVar.maxX() * fU);
+            } else if ((bVar.minX() * fU) + f < com.censivn.C3DEngine.b.b.A.z) {
+                fArr[0] = com.censivn.C3DEngine.b.b.A.z - (bVar.minX() * fU);
             }
-            if ((bVar.maxY() * fU) + f2 > com.censivn.C3DEngine.b.b.a.s) {
-                fArr[1] = com.censivn.C3DEngine.b.b.a.s - (fU * bVar.maxY());
-            } else if ((bVar.minY() * fU) + f2 < com.censivn.C3DEngine.b.b.a.u) {
-                fArr[1] = com.censivn.C3DEngine.b.b.a.u - (fU * bVar.minY());
+            if ((bVar.maxY() * fU) + f2 > com.censivn.C3DEngine.b.b.A.s) {
+                fArr[1] = com.censivn.C3DEngine.b.b.A.s - (fU * bVar.maxY());
+            } else if ((bVar.minY() * fU) + f2 < com.censivn.C3DEngine.b.b.A.u) {
+                fArr[1] = com.censivn.C3DEngine.b.b.A.u - (fU * bVar.minY());
             }
         }
         return fArr;

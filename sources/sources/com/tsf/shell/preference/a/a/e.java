@@ -70,7 +70,7 @@ public class e extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
         this.a = com.tsf.shell.manager.b.e.W();
-        String str = " ( " + (com.censivn.C3DEngine.b.b.a.O ? x.c(b.i.mn_orientation_portrait) : x.c(b.i.mn_orientation_landscape)) + " )";
+        String str = " ( " + (com.censivn.C3DEngine.b.b.A.O ? x.c(b.i.mn_orientation_portrait) : x.c(b.i.mn_orientation_landscape)) + " )";
         this.b.b(x.c(b.i.mn_grid_rows) + str);
         this.c.b(x.c(b.i.mn_grid_columns) + str);
         this.c.i(com.tsf.shell.f.f.a.h.x);

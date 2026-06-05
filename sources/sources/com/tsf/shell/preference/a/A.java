@@ -30,9 +30,9 @@ public class A extends com.censivn.C3DEngine.b.e.f {
         a(1);
         a(true);
         com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
-        layoutParams.a = com.censivn.C3DEngine.b.b.a.a(30.0f);
-        layoutParams.b = com.censivn.C3DEngine.b.b.a.a(30.0f);
-        this.b = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, com.censivn.C3DEngine.b.b.a.c, new com.censivn.C3DEngine.b.f.b.b(68, 68, 68, 68, 136, 136));
+        layoutParams.a = com.censivn.C3DEngine.b.b.A.a(30.0f);
+        layoutParams.b = com.censivn.C3DEngine.b.b.A.a(30.0f);
+        this.b = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, com.censivn.C3DEngine.b.b.A.c, new com.censivn.C3DEngine.b.f.b.b(68, 68, 68, 68, 136, 136));
         this.b.textures().addElement(this.d);
         this.b.alpha(80.0f);
         addChild(this.b);
@@ -54,14 +54,14 @@ public class A extends com.censivn.C3DEngine.b.e.f {
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void f() {
-        this.j = com.censivn.C3DEngine.b.b.a.d;
+        this.j = com.censivn.C3DEngine.b.b.A.d;
         h();
     }
 
     private void e() {
         float f = this.j / 3.0f;
-        this.b.a((com.censivn.C3DEngine.b.b.a.D * this.i) + (40.0f * f));
-        this.b.b((com.censivn.C3DEngine.b.b.a.E * this.i) + (40.0f * f));
+        this.b.a((com.censivn.C3DEngine.b.b.A.D * this.i) + (40.0f * f));
+        this.b.b((com.censivn.C3DEngine.b.b.A.E * this.i) + (40.0f * f));
         this.a.a(this.b.b() - (40.0f * f), this.b.c() - (40.0f * f));
         com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
         layoutParams.i = -this.b.c();
@@ -75,7 +75,7 @@ public class A extends com.censivn.C3DEngine.b.e.f {
         if (parent() != null) {
             ((com.censivn.C3DEngine.b.b.c) parent()).d();
         }
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             this.f.position().x = 0.0f;
             this.f.position().y = f * 180.0f;
         } else {
@@ -88,11 +88,11 @@ public class A extends com.censivn.C3DEngine.b.e.f {
     public void a(float f) {
         this.j = f;
         float f2 = this.j / 3.0f;
-        this.h.position().y = (((-com.censivn.C3DEngine.b.b.a.E) * this.i) / 2.0f) + ((this.h.c() * f2) / 2.0f) + (20.0f * this.i);
+        this.h.position().y = (((-com.censivn.C3DEngine.b.b.A.E) * this.i) / 2.0f) + ((this.h.c() * f2) / 2.0f) + (20.0f * this.i);
         Number3d number3dScale = this.h.scale();
         this.h.scale().y = f2;
         number3dScale.x = f2;
-        if (com.censivn.C3DEngine.b.b.a.O) {
+        if (com.censivn.C3DEngine.b.b.A.O) {
             Number3d number3dScale2 = this.f.scale();
             this.f.scale().y = f2;
             number3dScale2.x = f2;
@@ -107,30 +107,30 @@ public class A extends com.censivn.C3DEngine.b.e.f {
     private void h() {
         if (this.d.id == 0) {
             Bitmap bitmapA = x.a(b.d.preference_screen_frame, com.tsf.shell.manager.g.a.q, com.tsf.shell.manager.g.a.q);
-            com.censivn.C3DEngine.a.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }
         if (this.e.id == 0) {
             Bitmap bitmapA2 = x.a(b.d.preference_screen_widget_clock);
-            com.censivn.C3DEngine.a.g().a(this.e, bitmapA2);
+            com.censivn.C3DEngine.A.g().a(this.e, bitmapA2);
             bitmapA2.recycle();
         }
         if (this.g.id == 0) {
             Bitmap bitmapA3 = x.a(b.d.preference_screen_dock);
-            com.censivn.C3DEngine.a.g().a(this.g, bitmapA3);
+            com.censivn.C3DEngine.A.g().a(this.g, bitmapA3);
             bitmapA3.recycle();
         }
     }
 
     private void m() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.d);
+            com.censivn.C3DEngine.A.g().a(this.d);
         }
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.e);
+            com.censivn.C3DEngine.A.g().a(this.e);
         }
         if (this.g.id != 0) {
-            com.censivn.C3DEngine.a.g().a(this.g);
+            com.censivn.C3DEngine.A.g().a(this.g);
         }
     }
 

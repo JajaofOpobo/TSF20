@@ -51,7 +51,7 @@ public class e implements GLSurfaceView.Renderer {
         this.k = new com.censivn.C3DEngine.b.c.f();
         com.censivn.C3DEngine.a.a(this.k);
         com.censivn.C3DEngine.a.a(this);
-        this.q = (ActivityManager) com.censivn.C3DEngine.a.d().getSystemService("activity");
+        this.q = (ActivityManager) com.censivn.C3DEngine.A.d().getSystemService("activity");
         this.r = new ActivityManager.MemoryInfo();
     }
 
@@ -77,23 +77,23 @@ public class e implements GLSurfaceView.Renderer {
     public void onSurfaceChanged(GL10 gl10, int i, int i2) {
         GLES20.glViewport(0, 0, i, i2);
         f = Thread.currentThread().getId();
-        if (com.censivn.C3DEngine.b.b.a.F != i || com.censivn.C3DEngine.b.b.a.G != i2) {
-            boolean z = com.censivn.C3DEngine.b.b.a.O;
-            com.censivn.C3DEngine.b.b.a.a(i, i2);
+        if (com.censivn.C3DEngine.b.b.A.F != i || com.censivn.C3DEngine.b.b.A.G != i2) {
+            boolean z = com.censivn.C3DEngine.b.b.A.O;
+            com.censivn.C3DEngine.b.b.A.a(i, i2);
             if (this.v) {
                 this.j.c();
                 a(14000.0f, 1.0f);
                 a(true);
-                this.j.b().a.z = 1000.0f * com.censivn.C3DEngine.b.b.a.b;
-                this.j.b().f = com.censivn.C3DEngine.b.b.a.G / this.j.b().a.z;
+                this.j.b().a.z = 1000.0f * com.censivn.C3DEngine.b.b.A.b;
+                this.j.b().f = com.censivn.C3DEngine.b.b.A.G / this.j.b().a.z;
                 this.t.b();
                 this.v = false;
                 b(i, i2);
                 return;
             }
             b(i, i2);
-            com.tsf.shell.manager.a.b.a(com.censivn.C3DEngine.b.b.a.B, com.censivn.C3DEngine.b.b.a.C, com.censivn.C3DEngine.b.b.a.z, com.censivn.C3DEngine.b.b.a.A);
-            if (z != com.censivn.C3DEngine.b.b.a.O) {
+            com.tsf.shell.manager.a.b.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
+            if (z != com.censivn.C3DEngine.b.b.A.O) {
                 com.tsf.shell.manager.p.c.a(13);
             }
         }
@@ -119,7 +119,7 @@ public class e implements GLSurfaceView.Renderer {
         this.d = false;
         this.e = false;
         com.censivn.C3DEngine.b.g.c.a();
-        com.censivn.C3DEngine.a.a().a();
+        com.censivn.C3DEngine.A.a().a();
         b();
         if (!this.d || !a()) {
             h();

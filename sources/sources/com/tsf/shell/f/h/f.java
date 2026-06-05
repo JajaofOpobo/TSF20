@@ -40,7 +40,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
 
     public void o() {
         TextureElement textureElementB = x.b(b.d.smart_button_add_icon);
-        this.b = new k(com.censivn.C3DEngine.b.b.a.c * 128.0f, com.censivn.C3DEngine.b.b.a.c * 128.0f, false);
+        this.b = new k(com.censivn.C3DEngine.b.b.A.c * 128.0f, com.censivn.C3DEngine.b.b.A.c * 128.0f, false);
         this.b.moveAllPointsPX(0.0f, com.tsf.shell.manager.o.b.c.Y, 0.0f);
         this.b.calAABB(2.0f, 2.0f, 1.0f);
         this.b.textures().addElement(textureElementB);
@@ -113,8 +113,8 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     @Override // com.censivn.C3DEngine.b.h.e.b
     public void c(i iVar) {
         if (this.g && (iVar instanceof com.tsf.shell.f.i.b.e.b) && iVar.visible()) {
-            this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.a.a(50.0f);
-            this.e.position().y = iVar.position().y + com.censivn.C3DEngine.b.b.a.a(60.0f);
+            this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.A.a(50.0f);
+            this.e.position().y = iVar.position().y + com.censivn.C3DEngine.b.b.A.a(60.0f);
             this.e.dispatchDraw();
         }
     }
@@ -130,7 +130,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
             Bitmap bitmap = ThemeManager.mix.shellOther.getTheme().getBitmap(ThemeShellDescription.PUBLIC_BUTTON_DELETE, com.tsf.shell.manager.g.a.b, com.tsf.shell.manager.g.a.b);
-            com.censivn.C3DEngine.a.g().a(this.f, bitmap);
+            com.censivn.C3DEngine.A.g().a(this.f, bitmap);
             bitmap.recycle();
             this.g = true;
             com.tsf.shell.manager.a.i.a.a(this.d);
@@ -149,7 +149,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     }
 
     public static String q() {
-        Cursor cursorQuery = com.censivn.C3DEngine.a.d().getContentResolver().query(g.f.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.f.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -180,10 +180,10 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
         for (i iVar : c().children()) {
             str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
         }
-        com.censivn.C3DEngine.a.a().e(new Runnable() { // from class: com.tsf.shell.f.h.f.4
+        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.h.f.4
             @Override // java.lang.Runnable
             public void run() {
-                ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+                ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("child", str);
                 contentResolver.update(ContentUris.withAppendedId(g.f.a, 1L), contentValues, null, null);

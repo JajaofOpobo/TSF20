@@ -29,9 +29,9 @@ public class h extends k {
             this.d.clear();
         }
         if (i > i2) {
-            i5 = (int) ((i2 / 2) - (68.0f * com.censivn.C3DEngine.b.b.a.a));
+            i5 = (int) ((i2 / 2) - (68.0f * com.censivn.C3DEngine.b.b.A.a));
         } else {
-            i5 = (int) ((i / 2) - (68.0f * com.censivn.C3DEngine.b.b.a.a));
+            i5 = (int) ((i / 2) - (68.0f * com.censivn.C3DEngine.b.b.A.a));
         }
         for (int i6 = 1; i6 < this.b + 1; i6++) {
             ArrayList<a> arrayList2 = new ArrayList<>();

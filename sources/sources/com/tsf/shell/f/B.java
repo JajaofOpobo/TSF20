@@ -18,7 +18,7 @@ public class B {
 
     public static void a() {
         if (com.tsf.shell.manager.r.c.b.a && a < 6) {
-            com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.b.1
+            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     b.a(true);
@@ -34,7 +34,7 @@ public class B {
         if (b == null) {
             b = x.b(b.d.snowflake);
         }
-        float f = 100.0f * com.censivn.C3DEngine.b.b.a.c;
+        float f = 100.0f * com.censivn.C3DEngine.b.b.A.c;
         for (int i = 0; i < 20; i++) {
             A aVar = new A();
             aVar.a = (float) (0.2d + (Math.random() * 0.800000011920929d));
@@ -44,12 +44,12 @@ public class B {
                 aVar.c = aVar.a * 5.0f;
             }
             float f2 = aVar.a * f;
-            aVar.g = (float) (((double) (com.censivn.C3DEngine.b.b.a.B + f2)) + (((double) (com.censivn.C3DEngine.b.b.a.E / 3)) * Math.random()));
-            aVar.f = ((com.censivn.C3DEngine.b.b.a.C - f2) - com.censivn.C3DEngine.b.b.a.K) - (100.0f * com.censivn.C3DEngine.b.b.a.c);
+            aVar.g = (float) (((double) (com.censivn.C3DEngine.b.b.A.B + f2)) + (((double) (com.censivn.C3DEngine.b.b.A.E / 3)) * Math.random()));
+            aVar.f = ((com.censivn.C3DEngine.b.b.A.C - f2) - com.censivn.C3DEngine.b.b.A.K) - (100.0f * com.censivn.C3DEngine.b.b.A.c);
             aVar.e = e();
             aVar.h = 3.141592653589793d * Math.random() * 2.0d;
             aVar.i = 0.05235987755982989d;
-            aVar.d = 40.0f * com.censivn.C3DEngine.b.b.a.c * aVar.a;
+            aVar.d = 40.0f * com.censivn.C3DEngine.b.b.A.c * aVar.a;
             arrayList.add(aVar);
         }
         final int size = arrayList.size();
@@ -70,13 +70,13 @@ public class B {
                 }
                 updatePointsVBO();
                 if (z2) {
-                    com.censivn.C3DEngine.a.a().c(new Runnable() { // from class: com.tsf.shell.f.b.2.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.b.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             this.removeFromParent();
                             b.b();
                             if (b.a == 0) {
-                                com.censivn.C3DEngine.a.g().a(b.b);
+                                com.censivn.C3DEngine.A.g().a(b.b);
                                 TextureElement unused = b.b = null;
                             }
                         }
@@ -111,7 +111,7 @@ public class B {
     }
 
     private static float e() {
-        return (float) ((Math.random() * ((double) com.censivn.C3DEngine.b.b.a.F)) + ((double) com.censivn.C3DEngine.b.b.a.z));
+        return (float) ((Math.random() * ((double) com.censivn.C3DEngine.b.b.A.F)) + ((double) com.censivn.C3DEngine.b.b.A.z));
     }
 
     static class a {

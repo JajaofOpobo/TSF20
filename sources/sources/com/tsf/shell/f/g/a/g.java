@@ -39,7 +39,7 @@ public class g extends a {
             }
         }));
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.a.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.a.c * 0.9f);
+        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.g.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -79,12 +79,12 @@ public class g extends a {
 
     @Override // com.tsf.shell.f.g.a.a
     public float a() {
-        return com.censivn.C3DEngine.b.b.a.z / 2.0f;
+        return com.censivn.C3DEngine.b.b.A.z / 2.0f;
     }
 
     @Override // com.tsf.shell.f.g.a.a
     public float b() {
-        return com.censivn.C3DEngine.b.b.a.a(120.0f);
+        return com.censivn.C3DEngine.b.b.A.a(120.0f);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c

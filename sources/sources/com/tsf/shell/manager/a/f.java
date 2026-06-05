@@ -45,17 +45,17 @@ public class f {
             if (gVarA.K() != null) {
                 ((LauncherShortcutAppInfo) gVarA.K()).applicationOnClick();
             }
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.1
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.1
                 @Override // java.lang.Runnable
                 public void run() {
                     Home.b().a(f.this.a, (Object) null);
                 }
             });
         } catch (Exception e) {
-            com.censivn.C3DEngine.a.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.2
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.e.a(com.censivn.C3DEngine.a.d().getString(b.i.activity_not_found));
+                    com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.activity_not_found));
                 }
             });
         }
@@ -87,7 +87,7 @@ public class f {
             String str = resolveInfo.activityInfo.applicationInfo.packageName;
             this.b = new ComponentName(str, resolveInfo.activityInfo.name);
             a(this.b, 270532608);
-            PackageManager packageManager = com.censivn.C3DEngine.a.d().getPackageManager();
+            PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
             try {
                 PackageInfo packageInfo = packageManager.getPackageInfo(str, 0);
                 b(packageInfo);
@@ -107,7 +107,7 @@ public class f {
                 m.a("EVENT_ISSUSE_APP_TITLE_NULL", map);
             }
         }
-        com.censivn.C3DEngine.a.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.f.3
+        com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.f.3
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.a.r.a(f.this);
@@ -129,7 +129,7 @@ public class f {
             }
         }
         map.clear();
-        com.censivn.C3DEngine.a.g().a(this.d);
+        com.censivn.C3DEngine.A.g().a(this.d);
         this.b = null;
         this.f = null;
     }
@@ -152,7 +152,7 @@ public class f {
     }
 
     public void f() {
-        com.censivn.C3DEngine.a.g().a(this.d, com.tsf.shell.manager.r.c.a.a(null, com.tsf.shell.manager.o.b.a, this));
+        com.censivn.C3DEngine.A.g().a(this.d, com.tsf.shell.manager.r.c.a.a(null, com.tsf.shell.manager.o.b.a, this));
     }
 
     public Bitmap g() {

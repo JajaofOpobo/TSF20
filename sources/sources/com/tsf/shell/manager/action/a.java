@@ -11,7 +11,7 @@ import com.tsf.shell.utils.x;
 public class a {
     public static void a(int i, String str, String str2) {
         ContentValues contentValues = new ContentValues();
-        ContentResolver contentResolver = com.censivn.C3DEngine.a.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
         contentValues.put("action", Integer.valueOf(i));
         contentValues.put("name", str);
         contentValues.put("intent", str2);
@@ -27,7 +27,7 @@ public class a {
     public static e a(int i) {
         e eVar;
         try {
-            Cursor cursorQuery = com.censivn.C3DEngine.a.d().getContentResolver().query(g.a.a, new String[]{"action", "name", "intent"}, "action=" + i, null, "_id desc");
+            Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.a.a, new String[]{"action", "name", "intent"}, "action=" + i, null, "_id desc");
             if (cursorQuery.moveToFirst()) {
                 String string = cursorQuery.getString(cursorQuery.getColumnIndex("name"));
                 String string2 = cursorQuery.getString(cursorQuery.getColumnIndex("intent"));

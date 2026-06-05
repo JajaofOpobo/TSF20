@@ -20,7 +20,7 @@ public class ThemeMixerUtils {
         Canvas canvas = new Canvas(bitmapA);
         canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
         aVar.a(canvas, q.d(x.a(i), aVar.H, aVar.I), bitmapA2, true);
-        return com.censivn.C3DEngine.a.g().a(bitmapA, true);
+        return com.censivn.C3DEngine.A.g().a(bitmapA, true);
     }
 
     public static TextureElement createIconTexture(String str, String str2) {
@@ -29,13 +29,13 @@ public class ThemeMixerUtils {
         Canvas canvas = new Canvas(bitmapA);
         canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
         b.a.a(canvas, getThemeIconBitmap(str2), bitmapA2, true);
-        return com.censivn.C3DEngine.a.g().a(bitmapA, true);
+        return com.censivn.C3DEngine.A.g().a(bitmapA, true);
     }
 
     private static Bitmap getThemeIconBitmap(String str) {
         Bitmap bitmapCreateScaledBitmap;
         try {
-            Context contextCreatePackageContext = com.censivn.C3DEngine.a.d().createPackageContext(str, 3);
+            Context contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(str, 3);
             Drawable drawableLoadIcon = contextCreatePackageContext.getApplicationInfo().loadIcon(contextCreatePackageContext.getPackageManager());
             if (drawableLoadIcon != null && (drawableLoadIcon instanceof BitmapDrawable) && ((BitmapDrawable) drawableLoadIcon).getBitmap() != null) {
                 Bitmap bitmap = ((BitmapDrawable) drawableLoadIcon).getBitmap();

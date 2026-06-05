@@ -31,7 +31,7 @@ public class ThemeElementPicker extends Activity {
         ArrayList<c> arrayList = new ArrayList<>();
         for (ThemeListsManager.ThemeInfo themeInfo : this.b.refreshThemeList()) {
             try {
-                Context contextCreatePackageContext = com.censivn.C3DEngine.a.d().createPackageContext(themeInfo.packagename, 3);
+                Context contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(themeInfo.packagename, 3);
                 if (ThemeElementChecker.isElementAbailable(contextCreatePackageContext, i)) {
                     c cVar = new c(i, themeInfo.name, themeInfo.packagename);
                     cVar.b = contextCreatePackageContext;

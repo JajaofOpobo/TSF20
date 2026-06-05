@@ -11,11 +11,11 @@ public class a extends GLSurfaceView {
 
     @Override // android.opengl.GLSurfaceView
     public void onResume() {
-        com.censivn.C3DEngine.a.e().i();
+        com.censivn.C3DEngine.A.e().i();
     }
 
     @Override // android.opengl.GLSurfaceView
     public void onPause() {
-        com.censivn.C3DEngine.a.e().h();
+        com.censivn.C3DEngine.A.e().h();
     }
 }

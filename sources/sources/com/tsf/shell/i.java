@@ -41,7 +41,7 @@ public class i extends View {
     }
 
     public void a(float f, float f2) {
-        this.a.setStrokeWidth(4.0f * com.censivn.C3DEngine.b.b.a.b);
+        this.a.setStrokeWidth(4.0f * com.censivn.C3DEngine.b.b.A.b);
         this.b.reset();
         this.b.moveTo(f, f2);
         this.f = f;

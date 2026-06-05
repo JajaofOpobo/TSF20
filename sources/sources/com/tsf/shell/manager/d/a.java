@@ -56,7 +56,7 @@ public class a {
             if (fVar.o()) {
                 x.a(motionEvent, this.a);
                 if (!this.b) {
-                    com.censivn.C3DEngine.a.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.a.a.1
+                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.a.a.1
                         @Override // java.lang.Runnable
                         public void run() {
                             F fVarA = fVar.a((int) C0127a.this.a[0], (int) C0127a.this.a[1]);

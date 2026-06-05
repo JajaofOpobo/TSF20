@@ -59,14 +59,14 @@ public class h extends f {
         }
         if (this.l.id == 0) {
             Bitmap bitmapB = q.b(30.0f, -1);
-            com.censivn.C3DEngine.a.g().a(this.l, bitmapB);
+            com.censivn.C3DEngine.A.g().a(this.l, bitmapB);
             bitmapB.recycle();
         }
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
-        com.censivn.C3DEngine.a.g().a(this.l);
+        com.censivn.C3DEngine.A.g().a(this.l);
         this.d.a();
         this.e.a();
         if (this.f != null) {
@@ -111,25 +111,25 @@ public class h extends f {
         this.e.b();
         this.b.addChild(this.e);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(15.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(15.0f);
         bVar.i = this.e.minY();
         bVar.k = this.e.maxY();
         this.b.setLayoutParams(bVar);
         addChild(this.b);
         this.j = new com.censivn.C3DEngine.b.f.j();
-        this.g = new k(0.0f, com.censivn.C3DEngine.b.b.a.a(10.0f), false);
+        this.g = new k(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
         this.g.setDefaultColor(new Color4(255, 255, 255, VEasing.Back.easeIn));
-        this.h = new k(0.0f, com.censivn.C3DEngine.b.b.a.a(10.0f), false);
+        this.h = new k(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
         this.h.setDefaultColor(new Color4(255, 255, 255, 100));
         this.j.addChild(this.g);
         this.j.addChild(this.h);
         com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
-        bVar2.a = com.censivn.C3DEngine.b.b.a.a(70.0f);
-        bVar2.b = com.censivn.C3DEngine.b.b.a.a(60.0f);
-        bVar2.i = (-com.censivn.C3DEngine.b.b.a.a(10.0f)) / 2.0f;
-        bVar2.k = com.censivn.C3DEngine.b.b.a.a(10.0f) / 2.0f;
+        bVar2.a = com.censivn.C3DEngine.b.b.A.a(70.0f);
+        bVar2.b = com.censivn.C3DEngine.b.b.A.a(60.0f);
+        bVar2.i = (-com.censivn.C3DEngine.b.b.A.a(10.0f)) / 2.0f;
+        bVar2.k = com.censivn.C3DEngine.b.b.A.a(10.0f) / 2.0f;
         this.j.setLayoutParams(bVar2);
-        this.k = com.censivn.C3DEngine.b.b.a.a(60.0f, 60.0f);
+        this.k = com.censivn.C3DEngine.b.b.A.a(60.0f, 60.0f);
         this.k.calAABB(2.0f, 2.0f, 2.0f);
         this.l = new TextureElement(0, false);
         this.k.textures().addElement(this.l);

@@ -14,19 +14,19 @@ public class h extends com.censivn.C3DEngine.b.e.f {
     private com.censivn.C3DEngine.b.f.j f;
 
     public h(String str, float f) {
-        this(str, f, com.censivn.C3DEngine.b.b.a.a(50.0f), com.censivn.C3DEngine.b.b.a.a(50.0f));
+        this(str, f, com.censivn.C3DEngine.b.b.A.a(50.0f), com.censivn.C3DEngine.b.b.A.a(50.0f));
     }
 
     public h(String str, float f, float f2, float f3) {
         a(1);
         this.e = new com.censivn.C3DEngine.b.f.j();
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.a.a(10.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.a.a(10.0f);
-        bVar.i = -com.censivn.C3DEngine.b.b.a.a(30.0f);
-        bVar.k = com.censivn.C3DEngine.b.b.a.a(50.0f);
+        bVar.a = com.censivn.C3DEngine.b.b.A.a(10.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.A.a(10.0f);
+        bVar.i = -com.censivn.C3DEngine.b.b.A.a(30.0f);
+        bVar.k = com.censivn.C3DEngine.b.b.A.a(50.0f);
         this.e.setLayoutParams(bVar);
-        this.b = com.censivn.C3DEngine.b.b.a.a(28.0f, 28.0f);
+        this.b = com.censivn.C3DEngine.b.b.A.a(28.0f, 28.0f);
         this.d = new TextureElement(0, false);
         this.b.textures().addElement(this.d);
         this.e.addChild(this.b);
@@ -59,20 +59,20 @@ public class h extends com.censivn.C3DEngine.b.e.f {
 
     @Override // com.censivn.C3DEngine.b.b.c
     public void c(int i) {
-        this.b.position().x = ((-i) / 2.0f) + (com.censivn.C3DEngine.b.b.a.a(28.0f) / 2.0f);
-        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.a.a(48.0f);
+        this.b.position().x = ((-i) / 2.0f) + (com.censivn.C3DEngine.b.b.A.a(28.0f) / 2.0f);
+        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(48.0f);
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void f() {
         Bitmap bitmapB = q.b(28.0f, -1118482);
-        com.censivn.C3DEngine.a.g().a(this.d, bitmapB);
+        com.censivn.C3DEngine.A.g().a(this.d, bitmapB);
         bitmapB.recycle();
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
         this.a.a();
-        com.censivn.C3DEngine.a.g().a(this.d);
+        com.censivn.C3DEngine.A.g().a(this.d);
     }
 }

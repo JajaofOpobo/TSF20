@@ -1,8 +1,8 @@
 package com.tsf.shell.theme.inside.mix.menu.item;
 
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.b.b.a.a;
-import com.censivn.C3DEngine.b.b.a.d;
+import com.censivn.C3DEngine.b.b.A.a;
+import com.censivn.C3DEngine.b.b.A.d;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.manager.p.e;
@@ -15,7 +15,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
-    private com.censivn.C3DEngine.b.b.a.b mContentContainer;
+    private com.censivn.C3DEngine.b.b.A.b mContentContainer;
     private a mElementContainer;
     private ThemeIconDesignerMenu mIconDesignerMenu;
     private ThemeMenuMixElementPlane mIconPlane;
@@ -27,16 +27,16 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
         super(b.i.text_customize, b.d.scroll_menu_title_mask);
         this.manager = themeSettingMenu;
         this.mScrollContainer = new d();
-        this.mContentContainer = new com.censivn.C3DEngine.b.b.a.b();
+        this.mContentContainer = new com.censivn.C3DEngine.b.b.A.b();
         this.mStyleContainer = new a();
         this.mStyleContainer.setTitle(b.i.text_style);
         this.mStyleContainer.setTitleSize(38);
-        this.mStyleContainer.setTitlePosition(com.censivn.C3DEngine.b.b.a.a(250.0f));
+        this.mStyleContainer.setTitlePosition(com.censivn.C3DEngine.b.b.A.a(250.0f));
         initStyleContainer();
         this.mElementContainer = new a();
         this.mElementContainer.setTitle(b.i.text_theme_element);
         this.mElementContainer.setTitleSize(38);
-        this.mElementContainer.setTitlePosition(com.censivn.C3DEngine.b.b.a.a(250.0f));
+        this.mElementContainer.setTitlePosition(com.censivn.C3DEngine.b.b.A.a(250.0f));
         ArrayList<ThemeMixElementManager> themeMixElementManagerLists = ThemeManager.mix.getThemeMixElementManagerLists();
         int i = 0;
         while (true) {
@@ -119,8 +119,8 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
     }
 
     private void resetLayout() {
-        this.mScrollContainer.position().x = com.censivn.C3DEngine.b.b.a.z;
-        this.mScrollContainer.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.a.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.a.D, com.censivn.C3DEngine.b.b.a.a(500.0f) / 2.0f, 0.0f);
+        this.mScrollContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.mScrollContainer.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.A.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(500.0f) / 2.0f, 0.0f);
         this.mScrollContainer.k();
         this.mScrollContainer.a(0.0f, 0.0f, 0.0f, 0.0f);
     }

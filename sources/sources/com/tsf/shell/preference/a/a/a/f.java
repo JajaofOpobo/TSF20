@@ -11,8 +11,8 @@ public class f extends h {
         this.a = new com.censivn.C3DEngine.b.f.g() { // from class: com.tsf.shell.preference.a.a.a.f.1
             @Override // com.censivn.C3DEngine.b.f.g
             public void a(TextureElement textureElement) {
-                int iA = (int) com.censivn.C3DEngine.b.b.a.a(textureElement.height);
-                f.this.a.a((int) com.censivn.C3DEngine.b.b.a.a(textureElement.width));
+                int iA = (int) com.censivn.C3DEngine.b.b.A.a(textureElement.height);
+                f.this.a.a((int) com.censivn.C3DEngine.b.b.A.a(textureElement.width));
                 f.this.a.b(iA);
             }
         };

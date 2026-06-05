@@ -33,7 +33,7 @@ public class a {
 
     public static boolean a(String str, int i) {
         try {
-            return com.censivn.C3DEngine.a.d().getPackageManager().getPackageInfo(str, 64).versionCode >= i;
+            return com.censivn.C3DEngine.A.d().getPackageManager().getPackageInfo(str, 64).versionCode >= i;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
             return false;

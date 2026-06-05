@@ -7,7 +7,6 @@ import android.os.Build;
 import android.support.v4.view.ai;
 import android.support.v4.view.bb;
 import android.support.v4.view.bf;
-import android.support.v7.a.a;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
@@ -38,7 +37,7 @@ abstract class a extends ViewGroup {
         super(context, attributeSet, i);
         this.a = new C0016a();
         TypedValue typedValue = new TypedValue();
-        if (context.getTheme().resolveAttribute(a.C0012a.actionBarPopupTheme, typedValue, true) && typedValue.resourceId != 0) {
+        if (context.getTheme().resolveAttribute(android.support.v7.a.a.C0012a.actionBarPopupTheme, typedValue, true) && typedValue.resourceId != 0) {
             this.b = new ContextThemeWrapper(context, typedValue.resourceId);
         } else {
             this.b = context;
@@ -50,8 +49,8 @@ abstract class a extends ViewGroup {
         if (Build.VERSION.SDK_INT >= 8) {
             super.onConfigurationChanged(configuration);
         }
-        TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(null, a.k.ActionBar, a.C0012a.actionBarStyle, 0);
-        setContentHeight(typedArrayObtainStyledAttributes.getLayoutDimension(a.k.ActionBar_height, 0));
+        TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(null, android.support.v7.a.a.k.ActionBar, android.support.v7.a.a.C0012a.actionBarStyle, 0);
+        setContentHeight(typedArrayObtainStyledAttributes.getLayoutDimension(android.support.v7.a.a.k.ActionBar_height, 0));
         typedArrayObtainStyledAttributes.recycle();
         if (this.d != null) {
             this.d.a(configuration);

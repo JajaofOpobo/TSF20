@@ -9,14 +9,14 @@ public class g extends h {
     private com.censivn.C3DEngine.b.h.d.b c;
     private boolean d = false;
     private TextureElement a = x.b(b.d.drawer_layout_homescreen_countdown);
-    private com.censivn.C3DEngine.b.f.k b = com.censivn.C3DEngine.b.b.a.a(180.0f, 180.0f);
+    private com.censivn.C3DEngine.b.f.k b = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
 
     public g() {
         this.b.textures().addElement(this.a);
         com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.h);
         addChild(this.b);
         calAABB();
-        this.c = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.a.a(182.0f), b.d.ring);
+        this.c = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.A.a(182.0f), b.d.ring);
         com.tsf.shell.manager.o.c.a(this.c, com.tsf.shell.manager.o.c.h);
         addChild(this.c);
     }

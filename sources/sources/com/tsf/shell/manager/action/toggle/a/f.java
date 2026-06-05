@@ -17,7 +17,7 @@ public class f extends com.tsf.shell.manager.action.toggle.B {
 
     @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
-        WifiManager wifiManager = (WifiManager) com.censivn.C3DEngine.a.d().getSystemService("wifi");
+        WifiManager wifiManager = (WifiManager) com.censivn.C3DEngine.A.d().getSystemService("wifi");
         switch (wifiManager.getWifiState()) {
             case 1:
                 wifiManager.setWifiEnabled(true);
@@ -30,7 +30,7 @@ public class f extends com.tsf.shell.manager.action.toggle.B {
 
     @Override // com.tsf.shell.manager.action.toggle.B
     public void a(Intent intent) {
-        switch (((WifiManager) com.censivn.C3DEngine.a.d().getSystemService("wifi")).getWifiState()) {
+        switch (((WifiManager) com.censivn.C3DEngine.A.d().getSystemService("wifi")).getWifiState()) {
             case 0:
                 b(1);
                 break;

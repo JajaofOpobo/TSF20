@@ -8,10 +8,10 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends g {
-    public static final int a = com.censivn.C3DEngine.b.b.a.b(58.0f);
+    public static final int a = com.censivn.C3DEngine.b.b.A.b(58.0f);
     public static final TextureElement b = new TextureElement(0, false);
     private a d;
-    private com.censivn.C3DEngine.b.b.a.b e;
+    private com.censivn.C3DEngine.b.b.b e;
     private C0028b f;
 
     public static class a {
@@ -69,7 +69,7 @@ public class b extends g {
     }
 
     private void h() {
-        this.e = new com.censivn.C3DEngine.b.b.a.b();
+        this.e = new com.censivn.C3DEngine.b.b.b();
         this.e.position().y = (-b()) / 2.0f;
         addChild(this.e);
         this.e.position().x = (-this.e.maxX()) / 2.0f;
@@ -95,7 +95,7 @@ public class b extends g {
 
         public C0028b() {
             this.c.d(50);
-            this.c.position().x = b.a + com.censivn.C3DEngine.b.b.a.a(20.0f);
+            this.c.position().x = b.a + com.censivn.C3DEngine.b.b.A.a(20.0f);
             this.c.b(1);
             this.b = new com.censivn.C3DEngine.b.f.a.a(2, b.a, b.a * 2, b.a);
             this.b.position().x = b.a / 2.0f;
@@ -124,7 +124,7 @@ public class b extends g {
         public void a(String str) {
             this.c.a(str);
             this.c.b();
-            setAABBPX(0.0f, ((-b.a) / 2.0f) * 1.5f, 0.0f, this.c.position().x + this.c.maxX() + com.censivn.C3DEngine.b.b.a.a(50.0f), 1.5f * (b.a / 2.0f), 0.0f);
+            setAABBPX(0.0f, ((-b.a) / 2.0f) * 1.5f, 0.0f, this.c.position().x + this.c.maxX() + com.censivn.C3DEngine.b.b.A.a(50.0f), 1.5f * (b.a / 2.0f), 0.0f);
             notifLayoutRefresh();
         }
 
@@ -168,7 +168,7 @@ public class b extends g {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (b.b.id == 0) {
-                com.censivn.C3DEngine.a.g().a(b.b, b.d.preference_radio);
+                com.censivn.C3DEngine.A.g().a(b.b, b.d.preference_radio);
             }
         }
     }

@@ -50,7 +50,7 @@ public class b extends com.tsf.shell.f.e._g.a.b {
             @Override // com.tsf.shell.manager.wallpaper.b.c
             public void a() {
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.a.d(), WallpaperAppActivity.class);
+                intent.setClass(com.censivn.C3DEngine.A.d(), WallpaperAppActivity.class);
                 Home.b().startActivity(intent);
             }
         });
@@ -58,12 +58,12 @@ public class b extends com.tsf.shell.f.e._g.a.b {
             @Override // com.tsf.shell.manager.wallpaper.b.c
             public void a() {
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.a.d(), WallpaperPickerActivity.class);
+                intent.setClass(com.censivn.C3DEngine.A.d(), WallpaperPickerActivity.class);
                 Home.b().startActivity(intent);
             }
         });
         this.c.add(new d(x.c(b.i.text_live_wallpapers)));
-        this.a = new h(com.censivn.C3DEngine.b.b.a.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.c * 20.0f, com.censivn.C3DEngine.b.b.a.a(320.0f), com.censivn.C3DEngine.b.b.a.a(520.0f));
+        this.a = new h(com.censivn.C3DEngine.b.b.A.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.a(320.0f), com.censivn.C3DEngine.b.b.A.a(520.0f));
         this.a.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.wallpaper.b.3
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -136,8 +136,8 @@ public class b extends com.tsf.shell.f.e._g.a.b {
     }
 
     static class c extends j {
-        public static final int b = (int) com.censivn.C3DEngine.b.b.a.a(300.0f);
-        public static final int c = (int) com.censivn.C3DEngine.b.b.a.a(500.0f);
+        public static final int b = (int) com.censivn.C3DEngine.b.b.A.a(300.0f);
+        public static final int c = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
         private m a = new m();
         private i d;
 
@@ -145,12 +145,12 @@ public class b extends com.tsf.shell.f.e._g.a.b {
             this.a.a(str);
             this.a.d(36);
             addChild(this.a);
-            this.a.position().y = ((-c) / 2.0f) - com.censivn.C3DEngine.b.b.a.a(5.0f);
+            this.a.position().y = ((-c) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(5.0f);
         }
 
         public void a(i iVar) {
             this.d = iVar;
-            this.d.position().y = com.censivn.C3DEngine.b.b.a.a(25.0f);
+            this.d.position().y = com.censivn.C3DEngine.b.b.A.a(25.0f);
             addChild(this.d);
         }
 
@@ -200,13 +200,13 @@ public class b extends com.tsf.shell.f.e._g.a.b {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.d != 0 && this.a.id == 0) {
-                com.censivn.C3DEngine.a.g().a(this.a, this.d);
+                com.censivn.C3DEngine.A.g().a(this.a, this.d);
             }
         }
 
         public void a() {
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.a.g().a(this.a);
+                com.censivn.C3DEngine.A.g().a(this.a);
             }
         }
     }
