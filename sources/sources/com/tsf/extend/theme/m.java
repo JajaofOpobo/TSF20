@@ -41,7 +41,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     private TextView m;
     private A o;
     private A p;
-    private ad.a q;
+    private com.tsf.extend.wallpaper.ad.a q;
     private long r;
     private boolean s;
     private com.tsf.extend.wallpaper.q t;
@@ -125,7 +125,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             }
         });
         int iA = PersonalizationActivity.a(getContext(), 1.0f);
-        this.q = new ad.a(iA, iA);
+        this.q = new com.tsf.extend.wallpaper.ad.a(iA, iA);
         if (Build.VERSION.SDK_INT >= 11) {
             this.q.setColor(ThemeElementType.PARSER_CONFIG_ALL);
         }

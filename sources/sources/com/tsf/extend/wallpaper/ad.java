@@ -33,6 +33,13 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     protected PullToRefreshAndLoadMoreListView a;
     protected t b;
     protected View c;
+    public static class a {
+        public a(int i, int i2) {
+        }
+
+        public void setColor(int i) {
+        }
+    }
     protected List<m> d;
     protected List<t.d> e;
     protected int f;
@@ -118,8 +125,8 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
                 ad.this.l = System.currentTimeMillis();
                 if (ad.this.m) {
                     if (ad.this.v == null) {
-                        ad.this.v = ad.this.new b(a.b.LoadCache);
-                        z.h().a(ad.this.v, a.b.LoadCache, -1L, ad.this.g.a(), ad.this.i, ad.this.h ? z.c : z.b);
+                        ad.this.v = ad.this.new b(com.tsf.extend.base.d.a.b.LoadCache);
+                        z.h().a(ad.this.v, com.tsf.extend.base.d.a.b.LoadCache, -1L, ad.this.g.a(), ad.this.i, ad.this.h ? z.c : z.b);
                         return;
                     }
                     return;
@@ -148,8 +155,8 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     }
 
     public void a() {
-        this.v = new b(a.b.Refresh);
-        z.h().a(this.v, a.b.Refresh, -1L, this.g.a(), this.i, this.h ? z.c : z.b);
+        this.v = new b(com.tsf.extend.base.d.a.b.Refresh);
+        z.h().a(this.v, com.tsf.extend.base.d.a.b.Refresh, -1L, this.g.a(), this.i, this.h ? z.c : z.b);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -177,10 +184,10 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
         if (this.d != null && this.d.size() > 0) {
-            this.w = new b(a.b.LoadMore);
+            this.w = new b(com.tsf.extend.base.d.a.b.LoadMore);
             m mVar = this.d.get(this.d.size() - 1);
             this.x++;
-            z.h().a(this.w, a.b.LoadMore, mVar.f(), this.g.a(), mVar.g(), this.i, this.h ? z.c : z.b, this.x);
+            z.h().a(this.w, com.tsf.extend.base.d.a.b.LoadMore, mVar.f(), this.g.a(), mVar.g(), this.i, this.h ? z.c : z.b, this.x);
         }
     }
 
@@ -413,21 +420,21 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
     }
 
-    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private a.b b;
+    private class b implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private com.tsf.extend.base.d.a.b b;
 
-        public b(a.b bVar) {
+        public b(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
                 a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
                 return;
             }
             ad.this.u = !aVar.b();
-            if (this.b == a.b.LoadMore) {
+            if (this.b == com.tsf.extend.base.d.a.b.LoadMore) {
                 if (ad.this.u) {
                     ad.this.c();
                 } else if (ad.this.a != null) {
@@ -453,9 +460,9 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             ad.this.a((List<m>) aVar.a());
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
-            if (this.b == a.b.LoadMore) {
+            if (this.b == com.tsf.extend.base.d.a.b.LoadMore) {
                 ad.this.d();
                 return;
             }

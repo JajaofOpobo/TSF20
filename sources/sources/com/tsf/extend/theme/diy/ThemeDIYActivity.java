@@ -51,7 +51,6 @@ import com.tsf.extend.theme.aq;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.diy.b;
 import com.tsf.extend.theme.diy.d;
-import com.tsf.extend.theme.diy.e;
 import com.tsf.extend.theme.diy.view.ThemeLoadingAnim;
 import com.tsf.extend.theme.v;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -1406,7 +1405,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    class h implements b.a<com.tsf.extend.base.b.A> {
+    class h implements com.tsf.extend.theme.diy.b.a<com.tsf.extend.base.b.A> {
         public h() {
         }
 
@@ -1485,7 +1484,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         return super.dispatchTouchEvent(motionEvent);
     }
 
-    private class l implements b.a<Pair<String, Bitmap>> {
+    private class l implements com.tsf.extend.theme.diy.b.a<Pair<String, Bitmap>> {
         private l() {
         }
 
@@ -1546,7 +1545,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    private class k implements b.a<Pair<String, Bitmap>> {
+    private class k implements com.tsf.extend.theme.diy.b.a<Pair<String, Bitmap>> {
         private k() {
         }
 
@@ -1576,7 +1575,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    private class j implements b.a<aq> {
+    private class j implements com.tsf.extend.theme.diy.b.a<aq> {
         private j() {
         }
 
@@ -1649,7 +1648,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    private class d implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class d implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         private final List<String> b;
         private aq c;
 
@@ -1658,7 +1657,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.b = ThemeDIYActivity.this.o.e();
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 final Bitmap bitmap = (Bitmap) pair.second;
@@ -1675,7 +1674,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }

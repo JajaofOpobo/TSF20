@@ -40,6 +40,7 @@ sourceSets {
         java.srcDir("../sources/bundled-libs/com/android")
         java.srcDir("../sources/bundled-libs/com/b")
         java.srcDir("../sources/bundled-libs/com/a")
+        java.srcDir("../sources/bundled-libs/com/google")
         java.srcDir("../sources/bundled-libs/android/support/v7")
     }
 }

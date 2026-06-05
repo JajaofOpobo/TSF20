@@ -30,7 +30,7 @@ public class c implements ServiceConnection {
         void a(int i, byte[] bArr);
     }
 
-    class b extends a.AbstractBinderC0177a {
+    class b extends com.tsf.shell.widget.alarm.service.a.AbstractBinderC0177a {
         b() {
         }
 

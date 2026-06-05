@@ -48,10 +48,10 @@ public class d {
     }
 
     private class a extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, Typeface> {
-        private com.tsf.shell.plugin.fontspicker.com.tsf.shell.plugin.fontspicker.a.C0152a e;
+        private com.tsf.shell.plugin.fontspicker.a.C0152a e;
         private final WeakReference<TextView> f;
 
-        public a(com.tsf.shell.plugin.fontspicker.com.tsf.shell.plugin.fontspicker.a.C0152a c0152a, TextView textView) {
+        public a(com.tsf.shell.plugin.fontspicker.a.C0152a c0152a, TextView textView) {
             this.e = c0152a;
             this.f = new WeakReference<>(textView);
         }

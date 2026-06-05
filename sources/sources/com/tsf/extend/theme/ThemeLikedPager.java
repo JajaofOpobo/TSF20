@@ -41,7 +41,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
     private PageActivity l;
     private ad m;
     private List<k> n;
-    private ad.a o;
+    private com.tsf.extend.wallpaper.ad.a o;
     private Runnable p;
 
     public ThemeLikedPager(Context context, AttributeSet attributeSet) {
@@ -79,7 +79,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         e.a().a(this);
         this.c = PersonalizationActivity.a(getContext(), this.c);
         this.d = PersonalizationActivity.a(getContext(), this.d);
-        this.o = new ad.a(this.c, this.d);
+        this.o = new com.tsf.extend.wallpaper.ad.a(this.c, this.d);
         if (Build.VERSION.SDK_INT >= 11) {
             this.o.setColor(0);
         }

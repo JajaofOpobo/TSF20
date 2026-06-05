@@ -39,7 +39,6 @@ import com.tsf.extend.e;
 import com.tsf.extend.f;
 import com.tsf.extend.h;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
-import com.tsf.extend.theme.diy.e;
 import com.tsf.extend.theme.j;
 import com.tsf.extend.theme.k;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -182,7 +181,7 @@ public class ThemeCmClubActivity extends CustomActivity {
 
     /* JADX INFO: Access modifiers changed from: private */
     public File a(boolean z) {
-        File fileA = e.a(this.f, ".image");
+        File fileA = com.tsf.extend.theme.diy.e.a(this.f, ".image");
         if (fileA == null) {
             return null;
         }
@@ -523,7 +522,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         try {
             jSONObject.put("PACKAGE_NAME", str);
             if (str.startsWith("DIY://")) {
-                Object objB = e.b(str.substring("DIY://".length()) + File.separator + "diy.config", "isLocalDiy");
+                Object objB = com.tsf.extend.theme.diy.e.b(str.substring("DIY://".length()) + File.separator + "diy.config", "isLocalDiy");
                 if (objB instanceof Boolean) {
                     jSONObject.put("NO_ICON_GROUP", objB);
                 }
@@ -573,7 +572,7 @@ public class ThemeCmClubActivity extends CustomActivity {
 
         @Override // java.lang.Runnable
         public void run() {
-            e.a(ThemeCmClubActivity.this.f, this.d, this.e, this.f, this.c);
+            com.tsf.extend.theme.diy.e.a(ThemeCmClubActivity.this.f, this.d, this.e, this.f, this.c);
             this.b = true;
         }
 
@@ -582,7 +581,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         }
     }
 
-    class a implements e.a {
+    class a implements com.tsf.extend.theme.diy.e.a {
         public boolean a = false;
 
         a() {
@@ -655,7 +654,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     }
 
     private void j() {
-        new e.a(this.f).a(f.g.cm_club_dialog_stop_downloading).b(f.g.cm_club_dialog_cancel, null).a(f.g.cm_club_dialog_confirm, new DialogInterface.OnClickListener() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.2
+        new com.tsf.extend.theme.diy.e.a(this.f).a(f.g.cm_club_dialog_stop_downloading).b(f.g.cm_club_dialog_cancel, null).a(f.g.cm_club_dialog_confirm, new DialogInterface.OnClickListener() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.2
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (ThemeCmClubActivity.this.z != null) {

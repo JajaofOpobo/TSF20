@@ -41,7 +41,6 @@ import com.tsf.extend.base.view.TextProgressBar;
 import com.tsf.extend.e;
 import com.tsf.extend.f;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
-import com.tsf.extend.theme.diy.e;
 import com.tsf.extend.theme.j;
 import com.tsf.extend.theme.v;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -306,7 +305,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             return false;
         }
         try {
-            new e.a(getContext()).a(f.g.exit_download_theme).b(f.g.theme_diy_dialog_cancel, this).a(f.g.theme_diy_dialog_exit, this).a().a(true);
+            new com.tsf.extend.theme.diy.e.a(getContext()).a(f.g.exit_download_theme).b(f.g.theme_diy_dialog_cancel, this).a(f.g.theme_diy_dialog_exit, this).a().a(true);
             return true;
         } catch (Exception e) {
             return true;
@@ -426,7 +425,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         com.tsf.extend.base.j.z.a(1, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14
             @Override // java.lang.Runnable
             public void run() throws Throwable {
-                final boolean zC = e.a().c(context, kVar);
+                final boolean zC = com.tsf.extend.theme.diy.e.a().c(context, kVar);
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -438,14 +437,14 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     }
 
     private void m() {
-        e.a().a(getContext(), this.k);
+        com.tsf.extend.theme.diy.e.a().a(getContext(), this.k);
         if (!(this.k instanceof aq)) {
             w.a(this.k, getContext());
         }
     }
 
     private void n() {
-        e.a().b(getContext(), this.k);
+        com.tsf.extend.theme.diy.e.a().b(getContext(), this.k);
     }
 
     private void o() {
@@ -528,7 +527,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         if (!TextUtils.isEmpty(strG) && strG.contains("_LP")) {
             i = f.g.lp_theme_delete;
         }
-        new e.a(getContext()).a(i).b(f.g.theme_change_cancel, onClickListener).a(f.g.delete, onClickListener).a().a(true);
+        new com.tsf.extend.theme.diy.e.a(getContext()).a(i).b(f.g.theme_change_cancel, onClickListener).a(f.g.delete, onClickListener).a().a(true);
     }
 
     private void a(int i) {
@@ -601,15 +600,15 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 imageView.setBackgroundResource(f.b.personal_list_item_bg);
             }
             DIYThemeDetail.this.b.add(imageView);
-            a.InterfaceC0048a<v.b> interfaceC0048a = new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.DIYThemeDetail.d.1
-                @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            com.tsf.extend.base.d.a.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.DIYThemeDetail.d.1
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                 public void a(JSONObject jSONObject, v.b bVar) {
                     if (imageView != null && bVar != null) {
                         imageView.setImageBitmap(bVar.b);
                     }
                 }
 
-                @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
                 public void a(JSONObject jSONObject, int i2, v.b bVar) {
                 }
             };
@@ -649,11 +648,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
     }
 
-    class A implements a.InterfaceC0048a<Pair<String, Bitmap>> {
+    class A implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
         A() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 String str = (String) pair.first;
@@ -668,7 +667,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }
@@ -702,7 +701,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         this.q = str;
     }
 
-    class B implements e.a {
+    class B implements com.tsf.extend.theme.diy.e.a {
         public boolean a = false;
 
         B() {
