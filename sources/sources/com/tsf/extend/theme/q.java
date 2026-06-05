@@ -107,11 +107,11 @@ public class q extends t {
     }
 
     @Override // com.tsf.extend.theme.t
-    protected t.c b() {
+    protected C b() {
         return new A();
     }
 
-    protected class A extends t.c {
+    protected class A extends C {
         protected A() {
             super();
         }

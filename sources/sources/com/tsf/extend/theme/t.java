@@ -479,7 +479,7 @@ public class t extends BaseAdapter {
         return this.p;
     }
 
-    protected c b() {
+    protected C b() {
         return new C();
     }
 

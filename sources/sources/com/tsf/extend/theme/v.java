@@ -15,7 +15,6 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.f.b;
-import com.tsf.extend.base.i;
 import com.tsf.extend.theme.C;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
@@ -846,7 +845,7 @@ public class v extends com.tsf.extend.base.d.a {
         a(mVar);
     }
 
-    private c j(JSONObject jSONObject) throws JSONException {
+    private C j(JSONObject jSONObject) throws JSONException {
         C cVar = new C();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
