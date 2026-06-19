@@ -4,9 +4,9 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class l extends com.tsf.shell.f.f.C<k> {
+public class l extends com.tsf.shell.f.f.TransitionManager<k> {
     public l() {
-        ArrayList<com.tsf.shell.f.f.f> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.f.TransitionRenderer> arrayList = new ArrayList<>();
         arrayList.add(new c(10, false));
         arrayList.add(new b(20, false));
         arrayList.add(new j(30, false));
@@ -27,27 +27,27 @@ public class l extends com.tsf.shell.f.f.C<k> {
         }
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void f() {
         super.f();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(k kVar) {
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(boolean z, String str) {
         com.tsf.shell.manager.b.ConfigManager.j(z);
         com.tsf.shell.manager.b.ConfigManager.h(str);
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public boolean b() {
         return com.tsf.shell.manager.b.ConfigManager.G();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public String c() {
         return com.tsf.shell.manager.b.ConfigManager.H();
     }

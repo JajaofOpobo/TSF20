@@ -130,7 +130,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         });
     }
 
-    public class c extends C {
+    public class c extends TransitionManager {
         public c() {
         }
     }
@@ -215,7 +215,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             public void d() {
             }
         };
-        this.x = new C();
+        this.x = new TransitionManager();
         this.i.setAnimationObjectState(true);
         this.p = Home.b().l();
         this.B = new com.censivn.C3DEngine.b.f.j();
@@ -247,13 +247,13 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         };
         for (int i = 0; i < this.k.size(); i++) {
-            g gVar = this.k.get(i);
+            g gVar = this.k.get(ItemPageTransition);
             gVar.x();
             d(gVar);
         }
         this.h.addChild(this.B);
         this.h.addChild(this.i);
-        this.x = new C();
+        this.x = new TransitionManager();
         ac();
         this.v.a(this.m);
         if (this.r == null) {
@@ -286,7 +286,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     private g e(int i) {
         g gVarW = W();
-        gVarW.b(i);
+        gVarW.b(ItemPageTransition);
         this.k.add(gVarW);
         return gVarW;
     }
@@ -321,7 +321,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private void Y() {
         this.l = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
-            this.l.add(Integer.valueOf(i));
+            this.l.add(Integer.valueOf(ItemPageTransition));
         }
     }
 
@@ -338,7 +338,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public boolean b(int i) {
-        return this.L.contains(Integer.valueOf(i));
+        return this.L.contains(Integer.valueOf(ItemPageTransition));
     }
 
     private void aa() {
@@ -1347,7 +1347,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void k() {
             this.B.removeFromParent();
             for (int i = 0; i < n.this.n; i++) {
-                g gVar = (g) n.this.k.get(i);
+                g gVar = (g) n.this.k.get(ItemPageTransition);
                 gVar.f(false);
                 gVar.position().z = 0.0f;
                 gVar.position().x = 0.0f;
@@ -1393,7 +1393,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 com.tsf.shell.manager.app.AppListModel.c(n.this.I);
                 this.w = false;
                 for (int i = 0; i < n.this.n; i++) {
-                    g gVar = (g) n.this.k.get(i);
+                    g gVar = (g) n.this.k.get(ItemPageTransition);
                     if (gVar != n.this.m) {
                         gVar.O();
                     }
@@ -1480,7 +1480,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
 
         public void d() {
-            a((l) null);
+            a((PageTransitionEffect) null);
         }
 
         public void a(l lVar) {
@@ -1538,7 +1538,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 this.t = this.q - this.A.rotation().y;
                 this.z = true;
                 for (int i = 0; i < n.this.n; i++) {
-                    ((g) n.this.k.get(i)).A();
+                    ((g) n.this.k.get(ItemPageTransition)).A();
                 }
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.n.c.4
                     @Override // com.censivn.C3DEngine.b.g.d
@@ -1577,7 +1577,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (!this.i && this.l) {
                 this.h = true;
-                if (Math.abs(f) > 300.0f) {
+                if (Math.abs(TransitionRenderer) > 300.0f) {
                     if (f < 0.0f) {
                         o();
                     } else {
@@ -1720,7 +1720,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             float f2 = Float.MAX_VALUE;
             int i = 1;
             while (i < n.this.n) {
-                g gVar3 = (g) n.this.k.get(i);
+                g gVar3 = (g) n.this.k.get(ItemPageTransition);
                 float fAbs = Math.abs(gVar3.g);
                 if (fAbs < f2) {
                     gVar = gVar3;
@@ -1761,7 +1761,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
 
         private void a(g gVar, Runnable runnable) {
-            a(gVar, runnable, (l) null);
+            a(gVar, runnable, (PageTransitionEffect) null);
         }
 
         private void a(g gVar, Runnable runnable, l lVar) {
@@ -1939,13 +1939,13 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.n.c.10
                 @Override // java.lang.Runnable
                 public void run() {
-                    c.this.c(i);
+                    c.this.c(ItemPageTransition);
                 }
             });
         }
 
         public void d(int i) {
-            c(i);
+            c(ItemPageTransition);
         }
 
         public void a(int i, final int i2) {
@@ -2534,7 +2534,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 if (iR2 == -1) {
                     int size2 = n.this.k.size();
                     for (int i = size; i < size2; i++) {
-                        g gVar2 = (g) n.this.k.get(i);
+                        g gVar2 = (g) n.this.k.get(ItemPageTransition);
                         if (gVar2.r() != -1) {
                             gVar2.a(i + 1);
                             b(gVar2, 250);
@@ -2616,9 +2616,9 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             n.this.k.remove(gVar);
             n.this.k.add(gVar);
             for (int i = iR; i < size; i++) {
-                g gVar2 = (g) n.this.k.get(i);
+                g gVar2 = (g) n.this.k.get(ItemPageTransition);
                 if (gVar2.r() != -1) {
-                    gVar2.a(i);
+                    gVar2.a(ItemPageTransition);
                     b(gVar2, 250);
                 }
             }
@@ -2737,7 +2737,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void a(MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
             if (this.f) {
                 this.f = false;
-                if (Math.abs(f) > Math.abs(f2)) {
+                if (Math.abs(TransitionRenderer) > Math.abs(f2)) {
                     this.b = true;
                     n.this.w.e();
                 } else {
@@ -2756,7 +2756,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         @Override // com.censivn.C3DEngine.b.d.a
         public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-            if (this.b && Math.abs(f) > 250.0f) {
+            if (this.b && Math.abs(TransitionRenderer) > 250.0f) {
                 n.this.w.a(f / 2.0f);
             }
         }

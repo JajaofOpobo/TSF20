@@ -16,7 +16,7 @@ public class A extends com.censivn.C3DEngine.b.f.j {
                 gVar.a(number3d);
                 int iNumChildren = numChildren();
                 for (int i = 0; i < iNumChildren; i++) {
-                    com.censivn.C3DEngine.b.f.i childAt = getChildAt(i);
+                    com.censivn.C3DEngine.b.f.i childAt = getChildAt(ItemPageTransition);
                     onDrawChildStart(childAt);
                     childAt.dispatchDraw();
                     onDrawChildEnd(childAt);

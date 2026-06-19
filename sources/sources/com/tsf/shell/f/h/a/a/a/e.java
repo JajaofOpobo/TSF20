@@ -12,7 +12,7 @@ public class e extends com.tsf.shell.f.e.d.a.d {
     public e(c cVar) {
         this.a = cVar;
         ArrayList<c.C0092c> arrayList = new ArrayList<>();
-        arrayList.add(new c.C0092c(b.i.text_edit, b.d.contact_menu_edit_icon) { // from class: com.tsf.shell.f.h.a.a.a.e.1
+        arrayList.add(new c.C0092c(WorkspaceSceneRoot.i.text_edit, WorkspaceSceneRoot.d.contact_menu_edit_icon) { // from class: com.tsf.shell.f.h.a.a.a.e.1
             @Override // com.tsf.shell.f.e.d.a.c.C0092c
             public void a() {
                 w.b();

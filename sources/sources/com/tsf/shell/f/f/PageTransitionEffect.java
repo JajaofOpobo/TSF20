@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class l extends f {
+public class PageTransitionEffect extends 
     private float a;
     private float b;
 

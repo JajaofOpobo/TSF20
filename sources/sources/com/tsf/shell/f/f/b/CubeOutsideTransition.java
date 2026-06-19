@@ -4,16 +4,16 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.f.i {
+public class CubeOutsideTransition extends 
     public d(int i, boolean z) {
-        super(i, b.d.desktop_transition_cube_outside, z);
+        super(i, CrossfadeTransition.d.desktop_transition_cube_outside, z);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.position().x = 0.0f;
         gVar.rotation().y = 0.0f;
-        j.a aVarJ = gVar.j();
+        HorizontalFlipTransition.a aVarJ = gVar.j();
         if (f < 0.0f) {
             float f2 = -f;
             float f3 = 90.0f * f2;
@@ -33,7 +33,7 @@ public class d extends com.tsf.shell.f.f.i {
         this.a.a(gVar);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
     }
 }

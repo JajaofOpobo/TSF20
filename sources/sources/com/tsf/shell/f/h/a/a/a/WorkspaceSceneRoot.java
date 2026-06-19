@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e.c.a.PageScrollState {
+public class WorkspaceSceneRoot extends 
     private float a;
     private float b;
     private Number3d c;

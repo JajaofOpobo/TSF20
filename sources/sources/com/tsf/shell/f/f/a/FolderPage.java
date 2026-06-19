@@ -1460,7 +1460,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
             if (!aVarAp.visible()) {
-                com.tsf.shell.f.f.l lVarH = com.tsf.shell.manager.app.v.FlagHelper.b.h();
+                com.tsf.shell.f.f.PageTransitionEffect lVarH = com.tsf.shell.manager.app.v.FlagHelper.b.h();
                 lVarH.b((com.tsf.shell.f.f.WorkspacePage) this, false);
                 lVarH.a((com.tsf.shell.f.f.WorkspacePage) this, true);
                 aVarAp.a(true);

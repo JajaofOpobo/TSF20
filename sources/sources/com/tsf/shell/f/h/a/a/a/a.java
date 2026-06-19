@@ -41,12 +41,12 @@ public class a extends j {
         addChild(this.l);
         addChild(this.a);
         this.f = com.censivn.C3DEngine.b.b.A.a(330.0f);
-        this.k = new b(com.censivn.C3DEngine.A.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
+        this.k = new WorkspaceSceneRoot(com.censivn.C3DEngine.A.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
         this.k.b(45.0f);
         this.b = new f(com.censivn.C3DEngine.b.b.A.a(120.0f), com.censivn.C3DEngine.b.b.A.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.1
             @Override // com.tsf.shell.f.h.a.a.a.f
-            public Bitmap a() {
-                return x.a(b.d.contact_menu_call_icon);
+            public class Bitmap 
+                return x.a(WorkspaceSceneRoot.d.contact_menu_call_icon);
             }
         };
         this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.tsf.shell.f.h.a.a.a.a.2
@@ -124,8 +124,8 @@ public class a extends j {
         this.b.calAABB(1.2f, 1.2f, 1.0f);
         this.c = new f(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.3
             @Override // com.tsf.shell.f.h.a.a.a.f
-            public Bitmap a() {
-                return x.a(b.d.contact_menu_message_icon);
+            public class Bitmap 
+                return x.a(WorkspaceSceneRoot.d.contact_menu_message_icon);
             }
         };
         this.c.alpha(0.0f);
@@ -133,8 +133,8 @@ public class a extends j {
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c));
         this.d = new f(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.a.4
             @Override // com.tsf.shell.f.h.a.a.a.f
-            public Bitmap a() {
-                return x.a(b.d.contact_menu_mail_icon);
+            public class Bitmap 
+                return x.a(WorkspaceSceneRoot.d.contact_menu_mail_icon);
             }
         };
         this.d.alpha(0.0f);

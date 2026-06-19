@@ -56,7 +56,7 @@ public class f extends a {
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager.app.v.StateAccessor.a(i);
                 w.b();
-                com.tsf.shell.manager.app.v.StateAccessor.a((com.tsf.shell.f.f.f) dVarA);
+                com.tsf.shell.manager.app.v.StateAccessor.a((com.tsf.shell.f.f.TransitionRenderer) dVarA);
                 f.this.b.d();
             }
         });

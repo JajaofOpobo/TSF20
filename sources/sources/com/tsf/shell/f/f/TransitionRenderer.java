@@ -11,7 +11,7 @@ import com.tsf.shell.utils.ColorMatrixImageFilter;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f {
+public class TransitionRenderer 
     private int a;
     private boolean b;
     private boolean c;
@@ -47,7 +47,7 @@ public class f {
         }
     }
 
-    public TextureElement a(int i, int i2) {
+    public class TextureElement 
         if (this.e == null) {
             Bitmap bitmapA = x.a(g(), i, i2);
             ThemeShellDescription themeShellDescription = ThemeManager.mix.desktopEffect.getTheme().shell;

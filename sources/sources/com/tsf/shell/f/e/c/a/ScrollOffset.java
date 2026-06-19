@@ -1,7 +1,7 @@
 package com.tsf.shell.f.e.c.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e {
+public class ScrollOffset 
     public float a;
     public float b;
     public float c;

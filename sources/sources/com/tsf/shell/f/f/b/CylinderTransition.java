@@ -6,7 +6,7 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f extends com.tsf.shell.f.f.l {
+public class CylinderTransition extends 
     private com.censivn.C3DEngine.b.f.j a;
     private com.censivn.C3DEngine.b.f.h b;
     private com.censivn.C3DEngine.c.A c;
@@ -17,7 +17,7 @@ public class f extends com.tsf.shell.f.f.l {
     private boolean h;
 
     public f(int i, boolean z) {
-        super(i, b.d.desktop_transition_effect_cylinder, z);
+        super(i, CrossfadeTransition.d.desktop_transition_effect_cylinder, z);
         this.e = 2;
         this.f = new com.censivn.C3DEngine.b.g._b.b();
         this.h = false;
@@ -37,19 +37,19 @@ public class f extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean b() {
         return this.h;
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(float f, float f2) {
         boolean zB = com.tsf.shell.manager.app.StateHub.s().b();
         final float fB = this.d.b();
         if (zB) {
             if (this.e != 1) {
                 this.e = 1;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.f.1
+                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.CylinderTransition.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a(float f3) {
                         f.this.d.a(fB + ((0.5f - fB) * f3));
@@ -70,7 +70,7 @@ public class f extends com.tsf.shell.f.f.l {
         }
         if (this.e != 2) {
             this.e = 2;
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.f.2
+            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.CylinderTransition.2
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a(float f3) {
                     f.this.d.a(fB + ((0.0f - fB) * f3));
@@ -88,10 +88,10 @@ public class f extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.position().x = 0.0f;
-        j.a aVarJ = gVar.j();
+        HorizontalFlipTransition.a aVarJ = gVar.j();
         this.b.alpha((1.0f - Math.abs(f)) * 255.0f);
         this.b.position().z = (com.censivn.C3DEngine.b.b.A.D / 5) * 3;
         this.a.position().z = -this.b.position().z;
@@ -101,7 +101,7 @@ public class f extends com.tsf.shell.f.f.l {
         this.a.dispatchDraw();
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         float f2 = 180.0f * f;
         if (f2 < 90.0f && f2 > -90.0f) {
@@ -111,7 +111,7 @@ public class f extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(float f, float f2) {
         if (this.b != null) {
             this.b.a(f);
@@ -120,7 +120,7 @@ public class f extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a() {
         return true;
     }

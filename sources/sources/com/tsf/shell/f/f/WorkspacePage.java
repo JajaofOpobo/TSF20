@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0113a {
+public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements TransitionConfig.a, A.InterfaceC0113a {
     public static com.tsf.shell.f.a.a.a f;
     public static com.censivn.C3DEngine.b.f.i i;
     private static com.censivn.C3DEngine.b.f.k r;
@@ -135,7 +135,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements e.a, A
                 MatrixStack.glPushMatrix();
                 draw();
                 MatrixStack.glColor(alpha(), getDefaultColor());
-                i.dispatchDraw();
+                ItemPageTransition.dispatchDraw();
                 MatrixStack.glPopMatrix();
                 return;
             }
@@ -189,7 +189,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements e.a, A
         com.tsf.shell.manager.app.ObserverManager.a(this);
     }
 
-    public VPage l() {
+    public class VPage 
         return this.u;
     }
 
@@ -413,7 +413,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements e.a, A
 
     public static void y() {
         if (f != null) {
-            com.tsf.shell.manager.app.TextureCache.a(f);
+            com.tsf.shell.manager.app.TextureCache.a(TransitionRenderer);
         }
         if (n.a > n.b) {
             d = (int) (0.4f * com.censivn.C3DEngine.b.b.A.F);

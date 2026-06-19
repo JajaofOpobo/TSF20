@@ -5,7 +5,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.tsf.shell.f.f.f {
+public class c extends com.tsf.shell.f.f.TransitionRenderer {
     protected int a;
     protected Comparator<com.tsf.shell.f.i.PageItem> b;
     protected Comparator<i> c;
@@ -24,7 +24,7 @@ public class c extends com.tsf.shell.f.f.f {
         return this.c;
     }
 
-    @Override // com.tsf.shell.f.f.f
+    @Override // com.tsf.shell.f.f.TransitionRenderer
     public int k() {
         return this.a;
     }

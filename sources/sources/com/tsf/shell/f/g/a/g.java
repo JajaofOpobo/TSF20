@@ -69,7 +69,7 @@ public class g extends a {
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 com.tsf.shell.f._d.c.a.d dVarA = com.tsf.shell.manager.app.v.ScreenHelper.a(i);
                 w.b();
-                com.tsf.shell.manager.app.v.ScreenHelper.a((com.tsf.shell.f.f.f) dVarA);
+                com.tsf.shell.manager.app.v.ScreenHelper.a((com.tsf.shell.f.f.TransitionRenderer) dVarA);
                 com.tsf.shell.manager.app.v.ScreenHelper.d().b(g.this.a.a());
                 g.this.b.d();
             }

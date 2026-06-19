@@ -12,7 +12,7 @@ import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A extends com.tsf.shell.f.f.l {
+public class ClothTransition extends 
     private com.censivn.C3DEngine.b.f.j a;
     private C0108a b;
     private com.tsf.shell.f.f.WorkspacePage c;
@@ -25,7 +25,7 @@ public class A extends com.tsf.shell.f.f.l {
     public A(int i, boolean z) {
         int i2;
         int i3;
-        super(i, b.d.desktop_transition_cloth, z);
+        super(i, CrossfadeTransition.d.desktop_transition_cloth, z);
         this.f = 2;
         this.g = new com.censivn.C3DEngine.b.g._b.b();
         this.h = true;
@@ -41,27 +41,27 @@ public class A extends com.tsf.shell.f.f.l {
             this.b = new C0108a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, (int) (i2 / (com.censivn.C3DEngine.b.b.A.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.A.e * 8.0f)));
             this.a.addChild(this.b);
         }
-        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.f);
+        CurveTransition.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.f);
         if (aVarA.a() && aVarA.c == 110) {
             m();
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void c() {
         this.c = null;
         this.d = null;
         this.e = null;
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void e() {
         if (this.c == null) {
             this.c = com.tsf.shell.manager.app.StateHub.n();
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean b() {
         return this.h;
     }
@@ -111,7 +111,7 @@ public class A extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(float f, float f2) {
         o();
         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
@@ -177,7 +177,7 @@ public class A extends com.tsf.shell.f.f.l {
         GLES20.glFrontFace(2304);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.position().x = 0.0f;
         this.b.a(gVar.j().b);
@@ -187,22 +187,22 @@ public class A extends com.tsf.shell.f.f.l {
     }
 
     private void a(float f) {
-        this.b.d(f);
+        this.b.d(CylinderTransition);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(float f, float f2) {
         if (this.b != null) {
             this.b.b(f, f2);
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a() {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.tsf.shell.f.f.b.A$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.shell.f.f.b.ClothTransition$a, reason: collision with other inner class name */
     public static class C0108a extends com.censivn.C3DEngine.b.f.k {
         private com.censivn.C3DEngine.b.f.k a;
         private int d;

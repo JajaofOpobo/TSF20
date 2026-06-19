@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.api.core.VObject3dContainer;
 import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends VObject3dContainer {
+public class ScrollManager extends 
     private a a;
     private a b;
     private TextureElement c;
@@ -29,14 +29,14 @@ public class c extends VObject3dContainer {
         this.e = f2;
         this.f = f3;
         this.g = i;
-        e eVar = new e(f + f2, 0.0f, f2);
+        e eVar = new ScrollOffset(f + f2, 0.0f, f2);
         float f4 = ((((-f3) * f3) - (f * f)) - ((2.0f * f) * f2)) / ((f3 - f2) * 2.0f);
         float f5 = f4 + f3;
-        e eVar2 = new e(0.0f, f5, f4);
+        e eVar2 = new ScrollOffset(0.0f, f5, f4);
         float fA = eVar.a(eVar2) * 2.0f;
         float fB = eVar.b(eVar2) * 2.0f;
-        this.a = new a(fA, fB);
-        this.b = new a(fA, fB);
+        this.a = new PageFrame(fA, fB);
+        this.b = new PageFrame(fA, fB);
         a(f4, f5, fA, fB);
         return eVar2;
     }

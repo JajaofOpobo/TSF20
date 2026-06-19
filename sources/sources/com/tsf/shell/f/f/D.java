@@ -3,8 +3,8 @@ package com.tsf.shell.f.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class D extends C<l> {
-    public Object a;
+public class D extends TransitionManager<l> {
+    public class Object 
     private boolean b;
     private boolean c;
 
@@ -15,20 +15,20 @@ public class D extends C<l> {
         this.c = false;
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public boolean b() {
         return com.tsf.shell.manager.b.ConfigManager.z();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(boolean z, String str) {
         h.d();
         com.tsf.shell.manager.b.ConfigManager.g(z);
         com.tsf.shell.manager.b.ConfigManager.d(str);
     }
 
-    @Override // com.tsf.shell.f.f.C
-    public String c() {
+    @Override // com.tsf.shell.f.f.TransitionManager
+    public class String 
         return com.tsf.shell.manager.b.ConfigManager.A();
     }
 
@@ -42,7 +42,7 @@ public class D extends C<l> {
         com.tsf.shell.manager.app.v.ObjectHelper.h();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
     public void a(l lVar) {
     }
@@ -50,9 +50,9 @@ public class D extends C<l> {
     public void c(l lVar) {
         if (this.b) {
             a();
-            a((f) lVar);
+            a((TransitionRenderer) lVar);
             this.c = true;
-        } else if (a((f) lVar)) {
+        } else if (a((TransitionRenderer) lVar)) {
             a(800, 500);
         }
     }
@@ -79,7 +79,7 @@ public class D extends C<l> {
         }
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void f() {
         super.f();
         if (this.b) {

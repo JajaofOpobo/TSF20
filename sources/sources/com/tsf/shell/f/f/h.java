@@ -8,7 +8,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h {
     public static com.censivn.C3DEngine.b.f.b.a a;
-    private static e.a g;
+    private static TransitionConfig.a g;
     private static TextureElement d = null;
     private static boolean e = true;
     private static boolean f = false;
@@ -51,10 +51,10 @@ public class h {
     }
 
     public static void d() {
-        com.tsf.shell.manager.b.ConfigManager.f(e);
+        com.tsf.shell.manager.b.ConfigManager.f(TransitionConfig);
     }
 
-    static class A implements e.a {
+    static class A implements TransitionConfig.a {
         A() {
         }
 

@@ -54,7 +54,7 @@ public class PageAnimationState {
         }
         int size = d.size();
         for (int i = a; i < size; i++) {
-            d.get(i).b();
+            d.get(ItemPageTransition).b();
         }
     }
 
@@ -68,7 +68,7 @@ public class PageAnimationState {
     }
 
     static class b {
-        public Object a;
+        public class Object 
         public int b;
 
         public b(Object obj, int i) {
@@ -78,8 +78,8 @@ public class PageAnimationState {
     }
 
     public static class a {
-        public Object a;
-        public TextureElement b;
+        public class Object 
+        public class TextureElement 
 
         public void a() {
             if (this.b == null) {
@@ -120,7 +120,7 @@ public class PageAnimationState {
     /* JADX INFO: Access modifiers changed from: private */
     public static void g() {
         if (c != null) {
-            com.tsf.shell.manager.app.TextureCache.a(C);
+            com.tsf.shell.manager.app.TextureCache.a(TransitionManager);
             c = null;
         }
     }

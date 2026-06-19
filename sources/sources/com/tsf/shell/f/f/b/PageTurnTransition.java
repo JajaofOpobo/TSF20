@@ -4,14 +4,14 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class k extends com.tsf.shell.f.f.i {
+public class PageTurnTransition extends 
     public k(int i, boolean z) {
-        super(i, b.d.desktop_transition_page_turn, z);
+        super(i, CrossfadeTransition.d.desktop_transition_page_turn, z);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
-        j.a aVarJ = gVar.j();
+        HorizontalFlipTransition.a aVarJ = gVar.j();
         if (f < 0.0f) {
             float f2 = f * 90.0f;
             float fSin = (float) (Math.sin(Math.toRadians(f2)) * ((double) (com.censivn.C3DEngine.b.b.A.D * 0.5f)));
@@ -25,13 +25,13 @@ public class k extends com.tsf.shell.f.f.i {
             this.a.position().z = -fSin2;
             this.a.rotation().y = -f3;
         }
-        this.a.alpha((1.0f - Math.abs(f)) * 255.0f);
+        this.a.alpha((1.0f - Math.abs(CylinderTransition)) * 255.0f);
         this.a.textures().clear();
         this.a.textures().addElement(aVarJ.b);
         this.a.a(gVar);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         if (f > 0.0f) {
             gVar.setRendererPriorityLevel(0);
@@ -40,7 +40,7 @@ public class k extends com.tsf.shell.f.f.i {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         aVar.alpha((1.0f - Math.abs((Math.abs(gVar.g) - 0.5f) * 2.0f)) * 255.0f);
         return true;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class C<E> {
+public abstract class TransitionManager<E> {
     private ArrayList<LauncherAppInfo> b;
     private ArrayList<LauncherAppInfo> c;
     private ArrayList<LauncherAppInfo> d;
@@ -18,7 +18,7 @@ public abstract class C<E> {
 
     public abstract boolean b();
 
-    public abstract String c();
+    public abstract class String 
 
     public C(ArrayList<LauncherAppInfo> arrayList) {
         a(arrayList);
@@ -45,7 +45,7 @@ public abstract class C<E> {
         this.d = new ArrayList<>();
         Iterator<Integer> it = com.tsf.shell.utils.ItemInfoListSorter.a(c(), ",", false).iterator();
         while (it.hasNext()) {
-            f fVar = (f) c(it.next().intValue());
+            f fVar = (TransitionRenderer) c(it.next().intValue());
             if (fVar != null) {
                 fVar.a(true);
                 this.c.add(fVar);
@@ -82,14 +82,14 @@ public abstract class C<E> {
     }
 
     public E a(int i) {
-        return (E) this.b.get(i);
+        return (E) this.b.get(ItemPageTransition);
     }
 
-    /* JADX WARN: Type inference failed for: r0v4, types: [E, com.tsf.shell.f.f.f] */
+    /* JADX WARN: Type inference failed for: r0v4, types: [E, com.tsf.shell.f.f.TransitionRenderer] */
     private E c(int i) {
         Iterator<LauncherAppInfo> it = this.b.iterator();
         while (it.hasNext()) {
-            E r0 = (E) ((f) it.next());
+            E r0 = (E) ((TransitionRenderer) it.next());
             if (r0.k() == i) {
                 return r0;
             }
@@ -101,7 +101,7 @@ public abstract class C<E> {
         if (i < 0 || i > i() - 1) {
             i = 0;
         }
-        return a(this.b.get(i));
+        return a(this.b.get(ItemPageTransition));
     }
 
     public boolean a(f fVar) {
@@ -178,7 +178,7 @@ public abstract class C<E> {
             int size = this.c.size();
             int i = 0;
             while (i < size) {
-                f fVar = this.c.get(i);
+                f fVar = this.c.get(ItemPageTransition);
                 if (i == size - 1) {
                     str2 = str3 + fVar.k();
                 } else {

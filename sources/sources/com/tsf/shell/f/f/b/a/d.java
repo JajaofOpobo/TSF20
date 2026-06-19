@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.shell.f._d.e.A;
 import com.tsf.shell.f.f.a.FolderPage;
 import com.tsf.shell.f.f.WorkspacePage;
-import com.tsf.shell.f.f.i;
+import com.tsf.shell.f.f.ItemPageTransition;
 import com.tsf.shell.f.f.PageAnimationState;
 import java.util.ArrayList;
 
@@ -20,16 +20,16 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
         return (float) (((double) i) - (((double) (i * 2)) * Math.random()));
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(g gVar, float f) {
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(g gVar, boolean z) {
         if (gVar.t() == -1) {
             final h hVar = (h) gVar;
@@ -48,7 +48,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(g gVar, boolean z) {
         if (gVar.t() == -1) {
             h hVar = (h) gVar;
@@ -57,7 +57,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(g gVar, float f) {
         if (gVar.t() == -1) {
             gVar.dispatchDraw();

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class i extends l {
+public abstract class ItemPageTransition extends 
     protected B a;
 
     public i(int i, int i2, boolean z) {
@@ -10,15 +10,15 @@ public abstract class i extends l {
         this.a.useVBO(false);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a() {
         return true;
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(float f, float f2) {
         if (this.a != null) {
-            this.a.a(f);
+            this.a.a(TransitionRenderer);
             this.a.b(f2);
         }
     }

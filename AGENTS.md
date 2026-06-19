@@ -140,6 +140,49 @@
 | `f/c/a/b/a.java` | `DrawerMenuParams.java` | Drawer menu animation params struct | workspace3D.e.c.a |
 | `f/e/h/a.java` | `PhotoPicker.java` | Photo picker activity result handler | workspace3D.g.e.d |
 
+### Session 6: Scene Graph & Transition Effects (30 classes)
+| v3 File | New Name | Description | Evidence |
+|---------|----------|-------------|----------|
+| `f/e/c/a/b.java` | `PageContainer.java` | Page wrapper (extends VRectangle) | Frida scene graph (3 leaves) |
+| `f/e/c/a/c.java` | `ScrollManager.java` | Page transition orchestrator | Frida transition queue trace |
+| `f/e/c/a/a.java` | `PageFrame.java` | Page rendering surface | Frida scene evidence |
+| `f/e/c/a/e.java` | `ScrollOffset.java` | Scroll position data + comparator | Frida method enum (2 methods) |
+| `f/h/a/a/a/b.java` | `WorkspaceSceneRoot.java` | Workspace 3D scene root | Frida scene graph (root node) |
+| `f/f/f.java` | `TransitionRenderer.java` | Transition render base (bitmap creation) | Code analysis (100 lines) |
+| `f/f/l.java` | `PageTransitionEffect.java` | Abstract page transition effect | Frida trace |
+| `f/f/i.java` | `ItemPageTransition.java` | Abstract item transition effect | Code analysis |
+| `f/f/C.java` | `TransitionManager.java` | Abstract effect manager | Code analysis |
+| `f/f/e.java` | `TransitionConfig.java` | Transition config/selector | Code analysis |
+| `f/f/b/A.java` | `ClothTransition.java` | Cloth page transition | Constructor string |
+| `f/f/b/b.java` | `CrossfadeTransition.java` | Crossfade transition | Constructor string |
+| `f/f/b/c.java` | `CubeInsideTransition.java` | Cube (inside) transition | Constructor string |
+| `f/f/b/d.java` | `CubeOutsideTransition.java` | Cube (outside) transition | Constructor string |
+| `f/f/b/e.java` | `CurveTransition.java` | Curve transition | Constructor string |
+| `f/f/b/f.java` | `CylinderTransition.java` | Cylinder transition | Constructor string |
+| `f/f/b/g.java` | `FlipTransition.java` | Flip transition | Constructor string |
+| `f/f/b/h.java` | `FlyInTransition.java` | Fly-in transition | Constructor string |
+| `f/f/b/i.java` | `FoldPageTransition.java` | Fold page transition | Constructor string |
+| `f/f/b/j.java` | `HorizontalFlipTransition.java` | Horizontal flip transition | Constructor string |
+| `f/f/b/k.java` | `PageTurnTransition.java` | Page turn transition | Constructor string |
+| `f/f/b/l.java` | `RollTransition.java` | Roll transition | Constructor string |
+| `f/f/b/m.java` | `ScaleInOutTransition.java` | Scale in/out transition | Constructor string |
+| `f/f/b/n.java` | `WaveZoomOutTransition.java` | Wave zoom out transition | Constructor string |
+| `f/f/b/o.java` | `SlopeInsideTransition.java` | Slope (inside) transition | Constructor string |
+| `f/f/b/p.java` | `SlopeOutsideTransition.java` | Slope (outside) transition | Constructor string |
+| `f/f/b/q.java` | `StackTransition.java` | Stack transition | Constructor string |
+| `f/f/b/r.java` | `SmoothTransition.java` | Smooth transition | Constructor string |
+| `f/f/b/s.java` | `WaveTransition.java` | Wave transition | Constructor string |
+| `f/f/b/t.java` | `WindmillTransition.java` | Windmill transition | Constructor string |
+| v3 File | New Name | Description | v1 Source |
+|---------|----------|-------------|-----------|
+| `f/i/a/a.java` | `WallpaperTouchHandler.java` | Wallpaper touch events (tap/swipe) | workspace3D.a.a |
+| `f/i/_b/c/a.java` | `WidgetPageItem.java` | Widget item on workspace (extends PageItem) | workspace3D.k.c.a.a |
+| `f/i/_b/d/b.java` | `WorkspaceShortcutItem.java` | Main workspace shortcut (extends ShortcutItem) | workspace3D.k.c.b.c |
+| `f/i/_b/d/i.java` | `ScrollingIndicator.java` | Folder page indicator dots | workspace3D.k.c.b.an |
+| `f/i/_b/d/k.java` | `ItemPositionAnimator.java` | Item grid position/animation controller | workspace3D.g.p |
+| `f/c/a/b/a.java` | `DrawerMenuParams.java` | Drawer menu animation params struct | workspace3D.e.c.a |
+| `f/e/h/a.java` | `PhotoPicker.java` | Photo picker activity result handler | workspace3D.g.e.d |
+
 ### Session 6: Frida Runtime Data Discoveries
 
 #### Loaded Classes (Frida enumeration, stable 1320 classes)
@@ -169,7 +212,26 @@
 - `f.i._b` = item subpackages (a-e: item info, item animation, drawing)
 - `f.e._a` through `f.e._i` = 9 underscore-subpackages (layout strategies, state machines)
 
-### Next Priority Targets (from high-confidence mappings)
+## Next Priority Targets (from high-confidence mappings)
+Priority 1 (v3_to_v1_mapping.json confirmed, ready to rename):
+- `f.i.a.a` → `workspace3D.a.a` - Widget page item type
+- `f.i._b.c.a` → `workspace3D.k.c.a.a` - Page item animation config
+- `f.i._b.d.b` → `workspace3D.k.c.b.c` - Item animation data
+- `f.i._b.d.i` → `workspace3D.k.c.b.an` - Item animation state
+- `f.i._b.d.k` → `workspace3D.g.p` - Item container type
+- `f.c.a.b.a` → `workspace3D.e.c.a` - Drawer menu params struct
+- `f.e.h.a.InterfaceC0098a` → `workspace3D.g.e.d` - Layout interface
+
+Priority 2 (Frida scene graph evidence):
+- `f.h.a.a.a.b` → Root scene node (1 kid, 3 total roots)
+- `f.e.c.a.b` → Page container (used in scene graph, 2 methods)
+
+Priority 3 (needs v1 source analysis):
+- `f.f.f` → Transition base class (100 lines, parent of l + all 20 transition effects)
+- `f.f.l` → TransitionEffect (61 lines, abstract page transition, extends f)
+- `f.f.e` → Transition data/params
+- `f.f.b/A` → ClothTransition (capital A = first transition)
+- `f.f.b/a-t` → Other transitions (Cube, Flip, Cover, etc.)
 Priority 1 (v3_to_v1_mapping.json confirmed, ready to rename):
 - `f.i.a.a` → `workspace3D.a.a` - Widget page item type
 - `f.i._b.c.a` → `workspace3D.k.c.a.a` - Page item animation config

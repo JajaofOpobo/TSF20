@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
-import com.tsf.shell.f.f.l;
+import com.tsf.shell.f.f.PageTransitionEffect;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;

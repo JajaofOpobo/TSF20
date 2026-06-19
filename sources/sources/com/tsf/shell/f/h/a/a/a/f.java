@@ -23,7 +23,7 @@ public class f extends k {
         }
     }
 
-    public Bitmap a() {
+    public class Bitmap 
         return null;
     }
 

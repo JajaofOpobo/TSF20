@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class k extends com.tsf.shell.f.f.f {
+public abstract class k extends com.tsf.shell.f.f.TransitionRenderer {
     public abstract void a(int i, int i2, int i3, int i4, ArrayList<Number3d> arrayList);
 
     public abstract void a(com.censivn.C3DEngine.b.f.j jVar);

@@ -3,7 +3,7 @@ package com.tsf.shell.f.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends C<l> {
+public class TransitionConfig extends TransitionManager<l> {
     private boolean a;
     private boolean b;
     private boolean c;
@@ -15,32 +15,32 @@ public class e extends C<l> {
         this.c = false;
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public boolean b() {
         return com.tsf.shell.manager.b.ConfigManager.E();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(boolean z, String str) {
         h.d();
         com.tsf.shell.manager.b.ConfigManager.i(z);
         com.tsf.shell.manager.b.ConfigManager.g(str);
     }
 
-    @Override // com.tsf.shell.f.f.C
-    public String c() {
+    @Override // com.tsf.shell.f.f.TransitionManager
+    public class String 
         return com.tsf.shell.manager.b.ConfigManager.F();
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(l lVar) {
     }
 
     public void b(l lVar) {
         if (this.a) {
-            a((f) lVar);
+            a((TransitionRenderer) lVar);
             this.b = true;
-        } else if (a((f) lVar)) {
+        } else if (a((TransitionRenderer) lVar)) {
             b(true);
         }
     }
@@ -52,7 +52,7 @@ public class e extends C<l> {
         com.tsf.shell.manager.app.StateHub.s().d(600);
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void f() {
         super.f();
         if (this.a) {
@@ -64,7 +64,7 @@ public class e extends C<l> {
             com.censivn.C3DEngine.a.d.d().c().a(true);
             if (this.b) {
                 this.b = false;
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.e.1
+                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.TransitionConfig.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.b(true);

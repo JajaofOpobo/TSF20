@@ -3,8 +3,8 @@ package com.tsf.shell.f._d.b;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.shell.f._d.b.a.d;
 import com.tsf.shell.f._d.b.a.e;
-import com.tsf.shell.f.f.C;
-import com.tsf.shell.f.f.f;
+import com.tsf.shell.f.f.TransitionManager;
+import com.tsf.shell.f.f.TransitionRenderer;
 import com.tsf.shell.f.i.b.e.b;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -49,7 +49,7 @@ public class A extends c<d> {
         }
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(d dVar) {
         Iterator<b> it = this.a.iterator();
         while (it.hasNext()) {
@@ -57,17 +57,17 @@ public class A extends c<d> {
         }
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public void a(boolean z, String str) {
         com.tsf.shell.manager.b.ConfigManager.f(str);
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public boolean b() {
         return false;
     }
 
-    @Override // com.tsf.shell.f.f.C
+    @Override // com.tsf.shell.f.f.TransitionManager
     public String c() {
         return com.tsf.shell.manager.b.ConfigManager.D();
     }

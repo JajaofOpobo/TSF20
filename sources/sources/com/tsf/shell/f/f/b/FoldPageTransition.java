@@ -8,16 +8,16 @@ import com.tsf.shell.f.f.PageAnimationState;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class i extends com.tsf.shell.f.f.l {
+public class FoldPageTransition extends 
     private com.censivn.C3DEngine.b.f.h a;
     private com.censivn.C3DEngine.b.f.h b;
     private com.censivn.C3DEngine.b.f.h c;
 
     public i(int i, boolean z) {
-        super(i, b.d.desktop_transition_fold_page, z);
+        super(i, CrossfadeTransition.d.desktop_transition_fold_page, z);
         this.a = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
         this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
-        this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.i.1
+        this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
             @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
             public void draw() {
                 com.censivn.C3DEngine.A.e().a(this);
@@ -63,10 +63,10 @@ public class i extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         boolean zI = com.tsf.shell.manager.app.LauncherAppInfo.i();
-        j.a aVarA = gVar.a(true, false);
+        HorizontalFlipTransition.a aVarA = gVar.a(true, false);
         if (f > 0.0f) {
             this.b.textures().clear();
             this.b.textures().addElement(aVarA.b);
@@ -139,7 +139,7 @@ public class i extends com.tsf.shell.f.f.l {
         this.c.vertices().colors().set(3, f2, f2, f2, 1.0f);
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         if (f > 0.0f) {
             if (f <= 0.5f) {
@@ -157,17 +157,17 @@ public class i extends com.tsf.shell.f.f.l {
         }
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(float f, float f2) {
         o();
     }
 
-    @Override // com.tsf.shell.f.f.l
+    @Override // com.tsf.shell.f.f.PageTransitionEffect
     public boolean a() {
         return true;
     }

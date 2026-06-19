@@ -62,11 +62,11 @@ public class PageScrollState extends VObject3dContainer {
         addChild(this.n);
         this.m = new VObject3dContainer();
         this.n.addChild(this.m);
-        this.c = new c();
+        this.c = new ScrollManager();
         e eVarA = this.c.a(this.d, this.e, this.f, this.k);
-        this.a = new b(128.0f, eVarA);
+        this.a = new PageContainer(128.0f, eVarA);
         this.m.addChild(this.a);
-        this.b = new b(128.0f, eVarA);
+        this.b = new PageContainer(128.0f, eVarA);
         this.m.addChild(this.b);
         this.m.addChild(this.c);
         c(0.0f);

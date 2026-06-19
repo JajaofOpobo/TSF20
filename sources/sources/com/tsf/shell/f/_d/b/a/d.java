@@ -9,7 +9,7 @@ import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.f.f.f {
+public class d extends com.tsf.shell.f.f.TransitionRenderer {
     public static TextureElement b = new TextureElement(0, false);
     public b a;
 
