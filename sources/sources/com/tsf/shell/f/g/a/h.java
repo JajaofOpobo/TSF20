@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e.k;
+import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

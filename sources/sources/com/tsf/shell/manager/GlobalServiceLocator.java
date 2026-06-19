@@ -1,6 +1,6 @@
 package com.tsf.shell.manager;
 
-import com.tsf.shell.f.e.p;
+import com.tsf.shell.f.e.StubPlaceholder;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.action.ActionManager;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
@@ -29,7 +29,7 @@ public class GlobalServiceLocator {
     public static p m;
     public static com.tsf.shell.manager.m.SideMenuManager n;
     public static com.tsf.shell.f.h.b o;
-    public static com.tsf.shell.f.e.e.c p;
+    public static com.tsf.shell.f.e.e.c StubPlaceholder;
     public static com.tsf.shell.manager.n.ToastOverlayController q;
     public static com.tsf.shell.manager.q.UnreadBadgeManager r;
     public static com.censivn.C3DEngine.b.c.d s;

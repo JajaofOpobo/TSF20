@@ -9,7 +9,7 @@ public abstract class c {
     private boolean isShowing = false;
     private float mMenuHeight = 0.0f;
     private c mParent;
-    protected com.tsf.shell.f.e._g.d menu;
+    protected com.tsf.shell.f.e._g.MenuOverlay menu;
     public float targetX;
 
     public void setParentMenu(c cVar) {
@@ -28,7 +28,7 @@ public abstract class c {
         return this.mMenuHeight;
     }
 
-    public void setMenu(com.tsf.shell.f.e._g.d dVar) {
+    public void setMenu(com.tsf.shell.f.e._g.MenuOverlay dVar) {
         if (this.menu == null) {
             this.menu = dVar;
             reset();

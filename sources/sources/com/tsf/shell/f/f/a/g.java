@@ -198,7 +198,7 @@ public class g extends j {
     static class A extends k {
         private TextureElement a;
         private int d;
-        private com.tsf.shell.f.e.k e;
+        private com.tsf.shell.f.e.CircleDotNode e;
         private boolean f;
         private e.a g;
         private int h;
@@ -257,7 +257,7 @@ public class g extends j {
 
         public void e() {
             if (this.e == null) {
-                this.e = new com.tsf.shell.f.e.k();
+                this.e = new com.tsf.shell.f.e.CircleDotNode();
                 this.e.position().x = com.censivn.C3DEngine.b.b.A.a(36.0f);
                 this.e.position().y = com.censivn.C3DEngine.b.b.A.a(36.0f);
             }

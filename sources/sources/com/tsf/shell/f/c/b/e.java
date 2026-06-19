@@ -18,7 +18,7 @@ import java.util.Iterator;
 public class e implements com.censivn.C3DEngine.b.c.e.a {
     public static int a = 1;
     private j d;
-    private com.tsf.shell.f.e.j e;
+    private com.tsf.shell.f.e.PageIndicatorStrip e;
     private com.tsf.shell.f.c.b.a.a f;
     private com.censivn.C3DEngine.b.h.e.a i;
     private A j;
@@ -105,7 +105,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         if (!this.m) {
             this.e = com.tsf.shell.manager.app.StateHub.h();
         } else {
-            this.e = new com.tsf.shell.f.e.j(false);
+            this.e = new com.tsf.shell.f.e.PageIndicatorStrip(false);
             this.e.a(5);
             this.e.b(2);
         }

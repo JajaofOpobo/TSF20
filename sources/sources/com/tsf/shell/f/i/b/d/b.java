@@ -14,9 +14,9 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.m;
-import com.tsf.shell.f.e.n;
-import com.tsf.shell.f.i.A;
+import com.tsf.shell.f.e.ILassoSelectable;
+import com.tsf.shell.f.e.LassoContextMenu;
+import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.f.i.b.d.g;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
@@ -27,16 +27,16 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.H.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.LassoSelectionHandler.a, ILassoSelectable, com.tsf.shell.f.i.MultiSelectController.InterfaceC0113a {
     private static ArrayList<Integer> C;
     private static ArrayList<Integer> D;
     private static ArrayList<Integer> E;
     private static ArrayList<Integer> F;
-    private static com.tsf.shell.f.e.H G;
+    private static com.tsf.shell.f.e.LassoSelectionHandler G;
     public static b k;
     public static j l;
-    public static d m;
-    public static c n;
+    public static d ILassoSelectable;
+    public static c LassoContextMenu;
     boolean A;
     private com.tsf.shell.f.i.b.e.b H;
     private int I;
@@ -53,7 +53,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
     private com.censivn.C3DEngine.b.f.j T;
     private int U;
     private com.censivn.C3DEngine.b.g.d V;
-    private com.tsf.shell.f.i.A W;
+    private com.tsf.shell.f.i.MultiSelectController W;
     private boolean X;
     private boolean Y;
     private boolean Z;
@@ -104,17 +104,17 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         kVar.uvs().set(1, 0.0f, 0.0f);
         kVar.uvs().set(2, 1.0f, 1.0f);
         kVar.uvs().set(3, 0.0f, 1.0f);
-        kVar.points().setPX(0, m.g, m.f, 0.0f);
-        kVar.points().setPX(1, m.e, m.f, 0.0f);
-        kVar.points().setPX(2, m.g, m.h, 0.0f);
-        kVar.points().setPX(3, m.e, m.h, 0.0f);
+        kVar.points().setPX(0, ILassoSelectable.g, ILassoSelectable.f, 0.0f);
+        kVar.points().setPX(1, ILassoSelectable.e, ILassoSelectable.f, 0.0f);
+        kVar.points().setPX(2, ILassoSelectable.g, ILassoSelectable.h, 0.0f);
+        kVar.points().setPX(3, ILassoSelectable.e, ILassoSelectable.h, 0.0f);
         kVar.updateUvsVBO();
         return kVar;
     }
 
     public static void q() {
         l.f();
-        m.a();
+        ILassoSelectable.a();
         Iterator<b> it = B.iterator();
         while (it.hasNext()) {
             it.next().aK();
@@ -141,14 +141,14 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         bVar.rotation().z = launcherFolder3DInfo.rotation;
         bVar.ac();
         bVar.ad();
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
         com.tsf.shell.manager.app.WidgetManager.d(bVar);
         return bVar;
     }
 
     public static b a(LauncherFolder3DInfo launcherFolder3DInfo) {
         b bVar = new b(launcherFolder3DInfo);
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
         return bVar;
     }
 
@@ -170,7 +170,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         bVar.position().setAllFrom(position());
         bVar.scale().setAllFrom(scale());
         bVar.rotation().setAllFrom(rotation());
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
         return bVar;
     }
 
@@ -180,7 +180,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
             bVar2.k.textures().addElement(bVar.k.textures().get(0).textureElement);
             bVar.addChild(bVar2);
             int childIndexOf = bVar.getChildIndexOf(bVar2);
-            m.b(this);
+            ILassoSelectable.b(this);
             mouseEnabled(false);
             this.H = bVar2;
             Number3d.TEMPNUMBER3D.reset();
@@ -215,7 +215,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
     }
 
     public void a(com.censivn.C3DEngine.b.f.i iVar, final Runnable runnable) {
-        m.b(this);
+        ILassoSelectable.b(this);
         mouseEnabled(false);
         this.J.b();
         Number3d.TEMPNUMBER3D.reset();
@@ -325,7 +325,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         be();
         bd();
         if (G == null) {
-            G = new com.tsf.shell.f.e.H();
+            G = new com.tsf.shell.f.e.LassoSelectionHandler();
         }
         this.R = new k(this);
         this.o = new g(this);
@@ -361,7 +361,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         this.O = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i.b.d.b.15
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
-                com.tsf.shell.f.i.b.d.b.G.a((com.tsf.shell.f.e.H.a) b.this);
+                com.tsf.shell.f.i.b.d.b.G.a((com.tsf.shell.f.e.LassoSelectionHandler.a) b.this);
                 com.tsf.shell.f.i.b.d.b.G.a((com.censivn.C3DEngine.b.f.i) b.this);
             }
 
@@ -417,17 +417,17 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
                 }
             }
         };
-        this.W = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.i.b.d.b.18
-            @Override // com.tsf.shell.f.i.A
+        this.W = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.i.b.d.b.18
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void h() {
             }
 
-            @Override // com.tsf.shell.f.i.A
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void a() {
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0030  */
-            @Override // com.tsf.shell.f.i.A
+            @Override // com.tsf.shell.f.i.MultiSelectController
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
                 To view partially-correct add '--show-bad-code' argument
@@ -465,14 +465,14 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
                 throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.i.b.d.b.AnonymousClass18.a(com.tsf.shell.f.i.b.e.b):boolean");
             }
 
-            @Override // com.tsf.shell.f.i.A
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void b(com.tsf.shell.f.i.PageItem bVar) {
                 if (bVar.visible() && bVar.alpha() != 0.0f) {
                     b.this.aQ();
                 }
             }
 
-            @Override // com.tsf.shell.f.i.A
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void c(com.tsf.shell.f.i.PageItem bVar) {
                 super.c(bVar);
                 if (b.this.K == com.tsf.shell.f.i.b.d.b.a) {
@@ -515,8 +515,8 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         n(true);
         aY();
         bh();
-        m.a(this);
-        m.c(this);
+        ILassoSelectable.a(this);
+        ILassoSelectable.c(this);
         if (!B.contains(this)) {
             B.add(this);
         }
@@ -564,7 +564,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         bVarA.a(this.W);
     }
 
-    public com.tsf.shell.f.i.A aE() {
+    public com.tsf.shell.f.i.MultiSelectController aE() {
         return this.W;
     }
 
@@ -671,22 +671,22 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
 
     private void be() {
         if (this.t == null) {
-            this.t = new com.censivn.C3DEngine.b.f.k(m.c, m.d, 1, 1, false);
+            this.t = new com.censivn.C3DEngine.b.f.k(ILassoSelectable.c, ILassoSelectable.d, 1, 1, false);
         }
         if (!this.af) {
             if (this.u == null) {
-                this.u = com.censivn.C3DEngine.A.g().a(m.c, m.d, false);
-            } else if (this.u.width != m.c || this.u.height != m.d) {
+                this.u = com.censivn.C3DEngine.A.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
+            } else if (this.u.width != ILassoSelectable.c || this.u.height != ILassoSelectable.d) {
                 com.censivn.C3DEngine.A.g().a(this.u);
-                this.u = com.censivn.C3DEngine.A.g().a(m.c, m.d, false);
+                this.u = com.censivn.C3DEngine.A.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
             }
             this.t.textures().clear();
             this.t.textures().addElement(this.u);
         }
-        this.t.points().setPX(0, m.g, m.f, 0.0f);
-        this.t.points().setPX(1, m.e, m.f, 0.0f);
-        this.t.points().setPX(2, m.g, m.h, 0.0f);
-        this.t.points().setPX(3, m.e, m.h, 0.0f);
+        this.t.points().setPX(0, ILassoSelectable.g, ILassoSelectable.f, 0.0f);
+        this.t.points().setPX(1, ILassoSelectable.e, ILassoSelectable.f, 0.0f);
+        this.t.points().setPX(2, ILassoSelectable.g, ILassoSelectable.h, 0.0f);
+        this.t.points().setPX(3, ILassoSelectable.e, ILassoSelectable.h, 0.0f);
         this.t.updatePointsVBO();
         this.t.uvs().set(0, 1.0f, 0.0f);
         this.t.uvs().set(1, 0.0f, 0.0f);
@@ -798,7 +798,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, false);
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.t, false);
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, false);
-                m.a(this);
+                ILassoSelectable.a(this);
             }
         }
     }
@@ -814,7 +814,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, true);
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.t, true);
                 com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, true);
-                m.a(this);
+                ILassoSelectable.a(this);
             }
         }
     }
@@ -901,22 +901,22 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         return aH().alpha();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public int m() {
         return 1;
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public boolean e_() {
         return this.Y;
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public void b(boolean z) {
         this.Y = z;
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public boolean d() {
         return mouseEnabled();
     }
@@ -930,7 +930,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         this.o.i();
         boolean z = this.y;
         this.y = false;
-        m.b(this);
+        ILassoSelectable.b(this);
         this.y = z;
         aO();
         l.a(aN());
@@ -1253,7 +1253,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         int i5 = VEasing.Linear.easeNone;
         int i6 = 0;
         if (iAW > 0) {
-            m.b(this);
+            ILassoSelectable.b(this);
             int i7 = l.c().folder.sampleCount;
             com.tsf.shell.f.i.b.e.b bVar = null;
             int i8 = iAW - 1;
@@ -1437,8 +1437,8 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
             runnable.run();
         }
         if (!this.A && !this.af) {
-            m.a(this);
-            m.c(this);
+            ILassoSelectable.a(this);
+            ILassoSelectable.c(this);
         }
         this.V = null;
         mouseEnabled(true);
@@ -1615,7 +1615,7 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
         if (this.ad != null) {
             int size = this.ad.size();
             if (size > 0) {
-                m.b(this);
+                ILassoSelectable.b(this);
                 mouseEnabled(false);
             }
             for (int i = 0; i < size; i++) {
@@ -1774,8 +1774,8 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void a(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         super.a(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.b) {
             this.J.a((com.censivn.C3DEngine.b.f.i) fVar);
@@ -1795,32 +1795,32 @@ public class b extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void d(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         super.d(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.b) {
             this.J.b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void c(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         super.c(fVar);
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
         return (fVar instanceof com.tsf.shell.f.i.ShortcutItem) && ((com.tsf.shell.f.i.ShortcutItem) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public boolean b(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         return fVar instanceof com.tsf.shell.f.i.b.e.b;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void e(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         super.c(fVar);
         this.J.b((com.censivn.C3DEngine.b.f.i) fVar);
         com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) fVar;

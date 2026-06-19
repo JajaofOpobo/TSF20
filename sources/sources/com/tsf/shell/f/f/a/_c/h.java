@@ -1,70 +1,70 @@
 package com.tsf.shell.f.f.a._c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends com.censivn.C3DEngine.b.f.j implements com.tsf.shell.f.e.F {
+public class h extends com.censivn.C3DEngine.b.f.j implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
     private boolean a = true;
 
-    @Override // com.tsf.shell.f.e.F
-    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public int m() {
         return 0;
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public com.tsf.shell.f.e.F n() {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public com.tsf.shell.f.e.SelectionFrameLayoutItem n() {
         return null;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a() {
         return this.a;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean o() {
         return false;
     }
 
-    public void a(com.tsf.shell.f.e.F fVar) {
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    public void d(com.tsf.shell.f.e.F fVar) {
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public void c(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    public boolean b(com.tsf.shell.f.e.F fVar) {
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         return false;
     }
 
-    public void e(com.tsf.shell.f.e.F fVar) {
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public void f(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void f(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public boolean h(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean h(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public void g(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void g(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void p() {
     }
 
-    @Override // com.tsf.shell.f.e.F
-    public com.tsf.shell.f.e.F a(int i, int i2) {
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public com.tsf.shell.f.e.SelectionFrameLayoutItem a(int i, int i2) {
         return null;
     }
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class k extends i {
-    private static com.tsf.shell.f.e.k l;
+    private static com.tsf.shell.f.e.CircleDotNode l;
     private ArrayList<com.tsf.shell.f.f.a._c._a.b> g;
     private com.censivn.C3DEngine.b.f.j h;
     private float i;
@@ -79,7 +79,7 @@ public class k extends i {
         e().addChild(this.h);
         e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.i);
         if (aVarA.a()) {
-            l = new com.tsf.shell.f.e.k();
+            l = new com.tsf.shell.f.e.CircleDotNode();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a._c.k.5
                 @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                 public void a() {
@@ -87,7 +87,7 @@ public class k extends i {
                     k.l.a();
                 }
             });
-            l = new com.tsf.shell.f.e.k();
+            l = new com.tsf.shell.f.e.CircleDotNode();
             l.position().y = com.censivn.C3DEngine.b.b.A.a(54.0f);
             l.position().x = com.censivn.C3DEngine.b.b.A.a(70.0f);
             e().addChild(l);

@@ -7,15 +7,15 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.i.A;
+import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.g;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
-    private float A;
+public class B extends c implements com.tsf.shell.f.i.MultiSelectController.InterfaceC0113a {
+    private float MultiSelectController;
     private Runnable B;
     private com.tsf.shell.f.i.b.d.b H;
     private Runnable J;
@@ -48,8 +48,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private boolean I = false;
     private TextureElement t = new TextureElement(0, false);
     private B h = this;
-    private com.tsf.shell.f.i.A p = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.c.a.b.1
-        @Override // com.tsf.shell.f.i.A
+    private com.tsf.shell.f.i.MultiSelectController p = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.c.a.b.1
+        @Override // com.tsf.shell.f.i.MultiSelectController
         public void a(com.tsf.shell.f.i.PageItem bVar) {
             bVar.f(b.this.h);
         }
@@ -68,7 +68,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         A();
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a() {
         return this.r.e() && this.r.r();
     }
@@ -551,8 +551,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private void d(com.tsf.shell.f.i.PageItem bVar) {
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
         int iA;
         if ((fVar instanceof com.tsf.shell.f.i.b.e.b) || (fVar instanceof com.tsf.shell.f.i.b.d.b)) {
             if (!this.G && children().size() != 0 && (iA = a(f, f2, this.C)) != -1 && iA != -2 && (getChildAt(iA) instanceof com.tsf.shell.f.i.b.d.b)) {
@@ -562,7 +562,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         return true;
     }
 
-    private void i(com.tsf.shell.f.e.F fVar) {
+    private void i(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         this.H.d(fVar);
         this.H = null;
         c((com.tsf.shell.f.i.PageItem) fVar);
@@ -580,8 +580,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public void a(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         this.G = true;
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         c(bVar);
@@ -596,8 +596,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public void c(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         int size;
         int iA = a((i) fVar, this.C);
         if (iA == -1) {
@@ -626,8 +626,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         }
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public void d(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         this.G = false;
         if (this.H != null) {
             i(fVar);
@@ -636,13 +636,13 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         removeChild(this.o);
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public boolean b(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         return fVar instanceof com.tsf.shell.f.i.ShortcutItem;
     }
 
-    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
-    public void e(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         boolean zB;
         this.G = false;
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;

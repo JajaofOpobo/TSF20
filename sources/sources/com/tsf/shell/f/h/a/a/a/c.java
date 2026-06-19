@@ -20,7 +20,7 @@ public class c extends j implements a.InterfaceC0098a {
     private float d;
     private com.tsf.shell.f.h.a.a.b f;
     private m g;
-    private com.tsf.shell.f.e.D<d> h;
+    private com.tsf.shell.f.e.ObjectPool<d> h;
     private a j;
     private e l;
     private TextureElement k = new TextureElement(0, false);
@@ -45,8 +45,8 @@ public class c extends j implements a.InterfaceC0098a {
         addChild(this.g);
         this.j = new a(this);
         addChild(this.j);
-        this.h = new com.tsf.shell.f.e.D<d>() { // from class: com.tsf.shell.f.h.a.a.a.c.2
-            @Override // com.tsf.shell.f.e.D
+        this.h = new com.tsf.shell.f.e.ObjectPool<d>() { // from class: com.tsf.shell.f.h.a.a.a.c.2
+            @Override // com.tsf.shell.f.e.ObjectPool
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public d b() {
                 return new d();

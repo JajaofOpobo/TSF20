@@ -8,9 +8,9 @@ import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 
-import com.tsf.shell.f.e.H;
-import com.tsf.shell.f.e.m;
-import com.tsf.shell.f.e.n;
+import com.tsf.shell.f.e.LassoSelectionHandler;
+import com.tsf.shell.f.e.ILassoSelectable;
+import com.tsf.shell.f.e.LassoContextMenu;
 import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
@@ -199,7 +199,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         return new n(this.a, this);
     }
 
-    @Override // com.tsf.shell.f.e.n.a
+    @Override // com.tsf.shell.f.e.LassoContextMenu.a
     public void a(int i) {
         int i2 = 1;
         ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList<>();

@@ -3,7 +3,7 @@ package com.tsf.shell.manager.bind;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i.c.ItemGroupBase;
 import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.manager.r.c.a.WidgetInstantiator;
 import java.util.ArrayList;

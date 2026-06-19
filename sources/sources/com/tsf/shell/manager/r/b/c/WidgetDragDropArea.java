@@ -12,11 +12,11 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
     }
 
     private com.censivn.C3DEngine.b.h.b.h a;
-    private ArrayList<com.tsf.shell.f.i.c.e> b;
+    private ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> b;
     private float e;
     private float f;
 
-    public WidgetDragDropArea(com.tsf.shell.f.e._g.d dVar, final com.tsf.shell.f.e._g.a.c cVar) {
+    public WidgetDragDropArea(com.tsf.shell.f.e._g.MenuOverlay dVar, final com.tsf.shell.f.e._g.a.c cVar) {
         super(dVar);
         this.b = new ArrayList<>();
         this.e = 0.0f;
@@ -36,7 +36,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
                 if (hVar2.b() != WidgetDragDropArea.this.e || hVar2.c() != WidgetDragDropArea.this.f) {
                     hVar2.a(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f);
                 }
-                hVar2.a((com.tsf.shell.f.i.c.e) WidgetDragDropArea.this.b.get(i), cVar.isAnimation());
+                hVar2.a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetDragDropArea.this.b.get(i), cVar.isAnimation());
                 return hVar;
             }
 
@@ -49,9 +49,9 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         this.a.a(new WidgetDragHandler(dVar) { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.2
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f.i.c.e eVar = (com.tsf.shell.f.i.c.e) WidgetDragDropArea.this.b.get(i);
-                if (eVar instanceof com.tsf.shell.f.i.c.g) {
-                    com.tsf.shell.f.i.c.g gVar = (com.tsf.shell.f.i.c.g) eVar;
+                com.tsf.shell.f.i.c.ItemLabelProvider eVar = (com.tsf.shell.f.i.c.ItemLabelProvider) WidgetDragDropArea.this.b.get(i);
+                if (eVar instanceof com.tsf.shell.f.i.c.ItemGroupBase) {
+                    com.tsf.shell.f.i.c.ItemGroupBase gVar = (com.tsf.shell.f.i.c.ItemGroupBase) eVar;
                     if (!gVar.j()) {
                         gVar.k();
                         return;
@@ -64,12 +64,12 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler
-            public com.tsf.shell.f.i.c.e a(int i) {
-                return (com.tsf.shell.f.i.c.e) WidgetDragDropArea.this.b.get(i);
+            public com.tsf.shell.f.i.c.ItemLabelProvider a(int i) {
+                return (com.tsf.shell.f.i.c.ItemLabelProvider) WidgetDragDropArea.this.b.get(i);
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler
-            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
                 return WidgetDragDropArea.this.a(eVar, f, f2);
             }
         });
@@ -86,9 +86,9 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase
     public void e() {
-        Iterator<com.tsf.shell.f.i.c.e> it = this.b.iterator();
+        Iterator<com.tsf.shell.f.i.c.ItemLabelProvider> it = this.b.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i.c.g gVar = (com.tsf.shell.f.i.c.g) it.next();
+            com.tsf.shell.f.i.c.ItemGroupBase gVar = (com.tsf.shell.f.i.c.ItemGroupBase) it.next();
             gVar.i();
             gVar.g();
         }
@@ -102,10 +102,10 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         this.a.a(f, f2, f3, f4);
     }
 
-    public void a(com.tsf.shell.f.i.c.e eVar) {
+    public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
     }
 
-    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
         return true;
     }
 
@@ -113,17 +113,17 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         this.a.d();
     }
 
-    public void b(com.tsf.shell.f.i.c.e eVar) {
+    public void b(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.b.add(eVar);
         this.a.d();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.c.e> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> arrayList) {
         this.b.addAll(arrayList);
         this.a.d();
     }
 
-    public void c(com.tsf.shell.f.i.c.e eVar) {
+    public void c(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.b.remove(eVar);
         this.a.d();
     }

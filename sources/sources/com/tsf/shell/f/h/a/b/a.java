@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
-import com.tsf.shell.f.e.D;
+import com.tsf.shell.f.e.ObjectPool;
 import com.tsf.shell.f.h.a.c;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.f.i.b.e.h;
@@ -26,7 +26,7 @@ public class a implements c.a {
         }
     };
     private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.a.2
-        @Override // com.tsf.shell.f.e.D
+        @Override // com.tsf.shell.f.e.ObjectPool
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public C0112a b() {
             C0112a c0112a = a.this.new C0112a();

@@ -5,7 +5,7 @@ import android.content.Context;
 import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i.c.ItemGroupBase;
 import com.tsf.shell.manager.p.TipsDialogManager;
 import com.tsf.shell.manager.r.c.WidgetRegistryManager;
 import dalvik.system.PathClassLoader;
@@ -47,7 +47,7 @@ public class WidgetInstantiator {
         if (gVar != null && gVar.a.equals("com.tsf.shell.widget.music")) {
             c.a(12, 1000);
         }
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
         if (gVar.e) {
             if (com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.a(gVar, false)) {
                 gVar.a(bVar);

@@ -213,7 +213,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         }
     }
 
-    public TextureElement a(com.tsf.shell.f.e._g.d dVar) {
+    public TextureElement a(com.tsf.shell.f.e._g.MenuOverlay dVar) {
         b = 3;
         com.tsf.shell.manager.app.LauncherAppInfo.a(this);
         if (this.g.a()) {
@@ -223,7 +223,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         return this.k.a;
     }
 
-    public void b(com.tsf.shell.f.e._g.d dVar) {
+    public void b(com.tsf.shell.f.e._g.MenuOverlay dVar) {
         this.l = false;
         b = 0;
         com.tsf.shell.manager.app.LauncherAppInfo.b(this);

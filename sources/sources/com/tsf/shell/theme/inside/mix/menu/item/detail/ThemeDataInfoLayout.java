@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.f.e.D;
+import com.tsf.shell.f.e.ObjectPool;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.parser.PreviewLoader;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
     private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.A.a(280.0f);
     private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
     private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
-        @Override // com.tsf.shell.f.e.D
+        @Override // com.tsf.shell.f.e.ObjectPool
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public a b() {
             return ThemeDataInfoLayout.this.new a();

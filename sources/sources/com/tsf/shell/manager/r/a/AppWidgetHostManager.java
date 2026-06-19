@@ -16,9 +16,9 @@ import com.tsf.shell.Home;
 import com.tsf.shell.ShellProvider;
 import com.tsf.shell.e.TSFAppWidgetHostView;
 import com.tsf.shell.e.CellLayout;
-import com.tsf.shell.f.e.t;
+import com.tsf.shell.f.e.WidgetFreeResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
-import com.tsf.shell.f.i.c.f;
+import com.tsf.shell.f.i.c.AppPreviewLabel;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -33,8 +33,8 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
     private int i;
     private com.tsf.shell.e.WidgetContainer j;
     private Context k = com.censivn.C3DEngine.A.d();
-    private t.b l = new t.b() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.1
-        @Override // com.tsf.shell.f.e.t.b
+    private WidgetFreeResizeController.b l = new WidgetFreeResizeController.b() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.1
+        @Override // com.tsf.shell.f.e.WidgetFreeResizeController.b
         public void a() {
             com.tsf.shell.manager.app.WidgetManager.a.templeteShow();
         }
@@ -211,7 +211,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
                 public void run() {
                     gVarN.a(aVar);
                     aVar.q();
-                    t.a(aVar, AppWidgetHostManager.this.l);
+                    WidgetFreeResizeController.a(aVar, AppWidgetHostManager.this.l);
                 }
             });
         }

@@ -3,7 +3,7 @@ package com.tsf.shell.f.i.b.a;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.shell.f.e.h.PhotoPicker;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i.c.ItemGroupBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends com.tsf.shell.f.i.PageItem implements a.InterfaceC0098a {

@@ -9,7 +9,7 @@ import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends com.tsf.shell.f.e._f.b {
+public class g extends com.tsf.shell.f.e._f.EditTarget {
     private static boolean g = false;
     private static boolean h = false;
     private static float i = 5.0f;
@@ -35,12 +35,12 @@ public class g extends com.tsf.shell.f.e._f.b {
         p();
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e._f.EditTarget
     public com.censivn.C3DEngine.b.f.i d() {
         return com.tsf.shell.manager.app.TaskScheduler.a();
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e._f.EditTarget
     public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (cVar instanceof com.tsf.shell.f.i._b.e.b) {
             cVar.mouseEnabled(false);
@@ -298,7 +298,7 @@ public class g extends com.tsf.shell.f.e._f.b {
         return this.o - WorkspaceShortcutItem.l.x;
     }
 
-    @Override // com.tsf.shell.f.e._f.b
+    @Override // com.tsf.shell.f.e._f.EditTarget
     public float q() {
         return m();
     }
@@ -398,7 +398,7 @@ public class g extends com.tsf.shell.f.e._f.b {
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
 
-    @Override // com.tsf.shell.f.e._f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.e._f.EditTarget, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void dispatchDraw() {
         if (this.e) {
             if (visible()) {

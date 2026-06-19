@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
 
 import com.tsf.shell.f.e._g.a.d;
-import com.tsf.shell.f.e.l;
+import com.tsf.shell.f.e.ToggleRowItem;
 import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.manager.o.ThemeColorConstants;
 import com.tsf.shell.theme.inside.ThemeListsManager;
@@ -73,7 +73,7 @@ public class ThemeInstalledDetailMenu extends d {
         this.mShortcut.scale().setAll(0.43f, 0.43f, 1.0f);
         this.mContainer = new j();
         this.mApplyButton = new l(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.1
-            @Override // com.tsf.shell.f.e.l
+            @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
                 ThemeManager.getInstance().setTheme(ThemeInstalledDetailMenu.this.mThemeInfo.packagename);
             }

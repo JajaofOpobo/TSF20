@@ -8,8 +8,8 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.e.F;
-import com.tsf.shell.f.i.A;
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.g;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     private SideMenuIndicator f;
     private com.tsf.shell.f.i.b.e.b h;
     private b.a i;
-    private com.tsf.shell.f.i.A j;
+    private com.tsf.shell.f.i.MultiSelectController j;
     private float m;
     private Runnable r;
     private boolean g = false;
@@ -134,8 +134,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         this.o = this.o >= 0.0f ? this.o : 0.4f;
         this.k = com.tsf.shell.manager.b.ConfigManager.i() == 0 ? 0 : 1;
         com.tsf.shell.manager.app.ObserverManager.a(this);
-        this.j = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.manager.m.SideMenuManager.3
-            @Override // com.tsf.shell.f.i.A
+        this.j = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.manager.m.SideMenuManager.3
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void a(com.tsf.shell.f.i.PageItem bVar) {
             }
         };
@@ -156,12 +156,12 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         jVar.addChild(this.c);
         this.f = new d(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.5
             /* JADX WARN: Multi-variable type inference failed */
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean a(f fVar, float f, float f2) {
                 return b.this.b((i) fVar);
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(f fVar) {
                 if (!b.this.g) {
                     com.tsf.shell.manager.app.StateHub.b().c();
@@ -172,7 +172,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 }
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean b(f fVar) {
                 return fVar instanceof com.tsf.shell.f.i.b.e.b;
             }

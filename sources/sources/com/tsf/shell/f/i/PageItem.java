@@ -8,8 +8,8 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.shell.f.e.F;
-import com.tsf.shell.f.e.s;
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+import com.tsf.shell.f.e.WidgetMatchResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.f.i.b.b.b;
@@ -21,7 +21,7 @@ public class PageItem extends j implements F, b {
     protected com.censivn.C3DEngine.b.f.b.a _e;
     private F j;
     private int m;
-    private com.tsf.shell.f.i.A q;
+    private com.tsf.shell.f.i.MultiSelectController q;
     private boolean r;
     private boolean b = true;
     private boolean f = false;
@@ -53,7 +53,7 @@ public class PageItem extends j implements F, b {
         }
     }
 
-    public String r() {
+    public class String 
         return "";
     }
 
@@ -153,11 +153,11 @@ public class PageItem extends j implements F, b {
     public void a(float f, float f2) {
     }
 
-    public com.tsf.shell.f.i.A A() {
+    public com.tsf.shell.f.i.MultiSelectController A() {
         return this.q;
     }
 
-    public void a(com.tsf.shell.f.i.A aVar) {
+    public void a(com.tsf.shell.f.i.MultiSelectController aVar) {
         this.q = aVar;
     }
 
@@ -169,7 +169,7 @@ public class PageItem extends j implements F, b {
     public void onKillFocus() {
         super.onKillFocus();
         if (this.r) {
-            com.tsf.shell.f.e.A.b();
+            com.tsf.shell.f.e.AlignmentOverlay.b();
         }
     }
 
@@ -196,9 +196,9 @@ public class PageItem extends j implements F, b {
             @Override // java.lang.Runnable
             public void run() {
                 if (B.this._e == null) {
-                    B.this._e = com.tsf.shell.f.e.B.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    B.this._e = com.tsf.shell.f.e.WidgetResizeResources.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
                     B.this._e.useVBO(false);
-                    B.this._e.textures().addElement(com.tsf.shell.f.e.B.h);
+                    B.this._e.textures().addElement(com.tsf.shell.f.e.WidgetResizeResources.h);
                     B.this._e.position().y = (B.this.minY() + B.this.maxY()) / 2.0f;
                     B.this.addChild(B.this._e);
                 }
@@ -256,12 +256,12 @@ public class PageItem extends j implements F, b {
     }
 
     public void H() {
-        com.tsf.shell.f.e.A.a(this);
+        com.tsf.shell.f.e.AlignmentOverlay.a(this);
     }
 
     public void I() {
         if (this.r) {
-            com.tsf.shell.f.e.A.b();
+            com.tsf.shell.f.e.AlignmentOverlay.b();
         }
     }
 
@@ -277,7 +277,7 @@ public class PageItem extends j implements F, b {
         this.a = itemInfo;
     }
 
-    public ItemInfo K() {
+    public class ItemInfo 
         return this.a;
     }
 
@@ -368,16 +368,16 @@ public class PageItem extends j implements F, b {
 
     public void Z() {
         if (T()) {
-            com.tsf.shell.f.e.s.a(this);
+            com.tsf.shell.f.e.WidgetMatchResizeController.a(this);
         }
     }
 
     public void aa() {
         if (T()) {
-            com.tsf.shell.f.e.s.a();
+            com.tsf.shell.f.e.WidgetMatchResizeController.a();
         }
         if (this.r) {
-            com.tsf.shell.f.e.A.b();
+            com.tsf.shell.f.e.AlignmentOverlay.b();
         }
     }
 
@@ -393,7 +393,7 @@ public class PageItem extends j implements F, b {
 
     public void ab() {
         if (T()) {
-            com.tsf.shell.f.e.s.a();
+            com.tsf.shell.f.e.WidgetMatchResizeController.a();
         }
     }
 
@@ -486,7 +486,7 @@ public class PageItem extends j implements F, b {
         this.h = z;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a() {
         return this.h;
     }
@@ -495,48 +495,48 @@ public class PageItem extends j implements F, b {
         this.i = z;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean o() {
         return this.i;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public int m() {
         return 0;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public F n() {
         return this.j;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a(F fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void c(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void e(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean b(F fVar) {
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void d(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void a(F fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void f(F fVar) {
         if (this.j != fVar) {
             p();
@@ -546,7 +546,7 @@ public class PageItem extends j implements F, b {
         this.j.c(this);
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean h(F fVar) {
         if (fVar == null) {
             return false;
@@ -554,7 +554,7 @@ public class PageItem extends j implements F, b {
         return fVar.b(this);
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void g(F fVar) {
         f(fVar);
         fVar.e(this);
@@ -564,7 +564,7 @@ public class PageItem extends j implements F, b {
     public void af() {
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void p() {
         if (this.j != null) {
             this.j.d(this);
@@ -573,7 +573,7 @@ public class PageItem extends j implements F, b {
         }
     }
 
-    @Override // com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public F a(int i, int i2) {
         return a(i, i2, true);
     }

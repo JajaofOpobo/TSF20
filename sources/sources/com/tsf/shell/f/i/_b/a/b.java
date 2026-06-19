@@ -2,8 +2,8 @@ package com.tsf.shell.f.i._b.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.f.e._h.a;
-import com.tsf.shell.f.i._c.g;
+import com.tsf.shell.f.e._h.PhotoSelectorHelper;
+import com.tsf.shell.f.i._c.WidgetGroupBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends com.tsf.shell.f.i.PageItem implements a.InterfaceC0098a {
@@ -30,7 +30,7 @@ public class b extends com.tsf.shell.f.i.PageItem implements a.InterfaceC0098a {
 
             @Override // com.tsf.shell.f.i._b.a.a
             public void e() {
-                com.tsf.shell.f.e._h.a.a(b.this, 300, 300);
+                com.tsf.shell.f.e._h.PhotoSelectorHelper.a(b.this, 300, 300);
             }
         };
         setAABBPX(com.censivn.C3DEngine.b.b.A.b * (-180.0f), com.censivn.C3DEngine.b.b.A.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.A.b * 180.0f, com.censivn.C3DEngine.b.b.A.b * 100.0f, 0.0f);
@@ -97,7 +97,7 @@ public class b extends com.tsf.shell.f.i.PageItem implements a.InterfaceC0098a {
         super.g();
     }
 
-    @Override // com.tsf.shell.f.e._h.a.InterfaceC0098a
+    @Override // com.tsf.shell.f.e._h.PhotoSelectorHelper.InterfaceC0098a
     public void a(Bitmap bitmap) {
         K().onUpdatePhoto(bitmap, null);
         this.g.a(K().getPhoto());

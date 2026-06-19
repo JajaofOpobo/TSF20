@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.mix.menu;
 
 import com.censivn.C3DEngine.b.b.A;
 import com.tsf.shell.f.e._g.a.b;
-import com.tsf.shell.f.e._g.d;
+import com.tsf.shell.f.e._g.MenuOverlay;
 import com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu;
 import com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu;
 import com.tsf.shell.theme.inside.mix.menu.item.ThemeMixMenu;
@@ -22,11 +22,11 @@ public class ThemeSettingMenu extends d {
         setMenuItems(arrayList);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onShow() {
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onHide() {
     }
 

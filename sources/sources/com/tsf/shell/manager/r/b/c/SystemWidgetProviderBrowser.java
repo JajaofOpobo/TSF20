@@ -30,7 +30,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
     private ArrayList<a> h;
     private com.censivn.C3DEngine.b.h.c.a i;
 
-    public SystemWidgetProviderBrowser(com.tsf.shell.f.e._g.d dVar, d dVar2) {
+    public SystemWidgetProviderBrowser(com.tsf.shell.f.e._g.MenuOverlay dVar, d dVar2) {
         super(dVar);
         this.g = false;
         this.h = new ArrayList<>();

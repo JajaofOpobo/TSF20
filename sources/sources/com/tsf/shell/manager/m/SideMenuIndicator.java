@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.f.e.F;
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SideMenuIndicator extends com.tsf.shell.f.e.e.d {
@@ -64,17 +64,17 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.d {
         calAABB();
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean b(F fVar) {
         return b(fVar);
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a(F fVar, float f, float f2) {
         return a(fVar, f, f2);
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void a(F fVar) {
         a(fVar);
     }

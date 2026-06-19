@@ -6,9 +6,9 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.e.CellLayout;
-import com.tsf.shell.f.e.t;
+import com.tsf.shell.f.e.WidgetFreeResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
-import com.tsf.shell.f.i.a.c;
+import com.tsf.shell.f.i.a.PageItemTouchHandler;
 import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.manager.bind.ShellModel;
 
@@ -34,7 +34,7 @@ public class a extends B {
             @Override // java.lang.Runnable
             public void run() {
                 a.this.n = true;
-                t.a();
+                WidgetFreeResizeController.a();
             }
         };
         this.i = new Object();
@@ -85,7 +85,7 @@ public class a extends B {
     @Override // com.tsf.shell.f.i.PageItem
     public boolean ac() {
         boolean z;
-        t.a();
+        WidgetFreeResizeController.a();
         ItemInfo itemInfoK = K();
         d.b bVar = (d.b) this.g.getLayoutParams();
         if (com.censivn.C3DEngine.b.b.A.O) {
@@ -214,7 +214,7 @@ public class a extends B {
         com.censivn.C3DEngine.b.g.c.a(this.b);
         com.censivn.C3DEngine.b.g.c.a(this.b, 500, dVar);
         setAnimationObjectState(true);
-        t.a(this);
+        WidgetFreeResizeController.a(this);
     }
 
     @Override // com.tsf.shell.f.i.PageItem
@@ -244,7 +244,7 @@ public class a extends B {
     }
 
     @Override // com.tsf.shell.f.i.PageItem
-    public void a(com.tsf.shell.f.i.A aVar) {
+    public void a(com.tsf.shell.f.i.MultiSelectController aVar) {
         super.a(aVar);
         final g gVarZ = z();
         if (gVarZ != null && K().screen != gVarZ.t()) {
@@ -297,7 +297,7 @@ public class a extends B {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.7
             @Override // java.lang.Runnable
             public void run() {
-                t.a();
+                WidgetFreeResizeController.a();
             }
         });
     }

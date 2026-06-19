@@ -114,8 +114,8 @@ public class a extends j {
             this.a = i;
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
-        public void a(com.tsf.shell.f.e.F fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.SelectionFrameLayoutItem
+        public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             w.a();
             a.this.c.b = fVar;
             a.this.c.c = this.a;
@@ -123,20 +123,20 @@ public class a extends j {
             a.this.d();
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
-        public boolean b(com.tsf.shell.f.e.F fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.SelectionFrameLayoutItem
+        public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             return false;
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
-        public void e(com.tsf.shell.f.e.F fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.SelectionFrameLayoutItem
+        public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             com.censivn.C3DEngine.A.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }
 
-        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
-        public void d(com.tsf.shell.f.e.F fVar) {
+        @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.SelectionFrameLayoutItem
+        public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             com.censivn.C3DEngine.A.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();

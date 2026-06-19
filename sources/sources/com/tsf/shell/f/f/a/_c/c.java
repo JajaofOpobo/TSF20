@@ -14,7 +14,7 @@ public class c extends i {
     private com.tsf.shell.f.f.a._c._a h;
     private a i;
     private com.tsf.shell.f.i.PageItem j;
-    private com.tsf.shell.f.e._e.a k;
+    private com.tsf.shell.f.e._e.SelectionIndicator k;
     private com.tsf.shell.f.i.ShortcutItem l;
     private com.tsf.shell.f.i.PageItem m;
     private com.tsf.shell.f.i.PageItem n;
@@ -87,8 +87,8 @@ public class c extends i {
         this.z = new Number3d();
         this.g = new b(this, fVar, hVar);
         this.h = new com.tsf.shell.f.f.a._c._a(this, fVar, hVar);
-        this.k = new com.tsf.shell.f.e._e.a() { // from class: com.tsf.shell.f.f.a._c.c.1
-            @Override // com.tsf.shell.f.e._e.a
+        this.k = new com.tsf.shell.f.e._e.SelectionIndicator() { // from class: com.tsf.shell.f.f.a._c.c.1
+            @Override // com.tsf.shell.f.e._e.SelectionIndicator
             public void a(int i, Object obj) {
                 hVar.au();
                 if (i == 0) {
@@ -99,7 +99,7 @@ public class c extends i {
                 a(800);
             }
 
-            @Override // com.tsf.shell.f.e._e.a
+            @Override // com.tsf.shell.f.e._e.SelectionIndicator
             public float a() {
                 return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.FolderPage.F);
             }
@@ -296,7 +296,7 @@ public class c extends i {
     }
 
     public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
-        ((com.tsf.shell.f.i._a.c) cVar.getMouseEventListener()).a(this.q, this.r);
+        ((com.tsf.shell.f.i._a.WidgetItemTouchHandler) cVar.getMouseEventListener()).a(this.q, this.r);
     }
 
     public void a(float f, float f2) {
@@ -359,7 +359,7 @@ public class c extends i {
         boolean z = jVar == null;
         if (cVar.n() != null && cVar.o()) {
             float[] fArrA = x.a(motionEvent);
-            com.tsf.shell.f.e.F fVarA = cVar.a((int) fArrA[0], (int) fArrA[1], false);
+            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) fArrA[0], (int) fArrA[1], false);
             if (fVarA != null && (fVarA instanceof c.b)) {
                 if (cVar.h(fVarA)) {
                     cVar.g(fVarA);
@@ -561,7 +561,7 @@ public class c extends i {
                                 return;
                             }
                             float[] fArrB = x.b(motionEvent2.getX(), motionEvent2.getY());
-                            com.tsf.shell.f.e.F fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
+                            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
                             if (fVarA != null) {
                                 cVar.f(fVarA);
                                 c.this.a((com.tsf.shell.f.i.PageItem) cVar);

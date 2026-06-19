@@ -12,7 +12,7 @@ import java.util.Iterator;
 public class d extends i {
     private com.censivn.C3DEngine.b.h.b.h g;
     private com.tsf.shell.f.f.a.b.l h;
-    private com.tsf.shell.f.e._g.b i;
+    private com.tsf.shell.f.e._g.MenuContainer i;
     private ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> j;
 
     public d(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
@@ -130,7 +130,7 @@ public class d extends i {
     public void a(ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList) {
         if (arrayList != null) {
             this.j = arrayList;
-            this.i = new com.tsf.shell.f.e._g.b();
+            this.i = new com.tsf.shell.f.e._g.MenuContainer();
             this.i.position().y = com.censivn.C3DEngine.b.b.A.a(160.0f);
             Iterator<com.tsf.shell.f.e._g.a.a.C0095a> it = arrayList.iterator();
             while (it.hasNext()) {

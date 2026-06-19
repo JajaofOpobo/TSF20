@@ -6,7 +6,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetMenuPanel extends com.tsf.shell.f.e._g.d {
+public class WidgetMenuPanel extends com.tsf.shell.f.e._g.MenuOverlay {
     public com.tsf.shell.manager.r.b.a.AppListPanel a;
     public WidgetPanelToggle b;
     public WidgetDecorationPanel c;
@@ -45,7 +45,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.d {
         setMenuItems(arrayList);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void show(int i) {
         this.f = false;
         this.e.disable();
@@ -54,7 +54,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.d {
         super.show(i);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void show() {
         this.f = false;
         this.e.disable();
@@ -76,7 +76,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.d {
         return this.f;
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onHide() {
         if (this.g != null) {
             this.g.a();

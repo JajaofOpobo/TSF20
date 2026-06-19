@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i.c.ItemGroupBase;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
@@ -74,12 +74,12 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
         this.e = new j();
         this.d = new com.tsf.shell.manager.r.b.c.WidgetDragDropArea(aVar, this) { // from class: com.tsf.shell.manager.r.b.b.5
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
-            public void a(com.tsf.shell.f.i.c.e eVar) {
+            public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
                 WidgetDecorationPanel.this.a(eVar, 0.0f, aVar.getScreenFreeSpaceCenter());
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
-            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
                 return WidgetDecorationPanel.this.a(eVar, f, f2);
             }
         };
@@ -113,7 +113,7 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
         this.d.e();
     }
 
-    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
         com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((g) eVar, f, f2, new a.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.b.6
             @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
             public void a(ItemInfo itemInfo) {
@@ -133,15 +133,15 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
         return true;
     }
 
-    public void a(com.tsf.shell.f.i.c.e eVar) {
+    public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.d.b(eVar);
     }
 
-    public void b(com.tsf.shell.f.i.c.e eVar) {
+    public void b(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.d.c(eVar);
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.c.e> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> arrayList) {
         this.d.a(arrayList);
     }
 }

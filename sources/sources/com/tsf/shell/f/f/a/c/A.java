@@ -10,7 +10,7 @@ public class A extends c.a {
     private c c;
     private g d;
     private com.tsf.shell.f.i.ShortcutItem e;
-    private com.tsf.shell.f.i.a.c f;
+    private com.tsf.shell.f.i.a.PageItemTouchHandler f;
     private com.censivn.C3DEngine.b.d.a g;
 
     public A(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
@@ -42,22 +42,22 @@ public class A extends c.a {
                 }
             }
 
-            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.F
-            public void a(com.tsf.shell.f.e.F fVar) {
+            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 a.this.a((com.tsf.shell.f.i.ShortcutItem) fVar);
             }
 
-            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.F
-            public boolean b(com.tsf.shell.f.e.F fVar) {
+            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.F
-            public void e(com.tsf.shell.f.e.F fVar) {
+            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.F
-            public void d(com.tsf.shell.f.e.F fVar) {
+            @Override // com.tsf.shell.f.f.a.c.h, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             }
         };
         this.d.position().y = (com.tsf.shell.f.f.a.FolderPage.F - com.tsf.shell.f.f.a.f.a) / 2.0f;
@@ -78,7 +78,7 @@ public class A extends c.a {
             cVar2 = null;
         }
         this.c.b(cVar2);
-        this.f = (com.tsf.shell.f.i.a.c) this.e.getMouseEventListener();
+        this.f = (com.tsf.shell.f.i.a.PageItemTouchHandler) this.e.getMouseEventListener();
         this.e.ah();
         this.f.c(null);
         this.c.a(this.e);

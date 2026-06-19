@@ -35,7 +35,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private Runnable M;
     public com.tsf.shell.f.f.c.a d;
     private n f;
-    private com.tsf.shell.f.e.j g;
+    private com.tsf.shell.f.e.PageIndicatorStrip g;
     private com.censivn.C3DEngine.b.f.j h;
     private com.censivn.C3DEngine.b.f.A i;
     private com.tsf.shell.f.f.a.FolderPage j;
@@ -81,8 +81,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 n.this.g.b(gVar.r() - 1);
             }
         });
-        com.tsf.shell.f.i.a.b.d = this;
-        com.tsf.shell.f.i.a.c.a = this;
+        com.tsf.shell.f.i.a.WallpaperDragHandler.d = this;
+        com.tsf.shell.f.i.a.PageItemTouchHandler.a = this;
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = this;
         aa();
@@ -157,8 +157,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public com.censivn.C3DEngine.b.f.j f() {
         j.a();
         this.d = new com.tsf.shell.f.f.c.a();
-        this.g = new com.tsf.shell.f.e.j(true) { // from class: com.tsf.shell.f.f.n.10
-            @Override // com.tsf.shell.f.e.j
+        this.g = new com.tsf.shell.f.e.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.n.10
+            @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
                 com.tsf.shell.manager.app.WidgetPanelController.a.k();
             }
@@ -221,7 +221,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.B = new com.censivn.C3DEngine.b.f.j();
         this.v = new com.tsf.shell.manager.f.ScreenFadeController(this.B);
         this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.A.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
-        this.y = new com.tsf.shell.f.i.a.b(this.B);
+        this.y = new com.tsf.shell.f.i.a.WallpaperDragHandler(this.B);
         this.z = new com.censivn.C3DEngine.b.d.a(this.B);
         this.B.setMouseEventListener(this.y);
         this.B.mouseEnabled(false);
@@ -467,8 +467,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             A aVar = new A(iVarN);
             aVar.a(gVar);
             gVar.b(aVar);
-            gVar.a(new com.tsf.shell.f.i.a.b(iVarN) { // from class: com.tsf.shell.f.f.n.2
-                @Override // com.tsf.shell.f.i.a.b, com.censivn.C3DEngine.b.d.a
+            gVar.a(new com.tsf.shell.f.i.a.WallpaperDragHandler(iVarN) { // from class: com.tsf.shell.f.f.n.2
+                @Override // com.tsf.shell.f.i.a.WallpaperDragHandler, com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent) {
                     if (n.this.t == 1 || n.this.t == 3) {
                         n.this.a(gVar, true, true);
@@ -503,7 +503,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return -(i * c);
     }
 
-    public com.tsf.shell.f.e.j h() {
+    public com.tsf.shell.f.e.PageIndicatorStrip h() {
         return this.g;
     }
 
@@ -535,7 +535,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void b(com.tsf.shell.f.i.PageItem bVar) {
-        ((com.tsf.shell.f.i.a.c) bVar.getMouseEventListener()).a(true);
+        ((com.tsf.shell.f.i.a.PageItemTouchHandler) bVar.getMouseEventListener()).a(true);
         bVar.f_();
         w();
     }
@@ -901,7 +901,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         };
         if (this.J != null) {
-            com.tsf.shell.f.i.a.c cVar = (com.tsf.shell.f.i.a.c) this.J.getMouseEventListener();
+            com.tsf.shell.f.i.a.PageItemTouchHandler cVar = (com.tsf.shell.f.i.a.PageItemTouchHandler) this.J.getMouseEventListener();
             cVar.a(false);
             if (!cVar.a() && (gVarN = com.tsf.shell.manager.app.StateHub.n()) != null) {
                 this.J.removeFromParent();
@@ -1646,7 +1646,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             if (this.m && this.l) {
                 if (this.i) {
-                    com.tsf.shell.f.e._g.d.onTempleteHide();
+                    com.tsf.shell.f.e._g.MenuOverlay.onTempleteHide();
                     com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.n.c.5
                         @Override // java.lang.Runnable
                         public void run() {
@@ -1675,7 +1675,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             if (this.m && this.l) {
                 if (this.i) {
-                    com.tsf.shell.f.e._g.d.onTempleteHide();
+                    com.tsf.shell.f.e._g.MenuOverlay.onTempleteHide();
                     com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.n.c.6
                         @Override // java.lang.Runnable
                         public void run() {
@@ -1696,7 +1696,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         public void d(MotionEvent motionEvent) {
             if (this.m) {
-                com.tsf.shell.f.e._g.d.onTempleteShow();
+                com.tsf.shell.f.e._g.MenuOverlay.onTempleteShow();
                 this.m = false;
                 this.i = true;
                 this.j = false;

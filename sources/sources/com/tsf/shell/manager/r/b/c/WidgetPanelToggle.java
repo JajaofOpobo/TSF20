@@ -59,12 +59,12 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
         this.f = new j();
         this.c = new WidgetDragDropArea(aVar, this) { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.3
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
-            public void a(com.tsf.shell.f.i.c.e eVar) {
+            public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
                 WidgetPanelToggle.this.a(eVar, 0.0f, aVar.getScreenFreeSpaceCenter());
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
-            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
                 return WidgetPanelToggle.this.a(eVar, f, f2);
             }
         };
@@ -118,15 +118,15 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
         this.d.e();
     }
 
-    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
-        if (eVar instanceof com.tsf.shell.f.i.c.g) {
-            com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((com.tsf.shell.f.i.c.g) eVar, f, f2, new a.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.4
+    public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
+        if (eVar instanceof com.tsf.shell.f.i.c.ItemGroupBase) {
+            com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((com.tsf.shell.f.i.c.ItemGroupBase) eVar, f, f2, new a.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.4
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
                 public void a(ItemInfo itemInfo) {
                 }
 
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
-                public void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.c.g gVar) {
+                public void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.c.ItemGroupBase gVar) {
                     bVar.scale().setAll(0.0f, 0.0f, 1.0f);
                     com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                     dVar.l(1.0f);
@@ -138,23 +138,23 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
             });
             return true;
         }
-        if (!(eVar instanceof com.tsf.shell.f.i.c.f)) {
+        if (!(eVar instanceof com.tsf.shell.f.i.c.AppPreviewLabel)) {
             return true;
         }
         float[] fArrA = x.a(f, f2);
-        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.g, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.g, (com.tsf.shell.f.i.c.AppPreviewLabel) eVar, (int) fArrA[0], (int) fArrA[1]);
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.c.e eVar) {
+    public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.c.b(eVar);
     }
 
-    public void b(com.tsf.shell.f.i.c.e eVar) {
+    public void b(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
         this.c.c(eVar);
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.c.e> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> arrayList) {
         this.c.a(arrayList);
     }
 }

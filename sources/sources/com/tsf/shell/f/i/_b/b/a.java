@@ -6,9 +6,9 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.e.CellLayout;
-import com.tsf.shell.f.e.t;
+import com.tsf.shell.f.e.WidgetFreeResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
-import com.tsf.shell.f.i._a.c;
+import com.tsf.shell.f.i._a.WidgetItemTouchHandler;
 import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.manager.bind.ShellModel;
 
@@ -244,7 +244,7 @@ public class a extends com.tsf.shell.f.i.PageItem {
     }
 
     @Override // com.tsf.shell.f.i.PageItem
-    public void a(com.tsf.shell.f.i.A aVar) {
+    public void a(com.tsf.shell.f.i.MultiSelectController aVar) {
         super.a(aVar);
         final g gVarZ = z();
         if (gVarZ != null && K().screen != gVarZ.t()) {
@@ -325,7 +325,7 @@ public class a extends com.tsf.shell.f.i.PageItem {
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e == null) {
-                    a.this.e = com.tsf.shell.f.e._b.a((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    a.this.e = com.tsf.shell.f.e._b.OverlayBackground((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
                     a.this.e.useVBO(false);
                     a.this.e.textures().addElement(com.tsf.shell.f.e._b.h);
                     a.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;

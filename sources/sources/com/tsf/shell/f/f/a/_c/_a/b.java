@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
-import com.tsf.shell.f.e.k;
+import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.f.f.a.f;
 import com.tsf.shell.manager.o.ThemeColorConstants;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
@@ -16,19 +16,19 @@ import com.tsf.shell.utils.BitmapTransformationHelper;
 public class b extends j {
     public static final int a = com.censivn.C3DEngine.b.b.A.b(26.0f);
     private static TextureElement b = new TextureElement(0, false);
-    private static k k;
+    private static k CircleDotNode;
     private j d;
     private String f;
     private int g;
     private float h;
     private float i;
-    private k.a j;
+    private CircleDotNode.a j;
     private e.a m;
     private TextureElement c = new TextureElement(0, false);
     private boolean l = false;
     private com.censivn.C3DEngine.b.f.k e = new com.censivn.C3DEngine.b.f.k(a, a, false);
 
-    public b(k.a aVar) {
+    public b(CircleDotNode.a aVar) {
         this.j = aVar;
         this.e.textures().addElement(b);
         addChild(this.e);
@@ -77,10 +77,10 @@ public class b extends j {
 
     public void g() {
         if (k == null) {
-            k = new com.tsf.shell.f.e.k();
-            k.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
-            k.position().y = com.censivn.C3DEngine.b.b.A.a(220.0f);
-            k.alpha(0.0f);
+            k = new com.tsf.shell.f.e.CircleDotNode();
+            CircleDotNode.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
+            CircleDotNode.position().y = com.censivn.C3DEngine.b.b.A.a(220.0f);
+            CircleDotNode.alpha(0.0f);
         }
         this.l = true;
     }
@@ -92,9 +92,9 @@ public class b extends j {
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         if (this.l && this.d.visible()) {
-            k.scale().setAllFrom(this.d.scale());
-            k.alpha(this.d.alpha());
-            k.dispatchDraw();
+            CircleDotNode.scale().setAllFrom(this.d.scale());
+            CircleDotNode.alpha(this.d.alpha());
+            CircleDotNode.dispatchDraw();
         }
     }
 
@@ -181,7 +181,7 @@ public class b extends j {
             com.censivn.C3DEngine.A.g().a(b);
         }
         if (k != null) {
-            k.a();
+            CircleDotNode.a();
         }
     }
 }

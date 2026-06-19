@@ -66,7 +66,7 @@ public class c extends d {
     }
 
     @Override // com.tsf.shell.f.i._b.e.b
-    public com.tsf.shell.f.i._a.c aH() {
+    public com.tsf.shell.f.i._a.WidgetItemTouchHandler aH() {
         return new a(this);
     }
 
@@ -122,7 +122,7 @@ public class c extends d {
         super.g();
     }
 
-    class a extends com.tsf.shell.f.i._a.c {
+    class a extends com.tsf.shell.f.i._a.WidgetItemTouchHandler {
         private float h;
         private float i;
         private b j;
@@ -134,12 +134,12 @@ public class c extends d {
             this.j = bVar;
         }
 
-        @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i._a.WidgetItemTouchHandler, com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent) {
             com.tsf.shell.manager.app.FolderManager.a(c.this.t);
         }
 
-        @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i._a.WidgetItemTouchHandler, com.censivn.C3DEngine.b.d.a
         public void e(MotionEvent motionEvent) {
             this.k = false;
             this.h = motionEvent.getX();
@@ -148,7 +148,7 @@ public class c extends d {
             com.tsf.shell.manager.action.GestureHandler.a();
         }
 
-        @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i._a.WidgetItemTouchHandler, com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.k) {
                 com.tsf.shell.manager.app.StateHub.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
@@ -159,7 +159,7 @@ public class c extends d {
             this.k = true;
         }
 
-        @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i._a.WidgetItemTouchHandler, com.censivn.C3DEngine.b.d.a
         public void f(MotionEvent motionEvent) {
             if (this.k) {
                 com.tsf.shell.manager.app.StateHub.x();

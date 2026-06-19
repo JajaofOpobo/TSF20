@@ -1,6 +1,6 @@
 package com.tsf.shell.manager.app;
 
-import com.tsf.shell.f.e.F;
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import java.util.ArrayList;
 
 public class StateManager {

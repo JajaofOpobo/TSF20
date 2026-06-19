@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e._g.a.d;
-import com.tsf.shell.f.e.l;
+import com.tsf.shell.f.e.ToggleRowItem;
 import com.tsf.shell.manager.o.ButtonMetrics;
 import com.tsf.shell.manager.o.a.LabelManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -42,7 +42,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mShortcut = new k(com.censivn.C3DEngine.b.b.A.a(80.0f), com.censivn.C3DEngine.b.b.A.a(80.0f), false);
         addIcon(this.mShortcut);
         this.mApplyButton = new l(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.1
-            @Override // com.tsf.shell.f.e.l
+            @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
                 boolean z = true;
                 boolean z2 = false;
@@ -67,7 +67,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
         this.mApplyButton.a(0);
         this.mResetButton = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.2
-            @Override // com.tsf.shell.f.e.l
+            @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
                 ThemeIconDesignerMenu themeIconDesignerMenu = ThemeIconDesignerMenu.this;
                 a aVar = com.tsf.shell.manager.o.ButtonPresetManager.a;

@@ -3,7 +3,7 @@ package com.tsf.shell.manager.wallpaper;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WallpaperMenuContainer extends com.tsf.shell.f.e._g.d {
+public class WallpaperMenuContainer extends com.tsf.shell.f.e._g.MenuOverlay {
     private WallpaperMenuPanel a;
 
     public WallpaperMenuContainer() {

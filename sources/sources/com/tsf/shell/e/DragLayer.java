@@ -15,7 +15,7 @@ public class DragLayer extends FrameLayout {
     private boolean b;
     private MotionEvent c;
     private com.tsf.shell.f.i.b.b.a d;
-    private com.tsf.shell.f.i.a.c e;
+    private com.tsf.shell.f.i.a.PageItemTouchHandler e;
 
     public DragLayer(Context context) {
         super(context);

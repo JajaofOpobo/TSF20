@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.e.E;
+import com.tsf.shell.f.e.SelectionFrametemTrailContainer;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -96,7 +96,7 @@ public class ShortcutItem extends PageItem {
 
     @Override // com.tsf.shell.f.i.PageItem
     public void o_() {
-        if (as() && (getMouseEventListener() instanceof com.tsf.shell.f.i.a.c) && !((com.tsf.shell.f.i.a.c) getMouseEventListener()).a()) {
+        if (as() && (getMouseEventListener() instanceof com.tsf.shell.f.i.a.PageItemTouchHandler) && !((com.tsf.shell.f.i.a.PageItemTouchHandler) getMouseEventListener()).a()) {
             ax();
         }
         super.o_();
@@ -213,14 +213,14 @@ public class ShortcutItem extends PageItem {
     }
 
     public void a(C cVar) {
-        e.c(this);
-        e.d(cVar);
+        ItemStubHelper.c(this);
+        ItemStubHelper.d(cVar);
     }
 
     public void b(ArrayList<C> arrayList) {
         if (arrayList.size() > 0) {
-            e.c(this);
-            e.a(arrayList);
+            ItemStubHelper.c(this);
+            ItemStubHelper.a(arrayList);
         } else {
             al();
             an();
@@ -228,23 +228,23 @@ public class ShortcutItem extends PageItem {
     }
 
     public boolean as() {
-        return e.a(this);
+        return ItemStubHelper.a(this);
     }
 
     public int at() {
-        return e.a();
+        return ItemStubHelper.a();
     }
 
     public boolean au() {
-        return e.b(this);
+        return ItemStubHelper.b(this);
     }
 
     public ArrayList<C> av() {
-        return e.b();
+        return ItemStubHelper.b();
     }
 
     public ArrayList<C> aw() {
-        return e.c();
+        return ItemStubHelper.c();
     }
 
     public void ax() {

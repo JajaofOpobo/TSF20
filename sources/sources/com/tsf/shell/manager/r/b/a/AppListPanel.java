@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.k;
-import com.tsf.shell.f.i.a.d;
+import com.tsf.shell.f.i.a.PageItemDropHandler;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -24,7 +24,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
     public com.tsf.shell.manager.r.b.WidgetMenuPanel a;
     private com.tsf.shell.manager.app.AppListModel b;
     private h c;
-    private float d;
+    private float PageItemDropHandler;
     private ArrayList<g> e;
     private com.censivn.C3DEngine.b.h.b.c.a f;
     private ObserverManager.a g;
@@ -115,7 +115,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
         });
         this.c.a(new f() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.6
             private g c;
-            private d d;
+            private d PageItemDropHandler;
             private boolean e;
 
             @Override // com.censivn.C3DEngine.b.h.b.f
@@ -146,7 +146,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
                     aVar.templeteHide();
                     g gVarA = AppListPanel.this.b.a.a(i);
                     this.c = gVarA.ba();
-                    this.d = (d) this.c.getMouseEventListener();
+                    this.d = (PageItemDropHandler) this.c.getMouseEventListener();
                     Number3d.TEMPNUMBER3D.reset();
                     this.c.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D));
                     if (!AppListPanel.this.e.isEmpty()) {

@@ -57,7 +57,7 @@ public class WidgetCompatibilityChecker {
         a(com.censivn.C3DEngine.A.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_widget), k.c(Home.c, str), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), runnable, null);
     }
 
-    public static boolean a(com.tsf.shell.f.i.c.g gVar, boolean z) {
+    public static boolean a(com.tsf.shell.f.i.c.ItemGroupBase gVar, boolean z) {
         boolean zN = gVar.n();
         if (gVar.e) {
             if (!zN) {
@@ -131,11 +131,11 @@ public class WidgetCompatibilityChecker {
         });
     }
 
-    private static boolean a(A aVar, com.tsf.shell.f.i.c.g gVar) {
+    private static boolean a(A aVar, com.tsf.shell.f.i.c.ItemGroupBase gVar) {
         return aVar == null || gVar.h >= aVar.a;
     }
 
-    private static boolean b(A aVar, com.tsf.shell.f.i.c.g gVar) {
+    private static boolean b(A aVar, com.tsf.shell.f.i.c.ItemGroupBase gVar) {
         return aVar == null || gVar.i >= aVar.b;
     }
 }

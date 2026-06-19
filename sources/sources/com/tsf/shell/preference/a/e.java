@@ -1,7 +1,7 @@
 package com.tsf.shell.preference.a;
 
 import com.tsf.shell.f.c.a.f;
-import com.tsf.shell.f.e.j;
+import com.tsf.shell.f.e.PageIndicatorStrip;
 import com.tsf.shell.f.i.b.e.h;
 import java.util.ArrayList;
 

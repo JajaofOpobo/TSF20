@@ -16,12 +16,12 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
     private com.censivn.C3DEngine.b.h.b.h b;
     private PackageManager e;
     private AppWidgetManager f;
-    private ArrayList<com.tsf.shell.f.i.c.e> g;
+    private ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> g;
     private a h;
     private float i;
-    private ArrayList<com.tsf.shell.f.i.c.f> j;
+    private ArrayList<com.tsf.shell.f.i.c.AppPreviewLabel> j;
 
-    public WidgetInstanceListPanel(com.tsf.shell.f.e._g.d dVar, d dVar2) {
+    public WidgetInstanceListPanel(com.tsf.shell.f.e._g.MenuOverlay dVar, d dVar2) {
         super(dVar);
         this.j = new ArrayList<>();
         this.a = dVar2;
@@ -50,7 +50,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
                 i hVar = iVar == null ? new h(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(30.0f), false) : iVar;
-                ((h) hVar).a((com.tsf.shell.f.i.c.e) WidgetInstanceListPanel.this.j.get(i), false);
+                ((h) hVar).a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), false);
                 return hVar;
             }
 
@@ -62,26 +62,26 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         this.b.a(new WidgetDragHandler(this.d) { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.3
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                WidgetInstanceListPanel.this.a((com.tsf.shell.f.i.c.e) WidgetInstanceListPanel.this.j.get(i), 0.0f, WidgetInstanceListPanel.this.d.getScreenFreeSpaceCenter());
+                WidgetInstanceListPanel.this.a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), 0.0f, WidgetInstanceListPanel.this.d.getScreenFreeSpaceCenter());
                 WidgetInstanceListPanel.this.d.templeteHide();
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler
-            public com.tsf.shell.f.i.c.e a(int i) {
-                return (com.tsf.shell.f.i.c.e) WidgetInstanceListPanel.this.j.get(i);
+            public com.tsf.shell.f.i.c.ItemLabelProvider a(int i) {
+                return (com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i);
             }
 
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler
-            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+            public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
                 return WidgetInstanceListPanel.this.a(eVar, f, f2);
             }
         });
         this.b.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
     }
 
-    protected boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+    protected boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
         float[] fArrA = x.a(f, f2);
-        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.f, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.f, (com.tsf.shell.f.i.c.AppPreviewLabel) eVar, (int) fArrA[0], (int) fArrA[1]);
         return false;
     }
 
@@ -107,7 +107,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
     }
 
     private void h() {
-        for (com.tsf.shell.f.i.c.f fVar : this.j) {
+        for (com.tsf.shell.f.i.c.AppPreviewLabel fVar : this.j) {
             fVar.a();
             this.g.add(fVar);
         }
@@ -125,7 +125,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         this.b.e();
         h();
         for (b.C0145b c0145b : aVar.c) {
-            com.tsf.shell.f.i.c.f fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
+            com.tsf.shell.f.i.c.AppPreviewLabel fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
             fVarA.a(c0145b.a.provider);
             fVarA.d(c0145b.a.minHeight);
             fVarA.e(c0145b.a.minWidth);
@@ -135,12 +135,12 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         this.b.d();
     }
 
-    private com.tsf.shell.f.i.c.f a(String str, ApplicationInfo applicationInfo, AppWidgetProviderInfo appWidgetProviderInfo) {
-        com.tsf.shell.f.i.c.f fVar;
+    private com.tsf.shell.f.i.c.AppPreviewLabel a(String str, ApplicationInfo applicationInfo, AppWidgetProviderInfo appWidgetProviderInfo) {
+        com.tsf.shell.f.i.c.AppPreviewLabel fVar;
         if (this.g.isEmpty()) {
-            fVar = new com.tsf.shell.f.i.c.f();
+            fVar = new com.tsf.shell.f.i.c.AppPreviewLabel();
         } else {
-            fVar = (com.tsf.shell.f.i.c.f) this.g.remove(0);
+            fVar = (com.tsf.shell.f.i.c.AppPreviewLabel) this.g.remove(0);
         }
         fVar.a(str, applicationInfo, appWidgetProviderInfo);
         return fVar;

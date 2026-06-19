@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.shell.VPage;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.f.f.PageAnimationState;
-import com.tsf.shell.f.i.A;
+import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -16,18 +16,18 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements TransitionConfig.a, A.InterfaceC0113a {
+public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements TransitionConfig.a, MultiSelectController.InterfaceC0113a {
     public static com.tsf.shell.f.a.a.a f;
     public static com.censivn.C3DEngine.b.f.i i;
     private static com.censivn.C3DEngine.b.f.k r;
-    private int A;
+    private int MultiSelectController;
     private j.a I;
     private com.tsf.shell.f._d.e.a.b J;
     private com.censivn.C3DEngine.b.g._b.a L;
     protected g a;
     protected com.tsf.shell.e.CellLayout b;
     protected com.tsf.shell.f.e.f.b c;
-    protected com.tsf.shell.f.i.A h;
+    protected com.tsf.shell.f.i.MultiSelectController h;
     protected l k;
     private com.censivn.C3DEngine.b.f.k q;
     private com.censivn.C3DEngine.b.f.b.a s;
@@ -201,7 +201,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.w = aVar;
     }
 
-    public com.tsf.shell.f.i.A m() {
+    public com.tsf.shell.f.i.MultiSelectController m() {
         return this.h;
     }
 
@@ -290,8 +290,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
                 g.this.h.a(iVar);
             }
         };
-        this.h = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.f.WorkspacePage.2
-            @Override // com.tsf.shell.f.i.A
+        this.h = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.f.WorkspacePage.2
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void b(com.tsf.shell.f.i.PageItem bVar) {
                 g.this.N();
             }
@@ -299,7 +299,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         addChild(this.c);
     }
 
-    @Override // com.tsf.shell.f.i.A.InterfaceC0113a
+    @Override // com.tsf.shell.f.i.MultiSelectController.InterfaceC0113a
     public ArrayList<com.censivn.C3DEngine.b.f.i> b() {
         return this.c.children();
     }

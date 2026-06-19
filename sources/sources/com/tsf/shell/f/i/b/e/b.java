@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
-import com.tsf.shell.f.e.m;
+import com.tsf.shell.f.e.ILassoSelectable;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
@@ -17,7 +17,7 @@ public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
     private boolean b;
     public com.censivn.C3DEngine.b.f.a.a k;
     public com.censivn.C3DEngine.b.f.a.b l;
-    public com.censivn.C3DEngine.b.f.a.b m;
+    public com.censivn.C3DEngine.b.f.a.b ILassoSelectable;
     public com.tsf.shell.manager.o.ButtonMetrics n;
     public boolean o;
     private boolean p;
@@ -63,37 +63,37 @@ public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
         aA();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void a(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if (fVar instanceof b) {
             a((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void d(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if (fVar instanceof b) {
             b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void e(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if ((fVar instanceof b) && this.u != null) {
             com.tsf.shell.f.i.b.d.b bVarA = a((b) fVar, false);
             bVarA.K().screen = K().screen;
             bVarA.ad();
-            bVarA.setMouseEventListener(new com.tsf.shell.f.i.a.c(bVarA));
+            bVarA.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVarA));
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
         return (fVar instanceof com.tsf.shell.f.i.ShortcutItem) && ((com.tsf.shell.f.i.ShortcutItem) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public boolean b(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         return fVar instanceof b;
     }
 
@@ -160,8 +160,8 @@ public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
         return a;
     }
 
-    public com.tsf.shell.f.i.a.c aH() {
-        return new com.tsf.shell.f.i.a.d(this);
+    public com.tsf.shell.f.i.a.PageItemTouchHandler aH() {
+        return new com.tsf.shell.f.i.a.PageItemDropHandler(this);
     }
 
     public void l(boolean z) {
@@ -177,8 +177,8 @@ public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
         super.onDrawChildEnd();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
-    public void g(com.tsf.shell.f.e.F fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    public void g(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         I();
         super.g(fVar);
     }
@@ -277,17 +277,17 @@ public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
         super.g();
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public boolean e_() {
         return this.t;
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public void b(boolean z) {
         this.t = z;
     }
 
-    @Override // com.tsf.shell.f.e.m
+    @Override // com.tsf.shell.f.e.ILassoSelectable
     public boolean d() {
         return true;
     }

@@ -5,8 +5,8 @@ import com.censivn.C3DEngine.a.f;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e.p;
-import com.tsf.shell.f.e.s;
+import com.tsf.shell.f.e.StubPlaceholder;
+import com.tsf.shell.f.e.WidgetMatchResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.f.WorkspaceScene;
@@ -67,8 +67,8 @@ public class LauncherInitController extends f {
 
     private void h() {
         com.tsf.shell.f.e.b.a();
-        com.tsf.shell.f.e.t.b();
-        s.c();
+        com.tsf.shell.f.e.WidgetFreeResizeController.b();
+        WidgetMatchResizeController.c();
         com.tsf.shell.f.e.a.a();
     }
 
@@ -112,7 +112,7 @@ public class LauncherInitController extends f {
     }
 
     public void d() {
-        com.tsf.shell.f.e._g.d.hideAll();
+        com.tsf.shell.f.e._g.MenuOverlay.hideAll();
         a((Object) this);
         c(this);
         this.c.mouseEnabled(false);
@@ -160,7 +160,7 @@ public class LauncherInitController extends f {
 
     public void a(b.a aVar, Runnable runnable, int i) {
         this.g = false;
-        com.tsf.shell.f.e._g.d.hideAll();
+        com.tsf.shell.f.e._g.MenuOverlay.hideAll();
         com.tsf.shell.manager.app.ServiceFactory.k();
         com.tsf.shell.manager.app.PanelStateManager.i();
         com.tsf.shell.manager.action.GestureHandler.a();

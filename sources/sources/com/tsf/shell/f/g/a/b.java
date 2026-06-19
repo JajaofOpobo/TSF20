@@ -9,7 +9,7 @@ import com.tsf.shell.ShellActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.e._g.d {
+public class b extends com.tsf.shell.f.e._g.MenuOverlay {
     public c a;
     public e b;
     public d c;
@@ -76,7 +76,7 @@ public class b extends com.tsf.shell.f.e._g.d {
         this.g = z;
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onMenuChanged(com.tsf.shell.f.e._g.a.c cVar) {
         a(cVar instanceof c);
         if (cVar instanceof a) {
@@ -86,7 +86,7 @@ public class b extends com.tsf.shell.f.e._g.d {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onShow() {
         com.tsf.shell.manager.app.AppListModel.d();
         com.tsf.shell.manager.action.GestureHandler.b();
@@ -95,19 +95,19 @@ public class b extends com.tsf.shell.f.e._g.d {
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onHide() {
         com.tsf.shell.manager.app.AppListModel.e();
         com.tsf.shell.manager.action.GestureHandler.c();
         c();
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onHideComplete() {
         com.tsf.shell.manager.app.TaskScheduler.b(this.f);
     }
 
-    @Override // com.tsf.shell.f.e._g.d
+    @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onLayout(float f, float f2, float f3, float f4) {
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
         d();

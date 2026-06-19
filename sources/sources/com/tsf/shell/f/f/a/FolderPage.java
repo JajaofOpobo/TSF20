@@ -63,7 +63,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private a N;
     private com.tsf.shell.f.f.a._a.c O;
     private int P;
-    private com.tsf.shell.f.e.j T;
+    private com.tsf.shell.f.e.PageIndicatorStrip T;
     private com.tsf.shell.f.f.a.d.A U;
     private FolderManager V;
     private ArrayList<a> W;
@@ -465,7 +465,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     @Override // com.tsf.shell.f.f.WorkspacePage
-    public com.tsf.shell.f.i.A m() {
+    public com.tsf.shell.f.i.MultiSelectController m() {
         return this.h;
     }
 
@@ -494,8 +494,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         if (!com.tsf.shell.manager.b.ConfigManager.R()) {
             c(false, false);
         }
-        this.T = new com.tsf.shell.f.e.j(z2) { // from class: com.tsf.shell.f.f.a.FolderPage.8
-            @Override // com.tsf.shell.f.e.j
+        this.T = new com.tsf.shell.f.e.PageIndicatorStrip(z2) { // from class: com.tsf.shell.f.f.a.FolderPage.8
+            @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
                 h.this.at();
             }
@@ -1180,7 +1180,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.tsf.shell.f.f.a.FolderPage.4
             private float b;
             private com.tsf.shell.f.i.PageItem d;
-            private com.tsf.shell.f.i.a.d g;
+            private com.tsf.shell.f.i.a.PageItemDropHandler g;
             private boolean e = false;
             private boolean f = false;
             private boolean h = false;

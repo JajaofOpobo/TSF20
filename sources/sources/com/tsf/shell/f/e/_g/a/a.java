@@ -38,7 +38,7 @@ public class a extends c {
     public void setFunctions(ArrayList<C0095a> arrayList) {
         this.functions = arrayList;
         if (arrayList != null) {
-            this.functionsContainer = new com.tsf.shell.f.e._g.b();
+            this.functionsContainer = new com.tsf.shell.f.e._g.MenuContainer();
             Iterator<C0095a> it = arrayList.iterator();
             while (it.hasNext()) {
                 this.functionsContainer.addChild(it.next());

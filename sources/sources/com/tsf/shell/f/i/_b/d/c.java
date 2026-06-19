@@ -15,7 +15,7 @@ public class c {
                     }
                 }
             }
-            com.tsf.shell.f.e._a.c.a(bVar, arrayList);
+            com.tsf.shell.f.e._a.DropTargetItem.a(bVar, arrayList);
         }
     }
 }

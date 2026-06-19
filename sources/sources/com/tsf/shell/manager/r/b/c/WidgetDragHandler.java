@@ -12,9 +12,9 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
     private h c;
     private i d;
     private boolean e;
-    private com.tsf.shell.f.e._g.d f;
+    private com.tsf.shell.f.e._g.MenuOverlay f;
 
-    public WidgetDragHandler(com.tsf.shell.f.e._g.d dVar) {
+    public WidgetDragHandler(com.tsf.shell.f.e._g.MenuOverlay dVar) {
         this.f = dVar;
     }
 
@@ -22,7 +22,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
     public void a(i iVar, int i, MotionEvent motionEvent) {
     }
 
-    public com.tsf.shell.f.i.c.e a(int i) {
+    public com.tsf.shell.f.i.c.ItemLabelProvider a(int i) {
         return null;
     }
 
@@ -46,7 +46,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
 
     @Override // com.censivn.C3DEngine.b.h.b.f
     public void c(i iVar, int i, MotionEvent motionEvent) {
-        final com.tsf.shell.f.i.c.e eVarA = a(i);
+        final com.tsf.shell.f.i.c.ItemLabelProvider eVarA = a(i);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragHandler.1
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
@@ -79,7 +79,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         }
     }
 
-    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
         return true;
     }
 

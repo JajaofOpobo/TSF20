@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherWidget3DInfo;
-import com.tsf.shell.f.i.c.g;
+import com.tsf.shell.f.i.c.ItemGroupBase;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.manager.r.c.a.WidgetInstantiator;
 import com.tsf.shell.manager.r.c.WidgetCompatibilityChecker;
