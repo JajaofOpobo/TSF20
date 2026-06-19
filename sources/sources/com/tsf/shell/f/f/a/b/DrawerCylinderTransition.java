@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerCylinderTransition extends DrawerTransitionBase3D {
-    public b(int i, boolean z) {
+    public DrawerCylinderTransition(int i, boolean z) {
         super(i, com.tsf.b.d.drawer_transition_effect_cylinder, z);
     }
 

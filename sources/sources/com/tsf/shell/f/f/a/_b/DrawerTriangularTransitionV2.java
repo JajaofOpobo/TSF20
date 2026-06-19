@@ -12,7 +12,7 @@ public class DrawerTriangularTransitionV2 extends DrawerTransitionBaseV2 {
     private ArrayList<ArrayList<a>> d;
     private ArrayList<Number3d> e;
 
-    public h(int i, boolean z) {
+    public DrawerTriangularTransitionV2(int i, boolean z) {
         super(i, DrawerCylinderTransitionV2.d.drawer_transition_effect_round, z);
     }
 

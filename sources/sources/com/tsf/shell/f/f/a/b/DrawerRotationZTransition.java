@@ -9,7 +9,7 @@ public class DrawerRotationZTransition extends DrawerTransitionBase {
     private static int a = 0;
     private static int b = 0;
 
-    public g(int i, boolean z) {
+    public DrawerRotationZTransition(int i, boolean z) {
         super(i, DrawerCylinderTransition.d.drawer_transition_effect_rotation_z, z);
     }
 

@@ -21,7 +21,7 @@ public class FolderSpringPhysics {
         return null;
     }
 
-    public l(c cVar, float f) {
+    public FolderSpringPhysics(c cVar, float f) {
         this.f = f;
         c = com.tsf.shell.manager.o.ButtonPresetManager.a.T / 5.0f;
         a = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 4.0f) * 3.0f;
@@ -113,9 +113,9 @@ public class FolderSpringPhysics {
         public float c;
         public float d;
         public float b = 1.0f;
-        public class Number3d 
+        public Number3d a;
 
-        public a() {
+        public FolderSpringPhysics() {
         }
 
         public void a(Double d, float f) {

@@ -21,7 +21,7 @@ public class DrawerProgressBar extends DrawerBaseElement {
         this.b.a();
     }
 
-    public class String 
+    public String c() {
         return this.b.c();
     }
 }

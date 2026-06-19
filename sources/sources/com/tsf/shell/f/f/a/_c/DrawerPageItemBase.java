@@ -19,7 +19,7 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.j {
     private boolean i = false;
     private Runnable j;
 
-    public i(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, int i, String str) {
+    public DrawerPageItemBase(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, int i, String str) {
         this.c = 0;
         this.b = fVar;
         this.a = hVar;

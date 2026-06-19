@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerTransitionManager extends com.tsf.shell.f.f.TransitionManager<k> {
-    public l() {
+    public DrawerTransitionManager() {
         ArrayList<com.tsf.shell.f.f.TransitionRenderer> arrayList = new ArrayList<>();
         arrayList.add(new DrawerSmoothTransition(10, false));
         arrayList.add(new DrawerCylinderTransition(20, false));
@@ -48,7 +48,7 @@ public class DrawerTransitionManager extends com.tsf.shell.f.f.TransitionManager
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public class String 
+    public String c() {
         return com.tsf.shell.manager.b.ConfigManager.H();
     }
 }

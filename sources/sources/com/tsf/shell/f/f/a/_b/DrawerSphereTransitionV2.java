@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerSphereTransitionV2 extends DrawerTransitionBase3DV2 {
-    public j(int i, boolean z) {
+    public DrawerSphereTransitionV2(int i, boolean z) {
         super(i, DrawerCylinderTransitionV2.d.drawer_transition_effect_sphere, z);
     }
 

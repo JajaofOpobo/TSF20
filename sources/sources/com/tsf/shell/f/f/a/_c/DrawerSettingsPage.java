@@ -20,7 +20,7 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
         public String b;
         public int c;
 
-        public a(int i, String str) {
+        public DrawerSettingsPage(int i, String str) {
             this.c = i;
             this.b = str;
         }
@@ -29,7 +29,7 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
         }
     }
 
-    public k(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
+    public DrawerSettingsPage(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
         super(hVar, fVar, 0, x.c(DrawerWidgetTouchHandler.i.text_more));
         this.g = new ArrayList<>();
         com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask aVar = new com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask(new a(DrawerWidgetTouchHandler.d.drawer_classification, x.c(DrawerWidgetTouchHandler.i.text_classify)));

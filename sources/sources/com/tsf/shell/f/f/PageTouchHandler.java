@@ -74,7 +74,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     };
     private o G = new o();
 
-    public n() {
+    public PageTouchHandler() {
         this.G.a(new o.a() { // from class: com.tsf.shell.f.f.PageTouchHandler.8
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a(g gVar) {
@@ -131,7 +131,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public class c extends TransitionManager {
-        public c() {
+        public PageTouchHandler() {
         }
     }
 
@@ -2036,7 +2036,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private float j = this.i * this.b;
         private com.censivn.C3DEngine.b.f.j d = new com.censivn.C3DEngine.b.f.j();
 
-        public b() {
+        public PageTouchHandler() {
             this.c = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {

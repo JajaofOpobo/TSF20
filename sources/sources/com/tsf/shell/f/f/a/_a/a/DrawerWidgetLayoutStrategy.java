@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class DrawerWidgetLayoutStrategy extends DrawerItemLayoutData {
     private com.tsf.shell.f.f.a._a.DrawerSectionManager.c a;
 
-    public b(com.tsf.shell.f.f.a._a.DrawerItemContainer cVar) {
+    public DrawerWidgetLayoutStrategy(com.tsf.shell.f.f.a._a.DrawerItemContainer cVar) {
         super(cVar);
         this.a = new com.tsf.shell.f.f.a._a.DrawerSectionManager.c(this);
         a((com.tsf.shell.f.f.a._a.b.DrawerBaseElement) this.a);
@@ -34,7 +34,7 @@ public class DrawerWidgetLayoutStrategy extends DrawerItemLayoutData {
         a(arrayList);
     }
 
-    public class String 
+    public String c() {
         return this.a.e();
     }
 

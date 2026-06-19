@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerBottleTransition extends DrawerTransitionBase3D {
-    public a(int i, boolean z) {
+    public DrawerBottleTransition(int i, boolean z) {
         super(i, DrawerCylinderTransition.d.drawer_transition_effect_bottle, z);
     }
 

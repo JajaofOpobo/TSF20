@@ -27,7 +27,7 @@ public abstract class DrawerTransitionBaseV2 extends com.tsf.shell.f.f.Transitio
 
     public abstract void h(com.tsf.shell.f.f.a.PageContainerBase aVar);
 
-    public k(int i, int i2, boolean z) {
+    public DrawerTransitionBaseV2(int i, int i2, boolean z) {
         super(i, i2, z);
     }
 }

@@ -13,7 +13,7 @@ import java.util.Locale;
 public class DrawerAlphabeticalSortV2 extends DrawerSortBaseV2 {
     private Collator e;
 
-    public a(int i) {
+    public DrawerAlphabeticalSortV2(int i) {
         super(DrawerNameSortV2.d.drawer_sort_frequency, DrawerNameSortV2.i.text_sort_most_used);
         this.a = i;
         this.e = Collator.getInstance(Locale.getDefault());

@@ -5,7 +5,7 @@ public class PageTransitionEffect extends
     private float a;
     private float b;
 
-    public l(int i, int i2, boolean z) {
+    public PageTransitionEffect(int i, int i2, boolean z) {
         super(i, i2, z);
         this.a = com.censivn.C3DEngine.b.b.A.F;
         this.b = com.censivn.C3DEngine.b.b.A.G;

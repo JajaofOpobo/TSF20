@@ -15,7 +15,7 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
     private com.censivn.C3DEngine.b.f.m k;
     private float l;
 
-    public m(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
+    public DrawerMultiWidgetPage(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
         super(hVar, fVar, DrawerWidgetTouchHandler.d.drawer_sort, x.c(DrawerWidgetTouchHandler.i.text_sort));
         this.h = com.tsf.shell.manager.app.ServiceProvider.b();
         d();

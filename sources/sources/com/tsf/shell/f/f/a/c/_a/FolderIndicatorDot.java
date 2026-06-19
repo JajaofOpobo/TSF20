@@ -28,7 +28,7 @@ public class FolderIndicatorDot extends j {
     private boolean l = false;
     private com.censivn.C3DEngine.b.f.k e = new com.censivn.C3DEngine.b.f.k(a, a, false);
 
-    public b(com.tsf.shell.f.f.a.c.FolderSettingsPage.a aVar) {
+    public FolderIndicatorDot(com.tsf.shell.f.f.a.c.FolderSettingsPage.a aVar) {
         this.j = aVar;
         this.e.textures().addElement(b);
         addChild(this.e);

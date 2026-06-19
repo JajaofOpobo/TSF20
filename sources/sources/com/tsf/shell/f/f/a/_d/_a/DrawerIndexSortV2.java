@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerIndexSortV2 extends DrawerSortBaseV2 {
-    public d(int i) {
+    public DrawerIndexSortV2(int i) {
         super(DrawerNameSortV2.d.drawer_sort_name, DrawerNameSortV2.i.text_sort_alphabetical);
         this.a = i;
         this.b = new Comparator<com.tsf.shell.f.i.PageItem>() { // from class: com.tsf.shell.f.f.a._d._a.DrawerIndexSortV2.1

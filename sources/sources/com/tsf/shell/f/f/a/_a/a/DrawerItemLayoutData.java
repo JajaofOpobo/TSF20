@@ -4,7 +4,7 @@ package com.tsf.shell.f.f.a._a.a;
 public class DrawerItemLayoutData {
     public int a;
     public int b;
-    public class Object 
+    public Object a;
     public boolean d;
     public boolean e;
     public float f;

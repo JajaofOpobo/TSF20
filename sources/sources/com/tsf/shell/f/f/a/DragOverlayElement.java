@@ -96,7 +96,7 @@ public class DragOverlayElement extends j {
         }
     }
 
-    public e(h hVar) {
+    public DragOverlayElement(h hVar) {
         this.b = hVar;
         this.g.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
         this.e = new PageContainerBase(b.d.drawer_home);

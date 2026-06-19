@@ -22,7 +22,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
     private com.censivn.C3DEngine.b.f.m j;
     private float k;
 
-    public b(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
+    public DrawerWidgetTouchHandler(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
         this.i = cVar;
         this.c = hVar;
         this.h = fVar;

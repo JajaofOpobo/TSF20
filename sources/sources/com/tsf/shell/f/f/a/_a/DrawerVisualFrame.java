@@ -19,7 +19,7 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
     private j a = new j();
     private k b = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
-    public e(c cVar) {
+    public DrawerVisualFrame(c cVar) {
         boolean z = false;
         this.i = cVar;
         this.b.setDefaultColor(new Color4(255, 255, 255, 60));

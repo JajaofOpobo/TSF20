@@ -17,10 +17,10 @@ public class FolderSettingsPage extends FolderPageItemBase {
     private com.tsf.shell.f.f.a.c._a.FolderIconLoader k;
 
     public static class a {
-        public class String 
+        public String a;
         public int c;
 
-        public a(int i, String str) {
+        public FolderSettingsPage(int i, String str) {
             this.c = i;
             this.b = str;
         }
@@ -29,7 +29,7 @@ public class FolderSettingsPage extends FolderPageItemBase {
         }
     }
 
-    public k(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
+    public FolderSettingsPage(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
         super(hVar, fVar, 0, x.c(FolderWidgetTouchHandler.i.text_more));
         this.g = new ArrayList<>();
         com.tsf.shell.f.f.a.c._a.FolderIconLoader aVar = new com.tsf.shell.f.f.a.c._a.FolderIconLoader(new FolderTouchBase(FolderWidgetTouchHandler.d.drawer_classification, x.c(FolderWidgetTouchHandler.i.text_classify)));

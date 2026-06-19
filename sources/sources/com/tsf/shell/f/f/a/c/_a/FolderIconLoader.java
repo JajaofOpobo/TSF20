@@ -30,7 +30,7 @@ public class FolderIconLoader {
         }
     }
 
-    public a(k.a aVar) {
+    public FolderIconLoader(k.a aVar) {
         super(aVar);
         this.d = false;
         this.e = 360.0f;

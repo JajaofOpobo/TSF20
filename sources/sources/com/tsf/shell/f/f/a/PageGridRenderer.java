@@ -95,7 +95,7 @@ public class PageGridRenderer extends j implements b.a {
         return this.f;
     }
 
-    public f(h hVar) {
+    public PageGridRenderer(h hVar) {
         this.e = hVar;
         this.p.moveAllPointsPX(0.0f, (h.F * 2.0f) / 2.0f, 0.0f);
         this.p.alpha(0.0f);

@@ -29,7 +29,7 @@ public class DrawerSortBase extends com.tsf.shell.f.f.TransitionRenderer {
         return this.a;
     }
 
-    public class String 
+    public String c() {
         return this.d;
     }
 }

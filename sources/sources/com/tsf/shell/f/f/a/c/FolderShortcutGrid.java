@@ -14,7 +14,7 @@ public class FolderShortcutGrid extends FolderPageItemBase {
     private com.censivn.C3DEngine.b.f.m h;
     private float i;
 
-    public f(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
+    public FolderShortcutGrid(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
         super(hVar, fVar, FolderWidgetTouchHandler.d.drawer_hide, x.c(FolderWidgetTouchHandler.i.text_hide));
         float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
         this.i = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;

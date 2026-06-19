@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerScaleTransitionV2 extends DrawerTransitionBaseV2 {
-    public i(int i, boolean z) {
+    public DrawerScaleTransitionV2(int i, boolean z) {
         super(i, DrawerCylinderTransitionV2.d.drawer_transition_effect_scale, z);
     }
 

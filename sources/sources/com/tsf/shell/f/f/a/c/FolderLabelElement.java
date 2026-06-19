@@ -16,7 +16,7 @@ public class FolderLabelElement extends com.censivn.C3DEngine.b.f.k {
     private int g;
     private int h;
 
-    public e(int i, int i2, String str) {
+    public FolderLabelElement(int i, int i2, String str) {
         super(0.0f, 0.0f);
         this.e = new TextureElement(0, false);
         this.f = 80;

@@ -85,7 +85,7 @@ public class DrawerItemContainer {
         return null;
     }
 
-    public c() {
+    public DrawerItemContainer() {
         this.q = com.tsf.shell.manager.b.ConfigManager.aq();
         int i = this.q == b ? b : c;
         this.r = i;

@@ -11,7 +11,7 @@ public class FolderCountdownBadge extends FolderSelectionFrame {
     private TextureElement a = x.b(FolderWidgetTouchHandler.d.drawer_layout_homescreen_countdown);
     private com.censivn.C3DEngine.b.f.k b = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
 
-    public g() {
+    public FolderCountdownBadge() {
         this.b.textures().addElement(this.a);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.b);

@@ -26,7 +26,7 @@ public abstract class DrawerTransitionBase3DV2 extends DrawerTransitionBaseV2 {
 
     public abstract void a(int i, int i2, int i3, int i4, float f, ArrayList<Number3d> arrayList);
 
-    public m(int i, int i2, boolean z) {
+    public DrawerTransitionBase3DV2(int i, int i2, boolean z) {
         super(i, i2, z);
         this.l = true;
         this.i = new Number3d();
@@ -149,7 +149,7 @@ public abstract class DrawerTransitionBase3DV2 extends DrawerTransitionBaseV2 {
     }
 
     public class a implements Comparator<com.censivn.C3DEngine.b.f.i> {
-        public a() {
+        public DrawerTransitionBase3DV2() {
         }
 
         @Override // java.util.Comparator

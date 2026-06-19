@@ -26,16 +26,16 @@ public class DrawerItemAnimationManager {
     private com.censivn.C3DEngine.b.f.e h = new com.censivn.C3DEngine.b.f.e(0.0f, 0.0f);
 
     class a {
-        public class Number3d 
-        public class Number3d 
-        public class Number3d 
+        public Number3d a;
+        public Number3d a;
+        public Number3d a;
         public float d = 1.0f;
 
         a() {
         }
     }
 
-    public f(c cVar) {
+    public DrawerItemAnimationManager(c cVar) {
         this.b = cVar;
         this.h.alpha(0.0f);
         this.d = new j() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.2

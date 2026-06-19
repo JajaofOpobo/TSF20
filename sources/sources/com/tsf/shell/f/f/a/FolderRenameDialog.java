@@ -26,7 +26,7 @@ public class FolderRenameDialog extends j {
     private j a = new j();
     private k c = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
-    public g(h hVar) {
+    public FolderRenameDialog(h hVar) {
         this.b = hVar;
         this.c.setDefaultColor(new Color4(0, 0, 0, 50));
         this.c.calAABB();

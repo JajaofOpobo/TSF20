@@ -229,7 +229,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void b(int i, KeyEvent keyEvent) {
     }
 
-    public h() {
+    public FolderPage() {
         com.tsf.shell.manager.app.ServiceProvider.c().a(this);
         this.al = com.tsf.shell.manager.app.ServiceProvider.d();
         this.U = com.tsf.shell.manager.app.ServiceProvider.b();
@@ -242,7 +242,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.O.f();
     }
 
-    public class FolderManager 
+    public FolderManager c() {
         return this.V;
     }
 

@@ -15,7 +15,7 @@ public class DrawerAppMenu extends DrawerPageItemBase {
     private com.tsf.shell.f.e._g.MenuContainer i;
     private ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> j;
 
-    public d(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
+    public DrawerAppMenu(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
         super(hVar, fVar, DrawerWidgetTouchHandler.d.drawer_effect, x.c(DrawerWidgetTouchHandler.i.text_effect));
         this.h = hVar.aC();
         c();

@@ -11,7 +11,7 @@ import com.tsf.shell.utils.ColorMatrixImageFilter;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public TransitionRenderer a;
+public class TransitionRenderer {
     private int a;
     private boolean b;
     private boolean c;

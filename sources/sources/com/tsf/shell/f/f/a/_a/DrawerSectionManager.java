@@ -59,7 +59,7 @@ public class DrawerSectionManager {
             this.a = str;
         }
 
-        public class String 
+        public String c() {
             return this.a;
         }
 

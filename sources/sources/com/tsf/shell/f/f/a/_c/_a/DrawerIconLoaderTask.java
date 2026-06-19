@@ -29,7 +29,7 @@ public class DrawerIconLoaderTask extends DrawerIndicatorDot {
         }
     }
 
-    public a(k.a aVar) {
+    public DrawerIconLoaderTask(k.a aVar) {
         super(aVar);
         this.d = false;
         this.e = 360.0f;

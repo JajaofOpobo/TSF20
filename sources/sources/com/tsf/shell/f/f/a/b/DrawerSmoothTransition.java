@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class DrawerSmoothTransition extends DrawerTransitionBase {
     private static int a;
 
-    public c(int i, boolean z) {
+    public DrawerSmoothTransition(int i, boolean z) {
         super(i, DrawerCylinderTransition.d.drawer_transition_effect_smooth, z);
     }
 
