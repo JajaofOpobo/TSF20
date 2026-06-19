@@ -15,8 +15,8 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public void applicationOnClick() {
         this.clickCount++;
-        a.w.c().a(this, 32);
-        a.w.a().a().a(this);
+        A.w.h_().a(this, 32);
+        A.w.a().a().a(this);
     }
 
     public LauncherShortcutAppInfo() {
@@ -25,29 +25,29 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public void reloadTexture() {
         if (this.texture.id != 0 && getWidget() != null) {
-            com.censivn.C3DEngine.A.g().a(this.texture, com.tsf.shell.manager.r.c.a.a(this, ((g) getWidget()).n, ((g) getWidget()).bd()));
+            com.censivn.C3DEngine.A.g().a(this.texture, com.tsf.shell.manager.r.c.A.a(this, ((g) getWidget()).n, ((g) getWidget()).bd()));
         }
         if (getWidget() != null) {
-            getWidget().C();
+            ((com.tsf.shell.f.i.B) getWidget()).C();
         }
     }
 
     public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, f fVar) {
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.isCustomTexture()) {
-            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.a.a(launcherShortcutAppInfo, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.A.a(launcherShortcutAppInfo, aVar, fVar));
             return launcherShortcutAppInfo.texture;
         }
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.texture.id != 0) {
             com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture);
         }
         if (fVar.d.id == 0) {
-            com.censivn.C3DEngine.A.g().a(fVar.d, com.tsf.shell.manager.r.c.a.a(null, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(fVar.d, com.tsf.shell.manager.r.c.A.a(null, aVar, fVar));
         }
         return fVar.d;
     }
 
     @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo
     public Bitmap getIconBitmap() {
-        return com.tsf.shell.manager.r.c.a.a((LauncherShortcutAppInfo) getWidget().K(), ((g) getWidget()).n, ((g) getWidget()).bd());
+        return com.tsf.shell.manager.r.c.A.a((LauncherShortcutAppInfo) ((com.tsf.shell.f.i.B) getWidget()).K(), ((g) getWidget()).n, ((g) getWidget()).bd());
     }
 }

@@ -14,7 +14,7 @@ public class c extends com.tsf.shell.manager.action.toggle.B {
 
     @Override // com.tsf.shell.manager.action.toggle.B
     public void d() {
-        com.tsf.shell.manager.a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.1
+        com.tsf.shell.manager._a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.1
             @Override // com.tsf.shell.services.d.a
             public void a(com.c.a.a.a.a aVar) {
                 int iE = 1;
@@ -45,8 +45,8 @@ public class c extends com.tsf.shell.manager.action.toggle.B {
 
     @Override // com.tsf.shell.manager.action.toggle.B
     public void c() {
-        if (com.tsf.shell.manager.a.C.c().a()) {
-            com.tsf.shell.manager.a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.2
+        if (com.tsf.shell.manager._a.C.c().a()) {
+            com.tsf.shell.manager._a.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.c.2
                 @Override // com.tsf.shell.services.d.a
                 public void a(com.c.a.a.a.a aVar) {
                     switch (c.this.a) {

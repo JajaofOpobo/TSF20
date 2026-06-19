@@ -23,7 +23,7 @@ public class a extends j {
 
     public void b() {
         if (parent() == null) {
-            com.tsf.shell.manager.a.j.a(this);
+            com.tsf.shell.manager._a.j.a(this);
             position().x = com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(100.0f);
             position().y = com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.a(84.0f);
             this.a.position().x = com.censivn.C3DEngine.b.b.A.a(45.0f);

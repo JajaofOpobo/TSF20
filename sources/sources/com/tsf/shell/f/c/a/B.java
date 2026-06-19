@@ -63,7 +63,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         this.l = new ArrayList<>();
         this.m = new ArrayList<>();
         if (!fVar.a()) {
-            com.tsf.shell.manager.a.k.b(this);
+            com.tsf.shell.manager._a.k.b(this);
         }
         A();
     }
@@ -104,7 +104,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
 
     public void b(float f, float f2) {
         if (this.y) {
-            com.tsf.shell.manager.a.h.a(f, f2, this.z, this.A);
+            com.tsf.shell.manager._a.h.a(f, f2, this.z, this.A);
             return;
         }
         if (this.x) {
@@ -116,7 +116,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             }
             if (this.r.n.b(this.D.x, this.D.y) == -4) {
                 this.x = false;
-                com.tsf.shell.manager.a.h.w();
+                com.tsf.shell.manager._a.h.w();
                 this.y = true;
                 return;
             }
@@ -191,7 +191,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
 
     public void c() {
         if (this.y) {
-            com.tsf.shell.manager.a.h.x();
+            com.tsf.shell.manager._a.h.x();
             return;
         }
         if (!this.x && this.b) {
@@ -514,7 +514,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                 ((com.tsf.shell.f.i.b.e.b) iVar).aM();
             } else if (iVar instanceof com.tsf.shell.f.i.b.d.b) {
                 ((com.tsf.shell.f.i.b.d.b) iVar).aM();
-                com.tsf.shell.manager.a.k.c((com.tsf.shell.f.i.b.d.b) iVar);
+                com.tsf.shell.manager._a.k.c((com.tsf.shell.f.i.b.d.b) iVar);
             }
         }
         return zRemoveChild;

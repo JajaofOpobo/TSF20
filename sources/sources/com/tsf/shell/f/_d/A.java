@@ -14,7 +14,7 @@ public class A {
     public com.tsf.shell.f._d.b.A f;
 
     public A() {
-        com.tsf.shell.manager.a.v = this;
+        com.tsf.shell.manager._a.v = this;
         this.a = new m();
         this.c = new com.tsf.shell.f._d.d.A();
         this.b = new c();

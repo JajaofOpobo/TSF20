@@ -274,7 +274,7 @@ public class f extends ViewGroup {
     }
 
     public d.a getCurrentCellInfo() {
-        d dVarS = com.tsf.shell.manager.a.h.n().s();
+        d dVarS = com.tsf.shell.manager._a.h.n().s();
         if (dVarS == null) {
             return null;
         }

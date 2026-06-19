@@ -16,11 +16,11 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends a {
-    private com.tsf.shell.manager.a.f a;
+    private com.tsf.shell.manager._a.f a;
     private boolean b;
     private boolean p;
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.a.f fVar, boolean z) {
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager._a.f fVar, boolean z) {
         this(launcherShortcutAppInfo, com.tsf.shell.manager.o.b.a, fVar, z);
     }
 
@@ -29,7 +29,7 @@ public class g extends a {
         this.b = false;
     }
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.a.f fVar, boolean z) {
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager._a.f fVar, boolean z) {
         super(launcherShortcutAppInfo, aVar);
         this.b = false;
         this.a = fVar;
@@ -55,7 +55,7 @@ public class g extends a {
     public void onDrawChildStart() {
         super.onDrawChildEnd();
         if (this.b) {
-            com.tsf.shell.manager.a.v.f.h().a(this);
+            com.tsf.shell.manager._a.v.f.h().a(this);
         }
     }
 
@@ -63,21 +63,21 @@ public class g extends a {
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.b) {
-            com.tsf.shell.manager.a.v.f.h().b(this);
+            com.tsf.shell.manager._a.v.f.h().b(this);
         }
     }
 
     public void aX() {
         if (!this.b) {
             this.b = true;
-            com.tsf.shell.manager.a.v.f.a((com.tsf.shell.f.i.b.e.b) this);
+            com.tsf.shell.manager._a.v.f.a((com.tsf.shell.f.i.b.e.b) this);
         }
     }
 
     public void aY() {
         if (this.b) {
             this.b = false;
-            com.tsf.shell.manager.a.v.f.b(this);
+            com.tsf.shell.manager._a.v.f.b(this);
         }
     }
 
@@ -123,14 +123,14 @@ public class g extends a {
         return 0L;
     }
 
-    public static com.tsf.shell.manager.a.f a(LauncherShortcut3DInfo launcherShortcut3DInfo) {
+    public static com.tsf.shell.manager._a.f a(LauncherShortcut3DInfo launcherShortcut3DInfo) {
         ResolveInfo resolveInfo;
         ResolveInfo resolveInfo2 = null;
         Intent intent = launcherShortcut3DInfo.intent;
         ComponentName component = intent.getComponent();
-        com.tsf.shell.manager.a.f fVarB = com.tsf.shell.manager.bind.a.c().b(component);
+        com.tsf.shell.manager._a.f fVarB = com.tsf.shell.manager.bind.a.c().b(component);
         if (fVarB == null) {
-            com.tsf.shell.manager.a.f fVarA = com.tsf.shell.manager.bind.a.c().a(component);
+            com.tsf.shell.manager._a.f fVarA = com.tsf.shell.manager.bind.a.c().a(component);
             if (fVarA == null) {
                 PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
                 Intent intent2 = new Intent(intent.getAction(), (Uri) null);
@@ -150,11 +150,11 @@ public class g extends a {
                 }
                 ResolveInfo resolveInfoResolveActivity = resolveInfo == null ? packageManager.resolveActivity(intent, 0) : resolveInfo;
                 if (resolveInfoResolveActivity != null) {
-                    com.tsf.shell.manager.a.f fVar = new com.tsf.shell.manager.a.f(resolveInfoResolveActivity);
+                    com.tsf.shell.manager._a.f fVar = new com.tsf.shell.manager._a.f(resolveInfoResolveActivity);
                     com.tsf.shell.manager.bind.a.c().d(fVar);
                     return fVar;
                 }
-                com.tsf.shell.manager.a.f fVar2 = new com.tsf.shell.manager.a.f(component, launcherShortcut3DInfo.title);
+                com.tsf.shell.manager._a.f fVar2 = new com.tsf.shell.manager._a.f(component, launcherShortcut3DInfo.title);
                 com.tsf.shell.manager.bind.a.c().a(fVar2);
                 return fVar2;
             }
@@ -188,7 +188,7 @@ public class g extends a {
         return launcherShortcutAppInfo;
     }
 
-    public com.tsf.shell.manager.a.f bd() {
+    public com.tsf.shell.manager._a.f bd() {
         return this.a;
     }
 

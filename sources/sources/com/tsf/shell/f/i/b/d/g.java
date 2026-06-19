@@ -37,7 +37,7 @@ public class g extends com.tsf.shell.f.e.f.b {
 
     @Override // com.tsf.shell.f.e.f.b
     public com.censivn.C3DEngine.b.f.i d() {
-        return com.tsf.shell.manager.a.j.a();
+        return com.tsf.shell.manager._a.j.a();
     }
 
     public void a(com.tsf.shell.f.i.C cVar) {

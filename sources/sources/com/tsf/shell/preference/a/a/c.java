@@ -49,7 +49,7 @@ public class c extends i {
             public boolean a(boolean z) {
                 if (com.tsf.shell.manager.b.e.J() != z) {
                     com.tsf.shell.manager.b.e.b(Boolean.valueOf(z));
-                    com.tsf.shell.manager.a.h.g();
+                    com.tsf.shell.manager._a.h.g();
                     return true;
                 }
                 return true;
@@ -104,7 +104,7 @@ public class c extends i {
         this.f.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.c.7
             @Override // com.censivn.C3DEngine.b.e.a.C0027a
             public boolean a(boolean z) {
-                com.tsf.shell.manager.a.A.b();
+                com.tsf.shell.manager._a.A.b();
                 return true;
             }
         });
@@ -127,7 +127,7 @@ public class c extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        com.tsf.shell.manager.a.a.a(com.tsf.shell.manager.p.e.k).b();
+        com.tsf.shell.manager._a.a.a(com.tsf.shell.manager.p.e.k).b();
         this.k = com.tsf.shell.manager.b.e.P();
         this.l = com.tsf.shell.manager.b.e.O();
         this.m = com.tsf.shell.manager.b.e.N();
@@ -146,7 +146,7 @@ public class c extends i {
         } else {
             c(this.d);
         }
-        this.f.c(com.tsf.shell.manager.a.A.d());
+        this.f.c(com.tsf.shell.manager._a.A.d());
         this.h.c(com.tsf.shell.manager.b.e.ae());
         this.n = com.tsf.shell.manager.b.e.ab();
         this.i.k(this.n);
@@ -158,14 +158,14 @@ public class c extends i {
             @Override // java.lang.Runnable
             public void run() {
                 if (com.tsf.shell.manager.b.e.P() != c.this.k) {
-                    com.tsf.shell.manager.a.b.a(!c.this.k);
+                    com.tsf.shell.manager._a.b.a(!c.this.k);
                 }
                 if (com.tsf.shell.utils.g.c() && com.tsf.shell.manager.b.e.O() != c.this.l) {
-                    com.censivn.C3DEngine.b.c.e eVar = com.tsf.shell.manager.a.b;
+                    com.censivn.C3DEngine.b.c.e eVar = com.tsf.shell.manager._a.b;
                     com.censivn.C3DEngine.b.c.e.b(Home.b(), c.this.l, true);
                 }
                 if (com.tsf.shell.utils.g.b() && com.tsf.shell.manager.b.e.N() != c.this.m) {
-                    com.tsf.shell.manager.a.b.a((Activity) Home.b(), c.this.m, true);
+                    com.tsf.shell.manager._a.b.a((Activity) Home.b(), c.this.m, true);
                 }
             }
         });
@@ -177,7 +177,7 @@ public class c extends i {
         if (iE != this.n) {
             com.tsf.shell.manager.b.e.m(iE);
         }
-        com.tsf.shell.manager.a.o.a(zE, iE);
+        com.tsf.shell.manager._a.o.a(zE, iE);
     }
 
     public static class A extends com.censivn.C3DEngine.b.e.e {
@@ -191,9 +191,9 @@ public class c extends i {
             j(100);
             a(" %");
             k kVarA = com.censivn.C3DEngine.b.b.A.a(128.0f, 128.0f);
-            kVarA.textures().addElement(com.tsf.shell.manager.a.o.b().a());
+            kVarA.textures().addElement(com.tsf.shell.manager._a.o.b().a());
             k kVarA2 = com.censivn.C3DEngine.b.b.A.a(46.0f, 46.0f);
-            kVarA2.textures().addElement(com.tsf.shell.manager.a.o.b().b());
+            kVarA2.textures().addElement(com.tsf.shell.manager._a.o.b().b());
             this.b.addChild(kVarA);
             this.b.addChild(kVarA2);
             this.b.position().y = -com.censivn.C3DEngine.b.b.A.a(120.0f);

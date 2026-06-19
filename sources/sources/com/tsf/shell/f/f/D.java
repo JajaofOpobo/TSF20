@@ -39,7 +39,7 @@ public class D extends C<l> {
         } else {
             j.a(this.a);
         }
-        com.tsf.shell.manager.a.v.c.h();
+        com.tsf.shell.manager._a.v.c.h();
     }
 
     @Override // com.tsf.shell.f.f.C
@@ -60,13 +60,13 @@ public class D extends C<l> {
     public void a(int i, int i2) {
         this.b = true;
         com.censivn.C3DEngine.a.d.d().c().a(false);
-        if (com.tsf.shell.manager.a.h.n().t() != -1) {
-            com.tsf.shell.manager.a.h.s().a(i, i2);
+        if (com.tsf.shell.manager._a.h.n().t() != -1) {
+            com.tsf.shell.manager._a.h.s().a(i, i2);
         }
     }
 
     public void a() {
-        com.tsf.shell.manager.a.h.s().b(500);
+        com.tsf.shell.manager._a.h.s().b(500);
     }
 
     public void d() {

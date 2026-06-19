@@ -48,7 +48,7 @@ public class g extends f {
         }
     }
 
-    private void e() {
+    public void e() {
         this.b.b();
         com.censivn.C3DEngine.b.b.b layoutParams = this.b.getLayoutParams();
         layoutParams.h = this.b.minX();

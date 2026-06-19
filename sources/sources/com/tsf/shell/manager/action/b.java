@@ -32,7 +32,7 @@ public class b {
     }
 
     public b() {
-        com.tsf.shell.manager.a.s.a(new d.a() { // from class: com.tsf.shell.manager.action.b.1
+        com.tsf.shell.manager._a.s.a(new d.a() { // from class: com.tsf.shell.manager.action.b.1
             @Override // com.censivn.C3DEngine.b.c.d.a
             public void a() {
                 if (b.this.b_ != 0) {
@@ -94,23 +94,23 @@ public class b {
                 }
             });
         }
-        if (com.tsf.shell.manager.a.s.b() && !z) {
+        if (com.tsf.shell.manager._a.s.b() && !z) {
             this.b_ = i;
-            com.tsf.shell.manager.a.s.a();
+            com.tsf.shell.manager._a.s.a();
             return;
         }
         switch (i) {
             case 2:
-                com.tsf.shell.manager.a.h.z();
+                com.tsf.shell.manager._a.h.z();
                 break;
             case 3:
-                com.tsf.shell.manager.a.h.A();
+                com.tsf.shell.manager._a.h.A();
                 break;
             case 4:
-                com.tsf.shell.manager.a.b.d();
+                com.tsf.shell.manager._a.b.d();
                 break;
             case 5:
-                com.tsf.shell.manager.a.b.e();
+                com.tsf.shell.manager._a.b.e();
                 break;
             case 7:
                 Home.b().a(new Intent("android.search.action.GLOBAL_SEARCH"), (Object) null);
@@ -119,34 +119,34 @@ public class b {
                 Home.b().a(new Intent("android.speech.action.WEB_SEARCH"), (Object) null);
                 break;
             case 11:
-                com.tsf.shell.manager.a.h.R();
+                com.tsf.shell.manager._a.h.R();
                 break;
             case 12:
-                if (!com.tsf.shell.manager.a.h.E()) {
-                    com.tsf.shell.manager.a.i.a.show();
+                if (!com.tsf.shell.manager._a.h.E()) {
+                    com.tsf.shell.manager._a.i.a.show();
                 }
                 break;
             case 13:
-                if (com.tsf.shell.manager.a.h.E()) {
-                    com.tsf.shell.manager.a.h.t().c(0);
+                if (com.tsf.shell.manager._a.h.E()) {
+                    com.tsf.shell.manager._a.h.t().c(0);
                 } else {
-                    com.tsf.shell.manager.a.h.Q();
+                    com.tsf.shell.manager._a.h.Q();
                 }
                 break;
             case 14:
-                com.tsf.shell.manager.a.h.L();
+                com.tsf.shell.manager._a.h.L();
                 break;
             case 15:
                 Home.b().a(500);
                 break;
             case 16:
-                com.tsf.shell.manager.a.g.a.k();
+                com.tsf.shell.manager._a.g.a.k();
                 break;
             case 17:
-                com.tsf.shell.manager.a.g.b.c();
+                com.tsf.shell.manager._a.g.b.c();
                 break;
             case 18:
-                com.tsf.shell.manager.a.n.c(true);
+                com.tsf.shell.manager._a.n.c(true);
                 break;
             case 19:
                 PersonalizationActivity.a(Home.b(), "1", "theme_push_notifition_invalid", null, true);
@@ -157,53 +157,53 @@ public class b {
                 com.ksmobile.launcher.a.a.b.a(false, "tsflauncher_keyboard_click", "click", "1");
                 break;
             case 100:
-                com.tsf.shell.manager.a.h.s().h();
+                com.tsf.shell.manager._a.h.s().h();
                 break;
             case VEasing.Back.easeIn /* 200 */:
                 ThemeManager.mix.ui.show(1);
                 break;
             case 300:
-                if (com.tsf.shell.manager.a.h.E()) {
-                    com.tsf.shell.manager.a.h.t().c(1);
+                if (com.tsf.shell.manager._a.h.E()) {
+                    com.tsf.shell.manager._a.h.t().c(1);
                 } else {
-                    com.tsf.shell.manager.a.h.j().show();
+                    com.tsf.shell.manager._a.h.j().show();
                 }
                 break;
             case VEasing.Linear.easeNone /* 400 */:
                 SettingGesturePreferenceActivity.a();
                 break;
             case 500:
-                com.tsf.shell.manager.a.h.t().al();
+                com.tsf.shell.manager._a.h.t().al();
                 break;
             case 600:
                 com.tsf.shell.f.b.a();
                 break;
             case 700:
-                com.tsf.shell.manager.a.B.e().d();
+                com.tsf.shell.manager._a.B.e().d();
                 break;
             case 800:
-                com.tsf.shell.manager.a.B.b().d();
+                com.tsf.shell.manager._a.B.b().d();
                 break;
             case 900:
-                com.tsf.shell.manager.a.B.f().d();
+                com.tsf.shell.manager._a.B.f().d();
                 break;
             case 1000:
-                com.tsf.shell.manager.a.B.d().d();
+                com.tsf.shell.manager._a.B.d().d();
                 break;
             case 1100:
-                com.tsf.shell.manager.a.r.a();
+                com.tsf.shell.manager._a.r.a();
                 break;
             case 1200:
-                com.tsf.shell.manager.a.B.g().d();
+                com.tsf.shell.manager._a.B.g().d();
                 break;
             case 1300:
                 SettingAdvancedPerferenceActivity.a();
                 break;
             case 1400:
-                com.tsf.shell.manager.a.B.a().d();
+                com.tsf.shell.manager._a.B.a().d();
                 break;
             case 1500:
-                com.tsf.shell.manager.a.B.h().d();
+                com.tsf.shell.manager._a.B.h().d();
                 break;
             case 1600:
                 Intent intent = new Intent();
@@ -211,13 +211,13 @@ public class b {
                 Home.b().a(intent, (Object) null);
                 break;
             case 1700:
-                com.tsf.shell.manager.a.f.a().show();
+                com.tsf.shell.manager._a.f.a().show();
                 break;
             case 1800:
-                com.tsf.shell.manager.a.B.c().d();
+                com.tsf.shell.manager._a.B.c().d();
                 break;
             case ACRAConstants.DEFAULT_SOCKET_TIMEOUT /* 5000 */:
-                com.tsf.shell.manager.a.D.a();
+                com.tsf.shell.manager._a.D.a();
                 break;
         }
     }

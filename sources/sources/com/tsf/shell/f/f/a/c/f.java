@@ -49,7 +49,7 @@ public class f extends i {
                 if (cVar != null && cVar.K() != null) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
                     launcherShortcutAppInfo.isHide = false;
-                    com.tsf.shell.manager.a.w.c().a(launcherShortcutAppInfo, 64);
+                    com.tsf.shell.manager._a.w.c().a(launcherShortcutAppInfo, 64);
                 }
             }
         };
@@ -102,7 +102,7 @@ public class f extends i {
             if (cVar.K() != null) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
                 launcherShortcutAppInfo.isHide = true;
-                com.tsf.shell.manager.a.w.c().a(launcherShortcutAppInfo, 68);
+                com.tsf.shell.manager._a.w.c().a(launcherShortcutAppInfo, 68);
                 return;
             }
             return;

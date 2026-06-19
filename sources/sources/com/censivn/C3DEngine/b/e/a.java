@@ -30,7 +30,8 @@ public class a extends g {
         this.f = c0027a;
     }
 
-    public boolean e() {
+    // renamed from e() to avoid override conflict with parent
+    public boolean _e() {
         return this.d;
     }
 
@@ -54,7 +55,7 @@ public class a extends g {
 
     public void h() {
         this.e = this.d;
-        Bitmap bitmapA = x.a(this.d ? b.d.preference_check_on : b.d.preference_check_off, com.censivn.C3DEngine.b.b.A.a(58.0f), com.censivn.C3DEngine.b.b.A.a(58.0f));
+        Bitmap bitmapA = x.a(this.d ? com.tsf.b.d.preference_check_on : com.tsf.b.d.preference_check_off, com.censivn.C3DEngine.b.b.A.a(58.0f), com.censivn.C3DEngine.b.b.A.a(58.0f));
         com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
         bitmapA.recycle();
     }

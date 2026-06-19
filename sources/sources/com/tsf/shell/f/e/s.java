@@ -55,12 +55,12 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         a.removeFromParent();
         a.rotation().z = bVar.rotation().z;
         a.position().setAllFrom(bVar.position());
-        com.tsf.shell.manager.a.j.a(A);
+        com.tsf.shell.manager._a.j.a(A);
         a.e().a(Math.abs(bVar.minX() * bVar.u()), Math.abs(bVar.maxX() * bVar.u()), Math.abs(bVar.minY() * bVar.u()), Math.abs(bVar.maxY() * bVar.u()));
         a.e().setFocus();
         a.e().h();
         com.censivn.C3DEngine.b.c.b.a(A);
-        com.tsf.shell.manager.a.b.a(A);
+        com.tsf.shell.manager._a.b.a(A);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.a(255);
         com.censivn.C3DEngine.b.g.c.a(A);
@@ -98,7 +98,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             com.censivn.C3DEngine.b.g.c.a(this);
             com.censivn.C3DEngine.b.g.c.a(this, 250, dVar);
             com.censivn.C3DEngine.b.c.b.b(this);
-            com.tsf.shell.manager.a.b.b(A);
+            com.tsf.shell.manager._a.b.b(A);
             c = false;
         }
     }

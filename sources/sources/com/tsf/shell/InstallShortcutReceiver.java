@@ -17,7 +17,7 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if ("com.android.launcher.action.INSTALL_SHORTCUT".equals(intent.getAction())) {
             try {
-                com.tsf.shell.manager.l.a aVar = com.tsf.shell.manager.a.x.a;
+                com.tsf.shell.manager.l.a aVar = com.tsf.shell.manager._a.x.a;
                 com.tsf.shell.manager.l.a.a(intent, (a.C0130a) null);
             } catch (Exception e) {
             }

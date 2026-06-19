@@ -29,7 +29,7 @@ public class PrimeActivity extends Activity {
         this.b.setZOrderOnTop(true);
         com.tsf.shell.manager.b.e.a();
         g.a();
-        com.tsf.shell.manager.a.b = new com.censivn.C3DEngine.b.c.e(this);
+        com.tsf.shell.manager._a.b = new com.censivn.C3DEngine.b.c.e(this);
         new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.activity.PrimeActivity.1
             @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
             public void b() {

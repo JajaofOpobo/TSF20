@@ -138,7 +138,7 @@ public class B extends j implements F, b {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public boolean calTouchCollision(float f, float f2) {
-        if (!(this instanceof com.tsf.shell.f.i.b.e.b) && com.tsf.shell.manager.a.h.s().a()) {
+        if (!(this instanceof com.tsf.shell.f.i.b.e.b) && com.tsf.shell.manager._a.h.s().a()) {
             return false;
         }
         if (z() != null) {
@@ -584,7 +584,7 @@ public class B extends j implements F, b {
         float f2;
         float f3;
         float f4;
-        ArrayList<F> arrayListA = com.tsf.shell.manager.a.k.a();
+        ArrayList<F> arrayListA = com.tsf.shell.manager._a.k.a();
         int size = arrayListA.size() - 1;
         while (true) {
             int i3 = size;
@@ -604,8 +604,8 @@ public class B extends j implements F, b {
                 }
                 size = i3 - 1;
             } else {
-                if (z && com.tsf.shell.manager.a.h.m() == 2 && !com.tsf.shell.manager.a.h.n().ad()) {
-                    for (i iVar : com.tsf.shell.manager.a.h.G()) {
+                if (z && com.tsf.shell.manager._a.h.m() == 2 && !com.tsf.shell.manager._a.h.n().ad()) {
+                    for (i iVar : com.tsf.shell.manager._a.h.G()) {
                         if ((iVar instanceof com.tsf.shell.f.i.b.b.b) && iVar != this) {
                             B bVar = (B) iVar;
                             if (bVar.a()) {

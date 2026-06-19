@@ -63,7 +63,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
                 k.a(Home.b(), ((ThemeOnlineItems) ThemeFeaturedMenu.this.mThemes.get(i)).packageName);
             }
         });
-        this.mNotifItem = com.tsf.shell.manager.a.a.a(this, e.b);
+        this.mNotifItem = com.tsf.shell.manager._a.a.a(this, e.b);
         if (this.mNotifItem.a()) {
             for (ThemeOnlineItems themeOnlineItems : this.mThemes) {
                 if (this.mNotifItem.c == themeOnlineItems.versionCode) {

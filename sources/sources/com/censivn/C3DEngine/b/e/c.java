@@ -183,7 +183,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
             dVar2.h((-com.censivn.C3DEngine.b.b.A.a(30.0f)) - this.b.maxY());
             dVar2.b(300);
-            dVar2.a(com.censivn.C3DEngine.b.g.a.a);
+            dVar2.a(com.censivn.C3DEngine.b.g.A.a);
             com.censivn.C3DEngine.b.g.c.a(this.b);
             com.censivn.C3DEngine.b.g.c.a(this.b, 500, dVar2);
             f();

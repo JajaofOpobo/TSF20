@@ -15,13 +15,13 @@ import com.tsf.shell.widget.alarm.r;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class f {
-    public static com.tsf.shell.f.i.c.g a(Context context, String str, String str2, String str3, com.tsf.shell.manager.a.f fVar) {
+    public static com.tsf.shell.f.i.c.g a(Context context, String str, String str2, String str3, com.tsf.shell.manager._a.f fVar) {
         com.tsf.shell.f.i.c.g gVarA = a(str2, fVar);
         b(gVarA, context, str, str2, str3, fVar);
         return gVarA;
     }
 
-    private static void b(final com.tsf.shell.f.i.c.g gVar, Context context, String str, String str2, String str3, com.tsf.shell.manager.a.f fVar) {
+    private static void b(final com.tsf.shell.f.i.c.g gVar, Context context, String str, String str2, String str3, com.tsf.shell.manager._a.f fVar) {
         if (!gVar.e) {
             gVar.b = str3;
             gVar.a = str2;
@@ -63,11 +63,11 @@ public class f {
         }
     }
 
-    public static void a(com.tsf.shell.f.i.c.g gVar, Context context, String str, String str2, String str3, com.tsf.shell.manager.a.f fVar) {
+    public static void a(com.tsf.shell.f.i.c.g gVar, Context context, String str, String str2, String str3, com.tsf.shell.manager._a.f fVar) {
         b(gVar, context, str, str2, str3, fVar);
     }
 
-    public static com.tsf.shell.f.i.c.g a(String str, com.tsf.shell.manager.a.f fVar) {
+    public static com.tsf.shell.f.i.c.g a(String str, com.tsf.shell.manager._a.f fVar) {
         com.tsf.shell.f.i.c.g gVar;
         float f = 0.5f;
         float f2 = 0.45f;

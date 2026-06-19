@@ -159,13 +159,13 @@ public class ThemesMixManager {
             }
 
             @Override // com.tsf.shell.theme.inside.ThemeManager.ThemeListener
-            public void onThemeUpdate(String str) throws Throwable {
+            public void onThemeUpdate(String str) {
                 ArrayList arrayList = new ArrayList();
                 for (ThemeMixElementManager themeMixElementManager2 : ThemesMixManager.this.managerLists) {
                     if (themeMixElementManager2.themeUpdate(str)) {
                         Context contextCreatePackageContext = null;
                         try {
-                            contextCreatePackageContext = a.d().createPackageContext(themeMixElementManager2.getThemePackageName(), 3);
+                            contextCreatePackageContext = A.d().createPackageContext(themeMixElementManager2.getThemePackageName(), 3);
                         } catch (PackageManager.NameNotFoundException e) {
                         }
                         if (contextCreatePackageContext != null) {
@@ -191,19 +191,19 @@ public class ThemesMixManager {
     }
 
     public void showLoading() {
-        a.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.2
+        A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.a.a(x.c(b.i.tsf_loading_content));
+                com.tsf.shell.f.A.a(x.c(b.i.tsf_loading_content));
             }
         });
     }
 
     public void hideLoading() {
-        a.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.3
+        A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.a.a();
+                com.tsf.shell.f.A.a();
             }
         });
     }
@@ -214,7 +214,7 @@ public class ThemesMixManager {
     public void resetTheme(int i, String str) throws Throwable {
         Context contextCreatePackageContext = null;
         try {
-            contextCreatePackageContext = a.d().createPackageContext(str, 3);
+            contextCreatePackageContext = A.d().createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e) {
         }
         if (contextCreatePackageContext != null) {
@@ -226,7 +226,7 @@ public class ThemesMixManager {
     public void setTheme(int i, String str, boolean z) {
         Context contextCreatePackageContext = null;
         try {
-            contextCreatePackageContext = a.d().createPackageContext(str, 3);
+            contextCreatePackageContext = A.d().createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e) {
         }
         if (contextCreatePackageContext != null) {
@@ -236,7 +236,7 @@ public class ThemesMixManager {
 
     public void setTheme(final int i, final Context context, final boolean z) {
         if (z) {
-            com.tsf.shell.f.a.a(x.c(b.i.tsf_loading_content));
+            com.tsf.shell.f.A.a(x.c(b.i.tsf_loading_content));
         }
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.4
             @Override // java.lang.Runnable
@@ -292,7 +292,7 @@ public class ThemesMixManager {
                         ThemesMixManager.this.unreadCount.setTheme(themeInfo);
                     }
                     if (ThemeElementType.getParserState(i, ThemeElementType.TYPE_WALLPAPER)) {
-                        ShellWallpaperManager shellWallpaperManager = com.tsf.shell.manager.a.f;
+                        ShellWallpaperManager shellWallpaperManager = com.tsf.shell.manager.A.f;
                         ShellWallpaperManager.a(themeInfo.packagename);
                     }
                     if (ThemeElementType.getParserState(i, ThemeElementType.TYPE_WIDGET_RESIZE)) {
@@ -311,9 +311,9 @@ public class ThemesMixManager {
             }
         };
         if (z) {
-            a.a().b(runnable, 500L);
+            A.a().b(runnable, 500L);
         } else {
-            a.a().c(runnable);
+            A.a().c(runnable);
         }
     }
 }

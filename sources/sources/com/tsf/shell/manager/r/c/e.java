@@ -241,7 +241,7 @@ public class e {
     }
 
     public void d(com.tsf.shell.f.i.B bVar) {
-        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.a.h.d(bVar.K().screen);
+        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager._a.h.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
         if (gVarD.ad()) {
@@ -270,14 +270,14 @@ public class e {
             resolveInfo = listQueryIntentActivities.get(0);
         }
         if (resolveInfo != null) {
-            com.tsf.shell.manager.a.f fVar = new com.tsf.shell.manager.a.f(resolveInfo);
+            com.tsf.shell.manager._a.f fVar = new com.tsf.shell.manager._a.f(resolveInfo);
             com.tsf.shell.manager.bind.a.c().g(fVar);
             final ArrayList arrayList = new ArrayList();
             arrayList.add(fVar);
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.e.5
                 @Override // java.lang.Runnable
                 public void run() {
-                    e.this.d((ArrayList<com.tsf.shell.manager.a.f>) arrayList);
+                    e.this.d((ArrayList<com.tsf.shell.manager._a.f>) arrayList);
                     if (e.this.a(itemInfo.packagename) != null) {
                         e.this.a(itemInfo, abstractC0146a);
                     } else {
@@ -295,28 +295,28 @@ public class e {
     public void d() {
     }
 
-    public void a(final ArrayList<com.tsf.shell.manager.a.f> arrayList) {
+    public void a(final ArrayList<com.tsf.shell.manager._a.f> arrayList) {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.e.6
             @Override // java.lang.Runnable
             public void run() {
-                e.this.d((ArrayList<com.tsf.shell.manager.a.f>) arrayList);
+                e.this.d((ArrayList<com.tsf.shell.manager._a.f>) arrayList);
             }
         });
     }
 
-    public void b(final ArrayList<com.tsf.shell.manager.a.f> arrayList) {
+    public void b(final ArrayList<com.tsf.shell.manager._a.f> arrayList) {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.e.7
             @Override // java.lang.Runnable
             public void run() {
-                e.this.d((ArrayList<com.tsf.shell.manager.a.f>) arrayList);
+                e.this.d((ArrayList<com.tsf.shell.manager._a.f>) arrayList);
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void d(ArrayList<com.tsf.shell.manager.a.f> arrayList) {
+    public void d(ArrayList<com.tsf.shell.manager._a.f> arrayList) {
         Context contextD = com.censivn.C3DEngine.A.d();
-        for (com.tsf.shell.manager.a.f fVar : arrayList) {
+        for (com.tsf.shell.manager._a.f fVar : arrayList) {
             try {
                 String packageName = fVar.b.getPackageName();
                 String className = fVar.b.getClassName();
@@ -350,12 +350,12 @@ public class e {
         }
     }
 
-    public void c(final ArrayList<com.tsf.shell.manager.a.f> arrayList) {
+    public void c(final ArrayList<com.tsf.shell.manager._a.f> arrayList) {
         com.tsf.shell.b.a.a("WidgetManager", "bind3dWidgetUpdate size:" + arrayList.size());
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.e.8
             @Override // java.lang.Runnable
             public void run() {
-                for (com.tsf.shell.manager.a.f fVar : arrayList) {
+                for (com.tsf.shell.manager._a.f fVar : arrayList) {
                     com.tsf.shell.f.i.c.g gVarA = e.this.a(fVar.b.getPackageName());
                     if (gVarA != null && !gVarA.e) {
                         try {
@@ -379,13 +379,13 @@ public class e {
         });
     }
 
-    public void a(final ArrayList<com.tsf.shell.manager.a.f> arrayList, boolean z) {
+    public void a(final ArrayList<com.tsf.shell.manager._a.f> arrayList, boolean z) {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.e.9
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
-                    com.tsf.shell.f.i.c.g gVarA = e.this.a(((com.tsf.shell.manager.a.f) it.next()).b.getPackageName());
+                    com.tsf.shell.f.i.c.g gVarA = e.this.a(((com.tsf.shell.manager._a.f) it.next()).b.getPackageName());
                     if (gVarA != null) {
                         gVarA.b(false);
                         if (!gVarA.j) {

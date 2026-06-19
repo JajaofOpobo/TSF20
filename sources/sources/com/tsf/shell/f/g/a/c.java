@@ -25,18 +25,18 @@ public class c extends com.tsf.shell.f.e._g.a.b {
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.c.1
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
-                return com.tsf.shell.manager.a.v.a.C0126a.g();
+                return com.tsf.shell.manager._a.v.a.C0126a.g();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager.a.v.a.C0126a.a(true);
+                com.tsf.shell.manager._a.v.a.C0126a.a(true);
                 c.this.b.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager.a.v.a.C0126a.a(false);
+                com.tsf.shell.manager._a.v.a.C0126a.a(false);
                 c.this.b.d();
             }
         };
@@ -49,31 +49,31 @@ public class c extends com.tsf.shell.f.e._g.a.b {
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 com.tsf.shell.f.f.h.b(true);
-                com.tsf.shell.manager.a.v.a.C0126a.d();
+                com.tsf.shell.manager._a.v.a.C0126a.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
                 com.tsf.shell.f.f.h.b(false);
-                com.tsf.shell.manager.a.v.a.C0126a.d();
+                com.tsf.shell.manager._a.v.a.C0126a.d();
             }
         };
         this.c = new a.C0095a(b.d.effect_setting_desktop_menu_swing, x.c(b.i.menu_effect_swing), new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.c.3
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
-                return com.tsf.shell.manager.a.v.c.b();
+                return com.tsf.shell.manager._a.v.c.b();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager.a.v.c.c();
-                com.tsf.shell.manager.a.v.a.C0126a.d();
+                com.tsf.shell.manager._a.v.c.c();
+                com.tsf.shell.manager._a.v.a.C0126a.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager.a.v.c.d();
-                com.tsf.shell.manager.a.v.a.C0126a.d();
+                com.tsf.shell.manager._a.v.c.d();
+                com.tsf.shell.manager._a.v.a.C0126a.d();
             }
         });
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_random, x.c(b.i.text_random), c0096a));
@@ -84,7 +84,7 @@ public class c extends com.tsf.shell.f.e._g.a.b {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.c.4
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager.a.v.a.C0126a.i();
+                return com.tsf.shell.manager._a.v.a.C0126a.i();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
@@ -96,7 +96,7 @@ public class c extends com.tsf.shell.f.e._g.a.b {
                 } else {
                     hVar = iVar;
                 }
-                l lVarA = com.tsf.shell.manager.a.v.a.C0126a.a(i);
+                l lVarA = com.tsf.shell.manager._a.v.a.C0126a.a(i);
                 h hVar2 = (h) hVar;
                 if (lVarA.i()) {
                     hVar2.g();
@@ -116,13 +116,13 @@ public class c extends com.tsf.shell.f.e._g.a.b {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.c.5
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                l lVarA = com.tsf.shell.manager.a.v.a.C0126a.a(i);
+                l lVarA = com.tsf.shell.manager._a.v.a.C0126a.a(i);
                 w.b();
-                com.tsf.shell.manager.a.v.a.C0126a.c(lVarA);
+                com.tsf.shell.manager._a.v.a.C0126a.c(lVarA);
                 c.this.b.d();
             }
         });
-        this.d = com.tsf.shell.manager.a.a.a(this, com.tsf.shell.manager.p.e.f);
+        this.d = com.tsf.shell.manager._a.a.a(this, com.tsf.shell.manager.p.e.f);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
@@ -144,20 +144,20 @@ public class c extends com.tsf.shell.f.e._g.a.b {
     public void onHide() {
         super.onHide();
         this.d.b();
-        int i = com.tsf.shell.manager.a.v.a.C0126a.i();
+        int i = com.tsf.shell.manager._a.v.a.C0126a.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager.a.v.a.C0126a.a(i2).l();
+            com.tsf.shell.manager._a.v.a.C0126a.a(i2).l();
         }
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         super.onRecycle();
-        int i = com.tsf.shell.manager.a.v.a.C0126a.i();
+        int i = com.tsf.shell.manager._a.v.a.C0126a.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager.a.v.a.C0126a.a(i2).h();
+            com.tsf.shell.manager._a.v.a.C0126a.a(i2).h();
         }
         h.b();
-        com.tsf.shell.manager.a.v.a.C0126a.j();
+        com.tsf.shell.manager._a.v.a.C0126a.j();
     }
 }

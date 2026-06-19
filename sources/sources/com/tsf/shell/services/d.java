@@ -87,7 +87,7 @@ public class d implements ServiceConnection {
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
-            com.tsf.shell.manager.a.d.c.a(intent.getAction(), intent.getExtras().getInt("status"));
+            com.tsf.shell.manager._a.d.c.a(intent.getAction(), intent.getExtras().getInt("status"));
         }
     }
 

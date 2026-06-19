@@ -41,8 +41,8 @@ public class a {
 
     public static void b(int i) {
         a = d(i);
-        if (d != null && com.tsf.shell.manager.a.h.n().t() == -1) {
-            if (d != com.tsf.shell.manager.a.f.g()) {
+        if (d != null && com.tsf.shell.manager._a.h.n().t() == -1) {
+            if (d != com.tsf.shell.manager._a.f.g()) {
                 if (a == 100) {
                     d.removeFromParent();
                 } else if (d.parent() == null) {
@@ -61,7 +61,7 @@ public class a {
             d = new k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             d.setDefaultColor(new Color4(0, 0, 0, 255));
         } else {
-            d = com.tsf.shell.manager.a.f.g();
+            d = com.tsf.shell.manager._a.f.g();
         }
     }
 
@@ -115,7 +115,7 @@ public class a {
     }
 
     public void d() {
-        a(com.tsf.shell.manager.a.h.n());
+        a(com.tsf.shell.manager._a.h.n());
     }
 
     public void a(g gVar) {

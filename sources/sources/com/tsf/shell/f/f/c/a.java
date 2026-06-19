@@ -89,7 +89,7 @@ public class a implements b.a, e.a {
     }
 
     public a() {
-        com.tsf.shell.manager.a.b.a(this);
+        com.tsf.shell.manager._a.b.a(this);
         this.c = new j() { // from class: com.tsf.shell.f.f.c.a.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
@@ -168,7 +168,7 @@ public class a implements b.a, e.a {
         com.censivn.C3DEngine.b.c.b.a(this);
         this.e = true;
         gVar.addChildAt(this.c, 0);
-        this.m = com.tsf.shell.manager.a.q.a(this.m, "Desktop reference grid");
+        this.m = com.tsf.shell.manager._a.q.a(this.m, "Desktop reference grid");
         this.c.children().clear();
         this.a.a.removeFromParent();
         this.c.addChild(this.a.a);
@@ -258,7 +258,7 @@ public class a implements b.a, e.a {
             c.a(this.c);
             c.a(this.c, 300, dVar);
             this.f = true;
-            com.tsf.shell.manager.a.q.b(this.m);
+            com.tsf.shell.manager._a.q.b(this.m);
         }
     }
 

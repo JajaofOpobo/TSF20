@@ -44,7 +44,7 @@ public class f extends com.tsf.shell.f.f.l {
 
     @Override // com.tsf.shell.f.f.l
     public void b(float f, float f2) {
-        boolean zB = com.tsf.shell.manager.a.h.s().b();
+        boolean zB = com.tsf.shell.manager._a.h.s().b();
         final float fB = this.d.b();
         if (zB) {
             if (this.e != 1) {

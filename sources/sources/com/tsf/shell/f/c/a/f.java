@@ -119,12 +119,12 @@ public class f implements e.a {
         this.Z = false;
         this.af = false;
         this.Y = z;
-        if (!z && com.tsf.shell.manager.a.g.c() != 1) {
+        if (!z && com.tsf.shell.manager._a.g.c() != 1) {
             z2 = false;
         }
         this.Z = z2;
         if (!z) {
-            com.tsf.shell.manager.a.b.a(this);
+            com.tsf.shell.manager._a.b.a(this);
         }
         if (z) {
             this.af = false;
@@ -526,7 +526,7 @@ public class f implements e.a {
             }
         }
         a(com.tsf.shell.manager.b.e.b(), false);
-        com.tsf.shell.manager.a.h.c().a(new o.a() { // from class: com.tsf.shell.f.c.a.f.14
+        com.tsf.shell.manager._a.h.c().a(new o.a() { // from class: com.tsf.shell.f.c.a.f.14
             @Override // com.tsf.shell.f.f.o.a
             public void a(com.tsf.shell.f.f.g gVar) {
                 if (gVar.t() == -1) {
@@ -547,7 +547,7 @@ public class f implements e.a {
 
             @Override // com.tsf.shell.f.f.o.a
             public void b() {
-                if (!f.this.af && !f.this.ad && com.tsf.shell.manager.a.h.n().t() != -1) {
+                if (!f.this.af && !f.this.ad && com.tsf.shell.manager._a.h.n().t() != -1) {
                     f.this.x();
                 }
             }
@@ -573,7 +573,7 @@ public class f implements e.a {
             this.F.a(c0080aA.b);
             this.E.removeFromParent();
             this.E.position().setAllFrom(this.t.position());
-            com.tsf.shell.manager.a.j.a(this.E);
+            com.tsf.shell.manager._a.j.a(this.E);
         }
     }
 

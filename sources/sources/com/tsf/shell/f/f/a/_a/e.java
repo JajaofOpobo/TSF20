@@ -26,7 +26,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
         this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.tsf.shell.f.f.a._a.e.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                com.tsf.shell.manager.a.d.a(7, true);
+                com.tsf.shell.manager._a.d.a(7, true);
             }
         });
         this.a.addChild(this.b);
@@ -45,7 +45,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
         this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.f.f.a._a.e.3
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                com.tsf.shell.manager.a.d.a(8, true);
+                com.tsf.shell.manager._a.d.a(8, true);
             }
         });
         this.e = new k(com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(61.0f), z) { // from class: com.tsf.shell.f.f.a._a.e.4

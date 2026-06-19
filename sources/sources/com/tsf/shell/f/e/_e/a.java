@@ -50,7 +50,7 @@ public class a extends j {
             public void a() {
                 a.this.visible(false);
                 if (!a.this.d) {
-                    com.tsf.shell.manager.a.j.b(a.this);
+                    com.tsf.shell.manager._a.j.b(a.this);
                 }
             }
         };
@@ -84,9 +84,9 @@ public class a extends j {
             this.b.updatePointsVBO();
             this.a.calAABB(6.0f, 1.0f, 1.0f);
             this.b.calAABB(6.0f, 1.0f, 1.0f);
-            com.tsf.shell.manager.a.j.a(this);
-            com.tsf.shell.manager.a.k.b(this.a);
-            com.tsf.shell.manager.a.k.b(this.b);
+            com.tsf.shell.manager._a.j.a(this);
+            com.tsf.shell.manager._a.k.b(this.a);
+            com.tsf.shell.manager._a.k.b(this.b);
             this.a.position().x = com.censivn.C3DEngine.b.b.A.z;
             this.b.position().x = com.censivn.C3DEngine.b.b.A.A;
         }
@@ -100,8 +100,8 @@ public class a extends j {
         if (this.d) {
             this.d = false;
             e();
-            com.tsf.shell.manager.a.k.c(this.a);
-            com.tsf.shell.manager.a.k.c(this.b);
+            com.tsf.shell.manager._a.k.c(this.a);
+            com.tsf.shell.manager._a.k.c(this.b);
         }
     }
 

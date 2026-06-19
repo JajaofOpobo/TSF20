@@ -34,7 +34,7 @@ public class D {
 
     public void a() {
         this.a.clear();
-        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.a.w.d().a()) {
+        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager._a.w.d().a()) {
             B bVar2 = new B();
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 bVar2.c = bVar.K().title;
@@ -47,7 +47,7 @@ public class D {
     }
 
     public void b() {
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager.a.w.a().d();
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager._a.w.a().d();
         ArrayList<com.tsf.shell.f.i.b.e.g> arrayList = new ArrayList<>();
         for (com.tsf.shell.f.i.b.e.g gVar : arrayListD) {
             if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
@@ -65,7 +65,7 @@ public class D {
                 gVar.rotation().setAll(0.0f, 0.0f, 0.0f);
             }
         }
-        com.tsf.shell.manager.a.w.d().b();
+        com.tsf.shell.manager._a.w.d().b();
         for (B bVar : this.a) {
             if (bVar.b != null) {
                 ArrayList<com.tsf.shell.f.i.b.e.b> arrayList2 = new ArrayList<>();
@@ -73,7 +73,7 @@ public class D {
                     a(componentName, arrayList, arrayList2);
                 }
                 if (!arrayList2.isEmpty()) {
-                    com.tsf.shell.manager.a.h.t().a(bVar.c, arrayList2, false);
+                    com.tsf.shell.manager._a.h.t().a(bVar.c, arrayList2, false);
                 }
             } else {
                 Iterator<com.tsf.shell.f.i.b.e.g> it = arrayList.iterator();
@@ -81,7 +81,7 @@ public class D {
                     if (it.hasNext()) {
                         com.tsf.shell.f.i.b.e.g next = it.next();
                         if (next.bd().b.equals(bVar.a)) {
-                            com.tsf.shell.manager.a.w.d().a(next);
+                            com.tsf.shell.manager._a.w.d().a(next);
                             arrayList.remove(next);
                             break;
                         }
@@ -91,14 +91,14 @@ public class D {
         }
         Iterator<com.tsf.shell.f.i.b.e.g> it2 = arrayList.iterator();
         while (it2.hasNext()) {
-            com.tsf.shell.manager.a.w.d().a(it2.next());
+            com.tsf.shell.manager._a.w.d().a(it2.next());
         }
-        com.tsf.shell.manager.a.h.t().aD();
+        com.tsf.shell.manager._a.h.t().aD();
     }
 
     public AsyncTask a(A aVar) {
         ArrayList arrayList = new ArrayList();
-        for (com.tsf.shell.f.i.b.e.g gVar : com.tsf.shell.manager.a.w.a().d()) {
+        for (com.tsf.shell.f.i.b.e.g gVar : com.tsf.shell.manager._a.w.a().d()) {
             if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
                 arrayList.add(gVar.bd().b.getPackageName());
             }
@@ -107,7 +107,7 @@ public class D {
     }
 
     public void c() {
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager.a.w.a().d();
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager._a.w.a().d();
         ArrayList arrayList = new ArrayList();
         for (com.tsf.shell.f.i.b.e.g gVar : arrayListD) {
             if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
@@ -124,18 +124,18 @@ public class D {
                 gVar.scale().setAll(1.0f, 1.0f, 1.0f);
             }
         }
-        com.tsf.shell.manager.a.w.d().b();
+        com.tsf.shell.manager._a.w.d().b();
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.manager.a.w.d().a((com.tsf.shell.f.i.b.e.g) it.next());
+            com.tsf.shell.manager._a.w.d().a((com.tsf.shell.f.i.b.e.g) it.next());
         }
-        com.tsf.shell.manager.a.h.t().aD();
-        com.tsf.shell.manager.a.h.t().ao().c();
-        com.tsf.shell.manager.a.h.t().ao().d();
+        com.tsf.shell.manager._a.h.t().aD();
+        com.tsf.shell.manager._a.h.t().ao().c();
+        com.tsf.shell.manager._a.h.t().ao().d();
     }
 
     public void a(d.a aVar) {
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager.a.w.a().d();
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayListD = com.tsf.shell.manager._a.w.a().d();
         ArrayList<com.tsf.shell.f.i.b.e.g> arrayList = new ArrayList<>();
         for (com.tsf.shell.f.i.b.e.g gVar : arrayListD) {
             if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
@@ -152,7 +152,7 @@ public class D {
                 gVar.scale().setAll(1.0f, 1.0f, 1.0f);
             }
         }
-        com.tsf.shell.manager.a.w.d().b();
+        com.tsf.shell.manager._a.w.d().b();
         for (d.b bVar : aVar.b) {
             ArrayList<com.tsf.shell.f.i.b.e.b> arrayList2 = new ArrayList<>();
             Iterator<String> it = bVar.b.iterator();
@@ -160,7 +160,7 @@ public class D {
                 a(it.next(), arrayList, arrayList2);
             }
             if (!arrayList2.isEmpty()) {
-                com.tsf.shell.manager.a.h.t().a(bVar.a, arrayList2, true);
+                com.tsf.shell.manager._a.h.t().a(bVar.a, arrayList2, true);
             }
         }
         ArrayList<com.tsf.shell.f.i.b.e.b> arrayList3 = new ArrayList<>();
@@ -174,15 +174,15 @@ public class D {
             arrayList.remove(it2.next());
         }
         if (!arrayList3.isEmpty()) {
-            com.tsf.shell.manager.a.h.t().a(x.c(b.i.text_system), arrayList3, true);
+            com.tsf.shell.manager._a.h.t().a(x.c(b.i.text_system), arrayList3, true);
         }
         Iterator<com.tsf.shell.f.i.b.e.g> it3 = arrayList.iterator();
         while (it3.hasNext()) {
-            com.tsf.shell.manager.a.w.d().a(it3.next());
+            com.tsf.shell.manager._a.w.d().a(it3.next());
         }
-        com.tsf.shell.manager.a.h.t().aD();
-        com.tsf.shell.manager.a.h.t().ao().c();
-        com.tsf.shell.manager.a.h.t().ao().d();
+        com.tsf.shell.manager._a.h.t().aD();
+        com.tsf.shell.manager._a.h.t().ao().c();
+        com.tsf.shell.manager._a.h.t().ao().d();
     }
 
     private void a(String str, ArrayList<com.tsf.shell.f.i.b.e.g> arrayList, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList2) {

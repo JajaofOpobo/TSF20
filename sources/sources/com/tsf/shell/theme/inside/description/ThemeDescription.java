@@ -52,7 +52,7 @@ public class ThemeDescription {
 
     public void relecyIconTexture() {
         if (this.iconTexture != null) {
-            a.g().a(this.iconTexture);
+            A.g().a(this.iconTexture);
             this.iconTexture = null;
         }
     }

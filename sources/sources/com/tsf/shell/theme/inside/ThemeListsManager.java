@@ -104,7 +104,7 @@ public class ThemeListsManager {
                 this.name = resolveInfo.activityInfo.name;
             }
             try {
-                this.context = a.d().createPackageContext(str, 3);
+                this.context = A.d().createPackageContext(str, 3);
             } catch (PackageManager.NameNotFoundException e) {
                 e.printStackTrace();
             }
@@ -126,20 +126,20 @@ public class ThemeListsManager {
                 Canvas canvas = new Canvas(bitmapA);
                 canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
                 b.c.a(canvas, getIcon(), bitmapA2, true);
-                this.iconTexture = a.g().a(bitmapA, true);
+                this.iconTexture = A.g().a(bitmapA, true);
             }
             return this.iconTexture;
         }
 
         public void relecyIconTexture() {
             if (this.iconTexture != null) {
-                a.g().a(this.iconTexture);
+                A.g().a(this.iconTexture);
                 this.iconTexture = null;
             }
         }
 
         private Bitmap getIcon() {
-            return com.tsf.shell.manager.r.c.a.a(this.info, b.c);
+            return com.tsf.shell.manager.r.c.A.a(this.info, b.c);
         }
     }
 }

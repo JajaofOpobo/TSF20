@@ -115,11 +115,11 @@ public class j extends b {
                     com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.g);
                     this.b.setAnimationObjectState(false);
                     this.b.textures().clear();
-                    this.b.textures().addElement(com.tsf.shell.manager.a.d.c.b());
+                    this.b.textures().addElement(com.tsf.shell.manager._a.d.c.b());
                     break;
                 case 1:
                     this.b.textures().clear();
-                    this.b.textures().addElement(com.tsf.shell.manager.a.d.c.c());
+                    this.b.textures().addElement(com.tsf.shell.manager._a.d.c.c());
                     this.b.setAnimationObjectState(true);
                     break;
                 case 2:
@@ -127,7 +127,7 @@ public class j extends b {
                     com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.e);
                     this.b.setAnimationObjectState(false);
                     this.b.textures().clear();
-                    this.b.textures().addElement(com.tsf.shell.manager.a.d.c.b());
+                    this.b.textures().addElement(com.tsf.shell.manager._a.d.c.b());
                     break;
             }
         }
@@ -150,7 +150,7 @@ public class j extends b {
             bitmapCreateTextureBitmap.recycle();
         }
         if (this.b.textures().size() == 0) {
-            this.b.textures().addElement(com.tsf.shell.manager.a.d.c.b());
+            this.b.textures().addElement(com.tsf.shell.manager._a.d.c.b());
         }
         this.b.visible(true);
         this.k.visible(true);

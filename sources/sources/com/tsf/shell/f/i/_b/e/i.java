@@ -48,7 +48,7 @@ public class i extends b {
 
     @Override // com.tsf.shell.f.i._b.e.b
     protected void k() {
-        com.tsf.shell.manager.a.d.c.a(this);
+        com.tsf.shell.manager._a.d.c.a(this);
     }
 
     public void a(j jVar) {
@@ -61,7 +61,7 @@ public class i extends b {
 
     @Override // com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void g() {
-        com.tsf.shell.manager.a.d.c.b(this);
+        com.tsf.shell.manager._a.d.c.b(this);
         super.g();
     }
 }

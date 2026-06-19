@@ -40,7 +40,7 @@ public class c extends com.tsf.shell.f.e._g.a.d {
             @Override // com.censivn.C3DEngine.b.e.h.a
             public boolean a(int i) {
                 c.this.d = i;
-                com.tsf.shell.manager.a.f.b(i);
+                com.tsf.shell.manager._a.f.b(i);
                 return true;
             }
         });
@@ -67,14 +67,14 @@ public class c extends com.tsf.shell.f.e._g.a.d {
         super.onShow();
         a();
         this.c.f();
-        this.d = com.tsf.shell.manager.a.f.j();
+        this.d = com.tsf.shell.manager._a.f.j();
         this.c.k(this.d);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onHideComplete() {
         recycle();
-        com.tsf.shell.manager.a.f.c(this.d);
+        com.tsf.shell.manager._a.f.c(this.d);
     }
 
     @Override // com.tsf.shell.f.e._g.a.d

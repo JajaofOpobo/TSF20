@@ -104,7 +104,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
     public void a(int i) {
         if (i == a) {
-            g gVarN = com.tsf.shell.manager.a.h.n();
+            g gVarN = com.tsf.shell.manager._a.h.n();
             if (gVarN != null && gVarN.r() > 0) {
                 a(c(gVarN), true);
                 return;
@@ -117,11 +117,11 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     private float b(g gVar) {
-        return (gVar.r() - 1) / (com.tsf.shell.manager.a.h.l() - 2);
+        return (gVar.r() - 1) / (com.tsf.shell.manager._a.h.l() - 2);
     }
 
     private float c(g gVar) {
-        return ((gVar.r() - 1) - gVar.g) / (com.tsf.shell.manager.a.h.l() - 2);
+        return ((gVar.r() - 1) - gVar.g) / (com.tsf.shell.manager._a.h.l() - 2);
     }
 
     public static void a(String str) {
@@ -143,8 +143,8 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             } catch (Exception e2) {
                 e2.printStackTrace();
             }
-            if (com.tsf.shell.manager.a.f != null) {
-                com.tsf.shell.manager.a.f.e();
+            if (com.tsf.shell.manager._a.f != null) {
+                com.tsf.shell.manager._a.f.e();
             }
         }
     }
@@ -154,10 +154,10 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         if (gVar.r() > 0) {
             int iR = gVar.r() - 1;
             float f = z ? 0.0f : gVar.g;
-            if (com.tsf.shell.manager.a.h.l() == 2) {
+            if (com.tsf.shell.manager._a.h.l() == 2) {
                 fL = 0.5f;
             } else {
-                fL = (iR - f) / (com.tsf.shell.manager.a.h.l() - 2);
+                fL = (iR - f) / (com.tsf.shell.manager._a.h.l() - 2);
             }
             if (z2) {
                 a(fL);

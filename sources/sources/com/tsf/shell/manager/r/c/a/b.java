@@ -12,8 +12,8 @@ import com.tsf.shell.manager.r.c.c;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
     public static void a(final g gVar, final float f, final float f2, final a.AbstractC0146a abstractC0146a) {
-        if (com.tsf.shell.manager.a.h.F() == -1) {
-            com.tsf.shell.manager.a.h.a(com.tsf.shell.manager.a.h.o(), (Runnable) null, new Runnable() { // from class: com.tsf.shell.manager.r.c.a.b.1
+        if (com.tsf.shell.manager._a.h.F() == -1) {
+            com.tsf.shell.manager._a.h.a(com.tsf.shell.manager._a.h.o(), (Runnable) null, new Runnable() { // from class: com.tsf.shell.manager.r.c.a.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     b.a(gVar, f, f2, abstractC0146a);
@@ -24,7 +24,7 @@ public class b {
                 gVar.k();
                 return;
             }
-            ItemInfo itemInfoA = a(gVar, com.tsf.shell.manager.a.h.F(), f, f2, f, f2, 1.0f, 1.0f, 0.0f, 0.0f);
+            ItemInfo itemInfoA = a(gVar, com.tsf.shell.manager._a.h.F(), f, f2, f, f2, 1.0f, 1.0f, 0.0f, 0.0f);
             if (itemInfoA != null) {
                 a.a(gVar, itemInfoA, false, abstractC0146a);
             }

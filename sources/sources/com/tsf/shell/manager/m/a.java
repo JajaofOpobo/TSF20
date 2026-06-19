@@ -184,7 +184,7 @@ public class a extends com.censivn.C3DEngine.b.b.A.c {
                 a.this.replaceChild(this.g, a.this.a);
                 this.g.position().setAllFrom(this.b);
                 this.g.setAnimationObjectState(true);
-                com.tsf.shell.manager.a.j.a(this.g);
+                com.tsf.shell.manager._a.j.a(this.g);
                 this.d = true;
                 com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.g;
                 if (cVar.A().e()) {
@@ -208,7 +208,7 @@ public class a extends com.censivn.C3DEngine.b.b.A.c {
                 this.d = false;
                 if (!this.l) {
                     this.b.setAllFrom(this.g.position());
-                    com.tsf.shell.manager.a.j.b(this.g);
+                    com.tsf.shell.manager._a.j.b(this.g);
                     a.this.globalToLocal(this.b);
                     a.this.replaceChild(a.this.a, this.g);
                     int childIndexOf = a.this.getChildIndexOf(this.g);
@@ -272,7 +272,7 @@ public class a extends com.censivn.C3DEngine.b.b.A.c {
                             float f = C0131a.this.k.x;
                             a.this.b.globalToLocal(C0131a.this.k);
                             if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.A.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.A.A) - b.a) {
-                                if (com.tsf.shell.manager.a.h.F() != -1) {
+                                if (com.tsf.shell.manager._a.h.F() != -1) {
                                     C0131a.this.l = true;
                                     a.this.removeChild(a.this.a);
                                     a.this.e.o();

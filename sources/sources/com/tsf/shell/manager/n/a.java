@@ -205,18 +205,18 @@ public class a implements e.a {
     private void d() {
         if (!this.t) {
             this.t = true;
-            com.tsf.shell.manager.a.b.a(this);
+            com.tsf.shell.manager._a.b.a(this);
             this.b.removeFromParent();
             this.a.addChild(this.b);
             this.c.a(com.censivn.C3DEngine.b.b.A.D);
-            this.d = com.tsf.shell.manager.a.b.c();
+            this.d = com.tsf.shell.manager._a.b.c();
             if (!this.d) {
                 this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.4
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (!com.tsf.shell.manager.a.b.c()) {
-                            com.tsf.shell.manager.a.b.a(true, false, false);
+                        if (!com.tsf.shell.manager._a.b.c()) {
+                            com.tsf.shell.manager._a.b.a(true, false, false);
                         }
                     }
                 });
@@ -244,8 +244,8 @@ public class a implements e.a {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.a.6
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (!com.tsf.shell.manager.a.b.c()) {
-                            com.tsf.shell.manager.a.b.a(false, false, false);
+                        if (!com.tsf.shell.manager._a.b.c()) {
+                            com.tsf.shell.manager._a.b.a(false, false, false);
                         }
                     }
                 });
@@ -255,7 +255,7 @@ public class a implements e.a {
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     com.tsf.shell.manager.n.a.this.r = false;
-                    com.tsf.shell.manager.a.b.b(com.tsf.shell.manager.n.a.this);
+                    com.tsf.shell.manager._a.b.b(com.tsf.shell.manager.n.a.this);
                     com.tsf.shell.manager.n.a.this.b.removeFromParent();
                     com.tsf.shell.manager.n.a.this.a();
                 }
@@ -268,7 +268,7 @@ public class a implements e.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.b.position().y = com.tsf.shell.manager.a.b.c() ? com.censivn.C3DEngine.b.b.A.B : com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.J;
+        this.b.position().y = com.tsf.shell.manager._a.b.c() ? com.censivn.C3DEngine.b.b.A.B : com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.J;
         this.c.a(com.censivn.C3DEngine.b.b.A.D);
     }
 

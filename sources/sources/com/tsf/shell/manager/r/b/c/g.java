@@ -47,7 +47,7 @@ public class g extends com.tsf.shell.f.e._g.a.b {
                     g.this.a(g.this.d, true);
                     g.this.a.a();
                 } else {
-                    com.tsf.shell.manager.a.l.a.b();
+                    com.tsf.shell.manager._a.l.a.b();
                 }
             }
         });
@@ -72,7 +72,7 @@ public class g extends com.tsf.shell.f.e._g.a.b {
         this.f.addChild(this.c.f());
         this.f.addChild(this.d.f());
         this.e = this.c;
-        this.h = com.tsf.shell.manager.a.a.a(this, com.tsf.shell.manager.p.e.m);
+        this.h = com.tsf.shell.manager._a.a.a(this, com.tsf.shell.manager.p.e.m);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -142,7 +142,7 @@ public class g extends com.tsf.shell.f.e._g.a.b {
             return true;
         }
         float[] fArrA = x.a(f, f2);
-        com.tsf.shell.manager.a.l.a.a(this.g, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        com.tsf.shell.manager._a.l.a.a(this.g, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
         return false;
     }
 

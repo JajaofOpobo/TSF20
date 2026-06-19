@@ -53,9 +53,9 @@ public abstract class a extends b {
             if (r1 == 0) goto L2d
             r1 = r4
             com.tsf.shell.f.i.b.e.g r1 = (com.tsf.shell.f.i.b.e.g) r1
-            com.tsf.shell.manager.a.f r3 = r1.bd()
+            com.tsf.shell.manager._a.f r3 = r1.bd()
             if (r3 == 0) goto L2d
-            com.tsf.shell.manager.a.f r1 = r1.bd()
+            com.tsf.shell.manager._a.f r1 = r1.bd()
             java.lang.String r1 = r1.e
             boolean r1 = r1.equals(r6)
             if (r1 == 0) goto L2d
@@ -88,9 +88,9 @@ public abstract class a extends b {
             if (r1 == 0) goto L31
             r1 = r4
             com.tsf.shell.f.i.b.e.g r1 = (com.tsf.shell.f.i.b.e.g) r1
-            com.tsf.shell.manager.a.f r3 = r1.bd()
+            com.tsf.shell.manager._a.f r3 = r1.bd()
             if (r3 == 0) goto L31
-            com.tsf.shell.manager.a.f r1 = r1.bd()
+            com.tsf.shell.manager._a.f r1 = r1.bd()
             java.lang.String r1 = r1.e
             boolean r1 = r1.equals(r5)
             if (r1 == 0) goto L31

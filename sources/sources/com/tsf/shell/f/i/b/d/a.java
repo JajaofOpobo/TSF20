@@ -65,7 +65,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
         this.j = motionEvent.getY();
         if (this.a.aV() == com.tsf.shell.f.i.b.d.b.a) {
             com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) this.c;
-            if (com.tsf.shell.manager.a.A.a() && bVar.aC()) {
+            if (com.tsf.shell.manager._a.A.a() && bVar.aC()) {
                 this.m = this.a.aF().a(this.c);
                 this.a.aO();
                 this.a.aF().c(true);
@@ -95,7 +95,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
                 number3dLocalToGlobal.y += this.a.aF().m();
                 this.c.position().setAllFrom(number3dLocalToGlobal);
                 this.a.aF().a((com.tsf.shell.f.i.b.e.b) this.c);
-                com.tsf.shell.manager.a.j.a(this.c);
+                com.tsf.shell.manager._a.j.a(this.c);
                 b();
                 com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
                 dVar2.l(bVar.d);
@@ -106,12 +106,12 @@ public class a extends com.censivn.C3DEngine.b.d.a {
                 this.c.setAnimationObjectState(true);
                 if (this.a.aC()) {
                     if (!bVar.as()) {
-                        com.tsf.shell.manager.a.h.t().a((com.tsf.shell.f.i.B) bVar, false, l[0], l[1]);
+                        com.tsf.shell.manager._a.h.t().a((com.tsf.shell.f.i.B) bVar, false, l[0], l[1]);
                         return;
                     }
                     return;
                 }
-                com.tsf.shell.manager.a.p.a(bVar, l[0], l[1], true, 0);
+                com.tsf.shell.manager._a.p.a(bVar, l[0], l[1], true, 0);
             }
         }
     }
@@ -175,7 +175,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
                     public void run() {
                         a.this.p = false;
                         if (!a.this.d) {
-                            com.tsf.shell.manager.a.p.a(fArrA[0], fArrA[1]);
+                            com.tsf.shell.manager._a.p.a(fArrA[0], fArrA[1]);
                             int iB = a.this.a.b(a.this.n, a.this.o);
                             if (iB == -2) {
                                 a.this.d = true;

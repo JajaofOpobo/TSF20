@@ -68,6 +68,6 @@ public class m {
             public void a(int i, int i2, int i3, int i4) {
             }
         };
-        com.tsf.shell.manager.a.b.a(this.c);
+        com.tsf.shell.manager._a.b.a(this.c);
     }
 }

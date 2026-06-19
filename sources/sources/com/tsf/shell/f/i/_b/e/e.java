@@ -2,7 +2,7 @@ package com.tsf.shell.f.i._b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends g {
-    private com.tsf.shell.manager.a.f a;
+    private com.tsf.shell.manager._a.f a;
 
     public e() {
         this.k.visible(true);

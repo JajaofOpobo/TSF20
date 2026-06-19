@@ -65,7 +65,7 @@ public class a extends d {
         int iAcos;
         int iAcos2;
         int iAcos3;
-        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager.a.v.e.d().c();
+        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager._a.v.e.d().c();
         int size = arrayList.size();
         boolean z = false;
         if (f >= 0.0f && f2 >= 0.0f) {
@@ -140,8 +140,8 @@ public class a extends d {
 
     @Override // com.tsf.shell.f._d.c.a.d
     public void a() {
-        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager.a.v.e.d().c();
-        int iNumChildren = com.tsf.shell.manager.a.v.e.d().d().numChildren();
+        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager._a.v.e.d().c();
+        int iNumChildren = com.tsf.shell.manager._a.v.e.d().d().numChildren();
         for (int i = 0; i < iNumChildren; i++) {
             a(arrayListC.get(i), i, false);
         }

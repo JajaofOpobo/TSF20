@@ -10,7 +10,7 @@ public class b {
     }
 
     public void a() {
-        com.tsf.shell.manager.a.o.a().w();
+        com.tsf.shell.manager._a.o.a().w();
     }
 
     public A b() {

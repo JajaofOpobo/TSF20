@@ -7,7 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import com.tsf.shell.f.i.b.e.g;
-import com.tsf.shell.manager.a.f;
+import com.tsf.shell.manager._a.f;
 import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.k;
 import java.io.IOException;

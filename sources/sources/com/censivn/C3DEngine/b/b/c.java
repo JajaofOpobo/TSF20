@@ -102,7 +102,7 @@ public class c extends j {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.l(0.95f);
         dVar.m(0.95f);
-        dVar.a(com.censivn.C3DEngine.b.g.a.e);
+        dVar.a(com.censivn.C3DEngine.b.g.A.e);
         com.censivn.C3DEngine.b.g.c.a(iVar);
         com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
     }
@@ -113,7 +113,7 @@ public class c extends j {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.l(1.0f);
             dVar.m(1.0f);
-            dVar.a(com.censivn.C3DEngine.b.g.a.e);
+            dVar.a(com.censivn.C3DEngine.b.g.A.e);
             com.censivn.C3DEngine.b.g.c.a(this.j);
             com.censivn.C3DEngine.b.g.c.a(this.j, 500, dVar);
             this.j = null;
@@ -169,7 +169,7 @@ public class c extends j {
                     dVar = new com.censivn.C3DEngine.b.g.d();
                 }
                 dVar.h(layoutParams.g);
-                dVar.a(com.censivn.C3DEngine.b.g.a.n);
+                dVar.a(com.censivn.C3DEngine.b.g.A.n);
                 dVar.b(i3 * 60);
                 dVar.a(255);
                 com.censivn.C3DEngine.b.g.c.a(childAt);

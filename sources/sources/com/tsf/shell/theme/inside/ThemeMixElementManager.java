@@ -29,7 +29,7 @@ public abstract class ThemeMixElementManager {
     protected ThemeMenuMixElementPlane mPreview = new ThemeMenuMixElementPlane() { // from class: com.tsf.shell.theme.inside.ThemeMixElementManager.1
         @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
         public Bitmap getPreviewBitmap() {
-            return ThemeMixElementManager.this.getPreviewBitmap((int) a.a(180.0f), (int) a.a(180.0f));
+            return ThemeMixElementManager.this.getPreviewBitmap((int) A.a(180.0f), (int) A.a(180.0f));
         }
 
         @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane

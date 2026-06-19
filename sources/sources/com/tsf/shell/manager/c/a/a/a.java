@@ -50,7 +50,7 @@ public class a {
             this.l = true;
             com.tsf.shell.manager.c.c.a(com.censivn.C3DEngine.A.d(), this);
             com.tsf.shell.manager.c.c.b(com.censivn.C3DEngine.A.d(), this);
-            com.tsf.shell.manager.a.z.b().a(this);
+            com.tsf.shell.manager._a.z.b().a(this);
         }
     }
 
@@ -102,7 +102,7 @@ public class a {
                 @Override // java.lang.Runnable
                 public void run() {
                     if (a.this.l) {
-                        com.tsf.shell.manager.a.z.b().b(a.this);
+                        com.tsf.shell.manager._a.z.b().b(a.this);
                     }
                 }
             });

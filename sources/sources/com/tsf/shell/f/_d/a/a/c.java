@@ -28,12 +28,12 @@ public class c extends com.tsf.shell.f._d.a.A {
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     c.this.a.textures().removeAll();
-                    com.tsf.shell.manager.a.j.b(c.this.a);
+                    com.tsf.shell.manager._a.j.b(c.this.a);
                 }
             };
             this.a.position().setAllFrom(number3d);
             this.a.rotation().setAllFrom(number3d2);
-            com.tsf.shell.manager.a.j.a(this.a);
+            com.tsf.shell.manager._a.j.a(this.a);
             dVar.l(2.0f);
             dVar.m(2.0f);
             dVar.a(0);

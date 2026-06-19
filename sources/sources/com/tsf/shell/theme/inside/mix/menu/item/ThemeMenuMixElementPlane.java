@@ -16,24 +16,24 @@ public class ThemeMenuMixElementPlane extends j {
     public m mSummaryView;
     public m mTitleView;
     private TextureElement previewTE = new TextureElement(0, false);
-    public com.censivn.C3DEngine.b.f.k mPreviewView = new com.censivn.C3DEngine.b.f.k(a.a(180.0f), a.a(180.0f), false);
+    public com.censivn.C3DEngine.b.f.k mPreviewView = new com.censivn.C3DEngine.b.f.k(A.a(180.0f), A.a(180.0f), false);
 
     public ThemeMenuMixElementPlane() {
         this.mPreviewView.textures().addElement(this.previewTE);
-        this.mPreviewView.position().y = a.a(100.0f);
+        this.mPreviewView.position().y = A.a(100.0f);
         this.mTitleView = new m();
         this.mTitleView.d(40);
-        this.mTitleView.position().y = -a.a(50.0f);
+        this.mTitleView.position().y = -A.a(50.0f);
         c.a(this.mTitleView, c.h);
         this.mSummaryView = new m();
         this.mSummaryView.d(32);
         this.mSummaryView.g(300);
-        this.mSummaryView.position().y = -a.a(100.0f);
+        this.mSummaryView.position().y = -A.a(100.0f);
         c.a(this.mSummaryView, c.i);
         addChild(this.mPreviewView);
         addChild(this.mTitleView);
         addChild(this.mSummaryView);
-        setAABBPX(a.a(300.0f), a.a(300.0f));
+        setAABBPX(A.a(300.0f), A.a(300.0f));
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
@@ -67,8 +67,8 @@ public class ThemeMenuMixElementPlane extends j {
     public void enableNotifPoint() {
         if (this.mNotifPoint == null) {
             this.mNotifPoint = new k();
-            this.mNotifPoint.position().x = a.a(100.0f);
-            this.mNotifPoint.position().y = a.a(200.0f);
+            this.mNotifPoint.position().x = A.a(100.0f);
+            this.mNotifPoint.position().y = A.a(200.0f);
         }
         addChild(this.mNotifPoint);
     }

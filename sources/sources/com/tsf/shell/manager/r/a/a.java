@@ -36,7 +36,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private t.b l = new t.b() { // from class: com.tsf.shell.manager.r.a.a.1
         @Override // com.tsf.shell.f.e.t.b
         public void a() {
-            com.tsf.shell.manager.a.i.a.templeteShow();
+            com.tsf.shell.manager._a.i.a.templeteShow();
         }
     };
     private com.tsf.shell.e.a e = new com.tsf.shell.e.a(this.k, 1024);
@@ -109,7 +109,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.a.a.2
             @Override // java.lang.Runnable
             public void run() {
-                int iA = com.tsf.shell.manager.a.l.a.a();
+                int iA = com.tsf.shell.manager._a.l.a.a();
                 try {
                     if (!appWidgetManager.bindAppWidgetIdIfAllowed(iA, fVar.c())) {
                         Intent intent = new Intent("android.appwidget.action.APPWIDGET_BIND");
@@ -168,20 +168,20 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                 this.j = null;
                 return;
             }
-            final g gVarN = com.tsf.shell.manager.a.h.n();
+            final g gVarN = com.tsf.shell.manager._a.h.n();
             d dVarS = gVarN.s();
             if (dVarS == null) {
                 this.e.deleteAppWidgetId(i);
                 return;
             }
-            int[] iArrA = com.tsf.shell.manager.a.h.d.a(appWidgetInfo.minWidth, appWidgetInfo.minHeight);
+            int[] iArrA = com.tsf.shell.manager._a.h.d.a(appWidgetInfo.minWidth, appWidgetInfo.minHeight);
             LauncherAppWidgetInfo launcherAppWidgetInfo = new LauncherAppWidgetInfo(i, appWidgetInfo.provider);
             launcherAppWidgetInfo.width = iArrA[0];
             launcherAppWidgetInfo.height = iArrA[1];
             launcherAppWidgetInfo.screen = gVarN.t();
             launcherAppWidgetInfo.providerName = appWidgetInfo.provider;
             int[] iArr = {i2 - (launcherAppWidgetInfo.width / 2), i3 - (launcherAppWidgetInfo.height / 2), iArrA[0], iArrA[1]};
-            com.tsf.shell.manager.r.a.c(iArr);
+            com.tsf.shell.manager.r.A.c(iArr);
             int i4 = iArr[0];
             launcherAppWidgetInfo.cellXH = i4;
             launcherAppWidgetInfo.cellX = i4;
@@ -218,7 +218,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     }
 
     public void a(LauncherAppWidgetInfo launcherAppWidgetInfo) {
-        final g gVarD = com.tsf.shell.manager.a.h.d(launcherAppWidgetInfo.screen);
+        final g gVarD = com.tsf.shell.manager._a.h.d(launcherAppWidgetInfo.screen);
         if (gVarD == null || gVarD.s() == null) {
             this.e.deleteAppWidgetId(launcherAppWidgetInfo.appWidgetId);
             ShellModel.a.b(launcherAppWidgetInfo);
@@ -243,7 +243,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         });
         if (com.censivn.C3DEngine.b.b.A.O) {
             int[] iArr = {launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY, launcherAppWidgetInfo.width, launcherAppWidgetInfo.height};
-            if (com.tsf.shell.manager.r.a.c(iArr)) {
+            if (com.tsf.shell.manager.r.A.c(iArr)) {
                 launcherAppWidgetInfo.cellX = iArr[0];
                 launcherAppWidgetInfo.cellY = iArr[1];
                 launcherAppWidgetInfo.width = iArr[2];
@@ -253,7 +253,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
             fVarL.a(aVar.g, gVarD.s(), launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY, launcherAppWidgetInfo.width, launcherAppWidgetInfo.height, false);
         } else {
             int[] iArr2 = {launcherAppWidgetInfo.cellXH, launcherAppWidgetInfo.cellYH, launcherAppWidgetInfo.widthH, launcherAppWidgetInfo.heightH};
-            if (com.tsf.shell.manager.r.a.c(iArr2)) {
+            if (com.tsf.shell.manager.r.A.c(iArr2)) {
                 launcherAppWidgetInfo.cellXH = iArr2[0];
                 launcherAppWidgetInfo.cellYH = iArr2[1];
                 launcherAppWidgetInfo.widthH = iArr2[2];
@@ -291,7 +291,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         if (intent != null && (intExtra = intent.getIntExtra("appWidgetId", -1)) != -1) {
             this.e.deleteAppWidgetId(intExtra);
         }
-        com.tsf.shell.manager.a.i.a.templeteShow();
+        com.tsf.shell.manager._a.i.a.templeteShow();
     }
 
     public void c() {

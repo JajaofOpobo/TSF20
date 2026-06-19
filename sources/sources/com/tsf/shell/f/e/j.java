@@ -36,16 +36,16 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                 if (z) {
                     if (j.this.p) {
                         if (j.this.h) {
-                            com.tsf.shell.manager.a.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
+                            com.tsf.shell.manager._a.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
                             return;
                         } else {
-                            com.tsf.shell.manager.a.h.s().a(motionEvent, motionEvent2);
+                            com.tsf.shell.manager._a.h.s().a(motionEvent, motionEvent2);
                             return;
                         }
                     }
-                    com.tsf.shell.manager.a.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
-                    if (com.tsf.shell.manager.a.h.s().f()) {
-                        if (com.tsf.shell.manager.a.h.s().g()) {
+                    com.tsf.shell.manager._a.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
+                    if (com.tsf.shell.manager._a.h.s().f()) {
+                        if (com.tsf.shell.manager._a.h.s().g()) {
                             j.this.h = true;
                         } else {
                             j.this.h = false;
@@ -58,7 +58,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                                     j.this.c();
                                 } else {
                                     j.this.d();
-                                    com.tsf.shell.manager.a.h.s().e();
+                                    com.tsf.shell.manager._a.h.s().e();
                                 }
                             }
                         });
@@ -70,7 +70,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             public void e(MotionEvent motionEvent) {
                 if (z) {
                     j.this.b();
-                    com.tsf.shell.manager.a.h.a(true);
+                    com.tsf.shell.manager._a.h.a(true);
                 }
             }
 
@@ -78,19 +78,19 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             public void f(MotionEvent motionEvent) {
                 if (z) {
                     if (j.this.p && !j.this.h) {
-                        com.tsf.shell.manager.a.h.s().a(motionEvent);
+                        com.tsf.shell.manager._a.h.s().a(motionEvent);
                     }
-                    com.tsf.shell.manager.a.h.s().d(motionEvent);
+                    com.tsf.shell.manager._a.h.s().d(motionEvent);
                     j.this.p = false;
                     j.this.e();
-                    com.tsf.shell.manager.a.h.g();
+                    com.tsf.shell.manager._a.h.g();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (z && j.this.p && !j.this.h) {
-                    com.tsf.shell.manager.a.h.s().b(motionEvent, motionEvent2, f, f2);
+                    com.tsf.shell.manager._a.h.s().b(motionEvent, motionEvent2, f, f2);
                 }
             }
 
@@ -149,7 +149,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             if (r0 == 0) goto L50
             boolean r0 = r6.h
             if (r0 == 0) goto L50
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.a.h
+            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager._a.h
             com.censivn.C3DEngine.b.f.j r2 = r0.u()
             r1 = 1325400064(0x4f000000, float:2.1474836E9)
             r0 = 1

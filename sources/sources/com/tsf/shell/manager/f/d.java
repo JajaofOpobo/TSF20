@@ -33,7 +33,7 @@ public class d implements e.a {
     private j j;
 
     public d(com.tsf.shell.e.e eVar) {
-        com.tsf.shell.manager.a.b.a(this);
+        com.tsf.shell.manager._a.b.a(this);
         this.h = eVar;
         this.i = new FrameLayout(this.h.getContext());
         this.g = new d.b() { // from class: com.tsf.shell.manager.f.d.1
@@ -131,19 +131,19 @@ public class d implements e.a {
             return null;
         }
         this.e.alpha(0.0f);
-        com.tsf.shell.manager.a.h.H();
+        com.tsf.shell.manager._a.h.H();
         com.censivn.C3DEngine.b.c.b.a(aVar);
         this.f = aVar;
         this.a.addChild(this.b);
-        com.tsf.shell.manager.a.s.a(this.g);
+        com.tsf.shell.manager._a.s.a(this.g);
         return this.c;
     }
 
     public void b() {
         this.a.removeChild(this.b);
-        com.tsf.shell.manager.a.h.I();
+        com.tsf.shell.manager._a.h.I();
         com.censivn.C3DEngine.b.c.b.b(this.f);
-        com.tsf.shell.manager.a.s.b(this.g);
+        com.tsf.shell.manager._a.s.b(this.g);
         this.f = null;
     }
 
@@ -156,7 +156,7 @@ public class d implements e.a {
     }
 
     public void a(Runnable runnable, int i) {
-        com.tsf.shell.manager.a.c.a(runnable, i);
+        com.tsf.shell.manager._a.c.a(runnable, i);
     }
 
     public void d() {
@@ -168,7 +168,7 @@ public class d implements e.a {
     }
 
     public void a(final Runnable runnable, boolean z) {
-        com.tsf.shell.manager.a.c.a(new Runnable() { // from class: com.tsf.shell.manager.f.d.5
+        com.tsf.shell.manager._a.c.a(new Runnable() { // from class: com.tsf.shell.manager.f.d.5
             @Override // java.lang.Runnable
             public void run() {
                 d.this.e();

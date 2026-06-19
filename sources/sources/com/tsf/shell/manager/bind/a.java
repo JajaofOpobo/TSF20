@@ -10,7 +10,7 @@ public class a {
     private static Context a;
     private static a b;
     private static ShellModel c;
-    private static com.tsf.shell.manager.a.a d;
+    private static com.tsf.shell.manager._a.a d;
 
     public static void a(Context context) {
         a = context.getApplicationContext();
@@ -27,7 +27,7 @@ public class a {
         return c;
     }
 
-    public static com.tsf.shell.manager.a.a c() {
+    public static com.tsf.shell.manager._a.a c() {
         return d;
     }
 

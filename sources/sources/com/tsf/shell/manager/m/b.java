@@ -133,7 +133,7 @@ public class b implements e.a, a.InterfaceC0113a {
         this.o = this.o > 1.0f ? 0.4f : this.o;
         this.o = this.o >= 0.0f ? this.o : 0.4f;
         this.k = com.tsf.shell.manager.b.e.i() == 0 ? 0 : 1;
-        com.tsf.shell.manager.a.b.a(this);
+        com.tsf.shell.manager._a.b.a(this);
         this.j = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.manager.m.b.3
             @Override // com.tsf.shell.f.i.A
             public void a(com.tsf.shell.f.i.B bVar) {
@@ -164,8 +164,8 @@ public class b implements e.a, a.InterfaceC0113a {
             @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
             public void a(f fVar) {
                 if (!b.this.g) {
-                    com.tsf.shell.manager.a.h.b().c();
-                    com.tsf.shell.manager.a.p.c();
+                    com.tsf.shell.manager._a.h.b().c();
+                    com.tsf.shell.manager._a.p.c();
                     b.this.c(false);
                     b.this.e.a(fVar);
                     b();
@@ -327,14 +327,14 @@ public class b implements e.a, a.InterfaceC0113a {
     }
 
     public void c(boolean z) {
-        if (!com.tsf.shell.manager.a.h.s().a()) {
+        if (!com.tsf.shell.manager._a.h.s().a()) {
             this.p = !z;
             if (z) {
             }
             if (!this.g) {
                 this.g = true;
-                com.tsf.shell.manager.a.e.a(this.i, ItemInfo.APP_INTENT, (Runnable) null);
-                com.tsf.shell.manager.a.o.k();
+                com.tsf.shell.manager._a.e.a(this.i, ItemInfo.APP_INTENT, (Runnable) null);
+                com.tsf.shell.manager._a.o.k();
                 this.f.visible(true);
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.f(r());
@@ -361,8 +361,8 @@ public class b implements e.a, a.InterfaceC0113a {
     public void a(Runnable runnable) {
         if (this.g) {
             this.g = false;
-            com.tsf.shell.manager.a.e.a(runnable, true);
-            com.tsf.shell.manager.a.o.i();
+            com.tsf.shell.manager._a.e.a(runnable, true);
+            com.tsf.shell.manager._a.o.i();
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.b.9
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {

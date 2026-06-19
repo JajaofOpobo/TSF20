@@ -64,7 +64,7 @@ public class c extends j {
     private com.tsf.shell.f.i.b.e.b a(int i, int i2) {
         final com.tsf.shell.f.i.b.e.b bVarA = a(i);
         final LauncherShortcutStandardInfo launcherShortcutStandardInfo = (LauncherShortcutStandardInfo) bVarA.K();
-        e.a aVarA = com.tsf.shell.manager.a.a.a(i2);
+        e.a aVarA = com.tsf.shell.manager._a.a.a(i2);
         if (aVarA.a()) {
             launcherShortcutStandardInfo.enableNotifPoint();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.f.h.c.1
@@ -107,7 +107,7 @@ public class c extends j {
     }
 
     public void b() {
-        if (com.tsf.shell.manager.a.h.E()) {
+        if (com.tsf.shell.manager._a.h.E()) {
             com.tsf.shell.manager.o.c.a(this.i, com.tsf.shell.manager.o.c.f);
             com.tsf.shell.manager.o.c.a(this.j, com.tsf.shell.manager.o.c.f);
             this.i.mouseEnabled(false);

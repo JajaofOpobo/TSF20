@@ -90,7 +90,7 @@ public class b extends j {
 
     public void b() {
         this.d.removeFromParent();
-        com.tsf.shell.manager.a.j.a(this.d);
+        com.tsf.shell.manager._a.j.a(this.d);
         setZOrderOnTop();
         this.d.scale().setAll(0.0f, 0.0f, 1.0f);
         this.d.visible(true);
@@ -101,7 +101,7 @@ public class b extends j {
             public void a() {
                 b.this.d.visible(false);
                 b.this.d.alpha(255.0f);
-                com.tsf.shell.manager.a.j.b(b.this.d);
+                com.tsf.shell.manager._a.j.b(b.this.d);
             }
         };
         com.censivn.C3DEngine.b.g.c.a(this.d);

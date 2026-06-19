@@ -79,11 +79,11 @@ public class c extends j {
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildStart() {
-        com.tsf.shell.manager.a.u.a(this.a);
+        com.tsf.shell.manager._a.u.a(this.a);
     }
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawEnd() {
-        com.tsf.shell.manager.a.u.a();
+        com.tsf.shell.manager._a.u.a();
     }
 }

@@ -12,7 +12,7 @@ public class LauncherFolder3DInfo extends ItemInfo {
     public LauncherFolder3DInfo() {
         super(1);
         this.itemsInfos = new ArrayList<>();
-        this.title = a.d().getString(b.i.widget_folder);
+        this.title = A.d().getString(com.tsf.b.i.widget_folder);
     }
 
     public void add(LauncherShortcut3DInfo launcherShortcut3DInfo) {

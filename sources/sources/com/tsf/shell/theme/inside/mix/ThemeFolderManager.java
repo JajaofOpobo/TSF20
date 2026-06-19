@@ -18,13 +18,13 @@ public class ThemeFolderManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public Bitmap getPreviewBitmap(int i, int i2) {
-        return createPreviewBitmap(a.d(), getTheme().getContext(), i, i2, true);
+        return createPreviewBitmap(A.d(), getTheme().getContext(), i, i2, true);
     }
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
         b.q();
-        com.tsf.shell.manager.a.h.K();
+        com.tsf.shell.manager._a.h.K();
     }
 
     public static Bitmap createPreviewBitmap(Context context, Context context2, int i, int i2, boolean z) {

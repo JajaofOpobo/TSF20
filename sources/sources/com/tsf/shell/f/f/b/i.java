@@ -65,7 +65,7 @@ public class i extends com.tsf.shell.f.f.l {
 
     @Override // com.tsf.shell.f.f.l
     public void b(com.tsf.shell.f.f.g gVar, float f) {
-        boolean zI = com.tsf.shell.manager.a.f.i();
+        boolean zI = com.tsf.shell.manager._a.f.i();
         j.a aVarA = gVar.a(true, false);
         if (f > 0.0f) {
             this.b.textures().clear();

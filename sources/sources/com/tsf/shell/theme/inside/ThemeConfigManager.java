@@ -29,8 +29,8 @@ public class ThemeConfigManager {
     }
 
     public static ElementConfig getBaseTheme() {
-        config.packagename = getConfigSharedPreferences().getString("base_theme_packagename", a.b());
-        config.version = getConfigSharedPreferences().getInt("base_theme_version", a.c());
+        config.packagename = getConfigSharedPreferences().getString("base_theme_packagename", A.b());
+        config.version = getConfigSharedPreferences().getInt("base_theme_version", A.c());
         return config;
     }
 
@@ -51,7 +51,7 @@ public class ThemeConfigManager {
 
     public static SharedPreferences getConfigSharedPreferences() {
         if (mSharedPreferences == null) {
-            mSharedPreferences = a.d().getSharedPreferences(CONFIG_FILE_NAME, 0);
+            mSharedPreferences = A.d().getSharedPreferences(CONFIG_FILE_NAME, 0);
         }
         return mSharedPreferences;
     }

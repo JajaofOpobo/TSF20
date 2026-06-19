@@ -69,7 +69,7 @@ public class a extends c {
             return -1;
         }
         g gVar = (g) iVar;
-        if (gVar.bd() == null || gVar.bd().a == null || (gVarA = com.tsf.shell.manager.a.w.a().a(gVar.bd().a.getComponent())) == null || gVarA.K() == null) {
+        if (gVar.bd() == null || gVar.bd().a == null || (gVarA = com.tsf.shell.manager._a.w.a().a(gVar.bd().a.getComponent())) == null || gVarA.K() == null) {
             return 0;
         }
         return ((LauncherShortcutAppInfo) gVarA.K()).clickCount;

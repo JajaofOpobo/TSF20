@@ -24,7 +24,7 @@ public class d extends com.censivn.C3DEngine.b.d.a {
         this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.A.a);
         this.f = 0;
         this.a = bVar;
-        this.d = com.tsf.shell.manager.a.h;
+        this.d = com.tsf.shell.manager._a.h;
     }
 
     @Override // com.censivn.C3DEngine.b.d.a

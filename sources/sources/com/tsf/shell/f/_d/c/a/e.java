@@ -60,8 +60,8 @@ public class e extends d {
     @Override // com.tsf.shell.f._d.c.a.d
     public void a(ArrayList<Integer> arrayList, float f, float f2) {
         float f3;
-        ArrayList<a.c> arrayListC = com.tsf.shell.manager.a.v.e.d().c();
-        j jVarD = com.tsf.shell.manager.a.v.e.d().d();
+        ArrayList<a.c> arrayListC = com.tsf.shell.manager._a.v.e.d().c();
+        j jVarD = com.tsf.shell.manager._a.v.e.d().d();
         int size = arrayList.size();
         float f4 = 120.0f * com.censivn.C3DEngine.b.b.A.c * (size - 1);
         if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.a.h / 2.0f) + a > com.censivn.C3DEngine.b.b.A.B) {
@@ -92,8 +92,8 @@ public class e extends d {
 
     @Override // com.tsf.shell.f._d.c.a.d
     public void a() {
-        ArrayList<a.c> arrayListC = com.tsf.shell.manager.a.v.e.d().c();
-        int iNumChildren = com.tsf.shell.manager.a.v.e.d().d().numChildren();
+        ArrayList<a.c> arrayListC = com.tsf.shell.manager._a.v.e.d().c();
+        int iNumChildren = com.tsf.shell.manager._a.v.e.d().d().numChildren();
         int i = 0;
         while (i < iNumChildren) {
             a(arrayListC.get((iNumChildren - i) - 1), i, i == iNumChildren + (-1));

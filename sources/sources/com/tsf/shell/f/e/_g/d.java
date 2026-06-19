@@ -111,9 +111,9 @@ public abstract class d {
                 while (it.hasNext()) {
                     it.next().getTitleIcon().i();
                 }
-                com.tsf.shell.manager.a.c.c(this);
+                com.tsf.shell.manager._a.c.c(this);
                 com.censivn.C3DEngine.b.c.b.a(this.mKeyListener);
-                com.tsf.shell.manager.a.b.a(this.mSceneEventListener);
+                com.tsf.shell.manager._a.b.a(this.mSceneEventListener);
                 showAnimation(0);
                 this.mClassMenu.a();
                 resetSize();
@@ -132,9 +132,9 @@ public abstract class d {
                 while (it.hasNext()) {
                     it.next().getTitleIcon().i();
                 }
-                com.tsf.shell.manager.a.c.c(this);
+                com.tsf.shell.manager._a.c.c(this);
                 com.censivn.C3DEngine.b.c.b.a(this.mKeyListener);
-                com.tsf.shell.manager.a.b.a(this.mSceneEventListener);
+                com.tsf.shell.manager._a.b.a(this.mSceneEventListener);
                 showAnimation(i);
                 this.mClassMenu.a();
                 resetSize();
@@ -149,9 +149,9 @@ public abstract class d {
         if (this.isShow) {
             if (this.mMenuItems.contains(this.mCurrentMenuItem)) {
                 this.isShow = false;
-                com.tsf.shell.manager.a.c.b(this);
+                com.tsf.shell.manager._a.c.b(this);
                 com.censivn.C3DEngine.b.c.b.b(this.mKeyListener);
-                com.tsf.shell.manager.a.b.b(this.mSceneEventListener);
+                com.tsf.shell.manager._a.b.b(this.mSceneEventListener);
                 hideAnimation();
                 return;
             }
@@ -161,7 +161,7 @@ public abstract class d {
 
     private void showAnimation(int i) {
         if (!com.tsf.shell.manager.b.e.ai()) {
-            enableBlurMode(com.tsf.shell.manager.a.e.a(this));
+            enableBlurMode(com.tsf.shell.manager._a.e.a(this));
         }
         onShow();
         this.mContainer.mouseEnabled(false);
@@ -186,7 +186,7 @@ public abstract class d {
         com.censivn.C3DEngine.b.g.c.a(this.mMenuContainer, 500, dVar);
         this.mContainer.position().y = com.censivn.C3DEngine.b.b.A.C;
         this.mContainer.removeFromParent();
-        com.tsf.shell.manager.a.j.a(this.mContainer);
+        com.tsf.shell.manager._a.j.a(this.mContainer);
     }
 
     private com.tsf.shell.f.e._g.a.b getFirstAvailableMenu(int i) {
@@ -208,7 +208,7 @@ public abstract class d {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.d.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
-                com.tsf.shell.manager.a.j.b(d.this.mContainer);
+                com.tsf.shell.manager._a.j.b(d.this.mContainer);
                 d.this.mCurrentMenuItem.hide(false);
                 d.this.mCurrentMenuItem = null;
                 Iterator it = d.this.mMenuItems.iterator();
@@ -217,7 +217,7 @@ public abstract class d {
                 }
                 d.mCurrentMenu = null;
                 d.this.onHideComplete();
-                com.tsf.shell.manager.a.e.b(d.this);
+                com.tsf.shell.manager._a.e.b(d.this);
                 d.this.disableBlurMode();
             }
 

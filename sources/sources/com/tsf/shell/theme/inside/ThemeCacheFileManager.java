@@ -60,7 +60,7 @@ public class ThemeCacheFileManager {
             o.a(this.mContext.getResources().openRawResource(b.h.theme_clock), descriptionClockFile);
         }
         if (z) {
-            ThemeElementCacher.cacheThemeImage(a.d(), ThemeElementType.PARSER_CONFIG_ALL);
+            ThemeElementCacher.cacheThemeImage(A.d(), ThemeElementType.PARSER_CONFIG_ALL);
         }
         isInit = true;
     }

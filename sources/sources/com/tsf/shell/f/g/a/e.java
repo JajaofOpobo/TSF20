@@ -20,18 +20,18 @@ public class e extends a {
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.e.1
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
-                return com.tsf.shell.manager.a.v.b.b();
+                return com.tsf.shell.manager._a.v.b.b();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager.a.v.b.a(true);
+                com.tsf.shell.manager._a.v.b.a(true);
                 e.this.b.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager.a.v.b.a(false);
+                com.tsf.shell.manager._a.v.b.a(false);
                 e.this.b.d();
             }
         };
@@ -42,12 +42,12 @@ public class e extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.e.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager.a.v.b.d();
+                return com.tsf.shell.manager._a.v.b.d();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                com.tsf.shell.f._d.a.A aVarA = com.tsf.shell.manager.a.v.b.a(i);
+                com.tsf.shell.f._d.a.A aVarA = com.tsf.shell.manager._a.v.b.a(i);
                 h hVar = (h) aVarA.e();
                 hVar.e.textures().clear();
                 hVar.e.textures().addElement(h.i());
@@ -62,9 +62,9 @@ public class e extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.e.3
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f._d.a.A aVarA = com.tsf.shell.manager.a.v.b.a(i);
+                com.tsf.shell.f._d.a.A aVarA = com.tsf.shell.manager._a.v.b.a(i);
                 w.b();
-                com.tsf.shell.manager.a.v.b.a(aVarA);
+                com.tsf.shell.manager._a.v.b.a(aVarA);
                 if (aVarA.b()) {
                     e.this.a.a().a(aVarA);
                 }
@@ -97,6 +97,6 @@ public class e extends a {
         super.onRecycle();
         h.b();
         h.j();
-        com.tsf.shell.manager.a.v.b.e();
+        com.tsf.shell.manager._a.v.b.e();
     }
 }

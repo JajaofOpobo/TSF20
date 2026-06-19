@@ -51,6 +51,6 @@ public class ThemeSmartButtonManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
-        com.tsf.shell.manager.a.o.h();
+        com.tsf.shell.manager._a.o.h();
     }
 }

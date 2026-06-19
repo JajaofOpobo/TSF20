@@ -29,9 +29,9 @@ public class c implements a {
 
     private void e() {
         this.e = new j();
-        this.b = new com.tsf.shell.f._d.d.c(com.tsf.shell.manager.a.v.c.b, 320.0f, 96.0f, 1, 1, true);
+        this.b = new com.tsf.shell.f._d.d.c(com.tsf.shell.manager._a.v.c.b, 320.0f, 96.0f, 1, 1, true);
         this.b.a.setTransform(0.0f, 0.0f, 0.0f);
-        this.c = new com.tsf.shell.f._d.d.c(com.tsf.shell.manager.a.v.c.b, 128.0f, 64.0f, 1, 1, 100, 40, false);
+        this.c = new com.tsf.shell.f._d.d.c(com.tsf.shell.manager._a.v.c.b, 128.0f, 64.0f, 1, 1, 100, 40, false);
         this.c.position().x = -137.0f;
         this.c.position().y = 0.0f;
         this.c.a.setTransform(this.c.position().x / com.tsf.shell.f._d.d.b.a, this.c.position().y / com.tsf.shell.f._d.d.b.a, 0.0f);
@@ -44,7 +44,7 @@ public class c implements a {
         revoluteJointDef.localAnchorA.y = 22.0f / com.tsf.shell.f._d.d.b.a;
         revoluteJointDef.localAnchorB.y = 20.0f / com.tsf.shell.f._d.d.b.a;
         revoluteJointDef.collideConnected = false;
-        this.d = com.tsf.shell.manager.a.v.c.b.b.createJoint(revoluteJointDef);
+        this.d = com.tsf.shell.manager._a.v.c.b.b.createJoint(revoluteJointDef);
     }
 
     @Override // com.tsf.shell.f._d.d.a.a
@@ -87,7 +87,7 @@ public class c implements a {
     @Override // com.tsf.shell.f._d.d.a.a
     public void b() {
         c();
-        com.tsf.shell.manager.a.v.c.g();
+        com.tsf.shell.manager._a.v.c.g();
     }
 
     @Override // com.tsf.shell.f._d.d.a.a
