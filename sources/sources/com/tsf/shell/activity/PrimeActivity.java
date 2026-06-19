@@ -27,7 +27,7 @@ public class PrimeActivity extends Activity {
         this.b.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
         this.b.getHolder().setFormat(-3);
         this.b.setZOrderOnTop(true);
-        com.tsf.shell.manager.b.e.a();
+        com.tsf.shell.manager.b.ConfigManager.a();
         g.a();
         com.tsf.shell.manager.app.ObserverManager = new com.censivn.C3DEngine.b.c.e(this);
         new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.activity.PrimeActivity.1

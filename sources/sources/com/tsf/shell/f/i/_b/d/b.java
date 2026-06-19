@@ -357,7 +357,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             }
         }
         addChild(this.t);
-        com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this, true);
+        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, true);
         this.O = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i._b.d.b.15
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
@@ -448,7 +448,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                     com.tsf.shell.f.i._b.d.k r0 = com.tsf.shell.f.i._b.d.b.d(r0)
                     boolean r0 = r0.c()
                     if (r0 == 0) goto L30
-                    boolean r0 = com.tsf.shell.manager.b.e.as()
+                    boolean r0 = com.tsf.shell.manager.b.ConfigManager.as()
                     if (r0 == 0) goto L30
                     com.tsf.shell.f.i._b.d.b r0 = com.tsf.shell.f.i._b.d.b.this
                     com.tsf.shell.f.i._b.d.k r0 = com.tsf.shell.f.i._b.d.b.d(r0)
@@ -456,7 +456,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                 L2f:
                     return r3
                 L30:
-                    boolean r0 = com.tsf.shell.manager.b.e.as()
+                    boolean r0 = com.tsf.shell.manager.b.ConfigManager.as()
                     if (r0 == 0) goto L2f
                     com.tsf.shell.f.i._b.d.b r0 = com.tsf.shell.f.i._b.d.b.this
                     r0.m(r2)
@@ -555,7 +555,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
     private void a(ItemInfo itemInfo, boolean z) {
         com.tsf.shell.f.i._b.e.b bVarA = (com.tsf.shell.f.i._b.e.b) itemInfo.getWidget();
         if (bVarA == null) {
-            bVarA = com.tsf.shell.manager.l.a.a(itemInfo, z);
+            bVarA = com.tsf.shell.manager.l.ShortcutManager.a(itemInfo, z);
         }
         bVarA.g(0.0f);
         bVarA.mouseEnabled(false);
@@ -643,7 +643,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                     break;
             }
         }
-        com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this, true);
+        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, true);
         l.a(this, aN());
         b(0, 0, 0, 0);
         a((Runnable) null, false);
@@ -709,7 +709,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             this.p.textures().addElement(l.z);
             this.p.position().x = l.c().folder.backPlaneX;
             this.p.position().y = l.c().folder.backPlaneY;
-            com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, true);
+            com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, true);
         } else if (this.p != null) {
             this.p.textures().clear();
             this.p.removeFromParent();
@@ -795,9 +795,9 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         if (l.c().folder.nameTextFormat.auto) {
             if (!this.y || z) {
                 this.y = true;
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, false);
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this.t, false);
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.t, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, false);
                 m.a(this);
             }
         }
@@ -811,9 +811,9 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         if (l.c().folder.nameTextFormat.auto || z) {
             if (this.y || z) {
                 this.y = false;
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, true);
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this.t, true);
-                com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.p, -this.p.position().x, -this.p.position().y, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this.t, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.i) this, true);
                 m.a(this);
             }
         }
@@ -953,7 +953,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             }
         }
         this.T = com.tsf.shell.manager.app.TaskScheduler.a(this.S);
-        switch (com.tsf.shell.manager.b.e.ar()) {
+        switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
                 dVar = new com.censivn.C3DEngine.b.g.d();
                 bj();
@@ -1109,7 +1109,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                     }, z);
                 }
             };
-            if (com.tsf.shell.manager.b.e.ar() == 1) {
+            if (com.tsf.shell.manager.b.ConfigManager.ar() == 1) {
                 if (aW() == 0) {
                     a(runnable, z);
                     return;
@@ -1363,7 +1363,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                         i3 = 0;
                         i = i9;
                     } else {
-                        switch (com.tsf.shell.manager.b.e.ar()) {
+                        switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
                             case 0:
                                 i4 = VEasing.Linear.easeNone;
                                 break;
@@ -1512,7 +1512,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                 if (bVar2.scale().z != 1.0f) {
                     dVar.n(1.0f);
                 }
-                switch (com.tsf.shell.manager.b.e.ar()) {
+                switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
                     case 0:
                         break;
                     case 1:
@@ -1537,9 +1537,9 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         this.K = a;
         aP();
         if (aW() > 6) {
-            com.tsf.shell.manager.p.c.a(2);
+            com.tsf.shell.manager.p.TipsDialogManager.a(2);
         } else if (aW() == 0) {
-            com.tsf.shell.manager.p.c.a(1);
+            com.tsf.shell.manager.p.TipsDialogManager.a(1);
         }
         bl();
     }
@@ -1599,7 +1599,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                 bVar.ar();
             }
             this.ad.add(bVar);
-            bVar.setDefaultColor(com.tsf.shell.manager.o.c.c);
+            bVar.setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
         }
     }
 

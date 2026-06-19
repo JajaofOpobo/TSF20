@@ -43,17 +43,17 @@ public class A extends c<d> {
 
     @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
-        com.tsf.shell.manager.b.e.h(z);
-        com.tsf.shell.manager.b.e.e(str);
+        com.tsf.shell.manager.b.ConfigManager.h(z);
+        com.tsf.shell.manager.b.ConfigManager.e(str);
     }
 
     @Override // com.tsf.shell.f.f.C
     public boolean b() {
-        return com.tsf.shell.manager.b.e.B();
+        return com.tsf.shell.manager.b.ConfigManager.B();
     }
 
     @Override // com.tsf.shell.f.f.C
     public String c() {
-        return com.tsf.shell.manager.b.e.C();
+        return com.tsf.shell.manager.b.ConfigManager.C();
     }
 }

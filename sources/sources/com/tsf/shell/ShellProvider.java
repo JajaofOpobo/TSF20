@@ -251,7 +251,7 @@ public class ShellProvider extends ContentProvider {
             sQLiteDatabase.execSQL("insert into slidingdock(child) values(?)");
             sQLiteDatabase.execSQL("CREATE TABLE menu (_id INTEGER PRIMARY KEY,child TEXT);");
             sQLiteDatabase.execSQL("insert into menu(child) values(?)");
-            com.tsf.shell.manager.action.f.a(sQLiteDatabase);
+            com.tsf.shell.manager.action.GestureHandler.a(sQLiteDatabase);
             this.d = true;
         }
 
@@ -341,7 +341,7 @@ public class ShellProvider extends ContentProvider {
                     string = "";
                 }
                 sQLiteDatabase.execSQL("DROP TABLE IF EXISTS configuration");
-                com.tsf.shell.manager.b.e.i(string);
+                com.tsf.shell.manager.b.ConfigManager.i(string);
             }
         }
     }

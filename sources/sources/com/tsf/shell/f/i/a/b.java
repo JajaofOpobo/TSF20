@@ -3,7 +3,7 @@ package com.tsf.shell.f.i.a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

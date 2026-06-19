@@ -16,7 +16,7 @@ public class e extends b {
         super(f);
         this.e = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
-            h hVar = new h(com.tsf.shell.manager.o.b.c);
+            h hVar = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
             hVar.aL();
             this.e.add(hVar);
         }

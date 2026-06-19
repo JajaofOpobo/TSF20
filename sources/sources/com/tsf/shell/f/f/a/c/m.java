@@ -88,7 +88,7 @@ public class m extends i {
             final com.tsf.shell.f.g.a.h hVar = new com.tsf.shell.f.g.a.h(1.0f);
             hVar.e.scale().setAll(0.8f, 0.8f, 1.0f);
             hVar.e.position().y = com.censivn.C3DEngine.b.b.A.a(20.0f);
-            com.tsf.shell.manager.o.c.a(hVar, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(hVar, com.tsf.shell.manager.o.ThemeColorConstants.h);
             com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(hVar) { // from class: com.tsf.shell.f.f.a.c.m.1
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent) {

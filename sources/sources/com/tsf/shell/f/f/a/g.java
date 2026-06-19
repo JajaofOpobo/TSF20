@@ -14,7 +14,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends j {
@@ -33,15 +33,15 @@ public class g extends j {
         this.a.addChild(this.c);
         this.d = new j();
         this.a.addChild(this.d);
-        this.f = new A(com.tsf.shell.manager.g.a.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.g.1
+        this.f = new A(com.tsf.shell.manager.g.LayoutDimensionConstants.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.g.1
             @Override // com.tsf.shell.f.f.a.g.a
             public void a() {
                 com.tsf.shell.manager.app.FolderManager.a(500);
             }
         };
-        this.f.a(com.tsf.shell.manager.p.e.n);
+        this.f.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
         this.d.addChild(this.f);
-        this.g = new A(com.tsf.shell.manager.g.a.j, b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.g.2
+        this.g = new A(com.tsf.shell.manager.g.LayoutDimensionConstants.j, b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.g.2
             @Override // com.tsf.shell.f.f.a.g.a
             public void a() {
                 g.this.b.aj();
@@ -50,7 +50,7 @@ public class g extends j {
         this.d.addChild(this.g);
         this.e = new m();
         this.e.d(44);
-        this.e.a(com.tsf.shell.manager.b.e.ap());
+        this.e.a(com.tsf.shell.manager.b.ConfigManager.ap());
         this.e.b(1);
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c) { // from class: com.tsf.shell.f.f.a.g.3
             @Override // com.censivn.C3DEngine.b.d.a
@@ -58,16 +58,16 @@ public class g extends j {
                 g.this.a(g.this.e.c());
             }
         });
-        com.tsf.shell.manager.o.c.a(this.g, com.tsf.shell.manager.o.c.h);
-        com.tsf.shell.manager.o.c.a(this.f, com.tsf.shell.manager.o.c.h);
-        com.tsf.shell.manager.o.c.a(this.e, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.g, com.tsf.shell.manager.o.ThemeColorConstants.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.f, com.tsf.shell.manager.o.ThemeColorConstants.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.e, com.tsf.shell.manager.o.ThemeColorConstants.h);
         this.d.addChild(this.e);
         addChild(this.a);
         a(false);
     }
 
     public void a(boolean z) {
-        if (!com.tsf.shell.manager.b.e.R()) {
+        if (!com.tsf.shell.manager.b.ConfigManager.R()) {
             this.f.visible(true);
             this.g.visible(true);
             if (z) {
@@ -119,8 +119,8 @@ public class g extends j {
     }
 
     private void b() {
-        this.f.position().x = ((com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(50.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f)) - com.tsf.shell.manager.g.a.j;
-        this.g.position().x = (com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(25.0f)) - (com.tsf.shell.manager.g.a.j / 2.0f);
+        this.f.position().x = ((com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(50.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f)) - com.tsf.shell.manager.g.LayoutDimensionConstants.j;
+        this.g.position().x = (com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(25.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f);
         this.e.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(25.0f);
         this.e.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(400.0f)));
         this.c.a(com.censivn.C3DEngine.b.b.A.D);
@@ -182,7 +182,7 @@ public class g extends j {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String string = editText.getText().toString();
                         g.this.e.a(string);
-                        com.tsf.shell.manager.b.e.k(string);
+                        com.tsf.shell.manager.b.ConfigManager.k(string);
                     }
                 });
                 builder.setNegativeButton(contextD.getString(b.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.f.a.g.7.2
@@ -228,7 +228,7 @@ public class g extends j {
             if (this.g.a()) {
                 e();
                 this.g.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a.g.a.2
-                    @Override // com.tsf.shell.manager.p.e.a.C0142a
+                    @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                     public void a() {
                         a.this.f();
                     }

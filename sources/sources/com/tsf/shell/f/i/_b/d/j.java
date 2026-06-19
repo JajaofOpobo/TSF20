@@ -204,9 +204,9 @@ public class j implements e.a {
     }
 
     public void k() {
-        this.B = x.b(b.d.widget_folder_add_button, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
-        this.C = x.b(b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
-        this.D = x.b(b.d.widget_folder_rename, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
+        this.B = x.b(b.d.widget_folder_add_button, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.C = x.b(b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.D = x.b(b.d.widget_folder_rename, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
         if (c().folder.backPlaneEnable) {
             Bitmap bitmapFromCache = c().getBitmapFromCache(ThemeFolderDescription.BACK_PLANE, c().folder.backPlaneWidth, c().folder.backPlaneHeight);
             if (bitmapFromCache == null) {
@@ -322,8 +322,8 @@ public class j implements e.a {
             bVarA3.h();
             i++;
         }
-        float f = com.tsf.shell.manager.o.b.a.H;
-        float f2 = com.tsf.shell.manager.o.b.a.I;
+        float f = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
+        float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
         for (int i3 = 0; i3 < c().folder.sampleCount; i3++) {
             ThemeFolderDescription.SystemFolderChild systemFolderChild = c().folder.getSampleInformaiton().get(i3);
             com.censivn.C3DEngine.b.f._a.b bVarA4 = Z.a(i);
@@ -334,7 +334,7 @@ public class j implements e.a {
             bVarA4.o.x = systemFolderChild.scale.x;
             bVarA4.o.y = systemFolderChild.scale.y;
             bVarA4.n.z = systemFolderChild.rotation.z;
-            bVarA4.c(com.tsf.shell.manager.o.b.a.Y);
+            bVarA4.c(com.tsf.shell.manager.o.ButtonPresetManager.a.Y);
             bVarA4.h();
             i++;
         }
@@ -358,8 +358,8 @@ public class j implements e.a {
     }
 
     private void o() {
-        int i = (int) (com.tsf.shell.manager.o.b.a.T - (com.censivn.C3DEngine.b.b.A.c * 30.0f));
-        int i2 = (int) (com.tsf.shell.manager.o.b.a.U + (10.0f * com.censivn.C3DEngine.b.b.A.c));
+        int i = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T - (com.censivn.C3DEngine.b.b.A.c * 30.0f));
+        int i2 = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (10.0f * com.censivn.C3DEngine.b.b.A.c));
         int i3 = com.censivn.C3DEngine.b.b.A.D - ((int) ((70.0f * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
         int i4 = i3 > i * 10 ? i * 10 : i3;
         float fA = com.censivn.C3DEngine.b.b.A.O ? 0.0f : com.censivn.C3DEngine.b.b.A.a(80.0f);
@@ -394,7 +394,7 @@ public class j implements e.a {
         this.J.setAABBPX(((-i8) / 2) + (50.0f * com.censivn.C3DEngine.b.b.A.c), (-i9) / 2, 0.0f, (i8 / 2) - (50.0f * com.censivn.C3DEngine.b.b.A.c), i9 / 2, 0.0f);
         this.H.maxX(i8 / 2);
         this.w = this.k - (this.j * (this.b - 1));
-        this.u = this.k + com.tsf.shell.manager.o.b.a.O + (23.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.u = this.k + com.tsf.shell.manager.o.ButtonPresetManager.a.O + (23.0f * com.censivn.C3DEngine.b.b.A.c);
         this.v = this.k - ((this.b - 1) * this.j);
         this.x = c().folder.childContainerY;
         N.position().y = (this.u - (5.0f * com.censivn.C3DEngine.b.b.A.b)) + c().folder.childContainerY;
@@ -490,7 +490,7 @@ public class j implements e.a {
 
     protected void a(CharSequence charSequence) {
         l();
-        com.tsf.shell.manager.o._a.a aVar = new com.tsf.shell.manager.o._a.a();
+        com.tsf.shell.manager.o._a.TextConfigV2 aVar = new com.tsf.shell.manager.o._a.TextConfigV2();
         aVar.h(60);
         aVar.i(-1);
         Bitmap bitmapB = aVar.b((String) charSequence);
@@ -529,7 +529,7 @@ public class j implements e.a {
             } else {
                 string = Integer.toString(iAW);
             }
-            com.tsf.shell.manager.o._a.a aVar = new com.tsf.shell.manager.o._a.a();
+            com.tsf.shell.manager.o._a.TextConfigV2 aVar = new com.tsf.shell.manager.o._a.TextConfigV2();
             aVar.i(c().folder.sizeTextFormat.color);
             aVar.a(c().folder.sizeTextFormat.width);
             aVar.b(c().folder.sizePlaneHeight);
@@ -546,7 +546,7 @@ public class j implements e.a {
         Bitmap bitmapCreateBitmap2 = Bitmap.createBitmap(c().folder.textWidth, c().folder.textHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas2 = new Canvas(bitmapCreateBitmap2);
         if (!c().folder.nameTextFormat.auto) {
-            com.tsf.shell.manager.o._a.a aVar2 = new com.tsf.shell.manager.o._a.a();
+            com.tsf.shell.manager.o._a.TextConfigV2 aVar2 = new com.tsf.shell.manager.o._a.TextConfigV2();
             aVar2.i(c().folder.nameTextFormat.color);
             aVar2.a(c().folder.nameTextFormat.width);
             aVar2.b(c().folder.textHeight);
@@ -557,7 +557,7 @@ public class j implements e.a {
             canvas2.drawBitmap(bitmapB2, c().folder.nameTextFormat.x, c().folder.nameTextFormat.y - 10, (Paint) null);
             bitmapB2.recycle();
         } else {
-            Bitmap bitmapA = com.tsf.shell.manager.o.b.a.a((String) charSequence);
+            Bitmap bitmapA = com.tsf.shell.manager.o.ButtonPresetManager.a.a((String) charSequence);
             if (bitmapA != null) {
                 canvas2.drawBitmap(bitmapA, 1.0f, 1.0f, (Paint) null);
                 bitmapA.recycle();

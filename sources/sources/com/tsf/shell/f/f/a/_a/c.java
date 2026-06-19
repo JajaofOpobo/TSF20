@@ -28,7 +28,7 @@ public class c {
     private e l;
     private d m;
     private a n;
-    private com.tsf.shell.manager.p.b p;
+    private com.tsf.shell.manager.p.GestureTipElement p;
     private int q;
     private int r;
     private boolean o = false;
@@ -86,7 +86,7 @@ public class c {
     }
 
     public c() {
-        this.q = com.tsf.shell.manager.b.e.aq();
+        this.q = com.tsf.shell.manager.b.ConfigManager.aq();
         int i = this.q == b ? b : c;
         this.r = i;
         this.q = i;
@@ -234,7 +234,7 @@ public class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
-        this.p = new com.tsf.shell.manager.p.b();
+        this.p = new com.tsf.shell.manager.p.GestureTipElement();
         float fA = com.censivn.C3DEngine.b.b.A.a(20.0f);
         float fD = this.k.d() + fA;
         this.p.position().y = fD - com.censivn.C3DEngine.b.b.A.a(400.0f);
@@ -318,7 +318,7 @@ public class c {
                             c.this.p.removeFromParent();
                             c.this.e.mouseEnabled(true);
                             c.this.o = false;
-                            com.tsf.shell.manager.p.c.a(14, false, true);
+                            com.tsf.shell.manager.p.TipsDialogManager.a(14, false, true);
                         }
                     }, 0);
                 }
@@ -328,7 +328,7 @@ public class c {
 
     public void f() {
         if (this.e.parent() == null && com.tsf.shell.manager.app.ServiceProvider.a().b()) {
-            this.o = com.tsf.shell.manager.p.c.b(14);
+            this.o = com.tsf.shell.manager.p.TipsDialogManager.b(14);
             if (this.o) {
                 this.e.mouseEnabled(false);
             }
@@ -449,7 +449,7 @@ public class c {
                 c.this.i.clear();
                 if (c.this.r != c.this.q) {
                     c.this.r = c.this.q;
-                    com.tsf.shell.manager.b.e.q(c.this.q);
+                    com.tsf.shell.manager.b.ConfigManager.q(c.this.q);
                 }
             }
         }, true);

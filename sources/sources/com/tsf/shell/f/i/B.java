@@ -424,7 +424,7 @@ public class B extends j implements F, b {
             rotation().z = itemInfoK.rotationH;
             a(itemInfoK.scaleH);
         }
-        float[] fArrA = com.tsf.shell.manager.r.A.a(this, position().x, position().y);
+        float[] fArrA = com.tsf.shell.manager.r.BoundsHelper.a(this, position().x, position().y);
         if (fArrA[0] == position().x && fArrA[1] == position().y) {
             return false;
         }

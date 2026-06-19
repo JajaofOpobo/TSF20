@@ -10,7 +10,7 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends b {
-    private com.tsf.shell.manager.action.toggle.B a;
+    private com.tsf.shell.manager.action.toggle.ToggleAction a;
     private k b;
     private TextureElement p;
     private int q;
@@ -22,8 +22,8 @@ public class j extends b {
     private com.censivn.C3DEngine.b.f.a.b w;
     private String x;
 
-    public j(com.tsf.shell.manager.action.toggle.B bVar) {
-        super(null, com.tsf.shell.manager.o.b.b);
+    public j(com.tsf.shell.manager.action.toggle.ToggleAction bVar) {
+        super(null, com.tsf.shell.manager.o.ButtonPresetManager.b);
         this.q = 0;
         this.r = -1;
         this.s = false;
@@ -49,7 +49,7 @@ public class j extends b {
         this.w = this.k.a(1);
         this.k.visible(false);
         this.k.textures().addElement(this.p);
-        com.tsf.shell.manager.action.b.a aVarB = com.tsf.shell.manager.action.toggle.A.b(this.a.a);
+        com.tsf.shell.manager.action.ActionManager.a aVarB = com.tsf.shell.manager.action.toggle.TogglePanelManager.b(this.a.a);
         this.x = aVarB.b;
         int i = aVarB.c;
         this.u = i;
@@ -110,8 +110,8 @@ public class j extends b {
             this.r = this.q;
             switch (this.q) {
                 case 0:
-                    com.tsf.shell.manager.o.c.a(this.k, com.tsf.shell.manager.o.c.g);
-                    com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.g);
+                    com.tsf.shell.manager.o.ThemeColorConstants.a(this.k, com.tsf.shell.manager.o.ThemeColorConstants.g);
+                    com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.g);
                     this.b.setAnimationObjectState(false);
                     this.b.textures().clear();
                     this.b.textures().addElement(com.tsf.shell.manager.app.FolderManager.c.b());
@@ -122,8 +122,8 @@ public class j extends b {
                     this.b.setAnimationObjectState(true);
                     break;
                 case 2:
-                    com.tsf.shell.manager.o.c.a(this.k, com.tsf.shell.manager.o.c.e);
-                    com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.e);
+                    com.tsf.shell.manager.o.ThemeColorConstants.a(this.k, com.tsf.shell.manager.o.ThemeColorConstants.e);
+                    com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.e);
                     this.b.setAnimationObjectState(false);
                     this.b.textures().clear();
                     this.b.textures().addElement(com.tsf.shell.manager.app.FolderManager.c.b());

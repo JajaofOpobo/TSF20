@@ -23,7 +23,7 @@ public class ShellApplication extends Application {
         public void onReceive(Context context, Intent intent) throws Throwable {
             if ("com.tsf.shell.StartHome".equals(intent.getAction())) {
                 String strB = ShellApplication.b();
-                com.tsf.shell.manager.b.e.k(true);
+                com.tsf.shell.manager.b.ConfigManager.k(true);
                 if (strB == null || strB.equals(ShellApplication.this.getPackageName())) {
                     ShellApplication.this.c();
                 }
@@ -35,11 +35,11 @@ public class ShellApplication extends Application {
     public void onCreate() throws Throwable {
         super.onCreate();
         a = this;
-        com.tsf.shell.manager.bind.a.a(this);
-        com.tsf.shell.manager.bind.a.a();
+        com.tsf.shell.manager.bind.ShellBindContext.a(this);
+        com.tsf.shell.manager.bind.ShellBindContext.a();
         com.tsf.extend.h.a(this);
         String strB = b();
-        if (com.tsf.shell.manager.b.e.L()) {
+        if (com.tsf.shell.manager.b.ConfigManager.L()) {
             if (strB == null || strB.equals(getPackageName())) {
                 c();
                 return;
@@ -66,7 +66,7 @@ public class ShellApplication extends Application {
     @Override // android.app.Application
     public void onTerminate() {
         super.onTerminate();
-        com.tsf.shell.manager.bind.a.a().d();
+        com.tsf.shell.manager.bind.ShellBindContext.a().d();
     }
 
     public static String b() throws Throwable {

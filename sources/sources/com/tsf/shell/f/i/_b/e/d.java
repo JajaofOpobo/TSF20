@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends a {
-    public d(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
+    public d(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         if (z) {
-            com.tsf.shell.manager.bind.b.b.a(this);
+            com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {

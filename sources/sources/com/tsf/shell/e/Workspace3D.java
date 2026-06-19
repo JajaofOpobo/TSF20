@@ -186,7 +186,7 @@ public class Workspace3D extends ViewGroup {
                             this.d = 1;
                         } else {
                             this.o = true;
-                            com.tsf.shell.manager.action.f.a(motionEvent);
+                            com.tsf.shell.manager.action.GestureHandler.a(motionEvent);
                         }
                         if (this.f) {
                             this.f = false;
@@ -196,7 +196,7 @@ public class Workspace3D extends ViewGroup {
                         }
                     }
                 } else {
-                    com.tsf.shell.manager.action.f.c(motionEvent);
+                    com.tsf.shell.manager.action.GestureHandler.c(motionEvent);
                 }
                 break;
             case 5:
@@ -234,7 +234,7 @@ public class Workspace3D extends ViewGroup {
         }
         this.j.addMovement(motionEvent);
         if (this.m) {
-            com.tsf.shell.manager.action.f.c(motionEvent);
+            com.tsf.shell.manager.action.GestureHandler.c(motionEvent);
             return false;
         }
         switch (motionEvent.getAction()) {

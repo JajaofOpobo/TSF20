@@ -14,13 +14,13 @@ public class A {
 
     public A() {
         com.tsf.shell.manager.app.WidgetPanelController = this;
-        this.c = a(com.tsf.shell.manager.b.e.v());
+        this.c = a(com.tsf.shell.manager.b.ConfigManager.v());
         this.a = new e(false);
         this.b = new f(false);
     }
 
     public boolean a() {
-        return this.c == 0 ? com.tsf.shell.manager.b.e.ag() : com.tsf.shell.manager.b.e.ah();
+        return this.c == 0 ? com.tsf.shell.manager.b.ConfigManager.ag() : com.tsf.shell.manager.b.ConfigManager.ah();
     }
 
     public void b() {
@@ -55,7 +55,7 @@ public class A {
     public void b(int i) {
         if (this.c != i) {
             this.c = a(i);
-            com.tsf.shell.manager.b.e.f(this.c);
+            com.tsf.shell.manager.b.ConfigManager.f(this.c);
             switch (i) {
                 case 0:
                     this.a.c(true);

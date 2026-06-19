@@ -17,7 +17,7 @@ public class B {
     }
 
     public static void a() {
-        if (com.tsf.shell.manager.r.c.b.a && a < 6) {
+        if (com.tsf.shell.manager.r.c.WidgetFeatureConfig.a && a < 6) {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.b.1
                 @Override // java.lang.Runnable
                 public void run() {

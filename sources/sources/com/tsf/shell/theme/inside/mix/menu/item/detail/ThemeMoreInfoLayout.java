@@ -18,7 +18,7 @@ import com.tsf.shell.utils.k;
 public class ThemeMoreInfoLayout extends j {
     private m mAuthorView;
     private m mCheckUpdate;
-    private b mIcon = new h(com.tsf.shell.manager.o.b.c);
+    private b mIcon = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
     private m mLinkView;
     private ThemeListsManager.ThemeInfo mThemeInfo;
     private m mTitleView;

@@ -267,7 +267,7 @@ public class C {
                         contentValues.put("appWidgetProvider", bVar9.o + "/" + bVar9.p);
                         break;
                     case 5:
-                        bVar9.o = com.tsf.shell.manager.r.c.e.a(bVar9);
+                        bVar9.o = com.tsf.shell.manager.r.c.WidgetRegistryManager.a(bVar9);
                         contentValues.put("packagename", bVar9.o);
                         contentValues.put("classname", bVar9.p);
                         break;

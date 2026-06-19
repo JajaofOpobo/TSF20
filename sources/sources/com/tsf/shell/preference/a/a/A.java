@@ -17,7 +17,7 @@ public class A extends i {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.d.b(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.b(com.censivn.C3DEngine.A.d());
                     }
                 });
             }
@@ -32,7 +32,7 @@ public class A extends i {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.d.a(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.a(com.censivn.C3DEngine.A.d());
                     }
                 });
             }
@@ -46,7 +46,7 @@ public class A extends i {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.d.c(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.c(com.censivn.C3DEngine.A.d());
                     }
                 });
             }

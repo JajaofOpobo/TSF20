@@ -70,10 +70,10 @@ public abstract class d {
     public void enableBlurMode(TextureElement textureElement) {
         if (!this.isBlurModeOn) {
             this.isBlurModeOn = true;
-            this.mBarBackground.setDefaultColor(com.tsf.shell.manager.o.c.p);
+            this.mBarBackground.setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.p);
             this.mBarBackground.textures().clear();
             this.mBarBackground.textures().addElement(textureElement);
-            if (com.tsf.shell.manager.f.b.b == 3) {
+            if (com.tsf.shell.manager.f.WorkspaceScene.b == 3) {
             }
         }
     }
@@ -94,7 +94,7 @@ public abstract class d {
     public void disableBlurMode() {
         if (this.isBlurModeOn) {
             this.isBlurModeOn = false;
-            this.mBarBackground.setDefaultColor(com.tsf.shell.manager.o.c.o);
+            this.mBarBackground.setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.o);
             this.mBarBackground.textures().clear();
         }
     }
@@ -160,7 +160,7 @@ public abstract class d {
     }
 
     private void showAnimation(int i) {
-        if (!com.tsf.shell.manager.b.e.ai()) {
+        if (!com.tsf.shell.manager.b.ConfigManager.ai()) {
             enableBlurMode(com.tsf.shell.manager.app.DataCoordinator.a(this));
         }
         onShow();
@@ -242,7 +242,7 @@ public abstract class d {
 
     public d(float f) {
         this.mHeight = f;
-        if (com.tsf.shell.manager.b.e.ai()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ai()) {
             this.mBarBackground.setDefaultColor(new Color4(38, 38, 38, 230));
         }
         this.mBarBackground.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.mBarBackground));

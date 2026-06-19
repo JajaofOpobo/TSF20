@@ -7,12 +7,12 @@ public class i extends b {
     private int a;
     private j b;
 
-    public i(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z) {
+    public i(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         this.k.visible(false);
         this.a = i;
         if (z) {
-            com.tsf.shell.manager.bind.b.b.a(this);
+            com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {

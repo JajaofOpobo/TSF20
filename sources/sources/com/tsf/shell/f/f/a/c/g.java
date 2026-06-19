@@ -13,11 +13,11 @@ public class g extends h {
 
     public g() {
         this.b.textures().addElement(this.a);
-        com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.b);
         calAABB();
         this.c = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.A.a(182.0f), b.d.ring);
-        com.tsf.shell.manager.o.c.a(this.c, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.c, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.c);
     }
 

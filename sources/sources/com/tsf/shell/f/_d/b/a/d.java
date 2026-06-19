@@ -39,10 +39,10 @@ public class d extends com.tsf.shell.f.f.f {
             public void onDrawChildStart() {
                 super.onDrawChildStart();
                 if (d.b.id == 0) {
-                    Bitmap bitmapA = com.tsf.shell.manager.o.b.a.a();
+                    Bitmap bitmapA = com.tsf.shell.manager.o.ButtonPresetManager.a.a();
                     Canvas canvas = new Canvas(bitmapA);
                     canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
-                    com.tsf.shell.manager.o.b.a.a(canvas, x.a(b.d.effect_icon_standard, com.tsf.shell.manager.o.b.a.H, com.tsf.shell.manager.o.b.a.I), true);
+                    com.tsf.shell.manager.o.ButtonPresetManager.a.a(canvas, x.a(b.d.effect_icon_standard, com.tsf.shell.manager.o.ButtonPresetManager.a.H, com.tsf.shell.manager.o.ButtonPresetManager.a.I), true);
                     com.censivn.C3DEngine.A.g().a(d.b, bitmapA);
                 }
                 d.this.a(this);
@@ -52,7 +52,7 @@ public class d extends com.tsf.shell.f.f.f {
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);
-                com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.A.a(30.0f));
+                com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(30.0f));
             }
         };
         hVar.f((float) (Math.random() * 200.0d));

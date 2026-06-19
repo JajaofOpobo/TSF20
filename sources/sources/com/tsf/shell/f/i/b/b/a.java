@@ -22,7 +22,7 @@ public class a extends B {
     public Object i;
     public Runnable j;
     private c k;
-    private com.tsf.shell.manager.r.a.b l;
+    private com.tsf.shell.manager.r.a.WidgetInstanceTracker l;
     private Runnable m;
     private boolean n;
 
@@ -94,7 +94,7 @@ public class a extends B {
             bVar.d = itemInfoK.width;
             bVar.e = itemInfoK.height;
             int[] iArr = {bVar.a, bVar.b, bVar.d, bVar.e};
-            boolean zC = com.tsf.shell.manager.r.A.c(iArr);
+            boolean zC = com.tsf.shell.manager.r.BoundsHelper.c(iArr);
             if (zC) {
                 int i = iArr[0];
                 bVar.a = i;
@@ -117,7 +117,7 @@ public class a extends B {
             bVar.d = itemInfoK.widthH;
             bVar.e = itemInfoK.heightH;
             int[] iArr2 = {bVar.a, bVar.b, bVar.d, bVar.e};
-            boolean zC2 = com.tsf.shell.manager.r.A.c(iArr2);
+            boolean zC2 = com.tsf.shell.manager.r.BoundsHelper.c(iArr2);
             if (zC2) {
                 int i5 = iArr2[0];
                 bVar.a = i5;

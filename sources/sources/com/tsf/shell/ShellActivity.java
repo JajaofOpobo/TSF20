@@ -17,7 +17,7 @@ public class ShellActivity extends Activity {
 
     public static Intent a(String str) {
         Intent intent = new Intent();
-        if (!com.tsf.shell.manager.b.e.L()) {
+        if (!com.tsf.shell.manager.b.ConfigManager.L()) {
             if (com.tsf.a.a.booleanValue()) {
                 Log.v("TSF", "启动： GDPR没有开启 - 显示启动页");
             }

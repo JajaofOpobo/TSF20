@@ -9,7 +9,7 @@ import com.tsf.shell.f.h.a.c;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.manager.app.LauncherAppInfo;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -30,7 +30,7 @@ public class a implements c.a {
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public C0112a b() {
             C0112a c0112a = a.this.new C0112a();
-            c0112a.setAABBPX(com.tsf.shell.manager.o.b.a.T, com.tsf.shell.manager.o.b.a.U);
+            c0112a.setAABBPX(com.tsf.shell.manager.o.ButtonPresetManager.a.T, com.tsf.shell.manager.o.ButtonPresetManager.a.U);
             c0112a.position().y = -com.censivn.C3DEngine.b.b.A.a(30.0f);
             return c0112a;
         }

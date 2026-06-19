@@ -134,8 +134,8 @@ public class b extends d {
         int i3 = h.q;
         int i4 = com.censivn.C3DEngine.b.b.A.F;
         int i5 = com.censivn.C3DEngine.b.b.A.G;
-        float f4 = com.tsf.shell.manager.o.b.a.H;
-        float f5 = com.tsf.shell.manager.o.b.a.I;
+        float f4 = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
+        float f5 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
         float fA = this.c ? com.censivn.C3DEngine.b.b.A.a(100.0f) : 0.0f;
         int size = arrayList.size();
         float f6 = ((-i4) / 2.0f) + (f4 / 2.0f);

@@ -2,7 +2,7 @@ package com.tsf.shell.services;
 
 import android.content.Context;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 import com.tsf.shell.services.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

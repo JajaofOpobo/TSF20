@@ -61,9 +61,9 @@ public class b {
                     }
                 });
             } else if (i == 4) {
-                com.tsf.shell.manager.action.f.b(100);
+                com.tsf.shell.manager.action.GestureHandler.b(100);
             } else if (i == 3) {
-                com.tsf.shell.manager.action.f.b(101);
+                com.tsf.shell.manager.action.GestureHandler.b(101);
             }
         }
     }

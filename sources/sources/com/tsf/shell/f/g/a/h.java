@@ -58,7 +58,7 @@ public class h extends j {
         this.e = jVar;
         jVar.calAABB();
         jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.a = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.c, false);
+        this.a = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
         this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.a.useVBO(false);
         this.a.textures().addElement(c);
@@ -75,15 +75,15 @@ public class h extends j {
     }
 
     public static com.censivn.C3DEngine.b.f.k a(float f) {
-        return new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.b.c.H * f, com.tsf.shell.manager.o.b.c.I * f, false);
+        return new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.c.H * f, com.tsf.shell.manager.o.ButtonPresetManager.c.I * f, false);
     }
 
     public static int e() {
-        return (int) (com.tsf.shell.manager.o.b.c.H * 0.9f);
+        return (int) (com.tsf.shell.manager.o.ButtonPresetManager.c.H * 0.9f);
     }
 
     public static int f() {
-        return (int) (com.tsf.shell.manager.o.b.c.I * 0.9f);
+        return (int) (com.tsf.shell.manager.o.ButtonPresetManager.c.I * 0.9f);
     }
 
     public h() {

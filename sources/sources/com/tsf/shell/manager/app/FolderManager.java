@@ -168,7 +168,7 @@ public class FolderManager implements AppListModel.a {
                                 arrayList2.add(launcherDrawerFolder3DInfoA);
                                 break;
                             case 2:
-                                LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) com.tsf.shell.manager.l.a.a(i);
+                                LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) com.tsf.shell.manager.l.ShortcutManager.a(i);
                                 launcherShortcutAppInfo.isHide = cursorQuery.getInt(columnIndexOrThrow3) == 1;
                                 launcherShortcutAppInfo.clickCount = cursorQuery.getInt(columnIndexOrThrow2);
                                 launcherShortcutAppInfo.versionCode = cursorQuery.getInt(columnIndexOrThrow4);

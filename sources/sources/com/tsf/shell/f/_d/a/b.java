@@ -48,6 +48,6 @@ public class b extends h {
     @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
-        com.tsf.shell.manager.i.a.a(this.c.a(), com.censivn.C3DEngine.b.b.A.a(30.0f));
+        com.tsf.shell.manager.i.PrimeEffectRenderer.a(this.c.a(), com.censivn.C3DEngine.b.b.A.a(30.0f));
     }
 }

@@ -23,7 +23,7 @@ public class d extends i {
 
     @Override // com.tsf.shell.f.f.a._c.i
     public void a(int i, int i2, int i3, int i4) {
-        this.g.a(i, (-com.tsf.shell.manager.o.b.c.U) / 2.0f, i3, com.tsf.shell.manager.o.b.c.U / 2.0f);
+        this.g.a(i, (-com.tsf.shell.manager.o.ButtonPresetManager.c.U) / 2.0f, i3, com.tsf.shell.manager.o.ButtonPresetManager.c.U / 2.0f);
     }
 
     @Override // com.tsf.shell.f.f.a._c.i
@@ -65,7 +65,7 @@ public class d extends i {
     }
 
     private void c() {
-        this.g = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.b.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.g = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.ButtonPresetManager.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.g.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.f.a._c.d.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {

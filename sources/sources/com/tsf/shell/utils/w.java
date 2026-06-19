@@ -9,19 +9,19 @@ public class w {
     private static Vibrator b = (Vibrator) Home.b().getSystemService("vibrator");
 
     public static void a() {
-        if (com.tsf.shell.manager.b.e.ae()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ae()) {
             b.vibrate(8L);
         }
     }
 
     public static void a(int i) {
-        if (com.tsf.shell.manager.b.e.ae()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ae()) {
             b.vibrate(i);
         }
     }
 
     public static void b() {
-        if (com.tsf.shell.manager.b.e.ae()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ae()) {
             if (a == null) {
                 a = new Runnable() { // from class: com.tsf.shell.utils.w.1
                     @Override // java.lang.Runnable

@@ -16,9 +16,9 @@ public class f extends i {
 
     public f(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, b.d.drawer_hide, x.c(b.i.text_hide));
-        float f = 0.8f * (com.tsf.shell.manager.o.b.c.U / com.tsf.shell.manager.o.b.a.U);
-        this.i = com.tsf.shell.manager.o.b.a.U * f;
-        this.g = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.b.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a.c.f.1
+        float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
+        this.i = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
+        this.g = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a.c.f.1
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(int i) {
                 if (i > 0) {
@@ -58,7 +58,7 @@ public class f extends i {
         this.h.c(b.i.notic_hide_app);
         this.h.d(38);
         this.h.e(-1);
-        com.tsf.shell.manager.o.c.a(this.h, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.h, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.h);
     }
 

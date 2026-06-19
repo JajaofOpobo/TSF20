@@ -47,8 +47,8 @@ public class c extends i {
         this.b.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.c.2
             @Override // com.censivn.C3DEngine.b.e.a.C0027a
             public boolean a(boolean z) {
-                if (com.tsf.shell.manager.b.e.J() != z) {
-                    com.tsf.shell.manager.b.e.b(Boolean.valueOf(z));
+                if (com.tsf.shell.manager.b.ConfigManager.J() != z) {
+                    com.tsf.shell.manager.b.ConfigManager.b(Boolean.valueOf(z));
                     com.tsf.shell.manager.app.StateHub.g();
                     return true;
                 }
@@ -115,8 +115,8 @@ public class c extends i {
         this.h.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.c.8
             @Override // com.censivn.C3DEngine.b.e.a.C0027a
             public boolean a(boolean z) {
-                if (com.tsf.shell.manager.b.e.ae() != z) {
-                    com.tsf.shell.manager.b.e.p(z);
+                if (com.tsf.shell.manager.b.ConfigManager.ae() != z) {
+                    com.tsf.shell.manager.b.ConfigManager.p(z);
                     return true;
                 }
                 return true;
@@ -127,14 +127,14 @@ public class c extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.e.k).b();
-        this.k = com.tsf.shell.manager.b.e.P();
-        this.l = com.tsf.shell.manager.b.e.O();
-        this.m = com.tsf.shell.manager.b.e.N();
-        this.j = com.tsf.shell.manager.b.e.ac();
+        com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.k).b();
+        this.k = com.tsf.shell.manager.b.ConfigManager.P();
+        this.l = com.tsf.shell.manager.b.ConfigManager.O();
+        this.m = com.tsf.shell.manager.b.ConfigManager.N();
+        this.j = com.tsf.shell.manager.b.ConfigManager.ac();
         this.g.c(this.j);
         com.tsf.shell.d.b.a(this.a);
-        this.b.c(com.tsf.shell.manager.b.e.J());
+        this.b.c(com.tsf.shell.manager.b.ConfigManager.J());
         this.e.c(this.k);
         if (com.tsf.shell.utils.g.b()) {
             this.c.c(this.m);
@@ -147,8 +147,8 @@ public class c extends i {
             c(this.d);
         }
         this.f.c(com.tsf.shell.manager.app.FeatureConfig.d());
-        this.h.c(com.tsf.shell.manager.b.e.ae());
-        this.n = com.tsf.shell.manager.b.e.ab();
+        this.h.c(com.tsf.shell.manager.b.ConfigManager.ae());
+        this.n = com.tsf.shell.manager.b.ConfigManager.ab();
         this.i.k(this.n);
     }
 
@@ -157,14 +157,14 @@ public class c extends i {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.c.9
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.manager.b.e.P() != c.this.k) {
+                if (com.tsf.shell.manager.b.ConfigManager.P() != c.this.k) {
                     com.tsf.shell.manager.app.ObserverManager.a(!c.this.k);
                 }
-                if (com.tsf.shell.utils.g.c() && com.tsf.shell.manager.b.e.O() != c.this.l) {
+                if (com.tsf.shell.utils.g.c() && com.tsf.shell.manager.b.ConfigManager.O() != c.this.l) {
                     com.censivn.C3DEngine.b.c.e eVar = com.tsf.shell.manager.app.ObserverManager;
                     com.censivn.C3DEngine.b.c.e.b(Home.b(), c.this.l, true);
                 }
-                if (com.tsf.shell.utils.g.b() && com.tsf.shell.manager.b.e.N() != c.this.m) {
+                if (com.tsf.shell.utils.g.b() && com.tsf.shell.manager.b.ConfigManager.N() != c.this.m) {
                     com.tsf.shell.manager.app.ObserverManager.a((Activity) Home.b(), c.this.m, true);
                 }
             }
@@ -172,10 +172,10 @@ public class c extends i {
         int iE = this.i.e();
         boolean zE = this.g.e();
         if (zE != this.j) {
-            com.tsf.shell.manager.b.e.o(zE);
+            com.tsf.shell.manager.b.ConfigManager.o(zE);
         }
         if (iE != this.n) {
-            com.tsf.shell.manager.b.e.m(iE);
+            com.tsf.shell.manager.b.ConfigManager.m(iE);
         }
         com.tsf.shell.manager.app.ServiceFactory.a(zE, iE);
     }

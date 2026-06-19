@@ -12,11 +12,11 @@ import android.provider.Settings;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleStateManager extends BroadcastReceiver {
     public static String a = "android.media.RINGER_MODE_CHANGED";
-    private com.tsf.shell.manager.action.toggle.A b;
+    private com.tsf.shell.manager.action.toggle.TogglePanelManager b;
     private A c;
     private b d;
 
-    public ToggleStateManager(com.tsf.shell.manager.action.toggle.A aVar) {
+    public ToggleStateManager(com.tsf.shell.manager.action.toggle.TogglePanelManager aVar) {
         this.b = aVar;
         IntentFilter intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
         intentFilter.addAction("android.net.wifi.WIFI_STATE_CHANGED");

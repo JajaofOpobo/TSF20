@@ -11,13 +11,13 @@ public class c extends d {
 
     public c(int i, boolean z) {
         super(i, z);
-        this.c = new k(com.tsf.shell.manager.o.b.a.H * 1.45f, com.tsf.shell.manager.o.b.a.H * 1.45f, false);
+        this.c = new k(com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, false);
         this.c.setAnimationObjectState(true);
         this.c.uvs().set(0, 0.25f, 0.125f);
         this.c.uvs().set(1, 0.0f, 0.125f);
         this.c.uvs().set(2, 0.25f, 0.0f);
         this.c.uvs().set(3, 0.0f, 0.0f);
-        this.c.position().y = (com.tsf.shell.manager.o.b.a.Y + com.tsf.shell.manager.o.b.a.I) - (com.tsf.shell.manager.o.b.a.I * 0.12f);
+        this.c.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.Y + com.tsf.shell.manager.o.ButtonPresetManager.a.I) - (com.tsf.shell.manager.o.ButtonPresetManager.a.I * 0.12f);
         this.c.useVBO(false);
         this.c.mouseEnabled(false);
         this.c.removeFromParent();

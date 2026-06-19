@@ -83,7 +83,7 @@ public class h extends i {
             this.g.position().x = com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(30.0f);
             this.g.rotation().z = 180.0f;
         }
-        this.g.position().y = (com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.manager.m.b.b) - (((com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.C) - (2.0f * com.tsf.shell.manager.m.b.b)) * this.h);
+        this.g.position().y = (com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.manager.m.SideMenuManager.b) - (((com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.C) - (2.0f * com.tsf.shell.manager.m.SideMenuManager.b)) * this.h);
     }
 
     @Override // com.censivn.C3DEngine.b.e.c
@@ -95,7 +95,7 @@ public class h extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        boolean zH = com.tsf.shell.manager.b.e.h();
+        boolean zH = com.tsf.shell.manager.b.ConfigManager.h();
         this.e = zH;
         this.d = zH;
         this.c.c(this.d);
@@ -137,7 +137,7 @@ public class h extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
         if (this.d != this.e) {
-            com.tsf.shell.manager.b.e.b(this.d);
+            com.tsf.shell.manager.b.ConfigManager.b(this.d);
         }
         com.tsf.shell.manager.app.PanelStateManager.a(this.a.e(), true);
         com.tsf.shell.manager.app.PanelStateManager.h();

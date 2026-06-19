@@ -23,8 +23,8 @@ public class l {
 
     public l(c cVar, float f) {
         this.f = f;
-        c = com.tsf.shell.manager.o.b.a.T / 5.0f;
-        a = (com.tsf.shell.manager.o.b.a.T / 4.0f) * 3.0f;
+        c = com.tsf.shell.manager.o.ButtonPresetManager.a.T / 5.0f;
+        a = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 4.0f) * 3.0f;
         b = 0.0f;
     }
 
@@ -95,7 +95,7 @@ public class l {
 
     private float f() {
         float fNumChildren = c * (a().numChildren() - 1);
-        if (fNumChildren < com.censivn.C3DEngine.b.b.A.D - com.tsf.shell.manager.o.b.a.T) {
+        if (fNumChildren < com.censivn.C3DEngine.b.b.A.D - com.tsf.shell.manager.o.ButtonPresetManager.a.T) {
             return (-fNumChildren) / 2.0f;
         }
         return com.censivn.C3DEngine.b.b.A.z + a;

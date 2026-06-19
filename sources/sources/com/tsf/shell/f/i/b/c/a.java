@@ -69,7 +69,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.k != null && this.b != null) {
-            if (com.tsf.shell.manager.r.c.b.c) {
+            if (com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
                 this.k.setAnimationObjectState(true);
                 if (!this.l && !this.m && !this.n && !Y()) {
                     if (this.b.f) {
@@ -350,7 +350,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
 
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
-            if (!a.this.m && com.tsf.shell.manager.r.c.b.c) {
+            if (!a.this.m && com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
                 a();
             }
         }

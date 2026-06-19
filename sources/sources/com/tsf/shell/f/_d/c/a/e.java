@@ -64,10 +64,10 @@ public class e extends d {
         j jVarD = com.tsf.shell.manager.app.v.ScreenHelper.d().d();
         int size = arrayList.size();
         float f4 = 120.0f * com.censivn.C3DEngine.b.b.A.c * (size - 1);
-        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.a.h / 2.0f) + a > com.censivn.C3DEngine.b.b.A.B) {
-            f3 = ((com.censivn.C3DEngine.b.b.A.B - a) - (com.tsf.shell.manager.g.a.h / 2.0f)) - f2;
-        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.a.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.A.C) {
-            f3 = f4 + (((com.censivn.C3DEngine.b.b.A.C + a) + (com.tsf.shell.manager.g.a.h / 2.0f)) - f2);
+        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f) + a > com.censivn.C3DEngine.b.b.A.B) {
+            f3 = ((com.censivn.C3DEngine.b.b.A.B - a) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2;
+        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.A.C) {
+            f3 = f4 + (((com.censivn.C3DEngine.b.b.A.C + a) + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2);
         } else {
             f3 = f4 / 2.0f;
         }

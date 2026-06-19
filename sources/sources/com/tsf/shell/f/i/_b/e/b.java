@@ -18,7 +18,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
     public com.censivn.C3DEngine.b.f._a.a k;
     public com.censivn.C3DEngine.b.f._a.b l;
     public com.censivn.C3DEngine.b.f._a.b m;
-    public com.tsf.shell.manager.o.A n;
+    public com.tsf.shell.manager.o.ButtonMetrics n;
     public boolean o;
     private boolean p;
     private float q;
@@ -29,7 +29,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
 
     protected abstract void k();
 
-    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar) {
+    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         super(launcherShortcut3DInfo);
         this.b = true;
         this.p = true;
@@ -126,7 +126,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         }
     }
 
-    public com.tsf.shell.manager.o.A aE() {
+    public com.tsf.shell.manager.o.ButtonMetrics aE() {
         return this.n;
     }
 

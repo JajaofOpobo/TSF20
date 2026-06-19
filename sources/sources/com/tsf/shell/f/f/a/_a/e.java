@@ -32,7 +32,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
         this.a.addChild(this.b);
         this.c = new j();
         this.a.addChild(this.c);
-        this.d = new k(com.tsf.shell.manager.g.a.j, com.tsf.shell.manager.g.a.j, z) { // from class: com.tsf.shell.f.f.a._a.e.2
+        this.d = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.j, com.tsf.shell.manager.g.LayoutDimensionConstants.j, z) { // from class: com.tsf.shell.f.f.a._a.e.2
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (e.this.f.id == 0) {
@@ -67,7 +67,7 @@ public class e extends com.censivn.C3DEngine.b.b.c {
     @Override // com.censivn.C3DEngine.b.b.c
     public void c(int i) {
         this.e.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f) + (this.e.b() / 2.0f);
-        this.d.position().x = (i / 2.0f) - com.tsf.shell.manager.g.a.j;
+        this.d.position().x = (i / 2.0f) - com.tsf.shell.manager.g.LayoutDimensionConstants.j;
         this.b.a(i);
         d(h);
         this.b.calAABB();

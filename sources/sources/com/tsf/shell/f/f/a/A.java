@@ -123,7 +123,7 @@ public class A extends C {
                         com.tsf.shell.manager.app.StateHub.t().e(iVarA);
                     }
                 };
-                dVar.f(com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.b.a.T);
+                dVar.f(com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.ButtonPresetManager.a.T);
                 com.censivn.C3DEngine.b.g.c.a(iVarA);
                 com.censivn.C3DEngine.b.g.c.a(iVarA, VEasing.Linear.easeNone, dVar);
             }
@@ -157,7 +157,7 @@ public class A extends C {
                 this.d.removeChild(bVarC);
                 super.addChild(bVarC);
                 bVarC.position().y = h.E.get(numChildren() - 1).y;
-                bVarC.position().x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.b.a.T;
+                bVarC.position().x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.ButtonPresetManager.a.T;
             }
             a(childIndexOf, true);
         }

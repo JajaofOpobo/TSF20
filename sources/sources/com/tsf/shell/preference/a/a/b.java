@@ -81,7 +81,7 @@ public class b extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        float fAj = com.tsf.shell.manager.b.e.aj();
+        float fAj = com.tsf.shell.manager.b.ConfigManager.aj();
         this.g = fAj;
         this.c = fAj == 0.0f;
         this.e.c(this.c);
@@ -94,8 +94,8 @@ public class b extends i {
     public void g() {
         float fE = this.e.e() ? 0.0f : this.d.e() / 10.0f;
         if (fE != this.g) {
-            com.tsf.shell.manager.o.b.c();
-            com.tsf.shell.manager.b.e.f(fE);
+            com.tsf.shell.manager.o.ButtonPresetManager.c();
+            com.tsf.shell.manager.b.ConfigManager.f(fE);
             Home.b().a(300);
         }
     }

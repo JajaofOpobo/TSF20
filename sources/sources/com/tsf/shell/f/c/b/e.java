@@ -48,7 +48,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         this.b = com.censivn.C3DEngine.b.b.A.a(this.b);
         this.c = com.censivn.C3DEngine.b.b.A.a(this.c);
         com.tsf.shell.manager.app.ObserverManager.a(this);
-        this.f = new com.tsf.shell.f.c.b.a.b(this, this.m ? com.tsf.shell.manager.o.b.c : com.tsf.shell.manager.o.b.a);
+        this.f = new com.tsf.shell.f.c.b.a.b(this, this.m ? com.tsf.shell.manager.o.ButtonPresetManager.c : com.tsf.shell.manager.o.ButtonPresetManager.a);
         this.d = new j();
         this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.e.1
             @Override // com.censivn.C3DEngine.b.h.e.a
@@ -196,7 +196,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
 
     public void a(boolean z) {
         if (!this.m && z) {
-            a(com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.t() : com.tsf.shell.manager.b.e.u());
+            a(com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.t() : com.tsf.shell.manager.b.ConfigManager.u());
         }
         float f = com.censivn.C3DEngine.b.b.A.D - this.n;
         h().a(f, this.c, this.c, this.b);
@@ -289,7 +289,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
             if (itemInfo.itemType == 1) {
                 bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
             } else {
-                bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
+                bVarA = com.tsf.shell.manager.l.ShortcutManager.a(itemInfo, true);
             }
             aVar.a(bVarA, false);
             aVar.addChild(bVarA);
@@ -308,7 +308,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
-            bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
+            bVarA = com.tsf.shell.manager.l.ShortcutManager.a(itemInfo, true);
         }
         aVar.a(bVarA, false);
         aVar.addChild(bVarA);
@@ -363,7 +363,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
                 this.i.visible(false);
             }
             if (!this.m) {
-                com.tsf.shell.manager.b.e.e(true);
+                com.tsf.shell.manager.b.ConfigManager.e(true);
                 com.tsf.shell.manager.app.StateManager.c(this.j);
                 com.tsf.shell.manager.app.StateHub.t().ar();
             }
@@ -396,7 +396,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
             }
             if (!this.m) {
                 com.tsf.shell.manager.app.StateManager.b(this.j);
-                com.tsf.shell.manager.b.e.e(false);
+                com.tsf.shell.manager.b.ConfigManager.e(false);
                 com.tsf.shell.manager.app.StateHub.t().ar();
             }
         }

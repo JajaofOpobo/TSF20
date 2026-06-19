@@ -54,7 +54,7 @@ public class f {
             if (f()) {
                 bitmapA = p.a(bitmapA, -100.0f);
                 Canvas canvas = new Canvas(bitmapA);
-                Bitmap bitmapA2 = com.tsf.shell.manager.i.a.a();
+                Bitmap bitmapA2 = com.tsf.shell.manager.i.PrimeEffectRenderer.a();
                 canvas.drawBitmap(bitmapA2, (bitmapA.getWidth() - bitmapA2.getWidth()) / 2, (bitmapA.getHeight() - bitmapA2.getHeight()) / 2, (Paint) null);
                 bitmapA2.recycle();
             } else if (themeShellDescription.desktopEffectHue != 0 || themeShellDescription.desktopEffectSaturation != 0) {

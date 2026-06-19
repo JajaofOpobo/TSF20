@@ -177,7 +177,7 @@ public class ThemeParser extends DefaultHandler {
 
     private void parseFolderOrder(ThemeFolderDescription themeFolderDescription, Element element) {
         NodeList childNodes = element.getChildNodes();
-        float f = com.tsf.shell.manager.o.b.a.A;
+        float f = com.tsf.shell.manager.o.ButtonPresetManager.a.A;
         int length = childNodes.getLength();
         for (int i = 0; i < length; i++) {
             Node nodeItem = childNodes.item(i);
@@ -244,11 +244,11 @@ public class ThemeParser extends DefaultHandler {
         if (themeFolderDescription.nameTextFormat.auto) {
             themeFolderDescription.textPlaneEnable = false;
             themeFolderDescription.textPlaneX = 0;
-            themeFolderDescription.textPlaneY = com.tsf.shell.manager.o.b.a.aa;
-            themeFolderDescription.textPlaneWidth = com.tsf.shell.manager.o.b.a.J + 2;
-            themeFolderDescription.textPlaneHeight = com.tsf.shell.manager.o.b.a.K + 2;
-            themeFolderDescription.textWidth = com.tsf.shell.manager.o.b.a.J + 2;
-            themeFolderDescription.textHeight = com.tsf.shell.manager.o.b.a.K + 2;
+            themeFolderDescription.textPlaneY = com.tsf.shell.manager.o.ButtonPresetManager.a.aa;
+            themeFolderDescription.textPlaneWidth = com.tsf.shell.manager.o.ButtonPresetManager.a.J + 2;
+            themeFolderDescription.textPlaneHeight = com.tsf.shell.manager.o.ButtonPresetManager.a.K + 2;
+            themeFolderDescription.textWidth = com.tsf.shell.manager.o.ButtonPresetManager.a.J + 2;
+            themeFolderDescription.textHeight = com.tsf.shell.manager.o.ButtonPresetManager.a.K + 2;
             themeFolderDescription.order.add(1, 0);
         } else {
             themeFolderDescription.textPlaneEnable = true;
@@ -261,7 +261,7 @@ public class ThemeParser extends DefaultHandler {
     }
 
     private void parseFolderChild(ThemeFolderDescription themeFolderDescription, Element element) {
-        float f = com.tsf.shell.manager.o.b.a.A;
+        float f = com.tsf.shell.manager.o.ButtonPresetManager.a.A;
         NodeList childNodes = element.getChildNodes();
         int length = childNodes.getLength();
         for (int i = 0; i < length; i++) {

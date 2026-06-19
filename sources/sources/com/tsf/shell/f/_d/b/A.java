@@ -59,7 +59,7 @@ public class A extends c<d> {
 
     @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
-        com.tsf.shell.manager.b.e.f(str);
+        com.tsf.shell.manager.b.ConfigManager.f(str);
     }
 
     @Override // com.tsf.shell.f.f.C
@@ -69,7 +69,7 @@ public class A extends c<d> {
 
     @Override // com.tsf.shell.f.f.C
     public String c() {
-        return com.tsf.shell.manager.b.e.D();
+        return com.tsf.shell.manager.b.ConfigManager.D();
     }
 
     public void d() {

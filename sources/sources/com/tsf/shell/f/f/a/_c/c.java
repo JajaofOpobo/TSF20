@@ -575,7 +575,7 @@ public class c extends i {
                             c.this.z.y = fArrB[1];
                             if (fArrB[1] >= com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.f.a.f.a) {
                                 c.this.a.ap().globalToLocal(c.this.z);
-                                c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.b.a.T / 2.0f) * com.tsf.shell.f.f.a.h.v), c.this.z.y - ((com.tsf.shell.manager.o.b.a.U / 2.0f) * com.tsf.shell.f.f.a.h.v)), c.this.z.x, c.this.z.y);
+                                c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.h.v), c.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.h.v)), c.this.z.x, c.this.z.y);
                             }
                         }
                     }

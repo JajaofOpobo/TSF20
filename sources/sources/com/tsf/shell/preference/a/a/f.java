@@ -38,7 +38,7 @@ public class f extends i {
         aVar.a(new com.censivn.C3DEngine.b.e.a.C0027a() {
             @Override
             public boolean a(boolean z) {
-                com.tsf.shell.manager.b.e.t(z);
+                com.tsf.shell.manager.b.ConfigManager.t(z);
                 return true;
             }
         });
@@ -49,7 +49,7 @@ public class f extends i {
     public void j() {
         AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
         builder.setTitle(com.tsf.b.i.mn_folder_animation);
-        final int iAr = com.tsf.shell.manager.b.e.ar();
+        final int iAr = com.tsf.shell.manager.b.ConfigManager.ar();
         builder.setSingleChoiceItems(new String[]{x.c(com.tsf.b.i.mn_folder_animation_quick), x.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -60,7 +60,7 @@ public class f extends i {
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (iAr != f.this.c) {
-                    com.tsf.shell.manager.b.e.r(f.this.c);
+                    com.tsf.shell.manager.b.ConfigManager.r(f.this.c);
                     f.this.i();
                 }
             }
@@ -74,7 +74,7 @@ public class f extends i {
     }
 
     public void i() {
-        switch (com.tsf.shell.manager.b.e.ar()) {
+        switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
                 this.b.b(x.c(com.tsf.b.i.mn_folder_animation_quick));
                 break;

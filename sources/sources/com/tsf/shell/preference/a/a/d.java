@@ -136,17 +136,17 @@ public class d extends com.censivn.C3DEngine.b.e.c {
         int i = com.tsf.shell.manager.app.WidgetPanelController.b.i();
         this.a.k(i);
         this.b.f(i);
-        this.g = com.tsf.shell.manager.b.e.t();
-        this.h = com.tsf.shell.manager.b.e.u();
-        this.e.c(com.tsf.shell.manager.b.e.ag());
-        this.f.c(com.tsf.shell.manager.b.e.ah());
+        this.g = com.tsf.shell.manager.b.ConfigManager.t();
+        this.h = com.tsf.shell.manager.b.ConfigManager.u();
+        this.e.c(com.tsf.shell.manager.b.ConfigManager.ag());
+        this.f.c(com.tsf.shell.manager.b.ConfigManager.ah());
         i();
-        if (com.tsf.shell.manager.b.e.ag()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ag()) {
             this.c.h();
         } else {
             this.c.m();
         }
-        if (com.tsf.shell.manager.b.e.ah()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ah()) {
             this.b.h();
         } else {
             this.b.m();
@@ -157,10 +157,10 @@ public class d extends com.censivn.C3DEngine.b.e.c {
     public void g() {
         com.tsf.shell.manager.app.WidgetPanelController.b.a(this.a.e(), true);
         com.tsf.shell.manager.app.WidgetPanelController.a.a(this.d.e());
-        com.tsf.shell.manager.b.e.d(this.g);
-        com.tsf.shell.manager.b.e.e(this.h);
-        com.tsf.shell.manager.b.e.q(this.e.e());
-        com.tsf.shell.manager.b.e.r(this.f.e());
+        com.tsf.shell.manager.b.ConfigManager.d(this.g);
+        com.tsf.shell.manager.b.ConfigManager.e(this.h);
+        com.tsf.shell.manager.b.ConfigManager.q(this.e.e());
+        com.tsf.shell.manager.b.ConfigManager.r(this.f.e());
         com.tsf.shell.manager.app.WidgetPanelController.b(this.k.e());
     }
 }

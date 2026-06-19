@@ -57,7 +57,7 @@ public class ThemeDesktopEffectManager extends ThemeMixElementManager {
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.drawBitmap(bitmap, (180 - bitmap.getWidth()) / 2.0f, 0.0f, (Paint) null);
         bitmap.recycle();
-        Bitmap bitmapA = e.a(true, com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.d, com.tsf.shell.manager.g.a.e, themeDescription.shell.desktopEffectSelectColor);
+        Bitmap bitmapA = e.a(true, com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.d, com.tsf.shell.manager.g.LayoutDimensionConstants.e, themeDescription.shell.desktopEffectSelectColor);
         canvas.drawBitmap(bitmapA, (180 - bitmapA.getWidth()) / 2.0f, 147.0f, (Paint) null);
         bitmapA.recycle();
         return bitmapCreateBitmap;

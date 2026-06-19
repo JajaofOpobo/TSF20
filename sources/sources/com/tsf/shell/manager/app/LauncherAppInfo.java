@@ -151,11 +151,11 @@ public class LauncherAppInfo {
     }
 
     public void f() {
-        com.censivn.C3DEngine.A.g().a(this.d, com.tsf.shell.manager.r.c.a.a(null, com.tsf.shell.manager.o.b.a, this));
+        com.censivn.C3DEngine.A.g().a(this.d, com.tsf.shell.manager.r.c.a.WidgetInstantiator(null, com.tsf.shell.manager.o.ButtonPresetManager.a, this));
     }
 
     public Bitmap g() {
-        return com.tsf.shell.manager.r.c.a.a(this.f);
+        return com.tsf.shell.manager.r.c.a.WidgetInstantiator(this.f);
     }
 
     @SuppressLint({"NewApi"})

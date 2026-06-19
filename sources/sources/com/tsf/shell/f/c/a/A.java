@@ -92,7 +92,7 @@ public class A extends com.censivn.C3DEngine.b.d.a {
         com.censivn.C3DEngine.a.b.c = this.d * this.d;
         this.f = motionEvent.getX();
         this.g = motionEvent.getY();
-        com.tsf.shell.manager.action.f.a();
+        com.tsf.shell.manager.action.GestureHandler.a();
         if (this.b.m() == 2) {
             this.e = 0;
         } else {

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,27 +17,27 @@ public class c extends j {
     private com.tsf.shell.f.i.b.e.b j;
     private float d = com.censivn.C3DEngine.b.b.A.c * 0.0f;
     private float e = 5.0f * com.censivn.C3DEngine.b.b.A.c;
-    private float b = ((this.d * 3.0f) + (com.tsf.shell.manager.o.b.b.T * 4)) + (90.0f * com.censivn.C3DEngine.b.b.A.c);
-    private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.b.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.A.c);
-    private com.tsf.shell.f.i.b.e.b i = a(12, com.tsf.shell.manager.p.e.l);
+    private float b = ((this.d * 3.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.T * 4)) + (90.0f * com.censivn.C3DEngine.b.b.A.c);
+    private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.A.c);
+    private com.tsf.shell.f.i.b.e.b i = a(12, com.tsf.shell.manager.p.ThemePreferenceProvider.l);
 
     public c(b bVar) {
         this.a = bVar;
-        this.f = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.b.b.U, com.tsf.shell.manager.o.b.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.f = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
         this.f.addChild(this.i);
         this.f.addChild(a(13));
         this.j = a(11);
         this.f.addChild(this.j);
         this.f.addChild(a(14));
-        this.f.position().y = com.tsf.shell.manager.o.b.b.U + this.e;
+        this.f.position().y = com.tsf.shell.manager.o.ButtonPresetManager.b.U + this.e;
         this.f.e();
         addChild(this.f);
-        this.g = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.b.b.U, com.tsf.shell.manager.o.b.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
-        this.g.addChild(a(VEasing.Back.easeIn, com.tsf.shell.manager.p.e.a));
-        this.g.addChild(a(300, com.tsf.shell.manager.p.e.e));
+        this.g = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.g.addChild(a(VEasing.Back.easeIn, com.tsf.shell.manager.p.ThemePreferenceProvider.a));
+        this.g.addChild(a(300, com.tsf.shell.manager.p.ThemePreferenceProvider.e));
         this.g.addChild(a(800));
-        this.g.addChild(a(1700, com.tsf.shell.manager.p.e.o));
-        this.g.addChild(a(1500, com.tsf.shell.manager.p.e.k));
+        this.g.addChild(a(1700, com.tsf.shell.manager.p.ThemePreferenceProvider.o));
+        this.g.addChild(a(1500, com.tsf.shell.manager.p.ThemePreferenceProvider.k));
         this.g.addChild(a(900));
         this.g.addChild(a(VEasing.Linear.easeNone));
         this.g.addChild(a(1400));
@@ -49,14 +49,14 @@ public class c extends j {
         this.g.addChild(a(15));
         this.g.e();
         addChild(this.g);
-        this.h = new f(this, this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.b.b.U, com.tsf.shell.manager.o.b.b.T, 40.0f * com.censivn.C3DEngine.b.b.A.c, 0.0f * com.censivn.C3DEngine.b.b.A.c);
-        this.h.position().y = (-com.tsf.shell.manager.o.b.b.U) - this.e;
+        this.h = new f(this, this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, 40.0f * com.censivn.C3DEngine.b.b.A.c, 0.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.h.position().y = (-com.tsf.shell.manager.o.ButtonPresetManager.b.U) - this.e;
         this.h.d();
         addChild(this.h);
     }
 
     public com.tsf.shell.f.i.b.e.b a(int i) {
-        com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(i, com.tsf.shell.manager.o.b.b);
+        com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.ShortcutManager.a(i, com.tsf.shell.manager.o.ButtonPresetManager.b);
         a(bVarA);
         return bVarA;
     }
@@ -68,7 +68,7 @@ public class c extends j {
         if (aVarA.a()) {
             launcherShortcutStandardInfo.enableNotifPoint();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.f.h.c.1
-                @Override // com.tsf.shell.manager.p.e.a.C0142a
+                @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                 public void a() {
                     launcherShortcutStandardInfo.disableNotifPoint();
                     bVarA.aB();
@@ -108,13 +108,13 @@ public class c extends j {
 
     public void b() {
         if (com.tsf.shell.manager.app.StateHub.E()) {
-            com.tsf.shell.manager.o.c.a(this.i, com.tsf.shell.manager.o.c.f);
-            com.tsf.shell.manager.o.c.a(this.j, com.tsf.shell.manager.o.c.f);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this.i, com.tsf.shell.manager.o.ThemeColorConstants.f);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this.j, com.tsf.shell.manager.o.ThemeColorConstants.f);
             this.i.mouseEnabled(false);
             this.j.mouseEnabled(false);
         } else {
-            com.tsf.shell.manager.o.c.a(this.i, com.tsf.shell.manager.o.c.e);
-            com.tsf.shell.manager.o.c.a(this.j, com.tsf.shell.manager.o.c.e);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this.i, com.tsf.shell.manager.o.ThemeColorConstants.e);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this.j, com.tsf.shell.manager.o.ThemeColorConstants.e);
             this.i.mouseEnabled(true);
             this.j.mouseEnabled(true);
         }
@@ -129,7 +129,7 @@ public class c extends j {
                 bVar.l();
             }
         });
-        com.tsf.shell.manager.o.c.a(bVar, com.tsf.shell.manager.o.c.e);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(bVar, com.tsf.shell.manager.o.ThemeColorConstants.e);
         bVar.aN();
     }
 

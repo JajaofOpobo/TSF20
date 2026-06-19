@@ -2,7 +2,7 @@ package com.tsf.shell.activity.b;
 
 import android.content.pm.PackageManager;
 import android.util.Log;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {

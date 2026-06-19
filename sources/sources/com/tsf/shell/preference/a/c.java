@@ -53,7 +53,7 @@ public class c {
 
         public void a() {
             if (this.id == 0) {
-                Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(null, "TSF Launcher", x.a(this.a, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I), com.tsf.shell.manager.o.b.c, com.tsf.shell.manager.o.b.c.H, com.tsf.shell.manager.o.b.c.I, false);
+                Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(null, "TSF Launcher", x.a(this.a, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I), com.tsf.shell.manager.o.ButtonPresetManager.c, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I, false);
                 com.censivn.C3DEngine.A.g().a(this, bitmapCreateTextureBitmap);
                 bitmapCreateTextureBitmap.recycle();
             }
@@ -73,7 +73,7 @@ public class c {
 
         public a() {
             for (int i = 0; i < 5; i++) {
-                h hVar = new h(com.tsf.shell.manager.o.b.c);
+                h hVar = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
                 hVar.aL();
                 this.c.add(hVar);
             }

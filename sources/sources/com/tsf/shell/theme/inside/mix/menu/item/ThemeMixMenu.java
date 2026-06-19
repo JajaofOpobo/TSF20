@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.b.A.a;
 import com.censivn.C3DEngine.b.b.A.d;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
@@ -91,7 +91,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
         if (aVarA.a()) {
             this.mIconPlane.enableNotifPoint();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMixMenu.2
-                @Override // com.tsf.shell.manager.p.e.a.C0142a
+                @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                 public void a() {
                     ThemeMixMenu.this.mIconPlane.disableNotifPoint();
                 }

@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a.c;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.manager.n.a;
+import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.f.f.a.C0133a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

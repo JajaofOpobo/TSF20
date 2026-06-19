@@ -10,7 +10,7 @@ public class f extends c {
         super(b.i.text_recents);
         this.a = false;
         a(10);
-        this.a = com.tsf.shell.manager.b.e.aw();
+        this.a = com.tsf.shell.manager.b.ConfigManager.aw();
         if (!this.a) {
             visible(false);
         }
@@ -18,7 +18,7 @@ public class f extends c {
 
     public void a(boolean z) {
         this.a = z;
-        com.tsf.shell.manager.b.e.x(z);
+        com.tsf.shell.manager.b.ConfigManager.x(z);
         b(numChildren());
         if (!this.a) {
             b();

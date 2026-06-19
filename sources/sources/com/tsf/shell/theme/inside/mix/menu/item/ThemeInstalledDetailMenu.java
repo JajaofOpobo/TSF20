@@ -8,7 +8,7 @@ import com.tsf.b;
 import com.tsf.shell.f.e._g.a.d;
 import com.tsf.shell.f.e.l;
 import com.tsf.shell.f.i.b.e.h;
-import com.tsf.shell.manager.o.c;
+import com.tsf.shell.manager.o.ThemeColorConstants;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout;
@@ -66,7 +66,7 @@ public class ThemeInstalledDetailMenu extends d {
         this.mRingIcon = new com.censivn.C3DEngine.b.h.d.a(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.mRingIcon.a(b.d.ico_info);
-        this.mShortcut = new h(com.tsf.shell.manager.o.b.c);
+        this.mShortcut = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
         this.mShortcut.k.a(0).m.y = 0.0f;
         this.mShortcut.k.a(0).f();
         this.mShortcut.aL();

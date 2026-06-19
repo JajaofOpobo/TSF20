@@ -22,7 +22,7 @@ public class b extends j {
     private k m;
 
     public b() {
-        com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.b);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.b);
         this.k = com.censivn.C3DEngine.b.b.A.a(170.0f);
         this.l = com.censivn.C3DEngine.b.b.A.a(280.0f);
         this.m = com.censivn.C3DEngine.b.b.A.a(100.0f, 100.0f);

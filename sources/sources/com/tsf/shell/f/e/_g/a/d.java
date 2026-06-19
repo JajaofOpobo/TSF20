@@ -128,7 +128,7 @@ public class d extends c {
             this.e.e(-1);
             this.e.b(1);
             addChild(this.e);
-            com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.h);
             b(this);
         }
 

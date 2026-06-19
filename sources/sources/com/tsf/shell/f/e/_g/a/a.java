@@ -17,7 +17,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends c {
-    private static com.tsf.shell.manager.o._a.a textCreater;
+    private static com.tsf.shell.manager.o._a.TextConfigV2 textCreater;
     private ArrayList<C0095a> functions;
     private j functionsContainer;
     private boolean initExtraItem = false;
@@ -164,12 +164,12 @@ public class a extends c {
 
         public void h() {
             this.d = true;
-            com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.m);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.m);
         }
 
         public void i() {
             this.d = false;
-            com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.n);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.n);
         }
 
         private void k() {
@@ -195,7 +195,7 @@ public class a extends c {
     /* JADX INFO: Access modifiers changed from: private */
     public static Bitmap createCustomIco(String str, Bitmap bitmap) {
         if (textCreater == null) {
-            textCreater = new com.tsf.shell.manager.o._a.a();
+            textCreater = new com.tsf.shell.manager.o._a.TextConfigV2();
         }
         textCreater.d(false);
         textCreater.h(40);

@@ -1,0 +1,160 @@
+package com.tsf.shell.manager.r.b.c;
+
+import android.appwidget.AppWidgetManager;
+import com.censivn.C3DEngine.api.element.info.ItemInfo;
+import com.censivn.C3DEngine.b.f.j;
+import com.tsf.shell.utils.x;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
+    private com.tsf.shell.f.e._g.a.a.C0095a a;
+    private com.tsf.shell.f.e._g.a.a.C0095a b;
+    private e c;
+    private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase d;
+    private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase e;
+    private j f;
+    private AppWidgetManager g;
+    private e.a h;
+
+    public WidgetPanelToggle(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, String str) {
+        super(str);
+        this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.A.d());
+        ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList = new ArrayList<>();
+        com.tsf.shell.f.e._g.a.a.C0095a c0095a = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            public boolean a() {
+                return WidgetPanelToggle.this.e == WidgetPanelToggle.this.c;
+            }
+
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            public void b() {
+                WidgetPanelToggle.this.a(WidgetPanelToggle.this.c, true);
+                WidgetPanelToggle.this.b.a();
+            }
+        });
+        com.tsf.shell.manager.r.c.WidgetFeatureConfig.e = c0095a;
+        this.a = c0095a;
+        com.tsf.shell.f.e._g.a.a.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.2
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            public boolean a() {
+                return WidgetPanelToggle.this.e == WidgetPanelToggle.this.d;
+            }
+
+            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            public void b() {
+                if (com.tsf.shell.utils.g.b) {
+                    WidgetPanelToggle.this.a(WidgetPanelToggle.this.d, true);
+                    WidgetPanelToggle.this.a.a();
+                } else {
+                    com.tsf.shell.manager.app.WidgetLayoutManager.a.b();
+                }
+            }
+        });
+        com.tsf.shell.manager.r.c.WidgetFeatureConfig.f = c0095a2;
+        this.b = c0095a2;
+        arrayList.add(this.a);
+        arrayList.add(this.b);
+        setFunctions(arrayList);
+        this.f = new j();
+        this.c = new WidgetDragDropArea(aVar, this) { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.3
+            @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
+            public void a(com.tsf.shell.f.i.c.e eVar) {
+                WidgetPanelToggle.this.a(eVar, 0.0f, aVar.getScreenFreeSpaceCenter());
+            }
+
+            @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
+            public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+                return WidgetPanelToggle.this.a(eVar, f, f2);
+            }
+        };
+        this.d = new WidgetPanelOrchestrator(aVar);
+        this.f.addChild(this.c.f());
+        this.f.addChild(this.d.f());
+        this.e = this.c;
+        this.h = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.ThemePreferenceProvider.m);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void a(com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase aVar, boolean z) {
+        if (aVar != this.e) {
+            this.e.a(z);
+            this.e = aVar;
+            this.e.b(z);
+        }
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public void onLayout(float f, float f2, float f3, float f4) {
+        this.c.a(f, f2, f3, f4);
+        this.d.a(f, f2, f3, f4);
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public void onShow() {
+        this.e.b(false);
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public void onShowComplete() {
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public void onHide() {
+        this.h.b();
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public j getContentContainer() {
+        return this.f;
+    }
+
+    @Override // com.tsf.shell.f.e._g.a.c
+    public void onRecycle() {
+        super.onRecycle();
+        a(this.c, false);
+        this.b.a();
+        this.c.e();
+        this.d.e();
+    }
+
+    public boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
+        if (eVar instanceof com.tsf.shell.f.i.c.g) {
+            com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((com.tsf.shell.f.i.c.g) eVar, f, f2, new a.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.4
+                @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
+                public void a(ItemInfo itemInfo) {
+                }
+
+                @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
+                public void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.c.g gVar) {
+                    bVar.scale().setAll(0.0f, 0.0f, 1.0f);
+                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    dVar.l(1.0f);
+                    dVar.m(1.0f);
+                    dVar.a(com.censivn.C3DEngine.b.g.a.e);
+                    com.censivn.C3DEngine.b.g.c.a(bVar);
+                    com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                }
+            });
+            return true;
+        }
+        if (!(eVar instanceof com.tsf.shell.f.i.c.f)) {
+            return true;
+        }
+        float[] fArrA = x.a(f, f2);
+        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.g, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        return false;
+    }
+
+    public void a(com.tsf.shell.f.i.c.e eVar) {
+        this.c.b(eVar);
+    }
+
+    public void b(com.tsf.shell.f.i.c.e eVar) {
+        this.c.c(eVar);
+    }
+
+    public void a(ArrayList<com.tsf.shell.f.i.c.e> arrayList) {
+        this.c.a(arrayList);
+    }
+}

@@ -7,12 +7,12 @@ import com.censivn.C3DEngine.b.g.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.f._d.a.A {
-    private static com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.b.a.b();
+    private static com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     private com.tsf.shell.f._d.a.b b;
 
     public d(int i, boolean z) {
         super(i, z);
-        a = com.tsf.shell.manager.o.b.a.b();
+        a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     }
 
     @Override // com.tsf.shell.f._d.a.A
@@ -26,29 +26,29 @@ public class d extends com.tsf.shell.f._d.a.A {
         final float f3;
         final float f4;
         final boolean zAK = ((com.tsf.shell.f.i.b.e.b) aVar.parent()).aK();
-        final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.b.a.c);
-        final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.b.a.c);
-        final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.b.a.d);
-        final float fPxY2 = aVar.points().pxY(com.tsf.shell.manager.o.b.a.d);
-        float f5 = com.tsf.shell.manager.o.b.a.T * 0.7f;
+        final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
+        final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
+        final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
+        final float fPxY2 = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
+        float f5 = com.tsf.shell.manager.o.ButtonPresetManager.a.T * 0.7f;
         if (aVar.rotation().z != 0.0f) {
             float f6 = -aVar.rotation().z;
             Number3d number3d = Number3d.TEMPNUMBER3D;
             number3d.reset();
             number3d.x = f5;
-            number3d.y = com.tsf.shell.manager.o.b.a.w * f();
+            number3d.y = com.tsf.shell.manager.o.ButtonPresetManager.a.w * f();
             number3d.rotateDegressZ(f6);
             f4 = number3d.x;
             f = number3d.y;
             number3d.x = -f5;
-            number3d.y = com.tsf.shell.manager.o.b.a.t * f();
+            number3d.y = com.tsf.shell.manager.o.ButtonPresetManager.a.t * f();
             number3d.rotateDegressZ(f6);
             f2 = number3d.x;
             f3 = number3d.y;
         } else {
-            f = com.tsf.shell.manager.o.b.a.s * f();
+            f = com.tsf.shell.manager.o.ButtonPresetManager.a.s * f();
             f2 = -f5;
-            f3 = com.tsf.shell.manager.o.b.a.t * f();
+            f3 = com.tsf.shell.manager.o.ButtonPresetManager.a.t * f();
             f4 = f5;
         }
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.d.1
@@ -64,8 +64,8 @@ public class d extends com.tsf.shell.f._d.a.A {
 
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f7) {
-                aVar.points().setPX(com.tsf.shell.manager.o.b.a.c, fPxX + ((f4 - fPxX) * f7), fPxY + ((f - fPxY) * f7), 0.0f);
-                aVar.points().setPX(com.tsf.shell.manager.o.b.a.d, fPxX2 + ((f2 - fPxX2) * f7), fPxY2 + ((f3 - fPxY2) * f7), 0.0f);
+                aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, fPxX + ((f4 - fPxX) * f7), fPxY + ((f - fPxY) * f7), 0.0f);
+                aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, fPxX2 + ((f2 - fPxX2) * f7), fPxY2 + ((f3 - fPxY2) * f7), 0.0f);
                 aVar.updatePointsVBO();
             }
         };
@@ -80,10 +80,10 @@ public class d extends com.tsf.shell.f._d.a.A {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final com.censivn.C3DEngine.b.f.a.a aVar, final Runnable runnable, final boolean z) {
-        final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.b.a.c);
-        final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.b.a.c);
-        final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.b.a.d);
-        final float fPxY2 = aVar.points().pxY(com.tsf.shell.manager.o.b.a.d);
+        final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
+        final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
+        final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
+        final float fPxY2 = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.d.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
@@ -99,8 +99,8 @@ public class d extends com.tsf.shell.f._d.a.A {
 
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {
-                aVar.points().setPX(com.tsf.shell.manager.o.b.a.c, fPxX + ((com.tsf.shell.manager.o.b.a.k - fPxX) * f), fPxY + ((com.tsf.shell.manager.o.b.a.s - fPxY) * f), 0.0f);
-                aVar.points().setPX(com.tsf.shell.manager.o.b.a.d, fPxX2 + ((com.tsf.shell.manager.o.b.a.l - fPxX2) * f), fPxY2 + ((com.tsf.shell.manager.o.b.a.t - fPxY2) * f), 0.0f);
+                aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, fPxX + ((com.tsf.shell.manager.o.ButtonPresetManager.a.k - fPxX) * f), fPxY + ((com.tsf.shell.manager.o.ButtonPresetManager.a.s - fPxY) * f), 0.0f);
+                aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, fPxX2 + ((com.tsf.shell.manager.o.ButtonPresetManager.a.l - fPxX2) * f), fPxY2 + ((com.tsf.shell.manager.o.ButtonPresetManager.a.t - fPxY2) * f), 0.0f);
                 aVar.updatePointsVBO();
             }
         };
@@ -111,15 +111,15 @@ public class d extends com.tsf.shell.f._d.a.A {
 
     public void a(com.censivn.C3DEngine.b.f.a.a aVar, boolean z) {
         com.censivn.C3DEngine.b.g.c.a(aVar);
-        aVar.points().setPX(com.tsf.shell.manager.o.b.a.a, com.tsf.shell.manager.o.b.a.i, com.tsf.shell.manager.o.b.a.q, 0.0f);
-        aVar.points().setPX(com.tsf.shell.manager.o.b.a.c, com.tsf.shell.manager.o.b.a.k, com.tsf.shell.manager.o.b.a.s, 0.0f);
-        aVar.points().setPX(com.tsf.shell.manager.o.b.a.b, com.tsf.shell.manager.o.b.a.j, com.tsf.shell.manager.o.b.a.r, 0.0f);
-        aVar.points().setPX(com.tsf.shell.manager.o.b.a.d, com.tsf.shell.manager.o.b.a.l, com.tsf.shell.manager.o.b.a.t, 0.0f);
+        aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.a, com.tsf.shell.manager.o.ButtonPresetManager.a.i, com.tsf.shell.manager.o.ButtonPresetManager.a.q, 0.0f);
+        aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, com.tsf.shell.manager.o.ButtonPresetManager.a.k, com.tsf.shell.manager.o.ButtonPresetManager.a.s, 0.0f);
+        aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.b, com.tsf.shell.manager.o.ButtonPresetManager.a.j, com.tsf.shell.manager.o.ButtonPresetManager.a.r, 0.0f);
+        aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, com.tsf.shell.manager.o.ButtonPresetManager.a.l, com.tsf.shell.manager.o.ButtonPresetManager.a.t, 0.0f);
         if (!z) {
-            aVar.points().setPX(com.tsf.shell.manager.o.b.a.e, com.tsf.shell.manager.o.b.a.m, com.tsf.shell.manager.o.b.a.u, 0.0f);
-            aVar.points().setPX(com.tsf.shell.manager.o.b.a.g, com.tsf.shell.manager.o.b.a.o, com.tsf.shell.manager.o.b.a.w, 0.0f);
-            aVar.points().setPX(com.tsf.shell.manager.o.b.a.f, com.tsf.shell.manager.o.b.a.n, com.tsf.shell.manager.o.b.a.v, 0.0f);
-            aVar.points().setPX(com.tsf.shell.manager.o.b.a.h, com.tsf.shell.manager.o.b.a.p, com.tsf.shell.manager.o.b.a.x, 0.0f);
+            aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.e, com.tsf.shell.manager.o.ButtonPresetManager.a.m, com.tsf.shell.manager.o.ButtonPresetManager.a.u, 0.0f);
+            aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.g, com.tsf.shell.manager.o.ButtonPresetManager.a.o, com.tsf.shell.manager.o.ButtonPresetManager.a.w, 0.0f);
+            aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.f, com.tsf.shell.manager.o.ButtonPresetManager.a.n, com.tsf.shell.manager.o.ButtonPresetManager.a.v, 0.0f);
+            aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.h, com.tsf.shell.manager.o.ButtonPresetManager.a.p, com.tsf.shell.manager.o.ButtonPresetManager.a.x, 0.0f);
         }
         aVar.updatePointsVBO();
     }

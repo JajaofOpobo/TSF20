@@ -8,8 +8,8 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.e.k;
 import com.tsf.shell.f.f.a.f;
-import com.tsf.shell.manager.o.c;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.o.ThemeColorConstants;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.q;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

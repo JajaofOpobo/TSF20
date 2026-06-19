@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.tsf.b;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 import com.tsf.shell.preference.video.VideoViwerActivity;
 import com.tsf.shell.utils.x;
 

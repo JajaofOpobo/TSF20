@@ -16,7 +16,7 @@ import com.tsf.extend.base.j.t;
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellApplication;
 import com.tsf.shell.ShellProvider;
-import com.tsf.shell.manager.action.b;
+import com.tsf.shell.manager.action.ActionManager;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import java.util.ArrayList;
@@ -140,7 +140,7 @@ public class a {
             height = width;
             width = height;
         }
-        com.tsf.shell.manager.o.A aVar2 = com.tsf.shell.manager.o.b.a;
+        com.tsf.shell.manager.o.ButtonMetrics aVar2 = com.tsf.shell.manager.o.ButtonPresetManager.a;
         float f5 = 8.0f * com.censivn.C3DEngine.b.b.A.c;
         float f6 = 25.0f * com.censivn.C3DEngine.b.b.A.c;
         float f7 = size / 4.0f;
@@ -272,7 +272,7 @@ public class a {
             }
         };
         Intent.ShortcutIconResource shortcutIconResource = new Intent.ShortcutIconResource();
-        b.a aVarB = com.tsf.shell.manager.action.b.b(i);
+        b.a aVarB = com.tsf.shell.manager.action.ActionManager.b(i);
         shortcutIconResource.packageName = com.censivn.C3DEngine.a.b();
         shortcutIconResource.resourceName = Integer.toString(aVarB.c);
         launcherShortcutStandardInfo.title = aVarB.b;

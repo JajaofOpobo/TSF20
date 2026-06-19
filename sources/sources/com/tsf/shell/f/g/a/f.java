@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.w;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -22,9 +22,9 @@ public class f extends a {
         this.d.c(b.i.notic_mark_introduction);
         this.d.d(34);
         this.d.a(true);
-        com.tsf.shell.manager.o.c.a(this.d, com.tsf.shell.manager.o.c.n);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.d, com.tsf.shell.manager.o.ThemeColorConstants.n);
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(430.0f));
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.f.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -60,7 +60,7 @@ public class f extends a {
                 f.this.b.d();
             }
         });
-        this.c = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.e.h);
+        this.c = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.ThemePreferenceProvider.h);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c

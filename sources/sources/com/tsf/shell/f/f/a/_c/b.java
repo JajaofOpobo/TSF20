@@ -43,13 +43,13 @@ public class b extends c.a {
 
     private void h() {
         int i = 70;
-        float f = 0.8f * (com.tsf.shell.manager.o.b.c.U / com.tsf.shell.manager.o.b.a.U);
-        this.k = com.tsf.shell.manager.o.b.a.U * f;
+        float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
+        this.k = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
         this.j = new com.censivn.C3DEngine.b.f.m();
         this.j.c(com.tsf.b.i.notic_batch_operation);
         this.j.d(39);
         this.j.e(-1);
-        com.tsf.shell.manager.o.c.a(this.j, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.j, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.j);
         this.b = new l(this.i, 1.0f) { // from class: com.tsf.shell.f.f.a._c.b.1
             @Override // com.tsf.shell.f.f.a._c.l
@@ -62,7 +62,7 @@ public class b extends c.a {
                 return b.this.a.l().getChildAt(i2);
             }
         };
-        this.a = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.k, com.tsf.shell.manager.o.b.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, com.censivn.C3DEngine.b.b.A.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.b.2
+        this.a = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, com.censivn.C3DEngine.b.b.A.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.b.2
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(int i2) {
                 b.this.b(i2);
@@ -195,13 +195,13 @@ public class b extends c.a {
         this.e = i;
         if (this.e == 0) {
             this.a.f();
-            com.tsf.shell.manager.o.c.a(this.f, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this.f, com.tsf.shell.manager.o.ThemeColorConstants.h);
             this.a.l().renderChildren(true);
             this.a.m();
             return;
         }
         this.a.e();
-        com.tsf.shell.manager.o.c.a(this.f, com.tsf.shell.manager.o.c.l);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.f, com.tsf.shell.manager.o.ThemeColorConstants.l);
         this.a.l().renderChildren(false);
         while (true) {
             int i3 = i2;

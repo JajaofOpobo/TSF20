@@ -278,9 +278,9 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             @Override // com.tsf.shell.f.e.f.b
             public void a(com.tsf.shell.f.i.C cVar) {
                 if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
-                    com.tsf.shell.manager.r.c.g.a(cVar, null, null);
+                    com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, null, null);
                 } else {
-                    com.tsf.shell.manager.r.c.g.a(cVar, (Runnable) null);
+                    com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, (Runnable) null);
                 }
             }
 
@@ -357,7 +357,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         Bitmap bitmap3 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_SELECT);
         n = com.censivn.C3DEngine.A.g().a(n, bitmap3, true);
         bitmap3.recycle();
-        Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f);
+        Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f);
         p = com.censivn.C3DEngine.A.g().a(p, bitmap4, true);
         bitmap4.recycle();
     }
@@ -389,12 +389,12 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
                 bitmap3.recycle();
             }
             if (p == null) {
-                Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f);
+                Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f);
                 p = com.censivn.C3DEngine.A.g().a(bitmap4, true);
                 bitmap4.recycle();
             }
             if (r == null) {
-                r = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.f, com.tsf.shell.manager.g.a.f, false);
+                r = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
                 r.textures().addElement(p);
                 r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
             }

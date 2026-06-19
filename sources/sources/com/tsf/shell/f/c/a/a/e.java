@@ -200,7 +200,7 @@ public class e extends i {
             return;
         }
         int i3 = 0;
-        float fMinY2 = (-f2) - com.tsf.shell.manager.o.b.a.Y;
+        float fMinY2 = (-f2) - com.tsf.shell.manager.o.ButtonPresetManager.a.Y;
         while (i3 < i) {
             com.censivn.C3DEngine.b.f.i iVar2 = arrayList2.get(i3);
             com.tsf.shell.f.c.a.d dVar2 = arrayList.get(i3);

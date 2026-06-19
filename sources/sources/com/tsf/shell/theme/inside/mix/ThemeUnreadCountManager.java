@@ -24,7 +24,7 @@ public class ThemeUnreadCountManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
-        com.tsf.shell.manager.l.a.a();
+        com.tsf.shell.manager.l.ShortcutManager.a();
     }
 
     public static Bitmap createPreviewBitmap(Context context, Context context2, int i, int i2, boolean z) {
@@ -46,7 +46,7 @@ public class ThemeUnreadCountManager extends ThemeMixElementManager {
                 bitmap.recycle();
             }
             int iRandom = (int) (10.0d + (Math.random() * 200.0d));
-            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
+            com.tsf.shell.manager.o.a.TextConfig aVar = new com.tsf.shell.manager.o.a.TextConfig();
             aVar.h(36);
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(Integer.toString(iRandom));

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.i.a;
 
 import android.view.MotionEvent;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.manager.action.GestureHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends c {

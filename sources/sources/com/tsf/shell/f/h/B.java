@@ -82,15 +82,15 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
 
     public void a(j jVar) {
         com.tsf.shell.manager.app.ObserverManager.a(this);
-        this.t = com.tsf.shell.manager.b.e.ac();
-        this.a = this.t ? com.tsf.shell.manager.b.e.ab() : 0;
+        this.t = com.tsf.shell.manager.b.ConfigManager.ac();
+        this.a = this.t ? com.tsf.shell.manager.b.ConfigManager.ab() : 0;
         this.c = 80.0f * com.censivn.C3DEngine.b.b.A.c;
         this.s = new com.tsf.shell.f.h.a.c();
         this.d = new j();
         this.k = new e();
         this.k.b(0.0f);
         this.l = new com.censivn.C3DEngine.b.c.b.a() { // from class: com.tsf.shell.f.h.b.1
-            @Override // com.tsf.shell.manager.f.b.a
+            @Override // com.tsf.shell.manager.f.WorkspaceScene.a
             public void a() {
                 if (b.this.s.e()) {
                     b.this.s.d();
@@ -164,7 +164,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
     }
 
     private void r() {
-        Number3d number3dW = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.w() : com.tsf.shell.manager.b.e.x();
+        Number3d number3dW = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.w() : com.tsf.shell.manager.b.ConfigManager.x();
         if (number3dW.x == 0.0f && number3dW.y == 0.0f) {
             number3dW.x = com.censivn.C3DEngine.b.b.A.z + (70.0f * com.censivn.C3DEngine.b.b.A.c);
             number3dW.y = com.censivn.C3DEngine.b.b.A.C + (300.0f * com.censivn.C3DEngine.b.b.A.c);
@@ -325,9 +325,9 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
             this.m = 0.2f;
             a(false);
             if (com.censivn.C3DEngine.b.b.A.O) {
-                com.tsf.shell.manager.b.e.c(this.o, this.p);
+                com.tsf.shell.manager.b.ConfigManager.c(this.o, this.p);
             } else {
-                com.tsf.shell.manager.b.e.d(this.o, this.p);
+                com.tsf.shell.manager.b.ConfigManager.d(this.o, this.p);
             }
         }
     }

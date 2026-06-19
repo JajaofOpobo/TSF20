@@ -45,7 +45,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
     private boolean i = false;
     private float[] l = new float[2];
     private boolean r = false;
-    private com.tsf.shell.manager.f.b.a k = new com.tsf.shell.manager.f.b.a();
+    private com.tsf.shell.manager.f.WorkspaceScene.a k = new com.tsf.shell.manager.f.WorkspaceScene.a();
     private ArrayList<c> c = new ArrayList<>();
     private j e = new j();
     private j d = new j() { // from class: com.tsf.shell.f.e._f.a.1
@@ -485,14 +485,14 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
 
         public TextureElement a() {
             if (this.e == null) {
-                this.e = ThemeManager.mix.iconMenu.getTextureElement(this.b, com.tsf.shell.manager.g.a.h, com.tsf.shell.manager.g.a.h);
+                this.e = ThemeManager.mix.iconMenu.getTextureElement(this.b, com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h);
             }
             return this.e;
         }
 
         public TextureElement b() {
             if (this.d == null) {
-                this.d = ThemeManager.mix.iconMenu.getTextureElement(this.a, com.tsf.shell.manager.g.a.h, com.tsf.shell.manager.g.a.h);
+                this.d = ThemeManager.mix.iconMenu.getTextureElement(this.a, com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h);
             }
             return this.d;
         }
@@ -545,7 +545,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         public C0094a b;
         public int e;
         public boolean a = false;
-        public k c = new k(com.tsf.shell.manager.g.a.h, com.tsf.shell.manager.g.a.h, false);
+        public k c = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);
         public m d = new m();
 
         public c(int i) {

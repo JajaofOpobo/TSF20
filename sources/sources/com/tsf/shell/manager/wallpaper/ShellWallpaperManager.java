@@ -31,7 +31,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     private int j;
     private float l;
     private float m;
-    private e o;
+    private WallpaperMenuContainer o;
     private static float d = 0.0f;
     private static int e = 0;
     public static int a = 0;
@@ -40,7 +40,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     private Object n = new Object();
     public boolean c = true;
     private ArrayList<a> p = new ArrayList<>();
-    private b f = new b();
+    private WallpaperMenuPanel f = new WallpaperMenuPanel();
 
     public interface a {
         void f();
@@ -74,9 +74,9 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public void b() {
-        this.o = new e();
+        this.o = new WallpaperMenuContainer();
         m();
-        if (com.tsf.shell.manager.b.e.ai()) {
+        if (com.tsf.shell.manager.b.ConfigManager.ai()) {
         }
     }
 
@@ -99,7 +99,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public void d() {
-        a(com.tsf.shell.manager.b.e.Y());
+        a(com.tsf.shell.manager.b.ConfigManager.Y());
     }
 
     public void a(int i) {
@@ -168,7 +168,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public boolean e() {
-        if (f() == com.tsf.shell.manager.b.e.ai()) {
+        if (f() == com.tsf.shell.manager.b.ConfigManager.ai()) {
             return false;
         }
         Home.b().a(100);
@@ -216,7 +216,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b(float f, boolean z) {
-        if (com.tsf.shell.manager.b.e.Y() == a || z) {
+        if (com.tsf.shell.manager.b.ConfigManager.Y() == a || z) {
             if (f < 0.0f) {
                 f = 0.0f;
             } else if (f > 1.0f) {
@@ -224,7 +224,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             }
             this.l = f;
             this.m = f;
-            if (com.tsf.shell.manager.b.e.ai()) {
+            if (com.tsf.shell.manager.b.ConfigManager.ai()) {
                 this.g.setWallpaperOffsets(Home.b().l().getWindowToken(), f, 0.5f);
                 return;
             }
@@ -255,14 +255,14 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public void a(float f, boolean z) {
-        if (com.tsf.shell.manager.b.e.Y() == a || z) {
+        if (com.tsf.shell.manager.b.ConfigManager.Y() == a || z) {
             if (f < 0.0f) {
                 f = 0.0f;
             } else if (f > 1.0f) {
                 f = 1.0f;
             }
             this.l = f;
-            if (com.tsf.shell.manager.b.e.ai()) {
+            if (com.tsf.shell.manager.b.ConfigManager.ai()) {
                 this.f.setAnimationObjectState(true);
                 this.k = false;
                 this.f.invalidate();
@@ -301,7 +301,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             float f = this.f.position().x;
             boolean zVisible = this.f.visible();
             this.f.visible(true);
-            if (com.tsf.shell.manager.b.e.Y() == a) {
+            if (com.tsf.shell.manager.b.ConfigManager.Y() == a) {
                 this.f.position().x = gVar.t() == -1 ? this.j : b(fB);
             } else {
                 this.f.position().x = 0.0f;
@@ -317,7 +317,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public int j() {
-        return com.tsf.shell.manager.b.e.Z();
+        return com.tsf.shell.manager.b.ConfigManager.Z();
     }
 
     public void c(int i) {
@@ -378,7 +378,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         }
 
         public void d() {
-            int iA = a(com.tsf.shell.manager.b.e.Z());
+            int iA = a(com.tsf.shell.manager.b.ConfigManager.Z());
             this.j = iA;
             this.i = iA;
         }
@@ -389,7 +389,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
         public void c(int i) {
             this.j = a(i);
-            com.tsf.shell.manager.b.e.k(i);
+            com.tsf.shell.manager.b.ConfigManager.k(i);
         }
 
         @Override // com.censivn.C3DEngine.b.f.i
@@ -405,7 +405,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                 this.i = this.j;
                 f();
             }
-            if (com.tsf.shell.manager.b.e.ai()) {
+            if (com.tsf.shell.manager.b.ConfigManager.ai()) {
                 if (!ShellWallpaperManager.this.k) {
                     ShellWallpaperManager.this.m += (ShellWallpaperManager.this.l - ShellWallpaperManager.this.m) * ShellWallpaperManager.d;
                     if (Math.abs(ShellWallpaperManager.this.l - ShellWallpaperManager.this.m) <= 0.002f) {

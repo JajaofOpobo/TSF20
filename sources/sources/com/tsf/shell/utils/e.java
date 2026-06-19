@@ -9,7 +9,7 @@ import com.tsf.shell.theme.inside.ThemeManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e {
     public static Bitmap a(boolean z) {
-        return a(z, com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.d, com.tsf.shell.manager.g.a.e, ThemeManager.mix.desktopEffect.getTheme().shell.desktopEffectSelectColor);
+        return a(z, com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.d, com.tsf.shell.manager.g.LayoutDimensionConstants.e, ThemeManager.mix.desktopEffect.getTheme().shell.desktopEffectSelectColor);
     }
 
     public static Bitmap a(boolean z, int i, float f, float f2, int i2) {
@@ -19,7 +19,7 @@ public class e {
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setColor(com.tsf.shell.manager.o.c.j.color);
+        paint.setColor(com.tsf.shell.manager.o.ThemeColorConstants.j.color);
         canvas.drawCircle(i / 2, i / 2, f / 2.0f, paint);
         if (z) {
             paint.setColor(i2);

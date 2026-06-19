@@ -24,7 +24,7 @@ public class A extends com.censivn.C3DEngine.b.e.f {
     private TextureElement e = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);
     private float i = 0.4f;
-    private com.tsf.shell.manager.o.A k = new com.tsf.shell.manager.o.A(1.15f, 1.15f);
+    private com.tsf.shell.manager.o.ButtonMetrics k = new com.tsf.shell.manager.o.ButtonMetrics(1.15f, 1.15f);
 
     public A() {
         a(1);
@@ -106,7 +106,7 @@ public class A extends com.censivn.C3DEngine.b.e.f {
 
     private void h() {
         if (this.d.id == 0) {
-            Bitmap bitmapA = x.a(b.d.preference_screen_frame, com.tsf.shell.manager.g.a.q, com.tsf.shell.manager.g.a.q);
+            Bitmap bitmapA = x.a(b.d.preference_screen_frame, com.tsf.shell.manager.g.LayoutDimensionConstants.q, com.tsf.shell.manager.g.LayoutDimensionConstants.q);
             com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }

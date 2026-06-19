@@ -412,9 +412,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             this.t[2] = i3;
             this.t[3] = i4;
             if (z) {
-                com.tsf.shell.manager.r.a.a(this.t);
+                com.tsf.shell.manager.r.a.AppWidgetHostManager(this.t);
             } else {
-                com.tsf.shell.manager.r.a.b(this.t);
+                com.tsf.shell.manager.r.a.WidgetInstanceTracker(this.t);
             }
             b(0);
             return this.t;
@@ -427,9 +427,9 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
             this.t[2] = i3;
             this.t[3] = i4;
             if (z) {
-                zB = com.tsf.shell.manager.r.a.a(this.t);
+                zB = com.tsf.shell.manager.r.a.AppWidgetHostManager(this.t);
             } else {
-                zB = com.tsf.shell.manager.r.a.b(this.t);
+                zB = com.tsf.shell.manager.r.a.WidgetInstanceTracker(this.t);
             }
             if (zB) {
                 b(1);

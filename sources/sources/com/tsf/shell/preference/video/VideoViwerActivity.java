@@ -20,7 +20,7 @@ import android.widget.TextView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.b;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

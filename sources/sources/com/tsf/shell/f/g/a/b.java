@@ -89,7 +89,7 @@ public class b extends com.tsf.shell.f.e._g.d {
     @Override // com.tsf.shell.f.e._g.d
     public void onShow() {
         com.tsf.shell.manager.app.AppListModel.d();
-        com.tsf.shell.manager.action.f.b();
+        com.tsf.shell.manager.action.GestureHandler.b();
         com.tsf.shell.manager.app.TaskScheduler.b(this.f);
         com.tsf.shell.manager.app.TaskScheduler.a(this.f);
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
@@ -98,7 +98,7 @@ public class b extends com.tsf.shell.f.e._g.d {
     @Override // com.tsf.shell.f.e._g.d
     public void onHide() {
         com.tsf.shell.manager.app.AppListModel.e();
-        com.tsf.shell.manager.action.f.c();
+        com.tsf.shell.manager.action.GestureHandler.c();
         c();
     }
 
@@ -149,7 +149,7 @@ public class b extends com.tsf.shell.f.e._g.d {
 
     private void e() {
         if (this.i == null) {
-            com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName()));
+            com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.ShellBindContext.c().b(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName()));
             TextureElement textureElement = fVarB.d;
             if (textureElement.id == 0) {
                 fVarB.f();

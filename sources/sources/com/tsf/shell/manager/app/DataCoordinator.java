@@ -71,7 +71,7 @@ public class DataCoordinator {
             @Override // java.lang.Runnable
             public void run() {
                 if (z) {
-                    com.tsf.shell.manager.A.l.a(arrayList);
+                    com.tsf.shell.manager.GlobalServiceLocator.l.a(arrayList);
                 }
                 for (LauncherAppInfo fVar : arrayList) {
                     fVar.d();

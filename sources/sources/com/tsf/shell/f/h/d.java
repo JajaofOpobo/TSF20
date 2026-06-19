@@ -77,7 +77,7 @@ public class d extends com.censivn.C3DEngine.b.d.a {
         com.censivn.C3DEngine.a.b.c = this.e * this.e;
         this.g = motionEvent.getX();
         this.h = motionEvent.getY();
-        com.tsf.shell.manager.action.f.a();
+        com.tsf.shell.manager.action.GestureHandler.a();
         if (this.d.m() == 2) {
             this.f = 0;
         } else {

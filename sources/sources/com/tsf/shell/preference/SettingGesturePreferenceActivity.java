@@ -9,8 +9,8 @@ import com.censivn.C3DEngine.b.c.a;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.A;
-import com.tsf.shell.manager.action.c;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.manager.action.ShortcutCreator;
+import com.tsf.shell.manager.action.GestureHandler;
 import java.util.HashMap;
 import org.acra.ACRAConstants;
 
@@ -95,7 +95,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         boolean z = false;
         if ("back_key_action".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.1
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("back_key_action").setSummary(aVar.a);
@@ -106,7 +106,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("home_key_action".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.5
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("home_key_action").setSummary(aVar.a);
@@ -117,7 +117,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_double_tap".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.6
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_double_tap").setSummary(aVar.a);
@@ -128,7 +128,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_swipe_up".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.7
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_swipe_up").setSummary(aVar.a);
@@ -139,7 +139,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_swipe_down".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.8
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_swipe_down").setSummary(aVar.a);
@@ -150,7 +150,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_pinch_in".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.9
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_pinch_in").setSummary(aVar.a);
@@ -161,7 +161,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_pinch_out".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.10
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_pinch_out").setSummary(aVar.a);
@@ -172,7 +172,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_two_up".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.11
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_two_up").setSummary(aVar.a);
@@ -183,7 +183,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_two_down".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.12
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_two_down").setSummary(aVar.a);
@@ -194,7 +194,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_two_left".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.2
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_two_left").setSummary(aVar.a);
@@ -205,7 +205,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         }
         if ("gesture_two_right".equals(preference.getKey())) {
             new c(this, this, z) { // from class: com.tsf.shell.preference.SettingGesturePreferenceActivity.3
-                @Override // com.tsf.shell.manager.action.c
+                @Override // com.tsf.shell.manager.action.ShortcutCreator
                 public void a(c.a aVar) {
                     super.a(aVar);
                     SettingGesturePreferenceActivity.this.findPreference("gesture_two_right").setSummary(aVar.a);

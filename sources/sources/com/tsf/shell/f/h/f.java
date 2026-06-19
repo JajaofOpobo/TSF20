@@ -23,7 +23,7 @@ import java.util.Iterator;
 public class f extends com.censivn.C3DEngine.b.h.e.b {
     private k b;
     private c c;
-    private com.tsf.shell.manager.r.b.A.C0144a d;
+    private com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a d;
     private k e;
     private TextureElement f;
     private boolean g;
@@ -33,7 +33,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
         this.g = false;
         this.c = cVar;
         this.f = new TextureElement(0, false);
-        this.e = new k(com.tsf.shell.manager.g.a.b, com.tsf.shell.manager.g.a.b, false);
+        this.e = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b, false);
         this.e.textures().addElement(this.f);
         o();
     }
@@ -41,32 +41,32 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     public void o() {
         TextureElement textureElementB = x.b(b.d.smart_button_add_icon);
         this.b = new k(com.censivn.C3DEngine.b.b.A.c * 128.0f, com.censivn.C3DEngine.b.b.A.c * 128.0f, false);
-        this.b.moveAllPointsPX(0.0f, com.tsf.shell.manager.o.b.c.Y, 0.0f);
+        this.b.moveAllPointsPX(0.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.Y, 0.0f);
         this.b.calAABB(2.0f, 2.0f, 1.0f);
         this.b.textures().addElement(textureElementB);
-        com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.e);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.e);
         this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.tsf.shell.f.h.f.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 f.this.r();
             }
         });
-        this.d = new com.tsf.shell.manager.r.b.A.C0144a() { // from class: com.tsf.shell.f.h.f.2
-            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
+        this.d = new com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a() { // from class: com.tsf.shell.f.h.f.2
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a
             public void a() {
                 com.tsf.shell.manager.app.ServiceFactory.j();
             }
 
-            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a
             public void a(com.tsf.shell.f.i.b.e.b bVar) {
                 bVar.K().onUpdateContainer(-2);
                 f.this.a(bVar);
                 f.this.e(bVar);
             }
 
-            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
-            public com.tsf.shell.manager.o.A b() {
-                return com.tsf.shell.manager.o.b.b;
+            @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a
+            public com.tsf.shell.manager.o.ButtonMetrics b() {
+                return com.tsf.shell.manager.o.ButtonPresetManager.b;
             }
         };
         a(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.h.f.3
@@ -129,7 +129,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
-            Bitmap bitmap = ThemeManager.mix.shellOther.getTheme().getBitmap(ThemeShellDescription.PUBLIC_BUTTON_DELETE, com.tsf.shell.manager.g.a.b, com.tsf.shell.manager.g.a.b);
+            Bitmap bitmap = ThemeManager.mix.shellOther.getTheme().getBitmap(ThemeShellDescription.PUBLIC_BUTTON_DELETE, com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b);
             com.censivn.C3DEngine.A.g().a(this.f, bitmap);
             bitmap.recycle();
             this.g = true;
@@ -168,7 +168,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     public void a(ArrayList<ItemInfo> arrayList, String str) {
         Iterator<ItemInfo> it = h.a(arrayList, str, ",", true).iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(it.next(), com.tsf.shell.manager.o.b.b, true);
+            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.ShortcutManager.a(it.next(), com.tsf.shell.manager.o.ButtonPresetManager.b, true);
             a(bVarA);
             f(bVarA);
         }

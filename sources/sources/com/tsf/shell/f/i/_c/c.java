@@ -82,11 +82,11 @@ public class c extends g {
 
     private void p() {
         if (this.p.id == 0) {
-            int i = com.tsf.shell.manager.o.b.a.H;
-            int i2 = com.tsf.shell.manager.o.b.a.I;
-            com.censivn.C3DEngine.A.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
-            com.censivn.C3DEngine.A.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
-            com.censivn.C3DEngine.A.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.b.a, i, i2, false));
+            int i = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
+            int i2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
+            com.censivn.C3DEngine.A.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
+            com.censivn.C3DEngine.A.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
+            com.censivn.C3DEngine.A.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(b.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
         }
     }
 
@@ -182,7 +182,7 @@ public class c extends g {
         public j a;
 
         public a() {
-            super(null, com.tsf.shell.manager.o.b.a);
+            super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
             this.a = new j();
             this.k.visible(true);
             this.k.removeFromParent();

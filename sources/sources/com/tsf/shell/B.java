@@ -5,7 +5,7 @@ public class B {
     private static boolean a = false;
 
     public static void a() {
-        if (com.tsf.shell.manager.b.e.az()) {
+        if (com.tsf.shell.manager.b.ConfigManager.az()) {
         }
     }
 }

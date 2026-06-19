@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import com.censivn.C3DEngine.A;
 import com.tsf.b;
-import com.tsf.shell.manager.b.f;
+import com.tsf.shell.manager.b.TempPreferenceManager;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.element.ThemeElementCacher;
@@ -292,7 +292,7 @@ public class ThemesMixManager {
                         ThemesMixManager.this.unreadCount.setTheme(themeInfo);
                     }
                     if (ThemeElementType.getParserState(i, ThemeElementType.TYPE_WALLPAPER)) {
-                        ShellWallpaperManager shellWallpaperManager = com.tsf.shell.manager.A.f;
+                        ShellWallpaperManager shellWallpaperManager = com.tsf.shell.manager.GlobalServiceLocator.f;
                         ShellWallpaperManager.a(themeInfo.packagename);
                     }
                     if (ThemeElementType.getParserState(i, ThemeElementType.TYPE_WIDGET_RESIZE)) {

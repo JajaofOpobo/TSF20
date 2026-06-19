@@ -23,7 +23,7 @@ public abstract class e {
     public e() {
         this.a.e(-1);
         this.a.d(36);
-        com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.a, com.tsf.shell.manager.o.ThemeColorConstants.h);
     }
 
     public void a() {

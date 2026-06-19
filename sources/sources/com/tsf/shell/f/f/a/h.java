@@ -25,7 +25,7 @@ import com.tsf.shell.f.f.a.b.l;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.app.AppListModel;
 import com.tsf.shell.manager.app.FolderManager;
-import com.tsf.shell.manager.n.a;
+import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.x;
@@ -146,7 +146,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         if (this.an) {
             return false;
         }
-        com.tsf.shell.manager.action.f.b();
+        com.tsf.shell.manager.action.GestureHandler.b();
         this.aj.b(true);
         this.ak.a(true);
         this.an = true;
@@ -167,7 +167,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
 
     public void ak() {
         if (this.an && this.ai.l()) {
-            com.tsf.shell.manager.action.f.c();
+            com.tsf.shell.manager.action.GestureHandler.c();
             this.aj.c(true);
             this.ak.b(true);
             com.censivn.C3DEngine.b.c.b.b(this);
@@ -290,10 +290,10 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
     private void aT() {
         t = (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
         u = (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
-        r = com.tsf.shell.manager.b.e.Q() ? (int) (150.0f * com.censivn.C3DEngine.b.b.A.c) : (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
-        s = com.tsf.shell.manager.b.e.R() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 1) : com.censivn.C3DEngine.b.b.A.h * 2;
-        n = (int) (com.tsf.shell.manager.o.b.a.T + (10.0f * com.censivn.C3DEngine.b.b.A.c));
-        o = (int) (com.tsf.shell.manager.o.b.a.U + (20.0f * com.censivn.C3DEngine.b.b.A.c));
+        r = com.tsf.shell.manager.b.ConfigManager.Q() ? (int) (150.0f * com.censivn.C3DEngine.b.b.A.c) : (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
+        s = com.tsf.shell.manager.b.ConfigManager.R() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 1) : com.censivn.C3DEngine.b.b.A.h * 2;
+        n = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T + (10.0f * com.censivn.C3DEngine.b.b.A.c));
+        o = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (20.0f * com.censivn.C3DEngine.b.b.A.c));
         float f = (com.censivn.C3DEngine.b.b.A.E - F) - (com.censivn.C3DEngine.b.b.A.h * 2.0f);
         if (com.tsf.shell.manager.app.ObserverManager.c()) {
             f -= com.censivn.C3DEngine.b.b.A.J;
@@ -305,8 +305,8 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         } else {
             w = com.censivn.C3DEngine.b.b.A.h;
         }
-        int i = ((((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.b.a.T) / n) + 1;
-        int i2 = ((((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.b.a.U) / o) + 1;
+        int i = ((((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / n) + 1;
+        int i2 = ((((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / o) + 1;
         if (i < 2) {
             i = 2;
         }
@@ -319,12 +319,12 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         y = i + 2;
         z = 2;
         A = i2 + 2;
-        if (com.tsf.shell.manager.b.e.W()) {
+        if (com.tsf.shell.manager.b.ConfigManager.W()) {
             b(B, C);
         } else if (com.censivn.C3DEngine.b.b.A.O) {
-            b(com.tsf.shell.manager.b.e.T(), com.tsf.shell.manager.b.e.S());
+            b(com.tsf.shell.manager.b.ConfigManager.T(), com.tsf.shell.manager.b.ConfigManager.S());
         } else {
-            b(com.tsf.shell.manager.b.e.V(), com.tsf.shell.manager.b.e.U());
+            b(com.tsf.shell.manager.b.ConfigManager.V(), com.tsf.shell.manager.b.ConfigManager.U());
         }
         if (this.aq != null) {
             this.aq.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
@@ -353,7 +353,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
     }
 
     public void at() {
-        if (com.tsf.shell.manager.b.e.R()) {
+        if (com.tsf.shell.manager.b.ConfigManager.R()) {
             c(true, true);
         } else {
             b(true, true);
@@ -366,7 +366,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
             this.ak.b(z2);
         }
         if (z3) {
-            com.tsf.shell.manager.b.e.n(true);
+            com.tsf.shell.manager.b.ConfigManager.n(true);
             ar();
         }
         this.aj.a(true);
@@ -383,7 +383,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
             }
         });
         if (z3) {
-            com.tsf.shell.manager.b.e.n(false);
+            com.tsf.shell.manager.b.ConfigManager.n(false);
         }
         this.aj.a(true);
     }
@@ -391,7 +391,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
     public void g(boolean z2) {
         this.aj.visible(true);
         if (z2) {
-            com.tsf.shell.manager.b.e.m(true);
+            com.tsf.shell.manager.b.ConfigManager.m(true);
             ar();
         }
     }
@@ -399,7 +399,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
     public void h(boolean z2) {
         this.aj.visible(false);
         if (z2) {
-            com.tsf.shell.manager.b.e.m(false);
+            com.tsf.shell.manager.b.ConfigManager.m(false);
             ar();
         }
     }
@@ -488,10 +488,10 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         bc();
         this.aj = new g(this);
         this.ak = new e(this);
-        if (!com.tsf.shell.manager.b.e.Q()) {
+        if (!com.tsf.shell.manager.b.ConfigManager.Q()) {
             h(false);
         }
-        if (!com.tsf.shell.manager.b.e.R()) {
+        if (!com.tsf.shell.manager.b.ConfigManager.R()) {
             c(false, false);
         }
         this.T = new com.tsf.shell.f.e.j(z2) { // from class: com.tsf.shell.f.f.a.h.8
@@ -869,15 +869,15 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         p = i;
         q = i2;
         m = p * q;
-        n = (((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.b.a.T) / (p - 1);
-        o = (((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.b.a.U) / (q - 1);
+        n = (((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / (p - 1);
+        o = (((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / (q - 1);
         if (E == null) {
             E = new ArrayList<>();
         } else {
             E.clear();
         }
-        float f = (com.tsf.shell.manager.o.b.a.T / 2.0f) + com.censivn.C3DEngine.b.b.A.z + t;
-        float f2 = (com.censivn.C3DEngine.b.b.A.B - r) - (com.tsf.shell.manager.o.b.a.U / 2.0f);
+        float f = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) + com.censivn.C3DEngine.b.b.A.z + t;
+        float f2 = (com.censivn.C3DEngine.b.b.A.B - r) - (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f);
         for (int i3 = 0; i3 < m; i3++) {
             int i4 = i3 % p;
             int i5 = i3 / p;
@@ -1137,7 +1137,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
             com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) bVar;
             if (gVar.bf()) {
                 com.tsf.shell.manager.app.LauncherAppInfo fVarBd = gVar.bd();
-                com.tsf.shell.manager.bind.a.c().b(fVarBd);
+                com.tsf.shell.manager.bind.ShellBindContext.c().b(fVarBd);
                 ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList = new ArrayList<>();
                 arrayList.add(fVarBd);
                 com.tsf.shell.manager.app.ServiceProvider.b(arrayList, false);
@@ -1271,7 +1271,7 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.C)) {
                     h.this.ai.a((com.tsf.shell.f.i.C) this.c, motionEvent);
                 }
-                com.tsf.shell.manager.action.f.a(motionEvent);
+                com.tsf.shell.manager.action.GestureHandler.a(motionEvent);
                 this.h = h.this.R;
                 h.this.Q = false;
                 this.f = false;

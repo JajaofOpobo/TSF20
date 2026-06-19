@@ -17,19 +17,19 @@ public class e extends C<l> {
 
     @Override // com.tsf.shell.f.f.C
     public boolean b() {
-        return com.tsf.shell.manager.b.e.E();
+        return com.tsf.shell.manager.b.ConfigManager.E();
     }
 
     @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
         h.d();
-        com.tsf.shell.manager.b.e.i(z);
-        com.tsf.shell.manager.b.e.g(str);
+        com.tsf.shell.manager.b.ConfigManager.i(z);
+        com.tsf.shell.manager.b.ConfigManager.g(str);
     }
 
     @Override // com.tsf.shell.f.f.C
     public String c() {
-        return com.tsf.shell.manager.b.e.F();
+        return com.tsf.shell.manager.b.ConfigManager.F();
     }
 
     @Override // com.tsf.shell.f.f.C

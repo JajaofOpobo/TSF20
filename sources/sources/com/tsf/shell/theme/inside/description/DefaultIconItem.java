@@ -1,7 +1,7 @@
 package com.tsf.shell.theme.inside.description;
 
 import android.graphics.Bitmap;
-import com.tsf.shell.manager.o.A;
+import com.tsf.shell.manager.o.ButtonMetrics;
 import java.lang.ref.SoftReference;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

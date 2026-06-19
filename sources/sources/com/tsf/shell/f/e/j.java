@@ -26,7 +26,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
     private com.censivn.C3DEngine.b.g._b.b q = new com.censivn.C3DEngine.b.g._b.b();
     private float i = com.censivn.C3DEngine.b.b.A.c * 100.0f;
     private float j = com.censivn.C3DEngine.b.b.A.c * 100.0f;
-    private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.a.l, com.tsf.shell.manager.g.a.l);
+    private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.LayoutDimensionConstants.l, com.tsf.shell.manager.g.LayoutDimensionConstants.l);
     private r o = new r();
 
     public j(final boolean z) {
@@ -99,11 +99,11 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                 j.this.a();
             }
         });
-        this.k = x.b(b.d.dock_operation_border_point, com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n);
-        this.n = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.i);
-        this.l = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
+        this.k = x.b(b.d.dock_operation_border_point, com.tsf.shell.manager.g.LayoutDimensionConstants.m, com.tsf.shell.manager.g.LayoutDimensionConstants.n);
+        this.n = new A(com.tsf.shell.manager.g.LayoutDimensionConstants.m, com.tsf.shell.manager.g.LayoutDimensionConstants.n, false, this.k, this.i);
+        this.l = new A(com.tsf.shell.manager.g.LayoutDimensionConstants.m, com.tsf.shell.manager.g.LayoutDimensionConstants.n, false, this.k, this.j);
         this.l.rotation().z = 90.0f;
-        this.m = new A(com.tsf.shell.manager.g.a.m, com.tsf.shell.manager.g.a.n, false, this.k, this.j);
+        this.m = new A(com.tsf.shell.manager.g.LayoutDimensionConstants.m, com.tsf.shell.manager.g.LayoutDimensionConstants.n, false, this.k, this.j);
         this.m.rotation().z = -90.0f;
     }
 
@@ -208,8 +208,8 @@ public class j extends com.censivn.C3DEngine.b.f.j {
         for (int i2 = 0; i2 < i; i2++) {
             com.censivn.C3DEngine.b.f.a.b bVarA = this.d.a(i2);
             bVarA.m.pxX(f2);
-            bVarA.b(com.tsf.shell.manager.g.a.l);
-            bVarA.d(com.tsf.shell.manager.g.a.l);
+            bVarA.b(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
+            bVarA.d(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
             bVarA.k().setAll(0.4f, 0.4f, 1.0f);
             bVarA.a(0, 0, 1, 1);
             bVarA.h();

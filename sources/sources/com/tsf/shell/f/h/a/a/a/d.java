@@ -14,7 +14,7 @@ import com.censivn.C3DEngine.b.f.m;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends j {
     private String b;
-    private com.tsf.shell.manager.c.a.a.a.b f;
+    private com.tsf.shell.manager.c.a.a.ContactModel.b f;
     private TextureElement a = new TextureElement(0, false);
     private boolean c = false;
     private com.censivn.C3DEngine.b.f.a.a d = new com.censivn.C3DEngine.b.f.a.a(2, 1, 1, true);
@@ -36,7 +36,7 @@ public class d extends j {
         f();
     }
 
-    public void a(com.tsf.shell.manager.c.a.a.a.b bVar) {
+    public void a(com.tsf.shell.manager.c.a.a.ContactModel.b bVar) {
         bVar.a(this);
         this.f = bVar;
         this.b = bVar.c();
@@ -88,7 +88,7 @@ public class d extends j {
     private void i() {
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(50.0f);
         if (this.a.id == 0) {
-            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
+            com.tsf.shell.manager.o.a.TextConfig aVar = new com.tsf.shell.manager.o.a.TextConfig();
             aVar.h(36);
             aVar.i(-1);
             aVar.f(VEasing.Linear.easeNone);

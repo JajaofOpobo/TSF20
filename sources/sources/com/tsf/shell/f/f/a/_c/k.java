@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a._c;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class k extends i {
         this.g = new ArrayList<>();
         com.tsf.shell.f.f.a._c._a.a aVar = new com.tsf.shell.f.f.a._c._a.a(new a(b.d.drawer_classification, x.c(b.i.text_classify)));
         this.k = aVar;
-        this.k.a(com.tsf.shell.manager.p.e.j);
+        this.k.a(com.tsf.shell.manager.p.ThemePreferenceProvider.j);
         this.g.add(aVar);
         this.g.add(new com.tsf.shell.f.f.a._c._a.b(new a(b.d.drawer_preferences, x.c(b.i.text_preferences)) { // from class: com.tsf.shell.f.f.a._c.k.1
             @Override // com.tsf.shell.f.f.a._c.k.a
@@ -77,11 +77,11 @@ public class k extends i {
             this.h.addChild(bVar);
         }
         e().addChild(this.h);
-        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.e.i);
+        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.i);
         if (aVarA.a()) {
             l = new com.tsf.shell.f.e.k();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a._c.k.5
-                @Override // com.tsf.shell.manager.p.e.a.C0142a
+                @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                 public void a() {
                     k.l.removeFromParent();
                     k.l.a();

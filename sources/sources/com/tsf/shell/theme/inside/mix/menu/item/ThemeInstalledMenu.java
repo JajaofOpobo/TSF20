@@ -59,7 +59,7 @@ public class ThemeInstalledMenu extends b {
         this.mNeedRefresh = true;
         this.manager = themeSettingMenu;
         this.mComparator = new ThemePriorityComparator();
-        this.mSelectPlane = new k(com.tsf.shell.manager.g.a.c, com.tsf.shell.manager.g.a.c, false);
+        this.mSelectPlane = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
         this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.mSelectPlane.useVBO(false);
         this.mSelectPlane.textures().addElement(this.mSelectTE);
@@ -85,7 +85,7 @@ public class ThemeInstalledMenu extends b {
             }
         };
         ThemeManager.getInstance().addListener(this.mThemeListener);
-        this.mGridView = new h(com.censivn.C3DEngine.b.b.A.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 1.1f, com.tsf.shell.manager.o.b.c.U * 1.2f);
+        this.mGridView = new h(com.censivn.C3DEngine.b.b.A.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
         this.mGridView.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -222,7 +222,7 @@ public class ThemeInstalledMenu extends b {
 
     class a extends ThemeIconPlane {
         private boolean c = false;
-        public com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.b.c.b();
+        public com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.ButtonPresetManager.c.b();
 
         public a() {
             this.a.calAABB();

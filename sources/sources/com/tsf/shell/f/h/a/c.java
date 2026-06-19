@@ -3,7 +3,7 @@ package com.tsf.shell.f.h.a;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.h.a.a.d;
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends com.tsf.shell.f.h.a.A {

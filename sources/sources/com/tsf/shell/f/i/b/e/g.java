@@ -21,15 +21,15 @@ public class g extends a {
     private boolean p;
 
     public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
-        this(launcherShortcutAppInfo, com.tsf.shell.manager.o.b.a, fVar, z);
+        this(launcherShortcutAppInfo, com.tsf.shell.manager.o.ButtonPresetManager.a, fVar, z);
     }
 
     public g() {
-        super(null, com.tsf.shell.manager.o.b.a);
+        super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
         this.b = false;
     }
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
+    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
         super(launcherShortcutAppInfo, aVar);
         this.b = false;
         this.a = fVar;
@@ -38,7 +38,7 @@ public class g extends a {
             launcherShortcutAppInfo.intent = fVar.a;
         }
         if (z) {
-            com.tsf.shell.manager.bind.b.b.a(this);
+            com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
             k();
         } else {
@@ -128,9 +128,9 @@ public class g extends a {
         ResolveInfo resolveInfo2 = null;
         Intent intent = launcherShortcut3DInfo.intent;
         ComponentName component = intent.getComponent();
-        com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.a.c().b(component);
+        com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.ShellBindContext.c().b(component);
         if (fVarB == null) {
-            com.tsf.shell.manager.app.LauncherAppInfo fVarA = com.tsf.shell.manager.bind.a.c().a(component);
+            com.tsf.shell.manager.app.LauncherAppInfo fVarA = com.tsf.shell.manager.bind.ShellBindContext.c().a(component);
             if (fVarA == null) {
                 PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
                 Intent intent2 = new Intent(intent.getAction(), (Uri) null);
@@ -151,11 +151,11 @@ public class g extends a {
                 ResolveInfo resolveInfoResolveActivity = resolveInfo == null ? packageManager.resolveActivity(intent, 0) : resolveInfo;
                 if (resolveInfoResolveActivity != null) {
                     com.tsf.shell.manager.app.LauncherAppInfo fVar = new com.tsf.shell.manager.app.LauncherAppInfo(resolveInfoResolveActivity);
-                    com.tsf.shell.manager.bind.a.c().d(fVar);
+                    com.tsf.shell.manager.bind.ShellBindContext.c().d(fVar);
                     return fVar;
                 }
                 com.tsf.shell.manager.app.LauncherAppInfo fVar2 = new com.tsf.shell.manager.app.LauncherAppInfo(component, launcherShortcut3DInfo.title);
-                com.tsf.shell.manager.bind.a.c().a(fVar2);
+                com.tsf.shell.manager.bind.ShellBindContext.c().a(fVar2);
                 return fVar2;
             }
             return fVarA;

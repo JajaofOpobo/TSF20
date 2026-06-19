@@ -325,7 +325,7 @@ public class c extends j {
                 this.b.position().x -= this.e / 2.0f;
                 setAABBPX((-this.e) / 2.0f, (-bVar.b) / 2.0f, 0.0f, this.e / 2.0f, bVar.b / 2.0f, 0.0f);
             }
-            com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.h);
         }
 
         public float a() {

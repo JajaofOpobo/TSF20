@@ -12,8 +12,8 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e._g.a.d;
 import com.tsf.shell.f.e.l;
-import com.tsf.shell.manager.o.A;
-import com.tsf.shell.manager.o.a.c;
+import com.tsf.shell.manager.o.ButtonMetrics;
+import com.tsf.shell.manager.o.a.LabelManager;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -46,8 +46,8 @@ public class ThemeIconDesignerMenu extends d {
             public void a() {
                 boolean z = true;
                 boolean z2 = false;
-                if (ThemeIconDesignerMenu.this.currentScale != com.tsf.shell.manager.o.b.a.A) {
-                    com.tsf.shell.manager.o.b.a(ThemeIconDesignerMenu.this.currentScale);
+                if (ThemeIconDesignerMenu.this.currentScale != com.tsf.shell.manager.o.ButtonPresetManager.a.A) {
+                    com.tsf.shell.manager.o.ButtonPresetManager.a(ThemeIconDesignerMenu.this.currentScale);
                     z2 = true;
                 }
                 int i = c.c(ThemeIconDesignerMenu.this.newStyleIndex).b;
@@ -63,19 +63,19 @@ public class ThemeIconDesignerMenu extends d {
                 }
             }
         };
-        com.tsf.shell.manager.o.c.a(this.mApplyButton, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.mApplyButton, com.tsf.shell.manager.o.ThemeColorConstants.h);
         this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
         this.mApplyButton.a(0);
         this.mResetButton = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.2
             @Override // com.tsf.shell.f.e.l
             public void a() {
                 ThemeIconDesignerMenu themeIconDesignerMenu = ThemeIconDesignerMenu.this;
-                a aVar = com.tsf.shell.manager.o.b.a;
+                a aVar = com.tsf.shell.manager.o.ButtonPresetManager.a;
                 themeIconDesignerMenu.resetFromConfig(true, 1.15f);
                 ThemeIconDesignerMenu.this.hideResetButton();
             }
         };
-        com.tsf.shell.manager.o.c.a(this.mResetButton, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.mResetButton, com.tsf.shell.manager.o.ThemeColorConstants.h);
         this.mResetButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
         this.mResetButton.a(0);
         this.mIconContainer = new j();
@@ -88,7 +88,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView = new com.censivn.C3DEngine.b.b.A.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.3
             @Override // com.censivn.C3DEngine.b.b.A.d
             public float b(float f) {
-                float f2 = com.tsf.shell.manager.o.b.a.J * 1.2f;
+                float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.J * 1.2f;
                 ThemeIconDesignerMenu.this.newStyleIndex = (int) ((Math.abs(f) + (f2 / 2.0f)) / f2);
                 return f2 * (-r1);
             }
@@ -99,13 +99,13 @@ public class ThemeIconDesignerMenu extends d {
             }
         };
         this.mLableScrollView.b(true);
-        this.mLableScrollView.c(((-com.tsf.shell.manager.o.b.a.J) / 2.0f) * 1.2f);
-        this.mLableScrollView.d((com.tsf.shell.manager.o.b.a.J / 2.0f) * 1.2f);
+        this.mLableScrollView.c(((-com.tsf.shell.manager.o.ButtonPresetManager.a.J) / 2.0f) * 1.2f);
+        this.mLableScrollView.d((com.tsf.shell.manager.o.ButtonPresetManager.a.J / 2.0f) * 1.2f);
         this.mLableContentLayout = new com.censivn.C3DEngine.b.b.A.b();
         this.mLableScrollView.c(this.mLableContentLayout);
         int iB = c.b();
         for (int i = 0; i < iB; i++) {
-            final com.tsf.shell.manager.o.a.b bVarC = c.c(i);
+            final com.tsf.shell.manager.o.a.TextLabelElement bVarC = c.c(i);
             k kVarA = bVarC.a();
             kVarA.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(kVarA) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.4
                 @Override // com.censivn.C3DEngine.b.d.a
@@ -149,7 +149,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mCalStyle.a(f, this.mCalStyle.B);
         this.mDemoShortcutIcon.a(this.mCalStyle.H, this.mCalStyle.I);
         this.mDemoShortcutIcon.position().y = this.mCalStyle.Y;
-        this.mLableContentLayout.position().y = this.mCalStyle.aa - (com.tsf.shell.manager.o.a.b.d / 2);
+        this.mLableContentLayout.position().y = this.mCalStyle.aa - (com.tsf.shell.manager.o.a.TextLabelElement.d / 2);
     }
 
     private void refreshDemoShortcutTexture() {
@@ -197,7 +197,7 @@ public class ThemeIconDesignerMenu extends d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void scrollLable(int i, boolean z) {
-        this.mLableScrollView.a((com.tsf.shell.manager.o.b.a.J * 1.2f * (-i)) + (this.mLableScrollView.i() / 2.0f) + this.mLableScrollView.b(), z);
+        this.mLableScrollView.a((com.tsf.shell.manager.o.ButtonPresetManager.a.J * 1.2f * (-i)) + (this.mLableScrollView.i() / 2.0f) + this.mLableScrollView.b(), z);
     }
 
     @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
@@ -210,12 +210,12 @@ public class ThemeIconDesignerMenu extends d {
         resetLayout();
         int iB = c.b();
         for (int i = 0; i < iB; i++) {
-            c.c(i).a(com.tsf.shell.manager.o.b.c);
+            c.c(i).a(com.tsf.shell.manager.o.ButtonPresetManager.c);
         }
         this.mSeekBarPreference.f();
-        resetFromConfig(false, com.tsf.shell.manager.o.b.a.A);
-        float f = com.tsf.shell.manager.o.b.a.A;
-        a aVar = com.tsf.shell.manager.o.b.a;
+        resetFromConfig(false, com.tsf.shell.manager.o.ButtonPresetManager.a.A);
+        float f = com.tsf.shell.manager.o.ButtonPresetManager.a.A;
+        a aVar = com.tsf.shell.manager.o.ButtonPresetManager.a;
         if (f != 1.15f) {
             showResetButton();
         }

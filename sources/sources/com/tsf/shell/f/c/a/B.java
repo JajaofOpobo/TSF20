@@ -228,9 +228,9 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             }
         };
         if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
-            com.tsf.shell.manager.r.c.g.a(cVar, null, runnable);
+            com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, null, runnable);
         } else {
-            com.tsf.shell.manager.r.c.g.a(cVar, runnable);
+            com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, runnable);
         }
     }
 

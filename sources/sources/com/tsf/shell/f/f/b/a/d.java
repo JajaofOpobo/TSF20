@@ -134,7 +134,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
                 @Override // com.tsf.shell.f.g.a.h, com.censivn.C3DEngine.b.f.j
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
-                    com.tsf.shell.manager.i.a.a(d.this, com.censivn.C3DEngine.b.b.A.a(20.0f));
+                    com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(20.0f));
                 }
             };
         }

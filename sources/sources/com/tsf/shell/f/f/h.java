@@ -16,7 +16,7 @@ public class h {
     public static int c = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
 
     public static void a() {
-        e = com.tsf.shell.manager.b.e.y();
+        e = com.tsf.shell.manager.b.ConfigManager.y();
         TextureElement textureElementB = b();
         a = new com.censivn.C3DEngine.b.f.b.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1.0f, new com.censivn.C3DEngine.b.f.b.b(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
         a.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
@@ -51,7 +51,7 @@ public class h {
     }
 
     public static void d() {
-        com.tsf.shell.manager.b.e.f(e);
+        com.tsf.shell.manager.b.ConfigManager.f(e);
     }
 
     static class A implements e.a {

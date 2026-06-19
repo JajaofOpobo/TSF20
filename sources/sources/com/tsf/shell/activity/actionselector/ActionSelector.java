@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.tsf.b;
-import com.tsf.shell.manager.action.d;
+import com.tsf.shell.manager.action.ActionSelectorAdapter;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ActionSelector extends FragmentActivity {

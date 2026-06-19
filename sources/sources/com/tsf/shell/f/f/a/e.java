@@ -56,8 +56,8 @@ public class e extends j {
             this.g = com.tsf.shell.manager.app.AppListManager.a(i);
             if (this.g.a()) {
                 d();
-                    this.g.a(new com.tsf.shell.manager.p.e.a.C0142a() { // from class: com.tsf.shell.f.f.a.e.a.2
-                        @Override // com.tsf.shell.manager.p.e.a.C0142a
+                    this.g.a(new com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a() { // from class: com.tsf.shell.f.f.a.e.a.2
+                        @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                     public void a() {
                         a.this.e();
                     }
@@ -98,7 +98,7 @@ public class e extends j {
 
     public e(h hVar) {
         this.b = hVar;
-        this.g.a(com.tsf.shell.manager.p.e.n);
+        this.g.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
         this.e = new A(b.d.drawer_home);
         this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.f.a.e.3
             private float b;
@@ -115,7 +115,7 @@ public class e extends j {
                 this.e = false;
                 this.b = motionEvent.getX();
                 this.d = motionEvent.getY();
-                com.tsf.shell.manager.action.f.a(motionEvent);
+                com.tsf.shell.manager.action.GestureHandler.a(motionEvent);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a

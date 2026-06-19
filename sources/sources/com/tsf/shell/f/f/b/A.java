@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.UvBufferManager;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.tsf.b;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -41,7 +41,7 @@ public class A extends com.tsf.shell.f.f.l {
             this.b = new C0108a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, (int) (i2 / (com.censivn.C3DEngine.b.b.A.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.A.e * 8.0f)));
             this.a.addChild(this.b);
         }
-        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.e.f);
+        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.f);
         if (aVarA.a() && aVarA.c == 110) {
             m();
         }

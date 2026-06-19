@@ -122,7 +122,7 @@ public class l extends com.censivn.C3DEngine.b.e.i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
         if (this.a) {
-            com.tsf.shell.manager.p.c.b.a();
+            com.tsf.shell.manager.p.TipsDialogManager.b.a();
             this.a = false;
         }
     }

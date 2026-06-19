@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
-import com.tsf.shell.manager.action.f;
+import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

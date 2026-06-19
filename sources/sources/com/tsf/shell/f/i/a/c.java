@@ -7,8 +7,8 @@ import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
 import com.tsf.shell.f.e.s;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.manager.action.f;
-import com.tsf.shell.manager.d.a;
+import com.tsf.shell.manager.action.GestureHandler;
+import com.tsf.shell.manager.d.HitTargetManager;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     private boolean n;
     private boolean o;
     private com.censivn.C3DEngine.b.d.a p;
-    private com.tsf.shell.manager.d.a.C0127a q;
+    private com.tsf.shell.manager.d.HitTargetManager.C0127a q;
     private float[] r;
 
     public c(com.tsf.shell.f.i.B bVar) {
@@ -43,7 +43,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         this.e = false;
         this.f = true;
         this.g = bVar;
-        this.q = new com.tsf.shell.manager.d.a.C0127a();
+        this.q = new com.tsf.shell.manager.d.HitTargetManager.C0127a();
     }
 
     private void d() {
@@ -94,7 +94,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                     cVar.A().g();
                 }
                 com.tsf.shell.manager.app.TaskScheduler.a((i) bVar, true);
-                com.tsf.shell.manager.action.f.a();
+                com.tsf.shell.manager.action.GestureHandler.a();
                 this.n = false;
                 this.o = false;
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -180,9 +180,9 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.censivn.C3DEngine.b.f.i r0 = r6.c
             com.tsf.shell.f.i.B r0 = (com.tsf.shell.f.i.B) r0
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
-            com.tsf.shell.manager.f.a r1 = r1.a()
+            com.tsf.shell.manager.f.ScreenFadeController r1 = r1.a()
             r1.d()
-            com.tsf.shell.manager.h.a r1 = com.tsf.shell.manager.app.FeatureConfig
+            com.tsf.shell.manager.h.ScreenLockController r1 = com.tsf.shell.manager.app.FeatureConfig
             boolean r1 = r1.a()
             if (r1 == 0) goto L22
             if (r0 == 0) goto L26
@@ -210,7 +210,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.e.e.a r0 = r0.b()
             r0.c()
-            com.tsf.shell.manager.m.b r0 = com.tsf.shell.manager.app.PanelStateManager
+            com.tsf.shell.manager.m.SideMenuManager r0 = com.tsf.shell.manager.app.PanelStateManager
             r0.e()
             goto L25
         L55:
@@ -239,7 +239,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.e.F r4 = r1.a(r5, r4)
             boolean r5 = r1.h(r4)
             if (r5 == 0) goto Lbc
-            com.tsf.shell.manager.f.d r2 = com.tsf.shell.manager.app.TaskScheduler
+            com.tsf.shell.manager.f.ViewportController r2 = com.tsf.shell.manager.app.TaskScheduler
             r2.b(r0)
             r1.g(r4)
             com.tsf.shell.f.i.B r1 = r6.g
@@ -249,7 +249,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r1 = r3
         La3:
             if (r1 == 0) goto L3e
-            com.tsf.shell.manager.f.d r1 = com.tsf.shell.manager.app.TaskScheduler
+            com.tsf.shell.manager.f.ViewportController r1 = com.tsf.shell.manager.app.TaskScheduler
             r1.b(r0)
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.f.g r1 = r1.n()
@@ -260,7 +260,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r6.b()
             goto L3e
         Lbc:
-            com.tsf.shell.manager.f.d r4 = com.tsf.shell.manager.app.TaskScheduler
+            com.tsf.shell.manager.f.ViewportController r4 = com.tsf.shell.manager.app.TaskScheduler
             r4.b(r0)
             r1.p()
             r1 = r2
@@ -292,7 +292,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             }
         };
         if (fArr == null) {
-            fArr = com.tsf.shell.manager.r.A.a(this.g, this.g.position().x, this.g.position().y);
+            fArr = com.tsf.shell.manager.r.BoundsHelper.a(this.g, this.g.position().x, this.g.position().y);
         }
         if (fArr[0] != this.g.position().x || fArr[1] != this.g.position().y) {
             dVar.f(fArr[0]);
@@ -399,7 +399,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.i.B r0 = r5.g
             boolean r0 = r0.R()
             if (r0 != 0) goto L54
-            com.tsf.shell.manager.action.f.a(r6)
+            com.tsf.shell.manager.action.GestureHandler.a(r6)
         L54:
             return
         L55:

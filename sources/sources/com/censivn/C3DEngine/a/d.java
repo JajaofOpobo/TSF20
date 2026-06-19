@@ -62,7 +62,7 @@ public class d extends b.d {
                     } catch (Exception e) {
                     }
                 }
-                com.tsf.shell.manager.action.f.c(motionEvent);
+                com.tsf.shell.manager.action.GestureHandler.c(motionEvent);
                 if (d.this.i && motionEvent.getAction() == 2) {
                     d.this.n(motionEvent);
                     d.this.b.a(motionEvent);

@@ -10,7 +10,7 @@ import android.graphics.PorterDuff;
 import android.net.Uri;
 import com.censivn.C3DEngine.A;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.manager.o.b;
+import com.tsf.shell.manager.o.ButtonPresetManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -139,7 +139,7 @@ public class ThemeListsManager {
         }
 
         private Bitmap getIcon() {
-            return com.tsf.shell.manager.r.c.A.a(this.info, b.c);
+            return com.tsf.shell.manager.r.c.IconRenderer.a(this.info, b.c);
         }
     }
 }

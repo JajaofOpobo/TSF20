@@ -59,14 +59,14 @@ public class ShellModel extends BroadcastReceiver {
     private b c;
     private Context d;
     private int e;
-    private com.tsf.shell.manager.bind.b o;
+    private com.tsf.shell.manager.bind.ShellBindController o;
     private boolean p;
 
     @SuppressLint({"NewApi"})
     ShellModel(Context context) {
         this.d = context;
         this.p = Build.VERSION.SDK_INT < 9 ? true : Environment.isExternalStorageRemovable();
-        this.o = new com.tsf.shell.manager.bind.b();
+        this.o = new com.tsf.shell.manager.bind.ShellBindController();
         this._a = new com.tsf.shell.manager.app.AppListManager();
         this.e = this.d.getResources().getInteger(com.tsf.b.f.config_allAppsBatchLoadDelay);
     }
@@ -535,7 +535,7 @@ public class ShellModel extends BroadcastReceiver {
                                 switch (i) {
                                     case 1:
                                         LauncherFolder3DInfo launcherFolder3DInfoB = ShellModel.b(ShellModel.h, Integer.valueOf(i2));
-                                        com.tsf.shell.manager.r.A.a(launcherFolder3DInfoB, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        com.tsf.shell.manager.r.BoundsHelper.a(launcherFolder3DInfoB, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherFolder3DInfoB.title = cursorQuery.getString(columnIndexOrThrow3);
                                         launcherFolder3DInfoB.title = (launcherFolder3DInfoB.title == null || launcherFolder3DInfoB.title.length() == 0) ? x.c(com.tsf.b.i.widget_folder) : launcherFolder3DInfoB.title;
                                         int i4 = cursorQuery.getInt(columnIndexOrThrow4);
@@ -566,8 +566,8 @@ public class ShellModel extends BroadcastReceiver {
                                         break;
                                     case 2:
                                     case 7:
-                                        LauncherShortcut3DInfo launcherShortcut3DInfoA = com.tsf.shell.manager.l.a.a(i);
-                                        com.tsf.shell.manager.r.A.a(launcherShortcut3DInfoA, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        LauncherShortcut3DInfo launcherShortcut3DInfoA = com.tsf.shell.manager.l.ShortcutManager.a(i);
+                                        com.tsf.shell.manager.r.BoundsHelper.a(launcherShortcut3DInfoA, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherShortcut3DInfoA.title = cursorQuery.getString(columnIndexOrThrow3);
                                         launcherShortcut3DInfoA.title = launcherShortcut3DInfoA.title == null ? "" : launcherShortcut3DInfoA.title;
                                         launcherShortcut3DInfoA.packagename = cursorQuery.getString(columnIndexOrThrow13);
@@ -587,7 +587,7 @@ public class ShellModel extends BroadcastReceiver {
                                         } catch (Exception e) {
                                         }
                                         if (iA != -1) {
-                                            com.tsf.shell.manager.action.b.a(launcherShortcut3DInfoA, iA);
+                                            com.tsf.shell.manager.action.ActionManager.a(launcherShortcut3DInfoA, iA);
                                         }
                                         switch (i5) {
                                             case -5:
@@ -623,7 +623,7 @@ public class ShellModel extends BroadcastReceiver {
                                             } else {
                                                 launcherAppWidgetInfo = new LauncherAppWidgetInfo(i6, appWidgetInfo.provider);
                                             }
-                                            com.tsf.shell.manager.r.A.a(launcherAppWidgetInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                            com.tsf.shell.manager.r.BoundsHelper.a(launcherAppWidgetInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                             launcherAppWidgetInfo.container = cursorQuery.getInt(columnIndexOrThrow4);
                                             if (appWidgetInfo != null) {
                                                 String strFlattenToString = appWidgetInfo.provider.flattenToString();
@@ -644,7 +644,7 @@ public class ShellModel extends BroadcastReceiver {
                                         break;
                                     case 5:
                                         LauncherWidget3DInfo launcherWidget3DInfo = new LauncherWidget3DInfo();
-                                        com.tsf.shell.manager.r.A.a(launcherWidget3DInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        com.tsf.shell.manager.r.BoundsHelper.a(launcherWidget3DInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherWidget3DInfo.packagename = cursorQuery.getString(columnIndexOrThrow13);
                                         launcherWidget3DInfo.config = cursorQuery.getString(columnIndexOrThrow14);
                                         if (launcherWidget3DInfo.packagename.equals("com.tsf.shell")) {
@@ -704,7 +704,7 @@ public class ShellModel extends BroadcastReceiver {
                         ShellModel.m.remove((ItemInfo) it3.next());
                     }
                     arrayList3.clear();
-                    String strN = com.tsf.shell.manager.m.b.n();
+                    String strN = com.tsf.shell.manager.m.SideMenuManager.n();
                     dVar.d = strN;
                     ArrayList arrayList4 = new ArrayList();
                     for (ItemInfo itemInfo3 : ShellModel.n) {
@@ -790,8 +790,8 @@ public class ShellModel extends BroadcastReceiver {
             }
             ShellModel.this.o.c(arrayList4, dVar.c);
             ShellModel.this.o.b(arrayList5, dVar.d);
-            com.tsf.shell.manager.bind.b unused = ShellModel.this.o;
-            com.tsf.shell.manager.bind.b.a(arrayList, null, null);
+            com.tsf.shell.manager.bind.ShellBindController unused = ShellModel.this.o;
+            com.tsf.shell.manager.bind.ShellBindController.a(arrayList, null, null);
             ShellModel.this.o.a(arrayList2, dVar.a);
             ShellModel.this.o.a(arrayList3, dVar.b);
             runnable.run();
@@ -807,7 +807,7 @@ public class ShellModel extends BroadcastReceiver {
             if (listQueryIntentActivities != null) {
                 for (int i = 0; i < listQueryIntentActivities.size(); i++) {
                     ResolveInfo resolveInfo = listQueryIntentActivities.get(i);
-                    com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
+                    com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.ShellBindContext.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
                     if (fVarB == null) {
                         ShellModel.this._a.c(new com.tsf.shell.manager.app.LauncherAppInfo(resolveInfo));
                     } else {
@@ -832,7 +832,7 @@ public class ShellModel extends BroadcastReceiver {
                 Collections.sort(listQueryIntentActivities2, new ResolveInfo.DisplayNameComparator(packageManager));
                 for (int i2 = 0; i2 < listQueryIntentActivities2.size(); i2++) {
                     ResolveInfo resolveInfo2 = listQueryIntentActivities2.get(i2);
-                    if (com.tsf.shell.manager.bind.a.c().c(new ComponentName(resolveInfo2.activityInfo.applicationInfo.packageName, resolveInfo2.activityInfo.name)) == null) {
+                    if (com.tsf.shell.manager.bind.ShellBindContext.c().c(new ComponentName(resolveInfo2.activityInfo.applicationInfo.packageName, resolveInfo2.activityInfo.name)) == null) {
                         ShellModel.this._a.f(new com.tsf.shell.manager.app.LauncherAppInfo(resolveInfo2));
                     }
                 }

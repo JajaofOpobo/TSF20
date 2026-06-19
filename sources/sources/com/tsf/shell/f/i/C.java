@@ -150,8 +150,8 @@ public class C extends B {
                 b = new k(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, 1, 1, false);
                 h = new TextureElement(f.id, false);
                 b.textures().addElementWithoutVerify(h);
-                b.position().x = (com.tsf.shell.manager.o.b.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.A.c);
-                b.position().y = (com.tsf.shell.manager.o.b.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.A.c);
+                b.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.A.c);
+                b.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.A.c);
             }
             this.m = 0.75f;
             if (ao()) {

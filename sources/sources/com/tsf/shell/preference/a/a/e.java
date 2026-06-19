@@ -69,7 +69,7 @@ public class e extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        this.a = com.tsf.shell.manager.b.e.W();
+        this.a = com.tsf.shell.manager.b.ConfigManager.W();
         String str = " ( " + (com.censivn.C3DEngine.b.b.A.O ? x.c(b.i.mn_orientation_portrait) : x.c(b.i.mn_orientation_landscape)) + " )";
         this.b.b(x.c(b.i.mn_grid_rows) + str);
         this.c.b(x.c(b.i.mn_grid_columns) + str);
@@ -79,10 +79,10 @@ public class e extends i {
         this.b.j(com.tsf.shell.f.f.a.h.A);
         this.c.k(com.tsf.shell.f.f.a.h.p);
         this.b.k(com.tsf.shell.f.f.a.h.q);
-        this.d.k(com.tsf.shell.manager.f.a.a);
+        this.d.k(com.tsf.shell.manager.f.ScreenFadeController.a);
         this.e.c(this.a);
-        this.f.c(com.tsf.shell.manager.b.e.Q());
-        this.g.c(com.tsf.shell.manager.b.e.R());
+        this.f.c(com.tsf.shell.manager.b.ConfigManager.Q());
+        this.g.c(com.tsf.shell.manager.b.ConfigManager.R());
         i();
     }
 
@@ -100,18 +100,18 @@ public class e extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
         int iE = this.d.e();
-        if (iE != com.tsf.shell.manager.f.a.a) {
-            com.tsf.shell.manager.b.e.j(iE);
-            com.tsf.shell.manager.f.a.a(iE);
+        if (iE != com.tsf.shell.manager.f.ScreenFadeController.a) {
+            com.tsf.shell.manager.b.ConfigManager.j(iE);
+            com.tsf.shell.manager.f.ScreenFadeController.a(iE);
         }
-        if (this.f.e() != com.tsf.shell.manager.b.e.Q()) {
+        if (this.f.e() != com.tsf.shell.manager.b.ConfigManager.Q()) {
             if (this.f.e()) {
                 com.tsf.shell.manager.app.StateHub.t().g(true);
             } else {
                 com.tsf.shell.manager.app.StateHub.t().h(true);
             }
         }
-        if (this.g.e() != com.tsf.shell.manager.b.e.R()) {
+        if (this.g.e() != com.tsf.shell.manager.b.ConfigManager.R()) {
             if (this.g.e()) {
                 com.tsf.shell.manager.app.StateHub.t().b(true, true);
             } else {
@@ -119,8 +119,8 @@ public class e extends i {
             }
         }
         if (this.a) {
-            if (com.tsf.shell.manager.b.e.W() != this.a) {
-                com.tsf.shell.manager.b.e.l(this.a);
+            if (com.tsf.shell.manager.b.ConfigManager.W() != this.a) {
+                com.tsf.shell.manager.b.ConfigManager.l(this.a);
                 if (com.tsf.shell.f.f.a.h.p != this.c.e() || com.tsf.shell.f.f.a.h.q != this.b.e()) {
                     com.tsf.shell.manager.app.StateHub.t().aE();
                     return;
@@ -129,8 +129,8 @@ public class e extends i {
             }
             return;
         }
-        if (com.tsf.shell.manager.b.e.W() != this.a) {
-            com.tsf.shell.manager.b.e.l(this.a);
+        if (com.tsf.shell.manager.b.ConfigManager.W() != this.a) {
+            com.tsf.shell.manager.b.ConfigManager.l(this.a);
         }
         if (com.tsf.shell.f.f.a.h.p != this.c.e()) {
             j();
@@ -142,7 +142,7 @@ public class e extends i {
     private void j() {
         int iE = this.b.e();
         int iE2 = this.c.e();
-        com.tsf.shell.manager.b.e.a(iE, iE2);
+        com.tsf.shell.manager.b.ConfigManager.a(iE, iE2);
         com.tsf.shell.manager.app.StateHub.t().a(iE2, iE);
     }
 }

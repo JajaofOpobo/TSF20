@@ -31,7 +31,7 @@ public class e extends com.censivn.C3DEngine.b.f.k {
     private void e() {
         this.f = (int) (this.f * com.censivn.C3DEngine.b.b.A.c);
         this.g = (int) (this.g * com.censivn.C3DEngine.b.b.A.c);
-        com.tsf.shell.manager.o.c.a(this, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.h);
         textures().addElement(this.e);
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a.c.e.1
             @Override // com.censivn.C3DEngine.b.d.a
@@ -53,7 +53,7 @@ public class e extends com.censivn.C3DEngine.b.f.k {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.e.id == 0) {
-            com.tsf.shell.manager.o.a.a aVar = new com.tsf.shell.manager.o.a.a();
+            com.tsf.shell.manager.o.a.TextConfig aVar = new com.tsf.shell.manager.o.a.TextConfig();
             aVar.h(36);
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(this.d);

@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.f.f.l;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
@@ -80,7 +80,7 @@ public class c extends com.tsf.shell.f.e._g.a.b {
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_page_border, x.c(b.i.text_border), c0096a2));
         arrayList.add(this.c);
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 0.9f, com.tsf.shell.manager.o.b.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.c.4
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -122,7 +122,7 @@ public class c extends com.tsf.shell.f.e._g.a.b {
                 c.this.b.d();
             }
         });
-        this.d = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.e.f);
+        this.d = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.ThemePreferenceProvider.f);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c

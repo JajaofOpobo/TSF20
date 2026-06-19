@@ -28,7 +28,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private com.censivn.C3DEngine.b.f.j B;
     private Runnable C;
     private com.tsf.shell.f.g.a.b D;
-    private com.tsf.shell.manager.r.c.d E;
+    private com.tsf.shell.manager.r.c.MultiSelectLinePicker E;
     private com.tsf.shell.f.f.d.A F;
     private com.tsf.shell.f.i.B J;
     private ArrayList<Integer> L;
@@ -48,7 +48,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private g r;
     private int s;
     private Runnable u;
-    private com.tsf.shell.manager.f.a v;
+    private com.tsf.shell.manager.f.ScreenFadeController v;
     private B w;
     private C x;
     private com.censivn.C3DEngine.b.d.a y;
@@ -89,7 +89,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         ab();
     }
 
-    public com.tsf.shell.manager.f.a a() {
+    public com.tsf.shell.manager.f.ScreenFadeController a() {
         return this.v;
     }
 
@@ -206,12 +206,12 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             public void onDrawStart() {
             }
         };
-        this.E = new com.tsf.shell.manager.r.c.d() { // from class: com.tsf.shell.f.f.n.14
-            @Override // com.tsf.shell.manager.r.c.d
+        this.E = new com.tsf.shell.manager.r.c.MultiSelectLinePicker() { // from class: com.tsf.shell.f.f.n.14
+            @Override // com.tsf.shell.manager.r.c.MultiSelectLinePicker
             public void e() {
             }
 
-            @Override // com.tsf.shell.manager.r.c.d
+            @Override // com.tsf.shell.manager.r.c.MultiSelectLinePicker
             public void d() {
             }
         };
@@ -219,7 +219,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.i.setAnimationObjectState(true);
         this.p = Home.b().l();
         this.B = new com.censivn.C3DEngine.b.f.j();
-        this.v = new com.tsf.shell.manager.f.a(this.B);
+        this.v = new com.tsf.shell.manager.f.ScreenFadeController(this.B);
         this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.A.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
         this.y = new com.tsf.shell.f.i.a.b(this.B);
         this.z = new com.censivn.C3DEngine.b.d.a(this.B);
@@ -343,7 +343,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     private void aa() {
         boolean z;
-        String[] strArrSplit = com.tsf.shell.manager.b.e.am().split(",");
+        String[] strArrSplit = com.tsf.shell.manager.b.ConfigManager.am().split(",");
         this.L = new ArrayList<>();
         for (String str : strArrSplit) {
             try {
@@ -371,8 +371,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private void ab() {
         int i;
         Y();
-        int iAk = com.tsf.shell.manager.b.e.ak();
-        int iAl = com.tsf.shell.manager.b.e.al();
+        int iAk = com.tsf.shell.manager.b.ConfigManager.ak();
+        int iAl = com.tsf.shell.manager.b.ConfigManager.al();
         this.k = new ArrayList<>();
         int size = this.L.size();
         if (size > 16) {
@@ -444,7 +444,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void g() {
-        a(com.tsf.shell.manager.b.e.J());
+        a(com.tsf.shell.manager.b.ConfigManager.J());
     }
 
     public void a(boolean z) {
@@ -518,7 +518,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 this.r = gVar;
                 this.r.C();
             }
-            com.tsf.shell.manager.b.e.o(gVar.t());
+            com.tsf.shell.manager.b.ConfigManager.o(gVar.t());
         }
     }
 
@@ -896,7 +896,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     com.censivn.C3DEngine.a.d.d().c().a(true);
                 }
                 n.this.ah();
-                com.tsf.shell.manager.b.e.n(n.this.m.t());
+                com.tsf.shell.manager.b.ConfigManager.n(n.this.m.t());
                 n.this.t = 2;
             }
         };
@@ -1054,7 +1054,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     com.censivn.C3DEngine.a.d.d().i();
                     if (!n.this.E.a() && com.tsf.shell.manager.app.StateHub.B() && com.tsf.shell.manager.app.StateHub.F() != -1) {
                         n.this.E.b();
-                        com.tsf.shell.manager.p.c.a(5);
+                        com.tsf.shell.manager.p.TipsDialogManager.a(5);
                         com.tsf.shell.e.a(b.i.notic_page_lasso_mode_enable);
                     }
                 }
@@ -1745,7 +1745,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 n.this.m.a(this.c);
             }
             n.this.I();
-            com.tsf.shell.manager.b.e.n(n.this.m.t());
+            com.tsf.shell.manager.b.ConfigManager.n(n.this.m.t());
             n.this.m.W();
             g gVar = n.this.m;
             this.f = 0.0f;
@@ -2024,7 +2024,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private int B = 0;
         private boolean G = false;
         private com.tsf.shell.f.e.e.b F = com.tsf.shell.manager.app.WidgetAnimator.d();
-        private com.censivn.C3DEngine.b.f.k E = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.g, com.tsf.shell.manager.g.a.g, false);
+        private com.censivn.C3DEngine.b.f.k E = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
         private float b = 0.017453292f;
         private float h = com.censivn.C3DEngine.b.b.A.D;
         private float o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.A.b);
@@ -2114,7 +2114,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 if (this.D != null) {
                     com.censivn.C3DEngine.A.g().a(this.D);
                 }
-                this.D = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_ADD_BUTTON, com.tsf.shell.manager.g.a.g, com.tsf.shell.manager.g.a.g);
+                this.D = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_ADD_BUTTON, com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g);
                 this.E.textures().addElement(this.D);
                 n.this.T();
                 this.e = true;
@@ -2326,7 +2326,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                                     if (it2.hasNext()) {
                                         str = str2 + ((g) it2.next()).t() + ",";
                                     } else {
-                                        com.tsf.shell.manager.b.e.i(str2.substring(0, str2.length() - 1));
+                                        com.tsf.shell.manager.b.ConfigManager.i(str2.substring(0, str2.length() - 1));
                                         return;
                                     }
                                 }
@@ -2483,7 +2483,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void d(g gVar) {
             if (!this.x) {
                 this.x = true;
-                gVar.setDefaultColor(com.tsf.shell.manager.o.c.c);
+                gVar.setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
                 c();
             }
         }

@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.p.e;
+import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
 import com.tsf.shell.utils.k;
 import com.tsf.shell.utils.w;
@@ -28,7 +28,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
         super(b.i.text_featured);
         this.manager = themeSettingMenu;
         this.mThemes = getOnlineLists();
-        this.mGridView = new h(a.D, themeSettingMenu.getHeight(), a.c * 20.0f, a.c * 20.0f, com.tsf.shell.manager.o.b.c.T * 1.1f, com.tsf.shell.manager.o.b.c.U * 1.2f);
+        this.mGridView = new h(a.D, themeSettingMenu.getHeight(), a.c * 20.0f, a.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
         this.mGridView.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
@@ -163,7 +163,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
 
         public TextureElement getTexture() {
             if (this.iconTexture == null) {
-                this.iconTexture = ThemeMixerUtils.createIconTexture(com.tsf.shell.manager.o.b.c, this.title, this.icon);
+                this.iconTexture = ThemeMixerUtils.createIconTexture(com.tsf.shell.manager.o.ButtonPresetManager.c, this.title, this.icon);
             }
             return this.iconTexture;
         }

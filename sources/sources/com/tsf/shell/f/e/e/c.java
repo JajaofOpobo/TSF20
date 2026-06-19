@@ -6,8 +6,8 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.manager.n.a;
-import com.tsf.shell.manager.r.c.g;
+import com.tsf.shell.manager.n.ToastOverlayController;
+import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
 import com.tsf.shell.utils.l;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
@@ -211,7 +211,7 @@ public class c {
             public void a(com.tsf.shell.f.e.F fVar) {
                 super.a(fVar);
                 w.a(3);
-                ((com.tsf.shell.f.i.B) fVar).setDefaultColor(com.tsf.shell.manager.o.c.c);
+                ((com.tsf.shell.f.i.B) fVar).setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
                 com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 

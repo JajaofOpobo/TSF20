@@ -10,7 +10,7 @@ import com.tsf.shell.utils.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends j {
-    private static com.tsf.shell.manager.o._a.a e;
+    private static com.tsf.shell.manager.o._a.TextConfigV2 e;
     private static final float g = 24.0f * com.censivn.C3DEngine.b.b.A.c;
     private k a;
     private String b;
@@ -25,7 +25,7 @@ public class e extends j {
         this.h = 0;
         this.h = i;
         if (e == null) {
-            e = new com.tsf.shell.manager.o._a.a();
+            e = new com.tsf.shell.manager.o._a.TextConfigV2();
             e.i(-1);
             e.h(42);
         }
@@ -86,12 +86,12 @@ public class e extends j {
 
     public void g() {
         this.c = true;
-        com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.m);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.a, com.tsf.shell.manager.o.ThemeColorConstants.m);
     }
 
     public void h() {
         this.c = false;
-        com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.n);
+        com.tsf.shell.manager.o.ThemeColorConstants.a(this.a, com.tsf.shell.manager.o.ThemeColorConstants.n);
     }
 
     public void i() {

@@ -48,7 +48,7 @@ public class g extends com.tsf.shell.f.e.f.b {
             number3dLocalToGlobal.y += this.a.aF().m();
             cVar.position().setAllFrom(number3dLocalToGlobal);
             this.a.b((com.tsf.shell.f.i.b.e.b) cVar);
-            com.tsf.shell.manager.r.c.g.a(cVar, (Runnable) null);
+            com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, (Runnable) null);
         }
     }
 

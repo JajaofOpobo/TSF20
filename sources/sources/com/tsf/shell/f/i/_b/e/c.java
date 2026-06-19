@@ -29,7 +29,7 @@ public class c extends d {
         }
     }
 
-    public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, boolean z, int i) {
+    public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z, int i) {
         super(launcherShortcut3DInfo, aVar, z);
         this.t = i;
         int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.A.c * aE().A);
@@ -38,7 +38,7 @@ public class c extends d {
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
                     if (c.b.id == 0) {
-                        int i3 = com.tsf.shell.manager.o.b.a.H;
+                        int i3 = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
                         Bitmap bitmap = ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_POINT, i3, i3);
                         com.censivn.C3DEngine.A.g().a(c.b, bitmap);
                         bitmap.recycle();
@@ -57,7 +57,7 @@ public class c extends d {
         if (this.s == null) {
             this.s = new LauncherShortcutStandardInfo.ResourceControler() { // from class: com.tsf.shell.f.i._b.e.c.2
                 @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo.ResourceControler
-                public Bitmap getThemeBitmap(com.tsf.shell.manager.o.A aVar) {
+                public Bitmap getThemeBitmap(com.tsf.shell.manager.o.ButtonMetrics aVar) {
                     return ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_ICON, aVar.H, aVar.I);
                 }
             };
@@ -104,7 +104,7 @@ public class c extends d {
 
     @Override // com.tsf.shell.f.i._b.e.b
     public void aP() {
-        com.tsf.shell.manager.action.f.a();
+        com.tsf.shell.manager.action.GestureHandler.a();
         if (this.s.isCustomResource()) {
             super.aP();
         }
@@ -145,7 +145,7 @@ public class c extends d {
             this.h = motionEvent.getX();
             this.i = motionEvent.getY();
             this.j.aQ();
-            com.tsf.shell.manager.action.f.a();
+            com.tsf.shell.manager.action.GestureHandler.a();
         }
 
         @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a

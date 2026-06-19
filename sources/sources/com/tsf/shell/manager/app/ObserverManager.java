@@ -95,8 +95,8 @@ public class ObserverManager {
     public static boolean a(com.tsf.shell.f.i.b.d.b bVar) { return false; }
     public static void b(Home home) {}
     public static void c(Home home) {}
-    public static void a(com.tsf.shell.manager.n.a aVar) {}
+    public static void a(com.tsf.shell.manager.n.ToastOverlayController aVar) {}
     public static void a(boolean z, boolean z2, boolean z3) {}
-    public static void b(com.tsf.shell.manager.n.a aVar) {}
+    public static void b(com.tsf.shell.manager.n.ToastOverlayController aVar) {}
     public static void a(com.tsf.shell.f.i.b.d.j jVar) {}
 }

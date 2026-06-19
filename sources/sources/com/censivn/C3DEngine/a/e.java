@@ -94,7 +94,7 @@ public class e implements GLSurfaceView.Renderer {
             b(i, i2);
             com.tsf.shell.manager.A.b.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
             if (z != com.censivn.C3DEngine.b.b.A.O) {
-                com.tsf.shell.manager.p.c.a(13);
+                com.tsf.shell.manager.p.TipsDialogManager.a(13);
             }
         }
     }

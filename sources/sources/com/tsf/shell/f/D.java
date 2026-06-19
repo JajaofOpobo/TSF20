@@ -1,11 +1,11 @@
 package com.tsf.shell.f;
 
-import com.tsf.shell.manager.b.e;
+import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class D {
     private static D b;
-    private static com.tsf.shell.manager.f.c c;
+    private static com.tsf.shell.manager.f.LauncherInitController c;
     private com.censivn.C3DEngine.a.a a;
 
     public D(com.censivn.C3DEngine.a.a aVar) {
@@ -27,7 +27,7 @@ public class D {
             this.a.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
             this.a.getHolder().setFormat(4);
         }
-        c = new com.tsf.shell.manager.f.c(this.a);
+        c = new com.tsf.shell.manager.f.LauncherInitController(this.a);
     }
 
     public void a() {

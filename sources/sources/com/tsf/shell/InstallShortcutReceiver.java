@@ -3,7 +3,7 @@ package com.tsf.shell;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import com.tsf.shell.manager.l.a;
+import com.tsf.shell.manager.l.ShortcutManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class InstallShortcutReceiver extends BroadcastReceiver {
@@ -17,8 +17,8 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if ("com.android.launcher.action.INSTALL_SHORTCUT".equals(intent.getAction())) {
             try {
-                com.tsf.shell.manager.l.a aVar = com.tsf.shell.manager.app.PositionAnimator.a;
-                com.tsf.shell.manager.l.a.a(intent, (a.C0130a) null);
+                com.tsf.shell.manager.l.ShortcutManager aVar = com.tsf.shell.manager.app.PositionAnimator.a;
+                com.tsf.shell.manager.l.ShortcutManager.a(intent, (a.C0130a) null);
             } catch (Exception e) {
             }
         }

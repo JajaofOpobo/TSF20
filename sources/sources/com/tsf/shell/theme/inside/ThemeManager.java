@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import com.censivn.C3DEngine.a.e;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.manager.k.a;
+import com.tsf.shell.manager.k.TypefaceCache;
 import com.tsf.shell.theme.inside.ThemeConfigManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.element.ThemeElementChecker;
@@ -71,7 +71,7 @@ public class ThemeManager {
     }
 
     public static void initThemeManager() {
-        mInstance = new ThemeManager(Home.b(), com.tsf.shell.manager.bind.a.b());
+        mInstance = new ThemeManager(Home.b(), com.tsf.shell.manager.bind.ShellBindContext.b());
     }
 
     public static ThemeManager getInstance() {

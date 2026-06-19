@@ -18,9 +18,9 @@ public class b implements a {
     private float h;
     private int i;
     private e j;
-    private com.tsf.shell.manager.o.A k;
+    private com.tsf.shell.manager.o.ButtonMetrics k;
 
-    public b(e eVar, com.tsf.shell.manager.o.A aVar) {
+    public b(e eVar, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         this.j = eVar;
         this.k = aVar;
         this.b = aVar.H;

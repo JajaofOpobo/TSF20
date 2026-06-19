@@ -26,7 +26,7 @@ public class A {
         this.c.add(new f(1));
         this.c.add(new com.tsf.shell.f.f.a.d.a.a(3));
         this.e = new d(0);
-        c(com.tsf.shell.manager.b.e.an());
+        c(com.tsf.shell.manager.b.ConfigManager.an());
     }
 
     public int a() {
@@ -77,7 +77,7 @@ public class A {
     }
 
     public void b(int i) {
-        com.tsf.shell.manager.b.e.p(i);
+        com.tsf.shell.manager.b.ConfigManager.p(i);
         c(i);
         if (this.a) {
             this.f = i;

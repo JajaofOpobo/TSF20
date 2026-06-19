@@ -129,7 +129,7 @@ public class f implements e.a {
         if (z) {
             this.af = false;
         } else {
-            this.af = com.tsf.shell.manager.b.e.e();
+            this.af = com.tsf.shell.manager.b.ConfigManager.e();
         }
         h = new com.tsf.shell.f.c.a.a.f();
         i = new com.tsf.shell.f.c.a.a.h();
@@ -218,7 +218,7 @@ public class f implements e.a {
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
-            bVarA = com.tsf.shell.manager.l.a.a(itemInfo, true);
+            bVarA = com.tsf.shell.manager.l.ShortcutManager.a(itemInfo, true);
         }
         this.S.a(bVarA, false);
         this.S.addChild(bVarA);
@@ -231,7 +231,7 @@ public class f implements e.a {
             this.C.alpha(iA);
             this.P.alpha(iA);
             if (z) {
-                com.tsf.shell.manager.b.e.a(i2);
+                com.tsf.shell.manager.b.ConfigManager.a(i2);
             }
         }
     }
@@ -300,9 +300,9 @@ public class f implements e.a {
                         f.this.z = true;
                         if (!f.this.Y) {
                             if (com.censivn.C3DEngine.b.b.A.O) {
-                                com.tsf.shell.manager.b.e.a(f.this.O);
+                                com.tsf.shell.manager.b.ConfigManager.a(f.this.O);
                             } else {
-                                com.tsf.shell.manager.b.e.b(f.this.O);
+                                com.tsf.shell.manager.b.ConfigManager.b(f.this.O);
                             }
                         }
                     }
@@ -479,15 +479,15 @@ public class f implements e.a {
         this.t.addChild(this.N);
         this.t.addChild(this.C);
         a(0.0f, true);
-        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
+        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.c() : com.tsf.shell.manager.b.ConfigManager.d();
         if (!this.Y) {
-            boolean z2 = com.tsf.shell.manager.b.e.c() == 0.0f && com.tsf.shell.manager.b.e.d() == 0.0f;
+            boolean z2 = com.tsf.shell.manager.b.ConfigManager.c() == 0.0f && com.tsf.shell.manager.b.ConfigManager.d() == 0.0f;
             if (fC == 0.0f) {
-                f6 = (int) (com.tsf.shell.manager.o.b.a.H * 6 * 0.95f);
+                f6 = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.H * 6 * 0.95f);
                 f5 = (-f6) / 2.0f;
                 f7 = com.censivn.C3DEngine.b.b.A.C;
             } else {
-                Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
+                Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.f() : com.tsf.shell.manager.b.ConfigManager.g();
                 float f10 = number3dF.x;
                 float f11 = number3dF.y;
                 f5 = f10;
@@ -518,14 +518,14 @@ public class f implements e.a {
         a(f3, f4, false);
         if (!this.Y && z) {
             if (com.censivn.C3DEngine.b.b.A.O) {
-                com.tsf.shell.manager.b.e.a(this.O);
-                com.tsf.shell.manager.b.e.a(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.a(this.O);
+                com.tsf.shell.manager.b.ConfigManager.a(this.u, this.v);
             } else {
-                com.tsf.shell.manager.b.e.b(this.O);
-                com.tsf.shell.manager.b.e.b(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.b(this.O);
+                com.tsf.shell.manager.b.ConfigManager.b(this.u, this.v);
             }
         }
-        a(com.tsf.shell.manager.b.e.b(), false);
+        a(com.tsf.shell.manager.b.ConfigManager.b(), false);
         com.tsf.shell.manager.app.StateHub.c().a(new o.a() { // from class: com.tsf.shell.f.c.a.f.14
             @Override // com.tsf.shell.f.f.o.a
             public void a(com.tsf.shell.f.f.g gVar) {
@@ -697,9 +697,9 @@ public class f implements e.a {
         c(false);
         if (!this.Y) {
             if (com.censivn.C3DEngine.b.b.A.O) {
-                com.tsf.shell.manager.b.e.a(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.a(this.u, this.v);
             } else {
-                com.tsf.shell.manager.b.e.b(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.b(this.u, this.v);
             }
         }
         if (!this.af) {
@@ -749,9 +749,9 @@ public class f implements e.a {
         }
         if (z && !this.Y) {
             if (this.n instanceof com.tsf.shell.f.c.a.a.d) {
-                com.tsf.shell.manager.b.e.a(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.a(this.u, this.v);
             } else {
-                com.tsf.shell.manager.b.e.b(this.u, this.v);
+                com.tsf.shell.manager.b.ConfigManager.b(this.u, this.v);
             }
         }
     }
@@ -865,7 +865,7 @@ public class f implements e.a {
             com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.f.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager.b.e.a(f.this.af);
+                    com.tsf.shell.manager.b.ConfigManager.a(f.this.af);
                 }
             });
         }
@@ -1025,7 +1025,7 @@ public class f implements e.a {
         if (((this.n instanceof com.tsf.shell.f.c.a.a.d) && com.censivn.C3DEngine.b.b.A.O) || ((this.n instanceof com.tsf.shell.f.c.a.a.i) && !com.censivn.C3DEngine.b.b.A.O)) {
             z = true;
         }
-        Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.f() : com.tsf.shell.manager.b.e.g();
+        Number3d number3dF = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.f() : com.tsf.shell.manager.b.ConfigManager.g();
         if (number3dF.x == 0.0f && number3dF.y == 0.0f) {
             D();
             f2 = this.u;
@@ -1035,7 +1035,7 @@ public class f implements e.a {
             f3 = number3dF.y;
         }
         a(f2, f3, z);
-        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.e.c() : com.tsf.shell.manager.b.e.d();
+        float fC = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.c() : com.tsf.shell.manager.b.ConfigManager.d();
         if (fC == 0.0f) {
             fC = this.O;
         }

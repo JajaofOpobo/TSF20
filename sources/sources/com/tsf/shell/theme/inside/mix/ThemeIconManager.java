@@ -55,15 +55,15 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
         return this.mIconDescription.colorize;
     }
 
-    public Bitmap getDefaultIconBackBitmap(com.tsf.shell.manager.o.A aVar) {
+    public Bitmap getDefaultIconBackBitmap(com.tsf.shell.manager.o.ButtonMetrics aVar) {
         return this.mIconDescription.getBackBitmap(aVar);
     }
 
-    public Bitmap getDefaultIconUponBitmap(com.tsf.shell.manager.o.A aVar) {
+    public Bitmap getDefaultIconUponBitmap(com.tsf.shell.manager.o.ButtonMetrics aVar) {
         return this.mIconDescription.getUponBitmap(aVar);
     }
 
-    public Bitmap getDefaultIconMaskBitmap(com.tsf.shell.manager.o.A aVar) {
+    public Bitmap getDefaultIconMaskBitmap(com.tsf.shell.manager.o.ButtonMetrics aVar) {
         return this.mIconDescription.getMaskBitmap(aVar);
     }
 
@@ -75,7 +75,7 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
         return this.mIconDescription.getPackageIcon();
     }
 
-    public Bitmap getIconFilterBitmap(String str, com.tsf.shell.manager.o.A aVar) {
+    public Bitmap getIconFilterBitmap(String str, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         return this.mIconDescription.getIconFilterBitmap(str, aVar);
     }
 
@@ -121,6 +121,6 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
     }
 
     public void updateShortcutBackgroud() {
-        com.tsf.shell.manager.l.a.b();
+        com.tsf.shell.manager.l.ShortcutManager.b();
     }
 }

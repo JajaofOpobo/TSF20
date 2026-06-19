@@ -17,19 +17,19 @@ public class D extends C<l> {
 
     @Override // com.tsf.shell.f.f.C
     public boolean b() {
-        return com.tsf.shell.manager.b.e.z();
+        return com.tsf.shell.manager.b.ConfigManager.z();
     }
 
     @Override // com.tsf.shell.f.f.C
     public void a(boolean z, String str) {
         h.d();
-        com.tsf.shell.manager.b.e.g(z);
-        com.tsf.shell.manager.b.e.d(str);
+        com.tsf.shell.manager.b.ConfigManager.g(z);
+        com.tsf.shell.manager.b.ConfigManager.d(str);
     }
 
     @Override // com.tsf.shell.f.f.C
     public String c() {
-        return com.tsf.shell.manager.b.e.A();
+        return com.tsf.shell.manager.b.ConfigManager.A();
     }
 
     /* JADX INFO: renamed from: a, reason: avoid collision after fix types in other method */
