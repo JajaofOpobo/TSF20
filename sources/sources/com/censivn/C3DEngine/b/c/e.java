@@ -40,7 +40,7 @@ public class e {
 
     @SuppressLint({"NewApi"})
     public e(Activity activity) {
-        com.tsf.shell.manager.app.a.B = this;
+        com.tsf.shell.manager.app.AppListManager.B = this;
         com.censivn.C3DEngine.b.b.A.b(activity);
         com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : r.a(activity));
         g.c();

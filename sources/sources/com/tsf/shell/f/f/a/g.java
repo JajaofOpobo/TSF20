@@ -36,7 +36,7 @@ public class g extends j {
         this.f = new A(com.tsf.shell.manager.g.a.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.g.1
             @Override // com.tsf.shell.f.f.a.g.a
             public void a() {
-                com.tsf.shell.manager.app.d.a(500);
+                com.tsf.shell.manager.app.FolderManager.a(500);
             }
         };
         this.f.a(com.tsf.shell.manager.p.e.n);
@@ -224,7 +224,7 @@ public class g extends j {
         }
 
         public void a(int i) {
-            this.g = com.tsf.shell.manager.app.a.a(i);
+            this.g = com.tsf.shell.manager.app.AppListManager.a(i);
             if (this.g.a()) {
                 e();
                 this.g.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a.g.a.2

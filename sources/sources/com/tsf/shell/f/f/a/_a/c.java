@@ -34,27 +34,27 @@ public class c {
     private boolean o = false;
     private boolean s = false;
 
-    class a implements com.tsf.shell.manager.app.c.a {
+    class a implements com.tsf.shell.manager.app.AppListModel.a {
         a() {
         }
 
-        @Override // com.tsf.shell.manager.app.c.a
+        @Override // com.tsf.shell.manager.app.AppListModel.a
         public void a(g gVar, boolean z) {
         }
 
-        @Override // com.tsf.shell.manager.app.c.a
+        @Override // com.tsf.shell.manager.app.AppListModel.a
         public void a(g gVar) {
         }
 
-        @Override // com.tsf.shell.manager.app.c.a
+        @Override // com.tsf.shell.manager.app.AppListModel.a
         public void b(g gVar, boolean z) {
         }
 
-        @Override // com.tsf.shell.manager.app.c.a
+        @Override // com.tsf.shell.manager.app.AppListModel.a
         public void k_() {
         }
 
-        @Override // com.tsf.shell.manager.app.c.a
+        @Override // com.tsf.shell.manager.app.AppListModel.a
         public void a() {
         }
     }
@@ -91,7 +91,7 @@ public class c {
         this.r = i;
         this.q = i;
         this.n = new a() { // from class: com.tsf.shell.f.f.a._a.c.1
-            @Override // com.tsf.shell.f.f.a._a.c.a, com.tsf.shell.manager.app.c.a
+            @Override // com.tsf.shell.f.f.a._a.c.a, com.tsf.shell.manager.app.AppListModel.a
             public void a(g gVar, boolean z) {
                 String strA = b.a(gVar);
                 com.tsf.shell.f.f.a._a.a.b bVarA = c.this.a(strA);
@@ -102,7 +102,7 @@ public class c {
                 }
             }
 
-            @Override // com.tsf.shell.f.f.a._a.c.a, com.tsf.shell.manager.app.c.a
+            @Override // com.tsf.shell.f.f.a._a.c.a, com.tsf.shell.manager.app.AppListModel.a
             public void b(g gVar, boolean z) {
                 com.tsf.shell.f.f.a._a.a.b bVarA = c.this.a(gVar);
                 if (bVarA != null) {
@@ -240,7 +240,7 @@ public class c {
         this.p.position().y = fD - com.censivn.C3DEngine.b.b.A.a(400.0f);
         this.p.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f) + com.censivn.C3DEngine.b.b.A.a(400.0f);
         this.p.alpha(0.0f);
-        com.tsf.shell.manager.app.j.a(this.p);
+        com.tsf.shell.manager.app.TaskScheduler.a(this.p);
         this.p.a(new AnonymousClass8(fA, fD), 0);
     }
 
@@ -327,20 +327,20 @@ public class c {
     }
 
     public void f() {
-        if (this.e.parent() == null && com.tsf.shell.manager.app.w.a().b()) {
+        if (this.e.parent() == null && com.tsf.shell.manager.app.ServiceProvider.a().b()) {
             this.o = com.tsf.shell.manager.p.c.b(14);
             if (this.o) {
                 this.e.mouseEnabled(false);
             }
-            com.tsf.shell.manager.app.w.a().a(this.n);
+            com.tsf.shell.manager.app.ServiceProvider.a().a(this.n);
             this.e.alpha(255.0f);
-            final j jVarA = com.tsf.shell.manager.app.j.a(this.g);
-            boolean zAM = com.tsf.shell.manager.app.h.t().aM();
+            final j jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.g);
+            boolean zAM = com.tsf.shell.manager.app.StateHub.t().aM();
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a._a.c.10
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager.app.h.t().aN();
-                    ArrayList<g> arrayListD = com.tsf.shell.manager.app.w.a().d();
+                    com.tsf.shell.manager.app.StateHub.t().aN();
+                    ArrayList<g> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
                     ArrayList arrayList = new ArrayList();
                     for (g gVar : arrayListD) {
                         if (gVar.K() != null && !((LauncherShortcutAppInfo) gVar.K()).isHide) {
@@ -378,10 +378,10 @@ public class c {
                 }
             };
             if (zAM) {
-                com.tsf.shell.manager.app.j.c();
+                com.tsf.shell.manager.app.TaskScheduler.c();
                 runnable.run();
             } else {
-                com.tsf.shell.manager.app.j.a(runnable);
+                com.tsf.shell.manager.app.TaskScheduler.a(runnable);
             }
         }
     }
@@ -426,17 +426,17 @@ public class c {
     }
 
     public void g() {
-        com.tsf.shell.manager.app.w.a().b(this.n);
+        com.tsf.shell.manager.app.ServiceProvider.a().b(this.n);
         this.j.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.a(0);
         com.censivn.C3DEngine.b.g.c.a(this.e);
         com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
-        com.tsf.shell.manager.app.j.a(new Runnable() { // from class: com.tsf.shell.f.f.a._a.c.2
+        com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.f.f.a._a.c.2
             @Override // java.lang.Runnable
             public void run() {
                 c.this.l.e();
-                com.tsf.shell.manager.app.j.b();
+                com.tsf.shell.manager.app.TaskScheduler.b();
                 c.this.e.removeFromParent();
                 for (com.tsf.shell.f.f.a._a.a.c cVar : c.this.i) {
                     cVar.f();

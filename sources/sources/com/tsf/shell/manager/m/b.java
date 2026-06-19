@@ -133,7 +133,7 @@ public class b implements e.a, a.InterfaceC0113a {
         this.o = this.o > 1.0f ? 0.4f : this.o;
         this.o = this.o >= 0.0f ? this.o : 0.4f;
         this.k = com.tsf.shell.manager.b.e.i() == 0 ? 0 : 1;
-        com.tsf.shell.manager.app.b.a(this);
+        com.tsf.shell.manager.app.ObserverManager.a(this);
         this.j = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.manager.m.b.3
             @Override // com.tsf.shell.f.i.A
             public void a(com.tsf.shell.f.i.B bVar) {
@@ -164,8 +164,8 @@ public class b implements e.a, a.InterfaceC0113a {
             @Override // com.tsf.shell.manager.m.d, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.F
             public void a(f fVar) {
                 if (!b.this.g) {
-                    com.tsf.shell.manager.app.h.b().c();
-                    com.tsf.shell.manager.app.p.c();
+                    com.tsf.shell.manager.app.StateHub.b().c();
+                    com.tsf.shell.manager.app.WidgetAnimator.c();
                     b.this.c(false);
                     b.this.e.a(fVar);
                     b();
@@ -327,14 +327,14 @@ public class b implements e.a, a.InterfaceC0113a {
     }
 
     public void c(boolean z) {
-        if (!com.tsf.shell.manager.app.h.s().a()) {
+        if (!com.tsf.shell.manager.app.StateHub.s().a()) {
             this.p = !z;
             if (z) {
             }
             if (!this.g) {
                 this.g = true;
-                com.tsf.shell.manager.app.e.a(this.i, ItemInfo.APP_INTENT, (Runnable) null);
-                com.tsf.shell.manager.app.o.k();
+                com.tsf.shell.manager.app.DataCoordinator.a(this.i, ItemInfo.APP_INTENT, (Runnable) null);
+                com.tsf.shell.manager.app.ServiceFactory.k();
                 this.f.visible(true);
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.f(r());
@@ -361,8 +361,8 @@ public class b implements e.a, a.InterfaceC0113a {
     public void a(Runnable runnable) {
         if (this.g) {
             this.g = false;
-            com.tsf.shell.manager.app.e.a(runnable, true);
-            com.tsf.shell.manager.app.o.i();
+            com.tsf.shell.manager.app.DataCoordinator.a(runnable, true);
+            com.tsf.shell.manager.app.ServiceFactory.i();
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.b.9
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {

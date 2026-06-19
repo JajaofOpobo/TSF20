@@ -92,7 +92,7 @@ public class d implements b.a, e.a, h.a, n.a {
                     com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.d.2.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.h.n();
+                            com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
                             d.this.a.removeFromParent();
                             gVarN.a(d.this.a);
                             d.this.a.position().x = fArrA[0];
@@ -118,16 +118,16 @@ public class d implements b.a, e.a, h.a, n.a {
 
     public void b() {
         if (!this.f) {
-            this.g = com.tsf.shell.manager.app.q.a(this.g, x.c(b.i.notic_line_picker_notic));
+            this.g = com.tsf.shell.manager.app.Notifier.a(this.g, x.c(b.i.notic_line_picker_notic));
             this.f = true;
             this.a.position().x = 0.0f;
             this.a.position().y = 0.0f;
             this.a.removeFromParent();
             com.censivn.C3DEngine.b.c.b.a(this);
-            com.tsf.shell.manager.app.j.a(this.a);
+            com.tsf.shell.manager.app.TaskScheduler.a(this.a);
             this.a.setFocus();
             this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
-            com.tsf.shell.manager.app.b.a(this);
+            com.tsf.shell.manager.app.ObserverManager.a(this);
             e();
         }
     }
@@ -145,11 +145,11 @@ public class d implements b.a, e.a, h.a, n.a {
 
     public void c() {
         if (this.f) {
-            com.tsf.shell.manager.app.q.b(this.g);
+            com.tsf.shell.manager.app.Notifier.b(this.g);
             this.f = false;
             com.censivn.C3DEngine.b.c.b.b(this);
             this.a.removeFromParent();
-            com.tsf.shell.manager.app.b.b(this);
+            com.tsf.shell.manager.app.ObserverManager.b(this);
             d();
         }
     }
@@ -263,7 +263,7 @@ public class d implements b.a, e.a, h.a, n.a {
                             f3 = (f3 + bVar3.position().x) / 2.0f;
                             f2 = (bVar3.position().y + f4) / 2.0f;
                         } else {
-                            final com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.h.F(), (int) f3, (int) f4);
+                            final com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.StateHub.F(), (int) f3, (int) f4);
                             RenderRunnable renderRunnable = new RenderRunnable(2, i2) { // from class: com.tsf.shell.manager.r.c.d.4
                                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                                 public void run() {

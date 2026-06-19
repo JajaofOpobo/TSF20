@@ -32,21 +32,21 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     @Override // com.censivn.C3DEngine.b.d.a
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.a) {
-            com.tsf.shell.manager.app.h.s().a(motionEvent, motionEvent2, f, f2);
+            com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2, f, f2);
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.a) {
-            com.tsf.shell.manager.app.h.s().d(motionEvent, motionEvent2, f, f2);
+            com.tsf.shell.manager.app.StateHub.s().d(motionEvent, motionEvent2, f, f2);
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void f(MotionEvent motionEvent) {
         if (this.a) {
-            com.tsf.shell.manager.app.h.s().d(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
         }
         if (this.a) {
             com.tsf.shell.manager.app.LauncherAppInfo.c().sendWallpaperCommand(Home.b().l().getWindowToken(), "android.wallpaper.tap", (int) motionEvent.getX(), (int) motionEvent.getY(), 0, null);
@@ -56,23 +56,23 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     @Override // com.censivn.C3DEngine.b.d.a
     public void i(MotionEvent motionEvent) {
         if (this.a) {
-            com.tsf.shell.manager.app.h.s().b(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().b(motionEvent);
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void j(MotionEvent motionEvent) {
         if (this.a) {
-            com.tsf.shell.manager.app.h.s().c(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().c(motionEvent);
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void c(MotionEvent motionEvent) {
         if (this.a && !this.b.a()) {
-            com.tsf.shell.manager.app.o.n();
+            com.tsf.shell.manager.app.ServiceFactory.n();
         } else {
-            com.tsf.shell.manager.app.o.n();
+            com.tsf.shell.manager.app.ServiceFactory.n();
         }
     }
 

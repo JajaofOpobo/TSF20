@@ -127,7 +127,7 @@ public class b extends j {
         this.r.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.r) { // from class: com.tsf.shell.manager.j.b.4
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                com.tsf.shell.manager.app.D.b();
+                com.tsf.shell.manager.app.Initializer.b();
             }
         });
         this.r.calAABB(4.0f, 4.0f, 1.0f);

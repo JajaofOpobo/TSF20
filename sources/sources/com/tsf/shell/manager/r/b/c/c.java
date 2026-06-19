@@ -81,7 +81,7 @@ public class c extends com.tsf.shell.manager.r.b.b.a {
 
     protected boolean a(com.tsf.shell.f.i.c.e eVar, float f, float f2) {
         float[] fArrA = x.a(f, f2);
-        com.tsf.shell.manager.app.l.a.a(this.f, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
+        com.tsf.shell.manager.app.WidgetLayoutManager.a.a(this.f, (com.tsf.shell.f.i.c.f) eVar, (int) fArrA[0], (int) fArrA[1]);
         return false;
     }
 

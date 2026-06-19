@@ -39,9 +39,9 @@ public class d {
         this.a = ThemeManager.mix.folder.getTheme().folder;
         b();
         if (this.b != null) {
-            com.tsf.shell.manager.app.t.a(this.b);
+            com.tsf.shell.manager.app.TextureCache.a(this.b);
         } else {
-            this.b = com.tsf.shell.manager.app.t.a(this.c, this.d);
+            this.b = com.tsf.shell.manager.app.TextureCache.a(this.c, this.d);
         }
     }
 
@@ -68,7 +68,7 @@ public class d {
             bVar.scale().setAll(1.0f, 1.0f, 1.0f);
             bVar.alpha(255.0f);
             bVar.visible(true);
-            com.tsf.shell.manager.app.t.b(this.b, bVar.u);
+            com.tsf.shell.manager.app.TextureCache.b(this.b, bVar.u);
             GLES20.glViewport(0, 0, this.c, this.d);
             com.censivn.C3DEngine.A.e().a(this.c, this.d);
             if (bVar.visible()) {
@@ -86,7 +86,7 @@ public class d {
                 }
                 MatrixStack.glPopMatrix();
             }
-            com.tsf.shell.manager.app.t.b();
+            com.tsf.shell.manager.app.TextureCache.b();
             GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             bVar.position().setAllFrom(i);

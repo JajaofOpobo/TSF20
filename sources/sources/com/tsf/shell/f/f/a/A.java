@@ -113,14 +113,14 @@ public class A extends C {
         int iNumChildren = numChildren();
         if (iNumChildren == h.m) {
             com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) children().get(iNumChildren - 1);
-            if (this.g && com.tsf.shell.manager.app.h.n().t() == -1 && !com.tsf.shell.manager.app.h.t().aq()) {
-                final i iVarA = com.tsf.shell.manager.app.h.t().a(bVar);
+            if (this.g && com.tsf.shell.manager.app.StateHub.n().t() == -1 && !com.tsf.shell.manager.app.StateHub.t().aq()) {
+                final i iVarA = com.tsf.shell.manager.app.StateHub.t().a(bVar);
                 iVarA.removeFromParent();
-                com.tsf.shell.manager.app.h.t().addChild(iVarA);
+                com.tsf.shell.manager.app.StateHub.t().addChild(iVarA);
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
-                        com.tsf.shell.manager.app.h.t().e(iVarA);
+                        com.tsf.shell.manager.app.StateHub.t().e(iVarA);
                     }
                 };
                 dVar.f(com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.b.a.T);

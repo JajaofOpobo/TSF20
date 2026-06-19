@@ -39,7 +39,7 @@ public class k extends i {
         this.g.add(new com.tsf.shell.f.f.a._c._a.b(new a(b.d.drawer_preferences, x.c(b.i.text_preferences)) { // from class: com.tsf.shell.f.f.a._c.k.1
             @Override // com.tsf.shell.f.f.a._c.k.a
             public void a() {
-                com.tsf.shell.manager.app.B.d().d();
+                com.tsf.shell.manager.app.PreferenceProvider.d().d();
             }
         }));
         this.g.add(new com.tsf.shell.f.f.a._c._a.b(new a(b.d.drawer_clean, x.c(b.i.text_clean)) { // from class: com.tsf.shell.f.f.a._c.k.2
@@ -57,7 +57,7 @@ public class k extends i {
         this.g.add(new com.tsf.shell.f.f.a._c._a.b(new a(b.d.drawer_more_reset, x.c(b.i.text_reset)) { // from class: com.tsf.shell.f.f.a._c.k.4
             @Override // com.tsf.shell.f.f.a._c.k.a
             public void a() {
-                com.tsf.shell.manager.app.h.t().am().c();
+                com.tsf.shell.manager.app.StateHub.t().am().c();
             }
         }));
         this.h = new com.censivn.C3DEngine.b.f.j();
@@ -77,7 +77,7 @@ public class k extends i {
             this.h.addChild(bVar);
         }
         e().addChild(this.h);
-        e.a aVarA = com.tsf.shell.manager.app.a.a(com.tsf.shell.manager.p.e.i);
+        e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.e.i);
         if (aVarA.a()) {
             l = new com.tsf.shell.f.e.k();
             aVarA.a(new e.a.C0142a() { // from class: com.tsf.shell.f.f.a._c.k.5

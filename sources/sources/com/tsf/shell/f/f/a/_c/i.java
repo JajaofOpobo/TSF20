@@ -82,7 +82,7 @@ public class i extends com.censivn.C3DEngine.b.f.j {
     public void c(boolean z) {
         this.i = false;
         if (a(z)) {
-            this.f = com.tsf.shell.manager.app.q.a(this.f, this.d);
+            this.f = com.tsf.shell.manager.app.Notifier.a(this.f, this.d);
         }
         b(z);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.i.4
@@ -115,7 +115,7 @@ public class i extends com.censivn.C3DEngine.b.f.j {
 
     public void i() {
         this.i = false;
-        com.tsf.shell.manager.app.q.b(this.f);
+        com.tsf.shell.manager.app.Notifier.b(this.f);
         a();
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.i.5
             @Override // com.censivn.C3DEngine.b.g.d

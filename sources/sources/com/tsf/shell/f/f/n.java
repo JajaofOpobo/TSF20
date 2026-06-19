@@ -43,7 +43,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private ArrayList<Integer> l;
     private g m;
     private int n;
-    private com.tsf.shell.e.f p;
+    private com.tsf.shell.e.Workspace3D p;
     private g q;
     private g r;
     private int s;
@@ -64,12 +64,12 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         @Override // com.tsf.shell.f.e.e.a
         public void a(int i, Object obj) {
             c();
-            com.tsf.shell.manager.app.h.b((com.tsf.shell.f.i.B) obj);
+            com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.B) obj);
         }
 
         @Override // com.tsf.shell.f.e.e.a
         public float a() {
-            return com.tsf.shell.manager.app.g.a.j() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 2) : com.censivn.C3DEngine.b.b.A.h * 2;
+            return com.tsf.shell.manager.app.WidgetPanelController.a.j() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 2) : com.censivn.C3DEngine.b.b.A.h * 2;
         }
     };
     private o G = new o();
@@ -83,7 +83,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         });
         com.tsf.shell.f.i.a.b.d = this;
         com.tsf.shell.f.i.a.c.a = this;
-        com.tsf.shell.manager.app.b.a(this);
+        com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = this;
         aa();
         ab();
@@ -160,7 +160,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.g = new com.tsf.shell.f.e.j(true) { // from class: com.tsf.shell.f.f.n.10
             @Override // com.tsf.shell.f.e.j
             public void a() {
-                com.tsf.shell.manager.app.g.a.k();
+                com.tsf.shell.manager.app.WidgetPanelController.a.k();
             }
         };
         this.i = new com.censivn.C3DEngine.b.f.A() { // from class: com.tsf.shell.f.f.n.11
@@ -179,7 +179,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.F = new com.tsf.shell.f.f.d.A(this) { // from class: com.tsf.shell.f.f.n.12
             @Override // com.tsf.shell.f.f.d.A
             public void a() {
-                com.tsf.shell.manager.app.p.c();
+                com.tsf.shell.manager.app.WidgetAnimator.c();
                 com.censivn.C3DEngine.b.c.b.a(n.this.f);
             }
 
@@ -655,7 +655,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     if (runnable != null) {
                         runnable.run();
                     }
-                    com.tsf.shell.manager.app.h.af();
+                    com.tsf.shell.manager.app.StateHub.af();
                     this.x.b(gVar, runnable2);
                 }
                 return true;
@@ -732,17 +732,17 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public boolean B() {
-        return this.t == 2 && com.tsf.shell.manager.app.c.c();
+        return this.t == 2 && com.tsf.shell.manager.app.AppListModel.c();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void ag() {
-        com.tsf.shell.e.f.setMouseEnabled(false);
+        com.tsf.shell.e.Workspace3D.setMouseEnabled(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void ah() {
-        com.tsf.shell.e.f.setMouseEnabled(true);
+        com.tsf.shell.e.Workspace3D.setMouseEnabled(true);
     }
 
     public void a(final float f, final float f2, final float f3, final float f4) {
@@ -810,7 +810,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void ak() {
-        com.tsf.shell.manager.app.v.c.f();
+        com.tsf.shell.manager.app.v.ObjectHelper.f();
         this.e = false;
     }
 
@@ -830,12 +830,12 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             return;
         }
         if (this.t != 3 && this.t != 1) {
-            com.tsf.shell.manager.app.n.i();
+            com.tsf.shell.manager.app.PanelStateManager.i();
             ak();
             this.O = this.J != null;
             this.v.b();
             this.G.a();
-            com.tsf.shell.manager.app.c.a(this.I);
+            com.tsf.shell.manager.app.AppListModel.a(this.I);
             this.i.setAnimationObjectState(true);
             if (this.t == 2) {
                 this.m.V();
@@ -859,8 +859,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             if (this.N) {
                 aj();
             }
-            com.tsf.shell.manager.app.n.j();
-            com.tsf.shell.manager.app.c.a(this.I, true);
+            com.tsf.shell.manager.app.PanelStateManager.j();
+            com.tsf.shell.manager.app.AppListModel.a(this.I, true);
             this.v.a(this.m);
             this.G.b();
             this.G.a(this.m);
@@ -903,7 +903,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         if (this.J != null) {
             com.tsf.shell.f.i.a.c cVar = (com.tsf.shell.f.i.a.c) this.J.getMouseEventListener();
             cVar.a(false);
-            if (!cVar.a() && (gVarN = com.tsf.shell.manager.app.h.n()) != null) {
+            if (!cVar.a() && (gVarN = com.tsf.shell.manager.app.StateHub.n()) != null) {
                 this.J.removeFromParent();
                 gVarN.a(this.J);
             }
@@ -920,7 +920,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public boolean E() {
-        return com.tsf.shell.manager.app.h.F() == -1;
+        return com.tsf.shell.manager.app.StateHub.F() == -1;
     }
 
     public int F() {
@@ -984,7 +984,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void L() {
-        if (com.tsf.shell.manager.app.A.a() && this.s != 1) {
+        if (com.tsf.shell.manager.app.FeatureConfig.a() && this.s != 1) {
             w();
             am();
             N();
@@ -1050,9 +1050,9 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.n.7
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.manager.app.A.a()) {
+                if (com.tsf.shell.manager.app.FeatureConfig.a()) {
                     com.censivn.C3DEngine.a.d.d().i();
-                    if (!n.this.E.a() && com.tsf.shell.manager.app.h.B() && com.tsf.shell.manager.app.h.F() != -1) {
+                    if (!n.this.E.a() && com.tsf.shell.manager.app.StateHub.B() && com.tsf.shell.manager.app.StateHub.F() != -1) {
                         n.this.E.b();
                         com.tsf.shell.manager.p.c.a(5);
                         com.tsf.shell.e.a(b.i.notic_page_lasso_mode_enable);
@@ -1359,8 +1359,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             n.this.m.H();
             n.this.m.M();
             n.this.i.addChild(n.this.m);
-            com.tsf.shell.manager.app.c.a(n.this.I, true);
-            com.tsf.shell.manager.app.c.b(n.this.I);
+            com.tsf.shell.manager.app.AppListModel.a(n.this.I, true);
+            com.tsf.shell.manager.app.AppListModel.b(n.this.I);
             com.censivn.C3DEngine.b.c.b.b(this);
             a(false);
             n.this.al();
@@ -1389,8 +1389,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             this.D = 360.0f / n.this.n;
             if (this.w) {
                 n.this.ak();
-                com.tsf.shell.manager.app.c.a(n.this.I);
-                com.tsf.shell.manager.app.c.c(n.this.I);
+                com.tsf.shell.manager.app.AppListModel.a(n.this.I);
+                com.tsf.shell.manager.app.AppListModel.c(n.this.I);
                 this.w = false;
                 for (int i = 0; i < n.this.n; i++) {
                     g gVar = (g) n.this.k.get(i);
@@ -1423,10 +1423,10 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void c() {
             boolean z;
             if (this.c != null && !this.c.a()) {
-                com.tsf.shell.manager.app.v.c.b.a(true);
-                com.tsf.shell.manager.app.v.c.b.a(n.this.m);
+                com.tsf.shell.manager.app.v.ObjectHelper.b.a(true);
+                com.tsf.shell.manager.app.v.ObjectHelper.b.a(n.this.m);
             } else {
-                com.tsf.shell.manager.app.v.c.b.a(false);
+                com.tsf.shell.manager.app.v.ObjectHelper.b.a(false);
             }
             if (!this.k) {
                 if (this.L != null) {
@@ -1486,11 +1486,11 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void a(l lVar) {
             if (this.i) {
                 if (lVar == null) {
-                    lVar = com.tsf.shell.manager.app.v.a.C0126a.h();
+                    lVar = com.tsf.shell.manager.app.v.FlagHelper.C0126a.h();
                 }
                 this.c = lVar;
                 this.c.d();
-                com.tsf.shell.manager.app.v.a.C0126a.a2(this.c);
+                com.tsf.shell.manager.app.v.FlagHelper.C0126a.a2(this.c);
                 this.h = false;
                 this.i = false;
                 this.f = n.this.m.g;
@@ -1502,7 +1502,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     n.this.m.V();
                 }
                 n.this.i.position().x = 0.0f;
-                com.tsf.shell.manager.app.n.i();
+                com.tsf.shell.manager.app.PanelStateManager.i();
             }
         }
 
@@ -1755,9 +1755,9 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             n.this.ae();
             n.this.g();
-            com.tsf.shell.manager.app.v.a.C0126a();
+            com.tsf.shell.manager.app.v.FlagHelper.C0126a();
             h.a(false);
-            com.tsf.shell.manager.app.n.j();
+            com.tsf.shell.manager.app.PanelStateManager.j();
         }
 
         private void a(g gVar, Runnable runnable) {
@@ -1926,12 +1926,12 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                         if (gVarK == null || gVarK.t() == -1) {
                             gVarK = n.this.o();
                         }
-                        a(gVarK, i, null, false, com.tsf.shell.manager.app.v.a.b.h());
-                        com.tsf.shell.manager.app.c.a(n.this.I, false);
+                        a(gVarK, i, null, false, com.tsf.shell.manager.app.v.FlagHelper.b.h());
+                        com.tsf.shell.manager.app.AppListModel.a(n.this.I, false);
                         return;
                     }
-                    a(n.this.t(), i, null, true, com.tsf.shell.manager.app.v.a.b.h());
-                    com.tsf.shell.manager.app.c.a(n.this.I);
+                    a(n.this.t(), i, null, true, com.tsf.shell.manager.app.v.FlagHelper.b.h());
+                    com.tsf.shell.manager.app.AppListModel.a(n.this.I);
                     return;
                 }
                 return;
@@ -2023,7 +2023,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private int A = 2;
         private int B = 0;
         private boolean G = false;
-        private com.tsf.shell.f.e.e.b F = com.tsf.shell.manager.app.p.d();
+        private com.tsf.shell.f.e.e.b F = com.tsf.shell.manager.app.WidgetAnimator.d();
         private com.censivn.C3DEngine.b.f.k E = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.a.g, com.tsf.shell.manager.g.a.g, false);
         private float b = 0.017453292f;
         private float h = com.censivn.C3DEngine.b.b.A.D;
@@ -2109,7 +2109,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         /* JADX INFO: Access modifiers changed from: private */
         public void g() {
             if (!this.e && !this.r) {
-                com.tsf.shell.manager.app.o.k();
+                com.tsf.shell.manager.app.ServiceFactory.k();
                 this.E.textures().clear();
                 if (this.D != null) {
                     com.censivn.C3DEngine.A.g().a(this.D);
@@ -2247,7 +2247,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         /* JADX INFO: Access modifiers changed from: private */
         public void l() {
             if (this.e && !this.r && !this.G) {
-                com.tsf.shell.manager.app.o.i();
+                com.tsf.shell.manager.app.ServiceFactory.i();
                 ArrayList arrayList = (ArrayList) this.d.children().clone();
                 if (this.d.numChildren() > 0) {
                     Iterator it = arrayList.iterator();

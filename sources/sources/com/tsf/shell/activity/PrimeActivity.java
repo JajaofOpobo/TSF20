@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.C;
-import com.tsf.shell.e.e;
+import com.tsf.shell.e.DragLayer;
 import com.tsf.shell.utils.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -29,7 +29,7 @@ public class PrimeActivity extends Activity {
         this.b.setZOrderOnTop(true);
         com.tsf.shell.manager.b.e.a();
         g.a();
-        com.tsf.shell.manager.app.b = new com.censivn.C3DEngine.b.c.e(this);
+        com.tsf.shell.manager.app.ObserverManager = new com.censivn.C3DEngine.b.c.e(this);
         new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.activity.PrimeActivity.1
             @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
             public void b() {

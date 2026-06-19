@@ -62,7 +62,7 @@ public class a extends b {
     @Override // com.tsf.shell.f._d.e.a.b
     public void a(g gVar, float f, ArrayList<i> arrayList, Runnable runnable) {
         this.a = gVar;
-        com.tsf.shell.manager.app.e.a(gVar.a((b) this, (i) com.tsf.shell.manager.app.e.a(), true).b, f, runnable);
+        com.tsf.shell.manager.app.DataCoordinator.a(gVar.a((b) this, (i) com.tsf.shell.manager.app.DataCoordinator.a(), true).b, f, runnable);
     }
 
     @Override // com.tsf.shell.f._d.e.a.b
@@ -71,14 +71,14 @@ public class a extends b {
     }
 
     public void c() {
-        com.tsf.shell.manager.app.e.a().a(this.a.a(true, true).b);
-        com.tsf.shell.manager.app.e.a().a(1.0f);
+        com.tsf.shell.manager.app.DataCoordinator.a().a(this.a.a(true, true).b);
+        com.tsf.shell.manager.app.DataCoordinator.a().a(1.0f);
     }
 
     @Override // com.tsf.shell.f._d.e.a.b
     public void a(final g gVar, ArrayList<i> arrayList, final Runnable runnable, boolean z) {
         if (z) {
-            com.tsf.shell.manager.app.e.a(500, new Runnable() { // from class: com.tsf.shell.f._d.e.a.a.3
+            com.tsf.shell.manager.app.DataCoordinator.a(500, new Runnable() { // from class: com.tsf.shell.f._d.e.a.a.3
                 @Override // java.lang.Runnable
                 public void run() {
                     gVar.h();
@@ -88,7 +88,7 @@ public class a extends b {
             });
         } else {
             gVar.h();
-            com.tsf.shell.manager.app.e.a(0, runnable);
+            com.tsf.shell.manager.app.DataCoordinator.a(0, runnable);
             this.a = null;
         }
     }

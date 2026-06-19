@@ -63,7 +63,7 @@ public class c {
             @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
             public void addChild(i iVar) {
                 if (parent() == null) {
-                    com.tsf.shell.manager.app.j.a(this);
+                    com.tsf.shell.manager.app.TaskScheduler.a(this);
                 }
                 iVar.removeFromParent();
                 super.addChild(iVar);
@@ -75,7 +75,7 @@ public class c {
             public void a(com.tsf.shell.f.e.F fVar) {
                 super.a(fVar);
                 w.a(3);
-                com.tsf.shell.manager.app.q.a(-52736);
+                com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
@@ -100,7 +100,7 @@ public class c {
                 arrayList.add(bVar);
                 for (com.tsf.shell.f.i.B bVar2 : arrayList) {
                     bVar2.removeFromParent();
-                    com.tsf.shell.manager.app.j.a(bVar2);
+                    com.tsf.shell.manager.app.TaskScheduler.a(bVar2);
                 }
                 if (arrayList.size() > 1) {
                     Iterator it2 = arrayList.iterator();
@@ -125,7 +125,7 @@ public class c {
             public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
                 ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
-                com.tsf.shell.manager.app.q.a();
+                com.tsf.shell.manager.app.Notifier.a();
             }
         };
         aVar.alpha(0.0f);
@@ -141,7 +141,7 @@ public class c {
                 w.a(3);
                 c.this.m.b = fVar;
                 com.censivn.C3DEngine.A.a().b(c.this.m, 400L);
-                com.tsf.shell.manager.app.q.a(-16728065);
+                com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
@@ -159,7 +159,7 @@ public class c {
             public void d(com.tsf.shell.f.e.F fVar) {
                 com.censivn.C3DEngine.A.a().g(c.this.m);
                 c.this.m.b = null;
-                com.tsf.shell.manager.app.q.a();
+                com.tsf.shell.manager.app.Notifier.a();
             }
         };
         bVar.alpha(0.0f);
@@ -172,10 +172,10 @@ public class c {
         b bVar2 = new b(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e.e.c.4
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public void a(com.tsf.shell.f.e.F fVar) {
-                if (!com.tsf.shell.manager.app.h.n().c()) {
-                    com.tsf.shell.manager.app.h.n().d();
+                if (!com.tsf.shell.manager.app.StateHub.n().c()) {
+                    com.tsf.shell.manager.app.StateHub.n().d();
                     c.this.c();
-                    com.tsf.shell.manager.app.h.d.a((com.tsf.shell.f.i.B) fVar);
+                    com.tsf.shell.manager.app.StateHub.d.a((com.tsf.shell.f.i.B) fVar);
                     w.a(3);
                 }
             }
@@ -191,7 +191,7 @@ public class c {
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public void d(com.tsf.shell.f.e.F fVar) {
-                com.tsf.shell.manager.app.q.a();
+                com.tsf.shell.manager.app.Notifier.a();
             }
         };
         bVar2.alpha(0.0f);
@@ -212,7 +212,7 @@ public class c {
                 super.a(fVar);
                 w.a(3);
                 ((com.tsf.shell.f.i.B) fVar).setDefaultColor(com.tsf.shell.manager.o.c.c);
-                com.tsf.shell.manager.app.q.a(-52736);
+                com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
@@ -220,8 +220,8 @@ public class c {
                 super.b(fVar);
                 com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) fVar;
                 bVar3.clearDefaultColor();
-                com.tsf.shell.manager.app.q.a();
-                return com.tsf.shell.manager.app.h.t().d(bVar3);
+                com.tsf.shell.manager.app.Notifier.a();
+                return com.tsf.shell.manager.app.StateHub.t().d(bVar3);
             }
 
             @Override // com.tsf.shell.f.e.e.c.a, com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
@@ -233,7 +233,7 @@ public class c {
             public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
                 ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
-                com.tsf.shell.manager.app.q.a();
+                com.tsf.shell.manager.app.Notifier.a();
             }
         };
         aVar2.alpha(0.0f);
@@ -252,7 +252,7 @@ public class c {
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public void a(com.tsf.shell.f.e.F fVar) {
                 w.a(3);
-                com.tsf.shell.manager.app.q.a(-16728065);
+                com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
@@ -274,7 +274,7 @@ public class c {
 
             @Override // com.tsf.shell.f.e.e.e, com.tsf.shell.f.e.F
             public void d(com.tsf.shell.f.e.F fVar) {
-                com.tsf.shell.manager.app.q.a();
+                com.tsf.shell.manager.app.Notifier.a();
             }
         };
         bVar3.alpha(0.0f);
@@ -312,7 +312,7 @@ public class c {
         this.m = new f() { // from class: com.tsf.shell.f.e.e.c.8
             @Override // com.tsf.shell.f.e.e.f
             public void a(com.tsf.shell.f.e.F fVar) {
-                com.tsf.shell.manager.app.h.b((com.tsf.shell.f.i.B) fVar);
+                com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.B) fVar);
             }
         };
     }
@@ -328,7 +328,7 @@ public class c {
             this.q = false;
             this.o = f;
             this.p = f2;
-            this.s = com.tsf.shell.manager.app.q.a(this.s);
+            this.s = com.tsf.shell.manager.app.Notifier.a(this.s);
             this.r = true;
             int length = iArr.length;
             if (length == 1) {
@@ -366,7 +366,7 @@ public class c {
                     l.a(this, "ElementEditer wrong show type:" + i2);
                 } else {
                     bVar2.a();
-                    bVar2.a((i * f3) + f4, com.censivn.C3DEngine.b.b.A.I - (com.tsf.shell.manager.app.q.b() / 2.0f), true);
+                    bVar2.a((i * f3) + f4, com.censivn.C3DEngine.b.b.A.I - (com.tsf.shell.manager.app.Notifier.b() / 2.0f), true);
                     arrayList.add(bVar2);
                 }
             }
@@ -393,7 +393,7 @@ public class c {
                 }
             });
         } else if (this.r) {
-            com.tsf.shell.manager.app.q.b(this.s);
+            com.tsf.shell.manager.app.Notifier.b(this.s);
             this.r = false;
             Iterator<i> it = this.n.children().iterator();
             while (it.hasNext()) {

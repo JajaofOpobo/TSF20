@@ -40,7 +40,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
             public void run() throws Throwable {
                 if (ThemeIconInfoLayout.this.mInfo != null) {
                     Bitmap iconPreviewBitmap = ThemeIconInfoLayout.this.mLoader.getIconPreviewBitmap(com.censivn.C3DEngine.A.d(), ThemeIconInfoLayout.this.mInfo.packagename, (int) a.a(500.0f));
-                    Bitmap iconPreviewBitmap2 = iconPreviewBitmap == null ? IconPreviewLoader.getIconPreviewBitmap(com.tsf.shell.manager.app.w.a().d(), (int) a.a(500.0f)) : iconPreviewBitmap;
+                    Bitmap iconPreviewBitmap2 = iconPreviewBitmap == null ? IconPreviewLoader.getIconPreviewBitmap(com.tsf.shell.manager.app.ServiceProvider.a().d(), (int) a.a(500.0f)) : iconPreviewBitmap;
                     if (ThemeIconInfoLayout.this.bitmapReference != null && ThemeIconInfoLayout.this.bitmapReference.get() != null) {
                         ((Bitmap) ThemeIconInfoLayout.this.bitmapReference.get()).recycle();
                     }

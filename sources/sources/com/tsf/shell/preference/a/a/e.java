@@ -106,23 +106,23 @@ public class e extends i {
         }
         if (this.f.e() != com.tsf.shell.manager.b.e.Q()) {
             if (this.f.e()) {
-                com.tsf.shell.manager.app.h.t().g(true);
+                com.tsf.shell.manager.app.StateHub.t().g(true);
             } else {
-                com.tsf.shell.manager.app.h.t().h(true);
+                com.tsf.shell.manager.app.StateHub.t().h(true);
             }
         }
         if (this.g.e() != com.tsf.shell.manager.b.e.R()) {
             if (this.g.e()) {
-                com.tsf.shell.manager.app.h.t().b(true, true);
+                com.tsf.shell.manager.app.StateHub.t().b(true, true);
             } else {
-                com.tsf.shell.manager.app.h.t().c(true, true);
+                com.tsf.shell.manager.app.StateHub.t().c(true, true);
             }
         }
         if (this.a) {
             if (com.tsf.shell.manager.b.e.W() != this.a) {
                 com.tsf.shell.manager.b.e.l(this.a);
                 if (com.tsf.shell.f.f.a.h.p != this.c.e() || com.tsf.shell.f.f.a.h.q != this.b.e()) {
-                    com.tsf.shell.manager.app.h.t().aE();
+                    com.tsf.shell.manager.app.StateHub.t().aE();
                     return;
                 }
                 return;
@@ -143,6 +143,6 @@ public class e extends i {
         int iE = this.b.e();
         int iE2 = this.c.e();
         com.tsf.shell.manager.b.e.a(iE, iE2);
-        com.tsf.shell.manager.app.h.t().a(iE2, iE);
+        com.tsf.shell.manager.app.StateHub.t().a(iE2, iE);
     }
 }

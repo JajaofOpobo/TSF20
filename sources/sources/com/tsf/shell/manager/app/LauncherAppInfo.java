@@ -109,7 +109,7 @@ public class LauncherAppInfo {
         com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.LauncherAppInfo.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.r.a(f.this);
+                com.tsf.shell.manager.app.EventHandler.a(f.this);
             }
         });
     }
@@ -123,7 +123,7 @@ public class LauncherAppInfo {
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
                 if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this) {
-                    com.tsf.shell.manager.app.i.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
+                    com.tsf.shell.manager.app.WidgetManager.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
                 }
             }
         }

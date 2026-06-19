@@ -13,7 +13,7 @@ public class A {
     public int c;
 
     public A() {
-        com.tsf.shell.manager.app.g = this;
+        com.tsf.shell.manager.app.WidgetPanelController = this;
         this.c = a(com.tsf.shell.manager.b.e.v());
         this.a = new e(false);
         this.b = new f(false);

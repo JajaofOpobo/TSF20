@@ -31,7 +31,7 @@ public class b extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
         this.b.k(this.a.k());
-        a(com.tsf.shell.manager.app.o.a().a() == 0 ? b.i.text_top : b.i.text_bottom);
+        a(com.tsf.shell.manager.app.ServiceFactory.a().a() == 0 ? b.i.text_top : b.i.text_bottom);
     }
 
     @Override // com.censivn.C3DEngine.b.e.c
@@ -39,6 +39,6 @@ public class b extends i {
         if (this.b.e() != this.a.k()) {
             this.a.a(this.b.e(), true);
         }
-        com.tsf.shell.manager.app.o.a().a(this.c.e());
+        com.tsf.shell.manager.app.ServiceFactory.a().a(this.c.e());
     }
 }

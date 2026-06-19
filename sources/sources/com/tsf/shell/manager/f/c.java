@@ -29,36 +29,36 @@ public class c extends f {
         this.f = false;
         this.g = true;
         this.h = null;
-        com.tsf.shell.manager.app.D = new com.tsf.shell.manager.j.c();
-        com.tsf.shell.manager.app.a = new e();
+        com.tsf.shell.manager.app.Initializer = new com.tsf.shell.manager.j.c();
+        com.tsf.shell.manager.app.AppListManager = new e();
         com.tsf.shell.manager.app.C = new com.tsf.shell.services.c();
-        com.tsf.shell.manager.app.s = new com.censivn.C3DEngine.b.c.d();
-        com.tsf.shell.manager.app.A = new com.tsf.shell.manager.h.a();
-        com.tsf.shell.manager.app.c = this;
+        com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.d();
+        com.tsf.shell.manager.app.FeatureConfig = new com.tsf.shell.manager.h.a();
+        com.tsf.shell.manager.app.AppListModel = this;
         com.censivn.C3DEngine.a.a(gLSurfaceView);
         com.censivn.C3DEngine.b.b.A.a();
-        com.tsf.shell.manager.app.y = new com.tsf.shell.manager.e.a();
-        com.tsf.shell.manager.app.t = new com.tsf.shell.f.a.a.b();
-        com.tsf.shell.manager.app.u = new com.tsf.shell.f.a.b.a();
-        com.tsf.shell.manager.app.r = new com.tsf.shell.manager.q.a();
+        com.tsf.shell.manager.app.SimpleHandler = new com.tsf.shell.manager.e.a();
+        com.tsf.shell.manager.app.TextureCache = new com.tsf.shell.f.a.a.b();
+        com.tsf.shell.manager.app.ActionHandler = new com.tsf.shell.f.a.b.a();
+        com.tsf.shell.manager.app.EventHandler = new com.tsf.shell.manager.q.a();
         ThemeManager.initThemeManager();
-        com.tsf.shell.manager.app.d = new com.tsf.shell.manager.action.b();
+        com.tsf.shell.manager.app.FolderManager = new com.tsf.shell.manager.action.b();
         com.tsf.shell.manager.action.f.a(com.censivn.C3DEngine.A.d());
-        com.tsf.shell.manager.app.z = new com.tsf.shell.manager.c.b();
-        com.tsf.shell.e.e eVar = (com.tsf.shell.e.e) gLSurfaceView.getParent();
-        com.tsf.shell.manager.app.o = new com.tsf.shell.f.h.b();
-        com.tsf.shell.manager.app.n = new com.tsf.shell.manager.m.b();
+        com.tsf.shell.manager.app.ObjectRegistry = new com.tsf.shell.manager.c.b();
+        com.tsf.shell.e.DragLayer eVar = (com.tsf.shell.e.DragLayer) gLSurfaceView.getParent();
+        com.tsf.shell.manager.app.ServiceFactory = new com.tsf.shell.f.h.b();
+        com.tsf.shell.manager.app.PanelStateManager = new com.tsf.shell.manager.m.b();
         com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
-        com.tsf.shell.manager.app.j = new d(eVar);
-        com.tsf.shell.manager.app.h = new n();
-        com.tsf.shell.manager.app.p = new com.tsf.shell.f.e.e.c();
-        com.tsf.shell.manager.app.q = new com.tsf.shell.manager.n.a();
-        com.tsf.shell.manager.app.g = new com.tsf.shell.f.c.A();
-        com.tsf.shell.manager.app.x = new com.tsf.shell.manager.l.b();
-        com.tsf.shell.manager.app.i = new com.tsf.shell.manager.r.c.e();
-        com.tsf.shell.manager.app.k = new com.tsf.shell.manager.d.a();
-        com.tsf.shell.manager.app.l = new com.tsf.shell.manager.r.a.b();
-        com.tsf.shell.manager.app.m = new p();
+        com.tsf.shell.manager.app.TaskScheduler = new d(eVar);
+        com.tsf.shell.manager.app.StateHub = new n();
+        com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.c();
+        com.tsf.shell.manager.app.Notifier = new com.tsf.shell.manager.n.a();
+        com.tsf.shell.manager.app.WidgetPanelController = new com.tsf.shell.f.c.A();
+        com.tsf.shell.manager.app.PositionAnimator = new com.tsf.shell.manager.l.b();
+        com.tsf.shell.manager.app.WidgetManager = new com.tsf.shell.manager.r.c.e();
+        com.tsf.shell.manager.app.StateManager = new com.tsf.shell.manager.d.a();
+        com.tsf.shell.manager.app.WidgetLayoutManager = new com.tsf.shell.manager.r.a.b();
+        com.tsf.shell.manager.app.PlaceholderManager = new p();
         if (!t.a(com.censivn.C3DEngine.A.d())) {
             com.tsf.shell.services.c.a = false;
         }
@@ -77,29 +77,29 @@ public class c extends f {
         Home.c.a("initScene start");
         Home.q();
         com.tsf.shell.f.e.b.e.a();
-        com.tsf.shell.manager.app.B = new com.tsf.shell.preference.a.d();
+        com.tsf.shell.manager.app.PreferenceProvider = new com.tsf.shell.preference.a.d();
         com.tsf.shell.manager.app.v = new com.tsf.shell.f._d.A();
         com.tsf.shell.f.i.b.d.b.k();
         new com.tsf.shell.manager.o.d();
         com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.a(new j()));
-        com.tsf.shell.manager.app.e = new b();
+        com.tsf.shell.manager.app.DataCoordinator = new b();
         this.d = new j();
         this.e = new j();
         com.tsf.shell.manager.p.c.a();
-        com.tsf.shell.manager.app.p.a();
+        com.tsf.shell.manager.app.WidgetAnimator.a();
         com.tsf.shell.manager.app.LauncherAppInfo.b();
-        com.tsf.shell.manager.app.j.a(this.a);
-        this.c = com.tsf.shell.manager.app.h.f();
-        com.tsf.shell.manager.app.o.a(this.e);
-        com.tsf.shell.manager.app.n.a(this.e);
-        com.tsf.shell.manager.app.g.a(this.d);
-        com.tsf.shell.manager.app.i.a();
-        com.tsf.shell.manager.app.l.b();
-        com.tsf.shell.manager.app.q.a(this.d);
-        com.tsf.shell.manager.app.e.addChild(com.tsf.shell.manager.app.LauncherAppInfo.g());
-        com.tsf.shell.manager.app.e.addChild(this.c);
-        com.tsf.shell.manager.app.e.addChild(this.d);
-        this.a.addChild(com.tsf.shell.manager.app.e);
+        com.tsf.shell.manager.app.TaskScheduler.a(this.a);
+        this.c = com.tsf.shell.manager.app.StateHub.f();
+        com.tsf.shell.manager.app.ServiceFactory.a(this.e);
+        com.tsf.shell.manager.app.PanelStateManager.a(this.e);
+        com.tsf.shell.manager.app.WidgetPanelController.a(this.d);
+        com.tsf.shell.manager.app.WidgetManager.a();
+        com.tsf.shell.manager.app.WidgetLayoutManager.b();
+        com.tsf.shell.manager.app.Notifier.a(this.d);
+        com.tsf.shell.manager.app.DataCoordinator.addChild(com.tsf.shell.manager.app.LauncherAppInfo.g());
+        com.tsf.shell.manager.app.DataCoordinator.addChild(this.c);
+        com.tsf.shell.manager.app.DataCoordinator.addChild(this.d);
+        this.a.addChild(com.tsf.shell.manager.app.DataCoordinator);
         this.a.addChild(this.e);
         h();
         com.tsf.shell.f._d.c().a();
@@ -125,32 +125,32 @@ public class c extends f {
     }
 
     public void a(Object obj) {
-        com.tsf.shell.manager.app.g.a.m();
-        com.tsf.shell.manager.app.g.b.y();
+        com.tsf.shell.manager.app.WidgetPanelController.a.m();
+        com.tsf.shell.manager.app.WidgetPanelController.b.y();
     }
 
     public void a(Object obj, boolean z) {
-        if (!z || !com.tsf.shell.manager.app.h.E()) {
-            com.tsf.shell.manager.app.g.a.n();
-            com.tsf.shell.manager.app.g.b.z();
+        if (!z || !com.tsf.shell.manager.app.StateHub.E()) {
+            com.tsf.shell.manager.app.WidgetPanelController.a.n();
+            com.tsf.shell.manager.app.WidgetPanelController.b.z();
         }
     }
 
     public void b(Object obj) {
         if (this.h == obj) {
             this.h = null;
-            com.tsf.shell.manager.app.o.i();
-            com.tsf.shell.manager.app.g.b.z();
-            com.tsf.shell.manager.app.n.j();
+            com.tsf.shell.manager.app.ServiceFactory.i();
+            com.tsf.shell.manager.app.WidgetPanelController.b.z();
+            com.tsf.shell.manager.app.PanelStateManager.j();
         }
     }
 
     public void c(Object obj) {
         if (this.h == null) {
             this.h = obj;
-            com.tsf.shell.manager.app.o.k();
-            com.tsf.shell.manager.app.g.b.y();
-            com.tsf.shell.manager.app.n.i();
+            com.tsf.shell.manager.app.ServiceFactory.k();
+            com.tsf.shell.manager.app.WidgetPanelController.b.y();
+            com.tsf.shell.manager.app.PanelStateManager.i();
         }
     }
 
@@ -161,18 +161,18 @@ public class c extends f {
     public void a(b.a aVar, Runnable runnable, int i) {
         this.g = false;
         com.tsf.shell.f.e._g.d.hideAll();
-        com.tsf.shell.manager.app.o.k();
-        com.tsf.shell.manager.app.n.i();
+        com.tsf.shell.manager.app.ServiceFactory.k();
+        com.tsf.shell.manager.app.PanelStateManager.i();
         com.tsf.shell.manager.action.f.a();
-        com.tsf.shell.manager.app.e.a(aVar, i, runnable);
+        com.tsf.shell.manager.app.DataCoordinator.a(aVar, i, runnable);
     }
 
     public void a(final Runnable runnable, boolean z) {
         if (this.h == null) {
-            com.tsf.shell.manager.app.o.i();
-            com.tsf.shell.manager.app.n.j();
+            com.tsf.shell.manager.app.ServiceFactory.i();
+            com.tsf.shell.manager.app.PanelStateManager.j();
         }
-        com.tsf.shell.manager.app.e.a(new Runnable() { // from class: com.tsf.shell.manager.f.c.1
+        com.tsf.shell.manager.app.DataCoordinator.a(new Runnable() { // from class: com.tsf.shell.manager.f.c.1
             @Override // java.lang.Runnable
             public void run() {
                 c.this.g = true;
@@ -188,8 +188,8 @@ public class c extends f {
     }
 
     public void b(final Runnable runnable, int i) {
-        final boolean zA = com.tsf.shell.manager.app.v.d.b().a();
-        g gVarN = com.tsf.shell.manager.app.h.n();
+        final boolean zA = com.tsf.shell.manager.app.v.SimpleHelper.b().a();
+        g gVarN = com.tsf.shell.manager.app.StateHub.n();
         gVarN.ab();
         gVarN.a(new Runnable() { // from class: com.tsf.shell.manager.f.c.2
             @Override // java.lang.Runnable
@@ -207,7 +207,7 @@ public class c extends f {
 
     public void b(final Runnable runnable, boolean z) {
         this.c.visible(true);
-        final g gVarN = com.tsf.shell.manager.app.h.n();
+        final g gVarN = com.tsf.shell.manager.app.StateHub.n();
         gVarN.a(new Runnable() { // from class: com.tsf.shell.manager.f.c.3
             @Override // java.lang.Runnable
             public void run() {
@@ -223,15 +223,15 @@ public class c extends f {
 
     public void f() {
         if (this.f) {
-            com.tsf.shell.manager.app.h.O();
-            com.tsf.shell.manager.app.l.d();
+            com.tsf.shell.manager.app.StateHub.O();
+            com.tsf.shell.manager.app.WidgetLayoutManager.d();
         }
     }
 
     public void g() {
         if (this.f) {
-            com.tsf.shell.manager.app.h.P();
-            com.tsf.shell.manager.app.l.c();
+            com.tsf.shell.manager.app.StateHub.P();
+            com.tsf.shell.manager.app.WidgetLayoutManager.c();
         }
     }
 }

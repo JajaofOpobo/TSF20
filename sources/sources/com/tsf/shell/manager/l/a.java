@@ -63,9 +63,9 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.l.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        int iF = com.tsf.shell.manager.app.h.F();
+                        int iF = com.tsf.shell.manager.app.StateHub.F();
                         if (iF == -1) {
-                            iF = com.tsf.shell.manager.app.h.q();
+                            iF = com.tsf.shell.manager.app.StateHub.q();
                         }
                         Intent intent2 = (Intent) intent.getParcelableExtra("android.intent.extra.shortcut.INTENT");
                         String stringExtra = intent.getStringExtra("android.intent.extra.shortcut.NAME");
@@ -129,7 +129,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     }
 
     public static void a(com.tsf.shell.f.i.b.e.b bVar) {
-        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.h.d(bVar.K().screen);
+        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
     }
@@ -238,7 +238,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
             }
         }
         map.clear();
-        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.app.w.d().a()) {
+        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 ((com.tsf.shell.f.i.b.d.b) bVar).aQ();
             }

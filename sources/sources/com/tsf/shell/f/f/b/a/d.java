@@ -99,7 +99,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
                     dVar2.a(255);
                     dVar2.a(com.censivn.C3DEngine.b.g.a.a);
                     com.censivn.C3DEngine.b.g.c.a(iVar2, 450, dVar2);
-                    if (com.tsf.shell.manager.app.v.d.b().b()) {
+                    if (com.tsf.shell.manager.app.v.SimpleHelper.b().b()) {
                         dVar2 = dVar;
                     }
                     dVar = dVar2;

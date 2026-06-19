@@ -47,7 +47,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         float f = 0.0f;
         this.b = com.censivn.C3DEngine.b.b.A.a(this.b);
         this.c = com.censivn.C3DEngine.b.b.A.a(this.c);
-        com.tsf.shell.manager.app.b.a(this);
+        com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = new com.tsf.shell.f.c.b.a.b(this, this.m ? com.tsf.shell.manager.o.b.c : com.tsf.shell.manager.o.b.a);
         this.d = new j();
         this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.e.1
@@ -103,7 +103,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         d(A);
         this.d.addChild(this.i);
         if (!this.m) {
-            this.e = com.tsf.shell.manager.app.h.h();
+            this.e = com.tsf.shell.manager.app.StateHub.h();
         } else {
             this.e = new com.tsf.shell.f.e.j(false);
             this.e.a(5);
@@ -116,7 +116,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         this.e.position().y = c0084aB.h;
         p();
         this.i.g();
-        if (com.tsf.shell.manager.app.g.c() != 0) {
+        if (com.tsf.shell.manager.app.WidgetPanelController.c() != 0) {
             b(false);
         }
     }
@@ -165,11 +165,11 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     /* JADX INFO: Access modifiers changed from: private */
     public void d(int i) {
         if (this.j != null && !this.m) {
-            com.tsf.shell.manager.app.k.c(this.j);
+            com.tsf.shell.manager.app.StateManager.c(this.j);
         }
         this.j = (A) this.i.getChildAt(i);
         if (this.g && !this.m) {
-            com.tsf.shell.manager.app.k.b(this.j);
+            com.tsf.shell.manager.app.StateManager.b(this.j);
         }
     }
 
@@ -319,7 +319,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void k() {
-        if (this.m || com.tsf.shell.manager.app.g.c() == 0) {
+        if (this.m || com.tsf.shell.manager.app.WidgetPanelController.c() == 0) {
             if (this.o) {
                 b(true);
             } else {
@@ -364,8 +364,8 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
             }
             if (!this.m) {
                 com.tsf.shell.manager.b.e.e(true);
-                com.tsf.shell.manager.app.k.c(this.j);
-                com.tsf.shell.manager.app.h.t().ar();
+                com.tsf.shell.manager.app.StateManager.c(this.j);
+                com.tsf.shell.manager.app.StateHub.t().ar();
             }
         }
     }
@@ -395,9 +395,9 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
                 this.e.position().y = c0084aL.h;
             }
             if (!this.m) {
-                com.tsf.shell.manager.app.k.b(this.j);
+                com.tsf.shell.manager.app.StateManager.b(this.j);
                 com.tsf.shell.manager.b.e.e(false);
-                com.tsf.shell.manager.app.h.t().ar();
+                com.tsf.shell.manager.app.StateHub.t().ar();
             }
         }
     }
@@ -405,7 +405,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     public void m() {
         if (this.o && this.g) {
             if (!this.m) {
-                com.tsf.shell.manager.app.k.c(this.j);
+                com.tsf.shell.manager.app.StateManager.c(this.j);
             }
             this.g = false;
             this.d.mouseEnabled(false);
@@ -437,7 +437,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
                 public void a() {
                     e.this.d.mouseEnabled(true);
                     if (!e.this.m) {
-                        com.tsf.shell.manager.app.k.b(e.this.j);
+                        com.tsf.shell.manager.app.StateManager.b(e.this.j);
                     }
                 }
 
@@ -445,7 +445,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
                 public void c() {
                     e.this.d.mouseEnabled(true);
                     if (!e.this.m) {
-                        com.tsf.shell.manager.app.k.b(e.this.j);
+                        com.tsf.shell.manager.app.StateManager.b(e.this.j);
                     }
                 }
             };

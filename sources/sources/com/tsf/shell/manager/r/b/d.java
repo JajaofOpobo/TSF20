@@ -100,7 +100,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
     public void b() {
         if (!this.h) {
             this.h = true;
-            for (b.a aVar : com.tsf.shell.manager.app.d.a()) {
+            for (b.a aVar : com.tsf.shell.manager.app.FolderManager.a()) {
                 C cVar = new C();
                 cVar.c = aVar.a;
                 this.f.add(cVar);
@@ -239,7 +239,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
 
         @Override // com.tsf.shell.manager.r.b.d.a
         public void b() {
-            com.tsf.shell.manager.app.x.a.a(this.d, 0.0f, 0.0f, new a.C0130a() { // from class: com.tsf.shell.manager.r.b.d.b.1
+            com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, 0.0f, 0.0f, new a.C0130a() { // from class: com.tsf.shell.manager.r.b.d.b.1
                 @Override // com.tsf.shell.manager.l.a.C0130a
                 public void a(com.tsf.shell.f.i.b.e.b bVar) {
                     d.this.b.b().a(bVar);
@@ -271,13 +271,13 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
             dVar.a(0);
             com.censivn.C3DEngine.b.g.c.a(iVar);
             com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
-            com.tsf.shell.manager.app.x.a.a(this.d, iVar.position().x, iVar.position().y);
+            com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, iVar.position().x, iVar.position().y);
             return true;
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
         public void a(A aVar) {
-            com.tsf.shell.manager.app.x.a.a(this.d, 0.0f, d.this.b.getScreenFreeSpaceCenter());
+            com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, 0.0f, d.this.b.getScreenFreeSpaceCenter());
         }
 
         @Override // com.tsf.shell.manager.r.b.d.a
@@ -315,7 +315,7 @@ public class d extends com.tsf.shell.manager.r.b.C<com.tsf.shell.f.e._g.a.a> {
         public void a(A aVar) {
             com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.a.a(this.c, com.tsf.shell.manager.o.b.a);
             bVarA.position().y = d.this.b.getScreenFreeSpaceCenter();
-            com.tsf.shell.manager.app.h.n().a(bVarA);
+            com.tsf.shell.manager.app.StateHub.n().a(bVarA);
             bVarA.ah();
             bVarA.K().onUpdatePhoto(null, null);
             bVarA.ad();

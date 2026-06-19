@@ -55,7 +55,7 @@ public class b {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.b.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.app.i.b().a(true);
+                        com.tsf.shell.manager.app.WidgetManager.b().a(true);
                         if (runnable != null) {
                             runnable.run();
                         }

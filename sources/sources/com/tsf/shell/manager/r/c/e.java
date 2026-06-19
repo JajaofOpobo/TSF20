@@ -241,7 +241,7 @@ public class e {
     }
 
     public void d(com.tsf.shell.f.i.B bVar) {
-        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.h.d(bVar.K().screen);
+        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
         if (gVarD.ad()) {

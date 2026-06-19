@@ -27,7 +27,7 @@ public class b {
     }
 
     public static void a(ArrayList<ItemInfo> arrayList, final Runnable runnable, final Runnable runnable2) {
-        int iF = com.tsf.shell.manager.app.h.F();
+        int iF = com.tsf.shell.manager.app.StateHub.F();
         final ArrayList arrayList2 = new ArrayList();
         ArrayList arrayList3 = new ArrayList();
         for (ItemInfo itemInfo : arrayList) {
@@ -80,7 +80,7 @@ public class b {
             com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.bind.b.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager.app.i.a((ItemInfo) arrayList.remove(0), abstractC0146a);
+                    com.tsf.shell.manager.app.WidgetManager.a((ItemInfo) arrayList.remove(0), abstractC0146a);
                 }
             });
         } else if (runnable != null) {

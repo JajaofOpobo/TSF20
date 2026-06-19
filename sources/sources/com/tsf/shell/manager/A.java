@@ -36,7 +36,7 @@ public class A {
     public static com.tsf.shell.f.a.a.b t;
     public static com.tsf.shell.f.a.b.a u;
     public static com.tsf.shell.f._d.A v;
-    public static com.tsf.shell.manager.app.e w;
+    public static com.tsf.shell.manager.app.DataCoordinator w;
     public static com.tsf.shell.manager.l.b x;
     public static com.tsf.shell.manager.e.a y;
     public static com.tsf.shell.manager.c.b z;

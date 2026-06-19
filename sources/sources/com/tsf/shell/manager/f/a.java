@@ -41,7 +41,7 @@ public class a {
 
     public static void b(int i) {
         a = d(i);
-        if (d != null && com.tsf.shell.manager.app.h.n().t() == -1) {
+        if (d != null && com.tsf.shell.manager.app.StateHub.n().t() == -1) {
             if (d != com.tsf.shell.manager.app.LauncherAppInfo.g()) {
                 if (a == 100) {
                     d.removeFromParent();
@@ -115,7 +115,7 @@ public class a {
     }
 
     public void d() {
-        a(com.tsf.shell.manager.app.h.n());
+        a(com.tsf.shell.manager.app.StateHub.n());
     }
 
     public void a(g gVar) {

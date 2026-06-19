@@ -37,7 +37,7 @@ public class g extends com.tsf.shell.f.e._f.b {
 
     @Override // com.tsf.shell.f.e._f.b
     public com.censivn.C3DEngine.b.f.i d() {
-        return com.tsf.shell.manager.app.j.a();
+        return com.tsf.shell.manager.app.TaskScheduler.a();
     }
 
     @Override // com.tsf.shell.f.e._f.b

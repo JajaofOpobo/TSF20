@@ -10,7 +10,7 @@ public class b {
     }
 
     public void a() {
-        com.tsf.shell.manager.app.o.a().w();
+        com.tsf.shell.manager.app.ServiceFactory.a().w();
     }
 
     public A b() {

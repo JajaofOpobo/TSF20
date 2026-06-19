@@ -50,7 +50,7 @@ public class a extends j {
             public void a() {
                 a.this.visible(false);
                 if (!a.this.d) {
-                    com.tsf.shell.manager.app.j.b(a.this);
+                    com.tsf.shell.manager.app.TaskScheduler.b(a.this);
                 }
             }
         };
@@ -84,9 +84,9 @@ public class a extends j {
             this.b.updatePointsVBO();
             this.a.calAABB(6.0f, 1.0f, 1.0f);
             this.b.calAABB(6.0f, 1.0f, 1.0f);
-            com.tsf.shell.manager.app.j.a(this);
-            com.tsf.shell.manager.app.k.b(this.a);
-            com.tsf.shell.manager.app.k.b(this.b);
+            com.tsf.shell.manager.app.TaskScheduler.a(this);
+            com.tsf.shell.manager.app.StateManager.b(this.a);
+            com.tsf.shell.manager.app.StateManager.b(this.b);
             this.a.position().x = com.censivn.C3DEngine.b.b.A.z;
             this.b.position().x = com.censivn.C3DEngine.b.b.A.A;
         }
@@ -100,8 +100,8 @@ public class a extends j {
         if (this.d) {
             this.d = false;
             e();
-            com.tsf.shell.manager.app.k.c(this.a);
-            com.tsf.shell.manager.app.k.c(this.b);
+            com.tsf.shell.manager.app.StateManager.c(this.a);
+            com.tsf.shell.manager.app.StateManager.c(this.b);
         }
     }
 

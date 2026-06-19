@@ -19,6 +19,6 @@ public class a extends com.tsf.shell.f.e._g.a.b {
 
     @Override // com.tsf.shell.f.e._g.a.c
     public boolean allowChoice() {
-        return !com.tsf.shell.manager.app.h.s().a();
+        return !com.tsf.shell.manager.app.StateHub.s().a();
     }
 }

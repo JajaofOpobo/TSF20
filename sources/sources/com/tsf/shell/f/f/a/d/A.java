@@ -5,7 +5,7 @@ import com.tsf.shell.f.f.a.d.a.b;
 import com.tsf.shell.f.f.a.d.a.c;
 import com.tsf.shell.f.f.a.d.a.d;
 import com.tsf.shell.f.f.a.d.a.f;
-import com.tsf.shell.manager.app.e;
+import com.tsf.shell.manager.app.DataCoordinator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -62,7 +62,7 @@ public class A {
     }
 
     public void d() {
-        Collections.sort(com.tsf.shell.manager.app.h.t().ao().a(), e());
+        Collections.sort(com.tsf.shell.manager.app.StateHub.t().ao().a(), e());
     }
 
     private void c(int i) {
@@ -83,14 +83,14 @@ public class A {
             this.f = i;
             return;
         }
-        if (!com.tsf.shell.manager.app.h.t().ao().a().isEmpty()) {
+        if (!com.tsf.shell.manager.app.StateHub.t().ao().a().isEmpty()) {
             this.a = true;
             d();
-            com.tsf.shell.manager.app.w.d().c();
+            com.tsf.shell.manager.app.ServiceProvider.d().c();
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a.d.a.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager.app.h.t().ay();
+                    com.tsf.shell.manager.app.StateHub.t().ay();
                     a.this.a = false;
                     if (a.this.f != -1) {
                         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.d.a.1.1
@@ -101,12 +101,12 @@ public class A {
                             }
                         });
                     } else {
-                        com.tsf.shell.manager.app.b.c(Home.b());
+                        com.tsf.shell.manager.app.ObserverManager.c(Home.b());
                     }
                 }
             };
-            com.tsf.shell.manager.app.b.b(Home.b());
-            com.tsf.shell.manager.app.h.t().b(runnable);
+            com.tsf.shell.manager.app.ObserverManager.b(Home.b());
+            com.tsf.shell.manager.app.StateHub.t().b(runnable);
         }
     }
 }

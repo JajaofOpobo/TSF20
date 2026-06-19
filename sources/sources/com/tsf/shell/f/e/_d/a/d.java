@@ -92,7 +92,7 @@ public class d {
             this.b = true;
             k();
             this.c.removeFromParent();
-            com.tsf.shell.manager.app.j.a(this.c);
+            com.tsf.shell.manager.app.TaskScheduler.a(this.c);
             this.c.a();
             this.d.mouseEnabled(false);
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.d.3

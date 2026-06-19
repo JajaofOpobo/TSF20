@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class AppListManager {
     public static Object B;
     private ArrayList<LauncherAppInfo> i = new ArrayList<>(42);
     public ArrayList<LauncherAppInfo> a = new ArrayList<>(42);

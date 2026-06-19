@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
-import com.tsf.shell.manager.app.g;
+import com.tsf.shell.manager.app.WidgetPanelController;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -30,12 +30,12 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
             }
         };
         this.a = new g.b() { // from class: com.tsf.shell.f.f.a._a.d.2
-            @Override // com.tsf.shell.manager.app.g.b
+            @Override // com.tsf.shell.manager.app.WidgetPanelController.b
             public void a(ArrayList<com.tsf.shell.f.i._b.e.g> arrayList) {
                 d.this.g();
             }
         };
-        com.tsf.shell.manager.app.w.a().a().a(this.a);
+        com.tsf.shell.manager.app.ServiceProvider.a().a().a(this.a);
         this.e = new k(com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.d.3
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
@@ -110,7 +110,7 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
     public void g() {
         v();
         int iK = k() * 3;
-        for (com.tsf.shell.f.i._b.e.g gVar : com.tsf.shell.manager.app.w.a().a().a(iK <= 12 ? iK : 12)) {
+        for (com.tsf.shell.f.i._b.e.g gVar : com.tsf.shell.manager.app.ServiceProvider.a().a().a(iK <= 12 ? iK : 12)) {
             com.tsf.shell.f.i._b.e.e eVarC = this.b.c();
             eVarC.a(gVar);
             this.c.add(eVarC);

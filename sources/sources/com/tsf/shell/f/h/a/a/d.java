@@ -61,7 +61,7 @@ public class d implements b.a, c.a {
         this.d.f();
         this.j = true;
         this.i.a(bVar);
-        com.tsf.shell.manager.app.o.f();
+        com.tsf.shell.manager.app.ServiceFactory.f();
         com.censivn.C3DEngine.b.c.b.a(this);
     }
 
@@ -69,7 +69,7 @@ public class d implements b.a, c.a {
         if (this.j && this.i.c()) {
             this.d.g();
             this.j = false;
-            com.tsf.shell.manager.app.o.g();
+            com.tsf.shell.manager.app.ServiceFactory.g();
             com.censivn.C3DEngine.b.c.b.b(this);
         }
     }

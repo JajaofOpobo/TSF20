@@ -36,16 +36,16 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                 if (z) {
                     if (j.this.p) {
                         if (j.this.h) {
-                            com.tsf.shell.manager.app.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
+                            com.tsf.shell.manager.app.StateHub.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
                             return;
                         } else {
-                            com.tsf.shell.manager.app.h.s().a(motionEvent, motionEvent2);
+                            com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2);
                             return;
                         }
                     }
-                    com.tsf.shell.manager.app.h.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
-                    if (com.tsf.shell.manager.app.h.s().f()) {
-                        if (com.tsf.shell.manager.app.h.s().g()) {
+                    com.tsf.shell.manager.app.StateHub.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
+                    if (com.tsf.shell.manager.app.StateHub.s().f()) {
+                        if (com.tsf.shell.manager.app.StateHub.s().g()) {
                             j.this.h = true;
                         } else {
                             j.this.h = false;
@@ -58,7 +58,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
                                     j.this.c();
                                 } else {
                                     j.this.d();
-                                    com.tsf.shell.manager.app.h.s().e();
+                                    com.tsf.shell.manager.app.StateHub.s().e();
                                 }
                             }
                         });
@@ -70,7 +70,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             public void e(MotionEvent motionEvent) {
                 if (z) {
                     j.this.b();
-                    com.tsf.shell.manager.app.h.a(true);
+                    com.tsf.shell.manager.app.StateHub.a(true);
                 }
             }
 
@@ -78,19 +78,19 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             public void f(MotionEvent motionEvent) {
                 if (z) {
                     if (j.this.p && !j.this.h) {
-                        com.tsf.shell.manager.app.h.s().a(motionEvent);
+                        com.tsf.shell.manager.app.StateHub.s().a(motionEvent);
                     }
-                    com.tsf.shell.manager.app.h.s().d(motionEvent);
+                    com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
                     j.this.p = false;
                     j.this.e();
-                    com.tsf.shell.manager.app.h.g();
+                    com.tsf.shell.manager.app.StateHub.g();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (z && j.this.p && !j.this.h) {
-                    com.tsf.shell.manager.app.h.s().b(motionEvent, motionEvent2, f, f2);
+                    com.tsf.shell.manager.app.StateHub.s().b(motionEvent, motionEvent2, f, f2);
                 }
             }
 
@@ -149,7 +149,7 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             if (r0 == 0) goto L50
             boolean r0 = r6.h
             if (r0 == 0) goto L50
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
             com.censivn.C3DEngine.b.f.j r2 = r0.u()
             r1 = 1325400064(0x4f000000, float:2.1474836E9)
             r0 = 1

@@ -36,7 +36,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Back.easeIn, dVar);
             if (parent() == null) {
-                com.tsf.shell.manager.app.j.a(this);
+                com.tsf.shell.manager.app.TaskScheduler.a(this);
             }
             b(I);
         }
@@ -48,7 +48,7 @@ public class r extends com.censivn.C3DEngine.b.f.j {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.r.1
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    com.tsf.shell.manager.app.j.b(r.this);
+                    com.tsf.shell.manager.app.TaskScheduler.b(r.this);
                     if (r.this.a.id != 0) {
                         com.censivn.C3DEngine.A.g().a(r.this.a);
                     }

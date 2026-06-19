@@ -244,19 +244,19 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
 
     public void b(Number3d number3d, Number3d number3d2) {
         if (this.b) {
-            this.s = com.tsf.shell.manager.app.v.b.a(this, number3d, number3d2);
+            this.s = com.tsf.shell.manager.app.v.AnimationHelper.a(this, number3d, number3d2);
         }
     }
 
     public void aP() {
         if (this.b) {
-            this.s = com.tsf.shell.manager.app.v.b.a(this);
+            this.s = com.tsf.shell.manager.app.v.AnimationHelper.a(this);
         }
     }
 
     public void b(com.tsf.shell.f._d.a.A aVar) {
         if (this.b) {
-            com.tsf.shell.manager.app.v.b.a(this, aVar);
+            com.tsf.shell.manager.app.v.AnimationHelper.a(this, aVar);
         }
     }
 

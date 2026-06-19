@@ -13,21 +13,21 @@ import com.tsf.shell.Home;
 import com.tsf.shell.f.f.k;
 import com.tsf.shell.f.i.a.d;
 import com.tsf.shell.f.i.b.e.g;
-import com.tsf.shell.manager.app.b;
+import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
+public class a extends com.tsf.shell.f.e._g.a.b implements ObserverManager.a {
     public com.tsf.shell.manager.r.b.A a;
-    private com.tsf.shell.manager.app.c b;
+    private com.tsf.shell.manager.app.AppListModel b;
     private h c;
     private float d;
     private ArrayList<g> e;
     private com.censivn.C3DEngine.b.h.b.c.a f;
-    private b.a g;
+    private ObserverManager.a g;
     private B h;
     private boolean i;
     private k j;
@@ -52,7 +52,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
             }
         };
         this.g = new b.a() { // from class: com.tsf.shell.manager.r.b.a.a.2
-            @Override // com.tsf.shell.manager.app.b.a
+            @Override // com.tsf.shell.manager.app.ObserverManager.a
             public void a() {
                 if (a.this.isShowing()) {
                     a.this.c.d();
@@ -282,7 +282,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
                         f3 = (f3 + next.position().x) / 2.0f;
                         f2 = (next.position().y + f4) / 2.0f;
                     } else {
-                        com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.h.F(), 0, (int) this.a.getScreenFreeSpaceCenter()).c(arrayList);
+                        com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.StateHub.F(), 0, (int) this.a.getScreenFreeSpaceCenter()).c(arrayList);
                         return;
                     }
                 }
@@ -292,7 +292,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
 
     public void a() {
         this.a.templeteHide();
-        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.h.n();
+        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
         if (gVarN.t() != -1) {
             this.j = (k) gVarN;
             this.j.a(this.f);
@@ -327,7 +327,7 @@ public class a extends com.tsf.shell.f.e._g.a.b implements b.a {
     @Override // com.tsf.shell.f.e._g.a.c
     public void onShow() {
         if (this.b == null) {
-            this.b = com.tsf.shell.manager.app.w.a();
+            this.b = com.tsf.shell.manager.app.ServiceProvider.a();
             this.b.a.a(this.g);
             this.b.a.b();
         }

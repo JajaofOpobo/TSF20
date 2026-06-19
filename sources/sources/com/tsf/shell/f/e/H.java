@@ -88,7 +88,7 @@ public class H {
                         if (H.this.j) {
                             H.this.s = motionEvent.getX();
                             H.this.t = motionEvent.getY();
-                            H.this.l = com.tsf.shell.manager.app.h.G();
+                            H.this.l = com.tsf.shell.manager.app.StateHub.G();
                             H.this.j = false;
                             H.this.c(motionEvent);
                             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.1
@@ -224,18 +224,18 @@ public class H {
         float[] fArrB = x.b(motionEvent.getX(), motionEvent.getY());
         e.position().x = fArrB[0];
         e.position().y = fArrB[1];
-        com.tsf.shell.manager.app.j.a(e);
+        com.tsf.shell.manager.app.TaskScheduler.a(e);
         if (this.u != null) {
             e.addChild(this.u);
         }
         if (this.r) {
-            com.tsf.shell.manager.app.j.a(g);
+            com.tsf.shell.manager.app.TaskScheduler.a(g);
             g.position().x = fArrB[0];
             g.position().y = fArrB[1];
         }
         h.position().x = fArrB[0];
         h.position().y = fArrB[1];
-        com.tsf.shell.manager.app.j.a(h);
+        com.tsf.shell.manager.app.TaskScheduler.a(h);
         j();
     }
 
@@ -249,13 +249,13 @@ public class H {
                 }
             });
             if (e.parent() != null) {
-                com.tsf.shell.manager.app.j.b(e);
+                com.tsf.shell.manager.app.TaskScheduler.b(e);
             }
             if (g.parent() != null) {
-                com.tsf.shell.manager.app.j.b(g);
+                com.tsf.shell.manager.app.TaskScheduler.b(g);
             }
             if (h.parent() != null) {
-                com.tsf.shell.manager.app.j.b(h);
+                com.tsf.shell.manager.app.TaskScheduler.b(h);
             }
             if (this.u != null) {
                 this.u.removeFromParent();
@@ -329,14 +329,14 @@ public class H {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.4
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.j.a(H.d, H.w);
+                com.tsf.shell.manager.app.TaskScheduler.a(H.d, H.w);
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void k() {
-        com.tsf.shell.manager.app.j.a(d);
+        com.tsf.shell.manager.app.TaskScheduler.a(d);
     }
 
     private boolean a(double d2, double d3, double d4, double d5, double d6, double d7, double d8, double d9) {

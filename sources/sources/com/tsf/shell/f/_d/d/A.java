@@ -56,7 +56,7 @@ public class A {
     }
 
     public void g() {
-        g gVarN = com.tsf.shell.manager.app.h.n();
+        g gVarN = com.tsf.shell.manager.app.StateHub.n();
         if (gVarN != null) {
             gVarN.ae();
             if (gVarN.ah() != null) {
@@ -69,7 +69,7 @@ public class A {
     }
 
     public void h() {
-        if (com.tsf.shell.manager.app.v.a.C0126a.h().a()) {
+        if (com.tsf.shell.manager.app.v.FlagHelper.C0126a.h().a()) {
             f();
             g();
         }

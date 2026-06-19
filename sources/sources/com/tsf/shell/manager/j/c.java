@@ -13,12 +13,12 @@ public class c {
             d();
         }
         c();
-        j jVarA = com.tsf.shell.manager.app.j.a(this.b);
+        j jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.b);
         this.a.removeFromParent();
         this.a.a();
         this.a.alpha(255.0f);
         jVarA.addChild(this.a);
-        com.tsf.shell.manager.app.j.a(new Runnable() { // from class: com.tsf.shell.manager.j.c.1
+        com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.manager.j.c.1
             @Override // java.lang.Runnable
             public void run() {
                 c.this.a.b();
@@ -32,11 +32,11 @@ public class c {
         dVar.a(0);
         com.censivn.C3DEngine.b.g.c.a(this.a);
         com.censivn.C3DEngine.b.g.c.a(this.a, 300, dVar);
-        com.tsf.shell.manager.app.j.a(new Runnable() { // from class: com.tsf.shell.manager.j.c.2
+        com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.manager.j.c.2
             @Override // java.lang.Runnable
             public void run() {
                 c.this.a.d();
-                com.tsf.shell.manager.app.j.b();
+                com.tsf.shell.manager.app.TaskScheduler.b();
                 c.this.a.removeFromParent();
             }
         }, true);

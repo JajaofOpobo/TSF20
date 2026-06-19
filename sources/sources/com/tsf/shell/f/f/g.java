@@ -25,7 +25,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     private com.tsf.shell.f._d.e.a.b J;
     private com.censivn.C3DEngine.b.g._b.a L;
     protected g a;
-    protected com.tsf.shell.e.d b;
+    protected com.tsf.shell.e.CellLayout b;
     protected com.tsf.shell.f.e.f.b c;
     protected com.tsf.shell.f.i.A h;
     protected l k;
@@ -70,7 +70,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         this.u.vTarget = this;
         this.L = new com.censivn.C3DEngine.b.g._b.b();
         this.a = this;
-        com.tsf.shell.manager.app.b.a(this);
+        com.tsf.shell.manager.app.ObserverManager.a(this);
     }
 
     public boolean c() {
@@ -78,11 +78,11 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void d() {
-        com.tsf.shell.manager.app.h.d.a(this);
+        com.tsf.shell.manager.app.StateHub.d.a(this);
     }
 
     public void e() {
-        com.tsf.shell.manager.app.h.d.d();
+        com.tsf.shell.manager.app.StateHub.d.d();
     }
 
     public void f() {
@@ -170,7 +170,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             Number3d number3dClone = position().m4clone();
             h.a.visible(false);
             position().setAll(0.0f, 0.0f, 0.0f);
-            com.tsf.shell.manager.app.t.b(j.c(), aVarC.b);
+            com.tsf.shell.manager.app.TextureCache.b(j.c(), aVarC.b);
             if (z) {
                 com.tsf.shell.manager.app.LauncherAppInfo.a(this);
             }
@@ -178,7 +178,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             this.c.visible(true);
             this.c.dispatchDraw();
             this.c.visible(Boolean.valueOf(zVisible));
-            com.tsf.shell.manager.app.t.b();
+            com.tsf.shell.manager.app.TextureCache.b();
             position().setAllFrom(number3dClone);
             h.a.visible(true);
         }
@@ -186,7 +186,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void k() {
-        com.tsf.shell.manager.app.b.a(this);
+        com.tsf.shell.manager.app.ObserverManager.a(this);
     }
 
     public VPage l() {
@@ -219,11 +219,11 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void a(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.f.k kVarB = com.tsf.shell.manager.app.h.i().b();
+            com.censivn.C3DEngine.b.f.k kVarB = com.tsf.shell.manager.app.StateHub.i().b();
             kVarB.removeFromParent();
             addChild(kVarB);
         } else {
-            com.tsf.shell.manager.app.h.i().b().removeFromParent();
+            com.tsf.shell.manager.app.StateHub.i().b().removeFromParent();
         }
         this.B = z;
     }
@@ -240,7 +240,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         return this.A;
     }
 
-    public com.tsf.shell.e.d s() {
+    public com.tsf.shell.e.CellLayout s() {
         return this.b;
     }
 
@@ -306,7 +306,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
-        com.tsf.shell.manager.app.b.b(this);
+        com.tsf.shell.manager.app.ObserverManager.b(this);
         v();
         this.h.c();
         this.C.clear();
@@ -323,7 +323,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void v() {
         for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList) this.c.children().clone()) {
             if (iVar instanceof com.tsf.shell.f.i.B) {
-                com.tsf.shell.manager.app.i.a((com.tsf.shell.f.i.B) iVar);
+                com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.B) iVar);
             }
         }
     }
@@ -413,7 +413,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public static void y() {
         if (f != null) {
-            com.tsf.shell.manager.app.t.a(f);
+            com.tsf.shell.manager.app.TextureCache.a(f);
         }
         if (n.a > n.b) {
             d = (int) (0.4f * com.censivn.C3DEngine.b.b.A.F);
@@ -422,7 +422,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             e = (int) (0.4f * com.censivn.C3DEngine.b.b.A.G);
             d = (n.a * e) / n.b;
         }
-        f = com.tsf.shell.manager.app.t.a(d, e);
+        f = com.tsf.shell.manager.app.TextureCache.a(d, e);
     }
 
     public void b(boolean z) {
@@ -459,13 +459,13 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     @Override // com.censivn.C3DEngine.b.f.i
     public void killFocus() {
         F();
-        com.tsf.shell.manager.app.h.r().b(this, this.L);
+        com.tsf.shell.manager.app.StateHub.r().b(this, this.L);
     }
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void setFocus() {
         E();
-        com.tsf.shell.manager.app.h.r().a(this, this.L);
+        com.tsf.shell.manager.app.StateHub.r().a(this, this.L);
     }
 
     public void C() {
@@ -610,13 +610,13 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             this.l = com.censivn.C3DEngine.A.g().a(d, e, false);
             this.q.textures().addElement(this.l);
         }
-        com.tsf.shell.manager.app.t.b(f, this.l);
+        com.tsf.shell.manager.app.TextureCache.b(f, this.l);
         GLES20.glViewport(0, 0, d, e);
         boolean zVisible = this.c.visible();
         this.c.visible(true);
         this.c.drawQuietly();
         this.c.visible(Boolean.valueOf(zVisible));
-        com.tsf.shell.manager.app.t.b();
+        com.tsf.shell.manager.app.TextureCache.b();
         GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         position().setAllFrom(number3dClone);
         this.D = false;
@@ -719,12 +719,12 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public boolean Y() {
-        return (com.tsf.shell.manager.app.v.a.C0126a.h().a() && this.j) ? false : true;
+        return (com.tsf.shell.manager.app.v.FlagHelper.C0126a.h().a() && this.j) ? false : true;
     }
 
     public void Z() {
         this.j = true;
-        if (com.tsf.shell.manager.app.v.a.C0126a.h().a() || t() == -1) {
+        if (com.tsf.shell.manager.app.v.FlagHelper.C0126a.h().a() || t() == -1) {
             ab();
         }
         if (this.G) {
@@ -746,7 +746,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void aa() {
         this.j = false;
-        if (com.tsf.shell.manager.app.v.a.C0126a.h().a() || t() == -1) {
+        if (com.tsf.shell.manager.app.v.FlagHelper.C0126a.h().a() || t() == -1) {
             ac();
         }
         this.g = 0.0f;
@@ -792,10 +792,10 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
-        if (com.tsf.shell.manager.app.v.c.b.a()) {
+        if (com.tsf.shell.manager.app.v.ObjectHelper.b.a()) {
             for (com.censivn.C3DEngine.b.f.i iVar : R()) {
                 if (iVar instanceof com.tsf.shell.f.i.B) {
-                    com.tsf.shell.manager.app.v.c.b.a((com.tsf.shell.f.i.B) iVar);
+                    com.tsf.shell.manager.app.v.ObjectHelper.b.a((com.tsf.shell.f.i.B) iVar);
                 }
             }
         }
@@ -842,7 +842,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void f(boolean z) {
         if (z) {
             if (parent() == null) {
-                com.tsf.shell.manager.app.h.u().addChild(this);
+                com.tsf.shell.manager.app.StateHub.u().addChild(this);
                 M();
                 this.s.removeFromParent();
                 return;
@@ -900,7 +900,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void a(Runnable runnable, float f2) {
-        a(com.tsf.shell.manager.app.v.d.b(), runnable, f2);
+        a(com.tsf.shell.manager.app.v.SimpleHelper.b(), runnable, f2);
     }
 
     public void a(com.tsf.shell.f._d.e.a.b bVar, Runnable runnable, float f2) {
@@ -917,7 +917,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public void a(Runnable runnable, boolean z) {
-        a(com.tsf.shell.manager.app.v.d.b(), runnable, z);
+        a(com.tsf.shell.manager.app.v.SimpleHelper.b(), runnable, z);
     }
 
     public void a(com.tsf.shell.f._d.e.a.b bVar, final Runnable runnable, boolean z) {

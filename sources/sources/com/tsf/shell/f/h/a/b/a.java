@@ -138,7 +138,7 @@ public class a implements c.a {
 
     private void n() {
         System.currentTimeMillis();
-        ArrayList<g> arrayListA = com.tsf.shell.manager.app.w.a().a().a(this.e);
+        ArrayList<g> arrayListA = com.tsf.shell.manager.app.ServiceProvider.a().a().a(this.e);
         l();
         if (arrayListA.isEmpty()) {
             this.c.addChild(m());

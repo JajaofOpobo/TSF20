@@ -55,7 +55,7 @@ public class ShellModel extends BroadcastReceiver {
     private static final ArrayList<ItemInfo> m = new ArrayList<>();
     private static final ArrayList<ItemInfo> n = new ArrayList<>();
     private static final HandlerThread q = new HandlerThread("launcher-loader");
-    public com.tsf.shell.manager.app.a _a;
+    public com.tsf.shell.manager.app.AppListManager _a;
     private b c;
     private Context d;
     private int e;
@@ -67,7 +67,7 @@ public class ShellModel extends BroadcastReceiver {
         this.d = context;
         this.p = Build.VERSION.SDK_INT < 9 ? true : Environment.isExternalStorageRemovable();
         this.o = new com.tsf.shell.manager.bind.b();
-        this._a = new com.tsf.shell.manager.app.a();
+        this._a = new com.tsf.shell.manager.app.AppListManager();
         this.e = this.d.getResources().getInteger(com.tsf.b.f.config_allAppsBatchLoadDelay);
     }
 
@@ -122,7 +122,7 @@ public class ShellModel extends BroadcastReceiver {
         }
     }
 
-    public com.tsf.shell.manager.app.a b() {
+    public com.tsf.shell.manager.app.AppListManager b() {
         return this._a;
     }
 
@@ -615,7 +615,7 @@ public class ShellModel extends BroadcastReceiver {
                                         int i6 = cursorQuery.getInt(columnIndexOrThrow6);
                                         String string = cursorQuery.getString(columnIndexOrThrow16);
                                         AppWidgetProviderInfo appWidgetInfo = appWidgetManager.getAppWidgetInfo(i6);
-                                        if (!com.tsf.shell.manager.app.h.b(i3)) {
+                                        if (!com.tsf.shell.manager.app.StateHub.b(i3)) {
                                             arrayList.add(Integer.valueOf(i2));
                                         } else {
                                             if (appWidgetInfo == null || appWidgetInfo.provider == null || appWidgetInfo.provider.getPackageName() == null) {
@@ -838,7 +838,7 @@ public class ShellModel extends BroadcastReceiver {
                 }
                 ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList2 = ShellModel.this._a.f;
                 ShellModel.this._a.f = new ArrayList<>();
-                com.tsf.shell.manager.app.i.a(arrayList2);
+                com.tsf.shell.manager.app.WidgetManager.a(arrayList2);
             }
         }
     }
@@ -931,13 +931,13 @@ public class ShellModel extends BroadcastReceiver {
                 ShellModel.this.o.b(arrayList2, this.a != 4);
             }
             if (arrayList4 != null) {
-                com.tsf.shell.manager.app.i.b(arrayList4);
+                com.tsf.shell.manager.app.WidgetManager.b(arrayList4);
             }
             if (arrayList6 != null) {
-                com.tsf.shell.manager.app.i.c(arrayList6);
+                com.tsf.shell.manager.app.WidgetManager.c(arrayList6);
             }
             if (arrayList5 != null) {
-                com.tsf.shell.manager.app.i.a(arrayList5, this.a != 4);
+                com.tsf.shell.manager.app.WidgetManager.a(arrayList5, this.a != 4);
             }
         }
     }

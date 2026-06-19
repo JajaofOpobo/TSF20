@@ -23,7 +23,7 @@ public class h {
         a.c(com.censivn.C3DEngine.b.b.A.B);
         a.textures().addElement(textureElementB);
         g = new A();
-        com.tsf.shell.manager.app.b.a(g);
+        com.tsf.shell.manager.app.ObserverManager.a(g);
     }
 
     public static void a(int i, int i2, int i3, int i4) {

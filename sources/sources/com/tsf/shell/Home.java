@@ -43,9 +43,9 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public static int a = (int) (((Math.random() * 1000.0d) * 2.0d) + 1000.0d);
     public static String b = "";
     public static Home c;
-    private com.tsf.shell.e.e e;
+    private com.tsf.shell.e.DragLayer e;
     private com.censivn.C3DEngine.a.a f;
-    private com.tsf.shell.e.f g;
+    private com.tsf.shell.e.Workspace3D g;
     private boolean k;
     private com.tsf.shell.f.D n;
     private D o;
@@ -178,7 +178,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 c();
             } else {
                 b.a();
-                this.e = new com.tsf.shell.e.e(this);
+                this.e = new com.tsf.shell.e.DragLayer(this);
                 setContentView(this.e);
                 if (!com.tsf.shell.manager.b.f.a()) {
                     com.tsf.shell.manager.b.f.a(true);
@@ -302,7 +302,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         this.f = new com.censivn.C3DEngine.a.a(this);
         this.e.addView(this.f);
         this.o = d.a();
-        com.tsf.shell.manager.A.w = new com.tsf.shell.manager.app.e();
+        com.tsf.shell.manager.A.w = new com.tsf.shell.manager.app.DataCoordinator();
         a("initialize");
         f();
         g();
@@ -329,7 +329,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void g() {
         if (this.g == null) {
-            this.g = new com.tsf.shell.e.f(this);
+            this.g = new com.tsf.shell.e.Workspace3D(this);
         }
         this.g.setPageManager(com.tsf.shell.manager.A.h);
         this.g.setOnLongClickListener(this);
@@ -385,9 +385,9 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         return this.k;
     }
 
-    public com.tsf.shell.e.f l() {
+    public com.tsf.shell.e.Workspace3D l() {
         if (this.g == null) {
-            this.g = new com.tsf.shell.e.f(this);
+            this.g = new com.tsf.shell.e.Workspace3D(this);
         }
         return this.g;
     }
@@ -582,7 +582,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         if (k() || !this.m) {
             return false;
         }
-        final d.a aVar = (d.a) (!(view instanceof com.tsf.shell.e.d) ? (View) view.getParent().getParent() : view).getTag();
+        final d.a aVar = (d.a) (!(view instanceof com.tsf.shell.e.CellLayout) ? (View) view.getParent().getParent() : view).getTag();
         if (aVar == null) {
             return true;
         }

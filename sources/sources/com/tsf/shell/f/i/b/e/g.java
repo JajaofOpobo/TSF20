@@ -55,7 +55,7 @@ public class g extends a {
     public void onDrawChildStart() {
         super.onDrawChildEnd();
         if (this.b) {
-            com.tsf.shell.manager.app.v.f.h().a(this);
+            com.tsf.shell.manager.app.v.StateAccessor.h().a(this);
         }
     }
 
@@ -63,21 +63,21 @@ public class g extends a {
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.b) {
-            com.tsf.shell.manager.app.v.f.h().b(this);
+            com.tsf.shell.manager.app.v.StateAccessor.h().b(this);
         }
     }
 
     public void aX() {
         if (!this.b) {
             this.b = true;
-            com.tsf.shell.manager.app.v.f.a((com.tsf.shell.f.i.b.e.b) this);
+            com.tsf.shell.manager.app.v.StateAccessor.a((com.tsf.shell.f.i.b.e.b) this);
         }
     }
 
     public void aY() {
         if (this.b) {
             this.b = false;
-            com.tsf.shell.manager.app.v.f.b(this);
+            com.tsf.shell.manager.app.v.StateAccessor.b(this);
         }
     }
 

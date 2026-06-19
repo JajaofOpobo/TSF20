@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.h.b.g;
-import com.tsf.shell.manager.app.b;
+import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
@@ -18,7 +18,7 @@ public class c {
     private static k c;
     private static boolean d;
     private static g e;
-    private static b f;
+    private static ObserverManager f;
     private static d g;
     private static a i;
     private static ArrayList<com.tsf.shell.f.i._b.e.g> j;
@@ -29,7 +29,7 @@ public class c {
 
     private static void h() {
         if (!d) {
-            f = new b();
+            f = new ObserverManager();
             g = new d();
             b = new j() { // from class: com.tsf.shell.f.e._a.c.1
                 @Override // com.censivn.C3DEngine.b.f.i
@@ -38,7 +38,7 @@ public class c {
                 }
             };
             l = new b.a() { // from class: com.tsf.shell.f.e._a.c.2
-                @Override // com.tsf.shell.manager.app.b.a
+                @Override // com.tsf.shell.manager.app.ObserverManager.a
                 public void a() {
                     c.a();
                     c.e.b();
@@ -134,7 +134,7 @@ public class c {
 
     public static void a() {
         j.clear();
-        ArrayList<com.tsf.shell.f.i._b.e.g> arrayListD = com.tsf.shell.manager.app.w.a().a.d();
+        ArrayList<com.tsf.shell.f.i._b.e.g> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().a.d();
         if (k != null) {
             for (com.tsf.shell.f.i._b.e.g gVar : arrayListD) {
                 if (!k.contains(gVar.bd())) {
@@ -160,23 +160,23 @@ public class c {
         i = aVar;
         i.e();
         h();
-        com.tsf.shell.manager.app.w.a().a.a(l);
-        com.tsf.shell.manager.app.w.a().a.b();
+        com.tsf.shell.manager.app.ServiceProvider.a().a.a(l);
+        com.tsf.shell.manager.app.ServiceProvider.a().a.b();
         j();
         if (b.parent() == null) {
             b.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
         } else {
             b.removeFromParent();
         }
-        com.tsf.shell.manager.app.j.a(b);
+        com.tsf.shell.manager.app.TaskScheduler.a(b);
         i();
     }
 
     public static void b() {
         if (h) {
-            com.tsf.shell.manager.app.w.a().a.b(l);
+            com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
             com.censivn.C3DEngine.b.c.b.b(f);
-            com.tsf.shell.manager.app.b.b(g);
+            com.tsf.shell.manager.app.ObserverManager.b(g);
             c();
         }
     }
@@ -186,7 +186,7 @@ public class c {
         b.setFocus();
         h = true;
         com.censivn.C3DEngine.b.c.b.a(f);
-        com.tsf.shell.manager.app.b.a(g);
+        com.tsf.shell.manager.app.ObserverManager.a(g);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._a.c.5
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {

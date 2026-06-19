@@ -27,7 +27,7 @@ public class A extends com.censivn.C3DEngine.b.d.a {
         this.e = 0;
         this.j = fVar;
         this.k = this.j.g();
-        this.b = com.tsf.shell.manager.app.h;
+        this.b = com.tsf.shell.manager.app.StateHub;
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
@@ -124,7 +124,7 @@ public class A extends com.censivn.C3DEngine.b.d.a {
         switch (this.e) {
             case 0:
                 if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > this.d) {
-                    this.e = com.tsf.shell.manager.app.g.b.a((x.d(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) + 90.0f) * (-1.0f));
+                    this.e = com.tsf.shell.manager.app.WidgetPanelController.b.a((x.d(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) + 90.0f) * (-1.0f));
                     switch (this.e) {
                         case 1:
                             this.b.w();

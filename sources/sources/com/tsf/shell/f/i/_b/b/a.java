@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.e.d;
+import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.f.e.t;
 import com.tsf.shell.f.f.g;
 import com.tsf.shell.f.i._a.c;
@@ -17,7 +17,7 @@ public class a extends com.tsf.shell.f.i.B {
     public boolean a;
     public k b;
     public String f;
-    public com.tsf.shell.e.b g;
+    public com.tsf.shell.e.WidgetContainer g;
     public TextureElement h;
     public Object i;
     public Runnable j;
@@ -45,7 +45,7 @@ public class a extends com.tsf.shell.f.i.B {
         this.b.visible(false);
         this.k = new c(this);
         e(false);
-        this.l = com.tsf.shell.manager.app.l;
+        this.l = com.tsf.shell.manager.app.WidgetLayoutManager;
         this.l.a(this);
     }
 
@@ -278,7 +278,7 @@ public class a extends com.tsf.shell.f.i.B {
         com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.i._b.b.a.6
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.l.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
+                com.tsf.shell.manager.app.WidgetLayoutManager.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
                 ShellModel.a.b(a.this.K());
             }
         });

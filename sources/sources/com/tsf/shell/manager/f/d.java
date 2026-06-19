@@ -28,12 +28,12 @@ public class d implements e.a {
     private n e;
     private com.tsf.shell.f.b.a f;
     private d.b g;
-    private com.tsf.shell.e.e h;
+    private com.tsf.shell.e.DragLayer h;
     private FrameLayout i;
     private j j;
 
-    public d(com.tsf.shell.e.e eVar) {
-        com.tsf.shell.manager.app.b.a(this);
+    public d(com.tsf.shell.e.DragLayer eVar) {
+        com.tsf.shell.manager.app.ObserverManager.a(this);
         this.h = eVar;
         this.i = new FrameLayout(this.h.getContext());
         this.g = new d.b() { // from class: com.tsf.shell.manager.f.d.1
@@ -131,19 +131,19 @@ public class d implements e.a {
             return null;
         }
         this.e.alpha(0.0f);
-        com.tsf.shell.manager.app.h.H();
+        com.tsf.shell.manager.app.StateHub.H();
         com.censivn.C3DEngine.b.c.b.a(aVar);
         this.f = aVar;
         this.a.addChild(this.b);
-        com.tsf.shell.manager.app.s.a(this.g);
+        com.tsf.shell.manager.app.CallbackHandler.a(this.g);
         return this.c;
     }
 
     public void b() {
         this.a.removeChild(this.b);
-        com.tsf.shell.manager.app.h.I();
+        com.tsf.shell.manager.app.StateHub.I();
         com.censivn.C3DEngine.b.c.b.b(this.f);
-        com.tsf.shell.manager.app.s.b(this.g);
+        com.tsf.shell.manager.app.CallbackHandler.b(this.g);
         this.f = null;
     }
 
@@ -156,7 +156,7 @@ public class d implements e.a {
     }
 
     public void a(Runnable runnable, int i) {
-        com.tsf.shell.manager.app.c.a(runnable, i);
+        com.tsf.shell.manager.app.AppListModel.a(runnable, i);
     }
 
     public void d() {
@@ -168,7 +168,7 @@ public class d implements e.a {
     }
 
     public void a(final Runnable runnable, boolean z) {
-        com.tsf.shell.manager.app.c.a(new Runnable() { // from class: com.tsf.shell.manager.f.d.5
+        com.tsf.shell.manager.app.AppListModel.a(new Runnable() { // from class: com.tsf.shell.manager.f.d.5
             @Override // java.lang.Runnable
             public void run() {
                 d.this.e();

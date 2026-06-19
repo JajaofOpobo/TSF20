@@ -106,7 +106,7 @@ public class B {
         if (z) {
             com.tsf.shell.manager.app.LauncherAppInfo.g().addChild(aVar2);
         } else {
-            com.tsf.shell.manager.app.j.a(aVar2);
+            com.tsf.shell.manager.app.TaskScheduler.a(aVar2);
         }
     }
 

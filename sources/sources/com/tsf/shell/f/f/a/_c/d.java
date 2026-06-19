@@ -97,7 +97,7 @@ public class d extends i {
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(com.censivn.C3DEngine.b.f.i iVar, int i, MotionEvent motionEvent) {
                 w.b();
-                if (!com.tsf.shell.manager.app.h.t().an().c()) {
+                if (!com.tsf.shell.manager.app.StateHub.t().an().c()) {
                     d.this.a.d(i);
                     w.b();
                 }

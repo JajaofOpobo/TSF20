@@ -9,7 +9,7 @@ public class k extends g {
     private com.censivn.C3DEngine.b.h.b.c l;
 
     public k() {
-        this.b = new com.tsf.shell.e.d(com.censivn.C3DEngine.A.d(), this.a);
+        this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.A.d(), this.a);
     }
 
     @Override // com.tsf.shell.f.f.g

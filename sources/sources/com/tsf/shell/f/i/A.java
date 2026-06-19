@@ -55,7 +55,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
     }
 
     public void f() {
-        if (com.tsf.shell.manager.app.A.a() && !this.c) {
+        if (com.tsf.shell.manager.app.FeatureConfig.a() && !this.c) {
             this.c = true;
             com.censivn.C3DEngine.b.c.b.a(this);
             for (i iVar : this.d.b()) {
@@ -69,11 +69,11 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
     }
 
     private void j() {
-        this.a = com.tsf.shell.manager.app.q.a(this.a, String.format(x.c(com.tsf.b.i.text_multi_select_title), Integer.valueOf(this.b.size())));
+        this.a = com.tsf.shell.manager.app.Notifier.a(this.a, String.format(x.c(com.tsf.b.i.text_multi_select_title), Integer.valueOf(this.b.size())));
     }
 
     private void k() {
-        com.tsf.shell.manager.app.q.b(this.a);
+        com.tsf.shell.manager.app.Notifier.b(this.a);
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a

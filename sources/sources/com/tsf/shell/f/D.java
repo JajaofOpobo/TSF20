@@ -37,10 +37,10 @@ public class D {
     }
 
     public static void d() {
-        com.tsf.shell.manager.app.i.d();
-        com.tsf.shell.manager.app.l.a();
+        com.tsf.shell.manager.app.WidgetManager.d();
+        com.tsf.shell.manager.app.WidgetLayoutManager.a();
         com.tsf.shell.manager.app.LauncherAppInfo.h();
-        com.tsf.shell.manager.app.g.b();
+        com.tsf.shell.manager.app.WidgetPanelController.b();
     }
 
     public void e() {

@@ -40,7 +40,7 @@ public class E extends com.censivn.C3DEngine.b.f.j {
         if (a.parent() == null) {
             cVar.an();
             c = cVar;
-            com.tsf.shell.manager.app.j.a(A);
+            com.tsf.shell.manager.app.TaskScheduler.a(A);
         } else if (c != cVar) {
             com.tsf.shell.utils.l.a(a, "FollowingContainer exist FollowingTarget:" + c);
         }
@@ -78,7 +78,7 @@ public class E extends com.censivn.C3DEngine.b.f.j {
         while (a.numChildren() > 0) {
             a.getChildAt(0).removeFromParent();
         }
-        com.tsf.shell.manager.app.j.b(A);
+        com.tsf.shell.manager.app.TaskScheduler.b(A);
         c = null;
         return arrayListB;
     }

@@ -32,7 +32,7 @@ public class g extends e {
             ArrayList arrayList = (ArrayList) this.l.clone();
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
-                com.tsf.shell.manager.app.i.a((com.tsf.shell.f.i.B) it.next());
+                com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.B) it.next());
             }
             this.l.clear();
             arrayList.clear();
@@ -77,7 +77,7 @@ public class g extends e {
         ArrayList arrayList = (ArrayList) this.l.clone();
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.manager.app.i.a((com.tsf.shell.f.i.B) it.next());
+            com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.B) it.next());
         }
         this.l.clear();
         arrayList.clear();

@@ -17,7 +17,7 @@ public class m extends i {
 
     public m(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, b.d.drawer_sort, x.c(b.i.text_sort));
-        this.h = com.tsf.shell.manager.app.w.b();
+        this.h = com.tsf.shell.manager.app.ServiceProvider.b();
         d();
     }
 
@@ -92,7 +92,7 @@ public class m extends i {
             com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(hVar) { // from class: com.tsf.shell.f.f.a.c.m.1
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent) {
-                    if (com.tsf.shell.manager.app.h.t().aL()) {
+                    if (com.tsf.shell.manager.app.StateHub.t().aL()) {
                         m.this.h.b(m.this.h.a(i).k());
                         w.b();
                         if (m.this.j != null) {

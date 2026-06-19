@@ -43,7 +43,7 @@ public class b extends com.tsf.shell.f.e._g.a.b {
     }
 
     private void a() {
-        this.e = com.tsf.shell.manager.app.a.a(com.tsf.shell.manager.p.e.p);
+        this.e = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.e.p);
         this.d = new com.tsf.shell.manager.wallpaper.c();
         this.c = new ArrayList<>();
         this.c.add(new C0150b(x.c(b.i.theme_picker_theme_picker_gallery_apps), b.d.wallpaper_gallery_preview) { // from class: com.tsf.shell.manager.wallpaper.b.1

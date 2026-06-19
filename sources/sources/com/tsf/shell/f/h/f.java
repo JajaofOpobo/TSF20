@@ -54,7 +54,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
         this.d = new com.tsf.shell.manager.r.b.A.C0144a() { // from class: com.tsf.shell.f.h.f.2
             @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
             public void a() {
-                com.tsf.shell.manager.app.o.j();
+                com.tsf.shell.manager.app.ServiceFactory.j();
             }
 
             @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.A.C0144a
@@ -133,8 +133,8 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
             com.censivn.C3DEngine.A.g().a(this.f, bitmap);
             bitmap.recycle();
             this.g = true;
-            com.tsf.shell.manager.app.i.a.a(this.d);
-            com.tsf.shell.manager.app.o.a(com.tsf.shell.manager.app.i.a.getScreenFreeSpaceBottom());
+            com.tsf.shell.manager.app.WidgetManager.a.a(this.d);
+            com.tsf.shell.manager.app.ServiceFactory.a(com.tsf.shell.manager.app.WidgetManager.a.getScreenFreeSpaceBottom());
             this.b.removeFromParent();
         }
     }

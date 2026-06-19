@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.g.A;
-import com.tsf.shell.e.d;
+import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
@@ -18,7 +18,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
     private static t a;
     private static C b;
     private static com.tsf.shell.f.i.b.b.a c;
-    private static com.tsf.shell.e.d.b d;
+    private static com.tsf.shell.e.CellLayout.b d;
     private static boolean e = false;
     private static B f;
 
@@ -52,7 +52,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.A.F / 2)) + (i / 2);
         int i4 = ((com.censivn.C3DEngine.b.b.A.G / 2) - bVar2.b) - (i2 / 2);
         a.removeFromParent();
-        com.tsf.shell.manager.app.j.a(A);
+        com.tsf.shell.manager.app.TaskScheduler.a(A);
         a.position().x = i3;
         a.position().y = i4;
         a.c().a(i, i2);

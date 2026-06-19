@@ -71,13 +71,13 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         LauncherShortcutStandardInfo launcherShortcutStandardInfo;
         super.c(motionEvent);
         com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.c;
-        if (com.tsf.shell.manager.app.A.a()) {
+        if (com.tsf.shell.manager.app.FeatureConfig.a()) {
             if (bVar == null || !bVar.O()) {
-                com.tsf.shell.manager.app.h.d.a(bVar);
-                com.tsf.shell.manager.app.h.a(bVar);
+                com.tsf.shell.manager.app.StateHub.d.a(bVar);
+                com.tsf.shell.manager.app.StateHub.a(bVar);
                 com.tsf.shell.f.e._g.d.onTempleteHide();
-                if (com.tsf.shell.manager.app.h.F() != -1) {
-                    com.tsf.shell.manager.app.h.a().b();
+                if (com.tsf.shell.manager.app.StateHub.F() != -1) {
+                    com.tsf.shell.manager.app.StateHub.a().b();
                 }
                 if (bVar.A() != null && (bVar instanceof com.tsf.shell.f.i.C)) {
                     com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
@@ -92,7 +92,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                     }
                     cVar.A().g();
                 }
-                com.tsf.shell.manager.app.j.a((i) bVar, true);
+                com.tsf.shell.manager.app.TaskScheduler.a((i) bVar, true);
                 f.a();
                 this.n = false;
                 this.o = false;
@@ -134,16 +134,16 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 }
                 b(true);
                 if (!bVar.D()) {
-                    com.tsf.shell.manager.app.h.b().b();
-                    com.tsf.shell.manager.app.n.a((i) bVar);
-                    if (com.tsf.shell.manager.app.h.d.b()) {
-                        com.tsf.shell.manager.app.p.a(bVar, f, f2, true, 0, 1);
+                    com.tsf.shell.manager.app.StateHub.b().b();
+                    com.tsf.shell.manager.app.PanelStateManager.a((i) bVar);
+                    if (com.tsf.shell.manager.app.StateHub.d.b()) {
+                        com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, true, 0, 1);
                         return;
                     }
                     if (bVar == null || bVar.K() == null || bVar.K().title == null || !bVar.K().title.equals(x.c(b.i.panda))) {
                         ItemInfo itemInfoK = bVar.K();
                         if (!(itemInfoK instanceof LauncherShortcutStandardInfo) || (launcherShortcutStandardInfo = (LauncherShortcutStandardInfo) itemInfoK) == null || launcherShortcutStandardInfo.intent == null || launcherShortcutStandardInfo.intent.getIntExtra("action", -1) != 19) {
-                            com.tsf.shell.manager.app.p.a(bVar, f, f2, true, 0, 2, 1);
+                            com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, true, 0, 2, 1);
                         }
                     }
                 }
@@ -178,10 +178,10 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             super.d(r7)
             com.censivn.C3DEngine.b.f.i r0 = r6.c
             com.tsf.shell.f.i.B r0 = (com.tsf.shell.f.i.B) r0
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.manager.f.a r1 = r1.a()
             r1.d()
-            com.tsf.shell.manager.h.a r1 = com.tsf.shell.manager.app.A
+            com.tsf.shell.manager.h.a r1 = com.tsf.shell.manager.app.FeatureConfig
             boolean r1 = r1.a()
             if (r1 == 0) goto L22
             if (r0 == 0) goto L26
@@ -192,7 +192,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         L25:
             return
         L26:
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.f.c.a r1 = r1.d
             r1.b(r0)
             com.tsf.shell.f.e._g.d.onTempleteShow()
@@ -204,16 +204,16 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r0.x()
         L3e:
             r6.b(r3)
-            com.tsf.shell.f.e._e.c r0 = com.tsf.shell.manager.app.p
+            com.tsf.shell.f.e._e.c r0 = com.tsf.shell.manager.app.WidgetAnimator
             r0.c()
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.e._e.a r0 = r0.b()
             r0.c()
-            com.tsf.shell.manager.m.b r0 = com.tsf.shell.manager.app.n
+            com.tsf.shell.manager.m.b r0 = com.tsf.shell.manager.app.PanelStateManager
             r0.e()
             goto L25
         L55:
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             r1.d()
             com.censivn.C3DEngine.b.f.i r1 = r6.c
             boolean r1 = r1 instanceof com.tsf.shell.f.e.F
@@ -238,7 +238,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.f.e.F r4 = r1.a(r5, r4)
             boolean r5 = r1.h(r4)
             if (r5 == 0) goto Lbc
-            com.tsf.shell.manager.f.d r2 = com.tsf.shell.manager.app.j
+            com.tsf.shell.manager.f.d r2 = com.tsf.shell.manager.app.TaskScheduler
             r2.b(r0)
             r1.g(r4)
             com.tsf.shell.f.i.B r1 = r6.g
@@ -248,9 +248,9 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r1 = r3
         La3:
             if (r1 == 0) goto L3e
-            com.tsf.shell.manager.f.d r1 = com.tsf.shell.manager.app.j
+            com.tsf.shell.manager.f.d r1 = com.tsf.shell.manager.app.TaskScheduler
             r1.b(r0)
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.h
+            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.f.g r1 = r1.n()
             if (r1 == 0) goto Lb8
             r0.removeFromParent()
@@ -259,7 +259,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r6.b()
             goto L3e
         Lbc:
-            com.tsf.shell.manager.f.d r4 = com.tsf.shell.manager.app.j
+            com.tsf.shell.manager.f.d r4 = com.tsf.shell.manager.app.TaskScheduler
             r4.b(r0)
             r1.p()
             r1 = r2
@@ -272,8 +272,8 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     }
 
     public void b() {
-        if (com.tsf.shell.manager.app.h.d.b()) {
-            a(com.tsf.shell.manager.app.h.d.a(), true);
+        if (com.tsf.shell.manager.app.StateHub.d.b()) {
+            a(com.tsf.shell.manager.app.StateHub.d.a(), true);
         } else {
             c();
         }
@@ -321,7 +321,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 this.c.position().x = (int) (this.b + (motionEvent2.getX() - motionEvent.getX()));
                 this.c.position().y = (int) (this.d - (motionEvent2.getY() - motionEvent.getY()));
                 float[] fArrA = x.a(motionEvent2, this.r);
-                com.tsf.shell.manager.app.p.a(fArrA[0], fArrA[1]);
+                com.tsf.shell.manager.app.WidgetAnimator.a(fArrA[0], fArrA[1]);
             } else if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
                 this.n = true;
                 this.g.ab();
@@ -331,7 +331,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                     if (!this.o) {
                         this.o = true;
                         this.g.aa();
-                        com.tsf.shell.manager.app.p.c();
+                        com.tsf.shell.manager.app.WidgetAnimator.c();
                     }
                     this.g.rotation().z = this.k - (this.j - l(motionEvent2));
                     return;
@@ -417,7 +417,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     @Override // com.censivn.C3DEngine.b.d.a
     public void i(MotionEvent motionEvent) {
         if (!this.g.Q()) {
-            com.tsf.shell.manager.app.h.s().b(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().b(motionEvent);
         }
         if (this.p != null) {
             this.p.i(motionEvent);
@@ -427,7 +427,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     @Override // com.censivn.C3DEngine.b.d.a
     public void j(MotionEvent motionEvent) {
         if (!this.g.Q()) {
-            com.tsf.shell.manager.app.h.s().c(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().c(motionEvent);
         }
         this.j = l(motionEvent);
         this.k = this.c.rotation().z;
@@ -471,9 +471,9 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.g.c) {
             if (!this.g.Q()) {
-                com.tsf.shell.manager.app.h.s().d(motionEvent, motionEvent2, f, f2);
-                boolean zF = com.tsf.shell.manager.app.h.s().f();
-                this.e = com.tsf.shell.manager.app.h.s().g();
+                com.tsf.shell.manager.app.StateHub.s().d(motionEvent, motionEvent2, f, f2);
+                boolean zF = com.tsf.shell.manager.app.StateHub.s().f();
+                this.e = com.tsf.shell.manager.app.StateHub.s().g();
                 if (zF && !this.e && this.p != null) {
                     this.p.a(motionEvent, motionEvent2, f, f2);
                     return;
@@ -492,14 +492,14 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             this.p.f(motionEvent);
         }
         if (!this.g.c && !this.g.Q()) {
-            com.tsf.shell.manager.app.h.s().d(motionEvent);
+            com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.g.c && !this.g.Q()) {
-            com.tsf.shell.manager.app.h.s().a(motionEvent, motionEvent2, f, f2);
+            com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2, f, f2);
         }
         if (this.p != null && !this.e) {
             this.p.b(motionEvent, motionEvent2, f, f2);

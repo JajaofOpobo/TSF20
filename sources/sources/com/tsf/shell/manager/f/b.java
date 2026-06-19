@@ -116,11 +116,11 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
             b(aVar);
             this.f = g();
             a(this.f.b, i, runnable);
-            com.tsf.shell.manager.app.s.a(this.h);
+            com.tsf.shell.manager.app.CallbackHandler.a(this.h);
             mouseEnabled(false);
             com.censivn.C3DEngine.a.d.d().c().a(false);
-            com.tsf.shell.manager.app.h.n().ab();
-            com.tsf.shell.manager.app.b.a(this);
+            com.tsf.shell.manager.app.StateHub.n().ab();
+            com.tsf.shell.manager.app.ObserverManager.a(this);
             this.g.setAABBPX(-com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f, com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
         }
     }
@@ -146,9 +146,9 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
                     b.this.f.a = null;
                     b.this.mouseEnabled(true);
                     com.censivn.C3DEngine.a.d.d().c().a(true);
-                    com.tsf.shell.manager.app.h.n().ac();
-                    com.tsf.shell.manager.app.b.b(b.this);
-                    com.tsf.shell.manager.app.s.b(b.this.h);
+                    com.tsf.shell.manager.app.StateHub.n().ac();
+                    com.tsf.shell.manager.app.ObserverManager.b(b.this);
+                    com.tsf.shell.manager.app.CallbackHandler.b(b.this.h);
                     if (runnable != null) {
                         runnable.run();
                     }
@@ -174,10 +174,10 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
     public void dispatchDraw() {
         if (b != 0 && this.l) {
             this.j = com.tsf.shell.f.f.j.c(this.a);
-            com.tsf.shell.manager.app.t.b(com.tsf.shell.f.f.j.c(), this.j.b);
+            com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.j.c(), this.j.b);
             if (b == 3) {
                 com.tsf.shell.manager.app.LauncherAppInfo.g().dispatchDraw();
-                com.tsf.shell.manager.app.t.b();
+                com.tsf.shell.manager.app.TextureCache.b();
             }
         }
         if (this.d) {
@@ -193,7 +193,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
             if (this.l) {
                 this.k.a(this.j.b, 16);
                 if (b != 3) {
-                    com.tsf.shell.manager.app.t.b();
+                    com.tsf.shell.manager.app.TextureCache.b();
                     if (this.j.b.width != this.c.b()) {
                         this.c.a(this.j.b.width);
                     }
@@ -234,9 +234,9 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
     private j.a g() {
         j.a aVarC = com.tsf.shell.f.f.j.c(this.a);
         aVarC.a = this.a;
-        com.tsf.shell.manager.app.t.b(com.tsf.shell.f.f.j.c(), aVarC.b);
+        com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.j.c(), aVarC.b);
         super.dispatchDraw();
-        com.tsf.shell.manager.app.t.b();
+        com.tsf.shell.manager.app.TextureCache.b();
         return aVarC;
     }
 

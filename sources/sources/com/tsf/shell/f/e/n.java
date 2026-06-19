@@ -106,7 +106,7 @@ public class n implements b.a {
                 m = true;
             }
             c.position().setAll(i2, i3, 0.0f);
-            com.tsf.shell.manager.app.j.a(C);
+            com.tsf.shell.manager.app.TaskScheduler.a(C);
             com.censivn.C3DEngine.b.c.b.a(this);
         }
     }
@@ -123,7 +123,7 @@ public class n implements b.a {
             this.r.b();
             this.p = null;
             this.q = null;
-            com.tsf.shell.manager.app.j.b(C);
+            com.tsf.shell.manager.app.TaskScheduler.b(C);
             k = null;
             com.censivn.C3DEngine.b.c.b.b(this);
         }
