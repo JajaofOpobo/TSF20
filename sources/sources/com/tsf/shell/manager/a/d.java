@@ -28,7 +28,7 @@ public class d implements c.a {
     private e e;
     private a f;
     private HashMap<Integer, LauncherDrawerFolder3DInfo> b = new HashMap<>();
-    private boolean c = false;
+    private boolean _c = false;
     private boolean d = false;
     private ArrayList<com.tsf.shell.f.i.b.e.g> g = new ArrayList<>();
 
@@ -46,8 +46,8 @@ public class d implements c.a {
     }
 
     public void c() {
-        if (!this.c) {
-            this.c = true;
+        if (!this._c) {
+            this._c = true;
             com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.d.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -56,7 +56,7 @@ public class d implements c.a {
                         @Override // java.lang.Runnable
                         public void run() {
                             d.this.f.a(d.this.a((ArrayList<ItemInfo>) arrayListF));
-                            d.this.c = true;
+                            d.this._c = true;
                             d.this.d();
                         }
                     });
@@ -377,5 +377,15 @@ public class d implements c.a {
 
     @Override // com.tsf.shell.manager.a.c.a
     public void a() {
+    }
+
+    public static void a(String str) {
+    }
+
+    public static class c {
+        public static com.censivn.C3DEngine.api.element.TextureElement c() { return null; }
+        public static com.censivn.C3DEngine.api.element.TextureElement b() { return null; }
+        public static void a(com.tsf.shell.f.i.b.e.i iVar) {}
+        public static void b(com.tsf.shell.f.i.b.e.i iVar) {}
     }
 }

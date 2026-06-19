@@ -5,6 +5,8 @@ import com.tsf.shell.f.i.b.e.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public interface a {
+    static void a(int i, int i2) {}
+
     void a(i iVar, g gVar);
 
     void e();

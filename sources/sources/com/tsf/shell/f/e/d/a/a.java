@@ -9,10 +9,11 @@ public class a extends j {
 
     public a() {
         addChild(this.a);
+        final com.tsf.shell.f.e.d.a.a self = this;
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.d.a.a.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                a.this.a();
+                self.a();
             }
         });
         setAABBPX(-com.censivn.C3DEngine.b.b.A.a(150.0f), -com.censivn.C3DEngine.b.b.A.a(150.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(150.0f), com.censivn.C3DEngine.b.b.A.a(150.0f), 0.0f);
@@ -40,10 +41,11 @@ public class a extends j {
     }
 
     public void d() {
+        final com.tsf.shell.f.e.d.a.a self = this;
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.d.a.a.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
-                a.this.removeFromParent();
+                self.removeFromParent();
             }
         };
         dVar.f(com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(100.0f));

@@ -27,7 +27,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
+public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.H.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
     private static ArrayList<Integer> C;
     private static ArrayList<Integer> D;
     private static ArrayList<Integer> E;
@@ -361,24 +361,24 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
         this.O = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i.b.d.b.15
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
-                b.G.a((h.a) b.this);
-                b.G.a((com.censivn.C3DEngine.b.f.i) b.this);
+                com.tsf.shell.f.i.b.d.b.G.a((com.tsf.shell.f.e.H.a) b.this);
+                com.tsf.shell.f.i.b.d.b.G.a((com.censivn.C3DEngine.b.f.i) b.this);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                b.G.a(motionEvent, motionEvent2);
+                com.tsf.shell.f.i.b.d.b.G.a(motionEvent, motionEvent2);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
-                b.G.a(motionEvent);
+                com.tsf.shell.f.i.b.d.b.G.a(motionEvent);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                w.b();
-                if (b.this.K == b.b) {
+                com.tsf.shell.utils.w.b();
+                if (b.this.K == com.tsf.shell.f.i.b.d.b.b) {
                     b.this.aR();
                 } else {
                     b.this.m(true);
@@ -398,8 +398,8 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                w.b();
-                if (b.this.K == b.b) {
+                com.tsf.shell.utils.w.b();
+                if (b.this.K == com.tsf.shell.f.i.b.d.b.b) {
                     b.this.aR();
                 } else {
                     b.this.m(true);
@@ -409,8 +409,8 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
         this.Q = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i.b.d.b.17
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                w.b();
-                if (b.this.K == b.b) {
+                com.tsf.shell.utils.w.b();
+                if (b.this.K == com.tsf.shell.f.i.b.d.b.b) {
                     b.this.aR();
                 } else {
                     b.this.m(true);
@@ -475,24 +475,24 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             @Override // com.tsf.shell.f.i.A
             public void c(com.tsf.shell.f.i.B bVar) {
                 super.c(bVar);
-                if (b.this.K == b.a) {
+                if (b.this.K == com.tsf.shell.f.i.b.d.b.a) {
                     b.this.b((com.tsf.shell.f.i.b.e.b) bVar);
                     return;
                 }
                 int iA = b.this.o.a(bVar);
                 b.this.o.removeChild(bVar);
                 b.this.a((com.tsf.shell.f.i.b.e.b) bVar, false);
-                if (iA < b.l.K) {
+                if (iA < com.tsf.shell.f.i.b.d.b.l.K) {
                     b.this.aB();
-                    b.m.a(b.this);
-                    b.m.c(b.this);
+                    com.tsf.shell.f.i.b.d.b.m.a(b.this);
+                    com.tsf.shell.f.i.b.d.b.m.c(b.this);
                 }
             }
         };
         this.S = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.i.b.d.b.19
             @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
             public void a(int i, KeyEvent keyEvent) {
-                if (i == 4 && b.this.K == b.a && b.this.mouseEnabled() && !b.this.o.v()) {
+                if (i == 4 && b.this.K == com.tsf.shell.f.i.b.d.b.a && b.this.mouseEnabled() && !b.this.o.v()) {
                     b.this.m(true);
                 }
             }
@@ -560,7 +560,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
         bVarA.g(0.0f);
         bVarA.mouseEnabled(false);
         this.o.addChild(bVarA);
-        bVarA.setMouseEventListener(new a(bVarA, this));
+        bVarA.setMouseEventListener(new com.tsf.shell.f.i.b.d.a(bVarA, this));
         bVarA.a(this.W);
     }
 
@@ -583,9 +583,9 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
     /* JADX INFO: Access modifiers changed from: private */
     public void bc() {
         if (this.X) {
-            l.a(this, aN());
+            com.tsf.shell.f.i.b.d.b.l.a(this, aN());
         }
-        m.a(this);
+        com.tsf.shell.f.i.b.d.b.m.a(this);
         this.X = false;
     }
 
@@ -644,7 +644,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             }
         }
         com.tsf.shell.manager.o.b.a.a((com.censivn.C3DEngine.b.f.i) this, true);
-        l.a(this, aN());
+        com.tsf.shell.f.i.b.d.b.l.a(this, aN());
         b(0, 0, 0, 0);
         a((Runnable) null, false);
         if (this.c) {
@@ -761,7 +761,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
         } else {
             bVar.K().onUpdateContainer(K().id);
         }
-        bVar.setMouseEventListener(new a(bVar, this));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.b.d.a(bVar, this));
         bVar.a(this.W);
         this.W.a((com.censivn.C3DEngine.b.f.i) bVar);
     }
@@ -836,10 +836,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             com.censivn.C3DEngine.A.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i.b.d.b.20
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    b.l.a(b.this, str);
-                    b.l.a(str);
+                    com.tsf.shell.f.i.b.d.b.l.a(b.this, str);
+                    com.tsf.shell.f.i.b.d.b.l.a(str);
                     if (b.this.x) {
-                        b.m.a(b.this);
+                        com.tsf.shell.f.i.b.d.b.m.a(b.this);
                     }
                 }
             });
@@ -851,18 +851,18 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
     }
 
     public void aO() {
-        com.tsf.shell.d.a().a("WidgetFolderBox");
+        com.tsf.shell.D.a().a("WidgetFolderBox");
     }
 
     public void aP() {
-        com.tsf.shell.d.a().b("WidgetFolderBox");
+        com.tsf.shell.D.a().b("WidgetFolderBox");
     }
 
     public void c(int i) {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.b.21
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.d.a().b("WidgetFolderBox");
+        com.tsf.shell.D.a().b("WidgetFolderBox");
             }
         }, i);
     }
@@ -943,12 +943,12 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
             localToGlobal(Number3d.TEMPNUMBER3D);
             localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-            this.aa = com.tsf.shell.f.c.A(this);
+            this.aa = com.tsf.shell.f.c.A.a(this);
             ((com.censivn.C3DEngine.b.f.j) parent()).replaceChild(this, this.aa);
             position().setAllFrom(Number3d.TEMPNUMBER3D);
             scale().setAllFrom(Number3d.TEMPNUMBER3D2);
             if (aC()) {
-                this.ag = com.tsf.shell.manager.a.b.a();
+                this.ag = com.tsf.shell.manager.a.b.a(this);
                 com.tsf.shell.manager.a.b.b(Home.b());
             }
         }
@@ -957,7 +957,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             case 0:
                 dVar = new com.censivn.C3DEngine.b.g.d();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.a.b.c());
                 break;
             case 1:
                 dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.b.3
@@ -966,12 +966,12 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                         b.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.a.b.c());
                 break;
             default:
                 dVar = new com.censivn.C3DEngine.b.g.d();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new a.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.a.b.c());
                 break;
         }
         dVar.l(1.0f);
@@ -1008,10 +1008,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                 @Override // java.lang.Runnable
                 public void run() {
                     com.censivn.C3DEngine.b.g.d dVar;
-                    j jVar = b.l;
-                    j.N.alpha(0.0f);
-                    j jVar2 = b.l;
-                    j.O.alpha(0.0f);
+                    com.tsf.shell.f.i.b.d.j jVar = com.tsf.shell.f.i.b.d.b.l;
+                    com.tsf.shell.f.i.b.d.j.N.alpha(0.0f);
+                    com.tsf.shell.f.i.b.d.j jVar2 = com.tsf.shell.f.i.b.d.b.l;
+                    com.tsf.shell.f.i.b.d.j.O.alpha(0.0f);
                     if (b.this.aa != null) {
                         if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.A) {
                             com.tsf.shell.f.c.b.b bVarA = com.tsf.shell.manager.a.g.a.a(b.this.aa);
@@ -1074,10 +1074,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                         @Override // java.lang.Runnable
                         public void run() {
                             b.this.removeFromParent();
-                            b.l.F.removeFromParent();
+                            com.tsf.shell.f.i.b.d.b.l.F.removeFromParent();
                             if (b.this.aa != null) {
                                 ((com.censivn.C3DEngine.b.f.j) b.this.aa.parent()).replaceChild(b.this.aa, b.this);
-                                com.tsf.shell.f.c.A(b.this.aa);
+                                com.tsf.shell.f.c.A.a(b.this.aa);
                                 b.this.aa = null;
                             } else {
                                 com.tsf.shell.manager.a.h.n().a(b.this);
@@ -1087,20 +1087,20 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                                 if (arrayListAv != null && arrayListAv.size() > 0) {
                                     Iterator<com.tsf.shell.f.i.C> it = arrayListAv.iterator();
                                     while (it.hasNext()) {
-                                        ((a) it.next().getMouseEventListener()).a();
+                                        ((com.tsf.shell.f.i.b.d.a) it.next().getMouseEventListener()).a();
                                     }
                                 }
-                                if (!((a) b.this.N.getMouseEventListener()).a()) {
+                                if (!((com.tsf.shell.f.i.b.d.a) b.this.N.getMouseEventListener()).a()) {
                                     b.this.N.getMouseEventListener().d(com.censivn.C3DEngine.a.d.d().f());
                                 }
                                 b.this.N.mouseEnabled(true);
                                 b.this.N = null;
                             }
                             b.this.mouseSkip(false);
-                            b.l.l();
+                            com.tsf.shell.f.i.b.d.b.l.l();
                             com.tsf.shell.manager.a.j.b();
                             b.this.bh();
-                            b.this.K = b.b;
+                            b.this.K = com.tsf.shell.f.i.b.d.b.b;
                             b.this.ab = false;
                             if (b.this.aC() && !b.this.ag) {
                                 com.tsf.shell.manager.a.b.c(Home.b());
@@ -1168,7 +1168,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
     }
 
     public int b(float f, float f2) {
-        float[] fArrB = x.b(f, f2);
+        float[] fArrB = com.tsf.shell.utils.x.b(f, f2);
         float f3 = fArrB[0];
         float f4 = fArrB[1];
         int iA = this.o.a(f3, f4);
@@ -1258,7 +1258,8 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             com.tsf.shell.f.i.b.e.b bVar = null;
             int i8 = iAW - 1;
             while (i8 > -1) {
-                final com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) this.o.children().get((iAW - i8) - 1);
+                com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) this.o.children().get((iAW - i8) - 1);
+                final com.tsf.shell.f.i.b.e.b bVar2Final = bVar2;
                 bVar2.mouseEnabled(false);
                 com.censivn.C3DEngine.b.g.d dVar = null;
                 if (i8 < i7) {
@@ -1271,8 +1272,8 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                     dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.b.5
                         @Override // com.censivn.C3DEngine.b.g.d
                         public void a(float f) {
-                            if (bVar2.aJ() != 0.0f) {
-                                bVar2.g(1.0f - f);
+                            if (bVar2Final.aJ() != 0.0f) {
+                                bVar2Final.g(1.0f - f);
                             }
                         }
                     };
@@ -1309,13 +1310,13 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
                         dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.b.6
                             @Override // com.censivn.C3DEngine.b.g.d
                             public void a() {
-                                bVar2.visible(false);
+                                bVar2Final.visible(false);
                             }
 
                             @Override // com.censivn.C3DEngine.b.g.d
                             public void a(float f) {
-                                if (bVar2.aJ() != 0.0f) {
-                                    bVar2.g(1.0f - f);
+                                if (bVar2Final.aJ() != 0.0f) {
+                                    bVar2Final.g(1.0f - f);
                                 }
                             }
                         };
@@ -1456,9 +1457,9 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
             bk();
             return;
         }
-        final int i = iAW > l.c ? iAW - l.c : 0;
+        final int i0 = iAW > l.c ? iAW - l.c : 0;
         ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = l.c().folder.sampleList;
-        for (int i2 = 0; i2 < i; i2++) {
+        for (int i2 = 0; i2 < i0; i2++) {
             com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) this.o.children().get((i - 1) - i2);
             if (i2 < arrayList.size()) {
                 bVar.alpha(255.0f);
@@ -1470,7 +1471,8 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
         int i3 = iAW - 1;
         while (true) {
             final int i4 = i3;
-            if (i4 > i - 1) {
+            if (i4 > i0 - 1) {
+                final int i9 = i0;
                 final com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) this.o.children().get(i4);
                 bVar2.alpha(255.0f);
                 Number3d number3dD = d((iAW - i4) - 1);
@@ -1483,7 +1485,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
 
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
-                        if (i4 == i) {
+                        if (i4 == i9) {
                             b.this.bk();
                         }
                         bVar2.mouseEnabled(true);
@@ -1837,7 +1839,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, m, 
 
     @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
-        for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList) this.o.children().clone()) {
+        for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList<com.censivn.C3DEngine.b.f.i>) this.o.children().clone()) {
             if (iVar instanceof com.tsf.shell.f.i.B) {
                 com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) iVar;
                 bVar.B();

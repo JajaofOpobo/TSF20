@@ -12,7 +12,7 @@ import com.tsf.shell.utils.x;
 public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b.c.e.a {
     public static int b = -1725816286;
     private j d;
-    private com.tsf.shell.f.e.c.a e;
+    private com.tsf.shell.f.e.c.A e;
     private c f;
     private j g;
     private e k;
@@ -47,7 +47,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
         return this.s;
     }
 
-    public com.tsf.shell.f.e.c.a b() {
+    public com.tsf.shell.f.e.c.A b() {
         return this.e;
     }
 

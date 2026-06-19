@@ -39,26 +39,25 @@ public class f {
         a(resolveInfo);
     }
 
-    public void a() {
+    public void a_() {
         try {
-            com.tsf.shell.f.i.b.e.g gVarA = com.tsf.shell.manager.a.w.a().a(this.a.getComponent());
-            if (gVarA.K() != null) {
-                ((LauncherShortcutAppInfo) gVarA.K()).applicationOnClick();
-            }
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.1
-                @Override // java.lang.Runnable
-                public void run() {
-                    Home.b().a(f.this.a, (Object) null);
-                }
-            });
+            Home.b().a(this.a, (Object) null);
         } catch (Exception e) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.2
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.1
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.activity_not_found));
                 }
             });
         }
+    }
+
+    public static a a() {
+        return null;
+    }
+    public static void a(int i, int i2, int i3, int i4) {}
+    public static class a {
+        public void show() {}
     }
 
     public TextureElement b() {

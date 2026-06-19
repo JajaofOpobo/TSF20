@@ -130,6 +130,11 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         });
     }
 
+    public class c extends C {
+        public c() {
+        }
+    }
+
     private void S() {
         a = (int) ((com.censivn.C3DEngine.b.b.A.F * 0.28f) + (com.censivn.C3DEngine.b.b.A.b * 90.0f));
         b = (int) ((com.censivn.C3DEngine.b.b.A.G * 0.28f) + (com.censivn.C3DEngine.b.b.A.b * 90.0f));
@@ -1481,11 +1486,11 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         public void a(l lVar) {
             if (this.i) {
                 if (lVar == null) {
-                    lVar = com.tsf.shell.manager.a.v.a.a.h();
+                    lVar = com.tsf.shell.manager.a.v.a.C0126a.h();
                 }
                 this.c = lVar;
                 this.c.d();
-                com.tsf.shell.manager.a.v.a.a.a2(this.c);
+                com.tsf.shell.manager.a.v.a.C0126a.a2(this.c);
                 this.h = false;
                 this.i = false;
                 this.f = n.this.m.g;
@@ -1750,7 +1755,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             n.this.ae();
             n.this.g();
-            com.tsf.shell.manager.a.v.a.a();
+            com.tsf.shell.manager.a.v.a.C0126a();
             h.a(false);
             com.tsf.shell.manager.a.n.j();
         }
@@ -2756,4 +2761,6 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
     }
+
+    public void a(com.tsf.shell.f.i.C cVar, com.censivn.C3DEngine.b.f.i iVar, java.util.ArrayList<Integer> arrayList, java.util.ArrayList<Integer> arrayList2) {}
 }

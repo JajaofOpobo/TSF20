@@ -16,13 +16,14 @@ public abstract class a extends b {
                 launcherShortcut3DInfo.onUpdateName(gVar.bd().e, false);
             }
         }
+        final com.tsf.shell.f.i.b.e.a self = this;
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.i.b.e.a.1
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.k();
+                        self.k();
                     }
                 });
             }

@@ -78,7 +78,7 @@ public class k {
         if (this.e.K().container != -1 || (this.e.K() instanceof LauncherDrawerFolder3DInfo)) {
             Number3d.TEMPNUMBER3D.reset();
             this.e.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.u = com.tsf.shell.f.c.A(this.e);
+            this.u = com.tsf.shell.f.c.A.a(this.e);
             ((com.censivn.C3DEngine.b.f.j) this.e.parent()).replaceChild(this.e, this.u);
             this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
         }
@@ -101,8 +101,8 @@ public class k {
             }
             this.s = false;
         }
-        b.m.b(this.c);
-        com.tsf.shell.d.a().a("LineViewer");
+        com.tsf.shell.f.i.b.d.b.m.b(this.c);
+        com.tsf.shell.D.a().a("LineViewer");
         this.c.o(false);
         this.e.mouseSkip(true);
         this.e.removeFromParent();
@@ -156,7 +156,7 @@ public class k {
                         k.this.e.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
-                            com.tsf.shell.f.c.A(k.this.u);
+                            com.tsf.shell.f.c.A.a(k.this.u);
                             k.this.u = null;
                         } else {
                             gVarN.a(k.this.e);
@@ -164,7 +164,7 @@ public class k {
                         k.this.e.mouseSkip(false);
                         k.this.c.o(true);
                         com.tsf.shell.manager.a.j.b();
-                        com.tsf.shell.d.a().b("LineViewer");
+                        com.tsf.shell.D.a().b("LineViewer");
                         k.this.i = 0;
                         k.this.f();
                         com.tsf.shell.manager.a.b.c(Home.b());
@@ -262,7 +262,7 @@ public class k {
         if (this.i <= b && this.a) {
             float x = motionEvent2.getX();
             float y = motionEvent2.getY();
-            int iB = (int) (x.b(x, y, this.l, this.m) / 5.0f);
+            int iB = (int) (com.tsf.shell.utils.x.b(x, y, this.l, this.m) / 5.0f);
             if (iB >= 1) {
                 float f = (x - this.l) / iB;
                 float f2 = (y - this.m) / iB;

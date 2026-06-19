@@ -28,7 +28,7 @@ public abstract class ItemInfo {
     public int itemType;
     public String themeResourceName;
     public String title;
-    private b widget;
+    private com.tsf.shell.f.i.b.b.b widget;
     public int id = -1;
     public int container = -1;
     public int screen = 0;
@@ -85,11 +85,11 @@ public abstract class ItemInfo {
         this.itemType = i;
     }
 
-    public void setWidget(b bVar) {
+    public void setWidget(com.tsf.shell.f.i.b.b.b bVar) {
         this.widget = bVar;
     }
 
-    public b getWidget() {
+    public com.tsf.shell.f.i.b.b.b getWidget() {
         return this.widget;
     }
 
@@ -104,7 +104,7 @@ public abstract class ItemInfo {
         contentValues.put("scale", this.scale + "," + this.scaleH);
     }
 
-    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
+    public void onUpdateLayoutInformation(ContentValues contentValues, com.tsf.shell.f.i.b.b.b bVar) {
         if (!(bVar instanceof a) && bVar != null) {
             if (com.censivn.C3DEngine.b.b.A.O) {
                 this.scale = bVar.u();

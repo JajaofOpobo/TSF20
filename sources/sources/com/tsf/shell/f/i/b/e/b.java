@@ -267,7 +267,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
     }
 
     public void l() {
-        w.b();
+        com.tsf.shell.utils.w.b();
     }
 
     @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
@@ -310,7 +310,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
                 public void run() {
                     b.this.u.b.removeFromParent();
                     b.this.k.visible(true);
-                    b.a(b.this.u);
+                    com.tsf.shell.f.i.b.e.b.a(com.tsf.shell.f.i.b.e.b.this.u);
                     b.this.u = null;
                 }
             });

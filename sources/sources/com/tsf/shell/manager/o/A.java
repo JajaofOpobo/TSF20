@@ -279,7 +279,7 @@ public class A {
 
     public void a(Canvas canvas, Bitmap bitmap, boolean z) {
         if (bitmap.getWidth() != this.H || bitmap.getHeight() != this.I) {
-            l.a(bitmap, "drawIconToCanvas icon size error  w:" + bitmap.getWidth() + "   h:" + bitmap.getHeight() + "  sw:" + this.H + "  sh:" + this.I);
+            com.tsf.shell.utils.l.a(bitmap, "drawIconToCanvas icon size error  w:" + bitmap.getWidth() + "   h:" + bitmap.getHeight() + "  sw:" + this.H + "  sh:" + this.I);
         }
         canvas.drawBitmap(bitmap, this.D, this.E, (Paint) null);
         if (z) {

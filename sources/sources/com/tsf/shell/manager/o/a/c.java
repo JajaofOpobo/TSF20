@@ -9,7 +9,6 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.b.e;
 import java.util.ArrayList;
@@ -33,29 +32,29 @@ public class c {
     }
 
     public static void a() {
-        b.a = com.censivn.C3DEngine.A.d().getResources().getDimensionPixelSize(b.c.shortcut_text_size);
+        com.tsf.shell.manager.o.a.b.a = com.censivn.C3DEngine.A.d().getResources().getDimensionPixelSize(com.tsf.b.c.shortcut_text_size);
         c = new ArrayList<>();
         c.add(new d(-1, new a()));
         a aVar = new a();
         b bVar = new b(0, aVar);
-        aVar.g = b.a;
+        aVar.g = com.tsf.shell.manager.o.a.b.a;
         aVar.c = true;
         aVar.d = false;
         c.add(bVar);
         a aVar2 = new a();
         b bVar2 = new b(1, aVar2);
-        aVar2.g = b.a;
+        aVar2.g = com.tsf.shell.manager.o.a.b.a;
         aVar2.c = true;
         aVar2.d = true;
         c.add(bVar2);
         a aVar3 = new a();
         b bVar3 = new b(2, aVar3);
-        aVar3.g = b.a;
+        aVar3.g = com.tsf.shell.manager.o.a.b.a;
         aVar3.a = true;
         c.add(bVar3);
         a aVar4 = new a();
         b bVar4 = new b(3, aVar4);
-        aVar4.g = b.a;
+        aVar4.g = com.tsf.shell.manager.o.a.b.a;
         aVar4.a = true;
         aVar4.d = true;
         c.add(bVar4);
@@ -88,7 +87,7 @@ public class c {
     private static b a(int i, boolean z) {
         a aVar = new a();
         b bVar = new b(c.size(), aVar);
-        aVar.g = b.a;
+        aVar.g = com.tsf.shell.manager.o.a.b.a;
         aVar.a = true;
         aVar.b = i;
         aVar.d = z;

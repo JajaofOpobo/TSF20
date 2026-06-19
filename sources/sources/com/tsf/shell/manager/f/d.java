@@ -16,6 +16,11 @@ import com.censivn.C3DEngine.b.f.n;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d implements e.a {
+    public static class b extends com.censivn.C3DEngine.b.c.d.b {
+        public void a() {
+        }
+    }
+
     private g a;
     private j b;
     private j c;

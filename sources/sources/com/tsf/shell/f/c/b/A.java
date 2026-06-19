@@ -423,13 +423,13 @@ public class A extends d implements com.tsf.shell.f.i.A.InterfaceC0113a {
         }
     }
 
-    private a.b b(i iVar) {
+    private com.tsf.shell.f.c.b.a.a.b b(i iVar) {
         this.h.reset();
         iVar.localToGlobal(this.h);
         return a(this.h.x, this.h.y);
     }
 
-    private a.b a(float f, float f2) {
+    private com.tsf.shell.f.c.b.a.a.b a(float f, float f2) {
         this.h.setAll(f, f2, 0.0f);
         this.i.setAllFrom(this.h);
         globalToLocal(this.i);

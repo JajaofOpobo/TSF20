@@ -43,6 +43,10 @@ public class c {
         }
     }
 
+    static class b {
+        public String o;
+    }
+
     public static void a(final String str) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.r.c.c.1
             @Override // java.lang.Runnable

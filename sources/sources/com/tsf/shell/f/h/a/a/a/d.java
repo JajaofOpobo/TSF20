@@ -9,12 +9,12 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
-import com.tsf.shell.manager.c.a.a.a;
+
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends j {
     private String b;
-    private a.b f;
+    private com.tsf.shell.manager.c.a.a.a.b f;
     private TextureElement a = new TextureElement(0, false);
     private boolean c = false;
     private com.censivn.C3DEngine.b.f.a.a d = new com.censivn.C3DEngine.b.f.a.a(2, 1, 1, true);
@@ -36,7 +36,7 @@ public class d extends j {
         f();
     }
 
-    public void a(a.b bVar) {
+    public void a(com.tsf.shell.manager.c.a.a.a.b bVar) {
         bVar.a(this);
         this.f = bVar;
         this.b = bVar.c();

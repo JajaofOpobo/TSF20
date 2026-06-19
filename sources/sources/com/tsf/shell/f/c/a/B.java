@@ -249,7 +249,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                 f = 150.0f;
             }
             iVar.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g.c.a.a aVar = new com.censivn.C3DEngine.b.g.c.a.a(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
+            com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     iVar.visible(false);
@@ -290,7 +290,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                     }
                     iVar.visible(true);
                     iVar.mouseEnabled(false);
-                    com.censivn.C3DEngine.b.g.c.a.a aVar = new com.censivn.C3DEngine.b.g.c.a.a(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
+                    com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
                         @Override // com.censivn.C3DEngine.b.g.d
                         public void a() {
                             iVar.mouseEnabled(true);

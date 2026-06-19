@@ -19,12 +19,12 @@ import java.lang.ref.WeakReference;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class f {
     private com.tsf.shell.plugin.themepicker.utils.c a;
-    private c.a b;
+    private com.tsf.shell.plugin.themepicker.utils.c.a b;
     protected Resources d;
     private Bitmap e;
     private boolean f = true;
     private boolean g = false;
-    protected boolean c = false;
+    protected boolean c_ = false;
     private final Object h = new Object();
 
     protected abstract Bitmap a(Object obj);
@@ -53,7 +53,7 @@ public abstract class f {
         this.e = BitmapFactory.decodeResource(this.d, i);
     }
 
-    public void a(o oVar, c.a aVar) {
+    public void a(o oVar, com.tsf.shell.plugin.themepicker.utils.c.a aVar) {
         this.b = aVar;
         this.a = com.tsf.shell.plugin.themepicker.utils.c.a(oVar, this.b);
         new c().c(1);
@@ -109,7 +109,7 @@ public abstract class f {
             com.tsf.shell.plugin.themepicker.e.a("ImageWorker", "doInBackground - starting work");
             String strValueOf = String.valueOf(this.e);
             synchronized (f.this.h) {
-                while (f.this.c && !c()) {
+                    while (f.this.c_ && !c()) {
                     try {
                         f.this.h.wait();
                     } catch (InterruptedException e) {
@@ -199,8 +199,8 @@ public abstract class f {
     public void b(boolean z) {
         Log.w("", "setPauseWork--------------------------:" + z);
         synchronized (this.h) {
-            this.c = z;
-            if (!this.c) {
+            this.c_ = z;
+            if (!this.c_) {
                 this.h.notifyAll();
             }
         }

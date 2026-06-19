@@ -33,7 +33,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
     }
 
     public void a(i iVar) {
-        if (iVar instanceof c) {
+        if (iVar instanceof C) {
             C cVar = (C) iVar;
             if (this.c) {
                 cVar.am();
@@ -59,7 +59,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
             this.c = true;
             com.censivn.C3DEngine.b.c.b.a(this);
             for (i iVar : this.d.b()) {
-                if (iVar instanceof c) {
+                if (iVar instanceof C) {
                     ((C) iVar).am();
                 }
             }
@@ -69,7 +69,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
     }
 
     private void j() {
-        this.a = com.tsf.shell.manager.a.q.a(this.a, String.format(x.c(b.i.text_multi_select_title), Integer.valueOf(this.b.size())));
+        this.a = com.tsf.shell.manager.a.q.a(this.a, String.format(x.c(com.tsf.b.i.text_multi_select_title), Integer.valueOf(this.b.size())));
     }
 
     private void k() {
@@ -93,7 +93,7 @@ public class A implements com.censivn.C3DEngine.b.c.b.a {
             this.c = false;
             com.censivn.C3DEngine.b.c.b.b(this);
             for (i iVar : this.d.b()) {
-                if (iVar instanceof c) {
+                if (iVar instanceof C) {
                     ((C) iVar).an();
                 }
             }

@@ -252,7 +252,7 @@ public class C extends B {
         if (as() && z() != null) {
             g gVarZ = z();
             if (gVarZ.c(this)) {
-                ArrayList<c> arrayListAw = aw();
+                ArrayList<C> arrayListAw = aw();
                 com.censivn.C3DEngine.b.h.b.c cVar = new com.censivn.C3DEngine.b.h.b.c(gVarZ, true);
                 if (400 > com.censivn.C3DEngine.b.b.A.D) {
                     i = (com.censivn.C3DEngine.b.b.A.D / 2) - 20;
@@ -260,8 +260,8 @@ public class C extends B {
                     i = VEasing.Back.easeIn;
                 }
                 cVar.a(i, i);
-                ArrayList<b> arrayList = new ArrayList<>();
-                Iterator<c> it = arrayListAw.iterator();
+                ArrayList<B> arrayList = new ArrayList<>();
+                Iterator<C> it = arrayListAw.iterator();
                 while (it.hasNext()) {
                     arrayList.add(it.next());
                 }
@@ -275,7 +275,7 @@ public class C extends B {
         if (as()) {
             j jVar = (j) parent();
             int childIndexOf = jVar.getChildIndexOf(this);
-            ArrayList<c> arrayListAw = aw();
+            ArrayList<C> arrayListAw = aw();
             int size = arrayListAw.size();
             for (int i = 0; i < size; i++) {
                 C cVar = arrayListAw.get(i);

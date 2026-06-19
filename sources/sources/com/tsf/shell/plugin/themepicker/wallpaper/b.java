@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.B;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;

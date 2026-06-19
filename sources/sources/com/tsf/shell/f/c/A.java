@@ -3,6 +3,8 @@ package com.tsf.shell.f.c;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.f.c.a.f;
 import com.tsf.shell.f.c.b.e;
+import com.tsf.shell.f.i.B;
+import com.tsf.shell.f.i.b.e.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {
@@ -27,6 +29,13 @@ public class A {
 
     public int c() {
         return this.c;
+    }
+
+    public static b a(B bVar) {
+        return null;
+    }
+
+    public static void a(b bVar) {
     }
 
     public int a(int i) {

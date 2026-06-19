@@ -185,6 +185,12 @@ public class ShellProvider extends ContentProvider {
         }
     }
 
+    public static class a extends A {
+        a(Context context) {
+            super(context);
+        }
+    }
+
     public static class A extends SQLiteOpenHelper {
         private int a;
         private int b;

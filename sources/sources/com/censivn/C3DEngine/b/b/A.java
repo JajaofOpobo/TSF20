@@ -170,6 +170,21 @@ public class A {
 
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:24:0x0088 -> B:28:0x0024). Please report as A decompilation issue!!! */
     @SuppressLint({"NewApi"})
+    public static class a {
+    }
+
+    public static class b {
+    }
+
+    public static class c {
+    }
+
+    public static class d {
+    }
+
+    public static class e {
+    }
+
     public static void b(Activity activity) {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         Display defaultDisplay = activity.getWindowManager().getDefaultDisplay();

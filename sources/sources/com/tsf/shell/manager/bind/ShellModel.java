@@ -68,7 +68,7 @@ public class ShellModel extends BroadcastReceiver {
         this.p = Build.VERSION.SDK_INT < 9 ? true : Environment.isExternalStorageRemovable();
         this.o = new com.tsf.shell.manager.bind.b();
         this.a = new com.tsf.shell.manager.a.a();
-        this.e = this.d.getResources().getInteger(b.f.config_allAppsBatchLoadDelay);
+        this.e = this.d.getResources().getInteger(com.tsf.b.f.config_allAppsBatchLoadDelay);
     }
 
     public static void a(String str) {
@@ -140,7 +140,7 @@ public class ShellModel extends BroadcastReceiver {
     public static class a {
         public static byte[] a(ItemInfo itemInfo) {
             byte[] blob;
-            Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.e.a(itemInfo.id, false), null, null, null, null);
+            Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(com.tsf.shell.g.e.a(itemInfo.id, false), null, null, null, null);
             try {
                 cursorQuery.moveToNext();
                 blob = cursorQuery.getBlob(cursorQuery.getColumnIndexOrThrow("icon"));
@@ -179,7 +179,7 @@ public class ShellModel extends BroadcastReceiver {
                     synchronized (ShellModel.f) {
                         ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
                         if (z) {
-                            contentResolver.insert(g.e.a, contentValues);
+                            contentResolver.insert(com.tsf.shell.g.e.a, contentValues);
                             ShellModel.g.put(Integer.valueOf(itemInfo.id), itemInfo);
                             switch (itemInfo.itemType) {
                                 case 1:
@@ -228,7 +228,7 @@ public class ShellModel extends BroadcastReceiver {
                             }
                             ShellModel.a("insert");
                         } else {
-                            contentResolver.update(g.e.a(itemInfo.id, false), contentValues, null, null);
+                            contentResolver.update(com.tsf.shell.g.e.a(itemInfo.id, false), contentValues, null, null);
                         }
                         contentValues.clear();
                         if (runnable != null) {
@@ -244,11 +244,11 @@ public class ShellModel extends BroadcastReceiver {
                 @Override // java.lang.Runnable
                 public void run() {
                     ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
-                    contentResolver.delete(g.e.a(itemInfo.id, false), null, null);
+                    contentResolver.delete(com.tsf.shell.g.e.a(itemInfo.id, false), null, null);
                     synchronized (ShellModel.f) {
                         switch (itemInfo.itemType) {
                             case 1:
-                                contentResolver.delete(g.e.a, "container=" + itemInfo.id, null);
+                                contentResolver.delete(com.tsf.shell.g.e.a, "container=" + itemInfo.id, null);
                                 ShellModel.h.remove(Integer.valueOf(itemInfo.id));
                                 switch (itemInfo.container) {
                                     case -5:
@@ -499,9 +499,9 @@ public class ShellModel extends BroadcastReceiver {
             a();
             synchronized (ShellModel.f) {
                 ArrayList arrayList = new ArrayList();
-                Cursor cursorQuery = contentResolver.query(g.e.a, null, null, null, "itemType ASC");
+                Cursor cursorQuery = contentResolver.query(com.tsf.shell.g.e.a, null, null, null, "itemType ASC");
                 try {
-                    Uri uri = g.e.a;
+                    Uri uri = com.tsf.shell.g.e.a;
                     int columnIndexOrThrow = cursorQuery.getColumnIndexOrThrow("_id");
                     int columnIndexOrThrow2 = cursorQuery.getColumnIndexOrThrow("intent");
                     int columnIndexOrThrow3 = cursorQuery.getColumnIndexOrThrow("title");
@@ -535,9 +535,9 @@ public class ShellModel extends BroadcastReceiver {
                                 switch (i) {
                                     case 1:
                                         LauncherFolder3DInfo launcherFolder3DInfoB = ShellModel.b(ShellModel.h, Integer.valueOf(i2));
-                                        com.tsf.shell.manager.r.a.a(launcherFolder3DInfoB, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        com.tsf.shell.manager.r.A.a(launcherFolder3DInfoB, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherFolder3DInfoB.title = cursorQuery.getString(columnIndexOrThrow3);
-                                        launcherFolder3DInfoB.title = (launcherFolder3DInfoB.title == null || launcherFolder3DInfoB.title.length() == 0) ? x.c(b.i.widget_folder) : launcherFolder3DInfoB.title;
+                                        launcherFolder3DInfoB.title = (launcherFolder3DInfoB.title == null || launcherFolder3DInfoB.title.length() == 0) ? x.c(com.tsf.b.i.widget_folder) : launcherFolder3DInfoB.title;
                                         int i4 = cursorQuery.getInt(columnIndexOrThrow4);
                                         launcherFolder3DInfoB.container = i4;
                                         launcherFolder3DInfoB.config = cursorQuery.getString(columnIndexOrThrow14);
@@ -567,7 +567,7 @@ public class ShellModel extends BroadcastReceiver {
                                     case 2:
                                     case 7:
                                         LauncherShortcut3DInfo launcherShortcut3DInfoA = com.tsf.shell.manager.l.a.a(i);
-                                        com.tsf.shell.manager.r.a.a(launcherShortcut3DInfoA, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        com.tsf.shell.manager.r.A.a(launcherShortcut3DInfoA, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherShortcut3DInfoA.title = cursorQuery.getString(columnIndexOrThrow3);
                                         launcherShortcut3DInfoA.title = launcherShortcut3DInfoA.title == null ? "" : launcherShortcut3DInfoA.title;
                                         launcherShortcut3DInfoA.packagename = cursorQuery.getString(columnIndexOrThrow13);
@@ -623,7 +623,7 @@ public class ShellModel extends BroadcastReceiver {
                                             } else {
                                                 launcherAppWidgetInfo = new LauncherAppWidgetInfo(i6, appWidgetInfo.provider);
                                             }
-                                            com.tsf.shell.manager.r.a.a(launcherAppWidgetInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                            com.tsf.shell.manager.r.A.a(launcherAppWidgetInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                             launcherAppWidgetInfo.container = cursorQuery.getInt(columnIndexOrThrow4);
                                             if (appWidgetInfo != null) {
                                                 String strFlattenToString = appWidgetInfo.provider.flattenToString();
@@ -644,7 +644,7 @@ public class ShellModel extends BroadcastReceiver {
                                         break;
                                     case 5:
                                         LauncherWidget3DInfo launcherWidget3DInfo = new LauncherWidget3DInfo();
-                                        com.tsf.shell.manager.r.a.a(launcherWidget3DInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
+                                        com.tsf.shell.manager.r.A.a(launcherWidget3DInfo, cursorQuery, i2, columnIndexOrThrow7, columnIndexOrThrow8, columnIndexOrThrow9, columnIndexOrThrow11, columnIndexOrThrow12, columnIndexOrThrow15, columnIndexOrThrow10);
                                         launcherWidget3DInfo.packagename = cursorQuery.getString(columnIndexOrThrow13);
                                         launcherWidget3DInfo.config = cursorQuery.getString(columnIndexOrThrow14);
                                         if (launcherWidget3DInfo.packagename.equals("com.tsf.shell")) {
@@ -738,7 +738,7 @@ public class ShellModel extends BroadcastReceiver {
                     for (Integer num : ShellModel.h.keySet()) {
                         LauncherFolder3DInfo launcherFolder3DInfo = (LauncherFolder3DInfo) ShellModel.h.get(num);
                         if (launcherFolder3DInfo.id == -1) {
-                            com.censivn.C3DEngine.A.d().getContentResolver().delete(g.e.a, "container=" + num, null);
+                            com.censivn.C3DEngine.A.d().getContentResolver().delete(com.tsf.shell.g.e.a, "container=" + num, null);
                             for (ItemInfo itemInfo5 : launcherFolder3DInfo.getItemInfo()) {
                                 ShellModel.g.remove(Integer.valueOf(itemInfo5.id));
                                 itemInfo5.unbind();
@@ -752,11 +752,11 @@ public class ShellModel extends BroadcastReceiver {
                         ShellModel.h.remove((Integer) it6.next());
                     }
                     if (arrayList.size() > 0) {
-                        ContentProviderClient contentProviderClientAcquireContentProviderClient = contentResolver.acquireContentProviderClient(g.e.a);
+                        ContentProviderClient contentProviderClientAcquireContentProviderClient = contentResolver.acquireContentProviderClient(com.tsf.shell.g.e.a);
                         Iterator it7 = arrayList.iterator();
                         while (it7.hasNext()) {
                             try {
-                                contentProviderClientAcquireContentProviderClient.delete(g.e.a(((Integer) it7.next()).intValue(), false), null, null);
+                                contentProviderClientAcquireContentProviderClient.delete(com.tsf.shell.g.e.a(((Integer) it7.next()).intValue(), false), null, null);
                             } catch (RemoteException e3) {
                             }
                         }

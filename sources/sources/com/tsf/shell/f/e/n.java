@@ -29,8 +29,14 @@ public class n implements b.a {
     private static com.censivn.C3DEngine.b.g._b.b l;
     private static int n;
     private static int o;
+    private static com.censivn.C3DEngine.b.f.i C;
+    private static com.censivn.C3DEngine.b.f.i D;
+    private static com.censivn.C3DEngine.b.f.i E;
+    private static com.censivn.C3DEngine.b.f.i F;
+    private static TextureElement A;
+    private static TextureElement B;
     private com.censivn.C3DEngine.b.f.j p;
-    private A q;
+    private a q;
     private H r;
     private boolean s = false;
     private static int g = 5;
@@ -46,7 +52,7 @@ public class n implements b.a {
         p();
     }
 
-    public n(com.censivn.C3DEngine.b.f.j jVar, A aVar) {
+    public n(com.censivn.C3DEngine.b.f.j jVar, a aVar) {
         this.p = jVar;
         this.q = aVar;
     }
@@ -81,7 +87,7 @@ public class n implements b.a {
             dVar.a(255);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            dVar.a((com.censivn.C3DEngine.b.g.b) new a.C0030a.c());
+            dVar.a((com.censivn.C3DEngine.b.g.b) new com.censivn.C3DEngine.b.g.A.C0030a.C());
             com.censivn.C3DEngine.b.g.c.a(c, 380, dVar);
             n = i2;
             o = i3;
@@ -131,12 +137,12 @@ public class n implements b.a {
     public void o() {
         if (b == null) {
             ArrayList arrayList = new ArrayList();
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_arrangement));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_gather));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.text_delete));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_create_folder));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(b.i.pop_menu_mulit_choice));
-            Bitmap bitmapA = o.a(arrayList);
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_arrangement));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_gather));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.text_delete));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_create_folder));
+            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_mulit_choice));
+            Bitmap bitmapA = com.tsf.shell.f.e.o.a(arrayList);
             b = com.censivn.C3DEngine.A.g().a(bitmapA, true);
             bitmapA.recycle();
             f.textures().clear();
@@ -149,9 +155,9 @@ public class n implements b.a {
             ThemeManager.mix.lasso.addElementListener(new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e.n.2
                 @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
                 public void onReloadTheme(ThemeDescription themeDescription) {
-                    if (n.b != null) {
-                        com.censivn.C3DEngine.A.g().a(n.b);
-                        TextureElement unused = n.b = null;
+                    if (com.tsf.shell.f.e.n.b != null) {
+                        com.censivn.C3DEngine.A.g().a(com.tsf.shell.f.e.n.b);
+                        TextureElement unused = com.tsf.shell.f.e.n.b = null;
                     }
                     n.this.o();
                 }
@@ -171,16 +177,16 @@ public class n implements b.a {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f2) {
                 for (int i3 = 0; i3 < 5; i3++) {
-                    com.censivn.C3DEngine.b.f.a.b bVarA2 = n.f.a(i3);
+                    com.censivn.C3DEngine.b.f.a.b bVarA2 = com.tsf.shell.f.e.n.f.a(i3);
                     bVarA2.m.spX(iArr[i3][0] * f2);
                     bVarA2.m.spY(iArr[i3][1] * f2);
                     bVarA2.f();
                 }
-                n.f.alpha((int) (255.0f * f2));
+                com.tsf.shell.f.e.n.f.alpha((int) (255.0f * f2));
             }
         };
         dVar.a(255);
-        dVar.a((com.censivn.C3DEngine.b.g.b) new a.C0030a.c());
+        dVar.a((com.censivn.C3DEngine.b.g.b) new com.censivn.C3DEngine.b.g.A.C0030a.C());
         com.censivn.C3DEngine.b.g.c.a(l, 700, dVar);
         c.addChild(F);
     }
@@ -209,12 +215,12 @@ public class n implements b.a {
         d = new com.censivn.C3DEngine.b.f.a.a(6, 40, 240, 320) { // from class: com.tsf.shell.f.e.n.4
             @Override // com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
-                if (n.k != null) {
+                if (com.tsf.shell.f.e.n.k != null) {
                     com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.n.4.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            if (n.k != null) {
-                                n.k.a(-1, true);
+                            if (com.tsf.shell.f.e.n.k != null) {
+                                com.tsf.shell.f.e.n.k.a(-1, true);
                             }
                         }
                     });
@@ -260,31 +266,31 @@ public class n implements b.a {
         j = new com.censivn.C3DEngine.b.d.a(D) { // from class: com.tsf.shell.f.e.n.5
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
-                n.c(n.b(motionEvent));
+                com.tsf.shell.f.e.n.c(com.tsf.shell.f.e.n.b(motionEvent));
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
-                if (n.i != -1 && n.i != 5) {
+                if (com.tsf.shell.f.e.n.i != -1 && com.tsf.shell.f.e.n.i != 5) {
                     w.b();
-                    n.c(n.i, false);
-                    n.k.a(n.i, false);
-                    int unused = n.i = -1;
+                    com.tsf.shell.f.e.n.c(com.tsf.shell.f.e.n.i, false);
+                    com.tsf.shell.f.e.n.k.a(com.tsf.shell.f.e.n.i, false);
+                    int unused = com.tsf.shell.f.e.n.i = -1;
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 int iB = 5;
-                if (!n.m) {
-                    iB = n.b(motionEvent2);
+                if (!com.tsf.shell.f.e.n.m) {
+                    iB = com.tsf.shell.f.e.n.b(motionEvent2);
                 } else {
                     float[] fArrB = x.b(motionEvent2.getX(), motionEvent2.getY());
-                    if (x.b(n.n, n.o, fArrB[0], fArrB[1]) > 50.0f) {
-                        boolean unused = n.m = false;
+                    if (x.b(com.tsf.shell.f.e.n.n, com.tsf.shell.f.e.n.o, fArrB[0], fArrB[1]) > 50.0f) {
+                        boolean unused = com.tsf.shell.f.e.n.m = false;
                     }
                 }
-                n.c(iB);
+                com.tsf.shell.f.e.n.c(iB);
             }
         };
         r();
@@ -296,31 +302,31 @@ public class n implements b.a {
         com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(D) { // from class: com.tsf.shell.f.e.n.6
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
-                n.c(bVar.J);
+                com.tsf.shell.f.e.n.c(bVar.J);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
-                if (n.i != -1 && n.i != 5) {
+                if (com.tsf.shell.f.e.n.i != -1 && com.tsf.shell.f.e.n.i != 5) {
                     w.b();
-                    n.c(n.i, false);
-                    n.k.a(n.i, false);
-                    int unused = n.i = -1;
+                    com.tsf.shell.f.e.n.c(com.tsf.shell.f.e.n.i, false);
+                    com.tsf.shell.f.e.n.k.a(com.tsf.shell.f.e.n.i, false);
+                    int unused = com.tsf.shell.f.e.n.i = -1;
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 int iB = 5;
-                if (!n.m) {
-                    iB = n.b(motionEvent2);
+                if (!com.tsf.shell.f.e.n.m) {
+                    iB = com.tsf.shell.f.e.n.b(motionEvent2);
                 } else {
                     float[] fArrB = x.b(motionEvent2.getX(), motionEvent2.getY());
-                    if (x.b(n.n, n.o, fArrB[0], fArrB[1]) > 50.0f) {
-                        boolean unused = n.m = false;
+                    if (x.b(com.tsf.shell.f.e.n.n, com.tsf.shell.f.e.n.o, fArrB[0], fArrB[1]) > 50.0f) {
+                        boolean unused = com.tsf.shell.f.e.n.m = false;
                     }
                 }
-                n.c(iB);
+                com.tsf.shell.f.e.n.c(iB);
             }
         };
         bVar.D = new Number3d(0.5f, 1.0f, 1.0f);
@@ -361,7 +367,8 @@ public class n implements b.a {
         int i5 = (int) c.position().y;
         float fB = x.b(i4, i5, i2, i3);
         float f2 = i2 - i4;
-        if (i3 - i5 > 0.0f) {
+        float r0 = i3 - i5;
+        if (r0 > 0.0f) {
             fAtan = (float) (Math.atan(f2 / r0) / 0.017453292519943295d);
         } else {
             fAtan = ((float) (Math.atan(f2 / r0) / 0.017453292519943295d)) + 180.0f;

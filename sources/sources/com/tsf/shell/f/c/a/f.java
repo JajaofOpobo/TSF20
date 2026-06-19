@@ -52,7 +52,7 @@ public class f implements e.a {
     private k P;
     private k Q;
     private com.tsf.shell.f.c.a.A R;
-    private b S;
+    private B S;
     private float T;
     private float U;
     private float V;
@@ -186,7 +186,7 @@ public class f implements e.a {
         bitmapB.recycle();
     }
 
-    public b g() {
+    public B g() {
         return this.S;
     }
 

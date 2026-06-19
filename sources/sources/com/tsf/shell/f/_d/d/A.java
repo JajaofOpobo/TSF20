@@ -69,7 +69,7 @@ public class A {
     }
 
     public void h() {
-        if (com.tsf.shell.manager.a.v.a.a.h().a()) {
+        if (com.tsf.shell.manager.a.v.a.C0126a.h().a()) {
             f();
             g();
         }

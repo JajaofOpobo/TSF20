@@ -104,7 +104,7 @@ public class j implements e.a {
         this.F.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.f(com.censivn.C3DEngine.b.b.A.D);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.A.a);
         dVar.a(50);
         com.censivn.C3DEngine.b.g.c.a(this.F);
         com.censivn.C3DEngine.b.g.c.a(this.F, 500, dVar);
@@ -115,7 +115,7 @@ public class j implements e.a {
         this.F.mouseEnabled(true);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.f(0.0f);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.A.a);
         dVar.a(255);
         com.censivn.C3DEngine.b.g.c.a(this.F);
         com.censivn.C3DEngine.b.g.c.a(this.F, 500, dVar);
@@ -204,9 +204,9 @@ public class j implements e.a {
     }
 
     public void k() {
-        this.B = x.b(b.d.widget_folder_add_button, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
-        this.C = x.b(b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
-        this.D = x.b(b.d.widget_folder_rename, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
+        this.B = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_add_button, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
+        this.C = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
+        this.D = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_rename, com.tsf.shell.manager.g.a.i, com.tsf.shell.manager.g.a.i);
         if (c().folder.backPlaneEnable) {
             Bitmap bitmapFromCache = c().getBitmapFromCache(ThemeFolderDescription.BACK_PLANE, c().folder.backPlaneWidth, c().folder.backPlaneHeight);
             if (bitmapFromCache == null) {
@@ -256,22 +256,22 @@ public class j implements e.a {
             this.J.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.J) { // from class: com.tsf.shell.f.i.b.d.j.3
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                    if (b.k != null) {
-                        b.k.aF().a(motionEvent, motionEvent2, f, f2);
+                    if (com.tsf.shell.f.i.b.d.b.k != null) {
+                        com.tsf.shell.f.i.b.d.b.k.aF().a(motionEvent, motionEvent2, f, f2);
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                    if (b.k != null) {
-                        b.k.aF().a(f2);
+                    if (com.tsf.shell.f.i.b.d.b.k != null) {
+                        com.tsf.shell.f.i.b.d.b.k.aF().a(f2);
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void g(MotionEvent motionEvent) {
-                    if (b.k != null) {
-                        b.k.aF().a(0.0f);
+                    if (com.tsf.shell.f.i.b.d.b.k != null) {
+                        com.tsf.shell.f.i.b.d.b.k.aF().a(0.0f);
                     }
                 }
             });
@@ -365,7 +365,7 @@ public class j implements e.a {
         float fA = com.censivn.C3DEngine.b.b.A.O ? 0.0f : com.censivn.C3DEngine.b.b.A.a(80.0f);
         int i5 = com.censivn.C3DEngine.b.b.A.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
         int i6 = i5 > i2 * 7 ? i2 * 7 : i5;
-        int[] iArrA = x.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
+        int[] iArrA = com.tsf.shell.utils.x.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
         this.a = iArrA[0];
         this.b = iArrA[1];
         this.c = this.a * this.b;
@@ -416,33 +416,33 @@ public class j implements e.a {
         this.M = new com.censivn.C3DEngine.b.d.a(this.H) { // from class: com.tsf.shell.f.i.b.d.j.4
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                w.b();
-                if (b.k != null) {
-                    j.this.a(b.k);
+                com.tsf.shell.utils.w.b();
+                if (com.tsf.shell.f.i.b.d.b.k != null) {
+                    j.this.a(com.tsf.shell.f.i.b.d.b.k);
                 }
             }
         };
         this.H.setMouseEventListener(this.M);
     }
 
-    public void a(final b bVar) {
+    public void a(final com.tsf.shell.f.i.b.d.b bVar) {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.d.j.5
             @Override // java.lang.Runnable
             public void run() {
                 Context contextD = com.censivn.C3DEngine.A.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
-                final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(com.tsf.b.g.dialog_rename, (ViewGroup) null);
+                final EditText editText = (EditText) viewInflate.findViewById(com.tsf.b.e.username_edit);
                 editText.setText(bVar.aN());
                 AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
-                builder.setTitle(contextD.getString(b.i.rename_folder_title));
+                builder.setTitle(contextD.getString(com.tsf.b.i.rename_folder_title));
                 builder.setView(viewInflate);
-                builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i.b.d.j.5.1
+                builder.setPositiveButton(contextD.getString(com.tsf.b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i.b.d.j.5.1
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialogInterface, int i) {
                         bVar.a(editText.getText().toString());
                     }
                 });
-                builder.setNegativeButton(contextD.getString(b.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i.b.d.j.5.2
+                builder.setNegativeButton(contextD.getString(com.tsf.b.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i.b.d.j.5.2
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }
@@ -452,14 +452,14 @@ public class j implements e.a {
         });
     }
 
-    public void a(int i, b bVar) {
+    public void a(int i, com.tsf.shell.f.i.b.d.b bVar) {
         this.E.visible(true);
         this.W.b();
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.l(1.0f);
         dVar.m(1.0f);
         dVar.a(255);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.A.a);
         com.censivn.C3DEngine.b.g.c.a(this.E);
         com.censivn.C3DEngine.b.g.c.a(this.E, i, dVar);
     }
@@ -500,7 +500,7 @@ public class j implements e.a {
         this.H.b(this.y.height);
     }
 
-    protected void a(b bVar, CharSequence charSequence) {
+    protected void a(com.tsf.shell.f.i.b.d.b bVar, CharSequence charSequence) {
         String string;
         if (bVar.v != null) {
             bVar.r.textures().removeAll();
@@ -577,6 +577,6 @@ public class j implements e.a {
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
         o();
-        b.a(i, i2, i3, i4);
+        com.tsf.shell.f.i.b.d.b.a(i, i2, i3, i4);
     }
 }

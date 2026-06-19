@@ -23,10 +23,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e {
-    private int b;
+    private int b_;
     private int c;
-    private boolean g;
-    private boolean j;
+    private boolean g_;
+    private boolean j_;
     private ArrayList<a> d = new ArrayList<>();
     private boolean e = false;
     private boolean f = false;
@@ -40,15 +40,15 @@ public class e {
 
     @SuppressLint({"NewApi"})
     public e(Activity activity) {
-        com.tsf.shell.manager.a.b = this;
+        com.tsf.shell.manager.a.a.B = this;
         com.censivn.C3DEngine.b.b.A.b(activity);
         com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : r.a(activity));
         g.c();
         if (!com.tsf.shell.manager.b.e.P()) {
-            this.g = true;
+            this.g_ = true;
             a(activity, true, true, true);
         } else {
-            this.g = false;
+            this.g_ = false;
         }
         if (Build.VERSION.SDK_INT >= 21) {
             if (!com.tsf.shell.manager.b.e.O()) {
@@ -68,7 +68,7 @@ public class e {
             com.censivn.C3DEngine.b.b.A.a(activity, false);
         }
         if (g.b()) {
-            this.b = activity.getResources().getConfiguration().screenHeightDp;
+            this.b_ = activity.getResources().getConfiguration().screenHeightDp;
             this.c = activity.getResources().getConfiguration().orientation;
         }
         if (Build.VERSION.SDK_INT >= 21) {
@@ -170,8 +170,8 @@ public class e {
     @SuppressLint({"NewApi"})
     public void a(Activity activity, Configuration configuration) {
         if (g.b()) {
-            if (this.b != configuration.screenHeightDp) {
-                this.b = configuration.screenHeightDp;
+            if (this.b_ != configuration.screenHeightDp) {
+                this.b_ = configuration.screenHeightDp;
                 com.censivn.C3DEngine.b.b.A.a(activity, this.c == configuration.orientation);
             }
             if (this.c != configuration.orientation) {
@@ -286,23 +286,23 @@ public class e {
     }
 
     public boolean c() {
-        return this.g;
+        return this.g_;
     }
 
     public void a(boolean z) {
-        if (this.g != z) {
+        if (this.g_ != z) {
             if (z) {
                 WindowManager.LayoutParams attributes = Home.b().getWindow().getAttributes();
                 attributes.flags |= 1024;
                 Home.b().getWindow().setAttributes(attributes);
-                this.g = true;
+                this.g_ = true;
             } else {
                 WindowManager.LayoutParams attributes2 = Home.b().getWindow().getAttributes();
                 attributes2.flags &= -1025;
                 Home.b().getWindow().setAttributes(attributes2);
-                this.g = false;
+                this.g_ = false;
             }
-            com.tsf.shell.manager.b.e.d(Boolean.valueOf(this.g ? false : true));
+            com.tsf.shell.manager.b.e.d(Boolean.valueOf(this.g_ ? false : true));
             com.censivn.C3DEngine.b.b.A.c();
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
                 @Override // java.lang.Runnable
@@ -317,7 +317,7 @@ public class e {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
             @Override // java.lang.Runnable
             public void run() {
-                e.this.a(!e.this.g);
+                e.this.a(!e.this.g_);
             }
         });
     }
@@ -328,7 +328,7 @@ public class e {
             public void run() {
                 if (e.this.c()) {
                     e.this.a(false);
-                    e.this.j = true;
+                    e.this.j_ = true;
                 }
                 Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5.1
                     @Override // java.lang.Runnable
@@ -351,12 +351,12 @@ public class e {
                                     if (launcherAccessibilityServiceA != null) {
                                         launcherAccessibilityServiceA.performGlobalAction(4);
                                     } else {
-                                        new AlertDialog.Builder(com.censivn.C3DEngine.A.d()).setTitle(b.i.accessibility_service_enable).setMessage(b.i.accessibility_service_enable_long).setPositiveButton(b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
+                                        new AlertDialog.Builder(com.censivn.C3DEngine.A.d()).setTitle(com.tsf.b.i.accessibility_service_enable).setMessage(com.tsf.b.i.accessibility_service_enable_long).setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 Home.b().startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
                                             }
-                                        }).setNegativeButton(b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.1
+                                        }).setNegativeButton(com.tsf.b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.1
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                             }
@@ -367,7 +367,7 @@ public class e {
                         }
                     }
                 };
-                if (e.this.j) {
+                if (e.this.j_) {
                     com.censivn.C3DEngine.A.a().a(runnable, 300L);
                 } else {
                     com.censivn.C3DEngine.A.a().a(runnable);
@@ -377,9 +377,9 @@ public class e {
     }
 
     public void b(boolean z) {
-        if (this.j && z) {
+        if (this.j_ && z) {
             a(true);
-            this.j = false;
+            this.j_ = false;
         }
     }
 

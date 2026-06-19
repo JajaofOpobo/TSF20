@@ -13,7 +13,7 @@ public class b {
         com.tsf.shell.manager.a.o.a().w();
     }
 
-    public a b() {
+    public A b() {
         return this.a;
     }
 }

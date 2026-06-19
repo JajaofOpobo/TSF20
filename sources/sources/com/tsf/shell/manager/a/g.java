@@ -28,30 +28,27 @@ public class g {
     public static class b {
         public void a(ArrayList<com.tsf.shell.f.i.b.e.g> arrayList) {
         }
+        public void c() {}
     }
 
-    class a implements c.a {
-        a() {
+    public static class a implements c.a {
+        public void a() {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
-        public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
-        }
-
-        @Override // com.tsf.shell.manager.a.c.a
-        public void a(com.tsf.shell.f.i.b.e.g gVar) {
-        }
-
-        @Override // com.tsf.shell.manager.a.c.a
         public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
-        public void k_() {
+        public void a(com.tsf.shell.f.i.b.e.g gVar) {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
-        public void a() {
+        public static com.tsf.shell.f.c.b.b a(com.tsf.shell.f.i.C cVar) {
+            return null;
+        }
+
+        public static void k() {
+        }
+
+        public void k_() {
         }
     }
 

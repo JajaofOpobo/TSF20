@@ -17,6 +17,11 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b implements e.a, a.InterfaceC0113a {
+    public static class a extends com.tsf.shell.manager.f.b.a {
+        public void a() {
+        }
+    }
+
     public static float a = com.censivn.C3DEngine.b.b.A.a(300.0f);
     public static float b = com.censivn.C3DEngine.b.b.A.a(190.0f);
     private j c;

@@ -69,7 +69,7 @@ public abstract class j extends VObject3dContainer implements i, k {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public class a extends c<Void, Bitmap> {
+    public class a extends C<Void, Bitmap> {
         protected int d;
         protected VObject3d[] e;
         protected i f;

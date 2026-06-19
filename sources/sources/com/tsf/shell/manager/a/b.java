@@ -1,6 +1,7 @@
 package com.tsf.shell.manager.a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
+import com.tsf.shell.Home;
 import com.tsf.shell.manager.a.c;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -76,18 +77,26 @@ public class b {
         }
     }
 
-    public int c() {
-        if (this.a == null) {
-            return 0;
-        }
-        return this.a.size();
+    public static boolean c() {
+        return false;
     }
 
     public com.tsf.shell.f.i.b.e.g a(int i) {
         return this.a.get(i);
     }
 
-    public ArrayList<com.tsf.shell.f.i.b.e.g> d() {
+    public ArrayList<com.tsf.shell.f.i.b.e.g> d_() {
         return this.a;
     }
+
+    public static void d() {}
+    public static void e() {}
+
+    public static boolean a(com.tsf.shell.f.i.b.d.b bVar) { return false; }
+    public static void b(Home home) {}
+    public static void c(Home home) {}
+    public static void a(com.tsf.shell.manager.n.a aVar) {}
+    public static void a(boolean z, boolean z2, boolean z3) {}
+    public static void b(com.tsf.shell.manager.n.a aVar) {}
+    public static void a(com.tsf.shell.f.i.b.d.j jVar) {}
 }

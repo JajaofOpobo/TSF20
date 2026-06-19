@@ -65,15 +65,16 @@ public class a extends g {
         this.a.textures().addElement(this.b);
         this.a.position().y = (-b()) / 2.0f;
         addChild(this.a);
+        final com.censivn.C3DEngine.b.e.a self = this;
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.e.a.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                if (a.this.d) {
-                    a.this.c(false);
-                    a.this.n();
+                if (self.d) {
+                    self.c(false);
+                    self.n();
                 } else {
-                    a.this.c(true);
-                    a.this.n();
+                    self.c(true);
+                    self.n();
                 }
             }
         });

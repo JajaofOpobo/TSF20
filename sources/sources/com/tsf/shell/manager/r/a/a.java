@@ -56,6 +56,8 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         }
     }
 
+    public static float[] a(com.tsf.shell.f.i.B bVar, float f, float f2) { return null; }
+
     public a() {
         try {
             this.f = AppWidgetManager.getInstance(this.k);

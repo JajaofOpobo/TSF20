@@ -64,6 +64,6 @@ public class b {
     }
 
     public Bitmap a(String str, com.tsf.shell.manager.o.A aVar) {
-        return c.a(str, this.h.g, aVar, this.h);
+        return com.tsf.shell.manager.o.a.c.a(str, this.h.g, aVar, this.h);
     }
 }

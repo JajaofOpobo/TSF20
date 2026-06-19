@@ -18,7 +18,7 @@ import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
-    public int b = 0;
+    public int b_ = 0;
     public com.tsf.shell.manager.action.toggle.A c = new com.tsf.shell.manager.action.toggle.A();
     public ArrayList<a> a = a(false);
 
@@ -35,9 +35,9 @@ public class b {
         com.tsf.shell.manager.a.s.a(new d.a() { // from class: com.tsf.shell.manager.action.b.1
             @Override // com.censivn.C3DEngine.b.c.d.a
             public void a() {
-                if (b.this.b != 0) {
-                    b.this.a(b.this.b);
-                    b.this.b = 0;
+                if (b.this.b_ != 0) {
+                    b.this.a(b.this.b_);
+                    b.this.b_ = 0;
                 }
             }
         });
@@ -55,7 +55,7 @@ public class b {
         arrayList.add(b(100));
         a aVarB = b(500);
         if (z) {
-            aVarB.c = b.d.allapps_icon;
+            aVarB.c = com.tsf.b.d.allapps_icon;
         }
         arrayList.add(aVarB);
         arrayList.add(b(1400));
@@ -95,7 +95,7 @@ public class b {
             });
         }
         if (com.tsf.shell.manager.a.s.b() && !z) {
-            this.b = i;
+            this.b_ = i;
             com.tsf.shell.manager.a.s.a();
             return;
         }
@@ -226,113 +226,113 @@ public class b {
         Intent.ShortcutIconResource shortcutIconResource = launcherShortcut3DInfo.iconResource;
         switch (i) {
             case 0:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_none);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_none);
                 break;
             case 2:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_homescreen);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_homescreen);
                 break;
             case 3:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_drawer_homescreen);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_drawer_homescreen);
                 break;
             case 4:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_toggle_notification_bar);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_toggle_notification_bar);
                 break;
             case 5:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_expand_notification_bar);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_expand_notification_bar);
                 break;
             case 7:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_search);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_search);
                 break;
             case 8:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_voice);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_voice);
                 break;
             case 11:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_lasso_mode);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_lasso_mode);
                 break;
             case 12:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_add);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_add);
                 break;
             case 13:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_multi_choice);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_multi_choice);
                 break;
             case 14:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_desktop_editor);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_desktop_editor);
                 break;
             case 15:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_restart);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_restart);
                 break;
             case 16:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_toggle_dock);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_toggle_dock);
                 break;
             case 17:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_toggle_sliding_dock);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_toggle_sliding_dock);
                 break;
             case 18:
-                shortcutIconResource.resourceName = String.valueOf(b.d.ic_action_expand_side_menu);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.ic_action_expand_side_menu);
                 break;
             case 19:
-                shortcutIconResource.resourceName = String.valueOf(b.d.cml_theme);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.cml_theme);
                 break;
             case 20:
-                shortcutIconResource.resourceName = String.valueOf(b.d.cml_panda);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.cml_panda);
                 break;
             case 100:
             case 500:
             case 1000:
                 break;
             case VEasing.Back.easeIn /* 200 */:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_theme);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_theme);
                 break;
             case 300:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_desktop_effect);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_desktop_effect);
                 break;
             case VEasing.Linear.easeNone /* 400 */:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_gesture);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_gesture);
                 break;
             case 600:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_snow_icon);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_snow_icon);
                 break;
             case 700:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_screen_scale);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_screen_scale);
                 break;
             case 800:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_dock);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_dock);
                 break;
             case 900:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_side_menu);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_side_menu);
                 break;
             case 1100:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_unread);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_unread);
                 break;
             case 1200:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_backup);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_backup);
                 break;
             case 1300:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_advanced);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_advanced);
                 break;
             case 1400:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_about);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_about);
                 break;
             case 1500:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_desktop);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_desktop);
                 break;
             case 1600:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_demo);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_demo);
                 break;
             case 1700:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_wallpaper);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_wallpaper);
                 break;
             case ACRAConstants.DEFAULT_CONNECTION_TIMEOUT /* 3000 */:
-                shortcutIconResource.resourceName = String.valueOf(b.d.default_icon_phone);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.default_icon_phone);
                 break;
             case 3001:
-                shortcutIconResource.resourceName = String.valueOf(b.d.default_icon_sms);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.default_icon_sms);
                 break;
             case 3002:
-                shortcutIconResource.resourceName = String.valueOf(b.d.shortcut_wallpaper);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.shortcut_wallpaper);
                 break;
             default:
-                shortcutIconResource.resourceName = String.valueOf(b.d.tsf_ico);
+                shortcutIconResource.resourceName = String.valueOf(com.tsf.b.d.tsf_ico);
                 break;
         }
     }
@@ -343,94 +343,94 @@ public class b {
         switch (i) {
             case 0:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.none);
-                aVar.c = b.d.ic_action_none;
+                aVar.c = com.tsf.b.d.ic_action_none;
                 return aVar;
             case 2:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_home_screen);
-                aVar.c = b.d.ic_action_homescreen;
+                aVar.c = com.tsf.b.d.ic_action_homescreen;
                 return aVar;
             case 3:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_switch_appdrawer_homescreen);
-                aVar.c = b.d.ic_action_drawer_homescreen;
+                aVar.c = com.tsf.b.d.ic_action_drawer_homescreen;
                 return aVar;
             case 4:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_notification_bar);
-                aVar.c = b.d.ic_action_toggle_notification_bar;
+                aVar.c = com.tsf.b.d.ic_action_toggle_notification_bar;
                 return aVar;
             case 5:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_expand_notification_bar);
-                aVar.c = b.d.ic_action_expand_notification_bar;
+                aVar.c = com.tsf.b.d.ic_action_expand_notification_bar;
                 return aVar;
             case 7:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_text_search);
-                aVar.c = b.d.ic_action_search;
+                aVar.c = com.tsf.b.d.ic_action_search;
                 aVar.d = "ic_action_toggle_dock";
                 return aVar;
             case 8:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_voice_search);
-                aVar.c = b.d.ic_action_voice;
+                aVar.c = com.tsf.b.d.ic_action_voice;
                 return aVar;
             case 11:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_lasso_mode);
-                aVar.c = b.d.shortcut_lasso_mode;
+                aVar.c = com.tsf.b.d.shortcut_lasso_mode;
                 aVar.d = ThemeShellDescription.SHORTCUT_LASSO_MODE;
                 return aVar;
             case 12:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_add);
-                aVar.c = b.d.shortcut_add;
+                aVar.c = com.tsf.b.d.shortcut_add;
                 aVar.d = ThemeShellDescription.SHORTCUT_ADD;
                 return aVar;
             case 13:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_multiple_choice);
-                aVar.c = b.d.shortcut_multi_choice;
+                aVar.c = com.tsf.b.d.shortcut_multi_choice;
                 aVar.d = ThemeShellDescription.SHORTCUT_MULTI_CHOICE;
                 return aVar;
             case 14:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_desktop_editor);
-                aVar.c = b.d.shortcut_desktop_editor;
+                aVar.c = com.tsf.b.d.shortcut_desktop_editor;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP_EDITOR;
                 return aVar;
             case 15:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.text_restart);
-                aVar.c = b.d.shortcut_restart;
+                aVar.c = com.tsf.b.d.shortcut_restart;
                 aVar.d = ThemeShellDescription.SHORTCUT_RESTART;
                 return aVar;
             case 16:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_dock);
-                aVar.c = b.d.ic_action_toggle_dock;
+                aVar.c = com.tsf.b.d.ic_action_toggle_dock;
                 return aVar;
             case 17:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_sliding_dock);
-                aVar.c = b.d.ic_action_toggle_sliding_dock;
+                aVar.c = com.tsf.b.d.ic_action_toggle_sliding_dock;
                 return aVar;
             case 18:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_expand_side_menu);
-                aVar.c = b.d.ic_action_expand_side_menu;
+                aVar.c = com.tsf.b.d.ic_action_expand_side_menu;
                 return aVar;
             case 19:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.theme);
-                aVar.c = b.d.cml_theme;
+                aVar.c = com.tsf.b.d.cml_theme;
                 return aVar;
             case 20:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.panda);
-                aVar.c = b.d.cml_panda;
+                aVar.c = com.tsf.b.d.cml_panda;
                 return aVar;
             case 100:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_app_drawer);
                 return aVar;
             case VEasing.Back.easeIn /* 200 */:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_theme);
-                aVar.c = b.d.shortcut_theme;
+                aVar.c = com.tsf.b.d.shortcut_theme;
                 aVar.d = ThemeShellDescription.SHORTCUT_THEME;
                 return aVar;
             case 300:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_setting_effect);
-                aVar.c = b.d.shortcut_desktop_effect;
+                aVar.c = com.tsf.b.d.shortcut_desktop_effect;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP_EFFECT;
                 return aVar;
             case VEasing.Linear.easeNone /* 400 */:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.menu_gestures);
-                aVar.c = b.d.shortcut_gesture;
+                aVar.c = com.tsf.b.d.shortcut_gesture;
                 aVar.d = ThemeShellDescription.SHORTCUT_GESTURE;
                 return aVar;
             case 500:
@@ -438,21 +438,21 @@ public class b {
                 return aVar;
             case 600:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.text_floating);
-                aVar.c = b.d.shortcut_snow_icon;
+                aVar.c = com.tsf.b.d.shortcut_snow_icon;
                 return aVar;
             case 700:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.text_screen_scale);
-                aVar.c = b.d.shortcut_screen_scale;
+                aVar.c = com.tsf.b.d.shortcut_screen_scale;
                 aVar.d = ThemeShellDescription.SHORTCUT_SCALE;
                 return aVar;
             case 800:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_dock);
-                aVar.c = b.d.shortcut_dock;
+                aVar.c = com.tsf.b.d.shortcut_dock;
                 aVar.d = ThemeShellDescription.SHORTCUT_DOCK;
                 return aVar;
             case 900:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.text_side_menu);
-                aVar.c = b.d.shortcut_side_menu;
+                aVar.c = com.tsf.b.d.shortcut_side_menu;
                 aVar.d = ThemeShellDescription.SHORTCUT_SIDE_MENU;
                 return aVar;
             case 1000:
@@ -460,54 +460,54 @@ public class b {
                 return aVar;
             case 1100:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_unread_count);
-                aVar.c = b.d.shortcut_unread;
+                aVar.c = com.tsf.b.d.shortcut_unread;
                 aVar.d = ThemeShellDescription.SHORTCUT_UNREAD;
                 return aVar;
             case 1200:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_backup);
-                aVar.c = b.d.shortcut_backup;
+                aVar.c = com.tsf.b.d.shortcut_backup;
                 aVar.d = ThemeShellDescription.SHORTCUT_BACKUP;
                 return aVar;
             case 1300:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.advanced_setting);
-                aVar.c = b.d.shortcut_advanced;
+                aVar.c = com.tsf.b.d.shortcut_advanced;
                 aVar.d = ThemeShellDescription.SHORTCUT_ADVANCED;
                 return aVar;
             case 1400:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_about);
-                aVar.c = b.d.shortcut_about;
+                aVar.c = com.tsf.b.d.shortcut_about;
                 aVar.d = ThemeShellDescription.SHORTCUT_ABOUT;
                 return aVar;
             case 1500:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_screen);
-                aVar.c = b.d.shortcut_desktop;
+                aVar.c = com.tsf.b.d.shortcut_desktop;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP;
                 return aVar;
             case 1600:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.text_demo);
-                aVar.c = b.d.shortcut_demo;
+                aVar.c = com.tsf.b.d.shortcut_demo;
                 aVar.d = ThemeShellDescription.SHORTCUT_DEMO;
                 return aVar;
             case 1700:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_wallpaper);
-                aVar.c = b.d.shortcut_wallpaper;
+                aVar.c = com.tsf.b.d.shortcut_wallpaper;
                 aVar.d = ThemeShellDescription.SHORTCUT_WALLPAPER;
                 return aVar;
             case ACRAConstants.DEFAULT_CONNECTION_TIMEOUT /* 3000 */:
                 aVar.b = "Phone";
-                aVar.c = b.d.default_icon_phone;
+                aVar.c = com.tsf.b.d.default_icon_phone;
                 return aVar;
             case 3001:
                 aVar.b = "Messaging";
-                aVar.c = b.d.default_icon_sms;
+                aVar.c = com.tsf.b.d.default_icon_sms;
                 return aVar;
             case 3002:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.mn_wallpaper);
-                aVar.c = b.d.shortcut_wallpaper;
+                aVar.c = com.tsf.b.d.shortcut_wallpaper;
                 return aVar;
             default:
                 aVar.b = com.tsf.shell.utils.x.c(b.i.none);
-                aVar.c = b.d.tsf_ico;
+                aVar.c = com.tsf.b.d.tsf_ico;
                 return aVar;
         }
     }

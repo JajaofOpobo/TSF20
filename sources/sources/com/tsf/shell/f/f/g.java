@@ -719,12 +719,12 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     }
 
     public boolean Y() {
-        return (com.tsf.shell.manager.a.v.a.a.h().a() && this.j) ? false : true;
+        return (com.tsf.shell.manager.a.v.a.C0126a.h().a() && this.j) ? false : true;
     }
 
     public void Z() {
         this.j = true;
-        if (com.tsf.shell.manager.a.v.a.a.h().a() || t() == -1) {
+        if (com.tsf.shell.manager.a.v.a.C0126a.h().a() || t() == -1) {
             ab();
         }
         if (this.G) {
@@ -746,7 +746,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
 
     public void aa() {
         this.j = false;
-        if (com.tsf.shell.manager.a.v.a.a.h().a() || t() == -1) {
+        if (com.tsf.shell.manager.a.v.a.C0126a.h().a() || t() == -1) {
             ac();
         }
         this.g = 0.0f;

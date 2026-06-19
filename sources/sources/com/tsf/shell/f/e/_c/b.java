@@ -23,7 +23,7 @@ public class b extends j {
     private short[] m;
     private float[] n;
     private float o;
-    private com.tsf.shell.f.e._c.a x;
+    private com.tsf.shell.f.e._c.A x;
     private int h = 10;
     private float i = 1.0f / (this.h - 1.0f);
     private int j = 300;
@@ -89,7 +89,7 @@ public class b extends j {
         }
     }
 
-    public b(com.tsf.shell.f.e._c.a aVar) {
+    public b(com.tsf.shell.f.e._c.A aVar) {
         this.x = aVar;
         this.o = 40.0f * this.x.d;
         c();

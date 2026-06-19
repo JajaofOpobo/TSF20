@@ -2,6 +2,7 @@ package com.censivn.C3DEngine.b.g.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends c {
+    public static Object a;
     private com.censivn.C3DEngine.b.g.d c;
     private com.censivn.C3DEngine.b.f.a.b d;
     private int e;

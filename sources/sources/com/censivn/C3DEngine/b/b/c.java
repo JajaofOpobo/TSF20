@@ -37,7 +37,7 @@ public class c extends j {
 
     public c() {
         setLayoutParams(this.h);
-        this.d = (int) a.a(4.0f);
+        this.d = (int) A.a(4.0f);
         this.f = new k(this.a, this.d, false);
         this.f.setDefaultColor(new Color4(255, 255, 255, 70));
         this.f.useVBO(false);
@@ -157,7 +157,7 @@ public class c extends j {
                 i = i3;
             } else {
                 childAt.alpha(0.0f);
-                childAt.position().y = layoutParams.g - a.a(500.0f);
+                childAt.position().y = layoutParams.g - A.a(500.0f);
                 if (i2 == iNumChildren - 1) {
                     dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.c.2
                         @Override // com.censivn.C3DEngine.b.g.d
@@ -271,7 +271,7 @@ public class c extends j {
     private boolean a(Number3d number3d, i iVar) {
         b layoutParams = iVar.getLayoutParams();
         float f = iVar.position().y + number3d.y;
-        return layoutParams.i + f <= ((float) a.I) && layoutParams.k + f >= ((float) (-a.I));
+        return layoutParams.i + f <= ((float) A.I) && layoutParams.k + f >= ((float) (-A.I));
     }
 
     @Override // com.censivn.C3DEngine.b.f.j

@@ -174,4 +174,8 @@ public class A {
         b.a(com.censivn.C3DEngine.b.b.A.F);
         c.a(com.censivn.C3DEngine.b.b.A.G);
     }
+
+    public void a(m mVar) {}
+    public n l_() { return null; }
+    public void f() {}
 }

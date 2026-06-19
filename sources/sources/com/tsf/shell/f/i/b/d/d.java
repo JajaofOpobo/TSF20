@@ -27,12 +27,12 @@ public class d {
     }
 
     private void b() {
-        this.c = (int) (j.Q - j.P);
-        this.d = (int) (j.S - j.R);
-        this.e = (int) j.P;
-        this.f = (int) j.R;
-        this.g = (int) j.Q;
-        this.h = (int) j.S;
+        this.c = (int) (com.tsf.shell.f.i.b.d.j.Q - com.tsf.shell.f.i.b.d.j.P);
+        this.d = (int) (com.tsf.shell.f.i.b.d.j.S - com.tsf.shell.f.i.b.d.j.R);
+        this.e = (int) com.tsf.shell.f.i.b.d.j.P;
+        this.f = (int) com.tsf.shell.f.i.b.d.j.R;
+        this.g = (int) com.tsf.shell.f.i.b.d.j.Q;
+        this.h = (int) com.tsf.shell.f.i.b.d.j.S;
     }
 
     public void a() {

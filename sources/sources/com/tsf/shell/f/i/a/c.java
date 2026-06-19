@@ -58,7 +58,8 @@ public class c extends com.censivn.C3DEngine.b.d.a {
 
     private float l(MotionEvent motionEvent) {
         float x = motionEvent.getX(0) - motionEvent.getX(1);
-        if (motionEvent.getY(0) - motionEvent.getY(1) > 0.0f) {
+        float r1 = motionEvent.getY(0) - motionEvent.getY(1);
+        if (r1 > 0.0f) {
             return ((float) (Math.atan(x / r1) / 0.017453292519943295d)) + 180.0f;
         }
         return (float) (Math.atan(x / r1) / 0.017453292519943295d);
@@ -93,7 +94,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                     cVar.A().g();
                 }
                 com.tsf.shell.manager.a.j.a((i) bVar, true);
-                f.a();
+                com.tsf.shell.manager.action.f.a();
                 this.n = false;
                 this.o = false;
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -140,7 +141,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                         com.tsf.shell.manager.a.p.a(bVar, f, f2, true, 0, 1);
                         return;
                     }
-                    if (bVar == null || bVar.K() == null || bVar.K().title == null || !bVar.K().title.equals(x.c(b.i.panda))) {
+                    if (bVar == null || bVar.K() == null || bVar.K().title == null || !bVar.K().title.equals(x.c(com.tsf.b.i.panda))) {
                         ItemInfo itemInfoK = bVar.K();
                         if (!(itemInfoK instanceof LauncherShortcutStandardInfo) || (launcherShortcutStandardInfo = (LauncherShortcutStandardInfo) itemInfoK) == null || launcherShortcutStandardInfo.intent == null || launcherShortcutStandardInfo.intent.getIntExtra("action", -1) != 19) {
                             com.tsf.shell.manager.a.p.a(bVar, f, f2, true, 0, 2, 1);
@@ -291,7 +292,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             }
         };
         if (fArr == null) {
-            fArr = com.tsf.shell.manager.r.a.a(this.g, this.g.position().x, this.g.position().y);
+            fArr = com.tsf.shell.manager.r.A.a(this.g, this.g.position().x, this.g.position().y);
         }
         if (fArr[0] != this.g.position().x || fArr[1] != this.g.position().y) {
             dVar.f(fArr[0]);
@@ -305,7 +306,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         }
         dVar.l(1.0f);
         dVar.m(1.0f);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.A.a);
         com.censivn.C3DEngine.b.g.c.a(this.c);
         com.censivn.C3DEngine.b.g.c.a(this.g, 380, dVar);
         this.g.m_();
@@ -316,7 +317,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         super.a(motionEvent, motionEvent2);
         if (this.l) {
             if (this.g.D()) {
-                com.tsf.shell.f.e.a.a((int) (this.b + (motionEvent2.getX() - motionEvent.getX())), (int) (this.d - (motionEvent2.getY() - motionEvent.getY())));
+                com.tsf.shell.f.e.A.a((int) (this.b + (motionEvent2.getX() - motionEvent.getX())), (int) (this.d - (motionEvent2.getY() - motionEvent.getY())));
             } else if (this.n) {
                 this.c.position().x = (int) (this.b + (motionEvent2.getX() - motionEvent.getX()));
                 this.c.position().y = (int) (this.d - (motionEvent2.getY() - motionEvent.getY()));

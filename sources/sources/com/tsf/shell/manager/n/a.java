@@ -106,8 +106,8 @@ public class a implements e.a {
         this.c = new h(com.censivn.C3DEngine.b.b.A.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.a.1
             @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
             public void draw() {
-                if (a.this.c.getAnimationObjectState() || a.this.r) {
-                    a.this.c();
+                if (com.tsf.shell.manager.n.a.this.c.getAnimationObjectState() || com.tsf.shell.manager.n.a.this.r) {
+                    com.tsf.shell.manager.n.a.this.c();
                 }
                 com.censivn.C3DEngine.A.e().a(this);
                 updateTextureState();
@@ -227,12 +227,12 @@ public class a implements e.a {
             d dVar = new d() { // from class: com.tsf.shell.manager.n.a.5
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    a.this.r = false;
+                    com.tsf.shell.manager.n.a.this.r = false;
                 }
             };
             dVar.a(255);
-            c.a(this.b);
-            c.a(this.b, 750, dVar);
+            com.censivn.C3DEngine.b.g.c.a(this.b);
+            com.censivn.C3DEngine.b.g.c.a(this.b, 750, dVar);
         }
     }
 
@@ -254,15 +254,15 @@ public class a implements e.a {
             d dVar = new d() { // from class: com.tsf.shell.manager.n.a.7
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    a.this.r = false;
-                    com.tsf.shell.manager.a.b.b(a.this);
-                    a.this.b.removeFromParent();
-                    a.this.a();
+                    com.tsf.shell.manager.n.a.this.r = false;
+                    com.tsf.shell.manager.a.b.b(com.tsf.shell.manager.n.a.this);
+                    com.tsf.shell.manager.n.a.this.b.removeFromParent();
+                    com.tsf.shell.manager.n.a.this.a();
                 }
             };
             dVar.a(0);
-            c.a(this.b);
-            c.a(this.b, 750, dVar);
+            com.censivn.C3DEngine.b.g.c.a(this.b);
+            com.censivn.C3DEngine.b.g.c.a(this.b, 750, dVar);
         }
     }
 
@@ -285,7 +285,7 @@ public class a implements e.a {
             if (this.g) {
                 this.g = false;
                 System.currentTimeMillis();
-                Bitmap bitmapB = a.this.s.b(this.f);
+                Bitmap bitmapB = com.tsf.shell.manager.n.a.this.s.b(this.f);
                 com.censivn.C3DEngine.A.g().a(this.e, bitmapB);
                 bitmapB.recycle();
                 a(this.e.width);
@@ -320,32 +320,33 @@ public class a implements e.a {
             this.h = i;
             if (this.e.id != 0 || this.g) {
                 d dVar = new d();
-                dVar.h((-a.this.e) / 2.0f);
+                dVar.h((-com.tsf.shell.manager.n.a.this.e) / 2.0f);
                 dVar.a(255);
-                c.a(this);
-                c.a(this, 500, dVar);
+                com.censivn.C3DEngine.b.g.c.a(this);
+                com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
                 if (parent() == null) {
-                    a.this.b.addChild(this);
+                    com.tsf.shell.manager.n.a.this.b.addChild(this);
                 }
-                a.this.a(i);
+                com.tsf.shell.manager.n.a.this.a(i);
             }
         }
 
-        public void a(final boolean z) {
+        public void a(boolean z) {
+            final boolean zz = z;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.a.a.1
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     C0133a.this.removeFromParent();
-                    if (z) {
+                    if (zz) {
                         C0133a.this.d();
                     }
                 }
             };
             dVar.a(0);
             dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
-            c.a(this);
-            c.a(this, 500, dVar);
-            a.this.a();
+            com.censivn.C3DEngine.b.g.c.a(this);
+            com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+            com.tsf.shell.manager.n.a.this.a();
         }
 
         public void d() {

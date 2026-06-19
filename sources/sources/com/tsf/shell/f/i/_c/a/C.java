@@ -161,11 +161,11 @@ public abstract class C<Params, Result> {
         return this.f.get();
     }
 
-    public final c<Params, Result> b(Params... paramsArr) {
+    public final C<Params, Result> b(Params... paramsArr) {
         return a(j, paramsArr);
     }
 
-    public final c<Params, Result> a(Executor executor, Params... paramsArr) {
+    public final C<Params, Result> a(Executor executor, Params... paramsArr) {
         if (this.e != b.PENDING) {
             switch (this.e) {
                 case RUNNING:

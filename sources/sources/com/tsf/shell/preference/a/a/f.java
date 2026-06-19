@@ -15,10 +15,10 @@ public class f extends i {
     private int c;
 
     public f() {
-        a(b.i.text_preferences);
+        a(com.tsf.b.i.text_preferences);
         j jVar = new j();
         this.b = jVar;
-        jVar.h(b.i.mn_folder_animation);
+        jVar.h(com.tsf.b.i.mn_folder_animation);
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.f.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
@@ -33,10 +33,10 @@ public class f extends i {
         b(jVar);
         com.censivn.C3DEngine.b.e.a aVar = new com.censivn.C3DEngine.b.e.a();
         this.a = aVar;
-        aVar.h(b.i.mn_folder_auto_close);
-        aVar.i(b.i.mn_folder_auto_close_summary);
-        aVar.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.f.2
-            @Override // com.censivn.C3DEngine.b.e.a.C0027a
+        aVar.h(com.tsf.b.i.mn_folder_auto_close);
+        aVar.i(com.tsf.b.i.mn_folder_auto_close_summary);
+        aVar.a(new com.censivn.C3DEngine.b.e.a.C0027a() {
+            @Override
             public boolean a(boolean z) {
                 com.tsf.shell.manager.b.e.t(z);
                 return true;
@@ -48,15 +48,15 @@ public class f extends i {
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
         AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
-        builder.setTitle(b.i.mn_folder_animation);
+        builder.setTitle(com.tsf.b.i.mn_folder_animation);
         final int iAr = com.tsf.shell.manager.b.e.ar();
-        builder.setSingleChoiceItems(new String[]{x.c(b.i.mn_folder_animation_quick), x.c(b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.3
+        builder.setSingleChoiceItems(new String[]{x.c(com.tsf.b.i.mn_folder_animation_quick), x.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 f.this.c = i;
             }
         });
-        builder.setPositiveButton(b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.4
+        builder.setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.4
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (iAr != f.this.c) {
@@ -65,7 +65,7 @@ public class f extends i {
                 }
             }
         });
-        builder.setNegativeButton(b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.5
+        builder.setNegativeButton(com.tsf.b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.f.5
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
             }
@@ -76,10 +76,10 @@ public class f extends i {
     public void i() {
         switch (com.tsf.shell.manager.b.e.ar()) {
             case 0:
-                this.b.b(x.c(b.i.mn_folder_animation_quick));
+                this.b.b(x.c(com.tsf.b.i.mn_folder_animation_quick));
                 break;
             case 1:
-                this.b.b(x.c(b.i.mn_folder_animation_normal));
+                this.b.b(x.c(com.tsf.b.i.mn_folder_animation_normal));
                 break;
         }
     }

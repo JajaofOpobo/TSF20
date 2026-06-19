@@ -13,6 +13,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
+    public static Object B;
     private ArrayList<f> i = new ArrayList<>(42);
     public ArrayList<f> a = new ArrayList<>(42);
     public ArrayList<f> b = new ArrayList<>(42);

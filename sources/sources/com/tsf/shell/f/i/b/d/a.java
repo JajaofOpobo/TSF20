@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends com.censivn.C3DEngine.b.d.a {
     private static float[] l = {0.0f, 0.0f};
-    private b a;
+    private com.tsf.shell.f.i.b.d.b a;
     private com.censivn.C3DEngine.b.d.a b;
     private boolean d;
     private com.tsf.shell.manager.d.a.C0127a e;
@@ -27,7 +27,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     private boolean p;
     private Runnable q;
 
-    public a(com.censivn.C3DEngine.b.f.i iVar, b bVar) {
+    public a(com.censivn.C3DEngine.b.f.i iVar, com.tsf.shell.f.i.b.d.b bVar) {
         super(iVar);
         this.d = false;
         this.k = false;
@@ -63,7 +63,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
         l = x.a(motionEvent, l);
         this.i = motionEvent.getX();
         this.j = motionEvent.getY();
-        if (this.a.aV() == b.a) {
+        if (this.a.aV() == com.tsf.shell.f.i.b.d.b.a) {
             com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) this.c;
             if (com.tsf.shell.manager.a.A.a() && bVar.aC()) {
                 this.m = this.a.aF().a(this.c);
@@ -263,5 +263,14 @@ public class a extends com.censivn.C3DEngine.b.d.a {
     public void a(float f, float f2) {
         this.g = f;
         this.h = f2;
+    }
+
+    public static class b {
+        public static class c implements com.censivn.C3DEngine.b.g.b {
+            @Override
+            public float a(float f) {
+                return 0.0f;
+            }
+        }
     }
 }

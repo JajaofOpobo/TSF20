@@ -13,7 +13,7 @@ import com.tsf.shell.f.i.B;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends b {
+public class a extends B {
     public boolean a;
     public k b;
     public String f;
@@ -324,12 +324,12 @@ public class a extends b {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.8
             @Override // java.lang.Runnable
             public void run() {
-                if (a.this.e == null) {
-                    a.this.e = com.tsf.shell.f.e.b.a((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
-                    a.this.e.useVBO(false);
-                    a.this.e.textures().addElement(com.tsf.shell.f.e.b.h);
-                    a.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;
-                    this.addChild(a.this.e);
+                if (a.this._e == null) {
+                    a.this._e = com.tsf.shell.f.e.b.a((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    a.this._e.useVBO(false);
+                    a.this._e.textures().addElement(com.tsf.shell.f.e.b.h);
+                    a.this._e.position().y = (this.minY() + this.maxY()) / 2.0f;
+                    this.addChild(a.this._e);
                 }
             }
         });
@@ -340,11 +340,11 @@ public class a extends b {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.9
             @Override // java.lang.Runnable
             public void run() {
-                if (a.this.e != null) {
-                    a.this.e.textures().removeAll();
-                    a.this.e.removeFromParent();
-                    a.this.e.destroy();
-                    a.this.e = null;
+                if (a.this._e != null) {
+                    a.this._e.textures().removeAll();
+                    a.this._e.removeFromParent();
+                    a.this._e.destroy();
+                    a.this._e = null;
                 }
             }
         });

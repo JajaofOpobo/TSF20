@@ -20,7 +20,7 @@ public class a {
     public int t;
     public int a = 0;
     public int b = 0;
-    public int c = 12;
+    public int c_ = 12;
     public int d = -1;
     public boolean f = false;
     public boolean g = true;
@@ -68,7 +68,7 @@ public class a {
     }
 
     public void a(float f) {
-        this.c = (int) f;
+        this.c_ = (int) f;
     }
 
     public void b(float f) {
@@ -85,7 +85,7 @@ public class a {
     }
 
     public void h(int i) {
-        this.c = (int) (i * com.censivn.C3DEngine.b.b.A.c);
+        this.c_ = (int) (i * com.censivn.C3DEngine.b.b.A.c);
     }
 
     public void i(int i) {
@@ -128,7 +128,7 @@ public class a {
     }
 
     private TextPaint a() {
-        TextPaint textPaintA = a(this.c, this.d, this.e);
+        TextPaint textPaintA = a(this.c_, this.d, this.e);
         if (this.h != null) {
             textPaintA.setStyle(this.h);
         }

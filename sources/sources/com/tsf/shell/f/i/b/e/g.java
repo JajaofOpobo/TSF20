@@ -70,7 +70,7 @@ public class g extends a {
     public void aX() {
         if (!this.b) {
             this.b = true;
-            com.tsf.shell.manager.a.v.f.a((b) this);
+            com.tsf.shell.manager.a.v.f.a((com.tsf.shell.f.i.b.e.b) this);
         }
     }
 
@@ -111,7 +111,6 @@ public class g extends a {
         return this.a != null ? this.a.e : "";
     }
 
-    @Override // com.tsf.shell.f.f.a._a.b.a
     public String r_() {
         return r();
     }
@@ -223,7 +222,7 @@ public class g extends a {
         if (!be()) {
             com.tsf.shell.utils.a.a(bd().b.getPackageName());
         } else {
-            com.tsf.shell.e.a(b.i.notic_uninstall_error);
+            com.tsf.shell.E.a(com.tsf.b.i.notic_uninstall_error);
         }
     }
 
@@ -240,7 +239,7 @@ public class g extends a {
     @Override // com.tsf.shell.f.i.b.e.b
     public void l() {
         super.l();
-        if ((A() == null ? true : A().a((b) this)) && bd() != null) {
+        if ((A() == null ? true : A().a((com.tsf.shell.f.i.b.e.b) this)) && bd() != null) {
             bd().a();
         }
     }
@@ -253,13 +252,13 @@ public class g extends a {
 
     @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void n_() {
-        com.tsf.shell.d.a().a("WidgetShortcutApp");
+        com.tsf.shell.D.a().a("WidgetShortcutApp");
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
     public void c() {
-        com.tsf.shell.d.a().b("WidgetShortcutApp");
+        com.tsf.shell.D.a().b("WidgetShortcutApp");
         super.c();
     }
 

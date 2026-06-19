@@ -13,7 +13,7 @@ import com.tsf.shell.utils.x;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private int a;
-    private int b;
+    private int b_;
     private com.tsf.shell.A c;
     private boolean d;
     private Context e;
@@ -49,7 +49,7 @@ public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
                     return;
                 }
             }
-            if (i == this.b) {
+            if (i == this.b_) {
                 a aVarA = a(intent.getStringExtra("android.intent.extra.shortcut.NAME"), ((Intent) intent.getParcelableExtra("android.intent.extra.shortcut.INTENT")).toUri(0), intent);
                 if (this.d) {
                     Bitmap bitmap = (Bitmap) intent.getParcelableExtra("android.intent.extra.shortcut.ICON");
@@ -86,7 +86,7 @@ public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     }
 
     void a(Intent intent) {
-        this.b = this.c.a(intent, this);
+        this.b_ = this.c.a(intent, this);
     }
 
     public class a {

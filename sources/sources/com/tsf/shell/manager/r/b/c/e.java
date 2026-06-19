@@ -7,6 +7,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends com.tsf.shell.manager.r.b.b.a {
+    public interface a {
+        void b();
+    }
+
     private com.censivn.C3DEngine.b.h.b.h a;
     private ArrayList<com.tsf.shell.f.i.c.e> b;
     private float e;

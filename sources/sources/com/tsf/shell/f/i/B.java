@@ -3,7 +3,6 @@ package com.tsf.shell.f.i;
 import android.content.ContentValues;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.f;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
@@ -13,13 +12,14 @@ import com.tsf.shell.f.e.F;
 import com.tsf.shell.f.e.s;
 import com.tsf.shell.f.f.g;
 import com.tsf.shell.manager.bind.ShellModel;
+import com.tsf.shell.f.i.b.b.b;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class B extends j implements f {
+public class B extends j implements F, b {
     private ItemInfo a;
-    protected com.censivn.C3DEngine.b.f.b.a e;
-    private f j;
+    protected com.censivn.C3DEngine.b.f.b.a _e;
+    private F j;
     private int m;
     private com.tsf.shell.f.i.A q;
     private boolean r;
@@ -142,7 +142,7 @@ public class B extends j implements f {
             return false;
         }
         if (z() != null) {
-            if (z() == null || Math.abs(r1.g) <= 0.03d) {
+            if (z() == null || Math.abs(z().g) <= 0.03d) {
                 return super.calTouchCollision(f, f2);
             }
             return false;
@@ -169,7 +169,7 @@ public class B extends j implements f {
     public void onKillFocus() {
         super.onKillFocus();
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e.A.b();
         }
     }
 
@@ -195,12 +195,12 @@ public class B extends j implements f {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
             @Override // java.lang.Runnable
             public void run() {
-                if (b.this.e == null) {
-                    b.this.e = com.tsf.shell.f.e.b.a((int) ((-this.minX()) + this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-this.minY()) + this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
-                    b.this.e.useVBO(false);
-                    b.this.e.textures().addElement(com.tsf.shell.f.e.b.h);
-                    b.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;
-                    this.addChild(b.this.e);
+                if (B.this._e == null) {
+                    B.this._e = com.tsf.shell.f.e.B.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    B.this._e.useVBO(false);
+                    B.this._e.textures().addElement(com.tsf.shell.f.e.B.h);
+                    B.this._e.position().y = (B.this.minY() + B.this.maxY()) / 2.0f;
+                    B.this.addChild(B.this._e);
                 }
             }
         });
@@ -210,11 +210,11 @@ public class B extends j implements f {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
             @Override // java.lang.Runnable
             public void run() {
-                if (b.this.e != null) {
-                    b.this.e.textures().removeAll();
-                    b.this.e.removeFromParent();
-                    b.this.e.destroy();
-                    b.this.e = null;
+                if (B.this._e != null) {
+                    B.this._e.textures().removeAll();
+                    B.this._e.removeFromParent();
+                    B.this._e.destroy();
+                    B.this._e = null;
                 }
             }
         });
@@ -224,7 +224,7 @@ public class B extends j implements f {
         d(true);
     }
 
-    public void d(final boolean z) {
+    public void d(final boolean z2) {
         int i;
         if (rotation().z % 360.0f != 0.0f) {
             int iAbs = Math.abs(((int) rotation().z) / 360);
@@ -244,24 +244,24 @@ public class B extends j implements f {
             d dVar = new d() { // from class: com.tsf.shell.f.i.b.3
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    this.rotation().z = 0.0f;
-                    if (z) {
-                        b.this.ad();
+                    B.this.rotation().z = 0.0f;
+                    if (z2) {
+                        B.this.ad();
                     }
                 }
             };
-            dVar.e(i);
-            com.censivn.C3DEngine.b.g.c.a(this, 250, dVar);
+            dVar.e((float) i);
+            com.censivn.C3DEngine.b.g.C.a(this, 250, dVar);
         }
     }
 
     public void H() {
-        com.tsf.shell.f.e.a.a(this);
+        com.tsf.shell.f.e.A.a(this);
     }
 
     public void I() {
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e.A.b();
         }
     }
 
@@ -368,16 +368,16 @@ public class B extends j implements f {
 
     public void Z() {
         if (T()) {
-            s.a(this);
+            com.tsf.shell.f.e.s.a(this);
         }
     }
 
     public void aa() {
         if (T()) {
-            s.a();
+            com.tsf.shell.f.e.s.a();
         }
         if (this.r) {
-            com.tsf.shell.f.e.a.b();
+            com.tsf.shell.f.e.A.b();
         }
     }
 
@@ -393,7 +393,7 @@ public class B extends j implements f {
 
     public void ab() {
         if (T()) {
-            s.a();
+            com.tsf.shell.f.e.s.a();
         }
     }
 
@@ -424,7 +424,7 @@ public class B extends j implements f {
             rotation().z = itemInfoK.rotationH;
             a(itemInfoK.scaleH);
         }
-        float[] fArrA = com.tsf.shell.manager.r.a.a(this, position().x, position().y);
+        float[] fArrA = com.tsf.shell.manager.r.A.a(this, position().x, position().y);
         if (fArrA[0] == position().x && fArrA[1] == position().y) {
             return false;
         }
@@ -437,13 +437,13 @@ public class B extends j implements f {
         if (K() != null) {
             ContentValues contentValues = new ContentValues();
             K().onUpdateLayoutInformation(contentValues, this);
-            ShellModel.a.a(contentValues, K(), (Runnable) null);
+            K().updateDatabase(contentValues);
         }
     }
 
     public void a(ContentValues contentValues) {
         if (K() != null) {
-            ShellModel.a.a(contentValues, K(), (Runnable) null);
+            K().updateDatabase(contentValues);
         }
     }
 
@@ -506,38 +506,38 @@ public class B extends j implements f {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public f n() {
+    public F n() {
         return this.j;
     }
 
     @Override // com.tsf.shell.f.e.F
-    public boolean a(f fVar, float f, float f2) {
+    public boolean a(F fVar, float f, float f2) {
         return false;
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void c(f fVar) {
+    public void c(F fVar) {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void e(f fVar) {
+    public void e(F fVar) {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public boolean b(f fVar) {
+    public boolean b(F fVar) {
         return true;
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void d(f fVar) {
+    public void d(F fVar) {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void a(f fVar) {
+    public void a(F fVar) {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void f(f fVar) {
+    public void f(F fVar) {
         if (this.j != fVar) {
             p();
             fVar.a(this);
@@ -547,7 +547,7 @@ public class B extends j implements f {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public boolean h(f fVar) {
+    public boolean h(F fVar) {
         if (fVar == null) {
             return false;
         }
@@ -555,7 +555,7 @@ public class B extends j implements f {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public void g(f fVar) {
+    public void g(F fVar) {
         f(fVar);
         fVar.e(this);
         this.j = null;
@@ -574,22 +574,22 @@ public class B extends j implements f {
     }
 
     @Override // com.tsf.shell.f.e.F
-    public f a(int i, int i2) {
+    public F a(int i, int i2) {
         return a(i, i2, true);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public f a(int i, int i2, boolean z) {
+    public F a(int i, int i2, boolean z) {
         float f;
         float f2;
         float f3;
         float f4;
-        ArrayList<f> arrayListA = com.tsf.shell.manager.a.k.a();
+        ArrayList<F> arrayListA = com.tsf.shell.manager.a.k.a();
         int size = arrayListA.size() - 1;
         while (true) {
             int i3 = size;
             if (i3 > -1) {
-                f fVar = arrayListA.get(i3);
+                F fVar = arrayListA.get(i3);
                 if (fVar.a()) {
                     if (fVar.m() == 0) {
                         f3 = i;
@@ -598,7 +598,7 @@ public class B extends j implements f {
                         f3 = position().x;
                         f4 = position().y;
                     }
-                    if (((i) fVar).calTouchCollision(f3, f4) && !fVar.a(this, f3, f4)) {
+                    if (((com.censivn.C3DEngine.b.f.i) fVar).calTouchCollision(f3, f4) && !fVar.a(this, f3, f4)) {
                         return fVar;
                     }
                 }
@@ -606,7 +606,7 @@ public class B extends j implements f {
             } else {
                 if (z && com.tsf.shell.manager.a.h.m() == 2 && !com.tsf.shell.manager.a.h.n().ad()) {
                     for (i iVar : com.tsf.shell.manager.a.h.G()) {
-                        if ((iVar instanceof b) && iVar != this) {
+                        if ((iVar instanceof com.tsf.shell.f.i.b.b.b) && iVar != this) {
                             B bVar = (B) iVar;
                             if (bVar.a()) {
                                 if (bVar.m() == 0) {

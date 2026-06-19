@@ -9,6 +9,14 @@ public class g {
     public interface C extends BaseColumns {
     }
 
+    public static final class e implements C {
+        public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/favorites?notify=false");
+
+        public static Uri a(long j, boolean z) {
+            return Uri.parse("content://" + ShellProvider.a + "/favorites/" + j + "?notify=" + z);
+        }
+    }
+
     public static final class d {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/dock?notify=false");
     }

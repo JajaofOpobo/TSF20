@@ -19,6 +19,7 @@ public class A {
     public static final A.b o = new f();
 
     public static interface b {
+        float a(float f);
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.A$b$a, reason: collision with other inner class name */
         public static class C0032a implements A.b {
@@ -73,7 +74,7 @@ public class A {
         public static class b implements A.b {
             @Override // A.b
             public float a(float f) {
-                return (float) (2.0f * f < 1.0f ? Math.pow(2.0d, (r0 - 1.0f) * 10.0f) * 0.5d : (2.0d - Math.pow(2.0d, (r0 - 1.0f) * (-10.0f))) * 0.5d);
+                return (float) (2.0f * f < 1.0f ? Math.pow(2.0d, (f - 1.0f) * 10.0f) * 0.5d : (2.0d - Math.pow(2.0d, (f - 1.0f) * (-10.0f))) * 0.5d);
             }
         }
     }
@@ -161,6 +162,13 @@ public class A {
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.A$e$a, reason: collision with other inner class name */
         public static class C0036a implements A.b {
+            @Override // A.b
+            public float a(float f) {
+                return f;
+            }
+        }
+
+        public static class c implements A.b {
             @Override // A.b
             public float a(float f) {
                 return f;

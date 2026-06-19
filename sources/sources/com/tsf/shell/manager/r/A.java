@@ -3,6 +3,8 @@ package com.tsf.shell.manager.r;
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.shell.f.i.B;
+import com.tsf.shell.f.i.b.b.b;
+import com.tsf.shell.f.i.b.b.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A {

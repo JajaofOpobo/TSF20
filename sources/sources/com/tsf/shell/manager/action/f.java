@@ -14,7 +14,7 @@ public class f {
     private static float c;
     private static float d;
     private static float e;
-    private static float f;
+    private static float f_;
     private static float g;
     private static float h;
     private static float i;
@@ -25,8 +25,8 @@ public class f {
     private static float q;
     private static float r;
     private static long t;
-    private static boolean a = false;
-    private static boolean b = false;
+    private static boolean a_ = false;
+    private static boolean b_ = false;
     private static float k = 150.0f;
     private static boolean o = false;
     private static boolean p = false;
@@ -184,18 +184,18 @@ public class f {
                             }
                             return;
                         }
-                        if (!a) {
-                            a = true;
-                            b = false;
+                        if (!a_) {
+                            a_ = true;
+                            b_ = false;
                             c = motionEvent.getX(0);
                             d = motionEvent.getY(0);
                             e = motionEvent.getX(1);
-                            f = motionEvent.getY(1);
+                            f_ = motionEvent.getY(1);
                             j = x.b(motionEvent.getX(0), motionEvent.getY(0), motionEvent.getX(1), motionEvent.getY(1));
                         }
-                        if (a && !b) {
+                        if (a_ && !b_) {
                             g = x.b(c, d, motionEvent.getX(0), motionEvent.getY(0));
-                            h = x.b(e, f, motionEvent.getX(1), motionEvent.getY(1));
+                            h = x.b(e, f_, motionEvent.getX(1), motionEvent.getY(1));
                             i = x.b(motionEvent.getX(0), motionEvent.getY(0), motionEvent.getX(1), motionEvent.getY(1));
                             if (Math.abs(g) <= k || Math.abs(h) <= k) {
                                 if (Math.abs(i - j) > k) {
@@ -206,13 +206,13 @@ public class f {
                                     } else if (b(0)) {
                                         com.censivn.C3DEngine.a.d.d().k();
                                     }
-                                    b = true;
+                                    b_ = true;
                                     return;
                                 }
                                 return;
                             }
                             float fC = x.c(motionEvent.getX(0), motionEvent.getY(0), c, d);
-                            float fC2 = x.c(motionEvent.getX(1), motionEvent.getY(1), e, f);
+                            float fC2 = x.c(motionEvent.getX(1), motionEvent.getY(1), e, f_);
                             int iA = a(fC);
                             if (iA == a(fC2)) {
                                 switch (iA) {
@@ -229,7 +229,7 @@ public class f {
                                         b(5);
                                         break;
                                 }
-                                b = true;
+                                b_ = true;
                                 return;
                             }
                             return;
@@ -245,7 +245,7 @@ public class f {
                 case 6:
                     break;
             }
-            a = false;
+            a_ = false;
         }
     }
 

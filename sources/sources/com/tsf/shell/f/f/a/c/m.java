@@ -9,7 +9,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class m extends i {
     private com.censivn.C3DEngine.b.h.e.a g;
-    private com.tsf.shell.f.f.a.d.a h;
+    private com.tsf.shell.f.f.a.d.A h;
     private ArrayList<com.tsf.shell.f.g.a.h> i;
     private com.tsf.shell.f.g.a.h j;
     private com.censivn.C3DEngine.b.f.m k;
