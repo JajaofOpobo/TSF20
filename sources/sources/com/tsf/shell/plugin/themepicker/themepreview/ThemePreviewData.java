@@ -24,7 +24,7 @@ public class ThemePreviewData extends ThemePreviewConfig {
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(f.h.theme_preview_info_dialog, viewGroup);
         Context contextA = com.tsf.shell.plugin.themepicker.ThemePickerRenderer.a(i(), this.ai);
         ((TextView) viewInflate.findViewById(f.C0155f.textView1)).setText((String) contextA.getApplicationInfo().loadLabel(i().getPackageManager()));

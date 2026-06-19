@@ -29,7 +29,7 @@ public abstract class ThemeUtilsProcessor {
 
     protected abstract Bitmap a(Object obj);
 
-    protected f(Context context) {
+    protected ThemeUtilsProcessor(Context context) {
         this.d = context.getResources();
     }
 
@@ -97,38 +97,38 @@ public abstract class ThemeUtilsProcessor {
         private Object e;
         private final WeakReference<ImageView> f;
 
-        public ThemeUtilsProcessor(Object obj, ImageView imageView) {
+        public b(Object obj, ImageView imageView) {
             this.e = obj;
             this.f = new WeakReference<>(imageView);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
-        public class BitmapDrawable 
+        public BitmapDrawable a(Void... voidArr) {
             BitmapDrawable gVar = null;
             com.tsf.shell.plugin.themepicker.ThemePickerEvent.a("ImageWorker", "doInBackground - starting work");
             String strValueOf = String.valueOf(this.e);
-            synchronized (f.this.h) {
-                    while (f.this.c_ && !c()) {
+            synchronized (ThemeUtilsProcessor.this.h) {
+                    while (ThemeUtilsProcessor.this.c_ && !c()) {
                     try {
-                        f.this.h.wait();
+                        ThemeUtilsProcessor.this.h.wait();
                     } catch (InterruptedException e) {
                     }
                 }
             }
             com.tsf.shell.plugin.themepicker.ThemePickerEvent.c("", "doInBackground Thread isRunning...");
-            Bitmap bitmapB = (f.this.a == null || c() || d() == null || f.this.g) ? null : f.this.a.b(strValueOf);
-            if (bitmapB == null && !c() && d() != null && !f.this.g) {
-                bitmapB = f.this.a(this.e);
+            Bitmap bitmapB = (ThemeUtilsProcessor.this.a == null || c() || d() == null || ThemeUtilsProcessor.this.g) ? null : ThemeUtilsProcessor.this.a.b(strValueOf);
+            if (bitmapB == null && !c() && d() != null && !ThemeUtilsProcessor.this.g) {
+                bitmapB = ThemeUtilsProcessor.this.a(this.e);
             }
             if (bitmapB != null) {
                 if (ThemeUtilsConstants.c()) {
-                    gVar = new BitmapDrawable(f.this.d, bitmapB);
+                    gVar = new BitmapDrawable(ThemeUtilsProcessor.this.d, bitmapB);
                 } else {
-                    gVar = new ThemeUtilsDrawable(f.this.d, bitmapB);
+                    gVar = new ThemeUtilsDrawable(ThemeUtilsProcessor.this.d, bitmapB);
                 }
-                if (f.this.a != null) {
-                    f.this.a.a(strValueOf, gVar);
+                if (ThemeUtilsProcessor.this.a != null) {
+                    ThemeUtilsProcessor.this.a.a(strValueOf, gVar);
                 }
             }
             com.tsf.shell.plugin.themepicker.ThemePickerEvent.a("ImageWorker", "doInBackground - finished work");
@@ -138,25 +138,25 @@ public abstract class ThemeUtilsProcessor {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void a(BitmapDrawable bitmapDrawable) {
-            if (c() || f.this.g) {
+            if (c() || ThemeUtilsProcessor.this.g) {
                 bitmapDrawable = null;
             }
             ImageView imageViewD = d();
             if (bitmapDrawable != null && imageViewD != null) {
                 com.tsf.shell.plugin.themepicker.ThemePickerEvent.a("ImageWorker", "onPostExecute - setting bitmap");
-                f.this.a(imageViewD, bitmapDrawable);
+                ThemeUtilsProcessor.this.a(imageViewD, bitmapDrawable);
             } else {
                 com.tsf.shell.plugin.themepicker.ThemePickerEvent.c("", "onPostExecute Thread set Bitmap miss...---------------");
             }
-            f.this.g();
+            ThemeUtilsProcessor.this.g();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void b(BitmapDrawable bitmapDrawable) {
             super.b(bitmapDrawable);
-            synchronized (f.this.h) {
-                f.this.h.notifyAll();
+            synchronized (ThemeUtilsProcessor.this.h) {
+                ThemeUtilsProcessor.this.h.notifyAll();
             }
         }
 
@@ -172,7 +172,7 @@ public abstract class ThemeUtilsProcessor {
     private static class a extends BitmapDrawable {
         private final WeakReference<b> a;
 
-        public ThemeUtilsProcessor(Resources resources, Bitmap bitmap, b bVar) {
+        public a(Resources resources, Bitmap bitmap, b bVar) {
             super(resources, bitmap);
             this.a = new WeakReference<>(bVar);
         }
@@ -216,16 +216,16 @@ public abstract class ThemeUtilsProcessor {
         public Void c() {
             switch (((Integer) objArr[0]).intValue()) {
                 case 0:
-                    f.this.b();
+                    ThemeUtilsProcessor.this.b();
                     break;
                 case 1:
-                    f.this.a();
+                    ThemeUtilsProcessor.this.a();
                     break;
                 case 2:
-                    f.this.c();
+                    ThemeUtilsProcessor.this.c();
                     break;
                 case 3:
-                    f.this.d();
+                    ThemeUtilsProcessor.this.d();
                     break;
             }
             return null;

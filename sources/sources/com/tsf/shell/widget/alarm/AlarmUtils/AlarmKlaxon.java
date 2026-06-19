@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmUtils;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -10,7 +10,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-import com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.Alarm;
 import com.tsf.shell.widget.alarm.AlarmState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -26,7 +25,7 @@ public class AlarmKlaxon {
     }
 
     private static class a extends SQLiteOpenHelper {
-        public AlarmKlaxon(Context context) {
+        public a(Context context) {
             super(context, "alarms.db", (SQLiteDatabase.CursorFactory) null, 5);
         }
 
@@ -56,7 +55,7 @@ public class AlarmKlaxon {
         this.b = new a(this.c);
     }
 
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
         switch (d.match(uri)) {
             case 1:
@@ -92,7 +91,7 @@ public class AlarmKlaxon {
         }
     }
 
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         ContentValues contentValues2;
         if (d.match(uri) != 1) {
             throw new IllegalArgumentException("Cannot insert into URL: " + uri);

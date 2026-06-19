@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmTouchManagerrovider;
+package com.tsf.shell.widget.alarm.provider;
 
 import android.content.ContentValues;
 import android.content.Context;

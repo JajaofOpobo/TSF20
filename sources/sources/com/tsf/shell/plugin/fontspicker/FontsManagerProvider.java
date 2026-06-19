@@ -39,7 +39,7 @@ public class FontsManagerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public String c() {
+    public String getType(Uri uri) {
         return null;
     }
 
@@ -51,7 +51,7 @@ public class FontsManagerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         long jReplace = this.b.getWritableDatabase().replace("fonts", "_id", contentValues);
         if (jReplace > 0) {
             Uri uriWithAppendedId = ContentUris.withAppendedId(FontPickerContract.d, jReplace);
@@ -62,7 +62,7 @@ public class FontsManagerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         Cursor cursorQuery = this.b.getWritableDatabase().query("fonts", null, str, strArr2, null, null, str2);
         getContext().getContentResolver().notifyChange(uri, null);
         return cursorQuery;

@@ -35,7 +35,7 @@ public class AlarmDataManager extends AlarmDataEntry {
         bitmapE.recycle();
     }
 
-    public class Bitmap 
+    public Bitmap e() {
         Paint paint = new Paint();
         paint.setTextSize(20.0f);
         paint.setColor(com.tsf.shell.widget.alarm.d.a.f);

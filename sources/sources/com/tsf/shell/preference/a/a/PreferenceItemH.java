@@ -148,7 +148,7 @@ public class PreferenceItemH extends i {
         private TextureElement d;
         private int e = 0;
 
-        public PreferenceItemH() {
+        public A() {
             A();
         }
 

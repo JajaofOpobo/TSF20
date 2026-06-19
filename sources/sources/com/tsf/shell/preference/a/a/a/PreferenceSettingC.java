@@ -20,7 +20,7 @@ public class PreferenceSettingC extends PreferenceSettingBase {
         public TextureElement a;
         public com.censivn.C3DEngine.b.f.k d;
 
-        public PreferenceSettingC(int i, String str) {
+        public a(int i, String str) {
             this.a = i;
             this.b = str;
         }

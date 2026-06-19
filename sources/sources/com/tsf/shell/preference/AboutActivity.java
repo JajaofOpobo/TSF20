@@ -81,7 +81,7 @@ public class AboutActivity extends FragmentActivity {
         static class C0160a implements TabHost.TabContentFactory {
             private final Context a;
 
-            public a(Context context) {
+            public C0160a(Context context) {
                 this.a = context;
             }
 

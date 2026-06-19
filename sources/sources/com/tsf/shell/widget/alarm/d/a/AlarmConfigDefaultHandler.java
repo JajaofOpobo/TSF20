@@ -63,7 +63,7 @@ public class AlarmConfigDefaultHandler extends DefaultHandler {
         return Math.round(((i - 32) * 5) / 9.0f);
     }
 
-    public class String 
+    public String a(String str) {
         try {
             return String.valueOf(a(Integer.parseInt(str)));
         } catch (Exception e) {

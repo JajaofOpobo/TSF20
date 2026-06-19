@@ -51,14 +51,14 @@ public class FontPickerConfig {
         private com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a e;
         private final WeakReference<TextView> f;
 
-        public FontPickerConfig(com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a c0152a, TextView textView) {
+        public a(com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a c0152a, TextView textView) {
             this.e = c0152a;
             this.f = new WeakReference<>(textView);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
-        public class Typeface 
+        public Typeface a() {
             try {
                 Thread.sleep(10L);
             } catch (InterruptedException e) {

@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.ThemePickerManagercondesigner;
+package com.tsf.shell.plugin.themepicker.icondesigner;
 
 import android.graphics.Bitmap;
 
@@ -6,9 +6,9 @@ import android.graphics.Bitmap;
 public class IconDesignerData {
     public String a;
     public int b;
-    public String a;
+    public String c;
     public float d;
-    public String a;
-    public boolean e = false;
-    public class Bitmap 
+    public String e;
+    public boolean f = false;
+    public Bitmap g;
 }

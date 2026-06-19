@@ -66,7 +66,7 @@ public class DimensionParser {
         float a;
         int b;
 
-        public DimensionParser(float f, int i) {
+        public a(float f, int i) {
             this.a = f;
             this.b = i;
         }

@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmUtils;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -26,7 +26,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     private static class a extends SQLiteOpenHelper {
-        public AlarmProvider(Context context) {
+        public a(Context context) {
             super(context, "alarms.db", (SQLiteDatabase.CursorFactory) null, 5);
         }
 
@@ -55,7 +55,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
         switch (b.match(uri)) {
             case 1:
@@ -107,7 +107,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         ContentValues contentValues2;
         if (b.match(uri) != 1) {
             throw new IllegalArgumentException("Cannot insert into URL: " + uri);

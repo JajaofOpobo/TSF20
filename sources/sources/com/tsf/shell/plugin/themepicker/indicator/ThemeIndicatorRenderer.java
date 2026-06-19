@@ -17,7 +17,7 @@ class ThemeIndicatorRenderer extends LinearLayout {
     private int e;
     private int f;
 
-    public b(Context context, int i) {
+    public ThemeIndicatorRenderer(Context context, int i) {
         super(context);
         TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(null, a, i, 0);
         setDividerDrawable(typedArrayObtainStyledAttributes.getDrawable(0));

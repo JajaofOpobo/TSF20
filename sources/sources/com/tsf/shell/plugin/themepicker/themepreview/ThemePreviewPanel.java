@@ -99,7 +99,7 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("ThemePreviewLocalFragment onCreateView");
         this.b = (ViewGroup) layoutInflater.inflate(f.h.theme_preview_fragment_layout, viewGroup, false);
         M();
@@ -153,7 +153,7 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
         private int e = 0;
         private AbsListView.LayoutParams f;
 
-        public ThemePreviewPanel(List<ThemePreviewConfig.e> list, Context context) {
+        public b(List<ThemePreviewConfig.e> list, Context context) {
             this.b = list;
             this.c = context;
         }

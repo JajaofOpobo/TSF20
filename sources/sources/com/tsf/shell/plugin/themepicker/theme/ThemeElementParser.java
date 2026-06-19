@@ -12,7 +12,7 @@ import com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter;
 public class ThemeElementParser extends f {
     private PackageManager a;
 
-    protected a(PackageManager packageManager, Context context) {
+    public ThemeElementParser(PackageManager packageManager, Context context) {
         super(context);
         this.a = packageManager;
     }

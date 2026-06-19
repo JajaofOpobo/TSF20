@@ -25,7 +25,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         private m d;
         private float e;
 
-        public PreferenceSettingA(String str) {
+        public C0162a(String str) {
             super(com.censivn.C3DEngine.b.b.A.a(167.0f), com.censivn.C3DEngine.b.b.A.a(164.0f), false);
             this.e = ((-com.censivn.C3DEngine.b.b.A.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(20.0f);
             textures().addElement(a.this.f);

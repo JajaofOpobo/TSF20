@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ThemePreviewManager extends com.tsf.shell.plugin.themepicker.utils.SelectionDotRenderer {
     private Context e;
 
-    protected b(Context context, int i, int i2) {
+    protected ThemePreviewManager(Context context, int i, int i2) {
         super(context, i, i2);
         this.e = context;
     }
@@ -121,7 +121,7 @@ public class ThemePreviewManager extends com.tsf.shell.plugin.themepicker.utils.
         public String a;
         public int b;
 
-        public ThemePreviewManager(String str, int i) {
+        public a(String str, int i) {
             this.b = 0;
             this.a = str;
             this.b = i;

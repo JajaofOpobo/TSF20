@@ -143,7 +143,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     class a extends BaseAdapter {
         ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
-        public PlaceSearchActivity() {
+        public a() {
         }
 
         public void a(ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayList) {

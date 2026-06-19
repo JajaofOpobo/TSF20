@@ -98,7 +98,7 @@ public class AlarmComponentProvider extends VRectangle {
     }
 
     class a extends VMouseEventListener {
-        public AlarmComponentProvider(VObject3d vObject3d) {
+        public a(VObject3d vObject3d) {
             super(vObject3d);
         }
 

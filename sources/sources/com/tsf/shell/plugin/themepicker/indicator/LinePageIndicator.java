@@ -315,7 +315,7 @@ public class LinePageIndicator extends View implements ThemeIndicatorPageChange 
     }
 
     @Override // android.view.View
-    public class Parcelable 
+    public Parcelable onSaveInstanceState() {
         SavedState savedState = new SavedState(super.onSaveInstanceState());
         savedState.a = this.e;
         return savedState;

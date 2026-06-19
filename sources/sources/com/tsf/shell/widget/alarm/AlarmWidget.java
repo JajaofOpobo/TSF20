@@ -356,7 +356,7 @@ public class AlarmWidget extends VWidgetContainer {
     }
 
     class SettingFilter extends IntentFilter {
-        public AlarmWidget() {
+        public SettingFilter() {
             addAction("com.tsf.shell.widget.alarm.SettingOnChange");
             addAction(AlarmWidget.y);
             addAction(AlarmWidget.z);

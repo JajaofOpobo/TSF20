@@ -72,7 +72,7 @@ public class AlarmComponentListener extends VButton {
     }
 
     class a extends VMouseEventListener {
-        public AlarmComponentListener(VObject3d vObject3d) {
+        public a(VObject3d vObject3d) {
             super(vObject3d);
         }
 

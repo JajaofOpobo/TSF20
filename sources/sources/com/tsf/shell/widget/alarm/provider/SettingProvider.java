@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmTouchManagerrovider;
+package com.tsf.shell.widget.alarm.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SettingProvider extends ContentProvider {
-    public static final String a = "CREATE TABLE settings(_id INTEGER PRIMARY KEY," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.a + " INTEGER," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.b + " INTEGER," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.c + " TEXT," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.d + " TEXT," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.e + " INTEGER," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.f + " INTEGER," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.g + " TEXT," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.h + " REAL," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.i + " REAL," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.j + " INTEGER," + com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.k + " INTEGER); ";
+    public static final String a = "CREATE TABLE settings(_id INTEGER PRIMARY KEY," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.a + " INTEGER," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.b + " INTEGER," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.c + " TEXT," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.d + " TEXT," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.e + " INTEGER," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.f + " INTEGER," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.g + " TEXT," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.h + " REAL," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.i + " REAL," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.j + " INTEGER," + com.tsf.shell.widget.alarm.provider.AlarmProviderContract.k + " INTEGER); ";
     private AtomicInteger b = new AtomicInteger();
     private a c;
     private SQLiteDatabase d;
@@ -59,11 +59,10 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         long jReplace = a().replace("settings", "_id", contentValues);
-        Uri();
         if (jReplace > 0) {
-            Uri uriWithAppendedId = ContentUris.withAppendedId(com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.l, jReplace);
+            Uri uriWithAppendedId = ContentUris.withAppendedId(com.tsf.shell.widget.alarm.provider.AlarmProviderContract.l, jReplace);
             getContext().getContentResolver().notifyChange(uriWithAppendedId, null);
             return uriWithAppendedId;
         }
@@ -71,7 +70,7 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         Cursor cursorQuery = a().query("settings", null, str, strArr2, null, null, str2);
         getContext().getContentResolver().notifyChange(uri, null);
         return cursorQuery;
@@ -81,7 +80,7 @@ public class SettingProvider extends ContentProvider {
     public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         int iUpdate = a().update("settings", contentValues, str, strArr);
         getContext().getContentResolver().notifyChange(uri, null);
-        Cursor();
+        a();
         return iUpdate;
     }
 

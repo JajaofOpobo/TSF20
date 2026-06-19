@@ -31,7 +31,7 @@ public class FloatingWidgetProvider {
         return aVar;
     }
 
-    public class Bitmap 
+    public Bitmap a(String str) {
         InputStream inputStreamOpenRawResource;
         Throwable th;
         Bitmap bitmapDecodeStream = null;
@@ -74,7 +74,7 @@ public class FloatingWidgetProvider {
         return bitmapDecodeStream;
     }
 
-    public Bitmap c() {
+    public Bitmap c(int i) {
                 return a(this.d.get(i).b);
     }
 }

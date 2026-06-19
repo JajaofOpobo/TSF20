@@ -33,8 +33,8 @@ public class ThemePickerRenderer {
 
     public static class e {
         public String a;
-        public String a;
-        public class String 
+        public String b;
+        public String toString() { return this.a; }
     }
 
     public interface f {
@@ -121,7 +121,7 @@ public class ThemePickerRenderer {
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
-        public class Void 
+        public Void a(Void... voidArr) {
             Context contextA = k.a(this.f, this.a);
             if (contextA != null) {
                 String strD = k.d(contextA);
@@ -151,7 +151,7 @@ public class ThemePickerRenderer {
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
-        public class Void 
+        public Void a(Void... voidArr) {
             Context contextA = k.a(this.f, this.a);
             if (contextA != null) {
                 String strD = k.d(contextA);

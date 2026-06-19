@@ -116,7 +116,7 @@ public class WidgetVisualRenderer extends f {
         private float d;
         private float e;
 
-        public WidgetVisualRenderer(float f, float f2) {
+        public d(float f, float f2) {
             super(f, f2);
             this.d = 0.1f;
             this.e = 0.0f;
@@ -140,7 +140,7 @@ public class WidgetVisualRenderer extends f {
     }
 
     class b extends com.censivn.C3DEngine.b.d.a {
-        public WidgetVisualRenderer(i iVar) {
+        public b(i iVar) {
             super(iVar);
         }
 
@@ -167,7 +167,7 @@ public class WidgetVisualRenderer extends f {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public class Number3d 
+        public Number3d l(MotionEvent motionEvent) {
             Number3d number3d = new Number3d(0.0f, 0.0f, 0.0f);
             float screenHeight = VInformation.getScreenHeight();
             number3d.x = motionEvent.getX() - (VInformation.getScreenWidth() / 2.0f);
@@ -185,7 +185,7 @@ public class WidgetVisualRenderer extends f {
         private int g;
         private int h;
 
-        public WidgetVisualRenderer() {
+        public a() {
             super(35, 1, 1, 1, null, true);
             this.d = 0;
             this.e = (int) com.censivn.C3DEngine.b.b.A.a(150.0f);

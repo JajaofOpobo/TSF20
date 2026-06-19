@@ -4,5 +4,4 @@ package com.tsf.shell.f;
 public class ShellNodeData {
     public d b;
     public Object a;
-    public class Object 
 }

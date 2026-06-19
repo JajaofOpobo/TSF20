@@ -124,7 +124,7 @@ public class AlarmComponentPanel extends VObject3dContainer {
     }
 
     class a extends VMouseEventListener {
-        public AlarmComponentPanel(VObject3d vObject3d) {
+        public a(VObject3d vObject3d) {
             super(vObject3d);
         }
 

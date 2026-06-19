@@ -23,7 +23,7 @@ public class CubeClockProviderHelper {
         }
     }
 
-    public class String 
+    public String a() {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("mode", this.b);

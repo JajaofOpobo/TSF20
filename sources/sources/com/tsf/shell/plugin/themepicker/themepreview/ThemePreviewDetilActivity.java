@@ -65,7 +65,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         private ArrayList<Integer> b;
         private String c;
 
-        public ThemePreviewDetilActivity(o oVar, ArrayList<Integer> arrayList, String str) {
+        public a(o oVar, ArrayList<Integer> arrayList, String str) {
             super(oVar);
             this.b = arrayList;
             this.c = str;
@@ -101,7 +101,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         }
 
         @Override // android.support.v4.app.Fragment
-        public class View 
+        public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
             ViewGroup viewGroup2 = (ViewGroup) layoutInflater.inflate(f.h.theme_preview_detil_fragment_image, viewGroup, false);
             ThemePreviewDetilActivity.m.a(new ThemePreviewManager.a((String) h().get("packagename"), ((Integer) h().get("resource")).intValue()), (ImageView) viewGroup2.findViewById(f.C0155f.imageView1));
             return viewGroup2;

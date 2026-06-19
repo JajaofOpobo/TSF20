@@ -34,15 +34,15 @@ public class ThemeUtilsRenderer {
     private boolean f = true;
     private Set<SoftReference<Bitmap>> g;
 
-    private c(a aVar) {
+    private ThemeUtilsRenderer(a aVar) {
         a(aVar);
     }
 
-    public static c a(o oVar, a aVar) {
+    public static ThemeUtilsRenderer a(o oVar, a aVar) {
         b bVarA = a(oVar);
-        c cVar = (c) bVarA.a();
+        ThemeUtilsRenderer cVar = (ThemeUtilsRenderer) bVarA.c();
         if (cVar == null) {
-            c cVar2 = new c(aVar);
+            ThemeUtilsRenderer cVar2 = new ThemeUtilsRenderer(aVar);
             bVarA.a(cVar2);
             return cVar2;
         }
@@ -63,7 +63,7 @@ public class ThemeUtilsRenderer {
                     if (ThemeUtilsDrawable.class.isInstance(bitmapDrawable)) {
                         ((g) bitmapDrawable).b(false);
                     } else if (ThemeUtilsConstants.c()) {
-                        c.this.g.add(new SoftReference(bitmapDrawable.getBitmap()));
+                        ThemeUtilsRenderer.this.g.add(new SoftReference(bitmapDrawable.getBitmap()));
                     }
                 }
 
@@ -71,7 +71,7 @@ public class ThemeUtilsRenderer {
                 @Override // android.support.v4.d.f
                 /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                 public int b(String str, BitmapDrawable bitmapDrawable) {
-                    int iA = c.a(bitmapDrawable) / 1024;
+                    int iA = ThemeUtilsRenderer.a(bitmapDrawable) / 1024;
                     if (iA == 0) {
                         return 1;
                     }
@@ -80,7 +80,7 @@ public class ThemeUtilsRenderer {
             };
         }
         if (aVar.h) {
-            ThemeUtilsRenderer();
+            a();
         }
     }
 
@@ -266,7 +266,7 @@ public class ThemeUtilsRenderer {
         }
     }
 
-    public class BitmapDrawable 
+    public BitmapDrawable a(String str) {
         BitmapDrawable bitmapDrawableA = null;
         if (this.c != null) {
             bitmapDrawableA = this.c.a(str);
@@ -477,16 +477,16 @@ public class ThemeUtilsRenderer {
 
     public static class a {
         public File a;
-        public int a = 5120;
+        public int b = 5120;
         public int b = 10485760;
-        public Bitmap.CompressFormat d = c.a;
+        public Bitmap.CompressFormat d = ThemeUtilsRenderer.a;
         public int e = 70;
         public boolean f = true;
         public boolean g = true;
         public boolean h = false;
 
-        public ThemeUtilsRenderer(Context context, String str) {
-            this.c = c.a(context, str);
+        public a(Context context, String str) {
+            this.a = ThemeUtilsRenderer.a(context, str);
         }
 
         public void a(float f) {

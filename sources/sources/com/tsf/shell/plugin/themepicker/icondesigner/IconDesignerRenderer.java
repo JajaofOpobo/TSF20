@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.ThemePickerManagercondesigner;
+package com.tsf.shell.plugin.themepicker.icondesigner;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -32,7 +32,7 @@ public class IconDesignerRenderer {
         return arrayListA;
     }
 
-    public class Bitmap 
+    public Bitmap a(Context context, String str, int i) {
         long jCurrentTimeMillis = System.currentTimeMillis();
         ArrayList<Integer> arrayListA = a(context, str);
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("parse cost :" + (System.currentTimeMillis() - jCurrentTimeMillis) + "   size:" + arrayListA.size());

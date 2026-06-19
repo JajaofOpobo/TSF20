@@ -35,7 +35,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
     class a extends BaseAdapter {
         ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
-        public PlaceSelectActivity() {
+        public a() {
             a();
         }
 

@@ -45,13 +45,13 @@ public final class ThemeUtilsManager implements Closeable {
     private final Callable<Void> n = new Callable<Void>() { // from class: com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver.1
         @Override // java.util.concurrent.Callable
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public class Void 
-            synchronized (b.this) {
-                if (b.this.i != null) {
-                    b.this.i();
-                    if (b.this.g()) {
-                        b.this.f();
-                        b.this.k = 0;
+        public Void call() {
+            synchronized (ThemeUtilsManager.this) {
+                if (ThemeUtilsManager.this.i != null) {
+                    ThemeUtilsManager.this.i();
+                    if (ThemeUtilsManager.this.g()) {
+                        ThemeUtilsManager.this.f();
+                        ThemeUtilsManager.this.k = 0;
                     }
                 }
             }
@@ -119,7 +119,7 @@ public final class ThemeUtilsManager implements Closeable {
         }
     }
 
-    private b(File file, int i, int i2, long j) {
+    private ThemeUtilsManager(File file, int i, int i2, long j) {
         this.b = file;
         this.e = i;
         this.c = new File(file, "journal");
@@ -480,9 +480,9 @@ public final class ThemeUtilsManager implements Closeable {
             this.b = c0159b;
         }
 
-        public class OutputStream 
+        public OutputStream a(int i) throws IOException {
             C0158a c0158a;
-            synchronized (b.this) {
+            synchronized (ThemeUtilsManager.this) {
                 if (this.b.e != this) {
                     throw new IllegalStateException();
                 }
@@ -493,15 +493,15 @@ public final class ThemeUtilsManager implements Closeable {
 
         public void a() {
             if (this.c) {
-                b.this.a(this, false);
-                b.this.c(this.b.b);
+                ThemeUtilsManager.this.a(this, false);
+                ThemeUtilsManager.this.c(this.b.b);
             } else {
-                b.this.a(this, true);
+                ThemeUtilsManager.this.a(this, true);
             }
         }
 
         public void b() {
-            b.this.a(this, false);
+            ThemeUtilsManager.this.a(this, false);
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver$a$a, reason: collision with other inner class name */
@@ -558,10 +558,10 @@ public final class ThemeUtilsManager implements Closeable {
 
         private C0159b(String str) {
             this.b = str;
-            this.c = new long[b.this.g];
+            this.c = new long[ThemeUtilsManager.this.g];
         }
 
-        public class String 
+        public String a() {
             StringBuilder sb = new StringBuilder();
             for (long j : this.c) {
                 sb.append(' ').append(j);
@@ -571,7 +571,7 @@ public final class ThemeUtilsManager implements Closeable {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void a(String[] strArr) throws IOException {
-            if (strArr.length != b.this.g) {
+            if (strArr.length != ThemeUtilsManager.this.g) {
                 throw b(strArr);
             }
             for (int i = 0; i < strArr.length; i++) {
@@ -587,12 +587,12 @@ public final class ThemeUtilsManager implements Closeable {
             throw new IOException("unexpected journal line: " + Arrays.toString(strArr));
         }
 
-        public File c() {
-            return new File(b.this.b, this.b + "." + i);
+        public File a(int i) {
+            return new File(ThemeUtilsManager.this.b, this.b + "." + i);
         }
 
-        public File c() {
-            return new File(b.this.b, this.b + "." + i + ".tmp");
+        public File b(int i) {
+            return new File(ThemeUtilsManager.this.b, this.b + "." + i + ".tmp");
         }
     }
 }

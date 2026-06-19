@@ -42,10 +42,10 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
     private final AtomicBoolean l = new AtomicBoolean();
     private final e<Params, Result> h = new e<Params, Result>() { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.2
         @Override // java.util.concurrent.Callable
-        public class Result 
-            a.this.l.set(true);
+        public Result call() {
+            ThemeUtilsParser.this.l.set(true);
             Process.setThreadPriority(10);
-            return (Result) a.this.d(a.this.a((Object[]) this.b));
+            return (Result) ThemeUtilsParser.this.d(ThemeUtilsParser.this.a((Object[]) this.b));
         }
     };
     private final FutureTask<Result> i = new FutureTask<Result>(this.h) { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.3
@@ -121,7 +121,7 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public class Result 
+    private Result d(Result result) {
         ThemeUtilsProcessor.obtainMessage(1, new C0157a(this, result)).sendToTarget();
         return result;
     }

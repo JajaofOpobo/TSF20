@@ -38,7 +38,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(f.h.theme_preview_gallery_fragment, viewGroup, false);
         this.a = (GridView) viewInflate.findViewById(f.C0155f.gridView);
         this.a.setAdapter((ListAdapter) this.b);
@@ -51,16 +51,16 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int width = b.this.a.getWidth() - iApplyDimension3;
+                int width = WallpaperManager.this.a.getWidth() - iApplyDimension3;
                 int iFloor = (int) Math.floor(width / (iApplyDimension + iApplyDimension2));
                 if (iFloor > 0) {
                     int i = (width / iFloor) - iApplyDimension2;
-                    b.this.b.b(iFloor);
-                    b.this.b.a(dimensionPixelSize);
+                    WallpaperManager.this.b.b(iFloor);
+                    WallpaperManager.this.b.a(dimensionPixelSize);
                     if (h.e()) {
-                        b.this.a.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        WallpaperManager.this.a.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
-                        b.this.a.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                        WallpaperManager.this.a.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     }
                 }
             }
@@ -80,7 +80,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
         private ResolveInfo[] g;
         private PackageManager h;
 
-        public WallpaperManager(Context context) {
+        public a(Context context) {
             this.b = context;
             this.h = context.getPackageManager();
             this.c = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -192,7 +192,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
                 Intent intent = new Intent("android.intent.action.SET_WALLPAPER");
                 intent.setPackage(resolveInfo.activityInfo.packageName);
                 e.b("packageName:" + resolveInfo.activityInfo.packageName);
-                b.this.i().startActivity(intent);
+                WallpaperManager.this.i().startActivity(intent);
             }
         }
     }

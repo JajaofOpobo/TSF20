@@ -68,13 +68,13 @@ public class ActionSelector extends FragmentActivity {
     private class b extends q implements com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelectorCallback {
         private final Context b;
 
-        public ActionSelector(Context context, o oVar) {
+        public b(Context context, o oVar) {
             super(oVar);
             this.b = context;
         }
 
         @Override // android.support.v4.app.q
-        public class Fragment 
+        public Fragment getItem(int i) {
             a aVar = new ActionSelectorAdapter();
             Bundle bundle = new Bundle();
             bundle.putInt("num", i);
@@ -88,7 +88,7 @@ public class ActionSelector extends FragmentActivity {
         }
 
         @Override // com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelectorCallback
-        public class TextView 
+        public TextView getTabView(int i) {
             TextView textView = (TextView) LayoutInflater.from(this.b).inflate(ActionSelectorCallback.g.swipey_tab_indicator, (ViewGroup) swipeyTabs, false);
             textView.setText(ActionSelector.this.m[i]);
             textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelector.b.1

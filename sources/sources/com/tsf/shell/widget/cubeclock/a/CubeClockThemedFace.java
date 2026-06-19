@@ -63,7 +63,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         private float c;
         private float d;
 
-        public CubeClockThemedFace(VObject3d vObject3d) {
+        public C0181b(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
             this.c = 416.0f * b.this.l.p;
@@ -258,7 +258,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         public int c = -1;
         public int d;
 
-        public CubeClockThemedFace(int i) {
+        public a(int i) {
             this.d = i;
         }
 

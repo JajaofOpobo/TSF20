@@ -37,13 +37,13 @@ public class AlarmDataFilter extends AlarmDataEntry {
         this.p = str4;
         Bitmap bitmapE = e();
         synchronized (this) {
-            AlarmDataFilter();
+            e();
             this.k = this.j.createTexture(bitmapE, true);
         }
         bitmapE.recycle();
     }
 
-    public class Bitmap 
+    public Bitmap e() {
         Paint paint = new Paint();
         paint.setTextSize(36.0f * f);
         paint.setColor(com.tsf.shell.widget.alarm.d.a.f);

@@ -48,7 +48,7 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
 
     /* JADX INFO: renamed from: com.tsf.shell.widget.alarm.c.AlarmComponentContainer$a, reason: collision with other inner class name */
     class C0174a extends VMouseEventListener {
-        public AlarmComponentContainer(VObject3d vObject3d) {
+        public C0174a(VObject3d vObject3d) {
             super(vObject3d);
         }
 

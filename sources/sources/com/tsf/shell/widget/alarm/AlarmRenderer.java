@@ -189,7 +189,7 @@ public class AlarmRenderer implements AlarmWidget.b {
         private com.tsf.shell.widget.alarm.b.AlarmDataEntry b;
         private boolean c;
 
-        public AlarmRenderer(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
+        public A(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
             this.b = eVar;
             this.c = z;
             setEase(101);
@@ -215,11 +215,11 @@ public class AlarmRenderer implements AlarmWidget.b {
         private AlarmDataProvider.a d;
         private boolean e;
 
-        public AlarmRenderer(f fVar, VRectangle vRectangle, AlarmDataProvider.a aVar, int i) {
+        public B(f fVar, VRectangle vRectangle, AlarmDataProvider.a aVar, int i) {
             this(vRectangle, null, aVar, i, false);
         }
 
-        public AlarmRenderer(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
+        public B(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
             setTimeout(i);
             setScaleX(0.0f);
             setScaleY(0.0f);

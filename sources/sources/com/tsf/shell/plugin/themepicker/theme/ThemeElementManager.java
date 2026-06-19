@@ -54,7 +54,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(f.h.theme_perview_icon_fragment, viewGroup, false);
         this.b = (GridView) viewInflate.findViewById(f.C0155f.gridView);
         this.b.setAdapter((ListAdapter) this.f);
@@ -111,7 +111,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public ThemeElementManager(Context context, List<ResolveInfo> list) {
+        public a(Context context, List<ResolveInfo> list) {
             this.f = 0;
             this.g = list;
             this.b = context;
@@ -159,7 +159,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View getView(int i, View view, ViewGroup viewGroup) {
             ImageView imageView;
             View view2;
             View view3 = view;

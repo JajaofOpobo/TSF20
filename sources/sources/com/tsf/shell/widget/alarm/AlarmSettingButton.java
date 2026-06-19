@@ -66,7 +66,7 @@ public class AlarmSettingButton extends VRectangle {
         boolean a = false;
         private VObject3d c;
 
-        public AlarmSettingButton(VObject3d vObject3d) {
+        public B(VObject3d vObject3d) {
             this.c = vObject3d;
             VTween.killTween(q.this);
             VTween.to(q.this, 1000, this);
@@ -122,7 +122,7 @@ public class AlarmSettingButton extends VRectangle {
         boolean a = false;
         private VObject3d c;
 
-        public AlarmSettingButton(VObject3d vObject3d) {
+        public A(VObject3d vObject3d) {
             this.c = vObject3d;
             setEase(300);
             VTween.killTween(q.this);

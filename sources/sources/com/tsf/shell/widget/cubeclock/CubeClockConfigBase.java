@@ -7,7 +7,7 @@ abstract class CubeClockConfigBase {
     protected TextureElement a;
     protected c b;
 
-    public g(c cVar) {
+    public CubeClockConfigBase(c cVar) {
         this.b = cVar;
     }
 

@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmUtils;
 
 import android.app.Activity;
 import android.app.Notification;

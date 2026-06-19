@@ -68,7 +68,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(f.h.theme_perview_wallpaper_fragment, viewGroup, false);
         this.f = (GridView) viewInflate.findViewById(f.C0155f.gridView);
         this.f.setAdapter((ListAdapter) this.d);
@@ -77,9 +77,9 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
             @Override // android.widget.AbsListView.OnScrollListener
             public void onScrollStateChanged(AbsListView absListView, int i) {
                 if (i != 2) {
-                    d.this.e.b(false);
+                    WallpaperRenderer.this.e.b(false);
                 } else if (!h.c()) {
-                    d.this.e.b(true);
+                    WallpaperRenderer.this.e.b(true);
                 }
             }
 
@@ -91,15 +91,15 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int iFloor = (int) Math.floor(d.this.f.getWidth() / (d.this.a + d.this.c));
+                int iFloor = (int) Math.floor(WallpaperRenderer.this.f.getWidth() / (WallpaperRenderer.this.a + WallpaperRenderer.this.c));
                 if (iFloor > 0) {
-                    int width = (d.this.f.getWidth() / iFloor) - d.this.c;
-                    d.this.d.b(iFloor);
-                    d.this.d.a(width);
+                    int width = (WallpaperRenderer.this.f.getWidth() / iFloor) - WallpaperRenderer.this.c;
+                    WallpaperRenderer.this.d.b(iFloor);
+                    WallpaperRenderer.this.d.a(width);
                     if (h.e()) {
-                        d.this.f.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        WallpaperRenderer.this.f.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
-                        d.this.f.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                        WallpaperRenderer.this.f.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     }
                 }
             }
@@ -142,7 +142,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public WallpaperRenderer(Context context) {
+        public a(Context context) {
             this.f = 0;
             this.b = context;
             this.f = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -199,7 +199,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View getView(int i, View view, ViewGroup viewGroup) {
             ImageView imageView;
             View view2;
             View view3 = view;
@@ -221,7 +221,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
                 if (imageView.getLayoutParams().height != this.c) {
                     imageView.setLayoutParams(this.d);
                 }
-                d.this.e.a(Integer.valueOf(this.g[i - this.e]), imageView);
+                WallpaperRenderer.this.e.a(Integer.valueOf(this.g[i - this.e]), imageView);
                 view2 = imageView;
             }
             return view2;
@@ -230,7 +230,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         public void a(int i) {
             if (i != this.c) {
                 this.c = i;
-                this.d = new AbsListView.LayoutParams(-1, d.this.b);
+                this.d = new AbsListView.LayoutParams(-1, WallpaperRenderer.this.b);
                 notifyDataSetChanged();
             }
         }
@@ -249,9 +249,9 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         }
 
         private void c(int i) {
-            WallpaperManager wallpaperManager = WallpaperManager.getInstance(d.this.i());
+            WallpaperManager wallpaperManager = WallpaperManager.getInstance(WallpaperRenderer.this.i());
             try {
-                InputStream inputStreamA = d.this.a(i);
+                InputStream inputStreamA = WallpaperRenderer.this.a(i);
                 wallpaperManager.setStream(inputStreamA);
                 if (inputStreamA != null) {
                     try {
@@ -266,8 +266,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public class InputStream 
+    public InputStream a(int i) {
         try {
             return k.a(i(), this.h.activityInfo.packageName).getResources().openRawResource(i);
         } catch (Exception e) {
@@ -283,21 +282,21 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
                 @Override // java.lang.Runnable
                 public void run() {
                     if (list != null) {
-                        d.this.d.a(list);
+                        WallpaperRenderer.this.d.a(list);
                     }
                     if (str != null) {
-                        d.this.i.setText(str);
-                        d.this.i.setVisibility(0);
+                        WallpaperRenderer.this.i.setText(str);
+                        WallpaperRenderer.this.i.setVisibility(0);
                     }
                     if (str2 != null) {
-                        d.this.ai.setText(str2);
-                        d.this.ai.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.wallpaper.WallpaperRenderer.3.1
+                        WallpaperRenderer.this.ai.setText(str2);
+                        WallpaperRenderer.this.ai.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.wallpaper.WallpaperRenderer.3.1
                             @Override // android.view.View.OnClickListener
                             public void onClick(View view) {
-                                d.this.i().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str2)));
+                                WallpaperRenderer.this.i().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str2)));
                             }
                         });
-                        d.this.ai.setVisibility(0);
+                        WallpaperRenderer.this.ai.setVisibility(0);
                     }
                 }
             });

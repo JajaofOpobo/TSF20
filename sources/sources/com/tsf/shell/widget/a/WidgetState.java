@@ -19,7 +19,7 @@ public class WidgetState {
         }
     }
 
-    public class String 
+    public String toString() {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put(c, this.a);

@@ -44,7 +44,7 @@ public class ThemePluginParser extends ArrayAdapter<c> {
     }
 
     @Override // android.widget.ArrayAdapter, android.widget.Adapter
-    public class View 
+    public View getView(int i, View view, ViewGroup viewGroup) {
         c cVar;
         if (view == null) {
             view = ((LayoutInflater) this.c.getSystemService("layout_inflater")).inflate(ThemePluginManager.g.theme_element_item, (ViewGroup) null);

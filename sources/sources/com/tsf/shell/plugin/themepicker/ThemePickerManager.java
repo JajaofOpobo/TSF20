@@ -68,7 +68,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(ThemePickerResources.h.theme_perview_icon_fragment, viewGroup, false);
         this.e = (GridView) viewInflate.findViewById(ThemePickerResources.C0155f.gridView);
         this.e.setAdapter((ListAdapter) this.c);
@@ -143,7 +143,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public ThemePickerManager(Context context) {
+        public a(Context context) {
             this.f = 0;
             this.b = context;
             this.f = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -215,7 +215,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View getView(int i, View view, ViewGroup viewGroup) {
             ImageView imageView;
             View view2;
             View view3 = view;

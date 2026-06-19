@@ -35,29 +35,29 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
     }
 
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(ThemePickerResources.h.theme_preview_gallery_fragment, viewGroup, false);
         this.a = (GridView) viewInflate.findViewById(ThemePickerResources.C0155f.gridView);
         this.a.setAdapter((ListAdapter) this.b);
         this.a.setOnItemClickListener(this.b);
-        final int iApplyDimension = (int) TypedValue.applyDimension(1, 150.0f, j().getDisplayMetrics());
-        final int dimensionPixelSize = j().getDimensionPixelSize(ThemePickerResources.d.theme_app_height_size);
-        final int iApplyDimension2 = (int) TypedValue.applyDimension(1, 10.0f, j().getDisplayMetrics());
-        final int iApplyDimension3 = (int) TypedValue.applyDimension(1, 20.0f, j().getDisplayMetrics());
+        final int iApplyDimension = (int) TypedValue.applyDimension(1, 150.0f, getResources().getDisplayMetrics());
+        final int dimensionPixelSize = getResources().getDimensionPixelSize(ThemePickerResources.d.theme_app_height_size);
+        final int iApplyDimension2 = (int) TypedValue.applyDimension(1, 10.0f, getResources().getDisplayMetrics());
+        final int iApplyDimension3 = (int) TypedValue.applyDimension(1, 20.0f, getResources().getDisplayMetrics());
         this.a.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerProvider.1
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int width = b.this.a.getWidth() - iApplyDimension3;
+                int width = ThemePickerProvider.this.a.getWidth() - iApplyDimension3;
                 int iFloor = (int) Math.floor(width / (iApplyDimension + iApplyDimension2));
                 if (iFloor > 0) {
                     int i = (width / iFloor) - iApplyDimension2;
-                    b.this.b.b(iFloor);
-                    b.this.b.a(dimensionPixelSize);
+                    ThemePickerProvider.this.b.b(iFloor);
+                    ThemePickerProvider.this.b.a(dimensionPixelSize);
                     if (com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.e()) {
-                        b.this.a.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        ThemePickerProvider.this.a.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
-                        b.this.a.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                        ThemePickerProvider.this.a.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     }
                 }
             }
@@ -77,7 +77,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
         private ResolveInfo[] g;
         private PackageManager h;
 
-        public ThemePickerProvider(Context context) {
+        public a(Context context) {
             this.b = context;
             this.h = context.getPackageManager();
             this.c = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -178,14 +178,14 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
             intent.addCategory("android.intent.category.OPENABLE");
             intent.setType("image/*");
             intent.setPackage(resolveInfo.activityInfo.packageName);
-            b.this.i().startActivityForResult(intent, 100);
+            ThemePickerProvider.this.getActivity().startActivityForResult(intent, 100);
         }
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         if (view.getId() == ThemePickerResources.C0155f.linearLayout1) {
-            b.a aVarI = i();
+            Object aVarI = getActivity();
             if (aVarI instanceof SildingMenuLayout.d) {
                 ((SildingMenuLayout.d) aVarI).h();
             }

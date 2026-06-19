@@ -53,16 +53,15 @@ public class FontPickerRenderer {
         return iDelete;
     }
 
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         long jReplace = a().replace("fonts", "_id", contentValues);
-        Uri();
         if (jReplace > 0) {
             return ContentUris.withAppendedId(FontPickerContract.d, jReplace);
         }
         throw new SQLException("Failed to insert row into" + uri);
     }
 
-    public Cursor c() {
+    public Cursor c(String str, String[] strArr2, String str2) {
         return a().query("fonts", null, str, strArr2, null, null, str2);
     }
 

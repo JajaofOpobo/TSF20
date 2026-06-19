@@ -226,7 +226,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View getView(int i, View view, ViewGroup viewGroup) {
             Context context = viewGroup.getContext();
             if (view == null) {
                 view = LayoutInflater.from(context).inflate(b.g.plugin_floating_widget_picker_cover_list_item, (ViewGroup) null);
@@ -259,7 +259,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View getView(int i, View view, ViewGroup viewGroup) {
             Context context = viewGroup.getContext();
             if (view == null) {
                 view = LayoutInflater.from(context).inflate(b.g.plugin_floating_widget_picker_content_list_item, (ViewGroup) null);

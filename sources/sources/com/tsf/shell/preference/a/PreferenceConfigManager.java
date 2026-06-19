@@ -33,7 +33,7 @@ public class PreferenceConfigManager {
         return this.b;
     }
 
-    public class TextureElement 
+    public b a(int i) {
         b bVar = this.a.get(i);
         bVar.a();
         return bVar;

@@ -238,7 +238,7 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         int c;
         private double e;
 
-        public AlarmContainer(VObject3d vObject3d) {
+        public C0173a(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
             this.c = 1;

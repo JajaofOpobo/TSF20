@@ -653,7 +653,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
     }
 
     @Override // android.view.View
-    public class Parcelable 
+    public Parcelable onSaveInstanceState() {
         SavedState savedState = new SavedState(super.onSaveInstanceState());
         savedState.a = this.c;
         return savedState;

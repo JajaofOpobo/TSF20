@@ -139,7 +139,7 @@ public class VideoViwerActivity extends Activity {
     }
 
     private class a extends BaseAdapter {
-        public VideoViwerActivity() {
+        public a() {
         }
 
         @Override // android.widget.Adapter

@@ -23,8 +23,8 @@ public class WallpaperConfig extends r {
     }
 
     @Override // android.support.v4.app.r
-    public class Fragment 
-        d dVar = new WallpaperRenderer();
+    public Fragment getItem(int i) {
+        WallpaperRenderer dVar = new WallpaperRenderer();
         Bundle bundle = new Bundle();
         bundle.putInt("PageIndex", i);
         bundle.putParcelable("resolveInfo", this.a.get(i));

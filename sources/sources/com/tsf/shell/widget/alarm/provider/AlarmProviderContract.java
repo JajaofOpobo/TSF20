@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmTouchManagerrovider;
+package com.tsf.shell.widget.alarm.provider;
 
 import android.net.Uri;
 import android.provider.BaseColumns;

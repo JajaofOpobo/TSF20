@@ -78,12 +78,12 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public String c() {
+    public String getType(Uri uri) {
         return null;
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         ContentValues contentValues2;
         if (CubeClockProviderContract.match(uri) != 1) {
             throw new IllegalArgumentException("Unknown URI " + uri);
@@ -110,7 +110,7 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
         switch (CubeClockProviderContract.match(uri)) {
             case 1:

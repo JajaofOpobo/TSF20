@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.ThemePickerManagercondesigner;
+package com.tsf.shell.plugin.themepicker.icondesigner;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -64,7 +64,7 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         long jReplace = this.c.getWritableDatabase().replace(a(uri), "_id", contentValues);
         if (jReplace > 0) {
             Uri uriWithAppendedId = ContentUris.withAppendedId(IconDesignerBaseColumns.g, jReplace);
@@ -75,8 +75,8 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
-        Cursor cursorQuery = this.c.getWritableDatabase().query(a(uri), null, str, strArr2, null, null, str2);
+    public Cursor query(Uri uri, String[] projection, String str, String[] strArr2, String str2) {
+        Cursor cursorQuery = this.c.getWritableDatabase().query(a(uri), projection, str, strArr2, null, null, str2);
         getContext().getContentResolver().notifyChange(uri, null);
         return cursorQuery;
     }
