@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.h.b.g;
 import com.tsf.shell.manager.app.b;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.x;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class c {
     private static d g;
     private static a i;
     private static ArrayList<com.tsf.shell.f.i._b.e.g> j;
-    private static ArrayList<f> k;
+    private static ArrayList<LauncherAppInfo> k;
     private static b.a l;
     private static float a = 0.0f;
     private static boolean h = false;
@@ -150,7 +150,7 @@ public class c {
         }
     }
 
-    public static void a(a aVar, ArrayList<f> arrayList) {
+    public static void a(a aVar, ArrayList<LauncherAppInfo> arrayList) {
         if (j != null) {
             j.clear();
         }

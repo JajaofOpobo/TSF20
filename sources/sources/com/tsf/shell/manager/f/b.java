@@ -176,7 +176,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
             this.j = com.tsf.shell.f.f.j.c(this.a);
             com.tsf.shell.manager.app.t.b(com.tsf.shell.f.f.j.c(), this.j.b);
             if (b == 3) {
-                com.tsf.shell.manager.app.f.g().dispatchDraw();
+                com.tsf.shell.manager.app.LauncherAppInfo.g().dispatchDraw();
                 com.tsf.shell.manager.app.t.b();
             }
         }
@@ -215,7 +215,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
 
     public TextureElement a(com.tsf.shell.f.e._g.d dVar) {
         b = 3;
-        com.tsf.shell.manager.app.f.a(this);
+        com.tsf.shell.manager.app.LauncherAppInfo.a(this);
         if (this.g.a()) {
             return this.g.b();
         }
@@ -226,7 +226,7 @@ public class b extends j implements e.a, ShellWallpaperManager.a {
     public void b(com.tsf.shell.f.e._g.d dVar) {
         this.l = false;
         b = 0;
-        com.tsf.shell.manager.app.f.b(this);
+        com.tsf.shell.manager.app.LauncherAppInfo.b(this);
         if (this.j != null) {
         }
     }

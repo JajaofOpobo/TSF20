@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.r.a;
 
 import android.view.View;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.manager.r.a.a;
 import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;
@@ -41,8 +41,8 @@ public class b {
         }
     }
 
-    public void a(ArrayList<f> arrayList) {
-        Iterator<f> it = arrayList.iterator();
+    public void a(ArrayList<LauncherAppInfo> arrayList) {
+        Iterator<LauncherAppInfo> it = arrayList.iterator();
         while (it.hasNext()) {
             String packageName = it.next().b.getPackageName();
             for (com.tsf.shell.f.i.b.b.a aVar : this.b) {

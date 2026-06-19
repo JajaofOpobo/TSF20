@@ -104,7 +104,7 @@ public class B {
             bVarA.h();
         }
         if (z) {
-            com.tsf.shell.manager.app.f.g().addChild(aVar2);
+            com.tsf.shell.manager.app.LauncherAppInfo.g().addChild(aVar2);
         } else {
             com.tsf.shell.manager.app.j.a(aVar2);
         }

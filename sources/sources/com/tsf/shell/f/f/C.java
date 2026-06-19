@@ -5,9 +5,9 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class C<E> {
-    private ArrayList<f> b;
-    private ArrayList<f> c;
-    private ArrayList<f> d;
+    private ArrayList<LauncherAppInfo> b;
+    private ArrayList<LauncherAppInfo> c;
+    private ArrayList<LauncherAppInfo> d;
     private f e;
     private boolean a = false;
     private boolean f = false;
@@ -20,14 +20,14 @@ public abstract class C<E> {
 
     public abstract String c();
 
-    public C(ArrayList<f> arrayList) {
+    public C(ArrayList<LauncherAppInfo> arrayList) {
         a(arrayList);
     }
 
     public C() {
     }
 
-    public void a(ArrayList<f> arrayList) {
+    public void a(ArrayList<LauncherAppInfo> arrayList) {
         this.b = arrayList;
         a();
     }
@@ -70,7 +70,7 @@ public abstract class C<E> {
             }
             return;
         }
-        Iterator<f> it = this.c.iterator();
+        Iterator<LauncherAppInfo> it = this.c.iterator();
         while (it.hasNext()) {
             it.next().a(false);
         }
@@ -87,7 +87,7 @@ public abstract class C<E> {
 
     /* JADX WARN: Type inference failed for: r0v4, types: [E, com.tsf.shell.f.f.f] */
     private E c(int i) {
-        Iterator<f> it = this.b.iterator();
+        Iterator<LauncherAppInfo> it = this.b.iterator();
         while (it.hasNext()) {
             E r0 = (E) ((f) it.next());
             if (r0.k() == i) {

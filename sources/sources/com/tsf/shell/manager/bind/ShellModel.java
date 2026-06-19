@@ -807,14 +807,14 @@ public class ShellModel extends BroadcastReceiver {
             if (listQueryIntentActivities != null) {
                 for (int i = 0; i < listQueryIntentActivities.size(); i++) {
                     ResolveInfo resolveInfo = listQueryIntentActivities.get(i);
-                    com.tsf.shell.manager.app.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
+                    com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
                     if (fVarB == null) {
-                        ShellModel.this._a.c(new com.tsf.shell.manager.app.f(resolveInfo));
+                        ShellModel.this._a.c(new com.tsf.shell.manager.app.LauncherAppInfo(resolveInfo));
                     } else {
                         ShellModel.this._a.e(fVarB);
                     }
                 }
-                ArrayList<com.tsf.shell.manager.app.f> arrayList = ShellModel.this._a.b;
+                ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList = ShellModel.this._a.b;
                 ShellModel.this._a.b = new ArrayList<>();
                 ShellModel.this.o.a(arrayList);
             }
@@ -833,10 +833,10 @@ public class ShellModel extends BroadcastReceiver {
                 for (int i2 = 0; i2 < listQueryIntentActivities2.size(); i2++) {
                     ResolveInfo resolveInfo2 = listQueryIntentActivities2.get(i2);
                     if (com.tsf.shell.manager.bind.a.c().c(new ComponentName(resolveInfo2.activityInfo.applicationInfo.packageName, resolveInfo2.activityInfo.name)) == null) {
-                        ShellModel.this._a.f(new com.tsf.shell.manager.app.f(resolveInfo2));
+                        ShellModel.this._a.f(new com.tsf.shell.manager.app.LauncherAppInfo(resolveInfo2));
                     }
                 }
-                ArrayList<com.tsf.shell.manager.app.f> arrayList2 = ShellModel.this._a.f;
+                ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList2 = ShellModel.this._a.f;
                 ShellModel.this._a.f = new ArrayList<>();
                 com.tsf.shell.manager.app.i.a(arrayList2);
             }
@@ -858,12 +858,12 @@ public class ShellModel extends BroadcastReceiver {
 
         @Override // java.lang.Runnable
         public void run() {
-            ArrayList<com.tsf.shell.manager.app.f> arrayList;
-            ArrayList<com.tsf.shell.manager.app.f> arrayList2;
-            ArrayList<com.tsf.shell.manager.app.f> arrayList3;
-            ArrayList<com.tsf.shell.manager.app.f> arrayList4;
-            ArrayList<com.tsf.shell.manager.app.f> arrayList5;
-            ArrayList<com.tsf.shell.manager.app.f> arrayList6;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList2;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList3;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList4;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList5;
+            ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList6;
             Context context = ShellModel.this.d;
             String[] strArr = this.b;
             switch (this.a) {
@@ -915,7 +915,7 @@ public class ShellModel extends BroadcastReceiver {
                 arrayList5 = null;
             }
             if (ShellModel.this._a.h.size() > 0) {
-                ArrayList<com.tsf.shell.manager.app.f> arrayList7 = ShellModel.this._a.h;
+                ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList7 = ShellModel.this._a.h;
                 ShellModel.this._a.h = new ArrayList<>();
                 arrayList6 = arrayList7;
             } else {

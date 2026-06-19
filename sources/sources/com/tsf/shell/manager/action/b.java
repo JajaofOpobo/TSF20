@@ -211,7 +211,7 @@ public class b {
                 Home.b().a(intent, (Object) null);
                 break;
             case 1700:
-                com.tsf.shell.manager.app.f.a().show();
+                com.tsf.shell.manager.app.LauncherAppInfo.a().show();
                 break;
             case 1800:
                 com.tsf.shell.manager.app.B.c().d();

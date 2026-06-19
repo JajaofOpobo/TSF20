@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class c implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     public static c a;
     public static a b;
-    private static ArrayList<f> c;
+    private static ArrayList<LauncherAppInfo> c;
     private static ArrayList<Integer> d;
     private static boolean e = false;
     private static int f;

@@ -49,7 +49,7 @@ public class a extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.manager.app.h.s().d(motionEvent);
         }
         if (this.a) {
-            com.tsf.shell.manager.app.f.c().sendWallpaperCommand(Home.b().l().getWindowToken(), "android.wallpaper.tap", (int) motionEvent.getX(), (int) motionEvent.getY(), 0, null);
+            com.tsf.shell.manager.app.LauncherAppInfo.c().sendWallpaperCommand(Home.b().l().getWindowToken(), "android.wallpaper.tap", (int) motionEvent.getX(), (int) motionEvent.getY(), 0, null);
         }
     }
 

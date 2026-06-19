@@ -8,7 +8,7 @@ public class e extends C<l> {
     private boolean b;
     private boolean c;
 
-    public e(ArrayList<f> arrayList) {
+    public e(ArrayList<LauncherAppInfo> arrayList) {
         super(arrayList);
         this.a = false;
         this.b = false;

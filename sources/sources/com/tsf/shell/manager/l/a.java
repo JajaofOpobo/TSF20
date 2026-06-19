@@ -199,8 +199,8 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     }
 
     public static void a() {
-        ArrayList<com.tsf.shell.manager.app.f> arrayList = (ArrayList) com.tsf.shell.manager.bind.a.c().a.clone();
-        for (com.tsf.shell.manager.app.f fVar : arrayList) {
+        ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList = (ArrayList) com.tsf.shell.manager.bind.a.c().a.clone();
+        for (com.tsf.shell.manager.app.LauncherAppInfo fVar : arrayList) {
             if (fVar.h() > 0) {
                 fVar.f();
             }
@@ -225,7 +225,7 @@ public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
         ArrayList arrayList = (ArrayList) com.tsf.shell.manager.bind.a.c().a.clone();
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            ((com.tsf.shell.manager.app.f) it.next()).f();
+            ((com.tsf.shell.manager.app.LauncherAppInfo) it.next()).f();
         }
         arrayList.clear();
         HashMap map = new HashMap();

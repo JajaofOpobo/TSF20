@@ -101,7 +101,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
         j.a aVarA = a(z, false);
         this.I = aVarA;
         if (z) {
-            com.tsf.shell.manager.app.f.g().visible(false);
+            com.tsf.shell.manager.app.LauncherAppInfo.g().visible(false);
         }
         return aVarA;
     }
@@ -109,7 +109,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
     public void h() {
         this.H = false;
         mouseEnabled(true);
-        com.tsf.shell.manager.app.f.g().visible(true);
+        com.tsf.shell.manager.app.LauncherAppInfo.g().visible(true);
         if (this.I != null) {
             this.I.a = null;
         }
@@ -172,7 +172,7 @@ public class g extends com.censivn.C3DEngine.b.f.j implements e.a, A.InterfaceC0
             position().setAll(0.0f, 0.0f, 0.0f);
             com.tsf.shell.manager.app.t.b(j.c(), aVarC.b);
             if (z) {
-                com.tsf.shell.manager.app.f.a(this);
+                com.tsf.shell.manager.app.LauncherAppInfo.a(this);
             }
             boolean zVisible = this.c.visible();
             this.c.visible(true);

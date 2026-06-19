@@ -48,7 +48,7 @@ public class c extends f {
         com.tsf.shell.e.e eVar = (com.tsf.shell.e.e) gLSurfaceView.getParent();
         com.tsf.shell.manager.app.o = new com.tsf.shell.f.h.b();
         com.tsf.shell.manager.app.n = new com.tsf.shell.manager.m.b();
-        com.tsf.shell.manager.app.f = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
+        com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
         com.tsf.shell.manager.app.j = new d(eVar);
         com.tsf.shell.manager.app.h = new n();
         com.tsf.shell.manager.app.p = new com.tsf.shell.f.e.e.c();
@@ -87,7 +87,7 @@ public class c extends f {
         this.e = new j();
         com.tsf.shell.manager.p.c.a();
         com.tsf.shell.manager.app.p.a();
-        com.tsf.shell.manager.app.f.b();
+        com.tsf.shell.manager.app.LauncherAppInfo.b();
         com.tsf.shell.manager.app.j.a(this.a);
         this.c = com.tsf.shell.manager.app.h.f();
         com.tsf.shell.manager.app.o.a(this.e);
@@ -96,7 +96,7 @@ public class c extends f {
         com.tsf.shell.manager.app.i.a();
         com.tsf.shell.manager.app.l.b();
         com.tsf.shell.manager.app.q.a(this.d);
-        com.tsf.shell.manager.app.e.addChild(com.tsf.shell.manager.app.f.g());
+        com.tsf.shell.manager.app.e.addChild(com.tsf.shell.manager.app.LauncherAppInfo.g());
         com.tsf.shell.manager.app.e.addChild(this.c);
         com.tsf.shell.manager.app.e.addChild(this.d);
         this.a.addChild(com.tsf.shell.manager.app.e);

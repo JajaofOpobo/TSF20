@@ -143,8 +143,8 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             } catch (Exception e2) {
                 e2.printStackTrace();
             }
-            if (com.tsf.shell.manager.app.f != null) {
-                com.tsf.shell.manager.app.f.e();
+            if (com.tsf.shell.manager.app.LauncherAppInfo != null) {
+                com.tsf.shell.manager.app.LauncherAppInfo.e();
             }
         }
     }

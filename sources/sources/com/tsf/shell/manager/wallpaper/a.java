@@ -55,7 +55,7 @@ public class a extends VObject3dContainer {
         private TextureElement m;
         private TextureElement n;
         private TextureElement o;
-        private boolean p = com.tsf.shell.manager.app.f.f();
+        private boolean p = com.tsf.shell.manager.app.LauncherAppInfo.f();
         public f a = com.censivn.C3DEngine.A.g();
 
         public b(Context context, float f, float f2) {

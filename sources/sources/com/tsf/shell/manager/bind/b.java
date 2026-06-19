@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.tsf.shell.f.i.c.g;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.manager.r.c.a.a;
 import java.util.ArrayList;
 
@@ -106,19 +106,19 @@ public class b {
         });
     }
 
-    public void a(ArrayList<f> arrayList) {
+    public void a(ArrayList<LauncherAppInfo> arrayList) {
         this.c.a(arrayList);
     }
 
-    public void a(ArrayList<f> arrayList, boolean z) {
+    public void a(ArrayList<LauncherAppInfo> arrayList, boolean z) {
         this.c.a(arrayList, z);
     }
 
-    public void b(ArrayList<f> arrayList) {
+    public void b(ArrayList<LauncherAppInfo> arrayList) {
         this.c.b(arrayList);
     }
 
-    public void b(ArrayList<f> arrayList, boolean z) {
+    public void b(ArrayList<LauncherAppInfo> arrayList, boolean z) {
         this.c.b(arrayList, z);
     }
 

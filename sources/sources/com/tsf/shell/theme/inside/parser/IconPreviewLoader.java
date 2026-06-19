@@ -7,7 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import com.tsf.shell.f.i.b.e.g;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.k;
 import java.io.IOException;
@@ -88,7 +88,7 @@ public class IconPreviewLoader {
         for (int i2 = 0; i2 < size; i2++) {
             int i3 = i2 % 4;
             int i4 = i2 / 4;
-            f fVarBd = arrayList.get(i2).bd();
+            LauncherAppInfo fVarBd = arrayList.get(i2).bd();
             if (fVarBd != null) {
                 Bitmap bitmapG = fVarBd.g();
                 float fMax = Math.max(f3 / bitmapG.getWidth(), f3 / bitmapG.getHeight());

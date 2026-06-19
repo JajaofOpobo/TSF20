@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.E;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.services.A;
 import com.tsf.shell.utils.k;
 
@@ -21,11 +21,11 @@ public class a implements A.InterfaceC0165a {
     private int f = 0;
     private boolean g = false;
     private com.tsf.shell.services.A h;
-    private f i;
-    private f j;
-    private f k;
-    private f l;
-    private f m;
+    private LauncherAppInfo i;
+    private LauncherAppInfo j;
+    private LauncherAppInfo k;
+    private LauncherAppInfo l;
+    private LauncherAppInfo m;
 
     public a() {
         b();
@@ -83,7 +83,7 @@ public class a implements A.InterfaceC0165a {
         }
     }
 
-    public void a(f fVar) {
+    public void a(LauncherAppInfo fVar) {
         if (this.i == null && com.tsf.shell.utils.b.a(fVar.b)) {
             this.i = fVar;
             if (this.g) {

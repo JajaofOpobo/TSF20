@@ -149,7 +149,7 @@ public class b extends com.tsf.shell.f.e._g.d {
 
     private void e() {
         if (this.i == null) {
-            com.tsf.shell.manager.app.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName()));
+            com.tsf.shell.manager.app.LauncherAppInfo fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName()));
             TextureElement textureElement = fVarB.d;
             if (textureElement.id == 0) {
                 fVarB.f();

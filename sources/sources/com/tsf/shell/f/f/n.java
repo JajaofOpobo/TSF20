@@ -757,7 +757,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     public void b(float f, float f2, float f3, float f4) {
         if (this.t != 4 && this.t != 2) {
-            com.tsf.shell.manager.app.f.a(f / com.censivn.C3DEngine.b.b.A.D);
+            com.tsf.shell.manager.app.LauncherAppInfo.a(f / com.censivn.C3DEngine.b.b.A.D);
             g gVar = this.k.get(this.F.a(this.n, f, f2, f3, f4, this.O));
             if (gVar != this.m) {
                 a(gVar, true, false);
@@ -975,7 +975,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.m.removeFromParent();
         this.i.addChild(this.m);
         this.m.M();
-        com.tsf.shell.manager.app.f.d();
+        com.tsf.shell.manager.app.LauncherAppInfo.d();
         com.tsf.shell.f._d.c().b();
         this.i.setAnimationObjectState(false);
         if (this.m.t() == -1) {
@@ -1999,7 +1999,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(g gVar, boolean z, String str) {
-        com.tsf.shell.manager.app.f.a(gVar, z, true);
+        com.tsf.shell.manager.app.LauncherAppInfo.a(gVar, z, true);
     }
 
     public class b {

@@ -42,7 +42,7 @@ public class a {
     public static void b(int i) {
         a = d(i);
         if (d != null && com.tsf.shell.manager.app.h.n().t() == -1) {
-            if (d != com.tsf.shell.manager.app.f.g()) {
+            if (d != com.tsf.shell.manager.app.LauncherAppInfo.g()) {
                 if (a == 100) {
                     d.removeFromParent();
                 } else if (d.parent() == null) {
@@ -61,7 +61,7 @@ public class a {
             d = new k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             d.setDefaultColor(new Color4(0, 0, 0, 255));
         } else {
-            d = com.tsf.shell.manager.app.f.g();
+            d = com.tsf.shell.manager.app.LauncherAppInfo.g();
         }
     }
 

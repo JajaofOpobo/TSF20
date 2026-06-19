@@ -14,7 +14,7 @@ public class A extends c<d> {
     private ArrayList<b> a = new ArrayList<>();
 
     public A() {
-        ArrayList<f> arrayList = new ArrayList<>();
+        ArrayList<LauncherAppInfo> arrayList = new ArrayList<>();
         arrayList.add(new com.tsf.shell.f._d.b.a.c(0, false));
         arrayList.add(new com.tsf.shell.f._d.b.a.f(50, -13421773, false));
         arrayList.add(new com.tsf.shell.f._d.b.a.f(10, -49152, false));

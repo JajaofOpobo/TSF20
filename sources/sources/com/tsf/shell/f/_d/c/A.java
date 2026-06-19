@@ -12,7 +12,7 @@ public class A extends c<d> {
     private com.tsf.shell.f.e.f.a a;
 
     public A() {
-        ArrayList<f> arrayList = new ArrayList<>();
+        ArrayList<LauncherAppInfo> arrayList = new ArrayList<>();
         this.a = new com.tsf.shell.f.e.f.a();
         arrayList.add(new e(0, true, false));
         arrayList.add(new e(1, false, false));

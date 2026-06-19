@@ -1136,9 +1136,9 @@ public class h extends com.tsf.shell.f.f.g implements b.a, InterfaceC0101a, c.a,
         if (bVar instanceof com.tsf.shell.f.i.b.e.g) {
             com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) bVar;
             if (gVar.bf()) {
-                com.tsf.shell.manager.app.f fVarBd = gVar.bd();
+                com.tsf.shell.manager.app.LauncherAppInfo fVarBd = gVar.bd();
                 com.tsf.shell.manager.bind.a.c().b(fVarBd);
-                ArrayList<com.tsf.shell.manager.app.f> arrayList = new ArrayList<>();
+                ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList = new ArrayList<>();
                 arrayList.add(fVarBd);
                 com.tsf.shell.manager.app.w.b(arrayList, false);
                 e((com.tsf.shell.f.i.B) gVar);

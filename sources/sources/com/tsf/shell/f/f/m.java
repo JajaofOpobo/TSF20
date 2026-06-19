@@ -14,8 +14,8 @@ public class m {
     public D a;
     public e b;
     private e.b c;
-    private ArrayList<f> d = new ArrayList<>();
-    private ArrayList<f> e;
+    private ArrayList<LauncherAppInfo> d = new ArrayList<>();
+    private ArrayList<LauncherAppInfo> e;
 
     public void a() {
         j.d();

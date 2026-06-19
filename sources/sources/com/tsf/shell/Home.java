@@ -660,22 +660,22 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     }
 
     @Override // com.tsf.shell.manager.bind.c
-    public void a(ArrayList<com.tsf.shell.manager.app.f> arrayList) {
+    public void a(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
         com.tsf.shell.manager.A.w.a(arrayList);
     }
 
     @Override // com.tsf.shell.manager.bind.c
-    public void a(ArrayList<com.tsf.shell.manager.app.f> arrayList, boolean z) {
+    public void a(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList, boolean z) {
         com.tsf.shell.manager.A.w.a(arrayList, z);
     }
 
     @Override // com.tsf.shell.manager.bind.c
-    public void b(ArrayList<com.tsf.shell.manager.app.f> arrayList) {
+    public void b(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
         com.tsf.shell.manager.A.w.b(arrayList);
     }
 
     @Override // com.tsf.shell.manager.bind.c
-    public void b(ArrayList<com.tsf.shell.manager.app.f> arrayList, boolean z) {
+    public void b(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList, boolean z) {
         com.tsf.shell.manager.A.w.b(arrayList, z);
     }
 

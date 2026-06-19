@@ -8,7 +8,7 @@ import com.tsf.shell.f.e.D;
 import com.tsf.shell.f.h.a.c;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.f.i.b.e.h;
-import com.tsf.shell.manager.app.f;
+import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.manager.b.e;
 import java.util.ArrayList;
 
@@ -206,7 +206,7 @@ public class a implements c.a {
 
     /* JADX INFO: renamed from: com.tsf.shell.f.h.a.b.a$a, reason: collision with other inner class name */
     class C0112a extends h {
-        private f b;
+        private LauncherAppInfo b;
 
         public C0112a() {
         }
@@ -218,7 +218,7 @@ public class a implements c.a {
             }
         }
 
-        public void a(f fVar) {
+        public void a(LauncherAppInfo fVar) {
             this.b = fVar;
         }
 
