@@ -7,7 +7,7 @@ import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.ToggleAction {
-    public c(int i) {
+    publiToggleActionConnector c(int i) {
         super(i);
         d();
     }

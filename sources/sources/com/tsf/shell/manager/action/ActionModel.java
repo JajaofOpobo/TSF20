@@ -9,7 +9,7 @@ public class ActionModel {
     public String b;
     public String c;
 
-    public e(int i, String str, String str2) {
+    public ActionModel(int i, String str, String str2) {
         this.a = i;
         this.b = str;
         this.c = str2;

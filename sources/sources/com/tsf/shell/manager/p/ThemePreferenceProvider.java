@@ -114,7 +114,7 @@ public class ThemePreferenceProvider {
         return aVarA;
     }
 
-    public e() {
+    public ThemePreferenceProvider() {
         this.q.add(b());
         this.q.add(f());
         this.q.add(g());

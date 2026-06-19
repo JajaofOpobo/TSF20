@@ -5,7 +5,7 @@ import android.net.wifi.WifiManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleActionFlashlight extends com.tsf.shell.manager.action.toggle.ToggleAction {
-    public f(int i) {
+    public ToggleActionFlashlight(int i) {
         super(i);
         d();
     }

@@ -53,7 +53,7 @@ public class ScreenFadeController {
         }
     }
 
-    public a(j jVar) {
+    public ScreenFadeController(j jVar) {
         this.g = false;
         c = jVar;
         this.g = e.ai();

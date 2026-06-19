@@ -12,7 +12,7 @@ public class GestureTipElement extends j {
     private k c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
     private k d;
 
-    public b() {
+    puGestureTipElementlic b() {
         this.c.position().y = (-this.c.c()) / 2.0f;
         this.c.textures().addElement(this.a);
         this.d = com.censivn.C3DEngine.b.b.A.a(69.0f, 69.0f);

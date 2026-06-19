@@ -32,7 +32,7 @@ public class ActionSelectorAdapter {
     private Handler k;
     private HandlerThread l;
 
-    public d(ActionSelector actionSelector) {
+    public ActionSelectorAdapter(ActionSelector actionSelector) {
         this.i = actionSelector;
         e(actionSelector);
     }

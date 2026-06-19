@@ -19,7 +19,7 @@ public class AppSelectionIndicatorBar extends j {
     private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a d;
     private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a e;
 
-    public B() {
+    public AppSelectionIndicatorBar() {
         d();
     }
 

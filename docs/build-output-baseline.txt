@@ -32,6 +32,617 @@ to this project's gradle.properties.
 > Task :app:processDebugResources UP-TO-DATE
 
 > Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/ContactManager.java:7: error: invalid method declaration; return type required
+    public b() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/ContactDatabaseHelper.java:12: error: invalid method declaration; return type required
+    public A(Context context) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/n/ToastOverlayController.java:42: error: invalid method declaration; return type required
+    public a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ShortcutCreator.java:21: error: invalid method declaration; return type required
+    public c(Context context, com.tsf.shell.ShellCoreInterface aVar, boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionConnector.java:10: error: invalid method declaration; return type required
+    public c(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionWifi.java:10: error: invalid method declaration; return type required
+    public a(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionFlashlight.java:8: error: invalid method declaration; return type required
+    public f(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionVolume.java:16: error: invalid method declaration; return type required
+    public e(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionBrightness.java:13: error: invalid method declaration; return type required
+    public b(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionMobileData.java:9: error: invalid method declaration; return type required
+    public d(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/TogglePanelManager.java:38: error: invalid method declaration; return type required
+    public A() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleAction.java:15: error: invalid method declaration; return type required
+    public B(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionModel.java:12: error: invalid method declaration; return type required
+    public e(int i, String str, String str2) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionManager.java:34: error: invalid method declaration; return type required
+    public b() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionSelectorAdapter.java:35: error: invalid method declaration; return type required
+    public d(ActionSelector actionSelector) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/ThemePreferenceStore.java:18: error: invalid method declaration; return type required
+    public d() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/GestureTipElement.java:15: error: invalid method declaration; return type required
+    public b() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/PreferenceToggle.java:8: error: invalid method declaration; return type required
+    public f(int i, boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/ThemePreferenceProvider.java:117: error: invalid method declaration; return type required
+    public e() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindContext.java:34: error: invalid method declaration; return type required
+    public a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:46: error: invalid method declaration; return type required
+    public a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/BlurSettingsMenu.java:15: error: invalid method declaration; return type required
+    public c() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:22: error: invalid method declaration; return type required
+    public a(Context context, float f, float f2) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:31: error: invalid method declaration; return type required
+    public b(e eVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/ViewportController.java:35: error: invalid method declaration; return type required
+    public d(com.tsf.shell.e.DragLayer eVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/LauncherInitController.java:27: error: invalid method declaration; return type required
+    public c(GLSurfaceView gLSurfaceView) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/WorkspaceScene.java:28: error: invalid method declaration; return type required
+    public b() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/ScreenFadeController.java:56: error: invalid method declaration; return type required
+    public a(j jVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/AppSelectionIndicatorBar.java:22: error: invalid method declaration; return type required
+    public B() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/FolderManager.java:39: error: invalid method declaration; return type required
+    public d(DataCoordinator eVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/LauncherAppInfo.java:33: error: invalid method declaration; return type required
+    public f(ResolveInfo resolveInfo) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/LauncherAppInfo.java:67: error: invalid method declaration; return type required
+    public f(ComponentName componentName, String str) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/q/UnreadBadgeManager.java:30: error: invalid method declaration; return type required
+    public a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupEntry.java:9: error: invalid method declaration; return type required
+    public c(String str, String str2, String str3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupRestoreManager.java:115: error: invalid method declaration; return type required
+        public a(Context context, String str) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupExportManager.java:114: error: invalid method declaration; return type required
+        public a(Context context, String str, Runnable runnable) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/EmptyLabelElement.java:8: error: invalid method declaration; return type required
+    public d(int i, c.a aVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/TextLabelElement.java:22: error: invalid method declaration; return type required
+    public b(int i, c.a aVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:76: error: invalid method declaration; return type required
+    public A() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:104: error: invalid method declaration; return type required
+    public A(float f, float f2) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:138: error: invalid method declaration; return type required
+    public A(float f, float f2, int i, int i2, int i3, int i4, int i5) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/_a/TextLabelElementV2.java:22: error: invalid method declaration; return type required
+    public b(int i, c.a aVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/_a/EmptyLabelElementV2.java:8: error: invalid method declaration; return type required
+    public d(int i, c.a aVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/RateDialog.java:39: error: invalid method declaration; return type required
+    public b() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/RateFaceView.java:28: error: invalid method declaration; return type required
+    public a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/TexturedBackground.java:10: error: invalid method declaration; return type required
+    public d(float f, float f2, float f3, com.censivn.C3DEngine.b.f.b.b bVar, int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellPreferenceManager.java:22: error: invalid method declaration; return type required
+    public i(Context context, int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:30: error: '{' expected
+        public class String 
+                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:40: error: '{' expected
+        public class String 
+                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:41: error: '{' expected
+        public class String 
+                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:48: error: '{' expected
+        public class String 
+                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ServiceLifecycleManager.java:14: error: invalid method declaration; return type required
+    public c() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ToggleServiceConnector.java:37: error: invalid method declaration; return type required
+    public d(Context context) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundServiceManager.java:22: error: invalid method declaration; return type required
+    public b(Context context) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:46: error: '{' expected
+    public class String 
+                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: illegal start of type
+        return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: <identifier> expected
+        return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: <identifier> expected
+        return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: ';' expected
+        return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:51: error: class, interface, enum, or record expected
+    public void d() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:53: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:56: error: '{' expected
+    public class Cursor 
+                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:58: error: class, interface, enum, or record expected
+        synchronized (this) {
+                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:60: error: class, interface, enum, or record expected
+            SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:61: error: class, interface, enum, or record expected
+            sQLiteQueryBuilder.setTables(bVar.a);
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:62: error: class, interface, enum, or record expected
+            cursorQuery = sQLiteQueryBuilder.query(this.b.getWritableDatabase(), strArr, bVar.b, bVar.c, null, null, str2);
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:63: error: class, interface, enum, or record expected
+            cursorQuery.setNotificationUri(getContext().getContentResolver(), uri);
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:64: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:66: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:69: error: '{' expected
+    public class Uri 
+                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:71: error: class, interface, enum, or record expected
+        synchronized (this) {
+                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:73: error: class, interface, enum, or record expected
+            if (jInsert > 0) {
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:75: error: class, interface, enum, or record expected
+                a(uriWithAppendedId);
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:76: error: class, interface, enum, or record expected
+            }
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:79: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:82: error: class, interface, enum, or record expected
+    public int delete(Uri uri, String str, String[] strArr) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:84: error: class, interface, enum, or record expected
+        synchronized (this) {
+                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:86: error: class, interface, enum, or record expected
+            iDelete = this.b.getWritableDatabase().delete(bVar.a, bVar.b, bVar.c);
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:87: error: class, interface, enum, or record expected
+            if (iDelete > 0) {
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:89: error: class, interface, enum, or record expected
+            }
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:92: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:95: error: class, interface, enum, or record expected
+    public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:97: error: class, interface, enum, or record expected
+        synchronized (this) {
+                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:100: error: class, interface, enum, or record expected
+                iUpdate = this.b.getWritableDatabase().update(bVar.a, contentValues, bVar.b, bVar.c);
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:101: error: class, interface, enum, or record expected
+                if (iUpdate > 0) {
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:103: error: class, interface, enum, or record expected
+                }
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:106: error: class, interface, enum, or record expected
+                String str2 = "";
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:107: error: class, interface, enum, or record expected
+                for (StackTraceElement stackTraceElement : stackTrace) {
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:109: error: class, interface, enum, or record expected
+                }
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:111: error: class, interface, enum, or record expected
+                map.put("update database error", str2);
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:112: error: class, interface, enum, or record expected
+                m.a("EVENT_ISSUSE_FOLDER_THEME_MANAGER", map);
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:113: error: class, interface, enum, or record expected
+                return 0;
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:114: error: class, interface, enum, or record expected
+            }
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:117: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:134: error: class, interface, enum, or record expected
+    public int bulkInsert(android.net.Uri r11, android.content.ContentValues[] r12) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:179: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:183: error: class, interface, enum, or record expected
+        if (queryParameter == null || "true".equals(queryParameter)) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:185: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:382: error: class, interface, enum, or record expected
+}
+^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:248: error: invalid method declaration; return type required
+        public b(int i, int i2, int i3, int i4) {
+               ^
+100 errors
 
 [Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:30: error: '{' expected
+          public class String 
+                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:40: error: '{' expected
+          public class String 
+                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:41: error: '{' expected
+          public class String 
+                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellBackgroundRenderer.java:48: error: '{' expected
+          public class String 
+                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:46: error: '{' expected
+      public class String 
+                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: <identifier> expected
+          return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: <identifier> expected
+          return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: ';' expected
+          return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+                                          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:56: error: '{' expected
+      public class Cursor 
+                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:69: error: '{' expected
+      public class Uri 
+                      ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:48: error: illegal start of type
+          return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
+          ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:51: error: class, interface, enum, or record expected
+      public void d() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:53: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:58: error: class, interface, enum, or record expected
+          synchronized (this) {
+                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:60: error: class, interface, enum, or record expected
+              SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:61: error: class, interface, enum, or record expected
+              sQLiteQueryBuilder.setTables(bVar.a);
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:62: error: class, interface, enum, or record expected
+              cursorQuery = sQLiteQueryBuilder.query(this.b.getWritableDatabase(), strArr, bVar.b, bVar.c, null, null, str2);
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:63: error: class, interface, enum, or record expected
+              cursorQuery.setNotificationUri(getContext().getContentResolver(), uri);
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:64: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:66: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:71: error: class, interface, enum, or record expected
+          synchronized (this) {
+                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:73: error: class, interface, enum, or record expected
+              if (jInsert > 0) {
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:75: error: class, interface, enum, or record expected
+                  a(uriWithAppendedId);
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:76: error: class, interface, enum, or record expected
+              }
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:79: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:82: error: class, interface, enum, or record expected
+      public int delete(Uri uri, String str, String[] strArr) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:84: error: class, interface, enum, or record expected
+          synchronized (this) {
+                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:86: error: class, interface, enum, or record expected
+              iDelete = this.b.getWritableDatabase().delete(bVar.a, bVar.b, bVar.c);
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:87: error: class, interface, enum, or record expected
+              if (iDelete > 0) {
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:89: error: class, interface, enum, or record expected
+              }
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:92: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:95: error: class, interface, enum, or record expected
+      public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:97: error: class, interface, enum, or record expected
+          synchronized (this) {
+                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:100: error: class, interface, enum, or record expected
+                  iUpdate = this.b.getWritableDatabase().update(bVar.a, contentValues, bVar.b, bVar.c);
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:101: error: class, interface, enum, or record expected
+                  if (iUpdate > 0) {
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:103: error: class, interface, enum, or record expected
+                  }
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:106: error: class, interface, enum, or record expected
+                  String str2 = "";
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:107: error: class, interface, enum, or record expected
+                  for (StackTraceElement stackTraceElement : stackTrace) {
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:109: error: class, interface, enum, or record expected
+                  }
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:111: error: class, interface, enum, or record expected
+                  map.put("update database error", str2);
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:112: error: class, interface, enum, or record expected
+                  m.a("EVENT_ISSUSE_FOLDER_THEME_MANAGER", map);
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:113: error: class, interface, enum, or record expected
+                  return 0;
+                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:114: error: class, interface, enum, or record expected
+              }
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:117: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:134: error: class, interface, enum, or record expected
+      public int bulkInsert(android.net.Uri r11, android.content.ContentValues[] r12) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:179: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:183: error: class, interface, enum, or record expected
+          if (queryParameter == null || "true".equals(queryParameter)) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:185: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellProvider.java:382: error: class, interface, enum, or record expected
+  }
+  ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/ContactManager.java:7: error: invalid method declaration; return type required
+      public b() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/ContactDatabaseHelper.java:12: error: invalid method declaration; return type required
+      public A(Context context) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/n/ToastOverlayController.java:42: error: invalid method declaration; return type required
+      public a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ShortcutCreator.java:21: error: invalid method declaration; return type required
+      public c(Context context, com.tsf.shell.ShellCoreInterface aVar, boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionConnector.java:10: error: invalid method declaration; return type required
+      public c(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionWifi.java:10: error: invalid method declaration; return type required
+      public a(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionFlashlight.java:8: error: invalid method declaration; return type required
+      public f(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionVolume.java:16: error: invalid method declaration; return type required
+      public e(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionBrightness.java:13: error: invalid method declaration; return type required
+      public b(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/a/ToggleActionMobileData.java:9: error: invalid method declaration; return type required
+      public d(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/TogglePanelManager.java:38: error: invalid method declaration; return type required
+      public A() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleAction.java:15: error: invalid method declaration; return type required
+      public B(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionModel.java:12: error: invalid method declaration; return type required
+      public e(int i, String str, String str2) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionManager.java:34: error: invalid method declaration; return type required
+      public b() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ActionSelectorAdapter.java:35: error: invalid method declaration; return type required
+      public d(ActionSelector actionSelector) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/ThemePreferenceStore.java:18: error: invalid method declaration; return type required
+      public d() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/GestureTipElement.java:15: error: invalid method declaration; return type required
+      public b() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/PreferenceToggle.java:8: error: invalid method declaration; return type required
+      public f(int i, boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/p/ThemePreferenceProvider.java:117: error: invalid method declaration; return type required
+      public e() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindContext.java:34: error: invalid method declaration; return type required
+      public a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:46: error: invalid method declaration; return type required
+      public a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/BlurSettingsMenu.java:15: error: invalid method declaration; return type required
+      public c() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:22: error: invalid method declaration; return type required
+      public a(Context context, float f, float f2) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:31: error: invalid method declaration; return type required
+      public b(e eVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/ViewportController.java:35: error: invalid method declaration; return type required
+      public d(com.tsf.shell.e.DragLayer eVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/LauncherInitController.java:27: error: invalid method declaration; return type required
+      public c(GLSurfaceView gLSurfaceView) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/WorkspaceScene.java:28: error: invalid method declaration; return type required
+      public b() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/ScreenFadeController.java:56: error: invalid method declaration; return type required
+      public a(j jVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/a/AppSelectionIndicatorBar.java:22: error: invalid method declaration; return type required
+      public B() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/FolderManager.java:39: error: invalid method declaration; return type required
+      public d(DataCoordinator eVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/LauncherAppInfo.java:33: error: invalid method declaration; return type required
+      public f(ResolveInfo resolveInfo) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/LauncherAppInfo.java:67: error: invalid method declaration; return type required
+      public f(ComponentName componentName, String str) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/q/UnreadBadgeManager.java:30: error: invalid method declaration; return type required
+      public a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupEntry.java:9: error: invalid method declaration; return type required
+      public c(String str, String str2, String str3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupRestoreManager.java:115: error: invalid method declaration; return type required
+          public a(Context context, String str) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupExportManager.java:114: error: invalid method declaration; return type required
+          public a(Context context, String str, Runnable runnable) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/EmptyLabelElement.java:8: error: invalid method declaration; return type required
+      public d(int i, c.a aVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/TextLabelElement.java:22: error: invalid method declaration; return type required
+      public b(int i, c.a aVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:76: error: invalid method declaration; return type required
+      public A() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:104: error: invalid method declaration; return type required
+      public A(float f, float f2) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/ButtonMetrics.java:138: error: invalid method declaration; return type required
+      public A(float f, float f2, int i, int i2, int i3, int i4, int i5) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/_a/TextLabelElementV2.java:22: error: invalid method declaration; return type required
+      public b(int i, c.a aVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/_a/EmptyLabelElementV2.java:8: error: invalid method declaration; return type required
+      public d(int i, c.a aVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/RateDialog.java:39: error: invalid method declaration; return type required
+      public b() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/RateFaceView.java:28: error: invalid method declaration; return type required
+      public a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/j/TexturedBackground.java:10: error: invalid method declaration; return type required
+      public d(float f, float f2, float f3, com.censivn.C3DEngine.b.f.b.b bVar, int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/ShellPreferenceManager.java:22: error: invalid method declaration; return type required
+      public i(Context context, int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ServiceLifecycleManager.java:14: error: invalid method declaration; return type required
+      public c() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ToggleServiceConnector.java:37: error: invalid method declaration; return type required
+      public d(Context context) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundServiceManager.java:22: error: invalid method declaration; return type required
+      public b(Context context) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:248: error: invalid method declaration; return type required
+          public b(int i, int i2, int i3, int i4) {
+                 ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 2s
 15 actionable tasks: 1 executed, 14 up-to-date

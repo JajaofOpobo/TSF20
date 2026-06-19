@@ -31,7 +31,7 @@ public class ShellBindContext {
         return d;
     }
 
-    public a() {
+    public ShellBindContext() {
         com.censivn.C3DEngine.a.a(a, "AppState");
         com.censivn.C3DEngine.a.a(new com.censivn.C3DEngine.b.c.c());
         c = new ShellModel(a);

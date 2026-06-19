@@ -19,7 +19,7 @@ public class TextLabelElement {
     private TextureElement g = new TextureElement(0, false);
     private c.a h;
 
-    public b(int i, c.a aVar) {
+    puTextLabelElementlic b(int i, c.a aVar) {
         this.b = i;
         this.h = aVar;
         this.f.textures().addElement(this.g);

@@ -30,7 +30,7 @@ public class LauncherAppInfo {
     private boolean h;
     private int i;
 
-    public f(ResolveInfo resolveInfo) {
+    public LauncherAppInfo(ResolveInfo resolveInfo) {
         this.c = 0L;
         this.d = new TextureElement(0, false);
         this.e = "";
@@ -64,7 +64,7 @@ public class LauncherAppInfo {
         return this.d;
     }
 
-    public f(ComponentName componentName, String str) {
+    public LauncherAppInfo(ComponentName componentName, String str) {
         this.c = 0L;
         this.d = new TextureElement(0, false);
         this.e = "";

@@ -35,7 +35,7 @@ public class TogglePanelManager {
     private ArrayList<com.tsf.shell.manager.action.ActionManager> r = new ArrayList<>();
     public f b = new f(11000);
 
-    public A() {
+    public TogglePanelManager() {
         this.r.add(this.b);
         if (Build.VERSION.SDK_INT < 21) {
             this.f = new d(12000);

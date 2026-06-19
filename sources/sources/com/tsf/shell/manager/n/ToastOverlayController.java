@@ -39,7 +39,7 @@ public class ToastOverlayController implements e.a {
     private ArrayList<C0133a> p = new ArrayList<>();
     private int f = 1677721600;
 
-    public a() {
+    public ToastOverlayController() {
         float fRed = Color.red(this.f);
         this.m = fRed;
         this.j = fRed;

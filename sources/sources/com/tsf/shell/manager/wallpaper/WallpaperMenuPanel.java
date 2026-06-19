@@ -28,7 +28,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private com.tsf.shell.manager.wallpaper.BlurSettingsMenu d;
     private e.a e;
 
-    public b(e eVar) {
+    puWallpaperMenuPanellic b(e eVar) {
         super(x.c(b.i.text_wallpapers));
         this.b = eVar;
         a();

@@ -32,7 +32,7 @@ public class ViewportController implements e.a {
     private FrameLayout i;
     private j j;
 
-    public d(com.tsf.shell.e.DragLayer eVar) {
+    public ViewportController(com.tsf.shell.e.DragLayer eVar) {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.h = eVar;
         this.i = new FrameLayout(this.h.getContext());

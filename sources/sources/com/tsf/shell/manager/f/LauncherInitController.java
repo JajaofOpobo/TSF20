@@ -24,7 +24,7 @@ public class LauncherInitController extends f {
     private boolean g;
     private Object h;
 
-    public c(GLSurfaceView gLSurfaceView) {
+    publiLauncherInitController c(GLSurfaceView gLSurfaceView) {
         super(gLSurfaceView, "Launcher");
         this.f = false;
         this.g = true;

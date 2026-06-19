@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleActionMobileData extends com.tsf.shell.manager.action.toggle.ToggleAction {
-    public d(int i) {
+    public ToggleActionMobileData(int i) {
         super(i);
         d();
     }

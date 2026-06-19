@@ -5,7 +5,7 @@ class PreferenceToggle {
     public int a;
     public boolean b;
 
-    public f(int i, boolean z) {
+    public PreferenceToggle(int i, boolean z) {
         this.a = i;
         this.b = z;
     }

@@ -10,7 +10,7 @@ import com.tsf.shell.Home;
 public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.ToggleAction {
     private static int c = 10;
 
-    public b(int i) {
+    puToggleActionBrightnesslic b(int i) {
         super(i);
         b(2);
         d();

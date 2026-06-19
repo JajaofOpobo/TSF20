@@ -36,7 +36,7 @@ public class FolderManager implements AppListModel.a {
         void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList);
     }
 
-    public d(DataCoordinator eVar) {
+    public FolderManager(DataCoordinator eVar) {
         this.e = eVar;
         eVar.a().a(this);
     }

@@ -9,7 +9,7 @@ import com.tsf.shell.manager.c.a.a.ContactModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ContactDatabaseHelper extends SQLiteOpenHelper {
-    public A(Context context) {
+    public ContactDatabaseHelper(Context context) {
         super(context, "contact.db", (SQLiteDatabase.CursorFactory) null, 1);
     }
 

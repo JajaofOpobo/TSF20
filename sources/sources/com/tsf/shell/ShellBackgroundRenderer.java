@@ -27,7 +27,8 @@ public class ShellBackgroundRenderer {
         int l;
         byte[] m;
         String n;
-        public class String 
+        /* JADX WARN: decompile error */
+        String o;
         String p;
         int q;
         int r;
@@ -37,15 +38,17 @@ public class ShellBackgroundRenderer {
     /* JADX INFO: renamed from: com.tsf.shell.ShellBackgroundRenderer$c, reason: collision with other inner class name */
     static class C0076c {
         public int a;
-        public class String 
-        public class String 
+        /* JADX WARN: decompile error */
+        public String b;
+        public String c;
 
         C0076c() {
         }
     }
 
     static class a {
-        public class String 
+        /* JADX WARN: decompile error */
+        int a;
 
         a() {
         }

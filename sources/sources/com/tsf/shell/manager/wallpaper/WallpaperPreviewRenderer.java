@@ -19,7 +19,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
     private C0148a a;
     private b b;
 
-    public a(Context context, float f, float f2) {
+    public WallpaperPreviewRenderer(Context context, float f, float f2) {
         this.a = new C0148a(f, f2);
         this.b = new b(context, f, f2);
     }

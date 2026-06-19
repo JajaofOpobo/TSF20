@@ -111,7 +111,7 @@ public class BackupExportManager {
         private String c;
         private Runnable d;
 
-        public a(Context context, String str, Runnable runnable) {
+        public ExportTask(Context context, String str, Runnable runnable) {
             this.b = context;
             this.c = str;
             if (this.c == null || this.c.equals("")) {

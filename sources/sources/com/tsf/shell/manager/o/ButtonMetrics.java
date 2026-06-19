@@ -73,7 +73,7 @@ public class ButtonMetrics {
         return this.ab.a(str, this);
     }
 
-    public A() {
+    public ButtonMetrics() {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;
@@ -101,7 +101,7 @@ public class ButtonMetrics {
         a(144, 144, 192, 42, 12, true);
     }
 
-    public A(float f, float f2) {
+    public ButtonMetrics(float f, float f2) {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;
@@ -135,7 +135,7 @@ public class ButtonMetrics {
         a(144, 144, 192, 42, 12, true);
     }
 
-    public A(float f, float f2, int i, int i2, int i3, int i4, int i5) {
+    public ButtonMetrics(float f, float f2, int i, int i2, int i3, int i4, int i5) {
         this.A = 1.15f;
         this.B = 1.15f;
         this.C = 0.0f;

@@ -25,7 +25,7 @@ public class RateFaceView extends j {
     private j c = new j();
     private LayoutContainer h = new LayoutContainer();
 
-    public a() {
+    public RateFaceView() {
         this.h.a(3);
         this.d = new k(a, a, false);
         this.d.textures().addElement(this.i);

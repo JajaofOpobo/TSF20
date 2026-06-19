@@ -25,7 +25,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     private boolean l = false;
     private k c = new k(0.0f, 0.0f);
 
-    public b() {
+    puWorkspaceScenelic b() {
         this.c.uvs().set(0, 1.0f, 0.0f);
         this.c.uvs().set(1, 0.0f, 0.0f);
         this.c.uvs().set(2, 1.0f, 1.0f);

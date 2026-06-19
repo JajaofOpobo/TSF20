@@ -27,7 +27,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
     private LauncherAppInfo l;
     private LauncherAppInfo m;
 
-    public a() {
+    public UnreadBadgeManager() {
         b();
     }
 

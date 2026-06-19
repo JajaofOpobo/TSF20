@@ -43,7 +43,7 @@ public class ShellProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class String 
+    public String getType(Uri uri) {
         B bVar = new B(uri, null, null);
         return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
     }
@@ -53,7 +53,7 @@ public class ShellProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Cursor 
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         Cursor cursorQuery;
         synchronized (this) {
             B bVar = new B(uri, str, strArr2);
@@ -66,7 +66,7 @@ public class ShellProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class Uri 
+    public Uri insert(Uri uri, ContentValues contentValues) {
         Uri uriWithAppendedId = null;
         synchronized (this) {
             long jInsert = this.b.getWritableDatabase().insert(new B(uri).a, null, contentValues);

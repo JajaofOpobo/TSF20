@@ -18,7 +18,7 @@ public class ShortcutCreator implements com.censivn.C3DEngine.b.c.a.InterfaceC00
     private boolean d;
     private Context e;
 
-    public c(Context context, com.tsf.shell.ShellCoreInterface aVar, boolean z) {
+    publiShortcutCreator c(Context context, com.tsf.shell.ShellCoreInterface aVar, boolean z) {
         this.c = aVar;
         this.d = z;
         this.e = context;

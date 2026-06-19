@@ -7,7 +7,7 @@ import android.content.Intent;
 public class ToggleActionWifi extends com.tsf.shell.manager.action.toggle.ToggleAction {
     private BluetoothAdapter c;
 
-    public a(int i) {
+    public ToggleActionWifi(int i) {
         super(i);
         try {
             this.c = BluetoothAdapter.getDefaultAdapter();

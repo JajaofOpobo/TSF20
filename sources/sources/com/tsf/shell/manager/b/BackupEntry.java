@@ -6,7 +6,7 @@ public class BackupEntry {
     String b;
     String c;
 
-    public c(String str, String str2, String str3) {
+    publiBackupEntry c(String str, String str2, String str3) {
         this.a = "";
         this.b = "";
         this.c = "";

@@ -5,7 +5,7 @@ import com.tsf.shell.manager.o._a.LabelManagerV2;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class EmptyLabelElementV2 extends b {
-    public d(int i, c.a aVar) {
+    public EmptyLabelElementV2(int i, c.a aVar) {
         super(i, aVar);
     }
 

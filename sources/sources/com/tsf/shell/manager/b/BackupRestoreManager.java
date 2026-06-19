@@ -112,7 +112,7 @@ public class BackupRestoreManager {
         private Context b;
         private String c;
 
-        public a(Context context, String str) {
+        public RestoreTask(Context context, String str) {
             this.b = context;
             this.a = new ProgressDialog(context);
             this.c = str;

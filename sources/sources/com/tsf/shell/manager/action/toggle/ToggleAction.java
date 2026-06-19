@@ -12,7 +12,7 @@ public class ToggleAction {
     private j c = new j(this);
     public ArrayList<i> b = new ArrayList<>();
 
-    public B(int i) {
+    public ToggleAction(int i) {
         this.a = 0;
         this.a = i;
     }

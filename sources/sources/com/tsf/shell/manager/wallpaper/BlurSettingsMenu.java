@@ -12,7 +12,7 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
     private h c;
     private int d;
 
-    public c() {
+    publiBlurSettingsMenu c() {
         setTitle(b.i.text_wallpaper_blur);
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(330.0f));
         this.a = new j();

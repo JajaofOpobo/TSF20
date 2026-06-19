@@ -15,7 +15,7 @@ public class ThemePreferenceStore {
         }
     }
 
-    public d() {
+    public ThemePreferenceStore() {
         try {
             for (String str : com.tsf.shell.manager.b.ConfigManager.ao().split(",")) {
                 a aVarA = a(str);

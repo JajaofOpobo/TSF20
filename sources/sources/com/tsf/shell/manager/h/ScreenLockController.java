@@ -43,7 +43,7 @@ public class ScreenLockController {
     private boolean h;
     private boolean i;
 
-    public a() {
+    public ScreenLockController() {
         this.a = false;
         this.h = false;
         this.i = false;

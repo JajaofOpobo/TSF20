@@ -4,7 +4,7 @@ package com.tsf.shell.manager.c;
 public class ContactManager {
     private A a;
 
-    public b() {
+    puContactManagerlic b() {
         System.currentTimeMillis();
         this.a = new A(com.censivn.C3DEngine.A.d());
     }

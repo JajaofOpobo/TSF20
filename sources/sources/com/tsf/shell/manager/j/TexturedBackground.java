@@ -7,7 +7,7 @@ public class TexturedBackground extends com.censivn.C3DEngine.b.f.b.a {
     private TextureElement a;
     private int d;
 
-    public d(float f, float f2, float f3, com.censivn.C3DEngine.b.f.b.b bVar, int i) {
+    public TexturedBackground(float f, float f2, float f3, com.censivn.C3DEngine.b.f.b.b bVar, int i) {
         super(f, f2, f3, bVar);
         this.d = i;
         this.a = new TextureElement(0, false);

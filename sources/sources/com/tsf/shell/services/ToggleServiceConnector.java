@@ -34,7 +34,7 @@ public class ToggleServiceConnector implements ServiceConnection {
         void a(com.c.a.a.a.a aVar);
     }
 
-    public d(Context context) {
+    public ToggleServiceConnector(Context context) {
         this.k = context;
     }
 
