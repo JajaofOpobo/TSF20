@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import android.content.ContentProviderClient;
 import android.content.ContentResolver;
@@ -14,7 +14,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
 import com.tsf.shell.ShellProvider;
 import com.tsf.shell.g;
-import com.tsf.shell.manager.a.c;
+import com.tsf.shell.manager.app.c;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.utils.l;
 import com.tsf.shell.utils.x;
@@ -48,11 +48,11 @@ public class d implements c.a {
     public void c() {
         if (!this._c) {
             this._c = true;
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.d.1
+            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.d.1
                 @Override // java.lang.Runnable
                 public void run() {
                     final ArrayList arrayListF = d.this.f();
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.d.1.1
+                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.d.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             d.this.f.a(d.this.a((ArrayList<ItemInfo>) arrayListF));
@@ -68,7 +68,7 @@ public class d implements c.a {
     /* JADX INFO: Access modifiers changed from: private */
     public ArrayList<com.tsf.shell.f.i.B> a(ArrayList<ItemInfo> arrayList) {
         System.currentTimeMillis();
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.a.w.a().d().clone();
+        ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.app.w.a().d().clone();
         ArrayList<com.tsf.shell.f.i.B> arrayList3 = new ArrayList<>();
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo instanceof LauncherShortcutAppInfo) {
@@ -78,9 +78,9 @@ public class d implements c.a {
                     gVarA.b(itemInfo);
                 } else {
                     gVarA = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo), true);
-                    com.tsf.shell.manager.a.w.a().a(gVarA, false, false);
+                    com.tsf.shell.manager.app.w.a().a(gVarA, false, false);
                     gVarA.b(itemInfo);
-                    gVarA.setMouseEventListener(com.tsf.shell.manager.a.h.t().f(gVarA));
+                    gVarA.setMouseEventListener(com.tsf.shell.manager.app.h.t().f(gVarA));
                 }
                 arrayList3.add(gVarA);
             } else if (itemInfo instanceof LauncherFolder3DInfo) {
@@ -93,18 +93,18 @@ public class d implements c.a {
                     } else {
                         com.tsf.shell.f.i.b.e.g gVar = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo2, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo2), true);
                         gVar.b(itemInfo2);
-                        com.tsf.shell.manager.a.w.a().a(gVar, false, false);
+                        com.tsf.shell.manager.app.w.a().a(gVar, false, false);
                     }
                 }
                 com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(launcherFolder3DInfo);
-                bVarA.setMouseEventListener(com.tsf.shell.manager.a.h.t().f(bVarA));
+                bVarA.setMouseEventListener(com.tsf.shell.manager.app.h.t().f(bVarA));
                 arrayList3.add(bVarA);
             }
         }
-        com.tsf.shell.manager.a.w.b().a(arrayList3);
+        com.tsf.shell.manager.app.w.b().a(arrayList3);
         for (com.tsf.shell.f.i.b.e.g gVar2 : arrayList2) {
             gVar2.b(new LauncherShortcutAppInfo());
-            arrayList3.add(com.tsf.shell.manager.a.w.b().a(arrayList3, gVar2), gVar2);
+            arrayList3.add(com.tsf.shell.manager.app.w.b().a(arrayList3, gVar2), gVar2);
         }
         return arrayList3;
     }
@@ -309,7 +309,7 @@ public class d implements c.a {
         if (a(i, 8)) {
             contentValues.put("itemType", Integer.valueOf(itemInfo.itemType));
         }
-        ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.a.d.2
+        ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.app.d.2
             @Override // java.lang.Runnable
             public void run() {
                 synchronized (d.a) {
@@ -337,7 +337,7 @@ public class d implements c.a {
         if (itemInfo == null) {
             l.a(this, "ApplicationDataManager -> delete");
         }
-        ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.a.d.3
+        ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.app.d.3
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.A.d().getContentResolver().delete(g.b.a(itemInfo.id, false), null, null);
@@ -345,11 +345,11 @@ public class d implements c.a {
         });
     }
 
-    @Override // com.tsf.shell.manager.a.c.a
+    @Override // com.tsf.shell.manager.app.c.a
     public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
     }
 
-    @Override // com.tsf.shell.manager.a.c.a
+    @Override // com.tsf.shell.manager.app.c.a
     public void a(com.tsf.shell.f.i.b.e.g gVar) {
     }
 
@@ -358,11 +358,11 @@ public class d implements c.a {
         while (it.hasNext()) {
             b(it.next(), false);
         }
-        com.tsf.shell.manager.a.w.a().a().a();
+        com.tsf.shell.manager.app.w.a().a().a();
         this.g.clear();
     }
 
-    @Override // com.tsf.shell.manager.a.c.a
+    @Override // com.tsf.shell.manager.app.c.a
     public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         if (this.d) {
             a(gVar.K());
@@ -371,11 +371,11 @@ public class d implements c.a {
         }
     }
 
-    @Override // com.tsf.shell.manager.a.c.a
+    @Override // com.tsf.shell.manager.app.c.a
     public void k_() {
     }
 
-    @Override // com.tsf.shell.manager.a.c.a
+    @Override // com.tsf.shell.manager.app.c.a
     public void a() {
     }
 

@@ -21,7 +21,7 @@ public class e {
                 return false;
             }
             if (this.c.contains("tsf://")) {
-                com.tsf.shell.manager._a.d.a(this.c);
+                com.tsf.shell.manager.app.d.a(this.c);
             } else {
                 Home.b().a(Intent.parseUri(this.c, 0), (Object) null);
             }

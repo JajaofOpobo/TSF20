@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import android.content.ComponentName;
 import android.content.Context;

@@ -181,21 +181,21 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         switch (i) {
             case 0:
                 if (this.f instanceof g) {
-                    com.tsf.shell.manager._a.A.c();
+                    com.tsf.shell.manager.app.A.c();
                     ((g) this.f).bh();
                 } else if (this.f instanceof f) {
-                    com.tsf.shell.manager._a.A.c();
+                    com.tsf.shell.manager.app.A.c();
                     ((f) this.f).aV();
                 }
                 break;
             case 1:
                 if (this.f instanceof com.tsf.shell.f.i._b.e.a) {
-                    com.tsf.shell.manager._a.A.c();
+                    com.tsf.shell.manager.app.A.c();
                     a((com.tsf.shell.f.i._b.e.a) this.f);
                 }
                 break;
             case 2:
-                com.tsf.shell.manager._a.A.c();
+                com.tsf.shell.manager.app.A.c();
                 b.a(this.f);
                 break;
             case 3:
@@ -205,7 +205,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                 this.g.a(this.f);
                 break;
             case 5:
-                com.tsf.shell.manager._a.A.c();
+                com.tsf.shell.manager.app.A.c();
                 ((g) this.f).bg();
                 break;
             case 6:
@@ -224,7 +224,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
             this.g.u();
             this.g = null;
         }
-        com.tsf.shell.manager._a.j.b(this.d);
+        com.tsf.shell.manager.app.j.b(this.d);
     }
 
     private ArrayList<Integer> a(ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2, ArrayList<Integer> arrayList3) {
@@ -283,10 +283,10 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                 this.g.a(this);
                 this.g.t();
                 com.censivn.C3DEngine.b.c.b.a(this);
-                com.tsf.shell.manager._a.b.a(this);
+                com.tsf.shell.manager.app.b.a(this);
                 this.f = cVar;
                 this.h = true;
-                com.tsf.shell.manager._a.j.a(this.d, 0);
+                com.tsf.shell.manager.app.j.a(this.d, 0);
                 Number3d number3dLocalToGlobal = cVar.localToGlobal(new Number3d());
                 float f = number3dLocalToGlobal.x;
                 float fQ = number3dLocalToGlobal.y + this.g.q();
@@ -295,7 +295,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                 cVar.alpha(0.0f);
                 g();
                 if (!this.n) {
-                    com.tsf.shell.manager._a.c.c(this);
+                    com.tsf.shell.manager.app.c.c(this);
                 }
                 cVar.alpha(255.0f);
                 int size = p.size();
@@ -305,7 +305,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                     cVar2.removeFromParent();
                     this.e.addChild(cVar2);
                 }
-                com.tsf.shell.manager._a.v.e.h().a(p, f, fQ);
+                com.tsf.shell.manager.app.v.e.h().a(p, f, fQ);
                 this.d.setFocus();
             }
         }
@@ -314,13 +314,13 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
     private void g() {
         if (this.o != null) {
             this.n = true;
-            com.tsf.shell.manager._a.e.a(i().b, (Runnable) null);
+            com.tsf.shell.manager.app.e.a(i().b, (Runnable) null);
             this.o.visible(false);
             this.o.mouseEnabled(false);
             return;
         }
         this.n = false;
-        com.tsf.shell.manager._a.e.a(this.k);
+        com.tsf.shell.manager.app.e.a(this.k);
     }
 
     public void a(final com.tsf.shell.f.i.C cVar) {
@@ -337,7 +337,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                         ((c) a.this.b.get(i)).b();
                     }
                     a.this.q = null;
-                    if (cVar != null && a.this.q != com.tsf.shell.manager._a.v.e.h()) {
+                    if (cVar != null && a.this.q != com.tsf.shell.manager.app.v.e.h()) {
                         a.this.b(cVar);
                     }
                 }
@@ -360,7 +360,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         p.add(5);
         p.add(7);
         this.d.removeFromParent();
-        com.tsf.shell.manager._a.j.a(this.d, 0);
+        com.tsf.shell.manager.app.j.a(this.d, 0);
         float f = com.censivn.C3DEngine.b.b.A.z / 2.0f;
         float fA = com.censivn.C3DEngine.b.b.A.a(250.0f);
         this.d.position().x = f;
@@ -372,15 +372,15 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
             cVar2.removeFromParent();
             this.e.addChild(cVar2);
         }
-        this.q = com.tsf.shell.manager._a.v.e.h();
+        this.q = com.tsf.shell.manager.app.v.e.h();
         this.q.a(p, f, fA);
     }
 
     private void a(int i, Runnable runnable, boolean z) {
         if (this.n) {
-            com.tsf.shell.manager._a.e.a(i, runnable, z);
+            com.tsf.shell.manager.app.e.a(i, runnable, z);
         } else {
-            com.tsf.shell.manager._a.e.b(i, runnable, z);
+            com.tsf.shell.manager.app.e.b(i, runnable, z);
         }
     }
 
@@ -389,17 +389,17 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         if (this.n) {
             this.o.visible(true);
             this.o.mouseEnabled(true);
-            com.tsf.shell.manager._a.e.b();
+            com.tsf.shell.manager.app.e.b();
         }
     }
 
     private j.a i() {
         j.a aVarC = com.tsf.shell.f.f.j.c(this);
         aVarC.a = this;
-        com.tsf.shell.manager._a.t.b(com.tsf.shell.f.f.j.c(), aVarC.b);
-        com.tsf.shell.manager._a.e.dispatchDraw();
+        com.tsf.shell.manager.app.t.b(com.tsf.shell.f.f.j.c(), aVarC.b);
+        com.tsf.shell.manager.app.e.dispatchDraw();
         this.o.dispatchDraw();
-        com.tsf.shell.manager._a.t.b();
+        com.tsf.shell.manager.app.t.b();
         return aVarC;
     }
 
@@ -418,7 +418,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                         ((c) a.this.b.get(i2)).b();
                     }
                     if (!a.this.n) {
-                        com.tsf.shell.manager._a.c.b(a.this);
+                        com.tsf.shell.manager.app.c.b(a.this);
                     }
                     a.this.h();
                     a.this.a(i);
@@ -427,8 +427,8 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                     a.this.f.mouseSkip(false);
                     a.this.f();
                     com.censivn.C3DEngine.b.c.b.b(a.this);
-                    com.tsf.shell.manager._a.b.b(a.this);
-                    com.tsf.shell.manager._a.v.e.f();
+                    com.tsf.shell.manager.app.b.b(a.this);
+                    com.tsf.shell.manager.app.v.e.f();
                     a.this.f = null;
                 }
             };
@@ -437,14 +437,14 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                 float fAlpha = this.f.alpha();
                 this.f.visible(false);
                 this.f.alpha(0.0f);
-                a(com.tsf.shell.manager._a.v.e.h().a(p.size()), runnable, z);
+                a(com.tsf.shell.manager.app.v.e.h().a(p.size()), runnable, z);
                 this.f.alpha(fAlpha);
                 this.f.visible(true);
-                com.tsf.shell.manager._a.v.e.h().a();
+                com.tsf.shell.manager.app.v.e.h().a();
                 return;
             }
-            a(com.tsf.shell.manager._a.v.e.h().a(p.size()), runnable, z);
-            com.tsf.shell.manager._a.v.e.h().a();
+            a(com.tsf.shell.manager.app.v.e.h().a(p.size()), runnable, z);
+            com.tsf.shell.manager.app.v.e.h().a();
         }
     }
 
@@ -567,7 +567,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
             if (this.b != null) {
                 this.c.textures().addElement(this.b.b());
             }
-            com.tsf.shell.manager._a.v.e.h().a(this);
+            com.tsf.shell.manager.app.v.e.h().a(this);
         }
 
         public void a(boolean z) {
@@ -576,7 +576,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                 this.c.textures().addElement(this.b.a());
             }
             if (z) {
-                com.tsf.shell.manager._a.v.e.h().b(this);
+                com.tsf.shell.manager.app.v.e.h().b(this);
             }
         }
 

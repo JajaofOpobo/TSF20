@@ -119,7 +119,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         while (it.hasNext()) {
             it.next().aK();
         }
-        com.tsf.shell.manager._a.i.c();
+        com.tsf.shell.manager.app.i.c();
     }
 
     public static void a(int i, int i2, int i3, int i4) {
@@ -142,7 +142,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         bVar.ac();
         bVar.ad();
         bVar.setMouseEventListener(new com.tsf.shell.f.i._a.c(bVar));
-        com.tsf.shell.manager._a.i.d(bVar);
+        com.tsf.shell.manager.app.i.d(bVar);
         return bVar;
     }
 
@@ -523,7 +523,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
     }
 
     public void b(int i) {
-        Collections.sort(this.o.children(), com.tsf.shell.manager._a.w.b().a(i).b());
+        Collections.sort(this.o.children(), com.tsf.shell.manager.app.w.b().a(i).b());
         this.o.k();
         this.o.o();
         aJ();
@@ -608,7 +608,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             }
             if (this.ae) {
                 launcherFolder3DInfo.config = str;
-                com.tsf.shell.manager._a.w.c().a(launcherFolder3DInfo, 16);
+                com.tsf.shell.manager.app.w.c().a(launcherFolder3DInfo, 16);
             } else {
                 launcherFolder3DInfo.onUpdateConfig(str);
             }
@@ -753,10 +753,10 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         if (this.ae) {
             if (!this.af) {
                 if (K().id == -1) {
-                    com.tsf.shell.manager._a.w.c().a(K(), 0);
+                    com.tsf.shell.manager.app.w.c().a(K(), 0);
                 }
                 bVar.K().container = K().id;
-                com.tsf.shell.manager._a.w.c().a(bVar.K(), 132);
+                com.tsf.shell.manager.app.w.c().a(bVar.K(), 132);
             }
         } else {
             bVar.K().onUpdateContainer(K().id);
@@ -829,7 +829,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             if (this.ae) {
                 LauncherFolder3DInfo launcherFolder3DInfo = (LauncherFolder3DInfo) K();
                 launcherFolder3DInfo.title = str;
-                com.tsf.shell.manager._a.w.c().a(launcherFolder3DInfo, 1);
+                com.tsf.shell.manager.app.w.c().a(launcherFolder3DInfo, 1);
             } else {
                 K().onUpdateName(str, false);
             }
@@ -948,11 +948,11 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
             position().setAllFrom(Number3d.TEMPNUMBER3D);
             scale().setAllFrom(Number3d.TEMPNUMBER3D2);
             if (aC()) {
-                this.ag = com.tsf.shell.manager._a.b.a();
-                com.tsf.shell.manager._a.b.b(Home.b());
+                this.ag = com.tsf.shell.manager.app.b.a();
+                com.tsf.shell.manager.app.b.b(Home.b());
             }
         }
-        this.T = com.tsf.shell.manager._a.j.a(this.S);
+        this.T = com.tsf.shell.manager.app.j.a(this.S);
         switch (com.tsf.shell.manager.b.e.ar()) {
             case 0:
                 dVar = new com.censivn.C3DEngine.b.g.d();
@@ -983,7 +983,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
         com.censivn.C3DEngine.b.g.c.a(this, 350, dVar);
         l.a(500, this);
         removeFromParent();
-        com.tsf.shell.manager._a.j.c();
+        com.tsf.shell.manager.app.j.c();
         l.F.removeFromParent();
         l.F.addChild(this);
         this.T.addChild(l.F);
@@ -1014,7 +1014,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                     j.O.alpha(0.0f);
                     if (b.this.aa != null) {
                         if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.A) {
-                            com.tsf.shell.f.c.b.b bVarA = com.tsf.shell.manager._a.g.a.a(b.this.aa);
+                            com.tsf.shell.f.c.b.b bVarA = com.tsf.shell.manager.app.g.a.a(b.this.aa);
                             b.this.L.x = bVarA.a;
                             b.this.L.y = bVarA.b;
                             b.this.M.z = bVarA.e;
@@ -1070,7 +1070,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                         b.this.position().y = b.this.L.y;
                         b.this.rotation().z = b.this.M.z;
                     }
-                    com.tsf.shell.manager._a.j.a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.4.1
+                    com.tsf.shell.manager.app.j.a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.b.4.1
                         @Override // java.lang.Runnable
                         public void run() {
                             b.this.removeFromParent();
@@ -1080,7 +1080,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                                 com.tsf.shell.f.c.A(b.this.aa);
                                 b.this.aa = null;
                             } else {
-                                com.tsf.shell.manager._a.h.n().a(b.this);
+                                com.tsf.shell.manager.app.h.n().a(b.this);
                             }
                             if (b.this.N != null) {
                                 ArrayList<com.tsf.shell.f.i.C> arrayListAv = b.this.N.av();
@@ -1098,12 +1098,12 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                             }
                             b.this.mouseSkip(false);
                             b.l.l();
-                            com.tsf.shell.manager._a.j.b();
+                            com.tsf.shell.manager.app.j.b();
                             b.this.bh();
                             b.this.K = b.b;
                             b.this.ab = false;
                             if (b.this.aC() && !b.this.ag) {
-                                com.tsf.shell.manager._a.b.c(Home.b());
+                                com.tsf.shell.manager.app.b.c(Home.b());
                             }
                         }
                     }, z);
@@ -1204,7 +1204,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
 
     protected void a(com.tsf.shell.f.i._b.e.b bVar) {
         if (this.ae) {
-            com.tsf.shell.manager._a.w.d().c();
+            com.tsf.shell.manager.app.w.d().c();
         }
         this.o.n();
         this.N = bVar;
@@ -1842,7 +1842,7 @@ public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e._a.a, m,
                 com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) iVar;
                 bVar.B();
                 if (!this.ae) {
-                    com.tsf.shell.manager._a.i.a(bVar);
+                    com.tsf.shell.manager.app.i.a(bVar);
                 } else {
                     iVar.removeFromParent();
                 }

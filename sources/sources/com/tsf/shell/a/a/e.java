@@ -1,4 +1,4 @@
-package com.tsf.shell._a.a;
+package com.tsf.shell.a.a;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -8,7 +8,7 @@ import android.os.Build;
 import android.provider.Settings;
 import android.view.KeyEvent;
 import com.b.a.A;
-import com.tsf.shell._a.a.c;
+import com.tsf.shell.a.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e {
@@ -18,20 +18,20 @@ public class e {
         }
         final c cVar = new c(context);
         cVar.setContentView(a.c.permission_guide_dialog_no_bg);
-        cVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.shell._a.a.e.1
+        cVar.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.shell.a.a.e.1
             @Override // android.content.DialogInterface.OnDismissListener
             public void onDismiss(DialogInterface dialogInterface) {
             }
         });
-        cVar.a(new c.a() { // from class: com.tsf.shell._a.a.e.2
-            @Override // com.tsf.shell._a.a.c.a
+        cVar.a(new c.a() { // from class: com.tsf.shell.a.a.e.2
+            @Override // com.tsf.shell.a.a.c.a
             public boolean a(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
                 if (keyEvent.getKeyCode() != 4 || keyEvent.getAction() == 1) {
                 }
                 return true;
             }
         });
-        cVar.a(-1, context.getString(a.e.perm_write_settings_desc), new DialogInterface.OnClickListener() { // from class: com.tsf.shell._a.a.e.3
+        cVar.a(-1, context.getString(a.e.perm_write_settings_desc), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.a.a.e.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 cVar.dismiss();

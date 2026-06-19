@@ -136,7 +136,7 @@ public class c extends d {
 
         @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent) {
-            com.tsf.shell.manager._a.d.a(c.this.t);
+            com.tsf.shell.manager.app.d.a(c.this.t);
         }
 
         @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
@@ -151,18 +151,18 @@ public class c extends d {
         @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.k) {
-                com.tsf.shell.manager._a.h.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
+                com.tsf.shell.manager.app.h.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
                 return;
             }
-            com.tsf.shell.manager._a.h.w();
-            com.tsf.shell.manager._a.h.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
+            com.tsf.shell.manager.app.h.w();
+            com.tsf.shell.manager.app.h.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
             this.k = true;
         }
 
         @Override // com.tsf.shell.f.i._a.c, com.censivn.C3DEngine.b.d.a
         public void f(MotionEvent motionEvent) {
             if (this.k) {
-                com.tsf.shell.manager._a.h.x();
+                com.tsf.shell.manager.app.h.x();
                 this.k = false;
             }
         }

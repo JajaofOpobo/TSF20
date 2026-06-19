@@ -78,7 +78,7 @@ public class a extends j {
                 if (getAnimationObjectState()) {
                     if (a.this.x) {
                         this.b = true;
-                        com.tsf.shell.manager.a.u.a(a.this.e);
+                        com.tsf.shell.manager.A.u.a(a.this.e);
                     }
                     position().x += (a.this.o - position().x) * a.a;
                     if (!a.this.p && Math.abs(position().x - a.this.o) < 0.1f) {
@@ -95,7 +95,7 @@ public class a extends j {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
                 if (this.b) {
-                    com.tsf.shell.manager.a.u.a();
+                    com.tsf.shell.manager.A.u.a();
                 }
             }
         };

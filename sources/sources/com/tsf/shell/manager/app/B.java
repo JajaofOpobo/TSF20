@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 public class B {
     public static a e() { return null; }

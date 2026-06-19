@@ -54,7 +54,7 @@ public class f extends b {
     }
 
     private void n() {
-        this.a = com.tsf.shell.manager._a.B.a.a();
+        this.a = com.tsf.shell.manager.app.B.a.a();
         this.b = this.a.a();
         this.f = new com.tsf.shell.f.c.b.f(this.b, this.b.a());
     }

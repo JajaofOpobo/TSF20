@@ -55,7 +55,7 @@ public class d extends b.d {
                         float[] fArrA = x.a(motionEvent);
                         i iVarC = com.censivn.C3DEngine.A.e().c(fArrA[0], fArrA[1]);
                         if ((iVarC == null || iVarC.getMouseEventListener() == null) && Home.b().l().a(motionEvent)) {
-                            if (com.tsf.shell.manager.a.h.v().mouseEnabled()) {
+                            if (com.tsf.shell.manager.A.h.v().mouseEnabled()) {
                                 return false;
                             }
                         }

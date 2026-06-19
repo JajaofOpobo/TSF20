@@ -8,7 +8,7 @@ import com.tsf.shell.f.e.D;
 import com.tsf.shell.f.h.a.c;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.f.i.b.e.h;
-import com.tsf.shell.manager._a.f;
+import com.tsf.shell.manager.app.f;
 import com.tsf.shell.manager.b.e;
 import java.util.ArrayList;
 
@@ -138,7 +138,7 @@ public class a implements c.a {
 
     private void n() {
         System.currentTimeMillis();
-        ArrayList<g> arrayListA = com.tsf.shell.manager._a.w.a().a().a(this.e);
+        ArrayList<g> arrayListA = com.tsf.shell.manager.app.w.a().a().a(this.e);
         l();
         if (arrayListA.isEmpty()) {
             this.c.addChild(m());

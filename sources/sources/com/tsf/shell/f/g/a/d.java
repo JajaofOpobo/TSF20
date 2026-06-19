@@ -22,18 +22,18 @@ public class d extends com.tsf.shell.f.e._g.a.b {
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_random, x.c(b.i.text_random), new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.d.1
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
-                return com.tsf.shell.manager._a.v.a.b.g();
+                return com.tsf.shell.manager.app.v.a.b.g();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager._a.v.a.b.a(true);
+                com.tsf.shell.manager.app.v.a.b.a(true);
                 d.this.b.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager._a.v.a.b.a(false);
+                com.tsf.shell.manager.app.v.a.b.a(false);
                 d.this.b.d();
             }
         }));
@@ -42,12 +42,12 @@ public class d extends com.tsf.shell.f.e._g.a.b {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.d.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager._a.v.a.b.i();
+                return com.tsf.shell.manager.app.v.a.b.i();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                com.tsf.shell.f.f.b.a.d dVar = (com.tsf.shell.f.f.b.a.d) com.tsf.shell.manager._a.v.a.b.a(i);
+                com.tsf.shell.f.f.b.a.d dVar = (com.tsf.shell.f.f.b.a.d) com.tsf.shell.manager.app.v.a.b.a(i);
                 com.tsf.shell.f._d.e.A aVar = (com.tsf.shell.f._d.e.A) dVar.o();
                 aVar.e.textures().clear();
                 aVar.e.textures().addElement(com.tsf.shell.f._d.e.a.a());
@@ -62,9 +62,9 @@ public class d extends com.tsf.shell.f.e._g.a.b {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.d.3
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                l lVarA = com.tsf.shell.manager._a.v.a.b.a(i);
+                l lVarA = com.tsf.shell.manager.app.v.a.b.a(i);
                 w.b();
-                com.tsf.shell.manager._a.v.a.b.b(lVarA);
+                com.tsf.shell.manager.app.v.a.b.b(lVarA);
                 d.this.b.d();
             }
         });
@@ -88,11 +88,11 @@ public class d extends com.tsf.shell.f.e._g.a.b {
     @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         super.onRecycle();
-        int i = com.tsf.shell.manager._a.v.a.b.i();
+        int i = com.tsf.shell.manager.app.v.a.b.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager._a.v.a.b.a(i2).h();
+            com.tsf.shell.manager.app.v.a.b.a(i2).h();
         }
         h.b();
-        com.tsf.shell.manager._a.v.a.b.j();
+        com.tsf.shell.manager.app.v.a.b.j();
     }
 }

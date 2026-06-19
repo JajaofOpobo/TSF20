@@ -81,7 +81,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
     }
 
     public void a(j jVar) {
-        com.tsf.shell.manager._a.b.a(this);
+        com.tsf.shell.manager.app.b.a(this);
         this.t = com.tsf.shell.manager.b.e.ac();
         this.a = this.t ? com.tsf.shell.manager.b.e.ab() : 0;
         this.c = 80.0f * com.censivn.C3DEngine.b.b.A.c;
@@ -211,7 +211,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
         com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
         this.g.setFocus();
         this.s.g();
-        com.tsf.shell.manager._a.n.i();
+        com.tsf.shell.manager.app.n.i();
     }
 
     public void k() {
@@ -230,7 +230,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
             this.j = true;
             this.k.position().setAllFrom(this.e.position());
             this.k.removeFromParent();
-            com.tsf.shell.manager._a.j.a(this.k);
+            com.tsf.shell.manager.app.j.a(this.k);
             this.k.a(60.0f);
             float f = this.e.position().x;
             float f2 = this.e.position().y;
@@ -264,16 +264,16 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
             });
             return;
         }
-        if (com.tsf.shell.f.e._g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager._a.h.B() && !com.tsf.shell.manager._a.h.s().a() && !com.tsf.shell.manager._a.v.e.e()) {
+        if (com.tsf.shell.f.e._g.d.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.app.h.B() && !com.tsf.shell.manager.app.h.s().a() && !com.tsf.shell.manager.app.v.e.e()) {
             com.tsf.shell.f.b.a();
             this.e.a(0.0f, 0.0f, this.f.c(), this.f.d(), 204, !this.t);
             com.censivn.C3DEngine.b.c.b.a(this);
             this.i = true;
             this.f.mouseEnabled(true);
             this.f.b();
-            com.tsf.shell.manager._a.e.a(this.l);
+            com.tsf.shell.manager.app.e.a(this.l);
             this.s.j();
-            com.tsf.shell.manager._a.n.i();
+            com.tsf.shell.manager.app.n.i();
         }
     }
 
@@ -284,8 +284,8 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
             this.i = false;
             this.f.setAnimationObjectState(false);
             this.f.mouseEnabled(false);
-            com.tsf.shell.manager._a.e.e();
-            com.tsf.shell.manager._a.n.j();
+            com.tsf.shell.manager.app.e.e();
+            com.tsf.shell.manager.app.n.j();
             this.s.k();
         }
     }

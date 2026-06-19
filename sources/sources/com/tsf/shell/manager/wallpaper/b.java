@@ -43,7 +43,7 @@ public class b extends com.tsf.shell.f.e._g.a.b {
     }
 
     private void a() {
-        this.e = com.tsf.shell.manager._a.a.a(com.tsf.shell.manager.p.e.p);
+        this.e = com.tsf.shell.manager.app.a.a(com.tsf.shell.manager.p.e.p);
         this.d = new com.tsf.shell.manager.wallpaper.c();
         this.c = new ArrayList<>();
         this.c.add(new C0150b(x.c(b.i.theme_picker_theme_picker_gallery_apps), b.d.wallpaper_gallery_preview) { // from class: com.tsf.shell.manager.wallpaper.b.1
@@ -92,13 +92,13 @@ public class b extends com.tsf.shell.f.e._g.a.b {
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.b.e.l(ShellWallpaperManager.a);
-                com.tsf.shell.manager._a.f.d();
+                com.tsf.shell.manager.app.f.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.b.e.l(ShellWallpaperManager.b);
-                com.tsf.shell.manager._a.f.d();
+                com.tsf.shell.manager.app.f.d();
             }
         });
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.wallpaper.b.6
@@ -113,7 +113,7 @@ public class b extends com.tsf.shell.f.e._g.a.b {
                 b.this.d.setParentMenu(b.this);
             }
         };
-        if (!com.tsf.shell.manager._a.f.f()) {
+        if (!com.tsf.shell.manager.app.f.f()) {
             arrayList.add(new a.C0095a(b.d.wallpaper_setting_blur, x.c(b.i.text_blur), c0096a));
         }
         arrayList.add(c0095a);

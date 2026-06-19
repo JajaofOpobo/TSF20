@@ -149,7 +149,7 @@ public class A {
     public void v() {
         this.g = true;
         this.a.mouseEnabled(false);
-        com.tsf.shell.manager._a.o.f();
+        com.tsf.shell.manager.app.o.f();
         h();
         t();
     }
@@ -159,7 +159,7 @@ public class A {
         this.g = false;
         this.a.mouseEnabled(true);
         i();
-        com.tsf.shell.manager._a.o.g();
+        com.tsf.shell.manager.app.o.g();
     }
 
     public void d() {
@@ -367,7 +367,7 @@ public class A {
 
     public void j() {
         if (this.a.parent() == null) {
-            com.tsf.shell.manager._a.j.a(this.a);
+            com.tsf.shell.manager.app.j.a(this.a);
             G();
             F();
             if (this.f) {
@@ -407,7 +407,7 @@ public class A {
                     a.this.C();
                 }
                 a.this.E();
-                com.tsf.shell.manager._a.j.b(a.this.a);
+                com.tsf.shell.manager.app.j.b(a.this.a);
             }
         };
         dVar.a(0);

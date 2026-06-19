@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -43,7 +43,7 @@ public class f {
         try {
             Home.b().a(this.a, (Object) null);
         } catch (Exception e) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.a.f.1
+            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.app.f.1
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.activity_not_found));
@@ -106,10 +106,10 @@ public class f {
                 m.a("EVENT_ISSUSE_APP_TITLE_NULL", map);
             }
         }
-        com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.a.f.3
+        com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.f.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.a.r.a(f.this);
+                com.tsf.shell.manager.app.r.a(f.this);
             }
         });
     }
@@ -123,7 +123,7 @@ public class f {
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
                 if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this) {
-                    com.tsf.shell.manager.a.i.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
+                    com.tsf.shell.manager.app.i.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
                 }
             }
         }

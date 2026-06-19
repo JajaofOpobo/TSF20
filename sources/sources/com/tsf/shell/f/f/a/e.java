@@ -22,7 +22,7 @@ public class e extends j {
     private A g = new A(b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.e.2
         @Override // com.tsf.shell.f.f.a.e.a
         public void a() {
-            com.tsf.shell.manager._a.d.a(500);
+            com.tsf.shell.manager.app.d.a(500);
         }
     };
 
@@ -53,7 +53,7 @@ public class e extends j {
         }
 
         public void a(int i) {
-            this.g = com.tsf.shell.manager._a.a.a(i);
+            this.g = com.tsf.shell.manager.app.a.a(i);
             if (this.g.a()) {
                 d();
                     this.g.a(new com.tsf.shell.manager.p.e.a.C0142a() { // from class: com.tsf.shell.f.f.a.e.a.2
@@ -107,7 +107,7 @@ public class e extends j {
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                com.tsf.shell.manager._a.d.a(100);
+                com.tsf.shell.manager.app.d.a(100);
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
@@ -121,18 +121,18 @@ public class e extends j {
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.e) {
-                    com.tsf.shell.manager._a.h.a(motionEvent2.getX(), motionEvent2.getY(), this.b, this.d);
+                    com.tsf.shell.manager.app.h.a(motionEvent2.getX(), motionEvent2.getY(), this.b, this.d);
                     return;
                 }
-                com.tsf.shell.manager._a.h.w();
-                com.tsf.shell.manager._a.h.a(motionEvent2.getX(), motionEvent2.getY(), this.b, this.d);
+                com.tsf.shell.manager.app.h.w();
+                com.tsf.shell.manager.app.h.a(motionEvent2.getX(), motionEvent2.getY(), this.b, this.d);
                 this.e = true;
             }
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
                 if (this.e) {
-                    com.tsf.shell.manager._a.h.x();
+                    com.tsf.shell.manager.app.h.x();
                     this.e = false;
                 }
             }

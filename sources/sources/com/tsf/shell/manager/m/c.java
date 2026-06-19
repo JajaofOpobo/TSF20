@@ -81,7 +81,7 @@ public class c extends e {
     public void i() {
         ArrayList<com.tsf.shell.f.i.b.e.g> arrayListA;
         int size;
-        if (com.tsf.shell.manager._a.w.a().b() && (size = (arrayListA = com.tsf.shell.utils.b.a(6)).size()) > 0) {
+        if (com.tsf.shell.manager.app.w.a().b() && (size = (arrayListA = com.tsf.shell.utils.b.a(6)).size()) > 0) {
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.b.e.g gVar = arrayListA.get(i);
                 gVar.scale().setAll(0.0f, 0.0f, 1.0f);

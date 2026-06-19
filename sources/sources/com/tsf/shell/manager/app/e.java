@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.shell.f.f.a.h;
@@ -34,8 +34,8 @@ public class e {
     }
 
     public void a(final ArrayList<f> arrayList) {
-        this.g = com.tsf.shell.manager.a.h.t();
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.1
+        this.g = com.tsf.shell.manager.app.h.t();
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.e.1
             @Override // java.lang.Runnable
             public void run() {
                 ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = new ArrayList<>();
@@ -51,7 +51,7 @@ public class e {
     }
 
     public void a(final ArrayList<f> arrayList, final boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.2
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.e.2
             @Override // java.lang.Runnable
             public void run() {
                 for (f fVar : arrayList) {
@@ -67,11 +67,11 @@ public class e {
     }
 
     public void b(final ArrayList<f> arrayList, final boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.3
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.e.3
             @Override // java.lang.Runnable
             public void run() {
                 if (z) {
-                    com.tsf.shell.manager.a.l.a(arrayList);
+                    com.tsf.shell.manager.A.l.a(arrayList);
                 }
                 for (f fVar : arrayList) {
                     fVar.d();
@@ -87,7 +87,7 @@ public class e {
     }
 
     public void b(final ArrayList<f> arrayList) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.a.e.4
+        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.e.4
             @Override // java.lang.Runnable
             public void run() {
                 for (f fVar : arrayList) {

@@ -1,10 +1,10 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import android.content.ComponentName;
 import android.content.SharedPreferences;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.shell.ShellActivity;
-import com.tsf.shell.manager.a.c;
+import com.tsf.shell.manager.app.c;
 import com.tsf.shell.utils.h;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,8 +15,8 @@ public class g {
     private ArrayList<b> b = new ArrayList<>();
     private ArrayList<com.tsf.shell.f.i.b.e.g> c = new ArrayList<>();
     private ArrayList<com.tsf.shell.f.i.b.e.g> a = new ArrayList<>();
-    private a d = new a() { // from class: com.tsf.shell.manager.a.g.1
-        @Override // com.tsf.shell.manager.a.g.a, com.tsf.shell.manager.a.c.a
+    private a d = new a() { // from class: com.tsf.shell.manager.app.g.1
+        @Override // com.tsf.shell.manager.app.g.a, com.tsf.shell.manager.app.c.a
         public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
             if (g.this.a.contains(gVar)) {
                 g.this.a.remove(gVar);
@@ -59,7 +59,7 @@ public class g {
     }
 
     public void a() {
-        com.tsf.shell.manager.a.w.a().a(this.d);
+        com.tsf.shell.manager.app.w.a().a(this.d);
         Iterator<Integer> it = h.a(b(), ",", false).iterator();
         while (it.hasNext()) {
             com.tsf.shell.f.i.b.e.g gVarB = b(it.next().intValue());
@@ -76,12 +76,12 @@ public class g {
 
     private void e() {
         if (this.a.isEmpty()) {
-            this.a.add(com.tsf.shell.manager.a.w.a().a(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName())));
+            this.a.add(com.tsf.shell.manager.app.w.a().a(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName())));
         }
     }
 
     private com.tsf.shell.f.i.b.e.g b(int i) {
-        return com.tsf.shell.manager.a.w.a().a(i);
+        return com.tsf.shell.manager.app.w.a().a(i);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

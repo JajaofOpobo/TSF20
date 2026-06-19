@@ -126,7 +126,7 @@ public class a extends b {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a._c._a.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.i = com.tsf.shell.manager._a.h.t().am().a(a.this.h);
+                        a.this.i = com.tsf.shell.manager.app.h.t().am().a(a.this.h);
                     }
                 });
             }
@@ -147,7 +147,7 @@ public class a extends b {
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
                         if (a.this.i != null && aVar != null) {
-                            com.tsf.shell.manager._a.h.t().am().a(aVar);
+                            com.tsf.shell.manager.app.h.t().am().a(aVar);
                             a.this.g = true;
                         }
                         a.this.d = false;

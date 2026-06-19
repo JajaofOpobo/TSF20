@@ -143,7 +143,7 @@ public class C<E> extends com.tsf.shell.f.e._g.a.b {
                     this.c.position().setAllFrom(number3dLocalToGlobal);
                     this.d = number3dLocalToGlobal.x;
                     this.e = number3dLocalToGlobal.y;
-                    com.tsf.shell.manager._a.j.a(this.c);
+                    com.tsf.shell.manager.app.j.a(this.c);
                     c.this.a(motionEvent, c.this.d.a().get(i), this.c);
                     this.c.alpha(255.0f);
                     com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();

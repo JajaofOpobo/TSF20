@@ -2,7 +2,7 @@ package com.tsf.shell.manager.bind;
 
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
-import com.tsf.shell.manager._a.f;
+import com.tsf.shell.manager.app.f;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

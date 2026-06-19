@@ -363,6 +363,6 @@ public class b extends c.a {
         }
         cVar.removeFromParent();
         this.i.a(cVar.position().x, cVar.position().y);
-        com.tsf.shell.manager._a.j.a(cVar);
+        com.tsf.shell.manager.app.j.a(cVar);
     }
 }

@@ -52,7 +52,7 @@ public class t extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEng
         int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.A.F / 2)) + (i / 2);
         int i4 = ((com.censivn.C3DEngine.b.b.A.G / 2) - bVar2.b) - (i2 / 2);
         a.removeFromParent();
-        com.tsf.shell.manager._a.j.a(A);
+        com.tsf.shell.manager.app.j.a(A);
         a.position().x = i3;
         a.position().y = i4;
         a.c().a(i, i2);

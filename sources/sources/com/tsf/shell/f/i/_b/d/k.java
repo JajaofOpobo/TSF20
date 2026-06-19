@@ -106,10 +106,10 @@ public class k {
         this.c.o(false);
         this.e.mouseSkip(true);
         this.e.removeFromParent();
-        com.censivn.C3DEngine.b.f.j jVarA = com.tsf.shell.manager._a.j.a(this.q);
-        com.tsf.shell.manager._a.j.c();
+        com.censivn.C3DEngine.b.f.j jVarA = com.tsf.shell.manager.app.j.a(this.q);
+        com.tsf.shell.manager.app.j.c();
         jVarA.addChild(this.e);
-        com.tsf.shell.manager._a.b.b(Home.b());
+        com.tsf.shell.manager.app.b.b(Home.b());
     }
 
     public void a(final boolean z) {
@@ -127,7 +127,7 @@ public class k {
         this.c.a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.k.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager._a.j.b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.k.3.1
+                com.tsf.shell.manager.app.j.b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.k.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!k.this.s) {
@@ -152,7 +152,7 @@ public class k {
                             com.censivn.C3DEngine.b.g.c.a(k.this.e);
                             com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar2);
                         }
-                        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager._a.h.n();
+                        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.h.n();
                         k.this.e.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
@@ -163,11 +163,11 @@ public class k {
                         }
                         k.this.e.mouseSkip(false);
                         k.this.c.o(true);
-                        com.tsf.shell.manager._a.j.b();
+                        com.tsf.shell.manager.app.j.b();
                         com.tsf.shell.d.a().b("LineViewer");
                         k.this.i = 0;
                         k.this.f();
-                        com.tsf.shell.manager._a.b.c(Home.b());
+                        com.tsf.shell.manager.app.b.c(Home.b());
                     }
                 });
             }

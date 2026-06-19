@@ -25,7 +25,7 @@ public class g {
                 if (runnable != null) {
                     runnable.run();
                 }
-                com.tsf.shell.manager._a.i.a(bVar);
+                com.tsf.shell.manager.app.i.a(bVar);
             }
         };
         dVar.l(0.0f);
@@ -42,7 +42,7 @@ public class g {
             aVarA.position().setAllFrom(iVar.position());
             Number3d.TEMPNUMBER3D2.reset();
             aVarA.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D2));
-            com.tsf.shell.manager._a.j.a(aVarA);
+            com.tsf.shell.manager.app.j.a(aVarA);
         }
     }
 

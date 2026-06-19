@@ -42,7 +42,7 @@ public class d extends com.tsf.shell.f.e.e.d {
         this.d.alpha(200.0f);
         this.d.calAABB(8.0f, 8.0f, 1.0f);
         this.d.setMouseEventListener(aVar);
-        com.tsf.shell.manager._a.k.b(this);
+        com.tsf.shell.manager.app.k.b(this);
         this.b = new TextureElement(0, false);
         this.e = new k(com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), z) { // from class: com.tsf.shell.manager.m.d.3
             @Override // com.censivn.C3DEngine.b.f.i

@@ -14,12 +14,12 @@ public class I extends com.censivn.C3DEngine.b.f.j {
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildStart() {
-        com.tsf.shell.manager._a.u.a(this.a);
+        com.tsf.shell.manager.app.u.a(this.a);
     }
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
-        com.tsf.shell.manager._a.u.a();
+        com.tsf.shell.manager.app.u.a();
     }
 
     public void a(float f) {

@@ -20,21 +20,21 @@ public class b {
     }
 
     public void a(g gVar) {
-        com.tsf.shell.manager._a.v.c.e().a(gVar);
+        com.tsf.shell.manager.app.v.c.e().a(gVar);
         boolean zB = b();
         if (zB) {
             this.b.setGravity(new Vector2(0.0f, -100.0f));
             this.b.step(0.025f, 3, 3);
             com.censivn.C3DEngine.A.e().j();
         }
-        com.tsf.shell.manager._a.v.c.e().a(zB);
+        com.tsf.shell.manager.app.v.c.e().a(zB);
     }
 
     public boolean b() {
-        return com.tsf.shell.manager._a.v.c.e().a();
+        return com.tsf.shell.manager.app.v.c.e().a();
     }
 
     public void a(com.tsf.shell.f.i.B bVar) {
-        com.tsf.shell.manager._a.v.c.e().a(bVar);
+        com.tsf.shell.manager.app.v.c.e().a(bVar);
     }
 }

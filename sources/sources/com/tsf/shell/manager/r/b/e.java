@@ -17,7 +17,7 @@ public class e extends com.tsf.shell.f.e._g.a.b {
     public e(final com.tsf.shell.manager.r.b.A aVar, String str) {
         super(str);
         this.a = aVar;
-        this.c = com.tsf.shell.manager._a.d.c;
+        this.c = com.tsf.shell.manager.app.d.c;
         this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.b.b.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.b.b.U) { // from class: com.tsf.shell.manager.r.b.e.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
@@ -26,7 +26,7 @@ public class e extends com.tsf.shell.f.e._g.a.b {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.e.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager._a.d.c.a().size();
+                return com.tsf.shell.manager.app.d.c.a().size();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b

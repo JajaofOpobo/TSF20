@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import com.tsf.shell.f.e.F;
 import java.util.ArrayList;

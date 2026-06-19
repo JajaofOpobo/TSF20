@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.r.a;
 
 import android.view.View;
-import com.tsf.shell.manager._a.f;
+import com.tsf.shell.manager.app.f;
 import com.tsf.shell.manager.r.a.a;
 import com.tsf.shell.manager.r.c.g;
 import java.util.ArrayList;

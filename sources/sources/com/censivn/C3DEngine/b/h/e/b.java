@@ -88,7 +88,7 @@ public class b extends j {
                 b.this.k();
                 if (b.this.y && b.this.b.getAnimationObjectState()) {
                     this.b = true;
-                    com.tsf.shell.manager.a.u.a(b.this.d);
+                    com.tsf.shell.manager.A.u.a(b.this.d);
                 } else {
                     this.b = false;
                 }
@@ -102,7 +102,7 @@ public class b extends j {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
                 if (this.b) {
-                    com.tsf.shell.manager.a.u.a();
+                    com.tsf.shell.manager.A.u.a();
                 }
             }
 
@@ -268,7 +268,7 @@ public class b extends j {
                         b.this.b.replaceChild(this.h, b.this.A);
                         this.h.position().setAllFrom(this.i);
                         this.h.setAnimationObjectState(true);
-                        com.tsf.shell.manager.a.j.a(this.h);
+                        com.tsf.shell.manager.A.j.a(this.h);
                         this.d = true;
                         return;
                     }
@@ -287,7 +287,7 @@ public class b extends j {
                     if (this.h != null) {
                         this.d = false;
                         this.i.setAllFrom(this.h.position());
-                        com.tsf.shell.manager.a.j.b(this.h);
+                        com.tsf.shell.manager.A.j.b(this.h);
                         b.this.b.globalToLocal(this.i);
                         b.this.b.replaceChild(b.this.A, this.h);
                         this.h.position().setAllFrom(this.i);

@@ -259,13 +259,13 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         int cacheWidth = getCacheWidth();
         int cacheHeight = getCacheHeight();
         tempPosition.setAllFrom(position());
-        com.tsf.shell.f.a.a.a aVarA = com.tsf.shell.manager.a.t.a(cacheWidth, cacheHeight);
+        com.tsf.shell.f.a.a.a aVarA = com.tsf.shell.manager.A.t.a(cacheWidth, cacheHeight);
         this.cacheTextureElement = com.censivn.C3DEngine.A.g().a(cacheWidth, cacheHeight, false);
-        com.tsf.shell.manager.a.t.a(aVarA, this.cacheTextureElement);
+        com.tsf.shell.manager.A.t.a(aVarA, this.cacheTextureElement);
         position().setAll(0.0f, 0.0f, 0.0f);
         dispatchDraw();
-        com.tsf.shell.manager.a.t.a();
-        com.tsf.shell.manager.a.t.a(aVarA);
+        com.tsf.shell.manager.A.t.a();
+        com.tsf.shell.manager.A.t.a(aVarA);
         position().setAllFrom(tempPosition);
         return this.cacheTextureElement;
     }

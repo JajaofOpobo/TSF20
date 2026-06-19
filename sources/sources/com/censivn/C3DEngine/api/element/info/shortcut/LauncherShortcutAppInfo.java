@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.manager.A;
-import com.tsf.shell.manager.a.f;
+import com.tsf.shell.manager.app.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {

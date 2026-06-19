@@ -36,7 +36,7 @@ public class c extends AppWidgetHostView {
         textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.e.c.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
-                com.tsf.shell.manager._a.l.a.a(c.this.getHostLayout());
+                com.tsf.shell.manager.app.l.a.a(c.this.getHostLayout());
             }
         });
         return textView;

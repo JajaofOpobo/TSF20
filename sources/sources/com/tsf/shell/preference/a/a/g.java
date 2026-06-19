@@ -24,7 +24,7 @@ public class g extends i {
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.g.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.tsf.shell.manager._a.d.a(1800);
+                com.tsf.shell.manager.app.d.a(1800);
                 g.this.e();
             }
         });
@@ -65,7 +65,7 @@ public class g extends i {
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
                 g.this.e();
-                com.tsf.shell.manager._a.d.a(ACRAConstants.DEFAULT_SOCKET_TIMEOUT);
+                com.tsf.shell.manager.app.d.a(ACRAConstants.DEFAULT_SOCKET_TIMEOUT);
             }
         });
         b(jVar4);

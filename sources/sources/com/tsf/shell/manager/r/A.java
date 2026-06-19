@@ -20,8 +20,8 @@ public class A {
         int i4 = iArr[1];
         int i5 = iArr[2];
         int i6 = iArr[3];
-        int i7 = (int) com.tsf.shell.manager._a.h.d.a.d;
-        int i8 = (int) com.tsf.shell.manager._a.h.d.a.d;
+        int i7 = (int) com.tsf.shell.manager.app.h.d.a.d;
+        int i8 = (int) com.tsf.shell.manager.app.h.d.a.d;
         if (i3 < com.censivn.C3DEngine.b.b.A.v) {
             i5 -= com.censivn.C3DEngine.b.b.A.v - i3;
             i3 = com.censivn.C3DEngine.b.b.A.v;
@@ -82,8 +82,8 @@ public class A {
         int i5 = iArr[1];
         int i6 = iArr[2];
         int i7 = iArr[3];
-        int i8 = (int) com.tsf.shell.manager._a.h.d.a.d;
-        int i9 = (int) com.tsf.shell.manager._a.h.d.a.d;
+        int i8 = (int) com.tsf.shell.manager.app.h.d.a.d;
+        int i9 = (int) com.tsf.shell.manager.app.h.d.a.d;
         if (i4 < com.censivn.C3DEngine.b.b.A.v) {
             i4 = com.censivn.C3DEngine.b.b.A.v;
             z = true;
@@ -144,8 +144,8 @@ public class A {
         int i5 = iArr[1];
         int i6 = iArr[2];
         int i7 = iArr[3];
-        int i8 = (int) com.tsf.shell.manager._a.h.d.a.d;
-        int i9 = (int) com.tsf.shell.manager._a.h.d.a.d;
+        int i8 = (int) com.tsf.shell.manager.app.h.d.a.d;
+        int i9 = (int) com.tsf.shell.manager.app.h.d.a.d;
         if (i6 > com.censivn.C3DEngine.b.b.A.p) {
             i8 = com.censivn.C3DEngine.b.b.A.p;
             z = true;

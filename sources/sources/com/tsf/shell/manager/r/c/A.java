@@ -25,7 +25,7 @@ public class A {
     private static PackageManager a;
     private static float[] b = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
 
-    public static Bitmap a(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager._a.f fVar) {
+    public static Bitmap a(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.A aVar, com.tsf.shell.manager.app.f fVar) {
         boolean z;
         Bitmap iconFilterBitmap;
         boolean z2;

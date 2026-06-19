@@ -41,7 +41,7 @@ public class A extends com.tsf.shell.f.f.l {
             this.b = new C0108a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, (int) (i2 / (com.censivn.C3DEngine.b.b.A.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.A.e * 8.0f)));
             this.a.addChild(this.b);
         }
-        e.a aVarA = com.tsf.shell.manager._a.a.a(com.tsf.shell.manager.p.e.f);
+        e.a aVarA = com.tsf.shell.manager.app.a.a(com.tsf.shell.manager.p.e.f);
         if (aVarA.a() && aVarA.c == 110) {
             m();
         }
@@ -57,7 +57,7 @@ public class A extends com.tsf.shell.f.f.l {
     @Override // com.tsf.shell.f.f.l
     public void e() {
         if (this.c == null) {
-            this.c = com.tsf.shell.manager._a.h.n();
+            this.c = com.tsf.shell.manager.app.h.n();
         }
     }
 
@@ -67,7 +67,7 @@ public class A extends com.tsf.shell.f.f.l {
     }
 
     private void o() {
-        if (com.tsf.shell.manager._a.h.s().b()) {
+        if (com.tsf.shell.manager.app.h.s().b()) {
             if (this.f != 1) {
                 this.f = 1;
                 final float f = this.a.position().z;
@@ -114,7 +114,7 @@ public class A extends com.tsf.shell.f.f.l {
     @Override // com.tsf.shell.f.f.l
     public void b(float f, float f2) {
         o();
-        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager._a.h.n();
+        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.h.n();
         if (this.e != null && this.e != gVarN && Math.round(Math.abs(this.e.g - gVarN.g)) % 2 != 0) {
             com.tsf.shell.f.f.g gVar = this.c;
             this.c = this.d;

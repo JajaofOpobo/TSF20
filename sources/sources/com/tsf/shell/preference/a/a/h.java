@@ -36,7 +36,7 @@ public class h extends i {
             @Override // com.censivn.C3DEngine.b.e.a.C0027a
             public boolean a(boolean z) {
                 h.this.d = z;
-                com.tsf.shell.manager._a.n.a(h.this.d);
+                com.tsf.shell.manager.app.n.a(h.this.d);
                 h.this.k();
                 h.this.i();
                 return true;
@@ -56,9 +56,9 @@ public class h extends i {
             public boolean a(int i) {
                 h.this.h = i / 100.0f;
                 if (com.censivn.C3DEngine.b.b.A.O) {
-                    com.tsf.shell.manager._a.n.a(h.this.h);
+                    com.tsf.shell.manager.app.n.a(h.this.h);
                 } else {
-                    com.tsf.shell.manager._a.n.b(h.this.h);
+                    com.tsf.shell.manager.app.n.b(h.this.h);
                 }
                 h.this.i();
                 return true;
@@ -99,7 +99,7 @@ public class h extends i {
         this.e = zH;
         this.d = zH;
         this.c.c(this.d);
-        this.a.f(com.tsf.shell.manager._a.n.d());
+        this.a.f(com.tsf.shell.manager.app.n.d());
         i();
         k();
         j();
@@ -108,10 +108,10 @@ public class h extends i {
     private void j() {
         if (com.censivn.C3DEngine.b.b.A.O) {
             this.b.b(x.c(b.i.text_position) + " (" + x.c(b.i.text_vertical) + ")");
-            this.h = com.tsf.shell.manager._a.n.a();
+            this.h = com.tsf.shell.manager.app.n.a();
         } else {
             this.b.b(x.c(b.i.text_position) + " (" + x.c(b.i.text_horizontal) + ")");
-            this.h = com.tsf.shell.manager._a.n.c();
+            this.h = com.tsf.shell.manager.app.n.c();
         }
         this.b.k((int) (this.h * 100.0f));
     }
@@ -139,8 +139,8 @@ public class h extends i {
         if (this.d != this.e) {
             com.tsf.shell.manager.b.e.b(this.d);
         }
-        com.tsf.shell.manager._a.n.a(this.a.e(), true);
-        com.tsf.shell.manager._a.n.h();
+        com.tsf.shell.manager.app.n.a(this.a.e(), true);
+        com.tsf.shell.manager.app.n.h();
     }
 
     class A extends com.censivn.C3DEngine.b.e.g {
@@ -210,7 +210,7 @@ public class h extends i {
                     } else {
                         a.this.e = 0;
                     }
-                    com.tsf.shell.manager._a.n.a(a.this.e, false);
+                    com.tsf.shell.manager.app.n.a(a.this.e, false);
                     a.this.m();
                     h.this.i();
                 }

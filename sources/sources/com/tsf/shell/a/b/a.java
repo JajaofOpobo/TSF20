@@ -1,4 +1,4 @@
-package com.tsf.shell._a.b;
+package com.tsf.shell.a.b;
 
 import android.app.Activity;
 import android.content.ComponentName;

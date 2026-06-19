@@ -23,18 +23,18 @@ public class g extends a {
         arrayList.add(new a.C0095a(b.d.effect_setting_desktop_menu_random, x.c(b.i.text_random), new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.g.1
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public boolean a() {
-                return com.tsf.shell.manager._a.v.e.g();
+                return com.tsf.shell.manager.app.v.e.g();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager._a.v.e.a(true);
+                com.tsf.shell.manager.app.v.e.a(true);
                 g.this.b.d();
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager._a.v.e.a(false);
+                com.tsf.shell.manager.app.v.e.a(false);
                 g.this.b.d();
             }
         }));
@@ -43,12 +43,12 @@ public class g extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.g.2
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager._a.v.e.i();
+                return com.tsf.shell.manager.app.v.e.i();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                com.tsf.shell.f._d.c.a.d dVarA = com.tsf.shell.manager._a.v.e.a(i);
+                com.tsf.shell.f._d.c.a.d dVarA = com.tsf.shell.manager.app.v.e.a(i);
                 com.tsf.shell.f._d.c.a.c cVarB = dVarA.b();
                 cVarB.removeFromParent();
                 if (dVarA.i()) {
@@ -67,14 +67,14 @@ public class g extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.g.3
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f._d.c.a.d dVarA = com.tsf.shell.manager._a.v.e.a(i);
+                com.tsf.shell.f._d.c.a.d dVarA = com.tsf.shell.manager.app.v.e.a(i);
                 w.b();
-                com.tsf.shell.manager._a.v.e.a((com.tsf.shell.f.f.f) dVarA);
-                com.tsf.shell.manager._a.v.e.d().b(g.this.a.a());
+                com.tsf.shell.manager.app.v.e.a((com.tsf.shell.f.f.f) dVarA);
+                com.tsf.shell.manager.app.v.e.d().b(g.this.a.a());
                 g.this.b.d();
             }
         });
-        this.c = com.tsf.shell.manager._a.a.a(this, com.tsf.shell.manager.p.e.g);
+        this.c = com.tsf.shell.manager.app.a.a(this, com.tsf.shell.manager.p.e.g);
     }
 
     @Override // com.tsf.shell.f.g.a.a
@@ -104,28 +104,28 @@ public class g extends a {
 
     @Override // com.tsf.shell.f.g.a.a
     public void c() {
-        com.tsf.shell.manager._a.v.e.d().b(this.a.a());
+        com.tsf.shell.manager.app.v.e.d().b(this.a.a());
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onHide() {
         super.onHide();
-        com.tsf.shell.manager._a.v.e.d().a((com.tsf.shell.f.i.C) null);
+        com.tsf.shell.manager.app.v.e.d().a((com.tsf.shell.f.i.C) null);
         this.c.b();
-        int i = com.tsf.shell.manager._a.v.e.i();
+        int i = com.tsf.shell.manager.app.v.e.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager._a.v.e.a(i2).l();
+            com.tsf.shell.manager.app.v.e.a(i2).l();
         }
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
     public void onRecycle() {
         super.onRecycle();
-        int i = com.tsf.shell.manager._a.v.e.i();
+        int i = com.tsf.shell.manager.app.v.e.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager._a.v.e.a(i2).h();
+            com.tsf.shell.manager.app.v.e.a(i2).h();
         }
         com.tsf.shell.f._d.c.a.c.a();
-        com.tsf.shell.manager._a.v.e.j();
+        com.tsf.shell.manager.app.v.e.j();
     }
 }

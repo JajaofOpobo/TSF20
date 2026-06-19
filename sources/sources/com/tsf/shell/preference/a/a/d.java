@@ -105,7 +105,7 @@ public class d extends com.censivn.C3DEngine.b.e.c {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public int b() {
-        return com.tsf.shell.manager._a.g.c();
+        return com.tsf.shell.manager.app.g.c();
     }
 
     @Override // com.censivn.C3DEngine.b.e.c
@@ -132,8 +132,8 @@ public class d extends com.censivn.C3DEngine.b.e.c {
         dVar.a(255);
         com.censivn.C3DEngine.b.g.c.a(this.k);
         com.censivn.C3DEngine.b.g.c.a(this.k, 500, dVar);
-        this.k.f(com.tsf.shell.manager._a.g.c());
-        int i = com.tsf.shell.manager._a.g.b.i();
+        this.k.f(com.tsf.shell.manager.app.g.c());
+        int i = com.tsf.shell.manager.app.g.b.i();
         this.a.k(i);
         this.b.f(i);
         this.g = com.tsf.shell.manager.b.e.t();
@@ -155,12 +155,12 @@ public class d extends com.censivn.C3DEngine.b.e.c {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
-        com.tsf.shell.manager._a.g.b.a(this.a.e(), true);
-        com.tsf.shell.manager._a.g.a.a(this.d.e());
+        com.tsf.shell.manager.app.g.b.a(this.a.e(), true);
+        com.tsf.shell.manager.app.g.a.a(this.d.e());
         com.tsf.shell.manager.b.e.d(this.g);
         com.tsf.shell.manager.b.e.e(this.h);
         com.tsf.shell.manager.b.e.q(this.e.e());
         com.tsf.shell.manager.b.e.r(this.f.e());
-        com.tsf.shell.manager._a.g.b(this.k.e());
+        com.tsf.shell.manager.app.g.b(this.k.e());
     }
 }

@@ -39,12 +39,12 @@ public class B extends com.tsf.shell.f.e._g.a.b {
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager._a.i.b().a(runnable);
+                com.tsf.shell.manager.app.i.b().a(runnable);
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager._a.i.b().a(false);
+                com.tsf.shell.manager.app.i.b().a(false);
             }
         };
         a.C0095a c0095a = new a.C0095a(b.d.widget_menu_decoration_floating, x.c(b.i.text_floating), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.b.4
@@ -55,12 +55,12 @@ public class B extends com.tsf.shell.f.e._g.a.b {
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                com.tsf.shell.manager._a.i.b().b(true);
+                com.tsf.shell.manager.app.i.b().b(true);
             }
 
             @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void c() {
-                com.tsf.shell.manager._a.i.b().b(false);
+                com.tsf.shell.manager.app.i.b().b(false);
             }
         });
         com.tsf.shell.manager.r.c.b.e = c0095a;

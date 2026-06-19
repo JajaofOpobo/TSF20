@@ -142,7 +142,7 @@ public class A {
             com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) bVar.parent();
             jVar.addChildAt(a, jVar.getChildIndexOf(bVar));
             com.censivn.C3DEngine.b.c.b.a(m);
-            com.tsf.shell.manager._a.b.a(l);
+            com.tsf.shell.manager.app.b.a(l);
             b.a(com.censivn.C3DEngine.b.b.A.F);
             c.a(com.censivn.C3DEngine.b.b.A.G);
         }
@@ -159,7 +159,7 @@ public class A {
             j.c(false);
             a.removeFromParent();
             com.censivn.C3DEngine.b.c.b.b(m);
-            com.tsf.shell.manager._a.b.b(l);
+            com.tsf.shell.manager.app.b.b(l);
             q = false;
         }
     }

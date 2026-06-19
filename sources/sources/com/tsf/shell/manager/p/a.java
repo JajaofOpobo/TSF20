@@ -18,7 +18,7 @@ public class a {
         this.a = new b();
         com.censivn.C3DEngine.a.d.d().a(false);
         com.censivn.C3DEngine.b.c.b.c();
-        com.tsf.shell.manager._a.b.b(Home.b());
+        com.tsf.shell.manager.app.b.b(Home.b());
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.a.1
             @Override // java.lang.Runnable
             public void run() {
@@ -29,8 +29,8 @@ public class a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        float fD = com.tsf.shell.manager._a.o.d();
-        float fE = com.tsf.shell.manager._a.o.e();
+        float fD = com.tsf.shell.manager.app.o.d();
+        float fE = com.tsf.shell.manager.app.o.e();
         this.a.position().x = 0.0f;
         this.a.position().y = 0.0f;
         this.a.rotation().z = 80.0f;
@@ -39,7 +39,7 @@ public class a {
         anonymousClass2.h(fE);
         anonymousClass2.a(255);
         com.censivn.C3DEngine.b.g.c.a(this.a, 1000, anonymousClass2);
-        com.tsf.shell.manager._a.j.a(this.a);
+        com.tsf.shell.manager.app.j.a(this.a);
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.p.a$2, reason: invalid class name */
@@ -53,7 +53,7 @@ public class a {
                 @Override // java.lang.Runnable
                 public void run() {
                     a.this.a.b();
-                    com.tsf.shell.manager._a.o.l();
+                    com.tsf.shell.manager.app.o.l();
                     com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.a.2.1.1
                         @Override // java.lang.Runnable
                         public void run() {
@@ -67,9 +67,9 @@ public class a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        com.tsf.shell.manager._a.h.w();
-        float fD = com.tsf.shell.manager._a.o.d();
-        float fE = com.tsf.shell.manager._a.o.e();
+        com.tsf.shell.manager.app.h.w();
+        float fD = com.tsf.shell.manager.app.o.d();
+        float fE = com.tsf.shell.manager.app.o.e();
         float[] fArrA = x.a(fD, fE);
         float f = fArrA[0];
         float f2 = fArrA[1];
@@ -102,7 +102,7 @@ public class a {
         public void a(float f) {
             a.this.a.position().x = this.a + ((this.b - this.a) * f);
             a.this.a.position().y = this.c + ((this.d - this.c) * f);
-            com.tsf.shell.manager._a.h.a(this.e + ((this.f - this.e) * f), this.C + ((0.0f - this.C) * f), this.e, this.C);
+            com.tsf.shell.manager.app.h.a(this.e + ((this.f - this.e) * f), this.C + ((0.0f - this.C) * f), this.e, this.C);
         }
 
         @Override // com.censivn.C3DEngine.b.g.d
@@ -110,7 +110,7 @@ public class a {
             com.censivn.C3DEngine.b.g._b.b bVar = new com.censivn.C3DEngine.b.g._b.b();
             float f = a.this.a.position().x;
             float f2 = a.this.a.position().y;
-            float fB = com.tsf.shell.manager._a.h.r().b(1);
+            float fB = com.tsf.shell.manager.app.h.r().b(1);
             float f3 = fB - (com.censivn.C3DEngine.b.b.A.F / 2.0f);
             float f4 = this.d - (com.censivn.C3DEngine.b.b.A.A - f3);
             a.this.a.a(-30.0f);
@@ -137,7 +137,7 @@ public class a {
             public void a(float f) {
                 a.this.a.position().x = this.a + ((this.b - this.a) * f);
                 a.this.a.position().y = this.c + ((this.d - this.c) * f);
-                com.tsf.shell.manager._a.h.a(AnonymousClass3.this.f + ((this.e - AnonymousClass3.this.f) * f), ((AnonymousClass3.this.C - 0.0f) * f) + 0.0f, AnonymousClass3.this.e, AnonymousClass3.this.C);
+                com.tsf.shell.manager.app.h.a(AnonymousClass3.this.f + ((this.e - AnonymousClass3.this.f) * f), ((AnonymousClass3.this.C - 0.0f) * f) + 0.0f, AnonymousClass3.this.e, AnonymousClass3.this.C);
             }
 
             @Override // com.censivn.C3DEngine.b.g.d
@@ -145,8 +145,8 @@ public class a {
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.a.3.1.1
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a() {
-                        com.tsf.shell.manager._a.o.m();
-                        com.tsf.shell.manager._a.h.x();
+                        com.tsf.shell.manager.app.o.m();
+                        com.tsf.shell.manager.app.h.x();
                         a.this.a.position().x = 0.0f;
                         a.this.a.position().y = 0.0f;
                         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.a.3.1.1.1
@@ -191,7 +191,7 @@ public class a {
 
                     @Override // com.censivn.C3DEngine.b.g.d
                     public void a(float f) {
-                        com.tsf.shell.manager._a.h.s().a(45.0f * (1.0f - f));
+                        com.tsf.shell.manager.app.h.s().a(45.0f * (1.0f - f));
                     }
 
                     /* JADX INFO: renamed from: com.tsf.shell.manager.p.a$4$1$1$1$1, reason: invalid class name and collision with other inner class name */
@@ -201,8 +201,8 @@ public class a {
 
                         @Override // com.censivn.C3DEngine.b.g.d
                         public void a(float f) {
-                            com.tsf.shell.manager._a.h.s().b(a.this.b * f);
-                            com.tsf.shell.manager._a.h.s().a(a.this.c * f);
+                            com.tsf.shell.manager.app.h.s().b(a.this.b * f);
+                            com.tsf.shell.manager.app.h.s().a(a.this.c * f);
                         }
 
                         @Override // com.censivn.C3DEngine.b.g.d
@@ -210,8 +210,8 @@ public class a {
                             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.a.4.1.1.1.1.1
                                 @Override // com.censivn.C3DEngine.b.g.d
                                 public void a(float f) {
-                                    com.tsf.shell.manager._a.h.s().b(a.this.b - ((a.this.b * 2.0f) * f));
-                                    com.tsf.shell.manager._a.h.s().a(a.this.c - ((a.this.c * 2.0f) * f));
+                                    com.tsf.shell.manager.app.h.s().b(a.this.b - ((a.this.b * 2.0f) * f));
+                                    com.tsf.shell.manager.app.h.s().a(a.this.c - ((a.this.c * 2.0f) * f));
                                 }
 
                                 @Override // com.censivn.C3DEngine.b.g.d
@@ -219,15 +219,15 @@ public class a {
                                     com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.a.4.1.1.1.1.1.1
                                         @Override // com.censivn.C3DEngine.b.g.d
                                         public void a(float f) {
-                                            com.tsf.shell.manager._a.h.s().b((-a.this.b) + ((a.this.b + com.tsf.shell.manager._a.h.s().a(1)) * f));
-                                            com.tsf.shell.manager._a.h.s().a((-a.this.c) + (a.this.c * f));
+                                            com.tsf.shell.manager.app.h.s().b((-a.this.b) + ((a.this.b + com.tsf.shell.manager.app.h.s().a(1)) * f));
+                                            com.tsf.shell.manager.app.h.s().a((-a.this.c) + (a.this.c * f));
                                         }
 
                                         @Override // com.censivn.C3DEngine.b.g.d
                                         public void a() {
-                                            com.tsf.shell.manager._a.h.s().a((g) null);
-                                            com.tsf.shell.manager._a.h.s().d((MotionEvent) null);
-                                            com.tsf.shell.manager._a.h.g();
+                                            com.tsf.shell.manager.app.h.s().a((g) null);
+                                            com.tsf.shell.manager.app.h.s().d((MotionEvent) null);
+                                            com.tsf.shell.manager.app.h.g();
                                             a.this.e();
                                         }
                                     };
@@ -251,7 +251,7 @@ public class a {
                         c01391.h(-a.this.d);
                         com.censivn.C3DEngine.b.g.c.a(a.this.a, 1000, c01391);
                         a.this.a.a(30.0f);
-                        com.tsf.shell.manager._a.h.s().e();
+                        com.tsf.shell.manager.app.h.s().e();
                     }
                 }
 
@@ -260,7 +260,7 @@ public class a {
                     C01381 c01381 = new C01381();
                     c01381.h(0.0f);
                     com.censivn.C3DEngine.b.g.c.a(a.this.a, 500, c01381);
-                    com.tsf.shell.manager._a.h.s().e();
+                    com.tsf.shell.manager.app.h.s().e();
                 }
             }
         }
@@ -274,7 +274,7 @@ public class a {
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
         AnonymousClass4 anonymousClass4 = new AnonymousClass4();
-        anonymousClass4.h(com.tsf.shell.manager._a.g.a.l().b + com.tsf.shell.manager._a.g.a.l().h);
+        anonymousClass4.h(com.tsf.shell.manager.app.g.a.l().b + com.tsf.shell.manager.app.g.a.l().h);
         anonymousClass4.a(255);
         com.censivn.C3DEngine.b.g.c.a(this.a, 500, anonymousClass4);
     }
@@ -284,10 +284,10 @@ public class a {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.a.5
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
-                com.tsf.shell.manager._a.b.c(Home.b());
+                com.tsf.shell.manager.app.b.c(Home.b());
                 com.censivn.C3DEngine.b.c.b.b();
                 com.censivn.C3DEngine.a.d.d().a(true);
-                com.tsf.shell.manager._a.j.b(a.this.a);
+                com.tsf.shell.manager.app.j.b(a.this.a);
                 a.this.a.a();
                 com.censivn.C3DEngine.A.d().sendBroadcast(new Intent(ThemeClockManager.ALARM_ON_CLICK));
                 Home.b().o();

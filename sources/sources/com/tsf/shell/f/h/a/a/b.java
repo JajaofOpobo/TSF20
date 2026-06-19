@@ -29,7 +29,7 @@ public class b extends j {
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 if (b.this.c != null) {
-                    com.tsf.shell.manager._a.o.a().v().a(b.this);
+                    com.tsf.shell.manager.app.o.a().v().a(b.this);
                 }
             }
         });
@@ -57,7 +57,7 @@ public class b extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.d.id == 0) {
-            this.d.id = com.tsf.shell.manager._a.o.a().v().c(false).id;
+            this.d.id = com.tsf.shell.manager.app.o.a().v().c(false).id;
             if (this.c != null) {
                 com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.b.2
                     @Override // java.lang.Runnable
@@ -88,7 +88,7 @@ public class b extends j {
                     return;
                 }
             }
-            this.d.id = com.tsf.shell.manager._a.o.a().v().c(false).id;
+            this.d.id = com.tsf.shell.manager.app.o.a().v().c(false).id;
         }
     }
 
@@ -113,7 +113,7 @@ public class b extends j {
     }
 
     public void h() {
-        if (this.d.id == com.tsf.shell.manager._a.o.a().v().c(false).id) {
+        if (this.d.id == com.tsf.shell.manager.app.o.a().v().c(false).id) {
             this.d.id = 0;
         } else {
             com.censivn.C3DEngine.A.g().a(this.d);

@@ -214,7 +214,7 @@ public abstract class m extends k {
         if (!this.l) {
             Collections.sort(this.k, this.j);
         }
-        com.censivn.C3DEngine.b.f.j jVarAA = com.tsf.shell.manager._a.h.t().aA();
+        com.censivn.C3DEngine.b.f.j jVarAA = com.tsf.shell.manager.app.h.t().aA();
         MatrixStack.glPushMatrix();
         MatrixStack.glTranslatef(0.0f, 0.0f, -this.f);
         MatrixStack.glRotatef(jVarAA.rotation().x, 1.0f, 0.0f, 0.0f);

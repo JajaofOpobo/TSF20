@@ -126,7 +126,7 @@ public class a extends j {
             for (int i2 = 0; i2 < i; i2++) {
                 int i3 = (int) ((textureElement.width / f2) / (i2 + 1));
                 int i4 = (int) ((textureElement.height / f2) / (i2 + 1));
-                this.j.add(com.tsf.shell.manager._a.t.a(i3, i4));
+                this.j.add(com.tsf.shell.manager.app.t.a(i3, i4));
                 this.h.add(e.a(i3, i4));
                 this.i.add(e.a(i3, i4));
             }
@@ -150,7 +150,7 @@ public class a extends j {
             GLES20.glDeleteTextures(1, new int[]{this.i.remove(0).id}, 0);
         }
         while (this.j.size() > 0) {
-            com.tsf.shell.manager._a.t.a(this.j.remove(0));
+            com.tsf.shell.manager.app.t.a(this.j.remove(0));
         }
     }
 }

@@ -49,7 +49,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
                 this.mContentContainer.addChild(this.mStyleContainer);
                 this.mContentContainer.addChild(this.mElementContainer);
                 initIconDesigner();
-                com.tsf.shell.manager._a.a.a(this, e.c);
+                com.tsf.shell.manager.app.a.a(this, e.c);
                 return;
             }
         }
@@ -62,7 +62,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
 
     private void initStyleContainer() {
         this.mStyleContainer.addChild(new ThemeMixFontPlane());
-        final e.a aVarA = com.tsf.shell.manager._a.a.a(e.d);
+        final e.a aVarA = com.tsf.shell.manager.app.a.a(e.d);
         ThemeMenuMixElementPlane themeMenuMixElementPlane = new ThemeMenuMixElementPlane() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMixMenu.1
             @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
             public Bitmap getPreviewBitmap() {

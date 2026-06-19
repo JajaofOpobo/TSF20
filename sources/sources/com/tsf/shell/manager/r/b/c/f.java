@@ -40,7 +40,7 @@ public class f extends com.censivn.C3DEngine.b.h.b.f {
         this.b = number3dLocalToGlobal.y;
         this.d.removeFromParent();
         a(i).e();
-        com.tsf.shell.manager._a.j.a(this.d);
+        com.tsf.shell.manager.app.j.a(this.d);
         this.f.templeteHide();
     }
 
@@ -51,7 +51,7 @@ public class f extends com.censivn.C3DEngine.b.h.b.f {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 eVarA.f();
-                com.tsf.shell.manager._a.j.b(f.this.d);
+                com.tsf.shell.manager.app.j.b(f.this.d);
                 f.this.c.a(f.this.d);
                 f.this.d.alpha(255.0f);
                 f.this.d.scale().setAll(0.0f, 0.0f, 1.0f);

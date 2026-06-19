@@ -6,12 +6,12 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class B {
-    private com.tsf.shell.manager._a.e a;
+    private com.tsf.shell.manager.app.e a;
     private boolean c = false;
     private boolean d = false;
     private ArrayList<com.tsf.shell.f.i.B> b = new ArrayList<>();
 
-    public B(com.tsf.shell.manager._a.e eVar) {
+    public B(com.tsf.shell.manager.app.e eVar) {
         this.a = eVar;
     }
 
@@ -35,7 +35,7 @@ public class B {
         for (com.tsf.shell.f.i.B bVar : this.b) {
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
-                com.tsf.shell.manager._a.w.c().a(bVar2.K());
+                com.tsf.shell.manager.app.w.c().a(bVar2.K());
                 bVar2.g();
                 bVar2.destroy();
             }
@@ -70,7 +70,7 @@ public class B {
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a.b.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager._a.h.t().ak();
+                    com.tsf.shell.manager.app.h.t().ak();
                 }
             };
             if (!this.d) {
@@ -105,7 +105,7 @@ public class B {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager._a.h.t().am().e();
+                        com.tsf.shell.manager.app.h.t().am().e();
                         b.this.h();
                         if (runnable != null) {
                             runnable.run();

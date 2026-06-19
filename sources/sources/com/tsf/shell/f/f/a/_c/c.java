@@ -319,7 +319,7 @@ public class c extends i {
             this.x = jVar;
             this.v = jVar.getChildIndexOf(cVar);
             jVar.replaceChild(cVar, this.m);
-            com.tsf.shell.manager._a.j.a(cVar);
+            com.tsf.shell.manager.app.j.a(cVar);
             this.a.c((com.tsf.shell.f.i.B) cVar);
             cVar.setAnimationObjectState(true);
             Number3d.TEMPNUMBER3D.reset();
@@ -406,7 +406,7 @@ public class c extends i {
                     cVar2.position().setAllFrom(this.s);
                 }
                 arrayList.remove(cVar);
-                com.tsf.shell.manager._a.j.b(cVar);
+                com.tsf.shell.manager.app.j.b(cVar);
                 int childIndexOf = jVar.getChildIndexOf(this.m);
                 jVar.children().set(childIndexOf, cVar);
                 cVar.parent(jVar);
@@ -428,7 +428,7 @@ public class c extends i {
         if (this.b.c() == this) {
             s();
         }
-        com.tsf.shell.manager._a.p.c();
+        com.tsf.shell.manager.app.p.c();
     }
 
     private void s() {
@@ -481,7 +481,7 @@ public class c extends i {
             }
         } else {
             if ((cVar instanceof com.tsf.shell.f.i._b.e.g) && cVar.L()) {
-                com.tsf.shell.manager._a.j.b(cVar);
+                com.tsf.shell.manager.app.j.b(cVar);
                 com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
                 if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.A)) {
                     ((com.tsf.shell.f.f.a.A) jVar).removeChild(this.m);
@@ -493,7 +493,7 @@ public class c extends i {
             arrayListAw.add(cVar);
             arrayList = arrayListAw;
         }
-        com.tsf.shell.manager._a.j.b(cVar);
+        com.tsf.shell.manager.app.j.b(cVar);
         for (com.tsf.shell.f.i.B bVar2 : arrayList) {
             this.s.reset();
             this.s.setAllFrom(bVar2.position());
@@ -542,7 +542,7 @@ public class c extends i {
         if (this.o) {
             float[] fArrA = x.a(motionEvent2, this.t);
             if (this.p) {
-                com.tsf.shell.manager._a.p.a(fArrA[0], fArrA[1]);
+                com.tsf.shell.manager.app.p.a(fArrA[0], fArrA[1]);
                 cVar.position().x = this.q + (motionEvent2.getX() - motionEvent.getX());
                 cVar.position().y = this.r - (motionEvent2.getY() - motionEvent.getY());
             }

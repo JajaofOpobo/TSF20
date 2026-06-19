@@ -81,7 +81,7 @@ public class j implements e.a {
     private ThemeFolderManager Y = ThemeManager.mix.folder;
 
     public j() {
-        com.tsf.shell.manager._a.b.a(this);
+        com.tsf.shell.manager.app.b.a(this);
         this.X = new com.tsf.shell.preference.a.a.f() { // from class: com.tsf.shell.f.i.b.d.j.1
             @Override // com.censivn.C3DEngine.b.e.c
             public void g() {

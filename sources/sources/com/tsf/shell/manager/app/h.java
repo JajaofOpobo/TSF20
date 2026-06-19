@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;

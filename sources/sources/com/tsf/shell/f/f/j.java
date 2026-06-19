@@ -112,7 +112,7 @@ public class j {
 
     public static com.tsf.shell.f.a.a.a c() {
         if (c == null) {
-            c = com.tsf.shell.manager._a.t.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            c = com.tsf.shell.manager.app.t.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         }
         return c;
     }
@@ -120,7 +120,7 @@ public class j {
     /* JADX INFO: Access modifiers changed from: private */
     public static void g() {
         if (c != null) {
-            com.tsf.shell.manager._a.t.a(C);
+            com.tsf.shell.manager.app.t.a(C);
             c = null;
         }
     }

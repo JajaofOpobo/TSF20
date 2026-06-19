@@ -37,7 +37,7 @@ public class e extends b {
             if (i2 < 8) {
                 com.tsf.shell.f.i.b.e.b bVar = this.e.get(i2);
                 bVar.k.textures().clear();
-                bVar.k.textures().addElement(com.tsf.shell.manager._a.B.a.a(i2));
+                bVar.k.textures().addElement(com.tsf.shell.manager.app.B.a.a(i2));
                 i = i2 + 1;
             } else {
                 this.a.f().j();
@@ -61,7 +61,7 @@ public class e extends b {
             int i2 = i;
             if (i2 < 8) {
                 this.e.get(i2).k.textures().clear();
-                com.tsf.shell.manager._a.B.a.b(i2);
+                com.tsf.shell.manager.app.B.a.b(i2);
                 i = i2 + 1;
             } else {
                 this.a.v();

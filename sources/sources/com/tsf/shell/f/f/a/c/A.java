@@ -82,13 +82,13 @@ public class A extends c.a {
         this.e.ah();
         this.f.c(null);
         this.c.a(this.e);
-        com.tsf.shell.manager._a.h.b(this.e);
+        com.tsf.shell.manager.app.h.b(this.e);
         this.c.a(this.g);
     }
 
     @Override // com.tsf.shell.f.f.a.c.c.a
     public void a() {
-        com.tsf.shell.manager._a.k.b(this.d);
+        com.tsf.shell.manager.app.k.b(this.d);
         this.d.d();
     }
 
@@ -98,7 +98,7 @@ public class A extends c.a {
 
     @Override // com.tsf.shell.f.f.a.c.c.a
     public void c() {
-        com.tsf.shell.manager._a.k.c(this.d);
+        com.tsf.shell.manager.app.k.c(this.d);
         this.c.a((com.censivn.C3DEngine.b.d.a) null);
         b();
     }

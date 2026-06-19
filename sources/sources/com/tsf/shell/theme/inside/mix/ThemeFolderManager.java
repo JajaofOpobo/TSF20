@@ -24,7 +24,7 @@ public class ThemeFolderManager extends ThemeMixElementManager {
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
         b.q();
-        com.tsf.shell.manager._a.h.K();
+        com.tsf.shell.manager.app.h.K();
     }
 
     public static Bitmap createPreviewBitmap(Context context, Context context2, int i, int i2, boolean z) {

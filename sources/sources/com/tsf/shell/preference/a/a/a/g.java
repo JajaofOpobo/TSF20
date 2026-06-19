@@ -37,11 +37,11 @@ public class g extends h {
         int i = 0;
         super.f();
         this.f.clear();
-        this.f.add(com.tsf.shell.manager._a.v.f.a(0));
-        this.f.add(com.tsf.shell.manager._a.v.f.a(2));
-        this.f.add(com.tsf.shell.manager._a.v.f.a(3));
-        this.f.add(com.tsf.shell.manager._a.v.f.a(12));
-        this.f.add(com.tsf.shell.manager._a.v.f.a(14));
+        this.f.add(com.tsf.shell.manager.app.v.f.a(0));
+        this.f.add(com.tsf.shell.manager.app.v.f.a(2));
+        this.f.add(com.tsf.shell.manager.app.v.f.a(3));
+        this.f.add(com.tsf.shell.manager.app.v.f.a(12));
+        this.f.add(com.tsf.shell.manager.app.v.f.a(14));
         while (true) {
             int i2 = i;
             if (i2 < this.f.size()) {

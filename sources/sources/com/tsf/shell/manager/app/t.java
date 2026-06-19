@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.f.a.a.a;

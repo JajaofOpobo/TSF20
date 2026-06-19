@@ -1,4 +1,4 @@
-package com.tsf.shell.manager.a.v;
+package com.tsf.shell.manager.app.v;
 
 public class a {
     public static class C0126a {

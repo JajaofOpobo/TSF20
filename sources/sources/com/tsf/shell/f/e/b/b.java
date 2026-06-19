@@ -28,7 +28,7 @@ public class b {
         this.b = i;
         int i2 = this.c / this.b;
         int i3 = this.d / this.b;
-        this.e = com.tsf.shell.manager._a.t.a(i2, i3);
+        this.e = com.tsf.shell.manager.app.t.a(i2, i3);
         this.a = e.a(i2, i3, this.a);
         this.f = e.a(i2, i3);
     }
@@ -38,7 +38,7 @@ public class b {
         this.d = 0;
         this.b = 0;
         if (this.e != null) {
-            com.tsf.shell.manager._a.t.a(this.e);
+            com.tsf.shell.manager.app.t.a(this.e);
         }
         if (this.a != null) {
             GLES20.glDeleteTextures(1, new int[]{this.a.id}, 0);

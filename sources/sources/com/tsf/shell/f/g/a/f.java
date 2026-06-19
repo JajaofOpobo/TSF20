@@ -28,12 +28,12 @@ public class f extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.f.1
             @Override // com.censivn.C3DEngine.b.h.b.b
             public int a() {
-                return com.tsf.shell.manager._a.v.f.i();
+                return com.tsf.shell.manager.app.v.f.i();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
             public i a(int i, i iVar) {
-                com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager._a.v.f.a(i);
+                com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager.app.v.f.a(i);
                 com.tsf.shell.f._d.b.a.b bVarE = dVarA.e();
                 bVarE.removeFromParent();
                 if (dVarA.i()) {
@@ -54,13 +54,13 @@ public class f extends a {
         this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.f.2
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
-                com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager._a.v.f.a(i);
+                com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager.app.v.f.a(i);
                 w.b();
-                com.tsf.shell.manager._a.v.f.a((com.tsf.shell.f.f.f) dVarA);
+                com.tsf.shell.manager.app.v.f.a((com.tsf.shell.f.f.f) dVarA);
                 f.this.b.d();
             }
         });
-        this.c = com.tsf.shell.manager._a.a.a(this, com.tsf.shell.manager.p.e.h);
+        this.c = com.tsf.shell.manager.app.a.a(this, com.tsf.shell.manager.p.e.h);
     }
 
     @Override // com.tsf.shell.f.e._g.a.c
@@ -93,9 +93,9 @@ public class f extends a {
     public void onHide() {
         super.onHide();
         this.c.b();
-        int i = com.tsf.shell.manager._a.v.f.i();
+        int i = com.tsf.shell.manager.app.v.f.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager._a.v.f.a(i2).l();
+            com.tsf.shell.manager.app.v.f.a(i2).l();
         }
     }
 
@@ -103,13 +103,13 @@ public class f extends a {
     public void onRecycle() {
         super.onRecycle();
         this.d.a();
-        int i = com.tsf.shell.manager._a.v.f.i();
+        int i = com.tsf.shell.manager.app.v.f.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager._a.v.f.a(i2);
+            com.tsf.shell.f._d.b.a.d dVarA = com.tsf.shell.manager.app.v.f.a(i2);
             dVarA.h();
             dVarA.d();
             dVarA.a();
         }
-        com.tsf.shell.manager._a.v.f.j();
+        com.tsf.shell.manager.app.v.f.j();
     }
 }

@@ -40,7 +40,7 @@ public class e {
 
     @SuppressLint({"NewApi"})
     public e(Activity activity) {
-        com.tsf.shell.manager.a.a.B = this;
+        com.tsf.shell.manager.app.a.B = this;
         com.censivn.C3DEngine.b.b.A.b(activity);
         com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : r.a(activity));
         g.c();
@@ -402,7 +402,7 @@ public class e {
 
     public void a(int i, int i2, int i3, int i4) {
         j.a(i, i2, i3, i4);
-        com.tsf.shell.manager.a.f.a(i, i2, i3, i4);
+        com.tsf.shell.manager.A.f.a(i, i2, i3, i4);
         Iterator<a> it = this.d.iterator();
         while (it.hasNext()) {
             this.a.add(it.next());

@@ -79,8 +79,8 @@ public class C extends B {
     }
 
     private void k() {
-        if (com.tsf.shell.manager._a.v.e.d() != null) {
-            com.tsf.shell.manager._a.v.e.d().a(true);
+        if (com.tsf.shell.manager.app.v.e.d() != null) {
+            com.tsf.shell.manager.app.v.e.d().a(true);
         }
     }
 
@@ -111,7 +111,7 @@ public class C extends B {
     public void ai() {
         if (ag() != null && !D()) {
             ArrayList<Integer> arrayListS = ag().s();
-            com.tsf.shell.manager._a.v.e.d().a(this, ag().d(), ag().r(), arrayListS);
+            com.tsf.shell.manager.app.v.e.d().a(this, ag().d(), ag().r(), arrayListS);
         }
     }
 

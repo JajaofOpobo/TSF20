@@ -99,7 +99,7 @@ public class c {
                 if (i2 < 5) {
                     com.tsf.shell.f.i.b.e.b bVar = this.c.get(i2);
                     bVar.k.textures().clear();
-                    bVar.k.textures().addElement(com.tsf.shell.manager._a.B.a.a(b[i2]));
+                    bVar.k.textures().addElement(com.tsf.shell.manager.app.B.a.a(b[i2]));
                     i = i2 + 1;
                 } else {
                     return;
@@ -113,7 +113,7 @@ public class c {
                 int i2 = i;
                 if (i2 < 5) {
                     this.c.get(i2).k.textures().clear();
-                    com.tsf.shell.manager._a.B.a.b(b[i2]);
+                    com.tsf.shell.manager.app.B.a.b(b[i2]);
                     i = i2 + 1;
                 } else {
                     return;

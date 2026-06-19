@@ -94,7 +94,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
                     this.b.a(i, cVar);
                     cVar.A().g();
                 }
-                com.tsf.shell.manager.a.j.a((i) this.e, true);
+                com.tsf.shell.manager.A.j.a((i) this.e, true);
                 a();
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.2f);
@@ -119,7 +119,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
         if (this.a) {
             this.a = false;
             boolean zA = this.b.a(this.e, motionEvent.getX(), motionEvent.getY(), false, true);
-            com.tsf.shell.manager.a.j.b(this.e);
+            com.tsf.shell.manager.A.j.b(this.e);
             if (zA && this.b.e(this.e)) {
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.0f);

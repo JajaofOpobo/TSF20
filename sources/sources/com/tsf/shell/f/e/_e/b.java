@@ -51,7 +51,7 @@ public class b extends j {
             com.censivn.C3DEngine.b.g.c.a(this.m);
             com.censivn.C3DEngine.b.g.c.a(this.m, VEasing.Linear.easeNone, dVar);
             this.m.textures().clear();
-            this.m.textures().addElement(com.tsf.shell.manager._a.p.b());
+            this.m.textures().addElement(com.tsf.shell.manager.app.p.b());
             this.m.removeFromParent();
             addChildAt(this.m, 0);
         }
@@ -123,7 +123,7 @@ public class b extends j {
             dVar.b(150);
             com.censivn.C3DEngine.b.g.c.a(this.h);
             com.censivn.C3DEngine.b.g.c.a(this.h, 300, dVar);
-            com.tsf.shell.manager._a.k.a(this.h);
+            com.tsf.shell.manager.app.k.a(this.h);
         }
     }
 
@@ -148,7 +148,7 @@ public class b extends j {
             dVar.a(0);
             com.censivn.C3DEngine.b.g.c.a(this.h);
             com.censivn.C3DEngine.b.g.c.a(this.h, 300, dVar);
-            com.tsf.shell.manager._a.k.c(this.h);
+            com.tsf.shell.manager.app.k.c(this.h);
         }
     }
 }

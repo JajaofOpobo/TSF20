@@ -37,10 +37,10 @@ public class D {
     }
 
     public static void d() {
-        com.tsf.shell.manager._a.i.d();
-        com.tsf.shell.manager._a.l.a();
-        com.tsf.shell.manager._a.f.h();
-        com.tsf.shell.manager._a.g.b();
+        com.tsf.shell.manager.app.i.d();
+        com.tsf.shell.manager.app.l.a();
+        com.tsf.shell.manager.app.f.h();
+        com.tsf.shell.manager.app.g.b();
     }
 
     public void e() {

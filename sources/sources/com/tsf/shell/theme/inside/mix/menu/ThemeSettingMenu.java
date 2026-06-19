@@ -31,6 +31,6 @@ public class ThemeSettingMenu extends d {
     }
 
     public void pausePreviewEffect() {
-        com.tsf.shell.manager._a.h.s().b(500);
+        com.tsf.shell.manager.app.h.s().b(500);
     }
 }

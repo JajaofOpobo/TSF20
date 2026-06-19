@@ -88,7 +88,7 @@ public class A {
 
     @SuppressLint({"NewApi"})
     public static void a(Activity activity) {
-        if (com.tsf.shell.manager.a.b.b()) {
+        if (com.tsf.shell.manager.A.b.b()) {
             if (activity.getResources().getConfiguration().screenHeightDp < activity.getResources().getConfiguration().screenWidthDp) {
                 K = 0;
                 return;
@@ -103,7 +103,7 @@ public class A {
     @SuppressLint({"NewApi"})
     public static void a(Activity activity, boolean z2) {
         int i2 = K;
-        if (com.tsf.shell.manager.a.b.b() || Build.VERSION.SDK_INT >= 21) {
+        if (com.tsf.shell.manager.A.b.b() || Build.VERSION.SDK_INT >= 21) {
             if (activity.getResources().getConfiguration().screenHeightDp < activity.getResources().getConfiguration().screenWidthDp) {
                 K = (L - J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
             } else {
@@ -115,7 +115,7 @@ public class A {
         } else {
             K = 0;
         }
-        if (z2 && com.tsf.shell.manager.a.b.b() && i2 != K) {
+        if (z2 && com.tsf.shell.manager.A.b.b() && i2 != K) {
             b();
         }
     }
@@ -132,7 +132,7 @@ public class A {
     public static void b() {
         if (e.l()) {
             c();
-            com.tsf.shell.manager.a.b.a(B, C, z, A);
+            com.tsf.shell.manager.A.b.a(B, C, z, A);
         } else {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.b.a.1
                 @Override // java.lang.Runnable
@@ -148,7 +148,7 @@ public class A {
         z = (-F) / 2;
         A = -z;
         C = ((-G) / 2) + K;
-        if (!com.tsf.shell.manager.a.b.c()) {
+        if (!com.tsf.shell.manager.A.b.c()) {
             B = (G / 2) - J;
             E = (G - J) - K;
         } else {

@@ -26,7 +26,7 @@ public class b extends com.tsf.shell.manager.action.toggle.B {
         Home.b().runOnUiThread(new Runnable() { // from class: com.tsf.shell.manager.action.toggle.a.b.1
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell._a.a.e.a(Home.b())) {
+                if (com.tsf.shell.a.a.e.a(Home.b())) {
                     switch (b.c) {
                         case 10:
                             b.d(180);

@@ -161,13 +161,13 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             k();
             this.g = true;
             b(b());
-            com.tsf.shell.manager.a.b.a(this);
+            com.tsf.shell.manager.A.b.a(this);
             com.censivn.C3DEngine.b.c.b.a(this);
-            this.h = com.tsf.shell.manager.a.e.c();
+            this.h = com.tsf.shell.manager.A.e.c();
             if (!this.h) {
-                com.tsf.shell.manager.a.j.a((Runnable) null, 170);
+                com.tsf.shell.manager.A.j.a((Runnable) null, 170);
             }
-            com.tsf.shell.manager.a.j.a(this);
+            com.tsf.shell.manager.A.j.a(this);
             alpha(255.0f);
             this.c.a(0.0f);
             final int iA = (int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f));
@@ -197,9 +197,9 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     c.this.g();
-                    com.tsf.shell.manager.a.b.b(c.this);
+                    com.tsf.shell.manager.A.b.b(c.this);
                     com.censivn.C3DEngine.b.c.b.b(c.this);
-                    com.tsf.shell.manager.a.j.b(c.this);
+                    com.tsf.shell.manager.A.j.b(c.this);
                     c.this.j();
                     c.this.b.a();
                 }
@@ -208,7 +208,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
             com.censivn.C3DEngine.b.g.c.a(this);
             com.censivn.C3DEngine.b.g.c.a(this, 300, dVar);
             if (!this.h) {
-                com.tsf.shell.manager.a.j.d();
+                com.tsf.shell.manager.A.j.d();
             }
         }
     }

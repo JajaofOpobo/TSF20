@@ -71,7 +71,7 @@ public class e {
                     zA = this.f.a();
                 }
                 this.b = this.c;
-                com.tsf.shell.manager._a.a.a().a(this.a, this.b);
+                com.tsf.shell.manager.app.a.a().a(this.a, this.b);
                 c();
                 if (this.f != null && this.f.a() != zA) {
                     this.f.b();
@@ -101,7 +101,7 @@ public class e {
     }
 
     public a a(final com.tsf.shell.f.e._g.a.b bVar, int i2) {
-        a aVarA = com.tsf.shell.manager._a.a.a(i2);
+        a aVarA = com.tsf.shell.manager.app.a.a(i2);
         if (aVarA.a()) {
             bVar.getTitleIcon().a();
             aVarA.a(new a.C0142a() { // from class: com.tsf.shell.manager.p.e.1

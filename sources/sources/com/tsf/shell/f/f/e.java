@@ -49,7 +49,7 @@ public class e extends C<l> {
         this.c = z;
         this.a = true;
         com.censivn.C3DEngine.a.d.d().c().a(false);
-        com.tsf.shell.manager._a.h.s().d(600);
+        com.tsf.shell.manager.app.h.s().d(600);
     }
 
     @Override // com.tsf.shell.f.f.C

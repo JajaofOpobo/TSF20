@@ -1,8 +1,8 @@
-package com.tsf.shell.manager.a;
+package com.tsf.shell.manager.app;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.shell.Home;
-import com.tsf.shell.manager.a.c;
+import com.tsf.shell.manager.app.c;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -11,25 +11,25 @@ public class b {
     private c c;
     private ArrayList<com.tsf.shell.f.i.b.e.g> a = new ArrayList<>();
     private ArrayList<a> b = new ArrayList<>();
-    private c.a d = new c.a() { // from class: com.tsf.shell.manager.a.b.1
-        @Override // com.tsf.shell.manager.a.c.a
+    private c.a d = new c.a() { // from class: com.tsf.shell.manager.app.b.1
+        @Override // com.tsf.shell.manager.app.c.a
         public void a() {
             b.this.b();
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
+        @Override // com.tsf.shell.manager.app.c.a
         public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
+        @Override // com.tsf.shell.manager.app.c.a
         public void a(com.tsf.shell.f.i.b.e.g gVar) {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
+        @Override // com.tsf.shell.manager.app.c.a
         public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
         }
 
-        @Override // com.tsf.shell.manager.a.c.a
+        @Override // com.tsf.shell.manager.app.c.a
         public void k_() {
             b.this.b();
         }

@@ -24,7 +24,7 @@ public class e extends h {
         while (true) {
             int i2 = i;
             if (i2 < 5) {
-                com.tsf.shell.f._d.c.a.c cVarB = com.tsf.shell.manager._a.v.e.a(i2).b();
+                com.tsf.shell.f._d.c.a.c cVarB = com.tsf.shell.manager.app.v.e.a(i2).b();
                 if (i2 == 2) {
                     cVarB.g();
                 } else {
@@ -53,9 +53,9 @@ public class e extends h {
     @Override // com.tsf.shell.preference.a.a.a.h, com.censivn.C3DEngine.b.e.f
     public void g() {
         super.g();
-        int i = com.tsf.shell.manager._a.v.e.i();
+        int i = com.tsf.shell.manager.app.v.e.i();
         for (int i2 = 0; i2 < i; i2++) {
-            com.tsf.shell.manager._a.v.e.a(i2).b().removeFromParent();
+            com.tsf.shell.manager.app.v.e.a(i2).b().removeFromParent();
         }
         com.tsf.shell.f._d.c.a.c.a();
         com.tsf.shell.f._d.c.a.c.j();

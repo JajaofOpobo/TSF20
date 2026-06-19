@@ -50,7 +50,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         if (K().config == null || K().config.length() < 1) {
             k();
         } else if (!q()) {
-            com.tsf.shell.manager._a.i.a(this);
+            com.tsf.shell.manager.app.i.a(this);
         }
     }
 
@@ -187,7 +187,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
                     @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                     public void run() {
                         if (a.this.b.o || !a.this.q()) {
-                            com.tsf.shell.manager._a.i.a(a.this);
+                            com.tsf.shell.manager.app.i.a(a.this);
                             return;
                         }
                         a.this.Z();
@@ -203,7 +203,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         com.censivn.C3DEngine.A.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.a.2
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager._a.i.a(a.this);
+                com.tsf.shell.manager.app.i.a(a.this);
             }
         });
     }

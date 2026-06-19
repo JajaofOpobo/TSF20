@@ -85,8 +85,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
         this.P = aVar;
         a(z);
         this.O.a(this);
-        com.tsf.shell.manager.a.b.a(this);
-        com.tsf.shell.manager.a.h.a().b();
+        com.tsf.shell.manager.A.b.a(this);
+        com.tsf.shell.manager.A.h.a().b();
     }
 
     @Override // com.censivn.C3DEngine.b.f.i
@@ -569,8 +569,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
         if (!this.n && !this.m) {
             b(0);
             com.censivn.C3DEngine.b.c.b.b(this);
-            com.tsf.shell.manager.a.b.b(this);
-            com.tsf.shell.manager.a.h.a().c();
+            com.tsf.shell.manager.A.b.b(this);
+            com.tsf.shell.manager.A.h.a().c();
             this.i.g();
             this.n = true;
             float f = this.a.position().x;

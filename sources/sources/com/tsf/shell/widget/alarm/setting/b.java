@@ -209,7 +209,7 @@ public class b extends BaseAdapter {
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: com.tsf.shell.widget.alarm.setting.b.3
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                if (com.tsf.shell._a.a.e.a(b.this.d)) {
+                if (com.tsf.shell.a.a.e.a(b.this.d)) {
                     b.this.b = z;
                     b.this.a();
                     b.this.notifyDataSetChanged();

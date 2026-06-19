@@ -89,10 +89,10 @@ public class e extends FrameLayout {
 
     public void a(d.a aVar) {
         com.tsf.shell.f.i.b.b.a aVarA;
-        if (!this.b && aVar.a != null && aVar.a.isInTouchMode() && this.a.getCurrentScreenLayout() != null && (aVarA = com.tsf.shell.manager._a.l.a(aVar.a)) != null) {
+        if (!this.b && aVar.a != null && aVar.a.isInTouchMode() && this.a.getCurrentScreenLayout() != null && (aVarA = com.tsf.shell.manager.app.l.a(aVar.a)) != null) {
             com.censivn.C3DEngine.a.d.b(true);
-            com.tsf.shell.manager._a.h.b(aVarA.z() != null ? aVarA.z() : com.tsf.shell.manager._a.h.o());
-            com.tsf.shell.manager._a.h.H();
+            com.tsf.shell.manager.app.h.b(aVarA.z() != null ? aVarA.z() : com.tsf.shell.manager.app.h.o());
+            com.tsf.shell.manager.app.h.H();
             this.b = true;
             this.d = aVarA;
             this.e = aVarA.getMouseEventListener();
@@ -107,8 +107,8 @@ public class e extends FrameLayout {
         if (this.b) {
             com.censivn.C3DEngine.a.d.b(false);
             d.b bVar = (d.b) this.d.g.getLayoutParams();
-            if (com.tsf.shell.manager._a.h.d.b()) {
-                float[] fArrA = com.tsf.shell.manager._a.h.d.a();
+            if (com.tsf.shell.manager.app.h.d.b()) {
+                float[] fArrA = com.tsf.shell.manager.app.h.d.a();
                 iB = (int) ((fArrA[0] - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H);
                 iC = (int) (((-fArrA[1]) + com.censivn.C3DEngine.b.b.A.I) - (this.d.b.c() / 2.0f));
             } else {
@@ -142,7 +142,7 @@ public class e extends FrameLayout {
                 bVar.b = i4;
                 itemInfoK.cellYH = i4;
             }
-            final com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager._a.h.n();
+            final com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.h.n();
             final com.tsf.shell.f.i.b.b.a aVar = this.d;
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.e.3
                 @Override // java.lang.Runnable
@@ -157,10 +157,10 @@ public class e extends FrameLayout {
             });
             int i5 = itemInfoK.height * itemInfoK.width;
             if (gVarN.s() != null && !gVarN.s().a(i5, this.d.g)) {
-                com.tsf.shell.manager._a.h.y();
+                com.tsf.shell.manager.app.h.y();
                 com.tsf.shell.e.a(b.i.out_of_space);
             }
-            com.tsf.shell.manager._a.h.I();
+            com.tsf.shell.manager.app.h.I();
             this.b = false;
             this.e.d(motionEvent);
             this.e.f(motionEvent);

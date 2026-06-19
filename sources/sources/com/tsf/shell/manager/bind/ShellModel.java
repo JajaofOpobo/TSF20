@@ -55,7 +55,7 @@ public class ShellModel extends BroadcastReceiver {
     private static final ArrayList<ItemInfo> m = new ArrayList<>();
     private static final ArrayList<ItemInfo> n = new ArrayList<>();
     private static final HandlerThread q = new HandlerThread("launcher-loader");
-    public com.tsf.shell.manager._a.a _a;
+    public com.tsf.shell.manager.app.a _a;
     private b c;
     private Context d;
     private int e;
@@ -67,7 +67,7 @@ public class ShellModel extends BroadcastReceiver {
         this.d = context;
         this.p = Build.VERSION.SDK_INT < 9 ? true : Environment.isExternalStorageRemovable();
         this.o = new com.tsf.shell.manager.bind.b();
-        this._a = new com.tsf.shell.manager._a.a();
+        this._a = new com.tsf.shell.manager.app.a();
         this.e = this.d.getResources().getInteger(com.tsf.b.f.config_allAppsBatchLoadDelay);
     }
 
@@ -122,7 +122,7 @@ public class ShellModel extends BroadcastReceiver {
         }
     }
 
-    public com.tsf.shell.manager._a.a b() {
+    public com.tsf.shell.manager.app.a b() {
         return this._a;
     }
 
@@ -615,7 +615,7 @@ public class ShellModel extends BroadcastReceiver {
                                         int i6 = cursorQuery.getInt(columnIndexOrThrow6);
                                         String string = cursorQuery.getString(columnIndexOrThrow16);
                                         AppWidgetProviderInfo appWidgetInfo = appWidgetManager.getAppWidgetInfo(i6);
-                                        if (!com.tsf.shell.manager._a.h.b(i3)) {
+                                        if (!com.tsf.shell.manager.app.h.b(i3)) {
                                             arrayList.add(Integer.valueOf(i2));
                                         } else {
                                             if (appWidgetInfo == null || appWidgetInfo.provider == null || appWidgetInfo.provider.getPackageName() == null) {
@@ -807,14 +807,14 @@ public class ShellModel extends BroadcastReceiver {
             if (listQueryIntentActivities != null) {
                 for (int i = 0; i < listQueryIntentActivities.size(); i++) {
                     ResolveInfo resolveInfo = listQueryIntentActivities.get(i);
-                    com.tsf.shell.manager._a.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
+                    com.tsf.shell.manager.app.f fVarB = com.tsf.shell.manager.bind.a.c().b(new ComponentName(resolveInfo.activityInfo.applicationInfo.packageName, resolveInfo.activityInfo.name));
                     if (fVarB == null) {
-                        ShellModel.this._a.c(new com.tsf.shell.manager._a.f(resolveInfo));
+                        ShellModel.this._a.c(new com.tsf.shell.manager.app.f(resolveInfo));
                     } else {
                         ShellModel.this._a.e(fVarB);
                     }
                 }
-                ArrayList<com.tsf.shell.manager._a.f> arrayList = ShellModel.this._a.b;
+                ArrayList<com.tsf.shell.manager.app.f> arrayList = ShellModel.this._a.b;
                 ShellModel.this._a.b = new ArrayList<>();
                 ShellModel.this.o.a(arrayList);
             }
@@ -833,12 +833,12 @@ public class ShellModel extends BroadcastReceiver {
                 for (int i2 = 0; i2 < listQueryIntentActivities2.size(); i2++) {
                     ResolveInfo resolveInfo2 = listQueryIntentActivities2.get(i2);
                     if (com.tsf.shell.manager.bind.a.c().c(new ComponentName(resolveInfo2.activityInfo.applicationInfo.packageName, resolveInfo2.activityInfo.name)) == null) {
-                        ShellModel.this._a.f(new com.tsf.shell.manager._a.f(resolveInfo2));
+                        ShellModel.this._a.f(new com.tsf.shell.manager.app.f(resolveInfo2));
                     }
                 }
-                ArrayList<com.tsf.shell.manager._a.f> arrayList2 = ShellModel.this._a.f;
+                ArrayList<com.tsf.shell.manager.app.f> arrayList2 = ShellModel.this._a.f;
                 ShellModel.this._a.f = new ArrayList<>();
-                com.tsf.shell.manager._a.i.a(arrayList2);
+                com.tsf.shell.manager.app.i.a(arrayList2);
             }
         }
     }
@@ -858,12 +858,12 @@ public class ShellModel extends BroadcastReceiver {
 
         @Override // java.lang.Runnable
         public void run() {
-            ArrayList<com.tsf.shell.manager._a.f> arrayList;
-            ArrayList<com.tsf.shell.manager._a.f> arrayList2;
-            ArrayList<com.tsf.shell.manager._a.f> arrayList3;
-            ArrayList<com.tsf.shell.manager._a.f> arrayList4;
-            ArrayList<com.tsf.shell.manager._a.f> arrayList5;
-            ArrayList<com.tsf.shell.manager._a.f> arrayList6;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList2;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList3;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList4;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList5;
+            ArrayList<com.tsf.shell.manager.app.f> arrayList6;
             Context context = ShellModel.this.d;
             String[] strArr = this.b;
             switch (this.a) {
@@ -915,7 +915,7 @@ public class ShellModel extends BroadcastReceiver {
                 arrayList5 = null;
             }
             if (ShellModel.this._a.h.size() > 0) {
-                ArrayList<com.tsf.shell.manager._a.f> arrayList7 = ShellModel.this._a.h;
+                ArrayList<com.tsf.shell.manager.app.f> arrayList7 = ShellModel.this._a.h;
                 ShellModel.this._a.h = new ArrayList<>();
                 arrayList6 = arrayList7;
             } else {
@@ -931,13 +931,13 @@ public class ShellModel extends BroadcastReceiver {
                 ShellModel.this.o.b(arrayList2, this.a != 4);
             }
             if (arrayList4 != null) {
-                com.tsf.shell.manager._a.i.b(arrayList4);
+                com.tsf.shell.manager.app.i.b(arrayList4);
             }
             if (arrayList6 != null) {
-                com.tsf.shell.manager._a.i.c(arrayList6);
+                com.tsf.shell.manager.app.i.c(arrayList6);
             }
             if (arrayList5 != null) {
-                com.tsf.shell.manager._a.i.a(arrayList5, this.a != 4);
+                com.tsf.shell.manager.app.i.a(arrayList5, this.a != 4);
             }
         }
     }

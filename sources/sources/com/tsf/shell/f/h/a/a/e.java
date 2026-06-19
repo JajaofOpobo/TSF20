@@ -50,6 +50,6 @@ public class e extends i {
         if (this.b.e() != this.a.k().visible()) {
             this.a.k().a(this.b.e());
         }
-        com.tsf.shell.manager._a.o.a().a(this.d.e());
+        com.tsf.shell.manager.app.o.a().a(this.d.e());
     }
 }

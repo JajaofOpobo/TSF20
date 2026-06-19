@@ -73,6 +73,6 @@ public class ThemeContactManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
-        com.tsf.shell.manager._a.z.a();
+        com.tsf.shell.manager.app.z.a();
     }
 }

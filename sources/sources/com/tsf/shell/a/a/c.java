@@ -1,4 +1,4 @@
-package com.tsf.shell._a.a;
+package com.tsf.shell.a.a;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -50,7 +50,7 @@ public class c extends Dialog {
 
     public void a(int i, int i2, String str, final DialogInterface.OnClickListener onClickListener) {
         if (this.a instanceof Activity) {
-            setOnKeyListener(new DialogInterface.OnKeyListener() { // from class: com.tsf.shell._a.a.c.1
+            setOnKeyListener(new DialogInterface.OnKeyListener() { // from class: com.tsf.shell.a.a.c.1
                 @Override // android.content.DialogInterface.OnKeyListener
                 public boolean onKey(DialogInterface dialogInterface, int i3, KeyEvent keyEvent) {
                     if (keyEvent.getKeyCode() == 4) {
@@ -62,7 +62,7 @@ public class c extends Dialog {
                     return false;
                 }
             });
-            findViewById(a.b.perm_ok).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell._a.a.c.2
+            findViewById(a.b.perm_ok).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.a.a.c.2
                 @Override // android.view.View.OnClickListener
                 public void onClick(View view) {
                     if (onClickListener != null) {
@@ -70,7 +70,7 @@ public class c extends Dialog {
                     }
                 }
             });
-            findViewById(a.b.iv_close).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell._a.a.c.3
+            findViewById(a.b.iv_close).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.a.a.c.3
                 @Override // android.view.View.OnClickListener
                 public void onClick(View view) {
                     c.this.dismiss();

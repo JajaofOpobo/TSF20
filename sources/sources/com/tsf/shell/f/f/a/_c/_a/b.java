@@ -69,7 +69,7 @@ public class b extends j {
     }
 
     public void a(int i) {
-        this.m = com.tsf.shell.manager._a.a.a(i);
+        this.m = com.tsf.shell.manager.app.a.a(i);
         if (this.m.a()) {
             g();
         }

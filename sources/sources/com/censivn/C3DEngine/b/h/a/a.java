@@ -72,7 +72,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
         }
         if (i == null) {
             j = a(this.o, this.o);
-            i = com.tsf.shell.manager.a.t.a(this.o, this.o);
+            i = com.tsf.shell.manager.A.t.a(this.o, this.o);
             GLES20.glBindFramebuffer(36160, i.a);
             GLES20.glFramebufferTexture2D(36160, 36064, 3553, j.id, 0);
         }
@@ -128,7 +128,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
         m.remove(this);
         if (m.size() == 0) {
             if (i != null) {
-                com.tsf.shell.manager.a.t.a(i);
+                com.tsf.shell.manager.A.t.a(i);
                 i = null;
             }
             if (j != null) {

@@ -45,7 +45,7 @@ public class a extends B {
         this.b.visible(false);
         this.k = new c(this);
         e(false);
-        this.l = com.tsf.shell.manager._a.l;
+        this.l = com.tsf.shell.manager.app.l;
         this.l.a(this);
     }
 
@@ -278,7 +278,7 @@ public class a extends B {
         com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.6
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager._a.l.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
+                com.tsf.shell.manager.app.l.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
                 ShellModel.a.b(a.this.K());
             }
         });

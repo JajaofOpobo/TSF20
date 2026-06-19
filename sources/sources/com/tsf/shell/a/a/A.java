@@ -1,4 +1,4 @@
-package com.tsf.shell._a.a;
+package com.tsf.shell.a.a;
 
 /* JADX INFO: decompilation stub */
 public class A {
