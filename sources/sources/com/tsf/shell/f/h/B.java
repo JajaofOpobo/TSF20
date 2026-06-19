@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.theme.inside.ThemeManager;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b.c.e.a {
@@ -129,7 +129,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
         this.f = new c(this);
         this.e.a(this.f);
         this.g.setMouseEventListener(new d(this, this.g) { // from class: com.tsf.shell.f.h.b.3
-            @Override // com.tsf.shell.f.h.d, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 super.a(motionEvent);
                 if (!b.this.e.getAnimationObjectState()) {
@@ -137,7 +137,7 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
                 }
             }
 
-            @Override // com.tsf.shell.f.h.d, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 if (!b.this.i) {
                     super.e(motionEvent);
@@ -145,13 +145,13 @@ public class B implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b
                 }
             }
 
-            @Override // com.tsf.shell.f.h.d, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
             public void f(MotionEvent motionEvent) {
                 super.f(motionEvent);
                 b.this.m();
             }
 
-            @Override // com.tsf.shell.f.h.d, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
             public void c(MotionEvent motionEvent) {
                 super.c(motionEvent);
                 b.this.m();

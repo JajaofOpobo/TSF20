@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.tsf.b;
 import com.tsf.shell.manager.b.ConfigManager;
 import com.tsf.shell.preference.video.VideoViwerActivity;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VideoPreference extends Preference {

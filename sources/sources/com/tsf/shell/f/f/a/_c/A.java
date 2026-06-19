@@ -5,15 +5,15 @@ import com.tsf.shell.f.f.a._c.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A extends c.a {
-    private com.tsf.shell.f.f.a.h a;
+    private com.tsf.shell.f.f.a.FolderPage a;
     private com.tsf.shell.f.f.a.f b;
     private c c;
     private g d;
-    private com.tsf.shell.f.i.C e;
+    private com.tsf.shell.f.i.ShortcutItem e;
     private com.tsf.shell.f.i._a.c f;
     private com.censivn.C3DEngine.b.d.a g;
 
-    public A(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.h hVar) {
+    public A(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
         this.c = cVar;
         this.a = hVar;
         this.b = fVar;
@@ -44,7 +44,7 @@ public class A extends c.a {
 
             @Override // com.tsf.shell.f.f.a._c.h, com.tsf.shell.f.e.F
             public void a(com.tsf.shell.f.e.F fVar) {
-                a.this.a((com.tsf.shell.f.i.C) fVar);
+                a.this.a((com.tsf.shell.f.i.ShortcutItem) fVar);
             }
 
             @Override // com.tsf.shell.f.f.a._c.h, com.tsf.shell.f.e.F
@@ -60,20 +60,20 @@ public class A extends c.a {
             public void d(com.tsf.shell.f.e.F fVar) {
             }
         };
-        this.d.position().y = (com.tsf.shell.f.f.a.h.F - com.tsf.shell.f.f.a.f.a) / 2.0f;
+        this.d.position().y = (com.tsf.shell.f.f.a.FolderPage.F - com.tsf.shell.f.f.a.f.a) / 2.0f;
         addChild(this.d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.i.C cVar) {
-        com.tsf.shell.f.i.C cVar2;
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
+        com.tsf.shell.f.i.ShortcutItem cVar2;
         this.d.c();
         if (cVar instanceof com.tsf.shell.f.i._b.e.g) {
             cVar2 = (com.tsf.shell.f.i._b.e.g) cVar;
             this.e = ((com.tsf.shell.f.i._b.e.g) cVar).ba();
-        } else if (cVar instanceof com.tsf.shell.f.i._b.d.b) {
-            cVar2 = (com.tsf.shell.f.i._b.d.b) cVar;
-            this.e = ((com.tsf.shell.f.i._b.d.b) cVar).az();
+        } else if (cVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
+            cVar2 = (com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) cVar;
+            this.e = ((com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) cVar).az();
         } else {
             cVar2 = null;
         }

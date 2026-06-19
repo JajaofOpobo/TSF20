@@ -15,8 +15,8 @@ import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.plugin.themepicker.wallpaper.WallpaperAppActivity;
 import com.tsf.shell.plugin.themepicker.wallpaper.WallpaperPickerActivity;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 

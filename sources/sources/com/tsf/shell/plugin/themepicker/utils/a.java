@@ -27,7 +27,7 @@ public abstract class a<Params, Progress, Result> {
     public static final Executor d;
     private static final b f;
     private static volatile Executor g;
-    private static final ThreadFactory a = new ThreadFactory() { // from class: com.tsf.shell.plugin.themepicker.utils.a.1
+    private static final ThreadFactory a = new ThreadFactory() { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.1
         private final AtomicInteger a = new AtomicInteger(1);
 
         @Override // java.util.concurrent.ThreadFactory
@@ -40,7 +40,7 @@ public abstract class a<Params, Progress, Result> {
     private volatile d j = d.PENDING;
     private final AtomicBoolean k = new AtomicBoolean();
     private final AtomicBoolean l = new AtomicBoolean();
-    private final e<Params, Result> h = new e<Params, Result>() { // from class: com.tsf.shell.plugin.themepicker.utils.a.2
+    private final e<Params, Result> h = new e<Params, Result>() { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.2
         @Override // java.util.concurrent.Callable
         public Result call() {
             a.this.l.set(true);
@@ -48,7 +48,7 @@ public abstract class a<Params, Progress, Result> {
             return (Result) a.this.d(a.this.a((Object[]) this.b));
         }
     };
-    private final FutureTask<Result> i = new FutureTask<Result>(this.h) { // from class: com.tsf.shell.plugin.themepicker.utils.a.3
+    private final FutureTask<Result> i = new FutureTask<Result>(this.h) { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.3
         @Override // java.util.concurrent.FutureTask
         protected void done() {
             try {
@@ -89,7 +89,7 @@ public abstract class a<Params, Progress, Result> {
 
         @Override // java.util.concurrent.Executor
         public synchronized void execute(final Runnable runnable) {
-            this.a.offer(new Runnable() { // from class: com.tsf.shell.plugin.themepicker.utils.a.c.1
+            this.a.offer(new Runnable() { // from class: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c.1
                 @Override // java.lang.Runnable
                 public void run() {
                     try {
@@ -216,7 +216,7 @@ public abstract class a<Params, Progress, Result> {
         }
     }
 
-    /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper$a, reason: collision with other inner class name */
     private static class C0157a<Data> {
         final a a;
         final Data[] b;

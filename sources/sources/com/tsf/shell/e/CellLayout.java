@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CellLayout extends ViewGroup {

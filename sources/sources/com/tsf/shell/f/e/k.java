@@ -27,7 +27,7 @@ public class k extends com.censivn.C3DEngine.b.f.k {
     private void d() {
         if (this.d.id == 0) {
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.a, this.a, Bitmap.Config.ARGB_8888);
-            com.tsf.shell.utils.q.a(new Canvas(bitmapCreateBitmap), 10.0f, 1.0f, 1.0f, -49152);
+            com.tsf.shell.utils.BitmapTransformationHelper.a(new Canvas(bitmapCreateBitmap), 10.0f, 1.0f, 1.0f, -49152);
             com.censivn.C3DEngine.A.g().a(this.d, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
         }

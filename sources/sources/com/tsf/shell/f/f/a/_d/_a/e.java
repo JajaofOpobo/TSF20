@@ -10,17 +10,17 @@ public class e extends c {
     public e(int i) {
         super(b.d.drawer_sort_time_earliest, b.i.text_sort_earliest_installed);
         this.a = i;
-        this.b = new Comparator<com.tsf.shell.f.i.B>() { // from class: com.tsf.shell.f.f.a._d._a.e.1
+        this.b = new Comparator<com.tsf.shell.f.i.PageItem>() { // from class: com.tsf.shell.f.f.a._d._a.e.1
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public final int compare(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
-                if ((bVar instanceof com.tsf.shell.f.i._b.d.b) && (bVar2 instanceof com.tsf.shell.f.i._b.d.b)) {
+            public final int compare(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
+                if ((bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) && (bVar2 instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem)) {
                     return 0;
                 }
-                if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
+                if (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                     return -1;
                 }
-                if (bVar2 instanceof com.tsf.shell.f.i._b.d.b) {
+                if (bVar2 instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                     return 1;
                 }
                 if (bVar.s() > bVar2.s()) {

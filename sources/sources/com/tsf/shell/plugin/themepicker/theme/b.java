@@ -22,7 +22,7 @@ import com.tsf.shell.plugin.themepicker.IconPickerActivity;
 import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.f;
 import com.tsf.shell.plugin.themepicker.utils.RecyclingImageView;
-import com.tsf.shell.plugin.themepicker.utils.h;
+import com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

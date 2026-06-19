@@ -30,8 +30,8 @@ import com.tsf.shell.a.a.d;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.plugin.notice.g;
 import com.tsf.shell.theme.inside.ThemeManager;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import com.tsf.shell.widget.alarm.service.c;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -143,7 +143,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 r();
                 com.tsf.shell.manager.b.ConfigManager.a();
                 com.tsf.shell.manager.b.ConfigManager.b(com.tsf.shell.manager.b.ConfigManager.a(this), this);
-                com.tsf.shell.utils.g.a();
+                com.tsf.shell.utils.StatusBarHelper.a();
                 new com.censivn.C3DEngine.b.c.e(this);
                 if (ShellWallpaperManager.a((Activity) this)) {
                     com.tsf.shell.manager.b.ConfigManager.s(true);

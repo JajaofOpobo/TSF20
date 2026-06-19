@@ -9,8 +9,8 @@ public class j extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void b(com.tsf.shell.f.f.g gVar, float f) {
-        com.tsf.shell.f.f.j.a aVarJ = gVar.j();
+    public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
+        com.tsf.shell.f.f.PageAnimationState.a aVarJ = gVar.j();
         this.a.rotation().x = 90.0f * f;
         this.a.alpha((1.0f - Math.abs(f)) * 255.0f);
         this.a.textures().clear();
@@ -19,7 +19,7 @@ public class j extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void a(com.tsf.shell.f.f.g gVar, float f) {
+    public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         if (f > 0.0f) {
             gVar.setRendererPriorityLevel(0);
         } else {
@@ -28,7 +28,7 @@ public class j extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public boolean a(com.tsf.shell.f.f.g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         aVar.alpha((1.0f - Math.abs((Math.abs(gVar.g) - 0.5f) * 2.0f)) * 255.0f);
         return true;
     }

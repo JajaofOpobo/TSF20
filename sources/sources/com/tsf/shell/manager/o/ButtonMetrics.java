@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.utils.l;
+import com.tsf.shell.utils.ErrorThrower;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ButtonMetrics {
@@ -38,7 +38,7 @@ public class ButtonMetrics {
     public int aa;
     public com.tsf.shell.manager.o.a.TextLabelElement ab;
     private int ac;
-    private com.tsf.shell.utils.d ad;
+    private com.tsf.shell.utils.LazyBitmapFactory ad;
     public int b;
     public int c;
     public int d;
@@ -199,7 +199,7 @@ public class ButtonMetrics {
         this.M = this.T / 2;
         this.N = (-this.U) / 2;
         this.O = this.U / 2;
-        this.ad = new com.tsf.shell.utils.d(this.V, this.W);
+        this.ad = new com.tsf.shell.utils.LazyBitmapFactory(this.V, this.W);
     }
 
     public float a(int i) {
@@ -279,7 +279,7 @@ public class ButtonMetrics {
 
     public void a(Canvas canvas, Bitmap bitmap, boolean z) {
         if (bitmap.getWidth() != this.H || bitmap.getHeight() != this.I) {
-            com.tsf.shell.utils.l.a(bitmap, "drawIconToCanvas icon size error  w:" + bitmap.getWidth() + "   h:" + bitmap.getHeight() + "  sw:" + this.H + "  sh:" + this.I);
+            com.tsf.shell.utils.ErrorThrower.a(bitmap, "drawIconToCanvas icon size error  w:" + bitmap.getWidth() + "   h:" + bitmap.getHeight() + "  sw:" + this.H + "  sh:" + this.I);
         }
         canvas.drawBitmap(bitmap, this.D, this.E, (Paint) null);
         if (z) {

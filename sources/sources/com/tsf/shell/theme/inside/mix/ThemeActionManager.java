@@ -10,7 +10,7 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeActionManager extends ThemeMixElementManager {

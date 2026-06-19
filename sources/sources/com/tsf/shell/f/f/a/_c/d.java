@@ -3,8 +3,8 @@ package com.tsf.shell.f.f.a._c;
 import android.view.MotionEvent;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -15,7 +15,7 @@ public class d extends i {
     private com.tsf.shell.f.e._g.b i;
     private ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> j;
 
-    public d(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
+    public d(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, b.d.drawer_effect, x.c(b.i.text_effect));
         this.h = hVar.aC();
         c();

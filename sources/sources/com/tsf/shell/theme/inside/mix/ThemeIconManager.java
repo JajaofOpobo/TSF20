@@ -10,7 +10,7 @@ import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeIconDescription;
 import com.tsf.shell.theme.inside.parser.ThemeIconPackageParser;
 import com.tsf.shell.theme.inside.parser.ThemeParser;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeIconManager extends ThemeMixElementManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {

@@ -9,8 +9,8 @@ import com.tsf.shell.f.e.s;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.manager.d.HitTargetManager;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -20,7 +20,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     public float d;
     boolean e;
     boolean f;
-    private com.tsf.shell.f.i.B g;
+    private com.tsf.shell.f.i.PageItem g;
     private float h;
     private float i;
     private float j;
@@ -33,7 +33,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
     private com.tsf.shell.manager.d.HitTargetManager.C0127a q;
     private float[] r;
 
-    public c(com.tsf.shell.f.i.B bVar) {
+    public c(com.tsf.shell.f.i.PageItem bVar) {
         super(bVar);
         this.l = false;
         this.m = false;
@@ -71,7 +71,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         float f2;
         LauncherShortcutStandardInfo launcherShortcutStandardInfo;
         super.c(motionEvent);
-        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.c;
+        com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) this.c;
         if (com.tsf.shell.manager.app.FeatureConfig.a()) {
             if (bVar == null || !bVar.O()) {
                 com.tsf.shell.manager.app.StateHub.d.a(bVar);
@@ -80,10 +80,10 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 if (com.tsf.shell.manager.app.StateHub.F() != -1) {
                     com.tsf.shell.manager.app.StateHub.a().b();
                 }
-                if (bVar.A() != null && (bVar instanceof com.tsf.shell.f.i.C)) {
-                    com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
+                if (bVar.A() != null && (bVar instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                    com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) bVar;
                     if (cVar.A().e()) {
-                        ArrayList<com.tsf.shell.f.i.C> arrayListI = cVar.A().i();
+                        ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListI = cVar.A().i();
                         arrayListI.remove(bVar);
                         cVar.rotation().z = 0.0f;
                         if (arrayListI.size() > 0) {
@@ -178,7 +178,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r3 = 0
             super.d(r7)
             com.censivn.C3DEngine.b.f.i r0 = r6.c
-            com.tsf.shell.f.i.B r0 = (com.tsf.shell.f.i.B) r0
+            com.tsf.shell.f.i.PageItem r0 = (com.tsf.shell.f.i.PageItem) r0
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.manager.f.ScreenFadeController r1 = r1.a()
             r1.d()
@@ -219,7 +219,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.censivn.C3DEngine.b.f.i r1 = r6.c
             boolean r1 = r1 instanceof com.tsf.shell.f.e.F
             if (r1 == 0) goto Lc6
-            com.tsf.shell.f.i.B r1 = r6.g
+            com.tsf.shell.f.i.PageItem r1 = r6.g
             boolean r1 = r1.D()
             if (r1 != 0) goto Lc6
             com.censivn.C3DEngine.b.f.i r1 = r6.c
@@ -231,7 +231,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
         L76:
             boolean r4 = r1.o()
             if (r4 == 0) goto Lc6
-            float[] r4 = com.tsf.shell.utils.x.a(r7)
+            float[] r4 = com.tsf.shell.utils.GraphicsEngineBridge.a(r7)
             r5 = r4[r3]
             int r5 = (int) r5
             r4 = r4[r2]
@@ -242,9 +242,9 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.manager.f.ViewportController r2 = com.tsf.shell.manager.app.TaskScheduler
             r2.b(r0)
             r1.g(r4)
-            com.tsf.shell.f.i.B r1 = r6.g
+            com.tsf.shell.f.i.PageItem r1 = r6.g
             r1.m_()
-            com.tsf.shell.f.i.B r1 = r6.g
+            com.tsf.shell.f.i.PageItem r1 = r6.g
             r1.c()
             r1 = r3
         La3:
@@ -252,7 +252,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.tsf.shell.manager.f.ViewportController r1 = com.tsf.shell.manager.app.TaskScheduler
             r1.b(r0)
             com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
-            com.tsf.shell.f.f.g r1 = r1.n()
+            com.tsf.shell.f.f.WorkspacePage r1 = r1.n()
             if (r1 == 0) goto Lb8
             r0.removeFromParent()
             r1.a(r0)
@@ -340,7 +340,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
                 return;
             }
             if (this.m) {
-                a.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
+                WallpaperTouchHandler.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
                 return;
             } else {
                 if (this.n && (this.c instanceof com.tsf.shell.f.e.F)) {
@@ -373,18 +373,18 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             r5.h = r0
             float r0 = r6.getY()
             r5.i = r0
-            com.tsf.shell.f.i.B r0 = r5.g
-            boolean r0 = r0 instanceof com.tsf.shell.f.i.C
+            com.tsf.shell.f.i.PageItem r0 = r5.g
+            boolean r0 = r0 instanceof com.tsf.shell.f.i.ShortcutItem
             if (r0 == 0) goto L5a
-            com.tsf.shell.f.i.B r0 = r5.g
-            com.tsf.shell.f.i.C r0 = (com.tsf.shell.f.i.C) r0
+            com.tsf.shell.f.i.PageItem r0 = r5.g
+            com.tsf.shell.f.i.ShortcutItem r0 = (com.tsf.shell.f.i.ShortcutItem) r0
             com.tsf.shell.f.i.A r3 = r0.A()
             if (r3 == 0) goto L5a
             com.tsf.shell.f.i.A r0 = r0.A()
             boolean r0 = r0.e()
         L2c:
             if (r0 != 0) goto L58
-            float[] r0 = com.tsf.shell.utils.x.a(r6)
+            float[] r0 = com.tsf.shell.utils.GraphicsEngineBridge.a(r6)
             com.censivn.C3DEngine.b.f.i r3 = r5.c
             r2 = r0[r2]
             r0 = r0[r4]
@@ -396,7 +396,7 @@ public class c extends com.censivn.C3DEngine.b.d.a {
             com.censivn.C3DEngine.b.d.a r0 = r5.p
             r0.e(r6)
         L49:
-            com.tsf.shell.f.i.B r0 = r5.g
+            com.tsf.shell.f.i.PageItem r0 = r5.g
             boolean r0 = r0.R()
             if (r0 != 0) goto L54
             com.tsf.shell.manager.action.GestureHandler.a(r6)
@@ -439,8 +439,8 @@ public class c extends com.censivn.C3DEngine.b.d.a {
 
     @Override // com.censivn.C3DEngine.b.d.a
     public void a(MotionEvent motionEvent) {
-        if (this.g instanceof com.tsf.shell.f.i.C) {
-            com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.g;
+        if (this.g instanceof com.tsf.shell.f.i.ShortcutItem) {
+            com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.g;
             if (cVar.A() != null && cVar.A().e()) {
                 cVar.ap();
                 return;

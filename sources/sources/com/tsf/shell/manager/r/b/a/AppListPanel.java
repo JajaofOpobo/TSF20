@@ -14,8 +14,8 @@ import com.tsf.shell.f.f.k;
 import com.tsf.shell.f.i.a.d;
 import com.tsf.shell.f.i.b.e.g;
 import com.tsf.shell.manager.app.ObserverManager;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -162,7 +162,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
                                 Number3d.TEMPNUMBER3D.reset();
                                 gVarBa.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D));
                                 gVarBa.rotation().setAll(0.0f, 0.0f, 0.0f);
-                                this.c.a((com.tsf.shell.f.i.C) gVarBa);
+                                this.c.a((com.tsf.shell.f.i.ShortcutItem) gVarBa);
                             }
                             i2 = i3 + 1;
                         }
@@ -292,7 +292,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
 
     public void a() {
         this.a.templeteHide();
-        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
+        com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
         if (gVarN.t() != -1) {
             this.j = (k) gVarN;
             this.j.a(this.f);

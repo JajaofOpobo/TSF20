@@ -9,9 +9,9 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.preference.AboutActivity;
 import com.tsf.shell.preference.video.VideoViwerActivity;
-import com.tsf.shell.utils.k;
-import com.tsf.shell.utils.n;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.MarketLinkHandler;
+import com.tsf.shell.utils.FeedbackComposer;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

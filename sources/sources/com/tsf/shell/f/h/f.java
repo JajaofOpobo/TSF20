@@ -14,8 +14,8 @@ import com.tsf.b;
 import com.tsf.shell.g;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.h;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.ItemInfoListSorter;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -178,7 +178,7 @@ public class f extends com.censivn.C3DEngine.b.h.e.b {
     private void s() {
         final String str = "";
         for (i iVar : c().children()) {
-            str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
+            str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
         }
         com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.h.f.4
             @Override // java.lang.Runnable

@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends com.censivn.C3DEngine.b.f.k {

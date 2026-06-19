@@ -3,7 +3,7 @@ package com.tsf.shell.f._d.d.a;
 import com.badlogic.gdx.physics.box2d.Joint;
 import com.badlogic.gdx.physics.box2d.joints.RevoluteJointDef;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c implements a {
@@ -91,7 +91,7 @@ public class c implements a {
     }
 
     @Override // com.tsf.shell.f._d.d.a.a
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         bVar.b(this.i);
     }
 

@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.shell.f.f.a._c.c;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -12,7 +12,7 @@ import java.util.Iterator;
 public class b extends c.a {
     private com.censivn.C3DEngine.b.h.e.b a;
     private l b;
-    private com.tsf.shell.f.f.a.h c;
+    private com.tsf.shell.f.f.a.FolderPage c;
     private ArrayList<e> d;
     private int e;
     private e f;
@@ -22,7 +22,7 @@ public class b extends c.a {
     private com.censivn.C3DEngine.b.f.m j;
     private float k;
 
-    public b(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.h hVar) {
+    public b(c cVar, com.tsf.shell.f.f.a.f fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
         this.i = cVar;
         this.c = hVar;
         this.h = fVar;
@@ -70,7 +70,7 @@ public class b extends c.a {
 
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(com.censivn.C3DEngine.b.f.i iVar) {
-                b.this.c.c((com.tsf.shell.f.i.B) iVar);
+                b.this.c.c((com.tsf.shell.f.i.PageItem) iVar);
                 b.this.b.a(iVar);
             }
 
@@ -144,7 +144,7 @@ public class b extends c.a {
         for (int i2 = 0; i2 < size; i2++) {
             e eVar3 = this.d.get(i2);
             eVar3.position().x = f4;
-            eVar3.position().y = ((((-com.tsf.shell.f.f.a.f.a) / 2.0f) + com.tsf.shell.f.f.a.h.F) - com.tsf.shell.f.f.a.f.b) + (com.censivn.C3DEngine.b.b.A.c * 10.0f);
+            eVar3.position().y = ((((-com.tsf.shell.f.f.a.f.a) / 2.0f) + com.tsf.shell.f.f.a.FolderPage.F) - com.tsf.shell.f.f.a.f.b) + (com.censivn.C3DEngine.b.b.A.c * 10.0f);
             eVar3.removeFromParent();
             addChild(eVar3);
             f4 += f3;
@@ -244,8 +244,8 @@ public class b extends c.a {
                     bVar.an();
                     Number3d number3dLocalToGlobal = bVar.localToGlobal(new Number3d());
                     this.a.l().removeChild(bVar);
-                    int iB = this.c.b((com.tsf.shell.f.i.B) bVar);
-                    int i = iB % com.tsf.shell.f.f.a.h.m;
+                    int iB = this.c.b((com.tsf.shell.f.i.PageItem) bVar);
+                    int i = iB % com.tsf.shell.f.f.a.FolderPage.m;
                     com.tsf.shell.f.f.a.A aVarE = this.c.e(iB);
                     bVar.position().setAllFrom(aVarE.globalToLocal(number3dLocalToGlobal));
                     aVarE.addChildAt(bVar, i);
@@ -302,7 +302,7 @@ public class b extends c.a {
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
             cVar.rotation().setAll(0.0f, 0.0f, 0.0f);
             cVar.ak();
@@ -328,14 +328,14 @@ public class b extends c.a {
             j();
             return;
         }
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.d.b)) {
-            ((com.tsf.shell.f.i._b.d.b) cVar).aR();
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem)) {
+            ((com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) cVar).aR();
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) cVar.parent();
-        ArrayList<com.tsf.shell.f.i.C> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList = new ArrayList<>();
         if (jVar == this.a.l()) {
             if (this.e == 0) {
                 Iterator<com.censivn.C3DEngine.b.f.i> it = jVar.children().iterator();
@@ -351,7 +351,7 @@ public class b extends c.a {
                     arrayList.add((com.tsf.shell.f.i._b.e.b) it2.next());
                 }
             }
-            for (com.tsf.shell.f.i.C cVar2 : arrayList) {
+            for (com.tsf.shell.f.i.ShortcutItem cVar2 : arrayList) {
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.0f);
                 dVar.m(1.0f);

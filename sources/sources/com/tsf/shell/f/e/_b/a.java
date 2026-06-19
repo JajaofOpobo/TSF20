@@ -3,7 +3,7 @@ package com.tsf.shell.f.e._b;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.l;
+import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.l;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.shell.Home;
-import com.tsf.shell.utils.n;
+import com.tsf.shell.utils.FeedbackComposer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RateDialog extends j {
@@ -72,7 +72,7 @@ public class RateDialog extends j {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.utils.k.a(Home.b(), com.censivn.C3DEngine.a.b());
+                        com.tsf.shell.utils.MarketLinkHandler.a(Home.b(), com.censivn.C3DEngine.a.b());
                     }
                 });
             }

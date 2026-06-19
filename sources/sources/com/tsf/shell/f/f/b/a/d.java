@@ -2,10 +2,10 @@ package com.tsf.shell.f.f.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.shell.f._d.e.A;
-import com.tsf.shell.f.f.a.h;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.a.FolderPage;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.i;
-import com.tsf.shell.f.f.j;
+import com.tsf.shell.f.f.PageAnimationState;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -77,7 +77,7 @@ public class d extends i implements com.tsf.shell.f._d.e.A.InterfaceC0090a {
         for (int i = 0; i < arrayList.size(); i++) {
             com.censivn.C3DEngine.b.f.i iVar2 = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar2);
-            if (iVar2 instanceof com.tsf.shell.f.i.B) {
+            if (iVar2 instanceof com.tsf.shell.f.i.PageItem) {
                 Number3d number3d = h.E.get(i);
                 if (z) {
                     com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();

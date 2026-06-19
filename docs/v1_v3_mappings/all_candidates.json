@@ -1,0 +1,5497 @@
+[
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.i",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 33.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.f",
+  "v1_fqn": "com.censivn.C3DEngine.f.k",
+  "score": 28.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VObject3d",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VObject3d",
+  "score": 27.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.renderer.ShaderManager",
+  "v1_fqn": "com.censivn.C3DEngine.common.renderer.ShaderManager",
+  "score": 27.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.b.b",
+  "v1_fqn": "com.censivn.C3DEngine.c.b.a",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderAlpha",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderAlpha",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderColor",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderColor",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderTextureMatrix",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderTextureMatrix",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.a.a",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.a.a",
+  "score": 20.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.e",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 18.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.b.c",
+  "v1_fqn": "com.censivn.C3DEngine.c.b.b",
+  "score": 17.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderStandard",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderStandard",
+  "score": 17.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.widget.SeekBarPreference",
+  "v1_fqn": "com.tsf.shell.preference.widget.SeekBarPreference",
+  "score": 17.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.button.VButtonItem",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VObject3d",
+  "score": 15.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.widget.FloatingItem",
+  "v1_fqn": "com.tsf.shell.plugin.widget.FloatingItem",
+  "score": 15.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 15.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 14.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderColorMatrixTexture",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderColorMatrixTexture",
+  "score": 13.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.e",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.e",
+  "v1_fqn": "com.censivn.C3DEngine.c.a.e",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.A",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.c.a",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.c",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.c.a",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.c",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.ShortcutCreator",
+  "v1_fqn": "com.tsf.shell.action.e",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.k",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 12.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 11.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.b.a",
+  "v1_fqn": "com.censivn.C3DEngine.c.b.a",
+  "score": 11.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.h",
+  "score": 11.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.Home",
+  "v1_fqn": "com.tsf.shell.Home",
+  "score": 11.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderColorTexture",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderColorTexture",
+  "score": 10.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.ShaderFillColorTexture",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderFillColorTexture",
+  "score": 10.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.a",
+  "v1_fqn": "com.censivn.C3DEngine.f.k",
+  "score": 10.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VTextureList",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VTextureList",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.effects.modifiers.VTwist",
+  "v1_fqn": "com.censivn.C3DEngine.api.effects.modifiers.VTwist",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.ItemInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f._a.a",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f._a.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.a.a",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.d",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.e",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.al",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.al",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.g",
+  "v1_fqn": "com.censivn.C3DEngine.f.m",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.PrimeActivity",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.al",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._f.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.al",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.f.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.al",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.ai",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.ai",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.ai",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.ai",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.bind.ShellModel",
+  "v1_fqn": "com.tsf.shell.bq",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.n.ToastOverlayController",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmWidget",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VObject3d",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.l",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 9.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VObject3dContainer",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VObject3dContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VObjectManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VObjectManager",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VTextureManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VTextureManager",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.LauncherWidget3DInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.VBox",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.VBox",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.VRectangle",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.VBox",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.VVirtualObject",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.VVirtualObject",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.e.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.c",
+  "v1_fqn": "com.censivn.C3DEngine.i.c",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.h",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.l",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._c.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._c.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.c.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.c.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c._a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c._a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.x",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.a",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.j",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.a",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.j",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.c.WidgetPreviewCell",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.wallpaper.WallpaperPreviewRenderer",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.A",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.c.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.g",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.a.a",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.d",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 8.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.an",
+  "score": 7.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.an",
+  "score": 7.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.wallpaper.ShellWallpaperManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.ShellWallpaperManager",
+  "score": 7.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.DeviceInfoCollector",
+  "v1_fqn": "com.tsf.shell.b.a",
+  "score": 7.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.g",
+  "v1_fqn": "com.censivn.C3DEngine.b.ab",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.effects.VEffectsStack",
+  "v1_fqn": "com.censivn.C3DEngine.api.effects.VEffectsStack",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.effects.core.Vector3",
+  "v1_fqn": "com.censivn.C3DEngine.api.effects.core.Vector3",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.event.VMouseEventListener",
+  "v1_fqn": "com.censivn.C3DEngine.api.event.VMouseEventListener",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.shell.VPage",
+  "v1_fqn": "com.censivn.C3DEngine.api.shell.VPage",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.shell.VTempleteLayerManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.shell.VTempleteLayerManager",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget",
+  "v1_fqn": "com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.tween.VTween",
+  "v1_fqn": "com.censivn.C3DEngine.api.tween.VTween",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.tween.VTweenParam",
+  "v1_fqn": "com.censivn.C3DEngine.api.tween.VTweenParam",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.a.e",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.c.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.an",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.d.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.A",
+  "v1_fqn": "com.censivn.C3DEngine.c.b",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.B",
+  "v1_fqn": "com.censivn.C3DEngine.c.b",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.c.b.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.c.a.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.shader.Shader",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.Shader",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.b",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.PhotoSelectorActivity",
+  "v1_fqn": "com.tsf.shell.activity.PhotoSelectorActivity",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.c.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ai",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.b",
+  "v1_fqn": "com.censivn.C3DEngine.f.m",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.f.m",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.e.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.i",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.E",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.i",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.H",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.n",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.s",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.i",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.af",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.f",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.B",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.C",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.i",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ab",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ab",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.l",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.i",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ab",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ab",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.FolderManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.c",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.ConfigManager",
+  "v1_fqn": "com.tsf.shell.a.t",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.f.LauncherInitController",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.f.ViewportController",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.l.ShortcutManager",
+  "v1_fqn": "com.tsf.shell.aj",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.a.WidgetPlacementHelper",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.ai",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.parser.ThemeParser",
+  "v1_fqn": "com.tsf.shell.theme.inside.ThemeParser",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.GraphicsEngineBridge",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.PackageManagerHelper",
+  "v1_fqn": "com.tsf.shell.g.a",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.B",
+  "v1_fqn": "com.censivn.C3DEngine.b.r",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.c.a",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.c.b",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.c.c",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.q",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VWidgetContainer",
+  "score": 6.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.PositionNumber3d",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.PositionNumber3d",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.message.VMessageQueueManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.message.b",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g._c.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.d.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.e.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.common.renderer.MatrixStack",
+  "v1_fqn": "com.censivn.C3DEngine.common.renderer.MatrixStack",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.ShellProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.A",
+  "v1_fqn": "com.flurry.a.b.a.b.h",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._c.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._d.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._d.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._i.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.c.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.d.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.d.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.i.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.b.a",
+  "v1_fqn": "com.tsf.shell.setting.a.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c._a.a",
+  "v1_fqn": "com.tsf.shell.setting.a.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.b.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.g.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.z",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.j",
+  "v1_fqn": "com.tsf.shell.setting.a.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.j",
+  "v1_fqn": "com.tsf.shell.setting.a.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.h",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.toggle.ToggleStateManager",
+  "v1_fqn": "com.tsf.shell.setting.SettingBroadcastReceiver",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.f.WorkspaceScene",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.j.RateFaceView",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.m.DragSortContainer",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.p.GestureTipElement",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.a.AppSelectionIndicatorBar",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.theme.ThemeElementPicker",
+  "v1_fqn": "com.tsf.shell.plugin.theme.ThemeElementPicker",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.widget.FloatingWidgetPicker",
+  "v1_fqn": "com.tsf.shell.theme.ThemeManagerActivity",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.video.VideoOptionDialogActivity",
+  "v1_fqn": "com.tsf.shell.preference.video.VideoOptionDialogActivity",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.video.VideoViwerActivity",
+  "v1_fqn": "com.tsf.shell.activity.PhotoSelectorActivity",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.widget.a",
+  "v1_fqn": "com.tsf.shell.preference.widget.b",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.NotifierConnector",
+  "v1_fqn": "com.tsf.shell.services.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu",
+  "v1_fqn": "com.tsf.shell.setting.a.k",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.GLShaderCompiler",
+  "v1_fqn": "com.censivn.C3DEngine.b.b.a",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.k",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 5.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.PagerTitleStrip",
+  "v1_fqn": "android.support.v4.view.PagerTitleStrip",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.ViewPager",
+  "v1_fqn": "android.support.v4.view.ViewPager",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.b",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.Number3d",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.Number3d",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.TextureList",
+  "v1_fqn": "com.censivn.C3DEngine.b.ac",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.c.f",
+  "v1_fqn": "com.censivn.C3DEngine.b.ad",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.ksmobile.launcher.cmbase.utils.CampaignTrackingReceiver",
+  "v1_fqn": "com.flurry.android.InstallReceiver",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.support.ViewPager",
+  "v1_fqn": "android.support.v4.view.ViewPager",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.CellLayout",
+  "v1_fqn": "com.tsf.shell.h.k",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.e",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.t",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.ActionDatabaseHelper",
+  "v1_fqn": "com.tsf.shell.action.a",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.GestureHandler",
+  "v1_fqn": "com.tsf.shell.action.d",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.AppListManager",
+  "v1_fqn": "com.tsf.shell.h.a",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.WidgetDefinitionFactory",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.z",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.WidgetRegistryManager",
+  "v1_fqn": "com.tsf.shell.c.a.a",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.a.WidgetInstantiator",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.v",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.summary.ShellSummaryActivity",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.summary.WidgetSummaryActivity",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.AppIconEditorActivity",
+  "v1_fqn": "com.tsf.shell.g.a",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.AboutActivity",
+  "v1_fqn": "com.tsf.shell.preference.AboutActivity",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.w",
+  "score": 4.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.r",
+  "v1_fqn": "android.support.v4.app.s",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.x",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "android.support.v4.d.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.accessibility.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.Manifold",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.Manifold",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.a.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.a",
+  "v1_fqn": "com.censivn.C3DEngine.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.am",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VRenderManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VTextureManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.core.VRenderer",
+  "v1_fqn": "com.censivn.C3DEngine.api.core.VTextureManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.effects.VIEffects",
+  "v1_fqn": "com.censivn.C3DEngine.api.effects.VEffectsStack",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.effects.a",
+  "v1_fqn": "com.censivn.C3DEngine.api.effects.VEffectsStack",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.Color4",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.Color4BufferList",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.FacesBufferedList",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.PointBufferManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.TextureDescription",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.TextureEnvDescription",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.Uv",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.UvBufferManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.Vertices",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.TextureElement",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.ItemInfo",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.b",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.ItemInfo",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.message.RenderRunnable",
+  "v1_fqn": "com.censivn.C3DEngine.api.message.VMessageQueueManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.message.VMessageManager",
+  "v1_fqn": "com.censivn.C3DEngine.api.message.VMessageQueueManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.ninepath.VNinePatchRectangle",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.ninepath.VNinePathParam",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.primitives.ninepath.VNinePathParam",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.ninepath.VNinePathParam",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.resources.Resource",
+  "v1_fqn": "com.censivn.C3DEngine.api.resources.Resource",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.shell.VConsole",
+  "v1_fqn": "com.censivn.C3DEngine.api.shell.VPage",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.shell.VInformation",
+  "v1_fqn": "com.censivn.C3DEngine.api.shell.VPage",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.shell.VTempleteSceneCallbacks",
+  "v1_fqn": "com.censivn.C3DEngine.api.shell.VPage",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget",
+  "v1_fqn": "com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.api.tween.VEasing",
+  "v1_fqn": "com.censivn.C3DEngine.api.tween.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.A",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.a.a",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderStandard",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.b.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.b.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.c.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.c",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.c",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.h",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.k",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.l",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.A",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.B",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.C",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g._b.b",
+  "v1_fqn": "com.censivn.C3DEngine.g.b.b",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.d",
+  "v1_fqn": "com.censivn.C3DEngine.b.m",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.b.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.f.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.a.a",
+  "v1_fqn": "com.censivn.C3DEngine.c.b.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.f.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.c.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.f.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.d.a",
+  "v1_fqn": "com.censivn.C3DEngine.d.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.d.b",
+  "v1_fqn": "com.censivn.C3DEngine.d.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.b",
+  "v1_fqn": "com.censivn.C3DEngine.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.c",
+  "v1_fqn": "com.censivn.C3DEngine.f.g",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.h",
+  "v1_fqn": "com.censivn.C3DEngine.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.e.i",
+  "v1_fqn": "com.censivn.C3DEngine.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.a",
+  "v1_fqn": "com.censivn.C3DEngine.i.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.e",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.f.f",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.n.Utils",
+  "v1_fqn": "com.censivn.C3DEngine.n.Utils",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.ksmobile.launcher.cmbase.utils.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.c",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.DIYThemeDetail",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeDetail",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeDetailActivity",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ah",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ai",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.v",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.A",
+  "v1_fqn": "com.flurry.a.b.a.d.h.g",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.PersonalizationActivity",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperDetail",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.ShellWallpaperManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.C",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.InstallShortcutReceiver",
+  "v1_fqn": "com.tsf.shell.InstallShortcutReceiver",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.ShellApplication",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.ShellBroadcastReceiver",
+  "v1_fqn": "com.tsf.shell.ShellBroadcastReceiver",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell._a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.actionselector.SwipeyTabs",
+  "v1_fqn": "com.tsf.shell.action.SwipeyTabs",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.actionselector.a",
+  "v1_fqn": "com.tsf.shell.action.o",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.d.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.DragLayer",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.TSFAppWidgetHostView",
+  "v1_fqn": "com.tsf.shell.h.g",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.WidgetContainer",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.Workspace3D",
+  "v1_fqn": "com.tsf.shell.h.r",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.D",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a._a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.e.a.b",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.I",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.f",
+  "v1_fqn": "com.censivn.C3DEngine.common.renderer.ShaderManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._c.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._e.a",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._e.b",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._e.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.c",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.c",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.f",
+  "v1_fqn": "com.censivn.C3DEngine.common.renderer.ShaderManager",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.c.b",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.e.a",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.e.b",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.e.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.r",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._b.l",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.b",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.c",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.l",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._d._a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.b.l",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c._a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.b",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.c",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.l",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.d.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.f",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.i",
+  "v1_fqn": "com.censivn.C3DEngine.b.z",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.m",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.n",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.o",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.p",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.q",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.s",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.c.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.d._a.a",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.d.a.a",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.n",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.g.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.B",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.c",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.c.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.d.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.C",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.a.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.b",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.b",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.c.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.d.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.C",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.a.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.b",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.b",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.ActionManager",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.toggle.TogglePanelManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.DataCoordinator",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.LauncherAppInfo",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.ServiceProvider",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.TextureCache",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.app.v.AnimationHelper",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.BackupDataAdapter",
+  "v1_fqn": "com.tsf.shell.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.BackupExportManager",
+  "v1_fqn": "com.tsf.shell.a.p",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.BackupRestoreManager",
+  "v1_fqn": "com.tsf.shell.a.j",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.bind.ShellBindCallback",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.bind.ShellBindContext",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.bind.ShellBindController",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.f.ScreenFadeController",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.i.PrimeEffectRenderer",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.j.RateDialog",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.j.TexturedBackground",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.m.SideMenuIndicator",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.m.SideMenuManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o.ThemeColorConstants",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o._a.LabelManagerV2",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o._a.TextLabelElementV2",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o.a.LabelManager",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o.a.TextLabelElement",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.p.ThemePreferenceProvider",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.q.UnreadBadgeManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.ar",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.BoundsHelper",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.a.AppWidgetHostManager",
+  "v1_fqn": "com.tsf.shell.Home",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.ScrollableItemListPanel",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.ShortcutsPanel",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.WidgetDecorationPanel",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.a.AppListItemCell",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.a.AppListPanel",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.c.WidgetDragHandler",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.b.c.WidgetPanelToggle",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.MultiSelectLinePicker",
+  "v1_fqn": "com.tsf.shell.workspace3D.ar",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.wallpaper.WallpaperMenuPanel",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.crop.CropImageView",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.crop.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.theme.a",
+  "v1_fqn": "com.tsf.shell.a.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.a",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.b.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.k",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPackagePicker",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.c",
+  "v1_fqn": "com.tsf.shell.ShellApplication",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.d",
+  "v1_fqn": "com.tsf.shell.ShellApplication",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.f",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.a.k",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.h",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.a",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.ThemeListsManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.ThemeManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.a.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.description.ThemeDescription",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.description.ThemeFolderDescription",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.ThemeAppMutilChoiceManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.ThemeIconManager",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.ThemeLassoManager",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeMixerUtils",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeIconInfoLayout",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.HapticFeedbackManager",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.ItemInfoListSorter",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.StatusBarHelper",
+  "v1_fqn": "com.tsf.shell.g.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.i",
+  "v1_fqn": "com.censivn.C3DEngine.f.c",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.k",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.c",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.c.e",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.b",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.be",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.o",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.r",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.c",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.n",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.p",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.s",
+  "v1_fqn": "com.tsf.shell.workspace3D.e.e",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.t",
+  "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.VButton",
+  "score": 3.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.FragmentActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.k",
+  "v1_fqn": "android.support.v4.app.w",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.q",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.b.t",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.app.u",
+  "v1_fqn": "android.support.v4.app.w",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.b.a.c",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.d.a",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ac",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.PagerTabStrip",
+  "v1_fqn": "android.support.v4.view.PagerTabStrip",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.ac",
+  "v1_fqn": "android.support.v4.view.v",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.accessibility.a",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.accessibility.g",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.accessibility.j",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.ad",
+  "v1_fqn": "android.support.v4.view.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.ai",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.au",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.ax",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.az",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.bb",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.j",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.q",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.t",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.NestedScrollView",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.SlidingPaneLayout",
+  "v1_fqn": "com.tsf.shell.action.SwipeyTabs",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.Space",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.SwipeRefreshLayout",
+  "v1_fqn": "com.tsf.shell.action.SwipeyTabs",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.c",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.g",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.k",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.n",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.s",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.x",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.widget.y",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.CircleShape",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.CircleShape",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.PolygonShape",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.CircleShape",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.DistanceJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.DistanceJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.FrictionJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.FrictionJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.MouseJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.MouseJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.PrismaticJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.PrismaticJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.PulleyJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.PulleyJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.RevoluteJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.WeldJoint",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.LineJoint",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.badlogic.gdx.physics.box2d.joints.WeldJointDef",
+  "v1_fqn": "com.badlogic.gdx.physics.box2d.joints.GearJointDef",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.e",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ac",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.i",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.e.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.A",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f._b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.b.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.f.n",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.a.a",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.g.a.d",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.censivn.C3DEngine.b.h.d.c",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.MainActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.a.d",
+  "v1_fqn": "android.support.v4.app.e",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.EventBasedActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.b",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.c",
+  "v1_fqn": "com.tsf.shell.plugin.widgetpicker.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.f",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.k",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.c.b",
+  "v1_fqn": "com.tsf.shell.services.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.c.c",
+  "v1_fqn": "com.tsf.shell.services.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.c.e",
+  "v1_fqn": "com.tsf.shell.services.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.f.a",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.g.a",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.g.b",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.g.c",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.g.d",
+  "v1_fqn": "com.tsf.shell.ci",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.g.e",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.h.a",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.support.a",
+  "v1_fqn": "android.support.v4.view.v",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.PageIndicatorCompat",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.PageIndicatorMarkerCompat",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.PagerIndicator",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.ThemeRecommendView",
+  "v1_fqn": "com.tsf.shell.view.SeekBarLayout",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.WallpaperUploadIconView",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.view.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.widget.pulltorefresh.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.widget.pulltorefresh.a.c",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.widget.pulltorefresh.a.d",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.widget.pulltorefresh.a.e",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.g",
+  "v1_fqn": "com.flurry.android.ed",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.keyboard.KeyboardPager",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.keyboard.ThemeKeyboardRecommendView",
+  "v1_fqn": "com.tsf.shell.view.SeekBarLayout",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.keyboard.a",
+  "v1_fqn": "com.tsf.shell.preference.video.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeAlbumsPager",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeCmClubProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeImageView",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeLikedPager",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemePager",
+  "v1_fqn": "com.flurry.a.b.a.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemeService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ab",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ad",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.af",
+  "v1_fqn": "com.flurry.a.a.a.c.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.al",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.am",
+  "v1_fqn": "com.flurry.android.ed",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.aq",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.c.b",
+  "v1_fqn": "com.flurry.a.a.a.c.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.c.c",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.c.d",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.c.f",
+  "v1_fqn": "com.tsf.shell.action.SwipeyTabs",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.c.i",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.cmclub.ThemeCmClubActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.core.ThemeManagerService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.d",
+  "v1_fqn": "com.flurry.a.a.a.c.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.diy.ThemeDIYActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.diy.ThemePreview",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.diy.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.event.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.diy.view.ThemeLoadingAnim",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.f",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.m",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.n",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.o",
+  "v1_fqn": "com.flurry.android.ed",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.pull.PowerStateReceiver",
+  "v1_fqn": "com.tsf.shell.workspace3D.ShellWallpaperManager",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.pull.PullStubService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.q",
+  "v1_fqn": "com.flurry.a.a.a.c.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.r",
+  "v1_fqn": "com.flurry.a.b.a.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.t",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.u",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.y",
+  "v1_fqn": "com.flurry.a.a.a.c.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.z",
+  "v1_fqn": "com.flurry.a.b.a.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.CustomWallpaperShadowView",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.HorzontalSliderView",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.MinePersonalizationPager",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.PersonalizationPager",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.ThemePreview",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperCategoryImageView",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperCategoryList",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperClip",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperClipImageView",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperContentProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperHot",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperImageView",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperOnLinePager",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.WallpaperPager",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.ad",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.af",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.aj",
+  "v1_fqn": "com.flurry.a.b.a.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.d",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.e",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.f",
+  "v1_fqn": "com.censivn.C3DEngine.api.element.info.ItemInfo",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.g",
+  "v1_fqn": "com.flurry.a.b.a.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.h",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.j",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.c.m",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.k",
+  "v1_fqn": "com.tsf.shell.plugin.widgetpicker.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.m",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.t",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.upload.UploadWallpaperActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.upload.UploadWallpaperService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.upload.b",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.upload.c",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.upload.d",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.v",
+  "v1_fqn": "com.tsf.shell.h.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.y",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.D",
+  "v1_fqn": "com.tsf.shell.l",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.RestartActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.ShellActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell._a.a.c",
+  "v1_fqn": "com.flurry.android.ed",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell._a.b.a",
+  "v1_fqn": "com.tsf.shell.g.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.a.a.c",
+  "v1_fqn": "com.flurry.android.ed",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.a.b.a",
+  "v1_fqn": "com.tsf.shell.g.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.actionselector.ActionSelector",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.activity.tips.TipsDialogActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.component.ForegroundService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.e.TSFAppWidgetHost",
+  "v1_fqn": "com.tsf.shell.h.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ac",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.b.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ac",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.A",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.a.d",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.c.a.e",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.d.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f._d.e.a.a",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.a.b.b",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.a.g",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.c.b.f",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._d.a.a",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._e.d",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._e.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._f.b",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.A",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._g.a.b",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._h.a",
+  "v1_fqn": "com.tsf.shell.activity.PhotoSelectorActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._i.b",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.d.a.a",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.e.d",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.e.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.f.b",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.h.a",
+  "v1_fqn": "com.tsf.shell.activity.PhotoSelectorActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.i.b",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.C",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.a.a",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._a.b.c",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.d",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._c.m",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._d._a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._d._a.d",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._d._a.e",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a._d._a.f",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.d",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.c.m",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.d.a.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.d.a.d",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.d.a.e",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.a.d.a.f",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.c",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.e",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.b.a.f",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.i",
+  "v1_fqn": "com.censivn.C3DEngine.api.event.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.f.l",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.g.a.e",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.g.a.f",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.g.a.g",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.A",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.B",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.A",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.e",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.a.f",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.b.a",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ac",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.h.a.b.b",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._a.d",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.f",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.h",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._b.e.i",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.f",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.g",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.i",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.j",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.k",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.l",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.m",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.n",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.o",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.b.p",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.c.c",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.a.c.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._c.g",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.a.d",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.aa",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.d",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.f",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.h",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.b.e.i",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.A",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.f",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.g",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.i",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.j",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.k",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.l",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.m",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.n",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.o",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.b.p",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.c.c",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.a.c.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.c.g",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.g",
+  "v1_fqn": "com.tsf.shell.by",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.i",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.ActionSelectorAdapter",
+  "v1_fqn": "com.tsf.shell.action.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.BackupEntry",
+  "v1_fqn": "com.tsf.shell.a.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.b.TempPreferenceManager",
+  "v1_fqn": "com.tsf.shell.a.q",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.c.ContactDatabaseHelper",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.c.a.a.ContactModel",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.h.ScreenLockController",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.m.AddItemButton",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o._a.EmptyLabelElementV2",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.o.a.EmptyLabelElement",
+  "v1_fqn": "com.flurry.a.b.a.d.f.a.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.classification.CatalogActivity",
+  "v1_fqn": "com.tsf.shell.action.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.classification.b",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.classification.c",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.classification.d",
+  "v1_fqn": "com.tsf.shell.a.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.crop.CropImageActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.crop.SizeFragmentDialogActicity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.crop.a",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.fontspicker.FontsManagerProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.fontspicker.FontsPickerActivity",
+  "v1_fqn": "com.tsf.shell.action.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.fontspicker.a",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.fontspicker.b",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.fontspicker.c",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.notice.MainActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.IconPickerActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.SildingMenuLayout",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.b",
+  "v1_fqn": "android.support.v4.app.w",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.aj",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.g",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.h",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.i",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.icondesigner.TestIconDesignerActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.icondesigner.ThemeIconDesignerProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.indicator.LinePageIndicator",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator",
+  "v1_fqn": "com.tsf.shell.workspace3D.ad",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.indicator.b",
+  "v1_fqn": "com.tsf.shell.theme.ThemePagePointer",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.j",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.theme.a",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.theme.b",
+  "v1_fqn": "com.tsf.shell.action.k",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.theme.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.aj",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.theme.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.b.c",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewDetilActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.h.a.ao",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.themepreview.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.aj",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.b",
+  "v1_fqn": "com.flurry.a.b.a.d.b.a.d",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.c",
+  "v1_fqn": "android.support.v4.app.w",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.d",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.utils.e",
+  "v1_fqn": "com.flurry.a.b.a.e.p",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.WallpaperAppActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.WallpaperPickerActivity",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.IconPicker",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.a",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.b",
+  "v1_fqn": "android.support.v4.app.w",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.c",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.aj",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.wallpaper.d",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.SettingAboutWebView",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.SettingAdvancedPerferenceActivity",
+  "v1_fqn": "com.tsf.shell.preference.SettingGesturePreferenceActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.A",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.b",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.e",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.a.a.f",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.widget.IconPreference",
+  "v1_fqn": "com.tsf.shell.preference.widget.VideoPreference",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.widget.LMSAPreference",
+  "v1_fqn": "com.tsf.shell.preference.widget.VideoPreference",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.preference.widget.VideoPreference",
+  "v1_fqn": "com.tsf.shell.preference.widget.VideoPreference",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.ForegroundService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.ToggleServiceConnector",
+  "v1_fqn": "com.tsf.shell.workspace3D.ShellWallpaperManager",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.a.NotifierCounterInterface",
+  "v1_fqn": "com.tsf.shell.services.a.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.ThemeViewFilpper",
+  "v1_fqn": "com.tsf.shell.theme.inside.ThemeViewFilpper",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu",
+  "v1_fqn": "com.flurry.a.b.a.d.g.a.i",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout",
+  "v1_fqn": "com.censivn.C3DEngine.f.j",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.parser.IconPreviewLoader",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.DimensionHelper",
+  "v1_fqn": "com.tsf.shell.g.g",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.MarketLinkHandler",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.OEMComponentResolver",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.a.a.b",
+  "v1_fqn": "com.flurry.a.a.a.c.h",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlert",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlertActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.AlarmKlaxon",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.AlarmProvider",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.AlarmReceiver",
+  "v1_fqn": "com.tsf.shell.workspace3D.ShellWallpaperManager",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.b",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.D",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.a",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.c",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.b.d",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.a.b",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.a.c",
+  "v1_fqn": "com.tsf.shell.theme.o",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.provider.SettingProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.provider.b",
+  "v1_fqn": "com.tsf.shell.bu",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.service.AlarmService",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.service.a",
+  "v1_fqn": "com.tsf.shell.services.a.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.service.b",
+  "v1_fqn": "com.tsf.shell.services.a.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.setting.PlaceSearchActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.setting.PlaceSelectActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.setting.SettingActivity",
+  "v1_fqn": "com.tsf.shell.RestartActivity",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.setting.a",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.setting.b",
+  "v1_fqn": "com.tsf.shell.plugin.widget.f",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.A",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.h",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.i",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.l",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.m",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.provider.SettingProvider",
+  "v1_fqn": "com.tsf.shell.ShellProvider",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.q",
+  "v1_fqn": "com.tsf.shell.plugin.widgetpicker.a",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.cubeclock.u",
+  "v1_fqn": "com.flurry.a.b.a.d.g.b.n",
+  "score": 2.0
+ },
+ {
+  "v3_fqn": "android.support.v4.view.k",
+  "v1_fqn": "com.flurry.a.b.a.d.b.k",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.ksmobile.launcher.cmbase.utils.b",
+  "v1_fqn": "com.flurry.android.t",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.A",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.a.a",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.actstru.model.a.b",
+  "v1_fqn": "com.tsf.shell.h.g",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.b.a.a",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.b.c",
+  "v1_fqn": "com.flurry.a.b.a.h.d",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.h.b",
+  "v1_fqn": "com.flurry.a.a.a.c",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.d",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.k",
+  "v1_fqn": "com.flurry.android.t",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.l",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.n",
+  "v1_fqn": "com.tsf.shell.preference.SettingPreferenceActivity",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.o",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.u",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.base.j.x",
+  "v1_fqn": "com.flurry.android.t",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.ThemePushService",
+  "v1_fqn": "com.tsf.shell.action.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.diy.e",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.e",
+  "v1_fqn": "com.tsf.shell.action.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.h",
+  "v1_fqn": "com.flurry.a.b.a.b.d",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.theme.pull.ThemePullService",
+  "v1_fqn": "com.tsf.shell.a.t",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.extend.wallpaper.aa",
+  "v1_fqn": "com.tsf.shell.preference.SettingPreferenceActivity",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell._a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.ah",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.a.a.e",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.ah",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e._b.d",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderAlpha",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.e.b.d",
+  "v1_fqn": "com.censivn.C3DEngine.common.shader.ShaderAlpha",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i._a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.a.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.f.i.a.a",
+  "v1_fqn": "com.tsf.shell.workspace3D.a.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.ActionModel",
+  "v1_fqn": "com.tsf.shell.workspace3D.g.d.s",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.toggle.a.ToggleActionMobileData",
+  "v1_fqn": "com.flurry.android.s",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.action.toggle.a.ToggleActionVolume",
+  "v1_fqn": "com.tsf.shell.setting.s",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.c.ContactsProviderHelper",
+  "v1_fqn": "com.tsf.shell.preference.SettingPreferenceActivity",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.WidgetCompatibilityChecker",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.b.k",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.manager.r.c.WidgetFeatureConfig",
+  "v1_fqn": "com.flurry.a.b.a.d.i.z",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.classification.a",
+  "v1_fqn": "com.tsf.shell.b",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.notice.b",
+  "v1_fqn": "com.tsf.shell.c.a.c",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.d",
+  "v1_fqn": "com.tsf.shell.plugin.iconpicker.c.c",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.icondesigner.b",
+  "v1_fqn": "com.tsf.shell.theme.inside.ThemeDockDescription",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.themepicker.icondesigner.d",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.a.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.plugin.widget.a",
+  "v1_fqn": "com.tsf.shell.plugin.widget.c",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.ForegroundServiceManager",
+  "v1_fqn": "com.tsf.shell.services.ForegroundService",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.services.ServiceLifecycleManager",
+  "v1_fqn": "com.flurry.a.b.a.e.e",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.element.ThemeElementChecker",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.a.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.theme.inside.parser.ThemeIconPackageParser",
+  "v1_fqn": "com.tsf.shell.theme.inside.ThemeIconPackageParser",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.ExternalFilesDirResolver",
+  "v1_fqn": "com.tsf.shell.b.a",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.utils.FeedbackComposer",
+  "v1_fqn": "com.tsf.shell.ci",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.AlarmUtils.Alarm",
+  "v1_fqn": "com.flurry.a.b.a.d.b.b.ca",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.A",
+  "v1_fqn": "com.tsf.shell.plugin.widget.c",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.a.a",
+  "v1_fqn": "com.flurry.android.bz",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.d.b.a",
+  "v1_fqn": "com.flurry.android.at",
+  "score": 1.0
+ },
+ {
+  "v3_fqn": "com.tsf.shell.widget.alarm.p",
+  "v1_fqn": "com.tsf.shell.workspace3D.k.c.a.a",
+  "score": 1.0
+ }
+]

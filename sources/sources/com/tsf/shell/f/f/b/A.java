@@ -15,9 +15,9 @@ import java.nio.Buffer;
 public class A extends com.tsf.shell.f.f.l {
     private com.censivn.C3DEngine.b.f.j a;
     private C0108a b;
-    private com.tsf.shell.f.f.g c;
-    private com.tsf.shell.f.f.g d;
-    private com.tsf.shell.f.f.g e;
+    private com.tsf.shell.f.f.WorkspacePage c;
+    private com.tsf.shell.f.f.WorkspacePage d;
+    private com.tsf.shell.f.f.WorkspacePage e;
     private int f;
     private com.censivn.C3DEngine.b.g._b.b g;
     private boolean h;
@@ -114,9 +114,9 @@ public class A extends com.tsf.shell.f.f.l {
     @Override // com.tsf.shell.f.f.l
     public void b(float f, float f2) {
         o();
-        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
+        com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
         if (this.e != null && this.e != gVarN && Math.round(Math.abs(this.e.g - gVarN.g)) % 2 != 0) {
-            com.tsf.shell.f.f.g gVar = this.c;
+            com.tsf.shell.f.f.WorkspacePage gVar = this.c;
             this.c = this.d;
             this.d = gVar;
         }
@@ -151,7 +151,7 @@ public class A extends com.tsf.shell.f.f.l {
         this.d.setRendererPriorityLevel(0);
     }
 
-    public void a(com.tsf.shell.f.f.g gVar) {
+    public void a(com.tsf.shell.f.f.WorkspacePage gVar) {
         if (this.c == gVar) {
             b(gVar);
             return;
@@ -165,20 +165,20 @@ public class A extends com.tsf.shell.f.f.l {
         }
     }
 
-    private void b(com.tsf.shell.f.f.g gVar) {
+    private void b(com.tsf.shell.f.f.WorkspacePage gVar) {
         this.c = gVar;
         this.b.a();
         GLES20.glFrontFace(2305);
     }
 
-    private void c(com.tsf.shell.f.f.g gVar) {
+    private void c(com.tsf.shell.f.f.WorkspacePage gVar) {
         this.d = gVar;
         this.b.d();
         GLES20.glFrontFace(2304);
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void b(com.tsf.shell.f.f.g gVar, float f) {
+    public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.position().x = 0.0f;
         this.b.a(gVar.j().b);
         a(gVar);

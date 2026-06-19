@@ -8,7 +8,7 @@ import com.tsf.shell.f.f.a.C0133a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class i extends com.censivn.C3DEngine.b.f.j {
-    protected com.tsf.shell.f.f.a.h a;
+    protected com.tsf.shell.f.f.a.FolderPage a;
     protected com.tsf.shell.f.f.a.f b;
     protected int c;
     protected String d;
@@ -19,7 +19,7 @@ public class i extends com.censivn.C3DEngine.b.f.j {
     private boolean i = false;
     private Runnable j;
 
-    public i(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar, int i, String str) {
+    public i(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar, int i, String str) {
         this.c = 0;
         this.b = fVar;
         this.a = hVar;
@@ -177,27 +177,27 @@ public class i extends com.censivn.C3DEngine.b.f.j {
     public void p() {
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
     }
 
-    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
     }
 
-    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
-    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
     }
 }

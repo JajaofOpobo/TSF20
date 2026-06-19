@@ -373,7 +373,7 @@ public class C {
 
     public static ArrayList<b> a(ArrayList<b> arrayList, String str, String str2, boolean z) {
         ArrayList<b> arrayList2 = new ArrayList<>();
-        ArrayList<Integer> arrayListA = com.tsf.shell.utils.h.a(str, ",", false);
+        ArrayList<Integer> arrayListA = com.tsf.shell.utils.ItemInfoListSorter.a(str, ",", false);
         int size = arrayListA.size();
         for (int i = 0; i < size; i++) {
             B bVarA = a(arrayList, arrayListA.get(i).intValue());

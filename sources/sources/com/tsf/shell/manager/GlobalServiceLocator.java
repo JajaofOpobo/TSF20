@@ -6,7 +6,7 @@ import com.tsf.shell.manager.action.ActionManager;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.preference.a.d;
-import com.tsf.shell.services.c;
+import com.tsf.shell.services.ServiceLifecycleManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GlobalServiceLocator {

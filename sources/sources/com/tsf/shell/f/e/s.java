@@ -15,7 +15,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
     private static s a;
     private static A b;
     private static boolean c = false;
-    private static com.tsf.shell.f.i.B d;
+    private static com.tsf.shell.f.i.PageItem d;
     private static Runnable e;
 
     public static void a() {
@@ -48,7 +48,7 @@ public class s extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         a.addChild(B);
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar) {
+    public static void a(com.tsf.shell.f.i.PageItem bVar) {
         c = true;
         d = bVar;
         d.W();

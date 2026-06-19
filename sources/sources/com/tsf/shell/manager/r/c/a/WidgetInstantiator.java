@@ -30,9 +30,9 @@ public class WidgetInstantiator {
 
         public abstract void a(ItemInfo itemInfo);
 
-        public abstract void a(com.tsf.shell.f.i.B bVar, g gVar);
+        public abstract void a(com.tsf.shell.f.i.PageItem bVar, g gVar);
 
-        public void b(com.tsf.shell.f.i.B bVar, g gVar) {
+        public void b(com.tsf.shell.f.i.PageItem bVar, g gVar) {
             this.a++;
             a(bVar, gVar);
         }
@@ -43,7 +43,7 @@ public class WidgetInstantiator {
         }
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar, g gVar) {
+    public static void a(com.tsf.shell.f.i.PageItem bVar, g gVar) {
         if (gVar != null && gVar.a.equals("com.tsf.shell.widget.music")) {
             c.a(12, 1000);
         }
@@ -95,7 +95,7 @@ public class WidgetInstantiator {
                 @Override // java.lang.Runnable
                 public void run() {
                     try {
-                        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) ((VObject3d) method.invoke(objNewInstance, contextCreatePackageContext, Integer.valueOf(itemInfo.id))).getVirtualTarget();
+                        com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) ((VObject3d) method.invoke(objNewInstance, contextCreatePackageContext, Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         if (str.equals("com.tsf.shell.widget.weather")) {
                             bVar.f(true);
                         }
@@ -139,7 +139,7 @@ public class WidgetInstantiator {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.r.c.a.WidgetInstantiator.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i.B aVar;
+                com.tsf.shell.f.i.PageItem aVar;
                 try {
                     if (gVar.b.equals(com.tsf.shell.f.i.b.d.b.class.getName())) {
                         aVar = new com.tsf.shell.f.i.b.d.b(itemInfo);
@@ -147,7 +147,7 @@ public class WidgetInstantiator {
                         aVar = new com.tsf.shell.f.i.b.a.b(itemInfo);
                     } else if (!gVar.b.equals(com.tsf.shell.f.i.b.c.a.class.getName())) {
                         Class<?> clsLoadClass = a.a.loadClass(gVar.b);
-                        aVar = (com.tsf.shell.f.i.B) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.A.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
+                        aVar = (com.tsf.shell.f.i.PageItem) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.A.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         aVar.a(itemInfo);
                     } else {
                         aVar = new com.tsf.shell.f.i.b.c.a(itemInfo);

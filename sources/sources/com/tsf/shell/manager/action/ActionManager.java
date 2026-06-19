@@ -342,154 +342,154 @@ public class ActionManager {
         aVar.a = i;
         switch (i) {
             case 0:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.none);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.none);
                 aVar.c = com.tsf.b.d.ic_action_none;
                 return aVar;
             case 2:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_home_screen);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_home_screen);
                 aVar.c = com.tsf.b.d.ic_action_homescreen;
                 return aVar;
             case 3:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_switch_appdrawer_homescreen);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_switch_appdrawer_homescreen);
                 aVar.c = com.tsf.b.d.ic_action_drawer_homescreen;
                 return aVar;
             case 4:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_notification_bar);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_toggle_notification_bar);
                 aVar.c = com.tsf.b.d.ic_action_toggle_notification_bar;
                 return aVar;
             case 5:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_expand_notification_bar);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_expand_notification_bar);
                 aVar.c = com.tsf.b.d.ic_action_expand_notification_bar;
                 return aVar;
             case 7:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_text_search);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_text_search);
                 aVar.c = com.tsf.b.d.ic_action_search;
                 aVar.d = "ic_action_toggle_dock";
                 return aVar;
             case 8:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_voice_search);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_voice_search);
                 aVar.c = com.tsf.b.d.ic_action_voice;
                 return aVar;
             case 11:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_lasso_mode);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_lasso_mode);
                 aVar.c = com.tsf.b.d.shortcut_lasso_mode;
                 aVar.d = ThemeShellDescription.SHORTCUT_LASSO_MODE;
                 return aVar;
             case 12:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_add);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_add);
                 aVar.c = com.tsf.b.d.shortcut_add;
                 aVar.d = ThemeShellDescription.SHORTCUT_ADD;
                 return aVar;
             case 13:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_multiple_choice);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_multiple_choice);
                 aVar.c = com.tsf.b.d.shortcut_multi_choice;
                 aVar.d = ThemeShellDescription.SHORTCUT_MULTI_CHOICE;
                 return aVar;
             case 14:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_desktop_editor);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_desktop_editor);
                 aVar.c = com.tsf.b.d.shortcut_desktop_editor;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP_EDITOR;
                 return aVar;
             case 15:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_restart);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_restart);
                 aVar.c = com.tsf.b.d.shortcut_restart;
                 aVar.d = ThemeShellDescription.SHORTCUT_RESTART;
                 return aVar;
             case 16:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_dock);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_toggle_dock);
                 aVar.c = com.tsf.b.d.ic_action_toggle_dock;
                 return aVar;
             case 17:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_toggle_sliding_dock);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_toggle_sliding_dock);
                 aVar.c = com.tsf.b.d.ic_action_toggle_sliding_dock;
                 return aVar;
             case 18:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_expand_side_menu);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_expand_side_menu);
                 aVar.c = com.tsf.b.d.ic_action_expand_side_menu;
                 return aVar;
             case 19:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.theme);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.theme);
                 aVar.c = com.tsf.b.d.cml_theme;
                 return aVar;
             case 20:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.panda);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.panda);
                 aVar.c = com.tsf.b.d.cml_panda;
                 return aVar;
             case 100:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_action_app_drawer);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_action_app_drawer);
                 return aVar;
             case VEasing.Back.easeIn /* 200 */:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_theme);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_theme);
                 aVar.c = com.tsf.b.d.shortcut_theme;
                 aVar.d = ThemeShellDescription.SHORTCUT_THEME;
                 return aVar;
             case 300:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_setting_effect);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_setting_effect);
                 aVar.c = com.tsf.b.d.shortcut_desktop_effect;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP_EFFECT;
                 return aVar;
             case VEasing.Linear.easeNone /* 400 */:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.menu_gestures);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.menu_gestures);
                 aVar.c = com.tsf.b.d.shortcut_gesture;
                 aVar.d = ThemeShellDescription.SHORTCUT_GESTURE;
                 return aVar;
             case 500:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_all_apps);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_all_apps);
                 return aVar;
             case 600:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_floating);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_floating);
                 aVar.c = com.tsf.b.d.shortcut_snow_icon;
                 return aVar;
             case 700:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_screen_scale);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_screen_scale);
                 aVar.c = com.tsf.b.d.shortcut_screen_scale;
                 aVar.d = ThemeShellDescription.SHORTCUT_SCALE;
                 return aVar;
             case 800:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_dock);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_dock);
                 aVar.c = com.tsf.b.d.shortcut_dock;
                 aVar.d = ThemeShellDescription.SHORTCUT_DOCK;
                 return aVar;
             case 900:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_side_menu);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_side_menu);
                 aVar.c = com.tsf.b.d.shortcut_side_menu;
                 aVar.d = ThemeShellDescription.SHORTCUT_SIDE_MENU;
                 return aVar;
             case 1000:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_drawer);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_drawer);
                 return aVar;
             case 1100:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_unread_count);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_unread_count);
                 aVar.c = com.tsf.b.d.shortcut_unread;
                 aVar.d = ThemeShellDescription.SHORTCUT_UNREAD;
                 return aVar;
             case 1200:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_backup);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_backup);
                 aVar.c = com.tsf.b.d.shortcut_backup;
                 aVar.d = ThemeShellDescription.SHORTCUT_BACKUP;
                 return aVar;
             case 1300:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.advanced_setting);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.advanced_setting);
                 aVar.c = com.tsf.b.d.shortcut_advanced;
                 aVar.d = ThemeShellDescription.SHORTCUT_ADVANCED;
                 return aVar;
             case 1400:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_about);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_about);
                 aVar.c = com.tsf.b.d.shortcut_about;
                 aVar.d = ThemeShellDescription.SHORTCUT_ABOUT;
                 return aVar;
             case 1500:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_screen);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_screen);
                 aVar.c = com.tsf.b.d.shortcut_desktop;
                 aVar.d = ThemeShellDescription.SHORTCUT_DESKTOP;
                 return aVar;
             case 1600:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.text_demo);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.text_demo);
                 aVar.c = com.tsf.b.d.shortcut_demo;
                 aVar.d = ThemeShellDescription.SHORTCUT_DEMO;
                 return aVar;
             case 1700:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_wallpaper);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_wallpaper);
                 aVar.c = com.tsf.b.d.shortcut_wallpaper;
                 aVar.d = ThemeShellDescription.SHORTCUT_WALLPAPER;
                 return aVar;
@@ -502,11 +502,11 @@ public class ActionManager {
                 aVar.c = com.tsf.b.d.default_icon_sms;
                 return aVar;
             case 3002:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.mn_wallpaper);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.mn_wallpaper);
                 aVar.c = com.tsf.b.d.shortcut_wallpaper;
                 return aVar;
             default:
-                aVar.b = com.tsf.shell.utils.x.c(b.i.none);
+                aVar.b = com.tsf.shell.utils.GraphicsEngineBridge.c(b.i.none);
                 aVar.c = com.tsf.b.d.tsf_ico;
                 return aVar;
         }

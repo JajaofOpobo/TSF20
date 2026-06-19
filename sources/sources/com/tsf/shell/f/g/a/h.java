@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.e.k;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h extends j {
@@ -19,10 +19,10 @@ public class h extends j {
 
     private static void a() {
         if (b == null) {
-            Bitmap bitmapA = com.tsf.shell.utils.e.a(true);
+            Bitmap bitmapA = com.tsf.shell.utils.SelectionDotRenderer.a(true);
             b = com.censivn.C3DEngine.A.g().a(bitmapA, false);
             bitmapA.recycle();
-            Bitmap bitmapA2 = com.tsf.shell.utils.e.a(false);
+            Bitmap bitmapA2 = com.tsf.shell.utils.SelectionDotRenderer.a(false);
             c = com.censivn.C3DEngine.A.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }

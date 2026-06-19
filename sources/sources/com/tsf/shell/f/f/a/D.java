@@ -5,7 +5,7 @@ import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
 import com.tsf.shell.plugin.classification.d;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -34,7 +34,7 @@ public class D {
 
     public void a() {
         this.a.clear();
-        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
+        for (com.tsf.shell.f.i.PageItem bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
             B bVar2 = new B();
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 bVar2.c = bVar.K().title;

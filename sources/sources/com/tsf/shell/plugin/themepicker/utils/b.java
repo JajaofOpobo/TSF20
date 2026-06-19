@@ -42,7 +42,7 @@ public final class b implements Closeable {
     private final LinkedHashMap<String, C0159b> j = new LinkedHashMap<>(0, 0.75f, true);
     private long l = 0;
     private final ExecutorService m = new ThreadPoolExecutor(0, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue());
-    private final Callable<Void> n = new Callable<Void>() { // from class: com.tsf.shell.plugin.themepicker.utils.b.1
+    private final Callable<Void> n = new Callable<Void>() { // from class: com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver.1
         @Override // java.util.concurrent.Callable
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public Void call() {
@@ -504,7 +504,7 @@ public final class b implements Closeable {
             b.this.a(this, false);
         }
 
-        /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.b$a$a, reason: collision with other inner class name */
+        /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver$a$a, reason: collision with other inner class name */
         private class C0158a extends FilterOutputStream {
             private C0158a(OutputStream outputStream) {
                 super(outputStream);
@@ -548,7 +548,7 @@ public final class b implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.b$b, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver$b, reason: collision with other inner class name */
     private final class C0159b {
         private final String b;
         private final long[] c;

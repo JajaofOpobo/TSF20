@@ -6,8 +6,8 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f._d.e.A;
-import com.tsf.shell.f.f.g;
-import com.tsf.shell.f.f.a.h;
+import com.tsf.shell.f.f.WorkspacePage;
+import com.tsf.shell.f.f.a.FolderPage;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -92,8 +92,8 @@ public abstract class b implements A.InterfaceC0090a {
                 break;
             }
             i iVar2 = arrayList.get(i2);
-            if (iVar2 instanceof com.tsf.shell.f.i.B) {
-                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar2;
+            if (iVar2 instanceof com.tsf.shell.f.i.PageItem) {
+                com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar2;
                 d dVar2 = new d();
                 if (b()) {
                     if (iVar2 == iVar) {
@@ -156,8 +156,8 @@ public abstract class b implements A.InterfaceC0090a {
                 break;
             }
             i iVar = arrayList.get(i2);
-            if (iVar instanceof com.tsf.shell.f.i.B) {
-                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) iVar;
+            if (iVar instanceof com.tsf.shell.f.i.PageItem) {
+                com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
                 if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
                     com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
                     if (com.censivn.C3DEngine.b.b.A.O) {

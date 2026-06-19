@@ -9,30 +9,30 @@ public class B {
     private com.tsf.shell.manager.app.DataCoordinator a;
     private boolean c = false;
     private boolean d = false;
-    private ArrayList<com.tsf.shell.f.i.B> b = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.PageItem> b = new ArrayList<>();
 
     public B(com.tsf.shell.manager.app.DataCoordinator eVar) {
         this.a = eVar;
     }
 
-    public ArrayList<com.tsf.shell.f.i.B> a() {
+    public ArrayList<com.tsf.shell.f.i.PageItem> a() {
         return this.b;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.b.add(bVar);
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, int i) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, int i) {
         this.b.add(i, bVar);
     }
 
-    public boolean b(com.tsf.shell.f.i.B bVar) {
+    public boolean b(com.tsf.shell.f.i.PageItem bVar) {
         return this.b.remove(bVar);
     }
 
     public void b() {
-        for (com.tsf.shell.f.i.B bVar : this.b) {
+        for (com.tsf.shell.f.i.PageItem bVar : this.b) {
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
                 com.tsf.shell.manager.app.ServiceProvider.c().a(bVar2.K());
@@ -43,7 +43,7 @@ public class B {
         this.b.clear();
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
         this.b.set(this.b.indexOf(bVar), bVar2);
     }
 

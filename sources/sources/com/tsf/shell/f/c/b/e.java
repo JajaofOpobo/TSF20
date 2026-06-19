@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.f.c.b.a.a;
 import com.tsf.shell.g;
-import com.tsf.shell.utils.h;
+import com.tsf.shell.utils.ItemInfoListSorter;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -283,7 +283,7 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     private void a(ArrayList<ItemInfo> arrayList) {
-        com.tsf.shell.f.i.B bVarA;
+        com.tsf.shell.f.i.PageItem bVarA;
         A aVar = (A) this.i.getChildAt(this.i.numChildren() - 1);
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo.itemType == 1) {
@@ -297,14 +297,14 @@ public class e implements com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    public void a(int i, com.tsf.shell.f.i.B bVar) {
+    public void a(int i, com.tsf.shell.f.i.PageItem bVar) {
         A aVarC = c(i);
         aVarC.a(bVar, false);
         aVarC.addChild(bVar);
     }
 
     private void a(A aVar, ItemInfo itemInfo) {
-        com.tsf.shell.f.i.B bVarA;
+        com.tsf.shell.f.i.PageItem bVarA;
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {

@@ -12,11 +12,11 @@ public class k extends g {
         this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.A.d(), this.a);
     }
 
-    @Override // com.tsf.shell.f.f.g
+    @Override // com.tsf.shell.f.f.WorkspacePage
     public void O() {
         for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-            if (iVar instanceof com.tsf.shell.f.i.B) {
-                ((com.tsf.shell.f.i.B) iVar).ae();
+            if (iVar instanceof com.tsf.shell.f.i.PageItem) {
+                ((com.tsf.shell.f.i.PageItem) iVar).ae();
             }
         }
         super.O();
@@ -40,26 +40,26 @@ public class k extends g {
         });
     }
 
-    @Override // com.tsf.shell.f.f.g
+    @Override // com.tsf.shell.f.f.WorkspacePage
     public void ab() {
         if (!ad() && X()) {
             super.ab();
             m().g();
             for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-                if (iVar instanceof com.tsf.shell.f.i.B) {
-                    ((com.tsf.shell.f.i.B) iVar).q_();
+                if (iVar instanceof com.tsf.shell.f.i.PageItem) {
+                    ((com.tsf.shell.f.i.PageItem) iVar).q_();
                 }
             }
         }
     }
 
-    @Override // com.tsf.shell.f.f.g
+    @Override // com.tsf.shell.f.f.WorkspacePage
     public void ac() {
         if (ad() && Y()) {
             super.ac();
             for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
-                if (iVar instanceof com.tsf.shell.f.i.B) {
-                    ((com.tsf.shell.f.i.B) iVar).j();
+                if (iVar instanceof com.tsf.shell.f.i.PageItem) {
+                    ((com.tsf.shell.f.i.PageItem) iVar).j();
                 }
             }
         }

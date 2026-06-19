@@ -59,7 +59,7 @@ public class i extends b {
         this.b = null;
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         com.tsf.shell.manager.app.FolderManager.c.b(this);
         super.g();

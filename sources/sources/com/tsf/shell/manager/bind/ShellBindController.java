@@ -68,7 +68,7 @@ public class ShellBindController {
         if (arrayList.size() > 0) {
             final a.AbstractC0146a abstractC0146a = new a.AbstractC0146a() { // from class: com.tsf.shell.manager.bind.ShellBindController.3
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
-                public void a(com.tsf.shell.f.i.B bVar, g gVar) {
+                public void a(com.tsf.shell.f.i.PageItem bVar, g gVar) {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
                 }
 

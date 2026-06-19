@@ -22,13 +22,13 @@ import android.widget.TextView;
 import com.tsf.shell.plugin.themepicker.f;
 import com.tsf.shell.plugin.themepicker.k;
 import com.tsf.shell.plugin.themepicker.utils.RecyclingImageView;
-import com.tsf.shell.plugin.themepicker.utils.c;
-import com.tsf.shell.plugin.themepicker.utils.h;
+import com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder;
+import com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends Fragment implements k.b {
-    private com.tsf.shell.plugin.themepicker.utils.d a;
+    private com.tsf.shell.plugin.themepicker.utils.LazyBitmapFactory a;
     private ViewGroup b;
     private b c;
     private final String d = "http://gcm.tsfui.com/recommend_theme.xml";
@@ -43,7 +43,7 @@ public class d extends Fragment implements k.b {
         super.a(bundle);
         c.a aVar = new c.a(i(), "thumbs");
         aVar.a(0.25f);
-        this.a = new com.tsf.shell.plugin.themepicker.utils.d(i(), 480, 720);
+        this.a = new com.tsf.shell.plugin.themepicker.utils.LazyBitmapFactory(i(), 480, 720);
         this.a.a(i().f(), aVar);
         this.f = new a();
         this.g = (int) TypedValue.applyDimension(1, 50.0f, i().getResources().getDisplayMetrics());

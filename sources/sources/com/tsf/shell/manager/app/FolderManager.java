@@ -16,8 +16,8 @@ import com.tsf.shell.ShellProvider;
 import com.tsf.shell.g;
 import com.tsf.shell.manager.app.AppListModel;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.utils.l;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.ErrorThrower;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,7 +33,7 @@ public class FolderManager implements AppListModel.a {
     private ArrayList<com.tsf.shell.f.i.b.e.g> g = new ArrayList<>();
 
     public interface a {
-        void a(ArrayList<com.tsf.shell.f.i.B> arrayList);
+        void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList);
     }
 
     public d(DataCoordinator eVar) {
@@ -66,10 +66,10 @@ public class FolderManager implements AppListModel.a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public ArrayList<com.tsf.shell.f.i.B> a(ArrayList<ItemInfo> arrayList) {
+    public ArrayList<com.tsf.shell.f.i.PageItem> a(ArrayList<ItemInfo> arrayList) {
         System.currentTimeMillis();
         ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.app.ServiceProvider.a().d().clone();
-        ArrayList<com.tsf.shell.f.i.B> arrayList3 = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.i.PageItem> arrayList3 = new ArrayList<>();
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo instanceof LauncherShortcutAppInfo) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;

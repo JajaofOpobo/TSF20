@@ -2,7 +2,7 @@ package com.tsf.shell.f.i._c;
 
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.Home;
-import com.tsf.shell.utils.k;
+import com.tsf.shell.utils.MarketLinkHandler;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -20,7 +20,7 @@ public class g extends e {
     public int i = 0;
     public boolean j = true;
     private boolean m = true;
-    private ArrayList<com.tsf.shell.f.i.B> l = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.PageItem> l = new ArrayList<>();
 
     public boolean j() {
         return this.k;
@@ -32,7 +32,7 @@ public class g extends e {
             ArrayList arrayList = (ArrayList) this.l.clone();
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
-                com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.B) it.next());
+                com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.PageItem) it.next());
             }
             this.l.clear();
             arrayList.clear();
@@ -51,11 +51,11 @@ public class g extends e {
     public void l() {
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.l.add(bVar);
     }
 
-    public void b(com.tsf.shell.f.i.B bVar) {
+    public void b(com.tsf.shell.f.i.PageItem bVar) {
         this.l.remove(bVar);
     }
 
@@ -67,7 +67,7 @@ public class g extends e {
         return this.l.size() <= 0 || !this.f;
     }
 
-    public ArrayList<com.tsf.shell.f.i.B> o() {
+    public ArrayList<com.tsf.shell.f.i.PageItem> o() {
         return this.l;
     }
 
@@ -77,7 +77,7 @@ public class g extends e {
         ArrayList arrayList = (ArrayList) this.l.clone();
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.B) it.next());
+            com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.PageItem) it.next());
         }
         this.l.clear();
         arrayList.clear();

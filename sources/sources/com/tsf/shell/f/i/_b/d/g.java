@@ -41,7 +41,7 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     @Override // com.tsf.shell.f.e._f.b
-    public void a(com.tsf.shell.f.i.C cVar) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (cVar instanceof com.tsf.shell.f.i._b.e.b) {
             cVar.mouseEnabled(false);
             Number3d.TEMPNUMBER3D2.reset();
@@ -76,11 +76,11 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public int a(float f, float f2) {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         if (j.N.calTouchCollision(f, f2)) {
             return -3;
         }
-        j jVar2 = b.l;
+        j jVar2 = WorkspaceShortcutItem.l;
         if (j.O.calTouchCollision(f, f2)) {
             return -4;
         }
@@ -92,31 +92,31 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public static void a(boolean z) {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.N.a(z);
     }
 
     public static void b(boolean z) {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.O.a(z);
     }
 
     public void b() {
         h = true;
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.N.visible(true);
-        j jVar2 = b.l;
+        j jVar2 = WorkspaceShortcutItem.l;
         float fAlpha = j.N.alpha();
-        j jVar3 = b.l;
+        j jVar3 = WorkspaceShortcutItem.l;
         float fAlpha2 = fAlpha + ((255.0f - j.N.alpha()) * 0.2f);
-        j jVar4 = b.l;
+        j jVar4 = WorkspaceShortcutItem.l;
         j.N.alpha(fAlpha2);
-        j jVar5 = b.l;
+        j jVar5 = WorkspaceShortcutItem.l;
         if (j.N.d()) {
             this.p -= i;
             i += 0.5f;
-            if (this.p < b.l.x) {
-                this.p = b.l.x;
+            if (this.p < WorkspaceShortcutItem.l.x) {
+                this.p = WorkspaceShortcutItem.l.x;
             }
             this.k = false;
             setAnimationObjectState(true);
@@ -125,21 +125,21 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public void c() {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.N.a(false);
-        j jVar2 = b.l;
+        j jVar2 = WorkspaceShortcutItem.l;
         if (j.N.visible()) {
-            j jVar3 = b.l;
+            j jVar3 = WorkspaceShortcutItem.l;
             float fAlpha = j.N.alpha();
-            j jVar4 = b.l;
+            j jVar4 = WorkspaceShortcutItem.l;
             float fAlpha2 = fAlpha + ((0.0f - j.N.alpha()) * 0.2f);
-            j jVar5 = b.l;
+            j jVar5 = WorkspaceShortcutItem.l;
             j.N.alpha(fAlpha2);
-            j jVar6 = b.l;
+            j jVar6 = WorkspaceShortcutItem.l;
             if (Math.abs(j.N.alpha()) < 0.5f) {
-                j jVar7 = b.l;
+                j jVar7 = WorkspaceShortcutItem.l;
                 j.N.alpha(0.0f);
-                j jVar8 = b.l;
+                j jVar8 = WorkspaceShortcutItem.l;
                 j.N.visible(false);
             }
         }
@@ -150,15 +150,15 @@ public class g extends com.tsf.shell.f.e._f.b {
 
     public void e() {
         h = true;
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.O.visible(true);
-        j jVar2 = b.l;
+        j jVar2 = WorkspaceShortcutItem.l;
         float fAlpha = j.O.alpha();
-        j jVar3 = b.l;
+        j jVar3 = WorkspaceShortcutItem.l;
         float fAlpha2 = fAlpha + ((255.0f - j.O.alpha()) * 0.2f);
-        j jVar4 = b.l;
+        j jVar4 = WorkspaceShortcutItem.l;
         j.O.alpha(fAlpha2);
-        j jVar5 = b.l;
+        j jVar5 = WorkspaceShortcutItem.l;
         if (j.O.d()) {
             this.p += i;
             i += 0.5f;
@@ -172,21 +172,21 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public void f() {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         j.O.a(false);
-        j jVar2 = b.l;
+        j jVar2 = WorkspaceShortcutItem.l;
         if (j.O.visible()) {
-            j jVar3 = b.l;
+            j jVar3 = WorkspaceShortcutItem.l;
             float fAlpha = j.O.alpha();
-            j jVar4 = b.l;
+            j jVar4 = WorkspaceShortcutItem.l;
             float fAlpha2 = fAlpha + ((0.0f - j.O.alpha()) * 0.2f);
-            j jVar5 = b.l;
+            j jVar5 = WorkspaceShortcutItem.l;
             j.O.alpha(fAlpha2);
-            j jVar6 = b.l;
+            j jVar6 = WorkspaceShortcutItem.l;
             if (Math.abs(j.O.alpha()) < 0.5f) {
-                j jVar7 = b.l;
+                j jVar7 = WorkspaceShortcutItem.l;
                 j.O.alpha(0.0f);
-                j jVar8 = b.l;
+                j jVar8 = WorkspaceShortcutItem.l;
                 j.O.visible(false);
             }
         }
@@ -202,7 +202,7 @@ public class g extends com.tsf.shell.f.e._f.b {
 
     public void h() {
         this.e = false;
-        float f = this.o - b.l.x;
+        float f = this.o - WorkspaceShortcutItem.l.x;
         int iNumChildren = numChildren();
         for (int i2 = 0; i2 < iNumChildren; i2++) {
             com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) getChildAt(i2);
@@ -217,16 +217,16 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     private void p() {
-        float f = b.l.c().folder.childContainerY;
+        float f = WorkspaceShortcutItem.l.c().folder.childContainerY;
         this.p = f;
         this.o = f;
     }
 
     private void w() {
-        if (numChildren() == 0 || numChildren() <= b.l.c) {
-            this.n = b.l.x;
+        if (numChildren() == 0 || numChildren() <= WorkspaceShortcutItem.l.c) {
+            this.n = WorkspaceShortcutItem.l.x;
         } else {
-            this.n = b.l.x + (((((numChildren() - 1) / b.l.a) - b.l.b) + 1) * b.l.j);
+            this.n = WorkspaceShortcutItem.l.x + (((((numChildren() - 1) / WorkspaceShortcutItem.l.a) - WorkspaceShortcutItem.l.b) + 1) * WorkspaceShortcutItem.l.j);
         }
         this.k = false;
         setAnimationObjectState(true);
@@ -253,28 +253,28 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public int j() {
-        float f = (this.p - b.l.x) % b.l.j;
-        float fAbs = Math.abs(f) / b.l.j;
+        float f = (this.p - WorkspaceShortcutItem.l.x) % WorkspaceShortcutItem.l.j;
+        float fAbs = Math.abs(f) / WorkspaceShortcutItem.l.j;
         float f2 = this.p - f;
         if (fAbs > 0.5d) {
             if (f > 0.0f) {
-                f2 += b.l.j;
+                f2 += WorkspaceShortcutItem.l.j;
             } else {
-                f2 -= b.l.j;
+                f2 -= WorkspaceShortcutItem.l.j;
             }
         }
-        return (int) ((f2 - b.l.x) / b.l.j);
+        return (int) ((f2 - WorkspaceShortcutItem.l.x) / WorkspaceShortcutItem.l.j);
     }
 
     public void k() {
-        float f = (this.p - b.l.x) % b.l.j;
-        float fAbs = Math.abs(f) / b.l.j;
+        float f = (this.p - WorkspaceShortcutItem.l.x) % WorkspaceShortcutItem.l.j;
+        float fAbs = Math.abs(f) / WorkspaceShortcutItem.l.j;
         this.p -= f;
         if (fAbs > 0.5d) {
             if (f > 0.0f) {
-                this.p += b.l.j;
+                this.p += WorkspaceShortcutItem.l.j;
             } else {
-                this.p -= b.l.j;
+                this.p -= WorkspaceShortcutItem.l.j;
             }
         }
         this.k = false;
@@ -291,11 +291,11 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     public float l() {
-        return this.p - b.l.x;
+        return this.p - WorkspaceShortcutItem.l.x;
     }
 
     public float m() {
-        return this.o - b.l.x;
+        return this.o - WorkspaceShortcutItem.l.x;
     }
 
     @Override // com.tsf.shell.f.e._f.b
@@ -432,9 +432,9 @@ public class g extends com.tsf.shell.f.e._f.b {
                     }
                 }
                 MatrixStack.glPopMatrix();
-                j jVar = b.l;
+                j jVar = WorkspaceShortcutItem.l;
                 j.N.dispatchDraw();
-                j jVar2 = b.l;
+                j jVar2 = WorkspaceShortcutItem.l;
                 j.O.dispatchDraw();
                 onDrawEnd();
                 return;
@@ -445,14 +445,14 @@ public class g extends com.tsf.shell.f.e._f.b {
     }
 
     private void a(com.tsf.shell.f.i._b.e.b bVar, a aVar, int i2, float f, float f2) {
-        float f3 = f2 / b.l.j;
+        float f3 = f2 / WorkspaceShortcutItem.l.j;
         if (!bVar.o) {
             bVar.mouseEnabled(false);
             bVar.o = true;
             bVar.position().y += f;
-            ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = b.l.c().folder.sampleList;
+            ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = WorkspaceShortcutItem.l.c().folder.sampleList;
             int size = i2 > arrayList.size() + (-1) ? arrayList.size() - 1 : i2;
-            aVar.f = ((b.l.a - i2) - 1) * (0.5f / (b.l.a - 1));
+            aVar.f = ((WorkspaceShortcutItem.l.a - i2) - 1) * (0.5f / (WorkspaceShortcutItem.l.a - 1));
             Number3d number3d = arrayList.get(size).position;
             Number3d number3d2 = arrayList.get(size).rotation;
             Number3d number3d3 = arrayList.get(size).scale;
@@ -460,10 +460,10 @@ public class g extends com.tsf.shell.f.e._f.b {
             aVar.j = number3d.y;
             aVar.k = number3d2.z;
             aVar.l = number3d3.x;
-            float f4 = b.l.l + (b.l.i * i2);
+            float f4 = WorkspaceShortcutItem.l.l + (WorkspaceShortcutItem.l.i * i2);
             aVar.a = f4;
             aVar.m = f4;
-            float f5 = b.l.w;
+            float f5 = WorkspaceShortcutItem.l.w;
             aVar.b = f5;
             aVar.n = f5;
             aVar.c = 0.0f;
@@ -553,43 +553,43 @@ public class g extends com.tsf.shell.f.e._f.b {
                     f = j;
                 }
                 this.o = (f * (this.p - this.o)) + this.o;
-                float f2 = (b.l.r - b.l.o) - (((this.o - b.l.x) / (this.n - b.l.x)) * b.l.t);
-                b.l.I.position().y = f2;
-                if (b.l.o + f2 > b.l.r) {
-                    float f3 = (f2 + b.l.o) - b.l.r;
-                    if (f3 < b.l.o) {
-                        b.l.I.c(b.l.o - f3);
-                        b.l.I.d(b.l.o);
+                float f2 = (WorkspaceShortcutItem.l.r - WorkspaceShortcutItem.l.o) - (((this.o - WorkspaceShortcutItem.l.x) / (this.n - WorkspaceShortcutItem.l.x)) * WorkspaceShortcutItem.l.t);
+                WorkspaceShortcutItem.l.I.position().y = f2;
+                if (WorkspaceShortcutItem.l.o + f2 > WorkspaceShortcutItem.l.r) {
+                    float f3 = (f2 + WorkspaceShortcutItem.l.o) - WorkspaceShortcutItem.l.r;
+                    if (f3 < WorkspaceShortcutItem.l.o) {
+                        WorkspaceShortcutItem.l.I.c(WorkspaceShortcutItem.l.o - f3);
+                        WorkspaceShortcutItem.l.I.d(WorkspaceShortcutItem.l.o);
                     } else {
-                        b.l.I.c(0.0f);
-                        float f4 = b.l.n - f3;
-                        if (f4 < b.l.p) {
-                            f4 = b.l.p;
+                        WorkspaceShortcutItem.l.I.c(0.0f);
+                        float f4 = WorkspaceShortcutItem.l.n - f3;
+                        if (f4 < WorkspaceShortcutItem.l.p) {
+                            f4 = WorkspaceShortcutItem.l.p;
                         }
-                        b.l.I.d(f4);
-                        b.l.I.position().y = b.l.r;
+                        WorkspaceShortcutItem.l.I.d(f4);
+                        WorkspaceShortcutItem.l.I.position().y = WorkspaceShortcutItem.l.r;
                     }
-                } else if (f2 - b.l.o < b.l.s) {
-                    float f5 = b.l.s - (f2 - b.l.o);
-                    if (f5 < b.l.o) {
-                        b.l.I.d(b.l.o - f5);
-                        b.l.I.c(b.l.o);
+                } else if (f2 - WorkspaceShortcutItem.l.o < WorkspaceShortcutItem.l.s) {
+                    float f5 = WorkspaceShortcutItem.l.s - (f2 - WorkspaceShortcutItem.l.o);
+                    if (f5 < WorkspaceShortcutItem.l.o) {
+                        WorkspaceShortcutItem.l.I.d(WorkspaceShortcutItem.l.o - f5);
+                        WorkspaceShortcutItem.l.I.c(WorkspaceShortcutItem.l.o);
                     } else {
-                        b.l.I.d(0.0f);
-                        float f6 = b.l.n - f5;
-                        if (f6 < b.l.p) {
-                            f6 = b.l.p;
+                        WorkspaceShortcutItem.l.I.d(0.0f);
+                        float f6 = WorkspaceShortcutItem.l.n - f5;
+                        if (f6 < WorkspaceShortcutItem.l.p) {
+                            f6 = WorkspaceShortcutItem.l.p;
                         }
-                        b.l.I.c(f6);
-                        b.l.I.position().y = b.l.s;
+                        WorkspaceShortcutItem.l.I.c(f6);
+                        WorkspaceShortcutItem.l.I.position().y = WorkspaceShortcutItem.l.s;
                     }
                 }
-                b.l.h();
+                WorkspaceShortcutItem.l.h();
                 if (this.l) {
-                    if (this.p < b.l.x) {
-                        this.p += (b.l.x - this.p) * 0.1f;
-                        if (Math.abs(this.p - b.l.x) < 0.2f) {
-                            this.p = b.l.x;
+                    if (this.p < WorkspaceShortcutItem.l.x) {
+                        this.p += (WorkspaceShortcutItem.l.x - this.p) * 0.1f;
+                        if (Math.abs(this.p - WorkspaceShortcutItem.l.x) < 0.2f) {
+                            this.p = WorkspaceShortcutItem.l.x;
                         }
                     } else if (this.p > this.n) {
                         this.p += (this.n - this.p) * 0.1f;
@@ -600,17 +600,17 @@ public class g extends com.tsf.shell.f.e._f.b {
                         this.o = this.p;
                         this.k = true;
                         j = 0.0f;
-                        b.l.i();
+                        WorkspaceShortcutItem.l.i();
                     }
                 }
-                float f7 = this.o - b.l.x;
+                float f7 = this.o - WorkspaceShortcutItem.l.x;
                 int size = children().size();
-                int i2 = b.l.a;
+                int i2 = WorkspaceShortcutItem.l.a;
                 for (int i3 = 0; i3 < size; i3++) {
                     com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) children().get((size - 1) - i3);
                     a aVar = this.b.get((size - 1) - i3);
-                    if (aVar.h + bVar.maxY() + f7 > b.l.u) {
-                        float fMaxY = ((aVar.h + bVar.maxY()) + f7) - b.l.u;
+                    if (aVar.h + bVar.maxY() + f7 > WorkspaceShortcutItem.l.u) {
+                        float fMaxY = ((aVar.h + bVar.maxY()) + f7) - WorkspaceShortcutItem.l.u;
                         if (fMaxY >= bVar.maxY()) {
                             aVar.d = 0.0f;
                         } else {
@@ -625,7 +625,7 @@ public class g extends com.tsf.shell.f.e._f.b {
                         }
                         aVar.r = false;
                         a(bVar, aVar, i3 % i2, f7);
-                    } else if (aVar.h + f7 < b.l.v) {
+                    } else if (aVar.h + f7 < WorkspaceShortcutItem.l.v) {
                         if (aVar.r) {
                             a(bVar, aVar, i3 % i2, f7);
                             bVar.visible(true);
@@ -633,7 +633,7 @@ public class g extends com.tsf.shell.f.e._f.b {
                             bVar.scale().x = aVar.d;
                             bVar.scale().y = aVar.d;
                         } else {
-                            a(bVar, aVar, i3 % i2, f7, b.l.v - (aVar.h + f7));
+                            a(bVar, aVar, i3 % i2, f7, WorkspaceShortcutItem.l.v - (aVar.h + f7));
                         }
                     } else {
                         aVar.r = false;
@@ -651,7 +651,7 @@ public class g extends com.tsf.shell.f.e._f.b {
                 } else {
                     f();
                 }
-                if (this.o > b.l.x) {
+                if (this.o > WorkspaceShortcutItem.l.x) {
                     b();
                 } else {
                     c();
@@ -720,8 +720,8 @@ public class g extends com.tsf.shell.f.e._f.b {
     private void a(a aVar, com.censivn.C3DEngine.b.f.i iVar, int i2) {
         ThemeFolderDescription.SystemFolderChild systemFolderChild;
         int iJ = j();
-        int i3 = b.l.c;
-        ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = b.l.c().folder.sampleList;
+        int i3 = WorkspaceShortcutItem.l.c;
+        ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = WorkspaceShortcutItem.l.c().folder.sampleList;
         Number3d number3dD = this.a.d(i2);
         float f = number3dD.x;
         aVar.i = f;
@@ -741,7 +741,7 @@ public class g extends com.tsf.shell.f.e._f.b {
         aVar.e = 1.0f;
         aVar.q = true;
         com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) iVar;
-        if (i2 > (iJ * b.l.a) + (i3 - 1) && bVar.aI()) {
+        if (i2 > (iJ * WorkspaceShortcutItem.l.a) + (i3 - 1) && bVar.aI()) {
             int i4 = i2 - i3;
             if (i4 < arrayList.size()) {
                 systemFolderChild = arrayList.get(i4);
@@ -749,9 +749,9 @@ public class g extends com.tsf.shell.f.e._f.b {
                 systemFolderChild = arrayList.get(i4 % arrayList.size());
                 aVar.s = 0.0f;
             }
-            aVar.f = ((b.l.a - (i2 % b.l.a)) - 1) * (0.5f / (b.l.a - 1));
+            aVar.f = ((WorkspaceShortcutItem.l.a - (i2 % WorkspaceShortcutItem.l.a)) - 1) * (0.5f / (WorkspaceShortcutItem.l.a - 1));
             aVar.m = aVar.g;
-            aVar.n = b.l.w;
+            aVar.n = WorkspaceShortcutItem.l.w;
             aVar.o = 0.0f;
             aVar.p = 1.0f;
             float f3 = systemFolderChild.position.x;
@@ -794,7 +794,7 @@ public class g extends com.tsf.shell.f.e._f.b {
 
     private void x() {
         if (this.e) {
-            b.l.a(numChildren());
+            WorkspaceShortcutItem.l.a(numChildren());
         }
     }
 

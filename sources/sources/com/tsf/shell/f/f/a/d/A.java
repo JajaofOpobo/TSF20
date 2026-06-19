@@ -41,11 +41,11 @@ public class A {
         return this.d;
     }
 
-    private Comparator<? super com.tsf.shell.f.i.B> e() {
+    private Comparator<? super com.tsf.shell.f.i.PageItem> e() {
         return this.d.a();
     }
 
-    public int a(ArrayList<com.tsf.shell.f.i.B> arrayList, com.tsf.shell.f.i.B bVar) {
+    public int a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList, com.tsf.shell.f.i.PageItem bVar) {
         int iBinarySearch = Collections.binarySearch(arrayList, bVar, this.d.a());
         if (iBinarySearch < 0) {
             return -(iBinarySearch + 1);
@@ -57,7 +57,7 @@ public class A {
         return this.a;
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList) {
         Collections.sort(arrayList, this.e.a());
     }
 

@@ -56,9 +56,9 @@ public class d {
             }
             Color4 defaultColor = bVar.getDefaultColor();
             bVar.clearDefaultColor();
-            i.setAllFrom(bVar.position());
+            ScrollingIndicator.setAllFrom(bVar.position());
             j.setAllFrom(bVar.rotation());
-            k.setAllFrom(bVar.scale());
+            ItemPositionAnimator.setAllFrom(bVar.scale());
             l = bVar.alpha();
             boolean zVisible = bVar.visible();
             float fX = bVar.x();
@@ -79,7 +79,7 @@ public class d {
                     int size = bVar.children().size();
                     for (int i2 = 0; i2 < size; i2++) {
                         com.censivn.C3DEngine.b.f.i iVar = bVar.children().get(i2);
-                        if (!(iVar instanceof com.tsf.shell.f.i.B)) {
+                        if (!(iVar instanceof com.tsf.shell.f.i.PageItem)) {
                             iVar.dispatchDraw();
                         }
                     }
@@ -89,10 +89,10 @@ public class d {
             com.tsf.shell.manager.app.TextureCache.b();
             GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
-            bVar.position().setAllFrom(i);
+            bVar.position().setAllFrom(ScrollingIndicator);
             bVar.rotation().setAllFrom(j);
             bVar.b(fX);
-            bVar.scale().setAllFrom(k);
+            bVar.scale().setAllFrom(ItemPositionAnimator);
             bVar.setDefaultColor(defaultColor);
             bVar.alpha(l);
             bVar.visible(Boolean.valueOf(zVisible));

@@ -110,7 +110,7 @@ public class c extends d {
         }
     }
 
-    @Override // com.tsf.shell.f.i._b.e.d, com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i._b.e.d, com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         if (q.contains(this)) {
             q.remove(this);

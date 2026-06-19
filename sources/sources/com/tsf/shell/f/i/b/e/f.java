@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -36,7 +36,7 @@ public class f extends a {
     public void aV() {
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) K();
         if (launcherShortcut3DInfo.packagename != null) {
-            com.tsf.shell.utils.a.a(com.censivn.C3DEngine.A.d(), launcherShortcut3DInfo.packagename);
+            com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.A.d(), launcherShortcut3DInfo.packagename);
         }
     }
 
@@ -62,12 +62,12 @@ public class f extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         super.g();
     }
 
-    @Override // com.tsf.shell.f.i.C
+    @Override // com.tsf.shell.f.i.ShortcutItem
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(0);
         arrayList.add(1);

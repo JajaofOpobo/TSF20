@@ -12,7 +12,7 @@ import android.view.ViewParent;
 import android.widget.FrameLayout;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
-import com.tsf.shell.utils.m;
+import com.tsf.shell.utils.FlurryAnalyticsLogger;
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
 

@@ -11,7 +11,7 @@ import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 import com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane;
 import com.tsf.shell.theme.inside.parser.ThemeParser;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 import java.util.Iterator;
 

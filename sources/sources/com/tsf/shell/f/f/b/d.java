@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.b;
 
 import com.tsf.b;
-import com.tsf.shell.f.f.j;
+import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.f.f.i {
@@ -10,7 +10,7 @@ public class d extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void b(com.tsf.shell.f.f.g gVar, float f) {
+    public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.position().x = 0.0f;
         gVar.rotation().y = 0.0f;
         j.a aVarJ = gVar.j();
@@ -34,6 +34,6 @@ public class d extends com.tsf.shell.f.f.i {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void a(com.tsf.shell.f.f.g gVar, float f) {
+    public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
     }
 }

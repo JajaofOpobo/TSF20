@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

@@ -29,7 +29,7 @@ public class d extends a {
         this.k.visible(true);
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         super.g();
     }
@@ -38,7 +38,7 @@ public class d extends a {
         return null;
     }
 
-    @Override // com.tsf.shell.f.i.C
+    @Override // com.tsf.shell.f.i.ShortcutItem
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(1);
         if (rotation().z != 0.0f) {

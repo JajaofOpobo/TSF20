@@ -136,7 +136,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.j = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.manager.m.SideMenuManager.3
             @Override // com.tsf.shell.f.i.A
-            public void a(com.tsf.shell.f.i.B bVar) {
+            public void a(com.tsf.shell.f.i.PageItem bVar) {
             }
         };
         this.h = new h();
@@ -203,7 +203,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         if (!this.l) {
             z = false;
         } else if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
-            Iterator<com.tsf.shell.f.i.C> it = ((com.tsf.shell.f.i.b.e.b) iVar).av().iterator();
+            Iterator<com.tsf.shell.f.i.ShortcutItem> it = ((com.tsf.shell.f.i.b.e.b) iVar).av().iterator();
             while (it.hasNext()) {
                 if (!(it.next() instanceof com.tsf.shell.f.i.b.e.b)) {
                     z = true;
@@ -262,7 +262,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         return this.e.children();
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, boolean z) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, boolean z) {
         bVar.a(this.j);
         if (z) {
             bVar.K().onUpdateContainer(-5);
@@ -392,10 +392,10 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     }
 
     public void a(ArrayList<ItemInfo> arrayList, String str) {
-        Iterator<ItemInfo> it = com.tsf.shell.utils.h.a(arrayList, str, ",", true).iterator();
+        Iterator<ItemInfo> it = com.tsf.shell.utils.ItemInfoListSorter.a(arrayList, str, ",", true).iterator();
         while (it.hasNext()) {
             com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.ShortcutManager.a(it.next(), true);
-            a((com.tsf.shell.f.i.B) bVarA, false);
+            a((com.tsf.shell.f.i.PageItem) bVarA, false);
             this.e.addChild(bVarA);
         }
         this.e.a();
@@ -431,7 +431,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 b.this.s = false;
                 final String str = "";
                 for (i iVar : b.this.e.children()) {
-                    str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
+                    str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.SideMenuManager.2.1
                     @Override // java.lang.Runnable

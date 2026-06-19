@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -14,7 +14,7 @@ public class f extends i {
     private com.censivn.C3DEngine.b.f.m h;
     private float i;
 
-    public f(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
+    public f(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, b.d.drawer_hide, x.c(b.i.text_hide));
         float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
         this.i = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
@@ -45,7 +45,7 @@ public class f extends i {
 
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void b(com.censivn.C3DEngine.b.f.i iVar) {
-                com.tsf.shell.f.i.C cVar = iVar instanceof com.tsf.shell.f.i.C ? (com.tsf.shell.f.i.C) iVar : null;
+                com.tsf.shell.f.i.ShortcutItem cVar = iVar instanceof com.tsf.shell.f.i.ShortcutItem ? (com.tsf.shell.f.i.ShortcutItem) iVar : null;
                 if (cVar != null && cVar.K() != null) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
                     launcherShortcutAppInfo.isHide = false;
@@ -72,32 +72,32 @@ public class f extends i {
         this.h.a();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
-        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
+    public void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList) {
+        Iterator<com.tsf.shell.f.i.PageItem> it = arrayList.iterator();
         while (it.hasNext()) {
             this.g.d(it.next());
         }
     }
 
     @Override // com.tsf.shell.f.f.a._c.i
-    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.b.b().c(cVar, motionEvent);
     }
 
     @Override // com.tsf.shell.f.f.a._c.i
-    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.b.b().d(cVar, motionEvent);
     }
 
     @Override // com.tsf.shell.f.f.a._c.i
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
         this.b.b().a(cVar, motionEvent, motionEvent2);
     }
 
     @Override // com.tsf.shell.f.f.a._c.i
-    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
-            this.a.c((com.tsf.shell.f.i.B) cVar);
+            this.a.c((com.tsf.shell.f.i.PageItem) cVar);
             this.g.d(cVar);
             if (cVar.K() != null) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();

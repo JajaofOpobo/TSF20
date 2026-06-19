@@ -17,7 +17,7 @@ public class c extends d {
         float fMinX;
         int iB = b(f5, f6);
         if (iB == 0) {
-            com.tsf.shell.f.c.a.b.a aVarA = a(f5, f, f2, f3, i);
+            com.tsf.shell.f.c.a.b.DrawerMenuParams aVarA = a(f5, f, f2, f3, i);
             if (aVarA.a == -1 || aVarA.a == -2) {
                 a(arrayList, arrayList2, i, f, f2, f3, f4);
             } else {

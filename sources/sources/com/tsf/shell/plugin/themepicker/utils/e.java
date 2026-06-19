@@ -27,7 +27,7 @@ public class e extends f {
         return a(this.d, i, this.a, this.b, f());
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected Bitmap a(Object obj) {
         return b(Integer.parseInt(String.valueOf(obj)));
     }

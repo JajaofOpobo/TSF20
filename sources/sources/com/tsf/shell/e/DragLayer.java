@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
 import com.tsf.shell.e.CellLayout;
-import com.tsf.shell.utils.g;
+import com.tsf.shell.utils.StatusBarHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DragLayer extends FrameLayout {
@@ -142,7 +142,7 @@ public class DragLayer extends FrameLayout {
                 bVar.b = i4;
                 itemInfoK.cellYH = i4;
             }
-            final com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
+            final com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
             final com.tsf.shell.f.i.b.b.a aVar = this.d;
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.DragLayer.3
                 @Override // java.lang.Runnable

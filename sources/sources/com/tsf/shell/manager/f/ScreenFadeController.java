@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

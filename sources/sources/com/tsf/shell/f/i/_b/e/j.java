@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.manager.action.ActionManager;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends b {
@@ -61,11 +61,11 @@ public class j extends b {
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void j() {
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
     }
 
@@ -162,7 +162,7 @@ public class j extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i._b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         this.b.textures().clear();
         super.g();

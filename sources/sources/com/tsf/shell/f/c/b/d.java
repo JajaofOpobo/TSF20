@@ -29,7 +29,7 @@ public class d extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     }
 
     @Override // com.tsf.shell.f.e.f.b
-    public void a(final com.tsf.shell.f.i.C cVar) {
+    public void a(final com.tsf.shell.f.i.ShortcutItem cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.b.d.1
             @Override // java.lang.Runnable
             public void run() {

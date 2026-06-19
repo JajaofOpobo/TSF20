@@ -8,17 +8,17 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.a.C0133a;
 
-import com.tsf.shell.utils.r;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.DimensionHelper;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a implements b.a, e.a {
     private TextureElement b;
     private j c;
-    private com.tsf.shell.f.i.B d;
+    private com.tsf.shell.f.i.PageItem d;
     private float g;
     private float h;
     private int i;
@@ -176,7 +176,7 @@ public class a implements b.a, e.a {
         return true;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.d = bVar;
         float fU = this.d.u();
         this.g = (this.d.maxX() - this.d.minX()) * fU;
@@ -189,7 +189,7 @@ public class a implements b.a, e.a {
         this.j = this.j >= 1 ? this.j : 1;
     }
 
-    public void b(com.tsf.shell.f.i.B bVar) {
+    public void b(com.tsf.shell.f.i.PageItem bVar) {
         this.d = null;
     }
 

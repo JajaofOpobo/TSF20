@@ -3,7 +3,7 @@ package com.tsf.shell.manager.r.b.c;
 import android.appwidget.AppWidgetManager;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -43,7 +43,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
 
             @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
             public void b() {
-                if (com.tsf.shell.utils.g.b) {
+                if (com.tsf.shell.utils.StatusBarHelper.b) {
                     WidgetPanelToggle.this.a(WidgetPanelToggle.this.d, true);
                     WidgetPanelToggle.this.a.a();
                 } else {
@@ -126,7 +126,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
                 }
 
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
-                public void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.c.g gVar) {
+                public void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.c.g gVar) {
                     bVar.scale().setAll(0.0f, 0.0f, 1.0f);
                     com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                     dVar.l(1.0f);

@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import com.tsf.shell.Home;
 import com.tsf.shell.activity.PhotoSelectorActivity;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {

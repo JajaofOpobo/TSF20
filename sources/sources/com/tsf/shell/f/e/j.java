@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends com.censivn.C3DEngine.b.f.j {
@@ -162,9 +162,9 @@ public class j extends com.censivn.C3DEngine.b.f.j {
             if (r0 == 0) goto L40
             java.lang.Object r0 = r4.next()
             com.censivn.C3DEngine.b.f.i r0 = (com.censivn.C3DEngine.b.f.i) r0
-            boolean r3 = r0 instanceof com.tsf.shell.f.f.g
+            boolean r3 = r0 instanceof com.tsf.shell.f.f.WorkspacePage
             if (r3 == 0) goto L51
-            com.tsf.shell.f.f.g r0 = (com.tsf.shell.f.f.g) r0
+            com.tsf.shell.f.f.WorkspacePage r0 = (com.tsf.shell.f.f.WorkspacePage) r0
             float r3 = r0.g
             float r3 = java.lang.Math.abs(r3)
             int r5 = (r3 > r2 ? 1 : (r3 == r2 ? 0 : -1))

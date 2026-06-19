@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.C;
 import com.tsf.shell.e.DragLayer;
-import com.tsf.shell.utils.g;
+import com.tsf.shell.utils.StatusBarHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PrimeActivity extends Activity {

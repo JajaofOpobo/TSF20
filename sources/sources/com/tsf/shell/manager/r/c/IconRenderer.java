@@ -15,8 +15,8 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.p;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.ColorMatrixImageFilter;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 import java.io.IOException;
 import java.io.InputStream;
 

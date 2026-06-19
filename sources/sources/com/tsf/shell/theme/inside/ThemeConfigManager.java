@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside;
 import android.content.SharedPreferences;
 import com.censivn.C3DEngine.A;
 import com.tsf.b;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeConfigManager {

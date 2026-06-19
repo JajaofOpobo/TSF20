@@ -24,8 +24,8 @@ import com.tsf.b;
 import com.tsf.shell.f._d.c.a.d;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -34,7 +34,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
     private static HashMap<Integer, C0094a> a;
     private static ArrayList<Integer> p = new ArrayList<>();
     private ArrayList<c> b;
-    private com.tsf.shell.f.i.C f;
+    private com.tsf.shell.f.i.ShortcutItem f;
     private com.tsf.shell.f.e._f.b g;
     private com.tsf.shell.f.i._b.e.a j;
     private c m;
@@ -270,7 +270,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, i iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, i iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
         if (!this.h) {
             this.e.position().reset();
             p.clear();
@@ -323,7 +323,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         com.tsf.shell.manager.app.DataCoordinator.a(this.k);
     }
 
-    public void a(final com.tsf.shell.f.i.C cVar) {
+    public void a(final com.tsf.shell.f.i.ShortcutItem cVar) {
         if (!this.r && this.q != null) {
             this.r = true;
             this.q.a();
@@ -345,7 +345,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (this.q != null) {
             a(cVar);
             return;
@@ -394,9 +394,9 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
     }
 
     private j.a i() {
-        j.a aVarC = com.tsf.shell.f.f.j.c(this);
+        j.a aVarC = com.tsf.shell.f.f.PageAnimationState.c(this);
         aVarC.a = this;
-        com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.j.c(), aVarC.b);
+        com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.PageAnimationState.c(), aVarC.b);
         com.tsf.shell.manager.app.DataCoordinator.dispatchDraw();
         this.o.dispatchDraw();
         com.tsf.shell.manager.app.TextureCache.b();
@@ -502,7 +502,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
     }
 
     static class b {
-        public static void a(final com.tsf.shell.f.i.B bVar) {
+        public static void a(final com.tsf.shell.f.i.PageItem bVar) {
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e._f.a.b.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -512,7 +512,7 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public static void c(final com.tsf.shell.f.i.B bVar) {
+        public static void c(final com.tsf.shell.f.i.PageItem bVar) {
             ItemInfo itemInfoK = bVar.K();
             Context contextD = com.censivn.C3DEngine.A.d();
             View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
@@ -527,8 +527,8 @@ public class a implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e.
                     String string = editText.getText().toString();
                     if (bVar instanceof com.tsf.shell.f.i._b.e.a) {
                         ((com.tsf.shell.f.i._b.e.a) bVar).a(string);
-                    } else if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
-                        ((com.tsf.shell.f.i._b.d.b) bVar).a(string);
+                    } else if (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
+                        ((com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) bVar).a(string);
                     }
                 }
             });

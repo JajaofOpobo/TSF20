@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -13,11 +13,11 @@ public class c extends i {
     private b g;
     private com.tsf.shell.f.f.a.c._a h;
     private a i;
-    private com.tsf.shell.f.i.B j;
+    private com.tsf.shell.f.i.PageItem j;
     private com.tsf.shell.f.e.e.a k;
-    private com.tsf.shell.f.i.C l;
-    private com.tsf.shell.f.i.B m;
-    private com.tsf.shell.f.i.B n;
+    private com.tsf.shell.f.i.ShortcutItem l;
+    private com.tsf.shell.f.i.PageItem m;
+    private com.tsf.shell.f.i.PageItem n;
     private boolean o;
     private boolean p;
     private float q;
@@ -74,10 +74,10 @@ public class c extends i {
         }
     }
 
-    public c(final com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
+    public c(final com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, com.tsf.b.d.drawer_multiple_choice, x.c(com.tsf.b.i.text_multi_choice));
-        this.m = new com.tsf.shell.f.i.B(null);
-        this.n = new com.tsf.shell.f.i.B(null);
+        this.m = new com.tsf.shell.f.i.PageItem(null);
+        this.n = new com.tsf.shell.f.i.PageItem(null);
         this.o = false;
         this.p = false;
         this.s = new Number3d();
@@ -101,7 +101,7 @@ public class c extends i {
 
             @Override // com.tsf.shell.f.e.e.a
             public float a() {
-                return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.h.F);
+                return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.FolderPage.F);
             }
         };
         addChild(this.g);
@@ -176,14 +176,14 @@ public class c extends i {
         r();
     }
 
-    public void a(com.censivn.C3DEngine.b.f.j jVar, com.tsf.shell.f.i.B bVar, int i, float f, float f2) {
+    public void a(com.censivn.C3DEngine.b.f.j jVar, com.tsf.shell.f.i.PageItem bVar, int i, float f, float f2) {
         float fB;
         float f3;
         int i2;
         int i3;
-        com.tsf.shell.f.i.B bVar2 = null;
+        com.tsf.shell.f.i.PageItem bVar2 = null;
         if (i > -1 && i < jVar.numChildren()) {
-            com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) jVar.getChildAt(i);
+            com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) jVar.getChildAt(i);
             if (bVar3 == this.m) {
                 bVar3 = null;
             }
@@ -205,8 +205,8 @@ public class c extends i {
                     return;
                 }
             } else {
-                Number3d number3d = com.tsf.shell.f.f.a.h.E.get(childIndexOf);
-                Number3d number3d2 = com.tsf.shell.f.f.a.h.E.get(i);
+                Number3d number3d = com.tsf.shell.f.f.a.FolderPage.E.get(childIndexOf);
+                Number3d number3d2 = com.tsf.shell.f.f.a.FolderPage.E.get(i);
                 float fB2 = x.b(number3d.x, number3d.y, number3d2.x, number3d2.y) + (20.0f * com.censivn.C3DEngine.b.b.A.c);
                 fB = x.b(f, f2, number3d.x, number3d.y);
                 f3 = fB2;
@@ -255,11 +255,11 @@ public class c extends i {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.i.B bVar) {
-        a(bVar, (com.tsf.shell.f.i.B) null);
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
+        a(bVar, (com.tsf.shell.f.i.PageItem) null);
     }
 
-    private void a(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
+    private void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
         if (bVar2 != this.j) {
             if (this.j instanceof com.tsf.shell.f.i.b.e.b) {
                 ((com.tsf.shell.f.i.b.e.b) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
@@ -274,7 +274,7 @@ public class c extends i {
         this.u = aVar;
     }
 
-    public com.tsf.shell.f.i.C c() {
+    public com.tsf.shell.f.i.ShortcutItem c() {
         return this.l;
     }
 
@@ -283,19 +283,19 @@ public class c extends i {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.p = false;
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.u != null) {
             this.u.f(motionEvent);
         }
         this.u = null;
     }
 
-    public void a(com.tsf.shell.f.i.C cVar) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         ((com.tsf.shell.f.i.a.c) cVar.getMouseEventListener()).a(this.q, this.r);
     }
 
@@ -305,7 +305,7 @@ public class c extends i {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.w = false;
         this.k.b();
         this.l = cVar;
@@ -320,7 +320,7 @@ public class c extends i {
             this.v = jVar.getChildIndexOf(cVar);
             jVar.replaceChild(cVar, this.m);
             com.tsf.shell.manager.app.TaskScheduler.a(cVar);
-            this.a.c((com.tsf.shell.f.i.B) cVar);
+            this.a.c((com.tsf.shell.f.i.PageItem) cVar);
             cVar.setAnimationObjectState(true);
             Number3d.TEMPNUMBER3D.reset();
             Number3d.TEMPNUMBER3D.setAll(1.0f, 1.0f, 1.0f);
@@ -337,7 +337,7 @@ public class c extends i {
             } else {
                 x.a(motionEvent, this.t);
             }
-            this.a.a((com.tsf.shell.f.i.B) cVar, true, this.t[0], this.t[1]);
+            this.a.a((com.tsf.shell.f.i.PageItem) cVar, true, this.t[0], this.t[1]);
             return;
         }
         this.x = null;
@@ -345,8 +345,8 @@ public class c extends i {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
-        ArrayList<com.tsf.shell.f.i.C> arrayList;
+    public void d(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
+        ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList;
         this.k.c();
         if (this.u != null) {
             this.u.d(motionEvent);
@@ -399,7 +399,7 @@ public class c extends i {
                     arrayList = new ArrayList<>();
                 }
                 arrayList.add(cVar);
-                for (com.tsf.shell.f.i.C cVar2 : arrayList) {
+                for (com.tsf.shell.f.i.ShortcutItem cVar2 : arrayList) {
                     this.s.reset();
                     this.s.setAllFrom(cVar2.position());
                     jVar.globalToLocal(this.s);
@@ -413,7 +413,7 @@ public class c extends i {
                 cVar.setAnimationObjectState(true);
                 this.m.parent(null);
                 this.a.a(cVar, aVar, childIndexOf);
-                for (com.tsf.shell.f.i.C cVar3 : arrayList) {
+                for (com.tsf.shell.f.i.ShortcutItem cVar3 : arrayList) {
                     jVar.addChildAt(cVar3, childIndexOf + 1);
                     this.a.a(cVar3, aVar, childIndexOf + 1);
                     cVar3.setAnimationObjectState(true);
@@ -441,7 +441,7 @@ public class c extends i {
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar) {
         int iE;
         this.o = false;
         if (cVar.n() != null) {
@@ -450,7 +450,7 @@ public class c extends i {
         if (this.x == null) {
             this.x = this.a.ap();
         }
-        ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList();
+        ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList();
         if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
             com.tsf.shell.f.i.b.d.b bVar = (com.tsf.shell.f.i.b.d.b) cVar;
             if (bVar.L()) {
@@ -494,7 +494,7 @@ public class c extends i {
             arrayList = arrayListAw;
         }
         com.tsf.shell.manager.app.TaskScheduler.b(cVar);
-        for (com.tsf.shell.f.i.B bVar2 : arrayList) {
+        for (com.tsf.shell.f.i.PageItem bVar2 : arrayList) {
             this.s.reset();
             this.s.setAllFrom(bVar2.position());
             this.x.globalToLocal(this.s);
@@ -502,9 +502,9 @@ public class c extends i {
         }
         com.censivn.C3DEngine.b.f.j jVar2 = (com.censivn.C3DEngine.b.f.j) this.m.parent();
         if (jVar2 != null && (jVar2 instanceof com.tsf.shell.f.f.a.A)) {
-            iE = (((com.tsf.shell.f.f.a.A) jVar2).e() * com.tsf.shell.f.f.a.h.m) + this.v;
+            iE = (((com.tsf.shell.f.f.a.A) jVar2).e() * com.tsf.shell.f.f.a.FolderPage.m) + this.v;
         } else {
-            iE = this.a.ap().e() * com.tsf.shell.f.f.a.h.m;
+            iE = this.a.ap().e() * com.tsf.shell.f.f.a.FolderPage.m;
         }
         this.m.removeFromParent();
         Iterator it2 = arrayList.iterator();
@@ -513,8 +513,8 @@ public class c extends i {
             if (!it2.hasNext()) {
                 break;
             }
-            com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) it2.next();
-            int i3 = i2 % com.tsf.shell.f.f.a.h.m;
+            com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) it2.next();
+            int i3 = i2 % com.tsf.shell.f.f.a.FolderPage.m;
             com.tsf.shell.f.f.a.A aVarE = this.a.e(i2);
             aVarE.addChildAt(bVar3, i3);
             this.a.a(bVar3, aVarE, i3);
@@ -526,7 +526,7 @@ public class c extends i {
             com.censivn.C3DEngine.b.g.c.a(bVar3, 250, dVar);
             iE = i2 + 1;
         }
-        a((com.tsf.shell.f.i.B) cVar);
+        a((com.tsf.shell.f.i.PageItem) cVar);
         r();
         if (!this.w) {
             this.a.ao().e();
@@ -534,7 +534,7 @@ public class c extends i {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void a(final com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, final MotionEvent motionEvent2) {
+    public void a(final com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, final MotionEvent motionEvent2) {
         if (this.u != null) {
             this.u.a(motionEvent, motionEvent2);
             return;
@@ -564,7 +564,7 @@ public class c extends i {
                             com.tsf.shell.f.e.F fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
                             if (fVarA != null) {
                                 cVar.f(fVarA);
-                                c.this.a((com.tsf.shell.f.i.B) cVar);
+                                c.this.a((com.tsf.shell.f.i.PageItem) cVar);
                                 c.this.q();
                                 return;
                             }
@@ -575,7 +575,7 @@ public class c extends i {
                             c.this.z.y = fArrB[1];
                             if (fArrB[1] >= com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.f.a.f.a) {
                                 c.this.a.ap().globalToLocal(c.this.z);
-                                c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.h.v), c.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.h.v)), c.this.z.x, c.this.z.y);
+                                c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v), c.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v)), c.this.z.x, c.this.z.y);
                             }
                         }
                     }
@@ -585,18 +585,18 @@ public class c extends i {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.u != null) {
             this.u.a(motionEvent, motionEvent2, f, f2);
         }
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
     @Override // com.tsf.shell.f.f.a.c.i
-    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.g.a(cVar, motionEvent);
     }
 }

@@ -12,7 +12,7 @@ import com.tsf.shell.f.e.H;
 import com.tsf.shell.f.e.m;
 import com.tsf.shell.f.e.n;
 import com.tsf.shell.manager.n.ToastOverlayController;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -27,7 +27,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
     private String d;
     private boolean f;
     private C0133a g;
-    private ArrayList<com.tsf.shell.f.i.B> h;
+    private ArrayList<com.tsf.shell.f.i.PageItem> h;
     private boolean i = false;
     private boolean j = false;
 
@@ -92,7 +92,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                     com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
+                            com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
                             MultiSelectLinePicker.this.a.removeFromParent();
                             gVarN.a(MultiSelectLinePicker.this.a);
                             MultiSelectLinePicker.this.a.position().x = fArrA[0];
@@ -161,7 +161,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e.h.PhotoPicker
     public void a(m mVar) {
         if (this.h == null) {
             this.h = new ArrayList<>();
@@ -171,30 +171,30 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             if (bVar.ao()) {
                 bVar.ar();
             }
-            com.tsf.shell.f.i.B bVar2 = (com.tsf.shell.f.i.B) mVar;
+            com.tsf.shell.f.i.PageItem bVar2 = (com.tsf.shell.f.i.PageItem) mVar;
             this.i = true;
             bVar2.setDefaultColor(h.a);
             this.h.add(bVar2);
             return;
         }
         if (mVar instanceof com.tsf.shell.f.i.b.d.b) {
-            com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) mVar;
+            com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) mVar;
             this.i = true;
             bVar3.setDefaultColor(h.a);
             this.h.add(bVar3);
         }
     }
 
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e.h.PhotoPicker
     public void f() {
-        Iterator<com.tsf.shell.f.i.B> it = this.h.iterator();
+        Iterator<com.tsf.shell.f.i.PageItem> it = this.h.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
         this.h.clear();
     }
 
-    @Override // com.tsf.shell.f.e.h.a
+    @Override // com.tsf.shell.f.e.h.PhotoPicker
     public n l_() {
         return new n(this.a, this);
     }
@@ -202,14 +202,14 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
     @Override // com.tsf.shell.f.e.n.a
     public void a(int i) {
         int i2 = 1;
-        ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList<>();
-        for (com.tsf.shell.f.i.B bVar : this.h) {
+        ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList<>();
+        for (com.tsf.shell.f.i.PageItem bVar : this.h) {
             if (!bVar.hasDestroyed()) {
                 arrayList.add(bVar);
             }
         }
         this.h.clear();
-        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
+        Iterator<com.tsf.shell.f.i.PageItem> it = arrayList.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
@@ -237,7 +237,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
                                 while (it2.hasNext()) {
-                                    g.a((com.tsf.shell.f.i.B) it2.next(), (Runnable) null);
+                                    g.a((com.tsf.shell.f.i.PageItem) it2.next(), (Runnable) null);
                                 }
                             }
                         });
@@ -246,7 +246,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 break;
             case 3:
                 final ArrayList arrayList3 = new ArrayList();
-                for (com.tsf.shell.f.i.B bVar2 : arrayList) {
+                for (com.tsf.shell.f.i.PageItem bVar2 : arrayList) {
                     if (bVar2 instanceof com.tsf.shell.f.i.b.e.b) {
                         arrayList3.add((com.tsf.shell.f.i.b.e.b) bVar2);
                     }
@@ -277,9 +277,9 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 }
                 break;
             case 4:
-                for (com.tsf.shell.f.i.B bVar4 : arrayList) {
-                    if (bVar4 instanceof com.tsf.shell.f.i.C) {
-                        ((com.tsf.shell.f.i.C) bVar4).ap();
+                for (com.tsf.shell.f.i.PageItem bVar4 : arrayList) {
+                    if (bVar4 instanceof com.tsf.shell.f.i.ShortcutItem) {
+                        ((com.tsf.shell.f.i.ShortcutItem) bVar4).ap();
                     }
                 }
                 break;

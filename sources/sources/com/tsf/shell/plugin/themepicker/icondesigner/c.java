@@ -49,7 +49,7 @@ public class c {
     }
 
     public static void a(final Context context, final a aVar) {
-        com.tsf.shell.plugin.themepicker.utils.a.c.execute(new Runnable() { // from class: com.tsf.shell.plugin.themepicker.icondesigner.c.1
+        com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c.execute(new Runnable() { // from class: com.tsf.shell.plugin.themepicker.icondesigner.c.1
             @Override // java.lang.Runnable
             public void run() {
                 long jCurrentTimeMillis = System.currentTimeMillis();

@@ -21,7 +21,7 @@ public class d {
             if (b(c0152a, textView)) {
                 a aVar = new a(c0152a, textView);
                 textView.setTag(aVar);
-                aVar.a(com.tsf.shell.plugin.themepicker.utils.a.c, new Void[0]);
+                aVar.a(com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c, new Void[0]);
             }
         }
     }
@@ -47,7 +47,7 @@ public class d {
         return null;
     }
 
-    private class a extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, Typeface> {
+    private class a extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Void, Void, Typeface> {
         private com.tsf.shell.plugin.fontspicker.a.C0152a e;
         private final WeakReference<TextView> f;
 
@@ -57,7 +57,7 @@ public class d {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public Typeface a(Void... voidArr) {
             try {
                 Thread.sleep(10L);
@@ -68,7 +68,7 @@ public class d {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void a(Typeface typeface) {
             if (c()) {
                 typeface = null;

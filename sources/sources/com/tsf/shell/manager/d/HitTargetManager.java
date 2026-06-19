@@ -2,7 +2,7 @@ package com.tsf.shell.manager.d;
 
 import android.view.MotionEvent;
 import com.tsf.shell.f.e.F;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

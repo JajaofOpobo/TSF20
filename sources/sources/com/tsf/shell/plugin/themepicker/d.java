@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.tsf.shell.plugin.themepicker.utils.f {
+public class d extends com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter {
     private Context a;
     private Context b;
     private Resources e;
@@ -133,7 +133,7 @@ public class d extends com.tsf.shell.plugin.themepicker.utils.f {
         }
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected Bitmap a(Object obj) {
         if (obj instanceof Integer) {
             return a((Integer) obj);

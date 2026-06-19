@@ -170,7 +170,7 @@ public class WidgetRegistryManager {
         this.a.c.a(arrayList2);
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         a(bVar, true);
     }
 
@@ -191,7 +191,7 @@ public class WidgetRegistryManager {
         }
     }
 
-    public void b(final com.tsf.shell.f.i.B bVar) {
+    public void b(final com.tsf.shell.f.i.PageItem bVar) {
         z.a(6, new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.3
             @Override // java.lang.Runnable
             public void run() {
@@ -210,7 +210,7 @@ public class WidgetRegistryManager {
         });
     }
 
-    public void a(final com.tsf.shell.f.i.B bVar, final boolean z) {
+    public void a(final com.tsf.shell.f.i.PageItem bVar, final boolean z) {
         com.tsf.shell.f.i.c.g gVarA;
         if (com.censivn.C3DEngine.a.e.l()) {
             ItemInfo itemInfoK = bVar.K();
@@ -235,13 +235,13 @@ public class WidgetRegistryManager {
         });
     }
 
-    public void c(com.tsf.shell.f.i.B bVar) {
+    public void c(com.tsf.shell.f.i.PageItem bVar) {
         bVar.g();
         bVar.destroy();
     }
 
-    public void d(com.tsf.shell.f.i.B bVar) {
-        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
+    public void d(com.tsf.shell.f.i.PageItem bVar) {
+        com.tsf.shell.f.f.WorkspacePage gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
         if (gVarD.ad()) {
@@ -361,10 +361,10 @@ public class WidgetRegistryManager {
                         try {
                             String packageName = fVar.b.getPackageName();
                             f.a(gVarA, com.censivn.C3DEngine.A.d().createPackageContext(packageName, 3), fVar.e, packageName, fVar.b.getClassName(), fVar);
-                            ArrayList<com.tsf.shell.f.i.B> arrayList2 = (ArrayList) gVarA.o().clone();
+                            ArrayList<com.tsf.shell.f.i.PageItem> arrayList2 = (ArrayList) gVarA.o().clone();
                             gVarA.m();
                             com.tsf.shell.b.a.a("WidgetManager", "onWidgetUpdate delete old item size:" + arrayList2.size());
-                            for (com.tsf.shell.f.i.B bVar : arrayList2) {
+                            for (com.tsf.shell.f.i.PageItem bVar : arrayList2) {
                                 com.tsf.shell.b.a.a("WidgetManager", "onWidgetUpdate delete old item:" + arrayList2);
                                 ItemInfo itemInfoK = bVar.K();
                                 WidgetRegistryManager.this.c(bVar);

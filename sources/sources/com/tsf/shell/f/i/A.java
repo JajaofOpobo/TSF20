@@ -3,12 +3,12 @@ package com.tsf.shell.f.i;
 import android.view.KeyEvent;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class A implements com.censivn.C3DEngine.b.c.b.a {
-    private com.tsf.shell.f.i.a.a a;
+    private com.tsf.shell.f.i.a.WallpaperTouchHandler a;
     protected InterfaceC0113a d;
     public Object e;
     protected boolean c = false;

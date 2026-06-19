@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class b {
     private ArrayList<a> a = new ArrayList<>();
 
-    public TextureElement a(com.tsf.shell.f.i._b.c.a aVar) {
+    public TextureElement a(com.tsf.shell.f.i._b.c.WidgetPageItem aVar) {
         if (aVar.b == null) {
             return null;
         }
@@ -25,7 +25,7 @@ public class b {
         return c(aVar);
     }
 
-    private TextureElement c(com.tsf.shell.f.i._b.c.a aVar) throws Throwable {
+    private TextureElement c(com.tsf.shell.f.i._b.c.WidgetPageItem aVar) throws Throwable {
         Bitmap bitmapA = a(aVar.b.a, aVar.b.b);
         if (bitmapA == null) {
             return null;
@@ -87,7 +87,7 @@ public class b {
         return bitmapCopy;
     }
 
-    public void b(com.tsf.shell.f.i._b.c.a aVar) {
+    public void b(com.tsf.shell.f.i._b.c.WidgetPageItem aVar) {
         for (a aVar2 : this.a) {
             if (aVar2.a.id == aVar.a) {
                 aVar2.a(aVar);
@@ -103,7 +103,7 @@ public class b {
 
     class a {
         public TextureElement a;
-        public ArrayList<com.tsf.shell.f.i._b.c.a> b = new ArrayList<>();
+        public ArrayList<com.tsf.shell.f.i._b.c.WidgetPageItem> b = new ArrayList<>();
         public String c;
 
         public a(TextureElement textureElement, String str) {
@@ -117,11 +117,11 @@ public class b {
             this.b = null;
         }
 
-        public void a(com.tsf.shell.f.i._b.c.a aVar) {
+        public void a(com.tsf.shell.f.i._b.c.WidgetPageItem aVar) {
             this.b.remove(aVar);
         }
 
-        public void b(com.tsf.shell.f.i._b.c.a aVar) {
+        public void b(com.tsf.shell.f.i._b.c.WidgetPageItem aVar) {
             this.b.add(aVar);
         }
 

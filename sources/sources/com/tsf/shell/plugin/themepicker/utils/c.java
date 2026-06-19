@@ -12,7 +12,7 @@ import android.os.StatFs;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.o;
 import com.flurry.android.Constants;
-import com.tsf.shell.plugin.themepicker.utils.b;
+import com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -27,7 +27,7 @@ import java.util.Set;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {
     private static final Bitmap.CompressFormat a = Bitmap.CompressFormat.JPEG;
-    private com.tsf.shell.plugin.themepicker.utils.b b;
+    private com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver b;
     private android.support.v4.d.f<String, BitmapDrawable> c;
     private a d;
     private final Object e = new Object();
@@ -56,7 +56,7 @@ public class c {
             if (h.c()) {
                 this.g = Collections.synchronizedSet(new HashSet());
             }
-            this.c = new android.support.v4.d.f<String, BitmapDrawable>(this.d.a) { // from class: com.tsf.shell.plugin.themepicker.utils.c.1
+            this.c = new android.support.v4.d.f<String, BitmapDrawable>(this.d.a) { // from class: com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.support.v4.d.f
                 public void a(boolean z, String str, BitmapDrawable bitmapDrawable, BitmapDrawable bitmapDrawable2) {
@@ -94,15 +94,15 @@ public class c {
             r6 = this;
             java.lang.Object r1 = r6.e
             monitor-enter(r1)
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r6.b     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r6.b     // Catch: java.lang.Throwable -> L6e
             if (r0 == 0) goto Lf
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r6.b     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r6.b     // Catch: java.lang.Throwable -> L6e
             boolean r0 = r0.a()     // Catch: java.lang.Throwable -> L6e
             if (r0 == 0) goto L45
         Lf:
-            com.tsf.shell.plugin.themepicker.utils.c$a r0 = r6.d     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder$a r0 = r6.d     // Catch: java.lang.Throwable -> L6e
             java.io.File r0 = r0.c     // Catch: java.lang.Throwable -> L6e
-            com.tsf.shell.plugin.themepicker.utils.c$a r2 = r6.d     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder$a r2 = r6.d     // Catch: java.lang.Throwable -> L6e
             boolean r2 = r2.g     // Catch: java.lang.Throwable -> L6e
             if (r2 == 0) goto L45
             if (r0 == 0) goto L45
@@ -111,17 +111,17 @@ public class c {
             r0.mkdirs()     // Catch: java.lang.Throwable -> L6e
         L24:
             long r2 = a(r0)     // Catch: java.lang.Throwable -> L6e
-            com.tsf.shell.plugin.themepicker.utils.c$a r4 = r6.d     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder$a r4 = r6.d     // Catch: java.lang.Throwable -> L6e
             int r4 = r4.b     // Catch: java.lang.Throwable -> L6e
             long r4 = (long) r4
             int r2 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
             if (r2 <= 0) goto L45
             r2 = 1
             r3 = 1
-            com.tsf.shell.plugin.themepicker.utils.c$a r4 = r6.d     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder$a r4 = r6.d     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
             int r4 = r4.b     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
             long r4 = (long) r4     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
-            com.tsf.shell.plugin.themepicker.utils.b r0 = com.tsf.shell.plugin.themepicker.utils.b.a(r0, r2, r3, r4)     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver.a(r0, r2, r3, r4)     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
             r6.b = r0     // Catch: java.io.IOException -> L4f java.lang.Throwable -> L6e
             java.lang.String r0 = "ImageCache"
             java.lang.String r2 = "Disk cache initialized"
@@ -135,7 +135,7 @@ public class c {
             return
         L4f:
             r0 = move-exception
-            com.tsf.shell.plugin.themepicker.utils.c$a r2 = r6.d     // Catch: java.lang.Throwable -> L6e
+            com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder$a r2 = r6.d     // Catch: java.lang.Throwable -> L6e
             r3 = 0
             r2.c = r3     // Catch: java.lang.Throwable -> L6e
             java.lang.String r2 = "ImageCache"
@@ -152,7 +152,7 @@ public class c {
             monitor-exit(r1)     // Catch: java.lang.Throwable -> L6e
             throw r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.c.a():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.a():void");
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -168,8 +168,8 @@ public class c {
     /* JADX WARN: Type inference failed for: r1v6 */
     /* JADX WARN: Type inference failed for: r1v7 */
     /* JADX WARN: Type inference failed for: r1v8, types: [java.io.OutputStream] */
-    /* JADX WARN: Type inference failed for: r3v2, types: [com.tsf.shell.plugin.themepicker.utils.b] */
-    /* JADX WARN: Type inference failed for: r3v4, types: [com.tsf.shell.plugin.themepicker.utils.b] */
+    /* JADX WARN: Type inference failed for: r3v2, types: [com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver] */
+    /* JADX WARN: Type inference failed for: r3v4, types: [com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver] */
     /* JADX WARN: Type inference fix 'apply assigned field type' failed
     java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
     	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
@@ -299,10 +299,10 @@ public class c {
             r2 = move-exception
             goto L8
         L14:
-            com.tsf.shell.plugin.themepicker.utils.b r2 = r8.b     // Catch: java.lang.Throwable -> L71
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r2 = r8.b     // Catch: java.lang.Throwable -> L71
             if (r2 == 0) goto L45
-            com.tsf.shell.plugin.themepicker.utils.b r2 = r8.b     // Catch: java.io.IOException -> L47 java.lang.Throwable -> L69
-            com.tsf.shell.plugin.themepicker.utils.b$c r1 = r2.a(r1)     // Catch: java.io.IOException -> L47 java.lang.Throwable -> L69
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r2 = r8.b     // Catch: java.io.IOException -> L47 java.lang.Throwable -> L69
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver$c r1 = r2.a(r1)     // Catch: java.io.IOException -> L47 java.lang.Throwable -> L69
             if (r1 == 0) goto L7c
             java.lang.String r2 = "ImageCache"
             java.lang.String r5 = "Disk cache hit"
@@ -316,7 +316,7 @@ public class c {
             java.io.FileDescriptor r1 = r1.getFD()     // Catch: java.lang.Throwable -> L78 java.io.IOException -> L7a
             r5 = 2147483647(0x7fffffff, float:NaN)
             r6 = 2147483647(0x7fffffff, float:NaN)
-            android.graphics.Bitmap r3 = com.tsf.shell.plugin.themepicker.utils.e.a(r1, r5, r6, r8)     // Catch: java.lang.Throwable -> L78 java.io.IOException -> L7a
+            android.graphics.Bitmap r3 = com.tsf.shell.plugin.themepicker.utils.SelectionDotRenderer.a(r1, r5, r6, r8)     // Catch: java.lang.Throwable -> L78 java.io.IOException -> L7a
         L40:
             if (r2 == 0) goto L45
             r2.close()     // Catch: java.lang.Throwable -> L71 java.io.IOException -> L74
@@ -369,7 +369,7 @@ public class c {
             r2 = r3
             goto L40
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.c.b(java.lang.String):android.graphics.Bitmap");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.b(java.lang.String):android.graphics.Bitmap");
     }
 
     protected Bitmap a(BitmapFactory.Options options) {
@@ -441,12 +441,12 @@ public class c {
             r5 = this;
             java.lang.Object r1 = r5.e
             monitor-enter(r1)
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.b     // Catch: java.lang.Throwable -> L3a
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.b     // Catch: java.lang.Throwable -> L3a
             if (r0 == 0) goto L1e
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.b     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.b     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
             boolean r0 = r0.a()     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
             if (r0 != 0) goto L1e
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.b     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.b     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
             r0.close()     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
             r0 = 0
             r5.b = r0     // Catch: java.io.IOException -> L20 java.lang.Throwable -> L3a
@@ -472,7 +472,7 @@ public class c {
             monitor-exit(r1)     // Catch: java.lang.Throwable -> L3a
             throw r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.c.d():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.d():void");
     }
 
     public static class a {

@@ -55,7 +55,7 @@ public class ShellApplication extends Application {
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
         com.tsf.extend.h.a(new com.ksmobile.a.a.a());
-        com.ksmobile.launcher.cmbase.utils.e.a();
+        com.ksmobile.launcher.cmbase.utils.SelectionDotRenderer.a();
         com.ksmobile.launcher.a.a.a.a();
     }
 

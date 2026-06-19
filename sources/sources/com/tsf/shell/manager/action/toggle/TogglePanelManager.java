@@ -9,7 +9,7 @@ import com.tsf.shell.manager.action.toggle.a.ToggleActionConnector;
 import com.tsf.shell.manager.action.toggle.a.ToggleActionMobileData;
 import com.tsf.shell.manager.action.toggle.a.ToggleActionVolume;
 import com.tsf.shell.manager.action.toggle.a.ToggleActionFlashlight;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -75,29 +75,29 @@ public class TogglePanelManager {
     }
 
     public void a(String str, int i) {
-        if (str.equals(com.tsf.shell.services.d.h)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.h)) {
             this.k.c(i);
             return;
         }
-        if (str.equals(com.tsf.shell.services.d.i)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.i)) {
             this.g.c(i);
             return;
         }
-        if (str.equals(com.tsf.shell.services.d.e)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.e)) {
             this.i.c(i);
             return;
         }
-        if (str.equals(com.tsf.shell.services.d.g)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.g)) {
             this.l.c(i);
             return;
         }
-        if (str.equals(com.tsf.shell.services.d.f)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.f)) {
             this.j.c(i);
             return;
         }
-        if (str.equals(com.tsf.shell.services.d.d)) {
+        if (str.equals(com.tsf.shell.services.ToggleServiceConnector.d)) {
             this.p.c(i);
-        } else if (str.equals(com.tsf.shell.services.d.j) && (this.f instanceof c)) {
+        } else if (str.equals(com.tsf.shell.services.ToggleServiceConnector.j) && (this.f instanceof c)) {
             ((c) this.f).c(i);
         }
     }

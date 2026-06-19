@@ -16,8 +16,8 @@ import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.f.c.a.a.a;
 import com.tsf.shell.f.f.o;
 import com.tsf.shell.g;
-import com.tsf.shell.utils.q;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.BitmapTransformationHelper;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -195,7 +195,7 @@ public class f implements e.a {
     }
 
     public void a(ArrayList<ItemInfo> arrayList, String str) {
-        Iterator<ItemInfo> it = com.tsf.shell.utils.h.a(arrayList, str, ",", false).iterator();
+        Iterator<ItemInfo> it = com.tsf.shell.utils.ItemInfoListSorter.a(arrayList, str, ",", false).iterator();
         while (it.hasNext()) {
             a(it.next());
         }
@@ -214,7 +214,7 @@ public class f implements e.a {
     }
 
     private void a(ItemInfo itemInfo) {
-        com.tsf.shell.f.i.B bVarA;
+        com.tsf.shell.f.i.PageItem bVarA;
         if (itemInfo.itemType == 1) {
             bVarA = com.tsf.shell.f.i.b.d.b.a((LauncherFolder3DInfo) itemInfo);
         } else {
@@ -227,7 +227,7 @@ public class f implements e.a {
     public void a(int i2, boolean z) {
         if (this.aa != i2) {
             this.aa = i2;
-            int iA = com.tsf.shell.utils.f.a(i2);
+            int iA = com.tsf.shell.utils.PercentToAlphaConverter.a(i2);
             this.C.alpha(iA);
             this.P.alpha(iA);
             if (z) {
@@ -528,7 +528,7 @@ public class f implements e.a {
         a(com.tsf.shell.manager.b.ConfigManager.b(), false);
         com.tsf.shell.manager.app.StateHub.c().a(new o.a() { // from class: com.tsf.shell.f.c.a.f.14
             @Override // com.tsf.shell.f.f.o.a
-            public void a(com.tsf.shell.f.f.g gVar) {
+            public void a(com.tsf.shell.f.f.WorkspacePage gVar) {
                 if (gVar.t() == -1) {
                     if (f.this.ad) {
                         f.this.v();

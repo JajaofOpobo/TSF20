@@ -11,7 +11,7 @@ import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
-import com.tsf.shell.utils.j;
+import com.tsf.shell.utils.DimensionParser;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.xml.parsers.DocumentBuilderFactory;

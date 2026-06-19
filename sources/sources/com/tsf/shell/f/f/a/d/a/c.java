@@ -1,13 +1,13 @@
 package com.tsf.shell.f.f.a.d.a;
 
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends com.tsf.shell.f.f.f {
     protected int a;
-    protected Comparator<com.tsf.shell.f.i.B> b;
+    protected Comparator<com.tsf.shell.f.i.PageItem> b;
     protected Comparator<i> c;
     protected String d;
 
@@ -16,7 +16,7 @@ public class c extends com.tsf.shell.f.f.f {
         this.d = x.c(i2);
     }
 
-    public Comparator<? super com.tsf.shell.f.i.B> a() {
+    public Comparator<? super com.tsf.shell.f.i.PageItem> a() {
         return this.b;
     }
 

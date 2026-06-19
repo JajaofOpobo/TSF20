@@ -28,7 +28,7 @@ public class c extends com.tsf.shell.f.e.f.b implements com.tsf.shell.f.e.F {
     }
 
     @Override // com.tsf.shell.f.e.f.b
-    public void a(com.tsf.shell.f.i.C cVar) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
     }
 
     public boolean a() {

@@ -21,8 +21,8 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
 import com.tsf.shell.theme.inside.mix.ThemeFolderManager;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -204,9 +204,9 @@ public class j implements e.a {
     }
 
     public void k() {
-        this.B = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_add_button, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
-        this.C = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
-        this.D = com.tsf.shell.utils.x.b(com.tsf.b.d.widget_folder_rename, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.B = com.tsf.shell.utils.GraphicsEngineBridge.b(com.tsf.b.d.widget_folder_add_button, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.C = com.tsf.shell.utils.GraphicsEngineBridge.b(com.tsf.b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.D = com.tsf.shell.utils.GraphicsEngineBridge.b(com.tsf.b.d.widget_folder_rename, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
         if (c().folder.backPlaneEnable) {
             Bitmap bitmapFromCache = c().getBitmapFromCache(ThemeFolderDescription.BACK_PLANE, c().folder.backPlaneWidth, c().folder.backPlaneHeight);
             if (bitmapFromCache == null) {
@@ -365,7 +365,7 @@ public class j implements e.a {
         float fA = com.censivn.C3DEngine.b.b.A.O ? 0.0f : com.censivn.C3DEngine.b.b.A.a(80.0f);
         int i5 = com.censivn.C3DEngine.b.b.A.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
         int i6 = i5 > i2 * 7 ? i2 * 7 : i5;
-        int[] iArrA = com.tsf.shell.utils.x.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
+        int[] iArrA = com.tsf.shell.utils.GraphicsEngineBridge.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
         this.a = iArrA[0];
         this.b = iArrA[1];
         this.c = this.a * this.b;
@@ -416,7 +416,7 @@ public class j implements e.a {
         this.M = new com.censivn.C3DEngine.b.d.a(this.H) { // from class: com.tsf.shell.f.i.b.d.j.4
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                com.tsf.shell.utils.w.b();
+                com.tsf.shell.utils.HapticFeedbackManager.b();
                 if (com.tsf.shell.f.i.b.d.b.k != null) {
                     j.this.a(com.tsf.shell.f.i.b.d.b.k);
                 }

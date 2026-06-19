@@ -22,7 +22,7 @@ import android.widget.TextView;
 import com.tsf.shell.plugin.themepicker.SildingMenuLayout;
 import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.utils.h;
+import com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter;
 import java.util.ArrayList;
 import java.util.List;
 

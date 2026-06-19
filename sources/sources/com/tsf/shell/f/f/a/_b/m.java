@@ -86,7 +86,7 @@ public abstract class m extends k {
         int iNumChildren = aVar.numChildren();
         aVar.renderChildren(true);
         for (int i = 0; i < iNumChildren; i++) {
-            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) aVar.getChildAt(i);
+            com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) aVar.getChildAt(i);
             Number3d number3d = this.h.get(i);
             bVar.position().x = number3d.x;
             bVar.position().y = number3d.y;
@@ -121,7 +121,7 @@ public abstract class m extends k {
             n(aVar);
         }
         for (int i = 0; i < iNumChildren; i++) {
-            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) aVar.getChildAt(i);
+            com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) aVar.getChildAt(i);
             if (fAbs > 0.8d) {
                 f2 = (1.0f - fAbs) / 0.2f;
             } else {
@@ -380,7 +380,7 @@ public abstract class m extends k {
         int iNumChildren = aVar.numChildren();
         if (iNumChildren != 0) {
             for (int i = 0; i < iNumChildren; i++) {
-                com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) aVar.getChildAt(i);
+                com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) aVar.getChildAt(i);
                 if (i >= this.e) {
                     number3d = this.h.get(this.e - 1);
                 } else {

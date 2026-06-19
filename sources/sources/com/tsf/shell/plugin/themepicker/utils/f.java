@@ -13,13 +13,13 @@ import android.support.v4.app.o;
 import android.util.Log;
 import android.widget.ImageView;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.plugin.themepicker.utils.c;
+import com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder;
 import java.lang.ref.WeakReference;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class f {
-    private com.tsf.shell.plugin.themepicker.utils.c a;
-    private com.tsf.shell.plugin.themepicker.utils.c.a b;
+    private com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder a;
+    private com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.a b;
     protected Resources d;
     private Bitmap e;
     private boolean f = true;
@@ -44,7 +44,7 @@ public abstract class f {
             } else if (b(obj, imageView)) {
                 b bVar = new b(obj, imageView);
                 imageView.setImageDrawable(new a(this.d, this.e, bVar));
-                bVar.a(com.tsf.shell.plugin.themepicker.utils.a.c, new Void[0]);
+                bVar.a(com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c, new Void[0]);
             }
         }
     }
@@ -53,9 +53,9 @@ public abstract class f {
         this.e = BitmapFactory.decodeResource(this.d, i);
     }
 
-    public void a(o oVar, com.tsf.shell.plugin.themepicker.utils.c.a aVar) {
+    public void a(o oVar, com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.a aVar) {
         this.b = aVar;
-        this.a = com.tsf.shell.plugin.themepicker.utils.c.a(oVar, this.b);
+        this.a = com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder.a(oVar, this.b);
         new c().c(1);
     }
 
@@ -64,7 +64,7 @@ public abstract class f {
         b(false);
     }
 
-    protected com.tsf.shell.plugin.themepicker.utils.c f() {
+    protected com.tsf.shell.plugin.themepicker.utils.ReusableBitmapHolder f() {
         return this.a;
     }
 
@@ -93,7 +93,7 @@ public abstract class f {
         return null;
     }
 
-    private class b extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, BitmapDrawable> {
+    private class b extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Void, Void, BitmapDrawable> {
         private Object e;
         private final WeakReference<ImageView> f;
 
@@ -103,7 +103,7 @@ public abstract class f {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public BitmapDrawable a(Void... voidArr) {
             BitmapDrawable gVar = null;
             com.tsf.shell.plugin.themepicker.e.a("ImageWorker", "doInBackground - starting work");
@@ -136,7 +136,7 @@ public abstract class f {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void a(BitmapDrawable bitmapDrawable) {
             if (c() || f.this.g) {
                 bitmapDrawable = null;
@@ -152,7 +152,7 @@ public abstract class f {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void b(BitmapDrawable bitmapDrawable) {
             super.b(bitmapDrawable);
             synchronized (f.this.h) {
@@ -206,12 +206,12 @@ public abstract class f {
         }
     }
 
-    protected class c extends com.tsf.shell.plugin.themepicker.utils.a<Object, Void, Void> {
+    protected class c extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Object, Void, Void> {
         protected c() {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         /* JADX INFO: renamed from: d, reason: merged with bridge method [inline-methods] */
         public Void a(Object... objArr) {
             switch (((Integer) objArr[0]).intValue()) {

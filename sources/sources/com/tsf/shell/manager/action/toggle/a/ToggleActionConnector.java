@@ -2,8 +2,8 @@ package com.tsf.shell.manager.action.toggle.a;
 
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.services.d;
-import com.tsf.shell.utils.k;
+import com.tsf.shell.services.ToggleServiceConnector;
+import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.ToggleAction {
@@ -15,7 +15,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction
     public void d() {
         com.tsf.shell.manager.app.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionConnector.1
-            @Override // com.tsf.shell.services.d.a
+            @Override // com.tsf.shell.services.ToggleServiceConnector.a
             public void a(com.c.a.a.a.a aVar) {
                 int iE = 1;
                 switch (c.this.a) {
@@ -47,14 +47,14 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
     public void c() {
         if (com.tsf.shell.manager.app.C.c().a()) {
             com.tsf.shell.manager.app.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionConnector.2
-                @Override // com.tsf.shell.services.d.a
+                @Override // com.tsf.shell.services.ToggleServiceConnector.a
                 public void a(com.c.a.a.a.a aVar) {
                     switch (c.this.a) {
                         case 12000:
-                            if (com.tsf.shell.services.d.a(com.censivn.C3DEngine.A.d(), 3)) {
+                            if (com.tsf.shell.services.ToggleServiceConnector.a(com.censivn.C3DEngine.A.d(), 3)) {
                                 aVar.v();
                             } else {
-                                com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.a(com.tsf.shell.services.d.a);
+                                com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.a(com.tsf.shell.services.ToggleServiceConnector.a);
                             }
                             break;
                         case 16000:
@@ -97,7 +97,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
             com.tsf.shell.e.a(Home.b(), b.i.text_download, b.i.notic_download_switch_widget, 0, b.i.text_download, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionConnector.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    k.a(Home.c, com.tsf.shell.services.d.a);
+                    k.a(Home.c, com.tsf.shell.services.ToggleServiceConnector.a);
                 }
             }, (Runnable) null);
         }

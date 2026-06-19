@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.b;
-import com.tsf.shell.utils.k;
+import com.tsf.shell.utils.MarketLinkHandler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

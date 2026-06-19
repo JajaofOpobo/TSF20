@@ -1,7 +1,7 @@
 package com.tsf.shell.preference.a.a;
 
 import com.censivn.C3DEngine.b.e.a;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.censivn.C3DEngine.b.e.c {

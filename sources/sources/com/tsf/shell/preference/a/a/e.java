@@ -3,7 +3,7 @@ package com.tsf.shell.preference.a.a;
 import com.censivn.C3DEngine.b.e.a;
 import com.censivn.C3DEngine.b.e.i;
 import com.tsf.b;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends i {
@@ -31,8 +31,8 @@ public class e extends i {
             public boolean a(boolean z) {
                 e.this.a = z;
                 if (e.this.a) {
-                    e.this.c.k(com.tsf.shell.f.f.a.h.B);
-                    e.this.b.k(com.tsf.shell.f.f.a.h.C);
+                    e.this.c.k(com.tsf.shell.f.f.a.FolderPage.B);
+                    e.this.b.k(com.tsf.shell.f.f.a.FolderPage.C);
                 }
                 e.this.i();
                 return true;
@@ -73,12 +73,12 @@ public class e extends i {
         String str = " ( " + (com.censivn.C3DEngine.b.b.A.O ? x.c(b.i.mn_orientation_portrait) : x.c(b.i.mn_orientation_landscape)) + " )";
         this.b.b(x.c(b.i.mn_grid_rows) + str);
         this.c.b(x.c(b.i.mn_grid_columns) + str);
-        this.c.i(com.tsf.shell.f.f.a.h.x);
-        this.c.j(com.tsf.shell.f.f.a.h.y);
-        this.b.i(com.tsf.shell.f.f.a.h.z);
-        this.b.j(com.tsf.shell.f.f.a.h.A);
-        this.c.k(com.tsf.shell.f.f.a.h.p);
-        this.b.k(com.tsf.shell.f.f.a.h.q);
+        this.c.i(com.tsf.shell.f.f.a.FolderPage.x);
+        this.c.j(com.tsf.shell.f.f.a.FolderPage.y);
+        this.b.i(com.tsf.shell.f.f.a.FolderPage.z);
+        this.b.j(com.tsf.shell.f.f.a.FolderPage.A);
+        this.c.k(com.tsf.shell.f.f.a.FolderPage.p);
+        this.b.k(com.tsf.shell.f.f.a.FolderPage.q);
         this.d.k(com.tsf.shell.manager.f.ScreenFadeController.a);
         this.e.c(this.a);
         this.f.c(com.tsf.shell.manager.b.ConfigManager.Q());
@@ -121,7 +121,7 @@ public class e extends i {
         if (this.a) {
             if (com.tsf.shell.manager.b.ConfigManager.W() != this.a) {
                 com.tsf.shell.manager.b.ConfigManager.l(this.a);
-                if (com.tsf.shell.f.f.a.h.p != this.c.e() || com.tsf.shell.f.f.a.h.q != this.b.e()) {
+                if (com.tsf.shell.f.f.a.FolderPage.p != this.c.e() || com.tsf.shell.f.f.a.FolderPage.q != this.b.e()) {
                     com.tsf.shell.manager.app.StateHub.t().aE();
                     return;
                 }
@@ -132,9 +132,9 @@ public class e extends i {
         if (com.tsf.shell.manager.b.ConfigManager.W() != this.a) {
             com.tsf.shell.manager.b.ConfigManager.l(this.a);
         }
-        if (com.tsf.shell.f.f.a.h.p != this.c.e()) {
+        if (com.tsf.shell.f.f.a.FolderPage.p != this.c.e()) {
             j();
-        } else if (com.tsf.shell.f.f.a.h.q != this.b.e()) {
+        } else if (com.tsf.shell.f.f.a.FolderPage.q != this.b.e()) {
             j();
         }
     }

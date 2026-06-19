@@ -17,7 +17,7 @@ import com.tsf.shell.ShellProvider;
 import com.tsf.shell.e.TSFAppWidgetHostView;
 import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.f.e.t;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.i.c.f;
 import com.tsf.shell.manager.bind.ShellModel;
 
@@ -56,7 +56,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
         }
     }
 
-    public static float[] a(com.tsf.shell.f.i.B bVar, float f, float f2) { return null; }
+    public static float[] a(com.tsf.shell.f.i.PageItem bVar, float f, float f2) { return null; }
 
     public AppWidgetHostManager() {
         try {

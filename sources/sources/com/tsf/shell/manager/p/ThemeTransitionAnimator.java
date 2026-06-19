@@ -3,9 +3,9 @@ package com.tsf.shell.manager.p;
 import android.content.Intent;
 import android.view.MotionEvent;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.theme.inside.mix.ThemeClockManager;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeTransitionAnimator {

@@ -8,8 +8,8 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.E;
 import com.tsf.shell.manager.app.LauncherAppInfo;
-import com.tsf.shell.services.A;
-import com.tsf.shell.utils.k;
+import com.tsf.shell.services.NotifierConnector;
+import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class UnreadBadgeManager implements A.InterfaceC0165a {
@@ -20,7 +20,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
     private int e = 0;
     private int f = 0;
     private boolean g = false;
-    private com.tsf.shell.services.A h;
+    private com.tsf.shell.services.NotifierConnector h;
     private LauncherAppInfo i;
     private LauncherAppInfo j;
     private LauncherAppInfo k;
@@ -32,7 +32,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
     }
 
     private void b() {
-        this.h = new com.tsf.shell.services.A();
+        this.h = new com.tsf.shell.services.NotifierConnector();
         this.h.a(com.censivn.C3DEngine.A.d(), new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.1
             @Override // java.lang.Runnable
             public void run() {
@@ -84,7 +84,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
     }
 
     public void a(LauncherAppInfo fVar) {
-        if (this.i == null && com.tsf.shell.utils.b.a(fVar.b)) {
+        if (this.i == null && com.tsf.shell.utils.OEMComponentResolver.a(fVar.b)) {
             this.i = fVar;
             if (this.g) {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.6
@@ -97,7 +97,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             }
             return;
         }
-        if (this.j == null && com.tsf.shell.utils.b.b(fVar.b)) {
+        if (this.j == null && com.tsf.shell.utils.OEMComponentResolver.b(fVar.b)) {
             this.j = fVar;
             if (this.g) {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.7
@@ -110,7 +110,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             }
             return;
         }
-        if (this.m == null && com.tsf.shell.utils.b.e(fVar.b)) {
+        if (this.m == null && com.tsf.shell.utils.OEMComponentResolver.e(fVar.b)) {
             this.m = fVar;
             if (this.g) {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.8
@@ -123,7 +123,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             }
             return;
         }
-        if (this.l == null && com.tsf.shell.utils.b.c(fVar.b)) {
+        if (this.l == null && com.tsf.shell.utils.OEMComponentResolver.c(fVar.b)) {
             this.l = fVar;
             if (this.g) {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.9
@@ -136,7 +136,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             }
             return;
         }
-        if (this.k == null && com.tsf.shell.utils.b.d(fVar.b)) {
+        if (this.k == null && com.tsf.shell.utils.OEMComponentResolver.d(fVar.b)) {
             this.k = fVar;
             if (this.g) {
                 com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.10

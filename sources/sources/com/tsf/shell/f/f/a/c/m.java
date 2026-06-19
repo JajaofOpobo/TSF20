@@ -2,8 +2,8 @@ package com.tsf.shell.f.f.a.c;
 
 import android.view.MotionEvent;
 import com.tsf.b;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -15,7 +15,7 @@ public class m extends i {
     private com.censivn.C3DEngine.b.f.m k;
     private float l;
 
-    public m(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
+    public m(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, b.d.drawer_sort, x.c(b.i.text_sort));
         this.h = com.tsf.shell.manager.app.ServiceProvider.b();
         d();

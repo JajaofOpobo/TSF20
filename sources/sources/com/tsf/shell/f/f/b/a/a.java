@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.f.a.h;
+import com.tsf.shell.f.f.a.FolderPage;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -31,7 +31,7 @@ public class a extends d {
             i iVar = arrayList.get(i);
             Number3d number3d = h.E.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar);
-            if (iVar instanceof com.tsf.shell.f.i.B) {
+            if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
                 if (z) {
                     dVar3.f(0.0f);

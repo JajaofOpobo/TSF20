@@ -26,7 +26,7 @@ import com.tsf.shell.theme.inside.mix.ThemeUnreadCountManager;
 import com.tsf.shell.theme.inside.mix.ThemeWidgetResizeManager;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
 import com.tsf.shell.theme.inside.parser.ThemeParser;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 

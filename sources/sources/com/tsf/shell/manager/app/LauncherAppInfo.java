@@ -14,7 +14,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.utils.m;
+import com.tsf.shell.utils.FlurryAnalyticsLogger;
 import java.util.HashMap;
 import java.util.Iterator;
 

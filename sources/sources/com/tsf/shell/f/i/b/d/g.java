@@ -40,7 +40,7 @@ public class g extends com.tsf.shell.f.e.f.b {
         return com.tsf.shell.manager.app.TaskScheduler.a();
     }
 
-    public void a(com.tsf.shell.f.i.C cVar) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (cVar instanceof com.tsf.shell.f.i.b.e.b) {
             cVar.mouseEnabled(false);
             Number3d.TEMPNUMBER3D2.reset();

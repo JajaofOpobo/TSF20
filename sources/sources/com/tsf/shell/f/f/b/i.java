@@ -4,7 +4,7 @@ import android.opengl.GLES20;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColorTexture;
 import com.tsf.b;
-import com.tsf.shell.f.f.j;
+import com.tsf.shell.f.f.PageAnimationState;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -64,7 +64,7 @@ public class i extends com.tsf.shell.f.f.l {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void b(com.tsf.shell.f.f.g gVar, float f) {
+    public void b(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         boolean zI = com.tsf.shell.manager.app.LauncherAppInfo.i();
         j.a aVarA = gVar.a(true, false);
         if (f > 0.0f) {
@@ -140,7 +140,7 @@ public class i extends com.tsf.shell.f.f.l {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void a(com.tsf.shell.f.f.g gVar, float f) {
+    public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         if (f > 0.0f) {
             if (f <= 0.5f) {
                 gVar.setRendererPriorityLevel(1);
@@ -158,7 +158,7 @@ public class i extends com.tsf.shell.f.f.l {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public boolean a(com.tsf.shell.f.f.g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
         return false;
     }
 

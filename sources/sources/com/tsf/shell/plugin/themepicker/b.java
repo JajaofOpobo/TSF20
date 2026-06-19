@@ -54,7 +54,7 @@ public class b extends Fragment implements View.OnClickListener {
                     int i = (width / iFloor) - iApplyDimension2;
                     b.this.b.b(iFloor);
                     b.this.b.a(dimensionPixelSize);
-                    if (com.tsf.shell.plugin.themepicker.utils.h.e()) {
+                    if (com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.e()) {
                         b.this.a.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
                         b.this.a.getViewTreeObserver().removeGlobalOnLayoutListener(this);

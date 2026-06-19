@@ -10,10 +10,10 @@ public class e extends c {
     public e(int i) {
         super(b.d.drawer_sort_time_earliest, b.i.text_sort_earliest_installed);
         this.a = i;
-        this.b = new Comparator<com.tsf.shell.f.i.B>() { // from class: com.tsf.shell.f.f.a.d.a.e.1
+        this.b = new Comparator<com.tsf.shell.f.i.PageItem>() { // from class: com.tsf.shell.f.f.a.d.a.e.1
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public final int compare(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
+            public final int compare(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
                 if ((bVar instanceof com.tsf.shell.f.i.b.d.b) && (bVar2 instanceof com.tsf.shell.f.i.b.d.b)) {
                     return 0;
                 }

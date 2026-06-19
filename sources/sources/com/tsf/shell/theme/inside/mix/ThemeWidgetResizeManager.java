@@ -12,8 +12,8 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
-import com.tsf.shell.utils.q;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.BitmapTransformationHelper;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeWidgetResizeManager extends ThemeMixElementManager {

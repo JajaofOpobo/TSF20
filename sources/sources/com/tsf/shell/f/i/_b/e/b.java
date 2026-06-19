@@ -5,11 +5,11 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.tsf.shell.f.e.m;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class b extends com.tsf.shell.f.i.C implements m {
+public abstract class b extends com.tsf.shell.f.i.ShortcutItem implements m {
     private static int[] a = {0, 0};
     private static ArrayList<a> v = new ArrayList<>();
     private static int w = 0;
@@ -63,36 +63,36 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         aA();
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public void a(com.tsf.shell.f.e.F fVar) {
         if (fVar instanceof b) {
             a((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public void d(com.tsf.shell.f.e.F fVar) {
         if (fVar instanceof b) {
             b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public void e(com.tsf.shell.f.e.F fVar) {
         if ((fVar instanceof b) && this.u != null) {
-            com.tsf.shell.f.i._b.d.b bVarA = a((b) fVar, false);
+            com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVarA = a((b) fVar, false);
             bVarA.K().screen = K().screen;
             bVarA.ad();
             bVarA.setMouseEventListener(new com.tsf.shell.f.i._a.c(bVarA));
         }
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public boolean a(com.tsf.shell.f.e.F fVar, float f, float f2) {
-        return (fVar instanceof com.tsf.shell.f.i.C) && ((com.tsf.shell.f.i.C) fVar).au();
+        return (fVar instanceof com.tsf.shell.f.i.ShortcutItem) && ((com.tsf.shell.f.i.ShortcutItem) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public boolean b(com.tsf.shell.f.e.F fVar) {
         return fVar instanceof b;
     }
@@ -172,12 +172,12 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
     }
 
-    @Override // com.tsf.shell.f.i.B, com.tsf.shell.f.e.F
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.F
     public void g(com.tsf.shell.f.e.F fVar) {
         I();
         super.g(fVar);
@@ -270,7 +270,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         w.b();
     }
 
-    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         this.n = null;
         this.s = null;
@@ -317,8 +317,8 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
         }
     }
 
-    public com.tsf.shell.f.i._b.d.b a(b bVar, boolean z) {
-        com.tsf.shell.f.i._b.d.b bVar2 = this.u.a;
+    public com.tsf.shell.f.i._b.d.WorkspaceShortcutItem a(b bVar, boolean z) {
+        com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVar2 = this.u.a;
         this.u.a.removeFromParent();
         this.u.a.a(this, bVar, z);
         this.u = null;
@@ -347,7 +347,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
 
     public static a aU() {
         a aVar = new a();
-        aVar.a = new com.tsf.shell.f.i._b.d.b(new LauncherDrawerFolder3DInfo(true));
+        aVar.a = new com.tsf.shell.f.i._b.d.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
         aVar.b = new h();
         w++;
         return aVar;
@@ -359,7 +359,7 @@ public abstract class b extends com.tsf.shell.f.i.C implements m {
     }
 
     static class a {
-        public com.tsf.shell.f.i._b.d.b a;
+        public com.tsf.shell.f.i._b.d.WorkspaceShortcutItem a;
         public h b;
 
         a() {

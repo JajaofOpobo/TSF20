@@ -11,7 +11,7 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -106,7 +106,7 @@ public class H {
                         float y = motionEvent.getY();
                         float x2 = motionEvent2.getX();
                         float y2 = motionEvent2.getY();
-                        if (com.tsf.shell.utils.x.b(H.this.s, H.this.t, x2, y2) > 10.0f) {
+                        if (com.tsf.shell.utils.GraphicsEngineBridge.b(H.this.s, H.this.t, x2, y2) > 10.0f) {
                             H.this.s = x2;
                             H.this.t = y2;
                             H.this.a((float) Math.sqrt(Math.pow(motionEvent.getX() - motionEvent2.getX(), 2.0d) + Math.pow(motionEvent.getY() - motionEvent2.getY(), 2.0d)));
@@ -117,7 +117,7 @@ public class H {
                                     H.d.b(motionEvent2.getX(), motionEvent2.getY());
                                 }
                             });
-                            if (!H.this.o || com.tsf.shell.utils.x.b(x, y, x2, y2) >= 50.0f) {
+                            if (!H.this.o || com.tsf.shell.utils.GraphicsEngineBridge.b(x, y, x2, y2) >= 50.0f) {
                                 for (com.censivn.C3DEngine.b.f.i iVar : H.this.l) {
                                     if ((iVar instanceof m) && iVar != H.this.n) {
                                         m mVar = (m) iVar;

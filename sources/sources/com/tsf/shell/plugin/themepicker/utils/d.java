@@ -27,7 +27,7 @@ public class d extends e {
         this.f = c.a(context, "http");
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected void a() {
         super.a();
         j();
@@ -54,7 +54,7 @@ public class d extends e {
         }
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected void b() {
         super.b();
         synchronized (this.h) {
@@ -72,7 +72,7 @@ public class d extends e {
         }
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected void c() {
         super.c();
         synchronized (this.h) {
@@ -88,7 +88,7 @@ public class d extends e {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:9:0x0021 A[Catch: all -> 0x003d, DONT_GENERATE, TRY_ENTER, TryCatch #1 {, blocks: (B:4:0x0006, B:6:0x000a, B:8:0x0012, B:9:0x0021, B:12:0x0024), top: B:18:0x0006, inners: #0 }] */
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -99,12 +99,12 @@ public class d extends e {
             super.d()
             java.lang.Object r1 = r5.h
             monitor-enter(r1)
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.e     // Catch: java.lang.Throwable -> L3d
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.e     // Catch: java.lang.Throwable -> L3d
             if (r0 == 0) goto L21
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.e     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.e     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
             boolean r0 = r0.a()     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
             if (r0 != 0) goto L21
-            com.tsf.shell.plugin.themepicker.utils.b r0 = r5.e     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
+            com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver r0 = r5.e     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
             r0.close()     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
             r0 = 0
             r5.e = r0     // Catch: java.io.IOException -> L23 java.lang.Throwable -> L3d
@@ -130,7 +130,7 @@ public class d extends e {
             monitor-exit(r1)     // Catch: java.lang.Throwable -> L3d
             throw r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.d.d():void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.LazyBitmapFactory.d():void");
     }
 
     private void b(Context context) {
@@ -148,9 +148,9 @@ public class d extends e {
   (r1v35 java.io.FileInputStream)
   (r1v36 java.io.FileInputStream)
  binds: [B:47:0x00cb, B:48:0x00cd, B:38:0x00a5, B:39:0x00a7] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Type inference failed for: r0v23, types: [com.tsf.shell.plugin.themepicker.utils.b] */
-    /* JADX WARN: Type inference failed for: r0v35, types: [com.tsf.shell.plugin.themepicker.utils.b] */
-    /* JADX WARN: Type inference failed for: r0v37, types: [com.tsf.shell.plugin.themepicker.utils.b] */
+    /* JADX WARN: Type inference failed for: r0v23, types: [com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver] */
+    /* JADX WARN: Type inference failed for: r0v35, types: [com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver] */
+    /* JADX WARN: Type inference failed for: r0v37, types: [com.tsf.shell.plugin.themepicker.utils.OEMComponentResolver] */
     /* JADX WARN: Type inference failed for: r1v13 */
     /* JADX WARN: Type inference failed for: r1v15 */
     /* JADX WARN: Type inference failed for: r1v16, types: [java.io.FileInputStream] */
@@ -186,10 +186,10 @@ public class d extends e {
             Method dump skipped, instruction units count: 262
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.d.a(java.lang.String):android.graphics.Bitmap");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.LazyBitmapFactory.a(java.lang.String):android.graphics.Bitmap");
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.e, com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.SelectionDotRenderer, com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected Bitmap a(Object obj) {
         return a(String.valueOf(obj));
     }
@@ -331,7 +331,7 @@ public class d extends e {
             r0 = move-exception
             goto L6b
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.d.a(java.lang.String, java.io.OutputStream):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.LazyBitmapFactory.a(java.lang.String, java.io.OutputStream):boolean");
     }
 
     public static void e() {

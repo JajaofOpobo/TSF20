@@ -17,10 +17,10 @@ public class a extends c {
         super(b.d.drawer_sort_frequency, b.i.text_sort_most_used);
         this.a = i;
         this.e = Collator.getInstance(Locale.getDefault());
-        this.b = new Comparator<com.tsf.shell.f.i.B>() { // from class: com.tsf.shell.f.f.a.d.a.a.1
+        this.b = new Comparator<com.tsf.shell.f.i.PageItem>() { // from class: com.tsf.shell.f.f.a.d.a.a.1
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public final int compare(com.tsf.shell.f.i.B bVar, com.tsf.shell.f.i.B bVar2) {
+            public final int compare(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
                 if ((bVar instanceof com.tsf.shell.f.i.b.d.b) && (bVar2 instanceof com.tsf.shell.f.i.b.d.b)) {
                     return 0;
                 }

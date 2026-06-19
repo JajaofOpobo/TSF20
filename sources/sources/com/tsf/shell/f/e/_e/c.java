@@ -8,9 +8,9 @@ import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
-import com.tsf.shell.utils.l;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.ErrorThrower;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -86,28 +86,28 @@ public class c {
             @Override // com.tsf.shell.f.e._e.c.a, com.tsf.shell.f.e._e.e, com.tsf.shell.f.e.F
             public void e(com.tsf.shell.f.e.F fVar) {
                 super.e(fVar);
-                final com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
-                ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList();
-                if (bVar instanceof com.tsf.shell.f.i.C) {
-                    com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
+                final com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
+                ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList();
+                if (bVar instanceof com.tsf.shell.f.i.ShortcutItem) {
+                    com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) bVar;
                     if (cVar.as()) {
-                        Iterator<com.tsf.shell.f.i.C> it = cVar.aw().iterator();
+                        Iterator<com.tsf.shell.f.i.ShortcutItem> it = cVar.aw().iterator();
                         while (it.hasNext()) {
                             arrayList.add(it.next());
                         }
                     }
                 }
                 arrayList.add(bVar);
-                for (com.tsf.shell.f.i.B bVar2 : arrayList) {
+                for (com.tsf.shell.f.i.PageItem bVar2 : arrayList) {
                     bVar2.removeFromParent();
                     com.tsf.shell.manager.app.TaskScheduler.a(bVar2);
                 }
                 if (arrayList.size() > 1) {
                     Iterator it2 = arrayList.iterator();
                     while (it2.hasNext()) {
-                        g.a((com.tsf.shell.f.i.B) it2.next(), (Runnable) null);
+                        g.a((com.tsf.shell.f.i.PageItem) it2.next(), (Runnable) null);
                     }
-                } else if (bVar instanceof com.tsf.shell.f.i._b.d.b) {
+                } else if (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                     g.a(bVar, new Runnable() { // from class: com.tsf.shell.f.e._e.c.2.1
                         @Override // java.lang.Runnable
                         public void run() {
@@ -124,7 +124,7 @@ public class c {
             @Override // com.tsf.shell.f.e._e.c.a, com.tsf.shell.f.e._e.e, com.tsf.shell.f.e.F
             public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
-                ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
+                ((com.tsf.shell.f.i.PageItem) fVar).clearDefaultColor();
                 com.tsf.shell.manager.app.Notifier.a();
             }
         };
@@ -175,7 +175,7 @@ public class c {
                 if (!com.tsf.shell.manager.app.StateHub.n().c()) {
                     com.tsf.shell.manager.app.StateHub.n().d();
                     c.this.c();
-                    com.tsf.shell.manager.app.StateHub.d.a((com.tsf.shell.f.i.B) fVar);
+                    com.tsf.shell.manager.app.StateHub.d.a((com.tsf.shell.f.i.PageItem) fVar);
                     w.a(3);
                 }
             }
@@ -211,14 +211,14 @@ public class c {
             public void a(com.tsf.shell.f.e.F fVar) {
                 super.a(fVar);
                 w.a(3);
-                ((com.tsf.shell.f.i.B) fVar).setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
+                ((com.tsf.shell.f.i.PageItem) fVar).setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
                 com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 
             @Override // com.tsf.shell.f.e._e.e, com.tsf.shell.f.e.F
             public boolean b(com.tsf.shell.f.e.F fVar) {
                 super.b(fVar);
-                com.tsf.shell.f.i.B bVar3 = (com.tsf.shell.f.i.B) fVar;
+                com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) fVar;
                 bVar3.clearDefaultColor();
                 com.tsf.shell.manager.app.Notifier.a();
                 return com.tsf.shell.manager.app.StateHub.t().d(bVar3);
@@ -232,7 +232,7 @@ public class c {
             @Override // com.tsf.shell.f.e._e.c.a, com.tsf.shell.f.e._e.e, com.tsf.shell.f.e.F
             public void d(com.tsf.shell.f.e.F fVar) {
                 super.d(fVar);
-                ((com.tsf.shell.f.i.B) fVar).clearDefaultColor();
+                ((com.tsf.shell.f.i.PageItem) fVar).clearDefaultColor();
                 com.tsf.shell.manager.app.Notifier.a();
             }
         };
@@ -312,7 +312,7 @@ public class c {
         this.m = new f() { // from class: com.tsf.shell.f.e._e.c.8
             @Override // com.tsf.shell.f.e._e.f
             public void a(com.tsf.shell.f.e.F fVar) {
-                com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.B) fVar);
+                com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.PageItem) fVar);
             }
         };
     }
@@ -321,7 +321,7 @@ public class c {
         return this.f;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, float f, float f2, boolean z, int... iArr) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, float f, float f2, boolean z, int... iArr) {
         float f3;
         float f4;
         if (bVar.S()) {

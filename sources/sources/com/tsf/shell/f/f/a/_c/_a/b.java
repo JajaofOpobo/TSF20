@@ -10,7 +10,7 @@ import com.tsf.shell.f.e.k;
 import com.tsf.shell.f.f.a.f;
 import com.tsf.shell.manager.o.ThemeColorConstants;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends j {

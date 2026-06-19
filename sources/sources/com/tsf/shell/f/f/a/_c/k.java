@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -29,7 +29,7 @@ public class k extends i {
         }
     }
 
-    public k(com.tsf.shell.f.f.a.h hVar, com.tsf.shell.f.f.a.f fVar) {
+    public k(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.f fVar) {
         super(hVar, fVar, 0, x.c(b.i.text_more));
         this.g = new ArrayList<>();
         com.tsf.shell.f.f.a._c._a.a aVar = new com.tsf.shell.f.f.a._c._a.a(new a(b.d.drawer_classification, x.c(b.i.text_classify)));

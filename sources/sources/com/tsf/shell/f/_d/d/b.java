@@ -2,7 +2,7 @@ package com.tsf.shell.f._d.d;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.World;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b {
@@ -34,7 +34,7 @@ public class b {
         return com.tsf.shell.manager.app.v.ObjectHelper.e().a();
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         com.tsf.shell.manager.app.v.ObjectHelper.e().a(bVar);
     }
 }

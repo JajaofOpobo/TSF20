@@ -7,13 +7,13 @@ import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e.p;
 import com.tsf.shell.f.e.s;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.n;
 import com.tsf.shell.manager.f.WorkspaceScene;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.theme.inside.ThemeManager;
-import com.tsf.shell.utils.t;
+import com.tsf.shell.utils.SignatureVerifier;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherInitController extends f {
@@ -31,7 +31,7 @@ public class LauncherInitController extends f {
         this.h = null;
         com.tsf.shell.manager.app.Initializer = new com.tsf.shell.manager.j.RateDialogController();
         com.tsf.shell.manager.app.AppListManager = new e();
-        com.tsf.shell.manager.app.C = new com.tsf.shell.services.c();
+        com.tsf.shell.manager.app.C = new com.tsf.shell.services.ServiceLifecycleManager();
         com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.d();
         com.tsf.shell.manager.app.FeatureConfig = new com.tsf.shell.manager.h.ScreenLockController();
         com.tsf.shell.manager.app.AppListModel = this;
@@ -60,7 +60,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.WidgetLayoutManager = new com.tsf.shell.manager.r.a.WidgetInstanceTracker();
         com.tsf.shell.manager.app.PlaceholderManager = new p();
         if (!t.a(com.censivn.C3DEngine.A.d())) {
-            com.tsf.shell.services.c.a = false;
+            com.tsf.shell.services.ServiceLifecycleManager.a = false;
         }
         this.d = new j();
     }
@@ -81,7 +81,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.v = new com.tsf.shell.f._d.A();
         com.tsf.shell.f.i.b.d.b.k();
         new com.tsf.shell.manager.o.EmptyStub();
-        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.a(new j()));
+        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.WallpaperTouchHandler(new j()));
         com.tsf.shell.manager.app.DataCoordinator = new b();
         this.d = new j();
         this.e = new j();

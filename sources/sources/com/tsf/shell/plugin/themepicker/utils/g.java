@@ -71,6 +71,6 @@ public class g extends BitmapDrawable {
             monitor-exit(r1)
             throw r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.g.b():boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.plugin.themepicker.utils.StatusBarHelper.b():boolean");
     }
 }

@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.b.f.m;
 public class b extends j {
     private m b;
     private com.tsf.shell.manager.c.a.a.ContactModel c;
-    private com.tsf.shell.utils.c e = new com.tsf.shell.utils.c();
+    private com.tsf.shell.utils.ReusableBitmapHolder e = new com.tsf.shell.utils.ReusableBitmapHolder();
     private TextureElement d = new TextureElement(0, false);
     private k a = new k(d.a, d.a, false);
 

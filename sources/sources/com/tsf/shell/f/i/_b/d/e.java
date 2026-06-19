@@ -1,6 +1,6 @@
 package com.tsf.shell.f.i._b.d;
 
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e {
@@ -24,7 +24,7 @@ public class e {
     }
 
     private void c() {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         this.a = new com.censivn.C3DEngine.b.g.d();
         this.a.l(1.2f);
         this.a.m(1.2f);
@@ -62,7 +62,7 @@ public class e {
             public void a() {
                 e.this.i.ba();
                 if (e.this.i.x) {
-                    b.m.e(e.this.i);
+                    WorkspaceShortcutItem.m.e(e.this.i);
                 }
             }
         };
@@ -80,7 +80,7 @@ public class e {
     }
 
     public void a(float f) {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         if (jVar.c().folder.frontPlaneEnable) {
             this.i.q.scale().setAll(f, f, 1.0f);
             this.i.q.position().x = jVar.c().folder.backPlaneX;
@@ -102,7 +102,7 @@ public class e {
     }
 
     public void b() {
-        j jVar = b.l;
+        j jVar = WorkspaceShortcutItem.l;
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         if (this.i.q != null) {
             com.censivn.C3DEngine.b.g.c.a(this.i.q);
@@ -152,7 +152,7 @@ public class e {
         com.censivn.C3DEngine.b.g.c.a(iVar);
         com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
         this.i.aZ();
-        b.m.d(this.i);
+        WorkspaceShortcutItem.m.d(this.i);
         com.censivn.C3DEngine.b.g.c.a(this.i.q);
         com.censivn.C3DEngine.b.g.c.a(this.i.q, 300, this.a);
         com.censivn.C3DEngine.b.g.c.a(this.i.p);

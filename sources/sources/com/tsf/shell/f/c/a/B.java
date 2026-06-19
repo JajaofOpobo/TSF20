@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.f.i.A;
 import com.tsf.shell.g;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -26,8 +26,8 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private ArrayList<d> m;
     private f r;
     private k s;
-    private com.tsf.shell.f.i.B u;
-    private com.tsf.shell.f.i.B v;
+    private com.tsf.shell.f.i.PageItem u;
+    private com.tsf.shell.f.i.PageItem v;
     private TextureElement w;
     private float z;
     public float a = 0.15f;
@@ -50,7 +50,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private B h = this;
     private com.tsf.shell.f.i.A p = new com.tsf.shell.f.i.A(this, this) { // from class: com.tsf.shell.f.c.a.b.1
         @Override // com.tsf.shell.f.i.A
-        public void a(com.tsf.shell.f.i.B bVar) {
+        public void a(com.tsf.shell.f.i.PageItem bVar) {
             bVar.f(b.this.h);
         }
     };
@@ -132,17 +132,17 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                     public void run() {
                         int iA = b.this.r.n.a(b.this.l, b.this.children(), b.this.children().size(), b.this.c, b.this.e, b.this.d, b.this.q, b.this.D.x, b.this.D.y);
                         if (iA == -3 || iA == -4) {
-                            b.this.a((com.tsf.shell.f.i.B) null);
+                            b.this.a((com.tsf.shell.f.i.PageItem) null);
                             b.this.c();
                             b.this.x = true;
                         } else if (iA == -1 || iA == -2) {
                             b.this.r.n();
-                            b.this.a((com.tsf.shell.f.i.B) null);
+                            b.this.a((com.tsf.shell.f.i.PageItem) null);
                         } else {
                             if (!b.this.r.r()) {
                                 b.this.r.m();
                             }
-                            b.this.a((com.tsf.shell.f.i.B) b.this.children().get(iA));
+                            b.this.a((com.tsf.shell.f.i.PageItem) b.this.children().get(iA));
                         }
                         b.this.n = false;
                         b.this.setAnimationObjectState(true);
@@ -155,7 +155,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         if (bVar != null) {
             this.u = bVar;
             if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
@@ -167,7 +167,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         this.w = null;
     }
 
-    private void b(final com.tsf.shell.f.i.B bVar) {
+    private void b(final com.tsf.shell.f.i.PageItem bVar) {
         if (bVar != null) {
             if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
@@ -197,14 +197,14 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         if (!this.x && this.b) {
             this.b = false;
             if (this.p.e()) {
-                if (this.u instanceof com.tsf.shell.f.i.C) {
-                    ((com.tsf.shell.f.i.C) this.u).ap();
+                if (this.u instanceof com.tsf.shell.f.i.ShortcutItem) {
+                    ((com.tsf.shell.f.i.ShortcutItem) this.u).ap();
                 }
             } else {
                 b(this.u);
             }
             this.u = null;
-            a((com.tsf.shell.f.i.B) null);
+            a((com.tsf.shell.f.i.PageItem) null);
             if (this.r.r()) {
                 g();
             } else {
@@ -220,7 +220,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     }
 
     @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.f.b
-    public void a(final com.tsf.shell.f.i.C cVar) {
+    public void a(final com.tsf.shell.f.i.ShortcutItem cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.a.b.5
             @Override // java.lang.Runnable
             public void run() {
@@ -506,9 +506,9 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             a(this.l.remove(0));
             g();
             l();
-            if (iVar instanceof com.tsf.shell.f.i.B) {
-                ((com.tsf.shell.f.i.B) iVar).c = false;
-                ((com.tsf.shell.f.i.B) iVar).B();
+            if (iVar instanceof com.tsf.shell.f.i.PageItem) {
+                ((com.tsf.shell.f.i.PageItem) iVar).c = false;
+                ((com.tsf.shell.f.i.PageItem) iVar).B();
             }
             if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
                 ((com.tsf.shell.f.i.b.e.b) iVar).aM();
@@ -545,10 +545,10 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         return iA;
     }
 
-    private void c(com.tsf.shell.f.i.B bVar) {
+    private void c(com.tsf.shell.f.i.PageItem bVar) {
     }
 
-    private void d(com.tsf.shell.f.i.B bVar) {
+    private void d(com.tsf.shell.f.i.PageItem bVar) {
     }
 
     @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
@@ -565,7 +565,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     private void i(com.tsf.shell.f.e.F fVar) {
         this.H.d(fVar);
         this.H = null;
-        c((com.tsf.shell.f.i.B) fVar);
+        c((com.tsf.shell.f.i.PageItem) fVar);
     }
 
     private boolean a(int i, Number3d number3d) {
@@ -583,7 +583,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
     @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
     public void a(com.tsf.shell.f.e.F fVar) {
         this.G = true;
-        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
+        com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         c(bVar);
         this.o.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
         this.F = a((i) fVar, this.C);
@@ -609,7 +609,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             com.tsf.shell.f.i.b.d.b bVar = (com.tsf.shell.f.i.b.d.b) getChildAt(size);
             if (this.H == null) {
                 this.H = bVar;
-                d((com.tsf.shell.f.i.B) fVar);
+                d((com.tsf.shell.f.i.PageItem) fVar);
                 this.H.a(fVar);
             }
             this.H.f(fVar);
@@ -632,20 +632,20 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         if (this.H != null) {
             i(fVar);
         }
-        d((com.tsf.shell.f.i.B) fVar);
+        d((com.tsf.shell.f.i.PageItem) fVar);
         removeChild(this.o);
     }
 
     @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
     public boolean b(com.tsf.shell.f.e.F fVar) {
-        return fVar instanceof com.tsf.shell.f.i.C;
+        return fVar instanceof com.tsf.shell.f.i.ShortcutItem;
     }
 
     @Override // com.tsf.shell.f.c.a.c, com.tsf.shell.f.e.F
     public void e(com.tsf.shell.f.e.F fVar) {
         boolean zB;
         this.G = false;
-        com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) fVar;
+        com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         if (this.H != null) {
             zB = this.H.b(fVar);
             if (zB) {
@@ -674,10 +674,10 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
             }
             super.addChildAt(bVar, this.F);
             a(bVar, true);
-            if (bVar instanceof com.tsf.shell.f.i.C) {
-                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVar;
+            if (bVar instanceof com.tsf.shell.f.i.ShortcutItem) {
+                com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) bVar;
                 if (cVar.as()) {
-                    Iterator<com.tsf.shell.f.i.C> it = cVar.av().iterator();
+                    Iterator<com.tsf.shell.f.i.ShortcutItem> it = cVar.av().iterator();
                     while (it.hasNext()) {
                         a(it.next(), true);
                     }
@@ -689,7 +689,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, boolean z) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, boolean z) {
         bVar.a(this.p);
         bVar.c = true;
         if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
@@ -710,7 +710,7 @@ public class B extends c implements com.tsf.shell.f.i.A.InterfaceC0113a {
                 b.this.I = false;
                 final String str = "";
                 for (i iVar : b.this.children()) {
-                    str = iVar instanceof com.tsf.shell.f.i.B ? str + ((com.tsf.shell.f.i.B) iVar).K().id + "," : str;
+                    str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
                     @Override // java.lang.Runnable

@@ -78,7 +78,7 @@ public class i extends Fragment implements View.OnClickListener, k.h {
             public void onScrollStateChanged(AbsListView absListView, int i) {
                 if (i != 2) {
                     i.this.d.b(false);
-                } else if (!com.tsf.shell.plugin.themepicker.utils.h.c()) {
+                } else if (!com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.c()) {
                     i.this.d.b(true);
                 }
             }
@@ -96,7 +96,7 @@ public class i extends Fragment implements View.OnClickListener, k.h {
                     int width = (i.this.e.getWidth() / iFloor) - i.this.b;
                     i.this.c.b(iFloor);
                     i.this.c.a(width);
-                    if (com.tsf.shell.plugin.themepicker.utils.h.e()) {
+                    if (com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.e()) {
                         i.this.e.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
                         i.this.e.getViewTreeObserver().removeGlobalOnLayoutListener(this);

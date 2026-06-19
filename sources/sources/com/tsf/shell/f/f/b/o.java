@@ -10,7 +10,7 @@ public class o extends com.tsf.shell.f.f.l {
     }
 
     @Override // com.tsf.shell.f.f.l
-    public void a(com.tsf.shell.f.f.g gVar, float f) {
+    public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         Number3d number3dScale = gVar.scale();
         Number3d number3dScale2 = gVar.scale();
         float fAbs = 1.0f - (Math.abs(f) * 0.7f);

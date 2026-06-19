@@ -3,8 +3,8 @@ package com.tsf.shell.f.e;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.b;
-import com.tsf.shell.f.i.B;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.f.i.PageItem;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -18,12 +18,12 @@ public class A {
     private static TextureElement g;
     private static int h;
     private static int i;
-    private static com.tsf.shell.f.i.B j;
+    private static com.tsf.shell.f.i.PageItem j;
     private static com.censivn.C3DEngine.b.c.b.a k;
     private static q l;
     private static g m;
-    private static com.tsf.shell.f.i.B n;
-    private static com.tsf.shell.f.i.B o;
+    private static com.tsf.shell.f.i.PageItem n;
+    private static com.tsf.shell.f.i.PageItem o;
     private static ArrayList<com.censivn.C3DEngine.b.f.i> p;
     private static boolean q = false;
 
@@ -115,7 +115,7 @@ public class A {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:47:0x00e6 A[PHI: r2 r5
-  0x00e6: PHI (r2v6 com.tsf.shell.f.i.B) = (r2v1 com.tsf.shell.f.i.B), (r2v1 com.tsf.shell.f.i.B), (r2v10 com.tsf.shell.f.i.B), (r2v10 com.tsf.shell.f.i.B) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]
+  0x00e6: PHI (r2v6 com.tsf.shell.f.i.PageItem) = (r2v1 com.tsf.shell.f.i.PageItem), (r2v1 com.tsf.shell.f.i.PageItem), (r2v10 com.tsf.shell.f.i.PageItem), (r2v10 com.tsf.shell.f.i.PageItem) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]
   0x00e6: PHI (r5v2 float) = (r5v1 float), (r5v1 float), (r5v4 float), (r5v4 float) binds: [B:9:0x001f, B:11:0x0023, B:18:0x004d, B:20:0x0051] A[DONT_GENERATE, DONT_INLINE]] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -129,8 +129,8 @@ public class A {
         throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e.a.a(float, float):void");
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar) {
-        com.tsf.shell.f.f.g gVarZ = bVar.z();
+    public static void a(com.tsf.shell.f.i.PageItem bVar) {
+        com.tsf.shell.f.f.WorkspacePage gVarZ = bVar.z();
         if (!q && gVarZ != null) {
             p = gVarZ.R();
             q = true;

@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.tsf.shell.Home;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -15,7 +15,7 @@ public class k {
     private static int b = 800;
     private b c;
     private com.censivn.C3DEngine.b.f.j d;
-    private com.tsf.shell.f.i.B e;
+    private com.tsf.shell.f.i.PageItem e;
     private int h;
     private int i;
     private int j;
@@ -152,7 +152,7 @@ public class k {
                             com.censivn.C3DEngine.b.g.c.a(k.this.e);
                             com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar2);
                         }
-                        com.tsf.shell.f.f.g gVarN = com.tsf.shell.manager.app.StateHub.n();
+                        com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
                         k.this.e.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
@@ -262,7 +262,7 @@ public class k {
         if (this.i <= b && this.a) {
             float x = motionEvent2.getX();
             float y = motionEvent2.getY();
-            int iB = (int) (com.tsf.shell.utils.x.b(x, y, this.l, this.m) / 5.0f);
+            int iB = (int) (com.tsf.shell.utils.GraphicsEngineBridge.b(x, y, this.l, this.m) / 5.0f);
             if (iB >= 1) {
                 float f = (x - this.l) / iB;
                 float f2 = (y - this.m) / iB;

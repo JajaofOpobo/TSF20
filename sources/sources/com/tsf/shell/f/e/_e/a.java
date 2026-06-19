@@ -2,7 +2,7 @@ package com.tsf.shell.f.e._e;
 
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends j {

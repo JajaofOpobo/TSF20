@@ -24,7 +24,7 @@ public class c extends j implements a.InterfaceC0098a {
     private a j;
     private e l;
     private TextureElement k = new TextureElement(0, false);
-    private com.tsf.shell.utils.c m = new com.tsf.shell.utils.c();
+    private com.tsf.shell.utils.ReusableBitmapHolder m = new com.tsf.shell.utils.ReusableBitmapHolder();
     private ArrayList<d> i = new ArrayList<>();
     private Number3d e = new Number3d();
     private g c = new g(com.tsf.shell.f.h.a.a.d.b, com.tsf.shell.f.h.a.a.d.b);
@@ -85,7 +85,7 @@ public class c extends j implements a.InterfaceC0098a {
         }
     }
 
-    @Override // com.tsf.shell.f.e.h.a.InterfaceC0098a
+    @Override // com.tsf.shell.f.e.h.PhotoPicker.InterfaceC0098a
     public void a(Bitmap bitmap) {
         if (this.f != null) {
             com.censivn.C3DEngine.A.g().a(this.k, bitmap);

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.c.d;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.f.j;
+import com.tsf.shell.f.f.PageAnimationState;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -47,7 +47,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
                 }
             }
         });
-        com.tsf.shell.f.f.j.a(this.a, 1);
+        com.tsf.shell.f.f.PageAnimationState.a(this.a, 1);
     }
 
     public static class a {
@@ -173,8 +173,8 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void dispatchDraw() {
         if (b != 0 && this.l) {
-            this.j = com.tsf.shell.f.f.j.c(this.a);
-            com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.j.c(), this.j.b);
+            this.j = com.tsf.shell.f.f.PageAnimationState.c(this.a);
+            com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.PageAnimationState.c(), this.j.b);
             if (b == 3) {
                 com.tsf.shell.manager.app.LauncherAppInfo.g().dispatchDraw();
                 com.tsf.shell.manager.app.TextureCache.b();
@@ -232,9 +232,9 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     }
 
     private j.a g() {
-        j.a aVarC = com.tsf.shell.f.f.j.c(this.a);
+        j.a aVarC = com.tsf.shell.f.f.PageAnimationState.c(this.a);
         aVarC.a = this.a;
-        com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.j.c(), aVarC.b);
+        com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.PageAnimationState.c(), aVarC.b);
         super.dispatchDraw();
         com.tsf.shell.manager.app.TextureCache.b();
         return aVarC;

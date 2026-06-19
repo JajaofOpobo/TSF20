@@ -39,7 +39,7 @@ public class c {
         if (!this.g) {
             this.a.add(this.h);
         }
-        Iterator<Integer> it = com.tsf.shell.utils.h.a(e.n(), ",", false).iterator();
+        Iterator<Integer> it = com.tsf.shell.utils.ItemInfoListSorter.a(e.n(), ",", false).iterator();
         while (it.hasNext()) {
             A aVarB = b(it.next().intValue());
             if (aVarB != null) {

@@ -12,7 +12,7 @@ import com.tsf.shell.Home;
 import com.tsf.shell.f.i.b.e.b;
 import com.tsf.shell.f.i.b.e.h;
 import com.tsf.shell.theme.inside.ThemeListsManager;
-import com.tsf.shell.utils.k;
+import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMoreInfoLayout extends j {
@@ -63,7 +63,7 @@ public class ThemeMoreInfoLayout extends j {
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null) {
-                    com.tsf.shell.utils.a.a(ThemeMoreInfoLayout.this.mThemeInfo.packagename);
+                    com.tsf.shell.utils.PackageManagerHelper.a(ThemeMoreInfoLayout.this.mThemeInfo.packagename);
                 }
             }
         });

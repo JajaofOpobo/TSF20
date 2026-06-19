@@ -21,8 +21,8 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.description.ThemeFolderDescription;
 import com.tsf.shell.theme.inside.mix.ThemeFolderManager;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -190,10 +190,10 @@ public class j implements e.a {
     }
 
     private void n() {
-        N = new i(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, true, c());
+        N = new ScrollingIndicator(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, true, c());
         N.visible(false);
         N.alpha(0.0f);
-        O = new i(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, false, c());
+        O = new ScrollingIndicator(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, false, c());
         O.visible(false);
         O.alpha(0.0f);
     }
@@ -204,9 +204,9 @@ public class j implements e.a {
     }
 
     public void k() {
-        this.B = x.b(b.d.widget_folder_add_button, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
-        this.C = x.b(b.d.widget_folder_multi_choice, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
-        this.D = x.b(b.d.widget_folder_rename, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.B = x.b(WorkspaceShortcutItem.d.widget_folder_add_button, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.C = x.b(WorkspaceShortcutItem.d.widget_folder_multi_choice, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
+        this.D = x.b(WorkspaceShortcutItem.d.widget_folder_rename, com.tsf.shell.manager.g.LayoutDimensionConstants.i, com.tsf.shell.manager.g.LayoutDimensionConstants.i);
         if (c().folder.backPlaneEnable) {
             Bitmap bitmapFromCache = c().getBitmapFromCache(ThemeFolderDescription.BACK_PLANE, c().folder.backPlaneWidth, c().folder.backPlaneHeight);
             if (bitmapFromCache == null) {
@@ -256,22 +256,22 @@ public class j implements e.a {
             this.J.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.J) { // from class: com.tsf.shell.f.i._b.d.j.3
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                    if (b.k != null) {
-                        b.k.aF().a(motionEvent, motionEvent2, f, f2);
+                    if (WorkspaceShortcutItem.k != null) {
+                        WorkspaceShortcutItem.k.aF().a(motionEvent, motionEvent2, f, f2);
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                    if (b.k != null) {
-                        b.k.aF().a(f2);
+                    if (WorkspaceShortcutItem.k != null) {
+                        WorkspaceShortcutItem.k.aF().a(f2);
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void g(MotionEvent motionEvent) {
-                    if (b.k != null) {
-                        b.k.aF().a(0.0f);
+                    if (WorkspaceShortcutItem.k != null) {
+                        WorkspaceShortcutItem.k.aF().a(0.0f);
                     }
                 }
             });
@@ -305,7 +305,7 @@ public class j implements e.a {
             i = 0;
         }
         if (c().folder.frontPlaneEnable) {
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = Z.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA2 = Z.a(ScrollingIndicator);
             bVarA2.b(c().folder.frontPlaneWidth);
             bVarA2.d(c().folder.frontPlaneHeight);
             bVarA2.m.x = c().folder.frontPlaneX;
@@ -314,7 +314,7 @@ public class j implements e.a {
             i++;
         }
         if (c().folder.sizePlaneEnable) {
-            com.censivn.C3DEngine.b.f._a.b bVarA3 = Z.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA3 = Z.a(ScrollingIndicator);
             bVarA3.b(c().folder.sizePlaneWidth);
             bVarA3.d(c().folder.sizePlaneHeight);
             bVarA3.m.x = c().folder.sizePlaneX;
@@ -326,7 +326,7 @@ public class j implements e.a {
         float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
         for (int i3 = 0; i3 < c().folder.sampleCount; i3++) {
             ThemeFolderDescription.SystemFolderChild systemFolderChild = c().folder.getSampleInformaiton().get(i3);
-            com.censivn.C3DEngine.b.f._a.b bVarA4 = Z.a(i);
+            com.censivn.C3DEngine.b.f._a.b bVarA4 = Z.a(ScrollingIndicator);
             bVarA4.b(f);
             bVarA4.d(f2);
             bVarA4.m.x = systemFolderChild.position.x + c().folder.childContainerX;
@@ -343,7 +343,7 @@ public class j implements e.a {
         Z.minY();
         Z.maxX();
         Z.maxY();
-        com.censivn.C3DEngine.b.f._a.b bVarA5 = Z.a(i);
+        com.censivn.C3DEngine.b.f._a.b bVarA5 = Z.a(ScrollingIndicator);
         bVarA5.b(c().folder.textPlaneWidth);
         bVarA5.d(c().folder.textPlaneHeight);
         bVarA5.m.x = c().folder.textPlaneX;
@@ -417,8 +417,8 @@ public class j implements e.a {
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 w.b();
-                if (b.k != null) {
-                    j.this.a(b.k);
+                if (WorkspaceShortcutItem.k != null) {
+                    j.this.a(WorkspaceShortcutItem.k);
                 }
             }
         };
@@ -430,19 +430,19 @@ public class j implements e.a {
             @Override // java.lang.Runnable
             public void run() {
                 Context contextD = com.censivn.C3DEngine.A.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
-                final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(WorkspaceShortcutItem.g.dialog_rename, (ViewGroup) null);
+                final EditText editText = (EditText) viewInflate.findViewById(WorkspaceShortcutItem.e.username_edit);
                 editText.setText(bVar.aN());
                 AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
-                builder.setTitle(contextD.getString(b.i.rename_folder_title));
+                builder.setTitle(contextD.getString(WorkspaceShortcutItem.i.rename_folder_title));
                 builder.setView(viewInflate);
-                builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i._b.d.j.5.1
+                builder.setPositiveButton(contextD.getString(WorkspaceShortcutItem.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i._b.d.j.5.1
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialogInterface, int i) {
                         bVar.a(editText.getText().toString());
                     }
                 });
-                builder.setNegativeButton(contextD.getString(b.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i._b.d.j.5.2
+                builder.setNegativeButton(contextD.getString(WorkspaceShortcutItem.i.public_action_cancel), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i._b.d.j.5.2
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }
@@ -577,6 +577,6 @@ public class j implements e.a {
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
         o();
-        b.a(i, i2, i3, i4);
+        WorkspaceShortcutItem.a(i, i2, i3, i4);
     }
 }

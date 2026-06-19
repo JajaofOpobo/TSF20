@@ -102,17 +102,113 @@
 ## Key Findings
 - All 27 `manager/app/` + all 6 `e/` + all 79 remaining `manager/` classes renamed = **~112 manager classes total**
 - **0 remaining single-letter files in `manager/` tree**
-- ~786 single-letter files remain elsewhere: `f/` (520), `widget/` (91), `plugin/` (81), `preference/` (28), `utils/` (26), `services/` (5), `theme/` (2)
-- Only 2 of 19 v1 `h` package classes map to `manager/app/` (AppListManager, LauncherAppInfo)
-- The other 17 v1 `h` classes (c-s) are UI/view widgets that moved to `e/` package in v3
-- `manager/app/` contains many new v3 management/utility classes without v1 equivalents
-- 5 stub files created for missing decompiled classes (PlaceholderManager, ActionHandler, PositionAnimator, SimpleHandler, LayoutContainer)
+### Session 3: `utils/` (26 classes) + `services/` (5 classes) = 31 classes
+
+#### `utils/` (26 files a-z)
+- a → PackageManagerHelper, b → OEMComponentResolver, c → ReusableBitmapHolder, d → LazyBitmapFactory
+- e → SelectionDotRenderer, f → PercentToAlphaConverter, g → StatusBarHelper, h → ItemInfoListSorter
+- i → IntentResolver, j → DimensionParser, k → MarketLinkHandler, l → ErrorThrower
+- m → FlurryAnalyticsLogger, n → FeedbackComposer, o → FileSystemHelper, p → ColorMatrixImageFilter
+- q → BitmapTransformationHelper, r → DimensionHelper, s → GLShaderCompiler, t → SignatureVerifier
+- u → DeviceInfoCollector, v → ExternalFilesDirResolver, w → HapticFeedbackManager, x → GraphicsEngineBridge
+- y → PercentClamper, z → ZipArchiver
+
+#### `services/` (5 classes)
+- A → NotifierConnector, b → ForegroundServiceManager, c → ServiceLifecycleManager, d → ToggleServiceConnector
+- a/a → NotifierCounterInterface
+
+### Session 4: `f/` workspace3D → v1 mapping (7 classes renamed)
+
+| Old File | New Name | Description | Evidence Source |
+|----------|----------|-------------|----------------|
+| `f/f/g.java` | `WorkspacePage.java` | Main workspace page container | v1 workspace3D.h.a (943 lines, full algorithm) |
+| `f/i/B.java` | `PageItem.java` | Base page item (extends C3DEngine.b.v) | v1 workspace3D.k.j |
+| `f/i/C.java` | `ShortcutItem.java` | App shortcut item (extends PageItem) | v1 workspace3D.k inner class |
+| `f/f/j.java` | `PageAnimationState.java` | Animation state tracking utility | Inferred from code (state array/dirty management) |
+| `f/f/a/h.java` | `FolderPage.java` | Folder content page (extends WorkspacePage) | v3_to_v1_mapping.json: workspace3D.h.a.x |
+| `f/h/d.java` | `WorkspaceTouchController.java` | Workspace touch/scroll event handler | v3_to_v1_mapping.json: workspace3D.e.a |
+| `f/e/c/a/d.java` | `PageScrollState.java` | Page scroll transition state (extends VObject3dContainer, 13 methods, onDrawStart) | Frida method enumeration trace |
+
+### Session 5: Priority Targets from Frida Mapping (7 classes)
+| v3 File | New Name | Description | v1 Source |
+|---------|----------|-------------|-----------|
+| `f/i/a/a.java` | `WallpaperTouchHandler.java` | Wallpaper touch events (tap/swipe) | workspace3D.a.a |
+| `f/i/_b/c/a.java` | `WidgetPageItem.java` | Widget item on workspace (extends PageItem) | workspace3D.k.c.a.a |
+| `f/i/_b/d/b.java` | `WorkspaceShortcutItem.java` | Main workspace shortcut (extends ShortcutItem) | workspace3D.k.c.b.c |
+| `f/i/_b/d/i.java` | `ScrollingIndicator.java` | Folder page indicator dots | workspace3D.k.c.b.an |
+| `f/i/_b/d/k.java` | `ItemPositionAnimator.java` | Item grid position/animation controller | workspace3D.g.p |
+| `f/c/a/b/a.java` | `DrawerMenuParams.java` | Drawer menu animation params struct | workspace3D.e.c.a |
+| `f/e/h/a.java` | `PhotoPicker.java` | Photo picker activity result handler | workspace3D.g.e.d |
+
+### Session 6: Frida Runtime Data Discoveries
+
+#### Loaded Classes (Frida enumeration, stable 1320 classes)
+- ~93% loaded by frame 1 (1224 of 1320)
+- Remaining ~7% = alarm widgets + C3DEngine lazy objects
+- No KSM classes loaded
+
+#### Scene Graph (Frida tree dump, 57 mutations, 3 roots)
+- Root: `f.h.a.a.a.b` → `VObject3dContainer` → `VObject3dContainer` (3 kids: `f.e.c.a.b`, `f.e.c.a.c`, `f.e.c.a.b`)
+- Each page in 3-page workspace = one `f.e.c.a.b` (PageContainer) with `f.e.c.a.c` as special type
+- Other roots: wallpaper menu buttons, alarm widget
+
+#### Page Transition Pipeline (Frida trace, known hooks)
+- `f.e.c.a.a` → `a(b,b)` and `b(float,float)` — transition orchestrator (takes two page containers)
+- `f.e.c.a.d` → `PageScrollState` — 13 methods, per-frame scroll state with onDrawStart
+- `f.e.c.a.e` → `a(e)`, `b(e)` — comparator for scroll state ordering (2 methods)
+
+#### v3_to_v1_mapping.json (262 confirmed mappings)
+- 24 `f.*` mappings confirmed via Frida Class.forName reflection
+- Key C3DEngine b.f.* renames: b.f.f→d.b, b.f.i→b.r, b.f.j→b.v, b.f.k→e.b
+
+#### Subpackage Structure (from Frida data + v3 source)
+- `f.e.c.a` = page scroll/transition (containers: a/b/c, state: d, comparator: e)
+- `f.f.a` = page content types (A/B/C/D/e/f/g/FolderPage/h + subpackages _a-d, b-d)
+- `f.f.b` = transition effects (A + a-t = 21 files: Cloth, Cube, Flip, etc.)
+- `f.h` = workspace interaction (A/B/b/c/WorkspaceTouchController/e/f)
+- `f.i._b` = item subpackages (a-e: item info, item animation, drawing)
+- `f.e._a` through `f.e._i` = 9 underscore-subpackages (layout strategies, state machines)
+
+### Next Priority Targets (from high-confidence mappings)
+Priority 1 (v3_to_v1_mapping.json confirmed, ready to rename):
+- `f.i.a.a` → `workspace3D.a.a` - Widget page item type
+- `f.i._b.c.a` → `workspace3D.k.c.a.a` - Page item animation config
+- `f.i._b.d.b` → `workspace3D.k.c.b.c` - Item animation data
+- `f.i._b.d.i` → `workspace3D.k.c.b.an` - Item animation state
+- `f.i._b.d.k` → `workspace3D.g.p` - Item container type
+- `f.c.a.b.a` → `workspace3D.e.c.a` - Drawer menu params struct
+- `f.e.h.a.InterfaceC0098a` → `workspace3D.g.e.d` - Layout interface
+
+Priority 2 (Frida scene graph evidence):
+- `f.h.a.a.a.b` → Root scene node (1 kid, 3 total roots)
+- `f.e.c.a.b` → Page container (used in scene graph, 2 methods)
+
+Priority 3 (needs v1 source analysis):
+- `f.f.f` → Transition base class (100 lines, parent of l + all 20 transition effects)
+- `f.f.l` → TransitionEffect (61 lines, abstract page transition, extends f)
+- `f.f.e` → Transition data/params
+- `f.f.b/A` → ClothTransition (capital A = first transition)
+- `f.f.b/a-t` → Other transitions (Cube, Flip, Cover, etc.)
+
+## Available Frida Runtime Data
+- `docs/runtime_analysis/v3_to_v1_mapping.json`: 262 confirmed v3→v1 mappings from runtime Class.forName reflection
+- `docs/runtime_analysis/all_loaded_classes.txt`: 1266 loaded classes at runtime
+- `docs/runtime_analysis/method_enumeration_output.txt`: Full method enumeration for all loaded classes
+- `docs/runtime_analysis/scene_graph_trace.txt`: Scene tree dump (57 mutations, 3 roots)
+- `docs/runtime_analysis/scripts/`: 28 Frida scripts (transition trace, touch trace, scene graph, etc.)
+- `docs/runtime_analysis/deobfuscation_dictionary.json`: 197 manually verified v3→v1 mappings
+- `docs/runtime_analysis/class_load_timing.txt`: Class load timing (667-831 pre-frame, 1224 by frame 1)
+- `docs/v1_v3_mappings/high_confidence_mappings.txt`: 268 score≥5 automated mappings
+- `docs/v1_v3_mappings/all_candidates.json`: 1099 candidate mappings total
+
+## Simple-Name Reference Issue
+FQN-based rename (e.g., replacing `com.tsf.shell.f.f.h` → `com.tsf.shell.f.f.a.FolderPage`) doesn't catch same-package short refs like `h` or `h.method()` in import/extends/field declarations within the same package. A targeted fix script (`fix_refs_final.py` pattern) is needed for those cases.
 
 ## Remaining Shell Errors
 ~100 pre-existing compilation errors in shell core files (Home.java, manager/bind/, f/c.java JADX artifacts, etc.) — mostly missing class references, resource ID issues, and JADX decompilation artifacts.
 
 ## V1 Source Reference
-- V1 sources: `/home/jaja/Documents/TSF20/sources/v1-sources/app/src/main/java/com/tsf/shell/h/`
+- V1 sources: `/home/jaja/Documents/TSF20/sources/v1-sources/app/src/main/java/com/tsf/shell/workspace3D/` (primary match for v3 f/ package)
 - V3 sources: `/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/`
 
 ## Commands

@@ -9,13 +9,13 @@ import java.util.Iterator;
 public class E extends com.censivn.C3DEngine.b.f.j {
     private static E a = new E();
     private static Number3d b = new Number3d();
-    private static com.tsf.shell.f.i.C c;
+    private static com.tsf.shell.f.i.ShortcutItem c;
 
     public E() {
         renderChildren(false);
     }
 
-    public static boolean a(com.tsf.shell.f.i.C cVar) {
+    public static boolean a(com.tsf.shell.f.i.ShortcutItem cVar) {
         return cVar == c && a.numChildren() > 0;
     }
 
@@ -23,7 +23,7 @@ public class E extends com.censivn.C3DEngine.b.f.j {
         return a.numChildren();
     }
 
-    public static boolean b(com.tsf.shell.f.i.C cVar) {
+    public static boolean b(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (cVar != c || a.numChildren() <= 0) {
             return false;
         }
@@ -36,24 +36,24 @@ public class E extends com.censivn.C3DEngine.b.f.j {
         return false;
     }
 
-    public static void c(com.tsf.shell.f.i.C cVar) {
+    public static void c(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (a.parent() == null) {
             cVar.an();
             c = cVar;
             com.tsf.shell.manager.app.TaskScheduler.a(A);
         } else if (c != cVar) {
-            com.tsf.shell.utils.l.a(a, "FollowingContainer exist FollowingTarget:" + c);
+            com.tsf.shell.utils.ErrorThrower.a(a, "FollowingContainer exist FollowingTarget:" + c);
         }
     }
 
-    public static void a(ArrayList<com.tsf.shell.f.i.C> arrayList) {
-        Iterator<com.tsf.shell.f.i.C> it = arrayList.iterator();
+    public static void a(ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList) {
+        Iterator<com.tsf.shell.f.i.ShortcutItem> it = arrayList.iterator();
         while (it.hasNext()) {
             d(it.next());
         }
     }
 
-    public static void d(com.tsf.shell.f.i.C cVar) {
+    public static void d(com.tsf.shell.f.i.ShortcutItem cVar) {
         cVar.visible(true);
         cVar.alpha(255.0f);
         cVar.an();
@@ -64,17 +64,17 @@ public class E extends com.censivn.C3DEngine.b.f.j {
         a.addChild(cVar);
     }
 
-    public static ArrayList<com.tsf.shell.f.i.C> b() {
-        ArrayList<com.tsf.shell.f.i.C> arrayList = new ArrayList<>();
+    public static ArrayList<com.tsf.shell.f.i.ShortcutItem> b() {
+        ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList = new ArrayList<>();
         Iterator<com.censivn.C3DEngine.b.f.i> it = a.children().iterator();
         while (it.hasNext()) {
-            arrayList.add((com.tsf.shell.f.i.C) it.next());
+            arrayList.add((com.tsf.shell.f.i.ShortcutItem) it.next());
         }
         return arrayList;
     }
 
-    public static ArrayList<com.tsf.shell.f.i.C> c() {
-        ArrayList<com.tsf.shell.f.i.C> arrayListB = b();
+    public static ArrayList<com.tsf.shell.f.i.ShortcutItem> c() {
+        ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListB = b();
         while (a.numChildren() > 0) {
             a.getChildAt(0).removeFromParent();
         }

@@ -129,7 +129,7 @@ public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC00
     }
 
     public static void a(com.tsf.shell.f.i.b.e.b bVar) {
-        com.tsf.shell.f.f.g gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
+        com.tsf.shell.f.f.WorkspacePage gVarD = com.tsf.shell.manager.app.StateHub.d(bVar.K().screen);
         bVar.ac();
         gVarD.a(bVar);
     }
@@ -238,7 +238,7 @@ public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC00
             }
         }
         map.clear();
-        for (com.tsf.shell.f.i.B bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
+        for (com.tsf.shell.f.i.PageItem bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
             if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
                 ((com.tsf.shell.f.i.b.d.b) bVar).aQ();
             }

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.a;
 import com.tsf.shell.f.i.c.g;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -120,7 +120,7 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
             }
 
             @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
-            public void a(com.tsf.shell.f.i.B bVar, g gVar) {
+            public void a(com.tsf.shell.f.i.PageItem bVar, g gVar) {
                 bVar.scale().setAll(0.0f, 0.0f, 1.0f);
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.0f);

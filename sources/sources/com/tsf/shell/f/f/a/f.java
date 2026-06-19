@@ -344,26 +344,26 @@ public class f extends j implements b.a {
     public void b(int i, KeyEvent keyEvent) {
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent);
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.f != null) {
             this.f.b(cVar, motionEvent);
         }
     }
 
-    public void c(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void c(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         this.h.c(cVar, motionEvent);
         if (this.f != this.h && this.f != this.k) {
             b(this.h);
         }
     }
 
-    public void d(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void d(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.f == null) {
             b(this.h);
         }
@@ -372,25 +372,25 @@ public class f extends j implements b.a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent, motionEvent2);
         }
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
             this.f.a(cVar, motionEvent, motionEvent2, f, f2);
         }
     }
 
-    public void b(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
+    public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
             this.f.b(cVar, motionEvent, motionEvent2, f, f2);
         }
     }
 
-    public void e(com.tsf.shell.f.i.C cVar, MotionEvent motionEvent) {
+    public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
             ((com.tsf.shell.f.i.b.d.b) cVar).aR();
             return;

@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
 import com.tsf.shell.theme.inside.element.ThemeElementCacher;
 import com.tsf.shell.theme.inside.mix.menu.item.ThemeMixerUtils;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 import java.io.InputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

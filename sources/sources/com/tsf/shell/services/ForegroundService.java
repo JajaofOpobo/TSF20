@@ -11,7 +11,7 @@ import android.util.Log;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.preference.SettingAdvancedPerferenceActivity;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ForegroundService extends Service {

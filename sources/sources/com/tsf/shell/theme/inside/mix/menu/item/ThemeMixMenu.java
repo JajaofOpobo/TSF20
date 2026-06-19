@@ -9,7 +9,7 @@ import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 

@@ -136,12 +136,12 @@ public class c extends i {
         com.tsf.shell.d.b.a(this.a);
         this.b.c(com.tsf.shell.manager.b.ConfigManager.J());
         this.e.c(this.k);
-        if (com.tsf.shell.utils.g.b()) {
+        if (com.tsf.shell.utils.StatusBarHelper.b()) {
             this.c.c(this.m);
         } else {
             c(this.c);
         }
-        if (com.tsf.shell.utils.g.c()) {
+        if (com.tsf.shell.utils.StatusBarHelper.c()) {
             this.d.c(this.l);
         } else {
             c(this.d);
@@ -160,11 +160,11 @@ public class c extends i {
                 if (com.tsf.shell.manager.b.ConfigManager.P() != c.this.k) {
                     com.tsf.shell.manager.app.ObserverManager.a(!c.this.k);
                 }
-                if (com.tsf.shell.utils.g.c() && com.tsf.shell.manager.b.ConfigManager.O() != c.this.l) {
+                if (com.tsf.shell.utils.StatusBarHelper.c() && com.tsf.shell.manager.b.ConfigManager.O() != c.this.l) {
                     com.censivn.C3DEngine.b.c.e eVar = com.tsf.shell.manager.app.ObserverManager;
                     com.censivn.C3DEngine.b.c.e.b(Home.b(), c.this.l, true);
                 }
-                if (com.tsf.shell.utils.g.b() && com.tsf.shell.manager.b.ConfigManager.N() != c.this.m) {
+                if (com.tsf.shell.utils.StatusBarHelper.b() && com.tsf.shell.manager.b.ConfigManager.N() != c.this.m) {
                     com.tsf.shell.manager.app.ObserverManager.a((Activity) Home.b(), c.this.m, true);
                 }
             }

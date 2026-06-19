@@ -49,7 +49,7 @@ public class k {
         new c(context, str, bVar).c((Object[]) new Void[0]);
     }
 
-    public static class c extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, List<e>> {
+    public static class c extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Void, Void, List<e>> {
         private String a;
         private b e;
         private Context f;
@@ -61,7 +61,7 @@ public class k {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public List<e> a(Void... voidArr) {
             InputStream inputStreamA;
             if (this.a != null) {
@@ -96,7 +96,7 @@ public class k {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public void a(List<e> list) {
             this.e.a(list);
         }
@@ -104,11 +104,11 @@ public class k {
 
     public static g a(Context context, String str, h hVar) {
         g gVar = new g(context, str, hVar);
-        gVar.a(com.tsf.shell.plugin.themepicker.utils.a.c, new Void[0]);
+        gVar.a(com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c, new Void[0]);
         return gVar;
     }
 
-    public static class g extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, Void> {
+    public static class g extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Void, Void, Void> {
         private String a;
         private h e;
         private Context f;
@@ -120,7 +120,7 @@ public class k {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public Void a(Void... voidArr) {
             Context contextA = k.a(this.f, this.a);
             if (contextA != null) {
@@ -134,11 +134,11 @@ public class k {
 
     public static d b(Context context, String str, h hVar) {
         d dVar = new d(context, str, hVar);
-        dVar.a(com.tsf.shell.plugin.themepicker.utils.a.c, new Void[0]);
+        dVar.a(com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper.c, new Void[0]);
         return dVar;
     }
 
-    public static class d extends com.tsf.shell.plugin.themepicker.utils.a<Void, Void, Void> {
+    public static class d extends com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper<Void, Void, Void> {
         private String a;
         private h e;
         private Context f;
@@ -150,7 +150,7 @@ public class k {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // com.tsf.shell.plugin.themepicker.utils.a
+        @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         public Void a(Void... voidArr) {
             Context contextA = k.a(this.f, this.a);
             if (contextA != null) {

@@ -6,7 +6,7 @@ import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import com.tsf.shell.plugin.themepicker.utils.f;
+import com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends f {
@@ -17,7 +17,7 @@ public class a extends f {
         this.a = packageManager;
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected Bitmap a(Object obj) {
         return a((ResolveInfo) obj);
     }

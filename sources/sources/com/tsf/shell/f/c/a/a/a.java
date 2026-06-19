@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
-    public static com.tsf.shell.f.c.a.b.a a = new com.tsf.shell.f.c.a.b.a();
+    public static com.tsf.shell.f.c.a.b.DrawerMenuParams a = new com.tsf.shell.f.c.a.b.DrawerMenuParams();
     public static C0080a b = new C0080a();
     public int c;
     public boolean d;
@@ -86,7 +86,7 @@ public class a {
         return -3;
     }
 
-    public com.tsf.shell.f.c.a.b.a a(float f, float f2, float f3, float f4, int i) {
+    public com.tsf.shell.f.c.a.b.DrawerMenuParams a(float f, float f2, float f3, float f4, int i) {
         if (f < f3) {
             a.a = -1;
             return a;

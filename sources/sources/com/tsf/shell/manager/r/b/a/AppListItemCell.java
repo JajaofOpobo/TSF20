@@ -21,7 +21,7 @@ public class AppListItemCell extends com.tsf.shell.f.i.b.e.b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         if (this.p) {
             b.id = f.id;

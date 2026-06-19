@@ -11,7 +11,7 @@ import com.tsf.shell.plugin.themepicker.k;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.tsf.shell.plugin.themepicker.utils.e {
+public class b extends com.tsf.shell.plugin.themepicker.utils.SelectionDotRenderer {
     private Context e;
 
     protected b(Context context, int i, int i2) {
@@ -42,7 +42,7 @@ public class b extends com.tsf.shell.plugin.themepicker.utils.e {
         }
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.utils.e, com.tsf.shell.plugin.themepicker.utils.f
+    @Override // com.tsf.shell.plugin.themepicker.utils.SelectionDotRenderer, com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected Bitmap a(Object obj) {
         if (obj instanceof ResolveInfo) {
             return a((ResolveInfo) obj);

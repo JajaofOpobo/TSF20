@@ -12,8 +12,8 @@ import com.tsf.shell.f.f.o;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
-import com.tsf.shell.utils.w;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -30,7 +30,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private com.tsf.shell.f.g.a.b D;
     private com.tsf.shell.manager.r.c.MultiSelectLinePicker E;
     private com.tsf.shell.f.f.d.A F;
-    private com.tsf.shell.f.i.B J;
+    private com.tsf.shell.f.i.PageItem J;
     private ArrayList<Integer> L;
     private Runnable M;
     public com.tsf.shell.f.f.c.a d;
@@ -38,7 +38,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private com.tsf.shell.f.e.j g;
     private com.censivn.C3DEngine.b.f.j h;
     private com.censivn.C3DEngine.b.f.A i;
-    private com.tsf.shell.f.f.a.h j;
+    private com.tsf.shell.f.f.a.FolderPage j;
     private ArrayList<g> k;
     private ArrayList<Integer> l;
     private g m;
@@ -64,7 +64,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         @Override // com.tsf.shell.f.e.e.a
         public void a(int i, Object obj) {
             c();
-            com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.B) obj);
+            com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.PageItem) obj);
         }
 
         @Override // com.tsf.shell.f.e.e.a
@@ -101,7 +101,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.G;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.J = bVar;
     }
 
@@ -311,7 +311,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     private g X() {
         if (this.j == null) {
-            this.j = new com.tsf.shell.f.f.a.h();
+            this.j = new com.tsf.shell.f.f.a.FolderPage();
             this.j.b(-1);
             this.k.add(this.j);
         }
@@ -534,7 +534,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.q;
     }
 
-    public void b(com.tsf.shell.f.i.B bVar) {
+    public void b(com.tsf.shell.f.i.PageItem bVar) {
         ((com.tsf.shell.f.i.a.c) bVar.getMouseEventListener()).a(true);
         bVar.f_();
         w();
@@ -586,7 +586,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return null;
     }
 
-    public com.tsf.shell.f.f.a.h t() {
+    public com.tsf.shell.f.f.a.FolderPage t() {
         return this.j;
     }
 
@@ -1921,7 +1921,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 if (n.this.t().aJ() && this.k) {
                     g gVarN = n.this.n();
                     if (gVarN.t() == -1) {
-                        ((com.tsf.shell.f.f.a.h) gVarN).aB();
+                        ((com.tsf.shell.f.f.a.FolderPage) gVarN).aB();
                         g gVarK = n.this.k();
                         if (gVarK == null || gVarK.t() == -1) {
                             gVarK = n.this.o();
@@ -2762,5 +2762,5 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.C cVar, com.censivn.C3DEngine.b.f.i iVar, java.util.ArrayList<Integer> arrayList, java.util.ArrayList<Integer> arrayList2) {}
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, com.censivn.C3DEngine.b.f.i iVar, java.util.ArrayList<Integer> arrayList, java.util.ArrayList<Integer> arrayList2) {}
 }

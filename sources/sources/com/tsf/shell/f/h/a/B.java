@@ -5,7 +5,7 @@ import android.content.DialogInterface;
 import com.censivn.C3DEngine.b.e.j;
 import com.tsf.b;
 import com.tsf.shell.manager.b.ConfigManager;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class B extends j {

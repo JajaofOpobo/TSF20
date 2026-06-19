@@ -15,7 +15,7 @@ import com.tsf.shell.plugin.widget.FloatingWidgetPicker;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class a extends com.tsf.shell.f.i.PageItem implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private static com.tsf.shell.f.i.b.c.b f;
     private static double p = 0.017453292519943295d;
     public int a;
@@ -54,13 +54,13 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void X() {
         super.X();
         l();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void a(float f2, float f3) {
         super.a(f2, f3);
         l();
@@ -130,13 +130,13 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void n_() {
         this.l = true;
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void m_() {
         super.m_();
         this.o = position().y;
@@ -144,24 +144,24 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         this.l = false;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void c() {
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
         super.q_();
         this.m = true;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void j() {
         super.j();
         this.m = false;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void g() {
         super.g();
         f.b(this);
@@ -271,7 +271,7 @@ public class a extends com.tsf.shell.f.i.B implements com.censivn.C3DEngine.b.c.
         return true;
     }
 
-    @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.i
     public boolean calTouchCollision(float f2, float f3) {
         if (this.k.calTouchCollision(f2, f3)) {
             return true;

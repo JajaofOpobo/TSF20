@@ -43,7 +43,7 @@ public abstract class C<E> {
         this.f = b();
         this.c = new ArrayList<>();
         this.d = new ArrayList<>();
-        Iterator<Integer> it = com.tsf.shell.utils.h.a(c(), ",", false).iterator();
+        Iterator<Integer> it = com.tsf.shell.utils.ItemInfoListSorter.a(c(), ",", false).iterator();
         while (it.hasNext()) {
             f fVar = (f) c(it.next().intValue());
             if (fVar != null) {

@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class j extends b {
@@ -60,11 +60,11 @@ public class j extends b {
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void j() {
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
     }
 
@@ -140,7 +140,7 @@ public class j extends b {
         if (this.p.id == 0) {
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.n.H, this.n.I, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
-            Bitmap bitmapA = com.tsf.shell.utils.x.a(this.u, com.censivn.C3DEngine.b.b.A.a(96.0f), com.censivn.C3DEngine.b.b.A.a(96.0f));
+            Bitmap bitmapA = com.tsf.shell.utils.GraphicsEngineBridge.a(this.u, com.censivn.C3DEngine.b.b.A.a(96.0f), com.censivn.C3DEngine.b.b.A.a(96.0f));
             canvas.drawBitmap(bitmapA, (bitmapCreateBitmap.getWidth() - bitmapA.getWidth()) / 2, (bitmapCreateBitmap.getHeight() - bitmapA.getHeight()) / 2, (Paint) null);
             bitmapA.recycle();
             Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(this.x, bitmapCreateBitmap, this.n, false);
@@ -161,7 +161,7 @@ public class j extends b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         this.b.textures().clear();
         super.g();

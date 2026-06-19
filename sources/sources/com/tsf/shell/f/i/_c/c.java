@@ -7,13 +7,13 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardI
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends g {
     private j k;
-    private com.tsf.shell.f.i._b.d.b l;
+    private com.tsf.shell.f.i._b.d.WorkspaceShortcutItem l;
     private a m;
     private a n;
     private a o;
@@ -151,7 +151,7 @@ public class c extends g {
     private j r() {
         p();
         this.k = new j();
-        this.l = new com.tsf.shell.f.i._b.d.b(new LauncherDrawerFolder3DInfo(true));
+        this.l = new com.tsf.shell.f.i._b.d.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
         this.m = new a();
         this.m.k.textures().addElement(this.p);

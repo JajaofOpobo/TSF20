@@ -2,7 +2,7 @@ package com.tsf.shell.f.i.b.d;
 
 import com.tsf.b;
 import com.tsf.shell.f.e.d.a.c;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 public class f extends com.tsf.shell.f.e.d.a.d {

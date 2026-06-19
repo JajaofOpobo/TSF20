@@ -11,10 +11,10 @@ import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
 import com.tsf.shell.theme.inside.parser.ThemeParser;
-import com.tsf.shell.utils.e;
-import com.tsf.shell.utils.p;
-import com.tsf.shell.utils.q;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.SelectionDotRenderer;
+import com.tsf.shell.utils.ColorMatrixImageFilter;
+import com.tsf.shell.utils.BitmapTransformationHelper;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeDesktopEffectManager extends ThemeMixElementManager {

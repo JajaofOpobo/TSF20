@@ -2,7 +2,7 @@ package com.tsf.shell.manager.app;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import java.util.ArrayList;
 
 public class StateHub {
@@ -45,11 +45,11 @@ public class StateHub {
     public static class d {
         public static float[] a() { return null; }
         public static int[] a(int i, int i2) { return null; }
-        public static void a(com.tsf.shell.f.i.B bVar) {}
+        public static void a(com.tsf.shell.f.i.PageItem bVar) {}
         public static boolean b() { return false; }
     }
 
-    public static void a(com.tsf.shell.f.i.B bVar) {}
+    public static void a(com.tsf.shell.f.i.PageItem bVar) {}
     public static int F() { return 0; }
     public static h_a a() { return null; }
     public static h_b b() { return null; }

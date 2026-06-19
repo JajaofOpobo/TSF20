@@ -7,9 +7,9 @@ import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.f.e.t;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.i.a.c;
-import com.tsf.shell.f.i.B;
+import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -82,7 +82,7 @@ public class a extends B {
         return this.b.c() / 2.0f;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public boolean ac() {
         boolean z;
         t.a();
@@ -180,7 +180,7 @@ public class a extends B {
         return this.k;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void ab() {
         com.censivn.C3DEngine.A.a().c(this.m);
     }
@@ -205,7 +205,7 @@ public class a extends B {
         });
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void n_() {
         this.n = false;
         com.censivn.C3DEngine.b.g.c.a(this);
@@ -217,7 +217,7 @@ public class a extends B {
         t.a(this);
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void m_() {
         super.m_();
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -243,7 +243,7 @@ public class a extends B {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void a(com.tsf.shell.f.i.A aVar) {
         super.a(aVar);
         final g gVarZ = z();
@@ -259,14 +259,14 @@ public class a extends B {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void p_() {
         super.p_();
         this.a = true;
         this.b.mouseEnabled(false);
     }
 
-    @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         this.l.b(this);
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.5
@@ -292,7 +292,7 @@ public class a extends B {
         removeFromParent();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.7
             @Override // java.lang.Runnable
@@ -302,7 +302,7 @@ public class a extends B {
         });
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void j() {
     }
 
@@ -319,7 +319,7 @@ public class a extends B {
         return com.censivn.C3DEngine.b.b.A.I - (i + (this.b.c() / 2.0f));
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void E() {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.8
             @Override // java.lang.Runnable
@@ -335,7 +335,7 @@ public class a extends B {
         });
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void F() {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.a.9
             @Override // java.lang.Runnable

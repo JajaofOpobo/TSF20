@@ -2,7 +2,7 @@ package com.tsf.shell.manager.r;
 
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.f.i.B;
+import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.f.i.b.b.b;
 import com.tsf.shell.f.i.b.b.b;
 

@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
-import com.tsf.shell.utils.m;
+import com.tsf.shell.utils.FlurryAnalyticsLogger;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

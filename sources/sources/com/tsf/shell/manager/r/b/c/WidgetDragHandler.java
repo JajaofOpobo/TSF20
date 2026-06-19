@@ -3,7 +3,7 @@ package com.tsf.shell.manager.r.b.c;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {

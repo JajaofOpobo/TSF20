@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.shell.ShellActivity;
 import com.tsf.shell.manager.app.AppListModel;
-import com.tsf.shell.utils.h;
+import com.tsf.shell.utils.ItemInfoListSorter;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -41,7 +41,7 @@ public class WidgetPanelController {
         public void a(com.tsf.shell.f.i.b.e.g gVar) {
         }
 
-        public static com.tsf.shell.f.c.b.b a(com.tsf.shell.f.i.C cVar) {
+        public static com.tsf.shell.f.c.b.b a(com.tsf.shell.f.i.ShortcutItem cVar) {
             return null;
         }
 

@@ -59,7 +59,7 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.b) {
@@ -81,7 +81,7 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void a(ItemInfo itemInfo) {
         super.a(itemInfo);
         LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
@@ -106,7 +106,7 @@ public class g extends a {
         return this.a.b();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public String r() {
         return this.a != null ? this.a.e : "";
     }
@@ -115,7 +115,7 @@ public class g extends a {
         return r();
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public long s() {
         if (this.a != null) {
             return this.a.c;
@@ -213,21 +213,21 @@ public class g extends a {
         return this.a.g;
     }
 
-    @Override // com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.PageItem
     public void C() {
         super.C();
     }
 
     public void bg() {
         if (!be()) {
-            com.tsf.shell.utils.a.a(bd().b.getPackageName());
+            com.tsf.shell.utils.PackageManagerHelper.a(bd().b.getPackageName());
         } else {
             com.tsf.shell.E.a(com.tsf.b.i.notic_uninstall_error);
         }
     }
 
     public void bh() {
-        com.tsf.shell.utils.a.a(com.censivn.C3DEngine.A.d(), bd().b.getPackageName());
+        com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.A.d(), bd().b.getPackageName());
     }
 
     public void aV() {
@@ -244,25 +244,25 @@ public class g extends a {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void g() {
         super.g();
         aY();
     }
 
-    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void n_() {
         com.tsf.shell.D.a().a("WidgetShortcutApp");
         super.n_();
     }
 
-    @Override // com.tsf.shell.f.i.C, com.tsf.shell.f.i.B
+    @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void c() {
         com.tsf.shell.D.a().b("WidgetShortcutApp");
         super.c();
     }
 
-    @Override // com.tsf.shell.f.i.C
+    @Override // com.tsf.shell.f.i.ShortcutItem
     public ArrayList<Integer> a(ArrayList<Integer> arrayList) {
         arrayList.add(0);
         arrayList.add(1);

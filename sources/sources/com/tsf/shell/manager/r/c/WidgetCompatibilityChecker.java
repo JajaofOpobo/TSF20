@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.utils.k;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.MarketLinkHandler;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

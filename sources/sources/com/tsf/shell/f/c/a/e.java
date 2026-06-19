@@ -2,7 +2,7 @@ package com.tsf.shell.f.c.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends com.tsf.shell.f.c.b.c {

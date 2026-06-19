@@ -11,8 +11,8 @@ import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.theme.inside.mix.menu.ThemeSettingMenu;
-import com.tsf.shell.utils.k;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.MarketLinkHandler;
+import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 import java.util.Iterator;
 
