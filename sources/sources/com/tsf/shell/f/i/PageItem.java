@@ -12,7 +12,7 @@ import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import com.tsf.shell.f.e.WidgetMatchResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.f.i.b.b.b;
+import com.tsf.shell.f.i.b.b.IItemShell;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -138,7 +138,7 @@ public class PageItem extends j implements F, b {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public boolean calTouchCollision(float f, float f2) {
-        if (!(this instanceof com.tsf.shell.f.i.b.e.b) && com.tsf.shell.manager.app.StateHub.s().a()) {
+        if (!(this instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && com.tsf.shell.manager.app.StateHub.s().a()) {
             return false;
         }
         if (z() != null) {
@@ -606,7 +606,7 @@ public class PageItem extends j implements F, b {
             } else {
                 if (z && com.tsf.shell.manager.app.StateHub.m() == 2 && !com.tsf.shell.manager.app.StateHub.n().ad()) {
                     for (i iVar : com.tsf.shell.manager.app.StateHub.G()) {
-                        if ((iVar instanceof com.tsf.shell.f.i.b.b.b) && iVar != this) {
+                        if ((iVar instanceof com.tsf.shell.f.i.b.b.IItemShell) && iVar != this) {
                             B bVar = (B) iVar;
                             if (bVar.a()) {
                                 if (bVar.m() == 0) {

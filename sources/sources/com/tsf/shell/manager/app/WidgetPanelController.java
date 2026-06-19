@@ -13,11 +13,11 @@ import java.util.Iterator;
 public class WidgetPanelController {
     private static SharedPreferences e;
     private ArrayList<b> b = new ArrayList<>();
-    private ArrayList<com.tsf.shell.f.i.b.e.g> c = new ArrayList<>();
-    private ArrayList<com.tsf.shell.f.i.b.e.g> a = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> c = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> a = new ArrayList<>();
     private a d = new a() { // from class: com.tsf.shell.manager.app.WidgetPanelController.1
         @Override // com.tsf.shell.manager.app.WidgetPanelController.a, com.tsf.shell.manager.app.AppListModel.a
-        public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+        public void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
             if (g.this.a.contains(gVar)) {
                 g.this.a.remove(gVar);
                 g.this.f();
@@ -26,7 +26,7 @@ public class WidgetPanelController {
     };
 
     public static class b {
-        public void a(ArrayList<com.tsf.shell.f.i.b.e.g> arrayList) {
+        public void a(ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList) {
         }
         public void c() {}
     }
@@ -35,13 +35,13 @@ public class WidgetPanelController {
         public void a() {
         }
 
-        public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+        public void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
         }
 
-        public void a(com.tsf.shell.f.i.b.e.g gVar) {
+        public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
         }
 
-        public static com.tsf.shell.f.c.b.b a(com.tsf.shell.f.i.ShortcutItem cVar) {
+        public static com.tsf.shell.f.c.b.DrawerSettingsData a(com.tsf.shell.f.i.ShortcutItem cVar) {
             return null;
         }
 
@@ -62,7 +62,7 @@ public class WidgetPanelController {
         com.tsf.shell.manager.app.ServiceProvider.a().a(this.d);
         Iterator<Integer> it = h.a(b(), ",", false).iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i.b.e.g gVarB = b(it.next().intValue());
+            com.tsf.shell.f.i.b.e.DrawerItemVisual gVarB = b(it.next().intValue());
             if (gVarB != null) {
                 if (this.a.size() < 12) {
                     this.a.add(gVarB);
@@ -80,14 +80,14 @@ public class WidgetPanelController {
         }
     }
 
-    private com.tsf.shell.f.i.b.e.g b(int i) {
+    private com.tsf.shell.f.i.b.e.DrawerItemVisual b(int i) {
         return com.tsf.shell.manager.app.ServiceProvider.a().a(i);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
         String str = "";
-        for (com.tsf.shell.f.i.b.e.g gVar : this.a) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : this.a) {
             str = gVar.K() != null ? str + gVar.K().id + "," : str;
         }
         a(str);
@@ -98,8 +98,8 @@ public class WidgetPanelController {
     }
 
     public void a(LauncherShortcutAppInfo launcherShortcutAppInfo) {
-        if (launcherShortcutAppInfo.getWidget() != null && (launcherShortcutAppInfo.getWidget() instanceof com.tsf.shell.f.i.b.e.g)) {
-            com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget();
+        if (launcherShortcutAppInfo.getWidget() != null && (launcherShortcutAppInfo.getWidget() instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual)) {
+            com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) launcherShortcutAppInfo.getWidget();
             if (!a(gVar)) {
                 this.a.add(gVar);
                 while (this.a.size() > 12) {
@@ -116,7 +116,7 @@ public class WidgetPanelController {
         }
     }
 
-    public ArrayList<com.tsf.shell.f.i.b.e.g> a(int i) {
+    public ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> a(int i) {
         this.c.clear();
         int size = this.a.size();
         if (i > size) {
@@ -128,8 +128,8 @@ public class WidgetPanelController {
         return this.c;
     }
 
-    private boolean a(com.tsf.shell.f.i.b.e.g gVar) {
-        Iterator<com.tsf.shell.f.i.b.e.g> it = this.a.iterator();
+    private boolean a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
+        Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it = this.a.iterator();
         while (it.hasNext()) {
             if (it.next() == gVar) {
                 return true;

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.b.A.e;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
 import com.tsf.shell.utils.FlurryAnalyticsLogger;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -18,7 +18,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
     public interface InterfaceC0113a {
         java.util.ArrayList<com.censivn.C3DEngine.b.f.i> b();
     }
-    private com.tsf.shell.f.i.b.e.b a;
+    private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a;
     private e b;
     private float d;
     private b e;
@@ -31,12 +31,12 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
         e();
     }
 
-    @Override // com.tsf.shell.f.e.f.b
+    @Override // com.tsf.shell.f.e.f.EditModeNode
     public i d() {
         return this.e.k();
     }
 
-    @Override // com.tsf.shell.f.e.f.b
+    @Override // com.tsf.shell.f.e.f.EditModeNode
     public void a(final com.tsf.shell.f.i.ShortcutItem cVar) {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.1
             @Override // java.lang.Runnable
@@ -45,7 +45,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
                 a.this.e.o();
             }
         };
-        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
+        if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             g.a(cVar, null, runnable);
         } else {
             g.a(cVar, runnable);
@@ -192,7 +192,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
                     cVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     for (int i = 0; i < size; i++) {
-                        com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) arrayListI.get(i);
+                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) arrayListI.get(i);
                         if (bVar != cVar) {
                             cVar.a((com.tsf.shell.f.i.ShortcutItem) bVar);
                         }
@@ -222,9 +222,9 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
                         if (size > 0) {
                             if (childIndexOf != -1) {
                                 for (int i = 0; i < size; i++) {
-                                    com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) arrayListAw.get(i);
-                                    bVar.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
-                                    bVar.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
+                                    com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) arrayListAw.get(i);
+                                    bVar.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.j * (i + 1));
+                                    bVar.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.j * (i + 1));
                                     bVar.removeFromParent();
                                     a.this.addChildAt(bVar, childIndexOf);
                                     a.this.e.a((com.tsf.shell.f.i.PageItem) bVar, true);
@@ -280,8 +280,8 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
                                     a.this.e.a(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {
-                                            ((com.tsf.shell.f.i.b.e.b) C0131a.this.g).ah();
-                                            ((com.tsf.shell.f.i.b.e.b) C0131a.this.g).aO();
+                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131a.this.g).ah();
+                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131a.this.g).aO();
                                             if (C0131a.this.d) {
                                                 C0131a.this.f.c(null);
                                                 com.censivn.C3DEngine.a.d.d().e();

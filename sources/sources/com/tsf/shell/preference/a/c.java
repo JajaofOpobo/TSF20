@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.tsf.b;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -68,8 +68,8 @@ public class c {
 
     public static class a {
         private static final int[] b = {0, 1, 8, 3, 4};
-        private com.tsf.shell.f.c.b.e a = new com.tsf.shell.f.c.b.e(true);
-        private ArrayList<com.tsf.shell.f.i.b.e.b> c = new ArrayList<>();
+        private com.tsf.shell.f.c.b.DrawerSettingsPanel a = new com.tsf.shell.f.c.b.DrawerSettingsPanel(true);
+        private ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> c = new ArrayList<>();
 
         public a() {
             for (int i = 0; i < 5; i++) {
@@ -79,15 +79,15 @@ public class c {
             }
             this.a.b();
             this.a.f();
-            Iterator<com.tsf.shell.f.i.b.e.b> it = this.c.iterator();
+            Iterator<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> it = this.c.iterator();
             while (it.hasNext()) {
                 this.a.a(1, it.next());
             }
         }
 
-        public com.tsf.shell.f.c.b.e a() {
+        public com.tsf.shell.f.c.b.DrawerSettingsPanel a() {
             if (this.a == null) {
-                this.a = new com.tsf.shell.f.c.b.e(true);
+                this.a = new com.tsf.shell.f.c.b.DrawerSettingsPanel(true);
             }
             return this.a;
         }
@@ -97,7 +97,7 @@ public class c {
             while (true) {
                 int i2 = i;
                 if (i2 < 5) {
-                    com.tsf.shell.f.i.b.e.b bVar = this.c.get(i2);
+                    com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.c.get(i2);
                     bVar.k.textures().clear();
                     bVar.k.textures().addElement(com.tsf.shell.manager.app.PreferenceProvider.a.a(b[i2]));
                     i = i2 + 1;

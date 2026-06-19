@@ -445,8 +445,8 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 return;
             }
         }
-        if (this.g instanceof com.tsf.shell.f.i._b.e.b) {
-            ((com.tsf.shell.f.i._b.e.b) this.g).l();
+        if (this.g instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+            ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.g).l();
         }
         if (this.p != null) {
             this.p.a(motionEvent);

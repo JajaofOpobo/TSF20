@@ -10,7 +10,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.ContactsContract;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.h.a.a.a.d;
+import com.tsf.shell.f.h.a.a.a.SceneDecorNode;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 import java.io.IOException;

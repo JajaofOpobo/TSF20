@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.a;
+import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
@@ -18,18 +18,18 @@ public class e extends a {
         super(b.i.menu_effect_clicking);
         this.a = bVar;
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.e.1
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.app.v.AnimationHelper.b();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.app.v.AnimationHelper.a(true);
                 e.this.b.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.app.v.AnimationHelper.a(false);
                 e.this.b.d();
@@ -73,26 +73,26 @@ public class e extends a {
         });
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.b.d();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         super.onRecycle();
         h.b();

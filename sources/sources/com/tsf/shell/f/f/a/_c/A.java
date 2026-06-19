@@ -68,9 +68,9 @@ public class A extends c.a {
     public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         com.tsf.shell.f.i.ShortcutItem cVar2;
         this.d.c();
-        if (cVar instanceof com.tsf.shell.f.i._b.e.g) {
-            cVar2 = (com.tsf.shell.f.i._b.e.g) cVar;
-            this.e = ((com.tsf.shell.f.i._b.e.g) cVar).ba();
+        if (cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) {
+            cVar2 = (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) cVar;
+            this.e = ((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) cVar).ba();
         } else if (cVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
             cVar2 = (com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) cVar;
             this.e = ((com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) cVar).az();

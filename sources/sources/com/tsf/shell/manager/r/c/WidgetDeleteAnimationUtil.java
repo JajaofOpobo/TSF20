@@ -4,19 +4,19 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.b;
-import com.tsf.shell.f.i.b.e.i;
+import com.tsf.shell.f.i.b.e.DrawerItemLaunchAction;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetDeleteAnimationUtil {
     private static void b(final com.tsf.shell.f.i.PageItem bVar, final Runnable runnable) {
         if (bVar instanceof i) {
             a(((i) bVar).q().q(), bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-            a(((com.tsf.shell.f.i.b.e.b) bVar).k.textures().get(0).textureElement, bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-            a(((com.tsf.shell.f.i.b.d.b) bVar).aD(), bVar);
-        } else if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
-            a(((com.tsf.shell.f.i.b.b.a) bVar).h, bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            a(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).k.textures().get(0).textureElement, bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+            a(((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aD(), bVar);
+        } else if (bVar instanceof com.tsf.shell.f.i.b.b.ItemShell) {
+            a(((com.tsf.shell.f.i.b.b.ItemShell) bVar).h, bVar);
         }
         bVar.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.1
@@ -51,8 +51,8 @@ public class WidgetDeleteAnimationUtil {
     }
 
     public static void a(final com.tsf.shell.f.i.PageItem bVar, final Runnable runnable, final Runnable runnable2) {
-        if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-            if (((com.tsf.shell.f.i.b.d.b) bVar).aT()) {
+        if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+            if (((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aT()) {
                 a(bVar, runnable2);
                 return;
             }

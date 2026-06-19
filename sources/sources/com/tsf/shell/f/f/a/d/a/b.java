@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a.d.a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.i.b.e.g;
+import com.tsf.shell.f.i.b.e.DrawerItemVisual;
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.Locale;
@@ -19,13 +19,13 @@ public class b extends c {
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public final int compare(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
-                if ((bVar instanceof com.tsf.shell.f.i.b.d.b) && (bVar2 instanceof com.tsf.shell.f.i.b.d.b)) {
+                if ((bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) && (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
                     return 0;
                 }
-                if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+                if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     return -1;
                 }
-                if (!(bVar2 instanceof com.tsf.shell.f.i.b.d.b)) {
+                if (!(bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
                     return b.this.e.compare(b.b(bVar.r()), b.b(bVar2.r()));
                 }
                 return 1;

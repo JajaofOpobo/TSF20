@@ -126,7 +126,7 @@ public class AlignmentOverlay {
             Method dump skipped, instruction units count: 236
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e.a.a(float, float):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e.a.AlignmentListener(float, float):void");
     }
 
     public static void a(com.tsf.shell.f.i.PageItem bVar) {

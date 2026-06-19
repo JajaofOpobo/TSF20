@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a._a.a;
 
 import com.tsf.shell.f.f.a._a.B;
-import com.tsf.shell.f.i._b.e.g;
+import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

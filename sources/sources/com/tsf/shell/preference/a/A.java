@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.f.e.SelectionFrame;
 import com.tsf.shell.f.f.n;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class A extends com.censivn.C3DEngine.b.e.f {
     private k f;
     private k h;
     private float j;
-    private ArrayList<com.tsf.shell.f.i.b.e.b> l;
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> l;
     private TextureElement d = new TextureElement(0, false);
     private TextureElement e = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);

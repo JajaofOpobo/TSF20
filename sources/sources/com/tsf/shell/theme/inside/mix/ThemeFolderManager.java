@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix;
 import android.content.Context;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.A;
-import com.tsf.shell.f.i.b.d.b;
+import com.tsf.shell.f.i.b.d.FolderShortcutItem;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
@@ -23,7 +23,7 @@ public class ThemeFolderManager extends ThemeMixElementManager {
 
     @Override // com.tsf.shell.theme.inside.ThemeMixElementManager
     public void onReloadTheme() {
-        b.q();
+        FolderShortcutItem.q();
         com.tsf.shell.manager.app.StateHub.K();
     }
 

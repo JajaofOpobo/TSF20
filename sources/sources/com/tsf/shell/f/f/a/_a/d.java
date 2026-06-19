@@ -11,8 +11,8 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends com.tsf.shell.f.f.a._a.a.a {
     private g.b a;
-    private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.e> b;
-    private ArrayList<com.tsf.shell.f.i._b.e.g> c;
+    private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect> b;
+    private ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> c;
     private TextureElement d;
     private k e;
     private float f;
@@ -22,16 +22,16 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
         this.d = new TextureElement(0, false);
         this.f = -com.censivn.C3DEngine.b.b.A.a(50.0f);
         this.c = new ArrayList<>();
-        this.b = new com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.e>() { // from class: com.tsf.shell.f.f.a._a.d.1
+        this.b = new com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect>() { // from class: com.tsf.shell.f.f.a._a.d.1
             @Override // com.tsf.shell.f.e.ObjectPool
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public com.tsf.shell.f.i._b.e.e b() {
-                return new com.tsf.shell.f.i._b.e.e();
+            public com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect b() {
+                return new com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect();
             }
         };
         this.a = new g.b() { // from class: com.tsf.shell.f.f.a._a.d.2
             @Override // com.tsf.shell.manager.app.WidgetPanelController.b
-            public void a(ArrayList<com.tsf.shell.f.i._b.e.g> arrayList) {
+            public void a(ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> arrayList) {
                 d.this.g();
             }
         };
@@ -110,8 +110,8 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
     public void g() {
         v();
         int iK = k() * 3;
-        for (com.tsf.shell.f.i._b.e.g gVar : com.tsf.shell.manager.app.ServiceProvider.a().a().a(iK <= 12 ? iK : 12)) {
-            com.tsf.shell.f.i._b.e.e eVarC = this.b.c();
+        for (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar : com.tsf.shell.manager.app.ServiceProvider.a().a().a(iK <= 12 ? iK : 12)) {
+            com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect eVarC = this.b.c();
             eVarC.a(gVar);
             this.c.add(eVarC);
         }
@@ -120,9 +120,9 @@ public class d extends com.tsf.shell.f.f.a._a.a.a {
     }
 
     private void v() {
-        Iterator<com.tsf.shell.f.i._b.e.g> it = this.c.iterator();
+        Iterator<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> it = this.c.iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i._b.e.e eVar = (com.tsf.shell.f.i._b.e.e) it.next();
+            com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect eVar = (com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect) it.next();
             eVar.aW();
             this.b.a(eVar);
         }

@@ -37,7 +37,7 @@ public class a extends com.tsf.shell.f._d.a.A {
         final float f14;
         final float f15;
         final float f16;
-        final boolean zAK = ((com.tsf.shell.f.i._b.e.b) aVar.parent()).aK();
+        final boolean zAK = ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) aVar.parent()).aK();
         final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.b);
@@ -213,7 +213,7 @@ public class a extends com.tsf.shell.f._d.a.A {
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, com.tsf.shell.manager.o.ButtonPresetManager.a.k, com.tsf.shell.manager.o.ButtonPresetManager.a.s, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.b, com.tsf.shell.manager.o.ButtonPresetManager.a.j, com.tsf.shell.manager.o.ButtonPresetManager.a.r, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, com.tsf.shell.manager.o.ButtonPresetManager.a.l, com.tsf.shell.manager.o.ButtonPresetManager.a.t, 0.0f);
-        if (!((com.tsf.shell.f.i._b.e.b) aVar.parent()).aK()) {
+        if (!((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) aVar.parent()).aK()) {
             aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.e, com.tsf.shell.manager.o.ButtonPresetManager.a.m, com.tsf.shell.manager.o.ButtonPresetManager.a.u, 0.0f);
             aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.g, com.tsf.shell.manager.o.ButtonPresetManager.a.o, com.tsf.shell.manager.o.ButtonPresetManager.a.w, 0.0f);
             aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.f, com.tsf.shell.manager.o.ButtonPresetManager.a.n, com.tsf.shell.manager.o.ButtonPresetManager.a.v, 0.0f);

@@ -19,12 +19,12 @@ public class MenuClassButton extends j {
         this.c = f;
     }
 
-    public void a(ArrayList<com.tsf.shell.f.e._g.a.b> arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList) {
         this.f = new com.censivn.C3DEngine.b.b.A.d();
         this.b = new com.censivn.C3DEngine.b.b.A.b();
         this.f.c(this.b);
         addChild(this.f);
-        Iterator<com.tsf.shell.f.e._g.a.b> it = arrayList.iterator();
+        Iterator<com.tsf.shell.f.e._g.a.MenuActionItem> it = arrayList.iterator();
         while (it.hasNext()) {
             this.b.addChild(it.next().getTitleIcon());
         }
@@ -47,11 +47,11 @@ public class MenuClassButton extends j {
             this.g = false;
         } else {
             this.g = true;
-            a((com.tsf.shell.f.e._g.a.b) this.a.getCurrentMenuItem(), false);
+            a((com.tsf.shell.f.e._g.a.MenuActionItem) this.a.getCurrentMenuItem(), false);
         }
     }
 
-    public void a(com.tsf.shell.f.e._g.a.b bVar) {
+    public void a(com.tsf.shell.f.e._g.a.MenuActionItem bVar) {
         int iNumChildren = this.b.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
             if (((MenuExpandItem) this.b.getChildAt(i)) == bVar.getTitleIcon()) {
@@ -61,7 +61,7 @@ public class MenuClassButton extends j {
         }
     }
 
-    private void a(com.tsf.shell.f.e._g.a.b bVar, boolean z) {
+    private void a(com.tsf.shell.f.e._g.a.MenuActionItem bVar, boolean z) {
         if (this.g) {
             float f = (-bVar.getTitleIcon().position().x) + (com.censivn.C3DEngine.b.b.A.D / 2.0f);
             float f2 = 0.0f;

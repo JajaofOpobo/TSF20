@@ -23,7 +23,7 @@ public class ItemPositionAnimator {
     private float l;
     private float m;
     private float r;
-    private com.tsf.shell.f.i._b.e.b u;
+    private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase u;
     private boolean n = false;
     private boolean o = false;
     private boolean p = true;
@@ -78,7 +78,7 @@ public class ItemPositionAnimator {
         if (this.e.K().container != -1 || (this.e.K() instanceof LauncherDrawerFolder3DInfo)) {
             Number3d.TEMPNUMBER3D.reset();
             this.e.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.u = com.tsf.shell.f.c.A(this.e);
+            this.u = com.tsf.shell.f.c.DrawerPanelController(this.e);
             ((com.censivn.C3DEngine.b.f.j) this.e.parent()).replaceChild(this.e, this.u);
             this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
         }
@@ -116,7 +116,7 @@ public class ItemPositionAnimator {
         this.t = false;
         Iterator<com.censivn.C3DEngine.b.f.i> it = this.d.children().iterator();
         while (it.hasNext()) {
-            ((com.tsf.shell.f.i._b.e.b) it.next()).mouseEnabled(false);
+            ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next()).mouseEnabled(false);
         }
         if (this.u != null) {
             this.r = this.u.rotation().z;
@@ -156,7 +156,7 @@ public class ItemPositionAnimator {
                         k.this.e.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
-                            com.tsf.shell.f.c.A(k.this.u);
+                            com.tsf.shell.f.c.DrawerPanelController(k.this.u);
                             k.this.u = null;
                         } else {
                             gVarN.a(k.this.e);
@@ -249,7 +249,7 @@ public class ItemPositionAnimator {
                     k.this.m = motionEvent2.getY();
                     Iterator<com.censivn.C3DEngine.b.f.i> it = k.this.d.children().iterator();
                     while (it.hasNext()) {
-                        com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) it.next();
+                        com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next();
                         bVar.alpha(255.0f);
                         bVar.visible(true);
                         bVar.g(1.0f);

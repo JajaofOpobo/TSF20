@@ -2,7 +2,7 @@ package com.tsf.shell.f.e._g;
 
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.e._g.a.a;
+import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -42,7 +42,7 @@ public class MenuContainer extends j {
             boolean r1 = r0.c
             if (r1 == 0) goto L9c
             com.censivn.C3DEngine.b.f.i r1 = r12.getChildAt(r4)
-            com.tsf.shell.f.e._g.a.a$a r1 = (com.tsf.shell.f.e._g.a.a.C0095a) r1
+            com.tsf.shell.f.e._g.a.MenuActionHandler$a r1 = (com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a) r1
             com.censivn.C3DEngine.api.element.PositionNumber3d r6 = r1.position()
             float r7 = r6.x
             float r8 = r0.a

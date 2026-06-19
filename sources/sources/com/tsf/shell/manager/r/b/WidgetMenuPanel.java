@@ -20,7 +20,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.MenuOverlay {
         public void a() {
         }
 
-        public void a(com.tsf.shell.f.i.b.e.b bVar) {
+        public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         }
 
         public com.tsf.shell.manager.o.ButtonMetrics b() {
@@ -31,7 +31,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.MenuOverlay {
     public WidgetMenuPanel() {
         super(800.0f * com.censivn.C3DEngine.b.b.A.c);
         this.f = false;
-        ArrayList<com.tsf.shell.f.e._g.a.b> arrayList = new ArrayList<>();
+        ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList = new ArrayList<>();
         this.e = new TogglePanel(this, x.c(b.i.group_toggle));
         this.a = new com.tsf.shell.manager.r.b.a.AppListPanel(this, x.c(b.i.group_applications));
         this.b = new WidgetPanelToggle(this, x.c(b.i.group_widgets));

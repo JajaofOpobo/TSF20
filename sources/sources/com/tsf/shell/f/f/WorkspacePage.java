@@ -26,7 +26,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     private com.censivn.C3DEngine.b.g._b.a L;
     protected g a;
     protected com.tsf.shell.e.CellLayout b;
-    protected com.tsf.shell.f.e.f.b c;
+    protected com.tsf.shell.f.e.f.EditModeNode c;
     protected com.tsf.shell.f.i.MultiSelectController h;
     protected l k;
     private com.censivn.C3DEngine.b.f.k q;
@@ -267,7 +267,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     }
 
     private void aj() {
-        this.c = new com.tsf.shell.f.e.f.b() { // from class: com.tsf.shell.f.f.WorkspacePage.1
+        this.c = new com.tsf.shell.f.e.f.EditModeNode() { // from class: com.tsf.shell.f.f.WorkspacePage.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (g.this.g != 0.0f && g.this.k != null) {
@@ -275,9 +275,9 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
                 }
             }
 
-            @Override // com.tsf.shell.f.e.f.b
+            @Override // com.tsf.shell.f.e.f.EditModeNode
             public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
-                if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
+                if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, null, null);
                 } else {
                     com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, (Runnable) null);

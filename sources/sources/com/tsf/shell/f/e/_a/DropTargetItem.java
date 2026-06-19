@@ -21,7 +21,7 @@ public class DropTargetItem {
     private static ObserverManager f;
     private static d g;
     private static a i;
-    private static ArrayList<com.tsf.shell.f.i._b.e.g> j;
+    private static ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> j;
     private static ArrayList<LauncherAppInfo> k;
     private static DropTargetKeyHandler.a l;
     private static float a = 0.0f;
@@ -59,7 +59,7 @@ public class DropTargetItem {
                         iVarB = iVar;
                     }
                     iVarB.textures().clear();
-                    iVarB.textures().addElement(((com.tsf.shell.f.i._b.e.g) c.j.get(i2)).aZ());
+                    iVarB.textures().addElement(((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) c.j.get(i2)).aZ());
                     return iVarB;
                 }
 
@@ -70,7 +70,7 @@ public class DropTargetItem {
 
                 @Override // com.censivn.C3DEngine.b.h.b.g
                 public void a(i iVar, int i2) {
-                    c.i.a(iVar, (com.tsf.shell.f.i._b.e.g) c.j.get(i2));
+                    c.i.a(iVar, (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) c.j.get(i2));
                     c.j.remove(i2);
                     a(i2);
                     b();
@@ -134,9 +134,9 @@ public class DropTargetItem {
 
     public static void a() {
         j.clear();
-        ArrayList<com.tsf.shell.f.i._b.e.g> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().a.d();
+        ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().a.d();
         if (k != null) {
-            for (com.tsf.shell.f.i._b.e.g gVar : arrayListD) {
+            for (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar : arrayListD) {
                 if (!k.contains(gVar.bd())) {
                     j.add(gVar);
                 }
@@ -144,7 +144,7 @@ public class DropTargetItem {
             arrayListD.clear();
             return;
         }
-        Iterator<com.tsf.shell.f.i._b.e.g> it = arrayListD.iterator();
+        Iterator<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> it = arrayListD.iterator();
         while (it.hasNext()) {
             j.add(it.next());
         }

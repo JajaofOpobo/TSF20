@@ -14,7 +14,7 @@ public class DragLayer extends FrameLayout {
     private Workspace3D a;
     private boolean b;
     private MotionEvent c;
-    private com.tsf.shell.f.i.b.b.a d;
+    private com.tsf.shell.f.i.b.b.ItemShell d;
     private com.tsf.shell.f.i.a.PageItemTouchHandler e;
 
     public DragLayer(Context context) {
@@ -88,7 +88,7 @@ public class DragLayer extends FrameLayout {
     }
 
     public void a(d.a aVar) {
-        com.tsf.shell.f.i.b.b.a aVarA;
+        com.tsf.shell.f.i.b.b.ItemShell aVarA;
         if (!this.b && aVar.a != null && aVar.a.isInTouchMode() && this.a.getCurrentScreenLayout() != null && (aVarA = com.tsf.shell.manager.app.WidgetLayoutManager.a(aVar.a)) != null) {
             com.censivn.C3DEngine.a.d.b(true);
             com.tsf.shell.manager.app.StateHub.b(aVarA.z() != null ? aVarA.z() : com.tsf.shell.manager.app.StateHub.o());
@@ -143,7 +143,7 @@ public class DragLayer extends FrameLayout {
                 itemInfoK.cellYH = i4;
             }
             final com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
-            final com.tsf.shell.f.i.b.b.a aVar = this.d;
+            final com.tsf.shell.f.i.b.b.ItemShell aVar = this.d;
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.DragLayer.3
                 @Override // java.lang.Runnable
                 public void run() {

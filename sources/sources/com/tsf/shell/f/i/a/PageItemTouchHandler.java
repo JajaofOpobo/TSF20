@@ -205,10 +205,10 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
             r0.x()
         L3e:
             r6.b(r3)
-            com.tsf.shell.f.e.e.c r0 = com.tsf.shell.manager.app.WidgetAnimator
+            com.tsf.shell.f.e.e.ItemAnimationController r0 = com.tsf.shell.manager.app.WidgetAnimator
             r0.c()
             com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
-            com.tsf.shell.f.e.e.a r0 = r0.b()
+            com.tsf.shell.f.e.e.ItemNode r0 = r0.b()
             r0.c()
             com.tsf.shell.manager.m.SideMenuManager r0 = com.tsf.shell.manager.app.PanelStateManager
             r0.e()
@@ -446,8 +446,8 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 return;
             }
         }
-        if (this.g instanceof com.tsf.shell.f.i.b.e.b) {
-            ((com.tsf.shell.f.i.b.e.b) this.g).l();
+        if (this.g instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.g).l();
         }
         if (this.p != null) {
             this.p.a(motionEvent);

@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.k;
 import com.tsf.shell.f.i.a.PageItemDropHandler;
-import com.tsf.shell.f.i.b.e.g;
+import com.tsf.shell.f.i.b.e.DrawerItemVisual;
 import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverManager.a {
+public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implements ObserverManager.a {
     public com.tsf.shell.manager.r.b.WidgetMenuPanel a;
     private com.tsf.shell.manager.app.AppListModel b;
     private h c;
@@ -61,19 +61,19 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
         };
         this.e = new ArrayList<>();
         this.a = aVar;
-        ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new com.tsf.shell.f.e._g.a.a.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.3
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
+        arrayList.add(new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.3
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 Home.b().m();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
             }
         }));
@@ -264,7 +264,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
         if (!this.e.isEmpty()) {
-            ArrayList<com.tsf.shell.f.i.b.e.b> arrayList = new ArrayList<>();
+            ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList = new ArrayList<>();
             for (int i = 0; i < this.e.size(); i++) {
                 arrayList.add(this.e.get(i).ba());
             }
@@ -273,16 +273,16 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
             if (arrayList.size() > 0) {
                 float f = arrayList.get(0).position().x;
                 float f2 = arrayList.get(0).position().y;
-                Iterator<com.tsf.shell.f.i.b.e.b> it = arrayList.iterator();
+                Iterator<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> it = arrayList.iterator();
                 float f3 = f;
                 while (true) {
                     float f4 = f2;
                     if (it.hasNext()) {
-                        com.tsf.shell.f.i.b.e.b next = it.next();
+                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase next = it.next();
                         f3 = (f3 + next.position().x) / 2.0f;
                         f2 = (next.position().y + f4) / 2.0f;
                     } else {
-                        com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.StateHub.F(), 0, (int) this.a.getScreenFreeSpaceCenter()).c(arrayList);
+                        com.tsf.shell.f.i.b.d.FolderShortcutItem.a(com.tsf.shell.manager.app.StateHub.F(), 0, (int) this.a.getScreenFreeSpaceCenter()).c(arrayList);
                         return;
                     }
                 }
@@ -313,18 +313,18 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.c;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.c.a(f, f2, f3, f4);
         this.h.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         if (this.b == null) {
             this.b = com.tsf.shell.manager.app.ServiceProvider.a();
@@ -336,12 +336,12 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.b implements ObserverMa
         super.onShow();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
         b();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         if (this.b != null) {
             b();

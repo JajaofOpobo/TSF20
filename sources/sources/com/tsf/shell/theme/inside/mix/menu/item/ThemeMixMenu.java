@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
+public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private com.censivn.C3DEngine.b.b.A.b mContentContainer;
     private a mElementContainer;
     private ThemeIconDesignerMenu mIconDesignerMenu;
@@ -99,12 +99,12 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.mScrollContainer;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         resetLayout();
         if (this.mIconDesignerMenu != null) {
@@ -112,7 +112,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.mScrollContainer.j();
         resetLayout();
@@ -125,7 +125,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.b {
         this.mScrollContainer.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         super.onHide();
         Iterator<ThemeMixElementManager> it = ThemeManager.mix.getThemeMixElementManagerLists().iterator();

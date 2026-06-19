@@ -22,7 +22,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     private TextureElement r = new TextureElement(0, false);
     private boolean s = true;
     private boolean t = true;
-    private ArrayList<com.tsf.shell.f.i._b.e.b> u;
+    private ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase> u;
     private Runnable v;
 
     public c() {
@@ -104,7 +104,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         if (this.v != null) {
             com.censivn.C3DEngine.A.a().g(this.v);
         }
-        com.tsf.shell.f.i._b.e.b bVar = this.u.get(0);
+        com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = this.u.get(0);
         com.censivn.C3DEngine.b.g.c.a(bVar);
         bVar.removeFromParent();
         this.l.aX().addChild(bVar);
@@ -112,7 +112,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < 2; i++) {
-            com.tsf.shell.f.i._b.e.b bVar2 = this.u.get((size - i) - 1);
+            com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 = this.u.get((size - i) - 1);
             bVar2.removeFromParent();
             com.censivn.C3DEngine.b.g.c.a(bVar2);
             this.k.addChild(bVar2);
@@ -126,7 +126,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         this.v = new Runnable() { // from class: com.tsf.shell.f.i._c.FolderWidgetGroup.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i._b.e.b bVar3 = (com.tsf.shell.f.i._b.e.b) c.this.u.get(2);
+                com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) c.this.u.get(2);
                 Number3d.TEMPNUMBER3D.reset();
                 bVar3.localToGlobal(Number3d.TEMPNUMBER3D);
                 bVar3.position().setAllFrom(Number3d.TEMPNUMBER3D);
@@ -135,7 +135,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
                     @Override // java.lang.Runnable
                     public void run() {
                         c.this.v = null;
-                        com.tsf.shell.f.i._b.e.b bVar4 = (com.tsf.shell.f.i._b.e.b) c.this.u.get(1);
+                        com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar4 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) c.this.u.get(1);
                         Number3d.TEMPNUMBER3D.reset();
                         bVar4.localToGlobal(Number3d.TEMPNUMBER3D);
                         bVar4.position().setAllFrom(Number3d.TEMPNUMBER3D);
@@ -166,7 +166,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < size; i++) {
-            com.tsf.shell.f.i._b.e.b bVar = this.u.get((size - i) - 1);
+            com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = this.u.get((size - i) - 1);
             bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
             bVar.position().y = f2;
             Number3d number3dScale = bVar.scale();
@@ -178,7 +178,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         return this.k;
     }
 
-    class a extends com.tsf.shell.f.i._b.e.b {
+    class a extends com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase {
         public j a;
 
         public a() {
@@ -190,7 +190,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
             addChild(this.a);
         }
 
-        @Override // com.tsf.shell.f.i._b.e.b
+        @Override // com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase
         public void k() {
         }
     }

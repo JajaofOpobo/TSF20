@@ -141,16 +141,16 @@ public class WidgetInstantiator {
             public void run() {
                 com.tsf.shell.f.i.PageItem aVar;
                 try {
-                    if (gVar.b.equals(com.tsf.shell.f.i.b.d.b.class.getName())) {
-                        aVar = new com.tsf.shell.f.i.b.d.b(itemInfo);
-                    } else if (gVar.b.equals(com.tsf.shell.f.i.b.a.b.class.getName())) {
-                        aVar = new com.tsf.shell.f.i.b.a.b(itemInfo);
-                    } else if (!gVar.b.equals(com.tsf.shell.f.i.b.c.a.class.getName())) {
+                    if (gVar.b.equals(com.tsf.shell.f.i.b.d.FolderShortcutItem.class.getName())) {
+                        aVar = new com.tsf.shell.f.i.b.d.FolderShortcutItem(itemInfo);
+                    } else if (gVar.b.equals(com.tsf.shell.f.i.b.a.ItemContainerPageItem.class.getName())) {
+                        aVar = new com.tsf.shell.f.i.b.a.ItemContainerPageItem(itemInfo);
+                    } else if (!gVar.b.equals(com.tsf.shell.f.i.b.c.ItemDataConfig.class.getName())) {
                         Class<?> clsLoadClass = a.a.loadClass(gVar.b);
                         aVar = (com.tsf.shell.f.i.PageItem) ((VObject3d) clsLoadClass.getMethod("getWidget", Context.class, Integer.class).invoke(clsLoadClass.newInstance(), com.censivn.C3DEngine.A.d(), Integer.valueOf(itemInfo.id))).getVirtualTarget();
                         aVar.a(itemInfo);
                     } else {
-                        aVar = new com.tsf.shell.f.i.b.c.a(itemInfo);
+                        aVar = new com.tsf.shell.f.i.b.c.ItemDataConfig(itemInfo);
                     }
                     if (aVar != null) {
                         aVar.position().x = itemInfo.cellX;

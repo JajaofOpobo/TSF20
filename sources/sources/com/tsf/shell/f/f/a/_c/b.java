@@ -99,7 +99,7 @@ public class b extends c.a {
         e eVar = new e(com.tsf.b.d.drawer_layout_folder, i, x.c(com.tsf.b.i.pop_menu_create_folder)) { // from class: com.tsf.shell.f.f.a._c.b.3
             @Override // com.tsf.shell.f.f.a._c.e
             public void a() {
-                ArrayList<com.tsf.shell.f.i._b.e.b> arrayList = new ArrayList<>();
+                ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase> arrayList = new ArrayList<>();
                 int iNumChildren = b.this.a.l().numChildren();
                 if (iNumChildren > 0) {
                     int i2 = iNumChildren - 1;
@@ -108,13 +108,13 @@ public class b extends c.a {
                         if (i3 <= -1) {
                             break;
                         }
-                        com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) b.this.a.l().getChildAt(i3);
+                        com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) b.this.a.l().getChildAt(i3);
                         if (bVar.ao()) {
                             arrayList.add(bVar);
                         }
                         i2 = i3 - 1;
                     }
-                    for (com.tsf.shell.f.i._b.e.b bVar2 : arrayList) {
+                    for (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 : arrayList) {
                         bVar2.alpha(255.0f);
                         bVar2.visible(true);
                         bVar2.al();
@@ -206,7 +206,7 @@ public class b extends c.a {
         while (true) {
             int i3 = i2;
             if (i3 < this.a.l().numChildren()) {
-                com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) this.a.l().getChildAt(i3);
+                com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.a.l().getChildAt(i3);
                 bVar.ak();
                 bVar.am();
                 i2 = i3 + 1;
@@ -236,8 +236,8 @@ public class b extends c.a {
                 }
             }
             for (com.censivn.C3DEngine.b.f.i iVar : arrayList) {
-                if (iVar instanceof com.tsf.shell.f.i._b.e.b) {
-                    com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) iVar;
+                if (iVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                    com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) iVar;
                     bVar.alpha(255.0f);
                     bVar.visible(true);
                     bVar.al();
@@ -295,7 +295,7 @@ public class b extends c.a {
     private boolean k() {
         int iNumChildren = this.a.l().numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            if (((com.tsf.shell.f.i._b.e.b) this.a.l().getChildAt(i)).ao()) {
+            if (((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.a.l().getChildAt(i)).ao()) {
                 return true;
             }
         }
@@ -303,7 +303,7 @@ public class b extends c.a {
     }
 
     public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase)) {
             cVar.rotation().setAll(0.0f, 0.0f, 0.0f);
             cVar.ak();
             cVar.am();
@@ -316,8 +316,8 @@ public class b extends c.a {
             j();
             return;
         }
-        if (cVar.parent() == this.a.l() && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
-            com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) cVar;
+        if (cVar.parent() == this.a.l() && (cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase)) {
+            com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) cVar;
             if (!bVar.ao()) {
                 bVar.ak();
                 bVar.am();
@@ -340,7 +340,7 @@ public class b extends c.a {
             if (this.e == 0) {
                 Iterator<com.censivn.C3DEngine.b.f.i> it = jVar.children().iterator();
                 while (it.hasNext()) {
-                    com.tsf.shell.f.i._b.e.b bVar = (com.tsf.shell.f.i._b.e.b) it.next();
+                    com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next();
                     if (bVar.ao()) {
                         arrayList.add(bVar);
                     }
@@ -348,7 +348,7 @@ public class b extends c.a {
             } else {
                 Iterator<com.censivn.C3DEngine.b.f.i> it2 = jVar.children().iterator();
                 while (it2.hasNext()) {
-                    arrayList.add((com.tsf.shell.f.i._b.e.b) it2.next());
+                    arrayList.add((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it2.next());
                 }
             }
             for (com.tsf.shell.f.i.ShortcutItem cVar2 : arrayList) {

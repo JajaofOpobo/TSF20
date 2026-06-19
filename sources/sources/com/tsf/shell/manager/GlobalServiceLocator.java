@@ -20,7 +20,7 @@ public class GlobalServiceLocator {
     public static b d;
     public static com.tsf.shell.manager.f.WorkspaceScene e;
     public static ShellWallpaperManager f;
-    public static com.tsf.shell.f.c.A g;
+    public static com.tsf.shell.f.c.DrawerPanelController g;
     public static n h;
     public static com.tsf.shell.manager.r.c.WidgetRegistryManager i;
     public static com.tsf.shell.manager.f.ViewportController j;
@@ -28,8 +28,8 @@ public class GlobalServiceLocator {
     public static com.tsf.shell.manager.r.a.WidgetInstanceTracker l;
     public static p m;
     public static com.tsf.shell.manager.m.SideMenuManager n;
-    public static com.tsf.shell.f.h.b o;
-    public static com.tsf.shell.f.e.e.c StubPlaceholder;
+    public static com.tsf.shell.f.h.WorkspaceStub o;
+    public static com.tsf.shell.f.e.e.ItemAnimationController StubPlaceholder;
     public static com.tsf.shell.manager.n.ToastOverlayController q;
     public static com.tsf.shell.manager.q.UnreadBadgeManager r;
     public static com.censivn.C3DEngine.b.c.d s;

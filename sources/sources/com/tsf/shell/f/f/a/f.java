@@ -391,8 +391,8 @@ public class f extends j implements b.a {
     }
 
     public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
-        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
-            ((com.tsf.shell.f.i.b.d.b) cVar).aR();
+        if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+            ((com.tsf.shell.f.i.b.d.FolderShortcutItem) cVar).aR();
             return;
         }
         if (this.f != this.k && this.f != this.h) {

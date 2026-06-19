@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
-import com.tsf.shell.f.i.b.e.g;
+import com.tsf.shell.f.i.b.e.DrawerItemVisual;
 import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.plugin.themepicker.e;
 import com.tsf.shell.plugin.themepicker.k;

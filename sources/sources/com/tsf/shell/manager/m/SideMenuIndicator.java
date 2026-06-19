@@ -9,7 +9,7 @@ import com.tsf.b;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SideMenuIndicator extends com.tsf.shell.f.e.e.d {
+public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
     private TextureElement b;
     private k d;
     private k e;
@@ -19,7 +19,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.d {
     private boolean j = false;
     private com.censivn.C3DEngine.b.g._b.b i = new com.censivn.C3DEngine.b.g._b.b();
     private TextureElement a = new TextureElement(0, false);
-    private j c = new com.tsf.shell.f.e.e.d();
+    private j c = new com.tsf.shell.f.e.e.ItemLayoutItem();
 
     public SideMenuIndicator(b bVar) {
         boolean z = false;
@@ -64,17 +64,17 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.d {
         calAABB();
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean b(F fVar) {
         return b(fVar);
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public boolean a(F fVar, float f, float f2) {
         return a(fVar, f, f2);
     }
 
-    @Override // com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void a(F fVar) {
         a(fVar);
     }

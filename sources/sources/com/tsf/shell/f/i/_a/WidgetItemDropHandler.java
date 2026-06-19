@@ -5,9 +5,9 @@ import com.tsf.shell.manager.action.GestureHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetItemDropHandler extends WidgetItemTouchHandler {
-    private com.tsf.shell.f.i._b.e.b g;
+    private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase g;
 
-    public d(com.tsf.shell.f.i._b.e.b bVar) {
+    public d(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar) {
         super(bVar);
         this.g = bVar;
     }

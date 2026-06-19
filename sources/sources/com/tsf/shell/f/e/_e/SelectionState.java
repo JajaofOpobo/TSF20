@@ -260,8 +260,8 @@ public class SelectionState {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.6.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (fVar instanceof com.tsf.shell.f.i._b.e.g) {
-                            ((com.tsf.shell.f.i._b.e.g) fVar).bh();
+                        if (fVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) {
+                            ((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) fVar).bh();
                         }
                     }
                 }, 250L);

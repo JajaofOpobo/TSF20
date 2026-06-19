@@ -25,7 +25,7 @@ public class d extends com.tsf.shell.f._d.a.A {
         final float f2;
         final float f3;
         final float f4;
-        final boolean zAK = ((com.tsf.shell.f.i._b.e.b) aVar.parent()).aK();
+        final boolean zAK = ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) aVar.parent()).aK();
         final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
         final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
         final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.d);

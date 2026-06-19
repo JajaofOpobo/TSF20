@@ -6,7 +6,7 @@ import com.tsf.b;
 import com.tsf.shell.f.e.ToggleRowItem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.d {
+public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
     private j a;
     private l b;
     private h c;
@@ -51,18 +51,18 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.d {
     private void a() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.a;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         super.onLayout(f, f2, f3, f4);
         a();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         super.onShow();
         a();
@@ -71,18 +71,18 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.d {
         this.c.k(this.d);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHideComplete() {
         recycle();
         com.tsf.shell.manager.app.LauncherAppInfo.c(this.d);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig
     public void onRequestExit() {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void recycle() {
         super.recycle();
         removeIcon();

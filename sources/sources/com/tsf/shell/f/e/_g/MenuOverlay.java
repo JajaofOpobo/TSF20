@@ -15,9 +15,9 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class MenuOverlay {
     public static d mCurrentMenu;
-    private com.tsf.shell.f.e._g.a.c mCurrentMenuItem;
+    private com.tsf.shell.f.e._g.a.MenuItemBase mCurrentMenuItem;
     private float mHeight;
-    private ArrayList<com.tsf.shell.f.e._g.a.b> mMenuItems;
+    private ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> mMenuItems;
     private float mOffsetMenuHeight;
     public static int COLOR_IMAGE_HUE = 0;
     public static int COLOR_IMAGE_SATURATION = 0;
@@ -107,7 +107,7 @@ public abstract class MenuOverlay {
         if (mCurrentMenu == null || mCurrentMenu == this) {
             mCurrentMenu = this;
             if (!this.isShow) {
-                Iterator<com.tsf.shell.f.e._g.a.b> it = this.mMenuItems.iterator();
+                Iterator<com.tsf.shell.f.e._g.a.MenuActionItem> it = this.mMenuItems.iterator();
                 while (it.hasNext()) {
                     it.next().getTitleIcon().i();
                 }
@@ -128,7 +128,7 @@ public abstract class MenuOverlay {
         if (mCurrentMenu == null || mCurrentMenu == this) {
             mCurrentMenu = this;
             if (!this.isShow) {
-                Iterator<com.tsf.shell.f.e._g.a.b> it = this.mMenuItems.iterator();
+                Iterator<com.tsf.shell.f.e._g.a.MenuActionItem> it = this.mMenuItems.iterator();
                 while (it.hasNext()) {
                     it.next().getTitleIcon().i();
                 }
@@ -189,9 +189,9 @@ public abstract class MenuOverlay {
         com.tsf.shell.manager.app.TaskScheduler.a(this.mContainer);
     }
 
-    private com.tsf.shell.f.e._g.a.b getFirstAvailableMenu(int i) {
+    private com.tsf.shell.f.e._g.a.MenuActionItem getFirstAvailableMenu(int i) {
         int i2 = 0;
-        for (com.tsf.shell.f.e._g.a.b bVar : this.mMenuItems) {
+        for (com.tsf.shell.f.e._g.a.MenuActionItem bVar : this.mMenuItems) {
             if (!bVar.isEnable() || i2 != i) {
                 i2 = bVar.isEnable() ? i2 + 1 : i2;
             } else {
@@ -213,7 +213,7 @@ public abstract class MenuOverlay {
                 d.this.mCurrentMenuItem = null;
                 Iterator it = d.this.mMenuItems.iterator();
                 while (it.hasNext()) {
-                    ((com.tsf.shell.f.e._g.a.c) it.next()).recycle();
+                    ((com.tsf.shell.f.e._g.a.MenuItemBase) it.next()).recycle();
                 }
                 d.mCurrentMenu = null;
                 d.this.onHideComplete();
@@ -236,7 +236,7 @@ public abstract class MenuOverlay {
         return this.mHeight;
     }
 
-    public ArrayList<com.tsf.shell.f.e._g.a.b> getMenuItems() {
+    public ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> getMenuItems() {
         return this.mMenuItems;
     }
 
@@ -266,10 +266,10 @@ public abstract class MenuOverlay {
         return this.mClassMenu;
     }
 
-    protected void setMenuItems(ArrayList<com.tsf.shell.f.e._g.a.b> arrayList) {
+    protected void setMenuItems(ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList) {
         this.mMenuItems = arrayList;
         this.mClassMenu.a(arrayList);
-        for (com.tsf.shell.f.e._g.a.b bVar : arrayList) {
+        for (com.tsf.shell.f.e._g.a.MenuActionItem bVar : arrayList) {
             bVar.setMenu(this);
             bVar.onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
             if (bVar.getContentContainer() != null) {
@@ -332,7 +332,7 @@ public abstract class MenuOverlay {
         }
     }
 
-    public void changeMenu(com.tsf.shell.f.e._g.a.c cVar) {
+    public void changeMenu(com.tsf.shell.f.e._g.a.MenuItemBase cVar) {
         cVar.setMenu(this);
         if (this.mCurrentMenuItem != cVar && cVar.getContentContainer() != null && cVar.allowChoice()) {
             if (this.mCurrentMenuItem != null) {
@@ -345,17 +345,17 @@ public abstract class MenuOverlay {
             this.mCurrentMenuItem.show(true);
             onMenuChanged(this.mCurrentMenuItem);
             setOption(cVar);
-            if (cVar instanceof com.tsf.shell.f.e._g.a.b) {
-                this.mClassMenu.a((com.tsf.shell.f.e._g.a.b) cVar);
+            if (cVar instanceof com.tsf.shell.f.e._g.a.MenuActionItem) {
+                this.mClassMenu.a((com.tsf.shell.f.e._g.a.MenuActionItem) cVar);
             }
         }
     }
 
-    public com.tsf.shell.f.e._g.a.c getCurrentMenuItem() {
+    public com.tsf.shell.f.e._g.a.MenuItemBase getCurrentMenuItem() {
         return this.mCurrentMenuItem;
     }
 
-    public void setOption(com.tsf.shell.f.e._g.a.c cVar) {
+    public void setOption(com.tsf.shell.f.e._g.a.MenuItemBase cVar) {
         showOption(cVar.getMenuContainer());
     }
 
@@ -418,7 +418,7 @@ public abstract class MenuOverlay {
     public void onHideComplete() {
     }
 
-    public void onMenuChanged(com.tsf.shell.f.e._g.a.c cVar) {
+    public void onMenuChanged(com.tsf.shell.f.e._g.a.MenuItemBase cVar) {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -428,7 +428,7 @@ public abstract class MenuOverlay {
         this.mBarBackground.a(com.censivn.C3DEngine.b.b.A.D);
         this.mExtraMenuContainer.a(com.censivn.C3DEngine.b.b.A.D);
         this.mBarBackground.calAABB();
-        Iterator<com.tsf.shell.f.e._g.a.b> it = this.mMenuItems.iterator();
+        Iterator<com.tsf.shell.f.e._g.a.MenuActionItem> it = this.mMenuItems.iterator();
         while (it.hasNext()) {
             it.next().onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
         }

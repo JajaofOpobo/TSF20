@@ -42,7 +42,7 @@ public class b extends d {
                     dVar2.d(0.0f);
                     dVar2.a(255);
                     dVar2.a(com.censivn.C3DEngine.b.g.a.n);
-                    com.censivn.C3DEngine.b.g.c.a(iVar2, com.tsf.shell.f.e._g.a.c.ANIMATION_TIME, dVar2);
+                    com.censivn.C3DEngine.b.g.c.a(iVar2, com.tsf.shell.f.e._g.a.MenuItemBase.ANIMATION_TIME, dVar2);
                     if (com.tsf.shell.manager.app.v.SimpleHelper.b().b()) {
                         dVar2 = dVar;
                     }

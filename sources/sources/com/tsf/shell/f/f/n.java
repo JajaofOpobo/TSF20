@@ -60,14 +60,14 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
     boolean e = true;
     private boolean O = false;
     private Object I = this;
-    private com.tsf.shell.f.e.e.a H = new com.tsf.shell.f.e.e.a() { // from class: com.tsf.shell.f.f.n.1
-        @Override // com.tsf.shell.f.e.e.a
+    private com.tsf.shell.f.e.e.ItemNode H = new com.tsf.shell.f.e.e.ItemNode() { // from class: com.tsf.shell.f.f.n.1
+        @Override // com.tsf.shell.f.e.e.ItemNode
         public void a(int i, Object obj) {
             c();
             com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.PageItem) obj);
         }
 
-        @Override // com.tsf.shell.f.e.e.a
+        @Override // com.tsf.shell.f.e.e.ItemNode
         public float a() {
             return com.tsf.shell.manager.app.WidgetPanelController.a.j() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 2) : com.censivn.C3DEngine.b.b.A.h * 2;
         }
@@ -93,7 +93,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.v;
     }
 
-    public com.tsf.shell.f.e.e.a b() {
+    public com.tsf.shell.f.e.e.ItemNode b() {
         return this.H;
     }
 
@@ -229,8 +229,8 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
             @Override // java.lang.Runnable
             public void run() {
                 if (n.this.J != null) {
-                    if (n.this.J instanceof com.tsf.shell.f.i.b.b.a) {
-                        com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) n.this.J;
+                    if (n.this.J instanceof com.tsf.shell.f.i.b.b.ItemShell) {
+                        com.tsf.shell.f.i.b.b.ItemShell aVar = (com.tsf.shell.f.i.b.b.ItemShell) n.this.J;
                         if (n.this.m.s() != null && n.this.m != n.this.q) {
                             if (!n.this.m.s().a(aVar.K().width * aVar.K().height, aVar.g)) {
                                 n.this.y();
@@ -790,7 +790,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e(g gVar) {
-        com.tsf.shell.f.i.b.e.c.h(((-gVar.r()) / this.n) * 360.0f);
+        com.tsf.shell.f.i.b.e.DrawerItemGather.h(((-gVar.r()) / this.n) * 360.0f);
     }
 
     public void C() {
@@ -2023,7 +2023,7 @@ public class n implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private int A = 2;
         private int B = 0;
         private boolean G = false;
-        private com.tsf.shell.f.e.e.b F = com.tsf.shell.manager.app.WidgetAnimator.d();
+        private com.tsf.shell.f.e.e.ItemContainerNode F = com.tsf.shell.manager.app.WidgetAnimator.d();
         private com.censivn.C3DEngine.b.f.k E = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
         private float b = 0.017453292f;
         private float h = com.censivn.C3DEngine.b.b.A.D;

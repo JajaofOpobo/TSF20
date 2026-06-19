@@ -12,7 +12,7 @@ public class c extends com.tsf.shell.f._d.a.A {
 
     public c(int i, boolean z) {
         super(i, z);
-        this.a = new com.tsf.shell.f.i.b.e.h().k;
+        this.a = new com.tsf.shell.f.i.b.e.DrawerItemButton().k;
     }
 
     @Override // com.tsf.shell.f._d.a.A

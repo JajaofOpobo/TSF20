@@ -1,0 +1,234 @@
+package com.tsf.shell.f.e.a;
+
+import android.view.MotionEvent;
+import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.h.b.g;
+import com.tsf.shell.manager.app.ObserverManager;
+import com.tsf.shell.manager.app.LauncherAppInfo;
+import com.tsf.shell.utils.HapticFeedbackManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class AlignmentEngine {
+    private static j b;
+    private static k c;
+    private static boolean d;
+    private static g e;
+    private static ObserverManager f;
+    private static d g;
+    private static a i;
+    private static ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> j;
+    private static ArrayList<LauncherAppInfo> k;
+    private static AlignmentBackHandler.a l;
+    private static float a = 0.0f;
+    private static boolean h = false;
+
+    private static void h() {
+        if (!d) {
+            f = new ObserverManager();
+            g = new AlignmentResizeHandler();
+            b = new j() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.1
+                @Override // com.censivn.C3DEngine.b.f.i
+                public void onKillFocus() {
+                    c.b();
+                }
+            };
+            l = new AlignmentBackHandler.a() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.2
+                @Override // com.tsf.shell.manager.app.ObserverManager.a
+                public void a() {
+                    c.a();
+                    c.e.b();
+                }
+            };
+            AlignmentBackHandler.alpha(0.0f);
+            c = new k(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
+            AlignmentBackHandler.addChild(c);
+            e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.3
+                @Override // com.censivn.C3DEngine.b.h.b.g
+                public i a(int i2, i iVar) {
+                    i iVarB;
+                    if (iVar == null) {
+                        iVarB = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
+                        ((com.censivn.C3DEngine.b.f.a.a) iVarB).a(true);
+                        iVarB.calAABB();
+                    } else {
+                        iVarB = iVar;
+                    }
+                    iVarB.textures().clear();
+                    iVarB.textures().addElement(((com.tsf.shell.f.i.b.e.DrawerItemVisual) c.j.get(i2)).aZ());
+                    return iVarB;
+                }
+
+                @Override // com.censivn.C3DEngine.b.h.b.g
+                public int e() {
+                    return c.j.size();
+                }
+
+                @Override // com.censivn.C3DEngine.b.h.b.g
+                public void a(i iVar, int i2) {
+                    c.i.a(iVar, (com.tsf.shell.f.i.b.e.DrawerItemVisual) c.j.get(i2));
+                    c.j.remove(i2);
+                    a(i2);
+                    b();
+                    if (c.j.size() == 0) {
+                        c.b();
+                    }
+                }
+            };
+            AlignmentBackHandler.addChild(e);
+            AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, 80.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
+            AlignmentBackHandler.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(AlignmentBackHandler) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.4
+                com.censivn.C3DEngine.b.d.a a;
+
+                @Override // com.censivn.C3DEngine.b.d.a
+                public void e(MotionEvent motionEvent) {
+                    float[] fArrA = x.a(motionEvent);
+                    i hittingTarget = this.c.getHittingTarget(fArrA[0], fArrA[1], true);
+                    if (hittingTarget == null) {
+                        this.a = c.e.getMouseEventListener();
+                    } else {
+                        this.a = hittingTarget.getMouseEventListener();
+                        this.a.e(motionEvent);
+                    }
+                }
+
+                @Override // com.censivn.C3DEngine.b.d.a
+                public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
+                    if (this.a != null) {
+                        this.a.a(motionEvent, motionEvent2, f2, f3);
+                    }
+                }
+
+                @Override // com.censivn.C3DEngine.b.d.a
+                public void f(MotionEvent motionEvent) {
+                    if (this.a != null) {
+                        this.a.f(motionEvent);
+                    }
+                }
+
+                @Override // com.censivn.C3DEngine.b.d.a
+                public void a(MotionEvent motionEvent) {
+                    if (this.a != null) {
+                        w.b();
+                        this.a.a(motionEvent);
+                    }
+                }
+
+                @Override // com.censivn.C3DEngine.b.d.a
+                public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
+                    if (this.a != null) {
+                        this.a.b(motionEvent, motionEvent2, f2, f3);
+                    }
+                }
+            });
+            d = true;
+            return;
+        }
+        e.a();
+        e.b();
+    }
+
+    public static void a() {
+        j.clear();
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().a.d();
+        if (k != null) {
+            for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayListD) {
+                if (!k.contains(gVar.bd())) {
+                    j.add(gVar);
+                }
+            }
+            arrayListD.clear();
+            return;
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it = arrayListD.iterator();
+        while (it.hasNext()) {
+            j.add(it.next());
+        }
+    }
+
+    public static void a(a aVar, ArrayList<LauncherAppInfo> arrayList) {
+        if (j != null) {
+            j.clear();
+        }
+        k = arrayList;
+        j = new ArrayList<>();
+        a();
+        i = aVar;
+        i.e();
+        h();
+        com.tsf.shell.manager.app.ServiceProvider.a().a.a(l);
+        com.tsf.shell.manager.app.ServiceProvider.a().a.b();
+        j();
+        if (AlignmentBackHandler.parent() == null) {
+            AlignmentBackHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
+        } else {
+            AlignmentBackHandler.removeFromParent();
+        }
+        com.tsf.shell.manager.app.TaskScheduler.a(AlignmentBackHandler);
+        i();
+    }
+
+    public static void b() {
+        if (h) {
+            com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
+            com.censivn.C3DEngine.b.c.b.b(f);
+            com.tsf.shell.manager.app.ObserverManager.b(g);
+            c();
+        }
+    }
+
+    private static void i() {
+        AlignmentBackHandler.mouseEnabled(false);
+        AlignmentBackHandler.setFocus();
+        h = true;
+        com.censivn.C3DEngine.b.c.b.a(f);
+        com.tsf.shell.manager.app.ObserverManager.a(g);
+        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.5
+            @Override // com.censivn.C3DEngine.b.g.d
+            public void a() {
+                c.b.mouseEnabled(true);
+            }
+        };
+        dVar.a(255);
+        dVar.h(AlignmentListener);
+        com.censivn.C3DEngine.b.g.c.a(AlignmentBackHandler);
+        com.censivn.C3DEngine.b.g.c.a(b, 500, dVar);
+    }
+
+    protected static void c() {
+        h = false;
+        i.i();
+        AlignmentBackHandler.mouseEnabled(false);
+        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.6
+            @Override // com.censivn.C3DEngine.b.g.d
+            public void a() {
+                c.b.removeFromParent();
+                c.i.h();
+                a unused = c.i = null;
+                c.j.clear();
+            }
+        };
+        dVar.a(0);
+        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.A.b));
+        com.censivn.C3DEngine.b.g.c.a(AlignmentBackHandler);
+        com.censivn.C3DEngine.b.g.c.a(b, 500, dVar);
+    }
+
+    private static void j() {
+        AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f, 0.0f);
+        c.a(com.censivn.C3DEngine.b.b.A.D);
+        e.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f);
+        a = com.censivn.C3DEngine.b.b.A.C + (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.A.c);
+        if (h) {
+            AlignmentBackHandler.position().y = a;
+        }
+    }
+
+    public static void a(int i2, int i3, int i4, int i5) {
+        j();
+    }
+}

@@ -5,7 +5,7 @@ import com.tsf.shell.f._d.b.a.d;
 import com.tsf.shell.f._d.b.a.e;
 import com.tsf.shell.f.f.TransitionManager;
 import com.tsf.shell.f.f.TransitionRenderer;
-import com.tsf.shell.f.i.b.e.b;
+import com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
 import java.util.ArrayList;
 import java.util.Iterator;
 

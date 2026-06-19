@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import com.tsf.shell.f.i.MultiSelectController;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.g;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -28,7 +28,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     private AddItemButton d;
     private DragSortContainer e;
     private SideMenuIndicator f;
-    private com.tsf.shell.f.i.b.e.b h;
+    private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase h;
     private b.a i;
     private com.tsf.shell.f.i.MultiSelectController j;
     private float m;
@@ -156,12 +156,12 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         jVar.addChild(this.c);
         this.f = new d(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.5
             /* JADX WARN: Multi-variable type inference failed */
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean a(f fVar, float f, float f2) {
                 return b.this.b((i) fVar);
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(f fVar) {
                 if (!b.this.g) {
                     com.tsf.shell.manager.app.StateHub.b().c();
@@ -172,9 +172,9 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 }
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.d, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean b(f fVar) {
-                return fVar instanceof com.tsf.shell.f.i.b.e.b;
+                return fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
             }
         };
         this.c.addChild(this.f);
@@ -202,10 +202,10 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         }
         if (!this.l) {
             z = false;
-        } else if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
-            Iterator<com.tsf.shell.f.i.ShortcutItem> it = ((com.tsf.shell.f.i.b.e.b) iVar).av().iterator();
+        } else if (iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            Iterator<com.tsf.shell.f.i.ShortcutItem> it = ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).av().iterator();
             while (it.hasNext()) {
-                if (!(it.next() instanceof com.tsf.shell.f.i.b.e.b)) {
+                if (!(it.next() instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                     z = true;
                     break;
                 }
@@ -394,7 +394,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     public void a(ArrayList<ItemInfo> arrayList, String str) {
         Iterator<ItemInfo> it = com.tsf.shell.utils.ItemInfoListSorter.a(arrayList, str, ",", true).iterator();
         while (it.hasNext()) {
-            com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.ShortcutManager.a(it.next(), true);
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarA = com.tsf.shell.manager.l.ShortcutManager.a(it.next(), true);
             a((com.tsf.shell.f.i.PageItem) bVarA, false);
             this.e.addChild(bVarA);
         }

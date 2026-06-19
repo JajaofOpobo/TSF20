@@ -1,15 +1,15 @@
 package com.tsf.shell.f;
 
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class C {
-    private static ArrayList<com.tsf.shell.f.i.b.e.b> a = new ArrayList<>();
+    private static ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> a = new ArrayList<>();
 
-    public static com.tsf.shell.f.i.b.e.b a(i iVar) {
-        com.tsf.shell.f.i.b.e.b bVarRemove;
+    public static com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(i iVar) {
+        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarRemove;
         if (a.isEmpty()) {
             bVarRemove = new h();
             bVarRemove.visible(false);
@@ -23,7 +23,7 @@ public class C {
         return bVarRemove;
     }
 
-    public static void a(com.tsf.shell.f.i.b.e.b bVar) {
+    public static void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         a.add(bVar);
     }
 }

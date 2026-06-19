@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.j;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AnimatedItemGroup extends ItemGroupBase {
     private j k;
-    private com.tsf.shell.f.i.b.a.a l;
+    private com.tsf.shell.f.i.b.a.ItemContainer l;
 
     public A() {
         b(true);
@@ -40,7 +40,7 @@ public class AnimatedItemGroup extends ItemGroupBase {
                 this.a += 2;
             }
         };
-        this.l = new com.tsf.shell.f.i.b.a.a(false);
+        this.l = new com.tsf.shell.f.i.b.a.ItemContainer(false);
         this.l.scale().setAll(0.54f, 0.54f, 0.54f);
         this.l.setAnimationObjectState(true);
         jVar.addChild(this.l);

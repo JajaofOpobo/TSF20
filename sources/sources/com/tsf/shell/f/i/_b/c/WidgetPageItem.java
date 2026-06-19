@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
-    private static com.tsf.shell.f.i._b.c.b f;
+    private static com.tsf.shell.f.i._b.c.WidgetItemData f;
     private static double p = 0.017453292519943295d;
     public int a;
     FloatingItem b;
@@ -43,7 +43,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
         i(true);
         e(false);
         if (f == null) {
-            f = new com.tsf.shell.f.i._b.c.b();
+            f = new com.tsf.shell.f.i._b.c.WidgetItemData();
         }
         ac();
         this.o = position().y;
@@ -238,7 +238,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
             return false;
         }
         if (this.b.h) {
-            this.k = new b(this.b.l, this.b.k, this.b.j, this.b.i, textureElementA.width, textureElementA.height);
+            this.k = new WidgetItemData(this.b.l, this.b.k, this.b.j, this.b.i, textureElementA.width, textureElementA.height);
         } else {
             this.k = new C0114a(textureElementA.width * com.censivn.C3DEngine.b.b.A.b, textureElementA.height * com.censivn.C3DEngine.b.b.A.b, false);
         }

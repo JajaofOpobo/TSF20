@@ -46,14 +46,14 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.action.GestureHandler.a(com.censivn.C3DEngine.A.d());
         com.tsf.shell.manager.app.ObjectRegistry = new com.tsf.shell.manager.c.ContactManager();
         com.tsf.shell.e.DragLayer eVar = (com.tsf.shell.e.DragLayer) gLSurfaceView.getParent();
-        com.tsf.shell.manager.app.ServiceFactory = new com.tsf.shell.f.h.b();
+        com.tsf.shell.manager.app.ServiceFactory = new com.tsf.shell.f.h.WorkspaceStub();
         com.tsf.shell.manager.app.PanelStateManager = new com.tsf.shell.manager.m.SideMenuManager();
         com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
         com.tsf.shell.manager.app.TaskScheduler = new d(eVar);
         com.tsf.shell.manager.app.StateHub = new n();
-        com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.c();
+        com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.ItemAnimationController();
         com.tsf.shell.manager.app.Notifier = new com.tsf.shell.manager.n.ToastOverlayController();
-        com.tsf.shell.manager.app.WidgetPanelController = new com.tsf.shell.f.c.A();
+        com.tsf.shell.manager.app.WidgetPanelController = new com.tsf.shell.f.c.DrawerPanelController();
         com.tsf.shell.manager.app.PositionAnimator = new com.tsf.shell.manager.l.ShortcutManagerHolder();
         com.tsf.shell.manager.app.WidgetManager = new com.tsf.shell.manager.r.c.WidgetRegistryManager();
         com.tsf.shell.manager.app.StateManager = new com.tsf.shell.manager.d.HitTargetManager();
@@ -66,20 +66,20 @@ public class LauncherInitController extends f {
     }
 
     private void h() {
-        com.tsf.shell.f.e.b.a();
+        com.tsf.shell.f.e.b.ResizeButtonNode();
         com.tsf.shell.f.e.WidgetFreeResizeController.b();
         WidgetMatchResizeController.c();
-        com.tsf.shell.f.e.a.a();
+        com.tsf.shell.f.e.a.AlignmentListener();
     }
 
     @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
     public void b() {
         Home.c.a("initScene start");
         Home.q();
-        com.tsf.shell.f.e.b.e.a();
+        com.tsf.shell.f.e.b.ResizeTextureManager.a();
         com.tsf.shell.manager.app.PreferenceProvider = new com.tsf.shell.preference.a.d();
         com.tsf.shell.manager.app.v = new com.tsf.shell.f._d.A();
-        com.tsf.shell.f.i.b.d.b.k();
+        com.tsf.shell.f.i.b.d.FolderShortcutItem.k();
         new com.tsf.shell.manager.o.EmptyStub();
         com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.WallpaperTouchHandler(new j()));
         com.tsf.shell.manager.app.DataCoordinator = new b();

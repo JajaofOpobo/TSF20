@@ -30,7 +30,7 @@ public class FolderManager implements AppListModel.a {
     private HashMap<Integer, LauncherDrawerFolder3DInfo> b = new HashMap<>();
     private boolean _c = false;
     private boolean d = false;
-    private ArrayList<com.tsf.shell.f.i.b.e.g> g = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> g = new ArrayList<>();
 
     public interface a {
         void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList);
@@ -68,16 +68,16 @@ public class FolderManager implements AppListModel.a {
     /* JADX INFO: Access modifiers changed from: private */
     public ArrayList<com.tsf.shell.f.i.PageItem> a(ArrayList<ItemInfo> arrayList) {
         System.currentTimeMillis();
-        ArrayList<com.tsf.shell.f.i.b.e.g> arrayList2 = (ArrayList) com.tsf.shell.manager.app.ServiceProvider.a().d().clone();
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList2 = (ArrayList) com.tsf.shell.manager.app.ServiceProvider.a().d().clone();
         ArrayList<com.tsf.shell.f.i.PageItem> arrayList3 = new ArrayList<>();
         for (ItemInfo itemInfo : arrayList) {
             if (itemInfo instanceof LauncherShortcutAppInfo) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                com.tsf.shell.f.i.b.e.g gVarA = a(launcherShortcutAppInfo, arrayList2);
+                com.tsf.shell.f.i.b.e.DrawerItemVisual gVarA = a(launcherShortcutAppInfo, arrayList2);
                 if (gVarA != null) {
                     gVarA.b(itemInfo);
                 } else {
-                    gVarA = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo), true);
+                    gVarA = new com.tsf.shell.f.i.b.e.DrawerItemVisual(launcherShortcutAppInfo, com.tsf.shell.f.i.b.e.DrawerItemVisual.a((LauncherShortcut3DInfo) launcherShortcutAppInfo), true);
                     com.tsf.shell.manager.app.ServiceProvider.a().a(gVarA, false, false);
                     gVarA.b(itemInfo);
                     gVarA.setMouseEventListener(com.tsf.shell.manager.app.StateHub.t().f(gVarA));
@@ -87,35 +87,35 @@ public class FolderManager implements AppListModel.a {
                 LauncherFolder3DInfo launcherFolder3DInfo = (LauncherFolder3DInfo) itemInfo;
                 for (ItemInfo itemInfo2 : launcherFolder3DInfo.getItemInfo()) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo2 = (LauncherShortcutAppInfo) itemInfo2;
-                    com.tsf.shell.f.i.b.e.g gVarA2 = a(launcherShortcutAppInfo2, arrayList2);
+                    com.tsf.shell.f.i.b.e.DrawerItemVisual gVarA2 = a(launcherShortcutAppInfo2, arrayList2);
                     if (gVarA2 != null) {
                         gVarA2.b(itemInfo2);
                     } else {
-                        com.tsf.shell.f.i.b.e.g gVar = new com.tsf.shell.f.i.b.e.g(launcherShortcutAppInfo2, com.tsf.shell.f.i.b.e.g.a((LauncherShortcut3DInfo) launcherShortcutAppInfo2), true);
+                        com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = new com.tsf.shell.f.i.b.e.DrawerItemVisual(launcherShortcutAppInfo2, com.tsf.shell.f.i.b.e.DrawerItemVisual.a((LauncherShortcut3DInfo) launcherShortcutAppInfo2), true);
                         gVar.b(itemInfo2);
                         com.tsf.shell.manager.app.ServiceProvider.a().a(gVar, false, false);
                     }
                 }
-                com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(launcherFolder3DInfo);
+                com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = com.tsf.shell.f.i.b.d.FolderShortcutItem.a(launcherFolder3DInfo);
                 bVarA.setMouseEventListener(com.tsf.shell.manager.app.StateHub.t().f(bVarA));
                 arrayList3.add(bVarA);
             }
         }
         com.tsf.shell.manager.app.ServiceProvider.b().a(arrayList3);
-        for (com.tsf.shell.f.i.b.e.g gVar2 : arrayList2) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar2 : arrayList2) {
             gVar2.b(new LauncherShortcutAppInfo());
             arrayList3.add(com.tsf.shell.manager.app.ServiceProvider.b().a(arrayList3, gVar2), gVar2);
         }
         return arrayList3;
     }
 
-    private com.tsf.shell.f.i.b.e.g a(LauncherShortcutAppInfo launcherShortcutAppInfo, ArrayList<com.tsf.shell.f.i.b.e.g> arrayList) {
+    private com.tsf.shell.f.i.b.e.DrawerItemVisual a(LauncherShortcutAppInfo launcherShortcutAppInfo, ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList) {
         if (launcherShortcutAppInfo.intent == null) {
             return null;
         }
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            com.tsf.shell.f.i.b.e.g gVar = arrayList.get(i);
+            com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = arrayList.get(i);
             if (gVar.bd().b.equals(launcherShortcutAppInfo.intent.getComponent())) {
                 arrayList.remove(i);
                 return gVar;
@@ -346,15 +346,15 @@ public class FolderManager implements AppListModel.a {
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void a(com.tsf.shell.f.i.b.e.g gVar) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
     }
 
     public void d() {
-        Iterator<com.tsf.shell.f.i.b.e.g> it = this.g.iterator();
+        Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it = this.g.iterator();
         while (it.hasNext()) {
             b(it.next(), false);
         }
@@ -363,7 +363,7 @@ public class FolderManager implements AppListModel.a {
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+    public void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
         if (this.d) {
             a(gVar.K());
         } else {
@@ -385,7 +385,7 @@ public class FolderManager implements AppListModel.a {
     public static class c {
         public static com.censivn.C3DEngine.api.element.TextureElement c() { return null; }
         public static com.censivn.C3DEngine.api.element.TextureElement b() { return null; }
-        public static void a(com.tsf.shell.f.i.b.e.i iVar) {}
-        public static void b(com.tsf.shell.f.i.b.e.i iVar) {}
+        public static void a(com.tsf.shell.f.i.b.e.DrawerItemLaunchAction iVar) {}
+        public static void b(com.tsf.shell.f.i.b.e.DrawerItemLaunchAction iVar) {}
     }
 }

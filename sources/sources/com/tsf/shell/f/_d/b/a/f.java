@@ -25,7 +25,7 @@ public class f extends d {
     }
 
     @Override // com.tsf.shell.f._d.b.a.d
-    public void a(com.tsf.shell.f.i.b.e.b bVar) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (this.c.visible()) {
             if (bVar.parent() instanceof com.tsf.shell.f.f.a.A) {
                 com.censivn.C3DEngine.A.e().b(bVar.position().x, bVar.position().y);
@@ -41,7 +41,7 @@ public class f extends d {
     }
 
     @Override // com.tsf.shell.f._d.b.a.d
-    public void b(com.tsf.shell.f.i.b.e.b bVar) {
+    public void b(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (this.c.visible()) {
             GLES20.glFrontFace(2304);
             if (bVar.parent() instanceof com.tsf.shell.f.f.a.A) {

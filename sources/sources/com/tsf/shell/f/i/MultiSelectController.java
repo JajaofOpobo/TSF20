@@ -131,7 +131,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
     public void a(B bVar) {
     }
 
-    public boolean a(com.tsf.shell.f.i.b.e.b bVar) {
+    public boolean a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         return true;
     }
 }

@@ -3,7 +3,7 @@ package com.tsf.shell.f.i.c;
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.f.i.c.a.k;
+import com.tsf.shell.f.i.c.a.ITextureCallback;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DeferredItemGroup extends ItemGroupBase {

@@ -5,9 +5,9 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
 
-import com.tsf.shell.f.e._g.a.d;
+import com.tsf.shell.f.e._g.a.MenuItemConfig;
 import com.tsf.shell.f.e.ToggleRowItem;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.manager.o.ThemeColorConstants;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -32,7 +32,7 @@ public class ThemeInstalledDetailMenu extends d {
     private j mOtherContainer = new j();
     private ThemePreviewInfoLayout mPreviewLayout;
     private com.censivn.C3DEngine.b.h.d.a mRingIcon;
-    private com.tsf.shell.f.i.b.e.b mShortcut;
+    private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase mShortcut;
     private ThemeElementInfoLayout mThemeElementLayout;
     private ThemeListsManager.ThemeInfo mThemeInfo;
     private ThemeWallpaperInfoLayout mWallpaperLayout;
@@ -182,12 +182,12 @@ public class ThemeInstalledDetailMenu extends d {
         return this.mThemeInfo;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.mMainContainer;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(50.0f)));
         this.mDetailContainer.setAABBPX(0.0f, (-getMenuHeight()) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, getMenuHeight() / 2.0f, 0.0f);
@@ -197,7 +197,7 @@ public class ThemeInstalledDetailMenu extends d {
         super.onLayout(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         super.onShow();
         this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(50.0f)));
@@ -207,7 +207,7 @@ public class ThemeInstalledDetailMenu extends d {
         this.mDetailContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHideComplete() {
         recycle();
         if (this.isShowingMoreLayout) {
@@ -222,7 +222,7 @@ public class ThemeInstalledDetailMenu extends d {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig
     public void onRequestExit() {
         if (this.isShowingMoreLayout) {
             this.mDetailContainer.g();
@@ -231,7 +231,7 @@ public class ThemeInstalledDetailMenu extends d {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void recycle() {
         super.recycle();
         removeIcon();

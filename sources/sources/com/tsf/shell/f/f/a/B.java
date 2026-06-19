@@ -33,8 +33,8 @@ public class B {
 
     public void b() {
         for (com.tsf.shell.f.i.PageItem bVar : this.b) {
-            if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-                com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
+            if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+                com.tsf.shell.f.i.b.d.FolderShortcutItem bVar2 = (com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar;
                 com.tsf.shell.manager.app.ServiceProvider.c().a(bVar2.K());
                 bVar2.g();
                 bVar2.destroy();

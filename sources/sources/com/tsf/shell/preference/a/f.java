@@ -7,10 +7,10 @@ import com.tsf.shell.preference.a.c;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class f extends b {
     private c.a a;
-    private com.tsf.shell.f.c.b.e b;
+    private com.tsf.shell.f.c.b.DrawerSettingsPanel b;
     private j d;
     private i e;
-    private com.tsf.shell.f.c.b.f f;
+    private com.tsf.shell.f.c.b.DrawerSettingsConfig f;
 
     public f(float f) {
         super(f);
@@ -56,7 +56,7 @@ public class f extends b {
     private void n() {
         this.a = com.tsf.shell.manager.app.PreferenceProvider.a.a();
         this.b = this.a.a();
-        this.f = new com.tsf.shell.f.c.b.f(this.b, this.b.a());
+        this.f = new com.tsf.shell.f.c.b.DrawerSettingsConfig(this.b, this.b.a());
     }
 
     public void h() {

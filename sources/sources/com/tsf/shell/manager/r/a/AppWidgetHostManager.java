@@ -195,7 +195,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
             launcherAppWidgetInfo.heightH = i7;
             launcherAppWidgetInfo.height = i7;
             launcherAppWidgetInfo.container = -1;
-            final com.tsf.shell.f.i.b.b.a aVar = new com.tsf.shell.f.i.b.b.a(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
+            final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.b.ItemShell(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
             aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
             aVar.g.a.setAppWidget(i, appWidgetInfo);
             if (Build.VERSION.SDK_INT >= 16) {
@@ -232,7 +232,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
             packageName = launcherAppWidgetInfo.providerName.getPackageName();
             launcherAppWidgetInfo.packagename = packageName;
         }
-        final com.tsf.shell.f.i.b.b.a aVar = new com.tsf.shell.f.i.b.b.a(launcherAppWidgetInfo, packageName);
+        final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.b.ItemShell(launcherAppWidgetInfo, packageName);
         aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
         aVar.g.a.setAppWidget(i, appWidgetInfo);
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.4

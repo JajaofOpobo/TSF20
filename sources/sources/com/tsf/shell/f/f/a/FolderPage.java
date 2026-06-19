@@ -54,7 +54,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public static int x;
     public static int y;
     public static int z;
-    public com.tsf.shell.f.i.b.e.h G;
+    public com.tsf.shell.f.i.b.e.DrawerItemButton G;
     public k H;
     protected C0133a I;
     private j K;
@@ -102,10 +102,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     public i a(com.tsf.shell.f.i.PageItem bVar) {
         i iVar;
-        if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-            com.tsf.shell.f.i.b.e.b bVar2 = (com.tsf.shell.f.i.b.e.b) bVar;
+        if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar;
             if (this.G == null) {
-                this.G = new com.tsf.shell.f.i.b.e.h();
+                this.G = new com.tsf.shell.f.i.b.e.DrawerItemButton();
             }
             this.G.k.textures().clear();
             if (bVar2.aC() && !bVar2.t()) {
@@ -113,9 +113,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             }
             iVar = this.G;
         } else {
-            TextureElement textureElementAD = ((com.tsf.shell.f.i.b.d.b) bVar).aD();
+            TextureElement textureElementAD = ((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aD();
             if (this.H == null) {
-                this.H = com.tsf.shell.f.i.b.d.b.l();
+                this.H = com.tsf.shell.f.i.b.d.FolderShortcutItem.l();
             }
             this.H.a(textureElementAD.width);
             this.H.b(textureElementAD.height);
@@ -134,8 +134,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void e(i iVar) {
-        if (iVar instanceof com.tsf.shell.f.i.b.e.b) {
-            ((com.tsf.shell.f.i.b.e.b) iVar).k.textures().clear();
+        if (iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).k.textures().clear();
         } else {
             ((k) iVar).textures().clear();
         }
@@ -180,7 +180,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void a(com.tsf.shell.f.i.PageItem bVar, boolean z2, float f, float f2) {
-        if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+        if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, z2, 3);
         } else {
             com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, z2, 3, 5);
@@ -755,14 +755,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return this.X;
     }
 
-    public com.tsf.shell.f.i.b.d.b b(ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
+    public com.tsf.shell.f.i.b.d.FolderShortcutItem b(ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
         return a(x.c(b.i.widget_folder), ap(), arrayList);
     }
 
-    private com.tsf.shell.f.i.b.d.b a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
+    private com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i.b.d.b bVar = new com.tsf.shell.f.i.b.d.b(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.d.FolderShortcutItem(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         aVar.addChildAt(bVar, 0);
         a(bVar, aVar, 0);
@@ -772,10 +772,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return bVar;
     }
 
-    public com.tsf.shell.f.i.b.d.b a(String str, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList, boolean z2) {
+    public com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList, boolean z2) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i.b.d.b bVar = new com.tsf.shell.f.i.b.d.b(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.d.FolderShortcutItem(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         if (z2) {
             this.al.a(bVar, 0);
@@ -812,8 +812,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                     break;
                 }
                 com.tsf.shell.f.i.PageItem bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
-                    com.tsf.shell.f.i.b.d.b bVar2 = (com.tsf.shell.f.i.b.d.b) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem bVar2 = (com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar;
                     if (bVar2.aS()) {
                         aVarRemove.addChildAt(bVar2.aA(), 0);
                     } else {
@@ -1070,7 +1070,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z2) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z2) {
         if (this.am) {
             a((com.tsf.shell.f.i.PageItem) gVar, z2);
         }
@@ -1090,8 +1090,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     private void b(com.tsf.shell.f.i.PageItem bVar, boolean z2, int i) {
         this.al.a(bVar, i);
-        if (z2 && (bVar instanceof com.tsf.shell.f.i.b.e.g)) {
-            ((com.tsf.shell.f.i.b.e.g) bVar).aX();
+        if (z2 && (bVar instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual)) {
+            ((com.tsf.shell.f.i.b.e.DrawerItemVisual) bVar).aX();
         }
         e(i).a(bVar, i % m, false);
         bVar.K().index = i;
@@ -1114,11 +1114,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void a(com.tsf.shell.f.i.b.e.g gVar) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
     }
 
     @Override // com.tsf.shell.manager.app.AppListModel.a
-    public void b(com.tsf.shell.f.i.b.e.g gVar, boolean z2) {
+    public void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z2) {
         if (this.am) {
             A aVar = (A) gVar.parent();
             if (aVar != null) {
@@ -1133,8 +1133,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public boolean d(com.tsf.shell.f.i.PageItem bVar) {
-        if (bVar instanceof com.tsf.shell.f.i.b.e.g) {
-            com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) bVar;
+        if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
+            com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) bVar;
             if (gVar.bf()) {
                 com.tsf.shell.manager.app.LauncherAppInfo fVarBd = gVar.bd();
                 com.tsf.shell.manager.bind.ShellBindContext.c().b(fVarBd);
@@ -1151,7 +1151,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             gVar.bg();
             return false;
         }
-        if (!(bVar instanceof com.tsf.shell.f.i.b.d.b)) {
+        if (!(bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
             return false;
         }
         e(bVar);
@@ -1194,8 +1194,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                         h.this.ai.e((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                     }
                 } else if (this.h) {
-                    if (this.c instanceof com.tsf.shell.f.i.b.e.g) {
-                        com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) this.c;
+                    if (this.c instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
+                        com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.c;
                         if (gVar.aC()) {
                             if (h.this.h.e()) {
                                 gVar.ap();
@@ -1207,8 +1207,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                         }
                         return;
                     }
-                    if (this.c instanceof com.tsf.shell.f.i.b.d.b) {
-                        ((com.tsf.shell.f.i.b.d.b) this.c).aR();
+                    if (this.c instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+                        ((com.tsf.shell.f.i.b.d.FolderShortcutItem) this.c).aR();
                     }
                 }
             }
@@ -1275,8 +1275,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 this.h = h.this.R;
                 h.this.Q = false;
                 this.f = false;
-                if (this.c instanceof com.tsf.shell.f.i.b.e.g) {
-                    com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) this.c;
+                if (this.c instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
+                    com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.c;
                     if (gVar.aC()) {
                         gVar.aQ();
                         gVar.aY();
@@ -1284,7 +1284,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                     }
                     return;
                 }
-                if (this.c instanceof com.tsf.shell.f.i.b.d.b) {
+                if (this.c instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                 }
             }
 
@@ -1439,8 +1439,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             int size = this.al.a().size();
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.PageItem bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-                    ((com.tsf.shell.f.i.b.e.b) bVar).aA();
+                if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                    ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).aA();
                 }
             }
             bj();
@@ -1455,8 +1455,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             int size = this.al.a().size();
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.PageItem bVar = this.al.a().get(i);
-                if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-                    ((com.tsf.shell.f.i.b.e.b) bVar).aA();
+                if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                    ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).aA();
                 }
             }
             if (!aVarAp.visible()) {

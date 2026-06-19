@@ -29,7 +29,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
         }
         Iterator<com.censivn.C3DEngine.b.f.i> it = a.children().iterator();
         while (it.hasNext()) {
-            if (it.next() instanceof com.tsf.shell.f.i.b.d.b) {
+            if (it.next() instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                 return true;
             }
         }

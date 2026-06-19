@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
-import com.tsf.shell.f.i._b.e.g;
+import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.Locale;
@@ -53,9 +53,9 @@ public class a extends c {
                 if (iA > iA2) {
                     return 1;
                 }
-                if ((iVar instanceof com.tsf.shell.f.i._b.e.b) && (iVar2 instanceof com.tsf.shell.f.i._b.e.b)) {
-                    ItemInfo itemInfoK = ((com.tsf.shell.f.i._b.e.b) iVar).K();
-                    return a.this.e.compare(((com.tsf.shell.f.i._b.e.b) iVar2).K().title, itemInfoK.title);
+                if ((iVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) && (iVar2 instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase)) {
+                    ItemInfo itemInfoK = ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) iVar).K();
+                    return a.this.e.compare(((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) iVar2).K().title, itemInfoK.title);
                 }
                 return 0;
             }

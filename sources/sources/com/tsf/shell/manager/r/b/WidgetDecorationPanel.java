@@ -3,13 +3,13 @@ package com.tsf.shell.manager.r.b;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.a;
+import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.f.i.c.ItemGroupBase;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
+public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private a.C0095a a;
     private a.C0095a b;
     private Runnable c;
@@ -32,33 +32,33 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
             }
         };
         a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.b.3
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.r.c.WidgetFeatureConfig.c;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.app.WidgetManager.b().a(runnable);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.app.WidgetManager.b().a(false);
             }
         };
         a.C0095a c0095a = new a.C0095a(b.d.widget_menu_decoration_floating, x.c(b.i.text_floating), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.b.4
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.r.c.WidgetFeatureConfig.a;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 com.tsf.shell.manager.app.WidgetManager.b().b(true);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
                 com.tsf.shell.manager.app.WidgetManager.b().b(false);
             }
@@ -86,28 +86,28 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.b {
         this.e.addChild(this.d.f());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.d.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.d.b(false);
         this.d.c();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
         this.d.a();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.e;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         super.onRecycle();
         this.d.e();

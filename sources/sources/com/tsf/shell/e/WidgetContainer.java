@@ -20,14 +20,14 @@ import java.util.HashMap;
 public class WidgetContainer extends FrameLayout {
     private static Bitmap g = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
     public TSFAppWidgetHostView a;
-    public com.tsf.shell.f.i.b.b.a b;
+    public com.tsf.shell.f.i.b.b.ItemShell b;
     public Canvas c;
     private boolean d;
     private Object e;
     private SoftReference<Bitmap> f;
     private Runnable h;
 
-    public WidgetContainer(Context context, TSFAppWidgetHostView cVar, com.tsf.shell.f.i.b.b.a aVar) {
+    public WidgetContainer(Context context, TSFAppWidgetHostView cVar, com.tsf.shell.f.i.b.b.ItemShell aVar) {
         super(context);
         this.d = false;
         this.e = new Object();

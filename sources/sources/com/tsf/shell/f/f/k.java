@@ -79,8 +79,8 @@ public class k extends g {
         com.censivn.C3DEngine.b.g.c.a(this.l, 386, dVar);
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar, com.tsf.shell.f.i.b.e.g gVar) {
-        com.tsf.shell.f.i.b.e.g gVarBa = gVar.ba();
+    public void a(com.censivn.C3DEngine.b.f.i iVar, com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
+        com.tsf.shell.f.i.b.e.DrawerItemVisual gVarBa = gVar.ba();
         gVarBa.removeFromParent();
         gVarBa.position().setAllFrom(this.l.globalToLocal(iVar.localToGlobal(new Number3d())));
         gVarBa.position().z = 0.0f;

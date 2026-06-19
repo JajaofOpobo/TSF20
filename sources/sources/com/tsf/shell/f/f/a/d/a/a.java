@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
-import com.tsf.shell.f.i.b.e.g;
+import com.tsf.shell.f.i.b.e.DrawerItemVisual;
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.Locale;
@@ -21,13 +21,13 @@ public class a extends c {
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public final int compare(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
-                if ((bVar instanceof com.tsf.shell.f.i.b.d.b) && (bVar2 instanceof com.tsf.shell.f.i.b.d.b)) {
+                if ((bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) && (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
                     return 0;
                 }
-                if (bVar instanceof com.tsf.shell.f.i.b.d.b) {
+                if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     return -1;
                 }
-                if (bVar2 instanceof com.tsf.shell.f.i.b.d.b) {
+                if (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     return 1;
                 }
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) ((g) bVar).K();
@@ -53,9 +53,9 @@ public class a extends c {
                 if (iA > iA2) {
                     return 1;
                 }
-                if ((iVar instanceof com.tsf.shell.f.i.b.e.b) && (iVar2 instanceof com.tsf.shell.f.i.b.e.b)) {
-                    ItemInfo itemInfoK = ((com.tsf.shell.f.i.b.e.b) iVar).K();
-                    return a.this.e.compare(((com.tsf.shell.f.i.b.e.b) iVar2).K().title, itemInfoK.title);
+                if ((iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && (iVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
+                    ItemInfo itemInfoK = ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).K();
+                    return a.this.e.compare(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar2).K().title, itemInfoK.title);
                 }
                 return 0;
             }

@@ -65,7 +65,7 @@ public class a extends d {
         int iAcos;
         int iAcos2;
         int iAcos3;
-        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
+        ArrayList<com.tsf.shell.f.e.f.EditModeController.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
         int size = arrayList.size();
         boolean z = false;
         if (f >= 0.0f && f2 >= 0.0f) {
@@ -123,7 +123,7 @@ public class a extends d {
         }
         int i = iAcos + 90;
         for (int i2 = 0; i2 < size; i2++) {
-            com.tsf.shell.f.e.f.a.c cVar = arrayListC.get(i2);
+            com.tsf.shell.f.e.f.EditModeController.c cVar = arrayListC.get(i2);
             cVar.d.b(1);
             cVar.d.b();
             a(cVar, i2, z, 25.0f, i, iAcos2, i2 * 50, com.censivn.C3DEngine.b.g.a.e);
@@ -140,14 +140,14 @@ public class a extends d {
 
     @Override // com.tsf.shell.f._d.c.a.d
     public void a() {
-        ArrayList<com.tsf.shell.f.e.f.a.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
+        ArrayList<com.tsf.shell.f.e.f.EditModeController.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
         int iNumChildren = com.tsf.shell.manager.app.v.ScreenHelper.d().d().numChildren();
         for (int i = 0; i < iNumChildren; i++) {
             a(arrayListC.get(i), i, false);
         }
     }
 
-    private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z, float f, float f2, float f3, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+    private void a(final com.tsf.shell.f.e.f.EditModeController.c cVar, int i, boolean z, float f, float f2, float f3, int i2, com.censivn.C3DEngine.b.g.b bVar) {
         cVar.rotation().z = ((f2 > f3 ? 1 : (f2 == f3 ? 0 : -1)) > 0 ? (-i) * f : i * f) + f2;
         if (z) {
             cVar.c.rotation().z = 180.0f;
@@ -193,7 +193,7 @@ public class a extends d {
         com.censivn.C3DEngine.b.g.c.a(cVar.c, 500, dVar);
     }
 
-    private void a(final com.tsf.shell.f.e.f.a.c cVar, int i, boolean z) {
+    private void a(final com.tsf.shell.f.e.f.EditModeController.c cVar, int i, boolean z) {
         final float f = cVar.d.position().x;
         final float fA = com.censivn.C3DEngine.b.b.A.a(60.0f);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.c.a.a.2

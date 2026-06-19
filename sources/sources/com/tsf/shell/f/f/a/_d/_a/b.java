@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a._d._a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.i._b.e.g;
+import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.Locale;

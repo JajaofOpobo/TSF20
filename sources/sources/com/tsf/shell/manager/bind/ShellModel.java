@@ -32,8 +32,8 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardI
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellProvider;
-import com.tsf.shell.f.c.a.f;
-import com.tsf.shell.f.c.b.e;
+import com.tsf.shell.f.c.a.DrawerContentPanel;
+import com.tsf.shell.f.c.b.DrawerSettingsPanel;
 import com.tsf.shell.g;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
@@ -719,7 +719,7 @@ public class ShellModel extends BroadcastReceiver {
                         ShellModel.n.remove((ItemInfo) it4.next());
                     }
                     arrayList4.clear();
-                    String strQ = com.tsf.shell.f.h.f.q();
+                    String strQ = com.tsf.shell.f.h.WorkspaceWidgetPanel.q();
                     dVar.c = strQ;
                     ArrayList arrayList5 = new ArrayList();
                     for (ItemInfo itemInfo4 : ShellModel.l) {

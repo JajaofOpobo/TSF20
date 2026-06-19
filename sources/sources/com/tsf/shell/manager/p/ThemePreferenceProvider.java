@@ -100,7 +100,7 @@ public class ThemePreferenceProvider {
         return this.r;
     }
 
-    public a a(final com.tsf.shell.f.e._g.a.b bVar, int i2) {
+    public a a(final com.tsf.shell.f.e._g.a.MenuActionItem bVar, int i2) {
         a aVarA = com.tsf.shell.manager.app.AppListManager.a(i2);
         if (aVarA.a()) {
             bVar.getTitleIcon().a();

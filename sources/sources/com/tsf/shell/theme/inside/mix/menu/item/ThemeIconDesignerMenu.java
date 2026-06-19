@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.e._g.a.d;
+import com.tsf.shell.f.e._g.a.MenuItemConfig;
 import com.tsf.shell.f.e.ToggleRowItem;
 import com.tsf.shell.manager.o.ButtonMetrics;
 import com.tsf.shell.manager.o.a.LabelManager;
@@ -172,12 +172,12 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.mContainer;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         super.onLayout(f, f2, f3, f4);
         resetLayout();
@@ -200,7 +200,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.a((com.tsf.shell.manager.o.ButtonPresetManager.a.J * 1.2f * (-i)) + (this.mLableScrollView.i() / 2.0f) + this.mLableScrollView.b(), z);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.mShortcut.textures().clear();
         this.mShortcut.textures().addElement(this.mElementPlane.getTexture());
@@ -265,7 +265,7 @@ public class ThemeIconDesignerMenu extends d {
         this.mResetButton.removeFromParent();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHideComplete() {
         recycle();
     }
@@ -274,12 +274,12 @@ public class ThemeIconDesignerMenu extends d {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig
     public void onRequestExit() {
         this.menu.changeMenu(getParentMenu());
     }
 
-    @Override // com.tsf.shell.f.e._g.a.d, com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void recycle() {
         super.recycle();
         removeIcon();

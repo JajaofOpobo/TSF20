@@ -61,7 +61,7 @@ public class WidgetRegistryManager {
         com.tsf.shell.f.i.c.FolderItemGroup cVar = new com.tsf.shell.f.i.c.FolderItemGroup();
         this.d = cVar;
         cVar.e = true;
-        cVar.b = com.tsf.shell.f.i.b.d.b.class.getName();
+        cVar.b = com.tsf.shell.f.i.b.d.FolderShortcutItem.class.getName();
         ((com.tsf.shell.f.i.c.ItemGroupBase) cVar).a = "";
         cVar.d = 1;
         cVar.c(b.i.widget_folder);
@@ -138,9 +138,9 @@ public class WidgetRegistryManager {
         gVarA9.c(b.i.widget_music);
         arrayList.add(gVarA9);
         this.c.add(gVarA9);
-        com.tsf.shell.f.i.c.ItemGroupBase gVarK = com.tsf.shell.f.i.b.a.b.k();
+        com.tsf.shell.f.i.c.ItemGroupBase gVarK = com.tsf.shell.f.i.b.a.ItemContainerPageItem.k();
         gVarK.e = true;
-        gVarK.b = com.tsf.shell.f.i.b.a.b.class.getName();
+        gVarK.b = com.tsf.shell.f.i.b.a.ItemContainerPageItem.class.getName();
         gVarK.c = "com.tsf.shell.widget.theme.airship";
         gVarK.a = "";
         gVarK.d = 5;
@@ -151,7 +151,7 @@ public class WidgetRegistryManager {
         this.c.add(gVarK);
         com.tsf.shell.f.i.c.PendingItemGroup dVar = new com.tsf.shell.f.i.c.PendingItemGroup();
         dVar.e = true;
-        dVar.b = com.tsf.shell.f.i.b.c.a.class.getName();
+        dVar.b = com.tsf.shell.f.i.b.c.ItemDataConfig.class.getName();
         dVar.c = "com.tsf.shell.widget.floating";
         ((com.tsf.shell.f.i.c.ItemGroupBase) dVar).a = "";
         dVar.d = 5;

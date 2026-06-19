@@ -1,0 +1,82 @@
+package com.tsf.shell.f.c;
+
+import com.censivn.C3DEngine.b.f.j;
+import com.tsf.shell.f.c.a.DrawerContentPanel;
+import com.tsf.shell.f.c.b.DrawerSettingsPanel;
+import com.tsf.shell.f.i.PageItem;
+import com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class DrawerPanelController {
+    public e a;
+    public f DrawerShortcutItemBase;
+    public int c;
+
+    public A() {
+        com.tsf.shell.manager.app.WidgetPanelController = this;
+        this.c = a(com.tsf.shell.manager.b.ConfigManager.v());
+        this.a = new e(false);
+        this.b = new f(false);
+    }
+
+    public boolean a() {
+        return this.c == 0 ? com.tsf.shell.manager.b.ConfigManager.ag() : com.tsf.shell.manager.b.ConfigManager.ah();
+    }
+
+    public void b() {
+        this.a.o();
+    }
+
+    public int c() {
+        return this.c;
+    }
+
+    public static b a(B bVar) {
+        return null;
+    }
+
+    public static void a(b bVar) {
+    }
+
+    public int a(int i) {
+        if (i >= 0 && i <= 1) {
+            return i;
+        }
+        return 0;
+    }
+
+    public void a(j jVar) {
+        this.a.b();
+        jVar.addChild(this.a.a());
+        this.b.a(jVar, (f.a) null);
+        d();
+    }
+
+    public void b(int i) {
+        if (this.c != i) {
+            this.c = a(i);
+            com.tsf.shell.manager.b.ConfigManager.f(this.c);
+            switch (i) {
+                case 0:
+                    this.a.c(true);
+                    this.b.u();
+                    this.b.a(true);
+                    break;
+                case 1:
+                    this.a.b(true);
+                    this.b.d();
+                    this.b.t();
+                    break;
+            }
+        }
+        d();
+    }
+
+    private void d() {
+        if (a()) {
+            this.a.c();
+        } else {
+            this.a.d();
+        }
+    }
+}

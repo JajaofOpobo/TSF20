@@ -103,8 +103,8 @@ public abstract class b implements A.InterfaceC0090a {
                         dVar2.b((int) (Math.random() * 300.0d));
                     }
                 }
-                if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
-                    com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.b.ItemShell) {
+                    com.tsf.shell.f.i.b.b.ItemShell aVar = (com.tsf.shell.f.i.b.b.ItemShell) bVar;
                     if (com.censivn.C3DEngine.b.b.A.O) {
                         dVar2.f(aVar.b(bVar.K().cellX));
                         dVar2.h(aVar.c(bVar.K().cellY));
@@ -158,8 +158,8 @@ public abstract class b implements A.InterfaceC0090a {
             i iVar = arrayList.get(i2);
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
-                if (bVar instanceof com.tsf.shell.f.i.b.b.a) {
-                    com.tsf.shell.f.i.b.b.a aVar = (com.tsf.shell.f.i.b.b.a) bVar;
+                if (bVar instanceof com.tsf.shell.f.i.b.b.ItemShell) {
+                    com.tsf.shell.f.i.b.b.ItemShell aVar = (com.tsf.shell.f.i.b.b.ItemShell) bVar;
                     if (com.censivn.C3DEngine.b.b.A.O) {
                         bVar.position().x = aVar.b(bVar.K().cellX);
                         bVar.position().y = aVar.c(bVar.K().cellY);

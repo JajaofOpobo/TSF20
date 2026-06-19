@@ -17,7 +17,7 @@ import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEngine.b.c.b.a {
     private static t a;
     private static C b;
-    private static com.tsf.shell.f.i.b.b.a c;
+    private static com.tsf.shell.f.i.b.b.ItemShell c;
     private static com.tsf.shell.e.CellLayout.b d;
     private static boolean e = false;
     private static B f;
@@ -37,11 +37,11 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         a.addChild(WidgetResizeResources);
     }
 
-    public static void a(com.tsf.shell.f.i.b.b.a aVar) {
+    public static void a(com.tsf.shell.f.i.b.b.ItemShell aVar) {
         a(aVar, (WidgetResizeResources) null);
     }
 
-    public static void a(com.tsf.shell.f.i.b.b.a aVar, B bVar) {
+    public static void a(com.tsf.shell.f.i.b.b.ItemShell aVar, B bVar) {
         e = true;
         f = bVar;
         c = aVar;
@@ -149,7 +149,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             };
             textureElement.setReloadThemeRunnable(runnable2);
             runnable2.run();
-            textures().addElement(com.tsf.shell.f.e.b.e);
+            textures().addElement(com.tsf.shell.f.e.b.ResizeTextureManager);
             this.m = new com.censivn.C3DEngine.b.f.n();
             this.m.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3
                 private float b;
@@ -213,7 +213,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
                             bVar2.b = i4;
                             itemInfoK.cellYH = i4;
                         }
-                        final com.tsf.shell.f.i.b.b.a aVar = t.c;
+                        final com.tsf.shell.f.i.b.b.ItemShell aVar = t.c;
                         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3.1
                             @Override // java.lang.Runnable
                             public void run() {
@@ -247,12 +247,12 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             switch (SelectionFrame) {
                 case 0:
                     textures().removeAll();
-                    textures().addElement(com.tsf.shell.f.e.b.e);
+                    textures().addElement(com.tsf.shell.f.e.b.ResizeTextureManager);
                     this.f.id = this.d;
                     break;
                 case 1:
                     textures().removeAll();
-                    textures().addElement(com.tsf.shell.f.e.b.f);
+                    textures().addElement(com.tsf.shell.f.e.b.ResizeShader);
                     this.f.id = this.e;
                     break;
             }

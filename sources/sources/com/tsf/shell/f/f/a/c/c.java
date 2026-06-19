@@ -14,7 +14,7 @@ public class c extends i {
     private com.tsf.shell.f.f.a.c._a h;
     private a i;
     private com.tsf.shell.f.i.PageItem j;
-    private com.tsf.shell.f.e.e.a k;
+    private com.tsf.shell.f.e.e.ItemNode k;
     private com.tsf.shell.f.i.ShortcutItem l;
     private com.tsf.shell.f.i.PageItem m;
     private com.tsf.shell.f.i.PageItem n;
@@ -87,8 +87,8 @@ public class c extends i {
         this.z = new Number3d();
         this.g = new b(this, fVar, hVar);
         this.h = new com.tsf.shell.f.f.a.c._a(this, fVar, hVar);
-        this.k = new com.tsf.shell.f.e.e.a() { // from class: com.tsf.shell.f.f.a.c.c.1
-            @Override // com.tsf.shell.f.e.e.a
+        this.k = new com.tsf.shell.f.e.e.ItemNode() { // from class: com.tsf.shell.f.f.a.c.c.1
+            @Override // com.tsf.shell.f.e.e.ItemNode
             public void a(int i, Object obj) {
                 hVar.au();
                 if (i == 0) {
@@ -99,7 +99,7 @@ public class c extends i {
                 a(800);
             }
 
-            @Override // com.tsf.shell.f.e.e.a
+            @Override // com.tsf.shell.f.e.e.ItemNode
             public float a() {
                 return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.FolderPage.F);
             }
@@ -197,7 +197,7 @@ public class c extends i {
             int iNumChildren = jVar.numChildren();
             int childIndexOf = jVar.getChildIndexOf(this.m);
             if (childIndexOf == -1) {
-                if (bVar2 instanceof com.tsf.shell.f.i.b.d.b) {
+                if (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     fB = 0.0f;
                     f3 = 1.0f;
                 } else {
@@ -211,7 +211,7 @@ public class c extends i {
                 fB = x.b(f, f2, number3d.x, number3d.y);
                 f3 = fB2;
             }
-            if (fB > f3 || (bVar instanceof com.tsf.shell.f.i.b.d.b) || ((bVar2 instanceof com.tsf.shell.f.i.b.e.b) && !com.tsf.shell.f.i.b.e.b.aR() && bVar2 != this.j)) {
+            if (fB > f3 || (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) || ((bVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && !com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.aR() && bVar2 != this.j)) {
                 q();
                 r();
                 jVar.children().remove(this.m);
@@ -235,17 +235,17 @@ public class c extends i {
                     i3++;
                 }
                 bVar2 = null;
-            } else if (((bVar2 instanceof com.tsf.shell.f.i.b.e.b) || (bVar2 instanceof com.tsf.shell.f.i.b.d.b)) && this.j != bVar2) {
+            } else if (((bVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) || (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) && this.j != bVar2) {
                 q();
-                if (bVar instanceof com.tsf.shell.f.i.b.e.b) {
-                    if (bVar2 instanceof com.tsf.shell.f.i.b.e.b) {
-                        com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) bVar2;
+                if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                    if (bVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                        com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) bVar2;
                         if (gVar.aC() && !gVar.t()) {
                             gVar.a((com.censivn.C3DEngine.b.f.i) bVar);
                         } else {
                             bVar2 = null;
                         }
-                    } else if (bVar2 instanceof com.tsf.shell.f.i.b.d.b) {
+                    } else if (bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                         bVar.f(bVar2);
                     }
                 }
@@ -261,9 +261,9 @@ public class c extends i {
 
     private void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
         if (bVar2 != this.j) {
-            if (this.j instanceof com.tsf.shell.f.i.b.e.b) {
-                ((com.tsf.shell.f.i.b.e.b) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
-            } else if (this.j instanceof com.tsf.shell.f.i.b.d.b) {
+            if (this.j instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
+            } else if (this.j instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                 bVar.p();
             }
             this.j = bVar2;
@@ -378,16 +378,16 @@ public class c extends i {
                 jVar.globalScaleToLocal(Number3d.TEMPNUMBER3D);
                 cVar.scale().setAllFrom(Number3d.TEMPNUMBER3D);
             }
-            if (this.j != null && (cVar instanceof com.tsf.shell.f.i.b.e.b)) {
+            if (this.j != null && (cVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                 jVar.removeChild(this.m);
-                if (this.j instanceof com.tsf.shell.f.i.b.e.b) {
-                    com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) this.j;
-                    com.tsf.shell.f.i.b.d.b bVarA = gVar.a((com.tsf.shell.f.i.b.e.b) cVar, true);
+                if (this.j instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                    com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.j;
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = gVar.a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) cVar, true);
                     r();
                     this.a.a(bVarA, gVar);
                     bVarA.setMouseEventListener(this.a.f(bVarA));
                     bVarA.setAnimationObjectState(true);
-                } else if (this.j instanceof com.tsf.shell.f.i.b.d.b) {
+                } else if (this.j instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                     cVar.g(this.j);
                 }
                 this.j = null;
@@ -451,19 +451,19 @@ public class c extends i {
             this.x = this.a.ap();
         }
         ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList();
-        if (cVar instanceof com.tsf.shell.f.i.b.d.b) {
-            com.tsf.shell.f.i.b.d.b bVar = (com.tsf.shell.f.i.b.d.b) cVar;
+        if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+            com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = (com.tsf.shell.f.i.b.d.FolderShortcutItem) cVar;
             if (bVar.L()) {
                 r();
                 ArrayList arrayList2 = new ArrayList();
                 Iterator<com.censivn.C3DEngine.b.f.i> it = bVar.aX().children().iterator();
                 while (it.hasNext()) {
-                    arrayList2.add((com.tsf.shell.f.i.b.e.g) it.next());
+                    arrayList2.add((com.tsf.shell.f.i.b.e.DrawerItemVisual) it.next());
                 }
                 int size = arrayList2.size();
                 for (int i = 0; i < size; i++) {
-                    com.tsf.shell.f.i.b.e.g gVar = (com.tsf.shell.f.i.b.e.g) arrayList2.get((size - i) - 1);
-                    ((com.tsf.shell.f.i.b.d.a) gVar.getMouseEventListener()).a();
+                    com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) arrayList2.get((size - i) - 1);
+                    ((com.tsf.shell.f.i.b.d.FolderTouchHandler) gVar.getMouseEventListener()).a();
                     Number3d.TEMPNUMBER3D.reset();
                     gVar.localToGlobal(Number3d.TEMPNUMBER3D);
                     bVar.aX().removeChild(gVar);
@@ -480,7 +480,7 @@ public class c extends i {
                 arrayList.add(cVar);
             }
         } else {
-            if ((cVar instanceof com.tsf.shell.f.i.b.e.g) && cVar.L()) {
+            if ((cVar instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) && cVar.L()) {
                 com.tsf.shell.manager.app.TaskScheduler.b(cVar);
                 com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
                 if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.A)) {
@@ -568,7 +568,7 @@ public class c extends i {
                                 c.this.q();
                                 return;
                             }
-                            if (cVar.n() != null && !(cVar.n() instanceof com.tsf.shell.f.i.b.d.b)) {
+                            if (cVar.n() != null && !(cVar.n() instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
                                 cVar.p();
                             }
                             c.this.z.x = fArrB[0];

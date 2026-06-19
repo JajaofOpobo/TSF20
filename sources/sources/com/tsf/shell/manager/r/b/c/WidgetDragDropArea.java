@@ -16,7 +16,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
     private float e;
     private float f;
 
-    public WidgetDragDropArea(com.tsf.shell.f.e._g.MenuOverlay dVar, final com.tsf.shell.f.e._g.a.c cVar) {
+    public WidgetDragDropArea(com.tsf.shell.f.e._g.MenuOverlay dVar, final com.tsf.shell.f.e._g.a.MenuItemBase cVar) {
         super(dVar);
         this.b = new ArrayList<>();
         this.e = 0.0f;

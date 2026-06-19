@@ -9,8 +9,8 @@ import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 
 import com.tsf.shell.Home;
-import com.tsf.shell.f.i.b.e.b;
-import com.tsf.shell.f.i.b.e.h;
+import com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
+import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.utils.MarketLinkHandler;
 
@@ -47,7 +47,7 @@ public class ThemeMoreInfoLayout extends j {
         });
         this.mCheckUpdate = new m();
         this.mCheckUpdate.d(45);
-        this.mCheckUpdate.c(b.i.text_check_for_update);
+        this.mCheckUpdate.c(DrawerShortcutItemBase.i.text_check_for_update);
         this.mCheckUpdate.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.2
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
@@ -58,7 +58,7 @@ public class ThemeMoreInfoLayout extends j {
         });
         this.mUninstall = new m();
         this.mUninstall.d(45);
-        this.mUninstall.c(b.i.text_uninstall);
+        this.mUninstall.c(DrawerShortcutItemBase.i.text_uninstall);
         this.mUninstall.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.3
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {

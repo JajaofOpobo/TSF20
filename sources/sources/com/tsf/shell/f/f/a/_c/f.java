@@ -96,7 +96,7 @@ public class f extends i {
 
     @Override // com.tsf.shell.f.f.a._c.i
     public void e(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
-        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
+        if ((cVar.parent() instanceof com.tsf.shell.f.f.a.A) && (cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase)) {
             this.a.c((com.tsf.shell.f.i.PageItem) cVar);
             this.g.d(cVar);
             if (cVar.K() != null) {

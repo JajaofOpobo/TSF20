@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AppListItemCell extends com.tsf.shell.f.i.b.e.b {
+public class AppListItemCell extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBase {
     private static k a;
     private static TextureElement b;
     private boolean p;
@@ -21,7 +21,7 @@ public class AppListItemCell extends com.tsf.shell.f.i.b.e.b {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
     public void onDrawChildEnd() {
         if (this.p) {
             b.id = f.id;
@@ -33,7 +33,7 @@ public class AppListItemCell extends com.tsf.shell.f.i.b.e.b {
         this.p = z;
     }
 
-    @Override // com.tsf.shell.f.i.b.e.b
+    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase
     public void k() {
     }
 }

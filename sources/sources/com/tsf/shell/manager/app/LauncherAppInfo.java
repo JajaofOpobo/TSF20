@@ -122,7 +122,7 @@ public class LauncherAppInfo {
             ItemInfo itemInfo = (ItemInfo) map.get((Integer) it.next());
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this) {
+                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.DrawerItemVisual) launcherShortcutAppInfo.getWidget()).bd() == this) {
                     com.tsf.shell.manager.app.WidgetManager.a(((LauncherShortcutAppInfo) itemInfo).getWidget());
                 }
             }
@@ -142,7 +142,7 @@ public class LauncherAppInfo {
             ItemInfo itemInfo = (ItemInfo) map.get((Integer) it.next());
             if (itemInfo != null && (itemInfo instanceof LauncherShortcutAppInfo)) {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) itemInfo;
-                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.g) launcherShortcutAppInfo.getWidget()).bd() == this && !((LauncherShortcutAppInfo) itemInfo).isFullCustomTexture()) {
+                if (launcherShortcutAppInfo.getWidget() != null && ((com.tsf.shell.f.i.b.e.DrawerItemVisual) launcherShortcutAppInfo.getWidget()).bd() == this && !((LauncherShortcutAppInfo) itemInfo).isFullCustomTexture()) {
                     ((LauncherShortcutAppInfo) itemInfo).reloadTexture();
                 }
             }

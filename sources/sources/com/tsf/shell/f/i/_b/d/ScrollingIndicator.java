@@ -27,7 +27,7 @@ public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.k {
             g = com.censivn.C3DEngine.A.g().a(themeDescription.getBitmap(ThemeFolderDescription.SCROLLING_POINT), false);
         }
         this.h = new com.censivn.C3DEngine.b.f.k(19.0f * com.censivn.C3DEngine.b.b.A.b, 10.0f * com.censivn.C3DEngine.b.b.A.b, false);
-        this.h.textures().addElement(g);
+        this.h.textures().addElement(WidgetItemGrid);
         addChild(this.h);
         if (z) {
             this.h.rotation().z = 180.0f;

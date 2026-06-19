@@ -136,7 +136,7 @@ public class IconRenderer {
             canvas.drawBitmap(bitmap2, (aVar.V - bitmap2.getWidth()) - 1, 1.0f, (Paint) null);
             bitmap2.recycle();
         }
-        com.tsf.shell.f.i.b.e.b.a(bitmapA);
+        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.a(bitmapA);
         return bitmapA;
     }
 

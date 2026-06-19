@@ -20,7 +20,7 @@ public class RateDialog extends j {
     public static float k;
     public static float l;
     public static float m;
-    public com.tsf.shell.f.e.i.b a;
+    public com.tsf.shell.f.e.i.GridLayoutData a;
     private RateFaceView n;
     private TexturedBackground o;
     private k p;
@@ -116,7 +116,7 @@ public class RateDialog extends j {
         addChild(this.t);
         k = ((-c) / 2.0f) + (h / 2.0f);
         j = k + h + i;
-        this.a = new com.tsf.shell.f.e.i.b();
+        this.a = new com.tsf.shell.f.e.i.GridLayoutData();
         this.a.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
         this.q.addChild(this.a);
         this.r = new g();

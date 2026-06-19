@@ -7,9 +7,9 @@ import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
-import com.tsf.shell.f.i.c.a.h;
-import com.tsf.shell.f.i.c.a.k;
-import com.tsf.shell.f.i.c.a.m;
+import com.tsf.shell.f.i.c.a.BackgroundSceneNode;
+import com.tsf.shell.f.i.c.a.ITextureCallback;
+import com.tsf.shell.f.i.c.a.CompositeSceneNode;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import com.tsf.shell.widget.alarm.r;
 
@@ -83,7 +83,7 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.6
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.g(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.GridSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.alarm")) {
@@ -97,14 +97,14 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.28f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.8
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.a.b(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.a.TextureElementB(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.cubeclock")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.6f * com.censivn.C3DEngine.b.b.A.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.9
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.b.c(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.b.SceneComponentC(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.weather")) {
@@ -118,14 +118,14 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.11
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.f(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.LabelSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.gallery")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.12
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.d(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.PageSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.adornment")) {
@@ -139,7 +139,7 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.3
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.c.c(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.c.SceneRendererC(new VTextureManager(), com.censivn.C3DEngine.A.d());
                 }
             };
         } else {

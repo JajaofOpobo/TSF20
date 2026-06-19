@@ -27,7 +27,7 @@ public class e extends d {
     }
 
     @Override // com.tsf.shell.f._d.b.a.d
-    public void a(com.tsf.shell.f.i.b.e.b bVar) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (c.id == 0) {
             Bitmap bitmapB = q.b(15.0f, -1);
             com.censivn.C3DEngine.A.g().a(c, bitmapB);
@@ -36,7 +36,7 @@ public class e extends d {
     }
 
     @Override // com.tsf.shell.f._d.b.a.d
-    public void b(com.tsf.shell.f.i.b.e.b bVar) {
+    public void b(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         float fAz = bVar.az();
         float fSin = (float) (1.0d + (Math.sin(fAz) * 0.30000001192092896d));
         this.e.scale().setAll(fSin, fSin, 1.0f);

@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.m;
 import com.tsf.b;
-import com.tsf.shell.f.e._g.a.a;
+import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -16,8 +16,8 @@ public class AppSelectionIndicatorBar extends j {
     private TextureElement a = new TextureElement(0, false);
     private k b;
     private m c;
-    private com.tsf.shell.f.e._g.a.a.C0095a d;
-    private com.tsf.shell.f.e._g.a.a.C0095a e;
+    private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a d;
+    private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a e;
 
     public B() {
         d();
@@ -56,33 +56,33 @@ public class AppSelectionIndicatorBar extends j {
         a(this.c);
         addChild(this.c);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.c, com.tsf.shell.manager.o.ThemeColorConstants.h);
-        this.d = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_app_folder, x.c(b.i.widget_folder), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.2
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        this.d = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_app_folder, x.c(b.i.widget_folder), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.2
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 AppSelectionIndicatorBar.this.b();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
             }
         });
-        this.e = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_app_desktop, x.c(b.i.menu_effect_desktop), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.3
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        this.e = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_app_desktop, x.c(b.i.menu_effect_desktop), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.b.3
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 AppSelectionIndicatorBar.this.c();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void c() {
             }
         });

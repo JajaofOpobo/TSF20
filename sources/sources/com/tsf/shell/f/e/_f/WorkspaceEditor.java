@@ -36,7 +36,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
     private ArrayList<c> b;
     private com.tsf.shell.f.i.ShortcutItem f;
     private com.tsf.shell.f.e._f.EditTarget g;
-    private com.tsf.shell.f.i._b.e.a j;
+    private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase j;
     private c m;
     private boolean n;
     private i o;
@@ -189,9 +189,9 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
                 }
                 break;
             case 1:
-                if (this.f instanceof com.tsf.shell.f.i._b.e.a) {
+                if (this.f instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
                     com.tsf.shell.manager.app.FeatureConfig.c();
-                    a((com.tsf.shell.f.i._b.e.a) this.f);
+                    a((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.f);
                 }
                 break;
             case 2:
@@ -525,8 +525,8 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i) {
                     String string = editText.getText().toString();
-                    if (bVar instanceof com.tsf.shell.f.i._b.e.a) {
-                        ((com.tsf.shell.f.i._b.e.a) bVar).a(string);
+                    if (bVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                        ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) bVar).a(string);
                     } else if (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                         ((com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) bVar).a(string);
                     }
@@ -625,7 +625,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         }
     }
 
-    public void a(com.tsf.shell.f.i._b.e.a aVar) {
+    public void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase aVar) {
         this.j = aVar;
         int[] iArrAG = aVar.aG();
         com.tsf.shell.f.e._h.IconEditorHelper.a(this, aVar, iArrAG[0], iArrAG[1]);

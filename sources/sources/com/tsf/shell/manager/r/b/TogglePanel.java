@@ -9,7 +9,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class TogglePanel extends com.tsf.shell.f.e._g.a.b {
+public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     public com.tsf.shell.manager.r.b.WidgetMenuPanel a;
     private h b;
     private com.tsf.shell.manager.action.toggle.TogglePanelManager c;
@@ -45,7 +45,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.b {
             @Override // com.censivn.C3DEngine.b.h.b.f
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
-                com.tsf.shell.f.i.b.e.b bVarA = com.tsf.shell.manager.l.ShortcutManager.a(TogglePanel.this.c.a().get(i).a, com.tsf.shell.manager.o.ButtonPresetManager.b);
+                com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarA = com.tsf.shell.manager.l.ShortcutManager.a(TogglePanel.this.c.a().get(i).a, com.tsf.shell.manager.o.ButtonPresetManager.b);
                 bVarA.K().onUpdatePhoto(null, null);
                 aVar.b().a(bVarA);
             }
@@ -64,27 +64,27 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.b {
         });
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.b;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.b.d();
         super.onShow();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         Iterator<com.tsf.shell.manager.action.toggle.ToggleAction> it = this.c.a().iterator();
         while (it.hasNext()) {
@@ -93,12 +93,12 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.b {
     }
 
     class A extends j {
-        private com.tsf.shell.f.i.b.e.j b;
+        private com.tsf.shell.f.i.b.e.DrawerItemSettingsAction b;
 
         public A() {
         }
 
-        public void a(com.tsf.shell.f.i.b.e.j jVar) {
+        public void a(com.tsf.shell.f.i.b.e.DrawerItemSettingsAction jVar) {
             this.b = jVar;
         }
 

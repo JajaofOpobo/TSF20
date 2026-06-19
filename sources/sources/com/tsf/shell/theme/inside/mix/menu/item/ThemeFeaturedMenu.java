@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
+public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     public static final int NOTIF_POINT_VERSION_CODE_130 = 130;
     private h mGridView;
     private e.a mNotifItem;
@@ -73,18 +73,18 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.mGridView;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         super.onShow();
         this.mGridView.d();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
         super.onHide();
         this.mNotifItem.b();
@@ -94,12 +94,12 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.mGridView.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         super.onHide();
         Iterator<ThemeOnlineItems> it = this.mThemes.iterator();

@@ -3,8 +3,8 @@ package com.tsf.shell.manager.r;
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.shell.f.i.PageItem;
-import com.tsf.shell.f.i.b.b.b;
-import com.tsf.shell.f.i.b.b.b;
+import com.tsf.shell.f.i.b.b.IItemShell;
+import com.tsf.shell.f.i.b.b.IItemShell;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class BoundsHelper {
@@ -197,7 +197,7 @@ public class BoundsHelper {
     public static float[] a(b bVar, float f, float f2) {
         float[] fArr = {f, f2};
         float fU = bVar.u();
-        if (bVar instanceof com.tsf.shell.f.i.b.c.a) {
+        if (bVar instanceof com.tsf.shell.f.i.b.c.ItemDataConfig) {
             if (f > com.censivn.C3DEngine.b.b.A.A) {
                 fArr[0] = com.censivn.C3DEngine.b.b.A.A;
             } else if (f < com.censivn.C3DEngine.b.b.A.z) {

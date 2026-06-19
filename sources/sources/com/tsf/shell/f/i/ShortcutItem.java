@@ -37,15 +37,15 @@ public class ShortcutItem extends PageItem {
         this.n = 0.75f;
     }
 
-    public com.tsf.shell.f.e.f.b ag() {
+    public com.tsf.shell.f.e.f.EditModeNode ag() {
         if (parent() == null) {
             return null;
         }
-        if (parent() instanceof com.tsf.shell.f.e.f.b) {
-            return (com.tsf.shell.f.e.f.b) parent();
+        if (parent() instanceof com.tsf.shell.f.e.f.EditModeNode) {
+            return (com.tsf.shell.f.e.f.EditModeNode) parent();
         }
         if (z() != null) {
-            return (com.tsf.shell.f.e.f.b) z().S();
+            return (com.tsf.shell.f.e.f.EditModeNode) z().S();
         }
         return null;
     }

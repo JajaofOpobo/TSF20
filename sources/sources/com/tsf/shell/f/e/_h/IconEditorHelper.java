@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.i._b.e.g;
+import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import com.tsf.shell.plugin.themepicker.AppIconEditorActivity;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -28,7 +28,7 @@ public class IconEditorHelper implements com.censivn.C3DEngine.b.c.a.InterfaceC0
         String[] strArr = {com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_0), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_1), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_2), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_3)};
     }
 
-    public static void a(final a aVar, final com.tsf.shell.f.i._b.e.b bVar, final int i, final int i2) {
+    public static void a(final a aVar, final com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, final int i, final int i2) {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e._h.IconEditorHelper.1
             @Override // java.lang.Runnable
             public void run() {
@@ -40,7 +40,7 @@ public class IconEditorHelper implements com.censivn.C3DEngine.b.c.a.InterfaceC0
         });
     }
 
-    public void b(a aVar, com.tsf.shell.f.i._b.e.b bVar, int i, int i2) {
+    public void b(a aVar, com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, int i, int i2) {
         this.b = aVar;
         this.d = i;
         this.e = i2;

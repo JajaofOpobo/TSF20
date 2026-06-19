@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.action.toggle;
 
 import android.content.Intent;
-import com.tsf.shell.f.i.b.e.i;
-import com.tsf.shell.f.i.b.e.j;
+import com.tsf.shell.f.i.b.e.DrawerItemLaunchAction;
+import com.tsf.shell.f.i.b.e.DrawerItemSettingsAction;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

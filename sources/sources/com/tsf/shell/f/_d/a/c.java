@@ -166,20 +166,20 @@ public class c {
         this.d = this.c.get((int) (Math.random() * ((double) this.c.size())));
     }
 
-    public a a(com.tsf.shell.f.i.b.e.b bVar, Number3d number3d, Number3d number3d2) {
+    public a a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar, Number3d number3d, Number3d number3d2) {
         A aVarC = c();
         aVarC.a(bVar.k, number3d, number3d2, null);
         return aVarC;
     }
 
-    public a a(com.tsf.shell.f.i.b.e.b bVar, A aVar) {
+    public a a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar, A aVar) {
         this.e.reset();
         this.f.reset();
         aVar.a(bVar.k, bVar.localToGlobal(this.e), bVar.localRotationToGlobal(this.f), null);
         return aVar;
     }
 
-    public a a(com.tsf.shell.f.i.b.e.b bVar) {
+    public a a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         this.e.reset();
         this.f.reset();
         Number3d number3dLocalToGlobal = bVar.localToGlobal(this.e);

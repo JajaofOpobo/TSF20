@@ -166,8 +166,8 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         if (this.h == null) {
             this.h = new ArrayList<>();
         }
-        if (mVar instanceof com.tsf.shell.f.i.b.e.b) {
-            com.tsf.shell.f.i.b.e.b bVar = (com.tsf.shell.f.i.b.e.b) mVar;
+        if (mVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) mVar;
             if (bVar.ao()) {
                 bVar.ar();
             }
@@ -177,7 +177,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             this.h.add(bVar2);
             return;
         }
-        if (mVar instanceof com.tsf.shell.f.i.b.d.b) {
+        if (mVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) mVar;
             this.i = true;
             bVar3.setDefaultColor(h.a);
@@ -247,23 +247,23 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             case 3:
                 final ArrayList arrayList3 = new ArrayList();
                 for (com.tsf.shell.f.i.PageItem bVar2 : arrayList) {
-                    if (bVar2 instanceof com.tsf.shell.f.i.b.e.b) {
-                        arrayList3.add((com.tsf.shell.f.i.b.e.b) bVar2);
+                    if (bVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
+                        arrayList3.add((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar2);
                     }
                 }
                 if (arrayList3.size() > 0) {
-                    float f = ((com.tsf.shell.f.i.b.e.b) arrayList3.get(0)).position().x;
-                    float f2 = ((com.tsf.shell.f.i.b.e.b) arrayList3.get(0)).position().y;
+                    float f = ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) arrayList3.get(0)).position().x;
+                    float f2 = ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) arrayList3.get(0)).position().y;
                     Iterator it2 = arrayList3.iterator();
                     float f3 = f;
                     while (true) {
                         float f4 = f2;
                         if (it2.hasNext()) {
-                            com.tsf.shell.f.i.b.e.b bVar3 = (com.tsf.shell.f.i.b.e.b) it2.next();
+                            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) it2.next();
                             f3 = (f3 + bVar3.position().x) / 2.0f;
                             f2 = (bVar3.position().y + f4) / 2.0f;
                         } else {
-                            final com.tsf.shell.f.i.b.d.b bVarA = com.tsf.shell.f.i.b.d.b.a(com.tsf.shell.manager.app.StateHub.F(), (int) f3, (int) f4);
+                            final com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = com.tsf.shell.f.i.b.d.FolderShortcutItem.a(com.tsf.shell.manager.app.StateHub.F(), (int) f3, (int) f4);
                             RenderRunnable renderRunnable = new RenderRunnable(2, i2) { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.4
                                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                                 public void run() {

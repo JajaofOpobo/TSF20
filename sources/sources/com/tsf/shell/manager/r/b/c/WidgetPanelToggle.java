@@ -7,9 +7,9 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
-    private com.tsf.shell.f.e._g.a.a.C0095a a;
-    private com.tsf.shell.f.e._g.a.a.C0095a b;
+public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
+    private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a a;
+    private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a b;
     private e c;
     private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase d;
     private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase e;
@@ -20,14 +20,14 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
     public WidgetPanelToggle(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, String str) {
         super(str);
         this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.A.d());
-        ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList = new ArrayList<>();
-        com.tsf.shell.f.e._g.a.a.C0095a c0095a = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
+        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return WidgetPanelToggle.this.e == WidgetPanelToggle.this.c;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 WidgetPanelToggle.this.a(WidgetPanelToggle.this.c, true);
                 WidgetPanelToggle.this.b.a();
@@ -35,13 +35,13 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
         });
         com.tsf.shell.manager.r.c.WidgetFeatureConfig.e = c0095a;
         this.a = c0095a;
-        com.tsf.shell.f.e._g.a.a.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.a.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.2
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.2
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public boolean a() {
                 return WidgetPanelToggle.this.e == WidgetPanelToggle.this.d;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.com.tsf.shell.f.e._g.a.a.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
             public void b() {
                 if (com.tsf.shell.utils.StatusBarHelper.b) {
                     WidgetPanelToggle.this.a(WidgetPanelToggle.this.d, true);
@@ -84,32 +84,32 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.b {
         }
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.c.a(f, f2, f3, f4);
         this.d.a(f, f2, f3, f4);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         this.e.b(false);
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShowComplete() {
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
         this.h.b();
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.f;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         super.onRecycle();
         a(this.c, false);

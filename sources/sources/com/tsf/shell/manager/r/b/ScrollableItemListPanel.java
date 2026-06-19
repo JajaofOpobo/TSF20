@@ -11,7 +11,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.b {
+public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActionItem {
     public com.tsf.shell.manager.r.b.WidgetMenuPanel a;
     private h b;
     private j c;
@@ -89,7 +89,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.b {
         return iVar;
     }
 
-    public void a(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, ArrayList<com.tsf.shell.f.e._g.a.a.C0095a> arrayList, float f, float f2, float f3, float f4) {
+    public void a(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList, float f, float f2, float f3, float f4) {
         this.a = aVar;
         setFunctions(arrayList);
         this.c = new j();
@@ -176,12 +176,12 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.b {
         });
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public j getContentContainer() {
         return this.c;
     }
 
-    @Override // com.tsf.shell.f.e._g.a.c
+    @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
     }

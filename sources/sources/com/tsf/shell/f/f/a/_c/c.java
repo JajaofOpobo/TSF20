@@ -211,7 +211,7 @@ public class c extends i {
                 fB = x.b(f, f2, number3d.x, number3d.y);
                 f3 = fB2;
             }
-            if (fB > f3 || (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) || ((bVar2 instanceof com.tsf.shell.f.i._b.e.b) && !com.tsf.shell.f.i._b.e.b.aR() && bVar2 != this.j)) {
+            if (fB > f3 || (bVar instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) || ((bVar2 instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) && !com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.aR() && bVar2 != this.j)) {
                 q();
                 r();
                 jVar.children().remove(this.m);
@@ -235,11 +235,11 @@ public class c extends i {
                     i3++;
                 }
                 bVar2 = null;
-            } else if (((bVar2 instanceof com.tsf.shell.f.i._b.e.b) || (bVar2 instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem)) && this.j != bVar2) {
+            } else if (((bVar2 instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) || (bVar2 instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem)) && this.j != bVar2) {
                 q();
-                if (bVar instanceof com.tsf.shell.f.i._b.e.b) {
-                    if (bVar2 instanceof com.tsf.shell.f.i._b.e.b) {
-                        com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) bVar2;
+                if (bVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                    if (bVar2 instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                        com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar = (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) bVar2;
                         if (gVar.aC() && !gVar.t()) {
                             gVar.a((com.censivn.C3DEngine.b.f.i) bVar);
                         } else {
@@ -261,8 +261,8 @@ public class c extends i {
 
     private void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
         if (bVar2 != this.j) {
-            if (this.j instanceof com.tsf.shell.f.i._b.e.b) {
-                ((com.tsf.shell.f.i._b.e.b) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
+            if (this.j instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
             } else if (this.j instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                 bVar.p();
             }
@@ -378,11 +378,11 @@ public class c extends i {
                 jVar.globalScaleToLocal(Number3d.TEMPNUMBER3D);
                 cVar.scale().setAllFrom(Number3d.TEMPNUMBER3D);
             }
-            if (this.j != null && (cVar instanceof com.tsf.shell.f.i._b.e.b)) {
+            if (this.j != null && (cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase)) {
                 jVar.removeChild(this.m);
-                if (this.j instanceof com.tsf.shell.f.i._b.e.b) {
-                    com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) this.j;
-                    com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVarA = gVar.a((com.tsf.shell.f.i._b.e.b) cVar, true);
+                if (this.j instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
+                    com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar = (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) this.j;
+                    com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVarA = gVar.a((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) cVar, true);
                     r();
                     this.a.a(bVarA, gVar);
                     bVarA.setMouseEventListener(this.a.f(bVarA));
@@ -458,12 +458,12 @@ public class c extends i {
                 ArrayList arrayList2 = new ArrayList();
                 Iterator<com.censivn.C3DEngine.b.f.i> it = bVar.aX().children().iterator();
                 while (it.hasNext()) {
-                    arrayList2.add((com.tsf.shell.f.i._b.e.g) it.next());
+                    arrayList2.add((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) it.next());
                 }
                 int size = arrayList2.size();
                 for (int i = 0; i < size; i++) {
-                    com.tsf.shell.f.i._b.e.g gVar = (com.tsf.shell.f.i._b.e.g) arrayList2.get((size - i) - 1);
-                    ((com.tsf.shell.f.i._b.d.a) gVar.getMouseEventListener()).a();
+                    com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar = (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) arrayList2.get((size - i) - 1);
+                    ((com.tsf.shell.f.i._b.d.WidgetTouchHandler) gVar.getMouseEventListener()).a();
                     Number3d.TEMPNUMBER3D.reset();
                     gVar.localToGlobal(Number3d.TEMPNUMBER3D);
                     bVar.aX().removeChild(gVar);
@@ -480,7 +480,7 @@ public class c extends i {
                 arrayList.add(cVar);
             }
         } else {
-            if ((cVar instanceof com.tsf.shell.f.i._b.e.g) && cVar.L()) {
+            if ((cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) && cVar.L()) {
                 com.tsf.shell.manager.app.TaskScheduler.b(cVar);
                 com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
                 if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.A)) {

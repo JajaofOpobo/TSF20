@@ -18,7 +18,7 @@ public class j {
             aVar.g = 32;
             a.ab = new com.tsf.shell.manager.o.a.TextLabelElement(0, aVar);
         }
-        return new com.tsf.shell.f.i.b.e.h(a).k;
+        return new com.tsf.shell.f.i.b.e.DrawerItemButton(a).k;
     }
 
     public static void a(TextureElement textureElement, int i, String str) {
@@ -29,7 +29,7 @@ public class j {
             Canvas canvas = new Canvas(bitmapA3);
             canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
             a.a(canvas, bitmapA, bitmapA2, true);
-            com.tsf.shell.f.i.b.e.b.a(bitmapA3);
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.a(bitmapA3);
             com.censivn.C3DEngine.A.g().a(textureElement, bitmapA3);
         }
     }

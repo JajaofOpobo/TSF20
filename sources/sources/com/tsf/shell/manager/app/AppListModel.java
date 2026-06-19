@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AppListModel {
-    private ArrayList<com.tsf.shell.f.i.b.e.g> b;
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> b;
     private DataCoordinator d;
     private WidgetPanelController e = new WidgetPanelController();
     private ArrayList<a> c = new ArrayList<>();
@@ -15,11 +15,11 @@ public class AppListModel {
     public interface a {
         void a();
 
-        void a(com.tsf.shell.f.i.b.e.g gVar);
+        void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar);
 
-        void a(com.tsf.shell.f.i.b.e.g gVar, boolean z);
+        void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z);
 
-        void b(com.tsf.shell.f.i.b.e.g gVar, boolean z);
+        void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z);
 
         void k_();
     }
@@ -36,7 +36,7 @@ public class AppListModel {
         return this.b != null;
     }
 
-    protected void a(ArrayList<com.tsf.shell.f.i.b.e.g> arrayList) {
+    protected void a(ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList) {
         this.b = arrayList;
         Iterator<a> it = this.c.iterator();
         while (it.hasNext()) {
@@ -44,11 +44,11 @@ public class AppListModel {
         }
     }
 
-    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
         a(gVar, z, true);
     }
 
-    public void a(com.tsf.shell.f.i.b.e.g gVar, boolean z, boolean z2) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z, boolean z2) {
         this.b.add(gVar);
         if (z2) {
             c();
@@ -59,7 +59,7 @@ public class AppListModel {
         }
     }
 
-    protected boolean b(com.tsf.shell.f.i.b.e.g gVar, boolean z) {
+    protected boolean b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
         boolean zRemove = this.b.remove(gVar);
         c();
         Iterator<a> it = this.c.iterator();
@@ -69,7 +69,7 @@ public class AppListModel {
         return zRemove;
     }
 
-    public void a(com.tsf.shell.f.i.b.e.g gVar) {
+    public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
         c();
         Iterator<a> it = this.c.iterator();
         while (it.hasNext()) {
@@ -84,8 +84,8 @@ public class AppListModel {
         }
     }
 
-    public com.tsf.shell.f.i.b.e.g a(ComponentName componentName) {
-        for (com.tsf.shell.f.i.b.e.g gVar : this.b) {
+    public com.tsf.shell.f.i.b.e.DrawerItemVisual a(ComponentName componentName) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : this.b) {
             if (gVar.bd().b.equals(componentName)) {
                 return gVar;
             }
@@ -93,8 +93,8 @@ public class AppListModel {
         return null;
     }
 
-    public com.tsf.shell.f.i.b.e.g a(int i) {
-        for (com.tsf.shell.f.i.b.e.g gVar : this.b) {
+    public com.tsf.shell.f.i.b.e.DrawerItemVisual a(int i) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : this.b) {
             if (gVar.K() != null && gVar.K().id == i) {
                 return gVar;
             }
@@ -102,8 +102,8 @@ public class AppListModel {
         return null;
     }
 
-    public com.tsf.shell.f.i.b.e.g a(f fVar) {
-        for (com.tsf.shell.f.i.b.e.g gVar : this.b) {
+    public com.tsf.shell.f.i.b.e.DrawerItemVisual a(f fVar) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : this.b) {
             if (gVar.bd() == fVar) {
                 return gVar;
             }
@@ -111,7 +111,7 @@ public class AppListModel {
         return null;
     }
 
-    public ArrayList<com.tsf.shell.f.i.b.e.g> d() {
+    public ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> d() {
         return this.b;
     }
 

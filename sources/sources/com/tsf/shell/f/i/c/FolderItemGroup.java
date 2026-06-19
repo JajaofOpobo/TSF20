@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderItemGroup extends ItemGroupBase {
     private j k;
-    private com.tsf.shell.f.i.b.d.b l;
+    private com.tsf.shell.f.i.b.d.FolderShortcutItem l;
     private a m;
     private a n;
     private a o;
@@ -22,7 +22,7 @@ public class FolderItemGroup extends ItemGroupBase {
     private TextureElement r = new TextureElement(0, false);
     private boolean s = true;
     private boolean t = true;
-    private ArrayList<com.tsf.shell.f.i.b.e.b> u;
+    private ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> u;
     private Runnable v;
 
     public c() {
@@ -104,7 +104,7 @@ public class FolderItemGroup extends ItemGroupBase {
         if (this.v != null) {
             com.censivn.C3DEngine.A.a().g(this.v);
         }
-        com.tsf.shell.f.i.b.e.b bVar = this.u.get(0);
+        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.u.get(0);
         com.censivn.C3DEngine.b.g.c.a(bVar);
         bVar.removeFromParent();
         this.l.aX().addChild(bVar);
@@ -112,7 +112,7 @@ public class FolderItemGroup extends ItemGroupBase {
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < 2; i++) {
-            com.tsf.shell.f.i.b.e.b bVar2 = this.u.get((size - i) - 1);
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = this.u.get((size - i) - 1);
             bVar2.removeFromParent();
             com.censivn.C3DEngine.b.g.c.a(bVar2);
             this.k.addChild(bVar2);
@@ -126,7 +126,7 @@ public class FolderItemGroup extends ItemGroupBase {
         this.v = new Runnable() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i.b.e.b bVar3 = (com.tsf.shell.f.i.b.e.b) c.this.u.get(2);
+                com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) c.this.u.get(2);
                 Number3d.TEMPNUMBER3D.reset();
                 bVar3.localToGlobal(Number3d.TEMPNUMBER3D);
                 bVar3.position().setAllFrom(Number3d.TEMPNUMBER3D);
@@ -135,7 +135,7 @@ public class FolderItemGroup extends ItemGroupBase {
                     @Override // java.lang.Runnable
                     public void run() {
                         c.this.v = null;
-                        com.tsf.shell.f.i.b.e.b bVar4 = (com.tsf.shell.f.i.b.e.b) c.this.u.get(1);
+                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar4 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) c.this.u.get(1);
                         Number3d.TEMPNUMBER3D.reset();
                         bVar4.localToGlobal(Number3d.TEMPNUMBER3D);
                         bVar4.position().setAllFrom(Number3d.TEMPNUMBER3D);
@@ -151,7 +151,7 @@ public class FolderItemGroup extends ItemGroupBase {
     private j r() {
         p();
         this.k = new j();
-        this.l = new com.tsf.shell.f.i.b.d.b(new LauncherDrawerFolder3DInfo(true));
+        this.l = new com.tsf.shell.f.i.b.d.FolderShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
         this.m = new a();
         this.m.k.textures().addElement(this.p);
@@ -166,7 +166,7 @@ public class FolderItemGroup extends ItemGroupBase {
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < size; i++) {
-            com.tsf.shell.f.i.b.e.b bVar = this.u.get((size - i) - 1);
+            com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.u.get((size - i) - 1);
             bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
             bVar.position().y = f2;
             Number3d number3dScale = bVar.scale();
@@ -178,7 +178,7 @@ public class FolderItemGroup extends ItemGroupBase {
         return this.k;
     }
 
-    class a extends com.tsf.shell.f.i.b.e.b {
+    class a extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBase {
         public j a;
 
         public a() {
@@ -190,7 +190,7 @@ public class FolderItemGroup extends ItemGroupBase {
             addChild(this.a);
         }
 
-        @Override // com.tsf.shell.f.i.b.e.b
+        @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase
         public void k() {
         }
     }
