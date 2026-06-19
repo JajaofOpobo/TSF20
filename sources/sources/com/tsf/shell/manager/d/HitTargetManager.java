@@ -12,34 +12,34 @@ public class HitTargetManager {
     public void a(F fVar) {
         if (fVar != null) {
             if (this.a.contains(fVar)) {
-                com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is exist");
+                com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is exist");
                 return;
             } else {
                 this.a.add(0, fVar);
                 return;
             }
         }
-        com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is null");
+        com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is null");
     }
 
     public void b(F fVar) {
         if (fVar != null) {
             if (this.a.contains(fVar)) {
-                com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is exist");
+                com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is exist");
                 return;
             } else {
                 this.a.add(fVar);
                 return;
             }
         }
-        com.tsf.shell.b.a.a("HitTargetManager", "addHitTarget error ,target is null");
+        com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is null");
     }
 
     public void c(F fVar) {
         if (this.a.contains(fVar)) {
             this.a.remove(fVar);
         } else {
-            com.tsf.shell.b.a.a("HitTargetManager", "removeHitTarget error ,target is not exist");
+            com.tsf.shell.b.ShellBridge.a("HitTargetManager", "removeHitTarget error ,target is not exist");
         }
     }
 

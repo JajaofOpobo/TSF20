@@ -744,7 +744,7 @@ public class ConfigManager {
     }
 
     public static float aj() {
-        return com.tsf.shell.preference.a.a.b.a(aD().getFloat("density", 0.0f));
+        return com.tsf.shell.preference.a.a.PreferenceItemB.a(aD().getFloat("density", 0.0f));
     }
 
     public static void n(final int i2) {
@@ -813,7 +813,7 @@ public class ConfigManager {
     }
 
     public static int aq() {
-        return aD().getInt("all_apps_direction", com.tsf.shell.f.f.a._a.c.b);
+        return aD().getInt("all_apps_direction", com.tsf.shell.f.f.a._a.DrawerItemContainer.b);
     }
 
     public static void q(int i2) {
@@ -823,7 +823,7 @@ public class ConfigManager {
     }
 
     private static void aK() {
-        D = com.tsf.shell.preference.a.a.f.c(aD().getInt("perference_folder_animation", 0));
+        D = com.tsf.shell.preference.a.a.PreferenceItemF.c(aD().getInt("perference_folder_animation", 0));
         E = aD().getBoolean("perference_folder_auto_close", false);
     }
 
@@ -836,7 +836,7 @@ public class ConfigManager {
     }
 
     public static void r(int i2) {
-        D = com.tsf.shell.preference.a.a.f.c(i2);
+        D = com.tsf.shell.preference.a.a.PreferenceItemF.c(i2);
         SharedPreferences.Editor editorAC = aC();
         editorAC.putInt("perference_folder_animation", D);
         editorAC.commit();

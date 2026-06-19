@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.AlarmResources;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -26,14 +26,14 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         super.onCreate(bundle);
         setContentView(m.d.activity_place_select_layout);
         findViewById(m.c.relativeLayout1).setOnClickListener(this);
-        this.a = new a();
+        this.a = new AlarmSettingAdapter();
         this.b = (ListView) findViewById(m.c.searchcity_list);
         this.b.setAdapter((ListAdapter) this.a);
         this.b.setOnItemClickListener(this);
     }
 
     class a extends BaseAdapter {
-        ArrayList<com.tsf.shell.widget.alarm.d.A> a = new ArrayList<>();
+        ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
         public a() {
             a();
@@ -41,7 +41,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
 
         public void a() {
             this.a.clear();
-            this.a = d.a();
+            this.a = AlarmSettingData.a();
             notifyDataSetChanged();
         }
 
@@ -51,7 +51,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public Object getItem(int i) {
+        public class Object 
             return null;
         }
 
@@ -61,7 +61,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public class View 
             if (view == null) {
                 view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
             }
@@ -70,7 +70,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
                 a(SettingActivity.a.getString(m.f.autosetmylocation), view);
                 imageView.setImageResource(m.b.activity_list_location_ico);
             } else {
-                com.tsf.shell.widget.alarm.d.A aVar = this.a.get(i - 1);
+                com.tsf.shell.widget.alarm.d.AlarmConfigEmpty aVar = this.a.get(i - 1);
                 a(aVar.a + "," + aVar.b, view);
                 view.setTag(this.a.get(i - 1));
                 imageView.setImageResource(m.b.activity_list_city_ico);
@@ -97,22 +97,22 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         if (i == 0) {
             a(null);
         } else {
-            a((com.tsf.shell.widget.alarm.d.A) view.getTag());
+            a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) view.getTag());
         }
     }
 
-    private void a(com.tsf.shell.widget.alarm.d.A aVar) {
+    private void a(com.tsf.shell.widget.alarm.d.AlarmConfigEmpty aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
-            e.a = true;
+            AlarmSettingTheme.a = true;
         } else {
             i.c("PositionOnChange item " + aVar.a + " code:" + aVar.c);
-            e.a = false;
-            e.c = aVar.a;
-            e.d = aVar.c;
-            d.a(aVar);
+            AlarmSettingTheme.a = false;
+            AlarmSettingTheme.c = aVar.a;
+            AlarmSettingTheme.d = aVar.c;
+            AlarmSettingData.a(aVar);
         }
-        e.a(this).c();
+        AlarmSettingTheme.a(this).c();
         finish();
     }
 }

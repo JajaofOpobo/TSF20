@@ -12,7 +12,7 @@ import android.net.Uri;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FontsManagerProvider extends ContentProvider {
-    public static final String a = "CREATE TABLE fonts(_id INTEGER PRIMARY KEY," + b.c + " TEXT," + b.b + " TEXT," + b.a + " TEXT); ";
+    public static final String a = "CREATE TABLE fonts(_id INTEGER PRIMARY KEY," + FontPickerContract.c + " TEXT," + FontPickerContract.b + " TEXT," + FontPickerContract.a + " TEXT); ";
     private a b;
 
     private static class a extends SQLiteOpenHelper {
@@ -34,12 +34,12 @@ public class FontsManagerProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public boolean onCreate() {
-        this.b = new a(getContext());
+        this.b = new FontPickerManager(getContext());
         return true;
     }
 
     @Override // android.content.ContentProvider
-    public String getType(Uri uri) {
+    public class String 
         return null;
     }
 
@@ -51,10 +51,10 @@ public class FontsManagerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Uri insert(Uri uri, ContentValues contentValues) {
+    public class Uri 
         long jReplace = this.b.getWritableDatabase().replace("fonts", "_id", contentValues);
         if (jReplace > 0) {
-            Uri uriWithAppendedId = ContentUris.withAppendedId(b.d, jReplace);
+            Uri uriWithAppendedId = ContentUris.withAppendedId(FontPickerContract.d, jReplace);
             getContext().getContentResolver().notifyChange(uriWithAppendedId, null);
             return uriWithAppendedId;
         }
@@ -62,7 +62,7 @@ public class FontsManagerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+    public class Cursor 
         Cursor cursorQuery = this.b.getWritableDatabase().query("fonts", null, str, strArr2, null, null, str2);
         getContext().getContentResolver().notifyChange(uri, null);
         return cursorQuery;

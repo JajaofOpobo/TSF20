@@ -194,7 +194,7 @@ public class ThemesMixManager {
         A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.A.a(x.c(b.i.tsf_loading_content));
+                com.tsf.shell.f.ProgressDialogHelper.a(x.c(b.i.tsf_loading_content));
             }
         });
     }
@@ -203,7 +203,7 @@ public class ThemesMixManager {
         A.a().a(new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.A.a();
+                com.tsf.shell.f.ProgressDialogHelper.a();
             }
         });
     }
@@ -236,7 +236,7 @@ public class ThemesMixManager {
 
     public void setTheme(final int i, final Context context, final boolean z) {
         if (z) {
-            com.tsf.shell.f.A.a(x.c(b.i.tsf_loading_content));
+            com.tsf.shell.f.ProgressDialogHelper.a(x.c(b.i.tsf_loading_content));
         }
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.theme.inside.ThemesMixManager.4
             @Override // java.lang.Runnable

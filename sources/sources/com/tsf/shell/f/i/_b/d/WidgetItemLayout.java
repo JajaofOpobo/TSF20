@@ -14,7 +14,7 @@ public class WidgetItemLayout {
     private static Number3d k = new Number3d();
     private static float l;
     public class ThemeFolderDescription 
-    public com.tsf.shell.f.a.a.a b;
+    public com.tsf.shell.f.a.a.GlTextureBinding b;
     public int c;
     public int d;
     public int e;

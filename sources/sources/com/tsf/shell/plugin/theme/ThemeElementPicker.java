@@ -24,7 +24,7 @@ public class ThemeElementPicker extends Activity {
         this.a = getIntent();
         int intExtra = this.a.getIntExtra("type", -1);
         this.b = new ThemeListsManager(this);
-        new b(this).a(a(intExtra), ThemesMixManager.getTypeTitle(this, intExtra));
+        new ThemePluginManager(this).a(a(intExtra), ThemesMixManager.getTypeTitle(this, intExtra));
     }
 
     private ArrayList<c> a(int i) {
@@ -33,7 +33,7 @@ public class ThemeElementPicker extends Activity {
             try {
                 Context contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(themeInfo.packagename, 3);
                 if (ThemeElementChecker.isElementAbailable(contextCreatePackageContext, i)) {
-                    c cVar = new c(i, themeInfo.name, themeInfo.packagename);
+                    c cVar = new ThemePluginConfig(i, themeInfo.name, themeInfo.packagename);
                     cVar.b = contextCreatePackageContext;
                     arrayList.add(cVar);
                 }

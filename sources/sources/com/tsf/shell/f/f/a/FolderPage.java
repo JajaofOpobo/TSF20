@@ -20,9 +20,9 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.g.A;
-// import com.tsf.shell.f.f.a.A;
-import com.tsf.shell.f.f.a.b.l;
-import com.tsf.shell.f.f.n;
+// import com.tsf.shell.f.f.a.PageContainerBase;
+import com.tsf.shell.f.f.a.b.DrawerTransitionManager;
+import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.manager.app.AppListModel;
 import com.tsf.shell.manager.app.FolderManager;
 import com.tsf.shell.manager.n.ToastOverlayController;
@@ -31,7 +31,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
-import com.tsf.shell.f.f.a.C0133a;
+import com.tsf.shell.f.f.a.PageContainerView0133a;
 import com.tsf.shell.f.f.a.InterfaceC0101a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -61,10 +61,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private j L;
     private a M;
     private a N;
-    private com.tsf.shell.f.f.a._a.c O;
+    private com.tsf.shell.f.f.a._a.DrawerItemContainer O;
     private int P;
     private com.tsf.shell.f.e.PageIndicatorStrip T;
-    private com.tsf.shell.f.f.a.d.A U;
+    private com.tsf.shell.f.f.a.d.DrawerSortManager U;
     private FolderManager V;
     private ArrayList<a> W;
     private l X;
@@ -233,20 +233,20 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.tsf.shell.manager.app.ServiceProvider.c().a(this);
         this.al = com.tsf.shell.manager.app.ServiceProvider.d();
         this.U = com.tsf.shell.manager.app.ServiceProvider.b();
-        this.V = new D();
+        this.V = new AppClassifier();
         com.tsf.shell.manager.app.ServiceProvider.a().a(this);
-        this.O = new com.tsf.shell.f.f.a._a.c();
+        this.O = new com.tsf.shell.f.f.a._a.DrawerItemContainer();
     }
 
     public void al() {
         this.O.f();
     }
 
-    public FolderManager am() {
+    public class FolderManager 
         return this.V;
     }
 
-    public com.tsf.shell.f.f.a.d.A an() {
+    public com.tsf.shell.f.f.a.d.DrawerSortManager an() {
         return this.U;
     }
 
@@ -407,7 +407,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void au() {
         this.R = false;
         this.Q = true;
-        com.tsf.shell.d.a().a("PageApplication");
+        com.tsf.shell.d.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -418,7 +418,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void aU() {
-        com.tsf.shell.d.a().b("PageApplication");
+        com.tsf.shell.d.ShellDataParser().b("PageApplication");
         this.R = true;
         N();
         this.X.f();
@@ -486,8 +486,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         super.x();
         bf();
         bc();
-        this.aj = new g(this);
-        this.ak = new e(this);
+        this.aj = new FolderRenameDialog(this);
+        this.ak = new DragOverlayElement(this);
         if (!com.tsf.shell.manager.b.ConfigManager.Q()) {
             h(false);
         }
@@ -558,7 +558,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.c.addChild(this.K);
         aW();
         aT();
-        this.ai = new f(this);
+        this.ai = new PageGridRenderer(this);
         this.ai.i();
         this.c.addChild(this.ai);
         aZ();
@@ -657,13 +657,13 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             }
         };
         this.aa.b(260);
-        this.Z.a((com.censivn.C3DEngine.b.g.b) new a.C0030a.b());
-        this.aa.a((com.censivn.C3DEngine.b.g.b) new a.C0030a.b());
+        this.Z.a((com.censivn.C3DEngine.b.g.b) new PageElement.C0030a.b());
+        this.aa.a((com.censivn.C3DEngine.b.g.b) new PageElement.C0030a.b());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void bd() {
-        com.tsf.shell.f.f.a.b.k kVarH = this.X.h();
+        com.tsf.shell.f.f.a.b.DrawerTransitionBase kVarH = this.X.h();
         for (A aVar : this.W) {
             aVar.a(0.0f);
             aVar.a(kVarH);
@@ -734,9 +734,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 aVar2.b(aVar3);
             } else {
                 if (aVar3 != null) {
-                    aVar3.a((A) null);
+                    aVar3.a((PageContainerBase) null);
                 }
-                aVar2.b((A) null);
+                aVar2.b((PageContainerBase) null);
             }
             aVar.destroy();
             int size = this.W.size();
@@ -801,8 +801,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             aVarRemove.children().clear();
             aVarRemove.a(0.0f);
             aVarRemove.a(0);
-            aVarRemove.b((A) null);
-            aVarRemove.a((A) null);
+            aVarRemove.b((PageContainerBase) null);
+            aVarRemove.a((PageContainerBase) null);
             aVarRemove.a(false);
             this.W.add(aVarRemove);
             int size = this.al.a().size() - 1;
@@ -891,7 +891,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     private a bg() {
         int size = this.W.size();
-        A aVar = new A(this.X.h(), this);
+        A aVar = new PageContainerBase(this.X.h(), this);
         aVar.a(size);
         this.W.add(aVar);
         this.L.addChild(aVar);
@@ -922,7 +922,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void aF() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.d.a().a("PageApplication");
+        com.tsf.shell.d.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -935,7 +935,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void aG() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.d.a().a("PageApplication");
+        com.tsf.shell.d.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -1014,7 +1014,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             int i = size / m;
             int i2 = (size % m != 0 || size == 0) ? i + 1 : i;
             for (int i3 = 0; i3 < i2; i3++) {
-                A aVar2 = new A(this.X.h(), this);
+                A aVar2 = new PageContainerBase(this.X.h(), this);
                 aVar2.a(i3);
                 this.W.add(aVar2);
                 this.L.addChild(aVar2);
@@ -1120,7 +1120,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     @Override // com.tsf.shell.manager.app.AppListModel.a
     public void b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z2) {
         if (this.am) {
-            A aVar = (A) gVar.parent();
+            A aVar = (PageContainerBase) gVar.parent();
             if (aVar != null) {
                 aVar.removeChild(gVar);
             }
@@ -1344,7 +1344,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
                 h.this.Q = false;
                 h.this.ag = 0.0f;
-                if (!h.this.R && Math.abs(f) > 100.0f) {
+                if (!h.this.R && Math.abs(PageGridRenderer) > 100.0f) {
                     if (f < 0.0f) {
                         h.this.aH();
                     } else {
@@ -1363,7 +1363,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.M.g();
         }
         if (!this.R) {
-            com.tsf.shell.d.a().b("PageApplication");
+            com.tsf.shell.d.ShellDataParser().b("PageApplication");
         }
     }
 
@@ -1374,7 +1374,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.M.h();
         }
         if (!this.R) {
-            com.tsf.shell.d.a().a("PageApplication");
+            com.tsf.shell.d.ShellDataParser().a("PageApplication");
         }
     }
 

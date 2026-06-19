@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import com.tsf.shell.Home;
-import com.tsf.shell.activity.PhotoSelectorActivity;
+import com.tsf.shell.ShellCallbackInterfacectivity.PhotoSelectorActivity;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

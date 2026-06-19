@@ -23,7 +23,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     private boolean p;
     private float q;
     private boolean r;
-    private com.tsf.shell.f._d.a.A s;
+    private com.tsf.shell.f._d.a.DashElementBase s;
     private boolean t;
     private a u;
 
@@ -238,7 +238,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         b(number3d, number3d2);
     }
 
-    public void a(com.tsf.shell.f._d.a.A aVar) {
+    public void a(com.tsf.shell.f._d.a.DashElementBase aVar) {
         b(aVar);
     }
 
@@ -254,7 +254,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         }
     }
 
-    public void b(com.tsf.shell.f._d.a.A aVar) {
+    public void b(com.tsf.shell.f._d.a.DashElementBase aVar) {
         if (this.b) {
             com.tsf.shell.manager.app.v.AnimationHelper.a(this, aVar);
         }

@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -12,8 +12,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
-import com.tsf.shell.widget.alarm.AlarmUtils.Alarm;
-import com.tsf.shell.widget.alarm.i;
+import com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.Alarm;
+import com.tsf.shell.widget.alarm.AlarmState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmProvider extends ContentProvider {
@@ -21,8 +21,8 @@ public class AlarmProvider extends ContentProvider {
     private SQLiteOpenHelper a;
 
     static {
-        b.addURI("com.tsf.shell.widget.alarm.inshell.alarmclock", "alarm", 1);
-        b.addURI("com.tsf.shell.widget.alarm.inshell.alarmclock", "alarm/#", 2);
+        b.addURI("com.tsf.shell.widget.alarm.AlarmStatenshell.alarmclock", "alarm", 1);
+        b.addURI("com.tsf.shell.widget.alarm.AlarmStatenshell.alarmclock", "alarm/#", 2);
     }
 
     private static class a extends SQLiteOpenHelper {
@@ -55,7 +55,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+    public class Cursor 
         SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
         switch (b.match(uri)) {
             case 1:
@@ -79,7 +79,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public String getType(Uri uri) {
+    public class String 
         switch (b.match(uri)) {
             case 1:
                 return "vnd.android.cursor.dir/alarms";
@@ -107,7 +107,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Uri insert(Uri uri, ContentValues contentValues) {
+    public class Uri 
         ContentValues contentValues2;
         if (b.match(uri) != 1) {
             throw new IllegalArgumentException("Cannot insert into URL: " + uri);

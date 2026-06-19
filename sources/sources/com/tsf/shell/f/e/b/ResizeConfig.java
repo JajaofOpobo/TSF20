@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ResizeConfig {
-    private com.tsf.shell.f.a.a.a e;
+    private com.tsf.shell.f.a.a.GlTextureBinding e;
     private TextureElement f;
     private int b = 0;
     private int c = 0;

@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.tsf.shell.Home;
-import com.tsf.shell.D;
+import com.tsf.shell.ShellDataProvider;
 import com.tsf.shell.f.i.b.e.DrawerItemGather;
 import com.tsf.shell.f.i.b.e.DrawerItemEditAction;
 import com.tsf.shell.f.i.b.e.DrawerItemVisual;

@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -16,9 +16,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
-import com.tsf.shell.widget.alarm.setting.e;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.AlarmResources;
+import com.tsf.shell.widget.alarm.setting.AlarmSettingTheme;
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 
@@ -37,14 +37,14 @@ public class AlarmAlertActivity extends Activity {
         b((Context) this);
         this.d = (Alarm) getIntent().getParcelableExtra("intent.extra.alarm");
         this.e = Integer.parseInt("2");
-        registerReceiver(this.c, new IntentFilter("com.tsf.shell.widget.alarm.inshell.alarm_killed"));
-        findViewById(m.c.button1).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlertActivity.1
+        registerReceiver(this.c, new IntentFilter("com.tsf.shell.widget.alarm.AlarmStatenshell.alarm_killed"));
+        findViewById(m.c.button1).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.AlarmAlertActivity.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 AlarmAlertActivity.this.b();
             }
         });
-        findViewById(m.c.button2).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlertActivity.2
+        findViewById(m.c.button2).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.AlarmAlertActivity.2
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 AlarmAlertActivity.this.a(false);
@@ -78,7 +78,7 @@ public class AlarmAlertActivity extends Activity {
     public void a(boolean z) {
         if (!z) {
             a().cancel(this.d.a);
-            Intent intent = new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT");
+            Intent intent = new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT");
             intent.setPackage(getPackageName());
             stopService(intent);
         }
@@ -99,7 +99,7 @@ public class AlarmAlertActivity extends Activity {
         calendar.setTimeInMillis(jCurrentTimeMillis);
         String string = getString(m.f.alarm_notify_snooze_label, new Object[]{this.d.a(this)});
         Intent intent = new Intent(this, (Class<?>) a.class);
-        intent.setAction("com.tsf.shell.widget.alarm.inshell.cancel_snooze");
+        intent.setAction("com.tsf.shell.widget.alarm.AlarmStatenshell.cancel_snooze");
         intent.putExtra("alarm_id", this.d.a);
         PendingIntent broadcast = PendingIntent.getBroadcast(this, this.d.a, intent, 0);
         NotificationManager notificationManagerA = a();
@@ -122,7 +122,7 @@ public class AlarmAlertActivity extends Activity {
         String string2 = getString(m.f.alarm_alert_snooze_set, new Object[]{Integer.valueOf(i)});
         i.d(string2);
         Toast.makeText(this, string2, 1).show();
-        Intent intent2 = new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT");
+        Intent intent2 = new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT");
         intent2.setPackage(getPackageName());
         stopService(intent2);
         finish();
@@ -171,7 +171,7 @@ public class AlarmAlertActivity extends Activity {
         ((TextView) findViewById(m.c.textView2)).setText(a((Context) this));
     }
 
-    public String a(Context context) {
+    public class String 
         String string = context.getString(m.f.abbrev_wday_month_day_no_year);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());

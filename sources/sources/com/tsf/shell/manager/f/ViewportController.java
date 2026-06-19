@@ -26,7 +26,7 @@ public class ViewportController implements e.a {
     private j c;
     private VObject3dContainer d;
     private n e;
-    private com.tsf.shell.f.b.a f;
+    private com.tsf.shell.f.b.ShellKeyEventHandler f;
     private d.b g;
     private com.tsf.shell.e.DragLayer h;
     private FrameLayout i;
@@ -126,7 +126,7 @@ public class ViewportController implements e.a {
         this.b.addChild(this.c);
     }
 
-    public j a(com.tsf.shell.f.b.a aVar) {
+    public j a(com.tsf.shell.f.b.ShellKeyEventHandler aVar) {
         if (aVar == null) {
             return null;
         }

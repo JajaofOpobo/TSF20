@@ -7,11 +7,11 @@ import com.censivn.C3DEngine.b.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MenuItemHeader extends j {
-    private com.tsf.shell.f.a.b.b a;
+    private com.tsf.shell.f.a.b.ShaderSlotElement a;
     private i b;
 
     public c(float f, float f2) {
-        this.a = new com.tsf.shell.f.a.b.b(f, f2, this.a);
+        this.a = new com.tsf.shell.f.a.b.ShaderSlotElement(f, f2, this.a);
         this.a.setDefaultColor(new Color4(0, 0, 0, 255));
         this.a.alpha(60.0f);
         this.a.scale().y = 0.0f;

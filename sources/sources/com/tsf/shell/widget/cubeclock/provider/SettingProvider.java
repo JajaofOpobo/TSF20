@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.cubeclock.provider;
+package com.tsf.shell.widget.cubeclock.CubeClockWidgetFacerovider;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
-import com.tsf.shell.widget.cubeclock.j;
+import com.tsf.shell.widget.cubeclock.CubeClockEmpty;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -22,15 +22,15 @@ public class SettingProvider extends ContentProvider {
     private a c;
 
     static {
-        b.addURI("com.tsf.shell.widget.cubeclock.provider", "settings", 1);
-        b.addURI("com.tsf.shell.widget.cubeclock.provider", "settings/#", 2);
+        CubeClockProviderContract.addURI("com.tsf.shell.widget.cubeclock.CubeClockWidgetFacerovider", "settings", 1);
+        CubeClockProviderContract.addURI("com.tsf.shell.widget.cubeclock.CubeClockWidgetFacerovider", "settings/#", 2);
         a = new HashMap<>();
-        a.put("_id", "_id");
-        a.put("widgetid", "widgetid");
-        a.put("color", "color");
-        a.put("created", "created");
-        a.put("modified", "modified");
-        a.put("mode", "mode");
+        CubeClockProviderHelper.put("_id", "_id");
+        CubeClockProviderHelper.put("widgetid", "widgetid");
+        CubeClockProviderHelper.put("color", "color");
+        CubeClockProviderHelper.put("created", "created");
+        CubeClockProviderHelper.put("modified", "modified");
+        CubeClockProviderHelper.put("mode", "mode");
     }
 
     private static class a extends SQLiteOpenHelper {
@@ -55,7 +55,7 @@ public class SettingProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public boolean onCreate() {
-        this.c = new a(getContext());
+        this.c = new CubeClockProviderHelper(getContext());
         return true;
     }
 
@@ -63,7 +63,7 @@ public class SettingProvider extends ContentProvider {
     public int delete(Uri uri, String str, String[] strArr) {
         int iDelete;
         SQLiteDatabase writableDatabase = this.c.getWritableDatabase();
-        switch (b.match(uri)) {
+        switch (CubeClockProviderContract.match(uri)) {
             case 1:
                 iDelete = writableDatabase.delete("settings", str, strArr);
                 break;
@@ -78,14 +78,14 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public String getType(Uri uri) {
+    public class String 
         return null;
     }
 
     @Override // android.content.ContentProvider
-    public Uri insert(Uri uri, ContentValues contentValues) {
+    public class Uri 
         ContentValues contentValues2;
-        if (b.match(uri) != 1) {
+        if (CubeClockProviderContract.match(uri) != 1) {
             throw new IllegalArgumentException("Unknown URI " + uri);
         }
         if (contentValues != null) {
@@ -102,7 +102,7 @@ public class SettingProvider extends ContentProvider {
         }
         long jReplace = this.c.getWritableDatabase().replace("settings", "widgetid", contentValues2);
         if (jReplace > 0) {
-            Uri uriWithAppendedId = ContentUris.withAppendedId(b.a, jReplace);
+            Uri uriWithAppendedId = ContentUris.withAppendedId(CubeClockProviderContract.a, jReplace);
             getContext().getContentResolver().notifyChange(uriWithAppendedId, null);
             return uriWithAppendedId;
         }
@@ -110,9 +110,9 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+    public class Cursor 
         SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
-        switch (b.match(uri)) {
+        switch (CubeClockProviderContract.match(uri)) {
             case 1:
                 sQLiteQueryBuilder.setTables("settings");
                 sQLiteQueryBuilder.setProjectionMap(a);
@@ -133,7 +133,7 @@ public class SettingProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         SQLiteDatabase writableDatabase = this.c.getWritableDatabase();
-        switch (b.match(uri)) {
+        switch (CubeClockProviderContract.match(uri)) {
             case 1:
                 return writableDatabase.update("settings", contentValues, str, strArr);
             case 2:

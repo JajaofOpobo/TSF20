@@ -1,142 +1,242 @@
-package com.tsf.shell.widget.alarm.AlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
 
-import android.app.KeyguardManager;
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
+import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
+import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Parcel;
-import android.util.Log;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
-import java.text.SimpleDateFormat;
+import android.provider.Settings;
+import android.text.format.DateFormat;
+import com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.Alarm;
+import com.tsf.shell.widget.alarm.AlarmState;
+import java.util.Calendar;
 import java.util.Date;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AlarmReceiver extends BroadcastReceiver {
-    private void a(String str) {
-        if (com.tsf.shell.widget.alarm.c.a.booleanValue()) {
-            Log.v("TSF", str);
-        }
+public class AlarmReceiver {
+    public static Uri a(Context context) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("hour", (Integer) 8);
+        return b.a(context).a(Alarm.a.a, contentValues);
     }
 
-    @Override // android.content.BroadcastReceiver
-    public void onReceive(Context context, Intent intent) {
-        Alarm alarmCreateFromParcel;
-        Class<AlarmAlertFullScreen> cls;
-        if (!context.getSharedPreferences("config", 0).getBoolean("GDPREnable", false)) {
-            a("GDPR没有开启： AlarmReceiver - 不能执行命令");
-            return;
+    public static Cursor b(Context context) {
+        return new b(context).a(Alarm.a.a, Alarm.a.b, null, null, "_id ASC");
+    }
+
+    private static Cursor g(Context context) {
+        return new b(context).a(Alarm.a.a, Alarm.a.b, "enabled=1", null, null);
+    }
+
+    public static Alarm a(Context context, int i) {
+        Cursor cursorA = b.a(context).a(ContentUris.withAppendedId(Alarm.a.a, i), Alarm.a.b, null, null, null);
+        if (cursorA != null) {
+            alarm = cursorA.moveToFirst() ? new Alarm(cursorA) : null;
+            cursorA.close();
         }
-        a("GDPR已经开启： AlarmReceiver - 可以执行命令");
-        if ("clear_notification".equals(intent.getAction())) {
-            Intent intent2 = new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT");
-            intent2.setPackage(context.getPackageName());
-            context.stopService(intent2);
-            return;
+        return alarm;
+    }
+
+    public static void a(Context context, int i, boolean z, int i2, int i3, Alarm.b bVar, boolean z2, String str, String str2) {
+        ContentValues contentValues = new ContentValues(8);
+        long timeInMillis = 0;
+        if (!bVar.c()) {
+            timeInMillis = a(i2, i3, bVar).getTimeInMillis();
         }
-        if ("com.tsf.shell.widget.alarm.inshell.alarm_killed".equals(intent.getAction())) {
-            a(context, (Alarm) intent.getParcelableExtra("intent.extra.alarm"), intent.getIntExtra("alarm_killed_timeout", -1));
-            return;
+        i.d("**  setAlarm * idx " + i + " hour " + i2 + " minutes " + i3 + " enabled " + z + " time " + timeInMillis);
+        contentValues.put("enabled", Integer.valueOf(z ? 1 : 0));
+        contentValues.put("hour", Integer.valueOf(i2));
+        contentValues.put("minutes", Integer.valueOf(i3));
+        contentValues.put("alarmtime", Long.valueOf(timeInMillis));
+        contentValues.put("daysofweek", Integer.valueOf(bVar.a()));
+        contentValues.put("vibrate", Boolean.valueOf(z2));
+        contentValues.put("message", str);
+        contentValues.put("alert", str2);
+        b.a(context).a(ContentUris.withAppendedId(Alarm.a.a, i), contentValues, null, null);
+        d(context);
+    }
+
+    public static void a(Context context, int i, boolean z, int i2, int i3, int i4, boolean z2, String str, String str2) {
+        ContentValues contentValues = new ContentValues(8);
+        Alarm.b bVar = new Alarm.b(i4);
+        long timeInMillis = 0;
+        if (!bVar.c()) {
+            timeInMillis = a(i2, i3, bVar).getTimeInMillis();
         }
-        if ("com.tsf.shell.widget.alarm.inshell.cancel_snooze".equals(intent.getAction())) {
-            c.a(context, -1, -1L);
-            return;
+        i.d("**  setAlarm * idx " + i + " hour " + i2 + " minutes " + i3 + " enabled " + z + " time " + timeInMillis);
+        contentValues.put("enabled", Integer.valueOf(z ? 1 : 0));
+        contentValues.put("hour", Integer.valueOf(i2));
+        contentValues.put("minutes", Integer.valueOf(i3));
+        contentValues.put("alarmtime", Long.valueOf(timeInMillis));
+        contentValues.put("daysofweek", Integer.valueOf(i4));
+        contentValues.put("vibrate", Boolean.valueOf(z2));
+        contentValues.put("message", str);
+        contentValues.put("alert", str2);
+        b.a(context).a(ContentUris.withAppendedId(Alarm.a.a, i), contentValues, null, null);
+        d(context);
+    }
+
+    public static void a(Context context, int i, boolean z) {
+        b(context, i, z);
+        d(context);
+    }
+
+    private static void b(Context context, int i, boolean z) {
+        a(context, a(context, i), z);
+    }
+
+    private static void a(Context context, Alarm alarm, boolean z) {
+        ContentValues contentValues = new ContentValues(2);
+        contentValues.put("enabled", Integer.valueOf(z ? 1 : 0));
+        if (z) {
+            long timeInMillis = 0;
+            if (!alarm.e.c()) {
+                timeInMillis = a(alarm.c, alarm.d, alarm.e).getTimeInMillis();
+            }
+            contentValues.put("alarmtime", Long.valueOf(timeInMillis));
         }
-        byte[] byteArrayExtra = intent.getByteArrayExtra("intent.extra.alarm_raw");
-        if (byteArrayExtra == null) {
-            alarmCreateFromParcel = null;
-        } else {
-            Parcel parcelObtain = Parcel.obtain();
-            parcelObtain.unmarshall(byteArrayExtra, 0, byteArrayExtra.length);
-            parcelObtain.setDataPosition(0);
-            alarmCreateFromParcel = Alarm.CREATOR.createFromParcel(parcelObtain);
-        }
-        if (alarmCreateFromParcel == null) {
-            i.d("AlarmReceiver failed to parse the alarm from the intent");
-            return;
-        }
+        b.a(context).a(ContentUris.withAppendedId(Alarm.a.a, alarm.a), contentValues, null, null);
+    }
+
+    public static Alarm c(Context context) {
+        Alarm alarm = null;
+        long j = Long.MAX_VALUE;
         long jCurrentTimeMillis = System.currentTimeMillis();
-        i.d("AlarmReceiver.onReceive() id " + alarmCreateFromParcel.a + " setFor " + new SimpleDateFormat("HH:mm:ss.SSS aaa").format(new Date(alarmCreateFromParcel.f)));
-        if (jCurrentTimeMillis > alarmCreateFromParcel.f + 1800000) {
-            i.d("AlarmReceiver ignoring stale alarm");
-            return;
-        }
-        a.a(context);
-        context.sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
-        if (!((KeyguardManager) context.getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
-            cls = AlarmAlertActivity.class;
-        } else {
-            cls = AlarmAlertFullScreen.class;
-        }
-        Intent intent3 = new Intent(context, cls);
-        intent3.putExtra("intent.extra.alarm", alarmCreateFromParcel);
-        intent3.setFlags(268697600);
-        context.startActivity(intent3);
-        c.b(context, alarmCreateFromParcel.a);
-        if (!alarmCreateFromParcel.e.c()) {
-            c.a(context, alarmCreateFromParcel.a, false);
-        } else {
-            c.d(context);
-        }
-        Intent intent4 = new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT");
-        intent4.setPackage(context.getPackageName());
-        intent4.putExtra("intent.extra.alarm", alarmCreateFromParcel);
-        com.tsf.shell.component.a.a(context, intent4);
-        Intent intent5 = new Intent(context, (Class<?>) AlarmAlertActivity.class);
-        intent5.putExtra("intent.extra.alarm", alarmCreateFromParcel);
-        PendingIntent.getActivity(context, alarmCreateFromParcel.a, intent5, 0);
-        String strA = alarmCreateFromParcel.a(context);
-        Notification.Builder builder = new Notification.Builder(context);
-        builder.setSmallIcon(m.b.stat_notify_alarm);
-        builder.setContentTitle(strA);
-        builder.setContentInfo(context.getString(m.f.alarm_notify_text));
-        Intent intent6 = new Intent(context, (Class<?>) AlarmReceiver.class);
-        intent6.setAction("clear_notification");
-        NotificationManager notificationManagerA = a(context);
-        builder.setDeleteIntent(PendingIntent.getBroadcast(context, 0, intent6, 0));
-        if (Build.VERSION.SDK_INT >= 26) {
-            NotificationChannel notificationChannel = new NotificationChannel("1", "notification", 2);
-            if (builder != null) {
-                builder.setChannelId("1");
+        Cursor cursorG = g(context);
+        if (cursorG != null) {
+            if (cursorG.moveToFirst()) {
+                do {
+                    Alarm alarm2 = new Alarm(cursorG);
+                    if (alarm2.f == 0) {
+                        alarm2.f = a(alarm2.c, alarm2.d, alarm2.e).getTimeInMillis();
+                    } else if (alarm2.f < jCurrentTimeMillis) {
+                        a(context, alarm2, false);
+                    }
+                    if (alarm2.f < j) {
+                        j = alarm2.f;
+                        alarm = alarm2;
+                    }
+                } while (cursorG.moveToNext());
             }
-            if (notificationManagerA != null) {
-                notificationManagerA.createNotificationChannel(notificationChannel);
-            }
+            cursorG.close();
         }
-        notificationManagerA.notify(alarmCreateFromParcel.a, builder.build());
+        return alarm;
     }
 
-    private NotificationManager a(Context context) {
-        return (NotificationManager) context.getSystemService("notification");
+    public static void d(Context context) {
+        if (!h(context)) {
+            Alarm alarmC = c(context);
+            if (alarmC != null) {
+                a(context, alarmC, alarmC.f);
+            } else {
+                e(context);
+            }
+        }
     }
 
-    private void a(Context context, Alarm alarm, int i) {
-        NotificationManager notificationManagerA = a(context);
-        if (alarm == null) {
-            i.d("Cannot update notification for killer callback");
-            return;
+    private static void a(Context context, Alarm alarm, long j) {
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService("alarm");
+        i.d("** setAlert id " + alarm.a + " atTime " + j);
+        Intent intent = new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT");
+        Parcel parcelObtain = Parcel.obtain();
+        alarm.writeToParcel(parcelObtain, 0);
+        parcelObtain.setDataPosition(0);
+        intent.putExtra("intent.extra.alarm_raw", parcelObtain.marshall());
+        alarmManager.set(0, j, PendingIntent.getBroadcast(context, 0, intent, 268435456));
+        a(context, true);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date(j));
+        a(context, b(context, calendar));
+    }
+
+    static void e(Context context) {
+        ((AlarmManager) context.getSystemService("alarm")).cancel(PendingIntent.getBroadcast(context, 0, new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT"), 268435456));
+        a(context, false);
+        a(context, "");
+    }
+
+    static void a(Context context, int i, long j) {
+        SharedPreferences.Editor editorEdit = context.getSharedPreferences("AlarmClock", 0).edit();
+        if (i == -1) {
+            a(editorEdit);
+        } else {
+            editorEdit.putInt("snooze_id", i);
+            editorEdit.putLong("snooze_time", j);
+            editorEdit.commit();
         }
-        PendingIntent.getActivity(context, alarm.a, new Intent(), 0);
-        String strA = alarm.a(context);
-        Notification.Builder builder = new Notification.Builder(context);
-        builder.setSmallIcon(m.b.stat_notify_alarm);
-        builder.setContentTitle(strA);
-        builder.setContentInfo(context.getString(m.f.alarm_alert_alert_silenced, Integer.valueOf(i)));
-        if (Build.VERSION.SDK_INT >= 26) {
-            NotificationChannel notificationChannel = new NotificationChannel("1", "notification", 2);
-            if (builder != null) {
-                builder.setChannelId("1");
-            }
-            if (notificationManagerA != null) {
-                notificationManagerA.createNotificationChannel(notificationChannel);
-            }
+        d(context);
+    }
+
+    static void b(Context context, int i) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("AlarmClock", 0);
+        int i2 = sharedPreferences.getInt("snooze_id", -1);
+        if (i2 != -1 && i2 == i) {
+            a(sharedPreferences.edit());
         }
-        builder.build();
-        notificationManagerA.notify(alarm.a, builder.getNotification());
+    }
+
+    private static void a(SharedPreferences.Editor editor) {
+        editor.remove("snooze_id");
+        editor.remove("snooze_time");
+        editor.commit();
+    }
+
+    private static boolean h(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("AlarmClock", 0);
+        int i = sharedPreferences.getInt("snooze_id", -1);
+        if (i == -1) {
+            return false;
+        }
+        long j = sharedPreferences.getLong("snooze_time", -1L);
+        Alarm alarmA = a(context, i);
+        alarmA.f = j;
+        a(context, alarmA, j);
+        return true;
+    }
+
+    private static void a(Context context, boolean z) {
+        Intent intent = new Intent("android.intent.action.ALARM_CHANGED");
+        intent.putExtra("alarmSet", z);
+        context.sendBroadcast(intent);
+    }
+
+    static Calendar a(int i, int i2, Alarm.b bVar) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        int i3 = calendar.get(11);
+        int i4 = calendar.get(12);
+        if (i < i3 || (i == i3 && i2 <= i4)) {
+            calendar.add(6, 1);
+        }
+        calendar.set(11, i);
+        calendar.set(12, i2);
+        calendar.set(13, 0);
+        calendar.set(14, 0);
+        int iA = bVar.a(calendar);
+        if (iA > 0) {
+            calendar.add(7, iA);
+        }
+        return calendar;
+    }
+
+    static String a(Context context, Calendar calendar) {
+        return calendar == null ? "" : (String) DateFormat.format(f(context) ? "kk:mm" : "h:mm aa", calendar);
+    }
+
+    private static String b(Context context, Calendar calendar) {
+        return calendar == null ? "" : (String) DateFormat.format(f(context) ? "E k:mm" : "E h:mm aa", calendar);
+    }
+
+    static void a(Context context, String str) {
+        Settings.System.putString(context.getContentResolver(), "next_alarm_formatted", str);
+    }
+
+    static boolean f(Context context) {
+        return DateFormat.is24HourFormat(context);
     }
 }

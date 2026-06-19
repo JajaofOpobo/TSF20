@@ -17,28 +17,28 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.tsf.shell.a.a.d;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
-import com.tsf.shell.widget.alarm.service.c;
+import com.tsf.shell.ShellCallbackInterface.a.d;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.AlarmResources;
+import com.tsf.shell.widget.alarm.service.AlarmServiceBinder;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SettingActivity extends Activity implements c.InterfaceC0180c {
+public class SettingActivity extends Activity implements AlarmSettingFragment.InterfaceC0180c {
     public static Context a;
     private static boolean b;
     private b c;
     private View d;
     private ListView e;
-    private com.tsf.shell.widget.alarm.setting.a f;
+    private com.tsf.shell.widget.alarm.setting.AlarmSettingAdapter f;
     private ListView g;
     private a h;
-    private com.tsf.shell.widget.alarm.setting.b i;
-    private com.tsf.shell.widget.alarm.service.c j;
+    private com.tsf.shell.widget.alarm.setting.AlarmSettingController i;
+    private com.tsf.shell.widget.alarm.service.AlarmServiceBinder j;
     private e k;
     private Handler l;
     private final int m = 0;
-    private com.tsf.shell.a.a.a n;
+    private com.tsf.shell.ShellCallbackInterface.a.a n;
 
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
@@ -50,18 +50,18 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
     private void b() {
         this.l = new Handler();
         a = getApplicationContext();
-        this.n = new com.tsf.shell.a.a.a(this);
-        this.k = new e(this);
-        this.j = new com.tsf.shell.widget.alarm.service.c(a);
+        this.n = new com.tsf.shell.ShellCallbackInterface.a.a(this);
+        this.k = new AlarmSettingTheme(this);
+        this.j = new com.tsf.shell.widget.alarm.service.AlarmServiceBinder(a);
         this.j.a(this);
-        this.c = new b();
-        this.i = new com.tsf.shell.widget.alarm.setting.b(this);
+        this.c = new AlarmSettingController();
+        this.i = new com.tsf.shell.widget.alarm.setting.AlarmSettingController(this);
         this.e = (ListView) findViewById(m.c.settinglist);
         this.e.setAdapter((ListAdapter) this.i);
         this.e.setOnItemClickListener(this.c);
         this.d = findViewById(m.c.search_city_layout);
-        this.h = new a();
-        this.f = new com.tsf.shell.widget.alarm.setting.a();
+        this.h = new AlarmSettingAdapter();
+        this.f = new com.tsf.shell.widget.alarm.setting.AlarmSettingAdapter();
         this.g = (ListView) findViewById(m.c.searchcity_list);
         this.g.setAdapter((ListAdapter) this.f);
         this.g.setOnItemClickListener(this.h);
@@ -113,7 +113,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
             new Thread() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.4
                 @Override // java.lang.Thread, java.lang.Runnable
                 public void run() {
-                    final ArrayList<com.tsf.shell.widget.alarm.d.A> arrayListA = com.tsf.shell.widget.alarm.d.a.a.a(str);
+                    final ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayListA = com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.a(str);
                     SettingActivity.this.l.post(new Runnable() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.4.1
                         @Override // java.lang.Runnable
                         public void run() {
@@ -138,11 +138,11 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        e.f = -1L;
+        AlarmSettingTheme.f = -1L;
         this.i.notifyDataSetChanged();
-        this.j.a(new c.a() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.5
-            @Override // com.tsf.shell.widget.alarm.service.c.a
-            public void a(com.tsf.shell.widget.alarm.service.b bVar) {
+        this.j.a(new AlarmSettingFragment.a() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.5
+            @Override // com.tsf.shell.widget.alarm.service.AlarmServiceBinder.a
+            public void a(com.tsf.shell.widget.alarm.service.IAlarmCallback bVar) {
                 bVar.a(true);
             }
         });
@@ -150,21 +150,21 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(View view) {
-        e.b = !e.b;
-        com.tsf.shell.widget.alarm.setting.b.a(e.b, view);
+        AlarmSettingTheme.b = !AlarmSettingTheme.b;
+        com.tsf.shell.widget.alarm.setting.AlarmSettingController.a(AlarmSettingTheme.b, view);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.shell.widget.alarm.d.A aVar) {
+    public void a(com.tsf.shell.widget.alarm.d.AlarmConfigEmpty aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
-            e.a = true;
+            AlarmSettingTheme.a = true;
         } else {
             i.c("PositionOnChange item " + aVar.a + " code:" + aVar.c);
-            e.a = false;
-            e.c = aVar.a;
-            e.d = aVar.c;
-            d.a(aVar);
+            AlarmSettingTheme.a = false;
+            AlarmSettingTheme.c = aVar.a;
+            AlarmSettingTheme.d = aVar.c;
+            AlarmSettingData.a(aVar);
         }
         this.k.c();
         c();
@@ -244,7 +244,7 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
         }
     }
 
-    public boolean a(d.b bVar, boolean z, int i, String... strArr) {
+    public boolean a(AlarmSettingData.b bVar, boolean z, int i, String... strArr) {
         if (this.n != null) {
             return this.n.a(bVar, z, i, strArr);
         }
@@ -258,23 +258,23 @@ public class SettingActivity extends Activity implements c.InterfaceC0180c {
         @Override // android.widget.AdapterView.OnItemClickListener
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             if (i == 0) {
-                if (SettingActivity.this.a(new d.b() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.a.1
-                    @Override // com.tsf.shell.a.a.d.b
-                    public void a(int i2, boolean z, d.a aVar) {
+                if (SettingActivity.this.a(new AlarmSettingData.b() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.a.1
+                    @Override // com.tsf.shell.ShellCallbackInterface.a.d.b
+                    public void a(int i2, boolean z, AlarmSettingData.a aVar) {
                     }
-                }, true, 2, com.tsf.shell.a.a.d.e)) {
-                    SettingActivity.this.a((com.tsf.shell.widget.alarm.d.A) null);
+                }, true, 2, com.tsf.shell.ShellCallbackInterface.a.d.e)) {
+                    SettingActivity.this.a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) null);
                     SettingActivity.this.a(false);
                     return;
                 }
                 return;
             }
-            SettingActivity.this.a((com.tsf.shell.widget.alarm.d.A) view.getTag());
+            SettingActivity.this.a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) view.getTag());
             SettingActivity.this.a(false);
         }
     }
 
-    @Override // com.tsf.shell.widget.alarm.service.c.InterfaceC0180c
+    @Override // com.tsf.shell.widget.alarm.service.AlarmServiceBinder.InterfaceC0180c
     public void a(int i, byte[] bArr) {
         i.c("Weather Setting Onload");
         this.l.post(new Runnable() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.6

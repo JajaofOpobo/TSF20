@@ -18,31 +18,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.indicator.LinePageIndicator;
-import com.tsf.shell.plugin.themepicker.k;
-import com.tsf.shell.plugin.themepicker.themepreview.b;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
+import com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.LinePageIndicator;
+import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
+import com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemePreviewDetilActivity extends FragmentActivity implements View.OnClickListener {
-    private static com.tsf.shell.plugin.themepicker.themepreview.b m;
+    private static com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewManager m;
     private LinePageIndicator n;
     private String o;
 
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
-        com.tsf.shell.plugin.themepicker.e.b("ThemePreviewDetilActivity onCreate");
+        com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("ThemePreviewDetilActivity onCreate");
         h();
         super.onCreate(bundle);
     }
 
     private void h() {
         setContentView(f.h.theme_preview_detil_activity);
-        m = new com.tsf.shell.plugin.themepicker.themepreview.b(this, (int) TypedValue.applyDimension(1, 160.0f, getResources().getDisplayMetrics()), (int) TypedValue.applyDimension(1, 284.0f, getResources().getDisplayMetrics()));
+        m = new com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewManager(this, (int) TypedValue.applyDimension(1, 160.0f, getResources().getDisplayMetrics()), (int) TypedValue.applyDimension(1, 284.0f, getResources().getDisplayMetrics()));
         this.o = getIntent().getStringExtra("packagename");
-        com.tsf.shell.plugin.themepicker.e.b("Start Activity get Para:" + this.o);
-        a aVar = new a(f(), k.a(k.a(this, this.o)), this.o);
+        com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("Start Activity get Para:" + this.o);
+        a aVar = new ThemePreviewData(f(), ThemePreviewConfig.a(ThemePreviewConfig.a(this, this.o)), this.o);
         ViewPager viewPager = (ViewPager) findViewById(f.C0155f.pager);
         viewPager.setAdapter(aVar);
         this.n = (LinePageIndicator) findViewById(f.C0155f.indicator);
@@ -56,12 +56,12 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         try {
             return getPackageManager().getPackageInfo(str, 0).applicationInfo.loadLabel(getPackageManager());
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+            ThemePreviewEvent.printStackTrace();
             return null;
         }
     }
 
-    class a extends r {
+    class a extends ThemePreviewResult {
         private ArrayList<Integer> b;
         private String c;
 
@@ -72,8 +72,8 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         }
 
         @Override // android.support.v4.app.r
-        public Fragment a(int i) {
-            return b.a(this.c, this.b.get(i));
+        public class Fragment 
+            return ThemePreviewManager.a(this.c, this.b.get(i));
         }
 
         @Override // android.support.v4.view.ac
@@ -87,7 +87,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
 
     public static class b extends Fragment {
         public static b a(String str, Integer num) {
-            b bVar = new b();
+            b bVar = new ThemePreviewManager();
             Bundle bundle = new Bundle();
             bundle.putString("packagename", str);
             bundle.putInt("resource", num.intValue());
@@ -101,9 +101,9 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         }
 
         @Override // android.support.v4.app.Fragment
-        public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
+        public class View 
             ViewGroup viewGroup2 = (ViewGroup) layoutInflater.inflate(f.h.theme_preview_detil_fragment_image, viewGroup, false);
-            ThemePreviewDetilActivity.m.a(new b.a((String) h().get("packagename"), ((Integer) h().get("resource")).intValue()), (ImageView) viewGroup2.findViewById(f.C0155f.imageView1));
+            ThemePreviewDetilActivity.m.a(new ThemePreviewManager.a((String) h().get("packagename"), ((Integer) h().get("resource")).intValue()), (ImageView) viewGroup2.findViewById(f.C0155f.imageView1));
             return viewGroup2;
         }
     }
@@ -153,7 +153,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
 
     /* JADX INFO: Access modifiers changed from: private */
     public void k() {
-        com.tsf.shell.plugin.themepicker.themepreview.a aVar = new com.tsf.shell.plugin.themepicker.themepreview.a();
+        com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewData aVar = new com.tsf.shell.plugin.themepicker.themepreview.ThemePreviewData();
         Bundle bundle = new Bundle();
         bundle.putString("packagename", this.o);
         aVar.g(bundle);

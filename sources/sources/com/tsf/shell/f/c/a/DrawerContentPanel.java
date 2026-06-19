@@ -14,8 +14,8 @@ import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.f.c.a.a.DrawerAnimConfig;
-import com.tsf.shell.f.f.o;
-import com.tsf.shell.g;
+import com.tsf.shell.f.f.PageEventDispatcher;
+import com.tsf.shell.ShellGraphicsContext;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
@@ -527,7 +527,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         }
         a(com.tsf.shell.manager.b.ConfigManager.b(), false);
         com.tsf.shell.manager.app.StateHub.c().a(new o.a() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.14
-            @Override // com.tsf.shell.f.f.o.a
+            @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a(com.tsf.shell.f.f.WorkspacePage gVar) {
                 if (gVar.t() == -1) {
                     if (f.this.ad) {
@@ -538,14 +538,14 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 }
             }
 
-            @Override // com.tsf.shell.f.f.o.a
+            @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a() {
                 if (f.this.ad) {
                     f.this.v();
                 }
             }
 
-            @Override // com.tsf.shell.f.f.o.a
+            @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void b() {
                 if (!f.this.af && !f.this.ad && com.tsf.shell.manager.app.StateHub.n().t() != -1) {
                     f.this.x();

@@ -22,7 +22,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private h mGridView;
     private e.a mNotifItem;
     private ArrayList<ThemeOnlineItems> mThemes;
-    public ThemeSettingMenu manager;
+    public class ThemeSettingMenu 
 
     public ThemeFeaturedMenu(ThemeSettingMenu themeSettingMenu) {
         super(b.i.text_featured);
@@ -133,12 +133,12 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
     public static class ThemeOnlineItems {
         public int icon;
-        public TextureElement iconTexture;
+        public class TextureElement 
         public boolean installed;
         private boolean mNotifPointState;
-        public String packageName;
+        public class String 
         public boolean supportHD;
-        public String title;
+        public class String 
         public int versionCode;
 
         public ThemeOnlineItems(String str, String str2, int i, boolean z, int i2) {
@@ -161,7 +161,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
             return this.mNotifPointState;
         }
 
-        public TextureElement getTexture() {
+        public class TextureElement 
             if (this.iconTexture == null) {
                 this.iconTexture = ThemeMixerUtils.createIconTexture(com.tsf.shell.manager.o.ButtonPresetManager.c, this.title, this.icon);
             }

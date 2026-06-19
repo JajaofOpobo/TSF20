@@ -10,12 +10,12 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.tsf.b;
 import com.tsf.extend.base.j.q;
 import com.tsf.extend.base.j.z;
-import com.tsf.shell.C;
+import com.tsf.shell.ShellBackgroundRenderer;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.manager.r.c.a.WidgetInstantiator;
-import com.tsf.shell.widget.a.k;
-import com.tsf.shell.widget.alarm.r;
-import com.tsf.shell.widget.cubeclock.t;
+import com.tsf.shell.widget.a.WidgetConstants;
+import com.tsf.shell.widget.alarm.AlarmClickEvent;
+import com.tsf.shell.widget.cubeclock.CubeClockData;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -351,7 +351,7 @@ public class WidgetRegistryManager {
     }
 
     public void c(final ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        com.tsf.shell.b.a.a("WidgetManager", "bind3dWidgetUpdate size:" + arrayList.size());
+        com.tsf.shell.b.ShellBridge.a("WidgetManager", "bind3dWidgetUpdate size:" + arrayList.size());
         com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.8
             @Override // java.lang.Runnable
             public void run() {
@@ -363,9 +363,9 @@ public class WidgetRegistryManager {
                             f.a(gVarA, com.censivn.C3DEngine.A.d().createPackageContext(packageName, 3), fVar.e, packageName, fVar.b.getClassName(), fVar);
                             ArrayList<com.tsf.shell.f.i.PageItem> arrayList2 = (ArrayList) gVarA.o().clone();
                             gVarA.m();
-                            com.tsf.shell.b.a.a("WidgetManager", "onWidgetUpdate delete old item size:" + arrayList2.size());
+                            com.tsf.shell.b.ShellBridge.a("WidgetManager", "onWidgetUpdate delete old item size:" + arrayList2.size());
                             for (com.tsf.shell.f.i.PageItem bVar : arrayList2) {
-                                com.tsf.shell.b.a.a("WidgetManager", "onWidgetUpdate delete old item:" + arrayList2);
+                                com.tsf.shell.b.ShellBridge.a("WidgetManager", "onWidgetUpdate delete old item:" + arrayList2);
                                 ItemInfo itemInfoK = bVar.K();
                                 WidgetRegistryManager.this.c(bVar);
                                 com.tsf.shell.manager.r.c.a.WidgetInstantiator.a(gVarA, itemInfoK, true, null);

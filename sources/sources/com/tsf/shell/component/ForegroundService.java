@@ -22,7 +22,7 @@ public class ForegroundService extends Service {
     }
 
     @Override // android.app.Service
-    public IBinder onBind(Intent intent) {
+    public class IBinder 
         return null;
     }
 

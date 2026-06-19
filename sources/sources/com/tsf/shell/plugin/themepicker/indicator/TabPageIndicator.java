@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.indicator;
+package com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class TabPageIndicator extends HorizontalScrollView implements c {
+public class TabPageIndicator extends HorizontalScrollView implements ThemeIndicatorPageChange {
     private static final CharSequence a = "";
     private Runnable b;
     private final View.OnClickListener c;
-    private final com.tsf.shell.plugin.themepicker.indicator.b d;
+    private final com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.b d;
     private ViewPager e;
     private ViewPager.e f;
     private int g;
@@ -33,7 +33,7 @@ public class TabPageIndicator extends HorizontalScrollView implements c {
 
     public TabPageIndicator(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.c = new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.indicator.TabPageIndicator.1
+        this.c = new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.TabPageIndicator.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 int currentItem = TabPageIndicator.this.e.getCurrentItem();
@@ -45,7 +45,7 @@ public class TabPageIndicator extends HorizontalScrollView implements c {
             }
         };
         setHorizontalScrollBarEnabled(false);
-        this.d = new com.tsf.shell.plugin.themepicker.indicator.b(context, f.a.vpiTabPageIndicatorStyle);
+        this.d = new com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.b(context, f.a.vpiTabPageIndicatorStyle);
         addView(this.d, new ViewGroup.LayoutParams(-2, -1));
     }
 
@@ -81,7 +81,7 @@ public class TabPageIndicator extends HorizontalScrollView implements c {
         if (this.b != null) {
             removeCallbacks(this.b);
         }
-        this.b = new Runnable() { // from class: com.tsf.shell.plugin.themepicker.indicator.TabPageIndicator.2
+        this.b = new Runnable() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.TabPageIndicator.2
             @Override // java.lang.Runnable
             public void run() {
                 TabPageIndicator.this.smoothScrollTo(childAt.getLeft() - ((TabPageIndicator.this.getWidth() - childAt.getWidth()) / 2), 0);
@@ -108,7 +108,7 @@ public class TabPageIndicator extends HorizontalScrollView implements c {
     }
 
     private void a(int i, CharSequence charSequence, int i2) {
-        b bVar = new b(getContext());
+        b bVar = new ThemeIndicatorRenderer(getContext());
         bVar.b = i;
         bVar.setFocusable(true);
         bVar.setOnClickListener(this.c);
@@ -159,9 +159,9 @@ public class TabPageIndicator extends HorizontalScrollView implements c {
     public void a() {
         this.d.removeAllViews();
         ac adapter = this.e.getAdapter();
-        com.tsf.shell.plugin.themepicker.indicator.a aVar = null;
-        if (adapter instanceof com.tsf.shell.plugin.themepicker.indicator.a) {
-            aVar = (com.tsf.shell.plugin.themepicker.indicator.a) adapter;
+        com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.a aVar = null;
+        if (adapter instanceof com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.a) {
+            aVar = (com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.a) adapter;
         }
         int iB = adapter.b();
         for (int i = 0; i < iB; i++) {

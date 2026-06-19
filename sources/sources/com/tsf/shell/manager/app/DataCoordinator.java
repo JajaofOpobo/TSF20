@@ -13,15 +13,15 @@ public class DataCoordinator {
     public static String d = "3";
     private StateHub g;
     private AppListModel e = new AppListModel(this);
-    private com.tsf.shell.f.f.a.d.A f = new com.tsf.shell.f.f.a.d.A(this);
+    private com.tsf.shell.f.f.a.d.DrawerSortManager f = new com.tsf.shell.f.f.a.d.DrawerSortManager(this);
     private FolderManager h = new FolderManager(this);
-    private com.tsf.shell.f.f.a.B i = new com.tsf.shell.f.f.a.B(this);
+    private com.tsf.shell.f.f.a.PageItemList i = new com.tsf.shell.f.f.a.PageItemList(this);
 
     public AppListModel a() {
         return this.e;
     }
 
-    public com.tsf.shell.f.f.a.d.A b() {
+    public com.tsf.shell.f.f.a.d.DrawerSortManager b() {
         return this.f;
     }
 
@@ -29,7 +29,7 @@ public class DataCoordinator {
         return this.h;
     }
 
-    public com.tsf.shell.f.f.a.B d() {
+    public com.tsf.shell.f.f.a.PageItemList d() {
         return this.i;
     }
 

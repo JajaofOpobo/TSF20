@@ -10,11 +10,11 @@ import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.shell.plugin.themepicker.SildingMenuLayout;
-import com.tsf.shell.plugin.themepicker.e;
-import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.g;
-import com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator;
-import com.tsf.shell.plugin.themepicker.k;
+import com.tsf.shell.plugin.themepicker.ThemePickerEvent;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
+import com.tsf.shell.plugin.themepicker.ThemePickerState;
+import com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.TitlePageIndicator;
+import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -38,9 +38,9 @@ public class WallpaperPickerActivity extends FragmentActivity implements View.On
         k.b(this, this);
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.k.f
+    @Override // com.tsf.shell.plugin.themepicker.ThemePickerRenderer.f
     public void a(List<ResolveInfo> list) {
-        c cVar = new c(f(), list, this);
+        c cVar = new WallpaperConfig(f(), list, this);
         this.m = (ViewPager) findViewById(f.C0155f.pager);
         this.m.setAdapter(cVar);
         this.o = (ListView) findViewById(f.C0155f.menu_listview);

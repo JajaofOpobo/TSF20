@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.A;
+import com.tsf.shell.ShellCoreInterface;
 import com.tsf.shell.manager.action.ShortcutCreator;
 import com.tsf.shell.manager.action.GestureHandler;
 import java.util.HashMap;
@@ -226,7 +226,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         sendBroadcast(intent);
     }
 
-    @Override // com.tsf.shell.A
+    @Override // com.tsf.shell.ShellCoreInterface
     public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
         int i = this.c;
         this.a.put(Integer.valueOf(this.c), interfaceC0025a);

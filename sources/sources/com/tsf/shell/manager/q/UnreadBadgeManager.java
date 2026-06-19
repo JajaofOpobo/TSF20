@@ -6,7 +6,7 @@ import android.content.Intent;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.E;
+import com.tsf.shell.ShellThemeProvider;
 import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.services.NotifierConnector;
 import com.tsf.shell.utils.MarketLinkHandler;

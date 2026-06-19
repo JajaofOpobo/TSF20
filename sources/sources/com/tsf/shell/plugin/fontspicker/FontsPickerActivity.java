@@ -22,9 +22,9 @@ import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.tsf.shell.plugin.fontspicker.a;
-import com.tsf.shell.plugin.themepicker.e;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.fontspicker.FontPickerManager;
+import com.tsf.shell.plugin.themepicker.ThemePickerEvent;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
         super.onCreate(bundle);
         setContentView(f.h.fonts_picker_activity);
         ListView listView = (ListView) findViewById(f.C0155f.listView1);
-        this.d = new a(this);
+        this.d = new FontPickerManager(this);
         listView.setAdapter((ListAdapter) this.d);
         listView.setOnItemClickListener(this);
         findViewById(f.C0155f.imageView1).setOnClickListener(this);
@@ -123,14 +123,14 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
 
     private void a(String str, String str2, String str3) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(b.c, str);
-        contentValues.put(b.a, str2);
-        contentValues.put(b.b, str3);
-        c.a(this).a(b.d, contentValues);
+        contentValues.put(FontPickerContract.c, str);
+        contentValues.put(FontPickerContract.a, str2);
+        contentValues.put(FontPickerContract.b, str3);
+        FontPickerRenderer.a(this).a(FontPickerContract.d, contentValues);
     }
 
     private void b() {
-        e.c("", " clean data count:" + c.a(this).a(b.d, null, null));
+        e.c("", " clean data count:" + FontPickerRenderer.a(this).a(FontPickerContract.d, null, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -264,7 +264,7 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
         }
     }
 
-    public String a(String str) {
+    public class String 
         int iLastIndexOf;
         if (!TextUtils.isEmpty(str)) {
             int iLastIndexOf2 = str.lastIndexOf(35);
@@ -292,13 +292,13 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
         a aVar = (a) adapterView.getAdapter();
         aVar.a((ListView) adapterView, view, i);
         if (i == 0) {
-            a(new a.C0152a("", "default", ""));
+            a(new FontPickerManager.C0152a("", "default", ""));
         } else {
             a(aVar.a(i));
         }
     }
 
-    private void a(a.C0152a c0152a) throws Throwable {
+    private void a(FontPickerManager.C0152a c0152a) throws Throwable {
         c0152a.c(this);
         Intent intent = new Intent();
         intent.putExtra("package", c0152a.a);

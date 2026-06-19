@@ -1,11 +1,11 @@
 package com.tsf.shell.manager;
 
 import com.tsf.shell.f.e.StubPlaceholder;
-import com.tsf.shell.f.f.n;
+import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.manager.action.ActionManager;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
-import com.tsf.shell.preference.a.d;
+import com.tsf.shell.preference.a.PreferenceDataModel;
 import com.tsf.shell.services.ServiceLifecycleManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -33,9 +33,9 @@ public class GlobalServiceLocator {
     public static com.tsf.shell.manager.n.ToastOverlayController q;
     public static com.tsf.shell.manager.q.UnreadBadgeManager r;
     public static com.censivn.C3DEngine.b.c.d s;
-    public static com.tsf.shell.f.a.a.b t;
-    public static com.tsf.shell.f.a.b.a u;
-    public static com.tsf.shell.f._d.A v;
+    public static com.tsf.shell.f.a.a.GlTexturePool t;
+    public static com.tsf.shell.f.a.b.ShaderSlotManager u;
+    public static com.tsf.shell.f._d.DashPanelController v;
     public static com.tsf.shell.manager.app.DataCoordinator w;
     public static com.tsf.shell.manager.l.ShortcutManagerHolder x;
     public static com.tsf.shell.manager.e.ScreenSaverDelayConfig y;

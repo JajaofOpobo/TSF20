@@ -13,7 +13,7 @@ import com.tsf.shell.utils.BitmapTransformationHelper;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeClockManager extends ThemeMixElementManager {
     public static String ALARM_THEME_ON_CHANGE_ACTION = "com.tsf.shell.widget.alarm.OnThemeChange";
-    public static String ALARM_ON_CLICK = "com.tsf.shell.widget.alarm.onClick";
+    public static String ALARM_ON_CLICK = "com.tsf.shell.widget.alarm.AlarmThemeProvidernClick";
 
     public ThemeClockManager(ThemeManager themeManager, int i, String str) {
         super(themeManager, i, str);

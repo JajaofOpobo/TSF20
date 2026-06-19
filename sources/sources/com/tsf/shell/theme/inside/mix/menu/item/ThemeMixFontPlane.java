@@ -11,17 +11,17 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMixFontPlane extends ThemeMenuMixElementPlane implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-    public Bitmap getPreviewBitmap() {
+    public class Bitmap 
         return x.a(b.d.theme_font);
     }
 
     @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-    public String getTitle() {
+    public class String 
         return x.c(b.i.text_font);
     }
 
     @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-    public String getSummary() {
+    public class String 
         return "";
     }
 

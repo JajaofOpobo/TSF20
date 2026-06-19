@@ -7,18 +7,18 @@ import android.graphics.Bitmap;
 import android.os.Parcelable;
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.b;
-import com.tsf.shell.activity.actionselector.ActionSelector;
+import com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelector;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShortcutCreator implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
     private int a;
     private int b_;
-    private com.tsf.shell.A c;
+    private com.tsf.shell.ShellCoreInterface c;
     private boolean d;
     private Context e;
 
-    public c(Context context, com.tsf.shell.A aVar, boolean z) {
+    public c(Context context, com.tsf.shell.ShellCoreInterface aVar, boolean z) {
         this.c = aVar;
         this.d = z;
         this.e = context;

@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.app;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.f.a.a.a;
+import com.tsf.shell.f.a.a.GlTextureBinding;
 
 public class TextureCache {
     public static a a(int cacheWidth, int cacheHeight) {

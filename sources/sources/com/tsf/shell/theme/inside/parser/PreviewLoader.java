@@ -7,8 +7,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
-import com.tsf.shell.plugin.themepicker.e;
-import com.tsf.shell.plugin.themepicker.k;
+import com.tsf.shell.plugin.themepicker.ThemePickerEvent;
+import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

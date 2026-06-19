@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import com.tsf.shell.plugin.crop.e;
+import com.tsf.shell.plugin.crop.CropImageResources;
 import java.io.File;
 import java.io.InputStream;
 
@@ -43,27 +43,27 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(e.b.cutting_activity_layout);
-        this.s = (CropImageView) findViewById(e.a.cropimageview);
+        setContentView(CropImageResources.b.cutting_activity_layout);
+        this.s = (CropImageView) findViewById(CropImageResources.a.cropimageview);
         Intent intent = getIntent();
         Uri data = intent.getData();
         try {
             this.s.setStroke(intent.getExtras().getBoolean("stroke"));
         } catch (Exception e) {
-            e.printStackTrace();
+            CropImageResources.printStackTrace();
         }
         try {
             this.w = intent.getExtras().getInt(m);
             if (this.w != n) {
                 if (this.w == o) {
                     this.s.setCropMode(3);
-                    findViewById(e.a.ic_menu_crop).setVisibility(8);
+                    findViewById(CropImageResources.a.ic_menu_crop).setVisibility(8);
                 } else if (this.w == p) {
                     this.s.setCropMode(0);
-                    findViewById(e.a.ic_menu_crop).setVisibility(8);
+                    findViewById(CropImageResources.a.ic_menu_crop).setVisibility(8);
                 } else if (this.w == q) {
                     this.s.setCropMode(1);
-                    findViewById(e.a.ic_menu_crop).setVisibility(8);
+                    findViewById(CropImageResources.a.ic_menu_crop).setVisibility(8);
                 }
             }
         } catch (Exception e2) {
@@ -78,23 +78,23 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
         } catch (Exception e4) {
             e4.printStackTrace();
         }
-        c.a("GET DATE:" + data);
-        findViewById(e.a.ic_menu_metrics).setOnClickListener(this);
-        findViewById(e.a.ic_menu_crop).setOnClickListener(this);
-        findViewById(e.a.crop_image_cancel).setOnClickListener(this);
-        findViewById(e.a.crop_image_done).setOnClickListener(this);
+        CropImageConfig.a("GET DATE:" + data);
+        findViewById(CropImageResources.a.ic_menu_metrics).setOnClickListener(this);
+        findViewById(CropImageResources.a.ic_menu_crop).setOnClickListener(this);
+        findViewById(CropImageResources.a.crop_image_cancel).setOnClickListener(this);
+        findViewById(CropImageResources.a.crop_image_done).setOnClickListener(this);
         a(data);
     }
 
     @Override // android.support.v4.app.FragmentActivity, android.app.Activity
     protected void onActivityResult(int i, int i2, Intent intent) {
-        c.a("resultCode:" + i2);
+        CropImageConfig.a("resultCode:" + i2);
         if (intent == null || i2 == 0) {
             i();
             return;
         }
         if (i == 100) {
-            c.a("URI:" + intent.getData().toString());
+            CropImageConfig.a("URI:" + intent.getData().toString());
             a(intent.getData());
         }
         super.onActivityResult(i, i2, intent);
@@ -140,7 +140,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
                             inputStreamOpenInputStream2.close();
                         } catch (Exception e) {
                             e = e;
-                            e.printStackTrace();
+                            CropImageResources.printStackTrace();
                         }
                     } catch (Exception e2) {
                         e = e2;
@@ -152,11 +152,11 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
                         public void run() {
                             if (bitmapA != null) {
                                 CropImageActivity.this.s.setImageBitmap(bitmapA);
-                                c.a("setImageBitmap :" + bitmapA);
+                                CropImageConfig.a("setImageBitmap :" + bitmapA);
                                 CropImageActivity.this.s.invalidate();
                             }
                             if (progressDialog != null && progressDialog.isShowing()) {
-                                c.a("dismiss dialog");
+                                CropImageConfig.a("dismiss dialog");
                                 progressDialog.dismiss();
                             }
                         }
@@ -167,7 +167,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public Bitmap a(Bitmap bitmap, Uri uri) {
+    public class Bitmap 
         int iB = b(uri);
         return iB == 0 ? bitmap : a(bitmap, iB);
     }
@@ -184,7 +184,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
                 }
                 return bitmap;
             } catch (OutOfMemoryError e) {
-                e.printStackTrace();
+                CropImageResources.printStackTrace();
                 return bitmap;
             }
         }
@@ -212,15 +212,15 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
             e = e3;
             i = 0;
         }
-        e.printStackTrace();
+        CropImageResources.printStackTrace();
         return i;
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        c.a("click");
-        if (id == e.a.ic_menu_crop) {
+        CropImageConfig.a("click");
+        if (id == CropImageResources.a.ic_menu_crop) {
             int[] iArr = new int[2];
             view.getLocationOnScreen(iArr);
             Point point = new Point();
@@ -229,37 +229,37 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
             a(view, point);
             return;
         }
-        if (id == e.a.menu1) {
+        if (id == CropImageResources.a.menu1) {
             this.s.setCropMode(0);
             this.t.dismiss();
             return;
         }
-        if (id == e.a.menu2) {
+        if (id == CropImageResources.a.menu2) {
             this.s.setCropMode(1);
             this.t.dismiss();
             return;
         }
-        if (id == e.a.menu3) {
+        if (id == CropImageResources.a.menu3) {
             this.s.setCropMode(2);
             this.t.dismiss();
             return;
         }
-        if (id == e.a.menu4) {
+        if (id == CropImageResources.a.menu4) {
             this.s.setCropMode(3);
             this.t.dismiss();
-        } else if (id == e.a.crop_image_done) {
-            c.a("hello");
+        } else if (id == CropImageResources.a.crop_image_done) {
+            CropImageConfig.a("hello");
             j();
-        } else if (id == e.a.crop_image_cancel) {
+        } else if (id == CropImageResources.a.crop_image_cancel) {
             i();
-        } else if (id == e.a.ic_menu_metrics) {
+        } else if (id == CropImageResources.a.ic_menu_metrics) {
             k();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
-        c.a("Cancel and Finish");
+        CropImageConfig.a("Cancel and Finish");
         setResult(0);
         finish();
     }
@@ -300,29 +300,29 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
             File file2 = new File(file.getPath() + "/" + str);
             if (file2.exists()) {
                 file2.delete();
-                c.a("Clean Cache:" + file2.getPath());
+                CropImageConfig.a("Clean Cache:" + file2.getPath());
             }
         }
     }
 
     private void a(View view, Point point) {
-        View viewInflate = ((LayoutInflater) getSystemService("layout_inflater")).inflate(e.b.popup_menu_layout, (ViewGroup) null);
-        viewInflate.findViewById(e.a.menu1).setOnClickListener(this);
-        viewInflate.findViewById(e.a.menu2).setOnClickListener(this);
-        viewInflate.findViewById(e.a.menu3).setOnClickListener(this);
-        viewInflate.findViewById(e.a.menu4).setOnClickListener(this);
+        View viewInflate = ((LayoutInflater) getSystemService("layout_inflater")).inflate(CropImageResources.b.popup_menu_layout, (ViewGroup) null);
+        viewInflate.findViewById(CropImageResources.a.menu1).setOnClickListener(this);
+        viewInflate.findViewById(CropImageResources.a.menu2).setOnClickListener(this);
+        viewInflate.findViewById(CropImageResources.a.menu3).setOnClickListener(this);
+        viewInflate.findViewById(CropImageResources.a.menu4).setOnClickListener(this);
         switch (this.s.getCropMode()) {
             case 0:
-                ((RadioButton) viewInflate.findViewById(e.a.radioButton1)).setChecked(true);
+                ((RadioButton) viewInflate.findViewById(CropImageResources.a.radioButton1)).setChecked(true);
                 break;
             case 1:
-                ((RadioButton) viewInflate.findViewById(e.a.radioButton2)).setChecked(true);
+                ((RadioButton) viewInflate.findViewById(CropImageResources.a.radioButton2)).setChecked(true);
                 break;
             case 2:
-                ((RadioButton) viewInflate.findViewById(e.a.radioButton3)).setChecked(true);
+                ((RadioButton) viewInflate.findViewById(CropImageResources.a.radioButton3)).setChecked(true);
                 break;
             case 3:
-                ((RadioButton) viewInflate.findViewById(e.a.radioButton4)).setChecked(true);
+                ((RadioButton) viewInflate.findViewById(CropImageResources.a.radioButton4)).setChecked(true);
                 break;
         }
         this.t = new PopupWindow(viewInflate, -2, -2, true);
@@ -336,10 +336,10 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
     }
 
     private void k() {
-        new a().a(f().a(), "dialog");
+        new CropImageParser().a(f().a(), "dialog");
     }
 
-    public static class a extends k {
+    public static class a extends CropImageContract {
         private View ai;
 
         public a() {
@@ -352,9 +352,9 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
         }
 
         @Override // android.support.v4.app.Fragment
-        public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-            this.ai = layoutInflater.inflate(e.b.crop_size_dialog_layout, viewGroup);
-            ((TextView) this.ai.findViewById(e.a.textView1)).setText("ImageSize: " + CropImageActivity.u + "x" + CropImageActivity.v);
+        public class View 
+            this.ai = layoutInflater.inflate(CropImageResources.b.crop_size_dialog_layout, viewGroup);
+            ((TextView) this.ai.findViewById(CropImageResources.a.textView1)).setText("ImageSize: " + CropImageActivity.u + "x" + CropImageActivity.v);
             return this.ai;
         }
     }

@@ -9,7 +9,7 @@ public class Animation implements Parcelable {
 
         @Override
 
-        public Animation createFromParcel(Parcel parcel) {
+        public class Animation 
             return new Animation(parcel);
         }
 
@@ -21,7 +21,7 @@ public class Animation implements Parcelable {
     }
     
     public static final Parcelable.Creator<Animation> CREATOR = new Creator();
-    public String a;
+    public class String 
     public float b;
     public float c;
     public boolean d;

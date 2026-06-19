@@ -38,7 +38,7 @@ public class AboutActivity extends FragmentActivity {
         this.m.setup();
         this.n = (ViewPager) findViewById(b.e.pager);
         this.o = new a(this, this.m, this.n);
-        this.o.a(this.m.newTabSpec("translations").setIndicator(x.c(b.i.text_translations)), com.tsf.shell.preference.widget.a.class, (Bundle) null);
+        this.o.a(this.m.newTabSpec("translations").setIndicator(x.c(b.i.text_translations)), com.tsf.shell.preference.widget.WidgetPreferenceHelper.class, (Bundle) null);
         if (bundle != null) {
             this.m.setCurrentTabByTag(bundle.getString("tab"));
         }

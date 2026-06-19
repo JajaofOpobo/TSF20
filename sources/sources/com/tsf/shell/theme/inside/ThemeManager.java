@@ -19,7 +19,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeManager {
-    public static final String ACTION_APPLY_THEME = "com.tsf.shell.APPLY_THEME";
+    public static final String ACTION_APPLY_THEME = "com.tsf.shell.ShellCoreInterfacePPLY_THEME";
     public static final String CACHE_FOLDER3 = "theme_cache/";
     private static ThemeManager mInstance;
     public static ThemesMixManager mix;

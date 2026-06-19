@@ -42,7 +42,7 @@ public class ThemeMenuMixElementPlane extends j {
         });
     }
 
-    public TextureElement getTexture() {
+    public class TextureElement 
         return this.previewTE;
     }
 
@@ -95,15 +95,15 @@ public class ThemeMenuMixElementPlane extends j {
     public void initTexture() {
     }
 
-    public Bitmap getPreviewBitmap() {
+    public class Bitmap 
         return null;
     }
 
-    public String getTitle() {
+    public class String 
         return null;
     }
 
-    public String getSummary() {
+    public class String 
         return null;
     }
 }

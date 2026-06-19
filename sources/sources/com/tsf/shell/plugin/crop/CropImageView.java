@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.plugin.crop.d;
+import com.tsf.shell.plugin.crop.CropImageRenderer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CropImageView extends View {
@@ -22,7 +22,7 @@ public class CropImageView extends View {
     float d;
     private d e;
     private g f;
-    private d.a g;
+    private CropImageRenderer.a g;
     private int h;
     private boolean i;
     private f j;
@@ -31,7 +31,7 @@ public class CropImageView extends View {
 
     public CropImageView(Context context) {
         super(context);
-        this.g = d.a.NULL;
+        this.g = CropImageRenderer.a.NULL;
         this.h = 0;
         this.i = false;
         this.a = false;
@@ -43,7 +43,7 @@ public class CropImageView extends View {
 
     public CropImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.g = d.a.NULL;
+        this.g = CropImageRenderer.a.NULL;
         this.h = 0;
         this.i = false;
         this.a = false;
@@ -55,7 +55,7 @@ public class CropImageView extends View {
 
     public CropImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.g = d.a.NULL;
+        this.g = CropImageRenderer.a.NULL;
         this.h = 0;
         this.i = false;
         this.a = false;
@@ -66,8 +66,8 @@ public class CropImageView extends View {
     }
 
     private void a() {
-        this.f = new g();
-        this.e = new d(getContext(), this.f);
+        this.f = new CropImageProvider();
+        this.e = new CropImageRenderer(getContext(), this.f);
     }
 
     public void a(int i, int i2) {
@@ -91,12 +91,12 @@ public class CropImageView extends View {
                 break;
             case 2:
                 this.i = true;
-                this.j = new a(getContext());
+                this.j = new CropImageParser(getContext());
                 break;
             case 3:
                 this.i = false;
                 this.e.a(true);
-                this.j = new h(getContext());
+                this.j = new CropImageHelper(getContext());
                 this.e.a(this.j.a());
                 this.f.c();
                 break;
@@ -131,7 +131,7 @@ public class CropImageView extends View {
         this.a = z;
     }
 
-    public Bitmap getCropBitmap() {
+    public class Bitmap 
         int i;
         int i2;
         int i3 = this.k;
@@ -150,7 +150,7 @@ public class CropImageView extends View {
             return null;
         }
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(i, i2, Bitmap.Config.ARGB_8888);
-        c.a("out bitmap : " + i + ":" + i2);
+        CropImageConfig.a("out bitmap : " + i + ":" + i2);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
         Paint paint = new Paint();
@@ -160,7 +160,7 @@ public class CropImageView extends View {
             float f3 = fE * f2;
             this.j.a(canvas, f3);
             paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-            c.a("maskShapeScale:" + f3 + "   sourceScale:" + f2 + "      maskScale:" + fE);
+            CropImageConfig.a("maskShapeScale:" + f3 + "   sourceScale:" + f2 + "      maskScale:" + fE);
         }
         canvas.save();
         canvas.scale(f2, f2);
@@ -209,8 +209,8 @@ public class CropImageView extends View {
             return true;
         }
         if (motionEvent.getPointerCount() > 1) {
-            this.g = d.a.NULL;
-            c.a("pointerNum:" + motionEvent.getAction());
+            this.g = CropImageRenderer.a.NULL;
+            CropImageConfig.a("pointerNum:" + motionEvent.getAction());
             switch (motionEvent.getAction()) {
                 case 2:
                     this.e.a(a(motionEvent) / this.b);
@@ -254,14 +254,14 @@ public class CropImageView extends View {
         this.f.a(true);
         this.g = this.e.b(f, f2);
         this.f.a(f, f2);
-        c.a("Aciton:" + this.g);
+        CropImageConfig.a("Aciton:" + this.g);
         invalidate();
     }
 
     private void b(float f, float f2) {
-        if (this.g == d.a.CENTER) {
+        if (this.g == CropImageRenderer.a.CENTER) {
             this.e.a(f, f2);
-        } else if (this.g != d.a.NULL) {
+        } else if (this.g != CropImageRenderer.a.NULL) {
             this.e.a(this.g, f, f2);
         }
         invalidate();

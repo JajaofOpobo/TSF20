@@ -1,191 +1,139 @@
-package com.tsf.shell.widget.alarm.AlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
 
-import android.app.Service;
-import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
-import android.content.res.Resources;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.RingtoneManager;
+import android.content.ContentUris;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Message;
-import android.os.Vibrator;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
-import java.io.IOException;
+import com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.Alarm;
+import com.tsf.shell.widget.alarm.AlarmState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AlarmKlaxon extends Service {
-    private static final long[] a = {500, 500};
-    private Vibrator c;
-    private MediaPlayer d;
-    private Alarm e;
-    private long f;
-    private TelephonyManager g;
-    private int h;
-    private boolean b = false;
-    private Handler i = new Handler() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmKlaxon.1
-        @Override // android.os.Handler
-        public void handleMessage(Message message) {
-            switch (message.what) {
-                case 1000:
-                    i.d("*********** Alarm killer triggered ***********");
-                    AlarmKlaxon.this.a((Alarm) message.obj);
-                    AlarmKlaxon.this.stopSelf();
-                    break;
-            }
-        }
-    };
-    private PhoneStateListener j = new PhoneStateListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmKlaxon.2
-        @Override // android.telephony.PhoneStateListener
-        public void onCallStateChanged(int i, String str) {
-            if (i != 0 && i != AlarmKlaxon.this.h) {
-                AlarmKlaxon.this.a(AlarmKlaxon.this.e);
-                AlarmKlaxon.this.stopSelf();
-            }
-        }
-    };
+public class AlarmKlaxon {
+    private static b a;
+    private static final UriMatcher d = new UriMatcher(-1);
+    private SQLiteOpenHelper b;
+    private Context c;
 
-    @Override // android.app.Service
-    public void onCreate() {
-        this.c = (Vibrator) getSystemService("vibrator");
-        this.g = (TelephonyManager) getSystemService("phone");
-        this.g.listen(this.j, 32);
-        a.a(this);
+    static {
+        d.addURI("com.tsf.shell.widget.alarm.AlarmStatenshell.alarmclock", "alarm", 1);
+        d.addURI("com.tsf.shell.widget.alarm.AlarmStatenshell.alarmclock", "alarm/#", 2);
     }
 
-    @Override // android.app.Service
-    public void onDestroy() {
-        a();
-        this.g.listen(this.j, 0);
-        a.a();
+    private static class a extends SQLiteOpenHelper {
+        public a(Context context) {
+            super(context, "alarms.db", (SQLiteDatabase.CursorFactory) null, 5);
+        }
+
+        @Override // android.database.sqlite.SQLiteOpenHelper
+        public void onCreate(SQLiteDatabase sQLiteDatabase) {
+            sQLiteDatabase.execSQL("CREATE TABLE alarms (_id INTEGER PRIMARY KEY,hour INTEGER, minutes INTEGER, daysofweek INTEGER, alarmtime INTEGER, enabled INTEGER, vibrate INTEGER, message TEXT, alert TEXT);");
+            sQLiteDatabase.execSQL("INSERT INTO alarms (hour, minutes, daysofweek, alarmtime, enabled, vibrate, message, alert) VALUES (9, 0, 127, 0, 0, 1, '', '');");
+        }
+
+        @Override // android.database.sqlite.SQLiteOpenHelper
+        public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
+            i.d("Upgrading alarms database from version " + i + " to " + i2 + ", which will destroy all old data");
+            sQLiteDatabase.execSQL("DROP TABLE IF EXISTS alarms");
+            onCreate(sQLiteDatabase);
+        }
     }
 
-    @Override // android.app.Service
-    public IBinder onBind(Intent intent) {
-        return null;
+    public static b a(Context context) {
+        if (a == null) {
+            a = new b(context);
+        }
+        return a;
     }
 
-    @Override // android.app.Service
-    public int onStartCommand(Intent intent, int i, int i2) {
-        if (intent == null) {
-            stopSelf();
-            return 2;
-        }
-        Alarm alarm = (Alarm) intent.getParcelableExtra("intent.extra.alarm");
-        if (alarm == null) {
-            i.d("AlarmKlaxon failed to parse the alarm from the intent");
-            stopSelf();
-            return 2;
-        }
-        if (this.e != null) {
-            a(this.e);
-        }
-        b(alarm);
-        this.e = alarm;
-        this.h = this.g.getCallState();
-        return 1;
+    public b(Context context) {
+        this.c = context;
+        this.b = new a(this.c);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public void a(Alarm alarm) {
-        int iRound = (int) Math.round((System.currentTimeMillis() - this.f) / 60000.0d);
-        Intent intent = new Intent("com.tsf.shell.widget.alarm.inshell.alarm_killed");
-        intent.putExtra("intent.extra.alarm", alarm);
-        intent.putExtra("alarm_killed_timeout", iRound);
-        sendBroadcast(intent);
-    }
-
-    private void b(Alarm alarm) {
-        a();
-        i.d("AlarmKlaxon.play() " + alarm.a + " alert " + alarm.i);
-        if (!alarm.j) {
-            Uri defaultUri = alarm.i;
-            if (defaultUri == null) {
-                defaultUri = RingtoneManager.getDefaultUri(4);
-                i.d("Using default alarm: " + defaultUri.toString());
-            }
-            this.d = new MediaPlayer();
-            this.d.setOnErrorListener(new MediaPlayer.OnErrorListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmKlaxon.3
-                @Override // android.media.MediaPlayer.OnErrorListener
-                public boolean onError(MediaPlayer mediaPlayer, int i, int i2) {
-                    i.c("Error occurred while playing audio.");
-                    mediaPlayer.stop();
-                    mediaPlayer.release();
-                    AlarmKlaxon.this.d = null;
-                    return true;
-                }
-            });
-            try {
-                if (this.g.getCallState() != 0) {
-                    i.d("Using the in-call alarm");
-                    this.d.setVolume(0.125f, 0.125f);
-                    a(getResources(), this.d, m.e.in_call_alarm);
-                } else {
-                    this.d.setDataSource(this, defaultUri);
-                }
-                a(this.d);
-            } catch (Exception e) {
-                i.d("Using the fallback ringtone");
-                try {
-                    this.d.reset();
-                    a(getResources(), this.d, m.e.fallbackring);
-                    a(this.d);
-                } catch (Exception e2) {
-                    i.a("Failed to play fallback ringtone", "" + e2);
-                }
-            }
+    public class Cursor 
+        SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
+        switch (d.match(uri)) {
+            case 1:
+                sQLiteQueryBuilder.setTables("alarms");
+                break;
+            case 2:
+                sQLiteQueryBuilder.setTables("alarms");
+                sQLiteQueryBuilder.appendWhere("_id=");
+                sQLiteQueryBuilder.appendWhere(uri.getPathSegments().get(1));
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown URL " + uri);
         }
-        if (alarm.g) {
-            this.c.vibrate(a, 0);
+        Cursor cursorQuery = sQLiteQueryBuilder.query(this.b.getReadableDatabase(), strArr, str, strArr2, null, null, str2);
+        if (cursorQuery == null) {
+            i.d("Alarms.query: failed");
         } else {
-            this.c.cancel();
+            cursorQuery.setNotificationUri(this.c.getContentResolver(), uri);
         }
-        c(alarm);
-        this.b = true;
-        this.f = System.currentTimeMillis();
+        return cursorQuery;
     }
 
-    private void a(MediaPlayer mediaPlayer) throws IOException {
-        if (((AudioManager) getSystemService("audio")).getStreamVolume(4) != 0) {
-            mediaPlayer.setAudioStreamType(4);
-            mediaPlayer.setLooping(true);
-            mediaPlayer.prepare();
-            mediaPlayer.start();
-        }
-    }
-
-    private void a(Resources resources, MediaPlayer mediaPlayer, int i) throws IOException {
-        AssetFileDescriptor assetFileDescriptorOpenRawResourceFd = resources.openRawResourceFd(i);
-        if (assetFileDescriptorOpenRawResourceFd != null) {
-            mediaPlayer.setDataSource(assetFileDescriptorOpenRawResourceFd.getFileDescriptor(), assetFileDescriptorOpenRawResourceFd.getStartOffset(), assetFileDescriptorOpenRawResourceFd.getLength());
-            assetFileDescriptorOpenRawResourceFd.close();
+    public int a(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+        int iMatch = d.match(uri);
+        SQLiteDatabase writableDatabase = this.b.getWritableDatabase();
+        switch (iMatch) {
+            case 2:
+                int iUpdate = writableDatabase.update("alarms", contentValues, "_id=" + Long.parseLong(uri.getPathSegments().get(1)), null);
+                writableDatabase.close();
+                return iUpdate;
+            default:
+                throw new UnsupportedOperationException("Cannot update URL: " + uri);
         }
     }
 
-    public void a() {
-        i.d("AlarmKlaxon.stop()");
-        if (this.b) {
-            this.b = false;
-            if (this.d != null) {
-                this.d.stop();
-                this.d.release();
-                this.d = null;
-            }
-            this.c.cancel();
+    public class Uri 
+        ContentValues contentValues2;
+        if (d.match(uri) != 1) {
+            throw new IllegalArgumentException("Cannot insert into URL: " + uri);
         }
-        b();
-    }
-
-    private void c(Alarm alarm) {
-        this.i.sendMessageDelayed(this.i.obtainMessage(1000, alarm), 600000L);
-    }
-
-    private void b() {
-        this.i.removeMessages(1000);
+        if (contentValues != null) {
+            contentValues2 = new ContentValues(contentValues);
+        } else {
+            contentValues2 = new ContentValues();
+        }
+        if (!contentValues2.containsKey("hour")) {
+            contentValues2.put("hour", (Integer) 0);
+        }
+        if (!contentValues2.containsKey("minutes")) {
+            contentValues2.put("minutes", (Integer) 0);
+        }
+        if (!contentValues2.containsKey("daysofweek")) {
+            contentValues2.put("daysofweek", (Integer) 0);
+        }
+        if (!contentValues2.containsKey("alarmtime")) {
+            contentValues2.put("alarmtime", (Integer) 0);
+        }
+        if (!contentValues2.containsKey("enabled")) {
+            contentValues2.put("enabled", (Integer) 0);
+        }
+        if (!contentValues2.containsKey("vibrate")) {
+            contentValues2.put("vibrate", (Integer) 1);
+        }
+        if (!contentValues2.containsKey("message")) {
+            contentValues2.put("message", "");
+        }
+        if (!contentValues2.containsKey("alert")) {
+            contentValues2.put("alert", "");
+        }
+        SQLiteDatabase writableDatabase = this.b.getWritableDatabase();
+        long jInsert = writableDatabase.insert("alarms", "message", contentValues2);
+        if (jInsert < 0) {
+            throw new SQLException("Failed to insert row into " + uri);
+        }
+        i.d("Added alarm rowId = " + jInsert);
+        Uri uriWithAppendedId = ContentUris.withAppendedId(Alarm.a.a, jInsert);
+        writableDatabase.close();
+        return uriWithAppendedId;
     }
 }

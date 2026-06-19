@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
-import com.tsf.shell.f.f.a._a.B;
+import com.tsf.shell.f.f.a._a.DrawerSectionManager;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,7 +111,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         return this.a != null ? this.a.e : "";
     }
 
-    @Override // com.tsf.shell.f.f.a._a.b.a
+    @Override // com.tsf.shell.f.f.a._a.b.DrawerButtonElement
     public class String 
         return r();
     }
@@ -253,13 +253,13 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void n_() {
-        com.tsf.shell.d.a().a("WidgetShortcutApp");
+        com.tsf.shell.d.ShellDataParser().a("WidgetShortcutApp");
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void c() {
-        com.tsf.shell.d.a().b("WidgetShortcutApp");
+        com.tsf.shell.d.ShellDataParser().b("WidgetShortcutApp");
         super.c();
     }
 

@@ -4,7 +4,7 @@ import android.content.Intent;
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.activity.tips.TipsDialogActivity;
+import com.tsf.shell.ShellCallbackInterfacectivity.tips.TipsDialogActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

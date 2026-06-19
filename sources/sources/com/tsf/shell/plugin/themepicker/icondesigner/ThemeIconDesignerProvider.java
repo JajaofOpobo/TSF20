@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.icondesigner;
+package com.tsf.shell.plugin.themepicker.ThemePickerManagercondesigner;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -13,32 +13,32 @@ import android.net.Uri;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeIconDesignerProvider extends ContentProvider {
-    public static final String a = "CREATE TABLE theme_packages(_id INTEGER PRIMARY KEY," + g.b + " TEXT," + g.a + " TEXT," + g.c + " REAL," + g.e + " TEXT," + g.f + " INTEGER," + g.d + " INTEGER); ";
-    public static final String b = "CREATE TABLE theme_packages_ver_info(_id INTEGER PRIMARY KEY," + f.a + " TEXT UNIQUE NOT NULL," + f.b + " INTEGER); ";
+    public static final String a = "CREATE TABLE theme_packages(_id INTEGER PRIMARY KEY," + IconDesignerBaseColumns.b + " TEXT," + IconDesignerBaseColumns.a + " TEXT," + IconDesignerBaseColumns.c + " REAL," + IconDesignerBaseColumns.e + " TEXT," + IconDesignerBaseColumns.f + " INTEGER," + IconDesignerBaseColumns.d + " INTEGER); ";
+    public static final String b = "CREATE TABLE theme_packages_ver_info(_id INTEGER PRIMARY KEY," + IconDesignerColumns.a + " TEXT UNIQUE NOT NULL," + IconDesignerColumns.b + " INTEGER); ";
     private static final UriMatcher d = new UriMatcher(-1);
     private a c;
 
     static {
-        d.addURI("com.tsf.shell.plugin.icondesigner.provider", "theme_packages", 0);
-        d.addURI("com.tsf.shell.plugin.icondesigner.provider", "theme_packages_ver_info", 1);
+        IconDesignerRenderer.addURI("com.tsf.shell.plugin.icondesigner.provider", "theme_packages", 0);
+        IconDesignerRenderer.addURI("com.tsf.shell.plugin.icondesigner.provider", "theme_packages_ver_info", 1);
     }
 
     private static class a extends SQLiteOpenHelper {
         a(Context context) {
             super(context, "theme_icon_design.db", (SQLiteDatabase.CursorFactory) null, 8);
-            com.tsf.shell.plugin.themepicker.e.b("DatabaseHelper   DatabaseHelper");
+            com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("DatabaseHelper   DatabaseHelper");
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onCreate(SQLiteDatabase sQLiteDatabase) {
-            com.tsf.shell.plugin.themepicker.e.b("DatabaseHelper   onCreate");
+            com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("DatabaseHelper   onCreate");
             sQLiteDatabase.execSQL(ThemeIconDesignerProvider.a);
             sQLiteDatabase.execSQL(ThemeIconDesignerProvider.b);
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
-            com.tsf.shell.plugin.themepicker.e.b("DatabaseHelper   onUpgrade" + i + "    " + i2);
+            com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("DatabaseHelper   onUpgrade" + i + "    " + i2);
             sQLiteDatabase.execSQL("DROP TABLE IF EXISTS theme_packages");
             sQLiteDatabase.execSQL("DROP TABLE IF EXISTS theme_packages_ver_info");
             onCreate(sQLiteDatabase);
@@ -47,12 +47,12 @@ public class ThemeIconDesignerProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public boolean onCreate() {
-        this.c = new a(getContext());
+        this.c = new IconDesignerData(getContext());
         return true;
     }
 
     @Override // android.content.ContentProvider
-    public String getType(Uri uri) {
+    public class String 
         return null;
     }
 
@@ -64,10 +64,10 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Uri insert(Uri uri, ContentValues contentValues) {
+    public class Uri 
         long jReplace = this.c.getWritableDatabase().replace(a(uri), "_id", contentValues);
         if (jReplace > 0) {
-            Uri uriWithAppendedId = ContentUris.withAppendedId(g.g, jReplace);
+            Uri uriWithAppendedId = ContentUris.withAppendedId(IconDesignerBaseColumns.g, jReplace);
             getContext().getContentResolver().notifyChange(uriWithAppendedId, null);
             return uriWithAppendedId;
         }
@@ -75,7 +75,7 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+    public class Cursor 
         Cursor cursorQuery = this.c.getWritableDatabase().query(a(uri), null, str, strArr2, null, null, str2);
         getContext().getContentResolver().notifyChange(uri, null);
         return cursorQuery;
@@ -89,7 +89,7 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     private String a(Uri uri) {
-        switch (d.match(uri)) {
+        switch (IconDesignerRenderer.match(uri)) {
             case 0:
                 return "theme_packages";
             case 1:

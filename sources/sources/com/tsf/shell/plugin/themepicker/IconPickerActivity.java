@@ -15,13 +15,13 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.shell.plugin.crop.CropImageActivity;
 import com.tsf.shell.plugin.themepicker.SildingMenuLayout;
-import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator;
-import com.tsf.shell.plugin.themepicker.k;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
+import com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.TitlePageIndicator;
+import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class IconPickerActivity extends FragmentActivity implements View.OnClickListener, ViewTreeObserver.OnPreDrawListener, AdapterView.OnItemClickListener, SildingMenuLayout.d, k.f {
+public class IconPickerActivity extends FragmentActivity implements View.OnClickListener, ViewTreeObserver.OnPreDrawListener, AdapterView.OnItemClickListener, SildingMenuLayout.d, ThemePickerRenderer.f {
     public static SildingMenuLayout q;
     protected ViewPager m;
     protected TitlePageIndicator n;
@@ -31,30 +31,30 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
 
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
-        e.b("IconPickerActivity onCreate");
+        ThemePickerEvent.b("IconPickerActivity onCreate");
         g();
         super.onCreate(bundle);
     }
 
     protected void g() {
-        q = (SildingMenuLayout) getLayoutInflater().inflate(f.h.activity_theme_picker_with_sliding_menu, (ViewGroup) null);
+        q = (SildingMenuLayout) getLayoutInflater().inflate(ThemePickerResources.h.activity_theme_picker_with_sliding_menu, (ViewGroup) null);
         setContentView(q);
-        k.a(this, this);
+        ThemePickerRenderer.a(this, this);
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.k.f
+    @Override // com.tsf.shell.plugin.themepicker.ThemePickerRenderer.f
     public void a(List<ResolveInfo> list) {
         b(list);
-        c cVar = new c(f(), list, this);
-        this.m = (ViewPager) findViewById(f.C0155f.pager);
+        c cVar = new ThemePickerConfig(f(), list, this);
+        this.m = (ViewPager) findViewById(ThemePickerResources.C0155f.pager);
         this.m.setAdapter(cVar);
-        this.o = (ListView) findViewById(f.C0155f.menu_listview);
-        this.p = new g(this, list, getPackageManager(), true);
+        this.o = (ListView) findViewById(ThemePickerResources.C0155f.menu_listview);
+        this.p = new ThemePickerState(this, list, getPackageManager(), true);
         this.o.setAdapter((ListAdapter) this.p);
         this.o.setOnItemClickListener(this);
-        this.n = (TitlePageIndicator) findViewById(f.C0155f.indicator);
+        this.n = (TitlePageIndicator) findViewById(ThemePickerResources.C0155f.indicator);
         this.n.setViewPager(this.m);
-        findViewById(f.C0155f.imageView1).setOnClickListener(this);
+        findViewById(ThemePickerResources.C0155f.imageView1).setOnClickListener(this);
     }
 
     private void b(List<ResolveInfo> list) {
@@ -68,14 +68,14 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public boolean onPreDraw() {
-        e.c("", "mPager onPreDraw" + (System.currentTimeMillis() - this.r));
+        ThemePickerEvent.c("", "mPager onPreDraw" + (System.currentTimeMillis() - this.r));
         this.r = System.currentTimeMillis();
         return true;
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == f.C0155f.imageView1) {
+        if (view.getId() == ThemePickerResources.C0155f.imageView1) {
             q.a();
         }
     }
@@ -99,7 +99,7 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
                         intent2.setDataAndType(data, "image/*");
                         startActivityForResult(intent2, 101);
                     } else {
-                        e.b("uri is null");
+                        ThemePickerEvent.b("uri is null");
                     }
                     break;
                 case 101:

@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.indicator;
+package com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,11 +18,11 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class TitlePageIndicator extends View implements com.tsf.shell.plugin.themepicker.indicator.c {
+public class TitlePageIndicator extends View implements com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.c {
     private c A;
     private ViewPager a;
     private ViewPager.e b;
@@ -132,11 +132,11 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
             float dimension8 = resources.getDimension(f.d.default_title_indicator_top_padding);
             TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.k.TitlePageIndicator, i, 0);
             this.v = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_footerLineHeight, dimension);
-            this.m = a.a(typedArrayObtainStyledAttributes.getInteger(f.k.TitlePageIndicator_footerIndicatorStyle, integer));
+            this.m = ThemeIndicatorListener.a(typedArrayObtainStyledAttributes.getInteger(f.k.TitlePageIndicator_footerIndicatorStyle, integer));
             this.p = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_footerIndicatorHeight, dimension2);
             this.q = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_footerIndicatorUnderlinePadding, dimension3);
             this.r = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_footerPadding, dimension4);
-            this.n = b.a(typedArrayObtainStyledAttributes.getInteger(f.k.TitlePageIndicator_linePosition, integer2));
+            this.n = ThemeIndicatorRenderer.a(typedArrayObtainStyledAttributes.getInteger(f.k.TitlePageIndicator_linePosition, integer2));
             this.t = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_topPadding, dimension8);
             this.s = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_titlePadding, dimension6);
             this.u = typedArrayObtainStyledAttributes.getDimension(f.k.TitlePageIndicator_clipPadding, dimension7);
@@ -282,7 +282,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
         invalidate();
     }
 
-    public Typeface getTypeface() {
+    public class Typeface 
         return this.f.getTypeface();
     }
 
@@ -400,7 +400,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
             }
             float f8 = this.v;
             float f9 = this.p;
-            if (this.n == b.Top) {
+            if (this.n == ThemeIndicatorRenderer.Top) {
                 i2 = 0;
                 float f10 = -f9;
                 f3 = -f8;
@@ -458,7 +458,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
         int action = motionEvent.getAction() & 255;
         switch (action) {
             case 0:
-                this.y = t.b(motionEvent, 0);
+                this.y = ThemeIndicatorType.b(motionEvent, 0);
                 this.x = motionEvent.getX();
                 return true;
             case 1:
@@ -499,7 +499,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
                 this.a.e();
                 return true;
             case 2:
-                float fC = t.c(motionEvent, t.a(motionEvent, this.y));
+                float fC = ThemeIndicatorType.c(motionEvent, ThemeIndicatorType.a(motionEvent, this.y));
                 float f5 = fC - this.x;
                 if (!this.z && Math.abs(f5) > this.w) {
                     this.z = true;
@@ -517,16 +517,16 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
             default:
                 return true;
             case 5:
-                int iB2 = t.b(motionEvent);
-                this.x = t.c(motionEvent, iB2);
-                this.y = t.b(motionEvent, iB2);
+                int iB2 = ThemeIndicatorType.b(motionEvent);
+                this.x = ThemeIndicatorType.c(motionEvent, iB2);
+                this.y = ThemeIndicatorType.b(motionEvent, iB2);
                 return true;
             case 6:
-                int iB3 = t.b(motionEvent);
-                if (t.b(motionEvent, iB3) == this.y) {
-                    this.y = t.b(motionEvent, iB3 == 0 ? 1 : 0);
+                int iB3 = ThemeIndicatorType.b(motionEvent);
+                if (ThemeIndicatorType.b(motionEvent, iB3) == this.y) {
+                    this.y = ThemeIndicatorType.b(motionEvent, iB3 == 0 ? 1 : 0);
                 }
-                this.x = t.c(motionEvent, t.a(motionEvent, this.y));
+                this.x = ThemeIndicatorType.c(motionEvent, ThemeIndicatorType.a(motionEvent, this.y));
                 return true;
         }
     }
@@ -637,7 +637,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
             this.k.setEmpty();
             this.k.bottom = (int) (this.f.descent() - this.f.ascent());
             size = (this.k.bottom - this.k.top) + this.v + this.r + this.t;
-            if (this.m != a.None) {
+            if (this.m != ThemeIndicatorListener.None) {
                 size += this.p;
             }
         }
@@ -653,7 +653,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
     }
 
     @Override // android.view.View
-    public Parcelable onSaveInstanceState() {
+    public class Parcelable 
         SavedState savedState = new SavedState(super.onSaveInstanceState());
         savedState.a = this.c;
         return savedState;
@@ -664,7 +664,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
 
             @Override
 
-            public SavedState createFromParcel(Parcel parcel) {
+            public class SavedState 
                 return new SavedState(parcel);
             }
 

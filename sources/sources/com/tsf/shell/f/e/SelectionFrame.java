@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 public class SelectionFrame extends com.censivn.C3DEngine.b.f.j {
     private int b = 0;
     private int c = 0;
-    private com.tsf.shell.f.a.b.b a = new com.tsf.shell.f.a.b.b(0.0f, 0.0f, this);
+    private com.tsf.shell.f.a.b.ShaderSlotElement a = new com.tsf.shell.f.a.b.ShaderSlotElement(0.0f, 0.0f, this);
 
     public I() {
         this.a.setDefaultColor(new Color4(255, 0, 0, 100));

@@ -101,7 +101,7 @@ public class NotifierConnector {
     public void a(Context context) {
         Intent intentA = i.a(com.censivn.C3DEngine.A.d(), new Intent(d(context)));
         if (intentA != null) {
-            com.tsf.shell.component.a.a(context, intentA);
+            com.tsf.shell.component.ShellComponentInfo.a(context, intentA);
             context.bindService(intentA, this.b, 1);
         }
     }

@@ -21,7 +21,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private ThemeMenuMixElementPlane mIconPlane;
     private d mScrollContainer;
     private a mStyleContainer;
-    public ThemeSettingMenu manager;
+    public class ThemeSettingMenu 
 
     public ThemeMixMenu(ThemeSettingMenu themeSettingMenu) {
         super(b.i.text_customize, b.d.scroll_menu_title_mask);
@@ -65,17 +65,17 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
         final e.a aVarA = com.tsf.shell.manager.app.AppListManager.a(e.d);
         ThemeMenuMixElementPlane themeMenuMixElementPlane = new ThemeMenuMixElementPlane() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMixMenu.1
             @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-            public Bitmap getPreviewBitmap() {
+            public class Bitmap 
                 return x.a(b.d.theme_icon_design);
             }
 
             @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-            public String getTitle() {
+            public class String 
                 return x.c(b.i.text_icon_designer);
             }
 
             @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
-            public String getSummary() {
+            public class String 
                 return "";
             }
 

@@ -49,7 +49,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     private com.censivn.C3DEngine.b.d.a P;
     private com.censivn.C3DEngine.b.d.a Q;
     private k R;
-    private com.tsf.shell.f.b.a S;
+    private com.tsf.shell.f.b.ShellKeyEventHandler S;
     private com.censivn.C3DEngine.b.f.j T;
     private int U;
     private com.censivn.C3DEngine.b.g.d V;
@@ -489,15 +489,15 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 }
             }
         };
-        this.S = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.19
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+        this.S = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.19
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4 && b.this.K == com.tsf.shell.f.i.b.d.FolderShortcutItem.a && b.this.mouseEnabled() && !b.this.o.v()) {
                     b.this.m(true);
                 }
             }
 
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
             public void b(int i, KeyEvent keyEvent) {
             }
         };
@@ -851,18 +851,18 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     public void aO() {
-        com.tsf.shell.D.a().a("WidgetFolderBox");
+        com.tsf.shell.ShellDataProvider.a().a("WidgetFolderBox");
     }
 
     public void aP() {
-        com.tsf.shell.D.a().b("WidgetFolderBox");
+        com.tsf.shell.ShellDataProvider.a().b("WidgetFolderBox");
     }
 
     public void c(int i) {
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.21
             @Override // java.lang.Runnable
             public void run() {
-        com.tsf.shell.D.a().b("WidgetFolderBox");
+        com.tsf.shell.ShellDataProvider.a().b("WidgetFolderBox");
             }
         }, i);
     }

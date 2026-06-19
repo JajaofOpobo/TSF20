@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.j;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RateDialogController {
     private RateDialog a;
-    private com.tsf.shell.f.b.a b;
+    private com.tsf.shell.f.b.ShellKeyEventHandler b;
 
     public void a() {
         if (this.a == null) {
@@ -44,19 +44,19 @@ public class RateDialogController {
 
     private void d() {
         this.a = new b();
-        this.b = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.manager.j.RateDialogController.3
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+        this.b = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.manager.j.RateDialogController.3
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4) {
                     c.this.b();
                 }
             }
 
-            @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
             public void b(int i, KeyEvent keyEvent) {
             }
 
-            @Override // com.tsf.shell.f.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler
             public void a(int i, int i2, int i3, int i4) {
                 c.this.c();
             }

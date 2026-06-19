@@ -37,15 +37,15 @@ public class ItemPositionAnimator {
             k.this.i();
         }
     };
-    private com.tsf.shell.f.b.a q = new com.tsf.shell.f.b.a() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.2
-        @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+    private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.2
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4 && k.this.t) {
                 k.this.b();
             }
         }
 
-        @Override // com.tsf.shell.f.b.a, com.censivn.C3DEngine.b.c.b.a
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
         public void b(int i, KeyEvent keyEvent) {
         }
     };
@@ -102,7 +102,7 @@ public class ItemPositionAnimator {
             this.s = false;
         }
         WorkspaceShortcutItem.m.b(this.c);
-        com.tsf.shell.d.a().a("LineViewer");
+        com.tsf.shell.d.ShellDataParser().a("LineViewer");
         this.c.o(false);
         this.e.mouseSkip(true);
         this.e.removeFromParent();
@@ -164,7 +164,7 @@ public class ItemPositionAnimator {
                         k.this.e.mouseSkip(false);
                         k.this.c.o(true);
                         com.tsf.shell.manager.app.TaskScheduler.b();
-                        com.tsf.shell.d.a().b("LineViewer");
+                        com.tsf.shell.d.ShellDataParser().b("LineViewer");
                         k.this.i = 0;
                         k.this.f();
                         com.tsf.shell.manager.app.ObserverManager.c(Home.b());

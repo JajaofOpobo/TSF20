@@ -17,7 +17,7 @@ public class ResizeButtonNode extends j {
     private float g = 0.0f;
     private ArrayList<TextureElement> h = new ArrayList<>();
     private ArrayList<TextureElement> i = new ArrayList<>();
-    private ArrayList<com.tsf.shell.f.a.a.a> j = new ArrayList<>();
+    private ArrayList<com.tsf.shell.f.a.a.GlTextureBinding> j = new ArrayList<>();
     private c a = new ResizeState();
 
     public a() {

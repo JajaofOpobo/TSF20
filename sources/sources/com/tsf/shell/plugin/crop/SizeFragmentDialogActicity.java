@@ -6,17 +6,17 @@ import android.support.v4.app.k;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.tsf.shell.plugin.crop.e;
+import com.tsf.shell.plugin.crop.CropImageResources;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SizeFragmentDialogActicity extends FragmentActivity {
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        new a().a(f().a(), "dialog");
+        new CropImageParser().a(f().a(), "dialog");
     }
 
-    public static class a extends k {
+    public static class a extends CropImageContract {
         private View ai;
 
         public a() {
@@ -29,8 +29,8 @@ public class SizeFragmentDialogActicity extends FragmentActivity {
         }
 
         @Override // android.support.v4.app.Fragment
-        public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-            this.ai = layoutInflater.inflate(e.b.crop_size_dialog_layout, viewGroup);
+        public class View 
+            this.ai = layoutInflater.inflate(CropImageResources.b.crop_size_dialog_layout, viewGroup);
             return this.ai;
         }
     }

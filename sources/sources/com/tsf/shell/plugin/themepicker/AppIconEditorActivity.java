@@ -20,7 +20,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AppIconEditorActivity extends FragmentActivity {
@@ -28,7 +28,7 @@ public class AppIconEditorActivity extends FragmentActivity {
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Bundle bundleExtra = getIntent().getBundleExtra("appInfo");
-        a aVar = new a();
+        a aVar = new ThemePickerParser();
         aVar.g(bundleExtra);
         aVar.a(f().a(), "dialog");
     }
@@ -59,23 +59,23 @@ public class AppIconEditorActivity extends FragmentActivity {
         }
 
         @Override // android.support.v4.app.Fragment
-        public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-            this.ai = layoutInflater.inflate(f.h.fragment_edit_shortcut, viewGroup);
-            this.ai.findViewById(f.C0155f.done).setOnClickListener(this);
-            this.ai.findViewById(f.C0155f.icon).setOnClickListener(this);
-            this.ai.findViewById(f.C0155f.menu).setOnClickListener(this);
-            this.ai.findViewById(f.C0155f.undo).setOnClickListener(this);
-            this.ai.findViewById(f.C0155f.reset).setOnClickListener(this);
+        public class View 
+            this.ai = layoutInflater.inflate(ThemePickerResources.h.fragment_edit_shortcut, viewGroup);
+            this.ai.findViewById(ThemePickerResources.C0155f.done).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155f.icon).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155f.menu).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155f.undo).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155f.reset).setOnClickListener(this);
             if (this.aj != null) {
-                ((ImageView) this.ai.findViewById(f.C0155f.icon)).setImageBitmap(this.aj);
+                ((ImageView) this.ai.findViewById(ThemePickerResources.C0155f.icon)).setImageBitmap(this.aj);
             }
-            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.ai.findViewById(f.C0155f.label);
+            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155f.label);
             autoCompleteTextView.setOnKeyListener(new View.OnKeyListener() { // from class: com.tsf.shell.plugin.themepicker.AppIconEditorActivity.a.1
                 @Override // android.view.View.OnKeyListener
                 public boolean onKey(View view, int i, KeyEvent keyEvent) {
                     if (keyEvent.getAction() == 0 && i == 66) {
-                        e.b("Enter on Key");
-                        ((InputMethodManager) a.this.i().getSystemService("input_method")).toggleSoftInput(1, 2);
+                        ThemePickerEvent.b("Enter on Key");
+                        ((InputMethodManager) ThemePickerParser.this.i().getSystemService("input_method")).toggleSoftInput(1, 2);
                         return false;
                     }
                     return false;
@@ -90,20 +90,20 @@ public class AppIconEditorActivity extends FragmentActivity {
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             int id = view.getId();
-            if (id == f.C0155f.icon) {
+            if (id == ThemePickerResources.C0155f.icon) {
                 Intent intent = new Intent();
                 intent.setClass(i(), IconPickerActivity.class);
                 a(intent, VEasing.Back.easeIn);
             } else {
-                if (id == f.C0155f.menu) {
+                if (id == ThemePickerResources.C0155f.menu) {
                     a(view);
                     return;
                 }
-                if (id == f.C0155f.done) {
+                if (id == ThemePickerResources.C0155f.done) {
                     N();
-                } else if (id == f.C0155f.undo) {
+                } else if (id == ThemePickerResources.C0155f.undo) {
                     M();
-                } else if (id == f.C0155f.reset) {
+                } else if (id == ThemePickerResources.C0155f.reset) {
                     O();
                 }
             }
@@ -114,7 +114,7 @@ public class AppIconEditorActivity extends FragmentActivity {
         }
 
         private void N() {
-            String string = ((AutoCompleteTextView) this.ai.findViewById(f.C0155f.label)).getText().toString();
+            String string = ((AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155f.label)).getText().toString();
             Intent intent = new Intent();
             Bundle bundle = new Bundle();
             bundle.putBoolean("reset", false);
@@ -137,30 +137,30 @@ public class AppIconEditorActivity extends FragmentActivity {
 
         private void a(View view) {
             q qVar = new q(i(), view);
-            qVar.a().add(0, 0, 0, f.j.theme_picker_discard_changes);
+            qVar.a().add(0, 0, 0, ThemePickerResources.j.theme_picker_discard_changes);
             if (this.al != null) {
-                qVar.a().add(0, 1, 0, f.j.theme_picker_info_target_label);
+                qVar.a().add(0, 1, 0, ThemePickerResources.j.theme_picker_info_target_label);
             }
             qVar.a(new q.b() { // from class: com.tsf.shell.plugin.themepicker.AppIconEditorActivity.a.2
                 @Override // android.support.v7.widget.q.b
                 public boolean a(MenuItem menuItem) {
                     int itemId = menuItem.getItemId();
-                    e.b("Menu id:" + itemId);
+                    ThemePickerEvent.b("Menu id:" + itemId);
                     if (itemId == 0) {
-                        a.this.O();
+                        ThemePickerParser.this.O();
                     } else if (itemId == 1) {
                         Intent intent = new Intent();
                         int i = Build.VERSION.SDK_INT;
                         if (i >= 9) {
                             intent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
-                            intent.setData(Uri.fromParts("package", a.this.al, null));
+                            intent.setData(Uri.fromParts("package", ThemePickerParser.this.al, null));
                         } else {
                             String str = i == 8 ? "pkg" : "com.android.settings.ApplicationPkgName";
                             intent.setAction("android.intent.action.VIEW");
                             intent.setClassName("com.android.settings", "com.android.settings.InstalledAppDetails");
-                            intent.putExtra(str, a.this.al);
+                            intent.putExtra(str, ThemePickerParser.this.al);
                         }
-                        a.this.i().startActivity(intent);
+                        ThemePickerParser.this.i().startActivity(intent);
                     }
                     return true;
                 }
@@ -175,10 +175,10 @@ public class AppIconEditorActivity extends FragmentActivity {
                     case VEasing.Back.easeIn /* 200 */:
                         this.aj = (Bitmap) intent.getExtras().get("data");
                         if (this.aj != null) {
-                            e.b("onActivityResult bitmap :" + this.aj.getWidth() + ":" + this.aj.getHeight());
-                            ((ImageButton) this.ai.findViewById(f.C0155f.icon)).setImageBitmap(this.aj);
+                            ThemePickerEvent.b("onActivityResult bitmap :" + this.aj.getWidth() + ":" + this.aj.getHeight());
+                            ((ImageButton) this.ai.findViewById(ThemePickerResources.C0155f.icon)).setImageBitmap(this.aj);
                         } else {
-                            e.b("onActivityResult bitmap is null");
+                            ThemePickerEvent.b("onActivityResult bitmap is null");
                         }
                         break;
                 }
@@ -187,7 +187,7 @@ public class AppIconEditorActivity extends FragmentActivity {
 
         @Override // android.support.v4.app.k, android.content.DialogInterface.OnDismissListener
         public void onDismiss(DialogInterface dialogInterface) {
-            e.b("onDismiss");
+            ThemePickerEvent.b("onDismiss");
             FragmentActivity fragmentActivityI = i();
             if (fragmentActivityI != null) {
                 fragmentActivityI.finish();

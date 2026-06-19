@@ -2,7 +2,7 @@ package com.tsf.shell.f.h;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.i;
-import com.tsf.shell.f.f.n;
+import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 

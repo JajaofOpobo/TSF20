@@ -23,7 +23,7 @@ import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmWidget extends VWidgetContainer {
-    public static com.tsf.shell.widget.alarm.b.d a;
+    public static com.tsf.shell.widget.alarm.b.AlarmDataManager a;
     public static VWidgetContainer b;
     public static VTextureManager c;
     public static VObjectManager d;
@@ -31,10 +31,10 @@ public class AlarmWidget extends VWidgetContainer {
     public static int f;
     public static float g;
     public static Context h;
-    public static com.tsf.shell.widget.alarm.service.c k;
+    public static com.tsf.shell.widget.alarm.service.AlarmServiceBinder k;
     public static AlarmWidget l;
-    public static com.tsf.shell.widget.alarm.setting.e n;
-    public com.tsf.shell.widget.alarm.A i;
+    public static com.tsf.shell.widget.alarm.setting.AlarmSettingTheme n;
+    public com.tsf.shell.widget.alarm.AlarmContainer i;
     public g j;
     public k m;
     private long p;
@@ -48,7 +48,7 @@ public class AlarmWidget extends VWidgetContainer {
     private static ArrayList<VTweenTarget> u = new ArrayList<>();
     public static boolean o = false;
     private static String y = "com.tsf.shell.widget.alarm.OnThemeChange";
-    private static String z = "com.tsf.shell.widget.alarm.onClick";
+    private static String z = "com.tsf.shell.widget.alarm.AlarmThemeProvidernClick";
 
     interface b {
         void a();
@@ -83,7 +83,7 @@ public class AlarmWidget extends VWidgetContainer {
         h = context;
         f = num.intValue();
         g = VInformation.Scale();
-        i.c("EngineScale:" + g);
+        AlarmState.c("EngineScale:" + g);
         c = getTextureManager();
         d = getObjectManager();
         e = new VMessageQueueManager(f);
@@ -93,7 +93,7 @@ public class AlarmWidget extends VWidgetContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public boolean calTouchCollision(float f2, float f3) {
-        i.c("XXXX:" + f2 + "    YYYYY:" + f3);
+        AlarmState.c("XXXX:" + f2 + "    YYYYY:" + f3);
         return getHittingTarget(f2, f3, true) != null;
     }
 
@@ -138,7 +138,7 @@ public class AlarmWidget extends VWidgetContainer {
             while (true) {
                 synchronized (AlarmWidget.this.v) {
                     AlarmWidget.this.invalidate();
-                    i.c("Timer Invalidate:" + AlarmWidget.o);
+                    AlarmState.c("Timer Invalidate:" + AlarmWidget.o);
                     if (!this.b) {
                         try {
                             if (AlarmWidget.o) {
@@ -147,7 +147,7 @@ public class AlarmWidget extends VWidgetContainer {
                                 AlarmWidget.this.v.wait(AlarmWidget.this.w * 1000);
                             }
                         } catch (InterruptedException e) {
-                            e.printStackTrace();
+                            AlarmDataProvider.printStackTrace();
                         }
                     } else {
                         return;
@@ -159,17 +159,17 @@ public class AlarmWidget extends VWidgetContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VWidgetContainer
     public void onPause() {
-        i.c("onPause");
+        AlarmState.c("onPause");
         o = true;
-        e.pause();
+        AlarmDataProvider.pause();
         e();
     }
 
     @Override // com.censivn.C3DEngine.api.core.VWidgetContainer
     public void onResume() {
-        i.c("onResume");
+        AlarmState.c("onResume");
         o = false;
-        e.resume();
+        AlarmDataProvider.resume();
         f();
         synchronized (this.v) {
             this.v.notifyAll();
@@ -186,29 +186,29 @@ public class AlarmWidget extends VWidgetContainer {
         if (this.x != null) {
             this.x.a();
         }
-        k.b();
-        n.a();
+        AlarmTransformNode.b();
+        AlarmConfig.a();
     }
 
     private void g() {
-        n = new com.tsf.shell.widget.alarm.setting.e(h);
-        com.tsf.shell.widget.alarm.d.A(h);
-        com.tsf.shell.widget.alarm.setting.e eVar = n;
-        this.w = com.tsf.shell.widget.alarm.setting.e.k;
-        this.t = new C();
-        a = new com.tsf.shell.widget.alarm.b.d(h, c);
-        k = new com.tsf.shell.widget.alarm.service.c(h);
-        this.m = new k();
+        n = new com.tsf.shell.widget.alarm.setting.AlarmSettingTheme(h);
+        com.tsf.shell.widget.alarm.d.AlarmConfigEmpty(h);
+        com.tsf.shell.widget.alarm.setting.AlarmSettingTheme eVar = n;
+        this.w = com.tsf.shell.widget.alarm.setting.AlarmSettingTheme.k;
+        this.t = new AlarmConstants();
+        a = new com.tsf.shell.widget.alarm.b.AlarmDataManager(h, c);
+        k = new com.tsf.shell.widget.alarm.service.AlarmServiceBinder(h);
+        this.m = new AlarmTransformNode();
         this.m.scale().setAll(0.9f, 0.9f, 0.9f);
         this.m.position().spY(-20.0f);
         a(this.m);
-        this.i = new com.tsf.shell.widget.alarm.A();
+        this.i = new com.tsf.shell.widget.alarm.AlarmContainer();
         this.i.mouseEnabled(false);
         this.i.position().spZ(-10.0f);
         this.i.rotation().y = 180.0f;
         this.m.addChild(this.i);
-        this.j = new g();
-        this.j.a.setMouseEventListener(new A(this.j.a));
+        this.j = new AlarmPanel();
+        this.j.a.setMouseEventListener(new AlarmContainer(this.j.a));
         this.j.a.calAABB();
         this.j.position().spZ(10.0f);
         this.m.addChild(this.j);
@@ -219,21 +219,21 @@ public class AlarmWidget extends VWidgetContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        this.w = com.tsf.shell.widget.alarm.setting.e.k;
-        i.c("===============WidgetFreshDuration:" + this.w);
+        this.w = com.tsf.shell.widget.alarm.setting.AlarmSettingTheme.k;
+        AlarmState.c("===============WidgetFreshDuration:" + this.w);
         if (this.w != 0) {
             if (this.x == null) {
-                this.x = new D();
+                this.x = new AlarmDataUtils();
                 this.x.start();
             }
-            i.c("===============Widget Set Animation false");
+            AlarmState.c("===============Widget Set Animation false");
             return;
         }
         if (this.x != null) {
             this.x.a();
             this.x = null;
         }
-        i.c("===============Widget Set Animation true");
+        AlarmState.c("===============Widget Set Animation true");
     }
 
     private void i() {
@@ -241,7 +241,7 @@ public class AlarmWidget extends VWidgetContainer {
         this.j.mouseEnabled(false);
         this.i.b();
         this.i.mouseEnabled(true);
-        VTweenParam vTweenParam = new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmWidget.1
+        VTweenParam vTweenParam = new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmWidget.1
             private boolean b = false;
             private boolean c = false;
 
@@ -274,7 +274,7 @@ public class AlarmWidget extends VWidgetContainer {
         this.j.e();
         this.j.mouseEnabled(true);
         this.i.mouseEnabled(false);
-        VTweenParam vTweenParam = new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmWidget.2
+        VTweenParam vTweenParam = new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmWidget.2
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
@@ -299,7 +299,7 @@ public class AlarmWidget extends VWidgetContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(boolean z2) {
-        i.c("swepDepth:" + z2);
+        AlarmState.c("swepDepth:" + z2);
         if (z2) {
             this.j.setZOrderOnTop();
         } else {
@@ -308,11 +308,11 @@ public class AlarmWidget extends VWidgetContainer {
     }
 
     public static void a() {
-        l.i();
+        AlarmMeshRenderer.i();
     }
 
     public static void b() {
-        l.j();
+        AlarmMeshRenderer.j();
     }
 
     class C extends BroadcastReceiver {
@@ -336,10 +336,10 @@ public class AlarmWidget extends VWidgetContainer {
             }
             AlarmWidget.n.b();
             StringBuilder sbAppend = new StringBuilder().append("Widget AUTOLocation:");
-            com.tsf.shell.widget.alarm.setting.e eVar = AlarmWidget.n;
-            StringBuilder sbAppend2 = sbAppend.append(com.tsf.shell.widget.alarm.setting.e.a).append("   LocationName:");
-            com.tsf.shell.widget.alarm.setting.e eVar2 = AlarmWidget.n;
-            i.c(sbAppend2.append(com.tsf.shell.widget.alarm.setting.e.c).toString());
+            com.tsf.shell.widget.alarm.setting.AlarmSettingTheme eVar = AlarmWidget.n;
+            StringBuilder sbAppend2 = sbAppend.append(com.tsf.shell.widget.alarm.setting.AlarmSettingTheme.a).append("   LocationName:");
+            com.tsf.shell.widget.alarm.setting.AlarmSettingTheme eVar2 = AlarmWidget.n;
+            AlarmState.c(sbAppend2.append(com.tsf.shell.widget.alarm.setting.AlarmSettingTheme.c).toString());
             AlarmWidget.this.h();
             AlarmWidget.this.j.c();
             AlarmWidget.this.i.a();
@@ -348,8 +348,8 @@ public class AlarmWidget extends VWidgetContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void k() {
-        com.tsf.shell.widget.alarm.d.A(h);
-        com.tsf.shell.widget.alarm.c.b.a();
+        com.tsf.shell.widget.alarm.d.AlarmConfigEmpty(h);
+        com.tsf.shell.widget.alarm.c.AlarmComponentListener.a();
         this.j.g();
         this.i.f();
         this.m.a();
@@ -364,11 +364,11 @@ public class AlarmWidget extends VWidgetContainer {
     }
 
     private void l() {
-        h.registerReceiver(this.t, new SettingFilter());
+        AlarmIndicator.registerReceiver(this.t, new SettingFilter());
     }
 
     private void m() {
-        h.unregisterReceiver(this.t);
+        AlarmIndicator.unregisterReceiver(this.t);
     }
 
     public class A extends VMouseEventListener {

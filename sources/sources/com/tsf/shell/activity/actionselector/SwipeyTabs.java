@@ -1,4 +1,4 @@
-package com.tsf.shell.activity.actionselector;
+package com.tsf.shell.ShellCallbackInterfacectivity.actionselector;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -46,10 +46,10 @@ public class SwipeyTabs extends ViewGroup implements ViewPager.e {
         this.f = -6903239;
         this.g = -7039852;
         this.m = -1;
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, b.j.SwipeyTabs, i, 0);
-        this.f = typedArrayObtainStyledAttributes.getColor(b.j.SwipeyTabs_bottomBarColor, this.f);
-        this.d = typedArrayObtainStyledAttributes.getDimensionPixelSize(b.j.SwipeyTabs_bottomBarHeight, 2);
-        this.e = typedArrayObtainStyledAttributes.getDimensionPixelSize(b.j.SwipeyTabs_tabIndicatorHeight, 3);
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ActionSelectorCallback.j.SwipeyTabs, i, 0);
+        this.f = typedArrayObtainStyledAttributes.getColor(ActionSelectorCallback.j.SwipeyTabs_bottomBarColor, this.f);
+        this.d = typedArrayObtainStyledAttributes.getDimensionPixelSize(ActionSelectorCallback.j.SwipeyTabs_bottomBarHeight, 2);
+        this.e = typedArrayObtainStyledAttributes.getDimensionPixelSize(ActionSelectorCallback.j.SwipeyTabs_tabIndicatorHeight, 3);
         typedArrayObtainStyledAttributes.recycle();
         a();
     }

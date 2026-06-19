@@ -1,4 +1,4 @@
-package com.tsf.shell.plugin.themepicker.indicator;
+package com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,10 +15,10 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class LinePageIndicator extends View implements c {
+public class LinePageIndicator extends View implements ThemeIndicatorPageChange {
     private final Paint a;
     private final Paint b;
     private ViewPager c;
@@ -156,7 +156,7 @@ public class LinePageIndicator extends View implements c {
         int action = motionEvent.getAction() & 255;
         switch (action) {
             case 0:
-                this.k = t.b(motionEvent, 0);
+                this.k = ThemeIndicatorType.b(motionEvent, 0);
                 this.j = motionEvent.getX();
                 return true;
             case 1:
@@ -189,7 +189,7 @@ public class LinePageIndicator extends View implements c {
                 this.c.e();
                 return true;
             case 2:
-                float fC = t.c(motionEvent, t.a(motionEvent, this.k));
+                float fC = ThemeIndicatorType.c(motionEvent, ThemeIndicatorType.a(motionEvent, this.k));
                 float f3 = fC - this.j;
                 if (!this.l && Math.abs(f3) > this.i) {
                     this.l = true;
@@ -207,16 +207,16 @@ public class LinePageIndicator extends View implements c {
             default:
                 return true;
             case 5:
-                int iB2 = t.b(motionEvent);
-                this.j = t.c(motionEvent, iB2);
-                this.k = t.b(motionEvent, iB2);
+                int iB2 = ThemeIndicatorType.b(motionEvent);
+                this.j = ThemeIndicatorType.c(motionEvent, iB2);
+                this.k = ThemeIndicatorType.b(motionEvent, iB2);
                 return true;
             case 6:
-                int iB3 = t.b(motionEvent);
-                if (t.b(motionEvent, iB3) == this.k) {
-                    this.k = t.b(motionEvent, iB3 == 0 ? 1 : 0);
+                int iB3 = ThemeIndicatorType.b(motionEvent);
+                if (ThemeIndicatorType.b(motionEvent, iB3) == this.k) {
+                    this.k = ThemeIndicatorType.b(motionEvent, iB3 == 0 ? 1 : 0);
                 }
-                this.j = t.c(motionEvent, t.a(motionEvent, this.k));
+                this.j = ThemeIndicatorType.c(motionEvent, ThemeIndicatorType.a(motionEvent, this.k));
                 return true;
         }
     }
@@ -315,7 +315,7 @@ public class LinePageIndicator extends View implements c {
     }
 
     @Override // android.view.View
-    public Parcelable onSaveInstanceState() {
+    public class Parcelable 
         SavedState savedState = new SavedState(super.onSaveInstanceState());
         savedState.a = this.e;
         return savedState;
@@ -326,7 +326,7 @@ public class LinePageIndicator extends View implements c {
 
             @Override
 
-            public SavedState createFromParcel(Parcel parcel) {
+            public class SavedState 
                 return new SavedState(parcel);
             }
 

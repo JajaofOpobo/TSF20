@@ -88,7 +88,7 @@ public class OverlayProperty {
         }
     }
 
-    public static void a(Context context, TextureElement textureElement, TextureElement textureElement2, TextureElement textureElement3, com.tsf.shell.f.a.a.a aVar) {
+    public static void a(Context context, TextureElement textureElement, TextureElement textureElement2, TextureElement textureElement3, com.tsf.shell.f.a.a.GlTextureBinding aVar) {
         GLES20.glGetIntegerv(2978, j, 0);
         int i2 = textureElement2.width;
         int i3 = textureElement2.height;

@@ -78,8 +78,8 @@ public class ThemeMoreInfoLayout extends j {
     public void setTheme(ThemeListsManager.ThemeInfo themeInfo) {
         this.mThemeInfo = themeInfo;
         this.mTitleView.a(themeInfo.name);
-        this.mAuthorView.a(com.tsf.shell.plugin.themepicker.k.d(themeInfo.context));
-        this.mLinkView.a(com.tsf.shell.plugin.themepicker.k.e(themeInfo.context));
+        this.mAuthorView.a(com.tsf.shell.plugin.themepicker.ThemePickerRenderer.d(themeInfo.context));
+        this.mLinkView.a(com.tsf.shell.plugin.themepicker.ThemePickerRenderer.e(themeInfo.context));
         this.mIcon.k.textures().clear();
         if (themeInfo.getIconTexture() != null) {
             this.mIcon.k.textures().addElement(themeInfo.getIconTexture());

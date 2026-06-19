@@ -11,9 +11,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.shell.plugin.themepicker.IconPickerActivity;
 import com.tsf.shell.plugin.themepicker.SildingMenuLayout;
-import com.tsf.shell.plugin.themepicker.f;
-import com.tsf.shell.plugin.themepicker.indicator.TitlePageIndicator;
-import com.tsf.shell.plugin.themepicker.k;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
+import com.tsf.shell.plugin.themepicker.ThemePickerManagerndicator.TitlePageIndicator;
+import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -28,15 +28,15 @@ public class ThemePickerActivity extends IconPickerActivity implements View.OnCl
         k.a(this, this);
     }
 
-    @Override // com.tsf.shell.plugin.themepicker.IconPickerActivity, com.tsf.shell.plugin.themepicker.k.f
+    @Override // com.tsf.shell.plugin.themepicker.IconPickerActivity, com.tsf.shell.plugin.themepicker.ThemePickerRenderer.f
     public void a(List<ResolveInfo> list) {
         b(list);
         this.t = list;
-        c cVar = new c(f(), list, this);
+        c cVar = new ThemeElementConfig(f(), list, this);
         this.m = (ViewPager) findViewById(f.C0155f.pager);
         this.m.setAdapter(cVar);
         this.o = (ListView) findViewById(f.C0155f.menu_listview);
-        this.p = new d(this, list, getPackageManager(), true);
+        this.p = new ThemeElementData(this, list, getPackageManager(), true);
         this.o.setAdapter((ListAdapter) this.p);
         this.o.setOnItemClickListener(this);
         this.n = (TitlePageIndicator) findViewById(f.C0155f.indicator);

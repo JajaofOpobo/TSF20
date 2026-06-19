@@ -14,7 +14,7 @@ public class WallpaperAppActivity extends FragmentActivity {
         frameLayout.setId(10101010);
         setContentView(frameLayout, new ViewGroup.LayoutParams(-1, -1));
         if (bundle == null) {
-            f().a().a(10101010, new b()).a();
+            f().a().a(10101010, new WallpaperManager()).a();
         }
     }
 }

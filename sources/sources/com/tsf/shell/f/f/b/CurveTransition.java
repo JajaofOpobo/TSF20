@@ -6,11 +6,11 @@ import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CurveTransition extends 
-    private com.tsf.shell.f.f.A b;
+    private com.tsf.shell.f.f.PageShaderNode b;
 
     public e(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_curve, z);
-        this.b = new com.tsf.shell.f.f.A();
+        this.b = new com.tsf.shell.f.f.PageShaderNode();
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect

@@ -388,7 +388,7 @@ public class PageItem extends j implements F, b {
         this.y = true;
         setAnimationObjectState(true);
         Z();
-        com.tsf.shell.b.a.a("WidgetContainer", "onDragStart");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onDragStart");
     }
 
     public void ab() {
@@ -399,7 +399,7 @@ public class PageItem extends j implements F, b {
 
     public void m_() {
         this.y = false;
-        com.tsf.shell.b.a.a("WidgetContainer", "onDragRelease");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onDragRelease");
     }
 
     public void c() {
@@ -408,7 +408,7 @@ public class PageItem extends j implements F, b {
         if (!this.x) {
             ad();
         }
-        com.tsf.shell.b.a.a("WidgetContainer", "onDragEnd");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onDragEnd");
     }
 
     public boolean ac() {
@@ -450,7 +450,7 @@ public class PageItem extends j implements F, b {
     public void f_() {
         this.x = true;
         I();
-        com.tsf.shell.b.a.a("WidgetContainer", "onChoicePageStart");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onChoicePageStart");
     }
 
     public void o_() {
@@ -458,7 +458,7 @@ public class PageItem extends j implements F, b {
         if (!this.y) {
             ad();
         }
-        com.tsf.shell.b.a.a("WidgetContainer", "onChoicePageEnd");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onChoicePageEnd");
     }
 
     public void p_() {
@@ -470,7 +470,7 @@ public class PageItem extends j implements F, b {
         if (A() != null) {
             A().c(this);
         }
-        com.tsf.shell.b.a.a("WidgetContainer", "onDestroy");
+        com.tsf.shell.b.ShellBridge.a("WidgetContainer", "onDestroy");
     }
 
     public void ae() {

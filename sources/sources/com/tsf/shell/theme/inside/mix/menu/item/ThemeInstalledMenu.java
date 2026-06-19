@@ -31,7 +31,7 @@ public class ThemeInstalledMenu extends b {
     private TextureElement mSelectTE;
     private ArrayList<ThemeListsManager.ThemeInfo> mThemeList;
     private ThemeManager.ThemeListener mThemeListener;
-    public ThemeSettingMenu manager;
+    public class ThemeSettingMenu 
 
     private void initTexture() {
         if (this.mSelectTE.id == 0) {

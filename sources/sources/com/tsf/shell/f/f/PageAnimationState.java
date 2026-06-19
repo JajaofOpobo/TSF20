@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageAnimationState {
-    private static com.tsf.shell.f.a.a.a c;
+    private static com.tsf.shell.f.a.a.GlTextureBinding c;
     private static ArrayList<a> d = new ArrayList<>();
     public static int a = 0;
     public static ArrayList<b> b = new ArrayList<>();
@@ -110,7 +110,7 @@ public class PageAnimationState {
         }
     }
 
-    public static com.tsf.shell.f.a.a.a c() {
+    public static com.tsf.shell.f.a.a.GlTextureBinding c() {
         if (c == null) {
             c = com.tsf.shell.manager.app.TextureCache.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         }

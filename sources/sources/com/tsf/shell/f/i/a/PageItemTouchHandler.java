@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardI
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.b;
 import com.tsf.shell.f.e.WidgetMatchResizeController;
-import com.tsf.shell.f.f.n;
+import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.manager.d.HitTargetManager;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -179,7 +179,7 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
             super.d(r7)
             com.censivn.C3DEngine.b.f.i r0 = r6.c
             com.tsf.shell.f.i.PageItem r0 = (com.tsf.shell.f.i.PageItem) r0
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.manager.f.ScreenFadeController r1 = r1.a()
             r1.d()
             com.tsf.shell.manager.h.ScreenLockController r1 = com.tsf.shell.manager.app.FeatureConfig
@@ -193,28 +193,28 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         L25:
             return
         L26:
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
-            com.tsf.shell.f.f.c.a r1 = r1.d
+            com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler r1 = r1.d
             r1.b(r0)
             com.tsf.shell.f.e._g.MenuOverlay.onTempleteShow()
             boolean r1 = r6.m
             if (r1 == 0) goto L55
             r6.m = r3
             r6.b()
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.f.i.a.PageItemTouchHandler.a
+            com.tsf.shell.f.f.PageTouchHandler r0 = com.tsf.shell.f.i.a.PageItemTouchHandler.a
             r0.x()
         L3e:
             r6.b(r3)
             com.tsf.shell.f.e.e.ItemAnimationController r0 = com.tsf.shell.manager.app.WidgetAnimator
             r0.c()
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.PageTouchHandler r0 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.e.e.ItemNode r0 = r0.b()
             r0.c()
             com.tsf.shell.manager.m.SideMenuManager r0 = com.tsf.shell.manager.app.PanelStateManager
             r0.e()
             goto L25
         L55:
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             r1.d()
             com.censivn.C3DEngine.b.f.i r1 = r6.c
             boolean r1 = r1 instanceof com.tsf.shell.f.e.SelectionFrameLayoutItem
@@ -251,7 +251,7 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
             if (r1 == 0) goto L3e
             com.tsf.shell.manager.f.ViewportController r1 = com.tsf.shell.manager.app.TaskScheduler
             r1.b(r0)
-            com.tsf.shell.f.f.n r1 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.f.f.WorkspacePage r1 = r1.n()
             if (r1 == 0) goto Lb8
             r0.removeFromParent()

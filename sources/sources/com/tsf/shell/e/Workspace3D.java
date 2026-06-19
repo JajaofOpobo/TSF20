@@ -8,7 +8,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import com.tsf.shell.Home;
 import com.tsf.shell.e.CellLayout;
-import com.tsf.shell.f.f.n;
+import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.utils.StatusBarHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

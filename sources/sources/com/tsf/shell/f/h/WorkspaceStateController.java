@@ -265,7 +265,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
             return;
         }
         if (com.tsf.shell.f.e._g.MenuOverlay.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.app.StateHub.B() && !com.tsf.shell.manager.app.StateHub.s().a() && !com.tsf.shell.manager.app.v.ScreenHelper.e()) {
-            com.tsf.shell.f.b.a();
+            com.tsf.shell.f.b.ShellKeyEventHandler();
             this.e.a(0.0f, 0.0f, this.f.c(), this.f.d(), 204, !this.t);
             com.censivn.C3DEngine.b.c.b.a(this);
             this.i = true;

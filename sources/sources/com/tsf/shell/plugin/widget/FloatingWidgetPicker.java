@@ -33,7 +33,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
     public static int b = 0;
     private b f;
     private a g;
-    List<com.tsf.shell.plugin.widget.a> a = new ArrayList();
+    List<com.tsf.shell.plugin.widget.FloatingWidgetProvider> a = new ArrayList();
     public final float c = -99999.0f;
     public final int d = -99999;
     public final String e = "";
@@ -49,7 +49,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         listView.setOnItemClickListener(this);
         listView.setSelector(new ColorDrawable(0));
         ListView listView2 = (ListView) findViewById(b.e.listView2);
-        this.g = new a();
+        this.g = new FloatingWidgetProvider();
         listView2.setAdapter((ListAdapter) this.g);
         listView2.setOnItemClickListener(this);
         StateListDrawable stateListDrawable = new StateListDrawable();
@@ -93,12 +93,12 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
                     Context contextCreatePackageContext = createPackageContext(str, 2);
                     XmlResourceParser xml = contextCreatePackageContext.getResources().getXml(contextCreatePackageContext.getResources().getIdentifier("floating", "xml", contextCreatePackageContext.getPackageName()));
                     FloatingItem floatingItem = null;
-                    com.tsf.shell.plugin.widget.a aVar = null;
+                    com.tsf.shell.plugin.widget.FloatingWidgetProvider aVar = null;
                     while (xml.getEventType() != 1) {
                         if (xml.getEventType() == 2) {
                             String name = xml.getName();
                             if (name.endsWith("type")) {
-                                aVar = new com.tsf.shell.plugin.widget.a();
+                                aVar = new com.tsf.shell.plugin.widget.FloatingWidgetProvider();
                                 aVar.a = contextCreatePackageContext;
                                 aVar.b = str;
                                 aVar.c = xml.getAttributeValue(null, "drawable");
@@ -161,14 +161,14 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
             }
         }
         a("com.tsf.shell.widget.floating.demo", "widget_floating_default");
-        Collections.sort(this.a, new Comparator<com.tsf.shell.plugin.widget.a>() { // from class: com.tsf.shell.plugin.widget.FloatingWidgetPicker.1
+        Collections.sort(this.a, new Comparator<com.tsf.shell.plugin.widget.FloatingWidgetProvider>() { // from class: com.tsf.shell.plugin.widget.FloatingWidgetPicker.1
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public int compare(com.tsf.shell.plugin.widget.a aVar2, com.tsf.shell.plugin.widget.a aVar3) {
+            public int compare(com.tsf.shell.plugin.widget.FloatingWidgetProvider aVar2, com.tsf.shell.plugin.widget.FloatingWidgetProvider aVar3) {
                 return FloatingWidgetPicker.this.a(aVar2) - FloatingWidgetPicker.this.a(aVar3);
             }
         });
-        for (com.tsf.shell.plugin.widget.a aVar2 : this.a) {
+        for (com.tsf.shell.plugin.widget.FloatingWidgetProvider aVar2 : this.a) {
         }
     }
 
@@ -182,12 +182,12 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
 
     private void a(String str, String str2) {
         if (a(str)) {
-            this.a.add(com.tsf.shell.plugin.widget.a.a(this, str, str2));
+            this.a.add(com.tsf.shell.plugin.widget.FloatingWidgetProvider.a(this, str, str2));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public int a(com.tsf.shell.plugin.widget.a aVar) {
+    public int a(com.tsf.shell.plugin.widget.FloatingWidgetProvider aVar) {
         if (aVar.e) {
             return 10;
         }
@@ -216,7 +216,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public Object getItem(int i) {
+        public class Object 
             return null;
         }
 
@@ -226,7 +226,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public class View 
             Context context = viewGroup.getContext();
             if (view == null) {
                 view = LayoutInflater.from(context).inflate(b.g.plugin_floating_widget_picker_cover_list_item, (ViewGroup) null);
@@ -249,7 +249,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public Object getItem(int i) {
+        public class Object 
             return null;
         }
 
@@ -259,7 +259,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public class View 
             Context context = viewGroup.getContext();
             if (view == null) {
                 view = LayoutInflater.from(context).inflate(b.g.plugin_floating_widget_picker_content_list_item, (ViewGroup) null);

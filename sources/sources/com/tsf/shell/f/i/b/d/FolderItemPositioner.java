@@ -46,7 +46,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     private com.censivn.C3DEngine.b.g.d T;
     private com.censivn.C3DEngine.b.g.d U;
     private f W;
-    private com.tsf.shell.preference.a.a.f X;
+    private com.tsf.shell.preference.a.a.PreferenceItemF X;
     public int a;
     public int b;
     public int c;
@@ -82,7 +82,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
 
     public j() {
         com.tsf.shell.manager.app.ObserverManager.a(this);
-        this.X = new com.tsf.shell.preference.a.a.f() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.1
+        this.X = new com.tsf.shell.preference.a.a.PreferenceItemF() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.1
             @Override // com.censivn.C3DEngine.b.e.c
             public void g() {
                 super.g();

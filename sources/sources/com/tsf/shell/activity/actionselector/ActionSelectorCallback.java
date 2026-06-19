@@ -1,0 +1,10 @@
+package com.tsf.shell.ShellCallbackInterfacectivity.actionselector;
+
+import android.widget.TextView;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public interface ActionSelectorCallback {
+    TextView a(int i, SwipeyTabs swipeyTabs);
+
+    int b();
+}

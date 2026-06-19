@@ -17,12 +17,12 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements TransitionConfig.a, MultiSelectController.InterfaceC0113a {
-    public static com.tsf.shell.f.a.a.a f;
+    public static com.tsf.shell.f.a.a.GlTextureBinding f;
     public static com.censivn.C3DEngine.b.f.i i;
     private static com.censivn.C3DEngine.b.f.k r;
     private int MultiSelectController;
     private j.a I;
-    private com.tsf.shell.f._d.e.a.b J;
+    private com.tsf.shell.f._d.e.a.DashEffectData J;
     private com.censivn.C3DEngine.b.g._b.a L;
     protected g a;
     protected com.tsf.shell.e.CellLayout b;
@@ -93,7 +93,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.G = false;
     }
 
-    public j.a a(com.tsf.shell.f._d.e.a.b bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+    public j.a a(com.tsf.shell.f._d.e.a.DashEffectData bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
         this.H = true;
         mouseEnabled(false);
         i = iVar;
@@ -903,7 +903,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         a(com.tsf.shell.manager.app.v.SimpleHelper.b(), runnable, f2);
     }
 
-    public void a(com.tsf.shell.f._d.e.a.b bVar, Runnable runnable, float f2) {
+    public void a(com.tsf.shell.f._d.e.a.DashEffectData bVar, Runnable runnable, float f2) {
         if (this instanceof com.tsf.shell.f.f.a.FolderPage) {
             if (bVar.a()) {
                 bVar.a(this, f2, ((com.tsf.shell.f.f.a.FolderPage) this).ap().children(), runnable);
@@ -920,7 +920,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         a(com.tsf.shell.manager.app.v.SimpleHelper.b(), runnable, z);
     }
 
-    public void a(com.tsf.shell.f._d.e.a.b bVar, final Runnable runnable, boolean z) {
+    public void a(com.tsf.shell.f._d.e.a.DashEffectData bVar, final Runnable runnable, boolean z) {
         Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.5
             @Override // java.lang.Runnable
             public void run() {

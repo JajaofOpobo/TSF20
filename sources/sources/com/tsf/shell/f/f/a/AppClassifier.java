@@ -1,0 +1,219 @@
+package com.tsf.shell.f.f.a;
+
+import android.content.ComponentName;
+import android.os.AsyncTask;
+import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
+import com.tsf.b;
+import com.tsf.shell.plugin.classification.ClassificationManager;
+import com.tsf.shell.utils.GraphicsEngineBridge;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class AppClassifier {
+    private ArrayList<b> a = new ArrayList<>();
+
+    class b {
+        ComponentName a;
+        ComponentName[] b;
+        String c;
+
+        b() {
+        }
+    }
+
+    public static class A implements d.InterfaceC0151d {
+        @Override // com.tsf.shell.plugin.classification.ClassificationManager.InterfaceC0151d
+        public void a(d.a aVar) {
+        }
+
+        @Override // com.tsf.shell.plugin.classification.ClassificationManager.InterfaceC0151d
+        public void a() {
+        }
+    }
+
+    public void a() {
+        this.a.clear();
+        for (com.tsf.shell.f.i.PageItem bVar : com.tsf.shell.manager.app.ServiceProvider.d().a()) {
+            B bVar2 = new PageItemList();
+            if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
+                bVar2.c = bVar.K().title;
+                bVar2.b = ((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aI();
+            } else {
+                bVar2.a = ((com.tsf.shell.f.i.b.e.DrawerItemVisual) bVar).bd().b;
+            }
+            this.a.add(bVar2);
+        }
+    }
+
+    public void b() {
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList = new ArrayList<>();
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayListD) {
+            if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
+                arrayList.add(gVar);
+            }
+            if (gVar.K().container != -1) {
+                if (gVar.getMouseEventListener() != null && (gVar.getMouseEventListener() instanceof com.tsf.shell.f.i.b.d.FolderTouchHandler)) {
+                    ((com.tsf.shell.f.i.b.d.FolderTouchHandler) gVar.getMouseEventListener()).a();
+                    gVar.mouseEnabled(true);
+                }
+                gVar.visible(true);
+                gVar.alpha(255.0f);
+                gVar.g(1.0f);
+                gVar.scale().setAll(1.0f, 1.0f, 1.0f);
+                gVar.rotation().setAll(0.0f, 0.0f, 0.0f);
+            }
+        }
+        com.tsf.shell.manager.app.ServiceProvider.d().b();
+        for (B bVar : this.a) {
+            if (bVar.b != null) {
+                ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList2 = new ArrayList<>();
+                for (ComponentName componentName : bVar.b) {
+                    a(componentName, arrayList, arrayList2);
+                }
+                if (!arrayList2.isEmpty()) {
+                    com.tsf.shell.manager.app.StateHub.t().a(bVar.c, arrayList2, false);
+                }
+            } else {
+                Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it = arrayList.iterator();
+                while (true) {
+                    if (it.hasNext()) {
+                        com.tsf.shell.f.i.b.e.DrawerItemVisual next = it.next();
+                        if (next.bd().b.equals(bVar.a)) {
+                            com.tsf.shell.manager.app.ServiceProvider.d().a(next);
+                            arrayList.remove(next);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it2 = arrayList.iterator();
+        while (it2.hasNext()) {
+            com.tsf.shell.manager.app.ServiceProvider.d().a(it2.next());
+        }
+        com.tsf.shell.manager.app.StateHub.t().aD();
+    }
+
+    public class AsyncTask 
+        ArrayList arrayList = new ArrayList();
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : com.tsf.shell.manager.app.ServiceProvider.a().d()) {
+            if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
+                arrayList.add(gVar.bd().b.getPackageName());
+            }
+        }
+        return com.tsf.shell.plugin.classification.ClassificationManager.a(com.censivn.C3DEngine.A.d(), arrayList, aVar);
+    }
+
+    public void c() {
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
+        ArrayList arrayList = new ArrayList();
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayListD) {
+            if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
+                arrayList.add(gVar);
+            }
+            if (gVar.K().container != -1) {
+                if (gVar.getMouseEventListener() != null && (gVar.getMouseEventListener() instanceof com.tsf.shell.f.i.b.d.FolderTouchHandler)) {
+                    ((com.tsf.shell.f.i.b.d.FolderTouchHandler) gVar.getMouseEventListener()).a();
+                    gVar.mouseEnabled(true);
+                }
+                gVar.visible(true);
+                gVar.alpha(255.0f);
+                gVar.g(1.0f);
+                gVar.scale().setAll(1.0f, 1.0f, 1.0f);
+            }
+        }
+        com.tsf.shell.manager.app.ServiceProvider.d().b();
+        Iterator it = arrayList.iterator();
+        while (it.hasNext()) {
+            com.tsf.shell.manager.app.ServiceProvider.d().a((com.tsf.shell.f.i.b.e.DrawerItemVisual) it.next());
+        }
+        com.tsf.shell.manager.app.StateHub.t().aD();
+        com.tsf.shell.manager.app.StateHub.t().ao().c();
+        com.tsf.shell.manager.app.StateHub.t().ao().d();
+    }
+
+    public void a(d.a aVar) {
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList = new ArrayList<>();
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayListD) {
+            if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {
+                arrayList.add(gVar);
+            }
+            if (gVar.K().container != -1) {
+                if (gVar.getMouseEventListener() != null && (gVar.getMouseEventListener() instanceof com.tsf.shell.f.i.b.d.FolderTouchHandler)) {
+                    ((com.tsf.shell.f.i.b.d.FolderTouchHandler) gVar.getMouseEventListener()).a();
+                    gVar.mouseEnabled(true);
+                }
+                gVar.visible(true);
+                gVar.alpha(255.0f);
+                gVar.g(1.0f);
+                gVar.scale().setAll(1.0f, 1.0f, 1.0f);
+            }
+        }
+        com.tsf.shell.manager.app.ServiceProvider.d().b();
+        for (d.b bVar : aVar.b) {
+            ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList2 = new ArrayList<>();
+            Iterator<String> it = bVar.b.iterator();
+            while (it.hasNext()) {
+                a(it.next(), arrayList, arrayList2);
+            }
+            if (!arrayList2.isEmpty()) {
+                com.tsf.shell.manager.app.StateHub.t().a(bVar.a, arrayList2, true);
+            }
+        }
+        ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList3 = new ArrayList<>();
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar2 : arrayList) {
+            if (gVar2.bd().c()) {
+                arrayList3.add(gVar2);
+            }
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> it2 = arrayList3.iterator();
+        while (it2.hasNext()) {
+            arrayList.remove(it2.next());
+        }
+        if (!arrayList3.isEmpty()) {
+            com.tsf.shell.manager.app.StateHub.t().a(x.c(b.i.text_system), arrayList3, true);
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerItemVisual> it3 = arrayList.iterator();
+        while (it3.hasNext()) {
+            com.tsf.shell.manager.app.ServiceProvider.d().a(it3.next());
+        }
+        com.tsf.shell.manager.app.StateHub.t().aD();
+        com.tsf.shell.manager.app.StateHub.t().ao().c();
+        com.tsf.shell.manager.app.StateHub.t().ao().d();
+    }
+
+    private void a(String str, ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList2) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayList) {
+            if (gVar.bd().b.getPackageName().equals(str)) {
+                arrayList2.add(gVar);
+            }
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> it = arrayList2.iterator();
+        while (it.hasNext()) {
+            arrayList.remove(it.next());
+        }
+    }
+
+    private void a(ComponentName componentName, ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList2) {
+        for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : arrayList) {
+            if (gVar.bd().b.equals(componentName)) {
+                arrayList2.add(gVar);
+            }
+        }
+        Iterator<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> it = arrayList2.iterator();
+        while (it.hasNext()) {
+            arrayList.remove(it.next());
+        }
+    }
+
+    public void d() {
+        a();
+    }
+
+    public void e() {
+        b();
+    }
+}

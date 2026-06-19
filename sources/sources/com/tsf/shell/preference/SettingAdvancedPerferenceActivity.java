@@ -33,7 +33,7 @@ public class SettingAdvancedPerferenceActivity extends PreferenceActivity implem
         checkBoxPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() { // from class: com.tsf.shell.preference.SettingAdvancedPerferenceActivity.2
             @Override // android.preference.Preference.OnPreferenceChangeListener
             public boolean onPreferenceChange(Preference preference, Object obj) {
-                com.tsf.shell.d.a.a(SettingAdvancedPerferenceActivity.this, ((Boolean) obj).booleanValue());
+                com.tsf.shell.d.ShellDataParser.a(SettingAdvancedPerferenceActivity.this, ((Boolean) obj).booleanValue());
                 return true;
             }
         });

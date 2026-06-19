@@ -1,4 +1,4 @@
-package com.tsf.shell.activity.tips;
+package com.tsf.shell.ShellCallbackInterfacectivity.tips;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ public class TipsDialogActivity extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(b.g.tips_layout);
-        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: com.tsf.shell.activity.tips.TipsDialogActivity.1
+        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: com.tsf.shell.ShellCallbackInterfacectivity.tips.TipsDialogActivity.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 TipsDialogActivity.this.finish();

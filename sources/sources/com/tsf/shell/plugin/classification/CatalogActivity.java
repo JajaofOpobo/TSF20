@@ -7,15 +7,15 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import com.tsf.shell.plugin.classification.d;
-import com.tsf.shell.plugin.themepicker.e;
-import com.tsf.shell.plugin.themepicker.f;
+import com.tsf.shell.plugin.classification.ClassificationManager;
+import com.tsf.shell.plugin.themepicker.ThemePickerEvent;
+import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class CatalogActivity extends Activity implements View.OnClickListener, d.InterfaceC0151d {
+public class CatalogActivity extends Activity implements View.OnClickListener, ClassificationManager.InterfaceC0151d {
     private AsyncTask a;
 
     @Override // android.app.Activity
@@ -38,7 +38,7 @@ public class CatalogActivity extends Activity implements View.OnClickListener, d
             while (it.hasNext()) {
                 arrayList.add(it.next().activityInfo.packageName);
             }
-            this.a = d.a(this, arrayList, this);
+            this.a = ClassificationManager.a(this, arrayList, this);
             return;
         }
         if (id == f.C0155f.button2 && this.a != null) {
@@ -46,16 +46,16 @@ public class CatalogActivity extends Activity implements View.OnClickListener, d
         }
     }
 
-    @Override // com.tsf.shell.plugin.classification.d.InterfaceC0151d
-    public void a(d.a aVar) {
+    @Override // com.tsf.shell.plugin.classification.ClassificationManager.InterfaceC0151d
+    public void a(ClassificationManager.a aVar) {
         e.b("onCompleteClassification");
-        for (d.b bVar : aVar.b) {
+        for (ClassificationManager.b bVar : aVar.b) {
             e.b("Acvivity Log:------------" + bVar);
             bVar.a();
         }
     }
 
-    @Override // com.tsf.shell.plugin.classification.d.InterfaceC0151d
+    @Override // com.tsf.shell.plugin.classification.ClassificationManager.InterfaceC0151d
     public void a() {
         e.b("onClassificationError");
     }

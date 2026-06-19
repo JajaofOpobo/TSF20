@@ -1,0 +1,81 @@
+package com.tsf.shell.widget.alarm;
+
+import android.content.Context;
+import android.graphics.Color;
+import com.tsf.shell.widget.alarm.AlarmResources;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import org.xml.sax.Attributes;
+import org.xml.sax.helpers.DefaultHandler;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class AlarmDataUtils {
+    public static B a = new AlarmRoundRect();
+
+    public static class b {
+        public boolean a = true;
+        public int b = -16777216;
+        public int c = -16777216;
+        public int d = -16777216;
+        public int e = -16777216;
+        public int f = -16777216;
+    }
+
+    public static void a(Context context) {
+        InputStream inputStreamOpenRawResource;
+        try {
+            File file = new File(context.getCacheDir().getPath() + "/theme/theme_clock.xml");
+            if (file.exists()) {
+                inputStreamOpenRawResource = new BufferedInputStream(new FileInputStream(file));
+            } else {
+                inputStreamOpenRawResource = context.getResources().openRawResource(m.e.theme_clock);
+            }
+            SAXParser sAXParserNewSAXParser = SAXParserFactory.newInstance().newSAXParser();
+            A aVar = new AlarmContainer();
+            sAXParserNewSAXParser.parse(inputStreamOpenRawResource, aVar);
+            a = aVar.a();
+            inputStreamOpenRawResource.close();
+        } catch (Exception e) {
+            AlarmDataProvider.printStackTrace();
+        }
+    }
+
+    public static class A extends DefaultHandler {
+        private B a = new AlarmRoundRect();
+
+        public b a() {
+            return this.a;
+        }
+
+        @Override // org.xml.sax.helpers.DefaultHandler, org.xml.sax.ContentHandler
+        public void startElement(String str, String str2, String str3, Attributes attributes) {
+            if (str2.equals("high")) {
+                this.a.c = Color.parseColor(attributes.getValue("color"));
+                return;
+            }
+            if (str2.equals("low")) {
+                this.a.b = Color.parseColor(attributes.getValue("color"));
+                return;
+            }
+            if (str2.equals("text")) {
+                this.a.f = Color.parseColor(attributes.getValue("color"));
+                return;
+            }
+            if (str2.equals("week")) {
+                this.a.d = Color.parseColor(attributes.getValue("color"));
+            } else if (str2.equals("ampm")) {
+                this.a.e = Color.parseColor(attributes.getValue("color"));
+            } else if (str2.equals("doubleSizeEnable")) {
+                this.a.a = Boolean.valueOf(attributes.getValue("enable")).booleanValue();
+            }
+        }
+
+        @Override // org.xml.sax.helpers.DefaultHandler, org.xml.sax.ContentHandler
+        public void endElement(String str, String str2, String str3) {
+        }
+    }
+}

@@ -1,4 +1,4 @@
-package com.tsf.shell.widget.alarm.AlarmUtils;
+package com.tsf.shell.widget.alarm.AlarmContainerlarmUtils;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -18,15 +18,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.AlarmResources;
 import java.util.Calendar;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmAlert extends Activity {
     private Alarm a;
     private int b;
-    private BroadcastReceiver c = new BroadcastReceiver() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlert.1
+    private BroadcastReceiver c = new BroadcastReceiver() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.AlarmAlert.1
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             if (AlarmAlert.this.a.a == ((Alarm) intent.getParcelableExtra("intent.extra.alarm")).a) {
@@ -43,7 +43,7 @@ public class AlarmAlert extends Activity {
         requestWindowFeature(1);
         getWindow().addFlags(6815872);
         b();
-        registerReceiver(this.c, new IntentFilter("com.tsf.shell.widget.alarm.inshell.alarm_killed"));
+        registerReceiver(this.c, new IntentFilter("com.tsf.shell.widget.alarm.AlarmStatenshell.alarm_killed"));
     }
 
     private void a() {
@@ -60,13 +60,13 @@ public class AlarmAlert extends Activity {
         layoutInflaterFrom.inflate(m.d.tat_appwidget, (ViewGroup) findViewById(m.c.clockView));
         Button button = (Button) findViewById(m.c.snooze);
         button.requestFocus();
-        button.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlert.2
+        button.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.AlarmAlert.2
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 AlarmAlert.this.c();
             }
         });
-        findViewById(m.c.dismiss).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmUtils.AlarmAlert.3
+        findViewById(m.c.dismiss).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.AlarmAlert.3
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 AlarmAlert.this.a(false);
@@ -84,7 +84,7 @@ public class AlarmAlert extends Activity {
         calendar.setTimeInMillis(jCurrentTimeMillis);
         String string = getString(m.f.alarm_notify_snooze_label, new Object[]{this.a.a(this)});
         Intent intent = new Intent(this, (Class<?>) AlarmReceiver.class);
-        intent.setAction("com.tsf.shell.widget.alarm.inshell.cancel_snooze");
+        intent.setAction("com.tsf.shell.widget.alarm.AlarmStatenshell.cancel_snooze");
         intent.putExtra("alarm_id", this.a.a);
         PendingIntent broadcast = PendingIntent.getBroadcast(this, this.a.a, intent, 0);
         NotificationManager notificationManagerD = d();
@@ -107,7 +107,7 @@ public class AlarmAlert extends Activity {
         String string2 = getString(m.f.alarm_alert_snooze_set, new Object[]{Integer.valueOf(i)});
         i.d(string2);
         Toast.makeText(this, string2, 1).show();
-        stopService(new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT"));
+        stopService(new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT"));
         finish();
     }
 
@@ -119,7 +119,7 @@ public class AlarmAlert extends Activity {
     public void a(boolean z) {
         if (!z) {
             d().cancel(this.a.a);
-            stopService(new Intent("com.tsf.shell.widget.alarm.inshell.ALARM_ALERT"));
+            stopService(new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT"));
         }
         finish();
     }

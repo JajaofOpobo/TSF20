@@ -11,7 +11,7 @@ import com.tsf.shell.f.i.c.a.BackgroundSceneNode;
 import com.tsf.shell.f.i.c.a.ITextureCallback;
 import com.tsf.shell.f.i.c.a.CompositeSceneNode;
 import com.tsf.shell.utils.GraphicsEngineBridge;
-import com.tsf.shell.widget.alarm.r;
+import com.tsf.shell.widget.alarm.AlarmClickEvent;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetDefinitionFactory {

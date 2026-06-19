@@ -4,7 +4,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
 import com.tsf.b;
-import com.tsf.shell.g;
+import com.tsf.shell.ShellGraphicsContext;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

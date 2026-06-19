@@ -5,44 +5,44 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.service.b;
-import com.tsf.shell.widget.alarm.setting.e;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.service.IAlarmCallback;
+import com.tsf.shell.widget.alarm.setting.AlarmSettingTheme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlarmService extends Service {
     private RemoteCallbackList<a> a = new RemoteCallbackList<>();
     private Handler b = new Handler();
-    private final b.a c = new b.a() { // from class: com.tsf.shell.widget.alarm.service.AlarmService.1
-        @Override // com.tsf.shell.widget.alarm.service.b
+    private final IAlarmCallback.a c = new IAlarmCallback.a() { // from class: com.tsf.shell.widget.alarm.service.AlarmService.1
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void a(int i, boolean z, int i2, int i3, int i4, boolean z2, String str, String str2) {
             AlarmService.this.a(i, z, i2, i3, i4, z2, str, str2);
         }
 
-        @Override // com.tsf.shell.widget.alarm.service.b
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void b() {
         }
 
-        @Override // com.tsf.shell.widget.alarm.service.b
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void a(a aVar) {
             if (aVar != null) {
                 AlarmService.this.a.register(aVar);
             }
         }
 
-        @Override // com.tsf.shell.widget.alarm.service.b
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void b(a aVar) {
             if (aVar != null) {
                 AlarmService.this.a.unregister(aVar);
             }
         }
 
-        @Override // com.tsf.shell.widget.alarm.service.b
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void a(boolean z) {
             AlarmService.this.a(z);
         }
 
-        @Override // com.tsf.shell.widget.alarm.service.b
+        @Override // com.tsf.shell.widget.alarm.service.IAlarmCallback
         public void a() {
         }
     };
@@ -70,7 +70,7 @@ public class AlarmService extends Service {
         new Thread() { // from class: com.tsf.shell.widget.alarm.service.AlarmService.2
             @Override // java.lang.Thread, java.lang.Runnable
             public void run() {
-                com.tsf.shell.widget.alarm.d.c cVarA;
+                com.tsf.shell.widget.alarm.d.AlarmConfigDefault cVarA;
                 byte[] bArrB;
                 i.c("=============START TEST=================");
                 AlarmService.this.d.b();
@@ -80,25 +80,25 @@ public class AlarmService extends Service {
                 e unused2 = AlarmService.this.d;
                 i.c(sbAppend2.append(e.c).toString());
                 AlarmService.this.d.d();
-                if (!z && e.g() && (bArrB = com.tsf.shell.widget.alarm.d.a.a.b(AlarmService.this)) != null) {
+                if (!z && e.g() && (bArrB = com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.b(AlarmService.this)) != null) {
                     i.a("==Update By Cache==");
                     AlarmService.this.a(bArrB);
                     return;
                 }
                 if (e.a) {
-                    cVarA = com.tsf.shell.widget.alarm.d.a.a.a(AlarmService.this);
+                    cVarA = com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.a(AlarmService.this);
                 } else {
-                    cVarA = com.tsf.shell.widget.alarm.d.a.a.a(AlarmService.this, e.d);
+                    cVarA = com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.a(AlarmService.this, e.d);
                 }
                 if (cVarA != null && !cVarA.k) {
                     AlarmService.this.d.e();
                     byte[] bArrA = cVarA.a();
-                    com.tsf.shell.widget.alarm.d.a.a.a(AlarmService.this, bArrA);
+                    com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.a(AlarmService.this, bArrA);
                     i.a("==Update By Network==");
                     AlarmService.this.a(bArrA);
                     return;
                 }
-                byte[] bArrB2 = com.tsf.shell.widget.alarm.d.a.a.b(AlarmService.this);
+                byte[] bArrB2 = com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.b(AlarmService.this);
                 if (bArrB2 != null) {
                     i.a("==Update By Cache==");
                     AlarmService.this.a(bArrB2);
@@ -109,14 +109,14 @@ public class AlarmService extends Service {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(int i, boolean z, int i2, int i3, int i4, boolean z2, String str, String str2) {
-        com.tsf.shell.widget.alarm.AlarmUtils.c.a(this, i, z, i2, i3, i4, z2, str, str2);
-        com.tsf.shell.widget.alarm.AlarmUtils.c.a(this, i, z);
+        com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.c.a(this, i, z, i2, i3, i4, z2, str, str2);
+        com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.c.a(this, i, z);
         if (z) {
         }
     }
 
     @Override // android.app.Service
-    public IBinder onBind(Intent intent) {
+    public class IBinder 
         return this.c;
     }
 

@@ -45,9 +45,9 @@ public class SildingMenuLayout extends LinearLayout {
     public SildingMenuLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.i = 0;
-        this.j = c.HIDDEN;
-        this.k = new Scroller(getContext(), new a());
-        this.l = new b();
+        this.j = ThemePickerConfig.HIDDEN;
+        this.k = new Scroller(getContext(), new ThemePickerParser());
+        this.l = new ThemePickerProvider();
         this.m = new Handler();
         this.b = false;
         this.c = 0.0f;
@@ -58,9 +58,9 @@ public class SildingMenuLayout extends LinearLayout {
     public SildingMenuLayout(Context context) {
         super(context);
         this.i = 0;
-        this.j = c.HIDDEN;
-        this.k = new Scroller(getContext(), new a());
-        this.l = new b();
+        this.j = ThemePickerConfig.HIDDEN;
+        this.k = new Scroller(getContext(), new ThemePickerParser());
+        this.l = new ThemePickerProvider();
         this.m = new Handler();
         this.b = false;
         this.c = 0.0f;
@@ -111,15 +111,15 @@ public class SildingMenuLayout extends LinearLayout {
     }
 
     public void a() {
-        if (this.j != c.HIDING && this.j != c.SHOWING) {
+        if (this.j != ThemePickerConfig.HIDING && this.j != ThemePickerConfig.SHOWING) {
             switch (this.j) {
                 case HIDDEN:
-                    this.j = c.SHOWING;
+                    this.j = ThemePickerConfig.SHOWING;
                     this.e.setVisibility(0);
                     this.k.startScroll(0, 0, this.e.getLayoutParams().width, 0, 500);
                     break;
                 case SHOWN:
-                    this.j = c.HIDING;
+                    this.j = ThemePickerConfig.HIDING;
                     this.k.startScroll(this.i, 0, -this.i, 0, 500);
                     break;
             }
@@ -160,10 +160,10 @@ public class SildingMenuLayout extends LinearLayout {
     private void b() {
         switch (this.j) {
             case SHOWING:
-                this.j = c.SHOWN;
+                this.j = ThemePickerConfig.SHOWN;
                 break;
             case HIDING:
-                this.j = c.HIDDEN;
+                this.j = ThemePickerConfig.HIDDEN;
                 this.e.setVisibility(8);
                 break;
         }
@@ -180,7 +180,7 @@ public class SildingMenuLayout extends LinearLayout {
     }
 
     public boolean a(View view, MotionEvent motionEvent) {
-        if (this.j == c.HIDING || this.j == c.SHOWING) {
+        if (this.j == ThemePickerConfig.HIDING || this.j == ThemePickerConfig.SHOWING) {
             return false;
         }
         int rawX = (int) motionEvent.getRawX();
@@ -190,10 +190,10 @@ public class SildingMenuLayout extends LinearLayout {
                 break;
             case 1:
                 if (this.d > 0.0f) {
-                    this.j = c.SHOWING;
+                    this.j = ThemePickerConfig.SHOWING;
                     this.k.startScroll(this.i, 0, this.e.getLayoutParams().width - this.i, 0, 500);
                 } else if (this.d <= 0.0f) {
-                    this.j = c.HIDING;
+                    this.j = ThemePickerConfig.HIDING;
                     this.k.startScroll(this.i, 0, -this.i, 0, 500);
                 }
                 this.m.postDelayed(this.l, 16L);
@@ -225,7 +225,7 @@ public class SildingMenuLayout extends LinearLayout {
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        if (this.j == c.HIDDEN) {
+        if (this.j == ThemePickerConfig.HIDDEN) {
             return false;
         }
         int action = motionEvent.getAction();

@@ -17,7 +17,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LassoSelectionHandler {
-    private static com.tsf.shell.i d;
+    private static com.tsf.shell.ShellPreferenceManager d;
     private static com.censivn.C3DEngine.b.f.j e;
     private static com.censivn.C3DEngine.b.f.i f;
     private static com.censivn.C3DEngine.b.f.i g;
@@ -138,7 +138,7 @@ public class LassoSelectionHandler {
                     }
                     H.this.a((MotionEvent) null);
                     H.this.k = true;
-                    com.tsf.shell.E.a(H.i);
+                    com.tsf.shell.ShellThemeProvider.a(H.i);
                 }
             });
         }
@@ -302,7 +302,7 @@ public class LassoSelectionHandler {
     private static void i() {
         w = new ViewGroup.LayoutParams(-1, -1);
         i = com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.notic_line_picker_overflow);
-        d = new com.tsf.shell.i(com.censivn.C3DEngine.A.d(), ThemeManager.mix.lasso.getTheme().shell.lassoLineColor);
+        d = new com.tsf.shell.ShellPreferenceManager(com.censivn.C3DEngine.A.d(), ThemeManager.mix.lasso.getTheme().shell.lassoLineColor);
         DynamicThemeRunnable dynamicThemeRunnable = new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e.h.3
             @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
             public void onReloadTheme(ThemeDescription themeDescription) {

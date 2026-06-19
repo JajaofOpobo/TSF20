@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.plugin.summary.c;
+import com.tsf.shell.plugin.summary.SummaryManager;
 import java.util.Locale;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -45,30 +45,30 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
             window.addFlags(ItemInfo.APP_VERSION_NAME);
         }
         setRequestedOrientation(1);
-        setContentView(c.C0153c.activity_main_shell_summary);
+        setContentView(SummaryManager.C0153c.activity_main_shell_summary);
         try {
             int iA = a();
             if (iA != 0 && a(this)) {
-                findViewById(c.b.content).setPadding(0, 0, 0, iA);
+                findViewById(SummaryManager.b.content).setPadding(0, 0, 0, iA);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         if (Locale.getDefault().getLanguage().equals("zh")) {
-            ((ImageView) findViewById(c.b.imageView4)).setImageResource(c.a.launcher_text_summary_cn);
+            ((ImageView) findViewById(SummaryManager.b.imageView4)).setImageResource(SummaryManager.a.launcher_text_summary_cn);
         }
-        TextView textView = (TextView) findViewById(c.b.tv_terms);
+        TextView textView = (TextView) findViewById(SummaryManager.b.tv_terms);
         textView.setPaintFlags(textView.getPaintFlags() | 8);
         textView.setOnClickListener(this);
-        TextView textView2 = (TextView) findViewById(c.b.tv_private_policy);
+        TextView textView2 = (TextView) findViewById(SummaryManager.b.tv_private_policy);
         textView2.setPaintFlags(textView2.getPaintFlags() | 8);
         textView2.setOnClickListener(this);
-        findViewById(c.b.relativeLayout1).setOnClickListener(this);
-        findViewById(c.b.linearlayer1).setOnClickListener(this);
-        findViewById(c.b.framelayout1).setOnClickListener(this);
-        this.a = (AbsoluteLayout) findViewById(c.b.AbsoluteLayout1);
+        findViewById(SummaryManager.b.relativeLayout1).setOnClickListener(this);
+        findViewById(SummaryManager.b.linearlayer1).setOnClickListener(this);
+        findViewById(SummaryManager.b.framelayout1).setOnClickListener(this);
+        this.a = (AbsoluteLayout) findViewById(SummaryManager.b.AbsoluteLayout1);
         this.a.getViewTreeObserver().addOnGlobalLayoutListener(this);
-        this.b = (VideoView) findViewById(c.b.videoView1);
+        this.b = (VideoView) findViewById(SummaryManager.b.videoView1);
         try {
             Uri uri = Uri.parse("android.resource://" + getPackageName() + "/raw/preview_color_hd");
             if (getContentResolver().openAssetFileDescriptor(uri, "r") != null) {
@@ -80,7 +80,7 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
         this.b.setOnPreparedListener(this);
         this.b.setZOrderOnTop(false);
         this.b.start();
-        ImageView imageView = (ImageView) findViewById(c.b.imageView2);
+        ImageView imageView = (ImageView) findViewById(SummaryManager.b.imageView2);
         RotateAnimation rotateAnimation = new RotateAnimation(0.0f, 360.0f, 1, 0.5f, 1, 0.5f);
         rotateAnimation.setInterpolator(new LinearInterpolator());
         rotateAnimation.setDuration(2000L);
@@ -124,41 +124,41 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
         float width = this.a.getWidth();
         float height = this.a.getHeight();
         float fMax = Math.max(width / 360.0f, height / 640.0f);
-        b.a("", "viewW:" + width + "   viewH:" + height);
+        SummaryConfig.a("", "viewW:" + width + "   viewH:" + height);
         if (this.c != width || this.d != height) {
             this.c = width;
             this.d = height;
             int i = (int) (360.0f * fMax);
             int i2 = (int) (640.0f * fMax);
             this.b.setLayoutParams(new AbsoluteLayout.LayoutParams(i, i2, -((int) ((i - width) / 2.0f)), -((int) ((i2 - height) / 2.0f))));
-            findViewById(c.b.framelayout1).setLayoutParams(new AbsoluteLayout.LayoutParams((int) width, (int) height, 0, 0));
+            findViewById(SummaryManager.b.framelayout1).setLayoutParams(new AbsoluteLayout.LayoutParams((int) width, (int) height, 0, 0));
         }
     }
 
     @Override // android.media.MediaPlayer.OnPreparedListener
     public void onPrepared(MediaPlayer mediaPlayer) {
-        b.a("onPreparedonPreparedonPreparedonPreparedonPrepared");
+        SummaryConfig.a("onPreparedonPreparedonPreparedonPreparedonPrepared");
         mediaPlayer.start();
         mediaPlayer.setLooping(true);
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == c.b.tv_terms) {
+        if (view.getId() == SummaryManager.b.tv_terms) {
             a("启动页点击， 服务条款");
             Intent intent = new Intent();
             intent.putExtra("is_full_screen", true);
-            intent.putExtra("title", getResources().getString(c.d.text_terms_service));
+            intent.putExtra("title", getResources().getString(SummaryManager.d.text_terms_service));
             intent.putExtra("url", "http://www.cmcm.com/protocol/site/tos.html");
             intent.setComponent(new ComponentName(getPackageName(), "com.tsf.shell.preference.SettingAboutWebView"));
             startActivity(intent);
             return;
         }
-        if (view.getId() == c.b.tv_private_policy) {
+        if (view.getId() == SummaryManager.b.tv_private_policy) {
             a("启动页点击， 隐私按钮");
             Intent intent2 = new Intent();
             intent2.putExtra("is_full_screen", true);
-            intent2.putExtra("title", getResources().getString(c.d.text_private_policy));
+            intent2.putExtra("title", getResources().getString(SummaryManager.d.text_private_policy));
             intent2.putExtra("url", "http://www.cmcm.com/protocol/site/privacy.html");
             intent2.setComponent(new ComponentName(getPackageName(), "com.tsf.shell.preference.SettingAboutWebView"));
             startActivity(intent2);
@@ -170,7 +170,7 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
     }
 
     private void a(String str) {
-        if (a.a.booleanValue()) {
+        if (SummaryConstants.a.booleanValue()) {
             Log.v("TSF", str);
         }
     }

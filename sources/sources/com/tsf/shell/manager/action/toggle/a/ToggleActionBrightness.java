@@ -26,7 +26,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
         Home.b().runOnUiThread(new Runnable() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionBrightness.1
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.a.a.e.a(Home.b())) {
+                if (com.tsf.shell.ShellCallbackInterface.a.e.a(Home.b())) {
                     switch (b.c) {
                         case 10:
                             b.d(180);

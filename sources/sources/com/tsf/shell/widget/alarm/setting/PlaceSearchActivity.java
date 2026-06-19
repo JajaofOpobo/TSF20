@@ -18,8 +18,8 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.tsf.shell.widget.alarm.i;
-import com.tsf.shell.widget.alarm.m;
+import com.tsf.shell.widget.alarm.AlarmState;
+import com.tsf.shell.widget.alarm.AlarmResources;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -36,8 +36,8 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     }
 
     private void a() {
-        e.a();
-        this.b = new a();
+        AlarmSettingTheme.a();
+        this.b = new AlarmSettingAdapter();
         this.c = (ListView) findViewById(m.c.searchcity_list);
         this.c.setAdapter((ListAdapter) this.b);
         this.c.setOnItemClickListener(this);
@@ -85,30 +85,30 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
 
     private void b(String str) {
         synchronized (this) {
-            while (a.size() > 0) {
-                a.remove(0).cancel(true);
+            while (AlarmSettingAdapter.size() > 0) {
+                AlarmSettingAdapter.remove(0).cancel(true);
             }
-            b bVar = new b();
-            a.add(bVar);
+            b bVar = new AlarmSettingController();
+            AlarmSettingAdapter.add(bVar);
             bVar.execute(str);
         }
     }
 
-    private class b extends AsyncTask<String, Void, ArrayList<com.tsf.shell.widget.alarm.d.A>> {
+    private class b extends AsyncTask<String, Void, ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty>> {
         private b() {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public ArrayList<com.tsf.shell.widget.alarm.d.A> doInBackground(String... strArr) {
-            return com.tsf.shell.widget.alarm.d.a.a.a(strArr[0]);
+        public ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> doInBackground(String... strArr) {
+            return com.tsf.shell.widget.alarm.d.a.AlarmConfigParser.a(strArr[0]);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public void onPostExecute(ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList) {
+        public void onPostExecute(ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayList) {
             PlaceSearchActivity.this.b.a(arrayList);
             synchronized (PlaceSearchActivity.this) {
                 PlaceSearchActivity.a.remove(this);
@@ -119,34 +119,34 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     @Override // android.widget.AdapterView.OnItemClickListener
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
         if (i == 0) {
-            a((com.tsf.shell.widget.alarm.d.A) null);
+            a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) null);
         } else {
-            a((com.tsf.shell.widget.alarm.d.A) view.getTag());
+            a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) view.getTag());
         }
     }
 
-    private void a(com.tsf.shell.widget.alarm.d.A aVar) {
+    private void a(com.tsf.shell.widget.alarm.d.AlarmConfigEmpty aVar) {
         if (aVar == null) {
             i.c("PositionOnChange item null");
-            e.a = true;
+            AlarmSettingTheme.a = true;
         } else {
             i.c("PositionOnChange item " + aVar.a + " code:" + aVar.c);
-            e.a = false;
-            e.c = aVar.a;
-            e.d = aVar.c;
-            d.a(aVar);
+            AlarmSettingTheme.a = false;
+            AlarmSettingTheme.c = aVar.a;
+            AlarmSettingTheme.d = aVar.c;
+            AlarmSettingData.a(aVar);
         }
-        e.a(this).c();
+        AlarmSettingTheme.a(this).c();
         finish();
     }
 
     class a extends BaseAdapter {
-        ArrayList<com.tsf.shell.widget.alarm.d.A> a = new ArrayList<>();
+        ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
         public a() {
         }
 
-        public void a(ArrayList<com.tsf.shell.widget.alarm.d.A> arrayList) {
+        public void a(ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayList) {
             if (arrayList == null) {
                 this.a.clear();
             } else {
@@ -163,7 +163,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
         }
 
         @Override // android.widget.Adapter
-        public Object getItem(int i) {
+        public class Object 
             return null;
         }
 
@@ -173,12 +173,12 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
         }
 
         @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public class View 
             if (view == null) {
                 view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
             }
             ImageView imageView = (ImageView) view.findViewById(m.c.imageView1);
-            com.tsf.shell.widget.alarm.d.A aVar = this.a.get(i);
+            com.tsf.shell.widget.alarm.d.AlarmConfigEmpty aVar = this.a.get(i);
             a(aVar.a + "," + aVar.b, view);
             view.setTag(this.a.get(i));
             imageView.setImageResource(m.b.activity_list_city_ico);

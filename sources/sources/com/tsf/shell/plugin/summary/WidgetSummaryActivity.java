@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.plugin.summary.c;
+import com.tsf.shell.plugin.summary.SummaryManager;
 import java.util.Locale;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -55,25 +55,25 @@ public class WidgetSummaryActivity extends Activity implements MediaPlayer.OnPre
             return;
         }
         setRequestedOrientation(1);
-        setContentView(c.C0153c.activity_main_widget_summary);
+        setContentView(SummaryManager.C0153c.activity_main_widget_summary);
         if (string != null) {
-            ((TextView) findViewById(c.b.textView1)).setText(string);
+            ((TextView) findViewById(SummaryManager.b.textView1)).setText(string);
         }
         if (Locale.getDefault().getLanguage().equals("zh")) {
-            ((ImageView) findViewById(c.b.imageView3)).setImageResource(c.a.launcher_text_summary_cn);
+            ((ImageView) findViewById(SummaryManager.b.imageView3)).setImageResource(SummaryManager.a.launcher_text_summary_cn);
         }
-        this.b = (AbsoluteLayout) findViewById(c.b.AbsoluteLayout1);
+        this.b = (AbsoluteLayout) findViewById(SummaryManager.b.AbsoluteLayout1);
         this.b.getViewTreeObserver().addOnGlobalLayoutListener(this);
-        this.c = (VideoView) findViewById(c.b.videoView1);
+        this.c = (VideoView) findViewById(SummaryManager.b.videoView1);
         this.c.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/raw/preview_color_hd"));
         this.c.setOnPreparedListener(this);
         this.c.setZOrderOnTop(false);
         this.c.start();
-        findViewById(c.b.imageView1).setOnClickListener(this);
-        findViewById(c.b.imageView2).setOnClickListener(this);
-        findViewById(c.b.imageView3).setOnClickListener(this);
-        findViewById(c.b.imageView4).setOnClickListener(this);
-        findViewById(c.b.imageView5).setOnClickListener(this);
+        findViewById(SummaryManager.b.imageView1).setOnClickListener(this);
+        findViewById(SummaryManager.b.imageView2).setOnClickListener(this);
+        findViewById(SummaryManager.b.imageView3).setOnClickListener(this);
+        findViewById(SummaryManager.b.imageView4).setOnClickListener(this);
+        findViewById(SummaryManager.b.imageView5).setOnClickListener(this);
     }
 
     private boolean a(Context context) {
@@ -90,14 +90,14 @@ public class WidgetSummaryActivity extends Activity implements MediaPlayer.OnPre
         float width = this.b.getWidth();
         float height = this.b.getHeight();
         float fMax = Math.max(width / 358.0f, height / 638.0f);
-        b.a("", "viewW:" + width + "   viewH:" + height);
+        SummaryConfig.a("", "viewW:" + width + "   viewH:" + height);
         if (this.d != width || this.e != height) {
             this.d = width;
             this.e = height;
             int i = (int) (358.0f * fMax);
             int i2 = (int) (638.0f * fMax);
             this.c.setLayoutParams(new AbsoluteLayout.LayoutParams(i, i2, -((int) ((i - width) / 2.0f)), -((int) ((i2 - height) / 2.0f))));
-            findViewById(c.b.framelayout1).setLayoutParams(new AbsoluteLayout.LayoutParams((int) width, (int) height, 0, 0));
+            findViewById(SummaryManager.b.framelayout1).setLayoutParams(new AbsoluteLayout.LayoutParams((int) width, (int) height, 0, 0));
         }
     }
 
@@ -110,19 +110,19 @@ public class WidgetSummaryActivity extends Activity implements MediaPlayer.OnPre
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == c.b.imageView1) {
+        if (id == SummaryManager.b.imageView1) {
             b();
             return;
         }
-        if (id == c.b.imageView2) {
+        if (id == SummaryManager.b.imageView2) {
             b();
             return;
         }
-        if (id == c.b.imageView3) {
+        if (id == SummaryManager.b.imageView3) {
             b();
-        } else if (id == c.b.imageView4) {
+        } else if (id == SummaryManager.b.imageView4) {
             b();
-        } else if (id == c.b.imageView5) {
+        } else if (id == SummaryManager.b.imageView5) {
             a();
         }
     }

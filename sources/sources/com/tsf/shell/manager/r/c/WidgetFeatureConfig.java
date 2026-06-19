@@ -45,7 +45,7 @@ public class WidgetFeatureConfig {
         if (e != null) {
             e.a();
         }
-        com.tsf.shell.f.b.a();
+        com.tsf.shell.f.b.ShellKeyEventHandler();
     }
 
     public void a(final Runnable runnable) {

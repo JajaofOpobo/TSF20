@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.tsf.b;
-import com.tsf.shell.f.f.a._a.B;
+import com.tsf.shell.f.f.a._a.DrawerSectionManager;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -222,7 +222,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         if (!be()) {
             com.tsf.shell.utils.PackageManagerHelper.a(bd().b.getPackageName());
         } else {
-            com.tsf.shell.E.a(com.tsf.b.i.notic_uninstall_error);
+            com.tsf.shell.ShellThemeProvider.a(com.tsf.b.i.notic_uninstall_error);
         }
     }
 
@@ -252,13 +252,13 @@ public class DrawerItemVisual extends DrawerItemBase {
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void n_() {
-        com.tsf.shell.D.a().a("WidgetShortcutApp");
+        com.tsf.shell.ShellDataProvider.a().a("WidgetShortcutApp");
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void c() {
-        com.tsf.shell.D.a().b("WidgetShortcutApp");
+        com.tsf.shell.ShellDataProvider.a().b("WidgetShortcutApp");
         super.c();
     }
 

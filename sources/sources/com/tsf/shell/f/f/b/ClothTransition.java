@@ -254,7 +254,7 @@ public class ClothTransition extends
         public void dispatchDraw() {
             this.l.id = 0;
             if (this.k == null || this.k.id == 0) {
-                this.k = com.tsf.shell.f.f.h.b();
+                this.k = com.tsf.shell.f.f.PageConfig.b();
             }
             this.l.id = this.k.id;
             alpha(this.p);
@@ -273,8 +273,8 @@ public class ClothTransition extends
             float f4;
             float f5;
             float f6;
-            float f7 = com.tsf.shell.f.f.h.b;
-            float f8 = com.tsf.shell.f.f.h.c;
+            float f7 = com.tsf.shell.f.f.PageConfig.b;
+            float f8 = com.tsf.shell.f.f.PageConfig.c;
             int i = (int) (f8 / (f2 / (this.d - 1)));
             float f9 = f / 2.0f;
             float f10 = (f - (2.0f * f8)) / ((this.e - 2) - 1);

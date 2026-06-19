@@ -149,7 +149,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
             if (r0 == 0) goto L50
             boolean r0 = r6.h
             if (r0 == 0) goto L50
-            com.tsf.shell.f.f.n r0 = com.tsf.shell.manager.app.StateHub
+            com.tsf.shell.f.f.PageTouchHandler r0 = com.tsf.shell.manager.app.StateHub
             com.censivn.C3DEngine.b.f.j r2 = r0.u()
             r1 = 1325400064(0x4f000000, float:2.1474836E9)
             r0 = 1

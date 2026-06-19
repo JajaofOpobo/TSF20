@@ -176,7 +176,7 @@ public class ActionManager {
                 com.tsf.shell.manager.app.StateHub.t().al();
                 break;
             case 600:
-                com.tsf.shell.f.b.a();
+                com.tsf.shell.f.b.ShellKeyEventHandler();
                 break;
             case 700:
                 com.tsf.shell.manager.app.PreferenceProvider.e().d();
