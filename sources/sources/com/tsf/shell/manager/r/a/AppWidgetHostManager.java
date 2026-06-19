@@ -43,7 +43,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.r.a.AppWidgetHostManager$a, reason: collision with other inner class name */
     class C0143a extends ContentObserver {
-        public C0143a() {
+        public C0143a(Handler handler) {
             super(new Handler());
         }
 
@@ -94,14 +94,14 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
                     }
                     return;
                 } catch (Exception e) {
-                    b();
+                    C0143a();
                     return;
                 }
             }
-            b();
+            C0143a();
             return;
         }
-        b();
+        C0143a();
     }
 
     @SuppressLint({"NewApi"})

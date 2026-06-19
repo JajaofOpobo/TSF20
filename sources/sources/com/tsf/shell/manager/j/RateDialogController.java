@@ -10,9 +10,9 @@ public class RateDialogController {
 
     public void a() {
         if (this.a == null) {
-            d();
+            RateDialogController();
         }
-        c();
+        RateDialogController();
         j jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.b);
         this.a.removeFromParent();
         this.a.a();

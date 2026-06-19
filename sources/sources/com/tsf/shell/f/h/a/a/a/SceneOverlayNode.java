@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.k;
 public class SceneOverlayNode extends k {
     private TextureElement a;
 
-    public f(float f, float f2) {
+    public SceneOverlayNode(float f, float f2) {
         super(f, f2, false);
         this.a = new TextureElement(0, false);
         textures().addElement(this.a);
@@ -23,7 +23,7 @@ public class SceneOverlayNode extends k {
         }
     }
 
-    public class Bitmap 
+    public Bitmap a() {
         return null;
     }
 

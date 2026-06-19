@@ -11,7 +11,7 @@ abstract class CubeClockConfigBase {
         this.b = cVar;
     }
 
-    public class TextureElement 
-        return this.a;
+    public TextureElement c() {
+                return this.a;
     }
 }

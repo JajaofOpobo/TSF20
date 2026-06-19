@@ -28,11 +28,11 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     private ArrayList<a> c = new ArrayList<>();
     private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase f = new com.tsf.shell.f.i._b.e.WidgetDrawerItemButton();
 
-    public g(b bVar) {
+    public WidgetItemGrid(b bVar) {
         this.a = bVar;
         this.f.k.removeFromParent();
         this.f.parent(this);
-        p();
+        WidgetItemGrid();
     }
 
     @Override // com.tsf.shell.f.e._f.EditTarget
@@ -54,9 +54,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     }
 
     public void a(int i2, int i3, int i4, int i5) {
-        p();
-        w();
-        x();
+        WidgetItemGrid();
+        WidgetItemGrid();
+        WidgetItemGrid();
         int iNumChildren = numChildren();
         for (int i6 = 0; i6 < iNumChildren; i6++) {
             com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) getChildAt(i6);
@@ -197,7 +197,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
 
     public void g() {
         this.e = true;
-        p();
+        WidgetItemGrid();
     }
 
     public void h() {
@@ -213,7 +213,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     }
 
     public void i() {
-        p();
+        WidgetItemGrid();
     }
 
     private void p() {
@@ -248,7 +248,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
 
     public void a(float f) {
         this.p -= f / 6.0f;
-        k();
+        WidgetItemGrid();
         this.l = true;
     }
 
@@ -647,21 +647,21 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
             }
             if (this.q) {
                 if (this.o < this.n) {
-                    e();
+                    WidgetItemGrid();
                 } else {
-                    f();
+                    WidgetItemGrid();
                 }
                 if (this.o > WorkspaceShortcutItem.l.x) {
-                    b();
+                    WidgetItemGrid();
                 } else {
-                    c();
+                    WidgetItemGrid();
                 }
             } else {
                 if (g || h) {
-                    k();
+                    WidgetItemGrid();
                 }
-                c();
-                f();
+                WidgetItemGrid();
+                WidgetItemGrid();
             }
             if (!this.d) {
                 this.d = true;
@@ -777,8 +777,8 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         this.b.add(0, aVarY);
         super.addChild(iVar);
         a(aVarY, iVar);
-        w();
-        x();
+        WidgetItemGrid();
+        WidgetItemGrid();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j
@@ -787,9 +787,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         this.b.add(0, aVarY);
         super.addChildAt(iVar, i2);
         a(aVarY, getChildAt(0));
-        w();
-        o();
-        x();
+        WidgetItemGrid();
+        WidgetItemGrid();
+        WidgetItemGrid();
     }
 
     private void x() {
@@ -803,9 +803,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             a(this.b.remove(0));
-            w();
-            o();
-            x();
+            WidgetItemGrid();
+            WidgetItemGrid();
+            WidgetItemGrid();
         }
         return zRemoveChild;
     }
@@ -815,9 +815,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         com.censivn.C3DEngine.b.f.i iVarRemoveChildAt = super.removeChildAt(i2);
         if (iVarRemoveChildAt != null) {
             a(this.b.remove(0));
-            w();
-            o();
-            x();
+            WidgetItemGrid();
+            WidgetItemGrid();
+            WidgetItemGrid();
         }
         return iVarRemoveChildAt;
     }

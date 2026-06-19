@@ -24,7 +24,7 @@ public class DeferredWidgetGroup extends WidgetGroupBase {
     };
     private Runnable r;
 
-    public b(float f, float f2, float f3) {
+    public DeferredWidgetGroup(float f, float f2, float f3) {
         this.m = 1.0f;
         this.m = f;
         this.n = f2;

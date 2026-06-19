@@ -34,7 +34,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
     private int k = -13421773;
     private float m = 1.0f;
 
-    public b(c cVar) {
+    public CubeClockThemedFace(c cVar) {
         this.l = cVar;
         this.l.c.addObject(this);
         scale().x = this.l.p;
@@ -52,7 +52,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         byteBufferAllocateDirect3.order(ByteOrder.nativeOrder());
         this.a = byteBufferAllocateDirect3.asFloatBuffer();
         this.a.position(0);
-        b();
+        CubeClockThemedFace();
         setMouseEventListener(new C0181b(this));
         setAABBSP(((-588.0f) / this.l.n) / 2.0f, ((-144.0f) / this.l.n) / 2.0f, 0.0f, (588.0f / this.l.n) / 2.0f, (144.0f / this.l.n) / 2.0f, 0.0f);
     }
@@ -63,7 +63,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         private float c;
         private float d;
 
-        public C0181b(VObject3d vObject3d) {
+        public CubeClockThemedFace(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
             this.c = 416.0f * b.this.l.p;
@@ -215,7 +215,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
             GLES20.glActiveTexture(33984);
             GLES20.glBindTexture(3553, this.l.g.a().id);
             Collections.sort(this.i);
-            c();
+            C0181b();
             for (int i = 0; i < 16; i++) {
                 a aVar = this.i.get(i);
                 MatrixStack.glPushMatrix();
@@ -258,7 +258,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         public int c = -1;
         public int d;
 
-        public a(int i) {
+        public CubeClockThemedFace(int i) {
             this.d = i;
         }
 

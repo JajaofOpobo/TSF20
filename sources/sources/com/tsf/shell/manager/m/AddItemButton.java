@@ -43,11 +43,11 @@ public class AddItemButton extends e {
         super.onDrawChildStart();
         if (a() != null && a().numChildren() == 0) {
             if (!this.e.m()) {
-                m();
+                AddItemButton();
             }
             mouseSkip(true);
         } else {
-            l();
+            AddItemButton();
             mouseSkip(false);
         }
     }

@@ -16,7 +16,7 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
         return new com.tsf.shell.f.i.c.a();
     }
 
-    public b(ItemInfo itemInfo) {
+    public ItemContainerPageItem(ItemInfo itemInfo) {
         super(itemInfo);
         this.a = false;
         this.b = false;
@@ -24,8 +24,8 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
         itemInfo.iconType = 2;
         this.g = new a(true) { // from class: com.tsf.shell.f.i.b.a.ItemContainerPageItem.1
             @Override // com.tsf.shell.f.i.b.a.ItemContainer
-            public class Bitmap 
-                return b.this.K().getPhoto();
+            public Bitmap c() {
+                                return b.this.K().getPhoto();
             }
 
             @Override // com.tsf.shell.f.i.b.a.ItemContainer
@@ -40,27 +40,27 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
     @Override // com.tsf.shell.f.i.PageItem
     public void W() {
         this.b = true;
-        l();
+        ItemContainerPageItem();
         this.g.c();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void X() {
         this.b = false;
-        l();
+        ItemContainerPageItem();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void n_() {
         this.a = true;
-        l();
+        ItemContainerPageItem();
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void c() {
         this.a = false;
-        l();
+        ItemContainerPageItem();
         super.c();
     }
 
@@ -72,14 +72,14 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
     @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
         this.f = true;
-        l();
+        ItemContainerPageItem();
         super.q_();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void j() {
         this.f = false;
-        l();
+        ItemContainerPageItem();
         super.j();
     }
 

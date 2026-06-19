@@ -9,16 +9,16 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FloatingWidgetProvider {
-    public class Context 
-    public class String 
-    public class String 
-    public class String 
+    public Context a;
+    public String a;
+    public String a;
+    public String a;
     public ArrayList<FloatingItem> d = new ArrayList<>();
     public boolean e = false;
-    public class Animation 
+    public Animation a;
 
-    public class Bitmap 
-        return a(this.c);
+    public Bitmap c() {
+                return a(this.c);
     }
 
     public static a a(Context context, String str, String str2) {
@@ -74,7 +74,7 @@ public class FloatingWidgetProvider {
         return bitmapDecodeStream;
     }
 
-    public class Bitmap 
-        return a(this.d.get(i).b);
+    public Bitmap c() {
+                return a(this.d.get(i).b);
     }
 }

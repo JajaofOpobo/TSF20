@@ -57,7 +57,7 @@ public class ShellPageManager {
         return this.d;
     }
 
-    public class String 
+    public String e() {
         return this.e;
     }
 }

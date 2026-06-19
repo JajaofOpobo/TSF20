@@ -16,7 +16,7 @@ public class ThemePickerData extends com.tsf.shell.plugin.themepicker.utils.Perc
     private Context b;
     private Resources e;
 
-    public d(ResolveInfo resolveInfo, Context context, int i) {
+    public ThemePickerData(ResolveInfo resolveInfo, Context context, int i) {
         super(context);
         a(resolveInfo, context);
     }

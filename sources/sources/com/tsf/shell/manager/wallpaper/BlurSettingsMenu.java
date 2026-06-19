@@ -59,13 +59,13 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
     @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         super.onLayout(f, f2, f3, f4);
-        a();
+        BlurSettingsMenu();
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         super.onShow();
-        a();
+        BlurSettingsMenu();
         this.c.f();
         this.d = com.tsf.shell.manager.app.LauncherAppInfo.j();
         this.c.k(this.d);

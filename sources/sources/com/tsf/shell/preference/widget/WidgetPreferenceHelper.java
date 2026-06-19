@@ -17,7 +17,7 @@ public class WidgetPreferenceHelper extends Fragment {
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // android.support.v4.app.Fragment
-    public class View 
+    public View c() {
         int i = h().getInt("index");
         WebView webView = (WebView) layoutInflater.inflate(b.g.webviewpage, viewGroup, false);
         switch (i) {

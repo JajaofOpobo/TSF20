@@ -30,12 +30,12 @@ public class AlarmRenderer implements AlarmWidget.b {
     private com.tsf.shell.widget.alarm.b.AlarmDataQuery n;
     private boolean o;
 
-    public f(VObject3dContainer vObject3dContainer, Context context) {
+    public AlarmRenderer(VObject3dContainer vObject3dContainer, Context context) {
         this.b = vObject3dContainer;
         this.h = context;
-        f();
-        c();
-        d();
+        AlarmRenderer();
+        AlarmRenderer();
+        AlarmRenderer();
         AlarmWidget.a(this);
     }
 
@@ -154,13 +154,13 @@ public class AlarmRenderer implements AlarmWidget.b {
 
     @Override // com.tsf.shell.widget.alarm.AlarmContainerlarmWidget.b
     public void a() {
-        d();
+        AlarmRenderer();
     }
 
     @Override // com.tsf.shell.widget.alarm.AlarmContainerlarmWidget.b
     public void b() {
-        g();
-        h();
+        AlarmRenderer();
+        AlarmRenderer();
     }
 
     private void h() {
@@ -189,7 +189,7 @@ public class AlarmRenderer implements AlarmWidget.b {
         private com.tsf.shell.widget.alarm.b.AlarmDataEntry b;
         private boolean c;
 
-        public A(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
+        public AlarmRenderer(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
             this.b = eVar;
             this.c = z;
             setEase(101);
@@ -215,11 +215,11 @@ public class AlarmRenderer implements AlarmWidget.b {
         private AlarmDataProvider.a d;
         private boolean e;
 
-        public B(f fVar, VRectangle vRectangle, AlarmDataProvider.a aVar, int i) {
+        public AlarmRenderer(f fVar, VRectangle vRectangle, AlarmDataProvider.a aVar, int i) {
             this(vRectangle, null, aVar, i, false);
         }
 
-        public B(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
+        public AlarmRenderer(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
             setTimeout(i);
             setScaleX(0.0f);
             setScaleY(0.0f);

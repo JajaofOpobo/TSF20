@@ -8,7 +8,7 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
     private e a;
     private j b;
 
-    public f(e eVar, j jVar) {
+    public DrawerSettingsConfig(e eVar, j jVar) {
         this.a = eVar;
         this.b = jVar;
     }
@@ -23,10 +23,10 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
         a.C0084a c0084aL = this.a.l();
         if (this.a.j()) {
             a(0.0f, c0084aL.h);
-            c().rotation().z = 45.0f;
+            DrawerSettingsConfig().rotation().z = 45.0f;
         } else {
             a(0.0f, c0084aL.l);
-            c().rotation().z = 135.0f;
+            DrawerSettingsConfig().rotation().z = 135.0f;
         }
         com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.1
             @Override // java.lang.Runnable

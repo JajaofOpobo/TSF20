@@ -59,7 +59,7 @@ public class AppIconEditorActivity extends FragmentActivity {
         }
 
         @Override // android.support.v4.app.Fragment
-        public class View 
+        public View c() {
             this.ai = layoutInflater.inflate(ThemePickerResources.h.fragment_edit_shortcut, viewGroup);
             this.ai.findViewById(ThemePickerResources.C0155f.done).setOnClickListener(this);
             this.ai.findViewById(ThemePickerResources.C0155f.icon).setOnClickListener(this);
@@ -110,7 +110,7 @@ public class AppIconEditorActivity extends FragmentActivity {
         }
 
         private void M() {
-            a();
+            View();
         }
 
         private void N() {
@@ -121,8 +121,8 @@ public class AppIconEditorActivity extends FragmentActivity {
             bundle.putParcelable("icon", this.aj);
             bundle.putString("name", string);
             intent.putExtras(bundle);
-            i().setResult(-1, intent);
-            a();
+            View().setResult(-1, intent);
+            View();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -131,8 +131,8 @@ public class AppIconEditorActivity extends FragmentActivity {
             Bundle bundle = new Bundle();
             bundle.putBoolean("reset", true);
             intent.putExtras(bundle);
-            i().setResult(-1, intent);
-            a();
+            View().setResult(-1, intent);
+            View();
         }
 
         private void a(View view) {

@@ -52,12 +52,12 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     public void a(float f) {
         this.n = f;
-        f();
+        a();
     }
 
     public void b(float f) {
         this.o = f;
-        f();
+        a();
     }
 
     public int d() {
@@ -103,7 +103,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     public void a(int i, boolean z) {
         this.k = i == 0 ? 0 : 1;
-        g();
+        a();
         if (z) {
             com.tsf.shell.manager.b.ConfigManager.b(this.k);
         }
@@ -168,7 +168,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                     com.tsf.shell.manager.app.WidgetAnimator.c();
                     b.this.c(false);
                     b.this.e.a(fVar);
-                    b();
+                    a();
                 }
             }
 
@@ -187,8 +187,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 }
             }
         };
-        p();
-        g();
+        a();
+        a();
         if (!com.tsf.shell.manager.b.ConfigManager.h()) {
             b(false);
         }
@@ -275,7 +275,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         this.d.position().y = com.censivn.C3DEngine.b.b.A.B;
         this.d.position().x = s();
         this.d.h();
-        f();
+        a();
     }
 
     private int q() {
@@ -316,7 +316,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     public void l() {
         if (this.g) {
-            t();
+            a();
         } else {
             c(true);
         }
@@ -416,7 +416,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     public void o() {
         if (this.r == null) {
-            u();
+            a();
         }
         if (!this.s) {
             this.s = true;
@@ -449,6 +449,6 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        p();
+        a();
     }
 }

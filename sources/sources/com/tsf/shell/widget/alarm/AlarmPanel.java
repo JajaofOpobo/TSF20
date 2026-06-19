@@ -37,8 +37,8 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
     private l o;
     private com.tsf.shell.widget.alarm.c.AlarmComponentListener p;
 
-    public g() {
-        h();
+    public AlarmPanel() {
+        AlarmPanel();
     }
 
     private void h() {
@@ -96,7 +96,7 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
         addChild(this.p);
         this.g.a(this);
         AlarmWidget.l.i.a(this);
-        c();
+        AlarmPanel();
         AlarmWidget.a((AlarmWidget.b) this);
     }
 
@@ -149,7 +149,7 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
         private com.tsf.shell.widget.alarm.b.AlarmDataEntry b;
         private boolean c;
 
-        public A(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
+        public AlarmPanel(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, boolean z) {
             this.b = eVar;
             this.c = z;
             setEase(101);
@@ -175,7 +175,7 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
         private AlarmDataProvider.a d;
         private boolean e;
 
-        public B(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
+        public AlarmPanel(VRectangle vRectangle, com.tsf.shell.widget.alarm.b.AlarmDataEntry eVar, AlarmDataProvider.a aVar, int i, boolean z) {
             setTimeout(i);
             setScaleX(0.0f);
             setScaleY(0.0f);
@@ -208,7 +208,7 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
 
     @Override // com.tsf.shell.widget.alarm.AlarmContainerlarmWidget.b
     public void b() {
-        c();
+        B();
     }
 
     public void d() {

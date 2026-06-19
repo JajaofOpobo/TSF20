@@ -218,7 +218,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             }
             this.e.clear();
             this.c.d();
-            c();
+            AppListPanel();
         }
     }
 
@@ -226,10 +226,10 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     public void c() {
         int size = this.e.size();
         if (size > 0) {
-            d();
+            AppListPanel();
             this.h.a(size);
         } else {
-            e();
+            AppListPanel();
         }
     }
 
@@ -253,7 +253,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            b();
+            AppListPanel();
         }
     }
 
@@ -268,7 +268,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             for (int i = 0; i < this.e.size(); i++) {
                 arrayList.add(this.e.get(i).ba());
             }
-            b();
+            AppListPanel();
             this.c.d();
             if (arrayList.size() > 0) {
                 float f = arrayList.get(0).position().x;
@@ -305,7 +305,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                     this.j.a(gVar, gVar);
                     i = i2 + 1;
                 } else {
-                    b();
+                    AppListPanel();
                     this.c.d();
                     return;
                 }
@@ -338,13 +338,13 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onHide() {
-        b();
+        AppListPanel();
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
         if (this.b != null) {
-            b();
+            AppListPanel();
             this.h.g();
             this.b.a.b(this.g);
             this.b = null;

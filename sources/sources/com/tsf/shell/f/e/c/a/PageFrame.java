@@ -3,13 +3,13 @@ package com.tsf.shell.f.e.c.a;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageFrame extends 
+public class PageFrame extends VRectangle {
     private float a;
     private float b;
     private float c;
     private float d;
 
-    public a(float f, float f2) {
+    public PageFrame(float f, float f2) {
         super(f, f2);
         this.a = 0.0f;
         this.b = 0.0f;

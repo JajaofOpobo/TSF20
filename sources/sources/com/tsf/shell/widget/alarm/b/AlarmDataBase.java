@@ -17,7 +17,7 @@ public class AlarmDataBase extends AlarmDataEntry {
     public AlarmDataEntry.a g;
     public AlarmDataEntry.a h;
 
-    public a(Context context, VTextureManager vTextureManager) {
+    public AlarmDataBase(Context context, VTextureManager vTextureManager) {
         super(context, vTextureManager);
         this.c = new AlarmDataEntry.a(0, 0, 68, 68);
         this.d = new AlarmDataEntry.a(68, 0, 68, 68);
@@ -34,8 +34,8 @@ public class AlarmDataBase extends AlarmDataEntry {
         bitmapB.recycle();
     }
 
-    public class Bitmap 
-        return p.a(this.i, "alarm_btn");
+    public Bitmap c() {
+                return p.a(this.i, "alarm_btn");
     }
 
     @Override // com.tsf.shell.widget.alarm.b.AlarmDataEntry

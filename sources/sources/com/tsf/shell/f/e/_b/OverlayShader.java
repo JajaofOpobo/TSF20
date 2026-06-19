@@ -5,19 +5,19 @@ import com.censivn.C3DEngine.common.shader.Shader;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class OverlayShader extends Shader {
-    public class String 
-    public class String 
+    public String a;
+    public String b;
     private int c;
     private int d;
     private int e;
     private int f;
 
-    public f(String str, String str2) {
+    public OverlayShader(String str, String str2) {
         this.a = "";
         this.b = "";
         this.a = str;
         this.b = str2;
-        a();
+        OverlayShader();
         this.d = GLES20.glGetUniformLocation(this.id, "TTTTTT0");
         this.e = GLES20.glGetUniformLocation(this.id, "TTTTTT1");
         this.c = GLES20.glGetUniformLocation(this.id, "LLLLLL");

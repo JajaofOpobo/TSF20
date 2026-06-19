@@ -21,7 +21,7 @@ public class ItemContainerNode extends j {
     private float l;
     private k m;
 
-    public b() {
+    public ItemContainerNode() {
         com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.b);
         this.k = com.censivn.C3DEngine.b.b.A.a(170.0f);
         this.l = com.censivn.C3DEngine.b.b.A.a(280.0f);
@@ -84,7 +84,7 @@ public class ItemContainerNode extends j {
     public void a(float f, float f2, float f3) {
         float f4 = 0.0f;
         if (f > this.l) {
-            a();
+            ItemContainerNode();
         } else if (f <= this.k) {
             f4 = this.k - f;
         }
@@ -130,7 +130,7 @@ public class ItemContainerNode extends j {
     public void c() {
         if (this.i) {
             this.i = false;
-            a();
+            ItemContainerNode();
             final Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.e.ItemContainerNode.2
                 @Override // java.lang.Runnable
                 public void run() {

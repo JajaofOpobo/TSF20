@@ -7,9 +7,9 @@ public class AlarmComponentEvent {
     private d[] a = new d[7];
     private VObject3dContainer b;
 
-    public e(VObject3dContainer vObject3dContainer) {
+    public AlarmComponentEvent(VObject3dContainer vObject3dContainer) {
         this.b = vObject3dContainer;
-        c();
+        AlarmComponentEvent();
     }
 
     public void a(boolean z) {

@@ -6,7 +6,7 @@ import com.tsf.shell.f.f.WorkspacePage;
 public class DashEffectRenderer implements DashEffectCallback {
     private int a;
 
-    public b(int i) {
+    public DashEffectRenderer(int i) {
         this.a = i;
     }
 

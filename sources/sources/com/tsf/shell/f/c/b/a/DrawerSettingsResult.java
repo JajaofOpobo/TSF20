@@ -20,7 +20,7 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
     private e j;
     private com.tsf.shell.manager.o.ButtonMetrics k;
 
-    public b(e eVar, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+    public DrawerSettingsResult(e eVar, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         this.j = eVar;
         this.k = aVar;
         this.b = aVar.H;
@@ -47,7 +47,7 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
                 this.i = i;
                 i++;
             } else {
-                c();
+                DrawerSettingsResult();
                 return;
             }
         }
@@ -202,7 +202,7 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
     @Override // com.tsf.shell.f.c.b.a.IDrawerSettingsCallback
     public IDrawerSettingsCallback.C0084a b() {
         if (this.a == null) {
-            c();
+            DrawerSettingsResult();
         }
         return this.a;
     }

@@ -8,7 +8,7 @@ public class SelectionFrame extends com.censivn.C3DEngine.b.f.j {
     private int c = 0;
     private com.tsf.shell.f.a.b.ShaderSlotElement a = new com.tsf.shell.f.a.b.ShaderSlotElement(0.0f, 0.0f, this);
 
-    public I() {
+    public SelectionFrame() {
         this.a.setDefaultColor(new Color4(255, 0, 0, 100));
     }
 

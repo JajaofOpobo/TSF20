@@ -11,7 +11,7 @@ public class SnapshotFrameRect extends VRectangle {
     private float e;
     private e f;
 
-    public b(float f, e eVar) {
+    public SnapshotFrameRect(float f, e eVar) {
         super(f, f);
         this.b = 0.0f;
         this.c = 0.0f;

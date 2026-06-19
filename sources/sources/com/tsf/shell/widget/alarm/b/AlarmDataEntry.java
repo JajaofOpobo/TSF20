@@ -24,12 +24,12 @@ public abstract class AlarmDataEntry {
 
     protected abstract float d();
 
-    public e(Context context, VTextureManager vTextureManager) {
+    public AlarmDataEntry(Context context, VTextureManager vTextureManager) {
         this.i = context;
         this.j = vTextureManager;
         h_();
-        e();
-        a();
+        AlarmDataEntry();
+        AlarmDataEntry();
     }
 
     protected void h_() {
@@ -40,8 +40,8 @@ public abstract class AlarmDataEntry {
         this.m = d();
     }
 
-    public class TextureElement 
-        return this.k;
+    public TextureElement c() {
+                return this.k;
     }
 
     public class a {

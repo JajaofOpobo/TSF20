@@ -35,7 +35,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
         this.g = false;
         this.h = new ArrayList<>();
         this.a = dVar2;
-        i();
+        SystemWidgetProviderBrowser();
     }
 
     private void i() {

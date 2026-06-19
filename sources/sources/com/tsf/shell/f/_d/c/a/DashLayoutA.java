@@ -8,7 +8,7 @@ public class DashLayoutA extends DashLayoutContainer {
     private static final float a = 268.0f * com.censivn.C3DEngine.b.b.A.c;
     private boolean c;
 
-    public a(int i, boolean z, boolean z2) {
+    public DashLayoutA(int i, boolean z, boolean z2) {
         super(i, z2);
         this.c = false;
         this.c = z;

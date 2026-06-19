@@ -111,7 +111,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public a(Context context, List<ResolveInfo> list) {
+        public ThemeElementManager(Context context, List<ResolveInfo> list) {
             this.f = 0;
             this.g = list;
             this.b = context;
@@ -128,7 +128,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.e) {
                 return null;
             }

@@ -26,7 +26,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     private static class a extends SQLiteOpenHelper {
-        public a(Context context) {
+        public AlarmProvider(Context context) {
             super(context, "alarms.db", (SQLiteDatabase.CursorFactory) null, 5);
         }
 
@@ -79,7 +79,7 @@ public class AlarmProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class String 
+    public String c() {
         switch (b.match(uri)) {
             case 1:
                 return "vnd.android.cursor.dir/alarms";

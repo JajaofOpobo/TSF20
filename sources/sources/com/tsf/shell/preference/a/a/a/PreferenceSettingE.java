@@ -7,10 +7,10 @@ public class PreferenceSettingE extends PreferenceSettingBase {
     private float d;
     private float e;
 
-    public e(String str) {
+    public PreferenceSettingE(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
         this.a = new com.censivn.C3DEngine.b.f.j();
-        e().addChild(this.a);
+        PreferenceSettingE().addChild(this.a);
         this.b = com.censivn.C3DEngine.b.b.A.a(150.0f);
         this.e = com.censivn.C3DEngine.b.b.A.a(20.0f);
         this.d = (this.b * 5.0f) + (this.e * 4.0f);
@@ -35,7 +35,7 @@ public class PreferenceSettingE extends PreferenceSettingBase {
                 this.a.addChild(cVarB);
                 i = i2 + 1;
             } else {
-                h();
+                PreferenceSettingE();
                 return;
             }
         }
@@ -47,7 +47,7 @@ public class PreferenceSettingE extends PreferenceSettingBase {
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
     public void c(int i) {
         super.c(i);
-        h();
+        PreferenceSettingE();
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f

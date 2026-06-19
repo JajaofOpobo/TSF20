@@ -51,7 +51,7 @@ public class SwipeyTabs extends ViewGroup implements ViewPager.e {
         this.d = typedArrayObtainStyledAttributes.getDimensionPixelSize(ActionSelectorCallback.j.SwipeyTabs_bottomBarHeight, 2);
         this.e = typedArrayObtainStyledAttributes.getDimensionPixelSize(ActionSelectorCallback.j.SwipeyTabs_tabIndicatorHeight, 3);
         typedArrayObtainStyledAttributes.recycle();
-        a();
+        SwipeyTabs();
     }
 
     private void a() {
@@ -92,7 +92,7 @@ public class SwipeyTabs extends ViewGroup implements ViewPager.e {
             a(this.c, this.h);
             a(this.c + 1, this.i);
             a(this.c - 1, this.j);
-            b();
+            SwipeyTabs();
             if (z) {
                 int iB = this.b.b();
                 for (int i = 0; i < iB; i++) {

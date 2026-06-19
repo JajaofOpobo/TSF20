@@ -9,7 +9,7 @@ public class DashItemC extends DashItemD {
     private k c;
     private TextureElement d;
 
-    public c(int i, boolean z) {
+    public DashItemC(int i, boolean z) {
         super(i, z);
         this.c = new k(com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, false);
         this.c.setAnimationObjectState(true);

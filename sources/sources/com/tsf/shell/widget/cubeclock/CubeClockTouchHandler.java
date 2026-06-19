@@ -12,7 +12,7 @@ public class CubeClockTouchHandler {
     private A e = new CubeClockDigital();
     private c f;
 
-    public q(c cVar) {
+    public CubeClockTouchHandler(c cVar) {
         this.f = cVar;
         this.e.start();
     }

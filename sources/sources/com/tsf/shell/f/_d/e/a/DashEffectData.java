@@ -18,7 +18,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
 
     public abstract void a(g gVar, float f, ArrayList<i> arrayList, Runnable runnable);
 
-    public b(int i) {
+    public DashEffectData(int i) {
         this.a = i;
     }
 

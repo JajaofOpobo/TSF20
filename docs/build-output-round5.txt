@@ -1,0 +1,649 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/a/a/ContactModel.java:258: error: illegal start of type
+        public c((String str, String str2, a aVar) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/a/a/ContactModel.java:276: error: illegal start of type
+        public b((String str, String str2, a aVar) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ShortcutCreator.java:97: error: illegal start of type
+        public a(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:50: error: illegal start of type
+        public b((Handler handler) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:61: error: illegal start of type
+        public A((Handler handler) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: illegal start of type
+        public c((int i, String[] strArr) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: ';' expected
+        public c((int i, String[] strArr) {
+                                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: <identifier> expected
+        public c((int i, String[] strArr) {
+                                        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:178: error: illegal start of type
+        public c((Context context) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:269: error: illegal start of type
+        public C0128a(((Context context) {
+                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:302: error: illegal start of type
+        public b((Context context) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/ShellWallpaperManager.java:365: error: illegal start of type
+        public b(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: illegal start of type
+        public b((Context context, float f, float f2) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: <identifier> expected
+        public b((Context context, float f, float f2) {
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: ';' expected
+        public b((Context context, float f, float f2) {
+                                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:144: error: illegal start of type
+        public MenuItem(((String str) {
+                        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:169: error: illegal start of type
+        public C0150b(((String str, int i) {
+                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:169: error: ';' expected
+        public C0150b(((String str, int i) {
+                                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:187: error: illegal start of type
+        public a(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/MultiSelectLinePicker.java:35: error: illegal start of type
+        public A(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: illegal start of type
+        public a((int i, int i2, String str) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: <identifier> expected
+        public a((int i, int i2, String str) {
+                        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: ';' expected
+        public a((int i, int i2, String str) {
+                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: <identifier> expected
+        public a((int i, int i2, String str) {
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:46: error: illegal start of type
+        public C0143a((() {
+                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/SystemWidgetProviderBrowser.java:184: error: illegal start of type
+        public a((String str) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/TogglePanel.java:98: error: illegal start of type
+        public A(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupRestoreManager.java:115: error: illegal start of type
+        public RestoreTask(((Context context, String str) {
+                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupExportManager.java:114: error: illegal start of type
+        public ExportTask(((Context context, String str, Runnable runnable) {
+                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/DragSortContainer.java:117: error: illegal start of type
+        public C0131a(((i iVar) {
+                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundService.java:22: error: illegal start of type
+        public A(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeInstalledMenu.java:227: error: illegal start of type
+        public a(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeElementInfoLayout.java:151: error: illegal start of type
+        public a((int i) {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeElementInfoLayout.java:151: error: ';' expected
+        public a((int i) {
+                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:70: error: illegal start of type
+        public a(() {
+                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:115: error: '{' expected
+    public class C0080a 
+                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:119: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:121: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:63: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:65: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z - com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:70: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:72: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:73: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:74: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:76: error: class, interface, enum, or record expected
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:78: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:60: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:62: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.A.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.A.K;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:67: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:69: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:70: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:71: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:73: error: class, interface, enum, or record expected
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:75: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:51: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:53: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:58: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:60: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:61: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:62: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:65: error: class, interface, enum, or record expected
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:67: error: class, interface, enum, or record expected
+        DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:68: error: class, interface, enum, or record expected
+        if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:70: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:72: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:74: error: class, interface, enum, or record expected
+        c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:75: error: class, interface, enum, or record expected
+        c0080a.d = ((-180.0f) - (f4 / 2.0f)) + f2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:76: error: class, interface, enum, or record expected
+        c0080a.e = (((-180.0f) - (f4 - f2)) - (c0080a.b / 2.0f)) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:77: error: class, interface, enum, or record expected
+        return c0080a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:78: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:81: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:83: error: class, interface, enum, or record expected
+        return (f <= f2 - 20.0f || f >= f2 + 20.0f) ? 1 : 2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:84: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:49: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:51: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:56: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:58: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:59: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:60: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:63: error: class, interface, enum, or record expected
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:65: error: class, interface, enum, or record expected
+        DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:66: error: class, interface, enum, or record expected
+        if (((-com.censivn.C3DEngine.b.b.A.C) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + iVar.position().y > f) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:68: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:70: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:72: error: class, interface, enum, or record expected
+        c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:73: error: class, interface, enum, or record expected
+        c0080a.d = ((f4 / 2.0f) + 0.0f) - f2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:74: error: class, interface, enum, or record expected
+        c0080a.e = (f4 - f2) + 0.0f + (c0080a.b / 2.0f) + f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:75: error: class, interface, enum, or record expected
+        return c0080a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:76: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:79: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:82: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:84: error: class, interface, enum, or record expected
+    }
+    ^
+100 errors
+
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: ';' expected
+          public c((int i, String[] strArr) {
+                                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: <identifier> expected
+          public c((int i, String[] strArr) {
+                                          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: <identifier> expected
+          public b((Context context, float f, float f2) {
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: ';' expected
+          public b((Context context, float f, float f2) {
+                                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:169: error: ';' expected
+          public C0150b(((String str, int i) {
+                                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: <identifier> expected
+          public a((int i, int i2, String str) {
+                          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: ';' expected
+          public a((int i, int i2, String str) {
+                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: <identifier> expected
+          public a((int i, int i2, String str) {
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeElementInfoLayout.java:151: error: ';' expected
+          public a((int i) {
+                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:115: error: '{' expected
+      public class C0080a 
+                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:63: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:65: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z - com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:70: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:60: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:62: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.A.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.A.K;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:67: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:51: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:53: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:58: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:49: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:51: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:56: error: '{' expected
+      public class Number3d 
+                           ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/a/a/ContactModel.java:258: error: illegal start of type
+          public c((String str, String str2, a aVar) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/c/a/a/ContactModel.java:276: error: illegal start of type
+          public b((String str, String str2, a aVar) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/ShortcutCreator.java:97: error: illegal start of type
+          public a(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:50: error: illegal start of type
+          public b((Handler handler) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/action/toggle/ToggleStateManager.java:61: error: illegal start of type
+          public A((Handler handler) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:854: error: illegal start of type
+          public c((int i, String[] strArr) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:178: error: illegal start of type
+          public c((Context context) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:269: error: illegal start of type
+          public C0128a(((Context context) {
+                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/h/ScreenLockController.java:302: error: illegal start of type
+          public b((Context context) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/ShellWallpaperManager.java:365: error: illegal start of type
+          public b(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperPreviewRenderer.java:61: error: illegal start of type
+          public b((Context context, float f, float f2) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:144: error: illegal start of type
+          public MenuItem(((String str) {
+                          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:169: error: illegal start of type
+          public C0150b(((String str, int i) {
+                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/WallpaperMenuPanel.java:187: error: illegal start of type
+          public a(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/MultiSelectLinePicker.java:35: error: illegal start of type
+          public A(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/c/WidgetCompatibilityChecker.java:40: error: illegal start of type
+          public a((int i, int i2, String str) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:46: error: illegal start of type
+          public C0143a((() {
+                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/c/SystemWidgetProviderBrowser.java:184: error: illegal start of type
+          public a((String str) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/b/TogglePanel.java:98: error: illegal start of type
+          public A(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupRestoreManager.java:115: error: illegal start of type
+          public RestoreTask(((Context context, String str) {
+                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/b/BackupExportManager.java:114: error: illegal start of type
+          public ExportTask(((Context context, String str, Runnable runnable) {
+                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/DragSortContainer.java:117: error: illegal start of type
+          public C0131a(((i iVar) {
+                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/services/ForegroundService.java:22: error: illegal start of type
+          public A(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/ThemeInstalledMenu.java:227: error: illegal start of type
+          public a(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeElementInfoLayout.java:151: error: illegal start of type
+          public a((int i) {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:70: error: illegal start of type
+          public a(() {
+                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:119: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:121: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:72: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:73: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:74: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:76: error: class, interface, enum, or record expected
+      public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:78: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:69: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:70: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:71: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:73: error: class, interface, enum, or record expected
+      public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:75: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:60: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:61: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:62: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:65: error: class, interface, enum, or record expected
+      public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:67: error: class, interface, enum, or record expected
+          DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:68: error: class, interface, enum, or record expected
+          if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:70: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:72: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:74: error: class, interface, enum, or record expected
+          c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:75: error: class, interface, enum, or record expected
+          c0080a.d = ((-180.0f) - (f4 / 2.0f)) + f2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:76: error: class, interface, enum, or record expected
+          c0080a.e = (((-180.0f) - (f4 - f2)) - (c0080a.b / 2.0f)) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:77: error: class, interface, enum, or record expected
+          return c0080a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:78: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:81: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:83: error: class, interface, enum, or record expected
+          return (f <= f2 - 20.0f || f >= f2 + 20.0f) ? 1 : 2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:84: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:58: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:59: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:60: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:63: error: class, interface, enum, or record expected
+      public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:65: error: class, interface, enum, or record expected
+          DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:66: error: class, interface, enum, or record expected
+          if (((-com.censivn.C3DEngine.b.b.A.C) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + iVar.position().y > f) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:68: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:70: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:72: error: class, interface, enum, or record expected
+          c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:73: error: class, interface, enum, or record expected
+          c0080a.d = ((f4 / 2.0f) + 0.0f) - f2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:74: error: class, interface, enum, or record expected
+          c0080a.e = (f4 - f2) + 0.0f + (c0080a.b / 2.0f) + f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:75: error: class, interface, enum, or record expected
+          return c0080a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:76: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:79: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:82: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:84: error: class, interface, enum, or record expected
+      }
+      ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 2s
+15 actionable tasks: 1 executed, 14 up-to-date

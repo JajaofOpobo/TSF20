@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.core.VObject3d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CubeClockData {
-    public class VObject3d 
+    public VObject3d c() {
         return new CubeClockFace(context, num.intValue());
     }
 }

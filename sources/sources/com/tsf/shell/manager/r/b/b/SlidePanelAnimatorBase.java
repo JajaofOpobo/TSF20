@@ -31,9 +31,9 @@ public class SlidePanelAnimatorBase {
             this.c.position().y = -this.d.getHeight();
             this.c.visible(false);
             this.c.alpha(0.0f);
-            b();
+            SlidePanelAnimatorBase();
         }
-        a();
+        SlidePanelAnimatorBase();
     }
 
     public void b(boolean z) {
@@ -56,10 +56,10 @@ public class SlidePanelAnimatorBase {
         } else {
             this.c.alpha(255.0f);
             this.c.position().y = 0.0f;
-            d();
+            SlidePanelAnimatorBase();
         }
         this.c.visible(true);
-        c();
+        SlidePanelAnimatorBase();
     }
 
     public void a() {

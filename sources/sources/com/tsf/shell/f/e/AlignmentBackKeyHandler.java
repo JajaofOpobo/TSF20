@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.c.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class AlignmentBackKeyHandler implements b.a {
-    g () {
+    AlignmentBackKeyHandler() {
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a

@@ -17,7 +17,7 @@ public class ToggleActionVolume extends com.tsf.shell.manager.action.toggle.Togg
         super(i);
         b(2);
         this.c = (AudioManager) com.censivn.C3DEngine.A.d().getSystemService("audio");
-        d();
+        ToggleActionVolume();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction
@@ -37,7 +37,7 @@ public class ToggleActionVolume extends com.tsf.shell.manager.action.toggle.Togg
             }
             return;
         }
-        h();
+        ToggleActionVolume();
     }
 
     private void h() {

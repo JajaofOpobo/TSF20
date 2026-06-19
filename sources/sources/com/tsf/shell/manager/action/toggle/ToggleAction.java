@@ -51,7 +51,7 @@ public class ToggleAction {
         if (!this.b.contains(iVar)) {
             this.b.add(iVar);
             if (this.b.size() == 1) {
-                f();
+                ToggleAction();
             }
             iVar.a(this.c);
         }
@@ -61,13 +61,13 @@ public class ToggleAction {
         this.b.remove(iVar);
         iVar.aW();
         if (this.b.isEmpty() && !this.d) {
-            e();
+            ToggleAction();
         }
     }
 
     public void e() {
         this.c.aX();
-        g();
+        ToggleAction();
     }
 
     public void f() {

@@ -15,7 +15,7 @@ public class WallpaperConfig extends r {
     private PackageManager b;
     private Context c;
 
-    public c(o oVar, List<ResolveInfo> list, Context context) {
+    public WallpaperConfig(o oVar, List<ResolveInfo> list, Context context) {
         super(oVar);
         this.c = context;
         this.b = context.getPackageManager();
@@ -38,7 +38,7 @@ public class WallpaperConfig extends r {
     }
 
     @Override // android.support.v4.view.ac
-    public class CharSequence 
+    public CharSequence c() {
         String str = "";
         for (String str2 : this.a.get(i).loadLabel(this.b).toString().split(" ")) {
             if (str.length() < 10) {

@@ -154,7 +154,7 @@ public class RateDialog extends j {
         a(this.u, m, 750, 100, com.censivn.C3DEngine.b.g.a.n, null);
         a(this.s, j, 750, VEasing.Back.easeIn, com.censivn.C3DEngine.b.g.a.n, null);
         a(this.t, k, 750, 300, com.censivn.C3DEngine.b.g.a.n, null);
-        f();
+        RateDialog();
     }
 
     private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.b bVar, Runnable runnable) {

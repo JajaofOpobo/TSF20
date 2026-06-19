@@ -128,14 +128,14 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             this.a.setFocus();
             this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
             com.tsf.shell.manager.app.ObserverManager.a(this);
-            e();
+            A();
         }
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            c();
+            A();
         }
     }
 
@@ -150,7 +150,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             com.censivn.C3DEngine.b.c.b.b(this);
             this.a.removeFromParent();
             com.tsf.shell.manager.app.ObserverManager.b(this);
-            d();
+            A();
         }
     }
 

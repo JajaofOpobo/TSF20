@@ -20,7 +20,7 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
 
     public abstract void d();
 
-    public j(VTextureManager vTextureManager, Context context) {
+    public AsyncTextureNode(VTextureManager vTextureManager, Context context) {
         this.i = context;
         this.j = vTextureManager;
     }
@@ -56,8 +56,8 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
         ItemStubHelper.a("onTaskFinish:" + aVar);
         this.k.remove(aVar);
         if (this.k.size() == 0) {
-            f();
-            g();
+            AsyncTextureNode();
+            AsyncTextureNode();
         }
     }
 
@@ -87,8 +87,8 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
         /* JADX INFO: Access modifiers changed from: protected */
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i._c.a.c
-        public class Bitmap 
-            return l.a(j.this.i, this.d);
+        public Bitmap c() {
+                        return l.a(j.this.i, this.d);
         }
 
         public void e() {
@@ -123,7 +123,7 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
     public void a() {
         ItemStubHelper.a("animationComplete");
         if (this.a) {
-            d();
+            a();
         }
     }
 }

@@ -28,7 +28,7 @@ public class SceneAnimationController implements c.a {
     private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.2
         @Override // com.tsf.shell.f.e.ObjectPool
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public class C0112a 
+        public C0112a a() {
             C0112a c0112a = a.this.new C0112a();
             c0112a.setAABBPX(com.tsf.shell.manager.o.ButtonPresetManager.a.T, com.tsf.shell.manager.o.ButtonPresetManager.a.U);
             c0112a.position().y = -com.censivn.C3DEngine.b.b.A.a(30.0f);
@@ -37,7 +37,7 @@ public class SceneAnimationController implements c.a {
     };
     private com.censivn.C3DEngine.b.b.A.b c = new com.censivn.C3DEngine.b.b.A.b();
 
-    public a(c cVar) {
+    public SceneAnimationController(c cVar) {
         this.e = 8;
         this.a = cVar;
         this.c.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(180.0f));
@@ -51,7 +51,7 @@ public class SceneAnimationController implements c.a {
     public void a(int i, boolean z) {
         this.e = b(i);
         if (z) {
-            n();
+            SceneAnimationController();
             e.u(this.e);
         }
     }
@@ -121,7 +121,7 @@ public class SceneAnimationController implements c.a {
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void c() {
-        n();
+        SceneAnimationController();
     }
 
     private m m() {
@@ -139,7 +139,7 @@ public class SceneAnimationController implements c.a {
     private void n() {
         System.currentTimeMillis();
         ArrayList<g> arrayListA = com.tsf.shell.manager.app.ServiceProvider.a().a().a(this.e);
-        l();
+        SceneAnimationController();
         if (arrayListA.isEmpty()) {
             this.c.addChild(m());
             return;

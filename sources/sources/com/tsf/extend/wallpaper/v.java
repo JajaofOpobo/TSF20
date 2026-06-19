@@ -190,7 +190,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
     private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a.b b;
 
-        public b(a.b bVar) {
+        public v(a.b bVar) {
             this.b = bVar;
         }
 
@@ -214,7 +214,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
     class A extends BaseAdapter {
         private C0072a b = new C0072a();
 
-        public A() {
+        public v() {
         }
 
         @Override // android.widget.Adapter

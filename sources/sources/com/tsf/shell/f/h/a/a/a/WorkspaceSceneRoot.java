@@ -2,17 +2,18 @@ package com.tsf.shell.f.h.a.a.a;
 
 import android.content.Context;
 import com.censivn.C3DEngine.api.element.Number3d;
+import com.tsf.shell.f.e.c.a.PageScrollState;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceSceneRoot extends 
+public class WorkspaceSceneRoot extends PageScrollState {
     private float a;
     private float b;
     private Number3d c;
     private Number3d d;
     private boolean e;
 
-    public b(Context context, float f, float f2, float f3, int i) {
+    public WorkspaceSceneRoot(Context context, float f, float f2, float f3, int i) {
         super(context, f, f2, f3, i);
         this.a = 0.0f;
         this.b = 0.0f;

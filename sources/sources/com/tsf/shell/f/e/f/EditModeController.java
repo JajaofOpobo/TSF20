@@ -72,7 +72,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
         }
     };
 
-    public a() {
+    public EditModeController() {
         int i = 0;
         this.d.addChild(this.e);
         this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d));
@@ -293,7 +293,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
                 this.d.position().x = f;
                 this.d.position().y = fQ;
                 cVar.alpha(0.0f);
-                g();
+                AnonymousClass2();
                 if (!this.n) {
                     com.tsf.shell.manager.app.AppListModel.c(this);
                 }
@@ -462,8 +462,8 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
     /* JADX INFO: renamed from: com.tsf.shell.f.e.f.EditModeController$a, reason: collision with other inner class name */
     public static class C0094a {
         private static Paint g;
-        public class String 
-        public class String 
+        public String a;
+        public String b;
         public int c;
         private TextureElement d;
         private TextureElement e;
@@ -483,14 +483,14 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
             }
         }
 
-        public class TextureElement 
+        public TextureElement h() {
             if (this.e == null) {
                 this.e = ThemeManager.mix.iconMenu.getTextureElement(this.b, com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h);
             }
             return this.e;
         }
 
-        public class TextureElement 
+        public TextureElement i() {
             if (this.d == null) {
                 this.d = ThemeManager.mix.iconMenu.getTextureElement(this.a, com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h);
             }
@@ -542,7 +542,8 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
     }
 
     public class c extends com.censivn.C3DEngine.b.f.j {
-        public class C0094a 
+        /* JADX WARN: decompile error */
+        public C0094a mData;
         public int e;
         public boolean a = false;
         public k c = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);

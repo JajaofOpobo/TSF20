@@ -22,13 +22,13 @@ public class BackgroundSceneNode extends j {
     private float B;
     private float C;
     boolean a;
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
     private final int m;
     private VRectangle n;
     private VRectangle o;
@@ -44,7 +44,7 @@ public class BackgroundSceneNode extends j {
     private VObject3dContainer y;
     private VObject3dContainer z;
 
-    public h(VTextureManager vTextureManager, Context context, float f, float f2) {
+    public BackgroundSceneNode(VTextureManager vTextureManager, Context context, float f, float f2) {
         super(vTextureManager, context);
         this.m = 1000;
         this.B = 1.0f;
@@ -52,17 +52,17 @@ public class BackgroundSceneNode extends j {
         this.a = false;
         this.B = f;
         this.C = f2;
-        e();
+        BackgroundSceneNode();
     }
 
     private void e() {
         this.z = new VObject3dContainer();
         this.A = new VObject3dContainer();
-        m();
-        l();
+        BackgroundSceneNode();
+        BackgroundSceneNode();
         this.z.addChild(this.A);
         addChild(this.z);
-        c();
+        BackgroundSceneNode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -373,7 +373,7 @@ public class BackgroundSceneNode extends j {
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback
     public void b() {
-        j();
+        BackgroundSceneNode();
     }
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback

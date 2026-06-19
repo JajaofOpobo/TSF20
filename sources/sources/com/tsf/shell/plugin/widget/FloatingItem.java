@@ -10,7 +10,7 @@ public class FloatingItem implements Parcelable {
 
         @Override
 
-        public class FloatingItem 
+        public FloatingItem c() {
             return new FloatingItem(parcel);
         }
 
@@ -22,8 +22,8 @@ public class FloatingItem implements Parcelable {
     }
     
     public static final Parcelable.Creator<FloatingItem> CREATOR = new Creator();
-    public class String 
-    public class String 
+    public String a;
+    public String a;
     public float c;
     public float d;
     public float e;
@@ -37,8 +37,8 @@ public class FloatingItem implements Parcelable {
     public boolean m;
     public float n;
     public boolean o;
-    public class Animation 
-    public class TSFsequence 
+    public Animation a;
+    public TSFsequence a;
 
     public FloatingItem() {
         this.f = true;

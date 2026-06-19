@@ -123,7 +123,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
                 }
             }
         };
-        r();
+        WorkspaceStateController();
         this.g = this.e.c();
         this.g.mouseEnabled(this.t);
         this.f = new WorkspaceDockPanel(this);
@@ -174,7 +174,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
 
     public void h() {
         this.e.b(ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor);
-        c().e();
+        WorkspaceStateController().e();
     }
 
     public void i() {
@@ -364,7 +364,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            o();
+            WorkspaceStateController();
         }
     }
 
@@ -374,7 +374,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        r();
+        WorkspaceStateController();
         this.s.l();
     }
 

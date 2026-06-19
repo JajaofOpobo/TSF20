@@ -73,7 +73,7 @@ public class AlignmentEngine {
                     c.i.a(iVar, (com.tsf.shell.f.i.b.e.DrawerItemVisual) c.j.get(i2));
                     c.j.remove(i2);
                     a(i2);
-                    b();
+                    AlignmentEngine();
                     if (c.j.size() == 0) {
                         c.b();
                     }
@@ -156,20 +156,20 @@ public class AlignmentEngine {
         }
         k = arrayList;
         j = new ArrayList<>();
-        a();
+        AlignmentEngine();
         i = aVar;
         i.e();
-        h();
+        AlignmentEngine();
         com.tsf.shell.manager.app.ServiceProvider.a().a.a(l);
         com.tsf.shell.manager.app.ServiceProvider.a().a.b();
-        j();
+        AlignmentEngine();
         if (AlignmentBackHandler.parent() == null) {
             AlignmentBackHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
         } else {
             AlignmentBackHandler.removeFromParent();
         }
         com.tsf.shell.manager.app.TaskScheduler.a(AlignmentBackHandler);
-        i();
+        AlignmentEngine();
     }
 
     public static void b() {
@@ -177,7 +177,7 @@ public class AlignmentEngine {
             com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
             com.censivn.C3DEngine.b.c.b.b(f);
             com.tsf.shell.manager.app.ObserverManager.b(g);
-            c();
+            AlignmentEngine();
         }
     }
 
@@ -229,6 +229,6 @@ public class AlignmentEngine {
     }
 
     public static void a(int i2, int i3, int i4, int i5) {
-        j();
+        AlignmentEngine();
     }
 }

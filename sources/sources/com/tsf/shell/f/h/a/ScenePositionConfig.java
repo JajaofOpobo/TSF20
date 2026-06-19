@@ -12,9 +12,9 @@ public class ScenePositionConfig extends j {
     private int a;
     private int b;
 
-    public B() {
+    public ScenePositionConfig() {
         h(b.i.text_direction);
-        a(new j.a() { // from class: com.tsf.shell.f.h.a.b.1
+        a(new j.ScenePositionConfig() { // from class: com.tsf.shell.f.h.a.b.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
                 com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.b.1.1
@@ -41,7 +41,7 @@ public class ScenePositionConfig extends j {
                 this.a = 0;
                 break;
         }
-        m();
+        ScenePositionConfig();
     }
 
     public int e() {

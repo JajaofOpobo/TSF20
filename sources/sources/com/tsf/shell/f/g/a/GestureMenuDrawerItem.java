@@ -15,7 +15,7 @@ public class GestureMenuDrawerItem extends com.tsf.shell.f.e._g.a.MenuActionItem
     public b a;
     private com.censivn.C3DEngine.b.h.b.h b;
 
-    public d(b bVar) {
+    public GestureMenuDrawerItem(b bVar) {
         super(GestureMenuOverlay.i.mn_drawer);
         this.a = bVar;
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();

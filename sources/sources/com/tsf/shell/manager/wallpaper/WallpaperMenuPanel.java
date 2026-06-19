@@ -31,7 +31,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     puWallpaperMenuPanellic b(e eVar) {
         super(x.c(b.i.text_wallpapers));
         this.b = eVar;
-        a();
+        WallpaperMenuPanel();
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase

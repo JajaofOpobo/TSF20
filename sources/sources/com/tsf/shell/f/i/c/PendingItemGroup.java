@@ -19,7 +19,7 @@ public class PendingItemGroup extends ItemGroupBase {
     private TextureElement q = new TextureElement(0, false);
     private TextureElement r = new TextureElement(0, false);
 
-    public d() {
+    public PendingItemGroup() {
         b(true);
     }
 
@@ -49,13 +49,13 @@ public class PendingItemGroup extends ItemGroupBase {
         if (this.k == null) {
             this.k = q();
         } else {
-            p();
+            PendingItemGroup();
         }
         return this.k;
     }
 
     private j q() {
-        p();
+        PendingItemGroup();
         j jVar = new j();
         this.l = new k(242.0f * com.censivn.C3DEngine.b.b.A.c, 150.0f * com.censivn.C3DEngine.b.b.A.c, false) { // from class: com.tsf.shell.f.i.c.PendingItemGroup.1
             float a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
@@ -108,7 +108,7 @@ public class PendingItemGroup extends ItemGroupBase {
         boolean i;
         float j;
 
-        public a(float f, float f2, float f3, float f4, boolean z, boolean z2) {
+        public PendingItemGroup(float f, float f2, float f3, float f4, boolean z, boolean z2) {
             super(f, f2, false);
             this.a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
             this.d = 10;

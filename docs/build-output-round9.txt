@@ -1,0 +1,648 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:7: error: illegal start of type
+    public float a;
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:7: error: class, interface, enum, or record expected
+    public float a;
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:8: error: class, interface, enum, or record expected
+    private float b;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:9: error: class, interface, enum, or record expected
+    private float c;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:10: error: class, interface, enum, or record expected
+    private float d;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:11: error: class, interface, enum, or record expected
+    private float e;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:12: error: class, interface, enum, or record expected
+    private e f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:14: error: class, interface, enum, or record expected
+    public PageContainer(float f, e eVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:16: error: class, interface, enum, or record expected
+        this.b = 0.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:17: error: class, interface, enum, or record expected
+        this.c = 0.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:18: error: class, interface, enum, or record expected
+        this.d = 0.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:19: error: class, interface, enum, or record expected
+        this.e = 0.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:20: error: class, interface, enum, or record expected
+        this.a = 0.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:21: error: class, interface, enum, or record expected
+        a(f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:22: error: class, interface, enum, or record expected
+        this.f = eVar;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:23: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:25: error: class, interface, enum, or record expected
+    public void a(e eVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:27: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:29: error: class, interface, enum, or record expected
+    public void a(float f, float f2) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:31: error: class, interface, enum, or record expected
+        this.c = f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:32: error: class, interface, enum, or record expected
+        this.e = f2 / 2.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:33: error: class, interface, enum, or record expected
+        this.d = f / 2.0f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:34: error: class, interface, enum, or record expected
+        point().setPX(0, this.d, -this.e, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:35: error: class, interface, enum, or record expected
+        point().setPX(1, -this.d, -this.e, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:36: error: class, interface, enum, or record expected
+        point().setPX(2, this.d, this.e, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:37: error: class, interface, enum, or record expected
+        point().setPX(3, -this.d, this.e, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:38: error: class, interface, enum, or record expected
+        updatePointsVBO();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:39: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:41: error: class, interface, enum, or record expected
+    public void a(float f) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:43: error: class, interface, enum, or record expected
+        a(this.a * 2.0f, this.a * 2.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:44: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:46: error: class, interface, enum, or record expected
+    public void b(float f) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:48: error: class, interface, enum, or record expected
+        float f3 = this.f.b;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:49: error: class, interface, enum, or record expected
+        a(((float) Math.sqrt((f2 * f2) + (f3 * f3))) - this.f.c);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:50: error: class, interface, enum, or record expected
+        position().x = f;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:51: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:53: error: class, interface, enum, or record expected
+    public float a() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:55: error: class, interface, enum, or record expected
+        if (position().x < 0.0f) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:57: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:59: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/MeshRenderer.java:63: error: invalid method declaration; return type required
+        public MeshRenderer(float f, float f2, float f3, int i, int i2) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/MeshRenderer.java:74: error: invalid method declaration; return type required
+        public MeshRenderer(float f, float f2, float f3) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:50: error: '{' expected
+    public class TextureElement 
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:54: error: '{' expected
+    public class TextureElement 
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:56: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:58: error: class, interface, enum, or record expected
+    public void a(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:60: error: class, interface, enum, or record expected
+        d dVar = new d();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:61: error: class, interface, enum, or record expected
+        dVar.a(this.g);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:62: error: class, interface, enum, or record expected
+        c.a(this.c);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:63: error: class, interface, enum, or record expected
+        c.a(this.c, VEasing.Back.easeIn, dVar);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:64: error: class, interface, enum, or record expected
+        this.i.alpha(255.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:65: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:67: error: class, interface, enum, or record expected
+    public void b(int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:69: error: class, interface, enum, or record expected
+        com.censivn.C3DEngine.A.g().a(this.k, bitmapC);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:70: error: class, interface, enum, or record expected
+        bitmapC.recycle();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:71: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:76: error: class, interface, enum, or record expected
+            public void onKillFocus() {
+                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:78: error: class, interface, enum, or record expected
+            }
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:80: error: class, interface, enum, or record expected
+        this.i.textures().addElement(this.k);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:81: error: class, interface, enum, or record expected
+        this.i.setAABBSP(-this.f, -this.f, 0.0f, this.f, this.f, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:82: error: class, interface, enum, or record expected
+        addChild(this.i);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:83: error: class, interface, enum, or record expected
+        setAABBSP(-this.f, -this.f, 0.0f, this.f, this.f, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:84: error: class, interface, enum, or record expected
+        this.a = j();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:85: error: class, interface, enum, or record expected
+        addChild(this.a);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:86: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:88: error: class, interface, enum, or record expected
+    public void a(j jVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:90: error: class, interface, enum, or record expected
+        this.b.scale().setAll(0.0f, 0.0f, 0.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:91: error: class, interface, enum, or record expected
+        this.b.visible(false);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:92: error: class, interface, enum, or record expected
+        addChild(this.b);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:93: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:95: error: class, interface, enum, or record expected
+    public j c() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:97: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:99: error: class, interface, enum, or record expected
+    public void a(float f, float f2, float f3, float f4, int i, boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:101: error: class, interface, enum, or record expected
+        d dVar = new d();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:102: error: class, interface, enum, or record expected
+        dVar.a(255);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:103: error: class, interface, enum, or record expected
+        c.a(this.c);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:104: error: class, interface, enum, or record expected
+        c.a(this.c, 250, dVar);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:105: error: class, interface, enum, or record expected
+        this.i.alpha(i);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:106: error: class, interface, enum, or record expected
+        if (z) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:108: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:110: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:113: error: class, interface, enum, or record expected
+    public void a(float f, float f2, Runnable runnable, boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:116: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:118: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:121: error: class, interface, enum, or record expected
+    public void d() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:125: error: class, interface, enum, or record expected
+    public void onKillFocus() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:128: error: class, interface, enum, or record expected
+    public static Bitmap c(int i) {
+                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:130: error: class, interface, enum, or record expected
+        Canvas canvas = new Canvas(bitmapCreateBitmap);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:131: error: class, interface, enum, or record expected
+        Paint paint = new Paint();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:132: error: class, interface, enum, or record expected
+        paint.setAntiAlias(true);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:133: error: class, interface, enum, or record expected
+        paint.setColor(i);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:134: error: class, interface, enum, or record expected
+        canvas.drawCircle(128.0f, 128.0f, 125.0f, paint);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:135: error: class, interface, enum, or record expected
+        return bitmapCreateBitmap;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:136: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:140: error: class, interface, enum, or record expected
+        kVar.textures().addElement(this.j);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:141: error: class, interface, enum, or record expected
+        return kVar;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:142: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:146: error: class, interface, enum, or record expected
+        d dVar = new d();
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:147: error: class, interface, enum, or record expected
+        dVar.l(1.0f);
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:148: error: class, interface, enum, or record expected
+        dVar.m(1.0f);
+        ^
+100 errors
+
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:50: error: '{' expected
+      public class TextureElement 
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:54: error: '{' expected
+      public class TextureElement 
+                                 ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:7: error: illegal start of type
+      public float a;
+      ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:7: error: class, interface, enum, or record expected
+      public float a;
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:8: error: class, interface, enum, or record expected
+      private float b;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:9: error: class, interface, enum, or record expected
+      private float c;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:10: error: class, interface, enum, or record expected
+      private float d;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:11: error: class, interface, enum, or record expected
+      private float e;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:12: error: class, interface, enum, or record expected
+      private e f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:14: error: class, interface, enum, or record expected
+      public PageContainer(float f, e eVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:16: error: class, interface, enum, or record expected
+          this.b = 0.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:17: error: class, interface, enum, or record expected
+          this.c = 0.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:18: error: class, interface, enum, or record expected
+          this.d = 0.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:19: error: class, interface, enum, or record expected
+          this.e = 0.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:20: error: class, interface, enum, or record expected
+          this.a = 0.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:21: error: class, interface, enum, or record expected
+          a(f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:22: error: class, interface, enum, or record expected
+          this.f = eVar;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:23: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:25: error: class, interface, enum, or record expected
+      public void a(e eVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:27: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:29: error: class, interface, enum, or record expected
+      public void a(float f, float f2) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:31: error: class, interface, enum, or record expected
+          this.c = f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:32: error: class, interface, enum, or record expected
+          this.e = f2 / 2.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:33: error: class, interface, enum, or record expected
+          this.d = f / 2.0f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:34: error: class, interface, enum, or record expected
+          point().setPX(0, this.d, -this.e, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:35: error: class, interface, enum, or record expected
+          point().setPX(1, -this.d, -this.e, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:36: error: class, interface, enum, or record expected
+          point().setPX(2, this.d, this.e, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:37: error: class, interface, enum, or record expected
+          point().setPX(3, -this.d, this.e, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:38: error: class, interface, enum, or record expected
+          updatePointsVBO();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:39: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:41: error: class, interface, enum, or record expected
+      public void a(float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:43: error: class, interface, enum, or record expected
+          a(this.a * 2.0f, this.a * 2.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:44: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:46: error: class, interface, enum, or record expected
+      public void b(float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:48: error: class, interface, enum, or record expected
+          float f3 = this.f.b;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:49: error: class, interface, enum, or record expected
+          a(((float) Math.sqrt((f2 * f2) + (f3 * f3))) - this.f.c);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:50: error: class, interface, enum, or record expected
+          position().x = f;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:51: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:53: error: class, interface, enum, or record expected
+      public float a() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:55: error: class, interface, enum, or record expected
+          if (position().x < 0.0f) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:57: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageContainer.java:59: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:56: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:58: error: class, interface, enum, or record expected
+      public void a(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:60: error: class, interface, enum, or record expected
+          d dVar = new d();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:61: error: class, interface, enum, or record expected
+          dVar.a(this.g);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:62: error: class, interface, enum, or record expected
+          c.a(this.c);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:63: error: class, interface, enum, or record expected
+          c.a(this.c, VEasing.Back.easeIn, dVar);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:64: error: class, interface, enum, or record expected
+          this.i.alpha(255.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:65: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:67: error: class, interface, enum, or record expected
+      public void b(int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:69: error: class, interface, enum, or record expected
+          com.censivn.C3DEngine.A.g().a(this.k, bitmapC);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:70: error: class, interface, enum, or record expected
+          bitmapC.recycle();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:71: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:76: error: class, interface, enum, or record expected
+              public void onKillFocus() {
+                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:78: error: class, interface, enum, or record expected
+              }
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:80: error: class, interface, enum, or record expected
+          this.i.textures().addElement(this.k);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:81: error: class, interface, enum, or record expected
+          this.i.setAABBSP(-this.f, -this.f, 0.0f, this.f, this.f, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:82: error: class, interface, enum, or record expected
+          addChild(this.i);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:83: error: class, interface, enum, or record expected
+          setAABBSP(-this.f, -this.f, 0.0f, this.f, this.f, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:84: error: class, interface, enum, or record expected
+          this.a = j();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:85: error: class, interface, enum, or record expected
+          addChild(this.a);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:86: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:88: error: class, interface, enum, or record expected
+      public void a(j jVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:90: error: class, interface, enum, or record expected
+          this.b.scale().setAll(0.0f, 0.0f, 0.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:91: error: class, interface, enum, or record expected
+          this.b.visible(false);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:92: error: class, interface, enum, or record expected
+          addChild(this.b);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:93: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:95: error: class, interface, enum, or record expected
+      public j c() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:97: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:99: error: class, interface, enum, or record expected
+      public void a(float f, float f2, float f3, float f4, int i, boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:101: error: class, interface, enum, or record expected
+          d dVar = new d();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:102: error: class, interface, enum, or record expected
+          dVar.a(255);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:103: error: class, interface, enum, or record expected
+          c.a(this.c);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:104: error: class, interface, enum, or record expected
+          c.a(this.c, 250, dVar);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:105: error: class, interface, enum, or record expected
+          this.i.alpha(i);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:106: error: class, interface, enum, or record expected
+          if (z) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:108: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:110: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:113: error: class, interface, enum, or record expected
+      public void a(float f, float f2, Runnable runnable, boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:116: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:118: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:121: error: class, interface, enum, or record expected
+      public void d() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:125: error: class, interface, enum, or record expected
+      public void onKillFocus() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:128: error: class, interface, enum, or record expected
+      public static Bitmap c(int i) {
+                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:130: error: class, interface, enum, or record expected
+          Canvas canvas = new Canvas(bitmapCreateBitmap);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:131: error: class, interface, enum, or record expected
+          Paint paint = new Paint();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:132: error: class, interface, enum, or record expected
+          paint.setAntiAlias(true);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:133: error: class, interface, enum, or record expected
+          paint.setColor(i);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:134: error: class, interface, enum, or record expected
+          canvas.drawCircle(128.0f, 128.0f, 125.0f, paint);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:135: error: class, interface, enum, or record expected
+          return bitmapCreateBitmap;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:136: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:140: error: class, interface, enum, or record expected
+          kVar.textures().addElement(this.j);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:141: error: class, interface, enum, or record expected
+          return kVar;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:142: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:146: error: class, interface, enum, or record expected
+          d dVar = new d();
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:147: error: class, interface, enum, or record expected
+          dVar.l(1.0f);
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/AnimationNode.java:148: error: class, interface, enum, or record expected
+          dVar.m(1.0f);
+          ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/MeshRenderer.java:63: error: invalid method declaration; return type required
+          public MeshRenderer(float f, float f2, float f3, int i, int i2) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/MeshRenderer.java:74: error: invalid method declaration; return type required
+          public MeshRenderer(float f, float f2, float f3) {
+                 ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 3s
+15 actionable tasks: 1 executed, 14 up-to-date

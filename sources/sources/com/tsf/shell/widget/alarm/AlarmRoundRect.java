@@ -16,7 +16,7 @@ public class AlarmRoundRect extends VRectangle {
     private static float g = 1.2f;
     public static boolean f = false;
 
-    public B() {
+    public AlarmRoundRect() {
         super(512.0f / g, 512.0f / g);
         this.h = VInformation.Scale();
         this.a = new float[]{(-208.0f) * this.h, 0.0f, 0.0f, 1.0f};

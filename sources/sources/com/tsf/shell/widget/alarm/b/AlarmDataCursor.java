@@ -13,7 +13,7 @@ public class AlarmDataCursor extends AlarmDataEntry {
     public AlarmDataEntry.a b;
     public AlarmDataEntry.a c;
 
-    public c(Context context, VTextureManager vTextureManager) {
+    public AlarmDataCursor(Context context, VTextureManager vTextureManager) {
         super(context, vTextureManager);
         this.a = new AlarmDataEntry.a[10];
         for (int i = 0; i < 10; i++) {
@@ -30,8 +30,8 @@ public class AlarmDataCursor extends AlarmDataEntry {
         bitmapA.recycle();
     }
 
-    public class Bitmap 
-        return p.a(this.i, "digital_clock");
+    public Bitmap c() {
+                return p.a(this.i, "digital_clock");
     }
 
     @Override // com.tsf.shell.widget.alarm.b.AlarmDataEntry

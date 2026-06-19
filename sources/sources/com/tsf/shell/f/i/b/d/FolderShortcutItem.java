@@ -297,7 +297,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         return this.aa;
     }
 
-    public b(ItemInfo itemInfo) {
+    public FolderShortcutItem(ItemInfo itemInfo) {
         super(itemInfo);
         this.x = true;
         this.y = false;
@@ -543,8 +543,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         return K() instanceof LauncherDrawerFolder3DInfo;
     }
 
-    public class TextureElement 
-        return this.u;
+    public TextureElement c() {
+                return this.u;
     }
 
     @Override // com.tsf.shell.f.i.a.InterfaceC0113a
@@ -819,7 +819,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         }
     }
 
-    public class CharSequence 
+    public CharSequence c() {
         return K().title;
     }
 

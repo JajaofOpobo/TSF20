@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class ItemDataState {
     private ArrayList<a> a = new ArrayList<>();
 
-    public class TextureElement 
-        if (aVar.b == null) {
+    public TextureElement c() {
+                if (aVar.b == null) {
             return null;
         }
         String str = aVar.b.a + ":" + aVar.b.b;
@@ -102,11 +102,11 @@ public class ItemDataState {
     }
 
     class a {
-        public class TextureElement 
+        public TextureElement a;
         public ArrayList<com.tsf.shell.f.i.b.c.ItemDataConfig> b = new ArrayList<>();
-        public class String 
+        public String a;
 
-        public a(TextureElement textureElement, String str) {
+        public ItemDataState(TextureElement textureElement, String str) {
             this.a = textureElement;
             this.c = str;
         }

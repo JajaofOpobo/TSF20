@@ -10,7 +10,7 @@ public class WidgetVisualNode extends f {
     private j a;
     private j b;
 
-    public a(Context context, j jVar) {
+    public WidgetVisualNode(Context context, j jVar) {
         this.b = jVar;
         d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);

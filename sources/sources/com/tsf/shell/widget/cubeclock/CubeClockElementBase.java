@@ -10,7 +10,7 @@ public abstract class CubeClockElementBase {
 
     public abstract float[] a(int i);
 
-    public e(c cVar) {
+    public CubeClockElementBase(c cVar) {
         this.c = cVar;
     }
 

@@ -47,7 +47,7 @@ public class ShellContentManagerV2 {
         SHOW_NOTHING
     }
 
-    public a(Activity activity) {
+    public ShellContentManagerV2(Activity activity) {
         this.f = activity;
     }
 

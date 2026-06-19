@@ -10,7 +10,7 @@ public class WidgetElementBase extends com.censivn.C3DEngine.b.f.k {
     private float f;
     private Color4 g;
 
-    public i(float f, float f2) {
+    public WidgetElementBase(float f, float f2) {
         super(f, f2);
         this.a = 0.0f;
         this.d = 0.0f;

@@ -43,47 +43,47 @@ public class CropImageManager {
     public void a(float f, float f2) {
         this.e = f;
         this.f = f2;
-        d();
+        a();
     }
 
     public void a(float f) {
         this.e = f;
-        d();
+        a();
     }
 
     public void b(float f) {
         this.f = f;
-        d();
+        a();
     }
 
     public void c(float f) {
         this.g = f;
-        d();
+        a();
     }
 
     public void d(float f) {
         this.h = f;
-        d();
+        a();
     }
 
     public void e(float f) {
         this.a = f;
-        c();
+        a();
     }
 
     public void f(float f) {
         this.b = f;
-        c();
+        a();
     }
 
     public void g(float f) {
         this.d = f;
-        c();
+        a();
     }
 
     public void h(float f) {
         this.c = f;
-        c();
+        a();
     }
 
     public void a(b bVar) {
@@ -91,7 +91,7 @@ public class CropImageManager {
         this.f = bVar.f;
         this.g = bVar.g;
         this.h = bVar.h;
-        d();
+        a();
     }
 
     public void a(float f, float f2, float f3, float f4) {
@@ -99,7 +99,7 @@ public class CropImageManager {
         this.f = f2;
         this.g = f3;
         this.h = f4;
-        d();
+        a();
     }
 
     public void b(float f, float f2, float f3, float f4) {
@@ -107,7 +107,7 @@ public class CropImageManager {
         this.b = f2;
         this.c = f3;
         this.d = f4;
-        c();
+        a();
     }
 
     private void c() {

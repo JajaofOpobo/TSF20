@@ -11,13 +11,13 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CropImageHelper extends CropImageState {
-    public h(Context context) {
+    public CropImageHelper(Context context) {
         super(context);
     }
 
     @Override // com.tsf.shell.plugin.crop.CropImageState
-    public class Bitmap 
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(ItemInfo.APP_VERSION_CODE, ItemInfo.APP_VERSION_CODE, Bitmap.Config.ARGB_8888);
+    public Bitmap c() {
+                Bitmap bitmapCreateBitmap = Bitmap.createBitmap(ItemInfo.APP_VERSION_CODE, ItemInfo.APP_VERSION_CODE, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
         Paint paint = new Paint(1);

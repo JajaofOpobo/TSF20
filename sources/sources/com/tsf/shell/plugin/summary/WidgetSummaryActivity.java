@@ -111,19 +111,19 @@ public class WidgetSummaryActivity extends Activity implements MediaPlayer.OnPre
     public void onClick(View view) {
         int id = view.getId();
         if (id == SummaryManager.b.imageView1) {
-            b();
+            WidgetSummaryActivity();
             return;
         }
         if (id == SummaryManager.b.imageView2) {
-            b();
+            WidgetSummaryActivity();
             return;
         }
         if (id == SummaryManager.b.imageView3) {
-            b();
+            WidgetSummaryActivity();
         } else if (id == SummaryManager.b.imageView4) {
-            b();
+            WidgetSummaryActivity();
         } else if (id == SummaryManager.b.imageView5) {
-            a();
+            WidgetSummaryActivity();
         }
     }
 

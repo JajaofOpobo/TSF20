@@ -17,9 +17,9 @@ public class DashEffectHandler implements DashEffectCallback {
     private float h = 0.0f;
     private float i = 0.0f;
 
-    public c(int i) {
+    public DashEffectHandler(int i) {
         this.a = i;
-        e();
+        DashEffectHandler();
     }
 
     @Override // com.tsf.shell.f._d.d.a.DashEffectCallback
@@ -77,7 +77,7 @@ public class DashEffectHandler implements DashEffectCallback {
             this.h = (float) (((double) (this.c.a.getAngle() * 180.0f)) / 3.141592653589793d);
             this.i += (this.h - this.i) * 0.15f;
             if (Math.abs(this.i - this.h) < 0.5f) {
-                c();
+                DashEffectHandler();
             } else {
                 com.censivn.C3DEngine.A.e().j();
             }
@@ -86,7 +86,7 @@ public class DashEffectHandler implements DashEffectCallback {
 
     @Override // com.tsf.shell.f._d.d.a.DashEffectCallback
     public void b() {
-        c();
+        DashEffectHandler();
         com.tsf.shell.manager.app.v.ObjectHelper.g();
     }
 

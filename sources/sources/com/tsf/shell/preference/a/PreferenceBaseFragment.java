@@ -15,7 +15,7 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
     private j e;
     private j f;
 
-    public b(float f) {
+    public PreferenceBaseFragment(float f) {
         d((int) f);
         a(1);
         this.e = new j();

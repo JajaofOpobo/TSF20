@@ -13,7 +13,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
     public static TextureElement b = new TextureElement(0, false);
     public b a;
 
-    public d(int i, boolean z) {
+    public DashItemD(int i, boolean z) {
         super(i, 0, z);
         this.a = new DashItemContainer(o());
     }

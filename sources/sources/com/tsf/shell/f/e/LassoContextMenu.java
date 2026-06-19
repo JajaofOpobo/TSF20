@@ -49,10 +49,10 @@ public class LassoContextMenu implements b.a {
     }
 
     static {
-        p();
+        a();
     }
 
-    public n(com.censivn.C3DEngine.b.f.j jVar, a aVar) {
+    public LassoContextMenu(com.censivn.C3DEngine.b.f.j jVar, a aVar) {
         this.p = jVar;
         this.q = aVar;
     }
@@ -118,7 +118,7 @@ public class LassoContextMenu implements b.a {
                 com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) null, true);
             }
             com.censivn.C3DEngine.b.g.c.a(SpringEasing);
-            f();
+            a();
             this.q.a(i2);
             this.r.b();
             this.p = null;
@@ -170,7 +170,7 @@ public class LassoContextMenu implements b.a {
                 bVarA.g();
             }
         }
-        o();
+        a();
         final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.A.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
         f.alpha(0.0f);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.LassoContextMenu.3
@@ -293,7 +293,7 @@ public class LassoContextMenu implements b.a {
                 com.tsf.shell.f.e.LassoContextMenu.c(iB);
             }
         };
-        r();
+        a();
         c.addChild(ObjectPool);
         c.addChild(ItemTrailContainer);
     }
@@ -342,7 +342,7 @@ public class LassoContextMenu implements b.a {
         c.invalidate();
         if (i2 == -1) {
             if (i != -1) {
-                q();
+                a();
                 i = -1;
                 return;
             }
@@ -351,7 +351,7 @@ public class LassoContextMenu implements b.a {
         if (i == -1) {
         }
         if (i2 != i) {
-            q();
+            a();
             c(i2, true);
             i = i2;
         }

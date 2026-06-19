@@ -25,7 +25,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         super(dVar);
         this.j = new ArrayList<>();
         this.a = dVar2;
-        g();
+        WidgetInstanceListPanel();
     }
 
     private void g() {
@@ -98,12 +98,12 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase
     public void e() {
-        h();
+        WidgetInstanceListPanel();
     }
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase
     public void b() {
-        h();
+        WidgetInstanceListPanel();
     }
 
     private void h() {
@@ -123,7 +123,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
 
     public void a(b.a aVar) {
         this.b.e();
-        h();
+        WidgetInstanceListPanel();
         for (b.C0145b c0145b : aVar.c) {
             com.tsf.shell.f.i.c.AppPreviewLabel fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
             fVarA.a(c0145b.a.provider);

@@ -9,7 +9,7 @@ public class TextureElementF extends VRectangle {
     public float c;
     private float d;
 
-    public f(float f, float f2, float f3) {
+    public TextureElementF(float f, float f2, float f3) {
         super(f, f2);
         this.a = 0.1f;
         this.b = (float) (360.0d * Math.random());

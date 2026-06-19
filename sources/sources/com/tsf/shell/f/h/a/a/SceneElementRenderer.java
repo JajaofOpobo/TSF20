@@ -24,7 +24,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     private TextureElement l = new TextureElement(0, false);
     private TextureElement m = new TextureElement(0, false);
 
-    public d(com.tsf.shell.f.h.a.WorkspacePreviewNode cVar) {
+    public SceneElementRenderer(com.tsf.shell.f.h.a.WorkspacePreviewNode cVar) {
         this.d = cVar;
         a = (int) com.censivn.C3DEngine.b.b.A.a(170.0f);
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(550.0f);
@@ -74,7 +74,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
         }
     }
 
-    public class TextureElement 
+    public TextureElement a(boolean z) {
         if (z) {
             if (this.m.id == 0) {
                 Bitmap defaultBitmap = ThemeManager.mix.contact.getDefaultBitmap(b, b, true);
@@ -94,7 +94,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4 && this.j) {
-            l();
+            SceneElementRenderer();
         }
     }
 
@@ -104,7 +104,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void b() {
-        l();
+        SceneElementRenderer();
     }
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a

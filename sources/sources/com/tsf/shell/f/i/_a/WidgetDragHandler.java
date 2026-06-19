@@ -17,7 +17,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.d.a {
     private float h;
     private float i;
 
-    public b(i iVar) {
+    public WidgetDragHandler(i iVar) {
         super(iVar);
         this.a = 30.0f * com.censivn.C3DEngine.b.b.A.a;
         this.b = 15.0f * com.censivn.C3DEngine.b.b.A.a;

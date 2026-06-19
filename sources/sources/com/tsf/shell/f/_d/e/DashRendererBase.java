@@ -27,7 +27,7 @@ public class DashRendererBase extends h {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public A(InterfaceC0090a interfaceC0090a) {
+    public DashRendererBase(InterfaceC0090a interfaceC0090a) {
         super(new com.censivn.C3DEngine.b.f.a.a(16, 30, 30));
         int i = 0;
         this.d = false;

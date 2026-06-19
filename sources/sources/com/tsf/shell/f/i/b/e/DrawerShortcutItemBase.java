@@ -29,7 +29,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
 
     protected abstract void k();
 
-    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+    public DrawerShortcutItemBase(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         super(launcherShortcut3DInfo);
         this.b = true;
         this.p = true;
@@ -101,7 +101,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         if (!this.r) {
             if (this.k.textures().size() == 0 || this.k.textures().get(0).textureElement.id == 0) {
                 this.r = true;
-                q();
+                DrawerShortcutItemBase();
             } else {
                 this.r = true;
             }
@@ -109,7 +109,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
     }
 
     public void aB() {
-        k();
+        DrawerShortcutItemBase();
     }
 
     public boolean aC() {
@@ -122,7 +122,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
 
     private void q() {
         if (!t()) {
-            k();
+            DrawerShortcutItemBase();
         }
     }
 

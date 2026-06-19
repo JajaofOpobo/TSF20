@@ -27,7 +27,7 @@ public interface IAlarmService extends IInterface {
         }
 
         @Override // android.os.IInterface
-        public class IBinder 
+        public IBinder c() {
             return this;
         }
 
@@ -56,7 +56,7 @@ public interface IAlarmService extends IInterface {
             }
 
             @Override // android.os.IInterface
-            public class IBinder 
+            public IBinder c() {
                 return this.a;
             }
 

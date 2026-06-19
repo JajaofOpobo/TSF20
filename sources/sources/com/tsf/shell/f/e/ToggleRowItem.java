@@ -9,7 +9,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.j {
     private com.censivn.C3DEngine.b.f.m c;
     private float d;
 
-    public l(int i, int i2) {
+    public ToggleRowItem(int i, int i2) {
         this.b.a(com.censivn.C3DEngine.b.b.A.c * 70.0f, com.censivn.C3DEngine.b.b.A.c * 70.0f);
         this.b.a(SelectionFrame);
         this.b.calAABB();
@@ -18,7 +18,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.j {
         this.c.c(i2);
         this.c.b(1);
         this.c.b();
-        c();
+        ToggleRowItem();
         addChild(this.b);
         addChild(this.c);
         this.d = this.c.position().x + this.c.maxX();
@@ -40,7 +40,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.j {
 
     public void a(int i) {
         this.a = i;
-        d();
+        ToggleRowItem();
     }
 
     private void c() {
@@ -49,7 +49,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.j {
     }
 
     private void d() {
-        c();
+        ToggleRowItem();
         float fA = com.censivn.C3DEngine.b.b.A.a(100.0f);
         switch (this.a) {
             case 0:

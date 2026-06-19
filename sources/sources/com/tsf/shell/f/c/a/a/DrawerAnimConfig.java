@@ -48,11 +48,11 @@ public class DrawerAnimConfig {
         return false;
     }
 
-    public class Number3d 
+    public Number3d c() {
         return null;
     }
 
-    public class Number3d 
+    public Number3d d() {
         return null;
     }
 
@@ -112,7 +112,7 @@ public class DrawerAnimConfig {
     public void a(j jVar, j jVar2) {
     }
 
-    public class C0080a 
+    public C0080a e() {
         return null;
     }
 

@@ -16,11 +16,11 @@ public class PreferenceSettingC extends PreferenceSettingBase {
 
     class a {
         public int a;
-        public class String 
-        public class TextureElement 
+        public String a;
+        public TextureElement a;
         public com.censivn.C3DEngine.b.f.k d;
 
-        public a(int i, String str) {
+        public PreferenceSettingC(int i, String str) {
             this.a = i;
             this.b = str;
         }
@@ -38,7 +38,7 @@ public class PreferenceSettingC extends PreferenceSettingBase {
         }
     }
 
-    public c(String str) {
+    public PreferenceSettingC(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(150.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(30.0f));
         this.a = new ArrayList<>();
         this.a.add(new PreferenceSettingA(PreferenceSettingB.d.preference_about_facebook, "http://www.facebook.com/tsfapp"));
@@ -57,9 +57,9 @@ public class PreferenceSettingC extends PreferenceSettingBase {
                     c.this.a(aVar.b);
                 }
             });
-            e().addChild(kVar);
+            a().addChild(kVar);
         }
-        e().mouseEnabled(true);
+        a().mouseEnabled(true);
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c

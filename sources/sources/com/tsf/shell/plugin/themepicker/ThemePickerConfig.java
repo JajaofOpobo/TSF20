@@ -16,7 +16,7 @@ public class ThemePickerConfig extends ThemePickerResult {
     private PackageManager b;
     private Context c;
 
-    public c(o oVar, List<ResolveInfo> list, Context context) {
+    public ThemePickerConfig(o oVar, List<ResolveInfo> list, Context context) {
         super(oVar);
         this.c = context;
         this.b = context.getPackageManager();
@@ -24,7 +24,7 @@ public class ThemePickerConfig extends ThemePickerResult {
     }
 
     @Override // android.support.v4.app.r
-    public class Fragment 
+    public Fragment c() {
         if (i == 0) {
             return new ThemePickerProvider();
         }
@@ -45,7 +45,7 @@ public class ThemePickerConfig extends ThemePickerResult {
     }
 
     @Override // android.support.v4.view.ac
-    public class CharSequence 
+    public CharSequence c() {
         if (i == 0) {
             return this.c.getString(ThemePickerResources.j.theme_picker_theme_picker_gallery_apps);
         }

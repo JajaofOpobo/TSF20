@@ -4,7 +4,7 @@ import android.text.format.DateFormat;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CubeClockDateElement extends CubeClockElementBase {
-    public i(c cVar) {
+    public CubeClockDateElement(c cVar) {
         super(cVar);
     }
 

@@ -15,7 +15,7 @@ public class PreferenceItemE extends i {
     private com.censivn.C3DEngine.b.e.a f;
     private com.censivn.C3DEngine.b.e.a g;
 
-    public e() {
+    public PreferenceItemE() {
         a(PreferenceItemB.i.text_preferences);
         this.f = new com.censivn.C3DEngine.b.e.a();
         this.f.h(PreferenceItemB.i.mn_drawer_top_menu);
@@ -83,7 +83,7 @@ public class PreferenceItemE extends i {
         this.e.c(this.a);
         this.f.c(com.tsf.shell.manager.b.ConfigManager.Q());
         this.g.c(com.tsf.shell.manager.b.ConfigManager.R());
-        i();
+        PreferenceItemE();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -133,9 +133,9 @@ public class PreferenceItemE extends i {
             com.tsf.shell.manager.b.ConfigManager.l(this.a);
         }
         if (com.tsf.shell.f.f.a.FolderPage.p != this.c.e()) {
-            j();
+            PreferenceItemE();
         } else if (com.tsf.shell.f.f.a.FolderPage.q != this.b.e()) {
-            j();
+            PreferenceItemE();
         }
     }
 

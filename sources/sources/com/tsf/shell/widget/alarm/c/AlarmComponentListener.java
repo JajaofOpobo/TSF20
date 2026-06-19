@@ -18,10 +18,10 @@ public class AlarmComponentListener extends VButton {
     private AlarmComponentEvent.a c;
     private AlarmComponentEvent.a d;
 
-    public b() {
+    public AlarmComponentListener() {
         super(2, 1, com.tsf.shell.widget.alarm.b.AlarmDataBase.a, com.tsf.shell.widget.alarm.b.AlarmDataBase.b);
         AlarmComponentEvent.add(this);
-        b();
+        AlarmComponentListener();
         textures().addElement(AlarmComponentContainer.g());
         getItem(0).setMouseEventListener(new AlarmComponentContainer(this));
         calAABB();
@@ -42,7 +42,7 @@ public class AlarmComponentListener extends VButton {
     public void a(AlarmComponentEvent.a aVar, AlarmComponentEvent.a aVar2) {
         this.c = aVar;
         this.d = aVar2;
-        d();
+        AlarmComponentListener();
     }
 
     public void a(Runnable runnable) {
@@ -72,7 +72,7 @@ public class AlarmComponentListener extends VButton {
     }
 
     class a extends VMouseEventListener {
-        public a(VObject3d vObject3d) {
+        public AlarmComponentListener(VObject3d vObject3d) {
             super(vObject3d);
         }
 

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.f.j;
 public class DropIndicatorContainer extends j {
     private b a = new DropIndicatorRenderer();
 
-    public a() {
+    public DropIndicatorContainer() {
         addChild(this.a);
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e._d.a.DropIndicatorContainer.1
             @Override // com.censivn.C3DEngine.b.d.a

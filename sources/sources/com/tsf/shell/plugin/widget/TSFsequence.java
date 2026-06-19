@@ -9,7 +9,7 @@ public class TSFsequence implements Parcelable {
 
         @Override
 
-        public class TSFsequence 
+        public TSFsequence c() {
             return new TSFsequence(parcel);
         }
 
@@ -21,7 +21,7 @@ public class TSFsequence implements Parcelable {
     }
     
     public static final Parcelable.Creator<TSFsequence> CREATOR = new Creator();
-    public class String 
+    public String a;
     public int b;
     public int c;
     public int d;

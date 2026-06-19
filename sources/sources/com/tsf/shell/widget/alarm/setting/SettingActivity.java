@@ -44,7 +44,7 @@ public class SettingActivity extends Activity implements AlarmSettingFragment.In
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m.d.activity_setting_main_layout);
-        b();
+        SettingActivity();
     }
 
     private void b() {
@@ -167,7 +167,7 @@ public class SettingActivity extends Activity implements AlarmSettingFragment.In
             AlarmSettingData.a(aVar);
         }
         this.k.c();
-        c();
+        SettingActivity();
         this.i.notifyDataSetChanged();
     }
 

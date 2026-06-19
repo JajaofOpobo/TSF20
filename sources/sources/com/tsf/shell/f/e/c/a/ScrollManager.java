@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.api.core.VObject3dContainer;
 import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ScrollManager extends 
+public class ScrollManager extends VObject3dContainer {
     private a a;
     private a b;
     private TextureElement c;
@@ -68,7 +68,7 @@ public class ScrollManager extends
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void onDrawStart() {
         if (this.c == null && this.d != 0.0f) {
-            b();
+            ScrollManager();
         }
     }
 

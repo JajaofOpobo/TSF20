@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.c.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class AlignmentResizeListener implements e.a {
-    q() {
+    AlignmentResizeListener() {
     }
 
     @Override // com.censivn.C3DEngine.b.c.e.a

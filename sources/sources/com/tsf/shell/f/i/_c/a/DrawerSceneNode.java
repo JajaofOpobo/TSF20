@@ -54,7 +54,7 @@ public abstract class DrawerSceneNode<Params, Result> {
         private final AtomicInteger a = new AtomicInteger(1);
 
         @Override // java.util.concurrent.ThreadFactory
-        public class Thread 
+        public Thread c() {
             return new Thread(runnable, "AsyncTask #" + this.a.getAndIncrement());
         }
     };
@@ -151,7 +151,7 @@ public abstract class DrawerSceneNode<Params, Result> {
     }
 
     protected void b(Result result) {
-        c();
+        AbstractCallableC0118c();
     }
 
     protected void c() {
@@ -175,7 +175,7 @@ public abstract class DrawerSceneNode<Params, Result> {
             }
         }
         this.e = DeferredWidgetGroup.RUNNING;
-        b();
+        AbstractCallableC0118c();
         this.h.b = paramsArr;
         executor.execute(this.i);
         return this;

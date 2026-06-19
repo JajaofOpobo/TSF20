@@ -34,7 +34,7 @@ public class SceneComponentK extends ItemStubHelper {
     }
 
     @Override // com.tsf.shell.f.i._c.a.b.SceneComponentE
-    public class Bitmap 
-        return com.tsf.shell.f.i._c.a.NodeConstants.a(FolderWidgetGroup.c, DeferredWidgetGroup.d.widget_preview_cubeclock_number);
+    public Bitmap c() {
+                return com.tsf.shell.f.i._c.a.NodeConstants.a(FolderWidgetGroup.c, DeferredWidgetGroup.d.widget_preview_cubeclock_number);
     }
 }

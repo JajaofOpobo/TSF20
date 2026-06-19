@@ -32,7 +32,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m.d.activity_place_search_layout);
-        a();
+        PlaceSearchActivity();
     }
 
     private void a() {
@@ -143,7 +143,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
     class a extends BaseAdapter {
         ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
-        public a() {
+        public PlaceSearchActivity() {
         }
 
         public void a(ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayList) {
@@ -163,7 +163,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             return null;
         }
 
@@ -173,7 +173,7 @@ public class PlaceSearchActivity extends Activity implements AdapterView.OnItemC
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View c() {
             if (view == null) {
                 view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
             }

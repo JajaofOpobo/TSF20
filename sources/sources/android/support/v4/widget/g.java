@@ -194,7 +194,7 @@ public abstract class g extends BaseAdapter implements h.a, Filterable {
     }
 
     private class a extends ContentObserver {
-        public a() {
+        public g() {
             super(new Handler());
         }
 

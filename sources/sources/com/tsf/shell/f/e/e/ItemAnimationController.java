@@ -317,7 +317,7 @@ public class ItemAnimationController {
         };
     }
 
-    public class TextureElement 
+    public TextureElement e() {
         return this.f;
     }
 
@@ -451,17 +451,17 @@ public class ItemAnimationController {
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            e();
+            a();
         }
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            f();
+            a();
         }
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            f();
+            a();
         }
 
         private void e() {

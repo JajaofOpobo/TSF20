@@ -12,7 +12,7 @@ public class DashItemE extends DashItemD {
     private static float d = 0.10471976f;
     private k e;
 
-    public e(int i, int i2, boolean z) {
+    public DashItemE(int i, int i2, boolean z) {
         super(i, z);
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
         this.e = new k(iA + 2, iA + 2, false);

@@ -15,12 +15,12 @@ import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DockSceneNode extends j {
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
     private final int g;
     private VRectangle h;
     private VButton m;
@@ -33,20 +33,20 @@ public class DockSceneNode extends j {
     private VRectangle t;
     private float u;
 
-    public B(VTextureManager vTextureManager, Context context) {
+    public DockSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.g = 1000;
         this.u = 0.5f;
         scale().x = this.u;
         scale().y = this.u;
         scale().z = this.u;
-        e();
+        DockSceneNode();
     }
 
     private void e() {
         this.o = new VObject3dContainer();
-        j();
-        k();
+        DockSceneNode();
+        DockSceneNode();
         addChild(this.o);
     }
 
@@ -241,7 +241,7 @@ public class DockSceneNode extends j {
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback
     public void b() {
-        i();
+        DockSceneNode();
     }
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback

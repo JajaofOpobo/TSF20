@@ -22,7 +22,7 @@ public class ForegroundService extends Service {
     }
 
     @Override // android.app.Service
-    public class IBinder 
+    public IBinder c() {
         return null;
     }
 

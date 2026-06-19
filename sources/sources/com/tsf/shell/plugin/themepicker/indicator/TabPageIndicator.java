@@ -201,7 +201,7 @@ public class TabPageIndicator extends HorizontalScrollView implements ThemeIndic
     private class b extends TextView {
         private int b;
 
-        public b(Context context) {
+        public TabPageIndicator(Context context) {
             super(context, null, f.a.vpiTabPageIndicatorStyle);
         }
 

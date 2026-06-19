@@ -51,7 +51,7 @@ public class VideoViwerActivity extends Activity {
         super.onCreate(bundle);
         this.c = getApplicationContext();
         setContentView(b.g.video_layout);
-        a();
+        VideoViwerActivity();
         this.b = (GridView) findViewById(b.e.myGrid);
         this.b.setAdapter((ListAdapter) new a());
         this.b.setSelector(new ColorDrawable(0));
@@ -139,7 +139,7 @@ public class VideoViwerActivity extends Activity {
     }
 
     private class a extends BaseAdapter {
-        public a() {
+        public VideoViwerActivity() {
         }
 
         @Override // android.widget.Adapter

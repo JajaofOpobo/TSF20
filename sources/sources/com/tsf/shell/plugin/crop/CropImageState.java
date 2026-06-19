@@ -14,7 +14,7 @@ public class CropImageState {
     public float d;
     protected Context e;
 
-    public f(Context context) {
+    public CropImageState(Context context) {
         this.e = context;
     }
 
@@ -25,8 +25,8 @@ public class CropImageState {
         return false;
     }
 
-    public class Bitmap 
-        return null;
+    public Bitmap c() {
+                return null;
     }
 
     public void a(Canvas canvas, float f, Paint paint, float f2) {

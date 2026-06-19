@@ -20,7 +20,7 @@ public class FolderItemDotIndicator extends com.censivn.C3DEngine.b.f.k {
     private boolean f;
     private com.censivn.C3DEngine.b.f.k h;
 
-    public i(float f, float f2, boolean z, ThemeDescription themeDescription) throws Throwable {
+    public FolderItemDotIndicator(float f, float f2, boolean z, ThemeDescription themeDescription) throws Throwable {
         super(f, f2, 3, 1, false);
         this.f = false;
         if (g == null) {
@@ -37,8 +37,8 @@ public class FolderItemDotIndicator extends com.censivn.C3DEngine.b.f.k {
         this.a = byteBufferAllocateDirect.asFloatBuffer();
         this.d = a("#77FFFFFF", -1);
         this.e = a("#22FFFFFF", -1);
-        e();
-        a();
+        FolderItemDotIndicator();
+        FolderItemDotIndicator();
     }
 
     public void a() {
@@ -87,14 +87,14 @@ public class FolderItemDotIndicator extends com.censivn.C3DEngine.b.f.k {
     @Override // com.censivn.C3DEngine.b.f.k, com.censivn.C3DEngine.b.f.i
     public void draw() {
         ShaderManager.enableShader(ShaderManager.SHADER_COLOR);
-        f();
+        FolderItemDotIndicator();
         drawMVPMatrix();
         drawElement();
         GLES20.glDisableVertexAttribArray(ShaderManager.SHADER_COLOR.maColor4Handle);
     }
 
     private void f() {
-        e();
+        FolderItemDotIndicator();
         this.a.position(0);
         ShaderManager.SHADER_COLOR.glColorPointer(4, 5126, false, 0, this.a);
     }

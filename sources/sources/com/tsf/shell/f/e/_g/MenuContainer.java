@@ -13,8 +13,8 @@ public class MenuContainer extends j {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void measure() {
-        a();
-        b();
+        MenuContainer();
+        MenuContainer();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x009c  */
@@ -111,14 +111,14 @@ public class MenuContainer extends j {
     public void addChild(i iVar) {
         super.addChild(iVar);
         this.a.add(c());
-        a();
+        MenuContainer();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         a(this.a.remove(0));
-        a();
+        MenuContainer();
         return zRemoveChild;
     }
 

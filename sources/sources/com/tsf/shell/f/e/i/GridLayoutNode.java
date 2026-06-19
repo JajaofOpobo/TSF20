@@ -25,7 +25,7 @@ public class GridLayoutNode extends j {
         }
     };
 
-    public a() {
+    public GridLayoutNode() {
         this.a.textures().addElement(GridLayoutParams);
         addChild(this.b);
         this.g = new GridLayoutRenderer();
@@ -84,7 +84,7 @@ public class GridLayoutNode extends j {
     }
 
     public void b(int i) {
-        f();
+        GridLayoutNode();
         VMessageManager.postGLThreadRunnable(new Runnable() { // from class: com.tsf.shell.f.e.i.GridLayoutNode.2
             @Override // java.lang.Runnable
             public void run() {

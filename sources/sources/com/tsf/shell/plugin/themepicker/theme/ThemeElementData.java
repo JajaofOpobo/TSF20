@@ -14,12 +14,12 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeElementData extends g {
-    public d(Context context, List<ResolveInfo> list, PackageManager packageManager, boolean z) {
+    public ThemeElementData(Context context, List<ResolveInfo> list, PackageManager packageManager, boolean z) {
         super(context, list, packageManager, z);
     }
 
     @Override // com.tsf.shell.plugin.themepicker.ThemePickerState, android.widget.Adapter
-    public class View 
+    public View c() {
         if (view == null) {
             view = LayoutInflater.from(this.c).inflate(f.h.slid_menu_item, viewGroup, false);
         }

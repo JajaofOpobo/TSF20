@@ -9,7 +9,7 @@ public class SceneIndicatorNode extends k {
     private TextureElement d;
     private float e;
 
-    public g(float f, float f2) {
+    public SceneIndicatorNode(float f, float f2) {
         super(f, f2, false);
         this.e = 0.0f;
     }

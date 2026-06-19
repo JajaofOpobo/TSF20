@@ -31,10 +31,10 @@ public class AlarmMeshRenderer extends VObject3dContainer {
     private float l = 192.0f;
     boolean f = false;
 
-    public l() {
-        d();
-        b();
-        c();
+    public AlarmMeshRenderer() {
+        AlarmMeshRenderer();
+        AlarmMeshRenderer();
+        AlarmMeshRenderer();
         invalidate();
     }
 
@@ -80,9 +80,9 @@ public class AlarmMeshRenderer extends VObject3dContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void drawElement() {
-        e();
-        b();
-        c();
+        AlarmMeshRenderer();
+        AlarmMeshRenderer();
+        AlarmMeshRenderer();
         boolean zColorFillEnable = colorFillEnable();
         if (visible()) {
             MatrixStack.glPushMatrix();

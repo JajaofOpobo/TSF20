@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.c.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class DropTargetIndicator implements e.a {
-    d() {
+    DropTargetIndicator() {
     }
 
     @Override // com.censivn.C3DEngine.b.c.e.a

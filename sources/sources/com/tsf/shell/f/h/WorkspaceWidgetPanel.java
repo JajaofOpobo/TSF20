@@ -28,14 +28,14 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
     private TextureElement f;
     private boolean g;
 
-    public f(c cVar, i iVar, float f, float f2, float f3, float f4, float f5) {
+    public WorkspaceWidgetPanel(c cVar, i iVar, float f, float f2, float f3, float f4, float f5) {
         super(iVar, f, f2, f3, f4, f5, 1.0f);
         this.g = false;
         this.c = cVar;
         this.f = new TextureElement(0, false);
         this.e = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b, false);
         this.e.textures().addElement(this.f);
-        o();
+        WorkspaceWidgetPanel();
     }
 
     public void o() {
@@ -141,10 +141,10 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
 
     public void p() {
         if (this.g) {
-            b();
+            WorkspaceWidgetPanel();
             this.g = false;
             f(this.b);
-            s();
+            WorkspaceWidgetPanel();
         }
     }
 

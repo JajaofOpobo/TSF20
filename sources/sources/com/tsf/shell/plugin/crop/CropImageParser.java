@@ -15,7 +15,7 @@ public class CropImageParser extends CropImageState {
     private float h;
     private Paint i;
 
-    public a(Context context) {
+    public CropImageParser(Context context) {
         super(context);
         this.f = new Path();
         this.i = new Paint();
@@ -141,8 +141,8 @@ public class CropImageParser extends CropImageState {
     }
 
     @Override // com.tsf.shell.plugin.crop.CropImageState
-    public class Bitmap 
-        int iCeil = (int) Math.ceil(this.c - this.a);
+    public Bitmap c() {
+                int iCeil = (int) Math.ceil(this.c - this.a);
         int iCeil2 = (int) Math.ceil(this.d - this.b);
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iCeil, iCeil2, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);

@@ -22,7 +22,7 @@ public class WidgetVisualState extends i {
         this.a = aVar;
     }
 
-    public b(Context context, com.tsf.shell.widget.a.WidgetPanelBase aVar) {
+    public WidgetVisualState(Context context, com.tsf.shell.widget.a.WidgetPanelBase aVar) {
         this.c = aVar;
         a(context.getString(h.a.widget_dots_clock_setting));
         b(new com.tsf.shell.widget.a.a.WidgetVisualNode(context, aVar));

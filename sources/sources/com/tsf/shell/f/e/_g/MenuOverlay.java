@@ -240,7 +240,7 @@ public abstract class MenuOverlay {
         return this.mMenuItems;
     }
 
-    public d(float f) {
+    public MenuOverlay(float f) {
         this.mHeight = f;
         if (com.tsf.shell.manager.b.ConfigManager.ai()) {
             this.mBarBackground.setDefaultColor(new Color4(38, 38, 38, 230));

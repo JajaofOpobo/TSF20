@@ -32,7 +32,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
     private float n = 0.0f;
     private boolean o = true;
 
-    public e(boolean z) {
+    public DrawerSettingsPanel(boolean z) {
         this.m = false;
         this.m = z;
     }
@@ -110,11 +110,11 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             this.e.b(2);
         }
         this.d.addChild(this.e);
-        g();
+        DrawerSettingsPanel();
         a.C0084a c0084aB = this.f.b();
         this.e.position().x = c0084aB.g;
         this.e.position().y = c0084aB.h;
-        p();
+        DrawerSettingsPanel();
         this.i.g();
         if (com.tsf.shell.manager.app.WidgetPanelController.c() != 0) {
             b(false);
@@ -199,7 +199,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             a(com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.t() : com.tsf.shell.manager.b.ConfigManager.u());
         }
         float f = com.censivn.C3DEngine.b.b.A.D - this.n;
-        h().a(f, this.c, this.c, this.b);
+        DrawerSettingsPanel().a(f, this.c, this.c, this.b);
         this.i.a(DrawerSettingsConfig);
         this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.A.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.A.g);
         a.C0084a c0084aB = this.f.b();
@@ -217,7 +217,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         Iterator<i> it = this.i.b().children().iterator();
         while (it.hasNext()) {
             A aVar = (DrawerSettingsItemType) it.next();
-            h().a(aVar);
+            DrawerSettingsPanel().a(aVar);
             aVar.g();
         }
         this.f.a(this.i.c());
@@ -476,7 +476,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        g();
+        DrawerSettingsPanel();
     }
 
     public void o() {

@@ -31,7 +31,7 @@ public class ThemePluginParser extends ArrayAdapter<c> {
     private final ArrayList<c> b;
     private final Context c;
 
-    public a(Context context, int i, ArrayList<c> arrayList) {
+    public ThemePluginParser(Context context, int i, ArrayList<c> arrayList) {
         super(context, i, arrayList);
         this.a = 0;
         this.b = arrayList;

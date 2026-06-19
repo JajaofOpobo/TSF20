@@ -6,7 +6,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorConfig {
-    public f() {
+    public FolderItemBackground() {
         ArrayList<FolderItemState.C0092c> arrayList = new ArrayList<>();
         arrayList.add(new FolderItemState.C0092c(com.tsf.b.i.menu_add, com.tsf.b.d.widget_folder_add_button) {
             @Override

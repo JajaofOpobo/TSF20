@@ -29,7 +29,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
         }
     }
 
-    public c(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z, int i) {
+    public WidgetDrawerItemGather(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z, int i) {
         super(launcherShortcut3DInfo, aVar, z);
         this.t = i;
         int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.A.c * aE().A);
@@ -57,8 +57,8 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
         if (this.s == null) {
             this.s = new LauncherShortcutStandardInfo.ResourceControler() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemGather.2
                 @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo.ResourceControler
-                public class Bitmap 
-                    return ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_ICON, aVar.H, aVar.I);
+                public Bitmap c() {
+                                        return ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_ICON, aVar.H, aVar.I);
                 }
             };
         }
@@ -128,7 +128,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
         private b j;
         private boolean k;
 
-        public a(b bVar) {
+        public WidgetDrawerItemGather(b bVar) {
             super(bVar);
             this.k = false;
             this.j = bVar;

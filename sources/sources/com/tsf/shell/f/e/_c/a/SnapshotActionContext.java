@@ -68,7 +68,7 @@ public class SnapshotActionContext extends VObject3dContainer {
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void onDrawStart() {
         if (this.c == null && this.d != 0.0f) {
-            b();
+            SnapshotActionContext();
         }
     }
 

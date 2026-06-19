@@ -51,7 +51,7 @@ public class AppListModel {
     public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z, boolean z2) {
         this.b.add(gVar);
         if (z2) {
-            c();
+            a();
             Iterator<a> it = this.c.iterator();
             while (it.hasNext()) {
                 it.next().a(gVar, z);
@@ -61,7 +61,7 @@ public class AppListModel {
 
     protected boolean b(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar, boolean z) {
         boolean zRemove = this.b.remove(gVar);
-        c();
+        a();
         Iterator<a> it = this.c.iterator();
         while (it.hasNext()) {
             it.next().b(gVar, z);
@@ -70,7 +70,7 @@ public class AppListModel {
     }
 
     public void a(com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
-        c();
+        a();
         Iterator<a> it = this.c.iterator();
         while (it.hasNext()) {
             it.next().a(gVar);

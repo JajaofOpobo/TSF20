@@ -9,7 +9,7 @@ public class SceneAnimationHandler extends i {
     private e b;
     private com.tsf.shell.f.h.a.ScenePositionConfig c;
 
-    public b(a aVar) {
+    public SceneAnimationHandler(a aVar) {
         this.a = aVar;
         a(b.i.text_preferences);
         e eVar = new e();
@@ -31,7 +31,7 @@ public class SceneAnimationHandler extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
         this.b.k(this.a.k());
-        a(com.tsf.shell.manager.app.ServiceFactory.a().a() == 0 ? b.i.text_top : b.i.text_bottom);
+        a(com.tsf.shell.manager.app.ServiceFactory.SceneAnimationHandler().a() == 0 ? b.i.text_top : b.i.text_bottom);
     }
 
     @Override // com.censivn.C3DEngine.b.e.c

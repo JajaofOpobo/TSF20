@@ -35,11 +35,11 @@ public class WidgetContainer extends j {
         return i;
     }
 
-    public a(boolean z) {
+    public WidgetContainer(boolean z) {
         this.h = false;
         this.h = z;
-        h();
-        i();
+        WidgetContainer();
+        WidgetContainer();
     }
 
     public void a() {
@@ -122,9 +122,9 @@ public class WidgetContainer extends j {
         });
         this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.A.b, (-300.0f) * com.censivn.C3DEngine.b.b.A.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.A.b, 100.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
         if (this.h) {
-            j();
+            WidgetContainer();
         }
-        f();
+        WidgetContainer();
     }
 
     private void j() {
@@ -156,8 +156,8 @@ public class WidgetContainer extends j {
         a(d());
     }
 
-    public class Bitmap 
-        return null;
+    public Bitmap c() {
+                return null;
     }
 
     public void e() {

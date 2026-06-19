@@ -25,7 +25,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         private m d;
         private float e;
 
-        public C0162a(String str) {
+        public PreferenceSettingA(String str) {
             super(com.censivn.C3DEngine.b.b.A.a(167.0f), com.censivn.C3DEngine.b.b.A.a(164.0f), false);
             this.e = ((-com.censivn.C3DEngine.b.b.A.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(20.0f);
             textures().addElement(a.this.f);
@@ -70,7 +70,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         }
     }
 
-    public a(String str) {
+    public PreferenceSettingA(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(175.0f));
         this.a = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
@@ -103,8 +103,8 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             i = i2 + 1;
         }
         this.d.addChild(this.b);
-        e().addChild(this.e);
-        e().addChild(this.d);
+        C0162a().addChild(this.e);
+        C0162a().addChild(this.d);
         this.b.textures().addElement(this.a);
         this.g = com.censivn.C3DEngine.b.b.A.a(120.0f);
         this.h = com.censivn.C3DEngine.b.b.A.a(40.0f);

@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 public class ToggleActionMobileData extends com.tsf.shell.manager.action.toggle.ToggleAction {
     public ToggleActionMobileData(int i) {
         super(i);
-        d();
+        ToggleActionMobileData();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction

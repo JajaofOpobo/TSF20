@@ -28,11 +28,11 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     private ArrayList<a> c = new ArrayList<>();
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase f = new com.tsf.shell.f.i.b.e.DrawerItemButton();
 
-    public g(b bVar) {
+    public FolderItemGrid(b bVar) {
         this.a = bVar;
         this.f.k.removeFromParent();
         this.f.parent(this);
-        p();
+        FolderItemGrid();
     }
 
     @Override // com.tsf.shell.f.e.f.EditModeNode
@@ -53,9 +53,9 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public void a(int i2, int i3, int i4, int i5) {
-        p();
-        w();
-        x();
+        FolderItemGrid();
+        FolderItemGrid();
+        FolderItemGrid();
         int iNumChildren = numChildren();
         for (int i6 = 0; i6 < iNumChildren; i6++) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) getChildAt(i6);
@@ -196,7 +196,7 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
 
     public void g() {
         this.e = true;
-        p();
+        FolderItemGrid();
     }
 
     public void h() {
@@ -212,7 +212,7 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public void i() {
-        p();
+        FolderItemGrid();
     }
 
     private void p() {
@@ -247,7 +247,7 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
 
     public void a(float f) {
         this.p -= f / 6.0f;
-        k();
+        FolderItemGrid();
         this.l = true;
     }
 
@@ -647,21 +647,21 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
             }
             if (this.q) {
                 if (this.o < this.n) {
-                    e();
+                    FolderItemGrid();
                 } else {
-                    f();
+                    FolderItemGrid();
                 }
                 if (this.o > com.tsf.shell.f.i.b.d.FolderShortcutItem.l.x) {
-                    b();
+                    FolderItemGrid();
                 } else {
-                    c();
+                    FolderItemGrid();
                 }
             } else {
                 if (g || h) {
-                    k();
+                    FolderItemGrid();
                 }
-                c();
-                f();
+                FolderItemGrid();
+                FolderItemGrid();
             }
             if (!this.d) {
                 this.d = true;
@@ -777,8 +777,8 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
         this.b.add(0, aVarY);
         super.addChild(iVar);
         a(aVarY, iVar);
-        w();
-        x();
+        FolderItemGrid();
+        FolderItemGrid();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j
@@ -787,9 +787,9 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
         this.b.add(0, aVarY);
         super.addChildAt(iVar, i2);
         a(aVarY, getChildAt(0));
-        w();
-        o();
-        x();
+        FolderItemGrid();
+        FolderItemGrid();
+        FolderItemGrid();
     }
 
     private void x() {
@@ -803,9 +803,9 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             a(this.b.remove(0));
-            w();
-            o();
-            x();
+            FolderItemGrid();
+            FolderItemGrid();
+            FolderItemGrid();
         }
         return zRemoveChild;
     }
@@ -815,9 +815,9 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
         com.censivn.C3DEngine.b.f.i iVarRemoveChildAt = super.removeChildAt(i2);
         if (iVarRemoveChildAt != null) {
             a(this.b.remove(0));
-            w();
-            o();
-            x();
+            FolderItemGrid();
+            FolderItemGrid();
+            FolderItemGrid();
         }
         return iVarRemoveChildAt;
     }

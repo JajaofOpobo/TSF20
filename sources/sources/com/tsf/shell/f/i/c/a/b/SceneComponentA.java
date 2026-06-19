@@ -30,7 +30,7 @@ public class SceneComponentA extends VObject3dContainer {
     private float r = 0.0f;
     private float s = 0.0f;
 
-    public a() {
+    public SceneComponentA() {
         ByteBuffer byteBufferAllocateDirect = ByteBuffer.allocateDirect(this.k * 3 * 4);
         byteBufferAllocateDirect.order(ByteOrder.nativeOrder());
         this.b = byteBufferAllocateDirect.asFloatBuffer();
@@ -43,7 +43,7 @@ public class SceneComponentA extends VObject3dContainer {
         byteBufferAllocateDirect3.order(ByteOrder.nativeOrder());
         this.a = byteBufferAllocateDirect3.asFloatBuffer();
         this.a.position(0);
-        a();
+        SceneComponentA();
         FolderItemGroup.h.a(this);
         rotation().x = -360.0f;
     }
@@ -312,7 +312,7 @@ public class SceneComponentA extends VObject3dContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void drawElement() {
-        b();
+        SceneComponentA();
         boolean zColorFillEnable = colorFillEnable();
         if (visible() && FolderItemGroup.h.a != null) {
             if (zColorFillEnable) {

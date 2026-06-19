@@ -70,8 +70,8 @@ public class DashAnimationBase {
 
     public void h() {
         if (com.tsf.shell.manager.app.v.FlagHelper.C0126a.h().a()) {
-            f();
-            g();
+            DashAnimationBase();
+            DashAnimationBase();
         }
     }
 }

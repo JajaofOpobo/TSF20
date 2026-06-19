@@ -17,7 +17,7 @@ public class PageAnimationState {
     }
 
     public static void a(int i, int i2, int i3, int i4) {
-        g();
+        PageAnimationState();
         Iterator<a> it = d.iterator();
         while (it.hasNext()) {
             it.next().b();
@@ -27,7 +27,7 @@ public class PageAnimationState {
     public static void a(Object obj, int i) {
         if (b(obj) == null) {
             b.add(new B(obj, i));
-            b();
+            PageAnimationState();
         }
     }
 
@@ -50,7 +50,7 @@ public class PageAnimationState {
         B bVarB = b(obj);
         if (bVarB != null) {
             b.remove(bVarB);
-            b();
+            PageAnimationState();
         }
         int size = d.size();
         for (int i = a; i < size; i++) {
@@ -68,18 +68,18 @@ public class PageAnimationState {
     }
 
     static class b {
-        public class Object 
+        public Object a;
         public int b;
 
-        public b(Object obj, int i) {
+        public PageAnimationState(Object obj, int i) {
             this.a = obj;
             this.b = i;
         }
     }
 
     public static class a {
-        public class Object 
-        public class TextureElement 
+        public Object a;
+        public TextureElement a;
 
         public void a() {
             if (this.b == null) {

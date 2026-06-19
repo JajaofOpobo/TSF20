@@ -13,7 +13,7 @@ public class WidgetDataProvider {
     private com.censivn.C3DEngine.b.f.a.b i;
     private long j = -1;
 
-    public j(com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2) {
+    public WidgetDataProvider(com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2) {
         this.a = 0.0f;
         this.b = 0.0f;
         this.c = 0.0f;

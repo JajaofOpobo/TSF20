@@ -57,7 +57,7 @@ public class ActionSelector extends FragmentActivity {
         }
     }
 
-    public class Intent 
+    public Intent c() {
         return this.p;
     }
 
@@ -68,7 +68,7 @@ public class ActionSelector extends FragmentActivity {
     private class b extends q implements com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelectorCallback {
         private final Context b;
 
-        public b(Context context, o oVar) {
+        public ActionSelector(Context context, o oVar) {
             super(oVar);
             this.b = context;
         }
@@ -115,7 +115,7 @@ public class ActionSelector extends FragmentActivity {
         }
 
         @Override // android.support.v4.app.u, android.support.v4.app.Fragment
-        public class View 
+        public View c() {
             return layoutInflater.inflate(ActionSelectorCallback.g.fragment_pager_list, viewGroup, false);
         }
 

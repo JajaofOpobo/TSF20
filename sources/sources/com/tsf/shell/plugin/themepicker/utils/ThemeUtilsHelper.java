@@ -15,7 +15,7 @@ public class ThemeUtilsHelper extends ThemeUtilsConfig {
     private boolean g;
     private final Object h;
 
-    public d(Context context, int i, int i2) {
+    public ThemeUtilsHelper(Context context, int i, int i2) {
         super(context, i, i2);
         this.g = true;
         this.h = new Object();
@@ -30,7 +30,7 @@ public class ThemeUtilsHelper extends ThemeUtilsConfig {
     @Override // com.tsf.shell.plugin.themepicker.utils.PercentToAlphaConverter
     protected void a() {
         super.a();
-        j();
+        ThemeUtilsHelper();
     }
 
     private void j() {
@@ -67,7 +67,7 @@ public class ThemeUtilsHelper extends ThemeUtilsConfig {
                 }
                 this.e = null;
                 this.g = true;
-                j();
+                ThemeUtilsHelper();
             }
         }
     }
@@ -205,7 +205,7 @@ public class ThemeUtilsHelper extends ThemeUtilsConfig {
         /*
             r8 = this;
             r3 = 0
-            e()
+            jadx()
             java.net.URL r0 = new java.net.URL     // Catch: java.lang.Throwable -> L6d java.io.IOException -> L98
             r0.<init>(r9)     // Catch: java.lang.Throwable -> L6d java.io.IOException -> L98
             java.net.URLConnection r0 = r0.openConnection()     // Catch: java.lang.Throwable -> L6d java.io.IOException -> L98

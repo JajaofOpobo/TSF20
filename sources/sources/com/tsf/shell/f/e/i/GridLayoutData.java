@@ -15,7 +15,7 @@ public class GridLayoutData extends j {
     private static final int d = com.censivn.C3DEngine.b.b.A.b(15.0f);
     private ArrayList<a> e = new ArrayList<>();
 
-    public b() {
+    public GridLayoutData() {
         for (int i = 0; i < 5; i++) {
             this.e.add(new GridLayoutNode());
         }
@@ -91,7 +91,7 @@ public class GridLayoutData extends j {
     }
 
     public void c() {
-        b();
+        GridLayoutData();
         int i = 0;
         Iterator<a> it = this.e.iterator();
         while (true) {

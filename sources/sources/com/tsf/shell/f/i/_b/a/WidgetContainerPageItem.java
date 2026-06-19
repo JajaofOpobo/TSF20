@@ -16,7 +16,7 @@ public class WidgetContainerPageItem extends com.tsf.shell.f.i.PageItem implemen
         return new com.tsf.shell.f.i._c.a();
     }
 
-    public b(ItemInfo itemInfo) {
+    public WidgetContainerPageItem(ItemInfo itemInfo) {
         super(itemInfo);
         this.a = false;
         this.b = false;
@@ -24,8 +24,8 @@ public class WidgetContainerPageItem extends com.tsf.shell.f.i.PageItem implemen
         itemInfo.iconType = 2;
         this.g = new a(true) { // from class: com.tsf.shell.f.i._b.a.WidgetContainerPageItem.1
             @Override // com.tsf.shell.f.i._b.a.WidgetContainer
-            public class Bitmap 
-                return b.this.K().getPhoto();
+            public Bitmap c() {
+                                return b.this.K().getPhoto();
             }
 
             @Override // com.tsf.shell.f.i._b.a.WidgetContainer
@@ -40,27 +40,27 @@ public class WidgetContainerPageItem extends com.tsf.shell.f.i.PageItem implemen
     @Override // com.tsf.shell.f.i.PageItem
     public void W() {
         this.b = true;
-        l();
+        WidgetContainerPageItem();
         this.g.c();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void X() {
         this.b = false;
-        l();
+        WidgetContainerPageItem();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void n_() {
         this.a = true;
-        l();
+        WidgetContainerPageItem();
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void c() {
         this.a = false;
-        l();
+        WidgetContainerPageItem();
         super.c();
     }
 
@@ -72,14 +72,14 @@ public class WidgetContainerPageItem extends com.tsf.shell.f.i.PageItem implemen
     @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
         this.f = true;
-        l();
+        WidgetContainerPageItem();
         super.q_();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void j() {
         this.f = false;
-        l();
+        WidgetContainerPageItem();
         super.j();
     }
 

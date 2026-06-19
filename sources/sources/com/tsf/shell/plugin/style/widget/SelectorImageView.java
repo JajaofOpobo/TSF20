@@ -11,12 +11,12 @@ import android.widget.ImageView;
 public class SelectorImageView extends ImageView implements View.OnTouchListener {
     public SelectorImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        a();
+        SelectorImageView();
     }
 
     public SelectorImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        a();
+        SelectorImageView();
     }
 
     private void a() {

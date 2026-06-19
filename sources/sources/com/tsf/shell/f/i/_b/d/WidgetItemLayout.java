@@ -13,7 +13,7 @@ public class WidgetItemLayout {
     private static Number3d j = new Number3d();
     private static Number3d k = new Number3d();
     private static float l;
-    public class ThemeFolderDescription 
+    public ThemeFolderDescription a;
     public com.tsf.shell.f.a.a.GlTextureBinding b;
     public int c;
     public int d;
@@ -22,8 +22,8 @@ public class WidgetItemLayout {
     public int g;
     public int h;
 
-    public d() {
-        a();
+    public WidgetItemLayout() {
+        ThemeFolderDescription();
     }
 
     private void b() {
@@ -37,7 +37,7 @@ public class WidgetItemLayout {
 
     public void a() {
         this.a = ThemeManager.mix.folder.getTheme().folder;
-        b();
+        ThemeFolderDescription();
         if (this.b != null) {
             com.tsf.shell.manager.app.TextureCache.a(this.b);
         } else {

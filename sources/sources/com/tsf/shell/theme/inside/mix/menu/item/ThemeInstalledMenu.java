@@ -22,7 +22,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeInstalledMenu extends b {
+public class ThemeInstalledMenu extends MenuActionItem {
     private ThemePriorityComparator mComparator;
     private ThemeInstalledDetailMenu mDetailMenu;
     private h mGridView;
@@ -31,7 +31,7 @@ public class ThemeInstalledMenu extends b {
     private TextureElement mSelectTE;
     private ArrayList<ThemeListsManager.ThemeInfo> mThemeList;
     private ThemeManager.ThemeListener mThemeListener;
-    public class ThemeSettingMenu 
+    public ThemeSettingMenu manager;
 
     private void initTexture() {
         if (this.mSelectTE.id == 0) {

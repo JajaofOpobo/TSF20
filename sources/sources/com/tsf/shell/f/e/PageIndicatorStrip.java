@@ -29,7 +29,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
     private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.LayoutDimensionConstants.l, com.tsf.shell.manager.g.LayoutDimensionConstants.l);
     private r o = new PageNumberBadge();
 
-    public j(final boolean z) {
+    public PageIndicatorStrip(final boolean z) {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
@@ -132,8 +132,8 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        c();
-        d();
+        PageIndicatorStrip();
+        PageIndicatorStrip();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x0051  */

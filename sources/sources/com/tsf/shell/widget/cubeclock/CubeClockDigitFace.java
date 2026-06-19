@@ -18,13 +18,13 @@ public class CubeClockDigitFace extends CubeClockConfigBase {
         return super.a();
     }
 
-    public b(c cVar) {
+    public CubeClockDigitFace(c cVar) {
         super(cVar);
         this.e = 130.0f;
         this.f = 130.0f;
         this.g = 64.0f;
         this.h = 128.0f;
-        b();
+        CubeClockDigitFace();
     }
 
     private void b() {

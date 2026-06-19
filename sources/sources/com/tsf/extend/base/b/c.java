@@ -331,7 +331,7 @@ public class c implements com.android.volley.b {
         private a() {
         }
 
-        public a(String str, com.android.volley.b.a aVar) {
+        public c(String str, com.android.volley.b.a aVar) {
             this.b = str;
             this.a = aVar.a.length;
             this.c = aVar.b;

@@ -18,13 +18,13 @@ public class CubeClockMusicFace extends CubeClockConfigBase {
         return super.a();
     }
 
-    public s(c cVar) {
+    public CubeClockMusicFace(c cVar) {
         super(cVar);
         this.e = 130.0f;
         this.f = 130.0f;
         this.g = 64.0f;
         this.h = 128.0f;
-        b();
+        CubeClockMusicFace();
     }
 
     private void b() {

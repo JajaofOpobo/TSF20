@@ -18,7 +18,7 @@ public class k {
 
     class b extends c<j> {
         /* JADX WARN: Multi-variable type inference failed */
-        public b(BlockingQueue<j> blockingQueue) {
+        public k(BlockingQueue<j> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.c);
             setName("TaskDispather");
@@ -35,7 +35,7 @@ public class k {
 
     class A extends c<FutureTask<d>> {
         /* JADX WARN: Multi-variable type inference failed */
-        public A(BlockingQueue<FutureTask<d>> blockingQueue) {
+        public k(BlockingQueue<FutureTask<d>> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(1);
             setName("PendingEventDispatcher");

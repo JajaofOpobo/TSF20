@@ -11,7 +11,7 @@ public class DashElementInfo extends h {
     private Runnable d;
     private Runnable f;
 
-    public b(A aVar, boolean z) {
+    public DashElementInfo(A aVar, boolean z) {
         super(0.85f);
         this.a = false;
         this.c = aVar;

@@ -2,7 +2,7 @@ package com.tsf.shell.f.g.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GestureMenuBlankItem extends com.tsf.shell.f.e._g.a.MenuActionItem {
-    public a(int i) {
+    public GestureMenuBlankItem(int i) {
         super(i);
     }
 

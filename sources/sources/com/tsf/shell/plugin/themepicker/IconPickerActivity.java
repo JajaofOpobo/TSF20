@@ -32,7 +32,7 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
         ThemePickerEvent.b("IconPickerActivity onCreate");
-        g();
+        IconPickerActivity();
         super.onCreate(bundle);
     }
 

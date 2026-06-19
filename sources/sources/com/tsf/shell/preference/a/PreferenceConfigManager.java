@@ -14,7 +14,7 @@ public class PreferenceConfigManager {
     private ArrayList<b> a = new ArrayList<>();
     private A b;
 
-    public c() {
+    public PreferenceConfigManager() {
         this.a.add(new PreferenceBaseFragment(PreferenceBaseFragment.d.demo_icon_1));
         this.a.add(new PreferenceBaseFragment(PreferenceBaseFragment.d.demo_icon_2));
         this.a.add(new PreferenceBaseFragment(PreferenceBaseFragment.d.demo_icon_3));

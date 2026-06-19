@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class DrawerItemBase extends DrawerShortcutItemBase {
-    public a(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+    public DrawerItemBase(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         super(launcherShortcut3DInfo, aVar);
     }
 

@@ -13,19 +13,19 @@ public class MenuActionItem extends MenuActionHandler {
     private c mCurrentChildMenu;
     private int mMarkTextureId;
 
-    public b(int i) {
+    public MenuActionItem(int i) {
         this.mChildMenus = new ArrayList<>();
         this.mMarkTextureId = 0;
         createTitleButton(x.c(i));
     }
 
-    public b(String str) {
+    public MenuActionItem(String str) {
         this.mChildMenus = new ArrayList<>();
         this.mMarkTextureId = 0;
         createTitleButton(str);
     }
 
-    public b(int i, int i2) {
+    public MenuActionItem(int i, int i2) {
         this.mChildMenus = new ArrayList<>();
         this.mMarkTextureId = 0;
         this.mMarkTextureId = i2;

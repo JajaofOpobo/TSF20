@@ -29,7 +29,7 @@ public class OEMComponentResolver {
     public static ArrayList<ArrayList<ComponentName>> q;
 
     static {
-        a();
+        OEMComponentResolver();
     }
 
     public static void a() {

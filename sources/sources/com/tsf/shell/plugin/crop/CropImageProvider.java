@@ -39,7 +39,7 @@ public class CropImageProvider implements CropImageManager.a {
     private boolean A = false;
     public b a = new CropImageManager();
 
-    public g() {
+    public CropImageProvider() {
         this.a.a(this);
     }
 
@@ -51,7 +51,7 @@ public class CropImageProvider implements CropImageManager.a {
         this.d = i;
         this.e = i2;
         this.a.a(0.0f, 0.0f, i, i2);
-        c();
+        CropImageProvider();
     }
 
     public void a(boolean z) {
@@ -122,7 +122,7 @@ public class CropImageProvider implements CropImageManager.a {
         this.b = bitmap;
         this.p = this.b.getWidth();
         this.q = this.b.getHeight();
-        c();
+        CropImageProvider();
     }
 
     public void c() {

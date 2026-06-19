@@ -4,7 +4,7 @@ import android.view.KeyEvent;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 class DropTargetKeyHandler implements com.censivn.C3DEngine.b.c.b.a {
-    b() {
+    DropTargetKeyHandler() {
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a

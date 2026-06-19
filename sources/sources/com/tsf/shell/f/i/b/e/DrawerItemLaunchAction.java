@@ -7,14 +7,14 @@ public class DrawerItemLaunchAction extends DrawerShortcutItemBase {
     private int a;
     private j b;
 
-    public i(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
+    public DrawerItemLaunchAction(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         this.k.visible(false);
         this.a = i;
         if (z) {
             com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
-            k();
+            DrawerItemLaunchAction();
         } else {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemLaunchAction.1
                 @Override // java.lang.Runnable

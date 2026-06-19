@@ -13,7 +13,7 @@ public class ShaderSlotManager {
         b a;
     }
 
-    public class C0079a 
+    public C0079a c(b bVar) {
         C0079a c0079aB = b(bVar);
         this.a.add(c0079aB);
         int size = this.a.size();

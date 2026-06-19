@@ -116,7 +116,7 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
 
     @Override // android.app.Activity
     public void onBackPressed() {
-        b();
+        ShellSummaryActivity();
     }
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
@@ -166,7 +166,7 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
         }
         a("启动页点击， 开始跳转到主界面");
         sendBroadcast(new Intent("com.tsf.shell.StartHome"));
-        b();
+        ShellSummaryActivity();
     }
 
     private void a(String str) {

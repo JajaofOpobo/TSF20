@@ -46,7 +46,7 @@ public class TextureElementC extends VObject3dContainer {
     private final RectF y = new RectF();
     private final RectF z = new RectF();
 
-    public c(int i) {
+    public TextureElementC(int i) {
         this.y.set(0.0f, 0.0f, 1.0f, 1.0f);
         this.z.set(0.0f, 0.0f, 1.0f, 1.0f);
         this.s = i < 1 ? 1 : i;
@@ -132,7 +132,7 @@ public class TextureElementC extends VObject3dContainer {
             i = 0;
         }
         super.alpha(i);
-        a();
+        TextureElementC();
     }
 
     public synchronized void a(PointF pointF, PointF pointF2, double d) {
@@ -484,7 +484,7 @@ public class TextureElementC extends VObject3dContainer {
         private int c;
         private int d;
 
-        public a(int i) {
+        public TextureElementC(int i) {
             this.c = i;
             this.b = new Object[i];
         }
@@ -575,7 +575,7 @@ public class TextureElementC extends VObject3dContainer {
         public double e = 0.0d;
         public float b = 1.0f;
 
-        public C0117c() {
+        public TextureElementC() {
         }
 
         public void a(double d) {

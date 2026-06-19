@@ -1,3 +1,19 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:javaPreCompileDebug UP-TO-DATE
@@ -15,977 +31,618 @@
 > Task :app:processDebugManifestForPackage UP-TO-DATE
 > Task :app:processDebugResources UP-TO-DATE
 
-> Task :app:compileDebugJavaWithJavac
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/a.java:12: error: cannot find symbol
-    private n.c b;
-             ^
-  symbol:   class c
-  location: class n
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/a.java:19: error: cannot find symbol
-    public void a(n.c cVar) {
-                   ^
-  symbol:   class c
-  location: class n
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:18: error: cannot find symbol
-public class B extends j implements f {
+> Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:115: error: '{' expected
+    public class C0080a 
+                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:119: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:121: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:10: error: invalid method declaration; return type required
+    public i() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:63: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:65: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z - com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
                                     ^
-  symbol: class f
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:36: error: cannot find symbol
-public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.a, d.a {
-                                                            ^
-  symbol:   class InterfaceC0101a
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:566: error: cannot find symbol
-    public c s() {
-           ^
-  symbol:   class c
-  location: class n
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:5: error: cannot find symbol
-    f a(int i, int i2);
-    ^
-  symbol:   class f
-  location: interface F
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:29: error: cannot find symbol
-    f n();
-    ^
-  symbol:   class f
-  location: interface F
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/b/a.java:16: error: cannot find symbol
-public class a extends b {
-                       ^
-  symbol: class b
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
-    private b widget;
-            ^
-  symbol:   class b
-  location: class ItemInfo
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
-    public void setWidget(b bVar) {
-                          ^
-  symbol:   class b
-  location: class ItemInfo
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
-    public b getWidget() {
-           ^
-  symbol:   class b
-  location: class ItemInfo
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
-    public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
-                                                                       ^
-  symbol:   class b
-  location: class ItemInfo
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:103: error: cannot find symbol
-    public c c() {
-           ^
-  symbol:   class c
-  location: class t
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:54: error: cannot find symbol
-    public static d a() {
-                  ^
-  symbol:   class d
-  location: class D
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/D.java:17: error: cannot find symbol
-    public static d c() {
-                  ^
-  symbol:   class d
-  location: class D
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:16: error: reference to j is ambiguous
-public class b extends j implements e.a, ShellWallpaperManager.a {
-                       ^
-  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:18: error: reference to j is ambiguous
-    private j.a f;
-            ^
-  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:22: error: reference to j is ambiguous
-    private j.a j;
-            ^
-  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:236: error: reference to j is ambiguous
-    private j.a g() {
-            ^
-  both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: interface expected here
-public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
-                                                                                                ^
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/f/b.java:50: error: cannot find symbol
-    public void a(c cVar) {
-                  ^
-  symbol:   class c
-  location: class b
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/a/b/b.java:9: error: cannot find symbol
-    public a.C0079a a;
-            ^
-  symbol:   class C0079a
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/A.java:24: error: cannot find symbol
-    private static g m;
-                   ^
-  symbol:   class g
-  location: class A
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
-    public Bitmap getIcon(boolean z, a aVar) {
-                                     ^
-  symbol:   class a
-  location: class LauncherShortcut3DInfo
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:220: error: cannot find symbol
-    public void b(ArrayList<c> arrayList) {
-                            ^
-  symbol:   class c
-  location: class C
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:242: error: cannot find symbol
-    public ArrayList<c> av() {
-                     ^
-  symbol:   class c
-  location: class C
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:246: error: cannot find symbol
-    public ArrayList<c> aw() {
-                     ^
-  symbol:   class c
-  location: class C
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:158: error: cannot find symbol
-        public static void a(ItemInfo itemInfo, ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
-                                                             ^
-  symbol:   class a
-  location: class ShellProvider
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
-    private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
-            ^
-  symbol:   class d
-  location: class ThemeDataInfoLayout
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:76: error: cannot find symbol
-    public Bitmap getBackBitmap(a aVar) {
-                                ^
-  symbol:   class a
-  location: class ThemeIconDescription
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:90: error: cannot find symbol
-    public Bitmap getUponBitmap(a aVar) {
-                                ^
-  symbol:   class a
-  location: class ThemeIconDescription
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:102: error: cannot find symbol
-    public Bitmap getMaskBitmap(a aVar) {
-                                ^
-  symbol:   class a
-  location: class ThemeIconDescription
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:145: error: cannot find symbol
-    public Bitmap getIconFilterBitmap(String str, a aVar) {
-                                                  ^
-  symbol:   class a
-  location: class ThemeIconDescription
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:161: error: cannot find symbol
-    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
-                                                                ^
-  symbol:   class a
-  location: class ThemeIconDescription
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/DefaultIconItem.java:13: error: cannot find symbol
-    private a style;
-            ^
-  symbol:   class a
-  location: class DefaultIconItem
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/DefaultIconItem.java:20: error: cannot find symbol
-    public Bitmap getBitmap(a aVar) {
-                            ^
-  symbol:   class a
-  location: class DefaultIconItem
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:55: error: cannot find symbol
-        public void a(final f fVar, MotionEvent motionEvent) {
-                            ^
-  symbol:   class f
-  location: class C0127a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:76: error: cannot find symbol
-        public boolean a(f fVar) {
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:70: error: '{' expected
+    public class Number3d 
                          ^
-  symbol:   class f
-  location: class C0127a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:10: error: cannot find symbol
-    private ArrayList<f> a = new ArrayList<>();
-                      ^
-  symbol:   class f
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:12: error: cannot find symbol
-    public void a(f fVar) {
-                  ^
-  symbol:   class f
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:25: error: cannot find symbol
-    public void b(f fVar) {
-                  ^
-  symbol:   class f
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:38: error: cannot find symbol
-    public void c(f fVar) {
-                  ^
-  symbol:   class f
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:46: error: cannot find symbol
-    public ArrayList<f> a() {
-                     ^
-  symbol:   class f
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:57: error: cannot find symbol
-    protected a.C0133a I;
-               ^
-  symbol:   class C0133a
-  location: interface a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:65: error: cannot find symbol
-    private com.tsf.shell.f.f.a.d.a U;
-                                 ^
-  symbol:   class a
-  location: package com.tsf.shell.f.f.a.d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:81: error: cannot find symbol
-    private a.C0133a ao;
-             ^
-  symbol:   class C0133a
-  location: interface a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:247: error: cannot find symbol
-    public com.tsf.shell.f.f.a.d.a an() {
-                                ^
-  symbol:   class a
-  location: package com.tsf.shell.f.f.a.d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:700: error: reference to A is ambiguous
-    public void a(A aVar) {
-                  ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-    public void a(A aVar, A aVar2, A aVar3) {
-                  ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-    public void a(A aVar, A aVar2, A aVar3) {
-                          ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-    public void a(A aVar, A aVar2, A aVar3) {
-                                   ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:760: error: reference to A is ambiguous
-    private com.tsf.shell.f.i.b.d.b a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
-                                                  ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:1104: error: reference to A is ambiguous
-    public void a(com.tsf.shell.f.i.B bVar, A aVar, int i) {
-                                            ^
-  both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b a = new b.c();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b i = new e.d();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b j = new e.b();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b k = new e.c();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b l = new d.b();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b n = new d.c();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
-    public static final com.censivn.C3DEngine.b.g.b o = new f();
-                                                 ^
-  symbol:   class b
-  location: package com.censivn.C3DEngine.b.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:16: error: cannot find symbol
-    private com.tsf.shell.f.f.a.d.a f = new com.tsf.shell.f.f.a.d.a(this);
-                                 ^
-  symbol:   class a
-  location: package com.tsf.shell.f.f.a.d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:24: error: cannot find symbol
-    public com.tsf.shell.f.f.a.d.a b() {
-                                ^
-  symbol:   class a
-  location: package com.tsf.shell.f.f.a.d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:13: error: cannot inherit from final b
-public class a extends b {
-                       ^
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:20: error: cannot find symbol
-    private d.a h;
-             ^
-  symbol:   class a
-  location: class d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:33: error: cannot find symbol
-    public a(k.a aVar) {
-              ^
-  symbol:   class a
-  location: class k
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:142: error: cannot find symbol
-    public void a(final d.a aVar) {
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:72: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:73: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:74: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:76: error: class, interface, enum, or record expected
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:78: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:9: error: invalid method declaration; return type required
+    public d() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:60: error: '{' expected
+    public class Number3d 
                          ^
-  symbol:   class a
-  location: class d
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:20: error: reference to k is ambiguous
-    private static k k;
-                   ^
-  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:26: error: reference to k is ambiguous
-    private k.a j;
-            ^
-  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:32: error: reference to k is ambiguous
-    public b(k.a aVar) {
-             ^
-  both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/i.java:15: error: cannot find symbol
-    protected a.C0133a f;
-               ^
-  symbol:   class C0133a
-  location: class a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/c.java:399: error: package b does not exist
-    public com.tsf.shell.f.f.a.a.a.c a(b.c cVar) {
-                                        ^
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/c.java:408: error: package b does not exist
-    public com.tsf.shell.f.f.a.a.a.c b(b.c cVar) {
-                                        ^
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/a/b.java:17: error: cannot find symbol
-    public void a(b.c cVar) {
-                   ^
-  symbol:   class c
-  location: class b
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/a/c.java:27: error: cannot find symbol
-    private com.tsf.shell.f.f.a.a.a d = new com.tsf.shell.f.f.a.a.a();
-                                 ^
-  symbol:   class a
-  location: package com.tsf.shell.f.f.a.a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:13: error: cannot find symbol
-    private com.tsf.shell.f.i.a.C0133a a;
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:62: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.A.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.A.K;
                                ^
-  symbol:   class C0133a
-  location: package com.tsf.shell.f.i.a
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:17: error: cannot find symbol
-    protected ArrayList<c> b = new ArrayList<>();
-                        ^
-  symbol:   class c
-  location: class A
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:123: error: cannot find symbol
-    public ArrayList<c> i() {
-                     ^
-  symbol:   class c
-  location: class A
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:21: error: cannot find symbol
-    private f j;
-            ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:508: error: cannot find symbol
-    public f n() {
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:67: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:69: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:70: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:71: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:73: error: class, interface, enum, or record expected
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
            ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:513: error: cannot find symbol
-    public boolean a(f fVar, float f, float f2) {
-                     ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:518: error: cannot find symbol
-    public void c(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:522: error: cannot find symbol
-    public void e(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:526: error: cannot find symbol
-    public boolean b(f fVar) {
-                     ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:531: error: cannot find symbol
-    public void d(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:535: error: cannot find symbol
-    public void a(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:539: error: cannot find symbol
-    public void f(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:549: error: cannot find symbol
-    public boolean h(f fVar) {
-                     ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:557: error: cannot find symbol
-    public void g(f fVar) {
-                  ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:576: error: cannot find symbol
-    public f a(int i, int i2) {
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:75: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamRight.java:10: error: invalid method declaration; return type required
+    public f() {
            ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:581: error: cannot find symbol
-    public f a(int i, int i2, boolean z) {
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCenter.java:10: error: invalid method declaration; return type required
+    public e() {
            ^
-  symbol:   class f
-  location: class B
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/g/d.java:30: error: cannot find symbol
-    private com.tsf.shell.f.e.g.a mClassMenu = new com.tsf.shell.f.e.g.a(this, MENU_ITEM_DISTANCE);
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:10: error: invalid method declaration; return type required
+    public g() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:51: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:53: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
                                ^
-  symbol:   class a
-  location: package com.tsf.shell.f.e.g
-/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/g/d.java:447: error: cannot find symbol
-    class a implements b.a {
-                        ^
-  symbol:   class a
-  location: class d.b
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:58: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:60: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:61: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:62: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:65: error: class, interface, enum, or record expected
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:67: error: class, interface, enum, or record expected
+        DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:68: error: class, interface, enum, or record expected
+        if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:70: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:72: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:74: error: class, interface, enum, or record expected
+        c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:75: error: class, interface, enum, or record expected
+        c0080a.d = ((-180.0f) - (f4 / 2.0f)) + f2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:76: error: class, interface, enum, or record expected
+        c0080a.e = (((-180.0f) - (f4 - f2)) - (c0080a.b / 2.0f)) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:77: error: class, interface, enum, or record expected
+        return c0080a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:78: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:81: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:83: error: class, interface, enum, or record expected
+        return (f <= f2 - 20.0f || f >= f2 + 20.0f) ? 1 : 2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:84: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:10: error: invalid method declaration; return type required
+    public h() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:49: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:51: error: <identifier> expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: illegal start of type
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: <identifier> expected
+        return Number3d.TEMPNUMBER3D;
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:56: error: '{' expected
+    public class Number3d 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:58: error: class, interface, enum, or record expected
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:59: error: class, interface, enum, or record expected
+        return Number3d.TEMPNUMBER3D;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:60: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:63: error: class, interface, enum, or record expected
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:65: error: class, interface, enum, or record expected
+        DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:66: error: class, interface, enum, or record expected
+        if (((-com.censivn.C3DEngine.b.b.A.C) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + iVar.position().y > f) {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:68: error: class, interface, enum, or record expected
+        } else {
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:70: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:72: error: class, interface, enum, or record expected
+        c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:73: error: class, interface, enum, or record expected
+        c0080a.d = ((f4 / 2.0f) + 0.0f) - f2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:74: error: class, interface, enum, or record expected
+        c0080a.e = (f4 - f2) + 0.0f + (c0080a.b / 2.0f) + f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:75: error: class, interface, enum, or record expected
+        return c0080a;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:76: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:79: error: class, interface, enum, or record expected
+    public int a(float f, float f2, float f3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:82: error: class, interface, enum, or record expected
+        }
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:84: error: class, interface, enum, or record expected
+    }
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerEditPanel.java:11: error: invalid method declaration; return type required
+    public e(f fVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerItemView.java:7: error: invalid method declaration; return type required
+    public c() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerConfig.java:9: error: invalid method declaration; return type required
+    public h(int i, int i2, int i3) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerContentPanel.java:69: error: '{' expected
+    public class Runnable 
+                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerContentPanel.java:116: error: invalid method declaration; return type required
+    public f(boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsConfig.java:11: error: invalid method declaration; return type required
+    public f(e eVar, j jVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsItemType.java:36: error: invalid method declaration; return type required
+    public A(e eVar, float f, float f2, int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/a/DrawerSettingsResult.java:23: error: invalid method declaration; return type required
+    public b(e eVar, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerItemLayout.java:8: error: invalid method declaration; return type required
+    public d() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsBase.java:25: error: invalid method declaration; return type required
+    public c() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsPanel.java:35: error: invalid method declaration; return type required
+    public e(boolean z) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/DrawerPanelController.java:15: error: invalid method declaration; return type required
+    public A() {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageScrollState.java:29: error: invalid method declaration; return type required
+    public d(Context context, float f, float f2, float f3, int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:15: error: illegal start of type
+    private a a;
+    ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:16: error: class, interface, enum, or record expected
+    private a b;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:17: error: class, interface, enum, or record expected
+    private TextureElement c;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:18: error: class, interface, enum, or record expected
+    private float d = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:19: error: class, interface, enum, or record expected
+    private float e = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:20: error: class, interface, enum, or record expected
+    private float f = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:21: error: class, interface, enum, or record expected
+    private int g = 0;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:22: error: class, interface, enum, or record expected
+    private float h = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:23: error: class, interface, enum, or record expected
+    private float i = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:24: error: class, interface, enum, or record expected
+    private float j = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:25: error: class, interface, enum, or record expected
+    private float k = 0.0f;
+            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:27: error: class, interface, enum, or record expected
+    public e a(float f, float f2, float f3, int i) {
+           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:29: error: class, interface, enum, or record expected
+        this.e = f2;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:30: error: class, interface, enum, or record expected
+        this.f = f3;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:31: error: class, interface, enum, or record expected
+        this.g = i;
+        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:32: error: class, interface, enum, or record expected
+        e eVar = new ScrollOffset(f + f2, 0.0f, f2);
+        ^
 100 errors
 
-> Task :app:compileDebugJavaWithJavac FAILED
-
-[Incubating] Problems report is available at: file:///home/ubuntu/Documents/TSF20/build/reports/problems/problems-report.html
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
 Execution failed for task ':app:compileDebugJavaWithJavac'.
 > Compilation failed; see the compiler output below.
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:18: error: cannot find symbol
-  public class B extends j implements f {
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:115: error: '{' expected
+      public class C0080a 
+                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:63: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:65: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z - com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
                                       ^
-    symbol: class f
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/b/a.java:16: error: cannot find symbol
-  public class a extends b {
-                         ^
-    symbol: class b/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/b.java:31: error: interface expected here
-  public class b extends com.tsf.shell.f.i.C implements com.tsf.shell.f.e.a.a, com.tsf.shell.f.e.h.a, m, com.tsf.shell.f.i.A.InterfaceC0113a {
-                                                                                                  ^Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/c.java:399: error: package b does not exist
-      public com.tsf.shell.f.f.a.a.a.c a(b.c cVar) {
-                                          ^
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/c.java:408: error: package b does not exist
-      public com.tsf.shell.f.f.a.a.a.c b(b.c cVar) {
-                                          ^Note: Recompile with -Xlint:unchecked for details./home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/a.java:12: error: cannot find symbol
-      private n.c b;
-               ^
-    symbol:   class c
-    location: class n
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/a.java:19: error: cannot find symbol
-      public void a(n.c cVar) {
-                     ^
-    symbol:   class c
-    location: class n
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:36: error: cannot find symbol
-  public class h extends com.tsf.shell.f.f.g implements b.a, a.InterfaceC0101a, c.a, d.a {
-                                                              ^
-    symbol:   class InterfaceC0101a
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/n.java:566: error: cannot find symbol
-      public c s() {
-             ^
-    symbol:   class c
-    location: class n
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:5: error: cannot find symbol
-      f a(int i, int i2);
-      ^
-    symbol:   class f
-    location: interface F
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/F.java:29: error: cannot find symbol
-      f n();
-      ^
-    symbol:   class f
-    location: interface F
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:31: error: cannot find symbol
-      private b widget;
-              ^
-    symbol:   class b
-    location: class ItemInfo
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:88: error: cannot find symbol
-      public void setWidget(b bVar) {
-                            ^
-    symbol:   class b
-    location: class ItemInfo
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:92: error: cannot find symbol
-      public b getWidget() {
-             ^
-    symbol:   class b
-    location: class ItemInfo
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/ItemInfo.java:107: error: cannot find symbol
-      public void onUpdateLayoutInformation(ContentValues contentValues, b bVar) {
-                                                                         ^
-    symbol:   class b
-    location: class ItemInfo
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/t.java:103: error: cannot find symbol
-      public c c() {
-             ^
-    symbol:   class c
-    location: class t
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/D.java:54: error: cannot find symbol
-      public static d a() {
-                    ^
-    symbol:   class d
-    location: class D
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/D.java:17: error: cannot find symbol
-      public static d c() {
-                    ^
-    symbol:   class d
-    location: class D
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/f/b.java:50: error: cannot find symbol
-      public void a(c cVar) {
-                    ^
-    symbol:   class c
-    location: class b
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/a/b/b.java:9: error: cannot find symbol
-      public a.C0079a a;
-              ^
-    symbol:   class C0079a
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/A.java:24: error: cannot find symbol
-      private static g m;
-                     ^
-    symbol:   class g
-    location: class A
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcut3DInfo.java:48: error: cannot find symbol
-      public Bitmap getIcon(boolean z, a aVar) {
-                                       ^
-    symbol:   class a
-    location: class LauncherShortcut3DInfo
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:220: error: cannot find symbol
-      public void b(ArrayList<c> arrayList) {
-                              ^
-    symbol:   class c
-    location: class C
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:242: error: cannot find symbol
-      public ArrayList<c> av() {
-                       ^
-    symbol:   class c
-    location: class C
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/C.java:246: error: cannot find symbol
-      public ArrayList<c> aw() {
-                       ^
-    symbol:   class c
-    location: class C
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellModel.java:158: error: cannot find symbol
-          public static void a(ItemInfo itemInfo, ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
-                                                               ^
-    symbol:   class a
-    location: class ShellProvider
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/mix/menu/item/detail/ThemeDataInfoLayout.java:23: error: cannot find symbol
-      private d<a> mElementPool = new d<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
-              ^
-    symbol:   class d
-    location: class ThemeDataInfoLayout
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:76: error: cannot find symbol
-      public Bitmap getBackBitmap(a aVar) {
-                                  ^
-    symbol:   class a
-    location: class ThemeIconDescription
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:90: error: cannot find symbol
-      public Bitmap getUponBitmap(a aVar) {
-                                  ^
-    symbol:   class a
-    location: class ThemeIconDescription
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:102: error: cannot find symbol
-      public Bitmap getMaskBitmap(a aVar) {
-                                  ^
-    symbol:   class a
-    location: class ThemeIconDescription
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:145: error: cannot find symbol
-      public Bitmap getIconFilterBitmap(String str, a aVar) {
-                                                    ^
-    symbol:   class a
-    location: class ThemeIconDescription
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeIconDescription.java:161: error: cannot find symbol
-      protected Bitmap getBitmap(DefaultIconItem defaultIconItem, a aVar) {
-                                                                  ^
-    symbol:   class a
-    location: class ThemeIconDescription
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/DefaultIconItem.java:13: error: cannot find symbol
-      private a style;
-              ^
-    symbol:   class a
-    location: class DefaultIconItem
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/DefaultIconItem.java:20: error: cannot find symbol
-      public Bitmap getBitmap(a aVar) {
-                              ^
-    symbol:   class a
-    location: class DefaultIconItem
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:55: error: cannot find symbol
-          public void a(final f fVar, MotionEvent motionEvent) {
-                              ^
-    symbol:   class f
-    location: class C0127a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:76: error: cannot find symbol
-          public boolean a(f fVar) {
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:70: error: '{' expected
+      public class Number3d 
                            ^
-    symbol:   class f
-    location: class C0127a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:10: error: cannot find symbol
-      private ArrayList<f> a = new ArrayList<>();
-                        ^
-    symbol:   class f
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:12: error: cannot find symbol
-      public void a(f fVar) {
-                    ^
-    symbol:   class f
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:25: error: cannot find symbol
-      public void b(f fVar) {
-                    ^
-    symbol:   class f
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:38: error: cannot find symbol
-      public void c(f fVar) {
-                    ^
-    symbol:   class f
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/a.java:46: error: cannot find symbol
-      public ArrayList<f> a() {
-                       ^
-    symbol:   class f
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:57: error: cannot find symbol
-      protected a.C0133a I;
-                 ^
-    symbol:   class C0133a
-    location: interface a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:65: error: cannot find symbol
-      private com.tsf.shell.f.f.a.d.a U;
-                                   ^
-    symbol:   class a
-    location: package com.tsf.shell.f.f.a.d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:81: error: cannot find symbol
-      private a.C0133a ao;
-               ^
-    symbol:   class C0133a
-    location: interface a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:247: error: cannot find symbol
-      public com.tsf.shell.f.f.a.d.a an() {
-                                  ^
-    symbol:   class a
-    location: package com.tsf.shell.f.f.a.d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:5: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b a = new b.c();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:6: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b b = new b.C0032a();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:7: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b c = new b.C0033b();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:8: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b d = new C0030a.C0031a();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:9: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b e = new C0030a.c();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:10: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b f = new C0030a.b();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:11: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b g = new c.C0034a();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:12: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b h = new e.C0036a();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:13: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b i = new e.d();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:14: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b j = new e.b();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:15: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b k = new e.c();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:16: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b l = new d.b();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:17: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b m = new d.C0035a();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:18: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b n = new d.c();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/g/A.java:19: error: cannot find symbol
-      public static final com.censivn.C3DEngine.b.g.b o = new f();
-                                                   ^
-    symbol:   class b
-    location: package com.censivn.C3DEngine.b.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:16: error: cannot find symbol
-      private com.tsf.shell.f.f.a.d.a f = new com.tsf.shell.f.f.a.d.a(this);
-                                   ^
-    symbol:   class a
-    location: package com.tsf.shell.f.f.a.d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/a/e.java:24: error: cannot find symbol
-      public com.tsf.shell.f.f.a.d.a b() {
-                                  ^
-    symbol:   class a
-    location: package com.tsf.shell.f.f.a.d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:20: error: cannot find symbol
-      private d.a h;
-               ^
-    symbol:   class a
-    location: class d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:33: error: cannot find symbol
-      public a(k.a aVar) {
-                ^
-    symbol:   class a
-    location: class k
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:142: error: cannot find symbol
-      public void a(final d.a aVar) {
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:60: error: '{' expected
+      public class Number3d 
                            ^
-    symbol:   class a
-    location: class d
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/i.java:15: error: cannot find symbol
-      protected a.C0133a f;
-                 ^
-    symbol:   class C0133a
-    location: class a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/a/b.java:17: error: cannot find symbol
-      public void a(b.c cVar) {
-                     ^
-    symbol:   class c
-    location: class b
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/a/a/c.java:27: error: cannot find symbol
-      private com.tsf.shell.f.f.a.a.a d = new com.tsf.shell.f.f.a.a.a();
-                                   ^
-    symbol:   class a
-    location: package com.tsf.shell.f.f.a.a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:13: error: cannot find symbol
-      private com.tsf.shell.f.i.a.C0133a a;
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:62: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.A.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.A.K;
                                  ^
-    symbol:   class C0133a
-    location: package com.tsf.shell.f.i.a
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:17: error: cannot find symbol
-      protected ArrayList<c> b = new ArrayList<>();
-                          ^
-    symbol:   class c
-    location: class A
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/A.java:123: error: cannot find symbol
-      public ArrayList<c> i() {
-                       ^
-    symbol:   class c
-    location: class A
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:21: error: cannot find symbol
-      private f j;
-              ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:508: error: cannot find symbol
-      public f n() {
-             ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:513: error: cannot find symbol
-      public boolean a(f fVar, float f, float f2) {
-                       ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:518: error: cannot find symbol
-      public void c(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:522: error: cannot find symbol
-      public void e(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:526: error: cannot find symbol
-      public boolean b(f fVar) {
-                       ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:531: error: cannot find symbol
-      public void d(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:535: error: cannot find symbol
-      public void a(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:539: error: cannot find symbol
-      public void f(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:549: error: cannot find symbol
-      public boolean h(f fVar) {
-                       ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:557: error: cannot find symbol
-      public void g(f fVar) {
-                    ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:576: error: cannot find symbol
-      public f a(int i, int i2) {
-             ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/i/B.java:581: error: cannot find symbol
-      public f a(int i, int i2, boolean z) {
-             ^
-    symbol:   class f
-    location: class B
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/g/d.java:30: error: cannot find symbol
-      private com.tsf.shell.f.e.g.a mClassMenu = new com.tsf.shell.f.e.g.a(this, MENU_ITEM_DISTANCE);
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:67: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:51: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:53: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
                                  ^
-    symbol:   class a
-    location: package com.tsf.shell.f.e.g
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/e/g/d.java:447: error: cannot find symbol
-      class a implements b.a {
-                          ^
-    symbol:   class a
-    location: class d.bNote: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API./home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/a.java:13: error: cannot inherit from final b
-  public class a extends b {
-                         ^/home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:16: error: reference to j is ambiguous
-  public class b extends j implements e.a, ShellWallpaperManager.a {
-                         ^
-    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:18: error: reference to j is ambiguous
-      private j.a f;
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:58: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:49: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:51: error: <identifier> expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: <identifier> expected
+          return Number3d.TEMPNUMBER3D;
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:56: error: '{' expected
+      public class Number3d 
+                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerContentPanel.java:69: error: '{' expected
+      public class Runnable 
+                           ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:66: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:63: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:54: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:52: error: illegal start of type
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:15: error: illegal start of type
+      private a a;
+      ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:119: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimConfig.java:121: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:72: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.z + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:73: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:74: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:76: error: class, interface, enum, or record expected
+      public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:78: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:69: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:70: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:71: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:73: error: class, interface, enum, or record expected
+      public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:75: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:60: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:61: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:62: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:65: error: class, interface, enum, or record expected
+      public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:67: error: class, interface, enum, or record expected
+          DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:68: error: class, interface, enum, or record expected
+          if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:70: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:72: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:74: error: class, interface, enum, or record expected
+          c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:75: error: class, interface, enum, or record expected
+          c0080a.d = ((-180.0f) - (f4 / 2.0f)) + f2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:76: error: class, interface, enum, or record expected
+          c0080a.e = (((-180.0f) - (f4 - f2)) - (c0080a.b / 2.0f)) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:77: error: class, interface, enum, or record expected
+          return c0080a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:78: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:81: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:83: error: class, interface, enum, or record expected
+          return (f <= f2 - 20.0f || f >= f2 + 20.0f) ? 1 : 2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:84: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:58: error: class, interface, enum, or record expected
+          Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:59: error: class, interface, enum, or record expected
+          return Number3d.TEMPNUMBER3D;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:60: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:63: error: class, interface, enum, or record expected
+      public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:65: error: class, interface, enum, or record expected
+          DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:66: error: class, interface, enum, or record expected
+          if (((-com.censivn.C3DEngine.b.b.A.C) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + iVar.position().y > f) {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:68: error: class, interface, enum, or record expected
+          } else {
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:70: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:72: error: class, interface, enum, or record expected
+          c0080a.b = ((fAsin - (f4 - f2)) + f2) - f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:73: error: class, interface, enum, or record expected
+          c0080a.d = ((f4 / 2.0f) + 0.0f) - f2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:74: error: class, interface, enum, or record expected
+          c0080a.e = (f4 - f2) + 0.0f + (c0080a.b / 2.0f) + f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:75: error: class, interface, enum, or record expected
+          return c0080a;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:76: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:79: error: class, interface, enum, or record expected
+      public int a(float f, float f2, float f3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:82: error: class, interface, enum, or record expected
+          }
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:84: error: class, interface, enum, or record expected
+      }
+      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:16: error: class, interface, enum, or record expected
+      private a b;
               ^
-    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:22: error: reference to j is ambiguous
-      private j.a j;
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:17: error: class, interface, enum, or record expected
+      private TextureElement c;
               ^
-    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/manager/f/b.java:236: error: reference to j is ambiguous
-      private j.a g() {
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:18: error: class, interface, enum, or record expected
+      private float d = 0.0f;
               ^
-    both class com.censivn.C3DEngine.b.f.j in com.censivn.C3DEngine.b.f and class com.tsf.shell.f.f.j in com.tsf.shell.f.f match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:700: error: reference to A is ambiguous
-      public void a(A aVar) {
-                    ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-      public void a(A aVar, A aVar2, A aVar3) {
-                    ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-      public void a(A aVar, A aVar2, A aVar3) {
-                            ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:717: error: reference to A is ambiguous
-      public void a(A aVar, A aVar2, A aVar3) {
-                                     ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:760: error: reference to A is ambiguous
-      private com.tsf.shell.f.i.b.d.b a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.b> arrayList) {
-                                                    ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/h.java:1104: error: reference to A is ambiguous
-      public void a(com.tsf.shell.f.i.B bVar, A aVar, int i) {
-                                              ^
-    both class com.censivn.C3DEngine.b.g.A in com.censivn.C3DEngine.b.g and class com.tsf.shell.f.f.a.A in com.tsf.shell.f.f.a match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:20: error: reference to k is ambiguous
-      private static k k;
-                     ^
-    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:26: error: reference to k is ambiguous
-      private k.a j;
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:19: error: class, interface, enum, or record expected
+      private float e = 0.0f;
               ^
-    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
-  /home/ubuntu/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/c/a/b.java:32: error: reference to k is ambiguous
-      public b(k.a aVar) {
-               ^
-    both class com.tsf.shell.f.e.k in com.tsf.shell.f.e and class com.tsf.shell.f.f.a.c.k in com.tsf.shell.f.f.a.c match
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:20: error: class, interface, enum, or record expected
+      private float f = 0.0f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:21: error: class, interface, enum, or record expected
+      private int g = 0;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:22: error: class, interface, enum, or record expected
+      private float h = 0.0f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:23: error: class, interface, enum, or record expected
+      private float i = 0.0f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:24: error: class, interface, enum, or record expected
+      private float j = 0.0f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:25: error: class, interface, enum, or record expected
+      private float k = 0.0f;
+              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:27: error: class, interface, enum, or record expected
+      public e a(float f, float f2, float f3, int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:29: error: class, interface, enum, or record expected
+          this.e = f2;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:30: error: class, interface, enum, or record expected
+          this.f = f3;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:31: error: class, interface, enum, or record expected
+          this.g = i;
+          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/ScrollManager.java:32: error: class, interface, enum, or record expected
+          e eVar = new ScrollOffset(f + f2, 0.0f, f2);
+          ^/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamBase.java:10: error: invalid method declaration; return type required
+      public i() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamLeft.java:9: error: invalid method declaration; return type required
+      public d() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamRight.java:10: error: invalid method declaration; return type required
+      public f() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCenter.java:10: error: invalid method declaration; return type required
+      public e() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamEdge.java:10: error: invalid method declaration; return type required
+      public g() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/a/DrawerAnimParamCorner.java:10: error: invalid method declaration; return type required
+      public h() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerEditPanel.java:11: error: invalid method declaration; return type required
+      public e(f fVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerItemView.java:7: error: invalid method declaration; return type required
+      public c() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerConfig.java:9: error: invalid method declaration; return type required
+      public h(int i, int i2, int i3) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/a/DrawerContentPanel.java:116: error: invalid method declaration; return type required
+      public f(boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsConfig.java:11: error: invalid method declaration; return type required
+      public f(e eVar, j jVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsItemType.java:36: error: invalid method declaration; return type required
+      public A(e eVar, float f, float f2, int i) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/a/DrawerSettingsResult.java:23: error: invalid method declaration; return type required
+      public b(e eVar, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerItemLayout.java:8: error: invalid method declaration; return type required
+      public d() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsBase.java:25: error: invalid method declaration; return type required
+      public c() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsPanel.java:35: error: invalid method declaration; return type required
+      public e(boolean z) {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/DrawerPanelController.java:15: error: invalid method declaration; return type required
+      public A() {
+             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/c/a/PageScrollState.java:29: error: invalid method declaration; return type required
+      public d(Context context, float f, float f2, float f3, int i) {
+             ^
   100 errors
 
 * Try:
 > Check your code and dependencies to fix the compilation error(s)
 > Run with --scan to get full insights.
 
-BUILD FAILED in 3s
+BUILD FAILED in 2s
 15 actionable tasks: 1 executed, 14 up-to-date

@@ -4,7 +4,7 @@ package com.tsf.shell.f.f;
 public abstract class ItemPageTransition extends 
     protected B a;
 
-    public i(int i, int i2, boolean z) {
+    public ItemPageTransition(int i, int i2, boolean z) {
         super(i, i2, z);
         this.a = new B();
         this.a.useVBO(false);

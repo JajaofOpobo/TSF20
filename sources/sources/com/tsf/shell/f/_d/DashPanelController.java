@@ -13,7 +13,7 @@ public class DashPanelController {
     public com.tsf.shell.f._d.c.DashLayoutBase e;
     public com.tsf.shell.f._d.b.DashItemConfigurator f;
 
-    public A() {
+    public DashPanelController() {
         com.tsf.shell.manager.app.v = this;
         this.a = new m();
         this.c = new com.tsf.shell.f._d.d.DashAnimationBase();

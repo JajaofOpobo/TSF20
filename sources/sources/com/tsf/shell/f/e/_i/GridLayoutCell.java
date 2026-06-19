@@ -15,7 +15,7 @@ public class GridLayoutCell extends j {
     private static final int d = com.censivn.C3DEngine.b.b.A.b(15.0f);
     private ArrayList<a> e = new ArrayList<>();
 
-    public b() {
+    public GridLayoutCell() {
         for (int i = 0; i < 5; i++) {
             this.e.add(new GridLayoutStrategy());
         }
@@ -91,7 +91,7 @@ public class GridLayoutCell extends j {
     }
 
     public void c() {
-        b();
+        GridLayoutCell();
         int i = 0;
         Iterator<a> it = this.e.iterator();
         while (true) {

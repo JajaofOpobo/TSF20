@@ -8,7 +8,7 @@ public abstract class SceneElementBase extends com.censivn.C3DEngine.b.b.A.a {
     private boolean b = false;
     private int c = 10;
 
-    public c(int i) {
+    public SceneElementBase(int i) {
         setTitle(i);
         setTitlePosition(com.censivn.C3DEngine.b.b.A.a(120.0f));
         setTitleSize(36);

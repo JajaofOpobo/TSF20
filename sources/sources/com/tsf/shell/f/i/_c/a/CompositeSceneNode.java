@@ -13,11 +13,11 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CompositeSceneNode extends j implements k {
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
     private VRectangle f;
     private a g;
     private a h;
@@ -30,10 +30,10 @@ public class CompositeSceneNode extends j implements k {
     private VButtonItem s;
     private VButtonItem t;
 
-    public m(VTextureManager vTextureManager, Context context) {
+    public CompositeSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.o = 600;
-        e();
+        CompositeSceneNode();
     }
 
     public void e() {

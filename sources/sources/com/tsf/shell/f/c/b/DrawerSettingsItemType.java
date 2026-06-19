@@ -33,7 +33,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         }
     };
 
-    public A(e eVar, float f, float f2, int i) {
+    public DrawerSettingsItemType(e eVar, float f, float f2, int i) {
         float f3 = 128.0f;
         this.n = 0;
         this.a = eVar;
@@ -70,26 +70,26 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
     public void addChild(i iVar) {
         this.e.add(j());
         super.addChild(iVar);
-        e();
-        g();
+        DrawerSettingsItemType();
+        DrawerSettingsItemType();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void addChildAt(i iVar, int i) {
         this.e.add(j());
         super.addChildAt(iVar, i);
-        e();
-        g();
+        DrawerSettingsItemType();
+        DrawerSettingsItemType();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
-        e();
+        DrawerSettingsItemType();
         if (zRemoveChild) {
             a(this.e.remove(0));
-            g();
-            i();
+            DrawerSettingsItemType();
+            DrawerSettingsItemType();
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 ((com.tsf.shell.f.i.PageItem) iVar).c = false;
                 ((com.tsf.shell.f.i.PageItem) iVar).B();
@@ -314,8 +314,8 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
                     cVar.ay();
                 }
             }
-            g();
-            i();
+            DrawerSettingsItemType();
+            DrawerSettingsItemType();
         }
         this.m = -1;
     }
@@ -340,7 +340,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
     }
 
     public void g() {
-        h();
+        DrawerSettingsItemType();
         this.g = false;
         setAnimationObjectState(true);
         invalidate();
@@ -377,7 +377,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
     public void i() {
         if (!this.a.e()) {
             if (this.l == null) {
-                k();
+                DrawerSettingsItemType();
             }
             if (!this.k) {
                 this.k = true;

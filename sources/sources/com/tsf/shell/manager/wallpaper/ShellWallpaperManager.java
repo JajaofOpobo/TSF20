@@ -75,7 +75,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
     public void b() {
         this.o = new WallpaperMenuContainer();
-        m();
+        a();
         if (com.tsf.shell.manager.b.ConfigManager.ai()) {
         }
     }
@@ -334,7 +334,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public void a(int i, int i2, int i3, int i4) {
-        m();
+        a();
         b(this.l, true);
     }
 
@@ -370,7 +370,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             this.j = 100;
             setDefaultColor(this.g);
             this.h = new com.tsf.shell.f.e.b.ResizeConfig();
-            d();
+            b();
         }
 
         public int a(int i) {
@@ -395,15 +395,15 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (ShellWallpaperManager.this.c) {
-                e();
+                b();
                 ShellWallpaperManager.this.c = false;
             }
             if (this.e != null) {
-                g();
+                b();
             }
             if (this.j != this.i) {
                 this.i = this.j;
-                f();
+                b();
             }
             if (com.tsf.shell.manager.b.ConfigManager.ai()) {
                 if (!ShellWallpaperManager.this.k) {
@@ -482,7 +482,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                     b(height);
                     ShellWallpaperManager.this.h = width;
                     this.e.recycle();
-                    f();
+                    b();
                     ShellWallpaperManager.this.b(ShellWallpaperManager.this.l, false);
                     com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.wallpaper.ShellWallpaperManager.b.1
                         @Override // java.lang.Runnable

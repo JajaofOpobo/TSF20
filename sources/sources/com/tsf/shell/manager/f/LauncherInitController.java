@@ -101,7 +101,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.DataCoordinator.addChild(this.d);
         this.a.addChild(com.tsf.shell.manager.app.DataCoordinator);
         this.a.addChild(this.e);
-        h();
+        LauncherInitController();
         com.tsf.shell.f._d.c().a();
         Home.c.a("initScene end");
         this.f = true;

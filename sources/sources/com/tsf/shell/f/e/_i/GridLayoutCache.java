@@ -15,12 +15,12 @@ public class GridLayoutCache extends com.censivn.C3DEngine.b.f._a.a {
         void a();
     }
 
-    public c() {
+    public GridLayoutCache() {
         super(16, 32, 32, 32, null, false);
         this.c = false;
         this.d = new ArrayList<>();
         this.a = 255.0f;
-        c();
+        a();
     }
 
     public void c() {
@@ -31,7 +31,7 @@ public class GridLayoutCache extends com.censivn.C3DEngine.b.f._a.a {
 
     public void d() {
         this.c = true;
-        e();
+        a();
         this.a = 255.0f;
         alpha((int) this.a);
         visible(true);

@@ -8,7 +8,7 @@ import com.tsf.shell.Home;
 public class PageContentType extends g {
     private com.censivn.C3DEngine.b.h.b.c l;
 
-    public k() {
+    public PageContentType() {
         this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.A.d(), this.a);
     }
 
@@ -44,7 +44,7 @@ public class PageContentType extends g {
     public void ab() {
         if (!ad() && X()) {
             super.ab();
-            m().g();
+            PageContentType().g();
             for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
                 if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                     ((com.tsf.shell.f.i.PageItem) iVar).q_();

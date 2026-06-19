@@ -11,7 +11,7 @@ public final class OverlayConfig {
     public int d;
     public int e;
 
-    public d(String str, String str2) {
+    public OverlayConfig(String str, String str2) {
         a(str, str2);
         this.d = GLES20.glGetAttribLocation(this.a, "TTTTTT");
         if (this.d == -1) {

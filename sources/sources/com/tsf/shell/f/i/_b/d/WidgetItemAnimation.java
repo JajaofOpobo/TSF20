@@ -14,13 +14,13 @@ public class WidgetItemAnimation {
     private com.censivn.C3DEngine.b.g.d h;
     private b i;
 
-    public e(b bVar) {
+    public WidgetItemAnimation(b bVar) {
         this.i = bVar;
-        c();
+        WidgetItemAnimation();
     }
 
     public void a() {
-        c();
+        WidgetItemAnimation();
     }
 
     private void c() {

@@ -8,7 +8,7 @@ import com.tsf.shell.f.f.PageAnimationState;
 public class CurveTransition extends 
     private com.tsf.shell.f.f.PageShaderNode b;
 
-    public e(int i, boolean z) {
+    public CurveTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_curve, z);
         this.b = new com.tsf.shell.f.f.PageShaderNode();
     }

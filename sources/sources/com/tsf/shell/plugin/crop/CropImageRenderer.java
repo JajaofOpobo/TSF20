@@ -11,7 +11,7 @@ import com.tsf.shell.plugin.crop.CropImageManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CropImageRenderer implements CropImageManager.a {
     private float A;
-    public class Bitmap 
+    public Bitmap a;
     private float g;
     private float h;
     private float k;
@@ -47,7 +47,7 @@ public class CropImageRenderer implements CropImageManager.a {
         BOTTOM
     }
 
-    public d(Context context, g gVar) {
+    public CropImageRenderer(Context context, g gVar) {
         this.a.a(this);
         this.q = gVar;
         this.q.a(this);
@@ -79,7 +79,7 @@ public class CropImageRenderer implements CropImageManager.a {
         this.a.a(f, f2, f3, f4);
         this.g = f3;
         this.h = f4;
-        h();
+        CropImageRenderer();
     }
 
     public float b() {
@@ -97,7 +97,7 @@ public class CropImageRenderer implements CropImageManager.a {
     public void a(int i, int i2) {
         this.i = i;
         this.j = i2;
-        i();
+        CropImageRenderer();
     }
 
     private void i() {
@@ -375,6 +375,6 @@ public class CropImageRenderer implements CropImageManager.a {
 
     @Override // com.tsf.shell.plugin.crop.CropImageManager.a
     public void a() {
-        h();
+        CropImageRenderer();
     }
 }

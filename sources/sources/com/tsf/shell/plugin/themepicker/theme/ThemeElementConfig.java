@@ -17,7 +17,7 @@ public class ThemeElementConfig extends ThemeElementResult {
     private PackageManager b;
     private Context c;
 
-    public c(o oVar, List<ResolveInfo> list, Context context) {
+    public ThemeElementConfig(o oVar, List<ResolveInfo> list, Context context) {
         super(oVar);
         this.c = context;
         this.b = context.getPackageManager();
@@ -25,7 +25,7 @@ public class ThemeElementConfig extends ThemeElementResult {
     }
 
     @Override // android.support.v4.app.r
-    public class Fragment 
+    public Fragment c() {
         if (i == 0) {
             return new ThemeElementManager();
         }
@@ -47,7 +47,7 @@ public class ThemeElementConfig extends ThemeElementResult {
     }
 
     @Override // android.support.v4.view.ac
-    public class CharSequence 
+    public CharSequence c() {
         if (i == 0) {
             return this.c.getString(f.j.theme_picker_system);
         }

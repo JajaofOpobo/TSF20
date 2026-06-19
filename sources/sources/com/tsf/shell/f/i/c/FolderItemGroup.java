@@ -25,7 +25,7 @@ public class FolderItemGroup extends ItemGroupBase {
     private ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> u;
     private Runnable v;
 
-    public c() {
+    public FolderItemGroup() {
         b(true);
         this.u = new ArrayList<>();
     }
@@ -38,7 +38,7 @@ public class FolderItemGroup extends ItemGroupBase {
     @Override // com.tsf.shell.f.i.c.ItemGroupBase
     public void d() {
         this.s = false;
-        q();
+        FolderItemGroup();
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
@@ -95,7 +95,7 @@ public class FolderItemGroup extends ItemGroupBase {
         if (this.k == null) {
             this.k = r();
         } else {
-            p();
+            FolderItemGroup();
         }
         return this.k;
     }
@@ -149,7 +149,7 @@ public class FolderItemGroup extends ItemGroupBase {
     }
 
     private j r() {
-        p();
+        FolderItemGroup();
         this.k = new j();
         this.l = new com.tsf.shell.f.i.b.d.FolderShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
@@ -181,7 +181,7 @@ public class FolderItemGroup extends ItemGroupBase {
     class a extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBase {
         public j a;
 
-        public a() {
+        public FolderItemGroup() {
             super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
             this.a = new j();
             this.k.visible(true);

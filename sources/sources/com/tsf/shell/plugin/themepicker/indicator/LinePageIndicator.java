@@ -326,7 +326,7 @@ public class LinePageIndicator extends View implements ThemeIndicatorPageChange 
 
             @Override
 
-            public class SavedState 
+            public SavedState c() {
                 return new SavedState(parcel);
             }
 

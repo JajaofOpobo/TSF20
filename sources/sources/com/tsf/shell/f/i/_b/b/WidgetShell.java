@@ -16,17 +16,17 @@ import com.tsf.shell.manager.bind.ShellModel;
 public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     public boolean a;
     public k b;
-    public class String 
+    public String a;
     public com.tsf.shell.e.WidgetContainer g;
-    public class TextureElement 
-    public class Object 
-    public class Runnable 
+    public TextureElement a;
+    public Object a;
+    public Runnable a;
     private c k;
     private com.tsf.shell.manager.r.a.WidgetInstanceTracker l;
     private Runnable m;
     private boolean n;
 
-    public a(LauncherAppWidgetInfo launcherAppWidgetInfo, String str) {
+    public WidgetShell(LauncherAppWidgetInfo launcherAppWidgetInfo, String str) {
         super(launcherAppWidgetInfo);
         this.a = false;
         this.n = false;

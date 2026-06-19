@@ -14,7 +14,7 @@ public class ThemePreviewActivity extends FragmentActivity implements ViewPager.
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("IconPickerActivity onCreate");
-        g();
+        ThemePreviewActivity();
         super.onCreate(bundle);
     }
 

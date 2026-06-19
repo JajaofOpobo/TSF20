@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.k;
 public class DashButtonF extends com.tsf.shell.f._d.a.DashElementBase {
     private com.tsf.shell.f._d.a.DashElementInfo a;
 
-    public f(int i, boolean z) {
+    public DashButtonF(int i, boolean z) {
         super(i, z);
     }
 

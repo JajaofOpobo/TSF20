@@ -22,7 +22,7 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
     private com.censivn.C3DEngine.b.f.a.b w;
     private String x;
 
-    public j(com.tsf.shell.manager.action.toggle.ToggleAction bVar) {
+    public DrawerItemSettingsAction(com.tsf.shell.manager.action.toggle.ToggleAction bVar) {
         super(null, com.tsf.shell.manager.o.ButtonPresetManager.b);
         this.q = 0;
         this.r = -1;
@@ -56,8 +56,8 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
         this.t = i;
     }
 
-    public class TextureElement 
-        return this.p;
+    public TextureElement c() {
+                return this.p;
     }
 
     @Override // com.tsf.shell.f.i.PageItem

@@ -8,13 +8,13 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetGroupBase extends WidgetLabelProvider {
-    public class String 
+    public String a;
     public int d;
     public boolean e;
     public int g;
     private boolean k = false;
-    public class String 
-    public class String 
+    public String a;
+    public String a;
     public boolean f = false;
     public int h = 6;
     public int i = 0;
@@ -104,7 +104,7 @@ public class WidgetGroupBase extends WidgetLabelProvider {
     public void g() {
         if (!this.m) {
             this.m = true;
-            c();
+            WidgetGroupBase();
         }
     }
 
@@ -112,7 +112,7 @@ public class WidgetGroupBase extends WidgetLabelProvider {
     public void h() {
         if (this.m) {
             this.m = false;
-            d();
+            WidgetGroupBase();
         }
     }
 

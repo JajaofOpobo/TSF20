@@ -28,7 +28,7 @@ public class WallpaperPickerActivity extends FragmentActivity implements View.On
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
         e.b("IconPickerActivity onCreate");
-        g();
+        WallpaperPickerActivity();
         super.onCreate(bundle);
     }
 

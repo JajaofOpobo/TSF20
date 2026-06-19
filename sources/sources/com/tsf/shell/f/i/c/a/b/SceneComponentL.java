@@ -19,7 +19,7 @@ public class SceneComponentL extends ItemStubHelper {
         super.b();
     }
 
-    public l() {
+    public SceneComponentL() {
         this.f = -13421773;
         this.f = d();
     }
@@ -31,8 +31,8 @@ public class SceneComponentL extends ItemStubHelper {
     }
 
     @Override // com.tsf.shell.f.i.c.a.b.SceneComponentE
-    public class Bitmap 
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(92, 92, Bitmap.Config.ARGB_8888);
+    public Bitmap c() {
+                Bitmap bitmapCreateBitmap = Bitmap.createBitmap(92, 92, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.FILL);

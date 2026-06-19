@@ -53,7 +53,7 @@ public class PageItem extends j implements F, b {
         }
     }
 
-    public class String 
+    public String c() {
         return "";
     }
 
@@ -277,7 +277,7 @@ public class PageItem extends j implements F, b {
         this.a = itemInfo;
     }
 
-    public class ItemInfo 
+    public ItemInfo c() {
         return this.a;
     }
 
@@ -539,7 +539,7 @@ public class PageItem extends j implements F, b {
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void f(F fVar) {
         if (this.j != fVar) {
-            p();
+            ItemInfo();
             fVar.a(this);
         }
         this.j = fVar;

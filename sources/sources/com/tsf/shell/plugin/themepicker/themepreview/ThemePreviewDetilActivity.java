@@ -33,7 +33,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     protected void onCreate(Bundle bundle) {
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("ThemePreviewDetilActivity onCreate");
-        h();
+        ThemePreviewDetilActivity();
         super.onCreate(bundle);
     }
 
@@ -65,14 +65,14 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         private ArrayList<Integer> b;
         private String c;
 
-        public a(o oVar, ArrayList<Integer> arrayList, String str) {
+        public ThemePreviewDetilActivity(o oVar, ArrayList<Integer> arrayList, String str) {
             super(oVar);
             this.b = arrayList;
             this.c = str;
         }
 
         @Override // android.support.v4.app.r
-        public class Fragment 
+        public Fragment c() {
             return ThemePreviewManager.a(this.c, this.b.get(i));
         }
 
@@ -114,7 +114,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         if (id == f.C0155f.menu) {
             a(view);
         } else if (id == f.C0155f.done) {
-            i();
+            View();
         }
     }
 

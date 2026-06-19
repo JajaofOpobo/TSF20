@@ -38,8 +38,8 @@ public class SceneRendererA extends j {
     private TextureElement t = new TextureElement(0, false);
     private Object u = new Object();
 
-    public a() {
-        a();
+    public SceneRendererA() {
+        SceneRendererA();
     }
 
     public void a() {
@@ -131,12 +131,12 @@ public class SceneRendererA extends j {
             int i = (int) ((this.d / 1000) % 60);
             if (i != this.a) {
                 this.a = i;
-                g();
+                SceneRendererA();
             }
             int i2 = (int) ((this.d / 1000) / 60);
             if (i2 != this.e) {
                 this.e = i2;
-                f();
+                SceneRendererA();
                 int i3 = i2 / 60;
                 if (i3 != this.f) {
                     this.f = i3;
@@ -218,7 +218,7 @@ public class SceneRendererA extends j {
         dVar2.a(com.censivn.C3DEngine.b.g.a.g);
         com.censivn.C3DEngine.b.g.c.a(this.h);
         com.censivn.C3DEngine.b.g.c.a(this.h, 1500, dVar2);
-        d();
+        SceneRendererA();
     }
 
     public void d() {

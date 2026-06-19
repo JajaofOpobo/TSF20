@@ -28,7 +28,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
     private boolean e = false;
     private boolean f = false;
     private float[] k = {0.0f, 0.0f};
-    public class C0109a 
+    public C0109a a;
 
     public static class b {
         public int a = 0;
@@ -88,7 +88,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
         }
     }
 
-    public a() {
+    public WorkspaceShortcutTouchHandler() {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.c = new j() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.1
             @Override // com.censivn.C3DEngine.b.f.i
@@ -143,7 +143,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                 }
             }
         };
-        c();
+        C0109a();
     }
 
     public float[] a() {
@@ -266,7 +266,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             com.censivn.C3DEngine.b.c.b.b(this);
-            d();
+            C0109a();
         }
     }
 

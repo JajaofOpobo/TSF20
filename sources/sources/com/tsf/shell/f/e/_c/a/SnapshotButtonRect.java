@@ -9,7 +9,7 @@ public class SnapshotButtonRect extends VRectangle {
     private float c;
     private float d;
 
-    public a(float f, float f2) {
+    public SnapshotButtonRect(float f, float f2) {
         super(f, f2);
         this.a = 0.0f;
         this.b = 0.0f;

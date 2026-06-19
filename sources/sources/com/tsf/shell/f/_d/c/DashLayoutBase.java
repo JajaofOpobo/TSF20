@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class DashLayoutBase extends DashLayoutPool<d> {
     private com.tsf.shell.f.e.f.EditModeController a;
 
-    public A() {
+    public DashLayoutBase() {
         ArrayList<LauncherAppInfo> arrayList = new ArrayList<>();
         this.a = new com.tsf.shell.f.e.f.EditModeController();
         arrayList.add(new e(0, true, false));
@@ -53,7 +53,7 @@ public class DashLayoutBase extends DashLayoutPool<d> {
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public class String 
+    public String c() {
         return com.tsf.shell.manager.b.ConfigManager.C();
     }
 }

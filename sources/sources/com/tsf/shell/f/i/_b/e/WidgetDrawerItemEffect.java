@@ -4,7 +4,7 @@ package com.tsf.shell.f.i._b.e;
 public class WidgetDrawerItemEffect extends WidgetDrawerItemVisual {
     private com.tsf.shell.manager.app.LauncherAppInfo a;
 
-    public e() {
+    public WidgetDrawerItemEffect() {
         this.k.visible(true);
     }
 

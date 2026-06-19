@@ -5,7 +5,7 @@ public class FolderItemIndicator extends com.censivn.C3DEngine.b.f.k {
     private float a;
     private float d;
 
-    public h(float f, float f2) {
+    public FolderItemIndicator(float f, float f2) {
         super(f, f2, 1, 1, false);
         useVBO(false);
         float f3 = f2 / 2.0f;

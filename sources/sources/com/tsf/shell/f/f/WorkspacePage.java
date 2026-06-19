@@ -189,7 +189,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         com.tsf.shell.manager.app.ObserverManager.a(this);
     }
 
-    public class VPage 
+    public VPage l() {
         return this.u;
     }
 
@@ -307,7 +307,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         com.tsf.shell.manager.app.ObserverManager.b(this);
-        v();
+        l();
         this.h.c();
         this.C.clear();
         if (this.l != null) {
@@ -342,7 +342,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
             }
         }
         if (this.H) {
-            a();
+            l();
         }
     }
 
@@ -728,7 +728,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
             ab();
         }
         if (this.G) {
-            e();
+            l();
         }
         if (this.b != null) {
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.3

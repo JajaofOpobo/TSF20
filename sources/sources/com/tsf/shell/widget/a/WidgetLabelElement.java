@@ -15,7 +15,7 @@ public class WidgetLabelElement extends com.censivn.C3DEngine.b.f.k {
     private float k;
     private float l;
 
-    public d(float f, float f2) {
+    public WidgetLabelElement(float f, float f2) {
         super(f, f2);
         this.a = new Color4(-1);
         this.d = 0.0f;
@@ -46,7 +46,7 @@ public class WidgetLabelElement extends com.censivn.C3DEngine.b.f.k {
     public void c(float f, float f2) {
         this.h = f;
         this.i = f2;
-        e();
+        WidgetLabelElement();
     }
 
     public void c(float f) {
@@ -55,12 +55,12 @@ public class WidgetLabelElement extends com.censivn.C3DEngine.b.f.k {
 
     public void d(float f) {
         this.k = f;
-        d();
+        WidgetLabelElement();
     }
 
     public void e(float f) {
         this.l = f;
-        d();
+        WidgetLabelElement();
     }
 
     public float a() {

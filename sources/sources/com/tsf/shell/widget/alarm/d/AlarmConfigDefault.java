@@ -7,14 +7,14 @@ import java.lang.reflect.Field;
 public class AlarmConfigDefault extends AlarmConfigBase {
     public byte[] j;
     public int a = -1;
-    public class String 
-    public class String 
-    public class String 
-    public class String 
-    public class String 
-    public class String 
-    public class String 
-    public class String 
+    public String a;
+    public String a;
+    public String a;
+    public String a;
+    public String a;
+    public String a;
+    public String a;
+    public String a;
     public boolean k = true;
 
     public void b() {

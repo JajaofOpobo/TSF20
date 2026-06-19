@@ -16,7 +16,7 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
     private com.censivn.C3DEngine.b.h.b.h b;
     private GestureMenuEffectItem.a c;
 
-    public g(b bVar) {
+    public GestureMenuTextItem(b bVar) {
         super(GestureMenuOverlay.i.text_menu);
         this.a = bVar;
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();

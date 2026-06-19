@@ -51,7 +51,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
-        public B() {
+        public ab() {
             this.b = ab.this.new A();
         }
 

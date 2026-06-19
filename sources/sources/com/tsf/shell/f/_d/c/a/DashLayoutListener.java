@@ -14,7 +14,7 @@ public class DashLayoutListener extends h {
     private Runnable f;
     private d g;
 
-    public c(d dVar) {
+    public DashLayoutListener(d dVar) {
         super(new com.censivn.C3DEngine.b.f.a.a(5, 60, 120, 60));
         this.a = false;
         this.g = dVar;

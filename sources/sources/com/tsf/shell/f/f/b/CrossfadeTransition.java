@@ -5,7 +5,7 @@ import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CrossfadeTransition extends 
-    public b(int i, boolean z) {
+    public CrossfadeTransition(int i, boolean z) {
         super(i, com.tsf.b.d.desktop_transition_crossfade, z);
     }
 

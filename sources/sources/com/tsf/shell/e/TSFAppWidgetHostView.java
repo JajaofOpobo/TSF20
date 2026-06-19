@@ -50,7 +50,7 @@ public class TSFAppWidgetHostView extends AppWidgetHostView {
         }
         switch (motionEvent.getAction()) {
             case 0:
-                a();
+                TSFAppWidgetHostView();
                 return false;
             case 1:
             case 3:

@@ -25,7 +25,7 @@ public class AlarmComponentPanel extends VObject3dContainer {
     private com.tsf.shell.widget.alarm.b.AlarmDataManager c = AlarmWidget.a;
     private boolean g = false;
 
-    public d(int i) {
+    public AlarmComponentPanel(int i) {
         if (b == null) {
             Bitmap bitmapA = p.a(AlarmWidget.h, "week_toggle_on");
             b = AlarmWidget.c.createTexture(bitmapA, false);
@@ -105,7 +105,7 @@ public class AlarmComponentPanel extends VObject3dContainer {
     public void a(boolean z) {
         this.g = z;
         i.c("SetStat:" + z);
-        d();
+        AlarmComponentPanel();
     }
 
     private void d() {
@@ -120,11 +120,11 @@ public class AlarmComponentPanel extends VObject3dContainer {
 
     public void c() {
         this.g = !this.g;
-        d();
+        AlarmComponentPanel();
     }
 
     class a extends VMouseEventListener {
-        public a(VObject3d vObject3d) {
+        public AlarmComponentPanel(VObject3d vObject3d) {
             super(vObject3d);
         }
 

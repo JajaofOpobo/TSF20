@@ -21,7 +21,7 @@ public class MenuExpandItem extends j {
     private int i = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
     private int j = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
 
-    public e(int i) {
+    public MenuExpandItem(int i) {
         this.h = 0;
         this.h = i;
         if (e == null) {
@@ -33,7 +33,7 @@ public class MenuExpandItem extends j {
         this.a = new k(0.0f, 0.0f, false);
         this.a.textures().addElement(this.d);
         addChild(this.a);
-        h();
+        MenuExpandItem();
     }
 
     public void a() {

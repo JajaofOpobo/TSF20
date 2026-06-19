@@ -16,7 +16,7 @@ public class AlarmDataManager extends AlarmDataEntry {
     public AlarmDataEntry.a[] c;
     private final int d;
 
-    public d(Context context, VTextureManager vTextureManager) {
+    public AlarmDataManager(Context context, VTextureManager vTextureManager) {
         super(context, vTextureManager);
         this.d = 35;
     }

@@ -16,7 +16,7 @@ public class CylinderTransition extends
     private com.censivn.C3DEngine.b.f.k g;
     private boolean h;
 
-    public f(int i, boolean z) {
+    public CylinderTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_effect_cylinder, z);
         this.e = 2;
         this.f = new com.censivn.C3DEngine.b.g._b.b();

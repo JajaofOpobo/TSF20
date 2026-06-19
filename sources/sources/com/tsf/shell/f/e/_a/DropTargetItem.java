@@ -73,7 +73,7 @@ public class DropTargetItem {
                     c.i.a(iVar, (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) c.j.get(i2));
                     c.j.remove(i2);
                     a(i2);
-                    b();
+                    DropTargetItem();
                     if (c.j.size() == 0) {
                         c.b();
                     }
@@ -156,20 +156,20 @@ public class DropTargetItem {
         }
         k = arrayList;
         j = new ArrayList<>();
-        a();
+        DropTargetItem();
         i = aVar;
         i.e();
-        h();
+        DropTargetItem();
         com.tsf.shell.manager.app.ServiceProvider.a().a.a(l);
         com.tsf.shell.manager.app.ServiceProvider.a().a.b();
-        j();
+        DropTargetItem();
         if (DropTargetKeyHandler.parent() == null) {
             DropTargetKeyHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
         } else {
             DropTargetKeyHandler.removeFromParent();
         }
         com.tsf.shell.manager.app.TaskScheduler.a(DropTargetKeyHandler);
-        i();
+        DropTargetItem();
     }
 
     public static void b() {
@@ -177,7 +177,7 @@ public class DropTargetItem {
             com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
             com.censivn.C3DEngine.b.c.b.b(f);
             com.tsf.shell.manager.app.ObserverManager.b(g);
-            c();
+            DropTargetItem();
         }
     }
 
@@ -229,6 +229,6 @@ public class DropTargetItem {
     }
 
     public static void a(int i2, int i3, int i4, int i5) {
-        j();
+        DropTargetItem();
     }
 }

@@ -21,7 +21,7 @@ public class CubeClockWidgetFace extends CubeClockConfigBase {
         return super.a();
     }
 
-    public p(c cVar) {
+    public CubeClockWidgetFace(c cVar) {
         super(cVar);
         this.e = 92.0f;
         this.f = 92.0f;
@@ -29,7 +29,7 @@ public class CubeClockWidgetFace extends CubeClockConfigBase {
         this.h = new ArrayList<>();
         this.i = this.b.q;
         this.g = c();
-        d();
+        CubeClockWidgetFace();
     }
 
     public void a(d dVar) {

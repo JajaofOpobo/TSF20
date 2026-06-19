@@ -12,7 +12,7 @@ public class DrawerPanelController {
     public f DrawerShortcutItemBase;
     public int c;
 
-    public A() {
+    public DrawerPanelController() {
         com.tsf.shell.manager.app.WidgetPanelController = this;
         this.c = a(com.tsf.shell.manager.b.ConfigManager.v());
         this.a = new e(false);
@@ -49,7 +49,7 @@ public class DrawerPanelController {
         this.a.b();
         jVar.addChild(this.a.a());
         this.b.a(jVar, (f.a) null);
-        d();
+        DrawerPanelController();
     }
 
     public void b(int i) {
@@ -69,7 +69,7 @@ public class DrawerPanelController {
                     break;
             }
         }
-        d();
+        DrawerPanelController();
     }
 
     private void d() {

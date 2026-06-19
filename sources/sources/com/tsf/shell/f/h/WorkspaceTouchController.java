@@ -18,7 +18,7 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
     private float i;
     private float j;
 
-    public d(b bVar, i iVar) {
+    public WorkspaceTouchController(b bVar, i iVar) {
         super(iVar);
         this.b = false;
         this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.A.a);

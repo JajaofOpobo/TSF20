@@ -31,7 +31,7 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
         private final AtomicInteger a = new AtomicInteger(1);
 
         @Override // java.util.concurrent.ThreadFactory
-        public class Thread 
+        public Thread c() {
             return new Thread(runnable, "AsyncTask #" + this.a.getAndIncrement());
         }
     };
@@ -100,7 +100,7 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
                 }
             });
             if (this.b == null) {
-                a();
+                c();
             }
         }
 
@@ -136,7 +136,7 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
     }
 
     protected void b(Result result) {
-        b();
+        Result();
     }
 
     protected void b() {
@@ -165,7 +165,7 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
             }
         }
         this.j = ThemeUtilsHelper.RUNNING;
-        a();
+        Result();
         this.h.b = paramsArr;
         executor.execute(this.i);
         return this;

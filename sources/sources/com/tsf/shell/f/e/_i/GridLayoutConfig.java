@@ -12,7 +12,7 @@ public class GridLayoutConfig {
     private float h = 0.0f;
     private float i = 0.0f;
 
-    public d(com.censivn.C3DEngine.b.f._a.b bVar) {
+    public GridLayoutConfig(com.censivn.C3DEngine.b.f._a.b bVar) {
         this.a = bVar;
     }
 

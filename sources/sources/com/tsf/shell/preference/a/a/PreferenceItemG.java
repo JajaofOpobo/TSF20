@@ -16,7 +16,7 @@ import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceItemG extends i {
-    public g() {
+    public PreferenceItemG() {
         a(PreferenceItemB.i.mn_about);
         j jVar = new j();
         jVar.h(PreferenceItemB.i.mn_version_detail);

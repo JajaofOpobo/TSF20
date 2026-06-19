@@ -14,7 +14,7 @@ public class MenuClassButton extends j {
     private float d = com.censivn.C3DEngine.b.b.A.a(20.0f);
     private boolean g = false;
 
-    public A(d dVar, float f) {
+    public MenuClassButton(d dVar, float f) {
         this.a = dVar;
         this.c = f;
     }

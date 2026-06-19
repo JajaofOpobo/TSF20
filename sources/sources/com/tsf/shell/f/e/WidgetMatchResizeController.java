@@ -69,13 +69,13 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        d();
+        WidgetMatchResizeController();
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            d();
+            WidgetMatchResizeController();
         }
     }
 
@@ -365,7 +365,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
                 g(s.d.maxX() * this.m);
                 c(s.d.maxY() * this.m);
                 e((-s.d.minY()) * this.m);
-                g();
+                A();
                 this.e.updatePointsVBO();
             }
         }

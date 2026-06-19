@@ -20,7 +20,7 @@ public class AlarmDataQuery extends AlarmDataEntry {
     public final AlarmDataEntry.a a;
     public final AlarmDataEntry.a b;
 
-    public b(Context context, VTextureManager vTextureManager) {
+    public AlarmDataQuery(Context context, VTextureManager vTextureManager) {
         super(context, vTextureManager);
         this.a = new AlarmDataEntry.a(0, 0, c * ItemInfo.APP_VERSION_CODE, c * 64);
         this.b = new AlarmDataEntry.a(0, c * 64, c * ItemInfo.APP_VERSION_CODE, c * 64);
@@ -33,7 +33,7 @@ public class AlarmDataQuery extends AlarmDataEntry {
         bitmapB.recycle();
     }
 
-    public class Bitmap 
+    public Bitmap c() {
         String strValueOf = String.valueOf(new GregorianCalendar().get(1));
         String strE = e();
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(c * ItemInfo.APP_VERSION_CODE, c * ItemInfo.APP_INTENT, Bitmap.Config.ARGB_8888);
@@ -53,7 +53,7 @@ public class AlarmDataQuery extends AlarmDataEntry {
         return p.a(bitmapCreateBitmap);
     }
 
-    public class String 
+    public String c() {
         String string = this.i.getString(m.f.abbrev_wday_month_day_no_year);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
@@ -62,8 +62,8 @@ public class AlarmDataQuery extends AlarmDataEntry {
 
     public void f() {
         synchronized (this) {
-            h();
-            a();
+            AlarmDataQuery();
+            AlarmDataQuery();
         }
     }
 

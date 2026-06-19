@@ -17,7 +17,7 @@ public class AlarmIndicator extends VRectangle {
     private float e;
     private TextureElement f;
 
-    public h() {
+    public AlarmIndicator() {
         super(416.0f, 416.0f);
         this.e = VInformation.Scale();
         this.a = new float[]{(-208.0f) * this.e, 0.0f, 0.0f, 1.0f};

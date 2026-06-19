@@ -114,11 +114,11 @@ public class ClassificationManager {
     }
 
     public static class b {
-        public class String 
+        public String a;
         public ArrayList<String> b = new ArrayList<>();
         public int c;
 
-        public b(String str, int i) {
+        public ClassificationManager(String str, int i) {
             this.a = "";
             this.c = 0;
             this.a = str;
@@ -253,7 +253,7 @@ public class ClassificationManager {
         private InterfaceC0151d b;
         private ArrayList<String> c;
 
-        public c(Context context, ArrayList<String> arrayList, InterfaceC0151d interfaceC0151d) {
+        public ClassificationManager(Context context, ArrayList<String> arrayList, InterfaceC0151d interfaceC0151d) {
             this.a = context;
             this.b = interfaceC0151d;
             this.c = arrayList;

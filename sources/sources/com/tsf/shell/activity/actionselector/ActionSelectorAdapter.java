@@ -21,7 +21,7 @@ public class ActionSelectorAdapter extends SimpleAdapter {
     private int e;
     private LayoutInflater f;
 
-    public a(Context context, List<? extends Map<String, ?>> list, int i, String[] strArr, int[] iArr) {
+    public ActionSelectorAdapter(Context context, List<? extends Map<String, ?>> list, int i, String[] strArr, int[] iArr) {
         super(context, list, i, strArr, iArr);
         this.d = list;
         this.e = i;
@@ -31,7 +31,7 @@ public class ActionSelectorAdapter extends SimpleAdapter {
     }
 
     @Override // android.widget.SimpleAdapter, android.widget.Adapter
-    public class View 
+    public View c() {
         return a(i, view, viewGroup, this.e);
     }
 

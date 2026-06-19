@@ -22,11 +22,11 @@ public class AlarmSettingTheme {
     private static e m;
     private Context l;
 
-    public e(Context context) throws Throwable {
+    public AlarmSettingTheme(Context context) throws Throwable {
         this.l = context;
-        h();
-        b();
-        d();
+        AlarmSettingTheme();
+        AlarmSettingTheme();
+        AlarmSettingTheme();
     }
 
     public static e a(Context context) {

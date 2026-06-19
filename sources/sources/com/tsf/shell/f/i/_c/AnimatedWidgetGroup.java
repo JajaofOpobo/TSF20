@@ -8,7 +8,7 @@ public class AnimatedWidgetGroup extends WidgetGroupBase {
     private j k;
     private com.tsf.shell.f.i._b.a.WidgetContainer l;
 
-    public A() {
+    public AnimatedWidgetGroup() {
         b(true);
     }
 

@@ -17,7 +17,7 @@ public class OverlayGradient extends j {
     public int d = 0;
     protected int g = 6;
 
-    public c() {
+    public OverlayGradient() {
         ByteBuffer byteBufferAllocateDirect = ByteBuffer.allocateDirect(this.g * 3 * 4);
         byteBufferAllocateDirect.order(ByteOrder.nativeOrder());
         this.e = byteBufferAllocateDirect.asFloatBuffer();

@@ -66,7 +66,7 @@ public class MenuItemConfig extends MenuItemBase {
         private m e;
 
         public a() {
-            c();
+            a();
         }
 
         public void a() {
@@ -79,16 +79,16 @@ public class MenuItemConfig extends MenuItemBase {
         public void a(String str) {
             this.e.a(str);
             this.e.b();
-            e();
+            a();
         }
 
         public void a(i iVar) {
-            b();
+            a();
             this.d = iVar;
             this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(90.0f);
             this.d.removeFromParent();
             addChild(this.d);
-            e();
+            a();
         }
 
         public void b() {

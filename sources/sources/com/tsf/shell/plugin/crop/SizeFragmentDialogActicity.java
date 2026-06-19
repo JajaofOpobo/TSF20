@@ -29,7 +29,7 @@ public class SizeFragmentDialogActicity extends FragmentActivity {
         }
 
         @Override // android.support.v4.app.Fragment
-        public class View 
+        public View c() {
             this.ai = layoutInflater.inflate(CropImageResources.b.crop_size_dialog_layout, viewGroup);
             return this.ai;
         }

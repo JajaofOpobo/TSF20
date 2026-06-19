@@ -13,7 +13,7 @@ public class PreferenceSettingB extends PreferenceSettingBase {
     private TextureElement f;
     private com.censivn.C3DEngine.b.f.k g;
 
-    public b(String str) {
+    public PreferenceSettingB(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(200.0f));
         this.d = new TextureElement(0, false);
         this.e = new TextureElement(0, false);
@@ -57,7 +57,7 @@ public class PreferenceSettingB extends PreferenceSettingBase {
         this.b.addChild(this.g);
         this.g.position().x = com.censivn.C3DEngine.b.b.A.a(-150.0f);
         this.g.useVBO(false);
-        e().addChild(this.b);
+        PreferenceSettingB().addChild(this.b);
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f

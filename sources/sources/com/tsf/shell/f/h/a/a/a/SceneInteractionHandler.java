@@ -33,7 +33,7 @@ public class SceneInteractionHandler extends j {
         void a(Bitmap bitmap);
     }
 
-    public a(c cVar) {
+    public SceneInteractionHandler(c cVar) {
         this.e = cVar;
         this.l.a(855638016, -1442840576);
         this.l.alpha(0.0f);
@@ -45,7 +45,7 @@ public class SceneInteractionHandler extends j {
         this.k.b(45.0f);
         this.b = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(120.0f), com.censivn.C3DEngine.b.b.A.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.1
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
-            public class Bitmap 
+            public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_call_icon);
             }
         };
@@ -124,7 +124,7 @@ public class SceneInteractionHandler extends j {
         this.b.calAABB(1.2f, 1.2f, 1.0f);
         this.c = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.3
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
-            public class Bitmap 
+            public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_message_icon);
             }
         };
@@ -133,7 +133,7 @@ public class SceneInteractionHandler extends j {
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c));
         this.d = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.4
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
-            public class Bitmap 
+            public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_mail_icon);
             }
         };

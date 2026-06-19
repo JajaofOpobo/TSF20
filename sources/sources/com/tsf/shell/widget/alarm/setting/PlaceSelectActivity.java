@@ -35,7 +35,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
     class a extends BaseAdapter {
         ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
 
-        public a() {
+        public PlaceSelectActivity() {
             a();
         }
 
@@ -51,7 +51,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             return null;
         }
 
@@ -61,7 +61,7 @@ public class PlaceSelectActivity extends Activity implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View c() {
             if (view == null) {
                 view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
             }

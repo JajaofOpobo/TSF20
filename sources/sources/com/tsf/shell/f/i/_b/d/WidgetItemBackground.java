@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetItemBackground extends com.tsf.shell.f.e._d.a.DropIndicatorConfig {
-    public f() {
+    public WidgetItemBackground() {
         ArrayList<WidgetItemState.C0092c> arrayList = new ArrayList<>();
         arrayList.add(new WidgetItemState.C0092c(WorkspaceShortcutItem.i.menu_add, WorkspaceShortcutItem.d.widget_folder_add_button) { // from class: com.tsf.shell.f.i._b.d.WidgetItemBackground.1
             @Override // com.tsf.shell.f.e._d.a.DropIndicatorState.C0092c

@@ -10,7 +10,7 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
     private com.tsf.shell.f._d.a.DashElementInfo b;
     private k c;
 
-    public c(int i, boolean z) {
+    public DashButtonC(int i, boolean z) {
         super(i, z);
         this.a = new com.tsf.shell.f.i.b.e.DrawerItemButton().k;
     }

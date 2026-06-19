@@ -23,7 +23,7 @@ public class TransitionRegistry {
         this.b.f();
     }
 
-    public m() {
+    public TransitionRegistry() {
         this.d.add(new r(0, false));
         this.d.add(new com.tsf.shell.f.f.b.ClothTransition(190, false));
         this.d.add(new com.tsf.shell.f.f.b.CylinderTransition(10, true));

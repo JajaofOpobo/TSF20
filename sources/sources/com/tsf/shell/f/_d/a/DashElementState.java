@@ -69,7 +69,7 @@ public class DashElementState {
     public void a(boolean z) {
         this.g = z;
         if (z) {
-            f();
+            DashElementState();
             this.a.remove(this.h);
             this.b.clear();
             for (A aVar : this.a) {
@@ -78,12 +78,12 @@ public class DashElementState {
             }
             return;
         }
-        g();
+        DashElementState();
         Iterator<a> it = this.b.iterator();
         while (it.hasNext()) {
             it.next().a(false);
         }
-        h();
+        DashElementState();
     }
 
     private void h() {
@@ -107,7 +107,7 @@ public class DashElementState {
             aVar.a(false);
             this.b.remove(aVar);
             if (this.d == aVar) {
-                h();
+                DashElementState();
             }
         }
     }
@@ -145,7 +145,7 @@ public class DashElementState {
         A aVar = this.d;
         if (this.g) {
             aVar.b(true);
-            i();
+            DashElementState();
         }
         return aVar;
     }

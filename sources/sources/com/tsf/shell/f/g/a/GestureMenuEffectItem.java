@@ -14,7 +14,7 @@ public class GestureMenuEffectItem extends GestureMenuBlankItem {
     public b a;
     private com.censivn.C3DEngine.b.h.b.h b;
 
-    public e(b bVar) {
+    public GestureMenuEffectItem(b bVar) {
         super(GestureMenuOverlay.i.menu_effect_clicking);
         this.a = bVar;
         GestureMenuBlankItem.C0095a.C0096a c0096a = new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuEffectItem.1

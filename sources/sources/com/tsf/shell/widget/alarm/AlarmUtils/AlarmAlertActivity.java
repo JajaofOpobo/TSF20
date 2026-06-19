@@ -131,13 +131,13 @@ public class AlarmAlertActivity extends Activity {
     @Override // android.app.Activity
     protected void onStart() {
         super.onStart();
-        c();
+        a();
     }
 
     @Override // android.app.Activity
     protected void onStop() {
         super.onStop();
-        d();
+        a();
     }
 
     @Override // android.app.Activity
@@ -171,7 +171,7 @@ public class AlarmAlertActivity extends Activity {
         ((TextView) findViewById(m.c.textView2)).setText(a((Context) this));
     }
 
-    public class String 
+    public String c() {
         String string = context.getString(m.f.abbrev_wday_month_day_no_year);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
@@ -191,7 +191,7 @@ public class AlarmAlertActivity extends Activity {
                 }
                 switch (this.e) {
                     case 1:
-                        b();
+                        a();
                         return true;
                     case 2:
                         a(false);

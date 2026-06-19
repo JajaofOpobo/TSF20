@@ -22,12 +22,12 @@ public class PageSceneNode extends j {
     private float c;
     private TextureElement[] d;
 
-    public d(VTextureManager vTextureManager, Context context) {
+    public PageSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.a = new ArrayList<>();
         this.c = 180.0f;
         this.d = new TextureElement[8];
-        h();
+        PageSceneNode();
     }
 
     @Override // com.tsf.shell.f.i._c.a.FolderSceneNodesyncTextureNode, com.censivn.C3DEngine.api.core.VObject3d
@@ -35,7 +35,7 @@ public class PageSceneNode extends j {
         this.c -= 0.5f;
         this.c = this.c < -180.0f ? this.c + 360.0f : this.c;
         this.b.rotation().y = this.c;
-        e();
+        PageSceneNode();
     }
 
     private void e() {
@@ -150,15 +150,15 @@ public class PageSceneNode extends j {
     }
 
     class a extends j.a {
-        public a(i iVar, int i, VObject3d... vObject3dArr) {
+        public PageSceneNode(i iVar, int i, VObject3d... vObject3dArr) {
             super(iVar, i, vObject3dArr);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i._c.a.FolderSceneNodesyncTextureNode.a, com.tsf.shell.f.i._c.a.c
-        public class Bitmap 
-            return l.b(l.a(PendingWidgetGroup.this.i, this.d));
+        public Bitmap c() {
+                        return l.b(l.a(PendingWidgetGroup.this.i, this.d));
         }
     }
 

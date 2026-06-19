@@ -50,7 +50,7 @@ public class RateFaceView extends j {
         this.b.position().x = f();
         this.b.addChild(this.h);
         this.b.addChild(this.c);
-        e();
+        RateFaceView();
     }
 
     private void e() {
@@ -66,7 +66,7 @@ public class RateFaceView extends j {
     public void a(int i) {
         this.g.c(i);
         this.g.b();
-        e();
+        RateFaceView();
     }
 
     public void a() {

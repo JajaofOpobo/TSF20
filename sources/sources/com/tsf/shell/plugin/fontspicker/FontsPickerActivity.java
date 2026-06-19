@@ -78,7 +78,7 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
             }
         }).show();
         this.e = 0;
-        b();
+        FontsPickerActivity();
         final String packageName = getPackageName();
         new Thread() { // from class: com.tsf.shell.plugin.fontspicker.FontsPickerActivity.3
             @Override // java.lang.Thread, java.lang.Runnable
@@ -264,7 +264,7 @@ public class FontsPickerActivity extends Activity implements View.OnClickListene
         }
     }
 
-    public class String 
+    public String c() {
         int iLastIndexOf;
         if (!TextUtils.isEmpty(str)) {
             int iLastIndexOf2 = str.lastIndexOf(35);

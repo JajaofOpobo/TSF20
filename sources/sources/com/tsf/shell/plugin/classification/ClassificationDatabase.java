@@ -17,7 +17,7 @@ public class ClassificationDatabase extends SQLiteOpenHelper {
         return c;
     }
 
-    public c(Context context) {
+    public ClassificationDatabase(Context context) {
         super(context, "classification.db", (SQLiteDatabase.CursorFactory) null, 1);
     }
 

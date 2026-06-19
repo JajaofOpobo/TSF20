@@ -80,7 +80,7 @@ public class ThemeUtilsRenderer {
             };
         }
         if (aVar.h) {
-            a();
+            ThemeUtilsRenderer();
         }
     }
 
@@ -413,7 +413,7 @@ public class ThemeUtilsRenderer {
                     com.tsf.shell.plugin.themepicker.ThemePickerEvent.c("ImageCache", "clearCache - " + e);
                 }
                 this.b = null;
-                a();
+                BitmapDrawable();
             }
         }
     }
@@ -476,7 +476,7 @@ public class ThemeUtilsRenderer {
     }
 
     public static class a {
-        public class File 
+        public File a;
         public int a = 5120;
         public int b = 10485760;
         public Bitmap.CompressFormat d = c.a;
@@ -485,7 +485,7 @@ public class ThemeUtilsRenderer {
         public boolean g = true;
         public boolean h = false;
 
-        public a(Context context, String str) {
+        public ThemeUtilsRenderer(Context context, String str) {
             this.c = c.a(context, str);
         }
 
@@ -615,7 +615,7 @@ public class ThemeUtilsRenderer {
             this.a = obj;
         }
 
-        public class Object 
+        public Object c() {
             return this.a;
         }
     }

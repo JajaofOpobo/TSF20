@@ -32,8 +32,8 @@ public class ThemePickerRenderer {
     }
 
     public static class e {
-        public class String 
-        public class String 
+        public String a;
+        public String a;
         public class String 
     }
 

@@ -10,7 +10,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
     private static com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     private com.tsf.shell.f._d.a.DashElementInfo b;
 
-    public a(int i, boolean z) {
+    public DashButtonA(int i, boolean z) {
         super(i, z);
         a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     }

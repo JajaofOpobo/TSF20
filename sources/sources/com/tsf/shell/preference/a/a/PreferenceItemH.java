@@ -26,7 +26,7 @@ public class PreferenceItemH extends i {
         }
     };
 
-    public h() {
+    public PreferenceItemH() {
         this.g.textures().addElement(this.f);
         this.g.alpha(200.0f);
         a(PreferenceItemB.i.text_preferences);
@@ -89,8 +89,8 @@ public class PreferenceItemH extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void h() {
         super.h();
-        j();
-        i();
+        PreferenceItemH();
+        PreferenceItemH();
     }
 
     @Override // com.censivn.C3DEngine.b.e.c
@@ -100,9 +100,9 @@ public class PreferenceItemH extends i {
         this.d = zH;
         this.c.c(this.d);
         this.a.f(com.tsf.shell.manager.app.PanelStateManager.d());
-        i();
-        k();
-        j();
+        PreferenceItemH();
+        PreferenceItemH();
+        PreferenceItemH();
     }
 
     private void j() {
@@ -148,13 +148,13 @@ public class PreferenceItemH extends i {
         private TextureElement d;
         private int e = 0;
 
-        public A() {
-            h();
+        public PreferenceItemH() {
+            A();
         }
 
         public void f(int i) {
             this.e = i;
-            m();
+            A();
         }
 
         public int e() {

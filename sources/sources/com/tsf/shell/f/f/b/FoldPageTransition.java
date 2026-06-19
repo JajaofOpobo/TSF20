@@ -13,7 +13,7 @@ public class FoldPageTransition extends
     private com.censivn.C3DEngine.b.f.h b;
     private com.censivn.C3DEngine.b.f.h c;
 
-    public i(int i, boolean z) {
+    public FoldPageTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_fold_page, z);
         this.a = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
         this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
@@ -35,7 +35,7 @@ public class FoldPageTransition extends
                 drawMVPMatrix();
                 drawElement();
                 GLES20.glDisableVertexAttribArray(shaderColorTexture.maColor4Handle);
-                a();
+                FoldPageTransition();
             }
         };
         this.a.uvs().setU(0, 0.5f);
@@ -45,7 +45,7 @@ public class FoldPageTransition extends
         this.a.useVBO(false);
         this.b.useVBO(false);
         this.c.useVBO(false);
-        o();
+        FoldPageTransition();
     }
 
     private void o() {
@@ -86,7 +86,7 @@ public class FoldPageTransition extends
                 this.c.textures().addElement(aVarA.b);
                 this.c.rotation().y = 180.0f * f;
                 this.c.doubleSidedEnabled(false);
-                p();
+                FoldPageTransition();
                 this.c.dispatchDraw();
                 return;
             }
@@ -124,7 +124,7 @@ public class FoldPageTransition extends
             this.c.textures().addElement(aVarA.b);
             this.c.rotation().y = (1.0f + f) * 180.0f;
             this.c.doubleSidedEnabled(true);
-            p();
+            FoldPageTransition();
             this.c.dispatchDraw();
         }
     }
@@ -164,7 +164,7 @@ public class FoldPageTransition extends
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(float f, float f2) {
-        o();
+        FoldPageTransition();
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect

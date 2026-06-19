@@ -24,7 +24,7 @@ public class IconEditorHelper implements com.censivn.C3DEngine.b.c.a.InterfaceC0
         void b();
     }
 
-    public b() {
+    public IconEditorHelper() {
         String[] strArr = {com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_0), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_1), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_2), com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.icon_picker_main_item_3)};
     }
 

@@ -8,7 +8,7 @@ public class TransitionConfig extends TransitionManager<l> {
     private boolean b;
     private boolean c;
 
-    public e(ArrayList<LauncherAppInfo> arrayList) {
+    public TransitionConfig(ArrayList<LauncherAppInfo> arrayList) {
         super(arrayList);
         this.a = false;
         this.b = false;
@@ -28,7 +28,7 @@ public class TransitionConfig extends TransitionManager<l> {
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public class String 
+    public String c() {
         return com.tsf.shell.manager.b.ConfigManager.F();
     }
 

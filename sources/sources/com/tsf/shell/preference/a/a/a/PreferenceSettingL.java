@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
     private boolean a = false;
 
-    public l() {
+    public PreferenceSettingL() {
         a(PreferenceSettingB.i.mn_version_detail);
         j jVar = new PreferenceSettingJ();
         jVar.a("TSF Launcher V3.8.5 (2015.12.02)");

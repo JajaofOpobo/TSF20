@@ -50,7 +50,7 @@ public class ItemPositionAnimator {
         }
     };
 
-    public k(b bVar) {
+    public ItemPositionAnimator(b bVar) {
         this.c = bVar;
         this.e = this.c;
     }
@@ -210,7 +210,7 @@ public class ItemPositionAnimator {
                     }
                     if (this.n && i2 == 0 && x.b(childAt.position().x, childAt.position().y, fArr[0], fArr[1]) < 5.0f) {
                         this.o = true;
-                        h();
+                        ItemPositionAnimator();
                     }
                     i = i2 + 1;
                 } else {

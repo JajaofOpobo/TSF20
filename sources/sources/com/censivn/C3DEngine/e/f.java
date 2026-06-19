@@ -207,7 +207,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
     private class a extends h {
         final /* synthetic */ f a;
 
-        public a(f fVar, String str, String str2, int i) {
+        public f(f fVar, String str, String str2, int i) {
             boolean z = false;
             this.a = fVar;
             this.h = str2;

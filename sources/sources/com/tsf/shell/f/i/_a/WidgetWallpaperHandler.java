@@ -11,7 +11,7 @@ public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean a;
     private n.c b;
 
-    public a(j jVar) {
+    public WidgetWallpaperHandler(j jVar) {
         super(jVar);
         this.a = true;
     }

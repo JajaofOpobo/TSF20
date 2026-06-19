@@ -38,7 +38,7 @@ public class CropImageView extends View {
         this.k = ItemInfo.APP_VERSION_CODE;
         this.l = ItemInfo.APP_VERSION_CODE;
         this.b = 1.0f;
-        a();
+        CropImageView();
     }
 
     public CropImageView(Context context, AttributeSet attributeSet) {
@@ -50,7 +50,7 @@ public class CropImageView extends View {
         this.k = ItemInfo.APP_VERSION_CODE;
         this.l = ItemInfo.APP_VERSION_CODE;
         this.b = 1.0f;
-        a();
+        CropImageView();
     }
 
     public CropImageView(Context context, AttributeSet attributeSet, int i) {
@@ -62,7 +62,7 @@ public class CropImageView extends View {
         this.k = ItemInfo.APP_VERSION_CODE;
         this.l = ItemInfo.APP_VERSION_CODE;
         this.b = 1.0f;
-        a();
+        CropImageView();
     }
 
     private void a() {
@@ -131,8 +131,8 @@ public class CropImageView extends View {
         this.a = z;
     }
 
-    public class Bitmap 
-        int i;
+    public Bitmap c() {
+                int i;
         int i2;
         int i3 = this.k;
         int i4 = this.l;

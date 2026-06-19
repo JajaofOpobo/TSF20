@@ -26,9 +26,9 @@ public class SnapshotState extends VObject3dContainer {
     private VObject3dContainer n;
     private TextureElement o;
 
-    public d(Context context, float f, float f2, float f3, int i) {
+    public SnapshotState(Context context, float f, float f2, float f3, int i) {
         a(f, f2, f3, i);
-        d();
+        SnapshotState();
     }
 
     public float a() {
@@ -47,7 +47,7 @@ public class SnapshotState extends VObject3dContainer {
 
     public void a(float f) {
         a(f, this.e, this.f, this.k);
-        b();
+        SnapshotState();
     }
 
     public void b() {
@@ -75,7 +75,7 @@ public class SnapshotState extends VObject3dContainer {
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void onDrawStart() {
         if (this.o == null) {
-            e();
+            SnapshotState();
         }
     }
 

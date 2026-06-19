@@ -36,7 +36,7 @@ public class CubeClockRenderer extends VObject3dContainer {
     private int u;
     private Date v = new Date();
 
-    public k(c cVar) {
+    public CubeClockRenderer(c cVar) {
         this.l = false;
         this.n = cVar;
         this.n.c.addObject(this);
@@ -73,7 +73,7 @@ public class CubeClockRenderer extends VObject3dContainer {
         this.k = new CubeClockAlarmElement(this.n);
         this.m = new CubeClockDigital(this.n);
         this.e.a(this.m, this.n.f);
-        a(a());
+        a(CubeClockRenderer());
     }
 
     private int a() {
@@ -90,11 +90,11 @@ public class CubeClockRenderer extends VObject3dContainer {
         switch (this.a) {
             case 0:
                 this.n.j.c(1000);
-                b();
+                CubeClockRenderer();
                 break;
             case 1:
                 this.n.j.c(60000);
-                c();
+                CubeClockRenderer();
                 break;
         }
         b(this.a);

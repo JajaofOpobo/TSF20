@@ -6,7 +6,7 @@ import com.tsf.b;
 public class SceneElementConfig extends SceneElementBase {
     public boolean a;
 
-    public f() {
+    public SceneElementConfig() {
         super(SceneNodeAnimator.i.text_recents);
         this.a = false;
         a(10);
@@ -21,7 +21,7 @@ public class SceneElementConfig extends SceneElementBase {
         com.tsf.shell.manager.b.ConfigManager.x(z);
         b(numChildren());
         if (!this.a) {
-            b();
+            SceneElementConfig();
         }
     }
 

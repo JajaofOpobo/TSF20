@@ -396,7 +396,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     class A implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private com.tsf.extend.base.d.a.b b;
 
-        public A(com.tsf.extend.base.d.a.b bVar) {
+        public ThemeAlbumsPager(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 

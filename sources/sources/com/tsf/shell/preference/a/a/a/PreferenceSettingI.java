@@ -9,10 +9,10 @@ public class PreferenceSettingI extends PreferenceSettingBase {
     private ArrayList<m> a;
     private com.censivn.C3DEngine.b.b.c b;
 
-    public i(String str, float f) {
+    public PreferenceSettingI(String str, float f) {
         super(str, f);
         this.a = new ArrayList<>();
-        e().removeFromParent();
+        PreferenceSettingI().removeFromParent();
         this.b = new com.censivn.C3DEngine.b.b.c();
         this.b.setLayoutParams(new com.censivn.C3DEngine.b.b.b());
         this.b.mouseEnabled(false);

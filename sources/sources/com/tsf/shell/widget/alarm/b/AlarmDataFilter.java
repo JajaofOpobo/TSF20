@@ -22,7 +22,7 @@ public class AlarmDataFilter extends AlarmDataEntry {
     private String o;
     private String p;
 
-    public f(Context context, VTextureManager vTextureManager) {
+    public AlarmDataFilter(Context context, VTextureManager vTextureManager) {
         super(context, vTextureManager);
     }
 
@@ -37,7 +37,7 @@ public class AlarmDataFilter extends AlarmDataEntry {
         this.p = str4;
         Bitmap bitmapE = e();
         synchronized (this) {
-            h();
+            AlarmDataFilter();
             this.k = this.j.createTexture(bitmapE, true);
         }
         bitmapE.recycle();

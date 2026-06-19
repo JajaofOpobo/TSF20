@@ -29,16 +29,16 @@ public class DashItemA extends j {
         Bitmap b();
     }
 
-    public a(final int i, float f, float f2, float f3) {
+    public DashItemA(final int i, float f, float f2, float f3) {
         final int iArgb = Color.argb(Color.alpha(i), Color.red(i) / 2, Color.green(i) / 2, Color.blue(i) / 2);
-        a(new InterfaceC0089a() { // from class: com.tsf.shell.f._d.b.a.DashItemA.1
+        a(new InterfaceC0089InterfaceC0089a() { // from class: com.tsf.shell.f._d.b.a.DashItemA.1
             @Override // com.tsf.shell.f._d.b.a.DashItemA.InterfaceC0089a
-            public class Bitmap 
+            public Bitmap a() {
                 return a.this.a(i);
             }
 
             @Override // com.tsf.shell.f._d.b.a.DashItemA.InterfaceC0089a
-            public class Bitmap 
+            public Bitmap b() {
                 return a.this.a(iArgb);
             }
         }, f, f2, f3);
@@ -58,7 +58,7 @@ public class DashItemA extends j {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public class Bitmap 
+    private Bitmap a(int i) {
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap((int) (((6.283185307179586d * ((double) this.f)) * ((double) this.g)) / 360.0d), (int) this.e, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
@@ -111,14 +111,14 @@ public class DashItemA extends j {
     }
 
     public void a(float f) {
-        b();
+        InterfaceC0089a();
         this.d.id = this.b.id;
         this.i.rotation().y = f;
         dispatchDraw();
     }
 
     public void b(float f) {
-        b();
+        InterfaceC0089a();
         this.d.id = this.c.id;
         this.i.rotation().y = f;
         dispatchDraw();

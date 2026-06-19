@@ -10,7 +10,7 @@ public class MenuItemHeader extends j {
     private com.tsf.shell.f.a.b.ShaderSlotElement a;
     private i b;
 
-    public c(float f, float f2) {
+    public MenuItemHeader(float f, float f2) {
         this.a = new com.tsf.shell.f.a.b.ShaderSlotElement(f, f2, this.a);
         this.a.setDefaultColor(new Color4(0, 0, 0, 255));
         this.a.alpha(60.0f);

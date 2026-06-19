@@ -6,7 +6,7 @@ public class SnapshotData {
     public float b;
     public float c;
 
-    public e(float f, float f2, float f3) {
+    public SnapshotData(float f, float f2, float f3) {
         this.a = f;
         this.b = f2;
         this.c = f3;

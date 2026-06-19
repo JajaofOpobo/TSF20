@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 public class PreferenceSettingF extends PreferenceSettingBase {
     private com.censivn.C3DEngine.b.f.g a;
 
-    public f(String str, int i, float f) {
+    public PreferenceSettingF(String str, int i, float f) {
         super(str, f);
         this.a = new com.censivn.C3DEngine.b.f.g() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingF.1
             @Override // com.censivn.C3DEngine.b.f.g
@@ -17,7 +17,7 @@ public class PreferenceSettingF extends PreferenceSettingBase {
             }
         };
         this.a.a(i);
-        e().addChild(this.a);
+        PreferenceSettingF().addChild(this.a);
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f

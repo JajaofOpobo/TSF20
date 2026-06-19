@@ -292,7 +292,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.a {
         private float c;
         private float d;
 
-        public a(float f, float f2, float f3) {
+        public b(float f, float f2, float f3) {
             super(f, f2, f3);
             this.b = f;
             this.c = f2;

@@ -16,8 +16,8 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LabelSceneNode extends j {
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
     private VRectangle c;
     private VRectangle d;
     private VTwist e;
@@ -25,10 +25,10 @@ public class LabelSceneNode extends j {
     private VObject3dContainer g;
     private VValueTweenTarget h;
 
-    public f(VTextureManager vTextureManager, Context context) {
+    public LabelSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.h = new VValueTweenTarget();
-        h();
+        LabelSceneNode();
     }
 
     private void h() {
@@ -157,7 +157,7 @@ public class LabelSceneNode extends j {
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback
     public void b() {
-        i();
+        LabelSceneNode();
     }
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback
@@ -171,7 +171,7 @@ public class LabelSceneNode extends j {
         this.e.setAngle(0.0f);
         this.f.apply();
         this.c.updatePointsVBO();
-        e();
+        LabelSceneNode();
     }
 
     @Override // com.tsf.shell.f.i.c.a.ITextureCallback

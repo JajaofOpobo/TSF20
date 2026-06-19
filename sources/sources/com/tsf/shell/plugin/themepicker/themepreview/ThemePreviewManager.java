@@ -118,10 +118,10 @@ public class ThemePreviewManager extends com.tsf.shell.plugin.themepicker.utils.
     }
 
     public static class a {
-        public class String 
+        public String a;
         public int b;
 
-        public a(String str, int i) {
+        public ThemePreviewManager(String str, int i) {
             this.b = 0;
             this.a = str;
             this.b = i;

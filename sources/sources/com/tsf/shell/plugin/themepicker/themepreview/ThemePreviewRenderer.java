@@ -46,7 +46,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         this.f = (int) TypedValue.applyDimension(1, 50.0f, i().getResources().getDisplayMetrics());
         this.g = j().getDimensionPixelSize(f.d.theme_preview_width_size);
         this.h = j().getDimensionPixelSize(f.d.theme_preview_spacing);
-        a();
+        ThemePreviewRenderer();
     }
 
     @Override // android.support.v4.app.Fragment
@@ -70,7 +70,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("ThemePreviewLocalFragment onPause");
         super.s();
         this.a.i();
-        b();
+        ThemePreviewRenderer();
     }
 
     class a extends BroadcastReceiver {
@@ -90,11 +90,11 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         intentFilter.addAction("android.intent.action.PACKAGE_REPLACED");
         intentFilter.addAction("android.intent.action.PACKAGE_REMOVED");
         intentFilter.addDataScheme("package");
-        i().registerReceiver(this.e, intentFilter);
+        a().registerReceiver(this.e, intentFilter);
     }
 
     private void b() {
-        i().unregisterReceiver(this.e);
+        a().unregisterReceiver(this.e);
     }
 
     @Override // android.support.v4.app.Fragment
@@ -113,8 +113,8 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
     @Override // android.support.v4.app.Fragment
     public void a(int i, int i2, Intent intent) {
         if (i2 == -1 && i == 100 && intent.getExtras().getInt("oper") == 1) {
-            i().setResult(-1, intent);
-            i().finish();
+            View().setResult(-1, intent);
+            View().finish();
         }
     }
 
@@ -151,7 +151,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         private int f = 0;
         private AbsListView.LayoutParams g;
 
-        public b(List<ResolveInfo> list, Context context) {
+        public ThemePreviewRenderer(List<ResolveInfo> list, Context context) {
             this.b = list;
             this.c = context;
             this.d = context.getPackageManager();
@@ -178,7 +178,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.e) {
                 return null;
             }
@@ -204,7 +204,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View c() {
             if (i < this.e) {
                 if (view == null) {
                     view = new View(this.c);
@@ -235,7 +235,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public class String 
+    public String c() {
         if (str.length() > 15) {
             return str.substring(0, 15);
         }

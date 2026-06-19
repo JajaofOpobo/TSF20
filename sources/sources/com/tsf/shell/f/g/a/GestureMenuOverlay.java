@@ -22,7 +22,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     private Runnable j;
     private boolean k;
 
-    public b() {
+    public GestureMenuOverlay() {
         super(210.0f * com.censivn.C3DEngine.b.b.A.c);
         this.g = true;
         this.k = false;
@@ -80,9 +80,9 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     public void onMenuChanged(com.tsf.shell.f.e._g.a.MenuItemBase cVar) {
         a(cVar instanceof c);
         if (cVar instanceof a) {
-            b();
+            GestureMenuOverlay();
         } else {
-            c();
+            GestureMenuOverlay();
         }
     }
 
@@ -99,7 +99,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     public void onHide() {
         com.tsf.shell.manager.app.AppListModel.e();
         com.tsf.shell.manager.action.GestureHandler.c();
-        c();
+        GestureMenuOverlay();
     }
 
     @Override // com.tsf.shell.f.e._g.MenuOverlay
@@ -110,11 +110,11 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onLayout(float f, float f2, float f3, float f4) {
         this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
-        d();
+        GestureMenuOverlay();
     }
 
     public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a() {
-        e();
+        GestureMenuOverlay();
         return this.i;
     }
 
@@ -126,9 +126,9 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
 
     public void b() {
         if (!this.k) {
-            e();
+            GestureMenuOverlay();
             this.k = true;
-            d();
+            GestureMenuOverlay();
             com.tsf.shell.manager.app.AppListModel.a(this.j);
         } else {
             com.tsf.shell.f.e._g.a.MenuItemBase currentMenuItem = getCurrentMenuItem();

@@ -8,8 +8,8 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderSceneNode extends j {
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
     private C0116a c;
     private VRectangle d;
 
@@ -55,7 +55,7 @@ public class FolderSceneNode extends j {
         }
     }
 
-    public A(VTextureManager vTextureManager, Context context) {
+    public FolderSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         s_();
     }

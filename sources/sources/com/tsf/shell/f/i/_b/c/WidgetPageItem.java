@@ -33,7 +33,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
     private int r;
     private int s;
 
-    public a(ItemInfo itemInfo) {
+    public WidgetPageItem(ItemInfo itemInfo) {
         super(itemInfo);
         this.l = false;
         this.m = false;
@@ -48,7 +48,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
         ac();
         this.o = position().y;
         if (K().config == null || K().config.length() < 1) {
-            k();
+            WidgetPageItem();
         } else if (!q()) {
             com.tsf.shell.manager.app.WidgetManager.a(this);
         }
@@ -57,13 +57,13 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
     @Override // com.tsf.shell.f.i.PageItem
     public void X() {
         super.X();
-        l();
+        WidgetPageItem();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
     public void a(float f2, float f3) {
         super.a(f2, f3);
-        l();
+        WidgetPageItem();
     }
 
     @Override // com.censivn.C3DEngine.b.f.i
@@ -267,7 +267,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
         addChild(this.k);
         this.k.calAABB(1.0f, 1.0f, 1.0f);
         calAABB();
-        l();
+        WidgetPageItem();
         return true;
     }
 
@@ -325,7 +325,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
 
     /* JADX INFO: renamed from: com.tsf.shell.f.i._b.c.WidgetPageItem$a, reason: collision with other inner class name */
     class C0114a extends k {
-        public C0114a(float f, float f2, boolean z) {
+        public WidgetPageItem(float f, float f2, boolean z) {
             super(f, f2, false);
         }
     }
@@ -337,7 +337,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
         private float g;
         private float h;
 
-        public b(int i, int i2, int i3, int i4, int i5, int i6) {
+        public WidgetPageItem(int i, int i2, int i3, int i4, int i5, int i6) {
             super(i * com.censivn.C3DEngine.b.b.A.b, i2 * com.censivn.C3DEngine.b.b.A.b, false);
             this.f = 0;
             this.d = i3;
@@ -345,13 +345,13 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
             this.g = i / i5;
             this.h = i2 / i6;
             this.f = (int) (Math.random() * ((double) (i4 - 1)));
-            a();
+            b();
         }
 
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (!a.this.m && com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
-                a();
+                b();
             }
         }
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemView extends com.tsf.shell.f.e.f.EditModeNode implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
-    public c() {
+    public DrawerItemView() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
         arrayList.add(6);

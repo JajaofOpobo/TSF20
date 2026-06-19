@@ -25,7 +25,7 @@ public class PreferenceItemC extends i {
     private boolean m;
     private int n;
 
-    public c() {
+    public PreferenceItemC() {
         a(PreferenceItemB.i.text_preferences);
         this.a = new j();
         this.a.h(PreferenceItemB.i.mn_screen_orientation);

@@ -10,7 +10,7 @@ public class ThemeUtilsDrawable extends BitmapDrawable {
     private int b;
     private boolean c;
 
-    public g(Resources resources, Bitmap bitmap) {
+    public ThemeUtilsDrawable(Resources resources, Bitmap bitmap) {
         super(resources, bitmap);
         this.a = 0;
         this.b = 0;
@@ -25,7 +25,7 @@ public class ThemeUtilsDrawable extends BitmapDrawable {
                 this.b--;
             }
         }
-        a();
+        ThemeUtilsDrawable();
     }
 
     public void b(boolean z) {
@@ -36,7 +36,7 @@ public class ThemeUtilsDrawable extends BitmapDrawable {
                 this.a--;
             }
         }
-        a();
+        ThemeUtilsDrawable();
     }
 
     private synchronized void a() {

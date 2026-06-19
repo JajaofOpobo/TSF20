@@ -33,7 +33,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private com.tsf.shell.manager.d.HitTargetManager.C0127a q;
     private float[] r;
 
-    public c(com.tsf.shell.f.i.PageItem bVar) {
+    public WidgetItemTouchHandler(com.tsf.shell.f.i.PageItem bVar) {
         super(bVar);
         this.l = false;
         this.m = false;
@@ -112,7 +112,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 } else {
                     w.a();
                 }
-                d();
+                WidgetItemTouchHandler();
                 if (motionEvent != null) {
                     x.a(motionEvent, this.r);
                     f = this.r[0];
@@ -273,9 +273,9 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
 
     public void b() {
         if (com.tsf.shell.manager.app.StateHub.d.b()) {
-            a(com.tsf.shell.manager.app.StateHub.d.a(), true);
+            a(com.tsf.shell.manager.app.StateHub.d.WidgetItemTouchHandler(), true);
         } else {
-            c();
+            WidgetItemTouchHandler();
         }
     }
 

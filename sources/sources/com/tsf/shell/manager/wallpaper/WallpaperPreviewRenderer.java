@@ -61,7 +61,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
         public b(Context context, float f, float f2) {
             this.c = context;
             a(f, f2);
-            c();
+            b();
         }
 
         public void a(float f, float f2) {
@@ -184,7 +184,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
                 this.g.scale().setAll(fA, fA, fA);
                 this.g.setTextureAllAndMathSizePX(0, 0, 1, 1);
                 this.g.updateAll();
-                b();
+                C0149a();
             }
 
             private void b() {
@@ -201,7 +201,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
                 if (this.a > b.this.f + this.i || this.b > b.this.g + this.i) {
                     this.a = b.this.a(0.0f, (-b.this.d) - this.i, false);
                     this.b = b.this.a((-b.this.g) - this.i, (-b.this.g) - this.i, false);
-                    b();
+                    C0149a();
                 }
             }
         }

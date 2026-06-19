@@ -14,7 +14,7 @@ public class PreferenceItemB extends i {
     private com.tsf.shell.preference.a.PreferenceThemeProvider f;
     private float g;
 
-    public b() {
+    public PreferenceItemB() {
         a(b.i.text_screen_scale);
         this.f = new com.tsf.shell.preference.a.PreferenceThemeProvider();
         b(this.f);
@@ -86,8 +86,8 @@ public class PreferenceItemB extends i {
         this.c = fAj == 0.0f;
         this.e.c(this.c);
         b(com.censivn.C3DEngine.b.b.A.d);
-        i();
-        i();
+        PreferenceItemB();
+        PreferenceItemB();
     }
 
     @Override // com.censivn.C3DEngine.b.e.c

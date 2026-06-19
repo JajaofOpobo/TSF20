@@ -7,7 +7,7 @@ import android.net.wifi.WifiManager;
 public class ToggleActionFlashlight extends com.tsf.shell.manager.action.toggle.ToggleAction {
     public ToggleActionFlashlight(int i) {
         super(i);
-        d();
+        ToggleActionFlashlight();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction

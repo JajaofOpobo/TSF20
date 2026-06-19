@@ -130,20 +130,20 @@ public class MenuActionHandler extends MenuItemBase {
 
         public void a() {
             this.d = this.g.a();
-            k();
+            C0096a();
             if (this.d) {
-                h();
+                C0096a();
             } else {
-                i();
+                C0096a();
             }
         }
 
         public void d() {
-            a();
+            C0096a();
         }
 
         public void e() {
-            j();
+            C0096a();
         }
 
         public boolean f() {
@@ -152,12 +152,12 @@ public class MenuActionHandler extends MenuItemBase {
 
         public void g() {
             if (this.a.id != 0) {
-                j();
-                k();
+                C0096a();
+                C0096a();
                 if (this.d) {
-                    h();
+                    C0096a();
                 } else {
-                    i();
+                    C0096a();
                 }
             }
         }

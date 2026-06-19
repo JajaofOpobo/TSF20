@@ -18,7 +18,7 @@ public abstract class DashElementBase {
 
     public abstract i e();
 
-    public A(int i, boolean z) {
+    public DashElementBase(int i, boolean z) {
         boolean z2 = false;
         this.d = false;
         this.a = i;

@@ -25,7 +25,7 @@ public class GridLayoutStrategy extends j {
         }
     };
 
-    public a() {
+    public GridLayoutStrategy() {
         this.a.textures().addElement(GridLayoutConfig);
         addChild(this.b);
         this.g = new GridLayoutCache();
@@ -84,7 +84,7 @@ public class GridLayoutStrategy extends j {
     }
 
     public void b(int i) {
-        f();
+        GridLayoutStrategy();
         VMessageManager.postGLThreadRunnable(new Runnable() { // from class: com.tsf.shell.f.e._i.GridLayoutStrategy.2
             @Override // java.lang.Runnable
             public void run() {

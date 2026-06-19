@@ -58,11 +58,11 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         void a(boolean z);
     }
 
-    public A() {
-        h();
-        i();
-        a();
-        d();
+    public AlarmContainer() {
+        c();
+        c();
+        c();
+        c();
     }
 
     public void a(C cVar) {
@@ -179,7 +179,7 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
             AlarmState.b("Info:" + a + ":" + this.k + ":" + this.i + ":" + this.j);
         }
         this.h.close();
-        g();
+        c();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -238,7 +238,7 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         int c;
         private double e;
 
-        public C0173a(VObject3d vObject3d) {
+        public AlarmContainer(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
             this.c = 1;

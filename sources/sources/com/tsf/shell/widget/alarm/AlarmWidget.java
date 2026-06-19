@@ -87,8 +87,8 @@ public class AlarmWidget extends VWidgetContainer {
         c = getTextureManager();
         d = getObjectManager();
         e = new VMessageQueueManager(f);
-        g();
-        l();
+        b();
+        b();
     }
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
@@ -162,7 +162,7 @@ public class AlarmWidget extends VWidgetContainer {
         AlarmState.c("onPause");
         o = true;
         AlarmDataProvider.pause();
-        e();
+        D();
     }
 
     @Override // com.censivn.C3DEngine.api.core.VWidgetContainer
@@ -170,7 +170,7 @@ public class AlarmWidget extends VWidgetContainer {
         AlarmState.c("onResume");
         o = false;
         AlarmDataProvider.resume();
-        f();
+        D();
         synchronized (this.v) {
             this.v.notifyAll();
         }
@@ -182,7 +182,7 @@ public class AlarmWidget extends VWidgetContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VWidgetContainer
     public void onDestroy() {
-        m();
+        D();
         if (this.x != null) {
             this.x.a();
         }
@@ -214,7 +214,7 @@ public class AlarmWidget extends VWidgetContainer {
         this.m.addChild(this.j);
         addChild(this.m);
         setAABBSP(-198.0f, -198.0f, 0.0f, 198.0f, 198.0f, 0.0f);
-        h();
+        D();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -356,7 +356,7 @@ public class AlarmWidget extends VWidgetContainer {
     }
 
     class SettingFilter extends IntentFilter {
-        public SettingFilter() {
+        public AlarmWidget() {
             addAction("com.tsf.shell.widget.alarm.SettingOnChange");
             addAction(AlarmWidget.y);
             addAction(AlarmWidget.z);

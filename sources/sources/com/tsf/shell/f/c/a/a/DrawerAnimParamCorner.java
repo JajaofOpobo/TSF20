@@ -7,7 +7,7 @@ import com.tsf.shell.f.c.a.a.DrawerAnimConfig;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerAnimParamCorner extends DrawerAnimParamRight {
-    public h() {
+    public DrawerAnimParamCorner() {
         this.c = 1;
     }
 
@@ -46,14 +46,14 @@ public class DrawerAnimParamCorner extends DrawerAnimParamRight {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase, com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public class Number3d 
+    public Number3d c() {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
         Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
         return Number3d.TEMPNUMBER3D;
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase, com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public class Number3d 
+    public Number3d d() {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
         Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
         return Number3d.TEMPNUMBER3D;

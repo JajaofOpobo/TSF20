@@ -37,7 +37,7 @@ public class GlTexturePool {
     }
 
     public void a() {
-        b();
+        e();
         GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
         com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
     }
@@ -82,7 +82,7 @@ public class GlTexturePool {
 
     class a {
         public com.tsf.shell.f.a.a.GlTextureBinding a;
-        public class TextureElement 
+        public TextureElement b;
 
         public a(com.tsf.shell.f.a.a.GlTextureBinding aVar, TextureElement textureElement) {
             this.a = aVar;

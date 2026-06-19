@@ -45,7 +45,7 @@ public class SettingGesturePreferenceActivity extends PreferenceActivity impleme
         for (int i = 0; i < length; i++) {
             this.b.put(Integer.valueOf(intArrayExtra[i]), stringArrayExtra[i]);
         }
-        b();
+        SettingGesturePreferenceActivity();
         findPreference("gesture_double_tap").setOnPreferenceClickListener(this);
         findPreference("gesture_double_tap").setSummary(a(8));
         findPreference("gesture_swipe_up").setOnPreferenceClickListener(this);

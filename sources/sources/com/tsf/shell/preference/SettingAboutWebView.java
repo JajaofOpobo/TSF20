@@ -17,7 +17,7 @@ public class SettingAboutWebView extends Activity implements View.OnClickListene
             getWindow().addFlags(1024);
         }
         setContentView(b.g.setting_about_privacy);
-        a();
+        SettingAboutWebView();
     }
 
     private void a() {

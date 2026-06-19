@@ -11,13 +11,13 @@ public class ThemePreviewEvent extends ThemePreviewResult {
     private static final int[] a = {f.j.theme_picker_theme_bottom_installed, f.j.theme_picker_theme_bottom_featured};
     private Context b;
 
-    public e(o oVar, Context context) {
+    public ThemePreviewEvent(o oVar, Context context) {
         super(oVar);
         this.b = context;
     }
 
     @Override // android.support.v4.app.r
-    public class Fragment 
+    public Fragment c() {
         return i == 0 ? new ThemePreviewRenderer() : new ThemePreviewPanel();
     }
 
@@ -27,7 +27,7 @@ public class ThemePreviewEvent extends ThemePreviewResult {
     }
 
     @Override // android.support.v4.view.ac
-    public class CharSequence 
+    public CharSequence c() {
         return this.b.getString(a[i]);
     }
 }

@@ -88,7 +88,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
         }
     }
 
-    public class IconPreviewLoader 
+    public IconPreviewLoader getLoader() {
         return this.mLoader;
     }
 

@@ -62,14 +62,14 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
     @Override // android.app.Activity
     protected void onStop() {
         super.onStop();
-        c();
+        FloatingWidgetPicker();
     }
 
     @Override // android.app.Activity
     protected void onStart() {
         super.onStart();
-        b();
-        a();
+        FloatingWidgetPicker();
+        FloatingWidgetPicker();
         if (b >= this.a.size()) {
             b = 0;
         }
@@ -216,7 +216,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             return null;
         }
 
@@ -249,7 +249,7 @@ public class FloatingWidgetPicker extends Activity implements View.OnClickListen
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             return null;
         }
 

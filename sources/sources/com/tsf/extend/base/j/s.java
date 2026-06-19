@@ -76,7 +76,7 @@ public class s {
         private int b = 0;
         private long c;
 
-        public c(int i, long j) {
+        public s(int i, long j) {
             this.a = 0;
             this.c = 0L;
             this.a = i;
@@ -119,7 +119,7 @@ public class s {
         }
 
         @TargetApi(11)
-        public b(ObjectAnimator objectAnimator, int i) {
+        public s(ObjectAnimator objectAnimator, int i) {
             this.a = objectAnimator;
             this.b = i;
             this.a.addListener(new Animator.AnimatorListener() { // from class: com.tsf.extend.base.j.s.b.1
@@ -194,7 +194,7 @@ public class s {
         private int e = Color.parseColor("#4480F7");
         private Paint b = new Paint();
 
-        public a() {
+        public s() {
             this.b.setColor(this.e);
             this.a = new com.tsf.extend.base.view.a(new float[]{0.0f, 0.0f, 0.3f, 0.9f, 0.33f, 1.0f, 0.35f, 0.75f, 0.95f, 0.0f, 1.0f, 0.0f}, 300);
         }

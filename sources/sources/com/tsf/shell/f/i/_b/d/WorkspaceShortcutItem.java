@@ -297,7 +297,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         return this.aa;
     }
 
-    public b(ItemInfo itemInfo) {
+    public WorkspaceShortcutItem(ItemInfo itemInfo) {
         super(itemInfo);
         this.x = true;
         this.y = false;
@@ -543,8 +543,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         return K() instanceof LauncherDrawerFolder3DInfo;
     }
 
-    public class TextureElement 
-        return this.u;
+    public TextureElement c() {
+                return this.u;
     }
 
     @Override // com.tsf.shell.f.i._a.InterfaceC0113a
@@ -819,7 +819,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         }
     }
 
-    public class CharSequence 
+    public CharSequence c() {
         return K().title;
     }
 

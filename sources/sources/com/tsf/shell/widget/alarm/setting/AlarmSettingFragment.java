@@ -12,7 +12,7 @@ public class AlarmSettingFragment {
     private Uri a;
     private Context b;
 
-    public c(Context context) {
+    public AlarmSettingFragment(Context context) {
         this.b = context;
     }
 
@@ -20,7 +20,7 @@ public class AlarmSettingFragment {
         this.a = uri;
     }
 
-    public class String 
+    public String c() {
         if (this.a != null) {
             Ringtone ringtone = RingtoneManager.getRingtone(this.b, this.a);
             i.c("ssssssssfffffsssssssss:" + this.a);
@@ -36,7 +36,7 @@ public class AlarmSettingFragment {
         return this.b.getString(m.f.silent_alarm_summary);
     }
 
-    public class String 
+    public String c() {
         return this.a != null ? this.a.toString() : "silent";
     }
 }

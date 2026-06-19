@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class DashItemConfigurator extends DashItemPool<d> {
     private ArrayList<b> a = new ArrayList<>();
 
-    public A() {
+    public DashItemConfigurator() {
         ArrayList<LauncherAppInfo> arrayList = new ArrayList<>();
         arrayList.add(new com.tsf.shell.f._d.b.a.DashItemC(0, false));
         arrayList.add(new com.tsf.shell.f._d.b.a.DashItemF(50, -13421773, false));
@@ -45,7 +45,7 @@ public class DashItemConfigurator extends DashItemPool<d> {
     public void b(b bVar) {
         this.a.remove(bVar);
         if (this.a.isEmpty()) {
-            h().a();
+            DashItemConfigurator().a();
         }
     }
 
@@ -68,15 +68,15 @@ public class DashItemConfigurator extends DashItemPool<d> {
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public class String 
+    public String c() {
         return com.tsf.shell.manager.b.ConfigManager.D();
     }
 
     public void d() {
-        h().b();
+        DashItemConfigurator().b();
     }
 
     public void e() {
-        h().c();
+        DashItemConfigurator().c();
     }
 }

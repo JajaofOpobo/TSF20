@@ -14,13 +14,13 @@ public class FolderItemAnimation {
     private com.censivn.C3DEngine.b.g.d h;
     private b i;
 
-    public e(b bVar) {
+    public FolderItemAnimation(b bVar) {
         this.i = bVar;
-        c();
+        FolderItemAnimation();
     }
 
     public void a() {
-        c();
+        FolderItemAnimation();
     }
 
     private void c() {

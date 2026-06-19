@@ -13,7 +13,7 @@ public class SceneRendererE {
     private com.censivn.C3DEngine.b.f._a.b i;
     private long j = -1;
 
-    public e(com.censivn.C3DEngine.b.f._a.b bVar, com.censivn.C3DEngine.b.f._a.b bVar2) {
+    public SceneRendererE(com.censivn.C3DEngine.b.f._a.b bVar, com.censivn.C3DEngine.b.f._a.b bVar2) {
         this.a = 0.0f;
         this.b = 0.0f;
         this.c = 0.0f;

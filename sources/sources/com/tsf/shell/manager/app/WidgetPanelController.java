@@ -71,7 +71,7 @@ public class WidgetPanelController {
                 }
             }
         }
-        e();
+        a();
     }
 
     private void e() {
@@ -105,13 +105,13 @@ public class WidgetPanelController {
                 while (this.a.size() > 12) {
                     this.a.remove(0);
                 }
-                f();
+                a();
                 return;
             }
             if (this.a.get(this.a.size() - 1) != gVar) {
                 this.a.remove(gVar);
                 this.a.add(gVar);
-                f();
+                a();
             }
         }
     }

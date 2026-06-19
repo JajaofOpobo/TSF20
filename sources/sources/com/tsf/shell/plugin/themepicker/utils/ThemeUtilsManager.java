@@ -265,7 +265,7 @@ public final class ThemeUtilsManager implements Closeable {
     public synchronized c a(String str) {
         c cVar = null;
         synchronized (this) {
-            h();
+            Void();
             e(str);
             C0159b c0159b = this.j.get(str);
             if (c0159b != null && c0159b.d) {
@@ -294,7 +294,7 @@ public final class ThemeUtilsManager implements Closeable {
     private synchronized a a(String str, long j) {
         C0159b c0159b;
         a aVar;
-        h();
+        Void();
         e(str);
         C0159b c0159b2 = this.j.get(str);
         if (j == -1 || (c0159b2 != null && c0159b2.f == j)) {
@@ -375,7 +375,7 @@ public final class ThemeUtilsManager implements Closeable {
     public synchronized boolean c(String str) {
         boolean z;
         synchronized (this) {
-            h();
+            Void();
             e(str);
             C0159b c0159b = this.j.get(str);
             if (c0159b == null || c0159b.e != null) {
@@ -412,8 +412,8 @@ public final class ThemeUtilsManager implements Closeable {
     }
 
     public synchronized void b() {
-        h();
-        i();
+        Void();
+        Void();
         this.i.flush();
     }
 
@@ -425,7 +425,7 @@ public final class ThemeUtilsManager implements Closeable {
                     c0159b.e.b();
                 }
             }
-            i();
+            Void();
             this.i.close();
             this.i = null;
         }
@@ -460,7 +460,7 @@ public final class ThemeUtilsManager implements Closeable {
             this.d = inputStreamArr;
         }
 
-        public class InputStream 
+        public InputStream c() {
             return this.d[i];
         }
 
@@ -587,11 +587,11 @@ public final class ThemeUtilsManager implements Closeable {
             throw new IOException("unexpected journal line: " + Arrays.toString(strArr));
         }
 
-        public class File 
+        public File c() {
             return new File(b.this.b, this.b + "." + i);
         }
 
-        public class File 
+        public File c() {
             return new File(b.this.b, this.b + "." + i + ".tmp");
         }
     }

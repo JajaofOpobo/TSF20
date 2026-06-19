@@ -20,7 +20,7 @@ public class SceneDecorNode extends j {
     private com.censivn.C3DEngine.b.f.a.a d = new com.censivn.C3DEngine.b.f.a.a(2, 1, 1, true);
     private m e = new m();
 
-    public d() {
+    public SceneDecorNode() {
         this.e.d(54);
         this.d.textures().addElement(this.a);
         addChild(this.d);
@@ -33,7 +33,7 @@ public class SceneDecorNode extends j {
                 }
             }
         });
-        f();
+        SceneDecorNode();
     }
 
     public void a(com.tsf.shell.manager.c.a.a.ContactModel.b bVar) {
@@ -50,8 +50,8 @@ public class SceneDecorNode extends j {
         setAABBPX(fA, com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.d.alpha(0.0f);
         this.e.alpha(0.0f);
-        h();
-        i();
+        SceneDecorNode();
+        SceneDecorNode();
     }
 
     private void h() {
@@ -114,9 +114,9 @@ public class SceneDecorNode extends j {
         bVarA2.i().x = (this.a.width / 2.0f) - ((this.a.width - iA) / 2.0f);
         bVarA2.h();
         if (this.c) {
-            e();
+            SceneDecorNode();
         } else {
-            f();
+            SceneDecorNode();
         }
     }
 
@@ -127,6 +127,6 @@ public class SceneDecorNode extends j {
         this.e.a();
         this.f.a();
         this.f = null;
-        f();
+        SceneDecorNode();
     }
 }

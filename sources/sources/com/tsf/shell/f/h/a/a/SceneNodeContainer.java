@@ -4,7 +4,7 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SceneNodeContainer extends SceneElementBase {
-    public A() {
+    public SceneNodeContainer() {
         super(SceneNodeAnimator.i.text_favorites);
     }
 }

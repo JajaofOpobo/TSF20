@@ -12,7 +12,7 @@ import com.tsf.shell.widget.alarm.AlarmButton;
 public class AlarmComponentContainer extends VRectangle implements j.a {
     public boolean a;
 
-    public a() {
+    public AlarmComponentContainer() {
         super(56.0f, 24.0f);
         this.a = true;
         setMouseEventListener(new C0174a(this));
@@ -20,7 +20,7 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
         position().spX(217.0f);
         textures().addElement(AlarmWidget.a.g());
         setAABBSP(-250.0f, -30.0f, 0.0f, 250.0f, 30.0f, 0.0f);
-        d();
+        AlarmComponentContainer();
     }
 
     private void d() {
@@ -34,7 +34,7 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
 
     public void a(boolean z) {
         this.a = z;
-        d();
+        AlarmComponentContainer();
     }
 
     public boolean b() {
@@ -43,12 +43,12 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
 
     public void c() {
         this.a = !this.a;
-        d();
+        AlarmComponentContainer();
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.widget.alarm.c.AlarmComponentContainer$a, reason: collision with other inner class name */
     class C0174a extends VMouseEventListener {
-        public C0174a(VObject3d vObject3d) {
+        public AlarmComponentContainer(VObject3d vObject3d) {
             super(vObject3d);
         }
 
@@ -69,6 +69,6 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
 
     @Override // com.tsf.shell.widget.alarm.AlarmButton.a
     public void a() {
-        c();
+        C0174a();
     }
 }

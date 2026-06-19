@@ -9,7 +9,7 @@ public class LazyBitmapFactory {
     private int b;
     private int c;
 
-    public d(int i, int i2) {
+    public LazyBitmapFactory(int i, int i2) {
         this.b = i;
         this.c = i2;
     }

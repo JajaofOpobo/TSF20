@@ -20,7 +20,7 @@ public class DrawerTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private f j;
     private B k;
 
-    public A(i iVar, f fVar) {
+    public DrawerTouchHandler(i iVar, f fVar) {
         super(iVar);
         this.a = false;
         this.d = (int) (30.0f * com.censivn.C3DEngine.b.b.A.a);

@@ -48,7 +48,7 @@ public class PhotoSelectorActivity extends Activity {
         Bitmap bitmapCreateScaledBitmap;
         if (i2 == -1) {
             if (i == 100) {
-                a(intent.getData());
+                a(intent.getDatPhotoSelectorActivity());
                 return;
             }
             if (i == 101) {

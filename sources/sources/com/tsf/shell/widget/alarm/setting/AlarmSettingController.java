@@ -21,7 +21,7 @@ public class AlarmSettingController extends BaseAdapter {
     private Alarm c;
     private Context d;
 
-    public b(Context context) {
+    public AlarmSettingController(Context context) {
         this.d = context;
         this.a = new AlarmSettingFragment(this.d);
         this.c = com.tsf.shell.widget.alarm.AlarmContainerlarmUtils.c.a(this.d, 1);
@@ -45,7 +45,7 @@ public class AlarmSettingController extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class Object 
+    public Object c() {
         return null;
     }
 
@@ -55,7 +55,7 @@ public class AlarmSettingController extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class View 
+    public View c() {
         switch (i) {
             case 0:
                 if (view == null) {

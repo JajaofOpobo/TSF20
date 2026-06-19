@@ -48,7 +48,7 @@ public class SettingAdvancedPerferenceActivity extends PreferenceActivity implem
             return true;
         }
         if ("restart_shell".equals(preference.getKey())) {
-            b();
+            SettingAdvancedPerferenceActivity();
             return true;
         }
         return true;

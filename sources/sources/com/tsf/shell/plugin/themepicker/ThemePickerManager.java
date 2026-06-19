@@ -47,7 +47,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
     @Override // android.support.v4.app.Fragment
     public void a(Bundle bundle) {
         super.a(bundle);
-        h().getInt("PageIndex");
+        ThemePickerManager().getInt("PageIndex");
         this.g = (ResolveInfo) h().getParcelable("resolveInfo");
         this.a = j().getDimensionPixelSize(ThemePickerResources.d.image_thumbnail_size);
         this.b = j().getDimensionPixelSize(ThemePickerResources.d.image_thumbnail_spacing);
@@ -143,7 +143,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public a(Context context) {
+        public ThemePickerManager(Context context) {
             this.f = 0;
             this.b = context;
             this.f = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -168,7 +168,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.e) {
                 return null;
             }

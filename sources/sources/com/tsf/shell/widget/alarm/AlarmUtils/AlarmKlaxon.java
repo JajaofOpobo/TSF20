@@ -26,7 +26,7 @@ public class AlarmKlaxon {
     }
 
     private static class a extends SQLiteOpenHelper {
-        public a(Context context) {
+        public AlarmKlaxon(Context context) {
             super(context, "alarms.db", (SQLiteDatabase.CursorFactory) null, 5);
         }
 
@@ -51,7 +51,7 @@ public class AlarmKlaxon {
         return a;
     }
 
-    public b(Context context) {
+    public AlarmKlaxon(Context context) {
         this.c = context;
         this.b = new a(this.c);
     }

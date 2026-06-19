@@ -11,8 +11,8 @@ public class TextureElementE {
     private TextureElement d;
     private boolean e;
 
-    public e() {
-        b();
+    public TextureElementE() {
+        TextureElementE();
     }
 
     public int a(int i) {
@@ -24,7 +24,7 @@ public class TextureElementE {
         }
     }
 
-    public class TextureElement 
+    public TextureElement c() {
         switch (i) {
             case 1:
                 return this.d;
@@ -48,7 +48,7 @@ public class TextureElementE {
     public void b() {
         this.a = -1;
         this.b = -1;
-        a();
+        TextureElementE();
     }
 
     public void a(TextureElement textureElement) {

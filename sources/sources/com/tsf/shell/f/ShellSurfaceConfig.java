@@ -8,10 +8,10 @@ public class ShellSurfaceConfig {
     private static com.tsf.shell.manager.f.LauncherInitController c;
     private com.censivn.C3DEngine.a.a a;
 
-    public D(com.censivn.C3DEngine.a.a aVar) {
+    public ShellSurfaceConfig(com.censivn.C3DEngine.a.a aVar) {
         b = this;
         this.a = aVar;
-        h();
+        ShellSurfaceConfig();
     }
 
     public static d c() {

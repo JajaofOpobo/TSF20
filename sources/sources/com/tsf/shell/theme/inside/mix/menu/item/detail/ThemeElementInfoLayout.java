@@ -34,79 +34,79 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
         this.mElementSize = (int) com.censivn.C3DEngine.b.b.A.a(180.0f);
         addChild(new a(8) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.1
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeFolderManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(16) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.6
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeContactManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(4) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.7
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeClockManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_DESKTOP) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.8
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemePageManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_SMART_BUTTON) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.9
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeSmartButtonManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_ICON_MENU) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.10
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeIconMenuManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_LASSO) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.11
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeLassoManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_ARRANGE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.12
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeArrangeManager.createPreviewBitmap(com.censivn.C3DEngine.A.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_APP_MUTIL_CHOICE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.13
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeAppMutilChoiceManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_UNREAD_COUNT) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.2
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeUnreadCountManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(33) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.3
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeShellOtherManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_WIDGET_RESIZE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.4
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeWidgetResizeManager.createPreviewBitmap(com.censivn.C3DEngine.A.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_ACTION) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.5
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
-            public class Bitmap 
+            public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
                 return ThemeActionManager.createPreviewBitmap(null, themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
@@ -190,7 +190,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
             this.f = null;
         }
 
-        public class Bitmap 
+        public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
             return null;
         }
     }

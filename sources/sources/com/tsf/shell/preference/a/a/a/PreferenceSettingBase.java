@@ -13,11 +13,11 @@ public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
     private com.censivn.C3DEngine.b.f.j e;
     private com.censivn.C3DEngine.b.f.j f;
 
-    public h(String str, float f) {
+    public PreferenceSettingBase(String str, float f) {
         this(str, f, com.censivn.C3DEngine.b.b.A.a(50.0f), com.censivn.C3DEngine.b.b.A.a(50.0f));
     }
 
-    public h(String str, float f, float f2, float f3) {
+    public PreferenceSettingBase(String str, float f, float f2, float f3) {
         a(1);
         this.e = new com.censivn.C3DEngine.b.f.j();
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();

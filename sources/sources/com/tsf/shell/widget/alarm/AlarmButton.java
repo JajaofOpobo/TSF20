@@ -26,7 +26,7 @@ public class AlarmButton extends VRectangle {
         this.e = aVar;
     }
 
-    public j() {
+    public AlarmButton() {
         super(33.333332f, 34.166664f);
         this.c = new Uv[4];
         this.f = 40.0f;

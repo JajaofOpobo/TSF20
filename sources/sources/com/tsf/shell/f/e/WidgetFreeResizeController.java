@@ -69,7 +69,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            h();
+            b();
         }
     }
 
@@ -240,7 +240,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         }
 
         public void g() {
-            a(-f(), -d(), e(), a());
+            a(-f(), -d(), e(), C());
         }
 
         private void b(int i) {
@@ -345,7 +345,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             float f2 = (-f()) + ((f() + e()) / 2.0f);
             this.i.position().x = f2;
             this.j.position().x = f2;
-            g();
+            C();
         }
 
         @Override // com.censivn.C3DEngine.b.f.b.a
@@ -355,7 +355,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             float f2 = (-f()) + ((f() + e()) / 2.0f);
             this.i.position().x = f2;
             this.j.position().x = f2;
-            g();
+            C();
         }
 
         @Override // com.censivn.C3DEngine.b.f.b.a
@@ -365,7 +365,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             float fA = a() - ((d() + a()) / 2.0f);
             this.k.position().y = fA;
             this.l.position().y = fA;
-            g();
+            C();
         }
 
         @Override // com.censivn.C3DEngine.b.f.b.a
@@ -375,7 +375,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             float fA = a() - ((d() + a()) / 2.0f);
             this.k.position().y = fA;
             this.l.position().y = fA;
-            g();
+            C();
         }
 
         public void h() {

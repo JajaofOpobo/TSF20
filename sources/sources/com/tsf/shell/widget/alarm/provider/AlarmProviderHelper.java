@@ -45,23 +45,23 @@ public class AlarmProviderHelper {
         }
     }
 
-    public b(Context context) {
+    public AlarmProviderHelper(Context context) {
         this.d = context;
         this.c = new AlarmProviderContract(this.d);
     }
 
     public void a(Uri uri, ContentValues contentValues) {
         a().replace("settings", "_id", contentValues);
-        b();
+        a();
     }
 
-    public class Cursor 
+    public Cursor c() {
         return a().query("settings", null, str, strArr2, null, null, str2);
     }
 
     public int a(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         int iUpdate = a().update("settings", contentValues, str, strArr);
-        b();
+        Cursor();
         return iUpdate;
     }
 

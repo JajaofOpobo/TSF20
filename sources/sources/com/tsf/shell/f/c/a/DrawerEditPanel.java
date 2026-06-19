@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
     private f a;
 
-    public e(f fVar) {
+    public DrawerEditPanel(f fVar) {
         this.a = fVar;
     }
 

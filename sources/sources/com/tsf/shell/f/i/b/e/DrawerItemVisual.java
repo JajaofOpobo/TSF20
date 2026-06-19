@@ -20,16 +20,16 @@ public class DrawerItemVisual extends DrawerItemBase {
     private boolean b;
     private boolean p;
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
+    public DrawerItemVisual(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
         this(launcherShortcutAppInfo, com.tsf.shell.manager.o.ButtonPresetManager.a, fVar, z);
     }
 
-    public g() {
+    public DrawerItemVisual() {
         super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
         this.b = false;
     }
 
-    public g(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
+    public DrawerItemVisual(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, com.tsf.shell.manager.app.LauncherAppInfo fVar, boolean z) {
         super(launcherShortcutAppInfo, aVar);
         this.b = false;
         this.a = fVar;
@@ -40,7 +40,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         if (z) {
             com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
-            k();
+            DrawerItemVisual();
         } else {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemVisual.1
                 @Override // java.lang.Runnable
@@ -107,11 +107,11 @@ public class DrawerItemVisual extends DrawerItemBase {
     }
 
     @Override // com.tsf.shell.f.i.PageItem
-    public class String 
+    public String c() {
         return this.a != null ? this.a.e : "";
     }
 
-    public class String 
+    public String c() {
         return r();
     }
 

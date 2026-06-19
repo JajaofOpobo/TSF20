@@ -19,8 +19,8 @@ public class AlarmTransformNode extends VObject3dContainer {
     public float e = 0.0f;
     public float f = 0.02f;
     public float g = 0.92f;
-    public class Number3d 
-    public class Number3d 
+    public Number3d a;
+    public Number3d a;
     private double j = 0.0d;
     private double k = 0.0d;
 

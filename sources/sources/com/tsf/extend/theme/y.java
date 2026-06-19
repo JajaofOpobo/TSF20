@@ -191,7 +191,7 @@ public class y extends t {
         private List<com.tsf.extend.base.c.a> e;
         private int f;
 
-        public A(n nVar, int i) {
+        public y(n nVar, int i) {
             this.d = nVar;
             this.e = this.d.b();
             this.f = i;
@@ -293,7 +293,7 @@ public class y extends t {
         private int c;
         private List<com.tsf.extend.base.c.a> d;
 
-        public B(int i, int i2, List<com.tsf.extend.base.c.a> list) {
+        public y(int i, int i2, List<com.tsf.extend.base.c.a> list) {
             this.b = i;
             this.c = i2;
             this.d = list;

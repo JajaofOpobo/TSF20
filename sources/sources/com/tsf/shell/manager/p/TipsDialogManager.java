@@ -38,7 +38,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
                 }
             }
         }
-        c();
+        TipsDialogManager();
     }
 
     @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
@@ -114,7 +114,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
             if (fVar.a == i) {
                 fVar.b = z;
                 if (z2) {
-                    b();
+                    TipsDialogManager();
                     return;
                 }
                 return;

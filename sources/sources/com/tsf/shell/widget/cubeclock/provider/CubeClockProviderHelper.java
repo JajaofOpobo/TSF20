@@ -9,7 +9,7 @@ public class CubeClockProviderHelper {
     public int b = 0;
     private VWidgetContainer c;
 
-    public a(VWidgetContainer vWidgetContainer) {
+    public CubeClockProviderHelper(VWidgetContainer vWidgetContainer) {
         this.c = vWidgetContainer;
     }
 

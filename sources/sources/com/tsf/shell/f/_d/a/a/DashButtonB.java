@@ -10,7 +10,7 @@ public class DashButtonB extends com.tsf.shell.f._d.a.DashElementBase {
     Color4 a;
     private com.tsf.shell.f._d.a.DashElementInfo b;
 
-    public b(int i, boolean z) {
+    public DashButtonB(int i, boolean z) {
         super(i, z);
         this.a = new Color4();
     }

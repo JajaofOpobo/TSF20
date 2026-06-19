@@ -80,7 +80,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
         private ResolveInfo[] g;
         private PackageManager h;
 
-        public a(Context context) {
+        public WallpaperManager(Context context) {
             this.b = context;
             this.h = context.getPackageManager();
             this.c = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -134,7 +134,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.d) {
                 return null;
             }
@@ -165,7 +165,7 @@ public class WallpaperManager extends Fragment implements View.OnClickListener {
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View c() {
             if (i < this.d) {
                 if (view == null) {
                     view = new View(this.b);

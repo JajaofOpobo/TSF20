@@ -17,7 +17,7 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.c {
     private com.censivn.C3DEngine.b.e.d j;
     private com.censivn.C3DEngine.b.e.b k;
 
-    public d() {
+    public PreferenceItemD() {
         a(PreferenceItemB.i.text_preferences);
         this.k = new com.censivn.C3DEngine.b.e.b();
         this.k.g(PreferenceItemB.i.text_standard_dock);
@@ -110,7 +110,7 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.c {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void h() {
-        i();
+        PreferenceItemD();
     }
 
     private void i() {
@@ -140,7 +140,7 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.c {
         this.h = com.tsf.shell.manager.b.ConfigManager.u();
         this.e.c(com.tsf.shell.manager.b.ConfigManager.ag());
         this.f.c(com.tsf.shell.manager.b.ConfigManager.ah());
-        i();
+        PreferenceItemD();
         if (com.tsf.shell.manager.b.ConfigManager.ag()) {
             this.c.h();
         } else {

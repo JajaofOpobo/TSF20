@@ -29,7 +29,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
 
     protected abstract void k();
 
-    public b(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
+    public WidgetDrawerShortcutItemBase(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar) {
         super(launcherShortcut3DInfo);
         this.b = true;
         this.p = true;
@@ -101,7 +101,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         if (!this.r) {
             if (this.k.textures().size() == 0 || this.k.textures().get(0).textureElement.id == 0) {
                 this.r = true;
-                q();
+                WidgetDrawerShortcutItemBase();
             } else {
                 this.r = true;
             }
@@ -109,7 +109,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     }
 
     public void aB() {
-        k();
+        WidgetDrawerShortcutItemBase();
     }
 
     public boolean aC() {
@@ -122,7 +122,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
 
     private void q() {
         if (!t()) {
-            k();
+            WidgetDrawerShortcutItemBase();
         }
     }
 

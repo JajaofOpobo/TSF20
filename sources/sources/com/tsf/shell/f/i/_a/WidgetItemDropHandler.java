@@ -7,7 +7,7 @@ import com.tsf.shell.manager.action.GestureHandler;
 public class WidgetItemDropHandler extends WidgetItemTouchHandler {
     private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase g;
 
-    public d(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar) {
+    public WidgetItemDropHandler(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar) {
         super(bVar);
         this.g = bVar;
     }

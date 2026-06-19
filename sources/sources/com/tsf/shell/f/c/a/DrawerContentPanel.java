@@ -66,7 +66,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     private com.censivn.C3DEngine.b.g.d am;
     private com.censivn.C3DEngine.b.g.d an;
     public com.tsf.shell.f.c.a.a.DrawerAnimConfig n;
-    public class Runnable 
+    /* JADX WARN: decompile error - Runnable type artifact */
+    private Runnable mRefreshRunnable;
     private j s;
     private j t;
     private float w;
@@ -113,7 +114,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         return string;
     }
 
-    public f(boolean z) {
+    public DrawerContentPanel(boolean z) {
         boolean z2 = true;
         this.Y = false;
         this.Z = false;
@@ -148,13 +149,13 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         if (this.Z) {
             a(true);
         } else {
-            d();
+            a();
         }
     }
 
     public void d() {
         this.Z = true;
-        z();
+        a();
     }
 
     public void a(boolean z) {
@@ -553,7 +554,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             }
         });
         if (this.Z) {
-            d();
+            a();
         } else {
             a(false);
         }
@@ -669,7 +670,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.t.invalidate();
         this.u = this.t.position().x;
         this.v = this.t.position().y;
-        v();
+        a();
     }
 
     public void a(float f2, float f3) {
@@ -703,7 +704,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             }
         }
         if (!this.af) {
-            x();
+            a();
             return;
         }
         float f2 = this.O;
@@ -875,7 +876,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         if (this.Z) {
             w.a();
             this.af = false;
-            x();
+            a();
             G();
         }
     }
@@ -884,7 +885,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         if (this.Z) {
             w.a();
             this.af = true;
-            v();
+            a();
             G();
         }
     }

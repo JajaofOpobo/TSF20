@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.k;
 public class WorkspaceRowItem extends k implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
     private boolean a;
 
-    public e(float f, float f2, boolean z) {
+    public WorkspaceRowItem(float f, float f2, boolean z) {
         super(f, f2, z);
         this.a = true;
     }

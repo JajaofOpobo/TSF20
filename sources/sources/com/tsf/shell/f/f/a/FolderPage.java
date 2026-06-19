@@ -1048,7 +1048,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void aK() {
-        synchronized (this.at) {
+        FolderManager (this.at) {
             Iterator<Runnable> it = this.as.iterator();
             while (it.hasNext()) {
                 it.next().run();

@@ -57,7 +57,7 @@ public class ConfigManager {
         aH();
         aG();
         aa();
-        s();
+        ConfigManager();
         af();
         ad();
         X();

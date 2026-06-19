@@ -75,7 +75,7 @@ public class ShortcutItem extends PageItem {
     @Override // com.tsf.shell.f.i.PageItem
     public void aa() {
         super.aa();
-        k();
+        ShortcutItem();
     }
 
     private void k() {

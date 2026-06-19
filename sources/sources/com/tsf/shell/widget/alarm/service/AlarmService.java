@@ -51,7 +51,7 @@ public class AlarmService extends Service {
     @Override // android.app.Service
     public void onCreate() {
         super.onCreate();
-        a();
+        AlarmService();
     }
 
     @Override // android.app.Service
@@ -116,7 +116,7 @@ public class AlarmService extends Service {
     }
 
     @Override // android.app.Service
-    public class IBinder 
+    public IBinder c() {
         return this.c;
     }
 

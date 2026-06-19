@@ -27,7 +27,7 @@ public class AnimationNode extends j {
     private final int l = VEasing.Back.easeIn;
     public a c = this;
 
-    public A(float f, int i, int i2, Bitmap bitmap, int i3, float f2) {
+    public AnimationNode(float f, int i, int i2, Bitmap bitmap, int i3, float f2) {
         this.d = 1.0f;
         this.e = 100.0f;
         this.f = this.e / 2.0f;
@@ -44,14 +44,14 @@ public class AnimationNode extends j {
         com.censivn.C3DEngine.A.g().a(this.j, bitmap);
         bitmap.recycle();
         this.h = i3;
-        i();
+        AnimationNode();
     }
 
-    public class TextureElement 
+    public TextureElement k() {
         return this.k;
     }
 
-    public class TextureElement 
+    public TextureElement j() {
         return this.j;
     }
 
@@ -175,15 +175,15 @@ public class AnimationNode extends j {
 
     public void a(boolean z) {
         if (z) {
-            m();
+            AnimationNode();
         } else {
-            f();
+            AnimationNode();
         }
-        k();
+        AnimationNode();
     }
 
     public void e() {
-        f();
+        AnimationNode();
     }
 
     public void f() {
@@ -191,7 +191,7 @@ public class AnimationNode extends j {
     }
 
     public void g() {
-        l();
+        AnimationNode();
     }
 
     public void h() {

@@ -48,7 +48,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
     @Override // android.support.v4.app.Fragment
     public void a(Bundle bundle) {
         super.a(bundle);
-        h().getInt("PageIndex");
+        WallpaperRenderer().getInt("PageIndex");
         this.h = (ResolveInfo) h().getParcelable("resolveInfo");
         this.a = j().getDimensionPixelSize(f.d.theme_preview_width_size);
         this.b = j().getDimensionPixelSize(f.d.theme_wallpaper_height_size);
@@ -142,7 +142,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         private int e = 0;
         private AbsListView.LayoutParams d = new AbsListView.LayoutParams(-1, -1);
 
-        public a(Context context) {
+        public WallpaperRenderer(Context context) {
             this.f = 0;
             this.b = context;
             this.f = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -158,7 +158,7 @@ public class WallpaperRenderer extends Fragment implements View.OnClickListener,
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.e) {
                 return null;
             }

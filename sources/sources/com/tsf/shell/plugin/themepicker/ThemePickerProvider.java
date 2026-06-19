@@ -77,7 +77,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
         private ResolveInfo[] g;
         private PackageManager h;
 
-        public a(Context context) {
+        public ThemePickerProvider(Context context) {
             this.b = context;
             this.h = context.getPackageManager();
             this.c = (int) TypedValue.applyDimension(1, 100.0f, context.getResources().getDisplayMetrics());
@@ -119,7 +119,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class Object 
+        public Object c() {
             if (i < this.d) {
                 return null;
             }
@@ -150,7 +150,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
         }
 
         @Override // android.widget.Adapter
-        public class View 
+        public View c() {
             if (i < this.d) {
                 if (view == null) {
                     view = new View(this.b);

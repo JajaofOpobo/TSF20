@@ -18,11 +18,11 @@ public class TextureElementH extends VObject3dContainer {
     private float g;
     private a h;
 
-    public h(float f, float f2) {
+    public TextureElementH(float f, float f2) {
         this.f = f;
         this.g = f2;
         setAnimationObjectState(false);
-        c();
+        TextureElementH();
         calAABB();
     }
 

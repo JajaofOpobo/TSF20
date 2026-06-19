@@ -89,16 +89,16 @@ public class MeshRenderer extends j {
         }
     }
 
-    public b(com.tsf.shell.f.e.c.AnimationNode aVar) {
+    public MeshRenderer(com.tsf.shell.f.e.c.AnimationNode aVar) {
         this.x = aVar;
         this.o = 40.0f * this.x.d;
-        c();
+        a();
         b(1.0f);
         this.d.put(this.n);
         this.d.position(0);
         this.e.put(this.m);
         this.e.position(0);
-        e();
+        a();
     }
 
     private void a() {
@@ -177,7 +177,7 @@ public class MeshRenderer extends j {
 
     private void c() {
         a();
-        b();
+        a();
         this.c = new a[this.h * this.h];
         this.b = new float[this.h * this.h * 3];
         this.m = new short[this.l];
@@ -374,7 +374,7 @@ public class MeshRenderer extends j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        f();
+        a();
         this.a.put(this.b);
         this.a.position(0);
     }
@@ -416,7 +416,7 @@ public class MeshRenderer extends j {
             }
         };
         this.w = 2;
-        d();
+        a();
         float f4 = this.x.position().x;
         float f5 = f4 - f;
         float f6 = this.x.position().y - f2;
@@ -559,7 +559,7 @@ public class MeshRenderer extends j {
             }
         }
         this.w = 2;
-        d();
+        a();
         float f4 = this.x.position().x;
         float f5 = f4 - f;
         float f6 = this.x.position().y - f2;
@@ -973,7 +973,7 @@ public class MeshRenderer extends j {
     public void drawElement() {
         if (visible()) {
             if (this.w == 2) {
-                e();
+                a();
             }
             ShaderManager.CURRENT_SHADER.glMVPMatrix();
             ShaderManager.CURRENT_SHADER.glTexCoordPointer(2, 5126, false, 0, this.d);

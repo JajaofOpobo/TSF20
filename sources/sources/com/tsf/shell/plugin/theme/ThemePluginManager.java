@@ -11,7 +11,7 @@ public class ThemePluginManager {
 
     /* JADX INFO: renamed from: com.tsf.shell.plugin.theme.ThemePluginManager$b, reason: collision with other inner class name */
     private class DialogInterfaceOnClickListenerC0154b implements DialogInterface.OnClickListener {
-        public DialogInterfaceOnClickListenerC0154b() {
+        public ThemePluginManager() {
         }
 
         @Override // android.content.DialogInterface.OnClickListener
@@ -20,7 +20,7 @@ public class ThemePluginManager {
         }
     }
 
-    public b(ThemeElementPicker themeElementPicker) {
+    public ThemePluginManager(ThemeElementPicker themeElementPicker) {
         this.b = themeElementPicker;
     }
 
@@ -34,7 +34,7 @@ public class ThemePluginManager {
     }
 
     private class a implements DialogInterface.OnCancelListener {
-        public a() {
+        public ThemePluginManager() {
         }
 
         @Override // android.content.DialogInterface.OnCancelListener

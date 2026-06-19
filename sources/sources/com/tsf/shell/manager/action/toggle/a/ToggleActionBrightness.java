@@ -13,7 +13,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
     puToggleActionBrightnesslic b(int i) {
         super(i);
         b(2);
-        d();
+        ToggleActionBrightness();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction

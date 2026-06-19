@@ -21,7 +21,7 @@ public class WorkspaceDockPanel extends j {
     private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.A.c);
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase i = a(12, com.tsf.shell.manager.p.ThemePreferenceProvider.l);
 
-    public c(b bVar) {
+    public WorkspaceDockPanel(b bVar) {
         this.a = bVar;
         this.f = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
         this.f.addChild(this.i);

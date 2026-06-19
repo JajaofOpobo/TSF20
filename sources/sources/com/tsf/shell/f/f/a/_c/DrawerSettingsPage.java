@@ -17,7 +17,7 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
     private com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask k;
 
     public static class a {
-        public class String 
+        public String b;
         public int c;
 
         public a(int i, String str) {

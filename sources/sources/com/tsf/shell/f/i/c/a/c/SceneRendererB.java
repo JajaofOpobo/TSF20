@@ -6,7 +6,7 @@ public class SceneRendererB {
     private float b;
     private float c;
 
-    public b(com.censivn.C3DEngine.b.f.a.b bVar, float f, float f2) {
+    public SceneRendererB(com.censivn.C3DEngine.b.f.a.b bVar, float f, float f2) {
         this.a = bVar;
         this.b = f;
         this.c = f2;

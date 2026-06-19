@@ -12,7 +12,7 @@ public class ScrollStateAggregator {
     private n a;
     private b b;
 
-    public A(n nVar) {
+    public ScrollStateAggregator(n nVar) {
         this.a = nVar;
         a(new com.tsf.shell.f.f.d.a.ScrollBounceAnimation());
     }
@@ -50,7 +50,7 @@ public class ScrollStateAggregator {
     }
 
     public void a(n nVar, int i, ArrayList<g> arrayList, g gVar, boolean z) {
-        a();
+        ScrollStateAggregator();
         this.b.a(i, arrayList, gVar, z);
     }
 

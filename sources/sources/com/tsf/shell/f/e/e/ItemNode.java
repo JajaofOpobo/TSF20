@@ -11,7 +11,7 @@ public class ItemNode extends j {
     private boolean d = false;
     private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 0);
 
-    public a() {
+    public ItemNode() {
         this.a.setDefaultColor(new Color4(255, 255, 255, 100));
         this.a.alpha(0.0f);
         this.b = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 1);
@@ -99,7 +99,7 @@ public class ItemNode extends j {
     public void c() {
         if (this.d) {
             this.d = false;
-            e();
+            ItemNode();
             com.tsf.shell.manager.app.StateManager.c(this.a);
             com.tsf.shell.manager.app.StateManager.c(this.b);
         }

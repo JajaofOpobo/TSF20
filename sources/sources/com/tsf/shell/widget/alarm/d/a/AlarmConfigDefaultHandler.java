@@ -10,7 +10,7 @@ public class AlarmConfigDefaultHandler extends DefaultHandler {
     private StringBuilder a = new StringBuilder();
     private com.tsf.shell.widget.alarm.d.AlarmConfigDefault b;
 
-    public b(com.tsf.shell.widget.alarm.d.AlarmConfigDefault cVar) {
+    public AlarmConfigDefaultHandler(com.tsf.shell.widget.alarm.d.AlarmConfigDefault cVar) {
         this.b = cVar;
     }
 

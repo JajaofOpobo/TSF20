@@ -134,7 +134,7 @@ public class LauncherAppInfo {
     }
 
     public void e() {
-        f();
+        a();
         HashMap map = new HashMap();
         ShellModel.a((HashMap<Integer, ItemInfo>) map);
         Iterator it = map.keySet().iterator();
@@ -181,7 +181,7 @@ public class LauncherAppInfo {
     public void a(int i) {
         if (this.i != i) {
             this.i = i;
-            e();
+            a();
         }
     }
 

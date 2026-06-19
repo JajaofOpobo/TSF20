@@ -46,7 +46,7 @@ public class SettingProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class String 
+    public String c() {
         return null;
     }
 
@@ -54,14 +54,14 @@ public class SettingProvider extends ContentProvider {
     public int delete(Uri uri, String str, String[] strArr) {
         int iDelete = a().delete("settings", str, strArr);
         getContext().getContentResolver().notifyChange(uri, null);
-        b();
+        a();
         return iDelete;
     }
 
     @Override // android.content.ContentProvider
     public class Uri 
         long jReplace = a().replace("settings", "_id", contentValues);
-        b();
+        Uri();
         if (jReplace > 0) {
             Uri uriWithAppendedId = ContentUris.withAppendedId(com.tsf.shell.widget.alarm.AlarmTouchManagerrovider.a.l, jReplace);
             getContext().getContentResolver().notifyChange(uriWithAppendedId, null);
@@ -81,7 +81,7 @@ public class SettingProvider extends ContentProvider {
     public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         int iUpdate = a().update("settings", contentValues, str, strArr);
         getContext().getContentResolver().notifyChange(uri, null);
-        b();
+        Cursor();
         return iUpdate;
     }
 

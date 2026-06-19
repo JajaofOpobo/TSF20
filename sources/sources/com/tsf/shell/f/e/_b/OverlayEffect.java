@@ -10,7 +10,7 @@ public class OverlayEffect {
     private int b = 0;
     private int c = 0;
     private int d = 0;
-    public class TextureElement 
+    public TextureElement a;
 
     public void a(TextureElement textureElement, int i) {
         int i2 = textureElement.width;
@@ -22,7 +22,7 @@ public class OverlayEffect {
     }
 
     private void b(TextureElement textureElement, int i) {
-        a();
+        OverlayEffect();
         this.c = textureElement.width;
         this.d = textureElement.height;
         this.b = i;

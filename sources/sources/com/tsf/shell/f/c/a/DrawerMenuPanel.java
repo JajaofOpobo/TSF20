@@ -47,17 +47,17 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     private boolean G = false;
     private boolean I = false;
     private TextureElement t = new TextureElement(0, false);
-    private B h = this;
+    private DrawerMenuPanel h = this;
     private com.tsf.shell.f.i.MultiSelectController p = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.c.a.b.1
         @Override // com.tsf.shell.f.i.MultiSelectController
         public void a(com.tsf.shell.f.i.PageItem bVar) {
-            bVar.f(b.this.h);
+            bVar.f(DrawerMenuPanel.this.h);
         }
     };
     private float q = 12.0f * com.censivn.C3DEngine.b.b.A.b;
     private i o = new k(128.0f, 128.0f);
 
-    public B(f fVar) {
+    public DrawerMenuPanel(f fVar) {
         this.r = fVar;
         this.o.visible(false);
         this.l = new ArrayList<>();
@@ -206,17 +206,17 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
             this.u = null;
             a((com.tsf.shell.f.i.PageItem) null);
             if (this.r.r()) {
-                g();
+                DrawerMenuPanel();
             } else {
-                x();
+                DrawerMenuPanel();
             }
             this.r.n();
         }
     }
 
     public void e() {
-        y();
-        h();
+        DrawerMenuPanel();
+        DrawerMenuPanel();
     }
 
     @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.f.EditModeNode
@@ -236,7 +236,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
 
     public void f() {
         int size;
-        z();
+        DrawerMenuPanel();
         if (children().size() < 6) {
             size = 150;
         } else {
@@ -268,8 +268,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
 
     public void a(boolean z) {
         int size;
-        z();
-        h();
+        DrawerMenuPanel();
+        DrawerMenuPanel();
         if (children().size() < 6) {
             size = 150;
         } else {
@@ -356,7 +356,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     }
 
     public void g() {
-        h();
+        DrawerMenuPanel();
         this.n = false;
         setAnimationObjectState(true);
         mouseEnabled(false);
@@ -397,22 +397,22 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     public void c(float f) {
         if (this.k != f) {
             this.k = f;
-            y();
-            g();
+            DrawerMenuPanel();
+            DrawerMenuPanel();
         }
     }
 
     public void d(float f) {
         this.k = f;
-        y();
-        g();
+        DrawerMenuPanel();
+        DrawerMenuPanel();
     }
 
     public void e(float f) {
         if (this.k != f) {
             this.k = f;
-            y();
-            h();
+            DrawerMenuPanel();
+            DrawerMenuPanel();
         }
     }
 
@@ -489,14 +489,14 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     public void addChild(i iVar) {
         this.l.add(w());
         super.addChild(iVar);
-        g();
+        DrawerMenuPanel();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j
     public void addChildAt(i iVar, int i) {
         this.l.add(w());
         super.addChildAt(iVar, i);
-        g();
+        DrawerMenuPanel();
     }
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
@@ -504,8 +504,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             a(this.l.remove(0));
-            g();
-            l();
+            DrawerMenuPanel();
+            DrawerMenuPanel();
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 ((com.tsf.shell.f.i.PageItem) iVar).c = false;
                 ((com.tsf.shell.f.i.PageItem) iVar).B();
@@ -523,7 +523,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     public void c(float f, float f2) {
         this.i = f;
         this.j = f2;
-        g();
+        DrawerMenuPanel();
     }
 
     private int a(i iVar, Number3d number3d) {
@@ -622,7 +622,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
             this.F = size;
             super.removeChild(this.o);
             super.addChildAt(this.o, size);
-            g();
+            DrawerMenuPanel();
         }
     }
 
@@ -684,8 +684,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                     cVar.ay();
                 }
             }
-            l();
-            g();
+            DrawerMenuPanel();
+            DrawerMenuPanel();
         }
     }
 

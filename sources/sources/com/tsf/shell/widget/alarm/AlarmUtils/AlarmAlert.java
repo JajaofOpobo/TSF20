@@ -42,7 +42,7 @@ public class AlarmAlert extends Activity {
         this.b = Integer.parseInt("2");
         requestWindowFeature(1);
         getWindow().addFlags(6815872);
-        b();
+        AlarmAlert();
         registerReceiver(this.c, new IntentFilter("com.tsf.shell.widget.alarm.AlarmStatenshell.alarm_killed"));
     }
 
@@ -72,7 +72,7 @@ public class AlarmAlert extends Activity {
                 AlarmAlert.this.a(false);
             }
         });
-        a();
+        AlarmAlert();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -118,7 +118,7 @@ public class AlarmAlert extends Activity {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(boolean z) {
         if (!z) {
-            d().cancel(this.a.a);
+            AlarmAlert().cancel(this.a.a);
             stopService(new Intent("com.tsf.shell.widget.alarm.AlarmStatenshell.ALARM_ALERT"));
         }
         finish();
@@ -129,7 +129,7 @@ public class AlarmAlert extends Activity {
         super.onNewIntent(intent);
         i.d("AlarmAlert.OnNewIntent()");
         this.a = (Alarm) intent.getParcelableExtra("intent.extra.alarm");
-        a();
+        AlarmAlert();
     }
 
     @Override // android.app.Activity
@@ -157,7 +157,7 @@ public class AlarmAlert extends Activity {
                 }
                 switch (this.b) {
                     case 1:
-                        c();
+                        AlarmAlert();
                         return true;
                     case 2:
                         a(false);

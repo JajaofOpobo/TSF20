@@ -10,7 +10,7 @@ public class FolderTransitionA extends FolderPageTransitionBase {
     private boolean b;
     private boolean c;
 
-    public a(int i, boolean z, boolean z2, boolean z3) {
+    public FolderTransitionA(int i, boolean z, boolean z2, boolean z3) {
         super(i, z3);
         this.b = z;
         this.c = z2;

@@ -28,7 +28,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
 
     public DragSortContainer(b bVar) {
         this.e = bVar;
-        e();
+        InterfaceC0113a();
     }
 
     @Override // com.tsf.shell.f.e.f.EditModeNode

@@ -11,7 +11,7 @@ public class WallpaperTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean a;
     private n.C b;
 
-    public a(j jVar) {
+    public WallpaperTouchHandler(j jVar) {
         super(jVar);
         this.a = true;
     }

@@ -292,7 +292,7 @@ public class e {
         private Uri c;
         private g d;
 
-        public RunnableC0062e(Context context, Uri uri, JSONObject jSONObject, g gVar) {
+        public e(Context context, Uri uri, JSONObject jSONObject, g gVar) {
             this.a = context;
             this.c = uri;
             this.b = jSONObject;
@@ -329,7 +329,7 @@ public class e {
         private Intent b;
         private g c;
 
-        public f(h hVar, Intent intent, g gVar) {
+        public e(h hVar, Intent intent, g gVar) {
             this.a = hVar;
             this.b = intent;
             this.c = gVar;
@@ -386,7 +386,7 @@ public class e {
         com.tsf.extend.base.c.e a;
         Intent b;
 
-        public h(Intent intent) {
+        public e(Intent intent) {
             this.b = null;
             this.b = intent;
         }

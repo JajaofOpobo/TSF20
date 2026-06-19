@@ -17,14 +17,14 @@ public class TextureElementD extends VObject3dContainer {
     private static float n;
     private static float o;
     public c a;
-    public class VRectangle 
+    public VRectangle a;
     public h c;
-    public class VButton 
-    public class VRectangle 
-    public class VObject3dContainer 
-    public class VObject3dContainer 
-    public class VRectangle 
-    public class VRectangle 
+    public VButton a;
+    public VRectangle a;
+    public VObject3dContainer a;
+    public VObject3dContainer a;
+    public VRectangle a;
+    public VRectangle a;
     private float t;
     private float x;
     private float y;
@@ -117,7 +117,7 @@ public class TextureElementD extends VObject3dContainer {
         this.a.alpha(0);
     }
 
-    public d(VObject3dContainer vObject3dContainer) {
+    public TextureElementD(VObject3dContainer vObject3dContainer) {
         j = com.tsf.shell.f.i.c.a.a.TextureElementA.a / 1.8f;
         this.t = j / com.tsf.shell.f.i.c.a.a.TextureElementA.b;
         n = 545.0f * j;

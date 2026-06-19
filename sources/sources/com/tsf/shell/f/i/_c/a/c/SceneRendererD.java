@@ -9,7 +9,7 @@ public class SceneRendererD extends k {
     private float e;
     private float f;
 
-    public d(float f, float f2) {
+    public SceneRendererD(float f, float f2) {
         super(f, f2);
         this.a = 0.0f;
         this.d = 0.0f;

@@ -9,10 +9,10 @@ import com.censivn.C3DEngine.api.shell.VInformation;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CubeClockFace extends VWidgetContainer {
-    public class Context 
-    public class VTextureManager 
-    public class VObjectManager 
-    public class VMessageQueueManager 
+    public Context a;
+    public VTextureManager a;
+    public VObjectManager a;
+    public VMessageQueueManager a;
     public n e;
     public b f;
     public p g;
@@ -27,7 +27,7 @@ public class CubeClockFace extends VWidgetContainer {
     public float p;
     public com.tsf.shell.widget.cubeclock.CubeClockWidgetFacerovider.a q;
 
-    public c(Context context, int i) {
+    public CubeClockFace(Context context, int i) {
         super(i);
         this.n = 1.3333334f;
         this.o = VInformation.Scale();

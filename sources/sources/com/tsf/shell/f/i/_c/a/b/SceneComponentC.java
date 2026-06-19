@@ -24,14 +24,14 @@ public class SceneComponentC extends com.tsf.shell.f.i._c.a.FolderSceneNodesyncT
     private h o;
     private h p;
 
-    public c(VTextureManager vTextureManager, Context context) {
+    public SceneComponentC(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.a = -13521439;
         this.b = -13421773;
         this.n = 0L;
         c = context;
         d = vTextureManager;
-        e();
+        SceneComponentC();
     }
 
     private void e() {
@@ -91,7 +91,7 @@ public class SceneComponentC extends com.tsf.shell.f.i._c.a.FolderSceneNodesyncT
     class a extends j.a {
         private e h;
 
-        public a(e eVar) {
+        public SceneComponentC(e eVar) {
             super();
             this.h = eVar;
         }
@@ -99,8 +99,8 @@ public class SceneComponentC extends com.tsf.shell.f.i._c.a.FolderSceneNodesyncT
         /* JADX INFO: Access modifiers changed from: protected */
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i._c.a.FolderSceneNodesyncTextureNode.a, com.tsf.shell.f.i._c.a.c
-        public class Bitmap 
-            return this.h.a();
+        public Bitmap c() {
+                        return this.h.a();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

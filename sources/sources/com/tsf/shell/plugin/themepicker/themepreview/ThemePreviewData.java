@@ -13,7 +13,7 @@ import com.tsf.shell.plugin.themepicker.ThemePickerResources;
 public class ThemePreviewData extends ThemePreviewConfig {
     private String ai;
 
-    public a() {
+    public ThemePreviewData() {
         a(1, 0);
     }
 

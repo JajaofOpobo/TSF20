@@ -6,7 +6,7 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceItemA extends i {
-    public A() {
+    public PreferenceItemA() {
         a(PreferenceItemB.i.text_preferences);
         j jVar = new j();
         jVar.h(PreferenceItemB.i.mn_title_db_export);

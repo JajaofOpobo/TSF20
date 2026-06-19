@@ -46,7 +46,7 @@ public class AlarmServiceBinder implements ServiceConnection {
         this.f = interfaceC0180c;
     }
 
-    public c(Context context) {
+    public AlarmServiceBinder(Context context) {
         this.e = context;
         b = this;
         this.g = new IAlarmCallback();
@@ -79,7 +79,7 @@ public class AlarmServiceBinder implements ServiceConnection {
                 }
             } else {
                 this.c.add(aVar);
-                a();
+                b();
             }
         }
     }

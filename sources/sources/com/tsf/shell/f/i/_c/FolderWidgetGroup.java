@@ -25,7 +25,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     private ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase> u;
     private Runnable v;
 
-    public c() {
+    public FolderWidgetGroup() {
         b(true);
         this.u = new ArrayList<>();
     }
@@ -38,7 +38,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     @Override // com.tsf.shell.f.i._c.WidgetGroupBase
     public void d() {
         this.s = false;
-        q();
+        FolderWidgetGroup();
     }
 
     @Override // com.tsf.shell.f.i._c.WidgetGroupBase, com.tsf.shell.f.i._c.WidgetLabelProvider
@@ -95,7 +95,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         if (this.k == null) {
             this.k = r();
         } else {
-            p();
+            FolderWidgetGroup();
         }
         return this.k;
     }
@@ -149,7 +149,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     }
 
     private j r() {
-        p();
+        FolderWidgetGroup();
         this.k = new j();
         this.l = new com.tsf.shell.f.i._b.d.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
@@ -181,7 +181,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     class a extends com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase {
         public j a;
 
-        public a() {
+        public FolderWidgetGroup() {
             super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
             this.a = new j();
             this.k.visible(true);

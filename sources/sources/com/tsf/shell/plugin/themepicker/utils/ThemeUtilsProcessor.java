@@ -97,7 +97,7 @@ public abstract class ThemeUtilsProcessor {
         private Object e;
         private final WeakReference<ImageView> f;
 
-        public b(Object obj, ImageView imageView) {
+        public ThemeUtilsProcessor(Object obj, ImageView imageView) {
             this.e = obj;
             this.f = new WeakReference<>(imageView);
         }
@@ -172,7 +172,7 @@ public abstract class ThemeUtilsProcessor {
     private static class a extends BitmapDrawable {
         private final WeakReference<b> a;
 
-        public a(Resources resources, Bitmap bitmap, b bVar) {
+        public ThemeUtilsProcessor(Resources resources, Bitmap bitmap, b bVar) {
             super(resources, bitmap);
             this.a = new WeakReference<>(bVar);
         }
@@ -213,7 +213,7 @@ public abstract class ThemeUtilsProcessor {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.tsf.shell.plugin.themepicker.utils.PackageManagerHelper
         /* JADX INFO: renamed from: d, reason: merged with bridge method [inline-methods] */
-        public class Void 
+        public Void c() {
             switch (((Integer) objArr[0]).intValue()) {
                 case 0:
                     f.this.b();

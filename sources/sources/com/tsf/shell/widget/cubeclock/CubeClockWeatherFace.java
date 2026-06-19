@@ -16,11 +16,11 @@ public class CubeClockWeatherFace extends CubeClockConfigBase {
         return super.a();
     }
 
-    public n(c cVar) {
+    public CubeClockWeatherFace(c cVar) {
         super(cVar);
         this.e = 65.0f;
         this.f = 130.0f;
-        b();
+        CubeClockWeatherFace();
     }
 
     private void b() {

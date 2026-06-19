@@ -1042,7 +1042,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         class b implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
             private final com.tsf.extend.base.d.a.b b;
 
-            public b(com.tsf.extend.base.d.a.b bVar) {
+            public e(com.tsf.extend.base.d.a.b bVar) {
                 this.b = bVar;
             }
 

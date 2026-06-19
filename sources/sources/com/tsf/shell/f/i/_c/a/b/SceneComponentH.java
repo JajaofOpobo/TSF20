@@ -30,7 +30,7 @@ public class SceneComponentH extends VObject3dContainer {
     private int u;
     private Date v = new Date();
 
-    public h(float f) {
+    public SceneComponentH(float f) {
         this.l = false;
         this.l = e();
         this.n = new VRectangle(600.0f / f, 256.0f / f);
@@ -58,7 +58,7 @@ public class SceneComponentH extends VObject3dContainer {
         this.k = new j();
         this.m = new n();
         this.e.a(this.m);
-        b(b());
+        b(SceneComponentH());
     }
 
     public void a(int i) {
@@ -91,10 +91,10 @@ public class SceneComponentH extends VObject3dContainer {
         this.a = i;
         switch (this.a) {
             case 0:
-                c();
+                SceneComponentH();
                 break;
             case 1:
-                d();
+                SceneComponentH();
                 break;
         }
         a(System.currentTimeMillis(), true);

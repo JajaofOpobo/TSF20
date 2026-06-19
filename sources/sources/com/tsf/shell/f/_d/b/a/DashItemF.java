@@ -9,7 +9,7 @@ public class DashItemF extends DashItemD {
     private a c;
     private Number3d d;
 
-    public f(int i, int i2, boolean z) {
+    public DashItemF(int i, int i2, boolean z) {
         super(i, z);
         this.d = new Number3d();
         this.c = new DashItemA(i2, com.censivn.C3DEngine.b.b.A.a(26.0f), com.censivn.C3DEngine.b.b.A.a(60.0f), 250.0f);

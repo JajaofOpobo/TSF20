@@ -17,7 +17,7 @@ public class CubeClockContainer extends VObject3dContainer {
     private int f = 0;
     int b = 0;
 
-    public f(c cVar) {
+    public CubeClockContainer(c cVar) {
         this.g = cVar;
         this.g.c.addObject(this);
         this.a = new CubeClockPanel(this.g);
@@ -103,7 +103,7 @@ public class CubeClockContainer extends VObject3dContainer {
         this.h = eVar;
         this.h.a(this);
         this.a.d = gVar.a.id;
-        b();
+        CubeClockContainer();
     }
 
     public void a(int i, int i2) {
@@ -112,7 +112,7 @@ public class CubeClockContainer extends VObject3dContainer {
                 int i3 = (i2 <= i ? -2 : 2) + i;
                 this.a.a(a(i3), this.h.a(b(i3)));
             } else {
-                b();
+                CubeClockContainer();
             }
         }
     }

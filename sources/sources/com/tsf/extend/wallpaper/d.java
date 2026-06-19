@@ -36,7 +36,7 @@ public class d {
             return a;
         }
 
-        public A(Context context) {
+        public d(Context context) {
             super(context, "c.db", (SQLiteDatabase.CursorFactory) null, 22);
         }
 

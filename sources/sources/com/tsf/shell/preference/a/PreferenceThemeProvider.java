@@ -26,7 +26,7 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
     private float i = 0.4f;
     private com.tsf.shell.manager.o.ButtonMetrics k = new com.tsf.shell.manager.o.ButtonMetrics(1.15f, 1.15f);
 
-    public A() {
+    public PreferenceThemeProvider() {
         a(1);
         a(true);
         com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
@@ -55,7 +55,7 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
     @Override // com.censivn.C3DEngine.b.e.f
     public void f() {
         this.j = com.censivn.C3DEngine.b.b.A.d;
-        h();
+        PreferenceThemeProvider();
     }
 
     private void e() {
@@ -136,12 +136,12 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
-        m();
+        PreferenceThemeProvider();
     }
 
     @Override // com.censivn.C3DEngine.b.b.c
     public void c(int i) {
-        e();
+        PreferenceThemeProvider();
         super.c(i);
     }
 }

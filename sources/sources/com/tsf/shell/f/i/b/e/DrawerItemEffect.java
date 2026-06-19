@@ -4,7 +4,7 @@ package com.tsf.shell.f.i.b.e;
 public class DrawerItemEffect extends DrawerItemVisual {
     private com.tsf.shell.manager.app.LauncherAppInfo a;
 
-    public e() {
+    public DrawerItemEffect() {
         this.k.visible(true);
     }
 

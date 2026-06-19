@@ -52,7 +52,7 @@ public class ThemeIconDesignerProvider extends ContentProvider {
     }
 
     @Override // android.content.ContentProvider
-    public class String 
+    public String c() {
         return null;
     }
 

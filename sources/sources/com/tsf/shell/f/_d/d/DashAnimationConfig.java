@@ -9,7 +9,7 @@ public class DashAnimationConfig {
     public static float a = 30.0f;
     private boolean d = false;
     private Vector2 c = new Vector2(0.0f, 0.0f);
-    public class World 
+    public World b;
 
     public boolean a() {
         return this.d;

@@ -10,7 +10,7 @@ public class WidgetPanelOrchestrator extends com.tsf.shell.manager.r.b.b.SlidePa
 
     public WidgetPanelOrchestrator(com.tsf.shell.f.e._g.MenuOverlay dVar) {
         super(dVar);
-        g();
+        WidgetPanelOrchestrator();
     }
 
     private void g() {

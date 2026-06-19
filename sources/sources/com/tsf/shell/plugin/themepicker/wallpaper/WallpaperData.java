@@ -13,7 +13,7 @@ public class WallpaperData extends e {
     private Context f;
     private Resources g;
 
-    public a(ResolveInfo resolveInfo, Context context, int i, int i2) {
+    public WallpaperData(ResolveInfo resolveInfo, Context context, int i, int i2) {
         super(context, i, i2);
         a(resolveInfo, context);
     }

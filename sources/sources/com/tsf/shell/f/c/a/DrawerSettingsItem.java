@@ -10,7 +10,7 @@ public class DrawerSettingsItem extends k {
     private float f;
     private float g;
 
-    public g(int i, int i2, h hVar) {
+    public DrawerSettingsItem(int i, int i2, h hVar) {
         super(0.0f, 0.0f, 3, 1, false);
         a(i, i2, hVar);
     }
@@ -19,7 +19,7 @@ public class DrawerSettingsItem extends k {
         this.d = i * com.censivn.C3DEngine.b.b.A.b;
         this.e = i2 * com.censivn.C3DEngine.b.b.A.b;
         a(hVar, false);
-        d();
+        DrawerSettingsItem();
     }
 
     @Override // com.censivn.C3DEngine.b.f.i
@@ -60,7 +60,7 @@ public class DrawerSettingsItem extends k {
 
     public void c(float f) {
         this.a = f;
-        d();
+        DrawerSettingsItem();
     }
 
     private void d() {

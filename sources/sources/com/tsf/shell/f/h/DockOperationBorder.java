@@ -26,7 +26,7 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.a {
     private com.censivn.C3DEngine.b.g._b.b p;
     private k q;
 
-    public e() {
+    public DockOperationBorder() {
         super(2, 32, 32);
         this.m = 0.0f;
         this.n = 0.0f;
@@ -115,9 +115,9 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.a {
         com.censivn.C3DEngine.b.g.c.a(this.p);
         com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
         if (f == 0.0f) {
-            d();
+            e();
         } else {
-            c();
+            e();
         }
     }
 

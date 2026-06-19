@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerAnimParamCenter extends DrawerAnimParamBase {
-    public e() {
+    public DrawerAnimParamCenter() {
         this.c = 0;
     }
 

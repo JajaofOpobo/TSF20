@@ -5,7 +5,7 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SlopeInsideTransition extends 
-    public o(int i, boolean z) {
+    public SlopeInsideTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_slope_inside, z);
     }
 

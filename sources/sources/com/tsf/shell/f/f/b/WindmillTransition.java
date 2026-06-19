@@ -6,7 +6,7 @@ import com.tsf.b;
 public class WindmillTransition extends 
     final float a;
 
-    public t(int i, boolean z) {
+    public WindmillTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_windmill, z);
         this.a = 32.0f;
     }

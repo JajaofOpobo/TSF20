@@ -14,8 +14,8 @@ public class AlarmSettingAdapter extends BaseAdapter {
     ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> a = new ArrayList<>();
     private boolean b = false;
 
-    public a() {
-        a();
+    public AlarmSettingAdapter() {
+        AlarmSettingAdapter();
     }
 
     public void a(ArrayList<com.tsf.shell.widget.alarm.d.AlarmConfigEmpty> arrayList) {
@@ -41,7 +41,7 @@ public class AlarmSettingAdapter extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class Object 
+    public Object c() {
         return null;
     }
 
@@ -51,7 +51,7 @@ public class AlarmSettingAdapter extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class View 
+    public View c() {
         if (view == null) {
             view = LayoutInflater.from(SettingActivity.a).inflate(m.d.list_item_icon, (ViewGroup) null);
         }

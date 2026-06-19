@@ -22,7 +22,7 @@ public class ClothTransition extends
     private com.censivn.C3DEngine.b.g._b.b g;
     private boolean h;
 
-    public A(int i, boolean z) {
+    public ClothTransition(int i, boolean z) {
         int i2;
         int i3;
         super(i, CrossfadeTransition.d.desktop_transition_cloth, z);
@@ -43,7 +43,7 @@ public class ClothTransition extends
         }
         CurveTransition.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.f);
         if (aVarA.a() && aVarA.c == 110) {
-            m();
+            ClothTransition();
         }
     }
 
@@ -113,7 +113,7 @@ public class ClothTransition extends
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void b(float f, float f2) {
-        o();
+        ClothTransition();
         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
         if (this.e != null && this.e != gVarN && Math.round(Math.abs(this.e.g - gVarN.g)) % 2 != 0) {
             com.tsf.shell.f.f.WorkspacePage gVar = this.c;
@@ -127,17 +127,17 @@ public class ClothTransition extends
         }
         if (f > 0.0f) {
             if (f < 0.5f) {
-                q();
+                ClothTransition();
                 return;
             } else {
-                p();
+                ClothTransition();
                 return;
             }
         }
         if (f > -0.5f) {
-            q();
+            ClothTransition();
         } else {
-            p();
+            ClothTransition();
         }
     }
 

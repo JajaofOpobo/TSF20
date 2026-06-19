@@ -18,24 +18,24 @@ public abstract class TransitionManager<E> {
 
     public abstract boolean b();
 
-    public abstract class String 
+    public abstract String c();
 
-    public C(ArrayList<LauncherAppInfo> arrayList) {
+    public TransitionManager(ArrayList<LauncherAppInfo> arrayList) {
         a(arrayList);
     }
 
-    public C() {
+    public TransitionManager() {
     }
 
     public void a(ArrayList<LauncherAppInfo> arrayList) {
         this.b = arrayList;
-        a();
+        TransitionManager();
     }
 
     public void f() {
         if (this.f) {
             this.e.b(true);
-            d();
+            TransitionManager();
         }
     }
 

@@ -184,7 +184,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
-        a();
+        ShortcutsPanel();
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase

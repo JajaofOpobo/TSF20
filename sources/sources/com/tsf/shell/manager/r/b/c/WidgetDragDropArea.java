@@ -81,7 +81,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase
     public void c() {
-        g();
+        a();
     }
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase

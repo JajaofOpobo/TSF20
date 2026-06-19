@@ -28,7 +28,7 @@ public class CubeClockPanel extends VObject3dContainer {
     private float p = 0.0f;
     private float q = 0.0f;
 
-    public d(c cVar) {
+    public CubeClockPanel(c cVar) {
         this.i = cVar;
         this.i.c.addObject(this);
         ByteBuffer byteBufferAllocateDirect = ByteBuffer.allocateDirect(this.h * 3 * 4);
@@ -43,7 +43,7 @@ public class CubeClockPanel extends VObject3dContainer {
         byteBufferAllocateDirect3.order(ByteOrder.nativeOrder());
         this.a = byteBufferAllocateDirect3.asFloatBuffer();
         this.a.position(0);
-        a();
+        CubeClockPanel();
         this.i.g.a(this);
         rotation().x = -360.0f;
     }
@@ -319,7 +319,7 @@ public class CubeClockPanel extends VObject3dContainer {
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
     public void drawElement() {
-        b();
+        CubeClockPanel();
         boolean zColorFillEnable = colorFillEnable();
         if (visible()) {
             if (zColorFillEnable) {

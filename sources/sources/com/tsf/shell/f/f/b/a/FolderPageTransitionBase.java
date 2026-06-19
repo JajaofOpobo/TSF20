@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.DashRendererBase.InterfaceC0090a {
     private com.tsf.shell.f._d.e.DashRendererBase b;
 
-    public d(int i, boolean z) {
+    public FolderPageTransitionBase(int i, boolean z) {
         super(i, 0, z);
     }
 

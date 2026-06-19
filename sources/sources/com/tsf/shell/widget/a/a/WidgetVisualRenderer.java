@@ -55,7 +55,7 @@ public class WidgetVisualRenderer extends f {
         boolean a(int i);
     }
 
-    public c(Context context) {
+    public WidgetVisualRenderer(Context context) {
         this.j = context;
         d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);
@@ -116,7 +116,7 @@ public class WidgetVisualRenderer extends f {
         private float d;
         private float e;
 
-        public d(float f, float f2) {
+        public WidgetVisualRenderer(float f, float f2) {
             super(f, f2);
             this.d = 0.1f;
             this.e = 0.0f;
@@ -140,7 +140,7 @@ public class WidgetVisualRenderer extends f {
     }
 
     class b extends com.censivn.C3DEngine.b.d.a {
-        public b(i iVar) {
+        public WidgetVisualRenderer(i iVar) {
             super(iVar);
         }
 
@@ -185,7 +185,7 @@ public class WidgetVisualRenderer extends f {
         private int g;
         private int h;
 
-        public a() {
+        public WidgetVisualRenderer() {
             super(35, 1, 1, 1, null, true);
             this.d = 0;
             this.e = (int) com.censivn.C3DEngine.b.b.A.a(150.0f);
@@ -233,7 +233,7 @@ public class WidgetVisualRenderer extends f {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {
                 if (this.a) {
-                    d(((com.censivn.C3DEngine.b.f.a.b) d()).H.color);
+                    d(((com.censivn.C3DEngine.b.f.a.b) C0170a()).H.color);
                     this.a = false;
                 }
                 o(f);

@@ -71,7 +71,7 @@ public class ScreenLockController {
         if (this.a) {
             a(true);
         } else {
-            f();
+            ScreenLockController();
         }
     }
 
@@ -87,7 +87,7 @@ public class ScreenLockController {
         if (this.g) {
             this.g = false;
         } else if (this.h && this.i) {
-            f();
+            ScreenLockController();
         }
     }
 

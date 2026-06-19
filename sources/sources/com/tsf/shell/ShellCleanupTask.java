@@ -8,7 +8,7 @@ public class ShellCleanupTask implements Runnable {
     RestartActivity b;
     boolean c;
 
-    public F(int i, RestartActivity restartActivity, boolean z) {
+    public ShellCleanupTask(int i, RestartActivity restartActivity, boolean z) {
         this.a = i;
         this.b = restartActivity;
         this.c = z;

@@ -6,7 +6,7 @@ public class DrawerConfig {
     int b;
     int c;
 
-    public h(int i, int i2, int i3) {
+    public DrawerConfig(int i, int i2, int i3) {
         this.a = i;
         this.b = i2;
         this.c = i3;

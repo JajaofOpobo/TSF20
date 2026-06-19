@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
     private com.tsf.shell.f.i.a.WallpaperTouchHandler a;
     protected InterfaceC0113a d;
-    public class Object 
+    public Object a;
     protected boolean c = false;
     protected ArrayList<C> b = new ArrayList<>();
 
@@ -19,12 +19,12 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
         ArrayList<i> b();
     }
 
-    public A(Object obj, InterfaceC0113a interfaceC0113a) {
+    public MultiSelectController(Object obj, InterfaceC0113a interfaceC0113a) {
         this.e = obj;
         this.d = interfaceC0113a;
     }
 
-    public class Object 
+    public Object c() {
         return this.e;
     }
 
@@ -43,10 +43,10 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
 
     public boolean d() {
         if (this.c) {
-            g();
+            InterfaceC0113a();
             return false;
         }
-        f();
+        InterfaceC0113a();
         return true;
     }
 
@@ -63,8 +63,8 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
                     ((ShortcutItem) iVar).am();
                 }
             }
-            j();
-            h();
+            InterfaceC0113a();
+            InterfaceC0113a();
         }
     }
 
@@ -79,7 +79,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
     @Override // com.censivn.C3DEngine.b.c.b.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            g();
+            InterfaceC0113a();
         }
     }
 
@@ -89,7 +89,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
 
     public void g() {
         if (this.c) {
-            k();
+            InterfaceC0113a();
             this.c = false;
             com.censivn.C3DEngine.b.c.b.b(this);
             for (i iVar : this.d.b()) {
@@ -97,7 +97,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
                     ((ShortcutItem) iVar).an();
                 }
             }
-            a();
+            InterfaceC0113a();
             this.b.clear();
         }
     }
@@ -110,12 +110,12 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
 
     public void a(C cVar) {
         this.b.add(cVar);
-        j();
+        InterfaceC0113a();
     }
 
     public void b(C cVar) {
         this.b.remove(cVar);
-        j();
+        InterfaceC0113a();
     }
 
     public ArrayList<C> i() {

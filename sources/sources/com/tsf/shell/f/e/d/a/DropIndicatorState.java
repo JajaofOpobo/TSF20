@@ -78,7 +78,7 @@ public class DropIndicatorState extends j {
         }
     }
 
-    public c(d dVar) {
+    public DropIndicatorState(d dVar) {
         this.f = dVar;
     }
 
@@ -172,7 +172,7 @@ public class DropIndicatorState extends j {
             }
         }
         this.a = c();
-        f();
+        C0092c();
         this.b.position().x = 0.0f;
         this.b.position().y = 0.0f;
         int i = 0;
@@ -198,8 +198,8 @@ public class DropIndicatorState extends j {
         if (this.d != null) {
             this.d.b();
             this.d = null;
-            e();
-            d();
+            C0092c();
+            C0092c();
             return false;
         }
         for (int i = 0; i < this.b.numChildren(); i++) {

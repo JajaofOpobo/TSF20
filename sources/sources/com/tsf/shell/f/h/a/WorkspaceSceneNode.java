@@ -22,7 +22,7 @@ public class WorkspaceSceneNode {
     private boolean h;
     private boolean i;
 
-    public A() {
+    public WorkspaceSceneNode() {
         this.h = true;
         this.h = e.aB() == 0;
         this.d = new TextureElement(0, false);
@@ -94,10 +94,10 @@ public class WorkspaceSceneNode {
     public void a(int i) {
         if (this.h && i != 0) {
             this.h = false;
-            b();
+            WorkspaceSceneNode();
         } else if (!this.h && i != 1) {
             this.h = true;
-            b();
+            WorkspaceSceneNode();
         }
     }
 
@@ -150,15 +150,15 @@ public class WorkspaceSceneNode {
         this.g = true;
         this.a.mouseEnabled(false);
         com.tsf.shell.manager.app.ServiceFactory.f();
-        h();
-        t();
+        WorkspaceSceneNode();
+        WorkspaceSceneNode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void w() {
         this.g = false;
         this.a.mouseEnabled(true);
-        i();
+        WorkspaceSceneNode();
         com.tsf.shell.manager.app.ServiceFactory.g();
     }
 
@@ -185,7 +185,7 @@ public class WorkspaceSceneNode {
         if (this.f) {
             a(true, false, false);
         } else {
-            h();
+            WorkspaceSceneNode();
         }
     }
 
@@ -195,7 +195,7 @@ public class WorkspaceSceneNode {
         if (this.i) {
             b(true, false, false);
         } else {
-            i();
+            WorkspaceSceneNode();
         }
     }
 
@@ -313,31 +313,31 @@ public class WorkspaceSceneNode {
     /* JADX INFO: Access modifiers changed from: private */
     public void A() {
         this.c.j();
-        m();
+        WorkspaceSceneNode();
     }
 
     private void B() {
-        n();
+        WorkspaceSceneNode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void C() {
-        o();
+        WorkspaceSceneNode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void D() {
-        p();
+        WorkspaceSceneNode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void E() {
         com.censivn.C3DEngine.A.g().a(this.d);
-        r();
+        WorkspaceSceneNode();
     }
 
     private void F() {
-        q();
+        WorkspaceSceneNode();
     }
 
     public void h() {
@@ -426,7 +426,7 @@ public class WorkspaceSceneNode {
     public void l() {
         G();
         this.c.a(0.0f, 0.0f, 0.0f, 0.0f);
-        s();
+        WorkspaceSceneNode();
     }
 
     public void m() {

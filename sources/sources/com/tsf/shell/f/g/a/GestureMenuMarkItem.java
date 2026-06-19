@@ -15,7 +15,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
     private GestureMenuEffectItem.a c;
     private m d;
 
-    public f(b bVar) {
+    public GestureMenuMarkItem(b bVar) {
         super(GestureMenuOverlay.i.text_mark);
         this.a = bVar;
         this.d = new m();

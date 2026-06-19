@@ -49,7 +49,7 @@ public class ToggleServiceConnector implements ServiceConnection {
                     }
                 } else {
                     this.l.add(aVar);
-                    b();
+                    a();
                 }
             }
         }

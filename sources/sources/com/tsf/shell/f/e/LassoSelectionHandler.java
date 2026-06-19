@@ -50,7 +50,7 @@ public class LassoSelectionHandler {
     }
 
     static {
-        i();
+        a();
     }
 
     public void a(A aVar) {
@@ -173,13 +173,13 @@ public class LassoSelectionHandler {
                 this.p.a((int) fArrA[0], (int) fArrA[1]);
                 this.p.g();
             }
-            g();
+            jadx();
         }
         return this.p == null;
     }
 
     private void g() {
-        h();
+        jadx();
         Iterator<m> it = this.q.iterator();
         while (it.hasNext()) {
             it.next().b(false);
@@ -193,7 +193,7 @@ public class LassoSelectionHandler {
             return;
         }
         this.j = true;
-        g();
+        jadx();
         if (this.o) {
             if (this.p == null) {
                 if (b(motionEvent)) {
@@ -236,7 +236,7 @@ public class LassoSelectionHandler {
         h.position().x = fArrB[0];
         h.position().y = fArrB[1];
         com.tsf.shell.manager.app.TaskScheduler.a(h);
-        j();
+        jadx();
     }
 
     private void h() {

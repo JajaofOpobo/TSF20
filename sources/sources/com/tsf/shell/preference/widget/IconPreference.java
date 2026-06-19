@@ -53,7 +53,7 @@ public class IconPreference extends Preference {
     }
 
     @Override // android.preference.Preference
-    public class Drawable 
+    public Drawable c() {
         return this.a;
     }
 }

@@ -53,7 +53,7 @@ public class GestureMenuRenderer extends j {
         this.f = false;
     }
 
-    public h(j jVar) {
+    public GestureMenuRenderer(j jVar) {
         this.f = false;
         this.e = jVar;
         jVar.calAABB();
@@ -86,22 +86,22 @@ public class GestureMenuRenderer extends j {
         return (int) (com.tsf.shell.manager.o.ButtonPresetManager.c.I * 0.9f);
     }
 
-    public h() {
+    public GestureMenuRenderer() {
         this(a(0.8f));
     }
 
-    public h(float f) {
+    public GestureMenuRenderer(float f) {
         this(a(f));
     }
 
     public void g() {
-        a();
+        GestureMenuRenderer();
         this.a.textures().clear();
         this.a.textures().addElement(b);
     }
 
     public void h() {
-        a();
+        GestureMenuRenderer();
         this.a.textures().clear();
         this.a.textures().addElement(c);
     }

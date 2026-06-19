@@ -8,7 +8,7 @@ public class AnimatedItemGroup extends ItemGroupBase {
     private j k;
     private com.tsf.shell.f.i.b.a.ItemContainer l;
 
-    public A() {
+    public AnimatedItemGroup() {
         b(true);
     }
 

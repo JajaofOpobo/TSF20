@@ -25,12 +25,12 @@ public class AlarmComponentProvider extends VRectangle {
         void a(boolean z);
     }
 
-    public c() {
+    public AlarmComponentProvider() {
         super(129.16666f, 129.16666f, 1, 1);
         this.a = AlarmWidget.d;
         this.b = false;
         b();
-        c();
+        b();
     }
 
     private void b() {
@@ -63,7 +63,7 @@ public class AlarmComponentProvider extends VRectangle {
     private void c() {
         position().spZ(80.0f);
         this.a.addObject(this);
-        e();
+        b();
         setMouseEventListener(new AlarmComponentContainer(this));
         calAABB();
     }
@@ -74,13 +74,13 @@ public class AlarmComponentProvider extends VRectangle {
 
     public void a(boolean z) {
         this.b = z;
-        e();
+        b();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
         this.b = !this.b;
-        e();
+        b();
         if (this.c != null) {
             this.c.a(this.b);
         }
@@ -98,7 +98,7 @@ public class AlarmComponentProvider extends VRectangle {
     }
 
     class a extends VMouseEventListener {
-        public a(VObject3d vObject3d) {
+        public AlarmComponentProvider(VObject3d vObject3d) {
             super(vObject3d);
         }
 

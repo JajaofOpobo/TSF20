@@ -15,7 +15,7 @@ public class SceneNodeAnimator extends j {
     private TextureElement d = new TextureElement(0, false);
     private k a = new k(SceneElementRenderer.a, SceneElementRenderer.a, false);
 
-    public b() {
+    public SceneNodeAnimator() {
         this.a.textures().addElement(this.d);
         this.a.calAABB();
         this.b = new m();
@@ -24,7 +24,7 @@ public class SceneNodeAnimator extends j {
         this.b.g(170);
         addChild(this.a);
         addChild(this.b);
-        d();
+        SceneNodeAnimator();
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
@@ -43,7 +43,7 @@ public class SceneNodeAnimator extends j {
         return this.a;
     }
 
-    public class TextureElement 
+    public TextureElement c() {
         return this.d;
     }
 
@@ -95,7 +95,7 @@ public class SceneNodeAnimator extends j {
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
         Bitmap bitmapA = this.e.a();
-        h();
+        SceneNodeAnimator();
         if (bitmapA != null) {
             com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
             bitmapA.recycle();
@@ -108,7 +108,7 @@ public class SceneNodeAnimator extends j {
     }
 
     public void g() {
-        h();
+        SceneNodeAnimator();
         this.b.a();
     }
 

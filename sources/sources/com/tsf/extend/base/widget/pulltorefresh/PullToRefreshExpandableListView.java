@@ -35,7 +35,7 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
     }
 
     class A extends ExpandableListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
-        public A(Context context, AttributeSet attributeSet) {
+        public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
 
@@ -52,7 +52,7 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
 
     @TargetApi(9)
     final class b extends A {
-        public b(Context context, AttributeSet attributeSet) {
+        public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
 

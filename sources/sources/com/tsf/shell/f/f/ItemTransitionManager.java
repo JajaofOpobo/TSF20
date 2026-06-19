@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ItemTransitionManager extends TransitionManager<l> {
-    public class Object 
+    public Object a;
     private boolean b;
     private boolean c;
 
-    public D(ArrayList<LauncherAppInfo> arrayList) {
+    public ItemTransitionManager(ArrayList<LauncherAppInfo> arrayList) {
         super(arrayList);
         this.a = new Object();
         this.b = false;
@@ -28,7 +28,7 @@ public class ItemTransitionManager extends TransitionManager<l> {
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public class String 
+    public String e() {
         return com.tsf.shell.manager.b.ConfigManager.A();
     }
 
@@ -49,7 +49,7 @@ public class ItemTransitionManager extends TransitionManager<l> {
 
     public void c(l lVar) {
         if (this.b) {
-            a();
+            e();
             a((TransitionRenderer) lVar);
             this.c = true;
         } else if (a((TransitionRenderer) lVar)) {
@@ -72,7 +72,7 @@ public class ItemTransitionManager extends TransitionManager<l> {
     public void d() {
         this.c = false;
         if (this.b) {
-            a();
+            e();
             this.c = true;
         } else {
             a(800, 500);

@@ -9,7 +9,7 @@ public class DashLayoutContainer extends f {
     public static final float b = com.censivn.C3DEngine.b.b.A.a(65.0f);
     private c a;
 
-    public d(int i, boolean z) {
+    public DashLayoutContainer(int i, boolean z) {
         super(i, 0, z);
         this.a = new DashLayoutListener(this) { // from class: com.tsf.shell.f._d.c.a.DashLayoutContainer.1
             @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.j

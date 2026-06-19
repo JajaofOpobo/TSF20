@@ -64,7 +64,7 @@ public class ThemePreferenceProvider {
                 if (this.f != null) {
                     this.f.b();
                 }
-                c();
+                C0142a();
             } else if (this.b != this.c) {
                 boolean zA = false;
                 if (this.f != null) {
@@ -72,7 +72,7 @@ public class ThemePreferenceProvider {
                 }
                 this.b = this.c;
                 com.tsf.shell.manager.app.AppListManager.a().a(this.a, this.b);
-                c();
+                C0142a();
                 if (this.f != null && this.f.a() != zA) {
                     this.f.b();
                 }

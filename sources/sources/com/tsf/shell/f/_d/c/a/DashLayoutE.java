@@ -10,7 +10,7 @@ public class DashLayoutE extends DashLayoutContainer {
     private boolean c;
     private boolean d;
 
-    public e(int i, boolean z, boolean z2) {
+    public DashLayoutE(int i, boolean z, boolean z2) {
         super(i, z2);
         this.d = false;
         this.d = z;

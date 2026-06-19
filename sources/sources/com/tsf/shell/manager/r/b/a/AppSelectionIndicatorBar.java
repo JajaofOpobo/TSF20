@@ -20,7 +20,7 @@ public class AppSelectionIndicatorBar extends j {
     private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a e;
 
     public AppSelectionIndicatorBar() {
-        d();
+        AppSelectionIndicatorBar();
     }
 
     public void a() {
@@ -97,7 +97,7 @@ public class AppSelectionIndicatorBar extends j {
     public void a(float f, float f2, float f3, float f4) {
         this.b.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + f + com.censivn.C3DEngine.b.b.A.a(12.0f);
         this.c.position().x = this.b.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(20.0f);
-        h();
+        AppSelectionIndicatorBar();
     }
 
     public void e() {
@@ -124,11 +124,11 @@ public class AppSelectionIndicatorBar extends j {
     public void f() {
         this.d.d();
         this.e.d();
-        h();
+        AppSelectionIndicatorBar();
     }
 
     public void g() {
-        e();
+        AppSelectionIndicatorBar();
         this.d.e();
         this.e.e();
     }

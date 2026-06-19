@@ -37,7 +37,7 @@ public interface IAlarmCallback extends IInterface {
         }
 
         @Override // android.os.IInterface
-        public class IBinder 
+        public IBinder c() {
             return this;
         }
 
@@ -61,7 +61,7 @@ public interface IAlarmCallback extends IInterface {
                     return true;
                 case 4:
                     parcel.enforceInterface("com.tsf.shell.widget.alarm.service.AlarmInterface");
-                    a();
+                    IBinder();
                     parcel2.writeNoException();
                     return true;
                 case 5:
@@ -71,7 +71,7 @@ public interface IAlarmCallback extends IInterface {
                     return true;
                 case 6:
                     parcel.enforceInterface("com.tsf.shell.widget.alarm.service.AlarmInterface");
-                    b();
+                    IBinder();
                     parcel2.writeNoException();
                     return true;
                 case 1598968902:
@@ -91,7 +91,7 @@ public interface IAlarmCallback extends IInterface {
             }
 
             @Override // android.os.IInterface
-            public class IBinder 
+            public IBinder c() {
                 return this.a;
             }
 

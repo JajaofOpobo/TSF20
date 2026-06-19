@@ -20,20 +20,20 @@ public abstract class WidgetLabelProvider {
 
     public abstract void h();
 
-    public e() {
+    public WidgetLabelProvider() {
         this.a.e(-1);
         this.a.d(36);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.a, com.tsf.shell.manager.o.ThemeColorConstants.h);
     }
 
     public void a() {
-        i();
+        WidgetLabelProvider();
         this.a.destroy();
     }
 
     public void i() {
         this.a.a();
-        b();
+        WidgetLabelProvider();
     }
 
     public void a(int i) {

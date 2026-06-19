@@ -11,7 +11,7 @@ public class SceneElementHandler extends i {
     private com.censivn.C3DEngine.b.e.e c;
     private com.tsf.shell.f.h.a.ScenePositionConfig d;
 
-    public e(d dVar) {
+    public SceneElementHandler(d dVar) {
         this.a = dVar;
         a(SceneNodeAnimator.i.text_preferences);
         com.censivn.C3DEngine.b.e.a aVar = new com.censivn.C3DEngine.b.e.a();

@@ -71,16 +71,16 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     public float v;
     public float w;
     public float x;
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
     private boolean V = false;
     private ThemeFolderManager Y = ThemeManager.mix.folder;
 
-    public j() {
+    public FolderItemPositioner() {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.X = new com.tsf.shell.preference.a.a.PreferenceItemF() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.1
             @Override // com.censivn.C3DEngine.b.e.c
@@ -89,13 +89,13 @@ public class FolderItemPositioner implements ItemStubHelper.a {
                 j.this.b();
             }
         };
-        j();
-        k();
-        n();
-        o();
-        p();
-        q();
-        m();
+        FolderItemPositioner();
+        FolderItemPositioner();
+        FolderItemPositioner();
+        FolderItemPositioner();
+        FolderItemPositioner();
+        FolderItemPositioner();
+        FolderItemPositioner();
     }
 
     public void a() {
@@ -121,7 +121,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
         com.censivn.C3DEngine.b.g.c.a(this.F, 500, dVar);
     }
 
-    public class ThemeDescription 
+    public ThemeDescription c() {
         return this.Y.getTheme();
     }
 
@@ -129,7 +129,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
         if (!e().a()) {
             return this.X.a();
         }
-        e().e();
+        ThemeDescription().e();
         return true;
     }
 
@@ -138,9 +138,9 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     }
 
     public void f() {
-        j();
-        k();
-        o();
+        ThemeDescription();
+        ThemeDescription();
+        ThemeDescription();
     }
 
     private void m() {
@@ -489,7 +489,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     }
 
     protected void a(CharSequence charSequence) {
-        l();
+        ThemeDescription();
         com.tsf.shell.manager.o.a.TextConfig aVar = new com.tsf.shell.manager.o.a.TextConfig();
         aVar.h(60);
         aVar.i(-1);
@@ -576,7 +576,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        o();
+        ThemeDescription();
         com.tsf.shell.f.i.b.d.FolderShortcutItem.a(i, i2, i3, i4);
     }
 }

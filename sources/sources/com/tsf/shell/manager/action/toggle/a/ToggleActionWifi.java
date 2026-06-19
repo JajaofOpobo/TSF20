@@ -14,7 +14,7 @@ public class ToggleActionWifi extends com.tsf.shell.manager.action.toggle.Toggle
         } catch (Exception e) {
             e.printStackTrace();
         }
-        d();
+        ToggleActionWifi();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction

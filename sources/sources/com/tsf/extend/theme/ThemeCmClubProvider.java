@@ -24,7 +24,7 @@ public class ThemeCmClubProvider extends ContentProvider {
         private int c;
         private String d;
 
-        public a(int i, String str, int i2, String str2) {
+        public ThemeCmClubProvider(int i, String str, int i2, String str2) {
             this.a = i;
             this.b = str;
             this.c = i2;

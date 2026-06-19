@@ -12,15 +12,15 @@ public class PreferenceFragmentBase extends PreferenceBaseFragment {
     private i e;
     private com.tsf.shell.f.c.b.DrawerSettingsConfig f;
 
-    public f(float f) {
+    public PreferenceFragmentBase(float f) {
         super(f);
         this.d = new j();
-        e().addChild(this.d);
+        PreferenceFragmentBase().addChild(this.d);
         this.e = new PreferenceItemInterface();
         this.d.addChild(this.e);
         this.e.a(0.0f, f);
         this.e.b(0);
-        n();
+        PreferenceFragmentBase();
     }
 
     @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.f

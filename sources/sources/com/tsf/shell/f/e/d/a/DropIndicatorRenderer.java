@@ -17,7 +17,7 @@ public class DropIndicatorRenderer extends j {
     private float g = 17.0f;
     public boolean d = false;
 
-    public b() {
+    public DropIndicatorRenderer() {
         float f = com.censivn.C3DEngine.b.b.A.b;
         scale().setAll(f, f, 1.0f);
         this.f = new j();

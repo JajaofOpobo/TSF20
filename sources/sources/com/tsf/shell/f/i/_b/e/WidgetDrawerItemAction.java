@@ -6,12 +6,12 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetDrawerItemAction extends WidgetDrawerItemBase {
-    public d(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
+    public WidgetDrawerItemAction(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
         if (z) {
             com.tsf.shell.manager.bind.ShellBindController.b.a(this);
         } else if (com.censivn.C3DEngine.a.e.l()) {
-            k();
+            WidgetDrawerItemAction();
         } else {
             com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemAction.1
                 @Override // java.lang.Runnable

@@ -19,7 +19,7 @@ public class ThemePickerState extends BaseAdapter {
     protected Context c;
     protected boolean d;
 
-    public g(Context context, List<ResolveInfo> list, PackageManager packageManager, boolean z) {
+    public ThemePickerState(Context context, List<ResolveInfo> list, PackageManager packageManager, boolean z) {
         this.c = context;
         this.b = packageManager;
         this.a = list;
@@ -32,7 +32,7 @@ public class ThemePickerState extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class Object 
+    public Object c() {
         return null;
     }
 
@@ -42,7 +42,7 @@ public class ThemePickerState extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class View 
+    public View c() {
         if (view == null) {
             view = LayoutInflater.from(this.c).inflate(ThemePickerResources.h.slid_menu_item, viewGroup, false);
         }

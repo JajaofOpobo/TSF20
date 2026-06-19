@@ -7,7 +7,7 @@ import com.tsf.shell.manager.action.GestureHandler;
 public class PageItemDropHandler extends PageItemTouchHandler {
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase g;
 
-    public d(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
+    public PageItemDropHandler(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         super(bVar);
         this.g = bVar;
     }

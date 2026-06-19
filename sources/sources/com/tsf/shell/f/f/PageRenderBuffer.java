@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageRenderBuffer extends com.censivn.C3DEngine.b.f.h {
-    public B() {
+    public PageRenderBuffer() {
         super(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
     }
 

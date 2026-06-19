@@ -153,7 +153,7 @@ public class WidgetDefinitionFactory {
                         this.k = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.a.H, com.tsf.shell.manager.o.ButtonPresetManager.a.I, false);
                         this.k.textures().addElement(this.l);
                     }
-                    p();
+                    WidgetDefinitionFactory();
                     return this.k;
                 }
 

@@ -19,7 +19,7 @@ public class ShellThemeEngineV2 extends Dialog {
         boolean a(DialogInterface dialogInterface, int i, KeyEvent keyEvent);
     }
 
-    public c(Context context) {
+    public ShellThemeEngineV2(Context context) {
         super(context);
         this.a = context;
         WindowManager.LayoutParams attributes = getWindow().getAttributes();

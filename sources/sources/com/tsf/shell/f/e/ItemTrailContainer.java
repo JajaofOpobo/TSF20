@@ -11,7 +11,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
     private static Number3d b = new Number3d();
     private static com.tsf.shell.f.i.ShortcutItem c;
 
-    public E() {
+    public ItemTrailContainer() {
         renderChildren(false);
     }
 

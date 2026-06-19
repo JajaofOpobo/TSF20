@@ -16,7 +16,7 @@ public class f {
 
     protected class A extends c<d> {
         /* JADX WARN: Multi-variable type inference failed */
-        public A(BlockingQueue<d> blockingQueue) {
+        public f(BlockingQueue<d> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.b);
             setName("EventDispather");

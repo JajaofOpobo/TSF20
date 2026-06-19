@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.m;
 public class PreferenceSettingJ extends com.censivn.C3DEngine.b.e.f {
     private m a;
 
-    public j() {
+    public PreferenceSettingJ() {
         this(com.censivn.C3DEngine.b.b.A.a(120.0f));
         b(false);
     }
@@ -22,7 +22,7 @@ public class PreferenceSettingJ extends com.censivn.C3DEngine.b.e.f {
         }
     }
 
-    public j(float f) {
+    public PreferenceSettingJ(float f) {
         d((int) f);
         a(0);
         this.a = new m();
@@ -47,6 +47,6 @@ public class PreferenceSettingJ extends com.censivn.C3DEngine.b.e.f {
         layoutParams.j = this.a.maxX();
         layoutParams.i = this.a.minY();
         layoutParams.k = this.a.maxY();
-        d();
+        PreferenceSettingJ();
     }
 }

@@ -16,7 +16,7 @@ public class AlarmDataProvider {
     private float f = 0.0f;
     private int j = 0;
 
-    public e(VRectangle vRectangle, j jVar, int i, int i2, int i3) {
+    public AlarmDataProvider(VRectangle vRectangle, j jVar, int i, int i2, int i3) {
         this.g = 0;
         this.h = 0;
         this.i = 0;

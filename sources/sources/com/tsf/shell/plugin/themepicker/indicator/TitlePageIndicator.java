@@ -282,7 +282,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
         invalidate();
     }
 
-    public class Typeface 
+    public Typeface c() {
         return this.f.getTypeface();
     }
 
@@ -664,7 +664,7 @@ public class TitlePageIndicator extends View implements com.tsf.shell.plugin.the
 
             @Override
 
-            public class SavedState 
+            public SavedState c() {
                 return new SavedState(parcel);
             }
 

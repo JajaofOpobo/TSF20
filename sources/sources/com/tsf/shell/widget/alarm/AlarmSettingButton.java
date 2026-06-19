@@ -21,13 +21,13 @@ public class AlarmSettingButton extends VRectangle {
     private final float d;
     private Object e;
 
-    public q() {
+    public AlarmSettingButton() {
         super(240.0f, 200.0f);
         this.c = 175.0f;
         this.d = 80.0f;
         this.e = new Object();
         AlarmWidget.a(this);
-        a();
+        AlarmSettingButton();
         textures().addElement(this.a);
         position().spY(175.0f);
         position().spZ(80.0f);
@@ -66,7 +66,7 @@ public class AlarmSettingButton extends VRectangle {
         boolean a = false;
         private VObject3d c;
 
-        public B(VObject3d vObject3d) {
+        public AlarmSettingButton(VObject3d vObject3d) {
             this.c = vObject3d;
             VTween.killTween(q.this);
             VTween.to(q.this, 1000, this);
@@ -122,7 +122,7 @@ public class AlarmSettingButton extends VRectangle {
         boolean a = false;
         private VObject3d c;
 
-        public A(VObject3d vObject3d) {
+        public AlarmSettingButton(VObject3d vObject3d) {
             this.c = vObject3d;
             setEase(300);
             VTween.killTween(q.this);

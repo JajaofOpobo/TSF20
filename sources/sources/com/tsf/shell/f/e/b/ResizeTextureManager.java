@@ -179,7 +179,7 @@ public class ResizeTextureManager {
             byteBufferAllocateDirect2.order(ByteOrder.nativeOrder());
             this.b = byteBufferAllocateDirect2.asFloatBuffer();
             this.b.position(0);
-            b();
+            a();
         }
 
         public void a(d dVar) {

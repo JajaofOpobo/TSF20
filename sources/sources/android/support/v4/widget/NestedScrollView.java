@@ -1257,7 +1257,7 @@ public class NestedScrollView extends FrameLayout implements ae, android.support
             super(parcelable);
         }
 
-        public SavedState(Parcel parcel) {
+        public NestedScrollView(Parcel parcel) {
             super(parcel);
             this.a = parcel.readInt();
         }

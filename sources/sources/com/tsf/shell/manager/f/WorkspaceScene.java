@@ -138,7 +138,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         if (this.e) {
             this.e = false;
             this.i = null;
-            d();
+            a();
             a(i, new Runnable() { // from class: com.tsf.shell.manager.f.WorkspaceScene.3
                 @Override // java.lang.Runnable
                 public void run() {

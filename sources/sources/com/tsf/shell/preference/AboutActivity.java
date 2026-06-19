@@ -81,7 +81,7 @@ public class AboutActivity extends FragmentActivity {
         static class C0160a implements TabHost.TabContentFactory {
             private final Context a;
 
-            public C0160a(Context context) {
+            public a(Context context) {
                 this.a = context;
             }
 
@@ -109,7 +109,7 @@ public class AboutActivity extends FragmentActivity {
             tabSpec.setContent(new C0160a(this.a));
             this.d.add(new b(tabSpec.getTag(), cls, bundle));
             this.b.addTab(tabSpec);
-            c();
+            C0160a();
         }
 
         @Override // android.support.v4.view.ac

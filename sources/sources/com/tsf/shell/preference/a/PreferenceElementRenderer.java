@@ -12,7 +12,7 @@ public class PreferenceElementRenderer extends PreferenceBaseFragment {
     private j d;
     private ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> e;
 
-    public e(float f) {
+    public PreferenceElementRenderer(float f) {
         super(f);
         this.e = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
@@ -20,7 +20,7 @@ public class PreferenceElementRenderer extends PreferenceBaseFragment {
             hVar.aL();
             this.e.add(hVar);
         }
-        n();
+        PreferenceElementRenderer();
     }
 
     public void f(int i) {

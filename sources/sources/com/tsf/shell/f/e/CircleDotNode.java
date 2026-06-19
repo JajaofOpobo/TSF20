@@ -9,7 +9,7 @@ public class CircleDotNode extends com.censivn.C3DEngine.b.f.k {
     private int a;
     private TextureElement d;
 
-    public k() {
+    public CircleDotNode() {
         super(1.0f, 1.0f);
         this.d = new TextureElement(0, false);
         this.a = (int) com.censivn.C3DEngine.b.b.A.a(22.0f);
@@ -21,7 +21,7 @@ public class CircleDotNode extends com.censivn.C3DEngine.b.f.k {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
-        d();
+        CircleDotNode();
     }
 
     private void d() {

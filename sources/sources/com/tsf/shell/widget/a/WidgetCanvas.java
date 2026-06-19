@@ -11,13 +11,13 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetCanvas {
-    public class TextureElement 
+    public TextureElement a;
     private int c;
     private VTextureManager e;
     private int b = -1;
     private String d = "";
 
-    public g(VTextureManager vTextureManager, int i, String str) {
+    public WidgetCanvas(VTextureManager vTextureManager, int i, String str) {
         this.c = 0;
         this.c = i;
         this.e = vTextureManager;

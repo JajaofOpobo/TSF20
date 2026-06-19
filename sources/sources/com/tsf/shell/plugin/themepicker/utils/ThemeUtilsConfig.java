@@ -12,7 +12,7 @@ public class ThemeUtilsConfig extends ThemeUtilsProcessor {
     protected int a;
     protected int b;
 
-    public e(Context context, int i, int i2) {
+    public ThemeUtilsConfig(Context context, int i, int i2) {
         super(context);
         a(i, i2);
     }

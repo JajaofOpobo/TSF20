@@ -20,7 +20,7 @@ public class OverlayBackground extends j {
     private ArrayList<com.tsf.shell.f.a.a.GlTextureBinding> j = new ArrayList<>();
     private c a = new OverlayGradient();
 
-    public a() {
+    public OverlayBackground() {
         addChild(this.a);
     }
 
@@ -107,7 +107,7 @@ public class OverlayBackground extends j {
         com.censivn.C3DEngine.b.g.c.a(this, i, dVar);
     }
 
-    public class TextureElement 
+    public TextureElement c() {
         if (this.h.size() == 0) {
             return null;
         }
@@ -117,7 +117,7 @@ public class OverlayBackground extends j {
     private void a(TextureElement textureElement, int i, float f) {
         this.k = textureElement;
         if (this.d != textureElement.height || this.e != textureElement.width || i != this.f || this.g != f) {
-            c();
+            OverlayBackground();
             this.d = textureElement.height;
             this.e = textureElement.width;
             this.f = i;

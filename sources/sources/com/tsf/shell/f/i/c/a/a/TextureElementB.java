@@ -24,7 +24,7 @@ public class TextureElementB extends j {
     private TextureElement o;
     private TextureElement p;
 
-    public b(VTextureManager vTextureManager, Context context) {
+    public TextureElementB(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         com.tsf.shell.f.i.c.a.a.TextureElementA.c = context;
         com.tsf.shell.f.i.c.a.a.TextureElementA.a = VInformation.engineDensity();
@@ -73,8 +73,8 @@ public class TextureElementB extends j {
         /* JADX INFO: Access modifiers changed from: protected */
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i.c.a.FolderSceneNodesyncTextureNode.a, com.tsf.shell.f.i.c.a.c
-        public class Bitmap 
-            return DeferredItemGroup.this.e();
+        public Bitmap c() {
+                        return DeferredItemGroup.this.e();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -117,8 +117,8 @@ public class TextureElementB extends j {
         }
     }
 
-    public class Bitmap 
-        return ItemGroupBase.a(this.i, new Date());
+    public Bitmap c() {
+                return ItemGroupBase.a(this.i, new Date());
     }
 
     public void a(Bitmap bitmap) {

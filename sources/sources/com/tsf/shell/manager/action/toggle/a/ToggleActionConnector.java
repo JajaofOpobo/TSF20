@@ -9,7 +9,7 @@ import com.tsf.shell.utils.MarketLinkHandler;
 public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.ToggleAction {
     publiToggleActionConnector c(int i) {
         super(i);
-        d();
+        ToggleActionConnector();
     }
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction

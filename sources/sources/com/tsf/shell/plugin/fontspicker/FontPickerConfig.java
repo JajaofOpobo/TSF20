@@ -11,7 +11,7 @@ import java.lang.ref.WeakReference;
 public class FontPickerConfig {
     Context a;
 
-    public d(Context context) {
+    public FontPickerConfig(Context context) {
         this.a = context;
     }
 
@@ -51,7 +51,7 @@ public class FontPickerConfig {
         private com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a e;
         private final WeakReference<TextView> f;
 
-        public a(com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a c0152a, TextView textView) {
+        public FontPickerConfig(com.tsf.shell.plugin.fontspicker.FontPickerManager.C0152a c0152a, TextView textView) {
             this.e = c0152a;
             this.f = new WeakReference<>(textView);
         }

@@ -26,7 +26,7 @@ public class WidgetTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean p;
     private Runnable q;
 
-    public a(com.censivn.C3DEngine.b.f.i iVar, b bVar) {
+    public WidgetTouchHandler(com.censivn.C3DEngine.b.f.i iVar, b bVar) {
         super(iVar);
         this.d = false;
         this.k = false;
@@ -95,7 +95,7 @@ public class WidgetTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 this.c.position().setAllFrom(number3dLocalToGlobal);
                 this.a.aF().a((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.c);
                 com.tsf.shell.manager.app.TaskScheduler.a(this.c);
-                b();
+                WidgetTouchHandler();
                 com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
                 dVar2.l(bVar.d);
                 dVar2.m(bVar.d);

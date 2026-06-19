@@ -29,7 +29,7 @@ public class AlarmThemeProvider {
         VObject3d i;
         int j;
 
-        public A(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
+        public AlarmThemeProvider(VObject3d vObject3d, int i, int i2, Bitmap bitmap, int i3, int i4, int i5, int i6) {
             this.i = vObject3d;
             this.j = i3;
             this.d = i;

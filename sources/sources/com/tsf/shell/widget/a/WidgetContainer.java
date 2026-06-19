@@ -14,7 +14,7 @@ public class WidgetContainer extends VWidgetContainer implements WidgetConfig.a 
     private A d;
     private c e;
 
-    public e(Context context, int i) {
+    public WidgetContainer(Context context, int i) {
         super(i);
         WidgetEvent.a("====CircleWidget Create===");
         this.a = context;

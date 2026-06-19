@@ -90,12 +90,12 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
     protected void onActivityResult(int i, int i2, Intent intent) {
         CropImageConfig.a("resultCode:" + i2);
         if (intent == null || i2 == 0) {
-            i();
+            CropImageActivity();
             return;
         }
         if (i == 100) {
             CropImageConfig.a("URI:" + intent.getData().toString());
-            a(intent.getData());
+            a(intent.getDatCropImageActivity());
         }
         super.onActivityResult(i, i2, intent);
     }
@@ -167,8 +167,8 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public class Bitmap 
-        int iB = b(uri);
+    public Bitmap c() {
+                int iB = b(uri);
         return iB == 0 ? bitmap : a(bitmap, iB);
     }
 
@@ -249,11 +249,11 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
             this.t.dismiss();
         } else if (id == CropImageResources.a.crop_image_done) {
             CropImageConfig.a("hello");
-            j();
+            CropImageActivity();
         } else if (id == CropImageResources.a.crop_image_cancel) {
-            i();
+            CropImageActivity();
         } else if (id == CropImageResources.a.ic_menu_metrics) {
-            k();
+            CropImageActivity();
         }
     }
 
@@ -352,7 +352,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
         }
 
         @Override // android.support.v4.app.Fragment
-        public class View 
+        public View c() {
             this.ai = layoutInflater.inflate(CropImageResources.b.crop_size_dialog_layout, viewGroup);
             ((TextView) this.ai.findViewById(CropImageResources.a.textView1)).setText("ImageSize: " + CropImageActivity.u + "x" + CropImageActivity.v);
             return this.ai;

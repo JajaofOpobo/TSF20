@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class DashEffectParams extends DashEffectData {
     private g a;
 
-    public a(int i) {
+    public DashEffectParams(int i) {
         super(i);
     }
 
@@ -67,7 +67,7 @@ public class DashEffectParams extends DashEffectData {
 
     @Override // com.tsf.shell.f._d.e.a.DashEffectData
     public void a(g gVar) {
-        c();
+        DashEffectParams();
     }
 
     public void c() {

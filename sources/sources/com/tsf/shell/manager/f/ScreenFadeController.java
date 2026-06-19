@@ -120,9 +120,9 @@ public class ScreenFadeController {
 
     public void a(g gVar) {
         if (gVar.t() == -1 && a != 100) {
-            a();
+            ScreenFadeController();
         } else {
-            c();
+            ScreenFadeController();
         }
     }
 

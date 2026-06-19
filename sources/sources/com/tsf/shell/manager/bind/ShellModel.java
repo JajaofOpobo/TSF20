@@ -496,7 +496,7 @@ public class ShellModel extends BroadcastReceiver {
             Context context = this.b;
             ContentResolver contentResolver = context.getContentResolver();
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
-            a();
+            b();
             synchronized (ShellModel.f) {
                 ArrayList arrayList = new ArrayList();
                 Cursor cursorQuery = contentResolver.query(com.tsf.shell.ShellGraphicsContext.e.a, null, null, null, "itemType ASC");

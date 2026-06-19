@@ -16,7 +16,7 @@ public class WidgetProviderInfoBar extends j {
     private m c;
 
     public WidgetProviderInfoBar() {
-        b();
+        WidgetProviderInfoBar();
     }
 
     public void a() {

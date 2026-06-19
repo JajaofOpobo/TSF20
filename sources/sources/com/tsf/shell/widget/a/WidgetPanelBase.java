@@ -52,10 +52,10 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.j {
     private int w = this.v;
     private Object C = new Object();
 
-    public A(VTextureManager vTextureManager, c cVar) {
+    public WidgetPanelBase(VTextureManager vTextureManager, c cVar) {
         this.d = vTextureManager;
         this.c = cVar;
-        a();
+        WidgetPanelBase();
     }
 
     public void a() {
@@ -172,19 +172,19 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.j {
             int i = (int) ((this.f / 1000) % 60);
             if (i != this.a) {
                 this.a = i;
-                i();
+                WidgetPanelBase();
             }
             int i2 = (int) ((this.f / 1000) / 60);
             if (i2 != this.g) {
                 this.g = i2;
-                g();
+                WidgetPanelBase();
                 int i3 = i2 / 60;
                 if (i3 != this.h) {
                     this.h = i3;
                 }
             }
         }
-        f();
+        WidgetPanelBase();
     }
 
     private Bitmap a(int i, int i2) {
@@ -347,7 +347,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.j {
         dVar2.a(com.censivn.C3DEngine.b.g.a.g);
         com.censivn.C3DEngine.b.g.c.a(this.m);
         com.censivn.C3DEngine.b.g.c.a(this.m, 1500, dVar2);
-        h();
+        WidgetPanelBase();
     }
 
     private float a(float f, float f2) {

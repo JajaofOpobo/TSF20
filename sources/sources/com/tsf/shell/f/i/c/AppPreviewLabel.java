@@ -19,13 +19,13 @@ public class AppPreviewLabel extends ItemLabelProvider {
     public k b;
     private ApplicationInfo f;
     private AppWidgetProviderInfo g;
-    public class Bundle 
+    public Bundle a;
     private ComponentName c = null;
     private int d = 0;
     private int e = 0;
     private TextureElement h = new TextureElement(0, false);
 
-    public f() {
+    public AppPreviewLabel() {
         a(40);
     }
 
@@ -49,13 +49,13 @@ public class AppPreviewLabel extends ItemLabelProvider {
         this.c = componentName;
     }
 
-    public class ComponentName 
+    public ComponentName c() {
         return this.c;
     }
 
     @SuppressLint({"NewApi"})
-    public class Bitmap 
-        Bitmap bitmapA = null;
+    public Bitmap c() {
+                Bitmap bitmapA = null;
         if (Build.VERSION.SDK_INT < 11 || this.g.previewImage == 0) {
             if (this.g.icon != 0) {
                 bitmapA = x.a(this.g.provider.getPackageName(), this.g.icon);

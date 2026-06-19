@@ -2,7 +2,7 @@ package com.tsf.shell.widget.cubeclock;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CubeClockSmallElement extends CubeClockElementBase {
-    public h(c cVar) {
+    public CubeClockSmallElement(c cVar) {
         super(cVar);
     }
 

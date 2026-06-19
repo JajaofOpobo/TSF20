@@ -18,7 +18,7 @@ public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem
     private GestureMenuBlankItem.C0095a c;
     private GestureMenuEffectItem.a d;
 
-    public c(b bVar) {
+    public GestureMenuItemAction(b bVar) {
         super(GestureMenuOverlay.i.menu_effect_desktop);
         this.a = bVar;
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();

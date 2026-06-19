@@ -30,13 +30,13 @@ public class CubeClockDefaultFace extends VObject3dContainer {
     private boolean c = false;
     public float a = 1.0f;
 
-    public a(c cVar) {
+    public CubeClockDefaultFace(c cVar) {
         this.k = cVar;
         this.j = this.k.q;
         this.k.c.addObject(this);
         visible(false);
         rotation().x = 90.0f;
-        e();
+        CubeClockDefaultFace();
         VRectangle vRectangle = new VRectangle(588.0f / this.k.n, 144.0f / this.k.n);
         vRectangle.textures().addElement(this.b);
         vRectangle.position().spY(-125.0f);
@@ -148,9 +148,9 @@ public class CubeClockDefaultFace extends VObject3dContainer {
 
     public void a() {
         if (this.c) {
-            c();
+            CubeClockDefaultFace();
         } else {
-            b();
+            CubeClockDefaultFace();
         }
     }
 
@@ -184,7 +184,7 @@ public class CubeClockDefaultFace extends VObject3dContainer {
         vTweenParam.setRotationX(90.0f);
         vTweenParam.setAlpha(0);
         VTween.to(this, VEasing.Linear.easeNone, vTweenParam);
-        a(this.g.a());
+        a(this.g.CubeClockDefaultFace());
     }
 
     private void a(int i) {
@@ -194,7 +194,7 @@ public class CubeClockDefaultFace extends VObject3dContainer {
 
     public void d() {
         if (this.c) {
-            c();
+            CubeClockDefaultFace();
         }
     }
 }

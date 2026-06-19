@@ -28,10 +28,10 @@ public class FontPickerManager extends BaseAdapter {
     private ArrayList<C0152a> b = new ArrayList<>();
     private int d = -1;
 
-    public a(Context context) {
+    public FontPickerManager(Context context) {
         this.a = context;
         this.c = new FontPickerConfig(context);
-        a();
+        FontPickerManager();
     }
 
     public void a() {
@@ -84,7 +84,7 @@ public class FontPickerManager extends BaseAdapter {
         }
     }
 
-    public class C0152a 
+    public C0152a c() {
         return this.b.get(i - 1);
     }
 
@@ -94,7 +94,7 @@ public class FontPickerManager extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class Object 
+    public Object c() {
         return null;
     }
 
@@ -104,7 +104,7 @@ public class FontPickerManager extends BaseAdapter {
     }
 
     @Override // android.widget.Adapter
-    public class View 
+    public View c() {
         if (view == null) {
             view = LayoutInflater.from(this.a).inflate(f.h.fonts_list_item_radio, (ViewGroup) null);
         }
@@ -126,9 +126,9 @@ public class FontPickerManager extends BaseAdapter {
 
     /* JADX INFO: renamed from: com.tsf.shell.plugin.fontspicker.FontPickerManager$a, reason: collision with other inner class name */
     public static class C0152a {
-        public class String 
-        public class String 
-        public class String 
+        public String a;
+        public String a;
+        public String a;
 
         public C0152a(String str, String str2, String str3) {
             this.a = str;
@@ -136,7 +136,7 @@ public class FontPickerManager extends BaseAdapter {
             this.c = str3;
         }
 
-        public class Typeface 
+        public Typeface c() {
             if (this.b.equals("package")) {
                 Context contextD = d(context);
                 if (contextD == null) {
@@ -159,7 +159,7 @@ public class FontPickerManager extends BaseAdapter {
             }
         }
 
-        public class String 
+        public String c() {
             String str;
             String strSubstring = this.c.substring(this.c.lastIndexOf("/") + 1, this.c.lastIndexOf("."));
             if (this.b.equals("package")) {

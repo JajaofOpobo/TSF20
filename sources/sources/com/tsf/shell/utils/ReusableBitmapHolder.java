@@ -15,7 +15,7 @@ public class ReusableBitmapHolder {
     }
 
     public void a(Bitmap bitmap) {
-        b();
+        ReusableBitmapHolder();
         this.a = new SoftReference<>(bitmap);
     }
 

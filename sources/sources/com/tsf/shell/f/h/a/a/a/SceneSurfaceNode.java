@@ -29,7 +29,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
     private Number3d e = new Number3d();
     private g c = new SceneIndicatorNode(com.tsf.shell.f.h.a.a.SceneElementRenderer.b, com.tsf.shell.f.h.a.a.SceneElementRenderer.b);
 
-    public c(com.tsf.shell.f.h.a.a.SceneElementRenderer dVar, j jVar) {
+    public SceneSurfaceNode(com.tsf.shell.f.h.a.a.SceneElementRenderer dVar, j jVar) {
         this.a = dVar;
         this.b = jVar;
         this.c.calAABB();
@@ -119,7 +119,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
-        i();
+        SceneSurfaceNode();
         a(this.f.c(), false);
         if (this.f.c().id == this.a.c(false).id) {
             a(this.a.c(true), false);
@@ -139,7 +139,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
     }
 
     public void b(boolean z) {
-        k();
+        SceneSurfaceNode();
         System.currentTimeMillis();
         this.f.a().d();
         int size = this.f.a().g.size();
@@ -175,7 +175,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
             int i3 = i;
             if (i3 < this.i.size()) {
                 d dVar = this.i.get(i3);
-                a(dVar.c(), dVar.a(), i2, z);
+                a(dVar.c(), dVar.SceneSurfaceNode(), i2, z);
                 int i4 = i2 + 30;
                 a(dVar.d(), dVar.b(), i4, z);
                 i2 = i4 + 30;
@@ -213,7 +213,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
         com.censivn.C3DEngine.b.g.c.a(this.c);
         com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
-        j();
+        SceneSurfaceNode();
         a(true);
         b(true);
         this.l.b();
@@ -280,8 +280,8 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
 
     /* JADX INFO: Access modifiers changed from: private */
     public void l() {
-        k();
-        i();
+        SceneSurfaceNode();
+        SceneSurfaceNode();
         this.f = null;
     }
 

@@ -33,7 +33,7 @@ public class WidgetRegistryManager {
         this.c = new ArrayList<>();
         com.tsf.shell.manager.r.c.a.WidgetInstantiator.a(getClass().getClassLoader());
         c.a();
-        e();
+        WidgetRegistryManager();
     }
 
     public void a() {
@@ -48,7 +48,7 @@ public class WidgetRegistryManager {
     }
 
     private void e() {
-        f();
+        WidgetRegistryManager();
     }
 
     public static String a(c.b bVar) {

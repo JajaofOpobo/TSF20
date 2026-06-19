@@ -22,7 +22,7 @@ public abstract class DrawerSettingsBase {
 
     public abstract void b();
 
-    public c() {
+    public DrawerSettingsBase() {
         this.a.position().y = (-this.a.c()) / 2.0f;
         this.b = new TextureElement(0, false);
         this.a.textures().addElement(this.b);
@@ -43,7 +43,7 @@ public abstract class DrawerSettingsBase {
     public void d() {
         if (!this.h) {
             this.h = true;
-            a().addChild(this.e);
+            DrawerSettingsBase().addChild(this.e);
             Bitmap bitmapA = x.a(DrawerSettingsData.d.tips_gesture_finger, this.a.b(), this.a.c());
             com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
             bitmapA.recycle();
@@ -69,7 +69,7 @@ public abstract class DrawerSettingsBase {
     public void a(float f, float f2) {
         this.e.position().x = f;
         this.e.position().y = f2;
-        h();
+        DrawerSettingsBase();
     }
 
     public void a(boolean z) {
@@ -113,7 +113,7 @@ public abstract class DrawerSettingsBase {
 
     public void j() {
         this.f = true;
-        l();
+        DrawerSettingsBase();
     }
 
     public void k() {
@@ -123,7 +123,7 @@ public abstract class DrawerSettingsBase {
     public void l() {
         if (!this.g && this.f) {
             this.g = true;
-            b();
+            DrawerSettingsBase();
         }
     }
 }

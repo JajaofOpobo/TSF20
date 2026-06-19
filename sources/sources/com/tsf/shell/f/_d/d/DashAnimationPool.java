@@ -6,12 +6,12 @@ import com.censivn.C3DEngine.b.f.k;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashAnimationPool extends k {
-    public class Body 
+    public Body a;
     public b d;
     private float e;
     private float f;
 
-    public c(b bVar, float f, float f2, int i, int i2, boolean z) {
+    public DashAnimationPool(b bVar, float f, float f2, int i, int i2, boolean z) {
         super(f, f2, i, i2);
         this.f = 57.29578f;
         this.d = bVar;
@@ -24,7 +24,7 @@ public class DashAnimationPool extends k {
         this.a.setAngularVelocity(0.017453292f);
     }
 
-    public c(b bVar, float f, float f2, int i, int i2, int i3, int i4, boolean z) {
+    public DashAnimationPool(b bVar, float f, float f2, int i, int i2, int i3, int i4, boolean z) {
         super(f, f2, i, i2);
         this.f = 57.29578f;
         this.d = bVar;

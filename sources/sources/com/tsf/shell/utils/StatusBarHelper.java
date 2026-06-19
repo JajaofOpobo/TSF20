@@ -127,7 +127,7 @@ public class StatusBarHelper {
     }
 
     public static boolean c() {
-        e();
+        StatusBarHelper();
         return a;
     }
 }

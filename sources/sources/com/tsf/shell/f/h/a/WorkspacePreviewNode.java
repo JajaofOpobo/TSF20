@@ -38,7 +38,7 @@ public class WorkspacePreviewNode extends com.tsf.shell.f.h.a.WorkspaceSceneNode
         int j();
     }
 
-    public c() {
+    public WorkspacePreviewNode() {
         int iAu = e.au();
         this.c = new d(this);
         this.c.a(0);
@@ -100,7 +100,7 @@ public class WorkspacePreviewNode extends com.tsf.shell.f.h.a.WorkspaceSceneNode
         if (i != 0) {
             return true;
         }
-        x();
+        a();
         return false;
     }
 
@@ -159,7 +159,7 @@ public class WorkspacePreviewNode extends com.tsf.shell.f.h.a.WorkspaceSceneNode
     }
 
     public void w() {
-        r();
-        p();
+        a();
+        a();
     }
 }

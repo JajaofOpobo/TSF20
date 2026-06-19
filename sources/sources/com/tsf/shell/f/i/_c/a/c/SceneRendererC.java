@@ -8,7 +8,7 @@ import com.tsf.shell.f.i._c.a.FolderSceneNodesyncTextureNode;
 public class SceneRendererC extends j {
     private a a;
 
-    public c(VTextureManager vTextureManager, Context context) {
+    public SceneRendererC(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) getVirtualTarget();
         this.a = new a();

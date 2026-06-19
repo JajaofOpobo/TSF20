@@ -18,7 +18,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     private int i;
     private ArrayList<com.tsf.shell.manager.o.a.TextLabelElement> j;
 
-    public d(String str) {
+    public PreferenceSettingD(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
         this.h = false;
         this.i = 0;
@@ -59,11 +59,11 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.a.position().y = -com.tsf.shell.manager.o.ButtonPresetManager.c.I;
         this.d.addChild(this.e);
         this.d.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
-        e().addChild(this.d);
+        PreferenceSettingD().addChild(this.d);
     }
 
     private void h() {
-        m();
+        PreferenceSettingD();
         Bitmap bitmapA = x.a(PreferenceSettingB.d.tsf_ico);
         com.censivn.C3DEngine.A.g().a(this.f, bitmapA);
         bitmapA.recycle();
@@ -96,7 +96,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     public void f() {
         super.f();
         this.h = true;
-        h();
+        PreferenceSettingD();
         int i = 0;
         while (true) {
             int i2 = i;
@@ -104,8 +104,8 @@ public class PreferenceSettingD extends PreferenceSettingBase {
                 this.j.get(i2).a(com.tsf.shell.manager.o.ButtonPresetManager.c);
                 i = i2 + 1;
             } else {
-                o();
-                n();
+                PreferenceSettingD();
+                PreferenceSettingD();
                 return;
             }
         }
@@ -121,7 +121,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
     public void c(int i) {
         super.c(i);
-        o();
+        PreferenceSettingD();
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
@@ -135,7 +135,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
                 this.j.get(i2).c();
                 i = i2 + 1;
             } else {
-                m();
+                PreferenceSettingD();
                 return;
             }
         }

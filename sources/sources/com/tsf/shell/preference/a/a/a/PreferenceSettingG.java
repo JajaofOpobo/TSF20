@@ -13,10 +13,10 @@ public class PreferenceSettingG extends PreferenceSettingBase {
     private ArrayList<com.tsf.shell.f._d.b.a.DashItemD> f;
     private m g;
 
-    public g(String str) {
+    public PreferenceSettingG(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(400.0f));
         this.a = new com.censivn.C3DEngine.b.f.j();
-        e().addChild(this.a);
+        PreferenceSettingG().addChild(this.a);
         this.b = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
         this.e = com.censivn.C3DEngine.b.b.A.a(40.0f);
         this.d = (this.b * 5.0f) + (this.e * 4.0f);
@@ -29,7 +29,7 @@ public class PreferenceSettingG extends PreferenceSettingBase {
         this.g.a(true);
         this.g.position().y = com.censivn.C3DEngine.b.b.A.a(200.0f);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.g, com.tsf.shell.manager.o.ThemeColorConstants.n);
-        e().addChild(this.g);
+        PreferenceSettingG().addChild(this.g);
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
@@ -56,7 +56,7 @@ public class PreferenceSettingG extends PreferenceSettingBase {
                 this.a.addChild(bVarE);
                 i = i2 + 1;
             } else {
-                h();
+                PreferenceSettingG();
                 return;
             }
         }
@@ -69,7 +69,7 @@ public class PreferenceSettingG extends PreferenceSettingBase {
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
     public void c(int i) {
         super.c(i);
-        h();
+        PreferenceSettingG();
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f

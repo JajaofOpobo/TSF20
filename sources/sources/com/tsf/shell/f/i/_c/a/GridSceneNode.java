@@ -16,12 +16,12 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GridSceneNode extends j {
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
-    public class TextureElement 
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
+    public TextureElement a;
     private final int g;
     private float h;
     private VValueTweenTarget m;
@@ -36,17 +36,17 @@ public class GridSceneNode extends j {
     private VTwist v;
     private VEffectsStack w;
 
-    public g(VTextureManager vTextureManager, Context context) {
+    public GridSceneNode(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
         this.g = 1000;
         this.h = 1.2f;
         this.m = new VValueTweenTarget();
-        h();
+        GridSceneNode();
     }
 
     private void h() {
-        j();
-        i();
+        GridSceneNode();
+        GridSceneNode();
     }
 
     private void i() {
@@ -322,7 +322,7 @@ public class GridSceneNode extends j {
 
     @Override // com.tsf.shell.f.i._c.a.ITextureCallback
     public void b() {
-        m();
+        GridSceneNode();
     }
 
     @Override // com.tsf.shell.f.i._c.a.ITextureCallback
@@ -343,6 +343,6 @@ public class GridSceneNode extends j {
         this.v.setAngle(0.0f);
         this.w.apply();
         this.t.updatePointsVBO();
-        e();
+        GridSceneNode();
     }
 }

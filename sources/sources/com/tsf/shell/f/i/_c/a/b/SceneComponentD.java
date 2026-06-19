@@ -14,7 +14,7 @@ public class SceneComponentD extends VObject3dContainer {
     private int f = 0;
     int b = 0;
 
-    public d() {
+    public SceneComponentD() {
         addChild(this.a);
     }
 
@@ -47,7 +47,7 @@ public class SceneComponentD extends VObject3dContainer {
         }
         this.g = bVar;
         this.g.a(this);
-        b();
+        SceneComponentD();
     }
 
     public void a(e eVar) {
@@ -60,7 +60,7 @@ public class SceneComponentD extends VObject3dContainer {
                 int i3 = (i2 <= i ? -2 : 2) + i;
                 this.a.a(a(i3), this.g.a(b(i3)));
             } else {
-                b();
+                SceneComponentD();
             }
         }
     }

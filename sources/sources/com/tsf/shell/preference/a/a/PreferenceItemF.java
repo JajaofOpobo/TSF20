@@ -14,7 +14,7 @@ public class PreferenceItemF extends i {
     private j b;
     private int c;
 
-    public f() {
+    public PreferenceItemF() {
         a(com.tsf.b.i.text_preferences);
         j jVar = new j();
         this.b = jVar;
@@ -96,6 +96,6 @@ public class PreferenceItemF extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
-        i();
+        PreferenceItemF();
     }
 }

@@ -51,7 +51,7 @@ public class DropIndicatorConfig {
 
     public void d() {
         while (this.b) {
-            e();
+            DropIndicatorConfig();
         }
     }
 
@@ -71,7 +71,7 @@ public class DropIndicatorConfig {
             com.censivn.C3DEngine.b.g.c.a(this.d);
             com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
             this.a.e();
-            h();
+            DropIndicatorConfig();
         }
     }
 
@@ -90,7 +90,7 @@ public class DropIndicatorConfig {
     public void j() {
         if (!this.b) {
             this.b = true;
-            k();
+            DropIndicatorConfig();
             this.c.removeFromParent();
             com.tsf.shell.manager.app.TaskScheduler.a(this.c);
             this.c.a();
@@ -107,7 +107,7 @@ public class DropIndicatorConfig {
             com.censivn.C3DEngine.b.g.c.a(this.d);
             com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
             this.a.a(this.c.c() + com.censivn.C3DEngine.b.b.A.a(100.0f));
-            f();
+            DropIndicatorConfig();
         }
     }
 

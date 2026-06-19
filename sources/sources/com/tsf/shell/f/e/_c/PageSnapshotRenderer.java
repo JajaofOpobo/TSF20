@@ -27,7 +27,7 @@ public class PageSnapshotRenderer extends j {
     private final int l = VEasing.Back.easeIn;
     public a c = this;
 
-    public A(float f, int i, int i2, Bitmap bitmap, int i3, float f2) {
+    public PageSnapshotRenderer(float f, int i, int i2, Bitmap bitmap, int i3, float f2) {
         this.d = 1.0f;
         this.e = 100.0f;
         this.f = this.e / 2.0f;
@@ -44,14 +44,14 @@ public class PageSnapshotRenderer extends j {
         com.censivn.C3DEngine.A.g().a(this.j, bitmap);
         bitmap.recycle();
         this.h = i3;
-        i();
+        PageSnapshotRenderer();
     }
 
-    public class TextureElement 
+    public TextureElement c() {
         return this.k;
     }
 
-    public class TextureElement 
+    public TextureElement d() {
         return this.j;
     }
 
@@ -175,15 +175,15 @@ public class PageSnapshotRenderer extends j {
 
     public void a(boolean z) {
         if (z) {
-            m();
+            PageSnapshotRenderer();
         } else {
-            f();
+            PageSnapshotRenderer();
         }
-        k();
+        PageSnapshotRenderer();
     }
 
     public void e() {
-        f();
+        PageSnapshotRenderer();
     }
 
     public void f() {
@@ -191,7 +191,7 @@ public class PageSnapshotRenderer extends j {
     }
 
     public void g() {
-        l();
+        PageSnapshotRenderer();
     }
 
     public void h() {
