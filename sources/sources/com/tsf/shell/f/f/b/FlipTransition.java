@@ -4,7 +4,7 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FlipTransition extends 
+public class FlipTransition extends ItemPageTransition {
     public FlipTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_flip, z);
     }

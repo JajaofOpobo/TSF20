@@ -71,7 +71,7 @@ public class PageAnimationState {
         public Object a;
         public int b;
 
-        public PageAnimationState(Object obj, int i) {
+        public b(Object obj, int i) {
             this.a = obj;
             this.b = i;
         }

@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.b;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WindmillTransition extends 
+public class WindmillTransition extends ItemPageTransition {
     final float a;
 
     public WindmillTransition(int i, boolean z) {

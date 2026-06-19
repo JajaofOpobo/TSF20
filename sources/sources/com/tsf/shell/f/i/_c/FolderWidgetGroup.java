@@ -181,7 +181,7 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     class a extends com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase {
         public j a;
 
-        public FolderWidgetGroup() {
+        public a() {
             super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
             this.a = new j();
             this.k.visible(true);

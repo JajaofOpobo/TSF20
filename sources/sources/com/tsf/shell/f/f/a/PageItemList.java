@@ -11,7 +11,7 @@ public class PageItemList {
     private boolean d = false;
     private ArrayList<com.tsf.shell.f.i.PageItem> b = new ArrayList<>();
 
-    public B(com.tsf.shell.manager.app.DataCoordinator eVar) {
+    public PageItemList(com.tsf.shell.manager.app.DataCoordinator eVar) {
         this.a = eVar;
     }
 

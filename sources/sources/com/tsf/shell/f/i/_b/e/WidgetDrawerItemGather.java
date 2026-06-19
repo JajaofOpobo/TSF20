@@ -128,7 +128,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
         private b j;
         private boolean k;
 
-        public WidgetDrawerItemGather(b bVar) {
+        public a(b bVar) {
             super(bVar);
             this.k = false;
             this.j = bVar;

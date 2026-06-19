@@ -11,7 +11,7 @@ public class DrawerSortBase extends com.tsf.shell.f.f.TransitionRenderer {
     protected Comparator<i> c;
     protected String d;
 
-    public c(int i, int i2) {
+    public DrawerSortBase(int i, int i2) {
         super(i2, i, false);
         this.d = x.c(i2);
     }

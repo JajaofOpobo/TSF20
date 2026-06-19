@@ -5,7 +5,7 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class CurveTransition extends 
+public class CurveTransition extends ItemPageTransition {
     private com.tsf.shell.f.f.PageShaderNode b;
 
     public CurveTransition(int i, boolean z) {

@@ -484,7 +484,7 @@ public class TextureElementC extends VObject3dContainer {
         private int c;
         private int d;
 
-        public TextureElementC(int i) {
+        public a(int i) {
             this.c = i;
             this.b = new Object[i];
         }
@@ -575,7 +575,7 @@ public class TextureElementC extends VObject3dContainer {
         public double e = 0.0d;
         public float b = 1.0f;
 
-        public TextureElementC() {
+        public C0117c() {
         }
 
         public void a(double d) {

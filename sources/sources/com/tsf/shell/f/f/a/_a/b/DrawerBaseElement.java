@@ -20,7 +20,7 @@ public class DrawerBaseElement extends j {
     public static int a = com.censivn.C3DEngine.b.b.A.b(138.0f);
     private static int c = com.censivn.C3DEngine.b.b.A.b(8.0f);
 
-    public b(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
+    public DrawerBaseElement(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
         this.g = cVar;
         if (d == null) {
             d = new k(a, a, false);

@@ -8,7 +8,7 @@ import com.tsf.shell.f.f.PageAnimationState;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FoldPageTransition extends 
+public class FoldPageTransition extends ItemPageTransition {
     private com.censivn.C3DEngine.b.f.h a;
     private com.censivn.C3DEngine.b.f.h b;
     private com.censivn.C3DEngine.b.f.h c;

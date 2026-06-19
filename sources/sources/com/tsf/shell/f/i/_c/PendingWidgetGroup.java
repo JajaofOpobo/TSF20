@@ -108,7 +108,7 @@ public class PendingWidgetGroup extends WidgetGroupBase {
         boolean i;
         float j;
 
-        public PendingWidgetGroup(float f, float f2, float f3, float f4, boolean z, boolean z2) {
+        public a(float f, float f2, float f3, float f4, boolean z, boolean z2) {
             super(f, f2, false);
             this.a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
             this.d = 10;

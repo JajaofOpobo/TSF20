@@ -13,7 +13,7 @@ public class FolderShortcutTouchHandler extends FolderContentList.a {
     private com.tsf.shell.f.i.a.PageItemTouchHandler f;
     private com.censivn.C3DEngine.b.d.a g;
 
-    public A(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
+    public FolderShortcutTouchHandler(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
         this.c = cVar;
         this.a = hVar;
         this.b = fVar;

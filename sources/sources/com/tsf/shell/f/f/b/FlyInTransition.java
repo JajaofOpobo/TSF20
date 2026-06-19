@@ -5,7 +5,7 @@ import com.tsf.b;
 import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FlyInTransition extends 
+public class FlyInTransition extends ItemPageTransition {
     public FlyInTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_fly_in, z);
     }

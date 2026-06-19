@@ -20,7 +20,7 @@ public class TransitionRenderer {
     private boolean f;
     private boolean g = false;
 
-    public f(int i, int i2, boolean z) {
+    public TransitionRenderer(int i, int i2, boolean z) {
         boolean z2 = false;
         this.a = 0;
         this.d = 0;

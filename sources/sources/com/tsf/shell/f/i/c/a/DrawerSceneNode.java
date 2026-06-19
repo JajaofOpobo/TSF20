@@ -29,7 +29,7 @@ public abstract class DrawerSceneNode<Params, Result> {
     private final AtomicBoolean g = new AtomicBoolean();
     private final AbstractCallableC0118c<Params, Result> h = new AbstractCallableC0118c<Params, Result>() { // from class: com.tsf.shell.f.i.c.a.c.2
         @Override // java.util.concurrent.Callable
-        public class Result 
+        public Result call() {
             FolderItemGroup.this.g.set(true);
             Process.setThreadPriority(10);
             return (Result) FolderItemGroup.this.d(FolderItemGroup.this.a((Object[]) this.b));
@@ -120,8 +120,8 @@ public abstract class DrawerSceneNode<Params, Result> {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public class Result 
-        VMessageManager.postGLThreadRunnable(new Runnable() { // from class: com.tsf.shell.f.i.c.a.c.4
+    public Result get() {
+            VMessageManager.postGLThreadRunnable(new Runnable() { // from class: com.tsf.shell.f.i.c.a.c.4
             /* JADX WARN: Multi-variable type inference failed */
             @Override // java.lang.Runnable
             public void run() {

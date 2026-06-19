@@ -12,7 +12,7 @@ import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ClothTransition extends 
+public class ClothTransition extends ItemPageTransition {
     private com.censivn.C3DEngine.b.f.j a;
     private C0108a b;
     private com.tsf.shell.f.f.WorkspacePage c;

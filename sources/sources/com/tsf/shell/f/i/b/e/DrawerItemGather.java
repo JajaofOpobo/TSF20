@@ -128,7 +128,7 @@ public class DrawerItemGather extends DrawerItemAction {
         private b j;
         private boolean k;
 
-        public DrawerItemGather(b bVar) {
+        public a(b bVar) {
             super(bVar);
             this.k = false;
             this.j = bVar;

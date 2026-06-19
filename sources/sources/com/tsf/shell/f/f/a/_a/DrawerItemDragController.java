@@ -18,7 +18,7 @@ public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.B {
     private float h = com.censivn.C3DEngine.b.b.A.a(30.0f);
     private g i;
 
-    public A() {
+    public DrawerItemDragController() {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a._a.a.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {

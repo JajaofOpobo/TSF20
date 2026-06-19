@@ -17,7 +17,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
     private k e;
     private float f;
 
-    public d(c cVar) {
+    public DrawerDragEffectController(c cVar) {
         super(cVar, b.d.allapps_recent_icon);
         this.d = new TextureElement(0, false);
         this.f = -com.censivn.C3DEngine.b.b.A.a(50.0f);

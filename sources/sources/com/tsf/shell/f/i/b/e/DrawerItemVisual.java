@@ -101,7 +101,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         launcherShortcutAppInfo.setWidget(this);
     }
 
-    public class TextureElement 
+    public TextureElement aA() {
         aA();
         return this.a.b();
     }
@@ -173,14 +173,14 @@ public class DrawerItemVisual extends DrawerItemBase {
         return gVar;
     }
 
-    public class LauncherShortcutAppInfo 
+    public LauncherShortcutAppInfo a() {
         LauncherShortcutAppInfo launcherShortcutAppInfo = new LauncherShortcutAppInfo();
         launcherShortcutAppInfo.title = bd().e;
         launcherShortcutAppInfo.intent = this.a.a;
         return launcherShortcutAppInfo;
     }
 
-    public class LauncherShortcutAppInfo 
+    public LauncherShortcutAppInfo b() {
         LauncherShortcutAppInfo launcherShortcutAppInfo = new LauncherShortcutAppInfo();
         launcherShortcutAppInfo.title = bd().e;
         launcherShortcutAppInfo.intent = this.a.a;

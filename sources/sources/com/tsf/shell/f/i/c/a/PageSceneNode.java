@@ -150,7 +150,7 @@ public class PageSceneNode extends j {
     }
 
     class a extends j.a {
-        public PageSceneNode(i iVar, int i, VObject3d... vObject3dArr) {
+        public a(i iVar, int i, VObject3d... vObject3dArr) {
             super(iVar, i, vObject3dArr);
         }
 

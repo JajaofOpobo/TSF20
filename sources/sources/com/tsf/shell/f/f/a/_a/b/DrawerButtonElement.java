@@ -10,7 +10,7 @@ public class DrawerButtonElement extends DrawerBaseElement {
     private TextureElement c;
     private int e;
 
-    public a(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar, int i) {
+    public DrawerButtonElement(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar, int i) {
         super(cVar);
         this.c = new TextureElement(0, false);
         this.e = i;

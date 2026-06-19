@@ -4,7 +4,7 @@ package com.tsf.shell.f.f.a._a.a;
 public class DrawerAppLayoutStrategy extends DrawerItemLayoutData {
     private com.tsf.shell.f.f.a._a.b.DrawerButtonElement a;
 
-    public a(com.tsf.shell.f.f.a._a.DrawerItemContainer cVar, int i) {
+    public DrawerAppLayoutStrategy(com.tsf.shell.f.f.a._a.DrawerItemContainer cVar, int i) {
         super(cVar);
         this.a = new com.tsf.shell.f.f.a._a.b.DrawerButtonElement(this, i);
         a((com.tsf.shell.f.f.a._a.b.DrawerBaseElement) this.a);

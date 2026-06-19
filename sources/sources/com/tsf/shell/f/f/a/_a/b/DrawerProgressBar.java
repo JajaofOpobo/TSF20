@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.m;
 public class DrawerProgressBar extends DrawerBaseElement {
     private m b;
 
-    public c(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
+    public DrawerProgressBar(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
         super(cVar);
         this.b = new m();
         this.b.d(75);

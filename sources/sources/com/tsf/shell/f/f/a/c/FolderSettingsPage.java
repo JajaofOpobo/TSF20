@@ -20,7 +20,7 @@ public class FolderSettingsPage extends FolderPageItemBase {
         public String a;
         public int c;
 
-        public FolderSettingsPage(int i, String str) {
+        public a(int i, String str) {
             this.c = i;
             this.b = str;
         }

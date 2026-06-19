@@ -325,7 +325,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
 
     /* JADX INFO: renamed from: com.tsf.shell.f.i._b.c.WidgetPageItem$a, reason: collision with other inner class name */
     class C0114a extends k {
-        public WidgetPageItem(float f, float f2, boolean z) {
+        public C0114a(float f, float f2, boolean z) {
             super(f, f2, false);
         }
     }
@@ -337,7 +337,7 @@ public class WidgetPageItem extends com.tsf.shell.f.i.PageItem implements com.ce
         private float g;
         private float h;
 
-        public WidgetPageItem(int i, int i2, int i3, int i4, int i5, int i6) {
+        public b(int i, int i2, int i3, int i4, int i5, int i6) {
             super(i * com.censivn.C3DEngine.b.b.A.b, i2 * com.censivn.C3DEngine.b.b.A.b, false);
             this.f = 0;
             this.d = i3;

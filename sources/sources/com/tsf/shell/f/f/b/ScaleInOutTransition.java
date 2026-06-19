@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ScaleInOutTransition extends 
+public class ScaleInOutTransition extends ItemPageTransition {
     public ScaleInOutTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_scale_in_out, z);
     }

@@ -149,7 +149,7 @@ public abstract class DrawerTransitionBase3DV2 extends DrawerTransitionBaseV2 {
     }
 
     public class a implements Comparator<com.censivn.C3DEngine.b.f.i> {
-        public DrawerTransitionBase3DV2() {
+        public a() {
         }
 
         @Override // java.util.Comparator

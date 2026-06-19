@@ -106,7 +106,7 @@ public class ItemDataState {
         public ArrayList<com.tsf.shell.f.i.b.c.ItemDataConfig> b = new ArrayList<>();
         public String a;
 
-        public ItemDataState(TextureElement textureElement, String str) {
+        public a(TextureElement textureElement, String str) {
             this.a = textureElement;
             this.c = str;
         }

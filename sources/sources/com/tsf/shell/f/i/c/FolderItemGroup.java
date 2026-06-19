@@ -181,7 +181,7 @@ public class FolderItemGroup extends ItemGroupBase {
     class a extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBase {
         public j a;
 
-        public FolderItemGroup() {
+        public a() {
             super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
             this.a = new j();
             this.k.visible(true);

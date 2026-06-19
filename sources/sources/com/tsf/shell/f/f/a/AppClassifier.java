@@ -96,7 +96,7 @@ public class AppClassifier {
         com.tsf.shell.manager.app.StateHub.t().aD();
     }
 
-    public class AsyncTask 
+    public ArrayList a(com.tsf.shell.plugin.classification.a aVar) {
         ArrayList arrayList = new ArrayList();
         for (com.tsf.shell.f.i.b.e.DrawerItemVisual gVar : com.tsf.shell.manager.app.ServiceProvider.a().d()) {
             if (!((LauncherShortcutAppInfo) gVar.K()).isHide) {

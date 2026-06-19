@@ -56,7 +56,7 @@ public class PageContainerBase extends PageContainerView {
         }
     }
 
-    public A(k kVar, InterfaceC0101a interfaceC0101a) {
+    public PageContainerBase(k kVar, InterfaceC0101a interfaceC0101a) {
         this.b = interfaceC0101a;
         a(kVar);
     }

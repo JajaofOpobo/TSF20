@@ -115,7 +115,7 @@ public class DrawerSpringPhysics {
         public float b = 1.0f;
         public Number3d a;
 
-        public DrawerSpringPhysics() {
+        public a() {
         }
 
         public void a(Double d, float f) {

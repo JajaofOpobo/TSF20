@@ -115,7 +115,7 @@ public class FolderSpringPhysics {
         public float b = 1.0f;
         public Number3d a;
 
-        public FolderSpringPhysics() {
+        public a() {
         }
 
         public void a(Double d, float f) {

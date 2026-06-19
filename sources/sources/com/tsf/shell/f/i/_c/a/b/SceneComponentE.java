@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 abstract class SceneComponentE {
     public TextureElement a;
 
-    public abstract class Bitmap 
+    public abstract void a(Bitmap bitmap);
 
     public abstract void a(Bitmap bitmap);
 

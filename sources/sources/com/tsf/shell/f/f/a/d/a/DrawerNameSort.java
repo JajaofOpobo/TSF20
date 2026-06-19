@@ -11,7 +11,7 @@ import java.util.Locale;
 public class DrawerNameSort extends DrawerSortBase {
     private Collator e;
 
-    public b(int i) {
+    public DrawerNameSort(int i) {
         super(com.tsf.b.d.drawer_sort_name, com.tsf.b.i.text_sort_alphabetical);
         this.a = i;
         this.e = Collator.getInstance(Locale.getDefault());

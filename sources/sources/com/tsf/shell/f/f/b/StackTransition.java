@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class StackTransition extends 
+public class StackTransition extends ItemPageTransition {
     public StackTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_stack, z);
     }

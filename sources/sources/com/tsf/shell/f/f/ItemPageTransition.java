@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class ItemPageTransition extends 
+public abstract class ItemPageTransition extends PageTransitionEffect {
     protected B a;
 
     public ItemPageTransition(int i, int i2, boolean z) {

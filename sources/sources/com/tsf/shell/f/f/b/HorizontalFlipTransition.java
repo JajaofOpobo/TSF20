@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.b;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class HorizontalFlipTransition extends 
+public class HorizontalFlipTransition extends ItemPageTransition {
     public HorizontalFlipTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_horizontal_flip, z);
     }

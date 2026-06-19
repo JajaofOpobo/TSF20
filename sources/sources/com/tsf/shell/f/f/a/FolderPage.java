@@ -1048,13 +1048,15 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void aK() {
-        FolderManager (this.at) {
-            Iterator<Runnable> it = this.as.iterator();
-            while (it.hasNext()) {
-                it.next().run();
+        new FolderManager(this.at) {
+            {
+                Iterator<Runnable> it = this.as.iterator();
+                while (it.hasNext()) {
+                    it.next().run();
+                }
+                this.as.clear();
             }
-            this.as.clear();
-        }
+        };
     }
 
     public int b(com.tsf.shell.f.i.PageItem bVar) {

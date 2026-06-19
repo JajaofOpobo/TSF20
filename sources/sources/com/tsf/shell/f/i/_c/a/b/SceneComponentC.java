@@ -19,7 +19,6 @@ public class SceneComponentC extends com.tsf.shell.f.i._c.a.FolderSceneNodesyncT
     public static l h;
     public final int a;
     public final int b;
-    public class TextureElement 
     long n;
     private h o;
     private h p;
@@ -91,7 +90,7 @@ public class SceneComponentC extends com.tsf.shell.f.i._c.a.FolderSceneNodesyncT
     class a extends j.a {
         private e h;
 
-        public SceneComponentC(e eVar) {
+        public a(e eVar) {
             super();
             this.h = eVar;
         }

@@ -9,5 +9,4 @@ public class DrawerItemLayoutData {
     public boolean e;
     public float f;
     public float g;
-    public class Object 
 }

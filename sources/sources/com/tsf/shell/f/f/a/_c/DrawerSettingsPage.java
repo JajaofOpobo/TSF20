@@ -20,7 +20,7 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
         public String b;
         public int c;
 
-        public DrawerSettingsPage(int i, String str) {
+        public a(int i, String str) {
             this.c = i;
             this.b = str;
         }

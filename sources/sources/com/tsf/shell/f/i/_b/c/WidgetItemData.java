@@ -106,7 +106,7 @@ public class WidgetItemData {
         public ArrayList<com.tsf.shell.f.i._b.c.WidgetPageItem> b = new ArrayList<>();
         public String a;
 
-        public WidgetItemData(TextureElement textureElement, String str) {
+        public a(TextureElement textureElement, String str) {
             this.a = textureElement;
             this.c = str;
         }

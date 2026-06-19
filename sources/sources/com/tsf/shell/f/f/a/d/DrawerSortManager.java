@@ -19,7 +19,7 @@ public class DrawerSortManager {
     private int f = -1;
     private ArrayList<c> c = new ArrayList<>();
 
-    public A(e eVar) {
+    public DrawerSortManager(e eVar) {
         this.b = eVar;
         this.c.add(new b(0));
         this.c.add(new com.tsf.shell.f.f.a.d.a.DrawerEarliestSort(2));

@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerLatestSort extends DrawerSortBase {
-    public f(int i) {
+    public DrawerLatestSort(int i) {
         super(DrawerNameSort.d.drawer_sort_time_latest, DrawerNameSort.i.text_sort_latest_installed);
         this.a = i;
         this.b = new Comparator<com.tsf.shell.f.i.PageItem>() { // from class: com.tsf.shell.f.f.a.d.a.DrawerLatestSort.1

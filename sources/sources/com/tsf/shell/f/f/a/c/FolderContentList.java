@@ -32,7 +32,7 @@ public class FolderContentList extends FolderPageItemBase {
     private Number3d z;
 
     public static class a extends com.censivn.C3DEngine.b.f.j {
-        public FolderContentList() {
+        public a() {
             visible(false);
             position().y = -com.censivn.C3DEngine.b.b.A.a(150.0f);
             alpha(0.0f);
