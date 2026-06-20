@@ -7,7 +7,7 @@ import android.content.IntentFilter;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class WallpaperChangeManager {
     private static c a = new c();
     private static C0068a b;
 
