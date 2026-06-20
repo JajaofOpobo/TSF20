@@ -21,7 +21,7 @@ public final class ba implements com.tsf.shell.bj {
     private com.censivn.C3DEngine.g.u f;
     private com.censivn.C3DEngine.g.u g;
     private com.censivn.C3DEngine.c.a j;
-    private com.censivn.C3DEngine.c.b.a k;
+    private com.censivn.C3DEngine.c.b.WavePhysicsSystem k;
     private float[] p;
     private float[] q;
     private int r;
@@ -134,7 +134,7 @@ public final class ba implements com.tsf.shell.bj {
         this.t = new bf(this);
         this.t.a(com.censivn.C3DEngine.g.a.g);
         this.j = new com.censivn.C3DEngine.c.a(this.c);
-        this.k = new com.censivn.C3DEngine.c.b.a(8.0f, 0.0f);
+        this.k = new com.censivn.C3DEngine.c.b.WavePhysicsSystem(8.0f, 0.0f);
         this.j.a(this.k);
         this.e = com.tsf.shell.workspace3D.bf.j();
         this.f = new bg(this);

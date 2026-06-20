@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PointBufferManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e {
+public class ParticleData {
     protected float a;
     protected float b;
     protected float c;
@@ -13,7 +13,7 @@ public class e {
     private float f;
     private int g;
     private PointBufferManager h;
-    private com.censivn.C3DEngine.c.a.a.b i;
+    private com.censivn.C3DEngine.c.a.a.DampedSpringConstraint i;
 
     public void a(int i, PointBufferManager pointBufferManager) {
         this.g = i;
@@ -114,11 +114,11 @@ public class e {
         this.c = c();
     }
 
-    public void a(com.censivn.C3DEngine.c.a.a.b bVar) {
+    public void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar) {
         this.i = bVar;
     }
 
-    public com.censivn.C3DEngine.c.a.a.b f() {
+    public com.censivn.C3DEngine.c.a.a.DampedSpringConstraint f() {
         return this.i;
     }
 }

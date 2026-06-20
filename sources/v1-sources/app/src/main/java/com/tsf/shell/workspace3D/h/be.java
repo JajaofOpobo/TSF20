@@ -45,8 +45,8 @@ final class be extends com.censivn.C3DEngine.e.b {
         float f9;
         float f10;
         com.censivn.C3DEngine.c.a aVar;
-        com.censivn.C3DEngine.c.b.a aVar2;
-        com.censivn.C3DEngine.c.b.a aVar3;
+        com.censivn.C3DEngine.c.b.WavePhysicsSystem aVar2;
+        com.censivn.C3DEngine.c.b.WavePhysicsSystem aVar3;
         boolean z5;
         z = this.a.u;
         if (z) {

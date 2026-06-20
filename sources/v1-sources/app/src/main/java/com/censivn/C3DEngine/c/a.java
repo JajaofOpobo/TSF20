@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.c;
 
 import com.censivn.C3DEngine.b.r;
-import com.censivn.C3DEngine.c.a.c;
-import com.censivn.C3DEngine.c.a.e;
+import com.censivn.C3DEngine.c.a.Particle;
+import com.censivn.C3DEngine.c.a.ParticleData;
 import java.util.ArrayList;
 
 /* loaded from: classes.dex */

@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.effects.modifiers;
 
 import com.censivn.C3DEngine.api.effects.VIEffects;
 import com.censivn.C3DEngine.api.effects.core.Vector3;
-import com.censivn.C3DEngine.c.b.b;
+import com.censivn.C3DEngine.c.b.SpringPhysicsSystem;
 
 /* loaded from: classes.dex */
 public class VTwist implements VIEffects {

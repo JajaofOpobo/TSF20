@@ -14,7 +14,7 @@ final class e extends v {
     @Override // com.censivn.C3DEngine.b.r
     public final void c() {
         boolean z;
-        com.censivn.C3DEngine.c.b.a aVar;
+        com.censivn.C3DEngine.c.b.WavePhysicsSystem aVar;
         com.censivn.C3DEngine.c.a aVar2;
         GLES20.glClear(256);
         GLES20.glEnable(2929);

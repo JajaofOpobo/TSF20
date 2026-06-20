@@ -6,9 +6,9 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
-    protected ArrayList<e> a = new ArrayList<>();
-    protected ArrayList<A> b = new ArrayList<>();
+public class Particle {
+    protected ArrayList<ParticleData> a = new ArrayList<>();
+    protected ArrayList<ConstraintList> b = new ArrayList<>();
     protected float c;
     protected float d;
     protected float e;
@@ -22,18 +22,18 @@ public class c {
     protected float m;
     protected float n;
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         PointBufferManager pointBufferManagerPoints = iVar.points();
         FacesBufferedList facesBufferedListFaces = iVar.faces();
         int size = pointBufferManagerPoints.size();
         int size2 = facesBufferedListFaces.size();
         for (int i = 0; i < size; i++) {
-            e eVar = new e();
+            ParticleData eVar = new ParticleData();
             eVar.a(i, pointBufferManagerPoints);
             this.a.add(eVar);
         }
         for (int i2 = 0; i2 < size2; i2++) {
-            A aVar = new A();
+            ConstraintList aVar = new ConstraintList();
             short propertyA = facesBufferedListFaces.getPropertyA(i2);
             short propertyB = facesBufferedListFaces.getPropertyB(i2);
             int propertyC = (int) facesBufferedListFaces.getPropertyC(i2);
@@ -44,7 +44,7 @@ public class c {
         }
     }
 
-    public void b(i iVar) {
+    public void b(IRenderable iVar) {
         PointBufferManager pointBufferManagerPoints = iVar.points();
         int size = pointBufferManagerPoints.size();
         for (int i = 0; i < size; i++) {
@@ -52,18 +52,18 @@ public class c {
         }
     }
 
-    public ArrayList<e> a() {
+    public ArrayList<ParticleData> a() {
         return this.a;
     }
 
-    public ArrayList<A> b() {
+    public ArrayList<ConstraintList> b() {
         return this.b;
     }
 
     public void c() {
         int size = a().size();
         for (int i = 0; i < size; i++) {
-            e eVar = a().get(i);
+            ParticleData eVar = a().get(i);
             if (i == 0) {
                 float fA = eVar.a();
                 this.c = fA;
@@ -115,7 +115,7 @@ public class c {
             this.i = 4;
         }
         for (int i2 = 0; i2 < size; i2++) {
-            e eVar2 = a().get(i2);
+            ParticleData eVar2 = a().get(i2);
             eVar2.a((eVar2.a() - this.f) / this.l, (eVar2.b() - this.g) / this.m, (eVar2.c() - this.h) / this.n);
         }
     }

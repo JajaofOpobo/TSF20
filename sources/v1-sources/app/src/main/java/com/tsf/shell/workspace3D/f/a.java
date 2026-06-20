@@ -11,7 +11,7 @@ public final class a extends v {
     private com.censivn.C3DEngine.e.b B;
     private com.censivn.C3DEngine.e.b C;
     private com.censivn.C3DEngine.c.a D;
-    private com.censivn.C3DEngine.c.b.a E;
+    private com.censivn.C3DEngine.c.b.WavePhysicsSystem E;
     private int F;
     private int G;
     private float H;
@@ -71,7 +71,7 @@ public final class a extends v {
                 if (i2 >= this.G + 1) {
                     return;
                 }
-                com.censivn.C3DEngine.c.a.a.b bVar2 = (com.censivn.C3DEngine.c.a.a.b) b.get(this.M - i2);
+                com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2 = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) b.get(this.M - i2);
                 bVar2.a((((this.L * i2) + f) - this.F) + this.O + 1.0f);
                 bVar2.c(0.0f);
                 i = i2 + 1;

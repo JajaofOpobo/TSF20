@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.c.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class ParticleTransform {
     public float a = 1.0f;
     public float b = 0.0f;
     public float c = 0.0f;

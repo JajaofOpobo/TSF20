@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.c.a.a;
 
-import com.censivn.C3DEngine.c.a.e;
+import com.censivn.C3DEngine.c.a.ParticleData;
 
 /* loaded from: classes.dex */
 public final class b {

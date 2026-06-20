@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.c.b;
 
 import com.censivn.C3DEngine.api.effects.core.Vector3;
-import com.censivn.C3DEngine.c.a.d;
-import com.censivn.C3DEngine.c.a.e;
+import com.censivn.C3DEngine.c.a.BaseParticle;
+import com.censivn.C3DEngine.c.a.ParticleData;
 
 /* loaded from: classes.dex */
 public final class b extends d implements com.censivn.C3DEngine.c.b {
@@ -26,14 +26,14 @@ public final class b extends d implements com.censivn.C3DEngine.c.b {
             float a = eVar.a();
             float b = eVar.b();
             float c = eVar.c();
-            com.censivn.C3DEngine.c.a.b bVar = new com.censivn.C3DEngine.c.a.b();
+            com.censivn.C3DEngine.c.a.ParticleTransform bVar = new com.censivn.C3DEngine.c.a.ParticleTransform();
             bVar.d = a;
             bVar.h = b;
             bVar.l = c;
             float f2 = this.b.x;
             float f3 = this.b.y;
             float f4 = this.b.z;
-            com.censivn.C3DEngine.c.a.b bVar2 = new com.censivn.C3DEngine.c.a.b();
+            com.censivn.C3DEngine.c.a.ParticleTransform bVar2 = new com.censivn.C3DEngine.c.a.ParticleTransform();
             float cos = (float) Math.cos(dot);
             float sin = (float) Math.sin(dot);
             float f5 = 1.0f - cos;
@@ -55,7 +55,7 @@ public final class b extends d implements com.censivn.C3DEngine.c.b {
             bVar2.j = f11 + f7;
             bVar2.k = (f4 * f4 * f5) + cos;
             bVar2.l = 0.0f;
-            com.censivn.C3DEngine.c.a.b bVar3 = new com.censivn.C3DEngine.c.a.b();
+            com.censivn.C3DEngine.c.a.ParticleTransform bVar3 = new com.censivn.C3DEngine.c.a.ParticleTransform();
             float f12 = bVar2.a;
             float f13 = bVar.a;
             float f14 = bVar2.e;

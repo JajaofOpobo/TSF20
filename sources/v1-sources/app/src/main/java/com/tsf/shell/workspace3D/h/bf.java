@@ -17,7 +17,7 @@ final class bf extends com.censivn.C3DEngine.g.u {
         float[] fArr4;
         float[] fArr5;
         float[] fArr6;
-        com.censivn.C3DEngine.c.b.a aVar;
+        com.censivn.C3DEngine.c.b.WavePhysicsSystem aVar;
         int i2 = 0;
         while (true) {
             int i3 = i2;
@@ -36,7 +36,7 @@ final class bf extends com.censivn.C3DEngine.g.u {
                 fArr6 = this.a.p;
                 float f7 = fArr6[i3 + 2];
                 aVar = this.a.k;
-                ((com.censivn.C3DEngine.c.a.a.b) aVar.b().get(i3 / 3)).a(f2 + ((f5 - f2) * f), f3 + ((f6 - f3) * f), f4 + ((f7 - f4) * f));
+                ((com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) aVar.b().get(i3 / 3)).a(f2 + ((f5 - f2) * f), f3 + ((f6 - f3) * f), f4 + ((f7 - f4) * f));
                 i2 = i3 + 3;
             } else {
                 return;

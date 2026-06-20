@@ -8,7 +8,7 @@ public final class ab {
     private ai a;
     private com.censivn.C3DEngine.e.b b = new com.censivn.C3DEngine.e.b(512.0f, 640.0f, 8, 10, false);
     private TextureElement c;
-    private com.censivn.C3DEngine.c.b.b d;
+    private com.censivn.C3DEngine.c.b.SpringPhysicsSystem d;
     private com.censivn.C3DEngine.c.a e;
     private com.tsf.shell.workspace3D.d.a f;
 
@@ -27,7 +27,7 @@ public final class ab {
             i2++;
             i = i3;
         }
-        this.d = new com.censivn.C3DEngine.c.b.b(0.0f);
+        this.d = new com.censivn.C3DEngine.c.b.SpringPhysicsSystem(0.0f);
         this.d.d = new Vector3(0.0f, -128.0f, 0.0f);
         this.e = new com.censivn.C3DEngine.c.a(this.b);
         this.e.a(this.d);

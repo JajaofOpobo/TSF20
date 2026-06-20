@@ -10,7 +10,7 @@ final class ag extends com.censivn.C3DEngine.g.u {
 
     @Override // com.censivn.C3DEngine.g.u
     public final void a(float f) {
-        com.censivn.C3DEngine.c.b.b bVar;
+        com.censivn.C3DEngine.c.b.SpringPhysicsSystem bVar;
         com.censivn.C3DEngine.c.a aVar;
         bVar = this.a.d;
         bVar.c = (float) (f * 0.5d);

@@ -1,13 +1,13 @@
 package com.censivn.C3DEngine.c.b;
 
-import com.censivn.C3DEngine.c.a.d;
-import com.censivn.C3DEngine.c.a.e;
+import com.censivn.C3DEngine.c.a.BaseParticle;
+import com.censivn.C3DEngine.c.a.ParticleData;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends d implements com.censivn.C3DEngine.c.B {
-    private ArrayList<com.censivn.C3DEngine.c.a.a.b> b;
-    private ArrayList<com.censivn.C3DEngine.c.a.a.a> c;
+public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem {
+    private ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> b;
+    private ArrayList<com.censivn.C3DEngine.c.a.a.SpringConstraint> c;
     private float d;
     private float e;
     private float f;
@@ -21,7 +21,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
     private float n;
     private float o;
 
-    public b(float f, float f2) {
+    public SpringPhysicsSystem(float f, float f2) {
         this.d = 0.0f;
         this.e = 0.0f;
         this.f = 0.0f;
@@ -29,11 +29,11 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         a(f2);
     }
 
-    public b() {
+    public SpringPhysicsSystem() {
         this(1.0f, 0.0f);
     }
 
-    public ArrayList<com.censivn.C3DEngine.c.a.a.b> b() {
+    public ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> b() {
         return this.b;
     }
 
@@ -66,15 +66,15 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         this.f = f;
     }
 
-    @Override // com.censivn.C3DEngine.c.a.d, com.censivn.C3DEngine.c.B
-    public void a(com.censivn.C3DEngine.c.a.c cVar) {
+    @Override // com.censivn.C3DEngine.c.a.BaseParticle, com.censivn.C3DEngine.c.IPhysicsSystem
+    public void a(com.censivn.C3DEngine.c.a.Particle cVar) {
         super.a(cVar);
         c();
         d();
         b(this.g);
     }
 
-    @Override // com.censivn.C3DEngine.c.B
+    @Override // com.censivn.C3DEngine.c.IPhysicsSystem
     public void a() {
         int size = this.c.size();
         for (int i = 0; i < size; i++) {
@@ -82,7 +82,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         }
         int size2 = this.b.size();
         for (int i2 = 0; i2 < size2; i2++) {
-            com.censivn.C3DEngine.c.a.a.b bVar = this.b.get(i2);
+            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = this.b.get(i2);
             if (bVar.d) {
                 bVar.a(bVar.b() + this.d);
             }
@@ -117,23 +117,23 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
     }
 
     private void c() {
-        ArrayList<e> arrayListA = this.a.a();
+        ArrayList<ParticleData> arrayListA = this.a.a();
         int size = arrayListA.size();
         this.b = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            e eVar = arrayListA.get(i);
-            com.censivn.C3DEngine.c.a.a.b bVar = new com.censivn.C3DEngine.c.a.a.b(eVar);
+            ParticleData eVar = arrayListA.get(i);
+            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = new com.censivn.C3DEngine.c.a.a.DampedSpringConstraint(eVar);
             eVar.a(bVar);
             this.b.add(bVar);
         }
     }
 
     private void d() {
-        ArrayList<com.censivn.C3DEngine.c.a.A> arrayListB = this.a.b();
+        ArrayList<com.censivn.C3DEngine.c.a.ConstraintList> arrayListB = this.a.b();
         int size = arrayListB.size();
         this.c = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            ArrayList<e> arrayListA = arrayListB.get(i).a();
+            ArrayList<ParticleData> arrayListA = arrayListB.get(i).a();
             int size2 = arrayListA.size();
             for (int i2 = 0; i2 < size2 - 1; i2++) {
                 a(arrayListA.get(i2).f(), arrayListA.get(i2 + 1).f());
@@ -145,7 +145,7 @@ public class b extends d implements com.censivn.C3DEngine.c.B {
         }
     }
 
-    private void a(com.censivn.C3DEngine.c.a.a.b bVar, com.censivn.C3DEngine.c.a.a.b bVar2) {
-        this.c.add(new com.censivn.C3DEngine.c.a.a.a(bVar, bVar2, bVar.a(bVar2), this.g));
+    private void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar, com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2) {
+        this.c.add(new com.censivn.C3DEngine.c.a.a.SpringConstraint(bVar, bVar2, bVar.a(bVar2), this.g));
     }
 }

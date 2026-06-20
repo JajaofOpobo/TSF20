@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.c;
 
-import com.censivn.C3DEngine.c.a.c;
+import com.censivn.C3DEngine.c.a.Particle;
 
 /* loaded from: classes.dex */
 public interface b {

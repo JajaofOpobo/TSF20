@@ -9,8 +9,8 @@ import com.tsf.shell.f.f.PageAnimationState;
 public class CylinderTransition extends ItemPageTransition {
     private com.censivn.C3DEngine.b.f.BaseRenderable a;
     private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable b;
-    private com.censivn.C3DEngine.c.A c;
-    private com.censivn.C3DEngine.c.b.a d;
+    private com.censivn.C3DEngine.c.PhysicsSystem c;
+    private com.censivn.C3DEngine.c.b.WavePhysicsSystem d;
     private int e;
     private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper f;
     private com.censivn.C3DEngine.b.f.GridRenderable g;
@@ -29,8 +29,8 @@ public class CylinderTransition extends ItemPageTransition {
             this.b.useVBO(false);
             this.b.doubleSidedEnabled(true);
             this.a.addChild(this.b);
-            this.c = new com.censivn.C3DEngine.c.A(this.b);
-            this.d = new com.censivn.C3DEngine.c.b.a(0.0f, 0.0f);
+            this.c = new com.censivn.C3DEngine.c.PhysicsSystem(this.b);
+            this.d = new com.censivn.C3DEngine.c.b.WavePhysicsSystem(0.0f, 0.0f);
             this.d.a(1);
             this.d.b(0.5f);
             this.c.a(this.d);

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.c.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class BaseParticle {
     protected c a;
 
     public void a(c cVar) {

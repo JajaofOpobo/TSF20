@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.c.a.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class SpringConstraint {
     private b a;
     private b b;
     private float c;

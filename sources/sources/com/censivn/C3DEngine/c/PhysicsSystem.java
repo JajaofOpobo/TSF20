@@ -1,11 +1,11 @@
 package com.censivn.C3DEngine.c;
 
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.c.a.c;
+import com.censivn.C3DEngine.c.a.Particle;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A {
+public class PhysicsSystem {
     c a = new c();
     ArrayList<B> b;
 
