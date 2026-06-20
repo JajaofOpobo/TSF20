@@ -9,7 +9,7 @@ public class TypefaceCache {
     private static Typeface a = null;
 
     public static void a() {
-        File fileA = o.a(com.censivn.C3DEngine.A.d().getCacheDir(), "/fonts/select.ttf");
+        File fileA = o.a(com.censivn.C3DEngine.C3DEngine.d().getCacheDir(), "/fonts/select.ttf");
         if (fileA.exists()) {
             a = Typeface.createFromFile(fileA);
         }

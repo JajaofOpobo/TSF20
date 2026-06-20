@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.message;
 
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VMessageManager {

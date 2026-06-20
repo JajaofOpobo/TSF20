@@ -27,13 +27,13 @@ public class PreferenceSettingC extends PreferenceSettingBase {
 
         public void a() {
             if (this.c.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.c, this.a);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.c, this.a);
             }
         }
 
         public void b() {
             if (this.c.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.c);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.c);
             }
         }
     }

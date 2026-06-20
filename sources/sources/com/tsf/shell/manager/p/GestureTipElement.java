@@ -13,8 +13,8 @@ public class GestureTipElement extends j {
     private k d;
 
     public void a() {
-        com.censivn.C3DEngine.A.g().a(this.a);
-        com.censivn.C3DEngine.A.g().a(this.b);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.b);
     }
 
     public void a(float f, float f2, int i, Runnable runnable) {
@@ -31,7 +31,7 @@ public class GestureTipElement extends j {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 if (runnable != null) {
-                    com.censivn.C3DEngine.A.a().b(runnable, i);
+                    com.censivn.C3DEngine.C3DEngine.a().b(runnable, i);
                 }
             }
         };
@@ -45,7 +45,7 @@ public class GestureTipElement extends j {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
                 if (runnable != null) {
-                    com.censivn.C3DEngine.A.a().b(runnable, i);
+                    com.censivn.C3DEngine.C3DEngine.a().b(runnable, i);
                 }
             }
         };
@@ -57,8 +57,8 @@ public class GestureTipElement extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.a.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.a, b.d.tips_gesture_finger);
-            com.censivn.C3DEngine.A.g().a(this.b, b.d.tips_finger_point2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, b.d.tips_gesture_finger);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.b, b.d.tips_finger_point2);
         }
     }
 

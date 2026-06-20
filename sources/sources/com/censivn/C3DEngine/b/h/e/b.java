@@ -202,7 +202,7 @@ public class b extends j {
                 if (b.this.z) {
                     if (this.h != null && this.d && !this.f) {
                         this.f = true;
-                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.e.b.2.1
+                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.e.b.2.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 AnonymousClass2.this.f = false;

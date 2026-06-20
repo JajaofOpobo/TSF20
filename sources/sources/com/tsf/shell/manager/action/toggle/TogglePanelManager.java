@@ -135,7 +135,7 @@ public class TogglePanelManager {
     public TextureElement b() {
         if (this.s.id == 0) {
             Bitmap bitmapA = x.a(b.d.toggle_shortcut_circle, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I);
-            com.censivn.C3DEngine.A.g().a(this.s, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.s, bitmapA);
             bitmapA.recycle();
         }
         return this.s;
@@ -144,7 +144,7 @@ public class TogglePanelManager {
     public TextureElement c() {
         if (this.t.id == 0) {
             Bitmap bitmapA = x.a(b.d.toggle_shortcut_circle_loading, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I);
-            com.censivn.C3DEngine.A.g().a(this.t, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.t, bitmapA);
             bitmapA.recycle();
         }
         return this.t;

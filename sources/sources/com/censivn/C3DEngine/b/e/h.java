@@ -59,14 +59,14 @@ public class h extends f {
         }
         if (this.l.id == 0) {
             Bitmap bitmapB = q.b(30.0f, -1);
-            com.censivn.C3DEngine.A.g().a(this.l, bitmapB);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.l, bitmapB);
             bitmapB.recycle();
         }
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
-        com.censivn.C3DEngine.A.g().a(this.l);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.l);
         this.d.a();
         this.e.a();
         if (this.f != null) {

@@ -33,7 +33,7 @@ public class DashLayoutListener extends h {
         this.b = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().b(c.this.c, 300L);
+                com.censivn.C3DEngine.C3DEngine.a().b(c.this.c, 300L);
             }
         };
         this.c = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.2
@@ -64,13 +64,13 @@ public class DashLayoutListener extends h {
             this.f.run();
         }
         if (h.id == 0) {
-            com.censivn.C3DEngine.A.g().a(h, DashLayoutB.d.menu_effect_element);
+            com.censivn.C3DEngine.C3DEngine.g().a(h, DashLayoutB.d.menu_effect_element);
         }
     }
 
     public static void a() {
         if (h.id != 0) {
-            com.censivn.C3DEngine.A.g().a(h);
+            com.censivn.C3DEngine.C3DEngine.g().a(h);
         }
         h.b();
     }

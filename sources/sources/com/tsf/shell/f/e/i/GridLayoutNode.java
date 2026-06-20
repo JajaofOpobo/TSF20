@@ -20,7 +20,7 @@ public class GridLayoutNode extends j {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (a.d.id == 0) {
-                com.censivn.C3DEngine.A.g().a(a.d, GridLayoutData.d.mark_star_disable);
+                com.censivn.C3DEngine.C3DEngine.g().a(a.d, GridLayoutData.d.mark_star_disable);
             }
         }
     };
@@ -51,28 +51,28 @@ public class GridLayoutNode extends j {
 
     public static void b() {
         if (GridLayoutRenderer.id != 0) {
-            com.censivn.C3DEngine.A.g().a(GridLayoutRenderer);
+            com.censivn.C3DEngine.C3DEngine.g().a(GridLayoutRenderer);
         }
         if (GridLayoutParams.id != 0) {
-            com.censivn.C3DEngine.A.g().a(GridLayoutParams);
+            com.censivn.C3DEngine.C3DEngine.g().a(GridLayoutParams);
         }
         if (e.id != 0) {
-            com.censivn.C3DEngine.A.g().a(e);
+            com.censivn.C3DEngine.C3DEngine.g().a(e);
         }
         if (f.id != 0) {
-            com.censivn.C3DEngine.A.g().a(f);
+            com.censivn.C3DEngine.C3DEngine.g().a(f);
         }
     }
 
     private void f() {
         if (GridLayoutRenderer.id == 0) {
-            com.censivn.C3DEngine.A.g().a(c, GridLayoutData.d.mark_star_enable);
+            com.censivn.C3DEngine.C3DEngine.g().a(c, GridLayoutData.d.mark_star_enable);
         }
         if (e.id == 0) {
-            com.censivn.C3DEngine.A.g().a(e, GridLayoutData.d.mark_little_star_w);
+            com.censivn.C3DEngine.C3DEngine.g().a(e, GridLayoutData.d.mark_little_star_w);
         }
         if (f.id == 0) {
-            com.censivn.C3DEngine.A.g().a(f, GridLayoutData.d.mark_little_star_y);
+            com.censivn.C3DEngine.C3DEngine.g().a(f, GridLayoutData.d.mark_little_star_y);
         }
     }
 

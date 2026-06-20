@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.Display;
-import com.censivn.C3DEngine.a.e;
+import com.censivn.C3DEngine.a.RendererImpl;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.utils.DimensionHelper;
@@ -134,7 +134,7 @@ public class A {
             c();
             com.tsf.shell.manager.A.b.a(B, C, z, A);
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.b.a.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     a.b();

@@ -75,18 +75,18 @@ public class FolderItemGroup extends ItemGroupBase {
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
     public void b() {
-        com.censivn.C3DEngine.A.g().a(this.p);
-        com.censivn.C3DEngine.A.g().a(this.q);
-        com.censivn.C3DEngine.A.g().a(this.r);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.p);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.q);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.r);
     }
 
     private void p() {
         if (this.p.id == 0) {
             int i = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
             int i2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
-            com.censivn.C3DEngine.A.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
-            com.censivn.C3DEngine.A.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
-            com.censivn.C3DEngine.A.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
+            com.censivn.C3DEngine.C3DEngine.g().a(this.p, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon1, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
+            com.censivn.C3DEngine.C3DEngine.g().a(this.q, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon2, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
+            com.censivn.C3DEngine.C3DEngine.g().a(this.r, LauncherShortcutStandardInfo.createTextureBitmap(null, "", x.a(DeferredItemGroup.d.widget_item_folder_icon3, i, i2), com.tsf.shell.manager.o.ButtonPresetManager.a, i, i2, false));
         }
     }
 
@@ -102,7 +102,7 @@ public class FolderItemGroup extends ItemGroupBase {
 
     private void q() {
         if (this.v != null) {
-            com.censivn.C3DEngine.A.a().g(this.v);
+            com.censivn.C3DEngine.C3DEngine.a().g(this.v);
         }
         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.u.get(0);
         com.censivn.C3DEngine.b.g.c.a(bVar);
@@ -142,10 +142,10 @@ public class FolderItemGroup extends ItemGroupBase {
                         c.this.l.e(bVar4);
                     }
                 };
-                com.censivn.C3DEngine.A.a().b(c.this.v, 1000L);
+                com.censivn.C3DEngine.C3DEngine.a().b(c.this.v, 1000L);
             }
         };
-        com.censivn.C3DEngine.A.a().b(this.v, 1000L);
+        com.censivn.C3DEngine.C3DEngine.a().b(this.v, 1000L);
     }
 
     private j r() {

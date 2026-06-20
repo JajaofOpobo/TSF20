@@ -256,7 +256,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
 
     public void n() {
         if (!com.censivn.C3DEngine.a.e.l()) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.h.WorkspaceStub.6
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.h.WorkspaceStub.6
                 @Override // java.lang.Runnable
                 public void run() {
                     WorkspaceStub.this.n();

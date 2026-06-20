@@ -57,10 +57,10 @@ public class SnapshotActionContext extends VObject3dContainer {
         canvas.drawCircle(f5, (f4 / 2.0f) - f2, f, paint);
         canvas.drawCircle(f5, (f4 / 2.0f) + f2, f, paint);
         if (this.c != null) {
-            com.censivn.C3DEngine.A.g().a(this.c);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c);
             this.a.textures().removeAll();
         }
-        this.c = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap, true);
+        this.c = com.censivn.C3DEngine.C3DEngine.g().a(bitmapCreateBitmap, true);
         this.a.textures().addElement(this.c);
         bitmapCreateBitmap.recycle();
     }
@@ -80,7 +80,7 @@ public class SnapshotActionContext extends VObject3dContainer {
 
     public void a() {
         if (this.c != null) {
-            com.censivn.C3DEngine.A.g().a(this.c);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c);
             this.a.textures().removeAll();
             this.c = null;
         }

@@ -56,7 +56,7 @@ public class HitTargetManager {
             if (fVar.o()) {
                 x.a(motionEvent, this.a);
                 if (!this.b) {
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.HitTargetManager.a.1
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.HitTargetManager.a.1
                         @Override // java.lang.Runnable
                         public void run() {
                             ILayoutItem fVarA = fVar.a((int) C0127a.this.a[0], (int) C0127a.this.a[1]);

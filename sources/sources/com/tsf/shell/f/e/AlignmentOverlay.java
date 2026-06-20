@@ -33,14 +33,14 @@ public class AlignmentOverlay {
         d = 25.0f * com.censivn.C3DEngine.b.b.A.a;
         k = new C0091a();
         Bitmap bitmapA = x.a(b.d.alignment_light);
-        e = com.censivn.C3DEngine.A.g().a(bitmapA, true);
+        e = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, true);
         bitmapA.recycle();
         Bitmap bitmapA2 = x.a(b.d.alignment_unmatch_bg);
-        f = com.censivn.C3DEngine.A.g().a(bitmapA2, true);
+        f = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA2, true);
         i = f.id;
         bitmapA2.recycle();
         Bitmap bitmapA3 = x.a(b.d.alignment_match_bg);
-        g = com.censivn.C3DEngine.A.g().a(bitmapA3, true);
+        g = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA3, true);
         h = AlignmentBackKeyHandler.id;
         bitmapA3.recycle();
         a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.e.a.1

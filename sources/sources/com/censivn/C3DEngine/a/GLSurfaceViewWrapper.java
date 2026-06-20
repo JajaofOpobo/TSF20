@@ -4,18 +4,18 @@ import android.content.Context;
 import android.opengl.GLSurfaceView;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends GLSurfaceView {
+public class GLSurfaceViewWrapper extends GLSurfaceView {
     public a(Context context) {
         super(context);
     }
 
     @Override // android.opengl.GLSurfaceView
     public void onResume() {
-        com.censivn.C3DEngine.A.e().i();
+        com.censivn.C3DEngine.C3DEngine.e().i();
     }
 
     @Override // android.opengl.GLSurfaceView
     public void onPause() {
-        com.censivn.C3DEngine.A.e().h();
+        com.censivn.C3DEngine.C3DEngine.e().h();
     }
 }

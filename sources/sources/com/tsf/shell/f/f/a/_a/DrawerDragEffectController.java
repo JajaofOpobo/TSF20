@@ -40,7 +40,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.d.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(d.this.d, b.d.allapps_direction_swap);
+                    com.censivn.C3DEngine.C3DEngine.g().a(d.this.d, b.d.allapps_direction_swap);
                 }
             }
         };
@@ -102,7 +102,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
     public void f() {
         super.f();
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
         v();
     }

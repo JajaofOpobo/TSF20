@@ -260,7 +260,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         int cacheHeight = getCacheHeight();
         tempPosition.setAllFrom(position());
         com.tsf.shell.f.a.a.a aVarA = com.tsf.shell.manager.A.t.a(cacheWidth, cacheHeight);
-        this.cacheTextureElement = com.censivn.C3DEngine.A.g().a(cacheWidth, cacheHeight, false);
+        this.cacheTextureElement = com.censivn.C3DEngine.C3DEngine.g().a(cacheWidth, cacheHeight, false);
         com.tsf.shell.manager.A.t.a(aVarA, this.cacheTextureElement);
         position().setAll(0.0f, 0.0f, 0.0f);
         dispatchDraw();
@@ -280,7 +280,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
 
     private void recycleCacheTexture() {
         if (this.cacheTextureElement != null && this.cacheTextureElement.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.cacheTextureElement);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.cacheTextureElement);
         }
     }
 
@@ -323,11 +323,11 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public void invalidate() {
-        com.censivn.C3DEngine.A.e().j();
+        com.censivn.C3DEngine.C3DEngine.e().j();
     }
 
     public void invalidateHighPriority() {
-        com.censivn.C3DEngine.A.e().k();
+        com.censivn.C3DEngine.C3DEngine.e().k();
     }
 
     public void setHighPriorityAnimationObjectState(boolean z) {
@@ -657,7 +657,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         float f2;
         float f3;
         float f4;
-        com.censivn.C3DEngine.A.e().a(this);
+        com.censivn.C3DEngine.C3DEngine.e().a(this);
         updateTextureState();
         MatrixStack.ColorInfo colorInfoGlColor = MatrixStack.glColor();
         float f5 = (this.mAlpha / 255.0f) * colorInfoGlColor.alpha;
@@ -861,7 +861,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdatePointVBO() {
         if (!this.isUpdatePointsVBO) {
             this.isUpdatePointsVBO = true;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.1
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updatePointsVBO();
@@ -873,7 +873,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateUvsVBO() {
         if (!this.isUpdateUvsVBO) {
             this.isUpdateUvsVBO = true;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.2
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateUvsVBO();
@@ -885,7 +885,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateFacesVBO() {
         if (!this.isUpdateFacesVBO) {
             this.isUpdateFacesVBO = true;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.3
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.3
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateFacesVBO();
@@ -952,7 +952,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
             number3d.y += number3dRotation.y;
             number3d.z = number3dRotation.z + number3d.z;
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -966,7 +966,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         while (true) {
             arrayList.add(current);
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -992,7 +992,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         while (true) {
             arrayList.add(current);
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -1019,7 +1019,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
             number3d.y *= current.scale().y;
             number3d.z *= current.scale().z;
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -1036,7 +1036,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
             number3d.y += positionNumber3dPosition.y;
             number3d.z = positionNumber3dPosition.z + number3d.z;
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -1053,7 +1053,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         while (true) {
             arrayList.add(current);
             Object objParent = current.parent();
-            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.g)) {
+            if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
             current = (i) objParent;
@@ -1460,7 +1460,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     }
 
     public static void disableLauncher() {
-        com.censivn.C3DEngine.A.d().getPackageManager().setComponentEnabledSetting(new ComponentName(Home.b(), Home.class.getName()), 2, 1);
+        com.censivn.C3DEngine.C3DEngine.d().getPackageManager().setComponentEnabledSetting(new ComponentName(Home.b(), Home.class.getName()), 2, 1);
     }
 
     public static class a {

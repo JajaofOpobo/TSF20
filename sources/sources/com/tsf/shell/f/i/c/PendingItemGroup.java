@@ -25,21 +25,21 @@ public class PendingItemGroup extends ItemGroupBase {
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
     public void b() {
-        com.censivn.C3DEngine.A.g().a(this.p);
-        com.censivn.C3DEngine.A.g().a(this.q);
-        com.censivn.C3DEngine.A.g().a(this.r);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.p);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.q);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.r);
     }
 
     private void p() {
         if (this.p.id == 0) {
             Bitmap bitmapA = x.a(DeferredItemGroup.d.cloud2);
-            com.censivn.C3DEngine.A.g().a(this.p, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.p, bitmapA);
             bitmapA.recycle();
             Bitmap bitmapA2 = x.a(DeferredItemGroup.d.animals4);
-            com.censivn.C3DEngine.A.g().a(this.r, bitmapA2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.r, bitmapA2);
             bitmapA2.recycle();
             Bitmap bitmapA3 = x.a(DeferredItemGroup.d.animals3);
-            com.censivn.C3DEngine.A.g().a(this.q, bitmapA3);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.q, bitmapA3);
             bitmapA3.recycle();
         }
     }

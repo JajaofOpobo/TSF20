@@ -80,7 +80,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
 
     private boolean l() {
         try {
-            return Settings.System.getInt(com.censivn.C3DEngine.A.d().getContentResolver(), "screen_brightness_mode") == 1;
+            return Settings.System.getInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness_mode") == 1;
         } catch (Settings.SettingNotFoundException e) {
             e.printStackTrace();
             return false;
@@ -89,7 +89,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
 
     private int m() {
         try {
-            return Settings.System.getInt(com.censivn.C3DEngine.A.d().getContentResolver(), "screen_brightness");
+            return Settings.System.getInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness");
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
@@ -98,17 +98,17 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void n() {
-        Settings.System.putInt(com.censivn.C3DEngine.A.d().getContentResolver(), "screen_brightness_mode", 1);
+        Settings.System.putInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness_mode", 1);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void o() {
-        Settings.System.putInt(com.censivn.C3DEngine.A.d().getContentResolver(), "screen_brightness_mode", 0);
+        Settings.System.putInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness_mode", 0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void d(int i) {
-        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
         Uri uriFor = Settings.System.getUriFor("screen_brightness");
         Settings.System.putInt(contentResolver, "screen_brightness", i);
         contentResolver.notifyChange(uriFor, null);

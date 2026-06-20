@@ -402,7 +402,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     }
 
     public static String n() {
-        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.C0121g.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(g.C0121g.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -420,7 +420,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         }
         if (!this.s) {
             this.s = true;
-            com.censivn.C3DEngine.A.a().c(this.r);
+            com.censivn.C3DEngine.C3DEngine.a().c(this.r);
         }
     }
 
@@ -433,10 +433,10 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 for (i iVar : b.this.e.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.SideMenuManager.2.1
+                com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.SideMenuManager.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(g.C0121g.a, 1L), contentValues, null, null);

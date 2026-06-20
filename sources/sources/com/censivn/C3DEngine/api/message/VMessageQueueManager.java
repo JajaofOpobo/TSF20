@@ -80,9 +80,9 @@ public class VMessageQueueManager {
                 @Override // java.lang.Runnable
                 public void run() {
                     if (i == VMessageQueueManager.TYPE_GL_THREAD) {
-                        com.censivn.C3DEngine.A.a().c(runnable);
+                        com.censivn.C3DEngine.C3DEngine.a().c(runnable);
                     } else if (i == VMessageQueueManager.TYPE_MAINUI_THREAD) {
-                        com.censivn.C3DEngine.A.a().a(runnable);
+                        com.censivn.C3DEngine.C3DEngine.a().a(runnable);
                     }
                 }
             };

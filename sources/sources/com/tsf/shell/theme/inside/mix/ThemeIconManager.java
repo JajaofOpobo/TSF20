@@ -93,19 +93,19 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
             }
             if (str != null && !str.equals("")) {
                 System.currentTimeMillis();
-                this.mIconDescription = new ThemeIconPackageParser().parser(com.censivn.C3DEngine.A.d().createPackageContext(str, 3));
+                this.mIconDescription = new ThemeIconPackageParser().parser(com.censivn.C3DEngine.C3DEngine.d().createPackageContext(str, 3));
             }
         } catch (Exception e) {
         }
         if (this.mIconDescription == null) {
-            this.mIconDescription = new ThemeIconDescription(com.censivn.C3DEngine.A.d());
+            this.mIconDescription = new ThemeIconDescription(com.censivn.C3DEngine.C3DEngine.d());
         }
         updateShortcutBackgroud();
     }
 
     public void startIconPackagePicker() {
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.A.d(), ThemePickerActivity.class);
+        intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), ThemePickerActivity.class);
         this.mPickerActivityResultId = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
@@ -114,7 +114,7 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
         if (i2 == -1 && i == this.mPickerActivityResultId) {
             String stringExtra = intent.getStringExtra(ThemePickerActivity.s);
             if (stringExtra == null || stringExtra.equals("")) {
-                stringExtra = com.censivn.C3DEngine.a.b();
+                stringExtra = com.censivn.C3DEngine.a.GestureDetector();
             }
             ThemeManager.mix.setTheme(getType(), stringExtra, true);
         }

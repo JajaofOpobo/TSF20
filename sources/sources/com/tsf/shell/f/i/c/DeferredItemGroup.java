@@ -54,7 +54,7 @@ public class DeferredItemGroup extends ItemGroupBase {
     @Override // com.tsf.shell.f.i.c.ItemGroupBase
     public void c() {
         if (this.r != null) {
-            com.censivn.C3DEngine.A.a().g(this.r);
+            com.censivn.C3DEngine.C3DEngine.a().g(this.r);
             this.r = null;
         }
         if (this.l != null) {
@@ -66,7 +66,7 @@ public class DeferredItemGroup extends ItemGroupBase {
     public void d() {
         if (this.l != null && this.r == null) {
             this.r = this.q;
-            com.censivn.C3DEngine.A.a().b(this.r, 500L);
+            com.censivn.C3DEngine.C3DEngine.a().b(this.r, 500L);
         }
     }
 

@@ -183,7 +183,7 @@ public class Max3DSParser extends AbstractModelParser implements IModelParser {
         } else {
             this.h.a();
             Bitmap bitmapB = this.h.b();
-            this.h.a(com.censivn.C3DEngine.A.g().a(bitmapB, this.l));
+            this.h.a(com.censivn.C3DEngine.C3DEngine.g().a(bitmapB, this.l));
             bitmap = bitmapB;
         }
         for (int i = 0; i < size; i++) {

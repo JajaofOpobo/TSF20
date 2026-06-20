@@ -78,14 +78,14 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
         if (z) {
             if (this.m.id == 0) {
                 Bitmap defaultBitmap = ThemeManager.mix.contact.getDefaultBitmap(b, b, true);
-                com.censivn.C3DEngine.A.g().a(this.m, defaultBitmap);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.m, defaultBitmap);
                 defaultBitmap.recycle();
             }
             return this.m;
         }
         if (this.l.id == 0) {
             Bitmap defaultBitmap2 = ThemeManager.mix.contact.getDefaultBitmap(a, a, false);
-            com.censivn.C3DEngine.A.g().a(this.l, defaultBitmap2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.l, defaultBitmap2);
             defaultBitmap2.recycle();
         }
         return this.l;
@@ -126,8 +126,8 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void g() {
-        com.censivn.C3DEngine.A.g().a(this.l);
-        com.censivn.C3DEngine.A.g().a(this.m);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.l);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.m);
     }
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a

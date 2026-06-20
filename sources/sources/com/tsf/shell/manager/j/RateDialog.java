@@ -69,10 +69,10 @@ public class RateDialog extends j {
         this.s = new l(b, h, -32768, -3841536) { // from class: com.tsf.shell.manager.j.RateDialog.2
             @Override // com.censivn.C3DEngine.b.f.l
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.2.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.utils.MarketLinkHandler.a(Home.b(), com.censivn.C3DEngine.a.b());
+                        com.tsf.shell.utils.MarketLinkHandler.a(Home.b(), com.censivn.C3DEngine.a.GestureDetector());
                     }
                 });
             }
@@ -83,7 +83,7 @@ public class RateDialog extends j {
         this.t = new l(b, h, -16735271, -16748909) { // from class: com.tsf.shell.manager.j.RateDialog.3
             @Override // com.censivn.C3DEngine.b.f.l
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.3.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         n.a(Home.b());

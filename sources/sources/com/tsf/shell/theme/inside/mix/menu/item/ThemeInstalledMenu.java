@@ -36,14 +36,14 @@ public class ThemeInstalledMenu extends MenuActionItem {
     private void initTexture() {
         if (this.mSelectTE.id == 0) {
             Bitmap bitmapA = e.a(true);
-            com.censivn.C3DEngine.A.g().a(this.mSelectTE, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.mSelectTE, bitmapA);
             bitmapA.recycle();
         }
     }
 
     public void resetTheme() {
         Bitmap bitmapA = e.a(true);
-        com.censivn.C3DEngine.A.g().a(this.mSelectTE, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.mSelectTE, bitmapA);
         bitmapA.recycle();
     }
 

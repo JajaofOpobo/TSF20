@@ -170,7 +170,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
 
     public void k() {
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.A.d(), FloatingWidgetPicker.class);
+        intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), FloatingWidgetPicker.class);
         this.s = Home.c.a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
     }
 
@@ -183,7 +183,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
                 FloatingItem floatingItem = (FloatingItem) intent.getParcelableExtra("result");
                 floatingItem.a();
                 this.b = floatingItem;
-                com.censivn.C3DEngine.A.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.1
                     @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                     public void run() {
                         if (a.this.b.o || !a.this.q()) {
@@ -200,7 +200,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
             }
             return;
         }
-        com.censivn.C3DEngine.A.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.2
+        com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.2
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.app.WidgetManager.a(a.this);

@@ -80,7 +80,7 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a() {
-                com.censivn.C3DEngine.A.g().a(j.this.p);
+                com.censivn.C3DEngine.C3DEngine.g().a(j.this.p);
                 j.this.aW();
                 com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2.1
                     @Override // com.censivn.C3DEngine.b.g.d
@@ -145,7 +145,7 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
             bitmapA.recycle();
             Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(this.x, bitmapCreateBitmap, this.n, false);
             bitmapCreateBitmap.recycle();
-            com.censivn.C3DEngine.A.g().a(this.p, bitmapCreateTextureBitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.p, bitmapCreateTextureBitmap);
             bitmapCreateTextureBitmap.recycle();
         }
         if (this.b.textures().size() == 0) {
@@ -157,7 +157,7 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
 
     public void aX() {
         if (this.p.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.p);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.p);
         }
     }
 

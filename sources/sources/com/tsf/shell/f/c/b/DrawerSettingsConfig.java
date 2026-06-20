@@ -28,7 +28,7 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
             a(0.0f, c0084aL.l);
             DrawerSettingsConfig().rotation().z = 135.0f;
         }
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.1
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.1
             @Override // java.lang.Runnable
             public void run() {
                 f.this.m();
@@ -39,14 +39,14 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         a(false);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.2
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.2
             @Override // java.lang.Runnable
             public void run() {
                 f.this.a.k();
                 f.this.f();
             }
         }, 500L);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.3
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.3
             @Override // java.lang.Runnable
             public void run() {
                 f.this.k();

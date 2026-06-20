@@ -9,7 +9,7 @@ public class n extends j {
 
     @Override // com.censivn.C3DEngine.b.f.i
     public void draw() {
-        com.censivn.C3DEngine.A.e().a(this);
+        com.censivn.C3DEngine.C3DEngine.e().a(this);
         drawMVPMatrix();
     }
 }

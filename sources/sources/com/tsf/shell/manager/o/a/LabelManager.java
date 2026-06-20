@@ -32,7 +32,7 @@ public class LabelManager {
     }
 
     public static void a() {
-        com.tsf.shell.manager.o.a.TextLabelElement.a = com.censivn.C3DEngine.A.d().getResources().getDimensionPixelSize(com.tsf.b.c.shortcut_text_size);
+        com.tsf.shell.manager.o.a.TextLabelElement.a = com.censivn.C3DEngine.C3DEngine.d().getResources().getDimensionPixelSize(com.tsf.b.c.shortcut_text_size);
         c = new ArrayList<>();
         c.add(new d(-1, new a()));
         a aVar = new a();

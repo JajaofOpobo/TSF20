@@ -38,7 +38,7 @@ public class AppSelectionIndicatorBar extends j {
             public void onDrawStart() {
                 if (AppSelectionIndicatorBar.this.a.id == 0) {
                     Bitmap bitmapA = x.a(b.d.scrollcontainer_arrow);
-                    com.censivn.C3DEngine.A.g().a(AppSelectionIndicatorBar.this.a, bitmapA);
+                    com.censivn.C3DEngine.C3DEngine.g().a(AppSelectionIndicatorBar.this.a, bitmapA);
                     bitmapA.recycle();
                 }
             }
@@ -101,7 +101,7 @@ public class AppSelectionIndicatorBar extends j {
     }
 
     public void e() {
-        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
     }
 
     public void a(i iVar) {

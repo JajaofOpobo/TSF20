@@ -36,7 +36,7 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (e.this.f.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(e.this.f, b.d.drawer_top_menu_button_voice_search);
+                    com.censivn.C3DEngine.C3DEngine.g().a(e.this.f, b.d.drawer_top_menu_button_voice_search);
                 }
             }
         };
@@ -52,7 +52,7 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (e.this.g.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(e.this.g, b.d.allapps_google_icon);
+                    com.censivn.C3DEngine.C3DEngine.g().a(e.this.g, b.d.allapps_google_icon);
                 }
             }
         };
@@ -74,8 +74,8 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
     }
 
     public void e() {
-        com.censivn.C3DEngine.A.g().a(this.f);
-        com.censivn.C3DEngine.A.g().a(this.g);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.f);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.g);
     }
 
     public void f() {

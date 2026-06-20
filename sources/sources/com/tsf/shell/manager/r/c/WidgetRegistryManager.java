@@ -52,7 +52,7 @@ public class WidgetRegistryManager {
     }
 
     public static String a(c.b bVar) {
-        return bVar.o.equals("com.tsf.shell.widget.alarm") ? com.censivn.C3DEngine.a.b() : bVar.o;
+        return bVar.o.equals("com.tsf.shell.widget.alarm") ? com.censivn.C3DEngine.a.GestureDetector() : bVar.o;
     }
 
     private void f() {
@@ -175,14 +175,14 @@ public class WidgetRegistryManager {
     }
 
     public void a(final ItemInfo itemInfo) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.1
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.1
             @Override // java.lang.Runnable
             public void run() {
                 itemInfo.unbindGL();
             }
         });
         if (itemInfo.id != -1) {
-            com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.2
+            com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.2
                 @Override // java.lang.Runnable
                 public void run() {
                     ShellModel.a.b(itemInfo);
@@ -227,7 +227,7 @@ public class WidgetRegistryManager {
             bVar.destroy();
             return;
         }
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.4
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.4
             @Override // java.lang.Runnable
             public void run() {
                 WidgetRegistryManager.this.a(bVar, z);
@@ -262,7 +262,7 @@ public class WidgetRegistryManager {
                 return;
             }
         }
-        PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
+        PackageManager packageManager = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         Intent intent = new Intent("com.tsf.shell.3dwidget", (Uri) null);
         intent.setPackage(itemInfo.packagename);
         List<ResolveInfo> listQueryIntentActivities = packageManager.queryIntentActivities(intent, 0);
@@ -274,7 +274,7 @@ public class WidgetRegistryManager {
             com.tsf.shell.manager.bind.ShellBindContext.c().g(fVar);
             final ArrayList arrayList = new ArrayList();
             arrayList.add(fVar);
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.5
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.5
                 @Override // java.lang.Runnable
                 public void run() {
                     WidgetRegistryManager.this.d((ArrayList<com.tsf.shell.manager.app.LauncherAppInfo>) arrayList);
@@ -296,7 +296,7 @@ public class WidgetRegistryManager {
     }
 
     public void a(final ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.6
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.6
             @Override // java.lang.Runnable
             public void run() {
                 WidgetRegistryManager.this.d((ArrayList<com.tsf.shell.manager.app.LauncherAppInfo>) arrayList);
@@ -305,7 +305,7 @@ public class WidgetRegistryManager {
     }
 
     public void b(final ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.7
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.7
             @Override // java.lang.Runnable
             public void run() {
                 WidgetRegistryManager.this.d((ArrayList<com.tsf.shell.manager.app.LauncherAppInfo>) arrayList);
@@ -315,7 +315,7 @@ public class WidgetRegistryManager {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        Context contextD = com.censivn.C3DEngine.A.d();
+        Context contextD = com.censivn.C3DEngine.C3DEngine.d();
         for (com.tsf.shell.manager.app.LauncherAppInfo fVar : arrayList) {
             try {
                 String packageName = fVar.b.getPackageName();
@@ -352,7 +352,7 @@ public class WidgetRegistryManager {
 
     public void c(final ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
         com.tsf.shell.b.ShellBridge.a("WidgetManager", "bind3dWidgetUpdate size:" + arrayList.size());
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.8
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.8
             @Override // java.lang.Runnable
             public void run() {
                 for (com.tsf.shell.manager.app.LauncherAppInfo fVar : arrayList) {
@@ -360,7 +360,7 @@ public class WidgetRegistryManager {
                     if (gVarA != null && !gVarA.e) {
                         try {
                             String packageName = fVar.b.getPackageName();
-                            f.a(gVarA, com.censivn.C3DEngine.A.d().createPackageContext(packageName, 3), fVar.e, packageName, fVar.b.getClassName(), fVar);
+                            f.a(gVarA, com.censivn.C3DEngine.C3DEngine.d().createPackageContext(packageName, 3), fVar.e, packageName, fVar.b.getClassName(), fVar);
                             ArrayList<com.tsf.shell.f.i.PageItem> arrayList2 = (ArrayList) gVarA.o().clone();
                             gVarA.m();
                             com.tsf.shell.b.ShellBridge.a("WidgetManager", "onWidgetUpdate delete old item size:" + arrayList2.size());
@@ -380,7 +380,7 @@ public class WidgetRegistryManager {
     }
 
     public void a(final ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList, boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.9
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetRegistryManager.9
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = arrayList.iterator();

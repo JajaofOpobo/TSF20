@@ -53,7 +53,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         this.g = (WallpaperManager) context.getSystemService("wallpaper");
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.WALLPAPER_CHANGED");
-        com.censivn.C3DEngine.A.d().registerReceiver(this, intentFilter);
+        com.censivn.C3DEngine.C3DEngine.d().registerReceiver(this, intentFilter);
         d(3);
     }
 
@@ -129,7 +129,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     public static void a(String str) {
         Context contextCreatePackageContext = null;
         try {
-            contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(str, 3);
+            contextCreatePackageContext = com.censivn.C3DEngine.C3DEngine.d().createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e2) {
         }
         if (contextCreatePackageContext != null) {
@@ -188,10 +188,10 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
     @SuppressLint({"ServiceCast"})
     public static boolean a(WallpaperManager wallpaperManager) {
-        if (com.censivn.C3DEngine.A.d() == null) {
+        if (com.censivn.C3DEngine.C3DEngine.d() == null) {
             return false;
         }
-        return (wallpaperManager == null ? (WallpaperManager) com.censivn.C3DEngine.A.d().getSystemService("wallpaper") : wallpaperManager).getWallpaperInfo() != null;
+        return (wallpaperManager == null ? (WallpaperManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("wallpaper") : wallpaperManager).getWallpaperInfo() != null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -445,8 +445,8 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                         this.e = q.b(bitmap, com.censivn.C3DEngine.b.b.A.L, com.censivn.C3DEngine.b.b.A.M);
                         this.e = q.a(this.e);
                         System.currentTimeMillis();
-                        if (com.censivn.C3DEngine.A.e() != null) {
-                            com.censivn.C3DEngine.A.e().j();
+                        if (com.censivn.C3DEngine.C3DEngine.e() != null) {
+                            com.censivn.C3DEngine.C3DEngine.e().j();
                         }
                     }
                 }
@@ -474,10 +474,10 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                 int height = this.e.getHeight();
                 if (this.e != null && !this.e.isRecycled()) {
                     if (this.d == null) {
-                        this.d = com.censivn.C3DEngine.A.g().a(this.e, false);
+                        this.d = com.censivn.C3DEngine.C3DEngine.g().a(this.e, false);
                     } else {
-                        com.censivn.C3DEngine.A.g().a(this.d);
-                        this.d = com.censivn.C3DEngine.A.g().a(this.e, false);
+                        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
+                        this.d = com.censivn.C3DEngine.C3DEngine.g().a(this.e, false);
                     }
                     System.currentTimeMillis();
                     a(width);
@@ -486,7 +486,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                     this.e.recycle();
                     b();
                     ShellWallpaperManager.this.b(ShellWallpaperManager.this.l, false);
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.wallpaper.ShellWallpaperManager.b.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.wallpaper.ShellWallpaperManager.b.1
                         @Override // java.lang.Runnable
                         public void run() {
                             ShellWallpaperManager.this.k();

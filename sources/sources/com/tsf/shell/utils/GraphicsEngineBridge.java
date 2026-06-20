@@ -28,9 +28,9 @@ public class GraphicsEngineBridge {
     public static Bitmap a(String str, int i) {
         Context contextCreatePackageContext;
         try {
-            Context contextD = com.censivn.C3DEngine.A.d();
-            com.censivn.C3DEngine.A.d();
-            com.censivn.C3DEngine.A.d();
+            Context contextD = com.censivn.C3DEngine.C3DEngine.d();
+            com.censivn.C3DEngine.C3DEngine.d();
+            com.censivn.C3DEngine.C3DEngine.d();
             contextCreatePackageContext = contextD.createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
@@ -43,7 +43,7 @@ public class GraphicsEngineBridge {
     }
 
     public static Bitmap a(int i) {
-        return a(com.censivn.C3DEngine.A.d().getResources(), i);
+        return a(com.censivn.C3DEngine.C3DEngine.d().getResources(), i);
     }
 
     public static Bitmap a(int i, float f, float f2) {
@@ -51,7 +51,7 @@ public class GraphicsEngineBridge {
     }
 
     public static Bitmap a(int i, int i2, int i3) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.C3DEngine.d().getResources(), i);
         if (bitmapA.getWidth() != i2 || bitmapA.getHeight() != i3) {
             Bitmap bitmapCreateScaledBitmap = Bitmap.createScaledBitmap(bitmapA, i2, i3, true);
             if (bitmapCreateScaledBitmap != bitmapA) {
@@ -101,15 +101,15 @@ public class GraphicsEngineBridge {
     }
 
     public static TextureElement b(int i, int i2, int i3) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i, i2, i3);
-        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, false);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.C3DEngine.d().getResources(), i, i2, i3);
+        TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, false);
         bitmapA.recycle();
         return textureElementA;
     }
 
     public static TextureElement b(int i) {
-        Bitmap bitmapA = a(com.censivn.C3DEngine.A.d().getResources(), i);
-        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, false);
+        Bitmap bitmapA = a(com.censivn.C3DEngine.C3DEngine.d().getResources(), i);
+        TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, false);
         bitmapA.recycle();
         return textureElementA;
     }
@@ -230,10 +230,10 @@ public class GraphicsEngineBridge {
     }
 
     public static String c(int i) {
-        if (com.censivn.C3DEngine.A.d() == null || i == 0) {
+        if (com.censivn.C3DEngine.C3DEngine.d() == null || i == 0) {
             return null;
         }
-        return com.censivn.C3DEngine.A.d().getString(i);
+        return com.censivn.C3DEngine.C3DEngine.d().getString(i);
     }
 
     public static String b(Context context, int i) {

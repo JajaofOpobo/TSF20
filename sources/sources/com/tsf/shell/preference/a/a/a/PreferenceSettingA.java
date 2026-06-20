@@ -121,7 +121,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             public void run() {
                 if (a.this.j) {
                     a.this.h();
-                    com.censivn.C3DEngine.A.a().b(a.this.l, 4000L);
+                    com.censivn.C3DEngine.C3DEngine.a().b(a.this.l, 4000L);
                 }
             }
         };
@@ -129,7 +129,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             @Override // java.lang.Runnable
             public void run() {
                 a.this.m();
-                com.censivn.C3DEngine.A.a().b(a.this.k, 4000L);
+                com.censivn.C3DEngine.C3DEngine.a().b(a.this.k, 4000L);
             }
         };
     }
@@ -203,8 +203,8 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         int i = 0;
         super.g();
         this.j = false;
-        com.censivn.C3DEngine.A.g().a(this.a);
-        com.censivn.C3DEngine.A.g().a(this.f);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.f);
         while (true) {
             int i2 = i;
             if (i2 < 4) {
@@ -221,11 +221,11 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         super.f();
         this.j = true;
         if (this.a.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.a, PreferenceSettingB.d.feature_auto_classify_icon);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, PreferenceSettingB.d.feature_auto_classify_icon);
         }
         if (this.f.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.f, PreferenceSettingB.d.feature_auto_classify_folder);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f, PreferenceSettingB.d.feature_auto_classify_folder);
         }
-        com.censivn.C3DEngine.A.a().b(this.k, 1000L);
+        com.censivn.C3DEngine.C3DEngine.a().b(this.k, 1000L);
     }
 }

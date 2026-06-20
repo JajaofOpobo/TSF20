@@ -54,14 +54,14 @@ public class PreferenceConfigManager {
         public void a() {
             if (this.id == 0) {
                 Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(null, "TSF Launcher", x.a(this.a, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I), com.tsf.shell.manager.o.ButtonPresetManager.c, com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I, false);
-                com.censivn.C3DEngine.A.g().a(this, bitmapCreateTextureBitmap);
+                com.censivn.C3DEngine.C3DEngine.g().a(this, bitmapCreateTextureBitmap);
                 bitmapCreateTextureBitmap.recycle();
             }
         }
 
         public void b() {
             if (this.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this);
+                com.censivn.C3DEngine.C3DEngine.g().a(this);
             }
         }
     }

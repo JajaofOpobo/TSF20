@@ -16,7 +16,7 @@ public class LiveWallpaperMenuItem extends WallpaperMenuPanel.MenuItem {
 
     public LiveWallpaperMenuItem(String str) {
         super(str);
-        this.a = new WallpaperPreviewRenderer(com.censivn.C3DEngine.A.d(), WallpaperMenuPanel.MenuItem.b, WallpaperMenuPanel.MenuItem.c);
+        this.a = new WallpaperPreviewRenderer(com.censivn.C3DEngine.C3DEngine.d(), WallpaperMenuPanel.MenuItem.b, WallpaperMenuPanel.MenuItem.c);
         a((i) this.a.getVirtualTarget());
     }
 

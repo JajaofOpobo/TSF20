@@ -16,7 +16,7 @@ public class ToggleActionVolume extends com.tsf.shell.manager.action.toggle.Togg
     public ToggleActionVolume(int i) {
         super(i);
         b(2);
-        this.c = (AudioManager) com.censivn.C3DEngine.A.d().getSystemService("audio");
+        this.c = (AudioManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("audio");
         ToggleActionVolume();
     }
 

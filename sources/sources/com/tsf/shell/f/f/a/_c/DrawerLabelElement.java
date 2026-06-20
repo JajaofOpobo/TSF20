@@ -46,7 +46,7 @@ public class DrawerLabelElement extends com.censivn.C3DEngine.b.f.k {
 
     public void d() {
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.e);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e);
         }
     }
 
@@ -64,7 +64,7 @@ public class DrawerLabelElement extends com.censivn.C3DEngine.b.f.k {
             canvas.drawBitmap(bitmapB, bitmapA.getWidth() + this.g, (this.f - bitmapB.getHeight()) / 2, (Paint) null);
             bitmapA.recycle();
             bitmapB.recycle();
-            com.censivn.C3DEngine.A.g().a(this.e, bitmapCreateBitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
             a(this.e.width);
             b(this.e.height);

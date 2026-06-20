@@ -89,7 +89,7 @@ public class SnapshotState extends VObject3dContainer {
 
     public void c() {
         if (this.o != null) {
-            com.censivn.C3DEngine.A.g().a(this.o);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.o);
             this.o = null;
             this.a.textures().removeAll();
             this.b.textures().removeAll();
@@ -109,7 +109,7 @@ public class SnapshotState extends VObject3dContainer {
         paint.setColor(this.k);
         paint.setAntiAlias(true);
         canvas.drawCircle(this.e, this.e, this.e, paint);
-        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap, true);
+        TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(bitmapCreateBitmap, true);
         bitmapCreateBitmap.recycle();
         return textureElementA;
     }

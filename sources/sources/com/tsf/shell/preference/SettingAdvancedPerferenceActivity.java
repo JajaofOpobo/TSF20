@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.b.ConfigManager;

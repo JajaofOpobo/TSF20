@@ -247,7 +247,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
         public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2) {
             if (this.g != null && this.d && !this.i) {
                 this.i = true;
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         C0131a.this.i = false;

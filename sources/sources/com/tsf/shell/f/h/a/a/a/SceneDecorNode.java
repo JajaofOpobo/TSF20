@@ -101,7 +101,7 @@ public class SceneDecorNode extends j {
             paint.setAntiAlias(true);
             paint.setColor(-1);
             canvas.drawCircle(iA / 2.0f, bitmapB.getHeight() / 2.0f, fA / 2.0f, paint);
-            com.censivn.C3DEngine.A.g().a(this.a, bitmapB);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, bitmapB);
             bitmapB.recycle();
         }
         this.d.a(1, this.a.width, this.a.height);
@@ -122,7 +122,7 @@ public class SceneDecorNode extends j {
 
     public void g() {
         if (this.a.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.a);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a);
         }
         this.e.a();
         this.f.a();

@@ -18,7 +18,7 @@ public class DrawerButtonElement extends DrawerBaseElement {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (a.this.c.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(a.this.c, a.this.e);
+                    com.censivn.C3DEngine.C3DEngine.g().a(a.this.c, a.this.e);
                 }
             }
         };
@@ -28,7 +28,7 @@ public class DrawerButtonElement extends DrawerBaseElement {
 
     public void a() {
         if (this.c.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.c);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c);
         }
     }
 }

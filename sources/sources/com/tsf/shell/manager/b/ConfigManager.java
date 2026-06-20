@@ -748,7 +748,7 @@ public class ConfigManager {
     }
 
     public static void n(final int i2) {
-        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.manager.b.e.1
+        com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.manager.b.e.1
             @Override // java.lang.Runnable
             public void run() {
                 SharedPreferences.Editor editorAC = e.aC();
@@ -986,7 +986,7 @@ public class ConfigManager {
 
     public static SharedPreferences aD() {
         if (F == null) {
-            F = com.censivn.C3DEngine.A.d().getSharedPreferences("config", 0);
+            F = com.censivn.C3DEngine.C3DEngine.d().getSharedPreferences("config", 0);
         }
         return F;
     }

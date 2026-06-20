@@ -37,7 +37,7 @@ public class PageGridRenderer extends j implements b.a {
     private com.censivn.C3DEngine.b.f.h p = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
         @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
         public void draw() {
-            com.censivn.C3DEngine.A.e().a(this);
+            com.censivn.C3DEngine.C3DEngine.e().a(this);
             updateTextureState();
             ShaderColor shaderColor = ShaderManager.SHADER_COLOR;
             ShaderManager.enableShader(shaderColor);

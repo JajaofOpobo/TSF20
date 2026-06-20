@@ -54,8 +54,8 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         if (e == null) {
             e = new A();
         }
-        this.d = com.censivn.C3DEngine.A.d().getString(b.i.line_picker_back_to_select);
-        this.c = com.censivn.C3DEngine.A.d().getString(b.i.notic_function_unavailable);
+        this.d = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.line_picker_back_to_select);
+        this.c = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_function_unavailable);
         this.a = new j() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.1
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
@@ -89,7 +89,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                     final MotionEvent motionEventObtain2 = MotionEvent.obtain(motionEvent2);
                     final float[] fArrA = x.a(motionEvent);
                     this.a = true;
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
@@ -232,7 +232,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 com.tsf.shell.e.a(b.i.pop_menu_delete_notic, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3.1
+                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
@@ -271,7 +271,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                                 }
                             };
                             renderRunnable.autoInvalidate = true;
-                            com.censivn.C3DEngine.A.a().a(renderRunnable);
+                            com.censivn.C3DEngine.C3DEngine.a().a(renderRunnable);
                         }
                     }
                 }

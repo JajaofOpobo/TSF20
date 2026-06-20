@@ -77,7 +77,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
         addChild(new a(ThemeElementType.TYPE_ARRANGE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.12
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
             public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
-                return ThemeArrangeManager.createPreviewBitmap(com.censivn.C3DEngine.A.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
+                return ThemeArrangeManager.createPreviewBitmap(com.censivn.C3DEngine.C3DEngine.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_APP_MUTIL_CHOICE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.13
@@ -101,7 +101,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
         addChild(new a(ThemeElementType.TYPE_WIDGET_RESIZE) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.4
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
             public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
-                return ThemeWidgetResizeManager.createPreviewBitmap(com.censivn.C3DEngine.A.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
+                return ThemeWidgetResizeManager.createPreviewBitmap(com.censivn.C3DEngine.C3DEngine.d(), themeInfo.context, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             }
         });
         addChild(new a(ThemeElementType.TYPE_ACTION) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.5
@@ -157,7 +157,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
             this.c = new m();
             this.c.d(35);
             this.c.position().y = -com.censivn.C3DEngine.b.b.A.a(50.0f);
-            this.c.a(ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.A.d(), i));
+            this.c.a(ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.C3DEngine.d(), i));
             this.c.b();
             setAABBPX(((-ThemeElementInfoLayout.this.mElementSize) / 2.0f) * 1.4f, (-ThemeElementInfoLayout.this.mElementSize) / 2.0f, 0.0f, (ThemeElementInfoLayout.this.mElementSize / 2.0f) * 1.4f, ThemeElementInfoLayout.this.mElementSize / 2.0f, 0.0f);
             addChild(this.b);
@@ -171,7 +171,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
                 if (bitmapA == null) {
                     bitmapA = x.a(b.d.theme_lose_icon, ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize);
                 }
-                com.censivn.C3DEngine.A.g().a(this.e, bitmapA);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.e, bitmapA);
                 bitmapA.recycle();
             }
         }
@@ -184,7 +184,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
 
         public void a() {
             if (this.e.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.e);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.e);
             }
             this.c.a();
             this.f = null;

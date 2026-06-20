@@ -30,7 +30,7 @@ public class FolderLabelConfig {
             canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
             FolderTouchBase.a(canvas, bitmapA, bitmapA2, true);
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.a(bitmapA3);
-            com.censivn.C3DEngine.A.g().a(textureElement, bitmapA3);
+            com.censivn.C3DEngine.C3DEngine.g().a(textureElement, bitmapA3);
         }
     }
 }

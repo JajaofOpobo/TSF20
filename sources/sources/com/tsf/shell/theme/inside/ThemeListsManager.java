@@ -8,7 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import android.net.Uri;
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.manager.o.ButtonPresetManager;
 import java.util.ArrayList;

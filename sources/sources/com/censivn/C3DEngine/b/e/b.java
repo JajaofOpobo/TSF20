@@ -168,7 +168,7 @@ public class b extends g {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (b.b.id == 0) {
-                com.censivn.C3DEngine.A.g().a(b.b, b.d.preference_radio);
+                com.censivn.C3DEngine.C3DEngine.g().a(b.b, b.d.preference_radio);
             }
         }
     }

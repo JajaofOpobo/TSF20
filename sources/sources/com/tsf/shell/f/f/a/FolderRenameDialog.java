@@ -167,14 +167,14 @@ public class FolderRenameDialog extends j {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final String str) {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.7
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.7
             @Override // java.lang.Runnable
             public void run() {
-                Context contextD = com.censivn.C3DEngine.A.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
+                Context contextD = com.censivn.C3DEngine.C3DEngine.d();
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.C3DEngine.d()).inflate(b.g.dialog_rename, (ViewGroup) null);
                 final EditText editText = (EditText) viewInflate.findViewById(b.e.username_edit);
                 editText.setText(str);
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
                 builder.setTitle(contextD.getString(b.i.text_rename));
                 builder.setView(viewInflate);
                 builder.setPositiveButton(contextD.getString(b.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.7.1
@@ -242,7 +242,7 @@ public class FolderRenameDialog extends j {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.a, this.d, this.h, this.h);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, this.h, this.h);
             }
         }
 
@@ -251,7 +251,7 @@ public class FolderRenameDialog extends j {
                 this.e.a();
             }
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.a);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a);
             }
         }
 

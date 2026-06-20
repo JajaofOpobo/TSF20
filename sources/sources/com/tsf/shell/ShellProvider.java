@@ -22,7 +22,7 @@ public class ShellProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public boolean onCreate() {
         a = getContext().getPackageName() + ".provider";
-        com.censivn.C3DEngine.a.a(getContext(), "ShellProvider");
+        com.censivn.C3DEngine.C3DEngine.a(getContext(), "ShellProvider");
         if (c == null) {
             c = this;
         }

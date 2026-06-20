@@ -21,7 +21,7 @@ public class PreferenceItemH extends i {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (h.this.f.id == 0) {
-                com.censivn.C3DEngine.A.g().a(h.this.f, PreferenceItemB.d.scrollcontainer_arrow);
+                com.censivn.C3DEngine.C3DEngine.g().a(h.this.f, PreferenceItemB.d.scrollcontainer_arrow);
             }
         }
     };
@@ -130,7 +130,7 @@ public class PreferenceItemH extends i {
     @Override // com.censivn.C3DEngine.b.e.c
     public void c() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.f);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f);
         }
     }
 
@@ -182,7 +182,7 @@ public class PreferenceItemH extends i {
         public void g() {
             super.g();
             if (this.d.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.d);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.d);
             }
         }
 
@@ -191,7 +191,7 @@ public class PreferenceItemH extends i {
             super.onDrawStart();
             if (this.d.id == 0) {
                 Bitmap bitmapA = x.a(PreferenceItemB.d.preference_side_menu_direction_icon, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(120.0f));
-                com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
                 bitmapA.recycle();
             }
         }

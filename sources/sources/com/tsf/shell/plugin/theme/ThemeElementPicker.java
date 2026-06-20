@@ -19,7 +19,7 @@ public class ThemeElementPicker extends Activity {
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTitle("");
-        com.censivn.C3DEngine.a.a(this, "ThemeElementPicker");
+        com.censivn.C3DEngine.C3DEngine.a(this, "ThemeElementPicker");
         requestWindowFeature(1);
         this.a = getIntent();
         int intExtra = this.a.getIntExtra("type", -1);
@@ -31,7 +31,7 @@ public class ThemeElementPicker extends Activity {
         ArrayList<c> arrayList = new ArrayList<>();
         for (ThemeListsManager.ThemeInfo themeInfo : this.b.refreshThemeList()) {
             try {
-                Context contextCreatePackageContext = com.censivn.C3DEngine.A.d().createPackageContext(themeInfo.packagename, 3);
+                Context contextCreatePackageContext = com.censivn.C3DEngine.C3DEngine.d().createPackageContext(themeInfo.packagename, 3);
                 if (ThemeElementChecker.isElementAbailable(contextCreatePackageContext, i)) {
                     c cVar = new ThemePluginConfig(i, themeInfo.name, themeInfo.packagename);
                     cVar.b = contextCreatePackageContext;

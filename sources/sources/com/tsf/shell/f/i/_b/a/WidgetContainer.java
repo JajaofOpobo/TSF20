@@ -60,7 +60,7 @@ public class WidgetContainer extends j {
 
     private void h() {
         System.currentTimeMillis();
-        com.censivn.C3DEngine.e.IModelParser bVarA = com.censivn.C3DEngine.e.ModelParserFactory.a(ModelParserFactory.ParserType.MAX_3DS, com.censivn.C3DEngine.A.d().getResources(), com.censivn.C3DEngine.a.b() + ":raw/widget_airship", true);
+        com.censivn.C3DEngine.e.IModelParser bVarA = com.censivn.C3DEngine.e.ModelParserFactory.a(ModelParserFactory.ParserType.MAX_3DS, com.censivn.C3DEngine.C3DEngine.d().getResources(), com.censivn.C3DEngine.a.GestureDetector() + ":raw/widget_airship", true);
         bVarA.c();
         this.d = bVarA.b().getChildAt(0);
         this.d.removeFromParent();
@@ -82,7 +82,7 @@ public class WidgetContainer extends j {
         this.e = new j() { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.2
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
-                com.censivn.C3DEngine.A.e().c();
+                com.censivn.C3DEngine.C3DEngine.e().c();
                 if (!a.this.a && a.this.k != null) {
                     a.this.k.d((float) ((Math.cos(1.0d) * 2.0d) - (Math.random() * 2.0d)));
                     a.this.j.a();
@@ -91,7 +91,7 @@ public class WidgetContainer extends j {
 
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
-                com.censivn.C3DEngine.A.e().d();
+                com.censivn.C3DEngine.C3DEngine.e().d();
             }
         };
         this.d.textures().addElement(this.b);
@@ -168,10 +168,10 @@ public class WidgetContainer extends j {
             bitmap = x.a(WidgetContainerPageItem.d.widget_airship_flag);
         }
         if (this.l == null) {
-            this.l = com.censivn.C3DEngine.A.g().a(bitmap, false);
+            this.l = com.censivn.C3DEngine.C3DEngine.g().a(bitmap, false);
             this.i.textures().addElement(this.l);
         } else {
-            com.censivn.C3DEngine.A.g().a(this.l, bitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.l, bitmap);
         }
         bitmap.recycle();
     }
@@ -179,26 +179,26 @@ public class WidgetContainer extends j {
     public void f() {
         if (this.b.id == 0) {
             Bitmap bitmapA = x.a(WidgetContainerPageItem.d.widget_airship_body);
-            com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.b, bitmapA);
             bitmapA.recycle();
         }
         if (this.c.id == 0) {
             Bitmap bitmapA2 = x.a(WidgetContainerPageItem.d.widget_airship_propeller);
-            com.censivn.C3DEngine.A.g().a(this.c, bitmapA2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c, bitmapA2);
             bitmapA2.recycle();
         }
     }
 
     public void g() {
-        com.censivn.C3DEngine.A.g().a(this.b);
-        com.censivn.C3DEngine.A.g().a(this.c);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.b);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.c);
     }
 
     @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         super.destroy();
-        com.censivn.C3DEngine.A.g().a(this.b);
-        com.censivn.C3DEngine.A.g().a(this.c);
-        com.censivn.C3DEngine.A.g().a(this.l);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.b);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.c);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.l);
     }
 }

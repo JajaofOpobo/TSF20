@@ -20,7 +20,7 @@ public class FoldPageTransition extends ItemPageTransition {
         this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
             @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
             public void draw() {
-                com.censivn.C3DEngine.A.e().a(this);
+                com.censivn.C3DEngine.C3DEngine.e().a(this);
                 updateTextureState();
                 ShaderColorTexture shaderColorTexture = ShaderManager.SHADER_COLOR_TEXTURE;
                 ShaderManager.enableShader(shaderColorTexture);

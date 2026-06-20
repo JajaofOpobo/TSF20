@@ -150,7 +150,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                     }
                 };
             }
-            com.censivn.C3DEngine.A.a().c(this.B);
+            com.censivn.C3DEngine.C3DEngine.a().c(this.B);
         }
     }
 
@@ -170,14 +170,14 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     private void b(final com.tsf.shell.f.i.PageItem bVar) {
         if (bVar != null) {
             if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.c.a.b.3
                     @Override // java.lang.Runnable
                     public void run() {
                         ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).l();
                     }
                 }, 200L);
             } else if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.b.4
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.b.4
                     @Override // java.lang.Runnable
                     public void run() {
                         ((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aR();
@@ -712,10 +712,10 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                 for (i iVar : b.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
+                com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(DrawerSettingsItem.h.a, 1L), contentValues, null, null);
@@ -729,7 +729,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     public void l() {
         if (!this.I && !this.r.a()) {
             this.I = true;
-            com.censivn.C3DEngine.A.a().c(this.J);
+            com.censivn.C3DEngine.C3DEngine.a().c(this.J);
         }
     }
 }

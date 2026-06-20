@@ -26,7 +26,7 @@ public class DashElementInfo extends h {
         this.d = new Runnable() { // from class: com.tsf.shell.f._d.a.DashElementInfo.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().b(b.this.f, 300L);
+                com.censivn.C3DEngine.C3DEngine.a().b(b.this.f, 300L);
             }
         };
         this.f = new Runnable() { // from class: com.tsf.shell.f._d.a.DashElementInfo.2

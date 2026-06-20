@@ -35,10 +35,10 @@ public class PreferenceItemG extends i {
         jVar2.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.2
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.2.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        k.a(Home.b(), com.censivn.C3DEngine.a.b());
+                        k.a(Home.b(), com.censivn.C3DEngine.a.GestureDetector());
                     }
                 });
             }
@@ -49,7 +49,7 @@ public class PreferenceItemG extends i {
         jVar3.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.3
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.3.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         VideoViwerActivity.a(Home.b());
@@ -75,7 +75,7 @@ public class PreferenceItemG extends i {
         jVar5.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.5
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.5.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.5.1
                     @Override // java.lang.Runnable
                     public void run() {
                         n.a(Home.b());
@@ -90,7 +90,7 @@ public class PreferenceItemG extends i {
         jVar6.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.6
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.6.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.6.1
                     @Override // java.lang.Runnable
                     public void run() {
                         AboutActivity.a(Home.b());
@@ -104,7 +104,7 @@ public class PreferenceItemG extends i {
         jVar7.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.7
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.7.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.7.1
                     @Override // java.lang.Runnable
                     public void run() {
                         Intent intent = new Intent();
@@ -123,7 +123,7 @@ public class PreferenceItemG extends i {
         jVar8.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.8
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.8.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.8.1
                     @Override // java.lang.Runnable
                     public void run() {
                         Intent intent = new Intent();
@@ -142,7 +142,7 @@ public class PreferenceItemG extends i {
         jVar9.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.9
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.9.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.9.1
                     @Override // java.lang.Runnable
                     public void run() {
                         Intent intent = new Intent();

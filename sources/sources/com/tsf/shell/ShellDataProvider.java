@@ -80,7 +80,7 @@ public class ShellDataProvider {
 
         @Override // java.lang.Runnable
         public void run() {
-            com.censivn.C3DEngine.A.a().c(this.a);
+            com.censivn.C3DEngine.C3DEngine.a().c(this.a);
         }
     }
 

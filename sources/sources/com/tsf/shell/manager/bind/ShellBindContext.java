@@ -33,8 +33,8 @@ public class ShellBindContext {
     }
 
     public ShellBindContext() {
-        com.censivn.C3DEngine.a.a(a, "AppState");
-        com.censivn.C3DEngine.a.a(new com.censivn.C3DEngine.b.c.c());
+        com.censivn.C3DEngine.C3DEngine.a(a, "AppState");
+        com.censivn.C3DEngine.C3DEngine.a(new com.censivn.C3DEngine.b.c.c());
         c = new ShellModel(a);
         d = c.b();
         IntentFilter intentFilter = new IntentFilter();

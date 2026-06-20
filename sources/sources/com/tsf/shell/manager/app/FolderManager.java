@@ -48,11 +48,11 @@ public class FolderManager implements AppListModel.a {
     public void c() {
         if (!this._c) {
             this._c = true;
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.FolderManager.1
+            com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.FolderManager.1
                 @Override // java.lang.Runnable
                 public void run() {
                     final ArrayList arrayListF = d.this.f();
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.FolderManager.1.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.FolderManager.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             d.this.f.a(d.this.a((ArrayList<ItemInfo>) arrayListF));
@@ -126,7 +126,7 @@ public class FolderManager implements AppListModel.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public ArrayList<ItemInfo> f() {
-        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
         Cursor cursorQuery = contentResolver.query(g.b.a, null, null, null, "itemType ASC");
         ArrayList arrayList = new ArrayList();
         ArrayList<ItemInfo> arrayList2 = new ArrayList<>();
@@ -313,7 +313,7 @@ public class FolderManager implements AppListModel.a {
             @Override // java.lang.Runnable
             public void run() {
                 synchronized (d.a) {
-                    ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                    ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                     if (z) {
                         contentResolver.insert(g.b.a, contentValues);
                         switch (itemInfo.itemType) {
@@ -340,7 +340,7 @@ public class FolderManager implements AppListModel.a {
         ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.app.FolderManager.3
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.d().getContentResolver().delete(g.b.a(itemInfo.id, false), null, null);
+                com.censivn.C3DEngine.C3DEngine.d().getContentResolver().delete(g.b.a(itemInfo.id, false), null, null);
             }
         });
     }

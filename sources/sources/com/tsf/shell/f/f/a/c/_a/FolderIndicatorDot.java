@@ -166,19 +166,19 @@ public class FolderIndicatorDot extends j {
 
     public void f() {
         if (this.c.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.c);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c);
         }
     }
 
     public static void j() {
         if (b.id == 0) {
-            com.censivn.C3DEngine.A.g().a(b, q.b(a, -1));
+            com.censivn.C3DEngine.C3DEngine.g().a(b, q.b(a, -1));
         }
     }
 
     public static void k() {
         if (b.id != 0) {
-            com.censivn.C3DEngine.A.g().a(b);
+            com.censivn.C3DEngine.C3DEngine.g().a(b);
         }
         if (k != null) {
             CircleDotNode.a();

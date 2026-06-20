@@ -16,12 +16,12 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e implements GLSurfaceView.Renderer {
+public class RendererImpl implements GLSurfaceView.Renderer {
     public static String a = "D5F237AC11D7ABEB1357C340AC6914E3";
     public static int c = 0;
     public static long f;
     public static boolean g;
-    private g j;
+    private SceneGraph j;
     private com.censivn.C3DEngine.b.c.f k;
     private float l;
     private long p;
@@ -49,9 +49,9 @@ public class e implements GLSurfaceView.Renderer {
         MatrixStack.init();
         this.t = bVar;
         this.k = new com.censivn.C3DEngine.b.c.f();
-        com.censivn.C3DEngine.a.a(this.k);
-        com.censivn.C3DEngine.a.a(this);
-        this.q = (ActivityManager) com.censivn.C3DEngine.A.d().getSystemService("activity");
+        com.censivn.C3DEngine.a.GLSurfaceViewWrapper.a(this.k);
+        com.censivn.C3DEngine.a.GLSurfaceViewWrapper.a(this);
+        this.q = (ActivityManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("activity");
         this.r = new ActivityManager.MemoryInfo();
     }
 
@@ -105,8 +105,8 @@ public class e implements GLSurfaceView.Renderer {
         e();
     }
 
-    public void a(g gVar) {
-        this.j = gVar;
+    public void a(SceneGraph sceneGraph) {
+        this.j = sceneGraph;
     }
 
     public boolean a() {
@@ -119,7 +119,7 @@ public class e implements GLSurfaceView.Renderer {
         this.d = false;
         this.e = false;
         com.censivn.C3DEngine.b.g.c.a();
-        com.censivn.C3DEngine.A.a().a();
+        com.censivn.C3DEngine.C3DEngine.a().a();
         b();
         if (!this.d || !a()) {
             h();
@@ -201,9 +201,9 @@ public class e implements GLSurfaceView.Renderer {
     public void e() {
         float f2 = this.j.b().f / 2.0f;
         float f3 = this.l;
-        c.a(MatrixStack.rProjMatrix, 0, f3 * (-f2), f2 * this.l, -f2, f2, this.j.b().e, this.j.b().d);
-        c.a(MatrixStack.rVMatrix, 0, this.j.b().a.x, this.j.b().a.y, this.j.b().a.z, this.j.b().b.x, this.j.b().b.y, this.j.b().b.z, this.j.b().c.x, this.j.b().c.y, this.j.b().c.z);
-        c.a(MatrixStack.rSceneMatrix, 0, MatrixStack.rProjMatrix, 0, MatrixStack.rVMatrix, 0);
+        MatrixUtils.a(MatrixStack.rProjMatrix, 0, f3 * (-f2), f2 * this.l, -f2, f2, this.j.b().e, this.j.b().d);
+        MatrixUtils.a(MatrixStack.rVMatrix, 0, this.j.b().a.x, this.j.b().a.y, this.j.b().a.z, this.j.b().b.x, this.j.b().b.y, this.j.b().b.z, this.j.b().c.x, this.j.b().c.y, this.j.b().c.z);
+        MatrixUtils.a(MatrixStack.rSceneMatrix, 0, MatrixStack.rProjMatrix, 0, MatrixStack.rVMatrix, 0);
     }
 
     public void b(float f2, float f3) {
@@ -212,9 +212,9 @@ public class e implements GLSurfaceView.Renderer {
         float f4 = this.j.b().f / 2.0f;
         float f5 = (f2 / this.j.b().a.z) / 2.0f;
         float f6 = f3 / this.j.b().a.z;
-        c.a(MatrixStack.rProjMatrix, 0, ((-f4) * this.l) - f5, (this.l * f4) - f5, (-f4) - f6, f4 - f6, this.j.b().e, this.j.b().d);
-        c.a(MatrixStack.rVMatrix, 0, f2, f3, this.j.b().a.z, f2, f3, this.j.b().b.z, this.j.b().c.x, this.j.b().c.y, this.j.b().c.z);
-        c.a(MatrixStack.rSceneMatrix, 0, MatrixStack.rProjMatrix, 0, MatrixStack.rVMatrix, 0);
+        MatrixUtils.a(MatrixStack.rProjMatrix, 0, ((-f4) * this.l) - f5, (this.l * f4) - f5, (-f4) - f6, f4 - f6, this.j.b().e, this.j.b().d);
+        MatrixUtils.a(MatrixStack.rVMatrix, 0, f2, f3, this.j.b().a.z, f2, f3, this.j.b().b.z, this.j.b().c.x, this.j.b().c.y, this.j.b().c.z);
+        MatrixUtils.a(MatrixStack.rSceneMatrix, 0, MatrixStack.rProjMatrix, 0, MatrixStack.rVMatrix, 0);
     }
 
     public void f() {

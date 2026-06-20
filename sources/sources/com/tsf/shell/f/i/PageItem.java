@@ -192,7 +192,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     public void E() {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
             @Override // java.lang.Runnable
             public void run() {
                 if (B.this._e == null) {
@@ -207,7 +207,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     public void F() {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
             @Override // java.lang.Runnable
             public void run() {
                 if (B.this._e != null) {

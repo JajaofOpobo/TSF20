@@ -19,10 +19,10 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.j {
         if (!this.f) {
             this.f = true;
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.a, x.a(b.d.shell_number));
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, x.a(b.d.shell_number));
             }
             if (this.b.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.b, x.a(b.d.shell_number_bg));
+                com.censivn.C3DEngine.C3DEngine.g().a(this.b, x.a(b.d.shell_number_bg));
             }
             if (this.e == null) {
                 this.e = new com.censivn.C3DEngine.b.f.k(252.0f * com.censivn.C3DEngine.b.b.A.c, 162.0f * com.censivn.C3DEngine.b.b.A.c, false);
@@ -50,10 +50,10 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.j {
                 public void a() {
                     com.tsf.shell.manager.app.TaskScheduler.b(r.this);
                     if (r.this.a.id != 0) {
-                        com.censivn.C3DEngine.A.g().a(r.this.a);
+                        com.censivn.C3DEngine.C3DEngine.g().a(r.this.a);
                     }
                     if (r.this.b.id != 0) {
-                        com.censivn.C3DEngine.A.g().a(r.this.b);
+                        com.censivn.C3DEngine.C3DEngine.g().a(r.this.b);
                     }
                 }
             };

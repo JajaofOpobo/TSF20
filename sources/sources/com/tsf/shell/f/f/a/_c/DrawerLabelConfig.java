@@ -30,7 +30,7 @@ public class DrawerLabelConfig {
             canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
             a.a(canvas, bitmapA, bitmapA2, true);
             com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.a(bitmapA3);
-            com.censivn.C3DEngine.A.g().a(textureElement, bitmapA3);
+            com.censivn.C3DEngine.C3DEngine.g().a(textureElement, bitmapA3);
         }
     }
 }

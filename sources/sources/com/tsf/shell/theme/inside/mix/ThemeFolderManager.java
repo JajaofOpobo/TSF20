@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.mix;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 import com.tsf.shell.f.i.b.d.FolderShortcutItem;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.ThemeMixElementManager;

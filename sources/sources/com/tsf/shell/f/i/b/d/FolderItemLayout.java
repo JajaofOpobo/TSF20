@@ -70,7 +70,7 @@ public class FolderItemLayout {
             bVar.visible(true);
             com.tsf.shell.manager.app.TextureCache.b(this.b, bVar.u);
             GLES20.glViewport(0, 0, this.c, this.d);
-            com.censivn.C3DEngine.A.e().a(this.c, this.d);
+            com.censivn.C3DEngine.C3DEngine.e().a(this.c, this.d);
             if (bVar.visible()) {
                 MatrixStack.glPushMatrix();
                 bVar.draw();
@@ -88,7 +88,7 @@ public class FolderItemLayout {
             }
             com.tsf.shell.manager.app.TextureCache.b();
             GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
-            com.censivn.C3DEngine.A.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            com.censivn.C3DEngine.C3DEngine.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             bVar.position().setAllFrom(FolderItemDotIndicator);
             bVar.rotation().setAllFrom(FolderItemPositioner);
             bVar.b(fX);

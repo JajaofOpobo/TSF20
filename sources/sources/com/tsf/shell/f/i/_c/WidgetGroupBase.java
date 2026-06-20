@@ -40,7 +40,7 @@ public class WidgetGroupBase extends WidgetLabelProvider {
     }
 
     public void k() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._c.WidgetGroupBase.1
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._c.WidgetGroupBase.1
             @Override // java.lang.Runnable
             public void run() {
                 k.a(Home.c, g.this.a);

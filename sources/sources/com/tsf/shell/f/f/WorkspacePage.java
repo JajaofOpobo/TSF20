@@ -311,7 +311,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.h.c();
         this.C.clear();
         if (this.l != null) {
-            com.censivn.C3DEngine.A.g().a(this.l);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.l);
             this.l = null;
             this.q.textures().removeAll();
         }
@@ -349,16 +349,16 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     public static void w() {
         ThemeDescription theme = ThemeManager.mix.page.getTheme();
         Bitmap bitmap = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_BACKGROUND);
-        o = com.censivn.C3DEngine.A.g().a(o, bitmap, true);
+        o = com.censivn.C3DEngine.C3DEngine.g().a(o, bitmap, true);
         bitmap.recycle();
         Bitmap bitmap2 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_UNSELECT);
-        m = com.censivn.C3DEngine.A.g().a(m, bitmap2, true);
+        m = com.censivn.C3DEngine.C3DEngine.g().a(m, bitmap2, true);
         bitmap2.recycle();
         Bitmap bitmap3 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_SELECT);
-        n = com.censivn.C3DEngine.A.g().a(n, bitmap3, true);
+        n = com.censivn.C3DEngine.C3DEngine.g().a(n, bitmap3, true);
         bitmap3.recycle();
         Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f);
-        p = com.censivn.C3DEngine.A.g().a(p, bitmap4, true);
+        p = com.censivn.C3DEngine.C3DEngine.g().a(p, bitmap4, true);
         bitmap4.recycle();
     }
 
@@ -374,23 +374,23 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
             ThemeDescription theme = ThemeManager.mix.page.getTheme();
             if (o == null) {
                 Bitmap bitmap = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_BACKGROUND);
-                o = com.censivn.C3DEngine.A.g().a(bitmap, true);
+                o = com.censivn.C3DEngine.C3DEngine.g().a(bitmap, true);
                 bitmap.recycle();
             }
             this.t.textures().addElement(o);
             if (m == null) {
                 Bitmap bitmap2 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_UNSELECT);
-                m = com.censivn.C3DEngine.A.g().a(bitmap2, true);
+                m = com.censivn.C3DEngine.C3DEngine.g().a(bitmap2, true);
                 bitmap2.recycle();
             }
             if (n == null) {
                 Bitmap bitmap3 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_SELECT);
-                n = com.censivn.C3DEngine.A.g().a(bitmap3, true);
+                n = com.censivn.C3DEngine.C3DEngine.g().a(bitmap3, true);
                 bitmap3.recycle();
             }
             if (p == null) {
                 Bitmap bitmap4 = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_HOMEPAGE_MARK, com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f);
-                p = com.censivn.C3DEngine.A.g().a(bitmap4, true);
+                p = com.censivn.C3DEngine.C3DEngine.g().a(bitmap4, true);
                 bitmap4.recycle();
             }
             if (r == null) {
@@ -592,7 +592,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     public void P() {
         if (Q() == 0 && t() != -1) {
             if (this.l != null) {
-                com.censivn.C3DEngine.A.g().a(this.l);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.l);
                 this.l = null;
                 this.q.textures().clear();
             }
@@ -603,11 +603,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         position().setAll(0.0f, 0.0f, 0.0f);
         if (this.l == null || this.l.width != d || this.l.height != e) {
             if (this.l != null) {
-                com.censivn.C3DEngine.A.g().a(this.l);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.l);
                 this.l = null;
                 this.q.textures().clear();
             }
-            this.l = com.censivn.C3DEngine.A.g().a(d, e, false);
+            this.l = com.censivn.C3DEngine.C3DEngine.g().a(d, e, false);
             this.q.textures().addElement(this.l);
         }
         com.tsf.shell.manager.app.TextureCache.b(f, this.l);
@@ -731,7 +731,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
             l();
         }
         if (this.b != null) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.3
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.3
                 @Override // java.lang.Runnable
                 public void run() {
                     if (g.this.j) {
@@ -751,7 +751,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         }
         this.g = 0.0f;
         if (this.b != null) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.4
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.4
                 @Override // java.lang.Runnable
                 public void run() {
                     if (g.this.j) {

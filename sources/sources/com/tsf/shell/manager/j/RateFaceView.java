@@ -144,17 +144,17 @@ public class RateFaceView extends j {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.i.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.i, b.d.rate_face);
-            com.censivn.C3DEngine.A.g().a(this.j, b.d.rate_face_eyes);
-            com.censivn.C3DEngine.A.g().a(this.k, b.d.rate_face_mouth);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.i, b.d.rate_face);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.j, b.d.rate_face_eyes);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.k, b.d.rate_face_mouth);
         }
     }
 
     public void c() {
         if (this.i.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.i);
-            com.censivn.C3DEngine.A.g().a(this.j);
-            com.censivn.C3DEngine.A.g().a(this.k);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.i);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.j);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.k);
         }
     }
 }

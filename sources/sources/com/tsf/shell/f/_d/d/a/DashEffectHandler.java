@@ -79,7 +79,7 @@ public class DashEffectHandler implements DashEffectCallback {
             if (Math.abs(this.i - this.h) < 0.5f) {
                 DashEffectHandler();
             } else {
-                com.censivn.C3DEngine.A.e().j();
+                com.censivn.C3DEngine.C3DEngine.e().j();
             }
         }
     }

@@ -49,7 +49,7 @@ public class TextLabelElementV2 {
             Bitmap bitmapA2 = q.a(f2 / 2.0f, -1);
             canvas.drawBitmap(bitmapA2, (bitmapCreateBitmap.getWidth() - bitmapA2.getWidth()) / 2, f + ((d - f2) / 2.0f), (Paint) null);
             bitmapA2.recycle();
-            com.censivn.C3DEngine.A.g().a(this.g, bitmapCreateBitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.g, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
             this.f.calAABB(1.2f, 1.0f, 1.0f);
             this.f.notifLayoutRefresh();
@@ -59,7 +59,7 @@ public class TextLabelElementV2 {
     public void c() {
         this.e = null;
         if (this.g.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.g);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.g);
         }
     }
 

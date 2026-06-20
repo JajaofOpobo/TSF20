@@ -43,10 +43,10 @@ public class LauncherAppInfo {
         try {
             Home.b().a(this.a, (Object) null);
         } catch (Exception e) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.app.LauncherAppInfo.1
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.app.LauncherAppInfo.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.activity_not_found));
+                    com.tsf.shell.e.a(com.censivn.C3DEngine.C3DEngine.d().getString(b.i.activity_not_found));
                 }
             });
         }
@@ -86,7 +86,7 @@ public class LauncherAppInfo {
             String str = resolveInfo.activityInfo.applicationInfo.packageName;
             this.b = new ComponentName(str, resolveInfo.activityInfo.name);
             a(this.b, 270532608);
-            PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
+            PackageManager packageManager = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
             try {
                 PackageInfo packageInfo = packageManager.getPackageInfo(str, 0);
                 b(packageInfo);
@@ -106,7 +106,7 @@ public class LauncherAppInfo {
                 m.a("EVENT_ISSUSE_APP_TITLE_NULL", map);
             }
         }
-        com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.LauncherAppInfo.3
+        com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.app.LauncherAppInfo.3
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.app.EventHandler.a(f.this);
@@ -128,7 +128,7 @@ public class LauncherAppInfo {
             }
         }
         map.clear();
-        com.censivn.C3DEngine.A.g().a(this.d);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         this.b = null;
         this.f = null;
     }
@@ -151,7 +151,7 @@ public class LauncherAppInfo {
     }
 
     public void f() {
-        com.censivn.C3DEngine.A.g().a(this.d, com.tsf.shell.manager.r.c.a.WidgetInstantiator(null, com.tsf.shell.manager.o.ButtonPresetManager.a, this));
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d, com.tsf.shell.manager.r.c.a.WidgetInstantiator(null, com.tsf.shell.manager.o.ButtonPresetManager.a, this));
     }
 
     public Bitmap g() {

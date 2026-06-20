@@ -332,7 +332,7 @@ public class WorkspaceSceneNode {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void E() {
-        com.censivn.C3DEngine.A.g().a(this.d);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         WorkspaceSceneNode();
     }
 
@@ -388,7 +388,7 @@ public class WorkspaceSceneNode {
             }
         }
         if (this.d.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.d, b.d.scrollcontainer_arrow);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, b.d.scrollcontainer_arrow);
         }
         com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
         dVar2.a(255);

@@ -93,7 +93,7 @@ public class ItemNode extends j {
     }
 
     public void a(int i) {
-        com.censivn.C3DEngine.A.a().b(this.c, i);
+        com.censivn.C3DEngine.C3DEngine.a().b(this.c, i);
     }
 
     public void c() {
@@ -119,7 +119,7 @@ public class ItemNode extends j {
             w.a();
             a.this.c.b = fVar;
             a.this.c.c = this.a;
-            com.censivn.C3DEngine.A.a().b(a.this.c, 400L);
+            com.censivn.C3DEngine.C3DEngine.a().b(a.this.c, 400L);
             a.this.d();
         }
 
@@ -130,14 +130,14 @@ public class ItemNode extends j {
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            com.censivn.C3DEngine.A.a().g(a.this.c);
+            com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            com.censivn.C3DEngine.A.a().g(a.this.c);
+            com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }

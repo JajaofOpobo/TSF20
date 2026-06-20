@@ -43,7 +43,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
                     Canvas canvas = new Canvas(bitmapA);
                     canvas.drawColor(-1, PorterDuff.Mode.CLEAR);
                     com.tsf.shell.manager.o.ButtonPresetManager.a.a(canvas, x.a(DashItemContainer.d.effect_icon_standard, com.tsf.shell.manager.o.ButtonPresetManager.a.H, com.tsf.shell.manager.o.ButtonPresetManager.a.I), true);
-                    com.censivn.C3DEngine.A.g().a(d.b, bitmapA);
+                    com.censivn.C3DEngine.C3DEngine.g().a(d.b, bitmapA);
                 }
                 d.this.a(this);
             }
@@ -62,7 +62,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
 
     public void d() {
         if (DashItemContainer.id != 0) {
-            com.censivn.C3DEngine.A.g().a(DashItemContainer);
+            com.censivn.C3DEngine.C3DEngine.g().a(DashItemContainer);
         }
     }
 

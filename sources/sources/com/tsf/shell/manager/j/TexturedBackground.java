@@ -17,7 +17,7 @@ public class TexturedBackground extends com.censivn.C3DEngine.b.f.b.a {
     @Override // com.censivn.C3DEngine.b.f.i
     public void onDrawStart() {
         if (this.a.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.a, this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d);
         }
     }
 }

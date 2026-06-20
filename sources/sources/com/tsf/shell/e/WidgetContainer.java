@@ -44,7 +44,7 @@ public class WidgetContainer extends FrameLayout {
                             Bitmap bitmap = (Bitmap) b.this.f.get();
                             if (bitmap == null) {
                                 if (b.this.c()) {
-                                    com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.1.1
+                                    com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {
                                             b.this.invalidate();
@@ -72,7 +72,7 @@ public class WidgetContainer extends FrameLayout {
     public void a(int i, int i2) {
         if (Build.VERSION.SDK_INT >= 16) {
             try {
-                float f = com.censivn.C3DEngine.A.d().getResources().getDisplayMetrics().density;
+                float f = com.censivn.C3DEngine.C3DEngine.d().getResources().getDisplayMetrics().density;
                 int i3 = (int) (i / f);
                 int i4 = (int) (i2 / f);
                 this.b.g.a.updateAppWidgetSize(null, i3, i4, i3, i4);
@@ -152,7 +152,7 @@ public class WidgetContainer extends FrameLayout {
                     this.b.invalidate();
                 }
                 if (this.b.h == null) {
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.2
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.2
                         @Override // java.lang.Runnable
                         public void run() {
                             b.this.b.onDrawStart();

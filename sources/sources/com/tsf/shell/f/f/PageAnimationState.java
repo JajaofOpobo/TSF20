@@ -83,7 +83,7 @@ public class PageAnimationState {
 
         public void a() {
             if (this.b == null) {
-                this.b = com.censivn.C3DEngine.A.g().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
+                this.b = com.censivn.C3DEngine.C3DEngine.g().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             }
         }
 
@@ -91,7 +91,7 @@ public class PageAnimationState {
             boolean z;
             this.a = null;
             if (this.b != null) {
-                com.censivn.C3DEngine.A.g().a(this.b);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.b);
             }
             this.b = null;
             Iterator it = j.d.iterator();

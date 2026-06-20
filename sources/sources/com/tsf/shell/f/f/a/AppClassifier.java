@@ -103,7 +103,7 @@ public class AppClassifier {
                 arrayList.add(gVar.bd().b.getPackageName());
             }
         }
-        return com.tsf.shell.plugin.classification.ClassificationManager.a(com.censivn.C3DEngine.A.d(), arrayList, aVar);
+        return com.tsf.shell.plugin.classification.ClassificationManager.a(com.censivn.C3DEngine.C3DEngine.d(), arrayList, aVar);
     }
 
     public void c() {

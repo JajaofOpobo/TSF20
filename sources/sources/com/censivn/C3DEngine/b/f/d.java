@@ -43,7 +43,7 @@ public class d extends h {
             this.c = false;
             updatePointsVBO();
         }
-        com.censivn.C3DEngine.A.e().a(this);
+        com.censivn.C3DEngine.C3DEngine.e().a(this);
         updateTextureState();
         ShaderColor shaderColor = ShaderManager.SHADER_COLOR;
         ShaderManager.enableShader(shaderColor);

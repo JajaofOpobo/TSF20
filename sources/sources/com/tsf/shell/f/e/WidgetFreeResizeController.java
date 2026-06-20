@@ -214,7 +214,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
                             itemInfoK.cellYH = i4;
                         }
                         final com.tsf.shell.f.i.b.b.ItemShell aVar = t.c;
-                        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3.1
+                        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 if (aVar != null && aVar.g != null) {
@@ -593,7 +593,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
                 } else {
                     y = motionEvent2.getX() - this.a;
                 }
-                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.a.1
+                com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.e.a(a.this.d, y);

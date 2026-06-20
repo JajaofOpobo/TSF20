@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.f;
 
 import android.opengl.GLSurfaceView;
-import com.censivn.C3DEngine.a.f;
+import com.censivn.C3DEngine.a.EngineController;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.Home;
@@ -35,7 +35,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.d();
         com.tsf.shell.manager.app.FeatureConfig = new com.tsf.shell.manager.h.ScreenLockController();
         com.tsf.shell.manager.app.AppListModel = this;
-        com.censivn.C3DEngine.a.a(gLSurfaceView);
+        com.censivn.C3DEngine.C3DEngine.a(gLSurfaceView);
         com.censivn.C3DEngine.b.b.A.a();
         com.tsf.shell.manager.app.SimpleHandler = new com.tsf.shell.manager.e.ScreenSaverDelayConfig();
         com.tsf.shell.manager.app.TextureCache = new com.tsf.shell.f.a.a.GlTexturePool();
@@ -43,12 +43,12 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.EventHandler = new com.tsf.shell.manager.q.UnreadBadgeManager();
         ThemeManager.initThemeManager();
         com.tsf.shell.manager.app.FolderManager = new com.tsf.shell.manager.action.ActionManager();
-        com.tsf.shell.manager.action.GestureHandler.a(com.censivn.C3DEngine.A.d());
+        com.tsf.shell.manager.action.GestureHandler.a(com.censivn.C3DEngine.C3DEngine.d());
         com.tsf.shell.manager.app.ObjectRegistry = new com.tsf.shell.manager.c.ContactManager();
         com.tsf.shell.e.DragLayer eVar = (com.tsf.shell.e.DragLayer) gLSurfaceView.getParent();
         com.tsf.shell.manager.app.ServiceFactory = new com.tsf.shell.f.h.WorkspaceStub();
         com.tsf.shell.manager.app.PanelStateManager = new com.tsf.shell.manager.m.SideMenuManager();
-        com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.A.d());
+        com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.C3DEngine.d());
         com.tsf.shell.manager.app.TaskScheduler = new d(eVar);
         com.tsf.shell.manager.app.StateHub = new n();
         com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.ItemAnimationController();
@@ -59,7 +59,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.StateManager = new com.tsf.shell.manager.d.HitTargetManager();
         com.tsf.shell.manager.app.WidgetLayoutManager = new com.tsf.shell.manager.r.a.WidgetInstanceTracker();
         com.tsf.shell.manager.app.PlaceholderManager = new p();
-        if (!t.a(com.censivn.C3DEngine.A.d())) {
+        if (!t.a(com.censivn.C3DEngine.C3DEngine.d())) {
             com.tsf.shell.services.ServiceLifecycleManager.a = false;
         }
         this.d = new j();
@@ -72,7 +72,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.f.e.a.AlignmentListener();
     }
 
-    @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.UpdateCallback
+    @Override // com.censivn.C3DEngine.a.EngineController, com.censivn.C3DEngine.d.UpdateCallback
     public void b() {
         Home.c.a("initScene start");
         Home.q();

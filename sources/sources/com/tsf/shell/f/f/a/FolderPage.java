@@ -443,13 +443,13 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     public void av() {
         Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.A.a(64.0f), (int) com.censivn.C3DEngine.b.b.A.a(64.0f));
-        this.ar = com.censivn.C3DEngine.A.g().a(this.ar, bitmap, true);
+        this.ar = com.censivn.C3DEngine.C3DEngine.g().a(this.ar, bitmap, true);
         bitmap.recycle();
     }
 
     private void aW() {
         Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.A.a(64.0f), (int) com.censivn.C3DEngine.b.b.A.a(64.0f));
-        this.ar = com.censivn.C3DEngine.A.g().a(this.ar, bitmap, true);
+        this.ar = com.censivn.C3DEngine.C3DEngine.g().a(this.ar, bitmap, true);
         bitmap.recycle();
         this.aq = com.censivn.C3DEngine.b.b.A.a(64.0f, 64.0f);
         this.aq.textures().addElement(this.ar);
@@ -839,7 +839,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void aE() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.13
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.13
             @Override // java.lang.Runnable
             public void run() {
                 h.this.b(h.B, h.C);
@@ -849,7 +849,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void a(final int i, final int i2) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.2
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.2
             @Override // java.lang.Runnable
             public void run() {
                 h.this.b(i, i2);
@@ -1295,7 +1295,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
                     h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
                 }
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.4.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.4.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (com.censivn.C3DEngine.a.d.d().h() == this) {
@@ -1385,11 +1385,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void bi() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.5
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.5
             @Override // java.lang.Runnable
             public void run() {
-                h.this.au = new FrameLayout(com.censivn.C3DEngine.A.d());
-                ImageView imageView = new ImageView(com.censivn.C3DEngine.A.d());
+                h.this.au = new FrameLayout(com.censivn.C3DEngine.C3DEngine.d());
+                ImageView imageView = new ImageView(com.censivn.C3DEngine.C3DEngine.d());
                 imageView.setImageResource(b.d.drawer_loading);
                 RotateAnimation rotateAnimation = new RotateAnimation(0.0f, 360.0f, 1, 0.5f, 1, 0.5f);
                 rotateAnimation.setInterpolator(new LinearInterpolator());
@@ -1404,7 +1404,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void bj() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.6
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.6
             @Override // java.lang.Runnable
             public void run() {
                 if (h.this.au != null) {

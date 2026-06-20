@@ -140,7 +140,7 @@ public class SelectionState {
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 w.a(3);
                 c.this.m.b = fVar;
-                com.censivn.C3DEngine.A.a().b(c.this.m, 400L);
+                com.censivn.C3DEngine.C3DEngine.a().b(c.this.m, 400L);
                 com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
@@ -151,13 +151,13 @@ public class SelectionState {
 
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-                com.censivn.C3DEngine.A.a().g(c.this.m);
+                com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
                 c.this.m.b = null;
             }
 
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-                com.censivn.C3DEngine.A.a().g(c.this.m);
+                com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
                 c.this.m.b = null;
                 com.tsf.shell.manager.app.Notifier.a();
             }
@@ -257,7 +257,7 @@ public class SelectionState {
 
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean b(final com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.6.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.6.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (fVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) {
@@ -386,7 +386,7 @@ public class SelectionState {
 
     public void c() {
         if (Thread.currentThread().getId() != com.censivn.C3DEngine.a.e.f) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.9
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.9
                 @Override // java.lang.Runnable
                 public void run() {
                     c.this.c();
@@ -438,7 +438,7 @@ public class SelectionState {
                 @Override // com.censivn.C3DEngine.b.f.i
                 public void onDrawStart() {
                     if (SelectionIndicator.d.id == 0) {
-                        com.censivn.C3DEngine.A.g().a(SelectionIndicator.d, SelectionCallback.d.editer_icon_delete_cap);
+                        com.censivn.C3DEngine.C3DEngine.g().a(SelectionIndicator.d, SelectionCallback.d.editer_icon_delete_cap);
                     }
                 }
             };

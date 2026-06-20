@@ -25,7 +25,7 @@ public class DashAnimationConfig {
         if (zB) {
             this.b.setGravity(new Vector2(0.0f, -100.0f));
             this.b.step(0.025f, 3, 3);
-            com.censivn.C3DEngine.A.e().j();
+            com.censivn.C3DEngine.C3DEngine.e().j();
         }
         com.tsf.shell.manager.app.v.ObjectHelper.e().a(zB);
     }

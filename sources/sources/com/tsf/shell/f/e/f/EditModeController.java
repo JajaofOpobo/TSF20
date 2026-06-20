@@ -138,7 +138,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
             if (!this.a) {
                 final float[] fArrA = x.a(motionEvent2, a.this.l);
                 this.a = true;
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.2.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.2.1
                     @Override // java.lang.Runnable
                     public void run() {
                         i hittingTarget = a.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -327,7 +327,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
         if (!this.r && this.q != null) {
             this.r = true;
             this.q.a();
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.3
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.3
                 @Override // java.lang.Runnable
                 public void run() {
                     a.this.r = false;
@@ -503,7 +503,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
 
     static class b {
         public static void a(final com.tsf.shell.f.i.PageItem bVar) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.b.1
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     EditModeNode.c(bVar);
@@ -514,11 +514,11 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.b.a, e.a, c
         /* JADX INFO: Access modifiers changed from: private */
         public static void c(final com.tsf.shell.f.i.PageItem bVar) {
             ItemInfo itemInfoK = bVar.K();
-            Context contextD = com.censivn.C3DEngine.A.d();
-            View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(EditModeNode.g.dialog_rename, (ViewGroup) null);
+            Context contextD = com.censivn.C3DEngine.C3DEngine.d();
+            View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.C3DEngine.d()).inflate(EditModeNode.g.dialog_rename, (ViewGroup) null);
             final EditText editText = (EditText) viewInflate.findViewById(EditModeNode.e.username_edit);
             editText.setText(itemInfoK.title);
-            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
+            AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
             builder.setTitle(EditModeNode.i.rename_title);
             builder.setView(viewInflate);
             builder.setPositiveButton(contextD.getString(EditModeNode.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.e.f.EditModeController.b.2

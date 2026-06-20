@@ -28,15 +28,15 @@ public class DashItemF extends DashItemD {
     public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (this.c.visible()) {
             if (bVar.parent() instanceof com.tsf.shell.f.f.a.PageContainerBase) {
-                com.censivn.C3DEngine.A.e().b(bVar.position().x, bVar.position().y);
+                com.censivn.C3DEngine.C3DEngine.e().b(bVar.position().x, bVar.position().y);
             } else {
                 this.d.reset();
                 bVar.localToGlobal(this.d);
-                com.censivn.C3DEngine.A.e().b(this.d.x, this.d.y);
+                com.censivn.C3DEngine.C3DEngine.e().b(this.d.x, this.d.y);
             }
             this.c.b(bVar.az());
-            com.censivn.C3DEngine.A.e().f();
-            com.censivn.C3DEngine.A.e().j();
+            com.censivn.C3DEngine.C3DEngine.e().f();
+            com.censivn.C3DEngine.C3DEngine.e().j();
         }
     }
 
@@ -45,16 +45,16 @@ public class DashItemF extends DashItemD {
         if (this.c.visible()) {
             GLES20.glFrontFace(2304);
             if (bVar.parent() instanceof com.tsf.shell.f.f.a.PageContainerBase) {
-                com.censivn.C3DEngine.A.e().b(bVar.position().x, bVar.position().y);
+                com.censivn.C3DEngine.C3DEngine.e().b(bVar.position().x, bVar.position().y);
             } else {
                 this.d.reset();
                 bVar.localToGlobal(this.d);
-                com.censivn.C3DEngine.A.e().b(this.d.x, this.d.y);
+                com.censivn.C3DEngine.C3DEngine.e().b(this.d.x, this.d.y);
             }
             float fAz = bVar.az();
             this.c.a(fAz);
             bVar.f(fAz + 8.0f);
-            com.censivn.C3DEngine.A.e().f();
+            com.censivn.C3DEngine.C3DEngine.e().f();
             GLES20.glFrontFace(2305);
         }
     }

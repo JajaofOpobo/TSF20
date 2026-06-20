@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.element;
 
 import android.content.Context;
 import android.util.Xml;
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeClockDescription;

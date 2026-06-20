@@ -187,7 +187,7 @@ public abstract class ItemInfo {
         switch (this.iconType) {
             case 1:
                 try {
-                    Resources resourcesForApplication = com.censivn.C3DEngine.A.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
+                    Resources resourcesForApplication = com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
                     if (resourcesForApplication != null) {
                     }
                 } catch (Exception e) {

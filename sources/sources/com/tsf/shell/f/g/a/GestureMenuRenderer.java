@@ -20,18 +20,18 @@ public class GestureMenuRenderer extends j {
     private static void a() {
         if (b == null) {
             Bitmap bitmapA = com.tsf.shell.utils.SelectionDotRenderer.a(true);
-            b = com.censivn.C3DEngine.A.g().a(bitmapA, false);
+            b = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, false);
             bitmapA.recycle();
             Bitmap bitmapA2 = com.tsf.shell.utils.SelectionDotRenderer.a(false);
-            c = com.censivn.C3DEngine.A.g().a(bitmapA2, false);
+            c = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }
     }
 
     public static void b() {
         if (b != null) {
-            com.censivn.C3DEngine.A.g().a(b);
-            com.censivn.C3DEngine.A.g().a(c);
+            com.censivn.C3DEngine.C3DEngine.g().a(b);
+            com.censivn.C3DEngine.C3DEngine.g().a(c);
             b = null;
             c = null;
         }
@@ -115,7 +115,7 @@ public class GestureMenuRenderer extends j {
 
     public static void j() {
         if (g != null) {
-            com.censivn.C3DEngine.A.g().a(g);
+            com.censivn.C3DEngine.C3DEngine.g().a(g);
             g = null;
         }
     }

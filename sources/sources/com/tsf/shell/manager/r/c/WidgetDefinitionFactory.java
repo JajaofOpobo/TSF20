@@ -54,7 +54,7 @@ public class WidgetDefinitionFactory {
             } else {
                 gVar.g = 1;
             }
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.1
                 @Override // java.lang.Runnable
                 public void run() {
                     gVar.l();
@@ -76,70 +76,70 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.42f, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.5
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new h(new VTextureManager(), com.censivn.C3DEngine.A.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.A.c);
+                    return new h(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.A.c);
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.message")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.6
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.GridSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.GridSceneNode(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.alarm")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.33f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.7
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.b(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.b(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.calendar")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.28f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.8
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.a.TextureElementB(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.a.TextureElementB(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.cubeclock")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.6f * com.censivn.C3DEngine.b.b.A.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.9
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.b.SceneComponentC(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.b.SceneComponentC(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.weather")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-20.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.10
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new m(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new m(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.memo")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.11
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.LabelSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.LabelSceneNode(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.gallery")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.12
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.PageSceneNode(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.PageSceneNode(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.adornment")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.55f, f3, (-50.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.2
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.a(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.a(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.dotsclock")) {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f2, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.3
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new com.tsf.shell.f.i.c.a.c.SceneRendererC(new VTextureManager(), com.censivn.C3DEngine.A.d());
+                    return new com.tsf.shell.f.i.c.a.c.SceneRendererC(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else {
@@ -164,14 +164,14 @@ public class WidgetDefinitionFactory {
                         this.k.destroy();
                     }
                     if (this.l.id != 0) {
-                        com.censivn.C3DEngine.A.g().a(this.l);
+                        com.censivn.C3DEngine.C3DEngine.g().a(this.l);
                     }
                 }
 
                 @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
                 public void b() {
                     if (this.l.id != 0) {
-                        com.censivn.C3DEngine.A.g().a(this.l);
+                        com.censivn.C3DEngine.C3DEngine.g().a(this.l);
                     }
                     super.b();
                 }
@@ -180,10 +180,10 @@ public class WidgetDefinitionFactory {
                     if (this.l.id == 0) {
                         Bitmap bitmapA = null;
                         try {
-                            Context contextD = com.censivn.C3DEngine.A.d();
+                            Context contextD = com.censivn.C3DEngine.C3DEngine.d();
                             String str2 = this.a;
-                            com.censivn.C3DEngine.A.d();
-                            com.censivn.C3DEngine.A.d();
+                            com.censivn.C3DEngine.C3DEngine.d();
+                            com.censivn.C3DEngine.C3DEngine.d();
                             Context contextCreatePackageContext = contextD.createPackageContext(str2, 3);
                             if (contextCreatePackageContext.getApplicationInfo() != null && contextCreatePackageContext.getApplicationInfo().icon != 0) {
                                 bitmapA = x.a(contextCreatePackageContext.getResources(), contextCreatePackageContext.getApplicationInfo().icon, (int) this.k.b(), (int) this.k.c());
@@ -194,7 +194,7 @@ public class WidgetDefinitionFactory {
                         if (bitmapA == null) {
                             bitmapA = x.a(b.d.sym_def_app_icon, (int) this.k.b(), (int) this.k.c());
                         }
-                        com.censivn.C3DEngine.A.g().a(this.l, bitmapA);
+                        com.censivn.C3DEngine.C3DEngine.g().a(this.l, bitmapA);
                         bitmapA.recycle();
                     }
                 }

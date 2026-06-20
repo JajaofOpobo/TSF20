@@ -156,7 +156,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
 
     public void c() {
         this.b = x.b(b.d.grid_point);
-        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.j));
+        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.A.j));
     }
 
     public boolean a(g gVar) {
@@ -276,6 +276,6 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
 
     @Override // com.censivn.C3DEngine.b.c.e.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.A.d(), com.censivn.C3DEngine.b.b.A.j));
+        this.a.a(com.censivn.C3DEngine.b.b.A.p, com.censivn.C3DEngine.b.b.A.q, r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.A.i), r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.A.j));
     }
 }

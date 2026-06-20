@@ -548,7 +548,7 @@ public class DrawerContentList extends DrawerPageItemBase {
             }
             if (!this.y) {
                 this.y = true;
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._c.DrawerContentList.2
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._c.DrawerContentList.2
                     @Override // java.lang.Runnable
                     public void run() {
                         c.this.y = false;

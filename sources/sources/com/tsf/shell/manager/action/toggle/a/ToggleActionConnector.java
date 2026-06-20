@@ -51,7 +51,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
                 public void a(com.c.a.a.a.a aVar) {
                     switch (c.this.a) {
                         case 12000:
-                            if (com.tsf.shell.services.ToggleServiceConnector.a(com.censivn.C3DEngine.A.d(), 3)) {
+                            if (com.tsf.shell.services.ToggleServiceConnector.a(com.censivn.C3DEngine.C3DEngine.d(), 3)) {
                                 aVar.v();
                             } else {
                                 com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.a(com.tsf.shell.services.ToggleServiceConnector.a);

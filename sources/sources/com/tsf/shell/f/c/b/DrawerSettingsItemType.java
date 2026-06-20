@@ -381,7 +381,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             }
             if (!this.k) {
                 this.k = true;
-                com.censivn.C3DEngine.A.a().c(this.l);
+                com.censivn.C3DEngine.C3DEngine.a().c(this.l);
             }
         }
     }
@@ -395,10 +395,10 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
                 for (i iVar : a.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
-                com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.c.b.a.3.1
+                com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.f.c.b.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
                         contentResolver.update(ContentUris.withAppendedId(g.d.a, a.this.n + 1), contentValues, null, null);

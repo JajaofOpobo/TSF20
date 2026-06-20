@@ -8,7 +8,7 @@ import android.provider.ContactsContract;
 public class ContactsProviderHelper {
     public static boolean a(com.tsf.shell.manager.c.a.a.ContactModel aVar) {
         int i;
-        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, new String[]{"version", "display_name", "photo_id"}, "contact_id= ?", new String[]{String.valueOf(aVar.b)}, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, new String[]{"version", "display_name", "photo_id"}, "contact_id= ?", new String[]{String.valueOf(aVar.b)}, null);
         if (!cursorQuery.moveToFirst() || aVar.e == (i = cursorQuery.getInt(0))) {
             return false;
         }

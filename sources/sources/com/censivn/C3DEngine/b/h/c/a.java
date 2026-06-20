@@ -23,7 +23,7 @@ public class a extends k {
     public void onDrawStart() {
         if (this.a.id == 0) {
             Bitmap bitmapA = x.a(b.d.res_loading, com.tsf.shell.manager.g.a.k, com.tsf.shell.manager.g.a.k);
-            com.censivn.C3DEngine.A.g().a(this.a, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, bitmapA);
             bitmapA.recycle();
         }
         rotation().z -= 10.0f;
@@ -31,7 +31,7 @@ public class a extends k {
     }
 
     public void a() {
-        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
     }
 
     public void a(boolean z) {

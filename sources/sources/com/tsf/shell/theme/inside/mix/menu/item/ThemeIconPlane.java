@@ -27,7 +27,7 @@ public class ThemeIconPlane extends j {
             if (mMark == null) {
                 mMark = new k(a.a(54.0f), a.a(36.0f), false);
                 Bitmap bitmapA = x.a(b.d.theme_30_mark);
-                TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(bitmapA, true);
+                TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, true);
                 bitmapA.recycle();
                 mMark.textures().addElement(textureElementA);
                 mMark.position().x = a.a(70.0f);

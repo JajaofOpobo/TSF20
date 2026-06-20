@@ -673,10 +673,10 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         }
         if (!this.af) {
             if (this.u == null) {
-                this.u = com.censivn.C3DEngine.A.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
+                this.u = com.censivn.C3DEngine.C3DEngine.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
             } else if (this.u.width != ILassoSelectable.c || this.u.height != ILassoSelectable.d) {
-                com.censivn.C3DEngine.A.g().a(this.u);
-                this.u = com.censivn.C3DEngine.A.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.u);
+                this.u = com.censivn.C3DEngine.C3DEngine.g().a(ILassoSelectable.c, ILassoSelectable.d, false);
             }
             this.t.textures().clear();
             this.t.textures().addElement(this.u);
@@ -827,7 +827,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             } else {
                 K().onUpdateName(str, false);
             }
-            com.censivn.C3DEngine.A.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.20
+            com.censivn.C3DEngine.C3DEngine.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.20
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
                     com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(FolderShortcutItem.this, str);
@@ -853,7 +853,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     public void c(int i) {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.21
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.21
             @Override // java.lang.Runnable
             public void run() {
         com.tsf.shell.ShellDataProvider.a().b("WidgetFolderBox");
@@ -864,7 +864,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     public void aQ() {
         if (!this.Z) {
             this.Z = true;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.2
                 @Override // java.lang.Runnable
                 public void run() {
                     FolderShortcutItem.this.bc();
@@ -1380,7 +1380,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                             runnable2 = new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.7
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.7.1
+                                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.7.1
                                         @Override // java.lang.Runnable
                                         public void run() {
                                             FolderShortcutItem.this.a(runnable);
@@ -1850,10 +1850,10 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.P = null;
         this.Q = null;
         this.R.a();
-        com.censivn.C3DEngine.A.g().a(this.v);
-        com.censivn.C3DEngine.A.g().a(this.u);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.v);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.u);
         if (this.w != null) {
-            com.censivn.C3DEngine.A.g().a(this.w);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.w);
         }
         this.u = null;
         PageItem.remove(this);

@@ -51,7 +51,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
                             j.this.h = false;
                         }
                         j.this.p = true;
-                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1.1
+                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 if (j.this.h) {

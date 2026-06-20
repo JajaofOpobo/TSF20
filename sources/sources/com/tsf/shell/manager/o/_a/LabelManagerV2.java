@@ -33,7 +33,7 @@ public class LabelManagerV2 {
     }
 
     public static void a() {
-        b.a = com.censivn.C3DEngine.A.d().getResources().getDimensionPixelSize(b.c.shortcut_text_size);
+        b.a = com.censivn.C3DEngine.C3DEngine.d().getResources().getDimensionPixelSize(b.c.shortcut_text_size);
         c = new ArrayList<>();
         c.add(new d(-1, new a()));
         a aVar = new a();

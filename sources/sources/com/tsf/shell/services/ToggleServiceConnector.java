@@ -61,7 +61,7 @@ public class ToggleServiceConnector implements ServiceConnection {
 
     public void b() {
         if (a(this.k, 2)) {
-            Intent intentA = i.a(com.censivn.C3DEngine.A.d(), new Intent(e()));
+            Intent intentA = i.a(com.censivn.C3DEngine.C3DEngine.d(), new Intent(e()));
             if (intentA != null) {
                 com.tsf.shell.component.ShellComponentInfo.a(this.k, intentA);
                 this.k.bindService(intentA, this, 1);

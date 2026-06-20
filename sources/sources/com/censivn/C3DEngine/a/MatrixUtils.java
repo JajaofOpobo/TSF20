@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.a;
 import android.opengl.Matrix;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class MatrixUtils {
     private static final float[] a = new float[32];
 
     public static void a(float[] fArr, int i, float[] fArr2, int i2, float[] fArr3, int i3) {

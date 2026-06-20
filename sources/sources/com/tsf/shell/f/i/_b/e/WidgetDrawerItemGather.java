@@ -40,7 +40,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
                     if (c.b.id == 0) {
                         int i3 = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
                         Bitmap bitmap = ThemeManager.mix.action.getTheme().getBitmap(ThemeShellDescription.ACTION_APP_DRAWER_POINT, i3, i3);
-                        com.censivn.C3DEngine.A.g().a(c.b, bitmap);
+                        com.censivn.C3DEngine.C3DEngine.g().a(c.b, bitmap);
                         bitmap.recycle();
                     }
                 }
@@ -116,7 +116,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
             q.remove(this);
         }
         if (q.size() == 0) {
-            com.censivn.C3DEngine.A.g().a(WidgetDrawerShortcutItemBase);
+            com.censivn.C3DEngine.C3DEngine.g().a(WidgetDrawerShortcutItemBase);
             b = null;
         }
         super.g();

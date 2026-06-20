@@ -46,7 +46,7 @@ public class DimensionParser {
     }
 
     public static int a(String str) {
-        return a(str, com.censivn.C3DEngine.A.d().getResources().getDisplayMetrics());
+        return a(str, com.censivn.C3DEngine.C3DEngine.d().getResources().getDisplayMetrics());
     }
 
     private static a b(String str) {

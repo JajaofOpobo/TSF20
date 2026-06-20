@@ -155,13 +155,13 @@ public class ThemeIconDesignerMenu extends d {
     private void refreshDemoShortcutTexture() {
         recycleDemoShortcutTexture();
         Bitmap bitmapA = x.a(b.d.tsf_ico);
-        com.censivn.C3DEngine.A.g().a(this.mDemoShortcutTexture, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.mDemoShortcutTexture, bitmapA);
         bitmapA.recycle();
     }
 
     private void recycleDemoShortcutTexture() {
         if (this.mDemoShortcutTexture.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.mDemoShortcutTexture);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.mDemoShortcutTexture);
         }
     }
 

@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
-import com.censivn.C3DEngine.A;
+import com.censivn.C3DEngine.C3DEngine;
 import com.tsf.b;
 import com.tsf.shell.manager.b.TempPreferenceManager;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;

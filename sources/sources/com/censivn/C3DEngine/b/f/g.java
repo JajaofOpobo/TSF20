@@ -23,7 +23,7 @@ public class g extends k {
     public void onDrawStart() {
         if (this.d.id == 0) {
             Bitmap bitmapA = x.a(this.a);
-            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
             bitmapA.recycle();
             a(this.d);
         }
@@ -34,7 +34,7 @@ public class g extends k {
 
     public void a() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
     }
 }

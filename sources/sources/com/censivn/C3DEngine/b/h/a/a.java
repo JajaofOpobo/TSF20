@@ -68,7 +68,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
         this.g = false;
         m.add(this);
         if (k == null) {
-            k = com.censivn.C3DEngine.A.g().a(e(), true);
+            k = com.censivn.C3DEngine.C3DEngine.g().a(e(), true);
         }
         if (i == null) {
             j = a(this.o, this.o);
@@ -113,7 +113,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
                 invalidate();
             } else {
                 this.g = true;
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.a.a.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.a.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.d();
@@ -132,11 +132,11 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
                 i = null;
             }
             if (j != null) {
-                com.censivn.C3DEngine.A.g().a(j);
+                com.censivn.C3DEngine.C3DEngine.g().a(j);
                 j = null;
             }
             if (k != null) {
-                com.censivn.C3DEngine.A.g().a(k);
+                com.censivn.C3DEngine.C3DEngine.g().a(k);
                 k = null;
             }
         }
@@ -187,7 +187,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.a {
     }
 
     public static TextureElement a(int i2, int i3) {
-        TextureElement textureElementA = com.censivn.C3DEngine.A.g().a(i2, i3, false);
+        TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(i2, i3, false);
         textureElementA.width = i2;
         textureElementA.height = i3;
         return textureElementA;

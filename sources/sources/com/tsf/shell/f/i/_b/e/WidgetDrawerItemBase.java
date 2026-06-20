@@ -19,7 +19,7 @@ public abstract class WidgetDrawerItemBase extends WidgetDrawerShortcutItemBase 
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemBase.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemBase.1.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemBase.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.k();
@@ -98,7 +98,7 @@ public abstract class WidgetDrawerItemBase extends WidgetDrawerShortcutItemBase 
             r0.onUpdateName(r5, r1)
             com.tsf.shell.f.i._b.e.WidgetDrawerItemBase$3 r0 = new com.tsf.shell.f.i._b.e.WidgetDrawerItemBase$3
             r0.<init>()
-            com.censivn.C3DEngine.b.c.c r1 = com.censivn.C3DEngine.A.a()
+            com.censivn.C3DEngine.b.c.c r1 = com.censivn.C3DEngine.C3DEngine.a()
             r1.c(r0)
             return
         L31:

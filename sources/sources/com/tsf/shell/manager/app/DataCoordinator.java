@@ -35,7 +35,7 @@ public class DataCoordinator {
 
     public void a(final ArrayList<LauncherAppInfo> arrayList) {
         this.g = com.tsf.shell.manager.app.StateHub.t();
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.1
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.1
             @Override // java.lang.Runnable
             public void run() {
                 ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> arrayList2 = new ArrayList<>();
@@ -51,7 +51,7 @@ public class DataCoordinator {
     }
 
     public void a(final ArrayList<LauncherAppInfo> arrayList, final boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.2
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.2
             @Override // java.lang.Runnable
             public void run() {
                 for (LauncherAppInfo fVar : arrayList) {
@@ -67,7 +67,7 @@ public class DataCoordinator {
     }
 
     public void b(final ArrayList<LauncherAppInfo> arrayList, final boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.3
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.3
             @Override // java.lang.Runnable
             public void run() {
                 if (z) {
@@ -87,7 +87,7 @@ public class DataCoordinator {
     }
 
     public void b(final ArrayList<LauncherAppInfo> arrayList) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.4
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.app.DataCoordinator.4
             @Override // java.lang.Runnable
             public void run() {
                 for (LauncherAppInfo fVar : arrayList) {

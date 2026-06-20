@@ -45,10 +45,10 @@ public abstract class DrawerSettingsBase {
             this.h = true;
             DrawerSettingsBase().addChild(this.e);
             Bitmap bitmapA = x.a(DrawerSettingsData.d.tips_gesture_finger, this.a.b(), this.a.c());
-            com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.b, bitmapA);
             bitmapA.recycle();
             Bitmap bitmapA2 = x.a(DrawerSettingsData.d.tips_finger_point, this.a.b(), this.a.c());
-            com.censivn.C3DEngine.A.g().a(this.d, bitmapA2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA2);
             bitmapA2.recycle();
         }
     }
@@ -56,7 +56,7 @@ public abstract class DrawerSettingsBase {
     public void e() {
         this.h = false;
         this.e.removeFromParent();
-        com.censivn.C3DEngine.A.g().a(this.b);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.b);
     }
 
     public void f() {

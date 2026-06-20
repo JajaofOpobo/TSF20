@@ -17,7 +17,7 @@ public class DrawerItemEditAction extends DrawerItemBase {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             DrawerItemEditAction();
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.1
                 @Override // java.lang.Runnable
                 public void run() {
                     f.this.k();
@@ -36,7 +36,7 @@ public class DrawerItemEditAction extends DrawerItemBase {
     public void aV() {
         LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) K();
         if (launcherShortcut3DInfo.packagename != null) {
-            com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.A.d(), launcherShortcut3DInfo.packagename);
+            com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.C3DEngine.d(), launcherShortcut3DInfo.packagename);
         }
     }
 
@@ -44,7 +44,7 @@ public class DrawerItemEditAction extends DrawerItemBase {
     public void l() {
         super.l();
         if (A() == null ? true : A().a((DrawerShortcutItemBase) this)) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.2
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.2
                 @Override // java.lang.Runnable
                 public void run() {
                     LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) f.this.K();
@@ -55,7 +55,7 @@ public class DrawerItemEditAction extends DrawerItemBase {
                         Home.b().a(launcherShortcut3DInfo.intent, (Object) null);
                     } catch (Exception e) {
                         ItemStubHelper.printStackTrace();
-                        com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(DrawerShortcutItemBase.i.activity_not_found));
+                        com.tsf.shell.e.a(com.censivn.C3DEngine.C3DEngine.d().getString(DrawerShortcutItemBase.i.activity_not_found));
                     }
                 }
             });

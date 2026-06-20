@@ -35,8 +35,8 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
                 WidgetInstanceListPanel.this.a.c(true);
             }
         };
-        this.e = com.censivn.C3DEngine.A.d().getPackageManager();
-        this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.A.d());
+        this.e = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
+        this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         this.g = new ArrayList<>();
         this.i = com.censivn.C3DEngine.b.b.A.a(900.0f);
         this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, 0.0f, 0.0f);

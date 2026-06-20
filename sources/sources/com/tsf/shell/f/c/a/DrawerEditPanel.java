@@ -21,18 +21,18 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
     public void b() {
         a(0.0f, 0.0f);
         a(false);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a.x();
                 e.this.f();
-                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.1
+                com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.m();
                     }
                 }, 2500L);
-                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.2
+                com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.2
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(e.this.a.p(), 0.0f);
@@ -72,7 +72,7 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
 
         @Override // com.censivn.C3DEngine.b.g.d
         public void a() {
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1
                 @Override // java.lang.Runnable
                 public void run() {
                     com.censivn.C3DEngine.b.g.c.a(AnonymousClass2.this.c, 1000, new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1.1
@@ -98,18 +98,18 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void n() {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3
             @Override // java.lang.Runnable
             public void run() {
                 e.this.f();
                 e.this.a.v();
-                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.1
+                com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.o();
                     }
                 }, 2000L);
-                com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.2
+                com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.2
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.h();
@@ -118,13 +118,13 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
                 }, 1500L);
             }
         }, 2000L);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.4
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.4
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a(0.0f, 0.0f);
             }
         }, 1000L);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.5
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.5
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a(false);
@@ -165,11 +165,11 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         public void a() {
             e.this.f();
             e.this.g();
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1
                 @Override // java.lang.Runnable
                 public void run() {
                     e.this.a.g().c();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1.1
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             e.this.k();

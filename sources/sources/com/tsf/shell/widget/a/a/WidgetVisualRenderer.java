@@ -146,7 +146,7 @@ public class WidgetVisualRenderer extends f {
 
         @Override // com.censivn.C3DEngine.b.d.a
         public void a(final MotionEvent motionEvent) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     Number3d number3dL = WidgetVisualState.this.l(motionEvent);
@@ -157,7 +157,7 @@ public class WidgetVisualRenderer extends f {
 
         @Override // com.censivn.C3DEngine.b.d.a
         public void a(MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.2
                 @Override // java.lang.Runnable
                 public void run() {
                     Number3d number3dL = WidgetVisualState.this.l(motionEvent2);
@@ -354,10 +354,10 @@ public class WidgetVisualRenderer extends f {
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.f);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f);
         }
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.e);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e);
         }
     }
 
@@ -376,12 +376,12 @@ public class WidgetVisualRenderer extends f {
     public void f() {
         if (this.e.id == 0) {
             Bitmap bitmapA = a(-1, 100, 100);
-            com.censivn.C3DEngine.A.g().a(this.e, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e, bitmapA);
             bitmapA.recycle();
         }
         if (this.f.id == 0) {
             Bitmap bitmapB = b(-1, (int) com.censivn.C3DEngine.b.b.A.a(30.0f));
-            com.censivn.C3DEngine.A.g().a(this.f, bitmapB);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmapB);
             bitmapB.recycle();
         }
     }

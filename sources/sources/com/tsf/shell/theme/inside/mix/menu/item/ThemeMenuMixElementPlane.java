@@ -56,7 +56,7 @@ public class ThemeMenuMixElementPlane extends j {
             if (previewBitmap == null) {
                 previewBitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
             }
-            com.censivn.C3DEngine.A.g().a(this.previewTE, previewBitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.previewTE, previewBitmap);
             previewBitmap.recycle();
             this.mTitleView.a(getTitle());
             this.mSummaryView.a(getSummary());
@@ -80,13 +80,13 @@ public class ThemeMenuMixElementPlane extends j {
 
     public void update() {
         if (this.previewTE.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.previewTE);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.previewTE);
         }
     }
 
     public void recycle() {
         if (this.previewTE.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.previewTE);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.previewTE);
         }
         this.mTitleView.a();
         this.mSummaryView.a();

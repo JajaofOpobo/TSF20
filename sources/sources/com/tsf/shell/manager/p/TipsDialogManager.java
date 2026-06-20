@@ -71,15 +71,15 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
                 @Override // java.lang.Runnable
                 public void run() {
                     Intent intent = new Intent();
-                    intent.setClass(com.censivn.C3DEngine.A.d(), TipsDialogActivity.class);
+                    intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), TipsDialogActivity.class);
                     intent.putExtra("type", i);
                     int unused = TipsDialogManager.f = Home.b().a(intent, TipsDialogManager.a, b.a.app_alpha_enter, b.a.app_alpha_exit);
                 }
             };
             if (i2 == 0) {
-                com.censivn.C3DEngine.A.a().a(runnable);
+                com.censivn.C3DEngine.C3DEngine.a().a(runnable);
             } else {
-                com.censivn.C3DEngine.A.a().a(runnable, i2);
+                com.censivn.C3DEngine.C3DEngine.a().a(runnable, i2);
             }
         }
     }

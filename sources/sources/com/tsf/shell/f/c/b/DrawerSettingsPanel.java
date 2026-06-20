@@ -228,7 +228,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     public static ArrayList<String> i() {
-        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
         Cursor cursorQuery = contentResolver.query(g.d.a, null, null, null, null);
         ArrayList<String> arrayList = new ArrayList<>();
         int i = 0;

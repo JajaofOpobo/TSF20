@@ -140,7 +140,7 @@ public class ShellModel extends BroadcastReceiver {
     public static class a {
         public static byte[] a(ItemInfo itemInfo) {
             byte[] blob;
-            Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(com.tsf.shell.ShellGraphicsContext.e.a(itemInfo.id, false), null, null, null, null);
+            Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(com.tsf.shell.ShellGraphicsContext.e.a(itemInfo.id, false), null, null, null, null);
             try {
                 cursorQuery.moveToNext();
                 blob = cursorQuery.getBlob(cursorQuery.getColumnIndexOrThrow("icon"));
@@ -177,7 +177,7 @@ public class ShellModel extends BroadcastReceiver {
                 @Override // java.lang.Runnable
                 public void run() {
                     synchronized (ShellModel.f) {
-                        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                         if (z) {
                             contentResolver.insert(com.tsf.shell.ShellGraphicsContext.e.a, contentValues);
                             ShellModel.g.put(Integer.valueOf(itemInfo.id), itemInfo);
@@ -243,7 +243,7 @@ public class ShellModel extends BroadcastReceiver {
             ShellModel.b.post(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellModel.a.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                    ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                     contentResolver.delete(com.tsf.shell.ShellGraphicsContext.e.a(itemInfo.id, false), null, null);
                     synchronized (ShellModel.f) {
                         switch (itemInfo.itemType) {
@@ -399,7 +399,7 @@ public class ShellModel extends BroadcastReceiver {
             if (r3 == 0) goto La1
             com.tsf.shell.manager.bind.ShellModel$1 r3 = new com.tsf.shell.manager.bind.ShellModel$1
             r3.<init>()
-            com.censivn.C3DEngine.b.c.c r6 = com.censivn.C3DEngine.A.a()
+            com.censivn.C3DEngine.b.c.c r6 = com.censivn.C3DEngine.C3DEngine.a()
             r6.d(r3)
             if (r5 != 0) goto L3e
             r0 = r2
@@ -738,7 +738,7 @@ public class ShellModel extends BroadcastReceiver {
                     for (Integer num : ShellModel.h.keySet()) {
                         LauncherFolder3DInfo launcherFolder3DInfo = (LauncherFolder3DInfo) ShellModel.h.get(num);
                         if (launcherFolder3DInfo.id == -1) {
-                            com.censivn.C3DEngine.A.d().getContentResolver().delete(com.tsf.shell.ShellGraphicsContext.e.a, "container=" + num, null);
+                            com.censivn.C3DEngine.C3DEngine.d().getContentResolver().delete(com.tsf.shell.ShellGraphicsContext.e.a, "container=" + num, null);
                             for (ItemInfo itemInfo5 : launcherFolder3DInfo.getItemInfo()) {
                                 ShellModel.g.remove(Integer.valueOf(itemInfo5.id));
                                 itemInfo5.unbind();

@@ -34,7 +34,7 @@ public class ShellBridgeManager {
         d(aVar, sQLiteDatabase);
         b(aVar, sQLiteDatabase);
         e(aVar, sQLiteDatabase);
-        ShellWallpaperManager.a(com.censivn.C3DEngine.a.b());
+        ShellWallpaperManager.a(com.censivn.C3DEngine.a.GestureDetector());
     }
 
     public static void b(ShellProvider.a aVar, SQLiteDatabase sQLiteDatabase) {
@@ -241,7 +241,7 @@ public class ShellBridgeManager {
         launcherWidget3DInfo.scaleH = f5;
         launcherWidget3DInfo.scale = f5;
         launcherWidget3DInfo.itemType = 5;
-        launcherWidget3DInfo.config = "{\"totalFrame\":0,\"packageName\":\"" + com.censivn.C3DEngine.a.b() + "\",\"currentSpeed\":" + f6 + ",\"unitHeight\":0,\"drawable\":\"" + str + "\",\"overturn\":false,\"unitCount\":0,\"maxSpeed\":3,\"horizontal\":true,\"wave\":0,\"unitWidth\":0,\"miniSpeed\":0.10000000149011612,\"positionIncrease\":true,\"isSequence\":false}";
+        launcherWidget3DInfo.config = "{\"totalFrame\":0,\"packageName\":\"" + com.censivn.C3DEngine.a.GestureDetector() + "\",\"currentSpeed\":" + f6 + ",\"unitHeight\":0,\"drawable\":\"" + str + "\",\"overturn\":false,\"unitCount\":0,\"maxSpeed\":3,\"horizontal\":true,\"wave\":0,\"unitWidth\":0,\"miniSpeed\":0.10000000149011612,\"positionIncrease\":true,\"isSequence\":false}";
         launcherWidget3DInfo.packagename = "com.tsf.shell.widget.floating";
         return launcherWidget3DInfo;
     }
@@ -273,7 +273,7 @@ public class ShellBridgeManager {
         };
         Intent.ShortcutIconResource shortcutIconResource = new Intent.ShortcutIconResource();
         b.a aVarB = com.tsf.shell.manager.action.ActionManager.b(i);
-        shortcutIconResource.packageName = com.censivn.C3DEngine.a.b();
+        shortcutIconResource.packageName = com.censivn.C3DEngine.a.GestureDetector();
         shortcutIconResource.resourceName = Integer.toString(aVarB.c);
         launcherShortcutStandardInfo.title = aVarB.b;
         launcherShortcutStandardInfo.iconResource = shortcutIconResource;
@@ -282,7 +282,7 @@ public class ShellBridgeManager {
         new Intent();
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.LAUNCHER");
-        intent.setComponent(new ComponentName(com.censivn.C3DEngine.a.b(), Home.class.getName()));
+        intent.setComponent(new ComponentName(com.censivn.C3DEngine.a.GestureDetector(), Home.class.getName()));
         intent.setFlags(270532608);
         intent.putExtra("action", i);
         launcherShortcutStandardInfo.intent = intent;

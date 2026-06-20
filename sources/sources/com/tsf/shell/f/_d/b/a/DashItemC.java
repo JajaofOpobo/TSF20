@@ -38,7 +38,7 @@ public class DashItemC extends DashItemD {
     @Override // com.tsf.shell.f._d.b.a.DashItemD
     public void a() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
     }
 
@@ -49,7 +49,7 @@ public class DashItemC extends DashItemD {
     @Override // com.tsf.shell.f._d.b.a.DashItemD
     public void b(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (this.d.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.d, DashItemContainer.d.widget_app_new_fire);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, DashItemContainer.d.widget_app_new_fire);
         }
         float fAz = bVar.az();
         int i = (int) fAz;

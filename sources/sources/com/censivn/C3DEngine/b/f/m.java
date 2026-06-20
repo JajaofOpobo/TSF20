@@ -29,9 +29,9 @@ public class m extends j {
             Bitmap bitmapB = this.b.b(this.e);
             if (bitmapB == null) {
                 this.a.visible(false);
-                com.censivn.C3DEngine.A.g().a(this.c);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.c);
             } else {
-                com.censivn.C3DEngine.A.g().a(this.c, bitmapB);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.c, bitmapB);
                 this.a.a(this.c.width);
                 this.a.b(this.c.height);
                 this.a.visible(true);
@@ -45,7 +45,7 @@ public class m extends j {
     public void a() {
         this.d = true;
         if (this.c.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.c);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.c);
         }
     }
 

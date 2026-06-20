@@ -93,7 +93,7 @@ public class DrawerSortManagerV2 {
                     com.tsf.shell.manager.app.StateHub.t().ay();
                     DrawerSortData.this.a = false;
                     if (DrawerSortData.this.f != -1) {
-                        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._d._a.1.1
+                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a._d._a.1.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 DrawerSortData.this.b(DrawerSortData.this.f);

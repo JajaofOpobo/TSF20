@@ -59,13 +59,13 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
     @Override // com.censivn.C3DEngine.b.e.f
     public void f() {
         Bitmap bitmapA = x.a(b.d.preference_video_ico, com.censivn.C3DEngine.b.b.A.a(57.0f), com.censivn.C3DEngine.b.b.A.a(57.0f));
-        com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
         bitmapA.recycle();
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
         this.a.a();
-        com.censivn.C3DEngine.A.g().a(this.d);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
     }
 }

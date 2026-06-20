@@ -144,7 +144,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
         if (dVar != null) {
             dVar.a(runnable);
         } else if (runnable != null) {
-            com.censivn.C3DEngine.A.a().b(runnable, d());
+            com.censivn.C3DEngine.C3DEngine.a().b(runnable, d());
         }
     }
 

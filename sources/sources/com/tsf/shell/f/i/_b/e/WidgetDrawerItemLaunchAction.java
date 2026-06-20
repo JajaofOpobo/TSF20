@@ -16,7 +16,7 @@ public class WidgetDrawerItemLaunchAction extends WidgetDrawerShortcutItemBase {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             WidgetDrawerItemLaunchAction();
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemLaunchAction.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemLaunchAction.1
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.k();

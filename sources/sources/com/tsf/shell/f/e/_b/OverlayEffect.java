@@ -18,7 +18,7 @@ public class OverlayEffect {
         if (this.c != i2 || this.d != i3 || i != this.b) {
             b(textureElement, i);
         }
-        OverlayProperty.a(com.censivn.C3DEngine.A.d(), textureElement, this.a, this.f, this.e);
+        OverlayProperty.a(com.censivn.C3DEngine.C3DEngine.d(), textureElement, this.a, this.f, this.e);
     }
 
     private void b(TextureElement textureElement, int i) {

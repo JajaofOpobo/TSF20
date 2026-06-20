@@ -50,7 +50,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             @Override // com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.c
             public void a() {
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.A.d(), WallpaperAppActivity.class);
+                intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), WallpaperAppActivity.class);
                 Home.b().startActivity(intent);
             }
         });
@@ -58,7 +58,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             @Override // com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.c
             public void a() {
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.A.d(), WallpaperPickerActivity.class);
+                intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), WallpaperPickerActivity.class);
                 Home.b().startActivity(intent);
             }
         });
@@ -200,13 +200,13 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.d != 0 && this.a.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.a, this.d);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d);
             }
         }
 
         public void a() {
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.a);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a);
             }
         }
     }

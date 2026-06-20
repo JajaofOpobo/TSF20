@@ -39,13 +39,13 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
             @Override // java.lang.Runnable
             public void run() throws Throwable {
                 if (ThemeIconInfoLayout.this.mInfo != null) {
-                    Bitmap iconPreviewBitmap = ThemeIconInfoLayout.this.mLoader.getIconPreviewBitmap(com.censivn.C3DEngine.A.d(), ThemeIconInfoLayout.this.mInfo.packagename, (int) a.a(500.0f));
+                    Bitmap iconPreviewBitmap = ThemeIconInfoLayout.this.mLoader.getIconPreviewBitmap(com.censivn.C3DEngine.C3DEngine.d(), ThemeIconInfoLayout.this.mInfo.packagename, (int) a.a(500.0f));
                     Bitmap iconPreviewBitmap2 = iconPreviewBitmap == null ? IconPreviewLoader.getIconPreviewBitmap(com.tsf.shell.manager.app.ServiceProvider.a().d(), (int) a.a(500.0f)) : iconPreviewBitmap;
                     if (ThemeIconInfoLayout.this.bitmapReference != null && ThemeIconInfoLayout.this.bitmapReference.get() != null) {
                         ((Bitmap) ThemeIconInfoLayout.this.bitmapReference.get()).recycle();
                     }
                     ThemeIconInfoLayout.this.bitmapReference = new SoftReference(iconPreviewBitmap2);
-                    com.censivn.C3DEngine.A.a().c(ThemeIconInfoLayout.this.mUpdateTextureRunnable);
+                    com.censivn.C3DEngine.C3DEngine.a().c(ThemeIconInfoLayout.this.mUpdateTextureRunnable);
                 }
             }
         };
@@ -61,7 +61,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
                         return;
                     } else {
                         Bitmap bitmap = (Bitmap) ThemeIconInfoLayout.this.bitmapReference.get();
-                        com.censivn.C3DEngine.A.g().a(ThemeIconInfoLayout.this.mTexture, bitmap);
+                        com.censivn.C3DEngine.C3DEngine.g().a(ThemeIconInfoLayout.this.mTexture, bitmap);
                         bitmap.recycle();
                         return;
                     }
@@ -84,7 +84,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
     public void onDrawStart() {
         if (this.mTexture.id == 0 && !this.mUpdateRunnablePosted) {
             this.mUpdateRunnablePosted = true;
-            com.censivn.C3DEngine.A.a().d(this.mUpdateBitmapRunnable);
+            com.censivn.C3DEngine.C3DEngine.a().d(this.mUpdateBitmapRunnable);
         }
     }
 
@@ -96,7 +96,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
     public void recycle() {
         this.mInfo = null;
         if (this.mTexture.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.mTexture);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.mTexture);
         }
     }
 }

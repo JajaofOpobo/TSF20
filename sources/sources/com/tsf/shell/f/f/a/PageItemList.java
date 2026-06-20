@@ -89,7 +89,7 @@ public class PageItemList {
         com.tsf.shell.e.a(b.i.notic_save_settings, b.i.public_action_ok, b.i.public_action_restore, new Runnable() { // from class: com.tsf.shell.f.f.a.b.2
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.2.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.2.1
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.h();
@@ -102,7 +102,7 @@ public class PageItemList {
         }, new Runnable() { // from class: com.tsf.shell.f.f.a.b.3
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.3.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.manager.app.StateHub.t().am().e();

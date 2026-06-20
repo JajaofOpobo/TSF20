@@ -70,7 +70,7 @@ public class LassoSelectionHandler {
 
     public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2) {
         if (!this.k) {
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.e.h.1
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.e.h.1
                 /* JADX WARN: Multi-variable type inference failed */
                 /* JADX WARN: Type inference fix 'apply assigned field type' failed
                 java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
@@ -91,7 +91,7 @@ public class LassoSelectionHandler {
                             LassoSelectionHandler.this.l = com.tsf.shell.manager.app.StateHub.G();
                             LassoSelectionHandler.this.j = false;
                             LassoSelectionHandler.this.c(motionEvent);
-                            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.1
+                            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.1
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     LassoSelectionHandler.d.a(motionEvent.getX(), motionEvent.getY() + 38.0f);
@@ -111,7 +111,7 @@ public class LassoSelectionHandler {
                             LassoSelectionHandler.this.t = y2;
                             LassoSelectionHandler.this.a((float) Math.sqrt(Math.pow(motionEvent.getX() - motionEvent2.getX(), 2.0d) + Math.pow(motionEvent.getY() - motionEvent2.getY(), 2.0d)));
                             LassoSelectionHandler.this.b(motionEvent, motionEvent2);
-                            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.2
+                            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.2
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     LassoSelectionHandler.d.b(motionEvent2.getX(), motionEvent2.getY());
@@ -241,7 +241,7 @@ public class LassoSelectionHandler {
 
     private void h() {
         if (e.parent() != null) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.2
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.2
                 @Override // java.lang.Runnable
                 public void run() {
                     LassoSelectionHandler.d.a();
@@ -301,8 +301,8 @@ public class LassoSelectionHandler {
 
     private static void i() {
         w = new ViewGroup.LayoutParams(-1, -1);
-        i = com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.notic_line_picker_overflow);
-        d = new com.tsf.shell.ShellPreferenceManager(com.censivn.C3DEngine.A.d(), ThemeManager.mix.lasso.getTheme().shell.lassoLineColor);
+        i = com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.notic_line_picker_overflow);
+        d = new com.tsf.shell.ShellPreferenceManager(com.censivn.C3DEngine.C3DEngine.d(), ThemeManager.mix.lasso.getTheme().shell.lassoLineColor);
         DynamicThemeRunnable dynamicThemeRunnable = new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e.h.3
             @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
             public void onReloadTheme(ThemeDescription themeDescription) {
@@ -326,7 +326,7 @@ public class LassoSelectionHandler {
     }
 
     private static void j() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.4
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.4
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.app.TaskScheduler.a(LassoSelectionHandler.d, LassoSelectionHandler.w);

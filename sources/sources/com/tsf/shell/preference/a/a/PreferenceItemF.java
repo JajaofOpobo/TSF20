@@ -22,7 +22,7 @@ public class PreferenceItemF extends i {
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         f.this.j();
@@ -47,7 +47,7 @@ public class PreferenceItemF extends i {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
+        AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
         builder.setTitle(com.tsf.b.i.mn_folder_animation);
         final int iAr = com.tsf.shell.manager.b.ConfigManager.ar();
         builder.setSingleChoiceItems(new String[]{x.c(com.tsf.b.i.mn_folder_animation_quick), x.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.3

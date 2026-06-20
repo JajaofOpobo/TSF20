@@ -15,7 +15,7 @@ public class ShellDataHandler {
     private static int b = 0;
 
     public static void a(j jVar) {
-        switch (e.a(com.censivn.C3DEngine.A.d())) {
+        switch (e.a(com.censivn.C3DEngine.C3DEngine.d())) {
             case ItemInfo.NO_ID /* -1 */:
                 jVar.b(x.c(b.i.mn_orientation_system));
                 break;

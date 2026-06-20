@@ -212,10 +212,10 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             if (bitmapFromCache == null) {
                 bitmapFromCache = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
             }
-            this.z = com.censivn.C3DEngine.A.g().a(this.z, bitmapFromCache, true);
+            this.z = com.censivn.C3DEngine.C3DEngine.g().a(this.z, bitmapFromCache, true);
             bitmapFromCache.recycle();
         } else if (this.z != null) {
-            com.censivn.C3DEngine.A.g().a(this.z);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.z);
             this.z = null;
         }
         if (c().folder.frontPlaneEnable) {
@@ -223,10 +223,10 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             if (bitmapFromCache2 == null) {
                 bitmapFromCache2 = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
             }
-            this.A = com.censivn.C3DEngine.A.g().a(this.A, bitmapFromCache2, true);
+            this.A = com.censivn.C3DEngine.C3DEngine.g().a(this.A, bitmapFromCache2, true);
             bitmapFromCache2.recycle();
         } else if (this.A != null) {
-            com.censivn.C3DEngine.A.g().a(this.A);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.A);
             this.A = null;
         }
         if (this.E == null) {
@@ -426,14 +426,14 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
     }
 
     public void a(final b bVar) {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.WidgetItemPositioner.5
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.WidgetItemPositioner.5
             @Override // java.lang.Runnable
             public void run() {
-                Context contextD = com.censivn.C3DEngine.A.d();
-                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(WorkspaceShortcutItem.g.dialog_rename, (ViewGroup) null);
+                Context contextD = com.censivn.C3DEngine.C3DEngine.d();
+                View viewInflate = LayoutInflater.from(com.censivn.C3DEngine.C3DEngine.d()).inflate(WorkspaceShortcutItem.g.dialog_rename, (ViewGroup) null);
                 final EditText editText = (EditText) viewInflate.findViewById(WorkspaceShortcutItem.e.username_edit);
                 editText.setText(bVar.aN());
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
                 builder.setTitle(contextD.getString(WorkspaceShortcutItem.i.rename_folder_title));
                 builder.setView(viewInflate);
                 builder.setPositiveButton(contextD.getString(WorkspaceShortcutItem.i.public_action_ok), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.i._b.d.WidgetItemPositioner.5.1
@@ -494,7 +494,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         aVar.h(60);
         aVar.i(-1);
         Bitmap bitmapB = aVar.b((String) charSequence);
-        com.censivn.C3DEngine.A.g().a(this.y, bitmapB);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.y, bitmapB);
         bitmapB.recycle();
         this.H.a(this.y.width);
         this.H.b(this.y.height);
@@ -504,12 +504,12 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         String string;
         if (bVar.v != null) {
             bVar.r.textures().removeAll();
-            com.censivn.C3DEngine.A.g().a(bVar.v);
+            com.censivn.C3DEngine.C3DEngine.g().a(bVar.v);
             bVar.v = null;
         }
         if (bVar.w != null) {
             bVar.s.textures().removeAll();
-            com.censivn.C3DEngine.A.g().a(bVar.w);
+            com.censivn.C3DEngine.C3DEngine.g().a(bVar.w);
             bVar.w = null;
         }
         if (c().folder.sizePlaneEnable) {
@@ -539,7 +539,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             Bitmap bitmapB = aVar.b(string);
             canvas.drawBitmap(bitmapB, c().folder.sizeTextFormat.x, c().folder.sizeTextFormat.y - 10, (Paint) null);
             bitmapB.recycle();
-            bVar.w = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap, true);
+            bVar.w = com.censivn.C3DEngine.C3DEngine.g().a(bitmapCreateBitmap, true);
             bitmapCreateBitmap.recycle();
             bVar.s.textures().addElement(bVar.w);
         }
@@ -563,14 +563,14 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
                 bitmapA.recycle();
             }
         }
-        bVar.v = com.censivn.C3DEngine.A.g().a(bitmapCreateBitmap2, true);
+        bVar.v = com.censivn.C3DEngine.C3DEngine.g().a(bitmapCreateBitmap2, true);
         bitmapCreateBitmap2.recycle();
         bVar.r.textures().addElement(bVar.v);
     }
 
     protected void l() {
         if (this.y.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.y);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.y);
         }
     }
 

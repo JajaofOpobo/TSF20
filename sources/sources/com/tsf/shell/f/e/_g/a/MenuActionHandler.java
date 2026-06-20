@@ -175,7 +175,7 @@ public class MenuActionHandler extends MenuItemBase {
         private void k() {
             if (this.a.id == 0) {
                 Bitmap bitmapCreateCustomIco = a.createCustomIco(this.f, x.a(this.e, com.censivn.C3DEngine.b.b.A.c * 60.0f, com.censivn.C3DEngine.b.b.A.c * 60.0f));
-                com.censivn.C3DEngine.A.g().a(this.a, bitmapCreateCustomIco);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, bitmapCreateCustomIco);
                 bitmapCreateCustomIco.recycle();
                 if (b() != this.a.width) {
                     a(this.a.width);
@@ -187,7 +187,7 @@ public class MenuActionHandler extends MenuItemBase {
 
         public void j() {
             if (this.a.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.a);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a);
             }
         }
     }

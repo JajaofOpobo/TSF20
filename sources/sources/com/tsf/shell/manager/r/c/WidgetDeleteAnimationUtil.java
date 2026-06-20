@@ -59,7 +59,7 @@ public class WidgetDeleteAnimationUtil {
             com.tsf.shell.e.a(b.i.notic_delete_folder, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.2.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             g.a(bVar, runnable2);

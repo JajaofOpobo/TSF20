@@ -30,7 +30,7 @@ public class DashItemE extends DashItemD {
     public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
         if (DashItemC.id == 0) {
             Bitmap bitmapB = q.b(15.0f, -1);
-            com.censivn.C3DEngine.A.g().a(c, bitmapB);
+            com.censivn.C3DEngine.C3DEngine.g().a(c, bitmapB);
             bitmapB.recycle();
         }
     }

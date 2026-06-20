@@ -155,15 +155,15 @@ public class BackupExportManager {
     }
 
     public static File a() {
-        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.b() + "/databases/TSFLauncher-database.db");
+        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.GestureDetector() + "/databases/TSFLauncher-database.db");
     }
 
     public static File b() {
-        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.b() + "/shared_prefs/config.xml");
+        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.GestureDetector() + "/shared_prefs/config.xml");
     }
 
     public static File c() {
-        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.b() + "/shared_prefs/" + ThemeConfigManager.CONFIG_FILE_NAME + ".xml");
+        return new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.GestureDetector() + "/shared_prefs/" + ThemeConfigManager.CONFIG_FILE_NAME + ".xml");
     }
 
     public static File d() {
@@ -244,7 +244,7 @@ public class BackupExportManager {
 
     public static void e() {
         ConfigManager.aE();
-        File file = new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.b() + "/databases/TSFLauncher-database.db");
+        File file = new File(Environment.getDataDirectory() + "/data/" + com.censivn.C3DEngine.a.GestureDetector() + "/databases/TSFLauncher-database.db");
         if (file.exists()) {
             file.delete();
         }

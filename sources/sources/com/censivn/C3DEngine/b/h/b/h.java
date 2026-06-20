@@ -61,7 +61,7 @@ public class h extends j {
         if (com.censivn.C3DEngine.a.e.l()) {
             c(f3 - f, f4 - f2);
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.1
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.c(f3 - f, f4 - f2);
@@ -431,7 +431,7 @@ public class h extends j {
             com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
             this.t = new k(0.0f, 0.0f, false);
             com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.4
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.4
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.u = x.b(b.d.scrollcontainer_arrow);

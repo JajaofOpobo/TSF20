@@ -17,7 +17,7 @@ public class ToggleActionFlashlight extends com.tsf.shell.manager.action.toggle.
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction
     public void c() {
-        WifiManager wifiManager = (WifiManager) com.censivn.C3DEngine.A.d().getSystemService("wifi");
+        WifiManager wifiManager = (WifiManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("wifi");
         switch (wifiManager.getWifiState()) {
             case 1:
                 wifiManager.setWifiEnabled(true);
@@ -30,7 +30,7 @@ public class ToggleActionFlashlight extends com.tsf.shell.manager.action.toggle.
 
     @Override // com.tsf.shell.manager.action.toggle.ToggleAction
     public void a(Intent intent) {
-        switch (((WifiManager) com.censivn.C3DEngine.A.d().getSystemService("wifi")).getWifiState()) {
+        switch (((WifiManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("wifi")).getWifiState()) {
             case 0:
                 b(1);
                 break;

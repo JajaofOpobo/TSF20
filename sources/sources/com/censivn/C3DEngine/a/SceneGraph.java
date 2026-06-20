@@ -7,7 +7,7 @@ import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.AnimationCallback {
+public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.AnimationCallback {
     private com.censivn.C3DEngine.f.Normal3f b;
     private com.censivn.C3DEngine.f.ColorRGBA c;
     private boolean d;
@@ -26,7 +26,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.A
 
     @Override // com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
-        if (!e.l()) {
+        if (!RendererImpl.l()) {
             ErrorThrower.a(this, "scene addChild is worng thread:" + iVar);
         }
         if (!this.a.contains(iVar)) {
@@ -37,7 +37,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.A
 
     @Override // com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
-        if (!e.l()) {
+        if (!RendererImpl.l()) {
             ErrorThrower.a(this, "scene removeChild is worng thread:" + iVar);
         }
         boolean zRemove = this.a.remove(iVar);

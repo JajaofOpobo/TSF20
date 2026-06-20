@@ -41,7 +41,7 @@ public class SceneInteractionHandler extends j {
         addChild(this.l);
         addChild(this.a);
         this.f = com.censivn.C3DEngine.b.b.A.a(330.0f);
-        this.k = new WorkspaceSceneRoot(com.censivn.C3DEngine.A.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
+        this.k = new WorkspaceSceneRoot(com.censivn.C3DEngine.C3DEngine.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
         this.k.b(45.0f);
         this.b = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(120.0f), com.censivn.C3DEngine.b.b.A.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.1
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
@@ -84,7 +84,7 @@ public class SceneInteractionHandler extends j {
                         if (hittingTarget == a.this.d) {
                             w.b();
                             w.a();
-                            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.3
+                            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.3
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     a.this.e.a().a().h();
@@ -96,7 +96,7 @@ public class SceneInteractionHandler extends j {
                     }
                     w.b();
                     w.a();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.2
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.2
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.e.a().a().g();
@@ -107,7 +107,7 @@ public class SceneInteractionHandler extends j {
                 if (!this.b) {
                     w.b();
                     w.a();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.1
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.e.a().a().f();
@@ -165,7 +165,7 @@ public class SceneInteractionHandler extends j {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final MotionEvent motionEvent) {
         if (!this.o) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.5
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.5
                 @Override // java.lang.Runnable
                 public void run() {
                     if (a.this.m) {

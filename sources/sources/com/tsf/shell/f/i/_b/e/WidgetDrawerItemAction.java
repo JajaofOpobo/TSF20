@@ -13,7 +13,7 @@ public class WidgetDrawerItemAction extends WidgetDrawerItemBase {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             WidgetDrawerItemAction();
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemAction.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemAction.1
                 @Override // java.lang.Runnable
                 public void run() {
                     d.this.k();

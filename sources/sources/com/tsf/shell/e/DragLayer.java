@@ -36,7 +36,7 @@ public class DragLayer extends FrameLayout {
             case 1:
             case 3:
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(motionEventObtain);
@@ -63,7 +63,7 @@ public class DragLayer extends FrameLayout {
             case 1:
             case 3:
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.2
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.2
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(motionEventObtain);
@@ -144,7 +144,7 @@ public class DragLayer extends FrameLayout {
             }
             final com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
             final com.tsf.shell.f.i.b.b.ItemShell aVar = this.d;
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.e.DragLayer.3
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.e.DragLayer.3
                 @Override // java.lang.Runnable
                 public void run() {
                     if (aVar != null && aVar.g != null) {

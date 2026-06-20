@@ -76,7 +76,7 @@ public class WidgetPanelController {
 
     private void e() {
         if (this.a.isEmpty()) {
-            this.a.add(com.tsf.shell.manager.app.ServiceProvider.a().a(new ComponentName(com.censivn.C3DEngine.A.d().getPackageName(), ShellActivity.class.getName())));
+            this.a.add(com.tsf.shell.manager.app.ServiceProvider.a().a(new ComponentName(com.censivn.C3DEngine.C3DEngine.d().getPackageName(), ShellActivity.class.getName())));
         }
     }
 
@@ -154,7 +154,7 @@ public class WidgetPanelController {
 
     public static SharedPreferences d() {
         if (e == null) {
-            e = com.censivn.C3DEngine.A.d().getSharedPreferences("recent", 0);
+            e = com.censivn.C3DEngine.C3DEngine.d().getSharedPreferences("recent", 0);
         }
         return e;
     }

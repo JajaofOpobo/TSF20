@@ -42,7 +42,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
 
     @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout
     public void setTheme(ThemeListsManager.ThemeInfo themeInfo) {
-        this.mPreviewLoader.parser(com.censivn.C3DEngine.A.d(), themeInfo.packagename);
+        this.mPreviewLoader.parser(com.censivn.C3DEngine.C3DEngine.d(), themeInfo.packagename);
         recycle();
         int themePreviewCount = this.mPreviewLoader.getThemePreviewCount();
         int maxItemCount = themePreviewCount > getMaxItemCount() ? getMaxItemCount() : themePreviewCount;
@@ -84,14 +84,14 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
         public void onDrawStart() {
             if (this.e != -1 && this.d.id == 0) {
                 Bitmap themePreviewBitmap = ThemeDataInfoLayout.this.mPreviewLoader.getThemePreviewBitmap(this.e, ThemeDataInfoLayout.this.mPreviewWidth, ThemeDataInfoLayout.this.mPreviewHeight);
-                com.censivn.C3DEngine.A.g().a(this.d, themePreviewBitmap);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.d, themePreviewBitmap);
                 themePreviewBitmap.recycle();
             }
         }
 
         public void a() {
             if (this.d.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.d);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.d);
             }
         }
     }

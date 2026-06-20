@@ -12,7 +12,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class ActionDatabaseHelper {
     public static void a(int i, String str, String str2) {
         ContentValues contentValues = new ContentValues();
-        ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+        ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
         contentValues.put("action", Integer.valueOf(i));
         contentValues.put("name", str);
         contentValues.put("intent", str2);
@@ -28,7 +28,7 @@ public class ActionDatabaseHelper {
     public static ActionModel a(int i) {
         ActionModel actionModel;
         try {
-            Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.a.a, new String[]{"action", "name", "intent"}, "action=" + i, null, "_id desc");
+            Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(g.a.a, new String[]{"action", "name", "intent"}, "action=" + i, null, "_id desc");
             if (cursorQuery.moveToFirst()) {
                 String string = cursorQuery.getString(cursorQuery.getColumnIndex("name"));
                 String string2 = cursorQuery.getString(cursorQuery.getColumnIndex("intent"));

@@ -42,7 +42,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         } else if (com.censivn.C3DEngine.a.e.l()) {
             WidgetDrawerItemVisual();
         } else {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual.1
                 @Override // java.lang.Runnable
                 public void run() {
                     g.this.k();
@@ -133,7 +133,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         if (fVarB == null) {
             com.tsf.shell.manager.app.LauncherAppInfo fVarA = com.tsf.shell.manager.bind.ShellBindContext.c().a(component);
             if (fVarA == null) {
-                PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
+                PackageManager packageManager = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
                 Intent intent2 = new Intent(intent.getAction(), (Uri) null);
                 intent2.addCategory("android.intent.category.LAUNCHER");
                 intent2.setPackage(component.getPackageName());
@@ -228,7 +228,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
     }
 
     public void bh() {
-        com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.A.d(), bd().b.getPackageName());
+        com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.C3DEngine.d(), bd().b.getPackageName());
     }
 
     public void aV() {

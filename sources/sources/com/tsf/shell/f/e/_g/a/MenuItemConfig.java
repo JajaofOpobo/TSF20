@@ -114,7 +114,7 @@ public class MenuItemConfig extends MenuItemBase {
                 public void onDrawStart() {
                     if (MenuActionHandler.this.a.id == 0) {
                         Bitmap bitmapA = x.a(MenuActionItem.d.scrollcontainer_arrow);
-                        com.censivn.C3DEngine.A.g().a(MenuActionHandler.this.a, bitmapA);
+                        com.censivn.C3DEngine.C3DEngine.g().a(MenuActionHandler.this.a, bitmapA);
                         bitmapA.recycle();
                     }
                 }
@@ -134,7 +134,7 @@ public class MenuItemConfig extends MenuItemBase {
 
         public void d() {
             this.e.a();
-            com.censivn.C3DEngine.A.g().a(this.a);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a);
         }
 
         public void b(i iVar) {

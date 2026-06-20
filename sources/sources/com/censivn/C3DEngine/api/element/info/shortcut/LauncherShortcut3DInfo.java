@@ -56,7 +56,7 @@ public abstract class LauncherShortcut3DInfo extends ItemInfo {
                     if (this.themeResourceName != null) {
                         bitmapA = ThemeManager.getInstance().getCacheThemeDescription().getBitmap(this.themeResourceName, i, i2);
                     } else {
-                        Resources resourcesForApplication = com.censivn.C3DEngine.A.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
+                        Resources resourcesForApplication = com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
                         if (resourcesForApplication != null) {
                             bitmapA = GraphicsEngineBridge.a(resourcesForApplication, resourcesForApplication.getIdentifier(this.iconResource.resourceName, null, null));
                         }
@@ -81,7 +81,7 @@ public abstract class LauncherShortcut3DInfo extends ItemInfo {
     public void unbindGL() {
         super.unbindGL();
         if (this.texture.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.texture);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.texture);
         }
     }
 }

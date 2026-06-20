@@ -20,7 +20,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
 
     public static void a() {
         if (SpringEasing) {
-            com.censivn.C3DEngine.A.a().c(ItemTrailContainer);
+            com.censivn.C3DEngine.C3DEngine.a().c(ItemTrailContainer);
         }
     }
 

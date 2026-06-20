@@ -37,7 +37,7 @@ public class PrimeEffectRenderer {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (a.c.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(a.c, a.a());
+                    com.censivn.C3DEngine.C3DEngine.g().a(a.c, a.a());
                 }
             }
         };

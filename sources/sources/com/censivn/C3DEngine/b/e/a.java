@@ -49,14 +49,14 @@ public class a extends g {
     public void g() {
         super.g();
         if (this.b.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.b);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.b);
         }
     }
 
     public void h() {
         this.e = this.d;
         Bitmap bitmapA = x.a(this.d ? com.tsf.b.d.preference_check_on : com.tsf.b.d.preference_check_off, com.censivn.C3DEngine.b.b.A.a(58.0f), com.censivn.C3DEngine.b.b.A.a(58.0f));
-        com.censivn.C3DEngine.A.g().a(this.b, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.b, bitmapA);
         bitmapA.recycle();
     }
 

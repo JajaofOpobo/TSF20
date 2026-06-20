@@ -66,13 +66,13 @@ public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
     @Override // com.censivn.C3DEngine.b.e.f
     public void f() {
         Bitmap bitmapB = q.b(28.0f, -1118482);
-        com.censivn.C3DEngine.A.g().a(this.d, bitmapB);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapB);
         bitmapB.recycle();
     }
 
     @Override // com.censivn.C3DEngine.b.e.f
     public void g() {
         this.a.a();
-        com.censivn.C3DEngine.A.g().a(this.d);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
     }
 }

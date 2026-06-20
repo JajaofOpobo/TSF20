@@ -41,7 +41,7 @@ public class VObjectManager {
     }
 
     public void destroy() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.api.core.VObjectManager.1
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.api.core.VObjectManager.1
             @Override // java.lang.Runnable
             public void run() {
                 a.a("VObjectManager", "widget:" + VObjectManager.this.appWidgetId + " destroy all object,total object:" + VObjectManager.this.count);

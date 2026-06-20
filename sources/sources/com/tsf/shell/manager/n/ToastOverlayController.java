@@ -109,7 +109,7 @@ public class ToastOverlayController implements e.a {
                 if (com.tsf.shell.manager.n.ToastOverlayController.this.c.getAnimationObjectState() || com.tsf.shell.manager.n.ToastOverlayController.this.r) {
                     com.tsf.shell.manager.n.ToastOverlayController.this.c();
                 }
-                com.censivn.C3DEngine.A.e().a(this);
+                com.censivn.C3DEngine.C3DEngine.e().a(this);
                 updateTextureState();
                 ShaderColor shaderColor = ShaderManager.SHADER_COLOR;
                 ShaderManager.enableShader(shaderColor);
@@ -167,9 +167,9 @@ public class ToastOverlayController implements e.a {
                     a.this.b(c0133a);
                 }
             };
-            com.censivn.C3DEngine.A.a().b(runnable, i2);
+            com.censivn.C3DEngine.C3DEngine.a().b(runnable, i2);
             if (c0133a.a != null) {
-                com.censivn.C3DEngine.A.a().g(c0133a.a);
+                com.censivn.C3DEngine.C3DEngine.a().g(c0133a.a);
             }
             c0133a.a = runnable;
         }
@@ -185,7 +185,7 @@ public class ToastOverlayController implements e.a {
             }
             this.p.remove(c0133a);
             if (this.p.isEmpty()) {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.3
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.3
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.e();
@@ -212,7 +212,7 @@ public class ToastOverlayController implements e.a {
             this.d = com.tsf.shell.manager.app.ObserverManager.c();
             if (!this.d) {
                 this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.4
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.4
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!com.tsf.shell.manager.app.ObserverManager.c()) {
@@ -241,7 +241,7 @@ public class ToastOverlayController implements e.a {
         if (this.t && this.p.isEmpty()) {
             this.t = false;
             if (!this.d) {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.6
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.6
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!com.tsf.shell.manager.app.ObserverManager.c()) {
@@ -286,7 +286,7 @@ public class ToastOverlayController implements e.a {
                 this.g = false;
                 System.currentTimeMillis();
                 Bitmap bitmapB = com.tsf.shell.manager.n.ToastOverlayController.this.s.b(this.f);
-                com.censivn.C3DEngine.A.g().a(this.e, bitmapB);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.e, bitmapB);
                 bitmapB.recycle();
                 a(this.e.width);
                 b(this.e.height);
@@ -352,7 +352,7 @@ public class ToastOverlayController implements e.a {
         public void d() {
             removeFromParent();
             if (this.e.id != 0) {
-                com.censivn.C3DEngine.A.g().a(this.e);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.e);
             }
             this.f = "";
         }

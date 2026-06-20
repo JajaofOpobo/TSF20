@@ -37,7 +37,7 @@ public class ToggleActionMobileData extends com.tsf.shell.manager.action.toggle.
 
     private static boolean h() {
         try {
-            ConnectivityManager connectivityManager = (ConnectivityManager) com.censivn.C3DEngine.A.d().getSystemService("connectivity");
+            ConnectivityManager connectivityManager = (ConnectivityManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("connectivity");
             Method method = connectivityManager.getClass().getMethod("getMobileDataEnabled", new Class[0]);
             method.setAccessible(true);
             return ((Boolean) method.invoke(connectivityManager, new Object[0])).booleanValue();
@@ -48,7 +48,7 @@ public class ToggleActionMobileData extends com.tsf.shell.manager.action.toggle.
 
     private static void a(boolean z) {
         try {
-            ConnectivityManager connectivityManager = (ConnectivityManager) com.censivn.C3DEngine.A.d().getSystemService("connectivity");
+            ConnectivityManager connectivityManager = (ConnectivityManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("connectivity");
             connectivityManager.getClass().getMethod("setMobileDataEnabled", Boolean.TYPE).invoke(connectivityManager, Boolean.valueOf(z));
             for (int i = 0; i < 10; i++) {
                 Thread.sleep(100L);

@@ -87,7 +87,7 @@ public class ActionManager {
 
     public void a(final int i, final boolean z) {
         if (!com.censivn.C3DEngine.a.e.l()) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.action.ActionManager.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.action.ActionManager.2
                 @Override // java.lang.Runnable
                 public void run() {
                     b.this.a(i, z);
@@ -207,7 +207,7 @@ public class ActionManager {
                 break;
             case 1600:
                 Intent intent = new Intent();
-                intent.setClass(com.censivn.C3DEngine.A.d(), ShellSummaryActivity.class);
+                intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), ShellSummaryActivity.class);
                 Home.b().a(intent, (Object) null);
                 break;
             case 1700:
@@ -515,7 +515,7 @@ public class ActionManager {
     public static void a(a aVar) {
         aVar.e = new Intent("android.intent.action.MAIN");
         aVar.e.addCategory("android.intent.category.LAUNCHER");
-        aVar.e.setComponent(new ComponentName(com.censivn.C3DEngine.a.b(), Home.class.getName()));
+        aVar.e.setComponent(new ComponentName(com.censivn.C3DEngine.a.GestureDetector(), Home.class.getName()));
         aVar.e.setFlags(270532608);
     }
 }

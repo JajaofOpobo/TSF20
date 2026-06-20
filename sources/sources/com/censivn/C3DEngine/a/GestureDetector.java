@@ -9,7 +9,7 @@ import android.view.ViewConfiguration;
 import com.censivn.C3DEngine.api.tween.VEasing;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class GestureDetector {
     public static int a;
     public static int b;
     public static int c;
@@ -37,8 +37,8 @@ public class b {
     private static final int i = ViewConfiguration.getTapTimeout();
     public static int d = 0;
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.a.b$b, reason: collision with other inner class name */
-    public interface InterfaceC0023b {
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.a.GestureDetector$b, reason: collision with other inner class name */
+    public interface OnDoubleTapListener {
         boolean a(MotionEvent motionEvent);
 
         boolean b(MotionEvent motionEvent);
@@ -46,7 +46,7 @@ public class b {
         boolean c(MotionEvent motionEvent);
     }
 
-    public interface c {
+    public interface OnGestureListener {
         boolean a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2);
 
         boolean b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2);
@@ -66,66 +66,66 @@ public class b {
         void j(MotionEvent motionEvent);
     }
 
-    public static class d implements InterfaceC0023b, c {
-        @Override // com.censivn.C3DEngine.a.b.c
+    public static class DefaultOnGestureListener implements OnDoubleTapListener, OnGestureListener {
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean f(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public void g(MotionEvent motionEvent) {
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public void e(MotionEvent motionEvent) {
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean d(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean i(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.InterfaceC0023b
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnDoubleTapListener
         public boolean b(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.InterfaceC0023b
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnDoubleTapListener
         public boolean c(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.InterfaceC0023b
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnDoubleTapListener
         public boolean a(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public boolean h(MotionEvent motionEvent) {
             return false;
         }
 
-        @Override // com.censivn.C3DEngine.a.b.c
+        @Override // com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
         public void j(MotionEvent motionEvent) {
         }
     }
 
-    private class a extends Handler {
+    private class GestureHandler extends Handler {
         a() {
         }
 
@@ -152,11 +152,11 @@ public class b {
     }
 
     @Deprecated
-    public b(c cVar) {
-        this(null, cVar, null);
+    public GestureDetector(OnGestureListener onGestureListener) {
+        this(null, onGestureListener, null);
     }
 
-    public b(Context context, c cVar, Handler handler) {
+    public GestureDetector(Context context, OnGestureListener onGestureListener, Handler handler) {
         this.e = VEasing.Linear.easeNone;
         this.x = false;
         this.y = false;
@@ -167,8 +167,8 @@ public class b {
             this.j = new a();
         }
         this.k = cVar;
-        if (cVar instanceof InterfaceC0023b) {
-            a((InterfaceC0023b) cVar);
+        if (onGestureListener instanceof OnDoubleTapListener) {
+            a((OnDoubleTapListener) onGestureListener);
         }
         a(context);
     }
@@ -178,7 +178,7 @@ public class b {
             throw new NullPointerException("OnGestureListener must not be null");
         }
         this.v = true;
-        ViewConfiguration viewConfiguration = ViewConfiguration.get(com.censivn.C3DEngine.A.d());
+        ViewConfiguration viewConfiguration = ViewConfiguration.get(com.censivn.C3DEngine.C3DEngine.d());
         int scaledTouchSlop = viewConfiguration.getScaledTouchSlop();
         int i2 = (int) (50.0f * com.censivn.C3DEngine.b.b.A.b);
         this.g = 500;
@@ -191,7 +191,7 @@ public class b {
         this.f = i2 * i2;
     }
 
-    public void a(InterfaceC0023b interfaceC0023b) {
+    public void a(OnDoubleTapListener onDoubleTapListener) {
         this.l = interfaceC0023b;
     }
 
@@ -336,7 +336,7 @@ public class b {
         this.j.removeMessages(3);
         this.n = true;
         this.x = false;
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.1
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.GestureDetector.1
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c();
@@ -356,7 +356,7 @@ public class b {
     public void d() {
         this.z = true;
         this.y = false;
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.2
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.GestureDetector.2
             @Override // java.lang.Runnable
             public void run() {
                 b.this.e();
@@ -374,7 +374,7 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.b.3
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.GestureDetector.3
             @Override // java.lang.Runnable
             public void run() {
                 if (b.this.l != null && !b.this.m) {

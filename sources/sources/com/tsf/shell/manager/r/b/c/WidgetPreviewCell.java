@@ -38,12 +38,12 @@ public class WidgetPreviewCell extends j {
             public void onDrawStart() {
                 Number3d.TEMPNUMBER3D.reset();
                 Number3d number3dLocalToGlobal = localToGlobal(Number3d.TEMPNUMBER3D);
-                com.censivn.C3DEngine.A.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
+                com.censivn.C3DEngine.C3DEngine.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
             }
 
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawEnd() {
-                com.censivn.C3DEngine.A.e().f();
+                com.censivn.C3DEngine.C3DEngine.e().f();
             }
         };
         addChild(this.e);
@@ -54,7 +54,7 @@ public class WidgetPreviewCell extends j {
         if ((this.g instanceof com.tsf.shell.f.i.c.ItemGroupBase) && !((com.tsf.shell.f.i.c.ItemGroupBase) this.g).j()) {
             if (b.id == 0) {
                 Bitmap bitmapA = x.a(b.d.widget_item_download);
-                com.censivn.C3DEngine.A.g().a(b, bitmapA);
+                com.censivn.C3DEngine.C3DEngine.g().a(b, bitmapA);
                 bitmapA.recycle();
             }
             if (a == null) {

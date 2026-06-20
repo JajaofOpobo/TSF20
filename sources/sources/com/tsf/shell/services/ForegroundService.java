@@ -52,7 +52,7 @@ public class ForegroundService extends Service {
                 notification = new Notification(b.d.tsf_ico_grey, str, System.currentTimeMillis());
             }
             Intent intent2 = new Intent();
-            intent2.setClass(com.censivn.C3DEngine.A.d(), SettingAdvancedPerferenceActivity.class);
+            intent2.setClass(com.censivn.C3DEngine.C3DEngine.d(), SettingAdvancedPerferenceActivity.class);
             intent2.putExtra("memory_pemanent", true);
             PendingIntent.getActivity(this, 0, intent2, 134217728);
             try {

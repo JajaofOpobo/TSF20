@@ -39,8 +39,8 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
     }
 
     private void i() {
-        this.e = com.censivn.C3DEngine.A.d().getPackageManager();
-        this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.A.d());
+        this.e = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
+        this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         this.i = new com.censivn.C3DEngine.b.h.c.a();
         this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.1
@@ -114,7 +114,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
     public void h() {
         if (!this.g) {
             this.g = true;
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.3
+            com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.3
                 @Override // java.lang.Runnable
                 public void run() {
                     for (AppWidgetProviderInfo appWidgetProviderInfo : SystemWidgetProviderBrowser.this.f.getInstalledProviders()) {
@@ -131,7 +131,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
                             return collator.compare(aVar.a, aVar2.a);
                         }
                     });
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.3.2
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.3.2
                         @Override // java.lang.Runnable
                         public void run() {
                             SystemWidgetProviderBrowser.this.g();
@@ -213,7 +213,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
                 if (bitmapA2 != null) {
                     com.tsf.shell.manager.o.ButtonPresetManager.c.b(canvas, bitmapA2, true);
                 }
-                com.censivn.C3DEngine.A.g().a(this.d, bitmapA3);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA3);
             }
             return this.d;
         }
@@ -223,7 +223,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
         }
 
         public void b() {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
     }
 }

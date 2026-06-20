@@ -64,21 +64,21 @@ public class PreferenceSettingB extends PreferenceSettingBase {
     public void f() {
         super.f();
         if (this.d.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.d, b.d.feature_desktop_effect_screen1);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, b.d.feature_desktop_effect_screen1);
         }
         if (this.e.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.e, b.d.feature_desktop_effect_screen2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e, b.d.feature_desktop_effect_screen2);
         }
         if (this.f.id == 0) {
-            com.censivn.C3DEngine.A.g().a(this.f, b.d.desktop_transition_cloth);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f, b.d.desktop_transition_cloth);
         }
     }
 
     @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
     public void g() {
         super.g();
-        com.censivn.C3DEngine.A.g().a(this.d);
-        com.censivn.C3DEngine.A.g().a(this.e);
-        com.censivn.C3DEngine.A.g().a(this.f);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.d);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.e);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.f);
     }
 }

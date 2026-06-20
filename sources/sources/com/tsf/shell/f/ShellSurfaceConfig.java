@@ -6,9 +6,9 @@ import com.tsf.shell.manager.b.ConfigManager;
 public class ShellSurfaceConfig {
     private static ShellSurfaceConfig b;
     private static com.tsf.shell.manager.f.LauncherInitController c;
-    private com.censivn.C3DEngine.a.a a;
+    private com.censivn.C3DEngine.a.GLSurfaceViewWrapper a;
 
-    public ShellSurfaceConfig(com.censivn.C3DEngine.a.a aVar) {
+    public ShellSurfaceConfig(com.censivn.C3DEngine.a.GLSurfaceViewWrapper aVar) {
         b = this;
         this.a = aVar;
         ShellSurfaceConfig();
@@ -52,8 +52,8 @@ public class ShellSurfaceConfig {
                 ShellSurfaceConfig.c.f();
             }
         };
-        com.censivn.C3DEngine.A.e().j();
-        com.censivn.C3DEngine.A.a().c(runnable);
+        com.censivn.C3DEngine.C3DEngine.e().j();
+        com.censivn.C3DEngine.C3DEngine.a().c(runnable);
     }
 
     public void f() {
@@ -65,7 +65,7 @@ public class ShellSurfaceConfig {
                 ShellSurfaceConfig.this.a.onPause();
             }
         };
-        com.censivn.C3DEngine.A.e().j();
-        com.censivn.C3DEngine.A.a().c(runnable);
+        com.censivn.C3DEngine.C3DEngine.e().j();
+        com.censivn.C3DEngine.C3DEngine.a().c(runnable);
     }
 }

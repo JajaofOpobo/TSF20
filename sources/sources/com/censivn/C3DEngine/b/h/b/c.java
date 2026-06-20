@@ -597,8 +597,8 @@ public class c extends j implements b.a, e.a, A.InterfaceC0113a {
                     c.this.c.destroy();
                     c.this.h.destroy();
                     c.this.O = null;
-                    com.censivn.C3DEngine.A.g().a(c.this.e);
-                    com.censivn.C3DEngine.A.g().a(c.this.f);
+                    com.censivn.C3DEngine.C3DEngine.g().a(c.this.e);
+                    com.censivn.C3DEngine.C3DEngine.g().a(c.this.f);
                 }
             };
             dVar.a(0);

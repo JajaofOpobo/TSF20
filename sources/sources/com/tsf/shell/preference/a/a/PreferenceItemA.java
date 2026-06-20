@@ -14,10 +14,10 @@ public class PreferenceItemA extends i {
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.a.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.1.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.BackupExportManager.b(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.b(com.censivn.C3DEngine.C3DEngine.d());
                     }
                 });
             }
@@ -29,10 +29,10 @@ public class PreferenceItemA extends i {
         jVar2.a(new j.a() { // from class: com.tsf.shell.preference.a.a.a.2
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.2.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.BackupExportManager.a(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.a(com.censivn.C3DEngine.C3DEngine.d());
                     }
                 });
             }
@@ -43,10 +43,10 @@ public class PreferenceItemA extends i {
         jVar3.a(new j.a() { // from class: com.tsf.shell.preference.a.a.a.3
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.3.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.a.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.manager.b.BackupExportManager.c(com.censivn.C3DEngine.A.d());
+                        com.tsf.shell.manager.b.BackupExportManager.c(com.censivn.C3DEngine.C3DEngine.d());
                     }
                 });
             }

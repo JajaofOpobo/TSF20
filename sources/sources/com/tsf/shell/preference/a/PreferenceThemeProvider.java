@@ -107,30 +107,30 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
     private void h() {
         if (this.d.id == 0) {
             Bitmap bitmapA = x.a(PreferenceBaseFragment.d.preference_screen_frame, com.tsf.shell.manager.g.LayoutDimensionConstants.q, com.tsf.shell.manager.g.LayoutDimensionConstants.q);
-            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }
         if (this.e.id == 0) {
             Bitmap bitmapA2 = x.a(PreferenceBaseFragment.d.preference_screen_widget_clock);
-            com.censivn.C3DEngine.A.g().a(this.e, bitmapA2);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e, bitmapA2);
             bitmapA2.recycle();
         }
         if (this.g.id == 0) {
             Bitmap bitmapA3 = x.a(PreferenceBaseFragment.d.preference_screen_dock);
-            com.censivn.C3DEngine.A.g().a(this.g, bitmapA3);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.g, bitmapA3);
             bitmapA3.recycle();
         }
     }
 
     private void m() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
         if (this.e.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.e);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.e);
         }
         if (this.g.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.g);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.g);
         }
     }
 

@@ -241,7 +241,7 @@ public class OEMComponentResolver {
     }
 
     private static boolean f(ComponentName componentName) {
-        PackageManager packageManager = com.censivn.C3DEngine.A.d().getPackageManager();
+        PackageManager packageManager = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         Intent intent = new Intent();
         intent.addCategory("android.intent.category.LAUNCHER");
         intent.setPackage(componentName.getPackageName());

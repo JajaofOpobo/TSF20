@@ -32,7 +32,7 @@ public class WidgetProviderInfoBar extends j {
             public void onDrawStart() {
                 if (WidgetProviderInfoBar.this.a.id == 0) {
                     Bitmap bitmapA = x.a(b.d.scrollcontainer_arrow);
-                    com.censivn.C3DEngine.A.g().a(WidgetProviderInfoBar.this.a, bitmapA);
+                    com.censivn.C3DEngine.C3DEngine.g().a(WidgetProviderInfoBar.this.a, bitmapA);
                     bitmapA.recycle();
                 }
             }
@@ -58,7 +58,7 @@ public class WidgetProviderInfoBar extends j {
 
     public void c() {
         this.c.a();
-        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
     }
 
     public void a(i iVar) {

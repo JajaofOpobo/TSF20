@@ -26,11 +26,11 @@ public class HapticFeedbackManager {
                 a = new Runnable() { // from class: com.tsf.shell.utils.HapticFeedbackManager.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.censivn.C3DEngine.a.f().playSoundEffect(0);
+                        com.censivn.C3DEngine.C3DEngine.f().playSoundEffect(0);
                     }
                 };
             }
-            com.censivn.C3DEngine.A.a().a(a);
+            com.censivn.C3DEngine.C3DEngine.a().a(a);
         }
     }
 }

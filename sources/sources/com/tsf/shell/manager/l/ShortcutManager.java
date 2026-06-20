@@ -60,7 +60,7 @@ public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC00
         d.a().a(new Runnable() { // from class: com.tsf.shell.manager.l.ShortcutManager.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.l.ShortcutManager.1.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.l.ShortcutManager.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         int iF = com.tsf.shell.manager.app.StateHub.F();

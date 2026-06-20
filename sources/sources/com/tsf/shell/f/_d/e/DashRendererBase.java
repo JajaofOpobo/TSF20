@@ -65,7 +65,7 @@ public class DashRendererBase extends h {
                 this.g = new Runnable() { // from class: com.tsf.shell.f._d.e.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.censivn.C3DEngine.A.a().b(a.this.h, 300L);
+                        com.censivn.C3DEngine.C3DEngine.a().b(a.this.h, 300L);
                     }
                 };
                 this.h = new Runnable() { // from class: com.tsf.shell.f._d.e.a.2

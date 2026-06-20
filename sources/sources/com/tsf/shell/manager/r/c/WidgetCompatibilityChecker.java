@@ -54,7 +54,7 @@ public class WidgetCompatibilityChecker {
                 k.a(Home.c, str);
             }
         };
-        a(com.censivn.C3DEngine.A.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_widget), k.c(Home.c, str), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), runnable, null);
+        a(com.censivn.C3DEngine.C3DEngine.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_widget), k.c(Home.c, str), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), runnable, null);
     }
 
     public static boolean a(com.tsf.shell.f.i.c.ItemGroupBase gVar, boolean z) {
@@ -77,10 +77,10 @@ public class WidgetCompatibilityChecker {
                 com.tsf.shell.e.a(b.i.notic_widget_exists);
             }
             if (!z2) {
-                a(com.censivn.C3DEngine.A.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_shell), k.c(Home.c, com.censivn.C3DEngine.A.d().getPackageName()), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.2
+                a(com.censivn.C3DEngine.C3DEngine.d(), x.c(b.i.public_action_update), x.c(b.i.notic_load_widget_error_update_shell), k.c(Home.c, com.censivn.C3DEngine.C3DEngine.d().getPackageName()), x.c(b.i.public_action_update), x.c(b.i.public_action_cancel), new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        k.a(Home.c, com.censivn.C3DEngine.A.d().getPackageName());
+                        k.a(Home.c, com.censivn.C3DEngine.C3DEngine.d().getPackageName());
                     }
                 }, null);
             }
@@ -92,10 +92,10 @@ public class WidgetCompatibilityChecker {
     }
 
     public static void a(Context context, final String str, final String str2, final String str3, final String str4, final String str5, final Runnable runnable, final Runnable runnable2) {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.3
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.3
             @Override // java.lang.Runnable
             public void run() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.A.d());
+                AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
                 builder.setTitle(str);
                 builder.setPositiveButton(str4, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.manager.r.c.WidgetCompatibilityChecker.3.1
                     @Override // android.content.DialogInterface.OnClickListener
@@ -114,7 +114,7 @@ public class WidgetCompatibilityChecker {
                     }
                 });
                 builder.create();
-                LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.A.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
+                LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.C3DEngine.d()).inflate(b.g.dialog_unknow_error, (ViewGroup) null);
                 TextView textView = (TextView) linearLayout.findViewById(b.e.content);
                 TextView textView2 = (TextView) linearLayout.findViewById(b.e.summary);
                 textView.setText(str2);

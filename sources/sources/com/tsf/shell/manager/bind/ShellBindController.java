@@ -15,7 +15,7 @@ public class ShellBindController {
     private c c;
 
     public static void a(final ItemInfo itemInfo, final boolean z) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.1
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.1
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarA = com.tsf.shell.manager.l.ShortcutManager.a(itemInfo, z);
@@ -77,7 +77,7 @@ public class ShellBindController {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
                 }
             };
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.4
+            com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.4
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.app.WidgetManager.a((ItemInfo) arrayList.remove(0), abstractC0146a);
@@ -93,10 +93,10 @@ public class ShellBindController {
     }
 
     public void a(final LauncherAppWidgetInfo launcherAppWidgetInfo) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.5
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.5
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.5.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.5.1
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.c.a(launcherAppWidgetInfo);
@@ -123,7 +123,7 @@ public class ShellBindController {
     }
 
     public void a(final ArrayList<ItemInfo> arrayList, final ArrayList<String> arrayList2) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.6
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.6
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.a(arrayList, arrayList2);
@@ -132,7 +132,7 @@ public class ShellBindController {
     }
 
     public void a(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.7
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.7
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.c(arrayList, str);
@@ -141,7 +141,7 @@ public class ShellBindController {
     }
 
     public void b(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.8
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.8
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.b(arrayList, str);
@@ -150,7 +150,7 @@ public class ShellBindController {
     }
 
     public void c(final ArrayList<ItemInfo> arrayList, final String str) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.9
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.9
             @Override // java.lang.Runnable
             public void run() {
                 b.this.c.a(arrayList, str);

@@ -34,7 +34,7 @@ public class IconRenderer {
         String string;
         Bitmap defaultIconUponBitmap;
         if (a == null) {
-            a = com.censivn.C3DEngine.A.d().getPackageManager();
+            a = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         }
         float defaultIconScale = ThemeManager.mix.icon.getDefaultIconScale();
         Bitmap bitmapA = aVar.a();

@@ -18,7 +18,7 @@ public class TextureElementPool {
 
     public static void a() {
         if (com.tsf.shell.manager.r.c.WidgetFeatureConfig.a && a < 6) {
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.b.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     b.a(true);
@@ -70,13 +70,13 @@ public class TextureElementPool {
                 }
                 updatePointsVBO();
                 if (z2) {
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.b.2.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.b.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             this.removeFromParent();
                             b.b();
                             if (b.a == 0) {
-                                com.censivn.C3DEngine.A.g().a(b.b);
+                                com.censivn.C3DEngine.C3DEngine.g().a(b.b);
                                 TextureElement unused = b.b = null;
                             }
                         }

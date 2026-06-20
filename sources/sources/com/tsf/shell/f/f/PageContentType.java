@@ -9,7 +9,7 @@ public class PageContentType extends g {
     private com.censivn.C3DEngine.b.h.b.c l;
 
     public PageContentType() {
-        this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.A.d(), this.a);
+        this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.C3DEngine.d(), this.a);
     }
 
     @Override // com.tsf.shell.f.f.WorkspacePage
@@ -23,7 +23,7 @@ public class PageContentType extends g {
     }
 
     public void a() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.1
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.1
             @Override // java.lang.Runnable
             public void run() {
                 Home.b().l().addView(k.this.b);
@@ -32,7 +32,7 @@ public class PageContentType extends g {
     }
 
     public void aj() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.2
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.2
             @Override // java.lang.Runnable
             public void run() {
                 Home.b().l().removeView(k.this.b);

@@ -25,7 +25,7 @@ public class ShellActivityHelper {
 
     public static boolean b() {
         try {
-            a = com.censivn.C3DEngine.A.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.A.d().getPackageName(), 0).versionCode;
+            a = com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.C3DEngine.d().getPackageName(), 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

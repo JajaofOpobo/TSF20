@@ -40,7 +40,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         super(str);
         this.b = aVar;
         this.m = new h();
-        this.c = com.censivn.C3DEngine.A.d().getPackageManager();
+        this.c = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         this.f = new ArrayList<>();
         this.g = new ArrayList<>();
         this.j = new ArrayList<>();
@@ -232,7 +232,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
                 if (bitmapA3 != null) {
                     com.tsf.shell.manager.o.ButtonPresetManager.c.b(canvas, bitmapA3, true);
                 }
-                com.censivn.C3DEngine.A.g().a(this.f, bitmapA);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmapA);
             }
             return this.b;
         }
@@ -282,7 +282,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
         public void c() {
-            com.censivn.C3DEngine.A.g().a(this.f);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f);
         }
     }
 
@@ -344,7 +344,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
         public void c() {
             if (this.b != null && this.b.K() != null) {
-                com.censivn.C3DEngine.A.g().a(((LauncherShortcutStandardInfo) this.b.K()).texture);
+                com.censivn.C3DEngine.C3DEngine.g().a(((LauncherShortcutStandardInfo) this.b.K()).texture);
                 this.b.aD();
             }
         }

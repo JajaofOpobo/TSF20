@@ -19,7 +19,7 @@ public class ThemeTransitionAnimator {
         com.censivn.C3DEngine.a.d.d().a(false);
         com.censivn.C3DEngine.b.c.b.c();
         com.tsf.shell.manager.app.ObserverManager.b(Home.b());
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.1
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.1
             @Override // java.lang.Runnable
             public void run() {
                 a.this.b();
@@ -49,12 +49,12 @@ public class ThemeTransitionAnimator {
 
         @Override // com.censivn.C3DEngine.b.g.d
         public void a() {
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1
                 @Override // java.lang.Runnable
                 public void run() {
                     a.this.a.b();
                     com.tsf.shell.manager.app.ServiceFactory.l();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1.1
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.c();
@@ -149,7 +149,7 @@ public class ThemeTransitionAnimator {
                         com.tsf.shell.manager.app.StateHub.x();
                         a.this.a.position().x = 0.0f;
                         a.this.a.position().y = 0.0f;
-                        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.3.1.1.1
+                        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.3.1.1.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 a.this.d();
@@ -176,7 +176,7 @@ public class ThemeTransitionAnimator {
             @Override // java.lang.Runnable
             public void run() {
                 a.this.a.b();
-                com.censivn.C3DEngine.A.a().b(new RunnableC01371(), 300L);
+                com.censivn.C3DEngine.C3DEngine.a().b(new RunnableC01371(), 300L);
             }
 
             /* JADX INFO: renamed from: com.tsf.shell.manager.p.ThemeTransitionAnimator$4$1$1, reason: invalid class name and collision with other inner class name */
@@ -267,7 +267,7 @@ public class ThemeTransitionAnimator {
 
         @Override // com.censivn.C3DEngine.b.g.d
         public void a() {
-            com.censivn.C3DEngine.A.a().b(new AnonymousClass1(), 300L);
+            com.censivn.C3DEngine.C3DEngine.a().b(new AnonymousClass1(), 300L);
         }
     }
 
@@ -289,7 +289,7 @@ public class ThemeTransitionAnimator {
                 com.censivn.C3DEngine.a.d.d().a(true);
                 com.tsf.shell.manager.app.TaskScheduler.b(a.this.a);
                 a.this.a.a();
-                com.censivn.C3DEngine.A.d().sendBroadcast(new Intent(ThemeClockManager.ALARM_ON_CLICK));
+                com.censivn.C3DEngine.C3DEngine.d().sendBroadcast(new Intent(ThemeClockManager.ALARM_ON_CLICK));
                 Home.b().o();
             }
         };

@@ -137,13 +137,13 @@ public class LassoContextMenu implements b.a {
     public void o() {
         if (b == null) {
             ArrayList arrayList = new ArrayList();
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_arrangement));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_gather));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.text_delete));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_create_folder));
-            arrayList.add(com.censivn.C3DEngine.A.d().getString(com.tsf.b.i.pop_menu_mulit_choice));
+            arrayList.add(com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.pop_menu_arrangement));
+            arrayList.add(com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.pop_menu_gather));
+            arrayList.add(com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.text_delete));
+            arrayList.add(com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.pop_menu_create_folder));
+            arrayList.add(com.censivn.C3DEngine.C3DEngine.d().getString(com.tsf.b.i.pop_menu_mulit_choice));
             Bitmap bitmapA = com.tsf.shell.f.e.MenuBitmapRenderer.a(arrayList);
-            b = com.censivn.C3DEngine.A.g().a(bitmapA, true);
+            b = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, true);
             bitmapA.recycle();
             f.textures().clear();
             f.textures().addElement(WidgetResizeResources);
@@ -156,7 +156,7 @@ public class LassoContextMenu implements b.a {
                 @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
                 public void onReloadTheme(ThemeDescription themeDescription) {
                     if (com.tsf.shell.f.e.LassoContextMenu.b != null) {
-                        com.censivn.C3DEngine.A.g().a(com.tsf.shell.f.e.LassoContextMenu.b);
+                        com.censivn.C3DEngine.C3DEngine.g().a(com.tsf.shell.f.e.LassoContextMenu.b);
                         TextureElement unused = com.tsf.shell.f.e.LassoContextMenu.b = null;
                     }
                     LassoContextMenu.this.o();
@@ -216,7 +216,7 @@ public class LassoContextMenu implements b.a {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onKillFocus() {
                 if (com.tsf.shell.f.e.LassoContextMenu.k != null) {
-                    com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e.LassoContextMenu.4.1
+                    com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.LassoContextMenu.4.1
                         @Override // java.lang.Runnable
                         public void run() {
                             if (com.tsf.shell.f.e.LassoContextMenu.k != null) {

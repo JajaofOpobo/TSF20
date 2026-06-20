@@ -28,7 +28,7 @@ public class PhotoSelectorHelper implements com.censivn.C3DEngine.b.c.a.Interfac
     public void b(InterfaceC0098a interfaceC0098a, int i, int i2) {
         this.b = interfaceC0098a;
         Intent intent = new Intent();
-        intent.setClass(com.censivn.C3DEngine.A.d(), PhotoSelectorActivity.class);
+        intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), PhotoSelectorActivity.class);
         intent.putExtra("image_width", i);
         intent.putExtra("image_height", i2);
         this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
@@ -38,7 +38,7 @@ public class PhotoSelectorHelper implements com.censivn.C3DEngine.b.c.a.Interfac
     public void onActivityResult(int i, int i2, final Intent intent) {
         if (i2 == -1) {
             if (i == this.c) {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.e._h.PhotoSelectorHelper.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e._h.PhotoSelectorHelper.1
                     @Override // java.lang.Runnable
                     public void run() {
                         Bitmap bitmapD;

@@ -80,7 +80,7 @@ public class MenuExpandItem extends j {
 
     public void f() {
         if (this.d.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
     }
 
@@ -109,7 +109,7 @@ public class MenuExpandItem extends j {
             }
             canvas.drawBitmap(bitmapB, i2, (i - bitmapB.getHeight()) / 2, (Paint) null);
             bitmapB.recycle();
-            com.censivn.C3DEngine.A.g().a(this.d, bitmapCreateBitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapCreateBitmap);
             bitmapCreateBitmap.recycle();
             this.a.a(this.d.width);
             this.a.b(this.d.height);

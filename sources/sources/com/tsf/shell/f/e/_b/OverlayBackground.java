@@ -134,9 +134,9 @@ public class OverlayBackground extends j {
         System.currentTimeMillis();
         for (int i5 = 0; i5 < i; i5++) {
             if (i5 == 0) {
-                OverlayProperty.a(com.censivn.C3DEngine.A.d(), this.k, this.h.get(i5), this.i.get(i5), this.j.get(i5));
+                OverlayProperty.a(com.censivn.C3DEngine.C3DEngine.d(), this.k, this.h.get(i5), this.i.get(i5), this.j.get(i5));
             } else {
-                OverlayProperty.a(com.censivn.C3DEngine.A.d(), this.h.get(i5 - 1), this.h.get(i5), this.i.get(i5), this.j.get(i5));
+                OverlayProperty.a(com.censivn.C3DEngine.C3DEngine.d(), this.h.get(i5 - 1), this.h.get(i5), this.i.get(i5), this.j.get(i5));
             }
         }
         System.currentTimeMillis();

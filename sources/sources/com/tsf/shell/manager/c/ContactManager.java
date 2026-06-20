@@ -6,7 +6,7 @@ public class ContactManager {
 
     public ContactManager() {
         System.currentTimeMillis();
-        this.a = new ContactDatabaseHelper(com.censivn.C3DEngine.A.d());
+        this.a = new ContactDatabaseHelper(com.censivn.C3DEngine.C3DEngine.d());
     }
 
     public void a() {

@@ -37,7 +37,7 @@ public class GestureHandler {
 
     public static void a(Context context) {
         n = com.censivn.C3DEngine.b.b.A.e * 100.0f;
-        com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.action.GestureHandler.1
+        com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.action.GestureHandler.1
             @Override // java.lang.Runnable
             public void run() {
                 ArrayList unused = f.l = new ArrayList();

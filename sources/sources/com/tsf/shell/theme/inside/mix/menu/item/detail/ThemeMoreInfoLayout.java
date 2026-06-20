@@ -88,7 +88,7 @@ public class ThemeMoreInfoLayout extends j {
 
     public void show() {
         float[] fArr;
-        if (this.mThemeInfo.packagename.equals(com.censivn.C3DEngine.a.b())) {
+        if (this.mThemeInfo.packagename.equals(com.censivn.C3DEngine.a.GestureDetector())) {
             this.mUninstall.visible(false);
             fArr = new float[]{com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(-10.0f), com.censivn.C3DEngine.b.b.A.a(-70.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f)};
         } else {

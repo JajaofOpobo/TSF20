@@ -32,7 +32,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
     private int h;
     private int i;
     private com.tsf.shell.e.WidgetContainer j;
-    private Context k = com.censivn.C3DEngine.A.d();
+    private Context k = com.censivn.C3DEngine.C3DEngine.d();
     private WidgetFreeResizeController.b l = new WidgetFreeResizeController.b() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.1
         @Override // com.tsf.shell.f.e.WidgetFreeResizeController.b
         public void a() {
@@ -106,7 +106,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
 
     @SuppressLint({"NewApi"})
     public void a(final AppWidgetManager appWidgetManager, final f fVar, final int i, final int i2) {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.2
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.2
             @Override // java.lang.Runnable
             public void run() {
                 int iA = com.tsf.shell.manager.app.WidgetLayoutManager.a.a();
@@ -199,14 +199,14 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
             aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
             aVar.g.a.setAppWidget(i, appWidgetInfo);
             if (Build.VERSION.SDK_INT >= 16) {
-                float f = com.censivn.C3DEngine.A.d().getResources().getDisplayMetrics().density;
+                float f = com.censivn.C3DEngine.C3DEngine.d().getResources().getDisplayMetrics().density;
                 int i8 = (int) (launcherAppWidgetInfo.width / f);
                 int i9 = (int) (launcherAppWidgetInfo.height / f);
                 aVar.g.a.updateAppWidgetSize(null, i8, i9, i8, i9);
             }
             Home.b().l().a(aVar.g, dVarS, launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY, launcherAppWidgetInfo.width, launcherAppWidgetInfo.height, Home.b().k());
             aVar.ad();
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.3
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.3
                 @Override // java.lang.Runnable
                 public void run() {
                     gVarN.a(aVar);
@@ -235,7 +235,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
         final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.b.ItemShell(launcherAppWidgetInfo, packageName);
         aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
         aVar.g.a.setAppWidget(i, appWidgetInfo);
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.4
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.4
             @Override // java.lang.Runnable
             public void run() {
                 gVarD.a(aVar);

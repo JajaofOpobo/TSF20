@@ -228,7 +228,7 @@ public class ItemPositionAnimator {
         if (this.p) {
             this.a = false;
             this.p = false;
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.4
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.4
                 @Override // java.lang.Runnable
                 public void run() {
                     k.this.g();

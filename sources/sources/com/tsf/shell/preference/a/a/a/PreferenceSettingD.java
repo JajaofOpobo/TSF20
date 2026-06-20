@@ -65,13 +65,13 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     private void h() {
         PreferenceSettingD();
         Bitmap bitmapA = x.a(PreferenceSettingB.d.tsf_ico);
-        com.censivn.C3DEngine.A.g().a(this.f, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmapA);
         bitmapA.recycle();
     }
 
     private void m() {
         if (this.f.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.f);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f);
         }
     }
 
@@ -83,7 +83,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         }
         a(this.i, true);
         if (this.h) {
-            com.censivn.C3DEngine.A.a().b(this.g, 2000L);
+            com.censivn.C3DEngine.C3DEngine.a().b(this.g, 2000L);
         }
     }
 

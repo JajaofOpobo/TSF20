@@ -32,10 +32,10 @@ public class PreferenceItemC extends i {
         this.a.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.1
             @Override // com.censivn.C3DEngine.b.e.j.a
             public void a() {
-                com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.1.1
+                com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.d.ShellDataHandler.a(com.censivn.C3DEngine.A.d(), c.this.a);
+                        com.tsf.shell.d.ShellDataHandler.a(com.censivn.C3DEngine.C3DEngine.d(), c.this.a);
                     }
                 });
             }
@@ -154,7 +154,7 @@ public class PreferenceItemC extends i {
 
     @Override // com.censivn.C3DEngine.b.e.c
     public void g() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.9
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.9
             @Override // java.lang.Runnable
             public void run() {
                 if (com.tsf.shell.manager.b.ConfigManager.P() != c.this.k) {

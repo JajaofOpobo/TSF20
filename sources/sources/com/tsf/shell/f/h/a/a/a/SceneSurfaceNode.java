@@ -74,7 +74,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
 
     public void b() {
         if (this.f != null) {
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.4
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.4
                 @Override // java.lang.Runnable
                 public void run() {
                     Intent intent = new Intent("android.intent.action.EDIT");
@@ -88,7 +88,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
     @Override // com.tsf.shell.f.e.h.PhotoPicker.InterfaceC0098a
     public void a(Bitmap bitmap) {
         if (this.f != null) {
-            com.censivn.C3DEngine.A.g().a(this.k, bitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.k, bitmap);
             a(this.k, true);
         }
         bitmap.recycle();
@@ -113,7 +113,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
 
     private void i() {
         if (this.k.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.k);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.k);
         }
     }
 
@@ -127,7 +127,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
         }
         Bitmap bitmapA = this.f.a().a(com.tsf.shell.f.h.a.a.SceneElementRenderer.c, com.tsf.shell.f.h.a.a.SceneElementRenderer.c, true);
         if (bitmapA != null) {
-            com.censivn.C3DEngine.A.g().a(this.k, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.k, bitmapA);
             bitmapA.recycle();
             a(this.k, false);
         }

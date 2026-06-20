@@ -73,7 +73,7 @@ public class DrawerBaseElement extends j {
     public void onDrawChildStart() {
         if (b.id == 0) {
             Bitmap bitmapA = p.a(a, c, 1442840575);
-            com.censivn.C3DEngine.A.g().a(b, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(b, bitmapA);
             bitmapA.recycle();
         }
     }

@@ -71,7 +71,7 @@ public class DragOverlayElement extends j {
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawStart() {
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.A.g().a(this.a, this.d, e.d, e.d);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, e.d, e.d);
             }
         }
 

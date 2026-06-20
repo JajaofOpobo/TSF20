@@ -59,7 +59,7 @@ public class SceneNodeAnimator extends j {
         if (this.d.id == 0) {
             this.d.id = com.tsf.shell.manager.app.ServiceFactory.a().v().c(false).id;
             if (this.c != null) {
-                com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.2
+                com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.2
                     @Override // java.lang.Runnable
                     public void run() {
                         b.this.e();
@@ -84,7 +84,7 @@ public class SceneNodeAnimator extends j {
                     runnable.run();
                     return;
                 } else {
-                    com.censivn.C3DEngine.A.a().c(runnable);
+                    com.censivn.C3DEngine.C3DEngine.a().c(runnable);
                     return;
                 }
             }
@@ -97,7 +97,7 @@ public class SceneNodeAnimator extends j {
         Bitmap bitmapA = this.e.a();
         SceneNodeAnimator();
         if (bitmapA != null) {
-            com.censivn.C3DEngine.A.g().a(this.d, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
             bitmapA.recycle();
         }
     }
@@ -116,7 +116,7 @@ public class SceneNodeAnimator extends j {
         if (this.d.id == com.tsf.shell.manager.app.ServiceFactory.a().v().c(false).id) {
             this.d.id = 0;
         } else {
-            com.censivn.C3DEngine.A.g().a(this.d);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.d);
         }
     }
 }

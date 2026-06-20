@@ -3,17 +3,17 @@ package com.censivn.C3DEngine.a;
 import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
 import android.view.View;
-import com.censivn.C3DEngine.a.b;
+import com.censivn.C3DEngine.a.GestureDetector;
 import com.censivn.C3DEngine.b.f.i;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends b.d {
-    private static d h;
+public class TouchDispatcher extends GestureDetector.DefaultOnGestureListener {
+    private static TouchDispatcher h;
     private static boolean p = false;
     private GLSurfaceView a;
-    private b b;
+    private GestureDetector b;
     private com.censivn.C3DEngine.b.d.a c;
     private com.censivn.C3DEngine.b.d.a d;
     private com.tsf.shell.f.i.a.WallpaperTouchHandler e;
@@ -27,33 +27,33 @@ public class d extends b.d {
     private boolean m = false;
     private boolean o = false;
 
-    public d(GLSurfaceView gLSurfaceView) {
+    public TouchDispatcher(GLSurfaceView gLSurfaceView) {
         h = this;
         this.a = gLSurfaceView;
-        this.b = new b(this);
-        this.j = new View.OnTouchListener() { // from class: com.censivn.C3DEngine.a.d.1
+        this.b = new GestureDetector(this);
+        this.j = new View.OnTouchListener() { // from class: com.censivn.C3DEngine.a.TouchDispatcher.1
             @Override // android.view.View.OnTouchListener
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (!d.this.l) {
+                if (!TouchDispatcher.this.l) {
                     if (motionEvent.getAction() == 0) {
-                        d.this.i = true;
+                        TouchDispatcher.this.i = true;
                         return true;
                     }
                     if (motionEvent.getAction() != 1) {
                         return true;
                     }
-                    d.this.i = false;
-                    if (!d.this.m) {
+                    TouchDispatcher.this.i = false;
+                    if (!TouchDispatcher.this.m) {
                         return true;
                     }
-                    d.this.m = false;
-                    d.this.l = true;
+                    TouchDispatcher.this.m = false;
+                    TouchDispatcher.this.l = true;
                     return true;
                 }
                 if (motionEvent.getAction() == 0) {
                     try {
                         float[] fArrA = x.a(motionEvent);
-                        i iVarC = com.censivn.C3DEngine.A.e().c(fArrA[0], fArrA[1]);
+                        i iVarC = com.censivn.C3DEngine.C3DEngine.e().c(fArrA[0], fArrA[1]);
                         if ((iVarC == null || iVarC.getMouseEventListener() == null) && Home.b().l().a(motionEvent)) {
                             if (com.tsf.shell.manager.A.h.v().mouseEnabled()) {
                                 return false;
@@ -63,24 +63,24 @@ public class d extends b.d {
                     }
                 }
                 com.tsf.shell.manager.action.GestureHandler.c(motionEvent);
-                if (d.this.i && motionEvent.getAction() == 2) {
-                    d.this.n(motionEvent);
-                    d.this.b.a(motionEvent);
+                if (TouchDispatcher.this.i && motionEvent.getAction() == 2) {
+                    TouchDispatcher.this.n(motionEvent);
+                    TouchDispatcher.this.b.a(motionEvent);
                     return true;
                 }
                 final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.1.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.TouchDispatcher.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         switch (motionEventObtain.getAction()) {
                             case 261:
-                                d.this.o(motionEventObtain);
+                                TouchDispatcher.this.o(motionEventObtain);
                                 break;
                             case 262:
-                                d.this.p(motionEventObtain);
+                                TouchDispatcher.this.p(motionEventObtain);
                                 break;
                         }
-                        d.this.b.a(motionEventObtain);
+                        TouchDispatcher.this.b.a(motionEventObtain);
                         motionEventObtain.recycle();
                     }
                 });
@@ -116,7 +116,7 @@ public class d extends b.d {
         this.c = aVar;
     }
 
-    public static d d() {
+    public static TouchDispatcher d() {
         return h;
     }
 
@@ -193,19 +193,19 @@ public class d extends b.d {
     }
 
     public void k(final MotionEvent motionEvent) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.2
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.TouchDispatcher.2
             @Override // java.lang.Runnable
             public void run() {
-                d.this.e.f(motionEvent);
+                TouchDispatcher.this.e.f(motionEvent);
             }
         });
     }
 
     public void d(final MotionEvent motionEvent, final MotionEvent motionEvent2, final float f, final float f2) {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.d.3
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.a.TouchDispatcher.3
             @Override // java.lang.Runnable
             public void run() {
-                d.this.e.b(motionEvent, motionEvent2, f, f2);
+                TouchDispatcher.this.e.b(motionEvent, motionEvent2, f, f2);
             }
         });
     }
@@ -222,14 +222,14 @@ public class d extends b.d {
         this.k = true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean d(MotionEvent motionEvent) {
         this.k = false;
         b(true);
         this.i = true;
         l(motionEvent);
         float[] fArrA = x.a(this.f);
-        i iVarC = com.censivn.C3DEngine.A.e().c(fArrA[0], fArrA[1]);
+        i iVarC = com.censivn.C3DEngine.C3DEngine.e().c(fArrA[0], fArrA[1]);
         if (iVarC != null) {
             this.d = iVarC.getMouseEventListener();
             if (this.c.c != iVarC.getMouseEventListener().c) {
@@ -245,7 +245,7 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.InterfaceC0023b
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnDoubleTapListener
     public boolean a(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.k(motionEvent);
@@ -253,7 +253,7 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean f(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.a(motionEvent);
@@ -261,28 +261,28 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public void e(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.b(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public void g(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.c(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public void j(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.d(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.k) {
             this.c.a(motionEvent, motionEvent2, f, f2);
@@ -290,7 +290,7 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean h(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.g(motionEvent);
@@ -298,7 +298,7 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean i(MotionEvent motionEvent) {
         m(motionEvent);
         b(false);
@@ -324,7 +324,7 @@ public class d extends b.d {
         }
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.c
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnGestureListener
     public boolean b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.k) {
             this.c.b(motionEvent, motionEvent2, f, f2);
@@ -332,7 +332,7 @@ public class d extends b.d {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.a.b.d, com.censivn.C3DEngine.a.b.InterfaceC0023b
+    @Override // com.censivn.C3DEngine.a.GestureDetector.DefaultOnGestureListener, com.censivn.C3DEngine.a.GestureDetector.OnDoubleTapListener
     public boolean b(MotionEvent motionEvent) {
         if (!this.k) {
             this.c.h(motionEvent);

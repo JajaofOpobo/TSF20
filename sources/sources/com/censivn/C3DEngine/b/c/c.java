@@ -32,8 +32,8 @@ public class c {
         } else {
             this.e.addElement(renderRunnable);
         }
-        if (renderRunnable.autoInvalidate && com.censivn.C3DEngine.A.e() != null) {
-            com.censivn.C3DEngine.A.e().j();
+        if (renderRunnable.autoInvalidate && com.censivn.C3DEngine.C3DEngine.e() != null) {
+            com.censivn.C3DEngine.C3DEngine.e().j();
         }
     }
 
@@ -42,7 +42,7 @@ public class c {
     }
 
     public void a(Runnable runnable, long j) {
-        com.censivn.C3DEngine.a.f().postDelayed(runnable, j);
+        com.censivn.C3DEngine.C3DEngine.f().postDelayed(runnable, j);
     }
 
     public void b(Runnable runnable) {
@@ -53,7 +53,7 @@ public class c {
         if (runnable != null) {
             synchronized (this.g) {
                 this.h.add(runnable);
-                com.censivn.C3DEngine.A.e().j();
+                com.censivn.C3DEngine.C3DEngine.e().j();
             }
         }
     }
@@ -67,7 +67,7 @@ public class c {
             }
         };
         this.a.put(runnable, runnable2);
-        com.censivn.C3DEngine.a.f().postDelayed(runnable2, j);
+        com.censivn.C3DEngine.C3DEngine.f().postDelayed(runnable2, j);
     }
 
     public void d(Runnable runnable) {
@@ -83,7 +83,7 @@ public class c {
     }
 
     public void f(Runnable runnable) {
-        com.censivn.C3DEngine.a.f().removeCallbacks(runnable);
+        com.censivn.C3DEngine.C3DEngine.f().removeCallbacks(runnable);
     }
 
     public void g(Runnable runnable) {
@@ -91,7 +91,7 @@ public class c {
             Runnable runnable2 = this.a.get(runnable);
             if (runnable2 != null) {
                 this.a.remove(runnable);
-                com.censivn.C3DEngine.a.f().removeCallbacks(runnable2);
+                com.censivn.C3DEngine.C3DEngine.f().removeCallbacks(runnable2);
             } else {
                 synchronized (this.g) {
                     this.h.remove(runnable);
@@ -142,7 +142,7 @@ public class c {
                             break;
                     }
                 } else if (renderRunnableNextElement.autoInvalidate) {
-                    com.censivn.C3DEngine.A.e().j();
+                    com.censivn.C3DEngine.C3DEngine.e().j();
                 }
             }
         }

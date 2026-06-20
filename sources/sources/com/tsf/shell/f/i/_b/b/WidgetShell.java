@@ -142,19 +142,19 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     public void a(Bitmap bitmap) {
         if (this.h == null) {
-            this.h = com.censivn.C3DEngine.A.g().a(bitmap, false);
+            this.h = com.censivn.C3DEngine.C3DEngine.g().a(bitmap, false);
             this.b.textures().addElement(this.h);
             this.b.visible(true);
             b(this.h.width, this.h.height);
             d.b bVar = (d.b) this.g.getLayoutParams();
             c(bVar.a, bVar.b);
         } else if (bitmap.getWidth() != this.h.width || bitmap.getHeight() != this.h.height) {
-            com.censivn.C3DEngine.A.g().a(this.h, bitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.h, bitmap);
             b(this.h.width, this.h.height);
             d.b bVar2 = (d.b) this.g.getLayoutParams();
             c(bVar2.a, bVar2.b);
         } else {
-            com.censivn.C3DEngine.A.g().a(this.h, bitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.h, bitmap);
         }
         invalidate();
     }
@@ -182,7 +182,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     @Override // com.tsf.shell.f.i.PageItem
     public void ab() {
-        com.censivn.C3DEngine.A.a().c(this.m);
+        com.censivn.C3DEngine.C3DEngine.a().c(this.m);
     }
 
     public void q() {
@@ -194,7 +194,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     }
 
     public void ag() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.2
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.2
             @Override // java.lang.Runnable
             public void run() {
                 d.b bVar = (d.b) a.this.g.getLayoutParams();
@@ -249,7 +249,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         final g gVarZ = z();
         if (gVarZ != null && K().screen != gVarZ.t()) {
             K().screen = gVarZ.t();
-            com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.4
+            com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.4
                 @Override // java.lang.Runnable
                 public void run() {
                     ((d) a.this.g.getParent()).b(a.this.g);
@@ -269,13 +269,13 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void destroy() {
         this.l.b(this);
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.5
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.5
             @Override // java.lang.Runnable
             public void run() {
                 ((d) a.this.g.getParent()).b(a.this.g);
             }
         });
-        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.6
+        com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.6
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.app.WidgetLayoutManager.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
@@ -286,7 +286,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
             this.b.destroy();
             this.b = null;
         }
-        com.censivn.C3DEngine.A.g().a(this.h);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.h);
         this.h = null;
         this.k = null;
         removeFromParent();
@@ -294,7 +294,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     @Override // com.tsf.shell.f.i.PageItem
     public void q_() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.7
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.7
             @Override // java.lang.Runnable
             public void run() {
                 t.a();
@@ -321,7 +321,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     @Override // com.tsf.shell.f.i.PageItem
     public void E() {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.8
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.8
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e == null) {
@@ -337,7 +337,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     @Override // com.tsf.shell.f.i.PageItem
     public void F() {
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.9
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.9
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e != null) {

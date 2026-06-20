@@ -122,7 +122,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public void a(int i, int i2, int i3, int i4) {
         S();
         this.v.a(i, i2, i3, i4);
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.9
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.9
             @Override // java.lang.Runnable
             public void run() {
                 n.this.K();
@@ -636,7 +636,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     private void ad() {
         if (this.M != null) {
-            com.censivn.C3DEngine.A.a().g(this.M);
+            com.censivn.C3DEngine.C3DEngine.a().g(this.M);
             this.M = null;
         }
     }
@@ -694,7 +694,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             return;
         }
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.3
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.3
             @Override // java.lang.Runnable
             public void run() {
                 n.this.z();
@@ -723,7 +723,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
             return;
         }
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.4
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.4
             @Override // java.lang.Runnable
             public void run() {
                 n.this.A();
@@ -747,7 +747,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     public void a(final float f, final float f2, final float f3, final float f4) {
         this.F.a(f, f2, f3, f4, this.O);
-        com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.5
+        com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.5
             @Override // java.lang.Runnable
             public void run() {
                 n.this.b(f, f2, f3, f4);
@@ -763,7 +763,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 a(gVar, true, false);
                 ad();
                 this.M = this.A;
-                com.censivn.C3DEngine.A.a().b(this.M, 1400L);
+                com.censivn.C3DEngine.C3DEngine.a().b(this.M, 1400L);
             }
         }
     }
@@ -869,7 +869,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             if (this.O && !this.N) {
                 this.o = true;
                 if (F() == -1) {
-                    com.tsf.shell.e.a(com.censivn.C3DEngine.A.d().getString(b.i.notic_widget_forbid_add));
+                    com.tsf.shell.e.a(com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_widget_forbid_add));
                     y();
                 }
             }
@@ -1047,7 +1047,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void R() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.7
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.7
             @Override // java.lang.Runnable
             public void run() {
                 if (com.tsf.shell.manager.app.FeatureConfig.a()) {
@@ -1647,7 +1647,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             if (this.m && this.l) {
                 if (this.i) {
                     com.tsf.shell.f.e._g.MenuOverlay.onTempleteHide();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.5
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.5
                         @Override // java.lang.Runnable
                         public void run() {
                             c.this.d();
@@ -1676,7 +1676,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             if (this.m && this.l) {
                 if (this.i) {
                     com.tsf.shell.f.e._g.MenuOverlay.onTempleteHide();
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.6
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.6
                         @Override // java.lang.Runnable
                         public void run() {
                             c.this.d();
@@ -1828,7 +1828,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     com.censivn.C3DEngine.a.d.d().c().a(true);
                     c.this.L = null;
                     if (c.this.M != null) {
-                        com.censivn.C3DEngine.A.a().c(c.this.M);
+                        com.censivn.C3DEngine.C3DEngine.a().c(c.this.M);
                         c.this.M = null;
                     }
                 }
@@ -1862,7 +1862,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                         com.censivn.C3DEngine.a.d.d().c().a(true);
                         c.this.L = null;
                         if (c.this.M != null) {
-                            com.censivn.C3DEngine.A.a().c(c.this.M);
+                            com.censivn.C3DEngine.C3DEngine.a().c(c.this.M);
                             c.this.M = null;
                         }
                     }
@@ -1936,7 +1936,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 }
                 return;
             }
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.10
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.10
                 @Override // java.lang.Runnable
                 public void run() {
                     c.this.c(ItemPageTransition);
@@ -2112,7 +2112,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 com.tsf.shell.manager.app.ServiceFactory.k();
                 this.E.textures().clear();
                 if (this.D != null) {
-                    com.censivn.C3DEngine.A.g().a(this.D);
+                    com.censivn.C3DEngine.C3DEngine.g().a(this.D);
                 }
                 this.D = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_ADD_BUTTON, com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g);
                 this.E.textures().addElement(this.D);
@@ -2311,7 +2311,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                             public void a() {
                                 b.this.E.textures().clear();
                                 if (b.this.D != null) {
-                                    com.censivn.C3DEngine.A.g().a(b.this.D);
+                                    com.censivn.C3DEngine.C3DEngine.g().a(b.this.D);
                                     b.this.D = null;
                                 }
                                 b.this.c.removeFromParent();
@@ -2450,7 +2450,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             final float[] fArrA = x.a(motionEvent2);
             this.u.position().x = this.v.x + ((motionEvent2.getX() - motionEvent.getX()) * 1.3f);
             this.u.position().y = this.v.y - (motionEvent2.getY() - motionEvent.getY());
-            com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.5
+            com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.5
                 @Override // java.lang.Runnable
                 public void run() {
                     b.this.a(fArrA[0], fArrA[1]);
@@ -2741,7 +2741,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     this.b = true;
                     n.this.w.e();
                 } else {
-                    com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.a.1
+                    com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.a.1
                         @Override // java.lang.Runnable
                         public void run() {
                             a.this.c(motionEvent2);

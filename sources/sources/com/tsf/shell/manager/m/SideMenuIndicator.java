@@ -28,7 +28,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.a.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(d.this.a, b.d.scrollcontainer_arrow);
+                    com.censivn.C3DEngine.C3DEngine.g().a(d.this.a, b.d.scrollcontainer_arrow);
                 }
             }
         };
@@ -48,7 +48,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             @Override // com.censivn.C3DEngine.b.f.i
             public void onDrawStart() {
                 if (d.this.b.id == 0) {
-                    com.censivn.C3DEngine.A.g().a(d.this.b, b.d.side_menu_add_button);
+                    com.censivn.C3DEngine.C3DEngine.g().a(d.this.b, b.d.side_menu_add_button);
                 }
                 float fSin = 0.8f + ((float) (Math.sin(d.this.h) * 0.20000000298023224d));
                 d.this.h += d.this.g;
@@ -142,10 +142,10 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
 
     public void c() {
         if (this.a.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.a);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a);
         }
         if (this.b.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.b);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.b);
         }
     }
 }

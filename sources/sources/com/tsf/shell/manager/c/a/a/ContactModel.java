@@ -48,8 +48,8 @@ public class ContactModel {
     public void d() {
         if (!this.l) {
             this.l = true;
-            com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.A.d(), this);
-            com.tsf.shell.manager.c.ContactsProviderHelper.b(com.censivn.C3DEngine.A.d(), this);
+            com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.C3DEngine.d(), this);
+            com.tsf.shell.manager.c.ContactsProviderHelper.b(com.censivn.C3DEngine.C3DEngine.d(), this);
             com.tsf.shell.manager.app.ObjectRegistry.b().a(this);
         }
     }
@@ -98,7 +98,7 @@ public class ContactModel {
             z = true;
         }
         if (z) {
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.manager.c.a.a.ContactModel.1
+            com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.c.a.a.ContactModel.1
                 @Override // java.lang.Runnable
                 public void run() {
                     if (a.this.l) {
@@ -179,10 +179,10 @@ public class ContactModel {
                 bitmapA = null;
             }
             if (bitmapA == null) {
-                bitmapA = q.a(com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.A.d(), this.d));
+                bitmapA = q.a(com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.C3DEngine.d(), this.d));
             }
         } else {
-            bitmapA = q.a(com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.A.d(), this.d));
+            bitmapA = q.a(com.tsf.shell.manager.c.ContactsProviderHelper.a(com.censivn.C3DEngine.C3DEngine.d(), this.d));
         }
         if (bitmapA == null) {
             return null;
@@ -208,7 +208,7 @@ public class ContactModel {
             return null;
         }
         try {
-            return com.censivn.C3DEngine.A.d().getContentResolver().openAssetFileDescriptor(Uri.withAppendedPath(ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, j), "display_photo"), "r").createInputStream();
+            return com.censivn.C3DEngine.C3DEngine.d().getContentResolver().openAssetFileDescriptor(Uri.withAppendedPath(ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, j), "display_photo"), "r").createInputStream();
         } catch (IOException e) {
             return null;
         }

@@ -18,7 +18,7 @@ public class SceneOverlayNode extends k {
     public void onDrawStart() {
         Bitmap bitmapA;
         if (this.a.id == 0 && (bitmapA = a()) != null) {
-            com.censivn.C3DEngine.A.g().a(this.a, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.a, bitmapA);
             bitmapA.recycle();
         }
     }
@@ -28,6 +28,6 @@ public class SceneOverlayNode extends k {
     }
 
     public void d() {
-        com.censivn.C3DEngine.A.g().a(this.a);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.a);
     }
 }

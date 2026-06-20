@@ -99,24 +99,24 @@ public class SceneRendererA extends j {
     public void b() {
         float fXHDScale = VInformation.XHDScale() * 0.45f;
         Bitmap bitmapA = a(this.o, (int) (40.0f * fXHDScale));
-        com.censivn.C3DEngine.A.g().a(this.t, bitmapA);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.t, bitmapA);
         bitmapA.recycle();
         Bitmap bitmapA2 = a(this.o, this.p, 4);
-        com.censivn.C3DEngine.A.g().a(this.q, bitmapA2);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.q, bitmapA2);
         bitmapA2.recycle();
         Bitmap bitmapB = b(this.o, (int) (20.0f * fXHDScale), (int) (230.0f * fXHDScale));
-        com.censivn.C3DEngine.A.g().a(this.r, bitmapB);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.r, bitmapB);
         bitmapB.recycle();
         Bitmap bitmapB2 = b(this.o, (int) (24.0f * fXHDScale), (int) (fXHDScale * 170.0f));
-        com.censivn.C3DEngine.A.g().a(this.s, bitmapB2);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.s, bitmapB2);
         bitmapB2.recycle();
     }
 
     public void c() {
-        com.censivn.C3DEngine.A.g().a(this.q);
-        com.censivn.C3DEngine.A.g().a(this.r);
-        com.censivn.C3DEngine.A.g().a(this.s);
-        com.censivn.C3DEngine.A.g().a(this.t);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.q);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.r);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.s);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.t);
     }
 
     @Override // com.censivn.C3DEngine.b.f.i

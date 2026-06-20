@@ -130,7 +130,7 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
             com.censivn.C3DEngine.b.g.c.a(this.e);
             com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
             Bitmap bitmap = ThemeManager.mix.shellOther.getTheme().getBitmap(ThemeShellDescription.PUBLIC_BUTTON_DELETE, com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b);
-            com.censivn.C3DEngine.A.g().a(this.f, bitmap);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmap);
             bitmap.recycle();
             this.g = true;
             com.tsf.shell.manager.app.WidgetManager.a.a(this.d);
@@ -149,7 +149,7 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
     }
 
     public static String q() {
-        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(g.f.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(g.f.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -180,10 +180,10 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
         for (i iVar : c().children()) {
             str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
         }
-        com.censivn.C3DEngine.A.a().e(new Runnable() { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.4
+        com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.4
             @Override // java.lang.Runnable
             public void run() {
-                ContentResolver contentResolver = com.censivn.C3DEngine.A.d().getContentResolver();
+                ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("child", str);
                 contentResolver.update(ContentUris.withAppendedId(g.f.a, 1L), contentValues, null, null);

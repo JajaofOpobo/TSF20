@@ -52,7 +52,7 @@ public class WidgetFeatureConfig {
         com.tsf.shell.e.a(b.i.notic_widget_animation_enable, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetFeatureConfig.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetFeatureConfig.1.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.WidgetFeatureConfig.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.manager.app.WidgetManager.b().a(true);

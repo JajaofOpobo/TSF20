@@ -25,7 +25,7 @@ public class VConsole {
     }
 
     public static Context context() {
-        return com.censivn.C3DEngine.A.d();
+        return com.censivn.C3DEngine.C3DEngine.d();
     }
 
     public static Activity activity() {

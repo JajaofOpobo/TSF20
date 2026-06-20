@@ -73,7 +73,7 @@ public class AppPreviewLabel extends ItemLabelProvider {
     public i a(int i, int i2, boolean z) {
         if (this.h.id == 0) {
             Bitmap bitmapA = a(i, i2);
-            com.censivn.C3DEngine.A.g().a(this.h, bitmapA);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.h, bitmapA);
             bitmapA.recycle();
         }
         if (this.b.b() != this.h.width) {
@@ -97,7 +97,7 @@ public class AppPreviewLabel extends ItemLabelProvider {
     @Override // com.tsf.shell.f.i.c.ItemLabelProvider
     public void b() {
         if (this.h.id != 0) {
-            com.censivn.C3DEngine.A.g().a(this.h);
+            com.censivn.C3DEngine.C3DEngine.g().a(this.h);
         }
     }
 

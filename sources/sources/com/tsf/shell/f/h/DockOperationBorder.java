@@ -33,10 +33,10 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.a {
         this.o = 0.0f;
         if (k == null) {
             Bitmap bitmapA = x.a(WorkspaceStub.d.dock_operation_border);
-            k = com.censivn.C3DEngine.A.g().a(bitmapA, false);
+            k = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, false);
             bitmapA.recycle();
             Bitmap bitmapA2 = x.a(WorkspaceStub.d.dock_operation_border_point);
-            l = com.censivn.C3DEngine.A.g().a(bitmapA2, false);
+            l = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }
         this.m = com.censivn.C3DEngine.b.b.A.b * 158.0f;

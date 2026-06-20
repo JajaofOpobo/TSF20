@@ -281,7 +281,7 @@ public class e {
         if (z3) {
             runnable.run();
         } else {
-            com.censivn.C3DEngine.A.a().a(runnable, 500L);
+            com.censivn.C3DEngine.C3DEngine.a().a(runnable, 500L);
         }
     }
 
@@ -304,7 +304,7 @@ public class e {
             }
             com.tsf.shell.manager.b.e.d(Boolean.valueOf(this.g_ ? false : true));
             com.censivn.C3DEngine.b.b.A.c();
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
                 @Override // java.lang.Runnable
                 public void run() {
                     e.this.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
@@ -314,7 +314,7 @@ public class e {
     }
 
     public void d() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a(!e.this.g_);
@@ -323,7 +323,7 @@ public class e {
     }
 
     public void e() {
-        com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5
             @Override // java.lang.Runnable
             public void run() {
                 if (e.this.c()) {
@@ -351,7 +351,7 @@ public class e {
                                     if (launcherAccessibilityServiceA != null) {
                                         launcherAccessibilityServiceA.performGlobalAction(4);
                                     } else {
-                                        new AlertDialog.Builder(com.censivn.C3DEngine.A.d()).setTitle(com.tsf.b.i.accessibility_service_enable).setMessage(com.tsf.b.i.accessibility_service_enable_long).setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
+                                        new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d()).setTitle(com.tsf.b.i.accessibility_service_enable).setMessage(com.tsf.b.i.accessibility_service_enable_long).setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 Home.b().startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
@@ -368,9 +368,9 @@ public class e {
                     }
                 };
                 if (e.this.j_) {
-                    com.censivn.C3DEngine.A.a().a(runnable, 300L);
+                    com.censivn.C3DEngine.C3DEngine.a().a(runnable, 300L);
                 } else {
-                    com.censivn.C3DEngine.A.a().a(runnable);
+                    com.censivn.C3DEngine.C3DEngine.a().a(runnable);
                 }
             }
         });

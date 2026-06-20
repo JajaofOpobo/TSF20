@@ -19,7 +19,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
     public WidgetPanelToggle(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, String str) {
         super(str);
-        this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.A.d());
+        this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
         com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
             @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a

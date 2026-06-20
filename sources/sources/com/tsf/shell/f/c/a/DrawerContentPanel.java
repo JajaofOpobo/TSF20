@@ -102,7 +102,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     }
 
     public static String b() {
-        Cursor cursorQuery = com.censivn.C3DEngine.A.d().getContentResolver().query(DrawerSettingsItem.h.a, null, null, null, null);
+        Cursor cursorQuery = com.censivn.C3DEngine.C3DEngine.d().getContentResolver().query(DrawerSettingsItem.h.a, null, null, null, null);
         String string = "";
         while (cursorQuery.moveToNext()) {
             string = cursorQuery.getString(cursorQuery.getColumnIndex("child"));
@@ -183,7 +183,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
 
     private void B() {
         Bitmap bitmapB = q.b(18.0f, -1);
-        com.censivn.C3DEngine.A.g().a(this.I, bitmapB);
+        com.censivn.C3DEngine.C3DEngine.g().a(this.I, bitmapB);
         bitmapB.recycle();
     }
 
@@ -579,7 +579,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     }
 
     public void k() {
-        com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.15
+        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.15
             @Override // java.lang.Runnable
             public void run() {
                 f.this.l();
@@ -605,7 +605,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     public void m() {
         if (!this.ab) {
             this.ab = true;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (f.this.M.parent() == null) {
@@ -628,7 +628,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     public void n() {
         if (this.ab) {
             this.ab = false;
-            com.censivn.C3DEngine.A.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.3
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.3
                 @Override // java.lang.Runnable
                 public void run() {
                     com.censivn.C3DEngine.b.g.c.a(f.this.M);
@@ -863,7 +863,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
 
     private void G() {
         if (!this.Y) {
-            com.censivn.C3DEngine.A.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.4
+            com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.4
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.b.ConfigManager.a(f.this.af);
