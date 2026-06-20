@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterfacectivity.actionselector;
+package com.tsf.shell.activity.actionselector;
 
 import android.widget.TextView;
 

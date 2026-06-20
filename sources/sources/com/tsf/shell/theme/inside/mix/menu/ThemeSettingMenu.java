@@ -9,13 +9,13 @@ import com.tsf.shell.theme.inside.mix.menu.item.ThemeMixMenu;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeSettingMenu extends d {
+public class ThemeSettingMenu extends MenuOverlay {
     public ThemeInstalledMenu localMenu;
 
     public ThemeSettingMenu() {
-        super(600.0f * a.c);
+        super(600.0f * A.c);
         this.localMenu = new ThemeInstalledMenu(this);
-        ArrayList<b> arrayList = new ArrayList<>();
+        ArrayList<MenuActionItem> arrayList = new ArrayList<>();
         arrayList.add(new ThemeMixMenu(this));
         arrayList.add(this.localMenu);
         arrayList.add(new ThemeFeaturedMenu(this));

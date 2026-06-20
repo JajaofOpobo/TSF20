@@ -4,8 +4,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import com.tsf.shell.f.i.B;
-import com.tsf.shell.f.i.b.b.a;
+import com.tsf.shell.f.i.b.b.ItemShell;
 import com.tsf.shell.manager.bind.ShellModel;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -28,7 +27,7 @@ public abstract class ItemInfo {
     public int itemType;
     public String themeResourceName;
     public String title;
-    private com.tsf.shell.f.i.b.b.b widget;
+    private com.tsf.shell.f.i.b.b.IItemShell widget;
     public int id = -1;
     public int container = -1;
     public int screen = 0;
@@ -85,11 +84,11 @@ public abstract class ItemInfo {
         this.itemType = i;
     }
 
-    public void setWidget(com.tsf.shell.f.i.b.b.b bVar) {
+    public void setWidget(com.tsf.shell.f.i.b.b.IItemShell bVar) {
         this.widget = bVar;
     }
 
-    public com.tsf.shell.f.i.b.b.b getWidget() {
+    public com.tsf.shell.f.i.b.b.IItemShell getWidget() {
         return this.widget;
     }
 
@@ -104,8 +103,8 @@ public abstract class ItemInfo {
         contentValues.put("scale", this.scale + "," + this.scaleH);
     }
 
-    public void onUpdateLayoutInformation(ContentValues contentValues, com.tsf.shell.f.i.b.b.b bVar) {
-        if (!(bVar instanceof a) && bVar != null) {
+    public void onUpdateLayoutInformation(ContentValues contentValues, com.tsf.shell.f.i.b.b.IItemShell bVar) {
+                if (!(bVar instanceof ItemShell) && bVar != null) {
             if (com.censivn.C3DEngine.b.b.A.O) {
                 this.scale = bVar.u();
                 this.cellX = (int) bVar.position().x;

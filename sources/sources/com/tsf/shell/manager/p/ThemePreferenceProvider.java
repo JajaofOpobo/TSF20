@@ -23,7 +23,7 @@ public class ThemePreferenceProvider {
     public static int n = 700;
     public static int o = 800;
     public static int p = 810;
-    private d r = new d();
+    private ThemePreferenceStore r = new ThemePreferenceStore();
     private ArrayList<a> q = new ArrayList<>();
 
     public static class a {
@@ -96,7 +96,7 @@ public class ThemePreferenceProvider {
         }
     }
 
-    public d a() {
+    public ThemePreferenceStore a() {
         return this.r;
     }
 

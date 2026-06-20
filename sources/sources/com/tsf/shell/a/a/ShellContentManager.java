@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterface.a;
+package com.tsf.shell.a.a;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -10,9 +10,9 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.ShellCallbackInterface.a.b;
-import com.tsf.shell.ShellCallbackInterface.a.c;
-import com.tsf.shell.ShellCallbackInterface.a.d;
+import com.tsf.shell.ShellCallbackDispatcher.a.b;
+import com.tsf.shell.ShellCallbackDispatcher.a.c;
+import com.tsf.shell.ShellCallbackDispatcher.a.d;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -20,9 +20,9 @@ import java.util.Set;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellContentManager {
-    public static LinkedHashMap<Integer, com.tsf.shell.ShellCallbackInterface.a.b> a = new LinkedHashMap<>();
-    private com.tsf.shell.ShellCallbackInterface.a.c b;
-    private com.tsf.shell.ShellCallbackInterface.a.c c;
+    public static LinkedHashMap<Integer, com.tsf.shell.ShellCallbackDispatcher.a.b> a = new LinkedHashMap<>();
+    private com.tsf.shell.ShellCallbackDispatcher.a.c b;
+    private com.tsf.shell.ShellCallbackDispatcher.a.c c;
     private Activity f;
     private boolean m;
     private int n;
@@ -118,7 +118,7 @@ public class ShellContentManager {
         this.m = true;
         this.n = i;
         List<String> listB = ShellLayoutEngine.b(this.f, strArr);
-        com.tsf.shell.ShellCallbackInterface.a.b bVarB = b(i, listB);
+        com.tsf.shell.ShellCallbackDispatcher.a.b bVarB = b(i, listB);
         boolean z2 = bVarB != null && bVarB.c() > 1;
         this.h = true;
         this.g = cVar;
@@ -217,11 +217,11 @@ public class ShellContentManager {
         if (this.c != null && this.c.isShowing()) {
             this.c.dismiss();
         }
-        this.c = new com.tsf.shell.ShellCallbackInterface.a.c(this.f);
-        com.tsf.shell.ShellCallbackInterface.a.b bVarB = b(i, list);
+        this.c = new com.tsf.shell.ShellCallbackDispatcher.a.c(this.f);
+        com.tsf.shell.ShellCallbackDispatcher.a.b bVarB = b(i, list);
         if (bVarB != null) {
             this.c.a(8);
-            this.c.a(i, bVarB.a(), this.f.getString(bVarB.b()), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.ShellCallbackInterface.a.a.1
+            this.c.a(i, bVarB.a(), this.f.getString(bVarB.b()), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.1
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i2) {
                     if (i2 == -1) {
@@ -238,33 +238,33 @@ public class ShellContentManager {
             this.b.dismiss();
         }
         this.g = ShellThemeEngine.SHOW_NOTHING;
-        this.b = new com.tsf.shell.ShellCallbackInterface.a.c(this.f);
+        this.b = new com.tsf.shell.ShellCallbackDispatcher.a.c(this.f);
         this.b.setContentView(a.c.permission_guide_dialog_no_bg);
         if (b(i, list) != null) {
             String strE = e(i, list);
             this.k = f(i, list);
             a(this.f);
-            this.b.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.shell.ShellCallbackInterface.a.a.2
+            this.b.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.2
                 @Override // android.content.DialogInterface.OnDismissListener
                 public void onDismiss(DialogInterface dialogInterface) {
                     a.this.b(a.this.f);
                 }
             });
-            this.b.a(new ShellThemeEngine.a() { // from class: com.tsf.shell.ShellCallbackInterface.a.a.3
-                @Override // com.tsf.shell.ShellCallbackInterface.a.c.a
+            this.b.a(new ShellThemeEngine.a() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.3
+                @Override // com.tsf.shell.ShellCallbackDispatcher.a.c.a
                 public boolean a(DialogInterface dialogInterface, int i2, KeyEvent keyEvent) {
                     if (keyEvent.getKeyCode() != 4 || keyEvent.getAction() == 1) {
                     }
                     return true;
                 }
             });
-            this.b.a(i, strE, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.ShellCallbackInterface.a.a.4
+            this.b.a(i, strE, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.4
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i2) {
                     if (i2 == -1) {
                         a.this.b.dismiss();
                         if (z) {
-                            com.tsf.shell.ShellCallbackInterface.b.a.a(a.this.f, i | 1);
+                            com.tsf.shell.ShellCallbackDispatcher.b.a.a(a.this.f, i | 1);
                             a.this.e = strArr;
                             return;
                         }
@@ -293,12 +293,12 @@ public class ShellContentManager {
         }
     }
 
-    private com.tsf.shell.ShellCallbackInterface.a.b b(int i, List<String> list) {
+    private com.tsf.shell.ShellCallbackDispatcher.a.b b(int i, List<String> list) {
         return a.get(Integer.valueOf(g(i, list)));
     }
 
     private StringBuilder c(int i, List<String> list) {
-        com.tsf.shell.ShellCallbackInterface.a.b bVar;
+        com.tsf.shell.ShellCallbackDispatcher.a.b bVar;
         int iG = g(i, list);
         Set<Integer> setKeySet = a.keySet();
         StringBuilder sb = new StringBuilder();
@@ -325,7 +325,7 @@ public class ShellContentManager {
     }
 
     private String f(int i, List<String> list) {
-        com.tsf.shell.ShellCallbackInterface.a.b bVar;
+        com.tsf.shell.ShellCallbackDispatcher.a.b bVar;
         int iG = g(i, list);
         if (iG == 0) {
             return "";
@@ -374,7 +374,7 @@ public class ShellContentManager {
         }
     }
 
-    /* JADX INFO: renamed from: com.tsf.shell.ShellCallbackInterface.a.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.shell.ShellCallbackDispatcher.a.a$a, reason: collision with other inner class name */
     private class C0074a extends BroadcastReceiver {
         final String a;
         final String b;

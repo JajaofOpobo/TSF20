@@ -31,7 +31,7 @@ public class IconPreviewLoader {
     private ArrayList<Integer> getIconPreviewData(Context context, String str) {
         ArrayList<Integer> themeIconDrawable = this.resource.get(str);
         if (themeIconDrawable == null) {
-            themeIconDrawable = getThemeIconDrawable(k.a(context, str), 16);
+            themeIconDrawable = getThemeIconDrawable(ThemePickerRenderer.a(context, str), 16);
             if (themeIconDrawable == null) {
                 themeIconDrawable = new ArrayList<>();
             }
@@ -45,7 +45,7 @@ public class IconPreviewLoader {
         if (iconPreviewData.size() == 0) {
             return null;
         }
-        Context contextA = k.a(context, str);
+        Context contextA = ThemePickerRenderer.a(context, str);
         int size = iconPreviewData.size();
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(i, i, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
@@ -74,7 +74,7 @@ public class IconPreviewLoader {
         return bitmapCreateBitmap;
     }
 
-    public static Bitmap getIconPreviewBitmap(ArrayList<g> arrayList, int i) {
+    public static Bitmap getIconPreviewBitmap(ArrayList<DrawerItemVisual> arrayList, int i) {
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(i, i, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
@@ -158,19 +158,19 @@ public class IconPreviewLoader {
     public static ArrayList<Integer> getThemeIconDrawable(Context context, int i) {
         ArrayList<Integer> themeIconFromAsset = getThemeIconFromAsset(context, i);
         if (themeIconFromAsset != null) {
-            e.b("getThemeIconFromAsset:" + themeIconFromAsset.size());
+            ThemePickerEvent.b("getThemeIconFromAsset:" + themeIconFromAsset.size());
             return themeIconFromAsset;
         }
         ArrayList<Integer> themeIconFromXML = getThemeIconFromXML(context, i);
         if (themeIconFromXML != null) {
-            e.b("getThemeIconFromXML:" + themeIconFromXML.size());
+            ThemePickerEvent.b("getThemeIconFromXML:" + themeIconFromXML.size());
             return themeIconFromXML;
         }
         return null;
     }
 
     private static ArrayList<Integer> getThemeIconFromXML(Context context, int i) {
-        e.c("", "getThemeXMLContent use XML folder");
+        ThemePickerEvent.c("", "getThemeXMLContent use XML folder");
         ArrayList<Integer> arrayList = new ArrayList<>();
         try {
             XmlResourceParser xml = context.getResources().getXml(context.getResources().getIdentifier("drawable", "xml", context.getPackageName()));
@@ -195,7 +195,7 @@ public class IconPreviewLoader {
             }
             return arrayList;
         } catch (Exception e) {
-            e.a(e.getMessage());
+            ThemePickerEvent.a(e.getMessage());
             return null;
         }
     }
@@ -205,7 +205,7 @@ public class IconPreviewLoader {
         try {
             inputStreamOpen = context.getAssets().open("drawable.xml");
         } catch (IOException e) {
-            e.a(e.getMessage());
+            ThemePickerEvent.a(e.getMessage());
             inputStreamOpen = null;
         }
         if (inputStreamOpen == null) {
@@ -217,12 +217,12 @@ public class IconPreviewLoader {
         try {
             SAXParserFactory.newInstance().newSAXParser().parse(inputStreamOpen, aVar);
         } catch (Exception e2) {
-            e.a(e2.getMessage());
+            ThemePickerEvent.a(e2.getMessage());
         }
         try {
             inputStreamOpen.close();
         } catch (IOException e3) {
-            e.a(e3.getMessage());
+            ThemePickerEvent.a(e3.getMessage());
         }
         return aVar.a;
     }
@@ -232,7 +232,7 @@ public class IconPreviewLoader {
         try {
             return context.getResources().getIdentifier(context.getPackageName() + ":drawable/" + str, null, null);
         } catch (Exception e) {
-            e.a(e.getMessage());
+            ThemePickerEvent.a(e.getMessage());
             return 0;
         }
     }

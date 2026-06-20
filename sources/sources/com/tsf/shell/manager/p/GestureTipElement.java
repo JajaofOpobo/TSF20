@@ -12,16 +12,6 @@ public class GestureTipElement extends j {
     private k c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
     private k d;
 
-    puGestureTipElementlic b() {
-        this.c.position().y = (-this.c.c()) / 2.0f;
-        this.c.textures().addElement(this.a);
-        this.d = com.censivn.C3DEngine.b.b.A.a(69.0f, 69.0f);
-        this.d.textures().addElement(this.b);
-        this.d.scale().setAll(0.0f, 0.0f, 1.0f);
-        this.d.visible(false);
-        addChild(this.c);
-    }
-
     public void a() {
         com.censivn.C3DEngine.A.g().a(this.a);
         com.censivn.C3DEngine.A.g().a(this.b);

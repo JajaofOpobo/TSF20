@@ -73,48 +73,48 @@ public class ThemeIconDescription {
         this.mContext = null;
     }
 
-    public Bitmap getBackBitmap(A aVar) {
+    public Bitmap getBackBitmap(ButtonMetrics buttonMetrics) {
         if (this.iconBackItems.size() <= 0) {
             return null;
         }
         int iRandom = (int) (Math.random() * ((double) this.iconBackItems.size()));
         int size = iRandom == this.iconBackItems.size() ? this.iconBackItems.size() - 1 : iRandom;
-        Bitmap bitmap = this.iconBackItems.get(size).getBitmap(aVar);
+        Bitmap bitmap = this.iconBackItems.get(size).getBitmap(buttonMetrics);
         if (bitmap == null) {
             this.iconBackItems.remove(size);
-            return getBackBitmap(aVar);
+            return getBackBitmap(buttonMetrics);
         }
         return bitmap;
     }
 
-    public Bitmap getUponBitmap(A aVar) {
+    public Bitmap getUponBitmap(ButtonMetrics buttonMetrics) {
         if (this.iconUponItems.size() <= 0) {
             return null;
         }
-        Bitmap bitmap = this.iconUponItems.get(0).getBitmap(aVar);
+        Bitmap bitmap = this.iconUponItems.get(0).getBitmap(buttonMetrics);
         if (bitmap == null) {
             this.iconUponItems.remove(0);
-            return getUponBitmap(aVar);
+            return getUponBitmap(buttonMetrics);
         }
         return bitmap;
     }
 
-    public Bitmap getMaskBitmap(A aVar) {
+    public Bitmap getMaskBitmap(ButtonMetrics buttonMetrics) {
         if (this.iconMaskItems.size() <= 0) {
             return null;
         }
-        Bitmap bitmap = this.iconMaskItems.get(0).getBitmap(aVar);
+        Bitmap bitmap = this.iconMaskItems.get(0).getBitmap(buttonMetrics);
         if (bitmap == null) {
             this.iconMaskItems.remove(0);
-            return getMaskBitmap(aVar);
+            return getMaskBitmap(buttonMetrics);
         }
         return bitmap;
     }
 
     public Bitmap getPackageIcon() {
-        Bitmap bitmapA = x.a(this.mContext, this.mContext.getApplicationInfo().icon);
+        Bitmap bitmapA = GraphicsEngineBridge.a(this.mContext, this.mContext.getApplicationInfo().icon);
         if (bitmapA == null) {
-            return x.a(b.d.default_icon);
+            return GraphicsEngineBridge.a(b.d.default_icon);
         }
         return bitmapA;
     }
@@ -142,12 +142,12 @@ public class ThemeIconDescription {
         this.iconFilter.put(str, str2);
     }
 
-    public Bitmap getIconFilterBitmap(String str, A aVar) {
+    public Bitmap getIconFilterBitmap(String str, ButtonMetrics buttonMetrics) {
         String str2 = this.iconFilter.get(str);
         if (str2 == null) {
             return null;
         }
-        return getBitmap(aVar, this.mContext, str2);
+        return getBitmap(buttonMetrics, this.mContext, str2);
     }
 
     public int isIconExistId(String str) {
@@ -158,8 +158,8 @@ public class ThemeIconDescription {
         return this.mContext.getResources().getIdentifier(str, "drawable", this.mContext.getPackageName()) != 0;
     }
 
-    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, A aVar) {
-        return getBitmap(aVar, this.mContext, defaultIconItem.drawable);
+    protected Bitmap getBitmap(DefaultIconItem defaultIconItem, ButtonMetrics buttonMetrics) {
+        return getBitmap(buttonMetrics, this.mContext, defaultIconItem.drawable);
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(10:0|2|(2:48|3)|(3:46|5|6)(8:7|50|8|44|9|10|(3:12|(1:31)(1:16)|(1:18))|6)|40|23|24|(0)|6|(1:(0))) */

@@ -8,7 +8,7 @@ import android.view.Display;
 import com.censivn.C3DEngine.a.e;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.utils.r;
+import com.tsf.shell.utils.DimensionHelper;
 import java.lang.reflect.Method;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

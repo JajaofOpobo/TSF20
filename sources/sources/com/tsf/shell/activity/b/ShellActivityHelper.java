@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterfacectivity.b;
+package com.tsf.shell.activity.b;
 
 import android.content.pm.PackageManager;
 import android.util.Log;

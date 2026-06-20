@@ -31,7 +31,7 @@ public class ActionManager {
         public Intent.ShortcutIconResource f;
     }
 
-    puActionManagerlic b() {
+    public Object b() {
         com.tsf.shell.manager.app.CallbackHandler.a(new d.a() { // from class: com.tsf.shell.manager.action.ActionManager.1
             @Override // com.censivn.C3DEngine.b.c.d.a
             public void a() {

@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
-import com.tsf.shell.f.e.SelectionFrametemTrailContainer;
+import com.tsf.shell.f.e.ItemTrailContainer;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;

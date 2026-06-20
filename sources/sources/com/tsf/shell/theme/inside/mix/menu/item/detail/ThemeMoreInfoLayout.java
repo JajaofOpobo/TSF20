@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.d.a;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.m;
-import com.censivn.C3DEngine.b.g.C;
+import com.censivn.C3DEngine.b.g.c;
 import com.censivn.C3DEngine.b.g.d;
 
 import com.tsf.shell.Home;
@@ -18,7 +18,7 @@ import com.tsf.shell.utils.MarketLinkHandler;
 public class ThemeMoreInfoLayout extends j {
     private m mAuthorView;
     private m mCheckUpdate;
-    private b mIcon = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
+    private DrawerShortcutItemBase mIcon = new DrawerItemButton(com.tsf.shell.manager.o.ButtonPresetManager.c);
     private m mLinkView;
     private ThemeListsManager.ThemeInfo mThemeInfo;
     private m mTitleView;
@@ -41,7 +41,7 @@ public class ThemeMoreInfoLayout extends j {
             public void a(MotionEvent motionEvent) {
                 String strC;
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null && (strC = ThemeMoreInfoLayout.this.mLinkView.c()) != null && !strC.equals("")) {
-                    k.b(Home.b(), ThemeMoreInfoLayout.this.mLinkView.c());
+                    MarketLinkHandler.b(Home.b(), ThemeMoreInfoLayout.this.mLinkView.c());
                 }
             }
         });
@@ -52,7 +52,7 @@ public class ThemeMoreInfoLayout extends j {
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null) {
-                    k.a(Home.b(), ThemeMoreInfoLayout.this.mThemeInfo.packagename);
+                    MarketLinkHandler.a(Home.b(), ThemeMoreInfoLayout.this.mThemeInfo.packagename);
                 }
             }
         });

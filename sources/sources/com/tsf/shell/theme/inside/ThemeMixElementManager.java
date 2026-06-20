@@ -188,8 +188,8 @@ public abstract class ThemeMixElementManager {
                 Intent intent = new Intent();
                 intent.putExtra("type", ThemeMixElementManager.this.getType());
                 intent.setClass(Home.b(), ThemeElementPicker.class);
-                new com.tsf.shell.ShellCallbackInterfacectivity.a.a() { // from class: com.tsf.shell.theme.inside.ThemeMixElementManager.2.1
-                    @Override // com.tsf.shell.ShellCallbackInterfacectivity.a.a
+                new com.tsf.shell.ShellCallbackDispatcherctivity.a.a() { // from class: com.tsf.shell.theme.inside.ThemeMixElementManager.2.1
+                    @Override // com.tsf.shell.ShellCallbackDispatcherctivity.a.a
                     public void a(int i, Intent intent2) {
                         if (i == -1) {
                             ThemeManager.mix.setTheme(ThemeMixElementManager.this.getType(), intent2.getStringExtra("packagename"), true);

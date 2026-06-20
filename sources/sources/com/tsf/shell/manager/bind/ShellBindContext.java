@@ -4,11 +4,12 @@ import android.content.Context;
 import android.content.IntentFilter;
 import com.tsf.shell.InstallShortcutReceiver;
 import com.tsf.shell.ShellBroadcastReceiver;
+import com.tsf.shell.manager.bind.ShellBindCallback;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellBindContext {
     private static Context a;
-    private static a b;
+    private static ShellBindCallback b;
     private static ShellModel c;
     private static com.tsf.shell.manager.app.AppListManager d;
 
@@ -16,9 +17,9 @@ public class ShellBindContext {
         a = context.getApplicationContext();
     }
 
-    public static a a() {
+    public static ShellBindCallback a() {
         if (b == null) {
-            b = new a();
+            b = new ShellBindCallback();
         }
         return b;
     }

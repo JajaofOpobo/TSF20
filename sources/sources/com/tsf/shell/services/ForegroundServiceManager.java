@@ -19,7 +19,7 @@ public class ForegroundServiceManager {
         }
     };
 
-    puForegroundServiceManagerlic b(Context context) {
+    public Object b(Context context) {
         this.a = context;
     }
 

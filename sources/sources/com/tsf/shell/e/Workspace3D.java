@@ -56,9 +56,9 @@ public class Workspace3D extends ViewGroup {
     public void a(View view, CellLayout dVar, int i, int i2, int i3, int i4, boolean z) {
         ViewGroup.LayoutParams bVar;
         if (dVar != null) {
-            d.WidgetContainer bVar2 = (d.b) view.getLayoutParams();
+            CellLayout.WidgetContainer bVar2 = (CellLayout.WidgetContainer) view.getLayoutParams();
             if (bVar2 == null) {
-                bVar = new d.b(i, i2, i3, i4);
+                bVar = new CellLayout.WidgetContainer(i, i2, i3, i4);
             } else {
                 bVar2.a = i;
                 bVar2.b = i2;
@@ -273,7 +273,7 @@ public class Workspace3D extends ViewGroup {
         this.f = z;
     }
 
-    public d.a getCurrentCellInfo() {
+    public CellLayout.a getCurrentCellInfo() {
         CellLayout dVarS = com.tsf.shell.manager.app.StateHub.n().s();
         if (dVarS == null) {
             return null;

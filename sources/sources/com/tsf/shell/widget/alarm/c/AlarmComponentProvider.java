@@ -115,7 +115,7 @@ public class AlarmComponentProvider extends VRectangle {
             new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.c.AlarmComponentProvider.a.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (com.tsf.shell.ShellCallbackInterface.a.e.a(AlarmWidget.h)) {
+                    if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(AlarmWidget.h)) {
                         c.this.d();
                     }
                 }

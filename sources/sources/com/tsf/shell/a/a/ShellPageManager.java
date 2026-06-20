@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterface.a;
+package com.tsf.shell.a.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellPageManager {

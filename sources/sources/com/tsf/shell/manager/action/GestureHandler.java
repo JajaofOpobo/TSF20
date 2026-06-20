@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.MotionEvent;
+import com.tsf.shell.manager.action.ActionDatabaseHelper;
+import com.tsf.shell.manager.action.ActionModel;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
@@ -19,7 +21,7 @@ public class GestureHandler {
     private static float h;
     private static float i;
     private static float j;
-    private static ArrayList<e> l;
+    private static ArrayList<ActionModel> l;
     private static BroadcastReceiver m;
     private static float n;
     private static float q;
@@ -89,25 +91,25 @@ public class GestureHandler {
         return i2 + ",'" + b.b(i3).b + "','tsf://" + i3 + "'";
     }
 
-    public static e a(int i2) {
+    public static ActionModel a(int i2) {
         if (l == null) {
-            return new e(0, "", "");
+            return new ActionModel(0, "", "");
         }
-        for (e eVar : l) {
-            if (eVar.a == i2) {
-                return eVar;
+        for (ActionModel actionModel : l) {
+            if (actionModel.a == i2) {
+                return actionModel;
             }
         }
-        return new e(0, "", "");
+        return new ActionModel(0, "", "");
     }
 
     public static boolean b(int i2) {
         if (p || l == null) {
             return true;
         }
-        for (e eVar : l) {
-            if (eVar.a == i2) {
-                return eVar.a();
+        for (ActionModel actionModel : l) {
+            if (actionModel.a == i2) {
+                return actionModel.a();
             }
         }
         return false;
@@ -115,10 +117,10 @@ public class GestureHandler {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void b(int i2, String str, String str2) {
-        a.a(i2, str, str2);
-        e eVarA = a(i2);
-        eVarA.b = str;
-        eVarA.c = str2;
+        ActionDatabaseHelper.a(i2, str, str2);
+        ActionModel actionModel = a(i2);
+        actionModel.b = str;
+        actionModel.c = str2;
     }
 
     public static void a() {

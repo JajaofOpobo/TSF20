@@ -36,7 +36,7 @@ public class RateDialog extends j {
     public static final int h = com.censivn.C3DEngine.b.b.A.b(125.0f);
     public static final int i = com.censivn.C3DEngine.b.b.A.b(23.0f);
 
-    puRateDialoglic b() {
+    public Object b() {
         this.u.d(45);
         this.u.c(b.i.text_rate_message);
         this.u.e(-10066330);

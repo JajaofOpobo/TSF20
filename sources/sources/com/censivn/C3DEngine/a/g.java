@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.a;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.f.i;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.l;
+import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -27,7 +27,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a
     @Override // com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
         if (!e.l()) {
-            l.a(this, "scene addChild is worng thread:" + iVar);
+            ErrorThrower.a(this, "scene addChild is worng thread:" + iVar);
         }
         if (!this.a.contains(iVar)) {
             this.a.add(iVar);
@@ -38,7 +38,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a
     @Override // com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         if (!e.l()) {
-            l.a(this, "scene removeChild is worng thread:" + iVar);
+            ErrorThrower.a(this, "scene removeChild is worng thread:" + iVar);
         }
         boolean zRemove = this.a.remove(iVar);
         if (zRemove) {

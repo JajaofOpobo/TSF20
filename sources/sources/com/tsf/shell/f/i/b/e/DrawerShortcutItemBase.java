@@ -9,7 +9,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutItem implements m {
+public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutItem implements ILassoSelectable {
     private static int[] a = {0, 0};
     private static ArrayList<a> v = new ArrayList<>();
     private static int w = 0;
@@ -65,22 +65,22 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
 
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
     public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
-        if (fVar instanceof b) {
+        if (fVar instanceof DrawerShortcutItemBase) {
             a((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
     public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
-        if (fVar instanceof b) {
+        if (fVar instanceof DrawerShortcutItemBase) {
             b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
     public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
-        if ((fVar instanceof b) && this.u != null) {
-            com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = a((b) fVar, false);
+        if ((fVar instanceof DrawerShortcutItemBase) && this.u != null) {
+            com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = a((DrawerShortcutItemBase) fVar, false);
             bVarA.K().screen = K().screen;
             bVarA.ad();
             bVarA.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVarA));
@@ -94,7 +94,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
 
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
     public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
-        return fVar instanceof b;
+        return fVar instanceof DrawerShortcutItemBase;
     }
 
     public void aA() {
@@ -317,7 +317,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         }
     }
 
-    public com.tsf.shell.f.i.b.d.FolderShortcutItem a(b bVar, boolean z) {
+    public com.tsf.shell.f.i.b.d.FolderShortcutItem a(DrawerShortcutItemBase bVar, boolean z) {
         com.tsf.shell.f.i.b.d.FolderShortcutItem bVar2 = this.u.a;
         this.u.a.removeFromParent();
         this.u.a.a(this, bVar, z);
@@ -360,7 +360,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
 
     static class a {
         public com.tsf.shell.f.i.b.d.FolderShortcutItem a;
-        public h b;
+        public DrawerShortcutItemBase b;
 
         a() {
         }

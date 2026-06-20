@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterfacectivity.actionselector;
+package com.tsf.shell.activity.actionselector;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -27,13 +27,13 @@ public class ActionSelector extends FragmentActivity {
     private ViewPager o;
     private Intent p;
     private boolean q = false;
-    private d r;
+    private ActionSelectorAdapter r;
 
     @Override // android.support.v4.app.FragmentActivity, android.support.v4.app.h, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(ActionSelectorCallback.g.action_selector);
-        this.r = new d(this);
+        this.r = new ActionSelectorAdapter(this);
         this.m = new String[4];
         this.m[0] = getString(ActionSelectorCallback.i.group_applications);
         this.m[1] = getString(ActionSelectorCallback.i.text_launcher);
@@ -65,7 +65,7 @@ public class ActionSelector extends FragmentActivity {
         return this.q;
     }
 
-    private class b extends q implements com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelectorCallback {
+    private class b extends q implements com.tsf.shell.ShellCallbackDispatcherctivity.actionselector.ActionSelectorCallback {
         private final Context b;
 
         public b(Context context, o oVar) {
@@ -87,11 +87,11 @@ public class ActionSelector extends FragmentActivity {
             return ActionSelector.this.m.length;
         }
 
-        @Override // com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelectorCallback
+        @Override // com.tsf.shell.ShellCallbackDispatcherctivity.actionselector.ActionSelectorCallback
         public TextView getTabView(int i) {
             TextView textView = (TextView) LayoutInflater.from(this.b).inflate(ActionSelectorCallback.g.swipey_tab_indicator, (ViewGroup) swipeyTabs, false);
             textView.setText(ActionSelector.this.m[i]);
-            textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.ShellCallbackInterfacectivity.actionselector.ActionSelector.b.1
+            textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.actionselector.ActionSelector.b.1
                 @Override // android.view.View.OnClickListener
                 public void onClick(View view) {
                     ActionSelector.this.o.setCurrentItem(i);

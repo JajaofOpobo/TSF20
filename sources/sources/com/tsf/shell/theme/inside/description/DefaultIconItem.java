@@ -10,23 +10,23 @@ public class DefaultIconItem {
     public ThemeIconDescription description;
     public String drawable;
     public float scale = 1.0f;
-    private A style;
+    private ButtonMetrics style;
 
     public DefaultIconItem(ThemeIconDescription themeIconDescription, String str) {
         this.description = themeIconDescription;
         this.drawable = str;
     }
 
-    public Bitmap getBitmap(A aVar) {
+    public Bitmap getBitmap(ButtonMetrics buttonMetrics) {
         if (this.description == null) {
             return null;
         }
-        if (this.style != aVar) {
+        if (this.style != buttonMetrics) {
             recycle();
-            this.style = aVar;
+            this.style = buttonMetrics;
         }
         if (this.bitmapReference == null || this.bitmapReference.get() == null || this.bitmapReference.get().isRecycled()) {
-            this.bitmapReference = new SoftReference<>(this.description.getBitmap(this, aVar));
+            this.bitmapReference = new SoftReference<>(this.description.getBitmap(this, buttonMetrics));
         }
         return this.bitmapReference.get();
     }

@@ -12,7 +12,7 @@ import com.tsf.shell.manager.o.ThemeColorConstants;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeMenuMixElementPlane extends j {
     public static final int WIDTH = 300;
-    private k mNotifPoint;
+    private CircleDotNode mNotifPoint;
     public m mSummaryView;
     public m mTitleView;
     private TextureElement previewTE = new TextureElement(0, false);
@@ -24,12 +24,12 @@ public class ThemeMenuMixElementPlane extends j {
         this.mTitleView = new m();
         this.mTitleView.d(40);
         this.mTitleView.position().y = -A.a(50.0f);
-        c.a(this.mTitleView, c.h);
+        ThemeColorConstants.a(this.mTitleView, ThemeColorConstants.h);
         this.mSummaryView = new m();
         this.mSummaryView.d(32);
         this.mSummaryView.g(300);
         this.mSummaryView.position().y = -A.a(100.0f);
-        c.a(this.mSummaryView, c.i);
+        ThemeColorConstants.a(this.mSummaryView, ThemeColorConstants.i);
         addChild(this.mPreviewView);
         addChild(this.mTitleView);
         addChild(this.mSummaryView);
@@ -66,7 +66,7 @@ public class ThemeMenuMixElementPlane extends j {
 
     public void enableNotifPoint() {
         if (this.mNotifPoint == null) {
-            this.mNotifPoint = new k();
+            this.mNotifPoint = new CircleDotNode();
             this.mNotifPoint.position().x = A.a(100.0f);
             this.mNotifPoint.position().y = A.a(200.0f);
         }

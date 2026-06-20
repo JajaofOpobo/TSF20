@@ -55,7 +55,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         d(3);
     }
 
-    public e a() {
+    public WallpaperMenuContainer a() {
         return this.o;
     }
 
@@ -104,7 +104,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
 
     public void a(int i) {
         if (i == a) {
-            g gVarN = com.tsf.shell.manager.app.StateHub.n();
+            WidgetPanelController gVarN = com.tsf.shell.manager.app.StateHub.n();
             if (gVarN != null && gVarN.r() > 0) {
                 a(c(gVarN), true);
                 return;
@@ -116,11 +116,11 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         a(0.5f, true);
     }
 
-    private float b(g gVar) {
+    private float b(WidgetPanelController gVar) {
         return (gVar.r() - 1) / (com.tsf.shell.manager.app.StateHub.l() - 2);
     }
 
-    private float c(g gVar) {
+    private float c(WidgetPanelController gVar) {
         return ((gVar.r() - 1) - gVar.g) / (com.tsf.shell.manager.app.StateHub.l() - 2);
     }
 
@@ -136,7 +136,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     public static void a(Context context) {
-        ArrayList<Integer> arrayListB = k.b(context);
+        ArrayList<Integer> arrayListB = ThemePickerRenderer.b(context);
         if (arrayListB != null && arrayListB.size() > 0 && arrayListB.get(0).intValue() != 0) {
             try {
                 WallpaperManager.getInstance(context).setResource(arrayListB.get(0).intValue());
@@ -149,7 +149,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         }
     }
 
-    public void a(g gVar, boolean z, boolean z2) {
+    public void a(WidgetPanelController gVar, boolean z, boolean z2) {
         float fL;
         if (gVar.r() > 0) {
             int iR = gVar.r() - 1;
@@ -295,7 +295,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         return this.f.a() != null;
     }
 
-    public void a(g gVar) {
+    public void a(WidgetPanelController gVar) {
         if (i()) {
             float fB = gVar.t() == -1 ? 0.0f : b(gVar);
             float f = this.f.position().x;

@@ -23,12 +23,12 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private h a;
-    private e b;
-    private ArrayList<c> c;
+    private WallpaperMenuContainer b;
+    private ArrayList<MenuItem> c;
     private com.tsf.shell.manager.wallpaper.BlurSettingsMenu d;
-    private e.a e;
+    private MenuActionHandler e;
 
-    puWallpaperMenuPanellic b(e eVar) {
+    public Object b(e eVar) {
         super(x.c(b.i.text_wallpapers));
         this.b = eVar;
         WallpaperMenuPanel();

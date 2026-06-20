@@ -16,12 +16,8 @@ import com.tsf.shell.manager.bind.ShellModel;
 public class ItemShell extends PageItem {
     public boolean a;
     public k b;
-    public String a;
     public com.tsf.shell.e.WidgetContainer g;
-    public TextureElement a;
-    public Object a;
-    public Runnable a;
-    private c k;
+    private PageItemTouchHandler k;
     private com.tsf.shell.manager.r.a.WidgetInstanceTracker l;
     private Runnable m;
     private boolean n;
@@ -43,7 +39,7 @@ public class ItemShell extends PageItem {
         this.b = new k(0.0f, 0.0f, 1, 1, false);
         addChild(this.b);
         this.b.visible(false);
-        this.k = new c(this);
+        this.k = new PageItemTouchHandler(this);
         e(false);
         this.l = com.tsf.shell.manager.app.WidgetLayoutManager;
         this.l.a(this);
@@ -176,7 +172,7 @@ public class ItemShell extends PageItem {
 
     @Override // com.censivn.C3DEngine.b.f.i
     /* JADX INFO: renamed from: l, reason: merged with bridge method [inline-methods] */
-    public c getMouseEventListener() {
+    public PageItemTouchHandler getMouseEventListener() {
         return this.k;
     }
 

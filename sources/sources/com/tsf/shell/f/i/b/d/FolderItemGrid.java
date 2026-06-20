@@ -14,7 +14,7 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     private static boolean h = false;
     private static float i = 5.0f;
     private static float j = 0.0f;
-    private b a;
+    private FolderShortcutItem a;
     private float m;
     private float n;
     private float o;
@@ -28,7 +28,7 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     private ArrayList<a> c = new ArrayList<>();
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase f = new com.tsf.shell.f.i.b.e.DrawerItemButton();
 
-    public FolderItemGrid(b bVar) {
+    public FolderItemGrid(FolderShortcutItem bVar) {
         this.a = bVar;
         this.f.k.removeFromParent();
         this.f.parent(this);
@@ -75,11 +75,11 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public int a(float f, float f2) {
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.N.calTouchCollision(f, f2)) {
             return -3;
         }
-        j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.O.calTouchCollision(f, f2)) {
             return -4;
         }
@@ -91,26 +91,26 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public static void a(boolean z) {
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.N.a(z);
     }
 
     public static void b(boolean z) {
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.O.a(z);
     }
 
     public void b() {
         h = true;
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.N.visible(true);
-        j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         float fAlpha = com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha();
-        j jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         float fAlpha2 = fAlpha + ((255.0f - com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha()) * 0.2f);
-        j jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha(fAlpha2);
-        j jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.N.d()) {
             this.p -= i;
             i += 0.5f;
@@ -124,21 +124,21 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public void c() {
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.N.a(false);
-        j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.N.visible()) {
-            j jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             float fAlpha = com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha();
-            j jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             float fAlpha2 = fAlpha + ((0.0f - com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha()) * 0.2f);
-            j jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha(fAlpha2);
-            j jVar6 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar6 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             if (Math.abs(com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha()) < 0.5f) {
-                j jVar7 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar7 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha(0.0f);
-                j jVar8 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar8 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.N.visible(false);
             }
         }
@@ -149,15 +149,15 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
 
     public void e() {
         h = true;
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.O.visible(true);
-        j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         float fAlpha = com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha();
-        j jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         float fAlpha2 = fAlpha + ((255.0f - com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha()) * 0.2f);
-        j jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha(fAlpha2);
-        j jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.O.d()) {
             this.p += i;
             i += 0.5f;
@@ -171,21 +171,21 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     public void f() {
-        j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         com.tsf.shell.f.i.b.d.FolderItemPositioner.O.a(false);
-        j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+        FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
         if (com.tsf.shell.f.i.b.d.FolderItemPositioner.O.visible()) {
-            j jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar3 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             float fAlpha = com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha();
-            j jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar4 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             float fAlpha2 = fAlpha + ((0.0f - com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha()) * 0.2f);
-            j jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar5 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha(fAlpha2);
-            j jVar6 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+            FolderItemPositioner jVar6 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
             if (Math.abs(com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha()) < 0.5f) {
-                j jVar7 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar7 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha(0.0f);
-                j jVar8 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar8 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.O.visible(false);
             }
         }
@@ -432,9 +432,9 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
                     }
                 }
                 MatrixStack.glPopMatrix();
-                j jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.N.dispatchDraw();
-                j jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
+                FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                 com.tsf.shell.f.i.b.d.FolderItemPositioner.O.dispatchDraw();
                 onDrawEnd();
                 return;

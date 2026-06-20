@@ -4,14 +4,14 @@ import android.content.Intent;
 import com.censivn.C3DEngine.b.c.a;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.ShellCallbackInterfacectivity.tips.TipsDialogActivity;
+import com.tsf.shell.activity.tips.TipsDialogActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
-    public static c a;
+    public static TipsDialogManager a;
     public static a b;
-    private static ArrayList<LauncherAppInfo> c;
+    private static ArrayList<PreferenceToggle> c;
     private static ArrayList<Integer> d;
     private static boolean e = false;
     private static int f;
@@ -19,17 +19,17 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
 
     public static void a() {
         if (c == null) {
-            a = new c();
+            a = new TipsDialogManager();
             b = new a();
             c = new ArrayList<>();
             d = new ArrayList<>();
-            c.add(new f(1, true));
-            c.add(new f(2, true));
-            c.add(new f(5, true));
-            c.add(new f(12, true));
-            c.add(new f(13, true));
-            c.add(new f(14, true));
-            c.add(new f(6, true));
+            c.add(new PreferenceToggle(1, true));
+            c.add(new PreferenceToggle(2, true));
+            c.add(new PreferenceToggle(5, true));
+            c.add(new PreferenceToggle(12, true));
+            c.add(new PreferenceToggle(13, true));
+            c.add(new PreferenceToggle(14, true));
+            c.add(new PreferenceToggle(6, true));
             for (String str : com.tsf.shell.manager.b.ConfigManager.p().split("/")) {
                 try {
                     String[] strArrSplit = str.split(",");
@@ -73,7 +73,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
                     Intent intent = new Intent();
                     intent.setClass(com.censivn.C3DEngine.A.d(), TipsDialogActivity.class);
                     intent.putExtra("type", i);
-                    int unused = c.f = Home.b().a(intent, c.a, b.a.app_alpha_enter, b.a.app_alpha_exit);
+                    int unused = TipsDialogManager.f = Home.b().a(intent, TipsDialogManager.a, b.a.app_alpha_enter, b.a.app_alpha_exit);
                 }
             };
             if (i2 == 0) {
@@ -89,7 +89,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
         int i = 0;
         String str = "";
         while (i < size) {
-            f fVar = c.get(i);
+            PreferenceToggle fVar = c.get(i);
             String str2 = str + fVar.a + "," + (fVar.b ? "1" : "0");
             if (i != size - 1) {
                 str2 = str2 + "/";
@@ -110,7 +110,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
     public static void a(int i, boolean z, boolean z2) {
         int size = c.size();
         for (int i2 = 0; i2 < size; i2++) {
-            f fVar = c.get(i2);
+            PreferenceToggle fVar = c.get(i2);
             if (fVar.a == i) {
                 fVar.b = z;
                 if (z2) {
@@ -125,7 +125,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
     public static boolean b(int i) {
         int size = c.size();
         for (int i2 = 0; i2 < size; i2++) {
-            f fVar = c.get(i2);
+            PreferenceToggle fVar = c.get(i2);
             if (fVar.a == i) {
                 return fVar.b;
             }

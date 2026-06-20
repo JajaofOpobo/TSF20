@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.f;
 
 import com.censivn.C3DEngine.api.element.Color4;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h extends j {

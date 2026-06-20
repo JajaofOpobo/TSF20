@@ -26,9 +26,9 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderItemPositioner implements ItemStubHelper.a {
-    public static i N;
-    public static i O;
+public class FolderItemPositioner implements e.a {
+    public static FolderItemDotIndicator N;
+    public static FolderItemDotIndicator O;
     public static float P;
     public static float Q;
     public static float R;
@@ -38,14 +38,14 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     public com.censivn.C3DEngine.b.f.j F;
     public com.censivn.C3DEngine.b.f.j G;
     public com.censivn.C3DEngine.b.f.k H;
-    public h I;
+    public FolderItemIndicator I;
     public n J;
     public int K;
     public ArrayList<ThemeFolderDescription.SystemFolderChild> L;
     public com.censivn.C3DEngine.b.d.a M;
     private com.censivn.C3DEngine.b.g.d T;
     private com.censivn.C3DEngine.b.g.d U;
-    private f W;
+    private FolderItemBackground W;
     private com.tsf.shell.preference.a.a.PreferenceItemF X;
     public int a;
     public int b;
@@ -71,11 +71,6 @@ public class FolderItemPositioner implements ItemStubHelper.a {
     public float v;
     public float w;
     public float x;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
     public TextureElement a;
     private boolean V = false;
     private ThemeFolderManager Y = ThemeManager.mix.folder;
@@ -133,7 +128,7 @@ public class FolderItemPositioner implements ItemStubHelper.a {
         return true;
     }
 
-    public f e() {
+    public FolderItemBackground e() {
         return this.W;
     }
 

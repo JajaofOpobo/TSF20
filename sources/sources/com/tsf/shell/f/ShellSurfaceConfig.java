@@ -4,7 +4,7 @@ import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellSurfaceConfig {
-    private static D b;
+    private static ShellSurfaceConfig b;
     private static com.tsf.shell.manager.f.LauncherInitController c;
     private com.censivn.C3DEngine.a.a a;
 
@@ -14,13 +14,13 @@ public class ShellSurfaceConfig {
         ShellSurfaceConfig();
     }
 
-    public static d c() {
+    public static ShellSurfaceConfig c() {
         return b;
     }
 
     private void h() {
         this.a.setEGLContextClientVersion(2);
-        if (e.ai()) {
+        if (ConfigManager.ai()) {
             this.a.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
             this.a.getHolder().setFormat(-3);
         } else {
@@ -47,9 +47,9 @@ public class ShellSurfaceConfig {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f._d.1
             @Override // java.lang.Runnable
             public void run() {
-                d.this.a.onResume();
+                ShellSurfaceConfig.this.a.onResume();
                 com.censivn.C3DEngine.b.g.c.c();
-                d.c.f();
+                ShellSurfaceConfig.c.f();
             }
         };
         com.censivn.C3DEngine.A.e().j();
@@ -61,8 +61,8 @@ public class ShellSurfaceConfig {
             @Override // java.lang.Runnable
             public void run() {
                 com.censivn.C3DEngine.b.g.c.b();
-                d.c.g();
-                d.this.a.onPause();
+                ShellSurfaceConfig.c.g();
+                ShellSurfaceConfig.this.a.onPause();
             }
         };
         com.censivn.C3DEngine.A.e().j();

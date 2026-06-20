@@ -13,7 +13,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderItemSorter {
     private static int b = 800;
-    private b c;
+    private FolderShortcutItem c;
     private com.censivn.C3DEngine.b.f.j d;
     private com.tsf.shell.f.i.PageItem e;
     private int h;
@@ -34,14 +34,14 @@ public class FolderItemSorter {
     private com.censivn.C3DEngine.b.f.j f = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.1
         @Override // com.censivn.C3DEngine.b.f.i
         public void onDrawEnd() {
-            k.this.i();
+            FolderItemSorter.this.i();
         }
     };
     private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.2
         @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
         public void a(int i, KeyEvent keyEvent) {
-            if (i == 4 && k.this.t) {
-                k.this.b();
+            if (i == 4 && FolderItemSorter.this.t) {
+                FolderItemSorter.this.b();
             }
         }
 
@@ -50,7 +50,7 @@ public class FolderItemSorter {
         }
     };
 
-    public FolderItemSorter(b bVar) {
+    public FolderItemSorter(FolderShortcutItem bVar) {
         this.c = bVar;
         this.e = this.c;
     }
@@ -130,43 +130,43 @@ public class FolderItemSorter {
                 com.tsf.shell.manager.app.TaskScheduler.b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (!k.this.s) {
-                            if (k.this.u != null && k.this.e.scale().x != k.this.u.scale().x) {
+                        if (!FolderItemSorter.this.s) {
+                            if (FolderItemSorter.this.u != null && FolderItemSorter.this.e.scale().x != FolderItemSorter.this.u.scale().x) {
                                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-                                dVar.l(k.this.u.scale().x);
-                                dVar.m(k.this.u.scale().y);
-                                com.censivn.C3DEngine.b.g.c.a(k.this.e);
-                                com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar);
+                                dVar.l(FolderItemSorter.this.u.scale().x);
+                                dVar.m(FolderItemSorter.this.u.scale().y);
+                                com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e);
+                                com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e, 250, dVar);
                             }
                         } else if (!z) {
-                            if (k.this.u != null) {
-                                k.this.e.scale().setAllFrom(k.this.u.scale());
+                            if (FolderItemSorter.this.u != null) {
+                                FolderItemSorter.this.e.scale().setAllFrom(FolderItemSorter.this.u.scale());
                             }
                         } else {
                             com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
-                            if (k.this.u != null) {
-                                dVar2.l(k.this.u.scale().x);
-                                dVar2.m(k.this.u.scale().y);
+                            if (FolderItemSorter.this.u != null) {
+                                dVar2.l(FolderItemSorter.this.u.scale().x);
+                                dVar2.m(FolderItemSorter.this.u.scale().y);
                             }
-                            dVar2.e(k.this.r);
-                            com.censivn.C3DEngine.b.g.c.a(k.this.e);
-                            com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar2);
+                            dVar2.e(FolderItemSorter.this.r);
+                            com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e);
+                            com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e, 250, dVar2);
                         }
                         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
-                        k.this.e.removeFromParent();
-                        if (k.this.u != null) {
-                            ((com.censivn.C3DEngine.b.f.j) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
-                            com.tsf.shell.f.c.DrawerPanelController.a(k.this.u);
-                            k.this.u = null;
+                        FolderItemSorter.this.e.removeFromParent();
+                        if (FolderItemSorter.this.u != null) {
+                            ((com.censivn.C3DEngine.b.f.j) FolderItemSorter.this.u.parent()).replaceChild(FolderItemSorter.this.u, FolderItemSorter.this.e);
+                            com.tsf.shell.f.c.DrawerPanelController.a(FolderItemSorter.this.u);
+                            FolderItemSorter.this.u = null;
                         } else {
-                            gVarN.a(k.this.e);
+                            gVarN.a(FolderItemSorter.this.e);
                         }
-                        k.this.e.mouseSkip(false);
-                        k.this.c.o(true);
+                        FolderItemSorter.this.e.mouseSkip(false);
+                        FolderItemSorter.this.c.o(true);
                         com.tsf.shell.manager.app.TaskScheduler.b();
                         com.tsf.shell.ShellDataProvider.a().b("LineViewer");
-                        k.this.i = 0;
-                        k.this.f();
+                        FolderItemSorter.this.i = 0;
+                        FolderItemSorter.this.f();
                         com.tsf.shell.manager.app.ObserverManager.c(Home.b());
                     }
                 });
@@ -208,7 +208,7 @@ public class FolderItemSorter {
                             childAt.scale().y = 1.0f;
                         }
                     }
-                    if (this.n && i2 == 0 && x.b(childAt.position().x, childAt.position().y, fArr[0], fArr[1]) < 5.0f) {
+                    if (this.n && i2 == 0 && GraphicsEngineBridge.b(childAt.position().x, childAt.position().y, fArr[0], fArr[1]) < 5.0f) {
                         this.o = true;
                         FolderItemSorter();
                     }
@@ -231,23 +231,23 @@ public class FolderItemSorter {
             com.censivn.C3DEngine.A.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    k.this.g();
-                    k.this.n = false;
-                    k.this.f.setAnimationObjectState(true);
-                    k.this.e.addChild(k.this.f);
-                    k.this.g.clear();
-                    k.this.d = k.this.c.aF();
-                    k.this.h = k.this.d.numChildren();
-                    for (int i = 0; i < k.this.h; i++) {
-                        k.this.g.add(new float[]{0.0f, 0.0f});
+                    FolderItemSorter.this.g();
+                    FolderItemSorter.this.n = false;
+                    FolderItemSorter.this.f.setAnimationObjectState(true);
+                    FolderItemSorter.this.e.addChild(FolderItemSorter.this.f);
+                    FolderItemSorter.this.g.clear();
+                    FolderItemSorter.this.d = FolderItemSorter.this.c.aF();
+                    FolderItemSorter.this.h = FolderItemSorter.this.d.numChildren();
+                    for (int i = 0; i < FolderItemSorter.this.h; i++) {
+                        FolderItemSorter.this.g.add(new float[]{0.0f, 0.0f});
                     }
-                    k.this.i = k.this.h;
-                    Number3d number3dLocalToGlobal = k.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
-                    k.this.j = (int) (com.censivn.C3DEngine.b.b.A.H + number3dLocalToGlobal.x);
-                    k.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
-                    k.this.l = motionEvent2.getX();
-                    k.this.m = motionEvent2.getY();
-                    Iterator<com.censivn.C3DEngine.b.f.i> it = k.this.d.children().iterator();
+                    FolderItemSorter.this.i = FolderItemSorter.this.h;
+                    Number3d number3dLocalToGlobal = FolderItemSorter.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
+                    FolderItemSorter.this.j = (int) (com.censivn.C3DEngine.b.b.A.H + number3dLocalToGlobal.x);
+                    FolderItemSorter.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
+                    FolderItemSorter.this.l = motionEvent2.getX();
+                    FolderItemSorter.this.m = motionEvent2.getY();
+                    Iterator<com.censivn.C3DEngine.b.f.i> it = FolderItemSorter.this.d.children().iterator();
                     while (it.hasNext()) {
                         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) it.next();
                         bVar.alpha(255.0f);
@@ -255,7 +255,7 @@ public class FolderItemSorter {
                         bVar.g(1.0f);
                         bVar.mouseEnabled(true);
                     }
-                    k.this.a = true;
+                    FolderItemSorter.this.a = true;
                 }
             });
         }

@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterface.b;
+package com.tsf.shell.a.b;
 
 import android.app.Activity;
 import android.content.ComponentName;

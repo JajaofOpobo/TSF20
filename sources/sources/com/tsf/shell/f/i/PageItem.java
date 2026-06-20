@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.g.d;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
-import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+import com.tsf.shell.f.e.ILayoutItem;
 import com.tsf.shell.f.e.WidgetMatchResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.bind.ShellModel;
@@ -16,10 +16,10 @@ import com.tsf.shell.f.i.b.b.IItemShell;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageItem extends j implements F, b {
+public class PageItem extends j implements ILayoutItem, IItemShell {
     private ItemInfo a;
     protected com.censivn.C3DEngine.b.f.b.a _e;
-    private F j;
+    private ILayoutItem j;
     private int m;
     private com.tsf.shell.f.i.MultiSelectController q;
     private boolean r;

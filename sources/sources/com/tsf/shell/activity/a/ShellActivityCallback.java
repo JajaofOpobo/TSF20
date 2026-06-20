@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterfacectivity.a;
+package com.tsf.shell.activity.a;
 
 import android.content.Intent;
 import com.tsf.shell.Home;

@@ -1,4 +1,4 @@
-package com.tsf.shell.ShellCallbackInterfacectivity;
+package com.tsf.shell.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -30,13 +30,13 @@ public class PrimeActivity extends Activity {
         com.tsf.shell.manager.b.ConfigManager.a();
         g.a();
         com.tsf.shell.manager.app.ObserverManager = new com.censivn.C3DEngine.b.c.e(this);
-        new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.ShellCallbackInterfacectivity.PrimeActivity.1
+        new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.1
             @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
             public void b() {
                 float f = 300.0f;
                 j jVar = new j();
                 this.a.addChild(jVar);
-                k kVar = new k(f, f, false) { // from class: com.tsf.shell.ShellCallbackInterfacectivity.PrimeActivity.1.1
+                k kVar = new k(f, f, false) { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.1.1
                     @Override // com.censivn.C3DEngine.b.f.i
                     public void onDrawStart() {
                         rotation().z += 2.0f;
@@ -63,7 +63,7 @@ public class PrimeActivity extends Activity {
     @Override // android.app.Activity
     public void onResume() {
         super.onResume();
-        Runnable runnable = new Runnable() { // from class: com.tsf.shell.ShellCallbackInterfacectivity.PrimeActivity.2
+        Runnable runnable = new Runnable() { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.2
             @Override // java.lang.Runnable
             public void run() {
                 c.c();
@@ -77,7 +77,7 @@ public class PrimeActivity extends Activity {
     @Override // android.app.Activity
     public void onPause() {
         super.onPause();
-        Runnable runnable = new Runnable() { // from class: com.tsf.shell.ShellCallbackInterfacectivity.PrimeActivity.3
+        Runnable runnable = new Runnable() { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.3
             @Override // java.lang.Runnable
             public void run() {
                 c.b();

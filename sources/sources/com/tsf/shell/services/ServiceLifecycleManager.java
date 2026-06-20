@@ -11,7 +11,7 @@ public class ServiceLifecycleManager {
     private ForegroundServiceManager ForegroundServiceManager;
     private ToggleServiceConnector c;
 
-    publiServiceLifecycleManager c() {
+    public Object c() {
         ToggleServiceConnector();
     }
 

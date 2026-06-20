@@ -2,12 +2,12 @@ package com.censivn.C3DEngine.api.element.info;
 
 import android.content.ComponentName;
 import android.content.ContentValues;
-import com.tsf.shell.manager.r.a.b;
+import com.tsf.shell.manager.r.a.AppWidgetHostManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherAppWidgetInfo extends ItemInfo {
     public int appWidgetId;
-    public b mAndroidWidgetManager;
+    public AppWidgetHostManager mAndroidWidgetManager;
     public ComponentName providerName;
 
     public LauncherAppWidgetInfo(int i, ComponentName componentName) {

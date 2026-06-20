@@ -18,9 +18,9 @@ import com.tsf.shell.theme.inside.mix.menu.item.detail.ThemePreviewInfoLayout;
 import com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeWallpaperInfoLayout;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeInstalledDetailMenu extends d {
+public class ThemeInstalledDetailMenu extends MenuItemConfig {
     private boolean isShowingMoreLayout;
-    private l mApplyButton;
+    private ToggleRowItem mApplyButton;
     private j mContainer;
     private com.censivn.C3DEngine.b.b.A.b mContentContainer;
     private com.censivn.C3DEngine.b.b.A.d mDetailContainer;
@@ -66,19 +66,19 @@ public class ThemeInstalledDetailMenu extends d {
         this.mRingIcon = new com.censivn.C3DEngine.b.h.d.a(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.mRingIcon.a(b.d.ico_info);
-        this.mShortcut = new h(com.tsf.shell.manager.o.ButtonPresetManager.c);
+        this.mShortcut = new DrawerItemButton(com.tsf.shell.manager.o.ButtonPresetManager.c);
         this.mShortcut.k.a(0).m.y = 0.0f;
         this.mShortcut.k.a(0).f();
         this.mShortcut.aL();
         this.mShortcut.scale().setAll(0.43f, 0.43f, 1.0f);
         this.mContainer = new j();
-        this.mApplyButton = new l(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.1
+        this.mApplyButton = new ToggleRowItem(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
                 ThemeManager.getInstance().setTheme(ThemeInstalledDetailMenu.this.mThemeInfo.packagename);
             }
         };
-        c.a(this.mApplyButton, c.h);
+        ThemeColorConstants.a(this.mApplyButton, ThemeColorConstants.h);
         this.mNoticTextView.position().y = com.censivn.C3DEngine.b.b.A.a(45.0f);
         this.mNoticTextView.b(0);
         this.mApplyButton.a(0);

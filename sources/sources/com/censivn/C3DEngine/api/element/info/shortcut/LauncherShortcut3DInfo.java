@@ -8,10 +8,9 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
 import com.tsf.shell.manager.bind.ShellModel;
-import com.tsf.shell.manager.o.A;
 import com.tsf.shell.theme.inside.ThemeManager;
-import com.tsf.shell.utils.q;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.BitmapTransformationHelper;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class LauncherShortcut3DInfo extends ItemInfo {
@@ -59,21 +58,21 @@ public abstract class LauncherShortcut3DInfo extends ItemInfo {
                     } else {
                         Resources resourcesForApplication = com.censivn.C3DEngine.A.d().getPackageManager().getResourcesForApplication(this.iconResource.packageName);
                         if (resourcesForApplication != null) {
-                            bitmapA = x.a(resourcesForApplication, resourcesForApplication.getIdentifier(this.iconResource.resourceName, null, null));
+                            bitmapA = GraphicsEngineBridge.a(resourcesForApplication, resourcesForApplication.getIdentifier(this.iconResource.resourceName, null, null));
                         }
                     }
                 } catch (Exception e) {
                 }
                 break;
             case 2:
-                bitmapA = q.a(ShellModel.a.a(this));
+                bitmapA = BitmapTransformationHelper.a(ShellModel.a.a(this));
                 break;
         }
         if (bitmapA != null) {
-            return q.d(bitmapA, i, i2);
+            return BitmapTransformationHelper.d(bitmapA, i, i2);
         }
         if (bitmapA == null && !z) {
-            return q.d(x.a(b.d.sym_def_app_icon), i, i2);
+            return BitmapTransformationHelper.d(GraphicsEngineBridge.a(b.d.sym_def_app_icon), i, i2);
         }
         return bitmapA;
     }

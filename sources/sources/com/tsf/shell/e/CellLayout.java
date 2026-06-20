@@ -245,7 +245,7 @@ public class CellLayout extends ViewGroup {
         public int d;
         public int e;
 
-        puCellLayoutlic b(int i, int i2, int i3, int i4) {
+        public Object b(int i, int i2, int i3, int i4) {
             super(-1, -1);
             this.a = i;
             this.b = i2;

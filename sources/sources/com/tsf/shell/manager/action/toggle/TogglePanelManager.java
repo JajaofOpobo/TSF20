@@ -17,23 +17,23 @@ public class TogglePanelManager {
     public ToggleStateManager a;
     public com.tsf.shell.manager.action.toggle.a.ToggleActionWifi c;
     public com.tsf.shell.manager.action.toggle.a.ToggleActionBrightness d;
-    public e e;
+    public ToggleActionConnector e;
     public com.tsf.shell.manager.action.ActionManager f;
-    public c g;
-    public c h;
-    public c i;
-    public c j;
-    public c k;
-    public c l;
-    public c m;
-    public c n;
-    public c o;
-    public c p;
-    public c q;
+    public ToggleAction g;
+    public ToggleAction h;
+    public ToggleAction i;
+    public ToggleAction j;
+    public ToggleAction k;
+    public ToggleAction l;
+    public ToggleAction m;
+    public ToggleAction n;
+    public ToggleAction o;
+    public ToggleAction p;
+    public ToggleAction q;
     private TextureElement s = new TextureElement(0, false);
     private TextureElement t = new TextureElement(0, false);
     private ArrayList<com.tsf.shell.manager.action.ActionManager> r = new ArrayList<>();
-    public f b = new f(11000);
+    public ToggleAction b = new ToggleAction(11000);
 
     public TogglePanelManager() {
         this.r.add(this.b);
@@ -106,11 +106,11 @@ public class TogglePanelManager {
         return this.r;
     }
 
-    public void a(i iVar) {
+    public void a(Object iVar) {
         c(iVar.aV()).a(iVar);
     }
 
-    public void b(i iVar) {
+    public void b(Object iVar) {
         c(iVar.aV()).b(iVar);
     }
 

@@ -207,7 +207,7 @@ public class AppListManager {
         return false;
     }
 
-    private static f a(ArrayList<LauncherAppInfo> arrayList, ComponentName componentName) {
+    private static LauncherAppInfo a(ArrayList<LauncherAppInfo> arrayList, ComponentName componentName) {
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
             LauncherAppInfo fVar = arrayList.get(i);

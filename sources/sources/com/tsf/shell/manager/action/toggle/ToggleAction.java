@@ -9,15 +9,15 @@ import java.util.ArrayList;
 public class ToggleAction {
     public int a;
     private boolean d = false;
-    private j c = new j(this);
-    public ArrayList<i> b = new ArrayList<>();
+    private Object c = new Object();
+    public ArrayList b = new ArrayList<>();
 
     public ToggleAction(int i) {
         this.a = 0;
         this.a = i;
     }
 
-    public j a() {
+    public Object a() {
         this.d = true;
         this.c.aW();
         return this.c;
@@ -47,7 +47,7 @@ public class ToggleAction {
         this.c.c(i);
     }
 
-    public void a(i iVar) {
+    public void a(Object iVar) {
         if (!this.b.contains(iVar)) {
             this.b.add(iVar);
             if (this.b.size() == 1) {
@@ -57,7 +57,7 @@ public class ToggleAction {
         }
     }
 
-    public void b(i iVar) {
+    public void b(Object iVar) {
         this.b.remove(iVar);
         iVar.aW();
         if (this.b.isEmpty() && !this.d) {

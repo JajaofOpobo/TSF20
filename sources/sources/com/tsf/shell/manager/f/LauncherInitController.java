@@ -24,7 +24,7 @@ public class LauncherInitController extends f {
     private boolean g;
     private Object h;
 
-    publiLauncherInitController c(GLSurfaceView gLSurfaceView) {
+    public Object c(GLSurfaceView gLSurfaceView) {
         super(gLSurfaceView, "Launcher");
         this.f = false;
         this.g = true;
@@ -158,7 +158,7 @@ public class LauncherInitController extends f {
         a(null, runnable, i);
     }
 
-    public void a(b.a aVar, Runnable runnable, int i) {
+    public void a(WorkspaceScene.a aVar, Runnable runnable, int i) {
         this.g = false;
         com.tsf.shell.f.e._g.MenuOverlay.hideAll();
         com.tsf.shell.manager.app.ServiceFactory.k();

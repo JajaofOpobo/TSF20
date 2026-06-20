@@ -12,11 +12,11 @@ import android.view.WindowManager;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
 import com.tsf.shell.Home;
-import com.tsf.shell.f.f.j;
+import com.tsf.shell.f.f.PageConfig;
 import com.tsf.shell.services.LauncherAccessibilityService;
-import com.tsf.shell.utils.g;
-import com.tsf.shell.utils.m;
-import com.tsf.shell.utils.r;
+import com.tsf.shell.utils.StatusBarHelper;
+import com.tsf.shell.utils.FlurryAnalyticsLogger;
+import com.tsf.shell.utils.DimensionHelper;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -42,8 +42,8 @@ public class e {
     public e(Activity activity) {
         com.tsf.shell.manager.app.AppListManager.B = this;
         com.censivn.C3DEngine.b.b.A.b(activity);
-        com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : r.a(activity));
-        g.c();
+        com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : DimensionHelper.a(activity));
+        StatusBarHelper.c();
         if (!com.tsf.shell.manager.b.e.P()) {
             this.g_ = true;
             a(activity, true, true, true);
@@ -64,10 +64,10 @@ public class e {
         } else if (com.tsf.shell.manager.b.e.N() && e(activity) > 0) {
             a(activity, true, false);
         }
-        if (g.b()) {
+        if (StatusBarHelper.b()) {
             com.censivn.C3DEngine.b.b.A.a(activity, false);
         }
-        if (g.b()) {
+        if (StatusBarHelper.b()) {
             this.b_ = activity.getResources().getConfiguration().screenHeightDp;
             this.c = activity.getResources().getConfiguration().orientation;
         }
@@ -101,7 +101,7 @@ public class e {
                     str = str + stackTraceElement.toString() + "  '\\'";
                 }
                 map.put("error", str);
-                m.a("EVENT_ISSUSE_SET_REQUESTED_ORIENTATION", map);
+                FlurryAnalyticsLogger.a("EVENT_ISSUSE_SET_REQUESTED_ORIENTATION", map);
                 com.censivn.C3DEngine.b.b.A.N = 3;
                 return;
             }
@@ -123,7 +123,7 @@ public class e {
 
     @SuppressLint({"NewApi"})
     public boolean a(Activity activity) {
-        return (Build.VERSION.SDK_INT >= 13 ? r.a(activity, (float) activity.getResources().getConfiguration().screenHeightDp) : 0) == activity.getWindowManager().getDefaultDisplay().getHeight();
+        return (Build.VERSION.SDK_INT >= 13 ? DimensionHelper.a(activity, (float) activity.getResources().getConfiguration().screenHeightDp) : 0) == activity.getWindowManager().getDefaultDisplay().getHeight();
     }
 
     public boolean a() {
@@ -169,7 +169,7 @@ public class e {
 
     @SuppressLint({"NewApi"})
     public void a(Activity activity, Configuration configuration) {
-        if (g.b()) {
+        if (StatusBarHelper.b()) {
             if (this.b_ != configuration.screenHeightDp) {
                 this.b_ = configuration.screenHeightDp;
                 com.censivn.C3DEngine.b.b.A.a(activity, this.c == configuration.orientation);
@@ -208,7 +208,7 @@ public class e {
     public void a(Activity activity, boolean z, boolean z2) {
         this.f = z;
         if (Build.VERSION.SDK_INT >= 21) {
-            if (g.b()) {
+        if (StatusBarHelper.b()) {
                 Window window = activity.getWindow();
                 if (z) {
                     window.clearFlags(134217728);
@@ -220,7 +220,7 @@ public class e {
             }
             return;
         }
-        if (g.b()) {
+        if (StatusBarHelper.b()) {
             Window window2 = activity.getWindow();
             if (z) {
                 window2.setFlags(134217728, 134217728);
@@ -234,7 +234,7 @@ public class e {
     public static void b(Activity activity, boolean z, boolean z2) {
         if (activity != null) {
             if (Build.VERSION.SDK_INT < 21) {
-                g.a(activity, z);
+                StatusBarHelper.a(activity, z);
             }
             if (z2) {
                 com.tsf.shell.manager.b.e.c(Boolean.valueOf(z));
@@ -386,13 +386,13 @@ public class e {
     @SuppressLint({"NewApi"})
     public static int e(Activity activity) {
         int iA;
-        if (!g.b()) {
+        if (!StatusBarHelper.b()) {
             return 0;
         }
         if (activity.getResources().getConfiguration().screenHeightDp < activity.getResources().getConfiguration().screenWidthDp) {
-            iA = (com.censivn.C3DEngine.b.b.A.L - com.censivn.C3DEngine.b.b.A.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.A.L - com.censivn.C3DEngine.b.b.A.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         } else {
-            iA = (com.censivn.C3DEngine.b.b.A.M - com.censivn.C3DEngine.b.b.A.J) - r.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.A.M - com.censivn.C3DEngine.b.b.A.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         }
         if (iA < 5) {
             return 0;
@@ -401,7 +401,7 @@ public class e {
     }
 
     public void a(int i, int i2, int i3, int i4) {
-        j.a(i, i2, i3, i4);
+        PageConfig.a(i, i2, i3, i4);
         com.tsf.shell.manager.A.f.a(i, i2, i3, i4);
         Iterator<a> it = this.d.iterator();
         while (it.hasNext()) {

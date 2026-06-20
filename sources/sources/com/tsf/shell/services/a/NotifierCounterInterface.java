@@ -6,7 +6,7 @@ import android.os.IInterface;
 import android.os.Parcel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public interface a extends IInterface {
+public interface NotifierCounterInterface extends IInterface {
     int a();
 
     void a(String str, boolean z);

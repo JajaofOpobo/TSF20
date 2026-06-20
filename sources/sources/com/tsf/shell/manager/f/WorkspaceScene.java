@@ -6,6 +6,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.d;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.j;
 import com.censivn.C3DEngine.b.f.k;
 import com.tsf.shell.f.f.PageAnimationState;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
@@ -13,11 +14,11 @@ import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     public static int b = 0;
-    private j.a f;
+    private PageAnimationState.a f;
     private com.tsf.shell.f.e.b.ResizeButtonNode g;
     private d.b h;
     private a i;
-    private j.a j;
+    private PageAnimationState.a j;
     public Object a = new Object();
     private boolean d = false;
     private boolean e = false;
@@ -25,7 +26,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     private boolean l = false;
     private k c = new k(0.0f, 0.0f);
 
-    puWorkspaceScenelic b() {
+    public Object initializeScene() {
         this.c.uvs().set(0, 1.0f, 0.0f);
         this.c.uvs().set(1, 0.0f, 0.0f);
         this.c.uvs().set(2, 1.0f, 1.0f);
@@ -34,16 +35,16 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         this.h = new d.b() { // from class: com.tsf.shell.manager.f.WorkspaceScene.1
             @Override // com.censivn.C3DEngine.b.c.d.b
             public void a() {
-                if (b.this.i != null) {
-                    b.this.i.a();
+                if (WorkspaceScene.this.i != null) {
+                    WorkspaceScene.this.i.a();
                 }
             }
         };
         this.g.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.g) { // from class: com.tsf.shell.manager.f.WorkspaceScene.2
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
-                if (b.this.i != null) {
-                    b.this.i.a();
+                if (WorkspaceScene.this.i != null) {
+                    WorkspaceScene.this.i.a();
                 }
             }
         });
@@ -91,7 +92,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         this.g.a(textureElement);
     }
 
-    public void b() {
+    public void updateFrames() {
         this.f = g();
         this.g.a(this.f.b);
         this.g.a(1.0f);
@@ -142,13 +143,13 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
             a(i, new Runnable() { // from class: com.tsf.shell.manager.f.WorkspaceScene.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.d = false;
-                    b.this.f.a = null;
-                    b.this.mouseEnabled(true);
+                    WorkspaceScene.this.d = false;
+                    WorkspaceScene.this.f.a = null;
+                    WorkspaceScene.this.mouseEnabled(true);
                     com.censivn.C3DEngine.a.d.d().c().a(true);
                     com.tsf.shell.manager.app.StateHub.n().ac();
-                    com.tsf.shell.manager.app.ObserverManager.b(b.this);
-                    com.tsf.shell.manager.app.CallbackHandler.b(b.this.h);
+                    com.tsf.shell.manager.app.ObserverManager.b(WorkspaceScene.this);
+                    com.tsf.shell.manager.app.CallbackHandler.b(WorkspaceScene.this.h);
                     if (runnable != null) {
                         runnable.run();
                     }
@@ -231,8 +232,8 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         }
     }
 
-    private j.a g() {
-        j.a aVarC = com.tsf.shell.f.f.PageAnimationState.c(this.a);
+    private PageAnimationState.a g() {
+        PageAnimationState.a aVarC = com.tsf.shell.f.f.PageAnimationState.c(this.a);
         aVarC.a = this.a;
         com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.PageAnimationState.c(), aVarC.b);
         super.dispatchDraw();

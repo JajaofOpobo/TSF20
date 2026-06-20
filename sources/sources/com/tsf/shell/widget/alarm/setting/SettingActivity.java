@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.tsf.shell.ShellCallbackInterface.a.d;
+import com.tsf.shell.ShellCallbackDispatcher.a.d;
 import com.tsf.shell.widget.alarm.AlarmState;
 import com.tsf.shell.widget.alarm.AlarmResources;
 import com.tsf.shell.widget.alarm.service.AlarmServiceBinder;
@@ -38,7 +38,7 @@ public class SettingActivity extends Activity implements AlarmSettingFragment.In
     private e k;
     private Handler l;
     private final int m = 0;
-    private com.tsf.shell.ShellCallbackInterface.a.a n;
+    private com.tsf.shell.ShellCallbackDispatcher.a.a n;
 
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
@@ -50,7 +50,7 @@ public class SettingActivity extends Activity implements AlarmSettingFragment.In
     private void b() {
         this.l = new Handler();
         a = getApplicationContext();
-        this.n = new com.tsf.shell.ShellCallbackInterface.a.a(this);
+        this.n = new com.tsf.shell.ShellCallbackDispatcher.a.a(this);
         this.k = new AlarmSettingTheme(this);
         this.j = new com.tsf.shell.widget.alarm.service.AlarmServiceBinder(a);
         this.j.a(this);
@@ -259,10 +259,10 @@ public class SettingActivity extends Activity implements AlarmSettingFragment.In
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             if (i == 0) {
                 if (SettingActivity.this.a(new AlarmSettingData.b() { // from class: com.tsf.shell.widget.alarm.setting.SettingActivity.a.1
-                    @Override // com.tsf.shell.ShellCallbackInterface.a.d.b
+                    @Override // com.tsf.shell.ShellCallbackDispatcher.a.d.b
                     public void a(int i2, boolean z, AlarmSettingData.a aVar) {
                     }
-                }, true, 2, com.tsf.shell.ShellCallbackInterface.a.d.e)) {
+                }, true, 2, com.tsf.shell.ShellCallbackDispatcher.a.d.e)) {
                     SettingActivity.this.a((com.tsf.shell.widget.alarm.d.AlarmConfigEmpty) null);
                     SettingActivity.this.a(false);
                     return;

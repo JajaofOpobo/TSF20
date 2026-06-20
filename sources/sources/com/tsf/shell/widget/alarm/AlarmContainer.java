@@ -149,7 +149,7 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
                 new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (com.tsf.shell.ShellCallbackInterface.a.e.a(a.this.f)) {
+                        if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(a.this.f)) {
                             a.this.new AlarmRoundRect().start();
                             AlarmWidget.b();
                         }
@@ -224,7 +224,7 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.a.2
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.ShellCallbackInterface.a.e.a(a.this.f)) {
+                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(a.this.f)) {
                     a.this.b(z);
                 }
             }

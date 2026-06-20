@@ -10,7 +10,7 @@ import com.tsf.shell.Home;
 public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.ToggleAction {
     private static int c = 10;
 
-    puToggleActionBrightnesslic b(int i) {
+    public Object b(int i) {
         super(i);
         b(2);
         ToggleActionBrightness();
@@ -26,7 +26,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
         Home.b().runOnUiThread(new Runnable() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionBrightness.1
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.ShellCallbackInterface.a.e.a(Home.b())) {
+                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(Home.b())) {
                     switch (b.c) {
                         case 10:
                             b.d(180);
