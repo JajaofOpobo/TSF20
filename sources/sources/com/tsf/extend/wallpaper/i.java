@@ -73,8 +73,8 @@ public class i {
             if (!z) {
                 throw new IllegalArgumentException("desired width can't <=0!");
             }
-            if (options.outWidth > com.tsf.extend.base.j.p.b() * 2) {
-                i = com.tsf.extend.base.j.p.b() * 2;
+            if (options.outWidth > com.tsf.extend.base.j.StorageUtils.b() * 2) {
+                i = com.tsf.extend.base.j.StorageUtils.b() * 2;
             } else {
                 i = options.outWidth;
             }

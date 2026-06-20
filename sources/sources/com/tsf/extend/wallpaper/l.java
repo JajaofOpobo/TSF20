@@ -22,7 +22,7 @@ public class l {
 
         void a(com.tsf.extend.theme.ThemeModel kVar, float f);
 
-        void a(com.tsf.extend.theme.ThemeModel kVar, com.tsf.extend.theme.B bVar);
+        void a(com.tsf.extend.theme.ThemeModel kVar, com.tsf.extend.theme.DiyWallpaperProvider bVar);
 
         void b(com.tsf.extend.theme.ThemeModel kVar);
 
@@ -92,7 +92,7 @@ public class l {
     }
 
     public void b(final com.tsf.extend.theme.ThemeModel kVar) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.1
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.1
             @Override // java.lang.Runnable
             public void run() {
                 l.this.d.add(kVar);
@@ -108,7 +108,7 @@ public class l {
     }
 
     public void a(final com.tsf.extend.theme.ThemeModel kVar, final float f) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.2
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.2
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = l.this.c.iterator();
@@ -122,8 +122,8 @@ public class l {
         });
     }
 
-    public void a(final com.tsf.extend.theme.ThemeModel kVar, final com.tsf.extend.theme.B bVar) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.3
+    public void a(final com.tsf.extend.theme.ThemeModel kVar, final com.tsf.extend.theme.DiyWallpaperProvider bVar) {
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.3
             @Override // java.lang.Runnable
             public void run() {
                 ao.b().h();
@@ -141,7 +141,7 @@ public class l {
     }
 
     public void c(final com.tsf.extend.theme.ThemeModel kVar) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.4
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.4
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = l.this.c.iterator();
@@ -158,7 +158,7 @@ public class l {
     }
 
     public void d(final com.tsf.extend.theme.ThemeModel kVar) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.5
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.5
             @Override // java.lang.Runnable
             public void run() {
                 Iterator it = l.this.c.iterator();

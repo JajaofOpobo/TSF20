@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

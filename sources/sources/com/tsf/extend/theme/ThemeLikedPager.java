@@ -53,7 +53,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
             @Override // java.lang.Runnable
             public void run() throws Throwable {
                 final List<ThemeModel> listA = e.a().a(ThemeLikedPager.this.getContext());
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeLikedPager.1.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeLikedPager.1.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (listA != null && listA.size() > 0) {
@@ -104,7 +104,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         this.i = (TextView) findViewById(ResourceIds.e.title);
         this.i.setText(ResourceIds.g.wallpaper_mine_favorite);
         this.i.setOnClickListener(this);
-        Bitmap bitmapA = com.tsf.extend.base.j.e.a(getContext());
+        Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(getContext());
         this.j.setSoundEffectsEnabled(true);
         this.i.setSoundEffectsEnabled(true);
         if (bitmapA != null) {
@@ -112,9 +112,9 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         } else {
             ((ImageView) findViewById(ResourceIds.e.like_theme_image)).setImageResource(ResourceIds.d.wallpaper_favorite_btn);
         }
-        com.tsf.extend.base.j.z.a(1, this.p);
+        com.tsf.extend.base.j.HandlerUtils.a(1, this.p);
         a("1", "DefaultLike");
-        setPadding(0, getPaddingTop(), 0, com.tsf.extend.base.j.p.c(getContext()));
+        setPadding(0, getPaddingTop(), 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity.a

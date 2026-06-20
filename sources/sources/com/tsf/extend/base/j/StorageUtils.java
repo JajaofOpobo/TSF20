@@ -87,7 +87,7 @@ public class StorageUtils {
         }
         if (d() >= 14) {
             try {
-                return "mounted".equals((String) __w__.a("getVolumeState", (StorageManager) context.getSystemService("storage"), String.class, new Class[]{String.class}, new Object[]{str}));
+                return "mounted".equals((String) ReflectUtils.a("getVolumeState", (StorageManager) context.getSystemService("storage"), String.class, new Class[]{String.class}, new Object[]{str}));
             } catch (IllegalArgumentException e2) {
                 return false;
             }
@@ -108,7 +108,7 @@ public class StorageUtils {
         if (e != Integer.MIN_VALUE) {
             return e;
         }
-        synchronized (__p__.class) {
+        synchronized (StorageUtils.class) {
             if (e == Integer.MIN_VALUE) {
                 e = e(context);
             }

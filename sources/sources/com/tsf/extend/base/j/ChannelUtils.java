@@ -15,7 +15,7 @@ public class ChannelUtils {
 
     public static String a(Context context) {
         if (!a) {
-            synchronized (__c__.class) {
+            synchronized (ChannelUtils.class) {
                 if (!a) {
                     c(context);
                 }

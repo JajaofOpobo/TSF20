@@ -27,7 +27,7 @@ public class BaseDialog extends Dialog {
         a(attributes);
         getWindow().setAttributes(attributes);
         getWindow().addFlags(2);
-        if (com.tsf.extend.base.j.d.a(context)) {
+        if (com.tsf.extend.base.j.AppEnvUtils.a(context)) {
             d = 0.6f;
             e = 0.7f;
         }

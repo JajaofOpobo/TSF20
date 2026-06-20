@@ -44,7 +44,7 @@ public class ThemeDetailHeaderView extends FrameLayout implements View.OnClickLi
         this.d.setBackgroundColor(-1);
         this.d.setAdapter(this.e);
         addView(this.d, new FrameLayout.LayoutParams(-1, -1));
-        setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
+        setPadding(0, 0, 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
     }
 
     private class B extends com.tsf.extend.base.support.PagerAdapterCompat {
@@ -72,7 +72,7 @@ public class ThemeDetailHeaderView extends FrameLayout implements View.OnClickLi
             themeImageView.setBackgroundResource(ResourceIds.d.hourglass);
             ab.this.b.add(themeImageView);
             if (ab.this.i) {
-                v.h().a(((Integer) ab.this.ResourceIds.get(i)).intValue(), ab.this.k, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.1
+                ThemeDataProvider.h().a(((Integer) ab.this.ResourceIds.get(i)).intValue(), ab.this.k, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.1
                     @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar) {
                         if (themeImageView != null && bVar != null) {
@@ -85,7 +85,7 @@ public class ThemeDetailHeaderView extends FrameLayout implements View.OnClickLi
                     }
                 }, 0);
             } else if (ab.this.j) {
-                v.h().a(ab.this.k, ab.this.g, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.2
+                ThemeDataProvider.h().a(ab.this.k, ab.this.g, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.2
                     @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar) {
                         if (themeImageView != null && bVar != null) {
@@ -100,7 +100,7 @@ public class ThemeDetailHeaderView extends FrameLayout implements View.OnClickLi
             } else {
                 String str = (String) ab.this.h.get(i);
                 themeImageView.setTag(str);
-                v.h().c(str, this.b);
+                ThemeDataProvider.h().c(str, this.b);
             }
             themeImageView.setOnClickListener(ab.this);
             themeImageView.setSoundEffectsEnabled(true);

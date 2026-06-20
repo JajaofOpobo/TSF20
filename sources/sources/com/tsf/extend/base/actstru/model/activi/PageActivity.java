@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 import com.tsf.extend.base.c.ServiceBinderA;
-import com.tsf.extend.base.j.g;
+import com.tsf.extend.base.j.DeviceUtils;
 import com.tsf.extend.wallpaper.WallpaperOnLineActivity;
 import java.util.Stack;
 

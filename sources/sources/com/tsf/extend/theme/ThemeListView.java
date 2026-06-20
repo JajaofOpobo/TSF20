@@ -112,7 +112,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
                     return;
                 }
                 m.this.o = m.this.new A(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
-                v.h().a(m.this.getCurrentDataType(), m.this.o, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, (JSONObject) null);
+                ThemeDataProvider.h().a(m.this.getCurrentDataType(), m.this.o, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, (JSONObject) null);
             }
 
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
@@ -130,7 +130,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
             this.q.setColor(ThemeElementType.PARSER_CONFIG_ALL);
         }
         this.b.setDivider(null);
-        com.tsf.extend.base.b.PagedListModel aVar = v.h().d().get(getCurrentDataType());
+        com.tsf.extend.base.b.PagedListModel aVar = ThemeDataProvider.h().d().get(getCurrentDataType());
         if (aVar != null && aVar.a() != null) {
             this.z = false;
             this.e = aVar.b();
@@ -148,7 +148,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     public void b() {
         this.w = System.currentTimeMillis();
         this.o = new A(com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
-        v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
+        ThemeDataProvider.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
     }
 
     private String getSecondtab() {
@@ -169,7 +169,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         if (this.g != null && this.g.size() > 0) {
             this.p = new A(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
             this.w = System.currentTimeMillis();
-            v.h().a(getCurrentDataType(), this.p, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, (JSONObject) null);
+            ThemeDataProvider.h().a(getCurrentDataType(), this.p, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, (JSONObject) null);
         }
     }
 
@@ -209,7 +209,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
             this.c.setVisibility(8);
             this.o = new A(com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
             this.w = System.currentTimeMillis();
-            v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
+            ThemeDataProvider.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
         } else if (id == ResourceIds.e.theme_item_download_layout_left) {
             if (ao.b().g()) {
                 c(view);
@@ -244,7 +244,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, final List<ThemeModel> list) {
         if (list != null) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.2
                 @Override // java.lang.Runnable
                 public void run() {
                     String strF;
@@ -262,7 +262,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
                                     kVar3.d(false);
                                 }
                                 for (k kVar4 : list) {
-                                    if (kVar4 == null || (kVar4 instanceof aq)) {
+                                    if (kVar4 == null || (kVar4 instanceof AbstractThemeProvider)) {
                                         if (!(kVar4 instanceof b)) {
                                             strF = null;
                                         } else {
@@ -301,7 +301,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         if (!kVar.v()) {
             this.a.a(false);
             x.a(getContext(), kVar.k(), "tsf_theme_center_theme");
-            v.h().b(kVar.h());
+            ThemeDataProvider.h().b(kVar.h());
             if (this.y.equals("new")) {
             }
             e(kVar);
@@ -366,7 +366,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.n
     public void a(String str, PersonalizationActivity.n.a aVar) {
         if (aVar != null) {
-            v.h().a(this);
+            ThemeDataProvider.h().a(this);
         }
     }
 
@@ -382,7 +382,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
             if (aVar == null) {
                 a(jSONObject, 0, (com.tsf.extend.base.b.PagedListModel) null);
             } else {
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.a.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.a.1
                     @Override // java.lang.Runnable
                     public void run() {
                         boolean zA;
@@ -409,7 +409,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
                                 zA = m.this.a(pVar.a());
                             }
                             if (zA && !m.this.x) {
-                                v.h().a(m.this);
+                                ThemeDataProvider.h().a(m.this);
                             }
                             m.this.a(true, 0, System.currentTimeMillis() - m.this.w);
                         }
@@ -420,7 +420,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final int i, final com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.a.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.a.2
                 @Override // java.lang.Runnable
                 public void run() {
                     m.this.k = 0;
@@ -449,7 +449,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         } else {
             j2 = 200 - jCurrentTimeMillis;
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.3
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.3
             @Override // java.lang.Runnable
             public void run() {
                 m.this.b.j();
@@ -485,8 +485,8 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         String strF = ((PersonalizationActivity) this.a).f();
         if (strF != null && strF.startsWith("DIY://")) {
             for (ThemeModel kVar : list) {
-                if (kVar instanceof aq) {
-                    if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
+                if (kVar instanceof AbstractThemeProvider) {
+                    if (!TextUtils.isEmpty(strF) && strF.contains(((AbstractThemeProvider) kVar).I())) {
                         kVar.b(true);
                     } else {
                         kVar.b(false);
@@ -552,7 +552,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
 
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.b
     public void a(final String str) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.4
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeListView.4
             /* JADX WARN: Removed duplicated region for block: B:29:0x005c A[SYNTHETIC] */
             /* JADX WARN: Removed duplicated region for block: B:34:0x001a A[SYNTHETIC] */
             @Override // java.lang.Runnable

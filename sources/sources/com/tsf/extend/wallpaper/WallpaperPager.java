@@ -74,7 +74,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
                     e.printStackTrace();
                 }
                 if (UploadWallpaperService.c.values()[iA] == UploadWallpaperService.c.idle) {
-                    com.tsf.extend.base.j.n.a(WallpaperPager.this.h, 2);
+                    com.tsf.extend.base.j.BrowserUtils.a(WallpaperPager.this.h, 2);
                 } else {
                     Toast.makeText(WallpaperPager.this.getContext(), ResourceIds.g.wallpaper_upload_alread_uploading, 1).show();
                 }
@@ -123,7 +123,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 if (ag.a().d()) {
-                    com.tsf.extend.base.j.n.a(WallpaperPager.this.h, 2);
+                    com.tsf.extend.base.j.BrowserUtils.a(WallpaperPager.this.h, 2);
                     return;
                 }
                 final com.tsf.extend.base.view.c cVar = new com.tsf.extend.base.view.c(WallpaperPager.this.getContext(), -2);
@@ -133,7 +133,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
                     public void onClick(View view2) {
                         cVar.dismiss();
                         ag.a().c();
-                        com.tsf.extend.base.j.n.a(WallpaperPager.this.h, 2);
+                        com.tsf.extend.base.j.BrowserUtils.a(WallpaperPager.this.h, 2);
                     }
                 }, null, ResourceIds.d.wallpaper_upload_dialog_title_bg);
                 cVar.show();

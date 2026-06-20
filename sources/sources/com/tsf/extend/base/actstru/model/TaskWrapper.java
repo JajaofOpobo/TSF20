@@ -1,19 +1,19 @@
 package com.tsf.extend.base.actstru.model;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b<T> extends j {
+public class TaskWrapper<T> extends Task {
     protected T a;
-    protected g<T> b;
+    protected TaskHandler<T> b;
 
-    public b(T t, g<T> gVar) {
+    public TaskWrapper(T t, TaskHandler<T> gVar) {
         this.a = null;
         this.b = null;
         this.a = t;
         this.b = gVar;
     }
 
-    @Override // com.tsf.extend.base.actstru.model.j
-    public d a() {
+    @Override // com.tsf.extend.base.actstru.model.Task
+    public EventData a() {
         return this.b.a(this.a);
     }
 }

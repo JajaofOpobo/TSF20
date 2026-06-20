@@ -20,13 +20,13 @@ import java.io.FileNotFoundException;
 public class WallpaperOnLineActivity extends PageActivity {
     public static final String[] e = {"1610", "1612", "1608", "1609"};
     private WallpaperOnLinePager f;
-    private com.tsf.extend.theme.o g;
+    private com.tsf.extend.theme.ThemeLoadingDialog g;
     private String h = null;
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity, com.tsf.extend.base.actstru.model.EventBasedActivity, android.app.Activity
     protected void onCreate(Bundle bundle) {
         this.h = getIntent().getStringExtra("DIY_PAGE_FROM");
-        com.tsf.extend.base.j.p.a((Activity) this);
+        com.tsf.extend.base.j.StorageUtils.a((Activity) this);
         z.h();
         super.onCreate(bundle);
         this.f = (WallpaperOnLinePager) LayoutInflater.from(this).inflate(ResourceIds.C0052f.activity_wallpaper_online, (ViewGroup) null);
@@ -51,7 +51,7 @@ public class WallpaperOnLineActivity extends PageActivity {
 
     public void a(final String str, final m mVar) {
         e();
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperOnLineActivity.2
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperOnLineActivity.2
             @Override // java.lang.Runnable
             public void run() throws Throwable {
                 boolean z;
@@ -65,7 +65,7 @@ public class WallpaperOnLineActivity extends PageActivity {
                     if (!file.exists()) {
                         file.mkdirs();
                     }
-                    final File file2 = new File(file, com.tsf.extend.base.j.r.a(str));
+                    final File file2 = new File(file, com.tsf.extend.base.j.MD5Utils.a(str));
                     if (!WallpaperOnLineActivity.this.a(file2)) {
                         b.a aVarA = z.h().e().d().a(str);
                         if (aVarA == null || !WallpaperOnLineActivity.this.a(aVarA.a)) {
@@ -112,7 +112,7 @@ public class WallpaperOnLineActivity extends PageActivity {
 
     private void e() {
         f();
-        this.g = new com.tsf.extend.theme.o(this);
+        this.g = new com.tsf.extend.theme.ThemeLoadingDialog(this);
         this.g.a("");
         try {
             this.g.show();

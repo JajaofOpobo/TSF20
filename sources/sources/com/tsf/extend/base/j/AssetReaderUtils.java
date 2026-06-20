@@ -147,13 +147,13 @@ public class AssetReaderUtils {
         }
 
         public boolean a(String str) {
-            return this.c != null ? this.__c__.equals(str) : this.__b__.getPackageName().equals(str);
+            return this.c != null ? this.c.equals(str) : this.b.getPackageName().equals(str);
         }
 
         public String a() {
             String str = this.c;
             if (str == null && this.b != null) {
-                return this.__b__.getPackageName();
+                return this.b.getPackageName();
             }
             return str;
         }

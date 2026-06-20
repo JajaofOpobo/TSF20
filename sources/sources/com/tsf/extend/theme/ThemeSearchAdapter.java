@@ -29,7 +29,7 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
         super(context, list, onClickListener);
         this.r = 0;
         this.s = Lists.newArrayList();
-        int iB = com.tsf.extend.base.j.p.b();
+        int iB = com.tsf.extend.base.j.StorageUtils.b();
         n = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_ball_size);
         o = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_ball_margin);
         p = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_lable_height);
@@ -77,7 +77,7 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
                     childAt.setOnClickListener(this.c);
                     childAt.setVisibility(0);
                     childAt.setTag(bVarA.d().get(i2));
-                    v.h().c(bVarA.d().get(i2).u(), this.d);
+                    ThemeDataProvider.h().c(bVarA.d().get(i2).u(), this.d);
                 } else if (childAt != null) {
                     childAt.setVisibility(4);
                 }
@@ -87,12 +87,12 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
             bVar.a.setVisibility(4);
             bVar.d.setTag(bVarA.a);
             bVar.e.setImageBitmap(null);
-            v.h().a(bVarA.a.u(), (View) null, this.d, q, p);
+            ThemeDataProvider.h().a(bVarA.a.u(), (View) null, this.d, q, p);
             if (bVarA.c != null) {
                 bVar.g.setVisibility(0);
                 bVar.g.setTag(bVarA.c);
                 bVar.h.setImageBitmap(null);
-                v.h().a(bVarA.c.u(), (View) null, this.d, q, p);
+                ThemeDataProvider.h().a(bVarA.c.u(), (View) null, this.d, q, p);
             } else {
                 bVar.g.setVisibility(4);
             }

@@ -2,7 +2,7 @@ package com.tsf.extend.theme.c;
 
 import android.content.Context;
 import android.text.TextUtils;
-import com.tsf.extend.base.j.p;
+import com.tsf.extend.base.j.StorageUtils;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

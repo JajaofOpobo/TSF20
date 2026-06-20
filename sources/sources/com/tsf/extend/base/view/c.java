@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.tsf.extend.base.j.p;
+import com.tsf.extend.base.j.StorageUtils;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.BaseDialog;
 

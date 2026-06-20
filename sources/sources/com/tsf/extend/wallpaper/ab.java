@@ -145,8 +145,8 @@ public class ab {
         try {
             PictureDrawable pictureDrawableA = b(context, i).a();
             pictureDrawableA.setBounds(0, 0, pictureDrawableA.getIntrinsicWidth(), pictureDrawableA.getIntrinsicHeight());
-            int iA = com.tsf.extend.base.j.j.a(context);
-            int iB = com.tsf.extend.base.j.j.b(context);
+            int iA = com.tsf.extend.base.j.ScreenUtils.a(context);
+            int iB = com.tsf.extend.base.j.ScreenUtils.b(context);
             float intrinsicHeight = iB / pictureDrawableA.getIntrinsicHeight();
             float intrinsicWidth = (iA * 2.0f) / pictureDrawableA.getIntrinsicWidth();
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iA * 2, iB, Bitmap.Config.ARGB_8888);
@@ -168,8 +168,8 @@ public class ab {
         try {
             PictureDrawable pictureDrawableA = b(context, i).a();
             pictureDrawableA.setBounds(0, 0, pictureDrawableA.getIntrinsicWidth(), pictureDrawableA.getIntrinsicHeight());
-            float fB = com.tsf.extend.base.j.j.b(context) / f;
-            float fA = com.tsf.extend.base.j.j.a(context) / f;
+            float fB = com.tsf.extend.base.j.ScreenUtils.b(context) / f;
+            float fA = com.tsf.extend.base.j.ScreenUtils.a(context) / f;
             float intrinsicHeight = fB / pictureDrawableA.getIntrinsicHeight();
             float intrinsicWidth = (2.0f * fA) / pictureDrawableA.getIntrinsicWidth();
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(((int) fA) * 2, (int) fB, Bitmap.Config.ARGB_8888);

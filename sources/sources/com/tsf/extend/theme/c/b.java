@@ -42,6 +42,6 @@ public class b extends ThemeBaseAdapter {
 
     @Override // com.tsf.extend.theme.ThemeBaseAdapter
     protected int d() {
-        return com.tsf.extend.base.j.i.a(42.0f);
+        return com.tsf.extend.base.j.DisplayUtils.a(42.0f);
     }
 }

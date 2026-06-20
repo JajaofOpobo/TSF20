@@ -43,11 +43,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.BaseDataProvider;
-import com.tsf.extend.base.j.p;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.StorageUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.diy.b;
 import com.tsf.extend.theme.diy.d;
@@ -112,7 +112,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     private FrameLayout q;
     private FrameLayout r;
     private ImageView s;
-    private com.tsf.extend.theme.o t;
+    private com.tsf.extend.theme.ThemeLoadingDialog t;
     private k u;
     private View v;
     private d w;
@@ -233,9 +233,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         this.y = new b();
         this.d = (TextView) findViewById(ResourceIds.e.title);
         this.d.setOnClickListener(this);
-        int iA = com.tsf.extend.base.j.i.a(64.0f);
+        int iA = com.tsf.extend.base.j.DisplayUtils.a(64.0f);
         View view = new View(this);
-        view.setLayoutParams(new AbsListView.LayoutParams(-1, com.tsf.extend.base.j.i.a(22.0f) + iA));
+        view.setLayoutParams(new AbsListView.LayoutParams(-1, com.tsf.extend.base.j.DisplayUtils.a(22.0f) + iA));
         this.e = findViewById(ResourceIds.e.icons_chooser_panel);
         this.e.setOnClickListener(this);
         this.f = (ListView) findViewById(ResourceIds.e.gridview);
@@ -377,7 +377,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 if (r3 == 0) goto Lb7
                 boolean r0 = r3.exists()
                 if (r0 == 0) goto Lb7
-                int r0 = com.tsf.extend.base.j.i.d()
+                int r0 = com.tsf.extend.base.j.DisplayUtils.d()
                 if (r0 > r1) goto L36
                 r0 = r1
             L1c:
@@ -409,11 +409,11 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 android.app.WallpaperManager r0 = android.app.WallpaperManager.getInstance(r0)
                 android.app.WallpaperInfo r4 = r0.getWallpaperInfo()
                 if (r4 != 0) goto Lb5
-                android.graphics.Bitmap r0 = com.tsf.extend.base.j.d.b(r0)
+                android.graphics.Bitmap r0 = com.tsf.extend.base.j.AppEnvUtils.b(r0)
                 r3 = r6
             L50:
                 if (r0 != 0) goto Lb3
-                int r0 = com.tsf.extend.base.j.i.d()
+                int r0 = com.tsf.extend.base.j.DisplayUtils.d()
                 if (r0 > r1) goto Lb1
                 android.graphics.BitmapFactory$Options r0 = new android.graphics.BitmapFactory$Options
                 r0.<init>()
@@ -447,7 +447,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 android.graphics.Bitmap$Config r5 = android.graphics.Bitmap.Config.ARGB_8888
                 if (r8 == r6) goto Lad
             L92:
-                android.graphics.Bitmap r0 = com.tsf.extend.base.j.e.a(r0, r1, r2, r3, r4, r5, r6)
+                android.graphics.Bitmap r0 = com.tsf.extend.base.j.BitmapUtils.a(r0, r1, r2, r3, r4, r5, r6)
                 java.lang.Integer r1 = java.lang.Integer.valueOf(r8)
                 android.util.Pair r2 = android.util.Pair.create(r0, r1)
                 goto L35
@@ -493,13 +493,13 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 ThemeDIYActivity.this.y.c = (Bitmap) pair.first;
                 ThemeDIYActivity.this.y.a = ((Integer) pair.second).intValue();
                 ThemeDIYActivity.this.a(ThemeDIYActivity.this.r, a.SET_WALLPAER);
-                if (com.tsf.extend.base.j.i.d() <= 540) {
+                if (com.tsf.extend.base.j.DisplayUtils.d() <= 540) {
                     options = new BitmapFactory.Options();
                     options.inSampleSize = 2;
                 } else {
                     options = null;
                 }
-                Bitmap bitmapA = v.h().a(ThemeDIYActivity.this, options);
+                Bitmap bitmapA = ThemeDataProvider.h().a(ThemeDIYActivity.this, options);
                 if (bitmapA != null) {
                     ThemeDIYActivity.this.y.d = bitmapA;
                     ThemeDIYActivity.this.a(ThemeDIYActivity.this.r, a.SET_THEME);
@@ -510,7 +510,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                         str = "http://img.launcher.ksmobile.com/diy/diy_theme_default_3d.png";
                     }
                     ThemeDIYActivity.this.aj = new com.tsf.extend.theme.diy.d(ThemeDIYActivity.this);
-                    v.h().a(str, ThemeDIYActivity.this.aj);
+                    ThemeDataProvider.h().a(str, ThemeDIYActivity.this.aj);
                 }
             } catch (Throwable th) {
             }
@@ -773,7 +773,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 }
                 jSONObject.put("upload_wallpaper_data", jSONObject2);
                 String string = jSONObject2.getString("wallpaper_uri");
-                Bitmap bitmapA = com.tsf.extend.theme.j.a(getBaseContext(), jSONObject2.optString("upload_icon_path"));
+                Bitmap bitmapA = com.tsf.extend.theme.ThemeShareHandler.a(getBaseContext(), jSONObject2.optString("upload_icon_path"));
                 try {
                     this.A.a("");
                 } catch (Exception e2) {
@@ -818,7 +818,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.w = new d(aqVar);
             Iterator<String> it = listE.iterator();
             while (it.hasNext()) {
-                v.h().c(it.next(), this.w);
+                ThemeDataProvider.h().c(it.next(), this.w);
             }
         }
     }
@@ -869,7 +869,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     private void h() {
         if (this.y.d == null && (this.o == null || TextUtils.isEmpty(this.o.d()))) {
-            this.n.a(0, (aq) null);
+            this.n.a(0, (AbstractThemeProvider) null);
             return;
         }
         b(getResources().getString(ResourceIds.g.theme_diy_generating));
@@ -877,14 +877,14 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.j.post(new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.11
                 @Override // java.lang.Runnable
                 public void run() throws Throwable {
-                    com.tsf.extend.theme.B bVar = new com.tsf.extend.theme.B();
+                    com.tsf.extend.theme.DiyWallpaperProvider bVar = new com.tsf.extend.theme.DiyWallpaperProvider();
                     bVar.f(true);
                     File fileG = bVar.g(ThemeDIYActivity.this);
                     if (fileG == null) {
-                        ThemeDIYActivity.this.n.a(0, (aq) null);
+                        ThemeDIYActivity.this.n.a(0, (AbstractThemeProvider) null);
                     } else {
                         com.tsf.extend.theme.diy.e.a(fileG.getAbsolutePath() + File.separator + "diy.config", "isLocalDiy", (Object) true);
-                        ThemeDIYActivity.this.n.a((aq) bVar);
+                        ThemeDIYActivity.this.n.a((AbstractThemeProvider) bVar);
                     }
                 }
             });
@@ -930,7 +930,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     protected void onDestroy() {
         this.au.removeCallbacksAndMessages(null);
         com.tsf.extend.theme.diy.c.a().b();
-        v.h().c();
+        ThemeDataProvider.h().c();
         if (this.C != null) {
             this.C.a();
             this.C = null;
@@ -971,7 +971,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             if (intent != null) {
                 Uri data = intent.getData();
                 if (data != null) {
-                    this.ao = com.tsf.extend.base.j.e.c(this, data);
+                    this.ao = com.tsf.extend.base.j.BitmapUtils.c(this, data);
                     this.ap = i2 == 1 ? o.FROM_ONLINE : o.FROM_ALUME;
                     if (i2 == 1) {
                         this.ak = intent.getStringExtra("wallpaper_id");
@@ -984,7 +984,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                         this.am = null;
                         this.an = null;
                     }
-                    if (this.y.c != null && com.tsf.extend.base.j.i.d() <= 540) {
+                    if (this.y.c != null && com.tsf.extend.base.j.DisplayUtils.d() <= 540) {
                         this.y.c.recycle();
                         this.y.c = null;
                         a(this.r, a.SET_WALLPAER);
@@ -997,7 +997,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                         @Override // java.lang.Runnable
                         public void run() {
                             try {
-                                int i4 = com.tsf.extend.base.j.i.d() > 540 ? (int) ThemeDIYActivity.b : 540;
+                                int i4 = com.tsf.extend.base.j.DisplayUtils.d() > 540 ? (int) ThemeDIYActivity.b : 540;
                                 ThemeDIYActivity.this.y.c = ThemeDIYActivity.a(ThemeDIYActivity.this, ThemeDIYActivity.this.ao, i4, (int) (i4 / ThemeDIYActivity.a), true);
                                 ThemeDIYActivity.this.runOnUiThread(new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.13.1
                                     @Override // java.lang.Runnable
@@ -1076,7 +1076,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.v.setVisibility(8);
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.q.getLayoutParams();
             layoutParams.bottomMargin = 0;
-            layoutParams.topMargin = com.tsf.extend.base.j.i.a(20.0f);
+            layoutParams.topMargin = com.tsf.extend.base.j.DisplayUtils.a(20.0f);
             this.q.setLayoutParams(layoutParams);
         }
         switch (iVar) {
@@ -1141,7 +1141,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     public void a(MotionEvent motionEvent) {
         float y = motionEvent.getY() - this.ab;
-        float fA = com.tsf.extend.base.j.i.a(5.0f);
+        float fA = com.tsf.extend.base.j.DisplayUtils.a(5.0f);
         if ((y > fA && this.ad) || (y < (-fA) && this.ac)) {
             if (this.ac) {
                 k();
@@ -1208,7 +1208,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         InputStream inputStream;
         InputStream inputStreamOpenInputStream2;
         Throwable th;
-        int iA = com.tsf.extend.base.j.e.a(context, uri);
+        int iA = com.tsf.extend.base.j.BitmapUtils.a(context, uri);
         boolean z2 = (iA == 0 || (iA / 90) % 2 == 0) ? false : true;
         try {
             if ("content".equals(uri.getScheme()) || "file".equals(uri.getScheme())) {
@@ -1227,7 +1227,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
                 options2.inJustDecodeBounds = true;
                 BitmapFactory.decodeStream(inputStreamOpenInputStream, null, options2);
-                int iA2 = com.tsf.extend.base.j.e.a(options2, z2 ? i3 : i2, z2 ? i2 : i3);
+                int iA2 = com.tsf.extend.base.j.BitmapUtils.a(options2, z2 ? i3 : i2, z2 ? i2 : i3);
                 BitmapFactory.Options options3 = new BitmapFactory.Options();
                 options3.inSampleSize = iA2;
                 options3.inJustDecodeBounds = false;
@@ -1260,7 +1260,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
         try {
             Bitmap bitmapDecodeStream = BitmapFactory.decodeStream(inputStreamOpenInputStream2, null, options);
-            Bitmap bitmapA = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i2, i3, iA, ((float) bitmapDecodeStream.getWidth()) / ((float) bitmapDecodeStream.getHeight()) > ((float) p.b()) / ((float) p.c()) ? 17 : 48, Bitmap.Config.ARGB_8888, true);
+            Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i2, i3, iA, ((float) bitmapDecodeStream.getWidth()) / ((float) bitmapDecodeStream.getHeight()) > ((float) p.b()) / ((float) p.c()) ? 17 : 48, Bitmap.Config.ARGB_8888, true);
             inputStreamOpenInputStream2.close();
             return bitmapA;
         } catch (Throwable th4) {
@@ -1280,7 +1280,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     public void a(ViewGroup viewGroup, a aVar) {
         ImageView imageView = (ImageView) viewGroup.findViewById(ResourceIds.e.theme_diy_wallpaper_iv);
         if (aVar == a.SET_WALLPAER) {
-            com.tsf.extend.base.j.b.a(imageView, new BitmapDrawable(getResources(), this.y.c));
+            com.tsf.extend.base.j.ViewCompatUtils.a(imageView, new BitmapDrawable(getResources(), this.y.c));
         } else if (aVar == a.SET_THEME) {
             imageView.setImageDrawable(new BitmapDrawable(getResources(), this.y.d));
         }
@@ -1593,18 +1593,18 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                                     if (ThemeDIYActivity.this.y.a == 2) {
                                         File fileY = ThemeDIYActivity.this.y();
                                         if (fileY != null) {
-                                            com.tsf.extend.base.j.l.a(fileY.getAbsolutePath(), fileA.getAbsolutePath());
+                                            com.tsf.extend.base.j.FileIOUtils.a(fileY.getAbsolutePath(), fileA.getAbsolutePath());
                                         } else {
                                             return;
                                         }
                                     } else {
-                                        com.tsf.extend.base.j.l.a(com.tsf.extend.theme.diy.e.b(ThemeDIYActivity.this).getAbsolutePath() + File.separator + "temp_1width_wallpaper", fileA.getAbsolutePath());
+                                        com.tsf.extend.base.j.FileIOUtils.a(com.tsf.extend.theme.diy.e.b(ThemeDIYActivity.this).getAbsolutePath() + File.separator + "temp_1width_wallpaper", fileA.getAbsolutePath());
                                     }
                                 } else {
                                     v.a(fileA, ab.a(ThemeDIYActivity.this, null, false, false, 0));
                                 }
                             } else {
-                                v.a(fileA, com.tsf.extend.base.j.d.b(WallpaperManager.getInstance(ThemeDIYActivity.this)));
+                                v.a(fileA, com.tsf.extend.base.j.AppEnvUtils.b(WallpaperManager.getInstance(ThemeDIYActivity.this)));
                             }
                         }
                         ThemeDIYActivity.this.b(aqVar);
@@ -1693,7 +1693,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.t.a(str);
             return;
         }
-        this.t = new com.tsf.extend.theme.o(this);
+        this.t = new com.tsf.extend.theme.ThemeLoadingDialog(this);
         this.t.a(str);
         this.t.show();
     }
@@ -1785,9 +1785,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.W = this.x.getHeight();
         }
         if (z) {
-            layoutParams.height = this.W + com.tsf.extend.base.j.i.a(34.0f);
+            layoutParams.height = this.W + com.tsf.extend.base.j.DisplayUtils.a(34.0f);
         } else {
-            layoutParams.height = this.W - com.tsf.extend.base.j.i.a(30.0f);
+            layoutParams.height = this.W - com.tsf.extend.base.j.DisplayUtils.a(30.0f);
         }
         this.x.setLayoutParams(layoutParams);
     }
@@ -1795,7 +1795,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     private void e(boolean z) {
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.q.getLayoutParams();
         layoutParams.bottomMargin = 0;
-        layoutParams.topMargin = com.tsf.extend.base.j.i.a(z ? 20.0f : 5.0f);
+        layoutParams.topMargin = com.tsf.extend.base.j.DisplayUtils.a(z ? 20.0f : 5.0f);
         this.q.setLayoutParams(layoutParams);
     }
 

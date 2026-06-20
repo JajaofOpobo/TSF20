@@ -10,21 +10,21 @@ public class DisplayUtils {
     private static DisplayMetrics c = com.tsf.extend.AppContextHolder.b().getResources().getDisplayMetrics();
 
     public static float a() {
-        return __c__.density;
+        return c.density;
     }
 
     public static float b() {
         if (a == null) {
             a = Float.valueOf((d() * 2.0f) / (a() * 720.0f));
         }
-        return __a__.floatValue();
+        return a.floatValue();
     }
 
     public static float c() {
         if (b == null) {
             b = Float.valueOf((e() * 2.0f) / (a() * 1280.0f));
         }
-        return __b__.floatValue();
+        return b.floatValue();
     }
 
     public static int d() {

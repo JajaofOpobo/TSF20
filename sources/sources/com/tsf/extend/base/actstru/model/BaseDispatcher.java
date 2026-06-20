@@ -4,7 +4,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c<T> extends Thread implements g<T> {
+public abstract class BaseDispatcher<T> extends Thread implements TaskHandler<T> {
     protected BlockingQueue<T> a = null;
     protected ExecutorService b = null;
     private volatile boolean c = false;
@@ -17,8 +17,8 @@ public abstract class c<T> extends Thread implements g<T> {
         return this.a;
     }
 
-    @Override // com.tsf.extend.base.actstru.model.g
-    public d a(T t) {
+    @Override // com.tsf.extend.base.actstru.model.TaskHandler
+    public EventData a(T t) {
         return null;
     }
 
@@ -34,7 +34,7 @@ public abstract class c<T> extends Thread implements g<T> {
     }
 
     protected void c() throws InterruptedException {
-        a().submit(new b(b().take(), this));
+        a().submit(new TaskWrapper(b().take(), this));
     }
 
     public void b(T t) {

@@ -291,7 +291,7 @@ public class BitmapUtils {
             r0 = r6
             goto L29
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.base.j.__e__.b(android.content.Context, android.net.Uri):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.base.j.BitmapUtils.b(android.content.Context, android.net.Uri):java.lang.String");
     }
 
     public static Uri c(Context context, Uri uri) throws Throwable {
@@ -556,7 +556,7 @@ public class BitmapUtils {
 
     public static Bitmap a(Context context) {
         try {
-            Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(context.getResources(), ResourceIds.__d__.wallpaper_favorite_btn);
+            Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(context.getResources(), ResourceIds.d.wallpaper_favorite_btn);
             Paint paint = new Paint();
             paint.setColorFilter(new PorterDuffColorFilter(-4868683, PorterDuff.Mode.SRC_IN));
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapDecodeResource.getWidth(), bitmapDecodeResource.getHeight(), Bitmap.Config.ARGB_8888);

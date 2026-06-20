@@ -45,7 +45,7 @@ public class WallpaperCategoryList extends LinearLayout implements PageActivity.
         this.b.setChooseWallpaperOnLine(z);
         this.b.setBackgroundColor(-1118482);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -1);
-        int iC = com.tsf.extend.base.j.p.c(getContext());
+        int iC = com.tsf.extend.base.j.StorageUtils.c(getContext());
         if (iC != 0) {
             this.b.setPadding(0, 0, 0, iC);
         }

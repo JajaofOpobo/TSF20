@@ -4,7 +4,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.theme.C;
+import com.tsf.extend.theme.ThemeCategoryListModel;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;
@@ -32,8 +32,8 @@ public class ThemeCategoryPage extends ThemeListView {
         String strF = ((PersonalizationActivity) this.a).f();
         if (strF != null && strF.startsWith("DIY://")) {
             for (ThemeModel kVar : list) {
-                if (kVar instanceof aq) {
-                    if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
+                if (kVar instanceof AbstractThemeProvider) {
+                    if (!TextUtils.isEmpty(strF) && strF.contains(((AbstractThemeProvider) kVar).I())) {
                         kVar.b(true);
                     } else {
                         kVar.b(false);

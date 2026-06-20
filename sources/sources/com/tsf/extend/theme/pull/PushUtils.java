@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.SystemClock;
-import com.tsf.extend.base.j.p;
+import com.tsf.extend.base.j.StorageUtils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

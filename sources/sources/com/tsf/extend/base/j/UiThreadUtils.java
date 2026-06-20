@@ -14,7 +14,7 @@ public class UiThreadUtils {
     private static Handler d;
 
     static {
-        a = !aa.class.desiredAssertionStatus();
+        a = !UiThreadUtils.class.desiredAssertionStatus();
         b = new Object();
         c = false;
         d = null;

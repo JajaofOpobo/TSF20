@@ -122,7 +122,7 @@ public class RippleUtils {
         public b(ObjectAnimator objectAnimator, int i) {
             this.a = objectAnimator;
             this.b = i;
-            this.__a__.addListener(new Animator.AnimatorListener() { // from class: com.tsf.extend.base.__j__.__s__.b.1
+            this.a.addListener(new Animator.AnimatorListener() { // from class: com.tsf.extend.base.__j__.__s__.b.1
                 @Override // android.animation.Animator.AnimatorListener
                 public void onAnimationStart(Animator animator) {
                 }
@@ -133,15 +133,15 @@ public class RippleUtils {
 
                 @Override // android.animation.Animator.AnimatorListener
                 public void onAnimationEnd(Animator animator) {
-                    if (__b__.this.c || __b__.this.d) {
-                        __b__.this.d = false;
+                    if (b.this.c || b.this.d) {
+                        b.this.d = false;
                     } else {
-                        __b__.this.d = true;
+                        b.this.d = true;
                         HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.base.__j__.__s__.b.1.1
                             @Override // java.lang.Runnable
                             @TargetApi(11)
                             public void run() {
-                                __b__.this.a().reverse();
+                                b.this.a().reverse();
                             }
                         });
                     }
@@ -159,14 +159,14 @@ public class RippleUtils {
         public boolean onTouch(View view, MotionEvent motionEvent) {
             switch (motionEvent.getAction()) {
                 case 0:
-                    this.__a__.start();
+                    this.a.start();
                     this.c = true;
                     return false;
                 case 1:
                 case 3:
                     if (this.c) {
-                        if (!this.__a__.isRunning()) {
-                            this.__a__.reverse();
+                        if (!this.a.isRunning()) {
+                            this.a.reverse();
                             this.d = true;
                         }
                         this.c = false;
@@ -174,8 +174,8 @@ public class RippleUtils {
                     return false;
                 case 2:
                     if (this.c && !RippleUtils.b(view, motionEvent.getX(), motionEvent.getY(), this.b)) {
-                        if (!this.__a__.isRunning()) {
-                            this.__a__.reverse();
+                        if (!this.a.isRunning()) {
+                            this.a.reverse();
                             this.d = true;
                         }
                         this.c = false;
@@ -195,7 +195,7 @@ public class RippleUtils {
         private Paint b = new Paint();
 
         public a() {
-            this.__b__.setColor(this.e);
+            this.b.setColor(this.e);
             this.a = new com.tsf.extend.base.view.a(new float[]{0.0f, 0.0f, 0.3f, 0.9f, 0.33f, 1.0f, 0.35f, 0.75f, 0.95f, 0.0f, 1.0f, 0.0f}, 300);
         }
 
@@ -210,14 +210,14 @@ public class RippleUtils {
             int iWidth = bounds.width();
             int iCenterX = bounds.centerX();
             int iCenterY = bounds.centerY();
-            int iA = (int) (51.0f * this.__a__.a(this.c));
+            int iA = (int) (51.0f * this.a.a(this.c));
             if (iA < 0) {
                 iA = 0;
             }
             int i = iA <= 255 ? iA : 255;
-            this.__b__.setColor(this.e);
-            this.__b__.setAlpha(i);
-            canvas.drawCircle(iCenterX, iCenterY, (iWidth * ((this.__d__.getInterpolation(this.c) * 0.8f) + 0.4f)) / 2.0f, this.b);
+            this.b.setColor(this.e);
+            this.b.setAlpha(i);
+            canvas.drawCircle(iCenterX, iCenterY, (iWidth * ((this.d.getInterpolation(this.c) * 0.8f) + 0.4f)) / 2.0f, this.b);
         }
 
         @Override // android.graphics.drawable.Drawable

@@ -8,7 +8,7 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class k {
+public class TaskDispatcher {
     private static k a = new k();
     private BlockingQueue<j> b = new LinkedBlockingQueue(com.tsf.extend.base.actstru.model.a.e);
     private BlockingQueue<FutureTask<d>> c = new LinkedBlockingQueue();
@@ -24,7 +24,7 @@ public class k {
             setName("TaskDispather");
         }
 
-        @Override // com.tsf.extend.base.actstru.model.c, com.tsf.extend.base.actstru.model.g
+        @Override // com.tsf.extend.base.actstru.model.BaseDispatcher, com.tsf.extend.base.actstru.model.TaskHandler
         public d a(j jVar) {
             FutureTask<d> futureTask = new FutureTask<>(jVar);
             k.this.a(futureTask);
@@ -41,7 +41,7 @@ public class k {
             setName("PendingEventDispatcher");
         }
 
-        @Override // com.tsf.extend.base.actstru.model.c, com.tsf.extend.base.actstru.model.g
+        @Override // com.tsf.extend.base.actstru.model.BaseDispatcher, com.tsf.extend.base.actstru.model.TaskHandler
         public d a(FutureTask<d> futureTask) {
             try {
                 f.a().a(futureTask.get());

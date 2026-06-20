@@ -6,17 +6,17 @@ public class ThemeExpiringModel extends ThemePagedModel {
     private boolean b;
     private int c = 2;
 
-    @Override // com.tsf.extend.theme.p
+    @Override // com.tsf.extend.theme.ThemePagedModel
     public boolean l() {
         return this.b;
     }
 
-    @Override // com.tsf.extend.theme.p
+    @Override // com.tsf.extend.theme.ThemePagedModel
     public void b(boolean z) {
         this.b = z;
     }
 
-    @Override // com.tsf.extend.theme.p, com.tsf.extend.base.b.PagedListModel
+    @Override // com.tsf.extend.theme.ThemePagedModel, com.tsf.extend.base.b.PagedListModel
     public boolean h() {
         return b();
     }

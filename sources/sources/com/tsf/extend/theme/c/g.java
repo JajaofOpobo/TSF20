@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.text.TextUtils;
 import android.widget.TextView;
-import com.tsf.extend.base.j.ab;
+import com.tsf.extend.base.j.TypefaceCache;
 import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,8 +17,8 @@ public class g extends TextView {
         super(context);
         this.a = 0;
         this.b = 0;
-        this.a = com.tsf.extend.base.j.i.a(15.0f);
-        this.b = com.tsf.extend.base.j.i.a(6.0f);
+        this.a = com.tsf.extend.base.j.DisplayUtils.a(15.0f);
+        this.b = com.tsf.extend.base.j.DisplayUtils.a(6.0f);
         setPadding(this.a, this.b, this.a, this.b);
         a();
         setBackgroundResource(ResourceIds.d.theme_search_tag_bg);

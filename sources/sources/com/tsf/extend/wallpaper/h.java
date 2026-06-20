@@ -279,14 +279,14 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
     private void e() {
         this.e = null;
         Context contextB = com.tsf.extend.AppContextHolder.b();
-        String strA = com.tsf.extend.base.j.p.a(contextB);
+        String strA = com.tsf.extend.base.j.StorageUtils.a(contextB);
         if (TextUtils.isEmpty(strA)) {
-            strA = com.tsf.extend.base.j.p.b(contextB);
+            strA = com.tsf.extend.base.j.StorageUtils.b(contextB);
         }
         if (!TextUtils.isEmpty(strA)) {
             String str = (((strA + File.separator) + "TsfTheme") + File.separator) + "CM Wallpaper";
             try {
-                String strA2 = com.tsf.extend.base.j.r.a("last_walllpaper_img".getBytes("utf-8"));
+                String strA2 = com.tsf.extend.base.j.MD5Utils.a("last_walllpaper_img".getBytes("utf-8"));
                 File file = new File(str + "/" + strA2);
                 if (file.exists() && file.isFile()) {
                     this.e = new g();
@@ -303,7 +303,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
         if (enumC0069a == i.a.EnumC0069a.getList) {
             e();
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.h.2
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.h.2
             @Override // java.lang.Runnable
             public void run() {
                 h.this.b(enumC0069a, obj, bVar);
@@ -365,7 +365,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
     public void onClick(View view) {
         if (view.getTag() == a) {
             try {
-                com.tsf.extend.base.j.n.a((Activity) getContext(), 1001);
+                com.tsf.extend.base.j.BrowserUtils.a((Activity) getContext(), 1001);
                 return;
             } catch (Exception e) {
                 Toast.makeText(this.p, this.p.getString(ResourceIds.g.net_shortcut_error), 1).show();

@@ -18,9 +18,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.tsf.extend.base.j.h;
-import com.tsf.extend.base.j.i;
-import com.tsf.extend.base.j.o;
+import com.tsf.extend.base.j.AccountUtils;
+import com.tsf.extend.base.j.DisplayUtils;
+import com.tsf.extend.base.j.NetworkUtils;
 import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.ag;
@@ -150,7 +150,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
         this.i.setTextColor(Color.rgb(255, 255, 255));
         this.i.setTextSize(16.0f);
         this.i.setLayoutParams(new ViewGroup.LayoutParams(-1, i.a(48.0f)));
-        com.tsf.extend.base.j.b.a(this.i, getResources().getDrawable(ResourceIds.d.upload_wallpaper_submit_btn));
+        com.tsf.extend.base.j.ViewCompatUtils.a(this.i, getResources().getDrawable(ResourceIds.d.upload_wallpaper_submit_btn));
         addView(this.i);
         this.i.setOnClickListener(this);
         if (this.h != null) {
@@ -308,7 +308,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
             if (Build.VERSION.SDK_INT >= 11) {
                 this.j.setTranslationX(width);
             }
-            com.tsf.extend.base.j.b.a(this, this);
+            com.tsf.extend.base.j.ViewCompatUtils.a(this, this);
         }
     }
 

@@ -16,8 +16,8 @@ public class MD5Utils {
             c = MessageDigest.getInstance("MD5");
             b = MessageDigest.getInstance("MD5");
         } catch (NoSuchAlgorithmException e) {
-            System.err.println(__r__.class.getName() + "failure");
-            __e__.printStackTrace();
+            System.err.println(MD5Utils.class.getName() + "failure");
+            e.printStackTrace();
         }
     }
 
@@ -26,8 +26,8 @@ public class MD5Utils {
     }
 
     public static synchronized String a(byte[] bArr) {
-        __c__.update(bArr);
-        return b(__c__.digest());
+        c.update(bArr);
+        return b(c.digest());
     }
 
     private static String b(byte[] bArr) {

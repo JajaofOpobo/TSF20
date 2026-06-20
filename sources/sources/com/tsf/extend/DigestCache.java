@@ -1,7 +1,7 @@
 package com.tsf.extend;
 
 import android.text.TextUtils;
-import com.tsf.extend.base.j.l;
+import com.tsf.extend.base.j.FileIOUtils;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

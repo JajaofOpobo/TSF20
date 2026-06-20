@@ -35,7 +35,7 @@ public class ThemeDeepLinkHandler {
     }
 
     public static void a(Context context, String str, String str2) {
-        com.tsf.extend.base.j.q.a("sdfsww", "launch:channel:" + str2);
+        com.tsf.extend.base.j.LogUtils.a("sdfsww", "launch:channel:" + str2);
         b(context, str, null, str2);
     }
 
@@ -45,19 +45,19 @@ public class ThemeDeepLinkHandler {
 
     public static void a(Context context, String str, String str2, String str3) {
         if (Build.VERSION.SDK_INT >= 11) {
-            str = com.tsf.extend.base.j.m.a(str, com.tsf.extend.base.j.m.a(), str2);
+            str = com.tsf.extend.base.j.MarketUtils.a(str, com.tsf.extend.base.j.MarketUtils.a(), str2);
         }
-        com.tsf.extend.base.j.m.a(context, str + str3);
+        com.tsf.extend.base.j.MarketUtils.a(context, str + str3);
     }
 
     public static void b(Context context, String str, String str2, String str3) {
         if (Build.VERSION.SDK_INT >= 11) {
-            str = com.tsf.extend.base.j.m.a(str, com.tsf.extend.base.j.m.a(), str2);
+            str = com.tsf.extend.base.j.MarketUtils.a(str, com.tsf.extend.base.j.MarketUtils.a(), str2);
         }
         if (b(str3)) {
             str = a(str, str3);
         }
-        com.tsf.extend.base.j.m.a(context, str);
+        com.tsf.extend.base.j.MarketUtils.a(context, str);
     }
 
     public static void a() {

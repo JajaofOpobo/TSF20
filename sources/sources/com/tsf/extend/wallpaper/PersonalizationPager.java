@@ -153,7 +153,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
 
     /* JADX INFO: Access modifiers changed from: private */
     public void l() {
-        com.tsf.extend.base.j.n.b(this.b);
+        com.tsf.extend.base.j.BrowserUtils.b(this.b);
     }
 
     private void a(Uri uri) {
@@ -329,7 +329,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
                 @Override // java.lang.Runnable
                 public void run() throws Throwable {
                     try {
-                        Uri uriC = com.tsf.extend.base.j.e.c(PersonalizationPager.this.b, data);
+                        Uri uriC = com.tsf.extend.base.j.BitmapUtils.c(PersonalizationPager.this.b, data);
                         x xVar = new x(PersonalizationPager.this.b);
                         Bitmap bitmapA = xVar.a(uriC);
                         if (bitmapA != null) {
@@ -427,7 +427,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
     }
 
     private void n() {
-        if (com.tsf.extend.base.j.t.a(com.tsf.extend.AppContextHolder.b())) {
+        if (com.tsf.extend.base.j.CarrierUtils.a(com.tsf.extend.AppContextHolder.b())) {
             this.o = (KeyboardPager) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.keyboard_pager, (ViewGroup) null);
             this.o.setVisibility(8);
             this.e.setVisibility(0);

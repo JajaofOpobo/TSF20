@@ -150,7 +150,7 @@ public class UploadTabContainer extends FrameLayout implements Animator.Animator
     }
 
     public void c() {
-        com.tsf.extend.base.j.b.a(this, this.e);
-        com.tsf.extend.base.j.b.a(this, this.f);
+        com.tsf.extend.base.j.ViewCompatUtils.a(this, this.e);
+        com.tsf.extend.base.j.ViewCompatUtils.a(this, this.f);
     }
 }

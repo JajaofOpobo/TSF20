@@ -80,7 +80,7 @@ public class ThemeDetailActivity extends PageActivity {
             }
         }
         super.onCreate(bundle);
-        com.tsf.extend.base.j.p.a((Activity) this);
+        com.tsf.extend.base.j.StorageUtils.a((Activity) this);
         getApplicationContext().bindService(new Intent("android.service.theme.ManagerService"), this.i, 1);
         this.e = (DIYThemeDetail) LayoutInflater.from(this).inflate(ResourceIds.C0052f.diy_theme_detail, (ViewGroup) null);
         this.e.setIsDIYCMT(true);

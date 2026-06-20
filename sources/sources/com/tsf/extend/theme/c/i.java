@@ -35,7 +35,7 @@ public class i extends LinearLayout implements View.OnClickListener {
         this.b = new ArrayList();
         this.d = 0;
         this.e = 0;
-        this.d = com.tsf.extend.base.j.i.a(10.0f);
+        this.d = com.tsf.extend.base.j.DisplayUtils.a(10.0f);
         f();
     }
 
@@ -123,7 +123,7 @@ public class i extends LinearLayout implements View.OnClickListener {
         this.c.setText(ResourceIds.g.theme_search_no_search_result);
         this.c.setTextSize(14.0f);
         this.c.setTextColor(2134061875);
-        int iA = com.tsf.extend.base.j.i.a(16.0f);
+        int iA = com.tsf.extend.base.j.DisplayUtils.a(16.0f);
         this.c.setPadding(iA, 0, iA, 0);
         addView(this.c);
         setBottomMargin(this.c);

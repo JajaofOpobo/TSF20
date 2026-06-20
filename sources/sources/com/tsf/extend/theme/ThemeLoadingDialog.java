@@ -52,8 +52,8 @@ public class ThemeLoadingDialog extends Dialog {
         this.c.setTextSize(2, 14.0f);
         this.c.setTextColor(getContext().getResources().getColor(ResourceIds.b.white));
         this.c.setGravity(1);
-        LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(com.tsf.extend.base.j.i.d(), -2);
-        layoutParams2.topMargin = com.tsf.extend.base.j.i.a(8.0f);
+        LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(com.tsf.extend.base.j.DisplayUtils.d(), -2);
+        layoutParams2.topMargin = com.tsf.extend.base.j.DisplayUtils.a(8.0f);
         this.b.addView(this.c, layoutParams2);
         setContentView(this.b, layoutParams);
     }
@@ -141,10 +141,10 @@ public class ThemeLoadingDialog extends Dialog {
         public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
         }
 
-        /* JADX WARN: Type inference failed for: r0v1, types: [com.tsf.extend.theme.o$a$1] */
+        /* JADX WARN: Type inference failed for: r0v1, types: [com.tsf.extend.theme.ThemeLoadingDialog$a$1] */
         public void a() {
             if (!this.d) {
-                new Thread() { // from class: com.tsf.extend.theme.o.a.1
+                new Thread() { // from class: com.tsf.extend.theme.ThemeLoadingDialog.a.1
                     @Override // java.lang.Thread, java.lang.Runnable
                     public void run() {
                         while (!a.this.d && o.this.isShowing()) {

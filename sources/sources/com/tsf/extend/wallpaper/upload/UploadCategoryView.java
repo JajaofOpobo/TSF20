@@ -14,8 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.d.BaseDataProvider;
-import com.tsf.extend.base.j.i;
-import com.tsf.extend.base.j.p;
+import com.tsf.extend.base.j.DisplayUtils;
+import com.tsf.extend.base.j.StorageUtils;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.w;
 import com.tsf.extend.wallpaper.z;
@@ -104,7 +104,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     UploadCategoryView.this.e();
@@ -123,7 +123,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
                 @Override // java.lang.Runnable
                 public void run() {
                     UploadCategoryView.this.e();
@@ -198,7 +198,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, iA * 2);
         button.setText(str);
         button.setPadding(iA, 0, iA, 0);
-        com.tsf.extend.base.j.b.a(button, getResources().getDrawable(ResourceIds.d.upload_wallpaper_category_btn));
+        com.tsf.extend.base.j.ViewCompatUtils.a(button, getResources().getDrawable(ResourceIds.d.upload_wallpaper_category_btn));
         layoutParams.setMargins(0, iA, iA, 0);
         button.setLayoutParams(layoutParams);
         button.setTextSize(14.0f);
@@ -280,7 +280,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
                     this.h.setY((height - i.a(29.0f)) - this.h.getHeight());
                 }
                 this.c.setCategoryRealY(((height - this.q) - height2) - this.ResourceIds.getHeight());
-                com.tsf.extend.base.j.b.a(this, this);
+                com.tsf.extend.base.j.ViewCompatUtils.a(this, this);
             }
         }
     }

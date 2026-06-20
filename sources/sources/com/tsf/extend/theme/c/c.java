@@ -18,8 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.BaseDataProvider;
-import com.tsf.extend.base.j.p;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.StorageUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.c.i;
 import com.tsf.extend.theme.ThemeDataProvider;
@@ -105,7 +105,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         this.c = new FrameLayout(getContext());
         this.c.setBackgroundColor(Color.parseColor("#EEEEEE"));
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-        int iA = com.tsf.extend.base.j.i.a(36.0f) + com.tsf.extend.base.j.i.a(8.0f) + com.tsf.extend.base.j.i.a(8.0f);
+        int iA = com.tsf.extend.base.j.DisplayUtils.a(36.0f) + com.tsf.extend.base.j.DisplayUtils.a(8.0f) + com.tsf.extend.base.j.DisplayUtils.a(8.0f);
         layoutParams.topMargin = iA;
         addView(this.c, layoutParams);
         setupSearchBar(iA);
@@ -435,7 +435,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
 
     private void c(String str) {
         this.o = new a();
-        v.h().a(this.o, a.b.Refresh, str);
+        ThemeDataProvider.h().a(this.o, a.b.Refresh, str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

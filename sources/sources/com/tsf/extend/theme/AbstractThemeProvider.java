@@ -49,7 +49,7 @@ public abstract class AbstractThemeProvider extends ThemeModel {
             return null;
         }
         if (new File(strOptString).getName().startsWith("CMT_")) {
-            aVar = new B();
+            aVar = new DiyWallpaperProvider();
         } else {
             aVar = new com.tsf.extend.theme.diy.a();
         }
@@ -99,7 +99,7 @@ public abstract class AbstractThemeProvider extends ThemeModel {
         if (str == null || !str.startsWith("DIY://")) {
             return null;
         }
-        return str.substring(str.lastIndexOf("/") + 1, str.length()) + "_" + com.tsf.extend.base.j.d.b();
+        return str.substring(str.lastIndexOf("/") + 1, str.length()) + "_" + com.tsf.extend.base.j.AppEnvUtils.b();
     }
 
     public File b(Context context) {
@@ -133,7 +133,7 @@ public abstract class AbstractThemeProvider extends ThemeModel {
     }
 
     public File[] e(Context context) {
-        return b(context).listFiles(new FilenameFilter() { // from class: com.tsf.extend.theme.aq.1
+        return b(context).listFiles(new FilenameFilter() { // from class: com.tsf.extend.theme.AbstractThemeProvider.1
             @Override // java.io.FilenameFilter
             public boolean accept(File file, String str) {
                 return str.startsWith("launcher_preview");
@@ -142,7 +142,7 @@ public abstract class AbstractThemeProvider extends ThemeModel {
     }
 
     public File[] f(Context context) {
-        return c(context).listFiles(new FilenameFilter() { // from class: com.tsf.extend.theme.aq.2
+        return c(context).listFiles(new FilenameFilter() { // from class: com.tsf.extend.theme.AbstractThemeProvider.2
             @Override // java.io.FilenameFilter
             public boolean accept(File file, String str) {
                 return str.startsWith("launcher_preview");

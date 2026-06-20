@@ -105,7 +105,7 @@ public class r extends com.tsf.extend.BaseDialog implements View.OnClickListener
 
     private void c() {
         int iA = PersonalizationActivity.a(getContext(), 4.0f);
-        com.tsf.extend.theme.i iVar = new com.tsf.extend.theme.i(-16400241);
+        com.tsf.extend.theme.ThemeRoundedDrawable iVar = new com.tsf.extend.theme.ThemeRoundedDrawable(-16400241);
         iVar.a(iA);
         StateListDrawable stateListDrawable = new StateListDrawable();
         stateListDrawable.addState(StateSet.WILD_CARD, iVar);

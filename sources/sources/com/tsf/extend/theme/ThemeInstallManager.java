@@ -250,7 +250,7 @@ public class ThemeInstallManager {
 
     private void a(final Context context, final ThemeManagerService.a aVar, final int i, final String str, final String str2, final boolean z, final String str3) {
         this.q = true;
-        com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.1
+        com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.1
             @Override // java.lang.Runnable
             public void run() {
                 boolean zB;
@@ -264,7 +264,7 @@ public class ThemeInstallManager {
                     return;
                 }
                 if (aVar != null) {
-                    com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.1.1
+                    com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             aVar.b();
@@ -311,7 +311,7 @@ public class ThemeInstallManager {
         }
         if (i == 3) {
             if (zOptBoolean3) {
-                com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.2
+                com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.2
                     @Override // java.lang.Runnable
                     public void run() {
                         String str3 = str2.substring("DIY://".length()) + File.separator + "theme/3dcmt/theme.cmt";
@@ -324,7 +324,7 @@ public class ThemeInstallManager {
             }
         }
         if (i != 4) {
-            com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3
+            com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3
                 @Override // java.lang.Runnable
                 public void run() {
                     boolean zE;
@@ -332,7 +332,7 @@ public class ThemeInstallManager {
                     if (ai.a().b(str2)) {
                         context.startActivity(context.getPackageManager().getLaunchIntentForPackage(str2));
                         ah.this.q = false;
-                        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.1
+                        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 aVar.a();
@@ -352,15 +352,15 @@ public class ThemeInstallManager {
                         return;
                     }
                     if (!str2.startsWith("recom_")) {
-                        v.h();
+                        ThemeDataProvider.h();
                         if (v.g(str2)) {
-                            v.h();
-                            zE = v.h(str2);
+                            ThemeDataProvider.h();
+                            zE = ThemeDataProvider.h(str2);
                             if (zE) {
                                 z2 = true;
                             }
                         } else {
-                            v.h();
+                            ThemeDataProvider.h();
                             zE = v.e(str2);
                         }
                         if (zE) {
@@ -369,7 +369,7 @@ public class ThemeInstallManager {
                                 ah.this.I = zOptBoolean2;
                                 ah.this.b(context, aVar, i, str);
                                 if (z2) {
-                                    v.h();
+                                    ThemeDataProvider.h();
                                     String strF = v.f(str2);
                                     if (!TextUtils.isEmpty(strF) && strF.contains("clock3d")) {
                                         ah.this.x = true;
@@ -377,7 +377,7 @@ public class ThemeInstallManager {
                                 }
                             }
                             if (!zA && aVar != null) {
-                                com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.3
+                                com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.3
                                     @Override // java.lang.Runnable
                                     public void run() {
                                         aVar.b();
@@ -388,7 +388,7 @@ public class ThemeInstallManager {
                             return;
                         }
                         if (aVar != null) {
-                            com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.2
+                            com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.2
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     aVar.c();
@@ -443,7 +443,7 @@ public class ThemeInstallManager {
                     boolean zStartsWith = strB.startsWith("DIY://");
                     int i = context.getResources().getDisplayMetrics().widthPixels;
                     boolean zG = g();
-                    if (Build.VERSION.SDK_INT >= 19 || com.tsf.extend.base.j.v.b() || zG) {
+                    if (Build.VERSION.SDK_INT >= 19 || com.tsf.extend.base.j.BuildUtils.b() || zG) {
                         try {
                             Bitmap bitmapDecodeStream = BitmapFactory.decodeStream(inputStreamB, null, options);
                             if (bitmapDecodeStream != null) {
@@ -517,7 +517,7 @@ public class ThemeInstallManager {
             return;
         }
         if (aVar != null) {
-            com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.4
+            com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.4
                 @Override // java.lang.Runnable
                 public void run() {
                     aVar.b();
@@ -807,7 +807,7 @@ public class ThemeInstallManager {
     }
 
     public static void a(final Context context) {
-        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.5
+        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.5
             @Override // java.lang.Runnable
             public void run() {
                 Toast.makeText(context, ResourceIds.g.theme_changing_succ, 0).show();

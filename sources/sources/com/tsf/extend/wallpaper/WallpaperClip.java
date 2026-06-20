@@ -127,8 +127,8 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     public void a(PageActivity pageActivity) {
         if (pageActivity instanceof PersonalizationActivity) {
             this.b = (PersonalizationActivity) pageActivity;
-            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
-            this.d.setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
+            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
+            this.d.setPadding(0, 0, 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
             this.f = WallpaperManager.getInstance(getContext());
         }
     }
@@ -206,7 +206,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
         if (z) {
             this.b.b(true);
             e(false);
-            com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.1
+            com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.1
                 @Override // java.lang.Runnable
                 public void run() {
                     final Bitmap bitmap;
@@ -245,12 +245,12 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
                             @Override // java.lang.Runnable
                             public void run() {
                                 WallpaperClip.this.i();
-                                if ((com.tsf.extend.base.j.p.b() - ((bitmap.getWidth() <= com.tsf.extend.base.j.p.b() / 2 ? 2 : 1) * bitmap.getWidth())) / 2 < 0) {
+                                if ((com.tsf.extend.base.j.StorageUtils.b() - ((bitmap.getWidth() <= com.tsf.extend.base.j.StorageUtils.b() / 2 ? 2 : 1) * bitmap.getWidth())) / 2 < 0) {
                                 }
                                 WallpaperClip.this.setPadding(0, 0, 0, 0);
                                 WallpaperClip.this.d.setPadding(0, 0, 0, 0);
                                 WallpaperClip.this.d.setVisibility(0);
-                                com.tsf.extend.base.j.b.a(WallpaperClip.this.d, new BitmapDrawable(WallpaperClip.this.a.getResources(), bitmapD));
+                                com.tsf.extend.base.j.ViewCompatUtils.a(WallpaperClip.this.d, new BitmapDrawable(WallpaperClip.this.a.getResources(), bitmapD));
                                 WallpaperClip.this.d.setImageBitmap(bitmap);
                             }
                         });
@@ -267,9 +267,9 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
             });
         } else {
             this.b.b(false);
-            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
+            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
             this.d.setVisibility(8);
-            com.tsf.extend.base.j.b.a(this.d, (Drawable) null);
+            com.tsf.extend.base.j.ViewCompatUtils.a(this.d, (Drawable) null);
             this.d.setImageBitmap(null);
         }
     }
@@ -277,7 +277,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     private void h() {
         com.tsf.extend.wallpaper.a.WallpaperChangeManager.a(this);
         e(true);
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.2
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.2
             @Override // java.lang.Runnable
             public void run() {
                 try {
@@ -327,7 +327,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c(final boolean z) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.3
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.3
             @Override // java.lang.Runnable
             public void run() {
                 Toast.makeText(WallpaperClip.this.b, z ? ResourceIds.g.wallpaper_set_suc : ResourceIds.g.wallpaper_set_fail, 1).show();

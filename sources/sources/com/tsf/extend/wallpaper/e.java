@@ -57,7 +57,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
         Button button = (Button) this.g.findViewById(ResourceIds.e.like_theme_button_now);
         button.setText(ResourceIds.g.wallpaper_like_no_data_button_text);
         button.setOnClickListener(this);
-        Bitmap bitmapA = com.tsf.extend.base.j.e.a(this.e);
+        Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(this.e);
         if (bitmapA != null) {
             ((ImageView) this.g.findViewById(ResourceIds.e.like_theme_image)).setImageBitmap(bitmapA);
         } else {
@@ -143,7 +143,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
     @Override // com.tsf.extend.wallpaper.i.a
     public void a(i.a.EnumC0069a enumC0069a, final Object obj, i.a.b bVar) {
         if (enumC0069a == i.a.EnumC0069a.getList) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.e.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.e.2
                 @Override // java.lang.Runnable
                 public void run() {
                     e.this.setListUi((List) obj);

@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class EventBasedActivity extends Activity implements e {
+public class EventBasedActivity extends Activity implements EventHandler {
     boolean a = true;
     boolean b = true;
     protected Handler c = new Handler() { // from class: com.tsf.extend.base.actstru.model.EventBasedActivity.1
@@ -22,8 +22,8 @@ public class EventBasedActivity extends Activity implements e {
         return false;
     }
 
-    @Override // com.tsf.extend.base.actstru.model.e
-    public final void a(final d dVar) {
+    @Override // com.tsf.extend.base.actstru.model.EventHandler
+    public final void a(final EventData dVar) {
         runOnUiThread(new Runnable() { // from class: com.tsf.extend.base.actstru.model.EventBasedActivity.2
             @Override // java.lang.Runnable
             public void run() {
@@ -32,20 +32,20 @@ public class EventBasedActivity extends Activity implements e {
         });
     }
 
-    protected void b(d dVar) {
+    protected void b(EventData dVar) {
     }
 
     @Override // android.app.Activity
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        a.a().a("ui", this);
+        EventSystemConfig.a().a("ui", this);
     }
 
     @Override // android.app.Activity
     protected void onPause() {
         super.onPause();
         if (this.a) {
-            a.a().b("ui", this);
+            EventSystemConfig.a().b("ui", this);
         }
     }
 
@@ -53,13 +53,13 @@ public class EventBasedActivity extends Activity implements e {
     protected void onResume() {
         super.onResume();
         if (this.a) {
-            a.a().a("ui", this);
+            EventSystemConfig.a().a("ui", this);
         }
     }
 
     @Override // android.app.Activity
     protected void onDestroy() {
         super.onDestroy();
-        a.a().b("ui", this);
+        EventSystemConfig.a().b("ui", this);
     }
 }

@@ -15,7 +15,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.view.DecoratorViewPager;
 import com.tsf.extend.ResourceIds;
-import com.tsf.extend.theme.C;
+import com.tsf.extend.theme.ThemeCategoryListModel;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -227,7 +227,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
             imageView.setTag(cVar);
             this.b.add(cVar);
             if (!aVar.c.isEmpty()) {
-                v.h().c(aVar.c, this.c);
+                ThemeDataProvider.h().c(aVar.c, this.c);
             }
             viewGroup.addView(imageView);
             return imageView;

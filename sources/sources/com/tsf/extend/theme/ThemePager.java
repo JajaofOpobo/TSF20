@@ -70,7 +70,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        v.h();
+        ThemeDataProvider.h();
         this.e = (ViewPager) findViewById(ResourceIds.e.viewpager);
         this.g = new B();
         this.e.setOffscreenPageLimit(2);
@@ -99,7 +99,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     }
 
     private boolean g() {
-        String strA = com.tsf.extend.base.j.d.a();
+        String strA = com.tsf.extend.base.j.AppEnvUtils.a();
         return strA != null && strA.toLowerCase().startsWith("en");
     }
 
@@ -413,7 +413,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     private void l() {
         if (this.s == null) {
             this.t = new A();
-            v.h().a(this.t, a.b.Refresh);
+            ThemeDataProvider.h().a(this.t, a.b.Refresh);
         }
     }
 
@@ -423,7 +423,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.1
                 @Override // java.lang.Runnable
                 public void run() {
                     if (aVar != null) {
@@ -436,7 +436,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.2
                 @Override // java.lang.Runnable
                 public void run() {
                 }

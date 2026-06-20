@@ -53,7 +53,7 @@ public class al extends BaseAdapter {
             aVar.a = (ImageView) view.findViewById(ResourceIds.e.icon);
             aVar.b = (TextView) view.findViewById(ResourceIds.e.app_name);
             if (d == null) {
-                d = com.tsf.extend.base.j.ab.a(this.b.getAssets(), "fonts/OpenSans-Light-bold.ttf");
+                d = com.tsf.extend.base.j.TypefaceCache.a(this.b.getAssets(), "fonts/OpenSans-Light-bold.ttf");
             }
             aVar.b.setTypeface(d);
             view.setTag(aVar);

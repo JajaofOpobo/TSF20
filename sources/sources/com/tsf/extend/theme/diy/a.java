@@ -1,7 +1,7 @@
 package com.tsf.extend.theme.diy;
 
 import android.content.Context;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -11,22 +11,22 @@ public class a extends AbstractThemeProvider {
         return 2;
     }
 
-    @Override // com.tsf.extend.theme.aq
+    @Override // com.tsf.extend.theme.AbstractThemeProvider
     protected String b() {
         return "res/drawable-xhdpi";
     }
 
-    @Override // com.tsf.extend.theme.aq
+    @Override // com.tsf.extend.theme.AbstractThemeProvider
     protected String c_() {
         return "res/hd_preview";
     }
 
-    @Override // com.tsf.extend.theme.aq
+    @Override // com.tsf.extend.theme.AbstractThemeProvider
     public String d() {
         return "DIY_";
     }
 
-    @Override // com.tsf.extend.theme.aq
+    @Override // com.tsf.extend.theme.AbstractThemeProvider
     public File a(Context context) {
         File fileG = g(context);
         if (fileG == null) {
@@ -39,7 +39,7 @@ public class a extends AbstractThemeProvider {
         return new File(file, "wallpaper_background.png");
     }
 
-    @Override // com.tsf.extend.theme.aq
+    @Override // com.tsf.extend.theme.AbstractThemeProvider
     public String a(String str) {
         return I() + "/res/drawable-xhdpi/" + str;
     }

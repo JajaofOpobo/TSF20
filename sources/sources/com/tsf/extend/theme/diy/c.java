@@ -12,10 +12,10 @@ import com.android.volley.s;
 import com.android.volley.toolbox.j;
 import com.google.android.collect.Lists;
 import com.google.android.collect.Maps;
-import com.tsf.extend.base.j.k;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.MimeTypeUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.AppContextHolder;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.diy.b;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
@@ -57,9 +57,9 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
     private m b = com.tsf.extend.base.f.RequestQueueHelper.a(h.b());
 
     private c() {
-        this.c = com.tsf.extend.base.j.d.b(h.b());
+        this.c = com.tsf.extend.base.j.AppEnvUtils.b(h.b());
         this.c = this.c == null ? "null" : this.c;
-        this.d = com.tsf.extend.base.j.d.b();
+        this.d = com.tsf.extend.base.j.AppEnvUtils.b();
         this.d = TextUtils.isEmpty(this.d) ? "null" : this.d;
     }
 
@@ -245,7 +245,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         Context contextB = h.b();
         File fileA = e.a(contextB, aVar.a(), aVar.f());
         if (fileA != null && fileA.exists()) {
-            aq bVar = aVar.f() ? new com.tsf.extend.theme.B() : new com.tsf.extend.theme.diy.a();
+            aq bVar = aVar.f() ? new com.tsf.extend.theme.DiyWallpaperProvider() : new com.tsf.extend.theme.diy.a();
             File fileG = bVar.g(contextB);
             if (fileG != null) {
                 bVar.a(aVar.a());
@@ -353,7 +353,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         });
         File file = new File(aqVar.I());
         if (file.exists() && file.isDirectory()) {
-            return k.a(file) && file.delete();
+            return ThemeModel.a(file) && file.delete();
         }
         return false;
     }

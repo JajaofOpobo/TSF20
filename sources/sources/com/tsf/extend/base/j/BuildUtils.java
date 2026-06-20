@@ -13,7 +13,7 @@ public class BuildUtils {
         try {
             str = Build.DISPLAY;
         } catch (NoSuchFieldError e) {
-            __e__.printStackTrace();
+            e.printStackTrace();
             str = null;
         }
         if (str != null && str.toUpperCase().contains("MIUI")) {

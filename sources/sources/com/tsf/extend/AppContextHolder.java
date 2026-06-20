@@ -1,8 +1,8 @@
 package com.tsf.extend;
 
 import android.content.Context;
-import com.tsf.extend.base.j.q;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.LogUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AppContextHolder {
@@ -17,7 +17,7 @@ public class AppContextHolder {
 
     public static void a(com.tsf.extend.base.ResultCallback dVar) {
         b = dVar;
-        q.a("sadqdqdq", "aid:" + com.tsf.extend.base.j.d.b());
+        q.a("sadqdqdq", "aid:" + com.tsf.extend.base.j.AppEnvUtils.b());
     }
 
     public static com.tsf.extend.base.ResultCallback a() {

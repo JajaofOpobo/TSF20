@@ -50,7 +50,7 @@ import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ThemePullToRefreshListView;
 import com.tsf.extend.theme.ao;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.wallpaper.HorzontalSliderView;
 import com.tsf.extend.wallpaper.TabViewPager;
@@ -136,7 +136,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
+        setPadding(0, 0, 0, com.tsf.extend.base.j.StorageUtils.c(getContext()));
         this.q = WallpaperManager.getInstance(getContext());
         this.x = aa.a();
         this.j = new A();
@@ -154,7 +154,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         this.g.setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
         this.h = (ImageView) findViewById(ResourceIds.e.launcher_preview);
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.h.getLayoutParams();
-        layoutParams.bottomMargin = -com.tsf.extend.base.j.p.c(getContext());
+        layoutParams.bottomMargin = -com.tsf.extend.base.j.StorageUtils.c(getContext());
         this.h.setLayoutParams(layoutParams);
         this.h.setVisibility(8);
         this.g.setOnClickListener(this);
@@ -210,7 +210,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         });
         this.B.setVisibility(this.A ? 0 : 8);
         this.C.setSelected(this.A);
-        this.F = com.tsf.extend.base.j.i.d();
+        this.F = com.tsf.extend.base.j.DisplayUtils.d();
     }
 
     private String getReportTab() {
@@ -333,7 +333,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final int i, final List<m.a> list) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.7
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.7
             @Override // java.lang.Runnable
             public void run() {
                 if (WallpaperDetail.this.m()) {
@@ -357,10 +357,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final m.a aVar, final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<m.a, Bitmap>> interfaceC0048a, final boolean z) {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.8
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.8
             @Override // java.lang.Runnable
             public void run() {
-                z.h().a(new m.a(aVar.a, aVar.b), interfaceC0048a, z, com.tsf.extend.base.j.p.b(), com.tsf.extend.base.j.p.c());
+                z.h().a(new m.a(aVar.a, aVar.b), interfaceC0048a, z, com.tsf.extend.base.j.StorageUtils.b(), com.tsf.extend.base.j.StorageUtils.c());
             }
         });
     }
@@ -541,7 +541,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                         eVar.r.setTempBitmap(sVar.r());
                         eVar.L.setTempBitmap(sVar.r());
                     }
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.1
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.1
                         @Override // java.lang.Runnable
                         public void run() {
                             if (WallpaperDetail.this.e != null && WallpaperDetail.this.e.contains(eVar) && eVar.s.getVisibility() == 0) {
@@ -550,7 +550,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                             }
                         }
                     }, 500L);
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.2
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.2
                         @Override // java.lang.Runnable
                         public void run() {
                             if (WallpaperDetail.this.e != null && WallpaperDetail.this.e.contains(eVar) && eVar.I.getVisibility() == 0) {
@@ -592,7 +592,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                                 if (bVar == i.a.b.suc && (obj instanceof Pair)) {
                                     final Pair pair = (Pair) obj;
                                     if (pair.second != null) {
-                                        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.3.1
+                                        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.f.3.1
                                             @Override // java.lang.Runnable
                                             public void run() {
                                                 eVar.o.b((Bitmap) pair.second);
@@ -729,7 +729,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 }
                 e.this.w++;
                 e.this.P.run();
-                com.tsf.extend.base.j.z.a(0, this, 200L);
+                com.tsf.extend.base.j.HandlerUtils.a(0, this, 200L);
             }
         };
         private Runnable P = new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.2
@@ -903,11 +903,11 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
         private void a(View view) {
             int iA = PersonalizationActivity.a(WallpaperDetail.this.getContext(), 2.0f);
-            com.tsf.extend.theme.i iVar = new com.tsf.extend.theme.i(-16334705);
+            com.tsf.extend.theme.ThemeRoundedDrawable iVar = new com.tsf.extend.theme.ThemeRoundedDrawable(-16334705);
             iVar.a(iA);
-            com.tsf.extend.theme.i iVar2 = new com.tsf.extend.theme.i(-16405376);
+            com.tsf.extend.theme.ThemeRoundedDrawable iVar2 = new com.tsf.extend.theme.ThemeRoundedDrawable(-16405376);
             iVar2.a(iA);
-            com.tsf.extend.theme.i iVar3 = new com.tsf.extend.theme.i(-2565928);
+            com.tsf.extend.theme.ThemeRoundedDrawable iVar3 = new com.tsf.extend.theme.ThemeRoundedDrawable(-2565928);
             iVar3.a(iA);
             StateListDrawable stateListDrawable = new StateListDrawable();
             stateListDrawable.addState(new int[]{R.attr.state_pressed}, iVar2);
@@ -1048,7 +1048,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.1
                     @Override // java.lang.Runnable
                     public void run() {
                         e.this.a(aVar, b.this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
@@ -1059,7 +1059,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
                 Log.d("WallpaperDetail", "onFail=" + this.b.name());
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.2
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.2
                     @Override // java.lang.Runnable
                     public void run() {
                         if (e.this.d.size() > 0) {
@@ -1079,7 +1079,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final List<com.tsf.extend.theme.ThemeModel> list) {
                 if (list != null) {
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.a.1
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.a.1
                         @Override // java.lang.Runnable
                         public void run() {
                             if (e.this.d != null) {
@@ -1097,9 +1097,9 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
         /* JADX INFO: Access modifiers changed from: private */
         public void a(com.tsf.extend.base.b.PagedListModel aVar, boolean z) {
-            com.tsf.extend.theme.p pVar = null;
-            if (aVar instanceof com.tsf.extend.theme.p) {
-                pVar = (com.tsf.extend.theme.p) aVar;
+            com.tsf.extend.theme.ThemePagedModel pVar = null;
+            if (aVar instanceof com.tsf.extend.theme.ThemePagedModel) {
+                pVar = (com.tsf.extend.theme.ThemePagedModel) aVar;
             }
             this.Q = pVar.b();
             if ((this.d.size() == 0) && aVar.a() != null && aVar.a().size() > 0) {
@@ -1311,10 +1311,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     if (bitmapDecodeFile == null) {
                         WallpaperDetail.this.J = false;
                     } else {
-                        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.9.1
+                        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.9.1
                             @Override // java.lang.Runnable
                             public void run() {
-                                int iB = (com.tsf.extend.base.j.p.b() - ((bitmapDecodeFile.getWidth() <= com.tsf.extend.base.j.p.b() / 2 ? 2 : 1) * bitmapDecodeFile.getWidth())) / 2;
+                                int iB = (com.tsf.extend.base.j.StorageUtils.b() - ((bitmapDecodeFile.getWidth() <= com.tsf.extend.base.j.StorageUtils.b() / 2 ? 2 : 1) * bitmapDecodeFile.getWidth())) / 2;
                                 if (iB < 0) {
                                     iB = 0;
                                 }
@@ -1391,7 +1391,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     cVar = new c(eVarA, bitmapS);
                 }
                 o();
-                com.tsf.extend.base.j.z.a(2, cVar);
+                com.tsf.extend.base.j.HandlerUtils.a(2, cVar);
                 return;
             }
             return;
@@ -1508,7 +1508,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         z.h().a(eVar.c());
         if (z) {
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.10
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.10
             @Override // java.lang.Runnable
             public void run() {
                 WallpaperDetail.this.l.setVisibility(8);
@@ -1519,7 +1519,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 eVar.B.setClickable(!z);
                 Toast.makeText(WallpaperDetail.this.f, z ? ResourceIds.g.wallpaper_set_suc : ResourceIds.g.wallpaper_set_fail, 1).show();
                 if (z) {
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.10.1
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.10.1
                         @Override // java.lang.Runnable
                         public void run() {
                             WallpaperDetail.this.ResourceIds.sendBroadcast(new Intent("com.ksmobile.launcher.FINISH_WALLPAPER_SETTING_ACTIVITY"));
@@ -1603,7 +1603,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<m.a, Bitmap> pair) {
             WallpaperDetail.this.a(pair);
-            if (com.tsf.extend.base.j.u.a(WallpaperDetail.this.getContext())) {
+            if (com.tsf.extend.base.j.ConnectivityUtils.a(WallpaperDetail.this.getContext())) {
             }
         }
     }
@@ -1689,7 +1689,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     /* JADX INFO: Access modifiers changed from: private */
     public boolean m() {
         System.currentTimeMillis();
-        return com.tsf.extend.base.j.u.b(getContext());
+        return com.tsf.extend.base.j.ConnectivityUtils.b(getContext());
     }
 
     private class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
@@ -1757,7 +1757,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                         i.a().a(new i.a() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.11
                             @Override // com.tsf.extend.wallpaper.i.a
                             public void a(i.a.EnumC0069a enumC0069a, Object obj, final i.a.b bVar) {
-                                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.11.1
+                                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.11.1
                                     @Override // java.lang.Runnable
                                     public void run() {
                                         Toast.makeText(WallpaperDetail.this.f, bVar == i.a.b.suc ? ResourceIds.g.delete_wallpaper_suc : ResourceIds.g.delete_wallpaper_fail, 1).show();
@@ -1862,7 +1862,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         if (Looper.myLooper() == Looper.getMainLooper()) {
             runnable.run();
         } else {
-            com.tsf.extend.base.j.z.a(0, runnable);
+            com.tsf.extend.base.j.HandlerUtils.a(0, runnable);
         }
     }
 
@@ -1917,7 +1917,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationEnd(Animation animation) {
-                com.tsf.extend.base.j.z.a(0, runnable, 1000L);
+                com.tsf.extend.base.j.HandlerUtils.a(0, runnable, 1000L);
             }
         });
         this.y.setVisibility(0);
@@ -1926,7 +1926,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
     @Override // com.tsf.extend.wallpaper.aa.a
     public void h() {
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.4
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.4
             @Override // java.lang.Runnable
             public void run() {
                 WallpaperDetail.this.z = true;
@@ -1982,7 +1982,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.g.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.g.1
                 @Override // java.lang.Runnable
                 public void run() {
                     WallpaperDetail.this.ResourceIds.finish();

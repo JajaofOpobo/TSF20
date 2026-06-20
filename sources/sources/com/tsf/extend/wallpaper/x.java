@@ -41,9 +41,9 @@ public class x {
 
     private void a(Context context) {
         this.b = context;
-        float fA = com.tsf.extend.base.j.i.a();
-        int iA = com.tsf.extend.base.j.j.a(context);
-        int iB = com.tsf.extend.base.j.j.b(context);
+        float fA = com.tsf.extend.base.j.DisplayUtils.a();
+        int iA = com.tsf.extend.base.j.ScreenUtils.a(context);
+        int iB = com.tsf.extend.base.j.ScreenUtils.b(context);
         this.h = iB - ((int) (270.0f * fA));
         this.g = (this.h * iA) / iB;
         this.i = (iA - this.g) / 2;
@@ -81,7 +81,7 @@ public class x {
         InputStream inputStreamOpenInputStream;
         int i;
         int i2;
-        int iA = com.tsf.extend.base.j.e.a(this.b, uri);
+        int iA = com.tsf.extend.base.j.BitmapUtils.a(this.b, uri);
         boolean z = (iA == 0 || (iA / 90) % 2 == 0) ? false : true;
         if (A) {
             Log.d("ClipWallpaper", "choosed wallpaper：rotateDegree:" + iA + " changeWH:" + z);
@@ -106,14 +106,14 @@ public class x {
         if (A) {
             Log.d("ClipWallpaper", "choosed wallpaper,after rotate：W:" + i3 + " H:" + i4);
         }
-        if (i3 / i4 > com.tsf.extend.base.j.j.a(this.b) / com.tsf.extend.base.j.j.b(this.b)) {
+        if (i3 / i4 > com.tsf.extend.base.j.ScreenUtils.a(this.b) / com.tsf.extend.base.j.ScreenUtils.b(this.b)) {
             i2 = this.h;
             i = (i3 * i2) / i4;
         } else {
             i = this.g;
             i2 = (i4 * i) / i3;
         }
-        int iA2 = com.tsf.extend.base.j.e.a(options, i, i2);
+        int iA2 = com.tsf.extend.base.j.BitmapUtils.a(options, i, i2);
         BitmapFactory.Options options2 = new BitmapFactory.Options();
         options2.inSampleSize = iA2;
         options2.inJustDecodeBounds = false;
@@ -126,7 +126,7 @@ public class x {
         if (bitmapDecodeStream == null) {
             return null;
         }
-        Bitmap bitmapA = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i, i2, iA);
+        Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i, i2, iA);
         if (A) {
             Log.d("ClipWallpaper", "after rotate for display：W:" + i + " H:" + i2);
         }
@@ -148,8 +148,8 @@ public class x {
         }
         int i = this.q;
         boolean z2 = (i == 0 || (i / 90) % 2 == 0) ? false : true;
-        int iA = (this.t || z) ? com.tsf.extend.base.j.j.a(this.b) : com.tsf.extend.base.j.j.a(this.b) * 2;
-        int iB = com.tsf.extend.base.j.j.b(this.b);
+        int iA = (this.t || z) ? com.tsf.extend.base.j.ScreenUtils.a(this.b) : com.tsf.extend.base.j.ScreenUtils.a(this.b) * 2;
+        int iB = com.tsf.extend.base.j.ScreenUtils.b(this.b);
         int i2 = (int) ((rectF.bottom - rectF.top) / iB);
         if (i2 == 0) {
             i2 = 1;

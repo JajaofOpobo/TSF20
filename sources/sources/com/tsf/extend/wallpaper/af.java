@@ -233,7 +233,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         } else {
             j2 = 200 - jCurrentTimeMillis;
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.2
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.2
             @Override // java.lang.Runnable
             public void run() {
                 if (af.this.a != null) {
@@ -241,7 +241,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
                 }
             }
         }, j2);
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.3
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.3
             @Override // java.lang.Runnable
             public void run() {
                 af.this.a(list, false);
@@ -258,7 +258,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str) {
-        if (com.tsf.extend.base.j.u.a(getContext())) {
+        if (com.tsf.extend.base.j.ConnectivityUtils.a(getContext())) {
         }
     }
 
@@ -386,7 +386,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
             if (af.this.a != null) {
                 af.this.a.b(false);
             }
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.b.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.af.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     af.this.d();

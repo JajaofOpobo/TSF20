@@ -20,7 +20,7 @@ import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.Shader;
 import com.censivn.C3DEngine.common.shader.ShaderColor;
-import com.tsf.extend.base.j.q;
+import com.tsf.extend.base.j.LogUtils;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.nio.Buffer;

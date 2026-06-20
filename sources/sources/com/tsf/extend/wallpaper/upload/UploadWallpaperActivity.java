@@ -20,8 +20,8 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.tsf.extend.base.j.i;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.DisplayUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.base.widget.pulltorefresh.e;
 import com.tsf.extend.ResourceIds;
 import java.io.Closeable;
@@ -69,7 +69,7 @@ public class UploadWallpaperActivity extends Activity {
         super.onDestroy();
         if (this.f != null && this.ResourceIds.getBackground() != null) {
             com.tsf.extend.base.view.b bVar = (com.tsf.extend.base.view.b) this.ResourceIds.getBackground();
-            com.tsf.extend.base.j.b.a(this.f, (Drawable) null);
+            com.tsf.extend.base.j.ViewCompatUtils.a(this.f, (Drawable) null);
             if (bVar != null) {
                 bVar.a().recycle();
                 bVar.a(null);
@@ -136,8 +136,8 @@ public class UploadWallpaperActivity extends Activity {
         options.inJustDecodeBounds = true;
         BitmapFactory.decodeStream(inputStreamF, null, options);
         a(inputStreamF);
-        int iA = com.tsf.extend.base.j.e.a(this, this.d);
-        return new int[]{iA, com.tsf.extend.base.j.e.a(options, iA, i.d() / 2, i.e() / 2)};
+        int iA = com.tsf.extend.base.j.BitmapUtils.a(this, this.d);
+        return new int[]{iA, com.tsf.extend.base.j.BitmapUtils.a(options, iA, i.d() / 2, i.e() / 2)};
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -149,7 +149,7 @@ public class UploadWallpaperActivity extends Activity {
             InputStream inputStreamF = f();
             Bitmap bitmapDecodeStream = BitmapFactory.decodeStream(inputStreamF, null, options);
             a(inputStreamF);
-            Bitmap bitmapA = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i.d(), i.e(), iArrD[0], 17, Bitmap.Config.RGB_565, true);
+            Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i.d(), i.e(), iArrD[0], 17, Bitmap.Config.RGB_565, true);
             if (bitmapA != null && !bitmapA.isRecycled()) {
                 a(new com.tsf.extend.base.view.b(bitmapA));
             }
@@ -159,7 +159,7 @@ public class UploadWallpaperActivity extends Activity {
     private InputStream f() {
         InputStream inputStreamOpenInputStream;
         try {
-            this.d = com.tsf.extend.base.j.e.c(this, this.d);
+            this.d = com.tsf.extend.base.j.BitmapUtils.c(this, this.d);
             if (this.d.getScheme().contains("file")) {
                 inputStreamOpenInputStream = new FileInputStream(new File(this.d.getPath()));
             } else if (!this.d.getScheme().contains("content")) {
@@ -199,7 +199,7 @@ public class UploadWallpaperActivity extends Activity {
             @Override // java.lang.Runnable
             public void run() {
                 if (!UploadWallpaperActivity.this.isFinishing()) {
-                    com.tsf.extend.base.j.b.a(UploadWallpaperActivity.this.f, drawable);
+                    com.tsf.extend.base.j.ViewCompatUtils.a(UploadWallpaperActivity.this.f, drawable);
                     if (Build.VERSION.SDK_INT >= 12) {
                         UploadWallpaperActivity.this.ResourceIds.setAlpha(0.0f);
                         UploadWallpaperActivity.this.ResourceIds.animate().setInterpolator(new DecelerateInterpolator()).alpha(0.8f).setDuration(300L);

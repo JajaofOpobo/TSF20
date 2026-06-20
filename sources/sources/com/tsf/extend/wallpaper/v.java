@@ -102,13 +102,13 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         } else {
             j = 200 - jCurrentTimeMillis;
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.2
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.2
             @Override // java.lang.Runnable
             public void run() {
                 v.this.ResourceIds.j();
             }
         }, j);
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.3
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.3
             @Override // java.lang.Runnable
             public void run() {
                 v.this.b(list, z);

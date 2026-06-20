@@ -11,21 +11,21 @@ public class CarrierUtils {
     private static String b = "";
 
     static {
-        __a__.add("460");
-        __a__.add("461");
-        __a__.add("441");
-        __a__.add("440");
-        __a__.add("450");
+        a.add("460");
+        a.add("461");
+        a.add("441");
+        a.add("440");
+        a.add("450");
     }
 
     public static boolean a(Context context) {
         if (TextUtils.isEmpty(b)) {
-            b = __d__.b(context);
+            b = AppEnvUtils.b(context);
         }
         return a(b);
     }
 
     private static boolean a(String str) {
-        return a == null || !__a__.contains(str);
+        return a == null || !a.contains(str);
     }
 }

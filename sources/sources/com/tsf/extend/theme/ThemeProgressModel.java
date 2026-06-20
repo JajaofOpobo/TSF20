@@ -1,6 +1,6 @@
 package com.tsf.extend.theme;
 
-import com.tsf.extend.theme.C;
+import com.tsf.extend.theme.ThemeCategoryListModel;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

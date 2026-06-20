@@ -16,9 +16,9 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
-import com.tsf.extend.base.j.h;
-import com.tsf.extend.base.j.o;
-import com.tsf.extend.base.j.r;
+import com.tsf.extend.base.j.AccountUtils;
+import com.tsf.extend.base.j.NetworkUtils;
+import com.tsf.extend.base.j.MD5Utils;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.diy.e;
 import com.tsf.extend.wallpaper.upload.UploadNotificationManager;
@@ -320,8 +320,8 @@ public class UploadWallpaperService extends Service {
             StringBuilder sb = new StringBuilder();
             if (aVar.a(a.APPLY) || aVar.a(a.SUBMIT)) {
                 String string = jSONObject.getString("theme_pkg");
-                sb.append(String.format("mcc=%s&", com.tsf.extend.base.j.d.b(context)));
-                sb.append(String.format("did=%s&", com.tsf.extend.base.j.d.b()));
+                sb.append(String.format("mcc=%s&", com.tsf.extend.base.j.AppEnvUtils.b(context)));
+                sb.append(String.format("did=%s&", com.tsf.extend.base.j.AppEnvUtils.b()));
                 sb.append(String.format("themepn=%s&", string));
             }
             if (aVar.a(a.APPLY)) {
@@ -366,9 +366,9 @@ public class UploadWallpaperService extends Service {
 
     public String b() throws UnsupportedEncodingException {
         long jCurrentTimeMillis = System.currentTimeMillis();
-        String strC = com.tsf.extend.base.j.d.c();
-        String strB = com.tsf.extend.base.j.d.b(this) == null ? "" : com.tsf.extend.base.j.d.b(this);
-        String strA = r.a(com.tsf.extend.base.j.d.b());
+        String strC = com.tsf.extend.base.j.AppEnvUtils.c();
+        String strB = com.tsf.extend.base.j.AppEnvUtils.b(this) == null ? "" : com.tsf.extend.base.j.AppEnvUtils.b(this);
+        String strA = r.a(com.tsf.extend.base.j.AppEnvUtils.b());
         String strF = f();
         String strEncode = "";
         String strEncode2 = "";

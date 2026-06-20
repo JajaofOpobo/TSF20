@@ -19,9 +19,9 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.extend.base.j.ab;
-import com.tsf.extend.base.j.p;
-import com.tsf.extend.base.j.s;
+import com.tsf.extend.base.j.TypefaceCache;
+import com.tsf.extend.base.j.StorageUtils;
+import com.tsf.extend.base.j.RippleUtils;
 import com.tsf.extend.ResourceIds;
 import java.lang.ref.WeakReference;
 
@@ -160,7 +160,7 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
                     this.r.setTypeface(typefaceA, 1);
                     this.s.setTextColor(color);
                     this.r.setTextColor(Color.parseColor("#4480F7"));
-                    com.tsf.extend.base.j.b.a(this.q, (Drawable) null);
+                    com.tsf.extend.base.j.ViewCompatUtils.a(this.q, (Drawable) null);
                     if (Build.VERSION.SDK_INT >= 12) {
                         s.a(this.p, true);
                     }
@@ -168,7 +168,7 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
                     this.s.setTypeface(typefaceA, 1);
                     this.r.setTextColor(color);
                     this.s.setTextColor(Color.parseColor("#4480F7"));
-                    com.tsf.extend.base.j.b.a(this.p, (Drawable) null);
+                    com.tsf.extend.base.j.ViewCompatUtils.a(this.p, (Drawable) null);
                     if (Build.VERSION.SDK_INT >= 12) {
                         s.a(this.q, true);
                     }

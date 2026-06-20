@@ -2,7 +2,7 @@ package com.ksmobile.a.a;
 
 import com.ksmobile.launcher.a.a.b;
 import com.tsf.extend.base.ResultCallback;
-import com.tsf.extend.base.j.q;
+import com.tsf.extend.base.j.LogUtils;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a implements d {

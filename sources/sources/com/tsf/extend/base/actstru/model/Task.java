@@ -4,13 +4,13 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class j implements Comparable<j>, Callable<d> {
+public class Task implements Comparable<Task>, Callable<EventData> {
     public static AtomicInteger c = new AtomicInteger(0);
     private int a = c.getAndIncrement();
     private String b = "";
     private String d = "";
     private int e = hashCode();
-    private i f = new i();
+    private EventTarget f = new EventTarget();
 
     protected int b() {
         return this.e;
@@ -18,13 +18,13 @@ public class j implements Comparable<j>, Callable<d> {
 
     @Override // java.util.concurrent.Callable
     /* JADX INFO: renamed from: c, reason: merged with bridge method [inline-methods] */
-    public final d call() {
-        d dVarA = a();
+    public final EventData call() {
+        EventData dVarA = a();
         a(dVarA);
         return dVarA;
     }
 
-    protected boolean a(d dVar) {
+    protected boolean a(EventData dVar) {
         if (this.f == null || dVar == null) {
             return false;
         }
@@ -33,13 +33,13 @@ public class j implements Comparable<j>, Callable<d> {
         return true;
     }
 
-    protected d a() {
+    protected EventData a() {
         return null;
     }
 
     @Override // java.lang.Comparable
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public int compareTo(j jVar) {
+    public int compareTo(Task jVar) {
         if (this.a > jVar.a) {
             return 1;
         }

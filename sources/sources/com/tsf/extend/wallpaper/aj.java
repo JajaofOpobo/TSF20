@@ -27,7 +27,7 @@ public class aj {
         boolean z4 = true;
         boolean z5 = false;
         WallpaperManager wallpaperManager = WallpaperManager.getInstance(context);
-        boolean zA = com.tsf.extend.base.j.v.a();
+        boolean zA = com.tsf.extend.base.j.BuildUtils.a();
         if (zA) {
             a(context, wallpaperManager, bitmap.getWidth(), bitmap.getHeight(), z, true);
         }
@@ -77,8 +77,8 @@ public class aj {
         b bVar;
         b bVar2;
         ByteArrayInputStream byteArrayInputStream = null;
-        int iA = com.tsf.extend.base.j.j.a(context);
-        int iB = com.tsf.extend.base.j.j.b(context);
+        int iA = com.tsf.extend.base.j.ScreenUtils.a(context);
+        int iB = com.tsf.extend.base.j.ScreenUtils.b(context);
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
         int i = (z ? 1 : 2) * iA;
@@ -86,7 +86,7 @@ public class aj {
             bitmapA = null;
         } else {
             try {
-                bitmapA = com.tsf.extend.base.j.e.a(bitmap, i, iB);
+                bitmapA = com.tsf.extend.base.j.BitmapUtils.a(bitmap, i, iB);
             } catch (Throwable th) {
                 bitmapA = null;
             }
@@ -149,10 +149,10 @@ public class aj {
         ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream;
         WallpaperManager wallpaperManager = WallpaperManager.getInstance(context);
         boolean z5 = false;
-        int iA = com.tsf.extend.base.j.j.a(context);
-        int iB = com.tsf.extend.base.j.j.b(context);
+        int iA = com.tsf.extend.base.j.ScreenUtils.a(context);
+        int iB = com.tsf.extend.base.j.ScreenUtils.b(context);
         int i3 = z ? iA : iA * 2;
-        boolean zA = com.tsf.extend.base.j.v.a();
+        boolean zA = com.tsf.extend.base.j.BuildUtils.a();
         if (zA) {
             if (i != -1 && i2 != -1) {
                 a(context, wallpaperManager, i, i2, z, true);
@@ -239,11 +239,11 @@ public class aj {
     public static void a(Context context, WallpaperManager wallpaperManager, int i, int i2, boolean z, boolean z2) {
         int i3;
         int i4;
-        int iA = com.tsf.extend.base.j.j.a(context);
+        int iA = com.tsf.extend.base.j.ScreenUtils.a(context);
         if (!z) {
             iA *= 2;
         }
-        int iB = com.tsf.extend.base.j.j.b(context);
+        int iB = com.tsf.extend.base.j.ScreenUtils.b(context);
         if (Build.VERSION.SDK_INT > 19) {
             a(wallpaperManager, iA, iB, z2);
             return;
@@ -269,7 +269,7 @@ public class aj {
 
     private static void a(final WallpaperManager wallpaperManager, final int i, final int i2, boolean z) {
         if (z) {
-            com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.1
+            com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.1
                 @Override // java.lang.Runnable
                 public void run() {
                     wallpaperManager.suggestDesiredDimensions(i, i2);
@@ -277,11 +277,11 @@ public class aj {
             });
         } else {
             final int i3 = i - 1;
-            com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.2
+            com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.2
                 @Override // java.lang.Runnable
                 public void run() {
                     wallpaperManager.suggestDesiredDimensions(i3, i2);
-                    com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.2.1
+                    com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.aj.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             wallpaperManager.suggestDesiredDimensions(i, i2);

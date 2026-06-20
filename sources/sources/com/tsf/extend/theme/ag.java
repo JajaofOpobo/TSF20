@@ -60,7 +60,7 @@ public class ag extends com.tsf.extend.base.a.ApiRequestImpl {
     }
 
     protected void e() {
-        a("vga", com.tsf.extend.base.j.p.e());
+        a("vga", com.tsf.extend.base.j.StorageUtils.e());
     }
 
     public void b(String str, String str2) {

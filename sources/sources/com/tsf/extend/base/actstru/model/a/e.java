@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.extend.base.actstru.model.l;
+import com.tsf.extend.base.actstru.model.TypefaceCache;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public final class e {

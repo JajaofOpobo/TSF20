@@ -45,7 +45,7 @@ public class BrowserUtils {
         try {
             resolveInfoResolveActivity = packageManager.resolveActivity(intent, 65536);
         } catch (Exception e) {
-            __e__.printStackTrace();
+            e.printStackTrace();
             resolveInfoResolveActivity = null;
         }
         if (resolveInfoResolveActivity != null && resolveInfoResolveActivity.activityInfo != null && resolveInfoResolveActivity.activityInfo.packageName != null && !resolveInfoResolveActivity.activityInfo.packageName.equals("android")) {
@@ -82,7 +82,7 @@ public class BrowserUtils {
                 arrayList = new ArrayList();
                 for (AssetReaderUtils.a aVar : list) {
                     if (aVar.b != null) {
-                        intent2.setPackage(aVar.__b__.getPackageName());
+                        intent2.setPackage(aVar.b.getPackageName());
                         try {
                             listQueryIntentActivities = packageManager.queryIntentActivities(intent2, 0);
                         } catch (Exception e) {
@@ -90,7 +90,7 @@ public class BrowserUtils {
                         }
                         if (listQueryIntentActivities != null) {
                             for (ResolveInfo resolveInfo : listQueryIntentActivities) {
-                                if (aVar.__b__.getClassName().equals(resolveInfo.activityInfo.name)) {
+                                if (aVar.b.getClassName().equals(resolveInfo.activityInfo.name)) {
                                     return resolveInfo;
                                 }
                             }

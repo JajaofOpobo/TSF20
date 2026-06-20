@@ -41,7 +41,7 @@ public class CustomWallpaperShadowView extends View {
         }
         this.b = new Paint();
         this.b.setStyle(Paint.Style.STROKE);
-        this.b.setStrokeWidth(1.0f * com.tsf.extend.base.j.p.a());
+        this.b.setStrokeWidth(1.0f * com.tsf.extend.base.j.StorageUtils.a());
         this.b.setColor(-855638017);
         this.a = getResources().getColor(ResourceIds.b.wallpaper_clip_shadow);
         setDrawingCacheEnabled(false);

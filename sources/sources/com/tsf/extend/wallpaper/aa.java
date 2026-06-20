@@ -227,7 +227,7 @@ public class aa {
     private void b(final boolean z, final m mVar) {
         int i = 1;
         if (mVar != null) {
-            com.android.volley.toolbox.m mVar2 = new com.android.volley.toolbox.m(i, String.format("https://cml.ksmobile.com/WallPaper/changeWallPaperAssist?source=launch_wp_client&mcc=%s", com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b())), new n.b<String>() { // from class: com.tsf.extend.wallpaper.aa.6
+            com.android.volley.toolbox.m mVar2 = new com.android.volley.toolbox.m(i, String.format("https://cml.ksmobile.com/WallPaper/changeWallPaperAssist?source=launch_wp_client&mcc=%s", com.tsf.extend.base.j.AppEnvUtils.b(com.tsf.extend.AppContextHolder.b())), new n.b<String>() { // from class: com.tsf.extend.wallpaper.aa.6
                 @Override // com.android.volley.n.b
                 public void a(String str) {
                 }

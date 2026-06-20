@@ -33,7 +33,7 @@ public class a implements d {
     @Override // com.tsf.extend.theme.a.d
     public e a() {
         String strSubstring = "";
-        String strB = com.tsf.extend.base.j.d.b();
+        String strB = com.tsf.extend.base.j.AppEnvUtils.b();
         if (TextUtils.isEmpty(strB)) {
             return null;
         }

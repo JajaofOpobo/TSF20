@@ -152,7 +152,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     protected void onCreate(Bundle bundle) {
         File file;
         String str;
-        com.tsf.extend.base.j.p.a((Activity) this);
+        com.tsf.extend.base.j.StorageUtils.a((Activity) this);
         com.tsf.extend.wallpaper.a.WallpaperChangeManager.a(this);
         z.h();
         getWindow().addFlags(ItemInfo.APP_VERSION_CODE);
@@ -166,7 +166,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         super.onCreate(bundle);
         c((Context) this);
         aa.a().a(getApplicationContext());
-        this.f = com.tsf.extend.base.j.p.c(this);
+        this.f = com.tsf.extend.base.j.StorageUtils.c(this);
         com.tsf.extend.base.b.PagedListModel(getIntent().getStringExtra("theme_entry"));
         int intExtra = getIntent().getIntExtra("target", 1);
         e = a((Context) this).getInt("use_new_icon", 2) == 2;
@@ -205,8 +205,8 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         if (intExtra == 2) {
             String stringExtra3 = getIntent().getStringExtra("id");
             String stringExtra4 = getIntent().getStringExtra("inlet");
-            if (com.tsf.extend.theme.h.a(stringExtra4)) {
-                String strB = com.tsf.extend.theme.h.b(stringExtra4);
+            if (com.tsf.extend.theme.ThemePromotionHelper.a(stringExtra4)) {
+                String strB = com.tsf.extend.theme.ThemePromotionHelper.b(stringExtra4);
                 if (strB == null) {
                     strB = "";
                 }
@@ -263,7 +263,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             if ("2".equals(str3)) {
                 themeDetail.setFromInlet("5");
             }
-            if (com.tsf.extend.theme.h.a(str3)) {
+            if (com.tsf.extend.theme.ThemePromotionHelper.a(str3)) {
                 themeDetail.setFromTab(str2);
             }
             a(str3, themeDetail);
@@ -404,11 +404,11 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         com.tsf.extend.base.b.PagedListModel("");
         this.s = true;
         if (this.u != null) {
-            com.tsf.extend.base.j.z.b(0, this.u);
+            com.tsf.extend.base.j.HandlerUtils.b(0, this.u);
             this.u = null;
         }
         if (this.v != null) {
-            com.tsf.extend.base.j.z.b(0, this.v);
+            com.tsf.extend.base.j.HandlerUtils.b(0, this.v);
             this.v = null;
         }
         com.tsf.extend.theme.x.a();
@@ -492,7 +492,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                 this.c = false;
                 this.a = new AnimatorSet();
                 this.f = this.b.getTranslationY();
-                this.g = com.tsf.extend.base.j.i.a(this.d);
+                this.g = com.tsf.extend.base.j.DisplayUtils.a(this.d);
                 ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(this.b, "translationY", this.f, this.g);
                 ObjectAnimator objectAnimatorOfFloat2 = ObjectAnimator.ofFloat(this.b, "alpha", 1.0f, 0.5f);
                 this.a.setDuration(this.e);
@@ -512,7 +512,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                 this.c = true;
                 this.a = new AnimatorSet();
                 this.f = this.b.getTranslationY();
-                this.g = -com.tsf.extend.base.j.i.a(this.d);
+                this.g = -com.tsf.extend.base.j.DisplayUtils.a(this.d);
                 ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(this.b, "translationY", this.f, this.g);
                 ObjectAnimator objectAnimatorOfFloat2 = ObjectAnimator.ofFloat(this.b, "alpha", 0.5f, 1.0f);
                 this.a.setDuration(this.e);
@@ -525,7 +525,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             if (this.b != null && !this.c) {
                 this.c = true;
                 this.b.setAlpha(1.0f);
-                this.b.setTranslationY(-com.tsf.extend.base.j.i.a(this.d));
+                this.b.setTranslationY(-com.tsf.extend.base.j.DisplayUtils.a(this.d));
             }
         }
 
@@ -641,7 +641,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
     public void a(final com.tsf.extend.base.b.PagedListModel aVar, final com.tsf.extend.base.b.PagedListModel aVar2) {
         if (this.u != null) {
-            com.tsf.extend.base.j.z.b(0, this.u);
+            com.tsf.extend.base.j.HandlerUtils.b(0, this.u);
             this.u = null;
         }
         this.u = new Runnable() { // from class: com.tsf.extend.wallpaper.PersonalizationActivity.2
@@ -671,7 +671,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                 }
             }
         };
-        com.tsf.extend.base.j.z.a(0, this.u);
+        com.tsf.extend.base.j.HandlerUtils.a(0, this.u);
     }
 
     static class m implements ao.a {

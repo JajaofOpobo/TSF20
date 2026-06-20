@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h {
+public class EventChannel {
     private String a;
     private volatile boolean b = false;
     private ConcurrentLinkedQueue<e> c = new ConcurrentLinkedQueue<>();

@@ -12,15 +12,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.BaseDataProvider;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ao;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.ThemeModel;
-import com.tsf.extend.theme.p;
+import com.tsf.extend.theme.ThemePagedModel;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.theme.x;
@@ -99,7 +99,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         this.g.setVisibility(8);
         this.g.setClickable(false);
         this.i.setVisibility(0);
-        this.i.getLayoutParams().height = com.tsf.extend.base.j.i.a(10.0f);
+        this.i.getLayoutParams().height = com.tsf.extend.base.j.DisplayUtils.a(10.0f);
         this.i.requestLayout();
     }
 
@@ -121,7 +121,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     public void e() {
         if (this.d != null && this.d.size() > 0) {
             this.j = new a(a.b.LoadMore);
-            v.h().a(this.j, a.b.LoadMore, this.l);
+            ThemeDataProvider.h().a(this.j, a.b.LoadMore, this.l);
         }
     }
 
@@ -223,7 +223,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                                     kVarC.d(false);
                                 }
                                 for (ThemeModel kVar : list) {
-                                    if (kVar != null && !(kVar instanceof aq)) {
+                                    if (kVar != null && !(kVar instanceof AbstractThemeProvider)) {
                                         if (kVar.g().equals(kVarA.g())) {
                                             kVarA.d(true);
                                         }
@@ -323,7 +323,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.n
     public void a(String str, PersonalizationActivity.n.a aVar) {
         if (aVar != null) {
-            v.h().a(this);
+            ThemeDataProvider.h().a(this);
         }
     }
 
@@ -343,8 +343,8 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
         if (strF != null && strF.startsWith("DIY://")) {
             for (ThemeModel kVar : list) {
-                if (kVar instanceof aq) {
-                    if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
+                if (kVar instanceof AbstractThemeProvider) {
+                    if (!TextUtils.isEmpty(strF) && strF.contains(((AbstractThemeProvider) kVar).I())) {
                         kVar.b(true);
                     } else {
                         kVar.b(false);
@@ -374,7 +374,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                 this.b.b(false);
             }
             a(aVar.a(), z);
-            v.h().a(this);
+            ThemeDataProvider.h().a(this);
         }
     }
 

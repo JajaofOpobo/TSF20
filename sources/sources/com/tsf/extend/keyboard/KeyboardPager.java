@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.android.volley.l;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;

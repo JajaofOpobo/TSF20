@@ -2,18 +2,18 @@ package com.tsf.extend.theme.cmclub;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;
-import com.tsf.extend.base.j.z;
-import com.tsf.extend.theme.j;
+import com.tsf.extend.base.j.HandlerUtils;
+import com.tsf.extend.theme.ThemeShareHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
     Context a;
     private j.a b = new j.a() { // from class: com.tsf.extend.theme.cmclub.a.2
-        @Override // com.tsf.extend.theme.j.a
+        @Override // com.tsf.extend.theme.ThemeShareHandler.a
         public void a(String str) {
         }
 
-        @Override // com.tsf.extend.theme.j.a
+        @Override // com.tsf.extend.theme.ThemeShareHandler.a
         public void a() {
         }
     };

@@ -10,7 +10,7 @@ import android.widget.AdapterView;
 import com.tsf.extend.theme.al;
 import com.tsf.extend.theme.am;
 import com.tsf.extend.theme.an;
-import com.tsf.extend.theme.j;
+import com.tsf.extend.theme.ThemeShareHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShareIntentHandler extends BaseShareHandler {

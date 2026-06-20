@@ -36,9 +36,9 @@ public class f extends ViewGroup {
         this.l = 5;
         this.d = true;
         this.c = new a();
-        this.h = com.tsf.extend.base.j.i.a(12.0f);
-        this.i = com.tsf.extend.base.j.i.a(16.0f);
-        this.j = com.tsf.extend.base.j.i.a(16.0f);
+        this.h = com.tsf.extend.base.j.DisplayUtils.a(12.0f);
+        this.i = com.tsf.extend.base.j.DisplayUtils.a(16.0f);
+        this.j = com.tsf.extend.base.j.DisplayUtils.a(16.0f);
         setPadding(this.j, 0, this.j, 0);
     }
 

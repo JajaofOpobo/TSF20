@@ -3,7 +3,7 @@ package com.tsf.extend.base.g;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
-import com.tsf.extend.base.j.n;
+import com.tsf.extend.base.j.BrowserUtils;
 import com.tsf.extend.ResourceIds;
 import java.net.URLEncoder;
 

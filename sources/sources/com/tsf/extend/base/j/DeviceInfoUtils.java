@@ -12,7 +12,7 @@ public class DeviceInfoUtils {
         try {
             return Settings.Secure.getString(context.getContentResolver(), "android_id");
         } catch (Exception e) {
-            __e__.printStackTrace();
+            e.printStackTrace();
             return "";
         }
     }
@@ -78,7 +78,7 @@ public class DeviceInfoUtils {
         try {
             str = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
         } catch (Exception e) {
-            __e__.printStackTrace();
+            e.printStackTrace();
         }
         return str != null ? str : "";
     }

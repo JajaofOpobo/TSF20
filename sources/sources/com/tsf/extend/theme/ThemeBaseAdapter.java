@@ -61,7 +61,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
     private void f() {
         this.r = this.b.getResources().getDrawable(ResourceIds.d.theme_detail_favorite_btn_checked);
         this.r.setColorFilter(-3355444, PorterDuff.Mode.SRC_IN);
-        int iA = com.tsf.extend.base.j.i.a(15.0f);
+        int iA = com.tsf.extend.base.j.DisplayUtils.a(15.0f);
         this.r.setBounds(0, 0, iA, iA);
     }
 
@@ -176,7 +176,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
         ((ImageView) dVar.e).setImageResource(item.a.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
         dVar.e.setTag(item.a);
         if (!TextUtils.isEmpty(item.a.m())) {
-            v.h().c(item.a.m(), this.d);
+            ThemeDataProvider.h().c(item.a.m(), this.d);
         }
         if (item.b != null) {
             dVar.t.setVisibility(0);
@@ -199,7 +199,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
             ((ImageView) dVar.s).setImageResource(item.b.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
             dVar.s.setTag(item.b);
             if (!TextUtils.isEmpty(item.b.m())) {
-                v.h().c(item.b.m(), this.d);
+                ThemeDataProvider.h().c(item.b.m(), this.d);
             }
         } else {
             dVar.t.setVisibility(4);
@@ -225,7 +225,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
             ((ImageView) dVar.l).setImageResource(item.c.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
             dVar.l.setTag(item.c);
             if (!TextUtils.isEmpty(item.c.m())) {
-                v.h().c(item.c.m(), this.d);
+                ThemeDataProvider.h().c(item.c.m(), this.d);
             }
         } else {
             dVar.m.setVisibility(4);
@@ -295,7 +295,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
     }
 
     private void a(TextView textView, int i) {
-        textView.setText(k.e(i));
+        textView.setText(ThemeModel.e(i));
         textView.setCompoundDrawables(null, null, this.r, null);
     }
 

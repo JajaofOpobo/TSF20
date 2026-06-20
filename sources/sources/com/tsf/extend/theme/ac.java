@@ -29,7 +29,7 @@ public class ac extends com.tsf.extend.base.a.ApiRequestImpl {
     }
 
     protected void f() {
-        a("vga", com.tsf.extend.base.j.p.e());
+        a("vga", com.tsf.extend.base.j.StorageUtils.e());
     }
 
     protected void c(String str) {

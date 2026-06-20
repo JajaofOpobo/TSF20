@@ -122,8 +122,8 @@ public class AppEnvUtils {
         BitmapDrawable bitmapDrawable;
         Bitmap bitmap;
         synchronized (a) {
-            if (b != null && __b__.get() != null && (bitmap = __b__.get().getBitmap()) != null && !bitmap.isRecycled()) {
-                return __b__.get();
+            if (b != null && b.get() != null && (bitmap = b.get().getBitmap()) != null && !bitmap.isRecycled()) {
+                return b.get();
             }
             if (z) {
                 bitmapDrawableC = a(wallpaperManager);
@@ -136,7 +136,7 @@ public class AppEnvUtils {
             wallpaperManager.forgetLoadedWallpaper();
             synchronized (a) {
                 b = new SoftReference<>(bitmapDrawableC);
-                bitmapDrawable = __b__.get();
+                bitmapDrawable = b.get();
             }
             return bitmapDrawable;
         }

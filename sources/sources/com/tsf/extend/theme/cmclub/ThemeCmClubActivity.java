@@ -33,13 +33,13 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.CustomActivity;
-import com.tsf.extend.base.j.p;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.StorageUtils;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
-import com.tsf.extend.theme.j;
+import com.tsf.extend.theme.ThemeShareHandler;
 import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.BufferedInputStream;
@@ -86,7 +86,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     private boolean r;
     private String s;
     private int v;
-    private com.tsf.extend.theme.B y;
+    private com.tsf.extend.theme.DiyWallpaperProvider y;
     private b z;
     private final String i = "ThemeCmClubActivity";
     private boolean j = false;
@@ -224,7 +224,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         } catch (Exception e2) {
         }
         if (Build.VERSION.SDK_INT >= 19) {
-            String strC = com.tsf.extend.base.j.d.c(this);
+            String strC = com.tsf.extend.base.j.AppEnvUtils.c(this);
             if (!TextUtils.isEmpty(strC) && strC.startsWith("99999999")) {
                 WebView.setWebContentsDebuggingEnabled(true);
             }
@@ -238,7 +238,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         if (Build.VERSION.SDK_INT >= 16) {
             this.g.getSettings().setAllowUniversalAccessFromFileURLs(true);
         }
-        this.w[2] = this.w[2] + "/?mcc=" + com.tsf.extend.base.j.d.b(h.b()) + "&ver=" + com.tsf.extend.base.j.d.c();
+        this.w[2] = this.w[2] + "/?mcc=" + com.tsf.extend.base.j.AppEnvUtils.b(h.b()) + "&ver=" + com.tsf.extend.base.j.AppEnvUtils.c();
         h();
     }
 
@@ -284,7 +284,7 @@ public class ThemeCmClubActivity extends CustomActivity {
             if (this.K != null) {
                 Uri data = (intent == null || i2 != -1) ? null : intent.getData();
                 if (data != null) {
-                    data = com.tsf.extend.base.j.e.c(this, data);
+                    data = com.tsf.extend.base.j.BitmapUtils.c(this, data);
                 }
                 this.K.onReceiveValue(data);
                 this.K = null;
@@ -608,7 +608,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         }
 
         @Override // com.tsf.extend.theme.diy.e.a
-        public void a(com.tsf.extend.theme.B bVar) {
+        public void a(com.tsf.extend.theme.DiyWallpaperProvider bVar) {
             ThemeCmClubActivity.this.x = 100;
             ThemeCmClubActivity.this.y = bVar;
             ThemeCmClubActivity.this.i();
@@ -616,14 +616,14 @@ public class ThemeCmClubActivity extends CustomActivity {
     }
 
     public void b(String str) {
-        new j().a(this.f, 2, "https://cml.ksmobile.com/diy/detail?d=" + str, new com.tsf.extend.theme.B(), new j.a() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.12
-            @Override // com.tsf.extend.theme.j.a
+        new j().a(this.f, 2, "https://cml.ksmobile.com/diy/detail?d=" + str, new com.tsf.extend.theme.DiyWallpaperProvider(), new j.a() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.12
+            @Override // com.tsf.extend.theme.ThemeShareHandler.a
             public void a(String str2) {
                 if (str2 != null) {
                 }
             }
 
-            @Override // com.tsf.extend.theme.j.a
+            @Override // com.tsf.extend.theme.ThemeShareHandler.a
             public void a() {
             }
         });
@@ -826,7 +826,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         if (file.exists()) {
             file.delete();
         }
-        BitmapDrawable bitmapDrawableA = com.tsf.extend.base.j.d.a(WallpaperManager.getInstance(context));
+        BitmapDrawable bitmapDrawableA = com.tsf.extend.base.j.AppEnvUtils.a(WallpaperManager.getInstance(context));
         if (bitmapDrawableA == null || (bitmap = bitmapDrawableA.getBitmap()) == null) {
             return null;
         }
@@ -932,7 +932,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         int height;
         int i4;
         int i5;
-        int iA = com.tsf.extend.base.j.e.a(context, uri);
+        int iA = com.tsf.extend.base.j.BitmapUtils.a(context, uri);
         boolean z2 = (iA == 0 || (iA / 90) % 2 == 0) ? false : true;
         try {
             inputStreamOpenInputStream = ("content".equals(uri.getScheme()) || "file".equals(uri.getScheme())) ? context.getContentResolver().openInputStream(uri) : new FileInputStream(new File(uri.toString()));
@@ -947,7 +947,7 @@ public class ThemeCmClubActivity extends CustomActivity {
                 BitmapFactory.Options options2 = new BitmapFactory.Options();
                 options2.inJustDecodeBounds = true;
                 BitmapFactory.decodeStream(inputStreamOpenInputStream, null, options2);
-                int iA2 = com.tsf.extend.base.j.e.a(options2, z2 ? i2 : i, z2 ? i : i2);
+                int iA2 = com.tsf.extend.base.j.BitmapUtils.a(options2, z2 ? i2 : i, z2 ? i : i2);
                 BitmapFactory.Options options3 = new BitmapFactory.Options();
                 options3.inSampleSize = iA2;
                 options3.inJustDecodeBounds = false;
@@ -995,10 +995,10 @@ public class ThemeCmClubActivity extends CustomActivity {
                     i5 = i2;
                 }
                 if (bitmapDecodeStream != null) {
-                    bitmapDecodeStream = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i4, i5, iA, 17, Bitmap.Config.ARGB_8888, true);
+                    bitmapDecodeStream = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i4, i5, iA, 17, Bitmap.Config.ARGB_8888, true);
                 }
             } else if (bitmapDecodeStream != null) {
-                bitmapDecodeStream = com.tsf.extend.base.j.e.a(bitmapDecodeStream, i, i2, iA, 17, Bitmap.Config.ARGB_8888, true);
+                bitmapDecodeStream = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i, i2, iA, 17, Bitmap.Config.ARGB_8888, true);
             }
             return bitmapDecodeStream;
         } catch (Throwable th3) {

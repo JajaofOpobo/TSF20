@@ -95,14 +95,14 @@ public class ThemeXmlParser {
         final String packageName = context.getPackageName();
         return new a<f>() { // from class: com.tsf.extend.theme.ae.1
             /* JADX WARN: Multi-variable type inference failed */
-            /* JADX WARN: Type inference failed for: r0v2, types: [R, com.tsf.extend.theme.f] */
+            /* JADX WARN: Type inference failed for: r0v2, types: [R, com.tsf.extend.theme.ThemeSystemModel] */
             @Override // com.tsf.extend.theme.ae.a
             public boolean a(String str) {
                 if (!"themeInfo".equals(str)) {
                     return false;
                 }
-                this.c = new f();
-                ((f) this.c).c(packageName);
+                this.c = new ThemeSystemModel();
+                ((ThemeSystemModel) this.c).c(packageName);
                 return true;
             }
 
@@ -110,9 +110,9 @@ public class ThemeXmlParser {
             @Override // com.tsf.extend.theme.ae.a
             public void a(TypedArray typedArray, String str) {
                 if ("info".equals(str)) {
-                    ae.c(map, typedArray, (f) this.c);
+                    ae.c(map, typedArray, (ThemeSystemModel) this.c);
                 } else if ("pic".equals(str)) {
-                    ae.d(map, typedArray, (f) this.c);
+                    ae.d(map, typedArray, (ThemeSystemModel) this.c);
                 }
             }
         }.a(context, packageName, "theme_info", map);

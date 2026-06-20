@@ -1,7 +1,7 @@
 package com.tsf.extend.base.actstru.model;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class EventData {
     private String a = "";
     private String b = "";
     private i c = null;

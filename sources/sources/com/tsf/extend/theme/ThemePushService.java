@@ -103,7 +103,7 @@ public class ThemePushService extends IntentService {
         int intExtra = intent.getIntExtra("action", -1);
         if (intExtra != -1) {
             if (bitmap == null) {
-                com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemePushService.7
+                com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemePushService.7
                     @Override // java.lang.Runnable
                     public void run() {
                         Bitmap bitmapA = ThemePushService.this.a(intent);

@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.f.JsonRequestBuilder;
-import com.tsf.extend.theme.C;
+import com.tsf.extend.theme.ThemeCategoryListModel;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -65,9 +65,9 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         com.tsf.extend.base.i.InstallReferrerHandler.a().a("1");
         com.tsf.extend.base.i.InstallReferrerHandler.a().a(new a.InterfaceC0050a() { // from class: com.tsf.extend.theme.ThemeDataProvider.1
         });
-        this.c = com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b());
+        this.c = com.tsf.extend.base.j.AppEnvUtils.b(com.tsf.extend.AppContextHolder.b());
         this.c = this.c == null ? "null" : this.c;
-        this.d = com.tsf.extend.base.j.d.b();
+        this.d = com.tsf.extend.base.j.AppEnvUtils.b();
         this.d = TextUtils.isEmpty(this.d) ? "null" : this.d;
     }
 
@@ -156,7 +156,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         String string;
         String string2 = null;
         if ("DATA_PLAY".equals(str)) {
-            strD = String.format("https://cml.ksmobile.com/ThemeBanner/getBannerList?mcc=%s&w=%d&h=%d&isnew=1&f=%s", this.c, Integer.valueOf(com.tsf.extend.base.j.p.b()), Integer.valueOf(com.tsf.extend.base.j.p.c()), this.d);
+            strD = String.format("https://cml.ksmobile.com/ThemeBanner/getBannerList?mcc=%s&w=%d&h=%d&isnew=1&f=%s", this.c, Integer.valueOf(com.tsf.extend.base.j.StorageUtils.b()), Integer.valueOf(com.tsf.extend.base.j.StorageUtils.c()), this.d);
         } else if (!TextUtils.isEmpty(str) && str.contains("DATA_RELATIVE")) {
             String[] strArrSplit = str.split("_");
             if (strArrSplit == null || strArrSplit.length < 3) {
@@ -391,8 +391,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return eVar;
     }
 
-    private com.tsf.extend.theme.A c(JSONObject jSONObject) {
-        com.tsf.extend.theme.A aVar = new com.tsf.extend.theme.A();
+    private com.tsf.extend.theme.ThemeCategoryModel c(JSONObject jSONObject) {
+        com.tsf.extend.theme.ThemeCategoryModel aVar = new com.tsf.extend.theme.ThemeCategoryModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -583,13 +583,13 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<ThemeModel>> interfaceC0048a) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9
             @Override // java.lang.Runnable
             public void run() {
                 v.this.f = ai.a().c();
                 final ArrayList arrayListNewArrayList = Lists.newArrayList();
                 arrayListNewArrayList.addAll(v.this.f);
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9.1
                     @Override // java.lang.Runnable
                     public void run() {
                         interfaceC0048a.a(null, arrayListNewArrayList);
@@ -600,11 +600,11 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public void b(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<ThemeModel>> interfaceC0048a) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10
             @Override // java.lang.Runnable
             public void run() {
                 final List<ThemeModel> listD = ai.a().d();
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10.1
                     @Override // java.lang.Runnable
                     public void run() {
                         interfaceC0048a.a(null, listD);
@@ -635,7 +635,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         }
         try {
             Context contextCreatePackageContext = com.tsf.extend.AppContextHolder.b().createPackageContext(str, 3);
-            HashMap<String, Object> mapD = com.tsf.extend.base.j.d.d(contextCreatePackageContext);
+            HashMap<String, Object> mapD = com.tsf.extend.base.j.AppEnvUtils.d(contextCreatePackageContext);
             if (contextCreatePackageContext == null || (fVarA = ae.a(contextCreatePackageContext, mapD)) == null || TextUtils.isEmpty(fVarA.i())) {
                 fVarA = null;
             }
@@ -716,7 +716,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public void a(final int i, final String str, final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, final int i2) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11
             @Override // java.lang.Runnable
             public void run() throws PackageManager.NameNotFoundException {
                 Context contextCreatePackageContext;
@@ -728,7 +728,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                     contextCreatePackageContext = null;
                 }
                 if (contextCreatePackageContext == null || i == 0) {
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.1
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.1
                         @Override // java.lang.Runnable
                         public void run() {
                             interfaceC0048a.a(null, -1, null);
@@ -748,14 +748,14 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                     final B bVar = new B();
                     bVar.a = str;
                     bVar.b = bitmapDecodeResource;
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.2
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.2
                         @Override // java.lang.Runnable
                         public void run() {
                             interfaceC0048a.a(null, bVar);
                         }
                     });
                 } catch (Throwable th) {
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.3
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.3
                         @Override // java.lang.Runnable
                         public void run() {
                             interfaceC0048a.a(null, -1, null);
@@ -780,7 +780,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
             interfaceC0048a.a(null, bVar);
             return;
         }
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12
             @Override // java.lang.Runnable
             public void run() {
                 BitmapFactory.Options options;
@@ -798,14 +798,14 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                     bVar2.a = str;
                     bVar2.b = bitmapDecodeFile;
                     v.this.a(str2, bVar2.b);
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12.1
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12.1
                         @Override // java.lang.Runnable
                         public void run() {
                             interfaceC0048a.a(null, bVar2);
                         }
                     });
                 } catch (Throwable th) {
-                    com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12.2
+                    com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12.2
                         @Override // java.lang.Runnable
                         public void run() {
                             interfaceC0048a.a(null, -1, null);
@@ -960,7 +960,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public static void c(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.4
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.4
             @Override // java.lang.Runnable
             public void run() {
                 Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("DATA_RECOMMEND_CACHE");
@@ -969,7 +969,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                     com.tsf.extend.base.b.a.BitmapCacheHelper.a().b("DATA_RECOMMEND_CACHE");
                     aVar = null;
                 }
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.4.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.4.1
                     @Override // java.lang.Runnable
                     public void run() {
                         interfaceC0048a.a(null, aVar);
@@ -980,7 +980,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public void a(final com.tsf.extend.base.b.PagedListModel aVar) {
-        com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.5
+        com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.5
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("DATA_RECOMMEND_CACHE", aVar);

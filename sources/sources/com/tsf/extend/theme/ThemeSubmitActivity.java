@@ -54,7 +54,7 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         this.i.addTextChangedListener(this);
         this.j.addTextChangedListener(this);
         h();
-        com.tsf.extend.base.j.z.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeSubmitActivity.1
+        com.tsf.extend.base.j.HandlerUtils.a(6, new Runnable() { // from class: com.tsf.extend.theme.ThemeSubmitActivity.1
             @Override // java.lang.Runnable
             public void run() {
                 ThemeSubmitActivity.this.d();
@@ -109,9 +109,9 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         }
         a();
         this.k = new e.a(this).a(string).b(ResourceIds.g.uplaod_wallpaper_dialog_cancel, this).a(i, this).a();
-        this.k.a(str);
+        this.ThemeModel.a(str);
         try {
-            this.k.a(true);
+            this.ThemeModel.a(true);
         } catch (Exception e2) {
         }
     }
@@ -152,7 +152,7 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
             runnable.run();
             return;
         }
-        int iA = com.tsf.extend.base.j.o.a(this);
+        int iA = com.tsf.extend.base.j.NetworkUtils.a(this);
         if (iA != 2 && iA != 0) {
             long jA = 0;
             try {
@@ -180,11 +180,11 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         try {
             this.d = new JSONObject(getIntent().getStringExtra("upload_wallpaper_data"));
             this.e = ThemeDIYActivity.a(this, Uri.parse(this.d.getString("wallpaper_uri")), getResources().getDisplayMetrics().widthPixels, getResources().getDisplayMetrics().heightPixels, true);
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeSubmitActivity.3
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeSubmitActivity.3
                 @Override // java.lang.Runnable
                 public void run() {
                     if (!ThemeSubmitActivity.this.isFinishing()) {
-                        com.tsf.extend.base.j.b.a(ThemeSubmitActivity.this.g, new com.tsf.extend.base.view.b(ThemeSubmitActivity.this.e));
+                        com.tsf.extend.base.j.ViewCompatUtils.a(ThemeSubmitActivity.this.g, new com.tsf.extend.base.view.b(ThemeSubmitActivity.this.e));
                         if (Build.VERSION.SDK_INT >= 12) {
                             ThemeSubmitActivity.this.g.setAlpha(0.0f);
                             ThemeSubmitActivity.this.g.animate().setInterpolator(new DecelerateInterpolator()).alpha(0.8f).setDuration(300L);
@@ -239,7 +239,7 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         String strB = com.tsf.extend.wallpaper.ag.a().b();
         String strE = com.tsf.extend.wallpaper.ag.a().e();
         if (TextUtils.isEmpty(strE)) {
-            strE = com.tsf.extend.base.j.h.a(this);
+            strE = com.tsf.extend.base.j.AccountUtils.a(this);
         }
         if (TextUtils.isEmpty(strB)) {
             if (!TextUtils.isEmpty(strE)) {

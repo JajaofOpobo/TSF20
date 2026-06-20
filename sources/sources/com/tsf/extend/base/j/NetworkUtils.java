@@ -12,13 +12,13 @@ public class NetworkUtils {
     private static List<Integer> a = Collections.synchronizedList(new ArrayList());
 
     static {
-        __a__.add(234);
-        __a__.add(235);
-        __a__.add(505);
-        __a__.add(302);
-        __a__.add(272);
-        __a__.add(530);
-        __a__.add(454);
+        a.add(234);
+        a.add(235);
+        a.add(505);
+        a.add(302);
+        a.add(272);
+        a.add(530);
+        a.add(454);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:27:0x0045  */

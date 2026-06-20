@@ -2,7 +2,7 @@ package com.tsf.extend.theme.cmclub;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;
-import com.tsf.extend.base.j.z;
+import com.tsf.extend.base.j.HandlerUtils;
 import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

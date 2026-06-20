@@ -10,11 +10,11 @@ public class ThemeFavoriteReportHelper {
     public static void a(final ThemeModel kVar, Context context) {
         int i = 1;
         if (kVar != null) {
-            com.android.volley.toolbox.m mVar = new com.android.volley.toolbox.m(i, "https://cml.ksmobile.com/Theme/favoriteReport", new n.b<String>() { // from class: com.tsf.extend.theme.w.1
+            com.android.volley.toolbox.m mVar = new com.android.volley.toolbox.m(i, "https://cml.ksmobile.com/Theme/favoriteReport", new n.b<String>() { // from class: com.tsf.extend.theme.ThemeFavoriteReportHelper.1
                 @Override // com.android.volley.n.b
                 public void a(String str) {
                 }
-            }, null) { // from class: com.tsf.extend.theme.w.2
+            }, null) { // from class: com.tsf.extend.theme.ThemeFavoriteReportHelper.2
                 @Override // com.android.volley.l
                 protected Map<String, String> n() {
                     HashMap map = new HashMap();

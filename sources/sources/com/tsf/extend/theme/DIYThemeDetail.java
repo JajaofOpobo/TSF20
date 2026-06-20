@@ -41,7 +41,7 @@ import com.tsf.extend.base.view.TextProgressBar;
 import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
-import com.tsf.extend.theme.j;
+import com.tsf.extend.theme.ThemeShareHandler;
 import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
@@ -61,7 +61,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     @SuppressLint({"HandlerLeak"})
     private Handler F;
     private C G;
-    private com.tsf.extend.theme.B H;
+    private com.tsf.extend.theme.DiyWallpaperProvider H;
     protected float a;
     public List<ImageView> b;
     private TextView c;
@@ -105,7 +105,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             public void handleMessage(Message message) {
                 switch (message.what) {
                     case 0:
-                        if ((DIYThemeDetail.this.k instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) DIYThemeDetail.this.k).e()) {
+                        if ((DIYThemeDetail.this.k instanceof com.tsf.extend.theme.DiyWallpaperProvider) && ((com.tsf.extend.theme.DiyWallpaperProvider) DIYThemeDetail.this.k).e()) {
                             ao.b().i();
                         }
                         DIYThemeDetail.this.g.setResult(-1);
@@ -171,10 +171,10 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             }
             this.c.setText(this.k.i());
             int i2 = ResourceIds.g.theme_detail_btn_apply;
-            if (this.k instanceof f) {
-                this.m = ((f) this.k).b();
+            if (this.k instanceof ThemeSystemModel) {
+                this.m = ((ThemeSystemModel) this.k).b();
                 i = i2;
-            } else if (this.k instanceof aq) {
+            } else if (this.k instanceof AbstractThemeProvider) {
                 this.l = this.k.t();
                 i = i2;
             } else {
@@ -190,7 +190,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 this.o = this.l.size();
             } else if (this.m != null && this.m.size() > 1) {
                 this.o = this.m.size();
-            } else if (this.l != null && this.l.size() >= 0 && (this.k instanceof aq)) {
+            } else if (this.l != null && this.l.size() >= 0 && (this.k instanceof AbstractThemeProvider)) {
                 this.o = this.l.size();
             } else {
                 this.n.setVisibility(4);
@@ -215,7 +215,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (this.e != null) {
-            com.tsf.extend.base.j.b.a(this.e, this);
+            com.tsf.extend.base.j.ViewCompatUtils.a(this.e, this);
         }
         i();
     }
@@ -319,8 +319,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         if (id == ResourceIds.e.title) {
             this.g.onBackPressed();
         } else if (id == ResourceIds.e.delete) {
-            if (this.k instanceof aq) {
-                a((aq) this.k);
+            if (this.k instanceof AbstractThemeProvider) {
+                a((AbstractThemeProvider) this.k);
             }
             a("3");
         } else if (id == ResourceIds.e.theme_controll) {
@@ -350,11 +350,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 this.g.a(false);
                 final File file = new File(com.tsf.extend.theme.diy.e.a(getContext()), this.k.g() + ".share.jpg");
                 final j.a aVar = new j.a() { // from class: com.tsf.extend.theme.DIYThemeDetail.12
-                    @Override // com.tsf.extend.theme.j.a
+                    @Override // com.tsf.extend.theme.ThemeShareHandler.a
                     public void a(String str) {
                     }
 
-                    @Override // com.tsf.extend.theme.j.a
+                    @Override // com.tsf.extend.theme.ThemeShareHandler.a
                     public void a() {
                     }
                 };
@@ -422,11 +422,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         final ThemeModel kVar = this.k;
         final Context context = getContext();
         final ImageView imageView = this.h;
-        com.tsf.extend.base.j.z.a(1, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14
+        com.tsf.extend.base.j.HandlerUtils.a(1, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14
             @Override // java.lang.Runnable
             public void run() throws Throwable {
                 final boolean zC = com.tsf.extend.theme.diy.e.a().c(context, kVar);
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14.1
                     @Override // java.lang.Runnable
                     public void run() {
                         imageView.setSelected(zC);
@@ -438,7 +438,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     private void m() {
         com.tsf.extend.theme.diy.e.a().a(getContext(), this.k);
-        if (!(this.k instanceof aq)) {
+        if (!(this.k instanceof AbstractThemeProvider)) {
             w.a(this.k, getContext());
         }
     }
@@ -481,7 +481,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationEnd(Animation animation) {
-                com.tsf.extend.base.j.z.a(0, runnable, 1000L);
+                com.tsf.extend.base.j.HandlerUtils.a(0, runnable, 1000L);
             }
         });
         this.i.setVisibility(0);
@@ -533,7 +533,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     private void a(int i) {
         if (this.u == null || this.u.getVisibility() != 0) {
             ab abVar = new ab(getContext());
-            if (this.k instanceof aq) {
+            if (this.k instanceof AbstractThemeProvider) {
                 abVar.a(this.k.t(), i);
             } else {
                 abVar.b(this.k.t(), i);
@@ -612,18 +612,18 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 public void a(JSONObject jSONObject, int i2, v.b bVar) {
                 }
             };
-            if (!(DIYThemeDetail.this.k instanceof aq)) {
-                if (DIYThemeDetail.this.k instanceof f) {
+            if (!(DIYThemeDetail.this.k instanceof AbstractThemeProvider)) {
+                if (DIYThemeDetail.this.k instanceof ThemeSystemModel) {
                     if (DIYThemeDetail.this.m != null && DIYThemeDetail.this.k != null) {
-                        v.h().a(((Integer) DIYThemeDetail.this.m.get(i)).intValue(), DIYThemeDetail.this.k.g(), interfaceC0048a, 2);
+                        ThemeDataProvider.h().a(((Integer) DIYThemeDetail.this.m.get(i)).intValue(), DIYThemeDetail.this.k.g(), interfaceC0048a, 2);
                     }
                 } else if (DIYThemeDetail.this.l != null) {
                     String str = (String) DIYThemeDetail.this.l.get(i);
                     imageView.setTag(str);
-                    v.h().c(str, this.b);
+                    ThemeDataProvider.h().c(str, this.b);
                 }
             } else {
-                v.h().a(DIYThemeDetail.this.k.g(), (aq) DIYThemeDetail.this.k, interfaceC0048a, 1, i);
+                ThemeDataProvider.h().a(DIYThemeDetail.this.k.g(), (AbstractThemeProvider) DIYThemeDetail.this.k, interfaceC0048a, 1, i);
             }
             imageView.setOnClickListener(DIYThemeDetail.this);
             try {
@@ -674,7 +674,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public void onGlobalLayout() {
-        com.tsf.extend.base.j.b.a(this.e, this);
+        com.tsf.extend.base.j.ViewCompatUtils.a(this.e, this);
         h();
     }
 
@@ -692,7 +692,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.n
     public void a(String str, PersonalizationActivity.n.a aVar) {
-        if ((PersonalizationActivity.n.a.REMOVE != aVar || str == null || v.h().d(str)) && this.k != null && !TextUtils.isEmpty(str) && str.equals(this.k.g()) && aVar != null && aVar != PersonalizationActivity.n.a.ADD) {
+        if ((PersonalizationActivity.n.a.REMOVE != aVar || str == null || ThemeDataProvider.h().d(str)) && this.k != null && !TextUtils.isEmpty(str) && str.equals(this.k.g()) && aVar != null && aVar != PersonalizationActivity.n.a.ADD) {
             this.g.onBackPressed();
         }
     }
@@ -723,7 +723,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
 
         @Override // com.tsf.extend.theme.diy.e.a
-        public void a(com.tsf.extend.theme.B bVar) {
+        public void a(com.tsf.extend.theme.DiyWallpaperProvider bVar) {
             DIYThemeDetail.this.q();
             DIYThemeDetail.this.H = bVar;
             if (DIYThemeDetail.this.y) {
@@ -734,7 +734,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p() {
-        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.3
+        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.3
             @Override // java.lang.Runnable
             public void run() {
                 DIYThemeDetail.this.z = (TextProgressBar) DIYThemeDetail.this.findViewById(ResourceIds.e.cmt_download_pb);
@@ -749,7 +749,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     /* JADX INFO: Access modifiers changed from: private */
     public void q() {
-        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.4
+        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.4
             @Override // java.lang.Runnable
             public void run() {
                 if (DIYThemeDetail.this.z != null && DIYThemeDetail.this.z.getVisibility() == 0) {
@@ -764,7 +764,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b(final int i) {
-        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.5
+        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.5
             @Override // java.lang.Runnable
             public void run() {
                 DIYThemeDetail.this.z.setProgress(i);
@@ -829,7 +829,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 DIYThemeDetail.this.F.sendEmptyMessage(i);
             }
         };
-        com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.7
+        com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.7
             @Override // java.lang.Runnable
             public void run() {
                 DIYThemeDetail.this.j();
@@ -844,8 +844,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 boolean zBooleanValue = false;
                 try {
                     if (DIYThemeDetail.this.g instanceof PersonalizationActivity) {
-                        if (DIYThemeDetail.this.k instanceof aq) {
-                            Object objB = com.tsf.extend.theme.diy.e.b(((aq) DIYThemeDetail.this.k).g(DIYThemeDetail.this.g).getAbsolutePath() + File.separator + "diy.config", "isUsingOnLineWallpaper");
+                        if (DIYThemeDetail.this.k instanceof AbstractThemeProvider) {
+                            Object objB = com.tsf.extend.theme.diy.e.b(((AbstractThemeProvider) DIYThemeDetail.this.k).g(DIYThemeDetail.this.g).getAbsolutePath() + File.separator + "diy.config", "isUsingOnLineWallpaper");
                             if (objB instanceof Boolean) {
                                 zBooleanValue = ((Boolean) objB).booleanValue();
                             }

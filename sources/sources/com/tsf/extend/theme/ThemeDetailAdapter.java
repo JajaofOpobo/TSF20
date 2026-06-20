@@ -187,7 +187,7 @@ public class ThemeDetailAdapter extends BaseAdapter {
     }
 
     private void a(aq aqVar, final ImageView imageView) {
-        v.h().a(aqVar.g(), aqVar, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ad.1
+        ThemeDataProvider.h().a(aqVar.g(), aqVar, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ad.1
             @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final v.b bVar) {
                 if (imageView != null && bVar != null && bVar.a != null && bVar.a.equals(imageView.getTag())) {
@@ -212,22 +212,22 @@ public class ThemeDetailAdapter extends BaseAdapter {
             str = kVar.t().get(0);
         }
         if (!TextUtils.isEmpty(str)) {
-            Bitmap bitmapA = v.h().a(str);
+            Bitmap bitmapA = ThemeDataProvider.h().a(str);
             if (bitmapA != null) {
                 imageView.setImageBitmap(bitmapA);
             } else {
                 imageView.setTag(str);
-                v.h().a(str, imageView, (a.InterfaceC0048a<Pair<String, Bitmap>>) interfaceC0048a, imageView.getWidth(), imageView.getHeight());
+                ThemeDataProvider.h().a(str, imageView, (a.InterfaceC0048a<Pair<String, Bitmap>>) interfaceC0048a, imageView.getWidth(), imageView.getHeight());
             }
         }
     }
 
     public void a(ThemeModel kVar, final ImageView imageView) {
-        Bitmap bitmapA = v.h().a("DEFAULT_THEME");
+        Bitmap bitmapA = ThemeDataProvider.h().a("DEFAULT_THEME");
         if (bitmapA != null) {
             imageView.setImageBitmap(bitmapA);
         } else {
-            com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.ad.2
+            com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ad.2
                 @Override // java.lang.Runnable
                 public void run() throws Throwable {
                     try {
@@ -236,7 +236,7 @@ public class ThemeDetailAdapter extends BaseAdapter {
                         options.inJustDecodeBounds = false;
                         final Bitmap bitmapA2 = com.tsf.extend.wallpaper.ab.a(imageView.getContext(), options, false, false, 0);
                         if (bitmapA2 == null) {
-                            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ad.2.1
+                            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ad.2.1
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     if (TextUtils.isEmpty((String) imageView.getTag()) && imageView != null) {
@@ -253,7 +253,7 @@ public class ThemeDetailAdapter extends BaseAdapter {
                         if (bitmapA2 != null && !bitmapA2.isRecycled()) {
                             bitmapA2.recycle();
                         }
-                        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ad.2.2
+                        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ad.2.2
                             @Override // java.lang.Runnable
                             public void run() {
                                 if (TextUtils.isEmpty((String) imageView.getTag()) && imageView != null) {
@@ -271,8 +271,8 @@ public class ThemeDetailAdapter extends BaseAdapter {
     public void a(ImageView imageView, ThemeModel kVar, a.InterfaceC0048a interfaceC0048a) {
         if (kVar.o()) {
             a(kVar, imageView);
-        } else if (kVar instanceof aq) {
-            a((aq) kVar, imageView);
+        } else if (kVar instanceof AbstractThemeProvider) {
+            a((AbstractThemeProvider) kVar, imageView);
         } else {
             a(kVar, imageView, interfaceC0048a);
         }

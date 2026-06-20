@@ -6,7 +6,7 @@ import android.util.Log;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public final class l {
+public final class TypefaceCache {
     private static final HashMap<String, Typeface> a = new HashMap<>();
 
     public static Typeface a(AssetManager assetManager, String str) {

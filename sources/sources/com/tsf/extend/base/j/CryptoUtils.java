@@ -25,7 +25,7 @@ public class CryptoUtils {
                 try {
                     inputStream.close();
                 } catch (IOException e) {
-                    __e__.printStackTrace();
+                    e.printStackTrace();
                 }
             }
             if (0 == 0) {
@@ -76,7 +76,7 @@ public class CryptoUtils {
         } catch (Exception e6) {
             e = e6;
             fileOutputStream2 = fileOutputStream;
-            __e__.printStackTrace();
+            e.printStackTrace();
             if (inputStream != null) {
                 try {
                     inputStream.close();
@@ -137,7 +137,7 @@ public class CryptoUtils {
                 cipher.init(i, new SecretKeySpec(bArrA, "AES"), new IvParameterSpec(bArrA2, 0, cipher.getBlockSize()));
             } catch (Exception e2) {
                 e = e2;
-                __e__.printStackTrace();
+                e.printStackTrace();
             }
         } catch (Exception e3) {
             cipher = null;

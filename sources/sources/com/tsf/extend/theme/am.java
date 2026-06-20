@@ -46,7 +46,7 @@ public class am extends Dialog {
                 }
             }
         });
-        ((TextView) findViewById(ResourceIds.e.title)).setTypeface(com.tsf.extend.base.j.ab.a(context.getAssets(), "fonts/OpenSans-Light-bold.ttf"));
+        ((TextView) findViewById(ResourceIds.e.title)).setTypeface(com.tsf.extend.base.j.TypefaceCache.a(context.getAssets(), "fonts/OpenSans-Light-bold.ttf"));
         a(z);
     }
 

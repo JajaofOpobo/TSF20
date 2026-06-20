@@ -463,7 +463,7 @@ public class FileIOUtils {
                                     try {
                                         fileInputStream.close();
                                     } catch (IOException e) {
-                                        __e__.printStackTrace();
+                                        e.printStackTrace();
                                     }
                                 }
                             } else if (fileInputStream != null) {
@@ -475,7 +475,7 @@ public class FileIOUtils {
                             }
                         } catch (FileNotFoundException e3) {
                             e = e3;
-                            __e__.printStackTrace();
+                            e.printStackTrace();
                             if (fileInputStream != null) {
                                 try {
                                     fileInputStream.close();
@@ -485,7 +485,7 @@ public class FileIOUtils {
                             }
                         } catch (IOException e5) {
                             e = e5;
-                            __e__.printStackTrace();
+                            e.printStackTrace();
                             if (fileInputStream != null) {
                                 try {
                                     fileInputStream.close();

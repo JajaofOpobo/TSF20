@@ -81,7 +81,7 @@ public class ThemeFavoriteManager {
                     if (cursorQuery.moveToFirst()) {
                         ArrayList arrayList = new ArrayList();
                         do {
-                            arrayList.add(k.a(cursorQuery));
+                            arrayList.add(ThemeModel.a(cursorQuery));
                         } while (cursorQuery.moveToNext());
                         if (cursorQuery == null) {
                             return arrayList;
@@ -144,18 +144,18 @@ public class ThemeFavoriteManager {
             return r9
         L6:
             java.lang.String r1 = r13.g()
-            boolean r0 = r13 instanceof com.tsf.extend.theme.B
+            boolean r0 = r13 instanceof com.tsf.extend.theme.DiyWallpaperProvider
             if (r0 == 0) goto L69
             r0 = r13
-            com.tsf.extend.theme.B r0 = (com.tsf.extend.theme.B) r0
+            com.tsf.extend.theme.DiyWallpaperProvider r0 = (com.tsf.extend.theme.DiyWallpaperProvider) r0
             boolean r0 = r0.e()
             if (r0 == 0) goto L69
-            com.tsf.extend.theme.B r13 = (com.tsf.extend.theme.B) r13
+            com.tsf.extend.theme.DiyWallpaperProvider r13 = (com.tsf.extend.theme.DiyWallpaperProvider) r13
             java.lang.String r0 = r13.f()
             r5 = r0
         L1e:
             r11.b()
-            com.tsf.extend.theme.u r0 = r11.b(r12)     // Catch: java.lang.Exception -> L54 java.lang.Throwable -> L5c
+            com.tsf.extend.theme.ThemeDatabaseHelper r0 = r11.b(r12)     // Catch: java.lang.Exception -> L54 java.lang.Throwable -> L5c
             android.database.sqlite.SQLiteDatabase r0 = r0.getWritableDatabase()     // Catch: java.lang.Exception -> L54 java.lang.Throwable -> L5c
             java.lang.String r1 = "favorite_theme"
             r2 = 1

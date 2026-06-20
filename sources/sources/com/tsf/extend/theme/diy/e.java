@@ -16,11 +16,11 @@ import com.android.volley.toolbox.j;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.f.JsonRequestBuilder;
-import com.tsf.extend.base.j.i;
-import com.tsf.extend.base.j.l;
-import com.tsf.extend.base.j.p;
-import com.tsf.extend.base.j.z;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.base.j.DisplayUtils;
+import com.tsf.extend.base.j.FileIOUtils;
+import com.tsf.extend.base.j.StorageUtils;
+import com.tsf.extend.base.j.HandlerUtils;
+import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 import java.io.BufferedInputStream;
@@ -56,7 +56,7 @@ public class e {
     public interface a {
         void a(float f);
 
-        void a(com.tsf.extend.theme.B bVar);
+        void a(com.tsf.extend.theme.DiyWallpaperProvider bVar);
 
         boolean a();
 
@@ -66,7 +66,7 @@ public class e {
     public interface c {
         void a(float f);
 
-        void a(com.tsf.extend.theme.B bVar);
+        void a(com.tsf.extend.theme.DiyWallpaperProvider bVar);
 
         void a(boolean z);
 
@@ -417,7 +417,7 @@ public class e {
         if (dVar != null) {
             dVar.a();
         }
-        String strA = com.tsf.extend.base.j.g.a(str);
+        String strA = com.tsf.extend.base.j.DeviceUtils.a(str);
         String string = UUID.randomUUID().toString();
         DataOutputStream dataOutputStream2 = null;
         try {
@@ -614,7 +614,7 @@ public class e {
             return null;
         }
         if (new File(str).getName().startsWith("CMT_")) {
-            aVar = new com.tsf.extend.theme.B();
+            aVar = new com.tsf.extend.theme.DiyWallpaperProvider();
         } else {
             aVar = new com.tsf.extend.theme.diy.a();
         }
@@ -626,9 +626,9 @@ public class e {
             aVar.i(kVar.F());
             aVar.h(kVar.p());
             aVar.a(kVar.h());
-            if (aVar instanceof com.tsf.extend.theme.B) {
-                ((com.tsf.extend.theme.B) aVar).a(true);
-                ((com.tsf.extend.theme.B) aVar).b(kVar.g());
+            if (aVar instanceof com.tsf.extend.theme.DiyWallpaperProvider) {
+                ((com.tsf.extend.theme.DiyWallpaperProvider) aVar).a(true);
+                ((com.tsf.extend.theme.DiyWallpaperProvider) aVar).b(kVar.g());
             }
         } else {
             aVar.i("YOU");
@@ -709,7 +709,7 @@ public class e {
     }
 
     public static boolean a(InputStream inputStream, String str, String str2) {
-        if (com.tsf.extend.base.j.a.a(inputStream, str, "202CB962AC59075B964B07152D234B70", "D1D99CA9B7EC0708C83ECCA4B635DBF1")) {
+        if (com.tsf.extend.base.j.CryptoUtils.a(inputStream, str, "202CB962AC59075B964B07152D234B70", "D1D99CA9B7EC0708C83ECCA4B635DBF1")) {
             return a(str, str2);
         }
         return false;
@@ -717,7 +717,7 @@ public class e {
 
     public static String a(String str) {
         try {
-            return "https://cml.ksmobile.com/diy/diy_info?key=" + URLEncoder.encode(com.tsf.extend.base.j.g.a(Base64.encodeToString(a(String.format("diyid=%s", str).getBytes("utf-8")), 0)), "UTF-8");
+            return "https://cml.ksmobile.com/diy/diy_info?key=" + URLEncoder.encode(com.tsf.extend.base.j.DeviceUtils.a(Base64.encodeToString(a(String.format("diyid=%s", str).getBytes("utf-8")), 0)), "UTF-8");
         } catch (Exception e) {
             return null;
         }

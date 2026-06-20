@@ -87,7 +87,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     @SuppressLint({"HandlerLeak"})
     private Handler ai;
-    private com.tsf.extend.theme.B aj;
+    private com.tsf.extend.theme.DiyWallpaperProvider aj;
     private ImageView c;
     private TextView d;
     private View e;
@@ -144,7 +144,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                             ThemeDetail.this.m.setResult(-1);
                             ThemeDetail.this.m.finish();
                         }
-                        if ((ThemeDetail.this.z instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) ThemeDetail.this.z).e()) {
+                        if ((ThemeDetail.this.z instanceof com.tsf.extend.theme.DiyWallpaperProvider) && ((com.tsf.extend.theme.DiyWallpaperProvider) ThemeDetail.this.z).e()) {
                             ao.b().i();
                         }
                         if (ThemeDetail.this.aj != null) {
@@ -205,7 +205,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean l() {
-        return com.tsf.extend.base.j.o.c(getContext());
+        return com.tsf.extend.base.j.NetworkUtils.c(getContext());
     }
 
     private void m() {
@@ -314,9 +314,9 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     int width = bitmap.getWidth();
                     int i = width / 10;
                     try {
-                        final BitmapDrawable bitmapDrawable = new BitmapDrawable(ThemeDetail.this.getResources(), com.tsf.extend.base.j.e.a(Bitmap.createScaledBitmap(bitmap, i, (bitmap.getHeight() * i) / width, true), 15, true));
+                        final BitmapDrawable bitmapDrawable = new BitmapDrawable(ThemeDetail.this.getResources(), com.tsf.extend.base.j.BitmapUtils.a(Bitmap.createScaledBitmap(bitmap, i, (bitmap.getHeight() * i) / width, true), 15, true));
                         bitmapDrawable.setAlpha(VEasing.Back.easeIn);
-                        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.7.1
+                        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.7.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 ThemeDetail.b(view, bitmapDrawable);
@@ -341,14 +341,14 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     private void u() {
         this.P = new d(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
-        v.h().a(this.P, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, this.z.h());
+        ThemeDataProvider.h().a(this.P, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, this.z.h());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void v() {
         if (this.R != null && this.R.size() > 0) {
             this.Q = new d(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
-            v.h().a(this.Q, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, this.z.h());
+            ThemeDataProvider.h().a(this.Q, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, this.z.h());
         }
     }
 
@@ -391,7 +391,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.L = (ProgressBar) findViewById(ResourceIds.e.theme_detail_progress);
         this.L.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
         this.K.setVisibility(0);
-        v.h().a(new e(), j, str, str2);
+        ThemeDataProvider.h().a(new e(), j, str, str2);
     }
 
     private class e implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> {
@@ -443,9 +443,9 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     public void setNewEntry(String str) {
-        this.ag = com.tsf.extend.base.j.m.a();
+        this.ag = com.tsf.extend.base.j.MarketUtils.a();
         this.ah = true;
-        com.tsf.extend.base.j.m.a(str);
+        com.tsf.extend.base.j.MarketUtils.a(str);
     }
 
     private void a(ThemeModel kVar, boolean z) {
@@ -454,11 +454,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             if (ao.b().g() && com.tsf.extend.wallpaper.l.a().e(kVar) == null && (aqVarA = com.tsf.extend.theme.diy.e.a(getContext(), kVar)) != null) {
                 kVar = aqVarA;
             }
-            if ((kVar instanceof com.tsf.extend.theme.f) || (kVar instanceof aq)) {
+            if ((kVar instanceof com.tsf.extend.theme.ThemeSystemModel) || (kVar instanceof AbstractThemeProvider)) {
                 this.D = ResourceIds.LOCAL_THEME;
                 k();
             } else {
-                v.h();
+                ThemeDataProvider.h();
                 if (v.c(kVar.g()) != null) {
                     this.D = ResourceIds.THEME_HASLOCAL;
                 } else {
@@ -482,12 +482,12 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             }
             if (this.D == ResourceIds.LOCAL_THEME) {
                 this.l.setVisibility(8);
-                if (this.z instanceof com.tsf.extend.theme.f) {
-                    this.B = ((com.tsf.extend.theme.f) this.z).b();
-                } else if (this.z instanceof aq) {
+                if (this.z instanceof com.tsf.extend.theme.ThemeSystemModel) {
+                    this.B = ((com.tsf.extend.theme.ThemeSystemModel) this.z).b();
+                } else if (this.z instanceof AbstractThemeProvider) {
                     this.A = this.z.t();
-                    if ((this.z instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) this.z).e()) {
-                        com.tsf.extend.base.b.PagedListModel aVarA = v.h().a(this.z.h());
+                    if ((this.z instanceof com.tsf.extend.theme.DiyWallpaperProvider) && ((com.tsf.extend.theme.DiyWallpaperProvider) this.z).e()) {
+                        com.tsf.extend.base.b.PagedListModel aVarA = ThemeDataProvider.h().a(this.z.h());
                         if (aVarA != null && aVarA.a() != null) {
                             a(aVarA, false);
                         } else {
@@ -497,7 +497,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 }
             } else {
                 this.A = this.z.t();
-                com.tsf.extend.base.b.PagedListModel aVarA2 = v.h().a(this.z.h());
+                com.tsf.extend.base.b.PagedListModel aVarA2 = ThemeDataProvider.h().a(this.z.h());
                 if (aVarA2 != null && aVarA2.a() != null) {
                     a(aVarA2, false);
                 } else {
@@ -511,7 +511,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 this.C = this.A.size();
             } else if (this.B != null && this.B.size() > 1) {
                 this.C = this.B.size();
-            } else if (this.A != null && this.A.size() >= 0 && (this.z instanceof aq)) {
+            } else if (this.A != null && this.A.size() >= 0 && (this.z instanceof AbstractThemeProvider)) {
                 this.C = this.A.size();
             }
             if (!z) {
@@ -525,7 +525,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (this.h != null) {
-            com.tsf.extend.base.j.b.a(this.h, this);
+            com.tsf.extend.base.j.ViewCompatUtils.a(this.h, this);
         }
         z();
     }
@@ -608,7 +608,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
         H();
         if (this.ah) {
-            com.tsf.extend.base.j.m.a(this.ag);
+            com.tsf.extend.base.j.MarketUtils.a(this.ag);
         }
     }
 
@@ -656,7 +656,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     } else {
                         a("1");
                         x.b(getContext(), this.z.k(), "_bt", "tsf_theme_center_theme");
-                        v.h().b(this.z.h());
+                        ThemeDataProvider.h().b(this.z.h());
                         a("1", "1010", "1012");
                     }
                     c("12");
@@ -790,11 +790,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         final ThemeModel kVar = this.z;
         final Context context = getContext();
         final ImageView imageView = this.p;
-        com.tsf.extend.base.j.z.a(1, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8
+        com.tsf.extend.base.j.HandlerUtils.a(1, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8
             @Override // java.lang.Runnable
             public void run() throws Throwable {
                 final boolean zC = com.tsf.extend.theme.ThemeFavoriteManager.a().c(context, kVar);
-                com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8.1
+                com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8.1
                     @Override // java.lang.Runnable
                     public void run() {
                         imageView.setSelected(zC);
@@ -806,7 +806,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     private void B() {
         com.tsf.extend.theme.ThemeFavoriteManager.a().a(getContext(), this.z);
-        if (!(this.z instanceof aq)) {
+        if (!(this.z instanceof AbstractThemeProvider)) {
             w.a(this.z, getContext());
         }
     }
@@ -849,7 +849,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationEnd(Animation animation) {
-                com.tsf.extend.base.j.z.a(0, runnable, 1000L);
+                com.tsf.extend.base.j.HandlerUtils.a(0, runnable, 1000L);
             }
         });
         this.q.setVisibility(0);
@@ -859,7 +859,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private void a(int i) {
         if (this.K == null || this.K.getVisibility() != 0) {
             ab abVar = new ab(getContext());
-            if (this.z instanceof aq) {
+            if (this.z instanceof AbstractThemeProvider) {
                 abVar.a(this.z.t(), i);
             } else if (this.D == ResourceIds.LOCAL_THEME) {
                 abVar.a(this.z.g(), this.B, i);
@@ -925,7 +925,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     bVar.a = str;
                     bVar.b = i;
                     imageView.setTag(bVar);
-                    v.h().c(str, this.b);
+                    ThemeDataProvider.h().c(str, this.b);
                 }
             } else {
                 com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ThemeDetail.c.1
@@ -943,12 +943,12 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     public void a(JSONObject jSONObject, int i2, v.b bVar2) {
                     }
                 };
-                if (!(ThemeDetail.this.z instanceof aq)) {
+                if (!(ThemeDetail.this.z instanceof AbstractThemeProvider)) {
                     if (ThemeDetail.this.B != null && ThemeDetail.this.z != null) {
-                        v.h().a(((Integer) ThemeDetail.this.B.get(i)).intValue(), ThemeDetail.this.z.g(), interfaceC0048a, 2);
+                        ThemeDataProvider.h().a(((Integer) ThemeDetail.this.B.get(i)).intValue(), ThemeDetail.this.z.g(), interfaceC0048a, 2);
                     }
                 } else {
-                    v.h().a(ThemeDetail.this.z.g(), (aq) ThemeDetail.this.z, interfaceC0048a, 1, i);
+                    ThemeDataProvider.h().a(ThemeDetail.this.z.g(), (AbstractThemeProvider) ThemeDetail.this.z, interfaceC0048a, 1, i);
                 }
             }
             imageView.setOnClickListener(ThemeDetail.this);
@@ -1029,7 +1029,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public void onGlobalLayout() {
-        com.tsf.extend.base.j.b.a(this.h, this);
+        com.tsf.extend.base.j.ViewCompatUtils.a(this.h, this);
         h();
         this.af = this.V.getTop();
         this.ae = Math.abs(this.W.getTop() - this.af) - this.aa.getHeight();
@@ -1044,7 +1044,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.n
     public void a(String str, PersonalizationActivity.n.a aVar) {
         if (!TextUtils.isEmpty(str)) {
-            v.h().a(this);
+            ThemeDataProvider.h().a(this);
             if (this.z != null && !TextUtils.isEmpty(str) && str.equals(this.z.g()) && aVar != null) {
                 if (aVar == PersonalizationActivity.n.a.ADD) {
                     this.D = ResourceIds.THEME_HASLOCAL;
@@ -1086,8 +1086,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
         if (strF != null && strF.startsWith("DIY://")) {
             for (ThemeModel kVar : list) {
-                if (kVar instanceof aq) {
-                    if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
+                if (kVar instanceof AbstractThemeProvider) {
+                    if (!TextUtils.isEmpty(strF) && strF.contains(((AbstractThemeProvider) kVar).I())) {
                         kVar.b(true);
                     } else {
                         kVar.b(false);
@@ -1120,7 +1120,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.1
                 @Override // java.lang.Runnable
                 public void run() {
                     ThemeDetail.this.a(aVar, d.this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
@@ -1130,7 +1130,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (ThemeDetail.this.R.size() > 0) {
@@ -1160,7 +1160,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             this.l.setVisibility(0);
         }
         a(aVar.a(), z);
-        v.h().a(this);
+        ThemeDataProvider.h().a(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1173,7 +1173,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 kVar2.d(false);
             }
             for (k kVar3 : list) {
-                if (kVar3 != null && !(kVar3 instanceof aq)) {
+                if (kVar3 != null && !(kVar3 instanceof AbstractThemeProvider)) {
                     if (kVar3.g().equals(kVar.g())) {
                         kVar.d(true);
                     }
@@ -1189,7 +1189,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, final List<ThemeModel> list) {
         if (list != null) {
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.2
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (ThemeDetail.this.R != null) {
@@ -1210,7 +1210,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             public void onGlobalLayout() {
                 ViewGroup.LayoutParams layoutParams = ThemeDetail.this.e.getLayoutParams();
-                int iC = ((com.tsf.extend.base.j.p.c() - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.workspace_margin_top)) - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_recommed_height)) + ThemeDetail.this.o.getHeight() + ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_theme_promotion_margin);
+                int iC = ((com.tsf.extend.base.j.StorageUtils.c() - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.workspace_margin_top)) - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_recommed_height)) + ThemeDetail.this.o.getHeight() + ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_theme_promotion_margin);
                 if (layoutParams == null) {
                     layoutParams = new ViewGroup.LayoutParams(-1, iC);
                 } else {
@@ -1220,7 +1220,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 int height = ThemeDetail.this.e.getHeight() - iC;
                 if (height > -3 && height < 3) {
                     ThemeDetail.this.h();
-                    com.tsf.extend.base.j.b.a(ThemeDetail.this.e, this);
+                    com.tsf.extend.base.j.ViewCompatUtils.a(ThemeDetail.this.e, this);
                 }
             }
         });
@@ -1305,7 +1305,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(ThemeModel kVar, com.tsf.extend.theme.B bVar) {
+    public void a(ThemeModel kVar, com.tsf.extend.theme.DiyWallpaperProvider bVar) {
         if (kVar.h() == this.z.h()) {
             this.j.setText(ResourceIds.g.theme_detail_btn_apply);
             this.ResourceIds.setVisibility(8);

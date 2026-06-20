@@ -84,7 +84,7 @@ public class ThemeSearchPage extends ThemeListView {
         if (j[3].equals(getCurrentType())) {
             if (this.l) {
                 this.l = false;
-                postDelayed(new Runnable() { // from class: com.tsf.extend.theme.r.1
+                postDelayed(new Runnable() { // from class: com.tsf.extend.theme.ThemeSearchPage.1
                     @Override // java.lang.Runnable
                     public void run() {
                         r.this.l = true;

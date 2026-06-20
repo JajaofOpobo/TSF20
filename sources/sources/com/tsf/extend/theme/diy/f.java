@@ -2,7 +2,7 @@ package com.tsf.extend.theme.diy;
 
 import com.android.volley.l;
 import com.android.volley.n;
-import com.tsf.extend.theme.aq;
+import com.tsf.extend.theme.AbstractThemeProvider;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class f extends l<aq> {
@@ -38,7 +38,7 @@ public class f extends l<aq> {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public com.android.volley.n<com.tsf.extend.theme.aq> a(com.android.volley.i r8) throws java.lang.Throwable {
+    public com.android.volley.n<com.tsf.extend.theme.AbstractThemeProvider> a(com.android.volley.i r8) throws java.lang.Throwable {
         /*
             Method dump skipped, instruction units count: 234
             To view this dump add '--comments-level debug' option

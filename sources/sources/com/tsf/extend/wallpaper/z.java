@@ -58,11 +58,11 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         this.u = new o(com.tsf.extend.base.ResourceIds.c.a(contextB, null));
         this.u.a(this);
         a(contextB, this.u);
-        String strB = com.tsf.extend.base.j.d.b(contextB);
+        String strB = com.tsf.extend.base.j.AppEnvUtils.b(contextB);
         strB = strB == null ? "null" : strB;
         this.t = strB;
         String str = Build.BRAND;
-        j = String.format(j, "" + com.tsf.extend.base.j.p.b(), "" + com.tsf.extend.base.j.p.c(), strB, str);
+        j = String.format(j, "" + com.tsf.extend.base.j.StorageUtils.b(), "" + com.tsf.extend.base.j.StorageUtils.c(), strB, str);
         q = String.format(q, strB, str);
         s = String.format(s, strB);
         this.w = new SparseArray<>();
@@ -95,7 +95,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         }
         if (g.equals(str)) {
             if (TextUtils.isEmpty(this.t)) {
-                this.t = com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b());
+                this.t = com.tsf.extend.base.j.AppEnvUtils.b(com.tsf.extend.AppContextHolder.b());
             }
             return "https://cml.ksmobile.com/rand/wp?count=20&mcc=" + this.t;
         }

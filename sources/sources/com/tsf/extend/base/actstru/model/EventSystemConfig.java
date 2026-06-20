@@ -3,7 +3,7 @@ package com.tsf.extend.base.actstru.model;
 import java.util.concurrent.ConcurrentHashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A {
+public class EventSystemConfig {
     public static boolean a = false;
     public static int b = 1;
     public static int c = 1;

@@ -272,7 +272,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         } else {
             j = 200 - jCurrentTimeMillis;
         }
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.2
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.2
             @Override // java.lang.Runnable
             public void run() {
                 if (ad.this.a != null) {
@@ -280,7 +280,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
                 }
             }
         }, j);
-        com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.3
+        com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.3
             @Override // java.lang.Runnable
             public void run() {
                 ad.this.a(list, false);
@@ -297,7 +297,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str) {
-        if (com.tsf.extend.base.j.u.a(getContext())) {
+        if (com.tsf.extend.base.j.ConnectivityUtils.a(getContext())) {
         }
     }
 
@@ -448,7 +448,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             if (ad.this.a != null) {
                 ad.this.a.b(false);
             }
-            com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.b.1
+            com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.ad.b.1
                 @Override // java.lang.Runnable
                 public void run() {
                     ad.this.e();
