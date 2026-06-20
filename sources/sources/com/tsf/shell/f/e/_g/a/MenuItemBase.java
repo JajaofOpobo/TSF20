@@ -8,15 +8,15 @@ public abstract class MenuItemBase {
     private boolean isAnimation = false;
     private boolean isShowing = false;
     private float mMenuHeight = 0.0f;
-    private c mParent;
+    private MenuItemBase mParent;
     protected com.tsf.shell.f.e._g.MenuOverlay menu;
     public float targetX;
 
-    public void setParentMenu(c cVar) {
-        this.mParent = cVar;
+    public void setParentMenu(MenuItemBase menuItemBase) {
+        this.mParent = menuItemBase;
     }
 
-    public c getParentMenu() {
+    public MenuItemBase getParentMenu() {
         return this.mParent;
     }
 
@@ -59,9 +59,9 @@ public abstract class MenuItemBase {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.1
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    c.this.isAnimation = false;
-                    c.this.onHideComplete();
-                    c.this.removeFromMenu();
+                    MenuItemBase.this.isAnimation = false;
+                    MenuItemBase.this.onHideComplete();
+                    MenuItemBase.this.removeFromMenu();
                 }
             };
             dVar.a(0);
@@ -100,8 +100,8 @@ public abstract class MenuItemBase {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.2
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    c.this.isAnimation = false;
-                    c.this.onShowComplete();
+                    MenuItemBase.this.isAnimation = false;
+                    MenuItemBase.this.onShowComplete();
                 }
             };
             dVar.h(0.0f);

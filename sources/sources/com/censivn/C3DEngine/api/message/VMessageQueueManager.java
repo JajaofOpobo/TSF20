@@ -119,7 +119,7 @@ public class VMessageQueueManager {
     }
 
     private class a extends Handler implements MessageQueue.IdleHandler {
-        public VMessageQueueManager(Looper looper) {
+        public a(Looper looper) {
             super(looper);
         }
 

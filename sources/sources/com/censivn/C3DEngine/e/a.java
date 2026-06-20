@@ -103,7 +103,7 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         public float g;
         public boolean h = false;
 
-        public a(String str, String str2) {
+        public C0039a(String str, String str2) {
             this.b = str;
             this.c = str2;
         }
@@ -114,7 +114,7 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         private Bitmap c;
         private TextureElement d;
 
-        public a() {
+        public c() {
         }
 
         public void a(C0039a c0039a) {
@@ -258,7 +258,7 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         public String b;
         public Color4 c;
 
-        public a(String str) {
+        public b(String str) {
             this.a = str;
         }
     }

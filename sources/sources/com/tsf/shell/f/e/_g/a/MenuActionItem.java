@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MenuActionItem extends MenuActionHandler {
-    private e icon;
-    private ArrayList<c> mChildMenus;
-    private c mCurrentChildMenu;
+    private MenuExpandItem icon;
+    private ArrayList<MenuItemBase> mChildMenus;
+    private MenuItemBase mCurrentChildMenu;
     private int mMarkTextureId;
 
     public MenuActionItem(int i) {
@@ -39,24 +39,24 @@ public class MenuActionItem extends MenuActionHandler {
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent) {
                     w.b();
-                    b.this.menu.changeMenu(b.this);
+                    MenuActionItem.this.menu.changeMenu(MenuActionItem.this);
                 }
             });
         }
         this.icon.a(str);
     }
 
-    public void showChildMenu(c cVar) {
-        if (this.mCurrentChildMenu != cVar) {
-            if (this.mChildMenus.contains(cVar)) {
-                this.mChildMenus.remove(cVar);
+    public void showChildMenu(MenuItemBase menuItemBase) {
+        if (this.mCurrentChildMenu != menuItemBase) {
+            if (this.mChildMenus.contains(menuItemBase)) {
+                this.mChildMenus.remove(menuItemBase);
             }
             if (this.mCurrentChildMenu != null) {
                 this.mCurrentChildMenu.hide(true);
             }
-            this.mChildMenus.add(cVar);
-            showChildMenu(cVar);
-            this.mCurrentChildMenu = cVar;
+            this.mChildMenus.add(menuItemBase);
+            showChildMenu(menuItemBase);
+            this.mCurrentChildMenu = menuItemBase;
         }
     }
 
@@ -92,7 +92,7 @@ public class MenuActionItem extends MenuActionHandler {
         return this.icon.e();
     }
 
-    public e getTitleIcon() {
+    public MenuExpandItem getTitleIcon() {
         return this.icon;
     }
 }

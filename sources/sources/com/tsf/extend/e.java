@@ -321,7 +321,7 @@ public class e extends g implements DialogInterface {
         public boolean m = true;
         public d r = new d();
 
-        public e(Context context, int i) {
+        public b(Context context, int i) {
             this.a = context;
             this.b = i;
         }

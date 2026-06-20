@@ -677,7 +677,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     static class m implements ao.a {
         WeakReference<PersonalizationActivity> a;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+        public m(PersonalizationActivity personalizationActivity) {
             this.a = new WeakReference<>(personalizationActivity);
         }
 
@@ -699,7 +699,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         private WeakReference<PersonalizationActivity> a;
         private com.tsf.extend.base.b.A b;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity, com.tsf.extend.base.b.A aVar) {
+        public l(PersonalizationActivity personalizationActivity, com.tsf.extend.base.b.A aVar) {
             this.a = new WeakReference<>(personalizationActivity);
             this.b = aVar;
         }
@@ -728,7 +728,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         private WeakReference<PersonalizationActivity> a;
         private String b;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity, String str) {
+        public j(PersonalizationActivity personalizationActivity, String str) {
             this.a = new WeakReference<>(personalizationActivity);
             this.b = str;
         }
@@ -770,7 +770,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         private List<com.tsf.extend.theme.k> b;
         private com.tsf.extend.base.b.A c;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.A aVar) {
+        public g(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.A aVar) {
             this.a = new WeakReference<>(personalizationActivity);
             this.b = list;
             this.c = aVar;
@@ -916,7 +916,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     static class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+        public d(PersonalizationActivity personalizationActivity) {
             this.a = new WeakReference<>(personalizationActivity);
         }
 
@@ -947,7 +947,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     static class e implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
-        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+        public e(PersonalizationActivity personalizationActivity) {
             this.a = new WeakReference<>(personalizationActivity);
         }
 

@@ -575,7 +575,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
-        public DIYThemeDetail() {
+        public d() {
             this.b = DIYThemeDetail.this.new A();
         }
 

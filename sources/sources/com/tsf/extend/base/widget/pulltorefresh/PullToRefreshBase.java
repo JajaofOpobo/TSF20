@@ -1042,7 +1042,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         private long h = -1;
         private int i = -1;
 
-        public PullToRefreshBase(int i, int i2, long j, g gVar) {
+        public i(int i, int i2, long j, g gVar) {
             this.d = i;
             this.c = i2;
             this.b = PullToRefreshBase.this.r;

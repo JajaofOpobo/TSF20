@@ -1406,7 +1406,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     class h implements com.tsf.extend.theme.diy.b.a<com.tsf.extend.base.b.A> {
-        public ThemeDIYActivity() {
+        public h() {
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
@@ -1652,7 +1652,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         private final List<String> b;
         private aq c;
 
-        public ThemeDIYActivity(aq aqVar) {
+        public d(aq aqVar) {
             this.c = aqVar;
             this.b = ThemeDIYActivity.this.o.e();
         }

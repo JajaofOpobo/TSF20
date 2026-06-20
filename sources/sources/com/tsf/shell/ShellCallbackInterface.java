@@ -4,5 +4,5 @@ import android.content.Intent;
 
 /* JADX INFO: loaded from: classes.dex */
 public interface ShellCallbackInterface {
-    int a(Intent intent, com.censivn.C3DEngine.b.c.a.InterfaceC0025a interfaceC0025a);
+    int a(Intent intent, Object interfaceC0025a);
 }

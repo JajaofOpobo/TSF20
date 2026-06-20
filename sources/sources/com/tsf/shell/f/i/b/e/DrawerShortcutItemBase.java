@@ -63,22 +63,22 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         aA();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
         if (fVar instanceof b) {
             a((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
         if (fVar instanceof b) {
             b((com.censivn.C3DEngine.b.f.i) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
         if ((fVar instanceof b) && this.u != null) {
             com.tsf.shell.f.i.b.d.FolderShortcutItem bVarA = a((b) fVar, false);
             bVarA.K().screen = K().screen;
@@ -87,13 +87,13 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public boolean a(com.tsf.shell.f.e.ILayoutItem fVar, float f, float f2) {
         return (fVar instanceof com.tsf.shell.f.i.ShortcutItem) && ((com.tsf.shell.f.i.ShortcutItem) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
         return fVar instanceof b;
     }
 
@@ -177,8 +177,8 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         super.onDrawChildEnd();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void g(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void g(com.tsf.shell.f.e.ILayoutItem fVar) {
         I();
         super.g(fVar);
     }

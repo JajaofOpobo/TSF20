@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MenuClassButton extends j {
-    private d a;
+    private MenuOverlay a;
     private com.censivn.C3DEngine.b.b.A.b b;
     private float c;
     private float e;
@@ -14,7 +14,7 @@ public class MenuClassButton extends j {
     private float d = com.censivn.C3DEngine.b.b.A.a(20.0f);
     private boolean g = false;
 
-    public MenuClassButton(d dVar, float f) {
+    public MenuClassButton(MenuOverlay menuOverlay, float f) {
         this.a = dVar;
         this.c = f;
     }

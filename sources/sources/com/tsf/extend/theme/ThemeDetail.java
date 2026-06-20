@@ -898,7 +898,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
-        public ThemeDetail() {
+        public C() {
             this.b = ThemeDetail.this.new A();
         }
 
@@ -1114,7 +1114,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private final com.tsf.extend.base.d.a.b b;
 
-        public ThemeDetail(com.tsf.extend.base.d.a.b bVar) {
+        public d(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 

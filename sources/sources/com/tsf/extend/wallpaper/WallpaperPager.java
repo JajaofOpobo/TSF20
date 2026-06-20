@@ -175,7 +175,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         private int b = 0;
         private FrameLayout.LayoutParams f = new FrameLayout.LayoutParams(-1, -1);
 
-        public WallpaperPager() {
+        public A() {
             this.c = 1;
             this.d = 2;
             this.e = 3;

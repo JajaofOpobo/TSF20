@@ -423,7 +423,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     private class b implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private com.tsf.extend.base.d.a.b b;
 
-        public ad(com.tsf.extend.base.d.a.b bVar) {
+        public b(com.tsf.extend.base.d.a.b bVar) {
             this.b = bVar;
         }
 

@@ -1,32 +1,32 @@
 package com.tsf.shell.f.e;
 
-/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+/* JADX INILayoutItemO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSILayoutItem20\resources-Prime\classes.dex */
 public interface ILayoutItem {
-    F a(int i, int i2);
+    ILayoutItem a(int i, int i2);
 
-    void a(F fVar);
+    void a(ILayoutItem fVar);
 
     boolean a();
 
-    boolean a(F fVar, float f, float f2);
+    boolean a(ILayoutItem fVar, float f, float f2);
 
-    boolean b(F fVar);
+    boolean b(ILayoutItem fVar);
 
-    void c(F fVar);
+    void c(ILayoutItem fVar);
 
-    void d(F fVar);
+    void d(ILayoutItem fVar);
 
-    void e(F fVar);
+    void e(ILayoutItem fVar);
 
-    void f(F fVar);
+    void f(ILayoutItem fVar);
 
-    void g(F fVar);
+    void g(ILayoutItem fVar);
 
-    boolean h(F fVar);
+    boolean h(ILayoutItem fVar);
 
     int m();
 
-    F n();
+    ILayoutItem n();
 
     boolean o();
 

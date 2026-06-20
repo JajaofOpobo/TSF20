@@ -163,7 +163,7 @@ public class c {
         public RenderRunnable a;
         public boolean b;
 
-        public c(RenderRunnable renderRunnable, boolean z) {
+        public a(RenderRunnable renderRunnable, boolean z) {
             this.a = renderRunnable;
             this.b = z;
         }

@@ -25,8 +25,6 @@ import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.b.c.a;
 import com.flurry.android.FlurryAgent;
 import com.tsf.b;
-import com.tsf.shell.ShellCallbackInterface.a.d;
-
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.plugin.notice.NoticeStateProvider;
 import com.tsf.shell.theme.inside.ThemeManager;

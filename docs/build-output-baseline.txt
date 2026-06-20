@@ -14,24 +14,333 @@ https://d.android.com/r/tools/api-level-support
 To suppress this warning, add/update
     android.suppressUnsupportedCompileSdk=36
 to this project's gradle.properties.
+> Task :app:clean
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
-> Task :app:javaPreCompileDebug UP-TO-DATE
-> Task :app:checkDebugAarMetadata UP-TO-DATE
-> Task :app:generateDebugResValues UP-TO-DATE
-> Task :app:mapDebugSourceSetPaths UP-TO-DATE
-> Task :app:generateDebugResources UP-TO-DATE
-> Task :app:mergeDebugResources UP-TO-DATE
-> Task :app:packageDebugResources UP-TO-DATE
-> Task :app:parseDebugLocalResources UP-TO-DATE
-> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
-> Task :app:extractDeepLinksDebug UP-TO-DATE
-> Task :app:processDebugMainManifest UP-TO-DATE
-> Task :app:processDebugManifest UP-TO-DATE
-> Task :app:processDebugManifestForPackage UP-TO-DATE
-> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:parseDebugLocalResources
+> Task :app:mergeDebugResources
+> Task :app:processDebugResources
 
 > Task :app:compileDebugJavaWithJavac FAILED
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/keyboard/KeyboardPager.java:421: error: invalid method declaration; return type required
+        public KeyboardPager(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/c/d.java:384: error: invalid method declaration; return type required
+        public d(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:54: error: invalid method declaration; return type required
+        public ab() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:194: error: invalid method declaration; return type required
+        public y(n nVar, int i) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:296: error: invalid method declaration; return type required
+        public y(int i, int i2, List<com.tsf.extend.base.c.a> list) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:295: error: invalid method declaration; return type required
+        public e(Context context, Uri uri, JSONObject jSONObject, g gVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:332: error: invalid method declaration; return type required
+        public e(h hVar, Intent intent, g gVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:389: error: invalid method declaration; return type required
+        public e(Intent intent) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/ThemeDIYActivity.java:1409: error: invalid method declaration; return type required
+        public ThemeDIYActivity() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/ThemeDIYActivity.java:1655: error: invalid method declaration; return type required
+        public ThemeDIYActivity(aq aqVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeAlbumsPager.java:399: error: invalid method declaration; return type required
+        public ThemeAlbumsPager(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/m.java:376: error: invalid method declaration; return type required
+        public m(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:901: error: invalid method declaration; return type required
+        public ThemeDetail() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:1117: error: invalid method declaration; return type required
+        public ThemeDetail(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeCmClubProvider.java:27: error: invalid method declaration; return type required
+        public ThemeCmClubProvider(int i, String str, int i2, String str2) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:578: error: invalid method declaration; return type required
+        public DIYThemeDetail() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/ad.java:426: error: invalid method declaration; return type required
+        public ad(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/af.java:364: error: invalid method declaration; return type required
+        public af(com.tsf.extend.base.d.a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/d.java:39: error: invalid method declaration; return type required
+        public d(Context context) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:680: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:702: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity, com.tsf.extend.base.b.A aVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:731: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity, String str) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:773: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.A aVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:919: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:950: error: invalid method declaration; return type required
+        public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperPager.java:178: error: invalid method declaration; return type required
+        public WallpaperPager() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:193: error: invalid method declaration; return type required
+        public v(a.b bVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:217: error: invalid method declaration; return type required
+        public v() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1045: error: invalid method declaration; return type required
+            public e(com.tsf.extend.base.d.a.b bVar) {
+                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/e.java:324: error: invalid method declaration; return type required
+        public e(Context context, int i) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/f.java:19: error: invalid method declaration; return type required
+        public f(BlockingQueue<d> blockingQueue) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:21: error: invalid method declaration; return type required
+        public k(BlockingQueue<j> blockingQueue) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:38: error: invalid method declaration; return type required
+        public k(BlockingQueue<FutureTask<d>> blockingQueue) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:38: error: invalid method declaration; return type required
+        public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:55: error: invalid method declaration; return type required
+        public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshBase.java:1045: error: invalid method declaration; return type required
+        public PullToRefreshBase(int i, int i2, long j, g gVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:334: error: invalid method declaration; return type required
+        public c(String str, com.android.volley.b.a aVar) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:79: error: invalid method declaration; return type required
+        public s(int i, long j) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:122: error: invalid method declaration; return type required
+        public s(ObjectAnimator objectAnimator, int i) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:197: error: invalid method declaration; return type required
+        public s() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/f.java:210: error: invalid method declaration; return type required
+        public f(f fVar, String str, String str2, int i) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:106: error: invalid method declaration; return type required
+        public a(String str, String str2) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:117: error: invalid method declaration; return type required
+        public a() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:261: error: invalid method declaration; return type required
+        public a(String str) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/c/c.java:166: error: invalid method declaration; return type required
+        public c(RenderRunnable renderRunnable, boolean z) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/d/b.java:295: error: invalid method declaration; return type required
+        public b(float f, float f2, float f3) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/message/VMessageQueueManager.java:122: error: invalid method declaration; return type required
+        public VMessageQueueManager(Looper looper) {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/android/support/v4/widget/g.java:197: error: invalid method declaration; return type required
+        public g() {
+               ^
+/home/jaja/Documents/TSF20/sources/sources/android/support/v4/widget/NestedScrollView.java:1260: error: invalid method declaration; return type required
+        public NestedScrollView(Parcel parcel) {
+               ^
+49 errors
 
 [Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
-15 actionable tasks: 1 executed, 14 up-to-date
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/keyboard/KeyboardPager.java:421: error: invalid method declaration; return type required
+          public KeyboardPager(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/c/d.java:384: error: invalid method declaration; return type required
+          public d(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ab.java:54: error: invalid method declaration; return type required
+          public ab() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:194: error: invalid method declaration; return type required
+          public y(n nVar, int i) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/y.java:296: error: invalid method declaration; return type required
+          public y(int i, int i2, List<com.tsf.extend.base.c.a> list) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:295: error: invalid method declaration; return type required
+          public e(Context context, Uri uri, JSONObject jSONObject, g gVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:332: error: invalid method declaration; return type required
+          public e(h hVar, Intent intent, g gVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/e.java:389: error: invalid method declaration; return type required
+          public e(Intent intent) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/ThemeDIYActivity.java:1409: error: invalid method declaration; return type required
+          public ThemeDIYActivity() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/diy/ThemeDIYActivity.java:1655: error: invalid method declaration; return type required
+          public ThemeDIYActivity(aq aqVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeAlbumsPager.java:399: error: invalid method declaration; return type required
+          public ThemeAlbumsPager(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/m.java:376: error: invalid method declaration; return type required
+          public m(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:901: error: invalid method declaration; return type required
+          public ThemeDetail() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeDetail.java:1117: error: invalid method declaration; return type required
+          public ThemeDetail(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/ThemeCmClubProvider.java:27: error: invalid method declaration; return type required
+          public ThemeCmClubProvider(int i, String str, int i2, String str2) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/theme/DIYThemeDetail.java:578: error: invalid method declaration; return type required
+          public DIYThemeDetail() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/ad.java:426: error: invalid method declaration; return type required
+          public ad(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/af.java:364: error: invalid method declaration; return type required
+          public af(com.tsf.extend.base.d.a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/d.java:39: error: invalid method declaration; return type required
+          public d(Context context) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:680: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:702: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity, com.tsf.extend.base.b.A aVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:731: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity, String str) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:773: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.A aVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:919: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/PersonalizationActivity.java:950: error: invalid method declaration; return type required
+          public PersonalizationActivity(PersonalizationActivity personalizationActivity) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperPager.java:178: error: invalid method declaration; return type required
+          public WallpaperPager() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:193: error: invalid method declaration; return type required
+          public v(a.b bVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/v.java:217: error: invalid method declaration; return type required
+          public v() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/wallpaper/WallpaperDetail.java:1045: error: invalid method declaration; return type required
+              public e(com.tsf.extend.base.d.a.b bVar) {
+                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/e.java:324: error: invalid method declaration; return type required
+          public e(Context context, int i) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/f.java:19: error: invalid method declaration; return type required
+          public f(BlockingQueue<d> blockingQueue) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:21: error: invalid method declaration; return type required
+          public k(BlockingQueue<j> blockingQueue) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/actstru/model/k.java:38: error: invalid method declaration; return type required
+          public k(BlockingQueue<FutureTask<d>> blockingQueue) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:38: error: invalid method declaration; return type required
+          public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshExpandableListView.java:55: error: invalid method declaration; return type required
+          public PullToRefreshExpandableListView(Context context, AttributeSet attributeSet) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/widget/pulltorefresh/PullToRefreshBase.java:1045: error: invalid method declaration; return type required
+          public PullToRefreshBase(int i, int i2, long j, g gVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/b/c.java:334: error: invalid method declaration; return type required
+          public c(String str, com.android.volley.b.a aVar) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:79: error: invalid method declaration; return type required
+          public s(int i, long j) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:122: error: invalid method declaration; return type required
+          public s(ObjectAnimator objectAnimator, int i) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/extend/base/j/s.java:197: error: invalid method declaration; return type required
+          public s() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/f.java:210: error: invalid method declaration; return type required
+          public f(f fVar, String str, String str2, int i) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:106: error: invalid method declaration; return type required
+          public a(String str, String str2) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:117: error: invalid method declaration; return type required
+          public a() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/e/a.java:261: error: invalid method declaration; return type required
+          public a(String str) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/c/c.java:166: error: invalid method declaration; return type required
+          public c(RenderRunnable renderRunnable, boolean z) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/h/d/b.java:295: error: invalid method declaration; return type required
+          public b(float f, float f2, float f3) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/message/VMessageQueueManager.java:122: error: invalid method declaration; return type required
+          public VMessageQueueManager(Looper looper) {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/android/support/v4/widget/g.java:197: error: invalid method declaration; return type required
+          public g() {
+                 ^
+  /home/jaja/Documents/TSF20/sources/sources/android/support/v4/widget/NestedScrollView.java:1260: error: invalid method declaration; return type required
+          public NestedScrollView(Parcel parcel) {
+                 ^
+  49 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 6s
+16 actionable tasks: 16 executed
