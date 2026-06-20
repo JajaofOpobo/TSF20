@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.element.info;
 
 /* JADX INFO: loaded from: classes.dex */
-public class b {
+public class LayoutBounds {
     public int a;
     public int b;
     public int c;
