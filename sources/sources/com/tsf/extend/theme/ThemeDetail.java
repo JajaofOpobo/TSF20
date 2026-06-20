@@ -69,7 +69,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private t O;
     private d P;
     private d Q;
-    private List<t.b> R;
+    private List<ThemeBaseAdapter.b> R;
     private long S;
     private boolean T;
     private boolean U;
@@ -389,7 +389,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         a(kVar, true);
         this.K = (FrameLayout) findViewById(ResourceIds.e.theme_detail_progress_view);
         this.L = (ProgressBar) findViewById(ResourceIds.e.theme_detail_progress);
-        this.L.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
+        this.L.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3));
         this.K.setVisibility(0);
         ThemeDataProvider.h().a(new e(), j, str, str2);
     }
@@ -738,13 +738,13 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 kVar = (ThemeModel) view.getTag();
             } else {
                 Object tag = view.getTag();
-                if (tag instanceof t.d) {
+                if (tag instanceof ThemeBaseAdapter.d) {
                     if (view.getId() == ResourceIds.e.theme_item_left) {
-                        kVar = ((t.d) tag).a;
+                        kVar = ((ThemeBaseAdapter.d) tag).a;
                     } else if (view.getId() == ResourceIds.e.theme_item_mid) {
-                        kVar = ((t.d) tag).o;
+                        kVar = ((ThemeBaseAdapter.d) tag).o;
                     } else {
-                        kVar = ((t.d) tag).h;
+                        kVar = ((ThemeBaseAdapter.d) tag).h;
                     }
                 } else {
                     kVar = tag instanceof ThemeModel ? (ThemeModel) tag : null;
@@ -1165,7 +1165,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(List<ThemeModel> list) {
-        for (t.b bVar : this.R) {
+        for (ThemeBaseAdapter.b bVar : this.R) {
             ThemeModel kVar = bVar.a;
             k kVar2 = bVar.b;
             kVar.d(false);

@@ -33,7 +33,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     protected View d;
     protected boolean e;
     protected long f;
-    protected List<t.b> g;
+    protected List<ThemeBaseAdapter.b> g;
     protected t h;
     protected p i;
     protected int k;
@@ -78,7 +78,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         this.c.setOnClickListener(this);
         this.d = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
         this.l = (ProgressBar) this.d.findViewById(ResourceIds.e.loadmore_progress);
-        this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.m = (TextView) this.d.findViewById(ResourceIds.e.loadmore_tips);
         this.m.setOnClickListener(this);
         this.c.setSoundEffectsEnabled(true);
@@ -249,7 +249,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
                 public void run() {
                     String strF;
                     if (m.this.g != null) {
-                        for (t.b bVar : m.this.g) {
+                        for (ThemeBaseAdapter.b bVar : m.this.g) {
                             if (bVar.e() == null) {
                                 ThemeModel kVar = bVar.a;
                                 k kVar2 = bVar.b;
@@ -334,13 +334,13 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     private void c(View view) {
         ThemeModel kVar;
         Object tag = view.getTag();
-        if (tag instanceof t.d) {
+        if (tag instanceof ThemeBaseAdapter.d) {
             if (view.getId() == ResourceIds.e.theme_item_left) {
-                kVar = ((t.d) tag).a;
+                kVar = ((ThemeBaseAdapter.d) tag).a;
             } else if (view.getId() == ResourceIds.e.theme_item_mid) {
-                kVar = ((t.d) tag).o;
+                kVar = ((ThemeBaseAdapter.d) tag).o;
             } else {
-                kVar = ((t.d) tag).h;
+                kVar = ((ThemeBaseAdapter.d) tag).h;
             }
         } else if (!(tag instanceof ThemeModel)) {
             kVar = null;
@@ -471,7 +471,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     }
 
     protected boolean a(List<ThemeModel> list, boolean z) {
-        t.b bVar;
+        ThemeBaseAdapter.b bVar;
         if (!z) {
             this.k = 0;
             this.g.clear();
@@ -502,7 +502,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
                 }
             }
         }
-        t.b bVar2 = this.g.size() > 0 ? this.g.get(this.g.size() - 1) : null;
+        ThemeBaseAdapter.b bVar2 = this.g.size() > 0 ? this.g.get(this.g.size() - 1) : null;
         if (bVar2 != null && bVar2.b() == null && list.size() > 1) {
             k kVarRemove = list.remove(0);
             kVarRemove.f(bVar2.a().z() + 1);
@@ -522,7 +522,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
             kVar4.f(i2 + 2);
             k kVar5 = list.get((i * 3) + 2);
             kVar5.f(i2 + 3);
-            this.g.add(new t.b(kVar3, kVar4, kVar5));
+            this.g.add(new ThemeBaseAdapter.b(kVar3, kVar4, kVar5));
             i++;
         }
         int size = list.size() % 3;
@@ -530,14 +530,14 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
             if (size == 1) {
                 k kVar6 = list.get(list.size() - 1);
                 kVar6.f(((this.k + ((list.size() + 1) / 3)) * 10) + 1);
-                bVar = new t.b(kVar6, null, null);
+                bVar = new ThemeBaseAdapter.b(kVar6, null, null);
             } else if (size == 2) {
                 k kVar7 = list.get(list.size() - 2);
                 int size2 = (this.k + ((list.size() + 1) / 3)) * 10;
                 kVar7.f(size2 + 1);
                 k kVar8 = list.get(list.size() - 1);
                 kVar8.f(size2 + 2);
-                bVar = new t.b(kVar7, kVar8, null);
+                bVar = new ThemeBaseAdapter.b(kVar7, kVar8, null);
             } else {
                 bVar = null;
             }
@@ -721,7 +721,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         return this.y;
     }
 
-    protected t a(List<t.b> list, View.OnClickListener onClickListener) {
+    protected t a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         return new t(getContext(), this.g, this);
     }
 

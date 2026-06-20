@@ -30,7 +30,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
     boolean n;
     View.OnClickListener o;
 
-    public y(Context context, List<t.b> list, View.OnClickListener onClickListener) {
+    public y(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         super(context, list, onClickListener);
         this.n = true;
         this.o = new View.OnClickListener() { // from class: com.tsf.extend.theme.y.1

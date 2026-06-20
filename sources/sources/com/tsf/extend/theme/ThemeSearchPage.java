@@ -15,7 +15,7 @@ import org.json.JSONObject;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeSearchPage extends ThemeListView {
     boolean l;
-    protected List<t.b> m;
+    protected List<ThemeBaseAdapter.b> m;
 
     public r(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
         super(context, pageActivity, str, iVar);
@@ -53,7 +53,7 @@ public class ThemeSearchPage extends ThemeListView {
     }
 
     private void a(List<ThemeModel> list) {
-        this.g.add(new t.b(list));
+        this.g.add(new ThemeBaseAdapter.b(list));
     }
 
     private void b(List<ThemeModel> list) {
@@ -63,12 +63,12 @@ public class ThemeSearchPage extends ThemeListView {
             if (i2 >= list.size() / 2) {
                 break;
             }
-            this.g.add(new t.b(list.get(i2 * 2), null, list.get((i2 * 2) + 1)));
+            this.g.add(new ThemeBaseAdapter.b(list.get(i2 * 2), null, list.get((i2 * 2) + 1)));
             i = i2 + 1;
         }
         int size = list.size() % 2;
         if (size != 0) {
-            this.g.add(size == 1 ? new t.b(list.get(list.size() - 1), null, null) : null);
+            this.g.add(size == 1 ? new ThemeBaseAdapter.b(list.get(list.size() - 1), null, null) : null);
         }
     }
 
@@ -110,7 +110,7 @@ public class ThemeSearchPage extends ThemeListView {
     }
 
     @Override // com.tsf.extend.theme.ThemeListView
-    protected t a(List<t.b> list, View.OnClickListener onClickListener) {
+    protected t a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         return new q(getContext(), list, this);
     }
 }

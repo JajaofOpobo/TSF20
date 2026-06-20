@@ -58,7 +58,7 @@ public class ThemeCategoryPage extends ThemeListView {
                     a((List<ThemeModel>) arrayList);
                     arrayList.clear();
                     kVar3.f(((this.k + 1) * 10) + 1);
-                    this.g.add(new t.b(kVar3));
+                    this.g.add(new ThemeBaseAdapter.b(kVar3));
                     this.k++;
                 }
             } else {
@@ -92,10 +92,10 @@ public class ThemeCategoryPage extends ThemeListView {
     }
 
     private void a(List<ThemeModel> list) {
-        t.b bVar;
-        t.b bVar2;
+        ThemeBaseAdapter.b bVar;
+        ThemeBaseAdapter.b bVar2;
         int size = this.g.size() - 1;
-        t.b bVar3 = null;
+        ThemeBaseAdapter.b bVar3 = null;
         while (true) {
             if (size < 0) {
                 bVar = bVar3;
@@ -127,7 +127,7 @@ public class ThemeCategoryPage extends ThemeListView {
             kVar2.f(i2 + 2);
             k kVar3 = list.get((i * 3) + 2);
             kVar3.f(i2 + 3);
-            this.g.add(new t.b(kVar, kVar2, kVar3));
+            this.g.add(new ThemeBaseAdapter.b(kVar, kVar2, kVar3));
             i++;
         }
         int size2 = list.size() % 3;
@@ -135,14 +135,14 @@ public class ThemeCategoryPage extends ThemeListView {
             if (size2 == 1) {
                 k kVar4 = list.get(list.size() - 1);
                 kVar4.f(((this.k + ((list.size() + 1) / 3)) * 10) + 1);
-                bVar2 = new t.b(kVar4, null, null);
+                bVar2 = new ThemeBaseAdapter.b(kVar4, null, null);
             } else if (size2 == 2) {
                 k kVar5 = list.get(list.size() - 2);
                 int size3 = (this.k + ((list.size() + 1) / 3)) * 10;
                 kVar5.f(size3 + 1);
                 k kVar6 = list.get(list.size() - 1);
                 kVar6.f(size3 + 2);
-                bVar2 = new t.b(kVar5, kVar6, null);
+                bVar2 = new ThemeBaseAdapter.b(kVar5, kVar6, null);
             } else {
                 bVar2 = null;
             }
@@ -154,7 +154,7 @@ public class ThemeCategoryPage extends ThemeListView {
     }
 
     @Override // com.tsf.extend.theme.ThemeListView
-    protected t a(List<t.b> list, View.OnClickListener onClickListener) {
+    protected t a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         return new y(this.a, list, this);
     }
 

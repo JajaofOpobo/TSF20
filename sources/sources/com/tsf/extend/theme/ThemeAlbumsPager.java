@@ -44,7 +44,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     private View g;
     private ProgressBar h;
     private TextView i;
-    private List<t.b> k;
+    private List<ThemeBaseAdapter.b> k;
     private A l;
     private A m;
     private t n;
@@ -92,7 +92,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         } else {
             n();
         }
-        com.tsf.extend.base.widget.pulltorefresh.e eVar = new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-16777216, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN});
+        com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable eVar = new com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-16777216, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN});
         eVar.setBounds(0, 0, eVar.getMinimumWidth(), eVar.getMinimumHeight());
         this.i.setCompoundDrawables(eVar, null, null, null);
         this.i.setCompoundDrawablePadding((int) (6.0f * com.tsf.extend.base.j.StorageUtils.a()));
@@ -106,7 +106,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         }
         this.g = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_album_loadmore, (ViewGroup) null);
         this.h = (ProgressBar) this.g.findViewById(ResourceIds.e.loadmore_progress);
-        this.h.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.h.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.e.setLoadMoreView(this.g);
         this.g.setVisibility(0);
         this.e.setMode(PullToRefreshBase.b.PULL_FROM_START);
@@ -219,7 +219,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
                 @Override // java.lang.Runnable
                 public void run() {
                     if (ThemeAlbumsPager.this.k != null) {
-                        for (t.b bVar : ThemeAlbumsPager.this.k) {
+                        for (ThemeBaseAdapter.b bVar : ThemeAlbumsPager.this.k) {
                             ThemeModel kVar = bVar.a;
                             k kVar2 = bVar.b;
                             kVar.d(false);
@@ -253,14 +253,14 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         ThemeModel kVar;
         k kVar2;
         Object tag = view.getTag();
-        if (tag instanceof t.d) {
+        if (tag instanceof ThemeBaseAdapter.d) {
             int id = view.getId();
             if (id == ResourceIds.e.theme_item_left || id == ResourceIds.e.theme_item_download_layout_left) {
-                kVar2 = ((t.d) tag).a;
+                kVar2 = ((ThemeBaseAdapter.d) tag).a;
             } else if (id == ResourceIds.e.theme_item_mid || id == ResourceIds.e.theme_item_download_layout_mid) {
-                kVar2 = ((t.d) tag).o;
+                kVar2 = ((ThemeBaseAdapter.d) tag).o;
             } else {
-                kVar2 = ((t.d) tag).h;
+                kVar2 = ((ThemeBaseAdapter.d) tag).h;
             }
             str = "1";
             kVar = kVar2;
@@ -525,7 +525,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
                         if (!it.hasNext()) {
                             break;
                         }
-                        t.b bVar = (t.b) it.next();
+                        ThemeBaseAdapter.b bVar = (ThemeBaseAdapter.b) it.next();
                         if (!TextUtils.isEmpty(str) && str.equals(bVar.a.g())) {
                             bVar.com.tsf.extend.base.d.BaseDataProvider.b(true);
                             break;

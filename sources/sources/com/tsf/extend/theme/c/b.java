@@ -9,7 +9,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends ThemeBaseAdapter {
-    public b(Context context, List<t.b> list, View.OnClickListener onClickListener) {
+    public b(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         super(context, list, onClickListener);
     }
 
@@ -19,14 +19,14 @@ public class b extends ThemeBaseAdapter {
     }
 
     @Override // com.tsf.extend.theme.ThemeBaseAdapter
-    protected void a(t.d dVar, View view) {
+    protected void a(ThemeBaseAdapter.d dVar, View view) {
         dVar.g = (TextView) view.findViewById(ResourceIds.e.theme_name_left);
         dVar.u = (TextView) view.findViewById(ResourceIds.e.theme_name_mid);
         dVar.n = (TextView) view.findViewById(ResourceIds.e.theme_name_right);
     }
 
     @Override // com.tsf.extend.theme.ThemeBaseAdapter
-    protected void a(t.d dVar, t.b bVar) {
+    protected void a(ThemeBaseAdapter.d dVar, ThemeBaseAdapter.b bVar) {
         if (dVar != null && bVar != null) {
             if (dVar.g != null && bVar.a() != null) {
                 dVar.g.setText(bVar.a().i());

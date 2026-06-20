@@ -25,7 +25,7 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
     private int r;
     private List<b> s;
 
-    public q(Context context, List<t.b> list, View.OnClickListener onClickListener) {
+    public q(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         super(context, list, onClickListener);
         this.r = 0;
         this.s = Lists.newArrayList();
@@ -60,7 +60,7 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
         } else {
             bVar = (B) view.getTag();
         }
-        t.b bVarA = getItem(i);
+        ThemeBaseAdapter.b bVarA = getItem(i);
         int size = bVarA.d().size();
         if (size > 0) {
             bVar.c.setVisibility(4);

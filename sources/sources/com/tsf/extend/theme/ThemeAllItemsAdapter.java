@@ -8,7 +8,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeAllItemsAdapter extends ThemeBaseAdapter {
-    public af(Context context, List<t.b> list, View.OnClickListener onClickListener) {
+    public af(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         super(context, list, onClickListener);
     }
 

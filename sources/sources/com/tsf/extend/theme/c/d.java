@@ -34,7 +34,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     protected PageActivity a;
     private PullToRefreshAndLoadMoreListView b;
     private t c;
-    private List<t.b> d;
+    private List<ThemeBaseAdapter.b> d;
     private boolean e;
     private ProgressBar f;
     private TextView g;
@@ -81,7 +81,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         });
         this.i = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail_loadmore, (ViewGroup) null);
         this.f = (ProgressBar) this.i.findViewById(ResourceIds.e.loadmore_progress);
-        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.g = (TextView) this.i.findViewById(ResourceIds.e.loadmore_tips);
         this.h = this.i.findViewById(ResourceIds.e.nomore_group);
         this.b.setLoadMoreView(this.i);
@@ -151,13 +151,13 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                 kVar = (ThemeModel) view.getTag();
             } else {
                 Object tag = view.getTag();
-                if (tag instanceof t.d) {
+                if (tag instanceof ThemeBaseAdapter.d) {
                     if (view.getId() == ResourceIds.e.theme_item_left) {
-                        kVar = ((t.d) tag).a;
+                        kVar = ((ThemeBaseAdapter.d) tag).a;
                     } else if (view.getId() == ResourceIds.e.theme_item_mid) {
-                        kVar = ((t.d) tag).o;
+                        kVar = ((ThemeBaseAdapter.d) tag).o;
                     } else {
-                        kVar = ((t.d) tag).h;
+                        kVar = ((ThemeBaseAdapter.d) tag).h;
                     }
                 } else {
                     kVar = tag instanceof ThemeModel ? (ThemeModel) tag : null;
@@ -210,7 +210,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                 @Override // java.lang.Runnable
                 public void run() {
                     if (d.this.d != null) {
-                        for (t.b bVar : d.this.d) {
+                        for (ThemeBaseAdapter.b bVar : d.this.d) {
                             if (bVar.e() == null) {
                                 k kVarA = bVar.a();
                                 k kVarB = bVar.b();

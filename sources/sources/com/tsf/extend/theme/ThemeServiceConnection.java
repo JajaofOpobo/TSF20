@@ -7,26 +7,26 @@ import android.os.IBinder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeServiceConnection {
-    private static ao a;
+    private static ThemeServiceConnection a;
     private com.tsf.extend.base.c.ServiceBinderB b;
     private A c;
     private boolean d;
     private ServiceConnection e = new ServiceConnection() { // from class: com.tsf.extend.theme.ThemeServiceConnection.1
         @Override // android.content.ServiceConnection
         public void onServiceDisconnected(ComponentName componentName) {
-            ao.this.b = null;
-            ao.this.d = false;
-            if (ao.this.c != null) {
-                ao.this.c.a();
+            ThemeServiceConnection.this.b = null;
+            ThemeServiceConnection.this.d = false;
+            if (ThemeServiceConnection.this.c != null) {
+                ThemeServiceConnection.this.c.a();
             }
         }
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            ao.this.d = true;
-            ao.this.b = (com.tsf.extend.base.c.ServiceBinderB) iBinder;
-            if (ao.this.c != null) {
-                ao.this.c.b();
+            ThemeServiceConnection.this.d = true;
+            ThemeServiceConnection.this.b = (com.tsf.extend.base.c.ServiceBinderB) iBinder;
+            if (ThemeServiceConnection.this.c != null) {
+                ThemeServiceConnection.this.c.b();
             }
         }
     };
@@ -37,7 +37,7 @@ public class ThemeServiceConnection {
         void b();
     }
 
-    private ao() {
+    private ThemeServiceConnection() {
     }
 
     public void a() {
@@ -46,9 +46,9 @@ public class ThemeServiceConnection {
         }
     }
 
-    public static ao b() {
+    public static ThemeServiceConnection b() {
         if (a == null) {
-            synchronized (ao.class) {
+            synchronized (ThemeServiceConnection.class) {
                 if (a == null) {
                     a = new ThemeServiceConnection();
                 }

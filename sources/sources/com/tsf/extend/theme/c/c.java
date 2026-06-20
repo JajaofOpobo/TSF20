@@ -116,7 +116,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
     private View getSearchProgressView() {
         View viewInflate = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_search_progress, (ViewGroup) null);
         ProgressBar progressBar = (ProgressBar) viewInflate.findViewById(ResourceIds.e.theme_search_progress);
-        com.tsf.extend.base.widget.pulltorefresh.d dVar = new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 2);
+        com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable dVar = new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 2);
         dVar.a(new int[]{12040119, 12040119, -4737097});
         progressBar.setIndeterminateDrawable(dVar);
         this.n = viewInflate;
