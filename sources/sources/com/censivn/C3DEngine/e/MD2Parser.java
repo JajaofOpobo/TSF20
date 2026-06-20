@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.util.Log;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
-import com.censivn.C3DEngine.e.a;
+import com.censivn.C3DEngine.e.AbstractModelParser;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -12,20 +12,20 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.censivn.C3DEngine.e.a implements b {
-    private a n;
+public class MD2Parser extends AbstractModelParser implements IModelParser {
+    private MD2Header n;
     private String o;
     private com.censivn.C3DEngine.b.a.a[] p;
 
-    public d(Resources resources, String str, boolean z) {
+    public MD2Parser(Resources resources, String str, boolean z) {
         super(resources, str, Boolean.valueOf(z));
     }
 
-    @Override // com.censivn.C3DEngine.e.a, com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
     public void c() {
         BufferedInputStream bufferedInputStream = new BufferedInputStream(this.a.openRawResource(this.a.getIdentifier(this.b, null, null)));
-        this.f = new g();
-        this.n = new a();
+        this.f = new MeshData();
+        this.n = new MD2Header();
         Log.d("Censivn3D", "Start parsing MD2 file");
         try {
             this.n.a(bufferedInputStream);
@@ -42,7 +42,7 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
     }
 
     private void a(BufferedInputStream bufferedInputStream, byte[] bArr) throws IOException {
-        c cVar = new c(new ByteArrayInputStream(bArr, this.n.l - 68, bArr.length - this.n.l));
+        LittleEndianInputStream cVar = new LittleEndianInputStream(new ByteArrayInputStream(bArr, this.n.l - 68, bArr.length - this.n.l));
         for (int i = 0; i < this.n.f; i++) {
             String strA = cVar.a(64);
             StringBuffer stringBuffer = new StringBuffer(this.c);
@@ -55,12 +55,12 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
                 stringBuffer.append(stringBuffer2);
             }
             this.o = stringBuffer.toString();
-            this.h.a(new a.C0039a(this.o, this.o));
+            this.h.a(new TextureEntry(this.o, this.o));
         }
     }
 
     private void b(BufferedInputStream bufferedInputStream, byte[] bArr) {
-        c cVar = new c(new ByteArrayInputStream(bArr, this.n.m - 68, bArr.length - this.n.m));
+        LittleEndianInputStream cVar = new LittleEndianInputStream(new ByteArrayInputStream(bArr, this.n.m - 68, bArr.length - this.n.m));
         for (int i = 0; i < this.n.h; i++) {
             this.f.d.add(new Uv(cVar.readShort() / this.n.c, cVar.readShort() / this.n.d));
         }
@@ -68,7 +68,7 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
 
     private void c(BufferedInputStream bufferedInputStream, byte[] bArr) throws IOException {
         String strReplaceAll;
-        c cVar = new c(new ByteArrayInputStream(bArr, this.n.o - 68, bArr.length - this.n.o));
+        LittleEndianInputStream cVar = new LittleEndianInputStream(new ByteArrayInputStream(bArr, this.n.o - 68, bArr.length - this.n.o));
         new ArrayList();
         for (int i = 0; i < this.n.k; i++) {
             float f = cVar.readFloat();
@@ -103,7 +103,7 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
     }
 
     private void d(BufferedInputStream bufferedInputStream, byte[] bArr) throws IOException {
-        c cVar = new c(new ByteArrayInputStream(bArr, this.n.n - 68, bArr.length - this.n.n));
+        LittleEndianInputStream cVar = new LittleEndianInputStream(new ByteArrayInputStream(bArr, this.n.n - 68, bArr.length - this.n.n));
         int[] iArr = new int[this.n.i * 3];
         int i = 0;
         for (int i2 = 0; i2 < this.n.i; i2++) {
@@ -116,7 +116,7 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
             iArr[i] = unsignedShort3;
             i += 3;
             int[] iArr3 = {cVar.readUnsignedShort(), cVar.readUnsignedShort(), cVar.readUnsignedShort()};
-            h hVar = new h();
+            FaceGroup hVar = new FaceGroup();
             hVar.b = iArr2;
             hVar.c = iArr3;
             hVar.f = true;
@@ -132,7 +132,7 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
         }
     }
 
-    private class a {
+    private class MD2Header {
         public int a;
         public int b;
         public int c;
@@ -151,30 +151,30 @@ public class d extends com.censivn.C3DEngine.e.a implements b {
         public int p;
         public int q;
 
-        private a() {
+        private MD2Header() {
         }
 
         public void a(InputStream inputStream) throws Exception {
-            this.a = d.this.b(inputStream);
-            this.b = d.this.b(inputStream);
+            this.a = MD2Parser.this.b(inputStream);
+            this.b = MD2Parser.this.b(inputStream);
             if (this.a != 844121161 || this.b != 8) {
                 throw new Exception("This is not a valid MD2 file.");
             }
-            this.c = d.this.b(inputStream);
-            this.d = d.this.b(inputStream);
-            this.e = d.this.b(inputStream);
-            this.f = d.this.b(inputStream);
-            this.g = d.this.b(inputStream);
-            this.h = d.this.b(inputStream);
-            this.i = d.this.b(inputStream);
-            this.j = d.this.b(inputStream);
-            this.k = d.this.b(inputStream);
-            this.l = d.this.b(inputStream);
-            this.m = d.this.b(inputStream);
-            this.n = d.this.b(inputStream);
-            this.o = d.this.b(inputStream);
-            this.p = d.this.b(inputStream);
-            this.q = d.this.b(inputStream);
+            this.c = MD2Parser.this.b(inputStream);
+            this.d = MD2Parser.this.b(inputStream);
+            this.e = MD2Parser.this.b(inputStream);
+            this.f = MD2Parser.this.b(inputStream);
+            this.g = MD2Parser.this.b(inputStream);
+            this.h = MD2Parser.this.b(inputStream);
+            this.i = MD2Parser.this.b(inputStream);
+            this.j = MD2Parser.this.b(inputStream);
+            this.k = MD2Parser.this.b(inputStream);
+            this.l = MD2Parser.this.b(inputStream);
+            this.m = MD2Parser.this.b(inputStream);
+            this.n = MD2Parser.this.b(inputStream);
+            this.o = MD2Parser.this.b(inputStream);
+            this.p = MD2Parser.this.b(inputStream);
+            this.q = MD2Parser.this.b(inputStream);
         }
     }
 }

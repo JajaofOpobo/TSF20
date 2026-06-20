@@ -60,7 +60,7 @@ public class ItemContainer extends j {
 
     private void h() {
         System.currentTimeMillis();
-        com.censivn.C3DEngine.e.b bVarA = com.censivn.C3DEngine.e.i.a(i.a.MAX_3DS, com.censivn.C3DEngine.A.d().getResources(), com.censivn.C3DEngine.a.b() + ":raw/widget_airship", true);
+        com.censivn.C3DEngine.e.IModelParser bVarA = com.censivn.C3DEngine.e.ModelParserFactory.a(ModelParserFactory.ParserType.MAX_3DS, com.censivn.C3DEngine.A.d().getResources(), com.censivn.C3DEngine.a.b() + ":raw/widget_airship", true);
         bVarA.c();
         this.d = bVarA.b().getChildAt(0);
         this.d.removeFromParent();

@@ -16,32 +16,32 @@ import java.util.Comparator;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class a implements com.censivn.C3DEngine.e.b {
+public abstract class AbstractModelParser implements IModelParser {
     protected Resources a;
     protected String b;
     protected String c;
     protected String d;
-    protected ArrayList<g> e;
-    protected g f;
+    protected ArrayList<MeshData> e;
+    protected MeshData f;
     protected boolean g;
-    protected c h;
+    protected TextureManager h;
     protected ArrayList<Number3d> i;
     protected ArrayList<Uv> j;
     protected ArrayList<Number3d> k;
     protected boolean l;
-    protected HashMap<String, b> m;
+    protected HashMap<String, MaterialEntry> m;
 
-    public a() {
+    public AbstractModelParser() {
         this.i = new ArrayList<>();
         this.j = new ArrayList<>();
         this.k = new ArrayList<>();
         this.e = new ArrayList<>();
-        this.h = new c();
+        this.h = new TextureManager();
         this.g = true;
         this.m = new HashMap<>();
     }
 
-    public a(Resources resources, String str, Boolean bool) {
+    public AbstractModelParser(Resources resources, String str, Boolean bool) {
         this();
         this.a = resources;
         this.b = str;
@@ -59,7 +59,7 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         this.k.clear();
     }
 
-    @Override // com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.IModelParser
     public j b() {
         return null;
     }
@@ -88,12 +88,11 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         return Float.intBitsToFloat(b(inputStream));
     }
 
-    @Override // com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.IModelParser
     public void c() {
     }
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.e.a$a, reason: collision with other inner class name */
-    protected class C0039a {
+    protected class TextureEntry {
         public Bitmap a;
         public String b;
         public String c;
@@ -103,39 +102,39 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         public float g;
         public boolean h = false;
 
-        public C0039a(String str, String str2) {
+        public TextureEntry(String str, String str2) {
             this.b = str;
             this.c = str2;
         }
     }
 
-    protected class c {
-        private ArrayList<C0039a> b = new ArrayList<>();
+    protected class TextureManager {
+        private ArrayList<TextureEntry> b = new ArrayList<>();
         private Bitmap c;
         private TextureElement d;
 
-        public c() {
+        public TextureManager() {
         }
 
-        public void a(C0039a c0039a) {
-            C0039a c0039aA = a(c0039a.c);
-            if (c0039aA == null) {
-                int identifier = a.this.a.getIdentifier(c0039a.c, null, null);
+        public void a(TextureEntry textureEntry) {
+            TextureEntry textureEntryA = a(textureEntry.c);
+            if (textureEntryA == null) {
+                int identifier = AbstractModelParser.this.a.getIdentifier(textureEntry.c, null, null);
                 if (identifier == 0) {
-                    Log.d("Censivn3D", "Texture not found: " + c0039a.c);
+                    Log.d("Censivn3D", "Texture not found: " + textureEntry.c);
                     return;
                 }
-                Log.d("Censivn3D", "Adding texture " + c0039a.c);
+                Log.d("Censivn3D", "Adding texture " + textureEntry.c);
                 Bitmap bitmapA = x.a(identifier);
-                c0039a.h = true;
-                c0039a.a = bitmapA;
+                textureEntry.h = true;
+                textureEntry.a = bitmapA;
             } else {
-                c0039a.a = c0039aA.a;
+                textureEntry.a = textureEntryA.a;
             }
-            this.b.add(c0039a);
+            this.b.add(textureEntry);
         }
 
-        public C0039a a(String str) {
+        public TextureEntry a(String str) {
             int size = this.b.size();
             for (int i = 0; i < size; i++) {
                 if (this.b.get(i).c.equals(str)) {
@@ -146,9 +145,9 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         }
 
         public void a() {
-            Collections.sort(this.b, new C0040a());
+            Collections.sort(this.b, new TextureHeightComparator());
             if (this.b.size() != 0) {
-                C0039a c0039a = this.b.get(0);
+                TextureEntry textureEntry = this.b.get(0);
                 int i = 0;
                 int size = this.b.size();
                 int i2 = 0;
@@ -158,31 +157,31 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
                     i3++;
                     i = width;
                 }
-                this.c = Bitmap.createBitmap(i, c0039a.a.getHeight(), Bitmap.Config.ARGB_8888);
+                this.c = Bitmap.createBitmap(i, textureEntry.a.getHeight(), Bitmap.Config.ARGB_8888);
                 int i4 = 0;
                 while (true) {
                     int i5 = i4;
                     if (i5 < size) {
-                        C0039a c0039a2 = this.b.get(i5);
-                        C0039a c0039aA = a(c0039a2.c);
-                        if (c0039a2.h) {
-                            Bitmap bitmap = c0039a2.a;
+                        TextureEntry textureEntry2 = this.b.get(i5);
+                        TextureEntry textureEntryA = a(textureEntry2.c);
+                        if (textureEntry2.h) {
+                            Bitmap bitmap = textureEntry2.a;
                             int width2 = bitmap.getWidth();
                             int height = bitmap.getHeight();
                             int[] iArr = new int[width2 * height];
                             bitmap.getPixels(iArr, 0, width2, 0, 0, width2, height);
                             this.c.setPixels(iArr, 0, width2, i2, 0, width2, height);
-                            c0039a2.d = i2 / i;
-                            c0039a2.e = 0.0f;
-                            c0039a2.f = width2 / i;
-                            c0039a2.g = height / c0039a.a.getHeight();
+                            textureEntry2.d = i2 / i;
+                            textureEntry2.e = 0.0f;
+                            textureEntry2.f = width2 / i;
+                            textureEntry2.g = height / textureEntry.a.getHeight();
                             i2 += width2;
                             bitmap.recycle();
                         } else {
-                            c0039a2.d = c0039aA.d;
-                            c0039a2.e = c0039aA.e;
-                            c0039a2.f = c0039aA.f;
-                            c0039a2.g = c0039aA.g;
+                            textureEntry2.d = textureEntryA.d;
+                            textureEntry2.e = textureEntryA.e;
+                            textureEntry2.f = textureEntryA.f;
+                            textureEntry2.g = textureEntryA.g;
                         }
                         i4 = i5 + 1;
                     } else {
@@ -200,16 +199,14 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
             return this.b.size() > 0;
         }
 
-        /* JADX INFO: renamed from: com.censivn.C3DEngine.e.a$c$a, reason: collision with other inner class name */
-        private class C0040a implements Comparator<C0039a> {
-            private C0040a() {
+        private class TextureHeightComparator implements Comparator<TextureEntry> {
+            private TextureHeightComparator() {
             }
 
             @Override // java.util.Comparator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public int compare(C0039a c0039a, C0039a c0039a2) {
-                int height = c0039a.a.getHeight();
-                int height2 = c0039a2.a.getHeight();
+            public int compare(TextureEntry textureEntry, TextureEntry textureEntry2) {
+                int height = textureEntry.a.getHeight();
+                int height2 = textureEntry2.a.getHeight();
                 if (height < height2) {
                     return 1;
                 }
@@ -220,7 +217,7 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
             }
         }
 
-        public C0039a b(String str) {
+        public TextureEntry b(String str) {
             int size = this.b.size();
             for (int i = 0; i < size; i++) {
                 if (this.b.get(i).b.equals(str)) {
@@ -239,9 +236,9 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
                 this.c.recycle();
             }
             this.b.clear();
-            a.this.i.clear();
-            a.this.j.clear();
-            a.this.k.clear();
+            AbstractModelParser.this.i.clear();
+            AbstractModelParser.this.j.clear();
+            AbstractModelParser.this.k.clear();
         }
 
         public void a(TextureElement textureElement) {
@@ -253,12 +250,12 @@ public abstract class a implements com.censivn.C3DEngine.e.b {
         }
     }
 
-    protected class b {
+    protected class MaterialEntry {
         public String a;
         public String b;
         public Color4 c;
 
-        public b(String str) {
+        public MaterialEntry(String str) {
             this.a = str;
         }
     }

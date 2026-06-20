@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.e.a;
+import com.censivn.C3DEngine.e.AbstractModelParser;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import java.util.Calendar;
 import java.util.StringTokenizer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f extends com.censivn.C3DEngine.e.a implements b {
+public class ObjParser extends AbstractModelParser implements IModelParser {
     private final String n;
     private final String o;
     private final String p;
@@ -28,7 +28,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
     private final String v;
     private final String w;
 
-    public f(Resources resources, String str, boolean z) {
+    public ObjParser(Resources resources, String str, boolean z) {
         super(resources, str, Boolean.valueOf(z));
         this.n = "v";
         this.o = "f";
@@ -42,11 +42,11 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
         this.w = "map_Kd";
     }
 
-    @Override // com.censivn.C3DEngine.e.a, com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
     public void c() {
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(this.a.openRawResource(this.a.getIdentifier(this.b, null, null))));
-        this.f = new g(this.i, this.j, this.k);
+        this.f = new MeshData(this.i, this.j, this.k);
         this.e.add(this.f);
         Log.d("Censivn3D", "Start parsing object " + this.b);
         Log.d("Censivn3D", "Start time " + timeInMillis);
@@ -69,10 +69,10 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
                     } else if (strNextToken.equals("f")) {
                         if (iCountTokens == 4) {
                             this.f.b++;
-                            this.f.a.add(new a(this, line, this.d, 3));
+                            this.f.a.add(new ObjFace(this, line, this.d, 3));
                         } else if (iCountTokens == 5) {
                             this.f.b += 2;
-                            this.f.a.add(new a(this, line, this.d, 4));
+                            this.f.a.add(new ObjFace(this, line, this.d, 4));
                         }
                     } else if (strNextToken.equals("vt")) {
                         Uv uv = new Uv();
@@ -97,7 +97,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
                             this.g = false;
                         } else {
                             Log.d("Censivn3D", "Create object " + strNextToken2);
-                            this.f = new g(this.i, this.j, this.k);
+                            this.f = new MeshData(this.i, this.j, this.k);
                             this.f.f = strNextToken2;
                             this.e.add(this.f);
                         }
@@ -110,7 +110,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
         Log.d("Censivn3D", "End time " + (Calendar.getInstance().getTimeInMillis() - timeInMillis));
     }
 
-    @Override // com.censivn.C3DEngine.e.a, com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
     public j b() {
         Bitmap bitmap;
         Log.d("Censivn3D", "Start object creation");
@@ -126,7 +126,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
             bitmap = bitmapB;
         }
         for (int i = 0; i < size; i++) {
-            g gVar = this.e.get(i);
+            MeshData gVar = this.e.get(i);
             Log.d("Censivn3D", "Creating object " + gVar.f);
             jVar.addChild(gVar.a(this.m, this.h));
         }
@@ -160,7 +160,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
                         if (str4.equals("newmtl")) {
                             if (strArrSplit.length > 1) {
                                 str2 = strArrSplit[1];
-                                this.m.put(str2, new a.b(str2));
+                                this.m.put(str2, new MaterialEntry(str2));
                             } else {
                                 str2 = str3;
                             }
@@ -182,7 +182,7 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
                                     stringBuffer3.append(stringBuffer4);
                                 }
                                 x.a(this.a.getIdentifier(stringBuffer3.toString(), null, null));
-                                this.h.a(new a.C0039a(str3, stringBuffer3.toString()));
+                                this.h.a(new TextureEntry(str3, stringBuffer3.toString()));
                             }
                             str2 = str3;
                             str3 = str2;
@@ -198,18 +198,18 @@ public class f extends com.censivn.C3DEngine.e.a implements b {
         }
     }
 
-    @Override // com.censivn.C3DEngine.e.a
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser
     protected void a() {
         super.a();
         this.m.clear();
     }
 
-    private class a extends h {
-        final /* synthetic */ f a;
+    private class ObjFace extends FaceGroup {
+        final /* synthetic */ ObjParser a;
 
-        public a(f fVar, String str, String str2, int i) {
+        public ObjFace(ObjParser objParser, String str, String str2, int i) {
             boolean z = false;
-            this.a = fVar;
+            this.a = objParser;
             this.h = str2;
             this.e = i;
             boolean z2 = str.indexOf("//") > -1;

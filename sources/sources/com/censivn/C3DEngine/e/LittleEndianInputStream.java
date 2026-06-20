@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends InputStream implements DataInput {
+public class LittleEndianInputStream extends InputStream implements DataInput {
     private DataInputStream a;
     private InputStream b;
     private byte[] c = new byte[8];

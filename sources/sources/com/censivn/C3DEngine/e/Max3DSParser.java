@@ -6,13 +6,13 @@ import android.util.Log;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
 import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.e.a;
+import com.censivn.C3DEngine.e.AbstractModelParser;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends a implements b {
+public class Max3DSParser extends AbstractModelParser implements IModelParser {
     private int A;
     private boolean B;
     private String C;
@@ -30,7 +30,7 @@ public class e extends a implements b {
     private final int y;
     private int z;
 
-    public e(Resources resources, String str, boolean z) {
+    public Max3DSParser(Resources resources, String str, boolean z) {
         super(resources, str, Boolean.valueOf(z));
         this.n = 19789;
         this.o = 15677;
@@ -46,11 +46,11 @@ public class e extends a implements b {
         this.y = 45055;
     }
 
-    @Override // com.censivn.C3DEngine.e.a, com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
     public void c() {
         BufferedInputStream bufferedInputStream = new BufferedInputStream(this.a.openRawResource(this.a.getIdentifier(this.b, null, null)));
         Log.d("Censivn3D", "Start parsing object");
-        this.f = new g();
+        this.f = new MeshData();
         this.e.add(this.f);
         try {
             e(bufferedInputStream);
@@ -90,7 +90,7 @@ public class e extends a implements b {
                     this.f.f = this.C;
                     this.g = false;
                 } else {
-                    this.f = new g();
+                    this.f = new MeshData();
                     this.f.f = this.C;
                     this.e.add(this.f);
                 }
@@ -125,7 +125,7 @@ public class e extends a implements b {
                 } else {
                     stringBuffer.append(stringBuffer2);
                 }
-                this.h.a(new a.C0039a(this.d, stringBuffer.toString()));
+                this.h.a(new TextureEntry(this.d, stringBuffer.toString()));
                 break;
             default:
                 g(inputStream);
@@ -151,7 +151,7 @@ public class e extends a implements b {
         for (int i = 0; i < iC; i++) {
             int[] iArr = {c(inputStream), c(inputStream), c(inputStream)};
             c(inputStream);
-            h hVar = new h();
+            FaceGroup hVar = new FaceGroup();
             hVar.b = iArr;
             hVar.c = iArr;
             hVar.e = 3;
@@ -172,7 +172,7 @@ public class e extends a implements b {
         }
     }
 
-    @Override // com.censivn.C3DEngine.e.a, com.censivn.C3DEngine.e.b
+    @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
     public j b() {
         Bitmap bitmap;
         Log.d("Censivn3D", "Start object creation");
@@ -187,7 +187,7 @@ public class e extends a implements b {
             bitmap = bitmapB;
         }
         for (int i = 0; i < size; i++) {
-            g gVar = this.e.get(i);
+            MeshData gVar = this.e.get(i);
             Log.d("Censivn3D", "Creating object " + gVar.f);
             jVar.addChild(gVar.a(this.m, this.h));
         }

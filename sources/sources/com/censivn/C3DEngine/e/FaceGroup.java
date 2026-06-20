@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h {
+public class FaceGroup {
     public int[] b;
     public int[] c;
     public int[] d;
