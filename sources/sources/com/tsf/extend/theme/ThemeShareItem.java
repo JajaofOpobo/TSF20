@@ -5,7 +5,7 @@ import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class an {
+public class ThemeShareItem {
     private Context a;
     private ResolveInfo b;
     private Drawable c;

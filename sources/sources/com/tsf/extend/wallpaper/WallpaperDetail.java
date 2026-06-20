@@ -49,7 +49,7 @@ import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ThemePullToRefreshListView;
-import com.tsf.extend.theme.ao;
+import com.tsf.extend.theme.ThemeServiceConnection;
 import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.wallpaper.HorzontalSliderView;
@@ -696,7 +696,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         private b ab;
         ViewGroup b;
         ThemePullToRefreshListView c;
-        com.tsf.extend.theme.af e;
+        com.tsf.extend.theme.ThemeAllItemsAdapter e;
         View f;
         ImageView g;
         TextView h;
@@ -886,7 +886,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     }
                 }
             });
-            this.e = new com.tsf.extend.theme.af(WallpaperDetail.this.f, this.d, this);
+            this.e = new com.tsf.extend.theme.ThemeAllItemsAdapter(WallpaperDetail.this.f, this.d, this);
             this.c.setAdapter(this.e);
             this.R = LayoutInflater.from(WallpaperDetail.this.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail_list_loadmore, (ViewGroup) null);
             this.T = (ProgressBar) this.R.findViewById(ResourceIds.e.loadmore_progress);
@@ -1009,7 +1009,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                         WallpaperDetail.this.ResourceIds.a((PageActivity.a) themeDetail);
                     } else if (!kVar.v()) {
                         WallpaperDetail.this.ResourceIds.a(false);
-                        com.tsf.extend.theme.x.a(WallpaperDetail.this.getContext(), kVar.k(), "tsf_theme_center_theme");
+                        com.tsf.extend.theme.ThemeDeepLinkHandler.a(WallpaperDetail.this.getContext(), kVar.k(), "tsf_theme_center_theme");
                     } else {
                         a(kVar);
                     }

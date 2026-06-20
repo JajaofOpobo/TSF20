@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class am extends Dialog {
+public class ThemeShareDialog extends Dialog {
     private Context a;
     private int b;
     private GridView c;
@@ -37,7 +37,7 @@ public class am extends Dialog {
         this.a = context;
         this.b = context.getResources().getConfiguration().orientation;
         setContentView(ResourceIds.C0052f.theme_diy_share_dialog);
-        ((ViewGroup) findViewById(ResourceIds.e.share_dialog)).addView(new View(getContext()) { // from class: com.tsf.extend.theme.am.1
+        ((ViewGroup) findViewById(ResourceIds.e.share_dialog)).addView(new View(getContext()) { // from class: com.tsf.extend.theme.ThemeShareDialog.1
             @Override // android.view.View
             protected void onConfigurationChanged(Configuration configuration) {
                 super.onConfigurationChanged(configuration);
@@ -108,7 +108,7 @@ public class am extends Dialog {
     public void a(A aVar) {
         this.d = aVar;
         if (this.c != null) {
-            this.c.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: com.tsf.extend.theme.am.2
+            this.c.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: com.tsf.extend.theme.ThemeShareDialog.2
                 @Override // android.widget.AdapterView.OnItemClickListener
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
                     am.this.d.a(adapterView, view, i, j);
@@ -125,7 +125,7 @@ public class am extends Dialog {
         int i = 0;
         for (int i2 = 0; i2 < listA.size(); i2++) {
             ResolveInfo resolveInfo = listA.get(i2);
-            an anVar = new an(this.a, resolveInfo);
+            ThemeShareItem anVar = new ThemeShareItem(this.a, resolveInfo);
             String str = resolveInfo.activityInfo.packageName;
             com.tsf.extend.ConfigConstants aVar = mapA.get(str);
             if (!z || (!str.contains("com.google.android.apps.plus") && !str.contains("com.facebook.katana"))) {
@@ -137,7 +137,7 @@ public class am extends Dialog {
                 }
             }
         }
-        return new al(this.a, arrayList, z);
+        return new ThemeShareAdapter(this.a, arrayList, z);
     }
 
     private List<ResolveInfo> a(Context context, String str) {

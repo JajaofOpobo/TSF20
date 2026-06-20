@@ -68,7 +68,7 @@ public class UploadWallpaperActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         if (this.f != null && this.ResourceIds.getBackground() != null) {
-            com.tsf.extend.base.view.b bVar = (com.tsf.extend.base.view.b) this.ResourceIds.getBackground();
+            com.tsf.extend.base.view.FastBitmapDrawable bVar = (com.tsf.extend.base.view.FastBitmapDrawable) this.ResourceIds.getBackground();
             com.tsf.extend.base.j.ViewCompatUtils.a(this.f, (Drawable) null);
             if (bVar != null) {
                 bVar.a().recycle();
@@ -151,7 +151,7 @@ public class UploadWallpaperActivity extends Activity {
             a(inputStreamF);
             Bitmap bitmapA = com.tsf.extend.base.j.BitmapUtils.a(bitmapDecodeStream, i.d(), i.e(), iArrD[0], 17, Bitmap.Config.RGB_565, true);
             if (bitmapA != null && !bitmapA.isRecycled()) {
-                a(new com.tsf.extend.base.view.b(bitmapA));
+                a(new com.tsf.extend.base.view.FastBitmapDrawable(bitmapA));
             }
         }
     }
@@ -227,11 +227,11 @@ public class UploadWallpaperActivity extends Activity {
         intent.putExtra("cid", String.valueOf(this.a));
         intent.putExtra("name", this.c);
         Drawable background = this.ResourceIds.getBackground();
-        if (background != null && (background instanceof com.tsf.extend.base.view.b)) {
+        if (background != null && (background instanceof com.tsf.extend.base.view.FastBitmapDrawable)) {
             int iA = i.a(64.0f);
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iA, iA, Bitmap.Config.RGB_565);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
-            Bitmap bitmapA = ((com.tsf.extend.base.view.b) background).a();
+            Bitmap bitmapA = ((com.tsf.extend.base.view.FastBitmapDrawable) background).a();
             canvas.drawBitmap(bitmapA, new Rect(0, (bitmapA.getHeight() - bitmapA.getWidth()) / 2, bitmapA.getWidth(), (bitmapA.getHeight() + bitmapA.getWidth()) / 2), new Rect(0, 0, iA, iA), (Paint) null);
             canvas.setBitmap(null);
             intent.putExtra("bitmap", bitmapCreateBitmap);

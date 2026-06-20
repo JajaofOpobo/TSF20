@@ -12,7 +12,7 @@ import com.tsf.extend.ResourceIds;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class al extends BaseAdapter {
+public class ThemeShareAdapter extends BaseAdapter {
     public static int[] a = {ResourceIds.g.setting_facebook, ResourceIds.g.cm_club_google_plus};
     private static Typeface d;
     Context b;
@@ -22,8 +22,8 @@ public class al extends BaseAdapter {
         this.b = context;
         this.c = list;
         if (z) {
-            an anVar = new an(context, context.getResources().getDrawable(ResourceIds.d.share_facebook), a[0]);
-            this.c.add(0, new an(context, context.getResources().getDrawable(ResourceIds.d.shere_googleplus), a[1]));
+            ThemeShareItem anVar = new ThemeShareItem(context, context.getResources().getDrawable(ResourceIds.d.share_facebook), a[0]);
+            this.c.add(0, new ThemeShareItem(context, context.getResources().getDrawable(ResourceIds.d.shere_googleplus), a[1]));
             this.c.add(0, anVar);
         }
     }
@@ -60,7 +60,7 @@ public class al extends BaseAdapter {
         } else {
             aVar = (A) view.getTag();
         }
-        an anVar = (an) getItem(i);
+        ThemeShareItem anVar = (an) getItem(i);
         aVar.a.setImageDrawable(anVar.b());
         aVar.b.setText(anVar.c());
         return view;

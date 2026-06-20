@@ -7,9 +7,9 @@ import android.content.pm.ResolveInfo;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import com.tsf.extend.theme.al;
-import com.tsf.extend.theme.am;
-import com.tsf.extend.theme.an;
+import com.tsf.extend.theme.ThemeShareAdapter;
+import com.tsf.extend.theme.ThemeShareDialog;
+import com.tsf.extend.theme.ThemeShareItem;
 import com.tsf.extend.theme.ThemeShareHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -46,7 +46,7 @@ public class ShareIntentHandler extends BaseShareHandler {
         }
         am amVar = new am(context, z);
         amVar.a(new am.a() { // from class: com.tsf.extend.base.g.ShareIntentHandler.1
-            @Override // com.tsf.extend.theme.am.a
+            @Override // com.tsf.extend.theme.ThemeShareDialog.a
             public void a(AdapterView<?> adapterView, View view, int i, long j) {
                 d bVar;
                 an anVar = (an) adapterView.getAdapter().getItem(i);
@@ -79,7 +79,7 @@ public class ShareIntentHandler extends BaseShareHandler {
                 }
             }
 
-            @Override // com.tsf.extend.theme.am.a
+            @Override // com.tsf.extend.theme.ThemeShareDialog.a
             public void a() {
                 if (c.this.f != null) {
                     c.this.f.a();

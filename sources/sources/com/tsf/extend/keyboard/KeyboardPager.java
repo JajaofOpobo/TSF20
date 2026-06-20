@@ -24,7 +24,7 @@ import com.tsf.extend.ResourceIds;
 import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.theme.ThemeDataProvider;
-import com.tsf.extend.theme.x;
+import com.tsf.extend.theme.ThemeDeepLinkHandler;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONObject;

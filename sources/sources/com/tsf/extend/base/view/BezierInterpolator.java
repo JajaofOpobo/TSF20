@@ -1,7 +1,7 @@
 package com.tsf.extend.base.view;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class BezierInterpolator {
     private float[] a;
 
     public a(float[] fArr, int i) {

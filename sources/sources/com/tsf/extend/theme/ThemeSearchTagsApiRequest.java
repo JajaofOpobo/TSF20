@@ -1,7 +1,7 @@
 package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ak extends com.tsf.extend.base.a.ApiRequestImpl {
+public class ThemeSearchTagsApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
     public ak() {
         a("1");
         a("count", "60");

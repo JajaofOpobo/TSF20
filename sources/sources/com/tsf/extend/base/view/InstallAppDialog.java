@@ -15,7 +15,7 @@ import com.tsf.extend.ResourceIds;
 import com.tsf.extend.BaseDialog;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends g implements DialogInterface.OnCancelListener, View.OnClickListener {
+public class InstallAppDialog extends BaseDialog implements DialogInterface.OnCancelListener, View.OnClickListener {
     private ImageView a;
     private ImageView b;
     private TextView c;

@@ -343,7 +343,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 this.y.d = bitmap;
                 a(this.r, a.SET_THEME);
             }
-            v.a(this, bitmap);
+            ThemeDataProvider.a(this, bitmap);
         }
     }
 
@@ -895,7 +895,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b(aq aqVar) {
-        v.a(aqVar.d(this), a(this.y.c, this.y.d));
+        ThemeDataProvider.a(aqVar.d(this), a(this.y.c, this.y.d));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1012,9 +1012,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                                 });
                                 File file = new File(com.tsf.extend.theme.diy.e.b(ThemeDIYActivity.this), "temp_1width_wallpaper");
                                 if ("content".equals(ThemeDIYActivity.this.ao.getScheme()) || "file".equals(ThemeDIYActivity.this.ao.getScheme())) {
-                                    v.a(file, ThemeDIYActivity.a(ThemeDIYActivity.this, ThemeDIYActivity.this.ao, p.b(), p.c(), false));
+                                    ThemeDataProvider.a(file, ThemeDIYActivity.a(ThemeDIYActivity.this, ThemeDIYActivity.this.ao, p.b(), p.c(), false));
                                 } else {
-                                    v.a(file, ThemeDIYActivity.a(ThemeDIYActivity.this, ThemeDIYActivity.this.ao, p.b() * 2, p.c(), false));
+                                    ThemeDataProvider.a(file, ThemeDIYActivity.a(ThemeDIYActivity.this, ThemeDIYActivity.this.ao, p.b() * 2, p.c(), false));
                                 }
                                 ThemeDIYActivity.this.ai = i2 == 1;
                             } catch (Throwable th) {
@@ -1601,10 +1601,10 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                                         com.tsf.extend.base.j.FileIOUtils.a(com.tsf.extend.theme.diy.e.b(ThemeDIYActivity.this).getAbsolutePath() + File.separator + "temp_1width_wallpaper", fileA.getAbsolutePath());
                                     }
                                 } else {
-                                    v.a(fileA, ab.a(ThemeDIYActivity.this, null, false, false, 0));
+                                    ThemeDataProvider.a(fileA, ab.a(ThemeDIYActivity.this, null, false, false, 0));
                                 }
                             } else {
-                                v.a(fileA, com.tsf.extend.base.j.AppEnvUtils.b(WallpaperManager.getInstance(ThemeDIYActivity.this)));
+                                ThemeDataProvider.a(fileA, com.tsf.extend.base.j.AppEnvUtils.b(WallpaperManager.getInstance(ThemeDIYActivity.this)));
                             }
                         }
                         ThemeDIYActivity.this.b(aqVar);
@@ -1667,7 +1667,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                     z.a(2, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.d.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            v.a(d.this.c.a(ThemeDIYActivity.this, iIndexOf), ThemeDIYActivity.this.a(ThemeDIYActivity.this.y.c, bitmap));
+                            ThemeDataProvider.a(d.this.c.a(ThemeDIYActivity.this, iIndexOf), ThemeDIYActivity.this.a(ThemeDIYActivity.this.y.c, bitmap));
                         }
                     });
                 }

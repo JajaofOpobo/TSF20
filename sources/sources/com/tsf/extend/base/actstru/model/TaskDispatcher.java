@@ -9,42 +9,42 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TaskDispatcher {
-    private static k a = new k();
-    private BlockingQueue<j> b = new LinkedBlockingQueue(com.tsf.extend.base.actstru.model.a.e);
-    private BlockingQueue<FutureTask<d>> c = new LinkedBlockingQueue();
+    private static TaskDispatcher a = new TaskDispatcher();
+    private BlockingQueue<Task> b = new LinkedBlockingQueue(com.tsf.extend.base.actstru.model.a.e);
+    private BlockingQueue<FutureTask<EventData>> c = new LinkedBlockingQueue();
     private b d = new b(this.b);
     private A e = new A(this.c);
     private ExecutorService f = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.d);
 
-    class b extends c<j> {
+    class b extends BaseDispatcher<Task> {
         /* JADX WARN: Multi-variable type inference failed */
-        public b(BlockingQueue<j> blockingQueue) {
+        public b(BlockingQueue<Task> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(com.tsf.extend.base.actstru.model.a.c);
             setName("TaskDispather");
         }
 
         @Override // com.tsf.extend.base.actstru.model.BaseDispatcher, com.tsf.extend.base.actstru.model.TaskHandler
-        public d a(j jVar) {
-            FutureTask<d> futureTask = new FutureTask<>(jVar);
-            k.this.a(futureTask);
-            k.this.f.submit(futureTask);
+        public EventData a(Task jVar) {
+            FutureTask<EventData> futureTask = new FutureTask<>(jVar);
+            TaskDispatcher.this.a(futureTask);
+            TaskDispatcher.this.f.submit(futureTask);
             return null;
         }
     }
 
-    class A extends c<FutureTask<d>> {
+    class A extends BaseDispatcher<FutureTask<EventData>> {
         /* JADX WARN: Multi-variable type inference failed */
-        public A(BlockingQueue<FutureTask<d>> blockingQueue) {
+        public A(BlockingQueue<FutureTask<EventData>> blockingQueue) {
             this.a = blockingQueue;
             this.b = Executors.newFixedThreadPool(1);
             setName("PendingEventDispatcher");
         }
 
         @Override // com.tsf.extend.base.actstru.model.BaseDispatcher, com.tsf.extend.base.actstru.model.TaskHandler
-        public d a(FutureTask<d> futureTask) {
+        public EventData a(FutureTask<EventData> futureTask) {
             try {
-                f.a().a(futureTask.get());
+                EventDispatcher.a().a(futureTask.get());
                 return null;
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -64,11 +64,11 @@ public class TaskDispatcher {
         this.e.start();
     }
 
-    public static k a() {
+    public static TaskDispatcher a() {
         return a;
     }
 
-    public void a(FutureTask<d> futureTask) {
+    public void a(FutureTask<EventData> futureTask) {
         this.e.b(futureTask);
     }
 }

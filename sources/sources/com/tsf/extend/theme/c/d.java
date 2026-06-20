@@ -17,13 +17,13 @@ import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
-import com.tsf.extend.theme.ao;
+import com.tsf.extend.theme.ThemeServiceConnection;
 import com.tsf.extend.theme.AbstractThemeProvider;
 import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.theme.ThemePagedModel;
 import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.theme.ThemeDataProvider;
-import com.tsf.extend.theme.x;
+import com.tsf.extend.theme.ThemeDeepLinkHandler;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;
 import java.util.List;

@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.base.view.c;
+import com.tsf.extend.base.view.InstallAppDialog;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
@@ -126,7 +126,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
                     com.tsf.extend.base.j.BrowserUtils.a(WallpaperPager.this.h, 2);
                     return;
                 }
-                final com.tsf.extend.base.view.c cVar = new com.tsf.extend.base.view.c(WallpaperPager.this.getContext(), -2);
+                final com.tsf.extend.base.view.InstallAppDialog cVar = new com.tsf.extend.base.view.InstallAppDialog(WallpaperPager.this.getContext(), -2);
                 cVar.a(WallpaperPager.this);
                 cVar.a(ResourceIds.g.wallpaper_upload_title, ResourceIds.g.wallpaper_upload_content, ResourceIds.g.wallpaper_upload_pictures, 0, BitmapFactory.decodeResource(WallpaperPager.this.getResources(), ResourceIds.d.wallpaper_dialog_banner), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperPager.1.1
                     @Override // android.view.View.OnClickListener
@@ -275,15 +275,15 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         }
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void g() {
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void h() {
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void i() {
     }
 

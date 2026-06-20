@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ai {
+public class ThemeLocalProvider {
     private static volatile ai h;
     private List<ThemeModel> a = Lists.newArrayList();
     private List<ThemeModel> b = Lists.newArrayList();

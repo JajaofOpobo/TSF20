@@ -30,7 +30,7 @@ import com.tsf.extend.base.view.PagerIndicator;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeAlbumsPager;
 import com.tsf.extend.theme.ThemeDetail;
-import com.tsf.extend.theme.ao;
+import com.tsf.extend.theme.ThemeServiceConnection;
 import com.tsf.extend.theme.core.ThemeManagerService;
 import com.tsf.extend.theme.diy.d;
 import java.io.File;
@@ -411,7 +411,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             com.tsf.extend.base.j.HandlerUtils.b(0, this.v);
             this.v = null;
         }
-        com.tsf.extend.theme.x.a();
+        com.tsf.extend.theme.ThemeDeepLinkHandler.a();
         k();
         l();
     }
@@ -561,7 +561,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             if (this.i != null) {
                 this.i.setChildPagerDefIndex(1);
             }
-            com.tsf.extend.theme.x.a("cml_themelist_wpapk_more");
+            com.tsf.extend.theme.ThemeDeepLinkHandler.a("cml_themelist_wpapk_more");
         }
         switch (intent.getIntExtra("TARGET_PAGE", 0)) {
             case 1:
@@ -681,11 +681,11 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             this.a = new WeakReference<>(personalizationActivity);
         }
 
-        @Override // com.tsf.extend.theme.ao.a
+        @Override // com.tsf.extend.theme.ThemeServiceConnection.a
         public void a() {
         }
 
-        @Override // com.tsf.extend.theme.ao.a
+        @Override // com.tsf.extend.theme.ThemeServiceConnection.a
         public void b() {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {

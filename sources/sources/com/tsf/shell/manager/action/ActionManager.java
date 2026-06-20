@@ -5,7 +5,7 @@ import android.content.Intent;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.AnimationListener;
-import com.tsf.extend.theme.x;
+import com.tsf.extend.theme.ThemeDeepLinkHandler;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.summary.ShellSummaryActivity;

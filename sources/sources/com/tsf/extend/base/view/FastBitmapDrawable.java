@@ -8,7 +8,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends Drawable {
+public class FastBitmapDrawable extends Drawable {
     private Bitmap a;
     private int c;
     private int d;

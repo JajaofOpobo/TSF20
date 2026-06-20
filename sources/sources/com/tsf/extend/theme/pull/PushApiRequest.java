@@ -1,7 +1,7 @@
 package com.tsf.extend.theme.pull;
 
 import android.text.TextUtils;
-import com.tsf.extend.theme.ai;
+import com.tsf.extend.theme.ThemeLocalProvider;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PushApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {

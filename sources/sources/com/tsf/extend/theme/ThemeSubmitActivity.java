@@ -184,7 +184,7 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
                 @Override // java.lang.Runnable
                 public void run() {
                     if (!ThemeSubmitActivity.this.isFinishing()) {
-                        com.tsf.extend.base.j.ViewCompatUtils.a(ThemeSubmitActivity.this.g, new com.tsf.extend.base.view.b(ThemeSubmitActivity.this.e));
+                        com.tsf.extend.base.j.ViewCompatUtils.a(ThemeSubmitActivity.this.g, new com.tsf.extend.base.view.FastBitmapDrawable(ThemeSubmitActivity.this.e));
                         if (Build.VERSION.SDK_INT >= 12) {
                             ThemeSubmitActivity.this.g.setAlpha(0.0f);
                             ThemeSubmitActivity.this.g.animate().setInterpolator(new DecelerateInterpolator()).alpha(0.8f).setDuration(300L);

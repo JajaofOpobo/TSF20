@@ -6,12 +6,12 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ao {
+public class ThemeServiceConnection {
     private static ao a;
     private com.tsf.extend.base.c.ServiceBinderB b;
     private A c;
     private boolean d;
-    private ServiceConnection e = new ServiceConnection() { // from class: com.tsf.extend.theme.ao.1
+    private ServiceConnection e = new ServiceConnection() { // from class: com.tsf.extend.theme.ThemeServiceConnection.1
         @Override // android.content.ServiceConnection
         public void onServiceDisconnected(ComponentName componentName) {
             ao.this.b = null;
@@ -50,7 +50,7 @@ public class ao {
         if (a == null) {
             synchronized (ao.class) {
                 if (a == null) {
-                    a = new ao();
+                    a = new ThemeServiceConnection();
                 }
             }
         }

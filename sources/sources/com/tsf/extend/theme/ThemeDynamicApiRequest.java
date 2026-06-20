@@ -1,7 +1,7 @@
 package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ac extends com.tsf.extend.base.a.ApiRequestImpl {
+public class ThemeDynamicApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
     private String a;
 
     public ac(String str) {

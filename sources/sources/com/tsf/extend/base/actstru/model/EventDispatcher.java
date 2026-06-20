@@ -27,11 +27,11 @@ public class EventDispatcher {
             if (dVar != null) {
                 EventTarget iVarB = dVar.b();
                 if (iVarB.a()) {
-                    f.this.b(dVar);
+                    EventDispatcher.this.b(dVar);
                 } else {
                     Iterator<String> it = iVarB.b().iterator();
                     while (it.hasNext()) {
-                        EventChannel hVarB = f.this.b(it.next());
+                        EventChannel hVarB = EventDispatcher.this.b(it.next());
                         if (hVarB != null) {
                             hVarB.a(dVar);
                         }

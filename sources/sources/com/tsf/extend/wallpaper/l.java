@@ -1,6 +1,6 @@
 package com.tsf.extend.wallpaper;
 
-import com.tsf.extend.theme.ao;
+import com.tsf.extend.theme.ThemeServiceConnection;
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import java.util.HashSet;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends Drawable {
+public class RoundedDrawable extends Drawable {
     private final Bitmap d;
     private final Paint e;
     private final int f;
@@ -113,7 +113,7 @@ public class e extends Drawable {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.tsf.extend.base.view.e$1, reason: invalid class name */
+    /* JADX INFO: renamed from: com.tsf.extend.base.view.RoundedDrawable$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] a = new int[ImageView.ScaleType.values().length];
 

@@ -6,7 +6,7 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends Animation {
+public class Rotate3dAnimation extends Animation {
     private final float a;
     private final float b;
     private final float c;

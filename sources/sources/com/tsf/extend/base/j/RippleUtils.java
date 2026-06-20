@@ -188,7 +188,7 @@ public class RippleUtils {
     }
 
     private static class a extends Drawable {
-        private final com.tsf.extend.base.view.a a;
+        private final com.tsf.extend.base.view.BezierInterpolator a;
         private float c = 0.0f;
         private DecelerateInterpolator d = new DecelerateInterpolator();
         private int e = Color.parseColor("#4480F7");
@@ -196,7 +196,7 @@ public class RippleUtils {
 
         public a() {
             this.b.setColor(this.e);
-            this.a = new com.tsf.extend.base.view.a(new float[]{0.0f, 0.0f, 0.3f, 0.9f, 0.33f, 1.0f, 0.35f, 0.75f, 0.95f, 0.0f, 1.0f, 0.0f}, 300);
+            this.a = new com.tsf.extend.base.view.BezierInterpolator(new float[]{0.0f, 0.0f, 0.3f, 0.9f, 0.33f, 1.0f, 0.35f, 0.75f, 0.95f, 0.0f, 1.0f, 0.0f}, 300);
         }
 
         public void a(float f) {

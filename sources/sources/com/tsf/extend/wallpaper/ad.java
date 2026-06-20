@@ -255,7 +255,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }
-                com.tsf.extend.theme.x.b(getContext(), mVar.m(), "&referrer=utm_source%3Dtsf_theme_center_wallpaper");
+                com.tsf.extend.theme.ThemeDeepLinkHandler.b(getContext(), mVar.m(), "&referrer=utm_source%3Dtsf_theme_center_wallpaper");
                 aj.a(this.d, mVar, this.g.a() + "");
                 return true;
             }

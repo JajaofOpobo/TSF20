@@ -428,7 +428,7 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
         Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.material_dialog_anim);
         animationLoadAnimation.setDuration(200L);
         this.x.addAnimation(animationLoadAnimation);
-        com.tsf.extend.base.view.d dVarB = b(false);
+        com.tsf.extend.base.view.Rotate3dAnimation dVarB = b(false);
         dVarB.setDuration(100L);
         dVarB.setStartOffset(100L);
         this.x.addAnimation(dVarB);
@@ -473,8 +473,8 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
         d().startAnimation(this.w);
     }
 
-    private com.tsf.extend.base.view.d b(boolean z) {
-        return new com.tsf.extend.base.view.d(z ? 0.0f : -2.0f, z ? -2.0f : 0.0f, p.b() / 2, 0.0f, 5.0f, z, false);
+    private com.tsf.extend.base.view.Rotate3dAnimation b(boolean z) {
+        return new com.tsf.extend.base.view.Rotate3dAnimation(z ? 0.0f : -2.0f, z ? -2.0f : 0.0f, p.b() / 2, 0.0f, 5.0f, z, false);
     }
 
     @Override // android.app.Dialog

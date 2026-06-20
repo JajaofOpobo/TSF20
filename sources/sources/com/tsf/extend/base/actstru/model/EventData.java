@@ -4,7 +4,7 @@ package com.tsf.extend.base.actstru.model;
 public class EventData {
     private String a = "";
     private String b = "";
-    private i c = null;
+    private EventTarget c = null;
 
     public String a() {
         return this.b;
@@ -14,11 +14,11 @@ public class EventData {
         this.a = str;
     }
 
-    public void a(i iVar) {
+    public void a(EventTarget iVar) {
         this.c = iVar;
     }
 
-    public i b() {
+    public EventTarget b() {
         return this.c;
     }
 

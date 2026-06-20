@@ -27,7 +27,7 @@ public final class e {
         if (textView == null || context == null) {
             return false;
         }
-        return a(textView, l.a(context.getAssets(), str));
+        return a(textView, TypefaceCache.a(context.getAssets(), str));
     }
 
     public static final void a(Context context, TextView textView, a aVar) {

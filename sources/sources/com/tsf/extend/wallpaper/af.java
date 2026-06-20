@@ -216,7 +216,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }
-                com.tsf.extend.theme.x.b(getContext(), mVar.m(), "&referrer=utm_source%3Dtsf_theme_center_wallpaper");
+                com.tsf.extend.theme.ThemeDeepLinkHandler.b(getContext(), mVar.m(), "&referrer=utm_source%3Dtsf_theme_center_wallpaper");
                 aj.a(this.d, mVar, this.g.a() + "");
                 return true;
             }
@@ -449,7 +449,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         if (this.G != a.INSTALL && this.G == a.UPDATE) {
         }
         if (i != -2) {
-            com.tsf.extend.theme.x.a(this.i, "market://details?id=com.roidapp.photogrid&referrer=utm_source%3DCMLauncher%26utm_medium%3D400001", "tsf_theme_center_wallpaper");
+            com.tsf.extend.theme.ThemeDeepLinkHandler.a(this.i, "market://details?id=com.roidapp.photogrid&referrer=utm_source%3DCMLauncher%26utm_medium%3D400001", "tsf_theme_center_wallpaper");
         }
     }
 }

@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.view.c;
+import com.tsf.extend.base.view.InstallAppDialog;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.keyboard.KeyboardPager;
 import com.tsf.extend.theme.ThemePager;
@@ -139,7 +139,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
     }
 
     private void k() {
-        final com.tsf.extend.base.view.c cVar = new com.tsf.extend.base.view.c(this.b, -3);
+        final com.tsf.extend.base.view.InstallAppDialog cVar = new com.tsf.extend.base.view.InstallAppDialog(this.b, -3);
         cVar.a(this);
         cVar.a(ResourceIds.g.wallpaper_fb_title, ResourceIds.g.wallpaper_fb_content, ResourceIds.g.wallpaper_fb_subcribe, 0, BitmapFactory.decodeResource(getResources(), ResourceIds.d.ic_facebook), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.PersonalizationPager.1
             @Override // android.view.View.OnClickListener
@@ -307,15 +307,15 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
         }
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void g() {
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void h() {
     }
 
-    @Override // com.tsf.extend.base.view.c.a
+    @Override // com.tsf.extend.base.view.InstallAppDialog.a
     public void i() {
     }
 
