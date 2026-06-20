@@ -42,7 +42,7 @@ import com.tsf.extend.ThemeDialogFragment;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.j;
-import com.tsf.extend.theme.v;
+import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
 import java.util.List;
@@ -157,11 +157,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
     }
 
-    public void setTheme(k kVar) {
+    public void setTheme(ThemeModel kVar) {
         a(kVar, false);
     }
 
-    private void a(k kVar, boolean z) {
+    private void a(ThemeModel kVar, boolean z) {
         int i;
         if (kVar != null) {
             this.k = kVar;
@@ -419,7 +419,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     }
 
     private void l() {
-        final k kVar = this.k;
+        final ThemeModel kVar = this.k;
         final Context context = getContext();
         final ImageView imageView = this.h;
         com.tsf.extend.base.j.z.a(1, new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.14

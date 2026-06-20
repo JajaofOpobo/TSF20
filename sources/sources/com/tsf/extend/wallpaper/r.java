@@ -30,11 +30,11 @@ public class r extends com.tsf.extend.BaseDialog implements View.OnClickListener
     private TextView c;
     private ImageView f;
     private ProgressBar g;
-    private com.tsf.extend.theme.k h;
+    private com.tsf.extend.theme.ThemeModel h;
     private A i;
     private Context j;
 
-    public r(Context context, com.tsf.extend.theme.k kVar) {
+    public r(Context context, com.tsf.extend.theme.ThemeModel kVar) {
         super(context);
         a = true;
         setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.extend.wallpaper.r.1
@@ -48,7 +48,7 @@ public class r extends com.tsf.extend.BaseDialog implements View.OnClickListener
         b();
         this.i = new A();
         this.h = kVar;
-        com.tsf.extend.theme.v.h().c(kVar.m(), this.i);
+        com.tsf.extend.theme.ThemeDataProvider.h().c(kVar.m(), this.i);
     }
 
     @Override // android.view.View.OnClickListener

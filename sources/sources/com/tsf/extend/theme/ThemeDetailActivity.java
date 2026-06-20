@@ -50,12 +50,12 @@ public class ThemeDetailActivity extends PageActivity {
     };
     private com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> j = new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k>() { // from class: com.tsf.extend.theme.ThemeDetailActivity.2
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, k kVar) {
+        public void a(JSONObject jSONObject, ThemeModel kVar) {
             ThemeDetailActivity.this.a(kVar);
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, k kVar) {
+        public void a(JSONObject jSONObject, int i, ThemeModel kVar) {
         }
     };
 
@@ -87,7 +87,7 @@ public class ThemeDetailActivity extends PageActivity {
         a(this.e);
         this.e.setIsAutoApply(true);
         this.e.setFromInlet("9");
-        k kVar = (k) getIntent().getSerializableExtra("theme");
+        ThemeModel kVar = (ThemeModel) getIntent().getSerializableExtra("theme");
         if (kVar != null) {
             this.e.setIsAutoDownload(true);
             a(kVar);
@@ -154,7 +154,7 @@ public class ThemeDetailActivity extends PageActivity {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(k kVar) {
+    public void a(ThemeModel kVar) {
         if (kVar != null) {
             kVar.d(getResources().getString(ResourceIds.g.shared_theme));
             this.e.setTheme(kVar);

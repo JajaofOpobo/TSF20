@@ -5,8 +5,8 @@ import com.tsf.extend.theme.aq;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends aq {
-    @Override // com.tsf.extend.theme.k
+public class a extends AbstractThemeProvider {
+    @Override // com.tsf.extend.theme.ThemeModel
     public int a() {
         return 2;
     }

@@ -41,8 +41,8 @@ import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
-import com.tsf.extend.theme.t;
-import com.tsf.extend.theme.v;
+import com.tsf.extend.theme.ThemeBaseAdapter;
+import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.l;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, PageActivity.a, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>>, PersonalizationActivity.n, l.a {
+public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, PageActivity.a, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<ThemeModel>>, PersonalizationActivity.n, l.a {
     public static final int[] b = {ResourceIds.e.title, ResourceIds.e.favorite_theme, ResourceIds.e.diy_btn, ResourceIds.e.loadmore_tips, ResourceIds.e.theme_controll};
     private List<String> A;
     private List<Integer> B;
@@ -375,7 +375,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     public void a(long j, String str, boolean z, String str2) {
-        k kVar = new k();
+        ThemeModel kVar = new ThemeModel();
         kVar.i("");
         kVar.h("");
         kVar.a(0);
@@ -399,7 +399,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, k kVar) {
+        public void a(JSONObject jSONObject, ThemeModel kVar) {
             a();
             if (kVar != null) {
                 ThemeDetail.this.setTheme(kVar);
@@ -410,7 +410,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, k kVar) {
+        public void a(JSONObject jSONObject, int i, ThemeModel kVar) {
             a();
             ThemeDetail.this.m.onBackPressed();
             int i2 = ResourceIds.g.theme_detail_data_fail;
@@ -429,7 +429,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    public void setTheme(k kVar) {
+    public void setTheme(ThemeModel kVar) {
         a(kVar, false);
     }
 
@@ -448,7 +448,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         com.tsf.extend.base.j.m.a(str);
     }
 
-    private void a(k kVar, boolean z) {
+    private void a(ThemeModel kVar, boolean z) {
         aq aqVarA;
         if (kVar != null) {
             if (ao.b().g() && com.tsf.extend.wallpaper.l.a().e(kVar) == null && (aqVarA = com.tsf.extend.theme.diy.e.a(getContext(), kVar)) != null) {
@@ -732,10 +732,10 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void a(View view, boolean z) {
-        k kVar;
+        ThemeModel kVar;
         if (Math.abs(this.S - System.currentTimeMillis()) > 1000) {
             if (z) {
-                kVar = (k) view.getTag();
+                kVar = (ThemeModel) view.getTag();
             } else {
                 Object tag = view.getTag();
                 if (tag instanceof t.d) {
@@ -747,7 +747,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                         kVar = ((t.d) tag).h;
                     }
                 } else {
-                    kVar = tag instanceof k ? (k) tag : null;
+                    kVar = tag instanceof ThemeModel ? (ThemeModel) tag : null;
                 }
             }
             if (kVar != null) {
@@ -775,11 +775,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    private void d(k kVar) {
+    private void d(ThemeModel kVar) {
         a("3", kVar.h(), kVar.B());
     }
 
-    private void e(k kVar) {
+    private void e(ThemeModel kVar) {
         a("2", kVar.h(), kVar.B());
     }
 
@@ -787,13 +787,13 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void A() {
-        final k kVar = this.z;
+        final ThemeModel kVar = this.z;
         final Context context = getContext();
         final ImageView imageView = this.p;
         com.tsf.extend.base.j.z.a(1, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8
             @Override // java.lang.Runnable
             public void run() throws Throwable {
-                final boolean zC = com.tsf.extend.theme.e.a().c(context, kVar);
+                final boolean zC = com.tsf.extend.theme.ThemeFavoriteManager.a().c(context, kVar);
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.8.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -805,14 +805,14 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void B() {
-        com.tsf.extend.theme.e.a().a(getContext(), this.z);
+        com.tsf.extend.theme.ThemeFavoriteManager.a().a(getContext(), this.z);
         if (!(this.z instanceof aq)) {
             w.a(this.z, getContext());
         }
     }
 
     private void C() {
-        com.tsf.extend.theme.e.a().b(getContext(), this.z);
+        com.tsf.extend.theme.ThemeFavoriteManager.a().b(getContext(), this.z);
     }
 
     private void D() {
@@ -1070,7 +1070,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    public void a(List<k> list, boolean z) {
+    public void a(List<ThemeModel> list, boolean z) {
         String strF;
         if (!z) {
             this.R.clear();
@@ -1085,7 +1085,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             strF = ((PersonalizationActivity) this.m).f();
         }
         if (strF != null && strF.startsWith("DIY://")) {
-            for (k kVar : list) {
+            for (ThemeModel kVar : list) {
                 if (kVar instanceof aq) {
                     if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
                         kVar.b(true);
@@ -1164,9 +1164,9 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(List<k> list) {
+    public void a(List<ThemeModel> list) {
         for (t.b bVar : this.R) {
-            k kVar = bVar.a;
+            ThemeModel kVar = bVar.a;
             k kVar2 = bVar.b;
             kVar.d(false);
             if (kVar2 != null) {
@@ -1187,13 +1187,13 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, final List<k> list) {
+    public void a(JSONObject jSONObject, final List<ThemeModel> list) {
         if (list != null) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (ThemeDetail.this.R != null) {
-                        ThemeDetail.this.a((List<k>) list);
+                        ThemeDetail.this.a((List<ThemeModel>) list);
                     }
                 }
             });
@@ -1201,7 +1201,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, int i, List<k> list) {
+    public void a(JSONObject jSONObject, int i, List<ThemeModel> list) {
     }
 
     public void i() {
@@ -1288,7 +1288,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(k kVar) {
+    public void a(ThemeModel kVar) {
         if (kVar.h() == this.z.h()) {
             this.ResourceIds.setVisibility(0);
             this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
@@ -1296,7 +1296,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(k kVar, float f2) {
+    public void a(ThemeModel kVar, float f2) {
         if (kVar.h() == this.z.h()) {
             this.ResourceIds.setVisibility(0);
             this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
@@ -1305,7 +1305,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(k kVar, com.tsf.extend.theme.B bVar) {
+    public void a(ThemeModel kVar, com.tsf.extend.theme.B bVar) {
         if (kVar.h() == this.z.h()) {
             this.j.setText(ResourceIds.g.theme_detail_btn_apply);
             this.ResourceIds.setVisibility(8);
@@ -1315,7 +1315,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void b(k kVar) {
+    public void b(ThemeModel kVar) {
         if (kVar.h() == this.z.h()) {
             this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading_fail));
             a(0.0f);
@@ -1324,7 +1324,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void c(k kVar) {
+    public void c(ThemeModel kVar) {
         if (kVar.h() == this.z.h()) {
             setThemeControllText(this.D);
             a(0.0f);

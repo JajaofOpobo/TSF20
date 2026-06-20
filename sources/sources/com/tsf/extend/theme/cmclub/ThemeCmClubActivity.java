@@ -40,7 +40,7 @@ import com.tsf.extend.ResourceIds;
 import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
 import com.tsf.extend.theme.j;
-import com.tsf.extend.theme.k;
+import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
@@ -441,7 +441,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         try {
             JSONObject jSONObject = new JSONObject(str);
             JSONObject jSONObject2 = jSONObject.getJSONObject("data");
-            final k kVar = new k();
+            final ThemeModel kVar = new ThemeModel();
             kVar.i(jSONObject2.optString("author_name"));
             kVar.a(jSONObject2.optInt("download_number"));
             kVar.c(jSONObject2.optInt("favorite_count"));

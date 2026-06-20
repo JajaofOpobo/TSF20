@@ -58,7 +58,7 @@ public class LiveWallPaperService extends WallpaperService {
         public void b() {
             LiveWallPaperService liveWallPaperService = LiveWallPaperService.this;
             try {
-                PictureDrawable pictureDrawableA = com.tsf.extend.a.e.a(liveWallPaperService.getAssets(), ab.b()).a();
+                PictureDrawable pictureDrawableA = com.tsf.extend.a.SvgParser.a(liveWallPaperService.getAssets(), ab.b()).a();
                 int i = liveWallPaperService.getResources().getDisplayMetrics().heightPixels;
                 float intrinsicHeight = i / pictureDrawableA.getIntrinsicHeight();
                 Bitmap bitmapCreateBitmap = Bitmap.createBitmap(liveWallPaperService.getResources().getDisplayMetrics().widthPixels, i, Bitmap.Config.ARGB_8888);

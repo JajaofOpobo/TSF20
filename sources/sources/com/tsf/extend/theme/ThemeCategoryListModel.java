@@ -1,0 +1,14 @@
+package com.tsf.extend.theme;
+
+import java.io.Serializable;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+public class ThemeCategoryListModel extends com.tsf.extend.base.b.PagedListModel<ThemeCategoryModel> {
+
+    public static class A implements Serializable {
+        public String a;
+        public String b;
+        public String c;
+        public Object d;
+    }
+}

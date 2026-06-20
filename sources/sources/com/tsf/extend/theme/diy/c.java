@@ -348,7 +348,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         z.a(1, new Runnable() { // from class: com.tsf.extend.theme.diy.c.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.theme.e.a().b(context, aqVar);
+                com.tsf.extend.theme.ThemeFavoriteManager.a().b(context, aqVar);
             }
         });
         File file = new File(aqVar.I());

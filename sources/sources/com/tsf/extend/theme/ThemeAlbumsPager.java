@@ -23,7 +23,7 @@ import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
-import com.tsf.extend.theme.t;
+import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
@@ -33,7 +33,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListener, AbsListView.OnScrollListener, PageActivity.a, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>>, PersonalizationActivity.b, PersonalizationActivity.n, com.tsf.extend.wallpaper.p {
+public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListener, AbsListView.OnScrollListener, PageActivity.a, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<ThemeModel>>, PersonalizationActivity.b, PersonalizationActivity.n, com.tsf.extend.wallpaper.p {
     private static final LinearLayout.LayoutParams j = new LinearLayout.LayoutParams(-1, -1);
     protected boolean a;
     protected long b;
@@ -213,14 +213,14 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, final List<k> list) {
+    public void a(JSONObject jSONObject, final List<ThemeModel> list) {
         if (list != null) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeAlbumsPager.2
                 @Override // java.lang.Runnable
                 public void run() {
                     if (ThemeAlbumsPager.this.k != null) {
                         for (t.b bVar : ThemeAlbumsPager.this.k) {
-                            k kVar = bVar.a;
+                            ThemeModel kVar = bVar.a;
                             k kVar2 = bVar.b;
                             kVar.d(false);
                             if (kVar2 != null) {
@@ -245,12 +245,12 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, int i, List<k> list) {
+    public void a(JSONObject jSONObject, int i, List<ThemeModel> list) {
     }
 
     private void a(View view) {
         String str;
-        k kVar;
+        ThemeModel kVar;
         k kVar2;
         Object tag = view.getTag();
         if (tag instanceof t.d) {
@@ -273,7 +273,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
                 viewFindViewById = view.findViewById(ResourceIds.e.theme_download_right);
             }
             str = "2";
-            kVar = (viewFindViewById == null || !(viewFindViewById.getTag() instanceof k)) ? null : (k) viewFindViewById.getTag();
+            kVar = (viewFindViewById == null || !(viewFindViewById.getTag() instanceof ThemeModel)) ? null : (ThemeModel) viewFindViewById.getTag();
         } else {
             str = null;
             kVar = null;
@@ -307,11 +307,11 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         }
     }
 
-    private void a(k kVar) {
+    private void a(ThemeModel kVar) {
         a("3", kVar.h(), kVar.B());
     }
 
-    private void b(k kVar) {
+    private void b(ThemeModel kVar) {
         a("2", kVar.h(), kVar.B());
     }
 
@@ -446,7 +446,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
                     if (aVar != null) {
                         ThemeAlbumsPager.this.a = aVar.b();
                     }
-                    ThemeAlbumsPager.this.a((List<k>) (aVar == null ? null : aVar.a()), false, ThemeAlbumsPager.this.a);
+                    ThemeAlbumsPager.this.a((List<ThemeModel>) (aVar == null ? null : aVar.a()), false, ThemeAlbumsPager.this.a);
                 }
             });
         }
@@ -470,7 +470,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean a(List<k> list, boolean z) {
+    public boolean a(List<ThemeModel> list, boolean z) {
         if (list == null || list.size() == 0) {
             return false;
         }
@@ -478,7 +478,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean a(List<k> list, boolean z, boolean z2) {
+    public boolean a(List<ThemeModel> list, boolean z, boolean z2) {
         a(z2);
         if (!z) {
             this.k.clear();
@@ -491,7 +491,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         }
         String strF = ((PersonalizationActivity) this.d).f();
         if (strF != null && strF.startsWith("DIY://")) {
-            for (k kVar : list) {
+            for (ThemeModel kVar : list) {
                 if (kVar instanceof aq) {
                     if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
                         kVar.b(true);

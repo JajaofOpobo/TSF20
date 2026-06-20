@@ -22,10 +22,13 @@
 | Session 11c | `f/f/` (page content, drawers, folders, scroll) | 112 | ~624 |
 | Session 11d | Final `f/` files (top-level, GL, gesture menu, shaders) | 18 | ~642 |
 | Session 12a | `widget/alarm/` (52 files) + `widget/cubeclock/` (25) + `plugin/themepicker/` (47) | 124 | ~766 |
-| Session 12b | `preference/`, `widget/a/`, `plugin/crop/fontspicker/notice/classification/summary/widget`, `theme/`, `activity/`, shell top-level (111 files) | 111 | **~877** |
+| Session 12b | `preference/`, `widget/a/`, `plugin/crop/fontspicker/notice/classification/summary/widget`, `theme/`, `activity/`, shell top-level (111 files) | 111 | ~877 |
+| **Phase 9** | C3DEngine `c/` (Physics/Spring) | 12 | **~889** |
+| **Phase 10** | C3DEngine remaining `b/` + `c/` (complete) | 40 | **~929** |
 
 ## Key Findings
 - **Entire project deobfuscated** — 0 single-letter Java files remain across all packages
+- `C3DEngine/` fully renamed (all `b/` + `c/` subpackages complete)
 - `f/` package (=v1 `workspace3D/`) + `manager/` + `utils/` + `services/` fully renamed
 - `widget/alarm/` (52 files) — extensive Frida evidence (loaded, scene graph, 4 hook scripts, method enumeration)
 - `widget/cubeclock/` (25 files) — moderate mapping evidence (digit faces, weather/alarm/music elements)

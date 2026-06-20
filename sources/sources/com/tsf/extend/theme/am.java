@@ -129,7 +129,7 @@ public class am extends Dialog {
             String str = resolveInfo.activityInfo.packageName;
             com.tsf.extend.ConfigConstants aVar = mapA.get(str);
             if (!z || (!str.contains("com.google.android.apps.plus") && !str.contains("com.facebook.katana"))) {
-                if (aVar != null && com.tsf.extend.a.e(aVar.a())) {
+                if (aVar != null && com.tsf.extend.a.SvgParser(aVar.a())) {
                     arrayList.add(i, anVar);
                     i++;
                 } else {

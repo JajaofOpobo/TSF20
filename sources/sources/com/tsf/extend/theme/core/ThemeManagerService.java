@@ -7,8 +7,8 @@ import android.os.IBinder;
 import android.text.TextUtils;
 import android.util.Log;
 import com.tsf.extend.AppContextHolder;
-import com.tsf.extend.theme.ah;
-import com.tsf.extend.theme.v;
+import com.tsf.extend.theme.ThemeInstallManager;
+import com.tsf.extend.theme.ThemeDataProvider;
 import java.util.UUID;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */

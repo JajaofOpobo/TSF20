@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import com.tsf.extend.base.actstru.model.activi.CustomActivity;
 import com.tsf.extend.ResourceIds;
-import com.tsf.extend.theme.ah;
+import com.tsf.extend.theme.ThemeInstallManager;
 import com.tsf.extend.theme.aq;
 import com.tsf.extend.theme.o;
 import java.util.UUID;

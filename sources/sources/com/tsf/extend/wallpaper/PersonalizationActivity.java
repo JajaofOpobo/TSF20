@@ -232,7 +232,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
             if (!file.exists()) {
                 this.p = new com.tsf.extend.theme.diy.d(this);
-                com.tsf.extend.theme.v.h().a(str, this.p);
+                com.tsf.extend.theme.ThemeDataProvider.h().a(str, this.p);
             }
         } catch (Throwable th) {
         }
@@ -312,8 +312,8 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             arrayListNewArrayList.addAll(PersonalizationActivity.this.k);
             String schemeSpecificPart = intent.getData().getSchemeSpecificPart();
             if (intent.getAction().equals("android.intent.action.PACKAGE_ADDED")) {
-                com.tsf.extend.theme.v.h();
-                if (com.tsf.extend.theme.v.e(schemeSpecificPart)) {
+                com.tsf.extend.theme.ThemeDataProvider.h();
+                if (com.tsf.extend.theme.ThemeDataProvider.e(schemeSpecificPart)) {
                     Iterator it = arrayListNewArrayList.iterator();
                     while (it.hasNext()) {
                         ((n) it.next()).a(schemeSpecificPart, n.a.ADD);
@@ -384,7 +384,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         d((Context) this);
         ao.b().a((ao.a) null);
         z.h().f();
-        com.tsf.extend.theme.v.h().f();
+        com.tsf.extend.theme.ThemeDataProvider.h().f();
         com.tsf.extend.wallpaper.a.WallpaperChangeManager.b(this);
         this.i = null;
         this.k.clear();
@@ -586,8 +586,8 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     @Override // com.tsf.extend.theme.diy.d.a
     public void a(Bitmap bitmap) throws Throwable {
         if (bitmap != null) {
-            com.tsf.extend.theme.v.h();
-            com.tsf.extend.theme.v.a(this, bitmap);
+            com.tsf.extend.theme.ThemeDataProvider.h();
+            com.tsf.extend.theme.ThemeDataProvider.a(this, bitmap);
         }
     }
 
@@ -653,12 +653,12 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                     if (aVar2 != null && (listA2 = aVar2.a()) != null && !listA2.isEmpty()) {
                         Iterator it = listA.iterator();
                         while (it.hasNext()) {
-                            com.tsf.extend.theme.k kVar = (com.tsf.extend.theme.k) it.next();
+                            com.tsf.extend.theme.ThemeModel kVar = (com.tsf.extend.theme.ThemeModel) it.next();
                             Iterator it2 = listA2.iterator();
                             while (true) {
                                 if (!it2.hasNext()) {
                                     break;
-                                } else if (((com.tsf.extend.theme.k) it2.next()).g().equals(kVar.g())) {
+                                } else if (((com.tsf.extend.theme.ThemeModel) it2.next()).g().equals(kVar.g())) {
                                     it.remove();
                                     break;
                                 }
@@ -666,7 +666,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                         }
                     }
                     if (!listA.isEmpty()) {
-                        PersonalizationActivity.this.a((List<com.tsf.extend.theme.k>) listA, aVar2);
+                        PersonalizationActivity.this.a((List<com.tsf.extend.theme.ThemeModel>) listA, aVar2);
                     }
                 }
             }
@@ -721,7 +721,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(com.tsf.extend.base.b.PagedListModel aVar, String str) {
-        com.tsf.extend.theme.v.h().b(new l(this, aVar), com.tsf.extend.base.d.BaseDataProvider.b.Refresh, str);
+        com.tsf.extend.theme.ThemeDataProvider.h().b(new l(this, aVar), com.tsf.extend.base.d.BaseDataProvider.b.Refresh, str);
     }
 
     static class j implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
@@ -741,7 +741,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                     if (aVar != null) {
                         Iterator it = aVar.a().iterator();
                         while (it.hasNext()) {
-                            if (personalizationActivity.a((com.tsf.extend.theme.k) it.next())) {
+                            if (personalizationActivity.a((com.tsf.extend.theme.ThemeModel) it.next())) {
                                 return;
                             }
                         }
@@ -760,32 +760,32 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     public void n() {
         String strC;
         if (!isDestroyed() && o() && ao.b().d() && (strC = ao.b().c()) != null && !"system".equals(strC)) {
-            com.tsf.extend.theme.v.h();
-            com.tsf.extend.theme.v.c(new j(this, strC));
+            com.tsf.extend.theme.ThemeDataProvider.h();
+            com.tsf.extend.theme.ThemeDataProvider.c(new j(this, strC));
         }
     }
 
-    static class g implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+    static class g implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.ThemeModel>> {
         private WeakReference<PersonalizationActivity> a;
-        private List<com.tsf.extend.theme.k> b;
+        private List<com.tsf.extend.theme.ThemeModel> b;
         private com.tsf.extend.base.b.PagedListModel c;
 
-        public g(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.PagedListModel aVar) {
+        public g(PersonalizationActivity personalizationActivity, List<com.tsf.extend.theme.ThemeModel> list, com.tsf.extend.base.b.PagedListModel aVar) {
             this.a = new WeakReference<>(personalizationActivity);
             this.b = list;
             this.c = aVar;
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, List<com.tsf.extend.theme.k> list) {
+        public void a(JSONObject jSONObject, List<com.tsf.extend.theme.ThemeModel> list) {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {
                 if ((personalizationActivity == null || !personalizationActivity.isDestroyed()) && personalizationActivity.o()) {
                     if (list != null) {
-                        Iterator<com.tsf.extend.theme.k> it = this.b.iterator();
+                        Iterator<com.tsf.extend.theme.ThemeModel> it = this.b.iterator();
                         while (it.hasNext()) {
-                            com.tsf.extend.theme.k next = it.next();
-                            Iterator<com.tsf.extend.theme.k> it2 = list.iterator();
+                            com.tsf.extend.theme.ThemeModel next = it.next();
+                            Iterator<com.tsf.extend.theme.ThemeModel> it2 = list.iterator();
                             while (true) {
                                 if (!it2.hasNext()) {
                                     break;
@@ -804,19 +804,19 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.k> list) {
+        public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.ThemeModel> list) {
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.PagedListModel aVar) {
-        com.tsf.extend.theme.v.h().a(new g(this, list, aVar));
+    public void a(List<com.tsf.extend.theme.ThemeModel> list, com.tsf.extend.base.b.PagedListModel aVar) {
+        com.tsf.extend.theme.ThemeDataProvider.h().a(new g(this, list, aVar));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void b(List<com.tsf.extend.theme.k> list, com.tsf.extend.base.b.PagedListModel aVar) {
+    public void b(List<com.tsf.extend.theme.ThemeModel> list, com.tsf.extend.base.b.PagedListModel aVar) {
         if (!ah.a) {
-            com.tsf.extend.theme.k kVar = list.get(0);
+            com.tsf.extend.theme.ThemeModel kVar = list.get(0);
             r rVar = new r(this, kVar);
             rVar.setCanceledOnTouchOutside(false);
             rVar.show();
@@ -827,12 +827,12 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
             kVar.c(System.currentTimeMillis());
             aVar.a().add(aVar.a().size(), kVar);
-            com.tsf.extend.theme.v.h().a(aVar);
+            com.tsf.extend.theme.ThemeDataProvider.h().a(aVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean a(com.tsf.extend.theme.k kVar) {
+    public boolean a(com.tsf.extend.theme.ThemeModel kVar) {
         return kVar.D() >= i() && kVar.D() <= j();
     }
 

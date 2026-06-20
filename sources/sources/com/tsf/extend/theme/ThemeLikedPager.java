@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.ResourceIds;
-import com.tsf.extend.theme.e;
+import com.tsf.extend.theme.ThemeFavoriteManager;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
 import java.util.Iterator;
@@ -40,7 +40,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
     private ListView k;
     private PageActivity l;
     private ad m;
-    private List<k> n;
+    private List<ThemeModel> n;
     private com.tsf.extend.wallpaper.ad.a o;
     private Runnable p;
 
@@ -52,7 +52,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         this.p = new Runnable() { // from class: com.tsf.extend.theme.ThemeLikedPager.1
             @Override // java.lang.Runnable
             public void run() throws Throwable {
-                final List<k> listA = e.a().a(ThemeLikedPager.this.getContext());
+                final List<ThemeModel> listA = e.a().a(ThemeLikedPager.this.getContext());
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeLikedPager.1.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -175,14 +175,14 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         a("2", "DefaultLike");
     }
 
-    @Override // com.tsf.extend.theme.e.a
-    public void a(k kVar) {
+    @Override // com.tsf.extend.theme.ThemeFavoriteManager.a
+    public void a(ThemeModel kVar) {
         this.n.add(0, kVar);
         h();
     }
 
-    @Override // com.tsf.extend.theme.e.a
-    public void b(k kVar) {
+    @Override // com.tsf.extend.theme.ThemeFavoriteManager.a
+    public void b(ThemeModel kVar) {
         if (kVar != null && kVar.g() != null && this.n.size() > 0) {
             Iterator<k> it = this.n.iterator();
             while (true) {
@@ -219,7 +219,7 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         }
         if (view != this && Math.abs(this.f - System.currentTimeMillis()) > 1000) {
             this.f = System.currentTimeMillis();
-            k kVar = (k) view.getTag();
+            ThemeModel kVar = (ThemeModel) view.getTag();
             if (kVar != null) {
                 if (com.tsf.extend.wallpaper.aj.a(getContext(), kVar.g())) {
                     this.l.a(false);

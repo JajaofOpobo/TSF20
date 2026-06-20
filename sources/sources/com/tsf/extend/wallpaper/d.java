@@ -42,12 +42,12 @@ public class d {
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onCreate(SQLiteDatabase sQLiteDatabase) {
-            com.tsf.extend.a.a(sQLiteDatabase);
+            com.tsf.extend.a.CharParser(sQLiteDatabase);
         }
 
         @Override // android.database.sqlite.SQLiteOpenHelper
         public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
-            com.tsf.extend.a.a(sQLiteDatabase, i, i2);
+            com.tsf.extend.a.CharParser(sQLiteDatabase, i, i2);
             onCreate(sQLiteDatabase);
         }
     }

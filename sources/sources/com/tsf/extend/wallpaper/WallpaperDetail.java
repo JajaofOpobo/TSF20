@@ -51,7 +51,7 @@ import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ThemePullToRefreshListView;
 import com.tsf.extend.theme.ao;
 import com.tsf.extend.theme.aq;
-import com.tsf.extend.theme.t;
+import com.tsf.extend.theme.ThemeBaseAdapter;
 import com.tsf.extend.wallpaper.HorzontalSliderView;
 import com.tsf.extend.wallpaper.TabViewPager;
 import com.tsf.extend.wallpaper.WallpaperImageView;
@@ -318,7 +318,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     eVar.a(false);
                 }
             }
-            a(mVar, (com.tsf.extend.theme.k) null, "4");
+            a(mVar, (com.tsf.extend.theme.ThemeModel) null, "4");
             return true;
         }
         if (this.A) {
@@ -327,7 +327,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
         this.k.putInt("index", this.b.getCurrentItem());
         this.ResourceIds.b(false);
-        a(mVar, (com.tsf.extend.theme.k) null, "3");
+        a(mVar, (com.tsf.extend.theme.ThemeModel) null, "3");
         return false;
     }
 
@@ -947,7 +947,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 i = iK2;
             }
             this.aa = new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
-            com.tsf.extend.theme.v.h().a(this.aa, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, i, jH);
+            com.tsf.extend.theme.ThemeDataProvider.h().a(this.aa, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, i, jH);
         }
 
         @Override // android.view.View.OnClickListener
@@ -975,15 +975,15 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 a(view, false);
             } else if (id == ResourceIds.e.main_more_theme || id == ResourceIds.e.more_theme) {
                 WallpaperDetail.this.ResourceIds.h();
-                WallpaperDetail.this.a(this.o, (com.tsf.extend.theme.k) null, "13");
+                WallpaperDetail.this.a(this.o, (com.tsf.extend.theme.ThemeModel) null, "13");
             }
         }
 
         private void a(View view, boolean z) {
-            com.tsf.extend.theme.k kVar;
+            com.tsf.extend.theme.ThemeModel kVar;
             if (Math.abs(this.N - System.currentTimeMillis()) > 1000) {
                 if (z) {
-                    kVar = (com.tsf.extend.theme.k) view.getTag();
+                    kVar = (com.tsf.extend.theme.ThemeModel) view.getTag();
                 } else {
                     Object tag = view.getTag();
                     if (tag instanceof t.d) {
@@ -995,7 +995,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                             kVar = ((t.d) tag).h;
                         }
                     } else {
-                        kVar = tag instanceof com.tsf.extend.theme.k ? (com.tsf.extend.theme.k) tag : null;
+                        kVar = tag instanceof com.tsf.extend.theme.ThemeModel ? (com.tsf.extend.theme.ThemeModel) tag : null;
                     }
                 }
                 if (kVar != null) {
@@ -1018,7 +1018,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        private void a(com.tsf.extend.theme.k kVar) {
+        private void a(com.tsf.extend.theme.ThemeModel kVar) {
             Context context = WallpaperDetail.this.getContext();
             String strG = kVar.g();
             if (context.getPackageManager() != null) {
@@ -1072,18 +1072,18 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+        class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.ThemeModel>> {
             A() {
             }
 
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-            public void a(JSONObject jSONObject, final List<com.tsf.extend.theme.k> list) {
+            public void a(JSONObject jSONObject, final List<com.tsf.extend.theme.ThemeModel> list) {
                 if (list != null) {
                     com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.a.1
                         @Override // java.lang.Runnable
                         public void run() {
                             if (e.this.d != null) {
-                                e.this.a((List<com.tsf.extend.theme.k>) list);
+                                e.this.a((List<com.tsf.extend.theme.ThemeModel>) list);
                             }
                         }
                     });
@@ -1091,7 +1091,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
 
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-            public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.k> list) {
+            public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.ThemeModel> list) {
             }
         }
 
@@ -1115,10 +1115,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 i();
                 this.c.b(false);
             }
-            com.tsf.extend.theme.v.h().a(new A());
+            com.tsf.extend.theme.ThemeDataProvider.h().a(new A());
         }
 
-        public void a(List<com.tsf.extend.theme.k> list, boolean z) {
+        public void a(List<com.tsf.extend.theme.ThemeModel> list, boolean z) {
             String strF;
             if (!z) {
                 this.d.clear();
@@ -1130,7 +1130,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     strF = null;
                 }
                 if (strF != null && strF.startsWith("DIY://")) {
-                    for (com.tsf.extend.theme.k kVar : list) {
+                    for (com.tsf.extend.theme.ThemeModel kVar : list) {
                         if (kVar instanceof aq) {
                             if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
                                 kVar.b(true);
@@ -1140,7 +1140,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                         }
                     }
                 } else {
-                    for (com.tsf.extend.theme.k kVar2 : list) {
+                    for (com.tsf.extend.theme.ThemeModel kVar2 : list) {
                         if (!TextUtils.isEmpty(strF) && strF.equals(kVar2.g())) {
                             kVar2.b(true);
                         } else {
@@ -1156,15 +1156,15 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void a(List<com.tsf.extend.theme.k> list) {
+        public void a(List<com.tsf.extend.theme.ThemeModel> list) {
             for (t.b bVar : this.d) {
-                com.tsf.extend.theme.k kVarA = bVar.a();
-                com.tsf.extend.theme.k kVarB = bVar.b();
+                com.tsf.extend.theme.ThemeModel kVarA = bVar.a();
+                com.tsf.extend.theme.ThemeModel kVarB = bVar.b();
                 kVarA.d(false);
                 if (kVarB != null) {
                     kVarB.d(false);
                 }
-                for (com.tsf.extend.theme.k kVar : list) {
+                for (com.tsf.extend.theme.ThemeModel kVar : list) {
                     if (kVar != null && !(kVar instanceof aq)) {
                         if (kVar.g().equals(kVarA.g())) {
                             kVarA.d(true);
@@ -1245,7 +1245,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     i = iK2;
                 }
                 this.ab = new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
-                com.tsf.extend.theme.v.h().a(this.ab, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, i, jH);
+                com.tsf.extend.theme.ThemeDataProvider.h().a(this.ab, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, i, jH);
             }
         }
     }
@@ -1286,7 +1286,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         s sVar;
         if (!this.J && (eVarA = a(this.b.getCurrentItem())) != null && (sVar = eVarA.o) != null && sVar.s() != null) {
             this.J = true;
-            a(sVar, (com.tsf.extend.theme.k) null, "8");
+            a(sVar, (com.tsf.extend.theme.ThemeModel) null, "8");
             this.u.post(new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.9
                 @Override // java.lang.Runnable
                 public void run() {
@@ -1373,7 +1373,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 return;
             }
             if (this.p == 0 && (eVarA = a(this.b.getCurrentItem())) != null) {
-                a(eVarA.o, (com.tsf.extend.theme.k) null, "2");
+                a(eVarA.o, (com.tsf.extend.theme.ThemeModel) null, "2");
                 this.b.setCanDrage(false);
                 this.l.setVisibility(0);
                 eVarA2.g.setClickable(false);
@@ -1404,7 +1404,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             return;
         }
         if (id == ResourceIds.e.wallpaper_bigtype_delete || id == ResourceIds.e.delete) {
-            a(a(this.b.getCurrentItem()).o, (com.tsf.extend.theme.k) null, "5");
+            a(a(this.b.getCurrentItem()).o, (com.tsf.extend.theme.ThemeModel) null, "5");
             i();
             return;
         }
@@ -1437,7 +1437,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 eVar.g();
                 eVar.a(false);
                 if (eVar.u == this.b.getCurrentItem()) {
-                    a(eVar.o, (com.tsf.extend.theme.k) null, "4");
+                    a(eVar.o, (com.tsf.extend.theme.ThemeModel) null, "4");
                 }
             }
         }
@@ -1455,22 +1455,22 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             this.B.setVisibility(this.A ? 0 : 8);
             this.C.setSelected(this.A);
             com.tsf.extend.base.h.LogWriter.a().a(this.A);
-            a(eVarA.o, (com.tsf.extend.theme.k) null, z ? "9" : "10");
+            a(eVarA.o, (com.tsf.extend.theme.ThemeModel) null, z ? "9" : "10");
         }
     }
 
     private void b(m mVar) {
         this.x.b(mVar, this);
-        a(mVar, (com.tsf.extend.theme.k) null, "6");
+        a(mVar, (com.tsf.extend.theme.ThemeModel) null, "6");
     }
 
     private void c(m mVar) {
         this.x.a(mVar, this);
-        a(mVar, (com.tsf.extend.theme.k) null, "7");
+        a(mVar, (com.tsf.extend.theme.ThemeModel) null, "7");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(s sVar, com.tsf.extend.theme.k kVar, String str) {
+    public void a(s sVar, com.tsf.extend.theme.ThemeModel kVar, String str) {
         m mVar = null;
         if (sVar instanceof m) {
             mVar = (m) sVar;

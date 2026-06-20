@@ -18,9 +18,9 @@ import java.util.Map;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ai {
     private static volatile ai h;
-    private List<k> a = Lists.newArrayList();
-    private List<k> b = Lists.newArrayList();
-    private List<k> c = Lists.newArrayList();
+    private List<ThemeModel> a = Lists.newArrayList();
+    private List<ThemeModel> b = Lists.newArrayList();
+    private List<ThemeModel> c = Lists.newArrayList();
     private Map<String, String> d = Maps.newHashMap();
     private boolean e = false;
     private boolean f = false;
@@ -41,7 +41,7 @@ public class ai {
     }
 
     public String b() {
-        List<k> listC = c();
+        List<ThemeModel> listC = c();
         if (listC.size() <= 0) {
             return null;
         }
@@ -65,11 +65,11 @@ public class ai {
         }
     }
 
-    public List<k> c() {
+    public List<ThemeModel> c() {
         return a(false);
     }
 
-    public List<k> a(boolean z) {
+    public List<ThemeModel> a(boolean z) {
         this.e = false;
         PackageManager packageManager = com.tsf.extend.AppContextHolder.b().getPackageManager();
         Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
@@ -140,7 +140,7 @@ public class ai {
         return this.a;
     }
 
-    public List<k> d() {
+    public List<ThemeModel> d() {
         ApplicationInfo applicationInfo;
         PackageManager packageManager = com.tsf.extend.AppContextHolder.b().getPackageManager();
         Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
@@ -155,7 +155,7 @@ public class ai {
                 applicationInfo = null;
             }
             if (applicationInfo != null && applicationInfo.metaData != null && applicationInfo.metaData.getBoolean("KEYBOARD_THEME_SUPPORT", false)) {
-                k kVar = new k();
+                ThemeModel kVar = new ThemeModel();
                 kVar.c(str);
                 arrayListNewArrayList.add(kVar);
             }

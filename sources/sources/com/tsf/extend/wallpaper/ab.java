@@ -23,17 +23,17 @@ public class ab {
 
     public static class b {
         private static b b = new b();
-        WeakHashMap<Integer, com.tsf.extend.a.b> a = new WeakHashMap<>();
+        WeakHashMap<Integer, com.tsf.extend.a.SvgPicture> a = new WeakHashMap<>();
 
         public static b a() {
             return b;
         }
 
-        public void a(int i, com.tsf.extend.a.b bVar) {
+        public void a(int i, com.tsf.extend.a.SvgPicture bVar) {
             this.a.put(Integer.valueOf(i), bVar);
         }
 
-        public com.tsf.extend.a.b a(int i) {
+        public com.tsf.extend.a.SvgPicture a(int i) {
             return this.a.get(Integer.valueOf(i));
         }
     }
@@ -125,11 +125,11 @@ public class ab {
         };
     }
 
-    private static com.tsf.extend.a.b b(Context context, int i) {
-        com.tsf.extend.a.b bVarA = b.a().a(i);
+    private static com.tsf.extend.a.SvgPicture b(Context context, int i) {
+        com.tsf.extend.a.SvgPicture bVarA = b.a().a(i);
         if (bVarA == null) {
             try {
-                bVarA = com.tsf.extend.a.e.a(context.getAssets(), d(i));
+                bVarA = com.tsf.extend.a.SvgParser.a(context.getAssets(), d(i));
             } catch (IOException e) {
                 e.printStackTrace();
             }

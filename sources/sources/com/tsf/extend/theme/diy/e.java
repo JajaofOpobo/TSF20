@@ -21,7 +21,7 @@ import com.tsf.extend.base.j.l;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.theme.aq;
-import com.tsf.extend.theme.k;
+import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -619,7 +619,7 @@ public class e {
             aVar = new com.tsf.extend.theme.diy.a();
         }
         File file = new File(str, "theme/onlinetheme/theme");
-        k kVar = (file == null || !file.exists()) ? null : (k) l.a(file);
+        ThemeModel kVar = (file == null || !file.exists()) ? null : (ThemeModel) l.a(file);
         if (kVar != null) {
             aVar.i(kVar.q());
             aVar.d(kVar.i());
@@ -696,15 +696,15 @@ public class e {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static void a(android.content.Context r16, final com.tsf.extend.theme.k r17, final com.tsf.extend.theme.diy.e.c r18) throws java.lang.Throwable {
+    public static void a(android.content.Context r16, final com.tsf.extend.theme.ThemeModel r17, final com.tsf.extend.theme.diy.e.c r18) throws java.lang.Throwable {
         /*
             Method dump skipped, instruction units count: 613
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.theme.diy.e.a(android.content.Context, com.tsf.extend.theme.k, com.tsf.extend.theme.diy.e$c):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.theme.diy.e.a(android.content.Context, com.tsf.extend.theme.ThemeModel, com.tsf.extend.theme.diy.e$c):void");
     }
 
-    public static aq a(Context context, k kVar) {
+    public static aq a(Context context, ThemeModel kVar) {
         return a(new File(b(context), "CMT_" + kVar.h() + "_LP" + (kVar.F() == 3 ? "_3D" : "_2D")).getAbsolutePath(), true);
     }
 
@@ -736,7 +736,7 @@ public class e {
                     if (jSONObject.optInt("resCode", -1) != 0 || (jSONObjectOptJSONObject = jSONObject.optJSONObject("data")) == null) {
                         return null;
                     }
-                    k kVar = new k();
+                    ThemeModel kVar = new ThemeModel();
                     kVar.i(jSONObjectOptJSONObject.optString("author_name"));
                     kVar.a(jSONObjectOptJSONObject.optInt("download_number"));
                     kVar.c(jSONObjectOptJSONObject.optInt("favorite_count"));

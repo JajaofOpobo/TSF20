@@ -52,7 +52,7 @@ import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.diy.b;
 import com.tsf.extend.theme.diy.d;
 import com.tsf.extend.theme.diy.view.ThemeLoadingAnim;
-import com.tsf.extend.theme.v;
+import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.WallpaperOnLineActivity;
 import com.tsf.extend.wallpaper.ab;
@@ -683,7 +683,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             String str = this.o.c().get(0);
             if (str != null) {
                 if (this.u == null) {
-                    this.u = new k();
+                    this.u = new ThemeModel();
                 }
                 this.C.setVisibility(0);
                 this.E = System.currentTimeMillis();

@@ -19,10 +19,10 @@ import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ao;
 import com.tsf.extend.theme.aq;
-import com.tsf.extend.theme.k;
+import com.tsf.extend.theme.ThemeModel;
 import com.tsf.extend.theme.p;
-import com.tsf.extend.theme.t;
-import com.tsf.extend.theme.v;
+import com.tsf.extend.theme.ThemeBaseAdapter;
+import com.tsf.extend.theme.ThemeDataProvider;
 import com.tsf.extend.theme.x;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC0048a<List<k>>, PersonalizationActivity.b, PersonalizationActivity.n {
+public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC0048a<List<ThemeModel>>, PersonalizationActivity.b, PersonalizationActivity.n {
     protected PageActivity a;
     private PullToRefreshAndLoadMoreListView b;
     private t c;
@@ -144,11 +144,11 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     }
 
     private void a(View view, boolean z) {
-        k kVar;
+        ThemeModel kVar;
         if (Math.abs(this.k - System.currentTimeMillis()) > 1000) {
             this.k = System.currentTimeMillis();
             if (z) {
-                kVar = (k) view.getTag();
+                kVar = (ThemeModel) view.getTag();
             } else {
                 Object tag = view.getTag();
                 if (tag instanceof t.d) {
@@ -160,7 +160,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                         kVar = ((t.d) tag).h;
                     }
                 } else {
-                    kVar = tag instanceof k ? (k) tag : null;
+                    kVar = tag instanceof ThemeModel ? (ThemeModel) tag : null;
                 }
             }
             if (kVar != null) {
@@ -182,7 +182,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    private void a(k kVar) {
+    private void a(ThemeModel kVar) {
         Context context = getContext();
         String strG = kVar.g();
         if (context.getPackageManager() != null) {
@@ -204,7 +204,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, final List<k> list) {
+    public void a(JSONObject jSONObject, final List<ThemeModel> list) {
         if (list != null) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.2
                 @Override // java.lang.Runnable
@@ -222,7 +222,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                                 if (kVarC != null) {
                                     kVarC.d(false);
                                 }
-                                for (k kVar : list) {
+                                for (ThemeModel kVar : list) {
                                     if (kVar != null && !(kVar instanceof aq)) {
                                         if (kVar.g().equals(kVarA.g())) {
                                             kVarA.d(true);
@@ -245,7 +245,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, int i, List<k> list) {
+    public void a(JSONObject jSONObject, int i, List<ThemeModel> list) {
     }
 
     @Override // com.tsf.extend.wallpaper.PersonalizationActivity.b
@@ -277,8 +277,8 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                     boolean r0 = r1.hasNext()
                     if (r0 == 0) goto L49
                     java.lang.Object r0 = r1.next()
-                    com.tsf.extend.theme.t$b r0 = (com.tsf.extend.theme.t.b) r0
-                    com.tsf.extend.theme.k r2 = r0.a()
+                    com.tsf.extend.theme.ThemeBaseAdapter$b r0 = (com.tsf.extend.theme.ThemeBaseAdapter.b) r0
+                    com.tsf.extend.theme.ThemeModel r2 = r0.a()
                     if (r2 == 0) goto L5e
                     java.lang.String r3 = r2
                     boolean r3 = android.text.TextUtils.isEmpty(r3)
@@ -290,17 +290,17 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                     r2.b(r6)
                 L49:
                     com.tsf.extend.theme.c.d r0 = com.tsf.extend.theme.c.d.this
-                    com.tsf.extend.theme.t r0 = com.tsf.extend.theme.c.d.e(r0)
+                    com.tsf.extend.theme.ThemeBaseAdapter r0 = com.tsf.extend.theme.c.d.e(r0)
                     if (r0 == 0) goto L5a
                     com.tsf.extend.theme.c.d r0 = com.tsf.extend.theme.c.d.this
-                    com.tsf.extend.theme.t r0 = com.tsf.extend.theme.c.d.e(r0)
+                    com.tsf.extend.theme.ThemeBaseAdapter r0 = com.tsf.extend.theme.c.d.e(r0)
                     r0.notifyDataSetChanged()
                 L5a:
                     return
                 L5b:
                     r2.b(r5)
                 L5e:
-                    com.tsf.extend.theme.k r0 = r0.b()
+                    com.tsf.extend.theme.ThemeModel r0 = r0.b()
                     if (r0 == 0) goto L20
                     java.lang.String r2 = r2
                     boolean r2 = android.text.TextUtils.isEmpty(r2)
@@ -327,7 +327,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    public void a(List<k> list, boolean z) {
+    public void a(List<ThemeModel> list, boolean z) {
         String strF;
         if (!z) {
             this.d.clear();
@@ -342,7 +342,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
             strF = ((PersonalizationActivity) this.a).f();
         }
         if (strF != null && strF.startsWith("DIY://")) {
-            for (k kVar : list) {
+            for (ThemeModel kVar : list) {
                 if (kVar instanceof aq) {
                     if (!TextUtils.isEmpty(strF) && strF.contains(((aq) kVar).I())) {
                         kVar.b(true);

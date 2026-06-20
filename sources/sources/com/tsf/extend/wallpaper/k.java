@@ -5,16 +5,16 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class k extends Thread {
-    private LinkedBlockingQueue<com.tsf.extend.theme.k> a;
+    private LinkedBlockingQueue<com.tsf.extend.theme.ThemeModel> a;
     private boolean b = false;
 
-    public k(LinkedBlockingQueue<com.tsf.extend.theme.k> linkedBlockingQueue) {
+    public k(LinkedBlockingQueue<com.tsf.extend.theme.ThemeModel> linkedBlockingQueue) {
         this.a = linkedBlockingQueue;
     }
 
     @Override // java.lang.Thread, java.lang.Runnable
     public void run() throws Throwable {
-        final com.tsf.extend.theme.k kVarTake;
+        final com.tsf.extend.theme.ThemeModel kVarTake;
         while (!this.b) {
             try {
                 kVarTake = this.a.take();

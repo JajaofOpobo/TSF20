@@ -14,13 +14,13 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DigestCache {
-    public static final String a = com.tsf.extend.a.c;
-    public static final String b = com.tsf.extend.a.d;
+    public static final String a = com.tsf.extend.a.NamedColorMap;
+    public static final String b = com.tsf.extend.a.SvgParseException;
     public static final String c = com.tsf.extend.a.j;
     public static final String d = com.tsf.extend.a.k;
     public static final String e = com.tsf.extend.a.h;
     public static final String f = com.tsf.extend.a.i;
-    public static final String g = com.tsf.extend.a.e;
+    public static final String g = com.tsf.extend.a.SvgParser;
     public static final String h = com.tsf.extend.a.g;
     public static final String i = com.tsf.extend.a.f;
     public static final String j = com.tsf.extend.a.m;

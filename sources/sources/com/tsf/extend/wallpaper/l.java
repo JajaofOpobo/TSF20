@@ -12,21 +12,21 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class l {
     private static l b;
     private boolean f;
-    private Vector<com.tsf.extend.theme.k> d = new Vector<>();
+    private Vector<com.tsf.extend.theme.ThemeModel> d = new Vector<>();
     private k[] e = new k[2];
-    private LinkedBlockingQueue<com.tsf.extend.theme.k> a = new LinkedBlockingQueue<>(5);
+    private LinkedBlockingQueue<com.tsf.extend.theme.ThemeModel> a = new LinkedBlockingQueue<>(5);
     private List<SoftReference<a>> c = new ArrayList();
 
     public interface a {
-        void a(com.tsf.extend.theme.k kVar);
+        void a(com.tsf.extend.theme.ThemeModel kVar);
 
-        void a(com.tsf.extend.theme.k kVar, float f);
+        void a(com.tsf.extend.theme.ThemeModel kVar, float f);
 
-        void a(com.tsf.extend.theme.k kVar, com.tsf.extend.theme.B bVar);
+        void a(com.tsf.extend.theme.ThemeModel kVar, com.tsf.extend.theme.B bVar);
 
-        void b(com.tsf.extend.theme.k kVar);
+        void b(com.tsf.extend.theme.ThemeModel kVar);
 
-        void c(com.tsf.extend.theme.k kVar);
+        void c(com.tsf.extend.theme.ThemeModel kVar);
     }
 
     private l() {
@@ -61,7 +61,7 @@ public class l {
         this.f = false;
     }
 
-    public boolean a(com.tsf.extend.theme.k kVar) {
+    public boolean a(com.tsf.extend.theme.ThemeModel kVar) {
         if (kVar == null) {
             return false;
         }
@@ -91,7 +91,7 @@ public class l {
         }
     }
 
-    public void b(final com.tsf.extend.theme.k kVar) {
+    public void b(final com.tsf.extend.theme.ThemeModel kVar) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.1
             @Override // java.lang.Runnable
             public void run() {
@@ -107,7 +107,7 @@ public class l {
         });
     }
 
-    public void a(final com.tsf.extend.theme.k kVar, final float f) {
+    public void a(final com.tsf.extend.theme.ThemeModel kVar, final float f) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.2
             @Override // java.lang.Runnable
             public void run() {
@@ -122,7 +122,7 @@ public class l {
         });
     }
 
-    public void a(final com.tsf.extend.theme.k kVar, final com.tsf.extend.theme.B bVar) {
+    public void a(final com.tsf.extend.theme.ThemeModel kVar, final com.tsf.extend.theme.B bVar) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.3
             @Override // java.lang.Runnable
             public void run() {
@@ -140,7 +140,7 @@ public class l {
         });
     }
 
-    public void c(final com.tsf.extend.theme.k kVar) {
+    public void c(final com.tsf.extend.theme.ThemeModel kVar) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.4
             @Override // java.lang.Runnable
             public void run() {
@@ -157,7 +157,7 @@ public class l {
         });
     }
 
-    public void d(final com.tsf.extend.theme.k kVar) {
+    public void d(final com.tsf.extend.theme.ThemeModel kVar) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.l.5
             @Override // java.lang.Runnable
             public void run() {
@@ -202,17 +202,17 @@ public class l {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public synchronized com.tsf.extend.theme.k e(com.tsf.extend.theme.k r7) {
+    public synchronized com.tsf.extend.theme.ThemeModel e(com.tsf.extend.theme.ThemeModel r7) {
         /*
             r6 = this;
             monitor-enter(r6)
-            java.util.concurrent.LinkedBlockingQueue<com.tsf.extend.theme.k> r0 = r6.a     // Catch: java.lang.Throwable -> L4e
+            java.util.concurrent.LinkedBlockingQueue<com.tsf.extend.theme.ThemeModel> r0 = r6.a     // Catch: java.lang.Throwable -> L4e
             java.util.Iterator r1 = r0.iterator()     // Catch: java.lang.Throwable -> L4e
         L7:
             boolean r0 = r1.hasNext()     // Catch: java.lang.Throwable -> L4e
             if (r0 == 0) goto L27
             java.lang.Object r0 = r1.next()     // Catch: java.lang.Throwable -> L4e
-            com.tsf.extend.theme.k r0 = (com.tsf.extend.theme.k) r0     // Catch: java.lang.Throwable -> L4e
+            com.tsf.extend.theme.ThemeModel r0 = (com.tsf.extend.theme.ThemeModel) r0     // Catch: java.lang.Throwable -> L4e
             boolean r2 = r0.H()     // Catch: java.lang.Throwable -> L4e
             if (r2 != 0) goto L7
             long r2 = r0.h()     // Catch: java.lang.Throwable -> L4e
@@ -223,13 +223,13 @@ public class l {
             monitor-exit(r6)
             return r0
         L27:
-            java.util.Vector<com.tsf.extend.theme.k> r0 = r6.d     // Catch: java.lang.Throwable -> L4e
+            java.util.Vector<com.tsf.extend.theme.ThemeModel> r0 = r6.d     // Catch: java.lang.Throwable -> L4e
             java.util.Iterator r1 = r0.iterator()     // Catch: java.lang.Throwable -> L4e
         L2d:
             boolean r0 = r1.hasNext()     // Catch: java.lang.Throwable -> L4e
             if (r0 == 0) goto L4c
             java.lang.Object r0 = r1.next()     // Catch: java.lang.Throwable -> L4e
-            com.tsf.extend.theme.k r0 = (com.tsf.extend.theme.k) r0     // Catch: java.lang.Throwable -> L4e
+            com.tsf.extend.theme.ThemeModel r0 = (com.tsf.extend.theme.ThemeModel) r0     // Catch: java.lang.Throwable -> L4e
             boolean r2 = r0.H()     // Catch: java.lang.Throwable -> L4e
             if (r2 != 0) goto L2d
             long r2 = r0.h()     // Catch: java.lang.Throwable -> L4e
@@ -245,6 +245,6 @@ public class l {
             monitor-exit(r6)
             throw r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.wallpaper.l.e(com.tsf.extend.theme.k):com.tsf.extend.theme.k");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.wallpaper.l.e(com.tsf.extend.theme.ThemeModel):com.tsf.extend.theme.ThemeModel");
     }
 }
