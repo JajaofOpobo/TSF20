@@ -13,7 +13,7 @@ import com.tsf.extend.base.j.z;
 import com.tsf.extend.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class UploadNotificationManager {
     public Context a;
     private int b;
     private RemoteViews c;
@@ -72,7 +72,7 @@ public class a {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.a();
+                        UploadNotificationManager.this.a();
                     }
                 }, 2000L);
                 break;

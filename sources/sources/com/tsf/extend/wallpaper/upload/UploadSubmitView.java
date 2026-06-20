@@ -27,10 +27,10 @@ import com.tsf.extend.wallpaper.ag;
 import java.text.DecimalFormat;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends FrameLayout implements DialogInterface.OnClickListener, TextWatcher, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener {
+public class UploadSubmitView extends FrameLayout implements DialogInterface.OnClickListener, TextWatcher, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener {
     private InputMethodManager a;
     private UploadWallpaperActivity b;
-    private c c;
+    private UploadTabContainer c;
     private FrameLayout d;
     private TextView e;
     private TextView f;
@@ -43,14 +43,14 @@ public class d extends FrameLayout implements DialogInterface.OnClickListener, T
     private String m;
     private int n;
 
-    public d(Context context) {
+    public UploadSubmitView(Context context) {
         super(context);
         this.l = 0;
         this.m = null;
         this.n = 2;
     }
 
-    public void a(UploadWallpaperActivity uploadWallpaperActivity, c cVar) {
+    public void a(UploadWallpaperActivity uploadWallpaperActivity, UploadTabContainer cVar) {
         this.c = cVar;
         this.b = uploadWallpaperActivity;
     }
@@ -87,8 +87,8 @@ public class d extends FrameLayout implements DialogInterface.OnClickListener, T
         postDelayed(new Runnable() { // from class: com.tsf.extend.wallpaper.upload.d.1
             @Override // java.lang.Runnable
             public void run() {
-                d.this.h.requestFocus();
-                d.this.a.showSoftInput(d.this.h, 0);
+                UploadSubmitView.this.h.requestFocus();
+                UploadSubmitView.this.a.showSoftInput(UploadSubmitView.this.h, 0);
             }
         }, 300L);
     }

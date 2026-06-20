@@ -12,16 +12,16 @@ import android.widget.FrameLayout;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @TargetApi(11)
-public class c extends FrameLayout implements Animator.AnimatorListener {
+public class UploadTabContainer extends FrameLayout implements Animator.AnimatorListener {
     private UploadWallpaperActivity a;
     private View b;
     private int c;
     private int d;
-    private b e;
-    private d f;
+    private UploadCategoryView e;
+    private UploadSubmitView f;
     private final LayoutTransition g;
 
-    public c(Context context) {
+    public UploadTabContainer(Context context) {
         super(context);
         this.c = 0;
         this.d = 0;
@@ -58,7 +58,7 @@ public class c extends FrameLayout implements Animator.AnimatorListener {
 
     private View getCategoryView() {
         if (this.e == null) {
-            this.e = new b(getContext());
+            this.e = new UploadCategoryView(getContext());
             this.e.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
             this.e.a(this.a, this);
             addView(this.e);
@@ -69,7 +69,7 @@ public class c extends FrameLayout implements Animator.AnimatorListener {
 
     private View getSubmitView() {
         if (this.f == null) {
-            this.f = new d(getContext());
+            this.f = new UploadSubmitView(getContext());
             this.f.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
             this.f.a(this.a, this);
             addView(this.f);

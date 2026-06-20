@@ -21,7 +21,7 @@ import com.tsf.extend.base.j.o;
 import com.tsf.extend.base.j.r;
 import com.tsf.extend.f;
 import com.tsf.extend.theme.diy.e;
-import com.tsf.extend.wallpaper.upload.a;
+import com.tsf.extend.wallpaper.upload.UploadNotificationManager;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -47,7 +47,7 @@ public class UploadWallpaperService extends Service {
     private Thread c;
     private String d;
     private Runnable g;
-    private com.tsf.extend.wallpaper.upload.a j;
+    private com.tsf.extend.wallpaper.upload.UploadNotificationManager j;
     private NotifReceiver k;
     private HashMap<String, String> l;
     private Handler m;
@@ -187,13 +187,13 @@ public class UploadWallpaperService extends Service {
     private void b(Intent intent) throws UnsupportedEncodingException {
         final String strB;
         final boolean booleanExtra = intent.getBooleanExtra("upload_wallpaper", false);
-        final a aVar = a.values()[intent.getIntExtra("upload_act", 0)];
+        final UploadNotificationManager.EnumC0071a aVar = UploadNotificationManager.EnumC0071a.values()[intent.getIntExtra("upload_act", 0)];
         final String stringExtra = intent.getStringExtra("upload_wallpaper_PARAM");
         if (booleanExtra) {
-            this.j = new com.tsf.extend.wallpaper.upload.a(this, 10001);
+            this.j = new UploadNotificationManager(this, 10001);
             strB = a(this, aVar, stringExtra);
         } else {
-            this.j = new com.tsf.extend.wallpaper.upload.a(this);
+            this.j = new UploadNotificationManager(this);
             strB = b();
             this.d = intent.getStringExtra("cid");
             try {
@@ -710,7 +710,7 @@ public class UploadWallpaperService extends Service {
                                 }
                             }
                             if (j > 1048576) {
-                                Toast.makeText(context, String.format(UploadWallpaperService.this.getString(f.g.uplaod_wallpaper_dialog_mobile_network), com.tsf.extend.wallpaper.upload.d.a(j)), 1).show();
+                                Toast.makeText(context, String.format(UploadWallpaperService.this.getString(f.g.uplaod_wallpaper_dialog_mobile_network), com.tsf.extend.wallpaper.upload.UploadSubmitView.a(j)), 1).show();
                             }
                             UploadWallpaperService.this.a();
                             return;

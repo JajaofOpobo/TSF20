@@ -39,7 +39,7 @@ public class UploadWallpaperActivity extends Activity {
     private Uri d = null;
     private FrameLayout e = null;
     private FrameLayout f = null;
-    private c g = null;
+    private UploadTabContainer g = null;
 
     @Override // android.app.Activity
     protected void onCreate(Bundle bundle) {
@@ -90,7 +90,7 @@ public class UploadWallpaperActivity extends Activity {
             frameLayout.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             frameLayout.setBackgroundColor(Color.argb(51, 0, 0, 0));
             this.e.addView(frameLayout);
-            this.g = new c(this);
+            this.g = new UploadTabContainer(this);
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
             layoutParams.setMargins(0, i.a(49.0f), 0, 0);
             this.g.setLayoutParams(layoutParams);

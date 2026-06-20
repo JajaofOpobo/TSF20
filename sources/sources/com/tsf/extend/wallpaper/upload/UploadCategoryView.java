@@ -24,10 +24,10 @@ import org.acra.ACRAConstants;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends FrameLayout implements View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener {
+public class UploadCategoryView extends FrameLayout implements View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener {
     private UploadWallpaperActivity a;
     private List<w> b;
-    private c c;
+    private UploadTabContainer c;
     private ProgressBar d;
     private a e;
     private TextView f;
@@ -49,7 +49,7 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
         return (int) ((getContext().getResources().getDisplayMetrics().density * f) + 0.5f);
     }
 
-    public b(Context context) {
+    public UploadCategoryView(Context context) {
         super(context);
         this.k = ACRAConstants.DEFAULT_CONNECTION_TIMEOUT;
         this.p = 0;
@@ -58,7 +58,7 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
         this.s = 0;
     }
 
-    public void a(UploadWallpaperActivity uploadWallpaperActivity, c cVar) {
+    public void a(UploadWallpaperActivity uploadWallpaperActivity, UploadTabContainer cVar) {
         this.c = cVar;
         this.a = uploadWallpaperActivity;
     }
@@ -107,13 +107,13 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.e();
-                    b.this.b = b.this.getCategoryData();
-                    if (b.this.b != null && b.this.b.size() >= 0) {
-                        b.this.g();
-                        b.this.d();
-                        b.this.h();
-                        b.this.invalidate();
+                    UploadCategoryView.this.e();
+                    UploadCategoryView.this.b = UploadCategoryView.this.getCategoryData();
+                    if (UploadCategoryView.this.b != null && UploadCategoryView.this.b.size() >= 0) {
+                        UploadCategoryView.this.g();
+                        UploadCategoryView.this.d();
+                        UploadCategoryView.this.h();
+                        UploadCategoryView.this.invalidate();
                         return;
                     }
                     a.this.a((JSONObject) null, 0, (com.tsf.extend.base.b.A) null);
@@ -126,8 +126,8 @@ public class b extends FrameLayout implements View.OnClickListener, ViewTreeObse
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.e();
-                    b.this.c.setTabIndex(1);
+                    UploadCategoryView.this.e();
+                    UploadCategoryView.this.c.setTabIndex(1);
                 }
             });
         }
