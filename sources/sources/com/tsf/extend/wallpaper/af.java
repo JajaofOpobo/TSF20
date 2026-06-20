@@ -212,7 +212,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+                com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }

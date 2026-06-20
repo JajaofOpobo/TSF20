@@ -11,7 +11,7 @@ import com.tsf.shell.f.e.C;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends j {
+public class a extends BaseRenderable {
     public static float a = 0.15f;
     private j b;
     private j c;

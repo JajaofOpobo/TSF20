@@ -304,7 +304,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
     @Override // com.tsf.extend.base.view.PagerIndicator.a
     public void c(int i) {
-        com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+        com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
         if (dVarA != null) {
             dVarA.b(i + 1);
         }

@@ -237,7 +237,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             if (this.g != ai.HotType) {
                 aj.a(arrayListNewArrayList);
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+            com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.a(mVar.h() + "");
             }
@@ -251,7 +251,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+                com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }

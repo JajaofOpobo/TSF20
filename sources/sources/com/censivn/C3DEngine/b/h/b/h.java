@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends j {
+public class h extends BaseRenderable {
     public static float a = 0.15f;
     private b D;
     private f E;

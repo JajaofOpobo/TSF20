@@ -9,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class C {
+public class HttpDownloader {
 
     public interface a {
         void a();
@@ -19,7 +19,7 @@ public class C {
         boolean b();
     }
 
-    public static int a(String str, String str2, A aVar) {
+    public static int a(String str, String str2, a aVar) {
         InputStream inputStream = null;
         try {
             try {
@@ -80,7 +80,7 @@ public class C {
         return file;
     }
 
-    public static File a(String str, InputStream inputStream, A aVar, int i) throws Throwable {
+    public static File a(String str, InputStream inputStream, a aVar, int i) throws Throwable {
         FileOutputStream fileOutputStream;
         File fileA;
         Exception e;

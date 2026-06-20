@@ -292,7 +292,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
             } else {
                 x.a(getContext(), kVar.k(), "tsf_theme_center_theme");
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+            com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.b(kVar.h() + "");
             }

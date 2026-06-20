@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends j {
+public class e extends BaseRenderable {
     private j a;
     private ArrayList<Number3d> b;
     private d d;

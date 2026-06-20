@@ -136,7 +136,7 @@ public class c {
     }
 
     public float a(int i) {
-        switch (i) {
+        switch (IRenderable) {
             case 1:
                 return this.f;
             case 2:
@@ -162,7 +162,7 @@ public class c {
     }
 
     public float b(int i) {
-        switch (i) {
+        switch (IRenderable) {
             case 1:
                 return this.c;
             case 2:

@@ -12,9 +12,9 @@ import java.io.IOException;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public final class A {
+public final class BinderProxy {
 
-    /* JADX INFO: renamed from: com.tsf.extend.base.A$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.extend.base.BinderProxy$a, reason: collision with other inner class name */
     public static final class C0047a {
         private final String a;
         private final boolean b;

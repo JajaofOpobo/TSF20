@@ -19,7 +19,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends j implements b.a, e.a, A.InterfaceC0113a {
+public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
     private static j Q;
     private static c.a R;
     private Number3d A;

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends j {
+public class b extends BaseRenderable {
     private boolean isAnimationRunning = false;
     private float mMarginDistance = 0.0f;
 

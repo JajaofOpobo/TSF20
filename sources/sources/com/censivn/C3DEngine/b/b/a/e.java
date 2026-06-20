@@ -9,7 +9,7 @@ import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends j {
+public class e extends BaseRenderable {
     public static final float a = com.censivn.C3DEngine.b.b.A.b(400.0f);
     private j d;
     private float i;

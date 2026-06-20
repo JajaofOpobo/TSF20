@@ -1,7 +1,7 @@
 package com.tsf.extend.base;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public interface D {
+public interface ResultCallback {
     void a(int i);
 
     void a(String str);

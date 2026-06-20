@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class B {
+public class PlayStoreHelper {
     private static String a = "";
 
     public static void a(String str) {

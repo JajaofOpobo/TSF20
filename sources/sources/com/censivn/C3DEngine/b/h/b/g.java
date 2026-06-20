@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends j {
+public class g extends BaseRenderable {
     private float d;
     private float e;
     private float f;

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends j {
+public class d extends BaseRenderable {
     public static final float a = com.censivn.C3DEngine.b.b.A.b(400.0f);
     private i d;
     private float i;

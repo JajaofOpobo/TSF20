@@ -128,7 +128,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
         if (view.getTag() instanceof com.tsf.extend.keyboard.KeyboardThemeModel) {
             com.tsf.extend.keyboard.KeyboardThemeModel bVar = (com.tsf.extend.keyboard.KeyboardThemeModel) view.getTag();
-            com.tsf.extend.base.D dVarA = h.a();
+            com.tsf.extend.base.ResultCallback dVarA = h.a();
             if (dVarA != null) {
                 dVarA.c(bVar.a() + "");
             }

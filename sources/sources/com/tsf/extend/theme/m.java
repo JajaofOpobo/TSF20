@@ -356,7 +356,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             }
             if (kVar.x() != 1 && kVar.g().contains("DIY_")) {
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+            com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.b(kVar.h() + "");
             }

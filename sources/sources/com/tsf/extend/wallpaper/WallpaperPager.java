@@ -267,7 +267,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
     public void c(int i) {
         if (this.i != null) {
             this.s = i;
-            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
+            com.tsf.extend.base.ResultCallback dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.a(i + 1);
             }
