@@ -15,9 +15,9 @@ import java.util.Iterator;
 public class DropIndicatorState extends j {
     private j b;
     private ArrayList<C0092c> c;
-    private c d;
-    private b e;
-    private d f;
+    private C0092c d;
+    private DropIndicatorRenderer e;
+    private DropIndicatorConfig f;
     private int h;
     private float a = 0.0f;
     private final int g = 50;
@@ -36,9 +36,9 @@ public class DropIndicatorState extends j {
     public static class C0092c {
         public int a;
         public int b;
-        public a c;
+        public DropIndicatorContainer c;
         public ArrayList<C0092c> d;
-        public c e;
+        public C0092c e;
         public float f;
         public float g;
         public int h;
@@ -63,7 +63,7 @@ public class DropIndicatorState extends j {
             return this.d != null && this.d.size() > 0;
         }
 
-        public void a(d dVar) {
+        public void a(DropIndicatorConfig dVar) {
             if (this.e == null && c()) {
                 this.e = new c(dVar);
                 b bVar = new DropIndicatorRenderer();
@@ -78,7 +78,7 @@ public class DropIndicatorState extends j {
         }
     }
 
-    public DropIndicatorState(d dVar) {
+    public DropIndicatorState(DropIndicatorConfig dVar) {
         this.f = dVar;
     }
 

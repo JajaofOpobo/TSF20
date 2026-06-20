@@ -47,7 +47,7 @@ public class EditModeNode extends j {
         super.dispatchDraw();
     }
 
-    public void a(c cVar) {
+    public void a(EditModeConfig cVar) {
     }
 
     public void t() {

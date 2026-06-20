@@ -25,9 +25,9 @@ public class LassoSelectionHandler {
     private static String i;
     private static ViewGroup.LayoutParams w;
     private ArrayList<com.censivn.C3DEngine.b.f.i> l;
-    private A m;
+    private AlignmentOverlay m;
     private com.censivn.C3DEngine.b.f.i n;
-    private n p;
+    private LassoContextMenu p;
     private float s;
     private float t;
     private com.censivn.C3DEngine.b.f.a.a u;
@@ -39,21 +39,21 @@ public class LassoSelectionHandler {
     private boolean o = false;
     private boolean r = false;
     private boolean v = true;
-    private ArrayList<m> q = new ArrayList<>();
+    private ArrayList<ILassoSelectable> q = new ArrayList<>();
 
     public interface a {
-        void a(m mVar);
+        void a(ILassoSelectable mVar);
 
         void f();
 
-        n l_();
+        LassoContextMenu l_();
     }
 
     static {
         a();
     }
 
-    public void a(A aVar) {
+    public void a(AlignmentOverlay aVar) {
         this.m = aVar;
     }
 
@@ -84,61 +84,61 @@ public class LassoSelectionHandler {
                  */
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (H.d.getPointCount() <= 200) {
-                        if (H.this.j) {
-                            H.this.s = motionEvent.getX();
-                            H.this.t = motionEvent.getY();
-                            H.this.l = com.tsf.shell.manager.app.StateHub.G();
-                            H.this.j = false;
-                            H.this.c(motionEvent);
+                    if (LassoSelectionHandler.d.getPointCount() <= 200) {
+                        if (LassoSelectionHandler.this.j) {
+                            LassoSelectionHandler.this.s = motionEvent.getX();
+                            LassoSelectionHandler.this.t = motionEvent.getY();
+                            LassoSelectionHandler.this.l = com.tsf.shell.manager.app.StateHub.G();
+                            LassoSelectionHandler.this.j = false;
+                            LassoSelectionHandler.this.c(motionEvent);
                             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.1
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    H.d.a(motionEvent.getX(), motionEvent.getY() + 38.0f);
+                                    LassoSelectionHandler.d.a(motionEvent.getX(), motionEvent.getY() + 38.0f);
                                 }
                             });
                         }
-                        if (H.this.p != null && H.this.p.b()) {
-                            H.this.p.a().a(motionEvent, motionEvent2);
+                        if (LassoSelectionHandler.this.p != null && LassoSelectionHandler.this.p.b()) {
+                            LassoSelectionHandler.this.p.a().a(motionEvent, motionEvent2);
                             return;
                         }
                         float x = motionEvent.getX();
                         float y = motionEvent.getY();
                         float x2 = motionEvent2.getX();
                         float y2 = motionEvent2.getY();
-                        if (com.tsf.shell.utils.GraphicsEngineBridge.b(H.this.s, H.this.t, x2, y2) > 10.0f) {
-                            H.this.s = x2;
-                            H.this.t = y2;
-                            H.this.a((float) Math.sqrt(Math.pow(motionEvent.getX() - motionEvent2.getX(), 2.0d) + Math.pow(motionEvent.getY() - motionEvent2.getY(), 2.0d)));
-                            H.this.b(motionEvent, motionEvent2);
+                        if (com.tsf.shell.utils.GraphicsEngineBridge.b(LassoSelectionHandler.this.s, LassoSelectionHandler.this.t, x2, y2) > 10.0f) {
+                            LassoSelectionHandler.this.s = x2;
+                            LassoSelectionHandler.this.t = y2;
+                            LassoSelectionHandler.this.a((float) Math.sqrt(Math.pow(motionEvent.getX() - motionEvent2.getX(), 2.0d) + Math.pow(motionEvent.getY() - motionEvent2.getY(), 2.0d)));
+                            LassoSelectionHandler.this.b(motionEvent, motionEvent2);
                             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.1.2
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    H.d.b(motionEvent2.getX(), motionEvent2.getY());
+                                    LassoSelectionHandler.d.b(motionEvent2.getX(), motionEvent2.getY());
                                 }
                             });
-                            if (!H.this.o || com.tsf.shell.utils.GraphicsEngineBridge.b(x, y, x2, y2) >= 50.0f) {
-                                for (com.censivn.C3DEngine.b.f.i iVar : H.this.l) {
-                                    if ((iVar instanceof m) && iVar != H.this.n) {
-                                        m mVar = (ILassoSelectable) iVar;
-                                        if (!mVar.e_() && mVar.d() && H.this.a(iVar, x, y, x2, y2)) {
+                            if (!LassoSelectionHandler.this.o || com.tsf.shell.utils.GraphicsEngineBridge.b(x, y, x2, y2) >= 50.0f) {
+                                for (com.censivn.C3DEngine.b.f.i iVar : LassoSelectionHandler.this.l) {
+                                    if ((iVar instanceof ILassoSelectable) && iVar != LassoSelectionHandler.this.n) {
+                                        ILassoSelectable mVar = (ILassoSelectable) iVar;
+                                        if (!mVar.e_() && mVar.d() && LassoSelectionHandler.this.a(iVar, x, y, x2, y2)) {
                                             mVar.b(true);
-                                            H.this.m.a(mVar);
-                                            H.this.o = true;
-                                            H.this.q.add(mVar);
+                                            LassoSelectionHandler.this.m.a(mVar);
+                                            LassoSelectionHandler.this.o = true;
+                                            LassoSelectionHandler.this.q.add(mVar);
                                         }
                                     }
                                 }
                                 return;
                             }
-                            H.this.b((MotionEvent) null);
+                            LassoSelectionHandler.this.b((MotionEvent) null);
                             return;
                         }
                         return;
                     }
-                    H.this.a((MotionEvent) null);
-                    H.this.k = true;
-                    com.tsf.shell.ShellThemeProvider.a(H.i);
+                    LassoSelectionHandler.this.a((MotionEvent) null);
+                    LassoSelectionHandler.this.k = true;
+                    com.tsf.shell.ShellThemeProvider.a(LassoSelectionHandler.i);
                 }
             });
         }
@@ -180,7 +180,7 @@ public class LassoSelectionHandler {
 
     private void g() {
         jadx();
-        Iterator<m> it = this.q.iterator();
+        Iterator<ILassoSelectable> it = this.q.iterator();
         while (it.hasNext()) {
             it.next().b(false);
         }
@@ -244,8 +244,8 @@ public class LassoSelectionHandler {
             com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    H.d.a();
-                    H.k();
+                    LassoSelectionHandler.d.a();
+                    LassoSelectionHandler.k();
                 }
             });
             if (e.parent() != null) {
@@ -306,8 +306,8 @@ public class LassoSelectionHandler {
         DynamicThemeRunnable dynamicThemeRunnable = new DynamicThemeRunnable() { // from class: com.tsf.shell.f.e.h.3
             @Override // com.tsf.shell.theme.inside.mix.menu.DynamicThemeRunnable, com.tsf.shell.theme.inside.ThemeMixElementManager.DynamicThemeElement
             public void onReloadTheme(ThemeDescription themeDescription) {
-                H.d.a(themeDescription.shell.lassoLineColor);
-                H.a.set(themeDescription.shell.lassoSelectColor);
+                LassoSelectionHandler.d.a(themeDescription.shell.lassoLineColor);
+                LassoSelectionHandler.a.set(themeDescription.shell.lassoSelectColor);
             }
         };
         a.set(ThemeManager.mix.lasso.getTheme().shell.lassoSelectColor);
@@ -329,7 +329,7 @@ public class LassoSelectionHandler {
         com.censivn.C3DEngine.A.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.4
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.TaskScheduler.a(H.d, H.w);
+                com.tsf.shell.manager.app.TaskScheduler.a(LassoSelectionHandler.d, LassoSelectionHandler.w);
             }
         });
     }

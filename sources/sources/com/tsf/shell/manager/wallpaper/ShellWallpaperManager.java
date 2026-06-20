@@ -18,6 +18,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.j;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.WorkspacePage;
+import com.tsf.shell.manager.app.StateHub;
+import com.tsf.shell.manager.app.WidgetPanelController;
 import com.tsf.shell.plugin.themepicker.ThemePickerRenderer;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 import java.util.ArrayList;

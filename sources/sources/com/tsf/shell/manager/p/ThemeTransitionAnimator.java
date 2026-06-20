@@ -9,7 +9,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeTransitionAnimator {
-    private b a;
+    private GestureTipElement a;
     private float b = 300.0f;
     private float c = 36.0f;
     private float d = com.censivn.C3DEngine.b.b.A.a(200.0f);

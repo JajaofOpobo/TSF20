@@ -255,31 +255,31 @@ public class ContactModel {
     }
 
     public static class c extends b {
-        public c(String str, String str2, a aVar) {
+        public c(String str, String str2, ContactModel aVar) {
             super(str, str2, aVar);
         }
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.c.a.a.ContactModel$a, reason: collision with other inner class name */
     public static class C0126a extends b {
-        public C0126a(String str, String str2, a aVar) {
+        public C0126a(String str, String str2, ContactModel aVar) {
             super(str, str2, aVar);
         }
     }
 
     public static class b {
-        public d a;
-        public a b;
+        public SceneDecorNode a;
+        public ContactModel b;
         public String c;
         public String d;
 
-        public b(String str, String str2, a aVar) {
+        public b(String str, String str2, ContactModel aVar) {
             this.b = aVar;
             this.c = str;
             this.d = str2;
         }
 
-        public void a(d dVar) {
+        public void a(SceneDecorNode dVar) {
             this.a = dVar;
         }
 
@@ -302,7 +302,7 @@ public class ContactModel {
             return this.c;
         }
 
-        public d e() {
+        public SceneDecorNode e() {
             return this.a;
         }
 

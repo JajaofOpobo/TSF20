@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DropIndicatorContainer extends j {
-    private b a = new DropIndicatorRenderer();
+    private DropIndicatorRenderer a = new DropIndicatorRenderer();
 
     public DropIndicatorContainer() {
         addChild(this.a);

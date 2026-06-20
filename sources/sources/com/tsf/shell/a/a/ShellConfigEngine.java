@@ -8,7 +8,7 @@ import android.os.Build;
 import android.provider.Settings;
 import android.view.KeyEvent;
 import com.b.a.A;
-import com.tsf.shell.ShellCallbackDispatcher.a.c;
+import com.tsf.shell.a.a.ShellThemeEngine;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellConfigEngine {

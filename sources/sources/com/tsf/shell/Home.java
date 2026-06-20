@@ -25,7 +25,9 @@ import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.b.c.a;
 import com.flurry.android.FlurryAgent;
 import com.tsf.b;
-import com.tsf.shell.ShellCallbackDispatcher.a.ShellLayoutEngine;
+import com.tsf.shell.a.a.ShellLayoutEngine;
+import com.tsf.shell.a.a.ShellContentManager;
+import com.tsf.shell.a.a.ShellConfigEngine;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 import com.tsf.shell.plugin.notice.NoticeStateProvider;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -47,9 +49,9 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     private com.tsf.shell.e.Workspace3D g;
     private boolean k;
     private com.tsf.shell.f.ShellSurfaceConfig n;
-    private D o;
+    private ShellDataProvider o;
     private Locale p;
-    private com.tsf.shell.ShellCallbackDispatcher.a.a r;
+    private ShellContentManager r;
     private final BroadcastReceiver d = new A();
     private final int[] h = new int[2];
     private SpannableStringBuilder i = null;
@@ -172,7 +174,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         }
         super.onCreate(bundle);
         if (this.s) {
-            this.r = new com.tsf.shell.ShellCallbackDispatcher.a.a(this);
+            this.r = new ShellContentManager(this);
             if (z) {
                 c();
             } else {
@@ -798,7 +800,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         super.onRequestPermissionsResult(i, strArr, iArr);
         if (this.r != null) {
             this.r.a(65535 & i, strArr, iArr);
-            com.tsf.shell.ShellCallbackDispatcher.a.e.a(this);
+            ShellConfigEngine.a(this);
         }
     }
 

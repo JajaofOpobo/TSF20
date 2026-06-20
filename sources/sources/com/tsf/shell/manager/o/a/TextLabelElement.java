@@ -17,9 +17,9 @@ public class TextLabelElement {
     private com.tsf.shell.manager.o.ButtonMetrics e;
     private k f = new k(0.0f, 0.0f, false);
     private TextureElement g = new TextureElement(0, false);
-    private c.a h;
+    private LabelManager.a h;
 
-    public Object b(int i, c.a aVar) {
+    public Object b(int i, LabelManager.a aVar) {
         this.b = i;
         this.h = aVar;
         this.f.textures().addElement(this.g);

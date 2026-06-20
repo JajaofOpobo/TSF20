@@ -16,7 +16,7 @@ public class d extends b.d {
     private b b;
     private com.censivn.C3DEngine.b.d.a c;
     private com.censivn.C3DEngine.b.d.a d;
-    private com.tsf.shell.f.i.a.a e;
+    private com.tsf.shell.f.i.a.WallpaperTouchHandler e;
     private MotionEvent f;
     private MotionEvent g;
     private View.OnTouchListener j;
@@ -107,11 +107,11 @@ public class d extends b.d {
         return this.i;
     }
 
-    public com.tsf.shell.f.i.a.a c() {
+    public com.tsf.shell.f.i.a.WallpaperTouchHandler c() {
         return this.e;
     }
 
-    public void a(com.tsf.shell.f.i.a.a aVar) {
+    public void a(com.tsf.shell.f.i.a.WallpaperTouchHandler aVar) {
         this.e = aVar;
         this.c = aVar;
     }

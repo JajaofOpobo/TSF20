@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.Uv;
 import com.censivn.C3DEngine.b.f.j;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;

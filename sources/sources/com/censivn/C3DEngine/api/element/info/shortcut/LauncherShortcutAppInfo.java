@@ -2,9 +2,12 @@ package com.censivn.C3DEngine.api.element.info.shortcut;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.f.i.b.e.g;
-import com.tsf.shell.manager.A;
+import com.tsf.shell.f.i.b.e.DrawerItemVisual;
+import com.tsf.shell.manager.GlobalServiceLocator;
 import com.tsf.shell.manager.app.LauncherAppInfo;
+import com.tsf.shell.manager.o.ButtonMetrics;
+import com.tsf.shell.f.i.PageItem;
+import com.tsf.shell.manager.r.c.IconRenderer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
@@ -15,8 +18,8 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public void applicationOnClick() {
         this.clickCount++;
-        A.w.h_().a(this, 32);
-        A.w.a().a().a(this);
+        GlobalServiceLocator.w.h_().a(this, 32);
+        GlobalServiceLocator.w.a().a().a(this);
     }
 
     public LauncherShortcutAppInfo() {
@@ -25,29 +28,29 @@ public class LauncherShortcutAppInfo extends LauncherShortcut3DInfo {
 
     public void reloadTexture() {
         if (this.texture.id != 0 && getWidget() != null) {
-            com.censivn.C3DEngine.A.g().a(this.texture, com.tsf.shell.manager.r.c.A.a(this, ((g) getWidget()).n, ((g) getWidget()).bd()));
+            com.censivn.C3DEngine.A.g().a(this.texture, IconRenderer.a(this, ((DrawerItemVisual) getWidget()).n, ((DrawerItemVisual) getWidget()).bd()));
         }
         if (getWidget() != null) {
-            ((com.tsf.shell.f.i.B) getWidget()).C();
+            ((PageItem) getWidget()).C();
         }
     }
 
-    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, com.tsf.shell.manager.o.A aVar, LauncherAppInfo fVar) {
+    public static TextureElement getTexture(LauncherShortcutAppInfo launcherShortcutAppInfo, ButtonMetrics aVar, LauncherAppInfo fVar) {
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.isCustomTexture()) {
-            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture, com.tsf.shell.manager.r.c.A.a(launcherShortcutAppInfo, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture, IconRenderer.a(launcherShortcutAppInfo, aVar, fVar));
             return launcherShortcutAppInfo.texture;
         }
         if (launcherShortcutAppInfo != null && launcherShortcutAppInfo.texture.id != 0) {
             com.censivn.C3DEngine.A.g().a(launcherShortcutAppInfo.texture);
         }
         if (fVar.d.id == 0) {
-            com.censivn.C3DEngine.A.g().a(fVar.d, com.tsf.shell.manager.r.c.A.a(null, aVar, fVar));
+            com.censivn.C3DEngine.A.g().a(fVar.d, IconRenderer.a(null, aVar, fVar));
         }
         return fVar.d;
     }
 
     @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo
     public Bitmap getIconBitmap() {
-        return com.tsf.shell.manager.r.c.A.a((LauncherShortcutAppInfo) ((com.tsf.shell.f.i.B) getWidget()).K(), ((g) getWidget()).n, ((g) getWidget()).bd());
+        return IconRenderer.a((LauncherShortcutAppInfo) ((PageItem) getWidget()).K(), ((DrawerItemVisual) getWidget()).n, ((DrawerItemVisual) getWidget()).bd());
     }
 }

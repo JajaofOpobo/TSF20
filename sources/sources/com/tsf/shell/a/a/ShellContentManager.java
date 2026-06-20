@@ -10,9 +10,9 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.shell.ShellCallbackDispatcher.a.b;
-import com.tsf.shell.ShellCallbackDispatcher.a.c;
-import com.tsf.shell.ShellCallbackDispatcher.a.d;
+import com.tsf.shell.a.a.ShellPageManager;
+import com.tsf.shell.a.a.ShellThemeEngine;
+import com.tsf.shell.a.a.ShellLayoutEngine;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -20,9 +20,9 @@ import java.util.Set;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellContentManager {
-    public static LinkedHashMap<Integer, com.tsf.shell.ShellCallbackDispatcher.a.b> a = new LinkedHashMap<>();
-    private com.tsf.shell.ShellCallbackDispatcher.a.c b;
-    private com.tsf.shell.ShellCallbackDispatcher.a.c c;
+    public static LinkedHashMap<Integer, ShellPageManager> a = new LinkedHashMap<>();
+    private ShellThemeEngine b;
+    private ShellThemeEngine c;
     private Activity f;
     private boolean m;
     private int n;
@@ -118,7 +118,7 @@ public class ShellContentManager {
         this.m = true;
         this.n = i;
         List<String> listB = ShellLayoutEngine.b(this.f, strArr);
-        com.tsf.shell.ShellCallbackDispatcher.a.b bVarB = b(i, listB);
+        ShellPageManager bVarB = b(i, listB);
         boolean z2 = bVarB != null && bVarB.c() > 1;
         this.h = true;
         this.g = cVar;
@@ -217,8 +217,8 @@ public class ShellContentManager {
         if (this.c != null && this.c.isShowing()) {
             this.c.dismiss();
         }
-        this.c = new com.tsf.shell.ShellCallbackDispatcher.a.c(this.f);
-        com.tsf.shell.ShellCallbackDispatcher.a.b bVarB = b(i, list);
+        this.c = new ShellThemeEngine(this.f);
+        ShellPageManager bVarB = b(i, list);
         if (bVarB != null) {
             this.c.a(8);
             this.c.a(i, bVarB.a(), this.f.getString(bVarB.b()), new DialogInterface.OnClickListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.1
@@ -238,7 +238,7 @@ public class ShellContentManager {
             this.b.dismiss();
         }
         this.g = ShellThemeEngine.SHOW_NOTHING;
-        this.b = new com.tsf.shell.ShellCallbackDispatcher.a.c(this.f);
+        this.b = new ShellThemeEngine(this.f);
         this.b.setContentView(a.c.permission_guide_dialog_no_bg);
         if (b(i, list) != null) {
             String strE = e(i, list);
@@ -251,7 +251,7 @@ public class ShellContentManager {
                 }
             });
             this.b.a(new ShellThemeEngine.a() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.3
-                @Override // com.tsf.shell.ShellCallbackDispatcher.a.c.a
+                @Override // ShellThemeEngine.a
                 public boolean a(DialogInterface dialogInterface, int i2, KeyEvent keyEvent) {
                     if (keyEvent.getKeyCode() != 4 || keyEvent.getAction() == 1) {
                     }
@@ -264,7 +264,7 @@ public class ShellContentManager {
                     if (i2 == -1) {
                         a.this.b.dismiss();
                         if (z) {
-                            com.tsf.shell.ShellCallbackDispatcher.b.a.a(a.this.f, i | 1);
+                            ShellGestureHandler.a(a.this.f, i | 1);
                             a.this.e = strArr;
                             return;
                         }
@@ -293,12 +293,12 @@ public class ShellContentManager {
         }
     }
 
-    private com.tsf.shell.ShellCallbackDispatcher.a.b b(int i, List<String> list) {
+    private ShellPageManager b(int i, List<String> list) {
         return a.get(Integer.valueOf(g(i, list)));
     }
 
     private StringBuilder c(int i, List<String> list) {
-        com.tsf.shell.ShellCallbackDispatcher.a.b bVar;
+        ShellPageManager bVar;
         int iG = g(i, list);
         Set<Integer> setKeySet = a.keySet();
         StringBuilder sb = new StringBuilder();
@@ -325,7 +325,7 @@ public class ShellContentManager {
     }
 
     private String f(int i, List<String> list) {
-        com.tsf.shell.ShellCallbackDispatcher.a.b bVar;
+        ShellPageManager bVar;
         int iG = g(i, list);
         if (iG == 0) {
             return "";

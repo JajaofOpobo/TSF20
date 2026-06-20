@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.f.i.b.e.b;
 import com.tsf.shell.manager.o.A;
 import com.tsf.shell.utils.q;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {

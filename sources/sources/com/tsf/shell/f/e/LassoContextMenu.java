@@ -25,7 +25,7 @@ public class LassoContextMenu implements b.a {
     private static com.censivn.C3DEngine.b.f.a.a e;
     private static com.censivn.C3DEngine.b.f.a.a f;
     private static com.censivn.C3DEngine.b.d.a j;
-    private static n k;
+    private static LassoContextMenu k;
     private static com.censivn.C3DEngine.b.g._b.b l;
     private static int n;
     private static int o;
@@ -37,7 +37,7 @@ public class LassoContextMenu implements b.a {
     private static TextureElement B;
     private com.censivn.C3DEngine.b.f.j p;
     private a q;
-    private H r;
+    private LassoSelectionHandler r;
     private boolean s = false;
     private static int g = 5;
     private static int h = 360 / g;
@@ -81,7 +81,7 @@ public class LassoContextMenu implements b.a {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.LassoContextMenu.1
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
-                    n.this.e();
+                    LassoContextMenu.this.e();
                 }
             };
             dVar.a(255);
@@ -159,7 +159,7 @@ public class LassoContextMenu implements b.a {
                         com.censivn.C3DEngine.A.g().a(com.tsf.shell.f.e.LassoContextMenu.b);
                         TextureElement unused = com.tsf.shell.f.e.LassoContextMenu.b = null;
                     }
-                    n.this.o();
+                    LassoContextMenu.this.o();
                 }
             });
             l = new com.censivn.C3DEngine.b.g._b.b();
@@ -475,7 +475,7 @@ public class LassoContextMenu implements b.a {
         }
     }
 
-    public void a(H hVar) {
+    public void a(LassoSelectionHandler hVar) {
         this.r = hVar;
     }
 

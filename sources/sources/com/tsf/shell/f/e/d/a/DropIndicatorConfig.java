@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class DropIndicatorConfig {
     private j d;
     private boolean b = false;
-    private c c = new DropIndicatorState(this);
-    private a a = new DropIndicatorContainer() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.1
+    private DropIndicatorState c = new DropIndicatorState(this);
+    private DropIndicatorContainer a = new DropIndicatorContainer() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.1
         @Override // com.tsf.shell.f.e.d.a.DropIndicatorContainer
         public void a() {
             if (d.this.b) {

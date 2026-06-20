@@ -23,10 +23,10 @@ public class ActionSelectorAdapter {
     public ArrayList<HashMap<String, Object>> b = new ArrayList<>();
     public ArrayList<HashMap<String, Object>> c = new ArrayList<>();
     public ArrayList<HashMap<String, Object>> d = new ArrayList<>();
-    public com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter e;
-    public com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter f;
-    public com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter g;
-    public com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter h;
+    public com.tsf.shell.activity.actionselector.ActionSelectorAdapter e;
+    public com.tsf.shell.activity.actionselector.ActionSelectorAdapter f;
+    public com.tsf.shell.activity.actionselector.ActionSelectorAdapter g;
+    public com.tsf.shell.activity.actionselector.ActionSelectorAdapter h;
     public ActionSelector i;
     public Handler j;
     private Handler k;
@@ -221,14 +221,14 @@ public class ActionSelectorAdapter {
             a(context);
             d(context);
             c(context);
-            this.e = new com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter(context, this.b, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
-            this.f = new com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter(context, this.a, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
-            this.g = new com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter(context, this.c, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
-            this.h = new com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter(context, this.d, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
+            this.e = new com.tsf.shell.activity.actionselector.ActionSelectorAdapter(context, this.b, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
+            this.f = new com.tsf.shell.activity.actionselector.ActionSelectorAdapter(context, this.a, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
+            this.g = new com.tsf.shell.activity.actionselector.ActionSelectorAdapter(context, this.c, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
+            this.h = new com.tsf.shell.activity.actionselector.ActionSelectorAdapter(context, this.d, b.g.action_selector_lists, new String[]{"icon", "appName"}, new int[]{b.e.icon, b.e.appName});
         }
     }
 
-    public com.tsf.shell.ShellCallbackDispatcher.activity.actionselector.ActionSelectorAdapter a(int i) {
+    public com.tsf.shell.activity.actionselector.ActionSelectorAdapter a(int i) {
         switch (i) {
             case 0:
                 return this.f;

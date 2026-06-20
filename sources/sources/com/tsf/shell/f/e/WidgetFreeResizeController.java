@@ -15,12 +15,12 @@ import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEngine.b.c.b.a {
-    private static t a;
+    private static WidgetFreeResizeController a;
     private static C b;
     private static com.tsf.shell.f.i.b.b.ItemShell c;
-    private static com.tsf.shell.e.CellLayout.b d;
+    private static com.tsf.shell.e.CellLayout.WidgetContainer d;
     private static boolean e = false;
-    private static B f;
+    private static WidgetResizeResources f;
 
     public static class b {
         public void a() {
@@ -32,7 +32,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
     }
 
     public static void b() {
-        a = new t();
+        a = new WidgetFreeResizeController();
         b = new SpringEasing(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
         a.addChild(WidgetResizeResources);
     }
@@ -41,7 +41,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         a(aVar, (WidgetResizeResources) null);
     }
 
-    public static void a(com.tsf.shell.f.i.b.b.ItemShell aVar, B bVar) {
+    public static void a(com.tsf.shell.f.i.b.b.ItemShell aVar, WidgetResizeResources bVar) {
         e = true;
         f = bVar;
         c = aVar;
@@ -110,7 +110,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         private int e;
         private DynamicTextureElement f;
         private C g;
-        private t h;
+        private WidgetFreeResizeController h;
         private com.censivn.C3DEngine.b.f.k i;
         private com.censivn.C3DEngine.b.f.k j;
         private com.censivn.C3DEngine.b.f.k k;
@@ -124,7 +124,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         private float s;
         private int[] t;
 
-        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar, t tVar) {
+        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar, WidgetFreeResizeController tVar) {
             super(f, f2, bVar);
             this.o = 3;
             this.t = new int[4];

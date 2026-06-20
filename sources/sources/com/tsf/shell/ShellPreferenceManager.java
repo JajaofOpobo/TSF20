@@ -19,7 +19,7 @@ public class ShellPreferenceManager extends View {
     private float f;
     private float g;
 
-    publShellPreferenceManagerc i(Context context, int i) {
+    public ShellPreferenceManager(Context context, int i) {
         super(context);
         this.a = new Paint(1);
         this.a.setStyle(Paint.Style.STROKE);

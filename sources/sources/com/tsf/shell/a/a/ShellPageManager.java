@@ -60,4 +60,12 @@ public class ShellPageManager {
     public String e() {
         return this.e;
     }
+
+    public static class b {
+        int a;
+        int b;
+        int c = 1;
+        int d;
+        String e;
+    }
 }

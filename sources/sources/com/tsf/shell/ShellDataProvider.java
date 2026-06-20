@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellDataProvider {
-    private static D a;
+    private static ShellDataProvider a;
     private LinkedList<Runnable> b = new LinkedList<>();
     private MessageQueue c = Looper.myQueue();
     private B d = new B(this, null);
@@ -19,7 +19,7 @@ public class ShellDataProvider {
         private B() {
         }
 
-        /* synthetic */ B(D dVar, AnonymousClass1 anonymousClass1) {
+        /* synthetic */ B(ShellDataProvider dVar, AnonymousClass1 anonymousClass1) {
             this();
         }
 
@@ -51,7 +51,7 @@ public class ShellDataProvider {
         }
     }
 
-    public static D a() {
+    public static ShellDataProvider a() {
         if (a == null) {
             a = new D();
         }

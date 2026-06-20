@@ -11,7 +11,7 @@ public class ObserverManager {
     private AppListModel c;
     private ArrayList<com.tsf.shell.f.i.b.e.DrawerItemVisual> a = new ArrayList<>();
     private ArrayList<a> b = new ArrayList<>();
-    private c.a d = new c.a() { // from class: com.tsf.shell.manager.app.ObserverManager.1
+    private AppListModel.a d = new AppListModel.a() { // from class: com.tsf.shell.manager.app.ObserverManager.1
         @Override // com.tsf.shell.manager.app.AppListModel.a
         public void a() {
             b.this.b();

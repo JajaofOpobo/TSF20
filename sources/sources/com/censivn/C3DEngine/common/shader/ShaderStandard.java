@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.common.shader;
 
 import android.opengl.GLES20;
 import com.tsf.shell.utils.s;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShaderStandard extends Shader {

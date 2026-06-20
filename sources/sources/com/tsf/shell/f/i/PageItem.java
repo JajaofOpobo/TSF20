@@ -53,7 +53,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         }
     }
 
-    public String c() {
+    public String getDefaultString() {
         return "";
     }
 
@@ -129,9 +129,9 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
 
-    public g z() {
-        if (A() != null && (A().b() instanceof g)) {
-            return (g) A().b();
+    public com.censivn.C3DEngine.b.f.g z() {
+        if (A() != null && (A().b() instanceof com.censivn.C3DEngine.b.f.g)) {
+            return (com.censivn.C3DEngine.b.f.g) A().b();
         }
         return null;
     }
@@ -277,7 +277,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         this.a = itemInfo;
     }
 
-    public ItemInfo c() {
+    public ItemInfo getItemInfo() {
         return this.a;
     }
 
@@ -506,38 +506,38 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public F n() {
+    public ILayoutItem n() {
         return this.j;
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean a(F fVar, float f, float f2) {
+    public boolean a(ILayoutItem fVar, float f, float f2) {
         return false;
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void c(F fVar) {
+    public void c(ILayoutItem fVar) {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void e(F fVar) {
+    public void e(ILayoutItem fVar) {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean b(F fVar) {
+    public boolean b(ILayoutItem fVar) {
         return true;
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void d(F fVar) {
+    public void d(ILayoutItem fVar) {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void a(F fVar) {
+    public void a(ILayoutItem fVar) {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void f(F fVar) {
+    public void f(ILayoutItem fVar) {
         if (this.j != fVar) {
             ItemInfo();
             fVar.a(this);
@@ -547,7 +547,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean h(F fVar) {
+    public boolean h(ILayoutItem fVar) {
         if (fVar == null) {
             return false;
         }
@@ -555,7 +555,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void g(F fVar) {
+    public void g(ILayoutItem fVar) {
         f(fVar);
         fVar.e(this);
         this.j = null;
@@ -574,22 +574,22 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
     }
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public F a(int i, int i2) {
+    public ILayoutItem a(int i, int i2) {
         return a(i, i2, true);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public F a(int i, int i2, boolean z) {
+    public ILayoutItem a(int i, int i2, boolean z) {
         float f;
         float f2;
         float f3;
         float f4;
-        ArrayList<F> arrayListA = com.tsf.shell.manager.app.StateManager.a();
+        ArrayList<ILayoutItem> arrayListA = com.tsf.shell.manager.app.StateManager.a();
         int size = arrayListA.size() - 1;
         while (true) {
             int i3 = size;
             if (i3 > -1) {
-                F fVar = arrayListA.get(i3);
+                ILayoutItem fVar = arrayListA.get(i3);
                 if (fVar.a()) {
                     if (fVar.m() == 0) {
                         f3 = i;

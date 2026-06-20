@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.b.f;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class m extends j {
@@ -15,7 +15,7 @@ public class m extends j {
     private float j = 0.0f;
     private float k = 0.0f;
     private k a = new k(0.0f, 0.0f);
-    private com.tsf.shell.manager.o.a.a b = new com.tsf.shell.manager.o.a.a();
+    private com.tsf.shell.manager.o.a.TextConfig b = new com.tsf.shell.manager.o.a.TextConfig();
     private TextureElement c = new TextureElement(0, false);
 
     public m() {

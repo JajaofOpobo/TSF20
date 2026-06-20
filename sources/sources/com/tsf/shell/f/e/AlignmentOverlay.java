@@ -20,8 +20,8 @@ public class AlignmentOverlay {
     private static int i;
     private static com.tsf.shell.f.i.PageItem j;
     private static com.censivn.C3DEngine.b.c.b.a k;
-    private static q l;
-    private static g m;
+    private static AlignmentResizeListener l;
+    private static AlignmentBackKeyHandler m;
     private static com.tsf.shell.f.i.PageItem n;
     private static com.tsf.shell.f.i.PageItem o;
     private static ArrayList<com.censivn.C3DEngine.b.f.i> p;
@@ -175,7 +175,7 @@ public class AlignmentOverlay {
         c.a(com.censivn.C3DEngine.b.b.A.G);
     }
 
-    public void a(m mVar) {}
-    public n l_() { return null; }
+    public void a(ILassoSelectable mVar) {}
+    public LassoContextMenu l_() { return null; }
     public void f() {}
 }

@@ -6,7 +6,8 @@ import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.k;
 import com.censivn.C3DEngine.b.f.m;
-import com.tsf.shell.utils.x;
+import com.tsf.shell.f.e.SelectionFrame;
+import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -15,12 +16,12 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
     private m b;
     private k c;
     private f d;
-    private com.tsf.shell.f.e.I e;
+    private SelectionFrame e;
     private d f;
     private boolean h;
     private boolean g = false;
     private ArrayList<d> i = new ArrayList<>();
-    private com.tsf.shell.f.e.I a = new com.tsf.shell.f.e.I();
+    private SelectionFrame a = new SelectionFrame();
 
     public c() {
         this.a.b(1);
