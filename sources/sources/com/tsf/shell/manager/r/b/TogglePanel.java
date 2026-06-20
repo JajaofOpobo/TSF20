@@ -18,7 +18,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         super(str);
         this.a = aVar;
         this.c = com.tsf.shell.manager.app.FolderManager.c;
-        this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.U) { // from class: com.tsf.shell.manager.r.b.TogglePanel.1
+        this.b = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.T, (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.U) { // from class: com.tsf.shell.manager.r.b.TogglePanel.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
             }

@@ -38,14 +38,14 @@ public class FolderItemSorter {
         }
     };
     private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.2
-        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4 && FolderItemSorter.this.t) {
                 FolderItemSorter.this.b();
             }
         }
 
-        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void b(int i, KeyEvent keyEvent) {
         }
     };
@@ -243,8 +243,8 @@ public class FolderItemSorter {
                     }
                     FolderItemSorter.this.i = FolderItemSorter.this.h;
                     Number3d number3dLocalToGlobal = FolderItemSorter.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
-                    FolderItemSorter.this.j = (int) (com.censivn.C3DEngine.b.b.A.H + number3dLocalToGlobal.x);
-                    FolderItemSorter.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
+                    FolderItemSorter.this.j = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.H + number3dLocalToGlobal.x);
+                    FolderItemSorter.this.k = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.I - number3dLocalToGlobal.y);
                     FolderItemSorter.this.l = motionEvent2.getX();
                     FolderItemSorter.this.m = motionEvent2.getY();
                     Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = FolderItemSorter.this.d.children().iterator();

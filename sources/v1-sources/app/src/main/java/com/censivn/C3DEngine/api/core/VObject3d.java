@@ -246,11 +246,11 @@ public class VObject3d implements VTweenTarget {
         this.vTarget.p.a(f - f5, f2 - f6);
         this.vTarget.q.a(f - f7, f2 - f8);
         this.vTarget.r.a(f - f9, f2 - f10);
-        float a = com.censivn.C3DEngine.b.a.a.a(this.vTarget.o, this.vTarget.p);
-        float a2 = com.censivn.C3DEngine.b.a.a.a(this.vTarget.p, this.vTarget.q);
-        float a3 = com.censivn.C3DEngine.b.a.a.a(this.vTarget.q, this.vTarget.o);
+        float a = com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.o, this.vTarget.p);
+        float a2 = com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.p, this.vTarget.q);
+        float a3 = com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.q, this.vTarget.o);
         if (a >= 0.0f || a2 >= 0.0f || a3 >= 0.0f) {
-            return com.censivn.C3DEngine.b.a.a.a(this.vTarget.p, this.vTarget.q) > 0.0f && com.censivn.C3DEngine.b.a.a.a(this.vTarget.q, this.vTarget.r) > 0.0f && com.censivn.C3DEngine.b.a.a.a(this.vTarget.r, this.vTarget.p) > 0.0f;
+            return com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.p, this.vTarget.q) > 0.0f && com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.q, this.vTarget.r) > 0.0f && com.censivn.C3DEngine.b.a.MeshData.a(this.vTarget.r, this.vTarget.p) > 0.0f;
         }
         return true;
     }

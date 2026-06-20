@@ -4,7 +4,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.d;
+import com.censivn.C3DEngine.b.c.AnimationListener;
 import com.tsf.extend.theme.x;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.shell.Home;
@@ -33,7 +33,7 @@ public class ActionManager {
 
     public Object b() {
         com.tsf.shell.manager.app.CallbackHandler.a(new d.a() { // from class: com.tsf.shell.manager.action.ActionManager.1
-            @Override // com.censivn.C3DEngine.b.c.d.a
+            @Override // com.censivn.C3DEngine.b.c.AnimationListener.a
             public void a() {
                 if (b.this.b_ != 0) {
                     b.this.a(b.this.b_);

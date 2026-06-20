@@ -54,7 +54,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
             bVar.f(DrawerMenuPanel.this.h);
         }
     };
-    private float q = 12.0f * com.censivn.C3DEngine.b.b.A.b;
+    private float q = 12.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b;
     private i o = new GridRenderable(128.0f, 128.0f);
 
     public DrawerMenuPanel(f fVar) {

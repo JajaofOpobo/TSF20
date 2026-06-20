@@ -31,7 +31,7 @@ public class FolderTransitionE extends FolderPageTransitionBase {
                 com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 if (z) {
                     dVar3.f(0.0f);
-                    dVar3.h(com.censivn.C3DEngine.b.b.A.B);
+                    dVar3.h(com.censivn.C3DEngine.b.b.ScreenConstants.B);
                     dVar3.a(0);
                     if (this.c) {
                         dVar3.d(a(50));
@@ -42,7 +42,7 @@ public class FolderTransitionE extends FolderPageTransitionBase {
                     dVar = dVar3;
                 } else {
                     iVar.position().x = 0.0f;
-                    iVar.position().y = com.censivn.C3DEngine.b.b.A.B;
+                    iVar.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B;
                     iVar.alpha(0.0f);
                     if (this.c) {
                         iVar.rotation().x = a(50);
@@ -67,7 +67,7 @@ public class FolderTransitionE extends FolderPageTransitionBase {
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.TweenParams dVar = null;
-        float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         for (int i = 0; i < aVar.a(); i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.TweenParams();

@@ -92,7 +92,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         this.e = c0095a2;
         arrayList.add(this.d);
         arrayList.add(this.e);
-        a(aVar, arrayList, 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
+        a(aVar, arrayList, 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f));
         b((C.a) this.k);
     }
 

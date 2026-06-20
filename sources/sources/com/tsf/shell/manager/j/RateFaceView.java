@@ -11,8 +11,8 @@ import com.tsf.shell.f.e.SelectionFrame;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RateFaceView extends BaseRenderable {
-    private static final int a = com.censivn.C3DEngine.b.b.A.b(72.0f);
-    private static final int l = com.censivn.C3DEngine.b.b.A.b(15.0f);
+    private static final int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(72.0f);
+    private static final int l = com.censivn.C3DEngine.b.b.ScreenConstants.b(15.0f);
     private static final int m = (a / 2) + l;
     private GridRenderable d;
     private GridRenderable e;
@@ -71,7 +71,7 @@ public class RateFaceView extends BaseRenderable {
 
     public void a() {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.h(com.censivn.C3DEngine.b.b.A.a(-20.0f));
+        dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(-20.0f));
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar);
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.1
@@ -100,7 +100,7 @@ public class RateFaceView extends BaseRenderable {
                 com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
-        dVar3.h(com.censivn.C3DEngine.b.b.A.a(25.0f));
+        dVar3.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f));
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, VEasing.Linear.easeNone, dVar3);
     }

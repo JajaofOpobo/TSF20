@@ -24,7 +24,7 @@ public class DrawerContentList extends DrawerPageItemBase {
     private float r;
     private Number3d s;
     private float[] t;
-    private com.censivn.C3DEngine.b.d.a u;
+    private com.censivn.C3DEngine.b.d.MouseEventListener u;
     private int v;
     private boolean w;
     private com.censivn.C3DEngine.b.f.BaseRenderable x;
@@ -34,7 +34,7 @@ public class DrawerContentList extends DrawerPageItemBase {
     public static class a extends com.censivn.C3DEngine.b.f.BaseRenderable {
         public a() {
             visible(false);
-            position().y = -com.censivn.C3DEngine.b.b.A.a(150.0f);
+            position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
             alpha(0.0f);
         }
 
@@ -58,7 +58,7 @@ public class DrawerContentList extends DrawerPageItemBase {
                 }
             };
             dVar.a(0);
-            dVar.h(-com.censivn.C3DEngine.b.b.A.a(150.0f));
+            dVar.h(-com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f));
             com.censivn.C3DEngine.b.g.TweenUtils.a(this);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this, 350, dVar);
             c();
@@ -101,7 +101,7 @@ public class DrawerContentList extends DrawerPageItemBase {
 
             @Override // com.tsf.shell.f.e._e.SelectionIndicator
             public float a() {
-                return com.censivn.C3DEngine.b.b.A.a(com.tsf.shell.f.f.a.FolderPage.F);
+                return com.censivn.C3DEngine.b.b.ScreenConstants.a(com.tsf.shell.f.f.a.FolderPage.F);
             }
         };
         addChild(this.g);
@@ -207,7 +207,7 @@ public class DrawerContentList extends DrawerPageItemBase {
             } else {
                 Number3d number3d = com.tsf.shell.f.f.a.FolderPage.E.get(childIndexOf);
                 Number3d number3d2 = com.tsf.shell.f.f.a.FolderPage.E.get(DrawerPageItemBase);
-                float fB2 = x.b(number3d.x, number3d.y, number3d2.x, number3d2.y) + (20.0f * com.censivn.C3DEngine.b.b.A.c);
+                float fB2 = x.b(number3d.x, number3d.y, number3d2.x, number3d2.y) + (20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 fB = x.b(f, f2, number3d.x, number3d.y);
                 f3 = fB2;
             }
@@ -270,7 +270,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         }
     }
 
-    public void a(com.censivn.C3DEngine.b.d.a aVar) {
+    public void a(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         this.u = aVar;
     }
 
@@ -573,7 +573,7 @@ public class DrawerContentList extends DrawerPageItemBase {
                             }
                             c.this.z.x = fArrB[0];
                             c.this.z.y = fArrB[1];
-                            if (fArrB[1] >= com.censivn.C3DEngine.b.b.A.C + com.tsf.shell.f.f.a.PageGridRenderer.a) {
+                            if (fArrB[1] >= com.censivn.C3DEngine.b.b.ScreenConstants.C + com.tsf.shell.f.f.a.PageGridRenderer.a) {
                                 c.this.a.ap().globalToLocal(c.this.z);
                                 c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v), c.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v)), c.this.z.x, c.this.z.y);
                             }

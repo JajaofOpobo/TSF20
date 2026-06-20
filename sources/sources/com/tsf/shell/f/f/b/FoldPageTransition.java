@@ -15,9 +15,9 @@ public class FoldPageTransition extends ItemPageTransition {
 
     public FoldPageTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_fold_page, z);
-        this.a = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
-        this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
-        this.c = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
+        this.a = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.G, false);
+        this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.G, false);
+        this.c = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
             @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 com.censivn.C3DEngine.C3DEngine.e().a(this);
@@ -50,16 +50,16 @@ public class FoldPageTransition extends ItemPageTransition {
 
     private void o() {
         if (this.a != null) {
-            this.a.a(com.censivn.C3DEngine.b.b.A.H);
-            this.a.b(com.censivn.C3DEngine.b.b.A.G);
-            this.b.a(com.censivn.C3DEngine.b.b.A.H);
-            this.b.b(com.censivn.C3DEngine.b.b.A.G);
-            this.c.points().setPX(0, 0.0f, -com.censivn.C3DEngine.b.b.A.I, 0.0f);
-            this.c.points().setPX(1, -com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f);
-            this.c.points().setPX(2, 0.0f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
-            this.c.points().setPX(3, -com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
-            this.a.position().x = (-com.censivn.C3DEngine.b.b.A.H) / 2.0f;
-            this.b.position().x = com.censivn.C3DEngine.b.b.A.H / 2.0f;
+            this.a.a(com.censivn.C3DEngine.b.b.ScreenConstants.H);
+            this.a.b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
+            this.b.a(com.censivn.C3DEngine.b.b.ScreenConstants.H);
+            this.b.b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
+            this.c.points().setPX(0, 0.0f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
+            this.c.points().setPX(1, -com.censivn.C3DEngine.b.b.ScreenConstants.H, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
+            this.c.points().setPX(2, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
+            this.c.points().setPX(3, -com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
+            this.a.position().x = (-com.censivn.C3DEngine.b.b.ScreenConstants.H) / 2.0f;
+            this.b.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.H / 2.0f;
         }
     }
 

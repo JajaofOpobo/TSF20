@@ -5,7 +5,7 @@ import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VPage;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.f.f.PageAnimationState;
 import com.tsf.shell.f.i.MultiSelectController;
@@ -32,8 +32,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     private com.censivn.C3DEngine.b.f.GridRenderable q;
     private com.censivn.C3DEngine.b.f.b.NinePatchRenderable s;
     private com.censivn.C3DEngine.b.f.b.NinePatchRenderable t;
-    private com.censivn.C3DEngine.b.d.a v;
-    private com.censivn.C3DEngine.b.d.a w;
+    private com.censivn.C3DEngine.b.d.MouseEventListener v;
+    private com.censivn.C3DEngine.b.d.MouseEventListener w;
     private g x;
     private g y;
     private int z;
@@ -193,11 +193,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         return this.u;
     }
 
-    public void a(com.censivn.C3DEngine.b.d.a aVar) {
+    public void a(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         this.v = aVar;
     }
 
-    public void b(com.censivn.C3DEngine.b.d.a aVar) {
+    public void b(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         this.w = aVar;
     }
 
@@ -330,14 +330,14 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
 
     public void a(int i2, int i3, int i4, int i5) {
         this.s.b(n.a, n.b);
-        r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
-        this.q.a(com.censivn.C3DEngine.b.b.A.F);
-        this.q.b(com.censivn.C3DEngine.b.b.A.G);
-        this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+        r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+        this.q.a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
+        this.q.b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
+        this.t.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
-                bVar.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+                bVar.a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
                 bVar.ac();
             }
         }
@@ -368,9 +368,9 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             aj();
             this.s = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
             this.t = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
-            this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            this.t.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
             this.t.doubleSidedEnabled(true);
-            this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.A.b;
+            this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b;
             ThemeDescription theme = ThemeManager.mix.page.getTheme();
             if (o == null) {
                 Bitmap bitmap = theme.getBitmap(ThemeShellDescription.PAGE_PREVIEW_BACKGROUND);
@@ -396,10 +396,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             if (r == null) {
                 r = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
                 r.textures().addElement(p);
-                r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
+                r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             }
             this.s.textures().addElement(m);
-            this.q = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
+            this.q = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1, 1, false);
             this.q.uvs().set(0, 1.0f, 0.0f);
             this.q.uvs().set(1, 0.0f, 0.0f);
             this.q.uvs().set(2, 1.0f, 1.0f);
@@ -416,10 +416,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             com.tsf.shell.manager.app.TextureCache.a(TransitionRenderer);
         }
         if (n.a > n.b) {
-            d = (int) (0.4f * com.censivn.C3DEngine.b.b.A.F);
+            d = (int) (0.4f * com.censivn.C3DEngine.b.b.ScreenConstants.F);
             e = (n.b * d) / n.a;
         } else {
-            e = (int) (0.4f * com.censivn.C3DEngine.b.b.A.G);
+            e = (int) (0.4f * com.censivn.C3DEngine.b.b.ScreenConstants.G);
             d = (n.a * e) / n.b;
         }
         f = com.tsf.shell.manager.app.TextureCache.a(d, e);
@@ -617,7 +617,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         this.c.drawQuietly();
         this.c.visible(Boolean.valueOf(zVisible));
         com.tsf.shell.manager.app.TextureCache.b();
-        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+        GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         position().setAllFrom(number3dClone);
         this.D = false;
     }

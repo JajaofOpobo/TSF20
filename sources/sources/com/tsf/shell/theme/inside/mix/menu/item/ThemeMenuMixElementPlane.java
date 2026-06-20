@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.b.A;
+import com.censivn.C3DEngine.b.b.ScreenConstants;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.f.e.CircleDotNode;
@@ -34,8 +34,8 @@ public class ThemeMenuMixElementPlane extends BaseRenderable {
         addChild(this.mTitleView);
         addChild(this.mSummaryView);
         setAABBPX(A.a(300.0f), A.a(300.0f));
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 ThemeMenuMixElementPlane.this.onClick();
             }

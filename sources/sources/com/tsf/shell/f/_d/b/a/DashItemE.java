@@ -14,12 +14,12 @@ public class DashItemE extends DashItemD {
 
     public DashItemE(int i, int i2, boolean z) {
         super(i, z);
-        int iA = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
         this.e = new GridRenderable(iA + 2, iA + 2, false);
         this.e.setDefaultColor(new Color4(i2));
         this.e.textures().addElement(DashItemC);
-        this.e.position().x = com.censivn.C3DEngine.b.b.A.a(74.0f);
-        this.e.position().y = com.censivn.C3DEngine.b.b.A.a(103.0f);
+        this.e.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(74.0f);
+        this.e.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(103.0f);
     }
 
     @Override // com.tsf.shell.f._d.b.a.DashItemD

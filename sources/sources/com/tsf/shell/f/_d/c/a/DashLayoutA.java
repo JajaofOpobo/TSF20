@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashLayoutA extends DashLayoutContainer {
-    private static final float a = 268.0f * com.censivn.C3DEngine.b.b.A.c;
+    private static final float a = 268.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     private boolean c;
 
     public DashLayoutA(int i, boolean z, boolean z2) {
@@ -70,46 +70,46 @@ public class DashLayoutA extends DashLayoutContainer {
         boolean z = false;
         if (f >= 0.0f && f2 >= 0.0f) {
             z = true;
-            if (a + f2 < com.censivn.C3DEngine.b.b.A.B) {
+            if (a + f2 < com.censivn.C3DEngine.b.b.ScreenConstants.B) {
                 iAcos = 0;
             } else {
-                iAcos = (int) (Math.acos((com.censivn.C3DEngine.b.b.A.B - f2) / a) / 0.017453292519943295d);
+                iAcos = (int) (Math.acos((com.censivn.C3DEngine.b.b.ScreenConstants.B - f2) / a) / 0.017453292519943295d);
             }
-            if (a + f < com.censivn.C3DEngine.b.b.A.A) {
+            if (a + f < com.censivn.C3DEngine.b.b.ScreenConstants.A) {
                 iAcos2 = 270;
             } else {
-                iAcos2 = ((int) (Math.asin((com.censivn.C3DEngine.b.b.A.A - f) / a) / 0.017453292519943295d)) + 180;
+                iAcos2 = ((int) (Math.asin((com.censivn.C3DEngine.b.b.ScreenConstants.A - f) / a) / 0.017453292519943295d)) + 180;
             }
         } else if (f >= 0.0f && f2 <= 0.0f) {
             z = true;
-            if (f2 - a > com.censivn.C3DEngine.b.b.A.C) {
+            if (f2 - a > com.censivn.C3DEngine.b.b.ScreenConstants.C) {
                 iAcos3 = 180;
             } else {
-                iAcos3 = 180 - ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.A.C) / a) / 0.017453292519943295d));
+                iAcos3 = 180 - ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.ScreenConstants.C) / a) / 0.017453292519943295d));
             }
-            if (a + f < com.censivn.C3DEngine.b.b.A.A) {
+            if (a + f < com.censivn.C3DEngine.b.b.ScreenConstants.A) {
                 iAcos2 = iAcos3;
                 iAcos = -90;
             } else {
                 iAcos2 = iAcos3;
-                iAcos = -((int) (Math.asin((com.censivn.C3DEngine.b.b.A.A - f) / a) / 0.017453292519943295d));
+                iAcos = -((int) (Math.asin((com.censivn.C3DEngine.b.b.ScreenConstants.A - f) / a) / 0.017453292519943295d));
             }
         } else if (f <= 0.0f && f2 <= 0.0f) {
-            int iAcos4 = f2 - a > com.censivn.C3DEngine.b.b.A.C ? -180 : ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.A.C) / a) / 0.017453292519943295d)) - 180;
-            if (f - a > com.censivn.C3DEngine.b.b.A.z) {
+            int iAcos4 = f2 - a > com.censivn.C3DEngine.b.b.ScreenConstants.C ? -180 : ((int) (Math.acos((f2 - com.censivn.C3DEngine.b.b.ScreenConstants.C) / a) / 0.017453292519943295d)) - 180;
+            if (f - a > com.censivn.C3DEngine.b.b.ScreenConstants.z) {
                 iAcos2 = iAcos4;
                 iAcos = 90;
             } else {
                 iAcos2 = iAcos4;
-                iAcos = 90 - ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.A.z) / a) / 0.017453292519943295d));
+                iAcos = 90 - ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.ScreenConstants.z) / a) / 0.017453292519943295d));
             }
         } else {
-            if (a + f2 < com.censivn.C3DEngine.b.b.A.B) {
+            if (a + f2 < com.censivn.C3DEngine.b.b.ScreenConstants.B) {
                 iAcos = 0;
             } else {
-                iAcos = -((int) (Math.acos((com.censivn.C3DEngine.b.b.A.B - f2) / a) / 0.017453292519943295d));
+                iAcos = -((int) (Math.acos((com.censivn.C3DEngine.b.b.ScreenConstants.B - f2) / a) / 0.017453292519943295d));
             }
-            iAcos2 = f - a > com.censivn.C3DEngine.b.b.A.z ? -270 : ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.A.z) / a) / 0.017453292519943295d)) - 270;
+            iAcos2 = f - a > com.censivn.C3DEngine.b.b.ScreenConstants.z ? -270 : ((int) (Math.acos((f - com.censivn.C3DEngine.b.b.ScreenConstants.z) / a) / 0.017453292519943295d)) - 270;
         }
         float fAbs = Math.abs(iAcos - iAcos2);
         float f3 = (size - 1) * 25.0f;
@@ -159,7 +159,7 @@ public class DashLayoutA extends DashLayoutContainer {
             cVar.d.b(1);
         }
         final float f4 = cVar.d.position().x;
-        final float fA = a + com.censivn.C3DEngine.b.b.A.a(60.0f);
+        final float fA = a + com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
         cVar.d.position().x = fA;
         cVar.d.scale().x = 1.0f;
         cVar.d.scale().y = 1.0f;
@@ -195,7 +195,7 @@ public class DashLayoutA extends DashLayoutContainer {
 
     private void a(final com.tsf.shell.f.e.f.EditModeController.c cVar, int i, boolean z) {
         final float f = cVar.d.position().x;
-        final float fA = com.censivn.C3DEngine.b.b.A.a(60.0f);
+        final float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.c.a.DashLayoutA.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {

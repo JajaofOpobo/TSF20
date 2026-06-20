@@ -4,7 +4,7 @@ import android.view.KeyEvent;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class KeyboardHandler {
     private static a b;
     private static ArrayList<a> c = new ArrayList<>();
     public static boolean a = false;
@@ -46,16 +46,16 @@ public class b {
     }
 
     public static void a(final int i, KeyEvent keyEvent) {
-        if (com.censivn.C3DEngine.b.c.b.a && !com.censivn.C3DEngine.a.d.j()) {
-            if (com.censivn.C3DEngine.b.c.b.b != null) {
-                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.1
+        if (com.censivn.C3DEngine.b.c.KeyboardHandler.a && !com.censivn.C3DEngine.a.d.j()) {
+            if (com.censivn.C3DEngine.b.c.KeyboardHandler.b != null) {
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.KeyboardHandler.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (com.censivn.C3DEngine.b.c.b.b != null) {
+                        if (com.censivn.C3DEngine.b.c.KeyboardHandler.b != null) {
                             if (i == 3) {
-                                com.censivn.C3DEngine.b.c.b.b.a(4, null);
+                                com.censivn.C3DEngine.b.c.KeyboardHandler.b.a(4, null);
                             } else {
-                                com.censivn.C3DEngine.b.c.b.b.a(i, null);
+                                com.censivn.C3DEngine.b.c.KeyboardHandler.b.a(i, null);
                             }
                         }
                     }
@@ -69,12 +69,12 @@ public class b {
     }
 
     public static void b(final int i, final KeyEvent keyEvent) {
-        if (com.censivn.C3DEngine.b.c.b.a && !com.censivn.C3DEngine.a.d.j() && com.censivn.C3DEngine.b.c.b.b != null) {
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.b.2
+        if (com.censivn.C3DEngine.b.c.KeyboardHandler.a && !com.censivn.C3DEngine.a.d.j() && com.censivn.C3DEngine.b.c.KeyboardHandler.b != null) {
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.KeyboardHandler.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (com.censivn.C3DEngine.b.c.b.b != null) {
-                        com.censivn.C3DEngine.b.c.b.b.b(i, keyEvent);
+                    if (com.censivn.C3DEngine.b.c.KeyboardHandler.b != null) {
+                        com.censivn.C3DEngine.b.c.KeyboardHandler.b.b(i, keyEvent);
                     }
                 }
             });

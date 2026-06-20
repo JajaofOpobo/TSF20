@@ -1,34 +1,49 @@
 package com.censivn.C3DEngine.b.b.a;
 
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends BaseRenderable {
-    private boolean isAnimationRunning = false;
-    private float mMarginDistance = 0.0f;
+public class SliderRenderer extends com.tsf.shell.f.e.f.b {
+    private boolean a = false;
+    private float b = 0.0f;
+    private float c = 0.0f;
 
-    public void resetPosition() {
-        updateChildPosition(false);
+    public void a() {
+        a(false);
     }
 
-    public void setMarginDistance(float f) {
-        this.mMarginDistance = f;
+    public void a(float f) {
+        this.b = f;
+    }
+
+    public float b() {
+        return this.b;
+    }
+
+    public void b(float f) {
+        this.c = f;
+    }
+
+    public float c() {
+        return this.c;
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
-        updateChildPosition(numChildren() - 1, false);
+    }
+
+    public void a(i iVar, boolean z) {
+        super.addChild(iVar);
+        onChildMeasure(iVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         super.addChildAt(iVar, i);
         onChildMeasure(iVar);
-        updateChildPosition(i, false);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
@@ -40,6 +55,10 @@ public class b extends BaseRenderable {
         return zRemoveChild;
     }
 
+    public boolean a(i iVar) {
+        return super.removeChild(iVar);
+    }
+
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public IRenderable removeChildAt(int i) {
         i iVarRemoveChildAt = super.removeChildAt(i);
@@ -49,58 +68,74 @@ public class b extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
-        this.isAnimationRunning = true;
-        updateBorder();
+        this.a = true;
+        e();
     }
 
-    private void updateBorder() {
-        float fMaxX = maxX() - minX();
+    public void b(i iVar) {
+        this.a = true;
+    }
+
+    private void e() {
+        float fMaxY = maxY() - minY();
         int iNumChildren = numChildren();
-        float fMaxX2 = 0.0f;
+        float fMaxY2 = this.b;
         for (int i = 0; i < iNumChildren; i++) {
             i childAt = getChildAt(i);
             if (childAt.visible()) {
-                fMaxX2 += childAt.maxX() - childAt.minX();
+                fMaxY2 += (childAt.maxY() - childAt.minY()) + this.c;
             }
         }
-        if (fMaxX != fMaxX2) {
-            maxX(fMaxX2);
+        if (iNumChildren > 0) {
+            fMaxY2 -= this.c;
+        }
+        float f = fMaxY2 + this.b;
+        if (fMaxY != f) {
+            minY(-f);
             notifLayoutRefresh();
         }
     }
 
-    private boolean updateChildPosition(boolean z) {
-        return updateChildPosition(0, z);
+    private boolean a(boolean z) {
+        return a(0, z);
     }
 
-    private boolean updateChildPosition(int i, boolean z) {
-        float fMaxX;
+    private boolean a(int i, boolean z) {
+        float fMaxY;
         int iNumChildren = numChildren();
         if (i == 0) {
-            fMaxX = this.mMarginDistance;
+            fMaxY = -this.b;
         } else {
             i childAt = getChildAt(i - 1);
-            fMaxX = childAt.maxX() + childAt.position().x;
+            fMaxY = childAt.position().y - childAt.maxY();
         }
+        float f = fMaxY;
         boolean z2 = true;
+        float f2 = f;
         while (i < iNumChildren) {
             i childAt2 = getChildAt(i);
             if (childAt2.visible()) {
-                float fMinX = fMaxX - childAt2.minX();
-                fMaxX = childAt2.maxX() + fMinX;
-                boolean z3 = childAt2.getRendererVisibility() || childAt2.isPositionXVisible(fMinX);
+                float fMaxY2 = f2 - childAt2.maxY();
+                float fMinY = fMaxY2 + childAt2.minY();
+                boolean z3 = childAt2.getRendererVisibility() || childAt2.isPositionYVisible(fMaxY2);
                 if (!z || !z3) {
-                    childAt2.position().x = fMinX;
-                } else if (childAt2.position().x != fMinX) {
-                    childAt2.position().x += (fMinX - childAt2.position().x) * 0.15f;
-                    if (Math.abs(childAt2.position().x - fMinX) < 0.2f) {
-                        childAt2.position().x = fMinX;
+                    childAt2.position().y = fMaxY2;
+                    childAt2.position().x = 0.0f;
+                } else if (childAt2.position().y != fMaxY2 || childAt2.position().x != 0.0f) {
+                    childAt2.position().y += (fMaxY2 - childAt2.position().y) * 0.15f;
+                    childAt2.position().x += (0.0f - childAt2.position().x) * 0.15f;
+                    if (Math.abs(childAt2.position().y - fMaxY2) < 0.2f && Math.abs(childAt2.position().x - 0.0f) < 0.2f) {
+                        childAt2.position().y = fMaxY2;
+                        childAt2.position().x = 0.0f;
                     } else {
                         z2 = false;
                     }
                 }
+                f2 = fMinY - this.c;
             }
             i++;
+            z2 = z2;
+            f2 = f2;
         }
         return z2;
     }
@@ -111,11 +146,11 @@ public class b extends BaseRenderable {
         notifLayoutRefresh();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
-        if (visible() && this.isAnimationRunning) {
-            if (updateChildPosition(true)) {
-                this.isAnimationRunning = false;
+        if (visible() && this.a) {
+            if (a(true)) {
+                this.a = false;
             }
             invalidate();
         }

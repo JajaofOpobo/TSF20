@@ -38,14 +38,14 @@ public class ItemPositionAnimator {
         }
     };
     private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.2
-        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4 && k.this.t) {
                 k.this.b();
             }
         }
 
-        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+        @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void b(int i, KeyEvent keyEvent) {
         }
     };
@@ -243,8 +243,8 @@ public class ItemPositionAnimator {
                     }
                     k.this.i = k.this.h;
                     Number3d number3dLocalToGlobal = k.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
-                    k.this.j = (int) (com.censivn.C3DEngine.b.b.A.H + number3dLocalToGlobal.x);
-                    k.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
+                    k.this.j = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.H + number3dLocalToGlobal.x);
+                    k.this.k = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.I - number3dLocalToGlobal.y);
                     k.this.l = motionEvent2.getX();
                     k.this.m = motionEvent2.getY();
                     Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = k.this.d.children().iterator();

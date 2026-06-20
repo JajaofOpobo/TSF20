@@ -15,7 +15,7 @@ import com.tsf.shell.plugin.widget.FloatingWidgetPicker;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private static com.tsf.shell.f.i.b.c.ItemDataState f;
     private static double p = 0.017453292519943295d;
     public int a;
@@ -74,7 +74,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
                 if (!this.l && !this.m && !this.n && !Y()) {
                     if (this.b.f) {
                         if (this.b.n != 0.0f) {
-                            position().y = this.o + (((float) Math.sin(p * ((double) this.r))) * this.b.n * com.censivn.C3DEngine.b.b.A.b);
+                            position().y = this.o + (((float) Math.sin(p * ((double) this.r))) * this.b.n * com.censivn.C3DEngine.b.b.ScreenConstants.b);
                             this.r++;
                         }
                         if (this.q) {
@@ -171,10 +171,10 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
     public void k() {
         Intent intent = new Intent();
         intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), FloatingWidgetPicker.class);
-        this.s = Home.c.a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+        this.s = Home.c.a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         int i3 = 2;
         int i4 = 1;
@@ -211,16 +211,16 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
     private void l() {
         if (this.b != null) {
             if (this.b.f) {
-                this.g = (int) (com.censivn.C3DEngine.b.b.A.A + ((this.k.b() / 2.0f) * u()));
-                this.h = (int) (com.censivn.C3DEngine.b.b.A.A - ((this.k.b() / 2.0f) * u()));
-                this.i = (int) (com.censivn.C3DEngine.b.b.A.z - ((this.k.b() / 2.0f) * u()));
-                this.j = (int) (com.censivn.C3DEngine.b.b.A.z + ((this.k.b() / 2.0f) * u()));
+                this.g = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.A + ((this.k.b() / 2.0f) * u()));
+                this.h = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.A - ((this.k.b() / 2.0f) * u()));
+                this.i = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z - ((this.k.b() / 2.0f) * u()));
+                this.j = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z + ((this.k.b() / 2.0f) * u()));
                 return;
             }
-            this.g = (int) (com.censivn.C3DEngine.b.b.A.I + ((this.k.c() / 2.0f) * u()));
-            this.h = (int) (com.censivn.C3DEngine.b.b.A.I - ((this.k.c() / 2.0f) * u()));
-            this.i = (int) ((-com.censivn.C3DEngine.b.b.A.I) - ((this.k.c() / 2.0f) * u()));
-            this.j = (int) ((-com.censivn.C3DEngine.b.b.A.I) + ((this.k.c() / 2.0f) * u()));
+            this.g = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.I + ((this.k.c() / 2.0f) * u()));
+            this.h = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.I - ((this.k.c() / 2.0f) * u()));
+            this.i = (int) ((-com.censivn.C3DEngine.b.b.ScreenConstants.I) - ((this.k.c() / 2.0f) * u()));
+            this.j = (int) ((-com.censivn.C3DEngine.b.b.ScreenConstants.I) + ((this.k.c() / 2.0f) * u()));
         }
     }
 
@@ -240,24 +240,24 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         if (this.b.h) {
             this.k = new ItemDataState(this.b.l, this.b.k, this.b.j, this.b.i, textureElementA.width, textureElementA.height);
         } else {
-            this.k = new C0114a(textureElementA.width * com.censivn.C3DEngine.b.b.A.b, textureElementA.height * com.censivn.C3DEngine.b.b.A.b, false);
+            this.k = new C0114a(textureElementA.width * com.censivn.C3DEngine.b.b.ScreenConstants.b, textureElementA.height * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
         }
         this.k.setAnimationObjectState(true);
         this.k.setHighPriorityAnimationObjectState(false);
         this.k.textures().addElement(textureElementA);
         this.a = textureElementA.id;
-        this.k.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.k) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.3
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.k.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.k) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.3
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 a.this.n = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 a.this.n = false;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.this.ah();
                 a.this.ag();
@@ -338,7 +338,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         private float h;
 
         public b(int i, int i2, int i3, int i4, int i5, int i6) {
-            super(i * com.censivn.C3DEngine.b.b.A.b, i2 * com.censivn.C3DEngine.b.b.A.b, false);
+            super(i * com.censivn.C3DEngine.b.b.ScreenConstants.b, i2 * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
             this.f = 0;
             this.d = i3;
             this.e = i4;

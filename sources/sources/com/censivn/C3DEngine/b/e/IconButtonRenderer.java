@@ -8,21 +8,21 @@ import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends g {
+public class IconButtonRenderer extends IconLabelRenderer {
     private GridRenderable a;
     private TextureElement b;
     private boolean d = false;
     private boolean e = false;
     private C0027a f;
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.IconButtonRenderer$a, reason: collision with other inner class name */
     public static class C0027a {
         public boolean a(boolean z) {
             return true;
         }
     }
 
-    public a() {
+    public IconButtonRenderer() {
         m();
     }
 
@@ -39,13 +39,13 @@ public class a extends g {
         this.d = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         h();
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         if (this.b.id != 0) {
@@ -55,20 +55,20 @@ public class a extends g {
 
     public void h() {
         this.e = this.d;
-        Bitmap bitmapA = x.a(this.d ? com.tsf.b.d.preference_check_on : com.tsf.b.d.preference_check_off, com.censivn.C3DEngine.b.b.A.a(58.0f), com.censivn.C3DEngine.b.b.A.a(58.0f));
+        Bitmap bitmapA = x.a(this.d ? com.tsf.b.d.preference_check_on : com.tsf.b.d.preference_check_off, com.censivn.C3DEngine.b.b.ScreenConstants.a(58.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(58.0f));
         com.censivn.C3DEngine.C3DEngine.g().a(this.b, bitmapA);
         bitmapA.recycle();
     }
 
     private void m() {
-        this.a = com.censivn.C3DEngine.b.b.A.a(58.0f, 58.0f);
+        this.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(58.0f, 58.0f);
         this.b = new TextureElement(0, false);
         this.a.textures().addElement(this.b);
         this.a.position().y = (-b()) / 2.0f;
         addChild(this.a);
-        final com.censivn.C3DEngine.b.e.a self = this;
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.e.a.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        final com.censivn.C3DEngine.b.e.IconButtonRenderer self = this;
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.e.IconButtonRenderer.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (self.d) {
                     self.c(false);
@@ -95,7 +95,7 @@ public class a extends g {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         if (this.a != null) {
@@ -103,7 +103,7 @@ public class a extends g {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void e(int i) {
         super.e(i);
         if (this.a != null) {

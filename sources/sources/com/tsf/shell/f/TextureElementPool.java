@@ -34,7 +34,7 @@ public class TextureElementPool {
         if (b == null) {
             b = x.b(b.d.snowflake);
         }
-        float f = 100.0f * com.censivn.C3DEngine.b.b.A.c;
+        float f = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         for (int i = 0; i < 20; i++) {
             A aVar = new DashPanelController();
             aVar.a = (float) (0.2d + (Math.random() * 0.800000011920929d));
@@ -44,12 +44,12 @@ public class TextureElementPool {
                 aVar.c = aVar.a * 5.0f;
             }
             float f2 = aVar.a * f;
-            aVar.g = (float) (((double) (com.censivn.C3DEngine.b.b.A.B + f2)) + (((double) (com.censivn.C3DEngine.b.b.A.E / 3)) * Math.random()));
-            aVar.f = ((com.censivn.C3DEngine.b.b.A.C - f2) - com.censivn.C3DEngine.b.b.A.K) - (100.0f * com.censivn.C3DEngine.b.b.A.c);
+            aVar.g = (float) (((double) (com.censivn.C3DEngine.b.b.ScreenConstants.B + f2)) + (((double) (com.censivn.C3DEngine.b.b.ScreenConstants.E / 3)) * Math.random()));
+            aVar.f = ((com.censivn.C3DEngine.b.b.ScreenConstants.C - f2) - com.censivn.C3DEngine.b.b.ScreenConstants.K) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             aVar.e = e();
             aVar.h = 3.141592653589793d * Math.random() * 2.0d;
             aVar.i = 0.05235987755982989d;
-            aVar.d = 40.0f * com.censivn.C3DEngine.b.b.A.c * aVar.a;
+            aVar.d = 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * aVar.a;
             arrayList.add(aVar);
         }
         final int size = arrayList.size();
@@ -111,7 +111,7 @@ public class TextureElementPool {
     }
 
     private static float e() {
-        return (float) ((Math.random() * ((double) com.censivn.C3DEngine.b.b.A.F)) + ((double) com.censivn.C3DEngine.b.b.A.z));
+        return (float) ((Math.random() * ((double) com.censivn.C3DEngine.b.b.ScreenConstants.F)) + ((double) com.censivn.C3DEngine.b.b.ScreenConstants.z));
     }
 
     static class a {

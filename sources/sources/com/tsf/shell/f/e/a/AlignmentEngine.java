@@ -45,9 +45,9 @@ public class AlignmentEngine {
                 }
             };
             AlignmentBackHandler.alpha(0.0f);
-            c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
+            c = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 308.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
             AlignmentBackHandler.addChild(c);
-            e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.3
+            e = new g(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.3
                 @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG
                 public i a(int i2, i iVar) {
                     i iVarB;
@@ -80,11 +80,11 @@ public class AlignmentEngine {
                 }
             };
             AlignmentBackHandler.addChild(e);
-            AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, 80.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
-            AlignmentBackHandler.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(AlignmentBackHandler) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.4
-                com.censivn.C3DEngine.b.d.a a;
+            AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f);
+            AlignmentBackHandler.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(AlignmentBackHandler) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.4
+                com.censivn.C3DEngine.b.d.MouseEventListener a;
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void e(MotionEvent motionEvent) {
                     float[] fArrA = x.a(motionEvent);
                     i hittingTarget = this.c.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -96,21 +96,21 @@ public class AlignmentEngine {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
                     if (this.a != null) {
                         this.a.a(motionEvent, motionEvent2, f2, f3);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
                     if (this.a != null) {
                         this.a.f(motionEvent);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (this.a != null) {
                         w.b();
@@ -118,7 +118,7 @@ public class AlignmentEngine {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
                     if (this.a != null) {
                         this.a.b(motionEvent, motionEvent2, f2, f3);
@@ -164,7 +164,7 @@ public class AlignmentEngine {
         com.tsf.shell.manager.app.ServiceProvider.a().a.b();
         AlignmentEngine();
         if (AlignmentBackHandler.parent() == null) {
-            AlignmentBackHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
+            AlignmentBackHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         } else {
             AlignmentBackHandler.removeFromParent();
         }
@@ -175,7 +175,7 @@ public class AlignmentEngine {
     public static void b() {
         if (h) {
             com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
-            com.censivn.C3DEngine.b.c.b.b(f);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(f);
             com.tsf.shell.manager.app.ObserverManager.b(g);
             AlignmentEngine();
         }
@@ -185,7 +185,7 @@ public class AlignmentEngine {
         AlignmentBackHandler.mouseEnabled(false);
         AlignmentBackHandler.setFocus();
         h = true;
-        com.censivn.C3DEngine.b.c.b.a(f);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(f);
         com.tsf.shell.manager.app.ObserverManager.a(g);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -213,16 +213,16 @@ public class AlignmentEngine {
             }
         };
         dVar.a(0);
-        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.A.b));
+        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
         com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentBackHandler);
         com.censivn.C3DEngine.b.g.TweenUtils.a(b, 500, dVar);
     }
 
     private static void j() {
-        AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f, 0.0f);
-        c.a(com.censivn.C3DEngine.b.b.A.D);
-        e.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f);
-        a = com.censivn.C3DEngine.b.b.A.C + (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.A.c);
+        AlignmentBackHandler.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f, 0.0f);
+        c.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
+        e.a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f);
+        a = com.censivn.C3DEngine.b.b.ScreenConstants.C + (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         if (h) {
             AlignmentBackHandler.position().y = a;
         }

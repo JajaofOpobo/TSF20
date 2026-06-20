@@ -17,8 +17,8 @@ public class DrawerBaseElement extends BaseRenderable {
     private com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData g;
     private float h;
     private static TextureElement b = new TextureElement(0, false);
-    public static int a = com.censivn.C3DEngine.b.b.A.b(138.0f);
-    private static int c = com.censivn.C3DEngine.b.b.A.b(8.0f);
+    public static int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(138.0f);
+    private static int c = com.censivn.C3DEngine.b.b.ScreenConstants.b(8.0f);
 
     public DrawerBaseElement(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
         this.g = cVar;
@@ -26,9 +26,9 @@ public class DrawerBaseElement extends BaseRenderable {
             d = new GridRenderable(a, a, false);
             d.textures().addElement(b);
         }
-        this.f = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(6.0f), 0.0f, false);
+        this.f = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(6.0f), 0.0f, false);
         this.f.useVBO(false);
-        this.f.position().y = -com.censivn.C3DEngine.b.b.A.a(90.0f);
+        this.f.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(90.0f);
         this.f.setDefaultColor(new Color4(255, 255, 255, 50));
         addChild(this.f);
     }

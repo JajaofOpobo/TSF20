@@ -3,8 +3,8 @@ package com.tsf.shell.preference.a.a;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import com.censivn.C3DEngine.b.e.i;
-import com.censivn.C3DEngine.b.e.j;
+import com.censivn.C3DEngine.b.e.PanelGroupRenderer;
+import com.censivn.C3DEngine.b.e.ActionButtonRenderer;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.preference.AboutActivity;
@@ -22,7 +22,7 @@ public class PreferenceItemG extends i {
         jVar.h(PreferenceItemB.i.mn_version_detail);
         jVar.b(x.c(PreferenceItemB.i.mn_version_detail_summary) + " 2017/03/23");
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.1
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.tsf.shell.manager.app.FolderManager.a(1800);
                 g.this.e();
@@ -33,7 +33,7 @@ public class PreferenceItemG extends i {
         jVar2.a(i());
         jVar2.i(PreferenceItemB.i.mn_version_summary);
         jVar2.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.2
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.2.1
                     @Override // java.lang.Runnable
@@ -47,7 +47,7 @@ public class PreferenceItemG extends i {
         j jVar3 = new j();
         jVar3.h(PreferenceItemB.i.mn_introduction_video);
         jVar3.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.3
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.3.1
                     @Override // java.lang.Runnable
@@ -62,7 +62,7 @@ public class PreferenceItemG extends i {
         jVar4.h(PreferenceItemB.i.mn_rate);
         jVar4.i(PreferenceItemB.i.mn_rate_summary);
         jVar4.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.4
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 g.this.e();
                 com.tsf.shell.manager.app.FolderManager.a(ACRAConstants.DEFAULT_SOCKET_TIMEOUT);
@@ -73,7 +73,7 @@ public class PreferenceItemG extends i {
         jVar5.h(PreferenceItemB.i.mn_feedback);
         jVar5.b("service@tsfui.com");
         jVar5.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.5
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.5.1
                     @Override // java.lang.Runnable
@@ -88,7 +88,7 @@ public class PreferenceItemG extends i {
         j jVar6 = new j();
         jVar6.h(PreferenceItemB.i.text_translations);
         jVar6.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.6
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.6.1
                     @Override // java.lang.Runnable
@@ -102,7 +102,7 @@ public class PreferenceItemG extends i {
         j jVar7 = new j();
         jVar7.h(PreferenceItemB.i.terms_of_service);
         jVar7.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.7
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.7.1
                     @Override // java.lang.Runnable
@@ -121,7 +121,7 @@ public class PreferenceItemG extends i {
         j jVar8 = new j();
         jVar8.h(PreferenceItemB.i.privacy_policy);
         jVar8.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.8
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.8.1
                     @Override // java.lang.Runnable
@@ -140,7 +140,7 @@ public class PreferenceItemG extends i {
         j jVar9 = new j();
         jVar9.h(PreferenceItemB.i.adchoices);
         jVar9.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.9
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.9.1
                     @Override // java.lang.Runnable
@@ -168,7 +168,7 @@ public class PreferenceItemG extends i {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void f() {
     }
 }

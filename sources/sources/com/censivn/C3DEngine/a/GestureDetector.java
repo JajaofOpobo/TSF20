@@ -180,7 +180,7 @@ public class GestureDetector {
         this.v = true;
         ViewConfiguration viewConfiguration = ViewConfiguration.get(com.censivn.C3DEngine.C3DEngine.d());
         int scaledTouchSlop = viewConfiguration.getScaledTouchSlop();
-        int i2 = (int) (50.0f * com.censivn.C3DEngine.b.b.A.b);
+        int i2 = (int) (50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         this.g = 500;
         int scaledMaximumFlingVelocity = viewConfiguration.getScaledMaximumFlingVelocity();
         a = scaledMaximumFlingVelocity;

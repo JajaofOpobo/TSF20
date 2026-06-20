@@ -15,15 +15,15 @@ public class WorkspaceDockPanel extends BaseRenderable {
     private com.censivn.C3DEngine.b.h.e.DockRenderer g;
     private f h;
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase j;
-    private float d = com.censivn.C3DEngine.b.b.A.c * 0.0f;
-    private float e = 5.0f * com.censivn.C3DEngine.b.b.A.c;
-    private float b = ((this.d * 3.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.T * 4)) + (90.0f * com.censivn.C3DEngine.b.b.A.c);
-    private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.A.c);
+    private float d = com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.0f;
+    private float e = 5.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+    private float b = ((this.d * 3.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.T * 4)) + (90.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+    private float c = ((this.e * 2.0f) + (com.tsf.shell.manager.o.ButtonPresetManager.b.U * 3)) + (50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase i = a(12, com.tsf.shell.manager.p.ThemePreferenceProvider.l);
 
     public WorkspaceDockPanel(b bVar) {
         this.a = bVar;
-        this.f = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.f = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.ScreenConstants.c * 40.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.0f);
         this.f.addChild(this.i);
         this.f.addChild(a(13));
         this.j = a(11);
@@ -32,7 +32,7 @@ public class WorkspaceDockPanel extends BaseRenderable {
         this.f.position().y = com.tsf.shell.manager.o.ButtonPresetManager.b.U + this.e;
         this.f.e();
         addChild(this.f);
-        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.ScreenConstants.c * 40.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.0f);
         this.g.addChild(a(VEasing.Back.easeIn, com.tsf.shell.manager.p.ThemePreferenceProvider.a));
         this.g.addChild(a(300, com.tsf.shell.manager.p.ThemePreferenceProvider.e));
         this.g.addChild(a(800));
@@ -49,7 +49,7 @@ public class WorkspaceDockPanel extends BaseRenderable {
         this.g.addChild(a(15));
         this.g.e();
         addChild(this.g);
-        this.h = new WorkspaceWidgetPanel(this, this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, 40.0f * com.censivn.C3DEngine.b.b.A.c, 0.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.h = new WorkspaceWidgetPanel(this, this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 0.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.h.position().y = (-com.tsf.shell.manager.o.ButtonPresetManager.b.U) - this.e;
         this.h.d();
         addChild(this.h);
@@ -89,7 +89,7 @@ public class WorkspaceDockPanel extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 500, dVar2);
         this.g.mouseEnabled(false);
-        return (this.c / 2.0f) + f + com.censivn.C3DEngine.b.b.A.a(260.0f);
+        return (this.c / 2.0f) + f + com.censivn.C3DEngine.b.b.ScreenConstants.a(260.0f);
     }
 
     public void a() {
@@ -123,8 +123,8 @@ public class WorkspaceDockPanel extends BaseRenderable {
     }
 
     public static void a(final com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
-        bVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(bVar) { // from class: com.tsf.shell.f.h.WorkspaceDockPanel.2
-            @Override // com.censivn.C3DEngine.b.d.a
+        bVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(bVar) { // from class: com.tsf.shell.f.h.WorkspaceDockPanel.2
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 bVar.l();
             }

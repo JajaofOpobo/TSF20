@@ -63,7 +63,7 @@ public class DrawerIconLoaderTask extends DrawerIndicatorDot {
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
-        this.b = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.A.a(140.0f), DrawerIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask.2
+        this.b = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.ScreenConstants.a(140.0f), DrawerIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask.2
             @Override // com.censivn.C3DEngine.b.h.d.ProgressBarItem, com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 f();

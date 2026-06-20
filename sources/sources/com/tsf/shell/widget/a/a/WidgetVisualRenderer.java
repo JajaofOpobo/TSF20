@@ -11,7 +11,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VInformation;
-import com.censivn.C3DEngine.b.e.f;
+import com.censivn.C3DEngine.b.e.AbstractPanelRenderer;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -57,15 +57,15 @@ public class WidgetVisualRenderer extends f {
 
     public WidgetVisualRenderer(Context context) {
         this.j = context;
-        d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
+        d((int) com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f));
         a(0);
         this.a = new LabelRenderable();
         this.a.b(1);
         this.a.d(50);
         this.a.a(" ");
         this.a.b();
-        com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         bVar.i = this.a.minY();
         bVar.k = this.a.maxY();
         this.a.setLayoutParams(bVar);
@@ -78,32 +78,32 @@ public class WidgetVisualRenderer extends f {
         this.d.addChild(this.b);
         this.d.setMouseEventListener(new WidgetVisualState(this.d));
         this.h = new d(0.0f, 0.0f);
-        this.h.a(com.censivn.C3DEngine.b.b.A.a(30.0f));
-        this.h.b(com.censivn.C3DEngine.b.b.A.a(30.0f));
-        this.h.position().y = com.censivn.C3DEngine.b.b.A.a(95.0f);
+        this.h.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
+        this.h.b(com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
+        this.h.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(95.0f);
         this.h.textures().addElement(this.f);
         this.h.calAABB();
         this.d.addChild(this.h);
         this.i = new d(0.0f, 0.0f);
-        this.i.a(com.censivn.C3DEngine.b.b.A.a(30.0f));
-        this.i.b(com.censivn.C3DEngine.b.b.A.a(30.0f));
-        this.i.position().y = com.censivn.C3DEngine.b.b.A.a(-115.0f);
+        this.i.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
+        this.i.b(com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
+        this.i.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-115.0f);
         this.i.textures().addElement(this.f);
         this.i.calAABB();
         this.d.addChild(this.i);
         this.d.calAABB(1.0f, 1.2f, 1.0f);
-        com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
-        bVar2.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
-        bVar2.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar2 = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar2.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
+        bVar2.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         bVar2.i = this.d.minY();
         bVar2.k = this.d.maxY();
         this.d.setLayoutParams(bVar2);
         addChild(this.d);
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
-        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(0.0f);
+        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
         this.b.b(i);
         this.d.calAABB(1.0f, 1.2f, 1.0f);
     }
@@ -139,12 +139,12 @@ public class WidgetVisualRenderer extends f {
         }
     }
 
-    class b extends com.censivn.C3DEngine.b.d.a {
+    class b extends com.censivn.C3DEngine.b.d.MouseEventListener {
         public b(i iVar) {
             super(iVar);
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(final MotionEvent motionEvent) {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.1
                 @Override // java.lang.Runnable
@@ -155,7 +155,7 @@ public class WidgetVisualRenderer extends f {
             });
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualRenderer.b.2
                 @Override // java.lang.Runnable
@@ -188,8 +188,8 @@ public class WidgetVisualRenderer extends f {
         public a() {
             super(35, 1, 1, 1, null, true);
             this.d = 0;
-            this.e = (int) com.censivn.C3DEngine.b.b.A.a(150.0f);
-            this.f = (int) com.censivn.C3DEngine.b.b.A.a(60.0f);
+            this.e = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
+            this.f = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
             this.g = 0;
             this.h = 0;
             textures().addElement(c.this.e);
@@ -351,7 +351,7 @@ public class WidgetVisualRenderer extends f {
         this.g = interfaceC0171c;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         if (this.f.id != 0) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.f);
@@ -372,7 +372,7 @@ public class WidgetVisualRenderer extends f {
         return bitmapCreateBitmap;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         if (this.e.id == 0) {
             Bitmap bitmapA = a(-1, 100, 100);
@@ -380,7 +380,7 @@ public class WidgetVisualRenderer extends f {
             bitmapA.recycle();
         }
         if (this.f.id == 0) {
-            Bitmap bitmapB = b(-1, (int) com.censivn.C3DEngine.b.b.A.a(30.0f));
+            Bitmap bitmapB = b(-1, (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
             com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmapB);
             bitmapB.recycle();
         }

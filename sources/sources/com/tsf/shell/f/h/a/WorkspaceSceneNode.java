@@ -3,7 +3,7 @@ package com.tsf.shell.f.h.a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.b.A.d;
+import com.censivn.C3DEngine.b.b.ScreenConstants.d;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -26,7 +26,7 @@ public class WorkspaceSceneNode {
         this.h = true;
         this.h = e.aB() == 0;
         this.d = new TextureElement(0, false);
-        this.e = com.censivn.C3DEngine.b.b.A.a(24.0f, 45.0f);
+        this.e = com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f, 45.0f);
         this.e.textures().addElement(this.d);
         if (this.h) {
             this.e.rotation().z = 90.0f;
@@ -35,18 +35,18 @@ public class WorkspaceSceneNode {
         }
         this.e.calAABB(3.0f, 5.0f, 1.0f);
         this.e.alpha(200.0f);
-        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.h.a.a.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.h.a.a.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.this.x();
             }
         });
         this.a = new BaseRenderable();
-        this.b = new com.censivn.C3DEngine.b.h.d.LabeledProgressBar(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
-        this.b.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
+        this.b = new com.censivn.C3DEngine.b.h.d.LabeledProgressBar(com.censivn.C3DEngine.b.b.ScreenConstants.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.ScreenConstants.a(74.0f));
+        this.b.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.a(130.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(130.0f));
         this.b.a(b.d.ico_setting);
         this.c = new d() { // from class: com.tsf.shell.f.h.a.a.2
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void a(int i, float f) {
                 if (f > 1.0f) {
                     f = 1.0f;
@@ -54,17 +54,17 @@ public class WorkspaceSceneNode {
                 a.this.b.a(f);
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void d(int i) {
                 a.this.v();
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void e(int i) {
                 a.this.w();
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void a(int i) {
                 if (i == 0) {
                     a.this.b.c(0);
@@ -74,7 +74,7 @@ public class WorkspaceSceneNode {
                 a.this.b(i);
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public boolean b(int i) {
                 return a.this.c(i);
             }
@@ -103,9 +103,9 @@ public class WorkspaceSceneNode {
 
     public void b() {
         e.v(this.h ? 0 : 1);
-        a(this.e, b(this.g ? false : true), y(), com.censivn.C3DEngine.b.b.A.a(100.0f));
+        a(this.e, b(this.g ? false : true), y(), com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
         if (this.f) {
-            a(this.c, z(), 0.0f, com.censivn.C3DEngine.b.b.A.a(200.0f));
+            a(this.c, z(), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f));
         } else {
             this.c.position().y = z();
         }
@@ -299,7 +299,7 @@ public class WorkspaceSceneNode {
     }
 
     private float b(boolean z) {
-        return z ? this.h ? com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.a(38.0f) : com.censivn.C3DEngine.b.b.A.C + com.censivn.C3DEngine.b.b.A.a(38.0f) : this.h ? com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.a(100.0f) : com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.a(100.0f);
+        return z ? this.h ? com.censivn.C3DEngine.b.b.ScreenConstants.B - com.censivn.C3DEngine.b.b.ScreenConstants.a(38.0f) : com.censivn.C3DEngine.b.b.ScreenConstants.C + com.censivn.C3DEngine.b.b.ScreenConstants.a(38.0f) : this.h ? com.censivn.C3DEngine.b.b.ScreenConstants.B + com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f) : com.censivn.C3DEngine.b.b.ScreenConstants.C - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
     }
 
     private int y() {
@@ -307,7 +307,7 @@ public class WorkspaceSceneNode {
     }
 
     private float z() {
-        return this.f ? this.h ? com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.a(170.0f) : com.censivn.C3DEngine.b.b.A.C + com.censivn.C3DEngine.b.b.A.a(230.0f) : this.h ? com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.a(100.0f) : com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.a(100.0f);
+        return this.f ? this.h ? com.censivn.C3DEngine.b.b.ScreenConstants.B - com.censivn.C3DEngine.b.b.ScreenConstants.a(170.0f) : com.censivn.C3DEngine.b.b.ScreenConstants.C + com.censivn.C3DEngine.b.b.ScreenConstants.a(230.0f) : this.h ? com.censivn.C3DEngine.b.b.ScreenConstants.B + com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f) : com.censivn.C3DEngine.b.b.ScreenConstants.C - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -374,9 +374,9 @@ public class WorkspaceSceneNode {
                 A();
                 float f = this.c.position().y;
                 if (this.h) {
-                    this.c.position().y -= com.censivn.C3DEngine.b.b.A.a(100.0f);
+                    this.c.position().y -= com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
                 } else {
-                    this.c.position().y += com.censivn.C3DEngine.b.b.A.a(100.0f);
+                    this.c.position().y += com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
                 }
                 this.c.alpha(0.0f);
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
@@ -416,9 +416,9 @@ public class WorkspaceSceneNode {
     }
 
     private void G() {
-        this.c.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.A.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(500.0f) / 2.0f, 0.0f);
+        this.c.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f) / 2.0f, 0.0f);
         this.c.k();
-        this.c.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.c.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
         this.c.position().y = z();
         this.e.position().y = b(!this.g);
     }

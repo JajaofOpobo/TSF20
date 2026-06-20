@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
+public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.AbstractPanelRenderer {
     private LabelRenderable a;
     private GridRenderable b;
     private TextureElement d;
@@ -19,13 +19,13 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
         d((int) f);
         a(1);
         this.e = new BaseRenderable();
-        com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.A.a(10.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         bVar.i = -28.5f;
         bVar.k = 28.5f;
         this.e.setLayoutParams(bVar);
-        this.b = com.censivn.C3DEngine.b.b.A.a(57.0f, 57.0f);
+        this.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(57.0f, 57.0f);
         this.d = new TextureElement(0, false);
         this.b.textures().addElement(this.d);
         this.e.addChild(this.b);
@@ -36,11 +36,11 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
         this.e.addChild(this.a);
         addChild(this.e);
         this.f = new BaseRenderable();
-        com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
-        bVar2.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
-        bVar2.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
-        bVar2.i = -com.censivn.C3DEngine.b.b.A.a(f / 2.0f);
-        bVar2.k = com.censivn.C3DEngine.b.b.A.a(f / 2.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar2 = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar2.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
+        bVar2.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
+        bVar2.i = -com.censivn.C3DEngine.b.b.ScreenConstants.a(f / 2.0f);
+        bVar2.k = com.censivn.C3DEngine.b.b.ScreenConstants.a(f / 2.0f);
         this.f.setLayoutParams(bVar2);
         this.f.mouseEnabled(false);
         addChild(this.f);
@@ -50,20 +50,20 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
         return this.f;
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
-        this.b.position().x = ((-i) / 2.0f) + (com.censivn.C3DEngine.b.b.A.a(57.0f) / 2.0f);
-        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(77.0f);
+        this.b.position().x = ((-i) / 2.0f) + (com.censivn.C3DEngine.b.b.ScreenConstants.a(57.0f) / 2.0f);
+        this.a.position().x = ((-i) / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(77.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
-        Bitmap bitmapA = x.a(b.d.preference_video_ico, com.censivn.C3DEngine.b.b.A.a(57.0f), com.censivn.C3DEngine.b.b.A.a(57.0f));
+        Bitmap bitmapA = x.a(b.d.preference_video_ico, com.censivn.C3DEngine.b.b.ScreenConstants.a(57.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(57.0f));
         com.censivn.C3DEngine.C3DEngine.g().a(this.d, bitmapA);
         bitmapA.recycle();
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         this.a.a();
         com.censivn.C3DEngine.C3DEngine.g().a(this.d);

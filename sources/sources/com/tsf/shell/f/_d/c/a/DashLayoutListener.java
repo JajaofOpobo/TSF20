@@ -22,11 +22,11 @@ public class DashLayoutListener extends h {
         com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar = (com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) this.e;
         aVar.textures().addElement(h);
         com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(4);
-        bVarA.a(0, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
+        bVarA.a(0, 0, 1, 1, com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f));
         bVarA.h();
         for (int i = 0; i < 4; i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = aVar.a(i);
-            bVarA2.a(1, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
+            bVarA2.a(1, 0, 1, 1, com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f));
             bVarA2.o.setAll(0.0f, 0.0f, 1.0f);
             bVarA2.h();
         }

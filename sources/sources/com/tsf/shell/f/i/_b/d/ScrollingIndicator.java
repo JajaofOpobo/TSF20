@@ -26,7 +26,7 @@ public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.GridRenderable
         if (g == null) {
             g = com.censivn.C3DEngine.C3DEngine.g().a(themeDescription.getBitmap(ThemeFolderDescription.SCROLLING_POINT), false);
         }
-        this.h = new com.censivn.C3DEngine.b.f.GridRenderable(19.0f * com.censivn.C3DEngine.b.b.A.b, 10.0f * com.censivn.C3DEngine.b.b.A.b, false);
+        this.h = new com.censivn.C3DEngine.b.f.GridRenderable(19.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
         this.h.textures().addElement(WidgetItemGrid);
         addChild(this.h);
         if (z) {

@@ -74,7 +74,7 @@ public class WidgetContainer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (!a.this.a) {
-                    position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.A.b;
+                    position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b;
                     a.c(a.this);
                 }
             }
@@ -112,15 +112,15 @@ public class WidgetContainer extends BaseRenderable {
         this.f.addChild(kVar);
         this.f.addChild(this.e);
         this.f.rotation().y = 75.0f;
-        this.f.scale().setAll(com.censivn.C3DEngine.b.b.A.b * 1.1f, com.censivn.C3DEngine.b.b.A.b * 1.1f, com.censivn.C3DEngine.b.b.A.b * 1.1f);
+        this.f.scale().setAll(com.censivn.C3DEngine.b.b.ScreenConstants.b * 1.1f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 1.1f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 1.1f);
         addChild(this.f);
-        this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.f) { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.f) { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.this.e();
             }
         });
-        this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.A.b, (-300.0f) * com.censivn.C3DEngine.b.b.A.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.A.b, 100.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
+        this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b, (-300.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f);
         if (this.h) {
             WidgetContainer();
         }

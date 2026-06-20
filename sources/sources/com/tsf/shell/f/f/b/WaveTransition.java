@@ -11,7 +11,7 @@ public class WaveTransition extends ItemPageTransition {
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
-        gVar.position().x = (com.censivn.C3DEngine.b.b.A.D * f) / 2.0f;
+        gVar.position().x = (com.censivn.C3DEngine.b.b.ScreenConstants.D * f) / 2.0f;
         Number3d number3dScale = gVar.scale();
         Number3d number3dScale2 = gVar.scale();
         float fAbs = 1.0f - Math.abs(CylinderTransition);

@@ -38,7 +38,7 @@ public class GestureMenuDrawerItem extends com.tsf.shell.f.e._g.a.MenuActionItem
             }
         }));
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuDrawerItem.2
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {

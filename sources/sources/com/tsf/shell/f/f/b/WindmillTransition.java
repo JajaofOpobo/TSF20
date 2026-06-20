@@ -14,7 +14,7 @@ public class WindmillTransition extends ItemPageTransition {
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         float f2 = 32.0f * f;
-        float fTan = (float) ((((double) (com.censivn.C3DEngine.b.b.A.D / 2)) / Math.tan(Math.toRadians(16.0d))) + ((double) (com.censivn.C3DEngine.b.b.A.E / 2)));
+        float fTan = (float) ((((double) (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2)) / Math.tan(Math.toRadians(16.0d))) + ((double) (com.censivn.C3DEngine.b.b.ScreenConstants.E / 2)));
         gVar.position().x = (float) (Math.sin(Math.toRadians(f2)) * ((double) fTan));
         gVar.position().y = fTan - ((float) (Math.cos(Math.toRadians(f2)) * ((double) fTan)));
         gVar.rotation().z = f2;

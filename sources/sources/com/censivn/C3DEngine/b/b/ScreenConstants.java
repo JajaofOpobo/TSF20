@@ -12,7 +12,7 @@ import com.tsf.shell.utils.DimensionHelper;
 import java.lang.reflect.Method;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class A {
+public class ScreenConstants {
     public static int A;
     public static int B;
     public static int C;

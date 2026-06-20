@@ -5,7 +5,7 @@ import com.tsf.shell.preference.a.a.PreferenceItemC;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
+public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.PanelGroupRenderer {
     private boolean a = false;
 
     public PreferenceSettingL() {
@@ -13,17 +13,17 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         j jVar = new PreferenceSettingJ();
         jVar.a("TSF Launcher V3.8.5 (2015.12.02)");
         b(jVar);
-        com.censivn.C3DEngine.b.e.f fVar = new PreferenceSettingF(a(1, PreferenceSettingB.i.feature_version38_1), PreferenceSettingB.d.feature_wallpaper_blur_v38, com.censivn.C3DEngine.b.b.A.a(320.0f));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer fVar = new PreferenceSettingF(a(1, PreferenceSettingB.i.feature_version38_1), PreferenceSettingB.d.feature_wallpaper_blur_v38, com.censivn.C3DEngine.b.b.ScreenConstants.a(320.0f));
         a((com.censivn.C3DEngine.b.f.IRenderable) fVar);
         b(fVar);
-        i iVar = new PreferenceSettingI(a(2, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.A.a(0.0f));
+        i iVar = new PreferenceSettingI(a(2, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f));
         iVar.a(a(1, PreferenceSettingB.i.feature_version_371_fix_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) iVar);
         b(iVar);
         j jVar2 = new PreferenceSettingJ();
         jVar2.a("TSF Launcher V3.8 (2015.8.26)");
         b(jVar2);
-        i iVar2 = new PreferenceSettingI(a(1, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.A.a(0.0f));
+        i iVar2 = new PreferenceSettingI(a(1, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f));
         iVar2.a(a(1, PreferenceSettingB.i.feature_version_371_feature));
         a((com.censivn.C3DEngine.b.f.IRenderable) iVar2);
         iVar2.a(a(2, PreferenceSettingB.i.feature_version_371_fix_1));
@@ -32,7 +32,7 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         j jVar3 = new PreferenceSettingJ();
         jVar3.a("TSF Launcher V3.7 (2015.7.13)");
         b(jVar3);
-        i iVar3 = new PreferenceSettingI(a(1, PreferenceSettingB.i.feature_version_features), com.censivn.C3DEngine.b.b.A.a(0.0f));
+        i iVar3 = new PreferenceSettingI(a(1, PreferenceSettingB.i.feature_version_features), com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f));
         iVar3.a(a(1, PreferenceSettingB.i.feature_version37_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) iVar3);
         iVar3.a(a(2, PreferenceSettingB.i.feature_version37_2));
@@ -42,10 +42,10 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         iVar3.a(a(4, PreferenceSettingB.i.feature_version37_4));
         a((com.censivn.C3DEngine.b.f.IRenderable) iVar3);
         b(iVar3);
-        com.censivn.C3DEngine.b.e.f fVar2 = new PreferenceSettingF(a(2, PreferenceSettingB.i.feature_version_themes), PreferenceSettingB.d.feature_theme_v37, com.censivn.C3DEngine.b.b.A.a(780.0f));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer fVar2 = new PreferenceSettingF(a(2, PreferenceSettingB.i.feature_version_themes), PreferenceSettingB.d.feature_theme_v37, com.censivn.C3DEngine.b.b.ScreenConstants.a(780.0f));
         a((com.censivn.C3DEngine.b.f.IRenderable) fVar2);
         b(fVar2);
-        i iVar4 = new PreferenceSettingI(a(3, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.A.a(0.0f));
+        i iVar4 = new PreferenceSettingI(a(3, PreferenceSettingB.i.feature_version_improvement_fix), com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f));
         iVar4.a(a(1, PreferenceSettingB.i.feature_version_37_fix_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) iVar4);
         iVar4.a(a(2, PreferenceSettingB.i.feature_version_37_fix_2));
@@ -58,17 +58,17 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         j jVar4 = new PreferenceSettingJ();
         jVar4.a("TSF Launcher V3.6.2 (2015.5.31)");
         b(jVar4);
-        com.censivn.C3DEngine.b.e.f kVar = new PreferenceSettingK(a(1, PreferenceSettingB.i.feature_version36_1));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer kVar = new PreferenceSettingK(a(1, PreferenceSettingB.i.feature_version36_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) kVar);
         b(kVar);
         j jVar5 = new PreferenceSettingJ();
         jVar5.a("TSF Launcher V3.5.2 (2015.5.15)");
         b(jVar5);
-        com.censivn.C3DEngine.b.e.f fVar3 = new PreferenceSettingC.a() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingL.1
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer fVar3 = new PreferenceSettingC.a() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingL.1
             private double e = 0.026179938779914945d;
             private double f = 0.0d;
 
-            @Override // com.censivn.C3DEngine.b.e.h, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.e.TextIconRenderer, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 super.onDrawStart();
                 int iSin = (int) (Math.sin(this.f) * 40.0d);
@@ -76,7 +76,7 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
                 k(iSin + 50);
             }
         };
-        com.censivn.C3DEngine.b.e.f hVar = new PreferenceSettingBase(a(1, PreferenceSettingB.i.feature_version_352_1), 0.0f);
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer hVar = new PreferenceSettingBase(a(1, PreferenceSettingB.i.feature_version_352_1), 0.0f);
         a((com.censivn.C3DEngine.b.f.IRenderable) hVar);
         b(hVar);
         a((com.censivn.C3DEngine.b.f.IRenderable) fVar3);
@@ -84,25 +84,25 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         j jVar6 = new PreferenceSettingJ();
         jVar6.a("TSF Launcher V3.5.1 (2015.5.10)");
         b(jVar6);
-        com.censivn.C3DEngine.b.e.f gVar = new PreferenceSettingG(a(1, PreferenceSettingB.i.feature_version35_1));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer gVar = new PreferenceSettingG(a(1, PreferenceSettingB.i.feature_version35_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) gVar);
         b(gVar);
         j jVar7 = new PreferenceSettingJ();
         jVar7.a("TSF Launcher V3.4 (2015.4.10)");
         b(jVar7);
-        com.censivn.C3DEngine.b.e.f eVar = new PreferenceSettingE(a(1, PreferenceSettingB.i.feature_version34_1));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer eVar = new PreferenceSettingE(a(1, PreferenceSettingB.i.feature_version34_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) eVar);
         b(eVar);
         j jVar8 = new PreferenceSettingJ();
         jVar8.a("TSF Launcher V3.3 (2015.3.13)");
         b(jVar8);
-        com.censivn.C3DEngine.b.e.f bVar = new PreferenceSettingB(a(1, PreferenceSettingB.i.feature_version33_1));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer bVar = new PreferenceSettingB(a(1, PreferenceSettingB.i.feature_version33_1));
         a((com.censivn.C3DEngine.b.f.IRenderable) bVar);
         b(bVar);
-        com.censivn.C3DEngine.b.e.f aVar = new PreferenceSettingA(a(2, PreferenceSettingB.i.feature_version33_2));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer aVar = new PreferenceSettingA(a(2, PreferenceSettingB.i.feature_version33_2));
         a((com.censivn.C3DEngine.b.f.IRenderable) aVar);
         b(aVar);
-        com.censivn.C3DEngine.b.e.f dVar = new PreferenceSettingD(a(3, PreferenceSettingB.i.feature_version33_3));
+        com.censivn.C3DEngine.b.e.AbstractPanelRenderer dVar = new PreferenceSettingD(a(3, PreferenceSettingB.i.feature_version33_3));
         a((com.censivn.C3DEngine.b.f.IRenderable) dVar);
         b(dVar);
     }
@@ -115,11 +115,11 @@ public class PreferenceSettingL extends com.censivn.C3DEngine.b.e.i {
         return i + "." + x.c(i2);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void f() {
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void g() {
         if (this.a) {
             com.tsf.shell.manager.p.TipsDialogManager.b.a();

@@ -2,7 +2,7 @@ package com.tsf.shell.f.h.a;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import com.censivn.C3DEngine.b.e.j;
+import com.censivn.C3DEngine.b.e.ActionButtonRenderer;
 import com.tsf.b;
 import com.tsf.shell.manager.b.ConfigManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -15,7 +15,7 @@ public class ScenePositionConfig extends j {
     public ScenePositionConfig() {
         h(b.i.text_direction);
         a(new j.ScenePositionConfig() { // from class: com.tsf.shell.f.h.a.b.1
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.b.1.1
                     @Override // java.lang.Runnable
@@ -27,7 +27,7 @@ public class ScenePositionConfig extends j {
         });
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         this.a = e.aB();
         switch (this.a) {

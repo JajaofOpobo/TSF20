@@ -19,7 +19,7 @@ public class SceneAnimationController implements c.a {
     private LabelRenderable f;
     private int g;
     private b b = new SceneAnimationHandler(this) { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.1
-        @Override // com.tsf.shell.f.h.a.b.SceneAnimationHandler, com.censivn.C3DEngine.b.e.c
+        @Override // com.tsf.shell.f.h.a.b.SceneAnimationHandler, com.censivn.C3DEngine.b.e.DesktopPanelRenderer
         public void g() {
             super.g();
             a.this.a.u();
@@ -31,16 +31,16 @@ public class SceneAnimationController implements c.a {
         public C0112a a() {
             C0112a c0112a = a.this.new C0112a();
             c0112a.setAABBPX(com.tsf.shell.manager.o.ButtonPresetManager.a.T, com.tsf.shell.manager.o.ButtonPresetManager.a.U);
-            c0112a.position().y = -com.censivn.C3DEngine.b.b.A.a(30.0f);
+            c0112a.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
             return c0112a;
         }
     };
-    private com.censivn.C3DEngine.b.b.A.b c = new com.censivn.C3DEngine.b.b.A.b();
+    private com.censivn.C3DEngine.b.b.ScreenConstants.b c = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
 
     public SceneAnimationController(c cVar) {
         this.e = 8;
         this.a = cVar;
-        this.c.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(180.0f));
+        this.c.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f));
         this.e = b(e.ax());
     }
 
@@ -130,8 +130,8 @@ public class SceneAnimationController implements c.a {
             this.f.d(40);
             this.f.c(SceneAnimationHandler.i.notic_no_recent_apps);
             this.f.b();
-            this.f.minX(com.censivn.C3DEngine.b.b.A.z);
-            this.f.maxX(com.censivn.C3DEngine.b.b.A.A);
+            this.f.minX(com.censivn.C3DEngine.b.b.ScreenConstants.z);
+            this.f.maxX(com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
         return this.f;
     }
@@ -184,8 +184,8 @@ public class SceneAnimationController implements c.a {
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void h() {
         if (this.f != null) {
-            this.f.minX(com.censivn.C3DEngine.b.b.A.z);
-            this.f.maxX(com.censivn.C3DEngine.b.b.A.A);
+            this.f.minX(com.censivn.C3DEngine.b.b.ScreenConstants.z);
+            this.f.maxX(com.censivn.C3DEngine.b.b.ScreenConstants.A);
             this.c.onChildMeasure(this.f);
         }
     }

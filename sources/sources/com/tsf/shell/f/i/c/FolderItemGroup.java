@@ -108,7 +108,7 @@ public class FolderItemGroup extends ItemGroupBase {
         com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
         bVar.removeFromParent();
         this.l.aX().addChild(bVar);
-        float f = (com.censivn.C3DEngine.b.b.A.c * 60.0f) / 2.0f;
+        float f = (com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f) / 2.0f;
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < 2; i++) {
@@ -118,9 +118,9 @@ public class FolderItemGroup extends ItemGroupBase {
             this.k.addChild(bVar2);
             bVar2.rotation().z = 0.0f;
             bVar2.scale().setAll(0.4f, 0.4f, 1.0f);
-            bVar2.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
+            bVar2.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             bVar2.position().y = f2;
-            f2 -= com.censivn.C3DEngine.b.b.A.c * 60.0f;
+            f2 -= com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f;
         }
         this.l.aY();
         this.v = new Runnable() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.3
@@ -162,17 +162,17 @@ public class FolderItemGroup extends ItemGroupBase {
         this.u.add(this.m);
         this.u.add(this.n);
         this.u.add(this.o);
-        float f = com.censivn.C3DEngine.b.b.A.c * (-60.0f);
+        float f = com.censivn.C3DEngine.b.b.ScreenConstants.c * (-60.0f);
         int size = this.u.size();
         float f2 = f;
         for (int i = 0; i < size; i++) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.u.get((size - i) - 1);
-            bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.c;
+            bVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             bVar.position().y = f2;
             Number3d number3dScale = bVar.scale();
             bVar.scale().y = 0.4f;
             number3dScale.x = 0.4f;
-            f2 += 60.0f * com.censivn.C3DEngine.b.b.A.c;
+            f2 += 60.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             this.k.addChild(bVar);
         }
         return this.k;

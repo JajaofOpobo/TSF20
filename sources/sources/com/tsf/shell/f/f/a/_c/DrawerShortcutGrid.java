@@ -18,7 +18,7 @@ public class DrawerShortcutGrid extends DrawerPageItemBase {
         super(hVar, fVar, DrawerWidgetTouchHandler.d.drawer_hide, x.c(DrawerWidgetTouchHandler.i.text_hide));
         float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
         this.i = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
-        this.g = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerShortcutGrid.1
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.i, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * f, 10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerShortcutGrid.1
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(int i) {
                 if (i > 0) {
@@ -29,7 +29,7 @@ public class DrawerShortcutGrid extends DrawerPageItemBase {
                             f.this.h.a();
                         }
                     };
-                    dVar.h(com.censivn.C3DEngine.b.b.A.a(-150.0f));
+                    dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
                     dVar.a(0);
                     com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h);
                     com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h, 300, dVar);

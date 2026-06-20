@@ -22,7 +22,7 @@ public class RendererImpl implements GLSurfaceView.Renderer {
     public static long f;
     public static boolean g;
     private SceneGraph j;
-    private com.censivn.C3DEngine.b.c.f k;
+    private com.censivn.C3DEngine.b.c.TextureFactory k;
     private float l;
     private long p;
     private ActivityManager q;
@@ -48,7 +48,7 @@ public class RendererImpl implements GLSurfaceView.Renderer {
         g = Build.VERSION.SDK_INT >= 9;
         MatrixStack.init();
         this.t = bVar;
-        this.k = new com.censivn.C3DEngine.b.c.f();
+        this.k = new com.censivn.C3DEngine.b.c.TextureFactory();
         com.censivn.C3DEngine.a.GLSurfaceViewWrapper.a(this.k);
         com.censivn.C3DEngine.a.GLSurfaceViewWrapper.a(this);
         this.q = (ActivityManager) com.censivn.C3DEngine.C3DEngine.d().getSystemService("activity");
@@ -77,23 +77,23 @@ public class RendererImpl implements GLSurfaceView.Renderer {
     public void onSurfaceChanged(GL10 gl10, int i, int i2) {
         GLES20.glViewport(0, 0, i, i2);
         f = Thread.currentThread().getId();
-        if (com.censivn.C3DEngine.b.b.A.F != i || com.censivn.C3DEngine.b.b.A.G != i2) {
-            boolean z = com.censivn.C3DEngine.b.b.A.O;
-            com.censivn.C3DEngine.b.b.A.a(i, i2);
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.F != i || com.censivn.C3DEngine.b.b.ScreenConstants.G != i2) {
+            boolean z = com.censivn.C3DEngine.b.b.ScreenConstants.O;
+            com.censivn.C3DEngine.b.b.ScreenConstants.a(i, i2);
             if (this.v) {
                 this.j.c();
                 a(14000.0f, 1.0f);
                 a(true);
-                this.j.b().a.z = 1000.0f * com.censivn.C3DEngine.b.b.A.b;
-                this.j.b().f = com.censivn.C3DEngine.b.b.A.G / this.j.b().a.z;
+                this.j.b().a.z = 1000.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b;
+                this.j.b().f = com.censivn.C3DEngine.b.b.ScreenConstants.G / this.j.b().a.z;
                 this.t.b();
                 this.v = false;
                 b(i, i2);
                 return;
             }
             b(i, i2);
-            com.tsf.shell.manager.A.b.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
-            if (z != com.censivn.C3DEngine.b.b.A.O) {
+            com.tsf.shell.manager.A.b.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
+            if (z != com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                 com.tsf.shell.manager.p.TipsDialogManager.a(13);
             }
         }

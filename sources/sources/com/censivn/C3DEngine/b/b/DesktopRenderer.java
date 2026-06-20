@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.b.b;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.e.f;
+import com.censivn.C3DEngine.b.e.AbstractPanelRenderer;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -11,18 +11,18 @@ import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends BaseRenderable {
+public class DesktopRenderer extends BaseRenderable {
     private int a;
     private int b;
     private int d;
     private GridRenderable f;
-    private com.censivn.C3DEngine.b.d.a i;
+    private com.censivn.C3DEngine.b.d.MouseEventListener i;
     private IRenderable j;
     private float c = 0.0f;
     private boolean e = false;
     private int g = 0;
     private Number3d k = new Number3d();
-    private b h = new b();
+    private TouchState h = new TouchState();
 
     /* JADX INFO: Access modifiers changed from: private */
     public IRenderableContainer a(IRenderable iVar) {
@@ -37,15 +37,15 @@ public class c extends BaseRenderable {
 
     public c() {
         setLayoutParams(this.h);
-        this.d = (int) A.a(4.0f);
+        this.d = (int) ScreenConstants.a(4.0f);
         this.f = new GridRenderable(this.a, this.d, false);
         this.f.setDefaultColor(new Color4(255, 255, 255, 70));
         this.f.useVBO(false);
-        this.i = new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.c.1
-            private com.censivn.C3DEngine.b.d.a b;
+        this.i = new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.b.DesktopRenderer.1
+            private com.censivn.C3DEngine.b.d.MouseEventListener b;
             private IRenderable d;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
                 this.d = c.this.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -59,7 +59,7 @@ public class c extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (this.b != null) {
                     this.b.f(motionEvent);
@@ -68,21 +68,21 @@ public class c extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.b != null) {
                     this.b.a(motionEvent, motionEvent2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.b != null) {
                     this.b.a(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.b != null) {
                     this.b.a(motionEvent, motionEvent2, f, f2);
@@ -157,9 +157,9 @@ public class c extends BaseRenderable {
                 i = i3;
             } else {
                 childAt.alpha(0.0f);
-                childAt.position().y = layoutParams.g - A.a(500.0f);
+                childAt.position().y = layoutParams.g - ScreenConstants.a(500.0f);
                 if (i2 == iNumChildren - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.c.2
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.DesktopRenderer.2
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             c.this.mouseEnabled(true);
@@ -271,7 +271,7 @@ public class c extends BaseRenderable {
     private boolean a(Number3d number3d, i iVar) {
         b layoutParams = iVar.getLayoutParams();
         float f = iVar.position().y + number3d.y;
-        return layoutParams.i + f <= ((float) A.I) && layoutParams.k + f >= ((float) (-A.I));
+        return layoutParams.i + f <= ((float) ScreenConstants.I) && layoutParams.k + f >= ((float) (-ScreenConstants.I));
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable

@@ -45,9 +45,9 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     private Number3d L;
     private Number3d M;
     private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase N;
-    private com.censivn.C3DEngine.b.d.a O;
-    private com.censivn.C3DEngine.b.d.a P;
-    private com.censivn.C3DEngine.b.d.a Q;
+    private com.censivn.C3DEngine.b.d.MouseEventListener O;
+    private com.censivn.C3DEngine.b.d.MouseEventListener P;
+    private com.censivn.C3DEngine.b.d.MouseEventListener Q;
     private k R;
     private com.tsf.shell.f.b.ShellKeyEventHandler S;
     private com.censivn.C3DEngine.b.f.BaseRenderable T;
@@ -358,24 +358,24 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         }
         addChild(this.t);
         com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
-        this.O = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.15
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.O = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.15
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 b.G.a((WidgetItemIndicator.a) b.this);
                 b.G.a((com.censivn.C3DEngine.b.f.IRenderable) b.this);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 b.G.a(motionEvent, motionEvent2);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 b.G.a(motionEvent);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 w.b();
                 if (b.this.K == b.b) {
@@ -385,18 +385,18 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
             }
         };
-        this.P = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.16
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.P = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.16
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 b.this.R.a(motionEvent, motionEvent2);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 b.this.R.d();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 w.b();
                 if (b.this.K == b.b) {
@@ -406,8 +406,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
             }
         };
-        this.Q = new com.censivn.C3DEngine.b.d.a(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.17
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.Q = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.17
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 w.b();
                 if (b.this.K == b.b) {
@@ -490,14 +490,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             }
         };
         this.S = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.19
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4 && b.this.K == b.a && b.this.mouseEnabled() && !b.this.o.v()) {
                     b.this.m(true);
                 }
             }
 
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void b(int i, KeyEvent keyEvent) {
             }
         };
@@ -1039,7 +1039,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                             dVar.a(255);
                             dVar.e(b.this.M.z);
                         } else {
-                            if (com.censivn.C3DEngine.b.b.A.O) {
+                            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                                 b.this.L.x = b.this.K().cellX;
                                 b.this.L.y = b.this.K().cellY;
                                 b.this.M.z = b.this.K().rotation;
@@ -1056,7 +1056,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         com.censivn.C3DEngine.b.g.TweenUtils.a(b.this, 380, dVar);
                     } else {
                         if (b.this.aa == null) {
-                            if (com.censivn.C3DEngine.b.b.A.O) {
+                            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                                 b.this.L.x = b.this.K().cellX;
                                 b.this.L.y = b.this.K().cellY;
                                 b.this.M.z = b.this.K().rotation;
@@ -1658,14 +1658,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         bVar.visible(false);
                     } else {
                         dVar.f(0.0f);
-                        dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
+                        dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.c * 100.0f);
                         dVar.e(0.0f);
                         dVar.a(255);
                         com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
                     }
                 } else {
                     dVar.f(0.0f);
-                    dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
+                    dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.c * 100.0f);
                     dVar.e(0.0f);
                     dVar.a(255);
                     com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);

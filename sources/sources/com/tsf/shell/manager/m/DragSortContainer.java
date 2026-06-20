@@ -2,7 +2,7 @@ package com.tsf.shell.manager.m;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.b.A.e;
+import com.censivn.C3DEngine.b.b.ScreenConstants.e;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import com.tsf.shell.f.i.b.e.DrawerItemButton;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
+public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants.c {
     public interface InterfaceC0113a {
         java.util.ArrayList<com.censivn.C3DEngine.b.f.IRenderable> b();
     }
@@ -88,7 +88,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
     }
 
     public void e() {
-        this.d = com.censivn.C3DEngine.b.b.A.a(15.0f);
+        this.d = com.censivn.C3DEngine.b.b.ScreenConstants.a(15.0f);
         this.a = new h();
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -102,11 +102,11 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.m.DragSortContainer$a, reason: collision with other inner class name */
-    class C0131a extends com.censivn.C3DEngine.b.d.a {
+    class C0131a extends com.censivn.C3DEngine.b.d.MouseEventListener {
         private Number3d b;
         private boolean d;
         private boolean e;
-        private com.censivn.C3DEngine.b.d.a f;
+        private com.censivn.C3DEngine.b.d.MouseEventListener f;
         private i g;
         private int h;
         private boolean i;
@@ -131,7 +131,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             this.g = iVar;
             this.e = true;
             com.censivn.C3DEngine.a.d.d().e();
-            com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) this, true);
+            com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.MouseEventListener) this, true);
             this.b.setAllFrom(this.g.position());
             if (this.g != null && this.g.getMouseEventListener() != null) {
                 this.f = this.g.getMouseEventListener();
@@ -142,7 +142,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             this.g.setAnimationObjectState(true);
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
             this.e = false;
             this.d = false;
@@ -154,7 +154,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             a.this.c = 0;
             if (this.f != null) {
@@ -163,18 +163,18 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
             if (this.f != null) {
                 this.f.a(motionEvent);
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void c(MotionEvent motionEvent) {
             if (this.g != null) {
                 w.a();
@@ -202,7 +202,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void d(MotionEvent motionEvent) {
             if (this.g != null) {
                 this.d = false;
@@ -243,7 +243,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2) {
             if (this.g != null && this.d && !this.i) {
                 this.i = true;
@@ -271,12 +271,12 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
                             C0131a.this.k.y = C0131a.this.j[1];
                             float f = C0131a.this.k.x;
                             a.this.b.globalToLocal(C0131a.this.k);
-                            if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.A.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.A.A) - b.a) {
+                            if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.ScreenConstants.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.ScreenConstants.A) - b.a) {
                                 if (com.tsf.shell.manager.app.StateHub.F() != -1) {
                                     C0131a.this.l = true;
                                     a.this.removeChild(a.this.a);
                                     a.this.e.o();
-                                    final com.censivn.C3DEngine.b.d.a aVar = C0131a.this.f;
+                                    final com.censivn.C3DEngine.b.d.MouseEventListener aVar = C0131a.this.f;
                                     a.this.e.a(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {

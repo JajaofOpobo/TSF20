@@ -579,7 +579,7 @@ public class ConfigManager {
 
     public static void a(int i2, int i3) {
         SharedPreferences.Editor editorAC = aC();
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             x = i2;
             y = i3;
             editorAC.putInt("drawer_rows_v", i2);

@@ -3,7 +3,7 @@ package com.tsf.shell.f.h.a.a;
 import android.graphics.Bitmap;
 import android.view.KeyEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.h.a.WorkspacePreviewNode;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -14,7 +14,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     public static int b;
     public static int c;
     private com.tsf.shell.f.h.a.WorkspacePreviewNode d;
-    private com.censivn.C3DEngine.b.b.A.b e;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.b e;
     private e f;
     private A g;
     private f h;
@@ -26,22 +26,22 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
 
     public SceneElementRenderer(com.tsf.shell.f.h.a.WorkspacePreviewNode cVar) {
         this.d = cVar;
-        a = (int) com.censivn.C3DEngine.b.b.A.a(170.0f);
-        int iA = (int) com.censivn.C3DEngine.b.b.A.a(550.0f);
+        a = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(170.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(550.0f);
         c = iA;
         b = iA;
         this.f = new SceneElementHandler(this) { // from class: com.tsf.shell.f.h.a.a.SceneElementRenderer.1
-            @Override // com.tsf.shell.f.h.a.a.SceneElementHandler, com.censivn.C3DEngine.b.e.c
+            @Override // com.tsf.shell.f.h.a.a.SceneElementHandler, com.censivn.C3DEngine.b.e.DesktopPanelRenderer
             public void g() {
                 super.g();
                 d.this.d.u();
             }
         };
-        this.e = new com.censivn.C3DEngine.b.b.A.b();
+        this.e = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
         this.i = new com.tsf.shell.f.h.a.a.a.SceneSurfaceNode(this, cVar.c());
         this.g = new SceneNodeContainer();
         this.h = new SceneElementConfig();
-        this.e.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(180.0f));
+        this.e.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f));
     }
 
     public void a(int i) {
@@ -62,7 +62,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
         this.j = true;
         this.i.a(bVar);
         com.tsf.shell.manager.app.ServiceFactory.f();
-        com.censivn.C3DEngine.b.c.b.a(this);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
     }
 
     public void l() {
@@ -70,7 +70,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
             this.d.g();
             this.j = false;
             com.tsf.shell.manager.app.ServiceFactory.g();
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
         }
     }
 
@@ -91,14 +91,14 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
         return this.l;
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4 && this.j) {
             SceneElementRenderer();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 

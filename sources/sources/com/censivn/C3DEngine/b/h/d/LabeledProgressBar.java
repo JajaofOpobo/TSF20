@@ -14,7 +14,7 @@ public class LabeledProgressBar extends ProgressBarWidget {
         this.b = 0;
         this.a = new LabelRenderable();
         this.a.d(32);
-        this.c = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        this.c = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         addChild(this.a);
     }
 

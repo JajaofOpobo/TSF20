@@ -16,8 +16,8 @@ public class DrawerSettingsItem extends GridRenderable {
     }
 
     public void a(int i, int i2, h hVar) {
-        this.d = i * com.censivn.C3DEngine.b.b.A.b;
-        this.e = i2 * com.censivn.C3DEngine.b.b.A.b;
+        this.d = i * com.censivn.C3DEngine.b.b.ScreenConstants.b;
+        this.e = i2 * com.censivn.C3DEngine.b.b.ScreenConstants.b;
         a(hVar, false);
         DrawerSettingsItem();
     }
@@ -31,8 +31,8 @@ public class DrawerSettingsItem extends GridRenderable {
         float f2 = hVar.b;
         float f3 = hVar.c;
         float f4 = this.d / 2.0f;
-        this.f = com.censivn.C3DEngine.b.b.A.b * f;
-        this.g = (hVar.c - f2) * com.censivn.C3DEngine.b.b.A.b;
+        this.f = com.censivn.C3DEngine.b.b.ScreenConstants.b * f;
+        this.g = (hVar.c - f2) * com.censivn.C3DEngine.b.b.ScreenConstants.b;
         uvs().set(0, 1.0f, 1.0f);
         uvs().set(3, 0.0f, 1.0f);
         uvs().set(4, 1.0f, 0.0f);

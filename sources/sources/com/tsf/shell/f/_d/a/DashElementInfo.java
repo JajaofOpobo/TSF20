@@ -48,6 +48,6 @@ public class DashElementInfo extends h {
     @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
-        com.tsf.shell.manager.i.PrimeEffectRenderer.a(this.c.a(), com.censivn.C3DEngine.b.b.A.a(30.0f));
+        com.tsf.shell.manager.i.PrimeEffectRenderer.a(this.c.a(), com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
     }
 }

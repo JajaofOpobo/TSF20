@@ -134,7 +134,7 @@ public class LabelManagerV2 {
         }
         d.setFakeBoldText(aVar2.d);
         if (aVar2.c) {
-            d.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.A.c, 2.0f * com.censivn.C3DEngine.b.b.A.c, 2.0f * com.censivn.C3DEngine.b.b.A.c, -587202560);
+            d.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, -587202560);
         } else {
             d.setShadowLayer(0.0f, 0.0f, 0.0f, -16777216);
         }

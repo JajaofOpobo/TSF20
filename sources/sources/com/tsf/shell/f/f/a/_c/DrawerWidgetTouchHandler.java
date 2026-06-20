@@ -62,7 +62,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                 return b.this.a.l().getChildAt(i2);
             }
         };
-        this.a = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.A.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, com.censivn.C3DEngine.b.b.A.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerWidgetTouchHandler.2
+        this.a = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerWidgetTouchHandler.2
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(int i2) {
                 b.this.b(i2);
@@ -138,13 +138,13 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
         this.g = eVar2;
         this.d.add(eVar2);
         int size = this.d.size();
-        float f2 = com.censivn.C3DEngine.b.b.A.z + (com.censivn.C3DEngine.b.b.A.D / (size + 1));
-        float f3 = com.censivn.C3DEngine.b.b.A.D / (size + 1);
+        float f2 = com.censivn.C3DEngine.b.b.ScreenConstants.z + (com.censivn.C3DEngine.b.b.ScreenConstants.D / (size + 1));
+        float f3 = com.censivn.C3DEngine.b.b.ScreenConstants.D / (size + 1);
         float f4 = f2;
         for (int i2 = 0; i2 < size; i2++) {
             e eVar3 = this.d.get(i2);
             eVar3.position().x = f4;
-            eVar3.position().y = ((((-com.tsf.shell.f.f.a.PageGridRenderer.a) / 2.0f) + com.tsf.shell.f.f.a.FolderPage.F) - com.tsf.shell.f.f.a.PageGridRenderer.b) + (com.censivn.C3DEngine.b.b.A.c * 10.0f);
+            eVar3.position().y = ((((-com.tsf.shell.f.f.a.PageGridRenderer.a) / 2.0f) + com.tsf.shell.f.f.a.FolderPage.F) - com.tsf.shell.f.f.a.PageGridRenderer.b) + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f);
             eVar3.removeFromParent();
             addChild(eVar3);
             f4 += f3;
@@ -164,7 +164,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                     b.this.j.a();
                 }
             };
-            dVar.h(com.censivn.C3DEngine.b.b.A.a(-150.0f));
+            dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
             dVar.a(0);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 300, dVar);
@@ -211,7 +211,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                 bVar.am();
                 i2 = i3 + 1;
             } else {
-                this.b.a(this.a.g() * com.censivn.C3DEngine.b.b.A.D);
+                this.b.a(this.a.g() * com.censivn.C3DEngine.b.b.ScreenConstants.D);
                 this.b.b();
                 return;
             }

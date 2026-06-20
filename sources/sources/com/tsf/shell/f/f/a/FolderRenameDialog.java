@@ -24,7 +24,7 @@ public class FolderRenameDialog extends BaseRenderable {
     private A f;
     private A g;
     private BaseRenderable a = new BaseRenderable();
-    private GridRenderable c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
+    private GridRenderable c = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
 
     public FolderRenameDialog(h hVar) {
         this.b = hVar;
@@ -52,8 +52,8 @@ public class FolderRenameDialog extends BaseRenderable {
         this.e.d(44);
         this.e.a(com.tsf.shell.manager.b.ConfigManager.ap());
         this.e.b(1);
-        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.3
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.c) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.3
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 g.this.a(g.this.e.c());
             }
@@ -119,17 +119,17 @@ public class FolderRenameDialog extends BaseRenderable {
     }
 
     private void b() {
-        this.f.position().x = ((com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(50.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f)) - com.tsf.shell.manager.g.LayoutDimensionConstants.j;
-        this.g.position().x = (com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(25.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f);
-        this.e.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(25.0f);
-        this.e.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(400.0f)));
-        this.c.a(com.censivn.C3DEngine.b.b.A.D);
+        this.f.position().x = ((com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f)) - com.tsf.shell.manager.g.LayoutDimensionConstants.j;
+        this.g.position().x = (com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.j / 2.0f);
+        this.e.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f);
+        this.e.f((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f)));
+        this.c.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
         this.c.calAABB();
     }
 
     public void a(int i, int i2, int i3, int i4) {
         b();
-        position().y = com.censivn.C3DEngine.b.b.A.B - (this.c.c() / 2.0f);
+        position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B - (this.c.c() / 2.0f);
     }
 
     public void b(boolean z) {
@@ -142,11 +142,11 @@ public class FolderRenameDialog extends BaseRenderable {
                 }
             };
             dVar.a(0);
-            dVar.h(com.censivn.C3DEngine.b.b.A.a(200.0f));
+            dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f));
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 350, dVar);
             return;
         }
-        this.a.position().y = com.censivn.C3DEngine.b.b.A.a(200.0f);
+        this.a.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
         this.a.alpha(0.0f);
     }
 
@@ -212,8 +212,8 @@ public class FolderRenameDialog extends BaseRenderable {
             textures().addElement(this.a);
             calAABB(1.5f, 1.5f, 1.0f);
             this.d = i2;
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.a.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.a.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (PageElement.this.g != null) {
                         PageElement.this.g.b();
@@ -258,8 +258,8 @@ public class FolderRenameDialog extends BaseRenderable {
         public void e() {
             if (this.e == null) {
                 this.e = new com.tsf.shell.f.e.CircleDotNode();
-                this.e.position().x = com.censivn.C3DEngine.b.b.A.a(36.0f);
-                this.e.position().y = com.censivn.C3DEngine.b.b.A.a(36.0f);
+                this.e.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(36.0f);
+                this.e.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(36.0f);
             }
             this.f = true;
         }

@@ -7,11 +7,11 @@ import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends g {
-    public static final int a = com.censivn.C3DEngine.b.b.A.b(58.0f);
+public class LabeledIconRenderer extends IconLabelRenderer {
+    public static final int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(58.0f);
     public static final TextureElement b = new TextureElement(0, false);
     private a d;
-    private com.censivn.C3DEngine.b.b.b e;
+    private com.censivn.C3DEngine.b.b.TouchState e;
     private C0028b f;
 
     public static class a {
@@ -19,11 +19,11 @@ public class b extends g {
         }
     }
 
-    public b() {
+    public LabeledIconRenderer() {
         h();
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer, com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         iVar.position().x = (-iVar.maxX()) / 2.0f;
     }
@@ -32,12 +32,12 @@ public class b extends g {
         this.d = aVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
     }
@@ -69,7 +69,7 @@ public class b extends g {
     }
 
     private void h() {
-        this.e = new com.censivn.C3DEngine.b.b.b();
+        this.e = new com.censivn.C3DEngine.b.b.TouchState();
         this.e.position().y = (-b()) / 2.0f;
         addChild(this.e);
         this.e.position().x = (-this.e.maxX()) / 2.0f;
@@ -81,12 +81,12 @@ public class b extends g {
         this.e.addChild(c0028b);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.g, com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.e.IconLabelRenderer, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
     }
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.b$b, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.LabeledIconRenderer$b, reason: collision with other inner class name */
     class C0028b extends com.censivn.C3DEngine.b.f.BaseRenderable {
         private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b;
         private LabelRenderable c = new LabelRenderable();
@@ -95,7 +95,7 @@ public class b extends g {
 
         public C0028b() {
             this.c.d(50);
-            this.c.position().x = b.a + com.censivn.C3DEngine.b.b.A.a(20.0f);
+            this.c.position().x = b.a + com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
             this.c.b(1);
             this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, b.a, b.a * 2, b.a);
             this.b.position().x = b.a / 2.0f;
@@ -109,8 +109,8 @@ public class b extends g {
             addChild(this.b);
             addChild(this.c);
             b(false);
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.e.b.b.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.e.LabeledIconRenderer.b.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     b.this.a(C0028b.this, true);
                 }
@@ -124,7 +124,7 @@ public class b extends g {
         public void a(String str) {
             this.c.a(str);
             this.c.b();
-            setAABBPX(0.0f, ((-b.a) / 2.0f) * 1.5f, 0.0f, this.c.position().x + this.c.maxX() + com.censivn.C3DEngine.b.b.A.a(50.0f), 1.5f * (b.a / 2.0f), 0.0f);
+            setAABBPX(0.0f, ((-b.a) / 2.0f) * 1.5f, 0.0f, this.c.position().x + this.c.maxX() + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f), 1.5f * (b.a / 2.0f), 0.0f);
             notifLayoutRefresh();
         }
 

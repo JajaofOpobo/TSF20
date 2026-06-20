@@ -25,7 +25,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     public int b;
     public int c;
     public int d;
-    public com.censivn.C3DEngine.b.d.a l;
+    public com.censivn.C3DEngine.b.d.MouseEventListener l;
     public float y;
     public float z;
     public int e = 1;
@@ -128,8 +128,8 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.A.a;
-        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.A.a;
+        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void d(int i, int i2, int i3, int i4) {
@@ -137,8 +137,8 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.A.b;
-        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.A.b;
+        this.N = this.K.b * i3 * com.censivn.C3DEngine.b.b.ScreenConstants.b;
+        this.O = this.K.b * i4 * com.censivn.C3DEngine.b.b.ScreenConstants.b;
     }
 
     public void a(int i, int i2, int i3, int i4, float f, float f2) {
@@ -164,8 +164,8 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
         this.h = i2;
         this.e = i3;
         this.f = i4;
-        this.N = i5 * com.censivn.C3DEngine.b.b.A.a;
-        this.O = i6 * com.censivn.C3DEngine.b.b.A.a;
+        this.N = i5 * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+        this.O = i6 * com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void a(int i, int i2) {
@@ -184,22 +184,22 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     public void c(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.a;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.a;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void d(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.b;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.b;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.ScreenConstants.b;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.ScreenConstants.b;
     }
 
     public void e(int i, int i2) {
         this.e = i;
         this.f = i2;
-        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.A.c;
-        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.A.c;
+        this.N = this.K.b * i * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        this.O = this.K.b * i2 * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     }
 
     public void f(int i, int i2) {
@@ -221,7 +221,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
         g();
     }
 
-    public void a(com.censivn.C3DEngine.b.d.a aVar) {
+    public void a(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         this.l = aVar;
     }
 
@@ -253,7 +253,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public void c(float f) {
-        this.N = com.censivn.C3DEngine.b.b.A.a * f;
+        this.N = com.censivn.C3DEngine.b.b.ScreenConstants.a * f;
     }
 
     public float m() {
@@ -261,7 +261,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public float n() {
-        return this.N / com.censivn.C3DEngine.b.b.A.a;
+        return this.N / com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void d(float f) {
@@ -269,7 +269,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public void e(float f) {
-        this.O = com.censivn.C3DEngine.b.b.A.a * f;
+        this.O = com.censivn.C3DEngine.b.b.ScreenConstants.a * f;
     }
 
     public float o() {
@@ -277,7 +277,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public float p() {
-        return this.O / com.censivn.C3DEngine.b.b.A.a;
+        return this.O / com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void a(int i) {
@@ -285,7 +285,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public void b(int i) {
-        this.P = i * com.censivn.C3DEngine.b.b.A.a;
+        this.P = i * com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public float q() {
@@ -293,7 +293,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public float r() {
-        return this.P / com.censivn.C3DEngine.b.b.A.a;
+        return this.P / com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public void c(int i) {
@@ -301,7 +301,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public void d(int i) {
-        this.Q = i * com.censivn.C3DEngine.b.b.A.a;
+        this.Q = i * com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     public float s() {
@@ -309,7 +309,7 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget
     }
 
     public float t() {
-        return this.Q / com.censivn.C3DEngine.b.b.A.a;
+        return this.Q / com.censivn.C3DEngine.b.b.ScreenConstants.a;
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget

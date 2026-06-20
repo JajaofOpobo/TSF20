@@ -25,7 +25,7 @@ public class FolderTransitionA extends FolderPageTransitionBase {
     public void b(ArrayList<i> arrayList, boolean z, Runnable runnable) {
         com.censivn.C3DEngine.b.g.TweenParams dVar;
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = null;
-        float fA = com.censivn.C3DEngine.b.b.A.a(300.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f);
         int i = 0;
         while (i < arrayList.size()) {
             i iVar = arrayList.get(i);
@@ -70,7 +70,7 @@ public class FolderTransitionA extends FolderPageTransitionBase {
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
-        float fA = com.censivn.C3DEngine.b.b.A.a(0.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
         com.censivn.C3DEngine.b.g.TweenParams dVar = null;
         int i = 0;
         while (i < aVar.a()) {

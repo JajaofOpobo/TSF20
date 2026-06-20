@@ -26,7 +26,7 @@ public class SceneInteractionHandler extends BaseRenderable {
     private float[] n = new float[2];
     private boolean o = false;
     private BaseRenderable a = new BaseRenderable();
-    private com.censivn.C3DEngine.b.f.ColoredRectRenderable l = new com.censivn.C3DEngine.b.f.ColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(200.0f));
+    private com.censivn.C3DEngine.b.f.ColoredRectRenderable l = new com.censivn.C3DEngine.b.f.ColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f));
 
     /* JADX INFO: renamed from: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler$a, reason: collision with other inner class name */
     public interface InterfaceC0098a {
@@ -40,25 +40,25 @@ public class SceneInteractionHandler extends BaseRenderable {
         this.l.visible(false);
         addChild(this.l);
         addChild(this.a);
-        this.f = com.censivn.C3DEngine.b.b.A.a(330.0f);
-        this.k = new WorkspaceSceneRoot(com.censivn.C3DEngine.C3DEngine.d(), this.f, com.censivn.C3DEngine.b.b.A.a(90.0f), com.censivn.C3DEngine.b.b.A.a(21.0f), -16731076);
+        this.f = com.censivn.C3DEngine.b.b.ScreenConstants.a(330.0f);
+        this.k = new WorkspaceSceneRoot(com.censivn.C3DEngine.C3DEngine.d(), this.f, com.censivn.C3DEngine.b.b.ScreenConstants.a(90.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(21.0f), -16731076);
         this.k.b(45.0f);
-        this.b = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(120.0f), com.censivn.C3DEngine.b.b.A.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.1
+        this.b = new SceneOverlayNode(com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.1
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
             public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_call_icon);
             }
         };
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2
             private boolean b = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (a.this.e.a() != null) {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 a.this.d();
                 a.this.b();
@@ -66,12 +66,12 @@ public class SceneInteractionHandler extends BaseRenderable {
                 this.b = false;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 this.b = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 a.this.m = false;
                 a.this.c();
@@ -116,13 +116,13 @@ public class SceneInteractionHandler extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 a.this.a(motionEvent2);
             }
         });
         this.b.calAABB(1.2f, 1.2f, 1.0f);
-        this.c = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.3
+        this.c = new SceneOverlayNode(com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.3
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
             public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_message_icon);
@@ -130,8 +130,8 @@ public class SceneInteractionHandler extends BaseRenderable {
         };
         this.c.alpha(0.0f);
         this.c.calAABB(4.0f, 4.0f, 1.0f);
-        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c));
-        this.d = new SceneOverlayNode(com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.4
+        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.c));
+        this.d = new SceneOverlayNode(com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f)) { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.4
             @Override // com.tsf.shell.f.h.a.a.a.SceneOverlayNode
             public Bitmap a() {
                 return x.a(WorkspaceSceneRoot.d.contact_menu_mail_icon);
@@ -139,7 +139,7 @@ public class SceneInteractionHandler extends BaseRenderable {
         };
         this.d.alpha(0.0f);
         this.d.calAABB(4.0f, 4.0f, 1.0f);
-        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d));
+        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.d));
         this.a.addChild((i) this.k.getVirtualTarget());
         this.a.addChild(this.c);
         this.a.addChild(this.d);
@@ -186,8 +186,8 @@ public class SceneInteractionHandler extends BaseRenderable {
         int i2 = -1;
         x.a(motionEvent, this.n);
         this.n[1] = this.n[1] - position().y;
-        if (Math.abs(this.n[1] - this.j.get(1).y) < com.censivn.C3DEngine.b.b.A.a(150.0f)) {
-            this.n[1] = this.j.get(1).y + com.censivn.C3DEngine.b.b.A.a(150.0f);
+        if (Math.abs(this.n[1] - this.j.get(1).y) < com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f)) {
+            this.n[1] = this.j.get(1).y + com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
         }
         int i3 = 0;
         float f2 = Float.MAX_VALUE;
@@ -225,9 +225,9 @@ public class SceneInteractionHandler extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        this.l.a(com.censivn.C3DEngine.b.b.A.D);
-        this.l.b(com.censivn.C3DEngine.b.b.A.E + com.censivn.C3DEngine.b.b.A.a(500.0f));
-        this.l.position().y = (((this.l.b() / 2.0f) - position().y) + com.censivn.C3DEngine.b.b.A.C) - com.censivn.C3DEngine.b.b.A.K;
+        this.l.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
+        this.l.b(com.censivn.C3DEngine.b.b.ScreenConstants.E + com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f));
+        this.l.position().y = (((this.l.b() / 2.0f) - position().y) + com.censivn.C3DEngine.b.b.ScreenConstants.C) - com.censivn.C3DEngine.b.b.ScreenConstants.K;
         this.l.visible(true);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);

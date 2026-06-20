@@ -32,11 +32,11 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.Initializer = new com.tsf.shell.manager.j.RateDialogController();
         com.tsf.shell.manager.app.AppListManager = new e();
         com.tsf.shell.manager.app.C = new com.tsf.shell.services.ServiceLifecycleManager();
-        com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.d();
+        com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.AnimationListener();
         com.tsf.shell.manager.app.FeatureConfig = new com.tsf.shell.manager.h.ScreenLockController();
         com.tsf.shell.manager.app.AppListModel = this;
         com.censivn.C3DEngine.C3DEngine.a(gLSurfaceView);
-        com.censivn.C3DEngine.b.b.A.a();
+        com.censivn.C3DEngine.b.b.ScreenConstants.a();
         com.tsf.shell.manager.app.SimpleHandler = new com.tsf.shell.manager.e.ScreenSaverDelayConfig();
         com.tsf.shell.manager.app.TextureCache = new com.tsf.shell.f.a.a.GlTexturePool();
         com.tsf.shell.manager.app.ActionHandler = new com.tsf.shell.f.a.b.ShaderSlotManager();

@@ -14,10 +14,10 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     private ArrayList<Number3d> b;
     private d d;
     private Number3d c = new Number3d();
-    private int f = com.censivn.C3DEngine.b.b.A.B;
-    private int g = com.censivn.C3DEngine.b.b.A.C;
-    private int h = com.censivn.C3DEngine.b.b.A.z;
-    private int i = com.censivn.C3DEngine.b.b.A.A;
+    private int f = com.censivn.C3DEngine.b.b.ScreenConstants.B;
+    private int g = com.censivn.C3DEngine.b.b.ScreenConstants.C;
+    private int h = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+    private int i = com.censivn.C3DEngine.b.b.ScreenConstants.A;
     private boolean j = false;
     private a e = new a(this);
 

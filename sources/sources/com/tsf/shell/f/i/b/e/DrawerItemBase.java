@@ -99,7 +99,7 @@ public abstract class DrawerItemBase extends DrawerShortcutItemBase {
             r0.onUpdateName(r5, r1)
             com.tsf.shell.f.i.b.e.DrawerItemBase$3 r0 = new com.tsf.shell.f.i.b.e.DrawerItemBase$3
             r0.<init>()
-            com.censivn.C3DEngine.b.c.c r1 = com.censivn.C3DEngine.C3DEngine.a()
+            com.censivn.C3DEngine.b.c.TaskDispatcher r1 = com.censivn.C3DEngine.C3DEngine.a()
             r1.c(r0)
             return
         L31:

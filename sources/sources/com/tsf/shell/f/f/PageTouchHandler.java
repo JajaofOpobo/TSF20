@@ -5,8 +5,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.PageEventDispatcher;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -20,7 +20,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
+public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowManager.a {
     public static int a;
     public static int b;
     public static float c;
@@ -51,8 +51,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     private com.tsf.shell.manager.f.ScreenFadeController v;
     private B w;
     private C x;
-    private com.censivn.C3DEngine.b.d.a y;
-    private com.censivn.C3DEngine.b.d.a z;
+    private com.censivn.C3DEngine.b.d.MouseEventListener y;
+    private com.censivn.C3DEngine.b.d.MouseEventListener z;
     private boolean o = false;
     private int t = 2;
     private ArrayList<g> K = new ArrayList<>();
@@ -69,7 +69,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         @Override // com.tsf.shell.f.e.e.ItemNode
         public float a() {
-            return com.tsf.shell.manager.app.WidgetPanelController.a.j() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 2) : com.censivn.C3DEngine.b.b.A.h * 2;
+            return com.tsf.shell.manager.app.WidgetPanelController.a.j() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
         }
     };
     private o G = new o();
@@ -118,7 +118,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.j.av();
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         S();
         this.v.a(i, i2, i3, i4);
@@ -136,21 +136,21 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     private void S() {
-        a = (int) ((com.censivn.C3DEngine.b.b.A.F * 0.28f) + (com.censivn.C3DEngine.b.b.A.b * 90.0f));
-        b = (int) ((com.censivn.C3DEngine.b.b.A.G * 0.28f) + (com.censivn.C3DEngine.b.b.A.b * 90.0f));
-        c = (a - (com.censivn.C3DEngine.b.b.A.b * 90.0f)) / 2.0f;
+        a = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.F * 0.28f) + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f));
+        b = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.G * 0.28f) + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f));
+        c = (a - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f)) / 2.0f;
         g.y();
         if (this.F != null) {
-            this.F.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            this.F.a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         }
         if (this.B != null) {
-            this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.A.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         }
         if (this.x != null) {
-            this.x.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
+            this.x.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
         if (this.w != null) {
-            this.w.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
+            this.w.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
     }
 
@@ -180,7 +180,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             @Override // com.tsf.shell.f.f.d.ScrollStateAggregator
             public void a() {
                 com.tsf.shell.manager.app.WidgetAnimator.c();
-                com.censivn.C3DEngine.b.c.b.a(n.this.f);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(n.this.f);
             }
 
             @Override // com.tsf.shell.f.f.d.ScrollStateAggregator
@@ -220,9 +220,9 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.p = Home.b().l();
         this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.v = new com.tsf.shell.manager.f.ScreenFadeController(this.B);
-        this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.A.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+        this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         this.y = new com.tsf.shell.f.i.a.WallpaperDragHandler(this.B);
-        this.z = new com.censivn.C3DEngine.b.d.a(this.B);
+        this.z = new com.censivn.C3DEngine.b.d.MouseEventListener(this.B);
         this.B.setMouseEventListener(this.y);
         this.B.mouseEnabled(false);
         this.A = new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.15
@@ -301,7 +301,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
         g gVarRemove = this.K.remove(0);
         gVarRemove.k();
-        gVarRemove.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
+        gVarRemove.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         return gVarRemove;
     }
 
@@ -468,7 +468,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             aVar.a(gVar);
             gVar.b(aVar);
             gVar.a(new com.tsf.shell.f.i.a.WallpaperDragHandler(iVarN) { // from class: com.tsf.shell.f.f.PageTouchHandler.2
-                @Override // com.tsf.shell.f.i.a.WallpaperDragHandler, com.censivn.C3DEngine.b.d.a
+                @Override // com.tsf.shell.f.i.a.WallpaperDragHandler, com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (n.this.t == 1 || n.this.t == 3) {
                         n.this.a(gVar, true, true);
@@ -757,7 +757,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     public void b(float f, float f2, float f3, float f4) {
         if (this.t != 4 && this.t != 2) {
-            com.tsf.shell.manager.app.LauncherAppInfo.a(f / com.censivn.C3DEngine.b.b.A.D);
+            com.tsf.shell.manager.app.LauncherAppInfo.a(f / com.censivn.C3DEngine.b.b.ScreenConstants.D);
             g gVar = this.k.get(this.F.a(this.n, f, f2, f3, f4, this.O));
             if (gVar != this.m) {
                 a(gVar, true, false);
@@ -864,7 +864,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             this.v.a(this.m);
             this.G.b();
             this.G.a(this.m);
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             this.i.setAnimationObjectState(true);
             if (this.O && !this.N) {
                 this.o = true;
@@ -1026,11 +1026,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             if (!this.w.a()) {
-                com.censivn.C3DEngine.b.c.b.b(this);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
                 x();
             } else {
                 this.w.l();
@@ -1038,7 +1038,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -1062,13 +1062,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         });
     }
 
-    public class C implements com.censivn.C3DEngine.b.c.b.a {
+    public class C implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
         private com.censivn.C3DEngine.b.f.BaseRenderable A;
         private com.censivn.C3DEngine.b.f.BaseRenderable B;
         private double C;
         private float D;
         private A E;
-        private com.censivn.C3DEngine.b.d.a F;
+        private com.censivn.C3DEngine.b.d.MouseEventListener F;
         private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper G;
         private com.censivn.C3DEngine.b.g.TweenParams H;
         private g I;
@@ -1121,7 +1121,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         public void a(int i, int i2, int i3, int i4) {
             if (this.B != null) {
-                this.B.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+                this.B.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
             }
             this.n = m();
             if (!this.w) {
@@ -1245,12 +1245,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             };
             this.A.renderChildren(false);
             this.A.position().z = this.o;
-            this.B.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
-            com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(this.B) { // from class: com.tsf.shell.f.f.PageTouchHandler.c.3
-                @Override // com.censivn.C3DEngine.b.d.a
+            this.B.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
+            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.B) { // from class: com.tsf.shell.f.f.PageTouchHandler.c.3
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                    c.this.q = c.this.J + (((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.A.F) * 360.0f * 1.2f);
-                    float y = ((motionEvent2.getY() - motionEvent.getY()) / com.censivn.C3DEngine.b.b.A.G) * 180.0f;
+                    c.this.q = c.this.J + (((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.ScreenConstants.F) * 360.0f * 1.2f);
+                    float y = ((motionEvent2.getY() - motionEvent.getY()) / com.censivn.C3DEngine.b.b.ScreenConstants.G) * 180.0f;
                     c.this.r = c.this.K + y;
                     if (c.this.r > 45.0f) {
                         c.this.r = 45.0f;
@@ -1261,7 +1261,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void e(MotionEvent motionEvent) {
                     c.this.x = 0.03f;
                     com.censivn.C3DEngine.b.g.TweenUtils.a(c.this.A);
@@ -1274,12 +1274,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     c.this.j();
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
                     c.this.a((g) null);
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                     c.this.h = true;
                     c.this.q = ((((int) (c.this.A.rotation().y + (f / 4.0f))) / 360) * 360) + c.this.l();
@@ -1332,14 +1332,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4 && !this.z && this.A.numChildren() > 0) {
                 this.F.f(null);
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void b(int i, KeyEvent keyEvent) {
         }
 
@@ -1361,7 +1361,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             n.this.i.addChild(n.this.m);
             com.tsf.shell.manager.app.AppListModel.a(n.this.I, true);
             com.tsf.shell.manager.app.AppListModel.b(n.this.I);
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             a(false);
             n.this.al();
         }
@@ -1376,12 +1376,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
 
         private float m() {
-            return ((float) (((double) ((com.censivn.C3DEngine.b.b.A.F * 0.9f) / 2.0f)) / Math.sin((((double) ((360 / n.this.n) / 2)) * 3.141592653589793d) / 180.0d))) + (200.0f * com.censivn.C3DEngine.b.b.A.b);
+            return ((float) (((double) ((com.censivn.C3DEngine.b.b.ScreenConstants.F * 0.9f) / 2.0f)) / Math.sin((((double) ((360 / n.this.n) / 2)) * 3.141592653589793d) / 180.0d))) + (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         }
 
         public void c(float f) {
             this.x = 0.03f;
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             this.n = m();
             this.o = -this.n;
             this.p = -((int) (this.n * 3.5f));
@@ -1654,7 +1654,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                         }
                     });
                 }
-                this.g = this.f + (((motionEvent.getX() - motionEvent2.getX()) / com.censivn.C3DEngine.b.b.A.F) * (n.this.n - 1) * 1.7f);
+                this.g = this.f + (((motionEvent.getX() - motionEvent2.getX()) / com.censivn.C3DEngine.b.b.ScreenConstants.F) * (n.this.n - 1) * 1.7f);
                 this.j = true;
             }
         }
@@ -1683,7 +1683,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                         }
                     });
                 }
-                this.g = this.f + ((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.A.F);
+                this.g = this.f + ((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.ScreenConstants.F);
                 if (n.this.m.ah() == null && this.g < 0.0f) {
                     this.g = com.tsf.shell.f.e.c.a(this.g);
                 }
@@ -2026,9 +2026,9 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private com.tsf.shell.f.e.e.ItemContainerNode F = com.tsf.shell.manager.app.WidgetAnimator.d();
         private com.censivn.C3DEngine.b.f.GridRenderable E = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
         private float b = 0.017453292f;
-        private float h = com.censivn.C3DEngine.b.b.A.D;
-        private float o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.A.b);
-        private float p = (com.censivn.C3DEngine.b.b.A.B + ((int) (Math.sin(this.b * this.m) * ((double) this.h)))) - (100.0f * com.censivn.C3DEngine.b.b.A.b);
+        private float h = com.censivn.C3DEngine.b.b.ScreenConstants.D;
+        private float o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
+        private float p = (com.censivn.C3DEngine.b.b.ScreenConstants.B + ((int) (Math.sin(this.b * this.m) * ((double) this.h)))) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         private float w = (float) (((double) this.o) + (Math.cos(this.b * this.m) * ((double) this.h)));
         private float q = ((float) (((double) this.p) - (Math.sin(this.b * this.m) * ((double) this.h)))) - (n.b / 2);
         private float i = 360.0f / (((float) (((double) (2.0f * this.h)) * 3.141592653589793d)) / (n.a - 40));
@@ -2076,9 +2076,9 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
 
         public void a(int i, int i2, int i3, int i4) {
-            this.h = com.censivn.C3DEngine.b.b.A.D;
-            this.o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.A.b);
-            this.p = (com.censivn.C3DEngine.b.b.A.B + ((int) (Math.sin(this.b * this.m) * ((double) this.h)))) - (100.0f * com.censivn.C3DEngine.b.b.A.b);
+            this.h = com.censivn.C3DEngine.b.b.ScreenConstants.D;
+            this.o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
+            this.p = (com.censivn.C3DEngine.b.b.ScreenConstants.B + ((int) (Math.sin(this.b * this.m) * ((double) this.h)))) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
             this.w = (float) (((double) this.o) + (Math.cos(this.b * this.m) * ((double) this.h)));
             this.q = ((float) (((double) this.p) - (Math.sin(this.b * this.m) * ((double) this.h)))) - (n.b / 2);
             this.i = 360.0f / (((float) (((double) (2.0f * this.h)) * 3.141592653589793d)) / (n.a - 40));
@@ -2159,7 +2159,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private void h() {
             this.F.removeFromParent();
             this.F.position().x = 0.0f;
-            this.F.a(0.0f, com.censivn.C3DEngine.b.b.A.C + (100.0f * com.censivn.C3DEngine.b.b.A.b), true);
+            this.F.a(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.C + (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b), true);
             n.this.h.addChild(this.F);
             this.F.b();
         }
@@ -2191,7 +2191,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             this.C.rotation().z = 0.0f;
             this.C.position().x = 0.0f;
             this.C.position().z = this.w - (((0.0f - this.q) + 50.0f) / 2.0f);
-            this.C.position().y = com.censivn.C3DEngine.b.b.A.C;
+            this.C.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
             this.C.a(true);
             this.C.d(false);
             this.d.addChild(this.C);
@@ -2499,9 +2499,9 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void a(float f, float f2, g gVar) {
-            if (f > (com.censivn.C3DEngine.b.b.A.D / 2) - (com.censivn.C3DEngine.b.b.A.a * 50.0f)) {
+            if (f > (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 50.0f)) {
                 this.y = this.z;
-            } else if (f < (-r0) + (com.censivn.C3DEngine.b.b.A.a * 50.0f)) {
+            } else if (f < (-r0) + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 50.0f)) {
                 this.y = this.A;
             } else {
                 a(f, f2, gVar, false);
@@ -2596,7 +2596,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             dVar.m(0.0f);
             dVar.n(0.0f);
             dVar.f(0.0f);
-            dVar.h(com.censivn.C3DEngine.b.b.A.C);
+            dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.C);
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar);
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar, 500, dVar);
             n.this.k.remove(gVar);
@@ -2679,7 +2679,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    class A extends com.censivn.C3DEngine.b.d.a {
+    class A extends com.censivn.C3DEngine.b.d.MouseEventListener {
         boolean a;
         boolean b;
         private g e;
@@ -2696,7 +2696,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             this.e = gVar;
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void c(MotionEvent motionEvent) {
             if (!this.g && this.e.t() != -1) {
                 n.this.w.a(this.e, motionEvent);
@@ -2704,20 +2704,20 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             if (this.g) {
                 n.this.w.a(this.e, motionEvent, motionEvent2);
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
             w.b();
             n.this.w.a(this.e);
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             if (this.g) {
                 this.g = false;
@@ -2726,14 +2726,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             n.this.w.f();
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
             this.a = false;
             this.b = false;
             this.f = true;
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
             if (this.f) {
                 this.f = false;
@@ -2754,7 +2754,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.b && Math.abs(TransitionRenderer) > 250.0f) {
                 n.this.w.a(f / 2.0f);

@@ -10,6 +10,6 @@ public class SmoothTransition extends ItemPageTransition {
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
-        gVar.position().x = com.censivn.C3DEngine.b.b.A.D * f;
+        gVar.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.D * f;
     }
 }

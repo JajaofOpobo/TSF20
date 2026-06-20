@@ -30,12 +30,12 @@ public class MenuItemConfig extends MenuItemBase {
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
-        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
-        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.mTitleContainer.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
     }
 
     public void setTitle(int i) {
@@ -85,7 +85,7 @@ public class MenuItemConfig extends MenuItemBase {
         public void a(i iVar) {
             a();
             this.d = iVar;
-            this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(90.0f);
+            this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(90.0f);
             this.d.removeFromParent();
             addChild(this.d);
             a();
@@ -100,16 +100,16 @@ public class MenuItemConfig extends MenuItemBase {
 
         private void e() {
             if (this.d != null && this.d.parent() == this) {
-                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f) + com.censivn.C3DEngine.b.b.A.a(110.0f);
+                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(110.0f);
             } else {
-                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f);
+                this.e.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
             }
-            float fA = com.censivn.C3DEngine.b.b.A.a(160.0f);
+            float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(160.0f);
             setAABBPX(0.0f, (-fA) / 2.0f, 0.0f, this.e.maxX() + this.e.position().x, fA / 2.0f, 0.0f);
         }
 
         public void c() {
-            this.c = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.1
+            this.c = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.1
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (MenuActionHandler.this.a.id == 0) {
@@ -121,7 +121,7 @@ public class MenuItemConfig extends MenuItemBase {
             };
             this.c.textures().addElement(this.a);
             addChild(this.c);
-            this.c.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + com.censivn.C3DEngine.b.b.A.a(12.0f);
+            this.c.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f);
             this.c.rotation().z = 180.0f;
             this.e = new LabelRenderable();
             this.e.d(42);
@@ -138,8 +138,8 @@ public class MenuItemConfig extends MenuItemBase {
         }
 
         public void b(i iVar) {
-            iVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.2
-                @Override // com.censivn.C3DEngine.b.d.a
+            iVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.2
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     MenuActionHandler.this.a();
                 }

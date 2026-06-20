@@ -7,7 +7,7 @@ import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspacePreviewNode extends com.tsf.shell.f.h.a.WorkspaceSceneNode {
-    public static final float a = com.censivn.C3DEngine.b.b.A.a(200.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
     private A b;
     private d c;
     private com.tsf.shell.f.h.a.b.SceneAnimationController d;

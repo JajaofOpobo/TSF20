@@ -14,11 +14,11 @@ public class PreferenceSettingB extends PreferenceSettingBase {
     private com.censivn.C3DEngine.b.f.GridRenderable g;
 
     public PreferenceSettingB(String str) {
-        super(str, com.censivn.C3DEngine.b.b.A.a(200.0f));
+        super(str, com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f));
         this.d = new TextureElement(0, false);
         this.e = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
-        this.g = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
+        this.g = com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f, 180.0f);
         this.g.textures().addElement(this.f);
         this.b = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingB.1
             private float b = 0.0f;
@@ -51,16 +51,16 @@ public class PreferenceSettingB extends PreferenceSettingBase {
                 GLES20.glFrontFace(2305);
             }
         };
-        this.a = new C0108a(com.censivn.C3DEngine.b.b.A.a(189.0f), com.censivn.C3DEngine.b.b.A.a(288.0f), 5, 20);
-        this.a.position().x = com.censivn.C3DEngine.b.b.A.a(150.0f);
+        this.a = new C0108a(com.censivn.C3DEngine.b.b.ScreenConstants.a(189.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(288.0f), 5, 20);
+        this.a.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
         this.b.setAnimationObjectState(true);
         this.b.addChild(this.g);
-        this.g.position().x = com.censivn.C3DEngine.b.b.A.a(-150.0f);
+        this.g.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f);
         this.g.useVBO(false);
         PreferenceSettingB().addChild(this.b);
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         if (this.d.id == 0) {
@@ -74,7 +74,7 @@ public class PreferenceSettingB extends PreferenceSettingBase {
         }
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         com.censivn.C3DEngine.C3DEngine.g().a(this.d);

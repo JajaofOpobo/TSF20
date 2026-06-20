@@ -22,7 +22,7 @@ import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.flurry.android.FlurryAgent;
 import com.tsf.b;
 import com.tsf.shell.a.a.ShellLayoutEngine;
@@ -145,7 +145,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 com.tsf.shell.manager.b.ConfigManager.a();
                 com.tsf.shell.manager.b.ConfigManager.b(com.tsf.shell.manager.b.ConfigManager.a(this), this);
                 com.tsf.shell.utils.StatusBarHelper.a();
-                new com.censivn.C3DEngine.b.c.e(this);
+                new com.censivn.C3DEngine.b.c.WindowManager(this);
                 if (ShellWallpaperManager.a((Activity) this)) {
                     com.tsf.shell.manager.b.ConfigManager.s(true);
                 } else {
@@ -298,7 +298,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void e() {
         this.m = false;
         com.censivn.C3DEngine.C3DEngine.a(this);
-        com.censivn.C3DEngine.b.c.b.c();
+        com.censivn.C3DEngine.b.c.KeyboardHandler.c();
         this.p = getResources().getConfiguration().locale;
         this.f = new com.censivn.C3DEngine.C3DEngine.a(this);
         this.e.addView(this.f);
@@ -363,7 +363,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void j() {
         com.tsf.shell.manager.b.TempPreferenceManager.c();
         com.tsf.shell.manager.GlobalServiceLocator.b.c(this);
-        com.censivn.C3DEngine.b.c.b.b();
+        com.censivn.C3DEngine.b.c.KeyboardHandler.b();
         com.tsf.shell.f._d.d();
         com.censivn.C3DEngine.a.d.d().a();
         n();
@@ -395,7 +395,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     @Override // android.app.Activity
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (this.s && (k() || !com.censivn.C3DEngine.b.c.b.a())) {
+        if (this.s && (k() || !com.censivn.C3DEngine.b.c.KeyboardHandler.a())) {
             return false;
         }
         super.onCreateOptionsMenu(menu);
@@ -534,7 +534,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.Home.3
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.b.c.b.b(i, keyEvent);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.b(i, keyEvent);
             }
         });
         return super.onKeyUp(i, keyEvent);
@@ -545,7 +545,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.Home.4
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.b.c.b.a(i, keyEvent);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(i, keyEvent);
             }
         });
         if (i == 4) {
@@ -776,7 +776,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.Home.9
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.c.b.a(3, null);
+                    com.censivn.C3DEngine.b.c.KeyboardHandler.a(3, null);
                     Home.this.v = false;
                 }
             });

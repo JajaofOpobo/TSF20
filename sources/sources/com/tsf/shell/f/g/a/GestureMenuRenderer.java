@@ -43,8 +43,8 @@ public class GestureMenuRenderer extends BaseRenderable {
     public void c() {
         if (d == null) {
             d = new k();
-            GestureMenuDrawerItem.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
-            GestureMenuDrawerItem.position().y = com.censivn.C3DEngine.b.b.A.a(80.0f);
+            GestureMenuDrawerItem.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
+            GestureMenuDrawerItem.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
         }
         this.f = true;
     }
@@ -57,14 +57,14 @@ public class GestureMenuRenderer extends BaseRenderable {
         this.f = false;
         this.e = jVar;
         jVar.calAABB();
-        jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.A.c;
+        jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.a = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
-        this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.A.c;
+        this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.a.useVBO(false);
         this.a.textures().addElement(c);
         addChild(jVar);
         addChild(this.a);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this));
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable

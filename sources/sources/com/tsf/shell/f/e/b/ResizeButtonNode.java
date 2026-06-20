@@ -122,7 +122,7 @@ public class ResizeButtonNode extends BaseRenderable {
             this.e = textureElement.width;
             this.f = i;
             this.g = f;
-            float f2 = com.censivn.C3DEngine.b.b.A.c * (f / i);
+            float f2 = com.censivn.C3DEngine.b.b.ScreenConstants.c * (f / i);
             for (int i2 = 0; i2 < i; i2++) {
                 int i3 = (int) ((textureElement.width / f2) / (i2 + 1));
                 int i4 = (int) ((textureElement.height / f2) / (i2 + 1));

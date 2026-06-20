@@ -7,14 +7,14 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingI extends PreferenceSettingBase {
     private ArrayList<m> a;
-    private com.censivn.C3DEngine.b.b.c b;
+    private com.censivn.C3DEngine.b.b.DesktopRenderer b;
 
     public PreferenceSettingI(String str, float f) {
         super(str, f);
         this.a = new ArrayList<>();
         PreferenceSettingI().removeFromParent();
-        this.b = new com.censivn.C3DEngine.b.b.c();
-        this.b.setLayoutParams(new com.censivn.C3DEngine.b.b.b());
+        this.b = new com.censivn.C3DEngine.b.b.DesktopRenderer();
+        this.b.setLayoutParams(new com.censivn.C3DEngine.b.b.TouchState());
         this.b.mouseEnabled(false);
         addChild(this.b);
     }
@@ -25,9 +25,9 @@ public class PreferenceSettingI extends PreferenceSettingBase {
         mVar.b(1);
         mVar.d(38);
         mVar.a(true);
-        com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.A.a(0.0f);
-        bVar.b = com.censivn.C3DEngine.b.b.A.a(15.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
+        bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(15.0f);
         mVar.setLayoutParams(bVar);
         mVar.d(38);
         mVar.position().x = (-a()) / 2.0f;
@@ -35,7 +35,7 @@ public class PreferenceSettingI extends PreferenceSettingBase {
         this.a.add(mVar);
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         for (m mVar : this.a) {
             mVar.position().x = (-i) / 2.0f;
@@ -43,7 +43,7 @@ public class PreferenceSettingI extends PreferenceSettingBase {
             a(mVar);
         }
         this.b.d();
-        com.censivn.C3DEngine.b.b.b layoutParams = this.b.getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = this.b.getLayoutParams();
         layoutParams.h = this.b.minX();
         layoutParams.j = this.b.maxX();
         layoutParams.i = this.b.minY();
@@ -53,14 +53,14 @@ public class PreferenceSettingI extends PreferenceSettingBase {
 
     private void a(m mVar) {
         mVar.b();
-        com.censivn.C3DEngine.b.b.b layoutParams = mVar.getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = mVar.getLayoutParams();
         layoutParams.h = mVar.minX();
         layoutParams.j = mVar.maxX();
         layoutParams.i = mVar.minY();
         layoutParams.k = mVar.maxY();
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         Iterator<m> it = this.a.iterator();

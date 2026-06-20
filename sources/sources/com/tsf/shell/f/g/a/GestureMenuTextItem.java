@@ -39,7 +39,7 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
             }
         }));
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuTextItem.2
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -79,12 +79,12 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
 
     @Override // com.tsf.shell.f.g.a.GestureMenuBlankItem
     public float a() {
-        return com.censivn.C3DEngine.b.b.A.z / 2.0f;
+        return com.censivn.C3DEngine.b.b.ScreenConstants.z / 2.0f;
     }
 
     @Override // com.tsf.shell.f.g.a.GestureMenuBlankItem
     public float b() {
-        return com.censivn.C3DEngine.b.b.A.a(120.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase

@@ -52,7 +52,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);
-                com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(30.0f));
+                com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
             }
         };
         hVar.f((float) (Math.random() * 200.0d));

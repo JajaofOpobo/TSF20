@@ -24,7 +24,7 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
     private IRenderable g;
     private boolean h;
     private boolean i;
-    private com.censivn.C3DEngine.b.d.a j;
+    private com.censivn.C3DEngine.b.d.MouseEventListener j;
     private boolean k;
     private boolean l;
 
@@ -154,8 +154,8 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
             bVar.d = bVar.b + i13;
             this.f.add(bVar);
         }
-        this.j = new com.censivn.C3DEngine.b.d.a(this.g == null ? this : this.g) { // from class: com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.j = new com.censivn.C3DEngine.b.d.MouseEventListener(this.g == null ? this : this.g) { // from class: com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
                 a.this.e = a.this.a(fArrA[0], fArrA[1]);
@@ -164,91 +164,91 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.f(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.g(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.a(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void k(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.k(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.b(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.c(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.d(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.a(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.a(motionEvent, motionEvent2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.b(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void h(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.h(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void i(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.i(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void j(MotionEvent motionEvent) {
                 if (a.this.e != null && a.this.e.l != null) {
                     a.this.e.l.j(motionEvent);

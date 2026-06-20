@@ -1,15 +1,15 @@
 package com.censivn.C3DEngine.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class f extends com.censivn.C3DEngine.b.b.c {
+public abstract class AbstractPanelRenderer extends com.censivn.C3DEngine.b.b.DesktopRenderer {
     private boolean a = true;
-    public d c;
+    public PanelBarRenderer c;
 
     public abstract void f();
 
     public abstract void g();
 
-    public void a(d dVar) {
+    public void a(PanelBarRenderer dVar) {
         this.c = dVar;
     }
 

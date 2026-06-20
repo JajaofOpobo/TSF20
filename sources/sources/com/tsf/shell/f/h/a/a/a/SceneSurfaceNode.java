@@ -33,8 +33,8 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         this.a = dVar;
         this.b = jVar;
         this.c.calAABB();
-        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.c) { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.c) { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
             }
         });
@@ -100,15 +100,15 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
     }
 
     private float f() {
-        return (com.censivn.C3DEngine.b.b.A.B - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(80.0f);
+        return (com.censivn.C3DEngine.b.b.ScreenConstants.B - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
     }
 
     private float g() {
-        return (f() - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(60.0f);
+        return (f() - (this.c.c() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
     }
 
     private float h() {
-        return g() - com.censivn.C3DEngine.b.b.A.a(150.0f);
+        return g() - com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
     }
 
     private void i() {
@@ -167,7 +167,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
             }
         }
         float fH = h();
-        float fA = com.censivn.C3DEngine.b.b.A.a(160.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(160.0f);
         int i = 0;
         float f = fH;
         int i2 = 50;
@@ -184,7 +184,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
                 addChild(dVar);
                 i = i3 + 1;
             } else {
-                a(this.j, com.censivn.C3DEngine.b.b.A.C + com.censivn.C3DEngine.b.b.A.a(180.0f), 150, z);
+                a(this.j, com.censivn.C3DEngine.b.b.ScreenConstants.C + com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f), 150, z);
                 return;
             }
         }
@@ -254,7 +254,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         }
         com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar3.a(0);
-        dVar3.h(com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.a(180.0f));
+        dVar3.h(com.censivn.C3DEngine.b.b.ScreenConstants.C - com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f));
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 250, dVar3);
         this.l.c();
@@ -291,7 +291,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
 
     private void a(i iVar, float f, int i, boolean z) {
         if (z) {
-            iVar.position().y = f - com.censivn.C3DEngine.b.b.A.a(350.0f);
+            iVar.position().y = f - com.censivn.C3DEngine.b.b.ScreenConstants.a(350.0f);
             iVar.alpha(0.0f);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.h(SceneOverlayNode);
@@ -310,7 +310,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
 
     private void a(i iVar, int i) {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.h(iVar.position().y + com.censivn.C3DEngine.b.b.A.a(250.0f));
+        dVar.h(iVar.position().y + com.censivn.C3DEngine.b.b.ScreenConstants.a(250.0f));
         dVar.a(0);
         if (i != 0) {
             dVar.b(i);

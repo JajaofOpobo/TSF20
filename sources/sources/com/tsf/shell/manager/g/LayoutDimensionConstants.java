@@ -43,6 +43,6 @@ public class LayoutDimensionConstants {
     }
 
     public static int a(int i2) {
-        return (int) com.censivn.C3DEngine.b.b.A.a(i2);
+        return (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(i2);
     }
 }

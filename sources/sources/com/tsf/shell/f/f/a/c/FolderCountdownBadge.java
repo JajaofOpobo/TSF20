@@ -9,14 +9,14 @@ public class FolderCountdownBadge extends FolderSelectionFrame {
     private com.censivn.C3DEngine.b.h.d.ProgressBarItem c;
     private boolean d = false;
     private TextureElement a = x.b(FolderWidgetTouchHandler.d.drawer_layout_homescreen_countdown);
-    private com.censivn.C3DEngine.b.f.GridRenderable b = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
+    private com.censivn.C3DEngine.b.f.GridRenderable b = com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f, 180.0f);
 
     public FolderCountdownBadge() {
         this.b.textures().addElement(this.a);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.b);
         calAABB();
-        this.c = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.A.a(182.0f), FolderWidgetTouchHandler.d.ring);
+        this.c = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.ScreenConstants.a(182.0f), FolderWidgetTouchHandler.d.ring);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.c, com.tsf.shell.manager.o.ThemeColorConstants.h);
         addChild(this.c);
     }

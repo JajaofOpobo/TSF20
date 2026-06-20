@@ -23,7 +23,7 @@ public class WidgetPanelOrchestrator extends com.tsf.shell.manager.r.b.b.SlidePa
     public void a(b.a aVar) {
         this.b.a(aVar);
         a((com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase) this.b, true);
-        com.censivn.C3DEngine.b.c.b.a(this);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
     }
 
     public void a(com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase aVar, boolean z) {
@@ -37,7 +37,7 @@ public class WidgetPanelOrchestrator extends com.tsf.shell.manager.r.b.b.SlidePa
     }
 
     public void c(boolean z) {
-        com.censivn.C3DEngine.b.c.b.b(this);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
         a(this.a, z);
     }
 
@@ -65,14 +65,14 @@ public class WidgetPanelOrchestrator extends com.tsf.shell.manager.r.b.b.SlidePa
         this.b.a(f, f2, f3, f4);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             c(true);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 }

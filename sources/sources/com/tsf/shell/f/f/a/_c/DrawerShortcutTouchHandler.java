@@ -11,7 +11,7 @@ public class DrawerShortcutTouchHandler extends DrawerContentList.a {
     private g d;
     private com.tsf.shell.f.i.ShortcutItem e;
     private com.tsf.shell.f.i._a.WidgetItemTouchHandler f;
-    private com.censivn.C3DEngine.b.d.a g;
+    private com.censivn.C3DEngine.b.d.MouseEventListener g;
 
     public DrawerShortcutTouchHandler(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
         this.c = cVar;
@@ -21,13 +21,13 @@ public class DrawerShortcutTouchHandler extends DrawerContentList.a {
     }
 
     private void e() {
-        this.g = new com.censivn.C3DEngine.b.d.a(null) { // from class: com.tsf.shell.f.f.a._c._a.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.g = new com.censivn.C3DEngine.b.d.MouseEventListener(null) { // from class: com.tsf.shell.f.f.a._c._a.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 a.this.f.a(motionEvent, motionEvent2);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 a.this.f.d(motionEvent);
                 a.this.a.ak();
@@ -99,7 +99,7 @@ public class DrawerShortcutTouchHandler extends DrawerContentList.a {
     @Override // com.tsf.shell.f.f.a._c.DrawerContentList.a
     public void c() {
         com.tsf.shell.manager.app.StateManager.c(this.d);
-        this.c.a((com.censivn.C3DEngine.b.d.a) null);
+        this.c.a((com.censivn.C3DEngine.b.d.MouseEventListener) null);
         b();
     }
 

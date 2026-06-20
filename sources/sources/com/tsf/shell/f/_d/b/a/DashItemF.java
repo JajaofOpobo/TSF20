@@ -12,9 +12,9 @@ public class DashItemF extends DashItemD {
     public DashItemF(int i, int i2, boolean z) {
         super(i, z);
         this.d = new Number3d();
-        this.c = new DashItemA(i2, com.censivn.C3DEngine.b.b.A.a(26.0f), com.censivn.C3DEngine.b.b.A.a(60.0f), 250.0f);
-        this.c.position().x = com.censivn.C3DEngine.b.b.A.a(47.0f);
-        this.c.position().y = com.censivn.C3DEngine.b.b.A.a(75.0f);
+        this.c = new DashItemA(i2, com.censivn.C3DEngine.b.b.ScreenConstants.a(26.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f), 250.0f);
+        this.c.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(47.0f);
+        this.c.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(75.0f);
         this.c.rotation().x = -30.0f;
         this.c.rotation().z = -45.0f;
     }

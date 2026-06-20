@@ -8,7 +8,7 @@ import com.tsf.shell.ShellCallbackDispatcherctivity.PhotoSelectorActivity;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PhotoPicker implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class PhotoPicker implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private static a a;
     private InterfaceC0098a b;
     private int c;
@@ -31,10 +31,10 @@ public class PhotoPicker implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a 
         intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), PhotoSelectorActivity.class);
         intent.putExtra("image_width", i);
         intent.putExtra("image_height", i2);
-        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, final Intent intent) {
         if (i2 == -1) {
             if (i == this.c) {

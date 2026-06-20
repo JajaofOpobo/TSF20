@@ -20,7 +20,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
     public DrawerDragEffectController(c cVar) {
         super(cVar, b.d.allapps_recent_icon);
         this.d = new TextureElement(0, false);
-        this.f = -com.censivn.C3DEngine.b.b.A.a(50.0f);
+        this.f = -com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         this.c = new ArrayList<>();
         this.b = new com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect>() { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.1
             @Override // com.tsf.shell.f.e.ObjectPool
@@ -36,7 +36,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
             }
         };
         com.tsf.shell.manager.app.ServiceProvider.a().a().a(this.a);
-        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.3
+        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.3
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.d.id == 0) {
@@ -48,8 +48,8 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
         this.e.textures().addElement(this.d);
         this.e.calAABB(3.0f, 3.0f, 1.0f);
         i().addChild(this.e);
-        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 d.this.h().a();
             }
@@ -87,7 +87,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
         com.tsf.shell.f.f.a._a.b.DrawerBaseElement.a(this.e, this.f - DrawerItemContainer.a, this.f);
     }
 
-    @Override // com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         this.e.position().x = r();

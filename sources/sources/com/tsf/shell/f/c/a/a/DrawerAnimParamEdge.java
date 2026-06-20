@@ -16,7 +16,7 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
         float fMaxY = jVar2.position().y + ((jVar2.maxY() - jVar2.minY()) * 0.5f) + jVar2.minY();
         PositionNumber3d positionNumber3dPosition = jVar.position();
         positionNumber3dPosition.y = ((fMaxY - jVar.position().y) * 0.15f) + positionNumber3dPosition.y;
-        jVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.A.b;
+        jVar.position().x = (-160.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b;
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamCenter, com.tsf.shell.f.c.a.a.DrawerAnimConfig
@@ -26,7 +26,7 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamCenter, com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3) {
-        iVar.setAABBPX(com.censivn.C3DEngine.b.b.A.b * (-83.0f), (-f3) + f2, 0.0f, 2.1474836E9f, 0.0f - f, 0.0f);
+        iVar.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.b * (-83.0f), (-f3) + f2, 0.0f, 2.1474836E9f, 0.0f - f, 0.0f);
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase
@@ -50,14 +50,14 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase, com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public Number3d c() {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
-        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.ScreenConstants.A + com.tsf.shell.f.c.a.DrawerContentPanel.b;
         return Number3d.TEMPNUMBER3D;
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase, com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public Number3d d() {
         Number3d.TEMPNUMBER3D.y = iVar.position().y;
-        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.A.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        Number3d.TEMPNUMBER3D.x = com.censivn.C3DEngine.b.b.ScreenConstants.A - com.tsf.shell.f.c.a.DrawerContentPanel.a;
         return Number3d.TEMPNUMBER3D;
     }
 
@@ -65,7 +65,7 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
     public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3, float f4) {
         float fAsin;
         DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
-        if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+        if ((com.censivn.C3DEngine.b.b.ScreenConstants.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
             fAsin = 180.0f;
         } else {
             fAsin = ((float) (Math.asin(r0 / f) / 0.017453292519943295d)) + 90.0f;

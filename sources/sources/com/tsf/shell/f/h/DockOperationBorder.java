@@ -39,11 +39,11 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
             l = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA2, false);
             bitmapA2.recycle();
         }
-        this.m = com.censivn.C3DEngine.b.b.A.b * 158.0f;
-        this.n = com.censivn.C3DEngine.b.b.A.b * 158.0f;
+        this.m = com.censivn.C3DEngine.b.b.ScreenConstants.b * 158.0f;
+        this.n = com.censivn.C3DEngine.b.b.ScreenConstants.b * 158.0f;
         this.a = this.m;
         textures().addElement(k);
-        this.q = new GridRenderable(28.0f * com.censivn.C3DEngine.b.b.A.b, 21.0f * com.censivn.C3DEngine.b.b.A.b, false);
+        this.q = new GridRenderable(28.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 21.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
         this.q.textures().addElement(l);
         this.q.alpha(0.0f);
         addChild(this.q);
@@ -76,7 +76,7 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
             public void a() {
             }
         };
-        dVar.h(this.a + (20.0f * com.censivn.C3DEngine.b.b.A.b));
+        dVar.h(this.a + (20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
         dVar.a(255);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 300, dVar);

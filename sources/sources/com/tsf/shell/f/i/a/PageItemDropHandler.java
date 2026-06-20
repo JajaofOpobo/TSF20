@@ -12,7 +12,7 @@ public class PageItemDropHandler extends PageItemTouchHandler {
         this.g = bVar;
     }
 
-    @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.a
+    @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         this.g.aQ();
         f.a(motionEvent);

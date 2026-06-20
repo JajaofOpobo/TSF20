@@ -4,8 +4,8 @@ import android.content.ContentValues;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.g.EasingFunctions;
 import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.manager.bind.ShellModel;
@@ -14,7 +14,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.censivn.C3DEngine.b.c.b.a {
+public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
     private static WidgetFreeResizeController a;
     private static C b;
     private static com.tsf.shell.f.i.b.b.ItemShell c;
@@ -49,8 +49,8 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         d = bVar2;
         int i = bVar2.d;
         int i2 = bVar2.e;
-        int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.A.F / 2)) + (i / 2);
-        int i4 = ((com.censivn.C3DEngine.b.b.A.G / 2) - bVar2.b) - (i2 / 2);
+        int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.ScreenConstants.F / 2)) + (i / 2);
+        int i4 = ((com.censivn.C3DEngine.b.b.ScreenConstants.G / 2) - bVar2.b) - (i2 / 2);
         a.removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.a(AlignmentOverlay);
         a.position().x = i3;
@@ -59,21 +59,21 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         a.c().setFocus();
         a.c().h();
         a.c().a((-i) / 2, (-i2) / 2, i / 2, i2 / 2);
-        com.censivn.C3DEngine.b.c.b.a(AlignmentOverlay);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(AlignmentOverlay);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
         com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentOverlay);
         com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             b();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -82,7 +82,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         if (ItemTrailContainer) {
             b.i();
             c = null;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
@@ -151,13 +151,13 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             runnable2.run();
             textures().addElement(com.tsf.shell.f.e.b.ResizeTextureManager);
             this.m = new com.censivn.C3DEngine.b.f.EmptyRenderable();
-            this.m.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3
+            this.m.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3
                 private float b;
                 private float d;
                 private float e;
                 private float f;
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void e(MotionEvent motionEvent) {
                     if (t.e) {
                         this.b = t.c.position().x;
@@ -169,20 +169,20 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f3, float f4) {
                     if (t.e) {
                         float x = motionEvent2.getX() - motionEvent.getX();
                         float y = motionEvent2.getY() - motionEvent.getY();
-                        if (this.b + x + (t.c.b.b() / 2.0f) > com.censivn.C3DEngine.b.b.A.t) {
-                            x = (com.censivn.C3DEngine.b.b.A.t - (t.c.b.b() / 2.0f)) - this.b;
-                        } else if ((this.b + x) - (t.c.b.b() / 2.0f) < com.censivn.C3DEngine.b.b.A.r) {
-                            x = (com.censivn.C3DEngine.b.b.A.r + (t.c.b.b() / 2.0f)) - this.b;
+                        if (this.b + x + (t.c.b.b() / 2.0f) > com.censivn.C3DEngine.b.b.ScreenConstants.t) {
+                            x = (com.censivn.C3DEngine.b.b.ScreenConstants.t - (t.c.b.b() / 2.0f)) - this.b;
+                        } else if ((this.b + x) - (t.c.b.b() / 2.0f) < com.censivn.C3DEngine.b.b.ScreenConstants.r) {
+                            x = (com.censivn.C3DEngine.b.b.ScreenConstants.r + (t.c.b.b() / 2.0f)) - this.b;
                         }
-                        if ((this.d - y) + (t.c.b.c() / 2.0f) > com.censivn.C3DEngine.b.b.A.s) {
-                            y = (-com.censivn.C3DEngine.b.b.A.s) + (t.c.b.c() / 2.0f) + this.d;
-                        } else if ((this.d - y) - (t.c.b.c() / 2.0f) < com.censivn.C3DEngine.b.b.A.u) {
-                            y = ((-com.censivn.C3DEngine.b.b.A.u) - (t.c.b.c() / 2.0f)) + this.d;
+                        if ((this.d - y) + (t.c.b.c() / 2.0f) > com.censivn.C3DEngine.b.b.ScreenConstants.s) {
+                            y = (-com.censivn.C3DEngine.b.b.ScreenConstants.s) + (t.c.b.c() / 2.0f) + this.d;
+                        } else if ((this.d - y) - (t.c.b.c() / 2.0f) < com.censivn.C3DEngine.b.b.ScreenConstants.u) {
+                            y = ((-com.censivn.C3DEngine.b.b.ScreenConstants.u) - (t.c.b.c() / 2.0f)) + this.d;
                         }
                         t.c.position().x = this.b + x;
                         c.this.h.position().x = x + this.e;
@@ -191,14 +191,14 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
                     if (t.e) {
                         c.this.h.setAnimationObjectState(false);
                         d.b bVar2 = (d.b) t.c.g.getLayoutParams();
-                        int[] iArr = {(int) ((t.c.position().x - (t.c.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H), (int) (((-t.c.position().y) + com.censivn.C3DEngine.b.b.A.I) - (t.c.b.c() / 2.0f)), bVar2.d, bVar2.e};
+                        int[] iArr = {(int) ((t.c.position().x - (t.c.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.ScreenConstants.H), (int) (((-t.c.position().y) + com.censivn.C3DEngine.b.b.ScreenConstants.I) - (t.c.b.c() / 2.0f)), bVar2.d, bVar2.e};
                         ItemInfo itemInfoK = t.c.K();
-                        if (com.censivn.C3DEngine.b.b.A.O) {
+                        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                             int i = iArr[0];
                             bVar2.a = i;
                             itemInfoK.cellX = i;
@@ -230,7 +230,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             this.j = c(1);
             this.k = c(2);
             this.l = c(3);
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this));
             mouseSkip(true);
             b(0);
         }
@@ -283,10 +283,10 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     break;
             }
             kVar.calAABB();
-            kVar.maxY(kVar.maxY() + (80.0f * com.censivn.C3DEngine.b.b.A.b));
-            kVar.minY(kVar.minY() + (com.censivn.C3DEngine.b.b.A.b * 38.0f));
-            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.A.b * 38.0f));
-            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.A.b * 38.0f));
+            kVar.maxY(kVar.maxY() + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
+            kVar.minY(kVar.minY() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 38.0f));
+            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 38.0f));
+            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 38.0f));
             kVar.textures().addElement(this.f);
             kVar.setMouseEventListener(new AlignmentOverlay(this.g, this, i));
             addChild(kVar);
@@ -297,10 +297,10 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             final int i3;
             final int i4;
             if (i > i2) {
-                i4 = com.censivn.C3DEngine.b.b.A.F;
+                i4 = com.censivn.C3DEngine.b.b.ScreenConstants.F;
                 i3 = (i4 * i2) / i;
             } else {
-                i3 = com.censivn.C3DEngine.b.b.A.G;
+                i3 = com.censivn.C3DEngine.b.b.ScreenConstants.G;
                 i4 = (i3 * i) / i2;
             }
             this.g.a(i + i4, i2 + i3);
@@ -383,7 +383,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
 
         public void i() {
             ItemInfo itemInfoK = t.c.K();
-            if (com.censivn.C3DEngine.b.b.A.O) {
+            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                 itemInfoK.cellX = t.d.a;
                 itemInfoK.cellY = t.d.b;
                 itemInfoK.width = t.d.d;
@@ -492,8 +492,8 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         private void a(int i, boolean z) {
             switch (SelectionFrame) {
                 case 0:
-                    int iA = (int) ((com.censivn.C3DEngine.b.b.A.I - t.a.position().y) - a());
-                    int iD = ((int) ((com.censivn.C3DEngine.b.b.A.I - t.a.position().y) + d())) - iA;
+                    int iA = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.I - t.a.position().y) - a());
+                    int iD = ((int) ((com.censivn.C3DEngine.b.b.ScreenConstants.I - t.a.position().y) + d())) - iA;
                     if (z) {
                         int[] iArrA = a(t.d.a, iA, t.d.d, iD, true);
                         t.d.b = iArrA[1];
@@ -513,8 +513,8 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     }
                     break;
                 case 2:
-                    int iF = (int) ((t.a.position().x - f()) + com.censivn.C3DEngine.b.b.A.H);
-                    int iE = ((int) ((t.a.position().x + e()) + com.censivn.C3DEngine.b.b.A.H)) - iF;
+                    int iF = (int) ((t.a.position().x - f()) + com.censivn.C3DEngine.b.b.ScreenConstants.H);
+                    int iE = ((int) ((t.a.position().x + e()) + com.censivn.C3DEngine.b.b.ScreenConstants.H)) - iF;
                     if (z) {
                         int[] iArrA2 = a(iF, t.d.b, iE, t.d.e, true);
                         t.d.a = iArrA2[0];
@@ -570,7 +570,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         }
     }
 
-    static class A extends com.censivn.C3DEngine.b.d.a {
+    static class A extends com.censivn.C3DEngine.b.d.MouseEventListener {
         private float a;
         private float b;
         private int d;
@@ -584,7 +584,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             this.d = i;
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             final float y;
             if (this.f) {
@@ -602,7 +602,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
             this.f = true;
             this.a = motionEvent.getX();
@@ -610,7 +610,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             this.e.j();
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             this.f = false;
             if (t.e) {

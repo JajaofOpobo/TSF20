@@ -76,46 +76,46 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.42f, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.5
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new h(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.A.c);
+                    return new h(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.message")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.6
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.41f, f3, (-40.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.6
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.GridSceneNode(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.alarm")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.33f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.7
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.33f, f3, com.censivn.C3DEngine.b.b.ScreenConstants.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.7
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.b(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.calendar")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.28f, f3, com.censivn.C3DEngine.b.b.A.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.8
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.28f, f3, com.censivn.C3DEngine.b.b.ScreenConstants.c * (-15.0f)) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.8
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.a.TextureElementB(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.cubeclock")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.6f * com.censivn.C3DEngine.b.b.A.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.9
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.6f * com.censivn.C3DEngine.b.b.ScreenConstants.c, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.9
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.b.SceneComponentC(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.weather")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-20.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.10
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-20.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.10
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new m(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.memo")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.11
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(f, f3, (-10.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.11
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.LabelSceneNode(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());
@@ -129,7 +129,7 @@ public class WidgetDefinitionFactory {
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.adornment")) {
-            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.55f, f3, (-50.0f) * com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.2
+            gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.55f, f3, (-50.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.2
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
                     return new com.tsf.shell.f.i.c.a.a(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d());

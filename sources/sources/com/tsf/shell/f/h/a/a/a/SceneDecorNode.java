@@ -25,8 +25,8 @@ public class SceneDecorNode extends BaseRenderable {
         this.d.textures().addElement(this.a);
         addChild(this.d);
         addChild(this.e);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.h.a.a.a.SceneDecorNode.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.h.a.a.a.SceneDecorNode.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (d.this.f != null) {
                     d.this.f.f();
@@ -43,11 +43,11 @@ public class SceneDecorNode extends BaseRenderable {
         this.e.a(bVar.d());
         this.e.b();
         float fMaxX = this.e.maxX() - this.e.minY();
-        float fA = com.censivn.C3DEngine.b.b.A.a(720.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(720.0f);
         if (fMaxX >= fA) {
             fA = fMaxX;
         }
-        setAABBPX(fA, com.censivn.C3DEngine.b.b.A.a(130.0f));
+        setAABBPX(fA, com.censivn.C3DEngine.b.b.ScreenConstants.a(130.0f));
         this.d.alpha(0.0f);
         this.e.alpha(0.0f);
         SceneDecorNode();
@@ -60,11 +60,11 @@ public class SceneDecorNode extends BaseRenderable {
     }
 
     public float a() {
-        return com.censivn.C3DEngine.b.b.A.a(30.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
     }
 
     public float b() {
-        return com.censivn.C3DEngine.b.b.A.a(-30.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.a(-30.0f);
     }
 
     public i c() {
@@ -86,7 +86,7 @@ public class SceneDecorNode extends BaseRenderable {
     }
 
     private void i() {
-        int iA = (int) com.censivn.C3DEngine.b.b.A.a(50.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         if (this.a.id == 0) {
             com.tsf.shell.manager.o.a.TextConfig aVar = new com.tsf.shell.manager.o.a.TextConfig();
             aVar.h(36);
@@ -96,7 +96,7 @@ public class SceneDecorNode extends BaseRenderable {
             aVar.d(iA);
             Bitmap bitmapB = aVar.b(this.b);
             Canvas canvas = new Canvas(bitmapB);
-            float fA = com.censivn.C3DEngine.b.b.A.a(25.0f);
+            float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f);
             Paint paint = new Paint();
             paint.setAntiAlias(true);
             paint.setColor(-1);

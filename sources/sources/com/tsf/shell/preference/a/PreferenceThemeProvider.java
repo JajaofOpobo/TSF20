@@ -13,7 +13,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
+public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.AbstractPanelRenderer {
     private i a;
     private com.censivn.C3DEngine.b.f.b.NinePatchRenderable b;
     private GridRenderable f;
@@ -29,10 +29,10 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
     public PreferenceThemeProvider() {
         a(1);
         a(true);
-        com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
-        layoutParams.a = com.censivn.C3DEngine.b.b.A.a(30.0f);
-        layoutParams.b = com.censivn.C3DEngine.b.b.A.a(30.0f);
-        this.b = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, com.censivn.C3DEngine.b.b.A.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(68, 68, 68, 68, 136, 136));
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = getLayoutParams();
+        layoutParams.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
+        layoutParams.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
+        this.b = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(68, 68, 68, 68, 136, 136));
         this.b.textures().addElement(this.d);
         this.b.alpha(80.0f);
         addChild(this.b);
@@ -52,18 +52,18 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
-        this.j = com.censivn.C3DEngine.b.b.A.d;
+        this.j = com.censivn.C3DEngine.b.b.ScreenConstants.d;
         PreferenceThemeProvider();
     }
 
     private void e() {
         float f = this.j / 3.0f;
-        this.b.a((com.censivn.C3DEngine.b.b.A.D * this.i) + (40.0f * f));
-        this.b.b((com.censivn.C3DEngine.b.b.A.E * this.i) + (40.0f * f));
+        this.b.a((com.censivn.C3DEngine.b.b.ScreenConstants.D * this.i) + (40.0f * f));
+        this.b.b((com.censivn.C3DEngine.b.b.ScreenConstants.E * this.i) + (40.0f * f));
         this.a.a(this.b.b() - (40.0f * f), this.b.c() - (40.0f * f));
-        com.censivn.C3DEngine.b.b.b layoutParams = getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = getLayoutParams();
         layoutParams.i = -this.b.c();
         layoutParams.k = 0.0f;
         d((int) this.b.c());
@@ -73,9 +73,9 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
         positionNumber3dPosition2.y = f2;
         positionNumber3dPosition.y = f2;
         if (parent() != null) {
-            ((com.censivn.C3DEngine.b.b.c) parent()).d();
+            ((com.censivn.C3DEngine.b.b.DesktopRenderer) parent()).d();
         }
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             this.f.position().x = 0.0f;
             this.f.position().y = f * 180.0f;
         } else {
@@ -88,11 +88,11 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
     public void a(float f) {
         this.j = f;
         float f2 = this.j / 3.0f;
-        this.h.position().y = (((-com.censivn.C3DEngine.b.b.A.E) * this.i) / 2.0f) + ((this.h.c() * f2) / 2.0f) + (20.0f * this.i);
+        this.h.position().y = (((-com.censivn.C3DEngine.b.b.ScreenConstants.E) * this.i) / 2.0f) + ((this.h.c() * f2) / 2.0f) + (20.0f * this.i);
         Number3d number3dScale = this.h.scale();
         this.h.scale().y = f2;
         number3dScale.x = f2;
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             Number3d number3dScale2 = this.f.scale();
             this.f.scale().y = f2;
             number3dScale2.x = f2;
@@ -134,12 +134,12 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         PreferenceThemeProvider();
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         PreferenceThemeProvider();
         super.c(i);

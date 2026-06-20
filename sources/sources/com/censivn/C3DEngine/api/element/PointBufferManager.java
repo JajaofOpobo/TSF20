@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.element;
 
-import com.censivn.C3DEngine.b.b.A;
+import com.censivn.C3DEngine.b.b.ScreenConstants;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;

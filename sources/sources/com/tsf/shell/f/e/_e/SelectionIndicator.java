@@ -9,12 +9,12 @@ public class SelectionIndicator extends BaseRenderable {
     private C0093a b;
     private b c;
     private boolean d = false;
-    private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 0);
+    private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), com.censivn.C3DEngine.b.b.ScreenConstants.E, 0);
 
     public SelectionIndicator() {
         this.a.setDefaultColor(new Color4(255, 255, 255, 100));
         this.a.alpha(0.0f);
-        this.b = new C0093a(com.censivn.C3DEngine.b.b.A.a(20.0f), com.censivn.C3DEngine.b.b.A.E, 1);
+        this.b = new C0093a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), com.censivn.C3DEngine.b.b.ScreenConstants.E, 1);
         this.b.setDefaultColor(new Color4(255, 255, 255, 100));
         this.b.alpha(0.0f);
         addChild(this.a);
@@ -71,15 +71,15 @@ public class SelectionIndicator extends BaseRenderable {
         if (!this.d) {
             this.d = true;
             removeFromParent();
-            float fA = com.censivn.C3DEngine.b.b.A.C + a();
+            float fA = com.censivn.C3DEngine.b.b.ScreenConstants.C + a();
             this.a.points().setYPX(0, fA);
             this.a.points().setYPX(1, fA);
             this.b.points().setYPX(0, fA);
             this.b.points().setYPX(1, fA);
-            this.a.points().setYPX(2, com.censivn.C3DEngine.b.b.A.B);
-            this.a.points().setYPX(3, com.censivn.C3DEngine.b.b.A.B);
-            this.b.points().setYPX(2, com.censivn.C3DEngine.b.b.A.B);
-            this.b.points().setYPX(3, com.censivn.C3DEngine.b.b.A.B);
+            this.a.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.a.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.b.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.b.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
             this.a.updatePointsVBO();
             this.b.updatePointsVBO();
             this.a.calAABB(6.0f, 1.0f, 1.0f);
@@ -87,8 +87,8 @@ public class SelectionIndicator extends BaseRenderable {
             com.tsf.shell.manager.app.TaskScheduler.a(this);
             com.tsf.shell.manager.app.StateManager.b(this.a);
             com.tsf.shell.manager.app.StateManager.b(this.b);
-            this.a.position().x = com.censivn.C3DEngine.b.b.A.z;
-            this.b.position().x = com.censivn.C3DEngine.b.b.A.A;
+            this.a.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+            this.b.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
         }
     }
 

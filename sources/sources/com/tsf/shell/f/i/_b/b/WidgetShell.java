@@ -51,7 +51,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     public void k() {
         LauncherAppWidgetInfo launcherAppWidgetInfo = (LauncherAppWidgetInfo) K();
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             this.b.a(launcherAppWidgetInfo.width);
             this.b.b(launcherAppWidgetInfo.height);
             c(launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY);
@@ -88,7 +88,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         t.a();
         ItemInfo itemInfoK = K();
         d.b bVar = (d.b) this.g.getLayoutParams();
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             bVar.a = itemInfoK.cellX;
             bVar.b = itemInfoK.cellY;
             bVar.d = itemInfoK.width;
@@ -228,8 +228,8 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
             d.b bVar = (d.b) this.g.getLayoutParams();
             int i = bVar.a;
             int i2 = bVar.b;
-            float fB = (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.H;
-            float fC = com.censivn.C3DEngine.b.b.A.I - (i2 + (this.b.c() / 2.0f));
+            float fB = (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.H;
+            float fC = com.censivn.C3DEngine.b.b.ScreenConstants.I - (i2 + (this.b.c() / 2.0f));
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
@@ -312,11 +312,11 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     }
 
     public float b(int i) {
-        return (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.H;
+        return (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.H;
     }
 
     public float c(int i) {
-        return com.censivn.C3DEngine.b.b.A.I - (i + (this.b.c() / 2.0f));
+        return com.censivn.C3DEngine.b.b.ScreenConstants.I - (i + (this.b.c() / 2.0f));
     }
 
     @Override // com.tsf.shell.f.i.PageItem
@@ -325,7 +325,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
             @Override // java.lang.Runnable
             public void run() {
                 if (a.this.e == null) {
-                    a.this.e = com.tsf.shell.f.e._b.OverlayBackground((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    a.this.e = com.tsf.shell.f.e._b.OverlayBackground((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
                     a.this.e.useVBO(false);
                     a.this.e.textures().addElement(com.tsf.shell.f.e._b.h);
                     a.this.e.position().y = (this.minY() + this.maxY()) / 2.0f;

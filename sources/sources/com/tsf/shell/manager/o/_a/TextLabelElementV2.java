@@ -11,7 +11,7 @@ import com.tsf.shell.utils.BitmapTransformationHelper;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TextLabelElementV2 {
     public static int a;
-    public static final int d = (int) com.censivn.C3DEngine.b.b.A.a(50.0f);
+    public static final int d = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
     public int b;
     public int c;
     private com.tsf.shell.manager.o.ButtonMetrics e;

@@ -27,7 +27,7 @@ public class PreferenceElementRenderer extends PreferenceBaseFragment {
         this.a.a(i, false);
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         this.a.f().d();
@@ -46,13 +46,13 @@ public class PreferenceElementRenderer extends PreferenceBaseFragment {
         }
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         this.a.a(this.b, (-this.b) / 2.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         this.a.f().e();
@@ -89,7 +89,7 @@ public class PreferenceElementRenderer extends PreferenceBaseFragment {
         this.b *= 0.7f;
         this.a.v();
         this.d.position().x = this.b / 2.0f;
-        this.d.position().y = com.censivn.C3DEngine.b.b.A.a(-100.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-100.0f);
         this.a.h().addChild(this.d);
     }
 

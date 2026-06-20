@@ -22,7 +22,7 @@ public class WidgetPreviewCell extends BaseRenderable {
     private float h;
     private float i;
     private float j;
-    private float k = 0.0f * com.censivn.C3DEngine.b.b.A.c;
+    private float k = 0.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
 
     public WidgetPreviewCell(float f, float f2, float f3, boolean z) {
         this.i = f;
@@ -58,10 +58,10 @@ public class WidgetPreviewCell extends BaseRenderable {
                 bitmapA.recycle();
             }
             if (a == null) {
-                a = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 84.0f, com.censivn.C3DEngine.b.b.A.c * 84.0f, false);
+                a = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 84.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 84.0f, false);
                 a.textures().addElement(b);
-                a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
-                a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
+                a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
+                a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
             }
             a.dispatchDraw();
         }
@@ -98,7 +98,7 @@ public class WidgetPreviewCell extends BaseRenderable {
         } else if (this.g != null) {
             this.g.h();
         }
-        i iVarB = eVar.b((int) (this.i - com.censivn.C3DEngine.b.b.A.a(20.0f)));
+        i iVarB = eVar.b((int) (this.i - com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f)));
         if (this.d != iVarB) {
             removeChild(this.d);
             this.d = iVarB;

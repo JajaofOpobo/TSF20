@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MD2Parser extends AbstractModelParser implements IModelParser {
     private MD2Header n;
     private String o;
-    private com.censivn.C3DEngine.b.a.a[] p;
+    private com.censivn.C3DEngine.b.a.MeshData[] p;
 
     public MD2Parser(Resources resources, String str, boolean z) {
         super(resources, str, Boolean.valueOf(z));
@@ -29,7 +29,7 @@ public class MD2Parser extends AbstractModelParser implements IModelParser {
         Log.d("Censivn3D", "Start parsing MD2 file");
         try {
             this.n.a(bufferedInputStream);
-            this.p = new com.censivn.C3DEngine.b.a.a[this.n.k];
+            this.p = new com.censivn.C3DEngine.b.a.MeshData[this.n.k];
             byte[] bArr = new byte[this.n.q - 68];
             bufferedInputStream.read(bArr);
             a(bufferedInputStream, bArr);
@@ -98,7 +98,7 @@ public class MD2Parser extends AbstractModelParser implements IModelParser {
                     this.f.c.add(new Number3d(fArr[i2 - 3], fArr[i2 - 2], fArr[i2 - 1]));
                 }
             }
-            this.p[i] = new com.censivn.C3DEngine.b.a.a(strReplaceAll, fArr);
+            this.p[i] = new com.censivn.C3DEngine.b.a.MeshData(strReplaceAll, fArr);
         }
     }
 

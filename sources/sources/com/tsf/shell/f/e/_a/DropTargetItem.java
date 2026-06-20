@@ -45,9 +45,9 @@ public class DropTargetItem {
                 }
             };
             DropTargetKeyHandler.alpha(0.0f);
-            c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
+            c = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 308.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, false);
             DropTargetKeyHandler.addChild(c);
-            e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e._a.DropTargetItem.3
+            e = new g(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e._a.DropTargetItem.3
                 @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG
                 public i a(int i2, i iVar) {
                     i iVarB;
@@ -80,11 +80,11 @@ public class DropTargetItem {
                 }
             };
             DropTargetKeyHandler.addChild(e);
-            DropTargetKeyHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, 80.0f * com.censivn.C3DEngine.b.b.A.b, 0.0f);
-            DropTargetKeyHandler.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(DropTargetKeyHandler) { // from class: com.tsf.shell.f.e._a.DropTargetItem.4
-                com.censivn.C3DEngine.b.d.a a;
+            DropTargetKeyHandler.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f);
+            DropTargetKeyHandler.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(DropTargetKeyHandler) { // from class: com.tsf.shell.f.e._a.DropTargetItem.4
+                com.censivn.C3DEngine.b.d.MouseEventListener a;
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void e(MotionEvent motionEvent) {
                     float[] fArrA = x.a(motionEvent);
                     i hittingTarget = this.c.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -96,21 +96,21 @@ public class DropTargetItem {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
                     if (this.a != null) {
                         this.a.a(motionEvent, motionEvent2, f2, f3);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
                     if (this.a != null) {
                         this.a.f(motionEvent);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (this.a != null) {
                         w.b();
@@ -118,7 +118,7 @@ public class DropTargetItem {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f2, float f3) {
                     if (this.a != null) {
                         this.a.b(motionEvent, motionEvent2, f2, f3);
@@ -164,7 +164,7 @@ public class DropTargetItem {
         com.tsf.shell.manager.app.ServiceProvider.a().a.b();
         DropTargetItem();
         if (DropTargetKeyHandler.parent() == null) {
-            DropTargetKeyHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.A.b);
+            DropTargetKeyHandler.position().y = a - (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         } else {
             DropTargetKeyHandler.removeFromParent();
         }
@@ -175,7 +175,7 @@ public class DropTargetItem {
     public static void b() {
         if (h) {
             com.tsf.shell.manager.app.ServiceProvider.a().a.b(l);
-            com.censivn.C3DEngine.b.c.b.b(f);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(f);
             com.tsf.shell.manager.app.ObserverManager.b(g);
             DropTargetItem();
         }
@@ -185,7 +185,7 @@ public class DropTargetItem {
         DropTargetKeyHandler.mouseEnabled(false);
         DropTargetKeyHandler.setFocus();
         h = true;
-        com.censivn.C3DEngine.b.c.b.a(f);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(f);
         com.tsf.shell.manager.app.ObserverManager.a(g);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._a.DropTargetItem.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -213,16 +213,16 @@ public class DropTargetItem {
             }
         };
         dVar.a(0);
-        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.A.b));
+        dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
         com.censivn.C3DEngine.b.g.TweenUtils.a(DropTargetKeyHandler);
         com.censivn.C3DEngine.b.g.TweenUtils.a(b, 500, dVar);
     }
 
     private static void j() {
-        DropTargetKeyHandler.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f, 0.0f);
-        c.a(com.censivn.C3DEngine.b.b.A.D);
-        e.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * 80.0f);
-        a = com.censivn.C3DEngine.b.b.A.C + (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.A.c);
+        DropTargetKeyHandler.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f, 0.0f);
+        c.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
+        e.a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.b * (-80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.b * 80.0f);
+        a = com.censivn.C3DEngine.b.b.ScreenConstants.C + (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) + (10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         if (h) {
             DropTargetKeyHandler.position().y = a;
         }

@@ -31,7 +31,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
 
     public ThemeElementInfoLayout() {
         setTitle(b.i.text_theme_element);
-        this.mElementSize = (int) com.censivn.C3DEngine.b.b.A.a(180.0f);
+        this.mElementSize = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f);
         addChild(new a(8) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.1
             @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeElementInfoLayout.a
             public Bitmap a(ThemeListsManager.ThemeInfo themeInfo) {
@@ -112,7 +112,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
         });
     }
 
-    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.A.a
+    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.ScreenConstants.a
     public void recycle() {
         int i = 0;
         while (true) {
@@ -153,10 +153,10 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
             this.b = new GridRenderable(ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             this.b.calAABB();
             this.b.textures().addElement(this.e);
-            this.b.position().y = com.censivn.C3DEngine.b.b.A.a(100.0f);
+            this.b.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
             this.c = new LabelRenderable();
             this.c.d(35);
-            this.c.position().y = -com.censivn.C3DEngine.b.b.A.a(50.0f);
+            this.c.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
             this.c.a(ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.C3DEngine.d(), i));
             this.c.b();
             setAABBPX(((-ThemeElementInfoLayout.this.mElementSize) / 2.0f) * 1.4f, (-ThemeElementInfoLayout.this.mElementSize) / 2.0f, 0.0f, (ThemeElementInfoLayout.this.mElementSize / 2.0f) * 1.4f, ThemeElementInfoLayout.this.mElementSize / 2.0f, 0.0f);

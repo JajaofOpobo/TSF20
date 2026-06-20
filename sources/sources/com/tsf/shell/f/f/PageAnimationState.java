@@ -83,7 +83,7 @@ public class PageAnimationState {
 
         public void a() {
             if (this.b == null) {
-                this.b = com.censivn.C3DEngine.C3DEngine.g().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
+                this.b = com.censivn.C3DEngine.C3DEngine.g().a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, false);
             }
         }
 
@@ -112,7 +112,7 @@ public class PageAnimationState {
 
     public static com.tsf.shell.f.a.a.GlTextureBinding c() {
         if (c == null) {
-            c = com.tsf.shell.manager.app.TextureCache.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            c = com.tsf.shell.manager.app.TextureCache.a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         }
         return c;
     }

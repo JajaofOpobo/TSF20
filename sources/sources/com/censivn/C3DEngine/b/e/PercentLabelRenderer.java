@@ -1,10 +1,10 @@
 package com.censivn.C3DEngine.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends h {
+public class PercentLabelRenderer extends TextIconRenderer {
     private String b = "%";
 
-    @Override // com.censivn.C3DEngine.b.e.h
+    @Override // com.censivn.C3DEngine.b.e.TextIconRenderer
     public void f(int i) {
         d(i + this.b);
     }

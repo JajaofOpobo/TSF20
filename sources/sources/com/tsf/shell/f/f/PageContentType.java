@@ -67,7 +67,7 @@ public class PageContentType extends g {
 
     public void a(c.a aVar) {
         this.l = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(this, false, aVar);
-        int i = ((int) (((double) (com.censivn.C3DEngine.b.b.A.D > com.censivn.C3DEngine.b.b.A.E ? com.censivn.C3DEngine.b.b.A.E : com.censivn.C3DEngine.b.b.A.D)) * 0.9d)) / 2;
+        int i = ((int) (((double) (com.censivn.C3DEngine.b.b.ScreenConstants.D > com.censivn.C3DEngine.b.b.ScreenConstants.E ? com.censivn.C3DEngine.b.b.ScreenConstants.E : com.censivn.C3DEngine.b.b.ScreenConstants.D)) * 0.9d)) / 2;
         this.l.a(i, i);
         this.l.scale().setAll(0.5f, 0.5f, 1.0f);
         this.l.alpha(0.0f);

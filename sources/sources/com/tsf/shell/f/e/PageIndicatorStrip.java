@@ -24,14 +24,14 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
     private boolean h = false;
     private boolean p = false;
     private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper q = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
-    private float i = com.censivn.C3DEngine.b.b.A.c * 100.0f;
-    private float j = com.censivn.C3DEngine.b.b.A.c * 100.0f;
+    private float i = com.censivn.C3DEngine.b.b.ScreenConstants.c * 100.0f;
+    private float j = com.censivn.C3DEngine.b.b.ScreenConstants.c * 100.0f;
     private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.LayoutDimensionConstants.l, com.tsf.shell.manager.g.LayoutDimensionConstants.l);
     private r o = new PageNumberBadge();
 
     public PageIndicatorStrip(final boolean z) {
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (z) {
                     if (j.this.p) {
@@ -66,7 +66,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (z) {
                     j.this.b();
@@ -74,7 +74,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (z) {
                     if (j.this.p && !j.this.h) {
@@ -87,14 +87,14 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (z && j.this.p && !j.this.h) {
                     com.tsf.shell.manager.app.StateHub.s().b(motionEvent, motionEvent2, f, f2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 j.this.a();
             }
@@ -201,7 +201,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         }
         this.b = i;
         this.e = null;
-        float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.A.c) * (i - 1)) / 2.0f);
+        float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.ScreenConstants.c) * (i - 1)) / 2.0f);
         this.d = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(i, 32, 32, 32);
         this.d.useVBO(false);
         float f2 = f;
@@ -213,7 +213,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             bVarA.k().setAll(0.4f, 0.4f, 1.0f);
             bVarA.a(0, 0, 1, 1);
             bVarA.h();
-            f2 += this.a * com.censivn.C3DEngine.b.b.A.c;
+            f2 += this.a * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         }
         this.d.textures().addElement(this.c);
         addChild(this.d);
@@ -223,7 +223,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         if (this.f < this.b && this.f > -1) {
             this.e = this.d.a(this.f);
         }
-        setAABBPX(f - com.censivn.C3DEngine.b.b.A.a(150.0f), com.censivn.C3DEngine.b.b.A.c * (-55.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(150.0f) + (-f), com.censivn.C3DEngine.b.b.A.c * 55.0f, 0.0f);
+        setAABBPX(f - com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f), com.censivn.C3DEngine.b.b.ScreenConstants.c * (-55.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f) + (-f), com.censivn.C3DEngine.b.b.ScreenConstants.c * 55.0f, 0.0f);
         this.l.position().x = f - this.j;
         this.m.position().x = (-f) + this.j;
         this.n.position().y = this.i;
@@ -375,7 +375,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                     }
                 };
                 dVar.a(0);
-                dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
+                dVar.h(100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
             }

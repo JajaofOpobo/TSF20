@@ -31,13 +31,13 @@ public class DesktopTouchHandlerG extends BaseRenderable {
         this.f = f5;
         addChild(this.c);
         setAABBPX(f, f3, 0.0f, f2, f4, 0.0f);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG.1
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG.1
             boolean a = true;
             float b = 0.0f;
             boolean d = false;
             private IRenderable f;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f6, float f7) {
                 if (this.a) {
                     g.this.i = true;
@@ -50,7 +50,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 g.this.g = this.b + (motionEvent2.getX() - motionEvent.getX());
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (Math.abs(g.this.g - g.this.c.position().x) < 50.0f) {
                     this.d = false;
@@ -61,18 +61,18 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 this.f = null;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 g.this.i = false;
                 this.a = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f6, float f7) {
                 g.this.g += f6 / 5.0f;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (!this.d) {
                     float[] fArrA = x.a(motionEvent);
@@ -83,7 +83,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 if (!this.d) {
                     float[] fArrA = x.a(motionEvent);
@@ -95,7 +95,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 if (this.f != null) {
                     g.this.b(motionEvent, this.f, this.f.getDisplayTag());
@@ -103,7 +103,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.f != null) {
                     g.this.a(motionEvent, motionEvent2, this.f, this.f.getDisplayTag());
@@ -177,8 +177,8 @@ public class DesktopTouchHandlerG extends BaseRenderable {
         if (this.l) {
             this.l = false;
             this.a = e() - 1;
-            this.j = (int) (com.censivn.C3DEngine.b.b.A.z + (this.f / 2.0f));
-            this.k = (int) ((((-this.a) * this.f) + com.censivn.C3DEngine.b.b.A.A) - (this.f / 2.0f));
+            this.j = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z + (this.f / 2.0f));
+            this.k = (int) ((((-this.a) * this.f) + com.censivn.C3DEngine.b.b.ScreenConstants.A) - (this.f / 2.0f));
             this.h = false;
             this.c.setAnimationObjectState(true);
             this.c.invalidate();

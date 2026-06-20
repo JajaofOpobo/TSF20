@@ -23,8 +23,8 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
         this.d.d(34);
         this.d.a(true);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.d, com.tsf.shell.manager.o.ThemeColorConstants.n);
-        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(430.0f));
-        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        setMenuHeight(com.censivn.C3DEngine.b.b.ScreenConstants.a(430.0f));
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.9f);
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.1
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -49,7 +49,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
                 return bVarE;
             }
         });
-        this.d.position().y = com.censivn.C3DEngine.b.b.A.a(300.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f);
         this.b.a().addChild(this.d);
         this.b.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.2
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
@@ -71,7 +71,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
         this.b.a(f, f2, f3, f4);
-        this.d.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(150.0f)));
+        this.d.f((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f)));
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
@@ -82,7 +82,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
 
     @Override // com.tsf.shell.f.g.a.GestureMenuBlankItem
     public float b() {
-        return com.censivn.C3DEngine.b.b.A.a(120.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
     }
 
     @Override // com.tsf.shell.f.g.a.GestureMenuBlankItem

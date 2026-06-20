@@ -1,7 +1,7 @@
 package com.tsf.shell.f.i;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.f.i.ShortcutItem;
@@ -9,7 +9,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
+public class MultiSelectController implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
     protected InterfaceC0113a d;
     public Object a;
     private Object e;
@@ -55,7 +55,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
     public void f() {
         if (com.tsf.shell.manager.app.FeatureConfig.a() && !this.c) {
             this.c = true;
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             for (i iVar : this.d.b()) {
                 if (iVar instanceof ShortcutItem) {
                     ((ShortcutItem) iVar).am();
@@ -74,14 +74,14 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
         com.tsf.shell.manager.app.Notifier.b(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             a();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -89,7 +89,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.b.a {
         if (this.c) {
             InterfaceC0113a();
             this.c = false;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             for (i iVar : this.d.b()) {
                 if (iVar instanceof ShortcutItem) {
                     ((ShortcutItem) iVar).an();

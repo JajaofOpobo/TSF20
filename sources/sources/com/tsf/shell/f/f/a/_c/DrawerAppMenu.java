@@ -65,7 +65,7 @@ public class DrawerAppMenu extends DrawerPageItemBase {
     }
 
     private void c() {
-        this.g = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.ButtonPresetManager.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.g = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.tsf.shell.manager.o.ButtonPresetManager.c.U, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.9f);
         this.g.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.1
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -131,7 +131,7 @@ public class DrawerAppMenu extends DrawerPageItemBase {
         if (arrayList != null) {
             this.j = arrayList;
             this.i = new com.tsf.shell.f.e._g.MenuContainer();
-            this.i.position().y = com.censivn.C3DEngine.b.b.A.a(160.0f);
+            this.i.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(160.0f);
             Iterator<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> it = arrayList.iterator();
             while (it.hasNext()) {
                 this.i.addChild(it.next());

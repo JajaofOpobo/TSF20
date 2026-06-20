@@ -65,7 +65,7 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
         }
         j.a aVarJ = gVar.j();
         this.a.alpha((1.0f - Math.abs(FolderTransitionF)) * 255.0f);
-        this.a.position().y = com.censivn.C3DEngine.b.b.A.a(400.0f) * f;
+        this.a.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f) * f;
         this.a.textures().clear();
         this.a.textures().addElement(aVarJ.b);
         this.a.dispatchDraw();
@@ -134,7 +134,7 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
                 @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
-                    com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(20.0f));
+                    com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f));
                 }
             };
         }

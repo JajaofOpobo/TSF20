@@ -16,7 +16,7 @@ public abstract class DrawerSettingsBase {
     private boolean f = false;
     private boolean g = false;
     private boolean h = false;
-    private GridRenderable a = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
+    private GridRenderable a = com.censivn.C3DEngine.b.b.ScreenConstants.a(103.0f, 149.0f);
 
     public abstract j a();
 
@@ -27,7 +27,7 @@ public abstract class DrawerSettingsBase {
         this.b = new TextureElement(0, false);
         this.a.textures().addElement(this.b);
         this.a.alpha(0.0f);
-        this.c = com.censivn.C3DEngine.b.b.A.a(69.0f, 69.0f);
+        this.c = com.censivn.C3DEngine.b.b.ScreenConstants.a(69.0f, 69.0f);
         this.c.alpha(0.0f);
         this.d = new TextureElement(0, false);
         this.c.textures().addElement(this.d);

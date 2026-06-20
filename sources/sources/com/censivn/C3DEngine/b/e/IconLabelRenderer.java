@@ -4,19 +4,19 @@ import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends f {
+public class IconLabelRenderer extends AbstractPanelRenderer {
     private LabelRenderable a;
     private LabelRenderable b;
 
-    public g() {
-        this(com.censivn.C3DEngine.b.b.A.a(180.0f));
+    public IconLabelRenderer() {
+        this(com.censivn.C3DEngine.b.b.ScreenConstants.a(180.0f));
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         if (this.a != null) {
             this.a.a();
@@ -26,19 +26,19 @@ public class g extends f {
         }
     }
 
-    public g(float f) {
+    public IconLabelRenderer(float f) {
         d((int) f);
         a(0);
         this.a = new LabelRenderable();
         this.a.b(1);
-        com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.A.a(15.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(15.0f);
         this.a.setLayoutParams(bVar);
         this.a.d(50);
         addChild(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         this.a.position().x = (-i) / 2.0f;
         if (this.b != null) {
@@ -50,7 +50,7 @@ public class g extends f {
 
     public void e() {
         this.b.b();
-        com.censivn.C3DEngine.b.b.b layoutParams = this.b.getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = this.b.getLayoutParams();
         layoutParams.h = this.b.minX();
         layoutParams.j = this.b.maxX();
         layoutParams.i = this.b.minY();
@@ -64,7 +64,7 @@ public class g extends f {
     public void a(String str) {
         this.a.a(str);
         this.a.b();
-        com.censivn.C3DEngine.b.b.b layoutParams = this.a.getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = this.a.getLayoutParams();
         layoutParams.h = this.a.minX();
         layoutParams.j = this.a.maxX();
         layoutParams.i = this.a.minY();
@@ -81,8 +81,8 @@ public class g extends f {
             this.b = new LabelRenderable();
             this.b.b(1);
             this.b.a(true);
-            com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-            bVar.b = com.censivn.C3DEngine.b.b.A.a(15.0f);
+            com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+            bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(15.0f);
             this.b.setLayoutParams(bVar);
             this.b.d(38);
             this.b.position().x = (-a()) / 2.0f;
@@ -92,7 +92,7 @@ public class g extends f {
         }
         this.b.a(str);
         this.b.b();
-        com.censivn.C3DEngine.b.b.b layoutParams = this.b.getLayoutParams();
+        com.censivn.C3DEngine.b.b.TouchState layoutParams = this.b.getLayoutParams();
         layoutParams.h = this.b.minX();
         layoutParams.j = this.b.maxX();
         layoutParams.i = this.b.minY();
@@ -100,7 +100,7 @@ public class g extends f {
         d();
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void i() {
         super.i();
         this.a.alpha(100.0f);
@@ -109,7 +109,7 @@ public class g extends f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void j() {
         super.j();
         this.a.alpha(255.0f);

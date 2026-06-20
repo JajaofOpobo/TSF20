@@ -64,7 +64,7 @@ public class DashEffectHandler implements DashEffectCallback {
                 this.g += this.f.g - gVar.g;
                 this.f = gVar;
             }
-            this.b.a.setTransform(((gVar.g + this.g) * com.censivn.C3DEngine.b.b.A.D) / com.tsf.shell.f._d.d.DashAnimationConfig.a, 0.0f, 0.0f);
+            this.b.a.setTransform(((gVar.g + this.g) * com.censivn.C3DEngine.b.b.ScreenConstants.D) / com.tsf.shell.f._d.d.DashAnimationConfig.a, 0.0f, 0.0f);
         }
     }
 

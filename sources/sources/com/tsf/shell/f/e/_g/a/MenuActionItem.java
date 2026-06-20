@@ -35,8 +35,8 @@ public class MenuActionItem extends MenuActionHandler {
     private void createTitleButton(String str) {
         if (this.icon == null) {
             this.icon = new e(this.mMarkTextureId);
-            this.icon.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.icon) { // from class: com.tsf.shell.f.e._g.a.MenuActionItem.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            this.icon.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.icon) { // from class: com.tsf.shell.f.e._g.a.MenuActionItem.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     w.b();
                     MenuActionItem.this.menu.changeMenu(MenuActionItem.this);

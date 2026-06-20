@@ -36,16 +36,16 @@ public class DashRendererBase extends h {
         this.e.useVBO(false);
         if (a == null) {
             a = new ArrayList<>();
-            float f = 5.0f * com.censivn.C3DEngine.b.b.A.c;
-            float f2 = ((-((com.censivn.C3DEngine.b.b.A.c * 120.0f) + (3.0f * f))) / 2.0f) + ((com.censivn.C3DEngine.b.b.A.c * 30.0f) / 2.0f);
-            float f3 = (((com.censivn.C3DEngine.b.b.A.c * 120.0f) + (3.0f * f)) / 2.0f) - ((com.censivn.C3DEngine.b.b.A.c * 30.0f) / 2.0f);
-            b = (com.censivn.C3DEngine.b.b.A.c * 30.0f) + f3;
+            float f = 5.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+            float f2 = ((-((com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f) + (3.0f * f))) / 2.0f) + ((com.censivn.C3DEngine.b.b.ScreenConstants.c * 30.0f) / 2.0f);
+            float f3 = (((com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f) + (3.0f * f)) / 2.0f) - ((com.censivn.C3DEngine.b.b.ScreenConstants.c * 30.0f) / 2.0f);
+            b = (com.censivn.C3DEngine.b.b.ScreenConstants.c * 30.0f) + f3;
             c = f2;
             for (int i2 = 0; i2 < 4; i2++) {
                 for (int i3 = 0; i3 < 4; i3++) {
                     Number3d number3d = new Number3d();
-                    number3d.x = ((30.0f + f) * com.censivn.C3DEngine.b.b.A.c * i2) + f2;
-                    number3d.y = f3 - (((30.0f + f) * com.censivn.C3DEngine.b.b.A.c) * i3);
+                    number3d.x = ((30.0f + f) * com.censivn.C3DEngine.b.b.ScreenConstants.c * i2) + f2;
+                    number3d.y = f3 - (((30.0f + f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) * i3);
                     a.add(number3d);
                 }
             }

@@ -18,8 +18,8 @@ public class CurveTransition extends ItemPageTransition {
         HorizontalFlipTransition.a aVarJ = gVar.j();
         float f2 = 90.0f * f;
         this.a.removeFromParent();
-        this.a.position().y = com.censivn.C3DEngine.b.b.A.I;
-        this.b.position().y = -com.censivn.C3DEngine.b.b.A.I;
+        this.a.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.I;
+        this.b.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.I;
         this.b.addChild(this.a);
         if (f < 0.0f) {
             this.b.rotation().x = f2;
@@ -30,7 +30,7 @@ public class CurveTransition extends ItemPageTransition {
         this.a.alpha((1.0f - Math.abs(CylinderTransition)) * 255.0f);
         this.a.textures().clear();
         this.a.textures().addElement(aVarJ.b);
-        Number3d.TEMPNUMBER3D4.setAll(0.0f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+        Number3d.TEMPNUMBER3D4.setAll(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         this.b.a(gVar, Number3d.TEMPNUMBER3D4);
     }
 

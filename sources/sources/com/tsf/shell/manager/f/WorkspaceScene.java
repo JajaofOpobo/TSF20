@@ -3,8 +3,8 @@ package com.tsf.shell.manager.f;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.d;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.AnimationListener;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -33,15 +33,15 @@ public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpape
         this.c.uvs().set(3, 0.0f, 1.0f);
         this.g = new com.tsf.shell.f.e.b.ResizeButtonNode();
         this.h = new d.b() { // from class: com.tsf.shell.manager.f.WorkspaceScene.1
-            @Override // com.censivn.C3DEngine.b.c.d.b
+            @Override // com.censivn.C3DEngine.b.c.AnimationListener.b
             public void a() {
                 if (WorkspaceScene.this.i != null) {
                     WorkspaceScene.this.i.a();
                 }
             }
         };
-        this.g.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.g) { // from class: com.tsf.shell.manager.f.WorkspaceScene.2
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.g.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.g) { // from class: com.tsf.shell.manager.f.WorkspaceScene.2
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (WorkspaceScene.this.i != null) {
                     WorkspaceScene.this.i.a();
@@ -122,7 +122,7 @@ public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpape
             com.censivn.C3DEngine.a.d.d().c().a(false);
             com.tsf.shell.manager.app.StateHub.n().ab();
             com.tsf.shell.manager.app.ObserverManager.a(this);
-            this.g.setAABBPX(-com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f, com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+            this.g.setAABBPX(-com.censivn.C3DEngine.b.b.ScreenConstants.H, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         }
     }
 
@@ -162,9 +162,9 @@ public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpape
         b(380, runnable, z);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
-        this.g.setAABBPX(-com.censivn.C3DEngine.b.b.A.H, -com.censivn.C3DEngine.b.b.A.I, 0.0f, com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.I, 0.0f);
+        this.g.setAABBPX(-com.censivn.C3DEngine.b.b.ScreenConstants.H, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.H, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         if (this.d) {
             this.f = g();
             this.g.a(this.f.b);

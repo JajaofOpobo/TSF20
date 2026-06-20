@@ -3,20 +3,20 @@ package com.tsf.shell.f.h;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b.c.e.a {
+public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.KeyboardHandler.a, com.censivn.C3DEngine.b.c.WindowManager.a {
     public static int b = -1725816286;
     private BaseRenderable d;
     private com.tsf.shell.f.e.c.AnimationNode e;
     private c f;
     private BaseRenderable g;
     private e k;
-    private com.censivn.C3DEngine.b.c.b.a l;
+    private com.censivn.C3DEngine.b.c.KeyboardHandler.a l;
     private float m;
     private float o;
     private float p;
@@ -65,7 +65,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
 
     public void f() {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.h((-com.censivn.C3DEngine.b.b.A.E) / 2.0f);
+        dVar.h((-com.censivn.C3DEngine.b.b.ScreenConstants.E) / 2.0f);
         dVar.a(0);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 350, dVar);
@@ -84,12 +84,12 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.t = com.tsf.shell.manager.b.ConfigManager.ac();
         this.a = this.t ? com.tsf.shell.manager.b.ConfigManager.ab() : 0;
-        this.c = 80.0f * com.censivn.C3DEngine.b.b.A.c;
+        this.c = 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.s = new com.tsf.shell.f.h.a.WorkspacePreviewNode();
         this.d = new BaseRenderable();
         this.k = new DockOperationBorder();
         this.k.b(0.0f);
-        this.l = new com.censivn.C3DEngine.b.c.b.a() { // from class: com.tsf.shell.f.h.WorkspaceStub.1
+        this.l = new com.censivn.C3DEngine.b.c.KeyboardHandler.a() { // from class: com.tsf.shell.f.h.WorkspaceStub.1
             @Override // com.tsf.shell.manager.f.WorkspaceScene.a
             public void a() {
                 if (WorkspaceStub.this.s.e()) {
@@ -99,7 +99,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
                 }
             }
         };
-        this.e = new com.tsf.shell.f.e.c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(com.tsf.b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.A.c) { // from class: com.tsf.shell.f.h.WorkspaceStub.2
+        this.e = new com.tsf.shell.f.e.c.a(128.0f, ThemeManager.mix.smartButton.getTheme().shell.smartButtonWindowsColor, (int) ((this.a / 100.0f) * 255.0f), x.a(com.tsf.b.d.bubble_icon), 1000, com.censivn.C3DEngine.b.b.ScreenConstants.c) { // from class: com.tsf.shell.f.h.WorkspaceStub.2
             @Override // com.tsf.shell.f.e.c.a
             public void d() {
             }
@@ -129,7 +129,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
         this.f = new WorkspaceDockPanel(this);
         this.e.a(this.f);
         this.g.setMouseEventListener(new d(this, this.g) { // from class: com.tsf.shell.f.h.WorkspaceStub.3
-            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 super.a(motionEvent);
                 if (!WorkspaceStub.this.e.getAnimationObjectState()) {
@@ -137,7 +137,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
                 }
             }
 
-            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (!WorkspaceStub.this.i) {
                     super.e(motionEvent);
@@ -145,13 +145,13 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
                 }
             }
 
-            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 super.f(motionEvent);
                 WorkspaceStub.this.m();
             }
 
-            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.a
+            @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 super.c(motionEvent);
                 WorkspaceStub.this.m();
@@ -164,10 +164,10 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     }
 
     private void r() {
-        Number3d number3dW = com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.w() : com.tsf.shell.manager.b.ConfigManager.x();
+        Number3d number3dW = com.censivn.C3DEngine.b.b.ScreenConstants.O ? com.tsf.shell.manager.b.ConfigManager.w() : com.tsf.shell.manager.b.ConfigManager.x();
         if (number3dW.x == 0.0f && number3dW.y == 0.0f) {
-            number3dW.x = com.censivn.C3DEngine.b.b.A.z + (70.0f * com.censivn.C3DEngine.b.b.A.c);
-            number3dW.y = com.censivn.C3DEngine.b.b.A.C + (300.0f * com.censivn.C3DEngine.b.b.A.c);
+            number3dW.x = com.censivn.C3DEngine.b.b.ScreenConstants.z + (70.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+            number3dW.y = com.censivn.C3DEngine.b.b.ScreenConstants.C + (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         }
         a(number3dW.x, number3dW.y, false);
     }
@@ -267,7 +267,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
         if (com.tsf.shell.f.e._g.MenuOverlay.mCurrentMenu == null && this.h && !this.i && com.tsf.shell.manager.app.StateHub.B() && !com.tsf.shell.manager.app.StateHub.s().a() && !com.tsf.shell.manager.app.v.ScreenHelper.e()) {
             com.tsf.shell.f.b.ShellKeyEventHandler();
             this.e.a(0.0f, 0.0f, this.f.c(), this.f.d(), 204, !this.t);
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             this.i = true;
             this.f.mouseEnabled(true);
             this.f.b();
@@ -280,7 +280,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     protected void o() {
         if (this.i && !this.q) {
             this.e.a(this.o, this.p, null, !this.t);
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             this.i = false;
             this.f.setAnimationObjectState(false);
             this.f.mouseEnabled(false);
@@ -306,15 +306,15 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
             this.o = f;
             this.p = f2;
             float f3 = this.c / 2.0f;
-            if (this.o > com.censivn.C3DEngine.b.b.A.A - f3) {
-                this.o = com.censivn.C3DEngine.b.b.A.A - f3;
-            } else if (this.o < com.censivn.C3DEngine.b.b.A.z + f3) {
-                this.o = com.censivn.C3DEngine.b.b.A.z + f3;
+            if (this.o > com.censivn.C3DEngine.b.b.ScreenConstants.A - f3) {
+                this.o = com.censivn.C3DEngine.b.b.ScreenConstants.A - f3;
+            } else if (this.o < com.censivn.C3DEngine.b.b.ScreenConstants.z + f3) {
+                this.o = com.censivn.C3DEngine.b.b.ScreenConstants.z + f3;
             }
-            if (this.p > com.censivn.C3DEngine.b.b.A.B - f3) {
-                this.p = com.censivn.C3DEngine.b.b.A.B - f3;
-            } else if (this.p < com.censivn.C3DEngine.b.b.A.C + f3) {
-                this.p = f3 + com.censivn.C3DEngine.b.b.A.C;
+            if (this.p > com.censivn.C3DEngine.b.b.ScreenConstants.B - f3) {
+                this.p = com.censivn.C3DEngine.b.b.ScreenConstants.B - f3;
+            } else if (this.p < com.censivn.C3DEngine.b.b.ScreenConstants.C + f3) {
+                this.p = f3 + com.censivn.C3DEngine.b.b.ScreenConstants.C;
             }
         }
     }
@@ -324,7 +324,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
             this.n = false;
             this.m = 0.2f;
             a(false);
-            if (com.censivn.C3DEngine.b.b.A.O) {
+            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                 com.tsf.shell.manager.b.ConfigManager.c(this.o, this.p);
             } else {
                 com.tsf.shell.manager.b.ConfigManager.d(this.o, this.p);
@@ -334,45 +334,45 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
 
     private void a(boolean z) {
         float f = this.c / 2.0f;
-        if (this.o > com.censivn.C3DEngine.b.b.A.A - f) {
-            this.o = com.censivn.C3DEngine.b.b.A.A - f;
-        } else if (this.o < com.censivn.C3DEngine.b.b.A.z + f) {
-            this.o = com.censivn.C3DEngine.b.b.A.z + f;
+        if (this.o > com.censivn.C3DEngine.b.b.ScreenConstants.A - f) {
+            this.o = com.censivn.C3DEngine.b.b.ScreenConstants.A - f;
+        } else if (this.o < com.censivn.C3DEngine.b.b.ScreenConstants.z + f) {
+            this.o = com.censivn.C3DEngine.b.b.ScreenConstants.z + f;
         }
-        if (this.p > com.censivn.C3DEngine.b.b.A.B - f) {
-            this.p = com.censivn.C3DEngine.b.b.A.B - f;
-        } else if (this.p < com.censivn.C3DEngine.b.b.A.C + f) {
-            this.p = f + com.censivn.C3DEngine.b.b.A.C;
+        if (this.p > com.censivn.C3DEngine.b.b.ScreenConstants.B - f) {
+            this.p = com.censivn.C3DEngine.b.b.ScreenConstants.B - f;
+        } else if (this.p < com.censivn.C3DEngine.b.b.ScreenConstants.C + f) {
+            this.p = f + com.censivn.C3DEngine.b.b.ScreenConstants.C;
         }
-        float fAbs = Math.abs(this.o - com.censivn.C3DEngine.b.b.A.z);
-        float fAbs2 = Math.abs(com.censivn.C3DEngine.b.b.A.A - this.o);
-        float fAbs3 = Math.abs(com.censivn.C3DEngine.b.b.A.B - this.p);
-        float fAbs4 = Math.abs(this.p - com.censivn.C3DEngine.b.b.A.C);
+        float fAbs = Math.abs(this.o - com.censivn.C3DEngine.b.b.ScreenConstants.z);
+        float fAbs2 = Math.abs(com.censivn.C3DEngine.b.b.ScreenConstants.A - this.o);
+        float fAbs3 = Math.abs(com.censivn.C3DEngine.b.b.ScreenConstants.B - this.p);
+        float fAbs4 = Math.abs(this.p - com.censivn.C3DEngine.b.b.ScreenConstants.C);
         if (fAbs < fAbs2 && fAbs < fAbs3 && fAbs < fAbs4) {
-            this.o = com.censivn.C3DEngine.b.b.A.z + this.c;
+            this.o = com.censivn.C3DEngine.b.b.ScreenConstants.z + this.c;
             return;
         }
         if (fAbs2 < fAbs && fAbs2 < fAbs3 && fAbs2 < fAbs4) {
-            this.o = com.censivn.C3DEngine.b.b.A.A - this.c;
+            this.o = com.censivn.C3DEngine.b.b.ScreenConstants.A - this.c;
         } else if (fAbs3 < fAbs && fAbs3 < fAbs2 && fAbs3 < fAbs4) {
-            this.p = com.censivn.C3DEngine.b.b.A.B - this.c;
+            this.p = com.censivn.C3DEngine.b.b.ScreenConstants.B - this.c;
         } else {
-            this.p = com.censivn.C3DEngine.b.b.A.C + this.c;
+            this.p = com.censivn.C3DEngine.b.b.ScreenConstants.C + this.c;
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             WorkspaceStateController();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         WorkspaceStateController();
         this.s.l();

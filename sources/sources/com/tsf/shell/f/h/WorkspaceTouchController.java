@@ -7,7 +7,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
+public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private b a;
     private boolean b;
     private n d;
@@ -21,22 +21,22 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
     public WorkspaceTouchController(b bVar, i iVar) {
         super(iVar);
         this.b = false;
-        this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.A.a);
+        this.e = (int) (30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a);
         this.f = 0;
         this.a = bVar;
         this.d = com.tsf.shell.manager.app.StateHub;
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
         w.b();
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void h(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void c(MotionEvent motionEvent) {
         w.a();
         this.b = true;
@@ -45,7 +45,7 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
         this.a.p();
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
         this.b = false;
         switch (this.f) {
@@ -55,13 +55,13 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void d(MotionEvent motionEvent) {
         this.b = false;
         this.a.q();
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         this.b = false;
         switch (this.f) {
@@ -71,7 +71,7 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         com.censivn.C3DEngine.a.b.d = 500;
         com.censivn.C3DEngine.a.b.c = this.e * this.e;
@@ -87,21 +87,21 @@ public class WorkspaceTouchController extends com.censivn.C3DEngine.b.d.a {
     }
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0002. Please report as an issue. */
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void f(MotionEvent motionEvent) {
         switch (this.f) {
         }
         this.f = 0;
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
         if (this.b) {
             this.a.a(this.i + (motionEvent2.getX() - motionEvent.getX()), this.j - (motionEvent2.getY() - motionEvent.getY()));
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         switch (this.f) {
             case 0:

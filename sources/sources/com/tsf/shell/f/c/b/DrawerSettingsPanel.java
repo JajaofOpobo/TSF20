@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
+public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowManager.a {
     public static int a = 1;
     private BaseRenderable d;
     private com.tsf.shell.f.e.PageIndicatorStrip e;
@@ -45,12 +45,12 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         int i;
         boolean z;
         float f = 0.0f;
-        this.b = com.censivn.C3DEngine.b.b.A.a(this.b);
-        this.c = com.censivn.C3DEngine.b.b.A.a(this.c);
+        this.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(this.b);
+        this.c = com.censivn.C3DEngine.b.b.ScreenConstants.a(this.c);
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = new com.tsf.shell.f.c.b.a.DrawerSettingsResult(this, this.m ? com.tsf.shell.manager.o.ButtonPresetManager.c : com.tsf.shell.manager.o.ButtonPresetManager.a);
         this.d = new BaseRenderable();
-        this.i = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
+        this.i = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.ScreenConstants.D, f, com.censivn.C3DEngine.b.b.ScreenConstants.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
             @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void a(int i2) {
                 if (e.this.c(i2).c() == 0) {
@@ -183,7 +183,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
     }
 
     public void a(int i) {
-        float f = (i / 100.0f) * (com.censivn.C3DEngine.b.b.A.D / 2.0f);
+        float f = (i / 100.0f) * (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2.0f);
         if (this.n != f) {
             this.n = f;
             a(false);
@@ -196,12 +196,12 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
 
     public void a(boolean z) {
         if (!this.m && z) {
-            a(com.censivn.C3DEngine.b.b.A.O ? com.tsf.shell.manager.b.ConfigManager.t() : com.tsf.shell.manager.b.ConfigManager.u());
+            a(com.censivn.C3DEngine.b.b.ScreenConstants.O ? com.tsf.shell.manager.b.ConfigManager.t() : com.tsf.shell.manager.b.ConfigManager.u());
         }
-        float f = com.censivn.C3DEngine.b.b.A.D - this.n;
+        float f = com.censivn.C3DEngine.b.b.ScreenConstants.D - this.n;
         DrawerSettingsPanel().a(f, this.c, this.c, this.b);
         this.i.a(DrawerSettingsConfig);
-        this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.A.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.A.g);
+        this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.ScreenConstants.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.g);
         a.C0084a c0084aB = this.f.b();
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         if (this.g) {
@@ -336,7 +336,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         if (this.o) {
             this.o = false;
             a.C0084a c0084aL = l();
-            float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.A.K;
+            float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.ScreenConstants.K;
             if (z) {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.h(c0084aL.l);
@@ -474,7 +474,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         return this.h;
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         DrawerSettingsPanel();
     }

@@ -5,7 +5,7 @@ import android.content.ContentUris;
 import android.content.ContentValues;
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
@@ -22,8 +22,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         }
     }
 
-    public static float a = com.censivn.C3DEngine.b.b.A.a(300.0f);
-    public static float b = com.censivn.C3DEngine.b.b.A.a(190.0f);
+    public static float a = com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f);
+    public static float b = com.censivn.C3DEngine.b.b.ScreenConstants.a(190.0f);
     private BaseRenderable c;
     private AddItemButton d;
     private DragSortContainer e;
@@ -110,8 +110,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     }
 
     public void f() {
-        this.m = com.censivn.C3DEngine.b.b.A.O ? this.n : this.o;
-        this.f.position().y = (com.censivn.C3DEngine.b.b.A.B - b) - (((com.censivn.C3DEngine.b.b.A.B - com.censivn.C3DEngine.b.b.A.C) - (2.0f * b)) * this.m);
+        this.m = com.censivn.C3DEngine.b.b.ScreenConstants.O ? this.n : this.o;
+        this.f.position().y = (com.censivn.C3DEngine.b.b.ScreenConstants.B - b) - (((com.censivn.C3DEngine.b.b.ScreenConstants.B - com.censivn.C3DEngine.b.b.ScreenConstants.C) - (2.0f * b)) * this.m);
     }
 
     public void g() {
@@ -142,15 +142,15 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         this.h = new h();
         this.c = new BaseRenderable();
         this.e = new a(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.4
-            @Override // com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.c, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 super.a(iVar, true);
             }
         };
-        this.e.a(com.censivn.C3DEngine.b.b.A.a(60.0f));
-        this.e.b(com.censivn.C3DEngine.b.b.A.a(10.0f));
+        this.e.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f));
+        this.e.b(com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f));
         this.d = new c(this, this.e);
-        this.e.a((com.censivn.C3DEngine.b.b.A.e) this.d);
+        this.e.a((com.censivn.C3DEngine.b.b.ScreenConstants.e) this.d);
         this.d.visible(false);
         this.d.a(this.e);
         jVar.addChild(this.c);
@@ -228,9 +228,9 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 }
             };
             if (this.k == 0) {
-                dVar.f(com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(30.0f));
+                dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.z - com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
             } else {
-                dVar.f(com.censivn.C3DEngine.b.b.A.A + com.censivn.C3DEngine.b.b.A.a(30.0f));
+                dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.A + com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f));
             }
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 350, dVar);
@@ -271,8 +271,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     private void p() {
         this.f.position().x = r();
-        this.d.setAABBPX((-a) / 2.0f, -com.censivn.C3DEngine.b.b.A.E, 0.0f, a / 2.0f, 0.0f, 0.0f);
-        this.d.position().y = com.censivn.C3DEngine.b.b.A.B;
+        this.d.setAABBPX((-a) / 2.0f, -com.censivn.C3DEngine.b.b.ScreenConstants.E, 0.0f, a / 2.0f, 0.0f, 0.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B;
         this.d.position().x = s();
         this.d.h();
         a();
@@ -285,33 +285,33 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
     private float r() {
         if (this.g) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.A.z + a;
+                return com.censivn.C3DEngine.b.b.ScreenConstants.z + a;
             }
-            return com.censivn.C3DEngine.b.b.A.A - a;
+            return com.censivn.C3DEngine.b.b.ScreenConstants.A - a;
         }
         if (this.l) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(30.0f);
+                return com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
             }
-            return com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(30.0f);
+            return com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
         }
         if (this.k == 0) {
-            return com.censivn.C3DEngine.b.b.A.z - com.censivn.C3DEngine.b.b.A.a(60.0f);
+            return com.censivn.C3DEngine.b.b.ScreenConstants.z - com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
         }
-        return com.censivn.C3DEngine.b.b.A.A + com.censivn.C3DEngine.b.b.A.a(60.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.A + com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
     }
 
     private float s() {
         if (this.g) {
             if (this.k == 0) {
-                return com.censivn.C3DEngine.b.b.A.z + (a / 2.0f);
+                return com.censivn.C3DEngine.b.b.ScreenConstants.z + (a / 2.0f);
             }
-            return com.censivn.C3DEngine.b.b.A.A - (a / 2.0f);
+            return com.censivn.C3DEngine.b.b.ScreenConstants.A - (a / 2.0f);
         }
         if (this.k == 0) {
-            return com.censivn.C3DEngine.b.b.A.z - (a / 2.0f);
+            return com.censivn.C3DEngine.b.b.ScreenConstants.z - (a / 2.0f);
         }
-        return com.censivn.C3DEngine.b.b.A.A + (a / 2.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.A + (a / 2.0f);
     }
 
     public void l() {
@@ -447,7 +447,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         };
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         a();
     }

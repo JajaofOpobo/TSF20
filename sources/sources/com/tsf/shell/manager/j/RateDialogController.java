@@ -45,14 +45,14 @@ public class RateDialogController {
     private void d() {
         this.a = new b();
         this.b = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.manager.j.RateDialogController.3
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4) {
                     c.this.b();
                 }
             }
 
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void b(int i, KeyEvent keyEvent) {
             }
 

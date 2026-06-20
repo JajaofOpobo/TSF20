@@ -29,7 +29,7 @@ public class WidgetMenuPanel extends com.tsf.shell.f.e._g.MenuOverlay {
     }
 
     public WidgetMenuPanel() {
-        super(800.0f * com.censivn.C3DEngine.b.b.A.c);
+        super(800.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.f = false;
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList = new ArrayList<>();
         this.e = new TogglePanel(this, x.c(b.i.group_toggle));

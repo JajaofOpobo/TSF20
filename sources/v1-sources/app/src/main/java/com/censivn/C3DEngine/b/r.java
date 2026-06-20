@@ -74,10 +74,10 @@ public class r implements com.censivn.C3DEngine.g.b.a {
     public float[] l;
     public float[] m;
     public float[] n;
-    public com.censivn.C3DEngine.b.a.a o;
-    public com.censivn.C3DEngine.b.a.a p;
-    public com.censivn.C3DEngine.b.a.a q;
-    public com.censivn.C3DEngine.b.a.a r;
+    public com.censivn.C3DEngine.b.a.MeshData o;
+    public com.censivn.C3DEngine.b.a.MeshData p;
+    public com.censivn.C3DEngine.b.a.MeshData q;
+    public com.censivn.C3DEngine.b.a.MeshData r;
     public com.censivn.C3DEngine.g.a.c s;
     protected af t;
     protected ac u;
@@ -97,10 +97,10 @@ public class r implements com.censivn.C3DEngine.g.b.a {
         this.l = new float[4];
         this.m = new float[4];
         this.n = new float[4];
-        this.o = new com.censivn.C3DEngine.b.a.a();
-        this.p = new com.censivn.C3DEngine.b.a.a();
-        this.q = new com.censivn.C3DEngine.b.a.a();
-        this.r = new com.censivn.C3DEngine.b.a.a();
+        this.o = new com.censivn.C3DEngine.b.a.MeshData();
+        this.p = new com.censivn.C3DEngine.b.a.MeshData();
+        this.q = new com.censivn.C3DEngine.b.a.MeshData();
+        this.r = new com.censivn.C3DEngine.b.a.MeshData();
         this.D = com.censivn.C3DEngine.i.f.TRIANGLES;
         this.E = true;
         this.F = false;
@@ -152,10 +152,10 @@ public class r implements com.censivn.C3DEngine.g.b.a {
         this.l = new float[4];
         this.m = new float[4];
         this.n = new float[4];
-        this.o = new com.censivn.C3DEngine.b.a.a();
-        this.p = new com.censivn.C3DEngine.b.a.a();
-        this.q = new com.censivn.C3DEngine.b.a.a();
-        this.r = new com.censivn.C3DEngine.b.a.a();
+        this.o = new com.censivn.C3DEngine.b.a.MeshData();
+        this.p = new com.censivn.C3DEngine.b.a.MeshData();
+        this.q = new com.censivn.C3DEngine.b.a.MeshData();
+        this.r = new com.censivn.C3DEngine.b.a.MeshData();
         this.D = com.censivn.C3DEngine.i.f.TRIANGLES;
         this.E = true;
         this.F = false;
@@ -920,18 +920,18 @@ public class r implements com.censivn.C3DEngine.g.b.a {
         this.p.a(f - f5, f2 - f6);
         this.q.a(f - f7, f2 - f8);
         this.r.a(f - f9, f2 - f10);
-        float a = com.censivn.C3DEngine.b.a.a.a(this.o, this.p);
-        float a2 = com.censivn.C3DEngine.b.a.a.a(this.p, this.q);
-        float a3 = com.censivn.C3DEngine.b.a.a.a(this.q, this.o);
+        float a = com.censivn.C3DEngine.b.a.MeshData.a(this.o, this.p);
+        float a2 = com.censivn.C3DEngine.b.a.MeshData.a(this.p, this.q);
+        float a3 = com.censivn.C3DEngine.b.a.MeshData.a(this.q, this.o);
         if (a < 0.0f && a2 < 0.0f && a3 < 0.0f) {
             return true;
         }
         if (this.ap && a > 0.0f && a2 > 0.0f && a3 > 0.0f) {
             return true;
         }
-        float a4 = com.censivn.C3DEngine.b.a.a.a(this.p, this.q);
-        float a5 = com.censivn.C3DEngine.b.a.a.a(this.q, this.r);
-        float a6 = com.censivn.C3DEngine.b.a.a.a(this.r, this.p);
+        float a4 = com.censivn.C3DEngine.b.a.MeshData.a(this.p, this.q);
+        float a5 = com.censivn.C3DEngine.b.a.MeshData.a(this.q, this.r);
+        float a6 = com.censivn.C3DEngine.b.a.MeshData.a(this.r, this.p);
         if (a4 <= 0.0f || a5 <= 0.0f || a6 <= 0.0f) {
             return this.ap && a4 < 0.0f && a5 < 0.0f && a6 < 0.0f;
         }

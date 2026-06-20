@@ -128,8 +128,8 @@ public class IconRenderer {
             Bitmap bitmapB = aVar2.b(Integer.toString(fVar.h()));
             Bitmap bitmap2 = ThemeManager.mix.unreadCount.getTheme().getBitmap(ThemeShellDescription.UNREAD_COUNT_BG, com.tsf.shell.manager.g.LayoutDimensionConstants.r, com.tsf.shell.manager.g.LayoutDimensionConstants.r);
             int width = bitmapB.getWidth();
-            if (width + (28.0f * com.censivn.C3DEngine.b.b.A.b) > bitmap2.getWidth()) {
-                bitmap2 = q.e(bitmap2, bitmap2.getWidth() / 2, width + ((int) (28.0f * com.censivn.C3DEngine.b.b.A.b)));
+            if (width + (28.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b) > bitmap2.getWidth()) {
+                bitmap2 = q.e(bitmap2, bitmap2.getWidth() / 2, width + ((int) (28.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b)));
             }
             new Canvas(bitmap2).drawBitmap(bitmapB, ((bitmap2.getWidth() - bitmapB.getWidth()) / 2) - 1, ((bitmap2.getHeight() - bitmapB.getHeight()) / 2) - 4, (Paint) null);
             bitmapB.recycle();

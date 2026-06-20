@@ -399,7 +399,7 @@ public class ShellModel extends BroadcastReceiver {
             if (r3 == 0) goto La1
             com.tsf.shell.manager.bind.ShellModel$1 r3 = new com.tsf.shell.manager.bind.ShellModel$1
             r3.<init>()
-            com.censivn.C3DEngine.b.c.c r6 = com.censivn.C3DEngine.C3DEngine.a()
+            com.censivn.C3DEngine.b.c.TaskDispatcher r6 = com.censivn.C3DEngine.C3DEngine.a()
             r6.d(r3)
             if (r5 != 0) goto L3e
             r0 = r2

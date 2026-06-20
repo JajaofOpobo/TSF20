@@ -105,7 +105,7 @@ public abstract class ItemInfo {
 
     public void onUpdateLayoutInformation(ContentValues contentValues, com.tsf.shell.f.i.b.b.IItemShell bVar) {
                 if (!(bVar instanceof ItemShell) && bVar != null) {
-            if (com.censivn.C3DEngine.b.b.A.O) {
+            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                 this.scale = bVar.u();
                 this.cellX = (int) bVar.position().x;
                 this.cellY = (int) bVar.position().y;

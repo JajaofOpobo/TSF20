@@ -7,8 +7,8 @@ public class PageTransitionEffect extends TransitionRenderer {
 
     public PageTransitionEffect(int i, int i2, boolean z) {
         super(i, i2, z);
-        this.a = com.censivn.C3DEngine.b.b.A.F;
-        this.b = com.censivn.C3DEngine.b.b.A.G;
+        this.a = com.censivn.C3DEngine.b.b.ScreenConstants.F;
+        this.b = com.censivn.C3DEngine.b.b.ScreenConstants.G;
     }
 
     public void b(float f, float f2) {
@@ -29,9 +29,9 @@ public class PageTransitionEffect extends TransitionRenderer {
     }
 
     public void d() {
-        if (com.censivn.C3DEngine.b.b.A.F != this.a || com.censivn.C3DEngine.b.b.A.G != this.b) {
-            this.a = com.censivn.C3DEngine.b.b.A.F;
-            this.b = com.censivn.C3DEngine.b.b.A.G;
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.F != this.a || com.censivn.C3DEngine.b.b.ScreenConstants.G != this.b) {
+            this.a = com.censivn.C3DEngine.b.b.ScreenConstants.F;
+            this.b = com.censivn.C3DEngine.b.b.ScreenConstants.G;
             a(this.a, this.b);
         }
         e();

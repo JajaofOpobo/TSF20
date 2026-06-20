@@ -21,7 +21,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         this.b = new ArrayList<>();
         this.e = 0.0f;
         this.f = 0.0f;
-        this.a = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, this.e, this.f);
+        this.a = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, this.e, this.f);
         this.c.addChild(this.a);
         this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.1
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
@@ -31,7 +31,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
-                i hVar = iVar == null ? new h(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f, com.censivn.C3DEngine.b.b.A.a(30.0f), true) : iVar;
+                i hVar = iVar == null ? new h(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f, com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), true) : iVar;
                 h hVar2 = (h) hVar;
                 if (hVar2.b() != WidgetDragDropArea.this.e || hVar2.c() != WidgetDragDropArea.this.f) {
                     hVar2.a(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f);
@@ -45,7 +45,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
                 ((h) iVar).d();
             }
         });
-        this.a.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
+        this.a.b(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f);
         this.a.a(new WidgetDragHandler(dVar) { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.2
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
@@ -96,8 +96,8 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
 
     @Override // com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase
     public void a(float f, float f2, float f3, float f4) {
-        this.e = (com.censivn.C3DEngine.b.b.A.D - (120.0f * com.censivn.C3DEngine.b.b.A.c)) / 2.0f;
-        this.f = 370.0f * com.censivn.C3DEngine.b.b.A.c;
+        this.e = (com.censivn.C3DEngine.b.b.ScreenConstants.D - (120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c)) / 2.0f;
+        this.f = 370.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.a.a(this.e, this.f);
         this.a.a(f, f2, f3, f4);
     }

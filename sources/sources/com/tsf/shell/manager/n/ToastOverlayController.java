@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.BaseColoredRectRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -102,8 +102,8 @@ public class ToastOverlayController implements e.a {
     public void a(j jVar) {
         this.a = jVar;
         this.b = new BaseRenderable();
-        this.e = 100.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.c = new BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.ToastOverlayController.1
+        this.e = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        this.c = new BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.ToastOverlayController.1
             @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 if (com.tsf.shell.manager.n.ToastOverlayController.this.c.getAnimationObjectState() || com.tsf.shell.manager.n.ToastOverlayController.this.r) {
@@ -208,10 +208,10 @@ public class ToastOverlayController implements e.a {
             com.tsf.shell.manager.app.ObserverManager.a(this);
             this.b.removeFromParent();
             this.a.addChild(this.b);
-            this.c.a(com.censivn.C3DEngine.b.b.A.D);
+            this.c.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
             this.d = com.tsf.shell.manager.app.ObserverManager.c();
             if (!this.d) {
-                this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
+                this.b.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.I;
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.4
                     @Override // java.lang.Runnable
                     public void run() {
@@ -221,7 +221,7 @@ public class ToastOverlayController implements e.a {
                     }
                 });
             } else {
-                this.b.position().y = com.censivn.C3DEngine.b.b.A.I;
+                this.b.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.I;
             }
             this.r = true;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.ToastOverlayController.5
@@ -266,10 +266,10 @@ public class ToastOverlayController implements e.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
-        this.b.position().y = com.tsf.shell.manager.app.ObserverManager.c() ? com.censivn.C3DEngine.b.b.A.B : com.censivn.C3DEngine.b.b.A.B + com.censivn.C3DEngine.b.b.A.J;
-        this.c.a(com.censivn.C3DEngine.b.b.A.D);
+        this.b.position().y = com.tsf.shell.manager.app.ObserverManager.c() ? com.censivn.C3DEngine.b.b.ScreenConstants.B : com.censivn.C3DEngine.b.b.ScreenConstants.B + com.censivn.C3DEngine.b.b.ScreenConstants.J;
+        this.c.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.n.ToastOverlayController$a, reason: collision with other inner class name */
@@ -298,7 +298,7 @@ public class ToastOverlayController implements e.a {
             this.e = new TextureElement(0, false);
             this.f = "";
             this.g = false;
-            position().y = 100.0f * com.censivn.C3DEngine.b.b.A.c;
+            position().y = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             alpha(0.0f);
             textures().addElement(this.e);
             a(str);
@@ -343,7 +343,7 @@ public class ToastOverlayController implements e.a {
                 }
             };
             dVar.a(0);
-            dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
+            dVar.h(100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
             com.tsf.shell.manager.n.ToastOverlayController.this.a();

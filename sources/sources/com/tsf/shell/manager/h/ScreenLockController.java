@@ -135,8 +135,8 @@ public class ScreenLockController {
             LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(com.censivn.C3DEngine.C3DEngine.d()).inflate(b.g.screen_lock_dialog, (ViewGroup) null);
             RelativeLayout relativeLayout = (RelativeLayout) linearLayout.findViewById(b.e.sliding_layout);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams.rightMargin = (int) (40.0f * com.censivn.C3DEngine.b.b.A.e);
-            layoutParams.leftMargin = (int) (com.censivn.C3DEngine.b.b.A.e * 10.0f);
+            layoutParams.rightMargin = (int) (40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.e);
+            layoutParams.leftMargin = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.e * 10.0f);
             relativeLayout.addView(new b(com.censivn.C3DEngine.C3DEngine.d()), layoutParams);
             relativeLayout.addView(new C0128a(com.censivn.C3DEngine.C3DEngine.d()), new RelativeLayout.LayoutParams(-1, -1));
             relativeLayout.addView(new c(com.censivn.C3DEngine.C3DEngine.d()), new RelativeLayout.LayoutParams(120, -1));
@@ -177,7 +177,7 @@ public class ScreenLockController {
 
         public c(Context context) {
             super(context);
-            this.d = (int) ((com.censivn.C3DEngine.b.b.A.e * 10.0f) + 10.0f);
+            this.d = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.e * 10.0f) + 10.0f);
             this.g = this;
         }
 
@@ -255,7 +255,7 @@ public class ScreenLockController {
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.A.b, a.this.c);
+            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, a.this.c);
         }
     }
 
@@ -268,7 +268,7 @@ public class ScreenLockController {
 
         public C0128a(Context context) {
             super(context);
-            this.d = (com.censivn.C3DEngine.b.b.A.e * 10.0f) + 10.0f;
+            this.d = (com.censivn.C3DEngine.b.b.ScreenConstants.e * 10.0f) + 10.0f;
         }
 
         @Override // android.view.View
@@ -276,14 +276,14 @@ public class ScreenLockController {
             super.onMeasure(i, i2);
             this.c = getHeight();
             this.b = getWidth();
-            a = this.b - (40.0f * com.censivn.C3DEngine.b.b.A.e);
+            a = this.b - (40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.e);
             postInvalidate();
         }
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            canvas.drawCircle(this.d, this.c / 2.0f, com.censivn.C3DEngine.b.b.A.b * 10.0f, a.b);
-            canvas.drawCircle(a, this.c / 2.0f, com.censivn.C3DEngine.b.b.A.b * 10.0f, a.b);
+            canvas.drawCircle(this.d, this.c / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f, a.b);
+            canvas.drawCircle(a, this.c / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f, a.b);
         }
     }
 

@@ -5,13 +5,13 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.os.Parcelable;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.b;
 import com.tsf.shell.activity.actionselector.ActionSelector;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ShortcutCreator implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class ShortcutCreator implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private int a;
     private int b_;
     private com.tsf.shell.ShellCoreInterface c;
@@ -33,7 +33,7 @@ public class ShortcutCreator implements com.censivn.C3DEngine.b.c.a.InterfaceC00
         this.c = null;
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         int intExtra = intent == null ? -1 : intent.getIntExtra("action_type", -1);
         if (i2 == -1) {

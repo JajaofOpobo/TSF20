@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemAnimationManager {
-    public static final float a = com.censivn.C3DEngine.b.b.A.a(150.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
     private c b;
     private BaseRenderable d;
     private ArrayList<a> e;
@@ -132,12 +132,12 @@ public class DrawerItemAnimationManager {
     }
 
     public void a() {
-        this.h.b(com.censivn.C3DEngine.b.b.A.G);
-        this.h.a(com.censivn.C3DEngine.b.b.A.F);
+        this.h.b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
+        this.h.a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
     }
 
     public void a(MotionEvent motionEvent) {
-        a(0.0f - (motionEvent.getY() - com.censivn.C3DEngine.b.b.A.I));
+        a(0.0f - (motionEvent.getY() - com.censivn.C3DEngine.b.b.ScreenConstants.I));
     }
 
     public void a(float f) {
@@ -186,8 +186,8 @@ public class DrawerItemAnimationManager {
 
     public float d() {
         int size = this.b.h().size();
-        float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
-        return (float) (Math.cos((3.141592653589793d - (((double) (size - 1)) * (Math.asin((fA / 2.0f) / r2) * 2.0d))) / 2.0d) * ((double) (com.censivn.C3DEngine.b.b.A.B * 2)));
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+        return (float) (Math.cos((3.141592653589793d - (((double) (size - 1)) * (Math.asin((fA / 2.0f) / r2) * 2.0d))) / 2.0d) * ((double) (com.censivn.C3DEngine.b.b.ScreenConstants.B * 2)));
     }
 
     public void e() {
@@ -204,11 +204,11 @@ public class DrawerItemAnimationManager {
         this.e.clear();
         ArrayList<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> arrayListH = this.b.h();
         int size = arrayListH.size();
-        float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
-        float f = com.censivn.C3DEngine.b.b.A.B * 2;
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+        float f = com.censivn.C3DEngine.b.b.ScreenConstants.B * 2;
         double dAsin = Math.asin((fA / 2.0f) / f) * 2.0d;
         double d = (3.141592653589793d - (((double) (size - 1)) * dAsin)) / 2.0d;
-        float fSin = ((float) (Math.sin(DrawerDragEffectController) * ((double) f))) - com.censivn.C3DEngine.b.b.A.a(50.0f);
+        float fSin = ((float) (Math.sin(DrawerDragEffectController) * ((double) f))) - com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         this.l = 0.0f;
         this.m = 0.0f;
         double d2 = d;
@@ -216,7 +216,7 @@ public class DrawerItemAnimationManager {
             com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar = arrayListH.get(i);
             i iVarM = cVar.m();
             a aVarC = this.f.c();
-            aVarC.b.x = (((float) (Math.sin(d2) * ((double) f))) - fSin) + com.censivn.C3DEngine.b.b.A.z;
+            aVarC.b.x = (((float) (Math.sin(d2) * ((double) f))) - fSin) + com.censivn.C3DEngine.b.b.ScreenConstants.z;
             if (iB == DrawerItemContainer.c) {
                 aVarC.b.x = -aVarC.b.x;
             }

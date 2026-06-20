@@ -3,16 +3,16 @@ package com.tsf.shell.f.h.a.a;
 import com.censivn.C3DEngine.b.f.IRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class SceneElementBase extends com.censivn.C3DEngine.b.b.A.a {
+public abstract class SceneElementBase extends com.censivn.C3DEngine.b.b.ScreenConstants.a {
     private boolean a = false;
     private boolean b = false;
     private int c = 10;
 
     public SceneElementBase(int i) {
         setTitle(i);
-        setTitlePosition(com.censivn.C3DEngine.b.b.A.a(120.0f));
+        setTitlePosition(com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f));
         setTitleSize(36);
-        setMarginDistance(com.censivn.C3DEngine.b.b.A.a(10.0f));
+        setMarginDistance(com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f));
         minY((-com.tsf.shell.f.h.a.WorkspacePreviewNode.a) / 2.0f);
         maxY(com.tsf.shell.f.h.a.WorkspacePreviewNode.a / 2.0f);
     }

@@ -12,7 +12,7 @@ public class CircleDotNode extends com.censivn.C3DEngine.b.f.GridRenderable {
     public CircleDotNode() {
         super(1.0f, 1.0f);
         this.d = new TextureElement(0, false);
-        this.a = (int) com.censivn.C3DEngine.b.b.A.a(22.0f);
+        this.a = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(22.0f);
         a(this.a);
         b(this.a);
         textures().addElement(this.d);

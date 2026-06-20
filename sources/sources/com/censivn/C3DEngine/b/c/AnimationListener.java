@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class AnimationListener {
     private b a;
     private ArrayList<a> b = new ArrayList<>();
 

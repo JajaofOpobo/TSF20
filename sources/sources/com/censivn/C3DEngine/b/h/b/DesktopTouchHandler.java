@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
+class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     public boolean a;
     private DesktopTouchHandlerE b;
     private DesktopTouchHandlerD d;
@@ -27,29 +27,29 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
         this.d = eVar.a();
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void f(MotionEvent motionEvent) {
         this.d.c(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
         this.d.b(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
         this.d.f(motionEvent);
         this.b.b(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void k(MotionEvent motionEvent) {
         this.d.e(motionEvent);
         this.b.d(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void h(MotionEvent motionEvent) {
         if (this.b.a(false)) {
             this.d.d(motionEvent);
@@ -57,7 +57,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void c(MotionEvent motionEvent) {
         int iJ;
         super.c(motionEvent);
@@ -107,13 +107,13 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         this.d.a(motionEvent);
         this.b.c(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void d(MotionEvent motionEvent) {
         super.d(motionEvent);
         if (this.a) {
@@ -169,7 +169,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
         super.a(motionEvent, motionEvent2);
         if (this.a) {
@@ -192,7 +192,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
         this.d.a(motionEvent, motionEvent2);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         this.d.a(motionEvent, motionEvent2, f, f2);
     }

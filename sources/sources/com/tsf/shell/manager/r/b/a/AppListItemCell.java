@@ -14,8 +14,8 @@ public class AppListItemCell extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBas
         this.p = false;
         if (a == null) {
             a = new GridRenderable(64.0f, 64.0f, 1, 1, true);
-            a.position().x = 32.0f * com.censivn.C3DEngine.b.b.A.a;
-            a.position().y = 40.0f * com.censivn.C3DEngine.b.b.A.a;
+            a.position().x = 32.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+            a.position().y = 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
             b = new TextureElement(0, false);
             a.textures().addElementWithoutVerify(b);
         }

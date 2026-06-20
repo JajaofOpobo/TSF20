@@ -19,7 +19,7 @@ public class ShortcutItem extends PageItem {
     public static TextureElement f;
     public static TextureElement g;
     public static TextureElement h;
-    public static int j = (int) (6.0f * com.censivn.C3DEngine.b.b.A.a);
+    public static int j = (int) (6.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a);
     private boolean a;
     public int i;
     private boolean k;
@@ -129,7 +129,7 @@ public class ShortcutItem extends PageItem {
 
     public static void aj() {
         if (f == null) {
-            int iA = (int) com.censivn.C3DEngine.b.b.A.a(120.0f);
+            int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
             f = ThemeManager.mix.appMutilChoice.getTextureElement(ThemeShellDescription.APP_MULTI_CHOICE, iA, iA);
             g = ThemeManager.mix.appMutilChoice.getTextureElement(ThemeShellDescription.APP_MULTI_NOT_CHOICE, iA, iA);
         }
@@ -147,11 +147,11 @@ public class ShortcutItem extends PageItem {
         if (!this.k) {
             aj();
             if (b == null) {
-                b = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, 1, 1, false);
+                b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, 1, 1, false);
                 h = new TextureElement(f.id, false);
                 b.textures().addElementWithoutVerify(h);
-                b.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.A.c);
-                b.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.A.c);
+                b.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+                b.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             }
             this.m = 0.75f;
             if (ao()) {
@@ -254,8 +254,8 @@ public class ShortcutItem extends PageItem {
             if (gVarZ.c(this)) {
                 ArrayList<C> arrayListAw = aw();
                 com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(gVarZ, true);
-                if (400 > com.censivn.C3DEngine.b.b.A.D) {
-                    i = (com.censivn.C3DEngine.b.b.A.D / 2) - 20;
+                if (400 > com.censivn.C3DEngine.b.b.ScreenConstants.D) {
+                    i = (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) - 20;
                 } else {
                     i = VEasing.Back.easeIn;
                 }

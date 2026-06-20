@@ -18,8 +18,8 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
             return ThemeDataInfoLayout.this.getData(context);
         }
     };
-    private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.A.a(280.0f);
-    private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
+    private int mPreviewWidth = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(280.0f);
+    private int mPreviewHeight = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f);
     private ObjectPool<a> mElementPool = new ObjectPool<a>() { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeDataInfoLayout.2
         @Override // com.tsf.shell.f.e.ObjectPool
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
@@ -54,7 +54,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
         resetPosition();
     }
 
-    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.A.a
+    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.ScreenConstants.a
     public void recycle() {
         while (!children().isEmpty()) {
             a aVar = (a) removeChildAt(0);

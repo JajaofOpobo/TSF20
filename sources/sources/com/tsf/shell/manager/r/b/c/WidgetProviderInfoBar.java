@@ -27,7 +27,7 @@ public class WidgetProviderInfoBar extends BaseRenderable {
     }
 
     public void b() {
-        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar.1
+        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (WidgetProviderInfoBar.this.a.id == 0) {
@@ -40,14 +40,14 @@ public class WidgetProviderInfoBar extends BaseRenderable {
         this.b.textures().addElement(this.a);
         a(this.b);
         addChild(this.b);
-        this.b.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + com.censivn.C3DEngine.b.b.A.a(12.0f);
+        this.b.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f);
         this.b.rotation().z = 180.0f;
         this.c = new LabelRenderable();
         this.c.d(42);
         this.c.e(-1);
         this.c.b(1);
         a(this.c);
-        this.c.position().x = this.b.position().x + com.censivn.C3DEngine.b.b.A.a(12.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f);
+        this.c.position().x = this.b.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
         addChild(this.c);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.h);
     }
@@ -62,8 +62,8 @@ public class WidgetProviderInfoBar extends BaseRenderable {
     }
 
     public void a(i iVar) {
-        iVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar.2
-            @Override // com.censivn.C3DEngine.b.d.a
+        iVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar.2
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 WidgetProviderInfoBar.this.a();
             }

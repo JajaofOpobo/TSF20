@@ -20,16 +20,16 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class ShortcutManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private static int a = 1;
     private static int b;
     private static int c;
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.l.ShortcutManager$a, reason: collision with other inner class name */
-    public static class C0130a implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+    public static class C0130a implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
         public int a;
 
-        @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+        @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
         public void onActivityResult(int i, int i2, Intent intent) {
             if (i2 == -1 && i == this.a) {
                 a.a(intent, this);
@@ -47,13 +47,13 @@ public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC00
     public void a(Intent intent, float f, float f2) {
         b = (int) f;
         c = (int) f2;
-        a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+        a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
     }
 
     public void a(Intent intent, float f, float f2, C0130a c0130a) {
         b = (int) f;
         c = (int) f2;
-        c0130a.a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) c0130a);
+        c0130a.a = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) c0130a);
     }
 
     public static void a(final Intent intent, final C0130a c0130a) {
@@ -87,7 +87,7 @@ public class ShortcutManager implements com.censivn.C3DEngine.b.c.a.InterfaceC00
         });
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i2 == -1 && i == a) {
             a(intent, (C0130a) null);

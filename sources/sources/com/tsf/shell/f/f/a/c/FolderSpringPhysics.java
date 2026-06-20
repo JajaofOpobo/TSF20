@@ -42,7 +42,7 @@ public class FolderSpringPhysics {
                 a aVar = this.d.get(i2);
                 aVar.a.x = b + this.g + (c * i2);
                 Number3d number3d = aVar.a;
-                float f = (-20.0f) * com.censivn.C3DEngine.b.b.A.c;
+                float f = (-20.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
                 aVar.d = f;
                 number3d.y = f;
                 iVarA.setAnimationObjectState(true);
@@ -90,15 +90,15 @@ public class FolderSpringPhysics {
     }
 
     private boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f) {
-        return (iVar.minX() + f) + a().position().x <= ((float) com.censivn.C3DEngine.b.b.A.A) && (iVar.maxX() + f) + a().position().x >= ((float) com.censivn.C3DEngine.b.b.A.z);
+        return (iVar.minX() + f) + a().position().x <= ((float) com.censivn.C3DEngine.b.b.ScreenConstants.A) && (iVar.maxX() + f) + a().position().x >= ((float) com.censivn.C3DEngine.b.b.ScreenConstants.z);
     }
 
     private float f() {
         float fNumChildren = c * (a().numChildren() - 1);
-        if (fNumChildren < com.censivn.C3DEngine.b.b.A.D - com.tsf.shell.manager.o.ButtonPresetManager.a.T) {
+        if (fNumChildren < com.censivn.C3DEngine.b.b.ScreenConstants.D - com.tsf.shell.manager.o.ButtonPresetManager.a.T) {
             return (-fNumChildren) / 2.0f;
         }
-        return com.censivn.C3DEngine.b.b.A.z + a;
+        return com.censivn.C3DEngine.b.b.ScreenConstants.z + a;
     }
 
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
@@ -122,7 +122,7 @@ public class FolderSpringPhysics {
             double dSin = Math.sin(FolderAppMenu.doubleValue());
             Double.valueOf(FolderAppMenu.doubleValue() + 0.03490658503988659d);
             this.b = ((float) ((((double) 0.2f) * dSin) + ((double) (f - 0.2f)))) * l.this.f;
-            this.c = (float) (((double) this.a.x) - ((dSin * 10.0d) * ((double) com.censivn.C3DEngine.b.b.A.c)));
+            this.c = (float) (((double) this.a.x) - ((dSin * 10.0d) * ((double) com.censivn.C3DEngine.b.b.ScreenConstants.c)));
         }
     }
 }

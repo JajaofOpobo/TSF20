@@ -9,14 +9,14 @@ import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.EmptyRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ViewportController implements e.a {
-    public static class b extends com.censivn.C3DEngine.b.c.d.b {
+    public static class b extends com.censivn.C3DEngine.b.c.AnimationListener.b {
         public void a() {
         }
     }
@@ -37,7 +37,7 @@ public class ViewportController implements e.a {
         this.h = eVar;
         this.i = new FrameLayout(this.h.getContext());
         this.g = new d.b() { // from class: com.tsf.shell.manager.f.ViewportController.1
-            @Override // com.censivn.C3DEngine.b.c.d.b
+            @Override // com.censivn.C3DEngine.b.c.AnimationListener.b
             public void a() {
                 if (d.this.f != null) {
                     d.this.f.a(4, null);
@@ -114,8 +114,8 @@ public class ViewportController implements e.a {
         this.c = (j) this.d.getVirtualTarget();
         this.e = new EmptyRenderable();
         this.e.setAABBPX(-2.1474836E9f, -2.1474836E9f, -2.1474836E9f, 2.1474836E9f, 2.1474836E9f, 2.1474836E9f);
-        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.manager.f.ViewportController.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.manager.f.ViewportController.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (d.this.f != null) {
                     d.this.f.a(4, null);
@@ -132,7 +132,7 @@ public class ViewportController implements e.a {
         }
         this.e.alpha(0.0f);
         com.tsf.shell.manager.app.StateHub.H();
-        com.censivn.C3DEngine.b.c.b.a(aVar);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(aVar);
         this.f = aVar;
         this.a.addChild(this.b);
         com.tsf.shell.manager.app.CallbackHandler.a(this.g);
@@ -142,7 +142,7 @@ public class ViewportController implements e.a {
     public void b() {
         this.a.removeChild(this.b);
         com.tsf.shell.manager.app.StateHub.I();
-        com.censivn.C3DEngine.b.c.b.b(this.f);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.b(this.f);
         com.tsf.shell.manager.app.CallbackHandler.b(this.g);
         this.f = null;
     }
@@ -206,7 +206,7 @@ public class ViewportController implements e.a {
         this.j.removeChild(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         if (this.f != null) {
             this.f.a(i, i2, i3, i4);

@@ -23,7 +23,7 @@ public class PreferenceFragmentBase extends PreferenceBaseFragment {
         PreferenceFragmentBase();
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         this.a.b();
@@ -33,7 +33,7 @@ public class PreferenceFragmentBase extends PreferenceBaseFragment {
         this.f.j();
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         if (this.b != null) {
@@ -44,7 +44,7 @@ public class PreferenceFragmentBase extends PreferenceBaseFragment {
         }
     }
 
-    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.PreferenceBaseFragment, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         this.a.c();

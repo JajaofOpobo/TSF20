@@ -65,34 +65,34 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
 
     @Override // com.tsf.shell.f.f.d.a.ScrollBounceHandler
     public void a(int i, int i2) {
-        this.a = (int) ((n.a - (100.0f * com.censivn.C3DEngine.b.b.A.b)) / 2.0f);
+        this.a = (int) ((n.a - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b)) / 2.0f);
         a(this.l);
     }
 
     @Override // com.tsf.shell.f.f.d.a.ScrollBounceHandler
     public void a(int i) {
         this.l = i;
-        this.b = (int) (60.0f * com.censivn.C3DEngine.b.b.A.a);
+        this.b = (int) (60.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a);
         this.k = (int) ((i - 1) * n.c);
-        if (this.k + n.a + (20.0f * com.censivn.C3DEngine.b.b.A.a) > com.censivn.C3DEngine.b.b.A.D) {
+        if (this.k + n.a + (20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a) > com.censivn.C3DEngine.b.b.ScreenConstants.D) {
             this.j = true;
-            this.f = (int) (com.censivn.C3DEngine.b.b.A.z + (n.a / 2) + (com.censivn.C3DEngine.b.b.A.a * 10.0f));
-            this.g = (int) ((((0 - this.k) + com.censivn.C3DEngine.b.b.A.A) - (n.a / 2)) - (com.censivn.C3DEngine.b.b.A.a * 10.0f));
+            this.f = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z + (n.a / 2) + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 10.0f));
+            this.g = (int) ((((0 - this.k) + com.censivn.C3DEngine.b.b.ScreenConstants.A) - (n.a / 2)) - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 10.0f));
         } else {
             this.j = false;
             this.i = (-this.k) / 2;
             this.f = this.i;
             this.g = this.i;
         }
-        if (((int) ((this.b * (i - 1)) + n.b + (com.censivn.C3DEngine.b.b.A.a * 10.0f * 2.0f))) > com.censivn.C3DEngine.b.b.A.E) {
-            this.b = (int) (((com.censivn.C3DEngine.b.b.A.E - n.b) - ((com.censivn.C3DEngine.b.b.A.a * 10.0f) * 2.0f)) / (i - 1));
+        if (((int) ((this.b * (i - 1)) + n.b + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 10.0f * 2.0f))) > com.censivn.C3DEngine.b.b.ScreenConstants.E) {
+            this.b = (int) (((com.censivn.C3DEngine.b.b.ScreenConstants.E - n.b) - ((com.censivn.C3DEngine.b.b.ScreenConstants.a * 10.0f) * 2.0f)) / (i - 1));
         }
         this.h = 0 - ((this.b * (i - 1)) / 2);
     }
 
     @Override // com.tsf.shell.f.f.d.a.ScrollBounceHandler
     public void a(g gVar) {
-        if (this.k > com.censivn.C3DEngine.b.b.A.D) {
+        if (this.k > com.censivn.C3DEngine.b.b.ScreenConstants.D) {
             this.i = (int) this.c.c(gVar.r());
         } else {
             this.i = (-this.k) / 2;
@@ -160,7 +160,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
                     a.this.e.removeChild(gVar3);
                 }
             };
-            dVar2.h((com.censivn.C3DEngine.b.b.A.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.A.b));
+            dVar2.h((com.censivn.C3DEngine.b.b.ScreenConstants.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
             c.a(gVar);
             this.c.a(this.c.o(), true, true);
             c.a(gVar, 500, dVar2);
@@ -184,7 +184,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
                         a.this.e.removeChild(gVar3);
                     }
                 };
-                dVar.h((com.censivn.C3DEngine.b.b.A.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.A.b));
+                dVar.h((com.censivn.C3DEngine.b.b.ScreenConstants.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
                 c.a(gVar2);
                 c.a(gVar2, 500, dVar);
             }
@@ -215,9 +215,9 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
     public void a(float f, float f2, float f3, float f4, boolean z) {
         if (this.j) {
             if (z && this.f != this.g) {
-                this.i = (int) (this.f + (((this.g + this.a) - this.f) * (f / com.censivn.C3DEngine.b.b.A.D)));
+                this.i = (int) (this.f + (((this.g + this.a) - this.f) * (f / com.censivn.C3DEngine.b.b.ScreenConstants.D)));
             } else {
-                this.i = (int) (this.f + ((this.g - this.f) * (f / com.censivn.C3DEngine.b.b.A.D)));
+                this.i = (int) (this.f + ((this.g - this.f) * (f / com.censivn.C3DEngine.b.b.ScreenConstants.D)));
             }
         }
     }
@@ -230,13 +230,13 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
     @Override // com.tsf.shell.f.f.d.a.ScrollBounceHandler
     public int a(int i, float f, float f2, float f3, float f4, boolean z) {
         if (z) {
-            int i2 = ((int) (((f - (com.censivn.C3DEngine.b.b.A.D / 2)) - this.e.position().x) / this.a)) + 1;
+            int i2 = ((int) (((f - (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2)) - this.e.position().x) / this.a)) + 1;
             if (i2 < 1) {
                 return 1;
             }
             return i2 >= i ? i - 1 : i2;
         }
-        int i3 = (int) (((f - (com.censivn.C3DEngine.b.b.A.D / 2)) - this.e.position().x) / this.a);
+        int i3 = (int) (((f - (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2)) - this.e.position().x) / this.a);
         if (i3 < 0) {
             return 0;
         }

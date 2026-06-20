@@ -14,7 +14,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
+public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     public static n a;
     public float b;
     public float d;
@@ -29,7 +29,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean m;
     private boolean n;
     private boolean o;
-    private com.censivn.C3DEngine.b.d.a p;
+    private com.censivn.C3DEngine.b.d.MouseEventListener p;
     private com.tsf.shell.manager.d.HitTargetManager.C0127a q;
     private float[] r;
 
@@ -64,7 +64,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         return (float) (Math.atan(x / r1) / 0.017453292519943295d);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void c(MotionEvent motionEvent) {
         float f;
         float f2;
@@ -165,7 +165,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
 
     /* JADX WARN: Removed duplicated region for block: B:27:0x00a5  */
     /* JADX WARN: Removed duplicated region for block: B:32:0x00c6  */
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -311,7 +311,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         this.g.m_();
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
         super.a(motionEvent, motionEvent2);
         if (this.l) {
@@ -355,7 +355,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x005a  */
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -390,9 +390,9 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
             com.censivn.C3DEngine.b.f.IRenderable r0 = r3.getHittingTarget(r2, r0, r4)
         L3c:
             if (r0 == 0) goto L55
-            com.censivn.C3DEngine.b.d.a r0 = r0.getMouseEventListener()
+            com.censivn.C3DEngine.b.d.MouseEventListener r0 = r0.getMouseEventListener()
             r5.p = r0
-            com.censivn.C3DEngine.b.d.a r0 = r5.p
+            com.censivn.C3DEngine.b.d.MouseEventListener r0 = r5.p
             r0.e(r6)
         L49:
             com.tsf.shell.f.i.PageItem r0 = r5.g
@@ -414,7 +414,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.i._a.WidgetItemTouchHandler.e(android.view.MotionEvent):void");
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void i(MotionEvent motionEvent) {
         if (!this.g.Q()) {
             com.tsf.shell.manager.app.StateHub.s().b(motionEvent);
@@ -424,7 +424,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void j(MotionEvent motionEvent) {
         if (!this.g.Q()) {
             com.tsf.shell.manager.app.StateHub.s().c(motionEvent);
@@ -436,7 +436,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
         if (this.g instanceof com.tsf.shell.f.i.ShortcutItem) {
             com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.g;
@@ -453,21 +453,21 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent) {
         if (this.p != null) {
             this.p.b(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
         if (this.p != null) {
             this.p.g(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.g.c) {
             if (!this.g.Q()) {
@@ -486,7 +486,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void f(MotionEvent motionEvent) {
         if (this.p != null) {
             this.p.f(motionEvent);
@@ -496,7 +496,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (!this.g.c && !this.g.Q()) {
             com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2, f, f2);

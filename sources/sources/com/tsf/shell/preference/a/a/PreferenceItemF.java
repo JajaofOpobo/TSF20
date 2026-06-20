@@ -2,15 +2,15 @@ package com.tsf.shell.preference.a.a;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import com.censivn.C3DEngine.b.e.a;
-import com.censivn.C3DEngine.b.e.i;
-import com.censivn.C3DEngine.b.e.j;
+import com.censivn.C3DEngine.b.e.IconButtonRenderer;
+import com.censivn.C3DEngine.b.e.PanelGroupRenderer;
+import com.censivn.C3DEngine.b.e.ActionButtonRenderer;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceItemF extends i {
-    private com.censivn.C3DEngine.b.e.a a;
+    private com.censivn.C3DEngine.b.e.IconButtonRenderer a;
     private j b;
     private int c;
 
@@ -20,7 +20,7 @@ public class PreferenceItemF extends i {
         this.b = jVar;
         jVar.h(com.tsf.b.i.mn_folder_animation);
         jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1
-            @Override // com.censivn.C3DEngine.b.e.j.a
+            @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1.1
                     @Override // java.lang.Runnable
@@ -31,11 +31,11 @@ public class PreferenceItemF extends i {
             }
         });
         b(jVar);
-        com.censivn.C3DEngine.b.e.a aVar = new com.censivn.C3DEngine.b.e.a();
+        com.censivn.C3DEngine.b.e.IconButtonRenderer aVar = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.a = aVar;
         aVar.h(com.tsf.b.i.mn_folder_auto_close);
         aVar.i(com.tsf.b.i.mn_folder_auto_close_summary);
-        aVar.a(new com.censivn.C3DEngine.b.e.a.C0027a() {
+        aVar.a(new com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a() {
             @Override
             public boolean a(boolean z) {
                 com.tsf.shell.manager.b.ConfigManager.t(z);
@@ -94,7 +94,7 @@ public class PreferenceItemF extends i {
         return i;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void f() {
         PreferenceItemF();
     }

@@ -23,8 +23,8 @@ public class CylinderTransition extends ItemPageTransition {
         this.h = false;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
-            this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
-            this.g = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.a(20.0f), 20, 1, false);
+            this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
+            this.g = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), 20, 1, false);
             this.g.setDefaultColor(new Color4(255, 0, 0, 255));
             this.b.useVBO(false);
             this.b.doubleSidedEnabled(true);
@@ -93,7 +93,7 @@ public class CylinderTransition extends ItemPageTransition {
         gVar.position().x = 0.0f;
         HorizontalFlipTransition.a aVarJ = gVar.j();
         this.b.alpha((1.0f - Math.abs(f)) * 255.0f);
-        this.b.position().z = (com.censivn.C3DEngine.b.b.A.D / 5) * 3;
+        this.b.position().z = (com.censivn.C3DEngine.b.b.ScreenConstants.D / 5) * 3;
         this.a.position().z = -this.b.position().z;
         this.a.rotation().y = 180.0f * f;
         this.b.textures().clear();

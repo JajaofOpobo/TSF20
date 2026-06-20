@@ -104,13 +104,13 @@ public class DockRenderer extends BaseRenderable {
         super.addChild(this.b);
         super.addChild(this.d);
         iVar = iVar == null ? this.b : iVar;
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.2
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.2
             float a;
-            private com.censivn.C3DEngine.b.d.a d;
+            private com.censivn.C3DEngine.b.d.MouseEventListener d;
             private boolean e = false;
             private boolean f = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
                 i hittingTarget = a.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -128,7 +128,7 @@ public class DockRenderer extends BaseRenderable {
                 a.this.p = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 this.e = true;
                 this.f = false;
@@ -139,14 +139,14 @@ public class DockRenderer extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 if (this.d != null) {
                     this.d.c(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 a.a = 0.15f;
                 a.this.m();
@@ -155,21 +155,21 @@ public class DockRenderer extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.d != null) {
                     this.d.a(motionEvent, motionEvent2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.d != null) {
                     this.d.a(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f6, float f7) {
                 a.a = 0.3f;
                 if (this.e) {
@@ -189,13 +189,13 @@ public class DockRenderer extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
                 a.a = 0.15f;
                 a.this.m();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f6, float f7) {
                 a.a = 0.15f;
                 if (!this.f) {
@@ -226,24 +226,24 @@ public class DockRenderer extends BaseRenderable {
             }
         });
         this.v = x.b(b.d.scrollcontainer_arrow);
-        this.t = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.A.c, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
+        this.t = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
         this.t.rotation().z = 180.0f;
         com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
-        this.u = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.A.c, 45.0f * com.censivn.C3DEngine.b.b.A.c, false);
+        this.u = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
         com.tsf.shell.manager.o.c.a(this.u, com.tsf.shell.manager.o.c.h);
         this.t.textures().addElement(this.v);
         this.u.textures().addElement(this.v);
         this.t.calAABB(3.0f, 3.0f, 1.0f);
         this.u.calAABB(3.0f, 3.0f, 1.0f);
-        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.3
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.3
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
                 a.this.k();
             }
         });
-        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
                 a.this.j();

@@ -29,12 +29,12 @@ public class RateDialog extends BaseRenderable {
     private ButtonRenderable s;
     private ButtonRenderable t;
     private LabelRenderable u = new LabelRenderable();
-    public static final int b = com.censivn.C3DEngine.b.b.A.b(820.0f);
-    public static int e = com.censivn.C3DEngine.b.b.A.b(100.0f);
-    public static int f = com.censivn.C3DEngine.b.b.A.b(60.0f);
-    public static final int g = com.censivn.C3DEngine.b.b.A.b(400.0f);
-    public static final int h = com.censivn.C3DEngine.b.b.A.b(125.0f);
-    public static final int i = com.censivn.C3DEngine.b.b.A.b(23.0f);
+    public static final int b = com.censivn.C3DEngine.b.b.ScreenConstants.b(820.0f);
+    public static int e = com.censivn.C3DEngine.b.b.ScreenConstants.b(100.0f);
+    public static int f = com.censivn.C3DEngine.b.b.ScreenConstants.b(60.0f);
+    public static final int g = com.censivn.C3DEngine.b.b.ScreenConstants.b(400.0f);
+    public static final int h = com.censivn.C3DEngine.b.b.ScreenConstants.b(125.0f);
+    public static final int i = com.censivn.C3DEngine.b.b.ScreenConstants.b(23.0f);
 
     public Object b() {
         this.u.d(45);
@@ -47,7 +47,7 @@ public class RateDialog extends BaseRenderable {
         this.u.b();
         d = (int) this.u.minY();
         c = ((g + f) - d) + f + h + i + h;
-        this.o = new d(b, c, com.censivn.C3DEngine.b.b.A.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
+        this.o = new d(b, c, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
         this.o.c(b, c);
         this.p = new GridRenderable(b, c, false);
         this.p.setDefaultColor(new Color4(-2236963));
@@ -62,7 +62,7 @@ public class RateDialog extends BaseRenderable {
         this.q.a(b.d.rate_window_blue_background);
         this.q.a(b, g);
         this.n = new a();
-        this.n.position().y = -com.censivn.C3DEngine.b.b.A.a(120.0f);
+        this.n.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
         this.q.addChild(this.n);
         m = ((c / 2.0f) - g) - f;
         addChild(this.u);
@@ -117,15 +117,15 @@ public class RateDialog extends BaseRenderable {
         k = ((-c) / 2.0f) + (h / 2.0f);
         j = k + h + i;
         this.a = new com.tsf.shell.f.e.i.GridLayoutData();
-        this.a.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
+        this.a.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         this.q.addChild(this.a);
         this.r = new ResourceGridRenderable();
-        this.r.position().x = (b / 2.0f) - com.censivn.C3DEngine.b.b.A.a(40.0f);
-        l = (c / 2.0f) - com.censivn.C3DEngine.b.b.A.a(40.0f);
+        this.r.position().x = (b / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
+        l = (c / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
         this.r.a(b.d.rate_window_close);
-        this.r.a(com.censivn.C3DEngine.b.b.A.a(32.0f), com.censivn.C3DEngine.b.b.A.a(32.0f));
-        this.r.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.r) { // from class: com.tsf.shell.manager.j.RateDialog.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.r.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(32.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(32.0f));
+        this.r.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.r) { // from class: com.tsf.shell.manager.j.RateDialog.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 com.tsf.shell.manager.app.Initializer.b();
             }
@@ -158,7 +158,7 @@ public class RateDialog extends BaseRenderable {
     }
 
     private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.TweenCallback bVar, Runnable runnable) {
-        iVar.position().y = (com.censivn.C3DEngine.b.b.A.C - c) - f2;
+        iVar.position().y = (com.censivn.C3DEngine.b.b.ScreenConstants.C - c) - f2;
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(runnable);
         dVar.h(f2);

@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerButtonElement extends DrawerBaseElement {
-    private static final float d = com.censivn.C3DEngine.b.b.A.a(70.0f);
+    private static final float d = com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f);
     private GridRenderable b;
     private TextureElement c;
     private int e;

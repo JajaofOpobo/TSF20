@@ -4,7 +4,7 @@ import android.opengl.GLES20;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColor;
@@ -34,7 +34,7 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
     private BaseRenderable m = new BaseRenderable();
     private BaseRenderable n = new BaseRenderable();
     private BaseRenderable o = new BaseRenderable();
-    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable p = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable p = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
         @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
         public void draw() {
             com.censivn.C3DEngine.C3DEngine.e().a(this);
@@ -99,7 +99,7 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
         this.e = hVar;
         this.p.moveAllPointsPX(0.0f, (h.F * 2.0f) / 2.0f, 0.0f);
         this.p.alpha(0.0f);
-        this.p.position().y = -com.censivn.C3DEngine.b.b.A.K;
+        this.p.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.K;
         this.m.addChild(this.p);
         this.m.addChild(this.o);
         this.m.addChild(this.n);
@@ -145,13 +145,13 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
     }
 
     public void g() {
-        b = 90.0f * com.censivn.C3DEngine.b.b.A.c;
-        a = h.F - (120.0f * com.censivn.C3DEngine.b.b.A.c);
-        position().y = com.censivn.C3DEngine.b.b.A.C;
-        this.p.a(com.censivn.C3DEngine.b.b.A.D);
+        b = 90.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        a = h.F - (120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+        position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
+        this.p.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
         Iterator<i> it = this.g.iterator();
         while (it.hasNext()) {
-            it.next().a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
+            it.next().a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
         }
     }
 
@@ -171,8 +171,8 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
         this.g.add(this.k);
         this.g.add(this.h);
         this.g.add(this.l);
-        position().y = com.censivn.C3DEngine.b.b.A.C;
-        d = 200.0f * com.censivn.C3DEngine.b.b.A.c;
+        position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
+        d = 200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         c = ((-d) * (this.g.size() - 1)) / 2.0f;
     }
 
@@ -274,7 +274,7 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
     private void p() {
         if (!this.q) {
             this.q = true;
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             for (i iVar : this.g) {
                 iVar.g();
                 iVar.k();
@@ -291,7 +291,7 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
     private void q() {
         if (this.q) {
             this.q = false;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             for (i iVar : this.g) {
                 iVar.f();
                 iVar.j();
@@ -333,14 +333,14 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
         return a(iVar, true);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             m();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 

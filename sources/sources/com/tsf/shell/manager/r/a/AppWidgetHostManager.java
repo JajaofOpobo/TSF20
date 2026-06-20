@@ -22,7 +22,7 @@ import com.tsf.shell.f.i.c.AppPreviewLabel;
 import com.tsf.shell.manager.bind.ShellModel;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     static final Uri a = Uri.parse("content://" + ShellProvider.a + "/appWidgetReset");
     private int b;
     private int c;
@@ -88,7 +88,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
                         Intent intent = new Intent("android.appwidget.action.APPWIDGET_BIND");
                         intent.putExtra("appWidgetId", iAllocateAppWidgetId);
                         intent.putExtra("appWidgetProvider", launcherAppWidgetInfo.providerName);
-                        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+                        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
                     } else {
                         a(iAllocateAppWidgetId, 0, 0);
                     }
@@ -117,7 +117,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
                         intent.putExtra("appWidgetProvider", fVar.c());
                         AppWidgetHostManager.this.h = i;
                         AppWidgetHostManager.this.i = i2;
-                        AppWidgetHostManager.this.d = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) AppWidgetHostManager.this);
+                        AppWidgetHostManager.this.d = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) AppWidgetHostManager.this);
                         return;
                     }
                 } catch (Exception e) {
@@ -131,11 +131,11 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
         int iAllocateAppWidgetId = this.e.allocateAppWidgetId();
         Intent intent = new Intent("android.appwidget.action.APPWIDGET_PICK");
         intent.putExtra("appWidgetId", iAllocateAppWidgetId);
-        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+        this.c = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
     }
 
     private void a(Intent intent) {
-        a(intent.getIntExtra("appWidgetId", -1), (com.censivn.C3DEngine.b.b.A.v + com.censivn.C3DEngine.b.b.A.x) / 2, com.censivn.C3DEngine.b.b.A.w);
+        a(intent.getIntExtra("appWidgetId", -1), (com.censivn.C3DEngine.b.b.ScreenConstants.v + com.censivn.C3DEngine.b.b.ScreenConstants.x) / 2, com.censivn.C3DEngine.b.b.ScreenConstants.w);
     }
 
     public void a(int i, int i2, int i3) {
@@ -146,7 +146,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
             Intent intent = new Intent("android.appwidget.action.APPWIDGET_CONFIGURE");
             intent.setComponent(appWidgetInfo.configure);
             intent.putExtra("appWidgetId", i);
-            this.b = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+            this.b = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
             return;
         }
         b(i, i2, i3);
@@ -241,7 +241,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
                 gVarD.a(aVar);
             }
         });
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             int[] iArr = {launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY, launcherAppWidgetInfo.width, launcherAppWidgetInfo.height};
             if (com.tsf.shell.manager.r.BoundsHelper.c(iArr)) {
                 launcherAppWidgetInfo.cellX = iArr[0];
@@ -265,7 +265,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.a.Interfa
         aVar.k();
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         int intExtra;
         int i3;

@@ -4,13 +4,13 @@ import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends b {
+public class TitleBarRenderer extends BaseSliderRenderer {
     private LabelRenderable mLabel = new LabelRenderable();
 
     public a() {
         this.mLabel.b(1);
         this.mLabel.a("Title");
-        this.mLabel.a(com.censivn.C3DEngine.b.b.A.a(20.0f), 0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), 0.0f);
+        this.mLabel.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f), 0.0f);
     }
 
     public void setTitlePosition(float f) {

@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.mix.menu.item.detail;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.b.A;
+import com.censivn.C3DEngine.b.b.ScreenConstants;
 import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeListsManager;
@@ -92,7 +92,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
         return this.mLoader;
     }
 
-    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.A.a
+    @Override // com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeInfoLayout, com.censivn.C3DEngine.b.b.ScreenConstants.a
     public void recycle() {
         this.mInfo = null;
         if (this.mTexture.id != 0) {

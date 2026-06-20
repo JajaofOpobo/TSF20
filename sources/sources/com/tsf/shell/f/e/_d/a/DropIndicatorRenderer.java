@@ -18,7 +18,7 @@ public class DropIndicatorRenderer extends BaseRenderable {
     public boolean d = false;
 
     public DropIndicatorRenderer() {
-        float f = com.censivn.C3DEngine.b.b.A.b;
+        float f = com.censivn.C3DEngine.b.b.ScreenConstants.b;
         scale().setAll(f, f, 1.0f);
         this.f = new BaseRenderable();
         this.a = new DropIndicatorContainer();

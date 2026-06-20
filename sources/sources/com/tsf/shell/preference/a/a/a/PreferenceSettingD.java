@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingD extends PreferenceSettingBase {
-    private com.censivn.C3DEngine.b.b.A.d a;
-    private com.censivn.C3DEngine.b.b.A.b b;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.d a;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.b b;
     private com.censivn.C3DEngine.b.f.BaseRenderable d;
     private com.censivn.C3DEngine.b.f.GridRenderable e;
     private TextureElement f;
@@ -19,7 +19,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     private ArrayList<com.tsf.shell.manager.o.a.TextLabelElement> j;
 
     public PreferenceSettingD(String str) {
-        super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
+        super(str, com.censivn.C3DEngine.b.b.ScreenConstants.a(238.0f));
         this.h = false;
         this.i = 0;
         this.d = new com.censivn.C3DEngine.b.f.BaseRenderable();
@@ -34,8 +34,8 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.j.add(com.tsf.shell.manager.o.a.LabelManager.c(1));
         this.j.add(com.tsf.shell.manager.o.a.LabelManager.c(3));
         this.j.add(com.tsf.shell.manager.o.a.LabelManager.c(8));
-        this.a = new com.censivn.C3DEngine.b.b.A.d() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingD.2
-            @Override // com.censivn.C3DEngine.b.b.A.d
+        this.a = new com.censivn.C3DEngine.b.b.ScreenConstants.d() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingD.2
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public float b(float f) {
                 return com.tsf.shell.manager.o.ButtonPresetManager.a.J * 1.2f * (-((int) ((Math.abs(f) + (r0 / 2.0f)) / r0)));
             }
@@ -43,7 +43,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.a.b(true);
         this.a.c(((-com.tsf.shell.manager.o.ButtonPresetManager.a.J) / 2.0f) * 1.2f);
         this.a.d((com.tsf.shell.manager.o.ButtonPresetManager.a.J / 2.0f) * 1.2f);
-        this.b = new com.censivn.C3DEngine.b.b.A.b();
+        this.b = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
         this.a.c(this.b);
         for (int i = 0; i < this.j.size(); i++) {
             com.tsf.shell.manager.o.a.TextLabelElement bVar = this.j.get(i);
@@ -58,7 +58,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.e.textures().addElement(this.f);
         this.a.position().y = -com.tsf.shell.manager.o.ButtonPresetManager.c.I;
         this.d.addChild(this.e);
-        this.d.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
+        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
         PreferenceSettingD().addChild(this.d);
     }
 
@@ -92,7 +92,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.a.setAnimationObjectState(true);
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         this.h = true;
@@ -112,19 +112,19 @@ public class PreferenceSettingD extends PreferenceSettingBase {
     }
 
     private void o() {
-        this.a.position().x = com.censivn.C3DEngine.b.b.A.z;
-        this.a.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.A.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(500.0f) / 2.0f, 0.0f);
+        this.a.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+        this.a.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f) / 2.0f, 0.0f);
         this.a.k();
         this.a.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         PreferenceSettingD();
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         int i = 0;
         super.g();

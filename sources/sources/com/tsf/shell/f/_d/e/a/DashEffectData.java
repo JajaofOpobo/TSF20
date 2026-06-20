@@ -105,7 +105,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
                 }
                 if (bVar instanceof com.tsf.shell.f.i.b.b.ItemShell) {
                     com.tsf.shell.f.i.b.b.ItemShell aVar = (com.tsf.shell.f.i.b.b.ItemShell) bVar;
-                    if (com.censivn.C3DEngine.b.b.A.O) {
+                    if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                         dVar2.f(aVar.b(bVar.K().cellX));
                         dVar2.h(aVar.c(bVar.K().cellY));
                         dVar2.e(0.0f);
@@ -119,7 +119,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
                     dVar2.f(number3d.x);
                     dVar2.h(number3d.y);
                     dVar2.e(0.0f);
-                } else if (com.censivn.C3DEngine.b.b.A.O) {
+                } else if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                     dVar2.f(bVar.K().cellX);
                     dVar2.h(bVar.K().cellY);
                     dVar2.e(bVar.K().rotation);
@@ -160,7 +160,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
                 com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
                 if (bVar instanceof com.tsf.shell.f.i.b.b.ItemShell) {
                     com.tsf.shell.f.i.b.b.ItemShell aVar = (com.tsf.shell.f.i.b.b.ItemShell) bVar;
-                    if (com.censivn.C3DEngine.b.b.A.O) {
+                    if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                         bVar.position().x = aVar.b(bVar.K().cellX);
                         bVar.position().y = aVar.c(bVar.K().cellY);
                         bVar.rotation().z = 0.0f;
@@ -174,7 +174,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
                     bVar.position().x = number3d.x;
                     bVar.position().y = number3d.y;
                     bVar.position().z = 0.0f;
-                } else if (com.censivn.C3DEngine.b.b.A.O) {
+                } else if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                     bVar.position().x = bVar.K().cellX;
                     bVar.position().y = bVar.K().cellY;
                     bVar.rotation().z = bVar.K().rotation;

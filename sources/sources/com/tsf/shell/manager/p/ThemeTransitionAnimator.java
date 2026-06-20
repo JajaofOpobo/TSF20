@@ -12,12 +12,12 @@ public class ThemeTransitionAnimator {
     private GestureTipElement a;
     private float b = 300.0f;
     private float c = 36.0f;
-    private float d = com.censivn.C3DEngine.b.b.A.a(200.0f);
+    private float d = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
 
     public void a() {
         this.a = new b();
         com.censivn.C3DEngine.a.d.d().a(false);
-        com.censivn.C3DEngine.b.c.b.c();
+        com.censivn.C3DEngine.b.c.KeyboardHandler.c();
         com.tsf.shell.manager.app.ObserverManager.b(Home.b());
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.1
             @Override // java.lang.Runnable
@@ -73,9 +73,9 @@ public class ThemeTransitionAnimator {
         float[] fArrA = x.a(fD, fE);
         float f = fArrA[0];
         float f2 = fArrA[1];
-        float f3 = com.censivn.C3DEngine.b.b.A.F;
+        float f3 = com.censivn.C3DEngine.b.b.ScreenConstants.F;
         this.a.a(30.0f);
-        com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new AnonymousClass3(fD, com.censivn.C3DEngine.b.b.A.A - (200.0f * com.censivn.C3DEngine.b.b.A.c), fE, fE + (com.censivn.C3DEngine.b.b.A.A - fD), f, f3, f2));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new AnonymousClass3(fD, com.censivn.C3DEngine.b.b.ScreenConstants.A - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), fE, fE + (com.censivn.C3DEngine.b.b.ScreenConstants.A - fD), f, f3, f2));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.p.ThemeTransitionAnimator$3, reason: invalid class name */
@@ -111,8 +111,8 @@ public class ThemeTransitionAnimator {
             float f = a.this.a.position().x;
             float f2 = a.this.a.position().y;
             float fB = com.tsf.shell.manager.app.StateHub.r().b(1);
-            float f3 = fB - (com.censivn.C3DEngine.b.b.A.F / 2.0f);
-            float f4 = this.d - (com.censivn.C3DEngine.b.b.A.A - f3);
+            float f3 = fB - (com.censivn.C3DEngine.b.b.ScreenConstants.F / 2.0f);
+            float f4 = this.d - (com.censivn.C3DEngine.b.b.ScreenConstants.A - f3);
             a.this.a.a(-30.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 1500, new AnonymousClass1(f, f3, f2, f4, fB));
         }
@@ -237,7 +237,7 @@ public class ThemeTransitionAnimator {
                                     a.this.a.a(20.0f);
                                 }
                             };
-                            dVar.f(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(100.0f));
+                            dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
                             dVar.h(a.this.d);
                             com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 2000, dVar);
                             a.this.a.a(-30.0f);
@@ -247,7 +247,7 @@ public class ThemeTransitionAnimator {
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         C01391 c01391 = new C01391();
-                        c01391.f(com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(100.0f));
+                        c01391.f(com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
                         c01391.h(-a.this.d);
                         com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 1000, c01391);
                         a.this.a.a(30.0f);
@@ -285,7 +285,7 @@ public class ThemeTransitionAnimator {
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.tsf.shell.manager.app.ObserverManager.c(Home.b());
-                com.censivn.C3DEngine.b.c.b.b();
+                com.censivn.C3DEngine.b.c.KeyboardHandler.b();
                 com.censivn.C3DEngine.a.d.d().a(true);
                 com.tsf.shell.manager.app.TaskScheduler.b(a.this.a);
                 a.this.a.a();

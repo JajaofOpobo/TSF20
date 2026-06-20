@@ -38,8 +38,8 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         this.e = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         this.g = new ArrayList<>();
-        this.i = com.censivn.C3DEngine.b.b.A.a(900.0f);
-        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, 0.0f, 0.0f);
+        this.i = com.censivn.C3DEngine.b.b.ScreenConstants.a(900.0f);
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.d.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, 0.0f, 0.0f);
         this.c.addChild(this.b);
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.2
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
@@ -49,7 +49,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
-                i hVar = iVar == null ? new h(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(30.0f), false) : iVar;
+                i hVar = iVar == null ? new h(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), false) : iVar;
                 ((h) hVar).a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), false);
                 return hVar;
             }
@@ -76,7 +76,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
                 return WidgetInstanceListPanel.this.a(eVar, f, f2);
             }
         });
-        this.b.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
+        this.b.b(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f);
     }
 
     protected boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {

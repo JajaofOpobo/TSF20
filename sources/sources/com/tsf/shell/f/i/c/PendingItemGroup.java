@@ -57,23 +57,23 @@ public class PendingItemGroup extends ItemGroupBase {
     private BaseRenderable q() {
         PendingItemGroup();
         j jVar = new BaseRenderable();
-        this.l = new GridRenderable(242.0f * com.censivn.C3DEngine.b.b.A.c, 150.0f * com.censivn.C3DEngine.b.b.A.c, false) { // from class: com.tsf.shell.f.i.c.PendingItemGroup.1
-            float a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
+        this.l = new GridRenderable(242.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 150.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false) { // from class: com.tsf.shell.f.i.c.PendingItemGroup.1
+            float a = 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             int d = 10;
             double e = 0.017453292519943295d;
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 10.0f * com.censivn.C3DEngine.b.b.A.c);
+                position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 this.d++;
             }
         };
-        this.m = new a(com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 200.0f, com.censivn.C3DEngine.b.b.A.c * 3.0f, true, true);
-        this.m.position().z = 100.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.n = new a(com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 180.0f, com.censivn.C3DEngine.b.b.A.c * 3.0f, false, true);
-        this.n.position().z = (-100.0f) * com.censivn.C3DEngine.b.b.A.c;
-        this.o = new a(com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 54.0f, com.censivn.C3DEngine.b.b.A.c * 70.0f, com.censivn.C3DEngine.b.b.A.c * 0.4f, true, false);
-        this.o.position().y = (-100.0f) * com.censivn.C3DEngine.b.b.A.c;
+        this.m = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 200.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, true, true);
+        this.m.position().z = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        this.n = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 180.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, false, true);
+        this.n.position().z = (-100.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        this.o = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 70.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.4f, true, false);
+        this.o.position().y = (-100.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.l.textures().addElement(this.p);
         this.m.textures().addElement(this.q);
         this.n.textures().addElement(this.q);
@@ -110,7 +110,7 @@ public class PendingItemGroup extends ItemGroupBase {
 
         public a(float f, float f2, float f3, float f4, boolean z, boolean z2) {
             super(f, f2, false);
-            this.a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
+            this.a = 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             this.d = 10;
             this.e = 0.017453292519943295d;
             this.h = true;
@@ -134,7 +134,7 @@ public class PendingItemGroup extends ItemGroupBase {
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.i) {
-                position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 30.0f * com.censivn.C3DEngine.b.b.A.c);
+                position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 this.d += 2;
             }
             if (this.h) {

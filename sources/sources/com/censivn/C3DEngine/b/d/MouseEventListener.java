@@ -4,10 +4,10 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.IRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class MouseEventListener {
     public IRenderable c;
 
-    public a(i iVar) {
+    public MouseEventListener(IRenderable iVar) {
         this.c = iVar;
     }
 

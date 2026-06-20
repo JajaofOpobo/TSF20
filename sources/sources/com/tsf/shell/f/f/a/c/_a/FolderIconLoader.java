@@ -64,7 +64,7 @@ public class FolderIconLoader {
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
-        this.b = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.A.a(140.0f), FolderIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.2
+        this.b = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.ScreenConstants.a(140.0f), FolderIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.2
             @Override // com.censivn.C3DEngine.b.h.d.ProgressBarItem, com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 f();

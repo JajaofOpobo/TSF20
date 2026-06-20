@@ -97,7 +97,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
     }
 
     private void m() {
-        this.i = com.censivn.C3DEngine.b.b.A.F;
+        this.i = com.censivn.C3DEngine.b.b.ScreenConstants.F;
     }
 
     public void d() {
@@ -376,7 +376,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         }
 
         public int a(int i) {
-            return (int) ((i / 2) * com.censivn.C3DEngine.b.b.A.c);
+            return (int) ((i / 2) * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         }
 
         public void d() {
@@ -442,7 +442,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
                     Bitmap bitmap = bitmapDrawableC.getBitmap();
                     System.currentTimeMillis();
                     if (!bitmap.isRecycled()) {
-                        this.e = q.b(bitmap, com.censivn.C3DEngine.b.b.A.L, com.censivn.C3DEngine.b.b.A.M);
+                        this.e = q.b(bitmap, com.censivn.C3DEngine.b.b.ScreenConstants.L, com.censivn.C3DEngine.b.b.ScreenConstants.M);
                         this.e = q.a(this.e);
                         System.currentTimeMillis();
                         if (com.censivn.C3DEngine.C3DEngine.e() != null) {

@@ -7,7 +7,7 @@ import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.a {
+public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     public static n d;
     private final float a;
     private final float b;
@@ -19,21 +19,21 @@ public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.a {
 
     public WallpaperDragHandler(i iVar) {
         super(iVar);
-        this.a = 30.0f * com.censivn.C3DEngine.b.b.A.a;
-        this.b = 15.0f * com.censivn.C3DEngine.b.b.A.a;
+        this.a = 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+        this.b = 15.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
         this.e = 0;
         this.f = 1;
         this.g = 0;
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
         if (PageItemDropHandler.m() == 1 || PageItemDropHandler.m() == 3) {
             PageItemDropHandler.x();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
         switch (this.g) {
             case 1:
@@ -42,7 +42,7 @@ public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         switch (this.g) {
             case 1:
@@ -51,7 +51,7 @@ public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         this.h = motionEvent.getX();
         this.i = motionEvent.getY();
@@ -63,11 +63,11 @@ public class WallpaperDragHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         switch (this.g) {
             case 0:

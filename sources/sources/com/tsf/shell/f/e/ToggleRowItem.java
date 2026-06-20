@@ -10,7 +10,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private float d;
 
     public ToggleRowItem(int i, int i2) {
-        this.b.a(com.censivn.C3DEngine.b.b.A.c * 70.0f, com.censivn.C3DEngine.b.b.A.c * 70.0f);
+        this.b.a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 70.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 70.0f);
         this.b.a(SelectionFrame);
         this.b.calAABB();
         this.c = new com.censivn.C3DEngine.b.f.LabelRenderable();
@@ -22,8 +22,8 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.BaseRenderable {
         addChild(this.b);
         addChild(this.c);
         this.d = this.c.position().x + this.c.maxX();
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.ToggleRowItem.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.e.ToggleRowItem.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 l.this.a();
             }
@@ -45,12 +45,12 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.BaseRenderable {
 
     private void c() {
         this.b.position().x = this.b.b() / 2.0f;
-        this.c.position().x = this.b.position().x + (this.b.b() / 2.0f) + com.censivn.C3DEngine.b.b.A.a(20.0f);
+        this.c.position().x = this.b.position().x + (this.b.b() / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
     }
 
     private void d() {
         ToggleRowItem();
-        float fA = com.censivn.C3DEngine.b.b.A.a(100.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
         switch (this.a) {
             case 0:
                 this.b.position().x -= this.d / 2.0f;

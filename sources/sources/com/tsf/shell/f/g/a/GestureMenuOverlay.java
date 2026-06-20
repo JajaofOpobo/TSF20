@@ -23,7 +23,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     private boolean k;
 
     public GestureMenuOverlay() {
-        super(210.0f * com.censivn.C3DEngine.b.b.A.c);
+        super(210.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.g = true;
         this.k = false;
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList = new ArrayList<>();
@@ -39,22 +39,22 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
         arrayList.add(this.e);
         setMenuItems(arrayList);
         this.f = new EmptyRenderable();
-        this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.f) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.f) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (b.this.g) {
                     com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2, f, f2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (b.this.g) {
                     com.tsf.shell.manager.app.StateHub.s().d(motionEvent, motionEvent2, f, f2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (b.this.g) {
                     com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
@@ -62,14 +62,14 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (b.this.g) {
                     b.this.templeteHide();
                 }
             }
         });
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
     }
 
     private void a(boolean z) {
@@ -92,7 +92,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
         com.tsf.shell.manager.action.GestureHandler.b();
         com.tsf.shell.manager.app.TaskScheduler.b(this.f);
         com.tsf.shell.manager.app.TaskScheduler.a(this.f);
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
     }
 
     @Override // com.tsf.shell.f.e._g.MenuOverlay
@@ -109,7 +109,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
 
     @Override // com.tsf.shell.f.e._g.MenuOverlay
     public void onLayout(float f, float f2, float f3, float f4) {
-        this.f.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+        this.f.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
         GestureMenuOverlay();
     }
 
@@ -120,7 +120,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
 
     private void d() {
         if (this.h != null) {
-            this.h.position().y = com.censivn.C3DEngine.b.b.A.B - ((com.censivn.C3DEngine.b.b.A.E - getHeight()) / 2.0f);
+            this.h.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B - ((com.censivn.C3DEngine.b.b.ScreenConstants.E - getHeight()) / 2.0f);
         }
     }
 
@@ -178,8 +178,8 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
             this.h = new BaseRenderable();
             this.h.addChild(this.i);
             this.i.k.textures().addElement(textureElement);
-            this.i.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.i) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.3
-                @Override // com.censivn.C3DEngine.b.d.a
+            this.i.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.i) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.3
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void e(MotionEvent motionEvent) {
                     b.this.i.aQ();
                 }

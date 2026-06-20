@@ -302,7 +302,7 @@ public final class ao implements com.tsf.shell.at {
             this.b = this.a;
             int abs = (int) Math.abs(motionEvent2.getX() - motionEvent.getX());
             int abs2 = (int) Math.abs(motionEvent2.getY() - motionEvent.getY());
-            if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.b) {
+            if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.TouchState) {
                 if (abs > abs2) {
                     this.k = true;
                 } else {

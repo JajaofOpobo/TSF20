@@ -5,13 +5,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import com.tsf.shell.plugin.themepicker.AppIconEditorActivity;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class IconEditorHelper implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class IconEditorHelper implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private static b a;
     private a b;
     private int c;
@@ -63,7 +63,7 @@ public class IconEditorHelper implements com.censivn.C3DEngine.b.c.a.InterfaceC0
         this.c = Home.b().b(intent, a);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i2 == -1) {
             if (i == this.c) {

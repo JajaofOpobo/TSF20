@@ -33,7 +33,7 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
                 com.tsf.shell.f.e.h.PhotoPicker.a(b.this, 300, 300);
             }
         };
-        setAABBPX(com.censivn.C3DEngine.b.b.A.b * (-180.0f), com.censivn.C3DEngine.b.b.A.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.A.b * 180.0f, com.censivn.C3DEngine.b.b.A.b * 100.0f, 0.0f);
+        setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.b * (-180.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 180.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 100.0f, 0.0f);
         addChild(this.g);
     }
 

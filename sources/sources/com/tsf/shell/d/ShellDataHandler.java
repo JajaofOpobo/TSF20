@@ -4,7 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.e.j;
+import com.censivn.C3DEngine.b.e.ActionButtonRenderer;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.b.ConfigManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;

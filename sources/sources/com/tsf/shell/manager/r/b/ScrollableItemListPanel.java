@@ -93,7 +93,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
         this.a = aVar;
         setFunctions(arrayList);
         this.c = new BaseRenderable();
-        this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, f3, f4);
+        this.b = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, aVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, f3, f4);
         this.c.addChild(this.b);
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.2
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
@@ -116,7 +116,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                 return ScrollableItemListPanel.this.a(ScrollableItemListPanel.this.d.a().get(i), i, iVar);
             }
         });
-        this.b.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
+        this.b.b(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f);
         this.b.a(new f() { // from class: com.tsf.shell.manager.r.b.c.3
             private i c;
             private float d;

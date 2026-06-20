@@ -4,8 +4,8 @@ import android.view.KeyEvent;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -21,12 +21,12 @@ public abstract class MenuOverlay {
     private float mOffsetMenuHeight;
     public static int COLOR_IMAGE_HUE = 0;
     public static int COLOR_IMAGE_SATURATION = 0;
-    public static final float MENU_HEIGHT = 100.0f * com.censivn.C3DEngine.b.b.A.c;
-    public static final float MENU_EXTRA_HEIGHT = 115.0f * com.censivn.C3DEngine.b.b.A.c;
-    public static final float MENU_ITEM_DISTANCE = 36.0f * com.censivn.C3DEngine.b.b.A.c;
+    public static final float MENU_HEIGHT = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+    public static final float MENU_EXTRA_HEIGHT = 115.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+    public static final float MENU_ITEM_DISTANCE = 36.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     private boolean isShow = false;
     private boolean isBlurModeOn = false;
-    private MenuItemHeader mExtraMenuContainer = new MenuItemHeader(com.censivn.C3DEngine.b.b.A.D, MENU_EXTRA_HEIGHT);
+    private MenuItemHeader mExtraMenuContainer = new MenuItemHeader(com.censivn.C3DEngine.b.b.ScreenConstants.D, MENU_EXTRA_HEIGHT);
     private com.tsf.shell.f.e._g.MenuClassButton mClassMenu = new com.tsf.shell.f.e._g.MenuClassButton(this, MENU_ITEM_DISTANCE);
     private a mKeyListener = new a();
     private b mSceneEventListener = new MenuContainer();
@@ -34,10 +34,10 @@ public abstract class MenuOverlay {
     private BaseRenderable mAnimationContainer = new BaseRenderable();
     private BaseRenderable mMenuContainer = new BaseRenderable();
     private BaseRenderable mContentContainer = new BaseRenderable();
-    private GridRenderable mBarBackground = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.MenuOverlay.3
+    private GridRenderable mBarBackground = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.MenuOverlay.3
         @Override // com.censivn.C3DEngine.b.f.GridRenderable
         public void b(float f) {
-            float f2 = MenuOverlay.MENU_HEIGHT + com.censivn.C3DEngine.b.b.A.K + MenuOverlay.this.mOffsetMenuHeight + f;
+            float f2 = MenuOverlay.MENU_HEIGHT + com.censivn.C3DEngine.b.b.ScreenConstants.K + MenuOverlay.this.mOffsetMenuHeight + f;
             float f3 = (-f2) - MenuOverlay.MENU_HEIGHT;
             float f4 = MenuOverlay.MENU_HEIGHT;
             points().pxY(2, MenuOverlay.MENU_HEIGHT);
@@ -45,7 +45,7 @@ public abstract class MenuOverlay {
             points().pxY(0, (-f2) - MenuOverlay.MENU_HEIGHT);
             points().pxY(1, (-f2) - MenuOverlay.MENU_HEIGHT);
             calAABB();
-            setAABBPX(com.censivn.C3DEngine.b.b.A.z, f3, 0.0f, com.censivn.C3DEngine.b.b.A.A, f4, 0.0f);
+            setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, f3, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, f4, 0.0f);
         }
     };
 
@@ -81,7 +81,7 @@ public abstract class MenuOverlay {
     public void updateBlurModeUV() {
         if (this.isBlurModeOn) {
             float f = this.mMenuContainer.position().y + this.mContainer.position().y;
-            float f2 = com.censivn.C3DEngine.b.b.A.G;
+            float f2 = com.censivn.C3DEngine.b.b.ScreenConstants.G;
             float fPxY = (f2 / 2.0f) + this.mBarBackground.points().pxY(0) + f + this.mOffsetMenuHeight;
             float fPxY2 = f + this.mBarBackground.points().pxY(2) + (f2 / 2.0f) + this.mOffsetMenuHeight;
             this.mBarBackground.uvs().setV(0, fPxY / f2);
@@ -112,7 +112,7 @@ public abstract class MenuOverlay {
                     it.next().getTitleIcon().i();
                 }
                 com.tsf.shell.manager.app.AppListModel.c(this);
-                com.censivn.C3DEngine.b.c.b.a(this.mKeyListener);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(this.mKeyListener);
                 com.tsf.shell.manager.app.ObserverManager.a(this.mSceneEventListener);
                 showAnimation(0);
                 this.mClassMenu.a();
@@ -133,7 +133,7 @@ public abstract class MenuOverlay {
                     it.next().getTitleIcon().i();
                 }
                 com.tsf.shell.manager.app.AppListModel.c(this);
-                com.censivn.C3DEngine.b.c.b.a(this.mKeyListener);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(this.mKeyListener);
                 com.tsf.shell.manager.app.ObserverManager.a(this.mSceneEventListener);
                 showAnimation(i);
                 this.mClassMenu.a();
@@ -150,7 +150,7 @@ public abstract class MenuOverlay {
             if (this.mMenuItems.contains(this.mCurrentMenuItem)) {
                 this.isShow = false;
                 com.tsf.shell.manager.app.AppListModel.b(this);
-                com.censivn.C3DEngine.b.c.b.b(this.mKeyListener);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.b(this.mKeyListener);
                 com.tsf.shell.manager.app.ObserverManager.b(this.mSceneEventListener);
                 hideAnimation();
                 return;
@@ -184,7 +184,7 @@ public abstract class MenuOverlay {
         dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.mMenuContainer);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.mMenuContainer, 500, dVar);
-        this.mContainer.position().y = com.censivn.C3DEngine.b.b.A.C;
+        this.mContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
         this.mContainer.removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.a(this.mContainer);
     }
@@ -245,7 +245,7 @@ public abstract class MenuOverlay {
         if (com.tsf.shell.manager.b.ConfigManager.ai()) {
             this.mBarBackground.setDefaultColor(new Color4(38, 38, 38, 230));
         }
-        this.mBarBackground.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.mBarBackground));
+        this.mBarBackground.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.mBarBackground));
         this.mBarBackground.useVBO(false);
         this.mBarBackground.b(this.mHeight);
         this.mClassMenu.position().y = MENU_HEIGHT / 2.0f;
@@ -271,7 +271,7 @@ public abstract class MenuOverlay {
         this.mClassMenu.a(arrayList);
         for (com.tsf.shell.f.e._g.a.MenuActionItem bVar : arrayList) {
             bVar.setMenu(this);
-            bVar.onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
+            bVar.onLayout(com.censivn.C3DEngine.b.b.ScreenConstants.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, this.mHeight / 2.0f);
             if (bVar.getContentContainer() != null) {
                 bVar.reset();
             }
@@ -424,38 +424,38 @@ public abstract class MenuOverlay {
     /* JADX INFO: Access modifiers changed from: private */
     public void resetSize() {
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.mContainer);
-        this.mContainer.position().y = com.censivn.C3DEngine.b.b.A.C;
-        this.mBarBackground.a(com.censivn.C3DEngine.b.b.A.D);
-        this.mExtraMenuContainer.a(com.censivn.C3DEngine.b.b.A.D);
+        this.mContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
+        this.mBarBackground.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
+        this.mExtraMenuContainer.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
         this.mBarBackground.calAABB();
         Iterator<com.tsf.shell.f.e._g.a.MenuActionItem> it = this.mMenuItems.iterator();
         while (it.hasNext()) {
-            it.next().onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
+            it.next().onLayout(com.censivn.C3DEngine.b.b.ScreenConstants.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, this.mHeight / 2.0f);
         }
         this.mClassMenu.b();
-        onLayout(com.censivn.C3DEngine.b.b.A.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.A.A, this.mHeight / 2.0f);
+        onLayout(com.censivn.C3DEngine.b.b.ScreenConstants.z, (-this.mHeight) / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, this.mHeight / 2.0f);
     }
 
     public float getScreenFreeSpaceBottom() {
-        return com.censivn.C3DEngine.b.b.A.B - (com.censivn.C3DEngine.b.b.A.E - getHeight());
+        return com.censivn.C3DEngine.b.b.ScreenConstants.B - (com.censivn.C3DEngine.b.b.ScreenConstants.E - getHeight());
     }
 
     public float getScreenFreeSpaceCenter() {
-        return com.censivn.C3DEngine.b.b.A.B - ((com.censivn.C3DEngine.b.b.A.E - getHeight()) / 2.0f);
+        return com.censivn.C3DEngine.b.b.ScreenConstants.B - ((com.censivn.C3DEngine.b.b.ScreenConstants.E - getHeight()) / 2.0f);
     }
 
-    class a implements com.censivn.C3DEngine.b.c.b.a {
+    class a implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
         a() {
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4) {
                 MenuOverlay.this.hide();
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void b(int i, KeyEvent keyEvent) {
         }
     }
@@ -464,7 +464,7 @@ public abstract class MenuOverlay {
         b() {
         }
 
-        @Override // com.censivn.C3DEngine.b.c.e.a
+        @Override // com.censivn.C3DEngine.b.c.WindowManager.a
         public void a(int i, int i2, int i3, int i4) {
             MenuOverlay.this.resetSize();
         }

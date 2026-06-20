@@ -114,8 +114,8 @@ public class MenuActionHandler extends MenuItemBase {
             this.g = c0096a;
             this.a = new TextureElement(0, false);
             textures().addElement(this.a);
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e._g.a.MenuActionHandler.a.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.e._g.a.MenuActionHandler.a.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (C0095a.this.d) {
                         C0095a.this.g.c();
@@ -174,7 +174,7 @@ public class MenuActionHandler extends MenuItemBase {
 
         private void k() {
             if (this.a.id == 0) {
-                Bitmap bitmapCreateCustomIco = a.createCustomIco(this.f, x.a(this.e, com.censivn.C3DEngine.b.b.A.c * 60.0f, com.censivn.C3DEngine.b.b.A.c * 60.0f));
+                Bitmap bitmapCreateCustomIco = a.createCustomIco(this.f, x.a(this.e, com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f));
                 com.censivn.C3DEngine.C3DEngine.g().a(this.a, bitmapCreateCustomIco);
                 bitmapCreateCustomIco.recycle();
                 if (b() != this.a.width) {
@@ -201,8 +201,8 @@ public class MenuActionHandler extends MenuItemBase {
         textCreater.h(40);
         textCreater.i(-1);
         Bitmap bitmapB = textCreater.b(str);
-        int i = (int) (92.0f * com.censivn.C3DEngine.b.b.A.c);
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + i + ((int) (0.0f * com.censivn.C3DEngine.b.b.A.c)), i, Bitmap.Config.ARGB_8888);
+        int i = (int) (92.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + i + ((int) (0.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c)), i, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmapCreateBitmap);
         canvas.setDrawFilter(new PaintFlagsDrawFilter(0, 3));
         Paint paint = new Paint();

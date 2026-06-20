@@ -24,7 +24,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
     public SideMenuIndicator(b bVar) {
         boolean z = false;
         this.f = bVar;
-        this.d = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.1
+        this.d = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.a.id == 0) {
@@ -33,8 +33,8 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             }
         };
         this.d.textures().addElement(this.a);
-        com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.2
-            @Override // com.censivn.C3DEngine.b.d.a
+        com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.d) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.2
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 d.this.f.l();
             }
@@ -44,7 +44,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
         this.d.setMouseEventListener(aVar);
         com.tsf.shell.manager.app.StateManager.b(this);
         this.b = new TextureElement(0, false);
-        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.3
+        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.3
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.b.id == 0) {
@@ -56,7 +56,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             }
         };
         this.e.textures().addElement(this.b);
-        this.c.position().x = com.censivn.C3DEngine.b.b.A.a(28.0f);
+        this.c.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(28.0f);
         addChild(this.d);
         addChild(this.c);
         this.c.addChild(this.e);
@@ -111,7 +111,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
-            dVar2.f(com.censivn.C3DEngine.b.b.A.a(100.0f));
+            dVar2.f(com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
             dVar2.a(0);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar2);

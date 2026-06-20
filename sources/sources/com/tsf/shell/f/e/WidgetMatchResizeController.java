@@ -4,8 +4,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
@@ -59,7 +59,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         a.e().a(Math.abs(bVar.minX() * bVar.u()), Math.abs(bVar.maxX() * bVar.u()), Math.abs(bVar.minY() * bVar.u()), Math.abs(bVar.maxY() * bVar.u()));
         a.e().setFocus();
         a.e().h();
-        com.censivn.C3DEngine.b.c.b.a(AlignmentOverlay);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(AlignmentOverlay);
         com.tsf.shell.manager.app.ObserverManager.a(AlignmentOverlay);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
@@ -67,19 +67,19 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         WidgetMatchResizeController();
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             WidgetMatchResizeController();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -97,7 +97,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             dVar.a(0);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this, 250, dVar);
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             com.tsf.shell.manager.app.ObserverManager.b(AlignmentOverlay);
             c = false;
         }
@@ -143,7 +143,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             this.g = c(1);
             this.h = c(2);
             this.i = c(3);
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this));
             mouseSkip(true);
             b(0);
         }
@@ -240,10 +240,10 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                     kVar.calAABB();
                     break;
             }
-            kVar.maxY(kVar.maxY() + (70.0f * com.censivn.C3DEngine.b.b.A.b));
-            kVar.minY(kVar.minY() + (38.0f * com.censivn.C3DEngine.b.b.A.b));
-            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.A.b * 25.0f));
-            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.A.b * 25.0f));
+            kVar.maxY(kVar.maxY() + (70.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
+            kVar.minY(kVar.minY() + (38.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
+            kVar.minX(kVar.minX() - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 25.0f));
+            kVar.maxX(kVar.maxX() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 25.0f));
             kVar.textures().addElement(this.d);
             kVar.setMouseEventListener(new C0100a(this.e, this, kVar));
             addChild(kVar);
@@ -371,7 +371,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.f.e.WidgetMatchResizeController$a$a, reason: collision with other inner class name */
-        static class C0100a extends com.censivn.C3DEngine.b.d.a {
+        static class C0100a extends com.censivn.C3DEngine.b.d.MouseEventListener {
             private float a;
             private float b;
             private float d;
@@ -387,7 +387,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                 this.h = iVar2;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.f && s.c) {
                     switch (this.g) {
@@ -407,7 +407,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (s.c) {
                     this.f = true;
@@ -432,7 +432,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (this.f) {
                     this.f = false;

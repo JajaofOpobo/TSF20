@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashLayoutB extends DashLayoutContainer {
-    private static float c = 50.0f * com.censivn.C3DEngine.b.b.A.c;
+    private static float c = 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     float a;
     private boolean d;
     private boolean e;
@@ -20,8 +20,8 @@ public class DashLayoutB extends DashLayoutContainer {
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
-        float fA = com.censivn.C3DEngine.b.b.A.a(70.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.A.a(110.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.ScreenConstants.a(110.0f);
         float f = fA2 / 3.0f;
         float f2 = fA2 / 2.0f;
         for (int i = 0; i < 4; i++) {
@@ -67,11 +67,11 @@ public class DashLayoutB extends DashLayoutContainer {
         ArrayList<DashLayoutA.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
         j jVarD = com.tsf.shell.manager.app.v.ScreenHelper.d().d();
         int size = arrayList.size();
-        float f4 = 120.0f * com.censivn.C3DEngine.b.b.A.c * (size - 1);
-        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f) + c > com.censivn.C3DEngine.b.b.A.B) {
-            f3 = ((com.censivn.C3DEngine.b.b.A.B - c) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2;
-        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - c < com.censivn.C3DEngine.b.b.A.C) {
-            f3 = f4 + (((com.censivn.C3DEngine.b.b.A.C + c) + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2);
+        float f4 = 120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * (size - 1);
+        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f) + c > com.censivn.C3DEngine.b.b.ScreenConstants.B) {
+            f3 = ((com.censivn.C3DEngine.b.b.ScreenConstants.B - c) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2;
+        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - c < com.censivn.C3DEngine.b.b.ScreenConstants.C) {
+            f3 = f4 + (((com.censivn.C3DEngine.b.b.ScreenConstants.C + c) + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2);
         } else {
             f3 = f4 / 2.0f;
         }
@@ -103,11 +103,11 @@ public class DashLayoutB extends DashLayoutContainer {
     }
 
     private float c(DashLayoutA.c cVar) {
-        return this.d ? (80.0f * com.censivn.C3DEngine.b.b.A.c) + (com.censivn.C3DEngine.b.b.A.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.A.c) - (com.censivn.C3DEngine.b.b.A.c * 60.0f);
+        return this.d ? (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f);
     }
 
     private float d(DashLayoutA.c cVar) {
-        return this.d ? 80.0f * com.censivn.C3DEngine.b.b.A.c : (-80.0f) * com.censivn.C3DEngine.b.b.A.c;
+        return this.d ? 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c : (-80.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     }
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
@@ -134,11 +134,11 @@ public class DashLayoutB extends DashLayoutContainer {
         dVar.l(1.0f);
         dVar.m(1.0f);
         if (this.d) {
-            dVar.f(190.0f * com.censivn.C3DEngine.b.b.A.c);
+            dVar.f(190.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         } else {
-            dVar.f((-190.0f) * com.censivn.C3DEngine.b.b.A.c);
+            dVar.f((-190.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         }
-        dVar.h((-120.0f) * com.censivn.C3DEngine.b.b.A.c * i);
+        dVar.h((-120.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c * i);
         if (this.e && i2 != 0) {
             dVar.b(i2);
         }

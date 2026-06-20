@@ -14,7 +14,7 @@ import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerIndicatorDot extends BaseRenderable {
-    public static final int a = com.censivn.C3DEngine.b.b.A.b(26.0f);
+    public static final int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(26.0f);
     private static TextureElement b = new TextureElement(0, false);
     private static k CircleDotNode;
     private BaseRenderable d;
@@ -37,8 +37,8 @@ public class DrawerIndicatorDot extends BaseRenderable {
         c.a(this.e, c.a);
         this.e.alpha(200.0f);
         this.d = a(this.c);
-        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d) { // from class: com.tsf.shell.f.f.a._c._a.DrawerIndicatorDot.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.d) { // from class: com.tsf.shell.f.f.a._c._a.DrawerIndicatorDot.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (b.this.b()) {
                     b.this.h();
@@ -54,9 +54,9 @@ public class DrawerIndicatorDot extends BaseRenderable {
             }
         });
         this.d.calAABB();
-        this.h = (f.a / 2.0f) + com.censivn.C3DEngine.b.b.A.a(25.0f);
+        this.h = (f.a / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f);
         PositionNumber3d positionNumber3dPosition = this.d.position();
-        float fA = com.censivn.C3DEngine.b.b.A.a(-30.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(-30.0f);
         this.i = fA;
         positionNumber3dPosition.y = fA;
         this.d.visible(false);
@@ -78,8 +78,8 @@ public class DrawerIndicatorDot extends BaseRenderable {
     public void g() {
         if (k == null) {
             k = new com.tsf.shell.f.e.CircleDotNode();
-            CircleDotNode.position().x = com.censivn.C3DEngine.b.b.A.a(80.0f);
-            CircleDotNode.position().y = com.censivn.C3DEngine.b.b.A.a(220.0f);
+            CircleDotNode.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
+            CircleDotNode.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(220.0f);
             CircleDotNode.alpha(0.0f);
         }
         this.l = true;

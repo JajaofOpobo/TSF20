@@ -36,7 +36,7 @@ public class GestureHandler {
     private static boolean u = false;
 
     public static void a(Context context) {
-        n = com.censivn.C3DEngine.b.b.A.e * 100.0f;
+        n = com.censivn.C3DEngine.b.b.ScreenConstants.e * 100.0f;
         com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.action.GestureHandler.1
             @Override // java.lang.Runnable
             public void run() {

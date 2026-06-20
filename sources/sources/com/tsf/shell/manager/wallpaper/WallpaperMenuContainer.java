@@ -7,7 +7,7 @@ public class WallpaperMenuContainer extends com.tsf.shell.f.e._g.MenuOverlay {
     private WallpaperMenuPanel a;
 
     public WallpaperMenuContainer() {
-        super(630.0f * com.censivn.C3DEngine.b.b.A.c);
+        super(630.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionItem> arrayList = new ArrayList<>();
         this.a = new WallpaperMenuPanel(this);
         arrayList.add(this.a);

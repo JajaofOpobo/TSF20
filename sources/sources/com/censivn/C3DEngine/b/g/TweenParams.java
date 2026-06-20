@@ -101,7 +101,7 @@ public class TweenParams {
 
     public void g(float f) {
         this.g = true;
-        this.r = com.censivn.C3DEngine.b.b.A.a * f;
+        this.r = com.censivn.C3DEngine.b.b.ScreenConstants.a * f;
     }
 
     public void h(float f) {
@@ -111,7 +111,7 @@ public class TweenParams {
 
     public void i(float f) {
         this.h = true;
-        this.s = com.censivn.C3DEngine.b.b.A.a * f;
+        this.s = com.censivn.C3DEngine.b.b.ScreenConstants.a * f;
     }
 
     public void j(float f) {
@@ -121,7 +121,7 @@ public class TweenParams {
 
     public void k(float f) {
         this.i = true;
-        this.t = com.censivn.C3DEngine.b.b.A.a * f;
+        this.t = com.censivn.C3DEngine.b.b.ScreenConstants.a * f;
     }
 
     public void l(float f) {

@@ -40,13 +40,13 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
 
     public void o() {
         TextureElement textureElementB = x.b(WorkspaceStub.d.smart_button_add_icon);
-        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 128.0f, com.censivn.C3DEngine.b.b.A.c * 128.0f, false);
+        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 128.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 128.0f, false);
         this.b.moveAllPointsPX(0.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.Y, 0.0f);
         this.b.calAABB(2.0f, 2.0f, 1.0f);
         this.b.textures().addElement(textureElementB);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.e);
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 f.this.r();
             }
@@ -69,22 +69,22 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
                 return com.tsf.shell.manager.o.ButtonPresetManager.b;
             }
         };
-        a(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.3
+        a(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.3
             private i b = null;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 f.this.r();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 if (f.this.g) {
                     f.this.a();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.b = f.this.a(motionEvent);
                 if (this.b != f.this.b && this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
@@ -92,7 +92,7 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.b == f.this.b) {
                     f.this.r();
@@ -113,8 +113,8 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
     @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
     public void c(i iVar) {
         if (this.g && (iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && iVar.visible()) {
-            this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.A.a(50.0f);
-            this.e.position().y = iVar.position().y + com.censivn.C3DEngine.b.b.A.a(60.0f);
+            this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+            this.e.position().y = iVar.position().y + com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
             this.e.dispatchDraw();
         }
     }

@@ -47,7 +47,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     public float[] TEMP_AABB_BR;
     public float[] TEMP_AABB_TL;
     public float[] TEMP_AABB_TR;
-    private com.censivn.C3DEngine.b.d.a _mouseEventListener;
+    private com.censivn.C3DEngine.b.d.MouseEventListener _mouseEventListener;
     private TextureElement cacheTextureElement;
     public float canvasMaxX;
     public float canvasMaxY;
@@ -78,7 +78,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     private int mFaceBufferIndex;
     protected FacesBufferedList mFaces;
     private int mIndexCount;
-    private com.censivn.C3DEngine.b.b.b mLayoutParam;
+    private com.censivn.C3DEngine.b.b.TouchState mLayoutParam;
     private boolean mLightingEnabled;
     private boolean mLineSmoothing;
     private float mLineWidth;
@@ -1097,14 +1097,14 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_TR, 0, this.AABB_MATRIX, 0, this.AABB_TR, 0);
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BL, 0, this.AABB_MATRIX, 0, this.AABB_BL, 0);
         com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BR, 0, this.AABB_MATRIX, 0, this.AABB_BR, 0);
-        float f3 = (this.TEMP_AABB_TL[0] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.A.H;
-        float f4 = (this.TEMP_AABB_TL[1] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.A.I;
-        float f5 = (this.TEMP_AABB_TR[0] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.A.H;
-        float f6 = (this.TEMP_AABB_TR[1] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.A.I;
-        float f7 = (this.TEMP_AABB_BL[0] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.A.H;
-        float f8 = (this.TEMP_AABB_BL[1] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.A.I;
-        float f9 = (this.TEMP_AABB_BR[0] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.A.H;
-        float f10 = (this.TEMP_AABB_BR[1] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.A.I;
+        float f3 = (this.TEMP_AABB_TL[0] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        float f4 = (this.TEMP_AABB_TL[1] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.I;
+        float f5 = (this.TEMP_AABB_TR[0] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        float f6 = (this.TEMP_AABB_TR[1] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.I;
+        float f7 = (this.TEMP_AABB_BL[0] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        float f8 = (this.TEMP_AABB_BL[1] / this.TEMP_AABB_BL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.I;
+        float f9 = (this.TEMP_AABB_BR[0] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        float f10 = (this.TEMP_AABB_BR[1] / this.TEMP_AABB_BR[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.I;
         this.AABB_P1.a(f - f3, f2 - f4);
         this.AABB_P2.a(f - f5, f2 - f6);
         this.AABB_P3.a(f - f7, f2 - f8);
@@ -1128,7 +1128,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     }
 
     public void setAABBSP(float f, float f2, float f3, float f4, float f5, float f6) {
-        setAABBPX(f * com.censivn.C3DEngine.b.b.A.a, f2 * com.censivn.C3DEngine.b.b.A.a, f3 * com.censivn.C3DEngine.b.b.A.a, f4 * com.censivn.C3DEngine.b.b.A.a, f5 * com.censivn.C3DEngine.b.b.A.a, f3 * com.censivn.C3DEngine.b.b.A.a);
+        setAABBPX(f * com.censivn.C3DEngine.b.b.ScreenConstants.a, f2 * com.censivn.C3DEngine.b.b.ScreenConstants.a, f3 * com.censivn.C3DEngine.b.b.ScreenConstants.a, f4 * com.censivn.C3DEngine.b.b.ScreenConstants.a, f5 * com.censivn.C3DEngine.b.b.ScreenConstants.a, f3 * com.censivn.C3DEngine.b.b.ScreenConstants.a);
     }
 
     public void setAABBPX(float f, float f2) {
@@ -1332,11 +1332,11 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         return this.mMouseSkip;
     }
 
-    public void setMouseEventListener(com.censivn.C3DEngine.b.d.a aVar) {
+    public void setMouseEventListener(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         this._mouseEventListener = aVar;
     }
 
-    public com.censivn.C3DEngine.b.d.a getMouseEventListener() {
+    public com.censivn.C3DEngine.b.d.MouseEventListener getMouseEventListener() {
         return this._mouseEventListener;
     }
 
@@ -1410,7 +1410,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     }
 
     public void moveAllPointsSP(float f, float f2, float f3) {
-        moveAllPointsPX(com.censivn.C3DEngine.b.b.A.a * f, com.censivn.C3DEngine.b.b.A.a * f2, com.censivn.C3DEngine.b.b.A.a * f3);
+        moveAllPointsPX(com.censivn.C3DEngine.b.b.ScreenConstants.a * f, com.censivn.C3DEngine.b.b.ScreenConstants.a * f2, com.censivn.C3DEngine.b.b.ScreenConstants.a * f3);
     }
 
     public void moveAllPointsPX(float f, float f2, float f3) {
@@ -1441,7 +1441,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     }
 
     public void killFocus() {
-        com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) null);
+        com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.MouseEventListener) null);
     }
 
     public void onFocus() {
@@ -1477,11 +1477,11 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         }
     }
 
-    public void setLayoutParams(com.censivn.C3DEngine.b.b.b bVar) {
+    public void setLayoutParams(com.censivn.C3DEngine.b.b.TouchState bVar) {
         this.mLayoutParam = bVar;
     }
 
-    public com.censivn.C3DEngine.b.b.b getLayoutParams() {
+    public com.censivn.C3DEngine.b.b.TouchState getLayoutParams() {
         return this.mLayoutParam;
     }
 

@@ -1,6 +1,6 @@
 package com.tsf.shell.manager.wallpaper;
 
-import com.censivn.C3DEngine.b.e.h;
+import com.censivn.C3DEngine.b.e.TextIconRenderer;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.ToggleRowItem;
@@ -14,7 +14,7 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
 
     public Object c() {
         setTitle(b.i.text_wallpaper_blur);
-        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(330.0f));
+        setMenuHeight(com.censivn.C3DEngine.b.b.ScreenConstants.a(330.0f));
         this.a = new BaseRenderable();
         this.b = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
@@ -24,9 +24,9 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
         };
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.h);
         this.b.a(0);
-        this.b.position().y = com.censivn.C3DEngine.b.b.A.a(-250.0f);
-        this.c = new com.censivn.C3DEngine.b.e.e() { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.2
-            @Override // com.censivn.C3DEngine.b.e.e, com.censivn.C3DEngine.b.e.h
+        this.b.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-250.0f);
+        this.c = new com.censivn.C3DEngine.b.e.PercentLabelRenderer() { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.2
+            @Override // com.censivn.C3DEngine.b.e.PercentLabelRenderer, com.censivn.C3DEngine.b.e.TextIconRenderer
             public void f(int i) {
                 d(i + "%");
             }
@@ -34,10 +34,10 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
         this.c.g(b.i.text_level);
         this.c.i(0);
         this.c.j(100);
-        this.c.b((int) com.censivn.C3DEngine.b.b.A.a(850.0f));
-        this.c.position().y = com.censivn.C3DEngine.b.b.A.a(10.0f);
+        this.c.b((int) com.censivn.C3DEngine.b.b.ScreenConstants.a(850.0f));
+        this.c.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
         this.c.a(new h.a() { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.3
-            @Override // com.censivn.C3DEngine.b.e.h.a
+            @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i) {
                 c.this.d = i;
                 com.tsf.shell.manager.app.LauncherAppInfo.b(i);

@@ -29,12 +29,12 @@ public class FolderLabelElement extends com.censivn.C3DEngine.b.f.GridRenderable
     }
 
     private void e() {
-        this.f = (int) (this.f * com.censivn.C3DEngine.b.b.A.c);
-        this.g = (int) (this.g * com.censivn.C3DEngine.b.b.A.c);
+        this.f = (int) (this.f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+        this.g = (int) (this.g * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.h);
         textures().addElement(this.e);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a.c.FolderLabelElement.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.c.FolderLabelElement.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 e.this.a();
             }
@@ -57,7 +57,7 @@ public class FolderLabelElement extends com.censivn.C3DEngine.b.f.GridRenderable
             aVar.h(36);
             aVar.i(-1);
             Bitmap bitmapB = aVar.b(this.d);
-            Bitmap bitmapA = this.h == 0 ? x.a(this.a) : x.a(this.a, com.censivn.C3DEngine.b.b.A.a(this.h), com.censivn.C3DEngine.b.b.A.a(this.h));
+            Bitmap bitmapA = this.h == 0 ? x.a(this.a) : x.a(this.a, com.censivn.C3DEngine.b.b.ScreenConstants.a(this.h), com.censivn.C3DEngine.b.b.ScreenConstants.a(this.h));
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapB.getWidth() + bitmapA.getWidth() + this.g, this.f, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
             canvas.drawBitmap(bitmapA, 0.0f, (this.f - bitmapA.getHeight()) / 2, (Paint) null);

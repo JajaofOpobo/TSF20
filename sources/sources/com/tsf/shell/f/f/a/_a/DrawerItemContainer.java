@@ -14,10 +14,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemContainer {
-    public static final float a = com.censivn.C3DEngine.b.b.A.a(200.0f);
+    public static final float a = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
     public static int b = 0;
     public static int c = 1;
-    private com.censivn.C3DEngine.b.b.d d;
+    private com.censivn.C3DEngine.b.b.ZoomRenderer d;
     private BaseRenderable e;
     private com.censivn.C3DEngine.b.f.ButtonRenderable f;
     private com.tsf.shell.f.b.ShellKeyEventHandler g;
@@ -137,17 +137,17 @@ public class DrawerItemContainer {
         this.f.b(false);
         this.f.a(1);
         this.f.addChild(this.l);
-        this.d = new com.censivn.C3DEngine.b.b.d(this.f);
-        this.d.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E - (com.censivn.C3DEngine.b.b.A.B - this.d.position().y));
+        this.d = new com.censivn.C3DEngine.b.b.ZoomRenderer(this.f);
+        this.d.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E - (com.censivn.C3DEngine.b.b.ScreenConstants.B - this.d.position().y));
         this.g = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.5
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i2, KeyEvent keyEvent) {
                 if (i2 == 4 && !c.this.o) {
                     c.this.g();
                 }
             }
 
-            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.b.a
+            @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void b(int i2, KeyEvent keyEvent) {
             }
 
@@ -157,21 +157,21 @@ public class DrawerItemContainer {
             }
         };
         this.j = new EmptyRenderable();
-        com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(this.j) { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.6
+        com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.j) { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.6
             private boolean b = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.b = false;
                 c.this.k();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 c.this.l();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.b) {
                     c.this.a(motionEvent2);
@@ -184,8 +184,8 @@ public class DrawerItemContainer {
                 }
             }
         };
-        this.j.maxX(com.censivn.C3DEngine.b.b.A.a(150.0f));
-        this.j.minX(com.censivn.C3DEngine.b.b.A.a(-150.0f));
+        this.j.maxX(com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f));
+        this.j.minX(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
         this.j.setMouseEventListener(aVar);
         this.e.addChild(this.d);
         this.e.addChild(this.j);
@@ -215,30 +215,30 @@ public class DrawerItemContainer {
     }
 
     public void e() {
-        this.f.a((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(30.0f)), 0);
-        this.d.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E);
-        this.d.position().y = com.censivn.C3DEngine.b.b.A.B;
+        this.f.a((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f)), 0);
+        this.d.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E);
+        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B;
         i();
         this.k.a();
     }
 
     private void i() {
-        this.j.maxY(com.censivn.C3DEngine.b.b.A.B);
-        this.j.minY(com.censivn.C3DEngine.b.b.A.C);
+        this.j.maxY(com.censivn.C3DEngine.b.b.ScreenConstants.B);
+        this.j.minY(com.censivn.C3DEngine.b.b.ScreenConstants.C);
         if (this.q == b) {
-            this.j.position().x = com.censivn.C3DEngine.b.b.A.z;
+            this.j.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
         } else {
-            this.j.position().x = com.censivn.C3DEngine.b.b.A.A;
+            this.j.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j() {
         this.p = new com.tsf.shell.manager.p.GestureTipElement();
-        float fA = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         float fD = this.k.d() + fA;
-        this.p.position().y = fD - com.censivn.C3DEngine.b.b.A.a(400.0f);
-        this.p.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f) + com.censivn.C3DEngine.b.b.A.a(400.0f);
+        this.p.position().y = fD - com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f);
+        this.p.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f);
         this.p.alpha(0.0f);
         com.tsf.shell.manager.app.TaskScheduler.a(this.p);
         this.p.a(new AnonymousClass8(fA, fD), 0);
@@ -256,7 +256,7 @@ public class DrawerItemContainer {
 
         @Override // java.lang.Runnable
         public void run() {
-            c.this.p.a(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f), this.b, 600, new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.8.1
+            c.this.p.a(com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f), this.b, 600, new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.8.1
                 @Override // java.lang.Runnable
                 public void run() {
                     c.this.k();

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class TouchState {
     public float a;
     public float b;
     public float c;

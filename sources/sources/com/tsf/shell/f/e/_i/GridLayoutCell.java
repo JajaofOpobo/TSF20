@@ -9,10 +9,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GridLayoutCell extends BaseRenderable {
-    private static final int a = com.censivn.C3DEngine.b.b.A.b(120.0f);
-    private static final int b = com.censivn.C3DEngine.b.b.A.b(32.0f);
-    private static final int c = com.censivn.C3DEngine.b.b.A.b(10.0f);
-    private static final int d = com.censivn.C3DEngine.b.b.A.b(15.0f);
+    private static final int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(120.0f);
+    private static final int b = com.censivn.C3DEngine.b.b.ScreenConstants.b(32.0f);
+    private static final int c = com.censivn.C3DEngine.b.b.ScreenConstants.b(10.0f);
+    private static final int d = com.censivn.C3DEngine.b.b.ScreenConstants.b(15.0f);
     private ArrayList<a> e = new ArrayList<>();
 
     public GridLayoutCell() {

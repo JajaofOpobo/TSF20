@@ -132,8 +132,8 @@ public class ShellBridgeManager {
             com.ksmobile.launcher.a.a.b.a(false, "tsflauncher_keyboard_display", "display", "1");
         }
         int size = arrayList.size();
-        float f3 = com.censivn.C3DEngine.b.b.A.g + com.censivn.C3DEngine.b.b.A.h;
-        float f4 = com.censivn.C3DEngine.b.b.A.J;
+        float f3 = com.censivn.C3DEngine.b.b.ScreenConstants.g + com.censivn.C3DEngine.b.b.ScreenConstants.h;
+        float f4 = com.censivn.C3DEngine.b.b.ScreenConstants.J;
         float width = Home.b().getWindowManager().getDefaultDisplay().getWidth();
         float height = Home.b().getWindowManager().getDefaultDisplay().getHeight();
         if (width <= height) {
@@ -141,8 +141,8 @@ public class ShellBridgeManager {
             width = height;
         }
         com.tsf.shell.manager.o.ButtonMetrics aVar2 = com.tsf.shell.manager.o.ButtonPresetManager.a;
-        float f5 = 8.0f * com.censivn.C3DEngine.b.b.A.c;
-        float f6 = 25.0f * com.censivn.C3DEngine.b.b.A.c;
+        float f5 = 8.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        float f6 = 25.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         float f7 = size / 4.0f;
         float f8 = ((float) size) % 4.0f == 0.0f ? f7 : f7 + 1.0f;
         float f9 = size / 4.0f;
@@ -153,10 +153,10 @@ public class ShellBridgeManager {
         float f11 = (aVar2.U * f8) + ((f8 - 1.0f) * f6);
         float f12 = (aVar2.T * 4.0f) + ((4.0f - 1.0f) * f5);
         float f13 = (aVar2.U * f9) + ((f9 - 1.0f) * f6);
-        float f14 = 780.0f * com.censivn.C3DEngine.b.b.A.c;
-        float f15 = 780.0f * com.censivn.C3DEngine.b.b.A.c;
-        float f16 = 90.0f * com.censivn.C3DEngine.b.b.A.c;
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        float f14 = 780.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        float f15 = 780.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        float f16 = 90.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             f = width;
             f2 = height;
         } else {
@@ -202,8 +202,8 @@ public class ShellBridgeManager {
                 }
                 i = i2 + 1;
             } else {
-                ShellModel.a.a(a("cloud2", 0, (300.0f * com.censivn.C3DEngine.b.b.A.c) + 0.0f, (120.0f * com.censivn.C3DEngine.b.b.A.c) + f21, (300.0f * com.censivn.C3DEngine.b.b.A.c) + f22, (120.0f * com.censivn.C3DEngine.b.b.A.c) + f23, 0.8f, 0.9f), aVar, sQLiteDatabase);
-                ShellModel.a.a(a("cloud4", 0, 0.0f - (200.0f * com.censivn.C3DEngine.b.b.A.c), f21 - (250.0f * com.censivn.C3DEngine.b.b.A.c), f22 - (200.0f * com.censivn.C3DEngine.b.b.A.c), f23 - (250.0f * com.censivn.C3DEngine.b.b.A.c), 1.3f, 1.8f), aVar, sQLiteDatabase);
+                ShellModel.a.a(a("cloud2", 0, (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + 0.0f, (120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + f21, (300.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + f22, (120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + f23, 0.8f, 0.9f), aVar, sQLiteDatabase);
+                ShellModel.a.a(a("cloud4", 0, 0.0f - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), f21 - (250.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), f22 - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), f23 - (250.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), 1.3f, 1.8f), aVar, sQLiteDatabase);
                 LauncherWidget3DInfo launcherWidget3DInfo = new LauncherWidget3DInfo();
                 launcherWidget3DInfo.container = -1;
                 launcherWidget3DInfo.screen = 0;

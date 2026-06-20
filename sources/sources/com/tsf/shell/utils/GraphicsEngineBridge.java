@@ -183,7 +183,7 @@ public class GraphicsEngineBridge {
     }
 
     public static float[] a(float f, float f2) {
-        return new float[]{com.censivn.C3DEngine.b.b.A.H + f, com.censivn.C3DEngine.b.b.A.I - f2};
+        return new float[]{com.censivn.C3DEngine.b.b.ScreenConstants.H + f, com.censivn.C3DEngine.b.b.ScreenConstants.I - f2};
     }
 
     public static float[] a(MotionEvent motionEvent) {
@@ -191,7 +191,7 @@ public class GraphicsEngineBridge {
     }
 
     public static float[] b(float f, float f2) {
-        return new float[]{f - com.censivn.C3DEngine.b.b.A.H, 0.0f - (f2 - com.censivn.C3DEngine.b.b.A.I)};
+        return new float[]{f - com.censivn.C3DEngine.b.b.ScreenConstants.H, 0.0f - (f2 - com.censivn.C3DEngine.b.b.ScreenConstants.I)};
     }
 
     public static float[] a(MotionEvent motionEvent, float[] fArr) {
@@ -199,8 +199,8 @@ public class GraphicsEngineBridge {
     }
 
     public static float[] a(float f, float f2, float[] fArr) {
-        fArr[0] = f - com.censivn.C3DEngine.b.b.A.H;
-        fArr[1] = 0.0f - (f2 - com.censivn.C3DEngine.b.b.A.I);
+        fArr[0] = f - com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        fArr[1] = 0.0f - (f2 - com.censivn.C3DEngine.b.b.ScreenConstants.I);
         return fArr;
     }
 

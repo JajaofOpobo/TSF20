@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -72,8 +72,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private com.censivn.C3DEngine.b.g.TweenParams Z;
     private com.censivn.C3DEngine.b.g.TweenParams aa;
     private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper ab;
-    private com.censivn.C3DEngine.b.d.a ad;
-    private com.censivn.C3DEngine.b.d.a ae;
+    private com.censivn.C3DEngine.b.d.MouseEventListener ad;
+    private com.censivn.C3DEngine.b.d.MouseEventListener ae;
     private Runnable af;
     private float ag;
     private f ai;
@@ -151,7 +151,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.ak.a(true);
         this.an = true;
         com.tsf.shell.manager.app.AppListModel.c(this);
-        com.censivn.C3DEngine.b.c.b.a(this);
+        com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
         aP();
         aR();
         this.ai.j();
@@ -170,7 +170,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             com.tsf.shell.manager.action.GestureHandler.c();
             this.aj.c(true);
             this.ak.b(true);
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             this.an = false;
             com.tsf.shell.manager.app.AppListModel.b(this);
             aQ();
@@ -218,14 +218,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.tsf.shell.manager.app.Notifier.b(this.ao);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             ak();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -275,7 +275,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.ap = false;
     }
 
-    @Override // com.tsf.shell.f.f.WorkspacePage, com.censivn.C3DEngine.b.c.e.a
+    @Override // com.tsf.shell.f.f.WorkspacePage, com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         super.a(i, i2, i3, i4);
         ar();
@@ -288,25 +288,25 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void aT() {
-        t = (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
-        u = (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
-        r = com.tsf.shell.manager.b.ConfigManager.Q() ? (int) (150.0f * com.censivn.C3DEngine.b.b.A.c) : (int) (com.censivn.C3DEngine.b.b.A.c * 35.0f);
-        s = com.tsf.shell.manager.b.ConfigManager.R() ? com.censivn.C3DEngine.b.b.A.g + (com.censivn.C3DEngine.b.b.A.h * 1) : com.censivn.C3DEngine.b.b.A.h * 2;
-        n = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T + (10.0f * com.censivn.C3DEngine.b.b.A.c));
-        o = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (20.0f * com.censivn.C3DEngine.b.b.A.c));
-        float f = (com.censivn.C3DEngine.b.b.A.E - F) - (com.censivn.C3DEngine.b.b.A.h * 2.0f);
+        t = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.c * 35.0f);
+        u = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.c * 35.0f);
+        r = com.tsf.shell.manager.b.ConfigManager.Q() ? (int) (150.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) : (int) (com.censivn.C3DEngine.b.b.ScreenConstants.c * 35.0f);
+        s = com.tsf.shell.manager.b.ConfigManager.R() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 1) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
+        n = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T + (10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c));
+        o = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c));
+        float f = (com.censivn.C3DEngine.b.b.ScreenConstants.E - F) - (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2.0f);
         if (com.tsf.shell.manager.app.ObserverManager.c()) {
-            f -= com.censivn.C3DEngine.b.b.A.J;
+            f -= com.censivn.C3DEngine.b.b.ScreenConstants.J;
         }
-        v = f / ((com.censivn.C3DEngine.b.b.A.E - r) - s);
-        float f2 = (com.censivn.C3DEngine.b.b.A.E / 2.0f) - (((com.censivn.C3DEngine.b.b.A.E / 2.0f) - s) * v);
+        v = f / ((com.censivn.C3DEngine.b.b.ScreenConstants.E - r) - s);
+        float f2 = (com.censivn.C3DEngine.b.b.ScreenConstants.E / 2.0f) - (((com.censivn.C3DEngine.b.b.ScreenConstants.E / 2.0f) - s) * v);
         if (f2 < F) {
-            w = (F - f2) + com.censivn.C3DEngine.b.b.A.h;
+            w = (F - f2) + com.censivn.C3DEngine.b.b.ScreenConstants.h;
         } else {
-            w = com.censivn.C3DEngine.b.b.A.h;
+            w = com.censivn.C3DEngine.b.b.ScreenConstants.h;
         }
-        int i = ((((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / n) + 1;
-        int i2 = ((((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / o) + 1;
+        int i = ((((com.censivn.C3DEngine.b.b.ScreenConstants.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / n) + 1;
+        int i2 = ((((com.censivn.C3DEngine.b.b.ScreenConstants.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / o) + 1;
         if (i < 2) {
             i = 2;
         }
@@ -321,29 +321,29 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         A = i2 + 2;
         if (com.tsf.shell.manager.b.ConfigManager.W()) {
             b(B, C);
-        } else if (com.censivn.C3DEngine.b.b.A.O) {
+        } else if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             b(com.tsf.shell.manager.b.ConfigManager.T(), com.tsf.shell.manager.b.ConfigManager.S());
         } else {
             b(com.tsf.shell.manager.b.ConfigManager.V(), com.tsf.shell.manager.b.ConfigManager.U());
         }
         if (this.aq != null) {
-            this.aq.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
+            this.aq.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         }
         if (this.T != null) {
             this.T.position().x = 0.0f;
-            this.T.position().y = (com.censivn.C3DEngine.b.b.A.C + s) - com.censivn.C3DEngine.b.b.A.h;
+            this.T.position().y = (com.censivn.C3DEngine.b.b.ScreenConstants.C + s) - com.censivn.C3DEngine.b.b.ScreenConstants.h;
         }
         if (this.Y != null) {
-            this.Y.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+            this.Y.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
         }
         if (this.aj != null) {
-            this.aj.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
+            this.aj.a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
         }
         if (this.ak != null) {
-            this.ak.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
+            this.ak.a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
         }
         if (this.ai != null) {
-            this.ai.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
+            this.ai.a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
         }
         if (this.an) {
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.K);
@@ -442,16 +442,16 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void av() {
-        Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.A.a(64.0f), (int) com.censivn.C3DEngine.b.b.A.a(64.0f));
+        Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f), (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f));
         this.ar = com.censivn.C3DEngine.C3DEngine.g().a(this.ar, bitmap, true);
         bitmap.recycle();
     }
 
     private void aW() {
-        Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.A.a(64.0f), (int) com.censivn.C3DEngine.b.b.A.a(64.0f));
+        Bitmap bitmap = ThemeManager.mix.page.getTheme().getBitmap(ThemeShellDescription.PAGE_PREVIEW_DRAWER_MARK, (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f), (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f));
         this.ar = com.censivn.C3DEngine.C3DEngine.g().a(this.ar, bitmap, true);
         bitmap.recycle();
-        this.aq = com.censivn.C3DEngine.b.b.A.a(64.0f, 64.0f);
+        this.aq = com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f, 64.0f);
         this.aq.textures().addElement(this.ar);
     }
 
@@ -501,11 +501,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             }
         };
         this.T.mouseEnabled(false);
-        this.P = com.censivn.C3DEngine.b.b.A.D;
-        F = 350.0f * com.censivn.C3DEngine.b.b.A.c;
+        this.P = com.censivn.C3DEngine.b.b.ScreenConstants.D;
+        F = 350.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.Y = new BaseRenderable();
         this.Y.name(J);
-        this.ae = new com.censivn.C3DEngine.b.d.a(this.Y);
+        this.ae = new com.censivn.C3DEngine.b.d.MouseEventListener(this.Y);
         this.ad = f(this.Y);
         this.Y.setMouseEventListener(this.ad);
         this.Y.mouseEnabled(true);
@@ -869,15 +869,15 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         p = i;
         q = i2;
         m = p * q;
-        n = (((com.censivn.C3DEngine.b.b.A.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / (p - 1);
-        o = (((com.censivn.C3DEngine.b.b.A.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / (q - 1);
+        n = (((com.censivn.C3DEngine.b.b.ScreenConstants.D - t) - u) - com.tsf.shell.manager.o.ButtonPresetManager.a.T) / (p - 1);
+        o = (((com.censivn.C3DEngine.b.b.ScreenConstants.E - r) - s) - com.tsf.shell.manager.o.ButtonPresetManager.a.U) / (q - 1);
         if (E == null) {
             E = new ArrayList<>();
         } else {
             E.clear();
         }
-        float f = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) + com.censivn.C3DEngine.b.b.A.z + t;
-        float f2 = (com.censivn.C3DEngine.b.b.A.B - r) - (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f);
+        float f = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.z + t;
+        float f2 = (com.censivn.C3DEngine.b.b.ScreenConstants.B - r) - (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f);
         for (int i3 = 0; i3 < m; i3++) {
             int i4 = i3 % p;
             int i5 = i3 / p;
@@ -886,7 +886,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             number3d.y = ((-i5) * o) + f2;
             E.add(number3d);
         }
-        this.X.a(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.E, p, q, E);
+        this.X.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E, p, q, E);
     }
 
     private a bg() {
@@ -1178,8 +1178,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, VEasing.Back.easeIn, dVar);
     }
 
-    public com.censivn.C3DEngine.b.d.a f(i iVar) {
-        return new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.tsf.shell.f.f.a.FolderPage.4
+    public com.censivn.C3DEngine.b.d.MouseEventListener f(i iVar) {
+        return new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.tsf.shell.f.f.a.FolderPage.4
             private float b;
             private com.tsf.shell.f.i.PageItem d;
             private com.tsf.shell.f.i.a.PageItemDropHandler g;
@@ -1188,7 +1188,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             private boolean h = false;
             private float[] i = {0.0f, 0.0f};
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 h.this.as();
                 if (h.this.an) {
@@ -1215,7 +1215,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 h.this.as();
                 if (h.this.an) {
@@ -1229,14 +1229,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
                     h.this.ai.d((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (h.this.an) {
                     if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
@@ -1268,7 +1268,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
                     h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
@@ -1290,7 +1290,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
                     h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
@@ -1305,7 +1305,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                             }
                             h.this.ag = AnonymousClass4.this.b + (motionEvent2.getX() - motionEvent.getX());
                             if (h.this.S) {
-                                float y2 = (float) (((double) ((motionEvent2.getY() - motionEvent.getY()) / (com.censivn.C3DEngine.b.b.A.G / 2))) * 1.3d);
+                                float y2 = (float) (((double) ((motionEvent2.getY() - motionEvent.getY()) / (com.censivn.C3DEngine.b.b.ScreenConstants.G / 2))) * 1.3d);
                                 h.this.ah = (y2 <= 1.0f ? y2 < -1.0f ? -1.0f : y2 : 1.0f) * 45.0f;
                             }
                         }
@@ -1313,7 +1313,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 });
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
                 if (h.this.an) {
                 }
@@ -1331,7 +1331,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 h.this.M.n();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
                     h.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
@@ -1339,7 +1339,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 h.this.ah = 0.0f;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
                     h.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
@@ -1397,7 +1397,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 rotateAnimation.setRepeatCount(-1);
                 imageView.setAnimation(rotateAnimation);
                 rotateAnimation.startNow();
-                h.this.au.addView(imageView, new FrameLayout.LayoutParams(com.censivn.C3DEngine.b.b.A.b(80.0f), com.censivn.C3DEngine.b.b.A.b(80.0f), 17));
+                h.this.au.addView(imageView, new FrameLayout.LayoutParams(com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), 17));
                 com.tsf.shell.manager.app.TaskScheduler.a(h.this.au, new ViewGroup.LayoutParams(-1, -1));
             }
         });

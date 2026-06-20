@@ -18,13 +18,13 @@ public class FlyInTransition extends ItemPageTransition {
             float f2 = ((-f) * 0.5f) + 1.0f;
             this.a.scale().y = f2;
             number3dScale.x = f2;
-            this.a.position().x = (((com.censivn.C3DEngine.b.b.A.D / 2) * 0.5f) + ((1.5f * com.censivn.C3DEngine.b.b.A.D) / 2.0f)) * f;
+            this.a.position().x = (((com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) * 0.5f) + ((1.5f * com.censivn.C3DEngine.b.b.ScreenConstants.D) / 2.0f)) * f;
         } else {
             Number3d number3dScale2 = this.a.scale();
             float f3 = ((-f) * 1.0f) + 1.0f;
             this.a.scale().y = f3;
             number3dScale2.x = f3;
-            this.a.position().x = ((com.censivn.C3DEngine.b.b.A.D / 2) + ((com.censivn.C3DEngine.b.b.A.D * 0.0f) / 2.0f)) * f;
+            this.a.position().x = ((com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) + ((com.censivn.C3DEngine.b.b.ScreenConstants.D * 0.0f) / 2.0f)) * f;
         }
         this.a.alpha((1.0f - Math.abs(CylinderTransition)) * 255.0f);
         this.a.textures().clear();

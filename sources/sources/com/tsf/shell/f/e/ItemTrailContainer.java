@@ -91,7 +91,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable
             float f = fNumChildren <= 0.3f ? fNumChildren : 0.3f;
             float f2 = ((double) f) < 0.12d ? 0.12f : f;
             for (com.censivn.C3DEngine.b.f.IRenderable iVar2 : children()) {
-                iVar2.position().x += ((iVar.position().x + (10.0f * com.censivn.C3DEngine.b.b.A.c)) - iVar2.position().x) * f2;
+                iVar2.position().x += ((iVar.position().x + (10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c)) - iVar2.position().x) * f2;
                 PositionNumber3d positionNumber3dPosition = iVar2.position();
                 positionNumber3dPosition.y = ((iVar.position().y - iVar2.position().y) * f2) + positionNumber3dPosition.y;
                 iVar = iVar2;

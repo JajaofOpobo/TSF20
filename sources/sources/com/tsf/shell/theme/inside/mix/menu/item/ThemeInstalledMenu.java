@@ -60,7 +60,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
         this.manager = themeSettingMenu;
         this.mComparator = new ThemePriorityComparator();
         this.mSelectPlane = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
-        this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.A.c;
+        this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.mSelectPlane.useVBO(false);
         this.mSelectPlane.textures().addElement(this.mSelectTE);
         this.mDetailMenu = new ThemeInstalledDetailMenu();
@@ -85,7 +85,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
             }
         };
         ThemeManager.getInstance().addListener(this.mThemeListener);
-        this.mGridView = new h(com.censivn.C3DEngine.b.b.A.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
+        this.mGridView = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
         this.mGridView.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.2
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -226,9 +226,9 @@ public class ThemeInstalledMenu extends MenuActionItem {
 
         public a() {
             this.a.calAABB();
-            this.a.position().y = 10.0f * com.censivn.C3DEngine.b.b.A.c;
+            this.a.position().y = 10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
             addChild(this.a);
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this));
         }
 
         @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane, com.censivn.C3DEngine.b.f.BaseRenderable

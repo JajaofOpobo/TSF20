@@ -79,7 +79,7 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
     private void d() {
         this.k = new com.censivn.C3DEngine.b.f.LabelRenderable();
         this.k.d(38);
-        this.k.position().y = com.censivn.C3DEngine.b.b.A.a(145.0f);
+        this.k.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(145.0f);
         this.i = new ArrayList<>();
         float f = 0.0f;
         float fMaxY = 0.0f;
@@ -87,10 +87,10 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
         while (i < this.h.a()) {
             final com.tsf.shell.f.g.a.GestureMenuRenderer hVar = new com.tsf.shell.f.g.a.GestureMenuRenderer(1.0f);
             hVar.e.scale().setAll(0.8f, 0.8f, 1.0f);
-            hVar.e.position().y = com.censivn.C3DEngine.b.b.A.a(20.0f);
+            hVar.e.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
             com.tsf.shell.manager.o.ThemeColorConstants.a(hVar, com.tsf.shell.manager.o.ThemeColorConstants.h);
-            com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(hVar) { // from class: com.tsf.shell.f.f.a._c.DrawerMultiWidgetPage.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(hVar) { // from class: com.tsf.shell.f.f.a._c.DrawerMultiWidgetPage.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (com.tsf.shell.manager.app.StateHub.t().aL()) {
                         m.this.h.b(m.this.h.a(DrawerPageItemBase).k());
@@ -113,7 +113,7 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
             f = fMaxX;
         }
         this.l = fMaxY;
-        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.A.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.A.c, 40.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.ScreenConstants.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.g.d();
         this.g.d();
         addChild(this.g);

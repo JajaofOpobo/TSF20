@@ -9,8 +9,8 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PrimeEffectRenderer {
-    public static final int a = com.censivn.C3DEngine.b.b.A.b(122.0f);
-    public static final int b = com.censivn.C3DEngine.b.b.A.b(34.0f);
+    public static final int a = com.censivn.C3DEngine.b.b.ScreenConstants.b(122.0f);
+    public static final int b = com.censivn.C3DEngine.b.b.ScreenConstants.b(34.0f);
     private static TextureElement c = new TextureElement(0, false);
     private static k d = b();
 

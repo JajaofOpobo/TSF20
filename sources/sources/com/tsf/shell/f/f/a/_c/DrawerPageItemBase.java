@@ -34,8 +34,8 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         if (this.e == null) {
             this.e = DrawerLabelConfig.a();
             this.e.textures().addElement(this.g);
-            com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (i.this.h) {
                         if (i.this.j != null) {

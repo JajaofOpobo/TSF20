@@ -1,7 +1,7 @@
 package com.tsf.shell.theme.inside.mix.menu.item.detail;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.d.a;
+import com.censivn.C3DEngine.b.d.MouseEventListener;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.LabelRenderable;
@@ -37,7 +37,7 @@ public class ThemeMoreInfoLayout extends BaseRenderable {
         this.mLinkView.d(40);
         this.mLinkView.g(700);
         this.mLinkView.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.1
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 String strC;
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null && (strC = ThemeMoreInfoLayout.this.mLinkView.c()) != null && !strC.equals("")) {
@@ -49,7 +49,7 @@ public class ThemeMoreInfoLayout extends BaseRenderable {
         this.mCheckUpdate.d(45);
         this.mCheckUpdate.c(DrawerShortcutItemBase.i.text_check_for_update);
         this.mCheckUpdate.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.2
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null) {
                     MarketLinkHandler.a(Home.b(), ThemeMoreInfoLayout.this.mThemeInfo.packagename);
@@ -60,7 +60,7 @@ public class ThemeMoreInfoLayout extends BaseRenderable {
         this.mUninstall.d(45);
         this.mUninstall.c(DrawerShortcutItemBase.i.text_uninstall);
         this.mUninstall.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.3
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (ThemeMoreInfoLayout.this.mThemeInfo != null) {
                     com.tsf.shell.utils.PackageManagerHelper.a(ThemeMoreInfoLayout.this.mThemeInfo.packagename);
@@ -90,17 +90,17 @@ public class ThemeMoreInfoLayout extends BaseRenderable {
         float[] fArr;
         if (this.mThemeInfo.packagename.equals(com.censivn.C3DEngine.a.GestureDetector())) {
             this.mUninstall.visible(false);
-            fArr = new float[]{com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(-10.0f), com.censivn.C3DEngine.b.b.A.a(-70.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f), com.censivn.C3DEngine.b.b.A.a(-250.0f)};
+            fArr = new float[]{com.censivn.C3DEngine.b.b.ScreenConstants.a(170.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-10.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-250.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-250.0f)};
         } else {
             this.mUninstall.visible(true);
-            fArr = new float[]{com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(-10.0f), com.censivn.C3DEngine.b.b.A.a(-70.0f), com.censivn.C3DEngine.b.b.A.a(-200.0f), com.censivn.C3DEngine.b.b.A.a(-300.0f)};
+            fArr = new float[]{com.censivn.C3DEngine.b.b.ScreenConstants.a(170.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-10.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-200.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(-300.0f)};
         }
         i[] iVarArr = {this.mIcon, this.mTitleView, this.mAuthorView, this.mLinkView, this.mCheckUpdate, this.mUninstall};
         for (int i = 0; i < fArr.length; i++) {
             float f = fArr[i];
             i iVar = iVarArr[i];
             iVar.alpha(0.0f);
-            iVar.position().y = f - com.censivn.C3DEngine.b.b.A.a(150.0f);
+            iVar.position().y = f - com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
             d dVar = new d();
             dVar.h(f);
             dVar.a(com.censivn.C3DEngine.b.g.a.e);

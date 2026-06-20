@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends BaseRenderable {
+public class ZoomRenderer extends BaseRenderable {
     private IRenderable b;
     private float e;
     private float g;
@@ -17,61 +17,61 @@ public class d extends BaseRenderable {
     private float d = 0.0f;
     private float f = 0.0f;
 
-    public d(IRenderable iVar) {
+    public ZoomRenderer(IRenderable iVar) {
         a(iVar);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.d.1
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.b.ZoomRenderer.1
             float a;
-            private com.censivn.C3DEngine.b.d.a d;
+            private com.censivn.C3DEngine.b.d.MouseEventListener d;
             private boolean e = false;
             private boolean f = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                d.this.a = 0.3f;
+                ZoomRenderer.this.a = 0.3f;
                 float[] fArrA = x.a(motionEvent);
-                IRenderable hittingTarget = d.this.b.getHittingTarget(fArrA[0], fArrA[1], false);
+                IRenderable hittingTarget = ZoomRenderer.this.b.getHittingTarget(fArrA[0], fArrA[1], false);
                 if (hittingTarget != null && hittingTarget.getMouseEventListener() != null) {
                     this.d = hittingTarget.getMouseEventListener();
                     this.d.e(motionEvent);
                 }
-                d dVar = d.this;
-                float f = d.this.b.position().y;
+                ZoomRenderer dVar = ZoomRenderer.this;
+                float f = ZoomRenderer.this.b.position().y;
                 this.a = f;
                 dVar.f = f;
-                d.this.b.setAnimationObjectState(true);
+                ZoomRenderer.this.b.setAnimationObjectState(true);
                 this.f = false;
                 this.e = true;
-                d.this.c = true;
+                ZoomRenderer.this.c = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 this.e = true;
                 this.f = false;
-                d.this.c = false;
+                ZoomRenderer.this.c = false;
                 if (this.d != null) {
                     this.d.f(motionEvent);
                     this.d = null;
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.d != null) {
                     this.d.a(motionEvent, motionEvent2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.d != null) {
                     this.d.a(motionEvent);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                d.this.a = 0.3f;
+                ZoomRenderer.this.a = 0.3f;
                 if (this.e) {
                     this.e = false;
                     if (Math.abs(f2) > Math.abs(f)) {
@@ -79,8 +79,8 @@ public class d extends BaseRenderable {
                     }
                 }
                 if (this.f) {
-                    d.this.f = this.a + (motionEvent.getY() - motionEvent2.getY());
-                    d.this.f = com.tsf.shell.f.e.c.a(d.this.f, d.this.e, d.this.d);
+                    ZoomRenderer.this.f = this.a + (motionEvent.getY() - motionEvent2.getY());
+                    ZoomRenderer.this.f = com.tsf.shell.f.e.c.a(ZoomRenderer.this.f, ZoomRenderer.this.e, ZoomRenderer.this.d);
                     return;
                 }
                 if (this.d != null) {
@@ -88,18 +88,18 @@ public class d extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
-                d.this.a = 0.1f;
+                ZoomRenderer.this.a = 0.1f;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                d.this.a = 0.1f;
+                ZoomRenderer.this.a = 0.1f;
                 if (this.f) {
-                    d.this.f = com.tsf.shell.f.e.c.b(d.this.f, f2);
+                    ZoomRenderer.this.f = com.tsf.shell.f.e.c.b(ZoomRenderer.this.f, f2);
                 } else {
-                    d.this.a = 0.1f;
+                    ZoomRenderer.this.a = 0.1f;
                 }
             }
         });

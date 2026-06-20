@@ -11,6 +11,6 @@ public class RollTransition extends ItemPageTransition {
     @Override // com.tsf.shell.f.f.PageTransitionEffect
     public void a(com.tsf.shell.f.f.WorkspacePage gVar, float f) {
         gVar.rotation().z = (-f) * 180.0f;
-        gVar.position().x = ((com.censivn.C3DEngine.b.b.A.D * f) * 3.0f) / 2.0f;
+        gVar.position().x = ((com.censivn.C3DEngine.b.b.ScreenConstants.D * f) * 3.0f) / 2.0f;
     }
 }

@@ -277,7 +277,7 @@ public final class e extends cd {
         if (!this.D) {
             int abs = (int) Math.abs(motionEvent2.getX() - motionEvent.getX());
             int abs2 = (int) Math.abs(motionEvent2.getY() - motionEvent.getY());
-            if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.b) {
+            if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.TouchState) {
                 if (abs > abs2) {
                     this.E = true;
                 } else {

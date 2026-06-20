@@ -22,8 +22,8 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     private boolean isShowingMoreLayout;
     private ToggleRowItem mApplyButton;
     private BaseRenderable mContainer;
-    private com.censivn.C3DEngine.b.b.A.b mContentContainer;
-    private com.censivn.C3DEngine.b.b.A.d mDetailContainer;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.b mContentContainer;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.d mDetailContainer;
     private ThemeIconInfoLayout mIconLayout;
     private a mKeyListener;
     private BaseRenderable mMainContainer;
@@ -37,34 +37,34 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     private ThemeListsManager.ThemeInfo mThemeInfo;
     private ThemeWallpaperInfoLayout mWallpaperLayout;
 
-    class a implements com.censivn.C3DEngine.b.c.b.a {
+    class a implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
         a() {
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4) {
                 ThemeInstalledDetailMenu.this.mDetailContainer.g();
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.c.b.a
+        @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void b(int i, KeyEvent keyEvent) {
         }
     }
 
     public ThemeInstalledDetailMenu() {
-        this.mOtherContainer.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
+        this.mOtherContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-223.0f);
         this.mNoticTextView = new LabelRenderable();
         this.mNoticTextView.c(b.i.notic_theme_compatible);
         this.mNoticTextView.d(30);
         this.mNoticTextView.visible(false);
         this.mNoticTextView.a(true);
-        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(750.0f));
+        setMenuHeight(com.censivn.C3DEngine.b.b.ScreenConstants.a(750.0f));
         this.mKeyListener = new a();
         this.mMainContainer = new BaseRenderable();
-        this.mRingIcon = new com.censivn.C3DEngine.b.h.d.ProgressBarWidget(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
-        this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
+        this.mRingIcon = new com.censivn.C3DEngine.b.h.d.ProgressBarWidget(com.censivn.C3DEngine.b.b.ScreenConstants.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.ScreenConstants.a(74.0f));
+        this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.a(130.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(130.0f));
         this.mRingIcon.a(b.d.ico_info);
         this.mShortcut = new DrawerItemButton(com.tsf.shell.manager.o.ButtonPresetManager.c);
         this.mShortcut.k.a(0).m.y = 0.0f;
@@ -79,11 +79,11 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
             }
         };
         ThemeColorConstants.a(this.mApplyButton, ThemeColorConstants.h);
-        this.mNoticTextView.position().y = com.censivn.C3DEngine.b.b.A.a(45.0f);
+        this.mNoticTextView.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f);
         this.mNoticTextView.b(0);
         this.mApplyButton.a(0);
-        this.mContentContainer = new com.censivn.C3DEngine.b.b.A.b();
-        this.mContentContainer.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.A.a(750.0f));
+        this.mContentContainer = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
+        this.mContentContainer.setAABBPX(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(750.0f));
         this.mPreviewLayout = new ThemePreviewInfoLayout();
         this.mIconLayout = new ThemeIconInfoLayout();
         this.mMoreInfoLayout = new ThemeMoreInfoLayout();
@@ -93,8 +93,8 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
         this.mContentContainer.addChild(this.mIconLayout);
         this.mContentContainer.addChild(this.mWallpaperLayout);
         this.mContentContainer.addChild(this.mThemeElementLayout);
-        this.mDetailContainer = new com.censivn.C3DEngine.b.b.A.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.2
-            @Override // com.censivn.C3DEngine.b.b.A.d
+        this.mDetailContainer = new com.censivn.C3DEngine.b.b.ScreenConstants.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.2
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void a(int i, float f) {
                 if (f > 1.0f) {
                     f = 1.0f;
@@ -102,20 +102,20 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
                 ThemeInstalledDetailMenu.this.mRingIcon.a(f);
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void d(int i) {
-                com.censivn.C3DEngine.b.c.b.a(ThemeInstalledDetailMenu.this.mKeyListener);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(ThemeInstalledDetailMenu.this.mKeyListener);
                 ThemeInstalledDetailMenu.this.enterMoreLayout();
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void e(int i) {
-                com.censivn.C3DEngine.b.c.b.b(ThemeInstalledDetailMenu.this.mKeyListener);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.b(ThemeInstalledDetailMenu.this.mKeyListener);
                 ThemeInstalledDetailMenu.this.exitMoreLayout();
             }
         };
         this.mDetailContainer.c(this.mContentContainer);
-        this.mDetailContainer.position().y = com.censivn.C3DEngine.b.b.A.a(100.0f);
+        this.mDetailContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
         this.mContainer.addChild(this.mDetailContainer);
         this.mContainer.addChild(this.mOtherContainer);
         this.mOtherContainer.addChild(this.mApplyButton);
@@ -142,7 +142,7 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     public void exitMoreLayout() {
         this.isShowingMoreLayout = false;
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.f(com.censivn.C3DEngine.b.b.A.a(0.0f));
+        dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f));
         dVar.a(255);
         dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.mOtherContainer);
@@ -169,12 +169,12 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
         if (themeInfo.isSupport30) {
             this.mNoticTextView.visible(false);
             this.mContentContainer.position().y = 0.0f;
-            this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.A.a(0.0f);
+            this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
             return;
         }
-        this.mContentContainer.position().y = com.censivn.C3DEngine.b.b.A.a(38.0f);
-        this.mNoticTextView.position().y = com.censivn.C3DEngine.b.b.A.a(80.0f);
-        this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.A.a(-30.0f);
+        this.mContentContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(38.0f);
+        this.mNoticTextView.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
+        this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-30.0f);
         this.mNoticTextView.visible(true);
     }
 
@@ -189,10 +189,10 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onLayout(float f, float f2, float f3, float f4) {
-        this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(50.0f)));
-        this.mDetailContainer.setAABBPX(0.0f, (-getMenuHeight()) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, getMenuHeight() / 2.0f, 0.0f);
+        this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f)));
+        this.mDetailContainer.setAABBPX(0.0f, (-getMenuHeight()) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.D, getMenuHeight() / 2.0f, 0.0f);
         this.mDetailContainer.k();
-        this.mDetailContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.mDetailContainer.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
         this.mDetailContainer.a(f, f2, f3, f4);
         super.onLayout(f, f2, f3, f4);
     }
@@ -200,11 +200,11 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     @Override // com.tsf.shell.f.e._g.a.MenuItemConfig, com.tsf.shell.f.e._g.a.MenuItemBase
     public void onShow() {
         super.onShow();
-        this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(50.0f)));
-        this.mDetailContainer.setAABBPX(0.0f, (-getMenuHeight()) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, getMenuHeight() / 2.0f, 0.0f);
-        this.mMoreInfoLayout.setAABBPX(com.censivn.C3DEngine.b.b.A.D, getMenuHeight());
+        this.mNoticTextView.f((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f)));
+        this.mDetailContainer.setAABBPX(0.0f, (-getMenuHeight()) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.D, getMenuHeight() / 2.0f, 0.0f);
+        this.mMoreInfoLayout.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.D, getMenuHeight());
         this.mDetailContainer.k();
-        this.mDetailContainer.position().x = com.censivn.C3DEngine.b.b.A.z;
+        this.mDetailContainer.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase

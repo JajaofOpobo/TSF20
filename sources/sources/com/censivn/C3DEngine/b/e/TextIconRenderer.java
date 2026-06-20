@@ -11,7 +11,7 @@ import com.tsf.shell.utils.BitmapTransformationHelper;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends f {
+public class TextIconRenderer extends AbstractPanelRenderer {
     private com.censivn.C3DEngine.b.f.BaseRenderable b;
     private LabelRenderable d;
     private LabelRenderable e;
@@ -43,7 +43,7 @@ public class h extends f {
         }
     }
 
-    public h() {
+    public TextIconRenderer() {
         m();
     }
 
@@ -51,7 +51,7 @@ public class h extends f {
         this.s = aVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         if (this.t) {
             f(this.o);
@@ -64,7 +64,7 @@ public class h extends f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         com.censivn.C3DEngine.C3DEngine.g().a(this.l);
         this.d.a();
@@ -74,7 +74,7 @@ public class h extends f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void i() {
         super.i();
         this.k.visible(false);
@@ -85,7 +85,7 @@ public class h extends f {
         this.j.alpha(100.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.f
+    @Override // com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void j() {
         super.j();
         this.k.visible(true);
@@ -110,44 +110,44 @@ public class h extends f {
         this.e.d(50);
         this.e.b();
         this.b.addChild(this.e);
-        com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
-        bVar.a = com.censivn.C3DEngine.b.b.A.a(15.0f);
+        com.censivn.C3DEngine.b.b.TouchState bVar = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(15.0f);
         bVar.i = this.e.minY();
         bVar.k = this.e.maxY();
         this.b.setLayoutParams(bVar);
         addChild(this.b);
         this.j = new com.censivn.C3DEngine.b.f.BaseRenderable();
-        this.g = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
+        this.g = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f), false);
         this.g.setDefaultColor(new Color4(255, 255, 255, VEasing.Back.easeIn));
-        this.h = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
+        this.h = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f), false);
         this.h.setDefaultColor(new Color4(255, 255, 255, 100));
         this.j.addChild(this.g);
         this.j.addChild(this.h);
-        com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
-        bVar2.a = com.censivn.C3DEngine.b.b.A.a(70.0f);
-        bVar2.b = com.censivn.C3DEngine.b.b.A.a(60.0f);
-        bVar2.i = (-com.censivn.C3DEngine.b.b.A.a(10.0f)) / 2.0f;
-        bVar2.k = com.censivn.C3DEngine.b.b.A.a(10.0f) / 2.0f;
+        com.censivn.C3DEngine.b.b.TouchState bVar2 = new com.censivn.C3DEngine.b.b.TouchState();
+        bVar2.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f);
+        bVar2.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f);
+        bVar2.i = (-com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f)) / 2.0f;
+        bVar2.k = com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f) / 2.0f;
         this.j.setLayoutParams(bVar2);
-        this.k = com.censivn.C3DEngine.b.b.A.a(60.0f, 60.0f);
+        this.k = com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f, 60.0f);
         this.k.calAABB(2.0f, 2.0f, 2.0f);
         this.l = new TextureElement(0, false);
         this.k.textures().addElement(this.l);
-        this.k.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.k) { // from class: com.censivn.C3DEngine.b.e.h.1
+        this.k.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.k) { // from class: com.censivn.C3DEngine.b.e.TextIconRenderer.1
             private float b;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.b = h.this.q;
                 h.this.k.setAnimationObjectState(true);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 h.this.a = 0.1f;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 h.this.u = true;
                 h.this.a = 0.3f;
@@ -183,7 +183,7 @@ public class h extends f {
             this.f.a(true);
             this.f.a(1);
             this.f.b(1);
-            this.f.setLayoutParams(new com.censivn.C3DEngine.b.b.b());
+            this.f.setLayoutParams(new com.censivn.C3DEngine.b.b.TouchState());
             this.f.d(38);
             this.f.position().x = (-a()) / 2.0f;
             this.f.e(-5592406);
@@ -197,7 +197,7 @@ public class h extends f {
     private void n() {
         if (this.f != null) {
             this.f.b();
-            com.censivn.C3DEngine.b.b.b layoutParams = this.f.getLayoutParams();
+            com.censivn.C3DEngine.b.b.TouchState layoutParams = this.f.getLayoutParams();
             layoutParams.h = this.f.minX();
             layoutParams.j = this.f.maxX();
             layoutParams.i = this.f.minY();
@@ -213,7 +213,7 @@ public class h extends f {
         this.v = f / 2.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c
+    @Override // com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         int i2 = (int) (i - (this.v * 2.0f));
         if (this.d != null) {

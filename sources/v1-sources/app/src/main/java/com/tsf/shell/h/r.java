@@ -157,7 +157,7 @@ public final class r extends ViewGroup {
                 float y2 = motionEvent.getY();
                 int abs = (int) Math.abs(x2 - this.b);
                 int abs2 = (int) Math.abs(y2 - this.c);
-                if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.b) {
+                if ((abs * abs) + (abs2 * abs2) > com.censivn.C3DEngine.b.b.TouchState) {
                     z2 = abs > abs2;
                     z = true;
                 } else {

@@ -14,13 +14,13 @@ public class TouchDispatcher extends GestureDetector.DefaultOnGestureListener {
     private static boolean p = false;
     private GLSurfaceView a;
     private GestureDetector b;
-    private com.censivn.C3DEngine.b.d.a c;
-    private com.censivn.C3DEngine.b.d.a d;
+    private com.censivn.C3DEngine.b.d.MouseEventListener c;
+    private com.censivn.C3DEngine.b.d.MouseEventListener d;
     private com.tsf.shell.f.i.a.WallpaperTouchHandler e;
     private MotionEvent f;
     private MotionEvent g;
     private View.OnTouchListener j;
-    private com.censivn.C3DEngine.b.d.a n;
+    private com.censivn.C3DEngine.b.d.MouseEventListener n;
     private boolean i = false;
     private boolean k = false;
     private boolean l = true;
@@ -120,7 +120,7 @@ public class TouchDispatcher extends GestureDetector.DefaultOnGestureListener {
         return h;
     }
 
-    public void a(com.censivn.C3DEngine.b.d.a aVar) {
+    public void a(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
         a(aVar, false);
     }
 
@@ -142,7 +142,7 @@ public class TouchDispatcher extends GestureDetector.DefaultOnGestureListener {
         this.g = MotionEvent.obtain(motionEvent);
     }
 
-    public void a(com.censivn.C3DEngine.b.d.a aVar, boolean z) {
+    public void a(com.censivn.C3DEngine.b.d.MouseEventListener aVar, boolean z) {
         if (!this.i || z) {
             if (aVar == null) {
                 this.d = this.e;
@@ -174,7 +174,7 @@ public class TouchDispatcher extends GestureDetector.DefaultOnGestureListener {
         return this.g;
     }
 
-    public com.censivn.C3DEngine.b.d.a h() {
+    public com.censivn.C3DEngine.b.d.MouseEventListener h() {
         return this.c;
     }
 

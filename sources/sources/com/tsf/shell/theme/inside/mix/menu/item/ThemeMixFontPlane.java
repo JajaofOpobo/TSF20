@@ -2,14 +2,14 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.fontspicker.FontsPickerActivity;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeMixFontPlane extends ThemeMenuMixElementPlane implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class ThemeMixFontPlane extends ThemeMenuMixElementPlane implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeMenuMixElementPlane
     public Bitmap getPreviewBitmap() {
         return x.a(b.d.theme_font);
@@ -32,12 +32,12 @@ public class ThemeMixFontPlane extends ThemeMenuMixElementPlane implements com.c
             public void run() {
                 Intent intent = new Intent();
                 intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), FontsPickerActivity.class);
-                Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) ThemeMixFontPlane.this);
+                Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) ThemeMixFontPlane.this);
             }
         });
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i2 == -1) {
             Home.b().c();

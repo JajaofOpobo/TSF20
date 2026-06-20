@@ -15,7 +15,7 @@ public class GlobalServiceLocator {
     public static c C;
     public static com.tsf.shell.manager.j.RateDialogController D;
     public static e a;
-    public static com.censivn.C3DEngine.b.c.e b;
+    public static com.censivn.C3DEngine.b.c.WindowManager b;
     public static com.tsf.shell.manager.f.LauncherInitController c;
     public static b d;
     public static com.tsf.shell.manager.f.WorkspaceScene e;
@@ -32,7 +32,7 @@ public class GlobalServiceLocator {
     public static com.tsf.shell.f.e.e.ItemAnimationController StubPlaceholder;
     public static com.tsf.shell.manager.n.ToastOverlayController q;
     public static com.tsf.shell.manager.q.UnreadBadgeManager r;
-    public static com.censivn.C3DEngine.b.c.d s;
+    public static com.censivn.C3DEngine.b.c.AnimationListener s;
     public static com.tsf.shell.f.a.a.GlTexturePool t;
     public static com.tsf.shell.f.a.b.ShaderSlotManager u;
     public static com.tsf.shell.f._d.DashPanelController v;

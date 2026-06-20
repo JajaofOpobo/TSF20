@@ -171,7 +171,7 @@ public class DrawerAnimParamCenter extends DrawerAnimParamBase {
         float f5 = (f - f2) - f3;
         float f6 = f5 / fA;
         float f7 = f6 > 1.0f ? 1.0f : f6;
-        if (96.0f * com.censivn.C3DEngine.b.b.A.b * f7 < com.tsf.shell.f.c.a.DrawerContentPanel.d * 0.75f) {
+        if (96.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b * f7 < com.tsf.shell.f.c.a.DrawerContentPanel.d * 0.75f) {
             this.d = true;
         } else {
             this.d = false;
@@ -250,12 +250,12 @@ public class DrawerAnimParamCenter extends DrawerAnimParamBase {
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3) {
-        iVar.setAABBPX(-2.1474836E9f, (-f3) + f2, 0.0f, com.censivn.C3DEngine.b.b.A.b * 83.0f, 0.0f - f, 0.0f);
+        iVar.setAABBPX(-2.1474836E9f, (-f3) + f2, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 83.0f, 0.0f - f, 0.0f);
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public float a(float f, float f2) {
-        return ((com.censivn.C3DEngine.b.b.A.E / 2) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + f2;
+        return ((com.censivn.C3DEngine.b.b.ScreenConstants.E / 2) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + f2;
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
@@ -272,7 +272,7 @@ public class DrawerAnimParamCenter extends DrawerAnimParamBase {
     public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3, float f4) {
         float fAsin;
         DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
-        if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
+        if ((com.censivn.C3DEngine.b.b.ScreenConstants.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {
             fAsin = 180.0f;
         } else {
             fAsin = ((float) (Math.asin(r0 / f) / 0.017453292519943295d)) + 90.0f;

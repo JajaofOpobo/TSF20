@@ -32,7 +32,7 @@ public class DrawerItemGather extends DrawerItemAction {
     public DrawerItemGather(LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z, int i) {
         super(launcherShortcut3DInfo, aVar, z);
         this.t = i;
-        int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.A.c * aE().A);
+        int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * aE().A);
         if (a == null) {
             a = new GridRenderable(i2, i2, false) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.1
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
@@ -134,12 +134,12 @@ public class DrawerItemGather extends DrawerItemAction {
             this.j = bVar;
         }
 
-        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
             com.tsf.shell.manager.app.FolderManager.a(c.this.t);
         }
 
-        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
             this.k = false;
             this.h = motionEvent.getX();
@@ -148,7 +148,7 @@ public class DrawerItemGather extends DrawerItemAction {
             com.tsf.shell.manager.action.GestureHandler.a();
         }
 
-        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.k) {
                 com.tsf.shell.manager.app.StateHub.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
@@ -159,7 +159,7 @@ public class DrawerItemGather extends DrawerItemAction {
             this.k = true;
         }
 
-        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.a
+        @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             if (this.k) {
                 com.tsf.shell.manager.app.StateHub.x();

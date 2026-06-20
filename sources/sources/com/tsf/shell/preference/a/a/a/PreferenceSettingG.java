@@ -14,25 +14,25 @@ public class PreferenceSettingG extends PreferenceSettingBase {
     private LabelRenderable g;
 
     public PreferenceSettingG(String str) {
-        super(str, com.censivn.C3DEngine.b.b.A.a(400.0f));
+        super(str, com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f));
         this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
         PreferenceSettingG().addChild(this.a);
         this.b = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
-        this.e = com.censivn.C3DEngine.b.b.A.a(40.0f);
+        this.e = com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
         this.d = (this.b * 5.0f) + (this.e * 4.0f);
-        this.a.position().x = ((-this.d) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f);
-        this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(140.0f);
+        this.a.position().x = ((-this.d) / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
+        this.a.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(140.0f);
         this.f = new ArrayList<>();
         this.g = new LabelRenderable();
         this.g.c(PreferenceSettingB.i.notic_mark_introduction);
         this.g.d(34);
         this.g.a(true);
-        this.g.position().y = com.censivn.C3DEngine.b.b.A.a(200.0f);
+        this.g.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.g, com.tsf.shell.manager.o.ThemeColorConstants.n);
         PreferenceSettingG().addChild(this.g);
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         int i = 0;
         super.f();
@@ -63,16 +63,16 @@ public class PreferenceSettingG extends PreferenceSettingBase {
     }
 
     private void h() {
-        this.g.f((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(150.0f)));
+        this.g.f((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f)));
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.c
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.b.DesktopRenderer
     public void c(int i) {
         super.c(i);
         PreferenceSettingG();
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         super.g();
         this.g.a();

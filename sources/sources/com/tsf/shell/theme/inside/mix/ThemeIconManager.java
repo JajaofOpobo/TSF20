@@ -2,7 +2,7 @@ package com.tsf.shell.theme.inside.mix;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.themepicker.theme.ThemePickerActivity;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -13,7 +13,7 @@ import com.tsf.shell.theme.inside.parser.ThemeParser;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeIconManager extends ThemeMixElementManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class ThemeIconManager extends ThemeMixElementManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     private ThemeIconDescription mIconDescription;
     private int mPickerActivityResultId;
 
@@ -106,10 +106,10 @@ public class ThemeIconManager extends ThemeMixElementManager implements com.cens
     public void startIconPackagePicker() {
         Intent intent = new Intent();
         intent.setClass(com.censivn.C3DEngine.C3DEngine.d(), ThemePickerActivity.class);
-        this.mPickerActivityResultId = Home.b().a(intent, (com.censivn.C3DEngine.b.c.a.InterfaceC0025a) this);
+        this.mPickerActivityResultId = Home.b().a(intent, (com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a) this);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i2 == -1 && i == this.mPickerActivityResultId) {
             String stringExtra = intent.getStringExtra(ThemePickerActivity.s);

@@ -20,13 +20,13 @@ public class SceneNodeAnimator extends BaseRenderable {
         this.a.calAABB();
         this.b = new LabelRenderable();
         this.b.d(32);
-        this.b.position().y = com.censivn.C3DEngine.b.b.A.a(-120.0f);
+        this.b.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-120.0f);
         this.b.g(170);
         addChild(this.a);
         addChild(this.b);
         SceneNodeAnimator();
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (b.this.c != null) {
                     com.tsf.shell.manager.app.ServiceFactory.a().v().a(b.this);
@@ -48,7 +48,7 @@ public class SceneNodeAnimator extends BaseRenderable {
     }
 
     public void d() {
-        setAABBPX(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(250.0f));
+        setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(250.0f));
         if (parent() != null) {
             ((j) parent()).onChildMeasure(this);
         }

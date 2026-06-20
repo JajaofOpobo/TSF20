@@ -15,8 +15,8 @@ public class GridLayoutStrategy extends BaseRenderable {
     private c g;
     private c h;
     private int i;
-    private GridRenderable b = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false);
-    public GridRenderable a = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false) { // from class: com.tsf.shell.f.e._i.GridLayoutStrategy.1
+    private GridRenderable b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f), false);
+    public GridRenderable a = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f), false) { // from class: com.tsf.shell.f.e._i.GridLayoutStrategy.1
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (a.d.id == 0) {

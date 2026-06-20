@@ -11,15 +11,15 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MenuExpandItem extends BaseRenderable {
     private static com.tsf.shell.manager.o._a.TextConfigV2 e;
-    private static final float g = 24.0f * com.censivn.C3DEngine.b.b.A.c;
+    private static final float g = 24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     private GridRenderable a;
     private String b;
     private TextureElement d;
     private com.tsf.shell.f.e.CircleDotNode f;
     private int h;
     private boolean c = false;
-    private int i = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
-    private int j = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
+    private int i = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
+    private int j = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
 
     public MenuExpandItem(int i) {
         this.h = 0;
@@ -96,7 +96,7 @@ public class MenuExpandItem extends BaseRenderable {
 
     public void i() {
         if (this.d.id == 0) {
-            int i = (int) (80.0f * com.censivn.C3DEngine.b.b.A.c);
+            int i = (int) (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             Bitmap bitmapB = e.b(this.b);
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.h == 0 ? (int) ((g * 2.0f) + bitmapB.getWidth()) : (int) ((g * 2.0f) + this.j + bitmapB.getWidth() + this.i), i, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
@@ -115,8 +115,8 @@ public class MenuExpandItem extends BaseRenderable {
             this.a.b(this.d.height);
             calAABB(1.0f, 2.0f, 1.0f);
             if (this.f != null) {
-                this.f.position().y = com.censivn.C3DEngine.b.b.A.a(17.0f);
-                this.f.position().x = (this.d.width / 2) - com.censivn.C3DEngine.b.b.A.a(10.0f);
+                this.f.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(17.0f);
+                this.f.position().x = (this.d.width / 2) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
             }
         }
     }

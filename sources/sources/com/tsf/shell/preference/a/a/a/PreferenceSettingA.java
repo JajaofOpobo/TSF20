@@ -26,8 +26,8 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         private float e;
 
         public C0162a(String str) {
-            super(com.censivn.C3DEngine.b.b.A.a(167.0f), com.censivn.C3DEngine.b.b.A.a(164.0f), false);
-            this.e = ((-com.censivn.C3DEngine.b.b.A.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(20.0f);
+            super(com.censivn.C3DEngine.b.b.ScreenConstants.a(167.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(164.0f), false);
+            this.e = ((-com.censivn.C3DEngine.b.b.ScreenConstants.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
             textures().addElement(a.this.f);
             this.d = new LabelRenderable();
             this.d.d(30);
@@ -71,15 +71,15 @@ public class PreferenceSettingA extends PreferenceSettingBase {
     }
 
     public PreferenceSettingA(String str) {
-        super(str, com.censivn.C3DEngine.b.b.A.a(175.0f));
+        super(str, com.censivn.C3DEngine.b.b.ScreenConstants.a(175.0f));
         this.a = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
         this.j = false;
         this.d = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.e = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(12, 100, 300, VEasing.Linear.easeNone);
-        int iA = (int) com.censivn.C3DEngine.b.b.A.a(100.0f);
-        int iA2 = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
+        int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
+        int iA2 = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
         float f = (-((iA * 6) + (iA2 * 5))) / 2.0f;
         float f2 = ((iA * 2) + iA2) / 2.0f;
         int i = 0;
@@ -106,8 +106,8 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         C0162a().addChild(this.e);
         C0162a().addChild(this.d);
         this.b.textures().addElement(this.a);
-        this.g = com.censivn.C3DEngine.b.b.A.a(120.0f);
-        this.h = com.censivn.C3DEngine.b.b.A.a(40.0f);
+        this.g = com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
+        this.h = com.censivn.C3DEngine.b.b.ScreenConstants.a(40.0f);
         this.i = ((-((this.g * 4.0f) + (this.h * 3.0f))) / 2.0f) + (this.g / 2.0f);
         String[] strArr = {"Social", "Games", "Lifestyle", "Tools"};
         for (int i4 = 0; i4 < 4; i4++) {
@@ -136,12 +136,12 @@ public class PreferenceSettingA extends PreferenceSettingBase {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        float fA = com.censivn.C3DEngine.b.b.A.a(-20.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.A.a(-20.0f);
-        float fA3 = com.censivn.C3DEngine.b.b.A.a(0.0f);
-        float fA4 = com.censivn.C3DEngine.b.b.A.a(0.0f);
-        float fA5 = com.censivn.C3DEngine.b.b.A.a(20.0f);
-        float fA6 = com.censivn.C3DEngine.b.b.A.a(20.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(-20.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.ScreenConstants.a(-20.0f);
+        float fA3 = com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
+        float fA4 = com.censivn.C3DEngine.b.b.ScreenConstants.a(0.0f);
+        float fA5 = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
+        float fA6 = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         for (int i = 0; i < 12; i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
             int i2 = i % 3;
@@ -198,7 +198,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         }
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void g() {
         int i = 0;
         super.g();
@@ -216,7 +216,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         }
     }
 
-    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.f
+    @Override // com.tsf.shell.preference.a.a.a.PreferenceSettingBase, com.censivn.C3DEngine.b.e.AbstractPanelRenderer
     public void f() {
         super.f();
         this.j = true;

@@ -13,14 +13,14 @@ public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.ObjectPo
     private float c;
     private float d;
     private int e = 1;
-    private float f = com.censivn.C3DEngine.b.b.A.a(50.0f);
-    private float g = com.censivn.C3DEngine.b.b.A.a(30.0f);
-    private float h = com.censivn.C3DEngine.b.b.A.a(30.0f);
+    private float f = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+    private float g = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
+    private float h = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
     private g i;
 
     public DrawerItemDragController() {
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a._a.a.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a._a.a.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
                 i iVarB = a.this.b(fArrA[0], fArrA[1]);
@@ -30,7 +30,7 @@ public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.ObjectPo
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (a.this.i != null) {
                     a.this.i.aV();

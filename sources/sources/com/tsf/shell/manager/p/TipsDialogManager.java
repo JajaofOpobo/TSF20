@@ -1,14 +1,14 @@
 package com.tsf.shell.manager.p;
 
 import android.content.Intent;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.activity.tips.TipsDialogActivity;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC0025a {
+public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     public static TipsDialogManager a;
     public static a b;
     private static ArrayList<PreferenceToggle> c;
@@ -41,7 +41,7 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.a.InterfaceC
         TipsDialogManager();
     }
 
-    @Override // com.censivn.C3DEngine.b.c.a.InterfaceC0025a
+    @Override // com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i2 != -1 || i == f) {
         }

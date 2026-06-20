@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.tsf.shell.f.e._h.IconEditorHelper.a, com.tsf.shell.f.e._f.EditTarget.a {
+public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandler.a, e.a, com.tsf.shell.f.e._h.IconEditorHelper.a, com.tsf.shell.f.e._f.EditTarget.a {
     private static HashMap<Integer, C0094a> a;
     private static ArrayList<Integer> p = new ArrayList<>();
     private ArrayList<c> b;
@@ -75,7 +75,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
     public WorkspaceEditor() {
         int i = 0;
         this.d.addChild(this.e);
-        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.d));
+        this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.d));
         this.d.mouseSkip(true);
         this.b = new ArrayList<>();
         for (int i2 = 0; i2 < 9; i2++) {
@@ -106,7 +106,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.e._f.WorkspaceEditor$2, reason: invalid class name */
-    class AnonymousClass2 extends com.censivn.C3DEngine.b.d.a {
+    class AnonymousClass2 extends com.censivn.C3DEngine.b.d.MouseEventListener {
         boolean a;
 
         AnonymousClass2(i iVar) {
@@ -114,7 +114,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             this.a = false;
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
             float[] fArrA = x.a(motionEvent, a.this.l);
             i hittingTarget = a.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
@@ -125,7 +125,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             if (a.this.m != null) {
                 a.this.a(a.this.m.b.c, true);
@@ -133,7 +133,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             a.this.m = null;
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             if (!this.a) {
                 final float[] fArrA = x.a(motionEvent2, a.this.l);
@@ -153,7 +153,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.d.a
+        @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
             w.b();
         }
@@ -282,7 +282,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             if (this.g != null) {
                 this.g.a(this);
                 this.g.t();
-                com.censivn.C3DEngine.b.c.b.a(this);
+                com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
                 com.tsf.shell.manager.app.ObserverManager.a(this);
                 this.f = cVar;
                 this.h = true;
@@ -361,8 +361,8 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         p.add(7);
         this.d.removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.a(this.d, 0);
-        float f = com.censivn.C3DEngine.b.b.A.z / 2.0f;
-        float fA = com.censivn.C3DEngine.b.b.A.a(250.0f);
+        float f = com.censivn.C3DEngine.b.b.ScreenConstants.z / 2.0f;
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(250.0f);
         this.d.position().x = f;
         this.d.position().y = fA;
         int size = p.size();
@@ -426,7 +426,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
                     a.this.i = false;
                     a.this.f.mouseSkip(false);
                     a.this.f();
-                    com.censivn.C3DEngine.b.c.b.b(a.this);
+                    com.censivn.C3DEngine.b.c.KeyboardHandler.b(a.this);
                     com.tsf.shell.manager.app.ObserverManager.b(a.this);
                     com.tsf.shell.manager.app.v.ScreenHelper.f();
                     a.this.f = null;
@@ -448,14 +448,14 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             a(true);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -477,7 +477,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
             if (g == null) {
                 g = new Paint();
                 g.setColor(-855638017);
-                g.setTextSize(36.0f * com.censivn.C3DEngine.b.b.A.c);
+                g.setTextSize(36.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 g.setAntiAlias(true);
                 g.setTextAlign(Paint.Align.LEFT);
             }
@@ -632,7 +632,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         com.tsf.shell.f.e._h.IconEditorHelper.a(this, aVar, iArrAG[0], iArrAG[1]);
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         a(false);
     }

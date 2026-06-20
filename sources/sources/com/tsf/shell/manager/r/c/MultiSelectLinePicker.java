@@ -3,8 +3,8 @@ package com.tsf.shell.manager.r.c;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
-import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 
@@ -38,8 +38,8 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         @Override // java.util.Comparator
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public int compare(i iVar, i iVar2) {
-            float f = (com.censivn.C3DEngine.b.b.A.I - (iVar.position().y * com.censivn.C3DEngine.b.b.A.F)) + iVar.position().x + com.censivn.C3DEngine.b.b.A.H;
-            float f2 = (com.censivn.C3DEngine.b.b.A.I - (iVar2.position().y * com.censivn.C3DEngine.b.b.A.F)) + iVar2.position().x + com.censivn.C3DEngine.b.b.A.H;
+            float f = (com.censivn.C3DEngine.b.b.ScreenConstants.I - (iVar.position().y * com.censivn.C3DEngine.b.b.ScreenConstants.F)) + iVar.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.H;
+            float f2 = (com.censivn.C3DEngine.b.b.ScreenConstants.I - (iVar2.position().y * com.censivn.C3DEngine.b.b.ScreenConstants.F)) + iVar2.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.H;
             if (f > f2) {
                 return 1;
             }
@@ -70,15 +70,15 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         this.b.a(this.a);
         this.b.a(this);
         this.b.a(true);
-        this.a.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.a) { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2
+        this.a.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.a) { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2
             boolean a = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 com.tsf.shell.manager.action.GestureHandler.a();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (!MultiSelectLinePicker.this.b.a()) {
                     MultiSelectLinePicker.this.b.a(motionEvent, motionEvent2);
@@ -103,7 +103,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 MultiSelectLinePicker.this.b.a(motionEvent);
                 MultiSelectLinePicker.this.c();
@@ -123,23 +123,23 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             this.a.position().x = 0.0f;
             this.a.position().y = 0.0f;
             this.a.removeFromParent();
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             com.tsf.shell.manager.app.TaskScheduler.a(this.a);
             this.a.setFocus();
-            this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+            this.a.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
             com.tsf.shell.manager.app.ObserverManager.a(this);
             A();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             A();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 
@@ -147,7 +147,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         if (this.f) {
             com.tsf.shell.manager.app.Notifier.b(this.g);
             this.f = false;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             this.a.removeFromParent();
             com.tsf.shell.manager.app.ObserverManager.b(this);
             A();
@@ -287,8 +287,8 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         arrayList.clear();
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.setAABBPX(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, 0.0f, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B, 0.0f);
+        this.a.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
     }
 }

@@ -109,25 +109,25 @@ public class DragLayer extends FrameLayout {
             d.b bVar = (d.b) this.d.g.getLayoutParams();
             if (com.tsf.shell.manager.app.StateHub.d.b()) {
                 float[] fArrA = com.tsf.shell.manager.app.StateHub.d.a();
-                iB = (int) ((fArrA[0] - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H);
-                iC = (int) (((-fArrA[1]) + com.censivn.C3DEngine.b.b.A.I) - (this.d.b.c() / 2.0f));
+                iB = (int) ((fArrA[0] - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.ScreenConstants.H);
+                iC = (int) (((-fArrA[1]) + com.censivn.C3DEngine.b.b.ScreenConstants.I) - (this.d.b.c() / 2.0f));
             } else {
-                iB = (int) ((this.d.position().x - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.A.H);
-                iC = (int) (((-this.d.position().y) + com.censivn.C3DEngine.b.b.A.I) - (this.d.b.c() / 2.0f));
+                iB = (int) ((this.d.position().x - (this.d.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.ScreenConstants.H);
+                iC = (int) (((-this.d.position().y) + com.censivn.C3DEngine.b.b.ScreenConstants.I) - (this.d.b.c() / 2.0f));
             }
             int[] iArr = {iB, iC, bVar.d, bVar.e};
-            if (bVar.d + iB > com.censivn.C3DEngine.b.b.A.x) {
-                iArr[0] = com.censivn.C3DEngine.b.b.A.x - bVar.d;
-            } else if (iB < com.censivn.C3DEngine.b.b.A.v) {
-                iArr[0] = com.censivn.C3DEngine.b.b.A.v;
+            if (bVar.d + iB > com.censivn.C3DEngine.b.b.ScreenConstants.x) {
+                iArr[0] = com.censivn.C3DEngine.b.b.ScreenConstants.x - bVar.d;
+            } else if (iB < com.censivn.C3DEngine.b.b.ScreenConstants.v) {
+                iArr[0] = com.censivn.C3DEngine.b.b.ScreenConstants.v;
             }
-            if (bVar.e + iC > com.censivn.C3DEngine.b.b.A.y) {
-                iArr[1] = com.censivn.C3DEngine.b.b.A.y - bVar.e;
-            } else if (iC < com.censivn.C3DEngine.b.b.A.w) {
-                iArr[1] = com.censivn.C3DEngine.b.b.A.w;
+            if (bVar.e + iC > com.censivn.C3DEngine.b.b.ScreenConstants.y) {
+                iArr[1] = com.censivn.C3DEngine.b.b.ScreenConstants.y - bVar.e;
+            } else if (iC < com.censivn.C3DEngine.b.b.ScreenConstants.w) {
+                iArr[1] = com.censivn.C3DEngine.b.b.ScreenConstants.w;
             }
             ItemInfo itemInfoK = this.d.K();
-            if (com.censivn.C3DEngine.b.b.A.O) {
+            if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
                 int i = iArr[0];
                 bVar.a = i;
                 itemInfoK.cellX = i;

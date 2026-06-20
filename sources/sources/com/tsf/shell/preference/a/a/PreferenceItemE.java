@@ -1,33 +1,33 @@
 package com.tsf.shell.preference.a.a;
 
-import com.censivn.C3DEngine.b.e.a;
-import com.censivn.C3DEngine.b.e.i;
+import com.censivn.C3DEngine.b.e.IconButtonRenderer;
+import com.censivn.C3DEngine.b.e.PanelGroupRenderer;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceItemE extends i {
     private boolean a = false;
-    private com.censivn.C3DEngine.b.e.e b;
-    private com.censivn.C3DEngine.b.e.e c;
-    private com.censivn.C3DEngine.b.e.e d;
-    private com.censivn.C3DEngine.b.e.a e;
-    private com.censivn.C3DEngine.b.e.a f;
-    private com.censivn.C3DEngine.b.e.a g;
+    private com.censivn.C3DEngine.b.e.PercentLabelRenderer b;
+    private com.censivn.C3DEngine.b.e.PercentLabelRenderer c;
+    private com.censivn.C3DEngine.b.e.PercentLabelRenderer d;
+    private com.censivn.C3DEngine.b.e.IconButtonRenderer e;
+    private com.censivn.C3DEngine.b.e.IconButtonRenderer f;
+    private com.censivn.C3DEngine.b.e.IconButtonRenderer g;
 
     public PreferenceItemE() {
         a(PreferenceItemB.i.text_preferences);
-        this.f = new com.censivn.C3DEngine.b.e.a();
+        this.f = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.f.h(PreferenceItemB.i.mn_drawer_top_menu);
         b(this.f);
-        this.g = new com.censivn.C3DEngine.b.e.a();
+        this.g = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.g.h(PreferenceItemB.i.mn_drawer_bottom_menu);
         b(this.g);
-        this.e = new com.censivn.C3DEngine.b.e.a();
+        this.e = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.e.h(PreferenceItemB.i.mn_grid_size_auto);
         this.e.i(PreferenceItemB.i.mn_grid_size_auto_summary);
         this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemE.1
-            @Override // com.censivn.C3DEngine.b.e.a.C0027a
+            @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 e.this.a = z;
                 if (e.this.a) {
@@ -39,7 +39,7 @@ public class PreferenceItemE extends i {
             }
         });
         b(this.e);
-        com.censivn.C3DEngine.b.e.e eVar = new com.censivn.C3DEngine.b.e.e();
+        com.censivn.C3DEngine.b.e.PercentLabelRenderer eVar = new com.censivn.C3DEngine.b.e.PercentLabelRenderer();
         this.c = eVar;
         eVar.g(PreferenceItemB.i.mn_grid_columns);
         eVar.h(PreferenceItemB.i.mn_grid_columns_summary);
@@ -48,7 +48,7 @@ public class PreferenceItemE extends i {
         eVar.k(0);
         eVar.a(" ");
         b(eVar);
-        com.censivn.C3DEngine.b.e.e eVar2 = new com.censivn.C3DEngine.b.e.e();
+        com.censivn.C3DEngine.b.e.PercentLabelRenderer eVar2 = new com.censivn.C3DEngine.b.e.PercentLabelRenderer();
         this.b = eVar2;
         eVar2.g(PreferenceItemB.i.mn_grid_rows);
         eVar2.h(PreferenceItemB.i.mn_grid_rows_summary);
@@ -57,7 +57,7 @@ public class PreferenceItemE extends i {
         eVar2.k(0);
         eVar2.a(" ");
         b(eVar2);
-        com.censivn.C3DEngine.b.e.e eVar3 = new com.censivn.C3DEngine.b.e.e();
+        com.censivn.C3DEngine.b.e.PercentLabelRenderer eVar3 = new com.censivn.C3DEngine.b.e.PercentLabelRenderer();
         this.d = eVar3;
         eVar3.g(PreferenceItemB.i.mn_background_transparency);
         eVar3.i(0);
@@ -67,10 +67,10 @@ public class PreferenceItemE extends i {
         b(eVar3);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void f() {
         this.a = com.tsf.shell.manager.b.ConfigManager.W();
-        String str = " ( " + (com.censivn.C3DEngine.b.b.A.O ? x.c(PreferenceItemB.i.mn_orientation_portrait) : x.c(PreferenceItemB.i.mn_orientation_landscape)) + " )";
+        String str = " ( " + (com.censivn.C3DEngine.b.b.ScreenConstants.O ? x.c(PreferenceItemB.i.mn_orientation_portrait) : x.c(PreferenceItemB.i.mn_orientation_landscape)) + " )";
         this.b.b(x.c(PreferenceItemB.i.mn_grid_rows) + str);
         this.c.b(x.c(PreferenceItemB.i.mn_grid_columns) + str);
         this.c.i(com.tsf.shell.f.f.a.FolderPage.x);
@@ -97,7 +97,7 @@ public class PreferenceItemE extends i {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void g() {
         int iE = this.d.e();
         if (iE != com.tsf.shell.manager.f.ScreenFadeController.a) {

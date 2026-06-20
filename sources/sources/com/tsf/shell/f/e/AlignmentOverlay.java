@@ -19,7 +19,7 @@ public class AlignmentOverlay {
     private static int h;
     private static int i;
     private static com.tsf.shell.f.i.PageItem j;
-    private static com.censivn.C3DEngine.b.c.b.a k;
+    private static com.censivn.C3DEngine.b.c.KeyboardHandler.a k;
     private static AlignmentResizeListener l;
     private static AlignmentBackKeyHandler m;
     private static com.tsf.shell.f.i.PageItem n;
@@ -30,7 +30,7 @@ public class AlignmentOverlay {
     public static void a() {
         l = new AlignmentResizeListener();
         m = new AlignmentBackKeyHandler();
-        d = 25.0f * com.censivn.C3DEngine.b.b.A.a;
+        d = 25.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
         k = new C0091a();
         Bitmap bitmapA = x.a(b.d.alignment_light);
         e = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, true);
@@ -70,10 +70,10 @@ public class AlignmentOverlay {
         kVar3.useVBO(false);
         kVar3.textures().addElement(ItemTrailContainer);
         if (z) {
-            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
+            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
-                    float f3 = com.censivn.C3DEngine.b.b.A.F / 2;
+                    float f3 = com.censivn.C3DEngine.b.b.ScreenConstants.F / 2;
                     float f4 = a.j.position().x;
                     kVar2.position().x += 5.0f;
                     kVar3.position().x -= 5.0f;
@@ -86,10 +86,10 @@ public class AlignmentOverlay {
                 }
             };
         } else {
-            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
+            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
-                    float f3 = com.censivn.C3DEngine.b.b.A.G / 2;
+                    float f3 = com.censivn.C3DEngine.b.b.ScreenConstants.G / 2;
                     float f4 = a.j.position().y;
                     kVar2.position().x += 5.0f;
                     kVar3.position().x -= 5.0f;
@@ -141,10 +141,10 @@ public class AlignmentOverlay {
             PageIndicatorStrip.setFocus();
             com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) bVar.parent();
             jVar.addChildAt(a, jVar.getChildIndexOf(bVar));
-            com.censivn.C3DEngine.b.c.b.a(ILassoSelectable);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(ILassoSelectable);
             com.tsf.shell.manager.app.ObserverManager.a(ToggleRowItem);
-            b.a(com.censivn.C3DEngine.b.b.A.F);
-            c.a(com.censivn.C3DEngine.b.b.A.G);
+            b.a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
+            c.a(com.censivn.C3DEngine.b.b.ScreenConstants.G);
         }
     }
 
@@ -158,21 +158,21 @@ public class AlignmentOverlay {
             }
             PageIndicatorStrip.c(false);
             a.removeFromParent();
-            com.censivn.C3DEngine.b.c.b.b(ILassoSelectable);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(ILassoSelectable);
             com.tsf.shell.manager.app.ObserverManager.b(ToggleRowItem);
             q = false;
         }
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.e.AlignmentOverlay$a, reason: collision with other inner class name */
-    static class C0091a implements com.censivn.C3DEngine.b.c.b.a {
+    static class C0091a implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
         C0091a() {
         }
     }
 
     public static void a(int i2, int i3) {
-        b.a(com.censivn.C3DEngine.b.b.A.F);
-        c.a(com.censivn.C3DEngine.b.b.A.G);
+        b.a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
+        c.a(com.censivn.C3DEngine.b.b.ScreenConstants.G);
     }
 
     public void a(ILassoSelectable mVar) {}

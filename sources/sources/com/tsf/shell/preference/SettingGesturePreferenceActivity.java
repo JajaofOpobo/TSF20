@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.widget.Toast;
-import com.censivn.C3DEngine.b.c.a;
+import com.censivn.C3DEngine.b.c.ActivityResultBridge;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.ShellCoreInterface;

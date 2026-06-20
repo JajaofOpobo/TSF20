@@ -4,8 +4,8 @@ import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.e.e;
-import com.censivn.C3DEngine.b.e.h;
+import com.censivn.C3DEngine.b.e.PercentLabelRenderer;
+import com.censivn.C3DEngine.b.e.TextIconRenderer;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
@@ -27,7 +27,7 @@ public class ThemeIconDesignerMenu extends d {
     private ThemeMenuMixElementPlane mElementPlane;
     private BaseRenderable mIconContainer;
     private b mLableContentLayout;
-    private com.censivn.C3DEngine.b.b.A.d mLableScrollView;
+    private com.censivn.C3DEngine.b.b.ScreenConstants.d mLableScrollView;
     private l mResetButton;
     private h mSeekBarPreference;
     private GridRenderable mShortcut;
@@ -37,9 +37,9 @@ public class ThemeIconDesignerMenu extends d {
 
     public ThemeIconDesignerMenu() {
         setTitle(b.i.text_icon_designer);
-        setMenuHeight(com.censivn.C3DEngine.b.b.A.a(950.0f));
+        setMenuHeight(com.censivn.C3DEngine.b.b.ScreenConstants.a(950.0f));
         this.mContainer = new BaseRenderable();
-        this.mShortcut = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(80.0f), com.censivn.C3DEngine.b.b.A.a(80.0f), false);
+        this.mShortcut = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f), false);
         addIcon(this.mShortcut);
         this.mApplyButton = new l(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
@@ -64,7 +64,7 @@ public class ThemeIconDesignerMenu extends d {
             }
         };
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.mApplyButton, com.tsf.shell.manager.o.ThemeColorConstants.h);
-        this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
+        this.mApplyButton.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-223.0f);
         this.mApplyButton.a(0);
         this.mResetButton = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.2
             @Override // com.tsf.shell.f.e.ToggleRowItem
@@ -76,24 +76,24 @@ public class ThemeIconDesignerMenu extends d {
             }
         };
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.mResetButton, com.tsf.shell.manager.o.ThemeColorConstants.h);
-        this.mResetButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
+        this.mResetButton.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(-223.0f);
         this.mResetButton.a(0);
         this.mIconContainer = new BaseRenderable();
-        this.mIconContainer.position().y = com.censivn.C3DEngine.b.b.A.a(400.0f);
+        this.mIconContainer.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(400.0f);
         this.mContainer.addChild(this.mIconContainer);
         this.mDemoShortcutIcon = new GridRenderable(0.0f, 0.0f, false);
         this.mDemoShortcutTexture = new TextureElement(0, false);
         this.mDemoShortcutIcon.textures().addElement(this.mDemoShortcutTexture);
         this.mIconContainer.addChild(this.mDemoShortcutIcon);
-        this.mLableScrollView = new com.censivn.C3DEngine.b.b.A.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.3
-            @Override // com.censivn.C3DEngine.b.b.A.d
+        this.mLableScrollView = new com.censivn.C3DEngine.b.b.ScreenConstants.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.3
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public float b(float f) {
                 float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.J * 1.2f;
                 ThemeIconDesignerMenu.this.newStyleIndex = (int) ((Math.abs(f) + (f2 / 2.0f)) / f2);
                 return f2 * (-r1);
             }
 
-            @Override // com.censivn.C3DEngine.b.b.A.d
+            @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void a() {
                 ThemeIconDesignerMenu.this.showResetButton();
             }
@@ -101,14 +101,14 @@ public class ThemeIconDesignerMenu extends d {
         this.mLableScrollView.b(true);
         this.mLableScrollView.c(((-com.tsf.shell.manager.o.ButtonPresetManager.a.J) / 2.0f) * 1.2f);
         this.mLableScrollView.d((com.tsf.shell.manager.o.ButtonPresetManager.a.J / 2.0f) * 1.2f);
-        this.mLableContentLayout = new com.censivn.C3DEngine.b.b.A.b();
+        this.mLableContentLayout = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
         this.mLableScrollView.c(this.mLableContentLayout);
         int iB = c.b();
         for (int i = 0; i < iB; i++) {
             final com.tsf.shell.manager.o.a.TextLabelElement bVarC = c.c(i);
             k kVarA = bVarC.a();
-            kVarA.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(kVarA) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.4
-                @Override // com.censivn.C3DEngine.b.d.a
+            kVarA.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(kVarA) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.4
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (ThemeIconDesignerMenu.this.newStyleIndex != bVarC.c) {
                         ThemeIconDesignerMenu.this.scrollLable(bVarC.c, true);
@@ -125,16 +125,16 @@ public class ThemeIconDesignerMenu extends d {
         this.mSeekBarPreference.g(b.i.text_icon_size);
         this.mSeekBarPreference.i(70);
         this.mSeekBarPreference.j(190);
-        this.mSeekBarPreference.b((int) com.censivn.C3DEngine.b.b.A.a(850.0f));
-        this.mSeekBarPreference.position().y = com.censivn.C3DEngine.b.b.A.a(150.0f);
+        this.mSeekBarPreference.b((int) com.censivn.C3DEngine.b.b.ScreenConstants.a(850.0f));
+        this.mSeekBarPreference.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
         this.mSeekBarPreference.a(new h.a() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.5
-            @Override // com.censivn.C3DEngine.b.e.h.a
+            @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i2) {
                 ThemeIconDesignerMenu.this.setIconSize(i2 / 100.0f);
                 return true;
             }
 
-            @Override // com.censivn.C3DEngine.b.e.h.a
+            @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public void a() {
                 ThemeIconDesignerMenu.this.showResetButton();
             }
@@ -166,8 +166,8 @@ public class ThemeIconDesignerMenu extends d {
     }
 
     private void resetLayout() {
-        this.mLableScrollView.position().x = com.censivn.C3DEngine.b.b.A.z;
-        this.mLableScrollView.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.A.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(500.0f) / 2.0f, 0.0f);
+        this.mLableScrollView.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+        this.mLableScrollView.setAABBPX(0.0f, (-com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f)) / 2.0f, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f) / 2.0f, 0.0f);
         this.mLableScrollView.k();
         this.mLableScrollView.a(0.0f, 0.0f, 0.0f, 0.0f);
     }
@@ -227,12 +227,12 @@ public class ThemeIconDesignerMenu extends d {
             this.mResetButton.alpha(0.0f);
             this.mContainer.addChild(this.mResetButton);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-            dVar.f(this.mApplyButton.minX() - com.censivn.C3DEngine.b.b.A.a(50.0f));
+            dVar.f(this.mApplyButton.minX() - com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f));
             dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton, 500, dVar);
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
-            dVar2.f(this.mResetButton.maxX() + com.censivn.C3DEngine.b.b.A.a(50.0f));
+            dVar2.f(this.mResetButton.maxX() + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f));
             dVar2.a(255);
             dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.mResetButton);

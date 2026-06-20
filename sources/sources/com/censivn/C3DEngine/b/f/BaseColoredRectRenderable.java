@@ -29,8 +29,8 @@ public class BaseColoredRectRenderable extends BaseRenderable {
         this.d = i;
         this.e = i2;
         if (z2) {
-            f = ((int) f) * com.censivn.C3DEngine.b.b.A.a;
-            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.A.a;
+            f = ((int) f) * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+            f2 = ((int) f2) * com.censivn.C3DEngine.b.b.ScreenConstants.a;
         }
         this.a = f;
         this.b = f2;

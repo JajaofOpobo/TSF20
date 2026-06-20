@@ -40,7 +40,7 @@ public class WidgetDrawerItemSettingsAction extends WidgetDrawerShortcutItemBase
                 }
             }
         };
-        float fA = com.censivn.C3DEngine.b.b.A.a(4.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(4.0f);
         this.b.position().y = this.n.Y - fA;
         addChild(this.b);
         this.b.visible(false);
@@ -141,7 +141,7 @@ public class WidgetDrawerItemSettingsAction extends WidgetDrawerShortcutItemBase
         if (this.p.id == 0) {
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(this.n.H, this.n.I, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(bitmapCreateBitmap);
-            Bitmap bitmapA = x.a(this.u, com.censivn.C3DEngine.b.b.A.a(96.0f), com.censivn.C3DEngine.b.b.A.a(96.0f));
+            Bitmap bitmapA = x.a(this.u, com.censivn.C3DEngine.b.b.ScreenConstants.a(96.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(96.0f));
             canvas.drawBitmap(bitmapA, (bitmapCreateBitmap.getWidth() - bitmapA.getWidth()) / 2, (bitmapCreateBitmap.getHeight() - bitmapA.getHeight()) / 2, (Paint) null);
             bitmapA.recycle();
             Bitmap bitmapCreateTextureBitmap = LauncherShortcutStandardInfo.createTextureBitmap(this.x, bitmapCreateBitmap, this.n, false);

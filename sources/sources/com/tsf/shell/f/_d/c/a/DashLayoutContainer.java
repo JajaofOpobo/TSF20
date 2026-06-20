@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashLayoutContainer extends f {
-    public static final float b = com.censivn.C3DEngine.b.b.A.a(65.0f);
+    public static final float b = com.censivn.C3DEngine.b.b.ScreenConstants.a(65.0f);
     private c a;
 
     public DashLayoutContainer(int i, boolean z) {
@@ -15,7 +15,7 @@ public class DashLayoutContainer extends f {
             @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
-                com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(-38.0f));
+                com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.ScreenConstants.a(-38.0f));
             }
         };
     }

@@ -67,12 +67,12 @@ public class DropIndicatorState extends BaseRenderable {
             if (this.e == null && c()) {
                 this.e = new c(dVar);
                 b bVar = new DropIndicatorRenderer();
-                bVar.a = com.censivn.C3DEngine.b.b.A.a(-130.0f);
-                bVar.b = com.censivn.C3DEngine.b.b.A.a(128.0f);
-                bVar.c = com.censivn.C3DEngine.b.b.A.a(65.0f);
-                bVar.d = com.censivn.C3DEngine.b.b.A.a(120.0f);
+                bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(-130.0f);
+                bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(128.0f);
+                bVar.c = com.censivn.C3DEngine.b.b.ScreenConstants.a(65.0f);
+                bVar.d = com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
                 bVar.e = 38;
-                bVar.f = com.censivn.C3DEngine.b.b.A.a(54.0f);
+                bVar.f = com.censivn.C3DEngine.b.b.ScreenConstants.a(54.0f);
                 this.e.a(this.d, bVar);
             }
         }
@@ -93,8 +93,8 @@ public class DropIndicatorState extends BaseRenderable {
             if (it.hasNext()) {
                 final C0092c next = it.next();
                 final a aVar = new DropIndicatorContainer(next.a, next.b, bVar);
-                com.censivn.C3DEngine.b.d.a aVar2 = new com.censivn.C3DEngine.b.d.a(aVar) { // from class: com.tsf.shell.f.e.d.a.DropIndicatorState.1
-                    @Override // com.censivn.C3DEngine.b.d.a
+                com.censivn.C3DEngine.b.d.MouseEventListener aVar2 = new com.censivn.C3DEngine.b.d.MouseEventListener(aVar) { // from class: com.tsf.shell.f.e.d.a.DropIndicatorState.1
+                    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                     public void a(MotionEvent motionEvent) {
                         if (next.c()) {
                             next.a(c.this.f);
@@ -103,7 +103,7 @@ public class DropIndicatorState extends BaseRenderable {
                             aVar.addChild(next.e);
                             c.this.d = next.e;
                             c.this.a(aVar);
-                            c.this.a(next.h, com.censivn.C3DEngine.b.b.A.a(500.0f));
+                            c.this.a(next.h, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f));
                         } else {
                             c.this.f.d();
                         }

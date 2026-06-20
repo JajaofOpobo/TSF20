@@ -25,7 +25,7 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.b, x.a(b.d.shell_number_bg));
             }
             if (this.e == null) {
-                this.e = new com.censivn.C3DEngine.b.f.GridRenderable(252.0f * com.censivn.C3DEngine.b.b.A.c, 162.0f * com.censivn.C3DEngine.b.b.A.c, false);
+                this.e = new com.censivn.C3DEngine.b.f.GridRenderable(252.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 162.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
                 this.e.alpha(0.0f);
                 addChild(this.e);
             }
@@ -112,13 +112,13 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             super(2, 80, VEasing.Linear.easeNone, 160);
             this.g = 0;
             this.c = a(0);
-            this.c.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.A.c, 80.0f * com.censivn.C3DEngine.b.b.A.c);
+            this.c.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             this.c.h();
             this.d = a(1);
-            this.d.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.A.c, 80.0f * com.censivn.C3DEngine.b.b.A.c);
+            this.d.a(0, 0, 1, 1, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             this.d.h();
-            this.e = (-200.0f) * com.censivn.C3DEngine.b.b.A.c;
-            this.f = 200.0f * com.censivn.C3DEngine.b.b.A.c;
+            this.e = (-200.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
+            this.f = 200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         }
 
         private void c(int i) {
@@ -130,9 +130,9 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
                 int i2 = i / 10;
                 int i3 = i - (i2 * 10);
                 this.d.a((Boolean) true);
-                this.c.i().x = (-40.0f) * com.censivn.C3DEngine.b.b.A.c;
+                this.c.i().x = (-40.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
                 this.c.a(i2 % 5, i2 / 5);
-                this.d.i().x = 40.0f * com.censivn.C3DEngine.b.b.A.c;
+                this.d.i().x = 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
                 this.d.a(i3 % 5, i3 / 5);
             }
             this.c.h();

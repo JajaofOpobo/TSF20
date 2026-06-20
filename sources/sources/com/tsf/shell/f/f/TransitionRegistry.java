@@ -1,6 +1,6 @@
 package com.tsf.shell.f.f;
 
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.tsf.shell.f.f.b.SlopeOutsideTransition;
 import com.tsf.shell.f.f.b.StackTransition;
 import com.tsf.shell.f.f.b.SmoothTransition;
@@ -64,7 +64,7 @@ public class TransitionRegistry {
     public void b() {
         h.a();
         this.c = new TransitionConfig.b() { // from class: com.tsf.shell.f.f.TransitionRegistry.1
-            @Override // com.censivn.C3DEngine.b.c.e.b, com.censivn.C3DEngine.b.c.e.a
+            @Override // com.censivn.C3DEngine.b.c.WindowManager.b, com.censivn.C3DEngine.b.c.WindowManager.a
             public void a(int i, int i2, int i3, int i4) {
             }
         };

@@ -17,19 +17,19 @@ public class ButtonRenderable extends BaseRenderable {
         this.d = i;
         this.e = i2;
         this.c.set(this.d);
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.f.ButtonRenderable.1
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.censivn.C3DEngine.b.f.ButtonRenderable.1
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 l.this.a();
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 l.this.b();
                 l.this.c.set(l.this.e);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 l.this.c();
                 l.this.c.set(l.this.d);

@@ -31,14 +31,14 @@ public class ClothTransition extends ItemPageTransition {
         this.h = true;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
-            if (com.censivn.C3DEngine.b.b.A.F < com.censivn.C3DEngine.b.b.A.G) {
-                i2 = com.censivn.C3DEngine.b.b.A.F;
-                i3 = com.censivn.C3DEngine.b.b.A.G;
+            if (com.censivn.C3DEngine.b.b.ScreenConstants.F < com.censivn.C3DEngine.b.b.ScreenConstants.G) {
+                i2 = com.censivn.C3DEngine.b.b.ScreenConstants.F;
+                i3 = com.censivn.C3DEngine.b.b.ScreenConstants.G;
             } else {
-                i2 = com.censivn.C3DEngine.b.b.A.G;
-                i3 = com.censivn.C3DEngine.b.b.A.F;
+                i2 = com.censivn.C3DEngine.b.b.ScreenConstants.G;
+                i3 = com.censivn.C3DEngine.b.b.ScreenConstants.F;
             }
-            this.b = new C0108a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, (int) (i2 / (com.censivn.C3DEngine.b.b.A.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.A.e * 8.0f)));
+            this.b = new C0108a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, (int) (i2 / (com.censivn.C3DEngine.b.b.ScreenConstants.e * 50.0f)), (int) (i3 / (com.censivn.C3DEngine.b.b.ScreenConstants.e * 8.0f)));
             this.a.addChild(this.b);
         }
         CurveTransition.a aVarA = com.tsf.shell.manager.app.AppListManager.a(com.tsf.shell.manager.p.ThemePreferenceProvider.f);

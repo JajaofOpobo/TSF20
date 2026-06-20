@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Vector;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class TaskDispatcher {
     private static ArrayList<a> f = new ArrayList<>();
     private Handler c;
     private HashMap<Runnable, Runnable> a = new HashMap<>();
@@ -21,7 +21,7 @@ public class c {
     private Object g = new Object();
     private HandlerThread b = new HandlerThread("WidgetManager Database Operating");
 
-    public c() {
+    public TaskDispatcher() {
         this.b.start();
         this.c = new Handler(this.b.getLooper());
     }
@@ -59,7 +59,7 @@ public class c {
     }
 
     public void b(final Runnable runnable, long j) {
-        Runnable runnable2 = new Runnable() { // from class: com.censivn.C3DEngine.b.c.c.1
+        Runnable runnable2 = new Runnable() { // from class: com.censivn.C3DEngine.b.c.TaskDispatcher.1
             @Override // java.lang.Runnable
             public void run() {
                 c.this.a.remove(runnable);

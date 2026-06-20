@@ -14,7 +14,7 @@ import android.widget.EditText;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.c.e;
+import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.EmptyRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -42,7 +42,7 @@ public class FolderItemPositioner implements e.a {
     public n J;
     public int K;
     public ArrayList<ThemeFolderDescription.SystemFolderChild> L;
-    public com.censivn.C3DEngine.b.d.a M;
+    public com.censivn.C3DEngine.b.d.MouseEventListener M;
     private com.censivn.C3DEngine.b.g.TweenParams T;
     private com.censivn.C3DEngine.b.g.TweenParams U;
     private FolderItemBackground W;
@@ -78,7 +78,7 @@ public class FolderItemPositioner implements e.a {
     public FolderItemPositioner() {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.X = new com.tsf.shell.preference.a.a.PreferenceItemF() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.1
-            @Override // com.censivn.C3DEngine.b.e.c
+            @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
             public void g() {
                 super.g();
                 j.this.b();
@@ -98,7 +98,7 @@ public class FolderItemPositioner implements e.a {
         this.X.d();
         this.F.mouseEnabled(false);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.f(com.censivn.C3DEngine.b.b.A.D);
+        dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.D);
         dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.a);
         dVar.a(50);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.F);
@@ -185,10 +185,10 @@ public class FolderItemPositioner implements e.a {
     }
 
     private void n() {
-        N = new FolderItemDotIndicator(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, true, c());
+        N = new FolderItemDotIndicator(1.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 11.0f, true, c());
         N.visible(false);
         N.alpha(0.0f);
-        O = new FolderItemDotIndicator(1.0f, com.censivn.C3DEngine.b.b.A.b * 11.0f, false, c());
+        O = new FolderItemDotIndicator(1.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 11.0f, false, c());
         O.visible(false);
         O.alpha(0.0f);
     }
@@ -232,15 +232,15 @@ public class FolderItemPositioner implements e.a {
             this.E.scale().x = 0.0f;
             this.E.scale().y = 0.0f;
             this.E.alpha(0.0f);
-            this.n = (int) (80.0f * com.censivn.C3DEngine.b.b.A.b);
+            this.n = (int) (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
             this.o = this.n / 2;
-            this.p = (int) (com.censivn.C3DEngine.b.b.A.b * 12.0f);
-            this.I = new FolderItemIndicator(com.censivn.C3DEngine.b.b.A.b * 12.0f, this.n);
+            this.p = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.b * 12.0f);
+            this.I = new FolderItemIndicator(com.censivn.C3DEngine.b.b.ScreenConstants.b * 12.0f, this.n);
             this.I.setDefaultColor(new Color4(255, 255, 255, 100));
             this.I.alpha(0.0f);
             this.I.visible(false);
             this.G = new com.censivn.C3DEngine.b.f.BaseRenderable();
-            this.H = new com.censivn.C3DEngine.b.f.GridRenderable(500.0f * com.censivn.C3DEngine.b.b.A.c, 64.0f * com.censivn.C3DEngine.b.b.A.c, 1, 1);
+            this.H = new com.censivn.C3DEngine.b.f.GridRenderable(500.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 64.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 1, 1);
             this.H.calAABB();
             this.H.textures().addElement(this.y);
             this.G.addChild(this.H);
@@ -248,22 +248,22 @@ public class FolderItemPositioner implements e.a {
             this.E.addChild(this.I);
             this.F.addChild(this.E);
             this.J = new EmptyRenderable();
-            this.J.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.J) { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.3
-                @Override // com.censivn.C3DEngine.b.d.a
+            this.J.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.J) { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.3
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                     if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
                         com.tsf.shell.f.i.b.d.FolderShortcutItem.k.aF().a(motionEvent, motionEvent2, f, f2);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                     if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
                         com.tsf.shell.f.i.b.d.FolderShortcutItem.k.aF().a(f2);
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.d.a
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void g(MotionEvent motionEvent) {
                     if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
                         com.tsf.shell.f.i.b.d.FolderShortcutItem.k.aF().a(0.0f);
@@ -353,14 +353,14 @@ public class FolderItemPositioner implements e.a {
     }
 
     private void o() {
-        int i = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T - (com.censivn.C3DEngine.b.b.A.c * 30.0f));
-        int i2 = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (10.0f * com.censivn.C3DEngine.b.b.A.c));
-        int i3 = com.censivn.C3DEngine.b.b.A.D - ((int) ((70.0f * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
+        int i = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.T - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 30.0f));
+        int i2 = (int) (com.tsf.shell.manager.o.ButtonPresetManager.a.U + (10.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c));
+        int i3 = com.censivn.C3DEngine.b.b.ScreenConstants.D - ((int) ((70.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b) * 2.0f));
         int i4 = i3 > i * 10 ? i * 10 : i3;
-        float fA = com.censivn.C3DEngine.b.b.A.O ? 0.0f : com.censivn.C3DEngine.b.b.A.a(80.0f);
-        int i5 = com.censivn.C3DEngine.b.b.A.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.A.b) * 2.0f));
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.O ? 0.0f : com.censivn.C3DEngine.b.b.ScreenConstants.a(80.0f);
+        int i5 = com.censivn.C3DEngine.b.b.ScreenConstants.E - ((int) (((230.0f - fA) * com.censivn.C3DEngine.b.b.ScreenConstants.b) * 2.0f));
         int i6 = i5 > i2 * 7 ? i2 * 7 : i5;
-        int[] iArrA = com.tsf.shell.utils.GraphicsEngineBridge.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.A.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.A.b))), i, i2, 0, 0);
+        int[] iArrA = com.tsf.shell.utils.GraphicsEngineBridge.a(i4 - ((int) (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b)), i6 - ((int) (fA + (180.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b))), i, i2, 0, 0);
         this.a = iArrA[0];
         this.b = iArrA[1];
         this.c = this.a * this.b;
@@ -375,41 +375,41 @@ public class FolderItemPositioner implements e.a {
         this.d = i6;
         this.f = (this.e / 2) + 30;
         this.g = (this.d / 2) + 30;
-        int i7 = com.censivn.C3DEngine.b.b.A.J;
-        this.m = (com.censivn.C3DEngine.b.b.A.I - ((int) (128.0f * com.censivn.C3DEngine.b.b.A.b))) - com.censivn.C3DEngine.b.b.A.K;
-        this.h = ((int) ((57.6f * com.censivn.C3DEngine.b.b.A.b) - (i7 / 2))) + (com.censivn.C3DEngine.b.b.A.K / 2);
-        this.l = ((com.censivn.C3DEngine.b.b.A.D - ((this.a - 1) * this.i)) / 2) - (com.censivn.C3DEngine.b.b.A.D / 2);
-        this.k = (((((this.d / 2) + this.m) - this.h) - c().folder.childContainerY) - i7) + com.censivn.C3DEngine.b.b.A.K;
-        int i8 = (int) (this.e + (140.0f * com.censivn.C3DEngine.b.b.A.b));
-        int i9 = (int) (this.d + (140.0f * com.censivn.C3DEngine.b.b.A.b));
+        int i7 = com.censivn.C3DEngine.b.b.ScreenConstants.J;
+        this.m = (com.censivn.C3DEngine.b.b.ScreenConstants.I - ((int) (128.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b))) - com.censivn.C3DEngine.b.b.ScreenConstants.K;
+        this.h = ((int) ((57.6f * com.censivn.C3DEngine.b.b.ScreenConstants.b) - (i7 / 2))) + (com.censivn.C3DEngine.b.b.ScreenConstants.K / 2);
+        this.l = ((com.censivn.C3DEngine.b.b.ScreenConstants.D - ((this.a - 1) * this.i)) / 2) - (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2);
+        this.k = (((((this.d / 2) + this.m) - this.h) - c().folder.childContainerY) - i7) + com.censivn.C3DEngine.b.b.ScreenConstants.K;
+        int i8 = (int) (this.e + (140.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
+        int i9 = (int) (this.d + (140.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
         this.E.position().y = this.h;
         this.H.position().x = 0.0f;
-        this.H.position().y = (i9 / 2) - (com.censivn.C3DEngine.b.b.A.b * 30.0f);
+        this.H.position().y = (i9 / 2) - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 30.0f);
         this.G.setAABBPX((-i8) / 2.0f, (-i9) / 2, 0.0f, i8 / 2.0f, i9 / 2, 0.0f);
-        this.J.setAABBPX(((-i8) / 2) + (50.0f * com.censivn.C3DEngine.b.b.A.c), (-i9) / 2, 0.0f, (i8 / 2) - (50.0f * com.censivn.C3DEngine.b.b.A.c), i9 / 2, 0.0f);
+        this.J.setAABBPX(((-i8) / 2) + (50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), (-i9) / 2, 0.0f, (i8 / 2) - (50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c), i9 / 2, 0.0f);
         this.H.maxX(i8 / 2);
         this.w = this.k - (this.j * (this.b - 1));
-        this.u = this.k + com.tsf.shell.manager.o.ButtonPresetManager.a.O + (23.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.u = this.k + com.tsf.shell.manager.o.ButtonPresetManager.a.O + (23.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.v = this.k - ((this.b - 1) * this.j);
         this.x = c().folder.childContainerY;
-        N.position().y = (this.u - (5.0f * com.censivn.C3DEngine.b.b.A.b)) + c().folder.childContainerY;
+        N.position().y = (this.u - (5.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b)) + c().folder.childContainerY;
         N.a(this.e);
-        N.b(com.censivn.C3DEngine.b.b.A.b * 13.0f);
+        N.b(com.censivn.C3DEngine.b.b.ScreenConstants.b * 13.0f);
         N.a();
-        O.position().y = (this.v - (86.0f * com.censivn.C3DEngine.b.b.A.b)) + c().folder.childContainerY;
+        O.position().y = (this.v - (86.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b)) + c().folder.childContainerY;
         O.a(this.e);
-        O.b(com.censivn.C3DEngine.b.b.A.b * 13.0f);
+        O.b(com.censivn.C3DEngine.b.b.ScreenConstants.b * 13.0f);
         O.a();
-        this.r = (int) ((this.d / 2) - (35.0f * com.censivn.C3DEngine.b.b.A.b));
-        this.s = (int) (((-this.d) / 2) - (com.censivn.C3DEngine.b.b.A.b * 30.0f));
+        this.r = (int) ((this.d / 2) - (35.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
+        this.s = (int) (((-this.d) / 2) - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 30.0f));
         this.q = this.r - this.s;
-        this.I.position().x = (this.e / 2) + (68.0f * com.censivn.C3DEngine.b.b.A.b);
+        this.I.position().x = (this.e / 2) + (68.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
         this.W.k();
     }
 
     private void p() {
-        this.M = new com.censivn.C3DEngine.b.d.a(this.H) { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.4
-            @Override // com.censivn.C3DEngine.b.d.a
+        this.M = new com.censivn.C3DEngine.b.d.MouseEventListener(this.H) { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.4
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 com.tsf.shell.utils.HapticFeedbackManager.b();
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
@@ -569,7 +569,7 @@ public class FolderItemPositioner implements e.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.e.a
+    @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
         ThemeDescription();
         com.tsf.shell.f.i.b.d.FolderShortcutItem.a(i, i2, i3, i4);

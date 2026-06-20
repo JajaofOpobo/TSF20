@@ -7,8 +7,8 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends BaseRenderable {
-    public static final float a = com.censivn.C3DEngine.b.b.A.b(400.0f);
+public class VerticalPageRenderer extends BaseRenderable {
+    public static final float a = com.censivn.C3DEngine.b.b.ScreenConstants.b(400.0f);
     private IRenderable d;
     private float i;
     private IRenderable p;
@@ -29,7 +29,7 @@ public class d extends BaseRenderable {
     private float s = 0.0f;
     private boolean t = false;
     private boolean u = true;
-    private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.b.A.d.1
+    private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.b.ScreenConstants.d.1
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onChildMeasure(i iVar) {
             a();
@@ -52,114 +52,114 @@ public class d extends BaseRenderable {
         }
     };
 
-    public d() {
+    public VerticalPageRenderer() {
         addChild(this.c);
-        this.i = com.censivn.C3DEngine.b.b.A.a(100.0f);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.A.d.2
+        this.i = com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.b.ScreenConstants.d.2
             float a;
-            private com.censivn.C3DEngine.b.d.a d;
+            private com.censivn.C3DEngine.b.d.MouseEventListener d;
             private boolean e = false;
             private boolean f = false;
             private boolean g = false;
             private boolean h = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                this.h = d.this.n;
+                this.h = VerticalPageRenderer.this.n;
                 if (this.h) {
                     float[] fArrA = x.a(motionEvent);
-                    this.g = d.this.d.calTouchCollision(fArrA[0], fArrA[1]);
-                    i hittingTarget = d.this.getHittingTarget(fArrA[0], fArrA[1], true);
+                    this.g = VerticalPageRenderer.this.d.calTouchCollision(fArrA[0], fArrA[1]);
+                    i hittingTarget = VerticalPageRenderer.this.getHittingTarget(fArrA[0], fArrA[1], true);
                     if (hittingTarget != null && hittingTarget.getMouseEventListener() != null) {
                         this.d = hittingTarget.getMouseEventListener();
                         this.d.e(motionEvent);
                     }
-                    d dVar = d.this;
-                    float f = d.this.c.position().x;
+                    VerticalPageRenderer dVar = VerticalPageRenderer.this;
+                    float f = VerticalPageRenderer.this.c.position().x;
                     this.a = f;
                     dVar.h = f;
-                    d.this.setAnimationObjectState(true);
+                    VerticalPageRenderer.this.setAnimationObjectState(true);
                     this.f = false;
                     this.e = true;
-                    d.this.e = true;
-                    d.this.s = 0.0f;
+                    VerticalPageRenderer.this.e = true;
+                    VerticalPageRenderer.this.s = 0.0f;
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (this.h) {
                     this.e = true;
                     this.f = false;
-                    d.this.e = false;
-                    if (d.this.o) {
-                        if (d.this.c.position().x > d.this.i() / 2.0f) {
-                            d.this.l();
+                    VerticalPageRenderer.this.e = false;
+                    if (VerticalPageRenderer.this.o) {
+                        if (VerticalPageRenderer.this.c.position().x > VerticalPageRenderer.this.i() / 2.0f) {
+                            VerticalPageRenderer.this.l();
                         } else {
-                            d.this.g();
+                            VerticalPageRenderer.this.g();
                         }
                     }
-                    if (d.this.b && !d.this.u && d.this.s > 1.0f) {
-                        d.this.u();
+                    if (VerticalPageRenderer.this.b && !VerticalPageRenderer.this.u && VerticalPageRenderer.this.s > 1.0f) {
+                        VerticalPageRenderer.this.u();
                     }
                     if (this.d != null) {
                         this.d.f(motionEvent);
                         this.d = null;
                     }
-                    d.this.s = 0.0f;
-                    d.this.h = d.this.a(d.this.h);
+                    VerticalPageRenderer.this.s = 0.0f;
+                    VerticalPageRenderer.this.h = VerticalPageRenderer.this.a(VerticalPageRenderer.this.h);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (this.h && !d.this.o && this.d != null) {
+                if (this.h && !VerticalPageRenderer.this.o && this.d != null) {
                     this.d.a(motionEvent, motionEvent2);
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.h) {
-                    if (this.g && d.this.o) {
-                        d.this.g();
+                    if (this.g && VerticalPageRenderer.this.o) {
+                        VerticalPageRenderer.this.g();
                     } else if (this.d != null) {
                         this.d.a(motionEvent);
                     }
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.h) {
                     if (this.e) {
                         this.e = false;
                         if (Math.abs(f) > Math.abs(f2)) {
                             this.f = true;
-                            d.this.a();
+                            VerticalPageRenderer.this.a();
                         }
                     }
                     if (!this.f) {
-                        if (!d.this.o && this.d != null) {
+                        if (!VerticalPageRenderer.this.o && this.d != null) {
                             this.d.a(motionEvent, motionEvent2, f, f2);
                             return;
                         }
                         return;
                     }
-                    d.this.h = this.a + (motionEvent2.getX() - motionEvent.getX());
-                    if (!d.this.o) {
-                        d.this.h = com.tsf.shell.f.e.c.a(d.this.h, d.this.g, d.this.f, d.a);
+                    VerticalPageRenderer.this.h = this.a + (motionEvent2.getX() - motionEvent.getX());
+                    if (!VerticalPageRenderer.this.o) {
+                        VerticalPageRenderer.this.h = com.tsf.shell.f.e.c.a(VerticalPageRenderer.this.h, VerticalPageRenderer.this.g, VerticalPageRenderer.this.f, d.a);
                     }
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.h && this.f) {
-                    if (f < 0.0f && d.this.o) {
-                        d.this.g();
+                    if (f < 0.0f && VerticalPageRenderer.this.o) {
+                        VerticalPageRenderer.this.g();
                     }
-                    d.this.h = com.tsf.shell.f.e.c.a(d.this.h, f);
+                    VerticalPageRenderer.this.h = com.tsf.shell.f.e.c.a(VerticalPageRenderer.this.h, f);
                 }
             }
         });
@@ -243,10 +243,10 @@ public class d extends BaseRenderable {
         this.o = false;
         renderChildren(true);
         if (this.p != null && this.p.alpha() != 0.0f) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.A.d.3
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.ScreenConstants.d.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    d.this.p.visible(false);
+                    VerticalPageRenderer.this.p.visible(false);
                 }
             };
             dVar.a(0);
@@ -392,11 +392,11 @@ public class d extends BaseRenderable {
     private void q() {
         if (this.q != null) {
             this.r = true;
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.A.d.4
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.ScreenConstants.d.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    if (d.this.q != null) {
-                        d.this.q.visible(false);
+                    if (VerticalPageRenderer.this.q != null) {
+                        VerticalPageRenderer.this.q.visible(false);
                     }
                 }
             };
@@ -421,7 +421,7 @@ public class d extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
-        transferCanvas(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
+        transferCanvas(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
     }
 
     private void s() {

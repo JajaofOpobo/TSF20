@@ -5,7 +5,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.c.b;
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
 import com.censivn.C3DEngine.b.g.EasingFunctions;
 
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -24,7 +24,7 @@ public class LassoContextMenu implements b.a {
     private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable d;
     private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable e;
     private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable f;
-    private static com.censivn.C3DEngine.b.d.a j;
+    private static com.censivn.C3DEngine.b.d.MouseEventListener j;
     private static LassoContextMenu k;
     private static com.censivn.C3DEngine.b.g._b.TweenTargetWrapper l;
     private static int n;
@@ -57,7 +57,7 @@ public class LassoContextMenu implements b.a {
         this.q = aVar;
     }
 
-    public com.censivn.C3DEngine.b.d.a a() {
+    public com.censivn.C3DEngine.b.d.MouseEventListener a() {
         return j;
     }
 
@@ -91,23 +91,23 @@ public class LassoContextMenu implements b.a {
             com.censivn.C3DEngine.b.g.TweenUtils.a(c, 380, dVar);
             n = i2;
             o = i3;
-            if (i2 + (com.censivn.C3DEngine.b.b.A.a * 230.0f) > com.censivn.C3DEngine.b.b.A.A) {
-                i2 = (int) (com.censivn.C3DEngine.b.b.A.A - (com.censivn.C3DEngine.b.b.A.a * 230.0f));
+            if (i2 + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 230.0f) > com.censivn.C3DEngine.b.b.ScreenConstants.A) {
+                i2 = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.A - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 230.0f));
                 m = true;
-            } else if (i2 - (com.censivn.C3DEngine.b.b.A.a * 230.0f) < com.censivn.C3DEngine.b.b.A.z) {
-                i2 = (int) (com.censivn.C3DEngine.b.b.A.z + (com.censivn.C3DEngine.b.b.A.a * 230.0f));
+            } else if (i2 - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 230.0f) < com.censivn.C3DEngine.b.b.ScreenConstants.z) {
+                i2 = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 230.0f));
                 m = true;
             }
-            if (i3 + (com.censivn.C3DEngine.b.b.A.a * 150.0f) > com.censivn.C3DEngine.b.b.A.B) {
-                i3 = (int) (com.censivn.C3DEngine.b.b.A.B - (com.censivn.C3DEngine.b.b.A.a * 150.0f));
+            if (i3 + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 150.0f) > com.censivn.C3DEngine.b.b.ScreenConstants.B) {
+                i3 = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.B - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 150.0f));
                 m = true;
-            } else if (i3 - (com.censivn.C3DEngine.b.b.A.a * 150.0f) < com.censivn.C3DEngine.b.b.A.C) {
-                i3 = (int) (com.censivn.C3DEngine.b.b.A.C + (com.censivn.C3DEngine.b.b.A.a * 150.0f));
+            } else if (i3 - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 150.0f) < com.censivn.C3DEngine.b.b.ScreenConstants.C) {
+                i3 = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.C + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 150.0f));
                 m = true;
             }
             c.position().setAll(i2, i3, 0.0f);
             com.tsf.shell.manager.app.TaskScheduler.a(SpringEasing);
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
         }
     }
 
@@ -115,7 +115,7 @@ public class LassoContextMenu implements b.a {
         if (this.s) {
             this.s = false;
             if (!z) {
-                com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) null, true);
+                com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.MouseEventListener) null, true);
             }
             com.censivn.C3DEngine.b.g.TweenUtils.a(SpringEasing);
             a();
@@ -125,7 +125,7 @@ public class LassoContextMenu implements b.a {
             this.q = null;
             com.tsf.shell.manager.app.TaskScheduler.b(SpringEasing);
             k = null;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
         }
     }
 
@@ -171,7 +171,7 @@ public class LassoContextMenu implements b.a {
             }
         }
         a();
-        final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.A.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
+        final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.ScreenConstants.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
         f.alpha(0.0f);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.LassoContextMenu.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -263,13 +263,13 @@ public class LassoContextMenu implements b.a {
         bVarA6.h();
         e = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(6, 40, 240, 320);
         e.textures().addElement(AlignmentOverlay);
-        j = new com.censivn.C3DEngine.b.d.a(ObjectPool) { // from class: com.tsf.shell.f.e.LassoContextMenu.5
-            @Override // com.censivn.C3DEngine.b.d.a
+        j = new com.censivn.C3DEngine.b.d.MouseEventListener(ObjectPool) { // from class: com.tsf.shell.f.e.LassoContextMenu.5
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 com.tsf.shell.f.e.LassoContextMenu.c(com.tsf.shell.f.e.LassoContextMenu.b(motionEvent));
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (com.tsf.shell.f.e.LassoContextMenu.i != -1 && com.tsf.shell.f.e.LassoContextMenu.i != 5) {
                     w.b();
@@ -279,7 +279,7 @@ public class LassoContextMenu implements b.a {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 int iB = 5;
                 if (!com.tsf.shell.f.e.LassoContextMenu.m) {
@@ -299,13 +299,13 @@ public class LassoContextMenu implements b.a {
     }
 
     private static void a(final com.censivn.C3DEngine.b.f.a.SpriteItemData bVar) {
-        com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(ObjectPool) { // from class: com.tsf.shell.f.e.LassoContextMenu.6
-            @Override // com.censivn.C3DEngine.b.d.a
+        com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(ObjectPool) { // from class: com.tsf.shell.f.e.LassoContextMenu.6
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 com.tsf.shell.f.e.LassoContextMenu.c(bVar.J);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (com.tsf.shell.f.e.LassoContextMenu.i != -1 && com.tsf.shell.f.e.LassoContextMenu.i != 5) {
                     w.b();
@@ -315,7 +315,7 @@ public class LassoContextMenu implements b.a {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 int iB = 5;
                 if (!com.tsf.shell.f.e.LassoContextMenu.m) {
@@ -377,10 +377,10 @@ public class LassoContextMenu implements b.a {
             fAtan += 360.0f;
         }
         float f3 = fAtan + (h / 2);
-        if (fB < 50.0f * com.censivn.C3DEngine.b.b.A.a) {
+        if (fB < 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a) {
             return g;
         }
-        if (fB > 200.0f * com.censivn.C3DEngine.b.b.A.a) {
+        if (fB > 200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a) {
             return g;
         }
         int i6 = (int) (f3 / h);
@@ -479,15 +479,15 @@ public class LassoContextMenu implements b.a {
         this.r = hVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i2, KeyEvent keyEvent) {
         if (i2 == 4) {
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             CircleDotNode.a(-1, true);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i2, KeyEvent keyEvent) {
     }
 }

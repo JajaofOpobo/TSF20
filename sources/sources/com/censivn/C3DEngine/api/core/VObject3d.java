@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.UvBufferManager;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget;
-import com.censivn.C3DEngine.b.b.A;
+import com.censivn.C3DEngine.b.b.ScreenConstants;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.shader.Shader;

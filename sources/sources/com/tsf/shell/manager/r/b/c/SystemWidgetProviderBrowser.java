@@ -42,7 +42,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
         this.e = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         this.i = new com.censivn.C3DEngine.b.h.c.LoadingSpinner();
-        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.d.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f));
         this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.1
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -56,7 +56,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
                     com.tsf.shell.manager.r.b.a.AppListItemCell cVar = new com.tsf.shell.manager.r.b.a.AppListItemCell();
                     cVar.k.visible(true);
                     cVar.aO();
-                    cVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(cVar));
+                    cVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(cVar));
                     iVar2 = cVar;
                 } else {
                     iVar2 = iVar;

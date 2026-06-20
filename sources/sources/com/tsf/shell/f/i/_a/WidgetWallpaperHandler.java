@@ -7,7 +7,7 @@ import com.tsf.shell.f.f.PageTouchHandler;
 import com.tsf.shell.manager.action.GestureHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.a {
+public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private boolean a;
     private n.c b;
 
@@ -24,26 +24,26 @@ public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.a {
         this.a = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void h(MotionEvent motionEvent) {
         f.b(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.a) {
             com.tsf.shell.manager.app.StateHub.s().a(motionEvent, motionEvent2, f, f2);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.a) {
             com.tsf.shell.manager.app.StateHub.s().d(motionEvent, motionEvent2, f, f2);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void f(MotionEvent motionEvent) {
         if (this.a) {
             com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
@@ -53,21 +53,21 @@ public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void i(MotionEvent motionEvent) {
         if (this.a) {
             com.tsf.shell.manager.app.StateHub.s().b(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void j(MotionEvent motionEvent) {
         if (this.a) {
             com.tsf.shell.manager.app.StateHub.s().c(motionEvent);
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void c(MotionEvent motionEvent) {
         if (this.a && !this.b.a()) {
             com.tsf.shell.manager.app.ServiceFactory.n();
@@ -76,7 +76,7 @@ public class WidgetWallpaperHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         f.a(motionEvent);
     }

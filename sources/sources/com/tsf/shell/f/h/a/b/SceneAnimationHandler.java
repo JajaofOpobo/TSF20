@@ -1,7 +1,7 @@
 package com.tsf.shell.f.h.a.b;
 
-import com.censivn.C3DEngine.b.e.e;
-import com.censivn.C3DEngine.b.e.i;
+import com.censivn.C3DEngine.b.e.PercentLabelRenderer;
+import com.censivn.C3DEngine.b.e.PanelGroupRenderer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SceneAnimationHandler extends i {
@@ -24,17 +24,17 @@ public class SceneAnimationHandler extends i {
         b(this.c);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void h() {
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void f() {
         this.b.k(this.a.k());
         a(com.tsf.shell.manager.app.ServiceFactory.SceneAnimationHandler().a() == 0 ? b.i.text_top : b.i.text_bottom);
     }
 
-    @Override // com.censivn.C3DEngine.b.e.c
+    @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
     public void g() {
         if (this.b.e() != this.a.k()) {
             this.a.a(this.b.e(), true);

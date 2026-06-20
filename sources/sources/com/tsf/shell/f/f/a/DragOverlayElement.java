@@ -8,8 +8,8 @@ import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DragOverlayElement extends BaseRenderable {
-    private static final float c = com.censivn.C3DEngine.b.b.A.a(200.0f);
-    private static final int d = com.censivn.C3DEngine.b.b.A.b(100.0f);
+    private static final float c = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
+    private static final int d = com.censivn.C3DEngine.b.b.ScreenConstants.b(100.0f);
     private h b;
     private A e;
     private BaseRenderable a = new BaseRenderable();
@@ -41,8 +41,8 @@ public class DragOverlayElement extends BaseRenderable {
             textures().addElement(this.a);
             calAABB(1.2f, 1.2f, 1.0f);
             this.d = i;
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.1
-                @Override // com.censivn.C3DEngine.b.d.a
+            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.1
+                @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (PageElement.this.g != null) {
                         PageElement.this.g.b();
@@ -78,8 +78,8 @@ public class DragOverlayElement extends BaseRenderable {
         public void d() {
             if (e == null) {
                 e = new com.tsf.shell.f.e.CircleDotNode();
-                e.position().x = com.censivn.C3DEngine.b.b.A.a(50.0f);
-                e.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
+                e.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+                e.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
             }
             this.f = true;
         }
@@ -100,17 +100,17 @@ public class DragOverlayElement extends BaseRenderable {
         this.b = hVar;
         this.g.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
         this.e = new PageContainerBase(b.d.drawer_home);
-        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.3
+        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.3
             private float b;
             private float d;
             private boolean e = false;
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 com.tsf.shell.manager.app.FolderManager.a(100);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.e = false;
                 this.b = motionEvent.getX();
@@ -118,7 +118,7 @@ public class DragOverlayElement extends BaseRenderable {
                 com.tsf.shell.manager.action.GestureHandler.a(motionEvent);
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.e) {
                     com.tsf.shell.manager.app.StateHub.a(motionEvent2.getX(), motionEvent2.getY(), this.b, this.d);
@@ -129,7 +129,7 @@ public class DragOverlayElement extends BaseRenderable {
                 this.e = true;
             }
 
-            @Override // com.censivn.C3DEngine.b.d.a
+            @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (this.e) {
                     com.tsf.shell.manager.app.StateHub.x();
@@ -160,11 +160,11 @@ public class DragOverlayElement extends BaseRenderable {
                 }
             };
             dVar.a(0);
-            dVar.h(-com.censivn.C3DEngine.b.b.A.a(200.0f));
+            dVar.h(-com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f));
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 350, dVar);
             return;
         }
-        this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(200.0f);
+        this.a.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
         this.a.alpha(0.0f);
         if (runnable != null) {
             runnable.run();
@@ -187,8 +187,8 @@ public class DragOverlayElement extends BaseRenderable {
     }
 
     public void a(int i, int i2, int i3, int i4) {
-        position().y = com.censivn.C3DEngine.b.b.A.C + (c / 2.0f);
-        this.f.position().x = com.censivn.C3DEngine.b.b.A.A - com.censivn.C3DEngine.b.b.A.a(125.0f);
-        this.g.position().x = com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(125.0f);
+        position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C + (c / 2.0f);
+        this.f.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
+        this.g.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
     }
 }

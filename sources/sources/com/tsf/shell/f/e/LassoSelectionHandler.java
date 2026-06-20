@@ -146,8 +146,8 @@ public class LassoSelectionHandler {
 
     public boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f2, float f3, float f4, float f5) {
         Number3d number3dClone = iVar.position().m4clone();
-        number3dClone.x += com.censivn.C3DEngine.b.b.A.H;
-        number3dClone.y = com.censivn.C3DEngine.b.b.A.I - number3dClone.y;
+        number3dClone.x += com.censivn.C3DEngine.b.b.ScreenConstants.H;
+        number3dClone.y = com.censivn.C3DEngine.b.b.ScreenConstants.I - number3dClone.y;
         if (a(f2, f3, f4, f5, iVar.minX() + number3dClone.x, iVar.minY() + number3dClone.y, iVar.maxX() + number3dClone.x, iVar.minY() + number3dClone.y) || a(f2, f3, f4, f5, iVar.maxX() + number3dClone.x, iVar.minY() + number3dClone.y, iVar.maxX() + number3dClone.x, iVar.maxY() + number3dClone.y) || a(f2, f3, f4, f5, iVar.minX() + number3dClone.x, iVar.maxY() + number3dClone.y, iVar.maxX() + number3dClone.x, iVar.maxY() + number3dClone.y)) {
             return true;
         }

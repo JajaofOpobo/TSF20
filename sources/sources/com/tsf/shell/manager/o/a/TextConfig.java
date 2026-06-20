@@ -60,7 +60,7 @@ public class TextConfig {
     }
 
     public void f(int i) {
-        this.p = (int) (i * com.censivn.C3DEngine.b.b.A.c);
+        this.p = (int) (i * com.censivn.C3DEngine.b.b.ScreenConstants.c);
     }
 
     public void c(boolean z) {
@@ -73,7 +73,7 @@ public class TextConfig {
 
     public void b(float f) {
         this.j = true;
-        this.k = com.censivn.C3DEngine.b.b.A.c * f;
+        this.k = com.censivn.C3DEngine.b.b.ScreenConstants.c * f;
     }
 
     public void g(int i) {
@@ -85,7 +85,7 @@ public class TextConfig {
     }
 
     public void h(int i) {
-        this.c_ = (int) (i * com.censivn.C3DEngine.b.b.A.c);
+        this.c_ = (int) (i * com.censivn.C3DEngine.b.b.ScreenConstants.c);
     }
 
     public void i(int i) {

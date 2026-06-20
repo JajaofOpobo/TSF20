@@ -10,7 +10,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.censivn.C3DEngine.api.primitives.button.VButton;
 import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
-import com.censivn.C3DEngine.b.c.f;
+import com.censivn.C3DEngine.b.c.TextureFactory;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 

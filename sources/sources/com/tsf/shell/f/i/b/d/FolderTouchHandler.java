@@ -9,10 +9,10 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
+public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private static float[] l = {0.0f, 0.0f};
     private com.tsf.shell.f.i.b.d.FolderShortcutItem a;
-    private com.censivn.C3DEngine.b.d.a b;
+    private com.censivn.C3DEngine.b.d.MouseEventListener b;
     private boolean d;
     private com.tsf.shell.manager.d.HitTargetManager.C0127a e;
     private boolean f;
@@ -56,7 +56,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
         return this.f;
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void c(MotionEvent motionEvent) {
         super.c(motionEvent);
         this.k = false;
@@ -116,24 +116,24 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         this.a.aF().a(motionEvent, motionEvent2, f, f2);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         this.a.aF().a(f2);
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
         this.a.aF().a(0.0f);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x005e  */
     /* JADX WARN: Removed duplicated region for block: B:24:0x0072  */
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -146,7 +146,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
         throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.i.b.d.FolderTouchHandler.d(android.view.MotionEvent):void");
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
         super.a(motionEvent, motionEvent2);
         if (this.f) {
@@ -231,7 +231,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
         if (this.c.parent() instanceof g) {
             g gVar = (FolderItemGrid) this.c.parent();
@@ -244,7 +244,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.d.a
+    @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
         if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
             com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.c;

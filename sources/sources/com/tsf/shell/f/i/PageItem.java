@@ -196,7 +196,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
             @Override // java.lang.Runnable
             public void run() {
                 if (B.this._e == null) {
-                    B.this._e = com.tsf.shell.f.e.WidgetResizeResources.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.A.b * 10.0f)));
+                    B.this._e = com.tsf.shell.f.e.WidgetResizeResources.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
                     B.this._e.useVBO(false);
                     B.this._e.textures().addElement(com.tsf.shell.f.e.WidgetResizeResources.h);
                     B.this._e.position().y = (B.this.minY() + B.this.maxY()) / 2.0f;
@@ -413,7 +413,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
 
     public boolean ac() {
         ItemInfo itemInfoK = K();
-        if (com.censivn.C3DEngine.b.b.A.O) {
+        if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
             position().x = itemInfoK.cellX;
             position().y = itemInfoK.cellY;
             rotation().z = itemInfoK.rotation;

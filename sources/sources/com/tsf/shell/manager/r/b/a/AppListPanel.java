@@ -78,7 +78,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             }
         }));
         setFunctions(arrayList);
-        this.c = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.U) { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.4
+        this.c = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 20.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.T, (com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.U) { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.4
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
             }
@@ -100,7 +100,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                     cVar.k.visible(true);
                     cVar.position().y = AppListPanel.this.d;
                     cVar.aO();
-                    cVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(cVar));
+                    cVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(cVar));
                     iVar2 = cVar;
                 } else {
                     iVar2 = iVar;
@@ -236,7 +236,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     private void d() {
         if (!this.i) {
             this.i = true;
-            com.censivn.C3DEngine.b.c.b.a(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             this.h.f();
             this.a.showOption(this.h);
         }
@@ -245,19 +245,19 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     private void e() {
         if (this.i) {
             this.i = false;
-            com.censivn.C3DEngine.b.c.b.b(this);
+            com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
             this.a.showOption(getMenuContainer());
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
             AppListPanel();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.c.b.a
+    @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void b(int i, KeyEvent keyEvent) {
     }
 

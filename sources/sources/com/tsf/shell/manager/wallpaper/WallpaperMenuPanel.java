@@ -63,7 +63,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             }
         });
         this.c.add(new d(x.c(b.i.text_live_wallpapers)));
-        this.a = new h(com.censivn.C3DEngine.b.b.A.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.a(320.0f), com.censivn.C3DEngine.b.b.A.a(520.0f));
+        this.a = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(320.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(520.0f));
         this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.3
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -136,8 +136,8 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     static class MenuItem extends BaseRenderable {
-        public static final int b = (int) com.censivn.C3DEngine.b.b.A.a(300.0f);
-        public static final int c = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
+        public static final int b = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f);
+        public static final int c = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f);
         private LabelRenderable a = new LabelRenderable();
         private i d;
 
@@ -145,12 +145,12 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             this.a.a(str);
             this.a.d(36);
             addChild(this.a);
-            this.a.position().y = ((-c) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(5.0f);
+            this.a.position().y = ((-c) / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(5.0f);
         }
 
         public void a(i iVar) {
             this.d = iVar;
-            this.d.position().y = com.censivn.C3DEngine.b.b.A.a(25.0f);
+            this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f);
             addChild(this.d);
         }
 

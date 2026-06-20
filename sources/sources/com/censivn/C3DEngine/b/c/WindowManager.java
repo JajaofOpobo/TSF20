@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e {
+public class WindowManager {
     private int b_;
     private int c;
     private boolean g_;
@@ -39,10 +39,10 @@ public class e {
     }
 
     @SuppressLint({"NewApi"})
-    public e(Activity activity) {
+    public WindowManager(Activity activity) {
         com.tsf.shell.manager.app.AppListManager.B = this;
-        com.censivn.C3DEngine.b.b.A.b(activity);
-        com.censivn.C3DEngine.b.b.A.a(a(activity) ? 0 : DimensionHelper.a(activity));
+        com.censivn.C3DEngine.b.b.ScreenConstants.b(activity);
+        com.censivn.C3DEngine.b.b.ScreenConstants.a(a(activity) ? 0 : DimensionHelper.a(activity));
         StatusBarHelper.c();
         if (!com.tsf.shell.manager.b.e.P()) {
             this.g_ = true;
@@ -65,7 +65,7 @@ public class e {
             a(activity, true, false);
         }
         if (StatusBarHelper.b()) {
-            com.censivn.C3DEngine.b.b.A.a(activity, false);
+            com.censivn.C3DEngine.b.b.ScreenConstants.a(activity, false);
         }
         if (StatusBarHelper.b()) {
             this.b_ = activity.getResources().getConfiguration().screenHeightDp;
@@ -90,8 +90,8 @@ public class e {
                 homeB.setRequestedOrientation(0);
                 int orientation = homeB.getWindowManager().getDefaultDisplay().getOrientation();
                 homeB.setRequestedOrientation(requestedOrientation);
-                com.censivn.C3DEngine.b.b.A.N = (4 - orientation) % 4;
-                com.tsf.shell.manager.b.e.s(com.censivn.C3DEngine.b.b.A.N);
+                com.censivn.C3DEngine.b.b.ScreenConstants.N = (4 - orientation) % 4;
+                com.tsf.shell.manager.b.e.s(com.censivn.C3DEngine.b.b.ScreenConstants.N);
                 return;
             } catch (Exception e) {
                 HashMap map = new HashMap();
@@ -102,11 +102,11 @@ public class e {
                 }
                 map.put("error", str);
                 FlurryAnalyticsLogger.a("EVENT_ISSUSE_SET_REQUESTED_ORIENTATION", map);
-                com.censivn.C3DEngine.b.b.A.N = 3;
+                com.censivn.C3DEngine.b.b.ScreenConstants.N = 3;
                 return;
             }
         }
-        com.censivn.C3DEngine.b.b.A.N = iAt;
+        com.censivn.C3DEngine.b.b.ScreenConstants.N = iAt;
     }
 
     public void a(a aVar) {
@@ -134,7 +134,7 @@ public class e {
         if (!this.e) {
             this.e = true;
             if (com.tsf.shell.manager.b.e.a(activity) == -1) {
-                switch ((activity.getWindowManager().getDefaultDisplay().getRotation() + com.censivn.C3DEngine.b.b.A.N) % 4) {
+                switch ((activity.getWindowManager().getDefaultDisplay().getRotation() + com.censivn.C3DEngine.b.b.ScreenConstants.N) % 4) {
                     case 0:
                         activity.setRequestedOrientation(0);
                         break;
@@ -172,15 +172,15 @@ public class e {
         if (StatusBarHelper.b()) {
             if (this.b_ != configuration.screenHeightDp) {
                 this.b_ = configuration.screenHeightDp;
-                com.censivn.C3DEngine.b.b.A.a(activity, this.c == configuration.orientation);
+                com.censivn.C3DEngine.b.b.ScreenConstants.a(activity, this.c == configuration.orientation);
             }
             if (this.c != configuration.orientation) {
                 this.c = configuration.orientation;
-                if (b() && com.censivn.C3DEngine.b.b.A.K == 0) {
+                if (b() && com.censivn.C3DEngine.b.b.ScreenConstants.K == 0) {
                     a(activity, false, false);
                 } else if (b() != com.tsf.shell.manager.b.e.N()) {
                     a(activity, com.tsf.shell.manager.b.e.N(), false);
-                    com.censivn.C3DEngine.b.b.A.a(activity);
+                    com.censivn.C3DEngine.b.b.ScreenConstants.a(activity);
                 }
                 d(activity);
             }
@@ -248,7 +248,7 @@ public class e {
 
     public void a(final Activity activity, final boolean z, final boolean z2, final boolean z3) {
         if (this.h) {
-            this.i.add(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.1
+            this.i.add(new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.1
                 @Override // java.lang.Runnable
                 public void run() {
                     e.this.a(activity, z, z2, z3);
@@ -266,10 +266,10 @@ public class e {
             activity.getWindow().setAttributes(attributes2);
         }
         if (z2) {
-            com.censivn.C3DEngine.b.b.A.c();
+            com.censivn.C3DEngine.b.b.ScreenConstants.c();
         }
         this.h = true;
-        Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.2
+        Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.2
             @Override // java.lang.Runnable
             public void run() {
                 e.this.h = false;
@@ -303,18 +303,18 @@ public class e {
                 this.g_ = false;
             }
             com.tsf.shell.manager.b.e.d(Boolean.valueOf(this.g_ ? false : true));
-            com.censivn.C3DEngine.b.b.A.c();
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.3
+            com.censivn.C3DEngine.b.b.ScreenConstants.c();
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    e.this.a(com.censivn.C3DEngine.b.b.A.B, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A);
+                    e.this.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
                 }
             });
         }
     }
 
     public void d() {
-        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.4
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.4
             @Override // java.lang.Runnable
             public void run() {
                 e.this.a(!e.this.g_);
@@ -323,14 +323,14 @@ public class e {
     }
 
     public void e() {
-        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5
+        com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.5
             @Override // java.lang.Runnable
             public void run() {
                 if (e.this.c()) {
                     e.this.a(false);
                     e.this.j_ = true;
                 }
-                Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.e.5.1
+                Runnable runnable = new Runnable() { // from class: com.censivn.C3DEngine.b.c.WindowManager.5.1
                     @Override // java.lang.Runnable
                     @SuppressLint({"NewApi"})
                     public void run() {
@@ -351,12 +351,12 @@ public class e {
                                     if (launcherAccessibilityServiceA != null) {
                                         launcherAccessibilityServiceA.performGlobalAction(4);
                                     } else {
-                                        new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d()).setTitle(com.tsf.b.i.accessibility_service_enable).setMessage(com.tsf.b.i.accessibility_service_enable_long).setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.2
+                                        new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d()).setTitle(com.tsf.b.i.accessibility_service_enable).setMessage(com.tsf.b.i.accessibility_service_enable_long).setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.WindowManager.5.1.2
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                                 Home.b().startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
                                             }
-                                        }).setNegativeButton(com.tsf.b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.e.5.1.1
+                                        }).setNegativeButton(com.tsf.b.i.public_action_cancel, new DialogInterface.OnClickListener() { // from class: com.censivn.C3DEngine.b.c.WindowManager.5.1.1
                                             @Override // android.content.DialogInterface.OnClickListener
                                             public void onClick(DialogInterface dialogInterface, int i) {
                                             }
@@ -390,9 +390,9 @@ public class e {
             return 0;
         }
         if (activity.getResources().getConfiguration().screenHeightDp < activity.getResources().getConfiguration().screenWidthDp) {
-            iA = (com.censivn.C3DEngine.b.b.A.L - com.censivn.C3DEngine.b.b.A.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.ScreenConstants.L - com.censivn.C3DEngine.b.b.ScreenConstants.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         } else {
-            iA = (com.censivn.C3DEngine.b.b.A.M - com.censivn.C3DEngine.b.b.A.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
+            iA = (com.censivn.C3DEngine.b.b.ScreenConstants.M - com.censivn.C3DEngine.b.b.ScreenConstants.J) - DimensionHelper.a(activity, activity.getResources().getConfiguration().screenHeightDp);
         }
         if (iA < 5) {
             return 0;
@@ -415,7 +415,7 @@ public class e {
     }
 
     public static class b implements a {
-        @Override // com.censivn.C3DEngine.b.c.e.a
+        @Override // com.censivn.C3DEngine.b.c.WindowManager.a
         public void a(int i, int i2, int i3, int i4) {
         }
     }

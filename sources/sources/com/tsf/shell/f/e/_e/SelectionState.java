@@ -70,7 +70,7 @@ public class SelectionState {
                 invalidate();
             }
         };
-        a aVar = new SelectionIndicator(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.2
+        a aVar = new SelectionIndicator(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.2
             @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 super.a(fVar);
@@ -135,7 +135,7 @@ public class SelectionState {
         aVar.textures().addElement(this.a);
         this.g.addChild(aVar);
         this.g.setAABBPX(aVar.minX(), aVar.minY(), aVar.minZ(), aVar.maxX(), aVar.maxY(), aVar.maxZ());
-        b bVar = new SelectionCallback(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.3
+        b bVar = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.3
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 w.a(3);
@@ -169,7 +169,7 @@ public class SelectionState {
         bVar.textures().addElement(this.b);
         this.h.addChild(bVar);
         this.h.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
-        b bVar2 = new SelectionCallback(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.4
+        b bVar2 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.4
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 if (!com.tsf.shell.manager.app.StateHub.n().c()) {
@@ -201,7 +201,7 @@ public class SelectionState {
         bVar2.textures().addElement(this.c);
         this.i.addChild(bVar2);
         this.i.setAABBPX(bVar2.minX(), bVar2.minY(), bVar2.minZ(), bVar2.maxX(), bVar2.maxY(), bVar2.maxZ());
-        a aVar2 = new SelectionIndicator(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.5
+        a aVar2 = new SelectionIndicator(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.5
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean a() {
                 return super.a();
@@ -243,7 +243,7 @@ public class SelectionState {
         aVar2.textures().addElement(this.a);
         this.j.addChild(aVar2);
         this.j.setAABBPX(aVar2.minX(), aVar2.minY(), aVar2.minZ(), aVar2.maxX(), aVar2.maxY(), aVar2.maxZ());
-        b bVar3 = new SelectionCallback(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.6
+        b bVar3 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.6
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean a() {
                 return super.a();
@@ -284,7 +284,7 @@ public class SelectionState {
         bVar3.textures().addElement(this.d);
         this.k.addChild(bVar3);
         this.k.setAABBPX(bVar3.minX(), bVar3.minY(), bVar3.minZ(), bVar3.maxX(), bVar3.maxY(), bVar3.maxZ());
-        b bVar4 = new SelectionCallback(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.7
+        b bVar4 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.7
             @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             }
@@ -335,8 +335,8 @@ public class SelectionState {
                 f4 = 0.0f;
                 f3 = 0.0f;
             } else {
-                f3 = com.censivn.C3DEngine.b.b.A.D / length;
-                f4 = com.censivn.C3DEngine.b.b.A.z + (f3 / 2.0f);
+                f3 = com.censivn.C3DEngine.b.b.ScreenConstants.D / length;
+                f4 = com.censivn.C3DEngine.b.b.ScreenConstants.z + (f3 / 2.0f);
             }
             ArrayList<com.tsf.shell.f.e._e.SelectionCallback> arrayList = new ArrayList();
             for (int i = 0; i < length; i++) {
@@ -366,7 +366,7 @@ public class SelectionState {
                     l.a(this, "ElementEditer wrong show type:" + i2);
                 } else {
                     bVar2.a();
-                    bVar2.a((i * f3) + f4, com.censivn.C3DEngine.b.b.A.I - (com.tsf.shell.manager.app.Notifier.b() / 2.0f), true);
+                    bVar2.a((i * f3) + f4, com.censivn.C3DEngine.b.b.ScreenConstants.I - (com.tsf.shell.manager.app.Notifier.b() / 2.0f), true);
                     arrayList.add(bVar2);
                 }
             }
@@ -404,7 +404,7 @@ public class SelectionState {
 
     public void a(float f, float f2) {
         if (this.r) {
-            if (this.q && x.b(this.o, this.p, f, f2) > com.censivn.C3DEngine.b.b.A.a(250.0f)) {
+            if (this.q && x.b(this.o, this.p, f, f2) > com.censivn.C3DEngine.b.b.ScreenConstants.a(250.0f)) {
                 Iterator<i> it = this.n.children().iterator();
                 while (it.hasNext()) {
                     ((com.tsf.shell.f.e._e.SelectionCallback) it.next()).a();
@@ -434,7 +434,7 @@ public class SelectionState {
 
         public a(float f, float f2, boolean z) {
             super(f, f2, z);
-            this.a = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(64.0f), com.censivn.C3DEngine.b.b.A.a(14.0f), false) { // from class: com.tsf.shell.f.e._e.SelectionState.a.1
+            this.a = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(64.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(14.0f), false) { // from class: com.tsf.shell.f.e._e.SelectionState.a.1
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (SelectionIndicator.d.id == 0) {
@@ -444,7 +444,7 @@ public class SelectionState {
             };
             this.a.moveAllPointsPX(this.a.b() / 2.0f, this.a.c() / 2.0f, 0.0f);
             this.a.position().x = (-this.a.b()) / 2.0f;
-            this.a.position().y = com.censivn.C3DEngine.b.b.A.a(18.0f);
+            this.a.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(18.0f);
             this.a.textures().addElement(WorkspaceLayoutItem);
             addChild(this.a);
         }

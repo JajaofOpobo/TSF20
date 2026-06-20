@@ -83,8 +83,8 @@ public final class a extends com.censivn.C3DEngine.b.l {
 
     @Override // com.censivn.C3DEngine.b.l
     public final void e(MotionEvent motionEvent) {
-        com.censivn.C3DEngine.b.b.d = ThemeShellDescription.PICKER_MENU;
-        com.censivn.C3DEngine.b.b.c = this.d * this.d;
+        com.censivn.C3DEngine.b.b.ZoomRenderer = ThemeShellDescription.PICKER_MENU;
+        com.censivn.C3DEngine.b.b.DesktopRenderer = this.d * this.d;
         this.f = motionEvent.getX();
         this.g = motionEvent.getY();
         com.tsf.shell.action.c.a();

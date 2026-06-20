@@ -29,7 +29,7 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
 
     @Override // com.tsf.shell.f.c.b.a.IDrawerSettingsCallback
     public void a(i iVar) {
-        iVar.setAABBPX((-this.d) / 2.0f, -com.censivn.C3DEngine.b.b.A.g, 0.0f, this.d / 2.0f, com.censivn.C3DEngine.b.b.A.h + (com.censivn.C3DEngine.b.b.A.g / 2.0f), 0.0f);
+        iVar.setAABBPX((-this.d) / 2.0f, -com.censivn.C3DEngine.b.b.ScreenConstants.g, 0.0f, this.d / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.h + (com.censivn.C3DEngine.b.b.ScreenConstants.g / 2.0f), 0.0f);
     }
 
     @Override // com.tsf.shell.f.c.b.a.IDrawerSettingsCallback
@@ -178,25 +178,25 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
             this.a = new IDrawerSettingsCallback.C0084a();
         }
         this.a.e = 0.0f;
-        this.a.f = com.censivn.C3DEngine.b.b.A.g / 2;
+        this.a.f = com.censivn.C3DEngine.b.b.ScreenConstants.g / 2;
         this.a.i = 0.0f;
-        this.a.j = (-com.censivn.C3DEngine.b.b.A.g) / 2;
+        this.a.j = (-com.censivn.C3DEngine.b.b.ScreenConstants.g) / 2;
         this.a.g = 0.0f;
-        this.a.h = com.censivn.C3DEngine.b.b.A.g + com.censivn.C3DEngine.b.b.A.h;
+        this.a.h = com.censivn.C3DEngine.b.b.ScreenConstants.g + com.censivn.C3DEngine.b.b.ScreenConstants.h;
         this.a.k = 0.0f;
-        this.a.l = com.censivn.C3DEngine.b.b.A.h;
+        this.a.l = com.censivn.C3DEngine.b.b.ScreenConstants.h;
         if (this.j.e()) {
-            float fA = 0.0f - com.censivn.C3DEngine.b.b.A.a(135.0f);
+            float fA = 0.0f - com.censivn.C3DEngine.b.b.ScreenConstants.a(135.0f);
             this.a.a = 0.0f;
             this.a.b = fA;
             this.a.c = 0.0f;
-            this.a.d = (fA - com.censivn.C3DEngine.b.b.A.g) - (com.censivn.C3DEngine.b.b.A.h * 2.0f);
+            this.a.d = (fA - com.censivn.C3DEngine.b.b.ScreenConstants.g) - (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2.0f);
             return;
         }
         this.a.a = 0.0f;
-        this.a.b = com.censivn.C3DEngine.b.b.A.C;
+        this.a.b = com.censivn.C3DEngine.b.b.ScreenConstants.C;
         this.a.c = 0.0f;
-        this.a.d = (com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.g) - (com.censivn.C3DEngine.b.b.A.h * 2.0f);
+        this.a.d = (com.censivn.C3DEngine.b.b.ScreenConstants.C - com.censivn.C3DEngine.b.b.ScreenConstants.g) - (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2.0f);
     }
 
     @Override // com.tsf.shell.f.c.b.a.IDrawerSettingsCallback
@@ -209,6 +209,6 @@ public class DrawerSettingsResult implements IDrawerSettingsCallback {
 
     @Override // com.tsf.shell.f.c.b.a.IDrawerSettingsCallback
     public void a(Number3d number3d) {
-        number3d.y = (com.censivn.C3DEngine.b.b.A.C + (com.censivn.C3DEngine.b.b.A.g / 2.0f)) - this.k.Y;
+        number3d.y = (com.censivn.C3DEngine.b.b.ScreenConstants.C + (com.censivn.C3DEngine.b.b.ScreenConstants.g / 2.0f)) - this.k.Y;
     }
 }

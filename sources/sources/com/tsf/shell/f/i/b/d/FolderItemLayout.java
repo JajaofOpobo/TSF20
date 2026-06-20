@@ -87,8 +87,8 @@ public class FolderItemLayout {
                 MatrixStack.glPopMatrix();
             }
             com.tsf.shell.manager.app.TextureCache.b();
-            GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
-            com.censivn.C3DEngine.C3DEngine.e().a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
+            GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
+            com.censivn.C3DEngine.C3DEngine.e().a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
             bVar.position().setAllFrom(FolderItemDotIndicator);
             bVar.rotation().setAllFrom(FolderItemPositioner);
             bVar.b(fX);

@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.f.GridRenderable;
 public class GestureTipElement extends BaseRenderable {
     private TextureElement a = new TextureElement(0, false);
     private TextureElement b = new TextureElement(0, false);
-    private GridRenderable c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
+    private GridRenderable c = com.censivn.C3DEngine.b.b.ScreenConstants.a(103.0f, 149.0f);
     private GridRenderable d;
 
     public void a() {
@@ -19,7 +19,7 @@ public class GestureTipElement extends BaseRenderable {
 
     public void a(float f, float f2, int i, Runnable runnable) {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.f(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f));
+        dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f));
         dVar.h(f2);
         dVar.a(runnable);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this);

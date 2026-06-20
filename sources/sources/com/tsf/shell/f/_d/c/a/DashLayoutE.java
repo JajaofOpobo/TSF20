@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashLayoutE extends DashLayoutContainer {
-    private static float a = 50.0f * com.censivn.C3DEngine.b.b.A.c;
+    private static float a = 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     private boolean c;
     private boolean d;
 
@@ -18,8 +18,8 @@ public class DashLayoutE extends DashLayoutContainer {
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
-        float fA = com.censivn.C3DEngine.b.b.A.a(70.0f);
-        float fA2 = com.censivn.C3DEngine.b.b.A.a(110.0f);
+        float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f);
+        float fA2 = com.censivn.C3DEngine.b.b.ScreenConstants.a(110.0f);
         float f = fA2 / 3.0f;
         float f2 = fA2 / 2.0f;
         for (int i = 0; i < 4; i++) {
@@ -63,19 +63,19 @@ public class DashLayoutE extends DashLayoutContainer {
         ArrayList<DashLayoutA.c> arrayListC = com.tsf.shell.manager.app.v.ScreenHelper.d().c();
         j jVarD = com.tsf.shell.manager.app.v.ScreenHelper.d().d();
         int size = arrayList.size();
-        float f4 = 120.0f * com.censivn.C3DEngine.b.b.A.c * (size - 1);
-        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f) + a > com.censivn.C3DEngine.b.b.A.B) {
-            f3 = ((com.censivn.C3DEngine.b.b.A.B - a) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2;
-        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.A.C) {
-            f3 = f4 + (((com.censivn.C3DEngine.b.b.A.C + a) + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2);
+        float f4 = 120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * (size - 1);
+        if ((f4 / 2.0f) + f2 + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f) + a > com.censivn.C3DEngine.b.b.ScreenConstants.B) {
+            f3 = ((com.censivn.C3DEngine.b.b.ScreenConstants.B - a) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2;
+        } else if (((f2 - (f4 / 2.0f)) - (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - a < com.censivn.C3DEngine.b.b.ScreenConstants.C) {
+            f3 = f4 + (((com.censivn.C3DEngine.b.b.ScreenConstants.C + a) + (com.tsf.shell.manager.g.LayoutDimensionConstants.h / 2.0f)) - f2);
         } else {
             f3 = f4 / 2.0f;
         }
         this.c = f < 0.0f;
         if (this.c) {
-            jVarD.position().x = 190.0f * com.censivn.C3DEngine.b.b.A.c;
+            jVarD.position().x = 190.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         } else {
-            jVarD.position().x = (-190.0f) * com.censivn.C3DEngine.b.b.A.c;
+            jVarD.position().x = (-190.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         }
         jVarD.position().y = f3;
         for (int i = 0; i < size; i++) {
@@ -102,11 +102,11 @@ public class DashLayoutE extends DashLayoutContainer {
     }
 
     private float c(DashLayoutA.c cVar) {
-        return this.c ? (80.0f * com.censivn.C3DEngine.b.b.A.c) + (com.censivn.C3DEngine.b.b.A.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.A.c) - (com.censivn.C3DEngine.b.b.A.c * 60.0f);
+        return this.c ? (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c) + (com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f) : ((-80.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c) - (com.censivn.C3DEngine.b.b.ScreenConstants.c * 60.0f);
     }
 
     private float d(DashLayoutA.c cVar) {
-        return this.c ? 80.0f * com.censivn.C3DEngine.b.b.A.c : (-80.0f) * com.censivn.C3DEngine.b.b.A.c;
+        return this.c ? 80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c : (-80.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
     }
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
@@ -128,7 +128,7 @@ public class DashLayoutE extends DashLayoutContainer {
     private void a(DashLayoutA.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.TweenCallback bVar) {
         cVar.scale().x = 0.0f;
         cVar.scale().y = 0.0f;
-        cVar.position().y = (-120.0f) * com.censivn.C3DEngine.b.b.A.c * i;
+        cVar.position().y = (-120.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c * i;
         cVar.d.position().x = d(cVar);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.c.a.DashLayoutE.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
