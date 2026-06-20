@@ -27,7 +27,7 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeAlbumsPager;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ao;
@@ -153,7 +153,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         File file;
         String str;
         com.tsf.extend.base.j.p.a((Activity) this);
-        com.tsf.extend.wallpaper.a.a.a(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.a(this);
         z.h();
         getWindow().addFlags(ItemInfo.APP_VERSION_CODE);
         getWindow().addFlags(ItemInfo.APP_VERSION_NAME);
@@ -171,7 +171,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         int intExtra = getIntent().getIntExtra("target", 1);
         e = a((Context) this).getInt("use_new_icon", 2) == 2;
         this.w = getIntent().getBooleanExtra("isPro", false);
-        this.i = (PersonalizationPager) LayoutInflater.from(this).inflate(f.C0052f.personalize_group, (ViewGroup) null);
+        this.i = (PersonalizationPager) LayoutInflater.from(this).inflate(ResourceIds.C0052f.personalize_group, (ViewGroup) null);
         if (intExtra == 1) {
             if (getIntent().getStringExtra("inlet") == null) {
             }
@@ -216,7 +216,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             String stringExtra5 = getIntent().getStringExtra("id");
             String stringExtra6 = getIntent().getStringExtra("inlet");
             if (("5".equals(stringExtra6) || "4".equals(stringExtra6) || "2".equals(stringExtra6)) && !"theme_push_notifition_invalid".equals(stringExtra5)) {
-                ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(this).inflate(f.C0052f.theme_albums_list, (ViewGroup) null);
+                ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(this).inflate(ResourceIds.C0052f.theme_albums_list, (ViewGroup) null);
                 themeAlbumsPager.a(stringExtra5, (String) null, "105");
                 a((PageActivity.a) themeAlbumsPager);
             }
@@ -258,7 +258,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     public void a(String str, String str2, boolean z, String str3) {
         try {
             long j2 = Long.parseLong(str);
-            ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+            ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
             themeDetail.a(j2, str2, z, str3);
             if ("2".equals(str3)) {
                 themeDetail.setFromInlet("5");
@@ -385,7 +385,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         ao.b().a((ao.a) null);
         z.h().f();
         com.tsf.extend.theme.v.h().f();
-        com.tsf.extend.wallpaper.a.a.b(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.b(this);
         this.i = null;
         this.k.clear();
         if (this.l != null) {
@@ -909,7 +909,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     /* JADX INFO: Access modifiers changed from: private */
     public void q() {
         if (!isDestroyed() && o()) {
-            com.tsf.extend.keyboard.a.h().a(new d(this));
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().a(new d(this));
         }
     }
 
@@ -928,7 +928,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                     if (aVar == null) {
                         personalizationActivity.r();
                     } else {
-                        com.tsf.extend.keyboard.a.h().b(aVar);
+                        com.tsf.extend.keyboard.KeyboardDataProvider.h().b(aVar);
                     }
                 }
             }
@@ -941,7 +941,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void r() {
-        com.tsf.extend.keyboard.a.h().a(new e(this), com.tsf.extend.base.d.a.b.Refresh);
+        com.tsf.extend.keyboard.KeyboardDataProvider.h().a(new e(this), com.tsf.extend.base.d.a.b.Refresh);
     }
 
     static class e implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
@@ -957,13 +957,13 @@ public class PersonalizationActivity extends PageActivity implements d.a {
                 Calendar calendar = Calendar.getInstance();
                 aVar.e(calendar.get(5) + ((calendar.get(2) + 1) * 100));
             }
-            com.tsf.extend.keyboard.a.h().b(aVar);
-            com.tsf.extend.keyboard.a.h().a(aVar);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().b(aVar);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().a(aVar);
         }
 
         @Override // com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
-            com.tsf.extend.keyboard.a.h().b((com.tsf.extend.base.b.A) null);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().b((com.tsf.extend.base.b.A) null);
         }
     }
 

@@ -7,7 +7,7 @@ import android.util.TypedValue;
 public class i {
     public static Float a;
     public static Float b;
-    private static DisplayMetrics c = com.tsf.extend.h.b().getResources().getDisplayMetrics();
+    private static DisplayMetrics c = com.tsf.extend.AppContextHolder.b().getResources().getDisplayMetrics();
 
     public static float a() {
         return c.density;
@@ -28,11 +28,11 @@ public class i {
     }
 
     public static int d() {
-        return com.tsf.extend.h.b().getResources().getDisplayMetrics().widthPixels;
+        return com.tsf.extend.AppContextHolder.b().getResources().getDisplayMetrics().widthPixels;
     }
 
     public static int e() {
-        return com.tsf.extend.h.b().getResources().getDisplayMetrics().heightPixels;
+        return com.tsf.extend.AppContextHolder.b().getResources().getDisplayMetrics().heightPixels;
     }
 
     private static float a(int i, float f, DisplayMetrics displayMetrics) {

@@ -45,8 +45,8 @@ import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ThemePullToRefreshListView;
 import com.tsf.extend.theme.ao;
@@ -66,7 +66,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WallpaperDetail extends FrameLayout implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener, View.OnClickListener, PageActivity.a, HorzontalSliderView.a, TabViewPager.a, WallpaperImageView.a, com.tsf.extend.wallpaper.a.a.b, aa.a, i.a {
+public class WallpaperDetail extends FrameLayout implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener, View.OnClickListener, PageActivity.a, HorzontalSliderView.a, TabViewPager.a, WallpaperImageView.a, com.tsf.extend.wallpaper.a.WallpaperChangeManager.b, aa.a, i.a {
     private boolean A;
     private HorzontalSliderView B;
     private ImageView C;
@@ -94,7 +94,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     private boolean o;
     private int p;
     private WallpaperManager q;
-    private com.tsf.extend.e r;
+    private com.tsf.extend.ThemeDialogFragment r;
     private boolean s;
     private boolean t;
     private Handler u;
@@ -142,17 +142,17 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         this.j = new A();
         this.e = Lists.newArrayList();
         this.d = LayoutInflater.from(getContext());
-        this.g = (ImageView) findViewById(f.e.go_to_list);
-        this.C = (ImageView) findViewById(f.e.switch_scale);
-        this.B = (HorzontalSliderView) findViewById(f.e.slider);
+        this.g = (ImageView) findViewById(ResourceIds.e.go_to_list);
+        this.C = (ImageView) findViewById(ResourceIds.e.switch_scale);
+        this.B = (HorzontalSliderView) findViewById(ResourceIds.e.slider);
         this.B.setSliderChangeListener(this);
         this.n = new d();
-        this.l = findViewById(f.e.setting_wallpaper);
-        this.m = (ProgressBar) findViewById(f.e.setting_wallpaper_progress);
-        this.m = (ProgressBar) findViewById(f.e.setting_wallpaper_progress);
+        this.l = findViewById(ResourceIds.e.setting_wallpaper);
+        this.m = (ProgressBar) findViewById(ResourceIds.e.setting_wallpaper_progress);
+        this.m = (ProgressBar) findViewById(ResourceIds.e.setting_wallpaper_progress);
         this.m.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
-        this.g.setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), f.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
-        this.h = (ImageView) findViewById(f.e.launcher_preview);
+        this.g.setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+        this.h = (ImageView) findViewById(ResourceIds.e.launcher_preview);
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.h.getLayoutParams();
         layoutParams.bottomMargin = -com.tsf.extend.base.j.p.c(getContext());
         this.h.setLayoutParams(layoutParams);
@@ -160,7 +160,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         this.g.setOnClickListener(this);
         this.C.setOnClickListener(this);
         this.c = Lists.newArrayList();
-        this.b = (TabViewPager) findViewById(f.e.view_pager);
+        this.b = (TabViewPager) findViewById(ResourceIds.e.view_pager);
         this.b.setOnPageChangeListener(new ViewPager.e() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.1
             private int b = 0;
 
@@ -201,7 +201,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         this.b.setOnTabListener(this);
         this.z = this.x.c();
         this.x.a((aa.a) this);
-        this.y = findViewById(f.e.favorite_anim);
+        this.y = findViewById(ResourceIds.e.favorite_anim);
         this.y.setOnTouchListener(new View.OnTouchListener() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.6
             @Override // android.view.View.OnTouchListener
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -258,9 +258,9 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     public void a(PageActivity pageActivity) {
         if (pageActivity instanceof PersonalizationActivity) {
             this.f = (PersonalizationActivity) pageActivity;
-            this.f.b(true);
+            this.ResourceIds.b(true);
             if (this.I == null) {
-                this.I = this.f.getIntent().getStringExtra("inlet");
+                this.I = this.ResourceIds.getIntent().getStringExtra("inlet");
             }
         }
     }
@@ -279,13 +279,13 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        com.tsf.extend.wallpaper.a.a.a(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.a(this);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        com.tsf.extend.wallpaper.a.a.b(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.b(this);
         aa.a().d();
         z.h().a((List<WeakReference<e>>) null);
         if (this.e != null) {
@@ -326,7 +326,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             return true;
         }
         this.k.putInt("index", this.b.getCurrentItem());
-        this.f.b(false);
+        this.ResourceIds.b(false);
         a(mVar, (com.tsf.extend.theme.k) null, "3");
         return false;
     }
@@ -365,11 +365,11 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         });
     }
 
-    private class f extends com.tsf.extend.base.support.a {
+    private class f extends com.tsf.extend.base.support.PagerAdapterCompat {
         private f() {
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             if (WallpaperDetail.this.c == null) {
                 return 0;
@@ -380,26 +380,26 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         private void a(e eVar, View view, s sVar) {
             boolean zC;
             boolean z = false;
-            eVar.f = view.findViewById(f.e.controll_view);
-            eVar.g = (ImageView) view.findViewById(f.e.preview);
-            eVar.h = (TextView) view.findViewById(f.e.set_wallpaper);
-            eVar.i = view.findViewById(f.e.favorite);
-            eVar.j = view.findViewById(f.e.delete);
-            com.tsf.extend.base.widget.pulltorefresh.e eVar2 = new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(f.d.wallpaper_preview_btn));
+            eVar.f = view.findViewById(ResourceIds.e.controll_view);
+            eVar.g = (ImageView) view.findViewById(ResourceIds.e.preview);
+            eVar.h = (TextView) view.findViewById(ResourceIds.e.set_wallpaper);
+            eVar.i = view.findViewById(ResourceIds.e.favorite);
+            eVar.j = view.findViewById(ResourceIds.e.delete);
+            com.tsf.extend.base.widget.pulltorefresh.e eVar2 = new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.wallpaper_preview_btn));
             eVar.g.setImageDrawable(eVar2);
             eVar.B.setImageDrawable(eVar2);
             eVar.g.setOnClickListener(WallpaperDetail.this);
             eVar.B.setOnClickListener(WallpaperDetail.this);
-            eVar.h.setText(WallpaperDetail.this.getResources().getString(f.g.set_as_wallpaper).toUpperCase());
+            eVar.h.setText(WallpaperDetail.this.getResources().getString(ResourceIds.g.set_as_wallpaper).toUpperCase());
             eVar.h.setOnClickListener(WallpaperDetail.this);
-            eVar.C.setText(WallpaperDetail.this.getResources().getString(f.g.set_as_wallpaper).toUpperCase());
+            eVar.C.setText(WallpaperDetail.this.getResources().getString(ResourceIds.g.set_as_wallpaper).toUpperCase());
             eVar.C.setOnClickListener(WallpaperDetail.this);
             eVar.i.setOnClickListener(WallpaperDetail.this);
             eVar.D.setOnClickListener(WallpaperDetail.this);
             eVar.j.setOnClickListener(WallpaperDetail.this);
             eVar.E.setOnClickListener(WallpaperDetail.this);
-            eVar.k = view.findViewById(f.e.expand_panel);
-            eVar.l = (TextView) view.findViewById(f.e.author);
+            eVar.k = view.findViewById(ResourceIds.e.expand_panel);
+            eVar.l = (TextView) view.findViewById(ResourceIds.e.author);
             if (sVar instanceof com.tsf.extend.wallpaper.g) {
                 zC = ((com.tsf.extend.wallpaper.g) sVar).c();
             } else {
@@ -416,7 +416,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             } else {
                 c(eVar, false);
             }
-            eVar.n = view.findViewById(f.e.wallpaper_layout);
+            eVar.n = view.findViewById(ResourceIds.e.wallpaper_layout);
         }
 
         private void a(e eVar, boolean z) {
@@ -456,10 +456,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 if (mVar.l() && !TextUtils.isEmpty(mVar.o())) {
                     eVar.k.setVisibility(0);
                     eVar.l.setVisibility(0);
-                    eVar.l.setText(WallpaperDetail.this.getResources().getString(f.g.wallpaper_author_by) + mVar.o());
+                    eVar.l.setText(WallpaperDetail.this.getResources().getString(ResourceIds.g.wallpaper_author_by) + mVar.o());
                     eVar.G.setVisibility(0);
                     eVar.H.setVisibility(0);
-                    eVar.H.setText(WallpaperDetail.this.getResources().getString(f.g.wallpaper_author_by) + mVar.o());
+                    eVar.H.setText(WallpaperDetail.this.getResources().getString(ResourceIds.g.wallpaper_author_by) + mVar.o());
                     eVar.l.setVisibility(0);
                     return;
                 }
@@ -471,31 +471,31 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
 
         private void b(e eVar, View view, s sVar) {
-            eVar.z = view.findViewById(f.e.wallpaper_bigtype_layout);
-            eVar.A = view.findViewById(f.e.wallpaper_bigtype_action_layout);
-            eVar.B = (ImageView) view.findViewById(f.e.wallpaper_bigtype_preview);
-            eVar.C = (TextView) view.findViewById(f.e.wallpaper_bigtype_set_wallpaper);
-            eVar.D = (ImageView) view.findViewById(f.e.wallpaper_bigtype_favorite);
-            eVar.E = (ImageView) view.findViewById(f.e.wallpaper_bigtype_delete);
-            eVar.F = view.findViewById(f.e.wallpaper_bigtype_author_layout);
-            eVar.G = view.findViewById(f.e.wallpaper_bigtype_expand_panel);
-            eVar.H = (TextView) view.findViewById(f.e.wallpaper_bigtype_author);
-            eVar.I = (ProgressBar) view.findViewById(f.e.wallpaper_bigtype_progresbar);
+            eVar.z = view.findViewById(ResourceIds.e.wallpaper_bigtype_layout);
+            eVar.A = view.findViewById(ResourceIds.e.wallpaper_bigtype_action_layout);
+            eVar.B = (ImageView) view.findViewById(ResourceIds.e.wallpaper_bigtype_preview);
+            eVar.C = (TextView) view.findViewById(ResourceIds.e.wallpaper_bigtype_set_wallpaper);
+            eVar.D = (ImageView) view.findViewById(ResourceIds.e.wallpaper_bigtype_favorite);
+            eVar.E = (ImageView) view.findViewById(ResourceIds.e.wallpaper_bigtype_delete);
+            eVar.F = view.findViewById(ResourceIds.e.wallpaper_bigtype_author_layout);
+            eVar.G = view.findViewById(ResourceIds.e.wallpaper_bigtype_expand_panel);
+            eVar.H = (TextView) view.findViewById(ResourceIds.e.wallpaper_bigtype_author);
+            eVar.I = (ProgressBar) view.findViewById(ResourceIds.e.wallpaper_bigtype_progresbar);
             eVar.I.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(view.getContext(), 3));
-            eVar.J = view.findViewById(f.e.wallpaper_bigtype_retry);
+            eVar.J = view.findViewById(ResourceIds.e.wallpaper_bigtype_retry);
             eVar.J.setOnClickListener(WallpaperDetail.this);
-            ((ImageView) eVar.J.findViewById(f.e.wallpaper_bigtype_refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(f.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
-            eVar.K = (TextView) view.findViewById(f.e.wallpaper_bigtype_wallpaper_progress);
-            eVar.L = (WallpaperImageView) view.findViewById(f.e.wallpaper_bigtype_img);
+            ((ImageView) eVar.J.findViewById(ResourceIds.e.wallpaper_bigtype_refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+            eVar.K = (TextView) view.findViewById(ResourceIds.e.wallpaper_bigtype_wallpaper_progress);
+            eVar.L = (WallpaperImageView) view.findViewById(ResourceIds.e.wallpaper_bigtype_img);
             eVar.L.setScaleType(WallpaperImageView.b.HeightFirst);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public View a(ViewGroup viewGroup, int i) {
-            View viewInflate = WallpaperDetail.this.d.inflate(f.C0052f.wallpaper_detail_list, (ViewGroup) null);
-            ThemePullToRefreshListView themePullToRefreshListView = (ThemePullToRefreshListView) viewInflate.findViewById(f.e.detail_list);
-            View viewInflate2 = WallpaperDetail.this.d.inflate(f.C0052f.gallery_img_item, (ViewGroup) null);
+            View viewInflate = WallpaperDetail.this.d.inflate(ResourceIds.C0052f.wallpaper_detail_list, (ViewGroup) null);
+            ThemePullToRefreshListView themePullToRefreshListView = (ThemePullToRefreshListView) viewInflate.findViewById(ResourceIds.e.detail_list);
+            View viewInflate2 = WallpaperDetail.this.d.inflate(ResourceIds.C0052f.gallery_img_item, (ViewGroup) null);
             themePullToRefreshListView.getListView().addHeaderView(viewInflate2);
             s sVar = (s) WallpaperDetail.this.c.get(i);
             final e eVar = WallpaperDetail.this.new e();
@@ -507,14 +507,14 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             b(eVar, viewInflate, sVar);
             eVar.p = (ViewGroup) viewInflate2;
             a(eVar, viewInflate2, sVar);
-            eVar.r = (WallpaperImageView) viewInflate2.findViewById(f.e.img);
-            eVar.t = viewInflate2.findViewById(f.e.wallpaper_layout);
+            eVar.r = (WallpaperImageView) viewInflate2.findViewById(ResourceIds.e.img);
+            eVar.t = viewInflate2.findViewById(ResourceIds.e.wallpaper_layout);
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) eVar.t.getLayoutParams();
             layoutParams.height = (int) (0.8f * WallpaperDetail.this.F);
             eVar.t.setLayoutParams(layoutParams);
             eVar.u = i;
-            eVar.s = (ProgressBar) viewInflate2.findViewById(f.e.progresbar);
-            eVar.v = viewInflate2.findViewById(f.e.retry);
+            eVar.s = (ProgressBar) viewInflate2.findViewById(ResourceIds.e.progresbar);
+            eVar.v = viewInflate2.findViewById(ResourceIds.e.retry);
             eVar.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(viewInflate2.getContext(), 3));
             eVar.c(WallpaperDetail.this.A);
             if (WallpaperDetail.this.k()) {
@@ -525,9 +525,9 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             eVar.z.setOnClickListener(WallpaperDetail.this);
             eVar.L.setTag(sVar);
             eVar.v.setOnClickListener(WallpaperDetail.this);
-            eVar.q = (TextView) viewInflate2.findViewById(f.e.wallpaper_progress);
+            eVar.q = (TextView) viewInflate2.findViewById(ResourceIds.e.wallpaper_progress);
             eVar.a(WallpaperDetail.this.k());
-            ((ImageView) eVar.v.findViewById(f.e.refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(f.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+            ((ImageView) eVar.v.findViewById(ResourceIds.e.refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
             WallpaperDetail.this.e.add(eVar);
             viewInflate.setTag(eVar);
             viewGroup.addView(viewInflate);
@@ -620,7 +620,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             return viewInflate;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
             e eVar = (e) ((View) obj).getTag();
@@ -639,7 +639,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
@@ -851,10 +851,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
 
         public void a(Context context) {
-            this.W = this.b.findViewById(f.e.no_data_layout);
-            this.X = this.b.findViewById(f.e.load_relevance_layout);
-            this.Y = (TextView) this.b.findViewById(f.e.main_more_theme);
-            this.Z = (TextView) this.b.findViewById(f.e.main_more_theme_fail);
+            this.W = this.b.findViewById(ResourceIds.e.no_data_layout);
+            this.X = this.b.findViewById(ResourceIds.e.load_relevance_layout);
+            this.Y = (TextView) this.b.findViewById(ResourceIds.e.main_more_theme);
+            this.Z = (TextView) this.b.findViewById(ResourceIds.e.main_more_theme_fail);
             a(this.Y);
             this.Y.setOnClickListener(this);
             this.c.setMode(PullToRefreshBase.b.DISABLED);
@@ -888,12 +888,12 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             });
             this.e = new com.tsf.extend.theme.af(WallpaperDetail.this.f, this.d, this);
             this.c.setAdapter(this.e);
-            this.R = LayoutInflater.from(WallpaperDetail.this.getContext()).inflate(f.C0052f.wallpaper_detail_list_loadmore, (ViewGroup) null);
-            this.T = (ProgressBar) this.R.findViewById(f.e.loadmore_progress);
+            this.R = LayoutInflater.from(WallpaperDetail.this.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail_list_loadmore, (ViewGroup) null);
+            this.T = (ProgressBar) this.R.findViewById(ResourceIds.e.loadmore_progress);
             this.T.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(WallpaperDetail.this.getContext(), 3, 1));
-            this.U = (TextView) this.R.findViewById(f.e.loadmore_tips);
-            this.S = this.R.findViewById(f.e.nomore_group);
-            this.V = (TextView) this.R.findViewById(f.e.more_theme);
+            this.U = (TextView) this.R.findViewById(ResourceIds.e.loadmore_tips);
+            this.S = this.R.findViewById(ResourceIds.e.nomore_group);
+            this.V = (TextView) this.R.findViewById(ResourceIds.e.more_theme);
             this.U.setOnClickListener(this);
             this.V.setOnClickListener(this);
             a(this.V);
@@ -953,28 +953,28 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             int id = view.getId();
-            if (id == f.e.loadmore_tips) {
+            if (id == ResourceIds.e.loadmore_tips) {
                 this.T.setVisibility(0);
                 this.U.setVisibility(8);
                 l();
                 return;
             }
-            if (id == f.e.theme_item_download_layout_left) {
-                a(view.findViewById(f.e.theme_download_left), true);
+            if (id == ResourceIds.e.theme_item_download_layout_left) {
+                a(view.findViewById(ResourceIds.e.theme_download_left), true);
                 return;
             }
-            if (id == f.e.theme_item_download_layout_right) {
-                a(view.findViewById(f.e.theme_download_right), true);
+            if (id == ResourceIds.e.theme_item_download_layout_right) {
+                a(view.findViewById(ResourceIds.e.theme_download_right), true);
                 return;
             }
-            if (id == f.e.theme_item_download_layout_mid) {
-                a(view.findViewById(f.e.theme_download_mid), true);
+            if (id == ResourceIds.e.theme_item_download_layout_mid) {
+                a(view.findViewById(ResourceIds.e.theme_download_mid), true);
                 return;
             }
-            if (id == f.e.theme_item_left || id == f.e.theme_item_right || id == f.e.theme_item_mid) {
+            if (id == ResourceIds.e.theme_item_left || id == ResourceIds.e.theme_item_right || id == ResourceIds.e.theme_item_mid) {
                 a(view, false);
-            } else if (id == f.e.main_more_theme || id == f.e.more_theme) {
-                WallpaperDetail.this.f.h();
+            } else if (id == ResourceIds.e.main_more_theme || id == ResourceIds.e.more_theme) {
+                WallpaperDetail.this.ResourceIds.h();
                 WallpaperDetail.this.a(this.o, (com.tsf.extend.theme.k) null, "13");
             }
         }
@@ -987,9 +987,9 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 } else {
                     Object tag = view.getTag();
                     if (tag instanceof t.d) {
-                        if (view.getId() == f.e.theme_item_left) {
+                        if (view.getId() == ResourceIds.e.theme_item_left) {
                             kVar = ((t.d) tag).a;
-                        } else if (view.getId() == f.e.theme_item_mid) {
+                        } else if (view.getId() == ResourceIds.e.theme_item_mid) {
                             kVar = ((t.d) tag).o;
                         } else {
                             kVar = ((t.d) tag).h;
@@ -1001,14 +1001,14 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 if (kVar != null) {
                     WallpaperDetail.this.a(this.o, kVar, "12");
                     if (ao.b().g()) {
-                        ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(WallpaperDetail.this.f).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                        ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(WallpaperDetail.this.f).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                         themeDetail.setFromInlet(WallpaperDetail.this.I);
                         themeDetail.setFromTab("detail");
                         themeDetail.setTheme(kVar);
                         themeDetail.a("1010", "1010");
-                        WallpaperDetail.this.f.a((PageActivity.a) themeDetail);
+                        WallpaperDetail.this.ResourceIds.a((PageActivity.a) themeDetail);
                     } else if (!kVar.v()) {
-                        WallpaperDetail.this.f.a(false);
+                        WallpaperDetail.this.ResourceIds.a(false);
                         com.tsf.extend.theme.x.a(WallpaperDetail.this.getContext(), kVar.k(), "tsf_theme_center_theme");
                     } else {
                         a(kVar);
@@ -1033,7 +1033,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 if (launchIntentForPackage != null) {
                     launchIntentForPackage.putExtra("from_cml_theme", true);
                     launchIntentForPackage.putExtra("from_cml", true);
-                    WallpaperDetail.this.f.a(false);
+                    WallpaperDetail.this.ResourceIds.a(false);
                     context.startActivity(launchIntentForPackage);
                 }
             }
@@ -1125,7 +1125,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
             if (this.d.size() != 0 || (list != null && list.size() != 0)) {
                 if (WallpaperDetail.this.f != null) {
-                    strF = WallpaperDetail.this.f.f();
+                    strF = WallpaperDetail.this.ResourceIds.f();
                 } else {
                     strF = null;
                 }
@@ -1206,7 +1206,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             this.T.setVisibility(8);
             this.U.setVisibility(0);
             this.U.setClickable(true);
-            this.U.setText(f.g.load_more_fail);
+            this.U.setText(ResourceIds.g.load_more_fail);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -1358,18 +1358,18 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         c cVar;
         e eVarA2 = a(this.b.getCurrentItem());
         int id = view.getId();
-        if (id == f.e.wallpaper_bigtype_preview || id == f.e.preview) {
+        if (id == ResourceIds.e.wallpaper_bigtype_preview || id == ResourceIds.e.preview) {
             a(true);
             return;
         }
-        if (id == f.e.go_to_list || id == f.e.view_pager) {
-            this.f.onBackPressed();
+        if (id == ResourceIds.e.go_to_list || id == ResourceIds.e.view_pager) {
+            this.ResourceIds.onBackPressed();
             return;
         }
-        if (id == f.e.wallpaper_bigtype_set_wallpaper || id == f.e.set_wallpaper) {
-            if (this.f.g()) {
-                Toast.makeText(getContext(), f.g.theme_current_no_set_wallpaper, 0).show();
-                this.f.finish();
+        if (id == ResourceIds.e.wallpaper_bigtype_set_wallpaper || id == ResourceIds.e.set_wallpaper) {
+            if (this.ResourceIds.g()) {
+                Toast.makeText(getContext(), ResourceIds.g.theme_current_no_set_wallpaper, 0).show();
+                this.ResourceIds.finish();
                 return;
             }
             if (this.p == 0 && (eVarA = a(this.b.getCurrentItem())) != null) {
@@ -1396,19 +1396,19 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
             return;
         }
-        if (id == f.e.wallpaper_bigtype_retry || id == f.e.retry) {
+        if (id == ResourceIds.e.wallpaper_bigtype_retry || id == ResourceIds.e.retry) {
             eVarA2.s.setVisibility(0);
             eVarA2.I.setVisibility(0);
             eVarA2.b(false);
             a(eVarA2);
             return;
         }
-        if (id == f.e.wallpaper_bigtype_delete || id == f.e.delete) {
+        if (id == ResourceIds.e.wallpaper_bigtype_delete || id == ResourceIds.e.delete) {
             a(a(this.b.getCurrentItem()).o, (com.tsf.extend.theme.k) null, "5");
             i();
             return;
         }
-        if (id == f.e.wallpaper_bigtype_favorite || id == f.e.favorite) {
+        if (id == ResourceIds.e.wallpaper_bigtype_favorite || id == ResourceIds.e.favorite) {
             e eVarA3 = a(this.b.getCurrentItem());
             s sVar = eVarA3.o;
             if (!(sVar instanceof com.tsf.extend.wallpaper.g)) {
@@ -1423,11 +1423,11 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
             return;
         }
-        if (id == f.e.switch_scale) {
+        if (id == ResourceIds.e.switch_scale) {
             b(true);
             return;
         }
-        if (id == f.e.wallpaper_bigtype_layout && this.o) {
+        if (id == ResourceIds.e.wallpaper_bigtype_layout && this.o) {
             this.o = false;
             setBtnVisibilityForPreview(false);
             c(this.h);
@@ -1487,7 +1487,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
     private void i() {
         j();
-        this.r = new e.a(getContext()).a(f.g.delete_wallaper).b(f.g.setting_unset_default_dialog_cancel, this).a(f.g.setting_unset_default_dialog_ok, this).a();
+        this.r = new e.a(getContext()).a(ResourceIds.g.delete_wallaper).b(ResourceIds.g.setting_unset_default_dialog_cancel, this).a(ResourceIds.g.setting_unset_default_dialog_ok, this).a();
         this.r.setOnDismissListener(this);
         this.r.a(true);
     }
@@ -1517,12 +1517,12 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 eVar.C.setClickable(!z);
                 eVar.g.setClickable(!z);
                 eVar.B.setClickable(!z);
-                Toast.makeText(WallpaperDetail.this.f, z ? f.g.wallpaper_set_suc : f.g.wallpaper_set_fail, 1).show();
+                Toast.makeText(WallpaperDetail.this.f, z ? ResourceIds.g.wallpaper_set_suc : ResourceIds.g.wallpaper_set_fail, 1).show();
                 if (z) {
                     com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.10.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            WallpaperDetail.this.f.sendBroadcast(new Intent("com.ksmobile.launcher.FINISH_WALLPAPER_SETTING_ACTIVITY"));
+                            WallpaperDetail.this.ResourceIds.sendBroadcast(new Intent("com.ksmobile.launcher.FINISH_WALLPAPER_SETTING_ACTIVITY"));
                         }
                     }, 500L);
                 }
@@ -1734,7 +1734,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
     }
 
-    @Override // com.tsf.extend.wallpaper.a.a.b
+    @Override // com.tsf.extend.wallpaper.a.WallpaperChangeManager.b
     public void g() {
         e eVarA;
         if (!this.H) {
@@ -1760,7 +1760,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.11.1
                                     @Override // java.lang.Runnable
                                     public void run() {
-                                        Toast.makeText(WallpaperDetail.this.f, bVar == i.a.b.suc ? f.g.delete_wallpaper_suc : f.g.delete_wallpaper_fail, 1).show();
+                                        Toast.makeText(WallpaperDetail.this.f, bVar == i.a.b.suc ? ResourceIds.g.delete_wallpaper_suc : ResourceIds.g.delete_wallpaper_fail, 1).show();
                                         if (bVar == i.a.b.suc && WallpaperDetail.this.v != null) {
                                             WallpaperDetail.this.c.remove(eVarA.o);
                                             WallpaperDetail.this.i = new f();
@@ -1803,13 +1803,13 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     public void a() {
         this.H = false;
         this.b.setCanDrage(true);
-        this.f.b(true);
+        this.ResourceIds.b(true);
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity.a
     public void b() {
         this.H = true;
-        this.f.b(false);
+        this.ResourceIds.b(false);
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity.a
@@ -1840,7 +1840,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                                 int currentItem = WallpaperDetail.this.b.getCurrentItem();
                                 WallpaperDetail.this.c.remove(mVar2);
                                 if (WallpaperDetail.this.c.size() == 0) {
-                                    WallpaperDetail.this.f.onBackPressed();
+                                    WallpaperDetail.this.ResourceIds.onBackPressed();
                                 } else {
                                     WallpaperDetail.this.i = new f();
                                     WallpaperDetail.this.e.clear();
@@ -1884,8 +1884,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
 
     /* JADX INFO: Access modifiers changed from: private */
     public void n() {
-        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_in);
-        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_out);
+        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_in);
+        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_out);
         animationLoadAnimation2.setAnimationListener(new Animation.AnimationListener() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.13
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationStart(Animation animation) {
@@ -1985,7 +1985,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.g.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    WallpaperDetail.this.f.finish();
+                    WallpaperDetail.this.ResourceIds.finish();
                 }
             }, 100L);
         }

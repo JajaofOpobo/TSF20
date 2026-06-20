@@ -2,8 +2,8 @@ package com.censivn.C3DEngine.b.h.b;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
@@ -198,7 +198,7 @@ public class g extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         f();
         d();

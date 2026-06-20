@@ -3,7 +3,7 @@ package com.tsf.extend.theme.cmclub;
 import android.content.Context;
 import android.webkit.JavascriptInterface;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {
@@ -56,7 +56,7 @@ public class c {
     @JavascriptInterface
     public void showToastReportTheme() {
         if (this.a != null) {
-            ThemeCmClubActivity.a(this.a, this.a.getResources().getString(f.g.cm_club_dialog_report));
+            ThemeCmClubActivity.a(this.a, this.a.getResources().getString(ResourceIds.g.cm_club_dialog_report));
         }
     }
 }

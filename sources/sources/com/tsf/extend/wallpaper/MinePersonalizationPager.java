@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MinePersonalizationPager extends LinearLayout implements ViewPager.e, PagerIndicator.a {
@@ -24,16 +24,16 @@ public class MinePersonalizationPager extends LinearLayout implements ViewPager.
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.b = (ViewPager) findViewById(f.e.viewpager);
+        this.b = (ViewPager) findViewById(ResourceIds.e.viewpager);
         this.b.setAdapter(new A());
         this.b.setOnPageChangeListener(this);
-        this.c = (PagerIndicator) findViewById(f.e.wallpaper_indicator);
-        this.c.setTextData(new String[]{getResources().getString(f.g.theme_mine_tab), getResources().getString(f.g.wallpaper_mine_tab)});
+        this.c = (PagerIndicator) findViewById(ResourceIds.e.wallpaper_indicator);
+        this.c.setTextData(new String[]{getResources().getString(ResourceIds.g.theme_mine_tab), getResources().getString(ResourceIds.g.wallpaper_mine_tab)});
         this.c.setOnPageClickedListener(this);
         setOnClickListener(null);
     }
 
-    private class A extends com.tsf.extend.base.support.a {
+    private class A extends com.tsf.extend.base.support.PagerAdapterCompat {
         private LinearLayout.LayoutParams b;
         private SparseArray<View> c;
 
@@ -42,12 +42,12 @@ public class MinePersonalizationPager extends LinearLayout implements ViewPager.
             this.c = new SparseArray<>();
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return 2;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public Object a(ViewGroup viewGroup, int i) {
             View hVar = this.c.get(i);
             if (hVar == null) {
@@ -62,12 +62,12 @@ public class MinePersonalizationPager extends LinearLayout implements ViewPager.
             return hVar;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }

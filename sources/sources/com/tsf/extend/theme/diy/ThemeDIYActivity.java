@@ -45,8 +45,8 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.aq;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.diy.b;
@@ -81,7 +81,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     private View K;
     private View L;
     private View M;
-    private com.tsf.extend.e O;
+    private com.tsf.extend.ThemeDialogFragment O;
     private int P;
     private f Q;
     private View R;
@@ -167,7 +167,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                     ThemeDIYActivity.this.a();
                     ThemeDIYActivity.this.k();
                     ThemeDIYActivity.this.o();
-                    Toast.makeText(ThemeDIYActivity.this, f.g.theme_changing_fail, 0).show();
+                    Toast.makeText(ThemeDIYActivity.this, ResourceIds.g.theme_changing_fail, 0).show();
                     break;
             }
         }
@@ -228,62 +228,62 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(f.C0052f.theme_diy_activity);
+        setContentView(ResourceIds.C0052f.theme_diy_activity);
         p.a((Activity) this);
         this.y = new b();
-        this.d = (TextView) findViewById(f.e.title);
+        this.d = (TextView) findViewById(ResourceIds.e.title);
         this.d.setOnClickListener(this);
         int iA = com.tsf.extend.base.j.i.a(64.0f);
         View view = new View(this);
         view.setLayoutParams(new AbsListView.LayoutParams(-1, com.tsf.extend.base.j.i.a(22.0f) + iA));
-        this.e = findViewById(f.e.icons_chooser_panel);
+        this.e = findViewById(ResourceIds.e.icons_chooser_panel);
         this.e.setOnClickListener(this);
-        this.f = (ListView) findViewById(f.e.gridview);
-        this.f.addFooterView(view, null, false);
+        this.f = (ListView) findViewById(ResourceIds.e.gridview);
+        this.ResourceIds.addFooterView(view, null, false);
         this.g = new m(this);
-        this.f.setAdapter((ListAdapter) this.g);
-        this.q = (FrameLayout) findViewById(f.e.theme_diy_preview_container);
-        this.s = (ImageView) this.q.findViewById(f.e.theme_icons_btn);
+        this.ResourceIds.setAdapter((ListAdapter) this.g);
+        this.q = (FrameLayout) findViewById(ResourceIds.e.theme_diy_preview_container);
+        this.s = (ImageView) this.q.findViewById(ResourceIds.e.theme_icons_btn);
         this.s.setOnClickListener(this);
-        this.r = (FrameLayout) this.q.findViewById(f.e.theme_diy_preview_pager);
+        this.r = (FrameLayout) this.q.findViewById(ResourceIds.e.theme_diy_preview_pager);
         a(this.r);
-        this.C = (ThemeLoadingAnim) findViewById(f.e.loading_progress);
-        this.D = (ThemeLoadingAnim) findViewById(f.e.thumb_loading_progress);
+        this.C = (ThemeLoadingAnim) findViewById(ResourceIds.e.loading_progress);
+        this.D = (ThemeLoadingAnim) findViewById(ResourceIds.e.thumb_loading_progress);
         this.D.setText("");
-        this.D.setTextColor(getResources().getColor(f.b.black));
-        this.D.setLoadingIconTint(getResources().getColor(f.b.black));
-        this.h = findViewById(f.e.load_error_page);
+        this.D.setTextColor(getResources().getColor(ResourceIds.b.black));
+        this.D.setLoadingIconTint(getResources().getColor(ResourceIds.b.black));
+        this.h = findViewById(ResourceIds.e.load_error_page);
         this.h.setOnClickListener(this);
         HandlerThread handlerThread = new HandlerThread("diy_theme");
         handlerThread.start();
         this.j = new Handler(handlerThread.getLooper());
         this.n = new j();
         getApplicationContext().bindService(new Intent("android.service.theme.ManagerService"), this.at, 1);
-        this.K = findViewById(f.e.theme_btn);
+        this.K = findViewById(ResourceIds.e.theme_btn);
         this.K.setTag(this.N);
         this.K.setOnClickListener(this);
-        this.M = findViewById(f.e.choose_button_padding);
-        this.as = findViewById(f.e.choose_next_group);
-        this.L = findViewById(f.e.theme_choose_link);
+        this.M = findViewById(ResourceIds.e.choose_button_padding);
+        this.as = findViewById(ResourceIds.e.choose_next_group);
+        this.L = findViewById(ResourceIds.e.theme_choose_link);
         this.L.setOnClickListener(this);
-        this.af = (TextView) findViewById(f.e.theme_btn_choose_wallpaper);
+        this.af = (TextView) findViewById(ResourceIds.e.theme_btn_choose_wallpaper);
         this.af.setOnClickListener(this);
-        findViewById(f.e.theme_btn_next).setOnClickListener(this);
-        this.i = findViewById(f.e.theme_btn_next_default);
+        findViewById(ResourceIds.e.theme_btn_next).setOnClickListener(this);
+        this.i = findViewById(ResourceIds.e.theme_btn_next_default);
         this.i.setOnClickListener(this);
-        this.R = findViewById(f.e.tab_choose_wallpaper);
-        this.S = findViewById(f.e.tab_choose_icon);
-        this.T = findViewById(f.e.tab_arrow1);
+        this.R = findViewById(ResourceIds.e.tab_choose_wallpaper);
+        this.S = findViewById(ResourceIds.e.tab_choose_icon);
+        this.T = findViewById(ResourceIds.e.tab_arrow1);
         this.R.setOnClickListener(this);
         this.S.setOnClickListener(this);
-        this.v = findViewById(f.e.theme_save_succ_group);
-        this.x = (LinearLayout) findViewById(f.e.content_layout);
+        this.v = findViewById(ResourceIds.e.theme_save_succ_group);
+        this.x = (LinearLayout) findViewById(ResourceIds.e.content_layout);
         a();
         if (getIntent() != null) {
             this.aq = getIntent().getStringExtra("launch_host");
         }
-        int dimensionPixelSize = getResources().getDimensionPixelSize(f.c.theme_diy_list_padding);
-        this.V = getResources().getDimensionPixelSize(f.c.theme_diy_list_panel_height);
+        int dimensionPixelSize = getResources().getDimensionPixelSize(ResourceIds.c.theme_diy_list_padding);
+        this.V = getResources().getDimensionPixelSize(ResourceIds.c.theme_diy_list_panel_height);
         if (Build.VERSION.SDK_INT >= 11) {
             this.e.setTranslationY(this.V);
         }
@@ -292,9 +292,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         this.Q = new f(dimensionPixelSize, dimensionPixelSize);
         new g().execute(new Void[0]);
         p();
-        findViewById(f.e.theme_diy_head_mask).setOnClickListener(this);
-        findViewById(f.e.content_top_mask).setOnClickListener(this);
-        this.ar = findViewById(f.e.new_diy);
+        findViewById(ResourceIds.e.theme_diy_head_mask).setOnClickListener(this);
+        findViewById(ResourceIds.e.content_top_mask).setOnClickListener(this);
+        this.ar = findViewById(ResourceIds.e.new_diy);
         this.ar.setOnClickListener(this);
     }
 
@@ -527,14 +527,14 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             case CHOOSE_WALLPAER_A:
             case CHOOSE_WALLPAER_B:
             case CHOOSE_ICON:
-                i2 = f.g.theme_diy_btn_choose_wallpaper;
+                i2 = ResourceIds.g.theme_diy_btn_choose_wallpaper;
                 break;
             case SAVE:
             default:
                 i2 = 0;
                 break;
             case APPLY:
-                i2 = f.g.save_and_apply;
+                i2 = ResourceIds.g.save_and_apply;
                 break;
         }
         if (i2 == 0) {
@@ -549,7 +549,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.theme_btn) {
+        if (id == ResourceIds.e.theme_btn) {
             switch ((i) view.getTag()) {
                 case CHOOSE_WALLPAER_A:
                 case CHOOSE_WALLPAER_B:
@@ -563,7 +563,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             }
             return;
         }
-        if (id == f.e.title) {
+        if (id == ResourceIds.e.title) {
             int iA = this.N.a();
             if (iA > i.CHOOSE_WALLPAER_A.a() && iA < i.APPLY.a()) {
                 if (c()) {
@@ -577,19 +577,19 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             onBackPressed();
             return;
         }
-        if (id == f.e.load_error_page) {
+        if (id == ResourceIds.e.load_error_page) {
             this.h.setVisibility(8);
             this.e.setVisibility(0);
             p();
             return;
         }
-        if (id == f.e.theme_btn_choose_wallpaper) {
+        if (id == ResourceIds.e.theme_btn_choose_wallpaper) {
             this.Y = true;
             t();
             e(false);
             return;
         }
-        if (id == f.e.theme_btn_next_default) {
+        if (id == ResourceIds.e.theme_btn_next_default) {
             if (i.CHOOSE_WALLPAER_A == this.N) {
                 b(i.CHOOSE_WALLPAER_B);
             }
@@ -600,13 +600,13 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             e();
             return;
         }
-        if (id == f.e.theme_btn_next) {
+        if (id == ResourceIds.e.theme_btn_next) {
             d();
             i();
             u();
             return;
         }
-        if (id == f.e.tab_choose_wallpaper) {
+        if (id == ResourceIds.e.tab_choose_wallpaper) {
             if (this.N != i.CHOOSE_WALLPAER_A && this.N != i.CHOOSE_WALLPAER_B) {
                 a(i.CHOOSE_WALLPAER_B);
                 b(i.CHOOSE_WALLPAER_B);
@@ -614,7 +614,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             }
             return;
         }
-        if (id == f.e.tab_choose_icon) {
+        if (id == ResourceIds.e.tab_choose_icon) {
             if (this.N != i.APPLY && this.N != i.CHOOSE_ICON) {
                 a(i.CHOOSE_ICON);
                 b(i.CHOOSE_ICON);
@@ -622,16 +622,16 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             }
             return;
         }
-        if (id == f.e.theme_choose_link) {
+        if (id == ResourceIds.e.theme_choose_link) {
             s();
             return;
         }
-        if (id == f.e.theme_diy_head_mask || id == f.e.content_top_mask) {
+        if (id == ResourceIds.e.theme_diy_head_mask || id == ResourceIds.e.content_top_mask) {
             v();
             e(true);
             return;
         }
-        if (id == f.e.theme_icons_btn) {
+        if (id == ResourceIds.e.theme_icons_btn) {
             if (this.ae) {
                 k();
                 return;
@@ -640,14 +640,14 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                 return;
             }
         }
-        if (id == f.e.theme_diy_wallpaper_iv) {
+        if (id == ResourceIds.e.theme_diy_wallpaper_iv) {
             if (this.N != i.SAVE && this.N != i.APPLY) {
                 b(true);
                 return;
             }
             return;
         }
-        if (id == f.e.new_diy) {
+        if (id == ResourceIds.e.new_diy) {
             ThemeCmClubActivity.a(this, "launch_host_club", "", 4);
             return;
         }
@@ -739,7 +739,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     /* JADX INFO: Access modifiers changed from: private */
     public void a(boolean z) {
         if (this.z != null && this.z.I() != null && this.A != null) {
-            b(getResources().getString(f.g.theme_applying_theme));
+            b(getResources().getString(ResourceIds.g.theme_applying_theme));
             JSONObject jSONObject = new JSONObject();
             try {
                 jSONObject.put("PACKAGE_NAME", "DIY://" + this.z.I());
@@ -872,7 +872,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.n.a(0, (aq) null);
             return;
         }
-        b(getResources().getString(f.g.theme_diy_generating));
+        b(getResources().getString(ResourceIds.g.theme_diy_generating));
         if (this.o == null || TextUtils.isEmpty(this.o.d())) {
             this.j.post(new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.11
                 @Override // java.lang.Runnable
@@ -1082,7 +1082,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         switch (iVar) {
             case CHOOSE_WALLPAER_B:
                 this.as.setVisibility(0);
-                ((TextView) findViewById(f.e.theme_btn_next)).setText(f.g.theme_btn_next);
+                ((TextView) findViewById(ResourceIds.e.theme_btn_next)).setText(ResourceIds.g.theme_btn_next);
                 m();
                 b(8);
                 break;
@@ -1091,7 +1091,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                     this.C.setText("");
                 }
                 this.as.setVisibility(0);
-                ((TextView) findViewById(f.e.theme_btn_next)).setText(f.g.save_and_apply);
+                ((TextView) findViewById(ResourceIds.e.theme_btn_next)).setText(ResourceIds.g.save_and_apply);
                 k();
                 break;
             case SAVE:
@@ -1127,7 +1127,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.av.setDuration(200L);
             this.av.start();
         }
-        this.s.setImageResource(f.d.theme_icons_down);
+        this.s.setImageResource(ResourceIds.d.theme_icons_down);
         this.ae = false;
     }
 
@@ -1176,13 +1176,13 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.av.setDuration(200L);
             this.av.start();
         }
-        this.s.setImageResource(f.d.theme_icons_up);
+        this.s.setImageResource(ResourceIds.d.theme_icons_up);
         this.ae = true;
     }
 
     private void c(boolean z) {
         this.I = z;
-        this.O = new e.a(this).a(f.g.theme_diy_dialog_message).b(f.g.theme_diy_dialog_exit, this).a(f.g.theme_diy_dialog_cancel, this).a();
+        this.O = new e.a(this).a(ResourceIds.g.theme_diy_dialog_message).b(ResourceIds.g.theme_diy_dialog_exit, this).a(ResourceIds.g.theme_diy_dialog_cancel, this).a();
         this.O.a(true);
     }
 
@@ -1271,14 +1271,14 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     private void a(ViewGroup viewGroup) {
-        ImageView imageView = (ImageView) findViewById(f.e.theme_diy_wallpaper_iv);
+        ImageView imageView = (ImageView) findViewById(ResourceIds.e.theme_diy_wallpaper_iv);
         imageView.setImageBitmap(this.y.c);
         imageView.setOnClickListener(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(ViewGroup viewGroup, a aVar) {
-        ImageView imageView = (ImageView) viewGroup.findViewById(f.e.theme_diy_wallpaper_iv);
+        ImageView imageView = (ImageView) viewGroup.findViewById(ResourceIds.e.theme_diy_wallpaper_iv);
         if (aVar == a.SET_WALLPAER) {
             com.tsf.extend.base.j.b.a(imageView, new BitmapDrawable(getResources(), this.y.c));
         } else if (aVar == a.SET_THEME) {
@@ -1320,18 +1320,18 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             n nVar;
             View viewInflate;
             if (view == null) {
-                viewInflate = LayoutInflater.from(this.b).inflate(f.C0052f.theme_diy_list_item, viewGroup, false);
+                viewInflate = LayoutInflater.from(this.b).inflate(ResourceIds.C0052f.theme_diy_list_item, viewGroup, false);
                 n nVar2 = new n();
                 viewInflate.setTag(nVar2);
-                nVar2.a.b = viewInflate.findViewById(f.e.left_item);
-                nVar2.a.d = (ImageView) nVar2.a.b.findViewById(f.e.theme_icons_thumb);
-                nVar2.a.c = (ImageView) nVar2.a.b.findViewById(f.e.theme_icons_selector);
-                nVar2.b.b = viewInflate.findViewById(f.e.center_item);
-                nVar2.b.d = (ImageView) nVar2.b.b.findViewById(f.e.theme_icons_thumb);
-                nVar2.b.c = (ImageView) nVar2.b.b.findViewById(f.e.theme_icons_selector);
-                nVar2.c.b = viewInflate.findViewById(f.e.right_item);
-                nVar2.c.d = (ImageView) nVar2.c.b.findViewById(f.e.theme_icons_thumb);
-                nVar2.c.c = (ImageView) nVar2.c.b.findViewById(f.e.theme_icons_selector);
+                nVar2.a.b = viewInflate.findViewById(ResourceIds.e.left_item);
+                nVar2.a.d = (ImageView) nVar2.a.b.findViewById(ResourceIds.e.theme_icons_thumb);
+                nVar2.a.c = (ImageView) nVar2.a.b.findViewById(ResourceIds.e.theme_icons_selector);
+                nVar2.b.b = viewInflate.findViewById(ResourceIds.e.center_item);
+                nVar2.b.d = (ImageView) nVar2.b.b.findViewById(ResourceIds.e.theme_icons_thumb);
+                nVar2.b.c = (ImageView) nVar2.b.b.findViewById(ResourceIds.e.theme_icons_selector);
+                nVar2.c.b = viewInflate.findViewById(ResourceIds.e.right_item);
+                nVar2.c.d = (ImageView) nVar2.c.b.findViewById(ResourceIds.e.theme_icons_thumb);
+                nVar2.c.c = (ImageView) nVar2.c.b.findViewById(ResourceIds.e.theme_icons_selector);
                 a(nVar2.a.b);
                 a(nVar2.b.b);
                 a(nVar2.c.b);
@@ -1430,7 +1430,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                             arrayListNewArrayList.add(cVar);
                         }
                         ThemeDIYActivity.this.m.addAll(arrayListNewArrayList);
-                        ThemeDIYActivity.this.f.setVisibility(0);
+                        ThemeDIYActivity.this.ResourceIds.setVisibility(0);
                         ThemeDIYActivity.this.h.setVisibility(8);
                         if (ThemeDIYActivity.this.D != null) {
                             ThemeDIYActivity.this.D.setVisibility(8);
@@ -1448,7 +1448,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                     @Override // java.lang.Runnable
                     public void run() {
                         if (ThemeDIYActivity.this.m.size() > 0) {
-                            ThemeDIYActivity.this.f.setVisibility(0);
+                            ThemeDIYActivity.this.ResourceIds.setVisibility(0);
                             ThemeDIYActivity.this.h.setVisibility(8);
                             if (ThemeDIYActivity.this.D != null) {
                                 ThemeDIYActivity.this.D.setVisibility(8);
@@ -1456,7 +1456,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                             }
                             return;
                         }
-                        ThemeDIYActivity.this.f.setVisibility(8);
+                        ThemeDIYActivity.this.ResourceIds.setVisibility(8);
                         ThemeDIYActivity.this.h.setVisibility(0);
                         if (ThemeDIYActivity.this.D != null) {
                             ThemeDIYActivity.this.D.setVisibility(8);
@@ -1569,7 +1569,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         public void a(int i, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 b(pair);
-                Toast.makeText(ThemeDIYActivity.this, f.g.changewallpaper_toast_text_error, 0).show();
+                Toast.makeText(ThemeDIYActivity.this, ResourceIds.g.changewallpaper_toast_text_error, 0).show();
                 ThemeDIYActivity.this.o();
             }
         }
@@ -1641,7 +1641,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                         ThemeDIYActivity.this.a();
                         ThemeDIYActivity.this.k();
                         ThemeDIYActivity.this.o();
-                        Toast.makeText(ThemeDIYActivity.this, f.g.theme_diy_download_failed, 1).show();
+                        Toast.makeText(ThemeDIYActivity.this, ResourceIds.g.theme_diy_download_failed, 1).show();
                     }
                 });
             }
@@ -1770,12 +1770,12 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     private boolean q() {
-        return findViewById(f.e.content_mask).getVisibility() == 0;
+        return findViewById(ResourceIds.e.content_mask).getVisibility() == 0;
     }
 
     private void b(int i2) {
-        findViewById(f.e.content_mask).setVisibility(i2);
-        findViewById(f.e.theme_diy_head_mask).setVisibility(i2);
+        findViewById(ResourceIds.e.content_mask).setVisibility(i2);
+        findViewById(ResourceIds.e.theme_diy_head_mask).setVisibility(i2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1856,7 +1856,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             case SAVE:
                 this.M.setVisibility(0);
                 b(8);
-                ((TextView) this.K).setText(f.g.save_and_apply);
+                ((TextView) this.K).setText(ResourceIds.g.save_and_apply);
                 this.L.setVisibility(8);
                 this.as.setVisibility(8);
                 this.K.setVisibility(0);

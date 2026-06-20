@@ -38,8 +38,8 @@ import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PageIndicatorCompat;
 import com.tsf.extend.base.view.TextProgressBar;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.cmclub.ThemeCmClubActivity;
 import com.tsf.extend.theme.j;
 import com.tsf.extend.theme.v;
@@ -114,7 +114,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                         break;
                     default:
                         DIYThemeDetail.this.i();
-                        Toast.makeText(DIYThemeDetail.this.g, f.g.theme_changing_fail, 1).show();
+                        Toast.makeText(DIYThemeDetail.this.g, ResourceIds.g.theme_changing_fail, 1).show();
                         DIYThemeDetail.this.b("1");
                         break;
                 }
@@ -153,7 +153,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         if (this.B) {
             this.A.setVisibility(4);
             this.h.setVisibility(4);
-            this.f.setText(f.g.theme_detail_btn_download);
+            this.ResourceIds.setText(ResourceIds.g.theme_detail_btn_download);
         }
     }
 
@@ -170,7 +170,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 a("0");
             }
             this.c.setText(this.k.i());
-            int i2 = f.g.theme_detail_btn_apply;
+            int i2 = ResourceIds.g.theme_detail_btn_apply;
             if (this.k instanceof f) {
                 this.m = ((f) this.k).b();
                 i = i2;
@@ -178,11 +178,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 this.l = this.k.t();
                 i = i2;
             } else {
-                i = f.g.theme_detail_btn_download;
+                i = ResourceIds.g.theme_detail_btn_download;
                 this.l = this.k.t();
                 this.d.setVisibility(8);
             }
-            this.f.setText(i);
+            this.ResourceIds.setText(i);
             if (this.k.n()) {
                 this.d.setVisibility(8);
             }
@@ -197,7 +197,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             }
             if (this.o > 1 && !z) {
                 for (int i3 = 0; i3 < this.o; i3++) {
-                    this.n.a(i3, new PageIndicatorCompat.a(f.d.ic_pageindicator_current_inverse, f.d.ic_pageindicator_default_inverse), true);
+                    this.n.a(i3, new PageIndicatorCompat.a(ResourceIds.d.ic_pageindicator_current_inverse, ResourceIds.d.ic_pageindicator_default_inverse), true);
                 }
                 this.n.setIgnoreBrightness(true);
                 this.n.setActiveMarker(0);
@@ -305,7 +305,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             return false;
         }
         try {
-            new com.tsf.extend.theme.diy.e.a(getContext()).a(f.g.exit_download_theme).b(f.g.theme_diy_dialog_cancel, this).a(f.g.theme_diy_dialog_exit, this).a().a(true);
+            new com.tsf.extend.theme.diy.e.a(getContext()).a(ResourceIds.g.exit_download_theme).b(ResourceIds.g.theme_diy_dialog_cancel, this).a(ResourceIds.g.theme_diy_dialog_exit, this).a().a(true);
             return true;
         } catch (Exception e) {
             return true;
@@ -316,19 +316,19 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.title) {
+        if (id == ResourceIds.e.title) {
             this.g.onBackPressed();
-        } else if (id == f.e.delete) {
+        } else if (id == ResourceIds.e.delete) {
             if (this.k instanceof aq) {
                 a((aq) this.k);
             }
             a("3");
-        } else if (id == f.e.theme_controll) {
+        } else if (id == ResourceIds.e.theme_controll) {
             if (this.k != null) {
                 this.g.a(false);
                 if (this.u == null || this.u.getVisibility() != 0) {
                     if (this.u == null || this.u.getVisibility() != 0) {
-                        if (getContext().getString(f.g.theme_detail_btn_apply).equals(this.f.getText())) {
+                        if (getContext().getString(ResourceIds.g.theme_detail_btn_apply).equals(this.ResourceIds.getText())) {
                             t();
                         } else if (this.B) {
                             a("1");
@@ -341,11 +341,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                     return;
                 }
             }
-        } else if (id == f.e.share) {
+        } else if (id == ResourceIds.e.share) {
             if (this.k != null) {
                 final String strL = this.k.l();
-                final String string = getContext().getString(f.g.share_title);
-                final String string2 = getContext().getString(f.g.share_theme_msg);
+                final String string = getContext().getString(ResourceIds.g.share_title);
+                final String string2 = getContext().getString(ResourceIds.g.share_theme_msg);
                 final String strValueOf = String.valueOf(this.k.h());
                 this.g.a(false);
                 final File file = new File(com.tsf.extend.theme.diy.e.a(getContext()), this.k.g() + ".share.jpg");
@@ -384,7 +384,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             } else {
                 return;
             }
-        } else if (id == f.e.favorite_theme) {
+        } else if (id == ResourceIds.e.favorite_theme) {
             boolean z = !this.h.isSelected();
             this.h.setSelected(z);
             if (z) {
@@ -395,9 +395,9 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 a("11");
                 n();
             }
-        } else if (id == f.e.more_diy_click) {
+        } else if (id == ResourceIds.e.more_diy_click) {
             ThemeCmClubActivity.a(getContext(), "launch_host_club", "", 4);
-        } else if (id == f.e.club_click) {
+        } else if (id == ResourceIds.e.club_click) {
             getContext().startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://www.facebook.com/groups/DIYTheme/")));
         } else if (view instanceof ImageView) {
             a(this.b.indexOf(view));
@@ -448,8 +448,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     }
 
     private void o() {
-        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_in);
-        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_out);
+        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_in);
+        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_out);
         animationLoadAnimation2.setAnimationListener(new Animation.AnimationListener() { // from class: com.tsf.extend.theme.DIYThemeDetail.15
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationStart(Animation animation) {
@@ -505,7 +505,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                             @Override // android.os.AsyncTask
                             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                             public Boolean doInBackground(Void... voidArr) {
-                                return Boolean.valueOf(com.tsf.extend.theme.diy.c.a().a(com.tsf.extend.h.b(), aqVar));
+                                return Boolean.valueOf(com.tsf.extend.theme.diy.c.a().a(com.tsf.extend.AppContextHolder.b(), aqVar));
                             }
 
                             /* JADX INFO: Access modifiers changed from: protected */
@@ -522,12 +522,12 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 }
             }
         };
-        int i = f.g.theme_diy_delete_msg;
+        int i = ResourceIds.g.theme_diy_delete_msg;
         String strG = aqVar.g();
         if (!TextUtils.isEmpty(strG) && strG.contains("_LP")) {
-            i = f.g.lp_theme_delete;
+            i = ResourceIds.g.lp_theme_delete;
         }
-        new com.tsf.extend.theme.diy.e.a(getContext()).a(i).b(f.g.theme_change_cancel, onClickListener).a(f.g.delete, onClickListener).a().a(true);
+        new com.tsf.extend.theme.diy.e.a(getContext()).a(i).b(ResourceIds.g.theme_change_cancel, onClickListener).a(ResourceIds.g.delete, onClickListener).a().a(true);
     }
 
     private void a(int i) {
@@ -563,7 +563,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     }
 
     private BitmapDrawable getLikeUnselectDrawable() {
-        Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(getResources(), f.d.wallpaper_favorite_btn);
+        Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(getResources(), ResourceIds.d.wallpaper_favorite_btn);
         Paint paint = new Paint();
         paint.setColorFilter(new PorterDuffColorFilter(-16334705, PorterDuff.Mode.SRC_IN));
         Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapDecodeResource.getWidth(), bitmapDecodeResource.getHeight(), Bitmap.Config.ARGB_8888);
@@ -571,7 +571,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         return new BitmapDrawable(getContext().getResources(), bitmapCreateBitmap);
     }
 
-    class d extends com.tsf.extend.base.support.a {
+    class d extends com.tsf.extend.base.support.PagerAdapterCompat {
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
@@ -579,25 +579,25 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             this.b = DIYThemeDetail.this.new A();
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public float a(int i) {
             return DIYThemeDetail.this.a;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return DIYThemeDetail.this.o;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public Object a(ViewGroup viewGroup, int i) {
             final ImageView imageView = new ImageView(viewGroup.getContext());
             if (DIYThemeDetail.this.o == 1) {
                 imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                imageView.setImageResource(f.b.personal_list_item_bg);
+                imageView.setImageResource(ResourceIds.b.personal_list_item_bg);
             } else {
                 imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-                imageView.setBackgroundResource(f.b.personal_list_item_bg);
+                imageView.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
             }
             DIYThemeDetail.this.b.add(imageView);
             com.tsf.extend.base.d.a.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.DIYThemeDetail.d.1
@@ -636,13 +636,13 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             return imageView;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
             DIYThemeDetail.this.b.remove(obj);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
@@ -737,11 +737,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.DIYThemeDetail.3
             @Override // java.lang.Runnable
             public void run() {
-                DIYThemeDetail.this.z = (TextProgressBar) DIYThemeDetail.this.findViewById(f.e.cmt_download_pb);
+                DIYThemeDetail.this.z = (TextProgressBar) DIYThemeDetail.this.findViewById(ResourceIds.e.cmt_download_pb);
                 if (DIYThemeDetail.this.z != null) {
-                    DIYThemeDetail.this.z.setProgressDrawable(DIYThemeDetail.this.getResources().getDrawable(f.d.green_progress));
+                    DIYThemeDetail.this.z.setProgressDrawable(DIYThemeDetail.this.getResources().getDrawable(ResourceIds.d.green_progress));
                     DIYThemeDetail.this.z.setVisibility(0);
-                    DIYThemeDetail.this.f.setVisibility(8);
+                    DIYThemeDetail.this.ResourceIds.setVisibility(8);
                 }
             }
         });
@@ -755,8 +755,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 if (DIYThemeDetail.this.z != null && DIYThemeDetail.this.z.getVisibility() == 0) {
                     DIYThemeDetail.this.z.setVisibility(8);
                     DIYThemeDetail.this.z = null;
-                    DIYThemeDetail.this.f.setVisibility(0);
-                    DIYThemeDetail.this.f.setText(f.g.theme_detail_btn_apply);
+                    DIYThemeDetail.this.ResourceIds.setVisibility(0);
+                    DIYThemeDetail.this.ResourceIds.setText(ResourceIds.g.theme_detail_btn_apply);
                 }
             }
         });

@@ -13,7 +13,7 @@ import android.util.SparseArray;
 import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.core.ThemeManagerService;
 import com.tsf.extend.wallpaper.ab;
 import java.io.File;
@@ -158,7 +158,7 @@ public class ah {
     /* JADX INFO: Access modifiers changed from: private */
     public boolean a(String str, boolean z) {
         try {
-            Context contextCreatePackageContext = com.tsf.extend.h.b().createPackageContext(str, 3);
+            Context contextCreatePackageContext = com.tsf.extend.AppContextHolder.b().createPackageContext(str, 3);
             String string = null;
             ApplicationInfo applicationInfo = contextCreatePackageContext.getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             boolean z2 = false;
@@ -810,7 +810,7 @@ public class ah {
         com.tsf.extend.base.j.aa.a(new Runnable() { // from class: com.tsf.extend.theme.ah.5
             @Override // java.lang.Runnable
             public void run() {
-                Toast.makeText(context, f.g.theme_changing_succ, 0).show();
+                Toast.makeText(context, ResourceIds.g.theme_changing_succ, 0).show();
             }
         }, 2000L);
     }

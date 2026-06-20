@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperOnLinePager extends LinearLayout implements PageActivity.a {
@@ -20,7 +20,7 @@ public class WallpaperOnLinePager extends LinearLayout implements PageActivity.a
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.b = (WallpaperPager) findViewById(f.e.wallpaper_pager);
+        this.b = (WallpaperPager) findViewById(ResourceIds.e.wallpaper_pager);
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity.a

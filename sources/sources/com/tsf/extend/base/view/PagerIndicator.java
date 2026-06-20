@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.base.e.a;
+import com.tsf.extend.base.e.TypefaceManager;
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PagerIndicator extends LinearLayout implements View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, a.InterfaceC0049a {
-    public static final int[] b = {f.e.tab_new_layout, f.e.tab_hot_layout, f.e.tab_category_layout, f.e.tab_pg_template_layout};
+public class PagerIndicator extends LinearLayout implements View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, TypefaceManager.InterfaceC0049a {
+    public static final int[] b = {ResourceIds.e.tab_new_layout, ResourceIds.e.tab_hot_layout, ResourceIds.e.tab_category_layout, ResourceIds.e.tab_pg_template_layout};
     public final int a;
     private int c;
     private int d;
@@ -39,13 +39,13 @@ public class PagerIndicator extends LinearLayout implements View.OnClickListener
         this.a = 0;
         this.c = Color.parseColor("#06c08f");
         this.d = Color.parseColor("#99333333");
-        this.f = new int[]{f.e.tab_new, f.e.tab_hot, f.e.tab_category, f.e.tab_pg_template};
-        this.g = new int[]{f.e.tab_new_layout, f.e.tab_hot_layout, f.e.tab_category_layout, f.e.tab_pg_template_layout};
+        this.f = new int[]{ResourceIds.e.tab_new, ResourceIds.e.tab_hot, ResourceIds.e.tab_category, ResourceIds.e.tab_pg_template};
+        this.g = new int[]{ResourceIds.e.tab_new_layout, ResourceIds.e.tab_hot_layout, ResourceIds.e.tab_category_layout, ResourceIds.e.tab_pg_template_layout};
         this.h = 3;
         this.i = new int[this.h];
         this.l = p.b() / this.h;
         this.n = 0;
-        this.m = (int) getContext().getResources().getDimension(f.c.wallpaper_mark_padding_h);
+        this.m = (int) getContext().getResources().getDimension(ResourceIds.c.wallpaper_mark_padding_h);
         getViewTreeObserver().addOnGlobalLayoutListener(this);
     }
 
@@ -55,7 +55,7 @@ public class PagerIndicator extends LinearLayout implements View.OnClickListener
 
     private void a(int i, float f) {
         int i2 = this.i[i];
-        if (i < this.f.length - 1) {
+        if (i < this.ResourceIds.length - 1) {
             i2 = (int) (((this.i[i + 1] - i2) * f) + i2);
         }
         b(i2);
@@ -96,29 +96,29 @@ public class PagerIndicator extends LinearLayout implements View.OnClickListener
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.k = findViewById(f.e.mark_layout);
-        this.j = findViewById(f.e.mark);
+        this.k = findViewById(ResourceIds.e.mark_layout);
+        this.j = findViewById(ResourceIds.e.mark);
         for (int i : this.g) {
             findViewById(i).setOnClickListener(this);
         }
-        com.tsf.extend.base.e.a.a().a(this);
+        com.tsf.extend.base.e.TypefaceManager.a().a(this);
         a();
     }
 
     private void a() {
-        Typeface typefaceB = com.tsf.extend.base.e.a.a().b();
+        Typeface typefaceB = com.tsf.extend.base.e.TypefaceManager.a().b();
         for (int i : this.f) {
             ((TextView) findViewById(i)).setTypeface(typefaceB);
         }
     }
 
     public void a(int i) {
-        if (i >= 0 && i < this.f.length) {
+        if (i >= 0 && i < this.ResourceIds.length) {
             this.n = i;
             int i2 = 0;
             while (true) {
                 int i3 = i2;
-                if (i3 < this.f.length) {
+                if (i3 < this.ResourceIds.length) {
                     ((TextView) findViewById(this.f[i3])).setTextColor(i3 == i ? this.c : this.d);
                     i2 = i3 + 1;
                 } else {
@@ -155,7 +155,7 @@ public class PagerIndicator extends LinearLayout implements View.OnClickListener
         int width = findViewById(this.f[0]).getWidth() + this.m;
         if (width > this.m) {
             this.i[0] = width;
-            for (int i = 1; i < this.f.length; i++) {
+            for (int i = 1; i < this.ResourceIds.length; i++) {
                 this.i[i] = findViewById(this.f[i]).getWidth() + this.m;
             }
             a(this.n, 0.0f);

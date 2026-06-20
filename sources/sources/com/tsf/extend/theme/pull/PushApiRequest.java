@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import com.tsf.extend.theme.ai;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PushApiRequest extends com.tsf.extend.base.a.b {
+public class PushApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
     public PushApiRequest(String str, long j, boolean z, boolean z2) {
         e();
         b("5.0");

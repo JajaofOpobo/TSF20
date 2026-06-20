@@ -17,7 +17,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
 import com.tsf.extend.wallpaper.t;
@@ -28,7 +28,7 @@ import org.json.JSONObject;
 @SuppressLint({"InflateParams"})
 public class af extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, AbsListView.OnScrollListener, p, t.a {
     private static final FrameLayout.LayoutParams j = new FrameLayout.LayoutParams(-1, -1);
-    private com.tsf.extend.e A;
+    private com.tsf.extend.ThemeDialogFragment A;
     private final String B;
     private final String C;
     private final int D;
@@ -95,16 +95,16 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         this.i = pageActivity;
         this.d = Lists.newArrayList();
         this.e = Lists.newArrayList();
-        this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list, (ViewGroup) null);
+        this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list, (ViewGroup) null);
         this.a.setHeaderResizeEnabled(true);
         addView(this.a, j);
-        this.c = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.c.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        this.c = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.c.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.c.setOnClickListener(this);
-        this.q = LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_loadmore, (ViewGroup) null);
-        this.s = (ProgressBar) this.q.findViewById(f.e.loadmore_progress);
+        this.q = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
+        this.s = (ProgressBar) this.q.findViewById(ResourceIds.e.loadmore_progress);
         this.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
-        this.r = (TextView) this.q.findViewById(f.e.loadmore_tips);
+        this.r = (TextView) this.q.findViewById(ResourceIds.e.loadmore_tips);
         this.r.setOnClickListener(this);
         this.a.setLoadMoreView(this.q);
         this.a.setCanLoadMore(true);
@@ -163,7 +163,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         this.s.setVisibility(8);
         this.r.setVisibility(0);
         this.r.setClickable(false);
-        this.r.setText(f.g.load_more_no);
+        this.r.setText(ResourceIds.g.load_more_no);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -171,7 +171,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         this.s.setVisibility(8);
         this.r.setVisibility(0);
         this.r.setClickable(true);
-        this.r.setText(f.g.load_more_fail);
+        this.r.setText(ResourceIds.g.load_more_fail);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -193,12 +193,12 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.retry) {
+        if (id == ResourceIds.e.retry) {
             this.c.setVisibility(8);
             this.a.setMode(PullToRefreshBase.b.PULL_FROM_START);
             this.a.k();
         } else {
-            if (id == f.e.loadmore_tips) {
+            if (id == ResourceIds.e.loadmore_tips) {
                 this.s.setVisibility(0);
                 this.r.setVisibility(8);
                 e();
@@ -212,7 +212,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+                com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.primitives;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
-import com.censivn.C3DEngine.b.f.n;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VVirtualObject extends VObject3d {

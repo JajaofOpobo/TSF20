@@ -10,7 +10,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.widget.RemoteViews;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class UploadNotificationManager {
@@ -55,19 +55,19 @@ public class UploadNotificationManager {
     public void a(EnumC0071a enumC0071a, int i) {
         switch (enumC0071a) {
             case progress:
-                if (this.f.contentView == null || this.f.contentView != this.c) {
-                    this.c = new RemoteViews(this.a.getPackageName(), f.C0052f.service_notify_upload);
+                if (this.ResourceIds.contentView == null || this.ResourceIds.contentView != this.c) {
+                    this.c = new RemoteViews(this.a.getPackageName(), ResourceIds.C0052f.service_notify_upload);
                     a(this.c, enumC0071a);
-                    this.f.contentView = this.c;
-                    this.c.setOnClickPendingIntent(f.e.image_right, a(this.a, "com.ksmobile.launcher.uwpp.action_cancel"));
+                    this.ResourceIds.contentView = this.c;
+                    this.c.setOnClickPendingIntent(ResourceIds.e.image_right, a(this.a, "com.ksmobile.launcher.uwpp.action_cancel"));
                 }
-                this.f.contentView.setProgressBar(f.e.progress, 100, i, false);
+                this.ResourceIds.contentView.setProgressBar(ResourceIds.e.progress, 100, i, false);
                 this.e.notify(this.b, this.f);
                 break;
             case done:
-                RemoteViews remoteViews = new RemoteViews(this.a.getPackageName(), f.C0052f.service_notify_upload);
+                RemoteViews remoteViews = new RemoteViews(this.a.getPackageName(), ResourceIds.C0052f.service_notify_upload);
                 a(remoteViews, enumC0071a);
-                this.f.contentView = remoteViews;
+                this.ResourceIds.contentView = remoteViews;
                 this.e.notify(this.b, this.f);
                 z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.a.1
                     @Override // java.lang.Runnable
@@ -77,10 +77,10 @@ public class UploadNotificationManager {
                 }, 2000L);
                 break;
             case failed:
-                RemoteViews remoteViews2 = new RemoteViews(this.a.getPackageName(), f.C0052f.service_notify_upload);
+                RemoteViews remoteViews2 = new RemoteViews(this.a.getPackageName(), ResourceIds.C0052f.service_notify_upload);
                 a(remoteViews2, enumC0071a);
-                this.f.contentView = remoteViews2;
-                remoteViews2.setOnClickPendingIntent(f.e.image_right, a(this.a, "com.ksmobile.launcher.uwpp.action_retry"));
+                this.ResourceIds.contentView = remoteViews2;
+                remoteViews2.setOnClickPendingIntent(ResourceIds.e.image_right, a(this.a, "com.ksmobile.launcher.uwpp.action_retry"));
                 this.e.notify(this.b, this.f);
                 break;
             case cancel:
@@ -100,36 +100,36 @@ public class UploadNotificationManager {
     public void a(RemoteViews remoteViews, EnumC0071a enumC0071a) {
         switch (enumC0071a) {
             case progress:
-                remoteViews.setTextViewText(f.e.title, this.a.getResources().getString(f.g.upload_wallpaper_submitting));
-                remoteViews.setViewVisibility(f.e.image_right, 0);
-                remoteViews.setImageViewResource(f.e.image_right, f.d.tip_close);
-                remoteViews.setViewVisibility(f.e.progress, 0);
-                this.f.icon = f.d.icon_upload_wallpaper;
-                this.f.tickerText = this.a.getResources().getString(f.g.upload_wallpaper_submitting);
-                this.f.flags = 2;
+                remoteViews.setTextViewText(ResourceIds.e.title, this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submitting));
+                remoteViews.setViewVisibility(ResourceIds.e.image_right, 0);
+                remoteViews.setImageViewResource(ResourceIds.e.image_right, ResourceIds.d.tip_close);
+                remoteViews.setViewVisibility(ResourceIds.e.progress, 0);
+                this.ResourceIds.icon = ResourceIds.d.icon_upload_wallpaper;
+                this.ResourceIds.tickerText = this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submitting);
+                this.ResourceIds.flags = 2;
                 break;
             case done:
-                remoteViews.setTextViewText(f.e.title, this.a.getResources().getString(f.g.upload_wallpaper_submit_success));
-                remoteViews.setViewVisibility(f.e.image_right, 8);
-                remoteViews.setViewVisibility(f.e.progress, 8);
-                this.f.icon = f.d.icon_confirm;
-                this.f.tickerText = this.a.getResources().getString(f.g.upload_wallpaper_submit_success);
-                this.f.flags = 16;
+                remoteViews.setTextViewText(ResourceIds.e.title, this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submit_success));
+                remoteViews.setViewVisibility(ResourceIds.e.image_right, 8);
+                remoteViews.setViewVisibility(ResourceIds.e.progress, 8);
+                this.ResourceIds.icon = ResourceIds.d.icon_confirm;
+                this.ResourceIds.tickerText = this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submit_success);
+                this.ResourceIds.flags = 16;
                 break;
             case failed:
-                remoteViews.setTextViewText(f.e.title, this.a.getResources().getString(f.g.upload_wallpaper_submit_failed));
-                remoteViews.setViewVisibility(f.e.image_right, 0);
-                remoteViews.setImageViewResource(f.e.image_right, f.d.icon_btn_refresh);
-                remoteViews.setViewVisibility(f.e.progress, 8);
-                this.f.icon = f.d.icon_btn_refresh;
-                this.f.tickerText = this.a.getResources().getString(f.g.upload_wallpaper_submit_failed);
-                this.f.flags = 16;
+                remoteViews.setTextViewText(ResourceIds.e.title, this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submit_failed));
+                remoteViews.setViewVisibility(ResourceIds.e.image_right, 0);
+                remoteViews.setImageViewResource(ResourceIds.e.image_right, ResourceIds.d.icon_btn_refresh);
+                remoteViews.setViewVisibility(ResourceIds.e.progress, 8);
+                this.ResourceIds.icon = ResourceIds.d.icon_btn_refresh;
+                this.ResourceIds.tickerText = this.a.getResources().getString(ResourceIds.g.upload_wallpaper_submit_failed);
+                this.ResourceIds.flags = 16;
                 break;
         }
         if (this.d == null) {
-            remoteViews.setImageViewResource(f.e.image_icon, f.d.ic_launcher);
+            remoteViews.setImageViewResource(ResourceIds.e.image_icon, ResourceIds.d.ic_launcher);
         } else {
-            remoteViews.setImageViewBitmap(f.e.image_icon, this.d);
+            remoteViews.setImageViewBitmap(ResourceIds.e.image_icon, this.d);
         }
     }
 

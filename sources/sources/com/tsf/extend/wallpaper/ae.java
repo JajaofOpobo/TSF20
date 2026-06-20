@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.t;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ae extends ad {
-    private static int[] o = {f.g.time_january, f.g.time_february, f.g.time_march, f.g.time_april, f.g.time_may, f.g.time_june, f.g.time_july, f.g.time_august, f.g.time_september, f.g.time_october, f.g.time_november, f.g.time_december};
+    private static int[] o = {ResourceIds.g.time_january, ResourceIds.g.time_february, ResourceIds.g.time_march, ResourceIds.g.time_april, ResourceIds.g.time_may, ResourceIds.g.time_june, ResourceIds.g.time_july, ResourceIds.g.time_august, ResourceIds.g.time_september, ResourceIds.g.time_october, ResourceIds.g.time_november, ResourceIds.g.time_december};
     private View j;
     private TextView k;
     private int l;
@@ -34,12 +34,12 @@ public class ae extends ad {
         super(context, ai.NewType, pageActivity, iVar);
         this.m = new Rect();
         this.p = -1;
-        this.n = (int) getContext().getResources().getDimension(f.c.personal_indicator_height);
-        this.j = LayoutInflater.from(context).inflate(f.C0052f.wallpaper_new_list_hint, (ViewGroup) null);
-        this.k = (TextView) this.j.findViewById(f.e.time);
+        this.n = (int) getContext().getResources().getDimension(ResourceIds.c.personal_indicator_height);
+        this.j = LayoutInflater.from(context).inflate(ResourceIds.C0052f.wallpaper_new_list_hint, (ViewGroup) null);
+        this.k = (TextView) this.j.findViewById(ResourceIds.e.time);
         this.k.setMaxWidth(this.f - ((int) (10.0f * getContext().getResources().getDisplayMetrics().density)));
         addView(this.j);
-        this.l = (int) context.getResources().getDimension(f.c.wallpaper_time_hint_height);
+        this.l = (int) context.getResources().getDimension(ResourceIds.c.wallpaper_time_hint_height);
         d();
         if (z) {
             a();
@@ -56,7 +56,7 @@ public class ae extends ad {
     @Override // com.tsf.extend.wallpaper.ad, com.tsf.extend.wallpaper.t.a
     public void a(t.c cVar, View view) {
         super.a(cVar, view);
-        cVar.i = (TextView) view.findViewById(f.e.time);
+        cVar.i = (TextView) view.findViewById(ResourceIds.e.time);
         cVar.i.setMaxWidth(this.f - ((int) (10.0f * getContext().getResources().getDisplayMetrics().density)));
         cVar.i.setVisibility(8);
     }
@@ -141,7 +141,7 @@ public class ae extends ad {
 
     private CharSequence a(int[] iArr, int[] iArr2) {
         if (iArr2[0] == iArr[0] && iArr2[3] == iArr[3]) {
-            return getContext().getString(f.g.time_today);
+            return getContext().getString(ResourceIds.g.time_today);
         }
         SpannableString spannableString = new SpannableString(iArr[0] + " · " + getContext().getString(o[iArr[1]]));
         spannableString.setSpan(new StyleSpan(1), 0, (iArr[0] + " · ").length(), 17);

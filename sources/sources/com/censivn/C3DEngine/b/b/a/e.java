@@ -2,8 +2,8 @@ package com.censivn.C3DEngine.b.b.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.manager.action.GestureHandler;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -29,7 +29,7 @@ public class e extends j {
     private boolean q = false;
     private boolean r = true;
     private j c = new j() { // from class: com.censivn.C3DEngine.b.b.A.e.1
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onChildMeasure(i iVar) {
             a();
         }
@@ -361,7 +361,7 @@ public class e extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         transferCanvasV(minX(), -com.censivn.C3DEngine.b.b.A.I, maxX(), com.censivn.C3DEngine.b.b.A.I);
     }
@@ -387,7 +387,7 @@ public class e extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (getAnimationObjectState()) {
             float f = this.l ? 100.0f : 255.0f;
@@ -472,21 +472,21 @@ public class e extends j {
         this.c.addChild(this.d);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
         if (getChildIndexOf(iVar) != -1) {
             g();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void setAABBPX(float f, float f2, float f3, float f4, float f5, float f6) {
         super.setAABBPX(f, f2, f3, f4, f5, f6);
         this.c.minY(f2);
         this.c.maxY(f5);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();

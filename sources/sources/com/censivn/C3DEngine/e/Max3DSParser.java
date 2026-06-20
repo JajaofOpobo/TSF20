@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.util.Log;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.e.AbstractModelParser;
 import java.io.BufferedInputStream;
 import java.io.IOException;

@@ -14,7 +14,7 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.view.DecoratorViewPager;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.C;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.theme.v;
@@ -58,7 +58,7 @@ public class y extends t {
                                 String strG = kVar.g();
                                 if (strG == null || strG.isEmpty()) {
                                 }
-                                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(y.this.b).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(y.this.b).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                                 themeDetail.setFromInlet("30");
                                 themeDetail.setFromTab("banner");
                                 themeDetail.setTheme(kVar);
@@ -71,7 +71,7 @@ public class y extends t {
                             return;
                         }
                         if ("2".equals(aVar.b)) {
-                            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(f.C0052f.wallpaper_detail, (ViewGroup) null);
+                            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail, (ViewGroup) null);
                             wallpaperDetail.setType(com.tsf.extend.wallpaper.ai.NewType);
                             com.tsf.extend.wallpaper.m mVar = (com.tsf.extend.wallpaper.m) aVar.d;
                             if (mVar != null) {
@@ -95,7 +95,7 @@ public class y extends t {
                             return;
                         }
                         if ("4".equals(aVar.b) && (y.this.b instanceof PageActivity)) {
-                            ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(y.this.b).inflate(f.C0052f.theme_albums_list, (ViewGroup) null);
+                            ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(y.this.b).inflate(ResourceIds.C0052f.theme_albums_list, (ViewGroup) null);
                             v.a aVar2 = (v.a) aVar.d;
                             if (aVar2 != null) {
                                 if (TextUtils.isEmpty(aVar2.b)) {
@@ -145,20 +145,20 @@ public class y extends t {
 
     @Override // com.tsf.extend.theme.t
     protected int c() {
-        return f.C0052f.theme_all_item_new_style;
+        return ResourceIds.C0052f.theme_all_item_new_style;
     }
 
     private View a(int i, View view, ViewGroup viewGroup) {
         DecoratorViewPager decoratorViewPager;
         n nVar = (n) this.a.get(i).e();
         if (view == null) {
-            view = LayoutInflater.from(this.b).inflate(f.C0052f.theme_list_item_album_entry, viewGroup, false);
-            DecoratorViewPager decoratorViewPager2 = (DecoratorViewPager) view.findViewById(f.e.viewpager);
+            view = LayoutInflater.from(this.b).inflate(ResourceIds.C0052f.theme_list_item_album_entry, viewGroup, false);
+            DecoratorViewPager decoratorViewPager2 = (DecoratorViewPager) view.findViewById(ResourceIds.e.viewpager);
             a(decoratorViewPager2);
             decoratorViewPager2.setPageMargin(this.l * 2);
             decoratorViewPager = decoratorViewPager2;
         } else {
-            decoratorViewPager = (DecoratorViewPager) view.findViewById(f.e.viewpager);
+            decoratorViewPager = (DecoratorViewPager) view.findViewById(ResourceIds.e.viewpager);
         }
         A aVar = new A(nVar, i);
         try {
@@ -216,7 +216,7 @@ public class y extends t {
         public Object a(ViewGroup viewGroup, int i) {
             int size = i % this.e.size();
             c.a aVar = this.e.get(size);
-            ImageView imageView = (ImageView) LayoutInflater.from(y.this.b).inflate(f.C0052f.theme_list_item_album_entry_image, viewGroup, false);
+            ImageView imageView = (ImageView) LayoutInflater.from(y.this.b).inflate(ResourceIds.C0052f.theme_list_item_album_entry_image, viewGroup, false);
             a(imageView, aVar.c);
             imageView.setOnClickListener(y.this.o);
             C cVar = y.this.new C();

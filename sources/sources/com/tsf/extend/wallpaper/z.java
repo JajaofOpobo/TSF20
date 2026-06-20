@@ -8,7 +8,7 @@ import android.util.Pair;
 import android.util.SparseArray;
 import com.android.volley.n;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.WallpaperDetail;
 import com.tsf.extend.wallpaper.m;
 import com.tsf.extend.wallpaper.o;
@@ -54,8 +54,8 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
     }
 
     private z() {
-        Context contextB = com.tsf.extend.h.b();
-        this.u = new o(com.tsf.extend.base.f.c.a(contextB, null));
+        Context contextB = com.tsf.extend.AppContextHolder.b();
+        this.u = new o(com.tsf.extend.base.ResourceIds.c.a(contextB, null));
         this.u.a(this);
         a(contextB, this.u);
         String strB = com.tsf.extend.base.j.d.b(contextB);
@@ -66,23 +66,23 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         q = String.format(q, strB, str);
         s = String.format(s, strB);
         this.w = new SparseArray<>();
-        this.w.put(1, Integer.valueOf(f.g.wallpaper_category_1));
-        this.w.put(12, Integer.valueOf(f.g.wallpaper_category_12));
-        this.w.put(6, Integer.valueOf(f.g.wallpaper_category_6));
-        this.w.put(11, Integer.valueOf(f.g.wallpaper_category_11));
-        this.w.put(15, Integer.valueOf(f.g.wallpaper_category_15));
-        this.w.put(2, Integer.valueOf(f.g.wallpaper_category_2));
-        this.w.put(18, Integer.valueOf(f.g.wallpaper_category_18));
-        this.w.put(25, Integer.valueOf(f.g.wallpaper_category_25));
-        this.w.put(7, Integer.valueOf(f.g.wallpaper_category_7));
-        this.w.put(4, Integer.valueOf(f.g.wallpaper_category_4));
-        this.w.put(21, Integer.valueOf(f.g.wallpaper_category_21));
-        this.w.put(29, Integer.valueOf(f.g.wallpaper_category_29));
-        this.w.put(28, Integer.valueOf(f.g.wallpaper_category_28));
-        this.w.put(30, Integer.valueOf(f.g.wallpaper_category_30));
-        this.w.put(31, Integer.valueOf(f.g.wallpaper_category_31));
-        this.w.put(32, Integer.valueOf(f.g.wallpaper_category_32));
-        this.w.put(33, Integer.valueOf(f.g.wallpaper_category_33));
+        this.w.put(1, Integer.valueOf(ResourceIds.g.wallpaper_category_1));
+        this.w.put(12, Integer.valueOf(ResourceIds.g.wallpaper_category_12));
+        this.w.put(6, Integer.valueOf(ResourceIds.g.wallpaper_category_6));
+        this.w.put(11, Integer.valueOf(ResourceIds.g.wallpaper_category_11));
+        this.w.put(15, Integer.valueOf(ResourceIds.g.wallpaper_category_15));
+        this.w.put(2, Integer.valueOf(ResourceIds.g.wallpaper_category_2));
+        this.w.put(18, Integer.valueOf(ResourceIds.g.wallpaper_category_18));
+        this.w.put(25, Integer.valueOf(ResourceIds.g.wallpaper_category_25));
+        this.w.put(7, Integer.valueOf(ResourceIds.g.wallpaper_category_7));
+        this.w.put(4, Integer.valueOf(ResourceIds.g.wallpaper_category_4));
+        this.w.put(21, Integer.valueOf(ResourceIds.g.wallpaper_category_21));
+        this.w.put(29, Integer.valueOf(ResourceIds.g.wallpaper_category_29));
+        this.w.put(28, Integer.valueOf(ResourceIds.g.wallpaper_category_28));
+        this.w.put(30, Integer.valueOf(ResourceIds.g.wallpaper_category_30));
+        this.w.put(31, Integer.valueOf(ResourceIds.g.wallpaper_category_31));
+        this.w.put(32, Integer.valueOf(ResourceIds.g.wallpaper_category_32));
+        this.w.put(33, Integer.valueOf(ResourceIds.g.wallpaper_category_33));
     }
 
     @Override // com.tsf.extend.base.d.a
@@ -95,7 +95,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }
         if (g.equals(str)) {
             if (TextUtils.isEmpty(this.t)) {
-                this.t = com.tsf.extend.base.j.d.b(com.tsf.extend.h.b());
+                this.t = com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b());
             }
             return "https://cml.ksmobile.com/rand/wp?count=20&mcc=" + this.t;
         }
@@ -383,7 +383,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         if (jSONArrayOptJSONArray == null || iOptInt != 0) {
             return null;
         }
-        com.tsf.extend.h.b();
+        com.tsf.extend.AppContextHolder.b();
         com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
         aVar.a(new A());
         aVar.a(System.currentTimeMillis());
@@ -470,7 +470,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         if (h.equals(str)) {
             return h;
         }
-        if (f.equals(str)) {
+        if (ResourceIds.equals(str)) {
             return g;
         }
         return e;

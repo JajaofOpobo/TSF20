@@ -42,7 +42,7 @@ public class ao {
 
     public void a() {
         if (this.b == null) {
-            com.tsf.extend.h.b().bindService(new Intent(com.tsf.extend.h.b(), (Class<?>) ThemeService.class), this.e, 1);
+            com.tsf.extend.AppContextHolder.b().bindService(new Intent(com.tsf.extend.AppContextHolder.b(), (Class<?>) ThemeService.class), this.e, 1);
         }
     }
 

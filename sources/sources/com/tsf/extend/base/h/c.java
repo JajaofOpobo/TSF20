@@ -1,7 +1,7 @@
 package com.tsf.extend.base.h;
 
 import android.content.SharedPreferences;
-import com.tsf.extend.h;
+import com.tsf.extend.AppContextHolder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c {

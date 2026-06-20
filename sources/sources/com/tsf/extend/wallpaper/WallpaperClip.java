@@ -18,13 +18,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
-import com.tsf.extend.wallpaper.a.a;
+import com.tsf.extend.ResourceIds;
+import com.tsf.extend.wallpaper.a.WallpaperChangeManager;
 import java.io.File;
 import java.io.FileOutputStream;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WallpaperClip extends FrameLayout implements View.OnClickListener, PageActivity.a, a.b {
+public class WallpaperClip extends FrameLayout implements View.OnClickListener, PageActivity.a, WallpaperChangeManager.b {
     public Context a;
     private PersonalizationActivity b;
     private WallpaperClipImageView c;
@@ -58,49 +58,49 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        findViewById(f.e.wp_clip_title).setOnClickListener(this);
-        this.e = (ImageView) findViewById(f.e.wp_clip_preview_bt);
+        findViewById(ResourceIds.e.wp_clip_title).setOnClickListener(this);
+        this.e = (ImageView) findViewById(ResourceIds.e.wp_clip_preview_bt);
         this.e.setOnClickListener(this);
-        this.h = (TextView) findViewById(f.e.wp_clip_set_wallpaper_bt);
-        this.h.setText(getResources().getString(f.g.set_as_wallpaper).toUpperCase());
+        this.h = (TextView) findViewById(ResourceIds.e.wp_clip_set_wallpaper_bt);
+        this.h.setText(getResources().getString(ResourceIds.g.set_as_wallpaper).toUpperCase());
         this.h.setOnClickListener(this);
-        this.d = (ImageView) findViewById(f.e.wp_clip_preview);
+        this.d = (ImageView) findViewById(ResourceIds.e.wp_clip_preview);
         this.d.setOnClickListener(this);
-        this.c = (WallpaperClipImageView) findViewById(f.e.wp_clip_launcher_clip_preview);
-        this.g = (TextView) findViewById(f.e.wp_clip_single_screen);
-        this.i = (TextView) findViewById(f.e.wp_clip_muti_screen);
+        this.c = (WallpaperClipImageView) findViewById(ResourceIds.e.wp_clip_launcher_clip_preview);
+        this.g = (TextView) findViewById(ResourceIds.e.wp_clip_single_screen);
+        this.i = (TextView) findViewById(ResourceIds.e.wp_clip_muti_screen);
         this.i.setOnClickListener(this);
         this.g.setOnClickListener(this);
-        this.k = findViewById(f.e.wp_clip_setting_wallpaper);
-        this.l = (ProgressBar) findViewById(f.e.wp_clip_setting_wallpaper_progress);
+        this.k = findViewById(ResourceIds.e.wp_clip_setting_wallpaper);
+        this.l = (ProgressBar) findViewById(ResourceIds.e.wp_clip_setting_wallpaper_progress);
         this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
-        this.m = findViewById(f.e.wp_clip_progress_text);
-        this.j = (CustomWallpaperShadowView) findViewById(f.e.wallpaper_shadow);
+        this.m = findViewById(ResourceIds.e.wp_clip_progress_text);
+        this.j = (CustomWallpaperShadowView) findViewById(ResourceIds.e.wallpaper_shadow);
         this.j.setOnTouchListener(this.c.getTouchListener());
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.wp_clip_title) {
+        if (id == ResourceIds.e.wp_clip_title) {
             this.b.onBackPressed();
             return;
         }
-        if (id == f.e.wp_clip_single_screen) {
+        if (id == ResourceIds.e.wp_clip_single_screen) {
             a(true);
             return;
         }
-        if (id == f.e.wp_clip_muti_screen) {
+        if (id == ResourceIds.e.wp_clip_muti_screen) {
             a(false);
             return;
         }
-        if (id == f.e.wp_clip_preview_bt) {
+        if (id == ResourceIds.e.wp_clip_preview_bt) {
             b(true);
             return;
         }
-        if (id == f.e.wp_clip_set_wallpaper_bt) {
+        if (id == ResourceIds.e.wp_clip_set_wallpaper_bt) {
             if (this.b.g()) {
-                Toast.makeText(getContext(), f.g.theme_current_no_set_wallpaper, 0).show();
+                Toast.makeText(getContext(), ResourceIds.g.theme_current_no_set_wallpaper, 0).show();
                 this.b.finish();
                 return;
             } else {
@@ -108,7 +108,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
                 return;
             }
         }
-        if (id == f.e.wp_clip_preview) {
+        if (id == ResourceIds.e.wp_clip_preview) {
             b(false);
         }
     }
@@ -127,7 +127,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     public void a(PageActivity pageActivity) {
         if (pageActivity instanceof PersonalizationActivity) {
             this.b = (PersonalizationActivity) pageActivity;
-            setPadding(0, (int) getResources().getDimension(f.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
+            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
             this.d.setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
             this.f = WallpaperManager.getInstance(getContext());
         }
@@ -176,23 +176,23 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        com.tsf.extend.wallpaper.a.a.b(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.b(this);
     }
 
     private void a(boolean z) {
         if (this.n != z) {
             this.n = z;
             if (z) {
-                Drawable drawable = getResources().getDrawable(f.d.wp_clip_fix_on_bt);
+                Drawable drawable = getResources().getDrawable(ResourceIds.d.wp_clip_fix_on_bt);
                 drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                Drawable drawable2 = getResources().getDrawable(f.d.wp_clip_scrollable_off_bt);
+                Drawable drawable2 = getResources().getDrawable(ResourceIds.d.wp_clip_scrollable_off_bt);
                 drawable2.setBounds(0, 0, drawable2.getMinimumWidth(), drawable2.getMinimumHeight());
                 this.g.setCompoundDrawables(null, drawable, null, null);
                 this.i.setCompoundDrawables(null, drawable2, null, null);
             } else {
-                Drawable drawable3 = getResources().getDrawable(f.d.wp_clip_fix_off_bt);
+                Drawable drawable3 = getResources().getDrawable(ResourceIds.d.wp_clip_fix_off_bt);
                 drawable3.setBounds(0, 0, drawable3.getMinimumWidth(), drawable3.getMinimumHeight());
-                Drawable drawable4 = getResources().getDrawable(f.d.wp_clip_scrollable_on_bt);
+                Drawable drawable4 = getResources().getDrawable(ResourceIds.d.wp_clip_scrollable_on_bt);
                 drawable4.setBounds(0, 0, drawable4.getMinimumWidth(), drawable4.getMinimumHeight());
                 this.g.setCompoundDrawables(null, drawable3, null, null);
                 this.i.setCompoundDrawables(null, drawable4, null, null);
@@ -259,7 +259,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
                             @Override // java.lang.Runnable
                             public void run() {
                                 WallpaperClip.this.i();
-                                Toast.makeText(WallpaperClip.this.b, f.g.load_fail_retry, 1).show();
+                                Toast.makeText(WallpaperClip.this.b, ResourceIds.g.load_fail_retry, 1).show();
                             }
                         });
                     }
@@ -267,7 +267,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
             });
         } else {
             this.b.b(false);
-            setPadding(0, (int) getResources().getDimension(f.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
+            setPadding(0, (int) getResources().getDimension(ResourceIds.c.workspace_margin_top), 0, com.tsf.extend.base.j.p.c(getContext()));
             this.d.setVisibility(8);
             com.tsf.extend.base.j.b.a(this.d, (Drawable) null);
             this.d.setImageBitmap(null);
@@ -275,7 +275,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
     }
 
     private void h() {
-        com.tsf.extend.wallpaper.a.a.a(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.a(this);
         e(true);
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.2
             @Override // java.lang.Runnable
@@ -320,7 +320,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    @Override // com.tsf.extend.wallpaper.a.a.b
+    @Override // com.tsf.extend.wallpaper.a.WallpaperChangeManager.b
     public void g() {
         c(true);
     }
@@ -330,7 +330,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperClip.3
             @Override // java.lang.Runnable
             public void run() {
-                Toast.makeText(WallpaperClip.this.b, z ? f.g.wallpaper_set_suc : f.g.wallpaper_set_fail, 1).show();
+                Toast.makeText(WallpaperClip.this.b, z ? ResourceIds.g.wallpaper_set_suc : ResourceIds.g.wallpaper_set_fail, 1).show();
                 if (z) {
                     WallpaperClip.this.b.finish();
                 }

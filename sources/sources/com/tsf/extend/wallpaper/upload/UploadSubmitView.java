@@ -21,8 +21,8 @@ import android.widget.Toast;
 import com.tsf.extend.base.j.h;
 import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.o;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.ag;
 import java.text.DecimalFormat;
 
@@ -60,15 +60,15 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
         setPadding(this.l, 0, this.l, 0);
         setOnClickListener(this);
         this.f = new TextView(getContext());
-        this.f.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
-        this.f.setTextSize(20.0f);
-        this.f.setTextColor(Color.rgb(255, 255, 255));
-        this.f.setText(f.g.upload_wallpaper_submitpage_titleTip);
+        this.ResourceIds.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
+        this.ResourceIds.setTextSize(20.0f);
+        this.ResourceIds.setTextColor(Color.rgb(255, 255, 255));
+        this.ResourceIds.setText(ResourceIds.g.upload_wallpaper_submitpage_titleTip);
         addView(this.f);
         this.e = new TextView(getContext());
         this.e.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
         this.e.setTextSize(13.0f);
-        this.e.setText(f.g.upload_wallpaper_submitpage_tip);
+        this.e.setText(ResourceIds.g.upload_wallpaper_submitpage_tip);
         this.e.setTextColor(Color.rgb(255, 255, 255));
         addView(this.e);
         c();
@@ -76,7 +76,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
         this.g.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
         this.g.setTextSize(13.0f);
         this.g.setTextColor(Color.argb(178, 255, 255, 255));
-        this.g.setText(f.g.upload_wallpaper_submitpage_copyright);
+        this.g.setText(ResourceIds.g.upload_wallpaper_submitpage_copyright);
         addView(this.g);
         e();
         getViewTreeObserver().addOnGlobalLayoutListener(this);
@@ -96,7 +96,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
     private void c() {
         this.d = new FrameLayout(getContext());
         this.d.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
-        this.d.setBackgroundResource(f.d.upload_wallpaper_edit_bk);
+        this.d.setBackgroundResource(ResourceIds.d.upload_wallpaper_edit_bk);
         this.h = new EditText(getContext());
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(i.a(272.0f), -1);
         layoutParams.topMargin = i.a(5.0f);
@@ -114,7 +114,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
         layoutParams2.topMargin = i.a(14.0f);
         this.j = new ImageButton(getContext());
         this.j.setLayoutParams(layoutParams2);
-        this.j.setBackgroundResource(f.d.icon_search_delete);
+        this.j.setBackgroundResource(ResourceIds.d.icon_search_delete);
         this.j.setOnClickListener(this);
         this.d.addView(this.j);
         addView(this.d);
@@ -146,11 +146,11 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
 
     private void e() {
         this.i = new Button(getContext());
-        this.i.setText(f.g.wallpaper_upload_text);
+        this.i.setText(ResourceIds.g.wallpaper_upload_text);
         this.i.setTextColor(Color.rgb(255, 255, 255));
         this.i.setTextSize(16.0f);
         this.i.setLayoutParams(new ViewGroup.LayoutParams(-1, i.a(48.0f)));
-        com.tsf.extend.base.j.b.a(this.i, getResources().getDrawable(f.d.upload_wallpaper_submit_btn));
+        com.tsf.extend.base.j.b.a(this.i, getResources().getDrawable(ResourceIds.d.upload_wallpaper_submit_btn));
         addView(this.i);
         this.i.setOnClickListener(this);
         if (this.h != null) {
@@ -176,18 +176,18 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
         int i = 0;
         String string = "";
         if ("1".equals(str)) {
-            string = getContext().getString(f.g.uplaod_wallpaper_dialog_no_network);
-            i = f.g.uplaod_wallpaper_dialog_check_network;
+            string = getContext().getString(ResourceIds.g.uplaod_wallpaper_dialog_no_network);
+            i = ResourceIds.g.uplaod_wallpaper_dialog_check_network;
         } else if ("2".equals(str)) {
-            string = getContext().getString(f.g.uplaod_wallpaper_dialog_mobile_network);
+            string = getContext().getString(ResourceIds.g.uplaod_wallpaper_dialog_mobile_network);
             long jA = this.b.a();
             if (jA != -1) {
                 string = String.format(string, a(jA));
             }
-            i = f.g.uplaod_wallpaper_dialog_ok;
+            i = ResourceIds.g.uplaod_wallpaper_dialog_ok;
         }
         f();
-        this.k = new e.a(getContext()).a(string).b(f.g.uplaod_wallpaper_dialog_cancel, this).a(i, this).a();
+        this.k = new e.a(getContext()).a(string).b(ResourceIds.g.uplaod_wallpaper_dialog_cancel, this).a(i, this).a();
         this.k.a(str);
         try {
             this.k.a(true);
@@ -258,7 +258,7 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
                     h();
                     return;
                 } else {
-                    Toast.makeText(this.b, f.g.uplaod_wallpaper_submit_tip, 0).show();
+                    Toast.makeText(this.b, ResourceIds.g.uplaod_wallpaper_submit_tip, 0).show();
                     this.b.b();
                     return;
                 }
@@ -285,10 +285,10 @@ public class UploadSubmitView extends FrameLayout implements DialogInterface.OnC
                 categoryRealY = this.c.getCategoryRealY();
             }
             int i = categoryRealY <= 0 ? iA * 10 : categoryRealY;
-            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.f.getLayoutParams();
+            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.ResourceIds.getLayoutParams();
             layoutParams.topMargin = i;
-            this.f.setLayoutParams(layoutParams);
-            int height2 = i + this.f.getHeight() + i.a(6.0f);
+            this.ResourceIds.setLayoutParams(layoutParams);
+            int height2 = i + this.ResourceIds.getHeight() + i.a(6.0f);
             FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) this.e.getLayoutParams();
             layoutParams2.topMargin = height2;
             this.e.setLayoutParams(layoutParams2);

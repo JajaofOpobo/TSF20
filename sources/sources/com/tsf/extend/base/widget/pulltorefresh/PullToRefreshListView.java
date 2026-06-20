@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView> {
@@ -226,8 +226,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
     @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAdapterViewBase, com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase
     protected void a(TypedArray typedArray) {
         super.a(typedArray);
-        this.h = typedArray.getBoolean(f.i.PullToRefresh_ptrListViewExtrasEnabled, true);
-        this.i = typedArray.getBoolean(f.i.PullToRefresh_ptrExtraHeaderEnabled, false);
+        this.h = typedArray.getBoolean(ResourceIds.i.PullToRefresh_ptrListViewExtrasEnabled, true);
+        this.i = typedArray.getBoolean(ResourceIds.i.PullToRefresh_ptrExtraHeaderEnabled, false);
         if (this.h) {
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -2, 1);
             this.d = a(getContext(), PullToRefreshBase.b.PULL_FROM_START, typedArray);
@@ -249,8 +249,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
             this.e = a(getContext(), PullToRefreshBase.b.PULL_FROM_END, typedArray);
             this.e.setVisibility(8);
             layoutParams.gravity = 1;
-            this.f.addView(this.e, layoutParams);
-            if (!typedArray.hasValue(f.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
+            this.ResourceIds.addView(this.e, layoutParams);
+            if (!typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
                 setScrollingWhileRefreshingEnabled(true);
             }
         }

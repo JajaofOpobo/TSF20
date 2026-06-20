@@ -4,7 +4,7 @@ import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
 import android.view.View;
 import com.censivn.C3DEngine.a.GestureDetector;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 

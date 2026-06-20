@@ -6,7 +6,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.PopupWindow;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CmPopupWindow extends PopupWindow {
@@ -34,7 +34,7 @@ public class CmPopupWindow extends PopupWindow {
         setOutsideTouchable(false);
         view.setFocusableInTouchMode(true);
         a(view);
-        setAnimationStyle(f.h.menushow);
+        setAnimationStyle(ResourceIds.h.menushow);
         update();
     }
 

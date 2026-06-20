@@ -19,7 +19,7 @@ import android.widget.Toast;
 import com.tsf.extend.base.j.h;
 import com.tsf.extend.base.j.o;
 import com.tsf.extend.base.j.r;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.diy.e;
 import com.tsf.extend.wallpaper.upload.UploadNotificationManager;
 import java.io.BufferedReader;
@@ -125,7 +125,7 @@ public class UploadWallpaperService extends Service {
     }
 
     private void b(String str) {
-        if (com.tsf.extend.b.a.booleanValue()) {
+        if (com.tsf.extend.BuildFlags.a.booleanValue()) {
             Log.v("TSF", str);
         }
     }
@@ -387,7 +387,7 @@ public class UploadWallpaperService extends Service {
 
     private String f() {
         try {
-            String strA = com.tsf.extend.base.a.a(this).a();
+            String strA = com.tsf.extend.base.a.BaseApiRequest.a(this).a();
             if (TextUtils.isEmpty(strA)) {
                 return "";
             }
@@ -710,7 +710,7 @@ public class UploadWallpaperService extends Service {
                                 }
                             }
                             if (j > 1048576) {
-                                Toast.makeText(context, String.format(UploadWallpaperService.this.getString(f.g.uplaod_wallpaper_dialog_mobile_network), com.tsf.extend.wallpaper.upload.UploadSubmitView.a(j)), 1).show();
+                                Toast.makeText(context, String.format(UploadWallpaperService.this.getString(ResourceIds.g.uplaod_wallpaper_dialog_mobile_network), com.tsf.extend.wallpaper.upload.UploadSubmitView.a(j)), 1).show();
                             }
                             UploadWallpaperService.this.a();
                             return;
@@ -725,7 +725,7 @@ public class UploadWallpaperService extends Service {
                         }
                     }
                     if (iA == 0) {
-                        Toast.makeText(context, f.g.uplaod_wallpaper_dialog_no_network, 1).show();
+                        Toast.makeText(context, ResourceIds.g.uplaod_wallpaper_dialog_no_network, 1).show();
                     } else {
                         UploadWallpaperService.this.a();
                     }

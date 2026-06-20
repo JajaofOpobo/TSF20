@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ag {
     private static ag a = null;
-    private SharedPreferences b = com.tsf.extend.h.b().getApplicationContext().getSharedPreferences("personalization_shard", 0);
+    private SharedPreferences b = com.tsf.extend.AppContextHolder.b().getApplicationContext().getSharedPreferences("personalization_shard", 0);
 
     private ag() {
     }

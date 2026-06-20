@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import com.censivn.C3DEngine.a.RendererImpl;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.DimensionHelper;
 import java.lang.reflect.Method;
 

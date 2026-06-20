@@ -2,7 +2,7 @@ package com.tsf.extend.theme;
 
 import android.content.Context;
 import android.view.View;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import java.util.List;
 
@@ -14,6 +14,6 @@ public class af extends t {
 
     @Override // com.tsf.extend.theme.t
     protected int c() {
-        return f.C0052f.theme_all_item_new_style;
+        return ResourceIds.C0052f.theme_all_item_new_style;
     }
 }

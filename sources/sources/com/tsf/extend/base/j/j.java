@@ -23,7 +23,7 @@ public class j {
         if (a != null) {
             return a;
         }
-        Context applicationContext = com.tsf.extend.h.b().getApplicationContext();
+        Context applicationContext = com.tsf.extend.AppContextHolder.b().getApplicationContext();
         if (applicationContext != null && (resources = applicationContext.getResources()) != null) {
             a = resources.getDisplayMetrics();
             if (a != null) {

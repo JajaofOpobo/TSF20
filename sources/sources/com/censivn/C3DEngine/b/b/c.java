@@ -4,9 +4,9 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.e.f;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
@@ -189,7 +189,7 @@ public class c extends j {
         maxX(this.a / 2.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
     }
 
@@ -222,12 +222,12 @@ public class c extends j {
         d();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public boolean calTouchCollision(float f, float f2) {
         return super.calTouchCollision(f, f2);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();
@@ -274,7 +274,7 @@ public class c extends j {
         return layoutParams.i + f <= ((float) A.I) && layoutParams.k + f >= ((float) (-A.I));
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
     }
 
@@ -323,7 +323,7 @@ public class c extends j {
         return f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
         if (iVar instanceof c) {
             ((c) iVar).b(this.a);
@@ -332,14 +332,14 @@ public class c extends j {
         d();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         d();
         return zRemoveChild;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         if (iVar instanceof c) {
             ((c) iVar).b(this.a);

@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -33,11 +33,11 @@ public class am extends Dialog {
     }
 
     public am(Context context, boolean z) throws Throwable {
-        super(context, f.h.theme_share_dialog);
+        super(context, ResourceIds.h.theme_share_dialog);
         this.a = context;
         this.b = context.getResources().getConfiguration().orientation;
-        setContentView(f.C0052f.theme_diy_share_dialog);
-        ((ViewGroup) findViewById(f.e.share_dialog)).addView(new View(getContext()) { // from class: com.tsf.extend.theme.am.1
+        setContentView(ResourceIds.C0052f.theme_diy_share_dialog);
+        ((ViewGroup) findViewById(ResourceIds.e.share_dialog)).addView(new View(getContext()) { // from class: com.tsf.extend.theme.am.1
             @Override // android.view.View
             protected void onConfigurationChanged(Configuration configuration) {
                 super.onConfigurationChanged(configuration);
@@ -46,12 +46,12 @@ public class am extends Dialog {
                 }
             }
         });
-        ((TextView) findViewById(f.e.title)).setTypeface(com.tsf.extend.base.j.ab.a(context.getAssets(), "fonts/OpenSans-Light-bold.ttf"));
+        ((TextView) findViewById(ResourceIds.e.title)).setTypeface(com.tsf.extend.base.j.ab.a(context.getAssets(), "fonts/OpenSans-Light-bold.ttf"));
         a(z);
     }
 
     void a(boolean z) throws Throwable {
-        this.c = (GridView) findViewById(f.e.share_grid_view);
+        this.c = (GridView) findViewById(ResourceIds.e.share_grid_view);
         float f = getContext().getResources().getDisplayMetrics().density;
         int i = getContext().getResources().getDisplayMetrics().widthPixels;
         int i2 = getContext().getResources().getDisplayMetrics().heightPixels;
@@ -121,13 +121,13 @@ public class am extends Dialog {
     private al c(boolean z) throws Throwable {
         ArrayList arrayList = new ArrayList();
         List<ResolveInfo> listA = a(this.a, "text/plain");
-        Map<String, com.tsf.extend.A> mapA = com.tsf.extend.c.a(this.a);
+        Map<String, com.tsf.extend.ConfigConstants> mapA = com.tsf.extend.ThemeCacheManager.a(this.a);
         int i = 0;
         for (int i2 = 0; i2 < listA.size(); i2++) {
             ResolveInfo resolveInfo = listA.get(i2);
             an anVar = new an(this.a, resolveInfo);
             String str = resolveInfo.activityInfo.packageName;
-            com.tsf.extend.A aVar = mapA.get(str);
+            com.tsf.extend.ConfigConstants aVar = mapA.get(str);
             if (!z || (!str.contains("com.google.android.apps.plus") && !str.contains("com.facebook.katana"))) {
                 if (aVar != null && com.tsf.extend.a.e(aVar.a())) {
                     arrayList.add(i, anVar);

@@ -71,7 +71,7 @@ public class ai {
 
     public List<k> a(boolean z) {
         this.e = false;
-        PackageManager packageManager = com.tsf.extend.h.b().getPackageManager();
+        PackageManager packageManager = com.tsf.extend.AppContextHolder.b().getPackageManager();
         Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
         intent.addCategory("android.intent.category.LAUNCHER");
         List<ResolveInfo> listQueryIntentActivities = packageManager.queryIntentActivities(intent, 0);
@@ -142,7 +142,7 @@ public class ai {
 
     public List<k> d() {
         ApplicationInfo applicationInfo;
-        PackageManager packageManager = com.tsf.extend.h.b().getPackageManager();
+        PackageManager packageManager = com.tsf.extend.AppContextHolder.b().getPackageManager();
         Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
         intent.addCategory("android.intent.category.LAUNCHER");
         List<ResolveInfo> listQueryIntentActivities = packageManager.queryIntentActivities(intent, 0);
@@ -173,7 +173,7 @@ public class ai {
 
     private boolean a(String str, String str2) {
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             if (applicationInfo == null || applicationInfo.metaData == null) {
                 return false;
             }

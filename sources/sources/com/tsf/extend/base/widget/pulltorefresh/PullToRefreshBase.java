@@ -16,7 +16,7 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
@@ -785,34 +785,34 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         }
         setGravity(17);
         this.a = ViewConfiguration.get(context).getScaledTouchSlop();
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.i.PullToRefresh);
-        if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrMode)) {
-            this.j = b.a(typedArrayObtainStyledAttributes.getInteger(f.i.PullToRefresh_ptrMode, 0));
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ResourceIds.i.PullToRefresh);
+        if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrMode)) {
+            this.j = b.a(typedArrayObtainStyledAttributes.getInteger(ResourceIds.i.PullToRefresh_ptrMode, 0));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrAnimationStyle)) {
-            this.s = a.a(typedArrayObtainStyledAttributes.getInteger(f.i.PullToRefresh_ptrAnimationStyle, 0));
+        if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrAnimationStyle)) {
+            this.s = a.a(typedArrayObtainStyledAttributes.getInteger(ResourceIds.i.PullToRefresh_ptrAnimationStyle, 0));
         }
         this.b = (T) a(context, attributeSet);
         a(context, this.b);
         this.t = a(context, b.PULL_FROM_START, typedArrayObtainStyledAttributes);
         this.u = a(context, b.PULL_FROM_END, typedArrayObtainStyledAttributes);
-        if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrRefreshableViewBackground)) {
-            Drawable drawable = typedArrayObtainStyledAttributes.getDrawable(f.i.PullToRefresh_ptrRefreshableViewBackground);
+        if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrRefreshableViewBackground)) {
+            Drawable drawable = typedArrayObtainStyledAttributes.getDrawable(ResourceIds.i.PullToRefresh_ptrRefreshableViewBackground);
             if (drawable != null) {
                 this.b.setBackgroundDrawable(drawable);
             }
-        } else if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrAdapterViewBackground)) {
-            com.tsf.extend.base.widget.pulltorefresh.a.f.a("ptrAdapterViewBackground", "ptrRefreshableViewBackground");
-            Drawable drawable2 = typedArrayObtainStyledAttributes.getDrawable(f.i.PullToRefresh_ptrAdapterViewBackground);
+        } else if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrAdapterViewBackground)) {
+            com.tsf.extend.base.widget.pulltorefresh.a.ResourceIds.a("ptrAdapterViewBackground", "ptrRefreshableViewBackground");
+            Drawable drawable2 = typedArrayObtainStyledAttributes.getDrawable(ResourceIds.i.PullToRefresh_ptrAdapterViewBackground);
             if (drawable2 != null) {
                 this.b.setBackgroundDrawable(drawable2);
             }
         }
-        if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrOverScroll)) {
-            this.p = typedArrayObtainStyledAttributes.getBoolean(f.i.PullToRefresh_ptrOverScroll, true);
+        if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrOverScroll)) {
+            this.p = typedArrayObtainStyledAttributes.getBoolean(ResourceIds.i.PullToRefresh_ptrOverScroll, true);
         }
-        if (typedArrayObtainStyledAttributes.hasValue(f.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
-            this.n = typedArrayObtainStyledAttributes.getBoolean(f.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled, false);
+        if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
+            this.n = typedArrayObtainStyledAttributes.getBoolean(ResourceIds.i.PullToRefresh_ptrScrollingWhileRefreshingEnabled, false);
         }
         a(typedArrayObtainStyledAttributes);
         typedArrayObtainStyledAttributes.recycle();
@@ -1059,9 +1059,9 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
                 PullToRefreshBase.this.setHeaderScroll(this.i);
             }
             if (this.g && this.c != this.i) {
-                com.tsf.extend.base.widget.pulltorefresh.f.a(PullToRefreshBase.this, this);
+                com.tsf.extend.base.widget.pulltorefresh.ResourceIds.a(PullToRefreshBase.this, this);
             } else if (this.f != null) {
-                this.f.a();
+                this.ResourceIds.a();
             }
         }
 

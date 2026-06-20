@@ -1,8 +1,8 @@
 package com.censivn.C3DEngine.a;
 
 import com.censivn.C3DEngine.api.element.Color4;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 

@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -27,8 +27,8 @@ public class PageIndicatorCompat extends LinearLayout {
         int b;
 
         public a() {
-            this.a = f.d.ic_pageindicator_current_inverse;
-            this.b = f.d.ic_pageindicator_default_inverse;
+            this.a = ResourceIds.d.ic_pageindicator_current_inverse;
+            this.b = ResourceIds.d.ic_pageindicator_default_inverse;
         }
 
         public a(int i, int i2) {
@@ -46,8 +46,8 @@ public class PageIndicatorCompat extends LinearLayout {
         this.b = new int[2];
         this.d = false;
         this.e = new ArrayList<>();
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.i.PageIndicator, -1, 0);
-        this.c = typedArrayObtainStyledAttributes.getInteger(f.i.PageIndicator_windowSize, 15);
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ResourceIds.i.PageIndicator, -1, 0);
+        this.c = typedArrayObtainStyledAttributes.getInteger(ResourceIds.i.PageIndicator_windowSize, 15);
         this.b[0] = 0;
         this.b[1] = 0;
         this.a = LayoutInflater.from(context);
@@ -124,7 +124,7 @@ public class PageIndicatorCompat extends LinearLayout {
 
     public void a(int i, a aVar, boolean z) {
         int iMax = Math.max(0, Math.min(i, this.e.size()));
-        PageIndicatorMarkerCompat pageIndicatorMarkerCompat = (PageIndicatorMarkerCompat) this.a.inflate(f.C0052f.page_indicator_marker_compat, (ViewGroup) this, false);
+        PageIndicatorMarkerCompat pageIndicatorMarkerCompat = (PageIndicatorMarkerCompat) this.a.inflate(ResourceIds.C0052f.page_indicator_marker_compat, (ViewGroup) this, false);
         pageIndicatorMarkerCompat.a(aVar.a, aVar.b);
         this.e.add(iMax, pageIndicatorMarkerCompat);
         a(this.f, z, true);

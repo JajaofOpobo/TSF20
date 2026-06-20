@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import java.util.List;
 
@@ -30,10 +30,10 @@ public class q extends t {
         this.r = 0;
         this.s = Lists.newArrayList();
         int iB = com.tsf.extend.base.j.p.b();
-        n = context.getResources().getDimensionPixelSize(f.c.theme_category_ball_size);
-        o = context.getResources().getDimensionPixelSize(f.c.theme_category_ball_margin);
-        p = context.getResources().getDimensionPixelSize(f.c.theme_category_lable_height);
-        q = context.getResources().getDimensionPixelSize(f.c.theme_category_lable_width);
+        n = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_ball_size);
+        o = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_ball_margin);
+        p = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_lable_height);
+        q = context.getResources().getDimensionPixelSize(ResourceIds.c.theme_category_lable_width);
         this.r = iB / (n + o);
     }
 
@@ -41,17 +41,17 @@ public class q extends t {
     public View getView(int i, View view, ViewGroup viewGroup) {
         B bVar;
         if (view == null) {
-            view = LayoutInflater.from(this.b).inflate(f.C0052f.theme_category_item, (ViewGroup) null);
+            view = LayoutInflater.from(this.b).inflate(ResourceIds.C0052f.theme_category_item, (ViewGroup) null);
             B bVar2 = new B();
-            bVar2.e = (ImageView) view.findViewById(f.e.theme_category_img_left);
-            bVar2.h = (ImageView) view.findViewById(f.e.theme_category_img_right);
-            bVar2.f = (TextView) view.findViewById(f.e.theme_category_name_left);
-            bVar2.i = (TextView) view.findViewById(f.e.theme_category_name_right);
-            bVar2.a = (FrameLayout) view.findViewById(f.e.theme_color);
-            bVar2.b = (LinearLayout) view.findViewById(f.e.theme_color_layout);
-            bVar2.c = (LinearLayout) view.findViewById(f.e.theme_lable);
-            bVar2.d = (FrameLayout) view.findViewById(f.e.theme_category_item_left);
-            bVar2.g = (FrameLayout) view.findViewById(f.e.theme_category_item_right);
+            bVar2.e = (ImageView) view.findViewById(ResourceIds.e.theme_category_img_left);
+            bVar2.h = (ImageView) view.findViewById(ResourceIds.e.theme_category_img_right);
+            bVar2.f = (TextView) view.findViewById(ResourceIds.e.theme_category_name_left);
+            bVar2.i = (TextView) view.findViewById(ResourceIds.e.theme_category_name_right);
+            bVar2.a = (FrameLayout) view.findViewById(ResourceIds.e.theme_color);
+            bVar2.b = (LinearLayout) view.findViewById(ResourceIds.e.theme_color_layout);
+            bVar2.c = (LinearLayout) view.findViewById(ResourceIds.e.theme_lable);
+            bVar2.d = (FrameLayout) view.findViewById(ResourceIds.e.theme_category_item_left);
+            bVar2.g = (FrameLayout) view.findViewById(ResourceIds.e.theme_category_item_right);
             bVar2.d.setOnClickListener(this.c);
             bVar2.g.setOnClickListener(this.c);
             view.setTag(bVar2);

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.text.TextUtils;
 import android.util.Log;
-import com.tsf.extend.h;
+import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.ah;
 import com.tsf.extend.theme.v;
 import java.util.UUID;
@@ -47,7 +47,7 @@ public class ThemeManagerService extends Service {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(String str) {
-        if (com.tsf.extend.b.a.booleanValue()) {
+        if (com.tsf.extend.BuildFlags.a.booleanValue()) {
             Log.v("TSF", str);
         }
     }

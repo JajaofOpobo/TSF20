@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.ArrayList;
@@ -93,13 +93,13 @@ public class r extends m {
                 Object tag = view.getTag();
                 if (tag != null && (tag instanceof k) && this.a != null) {
                     k kVar = (k) tag;
-                    ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_albums_list, (ViewGroup) null);
+                    ThemeAlbumsPager themeAlbumsPager = (ThemeAlbumsPager) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_albums_list, (ViewGroup) null);
                     themeAlbumsPager.a(String.valueOf(kVar.h()), kVar.i(), "110");
                     themeAlbumsPager.setShowShareTitle(false);
                     themeAlbumsPager.setOpenCategoryList(true);
                     this.a.a(themeAlbumsPager);
                 }
-                if (view.getId() != f.e.retry) {
+                if (view.getId() != ResourceIds.e.retry) {
                     return;
                 }
             } else {

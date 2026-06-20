@@ -18,7 +18,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.e;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
@@ -86,9 +86,9 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         this.o.setAlpha(77);
         this.a = (getContent().getResources().getDisplayMetrics().widthPixels - (this.c * 4)) / 3;
         this.b = (int) (this.a / 0.5f);
-        this.e = (int) getResources().getDimension(f.c.theme_name_layout_height);
+        this.e = (int) getResources().getDimension(ResourceIds.c.theme_name_layout_height);
         this.k = new ListView(getContext());
-        this.k.setSelector(f.d.transparent_drawable);
+        this.k.setSelector(ResourceIds.d.transparent_drawable);
         this.k.setDivider(null);
         this.m = new ad(getContext());
         this.m.a((View.OnClickListener) this);
@@ -96,21 +96,21 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
         this.m.a(this.o);
         this.k.setAdapter((ListAdapter) this.m);
         this.k.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        this.g = (FrameLayout) findViewById(f.e.theme_liked_list_content);
-        this.h = findViewById(f.e.theme_liked_empty_data);
+        this.g = (FrameLayout) findViewById(ResourceIds.e.theme_liked_list_content);
+        this.h = findViewById(ResourceIds.e.theme_liked_empty_data);
         this.g.addView(this.k);
-        this.j = (Button) findViewById(f.e.like_theme_button_now);
+        this.j = (Button) findViewById(ResourceIds.e.like_theme_button_now);
         this.j.setOnClickListener(this);
-        this.i = (TextView) findViewById(f.e.title);
-        this.i.setText(f.g.wallpaper_mine_favorite);
+        this.i = (TextView) findViewById(ResourceIds.e.title);
+        this.i.setText(ResourceIds.g.wallpaper_mine_favorite);
         this.i.setOnClickListener(this);
         Bitmap bitmapA = com.tsf.extend.base.j.e.a(getContext());
         this.j.setSoundEffectsEnabled(true);
         this.i.setSoundEffectsEnabled(true);
         if (bitmapA != null) {
-            ((ImageView) findViewById(f.e.like_theme_image)).setImageBitmap(bitmapA);
+            ((ImageView) findViewById(ResourceIds.e.like_theme_image)).setImageBitmap(bitmapA);
         } else {
-            ((ImageView) findViewById(f.e.like_theme_image)).setImageResource(f.d.wallpaper_favorite_btn);
+            ((ImageView) findViewById(ResourceIds.e.like_theme_image)).setImageResource(ResourceIds.d.wallpaper_favorite_btn);
         }
         com.tsf.extend.base.j.z.a(1, this.p);
         a("1", "DefaultLike");
@@ -228,13 +228,13 @@ public class ThemeLikedPager extends LinearLayout implements View.OnClickListene
                 a("5", kVar.g());
                 int iA = kVar.a();
                 if (iA == 3 || iA == 2) {
-                    DIYThemeDetail dIYThemeDetail = (DIYThemeDetail) LayoutInflater.from(getContext()).inflate(f.C0052f.diy_theme_detail, (ViewGroup) null);
+                    DIYThemeDetail dIYThemeDetail = (DIYThemeDetail) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.diy_theme_detail, (ViewGroup) null);
                     dIYThemeDetail.g();
                     dIYThemeDetail.setTheme(kVar);
                     this.l.a(dIYThemeDetail);
                     return;
                 }
-                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                 themeDetail.g();
                 themeDetail.setTheme(kVar);
                 this.l.a(themeDetail);

@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
@@ -59,68 +59,68 @@ public abstract class d extends FrameLayout implements com.tsf.extend.base.widge
         this.e = hVar;
         switch (hVar) {
             case HORIZONTAL:
-                LayoutInflater.from(context).inflate(f.C0052f.kui_ptr_header_horizontal, this);
+                LayoutInflater.from(context).inflate(ResourceIds.C0052f.kui_ptr_header_horizontal, this);
                 break;
             default:
-                LayoutInflater.from(context).inflate(f.C0052f.kui_ptr_header_vertical, this);
+                LayoutInflater.from(context).inflate(ResourceIds.C0052f.kui_ptr_header_vertical, this);
                 break;
         }
-        this.f = (ViewGroup) findViewById(f.e.fl_inner);
-        this.h = (TextView) this.f.findViewById(f.e.pull_to_refresh_text);
-        this.c = (ProgressBar) this.f.findViewById(f.e.pull_to_refresh_progress);
+        this.f = (ViewGroup) findViewById(ResourceIds.e.fl_inner);
+        this.h = (TextView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_text);
+        this.c = (ProgressBar) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_progress);
         this.c.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 2, 1));
-        this.i = (TextView) this.f.findViewById(f.e.pull_to_refresh_sub_text);
-        this.b = (ImageView) this.f.findViewById(f.e.pull_to_refresh_image);
-        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.f.getLayoutParams();
+        this.i = (TextView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_sub_text);
+        this.b = (ImageView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_image);
+        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.ResourceIds.getLayoutParams();
         switch (bVar) {
             case PULL_FROM_END:
                 layoutParams.gravity = hVar == PullToRefreshBase.h.VERTICAL ? 48 : 3;
-                this.j = context.getString(f.g.ptr_from_bottom_pull_label);
-                this.k = context.getString(f.g.ptr_from_bottom_refreshing_label);
-                this.l = context.getString(f.g.ptr_from_bottom_release_label);
+                this.j = context.getString(ResourceIds.g.ptr_from_bottom_pull_label);
+                this.k = context.getString(ResourceIds.g.ptr_from_bottom_refreshing_label);
+                this.l = context.getString(ResourceIds.g.ptr_from_bottom_release_label);
                 break;
             default:
                 layoutParams.gravity = hVar == PullToRefreshBase.h.VERTICAL ? 80 : 5;
-                this.j = context.getString(f.g.ptr_pull_label);
-                this.k = context.getString(f.g.ptr_refreshing_label);
-                this.l = context.getString(f.g.ptr_release_label);
+                this.j = context.getString(ResourceIds.g.ptr_pull_label);
+                this.k = context.getString(ResourceIds.g.ptr_refreshing_label);
+                this.l = context.getString(ResourceIds.g.ptr_release_label);
                 break;
         }
-        if (typedArray.hasValue(f.i.PullToRefresh_ptrHeaderBackground) && (drawable = typedArray.getDrawable(f.i.PullToRefresh_ptrHeaderBackground)) != null) {
+        if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrHeaderBackground) && (drawable = typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrHeaderBackground)) != null) {
             setBackgroundDrawable(drawable);
         }
-        if (typedArray.hasValue(f.i.PullToRefresh_ptrHeaderTextAppearance)) {
+        if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrHeaderTextAppearance)) {
             TypedValue typedValue = new TypedValue();
-            typedArray.getValue(f.i.PullToRefresh_ptrHeaderTextAppearance, typedValue);
+            typedArray.getValue(ResourceIds.i.PullToRefresh_ptrHeaderTextAppearance, typedValue);
             setTextAppearance(typedValue.data);
         }
-        if (typedArray.hasValue(f.i.PullToRefresh_ptrSubHeaderTextAppearance)) {
+        if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrSubHeaderTextAppearance)) {
             TypedValue typedValue2 = new TypedValue();
-            typedArray.getValue(f.i.PullToRefresh_ptrSubHeaderTextAppearance, typedValue2);
+            typedArray.getValue(ResourceIds.i.PullToRefresh_ptrSubHeaderTextAppearance, typedValue2);
             setSubTextAppearance(typedValue2.data);
         }
-        if (typedArray.hasValue(f.i.PullToRefresh_ptrHeaderTextColor) && (colorStateList2 = typedArray.getColorStateList(f.i.PullToRefresh_ptrHeaderTextColor)) != null) {
+        if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrHeaderTextColor) && (colorStateList2 = typedArray.getColorStateList(ResourceIds.i.PullToRefresh_ptrHeaderTextColor)) != null) {
             setTextColor(colorStateList2);
         }
-        if (typedArray.hasValue(f.i.PullToRefresh_ptrHeaderSubTextColor) && (colorStateList = typedArray.getColorStateList(f.i.PullToRefresh_ptrHeaderSubTextColor)) != null) {
+        if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrHeaderSubTextColor) && (colorStateList = typedArray.getColorStateList(ResourceIds.i.PullToRefresh_ptrHeaderSubTextColor)) != null) {
             setSubTextColor(colorStateList);
         }
-        Drawable drawable2 = typedArray.hasValue(f.i.PullToRefresh_ptrDrawable) ? typedArray.getDrawable(f.i.PullToRefresh_ptrDrawable) : null;
+        Drawable drawable2 = typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrDrawable) ? typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrDrawable) : null;
         switch (bVar) {
             case PULL_FROM_END:
-                if (typedArray.hasValue(f.i.PullToRefresh_ptrDrawableEnd)) {
-                    drawable2 = typedArray.getDrawable(f.i.PullToRefresh_ptrDrawableEnd);
-                } else if (typedArray.hasValue(f.i.PullToRefresh_ptrDrawableBottom)) {
-                    f.a("ptrDrawableBottom", "ptrDrawableEnd");
-                    drawable2 = typedArray.getDrawable(f.i.PullToRefresh_ptrDrawableBottom);
+                if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrDrawableEnd)) {
+                    drawable2 = typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrDrawableEnd);
+                } else if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrDrawableBottom)) {
+                    ResourceIds.a("ptrDrawableBottom", "ptrDrawableEnd");
+                    drawable2 = typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrDrawableBottom);
                 }
                 break;
             default:
-                if (typedArray.hasValue(f.i.PullToRefresh_ptrDrawableStart)) {
-                    drawable2 = typedArray.getDrawable(f.i.PullToRefresh_ptrDrawableStart);
-                } else if (typedArray.hasValue(f.i.PullToRefresh_ptrDrawableTop)) {
-                    f.a("ptrDrawableTop", "ptrDrawableStart");
-                    drawable2 = typedArray.getDrawable(f.i.PullToRefresh_ptrDrawableTop);
+                if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrDrawableStart)) {
+                    drawable2 = typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrDrawableStart);
+                } else if (typedArray.hasValue(ResourceIds.i.PullToRefresh_ptrDrawableTop)) {
+                    ResourceIds.a("ptrDrawableTop", "ptrDrawableStart");
+                    drawable2 = typedArray.getDrawable(ResourceIds.i.PullToRefresh_ptrDrawableTop);
                 }
                 break;
         }
@@ -141,9 +141,9 @@ public abstract class d extends FrameLayout implements com.tsf.extend.base.widge
     public final int getContentSize() {
         switch (this.e) {
             case HORIZONTAL:
-                return this.f.getWidth();
+                return this.ResourceIds.getWidth();
             default:
-                return this.f.getHeight();
+                return this.ResourceIds.getHeight();
         }
     }
 

@@ -639,8 +639,8 @@ public class e {
         aVar.c(false);
         aVar.b(new Date(new File(str).lastModified()).getTime());
         aVar.c("DIY://" + aVar.I());
-        File[] fileArrE = aVar.e(com.tsf.extend.h.b());
-        File[] fileArrF = aVar.f(com.tsf.extend.h.b());
+        File[] fileArrE = aVar.e(com.tsf.extend.AppContextHolder.b());
+        File[] fileArrF = aVar.f(com.tsf.extend.AppContextHolder.b());
         if (z && ((fileArrE == null || fileArrE.length == 0) && (fileArrF == null || fileArrF.length == 0))) {
             return null;
         }

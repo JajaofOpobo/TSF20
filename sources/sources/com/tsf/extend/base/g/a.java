@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import com.tsf.extend.base.j.n;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.net.URLEncoder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -30,20 +30,20 @@ public class a extends d {
             String string = null;
             switch (this.a.getIntExtra("SHARE_TYPE", 1)) {
                 case 2:
-                    stringExtra = this.e.getString(f.g.share_diy_fb_link_title);
-                    stringExtra2 = this.e.getString(f.g.share_diy_fb_link_des);
+                    stringExtra = this.e.getString(ResourceIds.g.share_diy_fb_link_title);
+                    stringExtra2 = this.e.getString(ResourceIds.g.share_diy_fb_link_des);
                     break;
                 case 3:
-                    stringExtra = this.e.getString(f.g.album_share_title);
-                    stringExtra2 = this.e.getString(f.g.album_share_content);
+                    stringExtra = this.e.getString(ResourceIds.g.album_share_title);
+                    stringExtra2 = this.e.getString(ResourceIds.g.album_share_content);
                     break;
                 case 4:
                     stringExtra = this.a.getStringExtra("android.intent.extra.SUBJECT");
                     stringExtra2 = this.a.getStringExtra("android.intent.extra.TEXT");
                     break;
                 default:
-                    stringExtra = this.e.getString(f.g.share_theme_fb_link_title);
-                    stringExtra2 = this.e.getString(f.g.share_diy_fb_link_des);
+                    stringExtra = this.e.getString(ResourceIds.g.share_theme_fb_link_title);
+                    stringExtra2 = this.e.getString(ResourceIds.g.share_diy_fb_link_des);
                     break;
             }
             try {

@@ -5,10 +5,10 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ah extends com.tsf.extend.g implements View.OnClickListener {
+public class ah extends com.tsf.extend.BaseDialog implements View.OnClickListener {
     private Context c;
     private static String b = "https://play.google.com/store/apps/details?id={pkg}&referrer=utm_source%3Dcml_themelist_wpapkkp";
     public static boolean a = false;
@@ -16,20 +16,20 @@ public class ah extends com.tsf.extend.g implements View.OnClickListener {
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.cancel) {
+        if (id == ResourceIds.e.cancel) {
             dismiss();
-        } else if (id == f.e.cover || id == f.e.content_layout || id == f.e.wallpaper_store_root) {
+        } else if (id == ResourceIds.e.cover || id == ResourceIds.e.content_layout || id == ResourceIds.e.wallpaper_store_root) {
             dismiss();
             com.tsf.extend.base.b.A(this.c, b);
         }
     }
 
-    @Override // com.tsf.extend.g
+    @Override // com.tsf.extend.BaseDialog
     public void a(WindowManager.LayoutParams layoutParams) {
         layoutParams.dimAmount = 0.8f;
     }
 
-    @Override // com.tsf.extend.g
+    @Override // com.tsf.extend.BaseDialog
     public FrameLayout.LayoutParams a() {
         return new FrameLayout.LayoutParams(-1, -1);
     }
@@ -44,7 +44,7 @@ public class ah extends com.tsf.extend.g implements View.OnClickListener {
         viewD.setLayoutParams(layoutParams);
     }
 
-    @Override // com.tsf.extend.g, android.app.Dialog
+    @Override // com.tsf.extend.BaseDialog, android.app.Dialog
     public void show() {
         super.show();
         b();

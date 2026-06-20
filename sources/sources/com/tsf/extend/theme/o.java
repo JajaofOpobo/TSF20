@@ -15,7 +15,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class o extends Dialog {
@@ -24,7 +24,7 @@ public class o extends Dialog {
     private TextView c;
 
     public o(Context context) {
-        this(context, f.h.SmartDialogStyle);
+        this(context, ResourceIds.h.SmartDialogStyle);
     }
 
     public o(Context context, int i) {
@@ -40,7 +40,7 @@ public class o extends Dialog {
 
     private void a() {
         this.a = new A(getContext());
-        Drawable drawable = getContext().getResources().getDrawable(f.d.search_loading_circle_big);
+        Drawable drawable = getContext().getResources().getDrawable(ResourceIds.d.search_loading_circle_big);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
         layoutParams.gravity = 17;
         this.b = new LinearLayout(getContext());
@@ -48,9 +48,9 @@ public class o extends Dialog {
         this.b.setGravity(17);
         this.b.addView(this.a, new LinearLayout.LayoutParams(drawable.getIntrinsicWidth(), drawable.getIntrinsicWidth()));
         this.c = new TextView(getContext());
-        this.c.setText(f.g.theme_applying_theme);
+        this.c.setText(ResourceIds.g.theme_applying_theme);
         this.c.setTextSize(2, 14.0f);
-        this.c.setTextColor(getContext().getResources().getColor(f.b.white));
+        this.c.setTextColor(getContext().getResources().getColor(ResourceIds.b.white));
         this.c.setGravity(1);
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(com.tsf.extend.base.j.i.d(), -2);
         layoutParams2.topMargin = com.tsf.extend.base.j.i.a(8.0f);
@@ -84,9 +84,9 @@ public class o extends Dialog {
             this.g = 0;
             setZOrderOnTop(true);
             this.f = getHolder();
-            this.f.setFormat(-3);
-            this.f.setFormat(1);
-            this.f.addCallback(this);
+            this.ResourceIds.setFormat(-3);
+            this.ResourceIds.setFormat(1);
+            this.ResourceIds.addCallback(this);
             setFocusable(false);
             c();
         }
@@ -95,7 +95,7 @@ public class o extends Dialog {
             this.c = new Paint();
             this.c.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
             try {
-                this.b = BitmapFactory.decodeResource(getResources(), f.d.search_loading_circle_big);
+                this.b = BitmapFactory.decodeResource(getResources(), ResourceIds.d.search_loading_circle_big);
             } catch (Throwable th) {
             }
         }
@@ -107,12 +107,12 @@ public class o extends Dialog {
         /* JADX INFO: Access modifiers changed from: private */
         public void a(int i) {
             synchronized (this.f) {
-                Canvas canvasLockCanvas = this.f.lockCanvas();
+                Canvas canvasLockCanvas = this.ResourceIds.lockCanvas();
                 Bitmap bitmap = this.b;
                 if (canvasLockCanvas == null || bitmap == null || bitmap.isRecycled()) {
                     if (canvasLockCanvas != null) {
                         try {
-                            this.f.unlockCanvasAndPost(canvasLockCanvas);
+                            this.ResourceIds.unlockCanvasAndPost(canvasLockCanvas);
                         } catch (Exception e) {
                         }
                     }
@@ -127,7 +127,7 @@ public class o extends Dialog {
                 }
                 canvasLockCanvas.restore();
                 try {
-                    this.f.unlockCanvasAndPost(canvasLockCanvas);
+                    this.ResourceIds.unlockCanvasAndPost(canvasLockCanvas);
                 } catch (Exception e3) {
                 }
             }

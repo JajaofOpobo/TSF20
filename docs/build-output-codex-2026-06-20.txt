@@ -1,0 +1,1011 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/PageAnimationState.java:82: error: variable a is already defined in class a
+        public TextureElement a;
+                              ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/WidgetPanelController.java:34: error: package c does not exist
+    public static class a implements c.a {
+                                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:19: error: cannot find symbol
+    public static b a;
+                  ^
+  symbol:   class b
+  location: class LabelManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:21: error: cannot find symbol
+    private static ArrayList<b> c;
+                             ^
+  symbol:   class b
+  location: class LabelManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:87: error: cannot find symbol
+    private static b a(int i, boolean z) {
+                   ^
+  symbol:   class b
+  location: class LabelManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:107: error: cannot find symbol
+    public static b b(int i) {
+                  ^
+  symbol:   class b
+  location: class LabelManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:120: error: cannot find symbol
+    public static b c(int i) {
+                  ^
+  symbol:   class b
+  location: class LabelManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:74: error: variable a is already defined in class FolderItemPositioner
+    public TextureElement a;
+                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemBackground.java:56: error: cannot find symbol
+    private ArrayList<FolderItemState.C0092c> l() {
+                                     ^
+  symbol:   class C0092c
+  location: class FolderItemState
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemState.java:7: error: cannot find symbol
+    protected void a(b bVar) {
+                     ^
+  symbol:   class b
+  location: class FolderItemState
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1566: error: cannot find symbol
+    public n l_() {
+           ^
+  symbol:   class n
+  location: class FolderShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1588: error: cannot find symbol
+    public void a(m mVar) {
+                  ^
+  symbol:   class m
+  location: class FolderShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1772: error: cannot find symbol
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1793: error: cannot find symbol
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1801: error: cannot find symbol
+    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1806: error: cannot find symbol
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+                                      ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1811: error: cannot find symbol
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                      ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1817: error: cannot find symbol
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:6: error: cannot find symbol
+    public static void c(C cVar) {}
+                         ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:7: error: cannot find symbol
+    public static void d(C cVar) {}
+                         ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:8: error: cannot find symbol
+    public static void a(ArrayList<C> arrayList) {}
+                                   ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:9: error: cannot find symbol
+    public static boolean a(C cVar) { return false; }
+                            ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:11: error: cannot find symbol
+    public static boolean b(C cVar) { return false; }
+                            ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:12: error: cannot find symbol
+    public static ArrayList<C> b() { return null; }
+                            ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:13: error: cannot find symbol
+    public static ArrayList<C> c() { return null; }
+                            ^
+  symbol:   class C
+  location: class ItemStubHelper
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/AppListModel.java:105: error: cannot find symbol
+    public com.tsf.shell.f.i.b.e.DrawerItemVisual a(f fVar) {
+                                                    ^
+  symbol:   class f
+  location: class AppListModel
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:8: error: cannot find symbol
+    private j b;
+            ^
+  symbol:   class j
+  location: class DrawerItemLaunchAction
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:35: error: cannot find symbol
+    public j q() {
+           ^
+  symbol:   class j
+  location: class DrawerItemLaunchAction
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:54: error: cannot find symbol
+    public void a(j jVar) {
+                  ^
+  symbol:   class j
+  location: class DrawerItemLaunchAction
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:15: error: cannot find symbol
+    private e b;
+            ^
+  symbol:   class e
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:16: error: cannot find symbol
+    private c d;
+            ^
+  symbol:   class c
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:17: error: cannot find symbol
+    private d e;
+            ^
+  symbol:   class d
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:20: error: cannot find symbol
+    private ArrayList<c> c = new ArrayList<>();
+                      ^
+  symbol:   class c
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:22: error: cannot find symbol
+    public DrawerSortManager(e eVar) {
+                             ^
+  symbol:   class e
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:36: error: cannot find symbol
+    public c a(int i) {
+           ^
+  symbol:   class c
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:40: error: cannot find symbol
+    public c b() {
+           ^
+  symbol:   class c
+  location: class DrawerSortManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsData.java:25: error: cannot find symbol
+    public void a(b bVar) {
+                  ^
+  symbol:   class b
+  location: class DrawerSettingsData
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:114: error: method c() is already defined in class DrawerItemVisual
+    public String c() {
+                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:166: error: cannot find symbol
+    public g ba() {
+           ^
+  symbol:   class g
+  location: class DrawerItemVisual
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:260: error: method c() is already defined in class DrawerItemVisual
+    public void c() {
+                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/PageItemTouchHandler.java:18: error: cannot find symbol
+    public static n a;
+                  ^
+  symbol:   class n
+  location: class PageItemTouchHandler
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:4: error: cannot find symbol
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+                        ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:55: error: cannot find symbol
+        public void a(final ILayoutItem fVar, MotionEvent motionEvent) {
+                            ^
+  symbol:   class ILayoutItem
+  location: class C0127a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:76: error: cannot find symbol
+        public boolean a(ILayoutItem fVar) {
+                         ^
+  symbol:   class ILayoutItem
+  location: class C0127a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:10: error: cannot find symbol
+    private ArrayList<ILayoutItem> a = new ArrayList<>();
+                      ^
+  symbol:   class ILayoutItem
+  location: class HitTargetManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:12: error: cannot find symbol
+    public void a(ILayoutItem fVar) {
+                  ^
+  symbol:   class ILayoutItem
+  location: class HitTargetManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:25: error: cannot find symbol
+    public void b(ILayoutItem fVar) {
+                  ^
+  symbol:   class ILayoutItem
+  location: class HitTargetManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:38: error: cannot find symbol
+    public void c(ILayoutItem fVar) {
+                  ^
+  symbol:   class ILayoutItem
+  location: class HitTargetManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:46: error: cannot find symbol
+    public ArrayList<ILayoutItem> a() {
+                     ^
+  symbol:   class ILayoutItem
+  location: class HitTargetManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:215: error: cannot find symbol
+    public void a(C cVar) {
+                  ^
+  symbol:   class C
+  location: class ShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:220: error: cannot find symbol
+    public void b(ArrayList<C> arrayList) {
+                            ^
+  symbol:   class C
+  location: class ShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:242: error: cannot find symbol
+    public ArrayList<C> av() {
+                     ^
+  symbol:   class C
+  location: class ShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:246: error: cannot find symbol
+    public ArrayList<C> aw() {
+                     ^
+  symbol:   class C
+  location: class ShortcutItem
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/BlurSettingsMenu.java:11: error: cannot find symbol
+    private l b;
+            ^
+  symbol:   class l
+  location: class BlurSettingsMenu
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/WallpaperTouchHandler.java:12: error: package n does not exist
+    private n.C b;
+             ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/WallpaperTouchHandler.java:19: error: package n does not exist
+    public void a(n.C cVar) {
+                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/Workspace3D.java:25: error: cannot find symbol
+    private n i;
+            ^
+  symbol:   class n
+  location: class Workspace3D
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/Workspace3D.java:48: error: cannot find symbol
+    public void setPageManager(n nVar) {
+                               ^
+  symbol:   class n
+  location: class Workspace3D
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:263: error: cannot find symbol
+        public d f;
+               ^
+  symbol:   class d
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:108: error: cannot find symbol
+    public void a(final AppWidgetManager appWidgetManager, final f fVar, final int i, final int i2) {
+                                                                 ^
+  symbol:   class f
+  location: class AppWidgetHostManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:22: error: cannot find symbol
+    private g h;
+            ^
+  symbol:   class g
+  location: class CellLayout
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:24: error: cannot find symbol
+    public CellLayout(Context context, g gVar) {
+                                       ^
+  symbol:   class g
+  location: class CellLayout
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/DragLayer.java:90: error: package d does not exist
+    public void a(d.a aVar) {
+                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:13: error: cannot find symbol
+    public static d a = new d();
+                  ^
+  symbol:   class d
+  location: class ShellBindController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:14: error: cannot find symbol
+    public static d b = new d();
+                  ^
+  symbol:   class d
+  location: class ShellBindController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:15: error: cannot find symbol
+    private c c;
+            ^
+  symbol:   class c
+  location: class ShellBindController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:91: error: cannot find symbol
+    public void a(c cVar) {
+                  ^
+  symbol:   class c
+  location: class ShellBindController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:14: error: cannot find symbol
+    public static d B;
+                  ^
+  symbol:   class d
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:15: error: cannot find symbol
+    public static c C;
+                  ^
+  symbol:   class c
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:17: error: cannot find symbol
+    public static e a;
+                  ^
+  symbol:   class e
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:20: error: cannot find symbol
+    public static b d;
+                  ^
+  symbol:   class b
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:24: error: cannot find symbol
+    public static n h;
+                  ^
+  symbol:   class n
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:29: error: cannot find symbol
+    public static p m;
+                  ^
+  symbol:   class p
+  location: class GlobalServiceLocator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/SideMenuManager.java:11: error: cannot find symbol
+import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+                        ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/SideMenuManager.java:19: error: package a does not exist
+public class SideMenuManager implements e.a, a.InterfaceC0113a {
+                                              ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/q/UnreadBadgeManager.java:15: error: package A does not exist
+public class UnreadBadgeManager implements A.InterfaceC0165a {
+                                            ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:7: error: cannot find symbol
+import com.tsf.shell.f.i.b.e.b;
+                            ^
+  symbol:   class b
+  location: package com.tsf.shell.f.i.b.e
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:8: error: cannot find symbol
+import com.tsf.shell.manager.o.A;
+                              ^
+  symbol:   class A
+  location: package com.tsf.shell.manager.o
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:9: error: cannot find symbol
+import com.tsf.shell.utils.q;
+                          ^
+  symbol:   class q
+  location: package com.tsf.shell.utils
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:58: error: cannot find symbol
+    public TextureElement getTexture(A aVar) {
+                                     ^
+  symbol:   class A
+  location: class LauncherShortcutStandardInfo
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:62: error: cannot find symbol
+    public TextureElement getTexture(ResourceControler resourceControler, A aVar) {
+                                                                          ^
+  symbol:   class A
+  location: class LauncherShortcutStandardInfo
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:67: error: cannot find symbol
+    private Bitmap createTextureBitmap(ResourceControler resourceControler, A aVar) {
+                                                                            ^
+  symbol:   class A
+  location: class LauncherShortcutStandardInfo
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:71: error: cannot find symbol
+    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, A aVar, boolean z) {
+                                                                        ^
+  symbol:   class A
+  location: class LauncherShortcutStandardInfo
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:75: error: cannot find symbol
+    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, A aVar, int i, int i2, boolean z) {
+                                                                                                             ^
+  symbol:   class A
+  location: class LauncherShortcutStandardInfo
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:19: error: cannot find symbol
+        public Bitmap getThemeBitmap(A aVar) {
+                                     ^
+  symbol:   class A
+  location: class ResourceControler
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:9: error: cannot find symbol
+    public m a;
+           ^
+  symbol:   class m
+  location: class DashPanelController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:10: error: cannot find symbol
+    public c b;
+           ^
+  symbol:   class c
+  location: class DashPanelController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:12: error: cannot find symbol
+    public b d;
+           ^
+  symbol:   class b
+  location: class DashPanelController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/DashLayoutBase.java:11: error: cannot find symbol
+public class DashLayoutBase extends DashLayoutPool<d> {
+                                                   ^
+  symbol: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:13: error: cannot find symbol
+public class DashItemConfigurator extends DashItemPool<d> {
+                                                       ^
+  symbol: class d
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:14: error: cannot find symbol
+    private ArrayList<b> a = new ArrayList<>();
+                      ^
+  symbol:   class b
+  location: class DashItemConfigurator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:39: error: cannot find symbol
+    public void a(b bVar) {
+                  ^
+  symbol:   class b
+  location: class DashItemConfigurator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:45: error: cannot find symbol
+    public void b(b bVar) {
+                  ^
+  symbol:   class b
+  location: class DashItemConfigurator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:53: error: cannot find symbol
+    public void a(d dVar) {
+                  ^
+  symbol:   class d
+  location: class DashItemConfigurator
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/DashLayoutBase.java:41: error: cannot find symbol
+    public void a(d dVar) {
+                  ^
+  symbol:   class d
+  location: class DashLayoutBase
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/f/EditModeController.java:43: error: cannot find symbol
+    private d q;
+            ^
+  symbol:   class d
+  location: class EditModeController
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/h/IconEditorConfig.java:15: error: cannot find symbol
+    private static b a;
+                   ^
+  symbol:   class b
+  location: class IconEditorConfig
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/d/DashAnimationBase.java:10: error: cannot find symbol
+    public b b;
+           ^
+  symbol:   class b
+  location: class DashAnimationBase
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/d/a/DashEffectCallback.java:7: error: cannot find symbol
+    void a(g gVar);
+           ^
+  symbol:   class g
+  location: interface DashEffectCallback
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/a/b/ShaderSlotManager.java:16: error: cannot find symbol
+    public C0079a c(b bVar) {
+                    ^
+  symbol:   class b
+  location: class ShaderSlotManager
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/DashLayoutBase.java:11: error: cannot find symbol
+  public class DashLayoutBase extends DashLayoutPool<d> {
+                                                     ^
+    symbol: class d
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:13: error: cannot find symbol
+  public class DashItemConfigurator extends DashItemPool<d> {
+                                                         ^
+    symbol: class dNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/WidgetPanelController.java:34: error: package c does not exist
+      public static class a implements c.a {
+                                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/WallpaperTouchHandler.java:12: error: package n does not exist
+      private n.C b;
+               ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/WallpaperTouchHandler.java:19: error: package n does not exist
+      public void a(n.C cVar) {
+                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/DragLayer.java:90: error: package d does not exist
+      public void a(d.a aVar) {
+                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/SideMenuManager.java:19: error: package a does not exist
+  public class SideMenuManager implements e.a, a.InterfaceC0113a {
+                                                ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/q/UnreadBadgeManager.java:15: error: package A does not exist
+  public class UnreadBadgeManager implements A.InterfaceC0165a {
+                                              ^Note: Recompile with -Xlint:unchecked for details./home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:19: error: cannot find symbol
+      public static b a;
+                    ^
+    symbol:   class b
+    location: class LabelManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:21: error: cannot find symbol
+      private static ArrayList<b> c;
+                               ^
+    symbol:   class b
+    location: class LabelManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:87: error: cannot find symbol
+      private static b a(int i, boolean z) {
+                     ^
+    symbol:   class b
+    location: class LabelManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:107: error: cannot find symbol
+      public static b b(int i) {
+                    ^
+    symbol:   class b
+    location: class LabelManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/o/a/LabelManager.java:120: error: cannot find symbol
+      public static b c(int i) {
+                    ^
+    symbol:   class b
+    location: class LabelManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemBackground.java:56: error: cannot find symbol
+      private ArrayList<FolderItemState.C0092c> l() {
+                                       ^
+    symbol:   class C0092c
+    location: class FolderItemState
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemState.java:7: error: cannot find symbol
+      protected void a(b bVar) {
+                       ^
+    symbol:   class b
+    location: class FolderItemState
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1566: error: cannot find symbol
+      public n l_() {
+             ^
+    symbol:   class n
+    location: class FolderShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1588: error: cannot find symbol
+      public void a(m mVar) {
+                    ^
+    symbol:   class m
+    location: class FolderShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1772: error: cannot find symbol
+      public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1793: error: cannot find symbol
+      public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1801: error: cannot find symbol
+      public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1806: error: cannot find symbol
+      public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+                                        ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1811: error: cannot find symbol
+      public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                        ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1817: error: cannot find symbol
+      public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:6: error: cannot find symbol
+      public static void c(C cVar) {}
+                           ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:7: error: cannot find symbol
+      public static void d(C cVar) {}
+                           ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:8: error: cannot find symbol
+      public static void a(ArrayList<C> arrayList) {}
+                                     ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:9: error: cannot find symbol
+      public static boolean a(C cVar) { return false; }
+                              ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:11: error: cannot find symbol
+      public static boolean b(C cVar) { return false; }
+                              ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:12: error: cannot find symbol
+      public static ArrayList<C> b() { return null; }
+                              ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ItemStubHelper.java:13: error: cannot find symbol
+      public static ArrayList<C> c() { return null; }
+                              ^
+    symbol:   class C
+    location: class ItemStubHelper
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/app/AppListModel.java:105: error: cannot find symbol
+      public com.tsf.shell.f.i.b.e.DrawerItemVisual a(f fVar) {
+                                                      ^
+    symbol:   class f
+    location: class AppListModel
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:8: error: cannot find symbol
+      private j b;
+              ^
+    symbol:   class j
+    location: class DrawerItemLaunchAction
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:35: error: cannot find symbol
+      public j q() {
+             ^
+    symbol:   class j
+    location: class DrawerItemLaunchAction
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemLaunchAction.java:54: error: cannot find symbol
+      public void a(j jVar) {
+                    ^
+    symbol:   class j
+    location: class DrawerItemLaunchAction
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:15: error: cannot find symbol
+      private e b;
+              ^
+    symbol:   class e
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:16: error: cannot find symbol
+      private c d;
+              ^
+    symbol:   class c
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:17: error: cannot find symbol
+      private d e;
+              ^
+    symbol:   class d
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:20: error: cannot find symbol
+      private ArrayList<c> c = new ArrayList<>();
+                        ^
+    symbol:   class c
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:22: error: cannot find symbol
+      public DrawerSortManager(e eVar) {
+                               ^
+    symbol:   class e
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:36: error: cannot find symbol
+      public c a(int i) {
+             ^
+    symbol:   class c
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/a/d/DrawerSortManager.java:40: error: cannot find symbol
+      public c b() {
+             ^
+    symbol:   class c
+    location: class DrawerSortManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/c/b/DrawerSettingsData.java:25: error: cannot find symbol
+      public void a(b bVar) {
+                    ^
+    symbol:   class b
+    location: class DrawerSettingsData
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:166: error: cannot find symbol
+      public g ba() {
+             ^
+    symbol:   class g
+    location: class DrawerItemVisual
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/PageItemTouchHandler.java:18: error: cannot find symbol
+      public static n a;
+                    ^
+    symbol:   class n
+    location: class PageItemTouchHandler
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:4: error: cannot find symbol
+  import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+                          ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:55: error: cannot find symbol
+          public void a(final ILayoutItem fVar, MotionEvent motionEvent) {
+                              ^
+    symbol:   class ILayoutItem
+    location: class C0127a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:76: error: cannot find symbol
+          public boolean a(ILayoutItem fVar) {
+                           ^
+    symbol:   class ILayoutItem
+    location: class C0127a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:10: error: cannot find symbol
+      private ArrayList<ILayoutItem> a = new ArrayList<>();
+                        ^
+    symbol:   class ILayoutItem
+    location: class HitTargetManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:12: error: cannot find symbol
+      public void a(ILayoutItem fVar) {
+                    ^
+    symbol:   class ILayoutItem
+    location: class HitTargetManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:25: error: cannot find symbol
+      public void b(ILayoutItem fVar) {
+                    ^
+    symbol:   class ILayoutItem
+    location: class HitTargetManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:38: error: cannot find symbol
+      public void c(ILayoutItem fVar) {
+                    ^
+    symbol:   class ILayoutItem
+    location: class HitTargetManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/d/HitTargetManager.java:46: error: cannot find symbol
+      public ArrayList<ILayoutItem> a() {
+                       ^
+    symbol:   class ILayoutItem
+    location: class HitTargetManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:215: error: cannot find symbol
+      public void a(C cVar) {
+                    ^
+    symbol:   class C
+    location: class ShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:220: error: cannot find symbol
+      public void b(ArrayList<C> arrayList) {
+                              ^
+    symbol:   class C
+    location: class ShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:242: error: cannot find symbol
+      public ArrayList<C> av() {
+                       ^
+    symbol:   class C
+    location: class ShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:246: error: cannot find symbol
+      public ArrayList<C> aw() {
+                       ^
+    symbol:   class C
+    location: class ShortcutItem
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/wallpaper/BlurSettingsMenu.java:11: error: cannot find symbol
+      private l b;
+              ^
+    symbol:   class l
+    location: class BlurSettingsMenu
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/Workspace3D.java:25: error: cannot find symbol
+      private n i;
+              ^
+    symbol:   class n
+    location: class Workspace3D
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/Workspace3D.java:48: error: cannot find symbol
+      public void setPageManager(n nVar) {
+                                 ^
+    symbol:   class n
+    location: class Workspace3D
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:263: error: cannot find symbol
+          public d f;
+                 ^
+    symbol:   class d
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:108: error: cannot find symbol
+      public void a(final AppWidgetManager appWidgetManager, final f fVar, final int i, final int i2) {
+                                                                   ^
+    symbol:   class f
+    location: class AppWidgetHostManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:22: error: cannot find symbol
+      private g h;
+              ^
+    symbol:   class g
+    location: class CellLayout
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/e/CellLayout.java:24: error: cannot find symbol
+      public CellLayout(Context context, g gVar) {
+                                         ^
+    symbol:   class g
+    location: class CellLayout
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:13: error: cannot find symbol
+      public static d a = new d();
+                    ^
+    symbol:   class d
+    location: class ShellBindController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:14: error: cannot find symbol
+      public static d b = new d();
+                    ^
+    symbol:   class d
+    location: class ShellBindController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:15: error: cannot find symbol
+      private c c;
+              ^
+    symbol:   class c
+    location: class ShellBindController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/bind/ShellBindController.java:91: error: cannot find symbol
+      public void a(c cVar) {
+                    ^
+    symbol:   class c
+    location: class ShellBindController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:14: error: cannot find symbol
+      public static d B;
+                    ^
+    symbol:   class d
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:15: error: cannot find symbol
+      public static c C;
+                    ^
+    symbol:   class c
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:17: error: cannot find symbol
+      public static e a;
+                    ^
+    symbol:   class e
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:20: error: cannot find symbol
+      public static b d;
+                    ^
+    symbol:   class b
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:24: error: cannot find symbol
+      public static n h;
+                    ^
+    symbol:   class n
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/GlobalServiceLocator.java:29: error: cannot find symbol
+      public static p m;
+                    ^
+    symbol:   class p
+    location: class GlobalServiceLocator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/m/SideMenuManager.java:11: error: cannot find symbol
+  import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+                          ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:7: error: cannot find symbol
+  import com.tsf.shell.f.i.b.e.b;
+                              ^
+    symbol:   class b
+    location: package com.tsf.shell.f.i.b.e
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:8: error: cannot find symbol
+  import com.tsf.shell.manager.o.A;
+                                ^
+    symbol:   class A
+    location: package com.tsf.shell.manager.o
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:9: error: cannot find symbol
+  import com.tsf.shell.utils.q;
+                            ^
+    symbol:   class q
+    location: package com.tsf.shell.utils
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:58: error: cannot find symbol
+      public TextureElement getTexture(A aVar) {
+                                       ^
+    symbol:   class A
+    location: class LauncherShortcutStandardInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:62: error: cannot find symbol
+      public TextureElement getTexture(ResourceControler resourceControler, A aVar) {
+                                                                            ^
+    symbol:   class A
+    location: class LauncherShortcutStandardInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:67: error: cannot find symbol
+      private Bitmap createTextureBitmap(ResourceControler resourceControler, A aVar) {
+                                                                              ^
+    symbol:   class A
+    location: class LauncherShortcutStandardInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:71: error: cannot find symbol
+      public static Bitmap createTextureBitmap(String str, Bitmap bitmap, A aVar, boolean z) {
+                                                                          ^
+    symbol:   class A
+    location: class LauncherShortcutStandardInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:75: error: cannot find symbol
+      public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, A aVar, int i, int i2, boolean z) {
+                                                                                                               ^
+    symbol:   class A
+    location: class LauncherShortcutStandardInfo
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/shortcut/LauncherShortcutStandardInfo.java:19: error: cannot find symbol
+          public Bitmap getThemeBitmap(A aVar) {
+                                       ^
+    symbol:   class A
+    location: class ResourceControler
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:9: error: cannot find symbol
+      public m a;
+             ^
+    symbol:   class m
+    location: class DashPanelController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:10: error: cannot find symbol
+      public c b;
+             ^
+    symbol:   class c
+    location: class DashPanelController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/DashPanelController.java:12: error: cannot find symbol
+      public b d;
+             ^
+    symbol:   class b
+    location: class DashPanelController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:14: error: cannot find symbol
+      private ArrayList<b> a = new ArrayList<>();
+                        ^
+    symbol:   class b
+    location: class DashItemConfigurator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:39: error: cannot find symbol
+      public void a(b bVar) {
+                    ^
+    symbol:   class b
+    location: class DashItemConfigurator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:45: error: cannot find symbol
+      public void b(b bVar) {
+                    ^
+    symbol:   class b
+    location: class DashItemConfigurator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/b/DashItemConfigurator.java:53: error: cannot find symbol
+      public void a(d dVar) {
+                    ^
+    symbol:   class d
+    location: class DashItemConfigurator
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/c/DashLayoutBase.java:41: error: cannot find symbol
+      public void a(d dVar) {
+                    ^
+    symbol:   class d
+    location: class DashLayoutBase
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/f/EditModeController.java:43: error: cannot find symbol
+      private d q;
+              ^
+    symbol:   class d
+    location: class EditModeController
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/h/IconEditorConfig.java:15: error: cannot find symbol
+      private static b a;
+                     ^
+    symbol:   class b
+    location: class IconEditorConfig
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/d/DashAnimationBase.java:10: error: cannot find symbol
+      public b b;
+             ^
+    symbol:   class b
+    location: class DashAnimationBase
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/d/a/DashEffectCallback.java:7: error: cannot find symbol
+      void a(g gVar);
+             ^
+    symbol:   class g
+    location: interface DashEffectCallback
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/a/b/ShaderSlotManager.java:16: error: cannot find symbol
+      public C0079a c(b bVar) {
+                      ^
+    symbol:   class b
+    location: class ShaderSlotManagerNote: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API./home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/f/PageAnimationState.java:82: error: variable a is already defined in class a
+          public TextureElement a;
+                                ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:74: error: variable a is already defined in class FolderItemPositioner
+      public TextureElement a;
+                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:114: error: method c() is already defined in class DrawerItemVisual
+      public String c() {
+                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerItemVisual.java:260: error: method c() is already defined in class DrawerItemVisual
+      public void c() {
+                  ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s
+15 actionable tasks: 1 executed, 14 up-to-date

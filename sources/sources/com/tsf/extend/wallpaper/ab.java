@@ -47,7 +47,7 @@ public class ab {
                 ByteArrayInputStream byteArrayInputStream2 = null;
                 byteArrayInputStream2 = null;
                 com.tsf.extend.wallpaper.b bVar2 = null;
-                Context applicationContext = com.tsf.extend.h.b().getApplicationContext();
+                Context applicationContext = com.tsf.extend.AppContextHolder.b().getApplicationContext();
                 Bitmap bitmapA = ab.a(applicationContext, null, z, true, i);
                 if (aVar != null) {
                     aVar.a(bitmapA);

@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.ad;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class t extends BaseAdapter implements View.OnClickListener {
-    private static int[] l = {f.g.time_january, f.g.time_february, f.g.time_march, f.g.time_april, f.g.time_may, f.g.time_june, f.g.time_july, f.g.time_august, f.g.time_september, f.g.time_october, f.g.time_november, f.g.time_december};
+    private static int[] l = {ResourceIds.g.time_january, ResourceIds.g.time_february, ResourceIds.g.time_march, ResourceIds.g.time_april, ResourceIds.g.time_may, ResourceIds.g.time_june, ResourceIds.g.time_july, ResourceIds.g.time_august, ResourceIds.g.time_september, ResourceIds.g.time_october, ResourceIds.g.time_november, ResourceIds.g.time_december};
     private ai b;
     private Context c;
     private A f;
@@ -47,9 +47,9 @@ public class t extends BaseAdapter implements View.OnClickListener {
         this.c = context;
         this.b = aiVar;
         DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        this.h = this.c.getResources().getDimensionPixelSize(f.c.wallpaper_list_item_padding);
+        this.h = this.c.getResources().getDimensionPixelSize(ResourceIds.c.wallpaper_list_item_padding);
         this.g = new ad.a(this.h, this.h);
-        this.i = ((displayMetrics.widthPixels - this.h) - (this.c.getResources().getDimensionPixelSize(f.c.wallpaper_list_padding_horizontal) * 2)) / 2;
+        this.i = ((displayMetrics.widthPixels - this.h) - (this.c.getResources().getDimensionPixelSize(ResourceIds.c.wallpaper_list_padding_horizontal) * 2)) / 2;
         this.j = (int) (this.i / 1.1225806f);
     }
 
@@ -135,19 +135,19 @@ public class t extends BaseAdapter implements View.OnClickListener {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View viewInflate;
         if (view == null) {
-            viewInflate = LayoutInflater.from(this.c).inflate(f.C0052f.wallpaper_list_item, (ViewGroup) null);
+            viewInflate = LayoutInflater.from(this.c).inflate(ResourceIds.C0052f.wallpaper_list_item, (ViewGroup) null);
             c cVar = new c();
             this.d.add(cVar);
-            cVar.a = (ImageView) viewInflate.findViewById(f.e.img_left);
-            cVar.b = (ImageView) viewInflate.findViewById(f.e.img_right);
-            cVar.c = (TextView) viewInflate.findViewById(f.e.download_left);
-            cVar.d = (TextView) viewInflate.findViewById(f.e.download_right);
-            cVar.e = (ImageView) viewInflate.findViewById(f.e.user_tag_left);
-            cVar.f = (ImageView) viewInflate.findViewById(f.e.user_tag_right);
-            cVar.g = (ImageView) viewInflate.findViewById(f.e.live_tag_left);
-            cVar.h = (ImageView) viewInflate.findViewById(f.e.live_tag_right);
+            cVar.a = (ImageView) viewInflate.findViewById(ResourceIds.e.img_left);
+            cVar.b = (ImageView) viewInflate.findViewById(ResourceIds.e.img_right);
+            cVar.c = (TextView) viewInflate.findViewById(ResourceIds.e.download_left);
+            cVar.d = (TextView) viewInflate.findViewById(ResourceIds.e.download_right);
+            cVar.e = (ImageView) viewInflate.findViewById(ResourceIds.e.user_tag_left);
+            cVar.f = (ImageView) viewInflate.findViewById(ResourceIds.e.user_tag_right);
+            cVar.g = (ImageView) viewInflate.findViewById(ResourceIds.e.live_tag_left);
+            cVar.h = (ImageView) viewInflate.findViewById(ResourceIds.e.live_tag_right);
             if (this.f != null) {
-                this.f.a(cVar, viewInflate);
+                this.ResourceIds.a(cVar, viewInflate);
             }
             cVar.a.setOnClickListener(this);
             cVar.b.setOnClickListener(this);
@@ -173,7 +173,7 @@ public class t extends BaseAdapter implements View.OnClickListener {
         a(item.a, cVar2.a);
         a(item.b, cVar2.b);
         if (this.f != null) {
-            this.f.a(cVar2, item, i);
+            this.ResourceIds.a(cVar2, item, i);
         }
         if (this.b == ai.HotType) {
             if (item.a != null) {
@@ -197,15 +197,15 @@ public class t extends BaseAdapter implements View.OnClickListener {
             cVar2.e.setVisibility(8);
         }
         if (item.b != null) {
-            cVar2.f.setVisibility(8);
+            cVar2.ResourceIds.setVisibility(8);
         } else {
-            cVar2.f.setVisibility(4);
+            cVar2.ResourceIds.setVisibility(4);
         }
         return viewInflate;
     }
 
     private void a(m mVar, ImageView imageView) {
-        imageView.setBackgroundResource(f.b.personal_list_item_bg);
+        imageView.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
         imageView.setTag(mVar);
         if (mVar == null) {
             imageView.setBackgroundColor(0);

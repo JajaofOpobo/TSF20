@@ -21,7 +21,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.WallpaperDetail;
 import com.tsf.extend.wallpaper.ad;
 import com.tsf.extend.wallpaper.i;
@@ -66,15 +66,15 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
         this.f = new ListView(context);
         addView(this.f, new FrameLayout.LayoutParams(-1, -1));
         this.g = new A();
-        this.f.setAdapter((ListAdapter) this.g);
+        this.ResourceIds.setAdapter((ListAdapter) this.g);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
-        this.i = getResources().getDimensionPixelSize(f.c.local_wallpaper_category_list_item_padding);
-        this.j = (int) (((displayMetrics.widthPixels - this.i) - (getContext().getResources().getDimensionPixelSize(f.c.local_wallpaper_list_padding_horizontal) * 2)) / 2.0f);
+        this.i = getResources().getDimensionPixelSize(ResourceIds.c.local_wallpaper_category_list_item_padding);
+        this.j = (int) (((displayMetrics.widthPixels - this.i) - (getContext().getResources().getDimensionPixelSize(ResourceIds.c.local_wallpaper_list_padding_horizontal) * 2)) / 2.0f);
         this.k = (int) (this.j / 1.1225806f);
         this.l = new ad.a((int) this.i, (int) this.i);
-        this.f.setDivider(this.l);
-        this.f.setSelector(f.d.transparent_drawable);
-        this.f.setOnScrollListener(new AbsListView.OnScrollListener() { // from class: com.tsf.extend.wallpaper.h.1
+        this.ResourceIds.setDivider(this.l);
+        this.ResourceIds.setSelector(ResourceIds.d.transparent_drawable);
+        this.ResourceIds.setOnScrollListener(new AbsListView.OnScrollListener() { // from class: com.tsf.extend.wallpaper.h.1
             @Override // android.widget.AbsListView.OnScrollListener
             public void onScrollStateChanged(AbsListView absListView, int i) {
             }
@@ -118,7 +118,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
             this.o.clear();
         }
         this.g = new A();
-        this.f.setAdapter((ListAdapter) this.g);
+        this.ResourceIds.setAdapter((ListAdapter) this.g);
     }
 
     private class A extends BaseAdapter {
@@ -171,28 +171,28 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
             if (view == null) {
                 b bVar = new b();
                 if (z) {
-                    viewInflate = h.this.n.inflate(f.C0052f.wallpaper_local_item, (ViewGroup) null);
-                    bVar.c = viewInflate.findViewById(f.e.favorite);
+                    viewInflate = h.this.n.inflate(ResourceIds.C0052f.wallpaper_local_item, (ViewGroup) null);
+                    bVar.c = viewInflate.findViewById(ResourceIds.e.favorite);
                     bVar.c.setOnClickListener(h.this);
                     a(bVar.c, getItemViewType(i));
-                    bVar.d = viewInflate.findViewById(f.e.local);
+                    bVar.d = viewInflate.findViewById(ResourceIds.e.local);
                     bVar.d.setOnClickListener(h.this);
                     a(bVar.d, getItemViewType(i));
                 } else {
-                    viewInflate = h.this.n.inflate(f.C0052f.wallpaper_list_item, (ViewGroup) null);
-                    int dimensionPixelOffset = h.this.getResources().getDimensionPixelOffset(f.c.local_wallpaper_list_padding_horizontal);
+                    viewInflate = h.this.n.inflate(ResourceIds.C0052f.wallpaper_list_item, (ViewGroup) null);
+                    int dimensionPixelOffset = h.this.getResources().getDimensionPixelOffset(ResourceIds.c.local_wallpaper_list_padding_horizontal);
                     viewInflate.setPadding(dimensionPixelOffset, 0, dimensionPixelOffset, 0);
                     if (3 == itemViewType) {
-                        bVar.b = viewInflate.findViewById(f.e.live);
+                        bVar.b = viewInflate.findViewById(ResourceIds.e.live);
                         bVar.b.setOnClickListener(h.this);
                         a(bVar.b, getItemViewType(i));
                     }
-                    bVar.a = viewInflate.findViewById(f.e.left_group);
-                    bVar.e = (ImageView) viewInflate.findViewById(f.e.img_left);
+                    bVar.a = viewInflate.findViewById(ResourceIds.e.left_group);
+                    bVar.e = (ImageView) viewInflate.findViewById(ResourceIds.e.img_left);
                     bVar.e.setOnClickListener(h.this);
                     a(bVar.e, getItemViewType(i));
-                    bVar.f = (ImageView) viewInflate.findViewById(f.e.img_right);
-                    bVar.f.setOnClickListener(h.this);
+                    bVar.f = (ImageView) viewInflate.findViewById(ResourceIds.e.img_right);
+                    bVar.ResourceIds.setOnClickListener(h.this);
                     a(bVar.f, getItemViewType(i));
                 }
                 LinearLayout linearLayout = (LinearLayout) viewInflate;
@@ -229,7 +229,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
 
         private void a(g gVar, View view) {
             if (gVar != h.a && gVar != h.b && gVar != h.c) {
-                view.setBackgroundResource(f.b.personal_list_item_bg);
+                view.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
             }
             view.setTag(gVar);
             if (gVar != null) {
@@ -278,7 +278,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
 
     private void e() {
         this.e = null;
-        Context contextB = com.tsf.extend.h.b();
+        Context contextB = com.tsf.extend.AppContextHolder.b();
         String strA = com.tsf.extend.base.j.p.a(contextB);
         if (TextUtils.isEmpty(strA)) {
             strA = com.tsf.extend.base.j.p.b(contextB);
@@ -332,7 +332,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
                 if (bVar.g == gVar) {
                     bVar.e.setImageBitmap(bitmap);
                 } else if (bVar.h == gVar) {
-                    bVar.f.setImageBitmap(bitmap);
+                    bVar.ResourceIds.setImageBitmap(bitmap);
                 }
             }
         }
@@ -368,13 +368,13 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
                 com.tsf.extend.base.j.n.a((Activity) getContext(), 1001);
                 return;
             } catch (Exception e) {
-                Toast.makeText(this.p, this.p.getString(f.g.net_shortcut_error), 1).show();
+                Toast.makeText(this.p, this.p.getString(ResourceIds.g.net_shortcut_error), 1).show();
                 return;
             }
         }
         if (view.getTag() == b) {
             if (((PersonalizationActivity) this.p).g()) {
-                Toast.makeText(getContext(), f.g.theme_current_no_set_wallpaper, 0).show();
+                Toast.makeText(getContext(), ResourceIds.g.theme_current_no_set_wallpaper, 0).show();
                 this.p.finish();
                 return;
             } else {
@@ -382,7 +382,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
                     this.p.startActivity(new Intent("android.service.wallpaper.LIVE_WALLPAPER_CHOOSER"));
                     return;
                 } catch (Exception e2) {
-                    Toast.makeText(this.p, this.p.getString(f.g.net_shortcut_error), 1).show();
+                    Toast.makeText(this.p, this.p.getString(ResourceIds.g.net_shortcut_error), 1).show();
                     return;
                 }
             }
@@ -397,7 +397,7 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
             return;
         }
         if (view.getTag() instanceof s) {
-            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(f.C0052f.wallpaper_detail, (ViewGroup) null);
+            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail, (ViewGroup) null);
             s sVar = (s) view.getTag();
             ArrayList arrayListNewArrayList = Lists.newArrayList();
             arrayListNewArrayList.addAll(this.h);
@@ -412,12 +412,12 @@ public class h extends FrameLayout implements View.OnClickListener, WallpaperDet
     void setSelectIndex(int i) {
         int i2 = ((i + 1) / 2) + 1;
         if (this.f != null) {
-            int count = this.f.getAdapter().getCount();
+            int count = this.ResourceIds.getAdapter().getCount();
             if (i2 < 0 || i2 >= count) {
                 return;
             }
             if (i2 < this.q || i2 >= this.q + this.r) {
-                this.f.setSelection(i2);
+                this.ResourceIds.setSelection(i2);
             }
         }
     }

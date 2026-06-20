@@ -20,8 +20,8 @@ import com.android.volley.l;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
-import com.tsf.extend.h;
+import com.tsf.extend.ResourceIds;
+import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.k;
 import com.tsf.extend.theme.v;
 import com.tsf.extend.theme.x;
@@ -65,21 +65,21 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        FrameLayout frameLayout = (FrameLayout) findViewById(f.e.list_content);
-        this.c = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.locker_list, (ViewGroup) null, false);
+        FrameLayout frameLayout = (FrameLayout) findViewById(ResourceIds.e.list_content);
+        this.c = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.locker_list, (ViewGroup) null, false);
         frameLayout.addView(this.c, new FrameLayout.LayoutParams(-1, -1));
         getContext().getResources().getDisplayMetrics();
-        this.i = getContext().getResources().getDimensionPixelSize(f.c.keyboard_item_PaddingLeftRight);
-        this.j = getContext().getResources().getDimensionPixelSize(f.c.keyboard_item_PadingTop);
+        this.i = getContext().getResources().getDimensionPixelSize(ResourceIds.c.keyboard_item_PaddingLeftRight);
+        this.j = getContext().getResources().getDimensionPixelSize(ResourceIds.c.keyboard_item_PadingTop);
         this.b = ((getContext().getResources().getDisplayMetrics().widthPixels - (this.i * 2)) - this.j) / 2;
         this.a = (int) (this.b / 1.3651686f);
-        this.d = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.d.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        this.d = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.d.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.d.setOnClickListener(this);
-        this.e = LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_loadmore, (ViewGroup) null);
-        this.f = (ProgressBar) this.e.findViewById(f.e.loadmore_progress);
-        this.f.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
-        this.g = (TextView) this.e.findViewById(f.e.loadmore_tips);
+        this.e = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
+        this.f = (ProgressBar) this.e.findViewById(ResourceIds.e.loadmore_progress);
+        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.g = (TextView) this.e.findViewById(ResourceIds.e.loadmore_tips);
         this.g.setOnClickListener(this);
         this.c.setMode(PullToRefreshBase.b.PULL_FROM_START);
         this.c.setHeaderResizeEnabled(false);
@@ -95,7 +95,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
                 KeyboardPager.this.h = System.currentTimeMillis();
                 com.tsf.extend.base.d.a.b bVar = com.tsf.extend.base.d.a.b.Refresh;
                 KeyboardPager.this.m.a(bVar);
-                com.tsf.extend.keyboard.a.h().a(KeyboardPager.this.m, bVar, (JSONObject) null);
+                com.tsf.extend.keyboard.KeyboardDataProvider.h().a(KeyboardPager.this.m, bVar, (JSONObject) null);
             }
 
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
@@ -114,20 +114,20 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     public void onClick(View view) {
         boolean z = false;
         int id = view.getId();
-        if (id == f.e.retry) {
+        if (id == ResourceIds.e.retry) {
             this.d.setVisibility(8);
             this.m = new d(com.tsf.extend.base.d.a.b.Refresh);
-            com.tsf.extend.keyboard.a.h().a(this.m, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().a(this.m, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
             return;
         }
-        if (id == f.e.loadmore_tips) {
-            this.f.setVisibility(0);
+        if (id == ResourceIds.e.loadmore_tips) {
+            this.ResourceIds.setVisibility(0);
             this.g.setVisibility(8);
             a();
             return;
         }
-        if (view.getTag() instanceof com.tsf.extend.keyboard.b) {
-            com.tsf.extend.keyboard.b bVar = (com.tsf.extend.keyboard.b) view.getTag();
+        if (view.getTag() instanceof com.tsf.extend.keyboard.KeyboardThemeModel) {
+            com.tsf.extend.keyboard.KeyboardThemeModel bVar = (com.tsf.extend.keyboard.KeyboardThemeModel) view.getTag();
             com.tsf.extend.base.D dVarA = h.a();
             if (dVarA != null) {
                 dVarA.c(bVar.a() + "");
@@ -175,34 +175,34 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     public void a() {
         if (this.l != null && this.l.size() > 0) {
             this.n = new d(com.tsf.extend.base.d.a.b.LoadMore);
-            com.tsf.extend.keyboard.a.h().a(this.n, com.tsf.extend.base.d.a.b.LoadMore, (JSONObject) null);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().a(this.n, com.tsf.extend.base.d.a.b.LoadMore, (JSONObject) null);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        this.f.setVisibility(8);
+        this.ResourceIds.setVisibility(8);
         this.g.setVisibility(0);
         this.g.setClickable(false);
-        this.g.setText(f.g.theme_no_more);
+        this.g.setText(ResourceIds.g.theme_no_more);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        this.f.setVisibility(8);
+        this.ResourceIds.setVisibility(8);
         this.g.setVisibility(0);
         this.g.setClickable(true);
-        this.g.setText(f.g.load_more_fail);
+        this.g.setText(ResourceIds.g.load_more_fail);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
-        this.f.setVisibility(0);
+        this.ResourceIds.setVisibility(0);
         this.g.setVisibility(8);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final List<com.tsf.extend.keyboard.b> list) {
+    public void a(final List<com.tsf.extend.keyboard.KeyboardThemeModel> list) {
         long j;
         long jCurrentTimeMillis = System.currentTimeMillis() - this.h;
         if (jCurrentTimeMillis > 200) {
@@ -219,13 +219,13 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         z.a(0, new Runnable() { // from class: com.tsf.extend.keyboard.KeyboardPager.3
             @Override // java.lang.Runnable
             public void run() {
-                KeyboardPager.this.a((List<com.tsf.extend.keyboard.b>) list, false);
+                KeyboardPager.this.a((List<com.tsf.extend.keyboard.KeyboardThemeModel>) list, false);
             }
         }, j + 150);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean b(List<com.tsf.extend.keyboard.b> list) {
+    public boolean b(List<com.tsf.extend.keyboard.KeyboardThemeModel> list) {
         if (list == null || list.size() == 0) {
             return false;
         }
@@ -233,7 +233,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public boolean a(List<com.tsf.extend.keyboard.b> list, boolean z) {
+    public boolean a(List<com.tsf.extend.keyboard.KeyboardThemeModel> list, boolean z) {
         int i = 0;
         if (!z) {
             this.l.clear();
@@ -308,14 +308,14 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         public View getView(int i, View view, ViewGroup viewGroup) {
             e eVar;
             if (view == null) {
-                view = LayoutInflater.from(KeyboardPager.this.getContext()).inflate(f.C0052f.keyboard_list_item, (ViewGroup) null);
+                view = LayoutInflater.from(KeyboardPager.this.getContext()).inflate(ResourceIds.C0052f.keyboard_list_item, (ViewGroup) null);
                 e eVar2 = new e();
-                eVar2.c = (FrameLayout) view.findViewById(f.e.left_group);
-                eVar2.e = (ImageView) view.findViewById(f.e.left_img);
-                eVar2.i = (ImageView) view.findViewById(f.e.keyboard_ad_bg_left);
-                eVar2.d = (FrameLayout) view.findViewById(f.e.right_group);
-                eVar2.f = (ImageView) view.findViewById(f.e.right_img);
-                eVar2.j = (ImageView) view.findViewById(f.e.keyboard_ad_bg_right);
+                eVar2.c = (FrameLayout) view.findViewById(ResourceIds.e.left_group);
+                eVar2.e = (ImageView) view.findViewById(ResourceIds.e.left_img);
+                eVar2.i = (ImageView) view.findViewById(ResourceIds.e.keyboard_ad_bg_left);
+                eVar2.d = (FrameLayout) view.findViewById(ResourceIds.e.right_group);
+                eVar2.f = (ImageView) view.findViewById(ResourceIds.e.right_img);
+                eVar2.j = (ImageView) view.findViewById(ResourceIds.e.keyboard_ad_bg_right);
                 a(eVar2.e);
                 a(eVar2.f);
                 view.setTag(eVar2);
@@ -332,17 +332,17 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
             eVar.e.setOnClickListener(KeyboardPager.this);
             eVar.i.setVisibility(0);
             eVar.g = KeyboardPager.this.new c(item.a.c(), eVar.e);
-            com.tsf.extend.keyboard.a.h().a(item.a.c(), eVar.g, l.a.LOW, KeyboardPager.this.b, KeyboardPager.this.a);
+            com.tsf.extend.keyboard.KeyboardDataProvider.h().a(item.a.c(), eVar.g, l.a.LOW, KeyboardPager.this.b, KeyboardPager.this.a);
             if (item.b != null) {
                 eVar.d.setVisibility(0);
-                eVar.f.setImageBitmap(null);
+                eVar.ResourceIds.setImageBitmap(null);
                 eVar.j.setVisibility(0);
-                eVar.f.setBackgroundColor(Color.argb(255, 221, 221, 221));
+                eVar.ResourceIds.setBackgroundColor(Color.argb(255, 221, 221, 221));
                 eVar.b = item.b;
-                eVar.f.setTag(item.b);
-                eVar.f.setOnClickListener(KeyboardPager.this);
+                eVar.ResourceIds.setTag(item.b);
+                eVar.ResourceIds.setOnClickListener(KeyboardPager.this);
                 eVar.h = KeyboardPager.this.new c(item.b.c(), eVar.f);
-                com.tsf.extend.keyboard.a.h().a(item.b.c(), eVar.h, l.a.LOW, KeyboardPager.this.b, KeyboardPager.this.a);
+                com.tsf.extend.keyboard.KeyboardDataProvider.h().a(item.b.c(), eVar.h, l.a.LOW, KeyboardPager.this.b, KeyboardPager.this.a);
             } else {
                 eVar.d.setVisibility(4);
             }
@@ -360,18 +360,18 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     }
 
     public class b {
-        com.tsf.extend.keyboard.b a;
-        com.tsf.extend.keyboard.b b;
+        com.tsf.extend.keyboard.KeyboardThemeModel a;
+        com.tsf.extend.keyboard.KeyboardThemeModel b;
 
-        public b(com.tsf.extend.keyboard.b bVar, com.tsf.extend.keyboard.b bVar2) {
+        public b(com.tsf.extend.keyboard.KeyboardThemeModel bVar, com.tsf.extend.keyboard.KeyboardThemeModel bVar2) {
             this.a = bVar;
             this.b = bVar2;
         }
     }
 
     private class e {
-        public com.tsf.extend.keyboard.b a;
-        public com.tsf.extend.keyboard.b b;
+        public com.tsf.extend.keyboard.KeyboardThemeModel a;
+        public com.tsf.extend.keyboard.KeyboardThemeModel b;
         public FrameLayout c;
         public FrameLayout d;
         public ImageView e;
@@ -396,7 +396,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
-            if (pair != null && ((com.tsf.extend.keyboard.b) this.c.getTag()).c().equals(this.b)) {
+            if (pair != null && ((com.tsf.extend.keyboard.KeyboardThemeModel) this.c.getTag()).c().equals(this.b)) {
                 this.c.setVisibility(0);
                 this.c.setBackgroundColor(Color.argb(0, 221, 221, 221));
                 this.c.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -406,7 +406,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
-            if (pair != null && ((com.tsf.extend.keyboard.b) this.c.getTag()).c().equals(this.b)) {
+            if (pair != null && ((com.tsf.extend.keyboard.KeyboardThemeModel) this.c.getTag()).c().equals(this.b)) {
                 this.c.setVisibility(0);
                 this.c.setBackgroundColor(Color.argb(0, 221, 221, 221));
                 this.c.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -438,12 +438,12 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
                         } else {
                             KeyboardPager.this.c.b(false);
                         }
-                        KeyboardPager.this.b((List<com.tsf.extend.keyboard.b>) aVar.a());
+                        KeyboardPager.this.b((List<com.tsf.extend.keyboard.KeyboardThemeModel>) aVar.a());
                         return;
                     }
                     KeyboardPager.this.c.b(false);
                     KeyboardPager.this.d();
-                    KeyboardPager.this.a((List<com.tsf.extend.keyboard.b>) aVar.a());
+                    KeyboardPager.this.a((List<com.tsf.extend.keyboard.KeyboardThemeModel>) aVar.a());
                 }
             });
         }
@@ -460,7 +460,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
                     if (aVar == null) {
                         KeyboardPager.this.c.setMode(PullToRefreshBase.b.DISABLED);
                     }
-                    KeyboardPager.this.a((List<com.tsf.extend.keyboard.b>) (aVar == null ? null : aVar.a()));
+                    KeyboardPager.this.a((List<com.tsf.extend.keyboard.KeyboardThemeModel>) (aVar == null ? null : aVar.a()));
                 }
             });
         }

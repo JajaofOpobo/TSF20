@@ -19,7 +19,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
 import com.tsf.extend.base.view.c;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 
@@ -76,7 +76,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
                 if (UploadWallpaperService.c.values()[iA] == UploadWallpaperService.c.idle) {
                     com.tsf.extend.base.j.n.a(WallpaperPager.this.h, 2);
                 } else {
-                    Toast.makeText(WallpaperPager.this.getContext(), f.g.wallpaper_upload_alread_uploading, 1).show();
+                    Toast.makeText(WallpaperPager.this.getContext(), ResourceIds.g.wallpaper_upload_alread_uploading, 1).show();
                 }
                 WallpaperPager.this.getContext().unbindService(WallpaperPager.this.x);
             }
@@ -94,7 +94,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
 
     private void c() {
         String[] strArr;
-        this.i = (ViewPager) findViewById(f.e.viewpager);
+        this.i = (ViewPager) findViewById(ResourceIds.e.viewpager);
         this.m = new A();
         this.m.a((PersonalizationActivity.i) this);
         this.i.setAdapter(this.m);
@@ -102,19 +102,19 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         this.i.setOffscreenPageLimit(5);
         this.i.setCurrentItem(this.g);
         this.o = true;
-        this.n = findViewById(f.e.wallpaper_banner_group);
-        c = getResources().getDimensionPixelSize(f.c.personal_indicator_height);
-        b = getResources().getDimensionPixelSize(f.c.personal_indicator_height) + a;
-        d = getResources().getDimensionPixelSize(f.c.wallpaper_list_item_padding);
+        this.n = findViewById(ResourceIds.e.wallpaper_banner_group);
+        c = getResources().getDimensionPixelSize(ResourceIds.c.personal_indicator_height);
+        b = getResources().getDimensionPixelSize(ResourceIds.c.personal_indicator_height) + a;
+        d = getResources().getDimensionPixelSize(ResourceIds.c.wallpaper_list_item_padding);
         if (this.r) {
-            strArr = new String[]{getResources().getString(f.g.wallpaper_categories), getResources().getString(f.g.tab_new), getResources().getString(f.g.tab_hot)};
+            strArr = new String[]{getResources().getString(ResourceIds.g.wallpaper_categories), getResources().getString(ResourceIds.g.tab_new), getResources().getString(ResourceIds.g.tab_hot)};
         } else {
-            strArr = new String[]{getResources().getString(f.g.wallpaper_categories), getResources().getString(f.g.tab_pg_live_wallpaper), getResources().getString(f.g.tab_new), getResources().getString(f.g.tab_hot)};
+            strArr = new String[]{getResources().getString(ResourceIds.g.wallpaper_categories), getResources().getString(ResourceIds.g.tab_pg_live_wallpaper), getResources().getString(ResourceIds.g.tab_new), getResources().getString(ResourceIds.g.tab_hot)};
         }
-        this.j = (PagerIndicator) findViewById(f.e.wallpaper_indicator);
+        this.j = (PagerIndicator) findViewById(ResourceIds.e.wallpaper_indicator);
         this.j.a(this.g, strArr);
         this.j.setOnPageClickedListener(this);
-        this.k = (LinearLayout) findViewById(f.e.upload_wallpaper_view);
+        this.k = (LinearLayout) findViewById(ResourceIds.e.upload_wallpaper_view);
         if (this.r) {
             this.k.setVisibility(8);
             return;
@@ -128,14 +128,14 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
                 }
                 final com.tsf.extend.base.view.c cVar = new com.tsf.extend.base.view.c(WallpaperPager.this.getContext(), -2);
                 cVar.a(WallpaperPager.this);
-                cVar.a(f.g.wallpaper_upload_title, f.g.wallpaper_upload_content, f.g.wallpaper_upload_pictures, 0, BitmapFactory.decodeResource(WallpaperPager.this.getResources(), f.d.wallpaper_dialog_banner), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperPager.1.1
+                cVar.a(ResourceIds.g.wallpaper_upload_title, ResourceIds.g.wallpaper_upload_content, ResourceIds.g.wallpaper_upload_pictures, 0, BitmapFactory.decodeResource(WallpaperPager.this.getResources(), ResourceIds.d.wallpaper_dialog_banner), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperPager.1.1
                     @Override // android.view.View.OnClickListener
                     public void onClick(View view2) {
                         cVar.dismiss();
                         ag.a().c();
                         com.tsf.extend.base.j.n.a(WallpaperPager.this.h, 2);
                     }
-                }, null, f.d.wallpaper_upload_dialog_title_bg);
+                }, null, ResourceIds.d.wallpaper_upload_dialog_title_bg);
                 cVar.show();
             }
         });
@@ -167,7 +167,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         }
     }
 
-    private class A extends com.tsf.extend.base.support.a {
+    private class A extends com.tsf.extend.base.support.PagerAdapterCompat {
         private int c;
         private int d;
         private int e;
@@ -186,12 +186,12 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
             }
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return WallpaperPager.this.r ? 3 : 4;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public Object a(ViewGroup viewGroup, int i) {
             View adVar;
             View view = (View) WallpaperPager.this.q.get(i);
@@ -221,12 +221,12 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
             return adVar;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
@@ -267,7 +267,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
     public void c(int i) {
         if (this.i != null) {
             this.s = i;
-            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.a(i + 1);
             }

@@ -15,7 +15,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.util.List;
 import org.json.JSONObject;
@@ -55,7 +55,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         this.k = new SparseArray<>();
         this.l = false;
         this.m = null;
-        this.n = new String[]{getResources().getString(f.g.tab_hot), getResources().getString(f.g.tab_new), getResources().getString(f.g.wallpaper_categories)};
+        this.n = new String[]{getResources().getString(ResourceIds.g.tab_hot), getResources().getString(ResourceIds.g.tab_new), getResources().getString(ResourceIds.g.wallpaper_categories)};
         this.o = false;
         this.p = false;
         this.q = true;
@@ -71,20 +71,20 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     protected void onFinishInflate() {
         super.onFinishInflate();
         v.h();
-        this.e = (ViewPager) findViewById(f.e.viewpager);
+        this.e = (ViewPager) findViewById(ResourceIds.e.viewpager);
         this.g = new B();
         this.e.setOffscreenPageLimit(2);
         this.e.setAdapter(this.g);
         this.e.setOnPageChangeListener(this);
-        this.f = (PagerIndicator) findViewById(f.e.wallpaper_indicator);
-        this.f.setOnPageClickedListener(this);
+        this.f = (PagerIndicator) findViewById(ResourceIds.e.wallpaper_indicator);
+        this.ResourceIds.setOnPageClickedListener(this);
         int defaultPageIndex = getDefaultPageIndex();
-        this.f.a(defaultPageIndex, this.n);
+        this.ResourceIds.a(defaultPageIndex, this.n);
         if (this.e.getCurrentItem() != defaultPageIndex) {
             this.e.setCurrentItem(defaultPageIndex);
         }
         this.i = defaultPageIndex;
-        this.h = findViewById(f.e.theme_banner_group);
+        this.h = findViewById(ResourceIds.e.theme_banner_group);
         this.v = g();
         int iA = 0;
         if (this.v) {
@@ -92,7 +92,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
             this.u = com.tsf.extend.wallpaper.ag.a().g();
         }
         a = iA;
-        b = getResources().getDimensionPixelSize(f.c.personal_indicator_height);
+        b = getResources().getDimensionPixelSize(ResourceIds.c.personal_indicator_height);
         c = b + a;
         this.j = System.currentTimeMillis();
         h();
@@ -105,10 +105,10 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
     private void h() {
         if (this.v) {
-            View viewInflate = ((ViewStub) findViewById(f.e.theme_search_entry_stub)).inflate();
-            viewInflate.findViewById(f.e.theme_search_go).setOnClickListener(this);
-            viewInflate.findViewById(f.e.theme_search_bar).setOnClickListener(this);
-            this.r = (TextView) viewInflate.findViewById(f.e.theme_search);
+            View viewInflate = ((ViewStub) findViewById(ResourceIds.e.theme_search_entry_stub)).inflate();
+            viewInflate.findViewById(ResourceIds.e.theme_search_go).setOnClickListener(this);
+            viewInflate.findViewById(ResourceIds.e.theme_search_bar).setOnClickListener(this);
+            this.r = (TextView) viewInflate.findViewById(ResourceIds.e.theme_search);
             l();
         }
     }
@@ -146,9 +146,9 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.theme_search_bar) {
+        if (id == ResourceIds.e.theme_search_bar) {
             a(true);
-        } else if (id == f.e.theme_search_go) {
+        } else if (id == ResourceIds.e.theme_search_go) {
             a(false);
         }
     }
@@ -189,19 +189,19 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
     }
 
-    private class B extends com.tsf.extend.base.support.a {
+    private class B extends com.tsf.extend.base.support.PagerAdapterCompat {
         private FrameLayout.LayoutParams b;
 
         private B() {
             this.b = new FrameLayout.LayoutParams(-1, -1);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return 3;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public Object a(ViewGroup viewGroup, int i) {
             View rVar;
             View view = (View) ThemePager.this.k.get(i);
@@ -231,12 +231,12 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
             return rVar;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
@@ -256,14 +256,14 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     @Override // com.tsf.extend.base.support.ViewPager.e
     public void a(int i, float f, int i2) {
         if (this.f != null) {
-            this.f.a(i, f, i2);
+            this.ResourceIds.a(i, f, i2);
         }
     }
 
     @Override // com.tsf.extend.base.support.ViewPager.e
     public void a(int i) {
         if (this.f != null) {
-            this.f.a(i);
+            this.ResourceIds.a(i);
             String str = this.n[i];
             ((Activity) getContext()).getIntent().getStringExtra("inlet");
             if (((Activity) getContext()).getIntent().getStringExtra("pushid") == null) {
@@ -290,13 +290,13 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     }
 
     private String a(String str) {
-        if (str.equals(getResources().getString(f.g.tab_new))) {
+        if (str.equals(getResources().getString(ResourceIds.g.tab_new))) {
             return "1";
         }
-        if (str.equals(getResources().getString(f.g.tab_hot))) {
+        if (str.equals(getResources().getString(ResourceIds.g.tab_hot))) {
             return "2";
         }
-        if (!str.equals(getResources().getString(f.g.wallpaper_categories))) {
+        if (!str.equals(getResources().getString(ResourceIds.g.wallpaper_categories))) {
             return "1";
         }
         return "3";
@@ -304,7 +304,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
 
     @Override // com.tsf.extend.base.view.PagerIndicator.a
     public void c(int i) {
-        com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+        com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
         if (dVarA != null) {
             dVarA.b(i + 1);
         }

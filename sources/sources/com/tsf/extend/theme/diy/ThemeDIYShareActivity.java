@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import com.tsf.extend.base.actstru.model.activi.CustomActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ah;
 import com.tsf.extend.theme.aq;
 import com.tsf.extend.theme.o;
@@ -48,7 +48,7 @@ public class ThemeDIYShareActivity extends CustomActivity {
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         a();
-        final View viewInflate = LayoutInflater.from(this).inflate(f.C0052f.theme_diy_share_layout, (ViewGroup) null);
+        final View viewInflate = LayoutInflater.from(this).inflate(ResourceIds.C0052f.theme_diy_share_layout, (ViewGroup) null);
         viewInflate.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() { // from class: com.tsf.extend.theme.diy.ThemeDIYShareActivity.1
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             public void onGlobalLayout() {

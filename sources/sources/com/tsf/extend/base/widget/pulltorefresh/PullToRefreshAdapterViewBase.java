@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extends PullToRefreshBase<T> implements AbsListView.OnScrollListener {
@@ -87,7 +87,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
             s();
         }
         if (this.f != null) {
-            this.f.onScroll(absListView, i, i2, i3);
+            this.ResourceIds.onScroll(absListView, i, i2, i3);
         }
     }
 
@@ -95,7 +95,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
     public void onScrollStateChanged(AbsListView absListView, int i) {
         this.d = i;
         if (this.f != null) {
-            this.f.onScrollStateChanged(absListView, i);
+            this.ResourceIds.onScrollStateChanged(absListView, i);
         }
     }
 
@@ -208,7 +208,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase
     protected void a(TypedArray typedArray) {
-        this.j = typedArray.getBoolean(f.i.PullToRefresh_ptrShowIndicator, false);
+        this.j = typedArray.getBoolean(ResourceIds.i.PullToRefresh_ptrShowIndicator, false);
     }
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase
@@ -245,7 +245,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
         if (mode.c() && this.h == null) {
             this.h = new com.tsf.extend.base.widget.pulltorefresh.a.c(getContext(), PullToRefreshBase.b.PULL_FROM_START);
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
-            layoutParams.rightMargin = getResources().getDimensionPixelSize(f.c.ptr_indicator_right_padding);
+            layoutParams.rightMargin = getResources().getDimensionPixelSize(ResourceIds.c.ptr_indicator_right_padding);
             layoutParams.gravity = 53;
             refreshableViewWrapper.addView(this.h, layoutParams);
         } else if (!mode.c() && this.h != null) {
@@ -255,7 +255,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
         if (mode.d() && this.i == null) {
             this.i = new com.tsf.extend.base.widget.pulltorefresh.a.c(getContext(), PullToRefreshBase.b.PULL_FROM_END);
             FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-2, -2);
-            layoutParams2.rightMargin = getResources().getDimensionPixelSize(f.c.ptr_indicator_right_padding);
+            layoutParams2.rightMargin = getResources().getDimensionPixelSize(ResourceIds.c.ptr_indicator_right_padding);
             layoutParams2.gravity = 85;
             refreshableViewWrapper.addView(this.i, layoutParams2);
             return;

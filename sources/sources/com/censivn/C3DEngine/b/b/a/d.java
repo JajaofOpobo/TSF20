@@ -2,8 +2,8 @@ package com.censivn.C3DEngine.b.b.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -30,7 +30,7 @@ public class d extends j {
     private boolean t = false;
     private boolean u = true;
     private j c = new j() { // from class: com.censivn.C3DEngine.b.b.A.d.1
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onChildMeasure(i iVar) {
             a();
         }
@@ -419,7 +419,7 @@ public class d extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         transferCanvas(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
     }
@@ -453,7 +453,7 @@ public class d extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (getAnimationObjectState()) {
             float f = this.o ? 100.0f : 255.0f;
@@ -547,14 +547,14 @@ public class d extends j {
         this.c.addChild(this.d);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
         if (getChildIndexOf(iVar) != -1) {
             k();
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void setAABBPX(float f, float f2, float f3, float f4, float f5, float f6) {
         super.setAABBPX(f, f2, f3, f4, f5, f6);
         this.c.minY(f2);

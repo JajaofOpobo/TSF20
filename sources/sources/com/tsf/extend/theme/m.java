@@ -15,7 +15,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
@@ -69,17 +69,17 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         this.y = str;
         this.a = pageActivity;
         this.u = iVar;
-        this.b = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list, (ViewGroup) null);
+        this.b = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list, (ViewGroup) null);
         this.b.setHeaderResizeEnabled(true);
         addView(this.b, n);
         this.b.setOnScrollListener(this);
-        this.c = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.c.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        this.c = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.c.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.c.setOnClickListener(this);
-        this.d = LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_loadmore, (ViewGroup) null);
-        this.l = (ProgressBar) this.d.findViewById(f.e.loadmore_progress);
+        this.d = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
+        this.l = (ProgressBar) this.d.findViewById(ResourceIds.e.loadmore_progress);
         this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
-        this.m = (TextView) this.d.findViewById(f.e.loadmore_tips);
+        this.m = (TextView) this.d.findViewById(ResourceIds.e.loadmore_tips);
         this.m.setOnClickListener(this);
         this.c.setSoundEffectsEnabled(true);
         this.m.setSoundEffectsEnabled(true);
@@ -191,7 +191,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         this.l.setVisibility(8);
         this.m.setVisibility(0);
         this.m.setClickable(false);
-        this.m.setText(f.g.theme_no_more);
+        this.m.setText(ResourceIds.g.theme_no_more);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -199,36 +199,36 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         this.l.setVisibility(8);
         this.m.setVisibility(0);
         this.m.setClickable(true);
-        this.m.setText(f.g.load_more_fail);
+        this.m.setText(ResourceIds.g.load_more_fail);
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.retry) {
+        if (id == ResourceIds.e.retry) {
             this.c.setVisibility(8);
             this.o = new A(com.tsf.extend.base.d.a.b.Refresh);
             this.w = System.currentTimeMillis();
             v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
-        } else if (id == f.e.theme_item_download_layout_left) {
+        } else if (id == ResourceIds.e.theme_item_download_layout_left) {
             if (ao.b().g()) {
                 c(view);
             } else {
-                b(view.findViewById(f.e.theme_download_left));
+                b(view.findViewById(ResourceIds.e.theme_download_left));
             }
-        } else if (id == f.e.theme_item_download_layout_mid) {
+        } else if (id == ResourceIds.e.theme_item_download_layout_mid) {
             if (ao.b().g()) {
                 c(view);
             } else {
-                b(view.findViewById(f.e.theme_download_mid));
+                b(view.findViewById(ResourceIds.e.theme_download_mid));
             }
-        } else if (id == f.e.theme_item_download_layout_right) {
+        } else if (id == ResourceIds.e.theme_item_download_layout_right) {
             if (ao.b().g()) {
                 c(view);
             } else {
-                b(view.findViewById(f.e.theme_download_right));
+                b(view.findViewById(ResourceIds.e.theme_download_right));
             }
-        } else if (id == f.e.loadmore_tips) {
+        } else if (id == ResourceIds.e.loadmore_tips) {
             this.l.setVisibility(0);
             this.m.setVisibility(8);
             c();
@@ -319,7 +319,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                     this.a.a(false);
                     return;
                 }
-                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                 if (this.y.equals("diy")) {
                     themeDetail.i();
                 }
@@ -335,9 +335,9 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         k kVar;
         Object tag = view.getTag();
         if (tag instanceof t.d) {
-            if (view.getId() == f.e.theme_item_left) {
+            if (view.getId() == ResourceIds.e.theme_item_left) {
                 kVar = ((t.d) tag).a;
-            } else if (view.getId() == f.e.theme_item_mid) {
+            } else if (view.getId() == ResourceIds.e.theme_item_mid) {
                 kVar = ((t.d) tag).o;
             } else {
                 kVar = ((t.d) tag).h;
@@ -356,7 +356,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             }
             if (kVar.x() != 1 && kVar.g().contains("DIY_")) {
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.b(kVar.h() + "");
             }

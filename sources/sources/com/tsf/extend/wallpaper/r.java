@@ -19,12 +19,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class r extends com.tsf.extend.g implements View.OnClickListener {
+public class r extends com.tsf.extend.BaseDialog implements View.OnClickListener {
     public static boolean a = false;
     private ImageView b;
     private TextView c;
@@ -54,12 +54,12 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.cancel) {
+        if (id == ResourceIds.e.cancel) {
             dismiss();
             return;
         }
-        if (id == f.e.download) {
-            ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this.j).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+        if (id == ResourceIds.e.download) {
+            ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this.j).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
             themeDetail.setFromInlet("15");
             themeDetail.setFromTab("detail");
             themeDetail.setTheme(this.h);
@@ -71,8 +71,8 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
             dismiss();
             return;
         }
-        if (id == f.e.cover) {
-            ThemeDetail themeDetail2 = (ThemeDetail) LayoutInflater.from(this.j).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+        if (id == ResourceIds.e.cover) {
+            ThemeDetail themeDetail2 = (ThemeDetail) LayoutInflater.from(this.j).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
             themeDetail2.setFromInlet("15");
             themeDetail2.setFromTab("detail");
             themeDetail2.setTheme(this.h);
@@ -86,19 +86,19 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
     }
 
     private void b() {
-        View viewInflate = LayoutInflater.from(getContext()).inflate(f.C0052f.theme_recommend_dialog, (ViewGroup) null);
-        this.b = (ImageView) viewInflate.findViewById(f.e.cover);
-        this.c = (TextView) viewInflate.findViewById(f.e.download);
-        this.f = (ImageView) viewInflate.findViewById(f.e.cancel);
-        this.g = (ProgressBar) viewInflate.findViewById(f.e.progressbar);
-        this.f.setOnClickListener(this);
+        View viewInflate = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_recommend_dialog, (ViewGroup) null);
+        this.b = (ImageView) viewInflate.findViewById(ResourceIds.e.cover);
+        this.c = (TextView) viewInflate.findViewById(ResourceIds.e.download);
+        this.f = (ImageView) viewInflate.findViewById(ResourceIds.e.cancel);
+        this.g = (ProgressBar) viewInflate.findViewById(ResourceIds.e.progressbar);
+        this.ResourceIds.setOnClickListener(this);
         a(this.c);
         a(this.b);
         c();
         setContentView(viewInflate);
     }
 
-    @Override // com.tsf.extend.g
+    @Override // com.tsf.extend.BaseDialog
     public FrameLayout.LayoutParams a() {
         return new FrameLayout.LayoutParams((int) (getContext().getResources().getDisplayMetrics().widthPixels * d), -1);
     }
@@ -136,7 +136,7 @@ public class r extends com.tsf.extend.g implements View.OnClickListener {
         }
     }
 
-    @Override // com.tsf.extend.g, android.app.Dialog
+    @Override // com.tsf.extend.BaseDialog, android.app.Dialog
     public void show() {
         super.show();
     }

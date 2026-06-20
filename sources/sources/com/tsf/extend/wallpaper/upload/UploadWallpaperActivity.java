@@ -23,7 +23,7 @@ import android.widget.Toast;
 import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.base.widget.pulltorefresh.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
@@ -67,8 +67,8 @@ public class UploadWallpaperActivity extends Activity {
     @Override // android.app.Activity
     protected void onDestroy() {
         super.onDestroy();
-        if (this.f != null && this.f.getBackground() != null) {
-            com.tsf.extend.base.view.b bVar = (com.tsf.extend.base.view.b) this.f.getBackground();
+        if (this.f != null && this.ResourceIds.getBackground() != null) {
+            com.tsf.extend.base.view.b bVar = (com.tsf.extend.base.view.b) this.ResourceIds.getBackground();
             com.tsf.extend.base.j.b.a(this.f, (Drawable) null);
             if (bVar != null) {
                 bVar.a().recycle();
@@ -84,7 +84,7 @@ public class UploadWallpaperActivity extends Activity {
         this.d = (Uri) getIntent().getParcelableExtra("UPLOAD_EXTRA_URI");
         if (this.d != null) {
             this.f = new FrameLayout(this);
-            this.f.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+            this.ResourceIds.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             this.e.addView(this.f);
             FrameLayout frameLayout = new FrameLayout(this);
             frameLayout.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
@@ -108,7 +108,7 @@ public class UploadWallpaperActivity extends Activity {
                     UploadWallpaperActivity.this.onBackPressed();
                 }
             });
-            imageView.setImageDrawable(new e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), f.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+            imageView.setImageDrawable(new e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
             this.e.addView(imageView);
             z.a(6, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.UploadWallpaperActivity.2
                 @Override // java.lang.Runnable
@@ -187,7 +187,7 @@ public class UploadWallpaperActivity extends Activity {
             @Override // java.lang.Runnable
             public void run() {
                 if (!UploadWallpaperActivity.this.isFinishing()) {
-                    Toast.makeText(UploadWallpaperActivity.this, f.g.upload_wallpaper_too_large, 1).show();
+                    Toast.makeText(UploadWallpaperActivity.this, ResourceIds.g.upload_wallpaper_too_large, 1).show();
                     UploadWallpaperActivity.this.finish();
                 }
             }
@@ -201,8 +201,8 @@ public class UploadWallpaperActivity extends Activity {
                 if (!UploadWallpaperActivity.this.isFinishing()) {
                     com.tsf.extend.base.j.b.a(UploadWallpaperActivity.this.f, drawable);
                     if (Build.VERSION.SDK_INT >= 12) {
-                        UploadWallpaperActivity.this.f.setAlpha(0.0f);
-                        UploadWallpaperActivity.this.f.animate().setInterpolator(new DecelerateInterpolator()).alpha(0.8f).setDuration(300L);
+                        UploadWallpaperActivity.this.ResourceIds.setAlpha(0.0f);
+                        UploadWallpaperActivity.this.ResourceIds.animate().setInterpolator(new DecelerateInterpolator()).alpha(0.8f).setDuration(300L);
                     }
                 }
             }
@@ -226,7 +226,7 @@ public class UploadWallpaperActivity extends Activity {
         intent.setData(this.d);
         intent.putExtra("cid", String.valueOf(this.a));
         intent.putExtra("name", this.c);
-        Drawable background = this.f.getBackground();
+        Drawable background = this.ResourceIds.getBackground();
         if (background != null && (background instanceof com.tsf.extend.base.view.b)) {
             int iA = i.a(64.0f);
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(iA, iA, Bitmap.Config.RGB_565);
@@ -237,7 +237,7 @@ public class UploadWallpaperActivity extends Activity {
             intent.putExtra("bitmap", bitmapCreateBitmap);
         }
         finish();
-        overridePendingTransition(0, f.a.upload_wpp_exit);
+        overridePendingTransition(0, ResourceIds.a.upload_wpp_exit);
         z.a(2, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.UploadWallpaperActivity.5
             @Override // java.lang.Runnable
             public void run() {

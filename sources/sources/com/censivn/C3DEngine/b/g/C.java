@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.b.g;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Vector;

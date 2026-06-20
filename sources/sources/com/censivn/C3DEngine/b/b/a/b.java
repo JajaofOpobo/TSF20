@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.b.a;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,21 +17,21 @@ public class b extends j {
         this.mMarginDistance = f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
         updateChildPosition(numChildren() - 1, false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         super.addChildAt(iVar, i);
         onChildMeasure(iVar);
         updateChildPosition(i, false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
@@ -40,14 +40,14 @@ public class b extends j {
         return zRemoveChild;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public i removeChildAt(int i) {
         i iVarRemoveChildAt = super.removeChildAt(i);
         onChildMeasure(iVarRemoveChildAt);
         return iVarRemoveChildAt;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
         this.isAnimationRunning = true;
         updateBorder();
@@ -105,13 +105,13 @@ public class b extends j {
         return z2;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void visible(Boolean bool) {
         super.visible(bool);
         notifLayoutRefresh();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible() && this.isAnimationRunning) {
             if (updateChildPosition(true)) {

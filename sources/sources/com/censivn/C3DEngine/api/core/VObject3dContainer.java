@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.core;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -9,57 +9,57 @@ public class VObject3dContainer extends VObject3d {
     public VObject3dContainer() {
         this.mThis = this;
         this.vTarget = new j() { // from class: com.censivn.C3DEngine.api.core.VObject3dContainer.1
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onFocus() {
                 VObject3dContainer.this.mThis.onFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 VObject3dContainer.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 VObject3dContainer.this.mThis.onDrawStart();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 VObject3dContainer.this.mThis.onDrawEnd();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onUpdateAnimation() {
                 VObject3dContainer.this.mThis.onUpdateAnimation();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 VObject3dContainer.this.mThis.draw();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void dispatchDraw() {
                 VObject3dContainer.this.mThis.dispatchDraw();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void drawMVPMatrix() {
                 VObject3dContainer.this.mThis.drawMVPMatrix();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart(i iVar) {
                 ((VObject3dContainer) VObject3dContainer.this.mThis).onDrawChildStart(iVar.getVirtualObject());
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd(i iVar) {
                 ((VObject3dContainer) VObject3dContainer.this.mThis).onDrawChildEnd(iVar.getVirtualObject());
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void drawElement() {
                 VObject3dContainer.this.mThis.drawElement();
             }

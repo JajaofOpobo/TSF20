@@ -8,6 +8,6 @@ public class f {
 
     public static int a() {
         e eVarB = b();
-        return eVarB == null ? com.tsf.extend.f.C0052f.theme_detail_head : eVarB.a();
+        return eVarB == null ? com.tsf.extend.ResourceIds.C0052f.theme_detail_head : eVarB.a();
     }
 }

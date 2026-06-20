@@ -18,7 +18,7 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
 import java.util.ArrayList;
@@ -55,21 +55,21 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         this.p = 0L;
         this.n = iVar;
         this.e = pageActivity;
-        this.g = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.g.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        this.g = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.g.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.g.setOnClickListener(this);
         this.j = Lists.newArrayList();
-        this.k = getResources().getString(f.g.wallpaper_people_praise);
-        int dimensionPixelSize = getContext().getResources().getDimensionPixelSize(f.c.wallpaper_category_list_item_padding);
+        this.k = getResources().getString(ResourceIds.g.wallpaper_people_praise);
+        int dimensionPixelSize = getContext().getResources().getDimensionPixelSize(ResourceIds.c.wallpaper_category_list_item_padding);
         ad.a aVar = new ad.a(dimensionPixelSize, dimensionPixelSize);
-        this.f = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list, (ViewGroup) null);
-        this.f.setHeaderResizeEnabled(true);
-        this.f.setDivider(aVar);
+        this.f = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list, (ViewGroup) null);
+        this.ResourceIds.setHeaderResizeEnabled(true);
+        this.ResourceIds.setDivider(aVar);
         addView(this.f, new FrameLayout.LayoutParams(-1, -1));
-        this.f.setCanLoadMore(false);
+        this.ResourceIds.setCanLoadMore(false);
         this.h = new A();
-        this.f.setAdapter(this.h);
-        this.f.setOnLoadListener(new PullToRefreshAndLoadMoreListView.a() { // from class: com.tsf.extend.wallpaper.v.1
+        this.ResourceIds.setAdapter(this.h);
+        this.ResourceIds.setOnLoadListener(new PullToRefreshAndLoadMoreListView.a() { // from class: com.tsf.extend.wallpaper.v.1
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
             public void a() {
                 v.this.c = System.currentTimeMillis();
@@ -87,10 +87,10 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             this.a = false;
             b(aVarJ.a(), false);
         } else {
-            this.f.k();
+            this.ResourceIds.k();
         }
-        this.f.setOnItemClickListener(this);
-        this.f.setOnScrollListener(this);
+        this.ResourceIds.setOnItemClickListener(this);
+        this.ResourceIds.setOnScrollListener(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,7 +105,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.2
             @Override // java.lang.Runnable
             public void run() {
-                v.this.f.j();
+                v.this.ResourceIds.j();
             }
         }, j);
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.v.3
@@ -122,7 +122,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             this.i = list;
             if (list == null) {
                 this.g.setVisibility(0);
-                this.f.setEmptyView(this.g);
+                this.ResourceIds.setEmptyView(this.g);
                 return;
             } else {
                 this.h.notifyDataSetChanged();
@@ -135,7 +135,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             wVar.b(list.get(i).b());
             map.put(Integer.valueOf(wVar.a()), wVar.b());
         }
-        ListView listView = this.f.getListView();
+        ListView listView = this.ResourceIds.getListView();
         int childCount = listView.getChildCount();
         for (int i2 = 0; i2 < childCount; i2++) {
             a.b bVar = (a.b) listView.getChildAt(i2).getTag();
@@ -150,27 +150,27 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         this.m = true;
         if (this.f != null) {
             int top = 0;
-            int firstVisiblePosition = this.f.getListView().getFirstVisiblePosition();
+            int firstVisiblePosition = this.ResourceIds.getListView().getFirstVisiblePosition();
             if (i <= WallpaperPager.c + WallpaperPager.d) {
                 if (firstVisiblePosition == 0) {
-                    View childAt = this.f.getListView().getChildAt(1);
+                    View childAt = this.ResourceIds.getListView().getChildAt(1);
                     if (childAt != null) {
                         top = childAt.getTop();
                     }
                     if (top > WallpaperPager.c + WallpaperPager.d) {
-                        this.f.getListView().setSelectionFromTop(1, WallpaperPager.c + WallpaperPager.d);
+                        this.ResourceIds.getListView().setSelectionFromTop(1, WallpaperPager.c + WallpaperPager.d);
                         return;
                     }
                     return;
                 }
                 return;
             }
-            View childAt2 = this.f.getListView().getChildAt(1);
+            View childAt2 = this.ResourceIds.getListView().getChildAt(1);
             if (childAt2 != null) {
                 top = childAt2.getTop();
             }
             if (top != i || Build.VERSION.SDK_INT >= 19) {
-                this.f.getListView().setSelectionFromTop(1, i);
+                this.ResourceIds.getListView().setSelectionFromTop(1, i);
             }
         }
     }
@@ -183,7 +183,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
     @Override // com.tsf.extend.wallpaper.p
     public void setHeadViewHeight(int i) {
         if (this.f != null) {
-            this.f.getHeaderFrame().addView(new View(getContext()), new FrameLayout.LayoutParams(-1, i));
+            this.ResourceIds.getHeaderFrame().addView(new View(getContext()), new FrameLayout.LayoutParams(-1, i));
         }
     }
 
@@ -243,11 +243,11 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         public View getView(int i, View view, ViewGroup viewGroup) {
             if (view == null) {
                 b bVar = new b();
-                view = View.inflate(v.this.getContext(), f.C0052f.wallpaper_categories_item, null);
+                view = View.inflate(v.this.getContext(), ResourceIds.C0052f.wallpaper_categories_item, null);
                 v.this.j.add(bVar);
-                bVar.b = (WallpaperCategoryImageView) view.findViewById(f.e.category_img);
-                bVar.c = (TextView) view.findViewById(f.e.category);
-                bVar.d = (TextView) view.findViewById(f.e.category_praise);
+                bVar.b = (WallpaperCategoryImageView) view.findViewById(ResourceIds.e.category_img);
+                bVar.c = (TextView) view.findViewById(ResourceIds.e.category);
+                bVar.d = (TextView) view.findViewById(ResourceIds.e.category_praise);
                 view.setTag(bVar);
             }
             b bVar2 = (b) view.getTag();
@@ -255,7 +255,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             bVar2.a = item;
             bVar2.c.setText(z.h().a(v.this.getContext(), item.a()).toUpperCase());
             bVar2.d.setText(item.b() + " " + v.this.k);
-            bVar2.b.setBackgroundResource(f.b.personal_list_item_bg);
+            bVar2.b.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
             bVar2.b.setBitmap(null);
             if (!TextUtils.isEmpty(item.c())) {
                 z.h().a(item.c(), this.b);
@@ -310,9 +310,9 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == f.e.retry) {
+        if (view.getId() == ResourceIds.e.retry) {
             this.g.setVisibility(8);
-            this.f.k();
+            this.ResourceIds.k();
         }
     }
 
@@ -323,7 +323,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             this.p = jCurrentTimeMillis;
             a.b bVar = (a.b) view.getTag();
             if (bVar != null && bVar.a != null) {
-                WallpaperCategoryList wallpaperCategoryList = (WallpaperCategoryList) LayoutInflater.from(this.e).inflate(f.C0052f.wallpaper_category_list, (ViewGroup) null);
+                WallpaperCategoryList wallpaperCategoryList = (WallpaperCategoryList) LayoutInflater.from(this.e).inflate(ResourceIds.C0052f.wallpaper_category_list, (ViewGroup) null);
                 wallpaperCategoryList.a(this.e, bVar.a, this.o);
                 this.e.a(wallpaperCategoryList);
             }
@@ -364,8 +364,8 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             this.h.notifyDataSetChanged();
         }
         if (this.f != null) {
-            this.f.setOnScrollListener(null);
-            this.f.removeAllViews();
+            this.ResourceIds.setOnScrollListener(null);
+            this.ResourceIds.removeAllViews();
         }
         if (this.j != null) {
             for (a.b bVar : this.j) {

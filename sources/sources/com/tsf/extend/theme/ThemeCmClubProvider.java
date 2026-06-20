@@ -9,7 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.SparseArray;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,33 +33,33 @@ public class ThemeCmClubProvider extends ContentProvider {
     }
 
     static {
-        a.put("appmanager", new A(f.d.icon_app_manager, "com.ksmobile.launcher.customitem.AppManagerShortcutInfo", 2, "app_manager"));
-        a.put("allapps", new A(f.d.widget_all_apps, "com.ksmobile.launcher.customitem.AllAppsShortcutInfo", 2, "widget_all_apps"));
-        a.put("archive", new A(f.d.sort_apps, "com.ksmobile.launcher.customitem.SortAppsShortcutInfo", 2, "sort_apps"));
-        a.put("browser", new A(f.d.browser, "browser", 0, "browser"));
-        a.put("calculator", new A(f.d.calculator, "calculator", 0, "calculator"));
-        a.put("calendar", new A(f.d.calendar, "calendar", 0, "calendar"));
-        a.put("camera", new A(f.d.camera, "camera", 0, "camera"));
-        a.put("cmclub", new A(f.d.cm_club, "com.ksmobile.launcher.customitem.CMClubShortcutInfo", 2, "cm_club"));
-        a.put("clock", new A(f.d.clock, "clock", 0, "clock"));
-        a.put("contacts", new A(f.d.contact, "contact", 0, "contact"));
-        a.put("download", new A(f.d.download, "download", 0, "download"));
-        a.put("effect", new A(f.d.effect, "com.ksmobile.launcher.customitem.EffectManagementShortcutInfo", 2, "effect"));
-        a.put("filemanager", new A(f.d.filemanager, "filemanager", 0, "filemanager"));
-        a.put("flashlight", new A(f.d.flashlight, "flashlight", 0, "flashlight"));
-        a.put("flow", new A(f.d.icon_gprs, "com.ksmobile.launcher.customitem.NetManagerShortcutInfo", 2, "gprs"));
-        a.put("market", new A(f.d.market, "com.ksmobile.launcher.customitem.MarketShortcutInfo", 2, "market"));
-        a.put("music", new A(f.d.music, "music", 0, "music"));
-        a.put("mail", new A(f.d.email, "email", 0, "email"));
-        a.put("notification", new A(f.d.message_spirit, "com.ksmobile.launcher.customitem.MessageSpiritShortcutInfo", 2, "message_spirit"));
-        a.put("phone", new A(f.d.phone, "phone", 0, "phone"));
-        a.put("recorder", new A(f.d.record, "record", 0, "record"));
-        a.put("recently", new A(f.d.widget_recently, "com.ksmobile.launcher.customitem.RecentlyOpenedShortcutInfo", 2, "widget_recently"));
-        a.put("settings", new A(f.d.settings, "settings", 0, "settings"));
-        a.put("sms", new A(f.d.message, "message", 0, "message"));
-        a.put("themes", new A(f.d.theme, "com.ksmobile.launcher.customitem.ThemeShortcutInfo", 2, "theme"));
-        a.put("video", new A(f.d.video, "video", 0, "video"));
-        a.put("wallpaper", new A(f.d.wallpaper, "com.ksmobile.launcher.customitem.WallpaperShortcutInfo", 2, "wallpaper"));
+        a.put("appmanager", new A(ResourceIds.d.icon_app_manager, "com.ksmobile.launcher.customitem.AppManagerShortcutInfo", 2, "app_manager"));
+        a.put("allapps", new A(ResourceIds.d.widget_all_apps, "com.ksmobile.launcher.customitem.AllAppsShortcutInfo", 2, "widget_all_apps"));
+        a.put("archive", new A(ResourceIds.d.sort_apps, "com.ksmobile.launcher.customitem.SortAppsShortcutInfo", 2, "sort_apps"));
+        a.put("browser", new A(ResourceIds.d.browser, "browser", 0, "browser"));
+        a.put("calculator", new A(ResourceIds.d.calculator, "calculator", 0, "calculator"));
+        a.put("calendar", new A(ResourceIds.d.calendar, "calendar", 0, "calendar"));
+        a.put("camera", new A(ResourceIds.d.camera, "camera", 0, "camera"));
+        a.put("cmclub", new A(ResourceIds.d.cm_club, "com.ksmobile.launcher.customitem.CMClubShortcutInfo", 2, "cm_club"));
+        a.put("clock", new A(ResourceIds.d.clock, "clock", 0, "clock"));
+        a.put("contacts", new A(ResourceIds.d.contact, "contact", 0, "contact"));
+        a.put("download", new A(ResourceIds.d.download, "download", 0, "download"));
+        a.put("effect", new A(ResourceIds.d.effect, "com.ksmobile.launcher.customitem.EffectManagementShortcutInfo", 2, "effect"));
+        a.put("filemanager", new A(ResourceIds.d.filemanager, "filemanager", 0, "filemanager"));
+        a.put("flashlight", new A(ResourceIds.d.flashlight, "flashlight", 0, "flashlight"));
+        a.put("flow", new A(ResourceIds.d.icon_gprs, "com.ksmobile.launcher.customitem.NetManagerShortcutInfo", 2, "gprs"));
+        a.put("market", new A(ResourceIds.d.market, "com.ksmobile.launcher.customitem.MarketShortcutInfo", 2, "market"));
+        a.put("music", new A(ResourceIds.d.music, "music", 0, "music"));
+        a.put("mail", new A(ResourceIds.d.email, "email", 0, "email"));
+        a.put("notification", new A(ResourceIds.d.message_spirit, "com.ksmobile.launcher.customitem.MessageSpiritShortcutInfo", 2, "message_spirit"));
+        a.put("phone", new A(ResourceIds.d.phone, "phone", 0, "phone"));
+        a.put("recorder", new A(ResourceIds.d.record, "record", 0, "record"));
+        a.put("recently", new A(ResourceIds.d.widget_recently, "com.ksmobile.launcher.customitem.RecentlyOpenedShortcutInfo", 2, "widget_recently"));
+        a.put("settings", new A(ResourceIds.d.settings, "settings", 0, "settings"));
+        a.put("sms", new A(ResourceIds.d.message, "message", 0, "message"));
+        a.put("themes", new A(ResourceIds.d.theme, "com.ksmobile.launcher.customitem.ThemeShortcutInfo", 2, "theme"));
+        a.put("video", new A(ResourceIds.d.video, "video", 0, "video"));
+        a.put("wallpaper", new A(ResourceIds.d.wallpaper, "com.ksmobile.launcher.customitem.WallpaperShortcutInfo", 2, "wallpaper"));
     }
 
     @Override // android.content.ContentProvider
@@ -174,7 +174,7 @@ public class ThemeCmClubProvider extends ContentProvider {
         Context contextB;
         Bitmap bitmapDecodeResource;
         A aVarB = b(str);
-        if (aVarB == null || (contextB = com.tsf.extend.h.b()) == null || (bitmapDecodeResource = BitmapFactory.decodeResource(contextB.getResources(), aVarB.a)) == null) {
+        if (aVarB == null || (contextB = com.tsf.extend.AppContextHolder.b()) == null || (bitmapDecodeResource = BitmapFactory.decodeResource(contextB.getResources(), aVarB.a)) == null) {
             return null;
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();

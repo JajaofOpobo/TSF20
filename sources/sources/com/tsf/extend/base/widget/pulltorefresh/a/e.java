@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends d {
@@ -20,15 +20,15 @@ public class e extends d {
 
     public e(Context context, PullToRefreshBase.b bVar, PullToRefreshBase.h hVar, TypedArray typedArray) {
         super(context, bVar, hVar, typedArray);
-        this.j = typedArray.getBoolean(f.i.PullToRefresh_ptrRotateDrawableWhilePulling, true);
+        this.j = typedArray.getBoolean(ResourceIds.i.PullToRefresh_ptrRotateDrawableWhilePulling, true);
         this.b.setScaleType(ImageView.ScaleType.MATRIX);
         this.g = new Matrix();
         this.b.setImageMatrix(this.g);
         this.f = new RotateAnimation(0.0f, 720.0f, 1, 0.5f, 1, 0.5f);
-        this.f.setInterpolator(a);
-        this.f.setDuration(1200L);
-        this.f.setRepeatCount(-1);
-        this.f.setRepeatMode(1);
+        this.ResourceIds.setInterpolator(a);
+        this.ResourceIds.setDuration(1200L);
+        this.ResourceIds.setRepeatCount(-1);
+        this.ResourceIds.setRepeatMode(1);
     }
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
@@ -79,6 +79,6 @@ public class e extends d {
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
     protected int getDefaultDrawableResId() {
-        return f.d.search_loading_circle_big;
+        return ResourceIds.d.search_loading_circle_big;
     }
 }

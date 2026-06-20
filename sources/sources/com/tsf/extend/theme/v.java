@@ -60,12 +60,12 @@ public class v extends com.tsf.extend.base.d.a {
     private v() {
         this.c = null;
         this.d = null;
-        a(com.tsf.extend.h.b());
-        com.tsf.extend.base.i.a.a().a(com.tsf.extend.h.b());
+        a(com.tsf.extend.AppContextHolder.b());
+        com.tsf.extend.base.i.a.a().a(com.tsf.extend.AppContextHolder.b());
         com.tsf.extend.base.i.a.a().a("1");
         com.tsf.extend.base.i.a.a().a(new a.InterfaceC0050a() { // from class: com.tsf.extend.theme.v.1
         });
-        this.c = com.tsf.extend.base.j.d.b(com.tsf.extend.h.b());
+        this.c = com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b());
         this.c = this.c == null ? "null" : this.c;
         this.d = com.tsf.extend.base.j.d.b();
         this.d = TextUtils.isEmpty(this.d) ? "null" : this.d;
@@ -617,7 +617,7 @@ public class v extends com.tsf.extend.base.d.a {
     public static List<aq> i() {
         aq aqVarA;
         ArrayList arrayList = new ArrayList();
-        File[] fileArrC = com.tsf.extend.theme.diy.e.c(com.tsf.extend.h.b());
+        File[] fileArrC = com.tsf.extend.theme.diy.e.c(com.tsf.extend.AppContextHolder.b());
         if (fileArrC != null) {
             for (File file : fileArrC) {
                 if (file != null && file.isDirectory() && (aqVarA = com.tsf.extend.theme.diy.e.a(file.getAbsolutePath(), true)) != null) {
@@ -634,7 +634,7 @@ public class v extends com.tsf.extend.base.d.a {
             return null;
         }
         try {
-            Context contextCreatePackageContext = com.tsf.extend.h.b().createPackageContext(str, 3);
+            Context contextCreatePackageContext = com.tsf.extend.AppContextHolder.b().createPackageContext(str, 3);
             HashMap<String, Object> mapD = com.tsf.extend.base.j.d.d(contextCreatePackageContext);
             if (contextCreatePackageContext == null || (fVarA = ae.a(contextCreatePackageContext, mapD)) == null || TextUtils.isEmpty(fVarA.i())) {
                 fVarA = null;
@@ -663,7 +663,7 @@ public class v extends com.tsf.extend.base.d.a {
             return false;
         }
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             return applicationInfo != null && applicationInfo.metaData != null && applicationInfo.metaData.getBoolean("CMLAUNCHER_THEME_SUPPORT", false) && ah.c(applicationInfo.metaData.getString("CMLAUNCHER_THEME_VERSION"));
         } catch (PackageManager.NameNotFoundException e2) {
             return false;
@@ -672,7 +672,7 @@ public class v extends com.tsf.extend.base.d.a {
 
     public static String f(String str) {
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             if (applicationInfo == null || applicationInfo.metaData == null) {
                 return null;
             }
@@ -684,7 +684,7 @@ public class v extends com.tsf.extend.base.d.a {
 
     public static boolean g(String str) {
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             if (applicationInfo == null || applicationInfo.metaData == null) {
                 return false;
             }
@@ -696,7 +696,7 @@ public class v extends com.tsf.extend.base.d.a {
 
     public static boolean h(String str) {
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             return (applicationInfo == null || applicationInfo.metaData == null || !ah.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) ? false : true;
         } catch (PackageManager.NameNotFoundException e2) {
             return false;
@@ -705,7 +705,7 @@ public class v extends com.tsf.extend.base.d.a {
 
     public static String i(String str) {
         try {
-            ApplicationInfo applicationInfo = com.tsf.extend.h.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
+            ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
             if (applicationInfo == null || applicationInfo.metaData == null || !applicationInfo.metaData.getBoolean("CMLAUNCHER_WIDGETSKIN", false) || !ah.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) {
                 return null;
             }
@@ -722,7 +722,7 @@ public class v extends com.tsf.extend.base.d.a {
                 Context contextCreatePackageContext;
                 BitmapFactory.Options options;
                 try {
-                    contextCreatePackageContext = com.tsf.extend.h.b().createPackageContext(str, 3);
+                    contextCreatePackageContext = com.tsf.extend.AppContextHolder.b().createPackageContext(str, 3);
                 } catch (PackageManager.NameNotFoundException e2) {
                     e2.printStackTrace();
                     contextCreatePackageContext = null;

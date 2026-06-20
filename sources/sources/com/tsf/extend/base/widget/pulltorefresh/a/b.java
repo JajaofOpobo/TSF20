@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
@@ -22,9 +22,9 @@ public class b extends d {
         super(context, bVar, hVar, typedArray);
         int i = bVar == PullToRefreshBase.b.PULL_FROM_START ? -180 : 180;
         this.f = new RotateAnimation(0.0f, i, 1, 0.5f, 1, 0.5f);
-        this.f.setInterpolator(a);
-        this.f.setDuration(150L);
-        this.f.setFillAfter(true);
+        this.ResourceIds.setInterpolator(a);
+        this.ResourceIds.setDuration(150L);
+        this.ResourceIds.setFillAfter(true);
         this.g = new RotateAnimation(i, 0.0f, 1, 0.5f, 1, 0.5f);
         this.g.setInterpolator(a);
         this.g.setDuration(150L);
@@ -81,7 +81,7 @@ public class b extends d {
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
     protected int getDefaultDrawableResId() {
-        return f.d.kui_ptr_default_flip;
+        return ResourceIds.d.kui_ptr_default_flip;
     }
 
     private float getDrawableRotationAngle() {

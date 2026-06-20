@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperUploadIconView extends LinearLayout {
@@ -64,7 +64,7 @@ public class WallpaperUploadIconView extends LinearLayout {
         this.b = new Paint();
         this.b.setColor(-15360);
         this.b.setAntiAlias(true);
-        this.a = (ImageView) findViewById(f.e.upload_wallpaper);
+        this.a = (ImageView) findViewById(ResourceIds.e.upload_wallpaper);
     }
 
     public static int a(Context context, float f) {

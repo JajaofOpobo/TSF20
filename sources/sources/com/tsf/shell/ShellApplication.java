@@ -37,7 +37,7 @@ public class ShellApplication extends Application {
         a = this;
         com.tsf.shell.manager.bind.ShellBindContext.a(this);
         com.tsf.shell.manager.bind.ShellBindContext.a();
-        com.tsf.extend.h.a(this);
+        com.tsf.extend.AppContextHolder.a(this);
         String strB = b();
         if (com.tsf.shell.manager.b.ConfigManager.L()) {
             if (strB == null || strB.equals(getPackageName())) {
@@ -54,7 +54,7 @@ public class ShellApplication extends Application {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        com.tsf.extend.h.a(new com.ksmobile.a.a.a());
+        com.tsf.extend.AppContextHolder.a(new com.ksmobile.a.a.a());
         com.ksmobile.launcher.cmbase.utils.SelectionDotRenderer.a();
         com.ksmobile.launcher.a.a.a.a();
     }

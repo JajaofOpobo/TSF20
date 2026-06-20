@@ -35,9 +35,9 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.CustomActivity;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
-import com.tsf.extend.h;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
+import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
 import com.tsf.extend.theme.j;
 import com.tsf.extend.theme.k;
@@ -115,7 +115,7 @@ public class ThemeCmClubActivity extends CustomActivity {
                         ThemeCmClubActivity.this.z.a();
                     }
                     ThemeCmClubActivity.this.b(false);
-                    Toast.makeText(ThemeCmClubActivity.this.f, f.g.theme_changing_fail, 1).show();
+                    Toast.makeText(ThemeCmClubActivity.this.f, ResourceIds.g.theme_changing_fail, 1).show();
                     break;
             }
         }
@@ -139,35 +139,35 @@ public class ThemeCmClubActivity extends CustomActivity {
     };
 
     static {
-        k.put("app_manager", Integer.valueOf(f.d.icon_app_manager));
-        k.put("browser", Integer.valueOf(f.d.browser));
-        k.put("calculator", Integer.valueOf(f.d.calculator));
-        k.put("calendar", Integer.valueOf(f.d.calendar));
-        k.put("camera", Integer.valueOf(f.d.camera));
-        k.put("clean_master", Integer.valueOf(f.d.clean_master));
-        k.put("clock", Integer.valueOf(f.d.clock));
-        k.put("cm_browser", Integer.valueOf(f.d.cm_browser));
-        k.put("cm_club", Integer.valueOf(f.d.cm_club));
-        k.put("cm_locker", Integer.valueOf(f.d.cm_lock));
-        k.put("cm_security", Integer.valueOf(f.d.cm_security));
-        k.put("contact", Integer.valueOf(f.d.contact));
-        k.put("download", Integer.valueOf(f.d.download));
-        k.put("email", Integer.valueOf(f.d.email));
-        k.put("filemanager", Integer.valueOf(f.d.filemanager));
-        k.put("flashlight", Integer.valueOf(f.d.flashlight));
-        k.put("market", Integer.valueOf(f.d.market));
-        k.put("message", Integer.valueOf(f.d.message));
-        k.put("message_spirit", Integer.valueOf(f.d.message_spirit));
-        k.put("music", Integer.valueOf(f.d.music));
-        k.put("phone", Integer.valueOf(f.d.phone));
-        k.put("record", Integer.valueOf(f.d.record));
-        k.put("settings", Integer.valueOf(f.d.settings));
-        k.put("sort_apps", Integer.valueOf(f.d.sort_apps));
-        k.put("theme", Integer.valueOf(f.d.theme));
-        k.put("video", Integer.valueOf(f.d.video));
-        k.put("wallpaper", Integer.valueOf(f.d.wallpaper));
-        k.put("widget_all_apps", Integer.valueOf(f.d.widget_all_apps));
-        k.put("widget_recently", Integer.valueOf(f.d.widget_recently));
+        k.put("app_manager", Integer.valueOf(ResourceIds.d.icon_app_manager));
+        k.put("browser", Integer.valueOf(ResourceIds.d.browser));
+        k.put("calculator", Integer.valueOf(ResourceIds.d.calculator));
+        k.put("calendar", Integer.valueOf(ResourceIds.d.calendar));
+        k.put("camera", Integer.valueOf(ResourceIds.d.camera));
+        k.put("clean_master", Integer.valueOf(ResourceIds.d.clean_master));
+        k.put("clock", Integer.valueOf(ResourceIds.d.clock));
+        k.put("cm_browser", Integer.valueOf(ResourceIds.d.cm_browser));
+        k.put("cm_club", Integer.valueOf(ResourceIds.d.cm_club));
+        k.put("cm_locker", Integer.valueOf(ResourceIds.d.cm_lock));
+        k.put("cm_security", Integer.valueOf(ResourceIds.d.cm_security));
+        k.put("contact", Integer.valueOf(ResourceIds.d.contact));
+        k.put("download", Integer.valueOf(ResourceIds.d.download));
+        k.put("email", Integer.valueOf(ResourceIds.d.email));
+        k.put("filemanager", Integer.valueOf(ResourceIds.d.filemanager));
+        k.put("flashlight", Integer.valueOf(ResourceIds.d.flashlight));
+        k.put("market", Integer.valueOf(ResourceIds.d.market));
+        k.put("message", Integer.valueOf(ResourceIds.d.message));
+        k.put("message_spirit", Integer.valueOf(ResourceIds.d.message_spirit));
+        k.put("music", Integer.valueOf(ResourceIds.d.music));
+        k.put("phone", Integer.valueOf(ResourceIds.d.phone));
+        k.put("record", Integer.valueOf(ResourceIds.d.record));
+        k.put("settings", Integer.valueOf(ResourceIds.d.settings));
+        k.put("sort_apps", Integer.valueOf(ResourceIds.d.sort_apps));
+        k.put("theme", Integer.valueOf(ResourceIds.d.theme));
+        k.put("video", Integer.valueOf(ResourceIds.d.video));
+        k.put("wallpaper", Integer.valueOf(ResourceIds.d.wallpaper));
+        k.put("widget_all_apps", Integer.valueOf(ResourceIds.d.widget_all_apps));
+        k.put("widget_recently", Integer.valueOf(ResourceIds.d.widget_recently));
     }
 
     static class c {
@@ -197,12 +197,12 @@ public class ThemeCmClubActivity extends CustomActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         p.a((Activity) this);
-        setContentView(f.C0052f.theme_cmclub_activity);
+        setContentView(ResourceIds.C0052f.theme_cmclub_activity);
         getApplicationContext().bindService(new Intent("android.service.theme.ManagerService"), this.P, 1);
         this.f = this;
         this.r = false;
-        this.C = (ProgressBar) findViewById(f.e.progressbar);
-        this.g = (WebView) findViewById(f.e.webview);
+        this.C = (ProgressBar) findViewById(ResourceIds.e.progressbar);
+        this.g = (WebView) findViewById(ResourceIds.e.webview);
         this.g.getSettings().setDomStorageEnabled(true);
         this.g.setWebViewClient(new d());
         this.g.setWebChromeClient(new WebChromeClient() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.7
@@ -471,7 +471,7 @@ public class ThemeCmClubActivity extends CustomActivity {
                 }
             }.run();
         } catch (Exception e3) {
-            Toast.makeText(this.f, f.g.cm_club_download_stopped, 0).show();
+            Toast.makeText(this.f, ResourceIds.g.cm_club_download_stopped, 0).show();
         }
     }
 
@@ -654,7 +654,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     }
 
     private void j() {
-        new com.tsf.extend.theme.diy.e.a(this.f).a(f.g.cm_club_dialog_stop_downloading).b(f.g.cm_club_dialog_cancel, null).a(f.g.cm_club_dialog_confirm, new DialogInterface.OnClickListener() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.2
+        new com.tsf.extend.theme.diy.e.a(this.f).a(ResourceIds.g.cm_club_dialog_stop_downloading).b(ResourceIds.g.cm_club_dialog_cancel, null).a(ResourceIds.g.cm_club_dialog_confirm, new DialogInterface.OnClickListener() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.2
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (ThemeCmClubActivity.this.z != null) {

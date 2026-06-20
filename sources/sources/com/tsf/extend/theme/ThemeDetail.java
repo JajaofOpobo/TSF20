@@ -39,7 +39,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.theme.v;
@@ -51,7 +51,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickListener, View.OnClickListener, ViewTreeObserver.OnGlobalLayoutListener, PageActivity.a, com.tsf.extend.base.d.a.InterfaceC0048a<List<k>>, PersonalizationActivity.n, l.a {
-    public static final int[] b = {f.e.title, f.e.favorite_theme, f.e.diy_btn, f.e.loadmore_tips, f.e.theme_controll};
+    public static final int[] b = {ResourceIds.e.title, ResourceIds.e.favorite_theme, ResourceIds.e.diy_btn, ResourceIds.e.loadmore_tips, ResourceIds.e.theme_controll};
     private List<String> A;
     private List<Integer> B;
     private int C;
@@ -155,7 +155,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     default:
                         ThemeDetail.this.z();
                         if (ThemeDetail.this.m != null) {
-                            Toast.makeText(ThemeDetail.this.m, f.g.theme_changing_fail, 1).show();
+                            Toast.makeText(ThemeDetail.this.m, ResourceIds.g.theme_changing_fail, 1).show();
                         }
                         ThemeDetail.this.b("1");
                         break;
@@ -170,11 +170,11 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
 
     private void setThemeControllText(f fVar) {
         if (ao.b().f() && d(this.z.h())) {
-            this.j.setText(f.g.theme_detail_btn_apply);
-        } else if (fVar != null && (fVar == f.THEME_HASLOCAL || fVar == f.LOCAL_THEME)) {
-            this.j.setText(f.g.theme_detail_btn_apply);
+            this.j.setText(ResourceIds.g.theme_detail_btn_apply);
+        } else if (fVar != null && (fVar == ResourceIds.THEME_HASLOCAL || fVar == ResourceIds.LOCAL_THEME)) {
+            this.j.setText(ResourceIds.g.theme_detail_btn_apply);
         } else {
-            this.j.setText(f.g.detail_theme_download);
+            this.j.setText(ResourceIds.g.detail_theme_download);
         }
     }
 
@@ -224,7 +224,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void n() {
-        this.f.setBackgroundResource(f.d.lp_theme_download_cover);
+        this.ResourceIds.setBackgroundResource(ResourceIds.d.lp_theme_download_cover);
     }
 
     private void o() {
@@ -237,13 +237,13 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void p() {
-        this.k.setBackgroundResource(f.d.lp_theme_download_bg);
+        this.k.setBackgroundResource(ResourceIds.d.lp_theme_download_bg);
     }
 
     private void q() {
-        this.ad = findViewById(f.e.retry);
+        this.ad = findViewById(ResourceIds.e.retry);
         this.ad.setBackgroundColor(-1118482);
-        ((TextView) this.ad.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        ((TextView) this.ad.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.ad.setOnClickListener(this);
     }
 
@@ -278,19 +278,19 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void s() {
-        View viewInflate = LayoutInflater.from(getContext()).inflate(com.tsf.extend.theme.a.f.a(), (ViewGroup) null);
+        View viewInflate = LayoutInflater.from(getContext()).inflate(com.tsf.extend.theme.a.ResourceIds.a(), (ViewGroup) null);
         this.V = viewInflate;
-        this.e = viewInflate.findViewById(f.e.theme_detail);
-        this.g = viewInflate.findViewById(f.e.pager_container);
-        this.h = (ViewPager) viewInflate.findViewById(f.e.theme_preview_pager);
+        this.e = viewInflate.findViewById(ResourceIds.e.theme_detail);
+        this.g = viewInflate.findViewById(ResourceIds.e.pager_container);
+        this.h = (ViewPager) viewInflate.findViewById(ResourceIds.e.theme_preview_pager);
         ((ThemeDetailViewPager) this.h).setNestedParent((ViewGroup) this.g);
-        this.n = (TextView) viewInflate.findViewById(f.e.theme_name);
-        this.x = (TextView) viewInflate.findViewById(f.e.theme_size);
-        this.o = (LinearLayout) viewInflate.findViewById(f.e.diy_theme_promotion);
+        this.n = (TextView) viewInflate.findViewById(ResourceIds.e.theme_name);
+        this.x = (TextView) viewInflate.findViewById(ResourceIds.e.theme_size);
+        this.o = (LinearLayout) viewInflate.findViewById(ResourceIds.e.diy_theme_promotion);
         this.o.setVisibility(8);
-        this.i = (TextView) viewInflate.findViewById(f.e.theme_author);
-        this.l = (TextView) viewInflate.findViewById(f.e.load_relevance_tips);
-        this.W = viewInflate.findViewById(f.e.theme_head_divider);
+        this.i = (TextView) viewInflate.findViewById(ResourceIds.e.theme_author);
+        this.l = (TextView) viewInflate.findViewById(ResourceIds.e.load_relevance_tips);
+        this.W = viewInflate.findViewById(ResourceIds.e.theme_head_divider);
         t();
         this.r.getListView().addHeaderView(viewInflate);
     }
@@ -298,7 +298,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private void t() {
         this.h.setClipToPadding(false);
         this.h.setPageMargin(PersonalizationActivity.a(getContext(), 29.0f));
-        int dimensionPixelSize = (getResources().getDisplayMetrics().widthPixels - getResources().getDimensionPixelSize(f.c.theme_detail_pager_image_width)) / 2;
+        int dimensionPixelSize = (getResources().getDisplayMetrics().widthPixels - getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_pager_image_width)) / 2;
         this.h.setPadding(dimensionPixelSize, 0, dimensionPixelSize, 0);
         this.h.getViewTreeObserver().addOnGlobalLayoutListener(this);
     }
@@ -371,7 +371,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.t.setVisibility(8);
         this.u.setVisibility(0);
         this.u.setClickable(true);
-        this.u.setText(f.g.load_more_fail);
+        this.u.setText(ResourceIds.g.load_more_fail);
     }
 
     public void a(long j, String str, boolean z, String str2) {
@@ -387,8 +387,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
         this.I = str;
         a(kVar, true);
-        this.K = (FrameLayout) findViewById(f.e.theme_detail_progress_view);
-        this.L = (ProgressBar) findViewById(f.e.theme_detail_progress);
+        this.K = (FrameLayout) findViewById(ResourceIds.e.theme_detail_progress_view);
+        this.L = (ProgressBar) findViewById(ResourceIds.e.theme_detail_progress);
         this.L.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
         this.K.setVisibility(0);
         v.h().a(new e(), j, str, str2);
@@ -413,9 +413,9 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         public void a(JSONObject jSONObject, int i, k kVar) {
             a();
             ThemeDetail.this.m.onBackPressed();
-            int i2 = f.g.theme_detail_data_fail;
+            int i2 = ResourceIds.g.theme_detail_data_fail;
             if (ThemeDetail.this.N) {
-                i2 = f.g.theme_detail_data_fail_from_wallpaper;
+                i2 = ResourceIds.g.theme_detail_data_fail_from_wallpaper;
             }
             Toast.makeText(ThemeDetail.this.getContext(), i2, 1).show();
         }
@@ -455,14 +455,14 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 kVar = aqVarA;
             }
             if ((kVar instanceof com.tsf.extend.theme.f) || (kVar instanceof aq)) {
-                this.D = f.LOCAL_THEME;
+                this.D = ResourceIds.LOCAL_THEME;
                 k();
             } else {
                 v.h();
                 if (v.c(kVar.g()) != null) {
-                    this.D = f.THEME_HASLOCAL;
+                    this.D = ResourceIds.THEME_HASLOCAL;
                 } else {
-                    this.D = f.THEME_NETLOCAL;
+                    this.D = ResourceIds.THEME_NETLOCAL;
                 }
             }
             this.z = kVar;
@@ -480,7 +480,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                     this.d.setText(this.z.i());
                 }
             }
-            if (this.D == f.LOCAL_THEME) {
+            if (this.D == ResourceIds.LOCAL_THEME) {
                 this.l.setVisibility(8);
                 if (this.z instanceof com.tsf.extend.theme.f) {
                     this.B = ((com.tsf.extend.theme.f) this.z).b();
@@ -565,7 +565,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             com.tsf.extend.wallpaper.l.a().a(this);
             k kVarE = com.tsf.extend.wallpaper.l.a().e(this.z);
             if (kVarE != null) {
-                this.j.setText(getResources().getString(f.g.lp_theme_downloading));
+                this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
                 a(kVarE.G() / 100.0f);
             }
         }
@@ -622,17 +622,17 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     public void onClick(View view) {
         a(view);
         int id = view.getId();
-        if (id == f.e.title) {
+        if (id == ResourceIds.e.title) {
             this.m.onBackPressed();
             return;
         }
-        if (id == f.e.theme_controll) {
+        if (id == ResourceIds.e.theme_controll) {
             if (this.z != null) {
                 this.m.a(false);
                 if (this.K == null || this.K.getVisibility() != 0) {
                     long jH = this.z.h();
-                    if (this.D == f.THEME_HASLOCAL || this.D == f.LOCAL_THEME || ((ao.b().f() && d(jH)) || this.aj != null)) {
-                        if (com.tsf.extend.base.j.f.a(getContext(), "com.ksmobile.launcher")) {
+                    if (this.D == ResourceIds.THEME_HASLOCAL || this.D == ResourceIds.LOCAL_THEME || ((ao.b().f() && d(jH)) || this.aj != null)) {
+                        if (com.tsf.extend.base.j.ResourceIds.a(getContext(), "com.ksmobile.launcher")) {
                             Intent intent = new Intent();
                             intent.setComponent(new ComponentName("com.ksmobile.launcher", "com.ksmobile.launcher.Launcher"));
                             getContext().startActivity(intent);
@@ -646,12 +646,12 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                             this.j.setClickable(false);
                             return;
                         } else if (TextUtils.isEmpty(this.z.E())) {
-                            Toast.makeText(getContext(), getResources().getString(f.g.lp_theme_not_available), 0).show();
+                            Toast.makeText(getContext(), getResources().getString(ResourceIds.g.lp_theme_not_available), 0).show();
                         } else if (com.tsf.extend.wallpaper.l.a().a(this.z)) {
-                            this.j.setText(getResources().getString(f.g.lp_theme_downloading));
+                            this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
                             p();
                         } else {
-                            Toast.makeText(getContext(), getResources().getString(f.g.lp_theme_downloading_full), 0).show();
+                            Toast.makeText(getContext(), getResources().getString(ResourceIds.g.lp_theme_downloading_full), 0).show();
                         }
                     } else {
                         a("1");
@@ -666,7 +666,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             }
             return;
         }
-        if (id == f.e.favorite_theme) {
+        if (id == ResourceIds.e.favorite_theme) {
             boolean z = this.p.isSelected() ? false : true;
             this.p.setSelected(z);
             if (z) {
@@ -680,33 +680,33 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             c("16");
             return;
         }
-        if (id == f.e.loadmore_tips) {
+        if (id == ResourceIds.e.loadmore_tips) {
             this.t.setVisibility(0);
             this.u.setVisibility(8);
             v();
             return;
         }
-        if (id == f.e.diy_btn) {
+        if (id == ResourceIds.e.diy_btn) {
             ThemeDIYActivity.a(getContext(), "1001", 1);
             return;
         }
-        if (id == f.e.theme_item_download_layout_left) {
-            a(view.findViewById(f.e.theme_download_left), true);
+        if (id == ResourceIds.e.theme_item_download_layout_left) {
+            a(view.findViewById(ResourceIds.e.theme_download_left), true);
             return;
         }
-        if (id == f.e.theme_item_download_layout_right) {
-            a(view.findViewById(f.e.theme_download_right), true);
+        if (id == ResourceIds.e.theme_item_download_layout_right) {
+            a(view.findViewById(ResourceIds.e.theme_download_right), true);
             return;
         }
-        if (id == f.e.theme_item_download_layout_mid) {
-            a(view.findViewById(f.e.theme_download_mid), true);
+        if (id == ResourceIds.e.theme_item_download_layout_mid) {
+            a(view.findViewById(ResourceIds.e.theme_download_mid), true);
             return;
         }
-        if (id == f.e.theme_item_left || id == f.e.theme_item_right || id == f.e.theme_item_mid) {
+        if (id == ResourceIds.e.theme_item_left || id == ResourceIds.e.theme_item_right || id == ResourceIds.e.theme_item_mid) {
             a(view, false);
             return;
         }
-        if (id == f.e.retry) {
+        if (id == ResourceIds.e.retry) {
             if (l()) {
                 this.r.setVisibility(0);
                 this.ad.setVisibility(8);
@@ -724,7 +724,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     public void a(View view) {
         boolean z = true;
         int id = view.getId();
-        if (id != f.e.title && id != f.e.theme_controll && id != f.e.favorite_theme && id != f.e.loadmore_tips && id != f.e.diy_btn && id != f.e.theme_item_left && id != f.e.theme_item_right && id != f.e.theme_item_download_layout_left && id != f.e.theme_item_download_layout_right && !(view instanceof ImageView)) {
+        if (id != ResourceIds.e.title && id != ResourceIds.e.theme_controll && id != ResourceIds.e.favorite_theme && id != ResourceIds.e.loadmore_tips && id != ResourceIds.e.diy_btn && id != ResourceIds.e.theme_item_left && id != ResourceIds.e.theme_item_right && id != ResourceIds.e.theme_item_download_layout_left && id != ResourceIds.e.theme_item_download_layout_right && !(view instanceof ImageView)) {
             z = false;
         }
         if (z) {
@@ -739,9 +739,9 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             } else {
                 Object tag = view.getTag();
                 if (tag instanceof t.d) {
-                    if (view.getId() == f.e.theme_item_left) {
+                    if (view.getId() == ResourceIds.e.theme_item_left) {
                         kVar = ((t.d) tag).a;
-                    } else if (view.getId() == f.e.theme_item_mid) {
+                    } else if (view.getId() == ResourceIds.e.theme_item_mid) {
                         kVar = ((t.d) tag).o;
                     } else {
                         kVar = ((t.d) tag).h;
@@ -753,7 +753,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             if (kVar != null) {
                 this.m.a(false);
                 if (ao.b().g()) {
-                    ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                    ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                     themeDetail.setFromInlet(this.F);
                     themeDetail.setFromTab("detail");
                     themeDetail.setTheme(kVar);
@@ -816,8 +816,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void D() {
-        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_in);
-        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), f.a.wallpaper_favorite_anim_out);
+        Animation animationLoadAnimation = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_in);
+        final Animation animationLoadAnimation2 = AnimationUtils.loadAnimation(getContext(), ResourceIds.a.wallpaper_favorite_anim_out);
         animationLoadAnimation2.setAnimationListener(new Animation.AnimationListener() { // from class: com.tsf.extend.theme.ThemeDetail.9
             @Override // android.view.animation.Animation.AnimationListener
             public void onAnimationStart(Animation animation) {
@@ -861,7 +861,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             ab abVar = new ab(getContext());
             if (this.z instanceof aq) {
                 abVar.a(this.z.t(), i);
-            } else if (this.D == f.LOCAL_THEME) {
+            } else if (this.D == ResourceIds.LOCAL_THEME) {
                 abVar.a(this.z.g(), this.B, i);
             } else {
                 abVar.b(this.A, i);
@@ -894,7 +894,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
     }
 
-    class C extends com.tsf.extend.base.support.a {
+    class C extends com.tsf.extend.base.support.PagerAdapterCompat {
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
@@ -902,23 +902,23 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             this.b = ThemeDetail.this.new A();
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return ThemeDetail.this.C;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public Object a(ViewGroup viewGroup, final int i) {
             final ImageView imageView = new ImageView(viewGroup.getContext());
             if (ThemeDetail.this.C == 1) {
                 imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                imageView.setImageResource(f.b.personal_list_item_bg);
+                imageView.setImageResource(ResourceIds.b.personal_list_item_bg);
             } else {
                 imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-                imageView.setBackgroundResource(f.b.personal_list_item_bg);
+                imageView.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
             }
             ThemeDetail.this.a.add(imageView);
-            if (ThemeDetail.this.D != f.LOCAL_THEME) {
+            if (ThemeDetail.this.D != ResourceIds.LOCAL_THEME) {
                 if (ThemeDetail.this.A != null) {
                     String str = (String) ThemeDetail.this.A.get(i);
                     B bVar = new B();
@@ -957,13 +957,13 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             return imageView;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
             ThemeDetail.this.a.remove(obj);
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
@@ -1047,7 +1047,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             v.h().a(this);
             if (this.z != null && !TextUtils.isEmpty(str) && str.equals(this.z.g()) && aVar != null) {
                 if (aVar == PersonalizationActivity.n.a.ADD) {
-                    this.D = f.THEME_HASLOCAL;
+                    this.D = ResourceIds.THEME_HASLOCAL;
                     setThemeControllText(this.D);
                 } else {
                     this.m.onBackPressed();
@@ -1210,7 +1210,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             public void onGlobalLayout() {
                 ViewGroup.LayoutParams layoutParams = ThemeDetail.this.e.getLayoutParams();
-                int iC = ((com.tsf.extend.base.j.p.c() - ThemeDetail.this.getResources().getDimensionPixelSize(f.c.workspace_margin_top)) - ThemeDetail.this.getResources().getDimensionPixelSize(f.c.theme_detail_recommed_height)) + ThemeDetail.this.o.getHeight() + ThemeDetail.this.getResources().getDimensionPixelSize(f.c.theme_detail_theme_promotion_margin);
+                int iC = ((com.tsf.extend.base.j.p.c() - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.workspace_margin_top)) - ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_recommed_height)) + ThemeDetail.this.o.getHeight() + ThemeDetail.this.getResources().getDimensionPixelSize(ResourceIds.c.theme_detail_theme_promotion_margin);
                 if (layoutParams == null) {
                     layoutParams = new ViewGroup.LayoutParams(-1, iC);
                 } else {
@@ -1290,16 +1290,16 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     @Override // com.tsf.extend.wallpaper.l.a
     public void a(k kVar) {
         if (kVar.h() == this.z.h()) {
-            this.f.setVisibility(0);
-            this.j.setText(getResources().getString(f.g.lp_theme_downloading));
+            this.ResourceIds.setVisibility(0);
+            this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
         }
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
     public void a(k kVar, float f2) {
         if (kVar.h() == this.z.h()) {
-            this.f.setVisibility(0);
-            this.j.setText(getResources().getString(f.g.lp_theme_downloading));
+            this.ResourceIds.setVisibility(0);
+            this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
             a(f2 / 100.0f);
         }
     }
@@ -1307,8 +1307,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     @Override // com.tsf.extend.wallpaper.l.a
     public void a(k kVar, com.tsf.extend.theme.B bVar) {
         if (kVar.h() == this.z.h()) {
-            this.j.setText(f.g.theme_detail_btn_apply);
-            this.f.setVisibility(8);
+            this.j.setText(ResourceIds.g.theme_detail_btn_apply);
+            this.ResourceIds.setVisibility(8);
             this.aj = bVar;
             o();
         }
@@ -1317,7 +1317,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     @Override // com.tsf.extend.wallpaper.l.a
     public void b(k kVar) {
         if (kVar.h() == this.z.h()) {
-            this.j.setText(getResources().getString(f.g.lp_theme_downloading_fail));
+            this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading_fail));
             a(0.0f);
             o();
         }
@@ -1334,8 +1334,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     private void a(float f2) {
-        ViewGroup.LayoutParams layoutParams = this.f.getLayoutParams();
+        ViewGroup.LayoutParams layoutParams = this.ResourceIds.getLayoutParams();
         layoutParams.width = Math.round(this.j.getWidth() * f2);
-        this.f.setLayoutParams(layoutParams);
+        this.ResourceIds.setLayoutParams(layoutParams);
     }
 }

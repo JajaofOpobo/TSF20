@@ -9,7 +9,7 @@ import java.util.Map;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d {
     private static d a = new d();
-    private SQLiteOpenHelper b = a.a(com.tsf.extend.h.b());
+    private SQLiteOpenHelper b = a.a(com.tsf.extend.AppContextHolder.b());
 
     private d() {
         try {
@@ -52,13 +52,13 @@ public class d {
         }
     }
 
-    public int a(Map<String, com.tsf.extend.A> map) {
+    public int a(Map<String, com.tsf.extend.ConfigConstants> map) {
         SQLiteDatabase sQLiteDatabaseD;
         int i = 0;
         System.out.println("----------------------- SAVE LOCAL : " + map);
         if (map != null && (sQLiteDatabaseD = d()) != null) {
             try {
-                for (com.tsf.extend.A aVar : map.values()) {
+                for (com.tsf.extend.ConfigConstants aVar : map.values()) {
                     ContentValues contentValuesB = aVar.b();
                     if (sQLiteDatabaseD.update("app_category", contentValuesB, "pkg_name=?", new String[]{aVar.c()}) > 0) {
                         i++;
@@ -81,7 +81,7 @@ public class d {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public java.util.Map<java.lang.String, com.tsf.extend.A> b() throws java.lang.Throwable {
+    public java.util.Map<java.lang.String, com.tsf.extend.ConfigConstants> b() throws java.lang.Throwable {
         /*
             r10 = this;
             r9 = 0
@@ -113,9 +113,9 @@ public class d {
             boolean r0 = r1.moveToFirst()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             if (r0 == 0) goto L44
         L2e:
-            com.tsf.extend.A r0 = new com.tsf.extend.A     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
+            com.tsf.extend.ConfigConstants r0 = new com.tsf.extend.ConfigConstants     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             r0.<init>()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
-            com.tsf.extend.A r0 = r0.a(r1)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
+            com.tsf.extend.ConfigConstants r0 = r0.a(r1)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             java.lang.String r2 = r0.c()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             r8.put(r2, r0)     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60
             boolean r0 = r1.moveToNext()     // Catch: java.lang.Throwable -> L5e java.lang.Exception -> L60

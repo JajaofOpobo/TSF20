@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperCategoryList extends LinearLayout implements PageActivity.a {
@@ -26,8 +26,8 @@ public class WallpaperCategoryList extends LinearLayout implements PageActivity.
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.c = (TextView) findViewById(f.e.title);
-        this.d = (FrameLayout) findViewById(f.e.container);
+        this.c = (TextView) findViewById(ResourceIds.e.title);
+        this.d = (FrameLayout) findViewById(ResourceIds.e.container);
         this.c.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperCategoryList.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {

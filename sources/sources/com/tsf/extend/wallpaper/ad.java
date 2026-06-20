@@ -17,7 +17,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.t;
 import java.util.ArrayList;
@@ -94,19 +94,19 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         this.d = Lists.newArrayList();
         this.e = Lists.newArrayList();
         if (z) {
-            this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list_noheader, (ViewGroup) null);
+            this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list_noheader, (ViewGroup) null);
         } else {
-            this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list, (ViewGroup) null);
+            this.a = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list, (ViewGroup) null);
         }
         this.a.setHeaderResizeEnabled(true);
         addView(this.a, k);
-        this.c = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.c.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
+        this.c = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.c.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
         this.c.setOnClickListener(this);
-        this.r = LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_loadmore, (ViewGroup) null);
-        this.t = (ProgressBar) this.r.findViewById(f.e.loadmore_progress);
+        this.r = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
+        this.t = (ProgressBar) this.r.findViewById(ResourceIds.e.loadmore_progress);
         this.t.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
-        this.s = (TextView) this.r.findViewById(f.e.loadmore_tips);
+        this.s = (TextView) this.r.findViewById(ResourceIds.e.loadmore_tips);
         this.s.setOnClickListener(this);
         this.a.setLoadMoreView(this.r);
         this.a.setCanLoadMore(true);
@@ -164,7 +164,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         this.t.setVisibility(8);
         this.s.setVisibility(0);
         this.s.setClickable(false);
-        this.s.setText(f.g.load_more_no);
+        this.s.setText(ResourceIds.g.load_more_no);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -172,7 +172,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         this.t.setVisibility(8);
         this.s.setVisibility(0);
         this.s.setClickable(true);
-        this.s.setText(f.g.load_more_fail);
+        this.s.setText(ResourceIds.g.load_more_fail);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -195,13 +195,13 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     public void onClick(View view) {
         m mVar;
         int id = view.getId();
-        if (id == f.e.retry) {
+        if (id == ResourceIds.e.retry) {
             this.c.setVisibility(8);
             this.a.setMode(PullToRefreshBase.b.PULL_FROM_START);
             this.a.k();
             return;
         }
-        if (id == f.e.loadmore_tips) {
+        if (id == ResourceIds.e.loadmore_tips) {
             this.t.setVisibility(0);
             this.s.setVisibility(8);
             f();
@@ -228,7 +228,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void b(View view) {
-        WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(f.C0052f.wallpaper_detail, (ViewGroup) null);
+        WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail, (ViewGroup) null);
         wallpaperDetail.setType(this.g);
         if (view.getTag() instanceof s) {
             m mVar = (m) view.getTag();
@@ -237,7 +237,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             if (this.g != ai.HotType) {
                 aj.a(arrayListNewArrayList);
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.a(mVar.h() + "");
             }
@@ -251,7 +251,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         if (view.getTag() != null && (view.getTag() instanceof m)) {
             m mVar = (m) view.getTag();
             if (mVar.n()) {
-                com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+                com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
                 if (dVarA != null) {
                     dVarA.a(mVar.h() + "");
                 }

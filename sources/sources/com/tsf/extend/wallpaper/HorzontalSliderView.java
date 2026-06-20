@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class HorzontalSliderView extends LinearLayout {
@@ -35,7 +35,7 @@ public class HorzontalSliderView extends LinearLayout {
         this.e = -1;
         this.f = -1;
         getContext().getResources();
-        this.a = getResources().getDrawable(f.d.wallpaper_slider_fg);
+        this.a = getResources().getDrawable(ResourceIds.d.wallpaper_slider_fg);
         Log.e("szaxqsqss", "width:" + this.a.getIntrinsicWidth() + ",height:" + this.a.getIntrinsicHeight());
         this.a.setBounds(0, 0, 165, 180);
         if (this.a == null) {

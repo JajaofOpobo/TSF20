@@ -15,7 +15,7 @@ import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeDetail;
 import com.tsf.extend.theme.ao;
 import com.tsf.extend.theme.aq;
@@ -59,7 +59,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     }
 
     private void a() {
-        this.b = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_search_list, (ViewGroup) null);
+        this.b = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_search_list, (ViewGroup) null);
         addView(this.b, new FrameLayout.LayoutParams(-1, -1));
         this.b.setMode(PullToRefreshBase.b.DISABLED);
         this.b.setHeaderResizeEnabled(false);
@@ -79,11 +79,11 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
                 }
             }
         });
-        this.i = LayoutInflater.from(getContext()).inflate(f.C0052f.theme_detail_loadmore, (ViewGroup) null);
-        this.f = (ProgressBar) this.i.findViewById(f.e.loadmore_progress);
-        this.f.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
-        this.g = (TextView) this.i.findViewById(f.e.loadmore_tips);
-        this.h = this.i.findViewById(f.e.nomore_group);
+        this.i = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail_loadmore, (ViewGroup) null);
+        this.f = (ProgressBar) this.i.findViewById(ResourceIds.e.loadmore_progress);
+        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.g = (TextView) this.i.findViewById(ResourceIds.e.loadmore_tips);
+        this.h = this.i.findViewById(ResourceIds.e.nomore_group);
         this.b.setLoadMoreView(this.i);
         this.c = new b(getContext(), this.d, this);
         this.b.setAdapter(this.c);
@@ -95,7 +95,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
 
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
-        this.f.setVisibility(8);
+        this.ResourceIds.setVisibility(8);
         this.g.setVisibility(8);
         this.g.setClickable(false);
         this.i.setVisibility(0);
@@ -104,17 +104,17 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     }
 
     private void c() {
-        this.f.setVisibility(0);
+        this.ResourceIds.setVisibility(0);
         this.g.setVisibility(8);
         this.g.setClickable(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
-        this.f.setVisibility(8);
+        this.ResourceIds.setVisibility(8);
         this.g.setVisibility(0);
         this.g.setClickable(true);
-        this.g.setText(f.g.load_more_fail);
+        this.g.setText(ResourceIds.g.load_more_fail);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -128,17 +128,17 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.theme_item_download_layout_left) {
-            a(view.findViewById(f.e.theme_download_left), true);
+        if (id == ResourceIds.e.theme_item_download_layout_left) {
+            a(view.findViewById(ResourceIds.e.theme_download_left), true);
             return;
         }
-        if (id == f.e.theme_item_download_layout_right) {
-            a(view.findViewById(f.e.theme_download_right), true);
+        if (id == ResourceIds.e.theme_item_download_layout_right) {
+            a(view.findViewById(ResourceIds.e.theme_download_right), true);
             return;
         }
-        if (id == f.e.theme_item_download_layout_mid) {
-            a(view.findViewById(f.e.theme_download_mid), true);
-        } else if (id == f.e.theme_item_left || id == f.e.theme_item_right || id == f.e.theme_item_mid) {
+        if (id == ResourceIds.e.theme_item_download_layout_mid) {
+            a(view.findViewById(ResourceIds.e.theme_download_mid), true);
+        } else if (id == ResourceIds.e.theme_item_left || id == ResourceIds.e.theme_item_right || id == ResourceIds.e.theme_item_mid) {
             a(view, false);
         }
     }
@@ -152,9 +152,9 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
             } else {
                 Object tag = view.getTag();
                 if (tag instanceof t.d) {
-                    if (view.getId() == f.e.theme_item_left) {
+                    if (view.getId() == ResourceIds.e.theme_item_left) {
                         kVar = ((t.d) tag).a;
-                    } else if (view.getId() == f.e.theme_item_mid) {
+                    } else if (view.getId() == ResourceIds.e.theme_item_mid) {
                         kVar = ((t.d) tag).o;
                     } else {
                         kVar = ((t.d) tag).h;
@@ -165,7 +165,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
             }
             if (kVar != null) {
                 if (ao.b().g()) {
-                    ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this.a).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                    ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(this.a).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                     themeDetail.setFromInlet(this.m);
                     themeDetail.setFromTab("detail");
                     themeDetail.setTheme(kVar);

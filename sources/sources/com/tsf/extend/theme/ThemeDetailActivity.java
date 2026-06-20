@@ -14,7 +14,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.io.File;
 import java.util.Iterator;
 import java.util.List;
@@ -82,7 +82,7 @@ public class ThemeDetailActivity extends PageActivity {
         super.onCreate(bundle);
         com.tsf.extend.base.j.p.a((Activity) this);
         getApplicationContext().bindService(new Intent("android.service.theme.ManagerService"), this.i, 1);
-        this.e = (DIYThemeDetail) LayoutInflater.from(this).inflate(f.C0052f.diy_theme_detail, (ViewGroup) null);
+        this.e = (DIYThemeDetail) LayoutInflater.from(this).inflate(ResourceIds.C0052f.diy_theme_detail, (ViewGroup) null);
         this.e.setIsDIYCMT(true);
         a(this.e);
         this.e.setIsAutoApply(true);
@@ -156,7 +156,7 @@ public class ThemeDetailActivity extends PageActivity {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(k kVar) {
         if (kVar != null) {
-            kVar.d(getResources().getString(f.g.shared_theme));
+            kVar.d(getResources().getString(ResourceIds.g.shared_theme));
             this.e.setTheme(kVar);
             this.e.h();
         }

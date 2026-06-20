@@ -5,7 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RotateTextView extends TextView {
@@ -23,8 +23,8 @@ public class RotateTextView extends TextView {
         super(context, attributeSet, i);
         this.a = 0.0f;
         setGravity(17);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.i.RotateTextView);
-        this.a = typedArrayObtainStyledAttributes.getDimension(f.i.RotateTextView_rotate_degree, 0.0f);
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ResourceIds.i.RotateTextView);
+        this.a = typedArrayObtainStyledAttributes.getDimension(ResourceIds.i.RotateTextView_rotate_degree, 0.0f);
         typedArrayObtainStyledAttributes.recycle();
     }
 

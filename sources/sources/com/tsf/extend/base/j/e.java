@@ -15,7 +15,7 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.text.TextUtils;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -556,7 +556,7 @@ public class e {
 
     public static Bitmap a(Context context) {
         try {
-            Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(context.getResources(), f.d.wallpaper_favorite_btn);
+            Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(context.getResources(), ResourceIds.d.wallpaper_favorite_btn);
             Paint paint = new Paint();
             paint.setColorFilter(new PorterDuffColorFilter(-4868683, PorterDuff.Mode.SRC_IN));
             Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmapDecodeResource.getWidth(), bitmapDecodeResource.getHeight(), Bitmap.Config.ARGB_8888);

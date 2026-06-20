@@ -14,7 +14,7 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.widget.RemoteViews;
 import com.android.volley.n;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemePushService extends IntentService {
@@ -30,7 +30,7 @@ public class ThemePushService extends IntentService {
         if (TextUtils.isEmpty(stringExtra)) {
             a((Bitmap) null, intent);
         } else {
-            com.tsf.extend.base.f.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.1
+            com.tsf.extend.base.ResourceIds.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.1
                 @Override // com.android.volley.n.b
                 public void a(Bitmap bitmap) {
                     ThemePushService.this.a(bitmap, intent);
@@ -55,7 +55,7 @@ public class ThemePushService extends IntentService {
         if (iIntValue == 1) {
             String stringExtra = intent.getStringExtra("expand_noti_bg_url");
             if (!TextUtils.isEmpty(stringExtra)) {
-                com.tsf.extend.base.f.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.3
+                com.tsf.extend.base.ResourceIds.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.3
                     @Override // com.android.volley.n.b
                     public void a(Bitmap bitmap2) {
                         ThemePushService.this.a(intent, bitmap, bitmap2, null, iIntValue);
@@ -79,7 +79,7 @@ public class ThemePushService extends IntentService {
     public void a(final Bitmap bitmap, final Intent intent, final int i) {
         String stringExtra = intent.getStringExtra("icon_big_url");
         if (i == 5 && !TextUtils.isEmpty(stringExtra)) {
-            com.tsf.extend.base.f.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.5
+            com.tsf.extend.base.ResourceIds.c.a(getApplicationContext()).a((com.android.volley.l) new com.android.volley.toolbox.i(stringExtra, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.ThemePushService.5
                 @Override // com.android.volley.n.b
                 public void a(Bitmap bitmap2) {
                     ThemePushService.this.a(intent, bitmap, null, bitmap2, i);
@@ -157,7 +157,7 @@ public class ThemePushService extends IntentService {
             }
             gVar.setAutoCancel(true);
             gVar.setTicker(stringExtra);
-            gVar.setSmallIcon(f.d.logo);
+            gVar.setSmallIcon(ResourceIds.d.logo);
             if (Build.VERSION.SDK_INT >= 26) {
                 NotificationChannel notificationChannel = new NotificationChannel("1", "notification", 2);
                 if (gVar != null) {
@@ -193,24 +193,24 @@ public class ThemePushService extends IntentService {
                     Intent intent4 = new Intent("android.intent.action.VIEW");
                     intent4.setPackage(applicationContext.getPackageName());
                     intent4.setData(uri);
-                    gVar.addAction(0, applicationContext.getResources().getString(f.g.push_theme_install), PendingIntent.getActivity(applicationContext, iA2, intent4, 134217728));
+                    gVar.addAction(0, applicationContext.getResources().getString(ResourceIds.g.push_theme_install), PendingIntent.getActivity(applicationContext, iA2, intent4, 134217728));
                 }
                 notificationBuild = gVar.build();
             } else {
                 Notification notificationBuild2 = gVar.build();
                 if (i == 5 && bitmap3 != null) {
-                    remoteViewsA = new RemoteViews(applicationContext.getPackageName(), f.C0052f.theme_notifition_image);
+                    remoteViewsA = new RemoteViews(applicationContext.getPackageName(), ResourceIds.C0052f.theme_notifition_image);
                 } else {
                     remoteViewsA = a(applicationContext, i);
                 }
-                remoteViewsA.setTextViewText(f.e.theme_notify_title, stringExtra);
-                if (remoteViewsA.getLayoutId() == f.C0052f.theme_notifition) {
-                    remoteViewsA.setTextViewText(f.e.theme_notify_text, stringExtra2);
+                remoteViewsA.setTextViewText(ResourceIds.e.theme_notify_title, stringExtra);
+                if (remoteViewsA.getLayoutId() == ResourceIds.C0052f.theme_notifition) {
+                    remoteViewsA.setTextViewText(ResourceIds.e.theme_notify_text, stringExtra2);
                 }
                 if (i == 5 && bitmap3 != null) {
-                    remoteViewsA.setImageViewBitmap(f.e.theme_notify_type_icon, bitmap3);
+                    remoteViewsA.setImageViewBitmap(ResourceIds.e.theme_notify_type_icon, bitmap3);
                 } else {
-                    remoteViewsA.setImageViewBitmap(f.e.theme_notify_type_icon, bitmap);
+                    remoteViewsA.setImageViewBitmap(ResourceIds.e.theme_notify_type_icon, bitmap);
                 }
                 notificationBuild2.contentView = remoteViewsA;
                 notificationBuild = notificationBuild2;
@@ -223,16 +223,16 @@ public class ThemePushService extends IntentService {
     private RemoteViews a(Context context, int i) {
         RemoteViews remoteViews = null;
         if (i == 0) {
-            remoteViews = new RemoteViews(context.getPackageName(), f.C0052f.theme_notifition);
+            remoteViews = new RemoteViews(context.getPackageName(), ResourceIds.C0052f.theme_notifition);
         } else if (i == 2) {
-            remoteViews = new RemoteViews(context.getPackageName(), f.C0052f.theme_notifition_normal);
+            remoteViews = new RemoteViews(context.getPackageName(), ResourceIds.C0052f.theme_notifition_normal);
         } else if (i == 3) {
-            remoteViews = new RemoteViews(context.getPackageName(), f.C0052f.theme_notifition_big_icon);
+            remoteViews = new RemoteViews(context.getPackageName(), ResourceIds.C0052f.theme_notifition_big_icon);
         } else if (i == 4) {
-            remoteViews = new RemoteViews(context.getPackageName(), f.C0052f.theme_notifition_bg);
+            remoteViews = new RemoteViews(context.getPackageName(), ResourceIds.C0052f.theme_notifition_bg);
         }
         if (remoteViews == null) {
-            return new RemoteViews(context.getPackageName(), f.C0052f.theme_notifition);
+            return new RemoteViews(context.getPackageName(), ResourceIds.C0052f.theme_notifition);
         }
         return remoteViews;
     }

@@ -3,7 +3,7 @@ package com.tsf.extend.theme.c;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import java.util.List;
 
@@ -15,14 +15,14 @@ public class b extends t {
 
     @Override // com.tsf.extend.theme.t
     protected int c() {
-        return f.C0052f.theme_all_item_with_name;
+        return ResourceIds.C0052f.theme_all_item_with_name;
     }
 
     @Override // com.tsf.extend.theme.t
     protected void a(t.d dVar, View view) {
-        dVar.g = (TextView) view.findViewById(f.e.theme_name_left);
-        dVar.u = (TextView) view.findViewById(f.e.theme_name_mid);
-        dVar.n = (TextView) view.findViewById(f.e.theme_name_right);
+        dVar.g = (TextView) view.findViewById(ResourceIds.e.theme_name_left);
+        dVar.u = (TextView) view.findViewById(ResourceIds.e.theme_name_mid);
+        dVar.n = (TextView) view.findViewById(ResourceIds.e.theme_name_right);
     }
 
     @Override // com.tsf.extend.theme.t

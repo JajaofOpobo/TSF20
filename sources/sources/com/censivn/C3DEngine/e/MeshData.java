@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.e;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.Uv;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.e.AbstractModelParser;
 import java.util.ArrayList;
 import java.util.HashMap;

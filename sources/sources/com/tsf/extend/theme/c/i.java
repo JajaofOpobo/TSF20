@@ -9,7 +9,7 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +41,7 @@ public class i extends LinearLayout implements View.OnClickListener {
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == f.e.theme_search_tag_refresh) {
+        if (view.getId() == ResourceIds.e.theme_search_tag_refresh) {
             e();
         } else {
             a(view);
@@ -112,7 +112,7 @@ public class i extends LinearLayout implements View.OnClickListener {
     private void a(View view) {
         String string = ((TextView) view).getText().toString();
         if (this.f != null) {
-            this.f.a(string);
+            this.ResourceIds.a(string);
         }
     }
 
@@ -120,15 +120,15 @@ public class i extends LinearLayout implements View.OnClickListener {
         setOrientation(1);
         Context context = getContext();
         this.c = new TextView(context);
-        this.c.setText(f.g.theme_search_no_search_result);
+        this.c.setText(ResourceIds.g.theme_search_no_search_result);
         this.c.setTextSize(14.0f);
         this.c.setTextColor(2134061875);
         int iA = com.tsf.extend.base.j.i.a(16.0f);
         this.c.setPadding(iA, 0, iA, 0);
         addView(this.c);
         setBottomMargin(this.c);
-        View viewInflate = LayoutInflater.from(context).inflate(f.C0052f.theme_search_tag_refresh_view, (ViewGroup) null);
-        this.h = viewInflate.findViewById(f.e.theme_search_tag_refresh);
+        View viewInflate = LayoutInflater.from(context).inflate(ResourceIds.C0052f.theme_search_tag_refresh_view, (ViewGroup) null);
+        this.h = viewInflate.findViewById(ResourceIds.e.theme_search_tag_refresh);
         this.h.setOnClickListener(this);
         addView(viewInflate);
         setBottomMargin(viewInflate);

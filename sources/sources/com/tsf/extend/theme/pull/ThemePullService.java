@@ -17,10 +17,10 @@ import com.android.volley.l;
 import com.android.volley.n;
 import com.android.volley.s;
 import com.android.volley.toolbox.j;
-import com.tsf.extend.base.f.c;
+import com.tsf.extend.base.ResourceIds.c;
 
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.g;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,7 +66,7 @@ public class ThemePullService extends IntentService {
     }
 
     private void c(String str) {
-        if (com.tsf.extend.b.a.booleanValue()) {
+        if (com.tsf.extend.BuildFlags.a.booleanValue()) {
             Log.v("TSF", str);
         }
     }
@@ -120,7 +120,7 @@ public class ThemePullService extends IntentService {
     }
 
     private boolean e(String str) {
-        return com.tsf.extend.base.j.f.a(getApplicationContext(), str);
+        return com.tsf.extend.base.j.ResourceIds.a(getApplicationContext(), str);
     }
 
     private boolean f(String str) {
@@ -213,7 +213,7 @@ public class ThemePullService extends IntentService {
             gVar.setDeleteIntent(PendingIntent.getBroadcast(applicationContext, a(), intent2, 134217728));
             gVar.setAutoCancel(true);
             gVar.setTicker(this.d.f);
-            gVar.setSmallIcon(f.d.logo);
+            gVar.setSmallIcon(ResourceIds.d.logo);
             NotificationManager notificationManager = (NotificationManager) applicationContext.getSystemService("notification");
             if (Build.VERSION.SDK_INT >= 26) {
                 NotificationChannel notificationChannel = new NotificationChannel("1", "notification", 2);
@@ -236,10 +236,10 @@ public class ThemePullService extends IntentService {
                 notificationBuild = gVar.build();
             } else {
                 notificationBuild = gVar.build();
-                RemoteViews remoteViews = new RemoteViews(applicationContext.getPackageName(), f.C0052f.theme_notifition_normal);
-                remoteViews.setTextViewText(f.e.theme_notify_title, this.d.f);
-                remoteViews.setTextViewText(f.e.theme_notify_text, this.d.g);
-                remoteViews.setImageViewBitmap(f.e.theme_notify_type_icon, bitmap);
+                RemoteViews remoteViews = new RemoteViews(applicationContext.getPackageName(), ResourceIds.C0052f.theme_notifition_normal);
+                remoteViews.setTextViewText(ResourceIds.e.theme_notify_title, this.d.f);
+                remoteViews.setTextViewText(ResourceIds.e.theme_notify_text, this.d.g);
+                remoteViews.setImageViewBitmap(ResourceIds.e.theme_notify_type_icon, bitmap);
                 notificationBuild.contentView = remoteViews;
             }
             notificationBuild.defaults |= -1;
@@ -270,8 +270,8 @@ public class ThemePullService extends IntentService {
     }
 
     public static class b {
-        private static int[] k = {f.g.push_theme_default_title, f.g.push_theme_default_title_1, f.g.push_theme_default_title_2, f.g.push_theme_default_title_3, f.g.push_theme_default_title_4};
-        private static int[] l = {f.g.push_theme_default_subtitle, f.g.push_theme_default_subtitle_1, f.g.push_theme_default_subtitle_2, f.g.push_theme_default_subtitle_3, f.g.push_theme_default_subtitle_4};
+        private static int[] k = {ResourceIds.g.push_theme_default_title, ResourceIds.g.push_theme_default_title_1, ResourceIds.g.push_theme_default_title_2, ResourceIds.g.push_theme_default_title_3, ResourceIds.g.push_theme_default_title_4};
+        private static int[] l = {ResourceIds.g.push_theme_default_subtitle, ResourceIds.g.push_theme_default_subtitle_1, ResourceIds.g.push_theme_default_subtitle_2, ResourceIds.g.push_theme_default_subtitle_3, ResourceIds.g.push_theme_default_subtitle_4};
         public int a;
         public int b;
         public String c;

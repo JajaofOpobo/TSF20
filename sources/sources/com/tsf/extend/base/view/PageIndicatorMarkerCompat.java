@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageIndicatorMarkerCompat extends FrameLayout {
@@ -24,8 +24,8 @@ public class PageIndicatorMarkerCompat extends FrameLayout {
 
     @Override // android.view.View
     protected void onFinishInflate() {
-        this.a = (ImageView) findViewById(f.e.active);
-        this.b = (ImageView) findViewById(f.e.inactive);
+        this.a = (ImageView) findViewById(ResourceIds.e.active);
+        this.b = (ImageView) findViewById(ResourceIds.e.inactive);
     }
 
     void a(int i, int i2) {

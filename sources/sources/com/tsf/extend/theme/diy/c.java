@@ -14,7 +14,7 @@ import com.google.android.collect.Lists;
 import com.google.android.collect.Maps;
 import com.tsf.extend.base.j.k;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.h;
+import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.aq;
 import com.tsf.extend.theme.diy.b;
 import com.tsf.extend.wallpaper.PersonalizationActivity;

@@ -20,7 +20,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.c.i;
 import com.tsf.extend.theme.v;
 import java.util.List;
@@ -101,7 +101,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
 
     private void h() {
         this.g = (InputMethodManager) getContext().getSystemService("input_method");
-        setPadding(0, getContext().getResources().getDimensionPixelSize(f.c.workspace_margin_top), 0, p.c(getContext()));
+        setPadding(0, getContext().getResources().getDimensionPixelSize(ResourceIds.c.workspace_margin_top), 0, p.c(getContext()));
         this.c = new FrameLayout(getContext());
         this.c.setBackgroundColor(Color.parseColor("#EEEEEE"));
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
@@ -114,8 +114,8 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
     }
 
     private View getSearchProgressView() {
-        View viewInflate = LayoutInflater.from(getContext()).inflate(f.C0052f.theme_search_progress, (ViewGroup) null);
-        ProgressBar progressBar = (ProgressBar) viewInflate.findViewById(f.e.theme_search_progress);
+        View viewInflate = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_search_progress, (ViewGroup) null);
+        ProgressBar progressBar = (ProgressBar) viewInflate.findViewById(ResourceIds.e.theme_search_progress);
         com.tsf.extend.base.widget.pulltorefresh.d dVar = new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 2);
         dVar.a(new int[]{12040119, 12040119, -4737097});
         progressBar.setIndeterminateDrawable(dVar);
@@ -132,28 +132,28 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.theme_search_btn) {
+        if (id == ResourceIds.e.theme_search_btn) {
             v();
-        } else if (id == f.e.theme_search_delete) {
+        } else if (id == ResourceIds.e.theme_search_delete) {
             u();
         }
     }
 
     private void setupSearchBar(int i) {
-        View viewInflate = LayoutInflater.from(getContext()).inflate(f.C0052f.theme_search_bar, (ViewGroup) null);
+        View viewInflate = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_search_bar, (ViewGroup) null);
         addView(viewInflate, new FrameLayout.LayoutParams(-1, i));
-        this.l = viewInflate.findViewById(f.e.theme_search_icon);
+        this.l = viewInflate.findViewById(ResourceIds.e.theme_search_icon);
         if (this.k) {
             s();
         } else {
             r();
         }
-        this.f = (TextView) viewInflate.findViewById(f.e.theme_search_btn);
-        this.f.setOnClickListener(this);
-        this.e = viewInflate.findViewById(f.e.theme_search_delete);
+        this.f = (TextView) viewInflate.findViewById(ResourceIds.e.theme_search_btn);
+        this.ResourceIds.setOnClickListener(this);
+        this.e = viewInflate.findViewById(ResourceIds.e.theme_search_delete);
         this.e.setOnClickListener(this);
         this.e.setVisibility(4);
-        this.d = (EditText) viewInflate.findViewById(f.e.search_edit);
+        this.d = (EditText) viewInflate.findViewById(ResourceIds.e.search_edit);
         this.d.addTextChangedListener(new TextWatcher() { // from class: com.tsf.extend.theme.c.c.1
             @Override // android.text.TextWatcher
             public void beforeTextChanged(CharSequence charSequence, int i2, int i3, int i4) {
@@ -231,7 +231,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         if (p.d(getContext())) {
             return true;
         }
-        a(getResources().getString(f.g.uplaod_wallpaper_dialog_no_network), 1);
+        a(getResources().getString(ResourceIds.g.uplaod_wallpaper_dialog_no_network), 1);
         return false;
     }
 
@@ -286,9 +286,9 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
 
     private void t() {
         if (this.p) {
-            this.f.setText(f.g.search_btn_text_go);
+            this.ResourceIds.setText(ResourceIds.g.search_btn_text_go);
         } else {
-            this.f.setText(f.g.search_btn_text_cancel);
+            this.ResourceIds.setText(ResourceIds.g.search_btn_text_cancel);
         }
     }
 
@@ -519,7 +519,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
                 public void run() {
                     c.this.q();
                     if (i == 0) {
-                        c.this.a(c.this.getResources().getString(f.g.theme_search_network_error), 1);
+                        c.this.a(c.this.getResources().getString(ResourceIds.g.theme_search_network_error), 1);
                     } else {
                         c.this.C();
                     }

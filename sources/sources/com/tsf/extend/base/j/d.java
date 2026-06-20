@@ -32,7 +32,7 @@ public class d {
         if (c != null) {
             return c;
         }
-        c = Settings.System.getString(com.tsf.extend.h.b().getApplicationContext().getContentResolver(), "android_id");
+        c = Settings.System.getString(com.tsf.extend.AppContextHolder.b().getApplicationContext().getContentResolver(), "android_id");
         return c;
     }
 
@@ -54,7 +54,7 @@ public class d {
 
     private static synchronized void e() {
         if (d == null) {
-            Context applicationContext = com.tsf.extend.h.b().getApplicationContext();
+            Context applicationContext = com.tsf.extend.AppContextHolder.b().getApplicationContext();
             try {
                 PackageInfo packageInfo = applicationContext.getPackageManager().getPackageInfo(applicationContext.getPackageName(), 0);
                 d = Integer.toString(packageInfo.versionCode);

@@ -30,7 +30,7 @@ public class e {
 
     private u b(Context context) {
         if (this.c == null) {
-            this.c = new u(com.tsf.extend.h.b());
+            this.c = new u(com.tsf.extend.AppContextHolder.b());
         }
         return this.c;
     }

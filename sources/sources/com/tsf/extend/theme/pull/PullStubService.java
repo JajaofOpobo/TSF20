@@ -60,7 +60,7 @@ public class PullStubService extends Service {
     }
 
     private void a(String str) {
-        if (com.tsf.extend.b.a.booleanValue()) {
+        if (com.tsf.extend.BuildFlags.a.booleanValue()) {
             Log.v("TSF", str);
         }
     }

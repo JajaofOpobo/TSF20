@@ -10,7 +10,7 @@ import android.graphics.Region;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CustomWallpaperShadowView extends View {
@@ -43,7 +43,7 @@ public class CustomWallpaperShadowView extends View {
         this.b.setStyle(Paint.Style.STROKE);
         this.b.setStrokeWidth(1.0f * com.tsf.extend.base.j.p.a());
         this.b.setColor(-855638017);
-        this.a = getResources().getColor(f.b.wallpaper_clip_shadow);
+        this.a = getResources().getColor(ResourceIds.b.wallpaper_clip_shadow);
         setDrawingCacheEnabled(false);
     }
 
@@ -89,7 +89,7 @@ public class CustomWallpaperShadowView extends View {
                     if (Build.VERSION.SDK_INT >= 11) {
                         f = (Float) valueAnimator.getAnimatedValue();
                     }
-                    CustomWallpaperShadowView.this.e.set((int) (rect.left + ((rect2.left - rect.left) * f.floatValue())), (int) (rect.top + ((rect2.top - rect.top) * f.floatValue())), (int) (rect.right + ((rect2.right - rect.right) * f.floatValue())), (int) ((f.floatValue() * (rect2.bottom - rect.bottom)) + rect.bottom));
+                    CustomWallpaperShadowView.this.e.set((int) (rect.left + ((rect2.left - rect.left) * ResourceIds.floatValue())), (int) (rect.top + ((rect2.top - rect.top) * ResourceIds.floatValue())), (int) (rect.right + ((rect2.right - rect.right) * ResourceIds.floatValue())), (int) ((ResourceIds.floatValue() * (rect2.bottom - rect.bottom)) + rect.bottom));
                     CustomWallpaperShadowView.this.postInvalidate();
                 }
             });

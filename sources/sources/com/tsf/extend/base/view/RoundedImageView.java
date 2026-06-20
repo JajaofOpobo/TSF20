@@ -14,7 +14,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RoundedImageView extends ImageView {
@@ -75,18 +75,18 @@ public class RoundedImageView extends ImageView {
         this.p = ImageView.ScaleType.FIT_CENTER;
         this.q = a;
         this.r = a;
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.i.RoundedImageView, i, 0);
-        int i2 = typedArrayObtainStyledAttributes.getInt(f.i.RoundedImageView_android_scaleType, -1);
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ResourceIds.i.RoundedImageView, i, 0);
+        int i2 = typedArrayObtainStyledAttributes.getInt(ResourceIds.i.RoundedImageView_android_scaleType, -1);
         if (i2 >= 0) {
             setScaleType(c[i2]);
         } else {
             setScaleType(ImageView.ScaleType.FIT_CENTER);
         }
-        float dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_corner_radius, -1);
-        this.d[0] = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_corner_radius_top_left, -1);
-        this.d[1] = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_corner_radius_top_right, -1);
-        this.d[2] = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_corner_radius_bottom_right, -1);
-        this.d[3] = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_corner_radius_bottom_left, -1);
+        float dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_corner_radius, -1);
+        this.d[0] = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_corner_radius_top_left, -1);
+        this.d[1] = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_corner_radius_top_right, -1);
+        this.d[2] = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_corner_radius_bottom_right, -1);
+        this.d[3] = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_corner_radius_bottom_left, -1);
         int length = this.d.length;
         boolean z = false;
         for (int i3 = 0; i3 < length; i3++) {
@@ -103,26 +103,26 @@ public class RoundedImageView extends ImageView {
                 this.d[i4] = f;
             }
         }
-        this.g = typedArrayObtainStyledAttributes.getDimensionPixelSize(f.i.RoundedImageView_riv_border_width, -1);
+        this.g = typedArrayObtainStyledAttributes.getDimensionPixelSize(ResourceIds.i.RoundedImageView_riv_border_width, -1);
         if (this.g < 0.0f) {
             this.g = 0.0f;
         }
-        this.f = typedArrayObtainStyledAttributes.getColorStateList(f.i.RoundedImageView_riv_border_color);
+        this.f = typedArrayObtainStyledAttributes.getColorStateList(ResourceIds.i.RoundedImageView_riv_border_color);
         if (this.f == null) {
             this.f = ColorStateList.valueOf(-16777216);
         }
-        this.m = typedArrayObtainStyledAttributes.getBoolean(f.i.RoundedImageView_riv_mutate_background, false);
-        this.l = typedArrayObtainStyledAttributes.getBoolean(f.i.RoundedImageView_riv_oval, false);
-        int i5 = typedArrayObtainStyledAttributes.getInt(f.i.RoundedImageView_riv_tile_mode, -2);
+        this.m = typedArrayObtainStyledAttributes.getBoolean(ResourceIds.i.RoundedImageView_riv_mutate_background, false);
+        this.l = typedArrayObtainStyledAttributes.getBoolean(ResourceIds.i.RoundedImageView_riv_oval, false);
+        int i5 = typedArrayObtainStyledAttributes.getInt(ResourceIds.i.RoundedImageView_riv_tile_mode, -2);
         if (i5 != -2) {
             setTileModeX(a(i5));
             setTileModeY(a(i5));
         }
-        int i6 = typedArrayObtainStyledAttributes.getInt(f.i.RoundedImageView_riv_tile_mode_x, -2);
+        int i6 = typedArrayObtainStyledAttributes.getInt(ResourceIds.i.RoundedImageView_riv_tile_mode_x, -2);
         if (i6 != -2) {
             setTileModeX(a(i6));
         }
-        int i7 = typedArrayObtainStyledAttributes.getInt(f.i.RoundedImageView_riv_tile_mode_y, -2);
+        int i7 = typedArrayObtainStyledAttributes.getInt(ResourceIds.i.RoundedImageView_riv_tile_mode_y, -2);
         if (i7 != -2) {
             setTileModeY(a(i7));
         }
@@ -419,7 +419,7 @@ public class RoundedImageView extends ImageView {
     }
 
     public int getBorderColor() {
-        return this.f.getDefaultColor();
+        return this.ResourceIds.getDefaultColor();
     }
 
     public void setBorderColor(int i) {
@@ -431,7 +431,7 @@ public class RoundedImageView extends ImageView {
     }
 
     public void setBorderColor(ColorStateList colorStateList) {
-        if (!this.f.equals(colorStateList)) {
+        if (!this.ResourceIds.equals(colorStateList)) {
             if (colorStateList == null) {
                 colorStateList = ColorStateList.valueOf(-16777216);
             }

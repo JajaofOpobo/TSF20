@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONObject;
@@ -59,7 +59,7 @@ public class t extends BaseAdapter {
     }
 
     private void f() {
-        this.r = this.b.getResources().getDrawable(f.d.theme_detail_favorite_btn_checked);
+        this.r = this.b.getResources().getDrawable(ResourceIds.d.theme_detail_favorite_btn_checked);
         this.r.setColorFilter(-3355444, PorterDuff.Mode.SRC_IN);
         int iA = com.tsf.extend.base.j.i.a(15.0f);
         this.r.setBounds(0, 0, iA, iA);
@@ -101,51 +101,51 @@ public class t extends BaseAdapter {
         if (view == null) {
             view = LayoutInflater.from(this.b).inflate(c(), (ViewGroup) null);
             dVar = new d();
-            dVar.b = (ImageView) view.findViewById(f.e.theme_img_left);
-            dVar.c = (TextView) view.findViewById(f.e.theme_down_left);
-            dVar.d = (ImageView) view.findViewById(f.e.suggest_left);
-            dVar.e = view.findViewById(f.e.theme_download_left);
-            dVar.f = view.findViewById(f.e.theme_item_left);
-            dVar.f.setOnClickListener(this.c);
-            dVar.f.setTag(dVar);
-            View viewFindViewById = view.findViewById(f.e.theme_item_download_layout_left);
+            dVar.b = (ImageView) view.findViewById(ResourceIds.e.theme_img_left);
+            dVar.c = (TextView) view.findViewById(ResourceIds.e.theme_down_left);
+            dVar.d = (ImageView) view.findViewById(ResourceIds.e.suggest_left);
+            dVar.e = view.findViewById(ResourceIds.e.theme_download_left);
+            dVar.f = view.findViewById(ResourceIds.e.theme_item_left);
+            dVar.ResourceIds.setOnClickListener(this.c);
+            dVar.ResourceIds.setTag(dVar);
+            View viewFindViewById = view.findViewById(ResourceIds.e.theme_item_download_layout_left);
             viewFindViewById.setOnClickListener(this.c);
             viewFindViewById.setTag(dVar);
-            dVar.i = (ImageView) view.findViewById(f.e.theme_img_right);
-            dVar.j = (TextView) view.findViewById(f.e.theme_down_right);
-            dVar.k = (ImageView) view.findViewById(f.e.suggest_right);
-            dVar.l = view.findViewById(f.e.theme_download_right);
-            dVar.m = view.findViewById(f.e.theme_item_right);
+            dVar.i = (ImageView) view.findViewById(ResourceIds.e.theme_img_right);
+            dVar.j = (TextView) view.findViewById(ResourceIds.e.theme_down_right);
+            dVar.k = (ImageView) view.findViewById(ResourceIds.e.suggest_right);
+            dVar.l = view.findViewById(ResourceIds.e.theme_download_right);
+            dVar.m = view.findViewById(ResourceIds.e.theme_item_right);
             dVar.m.setOnClickListener(this.c);
             dVar.m.setTag(dVar);
-            View viewFindViewById2 = view.findViewById(f.e.theme_item_download_layout_right);
+            View viewFindViewById2 = view.findViewById(ResourceIds.e.theme_item_download_layout_right);
             viewFindViewById2.setOnClickListener(this.c);
             viewFindViewById2.setTag(dVar);
-            dVar.p = (ImageView) view.findViewById(f.e.theme_img_mid);
-            dVar.q = (TextView) view.findViewById(f.e.theme_down_mid);
-            dVar.r = (ImageView) view.findViewById(f.e.suggest_mid);
-            dVar.s = view.findViewById(f.e.theme_download_mid);
-            dVar.t = view.findViewById(f.e.theme_item_mid);
+            dVar.p = (ImageView) view.findViewById(ResourceIds.e.theme_img_mid);
+            dVar.q = (TextView) view.findViewById(ResourceIds.e.theme_down_mid);
+            dVar.r = (ImageView) view.findViewById(ResourceIds.e.suggest_mid);
+            dVar.s = view.findViewById(ResourceIds.e.theme_download_mid);
+            dVar.t = view.findViewById(ResourceIds.e.theme_item_mid);
             dVar.t.setOnClickListener(this.c);
             dVar.t.setTag(dVar);
-            View viewFindViewById3 = view.findViewById(f.e.theme_item_download_layout_mid);
+            View viewFindViewById3 = view.findViewById(ResourceIds.e.theme_item_download_layout_mid);
             viewFindViewById3.setOnClickListener(this.c);
             viewFindViewById3.setTag(dVar);
             a(dVar, view);
             if (dVar.g != null) {
-                dVar.g.setTypeface(com.tsf.extend.base.e.a.a().b());
+                dVar.g.setTypeface(com.tsf.extend.base.e.TypefaceManager.a().b());
             }
             if (dVar.u != null) {
-                dVar.u.setTypeface(com.tsf.extend.base.e.a.a().b());
+                dVar.u.setTypeface(com.tsf.extend.base.e.TypefaceManager.a().b());
             }
             if (dVar.n != null) {
-                dVar.n.setTypeface(com.tsf.extend.base.e.a.a().b());
+                dVar.n.setTypeface(com.tsf.extend.base.e.TypefaceManager.a().b());
             }
             viewFindViewById2.setSoundEffectsEnabled(true);
             viewFindViewById.setSoundEffectsEnabled(true);
             viewFindViewById3.setSoundEffectsEnabled(true);
             dVar.m.setSoundEffectsEnabled(true);
-            dVar.f.setSoundEffectsEnabled(true);
+            dVar.ResourceIds.setSoundEffectsEnabled(true);
             dVar.t.setSoundEffectsEnabled(true);
             a(dVar.f, a.Left, b(i));
             a(dVar.m, a.Right, b(i));
@@ -166,14 +166,14 @@ public class t extends BaseAdapter {
         }
         if (item.a.x() == 1) {
             dVar.d.setVisibility(0);
-            dVar.d.setImageResource(f.d.theme_recommend);
+            dVar.d.setImageResource(ResourceIds.d.theme_recommend);
         } else if (item.a.x() == 2) {
             dVar.d.setVisibility(0);
-            dVar.d.setImageResource(f.d.theme_recommend_3d);
+            dVar.d.setImageResource(ResourceIds.d.theme_recommend_3d);
         } else {
             dVar.d.setVisibility(8);
         }
-        ((ImageView) dVar.e).setImageResource(item.a.v() ? f.d.theme_downloaded_icon : f.d.theme_downloads_icon);
+        ((ImageView) dVar.e).setImageResource(item.a.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
         dVar.e.setTag(item.a);
         if (!TextUtils.isEmpty(item.a.m())) {
             v.h().c(item.a.m(), this.d);
@@ -189,14 +189,14 @@ public class t extends BaseAdapter {
             }
             if (item.b.x() == 1) {
                 dVar.r.setVisibility(0);
-                dVar.r.setImageResource(f.d.theme_recommend);
+                dVar.r.setImageResource(ResourceIds.d.theme_recommend);
             } else if (item.b.x() == 2) {
                 dVar.r.setVisibility(0);
-                dVar.r.setImageResource(f.d.theme_recommend_3d);
+                dVar.r.setImageResource(ResourceIds.d.theme_recommend_3d);
             } else {
                 dVar.r.setVisibility(8);
             }
-            ((ImageView) dVar.s).setImageResource(item.b.v() ? f.d.theme_downloaded_icon : f.d.theme_downloads_icon);
+            ((ImageView) dVar.s).setImageResource(item.b.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
             dVar.s.setTag(item.b);
             if (!TextUtils.isEmpty(item.b.m())) {
                 v.h().c(item.b.m(), this.d);
@@ -215,14 +215,14 @@ public class t extends BaseAdapter {
             }
             if (item.c.x() == 1) {
                 dVar.k.setVisibility(0);
-                dVar.k.setImageResource(f.d.theme_recommend);
+                dVar.k.setImageResource(ResourceIds.d.theme_recommend);
             } else if (item.c.x() == 2) {
                 dVar.k.setVisibility(0);
-                dVar.k.setImageResource(f.d.theme_recommend_3d);
+                dVar.k.setImageResource(ResourceIds.d.theme_recommend_3d);
             } else {
                 dVar.k.setVisibility(8);
             }
-            ((ImageView) dVar.l).setImageResource(item.c.v() ? f.d.theme_downloaded_icon : f.d.theme_downloads_icon);
+            ((ImageView) dVar.l).setImageResource(item.c.v() ? ResourceIds.d.theme_downloaded_icon : ResourceIds.d.theme_downloads_icon);
             dVar.l.setTag(item.c);
             if (!TextUtils.isEmpty(item.c.m())) {
                 v.h().c(item.c.m(), this.d);
@@ -234,7 +234,7 @@ public class t extends BaseAdapter {
     }
 
     protected int c() {
-        return f.C0052f.theme_all_item_new_style;
+        return ResourceIds.C0052f.theme_all_item_new_style;
     }
 
     protected void a(d dVar, View view) {
@@ -258,7 +258,7 @@ public class t extends BaseAdapter {
     }
 
     protected int d() {
-        return this.b.getResources().getDimensionPixelSize(f.c.theme_download_layout_height);
+        return this.b.getResources().getDimensionPixelSize(ResourceIds.c.theme_download_layout_height);
     }
 
     private void a(View view, A aVar, int i) {
@@ -270,17 +270,17 @@ public class t extends BaseAdapter {
         }
         switch (aVar) {
             case Left:
-                View viewFindViewById = view.findViewById(f.e.theme_img_left);
+                View viewFindViewById = view.findViewById(ResourceIds.e.theme_img_left);
                 layoutParams.setMargins(this.g, i2, this.h, this.k);
                 view2 = viewFindViewById;
                 break;
             case Mid:
-                View viewFindViewById2 = view.findViewById(f.e.theme_img_mid);
+                View viewFindViewById2 = view.findViewById(ResourceIds.e.theme_img_mid);
                 layoutParams.setMargins(this.l, i2, this.l, this.k);
                 view2 = viewFindViewById2;
                 break;
             case Right:
-                View viewFindViewById3 = view.findViewById(f.e.theme_img_right);
+                View viewFindViewById3 = view.findViewById(ResourceIds.e.theme_img_right);
                 layoutParams.setMargins(this.h, i2, this.g, this.k);
                 view2 = viewFindViewById3;
                 break;

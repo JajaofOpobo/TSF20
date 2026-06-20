@@ -20,7 +20,7 @@ import android.widget.LinearLayout;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.view.c;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.keyboard.KeyboardPager;
 import com.tsf.extend.theme.ThemePager;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperActivity;
@@ -32,7 +32,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PersonalizationPager extends LinearLayout implements View.OnClickListener, PageActivity.a, c.a {
-    public static final int[] a = {f.e.tab_wallpaper, f.e.tab_theme, f.e.tab_keyboard};
+    public static final int[] a = {ResourceIds.e.tab_wallpaper, ResourceIds.e.tab_theme, ResourceIds.e.tab_keyboard};
     private PageActivity b;
     private View c;
     private View d;
@@ -56,29 +56,29 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.c = findViewById(f.e.tab_wallpaper);
-        this.d = findViewById(f.e.tab_theme);
-        this.e = findViewById(f.e.tab_keyboard);
-        this.f = (ImageView) findViewById(f.e.tab_wallpaper_icon);
-        this.g = (ImageView) findViewById(f.e.tab_theme_icon);
-        this.h = (ImageView) findViewById(f.e.tab_keyboard_icon);
-        n nVar = new n(getResources().getDrawable(f.d.personal_tab_wallpaper_icon), -16334705);
-        n nVar2 = new n(getResources().getDrawable(f.d.personal_tab_theme_icon), -16334705);
-        new n(getResources().getDrawable(f.d.personal_tab_mine_icon), -16334705);
-        new n(getResources().getDrawable(f.d.personal_tab_locker_icon), -16334705);
-        n nVar3 = new n(getResources().getDrawable(f.d.personal_tab_keyboard_icon), -16334705);
-        this.f.setImageDrawable(nVar);
+        this.c = findViewById(ResourceIds.e.tab_wallpaper);
+        this.d = findViewById(ResourceIds.e.tab_theme);
+        this.e = findViewById(ResourceIds.e.tab_keyboard);
+        this.f = (ImageView) findViewById(ResourceIds.e.tab_wallpaper_icon);
+        this.g = (ImageView) findViewById(ResourceIds.e.tab_theme_icon);
+        this.h = (ImageView) findViewById(ResourceIds.e.tab_keyboard_icon);
+        n nVar = new n(getResources().getDrawable(ResourceIds.d.personal_tab_wallpaper_icon), -16334705);
+        n nVar2 = new n(getResources().getDrawable(ResourceIds.d.personal_tab_theme_icon), -16334705);
+        new n(getResources().getDrawable(ResourceIds.d.personal_tab_mine_icon), -16334705);
+        new n(getResources().getDrawable(ResourceIds.d.personal_tab_locker_icon), -16334705);
+        n nVar3 = new n(getResources().getDrawable(ResourceIds.d.personal_tab_keyboard_icon), -16334705);
+        this.ResourceIds.setImageDrawable(nVar);
         this.g.setImageDrawable(nVar2);
         this.h.setImageDrawable(nVar3);
         this.c.setOnClickListener(this);
         this.d.setOnClickListener(this);
         this.e.setOnClickListener(this);
-        this.i = (FrameLayout) findViewById(f.e.container);
-        this.m = (WallpaperPager) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_pager, (ViewGroup) null);
+        this.i = (FrameLayout) findViewById(ResourceIds.e.container);
+        this.m = (WallpaperPager) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_pager, (ViewGroup) null);
         this.m.setPagerActivity((PageActivity) getContext());
         this.m.setVisibility(8);
         this.i.addView(this.m, 0);
-        this.n = (ThemePager) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_pager, (ViewGroup) null);
+        this.n = (ThemePager) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_pager, (ViewGroup) null);
         this.n.setPagerActivity((PageActivity) getContext());
         this.n.setVisibility(8);
         this.i.addView(this.n, 0);
@@ -122,7 +122,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
             this.d.setAlpha(z ? 1.0f : 0.6f);
         }
         this.g.setSelected(z);
-        this.f.setSelected(z2);
+        this.ResourceIds.setSelected(z2);
         this.c.setSelected(z2);
         this.m.setVisibility(z2 ? 0 : 8);
         if (Build.VERSION.SDK_INT >= 11) {
@@ -141,7 +141,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
     private void k() {
         final com.tsf.extend.base.view.c cVar = new com.tsf.extend.base.view.c(this.b, -3);
         cVar.a(this);
-        cVar.a(f.g.wallpaper_fb_title, f.g.wallpaper_fb_content, f.g.wallpaper_fb_subcribe, 0, BitmapFactory.decodeResource(getResources(), f.d.ic_facebook), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.PersonalizationPager.1
+        cVar.a(ResourceIds.g.wallpaper_fb_title, ResourceIds.g.wallpaper_fb_content, ResourceIds.g.wallpaper_fb_subcribe, 0, BitmapFactory.decodeResource(getResources(), ResourceIds.d.ic_facebook), new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.PersonalizationPager.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 cVar.dismiss();
@@ -240,7 +240,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
      */
     public void a(Intent intent) {
         if (intent != null) {
-            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(this.b).inflate(f.C0052f.wallpaper_detail, (ViewGroup) null);
+            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(this.b).inflate(ResourceIds.C0052f.wallpaper_detail, (ViewGroup) null);
             wallpaperDetail.setType(ai.BalloonType);
             m mVar = new m();
             String stringExtra = intent.getStringExtra("id");
@@ -264,20 +264,20 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+        com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
         int i = this.k;
         int id = view.getId();
-        if (id == f.e.tab_wallpaper) {
+        if (id == ResourceIds.e.tab_wallpaper) {
             setTabIndex(2);
             if (dVarA != null) {
                 dVarA.a(5);
             }
-        } else if (id == f.e.tab_theme) {
+        } else if (id == ResourceIds.e.tab_theme) {
             setTabIndex(1);
             if (dVarA != null) {
                 dVarA.b(4);
             }
-        } else if (id == f.e.tab_keyboard) {
+        } else if (id == ResourceIds.e.tab_keyboard) {
             if (dVarA != null) {
                 dVarA.c(1);
             }
@@ -333,7 +333,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
                         x xVar = new x(PersonalizationPager.this.b);
                         Bitmap bitmapA = xVar.a(uriC);
                         if (bitmapA != null) {
-                            final WallpaperClip wallpaperClip = (WallpaperClip) LayoutInflater.from(PersonalizationPager.this.b).inflate(f.C0052f.wallpaper_clip, (ViewGroup) null);
+                            final WallpaperClip wallpaperClip = (WallpaperClip) LayoutInflater.from(PersonalizationPager.this.b).inflate(ResourceIds.C0052f.wallpaper_clip, (ViewGroup) null);
                             wallpaperClip.a(xVar, bitmapA);
                             PersonalizationPager.this.b.runOnUiThread(new Runnable() { // from class: com.tsf.extend.wallpaper.PersonalizationPager.2.1
                                 @Override // java.lang.Runnable
@@ -427,8 +427,8 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
     }
 
     private void n() {
-        if (com.tsf.extend.base.j.t.a(com.tsf.extend.h.b())) {
-            this.o = (KeyboardPager) LayoutInflater.from(getContext()).inflate(f.C0052f.keyboard_pager, (ViewGroup) null);
+        if (com.tsf.extend.base.j.t.a(com.tsf.extend.AppContextHolder.b())) {
+            this.o = (KeyboardPager) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.keyboard_pager, (ViewGroup) null);
             this.o.setVisibility(8);
             this.e.setVisibility(0);
             this.i.addView(this.o, 0);

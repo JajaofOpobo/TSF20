@@ -9,7 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeLoadingAnim extends LinearLayout {
@@ -36,7 +36,7 @@ public class ThemeLoadingAnim extends LinearLayout {
                         }
                         ThemeLoadingAnim.this.d.setText(sb);
                         if (ThemeLoadingAnim.this.f != null) {
-                            ThemeLoadingAnim.this.f.sendMessageDelayed(ThemeLoadingAnim.this.f.obtainMessage(1, message.arg1 + 1, 0), 300L);
+                            ThemeLoadingAnim.this.ResourceIds.sendMessageDelayed(ThemeLoadingAnim.this.ResourceIds.obtainMessage(1, message.arg1 + 1, 0), 300L);
                         }
                         break;
                 }
@@ -50,12 +50,12 @@ public class ThemeLoadingAnim extends LinearLayout {
     }
 
     private void b() {
-        inflate(this.a, f.C0052f.common_loading_anim, this);
-        this.b = (ImageView) findViewById(f.e.loading_icon);
-        this.c = (TextView) findViewById(f.e.loading_text);
-        this.d = (TextView) findViewById(f.e.loading_symbol);
+        inflate(this.a, ResourceIds.C0052f.common_loading_anim, this);
+        this.b = (ImageView) findViewById(ResourceIds.e.loading_icon);
+        this.c = (TextView) findViewById(ResourceIds.e.loading_text);
+        this.d = (TextView) findViewById(ResourceIds.e.loading_symbol);
         if (this.e == null) {
-            this.c.setText(f.g.theme_diy_generating);
+            this.c.setText(ResourceIds.g.theme_diy_generating);
         } else {
             this.c.setText(this.e);
         }
@@ -65,16 +65,16 @@ public class ThemeLoadingAnim extends LinearLayout {
     protected void onWindowVisibilityChanged(int i) {
         super.onWindowVisibilityChanged(i);
         if (i == 0) {
-            this.b.startAnimation(AnimationUtils.loadAnimation(this.a, f.a.data_loading_rotate));
+            this.b.startAnimation(AnimationUtils.loadAnimation(this.a, ResourceIds.a.data_loading_rotate));
             if (this.f != null) {
-                this.f.sendMessage(this.f.obtainMessage(1, 0, 0));
+                this.ResourceIds.sendMessage(this.ResourceIds.obtainMessage(1, 0, 0));
                 return;
             }
             return;
         }
         this.b.clearAnimation();
         if (this.f != null) {
-            this.f.removeMessages(1);
+            this.ResourceIds.removeMessages(1);
         }
     }
 
@@ -95,7 +95,7 @@ public class ThemeLoadingAnim extends LinearLayout {
 
     public void a() {
         if (this.f != null) {
-            this.f.removeCallbacksAndMessages(null);
+            this.ResourceIds.removeCallbacksAndMessages(null);
             this.f = null;
         }
     }

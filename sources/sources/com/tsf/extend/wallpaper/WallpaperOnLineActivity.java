@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -29,8 +29,8 @@ public class WallpaperOnLineActivity extends PageActivity {
         com.tsf.extend.base.j.p.a((Activity) this);
         z.h();
         super.onCreate(bundle);
-        this.f = (WallpaperOnLinePager) LayoutInflater.from(this).inflate(f.C0052f.activity_wallpaper_online, (ViewGroup) null);
-        this.f.findViewById(f.e.title).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperOnLineActivity.1
+        this.f = (WallpaperOnLinePager) LayoutInflater.from(this).inflate(ResourceIds.C0052f.activity_wallpaper_online, (ViewGroup) null);
+        this.ResourceIds.findViewById(ResourceIds.e.title).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.WallpaperOnLineActivity.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 WallpaperOnLineActivity.this.onBackPressed();
@@ -92,7 +92,7 @@ public class WallpaperOnLineActivity extends PageActivity {
                                 intent.putExtra("wallpaper_name", "");
                                 intent.putExtra("wallpaper_tag", "");
                                 WallpaperOnLineActivity.this.setResult(-1, intent);
-                                WallpaperOnLineActivity.this.a(false, WallpaperOnLineActivity.this.f.getCurrentTabIndex());
+                                WallpaperOnLineActivity.this.a(false, WallpaperOnLineActivity.this.ResourceIds.getCurrentTabIndex());
                                 WallpaperOnLineActivity.this.finish();
                             }
                         });
@@ -103,7 +103,7 @@ public class WallpaperOnLineActivity extends PageActivity {
                     @Override // java.lang.Runnable
                     public void run() {
                         WallpaperOnLineActivity.this.f();
-                        Toast.makeText(WallpaperOnLineActivity.this, f.g.changewallpaper_toast_text_error, 0).show();
+                        Toast.makeText(WallpaperOnLineActivity.this, ResourceIds.g.changewallpaper_toast_text_error, 0).show();
                     }
                 });
             }
@@ -133,7 +133,7 @@ public class WallpaperOnLineActivity extends PageActivity {
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity, android.app.Activity
     public void onBackPressed() {
-        a(true, this.f.getCurrentTabIndex());
+        a(true, this.ResourceIds.getCurrentTabIndex());
         super.onBackPressed();
     }
 
@@ -178,6 +178,6 @@ public class WallpaperOnLineActivity extends PageActivity {
     protected void onDestroy() {
         super.onDestroy();
         z.i();
-        com.tsf.extend.wallpaper.a.a.b(this);
+        com.tsf.extend.wallpaper.a.WallpaperChangeManager.b(this);
     }
 }

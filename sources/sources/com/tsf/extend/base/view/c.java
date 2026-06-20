@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.f;
-import com.tsf.extend.g;
+import com.tsf.extend.ResourceIds;
+import com.tsf.extend.BaseDialog;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends g implements DialogInterface.OnCancelListener, View.OnClickListener {
@@ -42,20 +42,20 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
         b();
     }
 
-    @Override // com.tsf.extend.g
+    @Override // com.tsf.extend.BaseDialog
     public void a(WindowManager.LayoutParams layoutParams) {
         layoutParams.dimAmount = 0.7f;
     }
 
     private void b() {
-        setContentView(f.C0052f.install_app_dialog);
-        this.a = (ImageView) findViewById(f.e.app_img);
-        this.b = (ImageView) findViewById(f.e.close_dialog);
-        this.c = (TextView) findViewById(f.e.sub_title);
-        this.f = (TextView) findViewById(f.e.content);
-        this.h = (FrameLayout) findViewById(f.e.title_layout);
-        this.g = (TextView) findViewById(f.e.ok_btn);
-        this.l = (RelativeLayout) findViewById(f.e.btn_cancel);
+        setContentView(ResourceIds.C0052f.install_app_dialog);
+        this.a = (ImageView) findViewById(ResourceIds.e.app_img);
+        this.b = (ImageView) findViewById(ResourceIds.e.close_dialog);
+        this.c = (TextView) findViewById(ResourceIds.e.sub_title);
+        this.f = (TextView) findViewById(ResourceIds.e.content);
+        this.h = (FrameLayout) findViewById(ResourceIds.e.title_layout);
+        this.g = (TextView) findViewById(ResourceIds.e.ok_btn);
+        this.l = (RelativeLayout) findViewById(ResourceIds.e.btn_cancel);
         this.l.setOnClickListener(this);
         this.g.setOnClickListener(this);
         this.b.setOnClickListener(this);
@@ -81,14 +81,14 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
             this.c.setVisibility(8);
         }
         if (i2 > 0) {
-            this.f.setText(i2);
+            this.ResourceIds.setText(i2);
         } else {
-            this.f.setVisibility(8);
+            this.ResourceIds.setVisibility(8);
         }
         this.g.setText(i3);
         this.i = onClickListener;
         if (i4 > 0) {
-            TextView textView = (TextView) findViewById(f.e.cancel_btn);
+            TextView textView = (TextView) findViewById(ResourceIds.e.cancel_btn);
             textView.setText(i4);
             textView.setVisibility(0);
             textView.setOnClickListener(onClickListener2);
@@ -108,7 +108,7 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
         a(i, i2, i3, i4, null, onClickListener, onClickListener2);
     }
 
-    @Override // com.tsf.extend.g
+    @Override // com.tsf.extend.BaseDialog
     public FrameLayout.LayoutParams a() {
         return new FrameLayout.LayoutParams((int) (p.b() * d), -1);
     }
@@ -116,7 +116,7 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.ok_btn) {
+        if (id == ResourceIds.e.ok_btn) {
             if (this.i != null) {
                 this.i.onClick(view);
             }
@@ -128,7 +128,7 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
             }
             return;
         }
-        if (id == f.e.close_dialog) {
+        if (id == ResourceIds.e.close_dialog) {
             onCancel(this);
             dismiss();
             if (this.m != null) {
@@ -137,7 +137,7 @@ public class c extends g implements DialogInterface.OnCancelListener, View.OnCli
             }
             return;
         }
-        if (id == f.e.btn_cancel) {
+        if (id == ResourceIds.e.btn_cancel) {
             onCancel(this);
             dismiss();
             if (this.m != null) {

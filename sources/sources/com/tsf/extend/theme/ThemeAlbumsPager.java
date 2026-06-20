@@ -22,7 +22,7 @@ import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.t;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import com.tsf.extend.wallpaper.ad;
@@ -78,34 +78,34 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
 
     public void g() {
         com.tsf.extend.base.d.a.b bVar;
-        this.e = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_list_noheader, (ViewGroup) null);
+        this.e = (PullToRefreshAndLoadMoreListView) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_list_noheader, (ViewGroup) null);
         this.e.setBackgroundColor(Color.parseColor("#ffeeeeee"));
         this.e.setHeaderResizeEnabled(true);
-        ((LinearLayout) findViewById(f.e.container)).addView(this.e, j);
+        ((LinearLayout) findViewById(ResourceIds.e.container)).addView(this.e, j);
         this.e.setOnScrollListener(this);
-        this.f = LayoutInflater.from(getContext()).inflate(f.C0052f.retry_item, (ViewGroup) null);
-        ((TextView) this.f.findViewById(f.e.retry_text)).setTextColor(getResources().getColorStateList(f.d.wallpaper_list_retry_text_color));
-        this.f.setOnClickListener(this);
-        this.i = (TextView) findViewById(f.e.title);
+        this.f = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.retry_item, (ViewGroup) null);
+        ((TextView) this.ResourceIds.findViewById(ResourceIds.e.retry_text)).setTextColor(getResources().getColorStateList(ResourceIds.d.wallpaper_list_retry_text_color));
+        this.ResourceIds.setOnClickListener(this);
+        this.i = (TextView) findViewById(ResourceIds.e.title);
         if (!TextUtils.isEmpty(this.v)) {
             this.i.setText(this.v);
         } else {
             n();
         }
-        com.tsf.extend.base.widget.pulltorefresh.e eVar = new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), f.d.actionbar_back)), new int[]{-16777216, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN});
+        com.tsf.extend.base.widget.pulltorefresh.e eVar = new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-16777216, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN});
         eVar.setBounds(0, 0, eVar.getMinimumWidth(), eVar.getMinimumHeight());
         this.i.setCompoundDrawables(eVar, null, null, null);
         this.i.setCompoundDrawablePadding((int) (6.0f * com.tsf.extend.base.j.p.a()));
         this.i.setOnClickListener(this);
         if (!this.x) {
-            findViewById(f.e.title_share_googleplus).setVisibility(4);
-            findViewById(f.e.title_share_facebook).setVisibility(4);
+            findViewById(ResourceIds.e.title_share_googleplus).setVisibility(4);
+            findViewById(ResourceIds.e.title_share_facebook).setVisibility(4);
         } else {
-            findViewById(f.e.title_share_facebook).setOnClickListener(this);
-            findViewById(f.e.title_share_googleplus).setOnClickListener(this);
+            findViewById(ResourceIds.e.title_share_facebook).setOnClickListener(this);
+            findViewById(ResourceIds.e.title_share_googleplus).setOnClickListener(this);
         }
-        this.g = LayoutInflater.from(getContext()).inflate(f.C0052f.theme_album_loadmore, (ViewGroup) null);
-        this.h = (ProgressBar) this.g.findViewById(f.e.loadmore_progress);
+        this.g = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_album_loadmore, (ViewGroup) null);
+        this.h = (ProgressBar) this.g.findViewById(ResourceIds.e.loadmore_progress);
         this.h.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
         this.e.setLoadMoreView(this.g);
         this.g.setVisibility(0);
@@ -196,15 +196,15 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.title) {
+        if (id == ResourceIds.e.title) {
             this.d.onBackPressed();
             return;
         }
-        if (id == f.e.retry) {
-            this.f.setVisibility(8);
+        if (id == ResourceIds.e.retry) {
+            this.ResourceIds.setVisibility(8);
             this.l = new A(com.tsf.extend.base.d.a.b.Refresh);
             v.h().c(this.l, com.tsf.extend.base.d.a.b.Refresh, this.u);
-        } else if (id == f.e.loadmore_tips) {
+        } else if (id == ResourceIds.e.loadmore_tips) {
             this.h.setVisibility(0);
             j();
         } else {
@@ -255,9 +255,9 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         Object tag = view.getTag();
         if (tag instanceof t.d) {
             int id = view.getId();
-            if (id == f.e.theme_item_left || id == f.e.theme_item_download_layout_left) {
+            if (id == ResourceIds.e.theme_item_left || id == ResourceIds.e.theme_item_download_layout_left) {
                 kVar2 = ((t.d) tag).a;
-            } else if (id == f.e.theme_item_mid || id == f.e.theme_item_download_layout_mid) {
+            } else if (id == ResourceIds.e.theme_item_mid || id == ResourceIds.e.theme_item_download_layout_mid) {
                 kVar2 = ((t.d) tag).o;
             } else {
                 kVar2 = ((t.d) tag).h;
@@ -265,12 +265,12 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
             str = "1";
             kVar = kVar2;
         } else if (tag == null) {
-            View viewFindViewById = view.findViewById(f.e.theme_download_left);
+            View viewFindViewById = view.findViewById(ResourceIds.e.theme_download_left);
             if (viewFindViewById == null) {
-                viewFindViewById = view.findViewById(f.e.theme_download_mid);
+                viewFindViewById = view.findViewById(ResourceIds.e.theme_download_mid);
             }
             if (viewFindViewById == null) {
-                viewFindViewById = view.findViewById(f.e.theme_download_right);
+                viewFindViewById = view.findViewById(ResourceIds.e.theme_download_right);
             }
             str = "2";
             kVar = (viewFindViewById == null || !(viewFindViewById.getTag() instanceof k)) ? null : (k) viewFindViewById.getTag();
@@ -281,7 +281,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         if (kVar != null) {
             this.d.a(false);
             if (ao.b().g()) {
-                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(f.C0052f.theme_detail, (ViewGroup) null);
+                ThemeDetail themeDetail = (ThemeDetail) LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.theme_detail, (ViewGroup) null);
                 themeDetail.setFromInlet(this.z);
                 themeDetail.setFromTab("detail");
                 themeDetail.setTheme(kVar);
@@ -292,7 +292,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
             } else {
                 x.a(getContext(), kVar.k(), "tsf_theme_center_theme");
             }
-            com.tsf.extend.base.D dVarA = com.tsf.extend.h.a();
+            com.tsf.extend.base.D dVarA = com.tsf.extend.AppContextHolder.a();
             if (dVarA != null) {
                 dVarA.b(kVar.h() + "");
             }
@@ -484,7 +484,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
             this.k.clear();
             if (list == null || list.size() == 0) {
                 this.n.notifyDataSetChanged();
-                this.f.setVisibility(0);
+                this.ResourceIds.setVisibility(0);
                 this.e.setEmptyView(this.f);
                 return false;
             }

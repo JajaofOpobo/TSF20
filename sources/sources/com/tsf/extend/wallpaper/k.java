@@ -26,7 +26,7 @@ public class k extends Thread {
             if (kVarTake.H()) {
                 l.a().d(kVarTake);
             } else {
-                com.tsf.extend.theme.diy.e.a(com.tsf.extend.h.b(), kVarTake, new e.c() { // from class: com.tsf.extend.wallpaper.k.1
+                com.tsf.extend.theme.diy.e.a(com.tsf.extend.AppContextHolder.b(), kVarTake, new e.c() { // from class: com.tsf.extend.wallpaper.k.1
                     @Override // com.tsf.extend.theme.diy.e.c
                     public boolean a() {
                         return kVarTake.H();

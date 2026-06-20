@@ -3,9 +3,9 @@ package com.censivn.C3DEngine.b.h.e;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.e.C;
 import com.tsf.shell.utils.w;
@@ -78,12 +78,12 @@ public class b extends j {
         this.b = new j() { // from class: com.censivn.C3DEngine.b.h.e.b.1
             private boolean b = false;
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 b.this.h();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 b.this.k();
                 if (b.this.y && b.this.b.getAnimationObjectState()) {
@@ -94,19 +94,19 @@ public class b extends j {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd(i iVar2) {
                 b.this.c(iVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 if (this.b) {
                     com.tsf.shell.manager.A.u.a();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void addChildAt(i iVar2, int i) {
                 iVar2.setAnimationObjectState(true);
                 b.this.o();
@@ -118,7 +118,7 @@ public class b extends j {
                 b.this.a(iVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
             public void addChild(i iVar2) {
                 iVar2.setAnimationObjectState(true);
                 b.this.o();
@@ -129,7 +129,7 @@ public class b extends j {
                 b.this.a(iVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
             public boolean removeChild(i iVar2) {
                 int childIndexOf = b.this.b.getChildIndexOf(iVar2);
                 if (childIndexOf != -1) {
@@ -608,7 +608,7 @@ public class b extends j {
         com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
         this.b.addChild(iVar);
     }
@@ -627,7 +627,7 @@ public class b extends j {
         com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         return this.b.removeChild(iVar);
     }

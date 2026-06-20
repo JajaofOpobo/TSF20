@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class al extends BaseAdapter {
-    public static int[] a = {f.g.setting_facebook, f.g.cm_club_google_plus};
+    public static int[] a = {ResourceIds.g.setting_facebook, ResourceIds.g.cm_club_google_plus};
     private static Typeface d;
     Context b;
     List<an> c;
@@ -22,8 +22,8 @@ public class al extends BaseAdapter {
         this.b = context;
         this.c = list;
         if (z) {
-            an anVar = new an(context, context.getResources().getDrawable(f.d.share_facebook), a[0]);
-            this.c.add(0, new an(context, context.getResources().getDrawable(f.d.shere_googleplus), a[1]));
+            an anVar = new an(context, context.getResources().getDrawable(ResourceIds.d.share_facebook), a[0]);
+            this.c.add(0, new an(context, context.getResources().getDrawable(ResourceIds.d.shere_googleplus), a[1]));
             this.c.add(0, anVar);
         }
     }
@@ -48,10 +48,10 @@ public class al extends BaseAdapter {
         A aVar;
         LayoutInflater layoutInflater = (LayoutInflater) this.b.getSystemService("layout_inflater");
         if (view == null) {
-            view = layoutInflater.inflate(f.C0052f.theme_diy_share_item, (ViewGroup) null);
+            view = layoutInflater.inflate(ResourceIds.C0052f.theme_diy_share_item, (ViewGroup) null);
             aVar = new A();
-            aVar.a = (ImageView) view.findViewById(f.e.icon);
-            aVar.b = (TextView) view.findViewById(f.e.app_name);
+            aVar.a = (ImageView) view.findViewById(ResourceIds.e.icon);
+            aVar.b = (TextView) view.findViewById(ResourceIds.e.app_name);
             if (d == null) {
                 d = com.tsf.extend.base.j.ab.a(this.b.getAssets(), "fonts/OpenSans-Light-bold.ttf");
             }

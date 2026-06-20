@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.b.b.a;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -66,7 +66,7 @@ public class c extends com.tsf.shell.f.e.f.b {
         return iVarRemoveChildAt;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onChildMeasure(i iVar) {
         this.a = true;
         e();
@@ -140,13 +140,13 @@ public class c extends com.tsf.shell.f.e.f.b {
         return z2;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void visible(Boolean bool) {
         super.visible(bool);
         notifLayoutRefresh();
     }
 
-    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible() && this.a) {
             if (a(true)) {

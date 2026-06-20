@@ -2,7 +2,7 @@ package com.tsf.extend.base.a;
 
 import android.content.Context;
 import android.text.TextUtils;
-import com.tsf.extend.h;
+import com.tsf.extend.AppContextHolder;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;

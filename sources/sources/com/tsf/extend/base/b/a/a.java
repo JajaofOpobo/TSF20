@@ -8,7 +8,7 @@ import com.tsf.extend.base.j.l;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.r;
 import com.tsf.extend.base.j.z;
-import com.tsf.extend.h;
+import com.tsf.extend.AppContextHolder;
 import com.tsf.extend.theme.diy.c;
 import com.tsf.extend.theme.v;
 import java.io.File;
@@ -245,7 +245,7 @@ public class a {
     }
 
     private boolean c(String str) {
-        return com.tsf.extend.wallpaper.z.b(str) || c.a(str) || v.j(str) || com.tsf.extend.keyboard.a.b(str);
+        return com.tsf.extend.wallpaper.z.b(str) || c.a(str) || v.j(str) || com.tsf.extend.keyboard.KeyboardDataProvider.b(str);
     }
 
     private boolean c() {

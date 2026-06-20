@@ -14,8 +14,8 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.CustomActivity;
-import com.tsf.extend.e;
-import com.tsf.extend.f;
+import com.tsf.extend.ThemeDialogFragment;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.diy.ThemeDIYActivity;
 import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 import java.io.File;
@@ -33,23 +33,23 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
     private EditText h = null;
     private EditText i = null;
     private EditText j = null;
-    private com.tsf.extend.e k;
+    private com.tsf.extend.ThemeDialogFragment k;
 
     @Override // com.tsf.extend.base.actstru.model.EventBasedActivity, android.app.Activity
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(f.C0052f.activity_theme_sumbit);
-        findViewById(f.e.btn_back).setOnClickListener(this);
-        this.f = findViewById(f.e.btn_commit);
-        this.f.setOnClickListener(this);
-        this.g = findViewById(f.e.background);
-        this.h = (EditText) findViewById(f.e.theme_name);
-        this.i = (EditText) findViewById(f.e.user_name);
-        this.j = (EditText) findViewById(f.e.user_email);
+        setContentView(ResourceIds.C0052f.activity_theme_sumbit);
+        findViewById(ResourceIds.e.btn_back).setOnClickListener(this);
+        this.f = findViewById(ResourceIds.e.btn_commit);
+        this.ResourceIds.setOnClickListener(this);
+        this.g = findViewById(ResourceIds.e.background);
+        this.h = (EditText) findViewById(ResourceIds.e.theme_name);
+        this.i = (EditText) findViewById(ResourceIds.e.user_name);
+        this.j = (EditText) findViewById(ResourceIds.e.user_email);
         g();
-        findViewById(f.e.delete_theme_name).setOnClickListener(this);
-        findViewById(f.e.delete_user_name).setOnClickListener(this);
-        findViewById(f.e.delete_user_email).setOnClickListener(this);
+        findViewById(ResourceIds.e.delete_theme_name).setOnClickListener(this);
+        findViewById(ResourceIds.e.delete_user_name).setOnClickListener(this);
+        findViewById(ResourceIds.e.delete_user_email).setOnClickListener(this);
         this.h.addTextChangedListener(this);
         this.i.addTextChangedListener(this);
         this.j.addTextChangedListener(this);
@@ -92,10 +92,10 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         int i = 0;
         String string = "";
         if ("1".equals(str)) {
-            string = getString(f.g.uplaod_wallpaper_dialog_no_network);
-            i = f.g.uplaod_wallpaper_dialog_check_network;
+            string = getString(ResourceIds.g.uplaod_wallpaper_dialog_no_network);
+            i = ResourceIds.g.uplaod_wallpaper_dialog_check_network;
         } else if ("2".equals(str)) {
-            string = getString(f.g.uplaod_wallpaper_dialog_mobile_network);
+            string = getString(ResourceIds.g.uplaod_wallpaper_dialog_mobile_network);
             try {
                 jA = a(Uri.parse(this.d.getString("wallpaper_uri")));
             } catch (Exception e) {
@@ -105,10 +105,10 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
             if (jA != -1) {
                 string = String.format(string, a(jA));
             }
-            i = f.g.uplaod_wallpaper_dialog_ok;
+            i = ResourceIds.g.uplaod_wallpaper_dialog_ok;
         }
         a();
-        this.k = new e.a(this).a(string).b(f.g.uplaod_wallpaper_dialog_cancel, this).a(i, this).a();
+        this.k = new e.a(this).a(string).b(ResourceIds.g.uplaod_wallpaper_dialog_cancel, this).a(i, this).a();
         this.k.a(str);
         try {
             this.k.a(true);
@@ -199,18 +199,18 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        Toast.makeText(this, f.g.upload_wallpaper_submit_failed, 0).show();
+        Toast.makeText(this, ResourceIds.g.upload_wallpaper_submit_failed, 0).show();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
-        Toast.makeText(this, f.g.uplaod_wallpaper_submit_tip, 0).show();
+        Toast.makeText(this, ResourceIds.g.uplaod_wallpaper_submit_tip, 0).show();
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         int id = view.getId();
-        if (id == f.e.btn_commit) {
+        if (id == ResourceIds.e.btn_commit) {
             String strA = a(getIntent());
             String string = this.i.getText().toString();
             String string2 = this.h.getText().toString();
@@ -222,15 +222,15 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
             sendBroadcast(new Intent("cml.intent.action.DIY_SUBMIT"));
             return;
         }
-        if (id == f.e.btn_back) {
+        if (id == ResourceIds.e.btn_back) {
             finish();
             return;
         }
-        if (id == f.e.delete_theme_name) {
+        if (id == ResourceIds.e.delete_theme_name) {
             this.h.setText("");
-        } else if (id == f.e.delete_user_name) {
+        } else if (id == ResourceIds.e.delete_user_name) {
             this.i.setText("");
-        } else if (id == f.e.delete_user_email) {
+        } else if (id == ResourceIds.e.delete_user_email) {
             this.j.setText("");
         }
     }
@@ -285,9 +285,9 @@ public class ThemeSubmitActivity extends CustomActivity implements DialogInterfa
         String strTrim = this.h.getText().toString().trim();
         String strTrim2 = this.i.getText().toString().trim();
         if (!TextUtils.isEmpty(strTrim) && !TextUtils.isEmpty(strTrim2)) {
-            this.f.setEnabled(true);
+            this.ResourceIds.setEnabled(true);
         } else {
-            this.f.setEnabled(false);
+            this.ResourceIds.setEnabled(false);
         }
     }
 

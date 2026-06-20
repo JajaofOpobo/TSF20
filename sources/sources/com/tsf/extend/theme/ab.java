@@ -12,7 +12,7 @@ import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.support.ViewPager;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.v;
 import java.util.List;
 import org.json.JSONObject;
@@ -47,7 +47,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
         setPadding(0, 0, 0, com.tsf.extend.base.j.p.c(getContext()));
     }
 
-    private class B extends com.tsf.extend.base.support.a {
+    private class B extends com.tsf.extend.base.support.PagerAdapterCompat {
         private A b;
         private FrameLayout.LayoutParams c = new FrameLayout.LayoutParams(-1, -1);
 
@@ -55,24 +55,24 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
             this.b = ab.this.new A();
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public int a() {
             return ab.this.a;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public boolean a(View view, Object obj) {
             return view == obj;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
         public View a(ViewGroup viewGroup, int i) {
             final ThemeImageView themeImageView = new ThemeImageView(ab.this.getContext());
-            themeImageView.setBackgroundResource(f.d.hourglass);
+            themeImageView.setBackgroundResource(ResourceIds.d.hourglass);
             ab.this.b.add(themeImageView);
             if (ab.this.i) {
-                v.h().a(((Integer) ab.this.f.get(i)).intValue(), ab.this.k, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.1
+                v.h().a(((Integer) ab.this.ResourceIds.get(i)).intValue(), ab.this.k, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.1
                     @Override // com.tsf.extend.base.d.a.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar) {
                         if (themeImageView != null && bVar != null) {
@@ -108,7 +108,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
             return themeImageView;
         }
 
-        @Override // com.tsf.extend.base.support.a
+        @Override // com.tsf.extend.base.support.PagerAdapterCompat
         public void a(ViewGroup viewGroup, int i, Object obj) {
             viewGroup.removeView((View) obj);
             if (ab.this.b != null) {
@@ -205,8 +205,8 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
     public void a(String str, List<Integer> list, int i) {
         this.i = true;
         this.k = str;
-        this.f.addAll(list);
-        this.a = this.f.size();
+        this.ResourceIds.addAll(list);
+        this.a = this.ResourceIds.size();
         this.d.setCurrentItem(i);
         this.e.c();
     }

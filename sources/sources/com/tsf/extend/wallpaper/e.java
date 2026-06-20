@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.ad;
 import com.tsf.extend.wallpaper.i;
 import java.util.ArrayList;
@@ -34,14 +34,14 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
 
     public e(Context context) {
         super(context);
-        setPadding(0, context.getResources().getDimensionPixelSize(f.c.workspace_margin_top), 0, 0);
+        setPadding(0, context.getResources().getDimensionPixelSize(ResourceIds.c.workspace_margin_top), 0, 0);
         setBackgroundColor(2565927);
         this.f = aa.a();
         this.e = (PageActivity) context;
         this.d = Lists.newArrayList();
-        LayoutInflater.from(getContext()).inflate(f.C0052f.wallpaper_title_layout, this);
-        TextView textView = (TextView) findViewById(f.e.title);
-        textView.setText(f.g.wallpaper_mine_favorite);
+        LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_title_layout, this);
+        TextView textView = (TextView) findViewById(ResourceIds.e.title);
+        textView.setText(ResourceIds.g.wallpaper_mine_favorite);
         textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.extend.wallpaper.e.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
@@ -50,18 +50,18 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
         });
         this.a = new ListView(context);
         this.a.setBackgroundColor(-1118482);
-        this.a.setSelector(f.d.transparent_drawable);
-        this.g = LayoutInflater.from(getContext()).inflate(f.C0052f.no_liked_layout, (ViewGroup) null);
+        this.a.setSelector(ResourceIds.d.transparent_drawable);
+        this.g = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.no_liked_layout, (ViewGroup) null);
         this.g.setBackgroundColor(-1118482);
-        ((TextView) this.g.findViewById(f.e.like_theme_text)).setText(f.g.wallpaper_like_no_data_tip);
-        Button button = (Button) this.g.findViewById(f.e.like_theme_button_now);
-        button.setText(f.g.wallpaper_like_no_data_button_text);
+        ((TextView) this.g.findViewById(ResourceIds.e.like_theme_text)).setText(ResourceIds.g.wallpaper_like_no_data_tip);
+        Button button = (Button) this.g.findViewById(ResourceIds.e.like_theme_button_now);
+        button.setText(ResourceIds.g.wallpaper_like_no_data_button_text);
         button.setOnClickListener(this);
         Bitmap bitmapA = com.tsf.extend.base.j.e.a(this.e);
         if (bitmapA != null) {
-            ((ImageView) this.g.findViewById(f.e.like_theme_image)).setImageBitmap(bitmapA);
+            ((ImageView) this.g.findViewById(ResourceIds.e.like_theme_image)).setImageBitmap(bitmapA);
         } else {
-            ((ImageView) this.g.findViewById(f.e.like_theme_image)).setImageResource(f.d.wallpaper_favorite_btn);
+            ((ImageView) this.g.findViewById(ResourceIds.e.like_theme_image)).setImageResource(ResourceIds.d.wallpaper_favorite_btn);
         }
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         layoutParams.topMargin = PersonalizationActivity.a(this.e, 48.0f);
@@ -69,7 +69,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
         addView(this.a, layoutParams);
         this.g.setVisibility(8);
         View view = new View(getContext());
-        view.setBackgroundResource(f.d.personal_indicator_bottom_divider);
+        view.setBackgroundResource(ResourceIds.d.personal_indicator_bottom_divider);
         FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-1, PersonalizationActivity.a(this.e, 1.0f));
         layoutParams2.topMargin = PersonalizationActivity.a(this.e, 48.0f);
         addView(view, layoutParams2);
@@ -85,7 +85,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
         this.c = this.b.a();
         this.a.setDivider(this.c);
         this.a.setAdapter((ListAdapter) this.b);
-        this.f.a(this);
+        this.ResourceIds.a(this);
         setListUi(null);
         setOnClickListener(this);
     }
@@ -97,13 +97,13 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
         this.b.a(this.d);
         this.b.a(this);
         this.a.setAdapter((ListAdapter) this.b);
-        this.f.c(this);
+        this.ResourceIds.c(this);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f.d(this);
+        this.ResourceIds.d(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -122,7 +122,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         if (view.getTag() instanceof s) {
-            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(f.C0052f.wallpaper_detail, (ViewGroup) null);
+            WallpaperDetail wallpaperDetail = (WallpaperDetail) LayoutInflater.from(view.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail, (ViewGroup) null);
             wallpaperDetail.setType(ai.FavoriteType);
             m mVar = (m) view.getTag();
             ArrayList arrayListNewArrayList = Lists.newArrayList();
@@ -132,7 +132,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
             this.e.a(wallpaperDetail);
             return;
         }
-        if (view.getId() == f.e.like_theme_button_now) {
+        if (view.getId() == ResourceIds.e.like_theme_button_now) {
             Intent intent = new Intent(this.e, (Class<?>) PersonalizationActivity.class);
             intent.putExtra("TARGET_PAGE", 2);
             this.e.startActivity(intent);
@@ -151,7 +151,7 @@ public class e extends FrameLayout implements View.OnClickListener, PageActivity
             });
         }
         if (enumC0069a == i.a.EnumC0069a.notify) {
-            this.f.a(this);
+            this.ResourceIds.a(this);
         }
     }
 

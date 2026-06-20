@@ -2,9 +2,9 @@ package com.censivn.C3DEngine.b.h.e;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.b;
 import com.tsf.shell.f.e.C;
@@ -72,7 +72,7 @@ public class a extends j {
         this.c = new j() { // from class: com.censivn.C3DEngine.b.h.e.a.1
             private boolean b = false;
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 this.b = false;
                 if (getAnimationObjectState()) {
@@ -92,7 +92,7 @@ public class a extends j {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 if (this.b) {
                     com.tsf.shell.manager.A.u.a();
@@ -372,7 +372,7 @@ public class a extends j {
         a(i, true);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public i getChildAt(int i) {
         return this.c.getChildAt(i);
     }
@@ -421,20 +421,20 @@ public class a extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         this.c.addChildAt(iVar, i);
         c(i);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public void addChild(i iVar) {
         int iNumChildren = this.c.numChildren();
         this.c.addChild(iVar);
         c(iNumChildren);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public boolean removeChild(i iVar) {
         int childIndexOf = this.c.getChildIndexOf(iVar);
         if (childIndexOf == -1) {
@@ -445,7 +445,7 @@ public class a extends j {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
     public int numChildren() {
         return this.c.numChildren();
     }

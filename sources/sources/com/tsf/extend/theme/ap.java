@@ -1,7 +1,7 @@
 package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ap extends com.tsf.extend.base.a.b {
+public class ap extends com.tsf.extend.base.a.ApiRequestImpl {
     public ap() {
         a("1");
     }

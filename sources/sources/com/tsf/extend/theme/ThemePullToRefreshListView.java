@@ -9,7 +9,7 @@ import android.widget.ListView;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshListView;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemePullToRefreshListView extends PullToRefreshAndLoadMoreListView {
@@ -56,7 +56,7 @@ public class ThemePullToRefreshListView extends PullToRefreshAndLoadMoreListView
     }
 
     public boolean a(boolean z, MotionEvent motionEvent) {
-        ViewPager viewPager = (ViewPager) findViewById(f.e.theme_preview_pager);
+        ViewPager viewPager = (ViewPager) findViewById(ResourceIds.e.theme_preview_pager);
         if (viewPager != null) {
             switch (motionEvent.getAction()) {
                 case 0:

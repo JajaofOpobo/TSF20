@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.tween;
 
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.g.A;
 import com.censivn.C3DEngine.b.g._b.b;
 import com.censivn.C3DEngine.b.g.d;

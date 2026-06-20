@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.tsf.extend.base.d.a;
 import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.p;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.w;
 import com.tsf.extend.wallpaper.z;
 import java.util.List;
@@ -198,7 +198,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, iA * 2);
         button.setText(str);
         button.setPadding(iA, 0, iA, 0);
-        com.tsf.extend.base.j.b.a(button, getResources().getDrawable(f.d.upload_wallpaper_category_btn));
+        com.tsf.extend.base.j.b.a(button, getResources().getDrawable(ResourceIds.d.upload_wallpaper_category_btn));
         layoutParams.setMargins(0, iA, iA, 0);
         button.setLayoutParams(layoutParams);
         button.setTextSize(14.0f);
@@ -208,7 +208,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         if (Build.VERSION.SDK_INT >= 17) {
             button.setTextAlignment(4);
         }
-        button.setTag(f.e.live, Integer.valueOf(i));
+        button.setTag(ResourceIds.e.live, Integer.valueOf(i));
         return button;
     }
 
@@ -237,10 +237,10 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
             this.f = new TextView(getContext());
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -2);
             layoutParams.bottomMargin = this.q + this.p;
-            this.f.setLayoutParams(layoutParams);
-            this.f.setTextSize(20.0f);
-            this.f.setTextColor(Color.rgb(255, 255, 255));
-            this.f.setText(f.g.upload_wallpaper_categroypage_selettip);
+            this.ResourceIds.setLayoutParams(layoutParams);
+            this.ResourceIds.setTextSize(20.0f);
+            this.ResourceIds.setTextColor(Color.rgb(255, 255, 255));
+            this.ResourceIds.setText(ResourceIds.g.upload_wallpaper_categroypage_selettip);
             addView(this.f);
         }
     }
@@ -253,7 +253,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
             this.h.setTextSize(16.0f);
             this.h.setGravity(5);
             this.h.setTextColor(Color.rgb(255, 255, 255));
-            this.h.setText(f.g.upload_wallpaper_categroypage_skip);
+            this.h.setText(ResourceIds.g.upload_wallpaper_categroypage_skip);
             this.h.setOnClickListener(this);
             addView(this.h);
         }
@@ -262,7 +262,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         Integer num;
-        if (view != this.h && (view instanceof Button) && (num = (Integer) view.getTag(f.e.live)) != null) {
+        if (view != this.h && (view instanceof Button) && (num = (Integer) view.getTag(ResourceIds.e.live)) != null) {
             this.a.a(num.intValue());
         }
         this.c.setTabIndex(1);
@@ -273,13 +273,13 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         int height = getHeight();
         if (height > 0 && this.g != null && this.f != null && this.h != null && this.c != null) {
             int height2 = this.g.getHeight();
-            if (((height - this.q) - height2) - this.f.getHeight() > 0) {
+            if (((height - this.q) - height2) - this.ResourceIds.getHeight() > 0) {
                 if (Build.VERSION.SDK_INT >= 11) {
                     this.g.setY((height - this.q) - height2);
-                    this.f.setY(((height - this.q) - height2) - this.f.getHeight());
+                    this.ResourceIds.setY(((height - this.q) - height2) - this.ResourceIds.getHeight());
                     this.h.setY((height - i.a(29.0f)) - this.h.getHeight());
                 }
-                this.c.setCategoryRealY(((height - this.q) - height2) - this.f.getHeight());
+                this.c.setCategoryRealY(((height - this.q) - height2) - this.ResourceIds.getHeight());
                 com.tsf.extend.base.j.b.a(this, this);
             }
         }

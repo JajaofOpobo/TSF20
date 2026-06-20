@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.a;
-import com.tsf.extend.f;
+import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.v;
 
 import java.util.List;
@@ -73,31 +73,31 @@ public class ad extends BaseAdapter {
     }
 
     public View a(int i, k kVar, ViewGroup viewGroup) {
-        return LayoutInflater.from(viewGroup.getContext()).inflate(f.C0052f.theme_mine_item, (ViewGroup) null);
+        return LayoutInflater.from(viewGroup.getContext()).inflate(ResourceIds.C0052f.theme_mine_item, (ViewGroup) null);
     }
 
     public c a(View view) {
         C cVar = new C();
-        cVar.a.a = view.findViewById(f.e.left_layout);
-        cVar.a.c = (ImageView) view.findViewById(f.e.theme_img_left);
-        cVar.a.d = (TextView) view.findViewById(f.e.theme_name_left);
-        cVar.a.b = view.findViewById(f.e.theme_using_left);
+        cVar.a.a = view.findViewById(ResourceIds.e.left_layout);
+        cVar.a.c = (ImageView) view.findViewById(ResourceIds.e.theme_img_left);
+        cVar.a.d = (TextView) view.findViewById(ResourceIds.e.theme_name_left);
+        cVar.a.b = view.findViewById(ResourceIds.e.theme_using_left);
         if (this.c != null) {
             cVar.a.a.setOnClickListener(this.c);
         }
         b(cVar.a.a);
-        cVar.b.a = view.findViewById(f.e.center_layout);
-        cVar.b.c = (ImageView) view.findViewById(f.e.theme_img_center);
-        cVar.b.d = (TextView) view.findViewById(f.e.theme_name_center);
-        cVar.b.b = view.findViewById(f.e.theme_using_center);
+        cVar.b.a = view.findViewById(ResourceIds.e.center_layout);
+        cVar.b.c = (ImageView) view.findViewById(ResourceIds.e.theme_img_center);
+        cVar.b.d = (TextView) view.findViewById(ResourceIds.e.theme_name_center);
+        cVar.b.b = view.findViewById(ResourceIds.e.theme_using_center);
         if (this.c != null) {
             cVar.b.a.setOnClickListener(this.c);
         }
         b(cVar.b.a);
-        cVar.c.a = view.findViewById(f.e.right_layout);
-        cVar.c.c = (ImageView) view.findViewById(f.e.theme_img_right);
-        cVar.c.d = (TextView) view.findViewById(f.e.theme_name_right);
-        cVar.c.b = view.findViewById(f.e.theme_using_right);
+        cVar.c.a = view.findViewById(ResourceIds.e.right_layout);
+        cVar.c.c = (ImageView) view.findViewById(ResourceIds.e.theme_img_right);
+        cVar.c.d = (TextView) view.findViewById(ResourceIds.e.theme_name_right);
+        cVar.c.b = view.findViewById(ResourceIds.e.theme_using_right);
         if (this.c != null) {
             cVar.c.a.setOnClickListener(this.c);
         }
@@ -133,7 +133,7 @@ public class ad extends BaseAdapter {
     }
 
     private void a(k kVar, ImageView imageView, TextView textView, View view, View view2) {
-        imageView.setBackgroundResource(f.b.personal_list_item_bg);
+        imageView.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
         imageView.setImageDrawable(null);
         view2.setTag(kVar);
         if (kVar == null) {
