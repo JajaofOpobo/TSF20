@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class a {
+public abstract class BaseApiRequest {
     private static final Map<String, String> b = new HashMap();
     private static boolean c = false;
     private Map<String, String> a = new HashMap();

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class TypefaceManager {
     private static volatile a a = null;
     private Typeface b;
     private List<WeakReference<InterfaceC0049a>> c = new ArrayList();

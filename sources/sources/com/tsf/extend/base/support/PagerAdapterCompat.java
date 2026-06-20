@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class a {
+public abstract class PagerAdapterCompat {
     private DataSetObservable a = new DataSetObservable();
 
     public abstract int a();

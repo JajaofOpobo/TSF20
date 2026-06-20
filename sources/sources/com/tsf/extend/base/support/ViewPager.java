@@ -67,7 +67,7 @@ public class ViewPager extends ViewGroup {
     private final ArrayList<b> e;
     private final b f;
     private final Rect g;
-    private com.tsf.extend.base.support.a h;
+    private com.tsf.extend.base.support.PagerAdapterCompat h;
     private int i;
     private int j;
     private Parcelable k;
@@ -107,7 +107,7 @@ public class ViewPager extends ViewGroup {
     }
 
     interface d {
-        void a(com.tsf.extend.base.support.a aVar, com.tsf.extend.base.support.a aVar2);
+        void a(com.tsf.extend.base.support.PagerAdapterCompat aVar, com.tsf.extend.base.support.PagerAdapterCompat aVar2);
     }
 
     public interface e {
@@ -222,7 +222,7 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    public void setAdapter(com.tsf.extend.base.support.a aVar) {
+    public void setAdapter(com.tsf.extend.base.support.PagerAdapterCompat aVar) {
         if (this.h != null) {
             this.h.b(this.n);
             this.h.a((ViewGroup) this);
@@ -236,7 +236,7 @@ public class ViewPager extends ViewGroup {
             this.i = 0;
             scrollTo(0, 0);
         }
-        com.tsf.extend.base.support.a aVar2 = this.h;
+        com.tsf.extend.base.support.PagerAdapterCompat aVar2 = this.h;
         this.h = aVar;
         this.b = 0;
         if (this.h != null) {
@@ -281,7 +281,7 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    public com.tsf.extend.base.support.a getAdapter() {
+    public com.tsf.extend.base.support.PagerAdapterCompat getAdapter() {
         return this.h;
     }
 
