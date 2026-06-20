@@ -3,7 +3,7 @@ package com.tsf.extend.keyboard;
 import java.io.Serializable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b implements Serializable {
+public class KeyboardThemeModel implements Serializable {
     private long a;
     private String b;
     private String c;

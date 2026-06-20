@@ -14,8 +14,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.extend.base.d.a {
-    private static a b = new a();
+public class KeyboardDataProvider extends com.tsf.extend.base.d.a {
+    private static KeyboardDataProvider b = new KeyboardDataProvider();
     private String c;
     private String d;
     private String e;
@@ -32,7 +32,7 @@ public class a extends com.tsf.extend.base.d.a {
         this.e = d.b();
     }
 
-    public static a h() {
+    public static KeyboardDataProvider h() {
         return b;
     }
 
@@ -56,20 +56,20 @@ public class a extends com.tsf.extend.base.d.a {
     }
 
     @Override // com.tsf.extend.base.d.a
-    public void a(String str, a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
+    public void a(String str, KeyboardDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, KeyboardDataProvider.b bVar, JSONObject jSONObject) {
         super.a(str, interfaceC0048a, bVar, jSONObject);
     }
 
     @Override // com.tsf.extend.base.d.a
-    public String a(String str, a.b bVar, int i, JSONObject jSONObject) {
+    public String a(String str, KeyboardDataProvider.b bVar, int i, JSONObject jSONObject) {
         if (!TextUtils.isEmpty(str) && str.equals("DATA_RECOMMEND_KEYBOARD_THEME")) {
             return "https://api-keyboard.cmcm.com/cmltabpromote";
         }
         return String.format("https://api-keyboard.cmcm.com/theme/hdpromote?aid=%s&mcc=%s&appv=%s&offset=%s&count=%s", this.e, this.c, this.d, "" + a(str, bVar), "20");
     }
 
-    private int a(String str, a.b bVar) {
-        if (bVar == a.b.Refresh) {
+    private int a(String str, KeyboardDataProvider.b bVar) {
+        if (bVar == KeyboardDataProvider.b.Refresh) {
             return 0;
         }
         com.tsf.extend.base.b.A aVar = this.a.get(str);
@@ -102,7 +102,7 @@ public class a extends com.tsf.extend.base.d.a {
                 c0054a.a(b(jSONObject2, "offset"));
                 c0054a.d(b(jSONObject2, "offset"));
                 c0054a.c(b(jSONObject2, "total"));
-                c0054a.b(b(jSONObject2, "count"));
+                c0054KeyboardDataProvider.b(b(jSONObject2, "count"));
                 c0054a.a(b(jSONObject2, "hasMore") != 0);
             }
             if (jSONObject.has("data")) {
@@ -180,7 +180,7 @@ public class a extends com.tsf.extend.base.d.a {
         return bVar;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, JSONObject jSONObject) {
+    public void a(KeyboardDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, KeyboardDataProvider.b bVar, JSONObject jSONObject) {
         a("Keyboard", interfaceC0048a, bVar, jSONObject);
     }
 
@@ -219,11 +219,11 @@ public class a extends com.tsf.extend.base.d.a {
         }
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
+    public void a(KeyboardDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, KeyboardDataProvider.b bVar) {
         a("DATA_RECOMMEND_KEYBOARD_THEME", interfaceC0048a, bVar, new JSONObject(), false);
     }
 
-    public void a(final a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
+    public void a(final KeyboardDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.keyboard.a.1
             @Override // java.lang.Runnable
             public void run() {
