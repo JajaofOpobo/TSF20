@@ -157,8 +157,8 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
     public void b(int i) {
         j();
         if (i > 0) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.j.visible(false);
                     b.this.j.a();
@@ -166,26 +166,26 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
             };
             dVar.h(com.censivn.C3DEngine.b.b.A.a(-150.0f));
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.j);
-            com.censivn.C3DEngine.b.g.c.a(this.j, 300, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.g);
-            com.censivn.C3DEngine.b.g.c.a(this.g, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 300, dVar2);
             this.g.mouseEnabled(true);
             return;
         }
         if (!this.i.d()) {
-            com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar3.h(0.0f);
             dVar3.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.j);
-            com.censivn.C3DEngine.b.g.c.a(this.j, 300, dVar3);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 300, dVar3);
             this.j.visible(true);
-            com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar4.a(30);
-            com.censivn.C3DEngine.b.g.c.a(this.g);
-            com.censivn.C3DEngine.b.g.c.a(this.g, 300, dVar4);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 300, dVar4);
             this.g.mouseEnabled(false);
         }
     }
@@ -250,11 +250,11 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
                     bVar.position().setAllFrom(aVarE.globalToLocal(number3dLocalToGlobal));
                     aVarE.addChildAt(bVar, i);
                     this.c.a(bVar, aVarE, i);
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                     dVar.l(1.0f);
                     dVar.m(1.0f);
-                    com.censivn.C3DEngine.b.g.c.a(bVar);
-                    com.censivn.C3DEngine.b.g.c.a(bVar, 250, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 250, dVar);
                 }
             }
             arrayList.clear();
@@ -278,17 +278,17 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
 
     private void j() {
         if (k()) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 300, dVar);
             this.f.mouseEnabled(true);
             return;
         }
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(30);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, 300, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 300, dVar2);
         this.f.mouseEnabled(false);
     }
 
@@ -352,11 +352,11 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
                 }
             }
             for (com.tsf.shell.f.i.ShortcutItem cVar2 : arrayList) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(cVar2);
-                com.censivn.C3DEngine.b.g.c.a(cVar2, VEasing.Back.easeIn, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(cVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(cVar2, VEasing.Back.easeIn, dVar);
             }
             arrayList.remove(cVar);
             cVar.b(arrayList);

@@ -18,17 +18,17 @@ public class GestureTipElement extends BaseRenderable {
     }
 
     public void a(float f, float f2, int i, Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(com.censivn.C3DEngine.b.b.A.z + com.censivn.C3DEngine.b.b.A.a(50.0f));
         dVar.h(f2);
         dVar.a(runnable);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, i, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, i, dVar);
     }
 
     public void a(final Runnable runnable, final int i) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.GestureTipElement.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     com.censivn.C3DEngine.C3DEngine.a().b(runnable, i);
@@ -36,13 +36,13 @@ public class GestureTipElement extends BaseRenderable {
             }
         };
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
     }
 
     public void b(final Runnable runnable, final int i) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.GestureTipElement.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     com.censivn.C3DEngine.C3DEngine.a().b(runnable, i);
@@ -50,8 +50,8 @@ public class GestureTipElement extends BaseRenderable {
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
@@ -68,14 +68,14 @@ public class GestureTipElement extends BaseRenderable {
 
     public void a(final float f, Runnable runnable) {
         final float f2 = rotation().z;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.GestureTipElement.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 b.this.rotation().z = f2 + ((f - f2) * f3);
             }
         };
         dVar.a(runnable);
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 450, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 450, dVar);
     }
 
     public void b() {
@@ -86,20 +86,20 @@ public class GestureTipElement extends BaseRenderable {
         this.d.visible(true);
         this.d.alpha(255.0f);
         this.d.position().setAllFrom(position());
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.p.GestureTipElement.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.d.visible(false);
                 b.this.d.alpha(255.0f);
                 com.tsf.shell.manager.app.TaskScheduler.b(b.this.d);
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         dVar.l(5.0f);
         dVar.m(5.0f);
         dVar.a(0);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 600, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 600, dVar);
     }
 }

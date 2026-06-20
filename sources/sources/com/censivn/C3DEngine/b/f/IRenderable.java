@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
+public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     public static final int GONE = 2;
     public static final int INVISIBLE = 1;
     public static final int VISIBLE = 0;
@@ -101,7 +101,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
     private int mTexCoordsBufferIndex;
     protected TextureList mTextures;
     private boolean mTexturesEnabled;
-    public com.censivn.C3DEngine.b.g.a.c mTweenChild;
+    public com.censivn.C3DEngine.b.g.a.AbstractTween mTweenChild;
     private boolean mUseVBO;
     private int mVertBufferIndex;
     private boolean mVertexColorsEnabled;
@@ -1424,13 +1424,13 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
         invalidate();
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
-    public com.censivn.C3DEngine.b.g.a.c getTweenChild() {
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
+    public com.censivn.C3DEngine.b.g.a.AbstractTween getTweenChild() {
         return this.mTweenChild;
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
-    public void setTweenChild(com.censivn.C3DEngine.b.g.a.c cVar) {
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
+    public void setTweenChild(com.censivn.C3DEngine.b.g.a.AbstractTween cVar) {
         this.mTweenChild = cVar;
     }
 

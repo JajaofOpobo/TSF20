@@ -21,16 +21,16 @@ public class MenuItemHeader extends BaseRenderable {
     public void addChild(i iVar) {
         if (this.b != null) {
             final i iVar2 = this.b;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.MenuItemHeader.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._g.MenuItemHeader.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     iVar2.removeFromParent();
                 }
             };
             dVar.a(0);
             dVar.h(MenuOverlay.MENU_EXTRA_HEIGHT);
-            com.censivn.C3DEngine.b.g.c.a(iVar2);
-            com.censivn.C3DEngine.b.g.c.a(iVar2, VEasing.Linear.easeNone, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar2, VEasing.Linear.easeNone, dVar);
         }
         this.b = iVar;
         if (this.b.parent() == null) {
@@ -41,25 +41,25 @@ public class MenuItemHeader extends BaseRenderable {
             }
             this.b.alpha(255.0f);
         }
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
-        dVar2.a(com.censivn.C3DEngine.b.g.a.a);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+        dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         dVar2.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, VEasing.Linear.easeNone, dVar2);
         this.b.removeFromParent();
         super.addChild(this.b);
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.m(1.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, VEasing.Linear.easeNone, dVar);
     }
 
     public void b() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.MenuItemHeader.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._g.MenuItemHeader.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.this.removeFromParent();
                 if (c.this.b != null) {
@@ -69,8 +69,8 @@ public class MenuItemHeader extends BaseRenderable {
             }
         };
         dVar.m(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 300, dVar);
     }
 
     public void a(int i) {

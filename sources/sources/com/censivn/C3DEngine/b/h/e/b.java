@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f.e.C;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -508,21 +508,21 @@ public class b extends BaseRenderable {
         }
         d dVar = new d();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(kVar);
-        com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
     }
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
             d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.b.3
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.c.removeChild(kVar);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(kVar);
-            com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
         }
     }
 
@@ -604,8 +604,8 @@ public class b extends BaseRenderable {
         dVar.l(this.w);
         dVar.m(this.w);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 500, dVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
@@ -623,8 +623,8 @@ public class b extends BaseRenderable {
         dVar.l(this.w);
         dVar.m(this.w);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 500, dVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer

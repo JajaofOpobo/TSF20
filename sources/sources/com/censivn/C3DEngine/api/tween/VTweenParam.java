@@ -2,35 +2,35 @@ package com.censivn.C3DEngine.api.tween;
 
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.b.g.A;
-import com.censivn.C3DEngine.b.g._b.b;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
+import com.censivn.C3DEngine.b.g._b.TweenTargetWrapper;
+import com.censivn.C3DEngine.b.g.TweenParams;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VTweenParam {
     private VTweenParam mThis = this;
     public d vTarget = new d() { // from class: com.censivn.C3DEngine.api.tween.VTweenParam.1
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
             VTweenParam.this.mThis.onComplete();
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
             VTweenParam.this.mThis.onUpdate(f);
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void b(float f) {
             VTweenParam.this.mThis.onProgress(f);
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void b() {
             VTweenParam.this.mThis.onStart();
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void c() {
             VTweenParam.this.mThis.onKill();
         }
@@ -71,7 +71,7 @@ public class VTweenParam {
     }
 
     public void setEase(int i) {
-        com.censivn.C3DEngine.b.g.b bVar = null;
+        com.censivn.C3DEngine.b.g.TweenCallback bVar = null;
         switch (IRenderable) {
             case 100:
                 bVar = a.b;

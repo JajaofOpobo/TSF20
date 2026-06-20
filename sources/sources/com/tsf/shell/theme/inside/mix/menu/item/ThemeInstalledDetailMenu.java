@@ -129,24 +129,24 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     public void enterMoreLayout() {
         this.isShowingMoreLayout = true;
         float fH = this.mDetailContainer.h();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(fH);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         dVar.a(100);
-        com.censivn.C3DEngine.b.g.c.a(this.mOtherContainer);
-        com.censivn.C3DEngine.b.g.c.a(this.mOtherContainer, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.mOtherContainer);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.mOtherContainer, 500, dVar);
         this.mMoreInfoLayout.show();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void exitMoreLayout() {
         this.isShowingMoreLayout = false;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(com.censivn.C3DEngine.b.b.A.a(0.0f));
         dVar.a(255);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
-        com.censivn.C3DEngine.b.g.c.a(this.mOtherContainer);
-        com.censivn.C3DEngine.b.g.c.a(this.mOtherContainer, 500, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.mOtherContainer);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.mOtherContainer, 500, dVar);
     }
 
     public void onMainThemeMenuRecycle() {

@@ -29,7 +29,7 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
     private com.tsf.shell.f.f.a.c.FolderShortcutGrid k;
     private k l;
     private boolean q = false;
-    private com.censivn.C3DEngine.b.g._b.b r = new com.censivn.C3DEngine.b.g._b.b();
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper r = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
     private ArrayList<i> g = new ArrayList<>();
     private BaseRenderable m = new BaseRenderable();
     private BaseRenderable n = new BaseRenderable();
@@ -116,32 +116,32 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
 
     public void e() {
         final float fAlpha = this.n.alpha();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 f.this.n.alpha(fAlpha + ((0.0f - fAlpha) * f));
             }
         };
         this.n.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.c.a(this.r);
-        com.censivn.C3DEngine.b.g.c.a(this.r, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, VEasing.Linear.easeNone, dVar);
     }
 
     public void f() {
         final float fAlpha = this.n.alpha();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 f.this.n.alpha(fAlpha + ((255.0f - fAlpha) * f));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.n.mouseEnabled(true);
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.r);
-        com.censivn.C3DEngine.b.g.c.a(this.r, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, VEasing.Linear.easeNone, dVar);
     }
 
     public void g() {
@@ -189,8 +189,8 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
         addChild(this.m);
         final float fAlpha = this.n.alpha();
         final float f = this.n.position().y;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 f.this.n.alpha(fAlpha + ((255.0f - fAlpha) * f2));
                 if (!f.this.q) {
@@ -199,13 +199,13 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
             }
         };
         dVar.a(com.censivn.C3DEngine.b.g.a.n);
-        com.censivn.C3DEngine.b.g.c.a(this.r);
-        com.censivn.C3DEngine.b.g.c.a(this.r, 800, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, 800, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(255);
         dVar2.a(com.censivn.C3DEngine.b.g.a.n);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 800, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 800, dVar2);
         float f2 = c;
         if (this.n.numChildren() == 0) {
             Iterator<i> it = this.g.iterator();
@@ -235,14 +235,14 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
         m();
         final float fAlpha = this.n.alpha();
         final float f = this.n.position().y;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.5
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.5
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 f.this.n.alpha(fAlpha + ((0.0f - fAlpha) * f2));
                 f.this.n.position().y = f + ((((-h.F) / 2.0f) - f) * f2);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.m.removeFromParent();
                 Iterator it = f.this.g.iterator();
@@ -251,12 +251,12 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.r);
-        com.censivn.C3DEngine.b.g.c.a(this.r, VEasing.Linear.easeNone, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, VEasing.Linear.easeNone, dVar2);
         Iterator<i> it = this.g.iterator();
         while (it.hasNext()) {
             it.next().o();
@@ -279,12 +279,12 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
                 iVar.g();
                 iVar.k();
             }
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.h(h.F - b);
             dVar.l(0.6f);
             dVar.m(0.6f);
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, VEasing.Linear.easeNone, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, VEasing.Linear.easeNone, dVar);
         }
     }
 
@@ -296,14 +296,14 @@ public class PageGridRenderer extends BaseRenderable implements b.a {
                 iVar.f();
                 iVar.j();
             }
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.h(h.F / 2.0f);
             dVar.l(1.0f);
             dVar.m(1.0f);
             dVar.a(255);
             this.n.mouseEnabled(true);
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, VEasing.Linear.easeNone, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, VEasing.Linear.easeNone, dVar);
         }
     }
 

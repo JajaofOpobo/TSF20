@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.f.f.a.PageGridRenderer;
 import com.tsf.shell.manager.o.ThemeColorConstants;
@@ -127,22 +127,22 @@ public class FolderIndicatorDot extends BaseRenderable {
         dVar.h(this.h);
         dVar.a(VEasing.Back.easeIn);
         dVar.b(i);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, VEasing.Linear.easeNone, dVar);
         d dVar2 = new d() { // from class: com.tsf.shell.f.f.a.c._a.FolderIndicatorDot.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
         dVar2.a(60);
         dVar2.b(i);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar2);
     }
 
     public void i() {
         d dVar = new d() { // from class: com.tsf.shell.f.f.a.c._a.FolderIndicatorDot.3
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.d.visible(false);
                 b.this.f();
@@ -152,12 +152,12 @@ public class FolderIndicatorDot extends BaseRenderable {
         dVar.m(0.0f);
         dVar.h(this.i);
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 750, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 750, dVar);
         d dVar2 = new d();
         dVar2.a(VEasing.Back.easeIn);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, 750, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 750, dVar2);
         this.e.visible(true);
     }
 

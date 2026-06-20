@@ -118,7 +118,7 @@ public class RendererImpl implements GLSurfaceView.Renderer {
         GLES20.glClear(16384);
         this.d = false;
         this.e = false;
-        com.censivn.C3DEngine.b.g.c.a();
+        com.censivn.C3DEngine.b.g.TweenUtils.a();
         com.censivn.C3DEngine.C3DEngine.a().a();
         b();
         if (!this.d || !a()) {

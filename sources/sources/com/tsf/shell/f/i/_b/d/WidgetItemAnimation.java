@@ -4,14 +4,14 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetItemAnimation {
-    private com.censivn.C3DEngine.b.g.d a;
-    private com.censivn.C3DEngine.b.g.d b;
-    private com.censivn.C3DEngine.b.g.d c;
-    private com.censivn.C3DEngine.b.g.d d;
-    private com.censivn.C3DEngine.b.g.d e;
-    private com.censivn.C3DEngine.b.g.d f;
-    private com.censivn.C3DEngine.b.g.d g;
-    private com.censivn.C3DEngine.b.g.d h;
+    private com.censivn.C3DEngine.b.g.TweenParams a;
+    private com.censivn.C3DEngine.b.g.TweenParams b;
+    private com.censivn.C3DEngine.b.g.TweenParams c;
+    private com.censivn.C3DEngine.b.g.TweenParams d;
+    private com.censivn.C3DEngine.b.g.TweenParams e;
+    private com.censivn.C3DEngine.b.g.TweenParams f;
+    private com.censivn.C3DEngine.b.g.TweenParams g;
+    private com.censivn.C3DEngine.b.g.TweenParams h;
     private b i;
 
     public WidgetItemAnimation(b bVar) {
@@ -25,40 +25,40 @@ public class WidgetItemAnimation {
 
     private void c() {
         j jVar = WorkspaceShortcutItem.l;
-        this.a = new com.censivn.C3DEngine.b.g.d();
+        this.a = new com.censivn.C3DEngine.b.g.TweenParams();
         this.a.l(1.2f);
         this.a.m(1.2f);
         this.a.f(jVar.c().folder.backPlaneX + ((jVar.c().folder.frontPlaneX - jVar.c().folder.backPlaneX) * 1.2f));
         this.a.h(jVar.c().folder.backPlaneY + ((jVar.c().folder.frontPlaneY - jVar.c().folder.backPlaneY) * 1.2f));
-        this.b = new com.censivn.C3DEngine.b.g.d();
+        this.b = new com.censivn.C3DEngine.b.g.TweenParams();
         this.b.l(1.2f);
         this.b.m(1.2f);
         this.b.f(jVar.c().folder.backPlaneX);
         this.b.h(jVar.c().folder.backPlaneY);
-        this.c = new com.censivn.C3DEngine.b.g.d();
+        this.c = new com.censivn.C3DEngine.b.g.TweenParams();
         this.c.l(1.2f);
         this.c.m(1.2f);
         this.c.f(jVar.c().folder.backPlaneX + ((jVar.c().folder.textPlaneX - jVar.c().folder.backPlaneX) * 1.2f));
         this.c.h(jVar.c().folder.backPlaneY + ((jVar.c().folder.textPlaneY - jVar.c().folder.backPlaneY) * 1.2f));
         if (jVar.c().folder.sizePlaneEnable) {
-            this.d = new com.censivn.C3DEngine.b.g.d();
+            this.d = new com.censivn.C3DEngine.b.g.TweenParams();
             this.d.l(1.2f);
             this.d.m(1.2f);
             this.d.f(jVar.c().folder.backPlaneX + ((jVar.c().folder.sizePlaneX - jVar.c().folder.backPlaneX) * 1.2f));
             this.d.h((1.2f * (jVar.c().folder.sizePlaneY - jVar.c().folder.backPlaneY)) + jVar.c().folder.backPlaneY);
         }
-        this.e = new com.censivn.C3DEngine.b.g.d();
+        this.e = new com.censivn.C3DEngine.b.g.TweenParams();
         this.e.l(1.0f);
         this.e.m(1.0f);
         this.e.f(jVar.c().folder.frontPlaneX);
         this.e.h(jVar.c().folder.frontPlaneY);
-        this.f = new com.censivn.C3DEngine.b.g.d();
+        this.f = new com.censivn.C3DEngine.b.g.TweenParams();
         this.f.l(1.0f);
         this.f.m(1.0f);
         this.f.f(jVar.c().folder.backPlaneX);
         this.f.h(jVar.c().folder.backPlaneY);
-        this.g = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WidgetItemAnimation.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.g = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WidgetItemAnimation.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 ItemStubHelper.this.i.ba();
                 if (ItemStubHelper.this.i.x) {
@@ -71,7 +71,7 @@ public class WidgetItemAnimation {
         this.g.f(jVar.c().folder.textPlaneX);
         this.g.h(jVar.c().folder.textPlaneY);
         if (jVar.c().folder.sizePlaneEnable) {
-            this.h = new com.censivn.C3DEngine.b.g.d();
+            this.h = new com.censivn.C3DEngine.b.g.TweenParams();
             this.h.l(1.0f);
             this.h.m(1.0f);
             this.h.f(jVar.c().folder.sizePlaneX);
@@ -103,85 +103,85 @@ public class WidgetItemAnimation {
 
     public void b() {
         j jVar = WorkspaceShortcutItem.l;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         if (this.i.q != null) {
-            com.censivn.C3DEngine.b.g.c.a(this.i.q);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q);
             dVar.l(0.0f);
             dVar.m(0.0f);
             dVar.f(jVar.c().folder.backPlaneX);
             dVar.h(jVar.c().folder.backPlaneY);
-            com.censivn.C3DEngine.b.g.c.a(this.i.q, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q, 300, dVar);
         }
         if (this.i.p != null) {
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
-            com.censivn.C3DEngine.b.g.c.a(this.i.p);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p);
             dVar2.l(0.0f);
             dVar2.m(0.0f);
             dVar2.f(jVar.c().folder.backPlaneX);
             dVar2.h(jVar.c().folder.backPlaneY);
-            com.censivn.C3DEngine.b.g.c.a(this.i.p, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p, 300, dVar2);
         }
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WidgetItemAnimation.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WidgetItemAnimation.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 ItemStubHelper.this.i.ba();
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.i.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r);
         dVar3.l(0.0f);
         dVar3.m(0.0f);
         dVar3.f(jVar.c().folder.backPlaneX);
         dVar3.h(jVar.c().folder.backPlaneY);
-        com.censivn.C3DEngine.b.g.c.a(this.i.r, 300, dVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r, 300, dVar3);
         if (this.i.s != null) {
-            com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
-            com.censivn.C3DEngine.b.g.c.a(this.i.s);
+            com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s);
             dVar4.l(0.0f);
             dVar4.m(0.0f);
             dVar4.f(jVar.c().folder.backPlaneX);
             dVar4.h(jVar.c().folder.backPlaneY);
-            com.censivn.C3DEngine.b.g.c.a(this.i.s, 300, dVar4);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s, 300, dVar4);
         }
     }
 
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         w.a(3);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(0.8f);
         dVar.m(0.8f);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
         this.i.aZ();
         WorkspaceShortcutItem.m.d(this.i);
-        com.censivn.C3DEngine.b.g.c.a(this.i.q);
-        com.censivn.C3DEngine.b.g.c.a(this.i.q, 300, this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.i.p);
-        com.censivn.C3DEngine.b.g.c.a(this.i.p, 300, this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.i.r);
-        com.censivn.C3DEngine.b.g.c.a(this.i.r, 300, this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q, 300, this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p, 300, this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r, 300, this.c);
         if (this.i.s != null) {
-            com.censivn.C3DEngine.b.g.c.a(this.i.s);
-            com.censivn.C3DEngine.b.g.c.a(this.i.s, 300, this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s, 300, this.d);
         }
     }
 
     public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (iVar != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
         }
-        com.censivn.C3DEngine.b.g.c.a(this.i.q);
-        com.censivn.C3DEngine.b.g.c.a(this.i.q, 300, this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.i.p);
-        com.censivn.C3DEngine.b.g.c.a(this.i.p, 300, this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.i.r);
-        com.censivn.C3DEngine.b.g.c.a(this.i.r, 300, this.g);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.q, 300, this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.p, 300, this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.r, 300, this.g);
         if (this.i.s != null) {
-            com.censivn.C3DEngine.b.g.c.a(this.i.s);
-            com.censivn.C3DEngine.b.g.c.a(this.i.s, 300, this.h);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i.s, 300, this.h);
         }
     }
 }

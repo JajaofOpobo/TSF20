@@ -54,7 +54,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     private com.tsf.shell.f.b.ShellKeyEventHandler S;
     private com.censivn.C3DEngine.b.f.BaseRenderable T;
     private int U;
-    private com.censivn.C3DEngine.b.g.d V;
+    private com.censivn.C3DEngine.b.g.TweenParams V;
     private com.tsf.shell.f.i.MultiSelectController W;
     private boolean X;
     private boolean Y;
@@ -194,15 +194,15 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             position().setAllFrom(bVar2.position());
             bVar2.position().setAllFrom(this.o.globalToLocal(Number3d.TEMPNUMBER3D));
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 FolderShortcutItem.this.n(true);
                 FolderShortcutItem.this.a(false, (Runnable) null, true);
                 FolderShortcutItem.this.bh();
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 bVar2.g(1.0f - f);
             }
@@ -210,8 +210,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         dVar.f(0.0f);
         dVar.h(60.0f);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(bVar2);
-        com.censivn.C3DEngine.b.g.c.a(bVar2, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, 500, dVar);
         this.J.a(0.0f);
         a(iVar);
     }
@@ -225,13 +225,13 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.o.globalToLocal(Number3d.TEMPNUMBER3D);
         float f = Number3d.TEMPNUMBER3D.x;
         float f2 = Number3d.TEMPNUMBER3D.y;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.12
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.12
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 FolderShortcutItem.this.H.g(f3);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) FolderShortcutItem.this.parent();
                 int childIndexOf = jVar.getChildIndexOf(FolderShortcutItem.this);
@@ -253,14 +253,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         dVar.f(FolderItemBackground);
         dVar.h(f2);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.H);
-        com.censivn.C3DEngine.b.g.c.a(this.H, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.H);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.H, 300, dVar);
         if (iVar != null) {
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.l(1.0f);
             dVar2.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 300, dVar2);
         }
     }
 
@@ -283,7 +283,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         rotation().setAllFrom(bVar.rotation());
         scale().setAllFrom(bVar.scale());
         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.o.getChildAt(0);
-        com.censivn.C3DEngine.b.g.c.a(bVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar3);
         bVar.position().setAllFrom(bVar3.position());
         bVar.rotation().setAllFrom(bVar3.rotation());
         bVar.scale().setAllFrom(bVar3.scale());
@@ -916,7 +916,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     public void aR() {
-        com.censivn.C3DEngine.b.g.d dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
         this.ab = false;
         k = this;
         l.a(this.o.numChildren());
@@ -949,23 +949,23 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.T = com.tsf.shell.manager.app.TaskScheduler.a(this.S);
         switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
-                dVar = new com.censivn.C3DEngine.b.g.d();
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
                 break;
             case 1:
-                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.3
-                    @Override // com.censivn.C3DEngine.b.g.d
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.3
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         FolderShortcutItem.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
                 break;
             default:
-                dVar = new com.censivn.C3DEngine.b.g.d();
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.b) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
                 break;
         }
         dVar.l(1.0f);
@@ -973,8 +973,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         dVar.f(0.0f);
         dVar.h(0 - l.m);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 350, dVar);
         l.a(500, this);
         removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.c();
@@ -1001,7 +1001,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.g.d dVar;
+                    com.censivn.C3DEngine.b.g.TweenParams dVar;
                     com.tsf.shell.f.i.b.d.FolderItemPositioner jVar = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
                     com.tsf.shell.f.i.b.d.FolderItemPositioner.N.alpha(0.0f);
                     com.tsf.shell.f.i.b.d.FolderItemPositioner jVar2 = com.tsf.shell.f.i.b.d.FolderShortcutItem.l;
@@ -1025,7 +1025,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         if (FolderShortcutItem.this.aa != null) {
                             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
                             FolderShortcutItem.this.aa.localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-                            dVar = new com.censivn.C3DEngine.b.g.d();
+                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                             dVar.f(FolderShortcutItem.this.L.x);
                             dVar.h(FolderShortcutItem.this.L.y);
                             dVar.l(Number3d.TEMPNUMBER3D2.x);
@@ -1042,12 +1042,12 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                                 FolderShortcutItem.this.L.y = FolderShortcutItem.this.K().cellYH;
                                 FolderShortcutItem.this.M.z = FolderShortcutItem.this.K().rotationH;
                             }
-                            dVar = new com.censivn.C3DEngine.b.g.d();
+                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                             dVar.f(FolderShortcutItem.this.L.x);
                             dVar.h(FolderShortcutItem.this.L.y);
                             dVar.e(FolderShortcutItem.this.M.z);
                         }
-                        com.censivn.C3DEngine.b.g.c.a(FolderShortcutItem.this, 380, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(FolderShortcutItem.this, 380, dVar);
                     } else {
                         if (FolderShortcutItem.this.aa == null) {
                             if (com.censivn.C3DEngine.b.b.A.O) {
@@ -1255,7 +1255,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.o.children().get((iAW - i8) - 1);
                 final com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2Final = bVar2;
                 bVar2.mouseEnabled(false);
-                com.censivn.C3DEngine.b.g.d dVar = null;
+                com.censivn.C3DEngine.b.g.TweenParams dVar = null;
                 if (i8 < i7) {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild = l.c().folder.sampleList.get(i8);
                     if (bVar2.scale().x == 0.0f) {
@@ -1263,8 +1263,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         bVar2.rotation().setAllFrom(systemFolderChild.rotation);
                     }
                     bVar2.alpha(255.0f);
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.5
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.5
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             if (bVar2Final.aJ() != 0.0f) {
                                 bVar2Final.g(1.0f - f);
@@ -1301,13 +1301,13 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 } else {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild2 = l.c().folder.sampleList.get(i8 % i7);
                     if (bVar2.visible()) {
-                        dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.6
-                            @Override // com.censivn.C3DEngine.b.g.d
+                        dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.6
+                            @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a() {
                                 bVar2Final.visible(false);
                             }
 
-                            @Override // com.censivn.C3DEngine.b.g.d
+                            @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a(float f) {
                                 if (bVar2Final.aJ() != 0.0f) {
                                     bVar2Final.g(1.0f - f);
@@ -1400,8 +1400,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         this.V = dVar;
                         i2 = i3;
                     } else {
-                        com.censivn.C3DEngine.b.g.c.a(bVar2);
-                        com.censivn.C3DEngine.b.g.c.a(bVar2, i3, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, i3, dVar);
                         bVar2.visible(true);
                         bVar2 = bVar;
                         i2 = i3;
@@ -1416,8 +1416,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 i6 = i;
                 bVar = bVar2;
             }
-            com.censivn.C3DEngine.b.g.c.a(bVar);
-            com.censivn.C3DEngine.b.g.c.a(bVar, i5, this.V);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, i5, this.V);
             bVar.visible(true);
             return;
         }
@@ -1470,14 +1470,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 final com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.o.children().get(i4);
                 bVar2.alpha(255.0f);
                 Number3d number3dD = d((iAW - i4) - 1);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.9
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.9
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         bVar2.visible(true);
                         bVar2.g(FolderItemBackground);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (i4 == i9) {
                             FolderShortcutItem.this.bk();
@@ -1518,8 +1518,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         dVar.b(((iAW - i4) - 1) * 40);
                         break;
                 }
-                com.censivn.C3DEngine.b.g.c.a(bVar2);
-                com.censivn.C3DEngine.b.g.c.a(bVar2, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, VEasing.Linear.easeNone, dVar);
                 i3 = i4 - 1;
             } else {
                 return;
@@ -1605,7 +1605,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     public void p(boolean z) {
-        com.censivn.C3DEngine.b.g.d dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
         if (this.ad != null) {
             int size = this.ad.size();
             if (size > 0) {
@@ -1619,8 +1619,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 bVar.removeFromParent();
                 this.o.addChild(bVar);
                 if (i == size - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.10
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.10
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             Iterator it = FolderShortcutItem.this.ad.iterator();
                             while (it.hasNext()) {
@@ -1633,14 +1633,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                             FolderShortcutItem.this.bh();
                         }
 
-                        @Override // com.censivn.C3DEngine.b.g.d
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
                         }
                     };
                 } else {
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.11
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.11
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
                         }
@@ -1648,7 +1648,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 }
                 if (z) {
                     int i2 = l.c().folder.sampleCount;
-                    com.censivn.C3DEngine.b.g.c.a(bVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
                     if (i < size - i2) {
                         bVar.alpha(255.0f);
                         bVar.visible(false);
@@ -1657,15 +1657,15 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                         dVar.e(0.0f);
                         dVar.a(255);
-                        com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
                     }
                 } else {
                     dVar.f(0.0f);
                     dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                     dVar.e(0.0f);
                     dVar.a(255);
-                    com.censivn.C3DEngine.b.g.c.a(bVar);
-                    com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
                 }
             }
         }
@@ -1674,8 +1674,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     @Override // com.tsf.shell.f.e.a.AlignmentListener
     public void e() {
         this.z = true;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.13
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.13
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = FolderShortcutItem.this.p.alpha();
                 if (FolderShortcutItem.this.q != null) {
@@ -1685,15 +1685,15 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 300, dVar);
         aF().b(0.1f);
     }
 
     @Override // com.tsf.shell.f.e.a.AlignmentListener
     public void i() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.14
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.14
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = FolderShortcutItem.this.p.alpha();
                 if (FolderShortcutItem.this.q != null) {
@@ -1703,8 +1703,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             }
         };
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 300, dVar);
         bg();
         this.z = false;
     }

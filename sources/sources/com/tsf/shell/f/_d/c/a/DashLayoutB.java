@@ -26,7 +26,7 @@ public class DashLayoutB extends DashLayoutContainer {
         float f2 = fA2 / 2.0f;
         for (int i = 0; i < 4; i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             if (i == 3) {
                 dVar.a(runnable);
             }
@@ -38,8 +38,8 @@ public class DashLayoutB extends DashLayoutContainer {
             dVar.f(fA);
             dVar.h(f2);
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
-            com.censivn.C3DEngine.b.g.c.a(bVarA);
-            com.censivn.C3DEngine.b.g.c.a(bVarA, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 500, dVar);
             f2 -= f;
         }
     }
@@ -48,7 +48,7 @@ public class DashLayoutB extends DashLayoutContainer {
     public void b(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         for (int i = 0; i < 4; i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(0.0f);
             dVar.m(0.0f);
             dVar.f(0.0f);
@@ -56,8 +56,8 @@ public class DashLayoutB extends DashLayoutContainer {
             if (i == 3) {
                 dVar.a(runnable);
             }
-            com.censivn.C3DEngine.b.g.c.a(bVarA);
-            com.censivn.C3DEngine.b.g.c.a(bVarA, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 500, dVar);
         }
     }
 
@@ -112,25 +112,25 @@ public class DashLayoutB extends DashLayoutContainer {
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
     public void a(DashLayoutA.c cVar) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(c(cVar));
-        com.censivn.C3DEngine.b.g.c.a(cVar.d);
-        com.censivn.C3DEngine.b.g.c.a(cVar.d, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar.d, 250, dVar);
     }
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
     public void b(DashLayoutA.c cVar) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(d(cVar));
-        com.censivn.C3DEngine.b.g.c.a(cVar.d);
-        com.censivn.C3DEngine.b.g.c.a(cVar.d, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar.d, 250, dVar);
     }
 
-    private void a(DashLayoutA.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.b bVar) {
+    private void a(DashLayoutA.c cVar, int i, int i2, com.censivn.C3DEngine.b.g.TweenCallback bVar) {
         cVar.scale().x = 0.0f;
         cVar.scale().y = 0.0f;
         cVar.d.position().x = d(cVar);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(1.0f);
         dVar.m(1.0f);
         if (this.d) {
@@ -143,17 +143,17 @@ public class DashLayoutB extends DashLayoutContainer {
             dVar.b(i2);
         }
         dVar.a(bVar);
-        com.censivn.C3DEngine.b.g.c.a(cVar);
-        com.censivn.C3DEngine.b.g.c.a(cVar, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar, 300, dVar);
     }
 
     private void a(DashLayoutA.c cVar, int i, float f) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(0.0f);
         dVar.m(0.0f);
         dVar.f(0.0f);
         dVar.h(f);
-        com.censivn.C3DEngine.b.g.c.a(cVar);
-        com.censivn.C3DEngine.b.g.c.a(cVar, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(cVar, 300, dVar);
     }
 }

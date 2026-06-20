@@ -85,19 +85,19 @@ public class ItemPositionAnimator {
         this.r = this.e.rotation().z;
         if (this.r != 0.0f) {
             this.s = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.e(0.0f);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
         } else {
             if (this.e.scale().x != 1.0f) {
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar2);
             }
             this.s = false;
         }
@@ -132,25 +132,25 @@ public class ItemPositionAnimator {
                     public void run() {
                         if (!k.this.s) {
                             if (k.this.u != null && k.this.e.scale().x != k.this.u.scale().x) {
-                                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                                 dVar.l(k.this.u.scale().x);
                                 dVar.m(k.this.u.scale().y);
-                                com.censivn.C3DEngine.b.g.c.a(k.this.e);
-                                com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar);
+                                com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e);
+                                com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e, 250, dVar);
                             }
                         } else if (!z) {
                             if (k.this.u != null) {
                                 k.this.e.scale().setAllFrom(k.this.u.scale());
                             }
                         } else {
-                            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                             if (k.this.u != null) {
                                 dVar2.l(k.this.u.scale().x);
                                 dVar2.m(k.this.u.scale().y);
                             }
                             dVar2.e(k.this.r);
-                            com.censivn.C3DEngine.b.g.c.a(k.this.e);
-                            com.censivn.C3DEngine.b.g.c.a(k.this.e, 250, dVar2);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e, 250, dVar2);
                         }
                         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
                         k.this.e.removeFromParent();

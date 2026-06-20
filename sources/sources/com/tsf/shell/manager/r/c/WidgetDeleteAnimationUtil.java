@@ -19,8 +19,8 @@ public class WidgetDeleteAnimationUtil {
             a(((com.tsf.shell.f.i.b.b.ItemShell) bVar).h, bVar);
         }
         bVar.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
@@ -31,8 +31,8 @@ public class WidgetDeleteAnimationUtil {
         dVar.l(0.0f);
         dVar.m(0.0f);
         dVar.n(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(bVar);
-        com.censivn.C3DEngine.b.g.c.a(bVar, VEasing.Back.easeIn, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, VEasing.Back.easeIn, dVar);
         bVar.p_();
     }
 

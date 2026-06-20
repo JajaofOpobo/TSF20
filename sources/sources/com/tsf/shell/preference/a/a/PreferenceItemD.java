@@ -128,10 +128,10 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.c {
     @Override // com.censivn.C3DEngine.b.e.c
     public void f() {
         this.k.alpha(0.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.k);
-        com.censivn.C3DEngine.b.g.c.a(this.k, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.k);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.k, 500, dVar);
         this.k.f(com.tsf.shell.manager.app.WidgetPanelController.c());
         int i = com.tsf.shell.manager.app.WidgetPanelController.b.i();
         this.a.k(i);

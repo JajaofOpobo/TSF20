@@ -60,9 +60,9 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
     public void a(int i, boolean z) {
         super.a(i, z);
         float fR = r();
-        com.censivn.C3DEngine.b.g.c.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             if (i == DrawerItemContainer.b) {
                 dVar.e(0.0f);
             } else {
@@ -70,7 +70,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
             }
             dVar.f(fR);
             dVar.a(com.censivn.C3DEngine.b.g.a.n);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
             return;
         }
         this.e.position().x = fR;

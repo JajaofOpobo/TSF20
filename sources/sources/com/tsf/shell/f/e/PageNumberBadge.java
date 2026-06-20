@@ -31,10 +31,10 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             }
             this.e.textures().clear();
             this.e.textures().addElement(this.b);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Back.easeIn, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Back.easeIn, dVar);
             if (parent() == null) {
                 com.tsf.shell.manager.app.TaskScheduler.a(this);
             }
@@ -45,8 +45,8 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
     public void a() {
         if (this.f) {
             this.f = false;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageNumberBadge.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageNumberBadge.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     com.tsf.shell.manager.app.TaskScheduler.b(r.this);
                     if (r.this.a.id != 0) {
@@ -58,8 +58,8 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Back.easeIn, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Back.easeIn, dVar);
             if (this.d != null) {
                 this.d.b(0);
                 this.d = null;
@@ -144,7 +144,7 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             this.g = i;
             alpha(0.0f);
             c(i2);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             switch (SelectionFrame) {
                 case 0:
                     position().x = 0.0f;
@@ -158,8 +158,8 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             }
             dVar.f(0.0f);
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, VEasing.Back.easeIn, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, VEasing.Back.easeIn, dVar);
             r.this.addChild(this);
         }
 
@@ -168,8 +168,8 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
         }
 
         public void b(int i) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageNumberBadge.a.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageNumberBadge.a.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     r.this.a(a.this);
                 }
@@ -186,8 +186,8 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
                     break;
             }
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, VEasing.Back.easeIn, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, VEasing.Back.easeIn, dVar);
         }
     }
 }

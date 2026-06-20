@@ -5,8 +5,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.a.PageContainerView0133a;
@@ -223,7 +223,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             }
             final C0109a c0109a = this.a;
             d dVar = new d() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.2
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     int i2 = 0;
                     while (true) {
@@ -238,7 +238,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     for (int i2 = 0; i2 < iB; i2++) {
                         com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = c0109a.a.a(i2);
@@ -250,7 +250,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                     a.this.f = false;
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void c() {
                     a.this.f = false;
                 }

@@ -44,8 +44,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     private BaseRenderable E;
     private com.tsf.shell.f.h.DockOperationBorder F;
     private com.tsf.shell.f.h.DockOperationBorder G;
-    private com.censivn.C3DEngine.b.g.d K;
-    private com.censivn.C3DEngine.b.g.d L;
+    private com.censivn.C3DEngine.b.g.TweenParams K;
+    private com.censivn.C3DEngine.b.g.TweenParams L;
     private GridRenderable M;
     private g N;
     private float O;
@@ -59,12 +59,12 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     private float W;
     private boolean Y;
     private boolean Z;
-    private com.censivn.C3DEngine.b.g._b.b ae;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper ae;
     private boolean af;
-    private com.censivn.C3DEngine.b.g.d ag;
-    private com.censivn.C3DEngine.b.g.d ah;
-    private com.censivn.C3DEngine.b.g.d am;
-    private com.censivn.C3DEngine.b.g.d an;
+    private com.censivn.C3DEngine.b.g.TweenParams ag;
+    private com.censivn.C3DEngine.b.g.TweenParams ah;
+    private com.censivn.C3DEngine.b.g.TweenParams am;
+    private com.censivn.C3DEngine.b.g.TweenParams an;
     public com.tsf.shell.f.c.a.a.DrawerAnimConfig n;
     /* JADX WARN: decompile error - Runnable type artifact */
     private Runnable mRefreshRunnable;
@@ -249,11 +249,11 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         float f5;
         float f6;
         float f7;
-        this.ag = new com.censivn.C3DEngine.b.g.d();
+        this.ag = new com.censivn.C3DEngine.b.g.TweenParams();
         this.ag.l(1.0f);
         this.ag.m(1.0f);
-        this.ah = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.ah = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.P.visible(false);
             }
@@ -271,7 +271,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         C();
         this.D = new BaseRenderable();
         this.C = new BaseRenderable();
-        this.ae = new com.censivn.C3DEngine.b.g._b.b();
+        this.ae = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
         this.t = new BaseRenderable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.9
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
@@ -387,10 +387,10 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.M = new GridRenderable(0.0f, this.J.height * com.censivn.C3DEngine.b.b.A.b);
         this.M.textures().addElement(this.J);
         this.M.alpha(0.0f);
-        this.K = new com.censivn.C3DEngine.b.g.d();
+        this.K = new com.censivn.C3DEngine.b.g.TweenParams();
         this.K.a(255);
-        this.L = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.11
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.L = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.11
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.M.removeFromParent();
             }
@@ -618,8 +618,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                         f.this.M.rotation().z = 0.0f;
                         f.this.M.a(com.censivn.C3DEngine.b.b.A.F * 2);
                     }
-                    com.censivn.C3DEngine.b.g.c.a(f.this.M);
-                    com.censivn.C3DEngine.b.g.c.a(f.this.M, VEasing.Linear.easeNone, f.this.K);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M, VEasing.Linear.easeNone, f.this.K);
                 }
             });
         }
@@ -631,8 +631,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.g.c.a(f.this.M);
-                    com.censivn.C3DEngine.b.g.c.a(f.this.M, VEasing.Linear.easeNone, f.this.L);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M, VEasing.Linear.easeNone, f.this.L);
                 }
             });
         }
@@ -779,10 +779,10 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             boolean z = this.N.a() != 0.0f;
             if (this.v > 0.0f) {
                 if (z) {
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                     dVar.e(-90.0f);
-                    com.censivn.C3DEngine.b.g.c.a(this.N);
-                    com.censivn.C3DEngine.b.g.c.a(this.N, 300, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.N);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.N, 300, dVar);
                 } else {
                     this.N.rotation().z = -90.0f;
                 }
@@ -798,10 +798,10 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 }
             }
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.e(90.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.N);
-                com.censivn.C3DEngine.b.g.c.a(this.N, 300, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.N);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.N, 300, dVar2);
             } else {
                 this.N.rotation().z = 90.0f;
             }
@@ -828,10 +828,10 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         boolean z = this.N.a() != 0.0f;
         if (this.u > 0.0f) {
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.e(180.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.N);
-                com.censivn.C3DEngine.b.g.c.a(this.N, 300, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.N);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.N, 300, dVar);
             } else {
                 this.N.rotation().z = 180.0f;
             }
@@ -841,10 +841,10 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             return;
         }
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.e(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.N);
-            com.censivn.C3DEngine.b.g.c.a(this.N, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.N);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.N, 300, dVar2);
         } else {
             this.N.rotation().z = 0.0f;
         }
@@ -895,14 +895,14 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             this.S.f();
             this.ad = false;
             final float fA = this.N.a();
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f2) {
                     f.this.a(fA * (1.0f - f2), true);
                 }
             };
-            com.censivn.C3DEngine.b.g.c.a(this.ae);
-            com.censivn.C3DEngine.b.g.c.a(this.ae, 600, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.ae);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.ae, 600, dVar);
             H();
         }
     }
@@ -910,16 +910,16 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     private void d(boolean z) {
         this.P.visible(true);
         if (z) {
-            com.censivn.C3DEngine.b.g.c.a(this.P);
-            com.censivn.C3DEngine.b.g.c.a(this.P, 600, this.ag);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.P);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.P, 600, this.ag);
         } else {
             this.P.scale().setAll(1.0f, 1.0f, 1.0f);
         }
     }
 
     private void H() {
-        com.censivn.C3DEngine.b.g.c.a(this.P);
-        com.censivn.C3DEngine.b.g.c.a(this.P, 600, this.ah);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.P);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.P, 600, this.ah);
     }
 
     public float w() {
@@ -943,21 +943,21 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             final float fA2 = this.N.a();
             final boolean z2 = this.af ? false : true;
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.6
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.6
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f3) {
                         f.this.a(fA2 + ((fA - fA2) * f3), z2);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (runnable != null) {
                             runnable.run();
                         }
                     }
                 };
-                com.censivn.C3DEngine.b.g.c.a(this.ae);
-                com.censivn.C3DEngine.b.g.c.a(this.ae, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.ae);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.ae, 500, dVar);
             } else {
                 a(fA, z2);
                 if (runnable != null) {
@@ -979,8 +979,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             Number3d number3dA = this.n.a(this.t);
             if (z) {
                 if (this.an == null) {
-                    this.an = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.7
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    this.an = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.7
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             f.this.t.visible(false);
                         }
@@ -988,8 +988,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 }
                 this.an.f(number3dA.x);
                 this.an.h(number3dA.y);
-                com.censivn.C3DEngine.b.g.c.a(this.t);
-                com.censivn.C3DEngine.b.g.c.a(this.t, 600, this.an);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.t);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.t, 600, this.an);
                 return;
             }
             this.t.visible(false);
@@ -1004,8 +1004,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             this.t.visible(true);
             Number3d number3dB = this.n.b(this.t);
             if (this.am == null) {
-                this.am = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.8
-                    @Override // com.censivn.C3DEngine.b.g.d
+                this.am = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.8
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         f.this.t.mouseEnabled(true);
                     }
@@ -1013,8 +1013,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             }
             this.am.f(number3dB.x);
             this.am.h(number3dB.y);
-            com.censivn.C3DEngine.b.g.c.a(this.t);
-            com.censivn.C3DEngine.b.g.c.a(this.t, 600, this.am);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.t);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.t, 600, this.am);
         }
     }
 

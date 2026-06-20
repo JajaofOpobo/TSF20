@@ -64,20 +64,20 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     }
 
     public void f() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h((-com.censivn.C3DEngine.b.b.A.E) / 2.0f);
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 350, dVar);
     }
 
     public void g() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(0.0f);
         dVar.a(255);
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
     }
 
     public void a(j jVar) {
@@ -180,35 +180,35 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     public void i() {
         if (!this.h && !this.e.getAnimationObjectState()) {
             this.h = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.WorkspaceStub.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.WorkspaceStub.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     WorkspaceStub.this.d.mouseEnabled(true);
                 }
             };
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 250, dVar);
         }
     }
 
     public void a(float f) {
         this.q = true;
         float fA = this.f.a(WorkspaceWidgetPanel);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(fA);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
         this.s.f();
     }
 
     public void j() {
         this.q = false;
         this.f.a();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
         this.g.setFocus();
         this.s.g();
         com.tsf.shell.manager.app.PanelStateManager.i();
@@ -217,10 +217,10 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
     public void k() {
         if (this.h && !this.i) {
             this.h = false;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 250, dVar);
             this.d.mouseEnabled(false);
         }
     }

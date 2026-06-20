@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.b.h.d;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,7 +17,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
     private float h;
     private float i;
     private float j;
-    private com.censivn.C3DEngine.b.g._b.b k;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper k;
     private C0038b l;
     private float m;
     private float n;
@@ -62,7 +62,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         this.e = new a(this.i, this.i, 0.0f);
         this.d = new a(this.i, 0.0f, 0.0f);
         doubleSidedEnabled(true);
-        this.k = new com.censivn.C3DEngine.b.g._b.b();
+        this.k = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
     }
 
     public void c() {
@@ -82,24 +82,24 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
     public void a(final float f, int i, final Runnable runnable) {
         final float f2 = this.m;
         d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.d.b.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 b.this.a(f2 + ((f - f2) * f3));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.k);
-        com.censivn.C3DEngine.b.g.c.a(this.k, i, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.k);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.k, i, dVar);
     }
 
     public void e() {
-        com.censivn.C3DEngine.b.g.c.a(this.k);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.k);
     }
 
     public void a(float f) {

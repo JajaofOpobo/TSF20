@@ -193,31 +193,31 @@ public class SceneRendererA extends BaseRenderable {
         int i = Integer.parseInt(DateFormat.format("h", calendar).toString());
         int i2 = Integer.parseInt(DateFormat.format("mm", calendar).toString());
         float f = ((i / 12.0f) * 360.0f) + (((i2 / 60.0f) * 360.0f) / 12.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._c.a.c.SceneRendererA.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._c.a.c.SceneRendererA.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
             }
         };
         dVar.e(-f);
         dVar.a(com.censivn.C3DEngine.b.g.a.g);
-        com.censivn.C3DEngine.b.g.c.a(this.i);
-        com.censivn.C3DEngine.b.g.c.a(this.i, 1500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, 1500, dVar);
         float f2 = (i2 / 60.0f) * 360.0f;
         if (Math.abs(f - f2) < 6.0f) {
         }
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._c.a.c.SceneRendererA.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._c.a.c.SceneRendererA.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f3) {
             }
         };
         dVar2.e(-f2);
         dVar2.a(com.censivn.C3DEngine.b.g.a.g);
-        com.censivn.C3DEngine.b.g.c.a(this.h);
-        com.censivn.C3DEngine.b.g.c.a(this.h, 1500, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h, 1500, dVar2);
         SceneRendererA();
     }
 

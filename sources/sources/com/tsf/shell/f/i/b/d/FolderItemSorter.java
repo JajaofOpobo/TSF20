@@ -85,19 +85,19 @@ public class FolderItemSorter {
         this.r = this.e.rotation().z;
         if (this.r != 0.0f) {
             this.s = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.e(0.0f);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
         } else {
             if (this.e.scale().x != 1.0f) {
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar2);
             }
             this.s = false;
         }
@@ -132,25 +132,25 @@ public class FolderItemSorter {
                     public void run() {
                         if (!FolderItemSorter.this.s) {
                             if (FolderItemSorter.this.u != null && FolderItemSorter.this.e.scale().x != FolderItemSorter.this.u.scale().x) {
-                                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                                 dVar.l(FolderItemSorter.this.u.scale().x);
                                 dVar.m(FolderItemSorter.this.u.scale().y);
-                                com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e);
-                                com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e, 250, dVar);
+                                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderItemSorter.this.e);
+                                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderItemSorter.this.e, 250, dVar);
                             }
                         } else if (!z) {
                             if (FolderItemSorter.this.u != null) {
                                 FolderItemSorter.this.e.scale().setAllFrom(FolderItemSorter.this.u.scale());
                             }
                         } else {
-                            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                             if (FolderItemSorter.this.u != null) {
                                 dVar2.l(FolderItemSorter.this.u.scale().x);
                                 dVar2.m(FolderItemSorter.this.u.scale().y);
                             }
                             dVar2.e(FolderItemSorter.this.r);
-                            com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e);
-                            com.censivn.C3DEngine.b.g.c.a(FolderItemSorter.this.e, 250, dVar2);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(FolderItemSorter.this.e);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(FolderItemSorter.this.e, 250, dVar2);
                         }
                         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
                         FolderItemSorter.this.e.removeFromParent();

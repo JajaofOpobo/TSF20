@@ -1,5 +1,5 @@
 package com.censivn.C3DEngine.b.g;
 
-public interface b {
+public interface TweenCallback {
     float a(float f);
 }

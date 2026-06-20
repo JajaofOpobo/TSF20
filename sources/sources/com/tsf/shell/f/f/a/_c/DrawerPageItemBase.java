@@ -55,28 +55,28 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
 
     public void f() {
         this.e.a(1).a((Boolean) true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
         dVar.l(1.0f);
         dVar.m(1.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.e.a(1));
-        com.censivn.C3DEngine.b.g.c.a(this.e.a(1), 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1), 500, dVar);
     }
 
     public void g() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 i.this.e.a(1).a((Boolean) false);
             }
         };
         dVar.l(0.0f);
         dVar.m(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.e.a(1));
-        com.censivn.C3DEngine.b.g.c.a(this.e.a(1), 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1), 500, dVar);
     }
 
     public void c(boolean z) {
@@ -85,8 +85,8 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
             this.f = com.tsf.shell.manager.app.Notifier.a(this.f, this.d);
         }
         b(z);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 i.this.i = true;
                 i.this.m();
@@ -94,8 +94,8 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         };
         dVar.h(com.tsf.shell.f.f.a.PageGridRenderer.a / 2.0f);
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
         removeFromParent();
         this.b.h().addChild(this);
     }
@@ -117,8 +117,8 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         this.i = false;
         com.tsf.shell.manager.app.Notifier.b(this.f);
         a();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.5
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerPageItemBase.5
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 i.this.removeFromParent();
                 i.this.b();
@@ -126,25 +126,25 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         };
         dVar.a(0);
         dVar.h((-com.tsf.shell.f.f.a.PageGridRenderer.a) / 2.0f);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
     }
 
     public void j() {
         if (this.e != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(VEasing.Back.easeIn);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 150, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 150, dVar);
         }
     }
 
     public void k() {
         if (this.e != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(50);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 150, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 150, dVar);
         }
     }
 

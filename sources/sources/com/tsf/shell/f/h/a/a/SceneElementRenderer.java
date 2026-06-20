@@ -149,18 +149,18 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void a(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.SceneElementRenderer.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.SceneElementRenderer.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     d.this.e.removeFromParent();
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 300, dVar);
             return;
         }
-        com.censivn.C3DEngine.b.g.c.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
         this.e.alpha(0.0f);
         this.e.removeFromParent();
     }
@@ -168,13 +168,13 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void b(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 300, dVar);
             return;
         }
-        com.censivn.C3DEngine.b.g.c.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
         this.e.alpha(255.0f);
     }
 }

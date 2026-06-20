@@ -4,10 +4,10 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
-import com.censivn.C3DEngine.b.g.a.c;
+import com.censivn.C3DEngine.b.g.a.AbstractTween;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.a {
+public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     public float A;
     public float B;
     public Number3d D;
@@ -312,12 +312,12 @@ public class SpriteItemData implements com.censivn.C3DEngine.b.g._b.a {
         return this.Q / com.censivn.C3DEngine.b.b.A.a;
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
     public c getTweenChild() {
         return this.M;
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
     public void setTweenChild(c cVar) {
         this.M = cVar;
     }

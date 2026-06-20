@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.b.g;
 
-public class c {
+public class TweenUtils {
     public static void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {}
     public static void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i, d dVar) {}
     public static void a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar) {}

@@ -1,11 +1,11 @@
 package com.censivn.C3DEngine.b.g.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c {
+public abstract class AbstractTween {
     public int a = 0;
     public boolean b = false;
 
-    public abstract com.censivn.C3DEngine.b.g.d a();
+    public abstract com.censivn.C3DEngine.b.g.TweenParams a();
 
     public abstract void a(Runnable runnable);
 

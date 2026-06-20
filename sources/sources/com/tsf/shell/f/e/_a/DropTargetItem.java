@@ -187,24 +187,24 @@ public class DropTargetItem {
         h = true;
         com.censivn.C3DEngine.b.c.b.a(f);
         com.tsf.shell.manager.app.ObserverManager.a(g);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._a.DropTargetItem.5
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._a.DropTargetItem.5
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.b.mouseEnabled(true);
             }
         };
         dVar.a(255);
         dVar.h(a);
-        com.censivn.C3DEngine.b.g.c.a(DropTargetKeyHandler);
-        com.censivn.C3DEngine.b.g.c.a(b, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(DropTargetKeyHandler);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(b, 500, dVar);
     }
 
     protected static void c() {
         h = false;
         i.i();
         DropTargetKeyHandler.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._a.DropTargetItem.6
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._a.DropTargetItem.6
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.b.removeFromParent();
                 c.i.h();
@@ -214,8 +214,8 @@ public class DropTargetItem {
         };
         dVar.a(0);
         dVar.h(a - (300.0f * com.censivn.C3DEngine.b.b.A.b));
-        com.censivn.C3DEngine.b.g.c.a(DropTargetKeyHandler);
-        com.censivn.C3DEngine.b.g.c.a(b, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(DropTargetKeyHandler);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(b, 500, dVar);
     }
 
     private static void j() {

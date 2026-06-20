@@ -8,8 +8,8 @@ import com.censivn.C3DEngine.b.c.e;
 import com.censivn.C3DEngine.b.f.BaseColoredRectRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColor;
@@ -225,14 +225,14 @@ public class ToastOverlayController implements e.a {
             }
             this.r = true;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.ToastOverlayController.5
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     com.tsf.shell.manager.n.ToastOverlayController.this.r = false;
                 }
             };
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.b);
-            com.censivn.C3DEngine.b.g.c.a(this.b, 750, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 750, dVar);
         }
     }
 
@@ -252,7 +252,7 @@ public class ToastOverlayController implements e.a {
             }
             this.r = true;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.ToastOverlayController.7
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     com.tsf.shell.manager.n.ToastOverlayController.this.r = false;
                     com.tsf.shell.manager.app.ObserverManager.b(com.tsf.shell.manager.n.ToastOverlayController.this);
@@ -261,8 +261,8 @@ public class ToastOverlayController implements e.a {
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.b);
-            com.censivn.C3DEngine.b.g.c.a(this.b, 750, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 750, dVar);
         }
     }
 
@@ -322,8 +322,8 @@ public class ToastOverlayController implements e.a {
                 d dVar = new d();
                 dVar.h((-com.tsf.shell.manager.n.ToastOverlayController.this.e) / 2.0f);
                 dVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(this);
-                com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
                 if (parent() == null) {
                     com.tsf.shell.manager.n.ToastOverlayController.this.b.addChild(this);
                 }
@@ -334,7 +334,7 @@ public class ToastOverlayController implements e.a {
         public void a(boolean z) {
             final boolean zz = z;
             d dVar = new d() { // from class: com.tsf.shell.manager.n.ToastOverlayController.a.1
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     C0133a.this.removeFromParent();
                     if (zz) {
@@ -344,8 +344,8 @@ public class ToastOverlayController implements e.a {
             };
             dVar.a(0);
             dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
             com.tsf.shell.manager.n.ToastOverlayController.this.a();
         }
 

@@ -465,18 +465,18 @@ public class SelectionState {
         }
 
         private void e() {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.e(50.0f);
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
-            com.censivn.C3DEngine.b.g.c.a(this.a);
-            com.censivn.C3DEngine.b.g.c.a(this.a, VEasing.Linear.easeNone, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, VEasing.Linear.easeNone, dVar);
         }
 
         private void f() {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.e(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.a);
-            com.censivn.C3DEngine.b.g.c.a(this.a, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 300, dVar);
         }
     }
 }

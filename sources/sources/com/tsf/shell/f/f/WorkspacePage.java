@@ -23,7 +23,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     private int MultiSelectController;
     private j.a I;
     private com.tsf.shell.f._d.e.a.DashEffectData J;
-    private com.censivn.C3DEngine.b.g._b.a L;
+    private com.censivn.C3DEngine.b.g._b.ITweenTarget L;
     protected g a;
     protected com.tsf.shell.e.CellLayout b;
     protected com.tsf.shell.f.e.f.EditModeNode c;
@@ -68,7 +68,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
 
     public WorkspacePage() {
         this.u.vTarget = this;
-        this.L = new com.censivn.C3DEngine.b.g._b.b();
+        this.L = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
         this.a = this;
         com.tsf.shell.manager.app.ObserverManager.a(this);
     }
@@ -491,11 +491,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     public void c(boolean z) {
         this.s.removeFromParent();
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.q);
-            com.censivn.C3DEngine.b.g.c.a(this.q, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 500, dVar);
             return;
         }
         this.q.scale().x = 1.0f;
@@ -521,11 +521,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         this.q.scale().setAll(1.0f, 1.0f, 1.0f);
         L();
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(0.28f);
             dVar.m(0.28f);
-            com.censivn.C3DEngine.b.g.c.a(this.q);
-            com.censivn.C3DEngine.b.g.c.a(this.q, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 500, dVar);
             return;
         }
         this.q.scale().x = 0.28f;

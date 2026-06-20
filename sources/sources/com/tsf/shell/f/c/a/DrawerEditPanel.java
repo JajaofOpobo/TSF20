@@ -46,23 +46,23 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         float fP = this.a.p();
-        com.censivn.C3DEngine.b.g._b.b bVar = new com.censivn.C3DEngine.b.g._b.b();
-        com.censivn.C3DEngine.b.g.c.a(bVar, 1000, new AnonymousClass2(fP, fP / 2.0f, bVar));
+        com.censivn.C3DEngine.b.g._b.TweenTargetWrapper bVar = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 1000, new AnonymousClass2(fP, fP / 2.0f, bVar));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.c.a.DrawerEditPanel$2, reason: invalid class name */
-    class AnonymousClass2 extends com.censivn.C3DEngine.b.g.d {
+    class AnonymousClass2 extends com.censivn.C3DEngine.b.g.TweenParams {
         final /* synthetic */ float a;
         final /* synthetic */ float b;
-        final /* synthetic */ com.censivn.C3DEngine.b.g._b.b c;
+        final /* synthetic */ com.censivn.C3DEngine.b.g._b.TweenTargetWrapper c;
 
-        AnonymousClass2(float f, float f2, com.censivn.C3DEngine.b.g._b.b bVar) {
+        AnonymousClass2(float f, float f2, com.censivn.C3DEngine.b.g._b.TweenTargetWrapper bVar) {
             this.a = f;
             this.b = f2;
             this.c = bVar;
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
             float f2 = this.a + ((this.b - this.a) * f);
             e.this.a.a(f2, true);
@@ -70,13 +70,13 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
             e.this.c().position().x = f2;
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.g.c.a(AnonymousClass2.this.c, 1000, new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1.1
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(AnonymousClass2.this.c, 1000, new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.2.1.1
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             float f2 = AnonymousClass2.this.b + ((AnonymousClass2.this.a - AnonymousClass2.this.b) * f);
                             e.this.a.a(f2, true);
@@ -84,7 +84,7 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
                             e.this.c().position().x = f2;
                         }
 
-                        @Override // com.censivn.C3DEngine.b.g.d
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             e.this.g();
                             e.this.f();
@@ -138,11 +138,11 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         Number3d number3dLocalToGlobal = this.a.h().localToGlobal(Number3d.TEMPNUMBER3D);
         float[] fArrA = x.a(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
         this.a.g().a(fArrA[0], fArrA[1]);
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 4000, new AnonymousClass6(fArrA, this.a.g().k()));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 4000, new AnonymousClass6(fArrA, this.a.g().k()));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.c.a.DrawerEditPanel$6, reason: invalid class name */
-    class AnonymousClass6 extends com.censivn.C3DEngine.b.g.d {
+    class AnonymousClass6 extends com.censivn.C3DEngine.b.g.TweenParams {
         final /* synthetic */ float[] a;
         final /* synthetic */ float b;
 
@@ -151,7 +151,7 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
             this.b = f;
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
             float fSin = (float) Math.sin(3.141592653589793d * ((double) f));
             float f2 = this.a[0] + (this.b * fSin);
@@ -161,7 +161,7 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
             e.this.a.g().b(f2, f3);
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
             e.this.f();
             e.this.g();

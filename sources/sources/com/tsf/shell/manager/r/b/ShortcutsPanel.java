@@ -261,16 +261,16 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
         public boolean b(MotionEvent motionEvent, A aVar, final i iVar) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.b.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.b.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     iVar.removeFromParent();
                     iVar.alpha(255.0f);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
             com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, iVar.position().x, iVar.position().y);
             return true;
         }

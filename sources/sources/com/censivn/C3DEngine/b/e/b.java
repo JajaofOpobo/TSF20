@@ -134,12 +134,12 @@ public class b extends g {
 
         public void a(boolean z) {
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
-                dVar.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Back.easeIn, dVar);
+                dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Back.easeIn, dVar);
                 return;
             }
             this.e.k().x = 1.0f;
@@ -153,11 +153,11 @@ public class b extends g {
 
         public void b(boolean z) {
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(0.0f);
                 dVar.m(0.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Back.easeIn, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Back.easeIn, dVar);
                 return;
             }
             this.e.k().x = 0.0f;

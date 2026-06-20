@@ -6,8 +6,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 

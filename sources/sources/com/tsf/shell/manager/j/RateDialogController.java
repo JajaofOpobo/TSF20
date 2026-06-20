@@ -28,10 +28,10 @@ public class RateDialogController {
 
     public void b() {
         this.a.c();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 300, dVar);
         com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialogController.2
             @Override // java.lang.Runnable
             public void run() {

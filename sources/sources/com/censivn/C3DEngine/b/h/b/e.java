@@ -206,11 +206,11 @@ public class e extends BaseRenderable {
         Number3d number3dA = a(bVar.J());
         this.d.a(bVar, number3dA);
         if (bVar.visible()) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(number3dA.x);
             dVar.h(number3dA.y);
-            com.censivn.C3DEngine.b.g.c.a(bVar);
-            com.censivn.C3DEngine.b.g.c.a(bVar, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 300, dVar);
             return;
         }
         bVar.position().x = number3dA.x;

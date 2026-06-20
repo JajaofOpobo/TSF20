@@ -64,25 +64,25 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
         } else {
             z = false;
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.c.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.c.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (z) {
                     ScrollableItemListPanel.this.b.d();
                     ScrollableItemListPanel.this.b.e();
                 }
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.a(255);
                 dVar2.h(0.0f);
-                dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(ScrollableItemListPanel.this.b);
-                com.censivn.C3DEngine.b.g.c.a(ScrollableItemListPanel.this.b, 500, dVar2);
+                dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(ScrollableItemListPanel.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(ScrollableItemListPanel.this.b, 500, dVar2);
             }
         };
         dVar.a(0);
         dVar.h((-this.a.getHeight()) * 0.8f);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, VEasing.Back.easeIn, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, VEasing.Back.easeIn, dVar);
     }
 
     public i a(E e, int i, i iVar) {
@@ -146,12 +146,12 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                     com.tsf.shell.manager.app.TaskScheduler.a(this.c);
                     ScrollableItemListPanel.this.a(motionEvent, ScrollableItemListPanel.this.d.a().get(i), this.c);
                     this.c.alpha(255.0f);
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                     dVar.l(1.2f);
                     dVar.m(1.2f);
                     dVar.n(1.2f);
-                    com.censivn.C3DEngine.b.g.c.a(this.c);
-                    com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
                     aVar.templeteHide();
                 }
             }

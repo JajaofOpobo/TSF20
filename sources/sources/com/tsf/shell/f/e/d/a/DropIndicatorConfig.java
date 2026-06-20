@@ -59,17 +59,17 @@ public class DropIndicatorConfig {
         if (this.b && this.c.b()) {
             this.b = false;
             this.d.mouseEnabled(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     d.this.i();
                 }
             };
             dVar.f(0.0f);
             dVar.a(255);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
             this.a.e();
             DropIndicatorConfig();
         }
@@ -95,17 +95,17 @@ public class DropIndicatorConfig {
             com.tsf.shell.manager.app.TaskScheduler.a(this.c);
             this.c.a();
             this.d.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     d.this.g();
                 }
             };
             dVar.f(this.c.c() + com.censivn.C3DEngine.b.b.A.a(100.0f));
             dVar.a(50);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
             this.a.a(this.c.c() + com.censivn.C3DEngine.b.b.A.a(100.0f));
             DropIndicatorConfig();
         }

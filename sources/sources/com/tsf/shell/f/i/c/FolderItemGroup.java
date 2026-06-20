@@ -43,8 +43,8 @@ public class FolderItemGroup extends ItemGroupBase {
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
     public void e() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = c.this.m.a.alpha();
                 c.this.m.a.alpha(fAlpha);
@@ -53,14 +53,14 @@ public class FolderItemGroup extends ItemGroupBase {
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.m.a);
-        com.censivn.C3DEngine.b.g.c.a(this.m.a, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m.a, 300, dVar);
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
     public void f() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = c.this.m.a.alpha();
                 c.this.m.a.alpha(fAlpha);
@@ -69,8 +69,8 @@ public class FolderItemGroup extends ItemGroupBase {
             }
         };
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.m.a);
-        com.censivn.C3DEngine.b.g.c.a(this.m.a, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m.a, 300, dVar);
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
@@ -105,7 +105,7 @@ public class FolderItemGroup extends ItemGroupBase {
             com.censivn.C3DEngine.C3DEngine.a().g(this.v);
         }
         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = this.u.get(0);
-        com.censivn.C3DEngine.b.g.c.a(bVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
         bVar.removeFromParent();
         this.l.aX().addChild(bVar);
         float f = (com.censivn.C3DEngine.b.b.A.c * 60.0f) / 2.0f;
@@ -114,7 +114,7 @@ public class FolderItemGroup extends ItemGroupBase {
         for (int i = 0; i < 2; i++) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = this.u.get((size - i) - 1);
             bVar2.removeFromParent();
-            com.censivn.C3DEngine.b.g.c.a(bVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
             this.k.addChild(bVar2);
             bVar2.rotation().z = 0.0f;
             bVar2.scale().setAll(0.4f, 0.4f, 1.0f);

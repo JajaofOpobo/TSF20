@@ -3,7 +3,7 @@ package com.tsf.shell.f._d.a.a;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.A;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonD extends com.tsf.shell.f._d.a.DashElementBase {
@@ -51,27 +51,27 @@ public class DashButtonD extends com.tsf.shell.f._d.a.DashElementBase {
             f3 = com.tsf.shell.manager.o.ButtonPresetManager.a.t * f();
             f4 = f5;
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 d.this.a(aVar, runnable, zAK);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void c() {
                 d.this.a(aVar, zAK);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
                 aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, fPxX + ((f4 - fPxX) * f7), fPxY + ((f - fPxY) * f7), 0.0f);
                 aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, fPxX2 + ((f2 - fPxX2) * f7), fPxY2 + ((f3 - fPxY2) * f7), 0.0f);
                 aVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new DashButtonA.e.C0036a());
-        com.censivn.C3DEngine.b.g.c.a(aVar);
-        com.censivn.C3DEngine.b.g.c.a(aVar, 250, dVar);
+        dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new DashButtonA.e.C0036a());
+        com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 250, dVar);
     }
 
     private float f() {
@@ -84,33 +84,33 @@ public class DashButtonD extends com.tsf.shell.f._d.a.DashElementBase {
         final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.c);
         final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
         final float fPxY2 = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.d);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void c() {
                 d.this.a(aVar, z);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, fPxX + ((com.tsf.shell.manager.o.ButtonPresetManager.a.k - fPxX) * f), fPxY + ((com.tsf.shell.manager.o.ButtonPresetManager.a.s - fPxY) * f), 0.0f);
                 aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.d, fPxX2 + ((com.tsf.shell.manager.o.ButtonPresetManager.a.l - fPxX2) * f), fPxY2 + ((com.tsf.shell.manager.o.ButtonPresetManager.a.t - fPxY2) * f), 0.0f);
                 aVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new DashButtonA.c.C0034a());
-        com.censivn.C3DEngine.b.g.c.a(aVar);
-        com.censivn.C3DEngine.b.g.c.a(aVar, 1000, dVar);
+        dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new DashButtonA.c.C0034a());
+        com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 1000, dVar);
     }
 
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(aVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.a, com.tsf.shell.manager.o.ButtonPresetManager.a.i, com.tsf.shell.manager.o.ButtonPresetManager.a.q, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, com.tsf.shell.manager.o.ButtonPresetManager.a.k, com.tsf.shell.manager.o.ButtonPresetManager.a.s, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.b, com.tsf.shell.manager.o.ButtonPresetManager.a.j, com.tsf.shell.manager.o.ButtonPresetManager.a.r, 0.0f);
@@ -146,20 +146,20 @@ public class DashButtonD extends com.tsf.shell.f._d.a.DashElementBase {
         final float f = fPxY * f();
         final float f2 = -fB;
         final float f3 = fPxY2 * f();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 d.this.c(kVar, runnable);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f4) {
                 kVar.points().setPX(2, fPxX + ((fB - fPxX) * f4), fPxY + ((f - fPxY) * f4), 0.0f);
                 kVar.points().setPX(3, fPxX2 + ((f2 - fPxX2) * f4), fPxY2 + ((f3 - fPxY2) * f4), 0.0f);
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new DashButtonA.e.C0036a());
-        com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
+        dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new DashButtonA.e.C0036a());
+        com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -169,22 +169,22 @@ public class DashButtonD extends com.tsf.shell.f._d.a.DashElementBase {
         final float fPxX2 = kVar.points().pxX(3);
         final float fPxY = kVar.points().pxY(2);
         final float fPxY2 = kVar.points().pxY(3);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonD.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 kVar.points().setPX(2, fPxX + ((kVar2.points().pxX(2) - fPxX) * f), fPxY + ((kVar2.points().pxY(2) - fPxY) * f), 0.0f);
                 kVar.points().setPX(3, fPxX2 + ((kVar2.points().pxX(3) - fPxX2) * f), fPxY2 + ((kVar2.points().pxY(3) - fPxY2) * f), 0.0f);
                 kVar.updatePointsVBO();
             }
         };
-        dVar.a((com.censivn.C3DEngine.b.g.b) new DashButtonA.c.C0034a());
-        com.censivn.C3DEngine.b.g.c.a(kVar, 1000, dVar);
+        dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new DashButtonA.c.C0034a());
+        com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 1000, dVar);
     }
 }

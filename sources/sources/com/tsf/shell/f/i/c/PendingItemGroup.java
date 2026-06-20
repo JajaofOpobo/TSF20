@@ -88,14 +88,14 @@ public class PendingItemGroup extends ItemGroupBase {
     /* JADX INFO: Access modifiers changed from: private */
     public void a(i iVar) {
         iVar.doubleSidedEnabled(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         if (iVar.rotation().y == 0.0f) {
             dVar.d(180.0f);
         } else {
             dVar.d(0.0f);
         }
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 300, dVar);
     }
 
     class a extends GridRenderable {

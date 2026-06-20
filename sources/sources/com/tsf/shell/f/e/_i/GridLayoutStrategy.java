@@ -91,8 +91,8 @@ public class GridLayoutStrategy extends BaseRenderable {
                 a.this.b.textures().removeAll();
                 a.this.b.textures().addElement(a.c);
                 a.this.b.scale().setAll(0.0f, 0.0f, 1.0f);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._i.GridLayoutStrategy.2.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._i.GridLayoutStrategy.2.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         a.this.a.visible(false);
                     }
@@ -100,8 +100,8 @@ public class GridLayoutStrategy extends BaseRenderable {
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(a.this.b);
-                com.censivn.C3DEngine.b.g.c.a(a.this.b, 300, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, 300, dVar);
                 a.this.g.d();
                 a.this.h.d();
             }

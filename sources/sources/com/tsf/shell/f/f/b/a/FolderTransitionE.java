@@ -21,14 +21,14 @@ public class FolderTransitionE extends FolderPageTransitionBase {
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase
     public void b(ArrayList<i> arrayList, boolean z, Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar;
-        com.censivn.C3DEngine.b.g.d dVar2 = null;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = null;
         int i = 0;
         while (i < arrayList.size()) {
             i iVar = arrayList.get(i);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
-                com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 if (z) {
                     dVar3.f(0.0f);
                     dVar3.h(com.censivn.C3DEngine.b.b.A.B);
@@ -38,7 +38,7 @@ public class FolderTransitionE extends FolderPageTransitionBase {
                         dVar3.e(a(180));
                         dVar3.c(a(50));
                     }
-                    com.censivn.C3DEngine.b.g.c.a(iVar, 600, dVar3);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 600, dVar3);
                     dVar = dVar3;
                 } else {
                     iVar.position().x = 0.0f;
@@ -66,11 +66,11 @@ public class FolderTransitionE extends FolderPageTransitionBase {
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar = null;
+        com.censivn.C3DEngine.b.g.TweenParams dVar = null;
         float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
         for (int i = 0; i < aVar.a(); i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
-            dVar = new com.censivn.C3DEngine.b.g.d();
+            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.h(fA);
             dVar.f(0.0f);
             if (this.c) {
@@ -78,8 +78,8 @@ public class FolderTransitionE extends FolderPageTransitionBase {
                 dVar.e(a(180));
                 dVar.c(a(50));
             }
-            com.censivn.C3DEngine.b.g.c.a(bVarA);
-            com.censivn.C3DEngine.b.g.c.a(bVarA, 700, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 700, dVar);
         }
         if (dVar != null) {
             dVar.a(runnable);

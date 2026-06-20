@@ -5,7 +5,7 @@ import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.tsf.shell.f.e.ILayoutItem;
@@ -242,7 +242,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
                 }
             }
             d dVar = new d() { // from class: com.tsf.shell.f.i.b.3
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     B.this.rotation().z = 0.0f;
                     if (z2) {
@@ -251,7 +251,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
                 }
             };
             dVar.e((float) i);
-            com.censivn.C3DEngine.b.g.C.a(this, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenManager.a(this, 250, dVar);
         }
     }
 

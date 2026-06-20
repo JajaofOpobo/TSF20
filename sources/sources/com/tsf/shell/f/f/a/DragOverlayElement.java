@@ -148,10 +148,10 @@ public class DragOverlayElement extends BaseRenderable {
     }
 
     public void a(boolean z, final Runnable runnable) {
-        com.censivn.C3DEngine.b.g.c.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     e.this.a.visible(false);
                     if (runnable != null) {
@@ -161,7 +161,7 @@ public class DragOverlayElement extends BaseRenderable {
             };
             dVar.a(0);
             dVar.h(-com.censivn.C3DEngine.b.b.A.a(200.0f));
-            com.censivn.C3DEngine.b.g.c.a(this.a, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 350, dVar);
             return;
         }
         this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(200.0f);
@@ -172,14 +172,14 @@ public class DragOverlayElement extends BaseRenderable {
     }
 
     public void b(boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
         this.a.visible(true);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
             dVar.h(0.0f);
             dVar.a(com.censivn.C3DEngine.b.g.a.n);
-            com.censivn.C3DEngine.b.g.c.a(this.a, 600, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 600, dVar);
             return;
         }
         this.a.position().y = 0.0f;

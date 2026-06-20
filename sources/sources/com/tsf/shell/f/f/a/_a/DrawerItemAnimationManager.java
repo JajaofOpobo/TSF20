@@ -105,23 +105,23 @@ public class DrawerItemAnimationManager {
             this.h.a(855638016, -1442840576);
         }
         this.h.visible(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.h);
-        com.censivn.C3DEngine.b.g.c.a(this.h, 600, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h, 600, dVar);
     }
 
     private void h() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.h.visible(false);
                 f.this.i();
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.h);
-        com.censivn.C3DEngine.b.g.c.a(this.h, 600, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.h, 600, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

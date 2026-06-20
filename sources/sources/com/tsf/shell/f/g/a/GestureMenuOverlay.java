@@ -139,11 +139,11 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
         com.tsf.shell.f.e._g.a.MenuItemBase currentMenuItem2 = getCurrentMenuItem();
         if (currentMenuItem2 != null && (currentMenuItem2 instanceof a)) {
             a aVar = (a) currentMenuItem2;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(aVar.a() + 0.0f);
             dVar.h(aVar.b() + 0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.i);
-            com.censivn.C3DEngine.b.g.c.a(this.i, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, 250, dVar);
         }
     }
 
@@ -190,8 +190,8 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
                     if (b.this.h.parent() == null) {
                         b.this.i.scale().setAll(0.0f, 0.0f, 1.0f);
                     }
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.4.1
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.4.1
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             com.tsf.shell.f.e._g.a.MenuItemBase currentMenuItem = b.this.getCurrentMenuItem();
                             if (currentMenuItem != null && (currentMenuItem instanceof a)) {
@@ -202,8 +202,8 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
                     dVar.l(1.0f);
                     dVar.m(1.0f);
                     dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                    com.censivn.C3DEngine.b.g.c.a(b.this.i);
-                    com.censivn.C3DEngine.b.g.c.a(b.this.i, 360, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(b.this.i);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(b.this.i, 360, dVar);
                     b.this.h.removeFromParent();
                     com.tsf.shell.manager.app.TaskScheduler.a(b.this.h);
                 }
@@ -213,16 +213,16 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
 
     public void c() {
         if (this.h != null && this.k) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     com.tsf.shell.manager.app.TaskScheduler.b(b.this.h);
                 }
             };
             dVar.l(0.0f);
             dVar.m(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.i);
-            com.censivn.C3DEngine.b.g.c.a(this.i, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, 250, dVar);
             this.h.removeFromParent();
             com.tsf.shell.manager.app.TaskScheduler.a(this.h);
             com.tsf.shell.manager.app.AppListModel.b((Runnable) null, true);

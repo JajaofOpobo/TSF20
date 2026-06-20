@@ -203,7 +203,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         this.i.a(DrawerSettingsConfig);
         this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.A.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.A.g);
         a.C0084a c0084aB = this.f.b();
-        com.censivn.C3DEngine.b.g.c.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         if (this.g) {
             this.d.position().y = c0084aB.b;
         } else {
@@ -338,24 +338,24 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             a.C0084a c0084aL = l();
             float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.A.K;
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.h(c0084aL.l);
                 dVar.f(c0084aL.k);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.4
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.4
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         e.this.i.visible(false);
                     }
                 };
                 dVar2.h(c0084aL.j - f);
                 dVar2.f(c0084aL.i);
-                com.censivn.C3DEngine.b.g.c.a(this.i);
-                com.censivn.C3DEngine.b.g.c.a(this.i, VEasing.Linear.easeNone, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, VEasing.Linear.easeNone, dVar2);
             } else {
-                com.censivn.C3DEngine.b.g.c.a(this.i);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
                 this.i.position().x = c0084aL.i;
                 this.i.position().y = c0084aL.j - f;
                 this.e.position().x = c0084aL.k;
@@ -376,19 +376,19 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             a.C0084a c0084aL = l();
             this.i.visible(true);
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.h(c0084aL.h);
                 dVar.f(c0084aL.g);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.h(c0084aL.f);
                 dVar2.f(c0084aL.e);
-                com.censivn.C3DEngine.b.g.c.a(this.i);
-                com.censivn.C3DEngine.b.g.c.a(this.i, VEasing.Linear.easeNone, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, VEasing.Linear.easeNone, dVar2);
             } else {
-                com.censivn.C3DEngine.b.g.c.a(this.i);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
                 this.i.position().x = c0084aL.e;
                 this.i.position().y = c0084aL.f;
                 this.e.position().x = c0084aL.g;
@@ -409,13 +409,13 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             }
             this.g = false;
             this.d.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     e.this.d.visible(false);
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void c() {
                     e.this.d.visible(false);
                 }
@@ -424,16 +424,16 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             dVar.f(c0084aL.c);
             dVar.h(c0084aL.d);
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, VEasing.Linear.easeNone, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, VEasing.Linear.easeNone, dVar);
         }
     }
 
     public void n() {
         if (this.o && !this.g) {
             this.g = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.6
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.6
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     e.this.d.mouseEnabled(true);
                     if (!e.this.m) {
@@ -441,7 +441,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void c() {
                     e.this.d.mouseEnabled(true);
                     if (!e.this.m) {
@@ -453,10 +453,10 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
             a.C0084a c0084aB = this.f.b();
             dVar.f(c0084aB.a);
             dVar.h(c0084aB.b);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar);
             this.d.visible(true);
         }
     }

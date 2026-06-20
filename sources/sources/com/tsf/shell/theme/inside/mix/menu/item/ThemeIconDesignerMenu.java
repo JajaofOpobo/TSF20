@@ -226,38 +226,38 @@ public class ThemeIconDesignerMenu extends d {
             this.mResetButton.position().x = 0.0f;
             this.mResetButton.alpha(0.0f);
             this.mContainer.addChild(this.mResetButton);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(this.mApplyButton.minX() - com.censivn.C3DEngine.b.b.A.a(50.0f));
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.mApplyButton);
-            com.censivn.C3DEngine.b.g.c.a(this.mApplyButton, 500, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.f(this.mResetButton.maxX() + com.censivn.C3DEngine.b.b.A.a(50.0f));
             dVar2.a(255);
-            dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.mResetButton);
-            com.censivn.C3DEngine.b.g.c.a(this.mResetButton, 500, dVar2);
+            dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mResetButton);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mResetButton, 500, dVar2);
         }
     }
 
     public void hideResetButton() {
         if (this.mResetButton.parent() != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(0.0f);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.mApplyButton);
-            com.censivn.C3DEngine.b.g.c.a(this.mApplyButton, 500, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.6
-                @Override // com.censivn.C3DEngine.b.g.d
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mApplyButton, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.6
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     ThemeIconDesignerMenu.this.resetButtonState();
                 }
             };
             dVar2.f(0.0f);
             dVar2.a(0);
-            dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.mResetButton);
-            com.censivn.C3DEngine.b.g.c.a(this.mResetButton, 500, dVar2);
+            dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mResetButton);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.mResetButton, 500, dVar2);
         }
     }
 

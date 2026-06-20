@@ -13,7 +13,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.g.A;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e.ILassoSelectable;
 import com.tsf.shell.f.e.LassoContextMenu;
@@ -52,7 +52,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     private com.tsf.shell.f.b.ShellKeyEventHandler S;
     private com.censivn.C3DEngine.b.f.BaseRenderable T;
     private int U;
-    private com.censivn.C3DEngine.b.g.d V;
+    private com.censivn.C3DEngine.b.g.TweenParams V;
     private com.tsf.shell.f.i.MultiSelectController W;
     private boolean X;
     private boolean Y;
@@ -192,15 +192,15 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             position().setAllFrom(bVar2.position());
             bVar2.position().setAllFrom(this.o.globalToLocal(Number3d.TEMPNUMBER3D));
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.n(true);
                 b.this.a(false, (Runnable) null, true);
                 b.this.bh();
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 bVar2.g(1.0f - f);
             }
@@ -208,8 +208,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         dVar.f(0.0f);
         dVar.h(60.0f);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(bVar2);
-        com.censivn.C3DEngine.b.g.c.a(bVar2, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, 500, dVar);
         this.J.a(0.0f);
         a(iVar);
     }
@@ -223,13 +223,13 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         this.o.globalToLocal(Number3d.TEMPNUMBER3D);
         float f = Number3d.TEMPNUMBER3D.x;
         float f2 = Number3d.TEMPNUMBER3D.y;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.12
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.12
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 b.this.H.g(f3);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) b.this.parent();
                 int childIndexOf = jVar.getChildIndexOf(b.this);
@@ -251,14 +251,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         dVar.f(WidgetItemBackground);
         dVar.h(f2);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.H);
-        com.censivn.C3DEngine.b.g.c.a(this.H, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.H);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.H, 300, dVar);
         if (iVar != null) {
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.l(1.0f);
             dVar2.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 300, dVar2);
         }
     }
 
@@ -281,7 +281,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         rotation().setAllFrom(bVar.rotation());
         scale().setAllFrom(bVar.scale());
         com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.o.getChildAt(0);
-        com.censivn.C3DEngine.b.g.c.a(bVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar3);
         bVar.position().setAllFrom(bVar3.position());
         bVar.rotation().setAllFrom(bVar3.rotation());
         bVar.scale().setAllFrom(bVar3.scale());
@@ -922,7 +922,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public void aR() {
-        com.censivn.C3DEngine.b.g.d dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
         this.ab = false;
         k = this;
         l.a(this.o.numChildren());
@@ -955,23 +955,23 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         this.T = com.tsf.shell.manager.app.TaskScheduler.a(this.S);
         switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
-                dVar = new com.censivn.C3DEngine.b.g.d();
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.B) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
                 break;
             case 1:
-                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.3
-                    @Override // com.censivn.C3DEngine.b.g.d
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.3
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         b.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.B) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
                 break;
             default:
-                dVar = new com.censivn.C3DEngine.b.g.d();
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.B) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
                 break;
         }
         dVar.l(1.0f);
@@ -979,8 +979,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         dVar.f(0.0f);
         dVar.h(0 - l.m);
         dVar.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, 350, dVar);
         l.a(500, this);
         removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.c();
@@ -1007,7 +1007,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.g.d dVar;
+                    com.censivn.C3DEngine.b.g.TweenParams dVar;
                     j jVar = b.l;
                     WidgetItemPositioner.N.alpha(0.0f);
                     j jVar2 = b.l;
@@ -1031,7 +1031,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         if (b.this.aa != null) {
                             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
                             b.this.aa.localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-                            dVar = new com.censivn.C3DEngine.b.g.d();
+                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                             dVar.f(b.this.L.x);
                             dVar.h(b.this.L.y);
                             dVar.l(Number3d.TEMPNUMBER3D2.x);
@@ -1048,12 +1048,12 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                                 b.this.L.y = b.this.K().cellYH;
                                 b.this.M.z = b.this.K().rotationH;
                             }
-                            dVar = new com.censivn.C3DEngine.b.g.d();
+                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                             dVar.f(b.this.L.x);
                             dVar.h(b.this.L.y);
                             dVar.e(b.this.M.z);
                         }
-                        com.censivn.C3DEngine.b.g.c.a(b.this, 380, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(b.this, 380, dVar);
                     } else {
                         if (b.this.aa == null) {
                             if (com.censivn.C3DEngine.b.b.A.O) {
@@ -1260,7 +1260,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             while (i8 > -1) {
                 final com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.o.children().get((iAW - i8) - 1);
                 bVar2.mouseEnabled(false);
-                com.censivn.C3DEngine.b.g.d dVar = null;
+                com.censivn.C3DEngine.b.g.TweenParams dVar = null;
                 if (i8 < i7) {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild = l.c().folder.sampleList.get(i8);
                     if (bVar2.scale().x == 0.0f) {
@@ -1268,8 +1268,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         bVar2.rotation().setAllFrom(systemFolderChild.rotation);
                     }
                     bVar2.alpha(255.0f);
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.5
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.5
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             if (bVar2.aJ() != 0.0f) {
                                 bVar2.g(1.0f - f);
@@ -1306,13 +1306,13 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 } else {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild2 = l.c().folder.sampleList.get(i8 % i7);
                     if (bVar2.visible()) {
-                        dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.6
-                            @Override // com.censivn.C3DEngine.b.g.d
+                        dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.6
+                            @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a() {
                                 bVar2.visible(false);
                             }
 
-                            @Override // com.censivn.C3DEngine.b.g.d
+                            @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a(float f) {
                                 if (bVar2.aJ() != 0.0f) {
                                     bVar2.g(1.0f - f);
@@ -1405,8 +1405,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         this.V = dVar;
                         i2 = i3;
                     } else {
-                        com.censivn.C3DEngine.b.g.c.a(bVar2);
-                        com.censivn.C3DEngine.b.g.c.a(bVar2, i3, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, i3, dVar);
                         bVar2.visible(true);
                         bVar2 = bVar;
                         i2 = i3;
@@ -1421,8 +1421,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 i6 = i;
                 bVar = bVar2;
             }
-            com.censivn.C3DEngine.b.g.c.a(bVar);
-            com.censivn.C3DEngine.b.g.c.a(bVar, i5, this.V);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, i5, this.V);
             bVar.visible(true);
             return;
         }
@@ -1474,14 +1474,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 final com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.o.children().get(i4);
                 bVar2.alpha(255.0f);
                 Number3d number3dD = d((iAW - i4) - 1);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.9
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.9
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         bVar2.visible(true);
                         bVar2.g(WidgetItemBackground);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (i4 == i) {
                             b.this.bk();
@@ -1522,8 +1522,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         dVar.b(((iAW - i4) - 1) * 40);
                         break;
                 }
-                com.censivn.C3DEngine.b.g.c.a(bVar2);
-                com.censivn.C3DEngine.b.g.c.a(bVar2, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, VEasing.Linear.easeNone, dVar);
                 i3 = i4 - 1;
             } else {
                 return;
@@ -1609,7 +1609,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public void p(boolean z) {
-        com.censivn.C3DEngine.b.g.d dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
         if (this.ad != null) {
             int size = this.ad.size();
             if (size > 0) {
@@ -1623,8 +1623,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 bVar.removeFromParent();
                 this.o.addChild(bVar);
                 if (i == size - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.10
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.10
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             Iterator it = b.this.ad.iterator();
                             while (it.hasNext()) {
@@ -1637,14 +1637,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                             b.this.bh();
                         }
 
-                        @Override // com.censivn.C3DEngine.b.g.d
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
                         }
                     };
                 } else {
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.11
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.11
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
                         }
@@ -1652,7 +1652,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
                 if (z) {
                     int i2 = l.c().folder.sampleCount;
-                    com.censivn.C3DEngine.b.g.c.a(bVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
                     if (i < size - i2) {
                         bVar.alpha(255.0f);
                         bVar.visible(false);
@@ -1661,15 +1661,15 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                         dVar.e(0.0f);
                         dVar.a(255);
-                        com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
                     }
                 } else {
                     dVar.f(0.0f);
                     dVar.h(com.censivn.C3DEngine.b.b.A.c * 100.0f);
                     dVar.e(0.0f);
                     dVar.a(255);
-                    com.censivn.C3DEngine.b.g.c.a(bVar);
-                    com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
                 }
             }
         }
@@ -1678,8 +1678,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     @Override // com.tsf.shell.f.e._a.DropTarget
     public void e() {
         this.z = true;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.13
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.13
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = b.this.p.alpha();
                 if (b.this.q != null) {
@@ -1689,15 +1689,15 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 300, dVar);
         aF().b(0.1f);
     }
 
     @Override // com.tsf.shell.f.e._a.DropTarget
     public void i() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.14
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.14
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = b.this.p.alpha();
                 if (b.this.q != null) {
@@ -1707,8 +1707,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             }
         };
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 300, dVar);
         bg();
         this.z = false;
     }

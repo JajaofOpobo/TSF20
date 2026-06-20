@@ -25,11 +25,11 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
     }
 
     public static void a(float f, float f2) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(a.position().x + f);
         dVar.h(a.position().y + f2);
-        com.censivn.C3DEngine.b.g.c.a(AlignmentOverlay);
-        com.censivn.C3DEngine.b.g.c.a(a, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentOverlay);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
 
     public static void b() {
@@ -61,10 +61,10 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         a.e().h();
         com.censivn.C3DEngine.b.c.b.a(AlignmentOverlay);
         com.tsf.shell.manager.app.ObserverManager.a(AlignmentOverlay);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(AlignmentOverlay);
-        com.censivn.C3DEngine.b.g.c.a(a, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentOverlay);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
 
     @Override // com.censivn.C3DEngine.b.c.e.a
@@ -88,15 +88,15 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             b.i();
             d.X();
             d = null;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     s.a.removeFromParent();
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 250, dVar);
             com.censivn.C3DEngine.b.c.b.b(this);
             com.tsf.shell.manager.app.ObserverManager.b(AlignmentOverlay);
             c = false;
@@ -115,7 +115,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         private com.censivn.C3DEngine.b.f.GridRenderable g;
         private com.censivn.C3DEngine.b.f.GridRenderable h;
         private com.censivn.C3DEngine.b.f.GridRenderable i;
-        private com.censivn.C3DEngine.b.g._b.b j;
+        private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper j;
         private int k;
         private float l;
         private float m;
@@ -128,7 +128,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             this.m = 1.0f;
             this.n = false;
             this.e = this;
-            this.j = new com.censivn.C3DEngine.b.g._b.b();
+            this.j = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
             this.d = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_RESIZE_MATCH_BUTTON, 64, 64);
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.a.1
                 @Override // java.lang.Runnable
@@ -256,8 +256,8 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             c(f4 * 2.0f);
             e(f3 * 2.0f);
             this.e.updatePointsVBO();
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.a.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.a.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f5) {
                     float f6 = f + (f * (1.0f - f5));
                     float f7 = f2 + (f2 * (1.0f - f5));
@@ -281,13 +281,13 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                     a.this.e.updatePointsVBO();
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                 }
             };
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.j);
-            com.censivn.C3DEngine.b.g.c.a(this.j, 250, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 250, dVar);
         }
 
         public void g() {
@@ -336,7 +336,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             this.l = fU;
             this.n = true;
             setAnimationObjectState(true);
-            com.censivn.C3DEngine.b.g.c.a(this.j);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
         }
 
         public void a(int i) {

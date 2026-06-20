@@ -97,11 +97,11 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 com.tsf.shell.manager.action.GestureHandler.a();
                 this.n = false;
                 this.o = false;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(bVar.d);
                 dVar.m(bVar.d);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
                 bVar.n_();
                 com.tsf.shell.f.i.MultiSelectController aVarA = bVar.A();
                 if (aVarA != null) {
@@ -285,8 +285,8 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
     }
 
     public void a(float[] fArr, boolean z) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.a.PageItemTouchHandler.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.a.PageItemTouchHandler.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.this.g.c();
             }
@@ -306,9 +306,9 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         }
         dVar.l(1.0f);
         dVar.m(1.0f);
-        dVar.a(com.censivn.C3DEngine.b.g.A.a);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.g, 380, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 380, dVar);
         this.g.m_();
     }
 

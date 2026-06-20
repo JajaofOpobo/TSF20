@@ -279,7 +279,7 @@ public class ShortcutItem extends PageItem {
             int size = arrayListAw.size();
             for (int i = 0; i < size; i++) {
                 C cVar = arrayListAw.get(i);
-                com.censivn.C3DEngine.b.g.c.a(cVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(cVar);
                 Number3d.TEMPNUMBER3D.reset();
                 cVar.localToGlobal(Number3d.TEMPNUMBER3D);
                 jVar.globalToLocal(Number3d.TEMPNUMBER3D);

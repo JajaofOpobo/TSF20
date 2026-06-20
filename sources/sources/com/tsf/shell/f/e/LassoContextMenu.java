@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.g.A;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
 
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
@@ -26,7 +26,7 @@ public class LassoContextMenu implements b.a {
     private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable f;
     private static com.censivn.C3DEngine.b.d.a j;
     private static LassoContextMenu k;
-    private static com.censivn.C3DEngine.b.g._b.b l;
+    private static com.censivn.C3DEngine.b.g._b.TweenTargetWrapper l;
     private static int n;
     private static int o;
     private static com.censivn.C3DEngine.b.f.IRenderable C;
@@ -78,8 +78,8 @@ public class LassoContextMenu implements b.a {
             c.alpha(0.0f);
             c.scale().x = 0.0f;
             c.scale().y = 0.0f;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.LassoContextMenu.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.LassoContextMenu.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     LassoContextMenu.this.e();
                 }
@@ -87,8 +87,8 @@ public class LassoContextMenu implements b.a {
             dVar.a(255);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            dVar.a((com.censivn.C3DEngine.b.g.b) new com.censivn.C3DEngine.b.g.A.C0030a.C());
-            com.censivn.C3DEngine.b.g.c.a(c, 380, dVar);
+            dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.censivn.C3DEngine.b.g.EasingFunctions.C0030a.C());
+            com.censivn.C3DEngine.b.g.TweenUtils.a(c, 380, dVar);
             n = i2;
             o = i3;
             if (i2 + (com.censivn.C3DEngine.b.b.A.a * 230.0f) > com.censivn.C3DEngine.b.b.A.A) {
@@ -117,7 +117,7 @@ public class LassoContextMenu implements b.a {
             if (!z) {
                 com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.a) null, true);
             }
-            com.censivn.C3DEngine.b.g.c.a(SpringEasing);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(SpringEasing);
             a();
             this.q.a(i2);
             this.r.b();
@@ -162,7 +162,7 @@ public class LassoContextMenu implements b.a {
                     LassoContextMenu.this.o();
                 }
             });
-            l = new com.censivn.C3DEngine.b.g._b.b();
+            l = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
             f = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(5, 32, 160, 160);
             for (int i2 = 0; i2 < 5; i2++) {
                 com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = f.a(i2);
@@ -173,8 +173,8 @@ public class LassoContextMenu implements b.a {
         a();
         final int[][] iArr = {new int[]{0, 126}, new int[]{160, (int) (com.censivn.C3DEngine.b.b.A.a * 54.0f)}, new int[]{136, -92}, new int[]{-136, -92}, new int[]{-166, 54}};
         f.alpha(0.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.LassoContextMenu.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.LassoContextMenu.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 for (int i3 = 0; i3 < 5; i3++) {
                     com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = com.tsf.shell.f.e.LassoContextMenu.f.a(i3);
@@ -186,14 +186,14 @@ public class LassoContextMenu implements b.a {
             }
         };
         dVar.a(255);
-        dVar.a((com.censivn.C3DEngine.b.g.b) new com.censivn.C3DEngine.b.g.A.C0030a.C());
-        com.censivn.C3DEngine.b.g.c.a(l, 700, dVar);
+        dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.censivn.C3DEngine.b.g.EasingFunctions.C0030a.C());
+        com.censivn.C3DEngine.b.g.TweenUtils.a(l, 700, dVar);
         c.addChild(ILayoutItem);
     }
 
     public void f() {
         if (f != null) {
-            com.censivn.C3DEngine.b.g.c.a(ToggleRowItem);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(ToggleRowItem);
             for (int i2 = 0; i2 < 5; i2++) {
                 com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = f.a(i2);
                 bVarA.m.spX(0.0f);

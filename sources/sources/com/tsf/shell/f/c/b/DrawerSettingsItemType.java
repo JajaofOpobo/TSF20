@@ -292,7 +292,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             zB = false;
         }
         if (!zB) {
-            com.censivn.C3DEngine.b.g.c.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
             globalToLocal(bVar.position());
             bVar.removeFromParent();
             bVar.clearDefaultColor();
@@ -413,7 +413,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         bVar.a(this.b);
         bVar.c = true;
         if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
-            com.censivn.C3DEngine.b.g.c.a(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).k);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).k);
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).aL();
         } else if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             ((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aL();

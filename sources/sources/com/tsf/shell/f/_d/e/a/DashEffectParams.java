@@ -1,8 +1,8 @@
 package com.tsf.shell.f._d.e.a;
 
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f._d.e.DashRendererBase;
 import com.tsf.shell.f.f.WorkspacePage;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class DashEffectParams extends DashEffectData {
     @Override // com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void a(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f._d.e.a.DashEffectParams.1
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 aVar.rotation().x = (1.0f - (Math.abs(f - 0.5f) * 2.0f)) * (-30.0f);
             }
@@ -45,7 +45,7 @@ public class DashEffectParams extends DashEffectData {
     @Override // com.tsf.shell.f._d.e.a.DashEffectData, com.tsf.shell.f._d.e.a.InterfaceC0090a
     public void b(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f._d.e.a.DashEffectParams.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 aVar.rotation().x = (1.0f - (Math.abs(f - 0.5f) * 2.0f)) * (-30.0f);
             }

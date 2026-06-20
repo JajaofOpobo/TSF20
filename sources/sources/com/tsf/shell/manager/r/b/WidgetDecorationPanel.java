@@ -122,12 +122,12 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.MenuActionItem
             @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
             public void a(com.tsf.shell.f.i.PageItem bVar, g gVar) {
                 bVar.scale().setAll(0.0f, 0.0f, 1.0f);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(bVar);
-                com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar);
             }
         });
         return true;

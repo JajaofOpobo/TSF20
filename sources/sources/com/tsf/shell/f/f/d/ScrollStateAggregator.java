@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.d;
 
 import android.annotation.SuppressLint;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f.f.d.a.ScrollBounceHandler;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.PageTouchHandler;
@@ -32,11 +32,11 @@ public class ScrollStateAggregator {
         this.b.a(dVar, gVar);
     }
 
-    public void a(g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
+    public void a(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         this.b.a(gVar, aVar);
     }
 
-    public void b(g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
+    public void b(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         this.b.b(gVar, aVar);
     }
 

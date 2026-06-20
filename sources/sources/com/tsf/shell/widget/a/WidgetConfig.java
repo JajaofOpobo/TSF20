@@ -22,13 +22,13 @@ public class WidgetConfig {
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.widget.a.WidgetConfig.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.WidgetConfig.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 b.this.a(((float) (30.0d * Math.sin(((double) f) * 3.141592653589793d))) + b.this.b, b.this.c);
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 1000, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 1000, dVar);
     }
 }

@@ -125,8 +125,8 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
             bVar.position().setAll(bVar.position().x + f, bVar.position().y + f2, 0.0f);
             bVar.b((i * 20) + 250);
             if (i < 3) {
-                com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.6
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.6
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
@@ -134,19 +134,19 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
                 aVar.f(f4);
                 aVar.h(fA2);
                 aVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(bVar);
-                com.censivn.C3DEngine.b.g.c.a(bVar, (i * 50) + 600, aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, (i * 50) + 600, aVar);
             } else {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.7
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.7
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
                 dVar.f(f4);
                 dVar.h(fA2);
                 dVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(bVar);
-                com.censivn.C3DEngine.b.g.c.a(bVar, (i * 50) + 600, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, (i * 50) + 600, dVar);
             }
             bVar.visible(true);
             i++;
@@ -175,8 +175,8 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
             bVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
             float fA = com.censivn.C3DEngine.b.b.A.a(200.0f);
             if (i < 3) {
-                com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.8
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.8
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
@@ -185,11 +185,11 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
                 if (i != 2) {
                     f += this.i;
                 }
-                com.censivn.C3DEngine.b.g.c.a(bVar);
-                com.censivn.C3DEngine.b.g.c.a(bVar, (i * 50) + 600, aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, (i * 50) + 600, aVar);
             } else {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.9
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._c.DrawerSettingsPage.9
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         bVar.visible(false);
                     }
@@ -197,8 +197,8 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
                 dVar.f(DrawerShortcutGrid);
                 dVar.h(0.0f);
                 dVar.a(0);
-                com.censivn.C3DEngine.b.g.c.a(bVar);
-                com.censivn.C3DEngine.b.g.c.a(bVar, 600, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 600, dVar);
             }
             bVar.removeFromParent();
             this.h.addChild(bVar);

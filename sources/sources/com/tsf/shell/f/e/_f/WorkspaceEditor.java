@@ -582,9 +582,9 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         }
 
         public void b() {
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
             removeFromParent();
             this.a = false;
             this.c.textures().clear();

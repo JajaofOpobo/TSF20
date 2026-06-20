@@ -587,25 +587,25 @@ public class h extends BaseRenderable {
             this.d.addChild(kVar);
         }
         if (kVar.alpha() != 255.0f) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(kVar);
-            com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
         }
         kVar.mouseEnabled(true);
     }
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.h.b.h.7
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.h.7
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     h.this.d.removeChild(kVar);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(kVar);
-            com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
         }
         kVar.mouseEnabled(false);
     }

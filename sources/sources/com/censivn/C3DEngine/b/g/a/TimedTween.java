@@ -1,16 +1,16 @@
 package com.censivn.C3DEngine.b.g.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends c {
-    private com.censivn.C3DEngine.b.g.d c;
-    private com.censivn.C3DEngine.b.g._b.a d;
+public class TimedTween extends AbstractTween {
+    private com.censivn.C3DEngine.b.g.TweenParams c;
+    private com.censivn.C3DEngine.b.g._b.ITweenTarget d;
     private int e;
     private long f;
     private long g;
     private Runnable h;
-    private com.censivn.C3DEngine.b.g.b i;
+    private com.censivn.C3DEngine.b.g.TweenCallback i;
 
-    public d(com.censivn.C3DEngine.b.g._b.a aVar, int i, com.censivn.C3DEngine.b.g.d dVar) {
+    public d(com.censivn.C3DEngine.b.g._b.ITweenTarget aVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
         this.d = aVar;
         dVar.a(aVar);
         aVar.setTweenChild(this);
@@ -19,12 +19,12 @@ public class d extends c {
         this.i = dVar.e();
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
-    public com.censivn.C3DEngine.b.g.d a() {
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
+    public com.censivn.C3DEngine.b.g.TweenParams a() {
         return this.c;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
     public void c() {
         if (this.a == 0 || this.a == 2) {
             if (this.a == 2) {
@@ -38,7 +38,7 @@ public class d extends c {
             this.g = (int) (System.currentTimeMillis() - this.f);
             if (this.g >= this.e) {
                 this.g = this.e;
-                com.censivn.C3DEngine.b.g.c.b(this);
+                com.censivn.C3DEngine.b.g.TweenUtils.b(this);
                 this.c.b(1.0f);
                 this.c.a(1.0f);
                 this.d.setTweenChild(null);
@@ -56,22 +56,22 @@ public class d extends c {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
     public void a(Runnable runnable) {
         this.h = runnable;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
     public Runnable d() {
         return this.h;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
     public void e() {
         this.a = 1;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.a.c
+    @Override // com.censivn.C3DEngine.b.g.a.AbstractTween
     public void f() {
         this.a = 2;
     }

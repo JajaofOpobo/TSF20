@@ -249,8 +249,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                 f = 150.0f;
             }
             iVar.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     iVar.visible(false);
                     iVar.mouseEnabled(true);
@@ -261,8 +261,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
             aVar.f(0.0f);
             aVar.h(0.0f);
             aVar.b(i % 2 == 0);
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, (size * i) + 250, aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, (size * i) + 250, aVar);
         }
     }
 
@@ -290,8 +290,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                     }
                     iVar.visible(true);
                     iVar.mouseEnabled(false);
-                    com.censivn.C3DEngine.b.g._c.a.a aVar = new com.censivn.C3DEngine.b.g._c.a.a(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             iVar.mouseEnabled(true);
                         }
@@ -304,8 +304,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                     aVar.a(255);
                     aVar.b(i2 % 2 == 0);
                     aVar.a(false);
-                    com.censivn.C3DEngine.b.g.c.a(iVar);
-                    com.censivn.C3DEngine.b.g.c.a(iVar, (size * i2) + 250, aVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, (size * i2) + 250, aVar);
                     i = i2 + 1;
                 } else {
                     return;
@@ -659,7 +659,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
             zB = false;
         }
         if (!zB) {
-            com.censivn.C3DEngine.b.g.c.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
             globalToLocal(bVar.position());
             bVar.removeFromParent();
             bVar.clearDefaultColor();
@@ -693,7 +693,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         bVar.a(this.p);
         bVar.c = true;
         if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
-            com.censivn.C3DEngine.b.g.c.a(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).k);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).k);
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar).aL();
         } else if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             ((com.tsf.shell.f.i.b.d.FolderShortcutItem) bVar).aL();

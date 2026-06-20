@@ -37,32 +37,32 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         }
 
         public void a(int i) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
             dVar.b(i);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.a(255);
             dVar2.h(this.e);
             dVar2.b(i + VEasing.Linear.easeNone);
-            dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar2);
+            dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar2);
         }
 
         public void b(int i) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(0);
             dVar.b(i + VEasing.Linear.easeNone);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.a(0);
             dVar2.h(0.0f);
             dVar2.b(i);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar2);
         }
 
         public void a() {
@@ -146,7 +146,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
             int i2 = i % 3;
             float f = ((i / 3) * (this.h + this.g)) + this.i;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             switch (i2) {
                 case 0:
                     dVar.f(f + fA5);
@@ -165,8 +165,8 @@ public class PreferenceSettingA extends PreferenceSettingBase {
                     dVar.h(fA2 + 0.0f);
                     break;
             }
-            com.censivn.C3DEngine.b.g.c.a(bVarA);
-            com.censivn.C3DEngine.b.g.c.a(bVarA, 1000, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 1000, dVar);
         }
         int i3 = 0;
         while (true) {
@@ -185,13 +185,13 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         for (int i = 0; i < 12; i++) {
             com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
             Number3d number3d = (Number3d) bVarA.a();
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(number3d.x);
             dVar.h(number3d.y);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(bVarA);
-            com.censivn.C3DEngine.b.g.c.a(bVarA, 1000, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 1000, dVar);
         }
         for (int i2 = 0; i2 < 4; i2++) {
             ((C0162a) this.e.getChildAt(i2)).b(0);

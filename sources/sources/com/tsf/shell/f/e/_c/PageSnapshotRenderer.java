@@ -9,8 +9,8 @@ import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageSnapshotRenderer extends BaseRenderable {
@@ -153,7 +153,7 @@ public class PageSnapshotRenderer extends BaseRenderable {
 
     private void l() {
         d dVar = new d() { // from class: com.tsf.shell.f.e._c.a.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.a.visible(false);
             }

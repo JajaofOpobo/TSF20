@@ -1,10 +1,10 @@
 package com.censivn.C3DEngine.b.g._b;
 
 import com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget;
-import com.censivn.C3DEngine.b.g.a.c;
+import com.censivn.C3DEngine.b.g.a.AbstractTween;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b implements a {
+public class TweenTargetWrapper implements ITweenTarget {
     private c a;
     private VValueTweenTarget b;
 
@@ -16,12 +16,12 @@ public class b implements a {
         this.b = vValueTweenTarget;
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
     public c getTweenChild() {
         return this.a;
     }
 
-    @Override // com.censivn.C3DEngine.b.g._b.a
+    @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
     public void setTweenChild(c cVar) {
         this.a = cVar;
     }

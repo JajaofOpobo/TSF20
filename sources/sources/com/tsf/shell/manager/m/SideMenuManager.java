@@ -74,16 +74,16 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             this.q = true;
             this.f.mouseEnabled(false);
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuManager.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         b.this.f.visible(false);
                         b.this.f.c();
                     }
                 };
                 dVar.f(r());
-                com.censivn.C3DEngine.b.g.c.a(this.f);
-                com.censivn.C3DEngine.b.g.c.a(this.f, 600, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 600, dVar);
                 return;
             }
             this.f.position().x = r();
@@ -221,8 +221,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         if (this.l && !this.q) {
             this.q = true;
             this.f.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuManager.7
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.7
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.f.visible(false);
                 }
@@ -232,8 +232,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             } else {
                 dVar.f(com.censivn.C3DEngine.b.b.A.A + com.censivn.C3DEngine.b.b.A.a(30.0f));
             }
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 350, dVar);
         }
     }
 
@@ -241,15 +241,15 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         if (this.l && this.q) {
             this.q = false;
             this.f.visible(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuManager.8
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.8
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.f.mouseEnabled(true);
                 }
             };
             dVar.f(r());
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 350, dVar);
         }
     }
 
@@ -336,17 +336,17 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 com.tsf.shell.manager.app.DataCoordinator.a(this.i, ItemInfo.APP_INTENT, (Runnable) null);
                 com.tsf.shell.manager.app.ServiceFactory.k();
                 this.f.visible(true);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.f(r());
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.f);
-                com.censivn.C3DEngine.b.g.c.a(this.f, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 500, dVar);
                 this.f.a(q(), true);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.f(s());
-                dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(this.d);
-                com.censivn.C3DEngine.b.g.c.a(this.d, 500, dVar2);
+                dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 500, dVar2);
                 this.d.visible(true);
                 this.d.j();
             }
@@ -363,8 +363,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             this.g = false;
             com.tsf.shell.manager.app.DataCoordinator.a(runnable, true);
             com.tsf.shell.manager.app.ServiceFactory.i();
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuManager.9
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.9
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     if (!b.this.l) {
                         b.this.f.visible(false);
@@ -376,18 +376,18 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             };
             dVar.f(r());
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 500, dVar);
             this.f.a(q(), true);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuManager.10
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.10
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.d.visible(false);
                 }
             };
             dVar2.f(s());
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar2);
         }
     }
 

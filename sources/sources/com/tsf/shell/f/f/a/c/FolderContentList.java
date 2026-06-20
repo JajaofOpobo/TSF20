@@ -40,18 +40,18 @@ public class FolderContentList extends FolderPageItemBase {
 
         public void f() {
             visible(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
             dVar.h(0.0f);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, VEasing.Linear.easeNone, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, VEasing.Linear.easeNone, dVar);
             a();
         }
 
         public void g() {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c.FolderContentList.a.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderContentList.a.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     FolderTouchBase.this.visible(false);
                     FolderTouchBase.this.d();
@@ -59,8 +59,8 @@ public class FolderContentList extends FolderPageItemBase {
             };
             dVar.a(0);
             dVar.h(-com.censivn.C3DEngine.b.b.A.a(150.0f));
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 350, dVar);
             c();
         }
 
@@ -326,11 +326,11 @@ public class FolderContentList extends FolderPageItemBase {
             Number3d.TEMPNUMBER3D.setAll(1.0f, 1.0f, 1.0f);
             Number3d number3dLocalScaleToGlobale = cVar.localScaleToGlobale(Number3d.TEMPNUMBER3D);
             cVar.scale().setAll(number3dLocalScaleToGlobale.x, number3dLocalScaleToGlobale.y, 1.0f);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(cVar.d);
             dVar.m(cVar.d);
-            com.censivn.C3DEngine.b.g.c.a(cVar);
-            com.censivn.C3DEngine.b.g.c.a(cVar, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(cVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(cVar, 250, dVar);
             if (motionEvent == null) {
                 this.t[0] = cVar.position().x;
                 this.t[1] = cVar.position().y;
@@ -418,11 +418,11 @@ public class FolderContentList extends FolderPageItemBase {
                     this.a.a(cVar3, aVar, childIndexOf + 1);
                     cVar3.setAnimationObjectState(true);
                 }
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(cVar);
-                com.censivn.C3DEngine.b.g.c.a(cVar, 250, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(cVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(cVar, 250, dVar);
             }
         }
         if (this.b.c() == this) {
@@ -518,12 +518,12 @@ public class FolderContentList extends FolderPageItemBase {
             com.tsf.shell.f.f.a.PageContainerBase aVarE = this.a.e(i2);
             aVarE.addChildAt(bVar3, i3);
             this.a.a(bVar3, aVarE, i3);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
             dVar.e(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(bVar3);
-            com.censivn.C3DEngine.b.g.c.a(bVar3, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar3);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar3, 250, dVar);
             iE = i2 + 1;
         }
         a((com.tsf.shell.f.i.PageItem) cVar);

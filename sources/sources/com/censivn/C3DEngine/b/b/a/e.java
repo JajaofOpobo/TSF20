@@ -206,10 +206,10 @@ public class e extends BaseRenderable {
         if (this.m != null) {
             this.m.visible(true);
             if (this.m.alpha() != 255.0f) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(this.m);
-                com.censivn.C3DEngine.b.g.c.a(this.m, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.m);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.m, 500, dVar);
             }
         }
         i();
@@ -222,15 +222,15 @@ public class e extends BaseRenderable {
         this.l = false;
         renderChildren(true);
         if (this.m != null && this.m.alpha() != 0.0f) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.A.e.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.A.e.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     e.this.m.visible(false);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.m);
-            com.censivn.C3DEngine.b.g.c.a(this.m, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.m);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.m, 500, dVar);
         }
         setAnimationObjectState(true);
         invalidate();
@@ -334,8 +334,8 @@ public class e extends BaseRenderable {
     private void m() {
         if (this.n != null) {
             this.o = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.A.e.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.A.e.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     if (e.this.n != null) {
                         e.this.n.visible(false);
@@ -344,8 +344,8 @@ public class e extends BaseRenderable {
             };
             dVar.l(0.0f);
             dVar.m(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, 500, dVar);
         }
     }
 
@@ -353,11 +353,11 @@ public class e extends BaseRenderable {
         if (this.n != null) {
             this.o = false;
             this.n.visible(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, 500, dVar);
         }
     }
 

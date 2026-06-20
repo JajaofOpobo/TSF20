@@ -56,8 +56,8 @@ public abstract class MenuItemBase {
         onHide();
         if (z) {
             this.isAnimation = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     MenuItemBase.this.isAnimation = false;
                     MenuItemBase.this.onHideComplete();
@@ -66,8 +66,8 @@ public abstract class MenuItemBase {
             };
             dVar.a(0);
             dVar.h(-this.menu.getHeight());
-            com.censivn.C3DEngine.b.g.c.a(getContentContainer());
-            com.censivn.C3DEngine.b.g.c.a(getContentContainer(), ANIMATION_TIME, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(getContentContainer());
+            com.censivn.C3DEngine.b.g.TweenUtils.a(getContentContainer(), ANIMATION_TIME, dVar);
             return;
         }
         this.isAnimation = false;
@@ -97,8 +97,8 @@ public abstract class MenuItemBase {
         onShow();
         if (z) {
             this.isAnimation = true;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._g.a.MenuItemBase.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     MenuItemBase.this.isAnimation = false;
                     MenuItemBase.this.onShowComplete();
@@ -106,9 +106,9 @@ public abstract class MenuItemBase {
             };
             dVar.h(0.0f);
             dVar.a(255);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(getContentContainer());
-            com.censivn.C3DEngine.b.g.c.a(getContentContainer(), ANIMATION_TIME, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(getContentContainer());
+            com.censivn.C3DEngine.b.g.TweenUtils.a(getContentContainer(), ANIMATION_TIME, dVar);
             return;
         }
         this.isAnimation = false;

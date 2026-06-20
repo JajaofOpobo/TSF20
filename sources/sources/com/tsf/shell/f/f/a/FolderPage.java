@@ -19,7 +19,7 @@ import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.A;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
 // import com.tsf.shell.f.f.a.PageContainerBase;
 import com.tsf.shell.f.f.a.b.DrawerTransitionManager;
 import com.tsf.shell.f.f.PageTouchHandler;
@@ -69,9 +69,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private ArrayList<a> W;
     private l X;
     private BaseRenderable Y;
-    private com.censivn.C3DEngine.b.g.d Z;
-    private com.censivn.C3DEngine.b.g.d aa;
-    private com.censivn.C3DEngine.b.g._b.b ab;
+    private com.censivn.C3DEngine.b.g.TweenParams Z;
+    private com.censivn.C3DEngine.b.g.TweenParams aa;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper ab;
     private com.censivn.C3DEngine.b.d.a ad;
     private com.censivn.C3DEngine.b.d.a ae;
     private Runnable af;
@@ -188,17 +188,17 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void aP() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(v);
         dVar.m(v);
         dVar.h(w);
-        com.censivn.C3DEngine.b.g.c.a(this.K);
-        com.censivn.C3DEngine.b.g.c.a(this.K, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.K);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.K, 300, dVar);
     }
 
     private void aQ() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderPage.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 h.this.N();
             }
@@ -206,8 +206,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         dVar.l(1.0f);
         dVar.m(1.0f);
         dVar.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.K);
-        com.censivn.C3DEngine.b.g.c.a(this.K, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.K);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.K, 300, dVar);
     }
 
     private void aR() {
@@ -346,7 +346,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.ai.a(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.C, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.B);
         }
         if (this.an) {
-            com.censivn.C3DEngine.b.g.c.a(this.K);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.K);
             this.K.scale().setAll(v, v, 1.0f);
             this.K.position().y = w;
         }
@@ -625,9 +625,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void bc() {
-        this.ab = new com.censivn.C3DEngine.b.g._b.b();
-        this.Z = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderPage.11
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.ab = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
+        this.Z = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.11
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
                 h.this.ag = h.this.ac * h.this.P * f;
                 if (h.this.S) {
@@ -635,13 +635,13 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.c.a(h.this.ab, h.D, h.this.aa);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(h.this.ab, h.D, h.this.aa);
             }
         };
-        this.aa = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderPage.12
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.aa = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.12
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
                 h.this.ag = h.this.ac * h.this.P * (1.0f - f);
                 if (h.this.S) {
@@ -649,7 +649,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 h.this.Q = false;
                 h.this.M.n();
@@ -657,8 +657,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             }
         };
         this.aa.b(260);
-        this.Z.a((com.censivn.C3DEngine.b.g.b) new PageElement.C0030a.b());
-        this.aa.a((com.censivn.C3DEngine.b.g.b) new PageElement.C0030a.b());
+        this.Z.a((com.censivn.C3DEngine.b.g.TweenCallback) new PageElement.C0030a.b());
+        this.aa.a((com.censivn.C3DEngine.b.g.TweenCallback) new PageElement.C0030a.b());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -682,7 +682,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         } else {
             D = 350;
         }
-        com.censivn.C3DEngine.b.g.c.a(this.ab, D, this.Z);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.ab, D, this.Z);
         aZ();
         au();
     }
@@ -1163,8 +1163,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private void e(final com.tsf.shell.f.i.PageItem bVar) {
         bVar.mouseEnabled(false);
         bVar.p_();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderPage.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.tsf.shell.manager.app.ServiceProvider.c().a(bVar.K());
                 bVar.g();
@@ -1174,8 +1174,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         dVar.l(0.0f);
         dVar.m(0.0f);
         dVar.n(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(bVar);
-        com.censivn.C3DEngine.b.g.c.a(bVar, VEasing.Back.easeIn, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, VEasing.Back.easeIn, dVar);
     }
 
     public com.censivn.C3DEngine.b.d.a f(i iVar) {

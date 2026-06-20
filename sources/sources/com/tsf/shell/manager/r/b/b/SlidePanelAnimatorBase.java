@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.r.b.b;
 
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.C;
+import com.censivn.C3DEngine.b.g.TweenManager;
 import com.tsf.shell.f.e._g.MenuOverlay;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -16,8 +16,8 @@ public class SlidePanelAnimatorBase {
 
     public void a(boolean z) {
         if (this.c.visible() && z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     SlidePanelAnimatorBase.this.c.visible(false);
                     SlidePanelAnimatorBase.this.b();
@@ -42,8 +42,8 @@ public class SlidePanelAnimatorBase {
                 this.c.alpha(0.0f);
                 this.c.position().y = -this.d.getHeight();
             }
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     SlidePanelAnimatorBase.this.d();
                 }
@@ -51,7 +51,7 @@ public class SlidePanelAnimatorBase {
             dVar.h(0.0f);
             dVar.a(255);
             c.a(this.c);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             c.a(this.c, com.tsf.shell.f.e._g.a.MenuItemBase.ANIMATION_TIME, dVar);
         } else {
             this.c.alpha(255.0f);

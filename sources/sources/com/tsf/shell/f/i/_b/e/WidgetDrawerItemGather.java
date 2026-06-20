@@ -16,7 +16,7 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
     private static TextureElement b = new TextureElement(0, false);
     private static float p = 0.0f;
     private static ArrayList<c> q = new ArrayList<>();
-    private static com.censivn.C3DEngine.b.g.d r = new com.censivn.C3DEngine.b.g.d();
+    private static com.censivn.C3DEngine.b.g.TweenParams r = new com.censivn.C3DEngine.b.g.TweenParams();
     private LauncherShortcutStandardInfo.ResourceControler s;
     private int t;
 
@@ -91,8 +91,8 @@ public class WidgetDrawerItemGather extends WidgetDrawerItemAction {
             if (a != null) {
                 r.e(WidgetDrawerItemEditAction);
                 r.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(WidgetDrawerItemBase);
-                com.censivn.C3DEngine.b.g.c.a(a, 500, r);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(WidgetDrawerItemBase);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a, 500, r);
             }
         }
     }

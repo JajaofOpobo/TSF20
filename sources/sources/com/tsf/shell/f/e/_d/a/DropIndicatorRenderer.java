@@ -45,9 +45,9 @@ public class DropIndicatorRenderer extends BaseRenderable {
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.B bVar = com.censivn.C3DEngine.b.g.a.c;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.EasingInterpolator bVar = com.censivn.C3DEngine.b.g.a.AbstractTween;
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.d = true;
             }
@@ -55,10 +55,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar.a(bVar);
         dVar.l(6.0f);
         dVar.b(50);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 900, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 900, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -67,10 +67,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar2.e(-45.0f);
         dVar2.l(5.0f);
         dVar2.h(14.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 900, dVar2);
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 900, dVar2);
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -79,10 +79,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar3.e(45.0f);
         dVar3.l(5.0f);
         dVar3.h(-14.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 900, dVar3);
-        com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 900, dVar3);
+        com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -91,14 +91,14 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar4.m(0.8f);
         dVar4.n(0.8f);
         dVar4.e(-180.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, 900, dVar4);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 900, dVar4);
     }
 
     public void b() {
-        com.censivn.C3DEngine.b.g.B bVar = com.censivn.C3DEngine.b.g.a.c;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.5
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.EasingInterpolator bVar = com.censivn.C3DEngine.b.g.a.AbstractTween;
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.5
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.d = false;
             }
@@ -106,10 +106,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar.a(bVar);
         dVar.l(1.0f);
         dVar.b(50);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 900, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.6
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 900, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.6
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -118,10 +118,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar2.e(0.0f);
         dVar2.l(1.0f);
         dVar2.h(this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 900, dVar2);
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.7
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 900, dVar2);
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.7
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -130,10 +130,10 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar3.e(0.0f);
         dVar3.l(1.0f);
         dVar3.h(-this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 900, dVar3);
-        com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.8
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 900, dVar3);
+        com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorRenderer.8
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
@@ -142,8 +142,8 @@ public class DropIndicatorRenderer extends BaseRenderable {
         dVar4.m(1.0f);
         dVar4.n(1.0f);
         dVar4.e(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, 900, dVar4);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 900, dVar4);
     }
 
     private void a(int i) {

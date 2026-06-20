@@ -22,8 +22,8 @@ public class FolderShortcutGrid extends FolderPageItemBase {
             @Override // com.censivn.C3DEngine.b.h.e.b
             public void a(int i) {
                 if (i > 0) {
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1.1
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1.1
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             f.this.h.visible(false);
                             f.this.h.a();
@@ -31,15 +31,15 @@ public class FolderShortcutGrid extends FolderPageItemBase {
                     };
                     dVar.h(com.censivn.C3DEngine.b.b.A.a(-150.0f));
                     dVar.a(0);
-                    com.censivn.C3DEngine.b.g.c.a(f.this.h);
-                    com.censivn.C3DEngine.b.g.c.a(f.this.h, 300, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h, 300, dVar);
                     return;
                 }
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.h(0.0f);
                 dVar2.a(255);
-                com.censivn.C3DEngine.b.g.c.a(f.this.h);
-                com.censivn.C3DEngine.b.g.c.a(f.this.h, 300, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h, 300, dVar2);
                 f.this.h.visible(true);
             }
 

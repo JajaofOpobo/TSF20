@@ -19,7 +19,7 @@ public class ClothTransition extends ItemPageTransition {
     private com.tsf.shell.f.f.WorkspacePage d;
     private com.tsf.shell.f.f.WorkspacePage e;
     private int f;
-    private com.censivn.C3DEngine.b.g._b.b g;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper g;
     private boolean h;
 
     public ClothTransition(int i, boolean z) {
@@ -27,7 +27,7 @@ public class ClothTransition extends ItemPageTransition {
         int i3;
         super(i, CrossfadeTransition.d.desktop_transition_cloth, z);
         this.f = 2;
-        this.g = new com.censivn.C3DEngine.b.g._b.b();
+        this.g = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
         this.h = true;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
@@ -71,20 +71,20 @@ public class ClothTransition extends ItemPageTransition {
             if (this.f != 1) {
                 this.f = 1;
                 final float f = this.a.position().z;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.a.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.a.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f2) {
                         a.this.b.c(255.0f * f2);
                         a.this.a.position().z = f + (((-300.0f) - f) * f2);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         a.this.h = true;
                     }
                 };
-                com.censivn.C3DEngine.b.g.c.a(this.g);
-                com.censivn.C3DEngine.b.g.c.a(this.g, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, VEasing.Linear.easeNone, dVar);
                 this.h = false;
                 return;
             }
@@ -93,20 +93,20 @@ public class ClothTransition extends ItemPageTransition {
         if (this.f != 2) {
             this.f = 2;
             final float f2 = this.a.position().z;
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.a.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.a.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
                     a.this.b.c((1.0f - f3) * 255.0f);
                     a.this.a.position().z = f2 + ((0.0f - f2) * f3);
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.h = true;
                 }
             };
-            com.censivn.C3DEngine.b.g.c.a(this.g);
-            com.censivn.C3DEngine.b.g.c.a(this.g, VEasing.Linear.easeNone, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, VEasing.Linear.easeNone, dVar2);
             this.h = false;
         }
     }

@@ -4,8 +4,8 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
@@ -48,7 +48,7 @@ public class a extends GridRenderable {
     public void b(boolean z) {
         if (z) {
             d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.c.a.1
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.a();
                     a.this.removeFromParent();

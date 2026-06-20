@@ -24,8 +24,8 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
             this.a.alpha(150.0f);
             this.a.clearDefaultColor();
             this.a.scale().setAll(1.0f, 1.0f, 1.0f);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonC.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonC.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     c.this.a.textures().removeAll();
                     com.tsf.shell.manager.app.TaskScheduler.b(c.this.a);
@@ -37,8 +37,8 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
             dVar.l(2.0f);
             dVar.m(2.0f);
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.a);
-            com.censivn.C3DEngine.b.g.c.a(this.a, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 250, dVar);
         }
     }
 
@@ -57,8 +57,8 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
         this.c.textures().addElement(kVar.textures().get(0).textureElement);
         this.c.alpha(150.0f);
         this.c.scale().setAll(1.0f, 1.0f, 1.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonC.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonC.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.this.c.removeFromParent();
                 runnable.run();
@@ -69,7 +69,7 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
         dVar.l(2.0f);
         dVar.m(2.0f);
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
     }
 }

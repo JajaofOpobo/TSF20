@@ -3,8 +3,8 @@ package com.tsf.shell.f.e._c;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -351,7 +351,7 @@ public class SnapshotItem extends BaseRenderable {
     private void d() {
         final i iVar = this.x.b;
         d dVar = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.7
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 iVar.visible(false);
             }
@@ -426,7 +426,7 @@ public class SnapshotItem extends BaseRenderable {
             degrees += 180.0f;
         }
         final d dVar = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.9
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
                 float f8 = b.this.x.d * 1.0f;
                 float f9 = b.this.x.d * 1.0f;
@@ -436,22 +436,22 @@ public class SnapshotItem extends BaseRenderable {
                 b.this.b(fSqrt, fSqrt, f10, f11, 1.0f);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 runnable2.run();
             }
         };
-        dVar.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         d dVar2 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.10
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
                 float f8 = 300.0f * b.this.x.d;
                 float f9 = 299.0f * b.this.x.d;
@@ -459,7 +459,7 @@ public class SnapshotItem extends BaseRenderable {
                 b.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.x.e();
                 b.this.rotation().z = degrees;
@@ -498,7 +498,7 @@ public class SnapshotItem extends BaseRenderable {
                 return;
             } else {
                 final d dVar = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.12
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
                         float f5 = 10.0f * b.this.x.d;
                         float f6 = 40.0f * b.this.x.d;
@@ -507,17 +507,17 @@ public class SnapshotItem extends BaseRenderable {
                         b.this.b((1.0f - f4) * b.this.F, 0.0f, f7, f8, 0.5f);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void b(float f4) {
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         runnable2.run();
                     }
                 };
                 final d dVar2 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.13
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
                         float f5 = 10.0f * b.this.x.d;
                         float f6 = 40.0f * b.this.x.d;
@@ -526,17 +526,17 @@ public class SnapshotItem extends BaseRenderable {
                         b.this.b(b.this.F, 0.0f, f7, f8, 0.5f);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void b(float f4) {
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         c.a(b.this, (int) (200.0f * b.this.A), dVar);
                     }
                 };
                 d dVar3 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.14
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
                         float f5 = 10.0f * b.this.x.d;
                         float f6 = b.this.D + (((40.0f * b.this.x.d) - b.this.D) * f4);
@@ -544,11 +544,11 @@ public class SnapshotItem extends BaseRenderable {
                         b.this.b(b.this.F, (1.0f - f4) * b.this.E, f6, f7, 0.5f);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void b(float f4) {
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         c.a(b.this, (int) (100.0f * b.this.A), dVar2);
                     }
@@ -569,7 +569,7 @@ public class SnapshotItem extends BaseRenderable {
             degrees += 180.0f;
         }
         final d dVar4 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.1
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
                 float f8 = 10.0f * b.this.x.d;
                 float f9 = 40.0f * b.this.x.d;
@@ -578,40 +578,40 @@ public class SnapshotItem extends BaseRenderable {
                 b.this.b(fSqrt, fSqrt * f7, f10, f11, 0.5f);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 runnable2.run();
             }
         };
-        dVar4.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar4.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         final d dVar5 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
                 float f8 = 20.0f * b.this.x.d;
                 float f9 = 40.0f * b.this.x.d;
                 b.this.b(fSqrt, 0.0f, (f8 * f7) + f8, (50.0f * b.this.x.d) - (f9 * f7), 0.5f);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.a(b.this, (int) (300.0f * b.this.A), dVar4);
             }
         };
-        dVar5.a(com.censivn.C3DEngine.b.g.a.a);
+        dVar5.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
         final d dVar6 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.3
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
                 float f8 = 100.0f * b.this.x.d;
                 float f9 = 80.0f * b.this.x.d;
@@ -620,17 +620,17 @@ public class SnapshotItem extends BaseRenderable {
                 b.this.b(fSqrt * f7, 0.0f, f10, f11, 0.5f);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.a(b.this, (int) (200.0f * b.this.A), dVar5);
             }
         };
         d dVar7 = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.4
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
                 float f8 = 300.0f * b.this.x.d;
                 float f9 = 200.0f * b.this.x.d;
@@ -638,7 +638,7 @@ public class SnapshotItem extends BaseRenderable {
                 b.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.rotation().z = degrees;
                 c.a(b.this, (int) (200.0f * b.this.A), dVar6);
@@ -681,7 +681,7 @@ public class SnapshotItem extends BaseRenderable {
         this.G = 0.0f;
         alpha(0.0f);
         d dVar = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.5
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f18) {
                 b.this.G = f18;
                 if (f18 >= f16) {
@@ -722,7 +722,7 @@ public class SnapshotItem extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.a(f3, f4);
                 b.this.w = 1;
@@ -767,7 +767,7 @@ public class SnapshotItem extends BaseRenderable {
         final float f21 = f20 + f15;
         this.G = 0.0f;
         d dVar = new d() { // from class: com.tsf.shell.f.e._c.SnapshotItem.6
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f22) {
                 b.this.G = f22;
                 if (f22 >= f20) {
@@ -850,7 +850,7 @@ public class SnapshotItem extends BaseRenderable {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.a(f3, f4);
                 b.this.w = 1;

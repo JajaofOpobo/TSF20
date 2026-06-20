@@ -23,7 +23,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
     private boolean g = true;
     private boolean h = false;
     private boolean p = false;
-    private com.censivn.C3DEngine.b.g._b.b q = new com.censivn.C3DEngine.b.g._b.b();
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper q = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
     private float i = com.censivn.C3DEngine.b.b.A.c * 100.0f;
     private float j = com.censivn.C3DEngine.b.b.A.c * 100.0f;
     private TextureElement c = ThemeManager.mix.page.getTextureElement(ThemeShellDescription.PAGE_PREVIEW_INDICATOR, com.tsf.shell.manager.g.LayoutDimensionConstants.l, com.tsf.shell.manager.g.LayoutDimensionConstants.l);
@@ -234,19 +234,19 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         if (i > -1 && i < this.b) {
             if (this.f != i) {
                 if (this.e != null) {
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                     dVar.l(0.4f);
                     dVar.m(0.4f);
-                    com.censivn.C3DEngine.b.g.c.a(this.e);
-                    com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
                 }
                 this.f = i;
                 this.e = this.d.a(SelectionFrame);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar2);
             }
             if (!this.g) {
                 d(true);
@@ -263,21 +263,21 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         mouseEnabled(false);
         final float fAlpha = alpha();
         final float f = z ? 30.0f : 0.0f;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 j.this.alpha(fAlpha + ((f - fAlpha) * f2));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (!z) {
                     j.this.visible(false);
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.q);
-        com.censivn.C3DEngine.b.g.c.a(this.q, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 300, dVar);
     }
 
     public void b(boolean z) {
@@ -286,48 +286,48 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         }
         visible(true);
         final float fAlpha = alpha();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 j.this.alpha(fAlpha + ((255.0f - fAlpha) * f));
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.q);
-        com.censivn.C3DEngine.b.g.c.a(this.q, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 300, dVar);
     }
 
     public void c(boolean z) {
         this.g = false;
         mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     j.this.d.visible(false);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 600, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 600, dVar);
             return;
         }
         this.d.alpha(0.0f);
     }
 
     public void d(boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         this.g = true;
         this.d.visible(true);
         mouseEnabled(true);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     j.this.d.visible(true);
                 }
             };
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 600, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 600, dVar);
             return;
         }
         this.d.alpha(255.0f);
@@ -354,11 +354,11 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         public void a() {
             if (!this.e) {
                 this.e = true;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.a(VEasing.Back.easeIn);
                 dVar.h(0.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 250, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
                 removeFromParent();
                 j.this.addChild(this);
             }
@@ -367,8 +367,8 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         public void b() {
             if (this.e) {
                 this.e = false;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.a.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.a.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         a.this.c.position().y = a.this.b;
                         a.this.removeFromParent();
@@ -376,8 +376,8 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 };
                 dVar.a(0);
                 dVar.h(100.0f * com.censivn.C3DEngine.b.b.A.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 250, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
             }
         }
     }

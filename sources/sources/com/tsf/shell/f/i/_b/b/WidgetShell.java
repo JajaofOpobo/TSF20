@@ -187,10 +187,10 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
 
     public void q() {
         this.b.alpha(0.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 500, dVar);
     }
 
     public void ag() {
@@ -208,11 +208,11 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     @Override // com.tsf.shell.f.i.PageItem
     public void n_() {
         this.n = false;
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(180);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 500, dVar);
         setAnimationObjectState(true);
         t.a(this);
     }
@@ -220,26 +220,26 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     @Override // com.tsf.shell.f.i.PageItem
     public void m_() {
         super.m_();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 500, dVar);
         if (!this.a) {
             d.b bVar = (d.b) this.g.getLayoutParams();
             int i = bVar.a;
             int i2 = bVar.b;
             float fB = (i + (this.b.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.H;
             float fC = com.censivn.C3DEngine.b.b.A.I - (i2 + (this.b.c() / 2.0f));
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.c();
                 }
             };
             dVar2.f(fB);
             dVar2.h(fC);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 250, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 250, dVar2);
         }
     }
 

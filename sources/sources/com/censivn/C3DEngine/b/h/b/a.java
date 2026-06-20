@@ -96,12 +96,12 @@ class a extends com.censivn.C3DEngine.b.d.a {
                 }
                 com.tsf.shell.manager.A.j.a((IRenderable) this.e, true);
                 a();
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.2f);
                 dVar.m(1.2f);
                 dVar.n(1.2f);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
                 this.b.c(this.e);
             }
         }
@@ -121,13 +121,13 @@ class a extends com.censivn.C3DEngine.b.d.a {
             boolean zA = this.b.a(this.e, motionEvent.getX(), motionEvent.getY(), false, true);
             com.tsf.shell.manager.A.j.b(this.e);
             if (zA && this.b.e(this.e)) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.n(1.0f);
-                dVar.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+                dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
                 this.b.d(this.e);
                 return;
             }
@@ -153,16 +153,16 @@ class a extends com.censivn.C3DEngine.b.d.a {
                     }
                 }
             }
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             this.b.d(this.e);
             dVar2.l(1.0f);
             dVar2.m(1.0f);
             dVar2.n(1.0f);
             dVar2.f(number3dA.x);
             dVar2.h(number3dA.y);
-            dVar2.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar2);
+            dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar2);
             if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.b) && (this.e instanceof com.tsf.shell.f.i.C)) {
                 ((com.tsf.shell.f.i.C) this.e).ai();
             }

@@ -55,15 +55,15 @@ public class AddItemButton extends e {
     private void l() {
         if (this.f) {
             this.f = false;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.AddItemButton.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.AddItemButton.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     c.this.c.visible(false);
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
         }
     }
 
@@ -71,10 +71,10 @@ public class AddItemButton extends e {
         if (!this.f) {
             this.f = true;
             this.c.visible(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
         }
     }
 
@@ -85,12 +85,12 @@ public class AddItemButton extends e {
             for (int i = 0; i < size; i++) {
                 com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = arrayListA.get(i);
                 gVar.scale().setAll(0.0f, 0.0f, 1.0f);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.b(i * 100);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(gVar, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(gVar, 500, dVar);
                 this.e.a((com.tsf.shell.f.i.PageItem) gVar, true);
                 this.d.addChild(gVar);
             }

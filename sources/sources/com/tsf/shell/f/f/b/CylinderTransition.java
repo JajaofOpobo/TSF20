@@ -12,14 +12,14 @@ public class CylinderTransition extends ItemPageTransition {
     private com.censivn.C3DEngine.c.A c;
     private com.censivn.C3DEngine.c.b.a d;
     private int e;
-    private com.censivn.C3DEngine.b.g._b.b f;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper f;
     private com.censivn.C3DEngine.b.f.GridRenderable g;
     private boolean h;
 
     public CylinderTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_effect_cylinder, z);
         this.e = 2;
-        this.f = new com.censivn.C3DEngine.b.g._b.b();
+        this.f = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
         this.h = false;
         if (this.b == null) {
             this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
@@ -49,20 +49,20 @@ public class CylinderTransition extends ItemPageTransition {
         if (zB) {
             if (this.e != 1) {
                 this.e = 1;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.CylinderTransition.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.CylinderTransition.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f3) {
                         f.this.d.a(fB + ((0.5f - fB) * f3));
                         f.this.c.a();
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         f.this.h = true;
                     }
                 };
-                com.censivn.C3DEngine.b.g.c.a(this.f);
-                com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, VEasing.Linear.easeNone, dVar);
                 this.h = false;
                 return;
             }
@@ -70,20 +70,20 @@ public class CylinderTransition extends ItemPageTransition {
         }
         if (this.e != 2) {
             this.e = 2;
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.b.CylinderTransition.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.CylinderTransition.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
                     f.this.d.a(fB + ((0.0f - fB) * f3));
                     f.this.c.a();
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     f.this.h = true;
                 }
             };
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, VEasing.Linear.easeNone, dVar2);
             this.h = false;
         }
     }

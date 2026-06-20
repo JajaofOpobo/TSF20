@@ -17,7 +17,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
     private double h;
     private double g = 0.10471975511965977d;
     private boolean j = false;
-    private com.censivn.C3DEngine.b.g._b.b i = new com.censivn.C3DEngine.b.g._b.b();
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper i = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
     private TextureElement a = new TextureElement(0, false);
     private BaseRenderable c = new com.tsf.shell.f.e.e.ItemLayoutItem();
 
@@ -80,17 +80,17 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
     }
 
     public void a(final float f, boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(this.i);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.i);
         if (z) {
             final float f2 = this.d.rotation().z;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
                     d.this.d.rotation().z = f2 + ((f - f2) * f3);
                 }
             };
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
-            com.censivn.C3DEngine.b.g.c.a(this.i, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.i, 500, dVar);
             return;
         }
         this.d.rotation().z = f;
@@ -104,25 +104,25 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
                 this.c.scale().setAll(0.0f, 0.0f, 1.0f);
             }
             this.c.visible(true);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.f(com.censivn.C3DEngine.b.b.A.a(100.0f));
             dVar2.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar2);
         }
     }
 
     public void b() {
         if (this.j) {
             this.j = false;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     d.this.c.visible(false);
                 }
@@ -130,13 +130,13 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             dVar.a(0);
             dVar.l(0.0f);
             dVar.m(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.f(0.0f);
             dVar2.a(VEasing.Back.easeIn);
-            com.censivn.C3DEngine.b.g.c.a(this.d);
-            com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar2);
         }
     }
 

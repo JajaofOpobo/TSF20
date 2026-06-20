@@ -261,9 +261,9 @@ public abstract class DrawerTransitionBase3D extends k {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.g.c.b((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
+                com.censivn.C3DEngine.b.g.TweenUtils.b((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
             }
-            com.censivn.C3DEngine.b.g.c.b(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.b(aVar);
         }
     }
 
@@ -272,9 +272,9 @@ public abstract class DrawerTransitionBase3D extends k {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.g.c.c((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
+                com.censivn.C3DEngine.b.g.TweenUtils.c((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
             }
-            com.censivn.C3DEngine.b.g.c.c(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.c(aVar);
         }
     }
 
@@ -299,25 +299,25 @@ public abstract class DrawerTransitionBase3D extends k {
                         bVar2 = this.g.get(DrawerScaleTransition);
                     }
                     b bVar3 = bVar2;
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                     dVar.f(bVar3.a);
                     dVar.h(bVar3.b);
                     dVar.j(bVar3.c);
                     dVar.c(bVar3.e);
                     dVar.d(bVar3.d);
                     dVar.e(bVar3.f);
-                    com.censivn.C3DEngine.b.g.c.a(jVar);
-                    com.censivn.C3DEngine.b.g.c.a(jVar, 250, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(jVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(jVar, 250, dVar);
                 }
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         m.this.a(aVar, m.c);
                     }
                 };
                 dVar2.j(-this.f);
-                com.censivn.C3DEngine.b.g.c.a(aVar);
-                com.censivn.C3DEngine.b.g.c.a(aVar, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 250, dVar2);
                 return;
             }
             for (int i2 = 0; i2 < iNumChildren; i2++) {
@@ -328,7 +328,7 @@ public abstract class DrawerTransitionBase3D extends k {
                     bVar = this.g.get(i2);
                 }
                 b bVar4 = bVar;
-                com.censivn.C3DEngine.b.g.c.a(jVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(jVar2);
                 jVar2.position().x = bVar4.a;
                 jVar2.position().y = bVar4.b;
                 jVar2.position().z = bVar4.c;
@@ -336,15 +336,15 @@ public abstract class DrawerTransitionBase3D extends k {
                 jVar2.rotation().y = bVar4.d;
                 jVar2.rotation().z = bVar4.f;
             }
-            com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     m.this.a(aVar, m.c);
                 }
             };
             dVar3.j(-this.f);
-            com.censivn.C3DEngine.b.g.c.a(aVar);
-            com.censivn.C3DEngine.b.g.c.a(aVar, 250, dVar3);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 250, dVar3);
         }
     }
 
@@ -397,10 +397,10 @@ public abstract class DrawerTransitionBase3D extends k {
                 bVar.scale().y = 1.0f;
                 bVar.scale().z = 1.0f;
                 bVar.alpha(255.0f);
-                com.censivn.C3DEngine.b.g.c.a(bVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
             }
             aVar.position().z = 0.0f;
-            com.censivn.C3DEngine.b.g.c.a(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
         }
     }
 
@@ -419,26 +419,26 @@ public abstract class DrawerTransitionBase3D extends k {
                     number3d = this.h.get(DrawerScaleTransition);
                 }
                 Number3d number3d2 = number3d;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.f(number3d2.x);
                 dVar.h(number3d2.y);
                 dVar.j(number3d2.z);
                 dVar.c(0.0f);
                 dVar.d(0.0f);
                 dVar.e(0.0f);
-                com.censivn.C3DEngine.b.g.c.a(jVar);
-                com.censivn.C3DEngine.b.g.c.a(jVar, 250, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(jVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(jVar, 250, dVar);
             }
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     m.this.a(aVar, m.c);
                     m.this.l = true;
                 }
             };
             dVar2.j(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(aVar);
-            com.censivn.C3DEngine.b.g.c.a(aVar, 250, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 250, dVar2);
         }
     }
 

@@ -23,7 +23,7 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
     private float m;
     private float n;
     private float o;
-    private com.censivn.C3DEngine.b.g._b.b p;
+    private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper p;
     private GridRenderable q;
 
     public DockOperationBorder() {
@@ -65,32 +65,32 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
         uvs().set(bVarA2.a, 0.0f, 1.0f);
         uvs().set(bVarA2.d, 1.0f, 0.0f);
         uvs().set(bVarA2.c, 0.0f, 0.0f);
-        this.p = new com.censivn.C3DEngine.b.g._b.b();
+        this.p = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
         e();
     }
 
     public void c() {
         this.q.position().y = 0.0f;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.DockOperationBorder.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.DockOperationBorder.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
         dVar.h(this.a + (20.0f * com.censivn.C3DEngine.b.b.A.b));
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.q);
-        com.censivn.C3DEngine.b.g.c.a(this.q, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 300, dVar);
     }
 
     public void d() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.DockOperationBorder.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.DockOperationBorder.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.q);
-        com.censivn.C3DEngine.b.g.c.a(this.q, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.q, 300, dVar);
     }
 
     public void a(float f) {
@@ -99,21 +99,21 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
 
     public void a(final float f, final Runnable runnable) {
         final float f2 = this.o;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.DockOperationBorder.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.DockOperationBorder.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 e.this.b(f2 + ((f - f2) * f3));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this.p);
-        com.censivn.C3DEngine.b.g.c.a(this.p, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 300, dVar);
         if (f == 0.0f) {
             e();
         } else {

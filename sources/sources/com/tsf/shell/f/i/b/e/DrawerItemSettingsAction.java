@@ -77,26 +77,26 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
     }
 
     private void aY() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.g().a(j.this.p);
                 j.this.aW();
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.2.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(j.this.v);
-                com.censivn.C3DEngine.b.g.c.a(j.this.v, 300, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(j.this.v);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(j.this.v, 300, dVar2);
             }
         };
         dVar.l(0.0f);
         dVar.m(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.v);
-        com.censivn.C3DEngine.b.g.c.a(this.v, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.v);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.v, 300, dVar);
     }
 
     public void c(int i) {

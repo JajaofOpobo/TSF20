@@ -123,12 +123,12 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
     public void r() {
         if (!this.g) {
             this.e.scale().setAll(0.0f, 0.0f, 1.0f);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e);
-            com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
             Bitmap bitmap = ThemeManager.mix.shellOther.getTheme().getBitmap(ThemeShellDescription.PUBLIC_BUTTON_DELETE, com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b);
             com.censivn.C3DEngine.C3DEngine.g().a(this.f, bitmap);
             bitmap.recycle();

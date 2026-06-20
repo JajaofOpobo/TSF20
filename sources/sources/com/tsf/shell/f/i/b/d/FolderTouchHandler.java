@@ -78,11 +78,11 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
                         if (bVar2 != bVar) {
                             bVar2.g(1.0f);
                             bVar.a((com.tsf.shell.f.i.ShortcutItem) bVar2);
-                            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
-                            com.censivn.C3DEngine.b.g.c.a(bVar2);
+                            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2);
                             dVar.l(1.0f);
                             dVar.m(1.0f);
-                            com.censivn.C3DEngine.b.g.c.a(bVar2, 300, dVar);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar2, 300, dVar);
                         }
                     }
                     bVar.A().g();
@@ -97,12 +97,12 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
                 this.a.aF().a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.c);
                 com.tsf.shell.manager.app.TaskScheduler.a(this.c);
                 FolderTouchHandler();
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.l(bVar.d);
                 dVar2.m(bVar.d);
                 dVar2.n(1.0f);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar2);
                 this.c.setAnimationObjectState(true);
                 if (this.a.aC()) {
                     if (!bVar.as()) {
@@ -266,7 +266,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
     }
 
     public static class b {
-        public static class c implements com.censivn.C3DEngine.b.g.b {
+        public static class c implements com.censivn.C3DEngine.b.g.TweenCallback {
             @Override
             public float a(float f) {
                 return 0.0f;

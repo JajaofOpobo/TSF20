@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.d.a;
 
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.PageTouchHandler;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public interface ScrollBounceHandler {
 
     void a(g gVar);
 
-    void a(g gVar, com.censivn.C3DEngine.b.g._b.a aVar);
+    void a(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
 
     void a(n nVar);
 
@@ -36,5 +36,5 @@ public interface ScrollBounceHandler {
 
     float b(int i);
 
-    void b(g gVar, com.censivn.C3DEngine.b.g._b.a aVar);
+    void b(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
 }

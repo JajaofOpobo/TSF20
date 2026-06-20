@@ -157,15 +157,15 @@ public class RateDialog extends BaseRenderable {
         RateDialog();
     }
 
-    private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.b bVar, Runnable runnable) {
+    private void a(i iVar, float f2, int i2, int i3, com.censivn.C3DEngine.b.g.TweenCallback bVar, Runnable runnable) {
         iVar.position().y = (com.censivn.C3DEngine.b.b.A.C - c) - f2;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(runnable);
         dVar.h(f2);
         dVar.a(bVar);
         dVar.b(i3);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, i2, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, i2, dVar);
     }
 
     public void b() {

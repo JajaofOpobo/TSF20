@@ -37,8 +37,8 @@ public class ResizeButtonNode extends BaseRenderable {
         a(0.0f);
         final float f3 = this.c;
         final float f4 = 1.0f - this.c;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.b.ResizeButtonNode.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.b.ResizeButtonNode.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f5) {
                 float f6 = f3 + (f4 * f5);
                 if (f6 < 0.0f) {
@@ -47,15 +47,15 @@ public class ResizeButtonNode extends BaseRenderable {
                 a.this.a(f6);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, i, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, i, dVar);
     }
 
     public void a(TextureElement textureElement) {
@@ -90,21 +90,21 @@ public class ResizeButtonNode extends BaseRenderable {
     public void a(int i, final Runnable runnable) {
         final float f = this.c;
         final float f2 = 0.0f - this.c;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.b.ResizeButtonNode.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.b.ResizeButtonNode.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 a.this.a(f + (f2 * f3));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (runnable != null) {
                     runnable.run();
                 }
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(this);
-        com.censivn.C3DEngine.b.g.c.a(this, i, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this, i, dVar);
     }
 
     public TextureElement c() {

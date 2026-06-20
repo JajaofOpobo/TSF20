@@ -117,15 +117,15 @@ public class PageContainerBase extends PageContainerView {
                 final i iVarA = com.tsf.shell.manager.app.StateHub.t().a(bVar);
                 iVarA.removeFromParent();
                 com.tsf.shell.manager.app.StateHub.t().addChild(iVarA);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         com.tsf.shell.manager.app.StateHub.t().e(iVarA);
                     }
                 };
                 dVar.f(com.censivn.C3DEngine.b.b.A.A + com.tsf.shell.manager.o.ButtonPresetManager.a.T);
-                com.censivn.C3DEngine.b.g.c.a(iVarA);
-                com.censivn.C3DEngine.b.g.c.a(iVarA, VEasing.Linear.easeNone, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVarA);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVarA, VEasing.Linear.easeNone, dVar);
             }
             children().remove(bVar);
             if (this.d != null && this.d.e() != 0) {
@@ -220,18 +220,18 @@ public class PageContainerBase extends PageContainerView {
     }
 
     public void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList, Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar = null;
+        com.censivn.C3DEngine.b.g.TweenParams dVar = null;
         for (final i iVar : children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
-                dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.2
-                    @Override // com.censivn.C3DEngine.b.g.d
+                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.2
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         PageElement.this.children().remove(iVar);
                     }
                 };
                 dVar.f(iVar.position().x + com.censivn.C3DEngine.b.b.A.D);
-                com.censivn.C3DEngine.b.g.c.a(iVar);
-                com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 500, dVar);
             }
             dVar = dVar;
         }
@@ -240,7 +240,7 @@ public class PageContainerBase extends PageContainerView {
         while (i < iNumChildren) {
             com.tsf.shell.f.i.PageItem bVar = arrayList.get((h.m * e()) + i);
             Number3d number3d = h.E.get(i);
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar2.f(number3d.x);
             dVar2.h(number3d.y);
             if (!children().contains(bVar)) {
@@ -250,8 +250,8 @@ public class PageContainerBase extends PageContainerView {
                 bVar.position().x = number3d.x + com.censivn.C3DEngine.b.b.A.D;
                 bVar.position().y = number3d.y;
             }
-            com.censivn.C3DEngine.b.g.c.a(bVar);
-            com.censivn.C3DEngine.b.g.c.a(bVar, 500, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 500, dVar2);
             i++;
             dVar = dVar2;
         }

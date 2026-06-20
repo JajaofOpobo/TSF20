@@ -2,11 +2,11 @@ package com.censivn.C3DEngine.b.g._c.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends d {
+public class OrbitTween extends TweenParams {
     private float C;
     private float D;
     private float E;
@@ -26,7 +26,7 @@ public class a extends d {
         this.f = iVar.position().y;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.d
+    @Override // com.censivn.C3DEngine.b.g.TweenParams
     public void f(float f) {
         this.r = f;
         h();
@@ -36,7 +36,7 @@ public class a extends d {
         this.F = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.d
+    @Override // com.censivn.C3DEngine.b.g.TweenParams
     public void h(float f) {
         this.s = f;
         h();
@@ -51,7 +51,7 @@ public class a extends d {
         this.c = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.g.d
+    @Override // com.censivn.C3DEngine.b.g.TweenParams
     public void a(float f) {
         this.d.x = this.C * f;
         if (this.F) {

@@ -79,11 +79,11 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
     /* JADX WARN: Multi-variable type inference failed */
     public void a(f fVar) {
         i iVar = (i) fVar;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(1.0f);
         dVar.m(1.0f);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 300, dVar);
         this.f.a(iVar);
     }
 

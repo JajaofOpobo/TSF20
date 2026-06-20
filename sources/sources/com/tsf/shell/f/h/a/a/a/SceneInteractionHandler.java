@@ -229,51 +229,51 @@ public class SceneInteractionHandler extends BaseRenderable {
         this.l.b(com.censivn.C3DEngine.b.b.A.E + com.censivn.C3DEngine.b.b.A.a(500.0f));
         this.l.position().y = (((this.l.b() / 2.0f) - position().y) + com.censivn.C3DEngine.b.b.A.C) - com.censivn.C3DEngine.b.b.A.K;
         this.l.visible(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.l);
-        com.censivn.C3DEngine.b.g.c.a(this.l, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l, 350, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.6
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.6
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.l.visible(false);
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.l);
-        com.censivn.C3DEngine.b.g.c.a(this.l, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l, 350, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
         float fCos = (float) (Math.cos(0.7853981633974483d) * ((double) this.f));
         float fSin = (float) (Math.sin(0.7853981633974483d) * ((double) this.f));
         dVar.f(-fCos);
         dVar.h(fSin);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(255);
         dVar2.f(fCos);
         dVar2.h(fSin);
         dVar2.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 350, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 350, dVar2);
         this.d.visible(true);
         this.c.visible(true);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.7
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.7
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.c.visible(false);
             }
@@ -281,10 +281,10 @@ public class SceneInteractionHandler extends BaseRenderable {
         dVar.a(0);
         dVar.f(0.0f);
         dVar.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.8
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.8
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.d.visible(false);
             }
@@ -292,7 +292,7 @@ public class SceneInteractionHandler extends BaseRenderable {
         dVar2.a(0);
         dVar2.f(0.0f);
         dVar2.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar2);
     }
 }

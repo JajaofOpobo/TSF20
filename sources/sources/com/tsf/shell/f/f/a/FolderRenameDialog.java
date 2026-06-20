@@ -71,15 +71,15 @@ public class FolderRenameDialog extends BaseRenderable {
             this.f.visible(true);
             this.g.visible(true);
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.4
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.4
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         g.this.g.alpha(g.this.f.alpha());
                     }
                 };
                 dVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(this.f);
-                com.censivn.C3DEngine.b.g.c.a(this.f, 250, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 250, dVar);
                 return;
             }
             this.f.alpha(255.0f);
@@ -87,13 +87,13 @@ public class FolderRenameDialog extends BaseRenderable {
             return;
         }
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     g.this.g.alpha(g.this.f.alpha());
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     g.this.f.visible(false);
                     g.this.g.visible(false);
@@ -101,8 +101,8 @@ public class FolderRenameDialog extends BaseRenderable {
                 }
             };
             dVar2.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.f);
-            com.censivn.C3DEngine.b.g.c.a(this.f, 250, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 250, dVar2);
             return;
         }
         this.f.alpha(0.0f);
@@ -133,17 +133,17 @@ public class FolderRenameDialog extends BaseRenderable {
     }
 
     public void b(boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.6
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.6
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     g.this.a.visible(false);
                 }
             };
             dVar.a(0);
             dVar.h(com.censivn.C3DEngine.b.b.A.a(200.0f));
-            com.censivn.C3DEngine.b.g.c.a(this.a, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 350, dVar);
             return;
         }
         this.a.position().y = com.censivn.C3DEngine.b.b.A.a(200.0f);
@@ -151,14 +151,14 @@ public class FolderRenameDialog extends BaseRenderable {
     }
 
     public void c(boolean z) {
-        com.censivn.C3DEngine.b.g.c.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
         this.a.visible(true);
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
             dVar.h(0.0f);
             dVar.a(com.censivn.C3DEngine.b.g.a.n);
-            com.censivn.C3DEngine.b.g.c.a(this.a, 600, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 600, dVar);
             return;
         }
         this.a.position().y = 0.0f;

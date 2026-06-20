@@ -79,29 +79,29 @@ public class WorkspaceDockPanel extends BaseRenderable {
     }
 
     public float a(float f) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(50);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 500, dVar);
         this.f.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(50);
-        com.censivn.C3DEngine.b.g.c.a(this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.g, 500, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 500, dVar2);
         this.g.mouseEnabled(false);
         return (this.c / 2.0f) + f + com.censivn.C3DEngine.b.b.A.a(260.0f);
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, 500, dVar);
         this.f.mouseEnabled(true);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.g, 500, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, 500, dVar2);
         this.g.mouseEnabled(true);
         this.h.p();
     }

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.a.EngineController;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.g.C;
+import com.censivn.C3DEngine.b.g.TweenManager;
 import com.tsf.shell.e.DragLayer;
 import com.tsf.shell.utils.StatusBarHelper;
 

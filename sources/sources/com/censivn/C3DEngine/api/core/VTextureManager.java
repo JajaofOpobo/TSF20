@@ -3,8 +3,8 @@ package com.censivn.C3DEngine.api.core;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.C3DEngine;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -58,7 +58,7 @@ public class VTextureManager {
     public void replaceTextureByTween(final VObject3d vObject3d, final TextureElement textureElement, final TextureElement textureElement2, int i, final boolean z) {
         final int i2 = i / 2;
         d dVar = new d() { // from class: com.censivn.C3DEngine.api.core.VTextureManager.1
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 VTextureManager.this.replaceTexture(vObject3d, textureElement, textureElement2, z);
                 d dVar2 = new d();

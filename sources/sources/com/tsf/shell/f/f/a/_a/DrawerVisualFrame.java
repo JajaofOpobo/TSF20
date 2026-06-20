@@ -81,11 +81,11 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
     public void f() {
         this.a.position().y = (-com.censivn.C3DEngine.b.b.A.a(100.0f)) + DrawerItemContainer.a;
         this.a.alpha(0.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
         dVar.a(com.censivn.C3DEngine.b.g.a.n);
         dVar.h(-com.censivn.C3DEngine.b.b.A.a(100.0f));
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 750, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 750, dVar);
     }
 }

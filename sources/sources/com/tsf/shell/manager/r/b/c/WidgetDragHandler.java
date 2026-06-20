@@ -47,8 +47,8 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
     @Override // com.censivn.C3DEngine.b.h.b.f
     public void c(i iVar, int i, MotionEvent motionEvent) {
         final com.tsf.shell.f.i.c.ItemLabelProvider eVarA = a(i);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragHandler.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragHandler.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 eVarA.f();
                 com.tsf.shell.manager.app.TaskScheduler.b(WidgetDragHandler.this.d);
@@ -58,12 +58,12 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
                 WidgetDragHandler.this.d.position().x = 0.0f;
                 WidgetDragHandler.this.d.position().y = 0.0f;
                 WidgetDragHandler.this.d.setAnimationObjectState(WidgetDragHandler.this.e);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
                 dVar2.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(WidgetDragHandler.this.d);
-                com.censivn.C3DEngine.b.g.c.a(WidgetDragHandler.this.d, 500, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(WidgetDragHandler.this.d);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(WidgetDragHandler.this.d, 500, dVar2);
                 WidgetDragHandler.this.d = null;
             }
         };
@@ -72,8 +72,8 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         dVar.n(1.0f);
         dVar.a(0);
         dVar.j(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.d);
-        com.censivn.C3DEngine.b.g.c.a(this.d, 300, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.d, 300, dVar);
         if (a(eVarA, this.d.position().x, this.d.position().y)) {
             this.f.templeteShow();
         }

@@ -71,12 +71,12 @@ public class PageContentType extends g {
         this.l.a(i, i);
         this.l.scale().setAll(0.5f, 0.5f, 1.0f);
         this.l.alpha(0.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(1.0f);
         dVar.m(1.0f);
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.l);
-        com.censivn.C3DEngine.b.g.c.a(this.l, 386, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.l, 386, dVar);
     }
 
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {

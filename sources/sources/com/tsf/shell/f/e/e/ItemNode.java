@@ -33,20 +33,20 @@ public class ItemNode extends BaseRenderable {
     /* JADX INFO: Access modifiers changed from: private */
     public void d() {
         visible(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 250, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 250, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 250, dVar2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.e.ItemNode.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.e.ItemNode.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.visible(false);
                 if (!a.this.d) {
@@ -55,12 +55,12 @@ public class ItemNode extends BaseRenderable {
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, 250, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.b);
-        com.censivn.C3DEngine.b.g.c.a(this.b, 250, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.b, 250, dVar2);
     }
 
     public float a() {

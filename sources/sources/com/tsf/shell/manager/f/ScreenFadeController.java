@@ -13,7 +13,7 @@ public class ScreenFadeController {
     private static i d;
     private int f = 1;
     private boolean g;
-    private static com.censivn.C3DEngine.b.g._b.b e = new com.censivn.C3DEngine.b.g._b.b();
+    private static com.censivn.C3DEngine.b.g._b.TweenTargetWrapper e = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
     public static int a = 50;
     public static int b = 86;
 
@@ -29,14 +29,14 @@ public class ScreenFadeController {
 
     public static void a(final int i) {
         final int i2 = a;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.f.ScreenFadeController.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.f.ScreenFadeController.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 a.b((int) (i2 + ((i - i2) * f)));
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(e);
-        com.censivn.C3DEngine.b.g.c.a(e, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(e, 500, dVar);
     }
 
     public static void b(int i) {
@@ -84,8 +84,8 @@ public class ScreenFadeController {
             c.addChild(d);
             d.alpha(0.0f);
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.f.ScreenFadeController.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.f.ScreenFadeController.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (a.this.g && a.d.alpha() == 0.0f) {
                     a.d.removeFromParent();
@@ -93,15 +93,15 @@ public class ScreenFadeController {
             }
         };
         dVar.a(i);
-        com.censivn.C3DEngine.b.g.c.a(d);
-        com.censivn.C3DEngine.b.g.c.a(d, 350, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(d);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(d, 350, dVar);
     }
 
     public void c() {
         if (this.f != 1) {
             this.f = 1;
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.f.ScreenFadeController.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.f.ScreenFadeController.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     if (a.this.g) {
                         a.d.removeFromParent();
@@ -109,8 +109,8 @@ public class ScreenFadeController {
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(d);
-            com.censivn.C3DEngine.b.g.c.a(d, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(d);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(d, 350, dVar);
         }
     }
 

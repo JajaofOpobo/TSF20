@@ -48,7 +48,7 @@ public class ShellSurfaceConfig {
             @Override // java.lang.Runnable
             public void run() {
                 ShellSurfaceConfig.this.a.onResume();
-                com.censivn.C3DEngine.b.g.c.c();
+                com.censivn.C3DEngine.b.g.TweenUtils.c();
                 ShellSurfaceConfig.c.f();
             }
         };
@@ -60,7 +60,7 @@ public class ShellSurfaceConfig {
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f._d.2
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.b.g.c.b();
+                com.censivn.C3DEngine.b.g.TweenUtils.b();
                 ShellSurfaceConfig.c.g();
                 ShellSurfaceConfig.this.a.onPause();
             }

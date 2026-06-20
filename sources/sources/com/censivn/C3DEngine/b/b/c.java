@@ -99,23 +99,23 @@ public class c extends BaseRenderable {
             e();
         }
         this.j = iVar;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(0.95f);
         dVar.m(0.95f);
-        dVar.a(com.censivn.C3DEngine.b.g.A.e);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 500, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
         if (this.j != null) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
-            dVar.a(com.censivn.C3DEngine.b.g.A.e);
-            com.censivn.C3DEngine.b.g.c.a(this.j);
-            com.censivn.C3DEngine.b.g.c.a(this.j, 500, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.e);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 500, dVar);
             this.j = null;
         }
     }
@@ -143,7 +143,7 @@ public class c extends BaseRenderable {
 
     public void c() {
         int i;
-        com.censivn.C3DEngine.b.g.d dVar;
+        com.censivn.C3DEngine.b.g.TweenParams dVar;
         mouseEnabled(false);
         int iNumChildren = numChildren();
         int i2 = 0;
@@ -159,21 +159,21 @@ public class c extends BaseRenderable {
                 childAt.alpha(0.0f);
                 childAt.position().y = layoutParams.g - A.a(500.0f);
                 if (i2 == iNumChildren - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.censivn.C3DEngine.b.b.c.2
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.b.c.2
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             c.this.mouseEnabled(true);
                         }
                     };
                 } else {
-                    dVar = new com.censivn.C3DEngine.b.g.d();
+                    dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 }
                 dVar.h(layoutParams.g);
-                dVar.a(com.censivn.C3DEngine.b.g.A.n);
+                dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.n);
                 dVar.b(i3 * 60);
                 dVar.a(255);
-                com.censivn.C3DEngine.b.g.c.a(childAt);
-                com.censivn.C3DEngine.b.g.c.a(childAt, 1000, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(childAt);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(childAt, 1000, dVar);
                 i = i3 + 1;
             }
             i2++;

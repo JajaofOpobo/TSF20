@@ -43,8 +43,8 @@ public class FolderItemPositioner implements e.a {
     public int K;
     public ArrayList<ThemeFolderDescription.SystemFolderChild> L;
     public com.censivn.C3DEngine.b.d.a M;
-    private com.censivn.C3DEngine.b.g.d T;
-    private com.censivn.C3DEngine.b.g.d U;
+    private com.censivn.C3DEngine.b.g.TweenParams T;
+    private com.censivn.C3DEngine.b.g.TweenParams U;
     private FolderItemBackground W;
     private com.tsf.shell.preference.a.a.PreferenceItemF X;
     public int a;
@@ -97,23 +97,23 @@ public class FolderItemPositioner implements e.a {
         this.W.c();
         this.X.d();
         this.F.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(com.censivn.C3DEngine.b.b.A.D);
-        dVar.a(com.censivn.C3DEngine.b.g.A.a);
+        dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.a);
         dVar.a(50);
-        com.censivn.C3DEngine.b.g.c.a(this.F);
-        com.censivn.C3DEngine.b.g.c.a(this.F, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.F);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.F, 500, dVar);
     }
 
     public void b() {
         this.W.b();
         this.F.mouseEnabled(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.f(0.0f);
-        dVar.a(com.censivn.C3DEngine.b.g.A.a);
+        dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.a);
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.F);
-        com.censivn.C3DEngine.b.g.c.a(this.F, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.F);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.F, 500, dVar);
     }
 
     public ThemeDescription c() {
@@ -139,14 +139,14 @@ public class FolderItemPositioner implements e.a {
     }
 
     private void m() {
-        this.T = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        this.T = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 j.this.I.visible(false);
             }
         };
         this.T.a(0);
-        this.U = new com.censivn.C3DEngine.b.g.d();
+        this.U = new com.censivn.C3DEngine.b.g.TweenParams();
         this.U.a(210);
     }
 
@@ -170,8 +170,8 @@ public class FolderItemPositioner implements e.a {
     public void h() {
         if (!this.V) {
             this.V = true;
-            com.censivn.C3DEngine.b.g.c.a(this.I);
-            com.censivn.C3DEngine.b.g.c.a(this.I, VEasing.Linear.easeNone, this.U);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.I);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.I, VEasing.Linear.easeNone, this.U);
             this.I.visible(true);
         }
     }
@@ -179,8 +179,8 @@ public class FolderItemPositioner implements e.a {
     public void i() {
         if (this.V) {
             this.V = false;
-            com.censivn.C3DEngine.b.g.c.a(this.I);
-            com.censivn.C3DEngine.b.g.c.a(this.I, VEasing.Linear.easeNone, this.T);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.I);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.I, VEasing.Linear.easeNone, this.T);
         }
     }
 
@@ -450,20 +450,20 @@ public class FolderItemPositioner implements e.a {
     public void a(int i, com.tsf.shell.f.i.b.d.FolderShortcutItem bVar) {
         this.E.visible(true);
         this.W.b();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.l(1.0f);
         dVar.m(1.0f);
         dVar.a(255);
-        dVar.a(com.censivn.C3DEngine.b.g.A.a);
-        com.censivn.C3DEngine.b.g.c.a(this.E);
-        com.censivn.C3DEngine.b.g.c.a(this.E, i, dVar);
+        dVar.a(com.censivn.C3DEngine.b.g.EasingFunctions.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.E);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.E, i, dVar);
     }
 
     public void a(boolean z) {
         this.W.c();
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.6
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.6
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     j.this.E.visible(false);
                 }
@@ -471,8 +471,8 @@ public class FolderItemPositioner implements e.a {
             dVar.a(0);
             dVar.l(0.0f);
             dVar.m(0.0f);
-            com.censivn.C3DEngine.b.g.c.a(this.E);
-            com.censivn.C3DEngine.b.g.c.a(this.E, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.E);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.E, 350, dVar);
             return;
         }
         this.E.scale().x = 0.0f;

@@ -61,23 +61,23 @@ public class DashItemF extends DashItemD {
 
     @Override // com.tsf.shell.f._d.b.a.DashItemD
     public void b() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.b.a.DashItemF.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.b.a.DashItemF.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 f.this.c.visible(false);
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, VEasing.Back.easeIn, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, VEasing.Back.easeIn, dVar);
     }
 
     @Override // com.tsf.shell.f._d.b.a.DashItemD
     public void c() {
         this.c.visible(true);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, VEasing.Back.easeIn, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, VEasing.Back.easeIn, dVar);
     }
 }

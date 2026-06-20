@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.g.A;
+import com.censivn.C3DEngine.b.g.EasingFunctions;
 import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.manager.bind.ShellModel;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -60,10 +60,10 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         a.c().h();
         a.c().a((-i) / 2, (-i2) / 2, i / 2, i2 / 2);
         com.censivn.C3DEngine.b.c.b.a(AlignmentOverlay);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(255);
-        com.censivn.C3DEngine.b.g.c.a(AlignmentOverlay);
-        com.censivn.C3DEngine.b.g.c.a(a, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentOverlay);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
 
     @Override // com.censivn.C3DEngine.b.c.b.a
@@ -83,15 +83,15 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             b.i();
             c = null;
             com.censivn.C3DEngine.b.c.b.b(this);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     t.a.removeFromParent();
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this);
-            com.censivn.C3DEngine.b.g.c.a(this, 250, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this, 250, dVar);
             e = false;
             if (f != null) {
                 f.a();
@@ -116,7 +116,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         private com.censivn.C3DEngine.b.f.GridRenderable k;
         private com.censivn.C3DEngine.b.f.GridRenderable l;
         private com.censivn.C3DEngine.b.f.EmptyRenderable m;
-        private com.censivn.C3DEngine.b.g._b.b n;
+        private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper n;
         private int o;
         private float p;
         private float q;
@@ -130,7 +130,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             this.t = new int[4];
             this.g = this;
             this.h = tVar;
-            this.n = new com.censivn.C3DEngine.b.g._b.b();
+            this.n = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
             this.f = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_RESIZE_MATCH_BUTTON, 64, 64);
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.1
                 @Override // java.lang.Runnable
@@ -304,19 +304,19 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                 i4 = (i3 * i) / i2;
             }
             this.g.a(i + i4, i2 + i3);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     c.this.g.a(i + (i4 * (1.0f - f)), i2 + (i3 * (1.0f - f)));
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                 }
             };
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, 250, dVar);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, 250, dVar);
             this.p = i / 2;
             this.q = i / 2;
             this.r = i2 / 2;
@@ -403,7 +403,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         }
 
         public void j() {
-            com.censivn.C3DEngine.b.g.c.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
         }
 
         private int[] a(int i, int i2, int i3, int i4, boolean z) {
@@ -463,8 +463,8 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             final float fE = e();
             final float fA = a();
             final float fD = d();
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f2) {
                     if (f != c.this.p) {
                         c.this.g.i(f + ((c.this.p - f) * f2));
@@ -480,13 +480,13 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                 }
             };
-            dVar.a((com.censivn.C3DEngine.b.g.b) new a.c.C0034a());
-            com.censivn.C3DEngine.b.g.c.a(this.n);
-            com.censivn.C3DEngine.b.g.c.a(this.n, 1000, dVar);
+            dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new a.c.C0034a());
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, 1000, dVar);
         }
 
         private void a(int i, boolean z) {

@@ -81,18 +81,18 @@ public class SceneAnimationController implements c.a {
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void a(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.c.removeFromParent();
                 }
             };
             dVar.a(0);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
             return;
         }
-        com.censivn.C3DEngine.b.g.c.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
         this.c.alpha(0.0f);
         this.c.removeFromParent();
     }
@@ -100,13 +100,13 @@ public class SceneAnimationController implements c.a {
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
     public void b(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(this.c);
-            com.censivn.C3DEngine.b.g.c.a(this.c, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 300, dVar);
             return;
         }
-        com.censivn.C3DEngine.b.g.c.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
         this.c.alpha(255.0f);
     }
 

@@ -200,8 +200,8 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         this.c.position().setAllFrom(this.e);
         this.c.scale().setAll(this.d, this.d, 1.0f);
         this.b.addChild(this);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.5
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.5
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.this.c.mouseEnabled(true);
             }
@@ -211,8 +211,8 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         dVar.f(0.0f);
         dVar.h(f());
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
         SceneSurfaceNode();
         a(true);
         b(true);
@@ -226,8 +226,8 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
             return false;
         }
         a(this.f.c(), false);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.6
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.6
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 c.this.f.a().e();
                 c.this.removeFromParent();
@@ -244,19 +244,19 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         dVar.f(this.e.x);
         dVar.h(SceneOverlayNode);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.c);
-        com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
         a(this.g, 0);
         for (int i = 0; i < this.i.size(); i++) {
             d dVar2 = this.i.get(i);
             a(dVar2.c(), 0);
             a(dVar2.d(), 0);
         }
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar3.a(0);
         dVar3.h(com.censivn.C3DEngine.b.b.A.C - com.censivn.C3DEngine.b.b.A.a(180.0f));
-        com.censivn.C3DEngine.b.g.c.a(this.j);
-        com.censivn.C3DEngine.b.g.c.a(this.j, 250, dVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.j);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.j, 250, dVar3);
         this.l.c();
         return true;
     }
@@ -293,15 +293,15 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         if (z) {
             iVar.position().y = f - com.censivn.C3DEngine.b.b.A.a(350.0f);
             iVar.alpha(0.0f);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.h(SceneOverlayNode);
             dVar.a(255);
-            dVar.a(com.censivn.C3DEngine.b.g.a.a);
+            dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             if (i != 0) {
                 dVar.b(i);
             }
-            com.censivn.C3DEngine.b.g.c.a(iVar);
-            com.censivn.C3DEngine.b.g.c.a(iVar, 350, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 350, dVar);
             return;
         }
         iVar.position().y = f;
@@ -309,14 +309,14 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
     }
 
     private void a(i iVar, int i) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(iVar.position().y + com.censivn.C3DEngine.b.b.A.a(250.0f));
         dVar.a(0);
         if (i != 0) {
             dVar.b(i);
         }
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 230, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 230, dVar);
     }
 
     public void e() {

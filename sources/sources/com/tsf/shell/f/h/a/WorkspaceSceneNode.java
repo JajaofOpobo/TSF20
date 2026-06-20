@@ -112,20 +112,20 @@ public class WorkspaceSceneNode {
     }
 
     private void a(final i iVar, final float f, final float f2, final float f3) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 iVar.position().y = (f > 0.0f ? f3 : -f3) + f;
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.3.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.3.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
                 dVar2.h(f);
                 dVar2.a(255);
                 iVar.rotation().z = f2;
-                com.censivn.C3DEngine.b.g.c.a(iVar);
-                com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar2);
             }
         };
         if (iVar.position().y <= 0.0f) {
@@ -133,8 +133,8 @@ public class WorkspaceSceneNode {
         }
         dVar.h(iVar.position().y + f3);
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
     }
 
     public BaseRenderable c() {
@@ -207,8 +207,8 @@ public class WorkspaceSceneNode {
             }
             if (z) {
                 this.c.visible(true);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.4
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.4
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (z2) {
                             a.this.A();
@@ -219,9 +219,9 @@ public class WorkspaceSceneNode {
                 dVar.h(z());
                 dVar.a(255);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 if (this.h) {
                     dVar2.e(90.0f);
                 } else {
@@ -229,8 +229,8 @@ public class WorkspaceSceneNode {
                 }
                 dVar2.h(b(this.g ? false : true));
                 dVar2.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar2);
                 return;
             }
             this.c.position().y = z();
@@ -257,8 +257,8 @@ public class WorkspaceSceneNode {
             }
             this.c.d();
             if (z) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.5
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.5
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (z2) {
                             a.this.D();
@@ -269,9 +269,9 @@ public class WorkspaceSceneNode {
                 dVar.h(z());
                 dVar.a(0);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 if (this.h) {
                     dVar2.e(-90.0f);
                 } else {
@@ -279,8 +279,8 @@ public class WorkspaceSceneNode {
                 }
                 dVar2.h(b(this.g ? false : true));
                 dVar2.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e);
-                com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar2);
                 return;
             }
             if (z2) {
@@ -341,19 +341,19 @@ public class WorkspaceSceneNode {
     }
 
     public void h() {
-        new com.censivn.C3DEngine.b.g.d();
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        new com.censivn.C3DEngine.b.g.TweenParams();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(0);
         dVar.h(b(false));
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
         this.e.mouseEnabled(false);
     }
 
     public void i() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.6
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.6
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.e.mouseEnabled(true);
             }
@@ -361,8 +361,8 @@ public class WorkspaceSceneNode {
         dVar.a(255);
         dVar.h(b(true));
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
     }
 
     public void j() {
@@ -379,29 +379,29 @@ public class WorkspaceSceneNode {
                     this.c.position().y += com.censivn.C3DEngine.b.b.A.a(100.0f);
                 }
                 this.c.alpha(0.0f);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.h(f);
                 dVar.a(255);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.c.a(this.c);
-                com.censivn.C3DEngine.b.g.c.a(this.c, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, dVar);
             }
         }
         if (this.d.id == 0) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.d, b.d.scrollcontainer_arrow);
         }
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar2.a(255);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, VEasing.Linear.easeNone, dVar2);
     }
 
     public void k() {
         if (this.f) {
             B();
         }
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.h.a.a.7
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.7
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (a.this.f) {
                     a.this.C();
@@ -411,8 +411,8 @@ public class WorkspaceSceneNode {
             }
         };
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.a);
-        com.censivn.C3DEngine.b.g.c.a(this.a, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, VEasing.Linear.easeNone, dVar);
     }
 
     private void G() {

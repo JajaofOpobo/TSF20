@@ -14,16 +14,16 @@ public class DashButtonF extends com.tsf.shell.f._d.a.DashElementBase {
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
     public void a(final i iVar, Number3d number3d, Number3d number3d2, final Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a._a.DashButtonF.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a._a.DashButtonF.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a._a.DashButtonF.1.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a._a.DashButtonF.1.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void c() {
                         f.this.a(iVar);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (runnable != null) {
                             runnable.run();
@@ -32,18 +32,18 @@ public class DashButtonF extends com.tsf.shell.f._d.a.DashElementBase {
                 };
                 dVar2.e(0.0f);
                 dVar2.a(com.censivn.C3DEngine.b.g.a.g);
-                com.censivn.C3DEngine.b.g.c.a(iVar);
-                com.censivn.C3DEngine.b.g.c.a(iVar, 1000, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 1000, dVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void c() {
                 f.this.a(iVar);
             }
         };
         dVar.e(45.0f);
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

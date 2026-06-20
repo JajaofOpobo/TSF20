@@ -1,11 +1,11 @@
 package com.censivn.C3DEngine.b.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class TweenParams {
     public int A;
     public int B;
     private Object a;
-    private B b;
+    private EasingInterpolator b;
     private Runnable c;
     private Runnable d;
     public boolean g = false;
@@ -44,7 +44,7 @@ public class d {
         this.b = bVar;
     }
 
-    public B e() {
+    public EasingInterpolator e() {
         return this.b;
     }
 

@@ -276,11 +276,11 @@ public class DrawerItemContainer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(float f, float f2, float f3) {
-        com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 1500, new AnonymousClass9(f, f3, f2));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new AnonymousClass9(f, f3, f2));
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.a._a.DrawerItemContainer$9, reason: invalid class name */
-    class AnonymousClass9 extends com.censivn.C3DEngine.b.g.d {
+    class AnonymousClass9 extends com.censivn.C3DEngine.b.g.TweenParams {
         final /* synthetic */ float a;
         final /* synthetic */ float b;
         final /* synthetic */ float c;
@@ -291,17 +291,17 @@ public class DrawerItemContainer {
             this.c = f3;
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
             float f2 = this.a + (this.b * f);
             c.this.p.position().y = f2;
             c.this.k.a(f2);
         }
 
-        @Override // com.censivn.C3DEngine.b.g.d
+        @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
-            com.censivn.C3DEngine.b.g.c.a(new com.censivn.C3DEngine.b.g._b.b(), 1500, new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.9.1
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.9.1
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     float f2 = AnonymousClass9.this.c - (AnonymousClass9.this.b * f);
                     c.this.p.position().y = f2;
@@ -309,7 +309,7 @@ public class DrawerItemContainer {
                     c.this.k.a(f2);
                 }
 
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     c.this.p.b(new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.9.1.1
                         @Override // java.lang.Runnable
@@ -364,8 +364,8 @@ public class DrawerItemContainer {
                     c.this.d.c();
                     c.this.l.f();
                     c.this.j.mouseEnabled(false);
-                    com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.10.1
-                        @Override // com.censivn.C3DEngine.b.g.d
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.10.1
+                        @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             c.this.j.mouseEnabled(true);
                             if (c.this.o) {
@@ -373,8 +373,8 @@ public class DrawerItemContainer {
                             }
                         }
                     };
-                    com.censivn.C3DEngine.b.g.c.a(c.this.j);
-                    com.censivn.C3DEngine.b.g.c.a(c.this.j, 750, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(c.this.j);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(c.this.j, 750, dVar);
                 }
             };
             if (zAM) {
@@ -428,10 +428,10 @@ public class DrawerItemContainer {
     public void g() {
         com.tsf.shell.manager.app.ServiceProvider.a().b(this.n);
         this.j.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.a(0);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
         com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.2
             @Override // java.lang.Runnable
             public void run() {

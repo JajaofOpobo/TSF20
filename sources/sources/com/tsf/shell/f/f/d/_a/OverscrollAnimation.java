@@ -3,8 +3,8 @@ package com.tsf.shell.f.f.d._a;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.PageTouchHandler;
 import java.util.ArrayList;
@@ -39,11 +39,11 @@ public class OverscrollAnimation implements OverscrollHandler {
     }
 
     @Override // com.tsf.shell.f.f.d._a.OverscrollHandler
-    public void a(final g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
+    public void a(final g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         c.a(aVar);
         final float f = gVar.rotation().y;
         c.a(aVar, 500, new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.1
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 gVar.rotation().y = f + ((0.0f - f) * f2);
             }
@@ -51,10 +51,10 @@ public class OverscrollAnimation implements OverscrollHandler {
     }
 
     @Override // com.tsf.shell.f.f.d._a.OverscrollHandler
-    public void b(final g gVar, com.censivn.C3DEngine.b.g._b.a aVar) {
+    public void b(final g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         final float f = gVar.rotation().y;
         d dVar = new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.2
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 gVar.rotation().y = f + ((50.0f - f) * f2);
             }
@@ -134,7 +134,7 @@ public class OverscrollAnimation implements OverscrollHandler {
                 dVar.h(this.h + (this.b * i2));
             } else {
                 dVar = new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.3
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         a.this.d.b();
                     }
@@ -152,7 +152,7 @@ public class OverscrollAnimation implements OverscrollHandler {
                 return;
             }
             d dVar2 = new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.4
-                @Override // com.censivn.C3DEngine.b.g.d
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     g gVar3 = (g) d();
                     gVar3.position().y = 0.0f;
@@ -176,7 +176,7 @@ public class OverscrollAnimation implements OverscrollHandler {
             g gVar2 = arrayList.get(i);
             if (gVar2 != gVar) {
                 d dVar = new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.5
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         g gVar3 = (g) d();
                         gVar3.position().y = 0.0f;
@@ -190,7 +190,7 @@ public class OverscrollAnimation implements OverscrollHandler {
             }
         }
         d dVar2 = new d() { // from class: com.tsf.shell.f.f.d._a.OverscrollAnimation.6
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.d.c();
             }

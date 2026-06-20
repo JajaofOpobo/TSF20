@@ -3,7 +3,7 @@ package com.tsf.shell.f.f.a.c._a;
 import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.g.C;
+import com.censivn.C3DEngine.b.g.TweenManager;
 import com.tsf.b;
 import com.tsf.shell.f.f.a.c.FolderSettingsPage;
 import com.tsf.shell.f.f.a.AppClassifier;
@@ -118,8 +118,8 @@ public class FolderIconLoader {
 
     private void l() {
         this.d = true;
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.b.visible(true);
                 a.this.e = 360.0f;
@@ -144,8 +144,8 @@ public class FolderIconLoader {
             @Override // java.lang.Runnable
             public void run() {
                 a.this.b.visible(false);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.4.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.4.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (a.this.i != null && aVar != null) {
                             com.tsf.shell.manager.app.StateHub.t().am().a(aVar);

@@ -216,7 +216,7 @@ public class WidgetVisualRenderer extends f {
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.widget.a.a.WidgetVisualRenderer$a$a, reason: collision with other inner class name */
-        class C0170a extends com.censivn.C3DEngine.b.g.d {
+        class C0170a extends com.censivn.C3DEngine.b.g.TweenParams {
             int C;
             int D;
             int E;
@@ -230,7 +230,7 @@ public class WidgetVisualRenderer extends f {
             C0170a() {
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 if (this.a) {
                     d(((com.censivn.C3DEngine.b.f.a.SpriteItemData) C0170a()).H.color);
@@ -264,7 +264,7 @@ public class WidgetVisualRenderer extends f {
                 C0170a c0170a = new C0170a();
                 c0170a.b(i * 40);
                 c0170a.c(iArr[i]);
-                com.censivn.C3DEngine.b.g.c.a(bVarA, 90, c0170a);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(bVarA, 90, c0170a);
             }
         }
 

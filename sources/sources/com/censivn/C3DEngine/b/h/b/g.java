@@ -321,11 +321,11 @@ public class g extends BaseRenderable {
         i iVarA;
         if (iVar.getDisplayTag() != i && (iVarA = a(i, iVar)) != null) {
             iVarA.setDisplayTag(i);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.a(runnable);
             dVar.f(i * this.f);
-            com.censivn.C3DEngine.b.g.c.a(iVarA);
-            com.censivn.C3DEngine.b.g.c.a(iVarA, 300, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVarA);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(iVarA, 300, dVar);
         }
     }
 

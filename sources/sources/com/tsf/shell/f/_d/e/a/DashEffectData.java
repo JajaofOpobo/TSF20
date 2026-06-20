@@ -3,8 +3,8 @@ package com.tsf.shell.f._d.e.a;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.censivn.C3DEngine.b.g.C;
-import com.censivn.C3DEngine.b.g.d;
+import com.censivn.C3DEngine.b.g.TweenManager;
+import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.f._d.e.DashRendererBase;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.f.f.a.FolderPage;
@@ -62,7 +62,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
             dVar3.d(0.0f);
             dVar3.e(0.0f);
             dVar3.c(0.0f);
-            dVar3.a(com.censivn.C3DEngine.b.g.a.a);
+            dVar3.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             c.a(bVarA2);
             c.a(bVarA2, 500, dVar3);
             if (b()) {
@@ -132,7 +132,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
                 dVar2.m(1.0f);
                 dVar2.c(0.0f);
                 dVar2.d(0.0f);
-                dVar2.a(com.censivn.C3DEngine.b.g.a.a);
+                dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
                 c.a(iVar2);
                 c.a(iVar2, d(), dVar2);
                 if (!b()) {

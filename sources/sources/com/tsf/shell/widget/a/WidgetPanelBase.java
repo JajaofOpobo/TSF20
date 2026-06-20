@@ -135,14 +135,14 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
 
     public void b() {
         this.b = true;
-        com.censivn.C3DEngine.b.g.c.b(this.k);
-        com.censivn.C3DEngine.b.g.c.b(this.l);
+        com.censivn.C3DEngine.b.g.TweenUtils.b(this.k);
+        com.censivn.C3DEngine.b.g.TweenUtils.b(this.l);
     }
 
     public void c() {
         this.b = false;
-        com.censivn.C3DEngine.b.g.c.c(this.k);
-        com.censivn.C3DEngine.b.g.c.c(this.l);
+        com.censivn.C3DEngine.b.g.TweenUtils.c(this.k);
+        com.censivn.C3DEngine.b.g.TweenUtils.c(this.l);
         synchronized (this.C) {
             this.C.notifyAll();
         }
@@ -315,16 +315,16 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         this.o.a(charSequence.toString());
         this.p.a(charSequence2.toString());
         float f = (((i2 / 60.0f) * 360.0f) / 12.0f) + ((i / 12.0f) * 360.0f);
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.widget.a.a.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 a.this.k.c(a.this.n.rotation().z + 90.0f);
             }
         };
         dVar.e(-f);
         dVar.a(com.censivn.C3DEngine.b.g.a.g);
-        com.censivn.C3DEngine.b.g.c.a(this.n);
-        com.censivn.C3DEngine.b.g.c.a(this.n, 1500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.n);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.n, 1500, dVar);
         float f2 = (i2 / 60.0f) * 360.0f;
         float f3 = 0.0f;
         if (a(f2, f) < 6.0f) {
@@ -332,21 +332,21 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         }
         final float fA = this.l.a();
         final float f4 = f3 - fA;
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.widget.a.a.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f5) {
                 a.this.l.c(a.this.m.rotation().z + 90.0f);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f5) {
                 a.this.l.e(fA + (f4 * f5));
             }
         };
         dVar2.e(-f2);
         dVar2.a(com.censivn.C3DEngine.b.g.a.g);
-        com.censivn.C3DEngine.b.g.c.a(this.m);
-        com.censivn.C3DEngine.b.g.c.a(this.m, 1500, dVar2);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.m, 1500, dVar2);
         WidgetPanelBase();
     }
 
@@ -365,27 +365,27 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
             int i2 = Integer.parseInt(DateFormat.format("mm", calendar).toString());
             int iAbs = ((int) (Math.abs(Math.toDegrees((float) Math.toRadians((((-i) * 30) + 90.0f) - (((i2 / 60.0f) * 360.0f) / 12.0f))) - 90.0d) / ((double) 6.0f))) * 50;
             WidgetEvent.a("delay:" + iAbs);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.widget.a.a.3
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.3
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     a.this.k.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
                 }
             };
             dVar.b(iAbs);
-            com.censivn.C3DEngine.b.g.c.a(this.k);
-            com.censivn.C3DEngine.b.g.c.a(this.k, 1000, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.k);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.k, 1000, dVar);
             float radians = (float) Math.toRadians(90.0f - ((i2 / 60.0f) * 360.0f));
             int iAbs2 = ((int) (Math.abs(Math.toDegrees(radians) - 90.0d) / ((double) 6.0f))) * 50;
             WidgetEvent.a("minRadians delay:" + Math.toDegrees(radians));
-            com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.widget.a.a.4
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.4
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     a.this.l.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
                 }
             };
             dVar2.b(iAbs2);
-            com.censivn.C3DEngine.b.g.c.a(this.l);
-            com.censivn.C3DEngine.b.g.c.a(this.l, 1000, dVar2);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.l);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.l, 1000, dVar2);
             int size = this.t.size();
             for (int i3 = 0; i3 < size; i3++) {
                 this.t.get(i3).a(i3 * 100, this.q);

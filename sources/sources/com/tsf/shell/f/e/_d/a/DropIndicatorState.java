@@ -131,13 +131,13 @@ public class DropIndicatorState extends BaseRenderable {
             for (int i4 = size - 1; i4 >= i2; i4--) {
                 C0092c c0092c = this.c.get(i4);
                 a aVar = c0092c.c;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.f(c0092c.g);
                 dVar.h(c0092c.f - f);
                 dVar.a(50);
-                dVar.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(aVar);
-                com.censivn.C3DEngine.b.g.c.a(aVar, VEasing.Linear.easeNone, dVar);
+                dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, VEasing.Linear.easeNone, dVar);
                 i3++;
             }
         }
@@ -151,14 +151,14 @@ public class DropIndicatorState extends BaseRenderable {
             for (int i3 = i; i3 < size; i3++) {
                 C0092c c0092c = this.c.get(i3);
                 a aVar = c0092c.c;
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.a(255);
                 dVar.b(i2 * 80);
                 dVar.f(c0092c.g);
                 dVar.h(c0092c.f);
-                dVar.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(aVar);
-                com.censivn.C3DEngine.b.g.c.a(aVar, VEasing.Linear.easeNone, dVar);
+                dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, VEasing.Linear.easeNone, dVar);
                 i2++;
             }
         }
@@ -180,13 +180,13 @@ public class DropIndicatorState extends BaseRenderable {
             int i2 = i;
             if (i2 < this.b.numChildren()) {
                 a aVar = (DropIndicatorContainer) this.b.getChildAt(i2);
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar.f(0.0f);
                 dVar.a(255);
                 dVar.b(i2 * 80);
-                dVar.a(com.censivn.C3DEngine.b.g.a.a);
-                com.censivn.C3DEngine.b.g.c.a(aVar);
-                com.censivn.C3DEngine.b.g.c.a(aVar, VEasing.Linear.easeNone, dVar);
+                dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, VEasing.Linear.easeNone, dVar);
                 i = i2 + 1;
             } else {
                 return;
@@ -204,8 +204,8 @@ public class DropIndicatorState extends BaseRenderable {
         }
         for (int i = 0; i < this.b.numChildren(); i++) {
             final a aVar = (DropIndicatorContainer) this.b.getChildAt(i);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.2
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.2
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     aVar.b();
                 }
@@ -220,8 +220,8 @@ public class DropIndicatorState extends BaseRenderable {
                     }
                 });
             }
-            com.censivn.C3DEngine.b.g.c.a(aVar);
-            com.censivn.C3DEngine.b.g.c.a(aVar, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 500, dVar);
         }
         return true;
     }
@@ -231,14 +231,14 @@ public class DropIndicatorState extends BaseRenderable {
         for (int i = 0; i < this.b.numChildren(); i++) {
             a aVar2 = (DropIndicatorContainer) this.b.getChildAt(i);
             if (aVar2 != aVar) {
-                com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.4
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.4
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
                 };
                 dVar.a(50);
-                com.censivn.C3DEngine.b.g.c.a(aVar2);
-                com.censivn.C3DEngine.b.g.c.a(aVar2, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(aVar2, 500, dVar);
                 aVar2.mouseEnabled(false);
             } else {
                 aVar2.mouseSkip(true);
@@ -249,14 +249,14 @@ public class DropIndicatorState extends BaseRenderable {
     private void e() {
         for (int i = 0; i < this.b.numChildren(); i++) {
             a aVar = (DropIndicatorContainer) this.b.getChildAt(i);
-            com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.5
-                @Override // com.censivn.C3DEngine.b.g.d
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorState.5
+                @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                 }
             };
             dVar.a(255);
-            com.censivn.C3DEngine.b.g.c.a(aVar);
-            com.censivn.C3DEngine.b.g.c.a(aVar, 500, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 500, dVar);
             aVar.mouseSkip(false);
             aVar.mouseEnabled(true);
         }

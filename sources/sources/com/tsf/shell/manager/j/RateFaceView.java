@@ -70,75 +70,75 @@ public class RateFaceView extends BaseRenderable {
     }
 
     public void a() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(com.censivn.C3DEngine.b.b.A.a(-20.0f));
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.j.RateFaceView.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.a(b.i.text_why);
-                com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar3.f(a.m);
-                com.censivn.C3DEngine.b.g.c.a(a.this.g);
-                com.censivn.C3DEngine.b.g.c.a(a.this.g, VEasing.Linear.easeNone, dVar3);
-                com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g, VEasing.Linear.easeNone, dVar3);
+                com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.f(a.this.f());
-                com.censivn.C3DEngine.b.g.c.a(a.this.b);
-                com.censivn.C3DEngine.b.g.c.a(a.this.b, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar2.f(-this.g.maxX());
-        com.censivn.C3DEngine.b.g.c.a(this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.g, VEasing.Linear.easeNone, dVar2);
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.j.RateFaceView.2
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.2
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.e(180.0f);
-                com.censivn.C3DEngine.b.g.c.a(a.this.c);
-                com.censivn.C3DEngine.b.g.c.a(a.this.c, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar3.h(com.censivn.C3DEngine.b.b.A.a(25.0f));
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, VEasing.Linear.easeNone, dVar3);
     }
 
     public void b() {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.e);
-        com.censivn.C3DEngine.b.g.c.a(this.e, VEasing.Linear.easeNone, dVar);
-        com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.j.RateFaceView.3
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, VEasing.Linear.easeNone, dVar);
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.3
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 a.this.a(b.i.text_excellent);
-                com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar3.f(a.m);
-                com.censivn.C3DEngine.b.g.c.a(a.this.g);
-                com.censivn.C3DEngine.b.g.c.a(a.this.g, VEasing.Linear.easeNone, dVar3);
-                com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g, VEasing.Linear.easeNone, dVar3);
+                com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.f(a.this.f());
-                com.censivn.C3DEngine.b.g.c.a(a.this.b);
-                com.censivn.C3DEngine.b.g.c.a(a.this.b, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar2.f(-this.g.maxX());
-        com.censivn.C3DEngine.b.g.c.a(this.g);
-        com.censivn.C3DEngine.b.g.c.a(this.g, VEasing.Linear.easeNone, dVar2);
-        com.censivn.C3DEngine.b.g.d dVar3 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.manager.j.RateFaceView.4
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.g, VEasing.Linear.easeNone, dVar2);
+        com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.4
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.d dVar4 = new com.censivn.C3DEngine.b.g.d();
+                com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.e(0.0f);
-                com.censivn.C3DEngine.b.g.c.a(a.this.c);
-                com.censivn.C3DEngine.b.g.c.a(a.this.c, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar3.h(0.0f);
-        com.censivn.C3DEngine.b.g.c.a(this.f);
-        com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar3);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.f, VEasing.Linear.easeNone, dVar3);
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable

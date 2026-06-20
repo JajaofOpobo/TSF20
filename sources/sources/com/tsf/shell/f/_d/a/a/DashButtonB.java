@@ -17,21 +17,21 @@ public class DashButtonB extends com.tsf.shell.f._d.a.DashElementBase {
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
     public void a(final i iVar, Number3d number3d, Number3d number3d2, final Runnable runnable) {
-        com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonB.1
-            @Override // com.censivn.C3DEngine.b.g.d
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonB.1
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.d dVar2 = new com.censivn.C3DEngine.b.g.d() { // from class: com.tsf.shell.f._d.a.a.DashButtonB.1.1
-                    @Override // com.censivn.C3DEngine.b.g.d
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonB.1.1
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         b.this.a(iVar, (int) (155.0f + (100.0f * f)));
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void c() {
                         b.this.a(iVar);
                     }
 
-                    @Override // com.censivn.C3DEngine.b.g.d
+                    @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         b.this.a(iVar);
                         if (runnable != null) {
@@ -39,22 +39,22 @@ public class DashButtonB extends com.tsf.shell.f._d.a.DashElementBase {
                         }
                     }
                 };
-                com.censivn.C3DEngine.b.g.c.a(iVar);
-                com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar2);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 b.this.a(iVar, (int) (255.0f - (100.0f * f)));
             }
 
-            @Override // com.censivn.C3DEngine.b.g.d
+            @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void c() {
                 b.this.a(iVar);
             }
         };
-        com.censivn.C3DEngine.b.g.c.a(iVar);
-        com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(iVar, 250, dVar);
         iVar.setDefaultColor(this.a);
     }
 
