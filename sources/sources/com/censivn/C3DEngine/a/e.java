@@ -28,7 +28,7 @@ public class e implements GLSurfaceView.Renderer {
     private ActivityManager q;
     private ActivityManager.MemoryInfo r;
     private GLSurfaceView s;
-    private com.censivn.C3DEngine.d.b t;
+    private com.censivn.C3DEngine.d.UpdateCallback t;
     private float[] x;
     public String b = "Renderer";
     private boolean m = false;
@@ -43,7 +43,7 @@ public class e implements GLSurfaceView.Renderer {
     private boolean w = false;
     private float[] y = new float[16];
 
-    public e(com.censivn.C3DEngine.d.b bVar, GLSurfaceView gLSurfaceView) {
+    public e(com.censivn.C3DEngine.d.UpdateCallback bVar, GLSurfaceView gLSurfaceView) {
         this.s = gLSurfaceView;
         g = Build.VERSION.SDK_INT >= 9;
         MatrixStack.init();

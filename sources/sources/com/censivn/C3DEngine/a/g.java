@@ -7,7 +7,7 @@ import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a {
+public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.AnimationCallback {
     private com.censivn.C3DEngine.f.Normal3f b;
     private com.censivn.C3DEngine.f.ColorRGBA c;
     private boolean d;
@@ -83,7 +83,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a
         }
     }
 
-    @Override // com.censivn.C3DEngine.d.a
+    @Override // com.censivn.C3DEngine.d.AnimationCallback
     public void e() {
     }
 }

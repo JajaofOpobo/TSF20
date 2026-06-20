@@ -72,7 +72,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.f.e.a.AlignmentListener();
     }
 
-    @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
+    @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.UpdateCallback
     public void b() {
         Home.c.a("initScene start");
         Home.q();

@@ -2,10 +2,10 @@ package com.censivn.C3DEngine.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class AbstractShaderBase {
-    protected com.censivn.C3DEngine.d.a a;
+    protected com.censivn.C3DEngine.d.AnimationCallback a;
     protected boolean b;
 
-    public a(com.censivn.C3DEngine.d.a aVar) {
+    public a(com.censivn.C3DEngine.d.AnimationCallback aVar) {
         this.a = aVar;
     }
 

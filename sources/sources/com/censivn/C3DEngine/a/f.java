@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.a;
 import android.opengl.GLSurfaceView;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f implements com.censivn.C3DEngine.d.b {
+public class f implements com.censivn.C3DEngine.d.UpdateCallback {
     public g a = new g();
     public d b;
 
@@ -25,7 +25,7 @@ public class f implements com.censivn.C3DEngine.d.b {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.d.b
+    @Override // com.censivn.C3DEngine.d.UpdateCallback
     public void b() {
     }
 }

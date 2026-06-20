@@ -31,7 +31,7 @@ public class PrimeActivity extends Activity {
         g.a();
         com.tsf.shell.manager.app.ObserverManager = new com.censivn.C3DEngine.b.c.e(this);
         new f(this.b, "PrimeRenderer") { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.1
-            @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.b
+            @Override // com.censivn.C3DEngine.a.f, com.censivn.C3DEngine.d.UpdateCallback
             public void b() {
                 float f = 300.0f;
                 j jVar = new j();
