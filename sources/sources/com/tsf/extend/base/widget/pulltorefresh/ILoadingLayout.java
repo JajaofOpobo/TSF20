@@ -3,7 +3,7 @@ package com.tsf.extend.base.widget.pulltorefresh;
 import android.graphics.drawable.Drawable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public interface A {
+public interface ILoadingLayout {
     void setLastUpdatedLabel(CharSequence charSequence);
 
     void setLoadingDrawable(Drawable drawable);

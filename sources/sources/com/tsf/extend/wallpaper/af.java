@@ -103,7 +103,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         this.c.setOnClickListener(this);
         this.q = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
         this.s = (ProgressBar) this.q.findViewById(ResourceIds.e.loadmore_progress);
-        this.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.r = (TextView) this.q.findViewById(ResourceIds.e.loadmore_tips);
         this.r.setOnClickListener(this);
         this.a.setLoadMoreView(this.q);

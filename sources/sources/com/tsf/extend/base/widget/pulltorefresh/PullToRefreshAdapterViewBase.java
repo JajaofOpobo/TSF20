@@ -24,8 +24,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
     private boolean e;
     private AbsListView.OnScrollListener f;
     private PullToRefreshBase.c g;
-    private com.tsf.extend.base.widget.pulltorefresh.a.c h;
-    private com.tsf.extend.base.widget.pulltorefresh.a.c i;
+    private com.tsf.extend.base.widget.pulltorefresh.a.IndicatorFrameLayout h;
+    private com.tsf.extend.base.widget.pulltorefresh.a.IndicatorFrameLayout i;
     private boolean j;
     private boolean k;
 
@@ -125,8 +125,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
             }
         }
         try {
-            if (this.b instanceof com.tsf.extend.base.widget.pulltorefresh.a.a) {
-                ((com.tsf.extend.base.widget.pulltorefresh.a.a) this.b).setEmptyViewInternal(view);
+            if (this.b instanceof com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor) {
+                ((com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor) this.b).setEmptyViewInternal(view);
             } else {
                 ((AbsListView) this.b).setEmptyView(view);
             }
@@ -243,7 +243,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
         PullToRefreshBase.b mode = getMode();
         FrameLayout refreshableViewWrapper = getRefreshableViewWrapper();
         if (mode.c() && this.h == null) {
-            this.h = new com.tsf.extend.base.widget.pulltorefresh.a.c(getContext(), PullToRefreshBase.b.PULL_FROM_START);
+            this.h = new com.tsf.extend.base.widget.pulltorefresh.a.IndicatorFrameLayout(getContext(), PullToRefreshBase.b.PULL_FROM_START);
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
             layoutParams.rightMargin = getResources().getDimensionPixelSize(ResourceIds.c.ptr_indicator_right_padding);
             layoutParams.gravity = 53;
@@ -253,7 +253,7 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
             this.h = null;
         }
         if (mode.d() && this.i == null) {
-            this.i = new com.tsf.extend.base.widget.pulltorefresh.a.c(getContext(), PullToRefreshBase.b.PULL_FROM_END);
+            this.i = new com.tsf.extend.base.widget.pulltorefresh.a.IndicatorFrameLayout(getContext(), PullToRefreshBase.b.PULL_FROM_END);
             FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(-2, -2);
             layoutParams2.rightMargin = getResources().getDimensionPixelSize(ResourceIds.c.ptr_indicator_right_padding);
             layoutParams2.gravity = 85;

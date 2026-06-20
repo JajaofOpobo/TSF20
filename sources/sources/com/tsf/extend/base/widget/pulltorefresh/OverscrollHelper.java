@@ -6,7 +6,7 @@ import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @TargetApi(9)
-public final class c {
+public final class OverscrollHelper {
     public static void a(PullToRefreshBase<?> pullToRefreshBase, int i, int i2, int i3, int i4, boolean z) {
         a(pullToRefreshBase, i, i2, i3, i4, 0, z);
     }

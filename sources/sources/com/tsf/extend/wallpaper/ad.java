@@ -105,7 +105,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         this.c.setOnClickListener(this);
         this.r = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
         this.t = (ProgressBar) this.r.findViewById(ResourceIds.e.loadmore_progress);
-        this.t.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.t.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.s = (TextView) this.r.findViewById(ResourceIds.e.loadmore_tips);
         this.s.setOnClickListener(this);
         this.a.setLoadMoreView(this.r);

@@ -6,11 +6,11 @@ import android.content.ContextWrapper;
 import android.view.LayoutInflater;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends ContextWrapper {
+public class CalligraphyContextWrapper extends ContextWrapper {
     private LayoutInflater a;
     private final int b;
 
-    public b(Context context) {
+    public CalligraphyContextWrapper(Context context) {
         super(context);
         this.b = R.attr.fontFamily;
     }
@@ -21,7 +21,7 @@ public class b extends ContextWrapper {
             return super.getSystemService(str);
         }
         if (this.a == null) {
-            this.a = new d(LayoutInflater.from(getBaseContext()), this, this.b);
+            this.a = new CalligraphyLayoutInflater(LayoutInflater.from(getBaseContext()), this, this.b);
         }
         return this.a;
     }

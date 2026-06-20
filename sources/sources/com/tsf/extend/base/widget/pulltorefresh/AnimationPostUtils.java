@@ -5,7 +5,7 @@ import android.os.Build;
 import android.view.View;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f {
+public class AnimationPostUtils {
     public static void a(View view, Runnable runnable) {
         if (Build.VERSION.SDK_INT >= 16) {
             a.a(view, runnable);

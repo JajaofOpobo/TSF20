@@ -7,16 +7,16 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class EventChannel {
     private String a;
     private volatile boolean b = false;
-    private ConcurrentLinkedQueue<e> c = new ConcurrentLinkedQueue<>();
+    private ConcurrentLinkedQueue<EventHandler> c = new ConcurrentLinkedQueue<>();
 
-    public h(String str) {
+    public EventChannel(String str) {
         this.a = "";
         this.a = str;
     }
 
-    public void a(d dVar) {
+    public void a(EventData dVar) {
         if (!a() && !this.c.isEmpty()) {
-            Iterator<e> it = this.c.iterator();
+            Iterator<EventHandler> it = this.c.iterator();
             while (it.hasNext()) {
                 try {
                     it.next().a(dVar);
@@ -31,13 +31,13 @@ public class EventChannel {
         return this.b;
     }
 
-    public void a(e eVar) {
+    public void a(EventHandler eVar) {
         if (!this.c.contains(eVar)) {
             this.c.add(eVar);
         }
     }
 
-    public void b(e eVar) {
+    public void b(EventHandler eVar) {
         if (this.c.remove(eVar)) {
         }
     }

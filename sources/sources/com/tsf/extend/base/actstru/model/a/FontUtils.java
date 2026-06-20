@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.extend.base.actstru.model.TypefaceCache;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public final class e {
+public final class FontUtils {
     public static final boolean a(TextView textView, Typeface typeface) {
         if (textView == null || typeface == null) {
             return false;
@@ -30,13 +30,13 @@ public final class e {
         return a(textView, TypefaceCache.a(context.getAssets(), str));
     }
 
-    public static final void a(Context context, TextView textView, a aVar) {
+    public static final void a(Context context, TextView textView, CalligraphyConfig aVar) {
         if (context != null && textView != null && aVar != null && aVar.c()) {
             a(context, textView, aVar.b());
         }
     }
 
-    public static void a(Context context, TextView textView, a aVar, String str) {
+    public static void a(Context context, TextView textView, CalligraphyConfig aVar, String str) {
         if (context != null && textView != null && aVar != null) {
             if (TextUtils.isEmpty(str) || !a(context, textView, str)) {
                 a(context, textView, aVar);

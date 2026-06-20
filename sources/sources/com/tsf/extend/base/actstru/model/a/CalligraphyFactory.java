@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class c implements LayoutInflater.Factory {
+class CalligraphyFactory implements LayoutInflater.Factory {
     private static final String[] a = {"android.widget.", "android.webkit."};
     private static final Map<Class<? extends TextView>, Integer> b = new HashMap<Class<? extends TextView>, Integer>() { // from class: com.tsf.extend.base.actstru.model.a.c.1
         {
@@ -35,7 +35,7 @@ class c implements LayoutInflater.Factory {
     private final LayoutInflater.Factory c;
     private final int d;
 
-    public c(LayoutInflater.Factory factory, int i) {
+    public CalligraphyFactory(LayoutInflater.Factory factory, int i) {
         this.c = factory;
         this.d = i == 0 ? R.attr.fontFamily : i;
     }
@@ -82,14 +82,14 @@ class c implements LayoutInflater.Factory {
 
     protected void a(View view, String str, Context context, AttributeSet attributeSet) {
         if (view instanceof TextView) {
-            String strA = e.a(context, attributeSet, this.d);
+            String strA = FontUtils.a(context, attributeSet, this.d);
             if (TextUtils.isEmpty(strA)) {
-                strA = e.b(context, attributeSet, this.d);
+                strA = FontUtils.b(context, attributeSet, this.d);
             }
             if (TextUtils.isEmpty(strA)) {
-                strA = e.a(context, b.containsKey(view.getClass()) ? b.get(view.getClass()).intValue() : R.attr.textAppearance, this.d);
+                strA = FontUtils.a(context, b.containsKey(view.getClass()) ? b.get(view.getClass()).intValue() : R.attr.textAppearance, this.d);
             }
-            e.a(context, (TextView) view, a.a(), strA);
+            FontUtils.a(context, (TextView) view, CalligraphyConfig.a(), strA);
         }
     }
 }

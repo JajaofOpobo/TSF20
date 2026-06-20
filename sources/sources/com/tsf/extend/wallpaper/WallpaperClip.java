@@ -73,7 +73,7 @@ public class WallpaperClip extends FrameLayout implements View.OnClickListener, 
         this.g.setOnClickListener(this);
         this.k = findViewById(ResourceIds.e.wp_clip_setting_wallpaper);
         this.l = (ProgressBar) findViewById(ResourceIds.e.wp_clip_setting_wallpaper_progress);
-        this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
+        this.l.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3));
         this.m = findViewById(ResourceIds.e.wp_clip_progress_text);
         this.j = (CustomWallpaperShadowView) findViewById(ResourceIds.e.wallpaper_shadow);
         this.j.setOnTouchListener(this.c.getTouchListener());

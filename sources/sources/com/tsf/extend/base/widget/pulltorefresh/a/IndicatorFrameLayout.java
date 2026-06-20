@@ -14,7 +14,7 @@ import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
-public class c extends FrameLayout implements Animation.AnimationListener {
+public class IndicatorFrameLayout extends FrameLayout implements Animation.AnimationListener {
     private Animation a;
     private Animation b;
     private ImageView c;

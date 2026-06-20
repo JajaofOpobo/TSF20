@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements d {
+public class ThemeTagFilter implements ThemeHeadFactory {
     private static List<String> a = Collections.synchronizedList(new ArrayList());
     private static List<String> b;
 

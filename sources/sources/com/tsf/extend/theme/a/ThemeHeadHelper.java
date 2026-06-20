@@ -1,9 +1,9 @@
 package com.tsf.extend.theme.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f {
+public class ThemeHeadHelper {
     private static e b() {
-        return new a().a();
+        return new ThemeTagFilter().a();
     }
 
     public static int a() {

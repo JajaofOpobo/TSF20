@@ -6,25 +6,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class d extends LayoutInflater {
+class CalligraphyLayoutInflater extends LayoutInflater {
     private static final String[] b = {"android.widget.", "android.webkit.", "android.app."};
     private final int a;
 
-    protected d(LayoutInflater layoutInflater, Context context, int i) {
+    protected CalligraphyLayoutInflater(LayoutInflater layoutInflater, Context context, int i) {
         super(layoutInflater, context);
         this.a = i;
         a();
     }
 
     private void a() {
-        if (!(getFactory() instanceof c)) {
-            setFactory(new c(getFactory(), this.a));
+        if (!(getFactory() instanceof CalligraphyFactory)) {
+            setFactory(new CalligraphyFactory(getFactory(), this.a));
         }
     }
 
     @Override // android.view.LayoutInflater
     public LayoutInflater cloneInContext(Context context) {
-        return new d(this, context, this.a);
+        return new CalligraphyLayoutInflater(this, context, this.a);
     }
 
     @Override // android.view.LayoutInflater

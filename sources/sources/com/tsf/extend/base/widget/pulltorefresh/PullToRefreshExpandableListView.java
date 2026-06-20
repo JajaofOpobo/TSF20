@@ -34,7 +34,7 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
         return aVar;
     }
 
-    class A extends ExpandableListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
+    class A extends ExpandableListView implements com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor {
         public A(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
@@ -44,7 +44,7 @@ public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBas
             PullToRefreshExpandableListView.this.setEmptyView(view);
         }
 
-        @Override // com.tsf.extend.base.widget.pulltorefresh.a.a
+        @Override // com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor
         public void setEmptyViewInternal(View view) {
             super.setEmptyView(view);
         }

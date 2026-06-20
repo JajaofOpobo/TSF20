@@ -11,7 +11,7 @@ import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends d {
+public class RotateLoadingLayout extends LoadingLayout {
     private final Animation f;
     private final Matrix g;
     private float h;
@@ -31,7 +31,7 @@ public class e extends d {
         this.ResourceIds.setRepeatMode(1);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     public void a(Drawable drawable) {
         if (drawable != null) {
             this.h = Math.round(drawable.getIntrinsicWidth() / 2.0f);
@@ -39,7 +39,7 @@ public class e extends d {
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void a(float f) {
         float fMax;
         if (this.j) {
@@ -51,12 +51,12 @@ public class e extends d {
         this.b.setImageMatrix(this.g);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void b() {
         this.b.startAnimation(this.f);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void d() {
         this.b.clearAnimation();
         k();
@@ -69,15 +69,15 @@ public class e extends d {
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void a() {
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void c() {
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected int getDefaultDrawableResId() {
         return ResourceIds.d.search_loading_circle_big;
     }

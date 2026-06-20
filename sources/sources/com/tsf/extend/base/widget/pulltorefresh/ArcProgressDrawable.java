@@ -8,7 +8,7 @@ import android.graphics.SweepGradient;
 import android.graphics.drawable.Drawable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends Drawable {
+public class ArcProgressDrawable extends Drawable {
     Paint a;
     SweepGradient b;
     float c;

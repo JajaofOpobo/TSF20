@@ -59,7 +59,7 @@ public class TaskDispatcher {
         }
     }
 
-    private k() {
+    private TaskDispatcher() {
         this.d.start();
         this.e.start();
     }

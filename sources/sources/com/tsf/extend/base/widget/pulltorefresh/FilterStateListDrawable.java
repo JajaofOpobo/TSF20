@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends StateListDrawable {
+public class FilterStateListDrawable extends StateListDrawable {
     private Drawable a;
     private Drawable b;
     private int c = -7829368;

@@ -226,7 +226,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
             FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(a(70.0f), a(70.0f));
             layoutParams.gravity = 17;
             this.d.setLayoutParams(layoutParams);
-            this.d.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
+            this.d.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3));
             addView(this.d);
         }
     }

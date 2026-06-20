@@ -22,7 +22,7 @@ import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
-public abstract class d extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.A {
+public abstract class LoadingLayout extends FrameLayout implements com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout {
     static final Interpolator a = new LinearInterpolator();
     protected final ImageView b;
     protected final ProgressBar c;
@@ -68,7 +68,7 @@ public abstract class d extends FrameLayout implements com.tsf.extend.base.widge
         this.f = (ViewGroup) findViewById(ResourceIds.e.fl_inner);
         this.h = (TextView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_text);
         this.c = (ProgressBar) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_progress);
-        this.c.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 2, 1));
+        this.c.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 2, 1));
         this.i = (TextView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_sub_text);
         this.b = (ImageView) this.ResourceIds.findViewById(ResourceIds.e.pull_to_refresh_image);
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.ResourceIds.getLayoutParams();
@@ -215,29 +215,29 @@ public abstract class d extends FrameLayout implements com.tsf.extend.base.widge
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.A
+    @Override // com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout
     public void setLastUpdatedLabel(CharSequence charSequence) {
         setSubHeaderText(charSequence);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.A
+    @Override // com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout
     public final void setLoadingDrawable(Drawable drawable) {
         this.b.setImageDrawable(drawable);
         this.g = drawable instanceof AnimationDrawable;
         a(drawable);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.A
+    @Override // com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout
     public void setPullLabel(CharSequence charSequence) {
         this.j = charSequence;
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.A
+    @Override // com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout
     public void setRefreshingLabel(CharSequence charSequence) {
         this.k = charSequence;
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.A
+    @Override // com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout
     public void setReleaseLabel(CharSequence charSequence) {
         this.l = charSequence;
     }

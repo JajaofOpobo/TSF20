@@ -14,7 +14,7 @@ import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 @SuppressLint({"ViewConstructor"})
-public class b extends d {
+public class FlipLoadingLayout extends LoadingLayout {
     private final Animation f;
     private final Animation g;
 
@@ -31,7 +31,7 @@ public class b extends d {
         this.g.setFillAfter(true);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void a(Drawable drawable) {
         if (drawable != null) {
             int intrinsicHeight = drawable.getIntrinsicHeight();
@@ -49,37 +49,37 @@ public class b extends d {
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void a(float f) {
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void a() {
         if (this.f == this.b.getAnimation()) {
             this.b.startAnimation(this.g);
         }
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void b() {
         this.b.clearAnimation();
         this.b.setVisibility(4);
         this.c.setVisibility(0);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void c() {
         this.b.startAnimation(this.f);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected void d() {
         this.b.clearAnimation();
         this.c.setVisibility(8);
         this.b.setVisibility(0);
     }
 
-    @Override // com.tsf.extend.base.widget.pulltorefresh.a.d
+    @Override // com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout
     protected int getDefaultDrawableResId() {
         return ResourceIds.d.kui_ptr_default_flip;
     }

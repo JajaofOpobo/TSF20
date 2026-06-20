@@ -19,8 +19,8 @@ import com.tsf.extend.ResourceIds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView> {
-    private com.tsf.extend.base.widget.pulltorefresh.a.d d;
-    private com.tsf.extend.base.widget.pulltorefresh.a.d e;
+    private com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout d;
+    private com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout e;
     private FrameLayout f;
     private FrameLayout g;
     private boolean h;
@@ -79,9 +79,9 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAdapterViewBase, com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase
     protected void a(boolean z) {
-        com.tsf.extend.base.widget.pulltorefresh.a.d footerLayout;
-        com.tsf.extend.base.widget.pulltorefresh.a.d dVar;
-        com.tsf.extend.base.widget.pulltorefresh.a.d dVar2;
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout footerLayout;
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar;
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar2;
         int count;
         int scrollY;
         ListAdapter adapter = ((ListView) this.b).getAdapter();
@@ -105,9 +105,9 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
                 scrollY = getScrollY() - getFooterSize();
                 break;
             default:
-                com.tsf.extend.base.widget.pulltorefresh.a.d headerLayout = getHeaderLayout();
-                com.tsf.extend.base.widget.pulltorefresh.a.d dVar3 = this.d;
-                com.tsf.extend.base.widget.pulltorefresh.a.d dVar4 = this.e;
+                com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout headerLayout = getHeaderLayout();
+                com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar3 = this.d;
+                com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar4 = this.e;
                 scrollY = getScrollY() + getHeaderSize();
                 footerLayout = headerLayout;
                 dVar = dVar3;
@@ -142,8 +142,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
         boolean z;
         int i;
         int i2;
-        com.tsf.extend.base.widget.pulltorefresh.a.d dVar;
-        com.tsf.extend.base.widget.pulltorefresh.a.d headerLayout;
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar;
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout headerLayout;
         if (!this.h) {
             super.c();
             return;
@@ -151,8 +151,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
         switch (getCurrentMode()) {
             case MANUAL_REFRESH_ONLY:
             case PULL_FROM_END:
-                com.tsf.extend.base.widget.pulltorefresh.a.d footerLayout = getFooterLayout();
-                com.tsf.extend.base.widget.pulltorefresh.a.d dVar2 = this.e;
+                com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout footerLayout = getFooterLayout();
+                com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar2 = this.e;
                 int count = ((ListView) this.b).getCount() - 1;
                 int footerSize = getFooterSize();
                 z = Math.abs(((ListView) this.b).getLastVisiblePosition() - count) <= 1;
@@ -193,8 +193,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
     }
 
     @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase
-    protected com.tsf.extend.base.widget.pulltorefresh.b b(boolean z, boolean z2) {
-        com.tsf.extend.base.widget.pulltorefresh.b bVarB = super.b(z, z2);
+    protected com.tsf.extend.base.widget.pulltorefresh.LoadingLayoutProxy b(boolean z, boolean z2) {
+        com.tsf.extend.base.widget.pulltorefresh.LoadingLayoutProxy bVarB = super.b(z, z2);
         if (this.h) {
             PullToRefreshBase.b mode = getMode();
             if (z && mode.c()) {
@@ -272,7 +272,7 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public class A extends ListView implements com.tsf.extend.base.widget.pulltorefresh.a.a {
+    public class A extends ListView implements com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor {
         private boolean b;
 
         public A(Context context, AttributeSet attributeSet) {
@@ -313,7 +313,7 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
             PullToRefreshListView.this.setEmptyView(view);
         }
 
-        @Override // com.tsf.extend.base.widget.pulltorefresh.a.a
+        @Override // com.tsf.extend.base.widget.pulltorefresh.a.EmptyViewMethodAccessor
         public void setEmptyViewInternal(View view) {
             super.setEmptyView(view);
         }

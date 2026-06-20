@@ -12,7 +12,7 @@ public class AppContextHolder {
     public static void a(Context context) {
         a = context;
         z.a();
-        com.tsf.extend.base.actstru.model.a.a.a("");
+        com.tsf.extend.base.actstru.model.a.CalligraphyConfig.a("");
     }
 
     public static void a(com.tsf.extend.base.ResultCallback dVar) {

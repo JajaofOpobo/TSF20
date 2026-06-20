@@ -39,8 +39,8 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
     private boolean q;
     private Interpolator r;
     private A s;
-    private com.tsf.extend.base.widget.pulltorefresh.a.d t;
-    private com.tsf.extend.base.widget.pulltorefresh.a.d u;
+    private com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout t;
+    private com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout u;
     private e<T> v;
     private f<T> w;
     private d<T> x;
@@ -162,11 +162,11 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         return this.o;
     }
 
-    public final com.tsf.extend.base.widget.pulltorefresh.A getLoadingLayoutProxy() {
+    public final com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout getLoadingLayoutProxy() {
         return a(true, true);
     }
 
-    public final com.tsf.extend.base.widget.pulltorefresh.A a(boolean z, boolean z2) {
+    public final com.tsf.extend.base.widget.pulltorefresh.ILoadingLayout a(boolean z, boolean z2) {
         return b(z, z2);
     }
 
@@ -191,7 +191,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
     }
 
     public final boolean h() {
-        return Build.VERSION.SDK_INT >= 9 && this.p && com.tsf.extend.base.widget.pulltorefresh.c.a(this.b);
+        return Build.VERSION.SDK_INT >= 9 && this.p && com.tsf.extend.base.widget.pulltorefresh.OverscrollHelper.a(this.b);
     }
 
     public final boolean i() {
@@ -458,14 +458,14 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         super.addView(view, -1, layoutParams);
     }
 
-    protected com.tsf.extend.base.widget.pulltorefresh.a.d a(Context context, b bVar, TypedArray typedArray) {
-        com.tsf.extend.base.widget.pulltorefresh.a.d dVarA = this.s.a(context, bVar, getPullToRefreshScrollDirection(), typedArray);
+    protected com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout a(Context context, b bVar, TypedArray typedArray) {
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVarA = this.s.a(context, bVar, getPullToRefreshScrollDirection(), typedArray);
         dVarA.setVisibility(4);
         return dVarA;
     }
 
-    protected com.tsf.extend.base.widget.pulltorefresh.b b(boolean z, boolean z2) {
-        com.tsf.extend.base.widget.pulltorefresh.b bVar = new com.tsf.extend.base.widget.pulltorefresh.b();
+    protected com.tsf.extend.base.widget.pulltorefresh.LoadingLayoutProxy b(boolean z, boolean z2) {
+        com.tsf.extend.base.widget.pulltorefresh.LoadingLayoutProxy bVar = new com.tsf.extend.base.widget.pulltorefresh.LoadingLayoutProxy();
         if (z && this.j.c()) {
             bVar.a(this.t);
         }
@@ -479,7 +479,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         this.q = false;
     }
 
-    protected final com.tsf.extend.base.widget.pulltorefresh.a.d getFooterLayout() {
+    protected final com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout getFooterLayout() {
         return this.u;
     }
 
@@ -487,7 +487,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
         return this.u.getContentSize();
     }
 
-    protected final com.tsf.extend.base.widget.pulltorefresh.a.d getHeaderLayout() {
+    protected final com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout getHeaderLayout() {
         return this.t;
     }
 
@@ -802,7 +802,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
                 this.b.setBackgroundDrawable(drawable);
             }
         } else if (typedArrayObtainStyledAttributes.hasValue(ResourceIds.i.PullToRefresh_ptrAdapterViewBackground)) {
-            com.tsf.extend.base.widget.pulltorefresh.a.ResourceIds.a("ptrAdapterViewBackground", "ptrRefreshableViewBackground");
+            com.tsf.extend.base.widget.pulltorefresh.a.DeprecationUtils.a("ptrAdapterViewBackground", "ptrRefreshableViewBackground");
             Drawable drawable2 = typedArrayObtainStyledAttributes.getDrawable(ResourceIds.i.PullToRefresh_ptrAdapterViewBackground);
             if (drawable2 != null) {
                 this.b.setBackgroundDrawable(drawable2);
@@ -949,12 +949,12 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
             }
         }
 
-        com.tsf.extend.base.widget.pulltorefresh.a.d a(Context context, b bVar, h hVar, TypedArray typedArray) {
+        com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout a(Context context, b bVar, h hVar, TypedArray typedArray) {
             switch (this) {
                 case FLIP:
-                    return new com.tsf.extend.base.widget.pulltorefresh.a.b(context, bVar, hVar, typedArray);
+                    return new com.tsf.extend.base.widget.pulltorefresh.a.FlipLoadingLayout(context, bVar, hVar, typedArray);
                 default:
-                    return new com.tsf.extend.base.widget.pulltorefresh.a.e(context, bVar, hVar, typedArray);
+                    return new com.tsf.extend.base.widget.pulltorefresh.a.RotateLoadingLayout(context, bVar, hVar, typedArray);
             }
         }
     }

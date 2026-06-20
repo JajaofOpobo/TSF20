@@ -78,7 +78,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         this.d.setOnClickListener(this);
         this.e = LayoutInflater.from(getContext()).inflate(ResourceIds.C0052f.wallpaper_loadmore, (ViewGroup) null);
         this.f = (ProgressBar) this.e.findViewById(ResourceIds.e.loadmore_progress);
-        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3, 1));
+        this.ResourceIds.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3, 1));
         this.g = (TextView) this.e.findViewById(ResourceIds.e.loadmore_tips);
         this.g.setOnClickListener(this);
         this.c.setMode(PullToRefreshBase.b.PULL_FROM_START);

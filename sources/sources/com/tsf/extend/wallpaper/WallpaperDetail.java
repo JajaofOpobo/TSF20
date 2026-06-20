@@ -150,8 +150,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         this.l = findViewById(ResourceIds.e.setting_wallpaper);
         this.m = (ProgressBar) findViewById(ResourceIds.e.setting_wallpaper_progress);
         this.m = (ProgressBar) findViewById(ResourceIds.e.setting_wallpaper_progress);
-        this.m.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(getContext(), 3));
-        this.g.setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+        this.m.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(getContext(), 3));
+        this.g.setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable(new BitmapDrawable(getResources(), BitmapFactory.decodeResource(getResources(), ResourceIds.d.actionbar_back)), new int[]{-1, -7829368}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
         this.h = (ImageView) findViewById(ResourceIds.e.launcher_preview);
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.h.getLayoutParams();
         layoutParams.bottomMargin = -com.tsf.extend.base.j.StorageUtils.c(getContext());
@@ -385,7 +385,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             eVar.h = (TextView) view.findViewById(ResourceIds.e.set_wallpaper);
             eVar.i = view.findViewById(ResourceIds.e.favorite);
             eVar.j = view.findViewById(ResourceIds.e.delete);
-            com.tsf.extend.base.widget.pulltorefresh.e eVar2 = new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.wallpaper_preview_btn));
+            com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable eVar2 = new com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.wallpaper_preview_btn));
             eVar.g.setImageDrawable(eVar2);
             eVar.B.setImageDrawable(eVar2);
             eVar.g.setOnClickListener(WallpaperDetail.this);
@@ -481,10 +481,10 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             eVar.G = view.findViewById(ResourceIds.e.wallpaper_bigtype_expand_panel);
             eVar.H = (TextView) view.findViewById(ResourceIds.e.wallpaper_bigtype_author);
             eVar.I = (ProgressBar) view.findViewById(ResourceIds.e.wallpaper_bigtype_progresbar);
-            eVar.I.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(view.getContext(), 3));
+            eVar.I.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(view.getContext(), 3));
             eVar.J = view.findViewById(ResourceIds.e.wallpaper_bigtype_retry);
             eVar.J.setOnClickListener(WallpaperDetail.this);
-            ((ImageView) eVar.J.findViewById(ResourceIds.e.wallpaper_bigtype_refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+            ((ImageView) eVar.J.findViewById(ResourceIds.e.wallpaper_bigtype_refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
             eVar.K = (TextView) view.findViewById(ResourceIds.e.wallpaper_bigtype_wallpaper_progress);
             eVar.L = (WallpaperImageView) view.findViewById(ResourceIds.e.wallpaper_bigtype_img);
             eVar.L.setScaleType(WallpaperImageView.b.HeightFirst);
@@ -515,7 +515,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             eVar.u = i;
             eVar.s = (ProgressBar) viewInflate2.findViewById(ResourceIds.e.progresbar);
             eVar.v = viewInflate2.findViewById(ResourceIds.e.retry);
-            eVar.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(viewInflate2.getContext(), 3));
+            eVar.s.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(viewInflate2.getContext(), 3));
             eVar.c(WallpaperDetail.this.A);
             if (WallpaperDetail.this.k()) {
                 eVar.f();
@@ -527,7 +527,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             eVar.v.setOnClickListener(WallpaperDetail.this);
             eVar.q = (TextView) viewInflate2.findViewById(ResourceIds.e.wallpaper_progress);
             eVar.a(WallpaperDetail.this.k());
-            ((ImageView) eVar.v.findViewById(ResourceIds.e.refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.e(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
+            ((ImageView) eVar.v.findViewById(ResourceIds.e.refresh_icon)).setImageDrawable(new com.tsf.extend.base.widget.pulltorefresh.FilterStateListDrawable(WallpaperDetail.this.getResources().getDrawable(ResourceIds.d.icon_btn_refresh), new int[]{-1, 1728053247}, new PorterDuff.Mode[]{PorterDuff.Mode.SRC_IN, PorterDuff.Mode.SRC_IN}));
             WallpaperDetail.this.e.add(eVar);
             viewInflate.setTag(eVar);
             viewGroup.addView(viewInflate);
@@ -890,7 +890,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             this.c.setAdapter(this.e);
             this.R = LayoutInflater.from(WallpaperDetail.this.getContext()).inflate(ResourceIds.C0052f.wallpaper_detail_list_loadmore, (ViewGroup) null);
             this.T = (ProgressBar) this.R.findViewById(ResourceIds.e.loadmore_progress);
-            this.T.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.d(WallpaperDetail.this.getContext(), 3, 1));
+            this.T.setIndeterminateDrawable(new com.tsf.extend.base.widget.pulltorefresh.ArcProgressDrawable(WallpaperDetail.this.getContext(), 3, 1));
             this.U = (TextView) this.R.findViewById(ResourceIds.e.loadmore_tips);
             this.S = this.R.findViewById(ResourceIds.e.nomore_group);
             this.V = (TextView) this.R.findViewById(ResourceIds.e.more_theme);
