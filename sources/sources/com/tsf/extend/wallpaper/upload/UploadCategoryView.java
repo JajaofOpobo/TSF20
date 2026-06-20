@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.ResourceIds;
@@ -98,11 +98,11 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         return this.b == null || this.b.size() <= 0;
     }
 
-    private class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
                 @Override // java.lang.Runnable
@@ -121,7 +121,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
             });
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
                 @Override // java.lang.Runnable

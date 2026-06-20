@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
@@ -203,7 +203,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, final List<k> list) {
         if (list != null) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.2
@@ -244,7 +244,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, int i, List<k> list) {
     }
 
@@ -378,14 +378,14 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private final com.tsf.extend.base.d.a.b b;
+    class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private final com.tsf.extend.base.d.BaseDataProvider.b b;
 
-        public a(com.tsf.extend.base.d.a.b bVar) {
+        public a(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
                 a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
@@ -399,7 +399,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.a.2
                 @Override // java.lang.Runnable

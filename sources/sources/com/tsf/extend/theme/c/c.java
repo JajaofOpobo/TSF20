@@ -17,7 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.ResourceIds;
@@ -497,11 +497,11 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
         com.tsf.extend.theme.c.a.a(b2, b3, this.j, i);
     }
 
-    private class a implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private a() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.c.a.1
                 @Override // java.lang.Runnable
@@ -512,7 +512,7 @@ public class c extends FrameLayout implements View.OnClickListener, PageActivity
             });
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final int i, com.tsf.extend.base.b.A aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.c.a.2
                 @Override // java.lang.Runnable

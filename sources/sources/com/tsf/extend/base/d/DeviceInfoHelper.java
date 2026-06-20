@@ -5,7 +5,7 @@ import com.tsf.extend.base.j.u;
 import com.tsf.extend.base.j.x;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class DeviceInfoHelper {
     public static String a(Context context) {
         return x.a(context);
     }

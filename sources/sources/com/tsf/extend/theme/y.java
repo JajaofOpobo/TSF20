@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.view.DecoratorViewPager;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.C;
@@ -243,11 +243,11 @@ public class y extends t {
         }
 
         /* JADX INFO: renamed from: com.tsf.extend.theme.y$a$a, reason: collision with other inner class name */
-        private class C0064a implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+        private class C0064a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
             private C0064a() {
             }
 
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
                 for (C cVar : a.this.b) {
                     if (((String) pair.first).equals(cVar.a.c)) {
@@ -258,7 +258,7 @@ public class y extends t {
                 }
             }
 
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             }
         }

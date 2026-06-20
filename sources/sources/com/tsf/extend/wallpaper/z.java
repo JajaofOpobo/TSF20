@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.util.Pair;
 import android.util.SparseArray;
 import com.android.volley.n;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.WallpaperDetail;
 import com.tsf.extend.wallpaper.m;
@@ -22,7 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class z extends com.tsf.extend.base.d.a implements o.a {
+public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
     private static z i;
     private String t;
     private o u;
@@ -85,7 +85,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         this.w.put(33, Integer.valueOf(ResourceIds.g.wallpaper_category_33));
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected String a(String str, a.b bVar, int i2, JSONObject jSONObject) {
         if (e.equals(str)) {
             return r;
@@ -126,12 +126,12 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected String a() {
         return "THEME_IMAGE_REQEUST";
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         if (str == null) {
             return null;
@@ -188,11 +188,11 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         return jVar;
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void a(com.android.volley.s sVar) {
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public com.tsf.extend.base.b.A b() {
         return null;
     }
@@ -326,7 +326,7 @@ public class z extends com.tsf.extend.base.d.a implements o.a {
         }
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void f() {
         super.f();
         i();

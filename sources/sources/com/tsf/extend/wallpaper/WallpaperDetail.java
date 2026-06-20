@@ -41,7 +41,7 @@ import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
@@ -343,7 +343,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                         if (i3 < 3) {
                             int i4 = i + i3 + 1;
                             if (i4 < list.size()) {
-                                WallpaperDetail.this.a((m.a) list.get(i4), (com.tsf.extend.base.d.a.InterfaceC0048a<Pair<m.a, Bitmap>>) null, true);
+                                WallpaperDetail.this.a((m.a) list.get(i4), (com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<m.a, Bitmap>>) null, true);
                             }
                             i2 = i3 + 1;
                         } else {
@@ -356,7 +356,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final m.a aVar, final com.tsf.extend.base.d.a.InterfaceC0048a<Pair<m.a, Bitmap>> interfaceC0048a, final boolean z) {
+    public void a(final m.a aVar, final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<m.a, Bitmap>> interfaceC0048a, final boolean z) {
         com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.8
             @Override // java.lang.Runnable
             public void run() {
@@ -665,7 +665,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             arrayListNewArrayList.add(new WeakReference(this.e.get(i)));
         }
         z.h().a(arrayListNewArrayList);
-        a(new m.a(eVar.a(), eVar.c()), (com.tsf.extend.base.d.a.InterfaceC0048a<Pair<m.a, Bitmap>>) this.j, false);
+        a(new m.a(eVar.a(), eVar.c()), (com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<m.a, Bitmap>>) this.j, false);
         return false;
     }
 
@@ -946,8 +946,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 jH = mVar.h();
                 i = iK2;
             }
-            this.aa = new b(com.tsf.extend.base.d.a.b.LoadCache);
-            com.tsf.extend.theme.v.h().a(this.aa, com.tsf.extend.base.d.a.b.LoadCache, i, jH);
+            this.aa = new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
+            com.tsf.extend.theme.v.h().a(this.aa, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, i, jH);
         }
 
         @Override // android.view.View.OnClickListener
@@ -1039,24 +1039,24 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class b implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-            private final com.tsf.extend.base.d.a.b b;
+        class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+            private final com.tsf.extend.base.d.BaseDataProvider.b b;
 
-            public b(com.tsf.extend.base.d.a.b bVar) {
+            public b(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
                 this.b = bVar;
             }
 
-            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.a(aVar, b.this.b == com.tsf.extend.base.d.a.b.LoadMore);
+                        e.this.a(aVar, b.this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
                     }
                 });
             }
 
-            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
                 Log.d("WallpaperDetail", "onFail=" + this.b.name());
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.2
@@ -1072,11 +1072,11 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class A implements com.tsf.extend.base.d.a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+        class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
             A() {
             }
 
-            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final List<com.tsf.extend.theme.k> list) {
                 if (list != null) {
                     com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.a.1
@@ -1090,7 +1090,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                 }
             }
 
-            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.k> list) {
             }
         }
@@ -1244,8 +1244,8 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
                     jH = mVar.h();
                     i = iK2;
                 }
-                this.ab = new b(com.tsf.extend.base.d.a.b.LoadMore);
-                com.tsf.extend.theme.v.h().a(this.ab, com.tsf.extend.base.d.a.b.LoadMore, i, jH);
+                this.ab = new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
+                com.tsf.extend.theme.v.h().a(this.ab, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, i, jH);
             }
         }
     }
@@ -1591,16 +1591,16 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         return this.o;
     }
 
-    private class A implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<m.a, Bitmap>> {
+    private class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<m.a, Bitmap>> {
         private A() {
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<m.a, Bitmap> pair) {
             WallpaperDetail.this.a(pair);
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<m.a, Bitmap> pair) {
             WallpaperDetail.this.a(pair);
             if (com.tsf.extend.base.j.u.a(WallpaperDetail.this.getContext())) {
@@ -1692,11 +1692,11 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         return com.tsf.extend.base.j.u.b(getContext());
     }
 
-    private class d implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         private d() {
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             a(pair);
         }
@@ -1728,7 +1728,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             a(pair);
         }

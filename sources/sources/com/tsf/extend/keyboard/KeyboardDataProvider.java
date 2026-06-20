@@ -14,7 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class KeyboardDataProvider extends com.tsf.extend.base.d.a {
+public class KeyboardDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     private static KeyboardDataProvider b = new KeyboardDataProvider();
     private String c;
     private String d;
@@ -36,31 +36,31 @@ public class KeyboardDataProvider extends com.tsf.extend.base.d.a {
         return b;
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected String a() {
         return "KEYBOARD_IMAGE_REQEUST";
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         return (TextUtils.isEmpty(str) || !str.equals("DATA_RECOMMEND_KEYBOARD_THEME")) ? a(jSONObject) : b(jSONObject);
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void a(s sVar) {
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public com.tsf.extend.base.b.A b() {
         return null;
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void a(String str, KeyboardDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, KeyboardDataProvider.b bVar, JSONObject jSONObject) {
         super.a(str, interfaceC0048a, bVar, jSONObject);
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public String a(String str, KeyboardDataProvider.b bVar, int i, JSONObject jSONObject) {
         if (!TextUtils.isEmpty(str) && str.equals("DATA_RECOMMEND_KEYBOARD_THEME")) {
             return "https://api-keyboard.cmcm.com/cmltabpromote";
@@ -79,7 +79,7 @@ public class KeyboardDataProvider extends com.tsf.extend.base.d.a {
         return aVar.j();
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void f() {
         super.f();
         b = null;

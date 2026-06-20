@@ -12,7 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
@@ -26,7 +26,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class m extends FrameLayout implements View.OnClickListener, AbsListView.OnScrollListener, com.tsf.extend.base.d.a.InterfaceC0048a<List<k>>, PersonalizationActivity.b, PersonalizationActivity.n, l.a, com.tsf.extend.wallpaper.p {
+public class m extends FrameLayout implements View.OnClickListener, AbsListView.OnScrollListener, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>>, PersonalizationActivity.b, PersonalizationActivity.n, l.a, com.tsf.extend.wallpaper.p {
     protected PageActivity a;
     protected PullToRefreshAndLoadMoreListView b;
     protected View c;
@@ -55,7 +55,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     public static String[] j = {"new", "hot", "diy", "category"};
 
     public m(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
-        com.tsf.extend.base.d.a.b bVar;
+        com.tsf.extend.base.d.BaseDataProvider.b bVar;
         super(context);
         this.e = false;
         this.g = new ArrayList();
@@ -98,9 +98,9 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         }
         this.b.setAdapter(this.h);
         if (((Activity) getContext()).getIntent().getBooleanExtra("force_refresh", false)) {
-            bVar = com.tsf.extend.base.d.a.b.Refresh;
+            bVar = com.tsf.extend.base.d.BaseDataProvider.b.Refresh;
         } else {
-            bVar = com.tsf.extend.base.d.a.b.LoadCache;
+            bVar = com.tsf.extend.base.d.BaseDataProvider.b.LoadCache;
         }
         this.o = new A(bVar);
         this.b.setOnLoadListener(new PullToRefreshAndLoadMoreListView.a() { // from class: com.tsf.extend.theme.m.1
@@ -111,8 +111,8 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                     m.this.b();
                     return;
                 }
-                m.this.o = m.this.new A(com.tsf.extend.base.d.a.b.LoadCache);
-                v.h().a(m.this.getCurrentDataType(), m.this.o, com.tsf.extend.base.d.a.b.LoadCache, (JSONObject) null);
+                m.this.o = m.this.new A(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
+                v.h().a(m.this.getCurrentDataType(), m.this.o, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, (JSONObject) null);
             }
 
             @Override // com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView.a
@@ -147,8 +147,8 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     /* JADX INFO: Access modifiers changed from: private */
     public void b() {
         this.w = System.currentTimeMillis();
-        this.o = new A(com.tsf.extend.base.d.a.b.Refresh);
-        v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
+        this.o = new A(com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
+        v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
     }
 
     private String getSecondtab() {
@@ -167,9 +167,9 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     /* JADX INFO: Access modifiers changed from: private */
     public void c() {
         if (this.g != null && this.g.size() > 0) {
-            this.p = new A(com.tsf.extend.base.d.a.b.LoadMore);
+            this.p = new A(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
             this.w = System.currentTimeMillis();
-            v.h().a(getCurrentDataType(), this.p, com.tsf.extend.base.d.a.b.LoadMore, (JSONObject) null);
+            v.h().a(getCurrentDataType(), this.p, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, (JSONObject) null);
         }
     }
 
@@ -207,9 +207,9 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         int id = view.getId();
         if (id == ResourceIds.e.retry) {
             this.c.setVisibility(8);
-            this.o = new A(com.tsf.extend.base.d.a.b.Refresh);
+            this.o = new A(com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
             this.w = System.currentTimeMillis();
-            v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.a.b.Refresh, (JSONObject) null);
+            v.h().a(getCurrentDataType(), this.o, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, (JSONObject) null);
         } else if (id == ResourceIds.e.theme_item_download_layout_left) {
             if (ao.b().g()) {
                 c(view);
@@ -241,7 +241,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
     public void a(View view) {
     }
 
-    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, final List<k> list) {
         if (list != null) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.m.2
@@ -292,7 +292,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, int i, List<k> list) {
     }
 
@@ -370,14 +370,14 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    class A implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private com.tsf.extend.base.d.a.b b;
+    class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private com.tsf.extend.base.d.BaseDataProvider.b b;
 
-        public A(com.tsf.extend.base.d.a.b bVar) {
+        public A(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
                 a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
@@ -389,7 +389,7 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
                         if (aVar instanceof p) {
                             p pVar = (p) aVar;
                             m.this.e = pVar.b();
-                            if (a.this.b != com.tsf.extend.base.d.a.b.LoadMore) {
+                            if (a.this.b != com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                                 m.this.z = false;
                                 m.this.f();
                                 if (m.this.v != null) {
@@ -418,13 +418,13 @@ public class m extends FrameLayout implements View.OnClickListener, AbsListView.
             }
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final int i, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.m.a.2
                 @Override // java.lang.Runnable
                 public void run() {
                     m.this.k = 0;
-                    if (a.this.b == com.tsf.extend.base.d.a.b.LoadMore) {
+                    if (a.this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                         m.this.e();
                     } else {
                         m.this.z = false;

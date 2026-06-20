@@ -13,7 +13,7 @@ import com.android.volley.l;
 import com.android.volley.n;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.f.b;
 import com.tsf.extend.theme.C;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -33,7 +33,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class v extends com.tsf.extend.base.d.a {
+public class v extends com.tsf.extend.base.d.BaseDataProvider {
     private static volatile v b = null;
     private static String e = null;
     private static final List<String> h = Lists.newArrayList();
@@ -86,7 +86,7 @@ public class v extends com.tsf.extend.base.d.a {
         e = str;
     }
 
-    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("keyword", URLEncoder.encode(str));
@@ -96,15 +96,15 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_SEARCH", interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar) {
         a("DATA_SEARCH_TAG", interfaceC0048a, bVar, (JSONObject) null, false);
     }
 
-    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, long j) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j) {
         a("DATA_RELATIVE_" + j, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    public void a(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, long j, long j2) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j, long j2) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("categoryId", j + "");
@@ -115,7 +115,7 @@ public class v extends com.tsf.extend.base.d.a {
         a("DATA_WALLPAPE_RELATIVE_" + j, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void b(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
+    public void b(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("packname", str);
@@ -129,7 +129,7 @@ public class v extends com.tsf.extend.base.d.a {
         return d().get("DATA_RELATIVE_" + j);
     }
 
-    public void c(com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.a.b bVar, String str) {
+    public void c(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("album_id", str);
@@ -139,18 +139,18 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void f() {
         super.f();
         b = null;
     }
 
-    @Override // com.tsf.extend.base.d.a
-    public String a(String str, com.tsf.extend.base.d.a.b bVar, int i, JSONObject jSONObject) {
+    @Override // com.tsf.extend.base.d.BaseDataProvider
+    public String a(String str, com.tsf.extend.base.d.BaseDataProvider.b bVar, int i, JSONObject jSONObject) {
         return b(str, bVar, i, jSONObject);
     }
 
-    public String b(String str, com.tsf.extend.base.d.a.b bVar, int i, JSONObject jSONObject) {
+    public String b(String str, com.tsf.extend.base.d.BaseDataProvider.b bVar, int i, JSONObject jSONObject) {
         String strD;
         JSONException e2;
         String string;
@@ -235,8 +235,8 @@ public class v extends com.tsf.extend.base.d.a {
         return strD;
     }
 
-    private int a(String str, com.tsf.extend.base.d.a.b bVar) {
-        if (bVar == com.tsf.extend.base.d.a.b.Refresh) {
+    private int a(String str, com.tsf.extend.base.d.BaseDataProvider.b bVar) {
+        if (bVar == com.tsf.extend.base.d.BaseDataProvider.b.Refresh) {
             return 0;
         }
         com.tsf.extend.base.b.A aVar = this.a.get(str);
@@ -246,12 +246,12 @@ public class v extends com.tsf.extend.base.d.a {
         return aVar.j();
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public String a() {
         return "THEME_IMAGE_REQEUST";
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
         if ("DATA_PLAY".equals(str)) {
             return j(jSONObject);
@@ -277,11 +277,11 @@ public class v extends com.tsf.extend.base.d.a {
         return g(jSONObject);
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public void a(com.android.volley.s sVar) {
     }
 
-    @Override // com.tsf.extend.base.d.a
+    @Override // com.tsf.extend.base.d.BaseDataProvider
     public com.tsf.extend.base.b.A b() {
         return null;
     }
@@ -292,7 +292,7 @@ public class v extends com.tsf.extend.base.d.a {
         return agVar.d();
     }
 
-    public void a(long j, String str, com.tsf.extend.base.d.a.InterfaceC0048a<p> interfaceC0048a, String str2) {
+    public void a(long j, String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<p> interfaceC0048a, String str2) {
         com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.b.a(a(j, str), null, interfaceC0048a, new b.a<p>() { // from class: com.tsf.extend.theme.v.6
             @Override // com.tsf.extend.base.f.b.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
@@ -309,7 +309,7 @@ public class v extends com.tsf.extend.base.d.a {
         a(jVarA);
     }
 
-    public void a(final com.tsf.extend.base.d.a.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
+    public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
         k kVarA;
         Iterator<Map.Entry<String, com.tsf.extend.base.b.A>> it = d().entrySet().iterator();
         k kVar = null;
@@ -331,8 +331,8 @@ public class v extends com.tsf.extend.base.d.a {
         if (kVarA != null) {
             interfaceC0048a.a(null, kVarA);
         } else {
-            a(j, str, new com.tsf.extend.base.d.a.InterfaceC0048a<p>() { // from class: com.tsf.extend.theme.v.7
-                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            a(j, str, new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<p>() { // from class: com.tsf.extend.theme.v.7
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                 public void a(JSONObject jSONObject, p pVar) {
                     if (pVar != null) {
                         k kVarA2 = v.this.a(pVar, j);
@@ -347,7 +347,7 @@ public class v extends com.tsf.extend.base.d.a {
                     interfaceC0048a.a(jSONObject, 0, null);
                 }
 
-                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                 public void a(JSONObject jSONObject, int i, p pVar) {
                     interfaceC0048a.a(jSONObject, i, null);
                 }
@@ -582,7 +582,7 @@ public class v extends com.tsf.extend.base.d.a {
         return kVar;
     }
 
-    public void a(final com.tsf.extend.base.d.a.InterfaceC0048a<List<k>> interfaceC0048a) {
+    public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.9
             @Override // java.lang.Runnable
             public void run() {
@@ -599,7 +599,7 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void b(final com.tsf.extend.base.d.a.InterfaceC0048a<List<k>> interfaceC0048a) {
+    public void b(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.10
             @Override // java.lang.Runnable
             public void run() {
@@ -715,7 +715,7 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    public void a(final int i, final String str, final com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, final int i2) {
+    public void a(final int i, final String str, final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, final int i2) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.11
             @Override // java.lang.Runnable
             public void run() throws PackageManager.NameNotFoundException {
@@ -766,7 +766,7 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(final String str, final List<String> list, final com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, final int i, final int i2) {
+    public void a(final String str, final List<String> list, final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, final int i, final int i2) {
         if (list == null || list.size() == 0 || list.size() < i2) {
             interfaceC0048a.a(null, -1, null);
             return;
@@ -816,15 +816,15 @@ public class v extends com.tsf.extend.base.d.a {
         });
     }
 
-    public void a(String str, aq aqVar, com.tsf.extend.base.d.a.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
+    public void a(String str, aq aqVar, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
         a(str, aqVar.t(), interfaceC0048a, i, i2);
     }
 
-    public void a(String str, View view, com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a, int i, int i2) {
+    public void a(String str, View view, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a, int i, int i2) {
         a(str, interfaceC0048a, l.a.LOW, i, i2);
     }
 
-    public void c(String str, com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a) {
+    public void c(String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> interfaceC0048a) {
         a(str, interfaceC0048a);
     }
 
@@ -959,7 +959,7 @@ public class v extends com.tsf.extend.base.d.a {
         }
     }
 
-    public static void c(final com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
+    public static void c(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.4
             @Override // java.lang.Runnable
             public void run() {

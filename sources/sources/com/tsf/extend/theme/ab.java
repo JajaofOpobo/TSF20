@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.v;
@@ -73,27 +73,27 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
             ab.this.b.add(themeImageView);
             if (ab.this.i) {
                 v.h().a(((Integer) ab.this.ResourceIds.get(i)).intValue(), ab.this.k, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.1
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar) {
                         if (themeImageView != null && bVar != null) {
                             themeImageView.setBitmap(bVar.b);
                         }
                     }
 
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, int i2, v.b bVar) {
                     }
                 }, 0);
             } else if (ab.this.j) {
                 v.h().a(ab.this.k, ab.this.g, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ab.b.2
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, v.b bVar) {
                         if (themeImageView != null && bVar != null) {
                             themeImageView.setBitmap(bVar.b);
                         }
                     }
 
-                    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+                    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                     public void a(JSONObject jSONObject, int i2, v.b bVar) {
                     }
                 }, 0, i);
@@ -121,7 +121,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
         A() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 String str = (String) pair.first;
@@ -136,7 +136,7 @@ public class ab extends FrameLayout implements View.OnClickListener, PageActivit
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }

@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.ResourceIds;
 import java.io.File;
 import java.util.Iterator;
@@ -48,13 +48,13 @@ public class ThemeDetailActivity extends PageActivity {
             }
         }
     };
-    private com.tsf.extend.base.d.a.InterfaceC0048a<k> j = new com.tsf.extend.base.d.a.InterfaceC0048a<k>() { // from class: com.tsf.extend.theme.ThemeDetailActivity.2
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+    private com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> j = new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k>() { // from class: com.tsf.extend.theme.ThemeDetailActivity.2
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, k kVar) {
             ThemeDetailActivity.this.a(kVar);
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, k kVar) {
         }
     };

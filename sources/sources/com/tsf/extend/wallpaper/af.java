@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshBase;
 import com.tsf.extend.ResourceIds;
@@ -123,8 +123,8 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
                 af.this.k = System.currentTimeMillis();
                 if (af.this.l) {
                     if (af.this.u == null) {
-                        af.this.u = af.this.new b(com.tsf.extend.base.d.a.b.LoadCache);
-                        z.h().a(af.this.u, com.tsf.extend.base.d.a.b.LoadCache, -1L, af.this.g.a(), af.this.h, z.h);
+                        af.this.u = af.this.new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadCache);
+                        z.h().a(af.this.u, com.tsf.extend.base.d.BaseDataProvider.b.LoadCache, -1L, af.this.g.a(), af.this.h, z.h);
                         return;
                     }
                     return;
@@ -154,8 +154,8 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a() {
-        this.u = new b(com.tsf.extend.base.d.a.b.Refresh);
-        z.h().a(this.u, com.tsf.extend.base.d.a.b.Refresh, -1L, this.g.a(), this.h, z.h);
+        this.u = new b(com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
+        z.h().a(this.u, com.tsf.extend.base.d.BaseDataProvider.b.Refresh, -1L, this.g.a(), this.h, z.h);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -183,10 +183,10 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
         if (this.d != null && this.d.size() > 0) {
-            this.v = new b(com.tsf.extend.base.d.a.b.LoadMore);
+            this.v = new b(com.tsf.extend.base.d.BaseDataProvider.b.LoadMore);
             m mVar = this.d.get(this.d.size() - 1);
             this.w++;
-            z.h().a(this.v, com.tsf.extend.base.d.a.b.LoadMore, mVar.f(), this.g.a(), mVar.g(), this.h, z.h, this.w);
+            z.h().a(this.v, com.tsf.extend.base.d.BaseDataProvider.b.LoadMore, mVar.f(), this.g.a(), mVar.g(), this.h, z.h, this.w);
         }
     }
 
@@ -358,21 +358,21 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
     }
 
-    private class b implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
-        private com.tsf.extend.base.d.a.b b;
+    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        private com.tsf.extend.base.d.BaseDataProvider.b b;
 
-        public b(com.tsf.extend.base.d.a.b bVar) {
+        public b(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             if (aVar == null) {
                 a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
                 return;
             }
             af.this.t = !aVar.b();
-            if (this.b == com.tsf.extend.base.d.a.b.LoadMore) {
+            if (this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                 if (af.this.t) {
                     af.this.b();
                 } else if (af.this.a != null) {
@@ -398,9 +398,9 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
             af.this.a((List<m>) aVar.a());
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
-            if (this.b == com.tsf.extend.base.d.a.b.LoadMore) {
+            if (this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                 af.this.c();
                 return;
             }

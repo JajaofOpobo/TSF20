@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.v;
 
@@ -164,7 +164,7 @@ public class ad extends BaseAdapter {
         private A() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null && pair.first != null && pair.second != null) {
                 for (C cVar : ad.this.a) {
@@ -181,14 +181,14 @@ public class ad extends BaseAdapter {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }
 
     private void a(aq aqVar, final ImageView imageView) {
         v.h().a(aqVar.g(), aqVar, new a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.ad.1
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, final v.b bVar) {
                 if (imageView != null && bVar != null && bVar.a != null && bVar.a.equals(imageView.getTag())) {
                     imageView.post(new Runnable() { // from class: com.tsf.extend.theme.ad.1.1
@@ -200,7 +200,7 @@ public class ad extends BaseAdapter {
                 }
             }
 
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, v.b bVar) {
             }
         }, 2, 0);

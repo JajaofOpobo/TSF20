@@ -30,12 +30,12 @@ public abstract class BaseApiRequest {
                     Context contextB = h.b();
                     a(b, "pid", com.tsf.extend.base.i.a.a().b());
                     a(b, "ch", com.tsf.extend.base.i.a.a().c());
-                    a(b, "aid", com.tsf.extend.base.d.b.a(contextB));
-                    a(b, "brand", com.tsf.extend.base.d.b.a());
-                    a(b, "model", com.tsf.extend.base.d.b.b());
-                    a(b, "osv", com.tsf.extend.base.d.b.c());
-                    a(b, "api_level", com.tsf.extend.base.d.b.d());
-                    a(b, "appv", com.tsf.extend.base.d.b.b(contextB));
+                    a(b, "aid", com.tsf.extend.base.d.DeviceInfoHelper.a(contextB));
+                    a(b, "brand", com.tsf.extend.base.d.DeviceInfoHelper.a());
+                    a(b, "model", com.tsf.extend.base.d.DeviceInfoHelper.b());
+                    a(b, "osv", com.tsf.extend.base.d.DeviceInfoHelper.c());
+                    a(b, "api_level", com.tsf.extend.base.d.DeviceInfoHelper.d());
+                    a(b, "appv", com.tsf.extend.base.d.DeviceInfoHelper.b(contextB));
                     c = true;
                 }
             }
@@ -46,12 +46,12 @@ public abstract class BaseApiRequest {
     public static void a(Map<String, String> map) {
         Context contextB;
         if (map != null && (contextB = h.b()) != null) {
-            a(map, "mcc", com.tsf.extend.base.d.b.d(contextB));
-            a(map, "mnc", com.tsf.extend.base.d.b.c(contextB));
-            a(map, "nmcc", com.tsf.extend.base.d.b.e(contextB));
-            a(map, "nmnc", com.tsf.extend.base.d.b.f(contextB));
-            a(map, "net", com.tsf.extend.base.d.b.h(contextB));
-            a(map, "lan", com.tsf.extend.base.d.b.g(contextB));
+            a(map, "mcc", com.tsf.extend.base.d.DeviceInfoHelper.d(contextB));
+            a(map, "mnc", com.tsf.extend.base.d.DeviceInfoHelper.c(contextB));
+            a(map, "nmcc", com.tsf.extend.base.d.DeviceInfoHelper.e(contextB));
+            a(map, "nmnc", com.tsf.extend.base.d.DeviceInfoHelper.f(contextB));
+            a(map, "net", com.tsf.extend.base.d.DeviceInfoHelper.h(contextB));
+            a(map, "lan", com.tsf.extend.base.d.DeviceInfoHelper.g(contextB));
             a(map, "app_lan", com.tsf.extend.base.i.a.a().d());
         }
     }

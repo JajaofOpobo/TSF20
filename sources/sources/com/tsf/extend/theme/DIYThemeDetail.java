@@ -34,7 +34,7 @@ import android.widget.Toast;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PageIndicatorCompat;
 import com.tsf.extend.base.view.TextProgressBar;
@@ -600,15 +600,15 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                 imageView.setBackgroundResource(ResourceIds.b.personal_list_item_bg);
             }
             DIYThemeDetail.this.b.add(imageView);
-            com.tsf.extend.base.d.a.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.a.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.DIYThemeDetail.d.1
-                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+            com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<v.b> interfaceC0048a = new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<v.b>() { // from class: com.tsf.extend.theme.DIYThemeDetail.d.1
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                 public void a(JSONObject jSONObject, v.b bVar) {
                     if (imageView != null && bVar != null) {
                         imageView.setImageBitmap(bVar.b);
                     }
                 }
 
-                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+                @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                 public void a(JSONObject jSONObject, int i2, v.b bVar) {
                 }
             };
@@ -648,11 +648,11 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
         }
     }
 
-    class A implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+    class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         A() {
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 String str = (String) pair.first;
@@ -667,7 +667,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
             }
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }

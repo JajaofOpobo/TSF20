@@ -25,7 +25,7 @@ import android.widget.AbsListView;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.view.PagerIndicator;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.theme.ThemeAlbumsPager;
@@ -695,7 +695,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class l implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class l implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
         private com.tsf.extend.base.b.A b;
 
@@ -704,7 +704,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             this.b = aVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {
@@ -714,17 +714,17 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(com.tsf.extend.base.b.A aVar, String str) {
-        com.tsf.extend.theme.v.h().b(new l(this, aVar), com.tsf.extend.base.d.a.b.Refresh, str);
+        com.tsf.extend.theme.v.h().b(new l(this, aVar), com.tsf.extend.base.d.BaseDataProvider.b.Refresh, str);
     }
 
-    static class j implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class j implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
         private String b;
 
@@ -733,7 +733,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             this.b = str;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {
@@ -751,7 +751,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
         }
     }
@@ -765,7 +765,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class g implements com.tsf.extend.base.d.a.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
+    static class g implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<com.tsf.extend.theme.k>> {
         private WeakReference<PersonalizationActivity> a;
         private List<com.tsf.extend.theme.k> b;
         private com.tsf.extend.base.b.A c;
@@ -776,7 +776,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             this.c = aVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, List<com.tsf.extend.theme.k> list) {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {
@@ -803,7 +803,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, List<com.tsf.extend.theme.k> list) {
         }
     }
@@ -913,14 +913,14 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         }
     }
 
-    static class d implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
         public d(PersonalizationActivity personalizationActivity) {
             this.a = new WeakReference<>(personalizationActivity);
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             PersonalizationActivity personalizationActivity = this.a.get();
             if (personalizationActivity != null) {
@@ -934,24 +934,24 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void r() {
-        com.tsf.extend.keyboard.KeyboardDataProvider.h().a(new e(this), com.tsf.extend.base.d.a.b.Refresh);
+        com.tsf.extend.keyboard.KeyboardDataProvider.h().a(new e(this), com.tsf.extend.base.d.BaseDataProvider.b.Refresh);
     }
 
-    static class e implements com.tsf.extend.base.d.a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    static class e implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
         private WeakReference<PersonalizationActivity> a;
 
         public e(PersonalizationActivity personalizationActivity) {
             this.a = new WeakReference<>(personalizationActivity);
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             if (aVar != null) {
                 Calendar calendar = Calendar.getInstance();
@@ -961,7 +961,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
             com.tsf.extend.keyboard.KeyboardDataProvider.h().a(aVar);
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.keyboard.KeyboardDataProvider.h().b((com.tsf.extend.base.b.A) null);
         }

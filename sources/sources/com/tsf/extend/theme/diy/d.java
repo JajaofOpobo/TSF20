@@ -3,7 +3,7 @@ package com.tsf.extend.theme.diy;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.util.Pair;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -18,7 +18,7 @@ public class d implements a.InterfaceC0048a<Pair<String, Bitmap>> {
         this.a = aVar;
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
         if (pair == null) {
             a(jSONObject, 0, (Pair<String, Bitmap>) null);
@@ -31,7 +31,7 @@ public class d implements a.InterfaceC0048a<Pair<String, Bitmap>> {
         }
     }
 
-    @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         if (this.a != null) {
             this.a.a(null);

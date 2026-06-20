@@ -72,7 +72,7 @@ public class r extends m {
         }
     }
 
-    @Override // com.tsf.extend.theme.m, com.tsf.extend.base.d.a.InterfaceC0048a
+    @Override // com.tsf.extend.theme.m, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
     public void a(JSONObject jSONObject, List<k> list) {
         if (!j[3].equals(getCurrentType())) {
             super.a(jSONObject, list);

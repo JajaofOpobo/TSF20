@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.ResourceIds;
 import java.util.ArrayList;
 import java.util.List;
@@ -432,11 +432,11 @@ public class t extends BaseAdapter {
         }
     }
 
-    protected class C implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+    protected class C implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         protected C() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             a(pair);
         }
@@ -461,7 +461,7 @@ public class t extends BaseAdapter {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             a(pair);
         }

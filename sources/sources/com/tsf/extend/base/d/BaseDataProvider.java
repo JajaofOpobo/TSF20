@@ -23,12 +23,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class a {
+public abstract class BaseDataProvider {
     private static HashMap<String, SoftReference<Bitmap>> b = null;
     protected HashMap<String, com.tsf.extend.base.b.A> a = new HashMap<>();
     private m c;
 
-    /* JADX INFO: renamed from: com.tsf.extend.base.d.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.extend.base.d.BaseDataProvider$a, reason: collision with other inner class name */
     public interface InterfaceC0048a<T> {
         void a(JSONObject jSONObject, int i, T t);
 
@@ -53,7 +53,7 @@ public abstract class a {
 
     public a() {
         if (b == null) {
-            b = new f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.base.d.a.1
+            b = new f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.base.d.BaseDataProvider.1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.support.v4.d.f
                 public void a(boolean z, String str, SoftReference<Bitmap> softReference, SoftReference<Bitmap> softReference2) {
@@ -129,7 +129,7 @@ public abstract class a {
             }
             return;
         }
-        z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.a.2
+        z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.BaseDataProvider.2
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.extend.base.b.A aVar2;
@@ -157,7 +157,7 @@ public abstract class a {
             interfaceC0048a.a(jSONObject, 2, null);
         }
         final WeakReference weakReference = new WeakReference(interfaceC0048a);
-        j jVar = new j(str2, null, new n.b<JSONObject>() { // from class: com.tsf.extend.base.d.a.3
+        j jVar = new j(str2, null, new n.b<JSONObject>() { // from class: com.tsf.extend.base.d.BaseDataProvider.3
             @Override // com.android.volley.n.b
             public void a(JSONObject jSONObject2) {
                 try {
@@ -207,7 +207,7 @@ public abstract class a {
                     }
                 }
             }
-        }, new n.a() { // from class: com.tsf.extend.base.d.a.4
+        }, new n.a() { // from class: com.tsf.extend.base.d.BaseDataProvider.4
             @Override // com.android.volley.n.a
             public void a(s sVar) {
                 com.tsf.extend.base.b.A aVar = a.this.a.get(str);
@@ -228,7 +228,7 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(final String str, final com.tsf.extend.base.b.A aVar) {
-        z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.a.5
+        z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.BaseDataProvider.5
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.extend.base.b.a.a.a().a(str, aVar);
@@ -249,7 +249,7 @@ public abstract class a {
             }
         } else {
             final WeakReference weakReference = new WeakReference(interfaceC0048a);
-            com.tsf.extend.base.f.a aVar2 = new com.tsf.extend.base.f.a(str, new n.b<Bitmap>() { // from class: com.tsf.extend.base.d.a.6
+            com.tsf.extend.base.f.a aVar2 = new com.tsf.extend.base.f.a(str, new n.b<Bitmap>() { // from class: com.tsf.extend.base.d.BaseDataProvider.6
                 @Override // com.android.volley.n.b
                 public void a(Bitmap bitmap2) {
                     if (bitmap2 != null) {
@@ -262,7 +262,7 @@ public abstract class a {
                         }
                     }
                 }
-            }, i, i2, Bitmap.Config.ARGB_8888, new n.a() { // from class: com.tsf.extend.base.d.a.7
+            }, i, i2, Bitmap.Config.ARGB_8888, new n.a() { // from class: com.tsf.extend.base.d.BaseDataProvider.7
                 @Override // com.android.volley.n.a
                 public void a(s sVar) {
                     InterfaceC0048a interfaceC0048a2 = (InterfaceC0048a) weakReference.get();
@@ -369,7 +369,7 @@ public abstract class a {
     }
 
     public void b(String str, InterfaceC0048a<JSONObject> interfaceC0048a) {
-        j jVarA = com.tsf.extend.base.f.b.a(str, null, interfaceC0048a, new b.a<JSONObject>() { // from class: com.tsf.extend.base.d.a.8
+        j jVarA = com.tsf.extend.base.f.b.a(str, null, interfaceC0048a, new b.a<JSONObject>() { // from class: com.tsf.extend.base.d.BaseDataProvider.8
             @Override // com.tsf.extend.base.f.b.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public JSONObject b(JSONObject jSONObject) {

@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.ad;
 import java.util.ArrayList;
@@ -241,11 +241,11 @@ public class t extends BaseAdapter implements View.OnClickListener {
         private m k;
     }
 
-    private class b implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         private b() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             a(pair);
         }
@@ -270,7 +270,7 @@ public class t extends BaseAdapter implements View.OnClickListener {
             }
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
             a(pair);
         }

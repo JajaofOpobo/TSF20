@@ -14,7 +14,7 @@ import android.text.TextUtils;
 import android.util.Base64;
 import com.android.volley.toolbox.j;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.f.b;
 import com.tsf.extend.base.j.i;
 import com.tsf.extend.base.j.l;
@@ -723,7 +723,7 @@ public class e {
         }
     }
 
-    public static void a(String str, com.tsf.extend.base.d.a.InterfaceC0048a<k> interfaceC0048a, Context context) {
+    public static void a(String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> interfaceC0048a, Context context) {
         j jVarA = com.tsf.extend.base.f.b.a(a(str), null, interfaceC0048a, new b.a<k>() { // from class: com.tsf.extend.theme.diy.e.6
             @Override // com.tsf.extend.base.f.b.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */

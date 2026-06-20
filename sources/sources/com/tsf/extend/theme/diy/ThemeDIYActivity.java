@@ -42,7 +42,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.collect.Lists;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.j.p;
 import com.tsf.extend.base.j.z;
 import com.tsf.extend.ThemeDialogFragment;
@@ -1648,7 +1648,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    private class d implements com.tsf.extend.base.d.a.InterfaceC0048a<Pair<String, Bitmap>> {
+    private class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         private final List<String> b;
         private aq c;
 
@@ -1657,7 +1657,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             this.b = ThemeDIYActivity.this.o.e();
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
             if (pair != null) {
                 final Bitmap bitmap = (Bitmap) pair.second;
@@ -1674,7 +1674,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
             }
         }
 
-        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
         }
     }

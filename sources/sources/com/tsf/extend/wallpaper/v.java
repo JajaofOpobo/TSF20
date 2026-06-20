@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.widget.pulltorefresh.PullToRefreshAndLoadMoreListView;
 import com.tsf.extend.ResourceIds;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
@@ -194,7 +194,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             this.b = bVar;
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
@@ -202,7 +202,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             v.this.a(aVar.a(), z);
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
@@ -278,7 +278,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             C0072a() {
             }
 
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, Pair<String, Bitmap> pair) {
                 a(pair);
             }
@@ -301,7 +301,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
                 }
             }
 
-            @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+            @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
             public void a(JSONObject jSONObject, int i, Pair<String, Bitmap> pair) {
                 a(pair);
             }

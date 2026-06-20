@@ -12,7 +12,7 @@ import android.widget.AbsListView;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.tsf.extend.base.actstru.model.activi.PageActivity;
-import com.tsf.extend.base.d.a;
+import com.tsf.extend.base.d.BaseDataProvider;
 import com.tsf.extend.base.support.ViewPager;
 import com.tsf.extend.base.view.PagerIndicator;
 import com.tsf.extend.ResourceIds;
@@ -421,7 +421,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         A() {
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.1
                 @Override // java.lang.Runnable
@@ -434,7 +434,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
             });
         }
 
-        @Override // com.tsf.extend.base.d.a.InterfaceC0048a
+        @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
         public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.2
                 @Override // java.lang.Runnable
