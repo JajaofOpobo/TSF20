@@ -17,7 +17,7 @@ public class b extends BaseRenderable {
         this.mMarginDistance = f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
@@ -31,7 +31,7 @@ public class b extends BaseRenderable {
         updateChildPosition(i, false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
@@ -41,7 +41,7 @@ public class b extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public i removeChildAt(int i) {
+    public IRenderable removeChildAt(int i) {
         i iVarRemoveChildAt = super.removeChildAt(i);
         onChildMeasure(iVarRemoveChildAt);
         return iVarRemoveChildAt;

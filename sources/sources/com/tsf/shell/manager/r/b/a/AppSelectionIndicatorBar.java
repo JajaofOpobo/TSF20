@@ -3,19 +3,19 @@ package com.tsf.shell.manager.r.b.a;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AppSelectionIndicatorBar extends j {
+public class AppSelectionIndicatorBar extends BaseRenderable {
     private TextureElement a = new TextureElement(0, false);
-    private k b;
-    private m c;
+    private GridRenderable b;
+    private LabelRenderable c;
     private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a d;
     private com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a e;
 
@@ -33,8 +33,8 @@ public class AppSelectionIndicatorBar extends j {
     }
 
     public void d() {
-        this.b = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.a.b.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.manager.r.b.a.b.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (AppSelectionIndicatorBar.this.a.id == 0) {
                     Bitmap bitmapA = x.a(b.d.scrollcontainer_arrow);
@@ -49,7 +49,7 @@ public class AppSelectionIndicatorBar extends j {
         a(this.b);
         addChild(this.b);
         this.b.rotation().z = 180.0f;
-        this.c = new m();
+        this.c = new LabelRenderable();
         this.c.d(42);
         this.c.e(-1);
         this.c.b(1);

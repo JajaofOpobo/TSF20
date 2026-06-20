@@ -2,7 +2,7 @@ package com.tsf.shell.f.c.a.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -23,10 +23,10 @@ public class DrawerAnimConfig {
         public float f = 0.0f;
     }
 
-    public void a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList2, int i, float f, float f2, float f3, float f4) {
+    public void a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList2, int i, float f, float f2, float f3, float f4) {
     }
 
-    public float a(int i, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, float f) {
+    public float a(int i, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, float f) {
         return 0.0f;
     }
 
@@ -34,17 +34,17 @@ public class DrawerAnimConfig {
         return 0;
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3) {
     }
 
     public float a(float f, float f2) {
         return 500.0f;
     }
 
-    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f, boolean z) {
+    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f, boolean z) {
     }
 
-    public boolean a(Number3d number3d, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+    public boolean a(Number3d number3d, com.censivn.C3DEngine.b.f.IRenderable iVar, boolean z) {
         return false;
     }
 
@@ -56,7 +56,7 @@ public class DrawerAnimConfig {
         return null;
     }
 
-    public float a(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, int i, float f, float f2, float f3, float f4) {
+    public float a(ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, int i, float f, float f2, float f3, float f4) {
         return 0.0f;
     }
 
@@ -64,7 +64,7 @@ public class DrawerAnimConfig {
         return 0.0f;
     }
 
-    public int a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList2, int i, float f, float f2, float f3, float f4, float f5, float f6) {
+    public int a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList2, int i, float f, float f2, float f3, float f4, float f5, float f6) {
         return -1;
     }
 

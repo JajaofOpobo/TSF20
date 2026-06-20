@@ -12,13 +12,13 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.k {
+public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.GridRenderable {
     private static TextureElement g;
     private FloatBuffer a;
     private int d;
     private int e;
     private boolean f;
-    private com.censivn.C3DEngine.b.f.k h;
+    private com.censivn.C3DEngine.b.f.GridRenderable h;
 
     public ScrollingIndicator(float f, float f2, boolean z, ThemeDescription themeDescription) throws Throwable {
         super(f, f2, 3, 1, false);
@@ -26,7 +26,7 @@ public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.k {
         if (g == null) {
             g = com.censivn.C3DEngine.C3DEngine.g().a(themeDescription.getBitmap(ThemeFolderDescription.SCROLLING_POINT), false);
         }
-        this.h = new com.censivn.C3DEngine.b.f.k(19.0f * com.censivn.C3DEngine.b.b.A.b, 10.0f * com.censivn.C3DEngine.b.b.A.b, false);
+        this.h = new com.censivn.C3DEngine.b.f.GridRenderable(19.0f * com.censivn.C3DEngine.b.b.A.b, 10.0f * com.censivn.C3DEngine.b.b.A.b, false);
         this.h.textures().addElement(WidgetItemGrid);
         addChild(this.h);
         if (z) {
@@ -84,7 +84,7 @@ public class ScrollingIndicator extends com.censivn.C3DEngine.b.f.k {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.k, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.GridRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void draw() {
         ShaderManager.enableShader(ShaderManager.SHADER_COLOR);
         ScrollingIndicator();

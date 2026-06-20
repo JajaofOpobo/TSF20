@@ -19,7 +19,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
     private e g;
     private com.tsf.shell.f.f.a.PageGridRenderer h;
     private c i;
-    private com.censivn.C3DEngine.b.f.m j;
+    private com.censivn.C3DEngine.b.f.LabelRenderable j;
     private float k;
 
     public DrawerWidgetTouchHandler(c cVar, com.tsf.shell.f.f.a.PageGridRenderer fVar, com.tsf.shell.f.f.a.FolderPage hVar) {
@@ -45,7 +45,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
         int i = 70;
         float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
         this.k = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
-        this.j = new com.censivn.C3DEngine.b.f.m();
+        this.j = new com.censivn.C3DEngine.b.f.LabelRenderable();
         this.j.c(com.tsf.b.i.notic_batch_operation);
         this.j.d(39);
         this.j.e(-1);
@@ -53,12 +53,12 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
         addChild(this.j);
         this.b = new DrawerSpringPhysics(this.i, 1.0f) { // from class: com.tsf.shell.f.f.a._c.DrawerWidgetTouchHandler.1
             @Override // com.tsf.shell.f.f.a._c.DrawerSpringPhysics
-            public com.censivn.C3DEngine.b.f.j a() {
+            public com.censivn.C3DEngine.b.f.BaseRenderable a() {
                 return b.this.a.l();
             }
 
             @Override // com.tsf.shell.f.f.a._c.DrawerSpringPhysics
-            public com.censivn.C3DEngine.b.f.i a(int i2) {
+            public com.censivn.C3DEngine.b.f.IRenderable a(int i2) {
                 return b.this.a.l().getChildAt(i2);
             }
         };
@@ -69,13 +69,13 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.b
-            public void a(com.censivn.C3DEngine.b.f.i iVar) {
+            public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 b.this.c.c((com.tsf.shell.f.i.PageItem) iVar);
                 b.this.b.a(iVar);
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.b
-            public void b(com.censivn.C3DEngine.b.f.i iVar) {
+            public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 b.this.b.b(iVar);
             }
 
@@ -224,7 +224,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
-        ArrayList<com.censivn.C3DEngine.b.f.i> arrayList = new ArrayList();
+        ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList = new ArrayList();
         int iNumChildren = this.a.l().numChildren();
         if (iNumChildren > 0) {
             while (true) {
@@ -235,7 +235,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                     arrayList.add(this.a.l().getChildAt(iNumChildren));
                 }
             }
-            for (com.censivn.C3DEngine.b.f.i iVar : arrayList) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar : arrayList) {
                 if (iVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
                     com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) iVar;
                     bVar.alpha(255.0f);
@@ -334,11 +334,11 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
     }
 
     public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
-        com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) cVar.parent();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) cVar.parent();
         ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList = new ArrayList<>();
         if (jVar == this.a.l()) {
             if (this.e == 0) {
-                Iterator<com.censivn.C3DEngine.b.f.i> it = jVar.children().iterator();
+                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = jVar.children().iterator();
                 while (it.hasNext()) {
                     com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next();
                     if (bVar.ao()) {
@@ -346,7 +346,7 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                     }
                 }
             } else {
-                Iterator<com.censivn.C3DEngine.b.f.i> it2 = jVar.children().iterator();
+                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it2 = jVar.children().iterator();
                 while (it2.hasNext()) {
                     arrayList.add((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it2.next());
                 }

@@ -2,8 +2,8 @@ package com.tsf.shell.f.f.a._a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class DrawerItemAnimationManager {
     public static final float a = com.censivn.C3DEngine.b.b.A.a(150.0f);
     private c b;
-    private j d;
+    private BaseRenderable d;
     private ArrayList<a> e;
     private com.tsf.shell.f.e.ObjectPool<a> f;
     private boolean g = false;
@@ -20,10 +20,10 @@ public class DrawerItemAnimationManager {
     private float l = 0.0f;
     private float m = 0.0f;
     private float n = 0.0f;
-    private j c = new j() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.1
+    private BaseRenderable c = new BaseRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.1
     };
     private ArrayList<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> i = new ArrayList<>();
-    private com.censivn.C3DEngine.b.f.e h = new com.censivn.C3DEngine.b.f.e(0.0f, 0.0f);
+    private com.censivn.C3DEngine.b.f.AltColoredRectRenderable h = new com.censivn.C3DEngine.b.f.AltColoredRectRenderable(0.0f, 0.0f);
 
     class a {
         public Number3d a;
@@ -38,8 +38,8 @@ public class DrawerItemAnimationManager {
     public DrawerItemAnimationManager(c cVar) {
         this.b = cVar;
         this.h.alpha(0.0f);
-        this.d = new j() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.2
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.d = new BaseRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.2
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 int iNumChildren = numChildren();
                 f.this.j();
@@ -68,7 +68,7 @@ public class DrawerItemAnimationManager {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 Iterator it = f.this.i.iterator();
                 while (it.hasNext()) {
@@ -77,7 +77,7 @@ public class DrawerItemAnimationManager {
                 f.this.i.clear();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public boolean removeChild(i iVar) {
                 boolean zRemoveChild = super.removeChild(iVar);
                 if (numChildren() == 0) {

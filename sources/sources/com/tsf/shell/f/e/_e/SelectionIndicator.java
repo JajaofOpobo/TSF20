@@ -1,11 +1,11 @@
 package com.tsf.shell.f.e._e;
 
 import com.censivn.C3DEngine.api.element.Color4;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SelectionIndicator extends j {
+public class SelectionIndicator extends BaseRenderable {
     private C0093a b;
     private b c;
     private boolean d = false;

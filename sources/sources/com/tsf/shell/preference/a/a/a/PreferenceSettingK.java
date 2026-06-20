@@ -2,14 +2,14 @@ package com.tsf.shell.preference.a.a.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingK extends PreferenceSettingBase {
-    private com.censivn.C3DEngine.b.f.j a;
+    private com.censivn.C3DEngine.b.f.BaseRenderable a;
     private com.tsf.shell.f.i.c.a.c.SceneRendererA b;
 
     public PreferenceSettingK(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(300.0f));
         this.b = com.tsf.shell.f.i.c.a.c.SceneRendererA.e();
-        this.a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingK.1
-            @Override // com.censivn.C3DEngine.b.f.j
+        this.a = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingK.1
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 k.this.b.dispatchDraw();
             }

@@ -5,8 +5,8 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g extends f {
-    private m a;
-    private m b;
+    private LabelRenderable a;
+    private LabelRenderable b;
 
     public g() {
         this(com.censivn.C3DEngine.b.b.A.a(180.0f));
@@ -29,7 +29,7 @@ public class g extends f {
     public g(float f) {
         d((int) f);
         a(0);
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.b(1);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
         bVar.a = com.censivn.C3DEngine.b.b.A.a(15.0f);
@@ -78,7 +78,7 @@ public class g extends f {
 
     public void b(String str) {
         if (this.b == null) {
-            this.b = new m();
+            this.b = new LabelRenderable();
             this.b.b(1);
             this.b.a(true);
             com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();

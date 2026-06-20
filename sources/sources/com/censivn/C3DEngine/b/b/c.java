@@ -15,9 +15,9 @@ public class c extends BaseRenderable {
     private int a;
     private int b;
     private int d;
-    private k f;
+    private GridRenderable f;
     private com.censivn.C3DEngine.b.d.a i;
-    private i j;
+    private IRenderable j;
     private float c = 0.0f;
     private boolean e = false;
     private int g = 0;
@@ -25,12 +25,12 @@ public class c extends BaseRenderable {
     private b h = new b();
 
     /* JADX INFO: Access modifiers changed from: private */
-    public f a(i iVar) {
+    public IRenderableContainer a(IRenderable iVar) {
         if ((iVar instanceof f) && iVar.parent() != null && iVar.parent() == this) {
             return (f) iVar;
         }
-        if (iVar.parent() != null && (iVar.parent() instanceof i)) {
-            return a((i) iVar.parent());
+        if (iVar.parent() != null && (iVar.parent() instanceof IRenderable)) {
+            return a((IRenderable) iVar.parent());
         }
         return null;
     }
@@ -38,12 +38,12 @@ public class c extends BaseRenderable {
     public c() {
         setLayoutParams(this.h);
         this.d = (int) A.a(4.0f);
-        this.f = new k(this.a, this.d, false);
+        this.f = new GridRenderable(this.a, this.d, false);
         this.f.setDefaultColor(new Color4(255, 255, 255, 70));
         this.f.useVBO(false);
         this.i = new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.c.1
             private com.censivn.C3DEngine.b.d.a b;
-            private i d;
+            private IRenderable d;
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
@@ -94,7 +94,7 @@ public class c extends BaseRenderable {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void b(i iVar) {
+    public void b(IRenderable iVar) {
         if (this.j != null) {
             e();
         }
@@ -149,7 +149,7 @@ public class c extends BaseRenderable {
         int i2 = 0;
         int i3 = 0;
         while (i2 < iNumChildren) {
-            i childAt = getChildAt(i2);
+            IRenderable childAt = getChildAt(i2);
             b layoutParams = childAt.getLayoutParams();
             if (!childAt.visible()) {
                 i = i3;
@@ -190,7 +190,7 @@ public class c extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
-    public void onChildMeasure(i iVar) {
+    public void onChildMeasure(IRenderable iVar) {
     }
 
     public void c(int i) {
@@ -214,7 +214,7 @@ public class c extends BaseRenderable {
         b(i);
         int size = children().size();
         for (int i3 = 0; i3 < size; i3++) {
-            i childAt = getChildAt(i3);
+            IRenderable childAt = getChildAt(i3);
             if (childAt instanceof c) {
                 ((c) childAt).a(this.a, 0);
             }
@@ -240,7 +240,7 @@ public class c extends BaseRenderable {
             if (renderChildren()) {
                 int size = children().size();
                 for (int i = 0; i < size; i++) {
-                    i childAt = getChildAt(i);
+                    IRenderable childAt = getChildAt(i);
                     b layoutParams = childAt.getLayoutParams();
                     if (!childAt.visible() || layoutParams == null) {
                         onDrawChildStart(childAt);
@@ -294,7 +294,7 @@ public class c extends BaseRenderable {
         minY(this.h.i);
         int iNumChildren = numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            i childAt = getChildAt(i);
+            IRenderable childAt = getChildAt(i);
             b layoutParams = childAt.getLayoutParams();
             if (childAt.visible() && layoutParams != null) {
                 layoutParams.g = (f - layoutParams.a) - layoutParams.k;
@@ -311,7 +311,7 @@ public class c extends BaseRenderable {
         int iNumChildren = numChildren();
         float f = 0.0f;
         for (int i = 0; i < iNumChildren; i++) {
-            i childAt = getChildAt(i);
+            IRenderable childAt = getChildAt(i);
             b layoutParams = childAt.getLayoutParams();
             if (childAt.visible() && layoutParams != null) {
                 f += ((layoutParams.a + layoutParams.k) - layoutParams.i) + layoutParams.b;
@@ -323,7 +323,7 @@ public class c extends BaseRenderable {
         return f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         if (iVar instanceof c) {
             ((c) iVar).b(this.a);
@@ -332,7 +332,7 @@ public class c extends BaseRenderable {
         d();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         d();

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d extends com.censivn.C3DEngine.b.f.j {
+public class d extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private com.censivn.C3DEngine.b.b.d a;
     private int c = 0;
     private com.censivn.C3DEngine.b.b.c b = new com.censivn.C3DEngine.b.b.c();
@@ -44,7 +44,7 @@ public class d extends com.censivn.C3DEngine.b.f.j {
         }
         int iNumChildren = this.b.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            com.censivn.C3DEngine.b.f.i childAt = this.b.getChildAt(i);
+            com.censivn.C3DEngine.b.f.IRenderable childAt = this.b.getChildAt(i);
             if (childAt instanceof f) {
                 f fVar = (f) childAt;
                 float fAlpha = fVar.alpha();
@@ -59,7 +59,7 @@ public class d extends com.censivn.C3DEngine.b.f.j {
     public void a() {
         int iNumChildren = this.b.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            com.censivn.C3DEngine.b.f.i childAt = this.b.getChildAt(i);
+            com.censivn.C3DEngine.b.f.IRenderable childAt = this.b.getChildAt(i);
             if (childAt instanceof f) {
                 ((f) childAt).g();
             }

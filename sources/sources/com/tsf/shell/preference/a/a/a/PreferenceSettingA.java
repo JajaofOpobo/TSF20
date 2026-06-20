@@ -3,15 +3,15 @@ package com.tsf.shell.preference.a.a.a;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingA extends PreferenceSettingBase {
     private TextureElement a;
-    private com.censivn.C3DEngine.b.f.a.a b;
-    private com.censivn.C3DEngine.b.f.j d;
-    private com.censivn.C3DEngine.b.f.j e;
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b;
+    private com.censivn.C3DEngine.b.f.BaseRenderable d;
+    private com.censivn.C3DEngine.b.f.BaseRenderable e;
     private TextureElement f;
     private float g;
     private float h;
@@ -21,15 +21,15 @@ public class PreferenceSettingA extends PreferenceSettingBase {
     private Runnable l;
 
     /* JADX INFO: renamed from: com.tsf.shell.preference.a.a.a.PreferenceSettingA$a, reason: collision with other inner class name */
-    private class C0162a extends com.censivn.C3DEngine.b.f.k {
-        private m d;
+    private class C0162a extends com.censivn.C3DEngine.b.f.GridRenderable {
+        private LabelRenderable d;
         private float e;
 
         public C0162a(String str) {
             super(com.censivn.C3DEngine.b.b.A.a(167.0f), com.censivn.C3DEngine.b.b.A.a(164.0f), false);
             this.e = ((-com.censivn.C3DEngine.b.b.A.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.A.a(20.0f);
             textures().addElement(a.this.f);
-            this.d = new m();
+            this.d = new LabelRenderable();
             this.d.d(30);
             this.d.a(str);
             addChild(this.d);
@@ -75,9 +75,9 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         this.a = new TextureElement(0, false);
         this.f = new TextureElement(0, false);
         this.j = false;
-        this.d = new com.censivn.C3DEngine.b.f.j();
-        this.e = new com.censivn.C3DEngine.b.f.j();
-        this.b = new com.censivn.C3DEngine.b.f.a.a(12, 100, 300, VEasing.Linear.easeNone);
+        this.d = new com.censivn.C3DEngine.b.f.BaseRenderable();
+        this.e = new com.censivn.C3DEngine.b.f.BaseRenderable();
+        this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(12, 100, 300, VEasing.Linear.easeNone);
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(100.0f);
         int iA2 = (int) com.censivn.C3DEngine.b.b.A.a(10.0f);
         float f = (-((iA * 6) + (iA2 * 5))) / 2.0f;
@@ -88,7 +88,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             if (i2 >= 12) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.b.a(11 - i2);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(11 - i2);
             bVarA.a(i2 % 3, i2 / 3, 1, 1, iA, iA);
             int i3 = i2 / 6;
             if ((i2 % 6) % 2 == 0) {
@@ -143,7 +143,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         float fA5 = com.censivn.C3DEngine.b.b.A.a(20.0f);
         float fA6 = com.censivn.C3DEngine.b.b.A.a(20.0f);
         for (int i = 0; i < 12; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.b.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
             int i2 = i % 3;
             float f = ((i / 3) * (this.h + this.g)) + this.i;
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
@@ -183,7 +183,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         for (int i = 0; i < 12; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.b.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
             Number3d number3d = (Number3d) bVarA.a();
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.f(number3d.x);

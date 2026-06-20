@@ -9,8 +9,8 @@ import com.android.volley.n;
 import com.android.volley.p;
 import com.android.volley.s;
 import com.android.volley.toolbox.j;
-import com.tsf.extend.base.f.b;
-import com.tsf.extend.base.f.c;
+import com.tsf.extend.base.f.JsonRequestBuilder;
+import com.tsf.extend.base.f.RequestQueueHelper;
 import com.tsf.extend.base.j.z;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,7 +25,7 @@ import org.json.JSONObject;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class BaseDataProvider {
     private static HashMap<String, SoftReference<Bitmap>> b = null;
-    protected HashMap<String, com.tsf.extend.base.b.A> a = new HashMap<>();
+    protected HashMap<String, com.tsf.extend.base.b.PagedListModel> a = new HashMap<>();
     private m c;
 
     /* JADX INFO: renamed from: com.tsf.extend.base.d.BaseDataProvider$a, reason: collision with other inner class name */
@@ -41,7 +41,7 @@ public abstract class BaseDataProvider {
         LoadMore
     }
 
-    protected abstract com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject);
+    protected abstract com.tsf.extend.base.b.PagedListModel a(String str, String str2, JSONObject jSONObject);
 
     protected abstract String a();
 
@@ -49,7 +49,7 @@ public abstract class BaseDataProvider {
 
     public abstract void a(s sVar);
 
-    public abstract com.tsf.extend.base.b.A b();
+    public abstract com.tsf.extend.base.b.PagedListModel b();
 
     public a() {
         if (b == null) {
@@ -78,14 +78,14 @@ public abstract class BaseDataProvider {
     }
 
     public void a(Context context, com.android.volley.toolbox.a aVar) {
-        this.c = c.a(context, null, aVar, new com.tsf.extend.base.b.c(new File(context.getCacheDir(), "volley_wpp")));
+        this.c = c.a(context, null, aVar, new com.tsf.extend.base.b.DiskCache(new File(context.getCacheDir(), "volley_wpp")));
     }
 
-    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject) {
+    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, b bVar, JSONObject jSONObject) {
         a(str, interfaceC0048a, bVar, jSONObject, true);
     }
 
-    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
+    public void a(String str, InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
         switch (bVar) {
             case LoadCache:
                 c(str, interfaceC0048a, bVar, jSONObject, z);
@@ -101,12 +101,12 @@ public abstract class BaseDataProvider {
         }
     }
 
-    protected void b(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
+    protected void b(String str, InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, b bVar, JSONObject jSONObject, boolean z) {
         a(str, a(str, bVar, 1, jSONObject), interfaceC0048a, bVar, jSONObject, z);
     }
 
-    private void a(String str, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, JSONObject jSONObject, boolean z) {
-        com.tsf.extend.base.b.A aVar = this.a.get(str);
+    private void a(String str, InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, JSONObject jSONObject, boolean z) {
+        com.tsf.extend.base.b.PagedListModel aVar = this.a.get(str);
         if (aVar == null) {
             if (interfaceC0048a != null) {
                 interfaceC0048a.a(jSONObject, 2, null);
@@ -117,8 +117,8 @@ public abstract class BaseDataProvider {
         a(str, a(str, b.LoadMore, aVar.f() + 1, jSONObject), interfaceC0048a, b.LoadMore, jSONObject, z);
     }
 
-    protected void c(final String str, final InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
-        com.tsf.extend.base.b.A aVar = this.a.get(str);
+    protected void c(final String str, final InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
+        com.tsf.extend.base.b.PagedListModel aVar = this.a.get(str);
         if (aVar != null) {
             if (interfaceC0048a != null) {
                 interfaceC0048a.a(jSONObject, aVar);
@@ -132,12 +132,12 @@ public abstract class BaseDataProvider {
         z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.BaseDataProvider.2
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.base.b.A aVar2;
-                Object objA = com.tsf.extend.base.b.a.a.a().a(str);
-                if (!(objA instanceof com.tsf.extend.base.b.A)) {
+                com.tsf.extend.base.b.PagedListModel aVar2;
+                Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(str);
+                if (!(objA instanceof com.tsf.extend.base.b.PagedListModel)) {
                     aVar2 = null;
                 } else {
-                    aVar2 = (com.tsf.extend.base.b.A) objA;
+                    aVar2 = (com.tsf.extend.base.b.PagedListModel) objA;
                 }
                 if (aVar2 != null) {
                     if (interfaceC0048a != null) {
@@ -152,7 +152,7 @@ public abstract class BaseDataProvider {
         });
     }
 
-    protected void a(final String str, final String str2, InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
+    protected void a(final String str, final String str2, InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, final b bVar, final JSONObject jSONObject, final boolean z) {
         if (str2 == null && interfaceC0048a != null) {
             interfaceC0048a.a(jSONObject, 2, null);
         }
@@ -161,7 +161,7 @@ public abstract class BaseDataProvider {
             @Override // com.android.volley.n.b
             public void a(JSONObject jSONObject2) {
                 try {
-                    com.tsf.extend.base.b.A aVarA = a.this.a(str, str2, jSONObject2);
+                    com.tsf.extend.base.b.PagedListModel aVarA = a.this.a(str, str2, jSONObject2);
                     if (aVarA == null) {
                         InterfaceC0048a interfaceC0048a2 = (InterfaceC0048a) weakReference.get();
                         if (interfaceC0048a2 != null) {
@@ -180,7 +180,7 @@ public abstract class BaseDataProvider {
                             a.this.a(str, aVarA);
                         }
                     } else {
-                        com.tsf.extend.base.b.A aVar = a.this.a.get(str);
+                        com.tsf.extend.base.b.PagedListModel aVar = a.this.a.get(str);
                         if (aVar != null && aVar.a() != null) {
                             aVar.a().addAll(aVarA.a());
                             if (aVar.g() != 0) {
@@ -210,7 +210,7 @@ public abstract class BaseDataProvider {
         }, new n.a() { // from class: com.tsf.extend.base.d.BaseDataProvider.4
             @Override // com.android.volley.n.a
             public void a(s sVar) {
-                com.tsf.extend.base.b.A aVar = a.this.a.get(str);
+                com.tsf.extend.base.b.PagedListModel aVar = a.this.a.get(str);
                 InterfaceC0048a interfaceC0048a2 = (InterfaceC0048a) weakReference.get();
                 if (interfaceC0048a2 != null) {
                     interfaceC0048a2.a(jSONObject, 0, aVar);
@@ -227,11 +227,11 @@ public abstract class BaseDataProvider {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final String str, final com.tsf.extend.base.b.A aVar) {
+    public void a(final String str, final com.tsf.extend.base.b.PagedListModel aVar) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.base.d.BaseDataProvider.5
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.base.b.a.a.a().a(str, aVar);
+                com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(str, aVar);
             }
         });
     }
@@ -249,7 +249,7 @@ public abstract class BaseDataProvider {
             }
         } else {
             final WeakReference weakReference = new WeakReference(interfaceC0048a);
-            com.tsf.extend.base.f.a aVar2 = new com.tsf.extend.base.f.a(str, new n.b<Bitmap>() { // from class: com.tsf.extend.base.d.BaseDataProvider.6
+            com.tsf.extend.base.f.BitmapRequest aVar2 = new com.tsf.extend.base.f.BitmapRequest(str, new n.b<Bitmap>() { // from class: com.tsf.extend.base.d.BaseDataProvider.6
                 @Override // com.android.volley.n.b
                 public void a(Bitmap bitmap2) {
                     if (bitmap2 != null) {
@@ -347,7 +347,7 @@ public abstract class BaseDataProvider {
         return null;
     }
 
-    public HashMap<String, com.tsf.extend.base.b.A> d() {
+    public HashMap<String, com.tsf.extend.base.b.PagedListModel> d() {
         return this.a;
     }
 
@@ -369,8 +369,8 @@ public abstract class BaseDataProvider {
     }
 
     public void b(String str, InterfaceC0048a<JSONObject> interfaceC0048a) {
-        j jVarA = com.tsf.extend.base.f.b.a(str, null, interfaceC0048a, new b.a<JSONObject>() { // from class: com.tsf.extend.base.d.BaseDataProvider.8
-            @Override // com.tsf.extend.base.f.b.a
+        j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(str, null, interfaceC0048a, new b.a<JSONObject>() { // from class: com.tsf.extend.base.d.BaseDataProvider.8
+            @Override // com.tsf.extend.base.f.JsonRequestBuilder.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public JSONObject b(JSONObject jSONObject) {
                 return jSONObject;

@@ -36,7 +36,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     }
 
     @Override // com.tsf.shell.f.e._f.EditTarget
-    public com.censivn.C3DEngine.b.f.i d() {
+    public com.censivn.C3DEngine.b.f.IRenderable d() {
         return com.tsf.shell.manager.app.TaskScheduler.a();
     }
 
@@ -337,14 +337,14 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         removeChild(this.f);
     }
 
-    public int a(com.censivn.C3DEngine.b.f.i iVar) {
+    public int a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (children().indexOf(iVar) == -1) {
             return -1;
         }
         return (numChildren() - r1) - 1;
     }
 
-    public boolean a(com.censivn.C3DEngine.b.f.i iVar, int i2, int i3) {
+    public boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i2, int i3) {
         int i4;
         int i5;
         int iNumChildren = numChildren();
@@ -386,7 +386,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         invalidate();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawMVPMatrix() {
         if (this.e) {
             MatrixStack.glTranslatef(position().x, this.o, position().z);
@@ -398,7 +398,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
 
-    @Override // com.tsf.shell.f.e._f.EditTarget, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.e._f.EditTarget, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (this.e) {
             if (visible()) {
@@ -542,7 +542,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         this.q = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         float f;
         if (this.e) {
@@ -713,11 +713,11 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
     }
 
-    private void a(a aVar, com.censivn.C3DEngine.b.f.i iVar) {
+    private void a(a aVar, com.censivn.C3DEngine.b.f.IRenderable iVar) {
         a(aVar, iVar, this.b.size() - 1);
     }
 
-    private void a(a aVar, com.censivn.C3DEngine.b.f.i iVar, int i2) {
+    private void a(a aVar, com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
         ThemeFolderDescription.SystemFolderChild systemFolderChild;
         int iJ = j();
         int i3 = WorkspaceShortcutItem.l.c;
@@ -771,8 +771,8 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
-    public void addChild(com.censivn.C3DEngine.b.f.i iVar) {
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
+    public void addChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         a aVarY = y();
         this.b.add(0, aVarY);
         super.addChild(iVar);
@@ -781,8 +781,8 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         WidgetItemGrid();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
-    public void addChildAt(com.censivn.C3DEngine.b.f.i iVar, int i2) {
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
+    public void addChildAt(com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
         a aVarY = y();
         this.b.add(0, aVarY);
         super.addChildAt(iVar, i2);
@@ -798,8 +798,8 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
-    public boolean removeChild(com.censivn.C3DEngine.b.f.i iVar) {
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
+    public boolean removeChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             a(this.b.remove(0));
@@ -810,9 +810,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         return zRemoveChild;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
-    public com.censivn.C3DEngine.b.f.i removeChildAt(int i2) {
-        com.censivn.C3DEngine.b.f.i iVarRemoveChildAt = super.removeChildAt(i2);
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
+    public com.censivn.C3DEngine.b.f.IRenderable removeChildAt(int i2) {
+        com.censivn.C3DEngine.b.f.IRenderable iVarRemoveChildAt = super.removeChildAt(i2);
         if (iVarRemoveChildAt != null) {
             a(this.b.remove(0));
             WidgetItemGrid();

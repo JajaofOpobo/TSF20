@@ -13,7 +13,7 @@ import com.tsf.extend.theme.an;
 import com.tsf.extend.theme.j;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends d {
+public class ShareIntentHandler extends BaseShareHandler {
     private j.a f;
 
     public c(Context context, Intent intent, j.a aVar) {
@@ -21,7 +21,7 @@ public class c extends d {
         this.f = aVar;
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     protected void a() {
         super.a();
         String stringExtra = this.a.getStringExtra("WEB_URL");
@@ -34,7 +34,7 @@ public class c extends d {
         intent.putExtra("android.intent.extra.TEXT", sbAppend.append(stringExtra).toString());
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     public boolean a(Context context) {
         return a(context, true);
     }
@@ -45,7 +45,7 @@ public class c extends d {
             return b();
         }
         am amVar = new am(context, z);
-        amVar.a(new am.a() { // from class: com.tsf.extend.base.g.c.1
+        amVar.a(new am.a() { // from class: com.tsf.extend.base.g.ShareIntentHandler.1
             @Override // com.tsf.extend.theme.am.a
             public void a(AdapterView<?> adapterView, View view, int i, long j) {
                 d bVar;

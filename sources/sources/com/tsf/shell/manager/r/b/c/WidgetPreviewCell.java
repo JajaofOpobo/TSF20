@@ -3,20 +3,20 @@ package com.tsf.shell.manager.r.b.c;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.element.ThemeElementType;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetPreviewCell extends j {
+public class WidgetPreviewCell extends BaseRenderable {
     private static k a;
     private static TextureElement b = new TextureElement(0, false);
-    private com.censivn.C3DEngine.b.f.d c;
+    private com.censivn.C3DEngine.b.f.ColoredRectRenderable c;
     private i d;
-    private j e;
+    private BaseRenderable e;
     private i f;
     private com.tsf.shell.f.i.c.ItemLabelProvider g;
     private float h;
@@ -28,20 +28,20 @@ public class WidgetPreviewCell extends j {
         this.i = f;
         this.j = f2;
         this.h = f3;
-        this.c = new com.censivn.C3DEngine.b.f.d(f, f2 - this.h);
+        this.c = new com.censivn.C3DEngine.b.f.ColoredRectRenderable(f, f2 - this.h);
         this.c.a(553648127, ThemeElementType.PARSER_CONFIG_ALL);
         if (z) {
             addChild(this.c);
         }
-        this.e = new j() { // from class: com.tsf.shell.manager.r.b.c.WidgetPreviewCell.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new BaseRenderable() { // from class: com.tsf.shell.manager.r.b.c.WidgetPreviewCell.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 Number3d.TEMPNUMBER3D.reset();
                 Number3d number3dLocalToGlobal = localToGlobal(Number3d.TEMPNUMBER3D);
                 com.censivn.C3DEngine.C3DEngine.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 com.censivn.C3DEngine.C3DEngine.e().f();
             }
@@ -49,7 +49,7 @@ public class WidgetPreviewCell extends j {
         addChild(this.e);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if ((this.g instanceof com.tsf.shell.f.i.c.ItemGroupBase) && !((com.tsf.shell.f.i.c.ItemGroupBase) this.g).j()) {
             if (b.id == 0) {
@@ -58,7 +58,7 @@ public class WidgetPreviewCell extends j {
                 bitmapA.recycle();
             }
             if (a == null) {
-                a = new k(com.censivn.C3DEngine.b.b.A.c * 84.0f, com.censivn.C3DEngine.b.b.A.c * 84.0f, false);
+                a = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 84.0f, com.censivn.C3DEngine.b.b.A.c * 84.0f, false);
                 a.textures().addElement(b);
                 a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
                 a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.A.a(10.0f);
@@ -67,7 +67,7 @@ public class WidgetPreviewCell extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
     }
 

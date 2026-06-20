@@ -12,16 +12,16 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VInformation;
 import com.censivn.C3DEngine.b.e.f;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetVisualRenderer extends f {
-    private m a;
+    private LabelRenderable a;
     private a b;
-    private j d;
+    private BaseRenderable d;
     private TextureElement e = new TextureElement(0, false);
     private TextureElement f = new TextureElement(0, false);
     private InterfaceC0171c g;
@@ -59,7 +59,7 @@ public class WidgetVisualRenderer extends f {
         this.j = context;
         d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.b(1);
         this.a.d(50);
         this.a.a(" ");
@@ -70,7 +70,7 @@ public class WidgetVisualRenderer extends f {
         bVar.k = this.a.maxY();
         this.a.setLayoutParams(bVar);
         addChild(this.a);
-        this.d = new j();
+        this.d = new BaseRenderable();
         this.b = new WidgetVisualNode();
         this.b.a(D);
         this.b.b(l);
@@ -112,7 +112,7 @@ public class WidgetVisualRenderer extends f {
         this.a.a(str);
     }
 
-    class d extends k {
+    class d extends GridRenderable {
         private float d;
         private float e;
 
@@ -126,7 +126,7 @@ public class WidgetVisualRenderer extends f {
             this.e = f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             float f = this.e - position().x;
             if (Math.abs(f) < 0.1f) {
@@ -177,7 +177,7 @@ public class WidgetVisualRenderer extends f {
         }
     }
 
-    class a extends com.censivn.C3DEngine.b.f.a.a {
+    class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         private int[] c;
         private int d;
         private int e;
@@ -194,13 +194,13 @@ public class WidgetVisualRenderer extends f {
             this.h = 0;
             textures().addElement(c.this.e);
             for (int i = 0; i < 19; i++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA = a(i);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(i);
                 bVarA.a(0, 0, 100, 100);
                 bVarA.b(40, this.e);
                 bVarA.h();
             }
             for (int i2 = 0; i2 < 14; i2++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA2 = a(i2 + 20);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(i2 + 20);
                 bVarA2.a(0, 0, 100, 100);
                 bVarA2.b(40, this.e);
                 bVarA2.i().y = -150.0f;
@@ -233,14 +233,14 @@ public class WidgetVisualRenderer extends f {
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {
                 if (this.a) {
-                    d(((com.censivn.C3DEngine.b.f.a.b) C0170a()).H.color);
+                    d(((com.censivn.C3DEngine.b.f.a.SpriteItemData) C0170a()).H.color);
                     this.a = false;
                 }
                 o(f);
             }
 
             private void o(float f) {
-                ((com.censivn.C3DEngine.b.f.a.b) d()).H.set(255, (int) (this.d + ((this.C - this.d) * f)), (int) (this.e + ((this.D - this.e) * f)), (int) (this.f + ((this.E - this.f) * f)));
+                ((com.censivn.C3DEngine.b.f.a.SpriteItemData) d()).H.set(255, (int) (this.d + ((this.C - this.d) * f)), (int) (this.e + ((this.D - this.e) * f)), (int) (this.f + ((this.E - this.f) * f)));
             }
 
             private void d(int i) {
@@ -260,7 +260,7 @@ public class WidgetVisualRenderer extends f {
 
         public void b(int[] iArr) {
             for (int i = 0; i < 14; i++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA = a(i + 20);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(i + 20);
                 C0170a c0170a = new C0170a();
                 c0170a.b(i * 40);
                 c0170a.c(iArr[i]);
@@ -273,7 +273,7 @@ public class WidgetVisualRenderer extends f {
             float length = i / this.c.length;
             int iCeil = (int) Math.ceil(length);
             for (int i2 = 0; i2 < this.c.length; i2++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA = a(i2);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(i2);
                 bVarA.b(iCeil, this.e);
                 bVarA.i().x = (((-i) / 2.0f) + ((i2 + 1) * length)) - (length * 0.5f);
                 bVarA.h();
@@ -281,7 +281,7 @@ public class WidgetVisualRenderer extends f {
             float f = i / 14.0f;
             int iCeil2 = (int) Math.ceil(f);
             for (int i3 = 0; i3 < 14; i3++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA2 = a(i3 + 20);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(i3 + 20);
                 bVarA2.b(iCeil2, this.e);
                 bVarA2.i().x = (((-i) / 2.0f) + ((i3 + 1) * f)) - (f * 0.5f);
                 bVarA2.i().y = (-this.e) - this.f;

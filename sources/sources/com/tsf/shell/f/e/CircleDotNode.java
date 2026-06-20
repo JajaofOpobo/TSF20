@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class CircleDotNode extends com.censivn.C3DEngine.b.f.k {
+public class CircleDotNode extends com.censivn.C3DEngine.b.f.GridRenderable {
     private int a;
     private TextureElement d;
 
@@ -19,7 +19,7 @@ public class CircleDotNode extends com.censivn.C3DEngine.b.f.k {
         useVBO(false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         CircleDotNode();
     }

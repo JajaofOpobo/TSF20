@@ -9,10 +9,10 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends BaseRenderable {
     public static final float a = com.censivn.C3DEngine.b.b.A.b(400.0f);
-    private i d;
+    private IRenderable d;
     private float i;
-    private i p;
-    private i q;
+    private IRenderable p;
+    private IRenderable q;
     private int v;
     private boolean e = false;
     private float f = 0.0f;
@@ -29,7 +29,7 @@ public class d extends BaseRenderable {
     private float s = 0.0f;
     private boolean t = false;
     private boolean u = true;
-    private j c = new j() { // from class: com.censivn.C3DEngine.b.b.A.d.1
+    private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.b.A.d.1
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onChildMeasure(i iVar) {
             a();

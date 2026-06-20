@@ -12,7 +12,7 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
     private com.tsf.shell.f.f.a._d.DrawerSortData h;
     private ArrayList<com.tsf.shell.f.g.a.GestureMenuRenderer> i;
     private com.tsf.shell.f.g.a.GestureMenuRenderer j;
-    private com.censivn.C3DEngine.b.f.m k;
+    private com.censivn.C3DEngine.b.f.LabelRenderable k;
     private float l;
 
     public DrawerMultiWidgetPage(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
@@ -77,7 +77,7 @@ public class DrawerMultiWidgetPage extends DrawerPageItemBase {
     }
 
     private void d() {
-        this.k = new com.censivn.C3DEngine.b.f.m();
+        this.k = new com.censivn.C3DEngine.b.f.LabelRenderable();
         this.k.d(38);
         this.k.position().y = com.censivn.C3DEngine.b.b.A.a(145.0f);
         this.i = new ArrayList<>();

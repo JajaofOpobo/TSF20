@@ -5,14 +5,14 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.d;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.f.PageAnimationState;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
+public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpaperManager.a {
     public static int b = 0;
     private PageAnimationState.a f;
     private com.tsf.shell.f.e.b.ResizeButtonNode g;
@@ -24,7 +24,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
     private boolean e = false;
     private com.tsf.shell.f.e.b.ResizeConfig k = new com.tsf.shell.f.e.b.ResizeConfig();
     private boolean l = false;
-    private k c = new k(0.0f, 0.0f);
+    private GridRenderable c = new GridRenderable(0.0f, 0.0f);
 
     public Object initializeScene() {
         this.c.uvs().set(0, 1.0f, 0.0f);
@@ -56,7 +56,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public i getHittingTarget(float f, float f2, boolean z) {
         if (!this.d) {
             return super.getHittingTarget(f, f2, z);
@@ -171,7 +171,7 @@ public class WorkspaceScene extends j implements e.a, ShellWallpaperManager.a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (b != 0 && this.l) {
             this.j = com.tsf.shell.f.f.PageAnimationState.c(this.a);

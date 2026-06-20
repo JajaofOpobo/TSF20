@@ -2,9 +2,9 @@ package com.tsf.shell.theme.inside.mix.menu.item.detail;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.ThemesMixManager;
@@ -140,9 +140,9 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
         }
     }
 
-    class a extends j {
+    class a extends BaseRenderable {
         private int a;
-        public k b;
+        public GridRenderable b;
         public m c;
         private ThemeListsManager.ThemeInfo f;
         private TextureElement e = new TextureElement(0, false);
@@ -150,11 +150,11 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
 
         public a(int i) {
             this.a = i;
-            this.b = new k(ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
+            this.b = new GridRenderable(ThemeElementInfoLayout.this.mElementSize, ThemeElementInfoLayout.this.mElementSize, false);
             this.b.calAABB();
             this.b.textures().addElement(this.e);
             this.b.position().y = com.censivn.C3DEngine.b.b.A.a(100.0f);
-            this.c = new m();
+            this.c = new LabelRenderable();
             this.c.d(35);
             this.c.position().y = -com.censivn.C3DEngine.b.b.A.a(50.0f);
             this.c.a(ThemesMixManager.getTypeTitle(com.censivn.C3DEngine.C3DEngine.d(), i));
@@ -164,7 +164,7 @@ public class ThemeElementInfoLayout extends ThemeInfoLayout {
             addChild(this.c);
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.e.id == 0 && this.f != null) {
                 Bitmap bitmapA = this.g ? a(this.f) : null;

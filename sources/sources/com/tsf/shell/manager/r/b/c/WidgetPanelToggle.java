@@ -2,7 +2,7 @@ package com.tsf.shell.manager.r.b.c;
 
 import android.appwidget.AppWidgetManager;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
     private e c;
     private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase d;
     private com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase e;
-    private j f;
+    private BaseRenderable f;
     private AppWidgetManager g;
     private e.a h;
 
@@ -56,7 +56,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
         arrayList.add(this.a);
         arrayList.add(this.b);
         setFunctions(arrayList);
-        this.f = new j();
+        this.f = new BaseRenderable();
         this.c = new WidgetDragDropArea(aVar, this) { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.3
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
             public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
@@ -105,7 +105,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.f;
     }
 

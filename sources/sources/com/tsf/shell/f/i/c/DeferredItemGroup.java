@@ -1,13 +1,13 @@
 package com.tsf.shell.f.i.c;
 
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.i.c.a.ITextureCallback;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DeferredItemGroup extends ItemGroupBase {
-    private j k;
+    private BaseRenderable k;
     private k l;
     private float m;
     private float n;
@@ -81,8 +81,8 @@ public class DeferredItemGroup extends ItemGroupBase {
         return this.k;
     }
 
-    private j d(boolean z) {
-        j jVar = new j();
+    private BaseRenderable d(boolean z) {
+        j jVar = new BaseRenderable();
         this.l = g_();
         j jVar2 = (j) ((VObject3dContainer) this.l).getVirtualTarget();
         jVar2.scale().setAll(this.m, this.m, 1.0f);

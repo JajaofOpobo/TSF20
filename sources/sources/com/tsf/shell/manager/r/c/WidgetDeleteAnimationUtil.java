@@ -36,7 +36,7 @@ public class WidgetDeleteAnimationUtil {
         bVar.p_();
     }
 
-    public static void a(TextureElement textureElement, com.censivn.C3DEngine.b.f.i iVar) {
+    public static void a(TextureElement textureElement, com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (textureElement != null && textureElement.id != 0) {
             com.censivn.C3DEngine.b.h.a.a aVarA = com.censivn.C3DEngine.b.h.a.a.a(textureElement);
             aVarA.position().setAllFrom(iVar.position());

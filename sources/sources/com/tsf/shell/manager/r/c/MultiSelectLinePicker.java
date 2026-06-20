@@ -5,8 +5,8 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 import com.tsf.shell.f.e.LassoSelectionHandler;
 import com.tsf.shell.f.e.ILassoSelectable;
@@ -21,7 +21,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegistryManager.a, KeyEventListener.a, ToastOverlayController.a {
     private static A e;
-    private j a;
+    private BaseRenderable a;
     private h b;
     private String c;
     private String d;
@@ -31,7 +31,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
     private boolean i = false;
     private boolean j = false;
 
-    public class A implements Comparator<i> {
+    public class A implements Comparator<IRenderable> {
         public A() {
         }
 
@@ -56,12 +56,12 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         }
         this.d = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.line_picker_back_to_select);
         this.c = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_function_unavailable);
-        this.a = new j() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.a = new BaseRenderable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 MultiSelectLinePicker.this.c();
             }

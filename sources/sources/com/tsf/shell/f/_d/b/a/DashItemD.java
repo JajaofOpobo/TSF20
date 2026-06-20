@@ -35,7 +35,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
 
     private h o() {
         h hVar = new h() { // from class: com.tsf.shell.f._d.b.a.DashItemD.1
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 super.onDrawChildStart();
                 if (d.b.id == 0) {
@@ -48,7 +48,7 @@ public class DashItemD extends com.tsf.shell.f.f.TransitionRenderer {
                 d.this.a(this);
             }
 
-            @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
+            @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 d.this.b(this);

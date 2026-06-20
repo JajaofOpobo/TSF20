@@ -3,38 +3,38 @@ package com.tsf.shell.manager.j;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.SelectionFrame;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class RateFaceView extends j {
+public class RateFaceView extends BaseRenderable {
     private static final int a = com.censivn.C3DEngine.b.b.A.b(72.0f);
     private static final int l = com.censivn.C3DEngine.b.b.A.b(15.0f);
     private static final int m = (a / 2) + l;
-    private k d;
-    private k e;
-    private k f;
-    private m g;
+    private GridRenderable d;
+    private GridRenderable e;
+    private GridRenderable f;
+    private LabelRenderable g;
     private TextureElement i = new TextureElement(0, false);
     private TextureElement j = new TextureElement(0, false);
     private TextureElement k = new TextureElement(0, false);
-    private j b = new j();
-    private j c = new j();
+    private BaseRenderable b = new BaseRenderable();
+    private BaseRenderable c = new BaseRenderable();
     private LayoutContainer h = new LayoutContainer();
 
     public RateFaceView() {
         this.h.a(3);
-        this.d = new k(a, a, false);
+        this.d = new GridRenderable(a, a, false);
         this.d.textures().addElement(this.i);
         this.d.setDefaultColor(new Color4(-2236963));
-        this.e = new k(a, a, false);
+        this.e = new GridRenderable(a, a, false);
         this.e.textures().addElement(this.j);
-        this.f = new k(a, a, false);
+        this.f = new GridRenderable(a, a, false);
         this.f.textures().addElement(this.k);
-        this.g = new m();
+        this.g = new LabelRenderable();
         this.g.d(60);
         this.g.e(-2236963);
         this.g.b(true);
@@ -141,7 +141,7 @@ public class RateFaceView extends j {
         com.censivn.C3DEngine.b.g.c.a(this.f, VEasing.Linear.easeNone, dVar3);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.i.id == 0) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.i, b.d.rate_face);

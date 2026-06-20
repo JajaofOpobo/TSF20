@@ -3,8 +3,8 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.b;
@@ -74,7 +74,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.mGridView;
     }
 

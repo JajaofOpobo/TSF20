@@ -8,27 +8,27 @@ public class VBox extends VObject3dContainer {
     public VBox(float f, float f2, float f3) {
         this.mThis = this;
         this.vTarget = new c(f, f2, f3) { // from class: com.censivn.C3DEngine.api.primitives.VBox.1
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onFocus() {
                 VBox.this.mThis.onFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 VBox.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 VBox.this.mThis.onDrawStart();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 VBox.this.mThis.onDrawEnd();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onUpdateAnimation() {
                 VBox.this.mThis.onUpdateAnimation();
             }

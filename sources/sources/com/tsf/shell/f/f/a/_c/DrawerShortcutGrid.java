@@ -11,7 +11,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerShortcutGrid extends DrawerPageItemBase {
     private com.censivn.C3DEngine.b.h.e.b g;
-    private com.censivn.C3DEngine.b.f.m h;
+    private com.censivn.C3DEngine.b.f.LabelRenderable h;
     private float i;
 
     public DrawerShortcutGrid(com.tsf.shell.f.f.a.FolderPage hVar, com.tsf.shell.f.f.a.PageGridRenderer fVar) {
@@ -44,7 +44,7 @@ public class DrawerShortcutGrid extends DrawerPageItemBase {
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.b
-            public void b(com.censivn.C3DEngine.b.f.i iVar) {
+            public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 com.tsf.shell.f.i.ShortcutItem cVar = iVar instanceof com.tsf.shell.f.i.ShortcutItem ? (com.tsf.shell.f.i.ShortcutItem) iVar : null;
                 if (cVar != null && cVar.K() != null) {
                     LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) cVar.K();
@@ -54,7 +54,7 @@ public class DrawerShortcutGrid extends DrawerPageItemBase {
             }
         };
         addChild(this.g);
-        this.h = new com.censivn.C3DEngine.b.f.m();
+        this.h = new com.censivn.C3DEngine.b.f.LabelRenderable();
         this.h.c(DrawerWidgetTouchHandler.i.notic_hide_app);
         this.h.d(38);
         this.h.e(-1);

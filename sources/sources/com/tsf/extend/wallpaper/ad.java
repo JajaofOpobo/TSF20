@@ -144,7 +144,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
             }
         });
         this.a.setOnScrollListener(this);
-        com.tsf.extend.base.b.A aVarA = z.h().a(this.h ? this.i : this.g.a(), this.h ? z.c : z.b);
+        com.tsf.extend.base.b.PagedListModel aVarA = z.h().a(this.h ? this.i : this.g.a(), this.h ? z.c : z.b);
         if (aVarA != null && aVarA.a() != null) {
             this.m = false;
             this.u = !aVarA.b();
@@ -420,7 +420,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
     }
 
-    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private com.tsf.extend.base.d.BaseDataProvider.b b;
 
         public b(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -428,9 +428,9 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.PagedListModel) null);
                 return;
             }
             ad.this.u = !aVar.b();
@@ -461,7 +461,7 @@ public class ad extends FrameLayout implements View.OnClickListener, AbsListView
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             if (this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                 ad.this.d();
                 return;

@@ -20,7 +20,7 @@ public class ah extends com.tsf.extend.BaseDialog implements View.OnClickListene
             dismiss();
         } else if (id == ResourceIds.e.cover || id == ResourceIds.e.content_layout || id == ResourceIds.e.wallpaper_store_root) {
             dismiss();
-            com.tsf.extend.base.b.A(this.c, b);
+            com.tsf.extend.base.b.PagedListModel(this.c, b);
         }
     }
 

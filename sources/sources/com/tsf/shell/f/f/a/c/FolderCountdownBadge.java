@@ -9,7 +9,7 @@ public class FolderCountdownBadge extends FolderSelectionFrame {
     private com.censivn.C3DEngine.b.h.d.b c;
     private boolean d = false;
     private TextureElement a = x.b(FolderWidgetTouchHandler.d.drawer_layout_homescreen_countdown);
-    private com.censivn.C3DEngine.b.f.k b = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
+    private com.censivn.C3DEngine.b.f.GridRenderable b = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
 
     public FolderCountdownBadge() {
         this.b.textures().addElement(this.a);

@@ -1,12 +1,12 @@
 package com.tsf.shell.f.f.a._a.b;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerButtonElement extends DrawerBaseElement {
     private static final float d = com.censivn.C3DEngine.b.b.A.a(70.0f);
-    private k b;
+    private GridRenderable b;
     private TextureElement c;
     private int e;
 
@@ -14,8 +14,8 @@ public class DrawerButtonElement extends DrawerBaseElement {
         super(cVar);
         this.c = new TextureElement(0, false);
         this.e = i;
-        this.b = new k(d, d, false) { // from class: com.tsf.shell.f.f.a._a.b.DrawerButtonElement.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.b = new GridRenderable(d, d, false) { // from class: com.tsf.shell.f.f.a._a.b.DrawerButtonElement.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (a.this.c.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(a.this.c, a.this.e);

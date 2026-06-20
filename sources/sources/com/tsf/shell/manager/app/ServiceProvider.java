@@ -9,7 +9,7 @@ public class ServiceProvider {
             return this;
         }
 
-        public Comparator<com.censivn.C3DEngine.b.f.i> b() {
+        public Comparator<com.censivn.C3DEngine.b.f.IRenderable> b() {
             return null;
         }
     }

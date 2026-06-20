@@ -12,15 +12,15 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class h extends f {
-    private com.censivn.C3DEngine.b.f.j b;
-    private m d;
-    private m e;
-    private m f;
-    private k g;
-    private k h;
+    private com.censivn.C3DEngine.b.f.BaseRenderable b;
+    private LabelRenderable d;
+    private LabelRenderable e;
+    private LabelRenderable f;
+    private GridRenderable g;
+    private GridRenderable h;
     private float i;
-    private com.censivn.C3DEngine.b.f.j j;
-    private k k;
+    private com.censivn.C3DEngine.b.f.BaseRenderable j;
+    private GridRenderable k;
     private TextureElement l;
     private a s;
     public float a = 0.1f;
@@ -98,13 +98,13 @@ public class h extends f {
 
     private void m() {
         a(1);
-        this.b = new com.censivn.C3DEngine.b.f.j();
-        this.d = new m();
+        this.b = new com.censivn.C3DEngine.b.f.BaseRenderable();
+        this.d = new LabelRenderable();
         this.d.a(1);
         this.d.b(1);
         this.d.d(50);
         this.b.addChild(this.d);
-        this.e = new m();
+        this.e = new LabelRenderable();
         this.e.a(1);
         this.e.b(2);
         this.e.d(50);
@@ -116,10 +116,10 @@ public class h extends f {
         bVar.k = this.e.maxY();
         this.b.setLayoutParams(bVar);
         addChild(this.b);
-        this.j = new com.censivn.C3DEngine.b.f.j();
-        this.g = new k(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
+        this.j = new com.censivn.C3DEngine.b.f.BaseRenderable();
+        this.g = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
         this.g.setDefaultColor(new Color4(255, 255, 255, VEasing.Back.easeIn));
-        this.h = new k(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
+        this.h = new GridRenderable(0.0f, com.censivn.C3DEngine.b.b.A.a(10.0f), false);
         this.h.setDefaultColor(new Color4(255, 255, 255, 100));
         this.j.addChild(this.g);
         this.j.addChild(this.h);
@@ -179,7 +179,7 @@ public class h extends f {
 
     public void c(String str) {
         if (this.f == null) {
-            this.f = new m();
+            this.f = new LabelRenderable();
             this.f.a(true);
             this.f.a(1);
             this.f.b(1);
@@ -268,7 +268,7 @@ public class h extends f {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.q != this.p || this.r || this.k.getAnimationObjectState()) {
             if (this.r) {

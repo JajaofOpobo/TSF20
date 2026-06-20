@@ -14,7 +14,7 @@ public class PageContentType extends g {
 
     @Override // com.tsf.shell.f.f.WorkspacePage
     public void O() {
-        for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 ((com.tsf.shell.f.i.PageItem) iVar).ae();
             }
@@ -45,7 +45,7 @@ public class PageContentType extends g {
         if (!ad() && X()) {
             super.ab();
             PageContentType().g();
-            for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
                 if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                     ((com.tsf.shell.f.i.PageItem) iVar).q_();
                 }
@@ -57,7 +57,7 @@ public class PageContentType extends g {
     public void ac() {
         if (ad() && Y()) {
             super.ac();
-            for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
                 if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                     ((com.tsf.shell.f.i.PageItem) iVar).j();
                 }
@@ -79,7 +79,7 @@ public class PageContentType extends g {
         com.censivn.C3DEngine.b.g.c.a(this.l, 386, dVar);
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar, com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
         com.tsf.shell.f.i.b.e.DrawerItemVisual gVarBa = gVar.ba();
         gVarBa.removeFromParent();
         gVarBa.position().setAllFrom(this.l.globalToLocal(iVar.localToGlobal(new Number3d())));

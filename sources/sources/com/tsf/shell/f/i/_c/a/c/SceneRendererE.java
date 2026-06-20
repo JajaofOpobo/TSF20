@@ -8,12 +8,12 @@ public class SceneRendererE {
     private float d;
     private float e;
     private float f;
-    private com.censivn.C3DEngine.b.f._a.b g;
-    private com.censivn.C3DEngine.b.f._a.b h;
-    private com.censivn.C3DEngine.b.f._a.b i;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData g;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData h;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData i;
     private long j = -1;
 
-    public SceneRendererE(com.censivn.C3DEngine.b.f._a.b bVar, com.censivn.C3DEngine.b.f._a.b bVar2) {
+    public SceneRendererE(com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVar, com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVar2) {
         this.a = 0.0f;
         this.b = 0.0f;
         this.c = 0.0f;
@@ -33,7 +33,7 @@ public class SceneRendererE {
         this.d = f3;
     }
 
-    public void a(com.censivn.C3DEngine.b.f._a.b bVar) {
+    public void a(com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVar) {
         this.i = bVar;
         this.i.i().x = this.a;
         this.i.i().y = this.b;

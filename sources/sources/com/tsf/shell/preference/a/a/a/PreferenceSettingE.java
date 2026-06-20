@@ -2,14 +2,14 @@ package com.tsf.shell.preference.a.a.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingE extends PreferenceSettingBase {
-    private com.censivn.C3DEngine.b.f.j a;
+    private com.censivn.C3DEngine.b.f.BaseRenderable a;
     private float b;
     private float d;
     private float e;
 
     public PreferenceSettingE(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
-        this.a = new com.censivn.C3DEngine.b.f.j();
+        this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
         PreferenceSettingE().addChild(this.a);
         this.b = com.censivn.C3DEngine.b.b.A.a(150.0f);
         this.e = com.censivn.C3DEngine.b.b.A.a(20.0f);

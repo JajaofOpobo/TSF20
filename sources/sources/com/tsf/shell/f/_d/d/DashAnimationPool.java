@@ -2,10 +2,10 @@ package com.tsf.shell.f._d.d;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DashAnimationPool extends k {
+public class DashAnimationPool extends GridRenderable {
     public Body a;
     public b d;
     private float e;
@@ -37,7 +37,7 @@ public class DashAnimationPool extends k {
         this.a.setAngularVelocity(0.017453292f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawEnd() {
         Vector2 position = this.a.getPosition();
         position().x = position.x * this.e;
@@ -45,7 +45,7 @@ public class DashAnimationPool extends k {
         rotation().z = this.a.getAngle() * this.f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         if (this.d.b != null) {
             this.d.b.destroyBody(this.a);

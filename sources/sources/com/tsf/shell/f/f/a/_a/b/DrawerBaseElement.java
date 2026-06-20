@@ -3,17 +3,17 @@ package com.tsf.shell.f.f.a._a.b;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.utils.ColorMatrixImageFilter;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerBaseElement extends j {
+public class DrawerBaseElement extends BaseRenderable {
     private static k d;
     private i e;
-    private k f;
+    private GridRenderable f;
     private com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData g;
     private float h;
     private static TextureElement b = new TextureElement(0, false);
@@ -23,10 +23,10 @@ public class DrawerBaseElement extends j {
     public DrawerBaseElement(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
         this.g = cVar;
         if (d == null) {
-            d = new k(a, a, false);
+            d = new GridRenderable(a, a, false);
             d.textures().addElement(b);
         }
-        this.f = new k(com.censivn.C3DEngine.b.b.A.a(6.0f), 0.0f, false);
+        this.f = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(6.0f), 0.0f, false);
         this.f.useVBO(false);
         this.f.position().y = -com.censivn.C3DEngine.b.b.A.a(90.0f);
         this.f.setDefaultColor(new Color4(255, 255, 255, 50));
@@ -69,7 +69,7 @@ public class DrawerBaseElement extends j {
         a(this.e, -com.tsf.shell.f.f.a._a.DrawerItemContainer.a, 0.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         if (b.id == 0) {
             Bitmap bitmapA = p.a(a, c, 1442840575);

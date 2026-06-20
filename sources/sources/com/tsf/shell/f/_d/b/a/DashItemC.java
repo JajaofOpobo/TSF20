@@ -1,17 +1,17 @@
 package com.tsf.shell.f._d.b.a;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashItemC extends DashItemD {
-    private k c;
+    private GridRenderable c;
     private TextureElement d;
 
     public DashItemC(int i, boolean z) {
         super(i, z);
-        this.c = new k(com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, false);
+        this.c = new GridRenderable(com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, com.tsf.shell.manager.o.ButtonPresetManager.a.H * 1.45f, false);
         this.c.setAnimationObjectState(true);
         this.c.uvs().set(0, 0.25f, 0.125f);
         this.c.uvs().set(1, 0.0f, 0.125f);

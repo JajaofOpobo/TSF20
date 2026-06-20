@@ -1,6 +1,6 @@
 package com.tsf.shell.f.i.c;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.MarketLinkHandler;
 import java.util.ArrayList;

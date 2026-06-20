@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends b {
+public class LogWriter extends AbstractLogProvider {
     private static a b;
     private static SimpleDateFormat d = new SimpleDateFormat("\r\n\r\nyyyy-MM-dd HH:mm:ss.Z : ");
     private final c c = c.a();
@@ -36,7 +36,7 @@ public class a extends b {
         this.c.b("key_wallpaper_big_type", z);
     }
 
-    @Override // com.tsf.extend.base.h.b
+    @Override // com.tsf.extend.base.h.AbstractLogProvider
     public String e() {
         return this.c.a("theme_current", (String) null);
     }
@@ -95,7 +95,7 @@ public class a extends b {
         this.c.b("key_theme_share_id", str);
     }
 
-    @Override // com.tsf.extend.base.h.b
+    @Override // com.tsf.extend.base.h.AbstractLogProvider
     protected String a(String str, String str2, String str3) {
         return this.c.a(str, str2, str3);
     }

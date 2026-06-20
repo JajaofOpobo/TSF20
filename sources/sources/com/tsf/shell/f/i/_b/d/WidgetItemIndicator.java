@@ -1,7 +1,7 @@
 package com.tsf.shell.f.i._b.d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetItemIndicator extends com.censivn.C3DEngine.b.f.k {
+public class WidgetItemIndicator extends com.censivn.C3DEngine.b.f.GridRenderable {
     private float a;
     private float d;
 

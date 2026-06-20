@@ -1,14 +1,14 @@
 package com.tsf.shell.f._d.a._a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
-    private com.censivn.C3DEngine.b.f._a.a a;
+    private com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable a;
     private com.tsf.shell.f._d.a.DashElementInfo b;
-    private k c;
+    private GridRenderable c;
 
     public DashButtonC(int i, boolean z) {
         super(i, z);
@@ -52,7 +52,7 @@ public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
-    public void a(k kVar, final Runnable runnable) {
+    public void a(GridRenderable kVar, final Runnable runnable) {
         this.c.textures().clear();
         this.c.textures().addElement(kVar.textures().get(0).textureElement);
         this.c.alpha(150.0f);

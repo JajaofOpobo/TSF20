@@ -12,7 +12,7 @@ public class DashLayoutContainer extends f {
     public DashLayoutContainer(int i, boolean z) {
         super(i, 0, z);
         this.a = new DashLayoutListener(this) { // from class: com.tsf.shell.f._d.c.a.DashLayoutContainer.1
-            @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.j
+            @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd() {
                 super.onDrawChildEnd();
                 com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(-38.0f));
@@ -40,9 +40,9 @@ public class DashLayoutContainer extends f {
         return 380;
     }
 
-    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
     }
 
-    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
     }
 }

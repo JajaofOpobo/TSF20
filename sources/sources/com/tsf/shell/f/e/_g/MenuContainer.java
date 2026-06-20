@@ -1,24 +1,24 @@
 package com.tsf.shell.f.e._g;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class MenuContainer extends j {
+public class MenuContainer extends BaseRenderable {
     private float c = 26.0f * com.censivn.C3DEngine.b.b.A.c;
     private ArrayList<a> a = new ArrayList<>();
     private ArrayList<a> b = new ArrayList<>();
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void measure() {
         MenuContainer();
         MenuContainer();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x009c  */
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -41,7 +41,7 @@ public class MenuContainer extends j {
             com.tsf.shell.f.e._g.MenuContainer$a r0 = (com.tsf.shell.f.e._g.MenuContainer.a) r0
             boolean r1 = r0.c
             if (r1 == 0) goto L9c
-            com.censivn.C3DEngine.b.f.i r1 = r12.getChildAt(r4)
+            com.censivn.C3DEngine.b.f.IRenderable r1 = r12.getChildAt(r4)
             com.tsf.shell.f.e._g.a.MenuActionHandler$a r1 = (com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a) r1
             com.censivn.C3DEngine.api.element.PositionNumber3d r6 = r1.position()
             float r7 = r6.x
@@ -107,14 +107,14 @@ public class MenuContainer extends j {
         throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.e._g.MenuContainer.onDrawStart():void");
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         super.addChild(iVar);
         this.a.add(c());
         MenuContainer();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         a(this.a.remove(0));

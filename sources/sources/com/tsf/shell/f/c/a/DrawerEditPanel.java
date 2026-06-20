@@ -1,7 +1,7 @@
 package com.tsf.shell.f.c.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -13,7 +13,7 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
     }
 
     @Override // com.tsf.shell.f.c.b.DrawerSettingsBase
-    public j a() {
+    public BaseRenderable a() {
         return this.a.h();
     }
 

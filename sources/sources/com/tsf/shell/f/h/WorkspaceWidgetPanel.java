@@ -8,8 +8,8 @@ import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.ShellGraphicsContext;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -21,10 +21,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
-    private k b;
+    private GridRenderable b;
     private c c;
     private com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a d;
-    private k e;
+    private GridRenderable e;
     private TextureElement f;
     private boolean g;
 
@@ -33,14 +33,14 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
         this.g = false;
         this.c = cVar;
         this.f = new TextureElement(0, false);
-        this.e = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b, false);
+        this.e = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.b, com.tsf.shell.manager.g.LayoutDimensionConstants.b, false);
         this.e.textures().addElement(this.f);
         WorkspaceWidgetPanel();
     }
 
     public void o() {
         TextureElement textureElementB = x.b(WorkspaceStub.d.smart_button_add_icon);
-        this.b = new k(com.censivn.C3DEngine.b.b.A.c * 128.0f, com.censivn.C3DEngine.b.b.A.c * 128.0f, false);
+        this.b = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 128.0f, com.censivn.C3DEngine.b.b.A.c * 128.0f, false);
         this.b.moveAllPointsPX(0.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.Y, 0.0f);
         this.b.calAABB(2.0f, 2.0f, 1.0f);
         this.b.textures().addElement(textureElementB);

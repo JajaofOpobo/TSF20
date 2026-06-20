@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
+public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private static E a = new E();
     private static Number3d b = new Number3d();
     private static com.tsf.shell.f.i.ShortcutItem c;
@@ -27,7 +27,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
         if (cVar != c || a.numChildren() <= 0) {
             return false;
         }
-        Iterator<com.censivn.C3DEngine.b.f.i> it = a.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = a.children().iterator();
         while (it.hasNext()) {
             if (it.next() instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                 return true;
@@ -66,7 +66,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
 
     public static ArrayList<com.tsf.shell.f.i.ShortcutItem> b() {
         ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList = new ArrayList<>();
-        Iterator<com.censivn.C3DEngine.b.f.i> it = a.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = a.children().iterator();
         while (it.hasNext()) {
             arrayList.add((com.tsf.shell.f.i.ShortcutItem) it.next());
         }
@@ -83,14 +83,14 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
         return arrayListB;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (c != null) {
-            com.censivn.C3DEngine.b.f.i iVar = c;
+            com.censivn.C3DEngine.b.f.IRenderable iVar = c;
             float fNumChildren = numChildren() * 0.04f;
             float f = fNumChildren <= 0.3f ? fNumChildren : 0.3f;
             float f2 = ((double) f) < 0.12d ? 0.12f : f;
-            for (com.censivn.C3DEngine.b.f.i iVar2 : children()) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar2 : children()) {
                 iVar2.position().x += ((iVar.position().x + (10.0f * com.censivn.C3DEngine.b.b.A.c)) - iVar2.position().x) * f2;
                 PositionNumber3d positionNumber3dPosition = iVar2.position();
                 positionNumber3dPosition.y = ((iVar.position().y - iVar2.position().y) * f2) + positionNumber3dPosition.y;
@@ -99,13 +99,13 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         int iNumChildren = numChildren();
         while (true) {
             iNumChildren--;
             if (iNumChildren > -1) {
-                com.censivn.C3DEngine.b.f.i childAt = getChildAt(iNumChildren);
+                com.censivn.C3DEngine.b.f.IRenderable childAt = getChildAt(iNumChildren);
                 onDrawChildStart(childAt);
                 childAt.dispatchDraw();
                 onDrawChildEnd(childAt);

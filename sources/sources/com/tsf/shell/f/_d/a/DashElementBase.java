@@ -1,8 +1,8 @@
 package com.tsf.shell.f._d.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -14,7 +14,7 @@ public abstract class DashElementBase {
 
     public abstract void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable);
 
-    public abstract void a(k kVar, Runnable runnable);
+    public abstract void a(GridRenderable kVar, Runnable runnable);
 
     public abstract i e();
 

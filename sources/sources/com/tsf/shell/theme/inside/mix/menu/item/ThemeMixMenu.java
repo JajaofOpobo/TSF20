@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.b.b.A.a;
 import com.censivn.C3DEngine.b.b.A.d;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -100,7 +100,7 @@ public class ThemeMixMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.mScrollContainer;
     }
 

@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a._a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.app.WidgetPanelController;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
     private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect> b;
     private ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> c;
     private TextureElement d;
-    private k e;
+    private GridRenderable e;
     private float f;
 
     public DrawerDragEffectController(c cVar) {
@@ -36,8 +36,8 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
             }
         };
         com.tsf.shell.manager.app.ServiceProvider.a().a().a(this.a);
-        this.e = new k(com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.3
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(50.0f), false) { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.3
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.d.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(d.this.d, b.d.allapps_direction_swap);

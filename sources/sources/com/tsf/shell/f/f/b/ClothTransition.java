@@ -13,7 +13,7 @@ import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ClothTransition extends ItemPageTransition {
-    private com.censivn.C3DEngine.b.f.j a;
+    private com.censivn.C3DEngine.b.f.BaseRenderable a;
     private C0108a b;
     private com.tsf.shell.f.f.WorkspacePage c;
     private com.tsf.shell.f.f.WorkspacePage d;
@@ -30,7 +30,7 @@ public class ClothTransition extends ItemPageTransition {
         this.g = new com.censivn.C3DEngine.b.g._b.b();
         this.h = true;
         if (this.b == null) {
-            this.a = new com.censivn.C3DEngine.b.f.j();
+            this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
             if (com.censivn.C3DEngine.b.b.A.F < com.censivn.C3DEngine.b.b.A.G) {
                 i2 = com.censivn.C3DEngine.b.b.A.F;
                 i3 = com.censivn.C3DEngine.b.b.A.G;
@@ -203,8 +203,8 @@ public class ClothTransition extends ItemPageTransition {
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.b.ClothTransition$a, reason: collision with other inner class name */
-    public static class C0108a extends com.censivn.C3DEngine.b.f.k {
-        private com.censivn.C3DEngine.b.f.k a;
+    public static class C0108a extends com.censivn.C3DEngine.b.f.GridRenderable {
+        private com.censivn.C3DEngine.b.f.GridRenderable a;
         private int d;
         private int e;
         private int f;
@@ -227,7 +227,7 @@ public class ClothTransition extends ItemPageTransition {
             this.o = false;
             this.d = i2 + 1;
             this.e = i + 1;
-            this.a = new com.censivn.C3DEngine.b.f.k(f, f2, i, i2, false);
+            this.a = new com.censivn.C3DEngine.b.f.GridRenderable(f, f2, i, i2, false);
             this.h = 0.5f / (this.d - 1);
             this.f = this.d * this.e;
             useVBO(false);
@@ -250,7 +250,7 @@ public class ClothTransition extends ItemPageTransition {
             this.j = textureElement;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
         public void dispatchDraw() {
             this.l.id = 0;
             if (this.k == null || this.k.id == 0) {
@@ -268,7 +268,7 @@ public class ClothTransition extends ItemPageTransition {
             super.dispatchDraw();
         }
 
-        public void a(com.censivn.C3DEngine.b.f.k kVar, UvBufferManager uvBufferManager, float f, float f2, boolean z) {
+        public void a(com.censivn.C3DEngine.b.f.GridRenderable kVar, UvBufferManager uvBufferManager, float f, float f2, boolean z) {
             float f3;
             float f4;
             float f5;
@@ -383,7 +383,7 @@ public class ClothTransition extends ItemPageTransition {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void drawObject_textures() {
             GLES20.glActiveTexture(33984);
             if (hasUvs() && texturesEnabled() && textures().size() > 0) {

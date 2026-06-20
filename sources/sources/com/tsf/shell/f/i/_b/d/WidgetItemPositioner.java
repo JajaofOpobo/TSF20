@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.n;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
@@ -33,11 +33,11 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
     public static float Q;
     public static float R;
     public static float S;
-    private static com.censivn.C3DEngine.b.f._a.a Z;
-    public com.censivn.C3DEngine.b.f.j E;
-    public com.censivn.C3DEngine.b.f.j F;
-    public com.censivn.C3DEngine.b.f.j G;
-    public com.censivn.C3DEngine.b.f.k H;
+    private static com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable Z;
+    public com.censivn.C3DEngine.b.f.BaseRenderable E;
+    public com.censivn.C3DEngine.b.f.BaseRenderable F;
+    public com.censivn.C3DEngine.b.f.BaseRenderable G;
+    public com.censivn.C3DEngine.b.f.GridRenderable H;
     public h I;
     public n J;
     public int K;
@@ -230,10 +230,10 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             this.A = null;
         }
         if (this.E == null) {
-            this.F = new com.censivn.C3DEngine.b.f.j();
+            this.F = new com.censivn.C3DEngine.b.f.BaseRenderable();
             this.W = new WidgetItemBackground();
             this.W.a(this.F);
-            this.E = new com.censivn.C3DEngine.b.f.j();
+            this.E = new com.censivn.C3DEngine.b.f.BaseRenderable();
             this.E.scale().x = 0.0f;
             this.E.scale().y = 0.0f;
             this.E.alpha(0.0f);
@@ -244,15 +244,15 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             this.I.setDefaultColor(new Color4(255, 255, 255, 100));
             this.I.alpha(0.0f);
             this.I.visible(false);
-            this.G = new com.censivn.C3DEngine.b.f.j();
-            this.H = new com.censivn.C3DEngine.b.f.k(500.0f * com.censivn.C3DEngine.b.b.A.c, 64.0f * com.censivn.C3DEngine.b.b.A.c, 1, 1);
+            this.G = new com.censivn.C3DEngine.b.f.BaseRenderable();
+            this.H = new com.censivn.C3DEngine.b.f.GridRenderable(500.0f * com.censivn.C3DEngine.b.b.A.c, 64.0f * com.censivn.C3DEngine.b.b.A.c, 1, 1);
             this.H.calAABB();
             this.H.textures().addElement(this.y);
             this.G.addChild(this.H);
             this.E.addChild(this.G);
             this.E.addChild(this.I);
             this.F.addChild(this.E);
-            this.J = new n();
+            this.J = new EmptyRenderable();
             this.J.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.J) { // from class: com.tsf.shell.f.i._b.d.WidgetItemPositioner.3
                 @Override // com.censivn.C3DEngine.b.d.a
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
@@ -292,10 +292,10 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         if (c().folder.sizePlaneEnable) {
             i2++;
         }
-        Z = new com.censivn.C3DEngine.b.f._a.a(i2 + c().folder.sampleCount, 0, 0);
+        Z = new com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable(i2 + c().folder.sampleCount, 0, 0);
         Z.useVBO(false);
         if (c().folder.backPlaneEnable) {
-            com.censivn.C3DEngine.b.f._a.b bVarA = Z.a(0);
+            com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVarA = Z.a(0);
             bVarA.b(c().folder.backPlaneWidth);
             bVarA.d(c().folder.backPlaneHeight);
             bVarA.m.x = c().folder.backPlaneX;
@@ -305,7 +305,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             i = 0;
         }
         if (c().folder.frontPlaneEnable) {
-            com.censivn.C3DEngine.b.f._a.b bVarA2 = Z.a(ScrollingIndicator);
+            com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVarA2 = Z.a(ScrollingIndicator);
             bVarA2.b(c().folder.frontPlaneWidth);
             bVarA2.d(c().folder.frontPlaneHeight);
             bVarA2.m.x = c().folder.frontPlaneX;
@@ -314,7 +314,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
             i++;
         }
         if (c().folder.sizePlaneEnable) {
-            com.censivn.C3DEngine.b.f._a.b bVarA3 = Z.a(ScrollingIndicator);
+            com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVarA3 = Z.a(ScrollingIndicator);
             bVarA3.b(c().folder.sizePlaneWidth);
             bVarA3.d(c().folder.sizePlaneHeight);
             bVarA3.m.x = c().folder.sizePlaneX;
@@ -326,7 +326,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
         for (int i3 = 0; i3 < c().folder.sampleCount; i3++) {
             ThemeFolderDescription.SystemFolderChild systemFolderChild = c().folder.getSampleInformaiton().get(i3);
-            com.censivn.C3DEngine.b.f._a.b bVarA4 = Z.a(ScrollingIndicator);
+            com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVarA4 = Z.a(ScrollingIndicator);
             bVarA4.b(WidgetItemBackground);
             bVarA4.d(f2);
             bVarA4.m.x = systemFolderChild.position.x + c().folder.childContainerX;
@@ -343,7 +343,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         Z.minY();
         Z.maxX();
         Z.maxY();
-        com.censivn.C3DEngine.b.f._a.b bVarA5 = Z.a(ScrollingIndicator);
+        com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVarA5 = Z.a(ScrollingIndicator);
         bVarA5.b(c().folder.textPlaneWidth);
         bVarA5.d(c().folder.textPlaneHeight);
         bVarA5.m.x = c().folder.textPlaneX;

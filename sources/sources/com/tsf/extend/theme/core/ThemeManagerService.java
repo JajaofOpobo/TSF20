@@ -138,7 +138,7 @@ public class ThemeManagerService extends Service {
 
         @Override // com.tsf.extend.base.c.ServiceBinderA
         public String a() {
-            return com.tsf.extend.base.h.a.a().e();
+            return com.tsf.extend.base.h.LogWriter.a().e();
         }
 
         @Override // com.tsf.extend.base.c.ServiceBinderA

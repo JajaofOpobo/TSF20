@@ -9,7 +9,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends g {
-    private k a;
+    private GridRenderable a;
     private TextureElement b;
     private boolean d = false;
     private boolean e = false;
@@ -81,7 +81,7 @@ public class a extends g {
         });
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.e != this.d) {
             h();

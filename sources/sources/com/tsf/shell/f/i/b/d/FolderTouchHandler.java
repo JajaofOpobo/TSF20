@@ -27,7 +27,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean p;
     private Runnable q;
 
-    public FolderTouchHandler(com.censivn.C3DEngine.b.f.i iVar, com.tsf.shell.f.i.b.d.FolderShortcutItem bVar) {
+    public FolderTouchHandler(com.censivn.C3DEngine.b.f.IRenderable iVar, com.tsf.shell.f.i.b.d.FolderShortcutItem bVar) {
         super(iVar);
         this.d = false;
         this.k = false;

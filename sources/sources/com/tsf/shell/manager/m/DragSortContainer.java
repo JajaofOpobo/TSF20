@@ -3,7 +3,7 @@ package com.tsf.shell.manager.m;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.b.A.e;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
@@ -16,7 +16,7 @@ import java.util.HashMap;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
     public interface InterfaceC0113a {
-        java.util.ArrayList<com.censivn.C3DEngine.b.f.i> b();
+        java.util.ArrayList<com.censivn.C3DEngine.b.f.IRenderable> b();
     }
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a;
     private e b;
@@ -56,7 +56,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.A.c {
         this.b = eVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         super.onDrawStart();
         if (this.c == 1) {

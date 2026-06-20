@@ -11,7 +11,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class FolderLabelConfig {
     private static com.tsf.shell.manager.o.ButtonMetrics a;
 
-    public static com.censivn.C3DEngine.b.f.a.a a() {
+    public static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a() {
         if (a == null) {
             a = new com.tsf.shell.manager.o.ButtonMetrics(1.0f, 1.0f, 120, 120, 250, 42, 20);
             FolderContentList.a aVar = new FolderContentList.a();

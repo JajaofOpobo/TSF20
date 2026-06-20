@@ -2,12 +2,12 @@ package com.tsf.shell.f.e._b;
 
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class OverlayBackground extends j {
+public class OverlayBackground extends BaseRenderable {
     private TextureElement k;
     private float b = 120.0f;
     private float c = 0.0f;

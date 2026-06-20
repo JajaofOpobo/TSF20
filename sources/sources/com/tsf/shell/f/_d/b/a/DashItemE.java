@@ -3,19 +3,19 @@ package com.tsf.shell.f._d.b.a;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashItemE extends DashItemD {
     private static TextureElement c = new TextureElement(0, false);
     private static float d = 0.10471976f;
-    private k e;
+    private GridRenderable e;
 
     public DashItemE(int i, int i2, boolean z) {
         super(i, z);
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(30.0f);
-        this.e = new k(iA + 2, iA + 2, false);
+        this.e = new GridRenderable(iA + 2, iA + 2, false);
         this.e.setDefaultColor(new Color4(i2));
         this.e.textures().addElement(DashItemC);
         this.e.position().x = com.censivn.C3DEngine.b.b.A.a(74.0f);

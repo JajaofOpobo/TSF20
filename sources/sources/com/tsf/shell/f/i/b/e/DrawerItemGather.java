@@ -5,7 +5,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import java.util.ArrayList;
@@ -34,8 +34,8 @@ public class DrawerItemGather extends DrawerItemAction {
         this.t = i;
         int i2 = (int) (45.0f * com.censivn.C3DEngine.b.b.A.c * aE().A);
         if (a == null) {
-            a = new k(i2, i2, false) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.1
-                @Override // com.censivn.C3DEngine.b.f.i
+            a = new GridRenderable(i2, i2, false) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.1
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (c.b.id == 0) {
                         int i3 = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
@@ -71,9 +71,9 @@ public class DrawerItemGather extends DrawerItemAction {
     }
 
     @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase
-    public com.censivn.C3DEngine.b.f.a.a aF() {
-        com.censivn.C3DEngine.b.f.a.a aVar = new com.censivn.C3DEngine.b.f.a.a(2, 0, aE().V, aE().W) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.3
-            @Override // com.censivn.C3DEngine.b.f.j
+    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aF() {
+        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, 0, aE().V, aE().W) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.3
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 super.onDrawChildStart();
                 if (parent() != null && c.b != null && c.this.s != null && !c.this.s.isCustomResource()) {

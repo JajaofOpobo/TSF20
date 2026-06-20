@@ -4,15 +4,15 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DropIndicatorRenderer extends j {
+public class DropIndicatorRenderer extends BaseRenderable {
     a a;
     a b;
     a c;
-    private j f;
+    private BaseRenderable f;
     private TextureElement e = new TextureElement(0, false);
     private float g = 17.0f;
     public boolean d = false;
@@ -20,7 +20,7 @@ public class DropIndicatorRenderer extends j {
     public DropIndicatorRenderer() {
         float f = com.censivn.C3DEngine.b.b.A.b;
         scale().setAll(f, f, 1.0f);
-        this.f = new j();
+        this.f = new BaseRenderable();
         this.a = new DropIndicatorContainer();
         this.a.moveAllPointsPX(-2.3f, 0.0f, 0.0f);
         this.a.position().x = 2.3f;
@@ -37,7 +37,7 @@ public class DropIndicatorRenderer extends j {
         addChild(this.f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.e.id == 0) {
             a(-3355444);
@@ -159,7 +159,7 @@ public class DropIndicatorRenderer extends j {
         bitmapCreateBitmap.recycle();
     }
 
-    class a extends k {
+    class a extends GridRenderable {
         public a() {
             super(10.0f, 10.0f);
             c(10.0f);

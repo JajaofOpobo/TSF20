@@ -9,7 +9,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends BaseRenderable {
     private b a;
-    private k b;
+    private GridRenderable b;
     private int c;
     private TextureElement d;
 
@@ -17,7 +17,7 @@ public class a extends BaseRenderable {
         this.a = new b(f, i);
         addChild(this.a);
         com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.h);
-        this.b = new k(f2, f2, false);
+        this.b = new GridRenderable(f2, f2, false);
         this.d = new TextureElement(0, false);
         com.tsf.shell.manager.o.c.a(this.b, com.tsf.shell.manager.o.c.h);
         this.b.textures().addElement(this.d);
@@ -28,7 +28,7 @@ public class a extends BaseRenderable {
         return this.a.d();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void transferCanvas(float f, float f2, float f3, float f4) {
     }
 
@@ -39,7 +39,7 @@ public class a extends BaseRenderable {
         this.c = i;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.d != null && this.d.id == 0) {
             Bitmap bitmapA = x.a(this.c);

@@ -1,6 +1,6 @@
 package com.tsf.shell.f.f.b.a;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -65,11 +65,11 @@ public class FolderTransitionE extends FolderPageTransitionBase {
     }
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
         float fA = com.censivn.C3DEngine.b.b.A.a(50.0f);
         for (int i = 0; i < aVar.a(); i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.h(fA);
             dVar.f(0.0f);

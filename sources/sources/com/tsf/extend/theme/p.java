@@ -1,7 +1,7 @@
 package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class p extends com.tsf.extend.base.b.A<k> {
+public class p extends com.tsf.extend.base.b.PagedListModel<k> {
     private boolean a;
     private int b = 2;
 
@@ -13,7 +13,7 @@ public class p extends com.tsf.extend.base.b.A<k> {
         this.a = z;
     }
 
-    @Override // com.tsf.extend.base.b.A
+    @Override // com.tsf.extend.base.b.PagedListModel
     public boolean h() {
         return b();
     }

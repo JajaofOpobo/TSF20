@@ -1,21 +1,21 @@
 package com.tsf.shell.preference.a.a.a;
 
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingG extends PreferenceSettingBase {
-    private com.censivn.C3DEngine.b.f.j a;
+    private com.censivn.C3DEngine.b.f.BaseRenderable a;
     private float b;
     private float d;
     private float e;
     private ArrayList<com.tsf.shell.f._d.b.a.DashItemD> f;
-    private m g;
+    private LabelRenderable g;
 
     public PreferenceSettingG(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(400.0f));
-        this.a = new com.censivn.C3DEngine.b.f.j();
+        this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
         PreferenceSettingG().addChild(this.a);
         this.b = com.tsf.shell.manager.o.ButtonPresetManager.a.H;
         this.e = com.censivn.C3DEngine.b.b.A.a(40.0f);
@@ -23,7 +23,7 @@ public class PreferenceSettingG extends PreferenceSettingBase {
         this.a.position().x = ((-this.d) / 2.0f) + com.censivn.C3DEngine.b.b.A.a(40.0f);
         this.a.position().y = -com.censivn.C3DEngine.b.b.A.a(140.0f);
         this.f = new ArrayList<>();
-        this.g = new m();
+        this.g = new LabelRenderable();
         this.g.c(PreferenceSettingB.i.notic_mark_introduction);
         this.g.d(34);
         this.g.a(true);

@@ -3,9 +3,9 @@ package com.tsf.shell.f.f.a._a;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.n;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 import com.tsf.shell.f.f.a._a.DrawerSectionManager;
 import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 
@@ -18,12 +18,12 @@ public class DrawerItemContainer {
     public static int b = 0;
     public static int c = 1;
     private com.censivn.C3DEngine.b.b.d d;
-    private j e;
-    private com.censivn.C3DEngine.b.f.l f;
+    private BaseRenderable e;
+    private com.censivn.C3DEngine.b.f.ButtonRenderable f;
     private com.tsf.shell.f.b.ShellKeyEventHandler g;
     private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy> h;
     private ArrayList<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> i;
-    private n j;
+    private EmptyRenderable j;
     private f k;
     private e l;
     private d m;
@@ -114,8 +114,8 @@ public class DrawerItemContainer {
         this.i = new ArrayList<>();
         this.l = new DrawerVisualFrame(this);
         this.m = new DrawerDragEffectController(this);
-        this.e = new j() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.3
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new BaseRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.3
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public i getHittingTarget(float f, float f2, boolean z) {
                 i hittingTarget = c.this.l.getHittingTarget(f, f2, false);
                 if (hittingTarget == null) {
@@ -125,8 +125,8 @@ public class DrawerItemContainer {
                 return hittingTarget;
             }
         };
-        this.f = new com.censivn.C3DEngine.b.f.l() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.4
-            @Override // com.censivn.C3DEngine.b.f.l
+        this.f = new com.censivn.C3DEngine.b.f.ButtonRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.4
+            @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void d() {
                 super.d();
                 if (c.this.d != null) {
@@ -156,7 +156,7 @@ public class DrawerItemContainer {
                 c.this.e();
             }
         };
-        this.j = new n();
+        this.j = new EmptyRenderable();
         com.censivn.C3DEngine.b.d.a aVar = new com.censivn.C3DEngine.b.d.a(this.j) { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.6
             private boolean b = false;
 
@@ -202,7 +202,7 @@ public class DrawerItemContainer {
         c(cVar);
     }
 
-    public j c() {
+    public BaseRenderable c() {
         return this.e;
     }
 

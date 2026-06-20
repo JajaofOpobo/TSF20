@@ -85,7 +85,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return iVarRemove;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
     public i getChildAt(int i) {
         return this.mChildren.get(i);
     }
@@ -110,7 +110,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return this.mChildren.indexOf(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
     public int numChildren() {
         return this.mChildren.size();
     }
@@ -149,7 +149,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return jVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         for (int i = 0; i < numChildren(); i++) {
             getChildAt(i).destroy();
@@ -157,7 +157,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         super.destroy();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawQuietly() {
         if (visible()) {
             MatrixStack.glPushMatrix();
@@ -173,7 +173,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void superDispatchDraw() {
         if (visible()) {
             onDrawStart();
@@ -196,7 +196,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();

@@ -109,7 +109,7 @@ public class GridRenderable extends BaseRenderable {
         return this.b;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void draw() {
         if (this.e) {
             this.e = false;

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.c.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.c.b.a.IDrawerSettingsCallback;
 import com.tsf.shell.f.c.b.DrawerSettingsPanel;
 import java.util.ArrayList;

@@ -2,9 +2,9 @@ package com.tsf.shell.theme.inside.mix.menu.item.detail;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.d.a;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.censivn.C3DEngine.b.g.c;
 import com.censivn.C3DEngine.b.g.d;
 
@@ -15,24 +15,24 @@ import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeMoreInfoLayout extends j {
-    private m mAuthorView;
-    private m mCheckUpdate;
+public class ThemeMoreInfoLayout extends BaseRenderable {
+    private LabelRenderable mAuthorView;
+    private LabelRenderable mCheckUpdate;
     private DrawerShortcutItemBase mIcon = new DrawerItemButton(com.tsf.shell.manager.o.ButtonPresetManager.c);
-    private m mLinkView;
+    private LabelRenderable mLinkView;
     private ThemeListsManager.ThemeInfo mThemeInfo;
-    private m mTitleView;
-    private m mUninstall;
+    private LabelRenderable mTitleView;
+    private LabelRenderable mUninstall;
 
     public ThemeMoreInfoLayout() {
         this.mIcon.aL();
-        this.mTitleView = new m();
+        this.mTitleView = new LabelRenderable();
         this.mTitleView.d(45);
         this.mTitleView.g(700);
-        this.mAuthorView = new m();
+        this.mAuthorView = new LabelRenderable();
         this.mAuthorView.d(45);
         this.mAuthorView.g(700);
-        this.mLinkView = new m();
+        this.mLinkView = new LabelRenderable();
         this.mLinkView.e(-16728065);
         this.mLinkView.d(40);
         this.mLinkView.g(700);
@@ -45,7 +45,7 @@ public class ThemeMoreInfoLayout extends j {
                 }
             }
         });
-        this.mCheckUpdate = new m();
+        this.mCheckUpdate = new LabelRenderable();
         this.mCheckUpdate.d(45);
         this.mCheckUpdate.c(DrawerShortcutItemBase.i.text_check_for_update);
         this.mCheckUpdate.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.2
@@ -56,7 +56,7 @@ public class ThemeMoreInfoLayout extends j {
                 }
             }
         });
-        this.mUninstall = new m();
+        this.mUninstall = new LabelRenderable();
         this.mUninstall.d(45);
         this.mUninstall.c(DrawerShortcutItemBase.i.text_uninstall);
         this.mUninstall.setMouseEventListener(new a(this.mUninstall) { // from class: com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeMoreInfoLayout.3
@@ -122,7 +122,7 @@ public class ThemeMoreInfoLayout extends j {
         this.mLinkView.a();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void transferCanvas(float f, float f2, float f3, float f4) {
     }
 }

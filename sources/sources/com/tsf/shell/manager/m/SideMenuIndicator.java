@@ -3,29 +3,29 @@ package com.tsf.shell.manager.m;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
     private TextureElement b;
-    private k d;
-    private k e;
+    private GridRenderable d;
+    private GridRenderable e;
     private SideMenuManager f;
     private double h;
     private double g = 0.10471975511965977d;
     private boolean j = false;
     private com.censivn.C3DEngine.b.g._b.b i = new com.censivn.C3DEngine.b.g._b.b();
     private TextureElement a = new TextureElement(0, false);
-    private j c = new com.tsf.shell.f.e.e.ItemLayoutItem();
+    private BaseRenderable c = new com.tsf.shell.f.e.e.ItemLayoutItem();
 
     public SideMenuIndicator(b bVar) {
         boolean z = false;
         this.f = bVar;
-        this.d = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.d = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.a.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(d.this.a, b.d.scrollcontainer_arrow);
@@ -44,8 +44,8 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
         this.d.setMouseEventListener(aVar);
         com.tsf.shell.manager.app.StateManager.b(this);
         this.b = new TextureElement(0, false);
-        this.e = new k(com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.3
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(70.0f), com.censivn.C3DEngine.b.b.A.a(70.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.3
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (d.this.b.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(d.this.b, b.d.side_menu_add_button);

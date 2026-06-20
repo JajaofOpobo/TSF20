@@ -1,6 +1,6 @@
 package com.tsf.shell.f._d.e.a;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f._d.e.DashRendererBase;
@@ -26,7 +26,7 @@ public class DashEffectParams extends DashEffectData {
     }
 
     @Override // com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void a(final com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f._d.e.a.DashEffectParams.1
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {
@@ -43,7 +43,7 @@ public class DashEffectParams extends DashEffectData {
     }
 
     @Override // com.tsf.shell.f._d.e.a.DashEffectData, com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void b(final com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void b(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         d dVar = new d() { // from class: com.tsf.shell.f._d.e.a.DashEffectParams.2
             @Override // com.censivn.C3DEngine.b.g.d
             public void a(float f) {

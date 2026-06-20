@@ -6,8 +6,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.e.SelectionFrameLayoutItem;
 import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.f.i.b.e.DrawerItemButton;
@@ -24,7 +24,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
 
     public static float a = com.censivn.C3DEngine.b.b.A.a(300.0f);
     public static float b = com.censivn.C3DEngine.b.b.A.a(190.0f);
-    private j c;
+    private BaseRenderable c;
     private AddItemButton d;
     private DragSortContainer e;
     private SideMenuIndicator f;
@@ -140,9 +140,9 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             }
         };
         this.h = new h();
-        this.c = new j();
+        this.c = new BaseRenderable();
         this.e = new a(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.4
-            @Override // com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 super.a(iVar, true);
             }
@@ -253,7 +253,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         }
     }
 
-    public j k() {
+    public BaseRenderable k() {
         return this.c;
     }
 

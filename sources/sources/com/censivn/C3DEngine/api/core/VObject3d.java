@@ -16,7 +16,7 @@ import com.censivn.C3DEngine.common.shader.Shader;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VObject3d implements VTweenTarget {
     public VObject3d mThis;
-    public i vTarget;
+    public IRenderable vTarget;
 
     @Override // com.censivn.C3DEngine.api.tween.TweenTarget.VTweenTarget
     public Object getVirtualTarget() {
@@ -155,7 +155,7 @@ public class VObject3d implements VTweenTarget {
 
     public VObject3dContainer parent() {
         if (this.vTarget.parent() instanceof j) {
-            return (VObject3dContainer) ((i) this.vTarget.parent()).getVirtualObject();
+            return (VObject3dContainer) ((IRenderable) this.vTarget.parent()).getVirtualObject();
         }
         return null;
     }

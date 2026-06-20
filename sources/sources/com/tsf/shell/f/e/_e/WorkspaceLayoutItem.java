@@ -1,9 +1,9 @@
 package com.tsf.shell.f.e._e;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceLayoutItem extends j implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
+public class WorkspaceLayoutItem extends BaseRenderable implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
     private boolean a = true;
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem

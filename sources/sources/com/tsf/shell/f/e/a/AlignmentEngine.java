@@ -1,9 +1,9 @@
 package com.tsf.shell.f.e.a;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.h.b.g;
 import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.manager.app.LauncherAppInfo;
@@ -31,8 +31,8 @@ public class AlignmentEngine {
         if (!d) {
             f = new ObserverManager();
             g = new AlignmentResizeHandler();
-            b = new j() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.1
-                @Override // com.censivn.C3DEngine.b.f.i
+            b = new BaseRenderable() { // from class: com.tsf.shell.f.e.a.AlignmentEngine.1
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onKillFocus() {
                     c.b();
                 }
@@ -45,7 +45,7 @@ public class AlignmentEngine {
                 }
             };
             AlignmentBackHandler.alpha(0.0f);
-            c = new k(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
+            c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
             AlignmentBackHandler.addChild(c);
             e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e.a.AlignmentEngine.3
                 @Override // com.censivn.C3DEngine.b.h.b.g
@@ -53,7 +53,7 @@ public class AlignmentEngine {
                     i iVarB;
                     if (iVar == null) {
                         iVarB = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
-                        ((com.censivn.C3DEngine.b.f.a.a) iVarB).a(true);
+                        ((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) iVarB).a(true);
                         iVarB.calAABB();
                     } else {
                         iVarB = iVar;

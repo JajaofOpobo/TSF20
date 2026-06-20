@@ -5,7 +5,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a extends b {
-    private m mLabel = new m();
+    private LabelRenderable mLabel = new LabelRenderable();
 
     public a() {
         this.mLabel.b(1);
@@ -30,7 +30,7 @@ public class a extends b {
         this.mLabel.b();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         this.mLabel.position().x = this.canvasMinX;
         if (this.canvasMinX + this.mLabel.maxX() > this.canvasMaxX) {

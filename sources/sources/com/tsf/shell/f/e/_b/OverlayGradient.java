@@ -1,14 +1,14 @@
 package com.tsf.shell.f.e._b;
 
 import android.opengl.GLES20;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class OverlayGradient extends j {
+public class OverlayGradient extends BaseRenderable {
     protected FloatBuffer e;
     protected FloatBuffer f;
     public int a = -1;
@@ -38,7 +38,7 @@ public class OverlayGradient extends j {
         this.e.position(0);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (this.c == 1.0f || this.c == 0.0f) {
             setCustomShader(ShaderManager.SHADER_COLOR_TEXTURE);
@@ -48,11 +48,11 @@ public class OverlayGradient extends j {
         super.dispatchDraw();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawMVPMatrix() {
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawElement() {
         if (this.c == 1.0f || this.c == 0.0f) {
             ShaderManager.CURRENT_SHADER.glMVPMatrix();

@@ -3,12 +3,12 @@ package com.tsf.shell.f.f;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageRenderBuffer extends com.censivn.C3DEngine.b.f.h {
+public class PageRenderBuffer extends com.censivn.C3DEngine.b.f.BaseColoredRectRenderable {
     public PageRenderBuffer() {
         super(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();

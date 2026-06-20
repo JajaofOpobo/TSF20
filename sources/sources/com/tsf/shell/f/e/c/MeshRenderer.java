@@ -1,8 +1,8 @@
 package com.tsf.shell.f.e.c;
 
 import android.opengl.GLES20;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
@@ -12,7 +12,7 @@ import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class MeshRenderer extends j {
+public class MeshRenderer extends BaseRenderable {
     private FloatBuffer a;
     float[] b;
     a[] c;
@@ -960,16 +960,16 @@ public class MeshRenderer extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         super.dispatchDraw();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawElement() {
         if (visible()) {
             if (this.w == 2) {

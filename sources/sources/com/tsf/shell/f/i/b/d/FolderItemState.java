@@ -7,7 +7,7 @@ public class FolderItemState {
     protected void a(b bVar) {
         if (com.tsf.shell.manager.app.FeatureConfig.a()) {
             ArrayList arrayList = new ArrayList();
-            for (com.censivn.C3DEngine.b.f.i iVar : bVar.aG()) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar : bVar.aG()) {
                 if (iVar instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
                     com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) iVar;
                     if (gVar.bd() != null) {

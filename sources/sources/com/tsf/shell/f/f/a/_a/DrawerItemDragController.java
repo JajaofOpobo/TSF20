@@ -2,12 +2,12 @@ package com.tsf.shell.f.f.a._a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.B {
+public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.ObjectPoolRenderable {
     private float a;
     private float b;
     private float c;
@@ -48,7 +48,7 @@ public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.B {
         this.c = f2;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onMeasure(int i, int i2) {
         this.a = i - this.f;
         maxX(this.a);
@@ -84,7 +84,7 @@ public class DrawerItemDragController extends com.censivn.C3DEngine.b.f.B {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.B
+    @Override // com.censivn.C3DEngine.b.f.ObjectPoolRenderable
     public void a(Number3d number3d, int i) {
         b(number3d, i);
     }

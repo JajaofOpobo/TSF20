@@ -19,7 +19,7 @@ public class a extends GridRenderable {
         textures().addElement(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.a.id == 0) {
             Bitmap bitmapA = x.a(b.d.res_loading, com.tsf.shell.manager.g.a.k, com.tsf.shell.manager.g.a.k);

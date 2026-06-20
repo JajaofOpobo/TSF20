@@ -5,7 +5,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.e.a;
 import com.censivn.C3DEngine.b.e.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -17,8 +17,8 @@ public class PreferenceItemH extends i {
     private boolean e;
     private float h = 0.5f;
     private TextureElement f = new TextureElement(0, false);
-    private k g = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.1
-        @Override // com.censivn.C3DEngine.b.f.i
+    private GridRenderable g = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.1
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (h.this.f.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(h.this.f, PreferenceItemB.d.scrollcontainer_arrow);
@@ -144,7 +144,7 @@ public class PreferenceItemH extends i {
     }
 
     class A extends com.censivn.C3DEngine.b.e.g {
-        private k b;
+        private GridRenderable b;
         private TextureElement d;
         private int e = 0;
 
@@ -186,7 +186,7 @@ public class PreferenceItemH extends i {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             super.onDrawStart();
             if (this.d.id == 0) {

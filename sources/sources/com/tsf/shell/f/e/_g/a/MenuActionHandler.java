@@ -8,8 +8,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.Iterator;
 public class MenuActionHandler extends MenuItemBase {
     private static com.tsf.shell.manager.o._a.TextConfigV2 textCreater;
     private ArrayList<C0095a> functions;
-    private j functionsContainer;
+    private BaseRenderable functionsContainer;
     private boolean initExtraItem = false;
 
     public boolean hasFunctions() {
@@ -47,7 +47,7 @@ public class MenuActionHandler extends MenuItemBase {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getMenuContainer() {
+    public BaseRenderable getMenuContainer() {
         return this.functionsContainer;
     }
 
@@ -84,7 +84,7 @@ public class MenuActionHandler extends MenuItemBase {
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.e._g.a.MenuActionHandler$a, reason: collision with other inner class name */
-    public static class C0095a extends k {
+    public static class C0095a extends GridRenderable {
         private TextureElement a;
         private boolean d;
         private int e;

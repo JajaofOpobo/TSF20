@@ -1,6 +1,6 @@
 package com.tsf.shell.f.c;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.c.a.DrawerContentPanel;
 import com.tsf.shell.f.c.b.DrawerSettingsPanel;
 import com.tsf.shell.f.i.PageItem;

@@ -16,10 +16,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements TransitionConfig.a, MultiSelectController.InterfaceC0113a {
+public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable implements TransitionConfig.a, MultiSelectController.InterfaceC0113a {
     public static com.tsf.shell.f.a.a.GlTextureBinding f;
-    public static com.censivn.C3DEngine.b.f.i i;
-    private static com.censivn.C3DEngine.b.f.k r;
+    public static com.censivn.C3DEngine.b.f.IRenderable i;
+    private static com.censivn.C3DEngine.b.f.GridRenderable r;
     private int MultiSelectController;
     private j.a I;
     private com.tsf.shell.f._d.e.a.DashEffectData J;
@@ -29,9 +29,9 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     protected com.tsf.shell.f.e.f.EditModeNode c;
     protected com.tsf.shell.f.i.MultiSelectController h;
     protected l k;
-    private com.censivn.C3DEngine.b.f.k q;
-    private com.censivn.C3DEngine.b.f.b.a s;
-    private com.censivn.C3DEngine.b.f.b.a t;
+    private com.censivn.C3DEngine.b.f.GridRenderable q;
+    private com.censivn.C3DEngine.b.f.b.NinePatchRenderable s;
+    private com.censivn.C3DEngine.b.f.b.NinePatchRenderable t;
     private com.censivn.C3DEngine.b.d.a v;
     private com.censivn.C3DEngine.b.d.a w;
     private g x;
@@ -93,7 +93,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.G = false;
     }
 
-    public j.a a(com.tsf.shell.f._d.e.a.DashEffectData bVar, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+    public j.a a(com.tsf.shell.f._d.e.a.DashEffectData bVar, com.censivn.C3DEngine.b.f.IRenderable iVar, boolean z) {
         this.H = true;
         mouseEnabled(false);
         i = iVar;
@@ -124,7 +124,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.K = true;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (this.K) {
             this.K = false;
@@ -147,7 +147,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
             if (renderChildren()) {
                 int iNumChildren = numChildren();
                 for (int i2 = 0; i2 < iNumChildren; i2++) {
-                    com.censivn.C3DEngine.b.f.i childAt = getChildAt(i2);
+                    com.censivn.C3DEngine.b.f.IRenderable childAt = getChildAt(i2);
                     onDrawChildStart(childAt);
                     childAt.dispatchDraw();
                     onDrawChildEnd(childAt);
@@ -205,7 +205,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         return this.h;
     }
 
-    public com.censivn.C3DEngine.b.f.i n() {
+    public com.censivn.C3DEngine.b.f.IRenderable n() {
         return this.s;
     }
 
@@ -219,7 +219,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
 
     public void a(boolean z) {
         if (z) {
-            com.censivn.C3DEngine.b.f.k kVarB = com.tsf.shell.manager.app.StateHub.i().b();
+            com.censivn.C3DEngine.b.f.GridRenderable kVarB = com.tsf.shell.manager.app.StateHub.i().b();
             kVarB.removeFromParent();
             addChild(kVarB);
         } else {
@@ -268,7 +268,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
 
     private void aj() {
         this.c = new com.tsf.shell.f.e.f.EditModeNode() { // from class: com.tsf.shell.f.f.WorkspacePage.1
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (g.this.g != 0.0f && g.this.k != null) {
                     g.this.u();
@@ -284,8 +284,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
-            public void addChild(com.censivn.C3DEngine.b.f.i iVar) {
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
+            public void addChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 super.addChild(iVar);
                 g.this.h.a(iVar);
             }
@@ -300,11 +300,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     }
 
     @Override // com.tsf.shell.f.i.MultiSelectController.InterfaceC0113a
-    public ArrayList<com.censivn.C3DEngine.b.f.i> b() {
+    public ArrayList<com.censivn.C3DEngine.b.f.IRenderable> b() {
         return this.c.children();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         com.tsf.shell.manager.app.ObserverManager.b(this);
         l();
@@ -321,7 +321,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     }
 
     public void v() {
-        for (com.censivn.C3DEngine.b.f.i iVar : (ArrayList) this.c.children().clone()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : (ArrayList) this.c.children().clone()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.PageItem) iVar);
             }
@@ -334,7 +334,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.q.a(com.censivn.C3DEngine.b.b.A.F);
         this.q.b(com.censivn.C3DEngine.b.b.A.G);
         this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
-        for (com.censivn.C3DEngine.b.f.i iVar : this.c.children()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
                 bVar.a(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
@@ -366,8 +366,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         if (!this.F) {
             this.F = true;
             aj();
-            this.s = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(50, 78, 50, 78, 128.0f, 128.0f));
-            this.t = new com.censivn.C3DEngine.b.f.b.a(n.a, n.b, new com.censivn.C3DEngine.b.f.b.b(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
+            this.s = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
+            this.t = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
             this.t.b(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G);
             this.t.doubleSidedEnabled(true);
             this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.A.b;
@@ -394,12 +394,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
                 bitmap4.recycle();
             }
             if (r == null) {
-                r = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
+                r = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
                 r.textures().addElement(p);
                 r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.A.c);
             }
             this.s.textures().addElement(m);
-            this.q = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
+            this.q = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
             this.q.uvs().set(0, 1.0f, 0.0f);
             this.q.uvs().set(1, 0.0f, 0.0f);
             this.q.uvs().set(2, 1.0f, 1.0f);
@@ -456,13 +456,13 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.t.alpha(f2);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void killFocus() {
         F();
         com.tsf.shell.manager.app.StateHub.r().b(this, this.L);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void setFocus() {
         E();
         com.tsf.shell.manager.app.StateHub.r().a(this, this.L);
@@ -532,7 +532,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.q.scale().y = 0.28f;
     }
 
-    public com.censivn.C3DEngine.b.f.i J() {
+    public com.censivn.C3DEngine.b.f.IRenderable J() {
         return this.q;
     }
 
@@ -622,7 +622,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         this.D = false;
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (iVar instanceof com.tsf.shell.f.i.PageItem) {
             com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
             bVar.a(m());
@@ -635,7 +635,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         N();
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar, int i2) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
         if (iVar instanceof com.tsf.shell.f.i.PageItem) {
             com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
             bVar.a(m());
@@ -647,7 +647,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         N();
     }
 
-    public void b(com.censivn.C3DEngine.b.f.i iVar) {
+    public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.c.children().contains(iVar)) {
             this.c.removeChild(iVar);
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
@@ -657,13 +657,13 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         }
     }
 
-    public boolean c(com.censivn.C3DEngine.b.f.i iVar) {
+    public boolean c(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         return this.c.children().contains(iVar);
     }
 
     public int Q() {
         int i2 = 0;
-        Iterator<com.censivn.C3DEngine.b.f.i> it = this.c.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.c.children().iterator();
         while (true) {
             int i3 = i2;
             if (it.hasNext()) {
@@ -674,15 +674,15 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         }
     }
 
-    public ArrayList<com.censivn.C3DEngine.b.f.i> R() {
+    public ArrayList<com.censivn.C3DEngine.b.f.IRenderable> R() {
         return this.c.children();
     }
 
-    public int d(com.censivn.C3DEngine.b.f.i iVar) {
+    public int d(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         return this.c.getChildIndexOf(iVar);
     }
 
-    public com.censivn.C3DEngine.b.f.j S() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable S() {
         return this.c;
     }
 
@@ -790,10 +790,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
         return this.E;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (com.tsf.shell.manager.app.v.ObjectHelper.b.a()) {
-            for (com.censivn.C3DEngine.b.f.i iVar : R()) {
+            for (com.censivn.C3DEngine.b.f.IRenderable iVar : R()) {
                 if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                     com.tsf.shell.manager.app.v.ObjectHelper.b.a((com.tsf.shell.f.i.PageItem) iVar);
                 }
@@ -802,7 +802,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.j implements Transi
     }
 
     public void ae() {
-        for (com.censivn.C3DEngine.b.f.i iVar : R()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : R()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 ((com.tsf.shell.f.i.PageItem) iVar).y();
             }

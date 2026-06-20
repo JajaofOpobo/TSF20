@@ -15,7 +15,7 @@ import android.graphics.drawable.Drawable;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.app.StateHub;
@@ -212,7 +212,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         }
     }
 
-    public j g() {
+    public BaseRenderable g() {
         return this.f;
     }
 
@@ -340,7 +340,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
         b(this.l, true);
     }
 
-    class b extends com.censivn.C3DEngine.b.f.k {
+    class b extends com.censivn.C3DEngine.b.f.GridRenderable {
         private TextureElement d;
         private Bitmap e;
         private float f;
@@ -353,13 +353,13 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             return this.d;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void alpha(float f) {
             this.f = 255.0f - f;
             this.g.set(255, (int) this.f, (int) this.f, (int) this.f);
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public float alpha() {
             return 255.0f - this.f;
         }
@@ -394,7 +394,7 @@ public class ShellWallpaperManager extends BroadcastReceiver {
             com.tsf.shell.manager.b.ConfigManager.k(i);
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (ShellWallpaperManager.this.c) {
                 b();

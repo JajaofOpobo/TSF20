@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class d extends BaseRenderable {
-    private i b;
+    private IRenderable b;
     private float e;
     private float g;
     private float h;
@@ -17,7 +17,7 @@ public class d extends BaseRenderable {
     private float d = 0.0f;
     private float f = 0.0f;
 
-    public d(i iVar) {
+    public d(IRenderable iVar) {
         a(iVar);
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.b.d.1
             float a;
@@ -29,7 +29,7 @@ public class d extends BaseRenderable {
             public void e(MotionEvent motionEvent) {
                 d.this.a = 0.3f;
                 float[] fArrA = x.a(motionEvent);
-                i hittingTarget = d.this.b.getHittingTarget(fArrA[0], fArrA[1], false);
+                IRenderable hittingTarget = d.this.b.getHittingTarget(fArrA[0], fArrA[1], false);
                 if (hittingTarget != null && hittingTarget.getMouseEventListener() != null) {
                     this.d = hittingTarget.getMouseEventListener();
                     this.d.e(motionEvent);
@@ -146,7 +146,7 @@ public class d extends BaseRenderable {
         }
     }
 
-    private void a(i iVar) {
+    private void a(IRenderable iVar) {
         if (this.b != null) {
             this.b.removeFromParent();
         }

@@ -73,8 +73,8 @@ public class DrawerAppMenu extends DrawerPageItemBase {
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.b
-            public com.censivn.C3DEngine.b.f.i a(int i, com.censivn.C3DEngine.b.f.i iVar) {
-                com.censivn.C3DEngine.b.f.i hVar;
+            public com.censivn.C3DEngine.b.f.IRenderable a(int i, com.censivn.C3DEngine.b.f.IRenderable iVar) {
+                com.censivn.C3DEngine.b.f.IRenderable hVar;
                 if (iVar == null) {
                     hVar = new com.tsf.shell.f.g.a.GestureMenuRenderer();
                     hVar.calAABB();
@@ -95,7 +95,7 @@ public class DrawerAppMenu extends DrawerPageItemBase {
         });
         this.g.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.2
             @Override // com.censivn.C3DEngine.b.h.b.f
-            public void a(com.censivn.C3DEngine.b.f.i iVar, int i, MotionEvent motionEvent) {
+            public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 if (!com.tsf.shell.manager.app.StateHub.t().an().c()) {
                     d.this.a.d(DrawerPageItemBase);

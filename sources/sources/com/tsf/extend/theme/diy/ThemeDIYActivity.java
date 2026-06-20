@@ -1405,12 +1405,12 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    class h implements com.tsf.extend.theme.diy.b.a<com.tsf.extend.base.b.A> {
+    class h implements com.tsf.extend.theme.diy.b.a<com.tsf.extend.base.b.PagedListModel> {
         public h() {
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(final com.tsf.extend.base.b.A aVar) {
+        public void a(final com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar != null) {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.h.1
                     @Override // java.lang.Runnable
@@ -1442,7 +1442,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(int i, com.tsf.extend.base.b.A aVar) {
+        public void a(int i, com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar != null) {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.h.2
                     @Override // java.lang.Runnable

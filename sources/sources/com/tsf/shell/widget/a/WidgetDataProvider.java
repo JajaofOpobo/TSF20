@@ -8,12 +8,12 @@ public class WidgetDataProvider {
     private float d;
     private float e;
     private float f;
-    private com.censivn.C3DEngine.b.f.a.b g;
-    private com.censivn.C3DEngine.b.f.a.b h;
-    private com.censivn.C3DEngine.b.f.a.b i;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData g;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData h;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData i;
     private long j = -1;
 
-    public WidgetDataProvider(com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2) {
+    public WidgetDataProvider(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar2) {
         this.a = 0.0f;
         this.b = 0.0f;
         this.c = 0.0f;
@@ -33,7 +33,7 @@ public class WidgetDataProvider {
         this.d = f3;
     }
 
-    public void a(com.censivn.C3DEngine.b.f.a.b bVar) {
+    public void a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar) {
         this.i = bVar;
         this.i.i().x = this.a;
         this.i.i().y = this.b;

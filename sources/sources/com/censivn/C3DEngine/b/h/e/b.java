@@ -15,10 +15,10 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends BaseRenderable {
     public static float a = 0.15f;
-    private k A;
+    private GridRenderable A;
     private com.censivn.C3DEngine.b.d.a B;
-    private j b;
-    private j c;
+    private BaseRenderable b;
+    private BaseRenderable c;
     private com.tsf.shell.f.a.b.b d;
     private float e;
     private float f;
@@ -34,8 +34,8 @@ public class b extends BaseRenderable {
     private int p;
     private int q;
     private float r;
-    private k s;
-    private k t;
+    private GridRenderable s;
+    private GridRenderable t;
     private TextureElement u;
     private ArrayList<a> v;
     private float w;
@@ -70,12 +70,12 @@ public class b extends BaseRenderable {
         this.q = 0;
         this.e = f;
         this.f = f2;
-        this.A = new k(100.0f, 100.0f, false);
+        this.A = new GridRenderable(100.0f, 100.0f, false);
         this.g = f4;
         this.h = f5;
         this.i = f3;
-        this.c = new j();
-        this.b = new j() { // from class: com.censivn.C3DEngine.b.h.e.b.1
+        this.c = new BaseRenderable();
+        this.b = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.e.b.1
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
@@ -118,7 +118,7 @@ public class b extends BaseRenderable {
                 b.this.a(iVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar2) {
                 iVar2.setAnimationObjectState(true);
                 b.this.o();
@@ -129,7 +129,7 @@ public class b extends BaseRenderable {
                 b.this.a(iVar2);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public boolean removeChild(i iVar2) {
                 int childIndexOf = b.this.b.getChildIndexOf(iVar2);
                 if (childIndexOf != -1) {
@@ -150,7 +150,7 @@ public class b extends BaseRenderable {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar == null ? this : iVar) { // from class: com.censivn.C3DEngine.b.h.e.b.2
             private float b;
             private com.censivn.C3DEngine.b.d.a g;
-            private i h;
+            private IRenderable h;
             private boolean d = false;
             private boolean e = false;
             private boolean f = false;
@@ -343,10 +343,10 @@ public class b extends BaseRenderable {
         });
         this.d = new com.tsf.shell.f.a.b.b(this.e - (2.0f * f4), this.f, this.b);
         this.u = x.b(b.d.scrollcontainer_arrow);
-        this.s = new k(com.censivn.C3DEngine.b.b.A.c * 24.0f, com.censivn.C3DEngine.b.b.A.c * 45.0f, false);
+        this.s = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 24.0f, com.censivn.C3DEngine.b.b.A.c * 45.0f, false);
         this.s.rotation().z = 180.0f;
         com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
-        this.t = new k(com.censivn.C3DEngine.b.b.A.c * 24.0f, com.censivn.C3DEngine.b.b.A.c * 45.0f, false);
+        this.t = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 24.0f, com.censivn.C3DEngine.b.b.A.c * 45.0f, false);
         com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
         this.s.textures().addElement(this.u);
         this.t.textures().addElement(this.u);
@@ -357,11 +357,11 @@ public class b extends BaseRenderable {
         this.B = aVar;
     }
 
-    public i a(MotionEvent motionEvent) {
+    public IRenderable a(MotionEvent motionEvent) {
         return this.b.getHittingObjectTarget(motionEvent, true);
     }
 
-    public j c() {
+    public BaseRenderable c() {
         return this.b;
     }
 
@@ -459,7 +459,7 @@ public class b extends BaseRenderable {
         }
     }
 
-    public j l() {
+    public BaseRenderable l() {
         return this.b;
     }
 
@@ -502,7 +502,7 @@ public class b extends BaseRenderable {
         b(this.t);
     }
 
-    private void a(k kVar) {
+    private void a(GridRenderable kVar) {
         if (kVar.parent() == null) {
             this.c.addChild(kVar);
         }
@@ -512,7 +512,7 @@ public class b extends BaseRenderable {
         com.censivn.C3DEngine.b.g.c.a(kVar, 250, dVar);
     }
 
-    private void b(final k kVar) {
+    private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
             d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.b.3
                 @Override // com.censivn.C3DEngine.b.g.d
@@ -608,7 +608,7 @@ public class b extends BaseRenderable {
         com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         this.b.addChild(iVar);
     }
@@ -627,7 +627,7 @@ public class b extends BaseRenderable {
         com.censivn.C3DEngine.b.g.c.a(iVar, 500, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         return this.b.removeChild(iVar);
     }

@@ -3,19 +3,19 @@ package com.tsf.shell.widget.a.a;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import com.censivn.C3DEngine.b.e.f;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetVisualNode extends f {
-    private j a;
-    private j b;
+    private BaseRenderable a;
+    private BaseRenderable b;
 
     public WidgetVisualNode(Context context, j jVar) {
         this.b = jVar;
         d((int) com.censivn.C3DEngine.b.b.A.a(300.0f));
         a(0);
-        this.a = new j() { // from class: com.tsf.shell.widget.a.a.WidgetVisualNode.1
-            @Override // com.censivn.C3DEngine.b.f.j
+        this.a = new BaseRenderable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualNode.1
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 a.this.b.dispatchDraw();
             }

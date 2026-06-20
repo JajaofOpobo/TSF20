@@ -47,7 +47,7 @@ public class VTweenParam {
     public Object getTarget() {
         Object objD = this.vTarget.d();
         if (objD instanceof i) {
-            return ((i) objD).getVirtualObject();
+            return ((IRenderable) objD).getVirtualObject();
         }
         if (objD instanceof b) {
             return ((b) objD).a();
@@ -72,7 +72,7 @@ public class VTweenParam {
 
     public void setEase(int i) {
         com.censivn.C3DEngine.b.g.b bVar = null;
-        switch (i) {
+        switch (IRenderable) {
             case 100:
                 bVar = a.b;
                 break;

@@ -3,7 +3,7 @@ package com.tsf.shell.f.e;
 import com.censivn.C3DEngine.api.element.Color4;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SelectionFrame extends com.censivn.C3DEngine.b.f.j {
+public class SelectionFrame extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private int b = 0;
     private int c = 0;
     private com.tsf.shell.f.a.b.ShaderSlotElement a = new com.tsf.shell.f.a.b.ShaderSlotElement(0.0f, 0.0f, this);
@@ -12,12 +12,12 @@ public class SelectionFrame extends com.censivn.C3DEngine.b.f.j {
         this.a.setDefaultColor(new Color4(255, 0, 0, 100));
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         com.tsf.shell.manager.app.ActionHandler.a(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         com.tsf.shell.manager.app.ActionHandler.a();
     }

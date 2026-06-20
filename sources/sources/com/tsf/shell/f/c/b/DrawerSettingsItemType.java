@@ -4,8 +4,8 @@ import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.c.b.a.IDrawerSettingsCallback;
 import com.tsf.shell.ShellGraphicsContext;
 import java.util.ArrayList;
@@ -38,8 +38,8 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         this.n = 0;
         this.a = eVar;
         this.n = i;
-        this.d = new k(f3, f3) { // from class: com.tsf.shell.f.c.b.a.2
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.d = new GridRenderable(f3, f3) { // from class: com.tsf.shell.f.c.b.a.2
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void visible(Boolean bool) {
                 super.visible(false);
             }
@@ -66,7 +66,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         return this.a.j();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         this.e.add(j());
         super.addChild(iVar);
@@ -74,7 +74,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         DrawerSettingsItemType();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         this.e.add(j());
         super.addChildAt(iVar, i);
@@ -82,7 +82,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         DrawerSettingsItemType();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         DrawerSettingsItemType();
@@ -116,7 +116,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         this.f.add(bVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (!this.g) {
             this.g = true;
@@ -192,7 +192,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             r2 = 0
             r5 = -1
             r0 = r7
-            com.censivn.C3DEngine.b.f.i r0 = (com.censivn.C3DEngine.b.f.i) r0
+            com.censivn.C3DEngine.b.f.IRenderable r0 = (com.censivn.C3DEngine.b.f.IRenderable) r0
             com.tsf.shell.f.c.b.a.IDrawerSettingsCallback$b r3 = r6.b(r0)
             boolean r0 = r7 instanceof com.tsf.shell.f.i.ShortcutItem
             if (r0 == 0) goto L22
@@ -229,7 +229,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             if (r0 != r5) goto L51
             int r0 = r3.a
             r6.m = r0
-            com.censivn.C3DEngine.b.f.i r0 = r6.d
+            com.censivn.C3DEngine.b.f.IRenderable r0 = r6.d
             int r1 = r6.m
             r6.addChildAt(r0, r1)
         L51:
@@ -238,9 +238,9 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             if (r0 == r1) goto L6a
             int r0 = r3.a
             r6.m = r0
-            com.censivn.C3DEngine.b.f.i r0 = r6.d
+            com.censivn.C3DEngine.b.f.IRenderable r0 = r6.d
             r0.removeFromParent()
-            com.censivn.C3DEngine.b.f.i r0 = r6.d
+            com.censivn.C3DEngine.b.f.IRenderable r0 = r6.d
             int r1 = r3.a
             r6.addChildAt(r0, r1)
             r6.g()

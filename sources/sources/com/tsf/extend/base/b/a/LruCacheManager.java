@@ -5,7 +5,7 @@ import android.util.LruCache;
 import java.io.Serializable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class LruCacheManager {
     private static b a = null;
     private LruCache<String, Object> b;
 
@@ -18,7 +18,7 @@ public class b {
 
     private b() {
         this.b = null;
-        this.b = new LruCache<String, Object>(1048576) { // from class: com.tsf.extend.base.b.a.b.1
+        this.b = new LruCache<String, Object>(1048576) { // from class: com.tsf.extend.base.b.a.LruCacheManager.1
             @Override // android.util.LruCache
             protected int sizeOf(String str, Object obj) {
                 if (obj instanceof Bitmap) {

@@ -26,7 +26,7 @@ public class WidgetTouchHandler extends com.censivn.C3DEngine.b.d.a {
     private boolean p;
     private Runnable q;
 
-    public WidgetTouchHandler(com.censivn.C3DEngine.b.f.i iVar, b bVar) {
+    public WidgetTouchHandler(com.censivn.C3DEngine.b.f.IRenderable iVar, b bVar) {
         super(iVar);
         this.d = false;
         this.k = false;

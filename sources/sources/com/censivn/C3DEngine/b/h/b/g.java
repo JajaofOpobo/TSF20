@@ -21,7 +21,7 @@ public class g extends BaseRenderable {
     private boolean l = false;
     private boolean m = false;
     private ArrayList<i> b = new ArrayList<>();
-    private j c = new j();
+    private BaseRenderable c = new BaseRenderable();
 
     public g(float f, float f2, float f3, float f4, float f5) {
         this.d = 0.0f;
@@ -35,7 +35,7 @@ public class g extends BaseRenderable {
             boolean a = true;
             float b = 0.0f;
             boolean d = false;
-            private i f;
+            private IRenderable f;
 
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f6, float f7) {
@@ -309,7 +309,7 @@ public class g extends BaseRenderable {
         }
     }
 
-    private i j() {
+    private IRenderable j() {
         int size = this.b.size();
         if (size == 0) {
             return null;
@@ -353,7 +353,7 @@ public class g extends BaseRenderable {
         return 0;
     }
 
-    public i a(int i, i iVar) {
+    public IRenderable a(int i, i iVar) {
         return null;
     }
 }

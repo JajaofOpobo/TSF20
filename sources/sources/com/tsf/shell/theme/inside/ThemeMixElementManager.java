@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.b.b.A;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.plugin.theme.ThemeElementPicker;
 import com.tsf.shell.theme.inside.ThemeConfigManager;
@@ -140,7 +140,7 @@ public abstract class ThemeMixElementManager {
         this.isEnable = false;
     }
 
-    public j getPreview() {
+    public BaseRenderable getPreview() {
         return this.mPreview;
     }
 

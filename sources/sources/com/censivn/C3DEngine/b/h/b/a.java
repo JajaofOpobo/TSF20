@@ -94,7 +94,7 @@ class a extends com.censivn.C3DEngine.b.d.a {
                     this.b.a(i, cVar);
                     cVar.A().g();
                 }
-                com.tsf.shell.manager.A.j.a((i) this.e, true);
+                com.tsf.shell.manager.A.j.a((IRenderable) this.e, true);
                 a();
                 com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
                 dVar.l(1.2f);

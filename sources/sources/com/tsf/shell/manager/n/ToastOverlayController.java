@@ -5,9 +5,9 @@ import android.graphics.Color;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.h;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseColoredRectRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
@@ -18,9 +18,9 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ToastOverlayController implements e.a {
-    private j a;
-    private j b;
-    private h c;
+    private BaseRenderable a;
+    private BaseRenderable b;
+    private BaseColoredRectRenderable c;
     private boolean d;
     private float e;
     private float g;
@@ -101,10 +101,10 @@ public class ToastOverlayController implements e.a {
 
     public void a(j jVar) {
         this.a = jVar;
-        this.b = new j();
+        this.b = new BaseRenderable();
         this.e = 100.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.c = new h(com.censivn.C3DEngine.b.b.A.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.ToastOverlayController.1
-            @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
+        this.c = new BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, 1.2f * this.e, false, true) { // from class: com.tsf.shell.manager.n.ToastOverlayController.1
+            @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 if (com.tsf.shell.manager.n.ToastOverlayController.this.c.getAnimationObjectState() || com.tsf.shell.manager.n.ToastOverlayController.this.r) {
                     com.tsf.shell.manager.n.ToastOverlayController.this.c();
@@ -273,14 +273,14 @@ public class ToastOverlayController implements e.a {
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.n.ToastOverlayController$a, reason: collision with other inner class name */
-    public class C0133a extends k {
+    public class C0133a extends GridRenderable {
         public Runnable a;
         private TextureElement e;
         private String f;
         private boolean g;
         private int h;
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.g) {
                 this.g = false;

@@ -1,9 +1,9 @@
 package com.tsf.shell.f.g.a;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -13,12 +13,12 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
     public b a;
     private com.censivn.C3DEngine.b.h.b.h b;
     private GestureMenuEffectItem.a c;
-    private m d;
+    private LabelRenderable d;
 
     public GestureMenuMarkItem(b bVar) {
         super(GestureMenuOverlay.i.text_mark);
         this.a = bVar;
-        this.d = new m();
+        this.d = new LabelRenderable();
         this.d.c(GestureMenuOverlay.i.notic_mark_introduction);
         this.d.d(34);
         this.d.a(true);
@@ -64,7 +64,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.b;
     }
 

@@ -19,7 +19,7 @@ import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class BitmapCacheHelper {
     private static a d = null;
     private long a = 604800000;
     private File b;
@@ -55,7 +55,7 @@ public class a {
     }
 
     public void b() {
-        z.a(8, new Runnable() { // from class: com.tsf.extend.base.b.a.a.1
+        z.a(8, new Runnable() { // from class: com.tsf.extend.base.b.a.BitmapCacheHelper.1
             @Override // java.lang.Runnable
             public void run() {
                 File[] fileArrListFiles;

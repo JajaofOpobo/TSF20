@@ -15,9 +15,9 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     private static int w = 0;
     private static int x = 2;
     private boolean b;
-    public com.censivn.C3DEngine.b.f._a.a k;
-    public com.censivn.C3DEngine.b.f._a.b l;
-    public com.censivn.C3DEngine.b.f._a.b m;
+    public com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable k;
+    public com.censivn.C3DEngine.b.f._a.AltSpriteItemData l;
+    public com.censivn.C3DEngine.b.f._a.AltSpriteItemData m;
     public com.tsf.shell.manager.o.ButtonMetrics n;
     public boolean o;
     private boolean p;
@@ -58,7 +58,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return this.q;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         aA();
     }
@@ -66,14 +66,14 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if (fVar instanceof b) {
-            a((com.censivn.C3DEngine.b.f.i) fVar);
+            a((com.censivn.C3DEngine.b.f.IRenderable) fVar);
         }
     }
 
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if (fVar instanceof b) {
-            b((com.censivn.C3DEngine.b.f.i) fVar);
+            b((com.censivn.C3DEngine.b.f.IRenderable) fVar);
         }
     }
 
@@ -130,27 +130,27 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return this.n;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public boolean doubleSidedEnabled() {
         return this.k.doubleSidedEnabled();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void doubleSidedEnabled(boolean z) {
         this.k.doubleSidedEnabled(z);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void alpha(float f) {
         this.k.alpha(WidgetDrawerItemEditAction);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public float alpha() {
         return this.k.alpha();
     }
 
-    public com.censivn.C3DEngine.b.f._a.a aF() {
+    public com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable aF() {
         return this.n.b();
     }
 
@@ -172,7 +172,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return this.p;
     }
 
-    @Override // com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
     }
@@ -292,7 +292,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return true;
     }
 
-    public boolean a(com.censivn.C3DEngine.b.f.i iVar) {
+    public boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.u == null) {
             this.u = aS();
         }
@@ -303,7 +303,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return true;
     }
 
-    public void b(com.censivn.C3DEngine.b.f.i iVar) {
+    public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.u != null) {
             this.u.a.a(iVar, new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.1
                 @Override // java.lang.Runnable

@@ -5,8 +5,8 @@ import android.os.Bundle;
 import com.censivn.C3DEngine.a.GLSurfaceViewWrapper;
 import com.censivn.C3DEngine.a.EngineController;
 import com.censivn.C3DEngine.api.element.Color4;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.tsf.shell.e.DragLayer;
 import com.tsf.shell.utils.StatusBarHelper;
@@ -34,10 +34,10 @@ public class PrimeActivity extends Activity {
             @Override // com.censivn.C3DEngine.a.EngineController, com.censivn.C3DEngine.d.UpdateCallback
             public void b() {
                 float f = 300.0f;
-                j jVar = new j();
+                j jVar = new BaseRenderable();
                 this.a.addChild(jVar);
-                k kVar = new k(f, f, false) { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.1.1
-                    @Override // com.censivn.C3DEngine.b.f.i
+                GridRenderable kVar = new GridRenderable(f, f, false) { // from class: com.tsf.shell.ShellCallbackDispatcherctivity.PrimeActivity.1.1
+                    @Override // com.censivn.C3DEngine.b.f.IRenderable
                     public void onDrawStart() {
                         rotation().z += 2.0f;
                     }

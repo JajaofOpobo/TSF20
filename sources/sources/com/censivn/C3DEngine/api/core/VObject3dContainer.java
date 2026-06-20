@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class VObject3dContainer extends VObject3d {
     public VObject3dContainer() {
         this.mThis = this;
-        this.vTarget = new j() { // from class: com.censivn.C3DEngine.api.core.VObject3dContainer.1
+        this.vTarget = new BaseRenderable() { // from class: com.censivn.C3DEngine.api.core.VObject3dContainer.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onFocus() {
                 VObject3dContainer.this.mThis.onFocus();

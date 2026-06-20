@@ -27,11 +27,11 @@ public class DrawerContentList extends DrawerPageItemBase {
     private com.censivn.C3DEngine.b.d.a u;
     private int v;
     private boolean w;
-    private com.censivn.C3DEngine.b.f.j x;
+    private com.censivn.C3DEngine.b.f.BaseRenderable x;
     private boolean y;
     private Number3d z;
 
-    public static class a extends com.censivn.C3DEngine.b.f.j {
+    public static class a extends com.censivn.C3DEngine.b.f.BaseRenderable {
         public a() {
             visible(false);
             position().y = -com.censivn.C3DEngine.b.b.A.a(150.0f);
@@ -158,7 +158,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         this.a.ao().c();
     }
 
-    private void a(com.censivn.C3DEngine.b.f.j jVar, int i) {
+    private void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar, int i) {
         com.tsf.shell.f.f.a.PageContainerBase aVar = (com.tsf.shell.f.f.a.PageContainerBase) jVar;
         int iNumChildren = aVar.numChildren();
         if (iNumChildren == 1) {
@@ -176,7 +176,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         r();
     }
 
-    public void a(com.censivn.C3DEngine.b.f.j jVar, com.tsf.shell.f.i.PageItem bVar, int i, float f, float f2) {
+    public void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar, com.tsf.shell.f.i.PageItem bVar, int i, float f, float f2) {
         float fB;
         float f3;
         int i2;
@@ -241,7 +241,7 @@ public class DrawerContentList extends DrawerPageItemBase {
                     if (bVar2 instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
                         com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual gVar = (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) bVar2;
                         if (gVar.aC() && !gVar.t()) {
-                            gVar.a((com.censivn.C3DEngine.b.f.i) bVar);
+                            gVar.a((com.censivn.C3DEngine.b.f.IRenderable) bVar);
                         } else {
                             bVar2 = null;
                         }
@@ -262,7 +262,7 @@ public class DrawerContentList extends DrawerPageItemBase {
     private void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
         if (bVar2 != this.j) {
             if (this.j instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
-                ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.j).b((com.censivn.C3DEngine.b.f.i) bVar);
+                ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.j).b((com.censivn.C3DEngine.b.f.IRenderable) bVar);
             } else if (this.j instanceof com.tsf.shell.f.i._b.d.WorkspaceShortcutItem) {
                 bVar.p();
             }
@@ -313,7 +313,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         cVar.localToGlobal(this.s);
         a(this.s.x, this.s.y);
         this.o = true;
-        com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) cVar.parent();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) cVar.parent();
         cVar.position().setAllFrom(this.s);
         if (cVar.parent() instanceof com.tsf.shell.f.f.a.PageContainerBase) {
             this.x = jVar;
@@ -355,7 +355,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         this.w = this.a.ao().f();
         this.l = null;
         this.o = false;
-        com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) this.m.parent();
         boolean z = jVar == null;
         if (cVar.n() != null && cVar.o()) {
             float[] fArrA = x.a(motionEvent);
@@ -456,7 +456,7 @@ public class DrawerContentList extends DrawerPageItemBase {
             if (bVar.L()) {
                 r();
                 ArrayList arrayList2 = new ArrayList();
-                Iterator<com.censivn.C3DEngine.b.f.i> it = bVar.aX().children().iterator();
+                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = bVar.aX().children().iterator();
                 while (it.hasNext()) {
                     arrayList2.add((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) it.next());
                 }
@@ -482,7 +482,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         } else {
             if ((cVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) && cVar.L()) {
                 com.tsf.shell.manager.app.TaskScheduler.b(cVar);
-                com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) this.m.parent();
+                com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) this.m.parent();
                 if (jVar != null && (jVar instanceof com.tsf.shell.f.f.a.PageContainerBase)) {
                     ((com.tsf.shell.f.f.a.PageContainerBase) jVar).removeChild(this.m);
                     return;
@@ -500,7 +500,7 @@ public class DrawerContentList extends DrawerPageItemBase {
             this.x.globalToLocal(this.s);
             bVar2.position().setAllFrom(this.s);
         }
-        com.censivn.C3DEngine.b.f.j jVar2 = (com.censivn.C3DEngine.b.f.j) this.m.parent();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar2 = (com.censivn.C3DEngine.b.f.BaseRenderable) this.m.parent();
         if (jVar2 != null && (jVar2 instanceof com.tsf.shell.f.f.a.PageContainerBase)) {
             iE = (((com.tsf.shell.f.f.a.PageContainerBase) jVar2).e() * com.tsf.shell.f.f.a.FolderPage.m) + this.v;
         } else {

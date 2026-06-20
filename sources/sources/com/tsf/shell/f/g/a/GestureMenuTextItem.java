@@ -1,8 +1,8 @@
 package com.tsf.shell.f.g.a;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
@@ -88,7 +88,7 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.b;
     }
 

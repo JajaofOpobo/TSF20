@@ -1,6 +1,6 @@
 package com.tsf.shell.theme.inside.mix.menu.item;
 
-import com.censivn.C3DEngine.b.f.a.a;
+import com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.manager.o.ButtonPresetManager;
 
@@ -37,7 +37,7 @@ public class ThemeMenuOnlineElementPlane extends ThemeIconPlane {
         this.mNotifPointState = false;
     }
 
-    @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if (this.mNotifPointState) {
             mNotifPoint.dispatchDraw();

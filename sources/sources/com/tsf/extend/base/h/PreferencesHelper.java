@@ -4,9 +4,9 @@ import android.content.SharedPreferences;
 import com.tsf.extend.AppContextHolder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class PreferencesHelper {
     private static c a;
-    private SharedPreferences b = h.b().getApplicationContext().getSharedPreferences("cm_launcher_pref", 0);
+    private SharedPreferences b = AppContextHolder.b().getApplicationContext().getSharedPreferences("cm_launcher_pref", 0);
 
     private c() {
     }

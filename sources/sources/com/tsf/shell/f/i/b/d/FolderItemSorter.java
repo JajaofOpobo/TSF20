@@ -14,7 +14,7 @@ import java.util.Iterator;
 public class FolderItemSorter {
     private static int b = 800;
     private FolderShortcutItem c;
-    private com.censivn.C3DEngine.b.f.j d;
+    private com.censivn.C3DEngine.b.f.BaseRenderable d;
     private com.tsf.shell.f.i.PageItem e;
     private int h;
     private int i;
@@ -31,8 +31,8 @@ public class FolderItemSorter {
     private boolean t = false;
     boolean a = false;
     private ArrayList<float[]> g = new ArrayList<>();
-    private com.censivn.C3DEngine.b.f.j f = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.1
-        @Override // com.censivn.C3DEngine.b.f.i
+    private com.censivn.C3DEngine.b.f.BaseRenderable f = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.i.b.d.FolderItemSorter.1
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawEnd() {
             FolderItemSorter.this.i();
         }
@@ -79,7 +79,7 @@ public class FolderItemSorter {
             Number3d.TEMPNUMBER3D.reset();
             this.e.localToGlobal(Number3d.TEMPNUMBER3D);
             this.u = com.tsf.shell.f.c.DrawerPanelController.a(this.e);
-            ((com.censivn.C3DEngine.b.f.j) this.e.parent()).replaceChild(this.e, this.u);
+            ((com.censivn.C3DEngine.b.f.BaseRenderable) this.e.parent()).replaceChild(this.e, this.u);
             this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
         }
         this.r = this.e.rotation().z;
@@ -106,7 +106,7 @@ public class FolderItemSorter {
         this.c.o(false);
         this.e.mouseSkip(true);
         this.e.removeFromParent();
-        com.censivn.C3DEngine.b.f.j jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.q);
+        com.censivn.C3DEngine.b.f.BaseRenderable jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.q);
         com.tsf.shell.manager.app.TaskScheduler.c();
         jVarA.addChild(this.e);
         com.tsf.shell.manager.app.ObserverManager.b(Home.b());
@@ -114,7 +114,7 @@ public class FolderItemSorter {
 
     public void a(final boolean z) {
         this.t = false;
-        Iterator<com.censivn.C3DEngine.b.f.i> it = this.d.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.d.children().iterator();
         while (it.hasNext()) {
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) it.next()).mouseEnabled(false);
         }
@@ -155,7 +155,7 @@ public class FolderItemSorter {
                         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
                         FolderItemSorter.this.e.removeFromParent();
                         if (FolderItemSorter.this.u != null) {
-                            ((com.censivn.C3DEngine.b.f.j) FolderItemSorter.this.u.parent()).replaceChild(FolderItemSorter.this.u, FolderItemSorter.this.e);
+                            ((com.censivn.C3DEngine.b.f.BaseRenderable) FolderItemSorter.this.u.parent()).replaceChild(FolderItemSorter.this.u, FolderItemSorter.this.e);
                             com.tsf.shell.f.c.DrawerPanelController.a(FolderItemSorter.this.u);
                             FolderItemSorter.this.u = null;
                         } else {
@@ -191,7 +191,7 @@ public class FolderItemSorter {
             while (true) {
                 int i2 = i;
                 if (i2 < this.h) {
-                    com.censivn.C3DEngine.b.f.i childAt = this.d.getChildAt(i2);
+                    com.censivn.C3DEngine.b.f.IRenderable childAt = this.d.getChildAt(i2);
                     float[] fArr = this.g.get((int) ((((i2 / this.h) * 0.9f) + 0.1f) * this.i));
                     PositionNumber3d positionNumber3dPosition = childAt.position();
                     positionNumber3dPosition.x = (float) (((double) positionNumber3dPosition.x) + (((double) (fArr[0] - childAt.position().x)) * 0.2d));
@@ -247,7 +247,7 @@ public class FolderItemSorter {
                     FolderItemSorter.this.k = (int) (com.censivn.C3DEngine.b.b.A.I - number3dLocalToGlobal.y);
                     FolderItemSorter.this.l = motionEvent2.getX();
                     FolderItemSorter.this.m = motionEvent2.getY();
-                    Iterator<com.censivn.C3DEngine.b.f.i> it = FolderItemSorter.this.d.children().iterator();
+                    Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = FolderItemSorter.this.d.children().iterator();
                     while (it.hasNext()) {
                         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) it.next();
                         bVar.alpha(255.0f);

@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a._d._a;
 
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual;
 import java.text.Collator;
 import java.util.Comparator;
@@ -31,7 +31,7 @@ public class DrawerNameSortV2 extends DrawerSortBaseV2 {
                 return 1;
             }
         };
-        this.c = new Comparator<i>() { // from class: com.tsf.shell.f.f.a._d._a.DrawerNameSortV2.2
+        this.c = new Comparator<IRenderable>() { // from class: com.tsf.shell.f.f.a._d._a.DrawerNameSortV2.2
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public final int compare(i iVar, i iVar2) {

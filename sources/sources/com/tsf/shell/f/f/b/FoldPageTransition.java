@@ -9,16 +9,16 @@ import java.nio.Buffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FoldPageTransition extends ItemPageTransition {
-    private com.censivn.C3DEngine.b.f.h a;
-    private com.censivn.C3DEngine.b.f.h b;
-    private com.censivn.C3DEngine.b.f.h c;
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable a;
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable b;
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable c;
 
     public FoldPageTransition(int i, boolean z) {
         super(i, CrossfadeTransition.d.desktop_transition_fold_page, z);
-        this.a = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
-        this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
-        this.c = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
-            @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
+        this.a = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
+        this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false);
+        this.c = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.H, com.censivn.C3DEngine.b.b.A.G, false, true) { // from class: com.tsf.shell.f.f.b.FoldPageTransition.1
+            @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 com.censivn.C3DEngine.C3DEngine.e().a(this);
                 updateTextureState();
@@ -158,7 +158,7 @@ public class FoldPageTransition extends ItemPageTransition {
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
-    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
         return false;
     }
 

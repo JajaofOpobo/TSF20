@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a._c._a;
 
 import android.os.AsyncTask;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.tsf.shell.f.f.a._c.DrawerSettingsPage;
 import com.tsf.shell.f.f.a.AppClassifier;
@@ -11,7 +11,7 @@ import com.tsf.shell.plugin.classification.ClassificationManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerIconLoaderTask extends DrawerIndicatorDot {
     private com.censivn.C3DEngine.b.h.d.b b;
-    private com.censivn.C3DEngine.b.f._a.a c;
+    private com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable c;
     private boolean d;
     private float e;
     private float f;
@@ -56,15 +56,15 @@ public class DrawerIconLoaderTask extends DrawerIndicatorDot {
     }
 
     @Override // com.tsf.shell.f.f.a._c._a.DrawerIndicatorDot
-    public j a(TextureElement textureElement) {
-        j jVar = new j();
-        com.censivn.C3DEngine.b.f._a.a aVarA = com.tsf.shell.f.f.a._c.DrawerLabelConfig.a();
+    public BaseRenderable a(TextureElement textureElement) {
+        j jVar = new BaseRenderable();
+        com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable aVarA = com.tsf.shell.f.f.a._c.DrawerLabelConfig.a();
         this.c = aVarA;
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
         this.b = new com.censivn.C3DEngine.b.h.d.b(com.censivn.C3DEngine.b.b.A.a(140.0f), DrawerIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask.2
-            @Override // com.censivn.C3DEngine.b.h.d.b, com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.h.d.b, com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 f();
                 if (a.this.d) {

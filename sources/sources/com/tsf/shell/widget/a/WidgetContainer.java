@@ -31,7 +31,7 @@ public class WidgetContainer extends VWidgetContainer implements WidgetConfig.a 
     }
 
     public void a(c cVar) {
-        com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) getVirtualTarget();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) getVirtualTarget();
         this.d = new WidgetPanelBase(this.b, cVar);
         this.c = new com.tsf.shell.widget.a.a.WidgetVisualState(this.a, this.d);
         this.c.a(this);

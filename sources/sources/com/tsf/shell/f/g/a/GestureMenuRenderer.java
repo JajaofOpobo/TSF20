@@ -2,19 +2,19 @@ package com.tsf.shell.f.g.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GestureMenuRenderer extends j {
+public class GestureMenuRenderer extends BaseRenderable {
     private static TextureElement b;
     private static TextureElement c;
     private static k d;
     private static TextureElement g;
-    private com.censivn.C3DEngine.b.f.k a;
-    public j e;
+    private com.censivn.C3DEngine.b.f.GridRenderable a;
+    public BaseRenderable e;
     private boolean f;
 
     private static void a() {
@@ -58,7 +58,7 @@ public class GestureMenuRenderer extends j {
         this.e = jVar;
         jVar.calAABB();
         jVar.position().y = 20.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.a = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
+        this.a = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
         this.a.position().y = (-83.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.a.useVBO(false);
         this.a.textures().addElement(c);
@@ -67,15 +67,15 @@ public class GestureMenuRenderer extends j {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if (this.f) {
             GestureMenuDrawerItem.dispatchDraw();
         }
     }
 
-    public static com.censivn.C3DEngine.b.f.k a(float f) {
-        return new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.c.H * f, com.tsf.shell.manager.o.ButtonPresetManager.c.I * f, false);
+    public static com.censivn.C3DEngine.b.f.GridRenderable a(float f) {
+        return new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.o.ButtonPresetManager.c.H * f, com.tsf.shell.manager.o.ButtonPresetManager.c.I * f, false);
     }
 
     public static int e() {

@@ -3,8 +3,8 @@ package com.tsf.shell.f.i;
 import android.content.ContentValues;
 import android.opengl.GLES20;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.d;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
@@ -16,9 +16,9 @@ import com.tsf.shell.f.i.b.b.IItemShell;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageItem extends j implements ILayoutItem, IItemShell {
+public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell {
     private ItemInfo a;
-    protected com.censivn.C3DEngine.b.f.b.a _e;
+    protected com.censivn.C3DEngine.b.f.b.NinePatchRenderable _e;
     private ILayoutItem j;
     private int m;
     private com.tsf.shell.f.i.MultiSelectController q;
@@ -61,13 +61,13 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         return 0L;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
-    public void parent(com.censivn.C3DEngine.b.f.f fVar) {
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
+    public void parent(com.censivn.C3DEngine.b.f.IRenderableContainer fVar) {
         super.parent(fVar);
         b(0.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         super.destroy();
         this.n = true;
@@ -105,7 +105,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         this.p = 0.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void superDrawMVPMatrix() {
         MatrixStack.glTranslatef(position().x, position().y, position().z);
         MatrixStack.glRotatef(rotation().x, 1.0f, 0.0f, 0.0f);
@@ -117,7 +117,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void drawMVPMatrix() {
         MatrixStack.glTranslatef(position().x, position().y, position().z);
         MatrixStack.glRotatef(rotation().x, 1.0f, 0.0f, 0.0f);
@@ -129,14 +129,14 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
 
-    public com.censivn.C3DEngine.b.f.g z() {
-        if (A() != null && (A().b() instanceof com.censivn.C3DEngine.b.f.g)) {
-            return (com.censivn.C3DEngine.b.f.g) A().b();
+    public com.censivn.C3DEngine.b.f.ResourceGridRenderable z() {
+        if (A() != null && (A().b() instanceof com.censivn.C3DEngine.b.f.ResourceGridRenderable)) {
+            return (com.censivn.C3DEngine.b.f.ResourceGridRenderable) A().b();
         }
         return null;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public boolean calTouchCollision(float f, float f2) {
         if (!(this instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && com.tsf.shell.manager.app.StateHub.s().a()) {
             return false;
@@ -165,7 +165,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
         this.q = null;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onKillFocus() {
         super.onKillFocus();
         if (this.r) {
@@ -598,7 +598,7 @@ public class PageItem extends j implements ILayoutItem, IItemShell {
                         f3 = position().x;
                         f4 = position().y;
                     }
-                    if (((com.censivn.C3DEngine.b.f.i) fVar).calTouchCollision(f3, f4) && !fVar.a(this, f3, f4)) {
+                    if (((com.censivn.C3DEngine.b.f.IRenderable) fVar).calTouchCollision(f3, f4) && !fVar.a(this, f3, f4)) {
                         return fVar;
                     }
                 }

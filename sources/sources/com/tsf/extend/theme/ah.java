@@ -191,13 +191,13 @@ public class ah {
                 if (!z3) {
                     a((String) sparseArrayA.get(3, null), str, contextCreatePackageContext, sparseArrayA, z2, string, z, z, lVar);
                 } else if (z) {
-                    com.tsf.extend.base.h.a.a().b(str);
-                    com.tsf.extend.base.h.a.a().a(str);
+                    com.tsf.extend.base.h.LogWriter.a().b(str);
+                    com.tsf.extend.base.h.LogWriter.a().a(str);
                 }
                 return true;
             }
         } catch (PackageManager.NameNotFoundException e) {
-            com.tsf.extend.base.h.a.a().b(str);
+            com.tsf.extend.base.h.LogWriter.a().b(str);
             e.printStackTrace();
         } catch (IOException e2) {
             e2.printStackTrace();
@@ -223,17 +223,17 @@ public class ah {
         }
         if (this.e != null) {
             this.e = null;
-            com.tsf.extend.base.h.a.a().b(false);
+            com.tsf.extend.base.h.LogWriter.a().b(false);
         }
         if (this.o && lVar != null) {
             this.e = lVar;
             this.e.a(sparseArray);
-            com.tsf.extend.base.h.a.a().b(true);
+            com.tsf.extend.base.h.LogWriter.a().b(true);
             if (!z3 || "cm.technology.next.live.wallpaper".equals(str2)) {
             }
             return;
         }
-        com.tsf.extend.base.h.a.a().b(false);
+        com.tsf.extend.base.h.LogWriter.a().b(false);
     }
 
     public boolean f() {
@@ -528,11 +528,11 @@ public class ah {
 
     public void a(String str) {
         this.z = str;
-        com.tsf.extend.base.h.a.a().c(str);
+        com.tsf.extend.base.h.LogWriter.a().c(str);
     }
 
     public void b(String str) {
-        com.tsf.extend.base.h.a.a().d(str);
+        com.tsf.extend.base.h.LogWriter.a().d(str);
     }
 
     public boolean g() {
@@ -702,11 +702,11 @@ public class ah {
     }
 
     public boolean l() {
-        return "SYSTEM".equals(com.tsf.extend.base.h.a.a().e());
+        return "SYSTEM".equals(com.tsf.extend.base.h.LogWriter.a().e());
     }
 
     public boolean m() {
-        return !TextUtils.isEmpty(com.tsf.extend.base.h.a.a().e());
+        return !TextUtils.isEmpty(com.tsf.extend.base.h.LogWriter.a().e());
     }
 
     public boolean n() {
@@ -743,7 +743,7 @@ public class ah {
     }
 
     public long p() {
-        return this.A > 0 ? this.A : com.tsf.extend.base.h.a.a().g();
+        return this.A > 0 ? this.A : com.tsf.extend.base.h.LogWriter.a().g();
     }
 
     public int a(int i, String str) {

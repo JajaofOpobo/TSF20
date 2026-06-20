@@ -5,8 +5,8 @@ import android.content.ContentUris;
 import android.content.ContentValues;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.ShellGraphicsContext;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -25,7 +25,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     private ArrayList<d> l;
     private ArrayList<d> m;
     private f r;
-    private k s;
+    private GridRenderable s;
     private com.tsf.shell.f.i.PageItem u;
     private com.tsf.shell.f.i.PageItem v;
     private TextureElement w;
@@ -55,7 +55,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         }
     };
     private float q = 12.0f * com.censivn.C3DEngine.b.b.A.b;
-    private i o = new k(128.0f, 128.0f);
+    private i o = new GridRenderable(128.0f, 128.0f);
 
     public DrawerMenuPanel(f fVar) {
         this.r = fVar;
@@ -433,7 +433,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         setAnimationObjectState(false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.v != null) {
             this.r.n.a(this.s, this.v);
@@ -485,21 +485,21 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         this.l.add(w());
         super.addChild(iVar);
         DrawerMenuPanel();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         this.l.add(w());
         super.addChildAt(iVar, i);
         DrawerMenuPanel();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {

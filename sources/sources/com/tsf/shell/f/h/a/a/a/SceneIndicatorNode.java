@@ -1,10 +1,10 @@
 package com.tsf.shell.f.h.a.a.a;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneIndicatorNode extends k {
+public class SceneIndicatorNode extends GridRenderable {
     private TextureElement a;
     private TextureElement d;
     private float e;
@@ -14,7 +14,7 @@ public class SceneIndicatorNode extends k {
         this.e = 0.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (this.d != null) {
             textures().removeAll();

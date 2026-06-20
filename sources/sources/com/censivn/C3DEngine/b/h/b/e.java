@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class e extends BaseRenderable {
-    private j a;
+    private BaseRenderable a;
     private ArrayList<Number3d> b;
     private d d;
     private Number3d c = new Number3d();
@@ -27,7 +27,7 @@ public class e extends BaseRenderable {
 
     public e() {
         setMouseEventListener(this.e);
-        this.a = new j();
+        this.a = new BaseRenderable();
         addChild(this.a);
     }
 
@@ -45,7 +45,7 @@ public class e extends BaseRenderable {
         return this.d;
     }
 
-    public j b() {
+    public BaseRenderable b() {
         return this.a;
     }
 

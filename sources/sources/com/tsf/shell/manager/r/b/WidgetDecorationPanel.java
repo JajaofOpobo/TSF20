@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.r.b;
 
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e._g.a.MenuActionHandler;
 import com.tsf.shell.f.i.c.ItemGroupBase;
@@ -14,7 +14,7 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.MenuActionItem
     private a.C0095a b;
     private Runnable c;
     private com.tsf.shell.manager.r.b.c.WidgetDragDropArea d;
-    private j e;
+    private BaseRenderable e;
 
     public WidgetDecorationPanel(final WidgetMenuPanel aVar, String str) {
         super(str);
@@ -71,7 +71,7 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.MenuActionItem
         arrayList.add(this.a);
         arrayList.add(this.b);
         setFunctions(arrayList);
-        this.e = new j();
+        this.e = new BaseRenderable();
         this.d = new com.tsf.shell.manager.r.b.c.WidgetDragDropArea(aVar, this) { // from class: com.tsf.shell.manager.r.b.b.5
             @Override // com.tsf.shell.manager.r.b.c.WidgetDragDropArea
             public void a(com.tsf.shell.f.i.c.ItemLabelProvider eVar) {
@@ -103,7 +103,7 @@ public class WidgetDecorationPanel extends com.tsf.shell.f.e._g.a.MenuActionItem
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.e;
     }
 

@@ -51,7 +51,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         super.onDrawChildEnd();
         if (this.b) {
@@ -59,7 +59,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         }
     }
 
-    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.b) {

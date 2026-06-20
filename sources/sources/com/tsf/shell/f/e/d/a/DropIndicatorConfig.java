@@ -1,12 +1,12 @@
 package com.tsf.shell.f.e.d.a;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.e.d.a.DropIndicatorState;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DropIndicatorConfig {
-    private j d;
+    private BaseRenderable d;
     private boolean b = false;
     private DropIndicatorState c = new DropIndicatorState(this);
     private DropIndicatorContainer a = new DropIndicatorContainer() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorConfig.1

@@ -3,13 +3,13 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeIconPlane extends j {
+public class ThemeIconPlane extends BaseRenderable {
     public static k mMark;
     private boolean isShowMark = false;
 
@@ -21,11 +21,11 @@ public class ThemeIconPlane extends j {
         this.isShowMark = false;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if (this.isShowMark) {
             if (mMark == null) {
-                mMark = new k(a.a(54.0f), a.a(36.0f), false);
+                mMark = new GridRenderable(a.a(54.0f), a.a(36.0f), false);
                 Bitmap bitmapA = x.a(b.d.theme_30_mark);
                 TextureElement textureElementA = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA, true);
                 bitmapA.recycle();

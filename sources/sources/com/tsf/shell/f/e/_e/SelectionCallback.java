@@ -1,12 +1,12 @@
 package com.tsf.shell.f.e._e;
 
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SelectionCallback extends j {
+public class SelectionCallback extends BaseRenderable {
     public float a;
     public float b;
     public float c;
@@ -19,7 +19,7 @@ public class SelectionCallback extends j {
     private boolean j = false;
     private float k;
     private float l;
-    private k m;
+    private GridRenderable m;
 
     public SelectionCallback() {
         com.tsf.shell.manager.o.ThemeColorConstants.a(this, com.tsf.shell.manager.o.ThemeColorConstants.b);
@@ -30,7 +30,7 @@ public class SelectionCallback extends j {
         this.m.scale().setAll(0.0f, 0.0f, 1.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         position().x += (this.f - position().x) * 0.15f;
         position().y += (this.g - position().y) * 0.15f;

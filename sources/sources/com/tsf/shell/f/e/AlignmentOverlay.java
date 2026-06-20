@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AlignmentOverlay {
-    private static com.censivn.C3DEngine.b.f.j a;
-    private static com.censivn.C3DEngine.b.f.k b;
-    private static com.censivn.C3DEngine.b.f.k c;
+    private static com.censivn.C3DEngine.b.f.BaseRenderable a;
+    private static com.censivn.C3DEngine.b.f.GridRenderable b;
+    private static com.censivn.C3DEngine.b.f.GridRenderable c;
     private static float d;
     private static TextureElement e;
     private static TextureElement f;
@@ -24,7 +24,7 @@ public class AlignmentOverlay {
     private static AlignmentBackKeyHandler m;
     private static com.tsf.shell.f.i.PageItem n;
     private static com.tsf.shell.f.i.PageItem o;
-    private static ArrayList<com.censivn.C3DEngine.b.f.i> p;
+    private static ArrayList<com.censivn.C3DEngine.b.f.IRenderable> p;
     private static boolean q = false;
 
     public static void a() {
@@ -43,8 +43,8 @@ public class AlignmentOverlay {
         g = com.censivn.C3DEngine.C3DEngine.g().a(bitmapA3, true);
         h = AlignmentBackKeyHandler.id;
         bitmapA3.recycle();
-        a = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.e.a.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        a = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.e.a.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (a.j != null) {
                     a.b.position().y = a.j.position().y;
@@ -59,19 +59,19 @@ public class AlignmentOverlay {
         a.addChild(SpringEasing);
     }
 
-    private static com.censivn.C3DEngine.b.f.k a(boolean z) {
-        com.censivn.C3DEngine.b.f.k kVar;
+    private static com.censivn.C3DEngine.b.f.GridRenderable a(boolean z) {
+        com.censivn.C3DEngine.b.f.GridRenderable kVar;
         float f2 = 16.0f;
         boolean z2 = false;
-        final com.censivn.C3DEngine.b.f.k kVar2 = new com.censivn.C3DEngine.b.f.k(128.0f, 16.0f, false);
+        final com.censivn.C3DEngine.b.f.GridRenderable kVar2 = new com.censivn.C3DEngine.b.f.GridRenderable(128.0f, 16.0f, false);
         kVar2.useVBO(false);
         kVar2.textures().addElement(ItemTrailContainer);
-        final com.censivn.C3DEngine.b.f.k kVar3 = new com.censivn.C3DEngine.b.f.k(128.0f, 16.0f, false);
+        final com.censivn.C3DEngine.b.f.GridRenderable kVar3 = new com.censivn.C3DEngine.b.f.GridRenderable(128.0f, 16.0f, false);
         kVar3.useVBO(false);
         kVar3.textures().addElement(ItemTrailContainer);
         if (z) {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
-                @Override // com.censivn.C3DEngine.b.f.i
+            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, f2, z2) { // from class: com.tsf.shell.f.e.a.2
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     float f3 = com.censivn.C3DEngine.b.b.A.F / 2;
                     float f4 = a.j.position().x;
@@ -86,8 +86,8 @@ public class AlignmentOverlay {
                 }
             };
         } else {
-            kVar = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
-                @Override // com.censivn.C3DEngine.b.f.i
+            kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.G, f2, z2) { // from class: com.tsf.shell.f.e.a.3
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     float f3 = com.censivn.C3DEngine.b.b.A.G / 2;
                     float f4 = a.j.position().y;
@@ -139,7 +139,7 @@ public class AlignmentOverlay {
             bVar.c(true);
             j = bVar;
             PageIndicatorStrip.setFocus();
-            com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) bVar.parent();
+            com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) bVar.parent();
             jVar.addChildAt(a, jVar.getChildIndexOf(bVar));
             com.censivn.C3DEngine.b.c.b.a(ILassoSelectable);
             com.tsf.shell.manager.app.ObserverManager.a(ToggleRowItem);

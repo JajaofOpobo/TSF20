@@ -3,7 +3,7 @@ package com.tsf.shell.widget.a;
 import com.censivn.C3DEngine.api.element.Color4;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetLabelElement extends com.censivn.C3DEngine.b.f.k {
+public class WidgetLabelElement extends com.censivn.C3DEngine.b.f.GridRenderable {
     private Color4 a;
     private float d;
     private float e;

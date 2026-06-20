@@ -25,7 +25,7 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.a aVar) {
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
         return false;
     }
 
@@ -71,11 +71,11 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
         this.a.dispatchDraw();
     }
 
-    public static void a(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, boolean z, boolean z2, Runnable runnable) {
-        com.censivn.C3DEngine.b.f.i iVar = arrayList.size() > 0 ? arrayList.get((int) (Math.random() * ((double) arrayList.size()))) : null;
+    public static void a(ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, boolean z, boolean z2, Runnable runnable) {
+        com.censivn.C3DEngine.b.f.IRenderable iVar = arrayList.size() > 0 ? arrayList.get((int) (Math.random() * ((double) arrayList.size()))) : null;
         com.censivn.C3DEngine.b.g.d dVar = null;
         for (int i = 0; i < arrayList.size(); i++) {
-            com.censivn.C3DEngine.b.f.i iVar2 = arrayList.get(i);
+            com.censivn.C3DEngine.b.f.IRenderable iVar2 = arrayList.get(i);
             com.censivn.C3DEngine.b.g.c.a(iVar2);
             if (iVar2 instanceof com.tsf.shell.f.i.PageItem) {
                 Number3d number3d = h.E.get(i);
@@ -122,16 +122,16 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
         }
     }
 
-    public void a(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, boolean z, Runnable runnable) {
+    public void a(ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, boolean z, Runnable runnable) {
     }
 
-    public void b(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, boolean z, Runnable runnable) {
+    public void b(ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, boolean z, Runnable runnable) {
     }
 
-    public com.censivn.C3DEngine.b.f.i o() {
+    public com.censivn.C3DEngine.b.f.IRenderable o() {
         if (this.b == null) {
             this.b = new com.tsf.shell.f._d.e.DashRendererBase(this) { // from class: com.tsf.shell.f.f.b.a.FolderPageTransitionBase.2
-                @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.j
+                @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
                     com.tsf.shell.manager.i.PrimeEffectRenderer.a(d.this, com.censivn.C3DEngine.b.b.A.a(20.0f));
@@ -146,11 +146,11 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
     }
 
     @Override // com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void b(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar;
         com.censivn.C3DEngine.b.g.d dVar2;
         com.censivn.C3DEngine.b.g.d dVar3 = null;
-        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
+        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
         int i = 0;
         while (true) {
             int i2 = i;
@@ -158,7 +158,7 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
             if (i2 >= aVar.a()) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i2);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = aVar.a(i2);
             dVar3 = new com.censivn.C3DEngine.b.g.d();
             if (!p()) {
                 dVar2 = dVar;
@@ -193,6 +193,6 @@ public class FolderPageTransitionBase extends i implements com.tsf.shell.f._d.e.
         }
     }
 
-    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
     }
 }

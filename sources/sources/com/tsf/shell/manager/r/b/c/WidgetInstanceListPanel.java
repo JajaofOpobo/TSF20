@@ -5,7 +5,7 @@ import android.appwidget.AppWidgetProviderInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;

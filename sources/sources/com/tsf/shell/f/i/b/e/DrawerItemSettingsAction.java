@@ -5,21 +5,21 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
     private com.tsf.shell.manager.action.toggle.ToggleAction a;
-    private k b;
+    private GridRenderable b;
     private TextureElement p;
     private int q;
     private int r;
     private boolean s;
     private int t;
     private int u;
-    private com.censivn.C3DEngine.b.f.a.b v;
-    private com.censivn.C3DEngine.b.f.a.b w;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData v;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData w;
     private String x;
 
     public DrawerItemSettingsAction(com.tsf.shell.manager.action.toggle.ToggleAction bVar) {
@@ -31,8 +31,8 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
         this.u = 0;
         this.a = bVar;
         this.p = new TextureElement(0, false);
-        this.b = new k(this.n.H, this.n.I, false) { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.b = new GridRenderable(this.n.H, this.n.I, false) { // from class: com.tsf.shell.f.i.b.e.DrawerItemSettingsAction.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (j.this.q == 1) {
                     rotation().z += 5.0f;
@@ -104,7 +104,7 @@ public class DrawerItemSettingsAction extends DrawerShortcutItemBase {
         invalidate();
     }
 
-    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.r != this.q) {
             this.r = this.q;

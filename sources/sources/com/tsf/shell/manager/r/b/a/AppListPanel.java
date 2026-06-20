@@ -5,8 +5,8 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.Home;
@@ -79,7 +79,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
         }));
         setFunctions(arrayList);
         this.c = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.a.U) { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.4
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
             }
         };
@@ -314,7 +314,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.c;
     }
 

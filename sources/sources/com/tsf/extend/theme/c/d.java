@@ -364,7 +364,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         this.c.notifyDataSetChanged();
     }
 
-    public void a(com.tsf.extend.base.b.A aVar, boolean z) {
+    public void a(com.tsf.extend.base.b.PagedListModel aVar, boolean z) {
         if (aVar instanceof p) {
             this.e = ((p) aVar).b();
             if (!this.e) {
@@ -378,7 +378,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
     }
 
-    class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private final com.tsf.extend.base.d.BaseDataProvider.b b;
 
         public a(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -386,9 +386,9 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.PagedListModel) null);
             } else {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.a.1
                     @Override // java.lang.Runnable
@@ -400,7 +400,7 @@ public class d extends FrameLayout implements View.OnClickListener, a.InterfaceC
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             z.a(0, new Runnable() { // from class: com.tsf.extend.theme.c.d.a.2
                 @Override // java.lang.Runnable
                 public void run() {

@@ -1,12 +1,12 @@
 package com.tsf.shell.f.i._c;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class WidgetLabelProvider {
-    private m a = new m();
+    private LabelRenderable a = new LabelRenderable();
 
     public abstract i a(int i, int i2, boolean z);
 

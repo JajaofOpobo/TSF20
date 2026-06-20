@@ -5,7 +5,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.common.renderer.ShaderManager;
 import com.censivn.C3DEngine.common.shader.ShaderColor;
 import com.tsf.shell.f.f.a.c.FolderPageItemBase;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageGridRenderer extends j implements b.a {
+public class PageGridRenderer extends BaseRenderable implements b.a {
     public static float a;
     public static float b;
     public static float c;
@@ -31,11 +31,11 @@ public class PageGridRenderer extends j implements b.a {
     private boolean q = false;
     private com.censivn.C3DEngine.b.g._b.b r = new com.censivn.C3DEngine.b.g._b.b();
     private ArrayList<i> g = new ArrayList<>();
-    private j m = new j();
-    private j n = new j();
-    private j o = new j();
-    private com.censivn.C3DEngine.b.f.h p = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
-        @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
+    private BaseRenderable m = new BaseRenderable();
+    private BaseRenderable n = new BaseRenderable();
+    private BaseRenderable o = new BaseRenderable();
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable p = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
+        @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
         public void draw() {
             com.censivn.C3DEngine.C3DEngine.e().a(this);
             updateTextureState();
@@ -155,7 +155,7 @@ public class PageGridRenderer extends j implements b.a {
         }
     }
 
-    public j h() {
+    public BaseRenderable h() {
         return this.o;
     }
 
@@ -214,7 +214,7 @@ public class PageGridRenderer extends j implements b.a {
                 if (!it.hasNext()) {
                     break;
                 }
-                com.censivn.C3DEngine.b.f.a.a aVarE = it.next().e();
+                com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVarE = it.next().e();
                 aVarE.position().x = f3;
                 aVarE.removeFromParent();
                 this.n.addChild(aVarE);

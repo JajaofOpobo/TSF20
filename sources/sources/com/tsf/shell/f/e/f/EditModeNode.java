@@ -1,12 +1,12 @@
 package com.tsf.shell.f.e.f;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.i.ShortcutItem;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class EditModeNode extends j {
+public class EditModeNode extends BaseRenderable {
     private a a;
     private ArrayList<Integer> b;
     private ArrayList<Integer> c;
@@ -42,7 +42,7 @@ public class EditModeNode extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         super.dispatchDraw();
     }

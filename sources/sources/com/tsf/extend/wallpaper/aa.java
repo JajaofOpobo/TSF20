@@ -46,7 +46,7 @@ public class aa {
     public void a(Context context) {
         this.b = context;
         this.a = new y(context);
-        this.i = com.tsf.extend.base.f.c.a(context);
+        this.i = com.tsf.extend.base.f.RequestQueueHelper.a(context);
         HandlerThread handlerThread = new HandlerThread("Favorite_Wallpaper");
         handlerThread.start();
         this.j = new Handler(handlerThread.getLooper());

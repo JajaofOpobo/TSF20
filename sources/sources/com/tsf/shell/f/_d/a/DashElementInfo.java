@@ -1,6 +1,6 @@
 package com.tsf.shell.f._d.a;
 
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.g.a.GestureMenuRenderer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -37,7 +37,7 @@ public class DashElementInfo extends h {
         };
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (!this.a) {
             this.a = true;
@@ -45,7 +45,7 @@ public class DashElementInfo extends h {
         }
     }
 
-    @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.j
+    @Override // com.tsf.shell.f.g.a.GestureMenuRenderer, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         com.tsf.shell.manager.i.PrimeEffectRenderer.a(this.c.a(), com.censivn.C3DEngine.b.b.A.a(30.0f));

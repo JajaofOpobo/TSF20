@@ -4,15 +4,15 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class MenuExpandItem extends j {
+public class MenuExpandItem extends BaseRenderable {
     private static com.tsf.shell.manager.o._a.TextConfigV2 e;
     private static final float g = 24.0f * com.censivn.C3DEngine.b.b.A.c;
-    private k a;
+    private GridRenderable a;
     private String b;
     private TextureElement d;
     private com.tsf.shell.f.e.CircleDotNode f;
@@ -30,7 +30,7 @@ public class MenuExpandItem extends j {
             e.h(42);
         }
         this.d = new TextureElement(0, false);
-        this.a = new k(0.0f, 0.0f, false);
+        this.a = new GridRenderable(0.0f, 0.0f, false);
         this.a.textures().addElement(this.d);
         addChild(this.a);
         MenuExpandItem();
@@ -58,7 +58,7 @@ public class MenuExpandItem extends j {
         maxY(e.t / 2.0f);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void visible(Boolean bool) {
         super.visible(bool);
         notifLayoutRefresh();

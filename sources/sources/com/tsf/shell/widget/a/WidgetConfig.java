@@ -2,11 +2,11 @@ package com.tsf.shell.widget.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetConfig {
-    private com.censivn.C3DEngine.b.f.a.b a;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData a;
     private float b;
     private float c;
 
-    public WidgetConfig(com.censivn.C3DEngine.b.f.a.b bVar, float f, float f2) {
+    public WidgetConfig(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, float f, float f2) {
         this.a = bVar;
         this.b = f;
         this.c = f2;

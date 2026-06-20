@@ -10,9 +10,9 @@ import com.censivn.C3DEngine.api.core.VObject3dContainer;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.n;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ViewportController implements e.a {
@@ -22,15 +22,15 @@ public class ViewportController implements e.a {
     }
 
     private g a;
-    private j b;
-    private j c;
+    private BaseRenderable b;
+    private BaseRenderable c;
     private VObject3dContainer d;
-    private n e;
+    private EmptyRenderable e;
     private com.tsf.shell.f.b.ShellKeyEventHandler f;
     private d.b g;
     private com.tsf.shell.e.DragLayer h;
     private FrameLayout i;
-    private j j;
+    private BaseRenderable j;
 
     public ViewportController(com.tsf.shell.e.DragLayer eVar) {
         com.tsf.shell.manager.app.ObserverManager.a(this);
@@ -46,7 +46,7 @@ public class ViewportController implements e.a {
         };
     }
 
-    public j a() {
+    public BaseRenderable a() {
         return this.c;
     }
 
@@ -66,9 +66,9 @@ public class ViewportController implements e.a {
 
     public void a(g gVar) {
         this.a = gVar;
-        this.b = new j();
-        this.j = new j() { // from class: com.tsf.shell.manager.f.ViewportController.2
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+        this.b = new BaseRenderable();
+        this.j = new BaseRenderable() { // from class: com.tsf.shell.manager.f.ViewportController.2
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public boolean removeChild(i iVar) {
                 boolean zRemoveChild = super.removeChild(iVar);
                 if (numChildren() == 0) {
@@ -77,7 +77,7 @@ public class ViewportController implements e.a {
                 return zRemoveChild;
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public i removeChildAt(int i) {
                 i iVarRemoveChildAt = super.removeChildAt(i);
                 if (numChildren() == 0) {
@@ -86,7 +86,7 @@ public class ViewportController implements e.a {
                 return iVarRemoveChildAt;
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 if (parent() == null) {
                     d.this.a.addChild(this);
@@ -94,7 +94,7 @@ public class ViewportController implements e.a {
                 super.addChild(iVar);
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void addChildAt(i iVar, int i) {
                 if (parent() == null) {
                     d.this.a.addChild(this);
@@ -112,7 +112,7 @@ public class ViewportController implements e.a {
             }
         };
         this.c = (j) this.d.getVirtualTarget();
-        this.e = new n();
+        this.e = new EmptyRenderable();
         this.e.setAABBPX(-2.1474836E9f, -2.1474836E9f, -2.1474836E9f, 2.1474836E9f, 2.1474836E9f, 2.1474836E9f);
         this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.e) { // from class: com.tsf.shell.manager.f.ViewportController.4
             @Override // com.censivn.C3DEngine.b.d.a
@@ -126,7 +126,7 @@ public class ViewportController implements e.a {
         this.b.addChild(this.c);
     }
 
-    public j a(com.tsf.shell.f.b.ShellKeyEventHandler aVar) {
+    public BaseRenderable a(com.tsf.shell.f.b.ShellKeyEventHandler aVar) {
         if (aVar == null) {
             return null;
         }

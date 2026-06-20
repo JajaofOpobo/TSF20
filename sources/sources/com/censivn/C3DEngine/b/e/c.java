@@ -12,9 +12,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
-    private m b;
-    private k c;
+public class c extends com.censivn.C3DEngine.b.f.BaseRenderable implements b.a, e.a {
+    private LabelRenderable b;
+    private GridRenderable c;
     private f d;
     private SelectionFrame e;
     private d f;
@@ -25,7 +25,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
 
     public c() {
         this.a.b(1);
-        this.b = new m();
+        this.b = new LabelRenderable();
         this.b.d(55);
         this.b.a("");
         this.b.b(1);
@@ -33,7 +33,7 @@ public class c extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
         this.b.position().x = (int) (((-com.censivn.C3DEngine.b.b.A.D) / 2.0f) + (com.censivn.C3DEngine.b.b.A.a(70.0f) / 2.0f));
         this.b.position().y = (-com.censivn.C3DEngine.b.b.A.a(30.0f)) - this.b.maxY();
         this.a.addChild(this.b);
-        this.c = new k((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), (int) com.censivn.C3DEngine.b.b.A.a(7.0f), false);
+        this.c = new GridRenderable((int) (com.censivn.C3DEngine.b.b.A.D - com.censivn.C3DEngine.b.b.A.a(70.0f)), (int) com.censivn.C3DEngine.b.b.A.a(7.0f), false);
         this.c.setDefaultColor(new Color4(255, 255, 255, 150));
         this.c.position().y = (this.b.position().y + this.b.minY()) - com.censivn.C3DEngine.b.b.A.a(20.0f);
         this.a.addChild(this.c);

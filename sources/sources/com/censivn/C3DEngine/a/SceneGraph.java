@@ -7,11 +7,11 @@ import com.tsf.shell.utils.ErrorThrower;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.AnimationCallback {
+public class SceneGraph implements com.censivn.C3DEngine.b.f.IRenderableContainer, com.censivn.C3DEngine.d.AnimationCallback {
     private com.censivn.C3DEngine.f.Normal3f b;
     private com.censivn.C3DEngine.f.ColorRGBA c;
     private boolean d;
-    private ArrayList<i> a = new ArrayList<>();
+    private ArrayList<IRenderable> a = new ArrayList<>();
     private Color4 e = new Color4(255, 255, 255, 255);
     private float g = 0.0f;
     private float f = 10.0f;
@@ -24,8 +24,8 @@ public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DE
         this.c = new com.censivn.C3DEngine.f.ColorRGBA(0, 0, 0, 255, this);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
-    public void addChild(i iVar) {
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
+    public void addChild(IRenderable iVar) {
         if (!RendererImpl.l()) {
             ErrorThrower.a(this, "scene addChild is worng thread:" + iVar);
         }
@@ -35,8 +35,8 @@ public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DE
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
-    public boolean removeChild(i iVar) {
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
+    public boolean removeChild(IRenderable iVar) {
         if (!RendererImpl.l()) {
             ErrorThrower.a(this, "scene removeChild is worng thread:" + iVar);
         }
@@ -47,12 +47,12 @@ public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DE
         return zRemove;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
-    public i getChildAt(int i) {
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
+    public IRenderable getChildAt(int i) {
         return this.a.get(i);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
     public int numChildren() {
         return this.a.size();
     }
@@ -69,13 +69,13 @@ public class SceneGraph implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DE
         a();
     }
 
-    ArrayList<i> d() {
+    ArrayList<IRenderable> d() {
         return this.a;
     }
 
-    private void a(com.censivn.C3DEngine.b.f.f fVar) {
-        for (int iNumChildren = fVar.numChildren() - 1; iNumChildren >= 0; iNumChildren--) {
-            i childAt = fVar.getChildAt(iNumChildren);
+    private void a(com.censivn.C3DEngine.b.f.IRenderableContainer containerVar) {
+        for (int iNumChildren = containerVar.numChildren() - 1; iNumChildren >= 0; iNumChildren--) {
+            IRenderable childAt = containerVar.getChildAt(iNumChildren);
             childAt.destroy();
             if (childAt instanceof j) {
                 a((j) childAt);

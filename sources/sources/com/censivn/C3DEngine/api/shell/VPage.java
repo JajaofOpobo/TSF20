@@ -9,23 +9,23 @@ public class VPage {
     public g vTarget;
 
     public void addWidget(VObject3d vObject3d) {
-        this.vTarget.a((i) vObject3d.getVirtualTarget());
+        this.vTarget.a((IRenderable) vObject3d.getVirtualTarget());
     }
 
     public void addWidget(VObject3d vObject3d, int i) {
-        this.vTarget.a((i) vObject3d.getVirtualTarget(), i);
+        this.vTarget.a((IRenderable) vObject3d.getVirtualTarget(), i);
     }
 
     public void removeWidget(VObject3d vObject3d) {
-        this.vTarget.b((i) vObject3d.getVirtualTarget());
+        this.vTarget.b((IRenderable) vObject3d.getVirtualTarget());
     }
 
     public boolean containsWidget(VObject3d vObject3d) {
-        return this.vTarget.c((i) vObject3d.getVirtualTarget());
+        return this.vTarget.c((IRenderable) vObject3d.getVirtualTarget());
     }
 
     public int getWidgetIndex(VObject3d vObject3d) {
-        return this.vTarget.d((i) vObject3d.getVirtualTarget());
+        return this.vTarget.d((IRenderable) vObject3d.getVirtualTarget());
     }
 
     public int getIndex() {

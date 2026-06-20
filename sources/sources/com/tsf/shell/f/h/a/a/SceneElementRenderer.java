@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.view.KeyEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.h.a.WorkspacePreviewNode;
 import com.tsf.shell.theme.inside.ThemeManager;
 
@@ -142,7 +142,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
     }
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
-    public j a() {
+    public BaseRenderable a() {
         return this.e;
     }
 

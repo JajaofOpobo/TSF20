@@ -14,7 +14,7 @@ import com.android.volley.n;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.google.android.collect.Lists;
 import com.tsf.extend.base.d.BaseDataProvider;
-import com.tsf.extend.base.f.b;
+import com.tsf.extend.base.f.JsonRequestBuilder;
 import com.tsf.extend.theme.C;
 import com.tsf.extend.wallpaper.PersonalizationActivity;
 import java.io.File;
@@ -61,9 +61,9 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         this.c = null;
         this.d = null;
         a(com.tsf.extend.AppContextHolder.b());
-        com.tsf.extend.base.i.a.a().a(com.tsf.extend.AppContextHolder.b());
-        com.tsf.extend.base.i.a.a().a("1");
-        com.tsf.extend.base.i.a.a().a(new a.InterfaceC0050a() { // from class: com.tsf.extend.theme.v.1
+        com.tsf.extend.base.i.InstallReferrerHandler.a().a(com.tsf.extend.AppContextHolder.b());
+        com.tsf.extend.base.i.InstallReferrerHandler.a().a("1");
+        com.tsf.extend.base.i.InstallReferrerHandler.a().a(new a.InterfaceC0050a() { // from class: com.tsf.extend.theme.v.1
         });
         this.c = com.tsf.extend.base.j.d.b(com.tsf.extend.AppContextHolder.b());
         this.c = this.c == null ? "null" : this.c;
@@ -86,7 +86,7 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         e = str;
     }
 
-    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("keyword", URLEncoder.encode(str));
@@ -96,15 +96,15 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         a("DATA_SEARCH", interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar) {
         a("DATA_SEARCH_TAG", interfaceC0048a, bVar, (JSONObject) null, false);
     }
 
-    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j) {
         a("DATA_RELATIVE_" + j, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j, long j2) {
+    public void a(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, long j, long j2) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("categoryId", j + "");
@@ -115,7 +115,7 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         a("DATA_WALLPAPE_RELATIVE_" + j, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void b(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
+    public void b(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("packname", str);
@@ -125,11 +125,11 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         a("DATA_RECOM_BY_NAME" + str, interfaceC0048a, bVar, jSONObject, false);
     }
 
-    public com.tsf.extend.base.b.A a(long j) {
+    public com.tsf.extend.base.b.PagedListModel a(long j) {
         return d().get("DATA_RELATIVE_" + j);
     }
 
-    public void c(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
+    public void c(com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, com.tsf.extend.base.d.BaseDataProvider.b bVar, String str) {
         try {
             JSONObject jSONObject = new JSONObject();
             jSONObject.put("album_id", str);
@@ -239,7 +239,7 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         if (bVar == com.tsf.extend.base.d.BaseDataProvider.b.Refresh) {
             return 0;
         }
-        com.tsf.extend.base.b.A aVar = this.a.get(str);
+        com.tsf.extend.base.b.PagedListModel aVar = this.a.get(str);
         if (aVar == null) {
             return -1;
         }
@@ -252,7 +252,7 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider
-    protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
+    protected com.tsf.extend.base.b.PagedListModel a(String str, String str2, JSONObject jSONObject) {
         if ("DATA_PLAY".equals(str)) {
             return j(jSONObject);
         }
@@ -282,7 +282,7 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider
-    public com.tsf.extend.base.b.A b() {
+    public com.tsf.extend.base.b.PagedListModel b() {
         return null;
     }
 
@@ -293,8 +293,8 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     public void a(long j, String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<p> interfaceC0048a, String str2) {
-        com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.b.a(a(j, str), null, interfaceC0048a, new b.a<p>() { // from class: com.tsf.extend.theme.v.6
-            @Override // com.tsf.extend.base.f.b.a
+        com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(a(j, str), null, interfaceC0048a, new b.a<p>() { // from class: com.tsf.extend.theme.v.6
+            @Override // com.tsf.extend.base.f.JsonRequestBuilder.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public p b(JSONObject jSONObject) {
                 try {
@@ -311,14 +311,14 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
 
     public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
         k kVarA;
-        Iterator<Map.Entry<String, com.tsf.extend.base.b.A>> it = d().entrySet().iterator();
+        Iterator<Map.Entry<String, com.tsf.extend.base.b.PagedListModel>> it = d().entrySet().iterator();
         k kVar = null;
         while (true) {
             if (!it.hasNext()) {
                 kVarA = kVar;
                 break;
             }
-            Map.Entry<String, com.tsf.extend.base.b.A> next = it.next();
+            Map.Entry<String, com.tsf.extend.base.b.PagedListModel> next = it.next();
             if (next.getValue() instanceof p) {
                 kVarA = a((p) next.getValue(), j);
                 if (kVarA != null) {
@@ -368,8 +368,8 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         return null;
     }
 
-    private com.tsf.extend.base.b.A a(JSONObject jSONObject) {
-        com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
+    private com.tsf.extend.base.b.PagedListModel a(JSONObject jSONObject) {
+        com.tsf.extend.base.b.PagedListModel aVar = new com.tsf.extend.base.b.PagedListModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -523,9 +523,9 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         p pVarG = g(jSONObject);
         final int iOptInt = jSONObject.optInt("ttl", 10);
         if (pVarG != null) {
-            pVarG.a(new com.tsf.extend.base.b.b() { // from class: com.tsf.extend.theme.v.8
-                @Override // com.tsf.extend.base.b.b
-                public boolean a(com.tsf.extend.base.b.A aVar) {
+            pVarG.a(new com.tsf.extend.base.b.FilterPredicate() { // from class: com.tsf.extend.theme.v.8
+                @Override // com.tsf.extend.base.b.FilterPredicate
+                public boolean a(com.tsf.extend.base.b.PagedListModel aVar) {
                     return System.currentTimeMillis() - aVar.c() > TimeUnit.MINUTES.toMillis((long) iOptInt);
                 }
             });
@@ -959,14 +959,14 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         }
     }
 
-    public static void c(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a) {
+    public static void c(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.4
             @Override // java.lang.Runnable
             public void run() {
-                Object objA = com.tsf.extend.base.b.a.a.a().a("DATA_RECOMMEND_CACHE");
-                final com.tsf.extend.base.b.A aVar = objA instanceof com.tsf.extend.base.b.A ? (com.tsf.extend.base.b.A) objA : null;
+                Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("DATA_RECOMMEND_CACHE");
+                final com.tsf.extend.base.b.PagedListModel aVar = objA instanceof com.tsf.extend.base.b.PagedListModel ? (com.tsf.extend.base.b.PagedListModel) objA : null;
                 if (aVar != null && aVar.d()) {
-                    com.tsf.extend.base.b.a.a.a().b("DATA_RECOMMEND_CACHE");
+                    com.tsf.extend.base.b.a.BitmapCacheHelper.a().b("DATA_RECOMMEND_CACHE");
                     aVar = null;
                 }
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.v.4.1
@@ -979,11 +979,11 @@ public class v extends com.tsf.extend.base.d.BaseDataProvider {
         });
     }
 
-    public void a(final com.tsf.extend.base.b.A aVar) {
+    public void a(final com.tsf.extend.base.b.PagedListModel aVar) {
         com.tsf.extend.base.j.z.a(2, new Runnable() { // from class: com.tsf.extend.theme.v.5
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.base.b.a.a.a().a("DATA_RECOMMEND_CACHE", aVar);
+                com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("DATA_RECOMMEND_CACHE", aVar);
             }
         });
     }

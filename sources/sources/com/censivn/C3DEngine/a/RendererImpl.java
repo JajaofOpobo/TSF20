@@ -132,13 +132,13 @@ public class RendererImpl implements GLSurfaceView.Renderer {
     }
 
     protected void b() {
-        Iterator<i> it = this.j.d().iterator();
+        Iterator<IRenderable> it = this.j.d().iterator();
         while (it.hasNext()) {
             it.next().dispatchDraw();
         }
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         this.d = this.d || iVar.isAnimationObject;
         if (iVar.isAnimationObject && iVar.isHighPriorityAnimationObject) {
             this.e = true;
@@ -233,12 +233,12 @@ public class RendererImpl implements GLSurfaceView.Renderer {
         this.h = true;
     }
 
-    public i c(float f2, float f3) {
+    public IRenderable c(float f2, float f3) {
         int size = this.j.d().size() - 1;
         while (true) {
             int i = size;
             if (i > -1) {
-                i hittingTarget = this.j.d().get(i).getHittingTarget(f2, f3, false);
+                IRenderable hittingTarget = this.j.d().get(i).getHittingTarget(f2, f3, false);
                 if (hittingTarget == null) {
                     size = i - 1;
                 } else {

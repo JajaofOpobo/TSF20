@@ -7,23 +7,23 @@ import android.graphics.PaintFlagsDrawFilter;
 import android.text.format.DateFormat;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.shell.VInformation;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneRendererA extends j {
+public class SceneRendererA extends BaseRenderable {
     private static a w;
     int a;
     private long d;
     private int e;
     private int f;
-    private com.censivn.C3DEngine.b.f.a.a g;
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable g;
     private d h;
     private d i;
     private int p;
-    private com.censivn.C3DEngine.b.f.a.a v;
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable v;
     private final int c = 30;
     public boolean b = false;
     private long j = 0;
@@ -44,10 +44,10 @@ public class SceneRendererA extends j {
 
     public void a() {
         float fXHDScale = VInformation.XHDScale();
-        this.g = new com.censivn.C3DEngine.b.f.a.a(30, 40, 40, 40, null, false);
+        this.g = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(30, 40, 40, 40, null, false);
         this.g.textures().addElement(this.t);
         for (int i = 0; i < 30; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.g.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.g.a(i);
             this.n[i] = new DeferredItemGroup(bVarA, 250.0f, ((-12.0f) * i) + 90.0f);
             bVarA.b(0, 0, 1, 1);
             bVarA.h();
@@ -58,7 +58,7 @@ public class SceneRendererA extends j {
             if (i3 >= 30) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.b bVarA2 = this.g.a(i3);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.g.a(i3);
             int i4 = i3 + 3;
             if (i4 >= 30) {
                 i4 %= 30;
@@ -69,11 +69,11 @@ public class SceneRendererA extends j {
         this.g.calAABB();
         this.p = (int) a(this.g.a(0), this.g.a(3));
         int size = this.m.size();
-        this.v = new com.censivn.C3DEngine.b.f.a.a(size, 1, this.p, 4, null, true);
+        this.v = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(size, 1, this.p, 4, null, true);
         this.v.textures().addElement(this.q);
         for (int i5 = 0; i5 < size; i5++) {
             e eVar = this.m.get(i5);
-            com.censivn.C3DEngine.b.f.a.b bVarA3 = this.v.a(i5);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = this.v.a(i5);
             bVarA3.a(0.0f);
             bVarA3.b(0, 0, this.p, 4);
             eVar.a(bVarA3);
@@ -119,7 +119,7 @@ public class SceneRendererA extends j {
         com.censivn.C3DEngine.C3DEngine.g().a(this.t);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         this.j++;
         Iterator<e> it = this.m.iterator();
@@ -181,7 +181,7 @@ public class SceneRendererA extends j {
         return bitmapCreateBitmap;
     }
 
-    private float a(com.censivn.C3DEngine.b.f.a.b bVar, com.censivn.C3DEngine.b.f.a.b bVar2) {
+    private float a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar2) {
         float f = bVar2.i().x - bVar.i().x;
         float f2 = bVar2.i().y - bVar.i().y;
         return (float) Math.sqrt((f * f) + (f2 * f2));

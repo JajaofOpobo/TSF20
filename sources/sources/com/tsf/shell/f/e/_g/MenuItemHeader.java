@@ -2,11 +2,11 @@ package com.tsf.shell.f.e._g;
 
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class MenuItemHeader extends j {
+public class MenuItemHeader extends BaseRenderable {
     private com.tsf.shell.f.a.b.ShaderSlotElement a;
     private i b;
 
@@ -17,7 +17,7 @@ public class MenuItemHeader extends j {
         this.a.scale().y = 0.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         if (this.b != null) {
             final i iVar2 = this.b;
@@ -77,12 +77,12 @@ public class MenuItemHeader extends j {
         this.a.a(i);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         com.tsf.shell.manager.app.ActionHandler.a(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawEnd() {
         com.tsf.shell.manager.app.ActionHandler.a();
     }

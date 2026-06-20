@@ -15,17 +15,17 @@ public class DashLayoutListener extends h {
     private d g;
 
     public DashLayoutListener(d dVar) {
-        super(new com.censivn.C3DEngine.b.f.a.a(5, 60, 120, 60));
+        super(new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(5, 60, 120, 60));
         this.a = false;
         this.g = dVar;
         this.e.useVBO(false);
-        com.censivn.C3DEngine.b.f.a.a aVar = (com.censivn.C3DEngine.b.f.a.a) this.e;
+        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar = (com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) this.e;
         aVar.textures().addElement(h);
-        com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(4);
+        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(4);
         bVarA.a(0, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
         bVarA.h();
         for (int i = 0; i < 4; i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA2 = aVar.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = aVar.a(i);
             bVarA2.a(1, 0, 1, 1, com.censivn.C3DEngine.b.b.A.a(60.0f), com.censivn.C3DEngine.b.b.A.a(60.0f));
             bVarA2.o.setAll(0.0f, 0.0f, 1.0f);
             bVarA2.h();
@@ -39,7 +39,7 @@ public class DashLayoutListener extends h {
         this.c = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.2
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g.b((com.censivn.C3DEngine.b.f.a.a) c.this.e, c.this.d);
+                c.this.g.b((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) c.this.e, c.this.d);
             }
         };
         this.d = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.3
@@ -51,13 +51,13 @@ public class DashLayoutListener extends h {
         this.f = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.4
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g.a((com.censivn.C3DEngine.b.f.a.a) c.this.e, c.this.b);
+                c.this.g.a((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) c.this.e, c.this.b);
             }
         };
         calAABB();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (!this.a) {
             this.a = true;

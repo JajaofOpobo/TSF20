@@ -29,7 +29,7 @@ public class c extends com.tsf.shell.f.e.f.b {
         return this.c;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
@@ -40,13 +40,13 @@ public class c extends com.tsf.shell.f.e.f.b {
         onChildMeasure(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         super.addChildAt(iVar, i);
         onChildMeasure(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
@@ -59,8 +59,8 @@ public class c extends com.tsf.shell.f.e.f.b {
         return super.removeChild(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
-    public i removeChildAt(int i) {
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
+    public IRenderable removeChildAt(int i) {
         i iVarRemoveChildAt = super.removeChildAt(i);
         onChildMeasure(iVarRemoveChildAt);
         return iVarRemoveChildAt;
@@ -146,7 +146,7 @@ public class c extends com.tsf.shell.f.e.f.b {
         notifLayoutRefresh();
     }
 
-    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible() && this.a) {
             if (a(true)) {

@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherAppWidgetInfo;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.e.CellLayout;
 import com.tsf.shell.f.e.WidgetFreeResizeController;
 import com.tsf.shell.f.f.WorkspacePage;
@@ -15,7 +15,7 @@ import com.tsf.shell.manager.bind.ShellModel;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetShell extends com.tsf.shell.f.i.PageItem {
     public boolean a;
-    public k b;
+    public GridRenderable b;
     public String a;
     public com.tsf.shell.e.WidgetContainer g;
     public TextureElement a;
@@ -40,7 +40,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         this.i = new Object();
         i(false);
         this.f = str;
-        this.b = new k(0.0f, 0.0f, 1, 1, false);
+        this.b = new GridRenderable(0.0f, 0.0f, 1, 1, false);
         addChild(this.b);
         this.b.visible(false);
         this.k = new c(this);
@@ -62,22 +62,22 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public float minX() {
         return (-this.b.b()) / 2.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public float minY() {
         return (-this.b.c()) / 2.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public float maxX() {
         return this.b.b() / 2.0f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public float maxY() {
         return this.b.c() / 2.0f;
     }
@@ -159,7 +159,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         invalidate();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         synchronized (this.i) {
             if (this.j != null) {
@@ -174,7 +174,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         this.b.b(i2);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     /* JADX INFO: renamed from: l, reason: merged with bridge method [inline-methods] */
     public c getMouseEventListener() {
         return this.k;
@@ -266,7 +266,7 @@ public class WidgetShell extends com.tsf.shell.f.i.PageItem {
         this.b.mouseEnabled(false);
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         this.l.b(this);
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i._b.b.WidgetShell.5

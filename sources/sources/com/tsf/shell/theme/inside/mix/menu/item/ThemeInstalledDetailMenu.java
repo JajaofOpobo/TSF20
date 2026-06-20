@@ -1,8 +1,8 @@
 package com.tsf.shell.theme.inside.mix.menu.item;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 
 import com.tsf.shell.f.e._g.a.MenuItemConfig;
@@ -21,15 +21,15 @@ import com.tsf.shell.theme.inside.mix.menu.item.detail.ThemeWallpaperInfoLayout;
 public class ThemeInstalledDetailMenu extends MenuItemConfig {
     private boolean isShowingMoreLayout;
     private ToggleRowItem mApplyButton;
-    private j mContainer;
+    private BaseRenderable mContainer;
     private com.censivn.C3DEngine.b.b.A.b mContentContainer;
     private com.censivn.C3DEngine.b.b.A.d mDetailContainer;
     private ThemeIconInfoLayout mIconLayout;
     private a mKeyListener;
-    private j mMainContainer;
+    private BaseRenderable mMainContainer;
     private ThemeMoreInfoLayout mMoreInfoLayout;
-    private m mNoticTextView;
-    private j mOtherContainer = new j();
+    private LabelRenderable mNoticTextView;
+    private BaseRenderable mOtherContainer = new BaseRenderable();
     private ThemePreviewInfoLayout mPreviewLayout;
     private com.censivn.C3DEngine.b.h.d.a mRingIcon;
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase mShortcut;
@@ -55,14 +55,14 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
 
     public ThemeInstalledDetailMenu() {
         this.mOtherContainer.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
-        this.mNoticTextView = new m();
+        this.mNoticTextView = new LabelRenderable();
         this.mNoticTextView.c(b.i.notic_theme_compatible);
         this.mNoticTextView.d(30);
         this.mNoticTextView.visible(false);
         this.mNoticTextView.a(true);
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(750.0f));
         this.mKeyListener = new a();
-        this.mMainContainer = new j();
+        this.mMainContainer = new BaseRenderable();
         this.mRingIcon = new com.censivn.C3DEngine.b.h.d.a(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.mRingIcon.a(b.d.ico_info);
@@ -71,7 +71,7 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
         this.mShortcut.k.a(0).f();
         this.mShortcut.aL();
         this.mShortcut.scale().setAll(0.43f, 0.43f, 1.0f);
-        this.mContainer = new j();
+        this.mContainer = new BaseRenderable();
         this.mApplyButton = new ToggleRowItem(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledDetailMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
@@ -183,7 +183,7 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.mMainContainer;
     }
 

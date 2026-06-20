@@ -2,7 +2,7 @@ package com.tsf.shell.f._d.d.a;
 
 import com.badlogic.gdx.physics.box2d.Joint;
 import com.badlogic.gdx.physics.box2d.joints.RevoluteJointDef;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.f.WorkspacePage;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -11,7 +11,7 @@ public class DashEffectHandler implements DashEffectCallback {
     private com.tsf.shell.f._d.d.DashAnimationPool b;
     private com.tsf.shell.f._d.d.DashAnimationPool c;
     private Joint d;
-    private j e;
+    private BaseRenderable e;
     private g f;
     private float g = 0.0f;
     private float h = 0.0f;
@@ -28,7 +28,7 @@ public class DashEffectHandler implements DashEffectCallback {
     }
 
     private void e() {
-        this.e = new j();
+        this.e = new BaseRenderable();
         this.b = new com.tsf.shell.f._d.d.DashAnimationPool(com.tsf.shell.manager.app.v.ObjectHelper.b, 320.0f, 96.0f, 1, 1, true);
         this.b.a.setTransform(0.0f, 0.0f, 0.0f);
         this.c = new com.tsf.shell.f._d.d.DashAnimationPool(com.tsf.shell.manager.app.v.ObjectHelper.b, 128.0f, 64.0f, 1, 1, 100, 40, false);

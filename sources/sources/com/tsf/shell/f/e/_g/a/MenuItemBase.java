@@ -1,6 +1,6 @@
 package com.tsf.shell.f.e._g.a;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class MenuItemBase {
@@ -43,11 +43,11 @@ public abstract class MenuItemBase {
         return this.isAnimation;
     }
 
-    public j getMenuContainer() {
+    public BaseRenderable getMenuContainer() {
         return null;
     }
 
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return null;
     }
 

@@ -1,8 +1,8 @@
 package com.tsf.shell.manager.r.b;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -19,7 +19,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         this.a = aVar;
         this.c = com.tsf.shell.manager.app.FolderManager.c;
         this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 20.0f * com.censivn.C3DEngine.b.b.A.c, 20.0f * com.censivn.C3DEngine.b.b.A.c, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.T, (com.censivn.C3DEngine.b.b.A.c * 20.0f) + com.tsf.shell.manager.o.ButtonPresetManager.b.U) { // from class: com.tsf.shell.manager.r.b.TogglePanel.1
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
             }
         };
@@ -65,7 +65,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.b;
     }
 
@@ -92,7 +92,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         }
     }
 
-    class A extends j {
+    class A extends BaseRenderable {
         private com.tsf.shell.f.i.b.e.DrawerItemSettingsAction b;
 
         public A() {
@@ -102,7 +102,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             this.b = jVar;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.j
+        @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildStart() {
             if (this.b != null) {
                 this.b.dispatchDraw();

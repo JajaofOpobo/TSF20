@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class BaseShareHandler {
     public Intent a;
     public Integer b = null;
     public String c;

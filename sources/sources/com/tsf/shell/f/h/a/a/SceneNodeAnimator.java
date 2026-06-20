@@ -3,22 +3,22 @@ package com.tsf.shell.f.h.a.a;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneNodeAnimator extends j {
-    private m b;
+public class SceneNodeAnimator extends BaseRenderable {
+    private LabelRenderable b;
     private com.tsf.shell.manager.c.a.a.ContactModel c;
     private com.tsf.shell.utils.ReusableBitmapHolder e = new com.tsf.shell.utils.ReusableBitmapHolder();
     private TextureElement d = new TextureElement(0, false);
-    private k a = new k(SceneElementRenderer.a, SceneElementRenderer.a, false);
+    private GridRenderable a = new GridRenderable(SceneElementRenderer.a, SceneElementRenderer.a, false);
 
     public SceneNodeAnimator() {
         this.a.textures().addElement(this.d);
         this.a.calAABB();
-        this.b = new m();
+        this.b = new LabelRenderable();
         this.b.d(32);
         this.b.position().y = com.censivn.C3DEngine.b.b.A.a(-120.0f);
         this.b.g(170);
@@ -39,7 +39,7 @@ public class SceneNodeAnimator extends j {
         return this.c;
     }
 
-    public k b() {
+    public GridRenderable b() {
         return this.a;
     }
 
@@ -54,7 +54,7 @@ public class SceneNodeAnimator extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.d.id == 0) {
             this.d.id = com.tsf.shell.manager.app.ServiceFactory.a().v().c(false).id;

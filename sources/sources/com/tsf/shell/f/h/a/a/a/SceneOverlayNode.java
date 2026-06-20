@@ -2,10 +2,10 @@ package com.tsf.shell.f.h.a.a.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneOverlayNode extends k {
+public class SceneOverlayNode extends GridRenderable {
     private TextureElement a;
 
     public SceneOverlayNode(float f, float f2) {
@@ -14,7 +14,7 @@ public class SceneOverlayNode extends k {
         textures().addElement(this.a);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         Bitmap bitmapA;
         if (this.a.id == 0 && (bitmapA = a()) != null) {

@@ -7,11 +7,11 @@ import com.tsf.shell.f.f.b.ClothTransition;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingB extends PreferenceSettingBase {
     private C0108a a;
-    private com.censivn.C3DEngine.b.f.j b;
+    private com.censivn.C3DEngine.b.f.BaseRenderable b;
     private TextureElement d;
     private TextureElement e;
     private TextureElement f;
-    private com.censivn.C3DEngine.b.f.k g;
+    private com.censivn.C3DEngine.b.f.GridRenderable g;
 
     public PreferenceSettingB(String str) {
         super(str, com.censivn.C3DEngine.b.b.A.a(200.0f));
@@ -20,11 +20,11 @@ public class PreferenceSettingB extends PreferenceSettingBase {
         this.f = new TextureElement(0, false);
         this.g = com.censivn.C3DEngine.b.b.A.a(180.0f, 180.0f);
         this.g.textures().addElement(this.f);
-        this.b = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingB.1
+        this.b = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingB.1
             private float b = 0.0f;
             private boolean c = true;
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 b.this.a.d(this.b);
                 if (this.c) {

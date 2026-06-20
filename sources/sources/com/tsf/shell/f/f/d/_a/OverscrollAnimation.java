@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.d._a;
 
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.f.WorkspacePage;
@@ -15,7 +15,7 @@ public class OverscrollAnimation implements OverscrollHandler {
     public int b;
     private n c;
     private com.tsf.shell.f.f.d.ScrollStateAggregator d;
-    private j e;
+    private BaseRenderable e;
     private int f;
     private int g;
     private int h;

@@ -7,19 +7,19 @@ import android.provider.ContactsContract;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.Home;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneSurfaceNode extends j implements SceneInteractionHandler.InterfaceC0098a {
+public class SceneSurfaceNode extends BaseRenderable implements SceneInteractionHandler.InterfaceC0098a {
     private com.tsf.shell.f.h.a.a.SceneElementRenderer a;
-    private j b;
+    private BaseRenderable b;
     private float d;
     private com.tsf.shell.f.h.a.a.SceneNodeAnimator f;
-    private m g;
+    private LabelRenderable g;
     private com.tsf.shell.f.e.ObjectPool<d> h;
     private a j;
     private e l;
@@ -40,7 +40,7 @@ public class SceneSurfaceNode extends j implements SceneInteractionHandler.Inter
         });
         this.d = com.tsf.shell.f.h.a.a.SceneElementRenderer.a / com.tsf.shell.f.h.a.a.SceneElementRenderer.b;
         addChild(this.c);
-        this.g = new m();
+        this.g = new LabelRenderable();
         this.g.d(55);
         addChild(this.g);
         this.j = new SceneInteractionHandler(this);

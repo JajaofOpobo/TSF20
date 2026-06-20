@@ -148,7 +148,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
             this.o.setColor(ThemeElementType.PARSER_CONFIG_ALL);
         }
         this.e.setDivider(null);
-        com.tsf.extend.base.b.A aVar = v.h().d().get(this.w);
+        com.tsf.extend.base.b.PagedListModel aVar = v.h().d().get(this.w);
         if (aVar != null && aVar.a() != null) {
             this.t = false;
             this.a = aVar.b();
@@ -393,7 +393,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         this.x = z;
     }
 
-    class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    class A implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private com.tsf.extend.base.d.BaseDataProvider.b b;
 
         public A(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -401,9 +401,9 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.PagedListModel) null);
             } else {
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeAlbumsPager.a.1
                     @Override // java.lang.Runnable
@@ -433,7 +433,7 @@ public class ThemeAlbumsPager extends LinearLayout implements View.OnClickListen
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, final com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, final com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeAlbumsPager.a.2
                 @Override // java.lang.Runnable
                 public void run() {

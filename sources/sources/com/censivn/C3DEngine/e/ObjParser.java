@@ -111,10 +111,10 @@ public class ObjParser extends AbstractModelParser implements IModelParser {
     }
 
     @Override // com.censivn.C3DEngine.e.AbstractModelParser, com.censivn.C3DEngine.e.IModelParser
-    public j b() {
+    public BaseRenderable b() {
         Bitmap bitmap;
         Log.d("Censivn3D", "Start object creation");
-        j jVar = new j(0, 0);
+        j jVar = new BaseRenderable(0, 0);
         int size = this.e.size();
         if (!this.h.c()) {
             bitmap = null;

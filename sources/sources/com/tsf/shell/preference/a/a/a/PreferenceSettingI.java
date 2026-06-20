@@ -1,6 +1,6 @@
 package com.tsf.shell.preference.a.a.a;
 
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -20,7 +20,7 @@ public class PreferenceSettingI extends PreferenceSettingBase {
     }
 
     public void a(String str) {
-        m mVar = new m();
+        m mVar = new LabelRenderable();
         mVar.a(str);
         mVar.b(1);
         mVar.d(38);

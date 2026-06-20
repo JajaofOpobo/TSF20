@@ -2,23 +2,23 @@ package com.tsf.shell.preference.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
-    private m a;
-    private k b;
+    private LabelRenderable a;
+    private GridRenderable b;
     private TextureElement d;
-    private j e;
-    private j f;
+    private BaseRenderable e;
+    private BaseRenderable f;
 
     public PreferenceBaseFragment(float f) {
         d((int) f);
         a(1);
-        this.e = new j();
+        this.e = new BaseRenderable();
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
         bVar.a = com.censivn.C3DEngine.b.b.A.a(10.0f);
         bVar.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
@@ -29,13 +29,13 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
         this.d = new TextureElement(0, false);
         this.b.textures().addElement(this.d);
         this.e.addChild(this.b);
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.b(1);
         this.a.c(b.i.text_demo);
         this.a.d(50);
         this.e.addChild(this.a);
         addChild(this.e);
-        this.f = new j();
+        this.f = new BaseRenderable();
         com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
         bVar2.a = com.censivn.C3DEngine.b.b.A.a(20.0f);
         bVar2.b = com.censivn.C3DEngine.b.b.A.a(20.0f);
@@ -46,7 +46,7 @@ public class PreferenceBaseFragment extends com.censivn.C3DEngine.b.e.f {
         addChild(this.f);
     }
 
-    public j e() {
+    public BaseRenderable e() {
         return this.f;
     }
 

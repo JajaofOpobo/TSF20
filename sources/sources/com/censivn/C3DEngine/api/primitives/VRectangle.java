@@ -41,7 +41,7 @@ public class VRectangle extends VObject3dContainer {
 
     private VRectangle(float f, float f2, int i, int i2, boolean z, boolean z2) {
         this.mThis = this;
-        this.vTarget = new k(f, f2, i, i2, z, z2) { // from class: com.censivn.C3DEngine.api.primitives.VRectangle.1
+        this.vTarget = new GridRenderable(f, f2, i, i2, z, z2) { // from class: com.censivn.C3DEngine.api.primitives.VRectangle.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onFocus() {
                 VRectangle.this.mThis.onFocus();
@@ -72,7 +72,7 @@ public class VRectangle extends VObject3dContainer {
                 VRectangle.this.mThis.draw();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void dispatchDraw() {
                 VRectangle.this.mThis.dispatchDraw();
             }
@@ -82,12 +82,12 @@ public class VRectangle extends VObject3dContainer {
                 VRectangle.this.mThis.drawMVPMatrix();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart(i iVar) {
                 ((VObject3dContainer) VRectangle.this.mThis).onDrawChildStart(iVar.getVirtualObject());
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildEnd(i iVar) {
                 ((VObject3dContainer) VRectangle.this.mThis).onDrawChildEnd(iVar.getVirtualObject());
             }

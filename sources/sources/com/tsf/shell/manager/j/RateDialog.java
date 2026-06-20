@@ -3,17 +3,17 @@ package com.tsf.shell.manager.j;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.g;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.l;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.ResourceGridRenderable;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.ButtonRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.utils.FeedbackComposer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class RateDialog extends j {
+public class RateDialog extends BaseRenderable {
     public static int c;
     public static int d;
     public static float j;
@@ -23,12 +23,12 @@ public class RateDialog extends j {
     public com.tsf.shell.f.e.i.GridLayoutData a;
     private RateFaceView n;
     private TexturedBackground o;
-    private k p;
-    private g q;
-    private g r;
-    private l s;
-    private l t;
-    private m u = new m();
+    private GridRenderable p;
+    private ResourceGridRenderable q;
+    private ResourceGridRenderable r;
+    private ButtonRenderable s;
+    private ButtonRenderable t;
+    private LabelRenderable u = new LabelRenderable();
     public static final int b = com.censivn.C3DEngine.b.b.A.b(820.0f);
     public static int e = com.censivn.C3DEngine.b.b.A.b(100.0f);
     public static int f = com.censivn.C3DEngine.b.b.A.b(60.0f);
@@ -47,13 +47,13 @@ public class RateDialog extends j {
         this.u.b();
         d = (int) this.u.minY();
         c = ((g + f) - d) + f + h + i + h;
-        this.o = new d(b, c, com.censivn.C3DEngine.b.b.A.c, new com.censivn.C3DEngine.b.f.b.b(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
+        this.o = new d(b, c, com.censivn.C3DEngine.b.b.A.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
         this.o.c(b, c);
-        this.p = new k(b, c, false);
+        this.p = new GridRenderable(b, c, false);
         this.p.setDefaultColor(new Color4(-2236963));
         addChild(this.p);
-        this.q = new g() { // from class: com.tsf.shell.manager.j.RateDialog.1
-            @Override // com.censivn.C3DEngine.b.f.g, com.censivn.C3DEngine.b.f.i
+        this.q = new ResourceGridRenderable() { // from class: com.tsf.shell.manager.j.RateDialog.1
+            @Override // com.censivn.C3DEngine.b.f.ResourceGridRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 super.onDrawStart();
                 position().y = ((b.c - b.g) / 2.0f) + b.this.p.position().y;
@@ -66,8 +66,8 @@ public class RateDialog extends j {
         this.q.addChild(this.n);
         m = ((c / 2.0f) - g) - f;
         addChild(this.u);
-        this.s = new l(b, h, -32768, -3841536) { // from class: com.tsf.shell.manager.j.RateDialog.2
-            @Override // com.censivn.C3DEngine.b.f.l
+        this.s = new ButtonRenderable(b, h, -32768, -3841536) { // from class: com.tsf.shell.manager.j.RateDialog.2
+            @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.2.1
                     @Override // java.lang.Runnable
@@ -80,8 +80,8 @@ public class RateDialog extends j {
         this.s.b(45);
         this.s.a(b.i.text_rate_first_rate);
         addChild(this.s);
-        this.t = new l(b, h, -16735271, -16748909) { // from class: com.tsf.shell.manager.j.RateDialog.3
-            @Override // com.censivn.C3DEngine.b.f.l
+        this.t = new ButtonRenderable(b, h, -16735271, -16748909) { // from class: com.tsf.shell.manager.j.RateDialog.3
+            @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.3.1
                     @Override // java.lang.Runnable
@@ -91,17 +91,17 @@ public class RateDialog extends j {
                 });
             }
 
-            @Override // com.censivn.C3DEngine.b.f.l
+            @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void b() {
                 b.this.n.a();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.l
+            @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void c() {
                 b.this.n.b();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 float f2 = (b.this.t.position().y - (b.h / 2.0f)) + b.this.p.position().y;
                 float f3 = b.this.p.points().getAsNumber3dPX(0).y;
@@ -119,7 +119,7 @@ public class RateDialog extends j {
         this.a = new com.tsf.shell.f.e.i.GridLayoutData();
         this.a.position().y = com.censivn.C3DEngine.b.b.A.a(50.0f);
         this.q.addChild(this.a);
-        this.r = new g();
+        this.r = new ResourceGridRenderable();
         this.r.position().x = (b / 2.0f) - com.censivn.C3DEngine.b.b.A.a(40.0f);
         l = (c / 2.0f) - com.censivn.C3DEngine.b.b.A.a(40.0f);
         this.r.a(b.d.rate_window_close);

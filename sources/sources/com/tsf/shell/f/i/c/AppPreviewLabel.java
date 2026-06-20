@@ -8,15 +8,15 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AppPreviewLabel extends ItemLabelProvider {
-    public k b;
+    public GridRenderable b;
     private ApplicationInfo f;
     private AppWidgetProviderInfo g;
     public Bundle a;
@@ -33,7 +33,7 @@ public class AppPreviewLabel extends ItemLabelProvider {
         a(str);
         this.f = applicationInfo;
         this.g = appWidgetProviderInfo;
-        this.b = new k(0.0f, 0.0f, false);
+        this.b = new GridRenderable(0.0f, 0.0f, false);
         this.b.textures().addElement(this.h);
     }
 

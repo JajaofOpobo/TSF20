@@ -3,7 +3,7 @@ package com.tsf.shell.f.i._a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.WidgetMatchResizeController;
 import com.tsf.shell.f.f.PageTouchHandler;
@@ -176,7 +176,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
             r2 = 1
             r3 = 0
             super.d(r7)
-            com.censivn.C3DEngine.b.f.i r0 = r6.c
+            com.censivn.C3DEngine.b.f.IRenderable r0 = r6.c
             com.tsf.shell.f.i.PageItem r0 = (com.tsf.shell.f.i.PageItem) r0
             com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             com.tsf.shell.manager.f.ScreenFadeController r1 = r1.a()
@@ -215,13 +215,13 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         L55:
             com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             r1.d()
-            com.censivn.C3DEngine.b.f.i r1 = r6.c
+            com.censivn.C3DEngine.b.f.IRenderable r1 = r6.c
             boolean r1 = r1 instanceof com.tsf.shell.f.e.SelectionFrameLayoutItem
             if (r1 == 0) goto Lc6
             com.tsf.shell.f.i.PageItem r1 = r6.g
             boolean r1 = r1.D()
             if (r1 != 0) goto Lc6
-            com.censivn.C3DEngine.b.f.i r1 = r6.c
+            com.censivn.C3DEngine.b.f.IRenderable r1 = r6.c
             com.tsf.shell.f.e.SelectionFrameLayoutItem r1 = (com.tsf.shell.f.e.SelectionFrameLayoutItem) r1
             boolean r4 = r6.n
             if (r4 != 0) goto L76
@@ -384,10 +384,10 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.a {
         L2c:
             if (r0 != 0) goto L58
             float[] r0 = com.tsf.shell.utils.GraphicsEngineBridge.a(r6)
-            com.censivn.C3DEngine.b.f.i r3 = r5.c
+            com.censivn.C3DEngine.b.f.IRenderable r3 = r5.c
             r2 = r0[r2]
             r0 = r0[r4]
-            com.censivn.C3DEngine.b.f.i r0 = r3.getHittingTarget(r2, r0, r4)
+            com.censivn.C3DEngine.b.f.IRenderable r0 = r3.getHittingTarget(r2, r0, r4)
         L3c:
             if (r0 == 0) goto L55
             com.censivn.C3DEngine.b.d.a r0 = r0.getMouseEventListener()

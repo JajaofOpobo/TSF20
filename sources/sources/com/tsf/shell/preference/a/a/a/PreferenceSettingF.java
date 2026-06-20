@@ -4,12 +4,12 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingF extends PreferenceSettingBase {
-    private com.censivn.C3DEngine.b.f.g a;
+    private com.censivn.C3DEngine.b.f.ResourceGridRenderable a;
 
     public PreferenceSettingF(String str, int i, float f) {
         super(str, f);
-        this.a = new com.censivn.C3DEngine.b.f.g() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingF.1
-            @Override // com.censivn.C3DEngine.b.f.g
+        this.a = new com.censivn.C3DEngine.b.f.ResourceGridRenderable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingF.1
+            @Override // com.censivn.C3DEngine.b.f.ResourceGridRenderable
             public void a(TextureElement textureElement) {
                 int iA = (int) com.censivn.C3DEngine.b.b.A.a(textureElement.height);
                 f.this.a.a((int) com.censivn.C3DEngine.b.b.A.a(textureElement.width));

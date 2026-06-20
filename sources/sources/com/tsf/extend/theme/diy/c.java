@@ -31,11 +31,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c implements b<com.tsf.extend.base.b.A> {
+public class c implements b<com.tsf.extend.base.b.PagedListModel> {
     private static c a = new c();
     private String c;
     private String d;
-    private com.tsf.extend.base.b.A e;
+    private com.tsf.extend.base.b.PagedListModel e;
     private Map<com.tsf.extend.theme.b.a, b.a<aq>> f;
     private android.support.v4.d.f<String, SoftReference<Bitmap>> g = new android.support.v4.d.f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.theme.diy.c.1
         /* JADX INFO: Access modifiers changed from: protected */
@@ -54,7 +54,7 @@ public class c implements b<com.tsf.extend.base.b.A> {
             return 1;
         }
     };
-    private m b = com.tsf.extend.base.f.c.a(h.b());
+    private m b = com.tsf.extend.base.f.RequestQueueHelper.a(h.b());
 
     private c() {
         this.c = com.tsf.extend.base.j.d.b(h.b());
@@ -67,7 +67,7 @@ public class c implements b<com.tsf.extend.base.b.A> {
         return a;
     }
 
-    public void a(b.a<com.tsf.extend.base.b.A> aVar, b.EnumC0061b enumC0061b) {
+    public void a(b.a<com.tsf.extend.base.b.PagedListModel> aVar, b.EnumC0061b enumC0061b) {
         switch (enumC0061b) {
             case LoadCache:
                 b(aVar, enumC0061b);
@@ -83,7 +83,7 @@ public class c implements b<com.tsf.extend.base.b.A> {
         }
     }
 
-    public void b(final b.a<com.tsf.extend.base.b.A> aVar, final b.EnumC0061b enumC0061b) {
+    public void b(final b.a<com.tsf.extend.base.b.PagedListModel> aVar, final b.EnumC0061b enumC0061b) {
         if (this.e != null) {
             if (aVar != null) {
                 aVar.a(this.e);
@@ -102,9 +102,9 @@ public class c implements b<com.tsf.extend.base.b.A> {
         z.a(2, new Runnable() { // from class: com.tsf.extend.theme.diy.c.4
             @Override // java.lang.Runnable
             public void run() {
-                Object objA = com.tsf.extend.base.b.a.a.a().a("theme_diy");
-                if (objA instanceof com.tsf.extend.base.b.A) {
-                    c.this.e = (com.tsf.extend.base.b.A) objA;
+                Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("theme_diy");
+                if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
+                    c.this.e = (com.tsf.extend.base.b.PagedListModel) objA;
                 }
                 if (c.this.e != null && aVar != null) {
                     aVar.a(c.this.e);
@@ -121,13 +121,13 @@ public class c implements b<com.tsf.extend.base.b.A> {
         });
     }
 
-    public void a(String str, b.a<com.tsf.extend.base.b.A> aVar, final b.EnumC0061b enumC0061b) {
+    public void a(String str, b.a<com.tsf.extend.base.b.PagedListModel> aVar, final b.EnumC0061b enumC0061b) {
         final WeakReference weakReference = new WeakReference(aVar);
         j jVar = new j(str, null, new n.b<JSONObject>() { // from class: com.tsf.extend.theme.diy.c.5
             @Override // com.android.volley.n.b
             public void a(JSONObject jSONObject) {
                 try {
-                    com.tsf.extend.base.b.A aVarA = c.this.a(jSONObject);
+                    com.tsf.extend.base.b.PagedListModel aVarA = c.this.a(jSONObject);
                     if (aVarA == null || aVarA.a().size() == 0) {
                         b.a aVar2 = (b.a) weakReference.get();
                         if (aVar2 != null) {
@@ -170,17 +170,17 @@ public class c implements b<com.tsf.extend.base.b.A> {
         this.b.a((l) jVar);
     }
 
-    protected void a(final com.tsf.extend.base.b.A aVar) {
+    protected void a(final com.tsf.extend.base.b.PagedListModel aVar) {
         z.a(2, new Runnable() { // from class: com.tsf.extend.theme.diy.c.7
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.extend.base.b.a.a.a().a("theme_diy", aVar);
+                com.tsf.extend.base.b.a.BitmapCacheHelper.a().a("theme_diy", aVar);
             }
         });
     }
 
-    public com.tsf.extend.base.b.A a(JSONObject jSONObject) throws JSONException {
-        com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
+    public com.tsf.extend.base.b.PagedListModel a(JSONObject jSONObject) throws JSONException {
+        com.tsf.extend.base.b.PagedListModel aVar = new com.tsf.extend.base.b.PagedListModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -318,7 +318,7 @@ public class c implements b<com.tsf.extend.base.b.A> {
             }
         } else {
             final WeakReference weakReference = new WeakReference(aVar);
-            this.b.a((l) new com.tsf.extend.base.f.a(str, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.diy.c.10
+            this.b.a((l) new com.tsf.extend.base.f.BitmapRequest(str, new n.b<Bitmap>() { // from class: com.tsf.extend.theme.diy.c.10
                 @Override // com.android.volley.n.b
                 public void a(Bitmap bitmap2) {
                     if (bitmap2 != null) {
@@ -362,12 +362,12 @@ public class c implements b<com.tsf.extend.base.b.A> {
         return "theme_diy".equals(str);
     }
 
-    private static class a implements com.tsf.extend.base.b.b {
+    private static class a implements com.tsf.extend.base.b.FilterPredicate {
         private a() {
         }
 
-        @Override // com.tsf.extend.base.b.b
-        public boolean a(com.tsf.extend.base.b.A aVar) {
+        @Override // com.tsf.extend.base.b.FilterPredicate
+        public boolean a(com.tsf.extend.base.b.PagedListModel aVar) {
             return System.currentTimeMillis() - aVar.c() > TimeUnit.HOURS.toMillis(4L);
         }
     }

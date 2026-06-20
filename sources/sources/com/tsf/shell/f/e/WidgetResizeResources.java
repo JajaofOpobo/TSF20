@@ -54,7 +54,7 @@ public class WidgetResizeResources {
         runnable4.run();
     }
 
-    public static com.censivn.C3DEngine.b.f.b.a a(int i, int i2) {
-        return new com.censivn.C3DEngine.b.f.b.a(i, i2, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+    public static com.censivn.C3DEngine.b.f.b.NinePatchRenderable a(int i, int i2) {
+        return new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(i, i2, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
     }
 }

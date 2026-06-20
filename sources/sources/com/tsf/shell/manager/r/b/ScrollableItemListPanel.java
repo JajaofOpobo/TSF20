@@ -3,8 +3,8 @@ package com.tsf.shell.manager.r.b;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActionItem {
     public com.tsf.shell.manager.r.b.WidgetMenuPanel a;
     private h b;
-    private j c;
+    private BaseRenderable c;
     private a<E> d;
 
     public static abstract class a<E> {
@@ -92,7 +92,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
     public void a(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList, float f, float f2, float f3, float f4) {
         this.a = aVar;
         setFunctions(arrayList);
-        this.c = new j();
+        this.c = new BaseRenderable();
         this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, f3, f4);
         this.c.addChild(this.b);
         this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.2
@@ -177,7 +177,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.c;
     }
 

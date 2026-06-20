@@ -79,7 +79,7 @@ public class A {
     }
 
     public static k a(float f2, float f3) {
-        return new k(c * f2, c * f3, false);
+        return new GridRenderable(c * f2, c * f3, false);
     }
 
     public static void a(int i2) {

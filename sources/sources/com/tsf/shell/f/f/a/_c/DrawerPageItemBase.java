@@ -7,12 +7,12 @@ import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.f.f.a.PageContainerView0133a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.j {
+public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
     protected com.tsf.shell.f.f.a.FolderPage a;
     protected com.tsf.shell.f.f.a.PageGridRenderer b;
     protected int c;
     protected String d;
-    protected com.censivn.C3DEngine.b.f._a.a e;
+    protected com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable e;
     protected C0133a f;
     private TextureElement g = new TextureElement(0, false);
     private boolean h = false;
@@ -30,7 +30,7 @@ public class DrawerPageItemBase extends com.censivn.C3DEngine.b.f.j {
         e();
     }
 
-    public com.censivn.C3DEngine.b.f._a.a e() {
+    public com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable e() {
         if (this.e == null) {
             this.e = DrawerLabelConfig.a();
             this.e.textures().addElement(this.g);

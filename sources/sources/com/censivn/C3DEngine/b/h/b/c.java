@@ -38,10 +38,10 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
     private boolean N;
     private com.tsf.shell.f.f.g O;
     private a P;
-    private j a;
-    private k b;
-    private k c;
-    private j d;
+    private BaseRenderable a;
+    private GridRenderable b;
+    private GridRenderable c;
+    private BaseRenderable d;
     private TextureElement e;
     private TextureElement f;
     private com.censivn.C3DEngine.b.d.a g;
@@ -116,7 +116,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.j = new ArrayList<>();
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(128.0f);
         this.e = ThemeManager.mix.interactiveArrange.getTextureElement(ThemeShellDescription.INTERACTIVE_ARRANGE_BG, iA, iA);
-        this.b = new k(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.c.1
+        this.b = new GridRenderable(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.c.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 if (c.this.i.e()) {
@@ -225,7 +225,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.d = this.h.b();
         addChild(this.h);
         this.f = ThemeManager.mix.interactiveArrange.getTextureElement(ThemeShellDescription.INTERACTIVE_ARRANGE_SCALE_BUTTON, com.tsf.shell.manager.g.a.a, com.tsf.shell.manager.g.a.a);
-        this.c = new k(com.tsf.shell.manager.g.a.a, com.tsf.shell.manager.g.a.a, false);
+        this.c = new GridRenderable(com.tsf.shell.manager.g.a.a, com.tsf.shell.manager.g.a.a, false);
         this.c.textures().addElement(this.f);
         this.c.calAABB(1.3f, 1.3f, 1.0f);
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.c.5
@@ -263,7 +263,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         }
         com.censivn.C3DEngine.b.c.b.a(this);
         if (Q == null) {
-            Q = new j();
+            Q = new BaseRenderable();
             c.b bVar = new c.b();
             bVar.a = com.censivn.C3DEngine.b.b.A.a(-130.0f);
             bVar.b = com.censivn.C3DEngine.b.b.A.a(128.0f);

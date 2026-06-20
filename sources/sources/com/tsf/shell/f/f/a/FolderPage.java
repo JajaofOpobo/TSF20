@@ -16,9 +16,9 @@ import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutAppInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.b;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.A;
 // import com.tsf.shell.f.f.a.PageContainerBase;
 import com.tsf.shell.f.f.a.b.DrawerTransitionManager;
@@ -55,10 +55,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public static int y;
     public static int z;
     public com.tsf.shell.f.i.b.e.DrawerItemButton G;
-    public k H;
+    public GridRenderable H;
     protected C0133a I;
-    private j K;
-    private j L;
+    private BaseRenderable K;
+    private BaseRenderable L;
     private a M;
     private a N;
     private com.tsf.shell.f.f.a._a.DrawerItemContainer O;
@@ -68,7 +68,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private FolderManager V;
     private ArrayList<a> W;
     private l X;
-    private j Y;
+    private BaseRenderable Y;
     private com.censivn.C3DEngine.b.g.d Z;
     private com.censivn.C3DEngine.b.g.d aa;
     private com.censivn.C3DEngine.b.g._b.b ab;
@@ -81,7 +81,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private e ak;
     private B al;
     private C0133a ao;
-    private k aq;
+    private GridRenderable aq;
     private TextureElement ar;
     private FrameLayout au;
     public static int l = 0;
@@ -503,16 +503,16 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.T.mouseEnabled(false);
         this.P = com.censivn.C3DEngine.b.b.A.D;
         F = 350.0f * com.censivn.C3DEngine.b.b.A.c;
-        this.Y = new j();
+        this.Y = new BaseRenderable();
         this.Y.name(J);
         this.ae = new com.censivn.C3DEngine.b.d.a(this.Y);
         this.ad = f(this.Y);
         this.Y.setMouseEventListener(this.ad);
         this.Y.mouseEnabled(true);
         this.c.addChild(this.Y);
-        this.K = new j();
-        this.L = new j() { // from class: com.tsf.shell.f.f.a.FolderPage.9
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.K = new BaseRenderable();
+        this.L = new BaseRenderable() { // from class: com.tsf.shell.f.f.a.FolderPage.9
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             @SuppressLint({"WrongCall"})
             public void onDrawStart() {
                 h.this.N = null;
@@ -544,7 +544,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 if (h.this.N != null) {
                     h.this.N.b().a(h.this.L);
@@ -620,7 +620,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.Y.setMouseEventListener(this.ad);
     }
 
-    public j aA() {
+    public BaseRenderable aA() {
         return this.L;
     }
 

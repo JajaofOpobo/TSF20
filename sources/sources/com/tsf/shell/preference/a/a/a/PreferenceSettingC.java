@@ -18,7 +18,7 @@ public class PreferenceSettingC extends PreferenceSettingBase {
         public int a;
         public String a;
         public TextureElement a;
-        public com.censivn.C3DEngine.b.f.k d;
+        public com.censivn.C3DEngine.b.f.GridRenderable d;
 
         public a(int i, String str) {
             this.a = i;
@@ -46,7 +46,7 @@ public class PreferenceSettingC extends PreferenceSettingBase {
         this.a.add(new PreferenceSettingA(PreferenceSettingB.d.preference_about_tsf, "http://www.tsfui.com/"));
         float fA = com.censivn.C3DEngine.b.b.A.a(118.0f);
         for (final a aVar : this.a) {
-            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(fA, fA, false);
+            com.censivn.C3DEngine.b.f.GridRenderable kVar = new com.censivn.C3DEngine.b.f.GridRenderable(fA, fA, false);
             kVar.setDefaultColor(new Color4(-5592406));
             aVar.d = kVar;
             kVar.textures().addElement(aVar.c);

@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerLabelElement extends com.censivn.C3DEngine.b.f.k {
+public class DrawerLabelElement extends com.censivn.C3DEngine.b.f.GridRenderable {
     private int a;
     private String d;
     private TextureElement e;
@@ -50,7 +50,7 @@ public class DrawerLabelElement extends com.censivn.C3DEngine.b.f.k {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.e.id == 0) {
             com.tsf.shell.manager.o._a.TextConfigV2 aVar = new com.tsf.shell.manager.o._a.TextConfigV2();

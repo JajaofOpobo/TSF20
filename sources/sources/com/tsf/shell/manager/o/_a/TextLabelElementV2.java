@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.manager.o._a.LabelManagerV2;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
@@ -15,7 +15,7 @@ public class TextLabelElementV2 {
     public int b;
     public int c;
     private com.tsf.shell.manager.o.ButtonMetrics e;
-    private k f = new k(0.0f, 0.0f, false);
+    private GridRenderable f = new GridRenderable(0.0f, 0.0f, false);
     private TextureElement g = new TextureElement(0, false);
     private c.a h;
 
@@ -25,7 +25,7 @@ public class TextLabelElementV2 {
         this.f.textures().addElement(this.g);
     }
 
-    public k a() {
+    public GridRenderable a() {
         return this.f;
     }
 

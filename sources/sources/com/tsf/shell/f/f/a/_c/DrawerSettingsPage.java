@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class DrawerSettingsPage extends DrawerPageItemBase {
     private static com.tsf.shell.f.e.CircleDotNode l;
     private ArrayList<com.tsf.shell.f.f.a._c._a.DrawerIndicatorDot> g;
-    private com.censivn.C3DEngine.b.f.j h;
+    private com.censivn.C3DEngine.b.f.BaseRenderable h;
     private float i;
     private float j;
     private com.tsf.shell.f.f.a._c._a.DrawerIconLoaderTask k;
@@ -60,7 +60,7 @@ public class DrawerSettingsPage extends DrawerPageItemBase {
                 com.tsf.shell.manager.app.StateHub.t().am().c();
             }
         }));
-        this.h = new com.censivn.C3DEngine.b.f.j();
+        this.h = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.h.position().y = com.censivn.C3DEngine.b.b.A.a(20.0f);
         this.i = com.censivn.C3DEngine.b.b.A.b(12.0f) + com.tsf.shell.f.f.a._c._a.DrawerIndicatorDot.a;
         this.j = ((-this.i) * 2.0f) / 2.0f;

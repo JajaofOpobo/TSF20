@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.f.f.a.PageGridRenderer;
@@ -13,11 +13,11 @@ import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderIndicatorDot extends j {
+public class FolderIndicatorDot extends BaseRenderable {
     public static final int a = com.censivn.C3DEngine.b.b.A.b(26.0f);
     private static TextureElement b = new TextureElement(0, false);
     private static k CircleDotNode;
-    private j d;
+    private BaseRenderable d;
     private String f;
     private int g;
     private float h;
@@ -26,7 +26,7 @@ public class FolderIndicatorDot extends j {
     private e.a m;
     private TextureElement c = new TextureElement(0, false);
     private boolean l = false;
-    private com.censivn.C3DEngine.b.f.k e = new com.censivn.C3DEngine.b.f.k(a, a, false);
+    private com.censivn.C3DEngine.b.f.GridRenderable e = new com.censivn.C3DEngine.b.f.GridRenderable(a, a, false);
 
     public FolderIndicatorDot(com.tsf.shell.f.f.a.c.FolderSettingsPage.a aVar) {
         this.j = aVar;
@@ -89,7 +89,7 @@ public class FolderIndicatorDot extends j {
         this.l = false;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if (this.l && this.d.visible()) {
             CircleDotNode.scale().setAllFrom(this.d.scale());
@@ -108,8 +108,8 @@ public class FolderIndicatorDot extends j {
     public void d() {
     }
 
-    public j a(TextureElement textureElement) {
-        com.censivn.C3DEngine.b.f.a.a aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
+    public BaseRenderable a(TextureElement textureElement) {
+        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
         aVarA.a(true);
         aVarA.textures().addElement(textureElement);
         return aVarA;

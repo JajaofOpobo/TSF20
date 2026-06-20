@@ -1,6 +1,6 @@
 package com.tsf.shell.f.f.a._d._a;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.Comparator;
 
@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class DrawerSortBaseV2 extends com.tsf.shell.f.f.TransitionRenderer {
     protected int a;
     protected Comparator<com.tsf.shell.f.i.PageItem> b;
-    protected Comparator<i> c;
+    protected Comparator<IRenderable> c;
     protected String d;
 
     public DrawerSortBaseV2(int i, int i2) {

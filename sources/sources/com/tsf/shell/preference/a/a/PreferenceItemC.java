@@ -4,7 +4,7 @@ import android.app.Activity;
 import com.censivn.C3DEngine.b.e.a;
 import com.censivn.C3DEngine.b.e.i;
 import com.censivn.C3DEngine.b.e.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.Home;
 
@@ -181,7 +181,7 @@ public class PreferenceItemC extends i {
     }
 
     public static class A extends com.censivn.C3DEngine.b.e.e {
-        final com.censivn.C3DEngine.b.f.j b = new com.censivn.C3DEngine.b.f.j();
+        final com.censivn.C3DEngine.b.f.BaseRenderable b = new com.censivn.C3DEngine.b.f.BaseRenderable();
 
         public A() {
             a(com.censivn.C3DEngine.b.b.A.a(200.0f));
@@ -205,7 +205,7 @@ public class PreferenceItemC extends i {
             l(i);
         }
 
-        @Override // com.censivn.C3DEngine.b.b.c, com.censivn.C3DEngine.b.f.j
+        @Override // com.censivn.C3DEngine.b.b.c, com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildStart() {
             super.onDrawChildStart();
             this.b.dispatchDraw();

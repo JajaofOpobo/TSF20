@@ -6,8 +6,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.e.e;
 import com.censivn.C3DEngine.b.e.h;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e._g.a.MenuItemConfig;
@@ -21,16 +21,16 @@ public class ThemeIconDesignerMenu extends d {
     public static final int NOTIF_POINT_VERSION_CODE_110 = 110;
     private float currentScale;
     private l mApplyButton;
-    private j mContainer;
-    private k mDemoShortcutIcon;
+    private BaseRenderable mContainer;
+    private GridRenderable mDemoShortcutIcon;
     private TextureElement mDemoShortcutTexture;
     private ThemeMenuMixElementPlane mElementPlane;
-    private j mIconContainer;
+    private BaseRenderable mIconContainer;
     private b mLableContentLayout;
     private com.censivn.C3DEngine.b.b.A.d mLableScrollView;
     private l mResetButton;
     private h mSeekBarPreference;
-    private k mShortcut;
+    private GridRenderable mShortcut;
     private int newStyleIndex;
     private int currentStyleId = 0;
     private a mCalStyle = new a();
@@ -38,8 +38,8 @@ public class ThemeIconDesignerMenu extends d {
     public ThemeIconDesignerMenu() {
         setTitle(b.i.text_icon_designer);
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(950.0f));
-        this.mContainer = new j();
-        this.mShortcut = new k(com.censivn.C3DEngine.b.b.A.a(80.0f), com.censivn.C3DEngine.b.b.A.a(80.0f), false);
+        this.mContainer = new BaseRenderable();
+        this.mShortcut = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(80.0f), com.censivn.C3DEngine.b.b.A.a(80.0f), false);
         addIcon(this.mShortcut);
         this.mApplyButton = new l(b.d.button_apply, b.i.theme_apply_theme) { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeIconDesignerMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
@@ -78,10 +78,10 @@ public class ThemeIconDesignerMenu extends d {
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.mResetButton, com.tsf.shell.manager.o.ThemeColorConstants.h);
         this.mResetButton.position().y = com.censivn.C3DEngine.b.b.A.a(-223.0f);
         this.mResetButton.a(0);
-        this.mIconContainer = new j();
+        this.mIconContainer = new BaseRenderable();
         this.mIconContainer.position().y = com.censivn.C3DEngine.b.b.A.a(400.0f);
         this.mContainer.addChild(this.mIconContainer);
-        this.mDemoShortcutIcon = new k(0.0f, 0.0f, false);
+        this.mDemoShortcutIcon = new GridRenderable(0.0f, 0.0f, false);
         this.mDemoShortcutTexture = new TextureElement(0, false);
         this.mDemoShortcutIcon.textures().addElement(this.mDemoShortcutTexture);
         this.mIconContainer.addChild(this.mDemoShortcutIcon);
@@ -173,7 +173,7 @@ public class ThemeIconDesignerMenu extends d {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.mContainer;
     }
 

@@ -1,13 +1,13 @@
 package com.tsf.shell.f._d.a._a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
-    private static com.censivn.C3DEngine.b.f._a.a a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
+    private static com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     private com.tsf.shell.f._d.a.DashElementInfo b;
 
     public DashButtonA(int i, boolean z) {
@@ -17,10 +17,10 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
     public void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable) {
-        a((com.censivn.C3DEngine.b.f._a.a) iVar, runnable);
+        a((com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable) iVar, runnable);
     }
 
-    public void a(final com.censivn.C3DEngine.b.f._a.a aVar, final Runnable runnable) {
+    public void a(final com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable aVar, final Runnable runnable) {
         final float f;
         final float f2;
         final float f3;
@@ -157,7 +157,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final com.censivn.C3DEngine.b.f._a.a aVar, final Runnable runnable, final boolean z) {
+    public void a(final com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable aVar, final Runnable runnable, final boolean z) {
         final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.b);
@@ -207,7 +207,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
         com.censivn.C3DEngine.b.g.c.a(aVar, 1000, dVar);
     }
 
-    public void a(com.censivn.C3DEngine.b.f._a.a aVar) {
+    public void a(com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable aVar) {
         com.censivn.C3DEngine.b.g.c.a(aVar);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.a, com.tsf.shell.manager.o.ButtonPresetManager.a.i, com.tsf.shell.manager.o.ButtonPresetManager.a.q, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, com.tsf.shell.manager.o.ButtonPresetManager.a.k, com.tsf.shell.manager.o.ButtonPresetManager.a.s, 0.0f);
@@ -231,11 +231,11 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
-    public void a(k kVar, Runnable runnable) {
+    public void a(GridRenderable kVar, Runnable runnable) {
         b(kVar, runnable);
     }
 
-    private void b(final k kVar, final Runnable runnable) {
+    private void b(final GridRenderable kVar, final Runnable runnable) {
         final float fB = kVar.b();
         final float fPxX = kVar.points().pxX(0);
         final float fPxX2 = kVar.points().pxX(1);
@@ -270,7 +270,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void c(final k kVar, final Runnable runnable) {
+    public void c(final GridRenderable kVar, final Runnable runnable) {
         final k kVar2 = com.tsf.shell.f._d.a.DashElementInfo.b;
         final float fPxX = kVar.points().pxX(0);
         final float fPxX2 = kVar.points().pxX(1);

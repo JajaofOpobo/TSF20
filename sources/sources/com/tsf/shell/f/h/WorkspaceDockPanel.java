@@ -4,12 +4,12 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceDockPanel extends j {
+public class WorkspaceDockPanel extends BaseRenderable {
     private b a;
     private com.censivn.C3DEngine.b.h.e.a f;
     private com.censivn.C3DEngine.b.h.e.a g;

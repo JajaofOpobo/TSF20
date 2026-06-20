@@ -14,7 +14,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j implements com.censivn.C3DEngine.b.c.b.a {
+public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.censivn.C3DEngine.b.c.b.a {
     private static WidgetFreeResizeController a;
     private static C b;
     private static com.tsf.shell.f.i.b.b.ItemShell c;
@@ -33,7 +33,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
 
     public static void b() {
         a = new WidgetFreeResizeController();
-        b = new SpringEasing(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
+        b = new SpringEasing(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
         a.addChild(WidgetResizeResources);
     }
 
@@ -104,18 +104,18 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         return b;
     }
 
-    static class C extends com.censivn.C3DEngine.b.f.b.a {
+    static class C extends com.censivn.C3DEngine.b.f.b.NinePatchRenderable {
         public static int a = 120;
         private int d;
         private int e;
         private DynamicTextureElement f;
         private C g;
         private WidgetFreeResizeController h;
-        private com.censivn.C3DEngine.b.f.k i;
-        private com.censivn.C3DEngine.b.f.k j;
-        private com.censivn.C3DEngine.b.f.k k;
-        private com.censivn.C3DEngine.b.f.k l;
-        private com.censivn.C3DEngine.b.f.n m;
+        private com.censivn.C3DEngine.b.f.GridRenderable i;
+        private com.censivn.C3DEngine.b.f.GridRenderable j;
+        private com.censivn.C3DEngine.b.f.GridRenderable k;
+        private com.censivn.C3DEngine.b.f.GridRenderable l;
+        private com.censivn.C3DEngine.b.f.EmptyRenderable m;
         private com.censivn.C3DEngine.b.g._b.b n;
         private int o;
         private float p;
@@ -124,7 +124,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         private float s;
         private int[] t;
 
-        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar, WidgetFreeResizeController tVar) {
+        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.NinePatchBounds bVar, WidgetFreeResizeController tVar) {
             super(f, f2, bVar);
             this.o = 3;
             this.t = new int[4];
@@ -150,7 +150,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             textureElement.setReloadThemeRunnable(runnable2);
             runnable2.run();
             textures().addElement(com.tsf.shell.f.e.b.ResizeTextureManager);
-            this.m = new com.censivn.C3DEngine.b.f.n();
+            this.m = new com.censivn.C3DEngine.b.f.EmptyRenderable();
             this.m.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.3
                 private float b;
                 private float d;
@@ -258,13 +258,13 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onKillFocus() {
             t.a.h();
         }
 
-        private com.censivn.C3DEngine.b.f.k c(int i) {
-            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(64.0f, 64.0f);
+        private com.censivn.C3DEngine.b.f.GridRenderable c(int i) {
+            com.censivn.C3DEngine.b.f.GridRenderable kVar = new com.censivn.C3DEngine.b.f.GridRenderable(64.0f, 64.0f);
             switch (SelectionFrame) {
                 case 0:
                     kVar.moveAllPointsSP(0.0f, -32.0f, 0.0f);
@@ -323,7 +323,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             this.s = i2 / 2;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.k
+        @Override // com.censivn.C3DEngine.b.f.GridRenderable
         public void a(float f, float f2) {
             super.b(f, f2);
             float f3 = f / 2.0f;
@@ -338,7 +338,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             this.l.position().y = 0.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void i(float f) {
             super.i(ILayoutItem);
             this.k.position().x = (-f) + this.o;
@@ -348,7 +348,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void g(float f) {
             super.g(ILayoutItem);
             this.l.position().x = (f - this.o) - 3.0f;
@@ -358,7 +358,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void c(float f) {
             super.c(ILayoutItem);
             this.i.position().y = (f - this.o) - 1.0f;
@@ -368,7 +368,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void e(float f) {
             super.e(ILayoutItem);
             this.j.position().y = (-f) + this.o + 1.0f;
@@ -577,7 +577,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.j impl
         private C e;
         private boolean f;
 
-        public A(com.censivn.C3DEngine.b.f.i iVar, C cVar, int i) {
+        public A(com.censivn.C3DEngine.b.f.IRenderable iVar, C cVar, int i) {
             super(iVar);
             this.f = false;
             this.e = cVar;

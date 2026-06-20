@@ -10,28 +10,28 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderRenameDialog extends j {
+public class FolderRenameDialog extends BaseRenderable {
     private h b;
-    private j d;
-    private m e;
+    private BaseRenderable d;
+    private LabelRenderable e;
     private A f;
     private A g;
-    private j a = new j();
-    private k c = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
+    private BaseRenderable a = new BaseRenderable();
+    private GridRenderable c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
     public FolderRenameDialog(h hVar) {
         this.b = hVar;
         this.c.setDefaultColor(new Color4(0, 0, 0, 50));
         this.c.calAABB();
         this.a.addChild(this.c);
-        this.d = new j();
+        this.d = new BaseRenderable();
         this.a.addChild(this.d);
         this.f = new PageContainerBase(com.tsf.shell.manager.g.LayoutDimensionConstants.j, b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.1
             @Override // com.tsf.shell.f.f.a.FolderRenameDialog.a
@@ -48,7 +48,7 @@ public class FolderRenameDialog extends j {
             }
         };
         this.d.addChild(this.g);
-        this.e = new m();
+        this.e = new LabelRenderable();
         this.e.d(44);
         this.e.a(com.tsf.shell.manager.b.ConfigManager.ap());
         this.e.b(1);
@@ -195,7 +195,7 @@ public class FolderRenameDialog extends j {
         });
     }
 
-    static class A extends k {
+    static class A extends GridRenderable {
         private TextureElement a;
         private int d;
         private com.tsf.shell.f.e.CircleDotNode e;
@@ -239,7 +239,7 @@ public class FolderRenameDialog extends j {
         public void a() {
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.a.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, this.h, this.h);
@@ -268,7 +268,7 @@ public class FolderRenameDialog extends j {
             this.f = false;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.j
+        @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
             if (this.f) {
                 this.e.dispatchDraw();

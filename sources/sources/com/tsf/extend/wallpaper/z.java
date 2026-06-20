@@ -132,7 +132,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider
-    protected com.tsf.extend.base.b.A a(String str, String str2, JSONObject jSONObject) {
+    protected com.tsf.extend.base.b.PagedListModel a(String str, String str2, JSONObject jSONObject) {
         if (str == null) {
             return null;
         }
@@ -193,7 +193,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
     }
 
     @Override // com.tsf.extend.base.d.BaseDataProvider
-    public com.tsf.extend.base.b.A b() {
+    public com.tsf.extend.base.b.PagedListModel b() {
         return null;
     }
 
@@ -209,15 +209,15 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         return context.getResources().getString(num.intValue());
     }
 
-    public com.tsf.extend.base.b.A a(long j2, String str) {
-        com.tsf.extend.base.b.A aVar = d().get(a(str, j2, 0L));
+    public com.tsf.extend.base.b.PagedListModel a(long j2, String str) {
+        com.tsf.extend.base.b.PagedListModel aVar = d().get(a(str, j2, 0L));
         if (aVar == null || aVar.d()) {
             return null;
         }
         return aVar;
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j2, long j3, long j4, String str) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, a.b bVar, long j2, long j3, long j4, String str) {
         String strA = a(str, j3, j4);
         JSONObject jSONObject = new JSONObject();
         try {
@@ -231,7 +231,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         a(strA, interfaceC0048a, bVar, jSONObject);
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar, long j2, long j3, int i2, long j4, String str, int i3) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, a.b bVar, long j2, long j3, int i2, long j4, String str, int i3) {
         String strA = a(str, j3, j4);
         JSONObject jSONObject = new JSONObject();
         try {
@@ -267,7 +267,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         }, z));
     }
 
-    private static com.tsf.extend.base.b.A b(JSONObject jSONObject) throws JSONException {
+    private static com.tsf.extend.base.b.PagedListModel b(JSONObject jSONObject) throws JSONException {
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         if (jSONArrayOptJSONArray == null) {
             return null;
@@ -280,7 +280,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         return uVar;
     }
 
-    private static com.tsf.extend.base.b.A c(JSONObject jSONObject) throws JSONException {
+    private static com.tsf.extend.base.b.PagedListModel c(JSONObject jSONObject) throws JSONException {
         ai aiVar;
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         if (jSONArrayOptJSONArray == null) {
@@ -373,18 +373,18 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         }
     }
 
-    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.A> interfaceC0048a, a.b bVar) {
+    public void a(a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> interfaceC0048a, a.b bVar) {
         a(d, interfaceC0048a, bVar, (JSONObject) null);
     }
 
-    private com.tsf.extend.base.b.A d(JSONObject jSONObject) throws JSONException {
+    private com.tsf.extend.base.b.PagedListModel d(JSONObject jSONObject) throws JSONException {
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("data");
         int iOptInt = jSONObject.optInt("resCode");
         if (jSONArrayOptJSONArray == null || iOptInt != 0) {
             return null;
         }
         com.tsf.extend.AppContextHolder.b();
-        com.tsf.extend.base.b.A aVar = new com.tsf.extend.base.b.A();
+        com.tsf.extend.base.b.PagedListModel aVar = new com.tsf.extend.base.b.PagedListModel();
         aVar.a(new A());
         aVar.a(System.currentTimeMillis());
         aVar.a(jSONObject.optString("version"));
@@ -409,7 +409,7 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         }
     }
 
-    public com.tsf.extend.base.b.A j() {
+    public com.tsf.extend.base.b.PagedListModel j() {
         return d().get(d);
     }
 
@@ -447,12 +447,12 @@ public class z extends com.tsf.extend.base.d.BaseDataProvider implements o.a {
         a(mVar);
     }
 
-    private static class A implements com.tsf.extend.base.b.b {
+    private static class A implements com.tsf.extend.base.b.FilterPredicate {
         private A() {
         }
 
-        @Override // com.tsf.extend.base.b.b
-        public boolean a(com.tsf.extend.base.b.A aVar) {
+        @Override // com.tsf.extend.base.b.FilterPredicate
+        public boolean a(com.tsf.extend.base.b.PagedListModel aVar) {
             return System.currentTimeMillis() - aVar.c() > TimeUnit.HOURS.toMillis(10L);
         }
     }

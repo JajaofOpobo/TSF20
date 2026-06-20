@@ -11,7 +11,7 @@ import com.android.volley.toolbox.n;
 import java.io.File;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c {
+public class RequestQueueHelper {
     private static m a = null;
 
     public static m a(Context context) {

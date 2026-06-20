@@ -3,21 +3,21 @@ package com.tsf.shell.f.f.a._a;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
     private static final int h = com.censivn.C3DEngine.b.b.A.b(160.0f);
-    private j c;
-    private k d;
-    private k e;
+    private BaseRenderable c;
+    private GridRenderable d;
+    private GridRenderable e;
     private c i;
     private TextureElement f = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);
-    private j a = new j();
-    private k b = new k(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
+    private BaseRenderable a = new BaseRenderable();
+    private GridRenderable b = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 120.0f * com.censivn.C3DEngine.b.b.A.c, false);
 
     public DrawerVisualFrame(c cVar) {
         boolean z = false;
@@ -30,10 +30,10 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
             }
         });
         this.a.addChild(this.b);
-        this.c = new j();
+        this.c = new BaseRenderable();
         this.a.addChild(this.c);
-        this.d = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.j, com.tsf.shell.manager.g.LayoutDimensionConstants.j, z) { // from class: com.tsf.shell.f.f.a._a.DrawerVisualFrame.2
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.d = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.j, com.tsf.shell.manager.g.LayoutDimensionConstants.j, z) { // from class: com.tsf.shell.f.f.a._a.DrawerVisualFrame.2
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (e.this.f.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(e.this.f, b.d.drawer_top_menu_button_voice_search);
@@ -48,8 +48,8 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.c {
                 com.tsf.shell.manager.app.FolderManager.a(8, true);
             }
         });
-        this.e = new k(com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(61.0f), z) { // from class: com.tsf.shell.f.f.a._a.DrawerVisualFrame.4
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(170.0f), com.censivn.C3DEngine.b.b.A.a(61.0f), z) { // from class: com.tsf.shell.f.f.a._a.DrawerVisualFrame.4
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (e.this.g.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(e.this.g, b.d.allapps_google_icon);

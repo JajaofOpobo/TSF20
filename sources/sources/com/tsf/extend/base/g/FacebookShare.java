@@ -8,7 +8,7 @@ import com.tsf.extend.ResourceIds;
 import java.net.URLEncoder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends d {
+public class FacebookShare extends BaseShareHandler {
     private static String f = "http://m.facebook.com/sharer.php?u=";
     private static String g = "https://play.google.com/store/apps/details?id=com.ksmobile.launcher&referrer=utm_source%3Dsharelink_fbshare";
 
@@ -16,7 +16,7 @@ public class a extends d {
         super(context, intent, "com.facebook.katana", null);
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     protected void a() {
         String stringExtra;
         String stringExtra2;
@@ -80,7 +80,7 @@ public class a extends d {
         this.a.putExtra("android.intent.extra.TEXT", this.a.getStringExtra("WEB_URL"));
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     public boolean b() {
         this.e.startActivity(n.a(this.e, f + g));
         return true;

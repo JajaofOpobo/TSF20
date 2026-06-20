@@ -3,8 +3,8 @@ package com.tsf.shell.f.g.a;
 import android.content.ComponentName;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.n;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 import com.tsf.shell.ShellActivity;
 import java.util.ArrayList;
 
@@ -15,9 +15,9 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
     public d c;
     public g d;
     public f e;
-    private n f;
+    private EmptyRenderable f;
     private boolean g;
-    private j h;
+    private BaseRenderable h;
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase i;
     private Runnable j;
     private boolean k;
@@ -38,7 +38,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
         this.e = new GestureMenuMarkItem(this);
         arrayList.add(this.e);
         setMenuItems(arrayList);
-        this.f = new n();
+        this.f = new EmptyRenderable();
         this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.f) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
@@ -157,7 +157,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
             this.i = new com.tsf.shell.f.i.b.e.DrawerItemButton() { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.2
                 com.tsf.shell.f._d.b.a.DashItemD a;
 
-                @Override // com.censivn.C3DEngine.b.f.j
+                @Override // com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildStart() {
                     super.onDrawChildStart();
                     this.a = null;
@@ -167,7 +167,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
                     }
                 }
 
-                @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.j
+                @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildEnd() {
                     super.onDrawChildEnd();
                     if (this.a != null) {
@@ -175,7 +175,7 @@ public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
                     }
                 }
             };
-            this.h = new j();
+            this.h = new BaseRenderable();
             this.h.addChild(this.i);
             this.i.k.textures().addElement(textureElement);
             this.i.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.i) { // from class: com.tsf.shell.f.g.a.GestureMenuOverlay.3

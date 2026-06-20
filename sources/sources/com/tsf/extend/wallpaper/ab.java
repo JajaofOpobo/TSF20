@@ -272,14 +272,14 @@ public class ab {
 
     public static void a(int i) {
         try {
-            com.tsf.extend.base.h.a.a().b().b("key_wallpaper_choose_type", i);
+            com.tsf.extend.base.h.LogWriter.a().b().b("key_wallpaper_choose_type", i);
         } catch (Exception e) {
         }
     }
 
     private static int d() {
         try {
-            return com.tsf.extend.base.h.a.a().b().a("key_wallpaper_choose_type", 0);
+            return com.tsf.extend.base.h.LogWriter.a().b().a("key_wallpaper_choose_type", 0);
         } catch (Exception e) {
             return 0;
         }
@@ -287,7 +287,7 @@ public class ab {
 
     private static int e() {
         try {
-            return com.tsf.extend.base.h.a.a().b().a("key_wallpaper_choose_ab", 0);
+            return com.tsf.extend.base.h.LogWriter.a().b().a("key_wallpaper_choose_ab", 0);
         } catch (Exception e) {
             return 0;
         }

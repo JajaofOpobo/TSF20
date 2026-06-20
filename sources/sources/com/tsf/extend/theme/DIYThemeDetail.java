@@ -359,7 +359,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                     }
                 };
                 if (file.exists()) {
-                    new com.tsf.extend.base.g.c(getContext(), com.tsf.extend.base.g.d.a(strL, file.getAbsolutePath(), string, string2, "https://goo.gl/XGthJ0", strValueOf), aVar).a(getContext());
+                    new com.tsf.extend.base.g.ShareIntentHandler(getContext(), com.tsf.extend.base.g.BaseShareHandler.a(strL, file.getAbsolutePath(), string, string2, "https://goo.gl/XGthJ0", strValueOf), aVar).a(getContext());
                 } else {
                     k();
                     new AsyncTask<Void, Void, Boolean>() { // from class: com.tsf.extend.theme.DIYThemeDetail.13
@@ -376,7 +376,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
                         public void onPostExecute(Boolean bool) {
                             boolean zBooleanValue = bool.booleanValue();
                             DIYThemeDetail.this.i();
-                            new com.tsf.extend.base.g.c(DIYThemeDetail.this.getContext(), com.tsf.extend.base.g.d.a(strL, zBooleanValue ? file.getAbsolutePath() : null, string, string2, "https://goo.gl/XGthJ0", strValueOf), aVar).a(DIYThemeDetail.this.getContext());
+                            new com.tsf.extend.base.g.ShareIntentHandler(DIYThemeDetail.this.getContext(), com.tsf.extend.base.g.BaseShareHandler.a(strL, zBooleanValue ? file.getAbsolutePath() : null, string, string2, "https://goo.gl/XGthJ0", strValueOf), aVar).a(DIYThemeDetail.this.getContext());
                         }
                     }.execute(new Void[0]);
                 }

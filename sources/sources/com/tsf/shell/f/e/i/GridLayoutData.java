@@ -1,14 +1,14 @@
 package com.tsf.shell.f.e.i;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GridLayoutData extends j {
+public class GridLayoutData extends BaseRenderable {
     private static final int a = com.censivn.C3DEngine.b.b.A.b(120.0f);
     private static final int b = com.censivn.C3DEngine.b.b.A.b(32.0f);
     private static final int c = com.censivn.C3DEngine.b.b.A.b(10.0f);
@@ -69,7 +69,7 @@ public class GridLayoutData extends j {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         Iterator<i> it = children().iterator();
         while (it.hasNext()) {

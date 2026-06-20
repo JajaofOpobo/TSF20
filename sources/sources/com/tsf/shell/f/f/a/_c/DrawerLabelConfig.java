@@ -11,7 +11,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class DrawerLabelConfig {
     private static com.tsf.shell.manager.o.ButtonMetrics a;
 
-    public static com.censivn.C3DEngine.b.f._a.a a() {
+    public static com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable a() {
         if (a == null) {
             a = new com.tsf.shell.manager.o.ButtonMetrics(1.0f, 1.0f, 120, 120, 250, 42, 20);
             DrawerContentList.a aVar = new DrawerContentList.a();

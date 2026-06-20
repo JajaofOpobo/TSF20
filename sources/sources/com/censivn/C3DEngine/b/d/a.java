@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class a {
-    public i c;
+    public IRenderable c;
 
     public a(i iVar) {
         this.c = iVar;

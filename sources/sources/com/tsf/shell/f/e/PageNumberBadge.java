@@ -7,9 +7,9 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageNumberBadge extends com.censivn.C3DEngine.b.f.j {
+public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private A d;
-    private com.censivn.C3DEngine.b.f.k e;
+    private com.censivn.C3DEngine.b.f.GridRenderable e;
     private TextureElement a = new TextureElement(0, false);
     private TextureElement b = new TextureElement(0, false);
     private boolean f = false;
@@ -25,7 +25,7 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.j {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.b, x.a(b.d.shell_number_bg));
             }
             if (this.e == null) {
-                this.e = new com.censivn.C3DEngine.b.f.k(252.0f * com.censivn.C3DEngine.b.b.A.c, 162.0f * com.censivn.C3DEngine.b.b.A.c, false);
+                this.e = new com.censivn.C3DEngine.b.f.GridRenderable(252.0f * com.censivn.C3DEngine.b.b.A.c, 162.0f * com.censivn.C3DEngine.b.b.A.c, false);
                 this.e.alpha(0.0f);
                 addChild(this.e);
             }
@@ -100,9 +100,9 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.j {
         this.c.add(aVar);
     }
 
-    private class A extends com.censivn.C3DEngine.b.f.a.a {
-        private com.censivn.C3DEngine.b.f.a.b c;
-        private com.censivn.C3DEngine.b.f.a.b d;
+    private class A extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+        private com.censivn.C3DEngine.b.f.a.SpriteItemData c;
+        private com.censivn.C3DEngine.b.f.a.SpriteItemData d;
         private float e;
         private float f;
         private int g;

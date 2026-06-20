@@ -25,7 +25,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public static int b;
     public static float c;
     private Runnable A;
-    private com.censivn.C3DEngine.b.f.j B;
+    private com.censivn.C3DEngine.b.f.BaseRenderable B;
     private Runnable C;
     private com.tsf.shell.f.g.a.GestureMenuOverlay D;
     private com.tsf.shell.manager.r.c.MultiSelectLinePicker E;
@@ -36,8 +36,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler d;
     private n f;
     private com.tsf.shell.f.e.PageIndicatorStrip g;
-    private com.censivn.C3DEngine.b.f.j h;
-    private com.censivn.C3DEngine.b.f.A i;
+    private com.censivn.C3DEngine.b.f.BaseRenderable h;
+    private com.censivn.C3DEngine.b.f.SortedContainerRenderable i;
     private com.tsf.shell.f.f.a.FolderPage j;
     private ArrayList<g> k;
     private ArrayList<Integer> l;
@@ -154,7 +154,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    public com.censivn.C3DEngine.b.f.j f() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable f() {
         j.a();
         this.d = new com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler();
         this.g = new com.tsf.shell.f.e.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
@@ -163,14 +163,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 com.tsf.shell.manager.app.WidgetPanelController.a.k();
             }
         };
-        this.i = new com.censivn.C3DEngine.b.f.A() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.i = new com.censivn.C3DEngine.b.f.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 n.this.x.c();
                 n.this.M();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 n.this.N();
             }
@@ -200,8 +200,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         };
         S();
         this.w = new B();
-        this.h = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.h = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             @SuppressLint({"WrongCall"})
             public void onDrawStart() {
             }
@@ -218,7 +218,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         this.x = new TransitionManager();
         this.i.setAnimationObjectState(true);
         this.p = Home.b().l();
-        this.B = new com.censivn.C3DEngine.b.f.j();
+        this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.v = new com.tsf.shell.manager.f.ScreenFadeController(this.B);
         this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.A.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.A.I, 0.0f);
         this.y = new com.tsf.shell.f.i.a.WallpaperDragHandler(this.B);
@@ -461,7 +461,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d(final g gVar) {
-        com.censivn.C3DEngine.b.f.i iVarN = gVar.n();
+        com.censivn.C3DEngine.b.f.IRenderable iVarN = gVar.n();
         if (iVarN != null) {
             iVarN.calAABB(1.0f, 1.5f, 1.0f);
             A aVar = new A(iVarN);
@@ -590,11 +590,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.j;
     }
 
-    public com.censivn.C3DEngine.b.f.j u() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable u() {
         return this.i;
     }
 
-    public com.censivn.C3DEngine.b.f.j v() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable v() {
         return this.h;
     }
 
@@ -930,7 +930,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         return this.m.t();
     }
 
-    public ArrayList<com.censivn.C3DEngine.b.f.i> G() {
+    public ArrayList<com.censivn.C3DEngine.b.f.IRenderable> G() {
         return this.m.R();
     }
 
@@ -1063,8 +1063,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     }
 
     public class C implements com.censivn.C3DEngine.b.c.b.a {
-        private com.censivn.C3DEngine.b.f.j A;
-        private com.censivn.C3DEngine.b.f.j B;
+        private com.censivn.C3DEngine.b.f.BaseRenderable A;
+        private com.censivn.C3DEngine.b.f.BaseRenderable B;
         private double C;
         private float D;
         private A E;
@@ -1157,12 +1157,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private void i() {
             this.o = -this.n;
             this.p = -((int) (this.n * 3.5f));
-            this.B = new com.censivn.C3DEngine.b.f.j();
-            this.A = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
-                @Override // com.censivn.C3DEngine.b.f.j
+            this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
+            this.A = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
+                @Override // com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildStart() {
                     boolean z;
-                    for (com.censivn.C3DEngine.b.f.i iVar : c.this.A.children()) {
+                    for (com.censivn.C3DEngine.b.f.IRenderable iVar : c.this.A.children()) {
                         g gVar = (g) iVar;
                         float fA = x.a(iVar.rotation().y + rotation().y);
                         if (fA <= 90.0f || fA >= 270.0f) {
@@ -1174,7 +1174,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     }
                 }
 
-                @Override // com.censivn.C3DEngine.b.f.i
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawEnd() {
                     if (!c.this.w && !c.this.z) {
                         Collections.sort(children(), c.this.E);
@@ -1311,7 +1311,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             }
         }
 
-        class A implements Comparator<com.censivn.C3DEngine.b.f.i> {
+        class A implements Comparator<com.censivn.C3DEngine.b.f.IRenderable> {
             private double b = 0.017453292519943295d;
 
             A() {
@@ -1319,7 +1319,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
 
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public int compare(com.censivn.C3DEngine.b.f.i iVar, com.censivn.C3DEngine.b.f.i iVar2) {
+            public int compare(com.censivn.C3DEngine.b.f.IRenderable iVar, com.censivn.C3DEngine.b.f.IRenderable iVar2) {
                 float fCos = (float) (Math.cos(((double) (iVar.rotation().y + c.this.A.rotation().y)) * this.b) * ((double) c.this.n));
                 float fCos2 = (float) (Math.cos(((double) (iVar2.rotation().y + c.this.A.rotation().y)) * this.b) * ((double) c.this.n));
                 if (fCos > fCos2) {
@@ -1467,7 +1467,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                     n.this.a(false, "onDrawFrame");
                 }
                 n.this.i.a();
-                Iterator<com.censivn.C3DEngine.b.f.i> it = n.this.i.children().iterator();
+                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = n.this.i.children().iterator();
                 while (it.hasNext()) {
                     g gVar = (g) it.next();
                     gVar.i();
@@ -2005,7 +2005,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
     public class b {
         private g C;
         private DynamicTextureElement D;
-        private com.censivn.C3DEngine.b.f.j c;
+        private com.censivn.C3DEngine.b.f.BaseRenderable c;
         private boolean e;
         private float f;
         private float g;
@@ -2024,7 +2024,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private int B = 0;
         private boolean G = false;
         private com.tsf.shell.f.e.e.ItemContainerNode F = com.tsf.shell.manager.app.WidgetAnimator.d();
-        private com.censivn.C3DEngine.b.f.k E = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
+        private com.censivn.C3DEngine.b.f.GridRenderable E = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
         private float b = 0.017453292f;
         private float h = com.censivn.C3DEngine.b.b.A.D;
         private float o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.A.b);
@@ -2034,11 +2034,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private float i = 360.0f / (((float) (((double) (2.0f * this.h)) * 3.141592653589793d)) / (n.a - 40));
         private float k = this.i / (n.a - 40);
         private float j = this.i * this.b;
-        private com.censivn.C3DEngine.b.f.j d = new com.censivn.C3DEngine.b.f.j();
+        private com.censivn.C3DEngine.b.f.BaseRenderable d = new com.censivn.C3DEngine.b.f.BaseRenderable();
 
         public b() {
-            this.c = new com.censivn.C3DEngine.b.f.j() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
-                @Override // com.censivn.C3DEngine.b.f.i
+            this.c = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (!b.this.r) {
                         if (b.this.s) {
@@ -2102,7 +2102,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
             return this.e;
         }
 
-        public com.censivn.C3DEngine.b.f.k b() {
+        public com.censivn.C3DEngine.b.f.GridRenderable b() {
             return this.E;
         }
 
@@ -2252,7 +2252,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
                 if (this.d.numChildren() > 0) {
                     Iterator it = arrayList.iterator();
                     while (it.hasNext()) {
-                        g gVar = (g) ((com.censivn.C3DEngine.b.f.i) it.next());
+                        g gVar = (g) ((com.censivn.C3DEngine.b.f.IRenderable) it.next());
                         if (gVar.r() == -1) {
                             if (gVar.q()) {
                                 f(gVar);
@@ -2511,7 +2511,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private void a(float f, float f2, g gVar, boolean z) {
             g gVarO;
             this.y = this.B;
-            com.censivn.C3DEngine.b.f.i hittingTarget = this.c.getHittingTarget(f, f2, true);
+            com.censivn.C3DEngine.b.f.IRenderable hittingTarget = this.c.getHittingTarget(f, f2, true);
             if (hittingTarget != null) {
                 if (hittingTarget == null) {
                     float f3 = this.c.rotation().y;
@@ -2686,7 +2686,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         private boolean f;
         private boolean g;
 
-        public A(com.censivn.C3DEngine.b.f.i iVar) {
+        public A(com.censivn.C3DEngine.b.f.IRenderable iVar) {
             super(iVar);
             this.a = false;
             this.b = false;
@@ -2762,5 +2762,5 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.e.a {
         }
     }
 
-    public void a(com.tsf.shell.f.i.ShortcutItem cVar, com.censivn.C3DEngine.b.f.i iVar, java.util.ArrayList<Integer> arrayList, java.util.ArrayList<Integer> arrayList2) {}
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, com.censivn.C3DEngine.b.f.IRenderable iVar, java.util.ArrayList<Integer> arrayList, java.util.ArrayList<Integer> arrayList2) {}
 }

@@ -6,16 +6,16 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DashItemA extends j {
+public class DashItemA extends BaseRenderable {
     private float e;
     private float f;
     private float g;
     private InterfaceC0089a h;
-    private k i;
+    private GridRenderable i;
     private float a = 0.0f;
     private TextureElement b = new TextureElement(0, false);
     private TextureElement c = new TextureElement(0, false);
@@ -83,7 +83,7 @@ public class DashItemA extends j {
         this.g = f3;
         this.h = interfaceC0089a;
         float f6 = this.e / 2.0f;
-        this.i = new k(0.0f, 0.0f, (this.j / 2) - 1, 1, false);
+        this.i = new GridRenderable(0.0f, 0.0f, (this.j / 2) - 1, 1, false);
         this.i.textures().addElement(this.d);
         addChild(this.i);
         int size = this.i.points().size();

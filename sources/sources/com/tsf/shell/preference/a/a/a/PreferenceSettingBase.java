@@ -2,16 +2,16 @@ package com.tsf.shell.preference.a.a.a;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
-    private m a;
-    private com.censivn.C3DEngine.b.f.k b;
+    private LabelRenderable a;
+    private com.censivn.C3DEngine.b.f.GridRenderable b;
     private TextureElement d;
-    private com.censivn.C3DEngine.b.f.j e;
-    private com.censivn.C3DEngine.b.f.j f;
+    private com.censivn.C3DEngine.b.f.BaseRenderable e;
+    private com.censivn.C3DEngine.b.f.BaseRenderable f;
 
     public PreferenceSettingBase(String str, float f) {
         this(str, f, com.censivn.C3DEngine.b.b.A.a(50.0f), com.censivn.C3DEngine.b.b.A.a(50.0f));
@@ -19,7 +19,7 @@ public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
 
     public PreferenceSettingBase(String str, float f, float f2, float f3) {
         a(1);
-        this.e = new com.censivn.C3DEngine.b.f.j();
+        this.e = new com.censivn.C3DEngine.b.f.BaseRenderable();
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
         bVar.a = com.censivn.C3DEngine.b.b.A.a(10.0f);
         bVar.b = com.censivn.C3DEngine.b.b.A.a(10.0f);
@@ -30,13 +30,13 @@ public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
         this.d = new TextureElement(0, false);
         this.b.textures().addElement(this.d);
         this.e.addChild(this.b);
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.b(1);
         this.a.a(str);
         this.a.d(47);
         this.e.addChild(this.a);
         addChild(this.e);
-        this.f = new com.censivn.C3DEngine.b.f.j();
+        this.f = new com.censivn.C3DEngine.b.f.BaseRenderable();
         com.censivn.C3DEngine.b.b.b bVar2 = new com.censivn.C3DEngine.b.b.b();
         bVar2.a = f2;
         bVar2.b = f3;
@@ -53,7 +53,7 @@ public class PreferenceSettingBase extends com.censivn.C3DEngine.b.e.f {
         d((int) f);
     }
 
-    public com.censivn.C3DEngine.b.f.j e() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable e() {
         return this.f;
     }
 

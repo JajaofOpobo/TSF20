@@ -1,10 +1,10 @@
 package com.tsf.shell.preference.a.a.a;
 
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingJ extends com.censivn.C3DEngine.b.e.f {
-    private m a;
+    private LabelRenderable a;
 
     public PreferenceSettingJ() {
         this(com.censivn.C3DEngine.b.b.A.a(120.0f));
@@ -25,7 +25,7 @@ public class PreferenceSettingJ extends com.censivn.C3DEngine.b.e.f {
     public PreferenceSettingJ(float f) {
         d((int) f);
         a(0);
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.b(1);
         com.censivn.C3DEngine.b.b.b bVar = new com.censivn.C3DEngine.b.b.b();
         bVar.a = com.censivn.C3DEngine.b.b.A.a(30.0f);

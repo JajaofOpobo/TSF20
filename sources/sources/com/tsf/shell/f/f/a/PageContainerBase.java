@@ -2,7 +2,7 @@ package com.tsf.shell.f.f.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 import com.tsf.shell.f.f.a.b.DrawerTransitionBase;
 import java.util.ArrayList;
@@ -73,7 +73,7 @@ public class PageContainerBase extends PageContainerView {
         return this.f;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         children().clear();
         this.b = null;
@@ -97,12 +97,12 @@ public class PageContainerBase extends PageContainerView {
         super.addChild(iVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(i iVar) {
         a(iVar, numChildren(), true);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(i iVar, int i) {
         a(iVar, i, true);
     }
@@ -144,7 +144,7 @@ public class PageContainerBase extends PageContainerView {
         a(i, z);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(i iVar) {
         this.b.j_();
         int childIndexOf = getChildIndexOf(iVar);
@@ -270,7 +270,7 @@ public class PageContainerBase extends PageContainerView {
         this.f.h(this);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawEnd() {
         this.b.a(this);
     }
@@ -416,7 +416,7 @@ public class PageContainerBase extends PageContainerView {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         Number3d number3d;
         int iNumChildren = numChildren();
@@ -440,7 +440,7 @@ public class PageContainerBase extends PageContainerView {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();

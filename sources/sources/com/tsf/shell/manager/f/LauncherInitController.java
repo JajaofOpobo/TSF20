@@ -3,7 +3,7 @@ package com.tsf.shell.manager.f;
 import android.opengl.GLSurfaceView;
 import com.censivn.C3DEngine.a.EngineController;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e.StubPlaceholder;
 import com.tsf.shell.f.e.WidgetMatchResizeController;
@@ -17,9 +17,9 @@ import com.tsf.shell.utils.SignatureVerifier;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherInitController extends f {
-    private j c;
-    private j d;
-    private j e;
+    private BaseRenderable c;
+    private BaseRenderable d;
+    private BaseRenderable e;
     private boolean f;
     private boolean g;
     private Object h;
@@ -62,7 +62,7 @@ public class LauncherInitController extends f {
         if (!t.a(com.censivn.C3DEngine.C3DEngine.d())) {
             com.tsf.shell.services.ServiceLifecycleManager.a = false;
         }
-        this.d = new j();
+        this.d = new BaseRenderable();
     }
 
     private void h() {
@@ -81,10 +81,10 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.v = new com.tsf.shell.f._d.DashPanelController();
         com.tsf.shell.f.i.b.d.FolderShortcutItem.k();
         new com.tsf.shell.manager.o.EmptyStub();
-        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.WallpaperTouchHandler(new j()));
+        com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.WallpaperTouchHandler(new BaseRenderable()));
         com.tsf.shell.manager.app.DataCoordinator = new b();
-        this.d = new j();
-        this.e = new j();
+        this.d = new BaseRenderable();
+        this.e = new BaseRenderable();
         com.tsf.shell.manager.p.TipsDialogManager.a();
         com.tsf.shell.manager.app.WidgetAnimator.a();
         com.tsf.shell.manager.app.LauncherAppInfo.b();

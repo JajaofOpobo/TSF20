@@ -3,9 +3,9 @@ package com.tsf.shell.theme.inside.mix.menu.item;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 
@@ -27,7 +27,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
     private ThemeInstalledDetailMenu mDetailMenu;
     private h mGridView;
     private boolean mNeedRefresh;
-    private k mSelectPlane;
+    private GridRenderable mSelectPlane;
     private TextureElement mSelectTE;
     private ArrayList<ThemeListsManager.ThemeInfo> mThemeList;
     private ThemeManager.ThemeListener mThemeListener;
@@ -59,7 +59,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
         this.mNeedRefresh = true;
         this.manager = themeSettingMenu;
         this.mComparator = new ThemePriorityComparator();
-        this.mSelectPlane = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
+        this.mSelectPlane = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.c, com.tsf.shell.manager.g.LayoutDimensionConstants.c, false);
         this.mSelectPlane.position().y = (-122.0f) * com.censivn.C3DEngine.b.b.A.c;
         this.mSelectPlane.useVBO(false);
         this.mSelectPlane.textures().addElement(this.mSelectTE);
@@ -146,7 +146,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.mGridView;
     }
 
@@ -222,7 +222,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
 
     class a extends ThemeIconPlane {
         private boolean c = false;
-        public com.censivn.C3DEngine.b.f.a.a a = com.tsf.shell.manager.o.ButtonPresetManager.c.b();
+        public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.c.b();
 
         public a() {
             this.a.calAABB();
@@ -231,7 +231,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
             setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this));
         }
 
-        @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane, com.censivn.C3DEngine.b.f.j
+        @Override // com.tsf.shell.theme.inside.mix.menu.item.ThemeIconPlane, com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
             super.onDrawChildEnd();
             if (this.c) {

@@ -355,7 +355,7 @@ public class PersonalizationPager extends LinearLayout implements View.OnClickLi
             return true;
         }
         if (i == 4) {
-            com.tsf.extend.base.h.a aVarA = com.tsf.extend.base.h.a.a();
+            com.tsf.extend.base.h.LogWriter aVarA = com.tsf.extend.base.h.LogWriter.a();
             if (!aVarA.d()) {
                 aVarA.c();
                 k();

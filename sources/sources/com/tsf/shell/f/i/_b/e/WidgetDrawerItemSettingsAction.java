@@ -5,22 +5,22 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.manager.action.ActionManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetDrawerItemSettingsAction extends WidgetDrawerShortcutItemBase {
     private com.tsf.shell.manager.action.toggle.ToggleAction a;
-    private k b;
+    private GridRenderable b;
     private TextureElement p;
     private int q;
     private int r;
     private boolean s;
     private int t;
     private int u;
-    private com.censivn.C3DEngine.b.f._a.b v;
-    private com.censivn.C3DEngine.b.f._a.b w;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData v;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData w;
     private String x;
 
     public WidgetDrawerItemSettingsAction(com.tsf.shell.manager.action.toggle.ToggleAction bVar) {
@@ -32,8 +32,8 @@ public class WidgetDrawerItemSettingsAction extends WidgetDrawerShortcutItemBase
         this.u = 0;
         this.a = bVar;
         this.p = new TextureElement(0, false);
-        this.b = new k(this.n.H, this.n.I, false) { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemSettingsAction.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.b = new GridRenderable(this.n.H, this.n.I, false) { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemSettingsAction.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (j.this.q == 1) {
                     rotation().z += 5.0f;
@@ -105,7 +105,7 @@ public class WidgetDrawerItemSettingsAction extends WidgetDrawerShortcutItemBase
         invalidate();
     }
 
-    @Override // com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase, com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.r != this.q) {
             this.r = this.q;

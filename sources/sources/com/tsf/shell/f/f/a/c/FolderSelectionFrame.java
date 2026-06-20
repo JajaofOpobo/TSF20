@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderSelectionFrame extends com.censivn.C3DEngine.b.f.j implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
+public class FolderSelectionFrame extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
     private boolean a = true;
 
     @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem

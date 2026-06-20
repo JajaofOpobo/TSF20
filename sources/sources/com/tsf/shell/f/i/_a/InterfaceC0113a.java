@@ -1,6 +1,6 @@
 package com.tsf.shell.f.i._a;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: classes.dex */

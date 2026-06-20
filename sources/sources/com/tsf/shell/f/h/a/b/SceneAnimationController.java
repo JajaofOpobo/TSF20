@@ -1,8 +1,8 @@
 package com.tsf.shell.f.h.a.b;
 
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.ObjectPool;
 import com.tsf.shell.f.h.a.WorkspacePreviewNode;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class SceneAnimationController implements c.a {
     private c a;
     private int e;
-    private m f;
+    private LabelRenderable f;
     private int g;
     private b b = new SceneAnimationHandler(this) { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.1
         @Override // com.tsf.shell.f.h.a.b.SceneAnimationHandler, com.censivn.C3DEngine.b.e.c
@@ -111,7 +111,7 @@ public class SceneAnimationController implements c.a {
     }
 
     @Override // com.tsf.shell.f.h.a.WorkspacePreviewNode.a
-    public j a() {
+    public BaseRenderable a() {
         return this.c;
     }
 
@@ -124,9 +124,9 @@ public class SceneAnimationController implements c.a {
         SceneAnimationController();
     }
 
-    private m m() {
+    private LabelRenderable m() {
         if (this.f == null) {
-            this.f = new m();
+            this.f = new LabelRenderable();
             this.f.d(40);
             this.f.c(SceneAnimationHandler.i.notic_no_recent_apps);
             this.f.b();

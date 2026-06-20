@@ -1,9 +1,9 @@
 package com.tsf.shell.f.f.a;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageContainerView extends j {
+public class PageContainerView extends BaseRenderable {
     private int a = 0;
     private int b = 0;
     private boolean c = false;

@@ -114,7 +114,7 @@ public class GraphicsEngineBridge {
         return textureElementA;
     }
 
-    public static void a(com.censivn.C3DEngine.b.f.i iVar, int i, int i2, int i3, int i4) {
+    public static void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i, int i2, int i3, int i4) {
         iVar.faces().add((short) i, (short) i3, (short) i2);
         iVar.faces().add((short) i, (short) i4, (short) i3);
     }

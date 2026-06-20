@@ -32,7 +32,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
     protected boolean a;
     protected b b;
     protected long c;
-    public com.tsf.extend.base.b.A d;
+    public com.tsf.extend.base.b.PagedListModel d;
     private PageActivity e;
     private PullToRefreshAndLoadMoreListView f;
     private View g;
@@ -82,7 +82,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
             public void b() {
             }
         });
-        com.tsf.extend.base.b.A aVarJ = z.h().j();
+        com.tsf.extend.base.b.PagedListModel aVarJ = z.h().j();
         if (aVarJ != null && aVarJ.a() != null) {
             this.a = false;
             b(aVarJ.a(), false);
@@ -187,7 +187,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
     }
 
-    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class b implements a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private a.b b;
 
         public b(a.b bVar) {
@@ -195,7 +195,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.PagedListModel aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
             v.this.d = aVar;
@@ -203,7 +203,7 @@ public class v extends FrameLayout implements View.OnClickListener, AbsListView.
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             v.this.a = false;
             boolean z = v.this.d == null || aVar == null || TextUtils.isEmpty(aVar.e()) || !aVar.e().equals(v.this.d.e());
             v.this.d = aVar;

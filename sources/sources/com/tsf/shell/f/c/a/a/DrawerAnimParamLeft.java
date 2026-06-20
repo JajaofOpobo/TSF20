@@ -1,7 +1,7 @@
 package com.tsf.shell.f.c.a.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -11,10 +11,10 @@ public class DrawerAnimParamLeft extends DrawerAnimConfig {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public float a(int i, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, float f) {
+    public float a(int i, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, float f) {
         float fMaxX = 0.0f;
         for (int i2 = 0; i2 < i; i2++) {
-            com.censivn.C3DEngine.b.f.i iVar = arrayList.get(i2);
+            com.censivn.C3DEngine.b.f.IRenderable iVar = arrayList.get(i2);
             fMaxX += (iVar.maxX() - iVar.minX()) + f;
         }
         return fMaxX - f;
@@ -27,13 +27,13 @@ public class DrawerAnimParamLeft extends DrawerAnimConfig {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public float a(ArrayList<com.censivn.C3DEngine.b.f.i> arrayList, int i, float f, float f2, float f3, float f4) {
+    public float a(ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList, int i, float f, float f2, float f3, float f4) {
         if (i == 0) {
             return 1.0f;
         }
         float fMaxX = 0.0f;
         for (int i2 = 0; i2 < i; i2++) {
-            com.censivn.C3DEngine.b.f.i iVar = arrayList.get(i2);
+            com.censivn.C3DEngine.b.f.IRenderable iVar = arrayList.get(i2);
             fMaxX += (iVar.maxX() - iVar.minX()) + f4;
         }
         float f5 = ((f - f2) - f3) / (fMaxX - f4);
@@ -44,7 +44,7 @@ public class DrawerAnimParamLeft extends DrawerAnimConfig {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f, boolean z) {
+    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f, boolean z) {
         if (iVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
         }
         if (!this.d) {
@@ -70,7 +70,7 @@ public class DrawerAnimParamLeft extends DrawerAnimConfig {
         return Number3d.TEMPNUMBER3D;
     }
 
-    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f) {
         return dVar.b + (iVar.minY() * f);
     }
 }

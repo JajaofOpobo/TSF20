@@ -4,16 +4,16 @@ import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DropIndicatorState extends j {
-    private j b;
+public class DropIndicatorState extends BaseRenderable {
+    private BaseRenderable b;
     private ArrayList<C0092c> c;
     private C0092c d;
     private DropIndicatorRenderer e;
@@ -85,7 +85,7 @@ public class DropIndicatorState extends j {
     public void a(ArrayList<C0092c> arrayList, b bVar) {
         this.e = bVar;
         this.c = arrayList;
-        this.b = new j();
+        this.b = new BaseRenderable();
         int i = 0;
         Iterator<C0092c> it = this.c.iterator();
         while (true) {
@@ -297,20 +297,20 @@ public class DropIndicatorState extends j {
         }
     }
 
-    public static class a extends j {
+    public static class a extends BaseRenderable {
         int a;
-        private m b;
-        private k c;
+        private LabelRenderable b;
+        private GridRenderable c;
         private TextureElement d = new TextureElement(0, false);
         private float e;
 
         public a(int i, int i2, b bVar) {
             this.a = i2;
-            this.c = new k(bVar.c, bVar.c, false);
+            this.c = new GridRenderable(bVar.c, bVar.c, false);
             this.c.position().x = (this.c.b() / 2.0f) + bVar.d;
             this.c.textures().addElement(this.d);
             addChild(this.c);
-            this.b = new m();
+            this.b = new LabelRenderable();
             this.b.c(i);
             this.b.d(bVar.e);
             this.b.b(1);
@@ -332,7 +332,7 @@ public class DropIndicatorState extends j {
             return this.e;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.d.id == 0) {
                 Bitmap bitmapA = x.a(this.a);

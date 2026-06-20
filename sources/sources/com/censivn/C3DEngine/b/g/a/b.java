@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class b extends c {
     private com.censivn.C3DEngine.b.g.d c;
-    private i d;
+    private IRenderable d;
     private int e;
     private long f = 0;
     private long g = 0;

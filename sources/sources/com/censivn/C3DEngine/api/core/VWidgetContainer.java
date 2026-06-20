@@ -224,17 +224,17 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mThis.onResume();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onFocus() {
                 VWidgetContainer.this.mThis.onFocus();
             }
 
-            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.i
+            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 VWidgetContainer.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (VWidgetContainer.this.needLockView) {
                     VWidgetContainer.this.isLockdView = true;
@@ -243,7 +243,7 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mThis.onDrawStart();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 if (VWidgetContainer.this.isLockdView) {
                     VWidgetContainer.this.isLockdView = false;
@@ -252,27 +252,27 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mThis.onDrawEnd();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onUpdateAnimation() {
                 VWidgetContainer.this.mThis.onUpdateAnimation();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void draw() {
                 VWidgetContainer.this.mThis.draw();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void dispatchDraw() {
                 VWidgetContainer.this.mThis.dispatchDraw();
             }
 
-            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.i
+            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.IRenderable
             public void drawMVPMatrix() {
                 VWidgetContainer.this.mThis.drawMVPMatrix();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void drawElement() {
                 VWidgetContainer.this.mThis.drawElement();
             }

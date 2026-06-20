@@ -6,19 +6,19 @@ import android.graphics.Paint;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneDecorNode extends j {
+public class SceneDecorNode extends BaseRenderable {
     private String b;
     private com.tsf.shell.manager.c.a.a.ContactModel.b f;
     private TextureElement a = new TextureElement(0, false);
     private boolean c = false;
-    private com.censivn.C3DEngine.b.f.a.a d = new com.censivn.C3DEngine.b.f.a.a(2, 1, 1, true);
-    private m e = new m();
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable d = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, 1, 1, true);
+    private LabelRenderable e = new LabelRenderable();
 
     public SceneDecorNode() {
         this.e.d(54);
@@ -105,8 +105,8 @@ public class SceneDecorNode extends j {
             bitmapB.recycle();
         }
         this.d.a(1, this.a.width, this.a.height);
-        com.censivn.C3DEngine.b.f.a.b bVarA = this.d.a(0);
-        com.censivn.C3DEngine.b.f.a.b bVarA2 = this.d.a(1);
+        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.d.a(0);
+        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.d.a(1);
         bVarA.i().x = ((-this.a.width) / 2.0f) + (iA / 2.0f);
         bVarA.b(0, 0, iA, this.a.height);
         bVarA.h();

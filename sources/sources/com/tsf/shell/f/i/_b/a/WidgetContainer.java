@@ -3,21 +3,21 @@ package com.tsf.shell.f.i._b.a;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetContainer extends j {
+public class WidgetContainer extends BaseRenderable {
     private i d;
-    private j e;
-    private j f;
+    private BaseRenderable e;
+    private BaseRenderable f;
     private boolean h;
-    private k i;
+    private GridRenderable i;
     private com.censivn.C3DEngine.c.A j;
     private com.censivn.C3DEngine.c.b.b k;
     private TextureElement l;
@@ -68,10 +68,10 @@ public class WidgetContainer extends j {
 
     private void i() {
         float f = 150.0f;
-        this.f = new j() { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.1
+        this.f = new BaseRenderable() { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.1
             private double b = 0.017453292519943295d;
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (!a.this.a) {
                     position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.A.b;
@@ -79,8 +79,8 @@ public class WidgetContainer extends j {
                 }
             }
         };
-        this.e = new j() { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.2
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.e = new BaseRenderable() { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.2
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 com.censivn.C3DEngine.C3DEngine.e().c();
                 if (!a.this.a && a.this.k != null) {
@@ -89,7 +89,7 @@ public class WidgetContainer extends j {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
                 com.censivn.C3DEngine.C3DEngine.e().d();
             }
@@ -97,8 +97,8 @@ public class WidgetContainer extends j {
         this.d.textures().addElement(this.b);
         this.d.scale().setAll(7.0f, 7.0f, 7.0f);
         this.d.rotation().z = 28.0f;
-        k kVar = new k(f, f) { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.3
-            @Override // com.censivn.C3DEngine.b.f.i
+        GridRenderable kVar = new GridRenderable(f, f) { // from class: com.tsf.shell.f.i._b.a.WidgetContainer.3
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (!a.this.a) {
                     rotation().z += 25.0f;
@@ -130,7 +130,7 @@ public class WidgetContainer extends j {
     private void j() {
         this.m = this.o * (this.o + 1);
         this.n = this.m + this.o;
-        this.i = new k(250.0f, 150.0f, this.o, this.o, false);
+        this.i = new GridRenderable(250.0f, 150.0f, this.o, this.o, false);
         this.i.position().y = -150.0f;
         this.i.position().x = 30.0f;
         this.i.position().z = -10.0f;
@@ -194,7 +194,7 @@ public class WidgetContainer extends j {
         com.censivn.C3DEngine.C3DEngine.g().a(this.c);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         super.destroy();
         com.censivn.C3DEngine.C3DEngine.g().a(this.b);

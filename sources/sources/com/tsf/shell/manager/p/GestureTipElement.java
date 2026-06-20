@@ -1,16 +1,16 @@
 package com.tsf.shell.manager.p;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GestureTipElement extends j {
+public class GestureTipElement extends BaseRenderable {
     private TextureElement a = new TextureElement(0, false);
     private TextureElement b = new TextureElement(0, false);
-    private k c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
-    private k d;
+    private GridRenderable c = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
+    private GridRenderable d;
 
     public void a() {
         com.censivn.C3DEngine.C3DEngine.g().a(this.a);
@@ -54,7 +54,7 @@ public class GestureTipElement extends j {
         com.censivn.C3DEngine.b.g.c.a(this, 500, dVar);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.a.id == 0) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.a, b.d.tips_gesture_finger);

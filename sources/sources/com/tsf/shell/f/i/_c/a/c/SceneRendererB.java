@@ -2,11 +2,11 @@ package com.tsf.shell.f.i._c.a.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SceneRendererB {
-    private com.censivn.C3DEngine.b.f._a.b a;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData a;
     private float b;
     private float c;
 
-    public SceneRendererB(com.censivn.C3DEngine.b.f._a.b bVar, float f, float f2) {
+    public SceneRendererB(com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVar, float f, float f2) {
         this.a = bVar;
         this.b = f;
         this.c = f2;

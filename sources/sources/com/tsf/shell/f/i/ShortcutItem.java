@@ -4,8 +4,8 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.e.ItemTrailContainer;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -147,7 +147,7 @@ public class ShortcutItem extends PageItem {
         if (!this.k) {
             aj();
             if (b == null) {
-                b = new k(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, 1, 1, false);
+                b = new GridRenderable(com.censivn.C3DEngine.b.b.A.c * 120.0f, com.censivn.C3DEngine.b.b.A.c * 120.0f, 1, 1, false);
                 h = new TextureElement(f.id, false);
                 b.textures().addElementWithoutVerify(h);
                 b.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.A.c);
@@ -196,7 +196,7 @@ public class ShortcutItem extends PageItem {
         A().b(this);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.k) {

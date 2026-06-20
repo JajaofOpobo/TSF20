@@ -1,6 +1,6 @@
 package com.tsf.shell.preference.a;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.e.SelectionFrame;
 import com.tsf.shell.preference.a.PreferenceConfigManager;
 
@@ -8,13 +8,13 @@ import com.tsf.shell.preference.a.PreferenceConfigManager;
 public class PreferenceFragmentBase extends PreferenceBaseFragment {
     private PreferenceConfigManager.a a;
     private com.tsf.shell.f.c.b.DrawerSettingsPanel b;
-    private j d;
+    private BaseRenderable d;
     private i e;
     private com.tsf.shell.f.c.b.DrawerSettingsConfig f;
 
     public PreferenceFragmentBase(float f) {
         super(f);
-        this.d = new j();
+        this.d = new BaseRenderable();
         PreferenceFragmentBase().addChild(this.d);
         this.e = new PreferenceItemInterface();
         this.d.addChild(this.e);

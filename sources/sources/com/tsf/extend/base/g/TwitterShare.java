@@ -5,7 +5,7 @@ import android.content.Intent;
 import com.tsf.extend.base.j.n;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class e extends d {
+public class TwitterShare extends BaseShareHandler {
     private static String f = "https://twitter.com/intent/tweet?text=Share%20a%20link&via=cmlauncher&url=";
     private static String g = "https://goo.gl/yqERdL";
 
@@ -13,13 +13,13 @@ public class e extends d {
         super(context, intent, "com.twitter.android", "com.twitter.android.composer.ComposerActivity");
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     protected void a() {
         super.a();
         this.a.putExtra("android.intent.extra.TEXT", this.a.getStringExtra("android.intent.extra.TEXT") + g);
     }
 
-    @Override // com.tsf.extend.base.g.d
+    @Override // com.tsf.extend.base.g.BaseShareHandler
     public boolean b() {
         this.e.startActivity(n.a(this.e, f + g));
         return true;

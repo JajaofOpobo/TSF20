@@ -1,9 +1,9 @@
 package com.tsf.shell.manager.f;
 
 import com.censivn.C3DEngine.api.element.Color4;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.f.WorkspacePage;
 import com.tsf.shell.manager.b.ConfigManager;
 
@@ -58,7 +58,7 @@ public class ScreenFadeController {
         c = jVar;
         this.g = e.ai();
         if (this.g) {
-            d = new k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
+            d = new GridRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, false);
             d.setDefaultColor(new Color4(0, 0, 0, 255));
         } else {
             d = com.tsf.shell.manager.app.LauncherAppInfo.g();

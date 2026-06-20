@@ -3,7 +3,7 @@ package com.tsf.extend.base.i;
 import android.content.Context;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a {
+public class InstallReferrerHandler {
     private static volatile a a;
     private Context b;
     private String c = "";
@@ -11,7 +11,7 @@ public class a {
     private String e = "";
     private InterfaceC0050a f;
 
-    /* JADX INFO: renamed from: com.tsf.extend.base.i.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.tsf.extend.base.i.InstallReferrerHandler$a, reason: collision with other inner class name */
     public interface InterfaceC0050a {
     }
 

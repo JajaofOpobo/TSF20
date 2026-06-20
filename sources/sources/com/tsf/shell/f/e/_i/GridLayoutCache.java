@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GridLayoutCache extends com.censivn.C3DEngine.b.f._a.a {
+public class GridLayoutCache extends com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable {
     float a;
     private boolean c;
     private ArrayList<d> d;
@@ -47,7 +47,7 @@ public class GridLayoutCache extends com.censivn.C3DEngine.b.f._a.a {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x0044  */
-    @Override // com.censivn.C3DEngine.b.f._a.a, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f._a.AltTextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

@@ -25,7 +25,7 @@ public class WidgetDrawerItemLaunchAction extends WidgetDrawerShortcutItemBase {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         if (this.b != null) {
             this.b.dispatchDraw();

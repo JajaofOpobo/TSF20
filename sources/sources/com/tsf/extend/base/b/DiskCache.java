@@ -20,7 +20,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c implements com.android.volley.b {
+public class DiskCache implements com.android.volley.b {
     private final Map<String, a> a;
     private long b;
     private final File c;
@@ -41,8 +41,8 @@ public class c implements com.android.volley.b {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:43:0x0072 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Type inference failed for: r2v5, types: [com.tsf.extend.base.b.c$b] */
-    /* JADX WARN: Type inference failed for: r2v6, types: [com.tsf.extend.base.b.c$b, java.io.InputStream] */
+    /* JADX WARN: Type inference failed for: r2v5, types: [com.tsf.extend.base.b.DiskCache$b] */
+    /* JADX WARN: Type inference failed for: r2v6, types: [com.tsf.extend.base.b.DiskCache$b, java.io.InputStream] */
     /* JADX WARN: Type inference failed for: r2v7, types: [boolean] */
     @Override // com.android.volley.b
     /*
@@ -54,9 +54,9 @@ public class c implements com.android.volley.b {
             r8 = this;
             r1 = 0
             monitor-enter(r8)
-            java.util.Map<java.lang.String, com.tsf.extend.base.b.c$a> r0 = r8.a     // Catch: java.lang.Throwable -> L76
+            java.util.Map<java.lang.String, com.tsf.extend.base.b.DiskCache$a> r0 = r8.a     // Catch: java.lang.Throwable -> L76
             java.lang.Object r0 = r0.get(r9)     // Catch: java.lang.Throwable -> L76
-            com.tsf.extend.base.b.c$A r0 = (com.tsf.extend.base.b.c.a) r0     // Catch: java.lang.Throwable -> L76
+            com.tsf.extend.base.b.DiskCache$A r0 = (com.tsf.extend.base.b.DiskCache.a) r0     // Catch: java.lang.Throwable -> L76
             java.io.File r3 = r8.c(r9)     // Catch: java.lang.Throwable -> L76
             if (r0 != 0) goto L19
             boolean r2 = r3.exists()     // Catch: java.lang.Throwable -> L76
@@ -66,16 +66,16 @@ public class c implements com.android.volley.b {
             monitor-exit(r8)
             return r0
         L19:
-            com.tsf.extend.base.b.c$b r2 = new com.tsf.extend.base.b.c$b     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
+            com.tsf.extend.base.b.DiskCache$b r2 = new com.tsf.extend.base.b.DiskCache$b     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
             java.io.FileInputStream r4 = new java.io.FileInputStream     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
             r4.<init>(r3)     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
             r5 = 0
             r2.<init>(r4)     // Catch: java.lang.Throwable -> L6e java.lang.Throwable -> L7e
             if (r0 != 0) goto L46
-            com.tsf.extend.base.b.c$A r0 = com.tsf.extend.base.b.c.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            com.tsf.extend.base.b.DiskCache$A r0 = com.tsf.extend.base.b.DiskCache.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
         L2a:
             long r4 = r3.length()     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
-            int r6 = com.tsf.extend.base.b.c.com.android.volley.b.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            int r6 = com.tsf.extend.base.b.DiskCache.com.android.volley.b.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             long r6 = (long) r6     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             long r4 = r4 - r6
             int r4 = (int) r4     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
@@ -89,7 +89,7 @@ public class c implements com.android.volley.b {
             r0 = r1
             goto L17
         L46:
-            com.tsf.extend.base.b.c.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
+            com.tsf.extend.base.b.DiskCache.a.a(r2)     // Catch: java.lang.Throwable -> L4a java.lang.Throwable -> L7c
             goto L2a
         L4a:
             r0 = move-exception
@@ -138,7 +138,7 @@ public class c implements com.android.volley.b {
             r2 = r1
             goto L4b
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.base.b.c.a(java.lang.String):com.android.volley.b$a");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.base.b.DiskCache.a(java.lang.String):com.android.volley.b$a");
     }
 
     @Override // com.android.volley.b
@@ -153,7 +153,7 @@ public class c implements com.android.volley.b {
                     pairArr[i] = new Pair(Long.valueOf(file.lastModified()), file);
                 }
                 try {
-                    Arrays.sort(pairArr, new Comparator<Pair<Long, File>>() { // from class: com.tsf.extend.base.b.c.1
+                    Arrays.sort(pairArr, new Comparator<Pair<Long, File>>() { // from class: com.tsf.extend.base.b.DiskCache.1
                         @Override // java.util.Comparator
                         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                         public int compare(Pair<Long, File> pair, Pair<Long, File> pair2) {

@@ -861,7 +861,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdatePointVBO() {
         if (!this.isUpdatePointsVBO) {
             this.isUpdatePointsVBO = true;
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.IRenderable.1
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updatePointsVBO();
@@ -873,7 +873,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateUvsVBO() {
         if (!this.isUpdateUvsVBO) {
             this.isUpdateUvsVBO = true;
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.2
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.IRenderable.2
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateUvsVBO();
@@ -885,7 +885,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
     public void syncUpdateFacesVBO() {
         if (!this.isUpdateFacesVBO) {
             this.isUpdateFacesVBO = true;
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.i.3
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.f.IRenderable.3
                 @Override // java.lang.Runnable
                 public void run() {
                     i.this.updateFacesVBO();
@@ -1377,7 +1377,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.a {
         if (!mouseEnabled() || !visible() || !getRendererVisibility()) {
             return null;
         }
-        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.a.a)) && !mouseSkip() && !z) {
+        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable)) && !mouseSkip() && !z) {
             if (calTouchCollision(f, f2)) {
                 return this;
             }

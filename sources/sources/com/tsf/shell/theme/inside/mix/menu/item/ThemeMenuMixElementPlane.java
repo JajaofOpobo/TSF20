@@ -4,28 +4,28 @@ import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.manager.o.ThemeColorConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ThemeMenuMixElementPlane extends j {
+public class ThemeMenuMixElementPlane extends BaseRenderable {
     public static final int WIDTH = 300;
     private CircleDotNode mNotifPoint;
     public m mSummaryView;
     public m mTitleView;
     private TextureElement previewTE = new TextureElement(0, false);
-    public com.censivn.C3DEngine.b.f.k mPreviewView = new com.censivn.C3DEngine.b.f.k(A.a(180.0f), A.a(180.0f), false);
+    public com.censivn.C3DEngine.b.f.GridRenderable mPreviewView = new com.censivn.C3DEngine.b.f.GridRenderable(A.a(180.0f), A.a(180.0f), false);
 
     public ThemeMenuMixElementPlane() {
         this.mPreviewView.textures().addElement(this.previewTE);
         this.mPreviewView.position().y = A.a(100.0f);
-        this.mTitleView = new m();
+        this.mTitleView = new LabelRenderable();
         this.mTitleView.d(40);
         this.mTitleView.position().y = -A.a(50.0f);
         ThemeColorConstants.a(this.mTitleView, ThemeColorConstants.h);
-        this.mSummaryView = new m();
+        this.mSummaryView = new LabelRenderable();
         this.mSummaryView.d(32);
         this.mSummaryView.g(300);
         this.mSummaryView.position().y = -A.a(100.0f);
@@ -49,7 +49,7 @@ public class ThemeMenuMixElementPlane extends j {
     public void onClick() {
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.previewTE.id == 0) {
             Bitmap previewBitmap = getPreviewBitmap();

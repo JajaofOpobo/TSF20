@@ -5,7 +5,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.core.VTextureManager;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.i.c.a.BackgroundSceneNode;
 import com.tsf.shell.f.i.c.a.ITextureCallback;
@@ -144,13 +144,13 @@ public class WidgetDefinitionFactory {
             };
         } else {
             gVar = new com.tsf.shell.f.i.c.ItemGroupBase() { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.4
-                private com.censivn.C3DEngine.b.f.k k;
+                private com.censivn.C3DEngine.b.f.GridRenderable k;
                 private TextureElement l = new TextureElement(0, false);
 
                 @Override // com.tsf.shell.f.i.c.ItemGroupBase, com.tsf.shell.f.i.c.ItemLabelProvider
                 public i a(int i, int i2, boolean z) {
                     if (this.k == null) {
-                        this.k = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.a.H, com.tsf.shell.manager.o.ButtonPresetManager.a.I, false);
+                        this.k = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.o.ButtonPresetManager.a.H, com.tsf.shell.manager.o.ButtonPresetManager.a.I, false);
                         this.k.textures().addElement(this.l);
                     }
                     WidgetDefinitionFactory();

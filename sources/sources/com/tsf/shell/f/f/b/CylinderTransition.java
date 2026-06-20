@@ -7,13 +7,13 @@ import com.tsf.shell.f.f.PageAnimationState;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class CylinderTransition extends ItemPageTransition {
-    private com.censivn.C3DEngine.b.f.j a;
-    private com.censivn.C3DEngine.b.f.h b;
+    private com.censivn.C3DEngine.b.f.BaseRenderable a;
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable b;
     private com.censivn.C3DEngine.c.A c;
     private com.censivn.C3DEngine.c.b.a d;
     private int e;
     private com.censivn.C3DEngine.b.g._b.b f;
-    private com.censivn.C3DEngine.b.f.k g;
+    private com.censivn.C3DEngine.b.f.GridRenderable g;
     private boolean h;
 
     public CylinderTransition(int i, boolean z) {
@@ -22,9 +22,9 @@ public class CylinderTransition extends ItemPageTransition {
         this.f = new com.censivn.C3DEngine.b.g._b.b();
         this.h = false;
         if (this.b == null) {
-            this.a = new com.censivn.C3DEngine.b.f.j();
-            this.b = new com.censivn.C3DEngine.b.f.h(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
-            this.g = new com.censivn.C3DEngine.b.f.k(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.a(20.0f), 20, 1, false);
+            this.a = new com.censivn.C3DEngine.b.f.BaseRenderable();
+            this.b = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 20, 1, new Color4(0, 0, 0, 0), false, false, false);
+            this.g = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.a(20.0f), 20, 1, false);
             this.g.setDefaultColor(new Color4(255, 0, 0, 255));
             this.b.useVBO(false);
             this.b.doubleSidedEnabled(true);

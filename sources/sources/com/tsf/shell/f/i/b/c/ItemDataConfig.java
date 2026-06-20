@@ -5,8 +5,8 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.message.RenderRunnable;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 import com.tsf.shell.Home;
@@ -24,7 +24,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
     private int h;
     private int i;
     private int j;
-    private k k;
+    private GridRenderable k;
     private boolean l;
     private boolean m;
     private boolean n;
@@ -66,7 +66,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         ItemDataConfig();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.k != null && this.b != null) {
             if (com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
@@ -271,7 +271,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         return true;
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.i
+    @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.IRenderable
     public boolean calTouchCollision(float f2, float f3) {
         if (this.k.calTouchCollision(f2, f3)) {
             return true;
@@ -324,13 +324,13 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
     }
 
     /* JADX INFO: renamed from: com.tsf.shell.f.i.b.c.ItemDataConfig$a, reason: collision with other inner class name */
-    class C0114a extends k {
+    class C0114a extends GridRenderable {
         public C0114a(float f, float f2, boolean z) {
             super(f, f2, false);
         }
     }
 
-    class b extends k {
+    class b extends GridRenderable {
         private int d;
         private int e;
         private int f;
@@ -348,7 +348,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
             b();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (!a.this.m && com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
                 b();

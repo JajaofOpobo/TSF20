@@ -7,7 +7,7 @@ public class EmptyRenderable extends BaseRenderable {
         super.useVBO(false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void draw() {
         com.censivn.C3DEngine.C3DEngine.e().a(this);
         drawMVPMatrix();

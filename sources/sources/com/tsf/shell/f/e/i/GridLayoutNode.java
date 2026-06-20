@@ -2,12 +2,12 @@ package com.tsf.shell.f.e.i;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.message.VMessageManager;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GridLayoutNode extends j {
+public class GridLayoutNode extends BaseRenderable {
     private static TextureElement c = new TextureElement(0, false);
     private static TextureElement d = new TextureElement(0, false);
     private static TextureElement e = new TextureElement(0, false);
@@ -15,9 +15,9 @@ public class GridLayoutNode extends j {
     private c g;
     private c h;
     private int i;
-    private k b = new k(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false);
-    public k a = new k(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false) { // from class: com.tsf.shell.f.e.i.GridLayoutNode.1
-        @Override // com.censivn.C3DEngine.b.f.i
+    private GridRenderable b = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false);
+    public GridRenderable a = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(200.0f), com.censivn.C3DEngine.b.b.A.a(200.0f), false) { // from class: com.tsf.shell.f.e.i.GridLayoutNode.1
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (a.d.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(a.d, GridLayoutData.d.mark_star_disable);

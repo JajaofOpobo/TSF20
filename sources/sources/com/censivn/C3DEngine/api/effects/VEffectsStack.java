@@ -10,7 +10,7 @@ public class VEffectsStack {
     private a vTarget;
 
     public VEffectsStack(VObject3d vObject3d) {
-        this.vTarget = new a((i) vObject3d.getVirtualTarget());
+        this.vTarget = new a((IRenderable) vObject3d.getVirtualTarget());
     }
 
     public void addModifier(VIEffects vIEffects) {

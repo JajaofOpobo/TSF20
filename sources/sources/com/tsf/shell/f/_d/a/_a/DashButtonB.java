@@ -2,8 +2,8 @@ package com.tsf.shell.f._d.a._a;
 
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonB extends com.tsf.shell.f._d.a.DashElementBase {
@@ -77,7 +77,7 @@ public class DashButtonB extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
-    public void a(k kVar, Runnable runnable) {
+    public void a(GridRenderable kVar, Runnable runnable) {
         a(kVar, null, null, runnable);
     }
 }

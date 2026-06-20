@@ -1,12 +1,12 @@
 package com.tsf.shell.f.c.b;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.c.b.a.IDrawerSettingsCallback;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerSettingsConfig extends DrawerSettingsBase {
     private e a;
-    private j b;
+    private BaseRenderable b;
 
     public DrawerSettingsConfig(e eVar, j jVar) {
         this.a = eVar;
@@ -14,7 +14,7 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
     }
 
     @Override // com.tsf.shell.f.c.b.DrawerSettingsBase
-    public j a() {
+    public BaseRenderable a() {
         return this.b;
     }
 

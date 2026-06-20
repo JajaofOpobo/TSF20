@@ -1,6 +1,6 @@
 package com.tsf.shell.manager.app;
 
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 
 public class TaskScheduler {
     public static void a(com.tsf.shell.f.i.PageItem bVar) {}
@@ -10,8 +10,8 @@ public class TaskScheduler {
     public static void a(Runnable runnable, boolean z) {}
     public static void a(Object obj, int i) {}
     public static void a(Object obj, Object obj2) {}
-    public static com.censivn.C3DEngine.b.f.i a() { return null; }
-    public static com.censivn.C3DEngine.b.f.j a(Object obj) { return null; }
+    public static com.censivn.C3DEngine.b.f.IRenderable a() { return null; }
+    public static com.censivn.C3DEngine.b.f.BaseRenderable a(Object obj) { return null; }
     public static void b() {}
     public static void b(com.tsf.shell.f.i.PageItem bVar) {}
     public static void b(Runnable runnable) {}

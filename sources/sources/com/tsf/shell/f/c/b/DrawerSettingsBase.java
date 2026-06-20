@@ -2,21 +2,21 @@ package com.tsf.shell.f.c.b;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class DrawerSettingsBase {
     private TextureElement b;
-    private k c;
+    private GridRenderable c;
     private TextureElement d;
-    private j e;
+    private BaseRenderable e;
     private boolean f = false;
     private boolean g = false;
     private boolean h = false;
-    private k a = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
+    private GridRenderable a = com.censivn.C3DEngine.b.b.A.a(103.0f, 149.0f);
 
     public abstract j a();
 
@@ -31,12 +31,12 @@ public abstract class DrawerSettingsBase {
         this.c.alpha(0.0f);
         this.d = new TextureElement(0, false);
         this.c.textures().addElement(this.d);
-        this.e = new j();
+        this.e = new BaseRenderable();
         this.e.addChild(this.c);
         this.e.addChild(this.a);
     }
 
-    public j c() {
+    public BaseRenderable c() {
         return this.e;
     }
 

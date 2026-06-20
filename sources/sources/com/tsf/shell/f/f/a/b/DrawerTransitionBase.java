@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public abstract class DrawerTransitionBase extends com.tsf.shell.f.f.TransitionRenderer {
     public abstract void a(int i, int i2, int i3, int i4, ArrayList<Number3d> arrayList);
 
-    public abstract void a(com.censivn.C3DEngine.b.f.j jVar);
+    public abstract void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar);
 
     public abstract void a(com.tsf.shell.f.f.a.PageContainerBase aVar);
 

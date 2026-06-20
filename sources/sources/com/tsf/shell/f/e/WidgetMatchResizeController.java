@@ -11,7 +11,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.theme.inside.mix.menu.DynamicTextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j implements b.a, e.a {
+public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements b.a, e.a {
     private static s a;
     private static A b;
     private static boolean c = false;
@@ -44,7 +44,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
                 s.b();
             }
         };
-        b = new AlignmentOverlay(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.b(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+        b = new AlignmentOverlay(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
         a.addChild(WidgetResizeResources);
     }
 
@@ -107,21 +107,21 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
         return b;
     }
 
-    static class A extends com.censivn.C3DEngine.b.f.b.a {
+    static class A extends com.censivn.C3DEngine.b.f.b.NinePatchRenderable {
         private int a;
         private DynamicTextureElement d;
         private A e;
-        private com.censivn.C3DEngine.b.f.k f;
-        private com.censivn.C3DEngine.b.f.k g;
-        private com.censivn.C3DEngine.b.f.k h;
-        private com.censivn.C3DEngine.b.f.k i;
+        private com.censivn.C3DEngine.b.f.GridRenderable f;
+        private com.censivn.C3DEngine.b.f.GridRenderable g;
+        private com.censivn.C3DEngine.b.f.GridRenderable h;
+        private com.censivn.C3DEngine.b.f.GridRenderable i;
         private com.censivn.C3DEngine.b.g._b.b j;
         private int k;
         private float l;
         private float m;
         private boolean n;
 
-        public A(float f, float f2, com.censivn.C3DEngine.b.f.b.b bVar) {
+        public A(float f, float f2, com.censivn.C3DEngine.b.f.b.NinePatchBounds bVar) {
             super(f, f2, bVar);
             this.k = 3;
             this.l = 1.0f;
@@ -148,7 +148,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
             b(0);
         }
 
-        public int a(com.censivn.C3DEngine.b.f.i iVar) {
+        public int a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
             Number3d.TEMPNUMBER3D3.reset();
             Number3d number3dLocalToGlobal = this.f.localToGlobal(Number3d.TEMPNUMBER3D3);
             Number3d.TEMPNUMBER3D3.reset();
@@ -212,13 +212,13 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onKillFocus() {
             s.a.d();
         }
 
-        private com.censivn.C3DEngine.b.f.k c(int i) {
-            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(64.0f, 64.0f);
+        private com.censivn.C3DEngine.b.f.GridRenderable c(int i) {
+            com.censivn.C3DEngine.b.f.GridRenderable kVar = new com.censivn.C3DEngine.b.f.GridRenderable(64.0f, 64.0f);
             switch (SelectionFrame) {
                 case 0:
                     kVar.moveAllPointsSP(0.0f, -32.0f, 0.0f);
@@ -298,25 +298,25 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
             positionNumber3dPosition.y = fA;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void i(float f) {
             super.j(ILayoutItem);
             this.h.position().x = (-f) + this.k;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void g(float f) {
             super.h(ILayoutItem);
             this.i.position().x = (f - this.k) - 3.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void c(float f) {
             super.d(ILayoutItem);
             this.f.position().y = (f - this.k) - 1.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.a
+        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
         public void e(float f) {
             super.f(ILayoutItem);
             this.g.position().y = (-f) + this.k + 1.0f;
@@ -347,7 +347,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
             this.l = f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.n || getAnimationObjectState()) {
                 if (this.l > s.d.V()) {
@@ -378,9 +378,9 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.j imp
             private A e;
             private boolean f;
             private int g;
-            private com.censivn.C3DEngine.b.f.i h;
+            private com.censivn.C3DEngine.b.f.IRenderable h;
 
-            public C0100a(com.censivn.C3DEngine.b.f.i iVar, A aVar, com.censivn.C3DEngine.b.f.i iVar2) {
+            public C0100a(com.censivn.C3DEngine.b.f.IRenderable iVar, A aVar, com.censivn.C3DEngine.b.f.IRenderable iVar2) {
                 super(iVar);
                 this.f = false;
                 this.e = aVar;

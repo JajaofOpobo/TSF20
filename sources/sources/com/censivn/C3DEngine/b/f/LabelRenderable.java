@@ -49,7 +49,7 @@ public class LabelRenderable extends BaseRenderable {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         d();
     }

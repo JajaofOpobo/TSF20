@@ -37,7 +37,7 @@ public class AltColoredRectRenderable extends BaseColoredRectRenderable {
         this.l = (Color.blue(this.e) / 255.0f) * this.m;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.h, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void draw() {
         if (this.c) {
             this.c = false;

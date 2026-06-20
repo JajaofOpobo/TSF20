@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix.menu.item.detail;
 import android.content.Context;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.e.ObjectPool;
 import com.tsf.shell.theme.inside.ThemeListsManager;
@@ -63,7 +63,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
         }
     }
 
-    class a extends k {
+    class a extends GridRenderable {
         private TextureElement d;
         private int e;
 
@@ -80,7 +80,7 @@ public class ThemeDataInfoLayout extends ThemeInfoLayout {
             this.e = i;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.e != -1 && this.d.id == 0) {
                 Bitmap themePreviewBitmap = ThemeDataInfoLayout.this.mPreviewLoader.getThemePreviewBitmap(this.e, ThemeDataInfoLayout.this.mPreviewWidth, ThemeDataInfoLayout.this.mPreviewHeight);

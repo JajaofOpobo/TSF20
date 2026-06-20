@@ -28,8 +28,8 @@ public abstract class BaseApiRequest {
             synchronized (b) {
                 if (!c) {
                     Context contextB = h.b();
-                    a(b, "pid", com.tsf.extend.base.i.a.a().b());
-                    a(b, "ch", com.tsf.extend.base.i.a.a().c());
+                    a(b, "pid", com.tsf.extend.base.i.InstallReferrerHandler.a().b());
+                    a(b, "ch", com.tsf.extend.base.i.InstallReferrerHandler.a().c());
                     a(b, "aid", com.tsf.extend.base.d.DeviceInfoHelper.a(contextB));
                     a(b, "brand", com.tsf.extend.base.d.DeviceInfoHelper.a());
                     a(b, "model", com.tsf.extend.base.d.DeviceInfoHelper.b());
@@ -52,7 +52,7 @@ public abstract class BaseApiRequest {
             a(map, "nmnc", com.tsf.extend.base.d.DeviceInfoHelper.f(contextB));
             a(map, "net", com.tsf.extend.base.d.DeviceInfoHelper.h(contextB));
             a(map, "lan", com.tsf.extend.base.d.DeviceInfoHelper.g(contextB));
-            a(map, "app_lan", com.tsf.extend.base.i.a.a().d());
+            a(map, "app_lan", com.tsf.extend.base.i.InstallReferrerHandler.a().d());
         }
     }
 

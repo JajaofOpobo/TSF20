@@ -2,7 +2,7 @@ package com.tsf.shell.manager.i;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.f.TransitionRenderer;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -33,8 +33,8 @@ public class PrimeEffectRenderer {
     }
 
     public static k b() {
-        k kVar = new k(a, b, false) { // from class: com.tsf.shell.manager.i.PrimeEffectRenderer.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        GridRenderable kVar = new GridRenderable(a, b, false) { // from class: com.tsf.shell.manager.i.PrimeEffectRenderer.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (a.c.id == 0) {
                     com.censivn.C3DEngine.C3DEngine.g().a(a.c, a.a());

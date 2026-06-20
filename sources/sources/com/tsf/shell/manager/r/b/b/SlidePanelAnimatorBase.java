@@ -1,12 +1,12 @@
 package com.tsf.shell.manager.r.b.b;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.tsf.shell.f.e._g.MenuOverlay;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SlidePanelAnimatorBase {
-    protected j c = new j();
+    protected BaseRenderable c = new BaseRenderable();
     protected d d;
 
     public SlidePanelAnimatorBase(d dVar) {
@@ -80,7 +80,7 @@ public class SlidePanelAnimatorBase {
     public void a(float f, float f2, float f3, float f4) {
     }
 
-    public j f() {
+    public BaseRenderable f() {
         return this.c;
     }
 }

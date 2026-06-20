@@ -1,9 +1,9 @@
 package com.tsf.shell.f.i._c.a.c;
 
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneRendererD extends k {
+public class SceneRendererD extends GridRenderable {
     private float a;
     private float d;
     private float e;

@@ -13,7 +13,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public int a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList2, int i, float f, float f2, float f3, float f4, float f5, float f6) {
+    public int a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList2, int i, float f, float f2, float f3, float f4, float f5, float f6) {
         float fMinX;
         int iB = b(f5, f6);
         if (iB == 0) {
@@ -22,7 +22,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
                 a(arrayList, arrayList2, i, f, f2, f3, f4);
             } else {
                 int i2 = aVarA.a;
-                com.censivn.C3DEngine.b.f.i iVar = arrayList2.get(i2);
+                com.censivn.C3DEngine.b.f.IRenderable iVar = arrayList2.get(i2);
                 com.tsf.shell.f.c.a.DrawerState dVar = arrayList.get(i2);
                 float fAbs = Math.abs(aVarA.b);
                 float f7 = 1.4f - (0.2f * fAbs);
@@ -54,7 +54,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
                                 break;
                             }
                             com.tsf.shell.f.c.a.DrawerState dVar4 = arrayList.get(i3);
-                            com.censivn.C3DEngine.b.f.i iVar2 = arrayList2.get(i3);
+                            com.censivn.C3DEngine.b.f.IRenderable iVar2 = arrayList2.get(i3);
                             float f11 = f10 - 0.4f;
                             a(dVar3, dVar4, iVar2, f11, f4);
                             a(dVar4, f2, f3, 0.0f, f);
@@ -88,7 +88,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
                                 break;
                             }
                             dVar6 = arrayList.get(i5);
-                            com.censivn.C3DEngine.b.f.i iVar3 = arrayList2.get(i5);
+                            com.censivn.C3DEngine.b.f.IRenderable iVar3 = arrayList2.get(i5);
                             float f14 = f13 - 0.4f;
                             b(dVar7, dVar6, iVar3, f14, f4);
                             a(dVar6, f2, f3, 0.0f, f);
@@ -133,7 +133,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
         }
     }
 
-    private void a(com.tsf.shell.f.c.a.DrawerState dVar, com.tsf.shell.f.c.a.DrawerState dVar2, com.censivn.C3DEngine.b.f.i iVar, float f, float f2) {
+    private void a(com.tsf.shell.f.c.a.DrawerState dVar, com.tsf.shell.f.c.a.DrawerState dVar2, com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2) {
         if (f < this.e) {
             f = this.e;
         }
@@ -147,7 +147,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
         dVar2.h = false;
     }
 
-    private void b(com.tsf.shell.f.c.a.DrawerState dVar, com.tsf.shell.f.c.a.DrawerState dVar2, com.censivn.C3DEngine.b.f.i iVar, float f, float f2) {
+    private void b(com.tsf.shell.f.c.a.DrawerState dVar, com.tsf.shell.f.c.a.DrawerState dVar2, com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2) {
         if (f < this.e) {
             f = this.e;
         }
@@ -162,7 +162,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public void a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.i> arrayList2, int i, float f, float f2, float f3, float f4) {
+    public void a(ArrayList<com.tsf.shell.f.c.a.DrawerState> arrayList, ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayList2, int i, float f, float f2, float f3, float f4) {
         float fA = a(i, arrayList2, f4);
         float f5 = (f - f2) - f3;
         float f6 = f5 / fA;
@@ -179,7 +179,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
             int i2 = 0;
             float fMaxX = f10;
             while (i2 < i) {
-                com.censivn.C3DEngine.b.f.i iVar = arrayList2.get(i2);
+                com.censivn.C3DEngine.b.f.IRenderable iVar = arrayList2.get(i2);
                 com.tsf.shell.f.c.a.DrawerState dVar = arrayList.get(i2);
                 dVar.a = fMaxX - iVar.minX();
                 dVar.f = (dVar.a + iVar.minX()) - f9;
@@ -196,7 +196,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
             return;
         }
         for (int i3 = 0; i3 < i; i3++) {
-            com.censivn.C3DEngine.b.f.i iVar2 = arrayList2.get(i3);
+            com.censivn.C3DEngine.b.f.IRenderable iVar2 = arrayList2.get(i3);
             com.tsf.shell.f.c.a.DrawerState dVar2 = arrayList.get(i3);
             dVar2.a = f2 - (iVar2.minX() * f7);
             dVar2.f = (dVar2.a + (iVar2.minX() * f7)) - f9;
@@ -242,7 +242,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public void a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3) {
         iVar.setAABBPX(0.0f + f, -2.1474836E9f, 0.0f, f3 - f2, com.censivn.C3DEngine.b.b.A.b * 83.0f, 0.0f);
     }
 
@@ -252,7 +252,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public boolean a(Number3d number3d, com.censivn.C3DEngine.b.f.i iVar, boolean z) {
+    public boolean a(Number3d number3d, com.censivn.C3DEngine.b.f.IRenderable iVar, boolean z) {
         if (number3d.x < iVar.position().x) {
             return z;
         }
@@ -265,7 +265,7 @@ public class DrawerAnimParamTop extends DrawerAnimParamLeft {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3, float f4) {
         float fAsin;
         DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
         if (((-com.censivn.C3DEngine.b.b.A.z) - com.tsf.shell.f.c.a.DrawerContentPanel.a) + iVar.position().x > f) {

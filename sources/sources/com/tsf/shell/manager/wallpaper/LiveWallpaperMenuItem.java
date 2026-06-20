@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.wallpaper;
 
 import android.content.Intent;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.wallpaper.WallpaperMenuPanel;
 

@@ -14,7 +14,7 @@ public class SortedContainerRenderable extends BaseRenderable {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (this.b) {
             a();
@@ -26,7 +26,7 @@ public class SortedContainerRenderable extends BaseRenderable {
         Collections.sort(children(), a);
     }
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.f.A$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.f.SortedContainerRenderable$a, reason: collision with other inner class name */
     public class C0029a implements Comparator<IRenderable> {
         public C0029a() {
         }

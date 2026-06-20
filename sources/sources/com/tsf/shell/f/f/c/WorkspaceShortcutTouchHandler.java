@@ -4,7 +4,7 @@ import android.view.KeyEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.g.C;
 import com.censivn.C3DEngine.b.g.d;
 
@@ -17,7 +17,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceShortcutTouchHandler implements b.a, e.a {
     private TextureElement b;
-    private j c;
+    private BaseRenderable c;
     private com.tsf.shell.f.i.PageItem d;
     private float g;
     private float h;
@@ -38,7 +38,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler$a, reason: collision with other inner class name */
     public class C0109a {
-        public com.censivn.C3DEngine.b.f.a.a a;
+        public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a;
         public float b;
         public float c;
         public float d;
@@ -63,7 +63,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             this.f = f / this.h;
             this.g = f2 / this.i;
             int i = (this.h + 1) * (this.i + 1);
-            this.a = new com.censivn.C3DEngine.b.f.a.a(i, 26, 26, true);
+            this.a = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(i, 26, 26, true);
             for (int i2 = 0; i2 < i; i2++) {
                 this.a.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.A.c, 26.0f * com.censivn.C3DEngine.b.b.A.c);
             }
@@ -73,7 +73,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                 for (int i4 = 0; i4 < this.h + 1; i4++) {
                     float f7 = com.censivn.C3DEngine.b.b.A.r + (this.f * i4);
                     float f8 = com.censivn.C3DEngine.b.b.A.s - (this.g * i3);
-                    com.censivn.C3DEngine.b.f.a.b bVarA = this.a.a(((this.h + 1) * i3) + i4);
+                    com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.a.a(((this.h + 1) * i3) + i4);
                     b bVar = new b();
                     bVar.a = i4;
                     bVar.b = i3;
@@ -90,8 +90,8 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
 
     public WorkspaceShortcutTouchHandler() {
         com.tsf.shell.manager.app.ObserverManager.a(this);
-        this.c = new j() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.1
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.c = new BaseRenderable() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.1
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (a.this.e && !a.this.f) {
                     int iB = a.this.a.a.b();
@@ -135,7 +135,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                         }
                     }
                     for (int i13 = 0; i13 < iB; i13++) {
-                        com.censivn.C3DEngine.b.f.a.b bVarA = a.this.a.a.a(i13);
+                        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a.this.a.a.a(i13);
                         b bVar = (b) bVarA.a();
                         float fC = bVarA.c();
                         bVarA.a(((bVar.c - fC) * 0.2f) + fC);
@@ -218,7 +218,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             this.l = null;
             final int iB = this.a.a.b();
             for (int i = 0; i < iB; i++) {
-                com.censivn.C3DEngine.b.f.a.b bVarA = this.a.a.a(i);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.a.a.a(i);
                 ((b) bVarA.a()).c = bVarA.c();
             }
             final C0109a c0109a = this.a;
@@ -229,7 +229,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                     while (true) {
                         int i3 = i2;
                         if (i3 < iB) {
-                            com.censivn.C3DEngine.b.f.a.b bVarA2 = c0109a.a.a(i3);
+                            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = c0109a.a.a(i3);
                             bVarA2.a(((b) bVarA2.a()).c * (1.0f - f));
                             i2 = i3 + 1;
                         } else {
@@ -241,7 +241,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                 @Override // com.censivn.C3DEngine.b.g.d
                 public void a() {
                     for (int i2 = 0; i2 < iB; i2++) {
-                        com.censivn.C3DEngine.b.f.a.b bVarA2 = c0109a.a.a(i2);
+                        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = c0109a.a.a(i2);
                         ((b) bVarA2.a()).c = 0.0f;
                         bVarA2.a(0.0f);
                     }

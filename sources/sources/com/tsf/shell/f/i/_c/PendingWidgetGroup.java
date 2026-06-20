@@ -2,19 +2,19 @@ package com.tsf.shell.f.i._c;
 
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PendingWidgetGroup extends WidgetGroupBase {
-    private j k;
-    private k l;
-    private k m;
-    private k n;
-    private k o;
+    private BaseRenderable k;
+    private GridRenderable l;
+    private GridRenderable m;
+    private GridRenderable n;
+    private GridRenderable o;
     private TextureElement p = new TextureElement(0, false);
     private TextureElement q = new TextureElement(0, false);
     private TextureElement r = new TextureElement(0, false);
@@ -54,15 +54,15 @@ public class PendingWidgetGroup extends WidgetGroupBase {
         return this.k;
     }
 
-    private j q() {
+    private BaseRenderable q() {
         PendingWidgetGroup();
-        j jVar = new j();
-        this.l = new k(242.0f * com.censivn.C3DEngine.b.b.A.c, 150.0f * com.censivn.C3DEngine.b.b.A.c, false) { // from class: com.tsf.shell.f.i._c.PendingWidgetGroup.1
+        j jVar = new BaseRenderable();
+        this.l = new GridRenderable(242.0f * com.censivn.C3DEngine.b.b.A.c, 150.0f * com.censivn.C3DEngine.b.b.A.c, false) { // from class: com.tsf.shell.f.i._c.PendingWidgetGroup.1
             float a = 30.0f * com.censivn.C3DEngine.b.b.A.c;
             int d = 10;
             double e = 0.017453292519943295d;
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 10.0f * com.censivn.C3DEngine.b.b.A.c);
                 this.d++;
@@ -98,7 +98,7 @@ public class PendingWidgetGroup extends WidgetGroupBase {
         com.censivn.C3DEngine.b.g.c.a(iVar, 300, dVar);
     }
 
-    class a extends k {
+    class a extends GridRenderable {
         float a;
         int d;
         double e;
@@ -131,7 +131,7 @@ public class PendingWidgetGroup extends WidgetGroupBase {
             }
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.i) {
                 position().y = this.a + (((float) Math.sin(this.e * ((double) this.d))) * 30.0f * com.censivn.C3DEngine.b.b.A.c);

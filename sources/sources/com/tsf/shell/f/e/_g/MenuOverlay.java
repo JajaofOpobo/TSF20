@@ -6,9 +6,9 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.b;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -30,12 +30,12 @@ public abstract class MenuOverlay {
     private com.tsf.shell.f.e._g.MenuClassButton mClassMenu = new com.tsf.shell.f.e._g.MenuClassButton(this, MENU_ITEM_DISTANCE);
     private a mKeyListener = new a();
     private b mSceneEventListener = new MenuContainer();
-    private j mContainer = new j();
-    private j mAnimationContainer = new j();
-    private j mMenuContainer = new j();
-    private j mContentContainer = new j();
-    private k mBarBackground = new k(com.censivn.C3DEngine.b.b.A.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.MenuOverlay.3
-        @Override // com.censivn.C3DEngine.b.f.k
+    private BaseRenderable mContainer = new BaseRenderable();
+    private BaseRenderable mAnimationContainer = new BaseRenderable();
+    private BaseRenderable mMenuContainer = new BaseRenderable();
+    private BaseRenderable mContentContainer = new BaseRenderable();
+    private GridRenderable mBarBackground = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 0.0f, false) { // from class: com.tsf.shell.f.e._g.MenuOverlay.3
+        @Override // com.censivn.C3DEngine.b.f.GridRenderable
         public void b(float f) {
             float f2 = MenuOverlay.MENU_HEIGHT + com.censivn.C3DEngine.b.b.A.K + MenuOverlay.this.mOffsetMenuHeight + f;
             float f3 = (-f2) - MenuOverlay.MENU_HEIGHT;

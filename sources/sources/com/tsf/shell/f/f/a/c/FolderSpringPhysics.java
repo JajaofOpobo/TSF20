@@ -13,11 +13,11 @@ public class FolderSpringPhysics {
     private double e = 0.0d;
     private ArrayList<a> d = new ArrayList<>();
 
-    public com.censivn.C3DEngine.b.f.i a(int i) {
+    public com.censivn.C3DEngine.b.f.IRenderable a(int i) {
         return null;
     }
 
-    public com.censivn.C3DEngine.b.f.j a() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable a() {
         return null;
     }
 
@@ -38,7 +38,7 @@ public class FolderSpringPhysics {
         while (true) {
             int i2 = i;
             if (i2 < this.d.size()) {
-                com.censivn.C3DEngine.b.f.i iVarA = a(i2);
+                com.censivn.C3DEngine.b.f.IRenderable iVarA = a(i2);
                 a aVar = this.d.get(i2);
                 aVar.a.x = b + this.g + (c * i2);
                 Number3d number3d = aVar.a;
@@ -57,7 +57,7 @@ public class FolderSpringPhysics {
         int size = this.d.size();
         double d = this.e;
         for (int i = 0; i < size; i++) {
-            com.censivn.C3DEngine.b.f.i iVarA = a(FolderPageItemBase);
+            com.censivn.C3DEngine.b.f.IRenderable iVarA = a(FolderPageItemBase);
             if (a(iVarA, iVarA.position().x)) {
                 iVarA.visible(true);
             } else {
@@ -89,7 +89,7 @@ public class FolderSpringPhysics {
         this.d.remove(this.d.size() - 1);
     }
 
-    private boolean a(com.censivn.C3DEngine.b.f.i iVar, float f) {
+    private boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f) {
         return (iVar.minX() + f) + a().position().x <= ((float) com.censivn.C3DEngine.b.b.A.A) && (iVar.maxX() + f) + a().position().x >= ((float) com.censivn.C3DEngine.b.b.A.z);
     }
 
@@ -101,11 +101,11 @@ public class FolderSpringPhysics {
         return com.censivn.C3DEngine.b.b.A.z + a;
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         d();
     }
 
-    public void b(com.censivn.C3DEngine.b.f.i iVar) {
+    public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         e();
     }
 

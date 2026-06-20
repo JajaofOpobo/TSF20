@@ -7,7 +7,7 @@ import com.android.volley.n;
 import com.android.volley.p;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends i {
+public class BitmapRequest extends i {
     private boolean a;
     private l.a b;
 

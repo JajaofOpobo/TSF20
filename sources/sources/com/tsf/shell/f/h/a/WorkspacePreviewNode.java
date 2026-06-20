@@ -1,6 +1,6 @@
 package com.tsf.shell.f.h.a;
 
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.f.h.a.a.SceneElementRenderer;
 import com.tsf.shell.manager.b.ConfigManager;

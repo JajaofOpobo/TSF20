@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.j;
 
 import android.view.KeyEvent;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class RateDialogController {

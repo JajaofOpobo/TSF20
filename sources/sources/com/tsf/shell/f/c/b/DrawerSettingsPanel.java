@@ -6,8 +6,8 @@ import android.database.Cursor;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.c.b.a.IDrawerSettingsCallback;
 import com.tsf.shell.ShellGraphicsContext;
 import com.tsf.shell.utils.ItemInfoListSorter;
@@ -17,7 +17,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
     public static int a = 1;
-    private j d;
+    private BaseRenderable d;
     private com.tsf.shell.f.e.PageIndicatorStrip e;
     private com.tsf.shell.f.c.b.a.IDrawerSettingsCallback f;
     private com.censivn.C3DEngine.b.h.e.a i;
@@ -37,7 +37,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         this.m = z;
     }
 
-    public j a() {
+    public BaseRenderable a() {
         return this.d;
     }
 
@@ -49,7 +49,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         this.c = com.censivn.C3DEngine.b.b.A.a(this.c);
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = new com.tsf.shell.f.c.b.a.DrawerSettingsResult(this, this.m ? com.tsf.shell.manager.o.ButtonPresetManager.c : com.tsf.shell.manager.o.ButtonPresetManager.a);
-        this.d = new j();
+        this.d = new BaseRenderable();
         this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
             @Override // com.censivn.C3DEngine.b.h.e.a
             public void a(int i2) {

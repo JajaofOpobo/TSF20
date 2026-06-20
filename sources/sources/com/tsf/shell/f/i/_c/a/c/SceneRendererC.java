@@ -10,7 +10,7 @@ public class SceneRendererC extends j {
 
     public SceneRendererC(VTextureManager vTextureManager, Context context) {
         super(vTextureManager, context);
-        com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) getVirtualTarget();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) getVirtualTarget();
         this.a = new a();
         jVar.addChild(this.a);
     }

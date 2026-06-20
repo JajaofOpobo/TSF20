@@ -60,7 +60,7 @@ public abstract class AbstractModelParser implements IModelParser {
     }
 
     @Override // com.censivn.C3DEngine.e.IModelParser
-    public j b() {
+    public BaseRenderable b() {
         return null;
     }
 

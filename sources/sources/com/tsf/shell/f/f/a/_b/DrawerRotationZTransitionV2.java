@@ -51,7 +51,7 @@ public class DrawerRotationZTransitionV2 extends DrawerTransitionBaseV2 {
     }
 
     @Override // com.tsf.shell.f.f.a._b.DrawerTransitionBaseV2
-    public void a(com.censivn.C3DEngine.b.f.j jVar) {
+    public void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar) {
     }
 
     @Override // com.tsf.shell.f.f.a._b.DrawerTransitionBaseV2

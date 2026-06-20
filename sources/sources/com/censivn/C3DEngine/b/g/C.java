@@ -79,11 +79,11 @@ public class C {
                 dVar.a(a.o);
             }
             if (aVar instanceof i) {
-                aVar2 = new com.censivn.C3DEngine.b.g.a.b((i) aVar, i, dVar);
+                aVar2 = new com.censivn.C3DEngine.b.g.a.b((IRenderable) aVar, i, dVar);
             } else if (aVar instanceof com.censivn.C3DEngine.b.g._b.b) {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.d((com.censivn.C3DEngine.b.g._b.b) aVar, i, dVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.b.f.a.b) {
-                aVar2 = new com.censivn.C3DEngine.b.g.a.a((com.censivn.C3DEngine.b.f.a.b) aVar, i, dVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.b.f.a.SpriteItemData) {
+                aVar2 = new com.censivn.C3DEngine.b.g.a.a((com.censivn.C3DEngine.b.f.a.SpriteItemData) aVar, i, dVar);
             } else {
                 aVar2 = null;
             }

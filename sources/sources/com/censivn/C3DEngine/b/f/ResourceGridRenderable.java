@@ -19,7 +19,7 @@ public class ResourceGridRenderable extends GridRenderable {
         this.a = i;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.d.id == 0) {
             Bitmap bitmapA = x.a(this.a);

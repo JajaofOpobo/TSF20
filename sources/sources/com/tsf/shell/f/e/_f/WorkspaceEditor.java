@@ -16,10 +16,10 @@ import com.censivn.C3DEngine.api.element.PositionNumber3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.f._d.c.a.DashLayoutContainer;
 import com.tsf.shell.theme.inside.ThemeManager;
@@ -47,16 +47,16 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
     private boolean r = false;
     private com.tsf.shell.manager.f.WorkspaceScene.a k = new com.tsf.shell.manager.f.WorkspaceScene.a();
     private ArrayList<c> c = new ArrayList<>();
-    private j e = new j();
-    private j d = new j() { // from class: com.tsf.shell.f.e._f.WorkspaceEditor.1
+    private BaseRenderable e = new BaseRenderable();
+    private BaseRenderable d = new BaseRenderable() { // from class: com.tsf.shell.f.e._f.WorkspaceEditor.1
         Number3d a = new Number3d();
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onKillFocus() {
             a.this.a(true);
         }
 
-        @Override // com.censivn.C3DEngine.b.f.j
+        @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
             if (a.this.f != null) {
                 this.a.setAllFrom(a.this.f.position());
@@ -393,7 +393,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         }
     }
 
-    private j.a i() {
+    private BaseRenderable.a i() {
         j.a aVarC = com.tsf.shell.f.f.PageAnimationState.c(this);
         aVarC.a = this;
         com.tsf.shell.manager.app.TextureCache.b(com.tsf.shell.f.f.PageAnimationState.c(), aVarC.b);
@@ -541,13 +541,13 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         }
     }
 
-    public class c extends com.censivn.C3DEngine.b.f.j {
+    public class c extends com.censivn.C3DEngine.b.f.BaseRenderable {
         /* JADX WARN: decompile error */
         public C0094a mData;
         public int e;
         public boolean a = false;
-        public k c = new k(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);
-        public m d = new m();
+        public GridRenderable c = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);
+        public m d = new LabelRenderable();
 
         public c(int i) {
             this.e = i;
@@ -641,7 +641,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.b.a, e.a, com.
         return this.b;
     }
 
-    public com.censivn.C3DEngine.b.f.j d() {
+    public com.censivn.C3DEngine.b.f.BaseRenderable d() {
         return this.e;
     }
 }

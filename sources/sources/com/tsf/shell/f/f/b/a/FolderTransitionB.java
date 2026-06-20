@@ -1,7 +1,7 @@
 package com.tsf.shell.f.f.b.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.f.a.FolderPage;
 import java.util.ArrayList;
 
@@ -229,11 +229,11 @@ public class FolderTransitionB extends FolderPageTransitionBase {
     }
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void a(com.censivn.C3DEngine.b.f.a.a aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.d dVar = null;
         float f = com.censivn.C3DEngine.b.b.A.c * 25.0f;
         for (int i = 0; i < aVar.a(); i++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.d();
             float fAbs = Math.abs((float) Math.sqrt((bVarA.m.x * bVarA.m.x) + (bVarA.m.y * bVarA.m.y)));
             float f2 = (bVarA.m.x * (fAbs + f)) / fAbs;

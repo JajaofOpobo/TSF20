@@ -4,15 +4,15 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.element.info.LauncherDrawerFolder3DInfo;
 import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcutStandardInfo;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderWidgetGroup extends WidgetGroupBase {
-    private j k;
+    private BaseRenderable k;
     private com.tsf.shell.f.i._b.d.WorkspaceShortcutItem l;
     private a m;
     private a n;
@@ -148,9 +148,9 @@ public class FolderWidgetGroup extends WidgetGroupBase {
         com.censivn.C3DEngine.C3DEngine.a().b(this.v, 1000L);
     }
 
-    private j r() {
+    private BaseRenderable r() {
         FolderWidgetGroup();
-        this.k = new j();
+        this.k = new BaseRenderable();
         this.l = new com.tsf.shell.f.i._b.d.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
         this.m = new a();
@@ -179,11 +179,11 @@ public class FolderWidgetGroup extends WidgetGroupBase {
     }
 
     class a extends com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase {
-        public j a;
+        public BaseRenderable a;
 
         public a() {
             super(null, com.tsf.shell.manager.o.ButtonPresetManager.a);
-            this.a = new j();
+            this.a = new BaseRenderable();
             this.k.visible(true);
             this.k.removeFromParent();
             this.a.addChild(this.k);

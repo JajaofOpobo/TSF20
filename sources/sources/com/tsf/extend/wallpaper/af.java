@@ -142,7 +142,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
             }
         });
         this.a.setOnScrollListener(this);
-        com.tsf.extend.base.b.A aVarA = z.h().a(this.g.a(), z.h);
+        com.tsf.extend.base.b.PagedListModel aVarA = z.h().a(this.g.a(), z.h);
         if (aVarA != null && aVarA.a() != null) {
             this.l = false;
             this.t = !aVarA.b();
@@ -358,7 +358,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
     }
 
-    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private com.tsf.extend.base.d.BaseDataProvider.b b;
 
         public b(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -366,9 +366,9 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.PagedListModel aVar) {
             if (aVar == null) {
-                a(jSONObject, 0, (com.tsf.extend.base.b.A) null);
+                a(jSONObject, 0, (com.tsf.extend.base.b.PagedListModel) null);
                 return;
             }
             af.this.t = !aVar.b();
@@ -399,7 +399,7 @@ public class af extends FrameLayout implements DialogInterface.OnClickListener, 
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             if (this.b == com.tsf.extend.base.d.BaseDataProvider.b.LoadMore) {
                 af.this.c();
                 return;

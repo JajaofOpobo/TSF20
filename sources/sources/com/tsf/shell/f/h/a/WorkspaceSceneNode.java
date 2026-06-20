@@ -4,19 +4,19 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.b.A.d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceSceneNode {
-    private j a;
+    private BaseRenderable a;
     private com.censivn.C3DEngine.b.h.d.c b;
     private d c;
     private TextureElement d;
-    private k e;
+    private GridRenderable e;
     private boolean f = true;
     private boolean g = false;
     private boolean h;
@@ -41,7 +41,7 @@ public class WorkspaceSceneNode {
                 a.this.x();
             }
         });
-        this.a = new j();
+        this.a = new BaseRenderable();
         this.b = new com.censivn.C3DEngine.b.h.d.c(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.b.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.b.a(b.d.ico_setting);
@@ -137,7 +137,7 @@ public class WorkspaceSceneNode {
         com.censivn.C3DEngine.b.g.c.a(iVar, 250, dVar);
     }
 
-    public j c() {
+    public BaseRenderable c() {
         return this.a;
     }
 

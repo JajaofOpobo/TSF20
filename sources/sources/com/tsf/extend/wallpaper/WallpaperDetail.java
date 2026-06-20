@@ -1039,7 +1039,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
         }
 
-        class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+        class b implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
             private final com.tsf.extend.base.d.BaseDataProvider.b b;
 
             public b(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -1047,7 +1047,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
 
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-            public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
+            public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -1057,7 +1057,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
 
             @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-            public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+            public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
                 Log.d("WallpaperDetail", "onFail=" + this.b.name());
                 com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.WallpaperDetail.e.b.2
                     @Override // java.lang.Runnable
@@ -1096,7 +1096,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void a(com.tsf.extend.base.b.A aVar, boolean z) {
+        public void a(com.tsf.extend.base.b.PagedListModel aVar, boolean z) {
             com.tsf.extend.theme.p pVar = null;
             if (aVar instanceof com.tsf.extend.theme.p) {
                 pVar = (com.tsf.extend.theme.p) aVar;
@@ -1454,7 +1454,7 @@ public class WallpaperDetail extends FrameLayout implements DialogInterface.OnCl
             }
             this.B.setVisibility(this.A ? 0 : 8);
             this.C.setSelected(this.A);
-            com.tsf.extend.base.h.a.a().a(this.A);
+            com.tsf.extend.base.h.LogWriter.a().a(this.A);
             a(eVarA.o, (com.tsf.extend.theme.k) null, z ? "9" : "10");
         }
     }

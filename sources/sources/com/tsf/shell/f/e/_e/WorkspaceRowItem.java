@@ -1,9 +1,9 @@
 package com.tsf.shell.f.e._e;
 
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceRowItem extends k implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
+public class WorkspaceRowItem extends GridRenderable implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
     private boolean a;
 
     public WorkspaceRowItem(float f, float f2, boolean z) {

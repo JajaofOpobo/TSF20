@@ -69,7 +69,7 @@ public class DrawerTriangularTransitionV2 extends DrawerTransitionBaseV2 {
         if (iNumChildren != 0) {
             ArrayList<a> arrayList = this.d.get(iNumChildren - 1);
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.f.i childAt = aVar.getChildAt(DrawerScaleTransitionV2);
+                com.censivn.C3DEngine.b.f.IRenderable childAt = aVar.getChildAt(DrawerScaleTransitionV2);
                 if (i >= this.b) {
                     aVar2 = arrayList.get(this.b - 1);
                     number3d = this.e.get(this.b - 1);
@@ -111,7 +111,7 @@ public class DrawerTriangularTransitionV2 extends DrawerTransitionBaseV2 {
     }
 
     @Override // com.tsf.shell.f.f.a._b.DrawerTransitionBaseV2
-    public void a(com.censivn.C3DEngine.b.f.j jVar) {
+    public void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar) {
     }
 
     @Override // com.tsf.shell.f.f.a._b.DrawerTransitionBaseV2

@@ -23,8 +23,8 @@ public class b extends g {
         h();
     }
 
-    @Override // com.censivn.C3DEngine.b.b.c, com.censivn.C3DEngine.b.f.i
-    public void onChildMeasure(com.censivn.C3DEngine.b.f.i iVar) {
+    @Override // com.censivn.C3DEngine.b.b.c, com.censivn.C3DEngine.b.f.IRenderable
+    public void onChildMeasure(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         iVar.position().x = (-iVar.maxX()) / 2.0f;
     }
 
@@ -87,17 +87,17 @@ public class b extends g {
     }
 
     /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.b$b, reason: collision with other inner class name */
-    class C0028b extends com.censivn.C3DEngine.b.f.j {
-        private com.censivn.C3DEngine.b.f.a.a b;
-        private m c = new m();
-        private com.censivn.C3DEngine.b.f.a.b d;
-        private com.censivn.C3DEngine.b.f.a.b e;
+    class C0028b extends com.censivn.C3DEngine.b.f.BaseRenderable {
+        private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b;
+        private LabelRenderable c = new LabelRenderable();
+        private com.censivn.C3DEngine.b.f.a.SpriteItemData d;
+        private com.censivn.C3DEngine.b.f.a.SpriteItemData e;
 
         public C0028b() {
             this.c.d(50);
             this.c.position().x = b.a + com.censivn.C3DEngine.b.b.A.a(20.0f);
             this.c.b(1);
-            this.b = new com.censivn.C3DEngine.b.f.a.a(2, b.a, b.a * 2, b.a);
+            this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, b.a, b.a * 2, b.a);
             this.b.position().x = b.a / 2.0f;
             this.d = this.b.a(0);
             this.d.b(0, 0, 1, 1);
@@ -165,7 +165,7 @@ public class b extends g {
             this.e.f();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (b.b.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(b.b, b.d.preference_radio);

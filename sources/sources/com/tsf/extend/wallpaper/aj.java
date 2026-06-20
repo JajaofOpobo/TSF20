@@ -251,8 +251,8 @@ public class aj {
         int i5 = iB - i2;
         if (iA - i > 0 || i5 > 0) {
             a(wallpaperManager, iA, iB, z2);
-            com.tsf.extend.base.h.a.a().a(iA);
-            com.tsf.extend.base.h.a.a().b(iB);
+            com.tsf.extend.base.h.LogWriter.a().a(iA);
+            com.tsf.extend.base.h.LogWriter.a().b(iB);
             return;
         }
         if (i2 > i) {
@@ -263,8 +263,8 @@ public class aj {
             i4 = iB;
         }
         a(wallpaperManager, i3, i4, z2);
-        com.tsf.extend.base.h.a.a().a(i3);
-        com.tsf.extend.base.h.a.a().b(i4);
+        com.tsf.extend.base.h.LogWriter.a().a(i3);
+        com.tsf.extend.base.h.LogWriter.a().b(i4);
     }
 
     private static void a(final WallpaperManager wallpaperManager, final int i, final int i2, boolean z) {

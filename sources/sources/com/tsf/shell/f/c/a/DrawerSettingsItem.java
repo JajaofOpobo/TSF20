@@ -1,9 +1,9 @@
 package com.tsf.shell.f.c.a;
 
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerSettingsItem extends k {
+public class DrawerSettingsItem extends GridRenderable {
     private float a;
     private float d;
     private float e;
@@ -22,7 +22,7 @@ public class DrawerSettingsItem extends k {
         DrawerSettingsItem();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
     }
 

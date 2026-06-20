@@ -63,7 +63,7 @@ public class TextureSpriteRenderable extends BaseRenderable {
         this.d = i3;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void draw() {
         if (this.k) {
             com.censivn.C3DEngine.C3DEngine.e().a(this);
@@ -91,7 +91,7 @@ public class TextureSpriteRenderable extends BaseRenderable {
         super.draw();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.h) {
             updatePointsVBO();
@@ -155,7 +155,7 @@ public class TextureSpriteRenderable extends BaseRenderable {
             this.f.add(bVar);
         }
         final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable self = this;
-        this.j = new com.censivn.C3DEngine.b.d.a(this.g == null ? this : this.g) { // from class: com.censivn.C3DEngine.b.f.a.a.1
+        this.j = new com.censivn.C3DEngine.b.d.a(this.g == null ? this : this.g) { // from class: com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable.1
             @Override // com.censivn.C3DEngine.b.d.a
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
@@ -465,7 +465,7 @@ public class TextureSpriteRenderable extends BaseRenderable {
         this.l = z;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public boolean calTouchCollision(float f, float f2) {
         if (this.l) {
             return super.calTouchCollision(f, f2);

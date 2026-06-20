@@ -2,9 +2,9 @@ package com.tsf.shell.f.e._e;
 
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.manager.n.ToastOverlayController;
 import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
@@ -29,7 +29,7 @@ public class SelectionState {
     private com.tsf.shell.f.e._e.SelectionCallback k;
     private com.tsf.shell.f.e._e.SelectionCallback l;
     private f m;
-    private j n;
+    private BaseRenderable n;
     private float o;
     private float p;
     private boolean q = false;
@@ -50,8 +50,8 @@ public class SelectionState {
         this.j = new com.tsf.shell.f.e._e.SelectionCallback();
         this.k = new com.tsf.shell.f.e._e.SelectionCallback();
         this.l = new com.tsf.shell.f.e._e.SelectionCallback();
-        this.n = new j() { // from class: com.tsf.shell.f.e._e.SelectionState.1
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+        this.n = new BaseRenderable() { // from class: com.tsf.shell.f.e._e.SelectionState.1
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public boolean removeChild(i iVar) {
                 boolean zRemoveChild = super.removeChild(iVar);
                 if (numChildren() == 0) {
@@ -60,7 +60,7 @@ public class SelectionState {
                 return zRemoveChild;
             }
 
-            @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.f
+            @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 if (parent() == null) {
                     com.tsf.shell.manager.app.TaskScheduler.a(this);
@@ -430,12 +430,12 @@ public class SelectionState {
 
     public static class a extends SelectionCallback {
         private static TextureElement d = new TextureElement(0, false);
-        private k a;
+        private GridRenderable a;
 
         public a(float f, float f2, boolean z) {
             super(f, f2, z);
-            this.a = new k(com.censivn.C3DEngine.b.b.A.a(64.0f), com.censivn.C3DEngine.b.b.A.a(14.0f), false) { // from class: com.tsf.shell.f.e._e.SelectionState.a.1
-                @Override // com.censivn.C3DEngine.b.f.i
+            this.a = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(64.0f), com.censivn.C3DEngine.b.b.A.a(14.0f), false) { // from class: com.tsf.shell.f.e._e.SelectionState.a.1
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (SelectionIndicator.d.id == 0) {
                         com.censivn.C3DEngine.C3DEngine.g().a(SelectionIndicator.d, SelectionCallback.d.editer_icon_delete_cap);

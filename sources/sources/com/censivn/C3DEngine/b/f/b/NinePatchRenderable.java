@@ -67,24 +67,24 @@ public class NinePatchRenderable extends GridRenderable {
         g();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.k
+    @Override // com.censivn.C3DEngine.b.f.GridRenderable
     public void a(float f) {
         this.b = f;
         g();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.k
+    @Override // com.censivn.C3DEngine.b.f.GridRenderable
     public void b(float f) {
         this.c = f;
         g();
     }
 
-    @Override // com.censivn.C3DEngine.b.f.k
+    @Override // com.censivn.C3DEngine.b.f.GridRenderable
     public float b() {
         return this.b;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.k
+    @Override // com.censivn.C3DEngine.b.f.GridRenderable
     public float c() {
         return this.c;
     }

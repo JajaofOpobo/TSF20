@@ -42,7 +42,7 @@ public class DrawerScaleTransition extends DrawerTransitionBase {
     }
 
     @Override // com.tsf.shell.f.f.a.b.DrawerTransitionBase
-    public void a(com.censivn.C3DEngine.b.f.j jVar) {
+    public void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar) {
     }
 
     @Override // com.tsf.shell.f.f.a.b.DrawerTransitionBase

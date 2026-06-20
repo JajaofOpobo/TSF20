@@ -3,10 +3,10 @@ package com.tsf.shell.manager.wallpaper;
 import android.content.Intent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.censivn.C3DEngine.b.h.b.f;
 import com.censivn.C3DEngine.b.h.b.h;
 
@@ -131,14 +131,14 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getContentContainer() {
+    public BaseRenderable getContentContainer() {
         return this.a;
     }
 
-    static class MenuItem extends j {
+    static class MenuItem extends BaseRenderable {
         public static final int b = (int) com.censivn.C3DEngine.b.b.A.a(300.0f);
         public static final int c = (int) com.censivn.C3DEngine.b.b.A.a(500.0f);
-        private m a = new m();
+        private LabelRenderable a = new LabelRenderable();
         private i d;
 
         public MenuItem(String str) {
@@ -180,7 +180,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         }
     }
 
-    static class a extends k {
+    static class a extends GridRenderable {
         private TextureElement a;
         private int d;
 
@@ -197,7 +197,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             this.d = i;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.d != 0 && this.a.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d);

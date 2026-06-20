@@ -98,12 +98,12 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
         return this.b == null || this.b.size() <= 0;
     }
 
-    private class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    private class a implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private a() {
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -116,13 +116,13 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
                         UploadCategoryView.this.invalidate();
                         return;
                     }
-                    a.this.a((JSONObject) null, 0, (com.tsf.extend.base.b.A) null);
+                    a.this.a((JSONObject) null, 0, (com.tsf.extend.base.b.PagedListModel) null);
                 }
             });
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.wallpaper.upload.b.a.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -299,7 +299,7 @@ public class UploadCategoryView extends FrameLayout implements View.OnClickListe
 
     /* JADX INFO: Access modifiers changed from: private */
     public List<w> getCategoryData() {
-        com.tsf.extend.base.b.A aVarJ = z.h().j();
+        com.tsf.extend.base.b.PagedListModel aVarJ = z.h().j();
         if (aVarJ != null) {
             return aVarJ.a();
         }

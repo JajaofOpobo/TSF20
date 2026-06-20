@@ -144,7 +144,7 @@ public class FolderItemAnimation {
         }
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         w.a(3);
         com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
         dVar.l(0.8f);
@@ -165,7 +165,7 @@ public class FolderItemAnimation {
         }
     }
 
-    public void b(com.censivn.C3DEngine.b.f.i iVar) {
+    public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (iVar != null) {
             com.censivn.C3DEngine.b.g.d dVar = new com.censivn.C3DEngine.b.g.d();
             dVar.l(1.0f);

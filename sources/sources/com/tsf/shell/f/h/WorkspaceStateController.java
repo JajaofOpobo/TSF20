@@ -4,17 +4,17 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, com.censivn.C3DEngine.b.c.e.a {
     public static int b = -1725816286;
-    private j d;
+    private BaseRenderable d;
     private com.tsf.shell.f.e.c.AnimationNode e;
     private c f;
-    private j g;
+    private BaseRenderable g;
     private e k;
     private com.censivn.C3DEngine.b.c.b.a l;
     private float m;
@@ -86,7 +86,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
         this.a = this.t ? com.tsf.shell.manager.b.ConfigManager.ab() : 0;
         this.c = 80.0f * com.censivn.C3DEngine.b.b.A.c;
         this.s = new com.tsf.shell.f.h.a.WorkspacePreviewNode();
-        this.d = new j();
+        this.d = new BaseRenderable();
         this.k = new DockOperationBorder();
         this.k.b(0.0f);
         this.l = new com.censivn.C3DEngine.b.c.b.a() { // from class: com.tsf.shell.f.h.WorkspaceStub.1
@@ -104,13 +104,13 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.b.a, 
             public void d() {
             }
 
-            @Override // com.tsf.shell.f.e.c.a, com.censivn.C3DEngine.b.f.i
+            @Override // com.tsf.shell.f.e.c.a, com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 if (!WorkspaceStub.this.q) {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (getAnimationObjectState()) {
                     position().x += (WorkspaceStub.this.o - position().x) * WorkspaceStub.this.m;

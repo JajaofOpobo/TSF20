@@ -487,7 +487,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 } else if (this.z instanceof aq) {
                     this.A = this.z.t();
                     if ((this.z instanceof com.tsf.extend.theme.B) && ((com.tsf.extend.theme.B) this.z).e()) {
-                        com.tsf.extend.base.b.A aVarA = v.h().a(this.z.h());
+                        com.tsf.extend.base.b.PagedListModel aVarA = v.h().a(this.z.h());
                         if (aVarA != null && aVarA.a() != null) {
                             a(aVarA, false);
                         } else {
@@ -497,7 +497,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 }
             } else {
                 this.A = this.z.t();
-                com.tsf.extend.base.b.A aVarA2 = v.h().a(this.z.h());
+                com.tsf.extend.base.b.PagedListModel aVarA2 = v.h().a(this.z.h());
                 if (aVarA2 != null && aVarA2.a() != null) {
                     a(aVarA2, false);
                 } else {
@@ -1111,7 +1111,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         this.O.notifyDataSetChanged();
     }
 
-    class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         private final com.tsf.extend.base.d.BaseDataProvider.b b;
 
         public d(com.tsf.extend.base.d.BaseDataProvider.b bVar) {
@@ -1119,7 +1119,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -1129,7 +1129,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         }
 
         @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDetail.d.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -1144,7 +1144,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(com.tsf.extend.base.b.A aVar, boolean z) {
+    public void a(com.tsf.extend.base.b.PagedListModel aVar, boolean z) {
         p pVar = null;
         if (aVar instanceof p) {
             pVar = (p) aVar;
@@ -1231,8 +1231,8 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
             if (!"new".equals(this.I) && !"hot".equals(this.I) && !"banner".equals(this.I)) {
                 String str2 = this.I;
             }
-            Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.A) {
+            Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(this.I);
+            if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
             }
         }
     }
@@ -1241,32 +1241,32 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         if (this.z != null) {
             if (!m.j[0].equals(this.I) && !m.j[1].equals(this.I) && m.j[3].equals(this.I)) {
             }
-            Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.A) {
+            Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(this.I);
+            if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
             }
         }
     }
 
     private void F() {
         if (this.z != null) {
-            Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.A) {
+            Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(this.I);
+            if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
             }
         }
     }
 
     private void G() {
         if (this.z != null) {
-            Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.A) {
+            Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(this.I);
+            if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
             }
         }
     }
 
     private void H() {
         if (this.z != null) {
-            Object objA = com.tsf.extend.base.b.a.a.a().a(this.I);
-            if (objA instanceof com.tsf.extend.base.b.A) {
+            Object objA = com.tsf.extend.base.b.a.BitmapCacheHelper.a().a(this.I);
+            if (objA instanceof com.tsf.extend.base.b.PagedListModel) {
             }
         }
     }

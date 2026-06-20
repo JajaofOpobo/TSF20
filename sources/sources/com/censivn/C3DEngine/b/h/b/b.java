@@ -8,7 +8,7 @@ public class b {
         return 0;
     }
 
-    public i a(int i, i iVar) {
+    public IRenderable a(int i, i iVar) {
         return null;
     }
 

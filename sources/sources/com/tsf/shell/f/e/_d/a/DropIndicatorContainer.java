@@ -1,10 +1,10 @@
 package com.tsf.shell.f.e._d.a;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DropIndicatorContainer extends j {
+public class DropIndicatorContainer extends BaseRenderable {
     private b a = new DropIndicatorRenderer();
 
     public DropIndicatorContainer() {

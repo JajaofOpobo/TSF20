@@ -2,7 +2,7 @@ package com.tsf.shell.f.c.a.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.shell.f.c.a.a.DrawerAnimConfig;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -25,17 +25,17 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamCenter, com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public void a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3) {
         iVar.setAABBPX(com.censivn.C3DEngine.b.b.A.b * (-83.0f), (-f3) + f2, 0.0f, 2.1474836E9f, 0.0f - f, 0.0f);
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase
-    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f) {
+    public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f) {
         return dVar.a + (iVar.maxX() * f);
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamBase, com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.i iVar, float f, boolean z) {
+    public void a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f, boolean z) {
         if (iVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
         }
         if (!this.d) {
@@ -62,7 +62,7 @@ public class DrawerAnimParamEdge extends DrawerAnimParamCenter {
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimParamCenter, com.tsf.shell.f.c.a.a.DrawerAnimConfig
-    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.i iVar, float f, float f2, float f3, float f4) {
+    public DrawerAnimConfig.C0080a a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f, float f2, float f3, float f4) {
         float fAsin;
         DrawerAnimConfig.C0080a c0080a = DrawerAnimConfig.b;
         if ((com.censivn.C3DEngine.b.b.A.B - com.tsf.shell.f.c.a.DrawerContentPanel.a) - iVar.position().y > f) {

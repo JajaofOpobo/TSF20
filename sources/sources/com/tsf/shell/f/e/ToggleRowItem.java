@@ -3,17 +3,17 @@ package com.tsf.shell.f.e;
 import android.view.MotionEvent;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ToggleRowItem extends com.censivn.C3DEngine.b.f.j {
+public class ToggleRowItem extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private int a = 0;
-    private com.censivn.C3DEngine.b.f.g b = new com.censivn.C3DEngine.b.f.g();
-    private com.censivn.C3DEngine.b.f.m c;
+    private com.censivn.C3DEngine.b.f.ResourceGridRenderable b = new com.censivn.C3DEngine.b.f.ResourceGridRenderable();
+    private com.censivn.C3DEngine.b.f.LabelRenderable c;
     private float d;
 
     public ToggleRowItem(int i, int i2) {
         this.b.a(com.censivn.C3DEngine.b.b.A.c * 70.0f, com.censivn.C3DEngine.b.b.A.c * 70.0f);
         this.b.a(SelectionFrame);
         this.b.calAABB();
-        this.c = new com.censivn.C3DEngine.b.f.m();
+        this.c = new com.censivn.C3DEngine.b.f.LabelRenderable();
         this.c.d(50);
         this.c.c(i2);
         this.c.b(1);

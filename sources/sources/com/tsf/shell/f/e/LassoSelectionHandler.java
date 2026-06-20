@@ -18,19 +18,19 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LassoSelectionHandler {
     private static com.tsf.shell.ShellPreferenceManager d;
-    private static com.censivn.C3DEngine.b.f.j e;
-    private static com.censivn.C3DEngine.b.f.i f;
-    private static com.censivn.C3DEngine.b.f.i g;
-    private static com.censivn.C3DEngine.b.f.i h;
+    private static com.censivn.C3DEngine.b.f.BaseRenderable e;
+    private static com.censivn.C3DEngine.b.f.IRenderable f;
+    private static com.censivn.C3DEngine.b.f.IRenderable g;
+    private static com.censivn.C3DEngine.b.f.IRenderable h;
     private static String i;
     private static ViewGroup.LayoutParams w;
-    private ArrayList<com.censivn.C3DEngine.b.f.i> l;
+    private ArrayList<com.censivn.C3DEngine.b.f.IRenderable> l;
     private AlignmentOverlay m;
-    private com.censivn.C3DEngine.b.f.i n;
+    private com.censivn.C3DEngine.b.f.IRenderable n;
     private LassoContextMenu p;
     private float s;
     private float t;
-    private com.censivn.C3DEngine.b.f.a.a u;
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable u;
     private static TextureElement b = null;
     private static TextureElement c = null;
     public static Color4 a = new Color4();
@@ -60,7 +60,7 @@ public class LassoSelectionHandler {
     public void a(a aVar) {
     }
 
-    public void a(com.censivn.C3DEngine.b.f.i iVar) {
+    public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         this.n = iVar;
     }
 
@@ -118,7 +118,7 @@ public class LassoSelectionHandler {
                                 }
                             });
                             if (!LassoSelectionHandler.this.o || com.tsf.shell.utils.GraphicsEngineBridge.b(x, y, x2, y2) >= 50.0f) {
-                                for (com.censivn.C3DEngine.b.f.i iVar : LassoSelectionHandler.this.l) {
+                                for (com.censivn.C3DEngine.b.f.IRenderable iVar : LassoSelectionHandler.this.l) {
                                     if ((iVar instanceof ILassoSelectable) && iVar != LassoSelectionHandler.this.n) {
                                         ILassoSelectable mVar = (ILassoSelectable) iVar;
                                         if (!mVar.e_() && mVar.d() && LassoSelectionHandler.this.a(iVar, x, y, x2, y2)) {
@@ -144,7 +144,7 @@ public class LassoSelectionHandler {
         }
     }
 
-    public boolean a(com.censivn.C3DEngine.b.f.i iVar, float f2, float f3, float f4, float f5) {
+    public boolean a(com.censivn.C3DEngine.b.f.IRenderable iVar, float f2, float f3, float f4, float f5) {
         Number3d number3dClone = iVar.position().m4clone();
         number3dClone.x += com.censivn.C3DEngine.b.b.A.H;
         number3dClone.y = com.censivn.C3DEngine.b.b.A.I - number3dClone.y;
@@ -278,7 +278,7 @@ public class LassoSelectionHandler {
             if (this.v) {
                 this.v = false;
                 if (this.u != null) {
-                    com.censivn.C3DEngine.b.f.a.b bVarA = this.u.a(0);
+                    com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.u.a(0);
                     bVarA.b(true);
                     bVarA.c(true);
                     bVarA.g();
@@ -291,7 +291,7 @@ public class LassoSelectionHandler {
         if (!this.v) {
             this.v = true;
             if (this.u != null) {
-                com.censivn.C3DEngine.b.f.a.b bVarA2 = this.u.a(0);
+                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.u.a(0);
                 bVarA2.b(false);
                 bVarA2.c(false);
                 bVarA2.g();
@@ -312,16 +312,16 @@ public class LassoSelectionHandler {
         };
         a.set(ThemeManager.mix.lasso.getTheme().shell.lassoSelectColor);
         ThemeManager.mix.lasso.addElementListener(dynamicThemeRunnable);
-        e = new com.censivn.C3DEngine.b.f.j();
+        e = new com.censivn.C3DEngine.b.f.BaseRenderable();
         e.setAnimationObjectState(true);
         c = ThemeManager.mix.lasso.getTextureElement(ThemeShellDescription.PICKER_FOCUS, ItemInfo.APP_INTENT, ItemInfo.APP_INTENT);
         b = ThemeManager.mix.lasso.getTextureElement(ThemeShellDescription.PICKER_POINT, 32, 32);
-        h = new com.censivn.C3DEngine.b.f.k(32.0f, 32.0f, 1, 1, true);
+        h = new com.censivn.C3DEngine.b.f.GridRenderable(32.0f, 32.0f, 1, 1, true);
         h.textures().addElement(b);
-        f = new com.censivn.C3DEngine.b.f.k(32.0f, 32.0f, 1, 1, true);
+        f = new com.censivn.C3DEngine.b.f.GridRenderable(32.0f, 32.0f, 1, 1, true);
         f.textures().addElement(b);
         e.addChild(f);
-        g = new com.censivn.C3DEngine.b.f.k(128.0f, 128.0f, 1, 1, true);
+        g = new com.censivn.C3DEngine.b.f.GridRenderable(128.0f, 128.0f, 1, 1, true);
         AlignmentBackKeyHandler.textures().addElement(c);
     }
 

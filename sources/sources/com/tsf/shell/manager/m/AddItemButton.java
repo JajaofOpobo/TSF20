@@ -2,7 +2,7 @@ package com.tsf.shell.manager.m;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.b.A.e;
-import com.censivn.C3DEngine.b.f.g;
+import com.censivn.C3DEngine.b.f.ResourceGridRenderable;
 import com.tsf.b;
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ public class AddItemButton extends e {
     private DragSortContainer d;
     private SideMenuManager e;
     private boolean f = false;
-    private g c = new g();
+    private ResourceGridRenderable c = new ResourceGridRenderable();
 
     public AddItemButton(b bVar, a aVar) {
         this.d = aVar;
@@ -30,7 +30,7 @@ public class AddItemButton extends e {
         addChild(this.c);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public boolean calTouchCollision(float f, float f2) {
         if (a() == null || a().numChildren() != 0) {
             return super.calTouchCollision(f, f2);
@@ -38,7 +38,7 @@ public class AddItemButton extends e {
         return false;
     }
 
-    @Override // com.censivn.C3DEngine.b.b.A.e, com.censivn.C3DEngine.b.f.j
+    @Override // com.censivn.C3DEngine.b.b.A.e, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildStart() {
         super.onDrawChildStart();
         if (a() != null && a().numChildren() == 0) {

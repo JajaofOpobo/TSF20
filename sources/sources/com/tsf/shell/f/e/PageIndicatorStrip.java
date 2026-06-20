@@ -10,9 +10,9 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
-    private com.censivn.C3DEngine.b.f.a.a d;
-    private com.censivn.C3DEngine.b.f.a.b e;
+public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable {
+    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable d;
+    private com.censivn.C3DEngine.b.f.a.SpriteItemData e;
     private TextureElement k;
     private A l;
     private A m;
@@ -137,7 +137,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x0051  */
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -150,7 +150,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
             boolean r0 = r6.h
             if (r0 == 0) goto L50
             com.tsf.shell.f.f.PageTouchHandler r0 = com.tsf.shell.manager.app.StateHub
-            com.censivn.C3DEngine.b.f.j r2 = r0.u()
+            com.censivn.C3DEngine.b.f.BaseRenderable r2 = r0.u()
             r1 = 1325400064(0x4f000000, float:2.1474836E9)
             r0 = 1
             java.util.ArrayList r2 = r2.children()
@@ -161,7 +161,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
             boolean r0 = r4.hasNext()
             if (r0 == 0) goto L40
             java.lang.Object r0 = r4.next()
-            com.censivn.C3DEngine.b.f.i r0 = (com.censivn.C3DEngine.b.f.i) r0
+            com.censivn.C3DEngine.b.f.IRenderable r0 = (com.censivn.C3DEngine.b.f.IRenderable) r0
             boolean r3 = r0 instanceof com.tsf.shell.f.f.WorkspacePage
             if (r3 == 0) goto L51
             com.tsf.shell.f.f.WorkspacePage r0 = (com.tsf.shell.f.f.WorkspacePage) r0
@@ -202,11 +202,11 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
         this.b = i;
         this.e = null;
         float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.A.c) * (i - 1)) / 2.0f);
-        this.d = new com.censivn.C3DEngine.b.f.a.a(i, 32, 32, 32);
+        this.d = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(i, 32, 32, 32);
         this.d.useVBO(false);
         float f2 = f;
         for (int i2 = 0; i2 < i; i2++) {
-            com.censivn.C3DEngine.b.f.a.b bVarA = this.d.a(i2);
+            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.d.a(i2);
             bVarA.m.pxX(f2);
             bVarA.b(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
             bVarA.d(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
@@ -333,15 +333,15 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.j {
         this.d.alpha(255.0f);
     }
 
-    private class A extends com.censivn.C3DEngine.b.f.j {
+    private class A extends com.censivn.C3DEngine.b.f.BaseRenderable {
         private float b;
-        private com.censivn.C3DEngine.b.f.k c;
+        private com.censivn.C3DEngine.b.f.GridRenderable c;
         private float d;
         private boolean e = false;
 
         public A(float f, float f2, boolean z, TextureElement textureElement, float f3) {
             this.d = f3;
-            this.c = new com.censivn.C3DEngine.b.f.k(f, f2, z);
+            this.c = new com.censivn.C3DEngine.b.f.GridRenderable(f, f2, z);
             this.c.alpha(0.0f);
             PositionNumber3d positionNumber3dPosition = this.c.position();
             float f4 = -f3;

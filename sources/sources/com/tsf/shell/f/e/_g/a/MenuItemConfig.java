@@ -3,10 +3,10 @@ package com.tsf.shell.f.e._g.a;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
-import com.censivn.C3DEngine.b.f.m;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
+import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
@@ -55,15 +55,15 @@ public class MenuItemConfig extends MenuItemBase {
     }
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
-    public j getMenuContainer() {
+    public BaseRenderable getMenuContainer() {
         return this.mTitleContainer;
     }
 
-    public class a extends j {
+    public class a extends BaseRenderable {
         private TextureElement a = new TextureElement(0, false);
-        private k c;
+        private GridRenderable c;
         private i d;
-        private m e;
+        private LabelRenderable e;
 
         public a() {
             a();
@@ -109,8 +109,8 @@ public class MenuItemConfig extends MenuItemBase {
         }
 
         public void c() {
-            this.c = new k(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.1
-                @Override // com.censivn.C3DEngine.b.f.i
+            this.c = new GridRenderable(com.censivn.C3DEngine.b.b.A.a(24.0f), com.censivn.C3DEngine.b.b.A.a(45.0f), false) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.1
+                @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (MenuActionHandler.this.a.id == 0) {
                         Bitmap bitmapA = x.a(MenuActionItem.d.scrollcontainer_arrow);
@@ -123,7 +123,7 @@ public class MenuItemConfig extends MenuItemBase {
             addChild(this.c);
             this.c.position().x = com.censivn.C3DEngine.b.b.A.a(20.0f) + com.censivn.C3DEngine.b.b.A.a(12.0f);
             this.c.rotation().z = 180.0f;
-            this.e = new m();
+            this.e = new LabelRenderable();
             this.e.d(42);
             this.e.e(-1);
             this.e.b(1);

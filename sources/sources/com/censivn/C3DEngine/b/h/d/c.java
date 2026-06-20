@@ -5,14 +5,14 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class c extends a {
-    private m a;
+    private LabelRenderable a;
     private int b;
     private float c;
 
     public c(float f, int i, float f2) {
         super(f, i, f2);
         this.b = 0;
-        this.a = new m();
+        this.a = new LabelRenderable();
         this.a.d(32);
         this.c = com.censivn.C3DEngine.b.b.A.a(20.0f);
         addChild(this.a);

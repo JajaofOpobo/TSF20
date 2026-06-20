@@ -16,12 +16,12 @@ public class d extends p {
         this.b = z;
     }
 
-    @Override // com.tsf.extend.theme.p, com.tsf.extend.base.b.A
+    @Override // com.tsf.extend.theme.p, com.tsf.extend.base.b.PagedListModel
     public boolean h() {
         return b();
     }
 
-    @Override // com.tsf.extend.base.b.A
+    @Override // com.tsf.extend.base.b.PagedListModel
     public boolean d() {
         return System.currentTimeMillis() - c() >= a;
     }

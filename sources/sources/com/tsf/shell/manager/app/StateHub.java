@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.app;
 
 import android.view.MotionEvent;
-import com.censivn.C3DEngine.b.f.i;
+import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.f.f.WorkspacePage;
 import java.util.ArrayList;
 

@@ -3,7 +3,7 @@ package com.tsf.extend.theme;
 import java.io.Serializable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class C extends com.tsf.extend.base.b.A<A> {
+public class C extends com.tsf.extend.base.b.PagedListModel<A> {
 
     public static class A implements Serializable {
         public String a;

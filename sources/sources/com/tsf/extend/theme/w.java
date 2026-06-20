@@ -23,7 +23,7 @@ public class w {
                 }
             };
             mVar.a((com.android.volley.p) new com.android.volley.d(30000, 1, 1.0f));
-            com.tsf.extend.base.f.c.a(context).a((com.android.volley.l) mVar);
+            com.tsf.extend.base.f.RequestQueueHelper.a(context).a((com.android.volley.l) mVar);
         }
     }
 }

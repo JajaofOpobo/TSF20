@@ -21,7 +21,7 @@ public abstract class DrawerTransitionBase3D extends k {
     private ArrayList<Number3d> h;
     private Number3d i;
     private a j;
-    private ArrayList<com.censivn.C3DEngine.b.f.i> k;
+    private ArrayList<com.censivn.C3DEngine.b.f.IRenderable> k;
     private boolean l;
 
     public abstract void a(int i, int i2, int i3, int i4, float f, ArrayList<Number3d> arrayList);
@@ -148,13 +148,13 @@ public abstract class DrawerTransitionBase3D extends k {
         }
     }
 
-    public class a implements Comparator<com.censivn.C3DEngine.b.f.i> {
+    public class a implements Comparator<com.censivn.C3DEngine.b.f.IRenderable> {
         public a() {
         }
 
         @Override // java.util.Comparator
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public int compare(com.censivn.C3DEngine.b.f.i iVar, com.censivn.C3DEngine.b.f.i iVar2) {
+        public int compare(com.censivn.C3DEngine.b.f.IRenderable iVar, com.censivn.C3DEngine.b.f.IRenderable iVar2) {
             if (iVar.getTag() == null || iVar2.getTag() == null) {
                 return 0;
             }
@@ -195,12 +195,12 @@ public abstract class DrawerTransitionBase3D extends k {
     }
 
     @Override // com.tsf.shell.f.f.a.b.DrawerTransitionBase
-    public void a(com.censivn.C3DEngine.b.f.j jVar) {
-        Iterator<com.censivn.C3DEngine.b.f.i> it = jVar.children().iterator();
+    public void a(com.censivn.C3DEngine.b.f.BaseRenderable jVar) {
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = jVar.children().iterator();
         while (it.hasNext()) {
-            com.censivn.C3DEngine.b.f.j jVar2 = (com.censivn.C3DEngine.b.f.j) it.next();
+            com.censivn.C3DEngine.b.f.BaseRenderable jVar2 = (com.censivn.C3DEngine.b.f.BaseRenderable) it.next();
             if (jVar2.visible()) {
-                ArrayList<com.censivn.C3DEngine.b.f.i> arrayListChildren = jVar2.children();
+                ArrayList<com.censivn.C3DEngine.b.f.IRenderable> arrayListChildren = jVar2.children();
                 int size = arrayListChildren.size() - 1;
                 while (true) {
                     int i = size;
@@ -214,18 +214,18 @@ public abstract class DrawerTransitionBase3D extends k {
         if (!this.l) {
             Collections.sort(this.k, this.j);
         }
-        com.censivn.C3DEngine.b.f.j jVarAA = com.tsf.shell.manager.app.StateHub.t().aA();
+        com.censivn.C3DEngine.b.f.BaseRenderable jVarAA = com.tsf.shell.manager.app.StateHub.t().aA();
         MatrixStack.glPushMatrix();
         MatrixStack.glTranslatef(0.0f, 0.0f, -this.f);
         MatrixStack.glRotatef(jVarAA.rotation().x, 1.0f, 0.0f, 0.0f);
         MatrixStack.glTranslatef(0.0f, 0.0f, this.f);
-        for (com.censivn.C3DEngine.b.f.i iVar : this.k) {
-            com.censivn.C3DEngine.b.f.i iVar2 = (com.censivn.C3DEngine.b.f.i) iVar.parent();
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.k) {
+            com.censivn.C3DEngine.b.f.IRenderable iVar2 = (com.censivn.C3DEngine.b.f.IRenderable) iVar.parent();
             MatrixStack.glPushMatrix();
             MatrixStack.glTranslatef(iVar2.position().x, iVar2.position().y, iVar2.position().z);
             MatrixStack.glRotatef(iVar2.rotation().y, 0.0f, 1.0f, 0.0f);
             if (iVar.visible()) {
-                com.censivn.C3DEngine.b.f.j jVar3 = (com.censivn.C3DEngine.b.f.j) iVar;
+                com.censivn.C3DEngine.b.f.BaseRenderable jVar3 = (com.censivn.C3DEngine.b.f.BaseRenderable) iVar;
                 MatrixStack.glPushMatrix();
                 jVar3.onDrawStart();
                 jVar3.drawShader();
@@ -261,7 +261,7 @@ public abstract class DrawerTransitionBase3D extends k {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.g.c.b((com.censivn.C3DEngine.b.f.j) aVar.getChildAt(DrawerScaleTransition));
+                com.censivn.C3DEngine.b.g.c.b((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
             }
             com.censivn.C3DEngine.b.g.c.b(aVar);
         }
@@ -272,7 +272,7 @@ public abstract class DrawerTransitionBase3D extends k {
         if (i(aVar) != c) {
             int iNumChildren = aVar.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.g.c.c((com.censivn.C3DEngine.b.f.j) aVar.getChildAt(DrawerScaleTransition));
+                com.censivn.C3DEngine.b.g.c.c((com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition));
             }
             com.censivn.C3DEngine.b.g.c.c(aVar);
         }
@@ -292,7 +292,7 @@ public abstract class DrawerTransitionBase3D extends k {
                 a(aVar, a);
                 b(aVar, a);
                 for (int i = 0; i < iNumChildren; i++) {
-                    com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) aVar.getChildAt(DrawerScaleTransition);
+                    com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition);
                     if (i >= this.e) {
                         bVar2 = this.g.get(this.e - 1);
                     } else {
@@ -321,7 +321,7 @@ public abstract class DrawerTransitionBase3D extends k {
                 return;
             }
             for (int i2 = 0; i2 < iNumChildren; i2++) {
-                com.censivn.C3DEngine.b.f.j jVar2 = (com.censivn.C3DEngine.b.f.j) aVar.getChildAt(i2);
+                com.censivn.C3DEngine.b.f.BaseRenderable jVar2 = (com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(i2);
                 if (i2 >= this.e) {
                     bVar = this.g.get(this.e - 1);
                 } else {
@@ -355,7 +355,7 @@ public abstract class DrawerTransitionBase3D extends k {
         b(aVar, a);
         int iNumChildren = aVar.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) aVar.getChildAt(DrawerScaleTransition);
+            com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition);
             if (i >= this.e) {
                 bVar = this.g.get(this.e - 1);
             } else {
@@ -412,7 +412,7 @@ public abstract class DrawerTransitionBase3D extends k {
             a(aVar, b);
             b(aVar, b);
             for (int i = 0; i < iNumChildren; i++) {
-                com.censivn.C3DEngine.b.f.j jVar = (com.censivn.C3DEngine.b.f.j) aVar.getChildAt(DrawerScaleTransition);
+                com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) aVar.getChildAt(DrawerScaleTransition);
                 if (i >= this.e) {
                     number3d = this.h.get(this.e - 1);
                 } else {

@@ -2,7 +2,7 @@ package com.tsf.shell.f.e._i;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GridLayoutConfig {
-    private com.censivn.C3DEngine.b.f._a.b a;
+    private com.censivn.C3DEngine.b.f._a.AltSpriteItemData a;
     private float b = 0.0f;
     private float c = 0.0f;
     private float d = 0.0f;
@@ -12,7 +12,7 @@ public class GridLayoutConfig {
     private float h = 0.0f;
     private float i = 0.0f;
 
-    public GridLayoutConfig(com.censivn.C3DEngine.b.f._a.b bVar) {
+    public GridLayoutConfig(com.censivn.C3DEngine.b.f._a.AltSpriteItemData bVar) {
         this.a = bVar;
     }
 

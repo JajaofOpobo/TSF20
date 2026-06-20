@@ -3,15 +3,15 @@ package com.tsf.shell.f.h.a.a.a;
 import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SceneInteractionHandler extends j {
+public class SceneInteractionHandler extends BaseRenderable {
     private f b;
     private f c;
     private f d;
@@ -25,8 +25,8 @@ public class SceneInteractionHandler extends j {
     private boolean m = false;
     private float[] n = new float[2];
     private boolean o = false;
-    private j a = new j();
-    private com.censivn.C3DEngine.b.f.d l = new com.censivn.C3DEngine.b.f.d(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(200.0f));
+    private BaseRenderable a = new BaseRenderable();
+    private com.censivn.C3DEngine.b.f.ColoredRectRenderable l = new com.censivn.C3DEngine.b.f.ColoredRectRenderable(com.censivn.C3DEngine.b.b.A.D, com.censivn.C3DEngine.b.b.A.a(200.0f));
 
     /* JADX INFO: renamed from: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler$a, reason: collision with other inner class name */
     public interface InterfaceC0098a {

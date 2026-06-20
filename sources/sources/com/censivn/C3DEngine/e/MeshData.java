@@ -35,14 +35,14 @@ public class MeshData {
         this.a = new ArrayList<>();
     }
 
-    public com.censivn.C3DEngine.b.f.i a(HashMap<String, AbstractModelParser.MaterialEntry> map, AbstractModelParser.TextureManager textureManager) {
-        j jVar = new j(this.b * 3, this.b);
+    public com.censivn.C3DEngine.b.f.IRenderable a(HashMap<String, AbstractModelParser.MaterialEntry> map, AbstractModelParser.TextureManager textureManager) {
+        j jVar = new BaseRenderable(this.b * 3, this.b);
         jVar.name(this.f);
         a(jVar, map, textureManager);
         return jVar;
     }
 
-    private void a(com.censivn.C3DEngine.b.f.i iVar, HashMap<String, AbstractModelParser.MaterialEntry> map, AbstractModelParser.TextureManager textureManager) {
+    private void a(com.censivn.C3DEngine.b.f.IRenderable iVar, HashMap<String, AbstractModelParser.MaterialEntry> map, AbstractModelParser.TextureManager textureManager) {
         int size = this.a.size();
         boolean zC = textureManager.c();
         int i = 0;

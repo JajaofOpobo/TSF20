@@ -122,7 +122,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     }
 
     private boolean i() {
-        return com.tsf.extend.base.h.a.a().c(0) >= 30000;
+        return com.tsf.extend.base.h.LogWriter.a().c(0) >= 30000;
     }
 
     private boolean j() {
@@ -417,12 +417,12 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
     }
 
-    class A implements a.InterfaceC0048a<com.tsf.extend.base.b.A> {
+    class A implements a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         A() {
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, final com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.1
                 @Override // java.lang.Runnable
                 public void run() {
@@ -435,7 +435,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
 
         @Override // com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.A aVar) {
+        public void a(JSONObject jSONObject, int i, com.tsf.extend.base.b.PagedListModel aVar) {
             com.tsf.extend.base.j.z.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemePager.a.2
                 @Override // java.lang.Runnable
                 public void run() {

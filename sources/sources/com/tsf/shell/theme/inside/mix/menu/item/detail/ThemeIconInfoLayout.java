@@ -3,7 +3,7 @@ package com.tsf.shell.theme.inside.mix.menu.item.detail;
 import android.graphics.Bitmap;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeListsManager;
 import com.tsf.shell.theme.inside.parser.IconPreviewLoader;
@@ -14,7 +14,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
     private SoftReference<Bitmap> bitmapReference;
     private ThemeListsManager.ThemeInfo mInfo;
     private IconPreviewLoader mLoader;
-    private k mPreviewPlane;
+    private GridRenderable mPreviewPlane;
     private TextureElement mTexture;
     private Runnable mUpdateBitmapRunnable;
     private Runnable mUpdateTextureRunnable;
@@ -29,7 +29,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
 
     public ThemeIconInfoLayout() {
         setTitle(b.i.text_icon);
-        this.mPreviewPlane = new k(a.a(500.0f), a.a(500.0f), false);
+        this.mPreviewPlane = new GridRenderable(a.a(500.0f), a.a(500.0f), false);
         this.mPreviewPlane.calAABB(1.1f, 1.2f, 1.2f);
         this.mTexture = new TextureElement(0, false);
         this.mPreviewPlane.textures().addElement(this.mTexture);
@@ -80,7 +80,7 @@ public class ThemeIconInfoLayout extends ThemeInfoLayout {
         this.mGetBitmapFailTimes = 0;
     }
 
-    @Override // com.censivn.C3DEngine.b.f.i
+    @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         if (this.mTexture.id == 0 && !this.mUpdateRunnablePosted) {
             this.mUpdateRunnablePosted = true;

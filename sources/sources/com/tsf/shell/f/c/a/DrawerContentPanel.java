@@ -10,9 +10,9 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.api.element.info.LauncherFolder3DInfo;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.e;
-import com.censivn.C3DEngine.b.f.i;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.IRenderable;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.shell.f.c.a.a.DrawerAnimConfig;
 import com.tsf.shell.f.f.PageEventDispatcher;
 import com.tsf.shell.ShellGraphicsContext;
@@ -39,18 +39,18 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     public static float o = 0.0f;
     public static float p = 0.0f;
     public static float q = 0.0f;
-    private j C;
-    private j D;
-    private j E;
+    private BaseRenderable C;
+    private BaseRenderable D;
+    private BaseRenderable E;
     private com.tsf.shell.f.h.DockOperationBorder F;
     private com.tsf.shell.f.h.DockOperationBorder G;
     private com.censivn.C3DEngine.b.g.d K;
     private com.censivn.C3DEngine.b.g.d L;
-    private k M;
+    private GridRenderable M;
     private g N;
     private float O;
-    private k P;
-    private k Q;
+    private GridRenderable P;
+    private GridRenderable Q;
     private com.tsf.shell.f.c.a.DrawerTouchHandler R;
     private B S;
     private float T;
@@ -68,8 +68,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     public com.tsf.shell.f.c.a.a.DrawerAnimConfig n;
     /* JADX WARN: decompile error - Runnable type artifact */
     private Runnable mRefreshRunnable;
-    private j s;
-    private j t;
+    private BaseRenderable s;
+    private BaseRenderable t;
     private float w;
     private float u = 0.0f;
     private float v = 0.0f;
@@ -191,7 +191,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         return this.S;
     }
 
-    public j h() {
+    public BaseRenderable h() {
         return this.t;
     }
 
@@ -269,11 +269,11 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         }
         a(m);
         C();
-        this.D = new j();
-        this.C = new j();
+        this.D = new BaseRenderable();
+        this.C = new BaseRenderable();
         this.ae = new com.censivn.C3DEngine.b.g._b.b();
-        this.t = new j() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.9
-            @Override // com.censivn.C3DEngine.b.f.i
+        this.t = new BaseRenderable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.9
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (!f.this.y && !f.this.al) {
                     position().x += (f.this.u - position().x) * f.this.x;
@@ -320,7 +320,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.v = f9;
         positionNumber3dPosition2.y = f9;
         B();
-        this.E = new j();
+        this.E = new BaseRenderable();
         this.F = new com.tsf.shell.f.h.DockOperationBorder();
         this.F.b(0.0f);
         this.E.addChild(this.F);
@@ -329,13 +329,13 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.E.addChild(this.G);
         this.R = new com.tsf.shell.f.c.a.DrawerTouchHandler(this.C, this);
         this.C.setMouseEventListener(this.R);
-        this.P = new k(this.I.width, this.I.height, false);
+        this.P = new GridRenderable(this.I.width, this.I.height, false);
         this.P.rotation().z = 90.0f;
         this.P.calAABB(3.0f, 3.0f, 1.0f);
         this.P.scale().setAll(0.0f, 0.0f, 1.0f);
         this.P.visible(false);
         this.P.textures().addElement(this.I);
-        this.Q = new k(this.I.width, this.I.height, false);
+        this.Q = new GridRenderable(this.I.width, this.I.height, false);
         this.Q.textures().addElement(this.I);
         this.C.addChild(this.Q);
         this.C.calAABB(3.0f, 3.0f, 1.0f);
@@ -384,7 +384,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 }
             }
         });
-        this.M = new k(0.0f, this.J.height * com.censivn.C3DEngine.b.b.A.b);
+        this.M = new GridRenderable(0.0f, this.J.height * com.censivn.C3DEngine.b.b.A.b);
         this.M.textures().addElement(this.J);
         this.M.alpha(0.0f);
         this.K = new com.censivn.C3DEngine.b.g.d();
@@ -398,7 +398,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.L.a(0);
         d = com.censivn.C3DEngine.b.b.A.a(130.0f);
         this.N = new DrawerSettingsItem(this.H.width, this.H.height, new DrawerConfig(this.H.width / 2, this.H.height / 2, this.H.height)) { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.12
-            @Override // com.censivn.C3DEngine.b.f.i
+            @Override // com.censivn.C3DEngine.b.f.IRenderable
             public i getHittingTarget(float f10, float f11, boolean z2) {
                 if (f.this.P.calTouchCollision(f10, f11)) {
                     return f.this.P;

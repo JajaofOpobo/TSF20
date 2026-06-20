@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.f.EmptyRenderable;
 public class VVirtualObject extends VObject3d {
     public VVirtualObject() {
         this.mThis = this;
-        this.vTarget = new n();
+        this.vTarget = new EmptyRenderable();
         this.vTarget.setVirtualObject(this);
     }
 }

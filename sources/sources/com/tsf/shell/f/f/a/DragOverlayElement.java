@@ -2,17 +2,17 @@ package com.tsf.shell.f.f.a;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.f.j;
-import com.censivn.C3DEngine.b.f.k;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
+import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DragOverlayElement extends j {
+public class DragOverlayElement extends BaseRenderable {
     private static final float c = com.censivn.C3DEngine.b.b.A.a(200.0f);
     private static final int d = com.censivn.C3DEngine.b.b.A.b(100.0f);
     private h b;
     private A e;
-    private j a = new j();
+    private BaseRenderable a = new BaseRenderable();
     private A f = new PageContainerBase(b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.1
         @Override // com.tsf.shell.f.f.a.DragOverlayElement.a
         public void a() {
@@ -26,7 +26,7 @@ public class DragOverlayElement extends j {
         }
     };
 
-    static class A extends k {
+    static class A extends GridRenderable {
         private static com.tsf.shell.f.e.CircleDotNode e;
         private TextureElement a;
         private int d;
@@ -68,7 +68,7 @@ public class DragOverlayElement extends j {
         public void a() {
         }
 
-        @Override // com.censivn.C3DEngine.b.f.i
+        @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.a.id == 0) {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, e.d, e.d);
@@ -88,7 +88,7 @@ public class DragOverlayElement extends j {
             this.f = false;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.j
+        @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
             if (this.f) {
                 e.dispatchDraw();

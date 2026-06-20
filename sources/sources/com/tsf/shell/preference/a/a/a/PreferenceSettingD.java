@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class PreferenceSettingD extends PreferenceSettingBase {
     private com.censivn.C3DEngine.b.b.A.d a;
     private com.censivn.C3DEngine.b.b.A.b b;
-    private com.censivn.C3DEngine.b.f.j d;
-    private com.censivn.C3DEngine.b.f.k e;
+    private com.censivn.C3DEngine.b.f.BaseRenderable d;
+    private com.censivn.C3DEngine.b.f.GridRenderable e;
     private TextureElement f;
     private Runnable g;
     private boolean h;
@@ -22,7 +22,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         super(str, com.censivn.C3DEngine.b.b.A.a(238.0f));
         this.h = false;
         this.i = 0;
-        this.d = new com.censivn.C3DEngine.b.f.j();
+        this.d = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.g = new Runnable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingD.1
             @Override // java.lang.Runnable
             public void run() {
@@ -47,13 +47,13 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.a.c(this.b);
         for (int i = 0; i < this.j.size(); i++) {
             com.tsf.shell.manager.o.a.TextLabelElement bVar = this.j.get(i);
-            com.censivn.C3DEngine.b.f.k kVar = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.c.J, com.tsf.shell.manager.o.ButtonPresetManager.c.K + com.tsf.shell.manager.o.a.TextLabelElement.d, false);
+            com.censivn.C3DEngine.b.f.GridRenderable kVar = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.o.ButtonPresetManager.c.J, com.tsf.shell.manager.o.ButtonPresetManager.c.K + com.tsf.shell.manager.o.a.TextLabelElement.d, false);
             kVar.textures().addElement(bVar.b());
             kVar.calAABB(1.2f, 1.0f, 1.0f);
             this.b.addChild(kVar);
         }
         this.d.addChild(this.a);
-        this.e = new com.censivn.C3DEngine.b.f.k(com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I, false);
+        this.e = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.o.ButtonPresetManager.c.H, com.tsf.shell.manager.o.ButtonPresetManager.c.I, false);
         this.f = new TextureElement(0, false);
         this.e.textures().addElement(this.f);
         this.a.position().y = -com.tsf.shell.manager.o.ButtonPresetManager.c.I;
