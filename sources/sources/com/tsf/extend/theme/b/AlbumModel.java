@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a implements Serializable {
+public class AlbumModel implements Serializable {
     private long a;
     private String b;
     private List<String> c;

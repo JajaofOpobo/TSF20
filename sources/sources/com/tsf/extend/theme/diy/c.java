@@ -36,7 +36,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
     private String c;
     private String d;
     private com.tsf.extend.base.b.PagedListModel e;
-    private Map<com.tsf.extend.theme.b.a, b.a<aq>> f;
+    private Map<com.tsf.extend.theme.b.AlbumModel, b.a<aq>> f;
     private android.support.v4.d.f<String, SoftReference<Bitmap>> g = new android.support.v4.d.f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.theme.diy.c.1
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.support.v4.d.f
@@ -193,7 +193,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         JSONArray jSONArray = jSONObject.getJSONArray("data");
         for (int i = 0; i < jSONArray.length(); i++) {
             try {
-                com.tsf.extend.theme.b.a aVarB = b(jSONArray.getJSONObject(i));
+                com.tsf.extend.theme.b.AlbumModel aVarB = b(jSONArray.getJSONObject(i));
                 if (aVarB != null) {
                     arrayListNewArrayList.add(aVarB);
                 }
@@ -205,12 +205,12 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         return aVar;
     }
 
-    private com.tsf.extend.theme.b.a b(JSONObject jSONObject) {
+    private com.tsf.extend.theme.b.AlbumModel b(JSONObject jSONObject) {
         JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("preview");
         if (jSONArrayOptJSONArray == null || jSONArrayOptJSONArray.length() == 0) {
             return null;
         }
-        com.tsf.extend.theme.b.a aVar = new com.tsf.extend.theme.b.a();
+        com.tsf.extend.theme.b.AlbumModel aVar = new com.tsf.extend.theme.b.AlbumModel();
         aVar.a(jSONObject.getLong("id"));
         aVar.a(jSONObject.getString("thumbnail"));
         if (jSONObject.optInt("version_flag", -1) >= 4) {
@@ -233,7 +233,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         return aVar;
     }
 
-    public boolean a(final com.tsf.extend.theme.b.a aVar, final b.a<aq> aVar2) {
+    public boolean a(final com.tsf.extend.theme.b.AlbumModel aVar, final b.a<aq> aVar2) {
         boolean zA;
         if (this.f == null) {
             this.f = Maps.newHashMap();

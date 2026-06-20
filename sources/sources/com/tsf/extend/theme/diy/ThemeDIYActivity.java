@@ -107,7 +107,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     private Handler j;
     private h k;
     private j n;
-    private com.tsf.extend.theme.b.a o;
+    private com.tsf.extend.theme.b.AlbumModel o;
     private l p;
     private FrameLayout q;
     private FrameLayout r;
@@ -1396,7 +1396,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     class e {
-        public com.tsf.extend.theme.b.a a;
+        public com.tsf.extend.theme.b.AlbumModel a;
         public View b;
         public ImageView c;
         public ImageView d;
@@ -1420,9 +1420,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
                         ArrayList arrayListNewArrayList = Lists.newArrayList();
                         int size = (listA.size() / 3) + (listA.size() % 3 == 0 ? 0 : 1);
                         for (int i = 0; i < size; i++) {
-                            com.tsf.extend.theme.b.a aVar2 = (com.tsf.extend.theme.b.a) listA.get(i * 3);
-                            com.tsf.extend.theme.b.a aVar3 = (i * 3) + 1 < listA.size() ? (com.tsf.extend.theme.b.a) listA.get((i * 3) + 1) : null;
-                            com.tsf.extend.theme.b.a aVar4 = (i * 3) + 2 < listA.size() ? (com.tsf.extend.theme.b.a) listA.get((i * 3) + 2) : null;
+                            com.tsf.extend.theme.b.AlbumModel aVar2 = (com.tsf.extend.theme.b.AlbumModel) listA.get(i * 3);
+                            com.tsf.extend.theme.b.AlbumModel aVar3 = (i * 3) + 1 < listA.size() ? (com.tsf.extend.theme.b.AlbumModel) listA.get((i * 3) + 1) : null;
+                            com.tsf.extend.theme.b.AlbumModel aVar4 = (i * 3) + 2 < listA.size() ? (com.tsf.extend.theme.b.AlbumModel) listA.get((i * 3) + 2) : null;
                             c cVar = ThemeDIYActivity.this.new c();
                             cVar.a = aVar2;
                             cVar.b = aVar3;
@@ -1741,9 +1741,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     class c {
-        public com.tsf.extend.theme.b.a a;
-        public com.tsf.extend.theme.b.a b;
-        public com.tsf.extend.theme.b.a c;
+        public com.tsf.extend.theme.b.AlbumModel a;
+        public com.tsf.extend.theme.b.AlbumModel b;
+        public com.tsf.extend.theme.b.AlbumModel c;
 
         c() {
         }
