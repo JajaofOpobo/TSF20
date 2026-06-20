@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public interface d {
+public interface DesktopTouchHandlerD {
     void a(MotionEvent motionEvent);
 
     void a(MotionEvent motionEvent, MotionEvent motionEvent2);

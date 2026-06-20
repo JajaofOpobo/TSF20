@@ -31,7 +31,7 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
     private LabelRenderable mNoticTextView;
     private BaseRenderable mOtherContainer = new BaseRenderable();
     private ThemePreviewInfoLayout mPreviewLayout;
-    private com.censivn.C3DEngine.b.h.d.a mRingIcon;
+    private com.censivn.C3DEngine.b.h.d.ProgressBarWidget mRingIcon;
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase mShortcut;
     private ThemeElementInfoLayout mThemeElementLayout;
     private ThemeListsManager.ThemeInfo mThemeInfo;
@@ -63,7 +63,7 @@ public class ThemeInstalledDetailMenu extends MenuItemConfig {
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(750.0f));
         this.mKeyListener = new a();
         this.mMainContainer = new BaseRenderable();
-        this.mRingIcon = new com.censivn.C3DEngine.b.h.d.a(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
+        this.mRingIcon = new com.censivn.C3DEngine.b.h.d.ProgressBarWidget(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.mRingIcon.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.mRingIcon.a(b.d.ico_info);
         this.mShortcut = new DrawerItemButton(com.tsf.shell.manager.o.ButtonPresetManager.c);

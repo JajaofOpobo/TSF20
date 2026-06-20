@@ -253,7 +253,7 @@ public class ShortcutItem extends PageItem {
             g gVarZ = z();
             if (gVarZ.c(this)) {
                 ArrayList<C> arrayListAw = aw();
-                com.censivn.C3DEngine.b.h.b.c cVar = new com.censivn.C3DEngine.b.h.b.c(gVarZ, true);
+                com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(gVarZ, true);
                 if (400 > com.censivn.C3DEngine.b.b.A.D) {
                     i = (com.censivn.C3DEngine.b.b.A.D / 2) - 20;
                 } else {

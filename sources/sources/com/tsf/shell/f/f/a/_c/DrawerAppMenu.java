@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerAppMenu extends DrawerPageItemBase {
-    private com.censivn.C3DEngine.b.h.b.h g;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH g;
     private com.tsf.shell.f.f.a._b.DrawerTransitionManagerV2 h;
     private com.tsf.shell.f.e._g.MenuContainer i;
     private ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> j;
@@ -65,14 +65,14 @@ public class DrawerAppMenu extends DrawerPageItemBase {
     }
 
     private void c() {
-        this.g = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.ButtonPresetManager.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
-        this.g.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.1
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.g = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, com.tsf.shell.manager.o.ButtonPresetManager.c.U, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.g.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.1
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return d.this.h.i();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public com.censivn.C3DEngine.b.f.IRenderable a(int i, com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 com.censivn.C3DEngine.b.f.IRenderable hVar;
                 if (iVar == null) {
@@ -93,8 +93,8 @@ public class DrawerAppMenu extends DrawerPageItemBase {
                 return hVar;
             }
         });
-        this.g.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.2
-            @Override // com.censivn.C3DEngine.b.h.b.f
+        this.g.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.f.f.a._c.DrawerAppMenu.2
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 if (!com.tsf.shell.manager.app.StateHub.t().an().c()) {

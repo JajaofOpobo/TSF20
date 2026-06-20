@@ -7,8 +7,8 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 import com.tsf.shell.Home;
 import com.tsf.shell.f.f.PageContentType;
 import com.tsf.shell.f.i.a.PageItemDropHandler;
@@ -26,7 +26,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     private h c;
     private float PageItemDropHandler;
     private ArrayList<g> e;
-    private com.censivn.C3DEngine.b.h.b.c.a f;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.a f;
     private ObserverManager.a g;
     private AppSelectionIndicatorBar h;
     private boolean i;
@@ -83,8 +83,8 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             public void onKillFocus() {
             }
         };
-        this.c.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.5
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.c.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.5
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 if (AppListPanel.this.b == null) {
                     return 0;
@@ -92,7 +92,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                 return AppListPanel.this.b.a.c();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i iVar2;
                 if (iVar == null) {
@@ -118,7 +118,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             private d PageItemDropHandler;
             private boolean e;
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 c cVar = (c) iVar;
@@ -139,7 +139,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                 AppListPanel.this.c();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void b(i iVar, int i, MotionEvent motionEvent) {
                 if (!aVar.a()) {
                     w.a();
@@ -174,7 +174,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void c(i iVar, int i, MotionEvent motionEvent) {
                 boolean z;
                 if (!aVar.a()) {
@@ -194,7 +194,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (!aVar.a() && this.e && this.d != null) {
                     this.d.a(motionEvent, motionEvent2);
@@ -202,7 +202,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
             }
         });
         this.f = new c.a() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.7
-            @Override // com.censivn.C3DEngine.b.h.b.c.a
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.a
             public void a() {
                 aVar.templeteShow();
             }

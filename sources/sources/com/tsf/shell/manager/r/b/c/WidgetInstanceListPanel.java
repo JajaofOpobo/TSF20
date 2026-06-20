@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase {
     private d a;
-    private com.censivn.C3DEngine.b.h.b.h b;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH b;
     private PackageManager e;
     private AppWidgetManager f;
     private ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> g;
@@ -39,28 +39,28 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
         this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         this.g = new ArrayList<>();
         this.i = com.censivn.C3DEngine.b.b.A.a(900.0f);
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, 0.0f, 0.0f);
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, 0.0f, 0.0f);
         this.c.addChild(this.b);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.2
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.2
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return WidgetInstanceListPanel.this.j.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i hVar = iVar == null ? new h(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.A.a(100.0f), com.censivn.C3DEngine.b.b.A.a(30.0f), false) : iVar;
                 ((h) hVar).a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), false);
                 return hVar;
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public void a(i iVar) {
                 ((h) iVar).d();
             }
         });
         this.b.a(new WidgetDragHandler(this.d) { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.3
-            @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.f
+            @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 WidgetInstanceListPanel.this.a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), 0.0f, WidgetInstanceListPanel.this.d.getScreenFreeSpaceCenter());
                 WidgetInstanceListPanel.this.d.templeteHide();

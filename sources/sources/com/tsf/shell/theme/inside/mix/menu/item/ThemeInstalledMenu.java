@@ -6,8 +6,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 
 import com.tsf.shell.f.e._g.a.MenuActionItem;
 import com.tsf.shell.theme.inside.ThemeCacheFileManager;
@@ -86,8 +86,8 @@ public class ThemeInstalledMenu extends MenuActionItem {
         };
         ThemeManager.getInstance().addListener(this.mThemeListener);
         this.mGridView = new h(com.censivn.C3DEngine.b.b.A.D, themeSettingMenu.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
-        this.mGridView.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.2
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.mGridView.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.2
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 if (ThemeInstalledMenu.this.mThemeList == null) {
                     return 0;
@@ -95,7 +95,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
                 return ThemeInstalledMenu.this.mThemeList.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i aVar;
                 if (iVar == null) {
@@ -122,7 +122,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
             }
         });
         this.mGridView.a(new f() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeInstalledMenu.3
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 ThemeListsManager.ThemeInfo themeInfo = (ThemeListsManager.ThemeInfo) ThemeInstalledMenu.this.mThemeList.get(i);
                 w.b();

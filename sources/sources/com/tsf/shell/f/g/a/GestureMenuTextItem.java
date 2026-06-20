@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GestureMenuTextItem extends GestureMenuBlankItem {
     public b a;
-    private com.censivn.C3DEngine.b.h.b.h b;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH b;
     private GestureMenuEffectItem.a c;
 
     public GestureMenuTextItem(b bVar) {
@@ -39,14 +39,14 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
             }
         }));
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.GestureMenuTextItem.2
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuTextItem.2
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return com.tsf.shell.manager.app.v.ScreenHelper.i();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 com.tsf.shell.f._d.c.a.DashLayoutContainer dVarA = com.tsf.shell.manager.app.v.ScreenHelper.a(i);
                 com.tsf.shell.f._d.c.a.DashLayoutListener cVarB = dVarA.b();
@@ -64,8 +64,8 @@ public class GestureMenuTextItem extends GestureMenuBlankItem {
                 return cVarB;
             }
         });
-        this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.GestureMenuTextItem.3
-            @Override // com.censivn.C3DEngine.b.h.b.f
+        this.b.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.f.g.a.GestureMenuTextItem.3
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 com.tsf.shell.f._d.c.a.DashLayoutContainer dVarA = com.tsf.shell.manager.app.v.ScreenHelper.a(i);
                 w.b();

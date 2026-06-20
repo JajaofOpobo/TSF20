@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 import com.tsf.shell.utils.HapticFeedbackManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
+public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF {
     private float a;
     private float b;
     private h c;
@@ -18,7 +18,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         this.f = dVar;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.f
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
     public void a(i iVar, int i, MotionEvent motionEvent) {
     }
 
@@ -26,7 +26,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         return null;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.f
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
     public void b(i iVar, int i, MotionEvent motionEvent) {
         w.a();
         this.c = (h) iVar;
@@ -44,7 +44,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         this.f.templeteHide();
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.f
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
     public void c(i iVar, int i, MotionEvent motionEvent) {
         final com.tsf.shell.f.i.c.ItemLabelProvider eVarA = a(i);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragHandler.1
@@ -83,7 +83,7 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.f {
         return true;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.f
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
     public void a(i iVar, int i, MotionEvent motionEvent, MotionEvent motionEvent2) {
         if (this.d != null) {
             this.d.position().x = this.a + (motionEvent2.getX() - motionEvent.getX());

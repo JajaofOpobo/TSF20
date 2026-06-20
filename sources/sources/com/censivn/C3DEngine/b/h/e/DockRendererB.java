@@ -13,7 +13,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends BaseRenderable {
+public class DockRendererB extends BaseRenderable {
     public static float a = 0.15f;
     private GridRenderable A;
     private com.censivn.C3DEngine.b.d.a B;
@@ -75,7 +75,7 @@ public class b extends BaseRenderable {
         this.h = f5;
         this.i = f3;
         this.c = new BaseRenderable();
-        this.b = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.e.b.1
+        this.b = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.1
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
@@ -147,7 +147,7 @@ public class b extends BaseRenderable {
         };
         super.addChild(this.b);
         super.addChild(this.c);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar == null ? this : iVar) { // from class: com.censivn.C3DEngine.b.h.e.b.2
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar == null ? this : iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.2
             private float b;
             private com.censivn.C3DEngine.b.d.a g;
             private IRenderable h;
@@ -202,7 +202,7 @@ public class b extends BaseRenderable {
                 if (b.this.z) {
                     if (this.h != null && this.d && !this.f) {
                         this.f = true;
-                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.e.b.2.1
+                        com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.2.1
                             @Override // java.lang.Runnable
                             public void run() {
                                 AnonymousClass2.this.f = false;
@@ -514,7 +514,7 @@ public class b extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.b.3
+            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.c.removeChild(kVar);

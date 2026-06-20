@@ -11,7 +11,7 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GestureMenuMarkItem extends GestureMenuBlankItem {
     public b a;
-    private com.censivn.C3DEngine.b.h.b.h b;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH b;
     private GestureMenuEffectItem.a c;
     private LabelRenderable d;
 
@@ -24,14 +24,14 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
         this.d.a(true);
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.d, com.tsf.shell.manager.o.ThemeColorConstants.n);
         setMenuHeight(com.censivn.C3DEngine.b.b.A.a(430.0f));
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.1
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.1
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return com.tsf.shell.manager.app.v.StateAccessor.i();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 com.tsf.shell.f._d.b.a.DashItemD dVarA = com.tsf.shell.manager.app.v.StateAccessor.a(i);
                 com.tsf.shell.f._d.b.a.DashItemContainer bVarE = dVarA.e();
@@ -51,8 +51,8 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
         });
         this.d.position().y = com.censivn.C3DEngine.b.b.A.a(300.0f);
         this.b.a().addChild(this.d);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.2
-            @Override // com.censivn.C3DEngine.b.h.b.f
+        this.b.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.f.g.a.GestureMenuMarkItem.2
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 com.tsf.shell.f._d.b.a.DashItemD dVarA = com.tsf.shell.manager.app.v.StateAccessor.a(i);
                 w.b();

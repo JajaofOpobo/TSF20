@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.IRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f {
+public class DesktopTouchHandlerF {
     public void a(i iVar, int i, MotionEvent motionEvent) {
     }
 

@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerWidgetTouchHandler extends DrawerContentList.a {
-    private com.censivn.C3DEngine.b.h.e.b a;
+    private com.censivn.C3DEngine.b.h.e.DockRendererB a;
     private l b;
     private com.tsf.shell.f.f.a.FolderPage c;
     private ArrayList<e> d;
@@ -62,31 +62,31 @@ public class DrawerWidgetTouchHandler extends DrawerContentList.a {
                 return b.this.a.l().getChildAt(i2);
             }
         };
-        this.a = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, com.censivn.C3DEngine.b.b.A.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerWidgetTouchHandler.2
-            @Override // com.censivn.C3DEngine.b.h.e.b
+        this.a = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.A.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, com.censivn.C3DEngine.b.b.A.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a._c.DrawerWidgetTouchHandler.2
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(int i2) {
                 b.this.b(i2);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.b
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 b.this.c.c((com.tsf.shell.f.i.PageItem) iVar);
                 b.this.b.a(iVar);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.b
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 b.this.b.b(iVar);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.b
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void k() {
                 if (b.this.e == 0) {
                     super.k();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.b
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void h() {
                 if (b.this.e != 0) {
                     b.this.b.c();

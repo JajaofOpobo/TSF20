@@ -7,11 +7,11 @@ import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
-    private a a;
-    private a c;
-    private a d;
-    private a e;
+public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+    private ProgressBarWidget a;
+    private ProgressBarWidget c;
+    private ProgressBarWidget d;
+    private ProgressBarWidget e;
     private TextureElement f;
     private float g;
     private float h;
@@ -22,7 +22,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
     private float m;
     private float n;
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.h.d.b$b, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.h.d.ProgressBarItem$b, reason: collision with other inner class name */
     class C0038b {
         C0038b() {
         }
@@ -36,13 +36,13 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         super(4, 32, 32);
         this.g = 0.0f;
         this.h = 0.0f;
-        a(f, new C0038b() { // from class: com.censivn.C3DEngine.b.h.d.b.1
+        a(f, new C0038b() { // from class: com.censivn.C3DEngine.b.h.d.ProgressBarItem.1
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             {
                 super();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.d.b.C0038b
+            @Override // com.censivn.C3DEngine.b.h.d.ProgressBarItem.C0038b
             public Bitmap a() {
                 return x.a(i);
             }
@@ -81,7 +81,7 @@ public class b extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
 
     public void a(final float f, int i, final Runnable runnable) {
         final float f2 = this.m;
-        d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.d.b.2
+        d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.d.ProgressBarItem.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 b.this.a(f2 + ((f - f2) * f3));

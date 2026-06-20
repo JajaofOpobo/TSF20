@@ -11,7 +11,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         void b();
     }
 
-    private com.censivn.C3DEngine.b.h.b.h a;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH a;
     private ArrayList<com.tsf.shell.f.i.c.ItemLabelProvider> b;
     private float e;
     private float f;
@@ -21,15 +21,15 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
         this.b = new ArrayList<>();
         this.e = 0.0f;
         this.f = 0.0f;
-        this.a = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, this.e, this.f);
+        this.a = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, dVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, this.e, this.f);
         this.c.addChild(this.a);
-        this.a.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.1
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.1
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return WidgetDragDropArea.this.b.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i hVar = iVar == null ? new h(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f, com.censivn.C3DEngine.b.b.A.a(30.0f), true) : iVar;
                 h hVar2 = (h) hVar;
@@ -40,14 +40,14 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
                 return hVar;
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public void a(i iVar) {
                 ((h) iVar).d();
             }
         });
         this.a.b(0.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f);
         this.a.a(new WidgetDragHandler(dVar) { // from class: com.tsf.shell.manager.r.b.c.WidgetDragDropArea.2
-            @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.f
+            @Override // com.tsf.shell.manager.r.b.c.WidgetDragHandler, com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 com.tsf.shell.f.i.c.ItemLabelProvider eVar = (com.tsf.shell.f.i.c.ItemLabelProvider) WidgetDragDropArea.this.b.get(i);
                 if (eVar instanceof com.tsf.shell.f.i.c.ItemGroupBase) {

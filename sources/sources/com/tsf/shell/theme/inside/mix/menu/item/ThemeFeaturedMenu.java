@@ -5,8 +5,8 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.b.b.A;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 import com.tsf.b;
 import com.tsf.shell.Home;
 import com.tsf.shell.manager.p.ThemePreferenceProvider;
@@ -29,13 +29,13 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
         this.manager = themeSettingMenu;
         this.mThemes = getOnlineLists();
         this.mGridView = new h(a.D, themeSettingMenu.getHeight(), a.c * 20.0f, a.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 1.1f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * 1.2f);
-        this.mGridView.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu.1
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.mGridView.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu.1
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return ThemeFeaturedMenu.this.mThemes.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i themeMenuOnlineElementPlane;
                 if (iVar == null) {
@@ -57,7 +57,7 @@ public class ThemeFeaturedMenu extends com.tsf.shell.f.e._g.a.MenuActionItem {
             }
         });
         this.mGridView.a(new f() { // from class: com.tsf.shell.theme.inside.mix.menu.item.ThemeFeaturedMenu.2
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 k.a(Home.b(), ((ThemeOnlineItems) ThemeFeaturedMenu.this.mThemes.get(i)).packageName);

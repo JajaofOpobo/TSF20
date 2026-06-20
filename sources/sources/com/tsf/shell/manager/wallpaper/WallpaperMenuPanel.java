@@ -7,8 +7,8 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.f.LabelRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 
 import com.tsf.shell.Home;
 import com.tsf.shell.f.e._g.a.MenuActionHandler;
@@ -64,19 +64,19 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         });
         this.c.add(new d(x.c(b.i.text_live_wallpapers)));
         this.a = new h(com.censivn.C3DEngine.b.b.A.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.a(320.0f), com.censivn.C3DEngine.b.b.A.a(520.0f));
-        this.a.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.3
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.3
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return b.this.c.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 return (i) b.this.c.get(i);
             }
         });
         this.a.a(new f() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.4
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 ((c) b.this.c.get(i)).a();

@@ -20,7 +20,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
     private BaseRenderable d;
     private com.tsf.shell.f.e.PageIndicatorStrip e;
     private com.tsf.shell.f.c.b.a.IDrawerSettingsCallback f;
-    private com.censivn.C3DEngine.b.h.e.a i;
+    private com.censivn.C3DEngine.b.h.e.DockRenderer i;
     private A j;
     private A k;
     private Runnable l;
@@ -50,22 +50,22 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.e.a {
         com.tsf.shell.manager.app.ObserverManager.a(this);
         this.f = new com.tsf.shell.f.c.b.a.DrawerSettingsResult(this, this.m ? com.tsf.shell.manager.o.ButtonPresetManager.c : com.tsf.shell.manager.o.ButtonPresetManager.a);
         this.d = new BaseRenderable();
-        this.i = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
-            @Override // com.censivn.C3DEngine.b.h.e.a
+        this.i = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.A.D, f, com.censivn.C3DEngine.b.b.A.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
+            @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void a(int i2) {
                 if (e.this.c(i2).c() == 0) {
                     e.this.i.g();
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.a
+            @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void b(int i2) {
                 e.this.d(i2);
                 if (e.this.c(i2).c() != 0) {
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.a
+            @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void a() {
                 e.this.i.h();
             }

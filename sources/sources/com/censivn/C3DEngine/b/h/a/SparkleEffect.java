@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.b.h.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class SparkleEffect {
     private com.censivn.C3DEngine.b.f.a.SpriteItemData a;
     private float b = 0.0f;
     private float c = 0.0f;

@@ -19,13 +19,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
     private static com.tsf.shell.f.a.a.a i;
     private static TextureElement j;
     private static TextureElement k;
     private static b p;
     private boolean g;
-    private ArrayList<com.censivn.C3DEngine.b.h.a.b> h;
+    private ArrayList<com.censivn.C3DEngine.b.h.a.SparkleEffect> h;
     private InterfaceC0037a l;
     private int o;
     private static ArrayList<a> m = new ArrayList<>();
@@ -36,7 +36,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
     public static float[] e = new float[16];
     public static float[] f = new float[16];
 
-    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.h.a.a$a, reason: collision with other inner class name */
+    /* JADX INFO: renamed from: com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer$a, reason: collision with other inner class name */
     interface InterfaceC0037a {
         void a();
     }
@@ -80,7 +80,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         int[] iArrC = c(textureElement);
         if (this.h.size() == 0) {
             for (int i2 = 0; i2 < iArrC.length; i2++) {
-                com.censivn.C3DEngine.b.h.a.b bVar = new com.censivn.C3DEngine.b.h.a.b(a(i2));
+                com.censivn.C3DEngine.b.h.a.SparkleEffect bVar = new com.censivn.C3DEngine.b.h.a.SparkleEffect(a(i2));
                 bVar.a(iArrC[i2]);
                 this.h.add(bVar);
             }
@@ -88,7 +88,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         }
         int size = this.h.size();
         for (int i3 = 0; i3 < size; i3++) {
-            com.censivn.C3DEngine.b.h.a.b bVar2 = this.h.get(i3);
+            com.censivn.C3DEngine.b.h.a.SparkleEffect bVar2 = this.h.get(i3);
             bVar2.a();
             bVar2.a(iArrC[i3]);
         }
@@ -100,7 +100,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
         super.onDrawStart();
         if (!this.g) {
             boolean z2 = false;
-            Iterator<com.censivn.C3DEngine.b.h.a.b> it = this.h.iterator();
+            Iterator<com.censivn.C3DEngine.b.h.a.SparkleEffect> it = this.h.iterator();
             while (true) {
                 z = z2;
                 if (!it.hasNext()) {
@@ -113,7 +113,7 @@ public class a extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
                 invalidate();
             } else {
                 this.g = true;
-                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.a.a.1
+                com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer.1
                     @Override // java.lang.Runnable
                     public void run() {
                         a.this.d();

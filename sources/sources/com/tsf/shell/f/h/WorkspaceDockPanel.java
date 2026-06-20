@@ -11,8 +11,8 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceDockPanel extends BaseRenderable {
     private b a;
-    private com.censivn.C3DEngine.b.h.e.a f;
-    private com.censivn.C3DEngine.b.h.e.a g;
+    private com.censivn.C3DEngine.b.h.e.DockRenderer f;
+    private com.censivn.C3DEngine.b.h.e.DockRenderer g;
     private f h;
     private com.tsf.shell.f.i.b.e.DrawerShortcutItemBase j;
     private float d = com.censivn.C3DEngine.b.b.A.c * 0.0f;
@@ -23,7 +23,7 @@ public class WorkspaceDockPanel extends BaseRenderable {
 
     public WorkspaceDockPanel(b bVar) {
         this.a = bVar;
-        this.f = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.f = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
         this.f.addChild(this.i);
         this.f.addChild(a(13));
         this.j = a(11);
@@ -32,7 +32,7 @@ public class WorkspaceDockPanel extends BaseRenderable {
         this.f.position().y = com.tsf.shell.manager.o.ButtonPresetManager.b.U + this.e;
         this.f.e();
         addChild(this.f);
-        this.g = new com.censivn.C3DEngine.b.h.e.a(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(this.a.b().c(), this.b - (com.censivn.C3DEngine.b.b.A.c * 10.0f), com.tsf.shell.manager.o.ButtonPresetManager.b.U, com.tsf.shell.manager.o.ButtonPresetManager.b.T, com.censivn.C3DEngine.b.b.A.c * 40.0f, com.censivn.C3DEngine.b.b.A.c * 0.0f);
         this.g.addChild(a(VEasing.Back.easeIn, com.tsf.shell.manager.p.ThemePreferenceProvider.a));
         this.g.addChild(a(300, com.tsf.shell.manager.p.ThemePreferenceProvider.e));
         this.g.addChild(a(800));

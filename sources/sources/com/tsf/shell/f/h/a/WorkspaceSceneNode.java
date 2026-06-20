@@ -13,7 +13,7 @@ import com.tsf.shell.manager.b.ConfigManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceSceneNode {
     private BaseRenderable a;
-    private com.censivn.C3DEngine.b.h.d.c b;
+    private com.censivn.C3DEngine.b.h.d.LabeledProgressBar b;
     private d c;
     private TextureElement d;
     private GridRenderable e;
@@ -42,7 +42,7 @@ public class WorkspaceSceneNode {
             }
         });
         this.a = new BaseRenderable();
-        this.b = new com.censivn.C3DEngine.b.h.d.c(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
+        this.b = new com.censivn.C3DEngine.b.h.d.LabeledProgressBar(com.censivn.C3DEngine.b.b.A.a(96.0f), b.d.ring_small, com.censivn.C3DEngine.b.b.A.a(74.0f));
         this.b.setAABBPX(com.censivn.C3DEngine.b.b.A.a(130.0f), com.censivn.C3DEngine.b.b.A.a(130.0f));
         this.b.a(b.d.ico_setting);
         this.c = new d() { // from class: com.tsf.shell.f.h.a.a.2

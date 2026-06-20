@@ -4,7 +4,7 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.censivn.C3DEngine.b.h.b.g;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG;
 import com.tsf.shell.manager.app.ObserverManager;
 import com.tsf.shell.manager.app.LauncherAppInfo;
 import com.tsf.shell.utils.HapticFeedbackManager;
@@ -48,7 +48,7 @@ public class DropTargetItem {
             c = new GridRenderable(com.censivn.C3DEngine.b.b.A.D, 308.0f * com.censivn.C3DEngine.b.b.A.b, false);
             DropTargetKeyHandler.addChild(c);
             e = new g(com.censivn.C3DEngine.b.b.A.z, com.censivn.C3DEngine.b.b.A.A, com.censivn.C3DEngine.b.b.A.b * (-80.0f), com.censivn.C3DEngine.b.b.A.b * 80.0f, com.tsf.shell.manager.o.ButtonPresetManager.a.T) { // from class: com.tsf.shell.f.e._a.DropTargetItem.3
-                @Override // com.censivn.C3DEngine.b.h.b.g
+                @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG
                 public i a(int i2, i iVar) {
                     i iVarB;
                     if (iVar == null) {
@@ -63,12 +63,12 @@ public class DropTargetItem {
                     return iVarB;
                 }
 
-                @Override // com.censivn.C3DEngine.b.h.b.g
+                @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG
                 public int e() {
                     return c.j.size();
                 }
 
-                @Override // com.censivn.C3DEngine.b.h.b.g
+                @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG
                 public void a(i iVar, int i2) {
                     c.i.a(iVar, (com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) c.j.get(i2));
                     c.j.remove(i2);

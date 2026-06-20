@@ -23,12 +23,12 @@ import java.util.Locale;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.SlidePanelAnimatorBase {
     private d a;
-    private com.censivn.C3DEngine.b.h.b.h b;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH b;
     private PackageManager e;
     private AppWidgetManager f;
     private boolean g;
     private ArrayList<a> h;
-    private com.censivn.C3DEngine.b.h.c.a i;
+    private com.censivn.C3DEngine.b.h.c.LoadingSpinner i;
 
     public SystemWidgetProviderBrowser(com.tsf.shell.f.e._g.MenuOverlay dVar, d dVar2) {
         super(dVar);
@@ -41,15 +41,15 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
     private void i() {
         this.e = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         this.f = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
-        this.i = new com.censivn.C3DEngine.b.h.c.a();
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.1
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.i = new com.censivn.C3DEngine.b.h.c.LoadingSpinner();
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.d.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T + (com.censivn.C3DEngine.b.b.A.c * 20.0f), com.tsf.shell.manager.o.ButtonPresetManager.c.U + (com.censivn.C3DEngine.b.b.A.c * 20.0f));
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.1
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return SystemWidgetProviderBrowser.this.h.size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i iVar2;
                 if (iVar == null) {
@@ -68,8 +68,8 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
                 return iVar2;
             }
         });
-        this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.2
-            @Override // com.censivn.C3DEngine.b.h.b.f
+        this.b.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.manager.r.b.c.SystemWidgetProviderBrowser.2
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 SystemWidgetProviderBrowser.this.a.a((a) SystemWidgetProviderBrowser.this.h.get(i));

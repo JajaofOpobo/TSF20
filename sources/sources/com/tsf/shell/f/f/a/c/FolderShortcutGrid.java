@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderShortcutGrid extends FolderPageItemBase {
-    private com.censivn.C3DEngine.b.h.e.b g;
+    private com.censivn.C3DEngine.b.h.e.DockRendererB g;
     private com.censivn.C3DEngine.b.f.LabelRenderable h;
     private float i;
 
@@ -18,8 +18,8 @@ public class FolderShortcutGrid extends FolderPageItemBase {
         super(hVar, fVar, FolderWidgetTouchHandler.d.drawer_hide, x.c(FolderWidgetTouchHandler.i.text_hide));
         float f = 0.8f * (com.tsf.shell.manager.o.ButtonPresetManager.c.U / com.tsf.shell.manager.o.ButtonPresetManager.a.U);
         this.i = com.tsf.shell.manager.o.ButtonPresetManager.a.U * f;
-        this.g = new com.censivn.C3DEngine.b.h.e.b(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1
-            @Override // com.censivn.C3DEngine.b.h.e.b
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.A.D, this.i, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.A.c * f, 10.0f * com.censivn.C3DEngine.b.b.A.c * f, f) { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(int i) {
                 if (i > 0) {
                     com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1.1
@@ -43,7 +43,7 @@ public class FolderShortcutGrid extends FolderPageItemBase {
                 f.this.h.visible(true);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.e.b
+            @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 com.tsf.shell.f.i.ShortcutItem cVar = iVar instanceof com.tsf.shell.f.i.ShortcutItem ? (com.tsf.shell.f.i.ShortcutItem) iVar : null;
                 if (cVar != null && cVar.K() != null) {

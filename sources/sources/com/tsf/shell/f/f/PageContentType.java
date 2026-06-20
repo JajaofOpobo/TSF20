@@ -1,12 +1,12 @@
 package com.tsf.shell.f.f;
 
 import com.censivn.C3DEngine.api.element.Number3d;
-import com.censivn.C3DEngine.b.h.b.c;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageContentType extends g {
-    private com.censivn.C3DEngine.b.h.b.c l;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC l;
 
     public PageContentType() {
         this.b = new com.tsf.shell.e.CellLayout(com.censivn.C3DEngine.C3DEngine.d(), this.a);
@@ -66,7 +66,7 @@ public class PageContentType extends g {
     }
 
     public void a(c.a aVar) {
-        this.l = new com.censivn.C3DEngine.b.h.b.c(this, false, aVar);
+        this.l = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(this, false, aVar);
         int i = ((int) (((double) (com.censivn.C3DEngine.b.b.A.D > com.censivn.C3DEngine.b.b.A.E ? com.censivn.C3DEngine.b.b.A.E : com.censivn.C3DEngine.b.b.A.D)) * 0.9d)) / 2;
         this.l.a(i, i);
         this.l.scale().setAll(0.5f, 0.5f, 1.0f);

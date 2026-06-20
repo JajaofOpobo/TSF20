@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderMultiWidgetPage extends FolderPageItemBase {
-    private com.censivn.C3DEngine.b.h.e.a g;
+    private com.censivn.C3DEngine.b.h.e.DockRenderer g;
     private com.tsf.shell.f.f.a.d.DrawerSortManager h;
     private ArrayList<com.tsf.shell.f.g.a.GestureMenuRenderer> i;
     private com.tsf.shell.f.g.a.GestureMenuRenderer j;
@@ -113,7 +113,7 @@ public class FolderMultiWidgetPage extends FolderPageItemBase {
             f = fMaxX;
         }
         this.l = fMaxY;
-        this.g = new com.censivn.C3DEngine.b.h.e.a(com.censivn.C3DEngine.b.b.A.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.A.c, 40.0f * com.censivn.C3DEngine.b.b.A.c);
+        this.g = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.A.D, fMaxY, f * 0.8f, 80.0f * com.censivn.C3DEngine.b.b.A.c, 40.0f * com.censivn.C3DEngine.b.b.A.c);
         this.g.d();
         this.g.d();
         addChild(this.g);

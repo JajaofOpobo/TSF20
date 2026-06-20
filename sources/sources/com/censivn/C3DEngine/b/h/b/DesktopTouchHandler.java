@@ -8,10 +8,10 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class a extends com.censivn.C3DEngine.b.d.a {
+class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.a {
     public boolean a;
-    private e b;
-    private d d;
+    private DesktopTouchHandlerE b;
+    private DesktopTouchHandlerD d;
     private com.tsf.shell.f.i.B e;
     private float f;
     private float g;

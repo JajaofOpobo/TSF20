@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class g extends BaseRenderable {
+public class DesktopTouchHandlerG extends BaseRenderable {
     private float d;
     private float e;
     private float f;
@@ -31,7 +31,7 @@ public class g extends BaseRenderable {
         this.f = f5;
         addChild(this.c);
         setAABBPX(f, f3, 0.0f, f2, f4, 0.0f);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.h.b.g.1
+        setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG.1
             boolean a = true;
             float b = 0.0f;
             boolean d = false;
@@ -144,7 +144,7 @@ public class g extends BaseRenderable {
             while (i2 < iNumChildren2) {
                 i childAt2 = this.c.getChildAt(i2);
                 if (i2 == iNumChildren2 - 1) {
-                    a(childAt2, i, new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.g.2
+                    a(childAt2, i, new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG.2
                         @Override // java.lang.Runnable
                         public void run() {
                             g.this.h();

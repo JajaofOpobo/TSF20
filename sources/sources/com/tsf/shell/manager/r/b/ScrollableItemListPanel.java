@@ -5,8 +5,8 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
@@ -95,8 +95,8 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
         this.c = new BaseRenderable();
         this.b = new h(com.censivn.C3DEngine.b.b.A.D, aVar.getHeight(), 50.0f * com.censivn.C3DEngine.b.b.A.c, com.censivn.C3DEngine.b.b.A.c * 20.0f, f3, f4);
         this.c.addChild(this.b);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.c.2
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.c.2
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return ScrollableItemListPanel.this.d.a().size();
             }
@@ -111,7 +111,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
             	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
             	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 return ScrollableItemListPanel.this.a(ScrollableItemListPanel.this.d.a().get(i), i, iVar);
             }
@@ -122,7 +122,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
             private float d;
             private float e;
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 E e = ScrollableItemListPanel.this.d.a().get(i);
@@ -133,7 +133,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void b(i iVar, int i, MotionEvent motionEvent) {
                 if (!aVar.a()) {
                     w.a();
@@ -156,7 +156,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void c(i iVar, int i, MotionEvent motionEvent) {
                 if (!aVar.a()) {
                     if (ScrollableItemListPanel.this.b(motionEvent, ScrollableItemListPanel.this.d.a().get(i), this.c)) {
@@ -166,7 +166,7 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                 }
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.c != null) {
                     this.c.position().x = this.d + (motionEvent2.getX() - motionEvent.getX());

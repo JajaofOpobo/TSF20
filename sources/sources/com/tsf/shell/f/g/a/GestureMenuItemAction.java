@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem {
     public b a;
-    private com.censivn.C3DEngine.b.h.b.h b;
+    private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH b;
     private GestureMenuBlankItem.C0095a c;
     private GestureMenuEffectItem.a d;
 
@@ -80,14 +80,14 @@ public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem
         arrayList.add(new GestureMenuBlankItem.C0095a(GestureMenuOverlay.d.effect_setting_desktop_menu_page_border, x.c(GestureMenuOverlay.i.text_border), c0096a2));
         arrayList.add(this.c);
         setFunctions(arrayList);
-        this.b = new com.censivn.C3DEngine.b.h.b.h(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.4
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.A.D, this.a.getHeight(), com.censivn.C3DEngine.b.b.A.c * 20.0f, com.censivn.C3DEngine.b.b.A.c * 20.0f, com.tsf.shell.manager.o.ButtonPresetManager.c.T * 0.9f, com.tsf.shell.manager.o.ButtonPresetManager.c.U * com.censivn.C3DEngine.b.b.A.c * 0.9f);
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.4
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return com.tsf.shell.manager.app.v.FlagHelper.C0126a.i();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 i hVar;
                 if (iVar == null) {
@@ -113,8 +113,8 @@ public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem
                 return hVar;
             }
         });
-        this.b.a(new com.censivn.C3DEngine.b.h.b.f() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.5
-            @Override // com.censivn.C3DEngine.b.h.b.f
+        this.b.a(new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.5
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 l lVarA = com.tsf.shell.manager.app.v.FlagHelper.C0126a.a(i);
                 w.b();

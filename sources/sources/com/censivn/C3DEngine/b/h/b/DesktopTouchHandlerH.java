@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class h extends BaseRenderable {
+public class DesktopTouchHandlerH extends BaseRenderable {
     public static float a = 0.15f;
     private b D;
     private f E;
@@ -50,7 +50,7 @@ public class h extends BaseRenderable {
     private ArrayList<a> C = new ArrayList<>();
     private BaseRenderable d = new BaseRenderable();
     private BaseRenderable b = new BaseRenderable();
-    private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.b.h.2
+    private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.2
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             h.this.f();
@@ -61,7 +61,7 @@ public class h extends BaseRenderable {
         if (com.censivn.C3DEngine.a.e.l()) {
             c(f3 - f, f4 - f2);
         } else {
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.1
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.1
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.c(f3 - f, f4 - f2);
@@ -265,7 +265,7 @@ public class h extends BaseRenderable {
         this.b.addChild(this.c);
         super.addChild(this.b);
         super.addChild(this.d);
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.h.3
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.3
             float a;
             private IRenderable d = null;
 
@@ -431,7 +431,7 @@ public class h extends BaseRenderable {
             com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
             this.t = new GridRenderable(0.0f, 0.0f, false);
             com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
-            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.h.4
+            com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.4
                 @Override // java.lang.Runnable
                 public void run() {
                     h.this.u = x.b(b.d.scrollcontainer_arrow);
@@ -446,14 +446,14 @@ public class h extends BaseRenderable {
                 }
             });
         }
-        this.s.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.s) { // from class: com.censivn.C3DEngine.b.h.b.h.5
+        this.s.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.s) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.5
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 h.a = 0.1f;
                 h.this.m();
             }
         });
-        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.t) { // from class: com.censivn.C3DEngine.b.h.b.h.6
+        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.t) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.6
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 h.a = 0.1f;
@@ -597,7 +597,7 @@ public class h extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.h.7
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     h.this.d.removeChild(kVar);

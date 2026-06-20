@@ -19,7 +19,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
+public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
     private static j Q;
     private static c.a R;
     private Number3d A;
@@ -116,7 +116,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.j = new ArrayList<>();
         int iA = (int) com.censivn.C3DEngine.b.b.A.a(128.0f);
         this.e = ThemeManager.mix.interactiveArrange.getTextureElement(ThemeShellDescription.INTERACTIVE_ARRANGE_BG, iA, iA);
-        this.b = new GridRenderable(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.c.1
+        this.b = new GridRenderable(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 if (c.this.i.e()) {
@@ -134,7 +134,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.b.useVBO(false);
         this.b.setAnimationObjectState(true);
         this.b.mouseAreaDynamic(true);
-        this.g = new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.c.2
+        this.g = new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.2
             boolean a = false;
             private float d;
             private float e;
@@ -200,13 +200,13 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.D = this.b.points().getAsNumber3dPX(15);
         this.v = this.b.points().getAsNumber3dPX(0);
         addChild(this.b);
-        this.h = new e() { // from class: com.censivn.C3DEngine.b.h.b.c.3
-            @Override // com.censivn.C3DEngine.b.h.b.e
+        this.h = new e() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.3
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerE
             public void a(MotionEvent motionEvent) {
                 e(motionEvent);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.e
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerE
             public void b(MotionEvent motionEvent) {
                 com.tsf.shell.f.i.B bVarE = e(motionEvent);
                 if (bVarE != null && c.this.i.e()) {
@@ -214,7 +214,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
                 }
             }
         };
-        this.i = new com.tsf.shell.f.i.A(this, this) { // from class: com.censivn.C3DEngine.b.h.b.c.4
+        this.i = new com.tsf.shell.f.i.A(this, this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.4
             @Override // com.tsf.shell.f.i.A
             public void a() {
                 c.this.f();
@@ -228,7 +228,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         this.c = new GridRenderable(com.tsf.shell.manager.g.a.a, com.tsf.shell.manager.g.a.a, false);
         this.c.textures().addElement(this.f);
         this.c.calAABB(1.3f, 1.3f, 1.0f);
-        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.c.5
+        this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.5
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.b.d.a
@@ -275,7 +275,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
             R = new c.a(b.i.menu_multiple_choice, b.d.widget_folder_multi_choice, bVar);
             Q.addChild(R);
         }
-        R.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.c.6
+        R.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(this.b) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.6
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 c.this.a();
@@ -584,7 +584,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
                 ((com.tsf.shell.f.i.B) iVar).ad();
             }
             this.j.clear();
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.c.7
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
                     c.this.c.alpha(c.this.b.alpha());
@@ -612,7 +612,7 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void e() {
         if (!this.m) {
             int iNumChildren = this.d.numChildren();
@@ -627,64 +627,64 @@ public class c extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
         this.g.a(motionEvent, motionEvent2);
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void a(MotionEvent motionEvent) {
         this.g.e(motionEvent);
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void b(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void c(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void b(com.tsf.shell.f.i.B bVar) {
         this.m = true;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void c(com.tsf.shell.f.i.B bVar) {
         this.m = false;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public boolean a(int i) {
         return false;
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void d(com.tsf.shell.f.i.B bVar) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void d(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void e(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void f(MotionEvent motionEvent) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void e(com.tsf.shell.f.i.B bVar) {
     }
 
-    @Override // com.censivn.C3DEngine.b.h.b.d
+    @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
     public void a(com.tsf.shell.f.i.B bVar, Number3d number3d) {
     }
 

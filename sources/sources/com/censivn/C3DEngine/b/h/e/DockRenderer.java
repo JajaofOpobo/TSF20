@@ -11,7 +11,7 @@ import com.tsf.shell.f.e.C;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends BaseRenderable {
+public class DockRenderer extends BaseRenderable {
     public static float a = 0.15f;
     private BaseRenderable b;
     private BaseRenderable c;
@@ -69,7 +69,7 @@ public class a extends BaseRenderable {
         this.j = f3;
         this.d = new BaseRenderable();
         this.b = new BaseRenderable();
-        this.c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.e.a.1
+        this.c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.1
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
@@ -104,7 +104,7 @@ public class a extends BaseRenderable {
         super.addChild(this.b);
         super.addChild(this.d);
         iVar = iVar == null ? this.b : iVar;
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.a.2
+        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.2
             float a;
             private com.censivn.C3DEngine.b.d.a d;
             private boolean e = false;
@@ -235,14 +235,14 @@ public class a extends BaseRenderable {
         this.u.textures().addElement(this.v);
         this.t.calAABB(3.0f, 3.0f, 1.0f);
         this.u.calAABB(3.0f, 3.0f, 1.0f);
-        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.a.3
+        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.3
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
                 a.this.k();
             }
         });
-        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.a.4
+        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.d.a(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.4
             @Override // com.censivn.C3DEngine.b.d.a
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
@@ -339,7 +339,7 @@ public class a extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.a.5
+            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.d.removeChild(kVar);

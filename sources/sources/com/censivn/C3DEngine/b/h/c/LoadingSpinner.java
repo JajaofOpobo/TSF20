@@ -10,7 +10,7 @@ import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends GridRenderable {
+public class LoadingSpinner extends GridRenderable {
     private TextureElement a;
 
     public a() {
@@ -47,7 +47,7 @@ public class a extends GridRenderable {
 
     public void b(boolean z) {
         if (z) {
-            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.c.a.1
+            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.c.LoadingSpinner.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     a.this.a();

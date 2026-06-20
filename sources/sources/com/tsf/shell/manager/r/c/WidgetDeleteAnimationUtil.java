@@ -38,7 +38,7 @@ public class WidgetDeleteAnimationUtil {
 
     public static void a(TextureElement textureElement, com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (textureElement != null && textureElement.id != 0) {
-            com.censivn.C3DEngine.b.h.a.a aVarA = com.censivn.C3DEngine.b.h.a.a.a(textureElement);
+            com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer aVarA = com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer.a(textureElement);
             aVarA.position().setAllFrom(iVar.position());
             Number3d.TEMPNUMBER3D2.reset();
             aVarA.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D2));

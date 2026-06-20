@@ -3,8 +3,8 @@ package com.tsf.shell.manager.r.b;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.censivn.C3DEngine.b.h.b.f;
-import com.censivn.C3DEngine.b.h.b.h;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF;
+import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH;
 import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.Iterator;
 
@@ -23,13 +23,13 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             public void onKillFocus() {
             }
         };
-        this.b.a(new com.censivn.C3DEngine.b.h.b.b() { // from class: com.tsf.shell.manager.r.b.TogglePanel.2
-            @Override // com.censivn.C3DEngine.b.h.b.b
+        this.b.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.r.b.TogglePanel.2
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
                 return com.tsf.shell.manager.app.FolderManager.c.a().size();
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.b
+            @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
                 A aVar2;
                 if (iVar == null) {
@@ -42,7 +42,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             }
         });
         this.b.a(new f() { // from class: com.tsf.shell.manager.r.b.TogglePanel.3
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarA = com.tsf.shell.manager.l.ShortcutManager.a(TogglePanel.this.c.a().get(i).a, com.tsf.shell.manager.o.ButtonPresetManager.b);
@@ -50,15 +50,15 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
                 aVar.b().a(bVarA);
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void b(i iVar, int i, MotionEvent motionEvent) {
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void c(i iVar, int i, MotionEvent motionEvent) {
             }
 
-            @Override // com.censivn.C3DEngine.b.h.b.f
+            @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent, MotionEvent motionEvent2) {
             }
         });

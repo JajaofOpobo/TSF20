@@ -216,7 +216,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         switch (i) {
             case 0:
                 if (arrayList.size() > 1 && arrayList.get(0).z() != null) {
-                    com.censivn.C3DEngine.b.h.b.c cVar = new com.censivn.C3DEngine.b.h.b.c(arrayList.get(0).z(), true);
+                    com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(arrayList.get(0).z(), true);
                     Collections.sort(arrayList, e);
                     cVar.c();
                     cVar.a(arrayList);

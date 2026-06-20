@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
+public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRendererB {
     private GridRenderable b;
     private c c;
     private com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a d;
@@ -110,7 +110,7 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.b {
         });
     }
 
-    @Override // com.censivn.C3DEngine.b.h.e.b
+    @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
     public void c(i iVar) {
         if (this.g && (iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && iVar.visible()) {
             this.e.position().x = iVar.position().x + com.censivn.C3DEngine.b.b.A.a(50.0f);
