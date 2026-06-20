@@ -188,7 +188,7 @@ public class y extends t {
         private ArrayList<c> b = new ArrayList<>();
         private C0064a c = new C0064a();
         private n d;
-        private List<com.tsf.extend.base.c.a> e;
+        private List<com.tsf.extend.base.c.ProgressCallback> e;
         private int f;
 
         public A(n nVar, int i) {
@@ -278,7 +278,7 @@ public class y extends t {
     }
 
     class c {
-        com.tsf.extend.base.c.a a;
+        com.tsf.extend.base.c.ProgressCallback a;
         ImageView b;
         Bitmap c;
         int d;
@@ -291,9 +291,9 @@ public class y extends t {
     class B implements ViewPager.e {
         private int b;
         private int c;
-        private List<com.tsf.extend.base.c.a> d;
+        private List<com.tsf.extend.base.c.ProgressCallback> d;
 
-        public B(int i, int i2, List<com.tsf.extend.base.c.a> list) {
+        public B(int i, int i2, List<com.tsf.extend.base.c.ProgressCallback> list) {
             this.b = i;
             this.c = i2;
             this.d = list;
@@ -320,7 +320,7 @@ public class y extends t {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(int i, int i2, boolean z, com.tsf.extend.base.c.a aVar) {
+    public void a(int i, int i2, boolean z, com.tsf.extend.base.c.ProgressCallback aVar) {
         String strI = "";
         String str = "";
         if ("1".equals(aVar.b)) {

@@ -734,14 +734,14 @@ public class UploadWallpaperService extends Service {
         }
     }
 
-    private class d extends com.tsf.extend.base.c.e {
-        com.tsf.extend.base.c.d a;
+    private class d extends com.tsf.extend.base.c.ServiceBinderC {
+        com.tsf.extend.base.c.ServiceCallback a;
 
         private d() {
         }
 
-        @Override // com.tsf.extend.base.c.e
-        public void a(Intent intent, com.tsf.extend.base.c.d dVar) throws UnsupportedEncodingException {
+        @Override // com.tsf.extend.base.c.ServiceBinderC
+        public void a(Intent intent, com.tsf.extend.base.c.ServiceCallback dVar) throws UnsupportedEncodingException {
             if (intent != null && intent.getData() != null) {
                 this.a = dVar;
                 UploadWallpaperService.this.b = intent.getData();
@@ -751,12 +751,12 @@ public class UploadWallpaperService extends Service {
             UploadWallpaperService.this.stopSelf();
         }
 
-        @Override // com.tsf.extend.base.c.e
+        @Override // com.tsf.extend.base.c.ServiceBinderC
         public int a() {
             return UploadWallpaperService.this.i.ordinal();
         }
 
-        public com.tsf.extend.base.c.d b() {
+        public com.tsf.extend.base.c.ServiceCallback b() {
             return this.a;
         }
     }

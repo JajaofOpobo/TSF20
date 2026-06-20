@@ -23,7 +23,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeDetailActivity extends PageActivity {
-    private com.tsf.extend.base.c.b g;
+    private com.tsf.extend.base.c.ServiceBinderA g;
     private DIYThemeDetail e = null;
     private String f = "CURRENT_THEME_NONE";
     private List<a> h = Lists.newArrayList();
@@ -35,7 +35,7 @@ public class ThemeDetailActivity extends PageActivity {
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            ThemeDetailActivity.this.g = (com.tsf.extend.base.c.b) iBinder;
+            ThemeDetailActivity.this.g = (com.tsf.extend.base.c.ServiceBinderA) iBinder;
             try {
                 ThemeDetailActivity.this.f = ThemeDetailActivity.this.g.a();
                 Iterator it = ThemeDetailActivity.this.h.iterator();
@@ -64,7 +64,7 @@ public class ThemeDetailActivity extends PageActivity {
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity
-    public com.tsf.extend.base.c.b c() {
+    public com.tsf.extend.base.c.ServiceBinderA c() {
         return this.g;
     }
 
@@ -128,7 +128,7 @@ public class ThemeDetailActivity extends PageActivity {
         super.onBackPressed();
     }
 
-    public boolean a(String str, boolean z, com.tsf.extend.base.c.a aVar) throws Throwable {
+    public boolean a(String str, boolean z, com.tsf.extend.base.c.ProgressCallback aVar) throws Throwable {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("PACKAGE_NAME", str);

@@ -24,34 +24,34 @@ public class ThemeService extends Service {
         return this.a;
     }
 
-    private class A extends com.tsf.extend.base.c.c {
+    private class A extends com.tsf.extend.base.c.ServiceBinderB {
         private A() {
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public String a() {
             return ah.a().b();
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public boolean b() {
             return false;
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public boolean c() {
             return false;
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public void d() {
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public void e() {
         }
 
-        @Override // com.tsf.extend.base.c.c
+        @Override // com.tsf.extend.base.c.ServiceBinderB
         public void a(int i) {
             com.tsf.extend.wallpaper.ab.a(i);
         }

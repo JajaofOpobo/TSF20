@@ -26,8 +26,8 @@ import com.tsf.extend.wallpaper.upload.UploadWallpaperService;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerIndicator.a, c.a, PersonalizationActivity.i, q {
     public static int c;
-    com.tsf.extend.base.c.e e;
-    com.tsf.extend.base.c.e f;
+    com.tsf.extend.base.c.ServiceBinderC e;
+    com.tsf.extend.base.c.ServiceBinderC f;
     private int g;
     private PageActivity h;
     private ViewPager i;
@@ -66,7 +66,7 @@ public class WallpaperPager extends FrameLayout implements ViewPager.e, PagerInd
         this.x = new ServiceConnection() { // from class: com.tsf.extend.wallpaper.WallpaperPager.2
             @Override // android.content.ServiceConnection
             public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-                WallpaperPager.this.f = (com.tsf.extend.base.c.e) iBinder;
+                WallpaperPager.this.f = (com.tsf.extend.base.c.ServiceBinderC) iBinder;
                 int iA = 0;
                 try {
                     iA = WallpaperPager.this.e.a();

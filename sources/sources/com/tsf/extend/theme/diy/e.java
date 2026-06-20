@@ -337,7 +337,7 @@ public class e {
 
         @Override // java.lang.Runnable
         public void run() {
-            com.tsf.extend.base.c.e eVarA;
+            com.tsf.extend.base.c.ServiceBinderC eVarA;
             int iA = 0;
             while (true) {
                 try {
@@ -363,15 +363,15 @@ public class e {
             }
             iA = eVarA.a();
             if (UploadWallpaperService.c.values()[iA] == UploadWallpaperService.c.idle) {
-                eVarA.a(this.b, new com.tsf.extend.base.c.d() { // from class: com.tsf.extend.theme.diy.e.f.1
-                    @Override // com.tsf.extend.base.c.d
+                eVarA.a(this.b, new com.tsf.extend.base.c.ServiceCallback() { // from class: com.tsf.extend.theme.diy.e.f.1
+                    @Override // com.tsf.extend.base.c.ServiceCallback
                     public void a(String str) {
                         if (f.this.c != null) {
                             f.this.c.a(str);
                         }
                     }
 
-                    @Override // com.tsf.extend.base.c.d
+                    @Override // com.tsf.extend.base.c.ServiceCallback
                     public void b(String str) {
                         if (f.this.c != null) {
                             f.this.c.b(str);
@@ -383,7 +383,7 @@ public class e {
     }
 
     private static class h implements ServiceConnection {
-        com.tsf.extend.base.c.e a;
+        com.tsf.extend.base.c.ServiceBinderC a;
         Intent b;
 
         public h(Intent intent) {
@@ -391,13 +391,13 @@ public class e {
             this.b = intent;
         }
 
-        public com.tsf.extend.base.c.e a() {
+        public com.tsf.extend.base.c.ServiceBinderC a() {
             return this.a;
         }
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            this.a = (com.tsf.extend.base.c.e) iBinder;
+            this.a = (com.tsf.extend.base.c.ServiceBinderC) iBinder;
         }
 
         @Override // android.content.ServiceConnection

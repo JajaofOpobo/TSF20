@@ -14,7 +14,7 @@ import java.util.UUID;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeManagerService extends Service {
     private Context a;
-    private com.tsf.extend.base.c.b b = new b();
+    private com.tsf.extend.base.c.ServiceBinderA b = new b();
 
     public interface a {
         void a();
@@ -52,12 +52,12 @@ public class ThemeManagerService extends Service {
         }
     }
 
-    private class b extends com.tsf.extend.base.c.b {
+    private class b extends com.tsf.extend.base.c.ServiceBinderA {
         private b() {
         }
 
-        @Override // com.tsf.extend.base.c.b
-        public void a(String str, final com.tsf.extend.base.c.a aVar) {
+        @Override // com.tsf.extend.base.c.ServiceBinderA
+        public void a(String str, final com.tsf.extend.base.c.ProgressCallback aVar) {
             if (!ThemeManagerService.this.a()) {
                 ThemeManagerService.this.a("GDPR没有开启： ThemeManagerService不能applyTheme");
                 if (aVar != null) {
@@ -122,26 +122,26 @@ public class ThemeManagerService extends Service {
             }, iA, str);
         }
 
-        @Override // com.tsf.extend.base.c.b
+        @Override // com.tsf.extend.base.c.ServiceBinderA
         public void b() {
         }
 
-        @Override // com.tsf.extend.base.c.b
+        @Override // com.tsf.extend.base.c.ServiceBinderA
         public boolean c() {
             return false;
         }
 
-        @Override // com.tsf.extend.base.c.b
+        @Override // com.tsf.extend.base.c.ServiceBinderA
         public void a(String str) {
             ah.a().a(str);
         }
 
-        @Override // com.tsf.extend.base.c.b
+        @Override // com.tsf.extend.base.c.ServiceBinderA
         public String a() {
             return com.tsf.extend.base.h.a.a().e();
         }
 
-        @Override // com.tsf.extend.base.c.b
+        @Override // com.tsf.extend.base.c.ServiceBinderA
         public boolean d() {
             return false;
         }

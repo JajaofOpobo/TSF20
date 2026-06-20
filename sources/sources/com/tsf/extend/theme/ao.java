@@ -8,7 +8,7 @@ import android.os.IBinder;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ao {
     private static ao a;
-    private com.tsf.extend.base.c.c b;
+    private com.tsf.extend.base.c.ServiceBinderB b;
     private A c;
     private boolean d;
     private ServiceConnection e = new ServiceConnection() { // from class: com.tsf.extend.theme.ao.1
@@ -24,7 +24,7 @@ public class ao {
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ao.this.d = true;
-            ao.this.b = (com.tsf.extend.base.c.c) iBinder;
+            ao.this.b = (com.tsf.extend.base.c.ServiceBinderB) iBinder;
             if (ao.this.c != null) {
                 ao.this.c.b();
             }

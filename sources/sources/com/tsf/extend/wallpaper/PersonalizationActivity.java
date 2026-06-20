@@ -51,7 +51,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     public static boolean e = true;
     public int f;
     private A l;
-    private com.tsf.extend.base.c.b m;
+    private com.tsf.extend.base.c.ServiceBinderA m;
     private com.tsf.extend.theme.diy.d p;
     private boolean q;
     private boolean s;
@@ -74,7 +74,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            PersonalizationActivity.this.m = (com.tsf.extend.base.c.b) iBinder;
+            PersonalizationActivity.this.m = (com.tsf.extend.base.c.ServiceBinderA) iBinder;
             try {
                 PersonalizationActivity.this.n = PersonalizationActivity.this.m.a();
                 PersonalizationActivity.this.q = PersonalizationActivity.this.m.d();
@@ -144,7 +144,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity
-    public com.tsf.extend.base.c.b c() {
+    public com.tsf.extend.base.c.ServiceBinderA c() {
         return this.m;
     }
 
@@ -427,7 +427,7 @@ public class PersonalizationActivity extends PageActivity implements d.a {
         return (int) ((context.getResources().getDisplayMetrics().density * f2) + 0.5f);
     }
 
-    public boolean a(String str, boolean z, com.tsf.extend.base.c.a aVar) throws Throwable {
+    public boolean a(String str, boolean z, com.tsf.extend.base.c.ProgressCallback aVar) throws Throwable {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("PACKAGE_NAME", str);

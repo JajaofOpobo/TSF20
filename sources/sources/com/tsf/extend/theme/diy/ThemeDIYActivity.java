@@ -73,7 +73,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     public static float a = 0.5625f;
     public static float b = 720.0f;
     public static float c = 1280.0f;
-    private com.tsf.extend.base.c.b A;
+    private com.tsf.extend.base.c.ServiceBinderA A;
     private Timer B;
     private ThemeLoadingAnim C;
     private ThemeLoadingAnim D;
@@ -150,7 +150,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            ThemeDIYActivity.this.A = (com.tsf.extend.base.c.b) iBinder;
+            ThemeDIYActivity.this.A = (com.tsf.extend.base.c.ServiceBinderA) iBinder;
         }
     };
     private Handler au = new Handler() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.6
@@ -835,8 +835,8 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     /* JADX WARN: Type inference failed for: r1v0, types: [com.tsf.extend.theme.diy.ThemeDIYActivity$9] */
     private void a(final String str) {
-        final com.tsf.extend.base.c.a aVar = new com.tsf.extend.base.c.a() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.8
-            @Override // com.tsf.extend.base.c.a
+        final com.tsf.extend.base.c.ProgressCallback aVar = new com.tsf.extend.base.c.ProgressCallback() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.8
+            @Override // com.tsf.extend.base.c.ProgressCallback
             public void a(int i2) {
                 if (ThemeDIYActivity.this.B != null) {
                     ThemeDIYActivity.this.B.cancel();

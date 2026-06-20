@@ -475,7 +475,7 @@ public class v extends com.tsf.extend.base.d.a {
             nVar.b(arrayList);
             int iMin = Math.min(length, 50);
             for (int i = 0; i < iMin; i++) {
-                com.tsf.extend.base.c.a aVarK = k(jSONArray.getJSONObject(i));
+                com.tsf.extend.base.c.ProgressCallback aVarK = k(jSONArray.getJSONObject(i));
                 if (aVarK != null) {
                     arrayList.add(aVarK);
                 }
@@ -860,7 +860,7 @@ public class v extends com.tsf.extend.base.d.a {
             if (jSONObject2 == null) {
                 return null;
             }
-            com.tsf.extend.base.c.a aVarK = k(jSONObject2);
+            com.tsf.extend.base.c.ProgressCallback aVarK = k(jSONObject2);
             if (aVarK != null) {
                 cVar.a().add(aVarK);
                 if (cVar.a().size() >= jOptLong) {
@@ -874,11 +874,11 @@ public class v extends com.tsf.extend.base.d.a {
         return cVar;
     }
 
-    private com.tsf.extend.base.c.a k(JSONObject jSONObject) {
+    private com.tsf.extend.base.c.ProgressCallback k(JSONObject jSONObject) {
         if (jSONObject == null) {
             return null;
         }
-        com.tsf.extend.base.c.a aVar = new com.tsf.extend.base.c.a();
+        com.tsf.extend.base.c.ProgressCallback aVar = new com.tsf.extend.base.c.ProgressCallback();
         aVar.a = jSONObject.optString("id");
         aVar.b = jSONObject.optString("type");
         aVar.c = jSONObject.optString("banner_img");

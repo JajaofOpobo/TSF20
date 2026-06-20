@@ -45,7 +45,7 @@ public class WallpaperOnLineActivity extends PageActivity {
     }
 
     @Override // com.tsf.extend.base.actstru.model.activi.PageActivity
-    public com.tsf.extend.base.c.b c() {
+    public com.tsf.extend.base.c.ServiceBinderA c() {
         return null;
     }
 
@@ -71,12 +71,12 @@ public class WallpaperOnLineActivity extends PageActivity {
                         if (aVarA == null || !WallpaperOnLineActivity.this.a(aVarA.a)) {
                             z = false;
                         } else {
-                            com.tsf.extend.base.c.a(file2.getAbsolutePath(), aVarA.a);
+                            com.tsf.extend.base.c.ProgressCallback(file2.getAbsolutePath(), aVarA.a);
                             z = true;
                         }
                         if (z) {
                             z2 = z;
-                        } else if (com.tsf.extend.base.c.a(str, file2.getAbsolutePath(), null) != 0) {
+                        } else if (com.tsf.extend.base.c.ProgressCallback(str, file2.getAbsolutePath(), null) != 0) {
                             z2 = false;
                         }
                     }

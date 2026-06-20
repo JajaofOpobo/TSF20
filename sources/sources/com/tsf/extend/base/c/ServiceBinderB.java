@@ -3,7 +3,7 @@ package com.tsf.extend.base.c;
 import android.os.Binder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class c extends Binder {
+public abstract class ServiceBinderB extends Binder {
     public abstract String a();
 
     public abstract void a(int i);

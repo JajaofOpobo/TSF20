@@ -74,7 +74,7 @@ public class ThemeCmClubActivity extends CustomActivity {
     private String E;
     private ValueCallback<Uri> K;
     private c L;
-    private com.tsf.extend.base.c.b O;
+    private com.tsf.extend.base.c.ServiceBinderA O;
     Context f;
     WebView g;
     private String l;
@@ -128,7 +128,7 @@ public class ThemeCmClubActivity extends CustomActivity {
 
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            ThemeCmClubActivity.this.O = (com.tsf.extend.base.c.b) iBinder;
+            ThemeCmClubActivity.this.O = (com.tsf.extend.base.c.ServiceBinderA) iBinder;
         }
     };
     private Runnable Q = new Runnable() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.4
@@ -482,8 +482,8 @@ public class ThemeCmClubActivity extends CustomActivity {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Type inference failed for: r1v0, types: [com.tsf.extend.theme.cmclub.ThemeCmClubActivity$10] */
     public void i() {
-        final com.tsf.extend.base.c.a aVar = new com.tsf.extend.base.c.a() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.9
-            @Override // com.tsf.extend.base.c.a
+        final com.tsf.extend.base.c.ProgressCallback aVar = new com.tsf.extend.base.c.ProgressCallback() { // from class: com.tsf.extend.theme.cmclub.ThemeCmClubActivity.9
+            @Override // com.tsf.extend.base.c.ProgressCallback
             public void a(int i) {
                 if (ThemeCmClubActivity.this.A != null) {
                     ThemeCmClubActivity.this.A.cancel();
@@ -517,7 +517,7 @@ public class ThemeCmClubActivity extends CustomActivity {
         }, d);
     }
 
-    public boolean a(String str, boolean z, com.tsf.extend.base.c.a aVar) throws Throwable {
+    public boolean a(String str, boolean z, com.tsf.extend.base.c.ProgressCallback aVar) throws Throwable {
         JSONObject jSONObject = new JSONObject();
         try {
             jSONObject.put("PACKAGE_NAME", str);

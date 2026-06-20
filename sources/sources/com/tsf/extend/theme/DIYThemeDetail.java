@@ -490,7 +490,7 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean a(String str, String str2) {
-        return com.tsf.extend.base.c.a(str2, str, null) == 0;
+        return com.tsf.extend.base.c.ProgressCallback(str2, str, null) == 0;
     }
 
     private void a(final aq aqVar) {
@@ -820,8 +820,8 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Type inference failed for: r1v1, types: [com.tsf.extend.theme.DIYThemeDetail$8] */
     public void t() {
-        final com.tsf.extend.base.c.a aVar = new com.tsf.extend.base.c.a() { // from class: com.tsf.extend.theme.DIYThemeDetail.6
-            @Override // com.tsf.extend.base.c.a
+        final com.tsf.extend.base.c.ProgressCallback aVar = new com.tsf.extend.base.c.ProgressCallback() { // from class: com.tsf.extend.theme.DIYThemeDetail.6
+            @Override // com.tsf.extend.base.c.ProgressCallback
             public void a(int i) {
                 if (DIYThemeDetail.this.t != null) {
                     DIYThemeDetail.this.t.cancel();
