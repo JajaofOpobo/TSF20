@@ -77,7 +77,7 @@ public class ThemePullService extends IntentService {
 
     private void a(String str, long j, boolean z, boolean z2) {
         if (p.d(getApplicationContext())) {
-            d(new com.tsf.extend.theme.pull.a(str, j, z, z2).d());
+            d(new PushApiRequest(str, j, z, z2).d());
         }
     }
 
@@ -127,11 +127,11 @@ public class ThemePullService extends IntentService {
         if (str == null) {
             str = "";
         }
-        return str.equals(com.tsf.extend.theme.pull.b.b(getApplicationContext()));
+        return str.equals(PushUtils.b(getApplicationContext()));
     }
 
     private boolean g(String str) {
-        if (Integer.valueOf(str).intValue() > Integer.valueOf(com.tsf.extend.theme.pull.b.a(getApplicationContext())).intValue()) {
+        if (Integer.valueOf(str).intValue() > Integer.valueOf(PushUtils.a(getApplicationContext())).intValue()) {
             return true;
         }
         return false;
@@ -152,7 +152,7 @@ public class ThemePullService extends IntentService {
                 public void a(Bitmap bitmap) {
                     if (bitmap == null) {
                         ThemePullService.this.a(ThemePullService.this.d.d, ThemePullService.this.d.e, false, "1");
-                    } else if (com.tsf.extend.theme.pull.b.c()) {
+                    } else if (PushUtils.c()) {
                         ThemePullService.this.a(bitmap);
                     } else {
                         ThemePullService.this.a(bitmap, (Bitmap) null);
@@ -224,7 +224,7 @@ public class ThemePullService extends IntentService {
                     notificationManager.createNotificationChannel(notificationChannel);
                 }
             }
-            if (com.tsf.extend.theme.pull.b.c() && bitmap2 != null) {
+            if (PushUtils.c() && bitmap2 != null) {
                 gVar.setContentTitle(this.d.f);
                 gVar.setContentText(this.d.g);
                 Notification.BigPictureStyle bigPictureStyle = new Notification.BigPictureStyle();
@@ -244,11 +244,11 @@ public class ThemePullService extends IntentService {
             }
             notificationBuild.defaults |= -1;
             notificationManager.notify(iA, notificationBuild);
-            com.tsf.extend.theme.pull.b.a(getApplicationContext(), System.currentTimeMillis());
+            PushUtils.a(getApplicationContext(), System.currentTimeMillis());
             if (!a(this.d.d) && !b(this.d.d)) {
-                com.tsf.extend.theme.pull.b.a(getApplicationContext(), this.d.d);
+                PushUtils.a(getApplicationContext(), this.d.d);
             }
-            com.tsf.extend.theme.pull.b.b(getApplicationContext(), this.d.e);
+            PushUtils.b(getApplicationContext(), this.d.e);
             a(this.d.d, this.d.e, true, (String) null);
         }
     }
@@ -317,10 +317,10 @@ public class ThemePullService extends IntentService {
         public void a() {
             if (ThemePullService.c != null) {
                 if (TextUtils.isEmpty(this.f) || TextUtils.isEmpty(this.g)) {
-                    int iC = com.tsf.extend.theme.pull.b.c(ThemePullService.c);
+                    int iC = PushUtils.c(ThemePullService.c);
                     this.f = ThemePullService.c.getResources().getString(k[iC % k.length]);
                     this.g = ThemePullService.c.getResources().getString(l[iC % l.length]);
-                    com.tsf.extend.theme.pull.b.a(ThemePullService.c, (iC + 1) % k.length);
+                    PushUtils.a(ThemePullService.c, (iC + 1) % k.length);
                 }
             }
         }

@@ -4,8 +4,8 @@ import android.text.TextUtils;
 import com.tsf.extend.theme.ai;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class a extends com.tsf.extend.base.a.b {
-    public a(String str, long j, boolean z, boolean z2) {
+public class PushApiRequest extends com.tsf.extend.base.a.b {
+    public PushApiRequest(String str, long j, boolean z, boolean z2) {
         e();
         b("5.0");
         a("1");
@@ -24,7 +24,7 @@ public class a extends com.tsf.extend.base.a.b {
     }
 
     protected void e() {
-        a("vga", b.a());
+        a("vga", PushUtils.a());
     }
 
     protected void b(String str) {
@@ -32,7 +32,7 @@ public class a extends com.tsf.extend.base.a.b {
     }
 
     protected void f() {
-        a("time", b.b());
+        a("time", PushUtils.b());
     }
 
     protected void a(String str, long j, boolean z, boolean z2) {

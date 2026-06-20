@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class b {
+public class PushUtils {
     public static String a() {
         return String.valueOf(p.b()) + "x" + String.valueOf(p.c());
     }
