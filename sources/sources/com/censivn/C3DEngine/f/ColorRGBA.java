@@ -4,7 +4,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.nio.FloatBuffer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class c extends a {
+public class ColorRGBA extends AbstractShaderBase {
     private short c;
     private short d;
     private short e;

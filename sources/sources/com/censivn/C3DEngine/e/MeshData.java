@@ -76,10 +76,10 @@ public class MeshData {
                 i3 = i4 + 1;
             }
             if (faceGroup.e == 3) {
-                iVar.faces().add(new com.censivn.C3DEngine.f.d(i2, i2 + 1, i2 + 2));
+                iVar.faces().add(new com.censivn.C3DEngine.f.Vertex3s(i2, i2 + 1, i2 + 2));
             } else if (faceGroup.e == 4) {
-                iVar.faces().add(new com.censivn.C3DEngine.f.d(i2, i2 + 1, i2 + 3));
-                iVar.faces().add(new com.censivn.C3DEngine.f.d(i2 + 1, i2 + 2, i2 + 3));
+                iVar.faces().add(new com.censivn.C3DEngine.f.Vertex3s(i2, i2 + 1, i2 + 3));
+                iVar.faces().add(new com.censivn.C3DEngine.f.Vertex3s(i2 + 1, i2 + 2, i2 + 3));
             }
             i++;
             i2 += faceGroup.e;

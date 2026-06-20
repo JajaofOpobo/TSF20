@@ -1,6 +1,6 @@
 package com.censivn.C3DEngine.api.element;
 
-import com.censivn.C3DEngine.f.d;
+import com.censivn.C3DEngine.f.Vertex3s;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;
@@ -40,16 +40,16 @@ public class FacesBufferedList {
         this.mBuffer.clear();
     }
 
-    public d get(int i) {
+    public Vertex3s get(int i) {
         this.mBuffer.position(i * 3);
-        return new d(this.mBuffer.get(), this.mBuffer.get(), this.mBuffer.get());
+        return new Vertex3s(this.mBuffer.get(), this.mBuffer.get(), this.mBuffer.get());
     }
 
-    public void putInFace(int i, d dVar) {
+    public void putInFace(int i, Vertex3s vertex3s) {
         this.mBuffer.position(i * 3);
-        dVar.a = this.mBuffer.get();
-        dVar.b = this.mBuffer.get();
-        dVar.c = this.mBuffer.get();
+        vertex3s.a = this.mBuffer.get();
+        vertex3s.b = this.mBuffer.get();
+        vertex3s.c = this.mBuffer.get();
     }
 
     public short getPropertyA(int i) {
@@ -83,8 +83,8 @@ public class FacesBufferedList {
         return this.mRenderSubsetLength;
     }
 
-    public void add(d dVar) {
-        set(this.mNumElements, dVar);
+    public void add(Vertex3s vertex3s) {
+        set(this.mNumElements, vertex3s);
         this.mNumElements++;
     }
 
@@ -97,11 +97,11 @@ public class FacesBufferedList {
         this.mNumElements++;
     }
 
-    public void set(int i, d dVar) {
+    public void set(int i, Vertex3s vertex3s) {
         this.mBuffer.position(i * 3);
-        this.mBuffer.put(dVar.a);
-        this.mBuffer.put(dVar.b);
-        this.mBuffer.put(dVar.c);
+        this.mBuffer.put(vertex3s.a);
+        this.mBuffer.put(vertex3s.b);
+        this.mBuffer.put(vertex3s.c);
     }
 
     public void set(int i, short s, short s2, short s3) {

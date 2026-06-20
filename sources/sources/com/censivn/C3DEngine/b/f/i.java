@@ -91,11 +91,11 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
     private float mPointSize;
     private boolean mPointSmoothing;
     private PositionNumber3d mPosition;
-    private com.censivn.C3DEngine.f.e mRenderType;
+    private com.censivn.C3DEngine.f.DrawMode mRenderType;
     private int mRendererPriorityLevel;
     private Number3d mRotation;
     private Number3d mScale;
-    private com.censivn.C3DEngine.f.f mShadeModel;
+    private com.censivn.C3DEngine.f.ShadingModel mShadeModel;
     private Object mTag;
     private HashMap<Object, Object> mTags;
     private int mTexCoordsBufferIndex;
@@ -125,7 +125,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.AABB_P2 = new a();
         this.AABB_P3 = new a();
         this.AABB_P4 = new a();
-        this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
+        this.mRenderType = com.censivn.C3DEngine.f.DrawMode.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
         this.mMouseSkip = false;
@@ -141,7 +141,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.mPosition = new PositionNumber3d(0.0f, 0.0f, 0.0f);
         this.mRotation = new Number3d(0.0f, 0.0f, 0.0f);
         this.mScale = new Number3d(1.0f, 1.0f, 1.0f);
-        this.mShadeModel = com.censivn.C3DEngine.f.f.SMOOTH;
+        this.mShadeModel = com.censivn.C3DEngine.f.ShadingModel.SMOOTH;
         this.mPointSize = 3.0f;
         this.mPointSmoothing = true;
         this.mLineWidth = 1.0f;
@@ -181,7 +181,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.AABB_P2 = new a();
         this.AABB_P3 = new a();
         this.AABB_P4 = new a();
-        this.mRenderType = com.censivn.C3DEngine.f.e.TRIANGLES;
+        this.mRenderType = com.censivn.C3DEngine.f.DrawMode.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
         this.mMouseSkip = false;
@@ -197,7 +197,7 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         this.mPosition = new PositionNumber3d(0.0f, 0.0f, 0.0f);
         this.mRotation = new Number3d(0.0f, 0.0f, 0.0f);
         this.mScale = new Number3d(1.0f, 1.0f, 1.0f);
-        this.mShadeModel = com.censivn.C3DEngine.f.f.SMOOTH;
+        this.mShadeModel = com.censivn.C3DEngine.f.ShadingModel.SMOOTH;
         this.mPointSize = 3.0f;
         this.mPointSmoothing = true;
         this.mLineWidth = 1.0f;
@@ -431,20 +431,20 @@ public class i implements com.censivn.C3DEngine.b.g._b.a {
         invalidate();
     }
 
-    public com.censivn.C3DEngine.f.e renderType() {
+    public com.censivn.C3DEngine.f.DrawMode renderType() {
         return this.mRenderType;
     }
 
-    public void renderType(com.censivn.C3DEngine.f.e eVar) {
+    public void renderType(com.censivn.C3DEngine.f.DrawMode eVar) {
         this.mRenderType = eVar;
         invalidate();
     }
 
-    public com.censivn.C3DEngine.f.f shadeModel() {
+    public com.censivn.C3DEngine.f.ShadingModel shadeModel() {
         return this.mShadeModel;
     }
 
-    public void shadeModel(com.censivn.C3DEngine.f.f fVar) {
+    public void shadeModel(com.censivn.C3DEngine.f.ShadingModel fVar) {
         this.mShadeModel = fVar;
         invalidate();
     }

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class d {
+public class Vertex3s {
     public short a;
     public short b;
     public short c;

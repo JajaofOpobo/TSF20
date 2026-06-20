@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a {
-    private com.censivn.C3DEngine.f.b b;
-    private com.censivn.C3DEngine.f.c c;
+    private com.censivn.C3DEngine.f.Normal3f b;
+    private com.censivn.C3DEngine.f.ColorRGBA c;
     private boolean d;
     private ArrayList<i> a = new ArrayList<>();
     private Color4 e = new Color4(255, 255, 255, 255);
@@ -20,8 +20,8 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a
     public void a() {
         a(this);
         this.a = new ArrayList<>();
-        this.b = new com.censivn.C3DEngine.f.b();
-        this.c = new com.censivn.C3DEngine.f.c(0, 0, 0, 255, this);
+        this.b = new com.censivn.C3DEngine.f.Normal3f();
+        this.c = new com.censivn.C3DEngine.f.ColorRGBA(0, 0, 0, 255, this);
     }
 
     @Override // com.censivn.C3DEngine.b.f.f
@@ -57,7 +57,7 @@ public class g implements com.censivn.C3DEngine.b.f.f, com.censivn.C3DEngine.d.a
         return this.a.size();
     }
 
-    public com.censivn.C3DEngine.f.b b() {
+    public com.censivn.C3DEngine.f.Normal3f b() {
         return this.b;
     }
 

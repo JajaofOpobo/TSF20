@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public enum e {
+public enum DrawMode {
     POINTS(0),
     LINES(1),
     LINE_LOOP(2),
