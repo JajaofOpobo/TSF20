@@ -31,7 +31,7 @@ public class AlarmSettingTheme {
 
     public static e a(Context context) {
         if (m == null) {
-            m = new e(context);
+            m = new AlarmSettingTheme(context);
         }
         return m;
     }

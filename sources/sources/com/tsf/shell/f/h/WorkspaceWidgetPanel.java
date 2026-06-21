@@ -48,7 +48,7 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
         this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                f.this.r();
+                WorkspaceWidgetPanel.this.r();
             }
         });
         this.d = new com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a() { // from class: com.tsf.shell.f.h.WorkspaceWidgetPanel.2
@@ -60,8 +60,8 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
             @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a
             public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
                 bVar.K().onUpdateContainer(-2);
-                f.this.a(bVar);
-                f.this.e(bVar);
+                WorkspaceWidgetPanel.this.a(bVar);
+                WorkspaceWidgetPanel.this.e(bVar);
             }
 
             @Override // com.tsf.shell.manager.r.b.com.tsf.shell.manager.r.b.WidgetMenuPanel.C0144a
@@ -74,33 +74,33 @@ public class WorkspaceWidgetPanel extends com.censivn.C3DEngine.b.h.e.DockRender
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
-                f.this.r();
+                WorkspaceWidgetPanel.this.r();
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
-                if (f.this.g) {
-                    f.this.a();
+                if (WorkspaceWidgetPanel.this.g) {
+                    WorkspaceWidgetPanel.this.a();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                this.b = f.this.a(motionEvent);
-                if (this.b != f.this.b && this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
+                this.b = WorkspaceWidgetPanel.this.a(motionEvent);
+                if (this.b != WorkspaceWidgetPanel.this.b && this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                     ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.b).aQ();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (this.b == f.this.b) {
-                    f.this.r();
+                if (this.b == WorkspaceWidgetPanel.this.b) {
+                    WorkspaceWidgetPanel.this.r();
                     return;
                 }
                 if (this.b != null && (this.b instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                     com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.b;
-                    if (f.this.g) {
+                    if (WorkspaceWidgetPanel.this.g) {
                         g.a(bVar, (Runnable) null);
                     } else {
                         bVar.l();

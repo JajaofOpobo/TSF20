@@ -39,16 +39,16 @@ public class ShellBindContext {
         d = c.b();
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.android.launcher.action.INSTALL_SHORTCUT");
-        a.registerReceiver(InstallShortcutReceiver.a(), intentFilter);
+        ShellBindContext.registerReceiver(InstallShortcutReceiver.a(), intentFilter);
         IntentFilter intentFilter2 = new IntentFilter();
         intentFilter2.addAction("com.tsf.shell.plugin.patch.homepress");
         intentFilter2.addAction("com.seal.plugin.services.toggle.start.service");
         intentFilter2.addAction("com.tsf.shell.theme.action.thirdparty.apply");
-        a.registerReceiver(ShellBroadcastReceiver.a(), intentFilter2);
+        ShellBindContext.registerReceiver(ShellBroadcastReceiver.a(), intentFilter2);
     }
 
     public void d() {
-        a.unregisterReceiver(c);
-        a.getContentResolver();
+        ShellBindContext.unregisterReceiver(c);
+        ShellBindContext.getContentResolver();
     }
 }

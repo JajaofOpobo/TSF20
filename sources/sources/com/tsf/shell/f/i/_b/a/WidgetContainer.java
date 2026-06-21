@@ -144,12 +144,12 @@ public class WidgetContainer extends BaseRenderable {
         this.e.addChild(this.i);
         this.e.setAnimationObjectState(true);
         this.e.setHighPriorityAnimationObjectState(false);
-        ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> arrayListB = this.k.b();
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = arrayListB.get(this.m);
+        ArrayList<com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint> arrayListB = this.k.b();
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = arrayListB.get(this.m);
         bVar.d = false;
         bVar.f = false;
         bVar.e = false;
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2 = arrayListB.get(this.n);
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2 = arrayListB.get(this.n);
         bVar2.d = false;
         bVar2.f = false;
         bVar2.e = false;

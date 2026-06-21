@@ -158,7 +158,7 @@ public class SystemWidgetProviderBrowser extends com.tsf.shell.manager.r.b.b.Sli
                 return aVar;
             }
         }
-        a aVar2 = new a(str);
+        a aVar2 = new WidgetProviderInfoBar(str);
         aVar2.a = (String) this.e.getApplicationLabel(applicationInfo);
         aVar2.e = applicationInfo;
         this.h.add(aVar2);

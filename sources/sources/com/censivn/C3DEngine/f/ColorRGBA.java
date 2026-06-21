@@ -11,7 +11,7 @@ public class ColorRGBA extends AbstractShaderBase {
     private short f;
     private FloatBuffer g;
 
-    public c(int i, int i2, int i3, int i4, com.censivn.C3DEngine.d.AnimationCallback aVar) {
+    public ColorRGBA(int i, int i2, int i3, int i4, com.censivn.C3DEngine.d.AnimationCallback aVar) {
         super(aVar);
         this.c = (short) i;
         this.d = (short) i2;

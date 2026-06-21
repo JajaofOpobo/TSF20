@@ -28,8 +28,8 @@ public class SceneNodeAnimator extends BaseRenderable {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (b.this.c != null) {
-                    com.tsf.shell.manager.app.ServiceFactory.a().v().a(b.this);
+                if (SceneNodeAnimator.this.c != null) {
+                    com.tsf.shell.manager.app.ServiceFactory.a().v().a(SceneNodeAnimator.this);
                 }
             }
         });
@@ -62,7 +62,7 @@ public class SceneNodeAnimator extends BaseRenderable {
                 com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        b.this.e();
+                        SceneNodeAnimator.this.e();
                     }
                 });
             }
@@ -77,7 +77,7 @@ public class SceneNodeAnimator extends BaseRenderable {
                 Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.h.a.a.SceneNodeAnimator.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        b.this.i();
+                        SceneNodeAnimator.this.i();
                     }
                 };
                 if (com.censivn.C3DEngine.a.e.l()) {

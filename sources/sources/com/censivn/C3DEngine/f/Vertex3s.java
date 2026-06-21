@@ -6,13 +6,13 @@ public class Vertex3s {
     public short b;
     public short c;
 
-    public d(short s, short s2, short s3) {
+    public Vertex3s(short s, short s2, short s3) {
         this.a = s;
         this.b = s2;
         this.c = s3;
     }
 
-    public d(int i, int i2, int i3) {
+    public Vertex3s(int i, int i2, int i3) {
         this.a = (short) i;
         this.b = (short) i2;
         this.c = (short) i3;

@@ -23,11 +23,11 @@ public class ThemeLoadingDialog extends Dialog {
     private LinearLayout b;
     private TextView c;
 
-    public o(Context context) {
+    public ThemeLoadingDialog(Context context) {
         this(context, ResourceIds.h.SmartDialogStyle);
     }
 
-    public o(Context context, int i) {
+    public ThemeLoadingDialog(Context context, int i) {
         super(context, i);
         WindowManager.LayoutParams attributes = getWindow().getAttributes();
         attributes.dimAmount = 0.6f;

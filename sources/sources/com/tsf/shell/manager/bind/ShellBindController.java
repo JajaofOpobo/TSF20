@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellBindController {
-    public static d a = new d();
-    public static d b = new d();
+    public static d a = new ShellBindStub();
+    public static d b = new ShellBindStub();
     private c c;
 
     public static void a(final ItemInfo itemInfo, final boolean z) {
@@ -66,7 +66,7 @@ public class ShellBindController {
 
     public static void a(final ArrayList<ItemInfo> arrayList, final Runnable runnable) {
         if (arrayList.size() > 0) {
-            final a.AbstractC0146a abstractC0146a = new a.AbstractC0146a() { // from class: com.tsf.shell.manager.bind.ShellBindController.3
+            final ShellBindContext.AbstractC0146a abstractC0146a = new ShellBindContext.AbstractC0146a() { // from class: com.tsf.shell.manager.bind.ShellBindController.3
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
                 public void a(com.tsf.shell.f.i.PageItem bVar, g gVar) {
                     b.a((ArrayList<ItemInfo>) arrayList, runnable);
@@ -99,7 +99,7 @@ public class ShellBindController {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.5.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        b.this.c.a(launcherAppWidgetInfo);
+                        ShellBindController.this.c.a(launcherAppWidgetInfo);
                     }
                 });
             }
@@ -126,7 +126,7 @@ public class ShellBindController {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.6
             @Override // java.lang.Runnable
             public void run() {
-                b.this.c.a(arrayList, arrayList2);
+                ShellBindController.this.c.a(arrayList, arrayList2);
             }
         });
     }
@@ -135,7 +135,7 @@ public class ShellBindController {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.7
             @Override // java.lang.Runnable
             public void run() {
-                b.this.c.c(arrayList, str);
+                ShellBindController.this.c.c(arrayList, str);
             }
         });
     }
@@ -144,7 +144,7 @@ public class ShellBindController {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.8
             @Override // java.lang.Runnable
             public void run() {
-                b.this.c.b(arrayList, str);
+                ShellBindController.this.c.b(arrayList, str);
             }
         });
     }
@@ -153,7 +153,7 @@ public class ShellBindController {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.9
             @Override // java.lang.Runnable
             public void run() {
-                b.this.c.a(arrayList, str);
+                ShellBindController.this.c.a(arrayList, str);
             }
         });
     }

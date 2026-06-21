@@ -4,7 +4,7 @@ package com.censivn.C3DEngine.b.g.a;
 public class RenderableTween extends AbstractTween {
     public static Object a;
     private com.censivn.C3DEngine.b.g.TweenParams c;
-    private com.censivn.C3DEngine.b.f.a.SpriteItemData d;
+    private com.censivn.C3DEngine.b.f.sprite.SpriteItemData d;
     private int e;
     private long f;
     private long g;
@@ -20,7 +20,7 @@ public class RenderableTween extends AbstractTween {
     private float q;
     private float r;
 
-    public a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
+    public RenderableTween(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
         dVar.a(bVar);
         bVar.setTweenChild(this);
         this.d = bVar;

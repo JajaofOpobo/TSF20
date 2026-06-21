@@ -22,7 +22,7 @@ public class AppClassifier {
         }
     }
 
-    public static class A implements d.InterfaceC0151d {
+    public static class A implements AppClassifier.InterfaceC0151d {
         @Override // com.tsf.shell.plugin.classification.ClassificationManager.InterfaceC0151d
         public void a(d.a aVar) {
         }

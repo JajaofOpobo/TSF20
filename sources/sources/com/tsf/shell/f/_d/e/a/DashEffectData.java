@@ -31,11 +31,11 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
     }
 
     @Override // com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void b(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, Runnable runnable) {
         d dVar;
         d dVar2;
         d dVar3 = null;
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = aVar.a((int) (Math.random() * ((double) aVar.a())));
         int i = 0;
         while (true) {
             int i2 = i;
@@ -43,7 +43,7 @@ public abstract class DashEffectData implements A.InterfaceC0090a {
             if (i2 >= aVar.a()) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = aVar.a(i2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = aVar.a(i2);
             dVar3 = new d();
             if (!b()) {
                 dVar2 = dVar;

@@ -63,7 +63,7 @@ public class AlarmComponentContainer extends VRectangle implements j.a {
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onSingleTapUp(MotionEvent motionEvent) {
             i.c("APMToggle  onSingleTapUp");
-            a.this.c();
+            AlarmComponentContainer.this.c();
         }
     }
 

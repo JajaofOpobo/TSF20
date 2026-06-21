@@ -17,22 +17,22 @@ public class GestureMenuEffectItem extends GestureMenuBlankItem {
     public GestureMenuEffectItem(b bVar) {
         super(GestureMenuOverlay.i.menu_effect_clicking);
         this.a = bVar;
-        GestureMenuBlankItem.C0095a.C0096a c0096a = new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuEffectItem.1
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a c0096a = new GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuEffectItem.1
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.app.v.AnimationHelper.b();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void b() {
                 com.tsf.shell.manager.app.v.AnimationHelper.a(true);
-                e.this.b.d();
+                GestureMenuEffectItem.this.b.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void c() {
                 com.tsf.shell.manager.app.v.AnimationHelper.a(false);
-                e.this.b.d();
+                GestureMenuEffectItem.this.b.d();
             }
         };
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();
@@ -66,9 +66,9 @@ public class GestureMenuEffectItem extends GestureMenuBlankItem {
                 w.b();
                 com.tsf.shell.manager.app.v.AnimationHelper.a(aVarA);
                 if (aVarA.b()) {
-                    e.this.a.a().a(aVarA);
+                    GestureMenuEffectItem.this.a.a().a(aVarA);
                 }
-                e.this.b.d();
+                GestureMenuEffectItem.this.b.d();
             }
         });
     }

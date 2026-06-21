@@ -109,8 +109,8 @@ public class ShellModel extends BroadcastReceiver {
     public void a(Home home) {
         synchronized (f) {
             this.o.a(home);
-            this.c = new b(home);
-            b.post(this.c);
+            this.c = new ShellBindController(home);
+            ShellBindController.post(this.c);
         }
     }
 
@@ -118,7 +118,7 @@ public class ShellModel extends BroadcastReceiver {
         if (q.getThreadId() == Process.myTid()) {
             runnable.run();
         } else {
-            b.post(runnable);
+            ShellBindController.post(runnable);
         }
     }
 
@@ -454,10 +454,10 @@ public class ShellModel extends BroadcastReceiver {
                             synchronized (ShellModel.f) {
                                 Process.setThreadPriority(10);
                             }
-                            b.this.c();
-                            b.this.b = null;
+                            ShellBindController.this.c();
+                            ShellBindController.this.b = null;
                             synchronized (ShellModel.f) {
-                                if (ShellModel.this.c == b.this) {
+                                if (ShellModel.this.c == ShellBindController.this) {
                                     ShellModel.this.c = null;
                                 }
                             }
@@ -492,7 +492,7 @@ public class ShellModel extends BroadcastReceiver {
         private d b() {
             boolean z;
             LauncherAppWidgetInfo launcherAppWidgetInfo;
-            d dVar = ShellModel.this.new d();
+            d dVar = ShellModel.this.new ShellBindStub();
             Context context = this.b;
             ContentResolver contentResolver = context.getContentResolver();
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);

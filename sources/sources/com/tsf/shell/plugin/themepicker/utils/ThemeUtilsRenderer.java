@@ -214,7 +214,7 @@ public class ThemeUtilsRenderer {
                                     com.tsf.shell.plugin.themepicker.ThemePickerEvent.c("ImageCache", "addBitmapToCache - " + iOException);
                                     if (C != 0) {
                                         try {
-                                            C.close();
+                                            ThemeUtilsRenderer.close();
                                         } catch (IOException e2) {
                                         }
                                     }
@@ -224,7 +224,7 @@ public class ThemeUtilsRenderer {
                                     com.tsf.shell.plugin.themepicker.ThemePickerEvent.c("ImageCache", "addBitmapToCache - " + exc);
                                     if (C != 0) {
                                         try {
-                                            C.close();
+                                            ThemeUtilsRenderer.close();
                                         } catch (IOException e4) {
                                         }
                                     }
@@ -233,7 +233,7 @@ public class ThemeUtilsRenderer {
                                     th = th2;
                                     if (C != 0) {
                                         try {
-                                            C.close();
+                                            ThemeUtilsRenderer.close();
                                         } catch (IOException e5) {
                                         }
                                     }

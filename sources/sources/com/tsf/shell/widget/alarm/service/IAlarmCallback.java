@@ -20,7 +20,7 @@ public interface IAlarmCallback extends IInterface {
 
     void b(com.tsf.shell.widget.alarm.service.IAlarmService aVar);
 
-    public static abstract class a extends Binder implements b {
+    public static abstract class a extends Binder implements IAlarmCallback {
         public a() {
             attachInterface(this, "com.tsf.shell.widget.alarm.service.AlarmInterface");
         }
@@ -83,7 +83,7 @@ public interface IAlarmCallback extends IInterface {
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.widget.alarm.service.IAlarmCallback$a$a, reason: collision with other inner class name */
-        private static class C0179a implements b {
+        private static class C0179a implements IAlarmCallback {
             private IBinder a;
 
             C0179a(IBinder iBinder) {

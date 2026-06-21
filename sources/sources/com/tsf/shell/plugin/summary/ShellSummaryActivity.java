@@ -45,7 +45,7 @@ public class ShellSummaryActivity extends Activity implements MediaPlayer.OnPrep
             window.addFlags(ItemInfo.APP_VERSION_NAME);
         }
         setRequestedOrientation(1);
-        setContentView(SummaryManager.C0153c.activity_main_shell_summary);
+        setContentView(SummaryManager.C0153SummaryManager.activity_main_shell_summary);
         try {
             int iA = a();
             if (iA != 0 && a(this)) {

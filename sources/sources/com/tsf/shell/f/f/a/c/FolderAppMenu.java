@@ -69,7 +69,7 @@ public class FolderAppMenu extends FolderPageItemBase {
         this.g.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.f.f.a.c.FolderAppMenu.1
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
-                return d.this.h.i();
+                return FolderAppMenu.this.h.i();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
@@ -81,7 +81,7 @@ public class FolderAppMenu extends FolderPageItemBase {
                 } else {
                     hVar = iVar;
                 }
-                com.tsf.shell.f.f.a.b.DrawerTransitionBase kVarA = d.this.h.a(FolderPageItemBase);
+                com.tsf.shell.f.f.a.b.DrawerTransitionBase kVarA = FolderAppMenu.this.h.a(FolderPageItemBase);
                 com.tsf.shell.f.g.a.GestureMenuRenderer hVar2 = (com.tsf.shell.f.g.a.GestureMenuRenderer) hVar;
                 if (kVarA.i()) {
                     hVar2.g();
@@ -98,30 +98,30 @@ public class FolderAppMenu extends FolderPageItemBase {
             public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, int i, MotionEvent motionEvent) {
                 w.b();
                 if (!com.tsf.shell.manager.app.StateHub.t().an().c()) {
-                    d.this.a.d(FolderPageItemBase);
+                    FolderAppMenu.this.a.d(FolderPageItemBase);
                     w.b();
                 }
-                d.this.g.d();
+                FolderAppMenu.this.g.d();
             }
         });
         addChild(this.g);
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(FolderWidgetTouchHandler.d.effect_setting_desktop_menu_random, x.c(FolderWidgetTouchHandler.i.text_random), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.f.f.a.c.FolderAppMenu.3
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        arrayList.add(new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(FolderWidgetTouchHandler.d.effect_setting_desktop_menu_random, x.c(FolderWidgetTouchHandler.i.text_random), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095DrawerShortcutTouchHandler.C0096a() { // from class: com.tsf.shell.f.f.a.c.FolderAppMenu.3
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095DrawerShortcutTouchHandler.C0096a
             public boolean a() {
-                return d.this.h.g();
+                return FolderAppMenu.this.h.g();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095DrawerShortcutTouchHandler.C0096a
             public void b() {
-                d.this.h.a(true);
-                d.this.g.d();
+                FolderAppMenu.this.h.a(true);
+                FolderAppMenu.this.g.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095DrawerShortcutTouchHandler.C0096a
             public void c() {
-                d.this.h.a(false);
-                d.this.g.d();
+                FolderAppMenu.this.h.a(false);
+                FolderAppMenu.this.g.d();
             }
         }));
         a(arrayList);

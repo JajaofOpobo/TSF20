@@ -32,8 +32,8 @@ public class WidgetVisualState extends i {
         this.b.a(new WidgetVisualNode.C0027a() { // from class: com.tsf.shell.widget.a.a.WidgetVisualState.1
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                b.this.c.c.a = z;
-                b.this.c.a(z);
+                WidgetVisualState.this.c.c.a = z;
+                WidgetVisualState.this.c.a(z);
                 return true;
             }
         });
@@ -44,8 +44,8 @@ public class WidgetVisualState extends i {
         cVar.a(new WidgetVisualRenderer.InterfaceC0171c() { // from class: com.tsf.shell.widget.a.a.WidgetVisualState.2
             @Override // com.tsf.shell.widget.a.a.WidgetVisualRenderer.InterfaceC0171c
             public boolean a(int i) {
-                b.this.c.c.b = i;
-                b.this.c.a(i);
+                WidgetVisualState.this.c.c.b = i;
+                WidgetVisualState.this.c.a(i);
                 return false;
             }
         });

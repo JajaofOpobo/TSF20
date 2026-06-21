@@ -66,7 +66,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
         public C0181b(VObject3d vObject3d) {
             super(vObject3d);
             this.a = new Number3d(0.0f, 0.0f, 0.0f);
-            this.c = 416.0f * b.this.l.p;
+            this.c = 416.0f * CubeClockThemedFace.this.l.p;
             this.d = this.c / 2.0f;
         }
 
@@ -77,9 +77,9 @@ public class CubeClockThemedFace extends VObject3dContainer {
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-            b.this.j = a(a(motionEvent2).x);
-            b.this.a((int) Math.floor(b.this.j));
-            b.this.invalidate();
+            CubeClockThemedFace.this.j = a(a(motionEvent2).x);
+            CubeClockThemedFace.this.a((int) Math.floor(CubeClockThemedFace.this.j));
+            CubeClockThemedFace.this.invalidate();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
@@ -88,14 +88,14 @@ public class CubeClockThemedFace extends VObject3dContainer {
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onSingleTapUp(MotionEvent motionEvent) {
-            b.this.j = a(a(motionEvent).x);
-            b.this.a((int) Math.floor(b.this.j));
-            b.this.invalidate();
+            CubeClockThemedFace.this.j = a(a(motionEvent).x);
+            CubeClockThemedFace.this.a((int) Math.floor(CubeClockThemedFace.this.j));
+            CubeClockThemedFace.this.invalidate();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onUp(MotionEvent motionEvent) {
-            b.this.j = -5.0f;
+            CubeClockThemedFace.this.j = -5.0f;
         }
 
         private Number3d a(MotionEvent motionEvent) {
@@ -103,7 +103,7 @@ public class CubeClockThemedFace extends VObject3dContainer {
             this.a.x = motionEvent.getX() - (VInformation.getScreenWidth() / 2.0f);
             this.a.y = 0.0f - (motionEvent.getY() - (screenHeight / 2.0f));
             this.a.z = 0.0f;
-            return b.this.globalToLocal(this.a);
+            return CubeClockThemedFace.this.globalToLocal(this.a);
         }
 
         private float a(float f) {

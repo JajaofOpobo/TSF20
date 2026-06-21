@@ -25,7 +25,7 @@ public class PreferenceItemG extends i {
             @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.tsf.shell.manager.app.FolderManager.a(1800);
-                g.this.e();
+                PreferenceItemG.this.e();
             }
         });
         b(jVar);
@@ -64,7 +64,7 @@ public class PreferenceItemG extends i {
         jVar4.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemG.4
             @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
-                g.this.e();
+                PreferenceItemG.this.e();
                 com.tsf.shell.manager.app.FolderManager.a(ACRAConstants.DEFAULT_SOCKET_TIMEOUT);
             }
         });

@@ -20,7 +20,7 @@ public class DrawerItemEditAction extends DrawerItemBase {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    f.this.k();
+                    DrawerItemEditAction.this.k();
                 }
             });
         }
@@ -47,9 +47,9 @@ public class DrawerItemEditAction extends DrawerItemBase {
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemEditAction.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) f.this.K();
+                    LauncherShortcut3DInfo launcherShortcut3DInfo = (LauncherShortcut3DInfo) DrawerItemEditAction.this.K();
                     try {
-                        f fVar = f.this;
+                        f fVar = DrawerItemEditAction.this;
                         float[] fArrA = x.a(fVar.position().x, fVar.position().y);
                         launcherShortcut3DInfo.intent.setSourceBounds(new Rect((int) (fArrA[0] + fVar.minX()), (int) (fArrA[1] + fVar.minY()), (int) (fArrA[0] + fVar.maxX()), (int) (fVar.maxY() + fArrA[1])));
                         Home.b().a(launcherShortcut3DInfo.intent, (Object) null);

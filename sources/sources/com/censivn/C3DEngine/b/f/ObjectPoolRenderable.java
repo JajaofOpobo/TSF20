@@ -12,9 +12,9 @@ public class ObjectPoolRenderable extends BaseRenderable {
     private Number3d d = new Number3d();
     private Number3d e = new Number3d();
 
-    public B() {
+    public ObjectPoolRenderable() {
         if (a == null) {
-            a = new com.tsf.shell.f.e.D<Number3d>() { // from class: com.censivn.C3DEngine.b.f.b.1
+            a = new com.tsf.shell.f.e.D<Number3d>() { // from class: com.censivn.C3DEngine.b.f.ninepatch.1
                 @Override // com.tsf.shell.f.e.D
                 /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                 public Number3d b() {

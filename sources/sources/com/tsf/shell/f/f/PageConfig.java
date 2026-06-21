@@ -7,7 +7,7 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageConfig {
-    public static com.censivn.C3DEngine.b.f.b.NinePatchRenderable a;
+    public static com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable a;
     private static TransitionConfig.a g;
     private static TextureElement d = null;
     private static boolean e = true;
@@ -18,11 +18,11 @@ public class PageConfig {
     public static void a() {
         e = com.tsf.shell.manager.b.ConfigManager.y();
         TextureElement textureElementB = b();
-        a = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1.0f, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
+        a = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1.0f, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(c, b - c, c, b - c, textureElementB.width, textureElementB.height));
         a.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         a.c(com.censivn.C3DEngine.b.b.ScreenConstants.B);
-        a.textures().addElement(textureElementB);
-        g = new A();
+        PageShaderNode.textures().addElement(textureElementB);
+        g = new PageShaderNode();
         com.tsf.shell.manager.app.ObserverManager.a(g);
     }
 

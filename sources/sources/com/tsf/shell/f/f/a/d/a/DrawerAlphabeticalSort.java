@@ -38,15 +38,15 @@ public class DrawerAlphabeticalSort extends DrawerSortBase {
                 if (launcherShortcutAppInfo.clickCount > launcherShortcutAppInfo2.clickCount) {
                     return -1;
                 }
-                return a.this.e.compare(bVar.r(), bVar2.r());
+                return DrawerAlphabeticalSort.this.e.compare(bVar.r(), bVar2.r());
             }
         };
         this.c = new Comparator<IRenderable>() { // from class: com.tsf.shell.f.f.a.d.a.DrawerAlphabeticalSort.2
             @Override // java.util.Comparator
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
             public final int compare(i iVar, i iVar2) {
-                int iA = a.this.a(iVar);
-                int iA2 = a.this.a(iVar2);
+                int iA = DrawerAlphabeticalSort.this.a(iVar);
+                int iA2 = DrawerAlphabeticalSort.this.a(iVar2);
                 if (iA < iA2) {
                     return -1;
                 }
@@ -55,7 +55,7 @@ public class DrawerAlphabeticalSort extends DrawerSortBase {
                 }
                 if ((iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) && (iVar2 instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                     ItemInfo itemInfoK = ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).K();
-                    return a.this.e.compare(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar2).K().title, itemInfoK.title);
+                    return DrawerAlphabeticalSort.this.e.compare(((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar2).K().title, itemInfoK.title);
                 }
                 return 0;
             }

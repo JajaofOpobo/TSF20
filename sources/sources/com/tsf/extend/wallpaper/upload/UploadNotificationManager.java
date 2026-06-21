@@ -29,12 +29,12 @@ public class UploadNotificationManager {
         cancel
     }
 
-    public a(Context context, int i) {
+    public UploadNotificationManager(Context context, int i) {
         this(context);
         this.b = i;
     }
 
-    public a(Context context) {
+    public UploadNotificationManager(Context context) {
         this.b = 10000;
         this.f = null;
         this.a = context;

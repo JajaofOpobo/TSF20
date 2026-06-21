@@ -4,7 +4,7 @@ package com.tsf.extend.theme;
 public class ThemeDynamicApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
     private String a;
 
-    public ac(String str) {
+    public ThemeDynamicApiRequest(String str) {
         this.a = str;
     }
 

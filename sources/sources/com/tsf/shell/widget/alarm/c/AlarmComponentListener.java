@@ -78,18 +78,18 @@ public class AlarmComponentListener extends VButton {
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onDown(MotionEvent motionEvent) {
-            b.this.c();
+            AlarmComponentListener.this.c();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onUp(MotionEvent motionEvent) {
-            b.this.d();
+            AlarmComponentListener.this.d();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onSingleTapUp(MotionEvent motionEvent) {
-            if (b.this.b != null) {
-                b.this.b.run();
+            if (AlarmComponentListener.this.b != null) {
+                AlarmComponentListener.this.b.run();
             }
         }
     }

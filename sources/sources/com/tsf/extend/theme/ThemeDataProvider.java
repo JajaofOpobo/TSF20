@@ -57,7 +57,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         h.add("com.ksmobile.launcher.theme.neonlife");
     }
 
-    private v() {
+    private ThemeDataProvider() {
         this.c = null;
         this.d = null;
         a(com.tsf.extend.AppContextHolder.b());

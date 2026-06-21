@@ -30,8 +30,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     protected com.tsf.shell.f.i.MultiSelectController h;
     protected l k;
     private com.censivn.C3DEngine.b.f.GridRenderable q;
-    private com.censivn.C3DEngine.b.f.b.NinePatchRenderable s;
-    private com.censivn.C3DEngine.b.f.b.NinePatchRenderable t;
+    private com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable s;
+    private com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable t;
     private com.censivn.C3DEngine.b.d.MouseEventListener v;
     private com.censivn.C3DEngine.b.d.MouseEventListener w;
     private g x;
@@ -270,8 +270,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         this.c = new com.tsf.shell.f.e.f.EditModeNode() { // from class: com.tsf.shell.f.f.WorkspacePage.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (g.this.g != 0.0f && g.this.k != null) {
-                    g.this.u();
+                if (WorkspacePage.this.g != 0.0f && WorkspacePage.this.k != null) {
+                    WorkspacePage.this.u();
                 }
             }
 
@@ -287,13 +287,13 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 super.addChild(iVar);
-                g.this.h.a(iVar);
+                WorkspacePage.this.h.a(iVar);
             }
         };
         this.h = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.f.WorkspacePage.2
             @Override // com.tsf.shell.f.i.MultiSelectController
             public void b(com.tsf.shell.f.i.PageItem bVar) {
-                g.this.N();
+                WorkspacePage.this.N();
             }
         };
         addChild(this.c);
@@ -366,8 +366,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (!this.F) {
             this.F = true;
             aj();
-            this.s = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
-            this.t = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
+            this.s = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
+            this.t = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
             this.t.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
             this.t.doubleSidedEnabled(true);
             this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b;
@@ -734,10 +734,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (g.this.j) {
-                        g.this.b.a();
+                    if (WorkspacePage.this.j) {
+                        WorkspacePage.this.b.a();
                     } else {
-                        g.this.b.b();
+                        WorkspacePage.this.b.b();
                     }
                 }
             });
@@ -754,10 +754,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.WorkspacePage.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (g.this.j) {
-                        g.this.b.a();
+                    if (WorkspacePage.this.j) {
+                        WorkspacePage.this.b.a();
                     } else {
-                        g.this.b.b();
+                        WorkspacePage.this.b.b();
                     }
                 }
             });

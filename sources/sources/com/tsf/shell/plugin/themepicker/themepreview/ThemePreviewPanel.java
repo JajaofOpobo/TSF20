@@ -81,7 +81,7 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("PackageChangeReceiver ActionCode:" + intent.getAction());
-            d.this.M();
+            ThemePreviewPanel.this.M();
         }
     }
 
@@ -128,11 +128,11 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
                 @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
                 @TargetApi(16)
                 public void onGlobalLayout() {
-                    int iFloor = (int) Math.floor(gridView.getWidth() / (d.this.h + d.this.i));
+                    int iFloor = (int) Math.floor(gridView.getWidth() / (ThemePreviewPanel.this.h + ThemePreviewPanel.this.i));
                     if (iFloor > 0) {
-                        int width = (gridView.getWidth() / iFloor) - d.this.i;
-                        d.this.c.a(iFloor);
-                        d.this.c.b(width);
+                        int width = (gridView.getWidth() / iFloor) - ThemePreviewPanel.this.i;
+                        ThemePreviewPanel.this.c.a(iFloor);
+                        ThemePreviewPanel.this.c.b(width);
                         if (h.e()) {
                             gridView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                         } else {
@@ -210,15 +210,15 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
                 if (view == null) {
                     view = new View(this.c);
                 }
-                view.setLayoutParams(new AbsListView.LayoutParams(-1, d.this.g));
+                view.setLayoutParams(new AbsListView.LayoutParams(-1, ThemePreviewPanel.this.g));
             } else {
                 if (view == null) {
                     view = LayoutInflater.from(this.c).inflate(f.h.theme_preview_grid_item, (ViewGroup) null);
                 }
                 ThemePreviewConfig.e eVar = (ThemePreviewConfig.e) getItem(i);
                 view.setTag(eVar.b);
-                d.this.a.a(eVar.c, (RecyclingImageView) view.findViewById(f.C0155f.imageView1));
-                ((TextView) view.findViewById(f.C0155f.textView1)).setText(d.this.c(eVar.a));
+                ThemePreviewPanel.this.a.a(eVar.c, (RecyclingImageView) view.findViewById(f.C0155f.imageView1));
+                ((TextView) view.findViewById(f.C0155f.textView1)).setText(ThemePreviewPanel.this.c(eVar.a));
             }
             return view;
         }
@@ -227,7 +227,7 @@ public class ThemePreviewPanel extends Fragment implements ThemePreviewConfig.b 
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             ThemePreviewConfig.e eVar = (ThemePreviewConfig.e) getItem(i);
             if (eVar != null) {
-                d.this.b(eVar.b);
+                ThemePreviewPanel.this.b(eVar.b);
             }
         }
     }

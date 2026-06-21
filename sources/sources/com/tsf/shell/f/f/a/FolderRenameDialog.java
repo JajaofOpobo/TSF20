@@ -44,7 +44,7 @@ public class FolderRenameDialog extends BaseRenderable {
         this.g = new PageContainerBase(com.tsf.shell.manager.g.LayoutDimensionConstants.j, b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.2
             @Override // com.tsf.shell.f.f.a.FolderRenameDialog.a
             public void a() {
-                g.this.b.aj();
+                FolderRenameDialog.this.b.aj();
             }
         };
         this.d.addChild(this.g);
@@ -55,7 +55,7 @@ public class FolderRenameDialog extends BaseRenderable {
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.c) { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.3
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                g.this.a(g.this.e.c());
+                FolderRenameDialog.this.a(FolderRenameDialog.this.e.c());
             }
         });
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.g, com.tsf.shell.manager.o.ThemeColorConstants.h);
@@ -74,7 +74,7 @@ public class FolderRenameDialog extends BaseRenderable {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.4
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
-                        g.this.g.alpha(g.this.f.alpha());
+                        FolderRenameDialog.this.g.alpha(FolderRenameDialog.this.f.alpha());
                     }
                 };
                 dVar.a(255);
@@ -90,14 +90,14 @@ public class FolderRenameDialog extends BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
-                    g.this.g.alpha(g.this.f.alpha());
+                    FolderRenameDialog.this.g.alpha(FolderRenameDialog.this.f.alpha());
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    g.this.f.visible(false);
-                    g.this.g.visible(false);
-                    g.this.a();
+                    FolderRenameDialog.this.f.visible(false);
+                    FolderRenameDialog.this.g.visible(false);
+                    FolderRenameDialog.this.a();
                 }
             };
             dVar2.a(0);
@@ -138,7 +138,7 @@ public class FolderRenameDialog extends BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderRenameDialog.6
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    g.this.a.visible(false);
+                    FolderRenameDialog.this.a.visible(false);
                 }
             };
             dVar.a(0);
@@ -181,7 +181,7 @@ public class FolderRenameDialog extends BaseRenderable {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String string = editText.getText().toString();
-                        g.this.e.a(string);
+                        FolderRenameDialog.this.e.a(string);
                         com.tsf.shell.manager.b.ConfigManager.k(string);
                     }
                 });

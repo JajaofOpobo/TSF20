@@ -6,7 +6,7 @@ import com.tsf.shell.f.e.h.PhotoPicker;
 import com.tsf.shell.f.i.c.ItemGroupBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements a.InterfaceC0098a {
+public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements ItemContainer.InterfaceC0098a {
     private boolean a;
     private boolean b;
     private boolean f;
@@ -22,15 +22,15 @@ public class ItemContainerPageItem extends com.tsf.shell.f.i.PageItem implements
         this.b = false;
         this.f = false;
         itemInfo.iconType = 2;
-        this.g = new a(true) { // from class: com.tsf.shell.f.i.b.a.ItemContainerPageItem.1
+        this.g = new ItemContainer(true) { // from class: com.tsf.shell.f.i.b.a.ItemContainerPageItem.1
             @Override // com.tsf.shell.f.i.b.a.ItemContainer
             public Bitmap c() {
-                                return b.this.K().getPhoto();
+                                return ItemContainerPageItem.this.K().getPhoto();
             }
 
             @Override // com.tsf.shell.f.i.b.a.ItemContainer
             public void e() {
-                com.tsf.shell.f.e.h.PhotoPicker.a(b.this, 300, 300);
+                com.tsf.shell.f.e.h.PhotoPicker.a(ItemContainerPageItem.this, 300, 300);
             }
         };
         setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.b * (-180.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b * (-300.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 180.0f, com.censivn.C3DEngine.b.b.ScreenConstants.b * 100.0f, 0.0f);

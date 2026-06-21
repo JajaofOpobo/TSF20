@@ -15,9 +15,9 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
     private static int w = 0;
     private static int x = 2;
     private boolean b;
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable k;
-    public com.censivn.C3DEngine.b.f.a.SpriteItemData l;
-    public com.censivn.C3DEngine.b.f.a.SpriteItemData ILassoSelectable;
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable k;
+    public com.censivn.C3DEngine.b.f.sprite.SpriteItemData l;
+    public com.censivn.C3DEngine.b.f.sprite.SpriteItemData ILassoSelectable;
     public com.tsf.shell.manager.o.ButtonMetrics n;
     public boolean o;
     private boolean p;
@@ -150,7 +150,7 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
         return this.k.alpha();
     }
 
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aF() {
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aF() {
         return this.n.b();
     }
 
@@ -308,10 +308,10 @@ public abstract class DrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutI
             this.u.a.a(iVar, new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.u.b.removeFromParent();
-                    b.this.k.visible(true);
+                    WidgetDrawerShortcutItemBase.this.u.b.removeFromParent();
+                    WidgetDrawerShortcutItemBase.this.k.visible(true);
                     com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.this.u);
-                    b.this.u = null;
+                    WidgetDrawerShortcutItemBase.this.u = null;
                 }
             });
         }

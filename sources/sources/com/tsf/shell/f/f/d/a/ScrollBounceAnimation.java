@@ -136,7 +136,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
                 dVar = new d() { // from class: com.tsf.shell.f.f.d.a.ScrollBounceAnimation.3
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        a.this.d.b();
+                        ScrollBounceAnimation.this.d.b();
                     }
                 };
                 dVar.d(0.0f);
@@ -157,7 +157,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
                     g gVar3 = (g) d();
                     gVar3.position().y = 0.0f;
                     gVar3.rotation().y = 0.0f;
-                    a.this.e.removeChild(gVar3);
+                    ScrollBounceAnimation.this.e.removeChild(gVar3);
                 }
             };
             dVar2.h((com.censivn.C3DEngine.b.b.ScreenConstants.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
@@ -181,7 +181,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
                         g gVar3 = (g) d();
                         gVar3.position().y = 0.0f;
                         gVar3.rotation().y = 0.0f;
-                        a.this.e.removeChild(gVar3);
+                        ScrollBounceAnimation.this.e.removeChild(gVar3);
                     }
                 };
                 dVar.h((com.censivn.C3DEngine.b.b.ScreenConstants.C - (n.b / 2)) - (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b));
@@ -192,7 +192,7 @@ public class ScrollBounceAnimation implements ScrollBounceHandler {
         d dVar2 = new d() { // from class: com.tsf.shell.f.f.d.a.ScrollBounceAnimation.6
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.d.c();
+                ScrollBounceAnimation.this.d.c();
             }
         };
         gVar.G();

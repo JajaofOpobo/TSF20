@@ -28,7 +28,7 @@ public class TextureElementD extends VObject3dContainer {
     private float t;
     private float x;
     private float y;
-    private a l = new a();
+    private a l = new TextureElementA();
     private RectF m = new RectF();
     private PointF p = new PointF();
     private PointF q = new PointF();
@@ -195,7 +195,7 @@ public class TextureElementD extends VObject3dContainer {
         this.i = new VRectangle(320.0f * this.t, this.t * 64.0f, 1, 1);
         this.i.position().y = 273.0f * j;
         this.i.position().x = (-135.0f) * j;
-        this.c = new h(j, this.t);
+        this.c = new TextureElementH(j, this.t);
         this.c.position().x = 200.0f * j;
         this.c.position().y = (-168.0f) * j;
         addChild(this.i);

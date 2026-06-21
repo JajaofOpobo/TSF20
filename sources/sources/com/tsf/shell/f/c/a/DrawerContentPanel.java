@@ -255,7 +255,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.ah = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                f.this.P.visible(false);
+                DrawerContentPanel.this.P.visible(false);
             }
         };
         this.ah.l(0.0f);
@@ -275,35 +275,35 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.t = new BaseRenderable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.9
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (!f.this.y && !f.this.al) {
-                    position().x += (f.this.u - position().x) * f.this.x;
-                    position().y += (f.this.v - position().y) * f.this.x;
-                    if (Math.abs(position().x - f.this.u) < 0.2f && Math.abs(position().y - f.this.v) < 0.2f && !f.this.A) {
-                        position().x = f.this.u;
-                        position().y = f.this.v;
-                        f.this.y = true;
-                        f.this.t.setAnimationObjectState(false);
+                if (!DrawerContentPanel.this.y && !DrawerContentPanel.this.al) {
+                    position().x += (DrawerContentPanel.this.u - position().x) * DrawerContentPanel.this.x;
+                    position().y += (DrawerContentPanel.this.v - position().y) * DrawerContentPanel.this.x;
+                    if (Math.abs(position().x - DrawerContentPanel.this.u) < 0.2f && Math.abs(position().y - DrawerContentPanel.this.v) < 0.2f && !DrawerContentPanel.this.A) {
+                        position().x = DrawerContentPanel.this.u;
+                        position().y = DrawerContentPanel.this.v;
+                        DrawerContentPanel.this.y = true;
+                        DrawerContentPanel.this.t.setAnimationObjectState(false);
                     }
                 }
-                if (!f.this.z) {
-                    if (f.this.S.a(f.this.ac) > 0.32f || f.this.ac > f.this.w) {
-                        f.this.w = f.this.ac;
+                if (!DrawerContentPanel.this.z) {
+                    if (DrawerContentPanel.this.S.a(DrawerContentPanel.this.ac) > 0.32f || DrawerContentPanel.this.ac > DrawerContentPanel.this.w) {
+                        DrawerContentPanel.this.w = DrawerContentPanel.this.ac;
                     }
-                    float fA = f.this.N.a();
-                    f.this.O = fA + ((f.this.w - fA) * f.this.x);
-                    f.this.a(f.this.O, true);
-                    f.this.S.c(f.this.O);
-                    if (Math.abs(f.this.O - f.this.w) < 0.2f) {
-                        f.this.O = f.this.w;
-                        f.this.a(f.this.O, true);
-                        f.this.S.c(f.this.O);
-                        f.this.N.setAnimationObjectState(false);
-                        f.this.z = true;
-                        if (!f.this.Y) {
+                    float fA = DrawerContentPanel.this.N.a();
+                    DrawerContentPanel.this.O = fA + ((DrawerContentPanel.this.w - fA) * DrawerContentPanel.this.x);
+                    DrawerContentPanel.this.a(DrawerContentPanel.this.O, true);
+                    DrawerContentPanel.this.S.c(DrawerContentPanel.this.O);
+                    if (Math.abs(DrawerContentPanel.this.O - DrawerContentPanel.this.w) < 0.2f) {
+                        DrawerContentPanel.this.O = DrawerContentPanel.this.w;
+                        DrawerContentPanel.this.a(DrawerContentPanel.this.O, true);
+                        DrawerContentPanel.this.S.c(DrawerContentPanel.this.O);
+                        DrawerContentPanel.this.N.setAnimationObjectState(false);
+                        DrawerContentPanel.this.z = true;
+                        if (!DrawerContentPanel.this.Y) {
                             if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
-                                com.tsf.shell.manager.b.ConfigManager.a(f.this.O);
+                                com.tsf.shell.manager.b.ConfigManager.a(DrawerContentPanel.this.O);
                             } else {
-                                com.tsf.shell.manager.b.ConfigManager.b(f.this.O);
+                                com.tsf.shell.manager.b.ConfigManager.b(DrawerContentPanel.this.O);
                             }
                         }
                     }
@@ -352,26 +352,26 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.d = false;
-                this.b = f.this.N.a();
-                this.e = f.this.n.a(f.this.u, f.this.v);
+                this.b = DrawerContentPanel.this.N.a();
+                this.e = DrawerContentPanel.this.n.a(DrawerContentPanel.this.u, DrawerContentPanel.this.v);
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (!f.this.af) {
-                    boolean z2 = f.this.N.rotation().z % 180.0f == 0.0f;
+                if (!DrawerContentPanel.this.af) {
+                    boolean z2 = DrawerContentPanel.this.N.rotation().z % 180.0f == 0.0f;
                     if (this.d) {
-                        float fA = f.this.n.a(this.b, motionEvent, motionEvent2);
+                        float fA = DrawerContentPanel.this.n.a(this.b, motionEvent, motionEvent2);
                         if (fA > this.e) {
                             fA = this.e;
                         }
                         if (fA < f.c * com.censivn.C3DEngine.b.b.ScreenConstants.b) {
                             fA = f.c * com.censivn.C3DEngine.b.b.ScreenConstants.b;
                         }
-                        f.this.ac = fA;
-                        f.this.z = false;
-                        f.this.N.setAnimationObjectState(true);
-                        f.this.N.invalidate();
+                        DrawerContentPanel.this.ac = fA;
+                        DrawerContentPanel.this.z = false;
+                        DrawerContentPanel.this.N.setAnimationObjectState(true);
+                        DrawerContentPanel.this.N.invalidate();
                         return;
                     }
                     if (z2) {
@@ -392,7 +392,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.L = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.11
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                f.this.M.removeFromParent();
+                DrawerContentPanel.this.M.removeFromParent();
             }
         };
         this.L.a(0);
@@ -400,8 +400,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         this.N = new DrawerSettingsItem(this.H.width, this.H.height, new DrawerConfig(this.H.width / 2, this.H.height / 2, this.H.height)) { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.12
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public i getHittingTarget(float f10, float f11, boolean z2) {
-                if (f.this.P.calTouchCollision(f10, f11)) {
-                    return f.this.P;
+                if (DrawerContentPanel.this.P.calTouchCollision(f10, f11)) {
+                    return DrawerContentPanel.this.P;
                 }
                 if (!calTouchCollision(f10, f11)) {
                     return null;
@@ -420,16 +420,16 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
                 if (this.a) {
                     this.a = false;
-                    f.this.S.a(motionEvent2.getX(), motionEvent2.getY());
+                    DrawerContentPanel.this.S.a(motionEvent2.getX(), motionEvent2.getY());
                 }
-                f.this.S.b(motionEvent2.getX(), motionEvent2.getY());
+                DrawerContentPanel.this.S.b(motionEvent2.getX(), motionEvent2.getY());
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 this.d = null;
                 this.e = null;
-                this.d = f.this.S.getHittingObjectTarget(motionEvent, true);
+                this.d = DrawerContentPanel.this.S.getHittingObjectTarget(motionEvent, true);
                 if (this.d != null && this.d.getMouseEventListener() != null) {
                     this.e = this.d.getMouseEventListener();
                     this.e.e(motionEvent);
@@ -440,7 +440,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             public void f(MotionEvent motionEvent) {
                 if (!this.a) {
                     this.a = true;
-                    f.this.S.c();
+                    DrawerContentPanel.this.S.c();
                 }
             }
 
@@ -531,25 +531,25 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a(com.tsf.shell.f.f.WorkspacePage gVar) {
                 if (gVar.t() == -1) {
-                    if (f.this.ad) {
-                        f.this.v();
+                    if (DrawerContentPanel.this.ad) {
+                        DrawerContentPanel.this.v();
                     }
-                } else if (!f.this.af && !f.this.ad) {
-                    f.this.x();
+                } else if (!DrawerContentPanel.this.af && !DrawerContentPanel.this.ad) {
+                    DrawerContentPanel.this.x();
                 }
             }
 
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a() {
-                if (f.this.ad) {
-                    f.this.v();
+                if (DrawerContentPanel.this.ad) {
+                    DrawerContentPanel.this.v();
                 }
             }
 
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void b() {
-                if (!f.this.af && !f.this.ad && com.tsf.shell.manager.app.StateHub.n().t() != -1) {
-                    f.this.x();
+                if (!DrawerContentPanel.this.af && !DrawerContentPanel.this.ad && com.tsf.shell.manager.app.StateHub.n().t() != -1) {
+                    DrawerContentPanel.this.x();
                 }
             }
         });
@@ -565,7 +565,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
     }
 
     public void j() {
-        a.C0080a c0080aA = this.n.a(this.t, this.G.a, 8.0f, 4.0f, 24.0f);
+        DrawerTouchHandler.C0080a c0080aA = this.n.a(this.t, this.G.a, 8.0f, 4.0f, 24.0f);
         if (c0080aA != null) {
             this.G.visible(Boolean.valueOf(!this.ad));
             this.G.rotation().z = c0080aA.d;
@@ -582,7 +582,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.15
             @Override // java.lang.Runnable
             public void run() {
-                f.this.l();
+                DrawerContentPanel.this.l();
             }
         });
     }
@@ -592,9 +592,9 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             this.r = new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.16
                 @Override // java.lang.Runnable
                 public void run() {
-                    f.this.G.b(0.0f);
-                    f.this.F.b(0.0f);
-                    f.this.E.removeFromParent();
+                    DrawerContentPanel.this.G.b(0.0f);
+                    DrawerContentPanel.this.F.b(0.0f);
+                    DrawerContentPanel.this.E.removeFromParent();
                 }
             };
         }
@@ -608,18 +608,18 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (f.this.M.parent() == null) {
-                        f.this.t.addChildAt(f.this.M, 0);
+                    if (DrawerContentPanel.this.M.parent() == null) {
+                        DrawerContentPanel.this.t.addChildAt(DrawerContentPanel.this.M, 0);
                     }
-                    if (!f.this.X) {
-                        f.this.M.rotation().z = 90.0f;
-                        f.this.M.a(com.censivn.C3DEngine.b.b.ScreenConstants.G * 2);
+                    if (!DrawerContentPanel.this.X) {
+                        DrawerContentPanel.this.M.rotation().z = 90.0f;
+                        DrawerContentPanel.this.M.a(com.censivn.C3DEngine.b.b.ScreenConstants.G * 2);
                     } else {
-                        f.this.M.rotation().z = 0.0f;
-                        f.this.M.a(com.censivn.C3DEngine.b.b.ScreenConstants.F * 2);
+                        DrawerContentPanel.this.M.rotation().z = 0.0f;
+                        DrawerContentPanel.this.M.a(com.censivn.C3DEngine.b.b.ScreenConstants.F * 2);
                     }
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M);
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M, VEasing.Linear.easeNone, f.this.K);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(DrawerContentPanel.this.M);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(DrawerContentPanel.this.M, VEasing.Linear.easeNone, DrawerContentPanel.this.K);
                 }
             });
         }
@@ -631,8 +631,8 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M);
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.M, VEasing.Linear.easeNone, f.this.L);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(DrawerContentPanel.this.M);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(DrawerContentPanel.this.M, VEasing.Linear.easeNone, DrawerContentPanel.this.L);
                 }
             });
         }
@@ -866,7 +866,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    com.tsf.shell.manager.b.ConfigManager.a(f.this.af);
+                    com.tsf.shell.manager.b.ConfigManager.a(DrawerContentPanel.this.af);
                 }
             });
         }
@@ -898,7 +898,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f2) {
-                    f.this.a(fA * (1.0f - f2), true);
+                    DrawerContentPanel.this.a(fA * (1.0f - f2), true);
                 }
             };
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.ae);
@@ -946,7 +946,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.6
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f3) {
-                        f.this.a(fA2 + ((fA - fA2) * f3), z2);
+                        DrawerContentPanel.this.a(fA2 + ((fA - fA2) * f3), z2);
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -982,7 +982,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                     this.an = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.7
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
-                            f.this.t.visible(false);
+                            DrawerContentPanel.this.t.visible(false);
                         }
                     };
                 }
@@ -1007,7 +1007,7 @@ public class DrawerContentPanel implements DrawerEditPanel.a {
                 this.am = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.a.DrawerContentPanel.8
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        f.this.t.mouseEnabled(true);
+                        DrawerContentPanel.this.t.mouseEnabled(true);
                     }
                 };
             }

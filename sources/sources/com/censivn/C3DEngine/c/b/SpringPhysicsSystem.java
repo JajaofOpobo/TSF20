@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem {
-    private ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> b;
-    private ArrayList<com.censivn.C3DEngine.c.a.a.SpringConstraint> c;
+    private ArrayList<com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint> b;
+    private ArrayList<com.censivn.C3DEngine.c.a.spring.SpringConstraint> c;
     private float d;
     private float e;
     private float f;
@@ -33,7 +33,7 @@ public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem 
         this(1.0f, 0.0f);
     }
 
-    public ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> b() {
+    public ArrayList<com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint> b() {
         return this.b;
     }
 
@@ -82,7 +82,7 @@ public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem 
         }
         int size2 = this.b.size();
         for (int i2 = 0; i2 < size2; i2++) {
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = this.b.get(i2);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = this.b.get(i2);
             if (bVar.d) {
                 bVar.a(bVar.b() + this.d);
             }
@@ -122,7 +122,7 @@ public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem 
         this.b = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             ParticleData eVar = arrayListA.get(i);
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = new com.censivn.C3DEngine.c.a.a.DampedSpringConstraint(eVar);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = new com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint(eVar);
             eVar.a(bVar);
             this.b.add(bVar);
         }
@@ -145,7 +145,7 @@ public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem 
         }
     }
 
-    private void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar, com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2) {
-        this.c.add(new com.censivn.C3DEngine.c.a.a.SpringConstraint(bVar, bVar2, bVar.a(bVar2), this.g));
+    private void a(com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar, com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2) {
+        this.c.add(new com.censivn.C3DEngine.c.a.spring.SpringConstraint(bVar, bVar2, bVar.a(bVar2), this.g));
     }
 }

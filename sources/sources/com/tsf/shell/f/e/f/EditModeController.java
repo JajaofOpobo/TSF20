@@ -53,21 +53,21 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
 
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onKillFocus() {
-            a.this.a(true);
+            WorkspaceEditor.this.a(true);
         }
 
         @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
-            if (a.this.f != null) {
-                this.a.setAllFrom(a.this.f.position());
-                PositionNumber3d positionNumber3dPosition = a.this.f.position();
-                a.this.f.position().y = 0.0f;
+            if (WorkspaceEditor.this.f != null) {
+                this.a.setAllFrom(WorkspaceEditor.this.f.position());
+                PositionNumber3d positionNumber3dPosition = WorkspaceEditor.this.f.position();
+                WorkspaceEditor.this.f.position().y = 0.0f;
                 positionNumber3dPosition.x = 0.0f;
-                a.this.f.dispatchDraw();
-                a.this.f.position().setAllFrom(this.a);
-                float f = a.this.f.scale().x;
+                WorkspaceEditor.this.f.dispatchDraw();
+                WorkspaceEditor.this.f.position().setAllFrom(this.a);
+                float f = WorkspaceEditor.this.f.scale().x;
                 float f2 = f + ((1.0f - f) * 0.15f);
-                a.this.f.scale().setAll(f2, f2, 1.0f);
+                WorkspaceEditor.this.f.scale().setAll(f2, f2, 1.0f);
             }
         }
     };
@@ -83,14 +83,14 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
         }
         if (a == null) {
             a = new HashMap<>();
-            a.put(0, new C0094a(ThemeShellDescription.ICON_MENU_DETAIL_ON, ThemeShellDescription.ICON_MENU_DETAIL_OFF, 0, x.c(EditModeNode.i.text_detail)));
-            a.put(1, new C0094a(ThemeShellDescription.ICON_MENU_EDIT_ON, ThemeShellDescription.ICON_MENU_EDIT_OFF, 1, x.c(EditModeNode.i.text_edit)));
-            a.put(2, new C0094a(ThemeShellDescription.ICON_MENU_EDIT_ON, ThemeShellDescription.ICON_MENU_EDIT_OFF, 2, x.c(EditModeNode.i.text_rename)));
-            a.put(4, new C0094a(ThemeShellDescription.ICON_MENU_DELETE_ON, ThemeShellDescription.ICON_MENU_DELETE_OFF, 4, x.c(EditModeNode.i.text_delete)));
-            a.put(3, new C0094a(ThemeShellDescription.ICON_MENU_MUTIL_CHOICE_ON, ThemeShellDescription.ICON_MENU_MUTIL_CHOICE_OFF, 3, x.c(EditModeNode.i.text_multi_choice)));
-            a.put(5, new C0094a(ThemeShellDescription.ICON_MENU_UNINSTALL_ON, ThemeShellDescription.ICON_MENU_UNINSTALL_OFF, 5, x.c(EditModeNode.i.text_uninstall)));
-            a.put(6, new C0094a(ThemeShellDescription.ICON_MENU_RESET_ON, ThemeShellDescription.ICON_MENU_RESET_OFF, 6, x.c(EditModeNode.i.text_rotate)));
-            a.put(7, new C0094a(ThemeShellDescription.ICON_MENU_ALIGN_ON, ThemeShellDescription.ICON_MENU_ALIGN_OFF, 7, x.c(EditModeNode.i.text_snaplines)));
+            WorkspaceEditor.put(0, new C0094a(ThemeShellDescription.ICON_MENU_DETAIL_ON, ThemeShellDescription.ICON_MENU_DETAIL_OFF, 0, x.c(EditModeNode.i.text_detail)));
+            WorkspaceEditor.put(1, new C0094a(ThemeShellDescription.ICON_MENU_EDIT_ON, ThemeShellDescription.ICON_MENU_EDIT_OFF, 1, x.c(EditModeNode.i.text_edit)));
+            WorkspaceEditor.put(2, new C0094a(ThemeShellDescription.ICON_MENU_EDIT_ON, ThemeShellDescription.ICON_MENU_EDIT_OFF, 2, x.c(EditModeNode.i.text_rename)));
+            WorkspaceEditor.put(4, new C0094a(ThemeShellDescription.ICON_MENU_DELETE_ON, ThemeShellDescription.ICON_MENU_DELETE_OFF, 4, x.c(EditModeNode.i.text_delete)));
+            WorkspaceEditor.put(3, new C0094a(ThemeShellDescription.ICON_MENU_MUTIL_CHOICE_ON, ThemeShellDescription.ICON_MENU_MUTIL_CHOICE_OFF, 3, x.c(EditModeNode.i.text_multi_choice)));
+            WorkspaceEditor.put(5, new C0094a(ThemeShellDescription.ICON_MENU_UNINSTALL_ON, ThemeShellDescription.ICON_MENU_UNINSTALL_OFF, 5, x.c(EditModeNode.i.text_uninstall)));
+            WorkspaceEditor.put(6, new C0094a(ThemeShellDescription.ICON_MENU_RESET_ON, ThemeShellDescription.ICON_MENU_RESET_OFF, 6, x.c(EditModeNode.i.text_rotate)));
+            WorkspaceEditor.put(7, new C0094a(ThemeShellDescription.ICON_MENU_ALIGN_ON, ThemeShellDescription.ICON_MENU_ALIGN_OFF, 7, x.c(EditModeNode.i.text_snaplines)));
         }
         while (true) {
             int i3 = i;
@@ -116,36 +116,36 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void e(MotionEvent motionEvent) {
-            float[] fArrA = x.a(motionEvent, a.this.l);
-            i hittingTarget = a.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
+            float[] fArrA = x.a(motionEvent, WorkspaceEditor.this.l);
+            i hittingTarget = WorkspaceEditor.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
             if (hittingTarget == null || !(hittingTarget instanceof c)) {
-                a.this.a((EditModeConfig) null);
+                WorkspaceEditor.this.a((EditModeConfig) null);
             } else {
-                a.this.a((EditModeConfig) hittingTarget);
+                WorkspaceEditor.this.a((EditModeConfig) hittingTarget);
             }
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
-            if (a.this.m != null) {
-                a.this.a(a.this.m.b.c, true);
+            if (WorkspaceEditor.this.m != null) {
+                WorkspaceEditor.this.a(WorkspaceEditor.this.m.b.c, true);
             }
-            a.this.m = null;
+            WorkspaceEditor.this.m = null;
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             if (!this.a) {
-                final float[] fArrA = x.a(motionEvent2, a.this.l);
+                final float[] fArrA = x.a(motionEvent2, WorkspaceEditor.this.l);
                 this.a = true;
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        i hittingTarget = a.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
+                        i hittingTarget = WorkspaceEditor.this.d.getHittingTarget(fArrA[0], fArrA[1], true);
                         if (hittingTarget == null || !(hittingTarget instanceof c)) {
-                            a.this.a((EditModeConfig) null);
+                            WorkspaceEditor.this.a((EditModeConfig) null);
                         } else {
-                            a.this.a((EditModeConfig) hittingTarget);
+                            WorkspaceEditor.this.a((EditModeConfig) hittingTarget);
                         }
                         AnonymousClass2.this.a = false;
                     }
@@ -301,7 +301,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
                 int size = p.size();
                 for (int i = 0; i < size; i++) {
                     c cVar2 = this.b.get(i);
-                    cVar2.a(a.get(p.get(i)));
+                    cVar2.a(WorkspaceEditor.get(p.get(i)));
                     cVar2.removeFromParent();
                     this.e.addChild(cVar2);
                 }
@@ -330,15 +330,15 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.e.f.EditModeController.3
                 @Override // java.lang.Runnable
                 public void run() {
-                    a.this.r = false;
-                    a.this.d.removeFromParent();
+                    WorkspaceEditor.this.r = false;
+                    WorkspaceEditor.this.d.removeFromParent();
                     int size = a.p.size();
                     for (int i = 0; i < size; i++) {
-                        ((EditModeConfig) a.this.b.get(i)).b();
+                        ((EditModeConfig) WorkspaceEditor.this.b.get(i)).b();
                     }
-                    a.this.q = null;
-                    if (cVar != null && a.this.q != com.tsf.shell.manager.app.v.ScreenHelper.h()) {
-                        a.this.b(cVar);
+                    WorkspaceEditor.this.q = null;
+                    if (cVar != null && WorkspaceEditor.this.q != com.tsf.shell.manager.app.v.ScreenHelper.h()) {
+                        WorkspaceEditor.this.b(cVar);
                     }
                 }
             }, this.q.a(p.size()));
@@ -368,7 +368,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
         int size = p.size();
         for (int i = 0; i < size; i++) {
             c cVar2 = this.b.get(i);
-            cVar2.a(a.get(p.get(i)));
+            cVar2.a(WorkspaceEditor.get(p.get(i)));
             cVar2.removeFromParent();
             this.e.addChild(cVar2);
         }
@@ -415,21 +415,21 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
                 public void run() {
                     int size = a.p.size();
                     for (int i2 = 0; i2 < size; i2++) {
-                        ((EditModeConfig) a.this.b.get(i2)).b();
+                        ((EditModeConfig) WorkspaceEditor.this.b.get(i2)).b();
                     }
-                    if (!a.this.n) {
-                        com.tsf.shell.manager.app.AppListModel.b(a.this);
+                    if (!WorkspaceEditor.this.n) {
+                        com.tsf.shell.manager.app.AppListModel.b(WorkspaceEditor.this);
                     }
-                    a.this.h();
-                    a.this.a(i);
-                    a.this.h = false;
-                    a.this.i = false;
-                    a.this.f.mouseSkip(false);
-                    a.this.f();
-                    com.censivn.C3DEngine.b.c.KeyboardHandler.b(a.this);
-                    com.tsf.shell.manager.app.ObserverManager.b(a.this);
+                    WorkspaceEditor.this.h();
+                    WorkspaceEditor.this.a(i);
+                    WorkspaceEditor.this.h = false;
+                    WorkspaceEditor.this.i = false;
+                    WorkspaceEditor.this.f.mouseSkip(false);
+                    WorkspaceEditor.this.f();
+                    com.censivn.C3DEngine.b.c.KeyboardHandler.b(WorkspaceEditor.this);
+                    com.tsf.shell.manager.app.ObserverManager.b(WorkspaceEditor.this);
                     com.tsf.shell.manager.app.v.ScreenHelper.f();
-                    a.this.f = null;
+                    WorkspaceEditor.this.f = null;
                 }
             };
             this.i = true;

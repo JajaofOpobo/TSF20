@@ -138,8 +138,8 @@ public class ScrollableItemListPanel<E> extends com.tsf.shell.f.e._g.a.MenuActio
                 if (!aVar.a()) {
                     w.a();
                     this.c = ScrollableItemListPanel.this.a(ScrollableItemListPanel.this.d.a().get(i));
-                    Number3d.TEMPNUMBER3D.reset();
-                    Number3d number3dLocalToGlobal = iVar.localToGlobal(Number3d.TEMPNUMBER3D);
+                    Number3ShortcutsPanel.TEMPNUMBER3ShortcutsPanel.reset();
+                    Number3d number3dLocalToGlobal = iVar.localToGlobal(Number3ShortcutsPanel.TEMPNUMBER3D);
                     this.c.position().setAllFrom(number3dLocalToGlobal);
                     this.d = number3dLocalToGlobal.x;
                     this.e = number3dLocalToGlobal.y;

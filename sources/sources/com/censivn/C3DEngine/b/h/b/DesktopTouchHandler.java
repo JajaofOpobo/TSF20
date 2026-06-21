@@ -17,7 +17,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private float g;
     private boolean h;
 
-    public a(i iVar) {
+    public DesktopTouchHandler(i iVar) {
         super(iVar);
         this.h = false;
     }

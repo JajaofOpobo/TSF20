@@ -64,7 +64,7 @@ public class FontPickerConfig {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            return this.e.a(d.this.a);
+            return this.e.a(FontPickerConfig.this.a);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

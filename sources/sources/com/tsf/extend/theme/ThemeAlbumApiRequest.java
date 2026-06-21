@@ -2,7 +2,7 @@ package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeAlbumApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
-    public s() {
+    public ThemeAlbumApiRequest() {
         a("2");
     }
 

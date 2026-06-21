@@ -24,8 +24,8 @@ public class ToggleStateManager extends BroadcastReceiver {
         intentFilter.addAction(A);
         com.censivn.C3DEngine.C3DEngine.d().registerReceiver(this, intentFilter);
         Handler handler = new Handler();
-        this.c = new A(handler);
-        this.d = new b(handler);
+        this.c = new TogglePanelManager(handler);
+        this.d = new ToggleAction(handler);
         com.censivn.C3DEngine.C3DEngine.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness"), false, this.c);
         com.censivn.C3DEngine.C3DEngine.d().getContentResolver().registerContentObserver(Settings.System.getUriFor("screen_brightness_mode"), false, this.c);
         com.censivn.C3DEngine.C3DEngine.d().getContentResolver().registerContentObserver(Uri.parse("content://settings/global/mobile_data"), false, this.d);

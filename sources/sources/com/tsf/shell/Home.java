@@ -52,13 +52,13 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     private ShellDataProvider o;
     private Locale p;
     private ShellContentManager r;
-    private final BroadcastReceiver d = new A();
+    private final BroadcastReceiver d = new ShellCoreInterface();
     private final int[] h = new int[2];
     private SpannableStringBuilder i = null;
     private boolean j = true;
     private boolean l = false;
     private boolean m = false;
-    private HashMap<Integer, a.InterfaceC0025a> q = new HashMap<>();
+    private HashMap<Integer, ShellCoreInterface.InterfaceC0025a> q = new HashMap<>();
     private boolean s = false;
     private boolean t = false;
     private int u = ACRAConstants.DEFAULT_SOCKET_TIMEOUT;
@@ -158,7 +158,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                         try {
                             i2 = com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.C3DEngine.d().getPackageName(), 0).versionCode;
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            ShellThemeProvider.printStackTrace();
                             i2 = -1;
                         }
                         if (i2 == -1 || i > i2) {
@@ -449,7 +449,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     }
 
     @Override // com.tsf.shell.ShellCoreInterface
-    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+    public int a(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a) {
         int i = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);
@@ -458,7 +458,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         return i;
     }
 
-    public int b(Intent intent, a.InterfaceC0025a interfaceC0025a) {
+    public int b(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a) {
         int i = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);
@@ -467,7 +467,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         return i;
     }
 
-    public int a(Intent intent, a.InterfaceC0025a interfaceC0025a, int i, int i2) {
+    public int a(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a, int i, int i2) {
         int i3 = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);
@@ -487,7 +487,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                     Toast.makeText(Home.c, b.i.activity_not_found, 0).show();
                 }
             });
-            e.printStackTrace();
+            ShellThemeProvider.printStackTrace();
         }
     }
 

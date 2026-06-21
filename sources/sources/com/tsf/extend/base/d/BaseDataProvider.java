@@ -51,7 +51,7 @@ public abstract class BaseDataProvider {
 
     public abstract com.tsf.extend.base.b.PagedListModel b();
 
-    public a() {
+    public BaseDataProvider() {
         if (b == null) {
             b = new f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.base.d.BaseDataProvider.1
                 /* JADX INFO: Access modifiers changed from: protected */

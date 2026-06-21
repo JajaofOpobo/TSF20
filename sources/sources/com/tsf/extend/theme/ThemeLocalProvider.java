@@ -37,7 +37,7 @@ public class ThemeLocalProvider {
         return h;
     }
 
-    private ai() {
+    private ThemeLocalProvider() {
     }
 
     public String b() {

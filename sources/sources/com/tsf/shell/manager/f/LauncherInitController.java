@@ -49,7 +49,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.ServiceFactory = new com.tsf.shell.f.h.WorkspaceStub();
         com.tsf.shell.manager.app.PanelStateManager = new com.tsf.shell.manager.m.SideMenuManager();
         com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.C3DEngine.d());
-        com.tsf.shell.manager.app.TaskScheduler = new d(eVar);
+        com.tsf.shell.manager.app.TaskScheduler = new ViewportController(eVar);
         com.tsf.shell.manager.app.StateHub = new n();
         com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.ItemAnimationController();
         com.tsf.shell.manager.app.Notifier = new com.tsf.shell.manager.n.ToastOverlayController();
@@ -82,7 +82,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.f.i.b.d.FolderShortcutItem.k();
         new com.tsf.shell.manager.o.EmptyStub();
         com.censivn.C3DEngine.a.d.d().a(new com.tsf.shell.f.i.a.WallpaperTouchHandler(new BaseRenderable()));
-        com.tsf.shell.manager.app.DataCoordinator = new b();
+        com.tsf.shell.manager.app.DataCoordinator = new WorkspaceScene();
         this.d = new BaseRenderable();
         this.e = new BaseRenderable();
         com.tsf.shell.manager.p.TipsDialogManager.a();
@@ -175,7 +175,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.DataCoordinator.a(new Runnable() { // from class: com.tsf.shell.manager.f.LauncherInitController.1
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g = true;
+                LauncherInitController.this.g = true;
                 if (runnable != null) {
                     runnable.run();
                 }
@@ -195,7 +195,7 @@ public class LauncherInitController extends f {
             @Override // java.lang.Runnable
             public void run() {
                 if (!zA) {
-                    c.this.c.visible(false);
+                    LauncherInitController.this.c.visible(false);
                 }
                 if (runnable != null) {
                     runnable.run();
@@ -211,12 +211,12 @@ public class LauncherInitController extends f {
         gVarN.a(new Runnable() { // from class: com.tsf.shell.manager.f.LauncherInitController.3
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g = true;
+                LauncherInitController.this.g = true;
                 gVarN.ac();
                 if (runnable != null) {
                     runnable.run();
                 }
-                c.this.c.mouseEnabled(true);
+                LauncherInitController.this.c.mouseEnabled(true);
             }
         }, z);
     }

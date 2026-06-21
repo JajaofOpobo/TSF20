@@ -21,7 +21,7 @@ public class KeyboardDataProvider extends com.tsf.extend.base.d.BaseDataProvider
     private String e;
     private com.tsf.extend.base.b.PagedListModel f = null;
 
-    private a() {
+    private KeyboardDataProvider() {
         this.c = "";
         this.d = "";
         this.e = "";

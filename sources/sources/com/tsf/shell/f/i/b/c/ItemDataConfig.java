@@ -186,14 +186,14 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
                 com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.1
                     @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                     public void run() {
-                        if (a.this.b.o || !a.this.q()) {
-                            com.tsf.shell.manager.app.WidgetManager.a(a.this);
+                        if (ItemDataConfig.this.b.o || !ItemDataConfig.this.q()) {
+                            com.tsf.shell.manager.app.WidgetManager.a(ItemDataConfig.this);
                             return;
                         }
-                        a.this.Z();
-                        a.this.ah();
-                        a.this.ag();
-                        a.this.ac();
+                        ItemDataConfig.this.Z();
+                        ItemDataConfig.this.ah();
+                        ItemDataConfig.this.ag();
+                        ItemDataConfig.this.ac();
                     }
                 });
                 return;
@@ -203,7 +203,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i3, i4) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.2
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.WidgetManager.a(a.this);
+                com.tsf.shell.manager.app.WidgetManager.a(ItemDataConfig.this);
             }
         });
     }
@@ -249,18 +249,18 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
         this.k.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.k) { // from class: com.tsf.shell.f.i.b.c.ItemDataConfig.3
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                a.this.n = true;
+                ItemDataConfig.this.n = true;
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                a.this.n = false;
+                ItemDataConfig.this.n = false;
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                a.this.ah();
-                a.this.ag();
+                ItemDataConfig.this.ah();
+                ItemDataConfig.this.ag();
             }
         });
         this.k.doubleSidedClickEnabled(true);
@@ -350,7 +350,7 @@ public class ItemDataConfig extends com.tsf.shell.f.i.PageItem implements com.ce
 
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
-            if (!a.this.m && com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
+            if (!ItemDataConfig.this.m && com.tsf.shell.manager.r.c.WidgetFeatureConfig.c) {
                 b();
             }
         }

@@ -26,7 +26,7 @@ public class PreferenceSettingB extends PreferenceSettingBase {
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
-                b.this.a.d(this.b);
+                PreferenceSettingB.this.a.d(this.b);
                 if (this.c) {
                     this.b = (float) (((double) this.b) + 0.01d);
                     if (this.b > 1.0f) {
@@ -40,14 +40,14 @@ public class PreferenceSettingB extends PreferenceSettingBase {
                         this.c = true;
                     }
                 }
-                b.this.a.a(b.this.d);
-                b.this.a.a();
+                PreferenceSettingB.this.a.a(PreferenceSettingB.this.d);
+                PreferenceSettingB.this.a.a();
                 GLES20.glFrontFace(2305);
-                b.this.a.dispatchDraw();
-                b.this.a.a(b.this.e);
-                b.this.a.d();
+                PreferenceSettingB.this.a.dispatchDraw();
+                PreferenceSettingB.this.a.a(PreferenceSettingB.this.e);
+                PreferenceSettingB.this.a.d();
                 GLES20.glFrontFace(2304);
-                b.this.a.dispatchDraw();
+                PreferenceSettingB.this.a.dispatchDraw();
                 GLES20.glFrontFace(2305);
             }
         };

@@ -255,7 +255,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
         a(i, iVar);
     }
 
-    public h(float f, float f2, float f3, float f4, float f5, float f6) {
+    public DesktopTouchHandlerH(float f, float f2, float f3, float f4, float f5, float f6) {
         this.j = 0.0f;
         this.k = 0.0f;
         this.j = f3;

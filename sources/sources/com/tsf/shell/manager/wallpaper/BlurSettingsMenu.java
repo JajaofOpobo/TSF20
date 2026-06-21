@@ -19,7 +19,7 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
         this.b = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
-                c.this.c.a(0, true);
+                BlurSettingsMenu.this.c.a(0, true);
             }
         };
         com.tsf.shell.manager.o.ThemeColorConstants.a(this.b, com.tsf.shell.manager.o.ThemeColorConstants.h);
@@ -39,7 +39,7 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
         this.c.a(new h.a() { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.3
             @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i) {
-                c.this.d = i;
+                BlurSettingsMenu.this.d = i;
                 com.tsf.shell.manager.app.LauncherAppInfo.b(i);
                 return true;
             }

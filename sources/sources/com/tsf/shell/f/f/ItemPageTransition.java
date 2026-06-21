@@ -6,7 +6,7 @@ public abstract class ItemPageTransition extends PageTransitionEffect {
 
     public ItemPageTransition(int i, int i2, boolean z) {
         super(i, i2, z);
-        this.a = new B();
+        this.a = new PageRenderBuffer();
         this.a.useVBO(false);
     }
 

@@ -48,7 +48,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
         Right
     }
 
-    public t(Context context, List<b> list, View.OnClickListener onClickListener) {
+    public ThemeBaseAdapter(Context context, List<b> list, View.OnClickListener onClickListener) {
         this.a = new ArrayList();
         this.c = null;
         this.b = context;

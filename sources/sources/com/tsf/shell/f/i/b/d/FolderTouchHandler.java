@@ -90,8 +90,8 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
                 }
                 w.a();
                 this.f = true;
-                Number3d.TEMPNUMBER3D2.reset();
-                Number3d number3dLocalToGlobal = this.c.localToGlobal(Number3d.TEMPNUMBER3D2);
+                Number3WidgetItemLayout.TEMPNUMBER3D2.reset();
+                Number3d number3dLocalToGlobal = this.c.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D2);
                 number3dLocalToGlobal.y += this.a.aF().m();
                 this.c.position().setAllFrom(number3dLocalToGlobal);
                 this.a.aF().a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.c);
@@ -173,52 +173,52 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
                 this.q = new Runnable() { // from class: com.tsf.shell.f.i.b.d.FolderTouchHandler.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.p = false;
-                        if (!a.this.d) {
+                        WidgetTouchHandler.this.p = false;
+                        if (!WidgetTouchHandler.this.d) {
                             com.tsf.shell.manager.app.WidgetAnimator.a(fArrA[0], fArrA[1]);
-                            int iB = a.this.a.b(a.this.n, a.this.o);
+                            int iB = WidgetTouchHandler.this.a.b(WidgetTouchHandler.this.n, WidgetTouchHandler.this.o);
                             if (iB == -2) {
-                                a.this.d = true;
-                                a.this.a.aF().c(false);
-                                a.this.a.a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) a.this.c);
+                                WidgetTouchHandler.this.d = true;
+                                WidgetTouchHandler.this.a.aF().c(false);
+                                WidgetTouchHandler.this.a.a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) WidgetTouchHandler.this.c);
                                 return;
                             }
-                            if (a.this.m != iB) {
+                            if (WidgetTouchHandler.this.m != iB) {
                                 switch (iB) {
                                     case -4:
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a(false);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.b(true);
                                         return;
                                     case -3:
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a(true);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.b(false);
                                         return;
                                     case -2:
                                     default:
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a(false);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.b(false);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a();
-                                        a.this.a.aF().k();
+                                        WidgetTouchHandler.this.a.aF().k();
                                         break;
                                     case ItemInfo.NO_ID /* -1 */:
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a(false);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.b(false);
-                                        a.this.a.aF();
+                                        WidgetTouchHandler.this.a.aF();
                                         FolderItemGrid.a();
                                         return;
                                 }
                             }
-                            if (a.this.a.aF().a(a.this.c, a.this.m, iB)) {
-                                a.this.m = iB;
+                            if (WidgetTouchHandler.this.a.aF().a(WidgetTouchHandler.this.c, WidgetTouchHandler.this.m, iB)) {
+                                WidgetTouchHandler.this.m = iB;
                             }
                         }
                     }
@@ -235,12 +235,12 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
     public void e(MotionEvent motionEvent) {
         if (this.c.parent() instanceof g) {
             g gVar = (FolderItemGrid) this.c.parent();
-            Number3d.TEMPNUMBER3D2.reset();
-            Number3d.TEMPNUMBER3D3.reset();
-            this.c.localToGlobal(Number3d.TEMPNUMBER3D2);
-            Number3d number3d = Number3d.TEMPNUMBER3D2;
+            Number3WidgetItemLayout.TEMPNUMBER3D2.reset();
+            Number3WidgetItemLayout.TEMPNUMBER3D3.reset();
+            this.c.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D2);
+            Number3d number3d = Number3WidgetItemLayout.TEMPNUMBER3D2;
             number3d.y = gVar.m() + number3d.y;
-            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.c).a(Number3d.TEMPNUMBER3D2, Number3d.TEMPNUMBER3D3);
+            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.c).a(Number3WidgetItemLayout.TEMPNUMBER3D2, Number3WidgetItemLayout.TEMPNUMBER3D3);
         }
     }
 

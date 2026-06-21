@@ -17,7 +17,7 @@ public class ThemeSearchPage extends ThemeListView {
     boolean l;
     protected List<ThemeBaseAdapter.b> m;
 
-    public r(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
+    public ThemeSearchPage(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
         super(context, pageActivity, str, iVar);
         this.l = true;
         this.m = new ArrayList();

@@ -62,59 +62,59 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
                 Home.b().startActivity(intent);
             }
         });
-        this.c.add(new d(x.c(b.i.text_live_wallpapers)));
+        this.c.add(new LiveWallpaperMenuItem(x.c(b.i.text_live_wallpapers)));
         this.a = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(320.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(520.0f));
         this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.3
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
-                return b.this.c.size();
+                return WallpaperMenuPanel.this.c.size();
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
-                return (i) b.this.c.get(i);
+                return (i) WallpaperMenuPanel.this.c.get(i);
             }
         });
         this.a.a(new f() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.4
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
             public void a(i iVar, int i, MotionEvent motionEvent) {
                 w.b();
-                ((c) b.this.c.get(i)).a();
+                ((c) WallpaperMenuPanel.this.c.get(i)).a();
             }
         });
-        ArrayList<a.C0095a> arrayList = new ArrayList<>();
-        a.C0095a c0095a = new a.C0095a(b.d.wallpaper_setting_scrollable, x.c(b.i.text_scrollable), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.5
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        ArrayList<WallpaperPreviewRenderer.C0095a> arrayList = new ArrayList<>();
+        WallpaperPreviewRenderer.C0095a c0095a = new WallpaperPreviewRenderer.C0095a(b.d.wallpaper_setting_scrollable, x.c(b.i.text_scrollable), new WallpaperPreviewRenderer.C0095WallpaperPreviewRenderer.C0096a() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.5
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WallpaperPreviewRenderer.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.b.ConfigManager.Y() == ShellWallpaperManager.a;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WallpaperPreviewRenderer.C0096a
             public void b() {
                 com.tsf.shell.manager.b.ConfigManager.l(ShellWallpaperManager.a);
                 com.tsf.shell.manager.app.LauncherAppInfo.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WallpaperPreviewRenderer.C0096a
             public void c() {
                 com.tsf.shell.manager.b.ConfigManager.l(ShellWallpaperManager.b);
                 com.tsf.shell.manager.app.LauncherAppInfo.d();
             }
         });
-        a.C0095a.C0096a c0096a = new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.6
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        WallpaperPreviewRenderer.C0095WallpaperPreviewRenderer.C0096a c0096a = new WallpaperPreviewRenderer.C0095WallpaperPreviewRenderer.C0096a() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.6
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WallpaperPreviewRenderer.C0096a
             public boolean a() {
                 return true;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WallpaperPreviewRenderer.C0096a
             public void c() {
-                b.this.b.changeMenu(b.this.d);
-                b.this.d.setParentMenu(b.this);
+                WallpaperMenuPanel.this.b.changeMenu(WallpaperMenuPanel.this.d);
+                WallpaperMenuPanel.this.d.setParentMenu(WallpaperMenuPanel.this);
             }
         };
         if (!com.tsf.shell.manager.app.LauncherAppInfo.f()) {
-            arrayList.add(new a.C0095a(b.d.wallpaper_setting_blur, x.c(b.i.text_blur), c0096a));
+            arrayList.add(new WallpaperPreviewRenderer.C0095a(b.d.wallpaper_setting_blur, x.c(b.i.text_blur), c0096a));
         }
         arrayList.add(c0095a);
         setFunctions(arrayList);
@@ -168,7 +168,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
         public C0150b(String str, int i) {
             super(str);
-            this.a = new a();
+            this.a = new WallpaperPreviewRenderer();
             this.a.a(i);
             a(this.a);
         }

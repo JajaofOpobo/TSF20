@@ -9,7 +9,7 @@ import com.tsf.b;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceSettingA extends PreferenceSettingBase {
     private TextureElement a;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable b;
     private com.censivn.C3DEngine.b.f.BaseRenderable d;
     private com.censivn.C3DEngine.b.f.BaseRenderable e;
     private TextureElement f;
@@ -28,7 +28,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         public C0162a(String str) {
             super(com.censivn.C3DEngine.b.b.ScreenConstants.a(167.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(164.0f), false);
             this.e = ((-com.censivn.C3DEngine.b.b.ScreenConstants.a(164.0f)) / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
-            textures().addElement(a.this.f);
+            textures().addElement(PreferenceSettingA.this.f);
             this.d = new LabelRenderable();
             this.d.d(30);
             this.d.a(str);
@@ -77,7 +77,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         this.j = false;
         this.d = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.e = new com.censivn.C3DEngine.b.f.BaseRenderable();
-        this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(12, 100, 300, VEasing.Linear.easeNone);
+        this.b = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(12, 100, 300, VEasing.Linear.easeNone);
         int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f);
         int iA2 = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
         float f = (-((iA * 6) + (iA2 * 5))) / 2.0f;
@@ -88,7 +88,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             if (i2 >= 12) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(11 - i2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.b.a(11 - i2);
             bVarA.a(i2 % 3, i2 / 3, 1, 1, iA, iA);
             int i3 = i2 / 6;
             if ((i2 % 6) % 2 == 0) {
@@ -97,7 +97,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
             bVarA.i().x = (r2 * (iA + iA2)) + f + (iA / 2.0f);
             bVarA.i().y = (f2 - (i3 * (iA + iA2))) - (iA / 2.0f);
             Number3d number3d = new Number3d();
-            number3d.setAllFrom(bVarA.m);
+            number3PreferenceSettingD.setAllFrom(bVarA.m);
             bVarA.h();
             bVarA.a(number3d);
             i = i2 + 1;
@@ -112,24 +112,24 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         String[] strArr = {"Social", "Games", "Lifestyle", "Tools"};
         for (int i4 = 0; i4 < 4; i4++) {
             C0162a c0162a = new C0162a(strArr[i4]);
-            c0162a.alpha(0.0f);
-            c0162a.position().x = this.i + (i4 * (this.g + this.h));
+            c0162PreferenceSettingA.alpha(0.0f);
+            c0162PreferenceSettingA.position().x = this.i + (i4 * (this.g + this.h));
             this.e.addChild(c0162a);
         }
         this.k = new Runnable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingA.1
             @Override // java.lang.Runnable
             public void run() {
-                if (a.this.j) {
-                    a.this.h();
-                    com.censivn.C3DEngine.C3DEngine.a().b(a.this.l, 4000L);
+                if (PreferenceSettingA.this.j) {
+                    PreferenceSettingA.this.h();
+                    com.censivn.C3DEngine.C3DEngine.a().b(PreferenceSettingA.this.l, 4000L);
                 }
             }
         };
         this.l = new Runnable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingA.2
             @Override // java.lang.Runnable
             public void run() {
-                a.this.m();
-                com.censivn.C3DEngine.C3DEngine.a().b(a.this.k, 4000L);
+                PreferenceSettingA.this.m();
+                com.censivn.C3DEngine.C3DEngine.a().b(PreferenceSettingA.this.k, 4000L);
             }
         };
     }
@@ -143,7 +143,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
         float fA5 = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         float fA6 = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
         for (int i = 0; i < 12; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.b.a(i);
             int i2 = i % 3;
             float f = ((i / 3) * (this.h + this.g)) + this.i;
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
@@ -183,7 +183,7 @@ public class PreferenceSettingA extends PreferenceSettingBase {
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
         for (int i = 0; i < 12; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.b.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.b.a(i);
             Number3d number3d = (Number3d) bVarA.a();
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.f(number3d.x);

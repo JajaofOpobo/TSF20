@@ -47,7 +47,7 @@ public class RateDialog extends BaseRenderable {
         this.u.b();
         d = (int) this.u.minY();
         c = ((g + f) - d) + f + h + i + h;
-        this.o = new d(b, c, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
+        this.o = new TexturedBackground(b, c, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(19.0f, 119.0f, 1.0f, 101.0f, 138.0f, 160.0f), b.d.rate_window_shadow);
         this.o.c(b, c);
         this.p = new GridRenderable(b, c, false);
         this.p.setDefaultColor(new Color4(-2236963));
@@ -56,12 +56,12 @@ public class RateDialog extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.f.ResourceGridRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 super.onDrawStart();
-                position().y = ((b.c - b.g) / 2.0f) + b.this.p.position().y;
+                position().y = ((b.c - b.g) / 2.0f) + RateDialog.this.p.position().y;
             }
         };
         this.q.a(b.d.rate_window_blue_background);
         this.q.a(b, g);
-        this.n = new a();
+        this.n = new RateFaceView();
         this.n.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(120.0f);
         this.q.addChild(this.n);
         m = ((c / 2.0f) - g) - f;
@@ -93,22 +93,22 @@ public class RateDialog extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void b() {
-                b.this.n.a();
+                RateDialog.this.n.a();
             }
 
             @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void c() {
-                b.this.n.b();
+                RateDialog.this.n.b();
             }
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                float f2 = (b.this.t.position().y - (b.h / 2.0f)) + b.this.p.position().y;
-                float f3 = b.this.p.points().getAsNumber3dPX(0).y;
+                float f2 = (RateDialog.this.t.position().y - (b.h / 2.0f)) + RateDialog.this.p.position().y;
+                float f3 = RateDialog.this.p.points().getAsNumber3dPX(0).y;
                 float f4 = ((f2 - f3) * 0.25f) + f3;
-                b.this.p.points().setYPX(0, f4);
-                b.this.p.points().setYPX(1, f4);
-                b.this.p.updatePointsVBO();
+                RateDialog.this.p.points().setYPX(0, f4);
+                RateDialog.this.p.points().setYPX(1, f4);
+                RateDialog.this.p.updatePointsVBO();
             }
         };
         this.t.b(45);
@@ -147,7 +147,7 @@ public class RateDialog extends BaseRenderable {
         a(this.p, 0.0f, 750, 0, com.censivn.C3DEngine.b.g.a.n, new Runnable() { // from class: com.tsf.shell.manager.j.RateDialog.5
             @Override // java.lang.Runnable
             public void run() {
-                b.this.a.c();
+                RateDialog.this.a.c();
             }
         });
         a(this.r, l, 750, 0, com.censivn.C3DEngine.b.g.a.n, null);

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable {
     private static com.tsf.shell.f.a.a.a i;
     private static TextureElement j;
     private static TextureElement k;
@@ -56,7 +56,7 @@ public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.a.TextureSp
         n.add(this);
     }
 
-    public a() {
+    public PageThumbnailRenderer() {
         super(16, 32, 32, 32, null, true);
         this.g = false;
         this.h = new ArrayList<>();
@@ -94,7 +94,7 @@ public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.a.TextureSp
         }
     }
 
-    @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         boolean z;
         super.onDrawStart();

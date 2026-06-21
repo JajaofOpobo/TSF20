@@ -56,7 +56,7 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
         void a();
     }
 
-    public e(Context context) {
+    public ThemeDialogFragment(Context context) {
         super(context);
         this.a = false;
         this.w = null;
@@ -67,7 +67,7 @@ public class ThemeDialogFragment extends BaseDialog implements DialogInterface {
         e();
     }
 
-    public e(Context context, int i2) {
+    public ThemeDialogFragment(Context context, int i2) {
         super(context, i2);
         this.a = false;
         this.w = null;

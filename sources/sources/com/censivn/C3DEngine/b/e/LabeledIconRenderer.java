@@ -88,16 +88,16 @@ public class LabeledIconRenderer extends IconLabelRenderer {
 
     /* JADX INFO: renamed from: com.censivn.C3DEngine.b.e.LabeledIconRenderer$b, reason: collision with other inner class name */
     class C0028b extends com.censivn.C3DEngine.b.f.BaseRenderable {
-        private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b;
+        private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable b;
         private LabelRenderable c = new LabelRenderable();
-        private com.censivn.C3DEngine.b.f.a.SpriteItemData d;
-        private com.censivn.C3DEngine.b.f.a.SpriteItemData e;
+        private com.censivn.C3DEngine.b.f.sprite.SpriteItemData d;
+        private com.censivn.C3DEngine.b.f.sprite.SpriteItemData e;
 
         public C0028b() {
             this.c.d(50);
             this.c.position().x = b.a + com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
             this.c.b(1);
-            this.b = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, b.a, b.a * 2, b.a);
+            this.b = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(2, b.a, b.a * 2, b.a);
             this.b.position().x = b.a / 2.0f;
             this.d = this.b.a(0);
             this.d.b(0, 0, 1, 1);

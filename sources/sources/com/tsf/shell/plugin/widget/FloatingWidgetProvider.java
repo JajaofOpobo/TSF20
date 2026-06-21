@@ -22,7 +22,7 @@ public class FloatingWidgetProvider {
     }
 
     public static a a(Context context, String str, String str2) {
-        a aVar = new a();
+        a aVar = new FloatingWidgetProvider();
         aVar.a = context;
         aVar.b = context.getPackageName();
         aVar.f = str;

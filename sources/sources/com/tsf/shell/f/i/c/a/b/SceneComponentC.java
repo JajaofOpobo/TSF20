@@ -34,16 +34,16 @@ public class SceneComponentC extends com.tsf.shell.f.i.c.a.FolderSceneNodesyncTe
     }
 
     private void e() {
-        f = new k();
-        g = new o();
-        e = new m();
-        h = new l();
-        this.p = new h(VInformation.Scale());
+        f = new SceneComponentK();
+        g = new SceneComponentO();
+        e = new SceneComponentM();
+        h = new SceneComponentL();
+        this.p = new SceneComponentH(VInformation.Scale());
         this.p.position().y = 80.0f;
         this.p.scale().setAll(0.8f, 0.8f, 0.8f);
         this.p.a(-13521439);
         addChild(this.p);
-        this.o = new h(VInformation.Scale());
+        this.o = new SceneComponentH(VInformation.Scale());
         this.o.position().y = -70.0f;
         this.o.b(0);
         this.o.a(-13421773);
@@ -72,10 +72,10 @@ public class SceneComponentC extends com.tsf.shell.f.i.c.a.FolderSceneNodesyncTe
         if (!this.l) {
             this.l = true;
             a(DeferredItemGroup.d.widget_preview_cubeclock_shadow, new VObject3d[0]);
-            this.k.add(new a(AppPreviewLabel));
-            this.k.add(new a(ItemGroupBase));
-            this.k.add(new a(ItemStubHelper));
-            this.k.add(new a(h));
+            this.k.add(new SceneComponentA(AppPreviewLabel));
+            this.k.add(new SceneComponentA(ItemGroupBase));
+            this.k.add(new SceneComponentA(ItemStubHelper));
+            this.k.add(new SceneComponentA(h));
             c(z);
         }
     }

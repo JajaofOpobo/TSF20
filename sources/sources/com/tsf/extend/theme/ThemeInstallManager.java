@@ -111,7 +111,7 @@ public class ThemeInstallManager {
         }
     }
 
-    private ah() {
+    private ThemeInstallManager() {
     }
 
     public static ah a() {

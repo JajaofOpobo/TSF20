@@ -50,7 +50,7 @@ public abstract class LoadingLayout extends FrameLayout implements com.tsf.exten
 
     protected abstract int getDefaultDrawableResId();
 
-    public d(Context context, PullToRefreshBase.b bVar, PullToRefreshBase.h hVar, TypedArray typedArray) {
+    public LoadingLayout(Context context, PullToRefreshBase.b bVar, PullToRefreshBase.h hVar, TypedArray typedArray) {
         ColorStateList colorStateList;
         ColorStateList colorStateList2;
         Drawable drawable;

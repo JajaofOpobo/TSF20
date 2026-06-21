@@ -59,23 +59,23 @@ public abstract class AlarmDataEntry {
             Uv[] uvArr = this.e;
             Uv uv = new Uv();
             uvArr[0] = uv;
-            uv.u = (this.a + this.c) / e.this.l;
-            uv.v = (this.b + this.d) / e.this.m;
+            uv.u = (this.a + this.c) / AlarmDataEntry.this.l;
+            uv.v = (this.b + this.d) / AlarmDataEntry.this.m;
             Uv[] uvArr2 = this.e;
             Uv uv2 = new Uv();
             uvArr2[1] = uv2;
-            uv2.u = this.a / e.this.l;
-            uv2.v = (this.b + this.d) / e.this.m;
+            uv2.u = this.a / AlarmDataEntry.this.l;
+            uv2.v = (this.b + this.d) / AlarmDataEntry.this.m;
             Uv[] uvArr3 = this.e;
             Uv uv3 = new Uv();
             uvArr3[2] = uv3;
-            uv3.u = (this.a + this.c) / e.this.l;
-            uv3.v = this.b / e.this.m;
+            uv3.u = (this.a + this.c) / AlarmDataEntry.this.l;
+            uv3.v = this.b / AlarmDataEntry.this.m;
             Uv[] uvArr4 = this.e;
             Uv uv4 = new Uv();
             uvArr4[3] = uv4;
-            uv4.u = this.a / e.this.l;
-            uv4.v = this.b / e.this.m;
+            uv4.u = this.a / AlarmDataEntry.this.l;
+            uv4.v = this.b / AlarmDataEntry.this.m;
         }
 
         public void a(VRectangle vRectangle) {

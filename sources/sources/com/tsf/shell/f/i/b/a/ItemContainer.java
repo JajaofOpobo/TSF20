@@ -73,9 +73,9 @@ public class ItemContainer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (!a.this.a) {
-                    position().y = ((float) Math.sin(this.b * ((double) a.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b;
-                    a.c(a.this);
+                if (!ItemContainer.this.a) {
+                    position().y = ((float) Math.sin(this.b * ((double) ItemContainer.this.g))) * 50.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b;
+                    a.c(ItemContainer.this);
                 }
             }
         };
@@ -83,9 +83,9 @@ public class ItemContainer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 com.censivn.C3DEngine.C3DEngine.e().c();
-                if (!a.this.a && a.this.k != null) {
-                    a.this.k.d((float) ((Math.cos(1.0d) * 2.0d) - (Math.random() * 2.0d)));
-                    a.this.j.a();
+                if (!ItemContainer.this.a && ItemContainer.this.k != null) {
+                    ItemContainer.this.k.d((float) ((Math.cos(1.0d) * 2.0d) - (Math.random() * 2.0d)));
+                    ItemContainer.this.j.a();
                 }
             }
 
@@ -100,7 +100,7 @@ public class ItemContainer extends BaseRenderable {
         GridRenderable kVar = new GridRenderable(f, f) { // from class: com.tsf.shell.f.i.b.a.ItemContainer.3
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (!a.this.a) {
+                if (!ItemContainer.this.a) {
                     rotation().z += 25.0f;
                 }
             }
@@ -117,7 +117,7 @@ public class ItemContainer extends BaseRenderable {
         this.f.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.f) { // from class: com.tsf.shell.f.i.b.a.ItemContainer.4
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                a.this.e();
+                ItemContainer.this.e();
             }
         });
         this.f.setAABBPX((-180.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b, (-300.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f, 180.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, 0.0f);
@@ -144,12 +144,12 @@ public class ItemContainer extends BaseRenderable {
         this.e.addChild(this.i);
         this.e.setAnimationObjectState(true);
         this.e.setHighPriorityAnimationObjectState(false);
-        ArrayList<com.censivn.C3DEngine.c.a.a.DampedSpringConstraint> arrayListB = this.k.b();
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = arrayListB.get(this.m);
+        ArrayList<com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint> arrayListB = this.k.b();
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = arrayListB.get(this.m);
         bVar.d = false;
         bVar.f = false;
         bVar.e = false;
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2 = arrayListB.get(this.n);
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2 = arrayListB.get(this.n);
         bVar2.d = false;
         bVar2.f = false;
         bVar2.e = false;

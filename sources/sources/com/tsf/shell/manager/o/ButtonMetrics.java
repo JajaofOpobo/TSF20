@@ -206,23 +206,23 @@ public class ButtonMetrics {
         return (int) (i * this.z);
     }
 
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable c() {
-        return new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, 0, this.V, this.W);
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable c() {
+        return new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(2, 0, this.V, this.W);
     }
 
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable b() {
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable b() {
         return a(c());
     }
 
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar) {
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(0);
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable a(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar) {
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = aVar.a(0);
         bVarA.a(0, this.E - 1, 0, 0, this.V, this.I + 2);
         bVarA.i().x = this.X;
         bVarA.i().y = this.Y;
         bVarA.a(true);
         bVarA.a(0.0f, this.E - 1, this.V, this.I + 2);
         bVarA.h();
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = aVar.a(1);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = aVar.a(1);
         bVarA2.a(this.F - 1, this.G - 1, 0, 0, this.J + 2, this.K + 2);
         bVarA2.i().x = this.Z;
         bVarA2.i().y = this.aa;

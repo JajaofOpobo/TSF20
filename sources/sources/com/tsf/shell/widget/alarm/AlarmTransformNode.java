@@ -74,7 +74,7 @@ public class AlarmTransformNode extends VObject3dContainer {
         VTween.to(new VValueTweenTarget(), 500, new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmTransformNode.1
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onComplete() {
-                k.this.b();
+                AlarmTransformNode.this.b();
             }
         });
     }

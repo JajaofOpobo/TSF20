@@ -51,12 +51,12 @@ public class SceneComponentH extends VObject3dContainer {
         addChild(this.c);
         addChild(this.d);
         this.h = new ItemGroupBase();
-        this.f = new i();
-        this.g = new i();
+        this.f = new SceneComponentI();
+        this.g = new SceneComponentI();
         this.i = new AppPreviewLabel();
-        this.j = new p();
-        this.k = new j();
-        this.m = new n();
+        this.j = new SceneComponentP();
+        this.k = new SceneComponentJ();
+        this.m = new SceneComponentN();
         this.e.a(this.m);
         b(SceneComponentH());
     }

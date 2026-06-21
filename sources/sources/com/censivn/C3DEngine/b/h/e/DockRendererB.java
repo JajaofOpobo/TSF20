@@ -43,7 +43,7 @@ public class DockRendererB extends BaseRenderable {
     private boolean y;
     private boolean z;
 
-    public b(float f, float f2, float f3, float f4, float f5, float f6) {
+    public DockRendererB(float f, float f2, float f3, float f4, float f5, float f6) {
         this(null, f, f2, f3, f4, f5, f6);
     }
 
@@ -55,7 +55,7 @@ public class DockRendererB extends BaseRenderable {
         this.z = false;
     }
 
-    public b(i iVar, float f, float f2, float f3, float f4, float f5, float f6) {
+    public DockRendererB(i iVar, float f, float f2, float f3, float f4, float f5, float f6) {
         this.l = 0.0f;
         this.m = 0.0f;
         this.n = 0.0f;

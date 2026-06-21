@@ -48,12 +48,12 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageNumberBadge.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    com.tsf.shell.manager.app.TaskScheduler.b(r.this);
-                    if (r.this.a.id != 0) {
-                        com.censivn.C3DEngine.C3DEngine.g().a(r.this.a);
+                    com.tsf.shell.manager.app.TaskScheduler.b(PageNumberBadge.this);
+                    if (PageNumberBadge.this.a.id != 0) {
+                        com.censivn.C3DEngine.C3DEngine.g().a(PageNumberBadge.this.a);
                     }
-                    if (r.this.b.id != 0) {
-                        com.censivn.C3DEngine.C3DEngine.g().a(r.this.b);
+                    if (PageNumberBadge.this.b.id != 0) {
+                        com.censivn.C3DEngine.C3DEngine.g().a(PageNumberBadge.this.b);
                     }
                 }
             };
@@ -100,9 +100,9 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
         this.c.add(aVar);
     }
 
-    private class A extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
-        private com.censivn.C3DEngine.b.f.a.SpriteItemData c;
-        private com.censivn.C3DEngine.b.f.a.SpriteItemData d;
+    private class A extends com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable {
+        private com.censivn.C3DEngine.b.f.sprite.SpriteItemData c;
+        private com.censivn.C3DEngine.b.f.sprite.SpriteItemData d;
         private float e;
         private float f;
         private int g;
@@ -160,7 +160,7 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             dVar.a(255);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this, VEasing.Back.easeIn, dVar);
-            r.this.addChild(this);
+            PageNumberBadge.this.addChild(this);
         }
 
         public void c() {
@@ -171,7 +171,7 @@ public class PageNumberBadge extends com.censivn.C3DEngine.b.f.BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageNumberBadge.a.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    r.this.a(a.this);
+                    PageNumberBadge.this.a(AlignmentOverlay.this);
                 }
             };
             switch (SelectionFrame) {

@@ -23,7 +23,7 @@ public class AddItemButton extends e {
         this.c.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.c) { // from class: com.tsf.shell.manager.m.AddItemButton.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                c.this.i();
+                AddItemButton.this.i();
             }
         });
         this.c.visible(false);
@@ -58,7 +58,7 @@ public class AddItemButton extends e {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.AddItemButton.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    c.this.c.visible(false);
+                    AddItemButton.this.c.visible(false);
                 }
             };
             dVar.a(0);

@@ -3,11 +3,11 @@ package com.tsf.shell.manager.j;
 import com.censivn.C3DEngine.api.element.TextureElement;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class TexturedBackground extends com.censivn.C3DEngine.b.f.b.NinePatchRenderable {
+public class TexturedBackground extends com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable {
     private TextureElement a;
     private int d;
 
-    public TexturedBackground(float f, float f2, float f3, com.censivn.C3DEngine.b.f.b.NinePatchBounds bVar, int i) {
+    public TexturedBackground(float f, float f2, float f3, com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds bVar, int i) {
         super(f, f2, f3, bVar);
         this.d = i;
         this.a = new TextureElement(0, false);

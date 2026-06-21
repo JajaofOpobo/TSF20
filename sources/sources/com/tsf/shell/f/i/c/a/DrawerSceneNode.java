@@ -69,7 +69,7 @@ public abstract class DrawerSceneNode<Params, Result> {
     protected abstract Result a(Params... paramsArr);
 
     static {
-        b = a() ? new a() : Executors.newSingleThreadExecutor(PendingItemGroup);
+        b = a() ? new FolderSceneNode() : Executors.newSingleThreadExecutor(PendingItemGroup);
         j = b;
     }
 
@@ -94,7 +94,7 @@ public abstract class DrawerSceneNode<Params, Result> {
                     try {
                         runnable.run();
                     } finally {
-                        a.this.a();
+                        FolderSceneNode.this.a();
                     }
                 }
             });

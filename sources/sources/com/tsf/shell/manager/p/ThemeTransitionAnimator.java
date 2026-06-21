@@ -15,14 +15,14 @@ public class ThemeTransitionAnimator {
     private float d = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
 
     public void a() {
-        this.a = new b();
+        this.a = new GestureTipElement();
         com.censivn.C3DEngine.a.d.d().a(false);
         com.censivn.C3DEngine.b.c.KeyboardHandler.c();
         com.tsf.shell.manager.app.ObserverManager.b(Home.b());
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.1
             @Override // java.lang.Runnable
             public void run() {
-                a.this.b();
+                ThemeTransitionAnimator.this.b();
             }
         }, 500L);
     }
@@ -52,12 +52,12 @@ public class ThemeTransitionAnimator {
             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    a.this.a.b();
+                    ThemeTransitionAnimator.this.a.b();
                     com.tsf.shell.manager.app.ServiceFactory.l();
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.2.1.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            a.this.c();
+                            ThemeTransitionAnimator.this.c();
                         }
                     }, 300L);
                 }
@@ -100,20 +100,20 @@ public class ThemeTransitionAnimator {
 
         @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
-            a.this.a.position().x = this.a + ((this.b - this.a) * f);
-            a.this.a.position().y = this.c + ((this.d - this.c) * f);
+            ThemeTransitionAnimator.this.a.position().x = this.a + ((this.b - this.a) * f);
+            ThemeTransitionAnimator.this.a.position().y = this.c + ((this.d - this.c) * f);
             com.tsf.shell.manager.app.StateHub.a(this.e + ((this.f - this.e) * f), this.C + ((0.0f - this.C) * f), this.e, this.C);
         }
 
         @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
             com.censivn.C3DEngine.b.g._b.TweenTargetWrapper bVar = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
-            float f = a.this.a.position().x;
-            float f2 = a.this.a.position().y;
+            float f = ThemeTransitionAnimator.this.a.position().x;
+            float f2 = ThemeTransitionAnimator.this.a.position().y;
             float fB = com.tsf.shell.manager.app.StateHub.r().b(1);
             float f3 = fB - (com.censivn.C3DEngine.b.b.ScreenConstants.F / 2.0f);
             float f4 = this.d - (com.censivn.C3DEngine.b.b.ScreenConstants.A - f3);
-            a.this.a.a(-30.0f);
+            ThemeTransitionAnimator.this.a.a(-30.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, 1500, new AnonymousClass1(f, f3, f2, f4, fB));
         }
 
@@ -135,8 +135,8 @@ public class ThemeTransitionAnimator {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
-                a.this.a.position().x = this.a + ((this.b - this.a) * f);
-                a.this.a.position().y = this.c + ((this.d - this.c) * f);
+                ThemeTransitionAnimator.this.a.position().x = this.a + ((this.b - this.a) * f);
+                ThemeTransitionAnimator.this.a.position().y = this.c + ((this.d - this.c) * f);
                 com.tsf.shell.manager.app.StateHub.a(AnonymousClass3.this.f + ((this.e - AnonymousClass3.this.f) * f), ((AnonymousClass3.this.C - 0.0f) * f) + 0.0f, AnonymousClass3.this.e, AnonymousClass3.this.C);
             }
 
@@ -147,18 +147,18 @@ public class ThemeTransitionAnimator {
                     public void a() {
                         com.tsf.shell.manager.app.ServiceFactory.m();
                         com.tsf.shell.manager.app.StateHub.x();
-                        a.this.a.position().x = 0.0f;
-                        a.this.a.position().y = 0.0f;
+                        ThemeTransitionAnimator.this.a.position().x = 0.0f;
+                        ThemeTransitionAnimator.this.a.position().y = 0.0f;
                         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.3.1.1.1
                             @Override // java.lang.Runnable
                             public void run() {
-                                a.this.d();
+                                ThemeTransitionAnimator.this.d();
                             }
                         }, 700L);
                     }
                 };
                 dVar.a(0);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 500, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(ThemeTransitionAnimator.this.a, 500, dVar);
             }
         }
     }
@@ -175,7 +175,7 @@ public class ThemeTransitionAnimator {
 
             @Override // java.lang.Runnable
             public void run() {
-                a.this.a.b();
+                ThemeTransitionAnimator.this.a.b();
                 com.censivn.C3DEngine.C3DEngine.a().b(new RunnableC01371(), 300L);
             }
 
@@ -201,8 +201,8 @@ public class ThemeTransitionAnimator {
 
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
-                            com.tsf.shell.manager.app.StateHub.s().b(a.this.b * f);
-                            com.tsf.shell.manager.app.StateHub.s().a(a.this.c * f);
+                            com.tsf.shell.manager.app.StateHub.s().b(ThemeTransitionAnimator.this.b * f);
+                            com.tsf.shell.manager.app.StateHub.s().a(ThemeTransitionAnimator.this.c * f);
                         }
 
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -210,8 +210,8 @@ public class ThemeTransitionAnimator {
                             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.4.1.1.1.1.1
                                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                                 public void a(float f) {
-                                    com.tsf.shell.manager.app.StateHub.s().b(a.this.b - ((a.this.b * 2.0f) * f));
-                                    com.tsf.shell.manager.app.StateHub.s().a(a.this.c - ((a.this.c * 2.0f) * f));
+                                    com.tsf.shell.manager.app.StateHub.s().b(ThemeTransitionAnimator.this.b - ((ThemeTransitionAnimator.this.b * 2.0f) * f));
+                                    com.tsf.shell.manager.app.StateHub.s().a(ThemeTransitionAnimator.this.c - ((ThemeTransitionAnimator.this.c * 2.0f) * f));
                                 }
 
                                 @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -219,8 +219,8 @@ public class ThemeTransitionAnimator {
                                     com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.ThemeTransitionAnimator.4.1.1.1.1.1.1
                                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                                         public void a(float f) {
-                                            com.tsf.shell.manager.app.StateHub.s().b((-a.this.b) + ((a.this.b + com.tsf.shell.manager.app.StateHub.s().a(1)) * f));
-                                            com.tsf.shell.manager.app.StateHub.s().a((-a.this.c) + (a.this.c * f));
+                                            com.tsf.shell.manager.app.StateHub.s().b((-ThemeTransitionAnimator.this.b) + ((ThemeTransitionAnimator.this.b + com.tsf.shell.manager.app.StateHub.s().a(1)) * f));
+                                            com.tsf.shell.manager.app.StateHub.s().a((-ThemeTransitionAnimator.this.c) + (ThemeTransitionAnimator.this.c * f));
                                         }
 
                                         @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -228,19 +228,19 @@ public class ThemeTransitionAnimator {
                                             com.tsf.shell.manager.app.StateHub.s().a((g) null);
                                             com.tsf.shell.manager.app.StateHub.s().d((MotionEvent) null);
                                             com.tsf.shell.manager.app.StateHub.g();
-                                            a.this.e();
+                                            ThemeTransitionAnimator.this.e();
                                         }
                                     };
                                     dVar2.f(0.0f);
                                     dVar2.h(0.0f);
-                                    com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 1000, dVar2);
-                                    a.this.a.a(20.0f);
+                                    com.censivn.C3DEngine.b.g.TweenUtils.a(ThemeTransitionAnimator.this.a, 1000, dVar2);
+                                    ThemeTransitionAnimator.this.a.a(20.0f);
                                 }
                             };
                             dVar.f(com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
-                            dVar.h(a.this.d);
-                            com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 2000, dVar);
-                            a.this.a.a(-30.0f);
+                            dVar.h(ThemeTransitionAnimator.this.d);
+                            com.censivn.C3DEngine.b.g.TweenUtils.a(ThemeTransitionAnimator.this.a, 2000, dVar);
+                            ThemeTransitionAnimator.this.a.a(-30.0f);
                         }
                     }
 
@@ -248,9 +248,9 @@ public class ThemeTransitionAnimator {
                     public void a() {
                         C01391 c01391 = new C01391();
                         c01391.f(com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));
-                        c01391.h(-a.this.d);
-                        com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 1000, c01391);
-                        a.this.a.a(30.0f);
+                        c01391.h(-ThemeTransitionAnimator.this.d);
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(ThemeTransitionAnimator.this.a, 1000, c01391);
+                        ThemeTransitionAnimator.this.a.a(30.0f);
                         com.tsf.shell.manager.app.StateHub.s().e();
                     }
                 }
@@ -259,7 +259,7 @@ public class ThemeTransitionAnimator {
                 public void run() {
                     C01381 c01381 = new C01381();
                     c01381.h(0.0f);
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.a, 500, c01381);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(ThemeTransitionAnimator.this.a, 500, c01381);
                     com.tsf.shell.manager.app.StateHub.s().e();
                 }
             }
@@ -287,8 +287,8 @@ public class ThemeTransitionAnimator {
                 com.tsf.shell.manager.app.ObserverManager.c(Home.b());
                 com.censivn.C3DEngine.b.c.KeyboardHandler.b();
                 com.censivn.C3DEngine.a.d.d().a(true);
-                com.tsf.shell.manager.app.TaskScheduler.b(a.this.a);
-                a.this.a.a();
+                com.tsf.shell.manager.app.TaskScheduler.b(ThemeTransitionAnimator.this.a);
+                ThemeTransitionAnimator.this.a.a();
                 com.censivn.C3DEngine.C3DEngine.d().sendBroadcast(new Intent(ThemeClockManager.ALARM_ON_CLICK));
                 Home.b().o();
             }

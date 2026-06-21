@@ -107,12 +107,12 @@ public class FolderSettingsPage extends FolderPageItemBase {
 
     @Override // com.tsf.shell.f.f.a.c.FolderPageItemBase
     public void b(boolean z) {
-        Number3d.TEMPNUMBER3D.reset();
-        this.h.localToGlobal(Number3d.TEMPNUMBER3D);
-        this.b.h().globalToLocal(Number3d.TEMPNUMBER3D);
+        Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+        this.h.localToGlobal(Number3FolderAppMenu.TEMPNUMBER3D);
+        this.b.h().globalToLocal(Number3FolderAppMenu.TEMPNUMBER3D);
         float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
-        float f = Number3d.TEMPNUMBER3D.x;
-        float f2 = Number3d.TEMPNUMBER3D.y;
+        float f = Number3FolderAppMenu.TEMPNUMBER3D.x;
+        float f2 = Number3FolderAppMenu.TEMPNUMBER3D.y;
         float f3 = com.tsf.shell.f.f.a.PageGridRenderer.c;
         int iNumChildren = this.h.numChildren();
         float fA2 = com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f);
@@ -125,7 +125,7 @@ public class FolderSettingsPage extends FolderPageItemBase {
             bVar.position().setAll(bVar.position().x + f, bVar.position().y + f2, 0.0f);
             bVar.b((i * 20) + 250);
             if (i < 3) {
-                com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a.c.FolderSettingsPage.6
+                com.censivn.C3DEngine.b.g._c.orbit.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.orbit.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a.c.FolderSettingsPage.6
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
@@ -167,15 +167,15 @@ public class FolderSettingsPage extends FolderPageItemBase {
         this.k.a();
         float f = this.j;
         for (int i = 0; i < this.g.size(); i++) {
-            Number3d.TEMPNUMBER3D.reset();
+            Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
             final com.tsf.shell.f.f.a.c._a.FolderIndicatorDot bVar = this.g.get(FolderPageItemBase);
             bVar.i();
-            bVar.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.h.globalToLocal(Number3d.TEMPNUMBER3D);
-            bVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
+            bVar.localToGlobal(Number3FolderAppMenu.TEMPNUMBER3D);
+            this.h.globalToLocal(Number3FolderAppMenu.TEMPNUMBER3D);
+            bVar.position().setAllFrom(Number3FolderAppMenu.TEMPNUMBER3D);
             float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
             if (i < 3) {
-                com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a.c.FolderSettingsPage.8
+                com.censivn.C3DEngine.b.g._c.orbit.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.orbit.OrbitTween(bVar, (i / 3) + 2, fA) { // from class: com.tsf.shell.f.f.a.c.FolderSettingsPage.8
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                     }
@@ -203,10 +203,10 @@ public class FolderSettingsPage extends FolderPageItemBase {
             bVar.removeFromParent();
             this.h.addChild(bVar);
         }
-        Number3d.TEMPNUMBER3D.reset();
-        this.h.localToGlobal(Number3d.TEMPNUMBER3D);
-        e().globalToLocal(Number3d.TEMPNUMBER3D);
-        this.h.position().setAllFrom(Number3d.TEMPNUMBER3D);
+        Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+        this.h.localToGlobal(Number3FolderAppMenu.TEMPNUMBER3D);
+        e().globalToLocal(Number3FolderAppMenu.TEMPNUMBER3D);
+        this.h.position().setAllFrom(Number3FolderAppMenu.TEMPNUMBER3D);
         this.h.removeFromParent();
         e().addChild(this.h);
     }

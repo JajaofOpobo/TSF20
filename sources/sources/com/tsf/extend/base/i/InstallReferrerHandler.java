@@ -52,6 +52,6 @@ public class InstallReferrerHandler {
         this.f = interfaceC0050a;
     }
 
-    private a() {
+    private InstallReferrerHandler() {
     }
 }

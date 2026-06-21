@@ -29,7 +29,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
     private com.tsf.shell.f.i.MultiSelectController b = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.c.b.a.1
         @Override // com.tsf.shell.f.i.MultiSelectController
         public void a(com.tsf.shell.f.i.PageItem bVar) {
-            bVar.f(a.this.c);
+            bVar.f(DrawerSettingsItemType.this.c);
         }
     };
 
@@ -390,9 +390,9 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         this.l = new Runnable() { // from class: com.tsf.shell.f.c.b.a.3
             @Override // java.lang.Runnable
             public void run() {
-                a.this.k = false;
+                DrawerSettingsItemType.this.k = false;
                 final String str = "";
-                for (i iVar : a.this.children()) {
+                for (i iVar : DrawerSettingsItemType.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.f.c.b.a.3.1
@@ -401,7 +401,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
                         ContentResolver contentResolver = com.censivn.C3DEngine.C3DEngine.d().getContentResolver();
                         ContentValues contentValues = new ContentValues();
                         contentValues.put("child", str);
-                        contentResolver.update(ContentUris.withAppendedId(g.d.a, a.this.n + 1), contentValues, null, null);
+                        contentResolver.update(ContentUris.withAppendedId(g.d.a, DrawerSettingsItemType.this.n + 1), contentValues, null, null);
                         contentValues.clear();
                     }
                 });

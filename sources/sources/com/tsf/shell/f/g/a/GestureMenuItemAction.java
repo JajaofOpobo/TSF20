@@ -22,55 +22,55 @@ public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem
         super(GestureMenuOverlay.i.menu_effect_desktop);
         this.a = bVar;
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();
-        GestureMenuBlankItem.C0095a.C0096a c0096a = new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.1
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a c0096a = new GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.1
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.app.v.FlagHelper.C0126a.g();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void b() {
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.a(true);
-                c.this.b.d();
+                GestureMenuItemAction.this.b.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void c() {
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.a(false);
-                c.this.b.d();
+                GestureMenuItemAction.this.b.d();
             }
         };
-        GestureMenuBlankItem.C0095a.C0096a c0096a2 = new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.2
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a c0096a2 = new GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.2
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public boolean a() {
                 return com.tsf.shell.f.f.PageConfig.c();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void b() {
                 com.tsf.shell.f.f.PageConfig.b(true);
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void c() {
                 com.tsf.shell.f.f.PageConfig.b(false);
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.d();
             }
         };
-        this.c = new GestureMenuBlankItem.C0095a(GestureMenuOverlay.d.effect_setting_desktop_menu_swing, x.c(GestureMenuOverlay.i.menu_effect_swing), new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.3
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        this.c = new GestureMenuBlankItem.C0095a(GestureMenuOverlay.d.effect_setting_desktop_menu_swing, x.c(GestureMenuOverlay.i.menu_effect_swing), new GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuItemAction.3
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.app.v.ObjectHelper.b();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void b() {
                 com.tsf.shell.manager.app.v.ObjectHelper.c();
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void c() {
                 com.tsf.shell.manager.app.v.ObjectHelper.d();
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.d();
@@ -119,7 +119,7 @@ public class GestureMenuItemAction extends com.tsf.shell.f.e._g.a.MenuActionItem
                 l lVarA = com.tsf.shell.manager.app.v.FlagHelper.C0126a.a(i);
                 w.b();
                 com.tsf.shell.manager.app.v.FlagHelper.C0126a.c(lVarA);
-                c.this.b.d();
+                GestureMenuItemAction.this.b.d();
             }
         });
         this.d = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.ThemePreferenceProvider.f);

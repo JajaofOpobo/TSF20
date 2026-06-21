@@ -29,7 +29,7 @@ public class ItemShell extends PageItem {
         this.m = new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.1
             @Override // java.lang.Runnable
             public void run() {
-                a.this.n = true;
+                WidgetShell.this.n = true;
                 WidgetFreeResizeController.a();
             }
         };
@@ -193,10 +193,10 @@ public class ItemShell extends PageItem {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.2
             @Override // java.lang.Runnable
             public void run() {
-                d.b bVar = (d.b) a.this.g.getLayoutParams();
-                a.this.g.a(bVar.d, bVar.e);
-                a.this.g.requestLayout();
-                a.this.g.invalidate();
+                d.b bVar = (d.b) WidgetShell.this.g.getLayoutParams();
+                WidgetShell.this.g.a(bVar.d, bVar.e);
+                WidgetShell.this.g.requestLayout();
+                WidgetShell.this.g.invalidate();
             }
         });
     }
@@ -229,7 +229,7 @@ public class ItemShell extends PageItem {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.b.ItemShell.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    a.this.c();
+                    WidgetShell.this.c();
                 }
             };
             dVar2.f(fB);
@@ -248,8 +248,8 @@ public class ItemShell extends PageItem {
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    ((d) a.this.g.getParent()).b(a.this.g);
-                    gVarZ.s().a(a.this.g);
+                    ((d) WidgetShell.this.g.getParent()).b(WidgetShell.this.g);
+                    gVarZ.s().a(WidgetShell.this.g);
                 }
             });
         }
@@ -268,14 +268,14 @@ public class ItemShell extends PageItem {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.5
             @Override // java.lang.Runnable
             public void run() {
-                ((d) a.this.g.getParent()).b(a.this.g);
+                ((d) WidgetShell.this.g.getParent()).b(WidgetShell.this.g);
             }
         });
         com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.6
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.app.WidgetLayoutManager.a.a(((LauncherAppWidgetInfo) a.this.K()).appWidgetId);
-                ShellModel.a.b(a.this.K());
+                com.tsf.shell.manager.app.WidgetLayoutManager.a.a(((LauncherAppWidgetInfo) WidgetShell.this.K()).appWidgetId);
+                ShellModel.a.b(WidgetShell.this.K());
             }
         });
         if (this.b != null) {
@@ -320,12 +320,12 @@ public class ItemShell extends PageItem {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.8
             @Override // java.lang.Runnable
             public void run() {
-                if (a.this._e == null) {
-                    a.this._e = com.tsf.shell.f.e.b.ResizeButtonNode((int) (a.this.b.b() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) (a.this.b.c() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
-                    a.this._e.useVBO(false);
-                    a.this._e.textures().addElement(com.tsf.shell.f.e.b.h);
-                    a.this._e.position().y = (this.minY() + this.maxY()) / 2.0f;
-                    this.addChild(a.this._e);
+                if (WidgetShell.this._e == null) {
+                    WidgetShell.this._e = com.tsf.shell.f.e.b.ResizeButtonNode((int) (WidgetShell.this.b.b() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) (WidgetShell.this.b.c() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
+                    WidgetShell.this._e.useVBO(false);
+                    WidgetShell.this._e.textures().addElement(com.tsf.shell.f.e.b.h);
+                    WidgetShell.this._e.position().y = (this.minY() + this.maxY()) / 2.0f;
+                    this.addChild(WidgetShell.this._e);
                 }
             }
         });
@@ -336,11 +336,11 @@ public class ItemShell extends PageItem {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.b.ItemShell.9
             @Override // java.lang.Runnable
             public void run() {
-                if (a.this._e != null) {
-                    a.this._e.textures().removeAll();
-                    a.this._e.removeFromParent();
-                    a.this._e.destroy();
-                    a.this._e = null;
+                if (WidgetShell.this._e != null) {
+                    WidgetShell.this._e.textures().removeAll();
+                    WidgetShell.this._e.removeFromParent();
+                    WidgetShell.this._e.destroy();
+                    WidgetShell.this._e = null;
                 }
             }
         });

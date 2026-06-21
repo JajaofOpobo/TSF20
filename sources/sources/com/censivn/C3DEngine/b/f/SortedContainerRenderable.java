@@ -8,7 +8,7 @@ public class SortedContainerRenderable extends BaseRenderable {
     private static C0029a a;
     private boolean b = false;
 
-    public A() {
+    public SortedContainerRenderable() {
         if (a == null) {
             a = new C0029a();
         }

@@ -111,7 +111,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     private boolean rendererVisibility;
     private boolean useCustomizeShader;
 
-    public i(int i, int i2, Boolean bool, Boolean bool2, Boolean bool3) {
+    public IRenderable(int i, int i2, Boolean bool, Boolean bool2, Boolean bool3) {
         this.TEMP_AABB_TL = new float[4];
         this.TEMP_AABB_TR = new float[4];
         this.TEMP_AABB_BL = new float[4];
@@ -167,7 +167,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         init();
     }
 
-    public i(Vertices vertices, FacesBufferedList facesBufferedList, TextureList textureList) {
+    public IRenderable(Vertices vertices, FacesBufferedList facesBufferedList, TextureList textureList) {
         this.TEMP_AABB_TL = new float[4];
         this.TEMP_AABB_TR = new float[4];
         this.TEMP_AABB_BL = new float[4];
@@ -1377,7 +1377,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (!mouseEnabled() || !visible() || !getRendererVisibility()) {
             return null;
         }
-        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable)) && !mouseSkip() && !z) {
+        if ((getMouseEventListener() != null || (this instanceof com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable)) && !mouseSkip() && !z) {
             if (calTouchCollision(f, f2)) {
                 return this;
             }

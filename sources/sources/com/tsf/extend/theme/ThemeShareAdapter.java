@@ -18,7 +18,7 @@ public class ThemeShareAdapter extends BaseAdapter {
     Context b;
     List<an> c;
 
-    public al(Context context, List<an> list, boolean z) {
+    public ThemeShareAdapter(Context context, List<an> list, boolean z) {
         this.b = context;
         this.c = list;
         if (z) {

@@ -15,7 +15,7 @@ public class WallpaperChangeManager {
         void g();
     }
 
-    private a() {
+    private WallpaperChangeManager() {
     }
 
     /* JADX INFO: renamed from: com.tsf.extend.wallpaper.a.a$a, reason: collision with other inner class name */

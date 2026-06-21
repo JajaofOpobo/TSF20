@@ -52,7 +52,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
     public MultiSelectLinePicker() {
         if (e == null) {
-            e = new A();
+            e = new IconRenderer();
         }
         this.d = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.line_picker_back_to_select);
         this.c = com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_function_unavailable);
@@ -66,7 +66,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 MultiSelectLinePicker.this.c();
             }
         };
-        this.b = new h();
+        this.b = new KeyEventListener();
         this.b.a(this.a);
         this.b.a(this);
         this.b.a(true);

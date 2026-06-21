@@ -60,7 +60,7 @@ public class ScreenLockController {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.h.ScreenLockController.1
             @Override // java.lang.Runnable
             public void run() {
-                a.this.i();
+                ScreenLockController.this.i();
                 w.a();
             }
         });
@@ -149,8 +149,8 @@ public class ScreenLockController {
                 @Override // android.widget.CompoundButton.OnCheckedChangeListener
                 public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                     e.d(z);
-                    a.this.h = z;
-                    a.this.a(textView);
+                    ScreenLockController.this.h = z;
+                    ScreenLockController.this.a(textView);
                 }
             });
             builder.setView(linearLayout);
@@ -192,11 +192,11 @@ public class ScreenLockController {
                     return true;
                 case 1:
                     if (this.f >= ((int) (C0128a.a - this.d))) {
-                        a.this.f.dismiss();
-                        a.this.c.setColor(a.e);
-                        a.this.a(false);
+                        ScreenLockController.this.f.dismiss();
+                        ScreenLockController.this.c.setColor(a.e);
+                        ScreenLockController.this.a(false);
                     } else {
-                        a.this.c.setColor(a.e);
+                        ScreenLockController.this.c.setColor(a.e);
                         this.e = new TranslateAnimation(0.0f, -this.f, 0.0f, 0.0f);
                         Animation.AnimationListener animationListener = new Animation.AnimationListener() { // from class: com.tsf.shell.manager.h.ScreenLockController.c.1
                             @Override // android.view.animation.Animation.AnimationListener
@@ -224,13 +224,13 @@ public class ScreenLockController {
                 case 2:
                     int i3 = (int) ((rawX - this.b) - 60.0f);
                     if (i3 < 0) {
-                        a.this.c.setColor(a.e);
+                        ScreenLockController.this.c.setColor(a.e);
                     } else if (i3 <= C0128a.a - this.d) {
-                        a.this.c.setColor(a.e);
+                        ScreenLockController.this.c.setColor(a.e);
                         i = i3;
                     } else {
                         i = ((int) C0128a.a) - this.d;
-                        a.this.c.setColor(-6039296);
+                        ScreenLockController.this.c.setColor(-6039296);
                     }
                     this.f = i;
                     a(i);
@@ -255,7 +255,7 @@ public class ScreenLockController {
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, a.this.c);
+            canvas.drawCircle(this.d, this.c / 2.0f, 23.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b, ScreenLockController.this.c);
         }
     }
 

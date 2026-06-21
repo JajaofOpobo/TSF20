@@ -49,7 +49,7 @@ public class DropIndicatorRenderer extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorRenderer.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.d = true;
+                DropIndicatorRenderer.this.d = true;
             }
         };
         dVar.a(bVar);
@@ -100,7 +100,7 @@ public class DropIndicatorRenderer extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorRenderer.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.d = false;
+                DropIndicatorRenderer.this.d = false;
             }
         };
         dVar.a(bVar);

@@ -14,7 +14,7 @@ public class DashButtonG extends com.tsf.shell.f._d.a.DashElementBase {
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
     public void a(final i iVar, Number3d number3d, Number3d number3d2, final Runnable runnable) {
-        final com.censivn.C3DEngine.b.g._b.ITweenTarget aVarA = iVar instanceof com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable ? ((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) iVar).a(0) : iVar;
+        final com.censivn.C3DEngine.b.g._b.ITweenTarget aVarA = iVar instanceof com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable ? ((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) iVar).a(0) : iVar;
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f._d.a.a.DashButtonG.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
@@ -49,8 +49,8 @@ public class DashButtonG extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     public void a(i iVar) {
-        if (iVar instanceof com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = ((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) iVar).a(0);
+        if (iVar instanceof com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) {
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = ((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) iVar).a(0);
             Number3d number3dK = bVarA.k();
             bVarA.k().y = 1.0f;
             number3dK.x = 1.0f;

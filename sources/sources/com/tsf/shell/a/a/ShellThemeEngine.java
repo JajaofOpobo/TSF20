@@ -54,8 +54,8 @@ public class ShellThemeEngine extends Dialog {
                 @Override // android.content.DialogInterface.OnKeyListener
                 public boolean onKey(DialogInterface dialogInterface, int i3, KeyEvent keyEvent) {
                     if (keyEvent.getKeyCode() == 4) {
-                        if (c.this.b != null) {
-                            return c.this.b.a(dialogInterface, 4, keyEvent);
+                        if (ShellThemeEngine.this.b != null) {
+                            return ShellThemeEngine.this.b.a(dialogInterface, 4, keyEvent);
                         }
                         return true;
                     }
@@ -66,16 +66,16 @@ public class ShellThemeEngine extends Dialog {
                 @Override // android.view.View.OnClickListener
                 public void onClick(View view) {
                     if (onClickListener != null) {
-                        onClickListener.onClick(c.this, -1);
+                        onClickListener.onClick(ShellThemeEngine.this, -1);
                     }
                 }
             });
             findViewById(ShellContentManager.b.iv_close).setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.c.3
                 @Override // android.view.View.OnClickListener
                 public void onClick(View view) {
-                    c.this.dismiss();
+                    ShellThemeEngine.this.dismiss();
                     if (onClickListener != null) {
-                        onClickListener.onClick(c.this, -2);
+                        onClickListener.onClick(ShellThemeEngine.this, -2);
                     }
                 }
             });

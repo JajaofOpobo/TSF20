@@ -14,11 +14,11 @@ public class AltNinePatchRenderable extends GridRenderable {
     private float j;
     private float k;
 
-    public a(float f, float f2, AltNinePatchBounds bVar) {
+    public AltNinePatchRenderable(float f, float f2, AltNinePatchBounds bVar) {
         this(f, f2, com.censivn.C3DEngine.b.b.ScreenConstants.b, bVar);
     }
 
-    public a(float f, float f2, float f3, AltNinePatchBounds bVar) {
+    public AltNinePatchRenderable(float f, float f2, float f3, AltNinePatchBounds bVar) {
         super(f, f2, 3, 3, false);
         this.k = f3;
         a(bVar, false);

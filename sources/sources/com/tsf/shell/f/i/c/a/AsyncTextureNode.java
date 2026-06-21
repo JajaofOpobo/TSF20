@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class AsyncTextureNode extends VObject3dContainer implements i, k {
+public abstract class AsyncTextureNode extends VObject3dContainer implements IAsyncTaskListener, k {
     protected Context i;
     protected VTextureManager j;
     protected ArrayList<a> k = new ArrayList<>();
@@ -34,7 +34,7 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
     }
 
     protected void a(i iVar, int i, VObject3d... vObject3dArr) {
-        this.k.add(new a(iVar, i, vObject3dArr));
+        this.k.add(new FolderSceneNode(iVar, i, vObject3dArr));
     }
 
     protected void c(boolean z) {
@@ -88,7 +88,7 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i.c.a.c
         public Bitmap c() {
-                        return l.a(j.this.i, this.d);
+                        return l.a(AsyncTextureNode.this.i, this.d);
         }
 
         public void e() {
@@ -99,13 +99,13 @@ public abstract class AsyncTextureNode extends VObject3dContainer implements i, 
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // com.tsf.shell.f.i.c.a.c
         public void a(Bitmap bitmap) {
-            TextureElement textureElementCreateTexture = j.this.j.createTexture(bitmap, true);
+            TextureElement textureElementCreateTexture = AsyncTextureNode.this.j.createTexture(bitmap, true);
             for (VObject3d vObject3d : this.e) {
-                vObject3d.textures().addElement(textureElementCreateTexture);
+                vObject3PageSceneNode.textures().addElement(textureElementCreateTexture);
             }
             bitmap.recycle();
             this.f.a(this.d, textureElementCreateTexture);
-            j.this.a(this);
+            AsyncTextureNode.this.a(this);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

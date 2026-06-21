@@ -46,7 +46,7 @@ public class CubeClockDigital extends CubeClockElementBase {
                 this.c.d.post(new Runnable() { // from class: com.tsf.shell.widget.cubeclock.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.c.m.setZOrderOnTop();
+                        CubeClockDigital.this.c.m.setZOrderOnTop();
                     }
                 }, VMessageQueueManager.TYPE_GL_THREAD);
                 break;

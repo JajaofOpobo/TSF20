@@ -55,13 +55,13 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         this.l = new SceneBackgroundNode(this) { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.3
             @Override // com.tsf.shell.f.e.d.a.DropIndicatorConfig
             public void i() {
-                if (c.this.f.a().c()) {
-                    c.this.f.g();
-                    c.this.f.f();
-                    c.this.f.e();
-                    c.this.b(false);
-                    c.this.j();
-                    c.this.a(false);
+                if (SceneSurfaceNode.this.f.a().c()) {
+                    SceneSurfaceNode.this.f.g();
+                    SceneSurfaceNode.this.f.f();
+                    SceneSurfaceNode.this.f.e();
+                    SceneSurfaceNode.this.b(false);
+                    SceneSurfaceNode.this.j();
+                    SceneSurfaceNode.this.a(false);
                 }
             }
         };
@@ -78,7 +78,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
                 @Override // java.lang.Runnable
                 public void run() {
                     Intent intent = new Intent("android.intent.action.EDIT");
-                    intent.setData(Uri.withAppendedPath(ContactsContract.Contacts.CONTENT_URI, String.valueOf(c.this.f.a().b)));
+                    intent.setData(Uri.withAppendedPath(ContactsContract.Contacts.CONTENT_URI, String.valueOf(SceneSurfaceNode.this.f.a().b)));
                     Home.b().a(intent, (Object) null);
                 }
             });
@@ -203,7 +203,7 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                c.this.c.mouseEnabled(true);
+                SceneSurfaceNode.this.c.mouseEnabled(true);
             }
         };
         dVar.l(1.0f);
@@ -229,11 +229,11 @@ public class SceneSurfaceNode extends BaseRenderable implements SceneInteraction
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneSurfaceNode.6
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                c.this.f.a().e();
-                c.this.removeFromParent();
-                c.this.c.textures().clear();
-                c.this.f.b().alpha(255.0f);
-                c.this.l();
+                SceneSurfaceNode.this.f.a().e();
+                SceneSurfaceNode.this.removeFromParent();
+                SceneSurfaceNode.this.c.textures().clear();
+                SceneSurfaceNode.this.f.b().alpha(255.0f);
+                SceneSurfaceNode.this.l();
             }
         };
         dVar.l(this.d);

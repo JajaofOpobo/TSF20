@@ -10,12 +10,12 @@ public class ButtonPresetManager {
     public static A c;
 
     public static void a() {
-        a = new A(b(), 1.15f);
-        c = new A(1.15f, 1.15f);
-        b = new A(1.0f, 1.0f, 144, 144, 215, 42, 0);
+        a = new ButtonMetrics(b(), 1.15f);
+        c = new ButtonMetrics(1.15f, 1.15f);
+        b = new ButtonMetrics(1.0f, 1.0f, 144, 144, 215, 42, 0);
         c.a aVar = new c.a();
         aVar.g = 30;
-        b.ab = new com.tsf.shell.manager.o.a.TextLabelElement(0, aVar);
+        ButtonPresetManager.ab = new com.tsf.shell.manager.o.a.TextLabelElement(0, aVar);
         com.tsf.shell.manager.o.a.LabelManager.a();
     }
 

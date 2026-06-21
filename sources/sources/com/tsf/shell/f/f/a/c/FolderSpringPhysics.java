@@ -121,7 +121,7 @@ public class FolderSpringPhysics {
         public void a(Double d, float f) {
             double dSin = Math.sin(FolderAppMenu.doubleValue());
             Double.valueOf(FolderAppMenu.doubleValue() + 0.03490658503988659d);
-            this.b = ((float) ((((double) 0.2f) * dSin) + ((double) (f - 0.2f)))) * l.this.f;
+            this.b = ((float) ((((double) 0.2f) * dSin) + ((double) (f - 0.2f)))) * DrawerSpringPhysics.this.f;
             this.c = (float) (((double) this.a.x) - ((dSin * 10.0d) * ((double) com.censivn.C3DEngine.b.b.ScreenConstants.c)));
         }
     }

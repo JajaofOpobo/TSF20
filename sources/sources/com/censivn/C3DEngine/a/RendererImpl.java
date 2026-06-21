@@ -43,7 +43,7 @@ public class RendererImpl implements GLSurfaceView.Renderer {
     private boolean w = false;
     private float[] y = new float[16];
 
-    public e(com.censivn.C3DEngine.d.UpdateCallback bVar, GLSurfaceView gLSurfaceView) {
+    public RendererImpl(com.censivn.C3DEngine.d.UpdateCallback bVar, GLSurfaceView gLSurfaceView) {
         this.s = gLSurfaceView;
         g = Build.VERSION.SDK_INT >= 9;
         MatrixStack.init();

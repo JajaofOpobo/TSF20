@@ -149,9 +149,9 @@ public class ShortcutItem extends PageItem {
             if (b == null) {
                 b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, 1, 1, false);
                 h = new TextureElement(f.id, false);
-                b.textures().addElementWithoutVerify(h);
-                b.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
-                b.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+                PageItem.textures().addElementWithoutVerify(h);
+                PageItem.position().x = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2) - (45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+                PageItem.position().y = (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2) - (25.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             }
             this.m = 0.75f;
             if (ao()) {
@@ -200,15 +200,15 @@ public class ShortcutItem extends PageItem {
     public void onDrawChildEnd() {
         super.onDrawChildEnd();
         if (this.k) {
-            b.alpha(alpha());
+            PageItem.alpha(alpha());
             this.m += (this.n - this.m) * 0.15f;
-            b.scale().setAll(this.m, this.m, 1.0f);
+            PageItem.scale().setAll(this.m, this.m, 1.0f);
             if (this.l == 0) {
                 h.id = g.id;
             } else {
                 h.id = f.id;
             }
-            b.dispatchDraw();
+            PageItem.dispatchDraw();
         }
     }
 

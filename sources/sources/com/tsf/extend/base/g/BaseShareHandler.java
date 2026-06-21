@@ -13,7 +13,7 @@ public class BaseShareHandler {
     public String d;
     public Context e;
 
-    public d(Context context, Intent intent, String str, String str2) {
+    public BaseShareHandler(Context context, Intent intent, String str, String str2) {
         this.a = null;
         this.c = null;
         this.d = null;

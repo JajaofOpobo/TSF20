@@ -7,7 +7,7 @@ public enum ShadingModel {
 
     private final int c;
 
-    f(int i) {
+    ShadingModel(int i) {
         this.c = i;
     }
 }

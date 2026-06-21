@@ -27,7 +27,7 @@ public class DiskCache implements com.android.volley.b {
     private final int d;
     private final int e;
 
-    public c(File file, int i, int i2) {
+    public DiskCache(File file, int i, int i2) {
         this.a = new LinkedHashMap(16, 0.75f, true);
         this.b = 0L;
         this.c = file;
@@ -35,7 +35,7 @@ public class DiskCache implements com.android.volley.b {
         this.e = i2;
     }
 
-    public c(File file) {
+    public DiskCache(File file) {
         this(file, 20971520, 864000000);
     }
 

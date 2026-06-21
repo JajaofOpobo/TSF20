@@ -31,7 +31,7 @@ public class ThemeDetailHeaderView extends FrameLayout implements View.OnClickLi
     private boolean j;
     private String k;
 
-    public ab(Context context) {
+    public ThemeDetailHeaderView(Context context) {
         super(context);
         this.f = Lists.newArrayList();
         this.g = Lists.newArrayList();

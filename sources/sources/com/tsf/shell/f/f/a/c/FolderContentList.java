@@ -322,9 +322,9 @@ public class FolderContentList extends FolderPageItemBase {
             com.tsf.shell.manager.app.TaskScheduler.a(cVar);
             this.a.c((com.tsf.shell.f.i.PageItem) cVar);
             cVar.setAnimationObjectState(true);
-            Number3d.TEMPNUMBER3D.reset();
-            Number3d.TEMPNUMBER3D.setAll(1.0f, 1.0f, 1.0f);
-            Number3d number3dLocalScaleToGlobale = cVar.localScaleToGlobale(Number3d.TEMPNUMBER3D);
+            Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+            Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.setAll(1.0f, 1.0f, 1.0f);
+            Number3d number3dLocalScaleToGlobale = cVar.localScaleToGlobale(Number3FolderAppMenu.TEMPNUMBER3D);
             cVar.scale().setAll(number3dLocalScaleToGlobale.x, number3dLocalScaleToGlobale.y, 1.0f);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(cVar.d);
@@ -373,10 +373,10 @@ public class FolderContentList extends FolderPageItemBase {
             b(cVar);
         } else {
             if (jVar instanceof com.tsf.shell.f.f.a.PageContainerBase) {
-                Number3d.TEMPNUMBER3D.reset();
-                Number3d.TEMPNUMBER3D.setAllFrom(cVar.scale());
-                jVar.globalScaleToLocal(Number3d.TEMPNUMBER3D);
-                cVar.scale().setAllFrom(Number3d.TEMPNUMBER3D);
+                Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+                Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.setAllFrom(cVar.scale());
+                jVar.globalScaleToLocal(Number3FolderAppMenu.TEMPNUMBER3D);
+                cVar.scale().setAllFrom(Number3FolderAppMenu.TEMPNUMBER3D);
             }
             if (this.j != null && (cVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase)) {
                 jVar.removeChild(this.m);
@@ -464,10 +464,10 @@ public class FolderContentList extends FolderPageItemBase {
                 for (int i = 0; i < size; i++) {
                     com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) arrayList2.get((size - i) - 1);
                     ((com.tsf.shell.f.i.b.d.FolderTouchHandler) gVar.getMouseEventListener()).a();
-                    Number3d.TEMPNUMBER3D.reset();
-                    gVar.localToGlobal(Number3d.TEMPNUMBER3D);
+                    Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+                    gVar.localToGlobal(Number3FolderAppMenu.TEMPNUMBER3D);
                     bVar.aX().removeChild(gVar);
-                    gVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
+                    gVar.position().setAllFrom(Number3FolderAppMenu.TEMPNUMBER3D);
                     gVar.mouseEnabled(true);
                     gVar.B();
                     gVar.visible(true);
@@ -551,31 +551,31 @@ public class FolderContentList extends FolderPageItemBase {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.c.FolderContentList.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        c.this.y = false;
-                        if (c.this.o) {
-                            if (!c.this.p) {
-                                if (x.b(c.this.q, c.this.r, motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
-                                    c.this.p = true;
+                        FolderContentList.this.y = false;
+                        if (FolderContentList.this.o) {
+                            if (!FolderContentList.this.p) {
+                                if (x.b(FolderContentList.this.q, FolderContentList.this.r, motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
+                                    FolderContentList.this.p = true;
                                     return;
                                 }
                                 return;
                             }
                             float[] fArrB = x.b(motionEvent2.getX(), motionEvent2.getY());
-                            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
+                            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) FolderContentList.this.t[0], (int) FolderContentList.this.t[1], false);
                             if (fVarA != null) {
                                 cVar.f(fVarA);
-                                c.this.a((com.tsf.shell.f.i.PageItem) cVar);
-                                c.this.q();
+                                FolderContentList.this.a((com.tsf.shell.f.i.PageItem) cVar);
+                                FolderContentList.this.q();
                                 return;
                             }
                             if (cVar.n() != null && !(cVar.n() instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
                                 cVar.p();
                             }
-                            c.this.z.x = fArrB[0];
-                            c.this.z.y = fArrB[1];
+                            FolderContentList.this.z.x = fArrB[0];
+                            FolderContentList.this.z.y = fArrB[1];
                             if (fArrB[1] >= com.censivn.C3DEngine.b.b.ScreenConstants.C + com.tsf.shell.f.f.a.PageGridRenderer.a) {
-                                c.this.a.ap().globalToLocal(c.this.z);
-                                c.this.a(c.this.a.ap(), cVar, c.this.a.ap().a(c.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v), c.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v)), c.this.z.x, c.this.z.y);
+                                FolderContentList.this.a.ap().globalToLocal(FolderContentList.this.z);
+                                FolderContentList.this.a(FolderContentList.this.a.ap(), cVar, FolderContentList.this.a.ap().a(FolderContentList.this.z.x + ((com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v), FolderContentList.this.z.y - ((com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f) * com.tsf.shell.f.f.a.FolderPage.v)), FolderContentList.this.z.x, FolderContentList.this.z.y);
                             }
                         }
                     }

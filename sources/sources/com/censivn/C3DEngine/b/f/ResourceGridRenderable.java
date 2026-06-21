@@ -9,7 +9,7 @@ public class ResourceGridRenderable extends GridRenderable {
     private int a;
     private TextureElement d;
 
-    public g() {
+    public ResourceGridRenderable() {
         super(0.0f, 0.0f, false);
         this.d = new TextureElement(0, false);
         textures().addElement(this.d);

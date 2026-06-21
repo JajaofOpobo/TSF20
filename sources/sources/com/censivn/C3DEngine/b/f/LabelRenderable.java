@@ -18,7 +18,7 @@ public class LabelRenderable extends BaseRenderable {
     private com.tsf.shell.manager.o.a.TextConfig b = new com.tsf.shell.manager.o.a.TextConfig();
     private TextureElement c = new TextureElement(0, false);
 
-    public m() {
+    public LabelRenderable() {
         this.a.textures().addElement(this.c);
         addChild(this.a);
     }

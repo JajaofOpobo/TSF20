@@ -22,7 +22,7 @@ public interface NotifierCounterInterface extends IInterface {
     int f();
 
     /* JADX INFO: renamed from: com.tsf.shell.services.a.NotifierCounterInterface$a, reason: collision with other inner class name */
-    public static abstract class AbstractBinderC0166a extends Binder implements a {
+    public static abstract class AbstractBinderC0166a extends Binder implements NotifierCounterInterface {
         public static a a(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
@@ -87,7 +87,7 @@ public interface NotifierCounterInterface extends IInterface {
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.services.a.NotifierCounterInterface$a$a, reason: collision with other inner class name */
-        private static class C0167a implements a {
+        private static class C0167a implements NotifierCounterInterface {
             private IBinder a;
 
             C0167a(IBinder iBinder) {

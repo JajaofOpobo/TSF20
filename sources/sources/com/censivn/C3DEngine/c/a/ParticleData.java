@@ -13,7 +13,7 @@ public class ParticleData {
     private float f;
     private int g;
     private PointBufferManager h;
-    private com.censivn.C3DEngine.c.a.a.DampedSpringConstraint i;
+    private com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint i;
 
     public void a(int i, PointBufferManager pointBufferManager) {
         this.g = i;
@@ -114,11 +114,11 @@ public class ParticleData {
         this.c = c();
     }
 
-    public void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar) {
+    public void a(com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar) {
         this.i = bVar;
     }
 
-    public com.censivn.C3DEngine.c.a.a.DampedSpringConstraint f() {
+    public com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint f() {
         return this.i;
     }
 }

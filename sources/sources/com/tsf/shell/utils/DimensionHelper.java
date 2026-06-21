@@ -11,7 +11,7 @@ public class DimensionHelper {
             Class<?> cls = Class.forName("com.android.internal.R$dimen");
             return context.getResources().getDimensionPixelSize(Integer.parseInt(cls.getField("status_bar_height").get(cls.newInstance()).toString()));
         } catch (Exception e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             return 0;
         }
     }

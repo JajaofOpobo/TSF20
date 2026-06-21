@@ -92,7 +92,7 @@ public class PageItemList {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.b.2.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        b.this.h();
+                        PageItemList.this.h();
                         if (runnable != null) {
                             runnable.run();
                         }
@@ -106,7 +106,7 @@ public class PageItemList {
                     @Override // java.lang.Runnable
                     public void run() {
                         com.tsf.shell.manager.app.StateHub.t().am().e();
-                        b.this.h();
+                        PageItemList.this.h();
                         if (runnable != null) {
                             runnable.run();
                         }

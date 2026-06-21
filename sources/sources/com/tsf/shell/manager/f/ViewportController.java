@@ -39,8 +39,8 @@ public class ViewportController implements e.a {
         this.g = new d.b() { // from class: com.tsf.shell.manager.f.ViewportController.1
             @Override // com.censivn.C3DEngine.b.c.AnimationListener.b
             public void a() {
-                if (d.this.f != null) {
-                    d.this.f.a(4, null);
+                if (ViewportController.this.f != null) {
+                    ViewportController.this.f.a(4, null);
                 }
             }
         };
@@ -89,7 +89,7 @@ public class ViewportController implements e.a {
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 if (parent() == null) {
-                    d.this.a.addChild(this);
+                    ViewportController.this.a.addChild(this);
                 }
                 super.addChild(iVar);
             }
@@ -97,7 +97,7 @@ public class ViewportController implements e.a {
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void addChildAt(i iVar, int i) {
                 if (parent() == null) {
-                    d.this.a.addChild(this);
+                    ViewportController.this.a.addChild(this);
                 }
                 super.addChildAt(iVar, i);
             }
@@ -117,8 +117,8 @@ public class ViewportController implements e.a {
         this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.manager.f.ViewportController.4
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (d.this.f != null) {
-                    d.this.f.a(4, null);
+                if (ViewportController.this.f != null) {
+                    ViewportController.this.f.a(4, null);
                 }
             }
         });
@@ -171,7 +171,7 @@ public class ViewportController implements e.a {
         com.tsf.shell.manager.app.AppListModel.a(new Runnable() { // from class: com.tsf.shell.manager.f.ViewportController.5
             @Override // java.lang.Runnable
             public void run() {
-                d.this.e();
+                ViewportController.this.e();
                 if (runnable != null) {
                     runnable.run();
                 }
@@ -185,8 +185,8 @@ public class ViewportController implements e.a {
 
     public void a(i iVar, boolean z) {
         if (z) {
-            Number3d.TEMPNUMBER3D.reset();
-            iVar.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D));
+            Number3ViewportController.TEMPNUMBER3ViewportController.reset();
+            iVar.position().setAllFrom(iVar.localToGlobal(Number3ViewportController.TEMPNUMBER3D));
             iVar.removeFromParent();
         }
         this.j.addChild(iVar);

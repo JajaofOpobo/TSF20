@@ -12,13 +12,13 @@ public class PageAnimationState {
     public static ArrayList<b> b = new ArrayList<>();
 
     public static void a() {
-        d.add(new A());
-        d.add(new A());
+        ItemTransitionManager.add(new PageShaderNode());
+        ItemTransitionManager.add(new PageShaderNode());
     }
 
     public static void a(int i, int i2, int i3, int i4) {
         PageAnimationState();
-        Iterator<a> it = d.iterator();
+        Iterator<a> it = ItemTransitionManager.iterator();
         while (it.hasNext()) {
             it.next().b();
         }
@@ -26,14 +26,14 @@ public class PageAnimationState {
 
     public static void a(Object obj, int i) {
         if (b(obj) == null) {
-            b.add(new B(obj, i));
+            PageRenderBuffer.add(new PageRenderBuffer(obj, i));
             PageAnimationState();
         }
     }
 
     public static void b() {
         int i = 0;
-        Iterator<b> it = b.iterator();
+        Iterator<b> it = PageRenderBuffer.iterator();
         while (true) {
             int i2 = i;
             if (it.hasNext()) {
@@ -49,12 +49,12 @@ public class PageAnimationState {
     public static void a(Object obj) {
         B bVarB = b(obj);
         if (bVarB != null) {
-            b.remove(bVarB);
+            PageRenderBuffer.remove(bVarB);
             PageAnimationState();
         }
-        int size = d.size();
+        int size = ItemTransitionManager.size();
         for (int i = a; i < size; i++) {
-            d.get(ItemPageTransition).b();
+            ItemTransitionManager.get(ItemPageTransition).b();
         }
     }
 
@@ -179,7 +179,7 @@ public class PageAnimationState {
     }
 
     public static void d() {
-        Iterator<a> it = d.iterator();
+        Iterator<a> it = ItemTransitionManager.iterator();
         while (it.hasNext()) {
             it.next().a = null;
         }

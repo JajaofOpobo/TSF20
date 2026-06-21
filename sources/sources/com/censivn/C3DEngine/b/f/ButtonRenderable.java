@@ -11,7 +11,7 @@ public class ButtonRenderable extends BaseRenderable {
     private int d;
     private int e;
 
-    public l(float f, float f2, int i, int i2) {
+    public ButtonRenderable(float f, float f2, int i, int i2) {
         this.b = new k(f, f2, false);
         this.b.setDefaultColor(this.c);
         this.d = i;

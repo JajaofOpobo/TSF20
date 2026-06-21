@@ -20,7 +20,7 @@ public class AlarmProviderHelper {
 
     public static b a(Context context) {
         if (b == null) {
-            b = new b(context);
+            b = new AlarmProviderHelper(context);
         }
         return b;
     }

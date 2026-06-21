@@ -16,7 +16,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageSceneNode extends j {
+public class PageSceneNode extends AsyncTextureNode {
     private ArrayList<VRectangle> a;
     private VObject3dContainer b;
     private float c;
@@ -164,7 +164,7 @@ public class PageSceneNode extends j {
 
     @Override // com.tsf.shell.f.i.c.a.FolderSceneNodesyncTextureNode
     protected void a(int i, VObject3d... vObject3dArr) {
-        this.k.add(new a(this, i, vObject3dArr));
+        this.k.add(new FolderSceneNode(this, i, vObject3dArr));
     }
 
     @Override // com.tsf.shell.f.i.c.a.FolderSceneNodesyncTextureNode, com.tsf.shell.f.i.c.a.ITextureCallback

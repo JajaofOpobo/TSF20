@@ -11,8 +11,8 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable {
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable d;
-    private com.censivn.C3DEngine.b.f.a.SpriteItemData e;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable d;
+    private com.censivn.C3DEngine.b.f.sprite.SpriteItemData e;
     private TextureElement k;
     private A l;
     private A m;
@@ -34,8 +34,8 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (z) {
-                    if (j.this.p) {
-                        if (j.this.h) {
+                    if (PageIndicatorStrip.this.p) {
+                        if (PageIndicatorStrip.this.h) {
                             com.tsf.shell.manager.app.StateHub.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
                             return;
                         } else {
@@ -46,18 +46,18 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                     com.tsf.shell.manager.app.StateHub.s().c(motionEvent, motionEvent2, 0.0f, 0.0f);
                     if (com.tsf.shell.manager.app.StateHub.s().f()) {
                         if (com.tsf.shell.manager.app.StateHub.s().g()) {
-                            j.this.h = true;
+                            PageIndicatorStrip.this.h = true;
                         } else {
-                            j.this.h = false;
+                            PageIndicatorStrip.this.h = false;
                         }
-                        j.this.p = true;
+                        PageIndicatorStrip.this.p = true;
                         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.1.1
                             @Override // java.lang.Runnable
                             public void run() {
-                                if (j.this.h) {
-                                    j.this.c();
+                                if (PageIndicatorStrip.this.h) {
+                                    PageIndicatorStrip.this.c();
                                 } else {
-                                    j.this.d();
+                                    PageIndicatorStrip.this.d();
                                     com.tsf.shell.manager.app.StateHub.s().e();
                                 }
                             }
@@ -69,7 +69,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 if (z) {
-                    j.this.b();
+                    PageIndicatorStrip.this.b();
                     com.tsf.shell.manager.app.StateHub.a(true);
                 }
             }
@@ -77,26 +77,26 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (z) {
-                    if (j.this.p && !j.this.h) {
+                    if (PageIndicatorStrip.this.p && !PageIndicatorStrip.this.h) {
                         com.tsf.shell.manager.app.StateHub.s().a(motionEvent);
                     }
                     com.tsf.shell.manager.app.StateHub.s().d(motionEvent);
-                    j.this.p = false;
-                    j.this.e();
+                    PageIndicatorStrip.this.p = false;
+                    PageIndicatorStrip.this.e();
                     com.tsf.shell.manager.app.StateHub.g();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                if (z && j.this.p && !j.this.h) {
+                if (z && PageIndicatorStrip.this.p && !PageIndicatorStrip.this.h) {
                     com.tsf.shell.manager.app.StateHub.s().b(motionEvent, motionEvent2, f, f2);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                j.this.a();
+                PageIndicatorStrip.this.a();
             }
         });
         this.k = x.b(b.d.dock_operation_border_point, com.tsf.shell.manager.g.LayoutDimensionConstants.m, com.tsf.shell.manager.g.LayoutDimensionConstants.n);
@@ -202,11 +202,11 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         this.b = i;
         this.e = null;
         float f = 0.0f - (((this.a * com.censivn.C3DEngine.b.b.ScreenConstants.c) * (i - 1)) / 2.0f);
-        this.d = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(i, 32, 32, 32);
+        this.d = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(i, 32, 32, 32);
         this.d.useVBO(false);
         float f2 = f;
         for (int i2 = 0; i2 < i; i2++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.d.a(i2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.d.a(i2);
             bVarA.m.pxX(f2);
             bVarA.b(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
             bVarA.d(com.tsf.shell.manager.g.LayoutDimensionConstants.l);
@@ -266,13 +266,13 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
-                j.this.alpha(fAlpha + ((f - fAlpha) * f2));
+                PageIndicatorStrip.this.alpha(fAlpha + ((f - fAlpha) * f2));
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 if (!z) {
-                    j.this.visible(false);
+                    PageIndicatorStrip.this.visible(false);
                 }
             }
         };
@@ -289,7 +289,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
-                j.this.alpha(fAlpha + ((255.0f - fAlpha) * f));
+                PageIndicatorStrip.this.alpha(fAlpha + ((255.0f - fAlpha) * f));
             }
         };
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
@@ -304,7 +304,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    j.this.d.visible(false);
+                    PageIndicatorStrip.this.d.visible(false);
                 }
             };
             dVar.a(0);
@@ -323,7 +323,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
-                    j.this.d.visible(true);
+                    PageIndicatorStrip.this.d.visible(true);
                 }
             };
             dVar.a(255);
@@ -360,7 +360,7 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 250, dVar);
                 removeFromParent();
-                j.this.addChild(this);
+                PageIndicatorStrip.this.addChild(this);
             }
         }
 
@@ -370,8 +370,8 @@ public class PageIndicatorStrip extends com.censivn.C3DEngine.b.f.BaseRenderable
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.PageIndicatorStrip.a.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        a.this.c.position().y = a.this.b;
-                        a.this.removeFromParent();
+                        AlignmentOverlay.this.c.position().y = AlignmentOverlay.this.b;
+                        AlignmentOverlay.this.removeFromParent();
                     }
                 };
                 dVar.a(0);

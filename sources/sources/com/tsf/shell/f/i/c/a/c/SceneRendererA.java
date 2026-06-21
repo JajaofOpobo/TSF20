@@ -19,11 +19,11 @@ public class SceneRendererA extends BaseRenderable {
     private long d;
     private int e;
     private int f;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable g;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable g;
     private d h;
     private d i;
     private int p;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable v;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable v;
     private final int c = 30;
     public boolean b = false;
     private long j = 0;
@@ -44,10 +44,10 @@ public class SceneRendererA extends BaseRenderable {
 
     public void a() {
         float fXHDScale = VInformation.XHDScale();
-        this.g = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(30, 40, 40, 40, null, false);
+        this.g = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(30, 40, 40, 40, null, false);
         this.g.textures().addElement(this.t);
         for (int i = 0; i < 30; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.g.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.g.a(i);
             this.n[i] = new DeferredItemGroup(bVarA, 250.0f, ((-12.0f) * i) + 90.0f);
             bVarA.b(0, 0, 1, 1);
             bVarA.h();
@@ -58,7 +58,7 @@ public class SceneRendererA extends BaseRenderable {
             if (i3 >= 30) {
                 break;
             }
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.g.a(i3);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = this.g.a(i3);
             int i4 = i3 + 3;
             if (i4 >= 30) {
                 i4 %= 30;
@@ -69,11 +69,11 @@ public class SceneRendererA extends BaseRenderable {
         this.g.calAABB();
         this.p = (int) a(this.g.a(0), this.g.a(3));
         int size = this.m.size();
-        this.v = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(size, 1, this.p, 4, null, true);
+        this.v = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(size, 1, this.p, 4, null, true);
         this.v.textures().addElement(this.q);
         for (int i5 = 0; i5 < size; i5++) {
             e eVar = this.m.get(i5);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = this.v.a(i5);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA3 = this.v.a(i5);
             bVarA3.a(0.0f);
             bVarA3.b(0, 0, this.p, 4);
             eVar.a(bVarA3);
@@ -181,7 +181,7 @@ public class SceneRendererA extends BaseRenderable {
         return bitmapCreateBitmap;
     }
 
-    private float a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar2) {
+    private float a(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar, com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar2) {
         float f = bVar2.i().x - bVar.i().x;
         float f2 = bVar2.i().y - bVar.i().y;
         return (float) Math.sqrt((f * f) + (f2 * f2));
@@ -239,7 +239,7 @@ public class SceneRendererA extends BaseRenderable {
 
     public static a e() {
         if (w == null) {
-            w = new a();
+            w = new SceneRendererA();
         }
         return w;
     }

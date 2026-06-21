@@ -25,7 +25,7 @@ public class ThemeSearchAdapter extends ThemeBaseAdapter {
     private int r;
     private List<b> s;
 
-    public q(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
+    public ThemeSearchAdapter(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         super(context, list, onClickListener);
         this.r = 0;
         this.s = Lists.newArrayList();

@@ -29,7 +29,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
     }
 
     private void g() {
-        this.h = new a() { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.1
+        this.h = new WidgetProviderInfoBar() { // from class: com.tsf.shell.manager.r.b.c.WidgetInstanceListPanel.1
             @Override // com.tsf.shell.manager.r.b.c.WidgetProviderInfoBar
             public void a() {
                 WidgetInstanceListPanel.this.a.c(true);
@@ -49,7 +49,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
-                i hVar = iVar == null ? new h(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), false) : iVar;
+                i hVar = iVar == null ? new WidgetPreviewCell(WidgetInstanceListPanel.this.i, WidgetInstanceListPanel.this.d.getHeight() - com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), false) : iVar;
                 ((h) hVar).a((com.tsf.shell.f.i.c.ItemLabelProvider) WidgetInstanceListPanel.this.j.get(i), false);
                 return hVar;
             }
@@ -124,7 +124,7 @@ public class WidgetInstanceListPanel extends com.tsf.shell.manager.r.b.b.SlidePa
     public void a(b.a aVar) {
         this.b.e();
         WidgetInstanceListPanel();
-        for (b.C0145b c0145b : aVar.c) {
+        for (SystemWidgetProviderBrowser.C0145b c0145b : aVar.c) {
             com.tsf.shell.f.i.c.AppPreviewLabel fVarA = a(c0145b.a.label, c0145b.b, c0145b.a);
             fVarA.a(c0145b.a.provider);
             fVarA.d(c0145b.a.minHeight);

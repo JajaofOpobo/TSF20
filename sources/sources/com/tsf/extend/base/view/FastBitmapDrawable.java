@@ -15,7 +15,7 @@ public class FastBitmapDrawable extends Drawable {
     private final Paint e = new Paint(2);
     private int b = 255;
 
-    public b(Bitmap bitmap) {
+    public FastBitmapDrawable(Bitmap bitmap) {
         this.a = bitmap;
         if (bitmap != null) {
             this.c = this.a.getWidth();

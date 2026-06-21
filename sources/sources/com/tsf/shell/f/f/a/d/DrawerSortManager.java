@@ -91,13 +91,13 @@ public class DrawerSortManager {
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.app.StateHub.t().ay();
-                    a.this.a = false;
-                    if (a.this.f != -1) {
+                    DrawerSortManager.this.a = false;
+                    if (DrawerSortManager.this.f != -1) {
                         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.d.a.1.1
                             @Override // java.lang.Runnable
                             public void run() {
-                                a.this.b(a.this.f);
-                                a.this.f = -1;
+                                DrawerSortManager.this.b(DrawerSortManager.this.f);
+                                DrawerSortManager.this.f = -1;
                             }
                         });
                     } else {

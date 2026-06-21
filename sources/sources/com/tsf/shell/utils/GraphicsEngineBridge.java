@@ -33,7 +33,7 @@ public class GraphicsEngineBridge {
             com.censivn.C3DEngine.C3DEngine.d();
             contextCreatePackageContext = contextD.createPackageContext(str, 3);
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             contextCreatePackageContext = null;
         }
         if (contextCreatePackageContext == null) {

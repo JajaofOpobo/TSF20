@@ -25,7 +25,7 @@ public class ToggleRowItem extends com.censivn.C3DEngine.b.f.BaseRenderable {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.e.ToggleRowItem.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                l.this.a();
+                ToggleRowItem.this.a();
             }
         });
     }

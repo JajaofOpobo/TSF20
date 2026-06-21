@@ -60,7 +60,7 @@ public class TextureElementB extends j {
             a(DeferredItemGroup.d.widget_preview_calendar_line, this.c.h);
             a(DeferredItemGroup.d.widget_preview_calendar_refresh, this.c.i);
             a(DeferredItemGroup.d.widget_preview_calendar_detil_bar, this.c.e);
-            this.k.add(new a());
+            this.k.add(new TextureElementA());
             c(z);
         }
     }

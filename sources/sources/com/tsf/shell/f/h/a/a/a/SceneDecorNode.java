@@ -17,7 +17,7 @@ public class SceneDecorNode extends BaseRenderable {
     private com.tsf.shell.manager.c.a.a.ContactModel.b f;
     private TextureElement a = new TextureElement(0, false);
     private boolean c = false;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable d = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, 1, 1, true);
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable d = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(2, 1, 1, true);
     private LabelRenderable e = new LabelRenderable();
 
     public SceneDecorNode() {
@@ -28,8 +28,8 @@ public class SceneDecorNode extends BaseRenderable {
         setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.h.a.a.a.SceneDecorNode.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (d.this.f != null) {
-                    d.this.f.f();
+                if (SceneDecorNode.this.f != null) {
+                    SceneDecorNode.this.f.f();
                 }
             }
         });
@@ -105,8 +105,8 @@ public class SceneDecorNode extends BaseRenderable {
             bitmapB.recycle();
         }
         this.d.a(1, this.a.width, this.a.height);
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.d.a(0);
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.d.a(1);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.d.a(0);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = this.d.a(1);
         bVarA.i().x = ((-this.a.width) / 2.0f) + (iA / 2.0f);
         bVarA.b(0, 0, iA, this.a.height);
         bVarA.h();

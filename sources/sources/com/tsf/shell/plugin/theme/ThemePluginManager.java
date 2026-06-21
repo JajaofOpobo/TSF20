@@ -16,7 +16,7 @@ public class ThemePluginManager {
 
         @Override // android.content.DialogInterface.OnClickListener
         public void onClick(DialogInterface dialogInterface, int i) {
-            b.this.b.a(b.this.a.getItem(i));
+            ThemePluginManager.this.b.a(ThemePluginManager.this.a.getItem(i));
         }
     }
 
@@ -39,7 +39,7 @@ public class ThemePluginManager {
 
         @Override // android.content.DialogInterface.OnCancelListener
         public void onCancel(DialogInterface dialogInterface) {
-            b.this.b.finish();
+            ThemePluginManager.this.b.finish();
         }
     }
 }

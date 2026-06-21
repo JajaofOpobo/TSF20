@@ -9,7 +9,7 @@ public class GooglePlusShare extends BaseShareHandler {
     private static String f = "https://plus.google.com/share?url=";
     private static String g = "https://goo.gl/WuIDdR";
 
-    public b(Context context, Intent intent) {
+    public GooglePlusShare(Context context, Intent intent) {
         super(context, intent, "com.google.android.apps.plus", null);
     }
 

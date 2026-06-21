@@ -16,7 +16,7 @@ public class DragOverlayElement extends BaseRenderable {
     private A f = new PageContainerBase(b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.1
         @Override // com.tsf.shell.f.f.a.DragOverlayElement.a
         public void a() {
-            e.this.b.aj();
+            DragOverlayElement.this.b.aj();
         }
     };
     private A g = new PageContainerBase(b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.2
@@ -78,8 +78,8 @@ public class DragOverlayElement extends BaseRenderable {
         public void d() {
             if (e == null) {
                 e = new com.tsf.shell.f.e.CircleDotNode();
-                e.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
-                e.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+                DragOverlayElement.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
+                DragOverlayElement.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
             }
             this.f = true;
         }
@@ -91,7 +91,7 @@ public class DragOverlayElement extends BaseRenderable {
         @Override // com.censivn.C3DEngine.b.f.BaseRenderable
         public void onDrawChildEnd() {
             if (this.f) {
-                e.dispatchDraw();
+                DragOverlayElement.dispatchDraw();
             }
         }
     }
@@ -153,7 +153,7 @@ public class DragOverlayElement extends BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    e.this.a.visible(false);
+                    DragOverlayElement.this.a.visible(false);
                     if (runnable != null) {
                         runnable.run();
                     }

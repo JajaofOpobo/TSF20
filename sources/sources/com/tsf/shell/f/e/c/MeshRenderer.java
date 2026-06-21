@@ -199,7 +199,7 @@ public class MeshRenderer extends BaseRenderable {
         while (i < this.h) {
             int i3 = i2;
             for (int i4 = 0; i4 < this.h; i4++) {
-                this.c[a(i4, i)] = new a(((i4 * this.i) * this.j) - (this.j / 2.0f), ((i * this.i) * this.j) - (this.j / 2.0f), 0.0f, i4, i);
+                this.c[a(i4, i)] = new AnimationNode(((i4 * this.i) * this.j) - (this.j / 2.0f), ((i * this.i) * this.j) - (this.j / 2.0f), 0.0f, i4, i);
                 int iA = a(i4, i);
                 this.n[(iA * 2) + 0] = 0.5f;
                 this.n[(iA * 2) + 1] = 0.5f;
@@ -401,15 +401,15 @@ public class MeshRenderer extends BaseRenderable {
         final Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e.c.MeshRenderer.8
             @Override // java.lang.Runnable
             public void run() {
-                b.this.b(0.0f, 0.0f, f3, f3, 1.0f);
-                b.this.x.position().x = f;
-                b.this.x.position().y = f2;
-                b.this.rotation().z = 0.0f;
-                b.this.x.a(false);
-                b.this.w = 0;
-                b.this.e();
-                b.this.setAABBPX(-f3, -f3, 0.0f, f3, f3, 0.0f);
-                b.this.B = false;
+                MeshRenderer.this.b(0.0f, 0.0f, f3, f3, 1.0f);
+                MeshRenderer.this.x.position().x = f;
+                MeshRenderer.this.x.position().y = f2;
+                MeshRenderer.this.rotation().z = 0.0f;
+                MeshRenderer.this.x.a(false);
+                MeshRenderer.this.w = 0;
+                MeshRenderer.this.e();
+                MeshRenderer.this.setAABBPX(-f3, -f3, 0.0f, f3, f3, 0.0f);
+                MeshRenderer.this.B = false;
                 if (runnable != null) {
                     runnable.run();
                 }
@@ -428,12 +428,12 @@ public class MeshRenderer extends BaseRenderable {
         final d dVar = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.9
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
-                float f8 = b.this.x.d * 1.0f;
-                float f9 = b.this.x.d * 1.0f;
+                float f8 = MeshRenderer.this.x.d * 1.0f;
+                float f9 = MeshRenderer.this.x.d * 1.0f;
                 float f10 = f9 + ((f3 - f9) * f7);
                 float f11 = f8 + ((f3 - f8) * f7);
                 float f12 = fSqrt * f7;
-                b.this.b(fSqrt, fSqrt, f10, f11, 1.0f);
+                MeshRenderer.this.b(fSqrt, fSqrt, f10, f11, 1.0f);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -453,17 +453,17 @@ public class MeshRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
-                float f8 = 300.0f * b.this.x.d;
-                float f9 = 299.0f * b.this.x.d;
+                float f8 = 300.0f * MeshRenderer.this.x.d;
+                float f9 = 299.0f * MeshRenderer.this.x.d;
                 float f10 = f8 - (f9 * f7);
-                b.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
+                MeshRenderer.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.x.e();
-                b.this.rotation().z = degrees;
-                c.a(b.this, (int) (200.0f * b.this.A), dVar);
+                MeshRenderer.this.x.e();
+                MeshRenderer.this.rotation().z = degrees;
+                c.a(MeshRenderer.this, (int) (200.0f * MeshRenderer.this.A), dVar);
             }
         };
         dVar2.a(0);
@@ -476,15 +476,15 @@ public class MeshRenderer extends BaseRenderable {
         final Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e.c.MeshRenderer.11
             @Override // java.lang.Runnable
             public void run() {
-                b.this.b(0.0f, 0.0f, f3, f3, 1.0f);
-                b.this.x.position().x = f;
-                b.this.x.position().y = f2;
-                b.this.rotation().z = 0.0f;
-                b.this.x.a(true);
-                b.this.w = 0;
-                b.this.e();
-                b.this.setAABBPX(-f3, -f3, 0.0f, f3, f3, 0.0f);
-                b.this.B = false;
+                MeshRenderer.this.b(0.0f, 0.0f, f3, f3, 1.0f);
+                MeshRenderer.this.x.position().x = f;
+                MeshRenderer.this.x.position().y = f2;
+                MeshRenderer.this.rotation().z = 0.0f;
+                MeshRenderer.this.x.a(true);
+                MeshRenderer.this.w = 0;
+                MeshRenderer.this.e();
+                MeshRenderer.this.setAABBPX(-f3, -f3, 0.0f, f3, f3, 0.0f);
+                MeshRenderer.this.B = false;
                 if (runnable != null) {
                     runnable.run();
                 }
@@ -500,11 +500,11 @@ public class MeshRenderer extends BaseRenderable {
                 final d dVar = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.12
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
-                        float f5 = 10.0f * b.this.x.d;
-                        float f6 = 40.0f * b.this.x.d;
+                        float f5 = 10.0f * MeshRenderer.this.x.d;
+                        float f6 = 40.0f * MeshRenderer.this.x.d;
                         float f7 = f5 + ((f3 - f5) * f4);
                         float f8 = f6 + ((f3 - f6) * f4);
-                        b.this.b((1.0f - f4) * b.this.F, 0.0f, f7, f8, 0.5f);
+                        MeshRenderer.this.b((1.0f - f4) * MeshRenderer.this.F, 0.0f, f7, f8, 0.5f);
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -519,11 +519,11 @@ public class MeshRenderer extends BaseRenderable {
                 final d dVar2 = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.13
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
-                        float f5 = 10.0f * b.this.x.d;
-                        float f6 = 40.0f * b.this.x.d;
+                        float f5 = 10.0f * MeshRenderer.this.x.d;
+                        float f6 = 40.0f * MeshRenderer.this.x.d;
                         float f7 = f6 + ((f5 - f6) * f4);
                         float f8 = f5 + ((f6 - f5) * f4);
-                        b.this.b(b.this.F, 0.0f, f7, f8, 0.5f);
+                        MeshRenderer.this.b(MeshRenderer.this.F, 0.0f, f7, f8, 0.5f);
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -532,16 +532,16 @@ public class MeshRenderer extends BaseRenderable {
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        c.a(b.this, (int) (200.0f * b.this.A), dVar);
+                        c.a(MeshRenderer.this, (int) (200.0f * MeshRenderer.this.A), dVar);
                     }
                 };
                 d dVar3 = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.14
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f4) {
-                        float f5 = 10.0f * b.this.x.d;
-                        float f6 = b.this.D + (((40.0f * b.this.x.d) - b.this.D) * f4);
-                        float f7 = b.this.C + ((f5 - b.this.C) * f4);
-                        b.this.b(b.this.F, (1.0f - f4) * b.this.E, f6, f7, 0.5f);
+                        float f5 = 10.0f * MeshRenderer.this.x.d;
+                        float f6 = MeshRenderer.this.D + (((40.0f * MeshRenderer.this.x.d) - MeshRenderer.this.D) * f4);
+                        float f7 = MeshRenderer.this.C + ((f5 - MeshRenderer.this.C) * f4);
+                        MeshRenderer.this.b(MeshRenderer.this.F, (1.0f - f4) * MeshRenderer.this.E, f6, f7, 0.5f);
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -550,7 +550,7 @@ public class MeshRenderer extends BaseRenderable {
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        c.a(b.this, (int) (100.0f * b.this.A), dVar2);
+                        c.a(MeshRenderer.this, (int) (100.0f * MeshRenderer.this.A), dVar2);
                     }
                 };
                 c.a(this);
@@ -571,11 +571,11 @@ public class MeshRenderer extends BaseRenderable {
         final d dVar4 = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f7) {
-                float f8 = 10.0f * b.this.x.d;
-                float f9 = 40.0f * b.this.x.d;
+                float f8 = 10.0f * MeshRenderer.this.x.d;
+                float f9 = 40.0f * MeshRenderer.this.x.d;
                 float f10 = f9 + ((f3 - f9) * f7);
                 float f11 = f8 + ((f3 - f8) * f7);
-                b.this.b(fSqrt, fSqrt * f7, f10, f11, 0.5f);
+                MeshRenderer.this.b(fSqrt, fSqrt * f7, f10, f11, 0.5f);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -595,14 +595,14 @@ public class MeshRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
-                float f8 = 20.0f * b.this.x.d;
-                float f9 = 40.0f * b.this.x.d;
-                b.this.b(fSqrt, 0.0f, (f8 * f7) + f8, (50.0f * b.this.x.d) - (f9 * f7), 0.5f);
+                float f8 = 20.0f * MeshRenderer.this.x.d;
+                float f9 = 40.0f * MeshRenderer.this.x.d;
+                MeshRenderer.this.b(fSqrt, 0.0f, (f8 * f7) + f8, (50.0f * MeshRenderer.this.x.d) - (f9 * f7), 0.5f);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                c.a(b.this, (int) (300.0f * b.this.A), dVar4);
+                c.a(MeshRenderer.this, (int) (300.0f * MeshRenderer.this.A), dVar4);
             }
         };
         dVar5.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
@@ -613,16 +613,16 @@ public class MeshRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
-                float f8 = 100.0f * b.this.x.d;
-                float f9 = 80.0f * b.this.x.d;
+                float f8 = 100.0f * MeshRenderer.this.x.d;
+                float f9 = 80.0f * MeshRenderer.this.x.d;
                 float f10 = f8 - (f9 * f7);
-                float f11 = f8 - ((50.0f * b.this.x.d) * f7);
-                b.this.b(fSqrt * f7, 0.0f, f10, f11, 0.5f);
+                float f11 = f8 - ((50.0f * MeshRenderer.this.x.d) * f7);
+                MeshRenderer.this.b(fSqrt * f7, 0.0f, f10, f11, 0.5f);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                c.a(b.this, (int) (200.0f * b.this.A), dVar5);
+                c.a(MeshRenderer.this, (int) (200.0f * MeshRenderer.this.A), dVar5);
             }
         };
         d dVar7 = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.4
@@ -632,16 +632,16 @@ public class MeshRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f7) {
-                float f8 = 300.0f * b.this.x.d;
-                float f9 = 200.0f * b.this.x.d;
+                float f8 = 300.0f * MeshRenderer.this.x.d;
+                float f9 = 200.0f * MeshRenderer.this.x.d;
                 float f10 = f8 - (f9 * f7);
-                b.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
+                MeshRenderer.this.b(0.0f, 0.0f, f8 - (f9 * f7), f10, 0.1f + (0.9f * f7));
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.rotation().z = degrees;
-                c.a(b.this, (int) (200.0f * b.this.A), dVar6);
+                MeshRenderer.this.rotation().z = degrees;
+                c.a(MeshRenderer.this, (int) (200.0f * MeshRenderer.this.A), dVar6);
             }
         };
         c.a(this);
@@ -683,21 +683,21 @@ public class MeshRenderer extends BaseRenderable {
         d dVar = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f18) {
-                b.this.G = f18;
+                MeshRenderer.this.G = f18;
                 if (f18 >= f16) {
-                    b.this.B = true;
-                    b.this.x.position().x = f;
-                    b.this.x.position().y = f2;
-                    b.this.rotation().z = 0.0f;
-                    b.this.x.b.visible(true);
+                    MeshRenderer.this.B = true;
+                    MeshRenderer.this.x.position().x = f;
+                    MeshRenderer.this.x.position().y = f2;
+                    MeshRenderer.this.rotation().z = 0.0f;
+                    MeshRenderer.this.x.b.visible(true);
                 } else {
-                    b.this.B = false;
-                    b.this.x.position().x = f5;
-                    b.this.x.position().y = f6;
-                    b.this.rotation().z = degrees;
-                    b.this.x.b.visible(false);
+                    MeshRenderer.this.B = false;
+                    MeshRenderer.this.x.position().x = f5;
+                    MeshRenderer.this.x.position().y = f6;
+                    MeshRenderer.this.rotation().z = degrees;
+                    MeshRenderer.this.x.b.visible(false);
                 }
-                b.this.alpha(255.0f * f18);
+                MeshRenderer.this.alpha(255.0f * f18);
                 if (f18 < f13) {
                     return;
                 }
@@ -706,16 +706,16 @@ public class MeshRenderer extends BaseRenderable {
                         if (f18 < f15 || f18 >= f16) {
                             if (f18 >= f16 && f18 < f17) {
                                 float f19 = (f18 - f16) / f11;
-                                float f20 = 1.768034f * b.this.x.d;
-                                b.this.a(0.0f, 0.0f, (((f3 * 1.1f) - f20) * f19) + f20, f20 + (((f4 * 1.1f) - f20) * f19), 1.0f, 1.0f);
-                                b.this.a(1.05f * f19);
+                                float f20 = 1.768034f * MeshRenderer.this.x.d;
+                                MeshRenderer.this.a(0.0f, 0.0f, (((f3 * 1.1f) - f20) * f19) + f20, f20 + (((f4 * 1.1f) - f20) * f19), 1.0f, 1.0f);
+                                MeshRenderer.this.a(1.05f * f19);
                                 return;
                             }
                             if (f18 >= f17 && f18 < 1.0f) {
                                 float f21 = (f18 - f17) / f12;
-                                b.this.a(0.0f, 0.0f, f3, f4, 0.8f, (float) Math.cos(((double) f21) * 3.141592653589793d * 1.5d));
-                                b.this.a(0.0f, 0.0f, f3, f4, 0.2f);
-                                b.this.a((((float) Math.cos(((double) f21) * 3.141592653589793d * 1.5d)) * 0.05f) + 1.0f);
+                                MeshRenderer.this.a(0.0f, 0.0f, f3, f4, 0.8f, (float) Math.cos(((double) f21) * 3.141592653589793d * 1.5d));
+                                MeshRenderer.this.a(0.0f, 0.0f, f3, f4, 0.2f);
+                                MeshRenderer.this.a((((float) Math.cos(((double) f21) * 3.141592653589793d * 1.5d)) * 0.05f) + 1.0f);
                             }
                         }
                     }
@@ -724,8 +724,8 @@ public class MeshRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.a(f3, f4);
-                b.this.w = 1;
+                MeshRenderer.this.a(f3, f4);
+                MeshRenderer.this.w = 1;
             }
         };
         c.a(this);
@@ -769,91 +769,91 @@ public class MeshRenderer extends BaseRenderable {
         d dVar = new d() { // from class: com.tsf.shell.f.e.c.MeshRenderer.6
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f22) {
-                b.this.G = f22;
+                MeshRenderer.this.G = f22;
                 if (f22 >= f20) {
-                    b.this.B = true;
-                    b.this.x.position().x = f;
-                    b.this.x.position().y = f2;
-                    b.this.rotation().z = 0.0f;
-                    b.this.x.b.visible(true);
+                    MeshRenderer.this.B = true;
+                    MeshRenderer.this.x.position().x = f;
+                    MeshRenderer.this.x.position().y = f2;
+                    MeshRenderer.this.rotation().z = 0.0f;
+                    MeshRenderer.this.x.b.visible(true);
                 } else {
-                    b.this.B = false;
-                    b.this.x.position().x = f5;
-                    b.this.x.position().y = f6;
-                    b.this.rotation().z = degrees;
-                    b.this.x.b.visible(false);
+                    MeshRenderer.this.B = false;
+                    MeshRenderer.this.x.position().x = f5;
+                    MeshRenderer.this.x.position().y = f6;
+                    MeshRenderer.this.rotation().z = degrees;
+                    MeshRenderer.this.x.b.visible(false);
                 }
                 if (f22 < f17) {
                     float f23 = (f22 - 0.0f) / f11;
-                    float f24 = 25.0f * b.this.x.d;
+                    float f24 = 25.0f * MeshRenderer.this.x.d;
                     float f25 = f24 + (f24 * f23);
                     float f26 = f24 + (f23 * f24);
-                    b.this.C = f25;
-                    b.this.D = f26;
-                    b.this.E = 0.0f;
-                    b.this.F = 0.0f;
-                    b.this.b(0.0f, 0.0f, f26, f25, 0.5f);
+                    MeshRenderer.this.C = f25;
+                    MeshRenderer.this.D = f26;
+                    MeshRenderer.this.E = 0.0f;
+                    MeshRenderer.this.F = 0.0f;
+                    MeshRenderer.this.b(0.0f, 0.0f, f26, f25, 0.5f);
                     return;
                 }
                 if (f22 >= f17 && f22 < f18) {
                     float f27 = (f22 - f17) / f12;
-                    float f28 = 50.0f * b.this.x.d;
-                    float f29 = f28 + (30.0f * b.this.x.d * f27);
-                    float f30 = f28 - ((b.this.x.d * 48.0f) * f27);
+                    float f28 = 50.0f * MeshRenderer.this.x.d;
+                    float f29 = f28 + (30.0f * MeshRenderer.this.x.d * f27);
+                    float f30 = f28 - ((MeshRenderer.this.x.d * 48.0f) * f27);
                     float f31 = fSqrt * f27;
-                    b.this.C = f30;
-                    b.this.D = f29;
-                    b.this.E = 0.0f;
-                    b.this.F = f31;
-                    b.this.b(f31, 0.0f, f29, f30, 0.5f);
+                    MeshRenderer.this.C = f30;
+                    MeshRenderer.this.D = f29;
+                    MeshRenderer.this.E = 0.0f;
+                    MeshRenderer.this.F = f31;
+                    MeshRenderer.this.b(f31, 0.0f, f29, f30, 0.5f);
                     return;
                 }
                 if (f22 >= f18 && f22 < f19) {
                     float f32 = (f22 - f18) / f13;
-                    float f33 = 50.0f * b.this.x.d;
-                    float f34 = 10.0f * b.this.x.d;
-                    float f35 = (40.0f * b.this.x.d * f32) + f33;
-                    float f36 = f34 + (80.0f * b.this.x.d * f32);
+                    float f33 = 50.0f * MeshRenderer.this.x.d;
+                    float f34 = 10.0f * MeshRenderer.this.x.d;
+                    float f35 = (40.0f * MeshRenderer.this.x.d * f32) + f33;
+                    float f36 = f34 + (80.0f * MeshRenderer.this.x.d * f32);
                     float f37 = fSqrt * f32;
-                    b.this.C = f36;
-                    b.this.D = f35;
-                    b.this.E = f37;
-                    b.this.F = fSqrt;
-                    b.this.b(fSqrt, f37, f35, f36, 0.5f);
+                    MeshRenderer.this.C = f36;
+                    MeshRenderer.this.D = f35;
+                    MeshRenderer.this.E = f37;
+                    MeshRenderer.this.F = fSqrt;
+                    MeshRenderer.this.b(fSqrt, f37, f35, f36, 0.5f);
                     return;
                 }
                 if (f22 >= f19 && f22 < f20) {
                     float f38 = (f22 - f19) / f14;
-                    float f39 = 90.0f * b.this.x.d;
-                    float f40 = 110.0f * b.this.x.d;
+                    float f39 = 90.0f * MeshRenderer.this.x.d;
+                    float f40 = 110.0f * MeshRenderer.this.x.d;
                     float f41 = (f40 * f38) + f39;
                     float f42 = f39 + (f38 * f40);
-                    b.this.C = f42;
-                    b.this.D = f41;
-                    b.this.E = fSqrt;
-                    b.this.F = fSqrt;
-                    b.this.b(fSqrt, fSqrt, f41, f42, 1.0f);
+                    MeshRenderer.this.C = f42;
+                    MeshRenderer.this.D = f41;
+                    MeshRenderer.this.E = fSqrt;
+                    MeshRenderer.this.F = fSqrt;
+                    MeshRenderer.this.b(fSqrt, fSqrt, f41, f42, 1.0f);
                     return;
                 }
                 if (f22 >= f20 && f22 < f21) {
                     float f43 = (f22 - f20) / f15;
-                    float f44 = 353.6068f * b.this.x.d;
-                    b.this.a(0.0f, 0.0f, (((f3 * 1.1f) - f44) * f43) + f44, f44 + (((f4 * 1.1f) - f44) * f43), 1.0f, 1.0f);
-                    b.this.a(1.05f * f43);
+                    float f44 = 353.6068f * MeshRenderer.this.x.d;
+                    MeshRenderer.this.a(0.0f, 0.0f, (((f3 * 1.1f) - f44) * f43) + f44, f44 + (((f4 * 1.1f) - f44) * f43), 1.0f, 1.0f);
+                    MeshRenderer.this.a(1.05f * f43);
                     return;
                 }
                 if (f22 >= f21 && f22 < 1.0f) {
                     float f45 = (f22 - f21) / f16;
-                    b.this.a(0.0f, 0.0f, f3, f4, 0.8f, (float) Math.cos(((double) f45) * 3.141592653589793d * 1.5d));
-                    b.this.a(0.0f, 0.0f, f3, f4, 0.2f);
-                    b.this.a((((float) Math.cos(((double) f45) * 3.141592653589793d * 1.5d)) * 0.05f) + 1.0f);
+                    MeshRenderer.this.a(0.0f, 0.0f, f3, f4, 0.8f, (float) Math.cos(((double) f45) * 3.141592653589793d * 1.5d));
+                    MeshRenderer.this.a(0.0f, 0.0f, f3, f4, 0.2f);
+                    MeshRenderer.this.a((((float) Math.cos(((double) f45) * 3.141592653589793d * 1.5d)) * 0.05f) + 1.0f);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.a(f3, f4);
-                b.this.w = 1;
+                MeshRenderer.this.a(f3, f4);
+                MeshRenderer.this.w = 1;
             }
         };
         c.a(this);
@@ -910,20 +910,20 @@ public class MeshRenderer extends BaseRenderable {
 
     private a[] c(float f, float f2, float f3, float f4) {
         if (f4 < f3) {
-            return new a[]{new a(-f4, f2, 0.0f), new a(-f4, f, 0.0f), new a(-f3, f - f3, 0.0f), new a(-f3, f, 0.0f)};
+            return new a[]{new AnimationNode(-f4, f2, 0.0f), new AnimationNode(-f4, f, 0.0f), new AnimationNode(-f3, f - f3, 0.0f), new AnimationNode(-f3, f, 0.0f)};
         }
-        return new a[]{new a(-f4, f2, 0.0f), new a(-f4, f2 + f4, 0.0f), new a(-f3, f2, 0.0f), new a(-f3, f, 0.0f)};
+        return new a[]{new AnimationNode(-f4, f2, 0.0f), new AnimationNode(-f4, f2 + f4, 0.0f), new AnimationNode(-f3, f2, 0.0f), new AnimationNode(-f3, f, 0.0f)};
     }
 
     private a[] d(float f, float f2, float f3, float f4) {
         if (f4 < f3) {
-            return new a[]{new a(f4, f2, 0.0f), new a(f4, f, 0.0f), new a(f3, f - f3, 0.0f), new a(f3, f, 0.0f)};
+            return new a[]{new AnimationNode(f4, f2, 0.0f), new AnimationNode(f4, f, 0.0f), new AnimationNode(f3, f - f3, 0.0f), new AnimationNode(f3, f, 0.0f)};
         }
-        return new a[]{new a(f4, f2, 0.0f), new a(f4, f2 + f4, 0.0f), new a(f3, f2, 0.0f), new a(f3, f, 0.0f)};
+        return new a[]{new AnimationNode(f4, f2, 0.0f), new AnimationNode(f4, f2 + f4, 0.0f), new AnimationNode(f3, f2, 0.0f), new AnimationNode(f3, f, 0.0f)};
     }
 
     private a a(a[] aVarArr, float f) {
-        a aVar = new a(0.0f, 0.0f, 0.0f, 0, 0);
+        a aVar = new AnimationNode(0.0f, 0.0f, 0.0f, 0, 0);
         float f2 = (float) (((double) (aVarArr[1].a - aVarArr[0].a)) * 3.0d);
         float f3 = (float) ((((double) (aVarArr[2].a - aVarArr[1].a)) * 3.0d) - ((double) f2));
         float f4 = ((aVarArr[3].a - aVarArr[0].a) - f2) - f3;

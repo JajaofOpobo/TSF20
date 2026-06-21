@@ -30,8 +30,8 @@ public class CurveTransition extends ItemPageTransition {
         this.a.alpha((1.0f - Math.abs(CylinderTransition)) * 255.0f);
         this.a.textures().clear();
         this.a.textures().addElement(aVarJ.b);
-        Number3d.TEMPNUMBER3D4.setAll(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
-        this.b.a(gVar, Number3d.TEMPNUMBER3D4);
+        Number3CubeOutsideTransition.TEMPNUMBER3D4.setAll(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
+        this.b.a(gVar, Number3CubeOutsideTransition.TEMPNUMBER3D4);
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
@@ -44,7 +44,7 @@ public class CurveTransition extends ItemPageTransition {
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
-    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
         aVar.alpha((1.0f - Math.abs((Math.abs(gVar.g) - 0.5f) * 2.0f)) * 255.0f);
         return true;
     }

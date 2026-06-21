@@ -20,7 +20,7 @@ public class ScenePositionConfig extends j {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.h.a.b.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        b.this.h();
+                        ScenePositionConfig.this.h();
                     }
                 });
             }
@@ -63,18 +63,18 @@ public class ScenePositionConfig extends j {
         builder.setSingleChoiceItems(new String[]{x.c(b.i.text_top), x.c(b.i.text_bottom)}, this.a, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.h.a.b.2
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
-                b.this.b = i;
+                ScenePositionConfig.this.b = i;
             }
         });
         builder.setPositiveButton(b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.f.h.a.b.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
-                if (b.this.a != b.this.b) {
-                    b.this.a = b.this.b;
+                if (ScenePositionConfig.this.a != ScenePositionConfig.this.b) {
+                    ScenePositionConfig.this.a = ScenePositionConfig.this.b;
                     com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.b.3.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            b.this.m();
+                            ScenePositionConfig.this.m();
                         }
                     });
                 }

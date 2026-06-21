@@ -18,7 +18,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell {
     private ItemInfo a;
-    protected com.censivn.C3DEngine.b.f.b.NinePatchRenderable _e;
+    protected com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable _e;
     private ILayoutItem j;
     private int m;
     private com.tsf.shell.f.i.MultiSelectController q;
@@ -195,12 +195,12 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.1
             @Override // java.lang.Runnable
             public void run() {
-                if (B.this._e == null) {
-                    B.this._e = com.tsf.shell.f.e.WidgetResizeResources.a((int) ((-B.this.minX()) + B.this.maxX() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) ((-B.this.minY()) + B.this.maxY() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
-                    B.this._e.useVBO(false);
-                    B.this._e.textures().addElement(com.tsf.shell.f.e.WidgetResizeResources.h);
-                    B.this._e.position().y = (B.this.minY() + B.this.maxY()) / 2.0f;
-                    B.this.addChild(B.this._e);
+                if (PageItem.this._e == null) {
+                    PageItem.this._e = com.tsf.shell.f.e.WidgetResizeResources.a((int) ((-PageItem.this.minX()) + PageItem.this.maxX() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)), (int) ((-PageItem.this.minY()) + PageItem.this.maxY() + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 10.0f)));
+                    PageItem.this._e.useVBO(false);
+                    PageItem.this._e.textures().addElement(com.tsf.shell.f.e.WidgetResizeResources.h);
+                    PageItem.this._e.position().y = (PageItem.this.minY() + PageItem.this.maxY()) / 2.0f;
+                    PageItem.this.addChild(PageItem.this._e);
                 }
             }
         });
@@ -210,11 +210,11 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i.b.2
             @Override // java.lang.Runnable
             public void run() {
-                if (B.this._e != null) {
-                    B.this._e.textures().removeAll();
-                    B.this._e.removeFromParent();
-                    B.this._e.destroy();
-                    B.this._e = null;
+                if (PageItem.this._e != null) {
+                    PageItem.this._e.textures().removeAll();
+                    PageItem.this._e.removeFromParent();
+                    PageItem.this._e.destroy();
+                    PageItem.this._e = null;
                 }
             }
         });
@@ -244,9 +244,9 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
             d dVar = new d() { // from class: com.tsf.shell.f.i.b.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    B.this.rotation().z = 0.0f;
+                    PageItem.this.rotation().z = 0.0f;
                     if (z2) {
-                        B.this.ad();
+                        PageItem.this.ad();
                     }
                 }
             };

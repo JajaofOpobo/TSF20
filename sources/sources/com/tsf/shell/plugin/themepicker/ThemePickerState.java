@@ -46,8 +46,8 @@ public class ThemePickerState extends BaseAdapter {
         if (view == null) {
             view = LayoutInflater.from(this.c).inflate(ThemePickerResources.h.slid_menu_item, viewGroup, false);
         }
-        ImageView imageView = (ImageView) view.findViewById(ThemePickerResources.C0155f.imageView1);
-        TextView textView = (TextView) view.findViewById(ThemePickerResources.C0155f.textView1);
+        ImageView imageView = (ImageView) view.findViewById(ThemePickerResources.C0155ThemePickerResources.imageView1);
+        TextView textView = (TextView) view.findViewById(ThemePickerResources.C0155ThemePickerResources.textView1);
         if (this.d) {
             if (i == 0) {
                 imageView.setImageResource(ThemePickerResources.e.ic_launcher_wallpaper);

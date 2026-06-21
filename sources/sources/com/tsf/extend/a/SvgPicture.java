@@ -10,7 +10,7 @@ public class SvgPicture {
     private RectF b;
     private RectF c = null;
 
-    b(Picture picture, RectF rectF) {
+    SvgPicture(Picture picture, RectF rectF) {
         this.a = picture;
         this.b = rectF;
     }

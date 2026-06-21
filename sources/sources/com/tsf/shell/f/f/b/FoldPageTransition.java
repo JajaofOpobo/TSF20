@@ -158,7 +158,7 @@ public class FoldPageTransition extends ItemPageTransition {
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
-    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
         return false;
     }
 

@@ -35,7 +35,7 @@ public class PreferenceItemC extends i {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.d.ShellDataHandler.a(com.censivn.C3DEngine.C3DEngine.d(), c.this.a);
+                        com.tsf.shell.d.ShellDataHandler.a(com.censivn.C3DEngine.C3DEngine.d(), PreferenceItemC.this.a);
                     }
                 });
             }
@@ -44,7 +44,7 @@ public class PreferenceItemC extends i {
         this.b = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.b.h(PreferenceItemB.i.mn_infinite_scroll);
         this.b.i(PreferenceItemB.i.mn_infinite_scroll_summary);
-        this.b.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.2
+        this.b.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.2
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 if (com.tsf.shell.manager.b.ConfigManager.J() != z) {
@@ -58,10 +58,10 @@ public class PreferenceItemC extends i {
         b(this.b);
         this.c = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.c.h(PreferenceItemB.i.mn_transparent_navigation_bar);
-        this.c.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.3
+        this.c.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.3
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                c.this.m = z;
+                PreferenceItemC.this.m = z;
                 return true;
             }
         });
@@ -69,27 +69,27 @@ public class PreferenceItemC extends i {
         this.d = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.d.h(PreferenceItemB.i.mn_transparent_notification_bar);
         this.d.i(PreferenceItemB.i.mn_transparent_notification_bar_summary);
-        this.d.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.4
+        this.d.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.4
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                c.this.l = z;
+                PreferenceItemC.this.l = z;
                 return true;
             }
         });
         b(this.d);
         this.e = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.e.h(PreferenceItemB.i.mn_show_notification_bar);
-        this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.5
+        this.e.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.5
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                c.this.k = z;
+                PreferenceItemC.this.k = z;
                 return true;
             }
         });
         b(this.e);
         this.g = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.g.h(PreferenceItemB.i.text_floating_button);
-        this.g.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.6
+        this.g.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.6
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 return true;
@@ -101,7 +101,7 @@ public class PreferenceItemC extends i {
         this.f = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.f.h(PreferenceItemB.i.text_lock_desktop);
         this.f.i(PreferenceItemB.i.text_lock_desktop_summary);
-        this.f.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.7
+        this.f.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.7
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 com.tsf.shell.manager.app.FeatureConfig.b();
@@ -112,7 +112,7 @@ public class PreferenceItemC extends i {
         this.h = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.h.h(PreferenceItemB.i.mn_vibration_feedback);
         this.h.i(PreferenceItemB.i.mn_vibration_feedback_summary);
-        this.h.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.8
+        this.h.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.8
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 if (com.tsf.shell.manager.b.ConfigManager.ae() != z) {
@@ -157,15 +157,15 @@ public class PreferenceItemC extends i {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemC.9
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.manager.b.ConfigManager.P() != c.this.k) {
-                    com.tsf.shell.manager.app.ObserverManager.a(!c.this.k);
+                if (com.tsf.shell.manager.b.ConfigManager.P() != PreferenceItemC.this.k) {
+                    com.tsf.shell.manager.app.ObserverManager.a(!PreferenceItemC.this.k);
                 }
-                if (com.tsf.shell.utils.StatusBarHelper.c() && com.tsf.shell.manager.b.ConfigManager.O() != c.this.l) {
+                if (com.tsf.shell.utils.StatusBarHelper.c() && com.tsf.shell.manager.b.ConfigManager.O() != PreferenceItemC.this.l) {
                     com.censivn.C3DEngine.b.c.WindowManager eVar = com.tsf.shell.manager.app.ObserverManager;
-                    com.censivn.C3DEngine.b.c.WindowManager.b(Home.b(), c.this.l, true);
+                    com.censivn.C3DEngine.b.c.WindowManager.b(Home.b(), PreferenceItemC.this.l, true);
                 }
-                if (com.tsf.shell.utils.StatusBarHelper.b() && com.tsf.shell.manager.b.ConfigManager.N() != c.this.m) {
-                    com.tsf.shell.manager.app.ObserverManager.a((Activity) Home.b(), c.this.m, true);
+                if (com.tsf.shell.utils.StatusBarHelper.b() && com.tsf.shell.manager.b.ConfigManager.N() != PreferenceItemC.this.m) {
+                    com.tsf.shell.manager.app.ObserverManager.a((Activity) Home.b(), PreferenceItemC.this.m, true);
                 }
             }
         });

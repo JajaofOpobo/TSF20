@@ -29,47 +29,47 @@ public class CubeClockContainer extends VObject3dContainer {
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onDown(MotionEvent motionEvent) {
                 this.b = false;
-                this.a = f.this.a.rotation().x;
-                f.this.c = -100.0f;
-                f.this.d = 0.8f;
-                VTween.killTween(f.this.a);
+                this.a = CubeClockContainer.this.a.rotation().x;
+                CubeClockContainer.this.c = -100.0f;
+                CubeClockContainer.this.d = 0.8f;
+                VTween.killTween(CubeClockContainer.this.a);
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                VTween.killTween(f.this.a);
-                f.this.g.j.d();
+                VTween.killTween(CubeClockContainer.this.a);
+                CubeClockContainer.this.g.j.d();
                 float y = ((motionEvent2.getY() - motionEvent.getY()) / 64.0f) * 90.0f;
                 CubeClockEmpty.a("Scroll rotationX:" + (this.a + y));
-                f.this.a.rotation().x = y + this.a;
-                f.this.a.invalidate();
+                CubeClockContainer.this.a.rotation().x = y + this.a;
+                CubeClockContainer.this.a.invalidate();
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 this.b = true;
-                f.this.b(Math.round((((f2 < 0.0f ? -1.0f : 1.0f) * 900.0f) + this.a) / 90.0f), 500);
+                CubeClockContainer.this.b(Math.round((((f2 < 0.0f ? -1.0f : 1.0f) * 900.0f) + this.a) / 90.0f), 500);
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onSingleTapUp(MotionEvent motionEvent) {
-                int iA = f.this.a(f.this.a.rotation().x);
+                int iA = CubeClockContainer.this.a(CubeClockContainer.this.a.rotation().x);
                 CubeClockEmpty.a("hit CubeIndex:" + iA);
-                int iB = f.this.b(iA);
-                if (f.this.h != null) {
-                    f.this.h.b(iB);
+                int iB = CubeClockContainer.this.b(iA);
+                if (CubeClockContainer.this.h != null) {
+                    CubeClockContainer.this.h.b(iB);
                 }
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onUp(MotionEvent motionEvent) {
-                f.this.c = 0.0f;
-                f.this.d = 0.2f;
-                f.this.g.j.d();
+                CubeClockContainer.this.c = 0.0f;
+                CubeClockContainer.this.d = 0.2f;
+                CubeClockContainer.this.g.j.d();
                 if (!this.b) {
-                    int iRound = Math.round(f.this.a.rotation().x / 90.0f);
+                    int iRound = Math.round(CubeClockContainer.this.a.rotation().x / 90.0f);
                     CubeClockEmpty.a("EndingRotationX:" + iRound);
-                    f.this.b(iRound, 500);
+                    CubeClockContainer.this.b(iRound, 500);
                 }
             }
         });

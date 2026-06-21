@@ -71,12 +71,12 @@ public class DrawerItemGather extends DrawerItemAction {
     }
 
     @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aF() {
-        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(2, 0, aE().V, aE().W) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.3
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aF() {
+        com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(2, 0, aE().V, aE().W) { // from class: com.tsf.shell.f.i.b.e.DrawerItemGather.3
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
                 super.onDrawChildStart();
-                if (parent() != null && c.b != null && c.this.s != null && !c.this.s.isCustomResource()) {
+                if (parent() != null && c.b != null && DrawerItemGather.this.s != null && !DrawerItemGather.this.s.isCustomResource()) {
                     c.a.dispatchDraw();
                 }
             }
@@ -136,7 +136,7 @@ public class DrawerItemGather extends DrawerItemAction {
 
         @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
-            com.tsf.shell.manager.app.FolderManager.a(c.this.t);
+            com.tsf.shell.manager.app.FolderManager.a(DrawerItemGather.this.t);
         }
 
         @Override // com.tsf.shell.f.i.a.PageItemTouchHandler, com.censivn.C3DEngine.b.d.MouseEventListener

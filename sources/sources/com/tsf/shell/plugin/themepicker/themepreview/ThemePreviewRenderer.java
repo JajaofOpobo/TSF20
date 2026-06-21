@@ -80,7 +80,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("PackageChangeReceiver ActionCode:" + intent.getAction());
-            c.this.M();
+            ThemePreviewRenderer.this.M();
         }
     }
 
@@ -126,11 +126,11 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int iFloor = (int) Math.floor(gridView.getWidth() / (c.this.g + c.this.h));
+                int iFloor = (int) Math.floor(gridView.getWidth() / (ThemePreviewRenderer.this.g + ThemePreviewRenderer.this.h));
                 if (iFloor > 0) {
-                    int width = (gridView.getWidth() / iFloor) - c.this.h;
-                    c.this.c.a(iFloor);
-                    c.this.c.b(width);
+                    int width = (gridView.getWidth() / iFloor) - ThemePreviewRenderer.this.h;
+                    ThemePreviewRenderer.this.c.a(iFloor);
+                    ThemePreviewRenderer.this.c.b(width);
                     if (h.e()) {
                         gridView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
@@ -209,15 +209,15 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
                 if (view == null) {
                     view = new View(this.c);
                 }
-                view.setLayoutParams(new AbsListView.LayoutParams(-1, c.this.f));
+                view.setLayoutParams(new AbsListView.LayoutParams(-1, ThemePreviewRenderer.this.f));
             } else {
                 if (view == null) {
                     view = LayoutInflater.from(this.c).inflate(f.h.theme_preview_grid_item, (ViewGroup) null);
                 }
                 ResolveInfo resolveInfo = (ResolveInfo) getItem(i);
                 view.setTag(resolveInfo.activityInfo.packageName);
-                c.this.a.a(resolveInfo, (RecyclingImageView) view.findViewById(f.C0155f.imageView1));
-                ((TextView) view.findViewById(f.C0155f.textView1)).setText(c.this.b(resolveInfo.loadLabel(this.d).toString()));
+                ThemePreviewRenderer.this.a.a(resolveInfo, (RecyclingImageView) view.findViewById(f.C0155f.imageView1));
+                ((TextView) view.findViewById(f.C0155f.textView1)).setText(ThemePreviewRenderer.this.b(resolveInfo.loadLabel(this.d).toString()));
             }
             return view;
         }
@@ -229,7 +229,7 @@ public class ThemePreviewRenderer extends Fragment implements ThemePreviewConfig
                 Intent intent = new Intent();
                 intent.setClass(this.c, ThemePreviewDetilActivity.class);
                 intent.putExtra("packagename", resolveInfo.activityInfo.packageName);
-                c.this.i().startActivityForResult(intent, 100);
+                ThemePreviewRenderer.this.i().startActivityForResult(intent, 100);
             }
         }
     }

@@ -68,11 +68,11 @@ public class PendingItemGroup extends ItemGroupBase {
                 this.d++;
             }
         };
-        this.m = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 200.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, true, true);
+        this.m = new AnimatedItemGroup(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 200.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, true, true);
         this.m.position().z = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
-        this.n = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 180.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, false, true);
+        this.n = new AnimatedItemGroup(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 180.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 3.0f, false, true);
         this.n.position().z = (-100.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
-        this.o = new a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 70.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.4f, true, false);
+        this.o = new AnimatedItemGroup(com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 54.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 70.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 0.4f, true, false);
         this.o.position().y = (-100.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.l.textures().addElement(this.p);
         this.m.textures().addElement(this.q);
@@ -140,7 +140,7 @@ public class PendingItemGroup extends ItemGroupBase {
             if (this.h) {
                 position().x += this.j;
                 if (position().x > this.f) {
-                    d.this.a(this);
+                    PendingItemGroup.this.a(this);
                     this.h = false;
                     return;
                 }
@@ -148,7 +148,7 @@ public class PendingItemGroup extends ItemGroupBase {
             }
             position().x -= this.j;
             if (position().x < this.g) {
-                d.this.a(this);
+                PendingItemGroup.this.a(this);
                 this.h = true;
             }
         }

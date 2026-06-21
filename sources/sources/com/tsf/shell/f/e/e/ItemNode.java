@@ -22,7 +22,7 @@ public class ItemNode extends BaseRenderable {
         this.c = new ItemContainerNode() { // from class: com.tsf.shell.f.e.e.ItemNode.1
             @Override // com.tsf.shell.f.e.e.ItemNode.b, java.lang.Runnable
             public void run() {
-                a.this.a(this.c, this.b);
+                ItemNode.this.a(this.c, this.b);
             }
         };
     }
@@ -48,9 +48,9 @@ public class ItemNode extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.e.ItemNode.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.visible(false);
-                if (!a.this.d) {
-                    com.tsf.shell.manager.app.TaskScheduler.b(a.this);
+                ItemNode.this.visible(false);
+                if (!ItemNode.this.d) {
+                    com.tsf.shell.manager.app.TaskScheduler.b(ItemNode.this);
                 }
             }
         };
@@ -117,10 +117,10 @@ public class ItemNode extends BaseRenderable {
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
             w.a();
-            a.this.c.b = fVar;
-            a.this.c.c = this.a;
-            com.censivn.C3DEngine.C3DEngine.a().b(a.this.c, 400L);
-            a.this.d();
+            ItemNode.this.c.b = fVar;
+            ItemNode.this.c.c = this.a;
+            com.censivn.C3DEngine.C3DEngine.a().b(ItemNode.this.c, 400L);
+            ItemNode.this.d();
         }
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
@@ -130,16 +130,16 @@ public class ItemNode extends BaseRenderable {
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
-            a.this.c.b = null;
-            a.this.e();
+            com.censivn.C3DEngine.C3DEngine.a().g(ItemNode.this.c);
+            ItemNode.this.c.b = null;
+            ItemNode.this.e();
         }
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
-            a.this.c.b = null;
-            a.this.e();
+            com.censivn.C3DEngine.C3DEngine.a().g(ItemNode.this.c);
+            ItemNode.this.c.b = null;
+            ItemNode.this.e();
         }
     }
 

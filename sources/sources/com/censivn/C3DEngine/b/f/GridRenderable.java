@@ -11,27 +11,27 @@ public class GridRenderable extends BaseRenderable {
     private int d;
     private boolean e;
 
-    public k(float f, float f2) {
+    public GridRenderable(float f, float f2) {
         this(f, f2, 1, 1, new Color4(255, 50, 0, 100), false, true, false);
     }
 
-    public k(float f, float f2, boolean z) {
+    public GridRenderable(float f, float f2, boolean z) {
         this(f, f2, 1, 1, new Color4(255, 50, 0, 100), false, z, false);
     }
 
-    public k(float f, float f2, int i, int i2) {
+    public GridRenderable(float f, float f2, int i, int i2) {
         this(f, f2, i, i2, new Color4(255, 50, 0, 100), false, true, false);
     }
 
-    public k(float f, float f2, int i, int i2, boolean z) {
+    public GridRenderable(float f, float f2, int i, int i2, boolean z) {
         this(f, f2, i, i2, new Color4(255, 50, 0, 100), false, z, false);
     }
 
-    public k(float f, float f2, int i, int i2, boolean z, boolean z2) {
+    public GridRenderable(float f, float f2, int i, int i2, boolean z, boolean z2) {
         this(f, f2, i, i2, new Color4(255, 50, 0, 100), z, z2, false);
     }
 
-    public k(float f, float f2, int i, int i2, Color4 color4, boolean z, boolean z2, boolean z3) {
+    public GridRenderable(float f, float f2, int i, int i2, Color4 color4, boolean z, boolean z2, boolean z3) {
         super(i * 4 * i2, i * 2 * i2, true, true, Boolean.valueOf(z3));
         this.e = false;
         this.a = i;

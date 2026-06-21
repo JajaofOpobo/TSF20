@@ -37,7 +37,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
     @Override // android.support.v4.app.Fragment
     public View a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(ThemePickerResources.h.theme_preview_gallery_fragment, viewGroup, false);
-        this.a = (GridView) viewInflate.findViewById(ThemePickerResources.C0155f.gridView);
+        this.a = (GridView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.gridView);
         this.a.setAdapter((ListAdapter) this.b);
         this.a.setOnItemClickListener(this.b);
         final int iApplyDimension = (int) TypedValue.applyDimension(1, 150.0f, getResources().getDisplayMetrics());
@@ -62,9 +62,9 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
                 }
             }
         });
-        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155f.imageView1)).setImageResource(ThemePickerResources.e.ic_launcher_wallpaper);
-        ((TextView) viewInflate.findViewById(ThemePickerResources.C0155f.textView1)).setText(ThemePickerResources.j.theme_picker_theme_picker_gallery_apps);
-        viewInflate.findViewById(ThemePickerResources.C0155f.linearLayout1).setOnClickListener(this);
+        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.imageView1)).setImageResource(ThemePickerResources.e.ic_launcher_wallpaper);
+        ((TextView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.textView1)).setText(ThemePickerResources.j.theme_picker_theme_picker_gallery_apps);
+        viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.linearLayout1).setOnClickListener(this);
         return viewInflate;
     }
 
@@ -164,8 +164,8 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
                     view.setLayoutParams(this.f);
                 }
                 ResolveInfo resolveInfo = this.g[i - this.d];
-                ((ImageView) view.findViewById(ThemePickerResources.C0155f.imageView1)).setImageDrawable(resolveInfo.loadIcon(this.h));
-                ((TextView) view.findViewById(ThemePickerResources.C0155f.textView1)).setText(resolveInfo.loadLabel(this.h));
+                ((ImageView) view.findViewById(ThemePickerResources.C0155ThemePickerResources.imageView1)).setImageDrawable(resolveInfo.loadIcon(this.h));
+                ((TextView) view.findViewById(ThemePickerResources.C0155ThemePickerResources.textView1)).setText(resolveInfo.loadLabel(this.h));
             }
             return view;
         }
@@ -184,7 +184,7 @@ public class ThemePickerProvider extends Fragment implements View.OnClickListene
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == ThemePickerResources.C0155f.linearLayout1) {
+        if (view.getId() == ThemePickerResources.C0155ThemePickerResources.linearLayout1) {
             Object aVarI = getActivity();
             if (aVarI instanceof SildingMenuLayout.d) {
                 ((SildingMenuLayout.d) aVarI).h();

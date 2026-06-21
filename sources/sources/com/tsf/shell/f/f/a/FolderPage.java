@@ -122,14 +122,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.H.textures().addElement(textureElementAD);
             iVar = this.H;
         }
-        Number3d.TEMPNUMBER3D.reset();
-        bVar.localToGlobal(Number3d.TEMPNUMBER3D);
-        iVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
-        Number3d.TEMPNUMBER3D.x = 1.0f;
-        Number3d.TEMPNUMBER3D.y = 1.0f;
-        Number3d.TEMPNUMBER3D.z = 1.0f;
-        bVar.localScaleToGlobale(Number3d.TEMPNUMBER3D);
-        iVar.scale().setAllFrom(Number3d.TEMPNUMBER3D);
+        Number3AppClassifier.TEMPNUMBER3AppClassifier.reset();
+        bVar.localToGlobal(Number3AppClassifier.TEMPNUMBER3D);
+        iVar.position().setAllFrom(Number3AppClassifier.TEMPNUMBER3D);
+        Number3AppClassifier.TEMPNUMBER3D.x = 1.0f;
+        Number3AppClassifier.TEMPNUMBER3D.y = 1.0f;
+        Number3AppClassifier.TEMPNUMBER3D.z = 1.0f;
+        bVar.localScaleToGlobale(Number3AppClassifier.TEMPNUMBER3D);
+        iVar.scale().setAllFrom(Number3AppClassifier.TEMPNUMBER3D);
         return iVar;
     }
 
@@ -200,7 +200,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                h.this.N();
+                FolderPage.this.N();
             }
         };
         dVar.l(1.0f);
@@ -376,9 +376,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.ak.a(z2, new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.7
             @Override // java.lang.Runnable
             public void run() {
-                h.this.ak.visible(false);
+                FolderPage.this.ak.visible(false);
                 if (z3) {
-                    h.this.ar();
+                    FolderPage.this.ar();
                 }
             }
         });
@@ -497,7 +497,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.T = new com.tsf.shell.f.e.PageIndicatorStrip(z2) { // from class: com.tsf.shell.f.f.a.FolderPage.8
             @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
-                h.this.at();
+                FolderPage.this.at();
             }
         };
         this.T.mouseEnabled(false);
@@ -515,30 +515,30 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             @SuppressLint({"WrongCall"})
             public void onDrawStart() {
-                h.this.N = null;
-                if (h.this.M != null) {
-                    float f = h.this.ag / h.this.P;
-                    if (!h.this.R) {
-                        if (h.this.Q) {
-                            h.this.M.b(((f - h.this.M.a) * 0.5f) + h.this.M.a);
-                            if (h.this.S) {
-                                h.this.L.rotation().x += (h.this.ah - h.this.L.rotation().x) * 0.15f;
+                FolderPage.this.N = null;
+                if (FolderPage.this.M != null) {
+                    float f = FolderPage.this.ag / FolderPage.this.P;
+                    if (!FolderPage.this.R) {
+                        if (FolderPage.this.Q) {
+                            FolderPage.this.M.b(((f - FolderPage.this.M.a) * 0.5f) + FolderPage.this.M.a);
+                            if (FolderPage.this.S) {
+                                FolderPage.this.L.rotation().x += (FolderPage.this.ah - FolderPage.this.L.rotation().x) * 0.15f;
                                 return;
                             }
                             return;
                         }
-                        if (f != 0.0f || Math.abs(h.this.M.a - f) >= 0.002d || Math.abs(rotation().x - h.this.ah) >= 0.002d) {
-                            h.this.M.b(((f - h.this.M.a) * 0.15f) + h.this.M.a);
-                            if (h.this.S) {
-                                h.this.L.rotation().x += (h.this.ah - h.this.L.rotation().x) * 0.2f;
+                        if (f != 0.0f || Math.abs(FolderPage.this.M.a - f) >= 0.002d || Math.abs(rotation().x - FolderPage.this.ah) >= 0.002d) {
+                            FolderPage.this.M.b(((f - FolderPage.this.M.a) * 0.15f) + FolderPage.this.M.a);
+                            if (FolderPage.this.S) {
+                                FolderPage.this.L.rotation().x += (FolderPage.this.ah - FolderPage.this.L.rotation().x) * 0.2f;
                                 return;
                             }
                             return;
                         }
-                        if (!h.this.R) {
-                            h.this.M.b(0.0f);
-                            h.this.aU();
-                            rotation().x = h.this.ah = 0.0f;
+                        if (!FolderPage.this.R) {
+                            FolderPage.this.M.b(0.0f);
+                            FolderPage.this.aU();
+                            rotation().x = FolderPage.this.ah = 0.0f;
                         }
                     }
                 }
@@ -546,8 +546,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawEnd() {
-                if (h.this.N != null) {
-                    h.this.N.b().a(h.this.L);
+                if (FolderPage.this.N != null) {
+                    FolderPage.this.N.b().a(FolderPage.this.L);
                 }
             }
         };
@@ -573,8 +573,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.10
                     @Override // java.lang.Runnable
                     public void run() {
-                        h.this.bd();
-                        h.this.be();
+                        FolderPage.this.bd();
+                        FolderPage.this.be();
                     }
                 });
             }
@@ -629,31 +629,31 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.Z = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.11
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
-                h.this.ag = h.this.ac * h.this.P * f;
-                if (h.this.S) {
-                    h.this.ah = 45.0f * (1.0f - (Math.abs(f - 0.5f) * 2.0f));
+                FolderPage.this.ag = FolderPage.this.ac * FolderPage.this.P * f;
+                if (FolderPage.this.S) {
+                    FolderPage.this.ah = 45.0f * (1.0f - (Math.abs(f - 0.5f) * 2.0f));
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.TweenUtils.a(h.this.ab, h.D, h.this.aa);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderPage.this.ab, h.D, FolderPage.this.aa);
             }
         };
         this.aa = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.12
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
-                h.this.ag = h.this.ac * h.this.P * (1.0f - f);
-                if (h.this.S) {
-                    h.this.ah = (-45.0f) * (1.0f - (Math.abs(f - 0.5f) * 2.0f));
+                FolderPage.this.ag = FolderPage.this.ac * FolderPage.this.P * (1.0f - f);
+                if (FolderPage.this.S) {
+                    FolderPage.this.ah = (-45.0f) * (1.0f - (Math.abs(f - 0.5f) * 2.0f));
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                h.this.Q = false;
-                h.this.M.n();
-                h.this.az();
+                FolderPage.this.Q = false;
+                FolderPage.this.M.n();
+                FolderPage.this.az();
             }
         };
         this.aa.b(260);
@@ -842,8 +842,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.13
             @Override // java.lang.Runnable
             public void run() {
-                h.this.b(h.B, h.C);
-                h.this.aD();
+                FolderPage.this.b(h.B, h.C);
+                FolderPage.this.aD();
             }
         });
     }
@@ -852,8 +852,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.2
             @Override // java.lang.Runnable
             public void run() {
-                h.this.b(i, i2);
-                h.this.aD();
+                FolderPage.this.b(i, i2);
+                FolderPage.this.aD();
             }
         });
     }
@@ -874,7 +874,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         if (E == null) {
             E = new ArrayList<>();
         } else {
-            E.clear();
+            DragOverlayElement.clear();
         }
         float f = (com.tsf.shell.manager.o.ButtonPresetManager.a.T / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.z + t;
         float f2 = (com.censivn.C3DEngine.b.b.ScreenConstants.B - r) - (com.tsf.shell.manager.o.ButtonPresetManager.a.U / 2.0f);
@@ -884,7 +884,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             Number3d number3d = new Number3d();
             number3d.x = (i4 * n) + f;
             number3d.y = ((-i5) * o) + f2;
-            E.add(number3d);
+            DragOverlayElement.add(number3d);
         }
         this.X.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E, p, q, E);
     }
@@ -1190,16 +1190,16 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                h.this.as();
-                if (h.this.an) {
+                FolderPage.this.as();
+                if (FolderPage.this.an) {
                     if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
-                        h.this.ai.e((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
+                        FolderPage.this.ai.e((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                     }
                 } else if (this.h) {
                     if (this.c instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
                         com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.c;
                         if (gVar.aC()) {
-                            if (h.this.h.e()) {
+                            if (FolderPage.this.h.e()) {
                                 gVar.ap();
                                 return;
                             } else {
@@ -1217,13 +1217,13 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
-                h.this.as();
-                if (h.this.an) {
+                FolderPage.this.as();
+                if (FolderPage.this.an) {
                     if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
-                        h.this.ai.c((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
+                        FolderPage.this.ai.c((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                     }
                 } else {
-                    if (!h.this.aj()) {
+                    if (!FolderPage.this.aj()) {
                     }
                     c(motionEvent);
                 }
@@ -1232,15 +1232,15 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
                 if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
-                    h.this.ai.d((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
+                    FolderPage.this.ai.d((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (h.this.an) {
+                if (FolderPage.this.an) {
                     if (this.c instanceof com.tsf.shell.f.i.ShortcutItem) {
-                        h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2);
+                        FolderPage.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2);
                         return;
                     }
                     return;
@@ -1270,12 +1270,12 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
+                if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                    FolderPage.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                 }
                 com.tsf.shell.manager.action.GestureHandler.a(motionEvent);
-                this.h = h.this.R;
-                h.this.Q = false;
+                this.h = FolderPage.this.R;
+                FolderPage.this.Q = false;
                 this.f = false;
                 if (this.c instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
                     com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.c;
@@ -1292,21 +1292,21 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
-                if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    h.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
+                if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                    FolderPage.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
                 }
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.4.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (com.censivn.C3DEngine.a.d.d().h() == this) {
-                            if (!h.this.Q) {
-                                h.this.au();
-                                AnonymousClass4.this.b = h.this.ag = h.this.M.position().x;
+                            if (!FolderPage.this.Q) {
+                                FolderPage.this.au();
+                                AnonymousClass4.this.b = FolderPage.this.ag = FolderPage.this.M.position().x;
                             }
-                            h.this.ag = AnonymousClass4.this.b + (motionEvent2.getX() - motionEvent.getX());
-                            if (h.this.S) {
+                            FolderPage.this.ag = AnonymousClass4.this.b + (motionEvent2.getX() - motionEvent.getX());
+                            if (FolderPage.this.S) {
                                 float y2 = (float) (((double) ((motionEvent2.getY() - motionEvent.getY()) / (com.censivn.C3DEngine.b.b.ScreenConstants.G / 2))) * 1.3d);
-                                h.this.ah = (y2 <= 1.0f ? y2 < -1.0f ? -1.0f : y2 : 1.0f) * 45.0f;
+                                FolderPage.this.ah = (y2 <= 1.0f ? y2 < -1.0f ? -1.0f : y2 : 1.0f) * 45.0f;
                             }
                         }
                     }
@@ -1315,45 +1315,45 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
-                if (h.this.an) {
+                if (FolderPage.this.an) {
                 }
-                if (!h.this.Q) {
-                    h.this.aU();
+                if (!FolderPage.this.Q) {
+                    FolderPage.this.aU();
                     return;
                 }
-                h.this.Q = false;
-                h.this.ag = 0.0f;
-                if (h.this.M.a > 0.5d) {
-                    h.this.aI();
-                } else if (h.this.M.a < -0.5d) {
-                    h.this.aH();
+                FolderPage.this.Q = false;
+                FolderPage.this.ag = 0.0f;
+                if (FolderPage.this.M.a > 0.5d) {
+                    FolderPage.this.aI();
+                } else if (FolderPage.this.M.a < -0.5d) {
+                    FolderPage.this.aH();
                 }
-                h.this.M.n();
+                FolderPage.this.M.n();
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    h.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
+                if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                    FolderPage.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent);
                 }
-                h.this.ah = 0.0f;
+                FolderPage.this.ah = 0.0f;
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                if (h.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    h.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
+                if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                    FolderPage.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
                 }
-                h.this.Q = false;
-                h.this.ag = 0.0f;
-                if (!h.this.R && Math.abs(PageGridRenderer) > 100.0f) {
+                FolderPage.this.Q = false;
+                FolderPage.this.ag = 0.0f;
+                if (!FolderPage.this.R && Math.abs(PageGridRenderer) > 100.0f) {
                     if (f < 0.0f) {
-                        h.this.aH();
+                        FolderPage.this.aH();
                     } else {
-                        h.this.aI();
+                        FolderPage.this.aI();
                     }
                 }
-                h.this.M.n();
+                FolderPage.this.M.n();
             }
         };
     }
@@ -1388,7 +1388,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.5
             @Override // java.lang.Runnable
             public void run() {
-                h.this.au = new FrameLayout(com.censivn.C3DEngine.C3DEngine.d());
+                FolderPage.this.au = new FrameLayout(com.censivn.C3DEngine.C3DEngine.d());
                 ImageView imageView = new ImageView(com.censivn.C3DEngine.C3DEngine.d());
                 imageView.setImageResource(b.d.drawer_loading);
                 RotateAnimation rotateAnimation = new RotateAnimation(0.0f, 360.0f, 1, 0.5f, 1, 0.5f);
@@ -1397,8 +1397,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 rotateAnimation.setRepeatCount(-1);
                 imageView.setAnimation(rotateAnimation);
                 rotateAnimation.startNow();
-                h.this.au.addView(imageView, new FrameLayout.LayoutParams(com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), 17));
-                com.tsf.shell.manager.app.TaskScheduler.a(h.this.au, new ViewGroup.LayoutParams(-1, -1));
+                FolderPage.this.au.addView(imageView, new FrameLayout.LayoutParams(com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), com.censivn.C3DEngine.b.b.ScreenConstants.b(80.0f), 17));
+                com.tsf.shell.manager.app.TaskScheduler.a(FolderPage.this.au, new ViewGroup.LayoutParams(-1, -1));
             }
         });
     }
@@ -1407,8 +1407,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.6
             @Override // java.lang.Runnable
             public void run() {
-                if (h.this.au != null) {
-                    com.tsf.shell.manager.app.TaskScheduler.a(h.this.au);
+                if (FolderPage.this.au != null) {
+                    com.tsf.shell.manager.app.TaskScheduler.a(FolderPage.this.au);
                 }
             }
         });

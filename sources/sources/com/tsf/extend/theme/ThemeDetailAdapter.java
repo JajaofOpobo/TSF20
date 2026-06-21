@@ -48,7 +48,7 @@ public class ThemeDetailAdapter extends BaseAdapter {
         public B c = new B();
     }
 
-    public ad(Context context) {
+    public ThemeDetailAdapter(Context context) {
         this.g = context;
     }
 

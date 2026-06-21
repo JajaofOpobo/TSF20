@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC;
 import com.tsf.shell.Home;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageContentType extends g {
+public class PageContentType extends WorkspacePage {
     private com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC l;
 
     public PageContentType() {
@@ -26,7 +26,7 @@ public class PageContentType extends g {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.1
             @Override // java.lang.Runnable
             public void run() {
-                Home.b().l().addView(k.this.b);
+                Home.b().l().addView(PageContentType.this.b);
             }
         });
     }
@@ -35,7 +35,7 @@ public class PageContentType extends g {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.f.PageContentType.2
             @Override // java.lang.Runnable
             public void run() {
-                Home.b().l().removeView(k.this.b);
+                Home.b().l().removeView(PageContentType.this.b);
             }
         });
     }

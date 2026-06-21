@@ -23,7 +23,7 @@ public class WidgetResizeResources {
                 b.a = b.e.id;
             }
         };
-        e.setReloadThemeRunnable(runnable);
+        ItemTrailContainer.setReloadThemeRunnable(runnable);
         runnable.run();
         f = ThemeManager.mix.widgetResize.getTextureElement(ThemeShellDescription.WIDGET_ANDROID_RESIZE_UNMATCH_BOX, 64, 64);
         Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e.b.2
@@ -50,11 +50,11 @@ public class WidgetResizeResources {
                 b.d = b.h.id;
             }
         };
-        h.setReloadThemeRunnable(runnable4);
+        LassoSelectionHandler.setReloadThemeRunnable(runnable4);
         runnable4.run();
     }
 
-    public static com.censivn.C3DEngine.b.f.b.NinePatchRenderable a(int i, int i2) {
-        return new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(i, i2, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+    public static com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable a(int i, int i2) {
+        return new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(i, i2, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
     }
 }

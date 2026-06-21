@@ -36,7 +36,7 @@ public class InstallAppDialog extends BaseDialog implements DialogInterface.OnCa
         void i();
     }
 
-    public c(Context context, int i) {
+    public InstallAppDialog(Context context, int i) {
         super(context);
         this.k = i;
         b();

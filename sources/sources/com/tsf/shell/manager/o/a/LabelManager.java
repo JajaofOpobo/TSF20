@@ -34,46 +34,46 @@ public class LabelManager {
     public static void a() {
         com.tsf.shell.manager.o.a.TextLabelElement.a = com.censivn.C3DEngine.C3DEngine.d().getResources().getDimensionPixelSize(com.tsf.b.c.shortcut_text_size);
         c = new ArrayList<>();
-        c.add(new d(-1, new a()));
-        a aVar = new a();
-        b bVar = new b(0, aVar);
+        LabelManagerV2.add(new EmptyLabelElement(-1, new TextConfigV2()));
+        a aVar = new TextConfigV2();
+        b bVar = new TextLabelElementV2(0, aVar);
         aVar.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
         aVar.c = true;
         aVar.d = false;
-        c.add(bVar);
-        a aVar2 = new a();
-        b bVar2 = new b(1, aVar2);
+        LabelManagerV2.add(bVar);
+        a aVar2 = new TextConfigV2();
+        b bVar2 = new TextLabelElementV2(1, aVar2);
         aVar2.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
         aVar2.c = true;
         aVar2.d = true;
-        c.add(bVar2);
-        a aVar3 = new a();
-        b bVar3 = new b(2, aVar3);
+        LabelManagerV2.add(bVar2);
+        a aVar3 = new TextConfigV2();
+        b bVar3 = new TextLabelElementV2(2, aVar3);
         aVar3.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
         aVar3.a = true;
-        c.add(bVar3);
-        a aVar4 = new a();
-        b bVar4 = new b(3, aVar4);
+        LabelManagerV2.add(bVar3);
+        a aVar4 = new TextConfigV2();
+        b bVar4 = new TextLabelElementV2(3, aVar4);
         aVar4.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
         aVar4.a = true;
         aVar4.d = true;
-        c.add(bVar4);
-        c.add(a(-5293790, false));
-        c.add(a(-1616875, false));
-        c.add(a(-1209320, false));
-        c.add(a(-16749648, false));
-        c.add(a(-5544624, false));
-        c.add(a(-10586556, false));
-        c.add(a(-12361639, false));
-        c.add(a(-15300748, false));
-        c.add(a(-11830901, false));
-        c.add(a(-9271680, false));
-        c.add(a(-8213196, false));
-        c.add(a(-11055295, false));
-        c.add(a(-2210181, false));
-        c.add(a(-10403741, false));
-        c.add(a(-2201238, false));
-        Iterator<b> it = c.iterator();
+        LabelManagerV2.add(bVar4);
+        LabelManagerV2.add(a(-5293790, false));
+        LabelManagerV2.add(a(-1616875, false));
+        LabelManagerV2.add(a(-1209320, false));
+        LabelManagerV2.add(a(-16749648, false));
+        LabelManagerV2.add(a(-5544624, false));
+        LabelManagerV2.add(a(-10586556, false));
+        LabelManagerV2.add(a(-12361639, false));
+        LabelManagerV2.add(a(-15300748, false));
+        LabelManagerV2.add(a(-11830901, false));
+        LabelManagerV2.add(a(-9271680, false));
+        LabelManagerV2.add(a(-8213196, false));
+        LabelManagerV2.add(a(-11055295, false));
+        LabelManagerV2.add(a(-2210181, false));
+        LabelManagerV2.add(a(-10403741, false));
+        LabelManagerV2.add(a(-2201238, false));
+        Iterator<b> it = LabelManagerV2.iterator();
         int i = 0;
         while (it.hasNext()) {
             it.next().c = i;
@@ -81,12 +81,12 @@ public class LabelManager {
         }
         a = b(e.h(0));
         com.tsf.shell.manager.o.ButtonPresetManager.a.ab = a;
-        com.tsf.shell.manager.o.ButtonPresetManager.c.ab = c.get(1);
+        com.tsf.shell.manager.o.ButtonPresetManager.c.ab = LabelManagerV2.get(1);
     }
 
     private static b a(int i, boolean z) {
-        a aVar = new a();
-        b bVar = new b(c.size(), aVar);
+        a aVar = new TextConfigV2();
+        b bVar = new TextLabelElementV2(LabelManagerV2.size(), aVar);
         aVar.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
         aVar.a = true;
         aVar.b = i;
@@ -110,34 +110,34 @@ public class LabelManager {
                 return bVar;
             }
         }
-        return c.get(1);
+        return LabelManagerV2.get(1);
     }
 
     public static int b() {
-        return c.size();
+        return LabelManagerV2.size();
     }
 
     public static b c(int i) {
-        return c.get(i);
+        return LabelManagerV2.get(i);
     }
 
     public static Bitmap a(String str, int i, com.tsf.shell.manager.o.ButtonMetrics aVar, a aVar2) {
         if (d == null) {
             d = new TextPaint();
-            d.setColor(-1118482);
-            d.setAntiAlias(true);
-            d.setTextAlign(Paint.Align.LEFT);
+            EmptyLabelElement.setColor(-1118482);
+            EmptyLabelElement.setAntiAlias(true);
+            EmptyLabelElement.setTextAlign(Paint.Align.LEFT);
             if (com.tsf.shell.manager.k.TypefaceCache.b() != null) {
-                d.setTypeface(com.tsf.shell.manager.k.TypefaceCache.b());
+                EmptyLabelElement.setTypeface(com.tsf.shell.manager.k.TypefaceCache.b());
             }
         }
-        d.setFakeBoldText(aVar2.d);
+        EmptyLabelElement.setFakeBoldText(aVar2.d);
         if (aVar2.c) {
-            d.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, -587202560);
+            EmptyLabelElement.setShadowLayer(3.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 2.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, -587202560);
         } else {
-            d.setShadowLayer(0.0f, 0.0f, 0.0f, -16777216);
+            EmptyLabelElement.setShadowLayer(0.0f, 0.0f, 0.0f, -16777216);
         }
-        d.setTextSize(aVar.a(i));
+        EmptyLabelElement.setTextSize(aVar.a(i));
         return a(str, aVar.J, aVar.K, 0, 0, d, true, true, 0, 0, aVar2.a, aVar2.b, aVar.C);
     }
 

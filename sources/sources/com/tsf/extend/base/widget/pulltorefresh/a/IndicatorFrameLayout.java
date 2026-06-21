@@ -21,7 +21,7 @@ public class IndicatorFrameLayout extends FrameLayout implements Animation.Anima
     private final Animation d;
     private final Animation e;
 
-    public c(Context context, PullToRefreshBase.b bVar) {
+    public IndicatorFrameLayout(Context context, PullToRefreshBase.b bVar) {
         int i;
         int i2;
         super(context);

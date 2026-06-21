@@ -43,7 +43,7 @@ public class ItemGroupBase extends ItemLabelProvider {
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.i.c.ItemGroupBase.1
             @Override // java.lang.Runnable
             public void run() {
-                k.a(Home.c, g.this.a);
+                k.a(Home.c, ItemGroupBase.this.a);
             }
         });
     }

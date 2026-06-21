@@ -52,11 +52,11 @@ public class AlignmentOverlay {
                 }
             }
         };
-        a.setAnimationObjectState(true);
+        AlignmentOverlay.setAnimationObjectState(true);
         b = a(true);
         c = a(false);
-        a.addChild(WidgetResizeResources);
-        a.addChild(SpringEasing);
+        AlignmentOverlay.addChild(WidgetResizeResources);
+        AlignmentOverlay.addChild(SpringEasing);
     }
 
     private static com.censivn.C3DEngine.b.f.GridRenderable a(boolean z) {
@@ -157,7 +157,7 @@ public class AlignmentOverlay {
                 LassoContextMenu.F();
             }
             PageIndicatorStrip.c(false);
-            a.removeFromParent();
+            AlignmentOverlay.removeFromParent();
             com.censivn.C3DEngine.b.c.KeyboardHandler.b(ILassoSelectable);
             com.tsf.shell.manager.app.ObserverManager.b(ToggleRowItem);
             q = false;

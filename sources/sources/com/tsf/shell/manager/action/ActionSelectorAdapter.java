@@ -58,12 +58,12 @@ public class ActionSelectorAdapter {
                                 arrayList.add(map);
                             }
                         }
-                        if (d.this.f != null) {
-                            d.this.j.post(new Runnable() { // from class: com.tsf.shell.manager.action.ActionSelectorAdapter.1.1
+                        if (ActionSelectorAdapter.this.f != null) {
+                            ActionSelectorAdapter.this.j.post(new Runnable() { // from class: com.tsf.shell.manager.action.ActionSelectorAdapter.1.1
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    d.this.a.addAll(arrayList);
-                                    d.this.f.notifyDataSetChanged();
+                                    ActionSelectorAdapter.this.a.addAll(arrayList);
+                                    ActionSelectorAdapter.this.f.notifyDataSetChanged();
                                 }
                             });
                         }
@@ -147,12 +147,12 @@ public class ActionSelectorAdapter {
                             map.put("className", resolveInfo.activityInfo.name);
                             arrayList.add(map);
                         }
-                        if (d.this.e != null) {
-                            d.this.j.post(new Runnable() { // from class: com.tsf.shell.manager.action.ActionSelectorAdapter.2.1
+                        if (ActionSelectorAdapter.this.e != null) {
+                            ActionSelectorAdapter.this.j.post(new Runnable() { // from class: com.tsf.shell.manager.action.ActionSelectorAdapter.2.1
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    d.this.b.addAll(arrayList);
-                                    d.this.e.notifyDataSetChanged();
+                                    ActionSelectorAdapter.this.b.addAll(arrayList);
+                                    ActionSelectorAdapter.this.e.notifyDataSetChanged();
                                 }
                             });
                         }

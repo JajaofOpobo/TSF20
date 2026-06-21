@@ -23,7 +23,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private int G;
     private int H;
     private int I;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable J;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable J;
     int a;
     public c c;
     private VTextureManager d;
@@ -31,7 +31,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private int g;
     private int h;
     private C0169a i;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable j;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable j;
     private d k;
     private d l;
     private i m;
@@ -63,16 +63,16 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         Bitmap bitmapA = a(this.v, (int) (30.0f * fXHDScale));
         this.B = this.d.createTexture(bitmapA, true);
         bitmapA.recycle();
-        this.j = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(60, 20, 20, 20, null, true);
+        this.j = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(60, 20, 20, 20, null, true);
         this.j.textures().addElement(this.B);
         for (int i = 0; i < 60; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.j.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.j.a(i);
             this.u[i] = new WidgetConfig(bVarA, 250.0f, ((-6.0f) * i) + 90.0f);
             bVarA.b(0, 0, 1, 1);
             bVarA.h();
         }
         for (int i2 = 0; i2 < 60; i2 += 2) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.j.a(i2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = this.j.a(i2);
             int i3 = i2 + 3;
             if (i3 >= 60) {
                 i3 %= 60;
@@ -86,11 +86,11 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         this.y = this.d.createTexture(bitmapA2, true);
         bitmapA2.recycle();
         int size = this.t.size();
-        this.J = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(size, 1, this.x, 4, null, true);
+        this.J = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(size, 1, this.x, 4, null, true);
         this.J.textures().addElement(this.y);
         for (int i4 = 0; i4 < size; i4++) {
             j jVar = this.t.get(i4);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = this.J.a(i4);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA3 = this.J.a(i4);
             bVarA3.a(0.0f);
             bVarA3.b(0, 0, this.x, 4);
             jVar.a(bVarA3);
@@ -223,7 +223,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         return bitmapCreateBitmap;
     }
 
-    private float a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar2) {
+    private float a(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar, com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar2) {
         float f = bVar2.i().x - bVar.i().x;
         float f2 = bVar2.i().y - bVar.i().y;
         return (float) Math.sqrt((f * f) + (f2 * f2));
@@ -289,13 +289,13 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
     private void c(int i) {
         this.v = i;
         for (int i2 = 0; i2 < 60; i2++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.j.a(i2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.j.a(i2);
             bVarA.H.set(this.v);
             bVarA.h();
         }
         int iB = this.J.b();
         for (int i3 = 0; i3 < iB; i3++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.J.a(i3);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = this.J.a(i3);
             bVarA2.H.set(this.v);
             bVarA2.h();
         }
@@ -318,7 +318,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
-                a.this.k.c(a.this.n.rotation().z + 90.0f);
+                WidgetPanelBase.this.k.c(WidgetPanelBase.this.n.rotation().z + 90.0f);
             }
         };
         dVar.e(-f);
@@ -335,12 +335,12 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f5) {
-                a.this.l.c(a.this.m.rotation().z + 90.0f);
+                WidgetPanelBase.this.l.c(WidgetPanelBase.this.m.rotation().z + 90.0f);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f5) {
-                a.this.l.e(fA + (f4 * f5));
+                WidgetPanelBase.this.l.e(fA + (f4 * f5));
             }
         };
         dVar2.e(-f2);
@@ -368,7 +368,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
-                    a.this.k.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
+                    WidgetPanelBase.this.k.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
                 }
             };
             dVar.b(iAbs);
@@ -380,7 +380,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.widget.a.a.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
-                    a.this.l.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
+                    WidgetPanelBase.this.l.d((float) (50.0d * Math.sin(((double) f) * 3.141592653589793d)));
                 }
             };
             dVar2.b(iAbs2);
@@ -412,15 +412,15 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
             while (true) {
-                synchronized (a.this.C) {
-                    a.this.invalidate();
-                    WidgetEvent.a("Timer Invalidate:" + a.this.b);
+                synchronized (WidgetPanelBase.this.C) {
+                    WidgetPanelBase.this.invalidate();
+                    WidgetEvent.a("Timer Invalidate:" + WidgetPanelBase.this.b);
                     if (!this.b) {
                         try {
-                            if (a.this.b) {
-                                a.this.C.wait();
+                            if (WidgetPanelBase.this.b) {
+                                WidgetPanelBase.this.C.wait();
                             } else {
-                                a.this.C.wait(1000L);
+                                WidgetPanelBase.this.C.wait(1000L);
                             }
                         } catch (InterruptedException e) {
                             WidgetContainer.printStackTrace();

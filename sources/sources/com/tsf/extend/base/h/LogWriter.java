@@ -10,7 +10,7 @@ public class LogWriter extends AbstractLogProvider {
     private static SimpleDateFormat d = new SimpleDateFormat("\r\n\r\nyyyy-MM-dd HH:mm:ss.Z : ");
     private final c c = c.a();
 
-    private a() {
+    private LogWriter() {
     }
 
     public static synchronized a a() {

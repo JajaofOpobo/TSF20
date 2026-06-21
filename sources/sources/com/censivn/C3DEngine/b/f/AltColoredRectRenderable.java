@@ -20,7 +20,7 @@ public class AltColoredRectRenderable extends BaseColoredRectRenderable {
     private float l;
     private float m;
 
-    public e(float f, float f2) {
+    public AltColoredRectRenderable(float f, float f2) {
         super(f, f2, false, true);
     }
 

@@ -36,8 +36,8 @@ public class WidgetPreviewCell extends BaseRenderable {
         this.e = new BaseRenderable() { // from class: com.tsf.shell.manager.r.b.c.WidgetPreviewCell.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                Number3d.TEMPNUMBER3D.reset();
-                Number3d number3dLocalToGlobal = localToGlobal(Number3d.TEMPNUMBER3D);
+                Number3WidgetPanelOrchestrator.TEMPNUMBER3WidgetPanelOrchestrator.reset();
+                Number3d number3dLocalToGlobal = localToGlobal(Number3WidgetPanelOrchestrator.TEMPNUMBER3D);
                 com.censivn.C3DEngine.C3DEngine.e().b(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
             }
 
@@ -52,18 +52,18 @@ public class WidgetPreviewCell extends BaseRenderable {
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if ((this.g instanceof com.tsf.shell.f.i.c.ItemGroupBase) && !((com.tsf.shell.f.i.c.ItemGroupBase) this.g).j()) {
-            if (b.id == 0) {
+            if (SystemWidgetProviderBrowser.id == 0) {
                 Bitmap bitmapA = x.a(b.d.widget_item_download);
                 com.censivn.C3DEngine.C3DEngine.g().a(b, bitmapA);
                 bitmapA.recycle();
             }
             if (a == null) {
                 a = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 84.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 84.0f, false);
-                a.textures().addElement(b);
-                a.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
-                a.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
+                WidgetProviderInfoBar.textures().addElement(b);
+                WidgetProviderInfoBar.position().x = ((this.i / 2.0f) - (a.b() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
+                WidgetProviderInfoBar.position().y = (((this.j - this.h) / 2.0f) - (a.c() / 2.0f)) - com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f);
             }
-            a.dispatchDraw();
+            WidgetProviderInfoBar.dispatchDraw();
         }
     }
 

@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.api.primitives.button;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.api.core.VObject3dContainer;
-import com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable;
+import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VButton extends VObject3dContainer {
@@ -21,7 +21,7 @@ public class VButton extends VObject3dContainer {
                 VButton.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 super.onDrawStart();
                 VButton.this.mThis.onDrawStart();
@@ -57,7 +57,7 @@ public class VButton extends VObject3dContainer {
                 VButton.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 super.onDrawStart();
                 VButton.this.mThis.onDrawStart();
@@ -91,7 +91,7 @@ public class VButton extends VObject3dContainer {
                 VButton.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 VButton.this.mThis.onDrawStart();
             }
@@ -122,7 +122,7 @@ public class VButton extends VObject3dContainer {
                 VButton.this.mThis.onKillFocus();
             }
 
-            @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 VButton.this.mThis.onDrawStart();
             }

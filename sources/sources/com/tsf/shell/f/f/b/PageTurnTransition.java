@@ -41,7 +41,7 @@ public class PageTurnTransition extends ItemPageTransition {
     }
 
     @Override // com.tsf.shell.f.f.PageTransitionEffect
-    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
+    public boolean a(com.tsf.shell.f.f.WorkspacePage gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
         aVar.alpha((1.0f - Math.abs((Math.abs(gVar.g) - 0.5f) * 2.0f)) * 255.0f);
         return true;
     }

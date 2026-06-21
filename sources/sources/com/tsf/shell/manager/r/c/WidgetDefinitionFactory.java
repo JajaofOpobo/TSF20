@@ -31,7 +31,7 @@ public class WidgetDefinitionFactory {
             try {
                 gVar.i = context.getPackageManager().getPackageInfo(str2, 0).versionCode;
             } catch (PackageManager.NameNotFoundException e) {
-                e.printStackTrace();
+                WidgetRegistryManager.printStackTrace();
             }
             int identifier = context.getResources().getIdentifier("singleTask", "bool", str2);
             if (identifier > 0) {
@@ -76,7 +76,7 @@ public class WidgetDefinitionFactory {
             gVar = new com.tsf.shell.f.i.c.DeferredItemGroup(0.42f, f3, f3) { // from class: com.tsf.shell.manager.r.c.WidgetDefinitionFactory.5
                 @Override // com.tsf.shell.f.i.c.DeferredItemGroup
                 public k g_() {
-                    return new h(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+                    return new KeyEventListener(new VTextureManager(), com.censivn.C3DEngine.C3DEngine.d(), 0.6f, (-230.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.c);
                 }
             };
         } else if (str.equals("com.tsf.shell.widget.message")) {
@@ -189,7 +189,7 @@ public class WidgetDefinitionFactory {
                                 bitmapA = x.a(contextCreatePackageContext.getResources(), contextCreatePackageContext.getApplicationInfo().icon, (int) this.k.b(), (int) this.k.c());
                             }
                         } catch (PackageManager.NameNotFoundException e) {
-                            e.printStackTrace();
+                            WidgetRegistryManager.printStackTrace();
                         }
                         if (bitmapA == null) {
                             bitmapA = x.a(b.d.sym_def_app_icon, (int) this.k.b(), (int) this.k.c());

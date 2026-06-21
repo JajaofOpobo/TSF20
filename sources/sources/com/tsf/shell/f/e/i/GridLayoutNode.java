@@ -88,22 +88,22 @@ public class GridLayoutNode extends BaseRenderable {
         VMessageManager.postGLThreadRunnable(new Runnable() { // from class: com.tsf.shell.f.e.i.GridLayoutNode.2
             @Override // java.lang.Runnable
             public void run() {
-                a.this.b.textures().removeAll();
-                a.this.b.textures().addElement(a.c);
-                a.this.b.scale().setAll(0.0f, 0.0f, 1.0f);
+                GridLayoutNode.this.b.textures().removeAll();
+                GridLayoutNode.this.b.textures().addElement(a.c);
+                GridLayoutNode.this.b.scale().setAll(0.0f, 0.0f, 1.0f);
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.i.GridLayoutNode.2.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        a.this.a.visible(false);
+                        GridLayoutNode.this.a.visible(false);
                     }
                 };
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.a(com.censivn.C3DEngine.b.g.a.e);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, 300, dVar);
-                a.this.g.d();
-                a.this.h.d();
+                com.censivn.C3DEngine.b.g.TweenUtils.a(GridLayoutNode.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(GridLayoutNode.this.b, 300, dVar);
+                GridLayoutNode.this.g.d();
+                GridLayoutNode.this.h.d();
             }
         }, i);
     }

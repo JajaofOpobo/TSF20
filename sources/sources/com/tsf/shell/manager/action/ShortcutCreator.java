@@ -76,7 +76,7 @@ public class ShortcutCreator implements com.censivn.C3DEngine.b.c.ActivityResult
     }
 
     private a a(String str, String str2, Intent intent) {
-        a aVar = new a();
+        a aVar = new ActionDatabaseHelper();
         aVar.a = str;
         aVar.b = str2;
         if (this.d) {

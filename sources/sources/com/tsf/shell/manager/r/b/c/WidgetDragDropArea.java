@@ -31,7 +31,7 @@ public class WidgetDragDropArea extends com.tsf.shell.manager.r.b.b.SlidePanelAn
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public i a(int i, i iVar) {
-                i hVar = iVar == null ? new h(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f, com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), true) : iVar;
+                i hVar = iVar == null ? new WidgetPreviewCell(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f, com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f), true) : iVar;
                 h hVar2 = (h) hVar;
                 if (hVar2.b() != WidgetDragDropArea.this.e || hVar2.c() != WidgetDragDropArea.this.f) {
                     hVar2.a(WidgetDragDropArea.this.e, WidgetDragDropArea.this.f);

@@ -77,15 +77,15 @@ public class RateFaceView extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.a(b.i.text_why);
+                RateFaceView.this.a(b.i.text_why);
                 com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar3.f(a.m);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g, VEasing.Linear.easeNone, dVar3);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.g);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.g, VEasing.Linear.easeNone, dVar3);
                 com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
-                dVar4.f(a.this.f());
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, VEasing.Linear.easeNone, dVar4);
+                dVar4.f(RateFaceView.this.f());
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.b, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar2.f(-this.g.maxX());
@@ -96,8 +96,8 @@ public class RateFaceView extends BaseRenderable {
             public void a() {
                 com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.e(180.0f);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar3.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f));
@@ -113,15 +113,15 @@ public class RateFaceView extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.j.RateFaceView.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.a(b.i.text_excellent);
+                RateFaceView.this.a(b.i.text_excellent);
                 com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar3.f(a.m);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.g, VEasing.Linear.easeNone, dVar3);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.g);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.g, VEasing.Linear.easeNone, dVar3);
                 com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
-                dVar4.f(a.this.f());
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.b, VEasing.Linear.easeNone, dVar4);
+                dVar4.f(RateFaceView.this.f());
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.b);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.b, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar2.f(-this.g.maxX());
@@ -132,8 +132,8 @@ public class RateFaceView extends BaseRenderable {
             public void a() {
                 com.censivn.C3DEngine.b.g.TweenParams dVar4 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar4.e(0.0f);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(a.this.c, VEasing.Linear.easeNone, dVar4);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.c);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(RateFaceView.this.c, VEasing.Linear.easeNone, dVar4);
             }
         };
         dVar3.h(0.0f);

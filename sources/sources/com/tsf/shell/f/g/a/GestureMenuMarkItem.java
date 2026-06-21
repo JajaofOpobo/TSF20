@@ -57,7 +57,7 @@ public class GestureMenuMarkItem extends GestureMenuBlankItem {
                 com.tsf.shell.f._d.b.a.DashItemD dVarA = com.tsf.shell.manager.app.v.StateAccessor.a(i);
                 w.b();
                 com.tsf.shell.manager.app.v.StateAccessor.a((com.tsf.shell.f.f.TransitionRenderer) dVarA);
-                f.this.b.d();
+                GestureMenuMarkItem.this.b.d();
             }
         });
         this.c = com.tsf.shell.manager.app.AppListManager.a(this, com.tsf.shell.manager.p.ThemePreferenceProvider.h);

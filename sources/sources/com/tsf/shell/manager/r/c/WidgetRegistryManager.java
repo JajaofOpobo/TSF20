@@ -249,7 +249,7 @@ public class WidgetRegistryManager {
         }
     }
 
-    public void a(final ItemInfo itemInfo, final a.AbstractC0146a abstractC0146a) {
+    public void a(final ItemInfo itemInfo, final IconRenderer.AbstractC0146a abstractC0146a) {
         ResolveInfo resolveInfo = null;
         com.tsf.shell.f.i.c.ItemGroupBase gVarA = a(itemInfo.packagename);
         if (gVarA != null && gVarA.j()) {
@@ -345,7 +345,7 @@ public class WidgetRegistryManager {
                     gVarA.b(true);
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                WidgetRegistryManager.printStackTrace();
             }
         }
     }
@@ -371,7 +371,7 @@ public class WidgetRegistryManager {
                                 com.tsf.shell.manager.r.c.a.WidgetInstantiator.a(gVarA, itemInfoK, true, null);
                             }
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            WidgetRegistryManager.printStackTrace();
                         }
                     }
                 }

@@ -240,7 +240,7 @@ public class AlarmRenderer implements AlarmWidget.b {
             }
             this.d.a(this.b);
             this.b.updateUvsVBO();
-            f.this.new AlarmContainer(this.b, this.c, this.e);
+            AlarmRenderer.this.new AlarmContainer(this.b, this.c, this.e);
         }
     }
 }

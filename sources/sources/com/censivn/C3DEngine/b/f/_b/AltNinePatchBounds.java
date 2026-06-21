@@ -9,7 +9,7 @@ public class AltNinePatchBounds {
     float e;
     float f;
 
-    public b(float f, float f2, float f3, float f4, float f5, float f6) {
+    public AltNinePatchBounds(float f, float f2, float f3, float f4, float f5, float f6) {
         this.a = f;
         this.b = f2;
         this.c = f3;

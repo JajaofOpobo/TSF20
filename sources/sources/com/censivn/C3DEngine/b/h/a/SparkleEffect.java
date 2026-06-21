@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.b.h.a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SparkleEffect {
-    private com.censivn.C3DEngine.b.f.a.SpriteItemData a;
+    private com.censivn.C3DEngine.b.f.sprite.SpriteItemData a;
     private float b = 0.0f;
     private float c = 0.0f;
     private float d = 0.0f;
@@ -10,7 +10,7 @@ public class SparkleEffect {
     private float f = 0.0f;
     private float g = 0.0f;
 
-    public b(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar) {
+    public SparkleEffect(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar) {
         this.a = bVar;
         float fRandom = (float) Math.random();
         this.a.k().setAll(fRandom, fRandom, fRandom);

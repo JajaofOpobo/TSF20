@@ -38,7 +38,7 @@ public class WidgetContainer extends VWidgetContainer implements WidgetConfig.a 
         this.d.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.d) { // from class: com.tsf.shell.widget.a.WidgetContainer.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                e.this.c.d();
+                WidgetContainer.this.c.d();
             }
         });
         jVar.addChild(this.d);

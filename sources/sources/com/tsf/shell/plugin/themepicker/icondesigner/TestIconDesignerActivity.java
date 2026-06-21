@@ -28,7 +28,7 @@ public class TestIconDesignerActivity extends Activity implements View.OnClickLi
         super.onCreate(bundle);
         setContentView(IconDesignerColumns.h.theme_preview_test_icon_designer);
         IconDesignerManager.a((Context) this, (IconDesignerManager.a) this);
-        ((Button) findViewById(IconDesignerColumns.C0155f.button1)).setOnClickListener(this);
+        ((Button) findViewById(IconDesignerColumns.C0155IconDesignerColumns.button1)).setOnClickListener(this);
         long jCurrentTimeMillis = System.currentTimeMillis();
         this.f = new IconDesignerRenderer();
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("getThemePreviewCount Cost :" + (System.currentTimeMillis() - jCurrentTimeMillis));
@@ -45,7 +45,7 @@ public class TestIconDesignerActivity extends Activity implements View.OnClickLi
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) throws Throwable {
-        ImageView imageView = (ImageView) findViewById(IconDesignerColumns.C0155f.imageView1);
+        ImageView imageView = (ImageView) findViewById(IconDesignerColumns.C0155IconDesignerColumns.imageView1);
         long jCurrentTimeMillis = System.currentTimeMillis();
         String str = this.a.get(this.c).activityInfo.packageName;
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("packagename:" + str);

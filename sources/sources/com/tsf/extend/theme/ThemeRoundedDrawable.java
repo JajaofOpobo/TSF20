@@ -18,7 +18,7 @@ public class ThemeRoundedDrawable extends Drawable {
     private float g = 0.0f;
     private Paint c = new Paint();
 
-    public i(int i) {
+    public ThemeRoundedDrawable(int i) {
         this.a = i;
         this.b = a(i, 0.9f);
         this.c.setColor(this.a);

@@ -47,7 +47,7 @@ public class PageTransitionEffect extends TransitionRenderer {
         return false;
     }
 
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f.b.NinePatchRenderable aVar) {
+    public boolean a(g gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
         float fAbs = Math.abs(gVar.g * 700.0f);
         aVar.alpha(fAbs <= 255.0f ? fAbs : 255.0f);
         return true;

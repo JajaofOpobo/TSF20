@@ -26,7 +26,7 @@ public class DrawerNameSort extends DrawerSortBase {
                     return -1;
                 }
                 if (!(bVar2 instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
-                    return b.this.e.compare(b.b(bVar.r()), b.b(bVar2.r()));
+                    return DrawerNameSort.this.e.compare(b.b(bVar.r()), b.b(bVar2.r()));
                 }
                 return 1;
             }
@@ -41,7 +41,7 @@ public class DrawerNameSort extends DrawerSortBase {
                 LauncherShortcutAppInfo launcherShortcutAppInfo = (LauncherShortcutAppInfo) ((g) iVar).K();
                 LauncherShortcutAppInfo launcherShortcutAppInfo2 = (LauncherShortcutAppInfo) ((g) iVar2).K();
                 String strB = b.b(launcherShortcutAppInfo.title);
-                return b.this.e.compare(b.b(launcherShortcutAppInfo2.title), strB);
+                return DrawerNameSort.this.e.compare(b.b(launcherShortcutAppInfo2.title), strB);
             }
         };
     }

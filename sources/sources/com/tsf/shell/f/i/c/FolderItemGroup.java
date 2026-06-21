@@ -46,10 +46,10 @@ public class FolderItemGroup extends ItemGroupBase {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
-                float fAlpha = c.this.m.a.alpha();
-                c.this.m.a.alpha(fAlpha);
-                c.this.n.a.alpha(fAlpha);
-                c.this.o.a.alpha(fAlpha);
+                float fAlpha = FolderItemGroup.this.m.a.alpha();
+                FolderItemGroup.this.m.a.alpha(fAlpha);
+                FolderItemGroup.this.n.a.alpha(fAlpha);
+                FolderItemGroup.this.o.a.alpha(fAlpha);
             }
         };
         dVar.a(0);
@@ -62,10 +62,10 @@ public class FolderItemGroup extends ItemGroupBase {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
-                float fAlpha = c.this.m.a.alpha();
-                c.this.m.a.alpha(fAlpha);
-                c.this.n.a.alpha(fAlpha);
-                c.this.o.a.alpha(fAlpha);
+                float fAlpha = FolderItemGroup.this.m.a.alpha();
+                FolderItemGroup.this.m.a.alpha(fAlpha);
+                FolderItemGroup.this.n.a.alpha(fAlpha);
+                FolderItemGroup.this.o.a.alpha(fAlpha);
             }
         };
         dVar.a(255);
@@ -126,23 +126,23 @@ public class FolderItemGroup extends ItemGroupBase {
         this.v = new Runnable() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.3
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) c.this.u.get(2);
-                Number3d.TEMPNUMBER3D.reset();
-                bVar3.localToGlobal(Number3d.TEMPNUMBER3D);
-                bVar3.position().setAllFrom(Number3d.TEMPNUMBER3D);
-                c.this.l.e(bVar3);
-                c.this.v = new Runnable() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.3.1
+                com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar3 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) FolderItemGroup.this.u.get(2);
+                Number3PendingItemGroup.TEMPNUMBER3PendingItemGroup.reset();
+                bVar3.localToGlobal(Number3PendingItemGroup.TEMPNUMBER3D);
+                bVar3.position().setAllFrom(Number3PendingItemGroup.TEMPNUMBER3D);
+                FolderItemGroup.this.l.e(bVar3);
+                FolderItemGroup.this.v = new Runnable() { // from class: com.tsf.shell.f.i.c.FolderItemGroup.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        c.this.v = null;
-                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar4 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) c.this.u.get(1);
-                        Number3d.TEMPNUMBER3D.reset();
-                        bVar4.localToGlobal(Number3d.TEMPNUMBER3D);
-                        bVar4.position().setAllFrom(Number3d.TEMPNUMBER3D);
-                        c.this.l.e(bVar4);
+                        FolderItemGroup.this.v = null;
+                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar4 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) FolderItemGroup.this.u.get(1);
+                        Number3PendingItemGroup.TEMPNUMBER3PendingItemGroup.reset();
+                        bVar4.localToGlobal(Number3PendingItemGroup.TEMPNUMBER3D);
+                        bVar4.position().setAllFrom(Number3PendingItemGroup.TEMPNUMBER3D);
+                        FolderItemGroup.this.l.e(bVar4);
                     }
                 };
-                com.censivn.C3DEngine.C3DEngine.a().b(c.this.v, 1000L);
+                com.censivn.C3DEngine.C3DEngine.a().b(FolderItemGroup.this.v, 1000L);
             }
         };
         com.censivn.C3DEngine.C3DEngine.a().b(this.v, 1000L);
@@ -153,11 +153,11 @@ public class FolderItemGroup extends ItemGroupBase {
         this.k = new BaseRenderable();
         this.l = new com.tsf.shell.f.i.b.d.FolderShortcutItem(new LauncherDrawerFolder3DInfo(true));
         this.k.addChild(this.l);
-        this.m = new a();
+        this.m = new AnimatedItemGroup();
         this.m.k.textures().addElement(this.p);
-        this.n = new a();
+        this.n = new AnimatedItemGroup();
         this.n.k.textures().addElement(this.q);
-        this.o = new a();
+        this.o = new AnimatedItemGroup();
         this.o.k.textures().addElement(this.r);
         this.u.add(this.m);
         this.u.add(this.n);

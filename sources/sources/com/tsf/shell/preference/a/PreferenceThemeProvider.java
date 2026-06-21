@@ -15,7 +15,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.AbstractPanelRenderer {
     private i a;
-    private com.censivn.C3DEngine.b.f.b.NinePatchRenderable b;
+    private com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable b;
     private GridRenderable f;
     private GridRenderable h;
     private float j;
@@ -32,7 +32,7 @@ public class PreferenceThemeProvider extends com.censivn.C3DEngine.b.e.AbstractP
         com.censivn.C3DEngine.b.b.TouchState layoutParams = getLayoutParams();
         layoutParams.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
         layoutParams.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
-        this.b = new com.censivn.C3DEngine.b.f.b.NinePatchRenderable(n.a, n.b, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(68, 68, 68, 68, 136, 136));
+        this.b = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, n.b, com.censivn.C3DEngine.b.b.ScreenConstants.c, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(68, 68, 68, 68, 136, 136));
         this.b.textures().addElement(this.d);
         this.b.alpha(80.0f);
         addChild(this.b);

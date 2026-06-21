@@ -13,7 +13,7 @@ public class ThemeShareItem {
     private int e;
     private String f;
 
-    public an(Context context, ResolveInfo resolveInfo) {
+    public ThemeShareItem(Context context, ResolveInfo resolveInfo) {
         this.a = context;
         this.b = resolveInfo;
         a(resolveInfo.loadIcon(context.getPackageManager()));
@@ -21,7 +21,7 @@ public class ThemeShareItem {
         a(resolveInfo.activityInfo.packageName);
     }
 
-    public an(Context context, Drawable drawable, int i) {
+    public ThemeShareItem(Context context, Drawable drawable, int i) {
         this.a = context;
         a(drawable);
         a(i);

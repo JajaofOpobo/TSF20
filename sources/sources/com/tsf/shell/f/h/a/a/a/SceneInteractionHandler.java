@@ -54,15 +54,15 @@ public class SceneInteractionHandler extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (a.this.e.a() != null) {
+                if (SceneInteractionHandler.this.e.a() != null) {
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                a.this.d();
-                a.this.b();
-                a.this.m = true;
+                SceneInteractionHandler.this.d();
+                SceneInteractionHandler.this.b();
+                SceneInteractionHandler.this.m = true;
                 this.b = false;
             }
 
@@ -73,21 +73,21 @@ public class SceneInteractionHandler extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                a.this.m = false;
-                a.this.c();
-                a.this.k.a(a.this.g);
-                a.this.e();
-                x.a(motionEvent, a.this.n);
-                i hittingTarget = a.this.a.getHittingTarget(a.this.n[0], a.this.n[1], true);
-                if (hittingTarget != a.this.b) {
-                    if (hittingTarget != a.this.c) {
-                        if (hittingTarget == a.this.d) {
+                SceneInteractionHandler.this.m = false;
+                SceneInteractionHandler.this.c();
+                SceneInteractionHandler.this.k.a(SceneInteractionHandler.this.g);
+                SceneInteractionHandler.this.e();
+                x.a(motionEvent, SceneInteractionHandler.this.n);
+                i hittingTarget = SceneInteractionHandler.this.a.getHittingTarget(SceneInteractionHandler.this.n[0], SceneInteractionHandler.this.n[1], true);
+                if (hittingTarget != SceneInteractionHandler.this.b) {
+                    if (hittingTarget != SceneInteractionHandler.this.c) {
+                        if (hittingTarget == SceneInteractionHandler.this.d) {
                             w.b();
                             w.a();
                             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.3
                                 @Override // java.lang.Runnable
                                 public void run() {
-                                    a.this.e.a().a().h();
+                                    SceneInteractionHandler.this.e.a().a().h();
                                 }
                             }, 500L);
                             return;
@@ -99,7 +99,7 @@ public class SceneInteractionHandler extends BaseRenderable {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.2
                         @Override // java.lang.Runnable
                         public void run() {
-                            a.this.e.a().a().g();
+                            SceneInteractionHandler.this.e.a().a().g();
                         }
                     }, 500L);
                     return;
@@ -110,7 +110,7 @@ public class SceneInteractionHandler extends BaseRenderable {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.2.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            a.this.e.a().a().f();
+                            SceneInteractionHandler.this.e.a().a().f();
                         }
                     }, 250L);
                 }
@@ -118,7 +118,7 @@ public class SceneInteractionHandler extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                a.this.a(motionEvent2);
+                SceneInteractionHandler.this.a(motionEvent2);
             }
         });
         this.b.calAABB(1.2f, 1.2f, 1.0f);
@@ -168,10 +168,10 @@ public class SceneInteractionHandler extends BaseRenderable {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.5
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (a.this.m) {
-                        a.this.b(motionEvent);
+                    if (SceneInteractionHandler.this.m) {
+                        SceneInteractionHandler.this.b(motionEvent);
                     }
-                    a.this.o = false;
+                    SceneInteractionHandler.this.o = false;
                 }
             });
         }
@@ -240,7 +240,7 @@ public class SceneInteractionHandler extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.6
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.l.visible(false);
+                SceneInteractionHandler.this.l.visible(false);
             }
         };
         dVar.a(0);
@@ -275,7 +275,7 @@ public class SceneInteractionHandler extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.7
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.c.visible(false);
+                SceneInteractionHandler.this.c.visible(false);
             }
         };
         dVar.a(0);
@@ -286,7 +286,7 @@ public class SceneInteractionHandler extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.a.SceneInteractionHandler.8
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.d.visible(false);
+                SceneInteractionHandler.this.d.visible(false);
             }
         };
         dVar2.a(0);

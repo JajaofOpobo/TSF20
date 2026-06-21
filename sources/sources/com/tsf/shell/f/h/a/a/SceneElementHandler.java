@@ -17,7 +17,7 @@ public class SceneElementHandler extends i {
         com.censivn.C3DEngine.b.e.IconButtonRenderer aVar = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.b = aVar;
         aVar.h(SceneNodeAnimator.i.text_show_recents);
-        aVar.a(new a.C0027a() { // from class: com.tsf.shell.f.h.a.a.SceneElementHandler.1
+        aVar.a(new SceneNodeContainer.C0027a() { // from class: com.tsf.shell.f.h.a.a.SceneElementHandler.1
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 return true;

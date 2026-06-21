@@ -65,10 +65,10 @@ public class FolderTransitionC extends FolderPageTransitionBase {
     }
 
     @Override // com.tsf.shell.f.f.b.a.FolderPageTransitionBase, com.tsf.shell.f._d.e.a.InterfaceC0090a
-    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, Runnable runnable) {
         com.censivn.C3DEngine.b.g.TweenParams dVar = null;
         for (int i = 0; i < aVar.a(); i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = aVar.a(i);
             dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(0.0f);
             dVar.m(0.0f);

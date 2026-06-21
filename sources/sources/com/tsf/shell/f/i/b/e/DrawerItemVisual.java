@@ -45,7 +45,7 @@ public class DrawerItemVisual extends DrawerItemBase {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemVisual.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    g.this.k();
+                    DrawerItemVisual.this.k();
                 }
             });
         }
@@ -166,7 +166,7 @@ public class DrawerItemVisual extends DrawerItemBase {
     public g ba() {
         LauncherShortcutAppInfo launcherShortcutAppInfo = new LauncherShortcutAppInfo();
         launcherShortcutAppInfo.title = bd().e;
-        g gVar = new g(launcherShortcutAppInfo, this.a, false);
+        g gVar = new DrawerItemVisual(launcherShortcutAppInfo, this.a, false);
         gVar.position().setAll(position().x, position().y, 0.0f);
         gVar.scale().setAll(1.0f, 1.0f, 1.0f);
         gVar.rotation().setAll(0.0f, 0.0f, 0.0f);

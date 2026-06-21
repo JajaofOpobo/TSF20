@@ -28,19 +28,19 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
     private boolean k;
     private boolean l;
 
-    public a(int i, int i2, int i3, boolean z) {
+    public AltTextureSpriteRenderable(int i, int i2, int i3, boolean z) {
         this(i, i2, i3, i3, null, z);
     }
 
-    public a(int i, int i2, int i3) {
+    public AltTextureSpriteRenderable(int i, int i2, int i3) {
         this(i, i2, i3, i3, null, false);
     }
 
-    public a(int i, int i2, int i3, int i4) {
+    public AltTextureSpriteRenderable(int i, int i2, int i3, int i4) {
         this(i, i2, i3, i4, null, false);
     }
 
-    public a(int i, int i2, int i3, int i4, IRenderable iVar, boolean z) {
+    public AltTextureSpriteRenderable(int i, int i2, int i3, int i4, IRenderable iVar, boolean z) {
         super(((i * 2) - 1) * 4 * 1, ((i * 2) - 1) * 2 * 1, true, true, Boolean.valueOf(z));
         this.b = 16;
         this.h = false;

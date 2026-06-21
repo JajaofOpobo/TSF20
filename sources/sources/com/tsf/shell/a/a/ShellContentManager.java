@@ -53,44 +53,44 @@ public class ShellContentManager {
 
     static {
         ShellPageManager.a aVar = new ShellPageManager.a();
-        aVar.c(a.C0020a.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(3).a(a.e.calendar_text);
-        a.put(76, aVar.a());
+        aVar.c(ShellContentManager.C0020ShellContentManager.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(3).a(a.e.calendar_text);
+        ShellContentManager.put(76, aVar.a());
         ShellPageManager.a aVar2 = new ShellPageManager.a();
-        aVar2.c(a.C0020a.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
-        a.put(68, aVar2.a());
+        aVar2.c(ShellContentManager.C0020ShellContentManager.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
+        ShellContentManager.put(68, aVar2.a());
         ShellPageManager.a aVar3 = new ShellPageManager.a();
-        aVar3.c(a.C0020a.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
-        a.put(12, aVar3.a());
+        aVar3.c(ShellContentManager.C0020ShellContentManager.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
+        ShellContentManager.put(12, aVar3.a());
         ShellPageManager.a aVar4 = new ShellPageManager.a();
-        aVar4.c(a.C0020a.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
-        a.put(72, aVar4.a());
+        aVar4.c(ShellContentManager.C0020ShellContentManager.perms_calender_contact_audio_bg).b(a.e.perm_calender_contact_record_desc).d(2).a(a.e.calendar_text);
+        ShellContentManager.put(72, aVar4.a());
         ShellPageManager.a aVar5 = new ShellPageManager.a();
-        aVar5.c(a.C0020a.perms_phone_contacts_bg).b(a.e.perm_phone_contacts_desc).d(2).a(a.e.contacts_text);
-        a.put(80, aVar5.a());
+        aVar5.c(ShellContentManager.C0020ShellContentManager.perms_phone_contacts_bg).b(a.e.perm_phone_contacts_desc).d(2).a(a.e.contacts_text);
+        ShellContentManager.put(80, aVar5.a());
         ShellPageManager.a aVar6 = new ShellPageManager.a();
-        aVar6.c(a.C0020a.perm_calender_bg).b(a.e.perm_calender_desc).a("1").a(a.e.calendar_text);
-        a.put(4, aVar6.a());
+        aVar6.c(ShellContentManager.C0020ShellContentManager.perm_calender_bg).b(a.e.perm_calender_desc).a("1").a(a.e.calendar_text);
+        ShellContentManager.put(4, aVar6.a());
         ShellPageManager.a aVar7 = new ShellPageManager.a();
-        aVar7.c(a.C0020a.perm_camera_bg).b(a.e.perm_camera_desc).a("2").a(a.e.camera_title);
-        a.put(32, aVar7.a());
+        aVar7.c(ShellContentManager.C0020ShellContentManager.perm_camera_bg).b(a.e.perm_camera_desc).a("2").a(a.e.camera_title);
+        ShellContentManager.put(32, aVar7.a());
         ShellPageManager.a aVar8 = new ShellPageManager.a();
-        aVar8.c(a.C0020a.perm_contacts_bg).b(a.e.perm_contacts_desc).a("3").a(a.e.contacts_text);
-        a.put(64, aVar8.a());
+        aVar8.c(ShellContentManager.C0020ShellContentManager.perm_contacts_bg).b(a.e.perm_contacts_desc).a("3").a(a.e.contacts_text);
+        ShellContentManager.put(64, aVar8.a());
         ShellPageManager.a aVar9 = new ShellPageManager.a();
-        aVar9.c(a.C0020a.perm_location_bg).b(a.e.perm_location_desc).a("4").a(a.e.location_text);
-        a.put(2, aVar9.a());
+        aVar9.c(ShellContentManager.C0020ShellContentManager.perm_location_bg).b(a.e.perm_location_desc).a("4").a(a.e.location_text);
+        ShellContentManager.put(2, aVar9.a());
         ShellPageManager.a aVar10 = new ShellPageManager.a();
-        aVar10.c(a.C0020a.perm_audio_bg).b(a.e.perm_recoder_desc).a("5").a(a.e.audio_text);
-        a.put(8, aVar10.a());
+        aVar10.c(ShellContentManager.C0020ShellContentManager.perm_audio_bg).b(a.e.perm_recoder_desc).a("5").a(a.e.audio_text);
+        ShellContentManager.put(8, aVar10.a());
         ShellPageManager.a aVar11 = new ShellPageManager.a();
-        aVar11.c(a.C0020a.perm_phone_bg).b(a.e.perm_phone_desc).a("6").a(a.e.phone_text);
-        a.put(16, aVar11.a());
+        aVar11.c(ShellContentManager.C0020ShellContentManager.perm_phone_bg).b(a.e.perm_phone_desc).a("6").a(a.e.phone_text);
+        ShellContentManager.put(16, aVar11.a());
         ShellPageManager.a aVar12 = new ShellPageManager.a();
-        aVar12.c(a.C0020a.perm_storage_bg).b(a.e.perm_storage_desc).a("7").a(a.e.storage_text);
-        a.put(Integer.valueOf(ItemInfo.APP_INTENT), aVar12.a());
+        aVar12.c(ShellContentManager.C0020ShellContentManager.perm_storage_bg).b(a.e.perm_storage_desc).a("7").a(a.e.storage_text);
+        ShellContentManager.put(Integer.valueOf(ItemInfo.APP_INTENT), aVar12.a());
         ShellPageManager.a aVar13 = new ShellPageManager.a();
-        aVar13.c(a.C0020a.perm_storage_bg).b(a.e.perm_wallpaper_desc).a("7").a(a.e.storage_text);
-        a.put(Integer.valueOf(ItemInfo.APP_VERSION_CODE), aVar13.a());
+        aVar13.c(ShellContentManager.C0020ShellContentManager.perm_storage_bg).b(a.e.perm_wallpaper_desc).a("7").a(a.e.storage_text);
+        ShellContentManager.put(Integer.valueOf(ItemInfo.APP_VERSION_CODE), aVar13.a());
     }
 
     public boolean a(ShellLayoutEngine.b bVar, boolean z, int i, String... strArr) {
@@ -225,8 +225,8 @@ public class ShellContentManager {
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i2) {
                     if (i2 == -1) {
-                        a.this.c.dismiss();
-                        ShellLayoutEngine.a(a.this.f, i, (String[]) list.toArray(new String[list.size()]));
+                        ShellContentManager.this.c.dismiss();
+                        ShellLayoutEngine.a(ShellContentManager.this.f, i, (String[]) list.toArray(new String[list.size()]));
                     }
                 }
             });
@@ -247,7 +247,7 @@ public class ShellContentManager {
             this.b.setOnDismissListener(new DialogInterface.OnDismissListener() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.2
                 @Override // android.content.DialogInterface.OnDismissListener
                 public void onDismiss(DialogInterface dialogInterface) {
-                    a.this.b(a.this.f);
+                    ShellContentManager.this.b(ShellContentManager.this.f);
                 }
             });
             this.b.a(new ShellThemeEngine.a() { // from class: com.tsf.shell.ShellCallbackDispatcher.a.a.3
@@ -262,16 +262,16 @@ public class ShellContentManager {
                 @Override // android.content.DialogInterface.OnClickListener
                 public void onClick(DialogInterface dialogInterface, int i2) {
                     if (i2 == -1) {
-                        a.this.b.dismiss();
+                        ShellContentManager.this.b.dismiss();
                         if (z) {
-                            ShellGestureHandler.a(a.this.f, i | 1);
-                            a.this.e = strArr;
+                            ShellGestureHandler.a(ShellContentManager.this.f, i | 1);
+                            ShellContentManager.this.e = strArr;
                             return;
                         }
-                        ShellLayoutEngine.a(a.this.f, i, (String[]) list.toArray(new String[list.size()]));
+                        ShellLayoutEngine.a(ShellContentManager.this.f, i, (String[]) list.toArray(new String[list.size()]));
                         return;
                     }
-                    a.this.a(i, false, ShellLayoutEngine.a.USER_REJECT_AUTH, (List<String>) list);
+                    ShellContentManager.this.a(i, false, ShellLayoutEngine.a.USER_REJECT_AUTH, (List<String>) list);
                 }
             });
         }
@@ -294,16 +294,16 @@ public class ShellContentManager {
     }
 
     private ShellPageManager b(int i, List<String> list) {
-        return a.get(Integer.valueOf(g(i, list)));
+        return ShellContentManager.get(Integer.valueOf(g(i, list)));
     }
 
     private StringBuilder c(int i, List<String> list) {
         ShellPageManager bVar;
         int iG = g(i, list);
-        Set<Integer> setKeySet = a.keySet();
+        Set<Integer> setKeySet = ShellContentManager.keySet();
         StringBuilder sb = new StringBuilder();
         for (Integer num : setKeySet) {
-            if ((num.intValue() & iG) == num.intValue() && a(num.intValue()) && (bVar = a.get(num)) != null) {
+            if ((num.intValue() & iG) == num.intValue() && a(num.intValue()) && (bVar = ShellContentManager.get(num)) != null) {
                 if (sb.length() > 0) {
                     sb.append(", ");
                 }
@@ -330,10 +330,10 @@ public class ShellContentManager {
         if (iG == 0) {
             return "";
         }
-        Set<Integer> setKeySet = a.keySet();
+        Set<Integer> setKeySet = ShellContentManager.keySet();
         StringBuilder sb = new StringBuilder();
         for (Integer num : setKeySet) {
-            if ((num.intValue() & iG) == num.intValue() && a(num.intValue()) && (bVar = a.get(num)) != null) {
+            if ((num.intValue() & iG) == num.intValue() && a(num.intValue()) && (bVar = ShellContentManager.get(num)) != null) {
                 if (sb.length() > 0) {
                     sb.append("_");
                 }
@@ -387,7 +387,7 @@ public class ShellContentManager {
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             String stringExtra;
-            if (!intent.getAction().equals("android.intent.action.CLOSE_SYSTEM_DIALOGS") || (stringExtra = intent.getStringExtra("reason")) == null || !stringExtra.equals("homekey") || a.this.b == null || !a.this.b.isShowing() || !TextUtils.isEmpty(a.this.k)) {
+            if (!intent.getAction().equals("android.intent.action.CLOSE_SYSTEM_DIALOGS") || (stringExtra = intent.getStringExtra("reason")) == null || !stringExtra.equals("homekey") || ShellContentManager.this.b == null || !ShellContentManager.this.b.isShowing() || !TextUtils.isEmpty(ShellContentManager.this.k)) {
             }
         }
     }

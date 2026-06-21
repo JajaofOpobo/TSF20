@@ -9,14 +9,14 @@ public class ProgressDialogHelper {
     public static void a(String str) {
         if (a == null) {
             a = new ProgressDialog(com.censivn.C3DEngine.C3DEngine.d());
-            a.setIndeterminate(true);
-            a.setCancelable(false);
+            ProgressDialogHelper.setIndeterminate(true);
+            ProgressDialogHelper.setCancelable(false);
         }
-        a.setMessage(str);
-        a.show();
+        ProgressDialogHelper.setMessage(str);
+        ProgressDialogHelper.show();
     }
 
     public static void a() {
-        a.dismiss();
+        ProgressDialogHelper.dismiss();
     }
 }

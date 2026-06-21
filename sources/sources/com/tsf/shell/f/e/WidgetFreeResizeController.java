@@ -33,8 +33,8 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
 
     public static void b() {
         a = new WidgetFreeResizeController();
-        b = new SpringEasing(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
-        a.addChild(WidgetResizeResources);
+        b = new SpringEasing(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f), a);
+        AlignmentOverlay.addChild(WidgetResizeResources);
     }
 
     public static void a(com.tsf.shell.f.i.b.b.ItemShell aVar) {
@@ -51,10 +51,10 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         int i2 = bVar2.e;
         int i3 = (bVar2.a - (com.censivn.C3DEngine.b.b.ScreenConstants.F / 2)) + (i / 2);
         int i4 = ((com.censivn.C3DEngine.b.b.ScreenConstants.G / 2) - bVar2.b) - (i2 / 2);
-        a.removeFromParent();
+        AlignmentOverlay.removeFromParent();
         com.tsf.shell.manager.app.TaskScheduler.a(AlignmentOverlay);
-        a.position().x = i3;
-        a.position().y = i4;
+        AlignmentOverlay.position().x = i3;
+        AlignmentOverlay.position().y = i4;
         a.c().a(i, i2);
         a.c().setFocus();
         a.c().h();
@@ -104,7 +104,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         return b;
     }
 
-    static class C extends com.censivn.C3DEngine.b.f.b.NinePatchRenderable {
+    static class C extends com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable {
         public static int a = 120;
         private int d;
         private int e;
@@ -124,7 +124,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
         private float s;
         private int[] t;
 
-        public C(float f, float f2, com.censivn.C3DEngine.b.f.b.NinePatchBounds bVar, WidgetFreeResizeController tVar) {
+        public C(float f, float f2, com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds bVar, WidgetFreeResizeController tVar) {
             super(f, f2, bVar);
             this.o = 3;
             this.t = new int[4];
@@ -135,7 +135,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    c.this.d = c.this.f.id;
+                    SpringEasing.this.d = SpringEasing.this.f.id;
                 }
             };
             this.f.setReloadThemeRunnable(runnable);
@@ -144,7 +144,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             Runnable runnable2 = new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    c.this.e = textureElement.id;
+                    SpringEasing.this.e = textureElement.id;
                 }
             };
             textureElement.setReloadThemeRunnable(runnable2);
@@ -162,10 +162,10 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                     if (t.e) {
                         this.b = t.c.position().x;
                         this.d = t.c.position().y;
-                        this.e = c.this.h.position().x;
-                        this.f = c.this.h.position().y;
-                        c.this.h.setAnimationObjectState(true);
-                        c.this.h.invalidate();
+                        this.e = SpringEasing.this.h.position().x;
+                        this.f = SpringEasing.this.h.position().y;
+                        SpringEasing.this.h.setAnimationObjectState(true);
+                        SpringEasing.this.h.invalidate();
                     }
                 }
 
@@ -185,16 +185,16 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                             y = ((-com.censivn.C3DEngine.b.b.ScreenConstants.u) - (t.c.b.c() / 2.0f)) + this.d;
                         }
                         t.c.position().x = this.b + x;
-                        c.this.h.position().x = x + this.e;
+                        SpringEasing.this.h.position().x = x + this.e;
                         t.c.position().y = this.d - y;
-                        c.this.h.position().y = this.f - y;
+                        SpringEasing.this.h.position().y = this.f - y;
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
                     if (t.e) {
-                        c.this.h.setAnimationObjectState(false);
+                        SpringEasing.this.h.setAnimationObjectState(false);
                         d.b bVar2 = (d.b) t.c.g.getLayoutParams();
                         int[] iArr = {(int) ((t.c.position().x - (t.c.b.b() / 2.0f)) + com.censivn.C3DEngine.b.b.ScreenConstants.H), (int) (((-t.c.position().y) + com.censivn.C3DEngine.b.b.ScreenConstants.I) - (t.c.b.c() / 2.0f)), bVar2.d, bVar2.e};
                         ItemInfo itemInfoK = t.c.K();
@@ -307,7 +307,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
-                    c.this.g.a(i + (i4 * (1.0f - f)), i2 + (i3 * (1.0f - f)));
+                    SpringEasing.this.g.a(i + (i4 * (1.0f - f)), i2 + (i3 * (1.0f - f)));
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -338,7 +338,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             this.l.position().y = 0.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void i(float f) {
             super.i(ILayoutItem);
             this.k.position().x = (-f) + this.o;
@@ -348,7 +348,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void g(float f) {
             super.g(ILayoutItem);
             this.l.position().x = (f - this.o) - 3.0f;
@@ -358,7 +358,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void c(float f) {
             super.c(ILayoutItem);
             this.i.position().y = (f - this.o) - 1.0f;
@@ -368,7 +368,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             C();
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void e(float f) {
             super.e(ILayoutItem);
             this.j.position().y = (-f) + this.o + 1.0f;
@@ -466,17 +466,17 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.c.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f2) {
-                    if (f != c.this.p) {
-                        c.this.g.i(f + ((c.this.p - f) * f2));
+                    if (f != SpringEasing.this.p) {
+                        SpringEasing.this.g.i(f + ((SpringEasing.this.p - f) * f2));
                     }
-                    if (fE != c.this.q) {
-                        c.this.g.g(fE + ((c.this.q - fE) * f2));
+                    if (fE != SpringEasing.this.q) {
+                        SpringEasing.this.g.g(fE + ((SpringEasing.this.q - fE) * f2));
                     }
-                    if (fA != c.this.r) {
-                        c.this.g.c(fA + ((c.this.r - fA) * f2));
+                    if (fA != SpringEasing.this.r) {
+                        SpringEasing.this.g.c(fA + ((SpringEasing.this.r - fA) * f2));
                     }
-                    if (fD != c.this.s) {
-                        c.this.g.e(fD + ((c.this.s - fD) * f2));
+                    if (fD != SpringEasing.this.s) {
+                        SpringEasing.this.g.e(fD + ((SpringEasing.this.s - fD) * f2));
                     }
                 }
 
@@ -596,7 +596,7 @@ public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRe
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.e.WidgetFreeResizeController.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.e.a(a.this.d, y);
+                        AlignmentOverlay.this.e.a(AlignmentOverlay.this.d, y);
                     }
                 });
             }

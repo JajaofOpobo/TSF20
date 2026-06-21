@@ -222,7 +222,7 @@ public class ThemeInstalledMenu extends MenuActionItem {
 
     class a extends ThemeIconPlane {
         private boolean c = false;
-        public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.c.b();
+        public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.c.b();
 
         public a() {
             this.a.calAABB();

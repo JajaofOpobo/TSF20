@@ -38,7 +38,7 @@ public class FontPickerRenderer {
 
     public static c a(Context context) {
         if (b == null) {
-            b = new c(context);
+            b = new FontPickerRenderer(context);
         }
         return b;
     }

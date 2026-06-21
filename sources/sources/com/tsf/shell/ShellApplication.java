@@ -46,7 +46,7 @@ public class ShellApplication extends Application {
             }
             return;
         }
-        this.b = new A();
+        this.b = new ShellCoreInterface();
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.tsf.shell.StartHome");
         registerReceiver(this.b, intentFilter);

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+public class ProgressBarItem extends com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable {
     private ProgressBarWidget a;
     private ProgressBarWidget c;
     private ProgressBarWidget d;
@@ -32,7 +32,7 @@ public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRe
         }
     }
 
-    public b(float f, final int i) {
+    public ProgressBarItem(float f, final int i) {
         super(4, 32, 32);
         this.g = 0.0f;
         this.h = 0.0f;
@@ -146,7 +146,7 @@ public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRe
         this.e.rotateDegressZ(f);
     }
 
-    private void a(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, boolean z) {
+    private void a(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar, boolean z) {
         if (!z) {
             i();
             j();
@@ -157,14 +157,14 @@ public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRe
         points().setPX(bVar.d, this.e);
     }
 
-    private void c(com.censivn.C3DEngine.b.f.a.SpriteItemData bVar) {
+    private void c(com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar) {
         uvs().set(bVar.a, 0.0f, 1.0f);
         uvs().set(bVar.b, 0.0f, 0.0f);
         uvs().set(bVar.d, 1.0f, 0.0f);
         uvs().set(bVar.c, 1.0f, 1.0f);
     }
 
-    private void a(float f, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar, com.censivn.C3DEngine.b.f.a.SpriteItemData bVar2, boolean z) {
+    private void a(float f, com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar, com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVar2, boolean z) {
         float f2 = f / 2.0f;
         if (f > 90.0f) {
             if (f <= 180.0f) {
@@ -230,7 +230,7 @@ public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRe
         a(bVar2, z);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
         f();
         if (this.n != this.m) {
@@ -251,27 +251,27 @@ public class ProgressBarItem extends com.censivn.C3DEngine.b.f.a.TextureSpriteRe
         this.m = f;
         if (f <= 90.0f) {
             a(f, a(0), a(1), true);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = a(2);
             bVarA.a((Boolean) false);
             bVarA.h();
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(3);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = a(3);
             bVarA2.a((Boolean) false);
             bVarA2.h();
         } else if (f <= 180.0f) {
             a(f, a(0), a(1), true);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = a(2);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA3 = a(2);
             bVarA3.a((Boolean) false);
             bVarA3.h();
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA4 = a(3);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA4 = a(3);
             bVarA4.a((Boolean) false);
             bVarA4.h();
         } else if (f <= 360.0f) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA5 = a(0);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA5 = a(0);
             g();
             c(bVarA5);
             h();
             a(bVarA5, true);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA6 = a(1);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA6 = a(1);
             g();
             c(bVarA6);
             h();

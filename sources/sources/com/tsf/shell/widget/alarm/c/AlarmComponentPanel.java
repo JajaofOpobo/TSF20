@@ -138,8 +138,8 @@ public class AlarmComponentPanel extends VObject3dContainer {
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onSingleTapUp(MotionEvent motionEvent) {
-            i.c("onSingleTapUp+" + d.this.f);
-            d.this.c();
+            i.c("onSingleTapUp+" + AlarmComponentPanel.this.f);
+            AlarmComponentPanel.this.c();
         }
     }
 }

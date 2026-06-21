@@ -18,7 +18,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
             @Override // com.tsf.shell.services.ToggleServiceConnector.a
             public void a(com.c.a.a.a.a aVar) {
                 int iE = 1;
-                switch (c.this.a) {
+                switch (ToggleActionConnector.this.a) {
                     case 12000:
                         iE = aVar.E();
                         break;
@@ -38,7 +38,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
                         iE = aVar.o();
                         break;
                 }
-                c.this.c(iE);
+                ToggleActionConnector.this.c(iE);
             }
         });
     }
@@ -49,7 +49,7 @@ public class ToggleActionConnector extends com.tsf.shell.manager.action.toggle.T
             com.tsf.shell.manager.app.C.c().a(new d.a() { // from class: com.tsf.shell.manager.action.toggle.a.ToggleActionConnector.2
                 @Override // com.tsf.shell.services.ToggleServiceConnector.a
                 public void a(com.c.a.a.a.a aVar) {
-                    switch (c.this.a) {
+                    switch (ToggleActionConnector.this.a) {
                         case 12000:
                             if (com.tsf.shell.services.ToggleServiceConnector.a(com.censivn.C3DEngine.C3DEngine.d(), 3)) {
                                 aVar.v();

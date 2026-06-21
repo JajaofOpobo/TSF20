@@ -11,7 +11,7 @@ public class BitmapRequest extends i {
     private boolean a;
     private l.a b;
 
-    public a(String str, n.b<Bitmap> bVar, int i, int i2, Bitmap.Config config, n.a aVar) {
+    public BitmapRequest(String str, n.b<Bitmap> bVar, int i, int i2, Bitmap.Config config, n.a aVar) {
         super(str, bVar, i, i2, config, aVar);
         this.a = true;
         this.b = l.a.LOW;

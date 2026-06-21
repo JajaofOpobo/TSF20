@@ -12,8 +12,8 @@ public class PreferenceSettingF extends PreferenceSettingBase {
             @Override // com.censivn.C3DEngine.b.f.ResourceGridRenderable
             public void a(TextureElement textureElement) {
                 int iA = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(textureElement.height);
-                f.this.a.a((int) com.censivn.C3DEngine.b.b.ScreenConstants.a(textureElement.width));
-                f.this.a.b(iA);
+                PreferenceSettingF.this.a.a((int) com.censivn.C3DEngine.b.b.ScreenConstants.a(textureElement.width));
+                PreferenceSettingF.this.a.b(iA);
             }
         };
         this.a.a(i);

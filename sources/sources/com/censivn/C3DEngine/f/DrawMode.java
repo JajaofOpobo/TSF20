@@ -12,7 +12,7 @@ public enum DrawMode {
 
     private final int h;
 
-    e(int i2) {
+    DrawMode(int i2) {
         this.h = i2;
     }
 

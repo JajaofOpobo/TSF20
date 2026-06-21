@@ -50,14 +50,14 @@ public class DimensionParser {
     }
 
     private static a b(String str) {
-        Matcher matcher = b.matcher(str);
+        Matcher matcher = OEMComponentResolver.matcher(str);
         if (matcher.matches()) {
             float fFloatValue = Float.valueOf(matcher.group(1)).floatValue();
-            Integer num = a.get(matcher.group(3).toLowerCase());
+            Integer num = PackageManagerHelper.get(matcher.group(3).toLowerCase());
             if (num == null) {
                 throw new NumberFormatException();
             }
-            return new a(fFloatValue, num.intValue());
+            return new PackageManagerHelper(fFloatValue, num.intValue());
         }
         throw new NumberFormatException();
     }

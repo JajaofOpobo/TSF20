@@ -79,11 +79,11 @@ public class a implements com.tsf.shell.workspace3D.g.e.e {
         aVar.c.a_(true);
         aVar.c.v();
         ArrayList b = aVar.m.b();
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) b.get(aVar.o);
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) b.get(aVar.o);
         bVar.d = false;
         bVar.f = false;
         bVar.e = false;
-        com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2 = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) b.get(aVar.p);
+        com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2 = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) b.get(aVar.p);
         bVar2.d = false;
         bVar2.f = false;
         bVar2.e = false;

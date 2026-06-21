@@ -109,7 +109,7 @@ public class FolderIndicatorDot extends BaseRenderable {
     }
 
     public BaseRenderable a(TextureElement textureElement) {
-        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
+        com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
         aVarA.a(true);
         aVarA.textures().addElement(textureElement);
         return aVarA;

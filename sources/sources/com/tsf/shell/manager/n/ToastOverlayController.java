@@ -164,7 +164,7 @@ public class ToastOverlayController implements e.a {
                 @Override // java.lang.Runnable
                 public void run() {
                     c0133a.a = null;
-                    a.this.b(c0133a);
+                    ToastOverlayController.this.b(c0133a);
                 }
             };
             com.censivn.C3DEngine.C3DEngine.a().b(runnable, i2);
@@ -188,7 +188,7 @@ public class ToastOverlayController implements e.a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.n.ToastOverlayController.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.e();
+                        ToastOverlayController.this.e();
                     }
                 });
             } else {
@@ -336,9 +336,9 @@ public class ToastOverlayController implements e.a {
             d dVar = new d() { // from class: com.tsf.shell.manager.n.ToastOverlayController.a.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    C0133a.this.removeFromParent();
+                    C0133ToastOverlayController.this.removeFromParent();
                     if (zz) {
-                        C0133a.this.d();
+                        C0133ToastOverlayController.this.d();
                     }
                 }
             };

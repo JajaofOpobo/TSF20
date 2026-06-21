@@ -46,14 +46,14 @@ public class AlarmComponentProvider extends VRectangle {
         AlarmWidget.e.post(new Runnable() { // from class: com.tsf.shell.widget.alarm.c.AlarmComponentProvider.1
             @Override // java.lang.Runnable
             public void run() {
-                if (c.this.d != null) {
+                if (AlarmComponentProvider.this.d != null) {
                     Bitmap bitmapA = p.a(AlarmWidget.h, "alarm_toggle_on");
-                    p.a(c.this.d.id, bitmapA, 0, 0);
+                    p.a(AlarmComponentProvider.this.d.id, bitmapA, 0, 0);
                     bitmapA.recycle();
                 }
-                if (c.this.e != null) {
+                if (AlarmComponentProvider.this.e != null) {
                     Bitmap bitmapA2 = p.a(AlarmWidget.h, "alarm_toggle_off");
-                    p.a(c.this.e.id, bitmapA2, 0, 0);
+                    p.a(AlarmComponentProvider.this.e.id, bitmapA2, 0, 0);
                     bitmapA2.recycle();
                 }
             }
@@ -116,7 +116,7 @@ public class AlarmComponentProvider extends VRectangle {
                 @Override // java.lang.Runnable
                 public void run() {
                     if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(AlarmWidget.h)) {
-                        c.this.d();
+                        AlarmComponentProvider.this.d();
                     }
                 }
             });

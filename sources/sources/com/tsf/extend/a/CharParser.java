@@ -10,7 +10,7 @@ public class CharParser {
     private CharSequence c;
     private int d;
 
-    public a(CharSequence charSequence, int i) {
+    public CharParser(CharSequence charSequence, int i) {
         this.c = charSequence;
         this.a = i;
         this.d = charSequence.length();

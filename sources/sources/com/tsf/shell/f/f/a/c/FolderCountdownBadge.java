@@ -36,7 +36,7 @@ public class FolderCountdownBadge extends FolderSelectionFrame {
             this.c.a(360.0f, 1500, new Runnable() { // from class: com.tsf.shell.f.f.a.c.FolderCountdownBadge.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    g.this.b();
+                    FolderCountdownBadge.this.b();
                 }
             });
         }

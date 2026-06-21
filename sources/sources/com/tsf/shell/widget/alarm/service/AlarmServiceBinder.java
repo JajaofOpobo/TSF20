@@ -36,8 +36,8 @@ public class AlarmServiceBinder implements ServiceConnection {
 
         @Override // com.tsf.shell.widget.alarm.service.IAlarmService
         public void a(int i, byte[] bArr) {
-            if (c.this.f != null) {
-                c.this.f.a(i, bArr);
+            if (AlarmServiceBinder.this.f != null) {
+                AlarmServiceBinder.this.f.a(i, bArr);
             }
         }
     }

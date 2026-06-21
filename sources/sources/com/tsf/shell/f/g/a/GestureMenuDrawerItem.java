@@ -19,22 +19,22 @@ public class GestureMenuDrawerItem extends com.tsf.shell.f.e._g.a.MenuActionItem
         super(GestureMenuOverlay.i.mn_drawer);
         this.a = bVar;
         ArrayList<GestureMenuBlankItem.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new GestureMenuBlankItem.C0095a(GestureMenuOverlay.d.effect_setting_desktop_menu_random, x.c(GestureMenuOverlay.i.text_random), new GestureMenuBlankItem.C0095a.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuDrawerItem.1
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        arrayList.add(new GestureMenuBlankItem.C0095a(GestureMenuOverlay.d.effect_setting_desktop_menu_random, x.c(GestureMenuOverlay.i.text_random), new GestureMenuBlankItem.C0095GestureMenuBlankItem.C0096a() { // from class: com.tsf.shell.f.g.a.GestureMenuDrawerItem.1
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public boolean a() {
                 return com.tsf.shell.manager.app.v.FlagHelper.b.g();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void b() {
                 com.tsf.shell.manager.app.v.FlagHelper.b.a(true);
-                d.this.b.d();
+                GestureMenuDrawerItem.this.b.d();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095GestureMenuBlankItem.C0096a
             public void c() {
                 com.tsf.shell.manager.app.v.FlagHelper.b.a(false);
-                d.this.b.d();
+                GestureMenuDrawerItem.this.b.d();
             }
         }));
         setFunctions(arrayList);
@@ -65,7 +65,7 @@ public class GestureMenuDrawerItem extends com.tsf.shell.f.e._g.a.MenuActionItem
                 l lVarA = com.tsf.shell.manager.app.v.FlagHelper.b.a(i);
                 w.b();
                 com.tsf.shell.manager.app.v.FlagHelper.b.b(lVarA);
-                d.this.b.d();
+                GestureMenuDrawerItem.this.b.d();
             }
         });
     }

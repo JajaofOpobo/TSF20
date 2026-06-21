@@ -8,7 +8,7 @@ import com.tsf.b;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable {
+public class DockOperationBorder extends com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable {
     private static TextureElement k;
     private static TextureElement l;
     public float a;
@@ -55,12 +55,12 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
         this.d = new WorkspaceContainer(0.0f, 0.0f, 0.0f);
         this.e = new WorkspaceContainer(this.m, this.n, 0.0f);
         this.f = new WorkspaceContainer(0.0f, this.n, 0.0f);
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(0);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = a(0);
         uvs().set(bVarA.a, 1.0f, 1.0f);
         uvs().set(bVarA.b, 0.0f, 1.0f);
         uvs().set(bVarA.c, 1.0f, 0.0f);
         uvs().set(bVarA.d, 0.0f, 0.0f);
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(1);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = a(1);
         uvs().set(bVarA2.b, 1.0f, 1.0f);
         uvs().set(bVarA2.a, 0.0f, 1.0f);
         uvs().set(bVarA2.d, 1.0f, 0.0f);
@@ -102,7 +102,7 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.DockOperationBorder.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
-                e.this.b(f2 + ((f - f2) * f3));
+                DockOperationBorder.this.b(f2 + ((f - f2) * f3));
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -143,12 +143,12 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
             this.f.x = 0.0f;
             this.f.y = fCos;
             this.e.rotateDegressZ(f2);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(0);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = a(0);
             uvs().set(bVarA.a, 1.0f, 1.0f);
             uvs().set(bVarA.b, 0.0f, 1.0f);
             uvs().set(bVarA.c, (this.a - fTan) / this.a, 0.0f);
             uvs().set(bVarA.d, 0.0f, 0.0f);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(1);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = a(1);
             uvs().set(bVarA2.a, 0.0f, 1.0f);
             uvs().set(bVarA2.b, 1.0f, 1.0f);
             uvs().set(bVarA2.c, 0.0f, 0.0f);
@@ -171,13 +171,13 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
             A aVar4 = this.e;
             this.f.y = fCos2;
             aVar4.y = fCos2;
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = a(0);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA3 = a(0);
             uvs().set(bVarA3.a, 1.0f, 1.0f);
             uvs().set(bVarA3.b, 0.0f, 1.0f);
             uvs().set(bVarA3.c, 0.0f, (this.a - fTan2) / this.a);
             uvs().set(bVarA3.d, 0.0f, (this.a - fTan2) / this.a);
             bVarA3.m.x = 1.0f;
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA4 = a(1);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA4 = a(1);
             uvs().set(bVarA4.a, 0.0f, 1.0f);
             uvs().set(bVarA4.b, 1.0f, 1.0f);
             uvs().set(bVarA4.c, 0.0f, (this.a - fTan2) / this.a);
@@ -188,12 +188,12 @@ public class DockOperationBorder extends com.censivn.C3DEngine.b.f.a.TextureSpri
     }
 
     private void e() {
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = a(0);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = a(0);
         points().setPX(bVarA.a, this.g);
         points().setPX(bVarA.b, this.h);
         points().setPX(bVarA.c, this.i);
         points().setPX(bVarA.d, this.j);
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = a(1);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = a(1);
         points().setPX(bVarA2.a, this.c);
         points().setPX(bVarA2.b, this.d);
         points().setPX(bVarA2.c, this.e);

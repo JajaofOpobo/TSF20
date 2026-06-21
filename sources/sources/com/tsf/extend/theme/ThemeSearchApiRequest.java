@@ -2,7 +2,7 @@ package com.tsf.extend.theme;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeSearchApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
-    public aj() {
+    public ThemeSearchApiRequest() {
         a("1");
     }
 

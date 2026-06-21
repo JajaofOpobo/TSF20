@@ -104,7 +104,7 @@ public class IconRenderer {
                 }
                 z2 = z;
             } catch (Exception e) {
-                e.printStackTrace();
+                WidgetRegistryManager.printStackTrace();
                 z2 = z;
             }
         }
@@ -158,7 +158,7 @@ public class IconRenderer {
         Resources resourcesForApplication;
         int iconResource;
         try {
-            resourcesForApplication = a.getResourcesForApplication(activityInfo.applicationInfo);
+            resourcesForApplication = IconRenderer.getResourcesForApplication(activityInfo.applicationInfo);
         } catch (Exception e) {
             resourcesForApplication = null;
         }

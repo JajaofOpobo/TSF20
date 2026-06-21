@@ -13,7 +13,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class LoadingSpinner extends GridRenderable {
     private TextureElement a;
 
-    public a() {
+    public LoadingSpinner() {
         super(com.tsf.shell.manager.g.a.k, com.tsf.shell.manager.g.a.k, false);
         this.a = new TextureElement(0, false);
         textures().addElement(this.a);

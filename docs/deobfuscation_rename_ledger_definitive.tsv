@@ -1079,3 +1079,7 @@ sources/sources/com/tsf/shell/f/f/a/_b/g.java	sources/sources/com/tsf/shell/f/f/
 sources/sources/com/tsf/shell/f/f/a/_a/a/a.java	sources/sources/com/tsf/shell/f/f/a/_a/a/DrawerAppLayoutStrategy.java	reconstruct	73
 sources/sources/com/tsf/shell/plugin/themepicker/indicator/t.java	sources/sources/com/tsf/shell/plugin/themepicker/indicator/ThemeIndicatorType.java	reconstruct	56
 sources/sources/com/tsf/shell/a/a/A.java	sources/sources/com/tsf/shell/a/a/ShellAction.java	reconstruct	50
+sources/sources/com/censivn/C3DEngine/b/f/a/	sources/sources/com/censivn/C3DEngine/b/f/sprite/	frida_runtime_mapping	99
+sources/sources/com/censivn/C3DEngine/b/f/b/	sources/sources/com/censivn/C3DEngine/b/f/ninepatch/	frida_runtime_mapping	99
+sources/sources/com/censivn/C3DEngine/c/a/a/	sources/sources/com/censivn/C3DEngine/c/a/spring/	frida_runtime_mapping	99
+sources/sources/com/censivn/C3DEngine/b/g/_c/a/	sources/sources/com/censivn/C3DEngine/b/g/_c/orbit/	frida_runtime_mapping	99

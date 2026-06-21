@@ -143,15 +143,15 @@ public class ConfigManager {
     }
 
     public static Number3d f() {
-        Number3d.TEMPNUMBER3D3.x = j;
-        Number3d.TEMPNUMBER3D3.y = k;
-        return Number3d.TEMPNUMBER3D3;
+        Number3BackupExportManager.TEMPNUMBER3D3.x = j;
+        Number3BackupExportManager.TEMPNUMBER3D3.y = k;
+        return Number3BackupExportManager.TEMPNUMBER3D3;
     }
 
     public static Number3d g() {
-        Number3d.TEMPNUMBER3D3.x = l;
-        Number3d.TEMPNUMBER3D3.y = m;
-        return Number3d.TEMPNUMBER3D3;
+        Number3BackupExportManager.TEMPNUMBER3D3.x = l;
+        Number3BackupExportManager.TEMPNUMBER3D3.y = m;
+        return Number3BackupExportManager.TEMPNUMBER3D3;
     }
 
     public static void b(boolean z2) {
@@ -337,15 +337,15 @@ public class ConfigManager {
     }
 
     public static Number3d w() {
-        Number3d.TEMPNUMBER3D3.x = p;
-        Number3d.TEMPNUMBER3D3.y = q;
-        return Number3d.TEMPNUMBER3D3;
+        Number3BackupExportManager.TEMPNUMBER3D3.x = p;
+        Number3BackupExportManager.TEMPNUMBER3D3.y = q;
+        return Number3BackupExportManager.TEMPNUMBER3D3;
     }
 
     public static Number3d x() {
-        Number3d.TEMPNUMBER3D3.x = r;
-        Number3d.TEMPNUMBER3D3.y = s;
-        return Number3d.TEMPNUMBER3D3;
+        Number3BackupExportManager.TEMPNUMBER3D3.x = r;
+        Number3BackupExportManager.TEMPNUMBER3D3.y = s;
+        return Number3BackupExportManager.TEMPNUMBER3D3;
     }
 
     public static boolean y() {
@@ -751,7 +751,7 @@ public class ConfigManager {
         com.censivn.C3DEngine.C3DEngine.a().e(new Runnable() { // from class: com.tsf.shell.manager.b.e.1
             @Override // java.lang.Runnable
             public void run() {
-                SharedPreferences.Editor editorAC = e.aC();
+                SharedPreferences.Editor editorAC = ConfigManager.aC();
                 editorAC.putInt("screen", i2);
                 editorAC.commit();
             }
@@ -860,7 +860,7 @@ public class ConfigManager {
     }
 
     public static int a(Context context) {
-        int i2 = aD().getInt("setting_screen_orientation", context.getResources().getBoolean(b.C0044b.allow_rotation) ? -1 : 1);
+        int i2 = aD().getInt("setting_screen_orientation", context.getResources().getBoolean(BackupRestoreManager.C0044BackupRestoreManager.allow_rotation) ? -1 : 1);
         if (i2 < -1) {
             return -1;
         }

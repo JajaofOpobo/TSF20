@@ -57,7 +57,7 @@ public class TransitionRegistry {
         this.e.add(new com.tsf.shell.f.f.b.a.FolderTransitionE(70, true, true, true));
         this.e.add(new com.tsf.shell.f.f.b.a.FolderTransitionC(80, true, false, true));
         this.e.add(new com.tsf.shell.f.f.b.a.FolderTransitionC(90, true, true, true));
-        this.a = new D(this.d);
+        this.a = new ItemTransitionManager(this.d);
         this.b = new TransitionConfig(this.e);
     }
 

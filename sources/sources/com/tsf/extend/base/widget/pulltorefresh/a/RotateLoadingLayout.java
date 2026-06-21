@@ -18,7 +18,7 @@ public class RotateLoadingLayout extends LoadingLayout {
     private float i;
     private final boolean j;
 
-    public e(Context context, PullToRefreshBase.b bVar, PullToRefreshBase.h hVar, TypedArray typedArray) {
+    public RotateLoadingLayout(Context context, PullToRefreshBase.b bVar, PullToRefreshBase.h hVar, TypedArray typedArray) {
         super(context, bVar, hVar, typedArray);
         this.j = typedArray.getBoolean(ResourceIds.i.PullToRefresh_ptrRotateDrawableWhilePulling, true);
         this.b.setScaleType(ImageView.ScaleType.MATRIX);

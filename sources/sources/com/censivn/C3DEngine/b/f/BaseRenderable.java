@@ -13,26 +13,26 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
     private boolean isRenderChildren;
     private ArrayList<i> mChildren;
 
-    public j() {
+    public BaseRenderable() {
         super(0, 0, false, false, false);
         this.mChildren = new ArrayList<>();
         this.isRenderChildren = true;
         useVBO(false);
     }
 
-    public j(int i, int i2) {
+    public BaseRenderable(int i, int i2) {
         super(i, i2, true, true, false);
         this.mChildren = new ArrayList<>();
         this.isRenderChildren = true;
     }
 
-    public j(int i, int i2, Boolean bool, Boolean bool2, Boolean bool3) {
+    public BaseRenderable(int i, int i2, Boolean bool, Boolean bool2, Boolean bool3) {
         super(i, i2, bool, bool2, bool3);
         this.mChildren = new ArrayList<>();
         this.isRenderChildren = true;
     }
 
-    public j(Vertices vertices, FacesBufferedList facesBufferedList, TextureList textureList) {
+    public BaseRenderable(Vertices vertices, FacesBufferedList facesBufferedList, TextureList textureList) {
         super(vertices, facesBufferedList, textureList);
         this.mChildren = new ArrayList<>();
         this.isRenderChildren = true;

@@ -10,7 +10,7 @@ public class TimedTween extends AbstractTween {
     private Runnable h;
     private com.censivn.C3DEngine.b.g.TweenCallback i;
 
-    public d(com.censivn.C3DEngine.b.g._b.ITweenTarget aVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
+    public TimedTween(com.censivn.C3DEngine.b.g._b.ITweenTarget aVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
         this.d = aVar;
         dVar.a(aVar);
         aVar.setTweenChild(this);

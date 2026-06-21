@@ -82,8 +82,8 @@ public class TweenManager {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.PropertyTween((IRenderable) aVar, i, dVar);
             } else if (aVar instanceof com.censivn.C3DEngine.b.g._b.TweenTargetWrapper) {
                 aVar2 = new com.censivn.C3DEngine.b.g.a.TimedTween((com.censivn.C3DEngine.b.g._b.TweenTargetWrapper) aVar, i, dVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.b.f.a.SpriteItemData) {
-                aVar2 = new com.censivn.C3DEngine.b.g.a.RenderableTween((com.censivn.C3DEngine.b.f.a.SpriteItemData) aVar, i, dVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.b.f.sprite.SpriteItemData) {
+                aVar2 = new com.censivn.C3DEngine.b.g.a.RenderableTween((com.censivn.C3DEngine.b.f.sprite.SpriteItemData) aVar, i, dVar);
             } else {
                 aVar2 = null;
             }

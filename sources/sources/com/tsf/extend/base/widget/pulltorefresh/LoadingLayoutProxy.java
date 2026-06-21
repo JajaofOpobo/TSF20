@@ -8,7 +8,7 @@ import java.util.Iterator;
 public class LoadingLayoutProxy implements ILoadingLayout {
     private final HashSet<com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout> a = new HashSet<>();
 
-    b() {
+    LoadingLayoutProxy() {
     }
 
     public void a(com.tsf.extend.base.widget.pulltorefresh.a.LoadingLayout dVar) {

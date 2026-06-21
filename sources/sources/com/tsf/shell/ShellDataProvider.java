@@ -11,7 +11,7 @@ public class ShellDataProvider {
     private static ShellDataProvider a;
     private LinkedList<Runnable> b = new LinkedList<>();
     private MessageQueue c = Looper.myQueue();
-    private B d = new B(this, null);
+    private B d = new ShellEventData(this, null);
     private boolean e = false;
     private String f;
 
@@ -25,11 +25,11 @@ public class ShellDataProvider {
 
         @Override // android.os.Handler
         public void handleMessage(Message message) {
-            synchronized (d.this.b) {
-                if (d.this.b.size() != 0 && !d.this.e) {
-                    ((Runnable) d.this.b.removeFirst()).run();
-                    synchronized (d.this.b) {
-                        d.this.b();
+            synchronized (ShellDataProvider.this.b) {
+                if (ShellDataProvider.this.b.size() != 0 && !ShellDataProvider.this.e) {
+                    ((Runnable) ShellDataProvider.this.b.removeFirst()).run();
+                    synchronized (ShellDataProvider.this.b) {
+                        ShellDataProvider.this.b();
                     }
                 }
             }
@@ -53,7 +53,7 @@ public class ShellDataProvider {
 
     public static ShellDataProvider a() {
         if (a == null) {
-            a = new D();
+            a = new ShellDataProvider();
         }
         return a;
     }

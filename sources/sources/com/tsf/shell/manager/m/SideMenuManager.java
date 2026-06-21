@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SideMenuManager implements e.a, a.InterfaceC0113a {
+public class SideMenuManager implements e.a, DragSortContainer.InterfaceC0113a {
     public static class a extends com.tsf.shell.manager.f.WorkspaceScene.a {
         public void a() {
         }
@@ -77,8 +77,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        b.this.f.visible(false);
-                        b.this.f.c();
+                        SideMenuManager.this.f.visible(false);
+                        SideMenuManager.this.f.c();
                     }
                 };
                 dVar.f(r());
@@ -141,7 +141,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         };
         this.h = new h();
         this.c = new BaseRenderable();
-        this.e = new a(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.4
+        this.e = new DragSortContainer(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.4
             @Override // com.censivn.C3DEngine.b.b.ScreenConstants.c, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(i iVar) {
                 super.a(iVar, true);
@@ -149,25 +149,25 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         };
         this.e.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(60.0f));
         this.e.b(com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f));
-        this.d = new c(this, this.e);
+        this.d = new AddItemButton(this, this.e);
         this.e.a((com.censivn.C3DEngine.b.b.ScreenConstants.e) this.d);
         this.d.visible(false);
         this.d.a(this.e);
         jVar.addChild(this.c);
-        this.f = new d(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.5
+        this.f = new SideMenuIndicator(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.5
             /* JADX WARN: Multi-variable type inference failed */
             @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public boolean a(f fVar, float f, float f2) {
-                return b.this.b((i) fVar);
+                return SideMenuManager.this.b((i) fVar);
             }
 
             @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(f fVar) {
-                if (!b.this.g) {
+                if (!SideMenuManager.this.g) {
                     com.tsf.shell.manager.app.StateHub.b().c();
                     com.tsf.shell.manager.app.WidgetAnimator.c();
-                    b.this.c(false);
-                    b.this.e.a(fVar);
+                    SideMenuManager.this.c(false);
+                    SideMenuManager.this.e.a(fVar);
                     a();
                 }
             }
@@ -182,8 +182,8 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         this.i = new b.a() { // from class: com.tsf.shell.manager.m.SideMenuManager.6
             @Override // com.tsf.shell.manager.f.WorkspaceScene.a
             public void a() {
-                if (!b.this.e.v()) {
-                    b.this.t();
+                if (!SideMenuManager.this.e.v()) {
+                    SideMenuManager.this.t();
                 }
             }
         };
@@ -224,7 +224,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    b.this.f.visible(false);
+                    SideMenuManager.this.f.visible(false);
                 }
             };
             if (this.k == 0) {
@@ -244,7 +244,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.8
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    b.this.f.mouseEnabled(true);
+                    SideMenuManager.this.f.mouseEnabled(true);
                 }
             };
             dVar.f(r());
@@ -366,11 +366,11 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.9
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    if (!b.this.l) {
-                        b.this.f.visible(false);
+                    if (!SideMenuManager.this.l) {
+                        SideMenuManager.this.f.visible(false);
                     }
-                    if (b.this.d != null) {
-                        b.this.d.k();
+                    if (SideMenuManager.this.d != null) {
+                        SideMenuManager.this.d.k();
                     }
                 }
             };
@@ -382,7 +382,7 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuManager.10
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    b.this.d.visible(false);
+                    SideMenuManager.this.d.visible(false);
                 }
             };
             dVar2.f(s());
@@ -428,9 +428,9 @@ public class SideMenuManager implements e.a, a.InterfaceC0113a {
         this.r = new Runnable() { // from class: com.tsf.shell.manager.m.SideMenuManager.2
             @Override // java.lang.Runnable
             public void run() {
-                b.this.s = false;
+                SideMenuManager.this.s = false;
                 final String str = "";
-                for (i iVar : b.this.e.children()) {
+                for (i iVar : SideMenuManager.this.e.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.m.SideMenuManager.2.1

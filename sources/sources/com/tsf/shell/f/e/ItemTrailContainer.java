@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable {
-    private static E a = new E();
+    private static E a = new ItemTrailContainer();
     private static Number3d b = new Number3d();
     private static com.tsf.shell.f.i.ShortcutItem c;
 
@@ -16,18 +16,18 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable
     }
 
     public static boolean a(com.tsf.shell.f.i.ShortcutItem cVar) {
-        return cVar == c && a.numChildren() > 0;
+        return cVar == c && AlignmentOverlay.numChildren() > 0;
     }
 
     public static int a() {
-        return a.numChildren();
+        return AlignmentOverlay.numChildren();
     }
 
     public static boolean b(com.tsf.shell.f.i.ShortcutItem cVar) {
-        if (cVar != c || a.numChildren() <= 0) {
+        if (cVar != c || AlignmentOverlay.numChildren() <= 0) {
             return false;
         }
-        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = a.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = AlignmentOverlay.children().iterator();
         while (it.hasNext()) {
             if (it.next() instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
                 return true;
@@ -37,7 +37,7 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable
     }
 
     public static void c(com.tsf.shell.f.i.ShortcutItem cVar) {
-        if (a.parent() == null) {
+        if (AlignmentOverlay.parent() == null) {
             cVar.an();
             c = cVar;
             com.tsf.shell.manager.app.TaskScheduler.a(AlignmentOverlay);
@@ -57,16 +57,16 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable
         cVar.visible(true);
         cVar.alpha(255.0f);
         cVar.an();
-        b.reset();
+        WidgetResizeResources.reset();
         cVar.localToGlobal(WidgetResizeResources);
         cVar.position().setAllFrom(WidgetResizeResources);
         cVar.removeFromParent();
-        a.addChild(cVar);
+        AlignmentOverlay.addChild(cVar);
     }
 
     public static ArrayList<com.tsf.shell.f.i.ShortcutItem> b() {
         ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayList = new ArrayList<>();
-        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = a.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = AlignmentOverlay.children().iterator();
         while (it.hasNext()) {
             arrayList.add((com.tsf.shell.f.i.ShortcutItem) it.next());
         }
@@ -75,8 +75,8 @@ public class ItemTrailContainer extends com.censivn.C3DEngine.b.f.BaseRenderable
 
     public static ArrayList<com.tsf.shell.f.i.ShortcutItem> c() {
         ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListB = b();
-        while (a.numChildren() > 0) {
-            a.getChildAt(0).removeFromParent();
+        while (AlignmentOverlay.numChildren() > 0) {
+            AlignmentOverlay.getChildAt(0).removeFromParent();
         }
         com.tsf.shell.manager.app.TaskScheduler.b(AlignmentOverlay);
         c = null;

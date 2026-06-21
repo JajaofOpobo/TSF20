@@ -40,7 +40,7 @@ public class RoundedDrawable extends Drawable {
     private ColorStateList s = ColorStateList.valueOf(-16777216);
     private ImageView.ScaleType t = ImageView.ScaleType.FIT_CENTER;
 
-    public e(Bitmap bitmap) {
+    public RoundedDrawable(Bitmap bitmap) {
         this.d = bitmap;
         this.f = bitmap.getWidth();
         this.g = bitmap.getHeight();

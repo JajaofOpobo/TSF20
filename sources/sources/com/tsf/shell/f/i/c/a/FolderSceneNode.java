@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.primitives.VRectangle;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderSceneNode extends j {
+public class FolderSceneNode extends AsyncTextureNode {
     public TextureElement a;
     public TextureElement a;
     private C0116a c;

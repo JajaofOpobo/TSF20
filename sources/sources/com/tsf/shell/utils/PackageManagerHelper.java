@@ -35,7 +35,7 @@ public class PackageManagerHelper {
         try {
             return com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getPackageInfo(str, 64).versionCode >= i;
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             return false;
         }
     }

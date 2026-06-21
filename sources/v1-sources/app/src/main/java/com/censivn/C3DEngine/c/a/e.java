@@ -13,7 +13,7 @@ public final class e {
     private float f;
     private int g;
     private PointBufferManager h;
-    private com.censivn.C3DEngine.c.a.a.DampedSpringConstraint i;
+    private com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint i;
 
     public final void a(int i, PointBufferManager pointBufferManager) {
         this.g = i;
@@ -72,11 +72,11 @@ public final class e {
         this.c = c();
     }
 
-    public final void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar) {
+    public final void a(com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar) {
         this.i = bVar;
     }
 
-    public final com.censivn.C3DEngine.c.a.a.DampedSpringConstraint f() {
+    public final com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint f() {
         return this.i;
     }
 }

@@ -19,7 +19,7 @@ import com.tsf.shell.widget.alarm.b.AlarmDataEntry;
 import com.tsf.shell.widget.alarm.service.AlarmServiceBinder;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.InterfaceC0180c {
+public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, AlarmConstants.InterfaceC0180c {
     public h a;
     private VWidgetContainer b = AlarmWidget.b;
     private VTextureManager c = AlarmWidget.c;
@@ -130,17 +130,17 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
                     bitmapDecodeByteArray = null;
                 }
                 if (bitmapDecodeByteArray != null) {
-                    g.this.n.a(bitmapDecodeByteArray);
+                    AlarmPanel.this.n.a(bitmapDecodeByteArray);
                 }
                 if (com.tsf.shell.widget.alarm.setting.AlarmSettingTheme.b) {
-                    g.this.i.a(cVar.d, cVar.e, cVar.f, cVar.b);
+                    AlarmPanel.this.i.a(cVar.d, cVar.e, cVar.f, cVar.b);
                 } else {
-                    g.this.i.a(cVar.g, cVar.h, cVar.i, cVar.b);
+                    AlarmPanel.this.i.a(cVar.g, cVar.h, cVar.i, cVar.b);
                 }
-                g.this.new AlarmRoundRect(g.this.k, g.this.i, g.this.i.b, 100, false);
-                g.this.new AlarmRoundRect(g.this.l, g.this.i, g.this.i.c, VEasing.Back.easeIn, false);
-                g.this.new AlarmRoundRect(g.this.j, g.this.i, g.this.i.a, 300, false);
-                g.this.new AlarmRoundRect(g.this.m, g.this.i, g.this.i.d, VEasing.Linear.easeNone, true);
+                AlarmPanel.this.new AlarmRoundRect(AlarmPanel.this.k, AlarmPanel.this.i, AlarmPanel.this.i.b, 100, false);
+                AlarmPanel.this.new AlarmRoundRect(AlarmPanel.this.l, AlarmPanel.this.i, AlarmPanel.this.i.c, VEasing.Back.easeIn, false);
+                AlarmPanel.this.new AlarmRoundRect(AlarmPanel.this.j, AlarmPanel.this.i, AlarmPanel.this.i.a, 300, false);
+                AlarmPanel.this.new AlarmRoundRect(AlarmPanel.this.m, AlarmPanel.this.i, AlarmPanel.this.i.d, VEasing.Linear.easeNone, true);
             }
         }, VMessageQueueManager.TYPE_GL_THREAD);
     }
@@ -194,7 +194,7 @@ public class AlarmPanel extends VObject3dContainer implements AlarmWidget.b, c.I
             this.b.textures().addElement(this.c.g());
             this.d.a(this.b);
             this.b.updateUvsVBO();
-            g.this.new AlarmContainer(this.b, this.c, this.e);
+            AlarmPanel.this.new AlarmContainer(this.b, this.c, this.e);
         }
     }
 

@@ -26,8 +26,8 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
 
     public static void a(float f, float f2) {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
-        dVar.f(a.position().x + f);
-        dVar.h(a.position().y + f2);
+        dVar.f(AlignmentOverlay.position().x + f);
+        dVar.h(AlignmentOverlay.position().y + f2);
         com.censivn.C3DEngine.b.g.TweenUtils.a(AlignmentOverlay);
         com.censivn.C3DEngine.b.g.TweenUtils.a(a, 250, dVar);
     }
@@ -37,24 +37,24 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
     }
 
     public static void c() {
-        a = new s();
+        a = new WidgetMatchResizeController();
         e = new Runnable() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.1
             @Override // java.lang.Runnable
             public void run() {
                 s.b();
             }
         };
-        b = new AlignmentOverlay(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.b.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
-        a.addChild(WidgetResizeResources);
+        b = new AlignmentOverlay(500.0f, 500.0f, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(15.0f, 17.0f, 15.0f, 17.0f, 32.0f, 32.0f));
+        AlignmentOverlay.addChild(WidgetResizeResources);
     }
 
     public static void a(com.tsf.shell.f.i.PageItem bVar) {
         c = true;
         d = bVar;
         d.W();
-        a.removeFromParent();
-        a.rotation().z = bVar.rotation().z;
-        a.position().setAllFrom(bVar.position());
+        AlignmentOverlay.removeFromParent();
+        AlignmentOverlay.rotation().z = bVar.rotation().z;
+        AlignmentOverlay.position().setAllFrom(bVar.position());
         com.tsf.shell.manager.app.TaskScheduler.a(AlignmentOverlay);
         a.e().a(Math.abs(bVar.minX() * bVar.u()), Math.abs(bVar.maxX() * bVar.u()), Math.abs(bVar.minY() * bVar.u()), Math.abs(bVar.maxY() * bVar.u()));
         a.e().setFocus();
@@ -107,7 +107,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         return b;
     }
 
-    static class A extends com.censivn.C3DEngine.b.f.b.NinePatchRenderable {
+    static class A extends com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable {
         private int a;
         private DynamicTextureElement d;
         private A e;
@@ -121,7 +121,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         private float m;
         private boolean n;
 
-        public A(float f, float f2, com.censivn.C3DEngine.b.f.b.NinePatchBounds bVar) {
+        public A(float f, float f2, com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds bVar) {
             super(f, f2, bVar);
             this.k = 3;
             this.l = 1.0f;
@@ -133,7 +133,7 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.WidgetMatchResizeController.a.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    a.this.a = a.this.d.id;
+                    AlignmentOverlay.this.a = AlignmentOverlay.this.d.id;
                 }
             };
             this.d.setReloadThemeRunnable(runnable);
@@ -149,18 +149,18 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
         }
 
         public int a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-            Number3d.TEMPNUMBER3D3.reset();
-            Number3d number3dLocalToGlobal = this.f.localToGlobal(Number3d.TEMPNUMBER3D3);
-            Number3d.TEMPNUMBER3D3.reset();
-            Number3d number3dLocalToGlobal2 = this.g.localToGlobal(Number3d.TEMPNUMBER3D3);
-            Number3d.TEMPNUMBER3D3.reset();
-            Number3d number3dLocalToGlobal3 = this.h.localToGlobal(Number3d.TEMPNUMBER3D3);
-            Number3d.TEMPNUMBER3D3.reset();
-            Number3d number3dLocalToGlobal4 = this.i.localToGlobal(Number3d.TEMPNUMBER3D3);
+            Number3ObjectPool.TEMPNUMBER3D3.reset();
+            Number3d number3dLocalToGlobal = this.f.localToGlobal(Number3ObjectPool.TEMPNUMBER3D3);
+            Number3ObjectPool.TEMPNUMBER3D3.reset();
+            Number3d number3dLocalToGlobal2 = this.g.localToGlobal(Number3ObjectPool.TEMPNUMBER3D3);
+            Number3ObjectPool.TEMPNUMBER3D3.reset();
+            Number3d number3dLocalToGlobal3 = this.h.localToGlobal(Number3ObjectPool.TEMPNUMBER3D3);
+            Number3ObjectPool.TEMPNUMBER3D3.reset();
+            Number3d number3dLocalToGlobal4 = this.i.localToGlobal(Number3ObjectPool.TEMPNUMBER3D3);
             float[] fArr = {number3dLocalToGlobal.x, number3dLocalToGlobal2.x, number3dLocalToGlobal3.x, number3dLocalToGlobal4.x};
             float[] fArr2 = {number3dLocalToGlobal.y, number3dLocalToGlobal2.y, number3dLocalToGlobal3.y, number3dLocalToGlobal4.y};
-            Number3d.TEMPNUMBER3D3.reset();
-            Number3d number3dLocalToGlobal5 = iVar.localToGlobal(Number3d.TEMPNUMBER3D3);
+            Number3ObjectPool.TEMPNUMBER3D3.reset();
+            Number3d number3dLocalToGlobal5 = iVar.localToGlobal(Number3ObjectPool.TEMPNUMBER3D3);
             float f = number3dLocalToGlobal5.x;
             float f2 = number3dLocalToGlobal5.y;
             float f3 = 2.1474836E9f;
@@ -273,12 +273,12 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
                         f8 = 0.0f;
                     }
                     float f10 = f9 >= 0.0f ? f9 : 0.0f;
-                    a.this.i(f6);
-                    a.this.g(f7);
-                    a.this.c(f8);
-                    a.this.e(f10);
-                    a.this.g();
-                    a.this.e.updatePointsVBO();
+                    AlignmentOverlay.this.i(f6);
+                    AlignmentOverlay.this.g(f7);
+                    AlignmentOverlay.this.c(f8);
+                    AlignmentOverlay.this.e(f10);
+                    AlignmentOverlay.this.g();
+                    AlignmentOverlay.this.e.updatePointsVBO();
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -298,25 +298,25 @@ public class WidgetMatchResizeController extends com.censivn.C3DEngine.b.f.BaseR
             positionNumber3dPosition.y = fA;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void i(float f) {
             super.j(ILayoutItem);
             this.h.position().x = (-f) + this.k;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void g(float f) {
             super.h(ILayoutItem);
             this.i.position().x = (f - this.k) - 3.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void c(float f) {
             super.d(ILayoutItem);
             this.f.position().y = (f - this.k) - 1.0f;
         }
 
-        @Override // com.censivn.C3DEngine.b.f.b.NinePatchRenderable
+        @Override // com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable
         public void e(float f) {
             super.f(ILayoutItem);
             this.g.position().y = (-f) + this.k + 1.0f;

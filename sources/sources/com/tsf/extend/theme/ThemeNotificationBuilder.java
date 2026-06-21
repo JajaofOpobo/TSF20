@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeNotificationBuilder extends Notification.Builder {
-    public g(Context context) {
+    public ThemeNotificationBuilder(Context context) {
         super(context);
     }
 

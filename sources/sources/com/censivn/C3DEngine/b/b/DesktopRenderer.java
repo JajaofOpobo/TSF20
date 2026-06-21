@@ -35,7 +35,7 @@ public class DesktopRenderer extends BaseRenderable {
         return null;
     }
 
-    public c() {
+    public DesktopRenderer() {
         setLayoutParams(this.h);
         this.d = (int) ScreenConstants.a(4.0f);
         this.f = new GridRenderable(this.a, this.d, false);

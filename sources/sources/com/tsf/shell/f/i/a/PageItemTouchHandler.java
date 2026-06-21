@@ -288,7 +288,7 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventLi
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.a.PageItemTouchHandler.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                c.this.g.c();
+                WidgetItemTouchHandler.this.g.c();
             }
         };
         if (fArr == null) {

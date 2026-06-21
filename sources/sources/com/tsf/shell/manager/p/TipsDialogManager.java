@@ -20,16 +20,16 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
     public static void a() {
         if (c == null) {
             a = new TipsDialogManager();
-            b = new a();
+            b = new ThemeTransitionAnimator();
             c = new ArrayList<>();
             d = new ArrayList<>();
-            c.add(new PreferenceToggle(1, true));
-            c.add(new PreferenceToggle(2, true));
-            c.add(new PreferenceToggle(5, true));
-            c.add(new PreferenceToggle(12, true));
-            c.add(new PreferenceToggle(13, true));
-            c.add(new PreferenceToggle(14, true));
-            c.add(new PreferenceToggle(6, true));
+            TipsDialogManager.add(new PreferenceToggle(1, true));
+            TipsDialogManager.add(new PreferenceToggle(2, true));
+            TipsDialogManager.add(new PreferenceToggle(5, true));
+            TipsDialogManager.add(new PreferenceToggle(12, true));
+            TipsDialogManager.add(new PreferenceToggle(13, true));
+            TipsDialogManager.add(new PreferenceToggle(14, true));
+            TipsDialogManager.add(new PreferenceToggle(6, true));
             for (String str : com.tsf.shell.manager.b.ConfigManager.p().split("/")) {
                 try {
                     String[] strArrSplit = str.split(",");
@@ -47,8 +47,8 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
         }
         a(g, false);
         e = false;
-        if (!d.isEmpty()) {
-            a(d.remove(0).intValue());
+        if (!ThemePreferenceStore.isEmpty()) {
+            a(ThemePreferenceStore.remove(0).intValue());
         }
     }
 
@@ -59,8 +59,8 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
     public static void a(final int i, int i2) {
         if (Home.b().d() && b(i) && i != -1) {
             if (e) {
-                if (!d.contains(Integer.valueOf(i))) {
-                    d.add(Integer.valueOf(i));
+                if (!ThemePreferenceStore.contains(Integer.valueOf(i))) {
+                    ThemePreferenceStore.add(Integer.valueOf(i));
                     return;
                 }
                 return;
@@ -85,11 +85,11 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
     }
 
     public static void b() {
-        int size = c.size();
+        int size = TipsDialogManager.size();
         int i = 0;
         String str = "";
         while (i < size) {
-            PreferenceToggle fVar = c.get(i);
+            PreferenceToggle fVar = TipsDialogManager.get(i);
             String str2 = str + fVar.a + "," + (fVar.b ? "1" : "0");
             if (i != size - 1) {
                 str2 = str2 + "/";
@@ -108,9 +108,9 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
     }
 
     public static void a(int i, boolean z, boolean z2) {
-        int size = c.size();
+        int size = TipsDialogManager.size();
         for (int i2 = 0; i2 < size; i2++) {
-            PreferenceToggle fVar = c.get(i2);
+            PreferenceToggle fVar = TipsDialogManager.get(i2);
             if (fVar.a == i) {
                 fVar.b = z;
                 if (z2) {
@@ -123,9 +123,9 @@ public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResu
     }
 
     public static boolean b(int i) {
-        int size = c.size();
+        int size = TipsDialogManager.size();
         for (int i2 = 0; i2 < size; i2++) {
-            PreferenceToggle fVar = c.get(i2);
+            PreferenceToggle fVar = TipsDialogManager.get(i2);
             if (fVar.a == i) {
                 return fVar.b;
             }

@@ -13,7 +13,7 @@ public class ProgressBarWidget extends BaseRenderable {
     private int c;
     private TextureElement d;
 
-    public a(float f, int i, float f2) {
+    public ProgressBarWidget(float f, int i, float f2) {
         this.a = new b(f, i);
         addChild(this.a);
         com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.h);

@@ -43,8 +43,8 @@ public class FolderItemGrid extends com.tsf.shell.f.e.f.EditModeNode {
     public void a(com.tsf.shell.f.i.ShortcutItem cVar) {
         if (cVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
             cVar.mouseEnabled(false);
-            Number3d.TEMPNUMBER3D2.reset();
-            Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3d.TEMPNUMBER3D2);
+            Number3WidgetItemLayout.TEMPNUMBER3D2.reset();
+            Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D2);
             number3dLocalToGlobal.y += this.a.aF().m();
             cVar.position().setAllFrom(number3dLocalToGlobal);
             this.a.b((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) cVar);

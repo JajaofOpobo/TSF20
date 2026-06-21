@@ -101,8 +101,8 @@ public class ContactModel {
             com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.manager.c.a.a.ContactModel.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    if (a.this.l) {
-                        com.tsf.shell.manager.app.ObjectRegistry.b().b(a.this);
+                    if (ContactModel.this.l) {
+                        com.tsf.shell.manager.app.ObjectRegistry.b().b(ContactModel.this);
                     }
                 }
             });

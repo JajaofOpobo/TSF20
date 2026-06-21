@@ -12,7 +12,7 @@ public class FacebookShare extends BaseShareHandler {
     private static String f = "http://m.facebook.com/sharer.php?u=";
     private static String g = "https://play.google.com/store/apps/details?id=com.ksmobile.launcher&referrer=utm_source%3Dsharelink_fbshare";
 
-    public a(Context context, Intent intent) {
+    public FacebookShare(Context context, Intent intent) {
         super(context, intent, "com.facebook.katana", null);
     }
 

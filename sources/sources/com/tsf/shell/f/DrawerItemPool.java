@@ -10,11 +10,11 @@ public class DrawerItemPool {
 
     public static com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(i iVar) {
         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarRemove;
-        if (a.isEmpty()) {
+        if (ProgressDialogHelper.isEmpty()) {
             bVarRemove = new h();
             bVarRemove.visible(false);
         } else {
-            bVarRemove = a.remove(0);
+            bVarRemove = ProgressDialogHelper.remove(0);
         }
         bVarRemove.position().setAllFrom(iVar.position());
         bVarRemove.scale().setAllFrom(iVar.scale());
@@ -24,6 +24,6 @@ public class DrawerItemPool {
     }
 
     public static void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
-        a.add(bVar);
+        ProgressDialogHelper.add(bVar);
     }
 }

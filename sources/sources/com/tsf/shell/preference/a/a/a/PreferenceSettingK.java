@@ -11,7 +11,7 @@ public class PreferenceSettingK extends PreferenceSettingBase {
         this.a = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingK.1
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
-                k.this.b.dispatchDraw();
+                PreferenceSettingK.this.b.dispatchDraw();
             }
         };
         PreferenceSettingK().addChild(this.a);

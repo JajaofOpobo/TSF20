@@ -22,16 +22,16 @@ public class SceneAnimationController implements c.a {
         @Override // com.tsf.shell.f.h.a.b.SceneAnimationHandler, com.censivn.C3DEngine.b.e.DesktopPanelRenderer
         public void g() {
             super.g();
-            a.this.a.u();
+            SceneAnimationController.this.a.u();
         }
     };
     private d<C0112a> d = new d<C0112a>() { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.2
         @Override // com.tsf.shell.f.e.ObjectPool
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
         public C0112a a() {
-            C0112a c0112a = a.this.new C0112a();
-            c0112a.setAABBPX(com.tsf.shell.manager.o.ButtonPresetManager.a.T, com.tsf.shell.manager.o.ButtonPresetManager.a.U);
-            c0112a.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
+            C0112a c0112a = SceneAnimationController.this.new C0112a();
+            c0112SceneAnimationController.setAABBPX(com.tsf.shell.manager.o.ButtonPresetManager.a.T, com.tsf.shell.manager.o.ButtonPresetManager.a.U);
+            c0112SceneAnimationController.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f);
             return c0112a;
         }
     };
@@ -72,7 +72,7 @@ public class SceneAnimationController implements c.a {
             if (iVarRemoveChildAt instanceof C0112a) {
                 C0112a c0112a = (C0112a) iVarRemoveChildAt;
                 c0112a.q();
-                c0112a.textures().clear();
+                c0112SceneAnimationController.textures().clear();
                 this.d.a(c0112a);
             }
         }
@@ -84,7 +84,7 @@ public class SceneAnimationController implements c.a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.b.SceneAnimationController.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    a.this.c.removeFromParent();
+                    SceneAnimationController.this.c.removeFromParent();
                 }
             };
             dVar.a(0);

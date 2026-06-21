@@ -17,7 +17,7 @@ public abstract class BaseApiRequest {
 
     protected abstract String c();
 
-    public a() {
+    public BaseApiRequest() {
         this.a.putAll(a());
         a(this.a);
     }

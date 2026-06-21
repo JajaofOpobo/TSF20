@@ -9,7 +9,7 @@ public class ShellGraphicsContext {
     public interface C extends BaseColumns {
     }
 
-    public static final class e implements C {
+    public static final class e implements ShellBackgroundRenderer {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/favorites?notify=false");
 
         public static Uri a(long j, boolean z) {
@@ -42,7 +42,7 @@ public class ShellGraphicsContext {
         }
     }
 
-    public static final class B implements C {
+    public static final class B implements ShellBackgroundRenderer {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/application?notify=false");
 
         public static Uri a(long j, boolean z) {
@@ -50,7 +50,7 @@ public class ShellGraphicsContext {
         }
     }
 
-    public static final class E implements C {
+    public static final class E implements ShellBackgroundRenderer {
         public static final Uri a = Uri.parse("content://" + ShellProvider.a + "/favorites?notify=false");
 
         public static Uri a(long j, boolean z) {

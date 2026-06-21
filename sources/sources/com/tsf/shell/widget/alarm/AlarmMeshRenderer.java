@@ -137,23 +137,23 @@ public class AlarmMeshRenderer extends VObject3dContainer {
             float a;
 
             {
-                this.a = l.this.g;
+                this.a = AlarmMeshRenderer.this.g;
             }
 
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onUpdate(float f) {
-                l.this.g = this.a * (1.0f - f);
+                AlarmMeshRenderer.this.g = this.a * (1.0f - f);
             }
 
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onComplete() {
                 Bitmap bitmapB = AlarmTouchManager.b(AlarmWidget.h, "progress_bar");
-                AlarmTouchManager.a(l.this.o.id, bitmapB, 0, 0);
+                AlarmTouchManager.a(AlarmMeshRenderer.this.o.id, bitmapB, 0, 0);
                 bitmapB.recycle();
-                VTween.to(l.this, 1500, new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmMeshRenderer.1.1
+                VTween.to(AlarmMeshRenderer.this, 1500, new VTweenParam() { // from class: com.tsf.shell.widget.alarm.AlarmMeshRenderer.1.1
                     @Override // com.censivn.C3DEngine.api.tween.VTweenParam
                     public void onComplete() {
-                        l.this.f = false;
+                        AlarmMeshRenderer.this.f = false;
                     }
                 });
             }

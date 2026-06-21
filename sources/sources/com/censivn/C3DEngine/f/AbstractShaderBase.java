@@ -5,7 +5,7 @@ public abstract class AbstractShaderBase {
     protected com.censivn.C3DEngine.d.AnimationCallback a;
     protected boolean b;
 
-    public a(com.censivn.C3DEngine.d.AnimationCallback aVar) {
+    public AbstractShaderBase(com.censivn.C3DEngine.d.AnimationCallback aVar) {
         this.a = aVar;
     }
 

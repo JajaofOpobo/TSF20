@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class BackgroundSceneNode extends j {
+public class BackgroundSceneNode extends AsyncTextureNode {
     private VObject3dContainer A;
     private float B;
     private float C;
@@ -71,7 +71,7 @@ public class BackgroundSceneNode extends j {
         VTweenParam vTweenParam = new VTweenParam() { // from class: com.tsf.shell.f.i.c.a.BackgroundSceneNode.1
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onComplete() {
-                h.this.k();
+                BackgroundSceneNode.this.k();
             }
         };
         vTweenParam.setScaleX(this.B);
@@ -92,11 +92,11 @@ public class BackgroundSceneNode extends j {
                 VTweenParam vTweenParam2 = new VTweenParam() { // from class: com.tsf.shell.f.i.c.a.BackgroundSceneNode.2.1
                     @Override // com.censivn.C3DEngine.api.tween.VTweenParam
                     public void onComplete() {
-                        h.this.h();
+                        BackgroundSceneNode.this.h();
                     }
                 };
                 vTweenParam2.setTimeout(1000);
-                VTween.to(h.this, 1, vTweenParam2);
+                VTween.to(BackgroundSceneNode.this, 1, vTweenParam2);
             }
         };
         vTweenParam.setScaleX(1.0f);
@@ -116,20 +116,20 @@ public class BackgroundSceneNode extends j {
         VTweenParam vTweenParam2 = new VTweenParam() { // from class: com.tsf.shell.f.i.c.a.BackgroundSceneNode.3
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onComplete() {
-                h.this.v.setZOrderOnTop();
-                h.this.r.setZOrderOnTop();
-                h.this.y.visible(false);
-                h.this.i();
+                BackgroundSceneNode.this.v.setZOrderOnTop();
+                BackgroundSceneNode.this.r.setZOrderOnTop();
+                BackgroundSceneNode.this.y.visible(false);
+                BackgroundSceneNode.this.i();
             }
 
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onUpdate(float f) {
-                h.this.o.rotation().x = h.this.n.rotation().x;
-                h.this.p.rotation().x = h.this.n.rotation().x;
-                h.this.q.rotation().x = h.this.n.rotation().x;
-                h.this.y.rotation().x = h.this.n.rotation().x + 180.0f;
+                BackgroundSceneNode.this.o.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.p.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.q.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.y.rotation().x = BackgroundSceneNode.this.n.rotation().x + 180.0f;
                 if (f > 0.5f) {
-                    h.this.b(true);
+                    BackgroundSceneNode.this.b(true);
                 }
             }
         };
@@ -164,17 +164,17 @@ public class BackgroundSceneNode extends j {
         VTweenParam vTweenParam2 = new VTweenParam() { // from class: com.tsf.shell.f.i.c.a.BackgroundSceneNode.4
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onComplete() {
-                h.this.a();
+                BackgroundSceneNode.this.a();
             }
 
             @Override // com.censivn.C3DEngine.api.tween.VTweenParam
             public void onUpdate(float f) {
-                h.this.o.rotation().x = h.this.n.rotation().x;
-                h.this.p.rotation().x = h.this.n.rotation().x;
-                h.this.q.rotation().x = h.this.n.rotation().x;
-                h.this.y.rotation().x = h.this.n.rotation().x + 180.0f;
+                BackgroundSceneNode.this.o.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.p.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.q.rotation().x = BackgroundSceneNode.this.n.rotation().x;
+                BackgroundSceneNode.this.y.rotation().x = BackgroundSceneNode.this.n.rotation().x + 180.0f;
                 if (f > 0.5f) {
-                    h.this.b(false);
+                    BackgroundSceneNode.this.b(false);
                 }
             }
         };
@@ -403,7 +403,7 @@ public class BackgroundSceneNode extends j {
             int i2 = i;
             if (i2 < 5) {
                 VObject3d vObject3d = this.x.get(i2);
-                vObject3d.rotation().x = (i2 * 15) - 45;
+                vObject3PageSceneNode.rotation().x = (i2 * 15) - 45;
                 VTween.killTween(vObject3d);
                 i = i2 + 1;
             } else {

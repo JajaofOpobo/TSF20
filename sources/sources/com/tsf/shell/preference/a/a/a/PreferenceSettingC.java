@@ -54,7 +54,7 @@ public class PreferenceSettingC extends PreferenceSettingBase {
             kVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(kVar) { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingC.1
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
-                    c.this.a(aVar.b);
+                    PreferenceSettingC.this.a(aVar.b);
                 }
             });
             a().addChild(kVar);

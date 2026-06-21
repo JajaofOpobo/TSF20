@@ -61,15 +61,15 @@ public class AppIconEditorActivity extends FragmentActivity {
         @Override // android.support.v4.app.Fragment
         public View c() {
             this.ai = layoutInflater.inflate(ThemePickerResources.h.fragment_edit_shortcut, viewGroup);
-            this.ai.findViewById(ThemePickerResources.C0155f.done).setOnClickListener(this);
-            this.ai.findViewById(ThemePickerResources.C0155f.icon).setOnClickListener(this);
-            this.ai.findViewById(ThemePickerResources.C0155f.menu).setOnClickListener(this);
-            this.ai.findViewById(ThemePickerResources.C0155f.undo).setOnClickListener(this);
-            this.ai.findViewById(ThemePickerResources.C0155f.reset).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.done).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.icon).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.menu).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.undo).setOnClickListener(this);
+            this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.reset).setOnClickListener(this);
             if (this.aj != null) {
-                ((ImageView) this.ai.findViewById(ThemePickerResources.C0155f.icon)).setImageBitmap(this.aj);
+                ((ImageView) this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.icon)).setImageBitmap(this.aj);
             }
-            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155f.label);
+            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.label);
             autoCompleteTextView.setOnKeyListener(new View.OnKeyListener() { // from class: com.tsf.shell.plugin.themepicker.AppIconEditorActivity.a.1
                 @Override // android.view.View.OnKeyListener
                 public boolean onKey(View view, int i, KeyEvent keyEvent) {
@@ -90,20 +90,20 @@ public class AppIconEditorActivity extends FragmentActivity {
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             int id = view.getId();
-            if (id == ThemePickerResources.C0155f.icon) {
+            if (id == ThemePickerResources.C0155ThemePickerResources.icon) {
                 Intent intent = new Intent();
                 intent.setClass(i(), IconPickerActivity.class);
                 a(intent, VEasing.Back.easeIn);
             } else {
-                if (id == ThemePickerResources.C0155f.menu) {
+                if (id == ThemePickerResources.C0155ThemePickerResources.menu) {
                     a(view);
                     return;
                 }
-                if (id == ThemePickerResources.C0155f.done) {
+                if (id == ThemePickerResources.C0155ThemePickerResources.done) {
                     N();
-                } else if (id == ThemePickerResources.C0155f.undo) {
+                } else if (id == ThemePickerResources.C0155ThemePickerResources.undo) {
                     M();
-                } else if (id == ThemePickerResources.C0155f.reset) {
+                } else if (id == ThemePickerResources.C0155ThemePickerResources.reset) {
                     O();
                 }
             }
@@ -114,7 +114,7 @@ public class AppIconEditorActivity extends FragmentActivity {
         }
 
         private void N() {
-            String string = ((AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155f.label)).getText().toString();
+            String string = ((AutoCompleteTextView) this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.label)).getText().toString();
             Intent intent = new Intent();
             Bundle bundle = new Bundle();
             bundle.putBoolean("reset", false);
@@ -176,7 +176,7 @@ public class AppIconEditorActivity extends FragmentActivity {
                         this.aj = (Bitmap) intent.getExtras().get("data");
                         if (this.aj != null) {
                             ThemePickerEvent.b("onActivityResult bitmap :" + this.aj.getWidth() + ":" + this.aj.getHeight());
-                            ((ImageButton) this.ai.findViewById(ThemePickerResources.C0155f.icon)).setImageBitmap(this.aj);
+                            ((ImageButton) this.ai.findViewById(ThemePickerResources.C0155ThemePickerResources.icon)).setImageBitmap(this.aj);
                         } else {
                             ThemePickerEvent.b("onActivityResult bitmap is null");
                         }

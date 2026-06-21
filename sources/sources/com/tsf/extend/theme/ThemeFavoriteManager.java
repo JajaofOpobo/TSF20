@@ -25,7 +25,7 @@ public class ThemeFavoriteManager {
         return a;
     }
 
-    private e() {
+    private ThemeFavoriteManager() {
     }
 
     private u b(Context context) {

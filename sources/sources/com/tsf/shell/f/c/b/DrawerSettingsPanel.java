@@ -53,21 +53,21 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         this.i = new com.censivn.C3DEngine.b.h.e.DockRenderer(com.censivn.C3DEngine.b.b.ScreenConstants.D, f, com.censivn.C3DEngine.b.b.ScreenConstants.D, f, f) { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.1
             @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void a(int i2) {
-                if (e.this.c(i2).c() == 0) {
-                    e.this.i.g();
+                if (DrawerSettingsPanel.this.c(i2).c() == 0) {
+                    DrawerSettingsPanel.this.i.g();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void b(int i2) {
-                e.this.d(i2);
-                if (e.this.c(i2).c() != 0) {
+                DrawerSettingsPanel.this.d(i2);
+                if (DrawerSettingsPanel.this.c(i2).c() != 0) {
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRenderer
             public void a() {
-                e.this.i.h();
+                DrawerSettingsPanel.this.i.h();
             }
         };
         int i2 = 0;
@@ -111,7 +111,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         }
         this.d.addChild(this.e);
         DrawerSettingsPanel();
-        a.C0084a c0084aB = this.f.b();
+        DrawerSettingsItemType.C0084a c0084aB = this.f.b();
         this.e.position().x = c0084aB.g;
         this.e.position().y = c0084aB.h;
         DrawerSettingsPanel();
@@ -177,7 +177,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         this.l = new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.3
             @Override // java.lang.Runnable
             public void run() {
-                e.this.i.a(1, true);
+                DrawerSettingsPanel.this.i.a(1, true);
             }
         };
     }
@@ -202,7 +202,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         DrawerSettingsPanel().a(f, this.c, this.c, this.b);
         this.i.a(DrawerSettingsConfig);
         this.i.a((-f) / 2.0f, (-com.censivn.C3DEngine.b.b.ScreenConstants.g) / 2.0f, f / 2.0f, com.censivn.C3DEngine.b.b.ScreenConstants.g);
-        a.C0084a c0084aB = this.f.b();
+        DrawerSettingsItemType.C0084a c0084aB = this.f.b();
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);
         if (this.g) {
             this.d.position().y = c0084aB.b;
@@ -328,14 +328,14 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         }
     }
 
-    public a.C0084a l() {
+    public DrawerSettingsItemType.C0084a l() {
         return this.f.b();
     }
 
     public void b(boolean z) {
         if (this.o) {
             this.o = false;
-            a.C0084a c0084aL = l();
+            DrawerSettingsItemType.C0084a c0084aL = l();
             float f = this.m ? 0.0f : com.censivn.C3DEngine.b.b.ScreenConstants.K;
             if (z) {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
@@ -346,7 +346,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
                 com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.4
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        e.this.i.visible(false);
+                        DrawerSettingsPanel.this.i.visible(false);
                     }
                 };
                 dVar2.h(c0084aL.j - f);
@@ -373,7 +373,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
     public void c(boolean z) {
         if (!this.o) {
             this.o = true;
-            a.C0084a c0084aL = l();
+            DrawerSettingsItemType.C0084a c0084aL = l();
             this.i.visible(true);
             if (z) {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
@@ -412,15 +412,15 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    e.this.d.visible(false);
+                    DrawerSettingsPanel.this.d.visible(false);
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void c() {
-                    e.this.d.visible(false);
+                    DrawerSettingsPanel.this.d.visible(false);
                 }
             };
-            a.C0084a c0084aL = l();
+            DrawerSettingsItemType.C0084a c0084aL = l();
             dVar.f(c0084aL.c);
             dVar.h(c0084aL.d);
             dVar.a(0);
@@ -435,22 +435,22 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.c.b.DrawerSettingsPanel.6
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    e.this.d.mouseEnabled(true);
-                    if (!e.this.m) {
-                        com.tsf.shell.manager.app.StateManager.b(e.this.j);
+                    DrawerSettingsPanel.this.d.mouseEnabled(true);
+                    if (!DrawerSettingsPanel.this.m) {
+                        com.tsf.shell.manager.app.StateManager.b(DrawerSettingsPanel.this.j);
                     }
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void c() {
-                    e.this.d.mouseEnabled(true);
-                    if (!e.this.m) {
-                        com.tsf.shell.manager.app.StateManager.b(e.this.j);
+                    DrawerSettingsPanel.this.d.mouseEnabled(true);
+                    if (!DrawerSettingsPanel.this.m) {
+                        com.tsf.shell.manager.app.StateManager.b(DrawerSettingsPanel.this.j);
                     }
                 }
             };
             this.d.mouseEnabled(false);
-            a.C0084a c0084aB = this.f.b();
+            DrawerSettingsItemType.C0084a c0084aB = this.f.b();
             dVar.f(c0084aB.a);
             dVar.h(c0084aB.b);
             dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
@@ -465,7 +465,7 @@ public class DrawerSettingsPanel implements com.censivn.C3DEngine.b.c.WindowMana
         b bVarA = null;
         for (int i = 0; i < 3 && (bVarA = ((DrawerSettingsItemType) this.i.getChildAt(i)).a(iVar)) == null; i++) {
         }
-        a.C0084a c0084aB = this.f.b();
+        DrawerSettingsItemType.C0084a c0084aB = this.f.b();
         float f = bVarA.a + c0084aB.a + c0084aB.e;
         float f2 = c0084aB.f + bVarA.b + c0084aB.b;
         this.h.a(bVarA);

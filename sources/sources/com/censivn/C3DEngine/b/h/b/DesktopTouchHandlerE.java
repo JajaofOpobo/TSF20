@@ -25,7 +25,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         return true;
     }
 
-    public e() {
+    public DesktopTouchHandlerE() {
         setMouseEventListener(this.e);
         this.a = new BaseRenderable();
         addChild(this.a);

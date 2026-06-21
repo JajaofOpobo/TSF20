@@ -130,23 +130,23 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                 this.B = new Runnable() { // from class: com.tsf.shell.f.c.a.b.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        int iA = b.this.r.n.a(b.this.l, b.this.children(), b.this.children().size(), b.this.c, b.this.e, b.this.d, b.this.q, b.this.D.x, b.this.D.y);
+                        int iA = DrawerMenuPanel.this.r.n.a(DrawerMenuPanel.this.l, DrawerMenuPanel.this.children(), DrawerMenuPanel.this.children().size(), DrawerMenuPanel.this.c, DrawerMenuPanel.this.e, DrawerMenuPanel.this.d, DrawerMenuPanel.this.q, DrawerMenuPanel.this.D.x, DrawerMenuPanel.this.D.y);
                         if (iA == -3 || iA == -4) {
-                            b.this.a((com.tsf.shell.f.i.PageItem) null);
-                            b.this.c();
-                            b.this.x = true;
+                            DrawerMenuPanel.this.a((com.tsf.shell.f.i.PageItem) null);
+                            DrawerMenuPanel.this.c();
+                            DrawerMenuPanel.this.x = true;
                         } else if (iA == -1 || iA == -2) {
-                            b.this.r.n();
-                            b.this.a((com.tsf.shell.f.i.PageItem) null);
+                            DrawerMenuPanel.this.r.n();
+                            DrawerMenuPanel.this.a((com.tsf.shell.f.i.PageItem) null);
                         } else {
-                            if (!b.this.r.r()) {
-                                b.this.r.m();
+                            if (!DrawerMenuPanel.this.r.r()) {
+                                DrawerMenuPanel.this.r.m();
                             }
-                            b.this.a((com.tsf.shell.f.i.PageItem) b.this.children().get(iA));
+                            DrawerMenuPanel.this.a((com.tsf.shell.f.i.PageItem) DrawerMenuPanel.this.children().get(iA));
                         }
-                        b.this.n = false;
-                        b.this.setAnimationObjectState(true);
-                        b.this.invalidate();
+                        DrawerMenuPanel.this.n = false;
+                        DrawerMenuPanel.this.setAnimationObjectState(true);
+                        DrawerMenuPanel.this.invalidate();
                     }
                 };
             }
@@ -224,7 +224,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.a.b.5
             @Override // java.lang.Runnable
             public void run() {
-                b.this.removeChild(cVar);
+                DrawerMenuPanel.this.removeChild(cVar);
             }
         };
         if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
@@ -249,7 +249,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                 f = 150.0f;
             }
             iVar.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
+            com.censivn.C3DEngine.b.g._c.orbit.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.orbit.OrbitTween(iVar, (i / 3) + 1, f) { // from class: com.tsf.shell.f.c.a.b.6
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     iVar.visible(false);
@@ -290,7 +290,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
                     }
                     iVar.visible(true);
                     iVar.mouseEnabled(false);
-                    com.censivn.C3DEngine.b.g._c.a.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.a.OrbitTween(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
+                    com.censivn.C3DEngine.b.g._c.orbit.OrbitTween aVar = new com.censivn.C3DEngine.b.g._c.orbit.OrbitTween(iVar, (i2 / 3) + 1, (float) (20.0d + (Math.random() * 120.0d))) { // from class: com.tsf.shell.f.c.a.b.7
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             iVar.mouseEnabled(true);
@@ -527,13 +527,13 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     }
 
     private int a(i iVar, Number3d number3d) {
-        Number3d.TEMPNUMBER3D.reset();
-        iVar.localToGlobal(Number3d.TEMPNUMBER3D);
-        return a(Number3d.TEMPNUMBER3D.x, Number3d.TEMPNUMBER3D.y, number3d);
+        Number3DrawerState.TEMPNUMBER3DrawerState.reset();
+        iVar.localToGlobal(Number3DrawerState.TEMPNUMBER3D);
+        return a(Number3DrawerState.TEMPNUMBER3D.x, Number3DrawerState.TEMPNUMBER3D.y, number3d);
     }
 
     private int a(float f, float f2, Number3d number3d) {
-        number3d.setAll(f, f2, 0.0f);
+        number3DrawerState.setAll(f, f2, 0.0f);
         globalToLocal(number3d);
         if (children().size() == 0) {
             return 0;
@@ -707,9 +707,9 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         this.J = new Runnable() { // from class: com.tsf.shell.f.c.a.b.8
             @Override // java.lang.Runnable
             public void run() {
-                b.this.I = false;
+                DrawerMenuPanel.this.I = false;
                 final String str = "";
-                for (i iVar : b.this.children()) {
+                for (i iVar : DrawerMenuPanel.this.children()) {
                     str = iVar instanceof com.tsf.shell.f.i.PageItem ? str + ((com.tsf.shell.f.i.PageItem) iVar).K().id + "," : str;
                 }
                 com.censivn.C3DEngine.C3DEngine.a().d(new Runnable() { // from class: com.tsf.shell.f.c.a.b.8.1

@@ -54,7 +54,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     private static final FrameLayout.LayoutParams n = new FrameLayout.LayoutParams(-1, -1);
     public static String[] j = {"new", "hot", "diy", "category"};
 
-    public m(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
+    public ThemeListView(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
         com.tsf.extend.base.d.BaseDataProvider.b bVar;
         super(context);
         this.e = false;

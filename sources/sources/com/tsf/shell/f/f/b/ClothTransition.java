@@ -74,13 +74,13 @@ public class ClothTransition extends ItemPageTransition {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.a.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f2) {
-                        a.this.b.c(255.0f * f2);
-                        a.this.a.position().z = f + (((-300.0f) - f) * f2);
+                        ClothTransition.this.b.c(255.0f * f2);
+                        ClothTransition.this.a.position().z = f + (((-300.0f) - f) * f2);
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        a.this.h = true;
+                        ClothTransition.this.h = true;
                     }
                 };
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);
@@ -96,13 +96,13 @@ public class ClothTransition extends ItemPageTransition {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.a.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
-                    a.this.b.c((1.0f - f3) * 255.0f);
-                    a.this.a.position().z = f2 + ((0.0f - f2) * f3);
+                    ClothTransition.this.b.c((1.0f - f3) * 255.0f);
+                    ClothTransition.this.a.position().z = f2 + ((0.0f - f2) * f3);
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    a.this.h = true;
+                    ClothTransition.this.h = true;
                 }
             };
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.g);

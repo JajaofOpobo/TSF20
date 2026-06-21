@@ -1,6 +1,6 @@
 package com.tsf.shell.theme.inside.mix.menu.item;
 
-import com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable;
+import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
 import com.tsf.shell.f.e.CircleDotNode;
 import com.tsf.shell.manager.o.ButtonPresetManager;
 

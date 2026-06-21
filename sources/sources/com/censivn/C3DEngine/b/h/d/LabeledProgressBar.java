@@ -9,7 +9,7 @@ public class LabeledProgressBar extends ProgressBarWidget {
     private int b;
     private float c;
 
-    public c(float f, int i, float f2) {
+    public LabeledProgressBar(float f, int i, float f2) {
         super(f, i, f2);
         this.b = 0;
         this.a = new LabelRenderable();

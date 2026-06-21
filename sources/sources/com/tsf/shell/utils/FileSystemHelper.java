@@ -55,7 +55,7 @@ public class FileSystemHelper {
         try {
             fileOutputStream = new FileOutputStream(file);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             fileOutputStream = null;
         }
         if (fileOutputStream != null) {
@@ -102,7 +102,7 @@ public class FileSystemHelper {
         try {
             fileOutputStream = new FileOutputStream(file);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             fileOutputStream = null;
         }
         if (fileOutputStream != null) {
@@ -123,7 +123,7 @@ public class FileSystemHelper {
         try {
             fileOutputStream = new FileOutputStream(file);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             fileOutputStream = null;
         }
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);

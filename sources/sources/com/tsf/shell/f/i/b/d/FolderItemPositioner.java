@@ -33,7 +33,7 @@ public class FolderItemPositioner implements e.a {
     public static float Q;
     public static float R;
     public static float S;
-    private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable Z;
+    private static com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable Z;
     public com.censivn.C3DEngine.b.f.BaseRenderable E;
     public com.censivn.C3DEngine.b.f.BaseRenderable F;
     public com.censivn.C3DEngine.b.f.BaseRenderable G;
@@ -81,7 +81,7 @@ public class FolderItemPositioner implements e.a {
             @Override // com.censivn.C3DEngine.b.e.DesktopPanelRenderer
             public void g() {
                 super.g();
-                j.this.b();
+                WidgetItemPositioner.this.b();
             }
         };
         FolderItemPositioner();
@@ -142,7 +142,7 @@ public class FolderItemPositioner implements e.a {
         this.T = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                j.this.I.visible(false);
+                WidgetItemPositioner.this.I.visible(false);
             }
         };
         this.T.a(0);
@@ -287,10 +287,10 @@ public class FolderItemPositioner implements e.a {
         if (c().folder.sizePlaneEnable) {
             i2++;
         }
-        Z = new com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable(i2 + c().folder.sampleCount, 0, 0);
+        Z = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(i2 + c().folder.sampleCount, 0, 0);
         Z.useVBO(false);
         if (c().folder.backPlaneEnable) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = Z.a(0);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = Z.a(0);
             bVarA.b(c().folder.backPlaneWidth);
             bVarA.d(c().folder.backPlaneHeight);
             bVarA.m.x = c().folder.backPlaneX;
@@ -300,7 +300,7 @@ public class FolderItemPositioner implements e.a {
             i = 0;
         }
         if (c().folder.frontPlaneEnable) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = Z.a(FolderItemDotIndicator);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = Z.a(FolderItemDotIndicator);
             bVarA2.b(c().folder.frontPlaneWidth);
             bVarA2.d(c().folder.frontPlaneHeight);
             bVarA2.m.x = c().folder.frontPlaneX;
@@ -309,7 +309,7 @@ public class FolderItemPositioner implements e.a {
             i++;
         }
         if (c().folder.sizePlaneEnable) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA3 = Z.a(FolderItemDotIndicator);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA3 = Z.a(FolderItemDotIndicator);
             bVarA3.b(c().folder.sizePlaneWidth);
             bVarA3.d(c().folder.sizePlaneHeight);
             bVarA3.m.x = c().folder.sizePlaneX;
@@ -321,7 +321,7 @@ public class FolderItemPositioner implements e.a {
         float f2 = com.tsf.shell.manager.o.ButtonPresetManager.a.I;
         for (int i3 = 0; i3 < c().folder.sampleCount; i3++) {
             ThemeFolderDescription.SystemFolderChild systemFolderChild = c().folder.getSampleInformaiton().get(i3);
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA4 = Z.a(FolderItemDotIndicator);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA4 = Z.a(FolderItemDotIndicator);
             bVarA4.b(FolderItemBackground);
             bVarA4.d(f2);
             bVarA4.m.x = systemFolderChild.position.x + c().folder.childContainerX;
@@ -338,7 +338,7 @@ public class FolderItemPositioner implements e.a {
         Z.minY();
         Z.maxX();
         Z.maxY();
-        com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA5 = Z.a(FolderItemDotIndicator);
+        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA5 = Z.a(FolderItemDotIndicator);
         bVarA5.b(c().folder.textPlaneWidth);
         bVarA5.d(c().folder.textPlaneHeight);
         bVarA5.m.x = c().folder.textPlaneX;
@@ -413,7 +413,7 @@ public class FolderItemPositioner implements e.a {
             public void a(MotionEvent motionEvent) {
                 com.tsf.shell.utils.HapticFeedbackManager.b();
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    j.this.a(com.tsf.shell.f.i.b.d.FolderShortcutItem.k);
+                    WidgetItemPositioner.this.a(com.tsf.shell.f.i.b.d.FolderShortcutItem.k);
                 }
             }
         };
@@ -465,7 +465,7 @@ public class FolderItemPositioner implements e.a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderItemPositioner.6
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    j.this.E.visible(false);
+                    WidgetItemPositioner.this.E.visible(false);
                 }
             };
             dVar.a(0);

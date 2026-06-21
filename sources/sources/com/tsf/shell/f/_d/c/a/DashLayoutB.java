@@ -19,13 +19,13 @@ public class DashLayoutB extends DashLayoutContainer {
     }
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
-    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
+    public void a(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, Runnable runnable) {
         float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f);
         float fA2 = com.censivn.C3DEngine.b.b.ScreenConstants.a(110.0f);
         float f = fA2 / 3.0f;
         float f2 = fA2 / 2.0f;
         for (int i = 0; i < 4; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = aVar.a(i);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             if (i == 3) {
                 dVar.a(runnable);
@@ -45,9 +45,9 @@ public class DashLayoutB extends DashLayoutContainer {
     }
 
     @Override // com.tsf.shell.f._d.c.a.DashLayoutContainer
-    public void b(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, Runnable runnable) {
+    public void b(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, Runnable runnable) {
         for (int i = 0; i < 4; i++) {
-            com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = aVar.a(i);
+            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = aVar.a(i);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.l(0.0f);
             dVar.m(0.0f);

@@ -135,7 +135,7 @@ public final class ThemeUtilsManager implements Closeable {
         if (i2 <= 0) {
             throw new IllegalArgumentException("valueCount <= 0");
         }
-        b bVar = new b(file, i, i2, j);
+        b bVar = new ThemeUtilsManager(file, i, i2, j);
         if (bVar.c.exists()) {
             try {
                 bVar.d();
@@ -147,7 +147,7 @@ public final class ThemeUtilsManager implements Closeable {
             }
         }
         file.mkdirs();
-        b bVar2 = new b(file, i, i2, j);
+        b bVar2 = new ThemeUtilsManager(file, i, i2, j);
         bVar2.f();
         return bVar2;
     }

@@ -12,7 +12,7 @@ public class LittleEndianInputStream extends InputStream implements DataInput {
     private InputStream b;
     private byte[] c = new byte[8];
 
-    public c(InputStream inputStream) {
+    public LittleEndianInputStream(InputStream inputStream) {
         this.b = inputStream;
         this.a = new DataInputStream(inputStream);
     }

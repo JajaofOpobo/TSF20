@@ -74,7 +74,7 @@ public class AnimationNode extends BaseRenderable {
         this.i = new MeshRenderer(this) { // from class: com.tsf.shell.f.e.c.a.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
-                a.this.onKillFocus();
+                AnimationNode.this.onKillFocus();
             }
         };
         this.i.textures().addElement(this.k);
@@ -155,7 +155,7 @@ public class AnimationNode extends BaseRenderable {
         d dVar = new d() { // from class: com.tsf.shell.f.e.c.a.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.a.visible(false);
+                AnimationNode.this.a.visible(false);
             }
         };
         dVar.l(0.0f);

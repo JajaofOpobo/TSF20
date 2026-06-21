@@ -55,7 +55,7 @@ public class WidgetSummaryActivity extends Activity implements MediaPlayer.OnPre
             return;
         }
         setRequestedOrientation(1);
-        setContentView(SummaryManager.C0153c.activity_main_widget_summary);
+        setContentView(SummaryManager.C0153SummaryManager.activity_main_widget_summary);
         if (string != null) {
             ((TextView) findViewById(SummaryManager.b.textView1)).setText(string);
         }

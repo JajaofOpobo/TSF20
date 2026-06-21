@@ -27,8 +27,8 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
         this.d = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (d.this.a.id == 0) {
-                    com.censivn.C3DEngine.C3DEngine.g().a(d.this.a, b.d.scrollcontainer_arrow);
+                if (SideMenuIndicator.this.a.id == 0) {
+                    com.censivn.C3DEngine.C3DEngine.g().a(SideMenuIndicator.this.a, b.d.scrollcontainer_arrow);
                 }
             }
         };
@@ -36,7 +36,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
         com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.d) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.2
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                d.this.f.l();
+                SideMenuIndicator.this.f.l();
             }
         };
         this.d.alpha(200.0f);
@@ -47,11 +47,11 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
         this.e = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(70.0f), z) { // from class: com.tsf.shell.manager.m.SideMenuIndicator.3
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                if (d.this.b.id == 0) {
-                    com.censivn.C3DEngine.C3DEngine.g().a(d.this.b, b.d.side_menu_add_button);
+                if (SideMenuIndicator.this.b.id == 0) {
+                    com.censivn.C3DEngine.C3DEngine.g().a(SideMenuIndicator.this.b, b.d.side_menu_add_button);
                 }
-                float fSin = 0.8f + ((float) (Math.sin(d.this.h) * 0.20000000298023224d));
-                d.this.h += d.this.g;
+                float fSin = 0.8f + ((float) (Math.sin(SideMenuIndicator.this.h) * 0.20000000298023224d));
+                SideMenuIndicator.this.h += SideMenuIndicator.this.g;
                 scale().setAll(fSin, fSin, 1.0f);
             }
         };
@@ -86,7 +86,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
-                    d.this.d.rotation().z = f2 + ((f - f2) * f3);
+                    SideMenuIndicator.this.d.rotation().z = f2 + ((f - f2) * f3);
                 }
             };
             dVar.a(com.censivn.C3DEngine.b.g.a.e);
@@ -124,7 +124,7 @@ public class SideMenuIndicator extends com.tsf.shell.f.e.e.ItemLayoutItem {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.m.SideMenuIndicator.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    d.this.c.visible(false);
+                    SideMenuIndicator.this.c.visible(false);
                 }
             };
             dVar.a(0);

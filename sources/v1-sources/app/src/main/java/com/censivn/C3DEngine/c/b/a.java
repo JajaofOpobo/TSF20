@@ -48,7 +48,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
         this.g = f;
         float f2 = f * 0.5f;
         for (int i = 0; i < size; i++) {
-            ((com.censivn.C3DEngine.c.a.a.SpringConstraint) this.c.get(i)).a(f2);
+            ((com.censivn.C3DEngine.c.a.spring.SpringConstraint) this.c.get(i)).a(f2);
         }
     }
 
@@ -67,7 +67,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
     public final void c() {
         int size = this.b.size();
         for (int i = 0; i < size; i++) {
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) this.b.get(i);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) this.b.get(i);
             bVar.d = true;
             bVar.e = true;
             bVar.f = true;
@@ -94,7 +94,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
         float d;
         int size = this.b.size();
         for (int i = 0; i < size; i++) {
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) this.b.get(i);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) this.b.get(i);
             if (str.equals("x")) {
                 d = bVar.b();
             } else if (str.equals("y")) {
@@ -118,7 +118,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
         this.b = new ArrayList();
         for (int i = 0; i < size; i++) {
             e eVar = (e) a.get(i);
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = new com.censivn.C3DEngine.c.a.a.DampedSpringConstraint(eVar);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = new com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint(eVar);
             eVar.a(bVar);
             this.b.add(bVar);
         }
@@ -130,11 +130,11 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
     public final void a() {
         int size = this.c.size();
         for (int i = 0; i < size; i++) {
-            ((com.censivn.C3DEngine.c.a.a.SpringConstraint) this.c.get(i)).a();
+            ((com.censivn.C3DEngine.c.a.spring.SpringConstraint) this.c.get(i)).a();
         }
         int size2 = this.b.size();
         for (int i2 = 0; i2 < size2; i2++) {
-            com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) this.b.get(i2);
+            com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) this.b.get(i2);
             if (bVar.d) {
                 bVar.a(bVar.b() + this.d);
             }
@@ -173,7 +173,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
         int size = b.size();
         this.c = new ArrayList();
         for (int i = 0; i < size; i++) {
-            ArrayList a = ((com.censivn.C3DEngine.c.a.a) b.get(i)).a();
+            ArrayList a = ((com.censivn.C3DEngine.c.a.spring) b.get(i)).a();
             int size2 = a.size();
             for (int i2 = 0; i2 < size2 - 1; i2++) {
                 a(((e) a.get(i2)).f(), ((e) a.get(i2 + 1)).f());
@@ -185,7 +185,7 @@ public final class a extends d implements com.censivn.C3DEngine.c.b {
         }
     }
 
-    private void a(com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar, com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2) {
-        this.c.add(new com.censivn.C3DEngine.c.a.a.SpringConstraint(bVar, bVar2, bVar.a(bVar2), this.g));
+    private void a(com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar, com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2) {
+        this.c.add(new com.censivn.C3DEngine.c.a.spring.SpringConstraint(bVar, bVar2, bVar.a(bVar2), this.g));
     }
 }

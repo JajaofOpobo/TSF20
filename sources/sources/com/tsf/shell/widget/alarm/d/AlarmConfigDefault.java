@@ -18,7 +18,7 @@ public class AlarmConfigDefault extends AlarmConfigBase {
     public boolean k = true;
 
     public void b() {
-        for (Field field : c.class.getDeclaredFields()) {
+        for (Field field : AlarmConfigDefault.class.getDeclaredFields()) {
             i.a(field.getName());
             try {
                 Object obj = field.get(this);

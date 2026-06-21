@@ -21,13 +21,13 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
         super(str);
         this.g = AppWidgetManager.getInstance(com.censivn.C3DEngine.C3DEngine.d());
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
-        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_tsf, x.c(b.i.group_tsf_widget), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.1
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a
             public boolean a() {
                 return WidgetPanelToggle.this.e == WidgetPanelToggle.this.c;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a
             public void b() {
                 WidgetPanelToggle.this.a(WidgetPanelToggle.this.c, true);
                 WidgetPanelToggle.this.b.a();
@@ -35,13 +35,13 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
         });
         com.tsf.shell.manager.r.c.WidgetFeatureConfig.e = c0095a;
         this.a = c0095a;
-        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.2
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a c0095a2 = new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(b.d.widget_menu_widget_system, x.c(b.i.group_system_widgets), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.2
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a
             public boolean a() {
                 return WidgetPanelToggle.this.e == WidgetPanelToggle.this.d;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetProviderInfoBar.C0096a
             public void b() {
                 if (com.tsf.shell.utils.StatusBarHelper.b) {
                     WidgetPanelToggle.this.a(WidgetPanelToggle.this.d, true);
@@ -120,7 +120,7 @@ public class WidgetPanelToggle extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
     public boolean a(com.tsf.shell.f.i.c.ItemLabelProvider eVar, float f, float f2) {
         if (eVar instanceof com.tsf.shell.f.i.c.ItemGroupBase) {
-            com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((com.tsf.shell.f.i.c.ItemGroupBase) eVar, f, f2, new a.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.4
+            com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.a((com.tsf.shell.f.i.c.ItemGroupBase) eVar, f, f2, new WidgetProviderInfoBar.AbstractC0146a() { // from class: com.tsf.shell.manager.r.b.c.WidgetPanelToggle.4
                 @Override // com.tsf.shell.manager.r.c.a.WidgetInstantiator.AbstractC0146a
                 public void a(ItemInfo itemInfo) {
                 }

@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.api.tween.VTweenParam;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SceneComponentD extends VObject3dContainer {
     private b g;
-    public a a = new a();
+    public a a = new SceneComponentA();
     private float c = 0.0f;
     private float d = 0.8f;
     private int e = 0;

@@ -33,7 +33,7 @@ public class BitmapCacheHelper {
         return d;
     }
 
-    private a() {
+    private BitmapCacheHelper() {
         this.b = null;
         this.c = null;
         Context contextB = h.b();

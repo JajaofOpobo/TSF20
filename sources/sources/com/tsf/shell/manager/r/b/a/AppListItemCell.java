@@ -14,18 +14,18 @@ public class AppListItemCell extends com.tsf.shell.f.i.b.e.DrawerShortcutItemBas
         this.p = false;
         if (a == null) {
             a = new GridRenderable(64.0f, 64.0f, 1, 1, true);
-            a.position().x = 32.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
-            a.position().y = 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+            AppListPanel.position().x = 32.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
+            AppListPanel.position().y = 40.0f * com.censivn.C3DEngine.b.b.ScreenConstants.a;
             b = new TextureElement(0, false);
-            a.textures().addElementWithoutVerify(b);
+            AppListPanel.textures().addElementWithoutVerify(b);
         }
     }
 
     @Override // com.tsf.shell.f.i.b.e.DrawerShortcutItemBase, com.tsf.shell.f.i.ShortcutItem, com.censivn.C3DEngine.b.f.BaseRenderable
     public void onDrawChildEnd() {
         if (this.p) {
-            b.id = f.id;
-            a.dispatchDraw();
+            AppSelectionIndicatorBar.id = f.id;
+            AppListPanel.dispatchDraw();
         }
     }
 

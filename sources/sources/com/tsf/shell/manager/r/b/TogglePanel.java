@@ -33,7 +33,7 @@ public class TogglePanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             public i a(int i, i iVar) {
                 A aVar2;
                 if (iVar == null) {
-                    aVar2 = TogglePanel.this.new A();
+                    aVar2 = TogglePanel.this.new WidgetMenuPanel();
                 } else {
                     aVar2 = (A) iVar;
                 }

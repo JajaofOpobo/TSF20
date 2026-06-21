@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class ThemeDatabaseHelper extends SQLiteOpenHelper {
     private static Object a = new Object();
 
-    public u(Context context) {
+    public ThemeDatabaseHelper(Context context) {
         super(context, "theme.db", (SQLiteDatabase.CursorFactory) null, 1);
     }
 

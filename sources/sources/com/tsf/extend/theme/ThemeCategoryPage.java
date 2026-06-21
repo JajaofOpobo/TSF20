@@ -13,7 +13,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeCategoryPage extends ThemeListView {
-    public z(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
+    public ThemeCategoryPage(Context context, PageActivity pageActivity, String str, PersonalizationActivity.i iVar) {
         super(context, pageActivity, str, iVar);
     }
 

@@ -10,13 +10,13 @@ public class HapticFeedbackManager {
 
     public static void a() {
         if (com.tsf.shell.manager.b.ConfigManager.ae()) {
-            b.vibrate(8L);
+            OEMComponentResolver.vibrate(8L);
         }
     }
 
     public static void a(int i) {
         if (com.tsf.shell.manager.b.ConfigManager.ae()) {
-            b.vibrate(i);
+            OEMComponentResolver.vibrate(i);
         }
     }
 

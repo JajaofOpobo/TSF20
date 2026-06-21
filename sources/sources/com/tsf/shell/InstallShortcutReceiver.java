@@ -18,7 +18,7 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
         if ("com.android.launcher.action.INSTALL_SHORTCUT".equals(intent.getAction())) {
             try {
                 com.tsf.shell.manager.l.ShortcutManager aVar = com.tsf.shell.manager.app.PositionAnimator.a;
-                com.tsf.shell.manager.l.ShortcutManager.a(intent, (a.C0130a) null);
+                com.tsf.shell.manager.l.ShortcutManager.a(intent, (ShellCoreInterface.C0130a) null);
             } catch (Exception e) {
             }
         }

@@ -7,7 +7,7 @@ public class EngineController implements com.censivn.C3DEngine.d.UpdateCallback 
     public SceneGraph a = new SceneGraph();
     public TouchDispatcher b;
 
-    public f(GLSurfaceView gLSurfaceView, String str) {
+    public EngineController(GLSurfaceView gLSurfaceView, String str) {
         this.b = new TouchDispatcher(gLSurfaceView);
         this.a.a(true);
         RendererImpl rendererImpl = new RendererImpl(this, gLSurfaceView) { // from class: com.censivn.C3DEngine.a.EngineController.1

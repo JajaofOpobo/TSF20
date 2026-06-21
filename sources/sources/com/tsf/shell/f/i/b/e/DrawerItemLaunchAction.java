@@ -19,7 +19,7 @@ public class DrawerItemLaunchAction extends DrawerShortcutItemBase {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i.b.e.DrawerItemLaunchAction.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    i.this.k();
+                    DrawerItemLaunchAction.this.k();
                 }
             });
         }

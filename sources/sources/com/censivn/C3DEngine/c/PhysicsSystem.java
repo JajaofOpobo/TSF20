@@ -9,7 +9,7 @@ public class PhysicsSystem {
     c a = new c();
     ArrayList<B> b;
 
-    public A(i iVar) {
+    public PhysicsSystem(i iVar) {
         this.a.a(iVar);
         this.a.c();
         this.b = new ArrayList<>();

@@ -12,7 +12,7 @@ public class ClassificationDatabase extends SQLiteOpenHelper {
 
     public static c a(Context context) {
         if (c == null) {
-            c = new c(context);
+            c = new ClassificationDatabase(context);
         }
         return c;
     }

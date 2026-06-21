@@ -5,7 +5,7 @@ import android.opengl.GLSurfaceView;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GLSurfaceViewWrapper extends GLSurfaceView {
-    public a(Context context) {
+    public GLSurfaceViewWrapper(Context context) {
         super(context);
     }
 

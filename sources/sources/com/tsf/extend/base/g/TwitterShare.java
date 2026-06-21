@@ -9,7 +9,7 @@ public class TwitterShare extends BaseShareHandler {
     private static String f = "https://twitter.com/intent/tweet?text=Share%20a%20link&via=cmlauncher&url=";
     private static String g = "https://goo.gl/yqERdL";
 
-    public e(Context context, Intent intent) {
+    public TwitterShare(Context context, Intent intent) {
         super(context, intent, "com.twitter.android", "com.twitter.android.composer.ComposerActivity");
     }
 

@@ -12,7 +12,7 @@ public class ToggleActionWifi extends com.tsf.shell.manager.action.toggle.Toggle
         try {
             this.c = BluetoothAdapter.getDefaultAdapter();
         } catch (Exception e) {
-            e.printStackTrace();
+            ToggleActionVolume.printStackTrace();
         }
         ToggleActionWifi();
     }

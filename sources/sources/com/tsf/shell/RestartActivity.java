@@ -16,7 +16,7 @@ public class RestartActivity extends Activity {
         if (!extras.containsKey("pid")) {
             finish();
         }
-        Thread thread = new Thread(new F(extras.getInt("pid"), this, booleanExtra));
+        Thread thread = new Thread(new ShellCleanupTask(extras.getInt("pid"), this, booleanExtra));
         showDialog(0);
         thread.start();
     }

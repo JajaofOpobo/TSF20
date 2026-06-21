@@ -58,16 +58,16 @@ public class DrawerAnimParamLeft extends DrawerAnimConfig {
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public Number3d c() {
-        Number3d.TEMPNUMBER3D.x = iVar.position().x;
-        Number3d.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.ScreenConstants.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.ScreenConstants.K;
-        return Number3d.TEMPNUMBER3D;
+        Number3DrawerAnimParamLeft.TEMPNUMBER3D.x = iVar.position().x;
+        Number3DrawerAnimParamLeft.TEMPNUMBER3D.y = (com.censivn.C3DEngine.b.b.ScreenConstants.C - com.tsf.shell.f.c.a.DrawerContentPanel.b) - com.censivn.C3DEngine.b.b.ScreenConstants.K;
+        return Number3DrawerAnimParamLeft.TEMPNUMBER3D;
     }
 
     @Override // com.tsf.shell.f.c.a.a.DrawerAnimConfig
     public Number3d d() {
-        Number3d.TEMPNUMBER3D.x = iVar.position().x;
-        Number3d.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.ScreenConstants.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
-        return Number3d.TEMPNUMBER3D;
+        Number3DrawerAnimParamLeft.TEMPNUMBER3D.x = iVar.position().x;
+        Number3DrawerAnimParamLeft.TEMPNUMBER3D.y = com.censivn.C3DEngine.b.b.ScreenConstants.C + com.tsf.shell.f.c.a.DrawerContentPanel.a;
+        return Number3DrawerAnimParamLeft.TEMPNUMBER3D;
     }
 
     public float a(com.tsf.shell.f.c.a.DrawerState dVar, com.censivn.C3DEngine.b.f.IRenderable iVar, float f) {

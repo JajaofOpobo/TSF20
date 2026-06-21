@@ -68,24 +68,24 @@ public class AlarmSettingButton extends VRectangle {
 
         public B(VObject3d vObject3d) {
             this.c = vObject3d;
-            VTween.killTween(q.this);
-            VTween.to(q.this, 1000, this);
+            VTween.killTween(AlarmSettingButton.this);
+            VTween.to(AlarmSettingButton.this, 1000, this);
         }
 
         @Override // com.censivn.C3DEngine.api.tween.VTweenParam
         public void onComplete() {
-            synchronized (q.this.e) {
-                if (!q.this.b.isRecycled()) {
-                    q.this.textures().removeAll();
-                    AlarmWidget.c.deleteTexture(q.this.a);
-                    q.this.a = AlarmWidget.c.createTexture(q.this.b, true);
-                    q.this.a(q.this.a.width, q.this.a.height);
-                    q.this.textures().addElement(q.this.a);
-                    q.this.b.recycle();
+            synchronized (AlarmSettingButton.this.e) {
+                if (!AlarmSettingButton.this.b.isRecycled()) {
+                    AlarmSettingButton.this.textures().removeAll();
+                    AlarmWidget.c.deleteTexture(AlarmSettingButton.this.a);
+                    AlarmSettingButton.this.a = AlarmWidget.c.createTexture(AlarmSettingButton.this.b, true);
+                    AlarmSettingButton.this.a(AlarmSettingButton.this.a.width, AlarmSettingButton.this.a.height);
+                    AlarmSettingButton.this.textures().addElement(AlarmSettingButton.this.a);
+                    AlarmSettingButton.this.b.recycle();
                 } else {
                     AlarmState.c("=========ERROR BITMAP IS RECYCLE=====");
                 }
-                q.this.new AlarmContainer(this.c);
+                AlarmSettingButton.this.new AlarmContainer(this.c);
             }
         }
 
@@ -100,8 +100,8 @@ public class AlarmSettingButton extends VRectangle {
                 this.a = true;
             }
             float fSin = (float) Math.sin(((double) f) * 3.141592653589793d * 1.5d);
-            q.this.position().spZ(((float) Math.cos(((double) f) * 3.141592653589793d)) * 80.0f);
-            q.this.position().spY((fSin * 160.0f) + 175.0f);
+            AlarmSettingButton.this.position().spZ(((float) Math.cos(((double) f) * 3.141592653589793d)) * 80.0f);
+            AlarmSettingButton.this.position().spY((fSin * 160.0f) + 175.0f);
         }
     }
 
@@ -125,8 +125,8 @@ public class AlarmSettingButton extends VRectangle {
         public A(VObject3d vObject3d) {
             this.c = vObject3d;
             setEase(300);
-            VTween.killTween(q.this);
-            VTween.to(q.this, 2000, this);
+            VTween.killTween(AlarmSettingButton.this);
+            VTween.to(AlarmSettingButton.this, 2000, this);
         }
 
         @Override // com.censivn.C3DEngine.api.tween.VTweenParam
@@ -141,8 +141,8 @@ public class AlarmSettingButton extends VRectangle {
             }
             float f2 = 1.0f - f;
             float fSin = (float) Math.sin(((double) f2) * 3.141592653589793d);
-            q.this.position().spZ(((float) Math.cos(((double) f2) * 3.141592653589793d)) * 80.0f);
-            q.this.position().spY((fSin * 80.0f) + 175.0f);
+            AlarmSettingButton.this.position().spZ(((float) Math.cos(((double) f2) * 3.141592653589793d)) * 80.0f);
+            AlarmSettingButton.this.position().spY((fSin * 80.0f) + 175.0f);
         }
     }
 }

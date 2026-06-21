@@ -19,27 +19,27 @@ public class NotifierConnector {
     ServiceConnection b = new ServiceConnection() { // from class: com.tsf.shell.services.a.1
         @Override // android.content.ServiceConnection
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-            a.this.a = a.AbstractBinderC0166a.a(iBinder);
-            while (a.this.f.size() > 0) {
-                ((Runnable) a.this.f.remove(0)).run();
+            NotifierConnector.this.a = NotifierConnector.AbstractBinderC0166a.a(iBinder);
+            while (NotifierConnector.this.f.size() > 0) {
+                ((Runnable) NotifierConnector.this.f.remove(0)).run();
             }
         }
 
         @Override // android.content.ServiceConnection
         public void onServiceDisconnected(ComponentName componentName) {
-            a.this.a = null;
+            NotifierConnector.this.a = null;
         }
     };
     BroadcastReceiver c = new BroadcastReceiver() { // from class: com.tsf.shell.services.a.2
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
-            a.this.a(com.censivn.C3DEngine.C3DEngine.d(), new Runnable() { // from class: com.tsf.shell.services.a.2.1
+            NotifierConnector.this.a(com.censivn.C3DEngine.C3DEngine.d(), new Runnable() { // from class: com.tsf.shell.services.a.2.1
                 @Override // java.lang.Runnable
                 public void run() {
                     if (action.equals("com.tsf.shell.services.notifier.smsOnChange")) {
                         try {
-                            a.this.e.a(a.this.a.a());
+                            NotifierConnector.this.e.a(NotifierConnector.this.a.a());
                             return;
                         } catch (Exception e) {
                             return;
@@ -47,7 +47,7 @@ public class NotifierConnector {
                     }
                     if (action.equals("com.tsf.shell.services.notifier.misscallOnChange")) {
                         try {
-                            a.this.e.b(a.this.a.b());
+                            NotifierConnector.this.e.b(NotifierConnector.this.a.b());
                             return;
                         } catch (Exception e2) {
                             return;
@@ -55,7 +55,7 @@ public class NotifierConnector {
                     }
                     if (action.equals("com.tsf.shell.services.notifier.eventOnchange")) {
                         try {
-                            a.this.e.c(a.this.a.c());
+                            NotifierConnector.this.e.c(NotifierConnector.this.a.c());
                             return;
                         } catch (Exception e3) {
                             return;
@@ -63,17 +63,17 @@ public class NotifierConnector {
                     }
                     if (action.equals("com.tsf.shell.services.notifier.gmailOnchange")) {
                         try {
-                            a.this.e.d(a.this.a.d());
+                            NotifierConnector.this.e.d(NotifierConnector.this.a.d());
                         } catch (Exception e4) {
                         }
                     } else if (action.equals("com.tsf.shell.services.notifier.whatsappOnchange")) {
                         try {
-                            a.this.e.e(a.this.a.e());
+                            NotifierConnector.this.e.e(NotifierConnector.this.a.e());
                         } catch (Exception e5) {
                         }
                     } else if (action.equals("com.tsf.shell.services.notifier.handoutsOnchange")) {
                         try {
-                            a.this.e.f(a.this.a.f());
+                            NotifierConnector.this.e.f(NotifierConnector.this.a.f());
                         } catch (Exception e6) {
                         }
                     }

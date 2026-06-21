@@ -45,7 +45,7 @@ public class TextureElementH extends VObject3dContainer {
         addChild(this.c);
         addChild(this.d);
         addChild(this.a);
-        this.h = new a(this);
+        this.h = new TextureElementA(this);
         setMouseEventListener(this.h);
     }
 
@@ -72,7 +72,7 @@ public class TextureElementH extends VObject3dContainer {
             this.a.x = motionEvent.getX() - (VInformation.getScreenWidth() / 2.0f);
             this.a.y = 0.0f - (motionEvent.getY() - (screenHeight / 2.0f));
             this.a.z = 0.0f;
-            Number3d number3dGlobalToLocal = h.this.globalToLocal(this.a);
+            Number3d number3dGlobalToLocal = TextureElementH.this.globalToLocal(this.a);
             number3dGlobalToLocal.y -= 112.0f;
             return number3dGlobalToLocal;
         }
@@ -84,26 +84,26 @@ public class TextureElementH extends VObject3dContainer {
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onDown(MotionEvent motionEvent) {
             this.e = false;
-            h.this.d.a = 0.0f;
+            TextureElementH.this.d.a = 0.0f;
             Number3d number3dA = a(motionEvent);
             this.c = (float) Math.atan2(number3dA.y, number3dA.x);
-            this.b = h.this.d.b;
-            h.this.invalidate();
+            this.b = TextureElementH.this.d.b;
+            TextureElementH.this.invalidate();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onUp(MotionEvent motionEvent) {
             if (!this.e) {
-                h.this.d.a = 2.0E-4f;
-                h.this.invalidate();
+                TextureElementH.this.d.a = 2.0E-4f;
+                TextureElementH.this.invalidate();
             }
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             Number3d number3dA = a(motionEvent2);
-            h.this.d.c = (float) (((double) this.b) - Math.toDegrees((float) (((double) this.c) - ((double) ((float) Math.atan2(number3dA.y, number3dA.x))))));
-            h.this.invalidate();
+            TextureElementH.this.d.c = (float) (((double) this.b) - Math.toDegrees((float) (((double) this.c) - ((double) ((float) Math.atan2(number3dA.y, number3dA.x))))));
+            TextureElementH.this.invalidate();
         }
 
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
@@ -111,16 +111,16 @@ public class TextureElementH extends VObject3dContainer {
             this.e = true;
             float fSqrt = (float) ((Math.sqrt((f * f) + (f2 * f2)) / 2000.0d) * 5.0d);
             if (f > 0.0f) {
-                h.this.b.a += fSqrt;
-                h.this.c.a += fSqrt * 0.9f;
-                f fVar = h.this.d;
+                TextureElementH.this.b.a += fSqrt;
+                TextureElementH.this.c.a += fSqrt * 0.9f;
+                f fVar = TextureElementH.this.d;
                 fVar.a = (fSqrt * 0.8f) + fVar.a;
             } else {
-                h.this.b.a -= fSqrt;
-                h.this.c.a -= fSqrt * 0.9f;
-                h.this.d.a -= fSqrt * 0.8f;
+                TextureElementH.this.b.a -= fSqrt;
+                TextureElementH.this.c.a -= fSqrt * 0.9f;
+                TextureElementH.this.d.a -= fSqrt * 0.8f;
             }
-            h.this.invalidate();
+            TextureElementH.this.invalidate();
         }
     }
 

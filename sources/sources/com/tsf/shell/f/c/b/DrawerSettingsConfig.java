@@ -20,7 +20,7 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
 
     @Override // com.tsf.shell.f.c.b.DrawerSettingsBase
     public void b() {
-        a.C0084a c0084aL = this.a.l();
+        DrawerSettingsItemType.C0084a c0084aL = this.a.l();
         if (this.a.j()) {
             a(0.0f, c0084aL.h);
             DrawerSettingsConfig().rotation().z = 45.0f;
@@ -31,7 +31,7 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.1
             @Override // java.lang.Runnable
             public void run() {
-                f.this.m();
+                DrawerSettingsConfig.this.m();
             }
         }, 1500L);
     }
@@ -42,15 +42,15 @@ public class DrawerSettingsConfig extends DrawerSettingsBase {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.2
             @Override // java.lang.Runnable
             public void run() {
-                f.this.a.k();
-                f.this.f();
+                DrawerSettingsConfig.this.a.k();
+                DrawerSettingsConfig.this.f();
             }
         }, 500L);
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerSettingsConfig.3
             @Override // java.lang.Runnable
             public void run() {
-                f.this.k();
-                f.this.l();
+                DrawerSettingsConfig.this.k();
+                DrawerSettingsConfig.this.l();
             }
         }, 2500L);
     }

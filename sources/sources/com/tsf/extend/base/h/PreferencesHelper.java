@@ -8,7 +8,7 @@ public class PreferencesHelper {
     private static c a;
     private SharedPreferences b = AppContextHolder.b().getApplicationContext().getSharedPreferences("cm_launcher_pref", 0);
 
-    private c() {
+    private PreferencesHelper() {
     }
 
     public static c a() {

@@ -25,7 +25,7 @@ public class DeviceInfoCollector {
         try {
             return str + "AppKey:" + a(context.getPackageManager().getPackageInfo(context.getPackageName(), 64).signatures[0].toByteArray()) + "\n";
         } catch (Exception e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             return str;
         }
     }
@@ -55,7 +55,7 @@ public class DeviceInfoCollector {
         try {
             return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             return "";
         }
     }
@@ -67,7 +67,7 @@ public class DeviceInfoCollector {
             return str + "AppVerCode:" + packageInfo.versionCode + "\n";
         } catch (PackageManager.NameNotFoundException e) {
             String str2 = str;
-            e.printStackTrace();
+            SelectionDotRenderer.printStackTrace();
             return str2;
         }
     }

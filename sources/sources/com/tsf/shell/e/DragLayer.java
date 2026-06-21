@@ -39,7 +39,7 @@ public class DragLayer extends FrameLayout {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.a(motionEventObtain);
+                        DragLayer.this.a(motionEventObtain);
                     }
                 });
                 break;
@@ -66,7 +66,7 @@ public class DragLayer extends FrameLayout {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.DragLayer.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.a(motionEventObtain);
+                        DragLayer.this.a(motionEventObtain);
                     }
                 });
                 return true;

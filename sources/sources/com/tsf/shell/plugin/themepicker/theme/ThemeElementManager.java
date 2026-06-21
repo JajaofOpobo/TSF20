@@ -62,9 +62,9 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
             @Override // android.widget.AbsListView.OnScrollListener
             public void onScrollStateChanged(AbsListView absListView, int i) {
                 if (i != 2) {
-                    b.this.e.b(false);
+                    ThemeElementManager.this.e.b(false);
                 } else if (!h.c()) {
-                    b.this.e.b(true);
+                    ThemeElementManager.this.e.b(true);
                 }
             }
 
@@ -76,15 +76,15 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int iFloor = (int) Math.floor(b.this.b.getWidth() / (b.this.c + b.this.d));
+                int iFloor = (int) Math.floor(ThemeElementManager.this.b.getWidth() / (ThemeElementManager.this.c + ThemeElementManager.this.d));
                 if (iFloor > 0) {
-                    int width = (b.this.b.getWidth() / iFloor) - b.this.d;
-                    b.this.f.b(iFloor);
-                    b.this.f.a(width);
+                    int width = (ThemeElementManager.this.b.getWidth() / iFloor) - ThemeElementManager.this.d;
+                    ThemeElementManager.this.f.b(iFloor);
+                    ThemeElementManager.this.f.a(width);
                     if (h.e()) {
-                        b.this.b.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        ThemeElementManager.this.b.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
-                        b.this.b.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                        ThemeElementManager.this.b.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     }
                 }
             }
@@ -180,7 +180,7 @@ public class ThemeElementManager extends Fragment implements View.OnClickListene
                 if (imageView.getLayoutParams().height != this.c) {
                     imageView.setLayoutParams(this.d);
                 }
-                b.this.e.a(this.g.get(i - this.e), imageView);
+                ThemeElementManager.this.e.a(this.g.get(i - this.e), imageView);
                 view2 = imageView;
             }
             return view2;

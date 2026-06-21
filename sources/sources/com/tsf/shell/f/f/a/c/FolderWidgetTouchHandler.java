@@ -54,42 +54,42 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
         this.b = new FolderSpringPhysics(this.i, 1.0f) { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.1
             @Override // com.tsf.shell.f.f.a.c.FolderSpringPhysics
             public com.censivn.C3DEngine.b.f.BaseRenderable a() {
-                return b.this.a.l();
+                return FolderWidgetTouchHandler.this.a.l();
             }
 
             @Override // com.tsf.shell.f.f.a.c.FolderSpringPhysics
             public com.censivn.C3DEngine.b.f.IRenderable a(int i2) {
-                return b.this.a.l().getChildAt(i2);
+                return FolderWidgetTouchHandler.this.a.l().getChildAt(i2);
             }
         };
         this.a = new com.censivn.C3DEngine.b.h.e.DockRendererB(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.k, com.tsf.shell.manager.o.ButtonPresetManager.a.U * f, 30.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c * f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 10.0f * f, f) { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.2
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(int i2) {
-                b.this.b(i2);
+                FolderWidgetTouchHandler.this.b(i2);
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void a(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-                b.this.c.c((com.tsf.shell.f.i.PageItem) iVar);
-                b.this.b.a(iVar);
+                FolderWidgetTouchHandler.this.c.c((com.tsf.shell.f.i.PageItem) iVar);
+                FolderWidgetTouchHandler.this.b.a(iVar);
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-                b.this.b.b(iVar);
+                FolderWidgetTouchHandler.this.b.b(iVar);
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void k() {
-                if (b.this.e == 0) {
+                if (FolderWidgetTouchHandler.this.e == 0) {
                     super.k();
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
             public void h() {
-                if (b.this.e != 0) {
-                    b.this.b.c();
+                if (FolderWidgetTouchHandler.this.e != 0) {
+                    FolderWidgetTouchHandler.this.b.c();
                 } else {
                     super.h();
                 }
@@ -100,7 +100,7 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
             @Override // com.tsf.shell.f.f.a.c.FolderLabelElement
             public void a() {
                 ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList = new ArrayList<>();
-                int iNumChildren = b.this.a.l().numChildren();
+                int iNumChildren = FolderWidgetTouchHandler.this.a.l().numChildren();
                 if (iNumChildren > 0) {
                     int i2 = iNumChildren - 1;
                     while (true) {
@@ -108,7 +108,7 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
                         if (i3 <= -1) {
                             break;
                         }
-                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) b.this.a.l().getChildAt(i3);
+                        com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) FolderWidgetTouchHandler.this.a.l().getChildAt(i3);
                         if (bVar.ao()) {
                             arrayList.add(bVar);
                         }
@@ -120,11 +120,11 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
                         bVar2.al();
                         bVar2.an();
                         Number3d number3dLocalToGlobal = bVar2.localToGlobal(new Number3d());
-                        b.this.a.l().removeChild(bVar2);
+                        FolderWidgetTouchHandler.this.a.l().removeChild(bVar2);
                         bVar2.position().setAllFrom(number3dLocalToGlobal);
                     }
                 }
-                b.this.c.b(arrayList);
+                FolderWidgetTouchHandler.this.c.b(arrayList);
             }
         };
         this.f = eVar;
@@ -132,7 +132,7 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
         e eVar2 = new FolderLabelElement(com.tsf.b.d.drawer_layout_reset, i, x.c(com.tsf.b.i.text_reset)) { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.4
             @Override // com.tsf.shell.f.f.a.c.FolderLabelElement
             public void a() {
-                b.this.i();
+                FolderWidgetTouchHandler.this.i();
             }
         };
         this.g = eVar2;
@@ -160,8 +160,8 @@ public class FolderWidgetTouchHandler extends FolderContentList.a {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderWidgetTouchHandler.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    b.this.j.visible(false);
-                    b.this.j.a();
+                    FolderWidgetTouchHandler.this.j.visible(false);
+                    FolderWidgetTouchHandler.this.j.a();
                 }
             };
             dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));

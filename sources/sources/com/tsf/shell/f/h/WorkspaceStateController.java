@@ -128,7 +128,7 @@ public class WorkspaceStateController implements com.censivn.C3DEngine.b.c.Keybo
         this.g.mouseEnabled(this.t);
         this.f = new WorkspaceDockPanel(this);
         this.e.a(this.f);
-        this.g.setMouseEventListener(new d(this, this.g) { // from class: com.tsf.shell.f.h.WorkspaceStub.3
+        this.g.setMouseEventListener(new WorkspaceTouchController(this, this.g) { // from class: com.tsf.shell.f.h.WorkspaceStub.3
             @Override // com.tsf.shell.f.h.WorkspaceTouchController, com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 super.a(motionEvent);

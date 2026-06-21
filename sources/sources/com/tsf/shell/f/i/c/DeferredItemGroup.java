@@ -16,9 +16,9 @@ public class DeferredItemGroup extends ItemGroupBase {
     private Runnable q = new Runnable() { // from class: com.tsf.shell.f.i.c.DeferredItemGroup.1
         @Override // java.lang.Runnable
         public void run() {
-            b.this.r = null;
-            if (b.this.l != null) {
-                b.this.l.b();
+            DeferredItemGroup.this.r = null;
+            if (DeferredItemGroup.this.l != null) {
+                DeferredItemGroup.this.l.b();
             }
         }
     };

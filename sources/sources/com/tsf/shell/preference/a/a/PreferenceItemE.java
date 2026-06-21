@@ -26,15 +26,15 @@ public class PreferenceItemE extends i {
         this.e = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.e.h(PreferenceItemB.i.mn_grid_size_auto);
         this.e.i(PreferenceItemB.i.mn_grid_size_auto_summary);
-        this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemE.1
+        this.e.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemE.1
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                e.this.a = z;
-                if (e.this.a) {
-                    e.this.c.k(com.tsf.shell.f.f.a.FolderPage.B);
-                    e.this.b.k(com.tsf.shell.f.f.a.FolderPage.C);
+                PreferenceItemE.this.a = z;
+                if (PreferenceItemE.this.a) {
+                    PreferenceItemE.this.c.k(com.tsf.shell.f.f.a.FolderPage.B);
+                    PreferenceItemE.this.b.k(com.tsf.shell.f.f.a.FolderPage.C);
                 }
-                e.this.i();
+                PreferenceItemE.this.i();
                 return true;
             }
         });

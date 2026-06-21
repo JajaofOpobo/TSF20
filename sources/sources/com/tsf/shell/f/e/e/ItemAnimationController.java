@@ -139,8 +139,8 @@ public class ItemAnimationController {
             @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 w.a(3);
-                c.this.m.b = fVar;
-                com.censivn.C3DEngine.C3DEngine.a().b(c.this.m, 400L);
+                ItemAnimationController.this.m.b = fVar;
+                com.censivn.C3DEngine.C3DEngine.a().b(ItemAnimationController.this.m, 400L);
                 com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
@@ -151,14 +151,14 @@ public class ItemAnimationController {
 
             @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-                com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
-                c.this.m.b = null;
+                com.censivn.C3DEngine.C3DEngine.a().g(ItemAnimationController.this.m);
+                ItemAnimationController.this.m.b = null;
             }
 
             @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
             public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-                com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
-                c.this.m.b = null;
+                com.censivn.C3DEngine.C3DEngine.a().g(ItemAnimationController.this.m);
+                ItemAnimationController.this.m.b = null;
                 com.tsf.shell.manager.app.Notifier.a();
             }
         };
@@ -174,7 +174,7 @@ public class ItemAnimationController {
             public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
                 if (!com.tsf.shell.manager.app.StateHub.n().c()) {
                     com.tsf.shell.manager.app.StateHub.n().d();
-                    c.this.c();
+                    ItemAnimationController.this.c();
                     com.tsf.shell.manager.app.StateHub.d.a((com.tsf.shell.f.i.PageItem) fVar);
                     w.a(3);
                 }
@@ -389,7 +389,7 @@ public class ItemAnimationController {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.e.e.ItemAnimationController.9
                 @Override // java.lang.Runnable
                 public void run() {
-                    c.this.c();
+                    ItemAnimationController.this.c();
                 }
             });
         } else if (this.r) {

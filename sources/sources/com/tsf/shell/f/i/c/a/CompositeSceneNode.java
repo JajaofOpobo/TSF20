@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.api.tween.VTweenParam;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class CompositeSceneNode extends j implements k {
+public class CompositeSceneNode extends AsyncTextureNode implements ITextureCallback {
     public TextureElement a;
     public TextureElement a;
     public TextureElement a;
@@ -79,13 +79,13 @@ public class CompositeSceneNode extends j implements k {
         this.t.scale().setAll(0.8f, 0.8f, 0.8f);
         this.t.updateAll();
         addChild(this.n);
-        this.g = new a(0.0f);
+        this.g = new FolderSceneNode(0.0f);
         this.g.position().spY(-65.0f);
         addChild(this.g);
-        this.h = new a(0.0f);
+        this.h = new FolderSceneNode(0.0f);
         this.h.position().spX(-75.0f);
         addChild(this.h);
-        this.m = new a(0.0f);
+        this.m = new FolderSceneNode(0.0f);
         this.m.position().spX(75.0f);
         addChild(this.m);
         this.f = new VRectangle(200.0f, 200.0f);
@@ -116,7 +116,7 @@ public class CompositeSceneNode extends j implements k {
                         @Override // com.censivn.C3DEngine.api.tween.VTweenParam
                         public void onComplete() {
                             if (i == 600) {
-                                m.this.a();
+                                CompositeSceneNode.this.a();
                             }
                         }
                     };

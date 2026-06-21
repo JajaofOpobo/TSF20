@@ -20,7 +20,7 @@ public class PhotoPicker implements com.censivn.C3DEngine.b.c.ActivityResultBrid
 
     public static void a(InterfaceC0098a interfaceC0098a, int i, int i2) {
         if (a == null) {
-            a = new a();
+            a = new PhotoPicker();
         }
         a.b(interfaceC0098a, i, i2);
     }
@@ -47,13 +47,13 @@ public class PhotoPicker implements com.censivn.C3DEngine.b.c.ActivityResultBrid
                         } else {
                             bitmapD = q.d(BitmapFactory.decodeFile(intent.getData().getPath()), intent.getIntExtra("image_width", 100), intent.getIntExtra("image_height", 100));
                         }
-                        if (a.this.b != null) {
+                        if (PhotoPicker.this.b != null) {
                             try {
-                                a.this.b.a(bitmapD);
-                                a.this.b = null;
+                                PhotoPicker.this.b.a(bitmapD);
+                                PhotoPicker.this.b = null;
                                 return;
                             } catch (Exception e) {
-                                a.this.b = null;
+                                PhotoPicker.this.b = null;
                                 bitmapD.recycle();
                                 return;
                             }

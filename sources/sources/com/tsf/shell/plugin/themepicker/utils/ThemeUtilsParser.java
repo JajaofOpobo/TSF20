@@ -52,11 +52,11 @@ public abstract class ThemeUtilsParser<Params, Progress, Result> {
         @Override // java.util.concurrent.FutureTask
         protected void done() {
             try {
-                a.this.c(get());
+                ThemeUtilsParser.this.c(get());
             } catch (InterruptedException e2) {
                 Log.w("AsyncTask", e2);
             } catch (CancellationException e3) {
-                a.this.c((Object) null);
+                ThemeUtilsParser.this.c((Object) null);
             } catch (ExecutionException e4) {
                 throw new RuntimeException("An error occured while executing doInBackground()", e4.getCause());
             }

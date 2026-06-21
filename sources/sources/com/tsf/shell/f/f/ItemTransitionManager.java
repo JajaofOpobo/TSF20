@@ -89,7 +89,7 @@ public class ItemTransitionManager extends TransitionManager<l> {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.d.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        d.this.d();
+                        ItemTransitionManager.this.d();
                     }
                 });
             }

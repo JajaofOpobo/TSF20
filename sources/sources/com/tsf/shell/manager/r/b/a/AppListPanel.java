@@ -35,7 +35,7 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
     public AppListPanel(final com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, String str) {
         super(str);
         this.i = false;
-        this.h = new B() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.1
+        this.h = new AppSelectionIndicatorBar() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.1
             @Override // com.tsf.shell.manager.r.b.a.b
             public void a() {
                 AppListPanel.this.b();
@@ -62,18 +62,18 @@ public class AppListPanel extends com.tsf.shell.f.e._g.a.MenuActionItem implemen
         this.e = new ArrayList<>();
         this.a = aVar;
         ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a> arrayList = new ArrayList<>();
-        arrayList.add(new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.3
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        arrayList.add(new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a(com.tsf.b.d.widget_menu_setting, x.c(com.tsf.b.i.menu_manage_apps), new com.tsf.shell.f.e._g.a.MenuActionHandler.C0095AppListPanel.C0096a() { // from class: com.tsf.shell.manager.r.b.a.AppListPanel.3
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095AppListPanel.C0096a
             public boolean a() {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095AppListPanel.C0096a
             public void b() {
                 Home.b().m();
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuItemBaseom.tsf.shell.f.e._g.a.MenuActionHandler.C0095AppListPanel.C0096a
             public void c() {
             }
         }));

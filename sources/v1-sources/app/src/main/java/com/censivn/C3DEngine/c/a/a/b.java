@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.c.a.a;
+package com.censivn.C3DEngine.c.a.spring;
 
 import com.censivn.C3DEngine.c.a.ParticleData;
 

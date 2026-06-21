@@ -67,14 +67,14 @@ public class CubeClockTouchHandler {
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
             while (true) {
-                synchronized (q.this.b) {
-                    q.this.e();
+                synchronized (CubeClockTouchHandler.this.b) {
+                    CubeClockTouchHandler.this.e();
                     if (!this.b) {
                         try {
-                            if (q.this.c) {
-                                q.this.b.wait();
+                            if (CubeClockTouchHandler.this.c) {
+                                CubeClockTouchHandler.this.b.wait();
                             } else {
-                                q.this.b.wait(q.this.d);
+                                CubeClockTouchHandler.this.b.wait(CubeClockTouchHandler.this.d);
                             }
                         } catch (InterruptedException e) {
                             CubeClockElementBase.printStackTrace();
@@ -93,13 +93,13 @@ public class CubeClockTouchHandler {
             @Override // java.lang.Runnable
             public void run() {
                 CubeClockEmpty.a("===========refreshTime=============");
-                if (!q.this.c) {
+                if (!CubeClockTouchHandler.this.c) {
                     long jCurrentTimeMillis = System.currentTimeMillis();
-                    if (q.this.a == -1) {
-                        q.this.f.h.a(jCurrentTimeMillis, false);
-                    } else if (jCurrentTimeMillis >= q.this.a) {
-                        q.this.a = -1L;
-                        q.this.f.h.a(jCurrentTimeMillis, true);
+                    if (CubeClockTouchHandler.this.a == -1) {
+                        CubeClockTouchHandler.this.f.h.a(jCurrentTimeMillis, false);
+                    } else if (jCurrentTimeMillis >= CubeClockTouchHandler.this.a) {
+                        CubeClockTouchHandler.this.a = -1L;
+                        CubeClockTouchHandler.this.f.h.a(jCurrentTimeMillis, true);
                     }
                 }
             }

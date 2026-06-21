@@ -93,14 +93,14 @@ public class FolderMultiWidgetPage extends FolderPageItemBase {
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (com.tsf.shell.manager.app.StateHub.t().aL()) {
-                        m.this.h.b(m.this.h.a(FolderPageItemBase).k());
+                        FolderMultiWidgetPage.this.h.b(FolderMultiWidgetPage.this.h.a(FolderPageItemBase).k());
                         w.b();
-                        if (m.this.j != null) {
-                            m.this.j.h();
+                        if (FolderMultiWidgetPage.this.j != null) {
+                            FolderMultiWidgetPage.this.j.h();
                         }
-                        m.this.j = hVar;
+                        FolderMultiWidgetPage.this.j = hVar;
                         hVar.g();
-                        m.this.c();
+                        FolderMultiWidgetPage.this.c();
                     }
                 }
             };

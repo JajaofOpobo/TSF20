@@ -16,7 +16,7 @@ public class ArcProgressDrawable extends Drawable {
     private int e;
     private int[] f;
 
-    public d(Context context, int i) {
+    public ArcProgressDrawable(Context context, int i) {
         this.d = 3;
         this.e = 1;
         this.f = new int[]{5526612, 5526612, -11250604};
@@ -24,7 +24,7 @@ public class ArcProgressDrawable extends Drawable {
         a(context);
     }
 
-    public d(Context context, int i, int i2) {
+    public ArcProgressDrawable(Context context, int i, int i2) {
         this.d = 3;
         this.e = 1;
         this.f = new int[]{5526612, 5526612, -11250604};

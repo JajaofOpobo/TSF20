@@ -104,7 +104,7 @@ public class ThemePreferenceProvider {
         a aVarA = com.tsf.shell.manager.app.AppListManager.a(i2);
         if (aVarA.a()) {
             bVar.getTitleIcon().a();
-            aVarA.a(new a.C0142a() { // from class: com.tsf.shell.manager.p.ThemePreferenceProvider.1
+            aVarA.a(new ThemeTransitionAnimator.C0142a() { // from class: com.tsf.shell.manager.p.ThemePreferenceProvider.1
                 @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                 public void a() {
                     bVar.getTitleIcon().b();
@@ -120,11 +120,11 @@ public class ThemePreferenceProvider {
         this.q.add(g());
         this.q.add(c());
         this.q.add(d());
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = k;
         aVar.c = 125;
         this.q.add(aVar);
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.a = n;
         aVar2.c = 132;
         this.q.add(aVar2);
@@ -132,9 +132,9 @@ public class ThemePreferenceProvider {
     }
 
     private a b() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = a;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.a = b;
         aVar2.c = ThemeFeaturedMenu.NOTIF_POINT_VERSION_CODE_130;
         aVar.a(aVar2);
@@ -143,9 +143,9 @@ public class ThemePreferenceProvider {
     }
 
     private a c() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = o;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.a = p;
         aVar2.c = 135;
         aVar.a(aVar2);
@@ -153,9 +153,9 @@ public class ThemePreferenceProvider {
     }
 
     private a d() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = l;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.c = 126;
         aVar2.a = m;
         aVar.a(aVar2);
@@ -175,9 +175,9 @@ public class ThemePreferenceProvider {
     }
 
     private a e() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = c;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.c = 110;
         aVar2.a = d;
         aVar.a(aVar2);
@@ -185,17 +185,17 @@ public class ThemePreferenceProvider {
     }
 
     private a f() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = e;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.a = f;
         aVar2.c = 110;
         aVar.a(aVar2);
-        a aVar3 = new a();
+        a aVar3 = new ThemeTransitionAnimator();
         aVar3.a = g;
         aVar3.c = 120;
         aVar.a(aVar3);
-        a aVar4 = new a();
+        a aVar4 = new ThemeTransitionAnimator();
         aVar4.a = h;
         aVar4.c = 122;
         aVar.a(aVar4);
@@ -203,9 +203,9 @@ public class ThemePreferenceProvider {
     }
 
     private a g() {
-        a aVar = new a();
+        a aVar = new ThemeTransitionAnimator();
         aVar.a = i;
-        a aVar2 = new a();
+        a aVar2 = new ThemeTransitionAnimator();
         aVar2.a = j;
         aVar2.c = 110;
         aVar.a(aVar2);

@@ -12,7 +12,7 @@ import com.tsf.shell.plugin.classification.ClassificationManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderIconLoader {
     private com.censivn.C3DEngine.b.h.d.ProgressBarItem b;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable c;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable c;
     private boolean d;
     private float e;
     private float f;
@@ -59,13 +59,13 @@ public class FolderIconLoader {
     @Override // com.tsf.shell.f.f.a.c._a.FolderIndicatorDot
     public BaseRenderable a(TextureElement textureElement) {
         j jVar = new BaseRenderable();
-        com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
+        com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVarA = com.tsf.shell.f.f.a.c.FolderLabelConfig.a();
         this.c = aVarA;
         aVarA.removeFromParent();
         aVarA.textures().addElement(textureElement);
         jVar.addChild(aVarA);
         this.b = new com.censivn.C3DEngine.b.h.d.ProgressBarItem(com.censivn.C3DEngine.b.b.ScreenConstants.a(140.0f), FolderIndicatorDot.d.ring) { // from class: com.tsf.shell.f.f.a.c._a.FolderIconLoader.2
-            @Override // com.censivn.C3DEngine.b.h.d.ProgressBarItem, com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.censivn.C3DEngine.b.h.d.ProgressBarItem, com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable, com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 f();
                 if (a.this.d) {

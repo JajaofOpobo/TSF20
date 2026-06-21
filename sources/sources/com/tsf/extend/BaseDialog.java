@@ -17,11 +17,11 @@ public class BaseDialog extends Dialog {
     private int b;
     private int c;
 
-    public g(Context context) {
+    public BaseDialog(Context context) {
         this(context, ResourceIds.h.SmartDialogStyle);
     }
 
-    public g(Context context, int i) {
+    public BaseDialog(Context context, int i) {
         super(context, i);
         WindowManager.LayoutParams attributes = getWindow().getAttributes();
         a(attributes);

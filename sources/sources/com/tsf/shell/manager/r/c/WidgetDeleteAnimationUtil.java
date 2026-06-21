@@ -40,8 +40,8 @@ public class WidgetDeleteAnimationUtil {
         if (textureElement != null && textureElement.id != 0) {
             com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer aVarA = com.censivn.C3DEngine.b.h.a.PageThumbnailRenderer.a(textureElement);
             aVarA.position().setAllFrom(iVar.position());
-            Number3d.TEMPNUMBER3D2.reset();
-            aVarA.position().setAllFrom(iVar.localToGlobal(Number3d.TEMPNUMBER3D2));
+            Number3MultiSelectLinePicker.TEMPNUMBER3D2.reset();
+            aVarA.position().setAllFrom(iVar.localToGlobal(Number3MultiSelectLinePicker.TEMPNUMBER3D2));
             com.tsf.shell.manager.app.TaskScheduler.a(aVarA);
         }
     }

@@ -37,9 +37,9 @@ public class AlarmThemeProvider {
             this.f = i6;
             this.h = bitmap;
             this.g = i5;
-            this.a = vObject3d.scale().x;
-            this.b = vObject3d.scale().y;
-            this.c = vObject3d.scale().z;
+            this.a = vObject3AlarmDataUtils.scale().x;
+            this.b = vObject3AlarmDataUtils.scale().y;
+            this.c = vObject3AlarmDataUtils.scale().z;
             setScaleX(0.0f);
             setScaleY(0.0f);
             setScaleZ(0.0f);

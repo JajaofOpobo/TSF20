@@ -7,7 +7,7 @@ import com.censivn.C3DEngine.b.g.EasingFunctions;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
-    private static com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
+    private static com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable a = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
     private com.tsf.shell.f._d.a.DashElementInfo b;
 
     public DashButtonA(int i, boolean z) {
@@ -17,10 +17,10 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
 
     @Override // com.tsf.shell.f._d.a.DashElementBase
     public void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable) {
-        a((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) iVar, runnable);
+        a((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) iVar, runnable);
     }
 
-    public void a(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, final Runnable runnable) {
+    public void a(final com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, final Runnable runnable) {
         final float f;
         final float f2;
         final float f3;
@@ -157,7 +157,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(final com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar, final Runnable runnable, final boolean z) {
+    public void a(final com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar, final Runnable runnable, final boolean z) {
         final float fPxX = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxY = aVar.points().pxY(com.tsf.shell.manager.o.ButtonPresetManager.a.a);
         final float fPxX2 = aVar.points().pxX(com.tsf.shell.manager.o.ButtonPresetManager.a.b);
@@ -207,7 +207,7 @@ public class DashButtonA extends com.tsf.shell.f._d.a.DashElementBase {
         com.censivn.C3DEngine.b.g.TweenUtils.a(aVar, 1000, dVar);
     }
 
-    public void a(com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable aVar) {
+    public void a(com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aVar) {
         com.censivn.C3DEngine.b.g.TweenUtils.a(aVar);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.a, com.tsf.shell.manager.o.ButtonPresetManager.a.i, com.tsf.shell.manager.o.ButtonPresetManager.a.q, 0.0f);
         aVar.points().setPX(com.tsf.shell.manager.o.ButtonPresetManager.a.c, com.tsf.shell.manager.o.ButtonPresetManager.a.k, com.tsf.shell.manager.o.ButtonPresetManager.a.s, 0.0f);

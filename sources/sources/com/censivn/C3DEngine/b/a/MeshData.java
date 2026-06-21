@@ -9,12 +9,12 @@ public class MeshData {
     private float[] c;
     private int[] d;
 
-    public a(String str, float[] fArr) {
+    public MeshData(String str, float[] fArr) {
         this.a = str;
         this.b = fArr;
     }
 
-    public a(String str, float[] fArr, float[] fArr2) {
+    public MeshData(String str, float[] fArr, float[] fArr2) {
         this(str, fArr);
         this.c = fArr2;
     }

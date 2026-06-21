@@ -25,22 +25,22 @@ public class FolderShortcutGrid extends FolderPageItemBase {
                     com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderShortcutGrid.1.1
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
-                            f.this.h.visible(false);
-                            f.this.h.a();
+                            FolderShortcutGrid.this.h.visible(false);
+                            FolderShortcutGrid.this.h.a();
                         }
                     };
                     dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
                     dVar.a(0);
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h);
-                    com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h, 300, dVar);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(FolderShortcutGrid.this.h);
+                    com.censivn.C3DEngine.b.g.TweenUtils.a(FolderShortcutGrid.this.h, 300, dVar);
                     return;
                 }
                 com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
                 dVar2.h(0.0f);
                 dVar2.a(255);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(f.this.h, 300, dVar2);
-                f.this.h.visible(true);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderShortcutGrid.this.h);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderShortcutGrid.this.h, 300, dVar2);
+                FolderShortcutGrid.this.h.visible(true);
             }
 
             @Override // com.censivn.C3DEngine.b.h.e.DockRendererB
@@ -110,8 +110,8 @@ public class FolderShortcutGrid extends FolderPageItemBase {
         if (cVar.parent() == this.g.l()) {
             cVar.visible(true);
             cVar.scale().setAll(1.0f, 1.0f, 1.0f);
-            Number3d.TEMPNUMBER3D.reset();
-            Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3d.TEMPNUMBER3D);
+            Number3FolderAppMenu.TEMPNUMBER3FolderAppMenu.reset();
+            Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3FolderAppMenu.TEMPNUMBER3D);
             this.g.removeChild(cVar);
             com.tsf.shell.f.f.a.PageContainerBase aVarAp = this.a.ap();
             cVar.position().setAllFrom(aVarAp.globalToLocal(number3dLocalToGlobal));

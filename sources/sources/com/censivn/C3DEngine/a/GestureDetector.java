@@ -126,10 +126,10 @@ public class GestureDetector {
     }
 
     private class GestureHandler extends Handler {
-        a() {
+        GestureHandler() {
         }
 
-        a(Handler handler) {
+        GestureHandler(Handler handler) {
             super(handler.getLooper());
         }
 

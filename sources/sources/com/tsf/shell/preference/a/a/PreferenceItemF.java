@@ -25,7 +25,7 @@ public class PreferenceItemF extends i {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        f.this.j();
+                        PreferenceItemF.this.j();
                     }
                 });
             }
@@ -53,15 +53,15 @@ public class PreferenceItemF extends i {
         builder.setSingleChoiceItems(new String[]{x.c(com.tsf.b.i.mn_folder_animation_quick), x.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
-                f.this.c = i;
+                PreferenceItemF.this.c = i;
             }
         });
         builder.setPositiveButton(com.tsf.b.i.public_action_ok, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.4
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
-                if (iAr != f.this.c) {
-                    com.tsf.shell.manager.b.ConfigManager.r(f.this.c);
-                    f.this.i();
+                if (iAr != PreferenceItemF.this.c) {
+                    com.tsf.shell.manager.b.ConfigManager.r(PreferenceItemF.this.c);
+                    PreferenceItemF.this.i();
                 }
             }
         });

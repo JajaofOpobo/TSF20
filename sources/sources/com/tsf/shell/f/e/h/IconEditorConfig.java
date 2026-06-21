@@ -33,7 +33,7 @@ public class IconEditorConfig implements com.censivn.C3DEngine.b.c.ActivityResul
             @Override // java.lang.Runnable
             public void run() {
                 if (b.a == null) {
-                    b unused = b.a = new b();
+                    b unused = b.a = new IconEditorConfig();
                 }
                 b.a.b(aVar, bVar, i, i2);
             }

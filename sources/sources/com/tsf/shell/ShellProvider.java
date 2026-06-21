@@ -26,7 +26,7 @@ public class ShellProvider extends ContentProvider {
         if (c == null) {
             c = this;
         }
-        this.b = new A(getContext());
+        this.b = new ShellCoreInterface(getContext());
         return true;
     }
 
@@ -44,7 +44,7 @@ public class ShellProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public String getType(Uri uri) {
-        B bVar = new B(uri, null, null);
+        B bVar = new ShellEventData(uri, null, null);
         return TextUtils.isEmpty(bVar.b) ? "vnd.android.cursor.dir/" + bVar.a : "vnd.android.cursor.item/" + bVar.a;
     }
 
@@ -56,7 +56,7 @@ public class ShellProvider extends ContentProvider {
     public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         Cursor cursorQuery;
         synchronized (this) {
-            B bVar = new B(uri, str, strArr2);
+            B bVar = new ShellEventData(uri, str, strArr2);
             SQLiteQueryBuilder sQLiteQueryBuilder = new SQLiteQueryBuilder();
             sQLiteQueryBuilder.setTables(bVar.a);
             cursorQuery = sQLiteQueryBuilder.query(this.b.getWritableDatabase(), strArr, bVar.b, bVar.c, null, null, str2);
@@ -69,7 +69,7 @@ public class ShellProvider extends ContentProvider {
     public Uri insert(Uri uri, ContentValues contentValues) {
         Uri uriWithAppendedId = null;
         synchronized (this) {
-            long jInsert = this.b.getWritableDatabase().insert(new B(uri).a, null, contentValues);
+            long jInsert = this.b.getWritableDatabase().insert(new ShellEventData(uri).a, null, contentValues);
             if (jInsert > 0) {
                 uriWithAppendedId = ContentUris.withAppendedId(uri, jInsert);
                 a(uriWithAppendedId);
@@ -82,7 +82,7 @@ public class ShellProvider extends ContentProvider {
     public int delete(Uri uri, String str, String[] strArr) {
         int iDelete;
         synchronized (this) {
-            B bVar = new B(uri, str, strArr);
+            B bVar = new ShellEventData(uri, str, strArr);
             iDelete = this.b.getWritableDatabase().delete(bVar.a, bVar.b, bVar.c);
             if (iDelete > 0) {
                 a(uri);
@@ -96,13 +96,13 @@ public class ShellProvider extends ContentProvider {
         int iUpdate;
         synchronized (this) {
             try {
-                B bVar = new B(uri, str, strArr);
+                B bVar = new ShellEventData(uri, str, strArr);
                 iUpdate = this.b.getWritableDatabase().update(bVar.a, contentValues, bVar.b, bVar.c);
                 if (iUpdate > 0) {
                     a(uri);
                 }
             } catch (Exception e) {
-                StackTraceElement[] stackTrace = e.getStackTrace();
+                StackTraceElement[] stackTrace = ShellThemeProvider.getStackTrace();
                 String str2 = "";
                 for (StackTraceElement stackTraceElement : stackTrace) {
                     str2 = str2 + stackTraceElement.toString() + "  '\\'";
@@ -185,7 +185,7 @@ public class ShellProvider extends ContentProvider {
         }
     }
 
-    public static class a extends A {
+    public static class a extends ShellCoreInterface {
         a(Context context) {
             super(context);
         }

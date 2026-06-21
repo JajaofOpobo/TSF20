@@ -34,7 +34,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
             @Override // com.tsf.shell.f.h.a.a.SceneElementHandler, com.censivn.C3DEngine.b.e.DesktopPanelRenderer
             public void g() {
                 super.g();
-                d.this.d.u();
+                SceneElementRenderer.this.d.u();
             }
         };
         this.e = new com.censivn.C3DEngine.b.b.ScreenConstants.b();
@@ -152,7 +152,7 @@ public class SceneElementRenderer implements SceneNodeAnimator.a, SceneElementBa
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.SceneElementRenderer.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    d.this.e.removeFromParent();
+                    SceneElementRenderer.this.e.removeFromParent();
                 }
             };
             dVar.a(0);

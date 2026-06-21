@@ -67,7 +67,7 @@ public class TransitionConfig extends TransitionManager<l> {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.TransitionConfig.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.b(true);
+                        TransitionConfig.this.b(true);
                     }
                 });
             }

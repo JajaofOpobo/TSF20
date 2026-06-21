@@ -33,7 +33,7 @@ public class DrawerItemLayout extends com.tsf.shell.f.e.f.EditModeNode implement
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.c.b.DrawerItemLayout.1
             @Override // java.lang.Runnable
             public void run() {
-                d.this.removeChild(cVar);
+                DrawerItemLayout.this.removeChild(cVar);
             }
         };
         if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {

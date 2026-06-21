@@ -21,7 +21,7 @@ public class RateDialogController {
         com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialogController.1
             @Override // java.lang.Runnable
             public void run() {
-                c.this.a.b();
+                RateDialogController.this.a.b();
             }
         });
     }
@@ -35,20 +35,20 @@ public class RateDialogController {
         com.tsf.shell.manager.app.TaskScheduler.a(new Runnable() { // from class: com.tsf.shell.manager.j.RateDialogController.2
             @Override // java.lang.Runnable
             public void run() {
-                c.this.a.d();
+                RateDialogController.this.a.d();
                 com.tsf.shell.manager.app.TaskScheduler.b();
-                c.this.a.removeFromParent();
+                RateDialogController.this.a.removeFromParent();
             }
         }, true);
     }
 
     private void d() {
-        this.a = new b();
+        this.a = new RateDialog();
         this.b = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.manager.j.RateDialogController.3
             @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4) {
-                    c.this.b();
+                    RateDialogController.this.b();
                 }
             }
 
@@ -58,7 +58,7 @@ public class RateDialogController {
 
             @Override // com.tsf.shell.f.b.ShellKeyEventHandler
             public void a(int i, int i2, int i3, int i4) {
-                c.this.c();
+                RateDialogController.this.c();
             }
         };
     }

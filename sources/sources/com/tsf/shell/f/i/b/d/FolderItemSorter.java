@@ -76,11 +76,11 @@ public class FolderItemSorter {
     /* JADX INFO: Access modifiers changed from: private */
     public void g() {
         if (this.e.K().container != -1 || (this.e.K() instanceof LauncherDrawerFolder3DInfo)) {
-            Number3d.TEMPNUMBER3D.reset();
-            this.e.localToGlobal(Number3d.TEMPNUMBER3D);
+            Number3WidgetItemLayout.TEMPNUMBER3WidgetItemLayout.reset();
+            this.e.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D);
             this.u = com.tsf.shell.f.c.DrawerPanelController.a(this.e);
             ((com.censivn.C3DEngine.b.f.BaseRenderable) this.e.parent()).replaceChild(this.e, this.u);
-            this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
+            this.e.position().setAllFrom(Number3WidgetItemLayout.TEMPNUMBER3D);
         }
         this.r = this.e.rotation().z;
         if (this.r != 0.0f) {

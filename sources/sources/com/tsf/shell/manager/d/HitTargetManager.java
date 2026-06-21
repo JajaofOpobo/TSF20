@@ -59,9 +59,9 @@ public class HitTargetManager {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.HitTargetManager.a.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            ILayoutItem fVarA = fVar.a((int) C0127a.this.a[0], (int) C0127a.this.a[1]);
-                            C0127a.this.b = false;
-                            if (fVarA != null && C0127a.this.a(fVarA)) {
+                            ILayoutItem fVarA = fVar.a((int) C0127HitTargetManager.this.a[0], (int) C0127HitTargetManager.this.a[1]);
+                            C0127HitTargetManager.this.b = false;
+                            if (fVarA != null && C0127HitTargetManager.this.a(fVarA)) {
                                 fVar.f(fVarA);
                             } else {
                                 fVar.p();

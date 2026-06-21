@@ -26,7 +26,7 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.DesktopPanelRende
         this.k.a(new PreferenceItemB.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.1
             @Override // com.censivn.C3DEngine.b.e.LabeledIconRenderer.a
             public void a(int i) {
-                d.this.a(i, i != 0);
+                PreferenceItemD.this.a(i, i != 0);
             }
         });
         this.i = new com.censivn.C3DEngine.b.e.PanelBarRenderer();
@@ -47,26 +47,26 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.DesktopPanelRende
         this.e.h(PreferenceItemB.i.mn_indicator_mode);
         this.e.i(PreferenceItemB.i.mn_indicator_mode_summary);
         this.i.a(this.e);
-        this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.2
+        this.e.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.2
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 if (z) {
-                    d.this.c.h();
+                    PreferenceItemD.this.c.h();
                     return true;
                 }
-                d.this.c.m();
+                PreferenceItemD.this.c.m();
                 return true;
             }
         });
         eVar.a(new PreferenceItemH.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.3
             @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i) {
-                d.this.c.f(i);
+                PreferenceItemD.this.c.f(i);
                 if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
-                    d.this.g = i;
+                    PreferenceItemD.this.g = i;
                     return true;
                 }
-                d.this.h = i;
+                PreferenceItemD.this.h = i;
                 return true;
             }
         });
@@ -81,7 +81,7 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.DesktopPanelRende
         eVar3.a(new PreferenceItemH.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.4
             @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i) {
-                d.this.b.f(i);
+                PreferenceItemD.this.b.f(i);
                 return true;
             }
         });
@@ -90,14 +90,14 @@ public class PreferenceItemD extends com.censivn.C3DEngine.b.e.DesktopPanelRende
         this.f.h(PreferenceItemB.i.mn_indicator_mode);
         this.f.i(PreferenceItemB.i.mn_indicator_mode_summary);
         this.j.a(this.f);
-        this.f.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.5
+        this.f.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemD.5
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
                 if (z) {
-                    d.this.b.h();
+                    PreferenceItemD.this.b.h();
                     return true;
                 }
-                d.this.b.m();
+                PreferenceItemD.this.b.m();
                 return true;
             }
         });

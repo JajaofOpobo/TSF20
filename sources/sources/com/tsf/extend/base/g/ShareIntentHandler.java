@@ -16,7 +16,7 @@ import com.tsf.extend.theme.ThemeShareHandler;
 public class ShareIntentHandler extends BaseShareHandler {
     private j.a f;
 
-    public c(Context context, Intent intent, j.a aVar) {
+    public ShareIntentHandler(Context context, Intent intent, j.a aVar) {
         super(context, intent, null, null);
         this.f = aVar;
     }

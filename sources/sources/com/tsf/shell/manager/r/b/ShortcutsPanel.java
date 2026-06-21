@@ -58,14 +58,14 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
                 return ShortcutsPanel.this.g;
             }
         };
-        ArrayList<a.C0095a> arrayList = new ArrayList<>();
-        a.C0095a c0095a = new a.C0095a(b.d.widget_menu_shortcut_tsf, x.c(b.i.group_tsf_shortcut), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.3
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        ArrayList<WidgetMenuPanel.C0095a> arrayList = new ArrayList<>();
+        WidgetMenuPanel.C0095a c0095a = new WidgetMenuPanel.C0095a(b.d.widget_menu_shortcut_tsf, x.c(b.i.group_tsf_shortcut), new WidgetMenuPanel.C0095WidgetMenuPanel.C0096a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.3
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetMenuPanel.C0096a
             public boolean a() {
                 return ShortcutsPanel.this.a(ShortcutsPanel.this.k);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetMenuPanel.C0096a
             public void b() {
                 ShortcutsPanel.this.b(ShortcutsPanel.this.k);
                 ShortcutsPanel.this.e.a();
@@ -74,13 +74,13 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         });
         com.tsf.shell.manager.r.c.WidgetFeatureConfig.e = c0095a;
         this.d = c0095a;
-        a.C0095a c0095a2 = new a.C0095a(b.d.widget_menu_shortcut_system, x.c(b.i.group_system_shortcuts), new a.C0095a.C0096a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.4
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+        WidgetMenuPanel.C0095a c0095a2 = new WidgetMenuPanel.C0095a(b.d.widget_menu_shortcut_system, x.c(b.i.group_system_shortcuts), new WidgetMenuPanel.C0095WidgetMenuPanel.C0096a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.4
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetMenuPanel.C0096a
             public boolean a() {
                 return ShortcutsPanel.this.a(ShortcutsPanel.this.l);
             }
 
-            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095a.C0096a
+            @Override // com.tsf.shell.f.e._g.a.MenuActionHandler.C0095WidgetMenuPanel.C0096a
             public void b() {
                 ShortcutsPanel.this.c();
                 ShortcutsPanel.this.b(ShortcutsPanel.this.l);
@@ -101,7 +101,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         if (!this.h) {
             this.h = true;
             for (b.a aVar : com.tsf.shell.manager.app.FolderManager.a()) {
-                C cVar = new C();
+                C cVar = new ScrollableItemListPanel();
                 cVar.c = aVar.a;
                 this.f.add(cVar);
             }
@@ -146,7 +146,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
 
     private a d() {
         if (this.j.isEmpty()) {
-            return new B();
+            return new WidgetDecorationPanel();
         }
         return this.j.remove(0);
     }
@@ -201,7 +201,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         this.i = false;
     }
 
-    class B extends A {
+    class B extends WidgetMenuPanel {
         protected com.tsf.shell.f.i.b.e.DrawerShortcutItemBase b;
         public String c;
         public Intent d;
@@ -239,7 +239,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
         public void b() {
-            com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, 0.0f, 0.0f, new a.C0130a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.b.1
+            com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, 0.0f, 0.0f, new WidgetMenuPanel.C0130a() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.b.1
                 @Override // com.tsf.shell.manager.l.ShortcutManager.C0130a
                 public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar) {
                     ShortcutsPanel.this.b.b().a(bVar);
@@ -286,7 +286,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
     }
 
-    class C extends A {
+    class C extends WidgetMenuPanel {
         protected com.tsf.shell.f.i.b.e.DrawerShortcutItemBase b;
         public int c;
 

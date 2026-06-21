@@ -38,21 +38,21 @@ public class WidgetContainer extends FrameLayout {
         this.h = new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.1
             @Override // java.lang.Runnable
             public void run() {
-                if (!b.this.b.a) {
-                    synchronized (b.this.e) {
-                        if (b.this.f != null) {
-                            Bitmap bitmap = (Bitmap) b.this.f.get();
+                if (!WidgetContainer.this.b.a) {
+                    synchronized (WidgetContainer.this.e) {
+                        if (WidgetContainer.this.f != null) {
+                            Bitmap bitmap = (Bitmap) WidgetContainer.this.f.get();
                             if (bitmap == null) {
-                                if (b.this.c()) {
+                                if (WidgetContainer.this.c()) {
                                     com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {
-                                            b.this.invalidate();
+                                            WidgetContainer.this.invalidate();
                                         }
                                     });
                                 }
                             } else {
-                                b.this.b.a(bitmap);
+                                WidgetContainer.this.b.a(bitmap);
                             }
                         }
                     }
@@ -155,7 +155,7 @@ public class WidgetContainer extends FrameLayout {
                     com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.e.WidgetContainer.2
                         @Override // java.lang.Runnable
                         public void run() {
-                            b.this.b.onDrawStart();
+                            WidgetContainer.this.b.onDrawStart();
                         }
                     });
                 }

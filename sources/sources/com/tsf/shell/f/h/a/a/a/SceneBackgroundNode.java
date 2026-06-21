@@ -16,7 +16,7 @@ public class SceneBackgroundNode extends com.tsf.shell.f.e.d.a.DropIndicatorConf
             @Override // com.tsf.shell.f.e.d.a.DropIndicatorState.C0092c
             public void a() {
                 w.b();
-                e.this.a.b();
+                SceneBackgroundNode.this.a.b();
             }
         });
         a(arrayList);

@@ -24,7 +24,7 @@ public class ThemePreferenceStore {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            ThemePreferenceProvider.printStackTrace();
         }
     }
 
@@ -52,14 +52,14 @@ public class ThemePreferenceStore {
                 int i = Integer.parseInt(strArrSplit[0]);
                 int i2 = Integer.parseInt(strArrSplit[1]);
                 if (i > 0 && i2 > 0) {
-                    aVar = new a();
+                    aVar = new ThemeTransitionAnimator();
                     try {
                         aVar.a = i;
                         aVar.b = i2;
                         return aVar;
                     } catch (Exception e2) {
                         e = e2;
-                        e.printStackTrace();
+                        ThemePreferenceProvider.printStackTrace();
                         return aVar;
                     }
                 }
@@ -83,7 +83,7 @@ public class ThemePreferenceStore {
     public void a(int i, int i2) {
         a aVarB = b(i);
         if (aVarB == null) {
-            aVarB = new a();
+            aVarB = new ThemeTransitionAnimator();
             aVarB.a = i;
             this.a.add(aVarB);
         }

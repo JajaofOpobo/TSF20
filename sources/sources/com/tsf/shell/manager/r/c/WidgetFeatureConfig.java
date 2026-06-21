@@ -10,8 +10,8 @@ public class WidgetFeatureConfig {
     public static boolean b = false;
     public static boolean c = false;
     public static boolean d = false;
-    public static a.C0095a e;
-    public static a.C0095a f;
+    public static IconRenderer.C0095a e;
+    public static IconRenderer.C0095a f;
 
     public WidgetFeatureConfig() {
         Date date;

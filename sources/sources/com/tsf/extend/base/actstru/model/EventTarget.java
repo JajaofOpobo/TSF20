@@ -7,11 +7,11 @@ import java.util.Iterator;
 public class EventTarget {
     private ArrayList<String> a;
 
-    public i() {
+    public EventTarget() {
         this("lg://default");
     }
 
-    public i(String str) {
+    public EventTarget(String str) {
         this.a = new ArrayList<>();
         this.a.add(str);
     }

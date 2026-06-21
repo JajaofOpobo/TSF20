@@ -149,8 +149,8 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
                 new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.a.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(a.this.f)) {
-                            a.this.new AlarmRoundRect().start();
+                        if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(AlarmContainer.this.f)) {
+                            AlarmContainer.this.new AlarmRoundRect().start();
                             AlarmWidget.b();
                         }
                     }
@@ -197,23 +197,23 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
 
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
-            a.this.g.a(new c.a() { // from class: com.tsf.shell.widget.alarm.a.b.1
+            AlarmContainer.this.g.a(new c.a() { // from class: com.tsf.shell.widget.alarm.a.b.1
                 @Override // com.tsf.shell.widget.alarm.service.AlarmServiceBinder.a
                 public void a(com.tsf.shell.widget.alarm.service.IAlarmCallback bVar) {
                     int i;
-                    int iC = a.this.t.c();
-                    boolean zB = a.this.x.b();
+                    int iC = AlarmContainer.this.t.c();
+                    boolean zB = AlarmContainer.this.x.b();
                     if (iC == 12) {
                         i = zB ? 0 : 12;
                     } else {
                         i = zB ? iC : iC + 12;
                     }
-                    int iC2 = a.this.u.c();
+                    int iC2 = AlarmContainer.this.u.c();
                     AlarmState.c("Compass getCurrent " + i + ":" + iC2);
                     for (int i2 = 0; i2 < 7; i2++) {
-                        a.this.l.a(i2, a.this.v.a(i2));
+                        AlarmContainer.this.l.a(i2, AlarmContainer.this.v.a(i2));
                     }
-                    bVar.a(1, a.a, i, iC2, a.this.l.a(), a.this.m, null, a.this.n);
+                    bVar.a(1, a.a, i, iC2, AlarmContainer.this.l.a(), AlarmContainer.this.m, null, AlarmContainer.this.n);
                 }
             });
         }
@@ -224,8 +224,8 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: com.tsf.shell.widget.alarm.a.2
             @Override // java.lang.Runnable
             public void run() {
-                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(a.this.f)) {
-                    a.this.b(z);
+                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(AlarmContainer.this.f)) {
+                    AlarmContainer.this.b(z);
                 }
             }
         });
@@ -247,9 +247,9 @@ public class AlarmContainer extends VObject3dContainer implements c.b {
         @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
         public void onDown(MotionEvent motionEvent) {
             if (com.tsf.shell.widget.alarm.b.AlarmDataFilter) {
-                this.b = a.this.t;
+                this.b = AlarmContainer.this.t;
             } else {
-                this.b = a.this.u;
+                this.b = AlarmContainer.this.u;
             }
             this.b.a();
         }

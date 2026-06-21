@@ -41,8 +41,8 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
         Runnable runnable = new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.1
             @Override // java.lang.Runnable
             public void run() {
-                a.this.removeChild(cVar);
-                a.this.e.o();
+                DragSortContainer.this.removeChild(cVar);
+                DragSortContainer.this.e.o();
             }
         };
         if (cVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
@@ -138,7 +138,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
             }
             this.d = true;
             this.h = 0;
-            a.this.addChild(a.this.a);
+            DragSortContainer.this.addChild(DragSortContainer.this.a);
             this.g.setAnimationObjectState(true);
         }
 
@@ -147,7 +147,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
             this.e = false;
             this.d = false;
             this.l = false;
-            this.g = a.this.getHittingObjectTarget(motionEvent, true);
+            this.g = DragSortContainer.this.getHittingObjectTarget(motionEvent, true);
             if (this.g != null && this.g.getMouseEventListener() != null) {
                 this.f = this.g.getMouseEventListener();
                 this.f.e(motionEvent);
@@ -156,7 +156,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
-            a.this.c = 0;
+            DragSortContainer.this.c = 0;
             if (this.f != null) {
                 this.f.f(motionEvent);
                 this.f = null;
@@ -178,10 +178,10 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
         public void c(MotionEvent motionEvent) {
             if (this.g != null) {
                 w.a();
-                this.h = a.this.getChildIndexOf(this.g);
+                this.h = DragSortContainer.this.getChildIndexOf(this.g);
                 this.b.reset();
                 this.b = this.g.localToGlobal(this.b);
-                a.this.replaceChild(this.g, a.this.a);
+                DragSortContainer.this.replaceChild(this.g, DragSortContainer.this.a);
                 this.g.position().setAllFrom(this.b);
                 this.g.setAnimationObjectState(true);
                 com.tsf.shell.manager.app.TaskScheduler.a(this.g);
@@ -209,13 +209,13 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
                 if (!this.l) {
                     this.b.setAllFrom(this.g.position());
                     com.tsf.shell.manager.app.TaskScheduler.b(this.g);
-                    a.this.globalToLocal(this.b);
-                    a.this.replaceChild(a.this.a, this.g);
-                    int childIndexOf = a.this.getChildIndexOf(this.g);
+                    DragSortContainer.this.globalToLocal(this.b);
+                    DragSortContainer.this.replaceChild(DragSortContainer.this.a, this.g);
+                    int childIndexOf = DragSortContainer.this.getChildIndexOf(this.g);
                     this.g.position().setAllFrom(this.b);
-                    a.this.b(this.g);
+                    DragSortContainer.this.b(this.g);
                     com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.g;
-                    a.this.e.a((com.tsf.shell.f.i.PageItem) cVar, true);
+                    DragSortContainer.this.e.a((com.tsf.shell.f.i.PageItem) cVar, true);
                     if (cVar.as()) {
                         ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListAw = cVar.aw();
                         int size = arrayListAw == null ? 0 : arrayListAw.size();
@@ -226,8 +226,8 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
                                     bVar.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.j * (i + 1));
                                     bVar.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase.j * (i + 1));
                                     bVar.removeFromParent();
-                                    a.this.addChildAt(bVar, childIndexOf);
-                                    a.this.e.a((com.tsf.shell.f.i.PageItem) bVar, true);
+                                    DragSortContainer.this.addChildAt(bVar, childIndexOf);
+                                    DragSortContainer.this.e.a((com.tsf.shell.f.i.PageItem) bVar, true);
                                 }
                             } else {
                                 HashMap map = new HashMap();
@@ -238,7 +238,7 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
                     } else if (!this.e) {
                         cVar.ai();
                     }
-                    a.this.e.o();
+                    DragSortContainer.this.e.o();
                 }
             }
         }
@@ -250,66 +250,66 @@ public class DragSortContainer extends com.censivn.C3DEngine.b.b.ScreenConstants
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        C0131a.this.i = false;
-                        if (C0131a.this.d) {
-                            if (!C0131a.this.e) {
+                        C0131DragSortContainer.this.i = false;
+                        if (C0131DragSortContainer.this.d) {
+                            if (!C0131DragSortContainer.this.e) {
                                 if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
-                                    C0131a.this.e = true;
+                                    C0131DragSortContainer.this.e = true;
                                     return;
                                 }
                                 return;
                             }
-                            if (C0131a.this.l) {
-                                C0131a.this.g.position().x = (motionEvent2.getX() - motionEvent.getX()) + C0131a.this.b.x;
-                                C0131a.this.g.position().y = (motionEvent.getY() - motionEvent2.getY()) + C0131a.this.b.y;
+                            if (C0131DragSortContainer.this.l) {
+                                C0131DragSortContainer.this.g.position().x = (motionEvent2.getX() - motionEvent.getX()) + C0131DragSortContainer.this.b.x;
+                                C0131DragSortContainer.this.g.position().y = (motionEvent.getY() - motionEvent2.getY()) + C0131DragSortContainer.this.b.y;
                                 return;
                             }
-                            float fB = a.this.b();
-                            a.this.c();
-                            x.a(motionEvent2, C0131a.this.j);
-                            C0131a.this.k.x = C0131a.this.j[0];
-                            C0131a.this.k.y = C0131a.this.j[1];
-                            float f = C0131a.this.k.x;
-                            a.this.b.globalToLocal(C0131a.this.k);
-                            if (a.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.ScreenConstants.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.ScreenConstants.A) - b.a) {
+                            float fB = DragSortContainer.this.b();
+                            DragSortContainer.this.c();
+                            x.a(motionEvent2, C0131DragSortContainer.this.j);
+                            C0131DragSortContainer.this.k.x = C0131DragSortContainer.this.j[0];
+                            C0131DragSortContainer.this.k.y = C0131DragSortContainer.this.j[1];
+                            float f = C0131DragSortContainer.this.k.x;
+                            DragSortContainer.this.b.globalToLocal(C0131DragSortContainer.this.k);
+                            if (DragSortContainer.this.e.d() == 0 ? f > ((float) com.censivn.C3DEngine.b.b.ScreenConstants.z) + b.a : f < ((float) com.censivn.C3DEngine.b.b.ScreenConstants.A) - b.a) {
                                 if (com.tsf.shell.manager.app.StateHub.F() != -1) {
-                                    C0131a.this.l = true;
-                                    a.this.removeChild(a.this.a);
-                                    a.this.e.o();
-                                    final com.censivn.C3DEngine.b.d.MouseEventListener aVar = C0131a.this.f;
-                                    a.this.e.a(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1.1
+                                    C0131DragSortContainer.this.l = true;
+                                    DragSortContainer.this.removeChild(DragSortContainer.this.a);
+                                    DragSortContainer.this.e.o();
+                                    final com.censivn.C3DEngine.b.d.MouseEventListener aVar = C0131DragSortContainer.this.f;
+                                    DragSortContainer.this.e.a(new Runnable() { // from class: com.tsf.shell.manager.m.DragSortContainer.a.1.1
                                         @Override // java.lang.Runnable
                                         public void run() {
-                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131a.this.g).ah();
-                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131a.this.g).aO();
-                                            if (C0131a.this.d) {
-                                                C0131a.this.f.c(null);
+                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131DragSortContainer.this.g).ah();
+                                            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) C0131DragSortContainer.this.g).aO();
+                                            if (C0131DragSortContainer.this.d) {
+                                                C0131DragSortContainer.this.f.c(null);
                                                 com.censivn.C3DEngine.a.d.d().e();
-                                                com.censivn.C3DEngine.a.d.d().a(C0131a.this.f, true);
+                                                com.censivn.C3DEngine.a.d.d().a(C0131DragSortContainer.this.f, true);
                                                 return;
                                             }
                                             aVar.d(com.censivn.C3DEngine.a.d.d().g());
                                         }
                                     });
                                 }
-                            } else if (C0131a.this.k.y > a.this.b.maxY() - fB) {
-                                a.this.c = 1;
-                            } else if (C0131a.this.k.y < fB + a.this.b.minY()) {
-                                a.this.c = 2;
+                            } else if (C0131DragSortContainer.this.k.y > DragSortContainer.this.b.maxY() - fB) {
+                                DragSortContainer.this.c = 1;
+                            } else if (C0131DragSortContainer.this.k.y < fB + DragSortContainer.this.b.minY()) {
+                                DragSortContainer.this.c = 2;
                             } else {
-                                a.this.c = 0;
-                                C0131a.this.k.x = C0131a.this.j[0];
-                                C0131a.this.k.y = C0131a.this.j[1];
-                                a.this.globalToLocal(C0131a.this.k);
-                                int iC = a.this.c(-C0131a.this.k.y);
-                                if (C0131a.this.h != iC) {
-                                    C0131a.this.h = iC;
-                                    a.this.a((i) a.this.a);
-                                    a.this.addChildAt(a.this.a, C0131a.this.h);
+                                DragSortContainer.this.c = 0;
+                                C0131DragSortContainer.this.k.x = C0131DragSortContainer.this.j[0];
+                                C0131DragSortContainer.this.k.y = C0131DragSortContainer.this.j[1];
+                                DragSortContainer.this.globalToLocal(C0131DragSortContainer.this.k);
+                                int iC = DragSortContainer.this.c(-C0131DragSortContainer.this.k.y);
+                                if (C0131DragSortContainer.this.h != iC) {
+                                    C0131DragSortContainer.this.h = iC;
+                                    DragSortContainer.this.a((i) DragSortContainer.this.a);
+                                    DragSortContainer.this.addChildAt(DragSortContainer.this.a, C0131DragSortContainer.this.h);
                                 }
                             }
-                            C0131a.this.g.position().x = (motionEvent2.getX() - motionEvent.getX()) + C0131a.this.b.x;
-                            C0131a.this.g.position().y = (motionEvent.getY() - motionEvent2.getY()) + C0131a.this.b.y;
+                            C0131DragSortContainer.this.g.position().x = (motionEvent2.getX() - motionEvent.getX()) + C0131DragSortContainer.this.b.x;
+                            C0131DragSortContainer.this.g.position().y = (motionEvent.getY() - motionEvent2.getY()) + C0131DragSortContainer.this.b.y;
                         }
                     }
                 });

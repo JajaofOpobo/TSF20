@@ -35,9 +35,9 @@ public class ActionManager {
         com.tsf.shell.manager.app.CallbackHandler.a(new d.a() { // from class: com.tsf.shell.manager.action.ActionManager.1
             @Override // com.censivn.C3DEngine.b.c.AnimationListener.a
             public void a() {
-                if (b.this.b_ != 0) {
-                    b.this.a(b.this.b_);
-                    b.this.b_ = 0;
+                if (ActionManager.this.b_ != 0) {
+                    ActionManager.this.a(ActionManager.this.b_);
+                    ActionManager.this.b_ = 0;
                 }
             }
         });
@@ -90,7 +90,7 @@ public class ActionManager {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.action.ActionManager.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.a(i, z);
+                    ActionManager.this.a(i, z);
                 }
             });
         }
@@ -338,7 +338,7 @@ public class ActionManager {
     }
 
     public static a b(int i) {
-        a aVar = new a();
+        a aVar = new ActionDatabaseHelper();
         aVar.a = i;
         switch (i) {
             case 0:

@@ -42,7 +42,7 @@ public class EventDispatcher {
         }
     }
 
-    private f() {
+    private EventDispatcher() {
         a("lg://default");
         this.c.start();
     }

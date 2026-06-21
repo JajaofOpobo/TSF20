@@ -5,13 +5,13 @@ public class ThemeListApiRequest extends com.tsf.extend.base.a.ApiRequestImpl {
     private String a;
     private boolean b;
 
-    public ag(String str) {
+    public ThemeListApiRequest(String str) {
         this.a = "tlist?";
         this.a = str;
         this.b = false;
     }
 
-    public ag(String str, boolean z) {
+    public ThemeListApiRequest(String str, boolean z) {
         this.a = "tlist?";
         this.a = str;
         this.b = z;

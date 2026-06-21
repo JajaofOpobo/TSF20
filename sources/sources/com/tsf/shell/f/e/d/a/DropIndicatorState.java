@@ -65,7 +65,7 @@ public class DropIndicatorState extends BaseRenderable {
 
         public void a(DropIndicatorConfig dVar) {
             if (this.e == null && c()) {
-                this.e = new c(dVar);
+                this.e = new DropIndicatorState(dVar);
                 b bVar = new DropIndicatorRenderer();
                 bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(-130.0f);
                 bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(128.0f);
@@ -97,15 +97,15 @@ public class DropIndicatorState extends BaseRenderable {
                     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                     public void a(MotionEvent motionEvent) {
                         if (next.c()) {
-                            next.a(c.this.f);
+                            next.a(DropIndicatorState.this.f);
                             next.e.removeFromParent();
                             next.e.a();
                             aVar.addChild(next.e);
-                            c.this.d = next.e;
-                            c.this.a(aVar);
-                            c.this.a(next.h, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f));
+                            DropIndicatorState.this.d = next.e;
+                            DropIndicatorState.this.a(aVar);
+                            DropIndicatorState.this.a(next.h, com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f));
                         } else {
-                            c.this.f.d();
+                            DropIndicatorState.this.f.d();
                         }
                         next.a();
                     }
@@ -216,7 +216,7 @@ public class DropIndicatorState extends BaseRenderable {
                 dVar.a(new Runnable() { // from class: com.tsf.shell.f.e.d.a.DropIndicatorState.3
                     @Override // java.lang.Runnable
                     public void run() {
-                        c.this.removeFromParent();
+                        DropIndicatorState.this.removeFromParent();
                     }
                 });
             }

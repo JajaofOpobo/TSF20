@@ -17,7 +17,7 @@ public class WidgetVisualNode extends f {
         this.a = new BaseRenderable() { // from class: com.tsf.shell.widget.a.a.WidgetVisualNode.1
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
             public void onDrawChildStart() {
-                a.this.b.dispatchDraw();
+                WidgetVisualNode.this.b.dispatchDraw();
             }
         };
         float fA = com.censivn.C3DEngine.b.b.ScreenConstants.a(250.0f);

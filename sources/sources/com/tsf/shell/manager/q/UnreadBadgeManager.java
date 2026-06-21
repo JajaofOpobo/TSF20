@@ -12,7 +12,7 @@ import com.tsf.shell.services.NotifierConnector;
 import com.tsf.shell.utils.MarketLinkHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class UnreadBadgeManager implements A.InterfaceC0165a {
+public class UnreadBadgeManager implements UnreadBadgeManager.InterfaceC0165a {
     private int a = 0;
     private int b = 0;
     private int c = 0;
@@ -37,17 +37,17 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             @Override // java.lang.Runnable
             public void run() {
                 try {
-                    a.this.a = a.this.h.a.a();
-                    a.this.b = a.this.h.a.b();
-                    a.this.c = a.this.h.a.d();
-                    a.this.e = a.this.h.a.e();
-                    a.this.f = a.this.h.a.f();
-                    a.this.a(a.this.a);
-                    a.this.b(a.this.b);
-                    a.this.d(a.this.c);
-                    a.this.e(a.this.e);
-                    a.this.f(a.this.f);
-                    a.this.g = true;
+                    UnreadBadgeManager.this.a = UnreadBadgeManager.this.h.a.a();
+                    UnreadBadgeManager.this.b = UnreadBadgeManager.this.h.a.b();
+                    UnreadBadgeManager.this.c = UnreadBadgeManager.this.h.a.d();
+                    UnreadBadgeManager.this.e = UnreadBadgeManager.this.h.a.e();
+                    UnreadBadgeManager.this.f = UnreadBadgeManager.this.h.a.f();
+                    UnreadBadgeManager.this.a(UnreadBadgeManager.this.a);
+                    UnreadBadgeManager.this.b(UnreadBadgeManager.this.b);
+                    UnreadBadgeManager.this.d(UnreadBadgeManager.this.c);
+                    UnreadBadgeManager.this.e(UnreadBadgeManager.this.e);
+                    UnreadBadgeManager.this.f(UnreadBadgeManager.this.f);
+                    UnreadBadgeManager.this.g = true;
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -90,7 +90,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.6
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.i.a(a.this.b);
+                        UnreadBadgeManager.this.i.a(UnreadBadgeManager.this.b);
                     }
                 });
                 return;
@@ -103,7 +103,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.7
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.j.a(a.this.a);
+                        UnreadBadgeManager.this.j.a(UnreadBadgeManager.this.a);
                     }
                 });
                 return;
@@ -116,7 +116,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.8
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.m.a(a.this.f);
+                        UnreadBadgeManager.this.m.a(UnreadBadgeManager.this.f);
                     }
                 });
                 return;
@@ -129,7 +129,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.9
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.l.a(a.this.e);
+                        UnreadBadgeManager.this.l.a(UnreadBadgeManager.this.e);
                     }
                 });
                 return;
@@ -142,7 +142,7 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.10
                     @Override // java.lang.Runnable
                     public void run() {
-                        a.this.k.a(a.this.c);
+                        UnreadBadgeManager.this.k.a(UnreadBadgeManager.this.c);
                     }
                 });
             }
@@ -157,8 +157,8 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             RenderRunnable renderRunnable = new RenderRunnable(i2, i2) { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.11
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    if (a.this.j != null) {
-                        a.this.j.a(a.this.a);
+                    if (UnreadBadgeManager.this.j != null) {
+                        UnreadBadgeManager.this.j.a(UnreadBadgeManager.this.a);
                     }
                 }
             };
@@ -175,8 +175,8 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             RenderRunnable renderRunnable = new RenderRunnable(i2, i2) { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.12
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    if (a.this.i != null) {
-                        a.this.i.a(a.this.b);
+                    if (UnreadBadgeManager.this.i != null) {
+                        UnreadBadgeManager.this.i.a(UnreadBadgeManager.this.b);
                     }
                 }
             };
@@ -198,8 +198,8 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             RenderRunnable renderRunnable = new RenderRunnable(i2, i2) { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.2
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    if (a.this.k != null) {
-                        a.this.k.a(a.this.c);
+                    if (UnreadBadgeManager.this.k != null) {
+                        UnreadBadgeManager.this.k.a(UnreadBadgeManager.this.c);
                     }
                 }
             };
@@ -216,8 +216,8 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             RenderRunnable renderRunnable = new RenderRunnable(i2, i2) { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.3
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    if (a.this.l != null) {
-                        a.this.l.a(a.this.e);
+                    if (UnreadBadgeManager.this.l != null) {
+                        UnreadBadgeManager.this.l.a(UnreadBadgeManager.this.e);
                     }
                 }
             };
@@ -234,8 +234,8 @@ public class UnreadBadgeManager implements A.InterfaceC0165a {
             RenderRunnable renderRunnable = new RenderRunnable(i2, i2) { // from class: com.tsf.shell.manager.q.UnreadBadgeManager.4
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
-                    if (a.this.m != null) {
-                        a.this.m.a(a.this.f);
+                    if (UnreadBadgeManager.this.m != null) {
+                        UnreadBadgeManager.this.m.a(UnreadBadgeManager.this.f);
                     }
                 }
             };

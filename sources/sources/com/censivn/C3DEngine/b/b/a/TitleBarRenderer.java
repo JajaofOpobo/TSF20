@@ -7,7 +7,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class TitleBarRenderer extends BaseSliderRenderer {
     private LabelRenderable mLabel = new LabelRenderable();
 
-    public a() {
+    public TitleBarRenderer() {
         this.mLabel.b(1);
         this.mLabel.a("Title");
         this.mLabel.a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(10.0f), 0.0f);

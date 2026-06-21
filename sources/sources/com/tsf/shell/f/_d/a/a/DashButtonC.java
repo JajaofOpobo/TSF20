@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.b.f.GridRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashButtonC extends com.tsf.shell.f._d.a.DashElementBase {
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable a;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable a;
     private com.tsf.shell.f._d.a.DashElementInfo b;
     private GridRenderable c;
 

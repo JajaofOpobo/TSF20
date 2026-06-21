@@ -52,13 +52,13 @@ public class CylinderTransition extends ItemPageTransition {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.CylinderTransition.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f3) {
-                        f.this.d.a(fB + ((0.5f - fB) * f3));
-                        f.this.c.a();
+                        CylinderTransition.this.d.a(fB + ((0.5f - fB) * f3));
+                        CylinderTransition.this.c.a();
                     }
 
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        f.this.h = true;
+                        CylinderTransition.this.h = true;
                     }
                 };
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);
@@ -73,13 +73,13 @@ public class CylinderTransition extends ItemPageTransition {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.b.CylinderTransition.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
-                    f.this.d.a(fB + ((0.0f - fB) * f3));
-                    f.this.c.a();
+                    CylinderTransition.this.d.a(fB + ((0.0f - fB) * f3));
+                    CylinderTransition.this.c.a();
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    f.this.h = true;
+                    CylinderTransition.this.h = true;
                 }
             };
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.f);

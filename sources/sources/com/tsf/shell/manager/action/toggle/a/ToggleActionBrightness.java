@@ -82,7 +82,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
         try {
             return Settings.System.getInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness_mode") == 1;
         } catch (Settings.SettingNotFoundException e) {
-            e.printStackTrace();
+            ToggleActionVolume.printStackTrace();
             return false;
         }
     }
@@ -91,7 +91,7 @@ public class ToggleActionBrightness extends com.tsf.shell.manager.action.toggle.
         try {
             return Settings.System.getInt(com.censivn.C3DEngine.C3DEngine.d().getContentResolver(), "screen_brightness");
         } catch (Exception e) {
-            e.printStackTrace();
+            ToggleActionVolume.printStackTrace();
             return 0;
         }
     }

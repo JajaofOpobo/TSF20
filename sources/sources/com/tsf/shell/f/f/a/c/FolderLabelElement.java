@@ -36,7 +36,7 @@ public class FolderLabelElement extends com.censivn.C3DEngine.b.f.GridRenderable
         setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.c.FolderLabelElement.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                e.this.a();
+                FolderLabelElement.this.a();
             }
         });
     }

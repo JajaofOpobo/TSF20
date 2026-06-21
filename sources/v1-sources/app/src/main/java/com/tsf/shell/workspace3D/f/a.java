@@ -71,7 +71,7 @@ public final class a extends v {
                 if (i2 >= this.G + 1) {
                     return;
                 }
-                com.censivn.C3DEngine.c.a.a.DampedSpringConstraint bVar2 = (com.censivn.C3DEngine.c.a.a.DampedSpringConstraint) b.get(this.M - i2);
+                com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint bVar2 = (com.censivn.C3DEngine.c.a.spring.DampedSpringConstraint) b.get(this.M - i2);
                 bVar2.a((((this.L * i2) + f) - this.F) + this.O + 1.0f);
                 bVar2.c(0.0f);
                 i = i2 + 1;

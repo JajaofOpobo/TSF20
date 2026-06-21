@@ -17,7 +17,7 @@ public class Rotate3dAnimation extends Animation {
     private Camera h;
     private boolean i = false;
 
-    public d(float f, float f2, float f3, float f4, float f5, boolean z, boolean z2) {
+    public Rotate3dAnimation(float f, float f2, float f3, float f4, float f5, boolean z, boolean z2) {
         this.a = f;
         this.b = f2;
         this.c = f3;

@@ -24,19 +24,19 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1
             @Override // java.lang.Runnable
             public void run() {
-                e.this.a.x();
-                e.this.f();
+                DrawerEditPanel.this.a.x();
+                DrawerEditPanel.this.f();
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.m();
+                        DrawerEditPanel.this.m();
                     }
                 }, 2500L);
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.1.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.a(e.this.a.p(), 0.0f);
-                        e.this.a(true);
+                        DrawerEditPanel.this.a(DrawerEditPanel.this.a.p(), 0.0f);
+                        DrawerEditPanel.this.a(true);
                     }
                 }, 2000L);
             }
@@ -65,9 +65,9 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a(float f) {
             float f2 = this.a + ((this.b - this.a) * f);
-            e.this.a.a(f2, true);
-            e.this.a.g().c(f2);
-            e.this.c().position().x = f2;
+            DrawerEditPanel.this.a.a(f2, true);
+            DrawerEditPanel.this.a.g().c(f2);
+            DrawerEditPanel.this.c().position().x = f2;
         }
 
         @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -79,16 +79,16 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             float f2 = AnonymousClass2.this.b + ((AnonymousClass2.this.a - AnonymousClass2.this.b) * f);
-                            e.this.a.a(f2, true);
-                            e.this.a.g().c(f2);
-                            e.this.c().position().x = f2;
+                            DrawerEditPanel.this.a.a(f2, true);
+                            DrawerEditPanel.this.a.g().c(f2);
+                            DrawerEditPanel.this.c().position().x = f2;
                         }
 
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
-                            e.this.g();
-                            e.this.f();
-                            e.this.n();
+                            DrawerEditPanel.this.g();
+                            DrawerEditPanel.this.f();
+                            DrawerEditPanel.this.n();
                         }
                     });
                 }
@@ -101,19 +101,19 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3
             @Override // java.lang.Runnable
             public void run() {
-                e.this.f();
-                e.this.a.v();
+                DrawerEditPanel.this.f();
+                DrawerEditPanel.this.a.v();
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.o();
+                        DrawerEditPanel.this.o();
                     }
                 }, 2000L);
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.3.2
                     @Override // java.lang.Runnable
                     public void run() {
-                        e.this.h();
-                        e.this.a(true);
+                        DrawerEditPanel.this.h();
+                        DrawerEditPanel.this.a(true);
                     }
                 }, 1500L);
             }
@@ -121,21 +121,21 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.4
             @Override // java.lang.Runnable
             public void run() {
-                e.this.a(0.0f, 0.0f);
+                DrawerEditPanel.this.a(0.0f, 0.0f);
             }
         }, 1000L);
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.5
             @Override // java.lang.Runnable
             public void run() {
-                e.this.a(false);
+                DrawerEditPanel.this.a(false);
             }
         }, 1500L);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void o() {
-        Number3d.TEMPNUMBER3D.reset();
-        Number3d number3dLocalToGlobal = this.a.h().localToGlobal(Number3d.TEMPNUMBER3D);
+        Number3DrawerState.TEMPNUMBER3DrawerState.reset();
+        Number3d number3dLocalToGlobal = this.a.h().localToGlobal(Number3DrawerState.TEMPNUMBER3D);
         float[] fArrA = x.a(number3dLocalToGlobal.x, number3dLocalToGlobal.y);
         this.a.g().a(fArrA[0], fArrA[1]);
         com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 4000, new AnonymousClass6(fArrA, this.a.g().k()));
@@ -156,24 +156,24 @@ public class DrawerEditPanel extends com.tsf.shell.f.c.b.DrawerSettingsBase {
             float fSin = (float) Math.sin(3.141592653589793d * ((double) f));
             float f2 = this.a[0] + (this.b * fSin);
             float f3 = this.a[1];
-            e.this.a.w();
-            e.this.c().position().x = fSin * this.b;
-            e.this.a.g().b(f2, f3);
+            DrawerEditPanel.this.a.w();
+            DrawerEditPanel.this.c().position().x = fSin * this.b;
+            DrawerEditPanel.this.a.g().b(f2, f3);
         }
 
         @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
-            e.this.f();
-            e.this.g();
+            DrawerEditPanel.this.f();
+            DrawerEditPanel.this.g();
             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    e.this.a.g().c();
+                    DrawerEditPanel.this.a.g().c();
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.c.a.DrawerEditPanel.6.1.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            e.this.k();
-                            e.this.l();
+                            DrawerEditPanel.this.k();
+                            DrawerEditPanel.this.l();
                         }
                     }, 1500L);
                 }

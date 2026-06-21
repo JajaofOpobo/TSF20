@@ -23,7 +23,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
     private ArrayList<i> b = new ArrayList<>();
     private BaseRenderable c = new BaseRenderable();
 
-    public g(float f, float f2, float f3, float f4, float f5) {
+    public DesktopTouchHandlerG(float f, float f2, float f3, float f4, float f5) {
         this.d = 0.0f;
         this.e = 0.0f;
         this.d = f;

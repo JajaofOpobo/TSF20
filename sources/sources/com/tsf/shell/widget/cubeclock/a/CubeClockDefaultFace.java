@@ -68,19 +68,19 @@ public class CubeClockDefaultFace extends VObject3dContainer {
         VMouseEventListener vMouseEventListener = new VMouseEventListener(vRectangle2) { // from class: com.tsf.shell.widget.cubeclock.a.CubeClockDefaultFace.1
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onDown(MotionEvent motionEvent) {
-                a.this.k.m.interceptMouseEventLongPressOnTimes();
-                a.this.a(true);
+                CubeClockDefaultFace.this.k.m.interceptMouseEventLongPressOnTimes();
+                CubeClockDefaultFace.this.a(true);
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                a.this.a(f2);
-                a.this.g.a(a.this.a);
+                CubeClockDefaultFace.this.a(f2);
+                CubeClockDefaultFace.this.g.a(CubeClockDefaultFace.this.a);
             }
 
             @Override // com.censivn.C3DEngine.api.event.VMouseEventListener
             public void onUp(MotionEvent motionEvent) {
-                a.this.a(false);
+                CubeClockDefaultFace.this.a(false);
             }
         };
         vRectangle2.calAABB();
@@ -121,8 +121,8 @@ public class CubeClockDefaultFace extends VObject3dContainer {
         vTweenParam3.setCompleteRunnable(new Runnable() { // from class: com.tsf.shell.widget.cubeclock.a.CubeClockDefaultFace.2
             @Override // java.lang.Runnable
             public void run() {
-                a.this.h.visible(false);
-                a.this.i.visible(false);
+                CubeClockDefaultFace.this.h.visible(false);
+                CubeClockDefaultFace.this.i.visible(false);
             }
         });
         vTweenParam3.setSPY(-135.0f);
@@ -178,7 +178,7 @@ public class CubeClockDefaultFace extends VObject3dContainer {
         vTweenParam.setCompleteRunnable(new Runnable() { // from class: com.tsf.shell.widget.cubeclock.a.CubeClockDefaultFace.3
             @Override // java.lang.Runnable
             public void run() {
-                a.this.visible(false);
+                CubeClockDefaultFace.this.visible(false);
             }
         });
         vTweenParam.setRotationX(90.0f);

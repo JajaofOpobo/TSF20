@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class DrawerTransitionBase3D extends k {
+public abstract class DrawerTransitionBase3D extends DrawerTransitionBase {
     private static int a = 1;
     private static int b = 2;
     private static int c = 3;
@@ -312,7 +312,7 @@ public abstract class DrawerTransitionBase3D extends k {
                 com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
-                        m.this.a(aVar, m.c);
+                        DrawerTransitionBase3DrawerExtrusionTransition.this.a(aVar, m.c);
                     }
                 };
                 dVar2.j(-this.f);
@@ -339,7 +339,7 @@ public abstract class DrawerTransitionBase3D extends k {
             com.censivn.C3DEngine.b.g.TweenParams dVar3 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    m.this.a(aVar, m.c);
+                    DrawerTransitionBase3DrawerExtrusionTransition.this.a(aVar, m.c);
                 }
             };
             dVar3.j(-this.f);
@@ -432,8 +432,8 @@ public abstract class DrawerTransitionBase3D extends k {
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.b.DrawerTransitionBase3D.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    m.this.a(aVar, m.c);
-                    m.this.l = true;
+                    DrawerTransitionBase3DrawerExtrusionTransition.this.a(aVar, m.c);
+                    DrawerTransitionBase3DrawerExtrusionTransition.this.l = true;
                 }
             };
             dVar2.j(0.0f);

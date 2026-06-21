@@ -69,8 +69,8 @@ public class ItemContainerNode extends BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.e.ItemContainerNode.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    b.this.m.textures().clear();
-                    b.this.m.removeFromParent();
+                    ItemContainerNode.this.m.textures().clear();
+                    ItemContainerNode.this.m.removeFromParent();
                 }
             };
             dVar.a(0);
@@ -134,7 +134,7 @@ public class ItemContainerNode extends BaseRenderable {
             final Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.e.e.ItemContainerNode.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.removeFromParent();
+                    ItemContainerNode.this.removeFromParent();
                 }
             };
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.e.ItemContainerNode.3

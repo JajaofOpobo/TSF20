@@ -79,7 +79,7 @@ public class ShellBackgroundRenderer {
     }
 
     private static a c(SQLiteDatabase sQLiteDatabase) {
-        A aVar = new A();
+        A aVar = new ShellCoreInterface();
         aVar.a = "";
         try {
             Cursor cursorQuery = sQLiteDatabase.query("dock", null, null, null, null, null, null);
@@ -93,7 +93,7 @@ public class ShellBackgroundRenderer {
     }
 
     private static a d(SQLiteDatabase sQLiteDatabase) {
-        A aVar = new A();
+        A aVar = new ShellCoreInterface();
         aVar.a = "";
         try {
             Cursor cursorQuery = sQLiteDatabase.query("quicklaunch", null, null, null, null, null, null);
@@ -130,7 +130,7 @@ public class ShellBackgroundRenderer {
         ArrayList<b> arrayList2 = new ArrayList();
         ArrayList<b> arrayList3 = new ArrayList();
         while (cursorQuery.moveToNext()) {
-            B bVar = new B();
+            B bVar = new ShellEventData();
             bVar.b = cursorQuery.getString(columnIndexOrThrow4);
             bVar.l = cursorQuery.getInt(columnIndexOrThrow6);
             bVar.r = cursorQuery.getInt(columnIndexOrThrow);

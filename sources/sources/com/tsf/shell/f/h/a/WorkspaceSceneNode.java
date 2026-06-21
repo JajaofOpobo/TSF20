@@ -38,7 +38,7 @@ public class WorkspaceSceneNode {
         this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.h.a.a.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                a.this.x();
+                WorkspaceSceneNode.this.x();
             }
         });
         this.a = new BaseRenderable();
@@ -51,32 +51,32 @@ public class WorkspaceSceneNode {
                 if (f > 1.0f) {
                     f = 1.0f;
                 }
-                a.this.b.a(f);
+                WorkspaceSceneNode.this.b.a(f);
             }
 
             @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void d(int i) {
-                a.this.v();
+                WorkspaceSceneNode.this.v();
             }
 
             @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void e(int i) {
-                a.this.w();
+                WorkspaceSceneNode.this.w();
             }
 
             @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public void a(int i) {
                 if (i == 0) {
-                    a.this.b.c(0);
+                    WorkspaceSceneNode.this.b.c(0);
                 } else {
-                    a.this.b.c(1);
+                    WorkspaceSceneNode.this.b.c(1);
                 }
-                a.this.b(i);
+                WorkspaceSceneNode.this.b(i);
             }
 
             @Override // com.censivn.C3DEngine.b.b.ScreenConstants.d
             public boolean b(int i) {
-                return a.this.c(i);
+                return WorkspaceSceneNode.this.c(i);
             }
         };
         this.c.e(0.0f);
@@ -211,9 +211,9 @@ public class WorkspaceSceneNode {
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (z2) {
-                            a.this.A();
+                            WorkspaceSceneNode.this.A();
                         }
-                        a.this.c.e();
+                        WorkspaceSceneNode.this.c.e();
                     }
                 };
                 dVar.h(z());
@@ -261,9 +261,9 @@ public class WorkspaceSceneNode {
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         if (z2) {
-                            a.this.D();
+                            WorkspaceSceneNode.this.D();
                         }
-                        a.this.c.visible(false);
+                        WorkspaceSceneNode.this.c.visible(false);
                     }
                 };
                 dVar.h(z());
@@ -355,7 +355,7 @@ public class WorkspaceSceneNode {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.6
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                a.this.e.mouseEnabled(true);
+                WorkspaceSceneNode.this.e.mouseEnabled(true);
             }
         };
         dVar.a(255);
@@ -403,11 +403,11 @@ public class WorkspaceSceneNode {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.h.a.a.7
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                if (a.this.f) {
-                    a.this.C();
+                if (WorkspaceSceneNode.this.f) {
+                    WorkspaceSceneNode.this.C();
                 }
-                a.this.E();
-                com.tsf.shell.manager.app.TaskScheduler.b(a.this.a);
+                WorkspaceSceneNode.this.E();
+                com.tsf.shell.manager.app.TaskScheduler.b(WorkspaceSceneNode.this.a);
             }
         };
         dVar.a(0);

@@ -53,7 +53,7 @@ public class AlignmentEngine {
                     i iVarB;
                     if (iVar == null) {
                         iVarB = com.tsf.shell.manager.o.ButtonPresetManager.a.b();
-                        ((com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable) iVarB).a(true);
+                        ((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) iVarB).a(true);
                         iVarB.calAABB();
                     } else {
                         iVarB = iVar;

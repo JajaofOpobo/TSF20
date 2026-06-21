@@ -4,7 +4,7 @@ package com.tsf.extend.base.view;
 public class BezierInterpolator {
     private float[] a;
 
-    public a(float[] fArr, int i) {
+    public BezierInterpolator(float[] fArr, int i) {
         this.a = new float[i * 2];
         a(fArr);
     }

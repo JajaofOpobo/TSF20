@@ -26,7 +26,7 @@ public class TypefaceManager {
         return a;
     }
 
-    private a() {
+    private TypefaceManager() {
     }
 
     public boolean a(InterfaceC0049a interfaceC0049a) {

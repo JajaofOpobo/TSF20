@@ -22,15 +22,15 @@ public class WidgetCompatibilityChecker {
 
     public static void a() {
         a = new HashMap<>();
-        a.put("com.tsf.shell.widget.message", new A(5, 17, ""));
-        a.put("com.tsf.shell.widget.alarm", new A(4, -1, ""));
-        a.put("com.tsf.shell.widget.memo", new A(6, 8, ""));
-        a.put("com.tsf.shell.widget.music", new A(4, 17, ""));
-        a.put("com.tsf.shell.widget.gallery", new A(5, 14, ""));
-        a.put("com.tsf.shell.widget.adornment", new A(4, 6, ""));
-        a.put("com.tsf.shell.widget.calendar", new A(5, 11, ""));
-        a.put("com.tsf.shell.widget.cubeclock", new A(5, 3, ""));
-        a.put("com.tsf.shell.widget.weather", new A(4, 16, ""));
+        IconRenderer.put("com.tsf.shell.widget.message", new IconRenderer(5, 17, ""));
+        IconRenderer.put("com.tsf.shell.widget.alarm", new IconRenderer(4, -1, ""));
+        IconRenderer.put("com.tsf.shell.widget.memo", new IconRenderer(6, 8, ""));
+        IconRenderer.put("com.tsf.shell.widget.music", new IconRenderer(4, 17, ""));
+        IconRenderer.put("com.tsf.shell.widget.gallery", new IconRenderer(5, 14, ""));
+        IconRenderer.put("com.tsf.shell.widget.adornment", new IconRenderer(4, 6, ""));
+        IconRenderer.put("com.tsf.shell.widget.calendar", new IconRenderer(5, 11, ""));
+        IconRenderer.put("com.tsf.shell.widget.cubeclock", new IconRenderer(5, 3, ""));
+        IconRenderer.put("com.tsf.shell.widget.weather", new IconRenderer(4, 16, ""));
     }
 
     static class a {
@@ -66,7 +66,7 @@ public class WidgetCompatibilityChecker {
             return zN;
         }
         boolean z2 = gVar.h <= 6;
-        A aVar = a.get(gVar.a);
+        A aVar = IconRenderer.get(gVar.a);
         boolean zA = a(aVar, gVar);
         boolean zB = b(aVar, gVar);
         if (zN && z2 && zA && zB) {

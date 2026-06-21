@@ -21,14 +21,14 @@ public class PreferenceItemB extends i {
         this.e = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.e.h(b.i.text_default_scale);
         this.e.b("" + com.censivn.C3DEngine.b.b.ScreenConstants.e);
-        this.e.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemB.1
+        this.e.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemB.1
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                b.this.c = z;
-                if (b.this.c) {
-                    b.this.b(com.censivn.C3DEngine.b.b.ScreenConstants.e);
+                PreferenceItemB.this.c = z;
+                if (PreferenceItemB.this.c) {
+                    PreferenceItemB.this.b(com.censivn.C3DEngine.b.b.ScreenConstants.e);
                 }
-                b.this.i();
+                PreferenceItemB.this.i();
                 return true;
             }
         });
@@ -42,7 +42,7 @@ public class PreferenceItemB extends i {
                     String string = Integer.toString(i);
                     d(string.substring(0, 1) + "." + string.substring(1));
                 }
-                b.this.f.a(b.this.d.e() / 10.0f);
+                PreferenceItemB.this.f.a(PreferenceItemB.this.d.e() / 10.0f);
             }
         };
         this.d.g(b.i.text_screen_scale);

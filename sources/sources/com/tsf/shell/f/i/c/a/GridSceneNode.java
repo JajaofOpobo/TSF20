@@ -15,7 +15,7 @@ import com.censivn.C3DEngine.api.tween.VTweenParam;
 import com.tsf.b;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class GridSceneNode extends j {
+public class GridSceneNode extends AsyncTextureNode {
     public TextureElement a;
     public TextureElement a;
     public TextureElement a;

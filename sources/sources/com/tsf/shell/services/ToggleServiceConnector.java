@@ -28,7 +28,7 @@ public class ToggleServiceConnector implements ServiceConnection {
     private Context k;
     private com.c.a.a.a.a m;
     private List<a> l = new ArrayList();
-    private b n = new b();
+    private b n = new ForegroundServiceManager();
 
     public interface a {
         void a(com.c.a.a.a.a aVar);
@@ -122,7 +122,7 @@ public class ToggleServiceConnector implements ServiceConnection {
     @Override // android.content.ServiceConnection
     public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
         synchronized (this) {
-            this.m = a.AbstractBinderC0021a.a(iBinder);
+            this.m = NotifierConnector.AbstractBinderC0021a.a(iBinder);
             while (!this.l.isEmpty()) {
                 try {
                     this.l.remove(0).a(this.m);

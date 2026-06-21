@@ -9,7 +9,7 @@ public class ShellPageManager {
     String e;
 
     public static class a {
-        private b a = new b();
+        private b a = new ShellPageManagerV2();
 
         public a a(int i) {
             this.a.d = i;

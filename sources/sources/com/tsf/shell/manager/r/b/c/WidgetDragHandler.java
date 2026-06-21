@@ -33,8 +33,8 @@ public class WidgetDragHandler extends com.censivn.C3DEngine.b.h.b.DesktopTouchH
         this.d = this.c.a();
         this.e = this.d.getAnimationObjectState();
         this.d.setAnimationObjectState(true);
-        Number3d.TEMPNUMBER3D.reset();
-        Number3d number3dLocalToGlobal = this.d.localToGlobal(Number3d.TEMPNUMBER3D);
+        Number3WidgetPanelOrchestrator.TEMPNUMBER3WidgetPanelOrchestrator.reset();
+        Number3d number3dLocalToGlobal = this.d.localToGlobal(Number3WidgetPanelOrchestrator.TEMPNUMBER3D);
         this.d.position().setAllFrom(number3dLocalToGlobal);
         this.a = number3dLocalToGlobal.x;
         this.b = number3dLocalToGlobal.y;

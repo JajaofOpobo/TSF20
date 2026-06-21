@@ -70,11 +70,11 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
         }
     }
 
-    public c(com.tsf.shell.f.f.g gVar, boolean z) {
+    public DesktopTouchHandlerC(com.tsf.shell.f.f.g gVar, boolean z) {
         this(gVar, z, null);
     }
 
-    public c(com.tsf.shell.f.f.g gVar, boolean z, a aVar) {
+    public DesktopTouchHandlerC(com.tsf.shell.f.f.g gVar, boolean z, a aVar) {
         this.k = 0.0f;
         this.l = 0.0f;
         this.m = false;

@@ -46,15 +46,15 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
     public void a(List<ResolveInfo> list) {
         b(list);
         c cVar = new ThemePickerConfig(f(), list, this);
-        this.m = (ViewPager) findViewById(ThemePickerResources.C0155f.pager);
+        this.m = (ViewPager) findViewById(ThemePickerResources.C0155ThemePickerResources.pager);
         this.m.setAdapter(cVar);
-        this.o = (ListView) findViewById(ThemePickerResources.C0155f.menu_listview);
+        this.o = (ListView) findViewById(ThemePickerResources.C0155ThemePickerResources.menu_listview);
         this.p = new ThemePickerState(this, list, getPackageManager(), true);
         this.o.setAdapter((ListAdapter) this.p);
         this.o.setOnItemClickListener(this);
-        this.n = (TitlePageIndicator) findViewById(ThemePickerResources.C0155f.indicator);
+        this.n = (TitlePageIndicator) findViewById(ThemePickerResources.C0155ThemePickerResources.indicator);
         this.n.setViewPager(this.m);
-        findViewById(ThemePickerResources.C0155f.imageView1).setOnClickListener(this);
+        findViewById(ThemePickerResources.C0155ThemePickerResources.imageView1).setOnClickListener(this);
     }
 
     private void b(List<ResolveInfo> list) {
@@ -75,7 +75,7 @@ public class IconPickerActivity extends FragmentActivity implements View.OnClick
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == ThemePickerResources.C0155f.imageView1) {
+        if (view.getId() == ThemePickerResources.C0155ThemePickerResources.imageView1) {
             q.a();
         }
     }

@@ -1,7 +1,7 @@
 package com.censivn.C3DEngine.api.primitives.ninepath;
 
-import com.censivn.C3DEngine.b.f.b.NinePatchRenderable;
-import com.censivn.C3DEngine.b.f.b.NinePatchBounds;
+import com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable;
+import com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VNinePatchRectangle {

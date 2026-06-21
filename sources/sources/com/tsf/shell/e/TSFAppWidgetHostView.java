@@ -36,7 +36,7 @@ public class TSFAppWidgetHostView extends AppWidgetHostView {
         textView.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.e.TSFAppWidgetHostView.1
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
-                com.tsf.shell.manager.app.WidgetLayoutManager.a.a(c.this.getHostLayout());
+                com.tsf.shell.manager.app.WidgetLayoutManager.a.a(TSFAppWidgetHostView.this.getHostLayout());
             }
         });
         return textView;
@@ -74,20 +74,20 @@ public class TSFAppWidgetHostView extends AppWidgetHostView {
 
         @Override // java.lang.Runnable
         public void run() {
-            if (c.this.getParent() != null && c.this.hasWindowFocus() && this.b == c.this.getWindowAttachCount() && !c.this.a && c.this.performLongClick()) {
-                c.this.a = true;
+            if (TSFAppWidgetHostView.this.getParent() != null && TSFAppWidgetHostView.this.hasWindowFocus() && this.b == TSFAppWidgetHostView.this.getWindowAttachCount() && !TSFAppWidgetHostView.this.a && TSFAppWidgetHostView.this.performLongClick()) {
+                TSFAppWidgetHostView.this.a = true;
             }
         }
 
         public void a() {
-            this.b = c.this.getWindowAttachCount();
+            this.b = TSFAppWidgetHostView.this.getWindowAttachCount();
         }
     }
 
     private void a() {
         this.a = false;
         if (this.b == null) {
-            this.b = new a();
+            this.b = new TSFAppWidgetHost();
         }
         this.b.a();
         postDelayed(this.b, 750L);

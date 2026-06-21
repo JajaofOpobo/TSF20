@@ -20,8 +20,8 @@ public class PreferenceItemH extends i {
     private GridRenderable g = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.a(24.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(45.0f), false) { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.1
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
-            if (h.this.f.id == 0) {
-                com.censivn.C3DEngine.C3DEngine.g().a(h.this.f, PreferenceItemB.d.scrollcontainer_arrow);
+            if (PreferenceItemH.this.f.id == 0) {
+                com.censivn.C3DEngine.C3DEngine.g().a(PreferenceItemH.this.f, PreferenceItemB.d.scrollcontainer_arrow);
             }
         }
     };
@@ -32,13 +32,13 @@ public class PreferenceItemH extends i {
         a(PreferenceItemB.i.text_preferences);
         this.c = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
         this.c.h(PreferenceItemB.i.text_enable);
-        this.c.a(new a.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.2
+        this.c.a(new PreferenceItemA.C0027a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.2
             @Override // com.censivn.C3DEngine.b.e.IconButtonRenderer.C0027a
             public boolean a(boolean z) {
-                h.this.d = z;
-                com.tsf.shell.manager.app.PanelStateManager.a(h.this.d);
-                h.this.k();
-                h.this.i();
+                PreferenceItemH.this.d = z;
+                com.tsf.shell.manager.app.PanelStateManager.a(PreferenceItemH.this.d);
+                PreferenceItemH.this.k();
+                PreferenceItemH.this.i();
                 return true;
             }
         });
@@ -54,13 +54,13 @@ public class PreferenceItemH extends i {
         eVar.a(new h.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.3
             @Override // com.censivn.C3DEngine.b.e.TextIconRenderer.a
             public boolean a(int i) {
-                h.this.h = i / 100.0f;
+                PreferenceItemH.this.h = i / 100.0f;
                 if (com.censivn.C3DEngine.b.b.ScreenConstants.O) {
-                    com.tsf.shell.manager.app.PanelStateManager.a(h.this.h);
+                    com.tsf.shell.manager.app.PanelStateManager.a(PreferenceItemH.this.h);
                 } else {
-                    com.tsf.shell.manager.app.PanelStateManager.b(h.this.h);
+                    com.tsf.shell.manager.app.PanelStateManager.b(PreferenceItemH.this.h);
                 }
-                h.this.i();
+                PreferenceItemH.this.i();
                 return true;
             }
         });
@@ -205,14 +205,14 @@ public class PreferenceItemH extends i {
             setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.preference.a.a.PreferenceItemH.a.1
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
-                    if (a.this.e == 0) {
-                        a.this.e = 1;
+                    if (PreferenceItemA.this.e == 0) {
+                        PreferenceItemA.this.e = 1;
                     } else {
-                        a.this.e = 0;
+                        PreferenceItemA.this.e = 0;
                     }
-                    com.tsf.shell.manager.app.PanelStateManager.a(a.this.e, false);
-                    a.this.m();
-                    h.this.i();
+                    com.tsf.shell.manager.app.PanelStateManager.a(PreferenceItemA.this.e, false);
+                    PreferenceItemA.this.m();
+                    PreferenceItemH.this.i();
                 }
             });
         }

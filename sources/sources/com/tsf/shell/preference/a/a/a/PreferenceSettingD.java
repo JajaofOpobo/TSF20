@@ -26,7 +26,7 @@ public class PreferenceSettingD extends PreferenceSettingBase {
         this.g = new Runnable() { // from class: com.tsf.shell.preference.a.a.a.PreferenceSettingD.1
             @Override // java.lang.Runnable
             public void run() {
-                d.this.n();
+                PreferenceSettingD.this.n();
             }
         };
         this.j = new ArrayList<>();

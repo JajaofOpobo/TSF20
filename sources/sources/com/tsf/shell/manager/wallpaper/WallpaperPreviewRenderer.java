@@ -21,7 +21,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
 
     public WallpaperPreviewRenderer(Context context, float f, float f2) {
         this.a = new C0148a(f, f2);
-        this.b = new b(context, f, f2);
+        this.b = new WallpaperMenuPanel(context, f, f2);
     }
 
     @Override // com.censivn.C3DEngine.api.core.VObject3d
@@ -177,10 +177,10 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
                 this.a = 0.0f;
                 this.b = 0.0f;
                 this.g = vButtonItem;
-                this.g.alpha(b.this.a(50.0f, 100.0f, false));
-                this.a = b.this.a(-b.this.f, b.this.f, true);
-                this.b = b.this.a(-b.this.g, b.this.g, true);
-                float fA = b.this.a(0.1f, 0.9f, false);
+                this.g.alpha(WallpaperMenuPanel.this.a(50.0f, 100.0f, false));
+                this.a = WallpaperMenuPanel.this.a(-WallpaperMenuPanel.this.f, WallpaperMenuPanel.this.f, true);
+                this.b = WallpaperMenuPanel.this.a(-WallpaperMenuPanel.this.g, WallpaperMenuPanel.this.g, true);
+                float fA = WallpaperMenuPanel.this.a(0.1f, 0.9f, false);
                 this.g.scale().setAll(fA, fA, fA);
                 this.g.setTextureAllAndMathSizePX(0, 0, 1, 1);
                 this.g.updateAll();
@@ -188,7 +188,7 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
             }
 
             private void b() {
-                this.e = b.this.a(0.3f, 0.8f, false);
+                this.e = WallpaperMenuPanel.this.a(0.3f, 0.8f, false);
                 this.d = this.e / this.h;
             }
 
@@ -198,9 +198,9 @@ public class WallpaperPreviewRenderer extends VObject3dContainer {
                 this.g.position().pxX(this.a);
                 this.g.position().pxY(this.b);
                 this.g.updateAll();
-                if (this.a > b.this.f + this.i || this.b > b.this.g + this.i) {
-                    this.a = b.this.a(0.0f, (-b.this.d) - this.i, false);
-                    this.b = b.this.a((-b.this.g) - this.i, (-b.this.g) - this.i, false);
+                if (this.a > WallpaperMenuPanel.this.f + this.i || this.b > WallpaperMenuPanel.this.g + this.i) {
+                    this.a = WallpaperMenuPanel.this.a(0.0f, (-WallpaperMenuPanel.this.d) - this.i, false);
+                    this.b = WallpaperMenuPanel.this.a((-WallpaperMenuPanel.this.g) - this.i, (-WallpaperMenuPanel.this.g) - this.i, false);
                     C0149a();
                 }
             }

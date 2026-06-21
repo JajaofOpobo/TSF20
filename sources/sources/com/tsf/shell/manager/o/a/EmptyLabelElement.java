@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.tsf.shell.manager.o.a.LabelManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class EmptyLabelElement extends b {
+public class EmptyLabelElement extends TextLabelElementV2 {
     public EmptyLabelElement(int i, c.a aVar) {
         super(i, aVar);
     }

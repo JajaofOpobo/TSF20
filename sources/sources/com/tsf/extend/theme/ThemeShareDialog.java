@@ -32,7 +32,7 @@ public class ThemeShareDialog extends Dialog {
         void a(AdapterView<?> adapterView, View view, int i, long j);
     }
 
-    public am(Context context, boolean z) throws Throwable {
+    public ThemeShareDialog(Context context, boolean z) throws Throwable {
         super(context, ResourceIds.h.theme_share_dialog);
         this.a = context;
         this.b = context.getResources().getConfiguration().orientation;

@@ -11,19 +11,19 @@ public class BaseColoredRectRenderable extends BaseRenderable {
     private int d;
     private int e;
 
-    public h(float f, float f2, boolean z) {
+    public BaseColoredRectRenderable(float f, float f2, boolean z) {
         this(f, f2, 1, 1, new Color4(0, 0, 0, 0), false, z, false);
     }
 
-    public h(float f, float f2, boolean z, boolean z2) {
+    public BaseColoredRectRenderable(float f, float f2, boolean z, boolean z2) {
         this(f, f2, 1, 1, new Color4(0, 0, 0, 0), false, z, z2);
     }
 
-    public h(float f, float f2, int i, int i2, boolean z) {
+    public BaseColoredRectRenderable(float f, float f2, int i, int i2, boolean z) {
         this(f, f2, i, i2, new Color4(0, 0, 0, 0), false, z, false);
     }
 
-    public h(float f, float f2, int i, int i2, Color4 color4, boolean z, boolean z2, boolean z3) {
+    public BaseColoredRectRenderable(float f, float f2, int i, int i2, Color4 color4, boolean z, boolean z2, boolean z3) {
         super(i * 4 * i2, i * 2 * i2, true, true, Boolean.valueOf(z3));
         this.c = false;
         this.d = i;

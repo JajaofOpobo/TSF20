@@ -25,7 +25,7 @@ public class CellLayout extends ViewGroup {
         super(context);
         this.f = new Rect();
         this.c = true;
-        this.g = new a();
+        this.g = new TSFAppWidgetHost();
         this.g.f = this;
         this.h = gVar;
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -160,7 +160,7 @@ public class CellLayout extends ViewGroup {
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z = true;
-        if (!c() || !f.getMouseEnabled()) {
+        if (!c() || !Workspace3D.getMouseEnabled()) {
             return true;
         }
         int action = motionEvent.getAction();

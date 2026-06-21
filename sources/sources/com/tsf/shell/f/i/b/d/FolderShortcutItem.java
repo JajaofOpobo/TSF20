@@ -87,16 +87,16 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         m = new FolderItemLayout();
         n = new FolderItemState();
         D = new ArrayList<>();
-        D.add(7);
-        D.add(6);
+        WidgetItemLayout.add(7);
+        WidgetItemLayout.add(6);
         E = new ArrayList<>();
-        E.add(7);
-        E.add(6);
-        E.add(4);
-        E.add(2);
-        E.add(1);
+        WidgetItemAnimation.add(7);
+        WidgetItemAnimation.add(6);
+        WidgetItemAnimation.add(4);
+        WidgetItemAnimation.add(2);
+        WidgetItemAnimation.add(1);
         C = new ArrayList<>();
-        C.add(4);
+        FolderItemState.add(4);
         F = new ArrayList<>();
     }
 
@@ -185,14 +185,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             ILassoSelectable.b(this);
             mouseEnabled(false);
             this.H = bVar2;
-            Number3d.TEMPNUMBER3D.reset();
-            bVar2.localToGlobal(Number3d.TEMPNUMBER3D);
+            Number3WidgetItemLayout.TEMPNUMBER3WidgetItemLayout.reset();
+            bVar2.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D);
             bVar2.parent(null);
             this.o.addChild(bVar2);
             bVar.children().set(childIndexOf, this);
             parent(bVar);
             position().setAllFrom(bVar2.position());
-            bVar2.position().setAllFrom(this.o.globalToLocal(Number3d.TEMPNUMBER3D));
+            bVar2.position().setAllFrom(this.o.globalToLocal(Number3WidgetItemLayout.TEMPNUMBER3D));
         }
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -220,11 +220,11 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         ILassoSelectable.b(this);
         mouseEnabled(false);
         this.J.b();
-        Number3d.TEMPNUMBER3D.reset();
-        localToGlobal(Number3d.TEMPNUMBER3D);
-        this.o.globalToLocal(Number3d.TEMPNUMBER3D);
-        float f = Number3d.TEMPNUMBER3D.x;
-        float f2 = Number3d.TEMPNUMBER3D.y;
+        Number3WidgetItemLayout.TEMPNUMBER3WidgetItemLayout.reset();
+        localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D);
+        this.o.globalToLocal(Number3WidgetItemLayout.TEMPNUMBER3D);
+        float f = Number3WidgetItemLayout.TEMPNUMBER3D.x;
+        float f2 = Number3WidgetItemLayout.TEMPNUMBER3D.y;
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.12
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
@@ -933,14 +933,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.t.setMouseEventListener(this.Q);
         mouseSkip(true);
         if (K().container != -1 || (K() instanceof LauncherDrawerFolder3DInfo)) {
-            Number3d.TEMPNUMBER3D.reset();
-            Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
-            localToGlobal(Number3d.TEMPNUMBER3D);
-            localScaleToGlobale(Number3d.TEMPNUMBER3D2);
+            Number3WidgetItemLayout.TEMPNUMBER3WidgetItemLayout.reset();
+            Number3WidgetItemLayout.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
+            localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D);
+            localScaleToGlobale(Number3WidgetItemLayout.TEMPNUMBER3D2);
             this.aa = com.tsf.shell.f.c.DrawerPanelController.a(this);
             ((com.censivn.C3DEngine.b.f.BaseRenderable) parent()).replaceChild(this, this.aa);
-            position().setAllFrom(Number3d.TEMPNUMBER3D);
-            scale().setAllFrom(Number3d.TEMPNUMBER3D2);
+            position().setAllFrom(Number3WidgetItemLayout.TEMPNUMBER3D);
+            scale().setAllFrom(Number3WidgetItemLayout.TEMPNUMBER3D2);
             if (aC()) {
                 this.ag = com.tsf.shell.manager.app.ObserverManager.a(this);
                 com.tsf.shell.manager.app.ObserverManager.b(Home.b());
@@ -1013,8 +1013,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                             FolderShortcutItem.this.L.y = bVarA.b;
                             FolderShortcutItem.this.M.z = bVarA.e;
                         } else {
-                            Number3d.TEMPNUMBER3D.reset();
-                            Number3d number3d = Number3d.TEMPNUMBER3D;
+                            Number3WidgetItemLayout.TEMPNUMBER3WidgetItemLayout.reset();
+                            Number3d number3d = Number3WidgetItemLayout.TEMPNUMBER3D;
                             FolderShortcutItem.this.aa.localToGlobal(number3d);
                             FolderShortcutItem.this.L.x = number3d.x;
                             FolderShortcutItem.this.L.y = number3d.y;
@@ -1023,13 +1023,13 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                     }
                     if (z) {
                         if (FolderShortcutItem.this.aa != null) {
-                            Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
-                            FolderShortcutItem.this.aa.localScaleToGlobale(Number3d.TEMPNUMBER3D2);
+                            Number3WidgetItemLayout.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
+                            FolderShortcutItem.this.aa.localScaleToGlobale(Number3WidgetItemLayout.TEMPNUMBER3D2);
                             dVar = new com.censivn.C3DEngine.b.g.TweenParams();
                             dVar.f(FolderShortcutItem.this.L.x);
                             dVar.h(FolderShortcutItem.this.L.y);
-                            dVar.l(Number3d.TEMPNUMBER3D2.x);
-                            dVar.m(Number3d.TEMPNUMBER3D2.y);
+                            dVar.l(Number3WidgetItemLayout.TEMPNUMBER3D2.x);
+                            dVar.m(Number3WidgetItemLayout.TEMPNUMBER3D2.y);
                             dVar.a(255);
                             dVar.e(FolderShortcutItem.this.M.z);
                         } else {
@@ -1725,8 +1725,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     @Override // com.tsf.shell.f.e.a.AlignmentListener
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, com.tsf.shell.f.i.b.e.DrawerItemVisual gVar) {
         com.tsf.shell.f.i.b.e.DrawerItemVisual gVarBa = gVar.ba();
-        Number3d.TEMPNUMBER3D3.reset();
-        Number3d number3dGlobalToLocal = this.o.globalToLocal(iVar.localToGlobal(Number3d.TEMPNUMBER3D3));
+        Number3WidgetItemLayout.TEMPNUMBER3D3.reset();
+        Number3d number3dGlobalToLocal = this.o.globalToLocal(iVar.localToGlobal(Number3WidgetItemLayout.TEMPNUMBER3D3));
         number3dGlobalToLocal.y -= this.o.l();
         gVarBa.position().x = number3dGlobalToLocal.x;
         gVarBa.position().y = number3dGlobalToLocal.y;

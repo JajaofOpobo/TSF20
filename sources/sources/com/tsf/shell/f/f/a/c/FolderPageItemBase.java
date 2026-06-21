@@ -12,7 +12,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
     protected com.tsf.shell.f.f.a.PageGridRenderer b;
     protected int c;
     protected String d;
-    protected com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable e;
+    protected com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable e;
     protected C0133a f;
     private TextureElement g = new TextureElement(0, false);
     private boolean h = false;
@@ -30,19 +30,19 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         e();
     }
 
-    public com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable e() {
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable e() {
         if (this.e == null) {
             this.e = FolderLabelConfig.a();
             this.e.textures().addElement(this.g);
             com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.1
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
-                    if (i.this.h) {
-                        if (i.this.j != null) {
-                            i.this.j.run();
+                    if (FolderPageItemBase.this.h) {
+                        if (FolderPageItemBase.this.j != null) {
+                            FolderPageItemBase.this.j.run();
                         }
-                    } else if (!i.this.b.a(i.this)) {
-                        i.this.b.m();
+                    } else if (!FolderPageItemBase.this.b.a(FolderPageItemBase.this)) {
+                        FolderPageItemBase.this.b.m();
                     }
                 }
             };
@@ -70,7 +70,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                i.this.e.a(1).a((Boolean) false);
+                FolderPageItemBase.this.e.a(1).a((Boolean) false);
             }
         };
         dVar.l(0.0f);
@@ -88,8 +88,8 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.4
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                i.this.i = true;
-                i.this.m();
+                FolderPageItemBase.this.i = true;
+                FolderPageItemBase.this.m();
             }
         };
         dVar.h(com.tsf.shell.f.f.a.PageGridRenderer.a / 2.0f);
@@ -120,8 +120,8 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                i.this.removeFromParent();
-                i.this.b();
+                FolderPageItemBase.this.removeFromParent();
+                FolderPageItemBase.this.b();
             }
         };
         dVar.a(0);

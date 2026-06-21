@@ -138,7 +138,7 @@ public class AlarmSettingController extends BaseAdapter {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { // from class: com.tsf.shell.widget.alarm.setting.AlarmSettingController.1
             @Override // android.widget.SeekBar.OnSeekBarChangeListener
             public void onProgressChanged(SeekBar seekBar2, int i, boolean z) {
-                int iF = b.this.f(i);
+                int iF = AlarmSettingController.this.f(i);
                 textView.setText(String.format(SettingActivity.a.getString(m.f.minutes), Integer.valueOf(iF)));
                 AlarmSettingTheme.j = iF;
             }
@@ -162,7 +162,7 @@ public class AlarmSettingController extends BaseAdapter {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { // from class: com.tsf.shell.widget.alarm.setting.AlarmSettingController.2
             @Override // android.widget.SeekBar.OnSeekBarChangeListener
             public void onProgressChanged(SeekBar seekBar2, int i, boolean z) {
-                int iE = b.this.e(i);
+                int iE = AlarmSettingController.this.e(i);
                 textView.setText(iE + "s");
                 AlarmSettingTheme.k = iE;
             }
@@ -209,10 +209,10 @@ public class AlarmSettingController extends BaseAdapter {
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: com.tsf.shell.widget.alarm.setting.AlarmSettingController.3
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(b.this.d)) {
-                    b.this.b = z;
-                    b.this.a();
-                    b.this.notifyDataSetChanged();
+                if (com.tsf.shell.ShellCallbackDispatcher.a.e.a(AlarmSettingController.this.d)) {
+                    AlarmSettingController.this.b = z;
+                    AlarmSettingController.this.a();
+                    AlarmSettingController.this.notifyDataSetChanged();
                     return;
                 }
                 switchCompat.setChecked(zIsChecked);

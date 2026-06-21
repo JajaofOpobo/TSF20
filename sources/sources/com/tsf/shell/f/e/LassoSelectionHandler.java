@@ -30,7 +30,7 @@ public class LassoSelectionHandler {
     private LassoContextMenu p;
     private float s;
     private float t;
-    private com.censivn.C3DEngine.b.f.a.TextureSpriteRenderable u;
+    private com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable u;
     private static TextureElement b = null;
     private static TextureElement c = null;
     public static Color4 a = new Color4();
@@ -222,25 +222,25 @@ public class LassoSelectionHandler {
     /* JADX INFO: Access modifiers changed from: private */
     public void c(MotionEvent motionEvent) {
         float[] fArrB = x.b(motionEvent.getX(), motionEvent.getY());
-        e.position().x = fArrB[0];
-        e.position().y = fArrB[1];
+        ItemTrailContainer.position().x = fArrB[0];
+        ItemTrailContainer.position().y = fArrB[1];
         com.tsf.shell.manager.app.TaskScheduler.a(e);
         if (this.u != null) {
-            e.addChild(this.u);
+            ItemTrailContainer.addChild(this.u);
         }
         if (this.r) {
             com.tsf.shell.manager.app.TaskScheduler.a(AlignmentBackKeyHandler);
             AlignmentBackKeyHandler.position().x = fArrB[0];
             AlignmentBackKeyHandler.position().y = fArrB[1];
         }
-        h.position().x = fArrB[0];
-        h.position().y = fArrB[1];
+        LassoSelectionHandler.position().x = fArrB[0];
+        LassoSelectionHandler.position().y = fArrB[1];
         com.tsf.shell.manager.app.TaskScheduler.a(h);
         jadx();
     }
 
     private void h() {
-        if (e.parent() != null) {
+        if (ItemTrailContainer.parent() != null) {
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e.h.2
                 @Override // java.lang.Runnable
                 public void run() {
@@ -248,13 +248,13 @@ public class LassoSelectionHandler {
                     LassoSelectionHandler.k();
                 }
             });
-            if (e.parent() != null) {
+            if (ItemTrailContainer.parent() != null) {
                 com.tsf.shell.manager.app.TaskScheduler.b(e);
             }
             if (AlignmentBackKeyHandler.parent() != null) {
                 com.tsf.shell.manager.app.TaskScheduler.b(AlignmentBackKeyHandler);
             }
-            if (h.parent() != null) {
+            if (LassoSelectionHandler.parent() != null) {
                 com.tsf.shell.manager.app.TaskScheduler.b(h);
             }
             if (this.u != null) {
@@ -273,12 +273,12 @@ public class LassoSelectionHandler {
         } else {
             fAtan = (float) (Math.atan(x / r3) / 0.017453292519943295d);
         }
-        e.rotation().z = fAtan;
+        ItemTrailContainer.rotation().z = fAtan;
         if ((fAtan < 181.0f) & (fAtan > -1.0f)) {
             if (this.v) {
                 this.v = false;
                 if (this.u != null) {
-                    com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA = this.u.a(0);
+                    com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.u.a(0);
                     bVarA.b(true);
                     bVarA.c(true);
                     bVarA.g();
@@ -291,7 +291,7 @@ public class LassoSelectionHandler {
         if (!this.v) {
             this.v = true;
             if (this.u != null) {
-                com.censivn.C3DEngine.b.f.a.SpriteItemData bVarA2 = this.u.a(0);
+                com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = this.u.a(0);
                 bVarA2.b(false);
                 bVarA2.c(false);
                 bVarA2.g();
@@ -310,17 +310,17 @@ public class LassoSelectionHandler {
                 LassoSelectionHandler.a.set(themeDescription.shell.lassoSelectColor);
             }
         };
-        a.set(ThemeManager.mix.lasso.getTheme().shell.lassoSelectColor);
+        AlignmentOverlay.set(ThemeManager.mix.lasso.getTheme().shell.lassoSelectColor);
         ThemeManager.mix.lasso.addElementListener(dynamicThemeRunnable);
         e = new com.censivn.C3DEngine.b.f.BaseRenderable();
-        e.setAnimationObjectState(true);
+        ItemTrailContainer.setAnimationObjectState(true);
         c = ThemeManager.mix.lasso.getTextureElement(ThemeShellDescription.PICKER_FOCUS, ItemInfo.APP_INTENT, ItemInfo.APP_INTENT);
         b = ThemeManager.mix.lasso.getTextureElement(ThemeShellDescription.PICKER_POINT, 32, 32);
         h = new com.censivn.C3DEngine.b.f.GridRenderable(32.0f, 32.0f, 1, 1, true);
-        h.textures().addElement(b);
+        LassoSelectionHandler.textures().addElement(b);
         f = new com.censivn.C3DEngine.b.f.GridRenderable(32.0f, 32.0f, 1, 1, true);
         f.textures().addElement(b);
-        e.addChild(f);
+        ItemTrailContainer.addChild(f);
         g = new com.censivn.C3DEngine.b.f.GridRenderable(128.0f, 128.0f, 1, 1, true);
         AlignmentBackKeyHandler.textures().addElement(c);
     }

@@ -70,16 +70,16 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
     @Override // android.support.v4.app.Fragment
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View viewInflate = layoutInflater.inflate(ThemePickerResources.h.theme_perview_icon_fragment, viewGroup, false);
-        this.e = (GridView) viewInflate.findViewById(ThemePickerResources.C0155f.gridView);
+        this.e = (GridView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.gridView);
         this.e.setAdapter((ListAdapter) this.c);
         this.e.setOnItemClickListener(this.c);
         this.e.setOnScrollListener(new AbsListView.OnScrollListener() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerManager.1
             @Override // android.widget.AbsListView.OnScrollListener
             public void onScrollStateChanged(AbsListView absListView, int i) {
                 if (i != 2) {
-                    i.this.d.b(false);
+                    ThemePickerManager.this.d.b(false);
                 } else if (!com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.c()) {
-                    i.this.d.b(true);
+                    ThemePickerManager.this.d.b(true);
                 }
             }
 
@@ -91,25 +91,25 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
             @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
             @TargetApi(16)
             public void onGlobalLayout() {
-                int iFloor = (int) Math.floor(i.this.e.getWidth() / (i.this.a + i.this.b));
+                int iFloor = (int) Math.floor(ThemePickerManager.this.e.getWidth() / (ThemePickerManager.this.a + ThemePickerManager.this.b));
                 if (iFloor > 0) {
-                    int width = (i.this.e.getWidth() / iFloor) - i.this.b;
-                    i.this.c.b(iFloor);
-                    i.this.c.a(width);
+                    int width = (ThemePickerManager.this.e.getWidth() / iFloor) - ThemePickerManager.this.b;
+                    ThemePickerManager.this.c.b(iFloor);
+                    ThemePickerManager.this.c.a(width);
                     if (com.tsf.shell.plugin.themepicker.utils.ItemInfoListSorter.e()) {
-                        i.this.e.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        ThemePickerManager.this.e.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     } else {
-                        i.this.e.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                        ThemePickerManager.this.e.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                     }
                 }
             }
         });
-        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155f.imageView1)).setImageDrawable(this.g.loadIcon(i().getPackageManager()));
-        ((TextView) viewInflate.findViewById(ThemePickerResources.C0155f.textView1)).setText(this.g.loadLabel(i().getPackageManager()));
-        this.h = (TextView) viewInflate.findViewById(ThemePickerResources.C0155f.textView2);
-        this.i = (TextView) viewInflate.findViewById(ThemePickerResources.C0155f.textView3);
-        viewInflate.findViewById(ThemePickerResources.C0155f.linearLayout1).setOnClickListener(this);
-        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155f.imageView2)).setOnClickListener(this);
+        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.imageView1)).setImageDrawable(this.g.loadIcon(i().getPackageManager()));
+        ((TextView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.textView1)).setText(this.g.loadLabel(i().getPackageManager()));
+        this.h = (TextView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.textView2);
+        this.i = (TextView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.textView3);
+        viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.linearLayout1).setOnClickListener(this);
+        ((ImageView) viewInflate.findViewById(ThemePickerResources.C0155ThemePickerResources.imageView2)).setOnClickListener(this);
         return viewInflate;
     }
 
@@ -237,10 +237,10 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
                     imageView.setLayoutParams(this.d);
                 }
                 if (this.g != null) {
-                    i.this.d.a(Integer.valueOf(this.g[i - this.e]), imageView);
+                    ThemePickerManager.this.d.a(Integer.valueOf(this.g[i - this.e]), imageView);
                     view2 = imageView;
                 } else {
-                    i.this.d.a(this.h[i - this.e], imageView);
+                    ThemePickerManager.this.d.a(this.h[i - this.e], imageView);
                     view2 = imageView;
                 }
             }
@@ -267,8 +267,8 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             Bitmap bitmap;
             Drawable drawable = ((ImageView) view).getDrawable();
-            if ((drawable instanceof TransitionDrawable) && (bitmap = ((BitmapDrawable) ((TransitionDrawable) drawable).getDrawable(1)).getBitmap()) != null && !(i.this.i() instanceof ThemePickerActivity)) {
-                ((IconPickerActivity) i.this.i()).a(bitmap);
+            if ((drawable instanceof TransitionDrawable) && (bitmap = ((BitmapDrawable) ((TransitionDrawable) drawable).getDrawable(1)).getBitmap()) != null && !(ThemePickerManager.this.i() instanceof ThemePickerActivity)) {
+                ((IconPickerActivity) ThemePickerManager.this.i()).a(bitmap);
             }
         }
     }
@@ -279,21 +279,21 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
             @Override // java.lang.Runnable
             public void run() {
                 if (list != null) {
-                    i.this.c.a(list);
+                    ThemePickerManager.this.c.a(list);
                 }
                 if (str != null) {
-                    i.this.h.setText(str);
-                    i.this.h.setVisibility(0);
+                    ThemePickerManager.this.h.setText(str);
+                    ThemePickerManager.this.h.setVisibility(0);
                 }
                 if (str2 != null) {
-                    i.this.i.setText(str2);
-                    i.this.i.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerManager.3.1
+                    ThemePickerManager.this.i.setText(str2);
+                    ThemePickerManager.this.i.setOnClickListener(new View.OnClickListener() { // from class: com.tsf.shell.plugin.themepicker.ThemePickerManager.3.1
                         @Override // android.view.View.OnClickListener
                         public void onClick(View view) {
-                            i.this.i().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str2)));
+                            ThemePickerManager.this.i().startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str2)));
                         }
                     });
-                    i.this.i.setVisibility(0);
+                    ThemePickerManager.this.i.setVisibility(0);
                 }
             }
         });
@@ -301,8 +301,8 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        if (view.getId() == ThemePickerResources.C0155f.linearLayout1) {
-            if (view.getId() == ThemePickerResources.C0155f.linearLayout1) {
+        if (view.getId() == ThemePickerResources.C0155ThemePickerResources.linearLayout1) {
+            if (view.getId() == ThemePickerResources.C0155ThemePickerResources.linearLayout1) {
                 ThemePickerProvider.a aVarI = i();
                 if (aVarI instanceof SildingMenuLayout.d) {
                     ((SildingMenuLayout.d) aVarI).h();
@@ -312,7 +312,7 @@ public class ThemePickerManager extends Fragment implements View.OnClickListener
             }
             return;
         }
-        if (view.getId() == ThemePickerResources.C0155f.imageView2) {
+        if (view.getId() == ThemePickerResources.C0155ThemePickerResources.imageView2) {
             a(new Intent("android.intent.action.VIEW", Uri.parse("market://details?id=" + this.g.activityInfo.packageName)));
         }
     }

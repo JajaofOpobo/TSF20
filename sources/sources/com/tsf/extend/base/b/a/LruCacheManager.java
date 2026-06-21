@@ -16,7 +16,7 @@ public class LruCacheManager {
         return a;
     }
 
-    private b() {
+    private LruCacheManager() {
         this.b = null;
         this.b = new LruCache<String, Object>(1048576) { // from class: com.tsf.extend.base.b.a.LruCacheManager.1
             @Override // android.util.LruCache

@@ -44,7 +44,7 @@ public class ResizeButtonNode extends BaseRenderable {
                 if (f6 < 0.0f) {
                     l.a(this, "BlurContainer -> blur : precent:" + f6 + "    startProgress" + f3 + "    diffProgress:" + f4 + "     precent" + f5);
                 }
-                a.this.a(f6);
+                OverlayBackground.this.a(f6);
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
@@ -93,7 +93,7 @@ public class ResizeButtonNode extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e.b.ResizeButtonNode.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
-                a.this.a(f + (f2 * f3));
+                OverlayBackground.this.a(f + (f2 * f3));
             }
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams

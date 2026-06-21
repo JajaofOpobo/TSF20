@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.b.f;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class EmptyRenderable extends BaseRenderable {
-    public n() {
+    public EmptyRenderable() {
         super(0, 0);
         super.useVBO(false);
     }

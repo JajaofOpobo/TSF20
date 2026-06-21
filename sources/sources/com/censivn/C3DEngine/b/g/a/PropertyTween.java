@@ -22,7 +22,7 @@ public class PropertyTween extends AbstractTween {
     private float r;
     private float s;
 
-    public b(i iVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
+    public PropertyTween(i iVar, int i, com.censivn.C3DEngine.b.g.TweenParams dVar) {
         this.e = 0;
         dVar.a(iVar);
         iVar.setTweenChild(this);

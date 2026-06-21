@@ -10,7 +10,7 @@ public class Box3DRenderable extends BaseRenderable {
     private float c;
     private float d;
 
-    public c(float f, float f2, float f3, Color4[] color4Arr, Boolean bool, Boolean bool2, Boolean bool3) {
+    public Box3DRenderable(float f, float f2, float f3, Color4[] color4Arr, Boolean bool, Boolean bool2, Boolean bool3) {
         super(24, 12, bool, bool2, bool3);
         this.b = f;
         this.c = f2;
@@ -29,7 +29,7 @@ public class Box3DRenderable extends BaseRenderable {
         a();
     }
 
-    public c(float f, float f2, float f3) {
+    public Box3DRenderable(float f, float f2, float f3) {
         this(f, f2, f3, null, true, true, true);
     }
 

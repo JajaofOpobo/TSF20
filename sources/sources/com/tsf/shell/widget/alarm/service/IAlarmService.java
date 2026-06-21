@@ -10,7 +10,7 @@ public interface IAlarmService extends IInterface {
     void a(int i, byte[] bArr);
 
     /* JADX INFO: renamed from: com.tsf.shell.widget.alarm.service.IAlarmService$a, reason: collision with other inner class name */
-    public static abstract class AbstractBinderC0177a extends Binder implements a {
+    public static abstract class AbstractBinderC0177a extends Binder implements IAlarmService {
         public AbstractBinderC0177a() {
             attachInterface(this, "com.tsf.shell.widget.alarm.service.AlarmCallBack");
         }
@@ -48,7 +48,7 @@ public interface IAlarmService extends IInterface {
         }
 
         /* JADX INFO: renamed from: com.tsf.shell.widget.alarm.service.IAlarmService$a$a, reason: collision with other inner class name */
-        private static class C0178a implements a {
+        private static class C0178a implements IAlarmService {
             private IBinder a;
 
             C0178a(IBinder iBinder) {

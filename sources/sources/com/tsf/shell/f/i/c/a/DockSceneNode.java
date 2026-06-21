@@ -14,7 +14,7 @@ import com.tsf.b;
 import org.acra.ACRAConstants;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DockSceneNode extends j {
+public class DockSceneNode extends AsyncTextureNode {
     public TextureElement a;
     public TextureElement a;
     public TextureElement a;

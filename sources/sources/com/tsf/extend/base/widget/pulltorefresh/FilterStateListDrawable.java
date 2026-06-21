@@ -16,13 +16,13 @@ public class FilterStateListDrawable extends StateListDrawable {
     private int[] e;
     private PorterDuff.Mode[] f;
 
-    public e(Drawable drawable, int[] iArr, PorterDuff.Mode[] modeArr) {
+    public FilterStateListDrawable(Drawable drawable, int[] iArr, PorterDuff.Mode[] modeArr) {
         this.e = iArr;
         this.f = modeArr;
         a(drawable);
     }
 
-    public e(Drawable drawable) {
+    public FilterStateListDrawable(Drawable drawable) {
         a(drawable);
     }
 

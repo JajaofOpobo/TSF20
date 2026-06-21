@@ -71,7 +71,7 @@ public class GestureTipElement extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
-                b.this.rotation().z = f2 + ((f - f2) * f3);
+                GestureTipElement.this.rotation().z = f2 + ((f - f2) * f3);
             }
         };
         dVar.a(runnable);
@@ -89,9 +89,9 @@ public class GestureTipElement extends BaseRenderable {
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.p.GestureTipElement.4
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                b.this.d.visible(false);
-                b.this.d.alpha(255.0f);
-                com.tsf.shell.manager.app.TaskScheduler.b(b.this.d);
+                GestureTipElement.this.d.visible(false);
+                GestureTipElement.this.d.alpha(255.0f);
+                com.tsf.shell.manager.app.TaskScheduler.b(GestureTipElement.this.d);
             }
         };
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.d);

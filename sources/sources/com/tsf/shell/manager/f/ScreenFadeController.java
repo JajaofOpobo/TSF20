@@ -44,12 +44,12 @@ public class ScreenFadeController {
         if (d != null && com.tsf.shell.manager.app.StateHub.n().t() == -1) {
             if (d != com.tsf.shell.manager.app.LauncherAppInfo.g()) {
                 if (a == 100) {
-                    d.removeFromParent();
-                } else if (d.parent() == null) {
-                    c.addChild(d);
+                    ViewportController.removeFromParent();
+                } else if (ViewportController.parent() == null) {
+                    LauncherInitController.addChild(d);
                 }
             }
-            d.alpha((int) ((1.0f - (a / 100.0f)) * 255.0f));
+            ViewportController.alpha((int) ((1.0f - (a / 100.0f)) * 255.0f));
         }
     }
 
@@ -59,7 +59,7 @@ public class ScreenFadeController {
         this.g = e.ai();
         if (this.g) {
             d = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, false);
-            d.setDefaultColor(new Color4(0, 0, 0, 255));
+            ViewportController.setDefaultColor(new Color4(0, 0, 0, 255));
         } else {
             d = com.tsf.shell.manager.app.LauncherAppInfo.g();
         }
@@ -80,14 +80,14 @@ public class ScreenFadeController {
     }
 
     public void c(int i) {
-        if (this.g && d.parent() == null) {
-            c.addChild(d);
-            d.alpha(0.0f);
+        if (this.g && ViewportController.parent() == null) {
+            LauncherInitController.addChild(d);
+            ViewportController.alpha(0.0f);
         }
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.f.ScreenFadeController.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                if (a.this.g && a.d.alpha() == 0.0f) {
+                if (ScreenFadeController.this.g && a.d.alpha() == 0.0f) {
                     a.d.removeFromParent();
                 }
             }
@@ -103,7 +103,7 @@ public class ScreenFadeController {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.f.ScreenFadeController.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    if (a.this.g) {
+                    if (ScreenFadeController.this.g) {
                         a.d.removeFromParent();
                     }
                 }

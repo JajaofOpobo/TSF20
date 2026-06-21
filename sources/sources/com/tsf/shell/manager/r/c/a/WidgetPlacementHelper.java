@@ -11,7 +11,7 @@ import com.tsf.shell.manager.r.c.WidgetCompatibilityChecker;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetPlacementHelper {
-    public static void a(final g gVar, final float f, final float f2, final a.AbstractC0146a abstractC0146a) {
+    public static void a(final g gVar, final float f, final float f2, final WidgetInstantiator.AbstractC0146a abstractC0146a) {
         if (com.tsf.shell.manager.app.StateHub.F() == -1) {
             com.tsf.shell.manager.app.StateHub.a(com.tsf.shell.manager.app.StateHub.o(), (Runnable) null, new Runnable() { // from class: com.tsf.shell.manager.r.c.a.WidgetPlacementHelper.1
                 @Override // java.lang.Runnable
